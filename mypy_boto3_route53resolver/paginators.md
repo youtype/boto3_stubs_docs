@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Paginators
 
-Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+Auto-generated documentation for
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+type annotations stubs module
+[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Paginators for boto3 Route53Resolver module](#paginators-for-boto3-route53resolver-module)
   - [ListFirewallConfigsPaginator](#listfirewallconfigspaginator)
@@ -23,7 +25,8 @@ type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/proj
 
 ## ListFirewallConfigsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_configs")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_configs")`.
 
 Can be used directly:
 
@@ -34,19 +37,21 @@ def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
     return boto3.client("route53resolver").get_paginator("list_firewall_configs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
 
-```python
-class ListFirewallConfigsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallConfigsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallConfigsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallConfigsPaginator.paginate` returns
+`Iterator`\[[ListFirewallConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallconfigsresponsetypedef)\].
+
 ## ListFirewallDomainListsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")`.
 
 Can be used directly:
 
@@ -57,19 +62,21 @@ def get_list_firewall_domain_lists_paginator() -> ListFirewallDomainListsPaginat
     return boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallDomainLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
 
-```python
-class ListFirewallDomainListsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallDomainListsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallDomainListsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallDomainListsPaginator.paginate` returns
+`Iterator`\[[ListFirewallDomainListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewalldomainlistsresponsetypedef)\].
+
 ## ListFirewallDomainsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_domains")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_domains")`.
 
 Can be used directly:
 
@@ -80,20 +87,22 @@ def get_list_firewall_domains_paginator() -> ListFirewallDomainsPaginator:
     return boto3.client("route53resolver").get_paginator("list_firewall_domains")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
 
-```python
-class ListFirewallDomainsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FirewallDomainListId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallDomainsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallDomainsPaginator.paginate` method:
+
+- `FirewallDomainListId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallDomainsPaginator.paginate` returns
+`Iterator`\[[ListFirewallDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewalldomainsresponsetypedef)\].
+
 ## ListFirewallRuleGroupAssociationsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")`.
 
 Can be used directly:
 
@@ -104,23 +113,26 @@ def get_list_firewall_rule_group_associations_paginator() -> ListFirewallRuleGro
     return boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallRuleGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
 
-```python
-class ListFirewallRuleGroupAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FirewallRuleGroupId: str = None,
-        VpcId: str = None,
-        Priority: int = None,
-        Status: FirewallRuleGroupAssociationStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallRuleGroupAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallRuleGroupAssociationsPaginator.paginate` method:
+
+- `FirewallRuleGroupId`: `str`
+- `VpcId`: `str`
+- `Priority`: `int`
+- `Status`:
+  [FirewallRuleGroupAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallrulegroupassociationstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallRuleGroupAssociationsPaginator.paginate` returns
+`Iterator`\[[ListFirewallRuleGroupAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulegroupassociationsresponsetypedef)\].
+
 ## ListFirewallRuleGroupsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")`.
 
 Can be used directly:
 
@@ -131,19 +143,21 @@ def get_list_firewall_rule_groups_paginator() -> ListFirewallRuleGroupsPaginator
     return boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
 
-```python
-class ListFirewallRuleGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallRuleGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallRuleGroupsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallRuleGroupsPaginator.paginate` returns
+`Iterator`\[[ListFirewallRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulegroupsresponsetypedef)\].
+
 ## ListFirewallRulesPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_firewall_rules")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_firewall_rules")`.
 
 Can be used directly:
 
@@ -154,22 +168,25 @@ def get_list_firewall_rules_paginator() -> ListFirewallRulesPaginator:
     return boto3.client("route53resolver").get_paginator("list_firewall_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListFirewallRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
 
-```python
-class ListFirewallRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FirewallRuleGroupId: str,
-        Priority: int = None,
-        Action: Action = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallRulesResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallRulesPaginator.paginate` method:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+- `Priority`: `int`
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#action)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallRulesPaginator.paginate` returns
+`Iterator`\[[ListFirewallRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulesresponsetypedef)\].
+
 ## ListResolverDnssecConfigsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")`.
 
 Can be used directly:
 
@@ -180,20 +197,23 @@ def get_list_resolver_dnssec_configs_paginator() -> ListResolverDnssecConfigsPag
     return boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverDnssecConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
 
-```python
-class ListResolverDnssecConfigsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverDnssecConfigsResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverDnssecConfigsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverDnssecConfigsPaginator.paginate` returns
+`Iterator`\[[ListResolverDnssecConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverdnssecconfigsresponsetypedef)\].
+
 ## ListResolverEndpointIpAddressesPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")`.
 
 Can be used directly:
 
@@ -204,20 +224,22 @@ def get_list_resolver_endpoint_ip_addresses_paginator() -> ListResolverEndpointI
     return boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverEndpointIpAddresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
 
-```python
-class ListResolverEndpointIpAddressesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResolverEndpointId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverEndpointIpAddressesResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverEndpointIpAddressesPaginator.paginate` method:
+
+- `ResolverEndpointId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverEndpointIpAddressesPaginator.paginate` returns
+`Iterator`\[[ListResolverEndpointIpAddressesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverendpointipaddressesresponsetypedef)\].
+
 ## ListResolverEndpointsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_endpoints")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_endpoints")`.
 
 Can be used directly:
 
@@ -228,20 +250,23 @@ def get_list_resolver_endpoints_paginator() -> ListResolverEndpointsPaginator:
     return boto3.client("route53resolver").get_paginator("list_resolver_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
 
-```python
-class ListResolverEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverEndpointsResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverEndpointsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverEndpointsPaginator.paginate` returns
+`Iterator`\[[ListResolverEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverendpointsresponsetypedef)\].
+
 ## ListResolverQueryLogConfigAssociationsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")`.
 
 Can be used directly:
 
@@ -252,22 +277,27 @@ def get_list_resolver_query_log_config_associations_paginator() -> ListResolverQ
     return boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
 
-```python
-class ListResolverQueryLogConfigAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortBy: str = None,
-        SortOrder: SortOrder = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverQueryLogConfigAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverQueryLogConfigAssociationsPaginator.paginate`
+method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sortorder)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverQueryLogConfigAssociationsPaginator.paginate` returns
+`Iterator`\[[ListResolverQueryLogConfigAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverquerylogconfigassociationsresponsetypedef)\].
+
 ## ListResolverQueryLogConfigsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")`.
 
 Can be used directly:
 
@@ -278,22 +308,26 @@ def get_list_resolver_query_log_configs_paginator() -> ListResolverQueryLogConfi
     return boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverQueryLogConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
 
-```python
-class ListResolverQueryLogConfigsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortBy: str = None,
-        SortOrder: SortOrder = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverQueryLogConfigsResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverQueryLogConfigsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sortorder)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverQueryLogConfigsPaginator.paginate` returns
+`Iterator`\[[ListResolverQueryLogConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverquerylogconfigsresponsetypedef)\].
+
 ## ListResolverRuleAssociationsPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")`.
 
 Can be used directly:
 
@@ -304,20 +338,23 @@ def get_list_resolver_rule_associations_paginator() -> ListResolverRuleAssociati
     return boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverRuleAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
 
-```python
-class ListResolverRuleAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverRuleAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverRuleAssociationsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverRuleAssociationsPaginator.paginate` returns
+`Iterator`\[[ListResolverRuleAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverruleassociationsresponsetypedef)\].
+
 ## ListResolverRulesPaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_resolver_rules")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_resolver_rules")`.
 
 Can be used directly:
 
@@ -328,20 +365,23 @@ def get_list_resolver_rules_paginator() -> ListResolverRulesPaginator:
     return boto3.client("route53resolver").get_paginator("list_resolver_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListResolverRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
 
-```python
-class ListResolverRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResolverRulesResponseTypeDef]:
-        pass
-```
+Arguments for `ListResolverRulesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListResolverRulesPaginator.paginate` returns
+`Iterator`\[[ListResolverRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverrulesresponsetypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("route53resolver").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -352,14 +392,14 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("route53resolver").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
+Boto3 documentation:
+[Route53Resolver.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listtagsforresourceresponsetypedef)\].

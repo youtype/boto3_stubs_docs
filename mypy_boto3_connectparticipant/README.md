@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ConnectParticipant
 
-Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
-type annotations stubs module [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+Auto-generated documentation for
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+type annotations stubs module
+[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 ```bash
 pip install mypy-boto3-connectparticipant
@@ -18,7 +20,8 @@ pip install mypy-boto3-connectparticipant
 
 ## ConnectParticipantClient
 
-Type annotations for  `boto3.client("connectparticipant")` as [ConnectParticipantClient](./client.md)
+Type annotations for `boto3.client("connectparticipant")` as
+[ConnectParticipantClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 ```
 
-
 ConnectParticipantClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [complete_attachment_upload](./client.md#complete-attachment-upload)
 - [create_participant_connection](./client.md#create-participant-connection)
@@ -43,10 +44,8 @@ ConnectParticipantClient [exceptions](./client.md#exceptions)
 - [send_message](./client.md#send-message)
 - [start_attachment_upload](./client.md#start-attachment-upload)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -54,15 +53,6 @@ ConnectParticipantClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -81,13 +71,10 @@ from mypy_boto3_connectparticipant.literals import ArtifactStatus, ...
 - [ScanDirection](./literals.md#scandirection)
 - [SortKey](./literals.md#sortkey)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DirectoryService](./README.md) > Literals
 
-Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+Auto-generated documentation for
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+type annotations stubs module
+[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Literals for boto3 DirectoryService module](#literals-for-boto3-directoryservice-module)
   - [CertificateState](#certificatestate)

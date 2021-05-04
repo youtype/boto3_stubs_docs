@@ -1,9 +1,12 @@
 # IoTSecureTunnelingClient for boto3 IoTSecureTunneling module
 
-> [Index](../README.md) > [IoTSecureTunneling](./README.md) > IoTSecureTunnelingClient
+> [Index](../README.md) > [IoTSecureTunneling](./README.md) >
+> IoTSecureTunnelingClient
 
-Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
-type annotations stubs module [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+Auto-generated documentation for
+[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+type annotations stubs module
+[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 - [IoTSecureTunnelingClient for boto3 IoTSecureTunneling module](#iotsecuretunnelingclient-for-boto3-iotsecuretunneling-module)
   - [IoTSecureTunnelingClient](#iotsecuretunnelingclient)
@@ -32,12 +35,13 @@ def get_iotsecuretunneling_client() -> IoTSecureTunnelingClient:
     return boto3.client("iotsecuretunneling")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
+Boto3 documentation:
+[IoTSecureTunneling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iotsecuretunneling.client import Exceptions
@@ -46,153 +50,151 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iotsecuretunneling").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate]
+Boto3 documentation:
+[IoTSecureTunneling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### close_tunnel
 
 Type annotations for `boto3.client("iotsecuretunneling").close_tunnel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel]
+Boto3 documentation:
+[IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
 
-```python
-def close_tunnel(
-    self,
-    tunnelId: str,
-    delete: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `tunnelId`: `str` *(required)*
+- `delete`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_tunnel
 
-Type annotations for `boto3.client("iotsecuretunneling").describe_tunnel` method.
+Type annotations for `boto3.client("iotsecuretunneling").describe_tunnel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel]
+Boto3 documentation:
+[IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
 
-```python
-def describe_tunnel(
-    self,
-    tunnelId: str
-) -> DescribeTunnelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `tunnelId`: `str` *(required)*
+
+Returns
+[DescribeTunnelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#describetunnelresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iotsecuretunneling").generate_presigned_url` method.
+Type annotations for
+`boto3.client("iotsecuretunneling").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTSecureTunneling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iotsecuretunneling").list_tags_for_resource` method.
+Type annotations for
+`boto3.client("iotsecuretunneling").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_tunnels
 
 Type annotations for `boto3.client("iotsecuretunneling").list_tunnels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels]
+Boto3 documentation:
+[IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
 
-```python
-def list_tunnels(
-    self,
-    thingName: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListTunnelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTunnelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#listtunnelsresponsetypedef).
 
 ### open_tunnel
 
 Type annotations for `boto3.client("iotsecuretunneling").open_tunnel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel]
+Boto3 documentation:
+[IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
 
-```python
-def open_tunnel(
-    self,
-    description: str = None,
-    tags: List["TagTypeDef"] = None,
-    destinationConfig: "DestinationConfigTypeDef" = None,
-    timeoutConfig: "TimeoutConfigTypeDef" = None
-) -> OpenTunnelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `description`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
+- `destinationConfig`:
+  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#destinationconfigtypedef)
+- `timeoutConfig`:
+  [TimeoutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#timeoutconfigtypedef)
+
+Returns
+[OpenTunnelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#opentunnelresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iotsecuretunneling").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource]
+Boto3 documentation:
+[IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Type annotations for `boto3.client("iotsecuretunneling").untag_resource` method.
+Type annotations for `boto3.client("iotsecuretunneling").untag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource]
+Boto3 documentation:
+[IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

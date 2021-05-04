@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkMail](./README.md) > WorkMailClient
 
-Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
-type annotations stubs module [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+Auto-generated documentation for
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+type annotations stubs module
+[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [WorkMailClient for boto3 WorkMail module](#workmailclient-for-boto3-workmail-module)
   - [WorkMailClient](#workmailclient)
@@ -80,12 +82,13 @@ def get_workmail_client() -> WorkMailClient:
     return boto3.client("workmail")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
+Boto3 documentation:
+[WorkMail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_workmail.client import Exceptions
@@ -93,7 +96,6 @@ from mypy_boto3_workmail.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -119,939 +121,951 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### associate_delegate_to_resource
 
-Type annotations for `boto3.client("workmail").associate_delegate_to_resource` method.
+Type annotations for `boto3.client("workmail").associate_delegate_to_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource]
+Boto3 documentation:
+[WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
 
-```python
-def associate_delegate_to_resource(
-    self,
-    OrganizationId: str,
-    ResourceId: str,
-    EntityId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_member_to_group
 
-Type annotations for `boto3.client("workmail").associate_member_to_group` method.
+Type annotations for `boto3.client("workmail").associate_member_to_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group]
+Boto3 documentation:
+[WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
 
-```python
-def associate_member_to_group(
-    self,
-    OrganizationId: str,
-    GroupId: str,
-    MemberId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("workmail").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate]
+Boto3 documentation:
+[WorkMail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_mailbox_export_job
 
-Type annotations for `boto3.client("workmail").cancel_mailbox_export_job` method.
+Type annotations for `boto3.client("workmail").cancel_mailbox_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job]
+Boto3 documentation:
+[WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
 
-```python
-def cancel_mailbox_export_job(
-    self,
-    ClientToken: str,
-    JobId: str,
-    OrganizationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClientToken`: `str` *(required)*
+- `JobId`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_alias
 
 Type annotations for `boto3.client("workmail").create_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias]
+Boto3 documentation:
+[WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
 
-```python
-def create_alias(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    Alias: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `Alias`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_group
 
 Type annotations for `boto3.client("workmail").create_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group]
+Boto3 documentation:
+[WorkMail.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group)
 
-```python
-def create_group(
-    self,
-    OrganizationId: str,
-    Name: str
-) -> CreateGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[CreateGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#creategroupresponsetypedef).
 
 ### create_mobile_device_access_rule
 
-Type annotations for `boto3.client("workmail").create_mobile_device_access_rule` method.
+Type annotations for
+`boto3.client("workmail").create_mobile_device_access_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule]
+Boto3 documentation:
+[WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
 
-```python
-def create_mobile_device_access_rule(
-    self,
-    OrganizationId: str,
-    Name: str,
-    Effect: MobileDeviceAccessRuleEffect,
-    ClientToken: str = None,
-    Description: str = None,
-    DeviceTypes: List[str] = None,
-    NotDeviceTypes: List[str] = None,
-    DeviceModels: List[str] = None,
-    NotDeviceModels: List[str] = None,
-    DeviceOperatingSystems: List[str] = None,
-    NotDeviceOperatingSystems: List[str] = None,
-    DeviceUserAgents: List[str] = None,
-    NotDeviceUserAgents: List[str] = None
-) -> CreateMobileDeviceAccessRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Effect`:
+  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  *(required)*
+- `ClientToken`: `str`
+- `Description`: `str`
+- `DeviceTypes`: `List`\[`str`\]
+- `NotDeviceTypes`: `List`\[`str`\]
+- `DeviceModels`: `List`\[`str`\]
+- `NotDeviceModels`: `List`\[`str`\]
+- `DeviceOperatingSystems`: `List`\[`str`\]
+- `NotDeviceOperatingSystems`: `List`\[`str`\]
+- `DeviceUserAgents`: `List`\[`str`\]
+- `NotDeviceUserAgents`: `List`\[`str`\]
+
+Returns
+[CreateMobileDeviceAccessRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createmobiledeviceaccessruleresponsetypedef).
 
 ### create_organization
 
 Type annotations for `boto3.client("workmail").create_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization]
+Boto3 documentation:
+[WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
 
-```python
-def create_organization(
-    self,
-    Alias: str,
-    DirectoryId: str = None,
-    ClientToken: str = None,
-    Domains: List[DomainTypeDef] = None,
-    KmsKeyArn: str = None,
-    EnableInteroperability: bool = None
-) -> CreateOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Alias`: `str` *(required)*
+- `DirectoryId`: `str`
+- `ClientToken`: `str`
+- `Domains`:
+  `List`\[[DomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#domaintypedef)\]
+- `KmsKeyArn`: `str`
+- `EnableInteroperability`: `bool`
+
+Returns
+[CreateOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createorganizationresponsetypedef).
 
 ### create_resource
 
 Type annotations for `boto3.client("workmail").create_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource]
+Boto3 documentation:
+[WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
 
-```python
-def create_resource(
-    self,
-    OrganizationId: str,
-    Name: str,
-    Type: ResourceType
-) -> CreateResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Type`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#resourcetype)
+  *(required)*
+
+Returns
+[CreateResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createresourceresponsetypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("workmail").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user]
+Boto3 documentation:
+[WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
 
-```python
-def create_user(
-    self,
-    OrganizationId: str,
-    Name: str,
-    DisplayName: str,
-    Password: str
-) -> CreateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `DisplayName`: `str` *(required)*
+- `Password`: `str` *(required)*
+
+Returns
+[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createuserresponsetypedef).
 
 ### delete_access_control_rule
 
-Type annotations for `boto3.client("workmail").delete_access_control_rule` method.
+Type annotations for `boto3.client("workmail").delete_access_control_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule]
+Boto3 documentation:
+[WorkMail.Client.delete_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
 
-```python
-def delete_access_control_rule(
-    self,
-    OrganizationId: str,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_alias
 
 Type annotations for `boto3.client("workmail").delete_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias]
+Boto3 documentation:
+[WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias)
 
-```python
-def delete_alias(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    Alias: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `Alias`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_group
 
 Type annotations for `boto3.client("workmail").delete_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group]
+Boto3 documentation:
+[WorkMail.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group)
 
-```python
-def delete_group(
-    self,
-    OrganizationId: str,
-    GroupId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_mailbox_permissions
 
-Type annotations for `boto3.client("workmail").delete_mailbox_permissions` method.
+Type annotations for `boto3.client("workmail").delete_mailbox_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions]
+Boto3 documentation:
+[WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
 
-```python
-def delete_mailbox_permissions(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    GranteeId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `GranteeId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_mobile_device_access_rule
 
-Type annotations for `boto3.client("workmail").delete_mobile_device_access_rule` method.
+Type annotations for
+`boto3.client("workmail").delete_mobile_device_access_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule]
+Boto3 documentation:
+[WorkMail.Client.delete_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
 
-```python
-def delete_mobile_device_access_rule(
-    self,
-    OrganizationId: str,
-    MobileDeviceAccessRuleId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `MobileDeviceAccessRuleId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_organization
 
 Type annotations for `boto3.client("workmail").delete_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization]
+Boto3 documentation:
+[WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
 
-```python
-def delete_organization(
-    self,
-    OrganizationId: str,
-    DeleteDirectory: bool,
-    ClientToken: str = None
-) -> DeleteOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DeleteDirectory`: `bool` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[DeleteOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#deleteorganizationresponsetypedef).
 
 ### delete_resource
 
 Type annotations for `boto3.client("workmail").delete_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource]
+Boto3 documentation:
+[WorkMail.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource)
 
-```python
-def delete_resource(
-    self,
-    OrganizationId: str,
-    ResourceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_retention_policy
 
 Type annotations for `boto3.client("workmail").delete_retention_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy]
+Boto3 documentation:
+[WorkMail.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
 
-```python
-def delete_retention_policy(
-    self,
-    OrganizationId: str,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_user
 
 Type annotations for `boto3.client("workmail").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user]
+Boto3 documentation:
+[WorkMail.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    OrganizationId: str,
-    UserId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_from_work_mail
 
-Type annotations for `boto3.client("workmail").deregister_from_work_mail` method.
+Type annotations for `boto3.client("workmail").deregister_from_work_mail`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail]
+Boto3 documentation:
+[WorkMail.Client.deregister_from_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
 
-```python
-def deregister_from_work_mail(
-    self,
-    OrganizationId: str,
-    EntityId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_group
 
 Type annotations for `boto3.client("workmail").describe_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group]
+Boto3 documentation:
+[WorkMail.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group)
 
-```python
-def describe_group(
-    self,
-    OrganizationId: str,
-    GroupId: str
-) -> DescribeGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+
+Returns
+[DescribeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describegroupresponsetypedef).
 
 ### describe_mailbox_export_job
 
-Type annotations for `boto3.client("workmail").describe_mailbox_export_job` method.
+Type annotations for `boto3.client("workmail").describe_mailbox_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job]
+Boto3 documentation:
+[WorkMail.Client.describe_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
 
-```python
-def describe_mailbox_export_job(
-    self,
-    JobId: str,
-    OrganizationId: str
-) -> DescribeMailboxExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[DescribeMailboxExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describemailboxexportjobresponsetypedef).
 
 ### describe_organization
 
 Type annotations for `boto3.client("workmail").describe_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization]
+Boto3 documentation:
+[WorkMail.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization)
 
-```python
-def describe_organization(
-    self,
-    OrganizationId: str
-) -> DescribeOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[DescribeOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeorganizationresponsetypedef).
 
 ### describe_resource
 
 Type annotations for `boto3.client("workmail").describe_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource]
+Boto3 documentation:
+[WorkMail.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource)
 
-```python
-def describe_resource(
-    self,
-    OrganizationId: str,
-    ResourceId: str
-) -> DescribeResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[DescribeResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeresourceresponsetypedef).
 
 ### describe_user
 
 Type annotations for `boto3.client("workmail").describe_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user]
+Boto3 documentation:
+[WorkMail.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user)
 
-```python
-def describe_user(
-    self,
-    OrganizationId: str,
-    UserId: str
-) -> DescribeUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[DescribeUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeuserresponsetypedef).
 
 ### disassociate_delegate_from_resource
 
-Type annotations for `boto3.client("workmail").disassociate_delegate_from_resource` method.
+Type annotations for
+`boto3.client("workmail").disassociate_delegate_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource]
+Boto3 documentation:
+[WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
 
-```python
-def disassociate_delegate_from_resource(
-    self,
-    OrganizationId: str,
-    ResourceId: str,
-    EntityId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_member_from_group
 
-Type annotations for `boto3.client("workmail").disassociate_member_from_group` method.
+Type annotations for `boto3.client("workmail").disassociate_member_from_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group]
+Boto3 documentation:
+[WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
 
-```python
-def disassociate_member_from_group(
-    self,
-    OrganizationId: str,
-    GroupId: str,
-    MemberId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("workmail").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url]
+Boto3 documentation:
+[WorkMail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_access_control_effect
 
-Type annotations for `boto3.client("workmail").get_access_control_effect` method.
+Type annotations for `boto3.client("workmail").get_access_control_effect`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect]
+Boto3 documentation:
+[WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
 
-```python
-def get_access_control_effect(
-    self,
-    OrganizationId: str,
-    IpAddress: str,
-    Action: str,
-    UserId: str
-) -> GetAccessControlEffectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `IpAddress`: `str` *(required)*
+- `Action`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[GetAccessControlEffectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getaccesscontroleffectresponsetypedef).
 
 ### get_default_retention_policy
 
-Type annotations for `boto3.client("workmail").get_default_retention_policy` method.
+Type annotations for `boto3.client("workmail").get_default_retention_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy]
+Boto3 documentation:
+[WorkMail.Client.get_default_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
 
-```python
-def get_default_retention_policy(
-    self,
-    OrganizationId: str
-) -> GetDefaultRetentionPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[GetDefaultRetentionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getdefaultretentionpolicyresponsetypedef).
 
 ### get_mailbox_details
 
 Type annotations for `boto3.client("workmail").get_mailbox_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details]
+Boto3 documentation:
+[WorkMail.Client.get_mailbox_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
 
-```python
-def get_mailbox_details(
-    self,
-    OrganizationId: str,
-    UserId: str
-) -> GetMailboxDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[GetMailboxDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getmailboxdetailsresponsetypedef).
 
 ### get_mobile_device_access_effect
 
-Type annotations for `boto3.client("workmail").get_mobile_device_access_effect` method.
+Type annotations for `boto3.client("workmail").get_mobile_device_access_effect`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect]
+Boto3 documentation:
+[WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
 
-```python
-def get_mobile_device_access_effect(
-    self,
-    OrganizationId: str,
-    DeviceType: str = None,
-    DeviceModel: str = None,
-    DeviceOperatingSystem: str = None,
-    DeviceUserAgent: str = None
-) -> GetMobileDeviceAccessEffectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DeviceType`: `str`
+- `DeviceModel`: `str`
+- `DeviceOperatingSystem`: `str`
+- `DeviceUserAgent`: `str`
+
+Returns
+[GetMobileDeviceAccessEffectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getmobiledeviceaccesseffectresponsetypedef).
 
 ### list_access_control_rules
 
-Type annotations for `boto3.client("workmail").list_access_control_rules` method.
+Type annotations for `boto3.client("workmail").list_access_control_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules]
+Boto3 documentation:
+[WorkMail.Client.list_access_control_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
 
-```python
-def list_access_control_rules(
-    self,
-    OrganizationId: str
-) -> ListAccessControlRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[ListAccessControlRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listaccesscontrolrulesresponsetypedef).
 
 ### list_aliases
 
 Type annotations for `boto3.client("workmail").list_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases]
+Boto3 documentation:
+[WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases)
 
-```python
-def list_aliases(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listaliasesresponsetypedef).
 
 ### list_group_members
 
 Type annotations for `boto3.client("workmail").list_group_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members]
+Boto3 documentation:
+[WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members)
 
-```python
-def list_group_members(
-    self,
-    OrganizationId: str,
-    GroupId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListGroupMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListGroupMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupmembersresponsetypedef).
 
 ### list_groups
 
 Type annotations for `boto3.client("workmail").list_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups]
+Boto3 documentation:
+[WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups)
 
-```python
-def list_groups(
-    self,
-    OrganizationId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupsresponsetypedef).
 
 ### list_mailbox_export_jobs
 
-Type annotations for `boto3.client("workmail").list_mailbox_export_jobs` method.
+Type annotations for `boto3.client("workmail").list_mailbox_export_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs]
+Boto3 documentation:
+[WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
 
-```python
-def list_mailbox_export_jobs(
-    self,
-    OrganizationId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMailboxExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMailboxExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmailboxexportjobsresponsetypedef).
 
 ### list_mailbox_permissions
 
-Type annotations for `boto3.client("workmail").list_mailbox_permissions` method.
+Type annotations for `boto3.client("workmail").list_mailbox_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions]
+Boto3 documentation:
+[WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
 
-```python
-def list_mailbox_permissions(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMailboxPermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMailboxPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmailboxpermissionsresponsetypedef).
 
 ### list_mobile_device_access_rules
 
-Type annotations for `boto3.client("workmail").list_mobile_device_access_rules` method.
+Type annotations for `boto3.client("workmail").list_mobile_device_access_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules]
+Boto3 documentation:
+[WorkMail.Client.list_mobile_device_access_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
 
-```python
-def list_mobile_device_access_rules(
-    self,
-    OrganizationId: str
-) -> ListMobileDeviceAccessRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[ListMobileDeviceAccessRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmobiledeviceaccessrulesresponsetypedef).
 
 ### list_organizations
 
 Type annotations for `boto3.client("workmail").list_organizations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations]
+Boto3 documentation:
+[WorkMail.Client.list_organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations)
 
-```python
-def list_organizations(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListOrganizationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListOrganizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listorganizationsresponsetypedef).
 
 ### list_resource_delegates
 
 Type annotations for `boto3.client("workmail").list_resource_delegates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates]
+Boto3 documentation:
+[WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
 
-```python
-def list_resource_delegates(
-    self,
-    OrganizationId: str,
-    ResourceId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListResourceDelegatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListResourceDelegatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcedelegatesresponsetypedef).
 
 ### list_resources
 
 Type annotations for `boto3.client("workmail").list_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources]
+Boto3 documentation:
+[WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources)
 
-```python
-def list_resources(
-    self,
-    OrganizationId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("workmail").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource]
+Boto3 documentation:
+[WorkMail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_users
 
 Type annotations for `boto3.client("workmail").list_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users]
+Boto3 documentation:
+[WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users)
 
-```python
-def list_users(
-    self,
-    OrganizationId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listusersresponsetypedef).
 
 ### put_access_control_rule
 
 Type annotations for `boto3.client("workmail").put_access_control_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule]
+Boto3 documentation:
+[WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
 
-```python
-def put_access_control_rule(
-    self,
-    Name: str,
-    Effect: AccessControlRuleEffect,
-    Description: str,
-    OrganizationId: str,
-    IpRanges: List[str] = None,
-    NotIpRanges: List[str] = None,
-    Actions: List[str] = None,
-    NotActions: List[str] = None,
-    UserIds: List[str] = None,
-    NotUserIds: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Effect`:
+  [AccessControlRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#accesscontrolruleeffect)
+  *(required)*
+- `Description`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
+- `IpRanges`: `List`\[`str`\]
+- `NotIpRanges`: `List`\[`str`\]
+- `Actions`: `List`\[`str`\]
+- `NotActions`: `List`\[`str`\]
+- `UserIds`: `List`\[`str`\]
+- `NotUserIds`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_mailbox_permissions
 
 Type annotations for `boto3.client("workmail").put_mailbox_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions]
+Boto3 documentation:
+[WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
 
-```python
-def put_mailbox_permissions(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    GranteeId: str,
-    PermissionValues: List[PermissionType]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `GranteeId`: `str` *(required)*
+- `PermissionValues`:
+  `List`\[[PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#permissiontype)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_retention_policy
 
 Type annotations for `boto3.client("workmail").put_retention_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy]
+Boto3 documentation:
+[WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
 
-```python
-def put_retention_policy(
-    self,
-    OrganizationId: str,
-    Name: str,
-    FolderConfigurations: List["FolderConfigurationTypeDef"],
-    Id: str = None,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `FolderConfigurations`:
+  `List`\[[FolderConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#folderconfigurationtypedef)\]
+  *(required)*
+- `Id`: `str`
+- `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### register_to_work_mail
 
 Type annotations for `boto3.client("workmail").register_to_work_mail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail]
+Boto3 documentation:
+[WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
 
-```python
-def register_to_work_mail(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    Email: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `Email`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reset_password
 
 Type annotations for `boto3.client("workmail").reset_password` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password]
+Boto3 documentation:
+[WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password)
 
-```python
-def reset_password(
-    self,
-    OrganizationId: str,
-    UserId: str,
-    Password: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `Password`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_mailbox_export_job
 
-Type annotations for `boto3.client("workmail").start_mailbox_export_job` method.
+Type annotations for `boto3.client("workmail").start_mailbox_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job]
+Boto3 documentation:
+[WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
 
-```python
-def start_mailbox_export_job(
-    self,
-    ClientToken: str,
-    OrganizationId: str,
-    EntityId: str,
-    RoleArn: str,
-    KmsKeyArn: str,
-    S3BucketName: str,
-    S3Prefix: str,
-    Description: str = None
-) -> StartMailboxExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientToken`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `KmsKeyArn`: `str` *(required)*
+- `S3BucketName`: `str` *(required)*
+- `S3Prefix`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[StartMailboxExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#startmailboxexportjobresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("workmail").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource]
+Boto3 documentation:
+[WorkMail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("workmail").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource]
+Boto3 documentation:
+[WorkMail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_mailbox_quota
 
 Type annotations for `boto3.client("workmail").update_mailbox_quota` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota]
+Boto3 documentation:
+[WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
 
-```python
-def update_mailbox_quota(
-    self,
-    OrganizationId: str,
-    UserId: str,
-    MailboxQuota: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `MailboxQuota`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_mobile_device_access_rule
 
-Type annotations for `boto3.client("workmail").update_mobile_device_access_rule` method.
+Type annotations for
+`boto3.client("workmail").update_mobile_device_access_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule]
+Boto3 documentation:
+[WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
 
-```python
-def update_mobile_device_access_rule(
-    self,
-    OrganizationId: str,
-    MobileDeviceAccessRuleId: str,
-    Name: str,
-    Effect: MobileDeviceAccessRuleEffect,
-    Description: str = None,
-    DeviceTypes: List[str] = None,
-    NotDeviceTypes: List[str] = None,
-    DeviceModels: List[str] = None,
-    NotDeviceModels: List[str] = None,
-    DeviceOperatingSystems: List[str] = None,
-    NotDeviceOperatingSystems: List[str] = None,
-    DeviceUserAgents: List[str] = None,
-    NotDeviceUserAgents: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `MobileDeviceAccessRuleId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Effect`:
+  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  *(required)*
+- `Description`: `str`
+- `DeviceTypes`: `List`\[`str`\]
+- `NotDeviceTypes`: `List`\[`str`\]
+- `DeviceModels`: `List`\[`str`\]
+- `NotDeviceModels`: `List`\[`str`\]
+- `DeviceOperatingSystems`: `List`\[`str`\]
+- `NotDeviceOperatingSystems`: `List`\[`str`\]
+- `DeviceUserAgents`: `List`\[`str`\]
+- `NotDeviceUserAgents`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_primary_email_address
 
-Type annotations for `boto3.client("workmail").update_primary_email_address` method.
+Type annotations for `boto3.client("workmail").update_primary_email_address`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address]
+Boto3 documentation:
+[WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
 
-```python
-def update_primary_email_address(
-    self,
-    OrganizationId: str,
-    EntityId: str,
-    Email: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `EntityId`: `str` *(required)*
+- `Email`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource
 
 Type annotations for `boto3.client("workmail").update_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource]
+Boto3 documentation:
+[WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource)
 
-```python
-def update_resource(
-    self,
-    OrganizationId: str,
-    ResourceId: str,
-    Name: str = None,
-    BookingOptions: "BookingOptionsTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `OrganizationId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `Name`: `str`
+- `BookingOptions`:
+  [BookingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#bookingoptionstypedef)
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("workmail").get_paginator` method with overloads.
+Type annotations for `boto3.client("workmail").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_group_members")` -> [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
-- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_mailbox_permissions")` -> [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)
-- `client.get_paginator("list_organizations")` -> [ListOrganizationsPaginator](./paginators.md#listorganizationspaginator)
-- `client.get_paginator("list_resource_delegates")` -> [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
-- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
-
-
+- `client.get_paginator("list_aliases")` ->
+  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_group_members")` ->
+  [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
+- `client.get_paginator("list_groups")` ->
+  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_mailbox_permissions")` ->
+  [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)
+- `client.get_paginator("list_organizations")` ->
+  [ListOrganizationsPaginator](./paginators.md#listorganizationspaginator)
+- `client.get_paginator("list_resource_delegates")` ->
+  [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
+- `client.get_paginator("list_resources")` ->
+  [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+- `client.get_paginator("list_users")` ->
+  [ListUsersPaginator](./paginators.md#listuserspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > Literals
 
-Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+Auto-generated documentation for
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+type annotations stubs module
+[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [Literals for boto3 IoTDeviceAdvisor module](#literals-for-boto3-iotdeviceadvisor-module)
   - [Status](#status)

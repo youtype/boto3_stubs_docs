@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3](./README.md) > Waiters
 
-Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+Auto-generated documentation for
+[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+type annotations stubs module
+[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Waiters for boto3 S3 module](#waiters-for-boto3-s3-module)
   - [BucketExistsWaiter](#bucketexistswaiter)
@@ -24,13 +26,15 @@ def get_bucket_exists_waiter() -> BucketExistsWaiter:
     return boto3.client("s3").get_waiter("bucket_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_exists)
+Boto3 documentation:
+[S3.Waiter.bucket_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_exists)
 
 Arguments for `BucketExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
 
 ## BucketNotExistsWaiter
 
@@ -45,13 +49,15 @@ def get_bucket_not_exists_waiter() -> BucketNotExistsWaiter:
     return boto3.client("s3").get_waiter("bucket_not_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_not_exists)
+Boto3 documentation:
+[S3.Waiter.bucket_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_not_exists)
 
 Arguments for `BucketNotExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
 
 ## ObjectExistsWaiter
 
@@ -66,7 +72,8 @@ def get_object_exists_waiter() -> ObjectExistsWaiter:
     return boto3.client("s3").get_waiter("object_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_exists)
+Boto3 documentation:
+[S3.Waiter.object_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_exists)
 
 Arguments for `ObjectExistsWaiter.wait` method:
 
@@ -84,7 +91,8 @@ Arguments for `ObjectExistsWaiter.wait` method:
 - `RequestPayer`: `Literal['requester']`
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
 
 ## ObjectNotExistsWaiter
 
@@ -99,7 +107,8 @@ def get_object_not_exists_waiter() -> ObjectNotExistsWaiter:
     return boto3.client("s3").get_waiter("object_not_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_not_exists)
+Boto3 documentation:
+[S3.Waiter.object_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_not_exists)
 
 Arguments for `ObjectNotExistsWaiter.wait` method:
 
@@ -117,4 +126,5 @@ Arguments for `ObjectNotExistsWaiter.wait` method:
 - `RequestPayer`: `Literal['requester']`
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)

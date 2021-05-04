@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LakeFormation
 
-Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
-type annotations stubs module [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+Auto-generated documentation for
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+type annotations stubs module
+[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ```bash
 pip install mypy-boto3-lakeformation
@@ -18,7 +20,8 @@ pip install mypy-boto3-lakeformation
 
 ## LakeFormationClient
 
-Type annotations for  `boto3.client("lakeformation")` as [LakeFormationClient](./client.md)
+Type annotations for `boto3.client("lakeformation")` as
+[LakeFormationClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lakeformation.client import LakeFormationClient
 ```
 
-
 LakeFormationClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_grant_permissions](./client.md#batch-grant-permissions)
 - [batch_revoke_permissions](./client.md#batch-revoke-permissions)
 - [can_paginate](./client.md#can-paginate)
@@ -48,10 +49,8 @@ LakeFormationClient [exceptions](./client.md#exceptions)
 - [revoke_permissions](./client.md#revoke-permissions)
 - [update_resource](./client.md#update-resource)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -59,15 +58,6 @@ LakeFormationClient [exceptions](./client.md#exceptions)
 - [InternalServiceException](./client.md#internalserviceexception)
 - [InvalidInputException](./client.md#invalidinputexception)
 - [OperationTimeoutException](./client.md#operationtimeoutexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -84,13 +74,10 @@ from mypy_boto3_lakeformation.literals import ComparisonOperator, ...
 - [FieldNameString](./literals.md#fieldnamestring)
 - [Permission](./literals.md#permission)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

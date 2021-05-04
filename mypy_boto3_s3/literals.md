@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3](./README.md) > Literals
 
-Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+Auto-generated documentation for
+[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+type annotations stubs module
+[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Literals for boto3 S3 module](#literals-for-boto3-s3-module)
   - [AnalyticsS3ExportFileFormat](#analyticss3exportfileformat)

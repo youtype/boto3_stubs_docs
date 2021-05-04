@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTWireless](./README.md) > IoTWirelessClient
 
-Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
-type annotations stubs module [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+Auto-generated documentation for
+[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+type annotations stubs module
+[mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 - [IoTWirelessClient for boto3 IoTWireless module](#iotwirelessclient-for-boto3-iotwireless-module)
   - [IoTWirelessClient](#iotwirelessclient)
@@ -76,12 +78,13 @@ def get_iotwireless_client() -> IoTWirelessClient:
     return boto3.client("iotwireless")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client)
+Boto3 documentation:
+[IoTWireless.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iotwireless.client import Exceptions
@@ -89,7 +92,6 @@ from mypy_boto3_iotwireless.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -102,819 +104,866 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_aws_account_with_partner_account
 
-Type annotations for `boto3.client("iotwireless").associate_aws_account_with_partner_account` method.
+Type annotations for
+`boto3.client("iotwireless").associate_aws_account_with_partner_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account]
+Boto3 documentation:
+[IoTWireless.Client.associate_aws_account_with_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account)
 
-```python
-def associate_aws_account_with_partner_account(
-    self,
-    Sidewalk: "SidewalkAccountInfoTypeDef",
-    ClientRequestToken: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> AssociateAwsAccountWithPartnerAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Sidewalk`:
+  [SidewalkAccountInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkaccountinfotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+
+Returns
+[AssociateAwsAccountWithPartnerAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#associateawsaccountwithpartneraccountresponsetypedef).
 
 ### associate_wireless_device_with_thing
 
-Type annotations for `boto3.client("iotwireless").associate_wireless_device_with_thing` method.
+Type annotations for
+`boto3.client("iotwireless").associate_wireless_device_with_thing` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_thing]
+Boto3 documentation:
+[IoTWireless.Client.associate_wireless_device_with_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_thing)
 
-```python
-def associate_wireless_device_with_thing(
-    self,
-    Id: str,
-    ThingArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `ThingArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_wireless_gateway_with_certificate
 
-Type annotations for `boto3.client("iotwireless").associate_wireless_gateway_with_certificate` method.
+Type annotations for
+`boto3.client("iotwireless").associate_wireless_gateway_with_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_certificate]
+Boto3 documentation:
+[IoTWireless.Client.associate_wireless_gateway_with_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_certificate)
 
-```python
-def associate_wireless_gateway_with_certificate(
-    self,
-    Id: str,
-    IotCertificateId: str
-) -> AssociateWirelessGatewayWithCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IotCertificateId`: `str` *(required)*
+
+Returns
+[AssociateWirelessGatewayWithCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#associatewirelessgatewaywithcertificateresponsetypedef).
 
 ### associate_wireless_gateway_with_thing
 
-Type annotations for `boto3.client("iotwireless").associate_wireless_gateway_with_thing` method.
+Type annotations for
+`boto3.client("iotwireless").associate_wireless_gateway_with_thing` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_thing]
+Boto3 documentation:
+[IoTWireless.Client.associate_wireless_gateway_with_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_thing)
 
-```python
-def associate_wireless_gateway_with_thing(
-    self,
-    Id: str,
-    ThingArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `ThingArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("iotwireless").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.can_paginate]
+Boto3 documentation:
+[IoTWireless.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_destination
 
 Type annotations for `boto3.client("iotwireless").create_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination]
+Boto3 documentation:
+[IoTWireless.Client.create_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination)
 
-```python
-def create_destination(
-    self,
-    Name: str,
-    ExpressionType: ExpressionType,
-    Expression: str,
-    RoleArn: str,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None
-) -> CreateDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ExpressionType`:
+  [ExpressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#expressiontype)
+  *(required)*
+- `Expression`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createdestinationresponsetypedef).
 
 ### create_device_profile
 
-Type annotations for `boto3.client("iotwireless").create_device_profile` method.
+Type annotations for `boto3.client("iotwireless").create_device_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile]
+Boto3 documentation:
+[IoTWireless.Client.create_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile)
 
-```python
-def create_device_profile(
-    self,
-    Name: str = None,
-    LoRaWAN: "LoRaWANDeviceProfileTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None
-) -> CreateDeviceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `LoRaWAN`:
+  [LoRaWANDeviceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawandeviceprofiletypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateDeviceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createdeviceprofileresponsetypedef).
 
 ### create_service_profile
 
-Type annotations for `boto3.client("iotwireless").create_service_profile` method.
+Type annotations for `boto3.client("iotwireless").create_service_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile]
+Boto3 documentation:
+[IoTWireless.Client.create_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile)
 
-```python
-def create_service_profile(
-    self,
-    Name: str = None,
-    LoRaWAN: LoRaWANServiceProfileTypeDef = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None
-) -> CreateServiceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `LoRaWAN`:
+  [LoRaWANServiceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawanserviceprofiletypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateServiceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createserviceprofileresponsetypedef).
 
 ### create_wireless_device
 
-Type annotations for `boto3.client("iotwireless").create_wireless_device` method.
+Type annotations for `boto3.client("iotwireless").create_wireless_device`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.create_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device)
 
-```python
-def create_wireless_device(
-    self,
-    Type: WirelessDeviceType,
-    DestinationName: str,
-    Name: str = None,
-    Description: str = None,
-    ClientRequestToken: str = None,
-    LoRaWAN: "LoRaWANDeviceTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWirelessDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [WirelessDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessdevicetype)
+  *(required)*
+- `DestinationName`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `LoRaWAN`:
+  [LoRaWANDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawandevicetypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWirelessDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createwirelessdeviceresponsetypedef).
 
 ### create_wireless_gateway
 
-Type annotations for `boto3.client("iotwireless").create_wireless_gateway` method.
+Type annotations for `boto3.client("iotwireless").create_wireless_gateway`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway]
+Boto3 documentation:
+[IoTWireless.Client.create_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway)
 
-```python
-def create_wireless_gateway(
-    self,
-    LoRaWAN: "LoRaWANGatewayTypeDef",
-    Name: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None
-) -> CreateWirelessGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LoRaWAN`:
+  [LoRaWANGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewaytypedef)
+  *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateWirelessGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createwirelessgatewayresponsetypedef).
 
 ### create_wireless_gateway_task
 
-Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task` method.
+Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task]
+Boto3 documentation:
+[IoTWireless.Client.create_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task)
 
-```python
-def create_wireless_gateway_task(
-    self,
-    Id: str,
-    WirelessGatewayTaskDefinitionId: str
-) -> CreateWirelessGatewayTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `WirelessGatewayTaskDefinitionId`: `str` *(required)*
+
+Returns
+[CreateWirelessGatewayTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createwirelessgatewaytaskresponsetypedef).
 
 ### create_wireless_gateway_task_definition
 
-Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task_definition` method.
+Type annotations for
+`boto3.client("iotwireless").create_wireless_gateway_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition]
+Boto3 documentation:
+[IoTWireless.Client.create_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition)
 
-```python
-def create_wireless_gateway_task_definition(
-    self,
-    AutoCreateTasks: bool,
-    Name: str = None,
-    Update: "UpdateWirelessGatewayTaskCreateTypeDef" = None,
-    ClientRequestToken: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWirelessGatewayTaskDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoCreateTasks`: `bool` *(required)*
+- `Name`: `str`
+- `Update`:
+  [UpdateWirelessGatewayTaskCreateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#updatewirelessgatewaytaskcreatetypedef)
+- `ClientRequestToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWirelessGatewayTaskDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#createwirelessgatewaytaskdefinitionresponsetypedef).
 
 ### delete_destination
 
 Type annotations for `boto3.client("iotwireless").delete_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_destination]
+Boto3 documentation:
+[IoTWireless.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_destination)
 
-```python
-def delete_destination(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_device_profile
 
-Type annotations for `boto3.client("iotwireless").delete_device_profile` method.
+Type annotations for `boto3.client("iotwireless").delete_device_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_device_profile]
+Boto3 documentation:
+[IoTWireless.Client.delete_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_device_profile)
 
-```python
-def delete_device_profile(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_service_profile
 
-Type annotations for `boto3.client("iotwireless").delete_service_profile` method.
+Type annotations for `boto3.client("iotwireless").delete_service_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_service_profile]
+Boto3 documentation:
+[IoTWireless.Client.delete_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_service_profile)
 
-```python
-def delete_service_profile(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_device
 
-Type annotations for `boto3.client("iotwireless").delete_wireless_device` method.
+Type annotations for `boto3.client("iotwireless").delete_wireless_device`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.delete_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_device)
 
-```python
-def delete_wireless_device(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway
 
-Type annotations for `boto3.client("iotwireless").delete_wireless_gateway` method.
+Type annotations for `boto3.client("iotwireless").delete_wireless_gateway`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway]
+Boto3 documentation:
+[IoTWireless.Client.delete_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway)
 
-```python
-def delete_wireless_gateway(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway_task
 
-Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task` method.
+Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task]
+Boto3 documentation:
+[IoTWireless.Client.delete_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task)
 
-```python
-def delete_wireless_gateway_task(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway_task_definition
 
-Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task_definition` method.
+Type annotations for
+`boto3.client("iotwireless").delete_wireless_gateway_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task_definition]
+Boto3 documentation:
+[IoTWireless.Client.delete_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task_definition)
 
-```python
-def delete_wireless_gateway_task_definition(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_aws_account_from_partner_account
 
-Type annotations for `boto3.client("iotwireless").disassociate_aws_account_from_partner_account` method.
+Type annotations for
+`boto3.client("iotwireless").disassociate_aws_account_from_partner_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_aws_account_from_partner_account]
+Boto3 documentation:
+[IoTWireless.Client.disassociate_aws_account_from_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_aws_account_from_partner_account)
 
-```python
-def disassociate_aws_account_from_partner_account(
-    self,
-    PartnerAccountId: str,
-    PartnerType: Literal['Sidewalk']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PartnerAccountId`: `str` *(required)*
+- `PartnerType`: `Literal['Sidewalk']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_device_from_thing
 
-Type annotations for `boto3.client("iotwireless").disassociate_wireless_device_from_thing` method.
+Type annotations for
+`boto3.client("iotwireless").disassociate_wireless_device_from_thing` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_thing]
+Boto3 documentation:
+[IoTWireless.Client.disassociate_wireless_device_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_thing)
 
-```python
-def disassociate_wireless_device_from_thing(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_gateway_from_certificate
 
-Type annotations for `boto3.client("iotwireless").disassociate_wireless_gateway_from_certificate` method.
+Type annotations for
+`boto3.client("iotwireless").disassociate_wireless_gateway_from_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_certificate]
+Boto3 documentation:
+[IoTWireless.Client.disassociate_wireless_gateway_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_certificate)
 
-```python
-def disassociate_wireless_gateway_from_certificate(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_gateway_from_thing
 
-Type annotations for `boto3.client("iotwireless").disassociate_wireless_gateway_from_thing` method.
+Type annotations for
+`boto3.client("iotwireless").disassociate_wireless_gateway_from_thing` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_thing]
+Boto3 documentation:
+[IoTWireless.Client.disassociate_wireless_gateway_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_thing)
 
-```python
-def disassociate_wireless_gateway_from_thing(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iotwireless").generate_presigned_url` method.
+Type annotations for `boto3.client("iotwireless").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTWireless.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_destination
 
 Type annotations for `boto3.client("iotwireless").get_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_destination]
+Boto3 documentation:
+[IoTWireless.Client.get_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_destination)
 
-```python
-def get_destination(
-    self,
-    Name: str
-) -> GetDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getdestinationresponsetypedef).
 
 ### get_device_profile
 
 Type annotations for `boto3.client("iotwireless").get_device_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_device_profile]
+Boto3 documentation:
+[IoTWireless.Client.get_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_device_profile)
 
-```python
-def get_device_profile(
-    self,
-    Id: str
-) -> GetDeviceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetDeviceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getdeviceprofileresponsetypedef).
 
 ### get_partner_account
 
 Type annotations for `boto3.client("iotwireless").get_partner_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_partner_account]
+Boto3 documentation:
+[IoTWireless.Client.get_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_partner_account)
 
-```python
-def get_partner_account(
-    self,
-    PartnerAccountId: str,
-    PartnerType: Literal['Sidewalk']
-) -> GetPartnerAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PartnerAccountId`: `str` *(required)*
+- `PartnerType`: `Literal['Sidewalk']` *(required)*
+
+Returns
+[GetPartnerAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getpartneraccountresponsetypedef).
 
 ### get_service_endpoint
 
 Type annotations for `boto3.client("iotwireless").get_service_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_endpoint]
+Boto3 documentation:
+[IoTWireless.Client.get_service_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_endpoint)
 
-```python
-def get_service_endpoint(
-    self,
-    ServiceType: WirelessGatewayServiceType = None
-) -> GetServiceEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceType`:
+  [WirelessGatewayServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessgatewayservicetype)
+
+Returns
+[GetServiceEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getserviceendpointresponsetypedef).
 
 ### get_service_profile
 
 Type annotations for `boto3.client("iotwireless").get_service_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_profile]
+Boto3 documentation:
+[IoTWireless.Client.get_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_profile)
 
-```python
-def get_service_profile(
-    self,
-    Id: str
-) -> GetServiceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetServiceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getserviceprofileresponsetypedef).
 
 ### get_wireless_device
 
 Type annotations for `boto3.client("iotwireless").get_wireless_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device)
 
-```python
-def get_wireless_device(
-    self,
-    Identifier: str,
-    IdentifierType: WirelessDeviceIdType
-) -> GetWirelessDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identifier`: `str` *(required)*
+- `IdentifierType`:
+  [WirelessDeviceIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessdeviceidtype)
+  *(required)*
+
+Returns
+[GetWirelessDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessdeviceresponsetypedef).
 
 ### get_wireless_device_statistics
 
-Type annotations for `boto3.client("iotwireless").get_wireless_device_statistics` method.
+Type annotations for
+`boto3.client("iotwireless").get_wireless_device_statistics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device_statistics]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_device_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device_statistics)
 
-```python
-def get_wireless_device_statistics(
-    self,
-    WirelessDeviceId: str
-) -> GetWirelessDeviceStatisticsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WirelessDeviceId`: `str` *(required)*
+
+Returns
+[GetWirelessDeviceStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessdevicestatisticsresponsetypedef).
 
 ### get_wireless_gateway
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway)
 
-```python
-def get_wireless_gateway(
-    self,
-    Identifier: str,
-    IdentifierType: WirelessGatewayIdType
-) -> GetWirelessGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identifier`: `str` *(required)*
+- `IdentifierType`:
+  [WirelessGatewayIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessgatewayidtype)
+  *(required)*
+
+Returns
+[GetWirelessGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewayresponsetypedef).
 
 ### get_wireless_gateway_certificate
 
-Type annotations for `boto3.client("iotwireless").get_wireless_gateway_certificate` method.
+Type annotations for
+`boto3.client("iotwireless").get_wireless_gateway_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_certificate]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_certificate)
 
-```python
-def get_wireless_gateway_certificate(
-    self,
-    Id: str
-) -> GetWirelessGatewayCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetWirelessGatewayCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewaycertificateresponsetypedef).
 
 ### get_wireless_gateway_firmware_information
 
-Type annotations for `boto3.client("iotwireless").get_wireless_gateway_firmware_information` method.
+Type annotations for
+`boto3.client("iotwireless").get_wireless_gateway_firmware_information` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_firmware_information]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway_firmware_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_firmware_information)
 
-```python
-def get_wireless_gateway_firmware_information(
-    self,
-    Id: str
-) -> GetWirelessGatewayFirmwareInformationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetWirelessGatewayFirmwareInformationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewayfirmwareinformationresponsetypedef).
 
 ### get_wireless_gateway_statistics
 
-Type annotations for `boto3.client("iotwireless").get_wireless_gateway_statistics` method.
+Type annotations for
+`boto3.client("iotwireless").get_wireless_gateway_statistics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_statistics]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_statistics)
 
-```python
-def get_wireless_gateway_statistics(
-    self,
-    WirelessGatewayId: str
-) -> GetWirelessGatewayStatisticsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WirelessGatewayId`: `str` *(required)*
+
+Returns
+[GetWirelessGatewayStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewaystatisticsresponsetypedef).
 
 ### get_wireless_gateway_task
 
-Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task` method.
+Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task)
 
-```python
-def get_wireless_gateway_task(
-    self,
-    Id: str
-) -> GetWirelessGatewayTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetWirelessGatewayTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewaytaskresponsetypedef).
 
 ### get_wireless_gateway_task_definition
 
-Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task_definition` method.
+Type annotations for
+`boto3.client("iotwireless").get_wireless_gateway_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task_definition]
+Boto3 documentation:
+[IoTWireless.Client.get_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task_definition)
 
-```python
-def get_wireless_gateway_task_definition(
-    self,
-    Id: str
-) -> GetWirelessGatewayTaskDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetWirelessGatewayTaskDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#getwirelessgatewaytaskdefinitionresponsetypedef).
 
 ### list_destinations
 
 Type annotations for `boto3.client("iotwireless").list_destinations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_destinations]
+Boto3 documentation:
+[IoTWireless.Client.list_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_destinations)
 
-```python
-def list_destinations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listdestinationsresponsetypedef).
 
 ### list_device_profiles
 
 Type annotations for `boto3.client("iotwireless").list_device_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_device_profiles]
+Boto3 documentation:
+[IoTWireless.Client.list_device_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_device_profiles)
 
-```python
-def list_device_profiles(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDeviceProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDeviceProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listdeviceprofilesresponsetypedef).
 
 ### list_partner_accounts
 
-Type annotations for `boto3.client("iotwireless").list_partner_accounts` method.
+Type annotations for `boto3.client("iotwireless").list_partner_accounts`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_partner_accounts]
+Boto3 documentation:
+[IoTWireless.Client.list_partner_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_partner_accounts)
 
-```python
-def list_partner_accounts(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPartnerAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPartnerAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listpartneraccountsresponsetypedef).
 
 ### list_service_profiles
 
-Type annotations for `boto3.client("iotwireless").list_service_profiles` method.
+Type annotations for `boto3.client("iotwireless").list_service_profiles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_service_profiles]
+Boto3 documentation:
+[IoTWireless.Client.list_service_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_service_profiles)
 
-```python
-def list_service_profiles(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListServiceProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListServiceProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listserviceprofilesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iotwireless").list_tags_for_resource` method.
+Type annotations for `boto3.client("iotwireless").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoTWireless.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_wireless_devices
 
-Type annotations for `boto3.client("iotwireless").list_wireless_devices` method.
+Type annotations for `boto3.client("iotwireless").list_wireless_devices`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices]
+Boto3 documentation:
+[IoTWireless.Client.list_wireless_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices)
 
-```python
-def list_wireless_devices(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    DestinationName: str = None,
-    DeviceProfileId: str = None,
-    ServiceProfileId: str = None,
-    WirelessDeviceType: WirelessDeviceType = None
-) -> ListWirelessDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DestinationName`: `str`
+- `DeviceProfileId`: `str`
+- `ServiceProfileId`: `str`
+- `WirelessDeviceType`:
+  [WirelessDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessdevicetype)
+
+Returns
+[ListWirelessDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listwirelessdevicesresponsetypedef).
 
 ### list_wireless_gateway_task_definitions
 
-Type annotations for `boto3.client("iotwireless").list_wireless_gateway_task_definitions` method.
+Type annotations for
+`boto3.client("iotwireless").list_wireless_gateway_task_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions]
+Boto3 documentation:
+[IoTWireless.Client.list_wireless_gateway_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions)
 
-```python
-def list_wireless_gateway_task_definitions(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    TaskDefinitionType: Literal['UPDATE'] = None
-) -> ListWirelessGatewayTaskDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `TaskDefinitionType`: `Literal['UPDATE']`
+
+Returns
+[ListWirelessGatewayTaskDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listwirelessgatewaytaskdefinitionsresponsetypedef).
 
 ### list_wireless_gateways
 
-Type annotations for `boto3.client("iotwireless").list_wireless_gateways` method.
+Type annotations for `boto3.client("iotwireless").list_wireless_gateways`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateways]
+Boto3 documentation:
+[IoTWireless.Client.list_wireless_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateways)
 
-```python
-def list_wireless_gateways(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWirelessGatewaysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWirelessGatewaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#listwirelessgatewaysresponsetypedef).
 
 ### send_data_to_wireless_device
 
-Type annotations for `boto3.client("iotwireless").send_data_to_wireless_device` method.
+Type annotations for `boto3.client("iotwireless").send_data_to_wireless_device`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.send_data_to_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device)
 
-```python
-def send_data_to_wireless_device(
-    self,
-    Id: str,
-    TransmitMode: int,
-    PayloadData: str,
-    WirelessMetadata: WirelessMetadataTypeDef = None
-) -> SendDataToWirelessDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `TransmitMode`: `int` *(required)*
+- `PayloadData`: `str` *(required)*
+- `WirelessMetadata`:
+  [WirelessMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#wirelessmetadatatypedef)
+
+Returns
+[SendDataToWirelessDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#senddatatowirelessdeviceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iotwireless").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.tag_resource]
+Boto3 documentation:
+[IoTWireless.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### test_wireless_device
 
 Type annotations for `boto3.client("iotwireless").test_wireless_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.test_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.test_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.test_wireless_device)
 
-```python
-def test_wireless_device(
-    self,
-    Id: str
-) -> TestWirelessDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[TestWirelessDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#testwirelessdeviceresponsetypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("iotwireless").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.untag_resource]
+Boto3 documentation:
+[IoTWireless.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_destination
 
 Type annotations for `boto3.client("iotwireless").update_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination]
+Boto3 documentation:
+[IoTWireless.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination)
 
-```python
-def update_destination(
-    self,
-    Name: str,
-    ExpressionType: ExpressionType = None,
-    Expression: str = None,
-    Description: str = None,
-    RoleArn: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ExpressionType`:
+  [ExpressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#expressiontype)
+- `Expression`: `str`
+- `Description`: `str`
+- `RoleArn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_partner_account
 
-Type annotations for `boto3.client("iotwireless").update_partner_account` method.
+Type annotations for `boto3.client("iotwireless").update_partner_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account]
+Boto3 documentation:
+[IoTWireless.Client.update_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account)
 
-```python
-def update_partner_account(
-    self,
-    Sidewalk: SidewalkUpdateAccountTypeDef,
-    PartnerAccountId: str,
-    PartnerType: Literal['Sidewalk']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Sidewalk`:
+  [SidewalkUpdateAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkupdateaccounttypedef)
+  *(required)*
+- `PartnerAccountId`: `str` *(required)*
+- `PartnerType`: `Literal['Sidewalk']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_wireless_device
 
-Type annotations for `boto3.client("iotwireless").update_wireless_device` method.
+Type annotations for `boto3.client("iotwireless").update_wireless_device`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device]
+Boto3 documentation:
+[IoTWireless.Client.update_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device)
 
-```python
-def update_wireless_device(
-    self,
-    Id: str,
-    DestinationName: str = None,
-    Name: str = None,
-    Description: str = None,
-    LoRaWAN: LoRaWANUpdateDeviceTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `DestinationName`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`:
+  [LoRaWANUpdateDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawanupdatedevicetypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_wireless_gateway
 
-Type annotations for `boto3.client("iotwireless").update_wireless_gateway` method.
+Type annotations for `boto3.client("iotwireless").update_wireless_gateway`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway]
+Boto3 documentation:
+[IoTWireless.Client.update_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway)
 
-```python
-def update_wireless_gateway(
-    self,
-    Id: str,
-    Name: str = None,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
 
-
+Returns `Dict`\[`str`, `Any`\].

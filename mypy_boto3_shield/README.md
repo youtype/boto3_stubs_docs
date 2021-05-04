@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Shield
 
-Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
-type annotations stubs module [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+Auto-generated documentation for
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+type annotations stubs module
+[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ```bash
 pip install mypy-boto3-shield
@@ -19,7 +21,7 @@ pip install mypy-boto3-shield
 
 ## ShieldClient
 
-Type annotations for  `boto3.client("shield")` as [ShieldClient](./client.md)
+Type annotations for `boto3.client("shield")` as [ShieldClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_shield.client import ShieldClient
 ```
 
-
 ShieldClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_drt_log_bucket](./client.md#associate-drt-log-bucket)
 - [associate_drt_role](./client.md#associate-drt-role)
 - [associate_health_check](./client.md#associate-health-check)
@@ -70,10 +70,8 @@ ShieldClient [exceptions](./client.md#exceptions)
 - [update_protection_group](./client.md#update-protection-group)
 - [update_subscription](./client.md#update-subscription)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AccessDeniedForDependencyException](./client.md#accessdeniedfordependencyexception)
 - [ClientError](./client.md#clienterror)
@@ -89,14 +87,10 @@ ShieldClient [exceptions](./client.md#exceptions)
 - [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("shield").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("shield").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,11 +100,6 @@ from mypy_boto3_shield.paginators import ListAttacksPaginator, ...
 
 - [ListAttacksPaginator](./paginators.md#listattackspaginator)
 - [ListProtectionsPaginator](./paginators.md#listprotectionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -135,13 +124,10 @@ from mypy_boto3_shield.literals import AttackLayer, ...
 - [SubscriptionState](./literals.md#subscriptionstate)
 - [Unit](./literals.md#unit)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

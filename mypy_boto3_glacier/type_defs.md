@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Glacier](./README.md) > Structures
 
-Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+Auto-generated documentation for
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+type annotations stubs module
+[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [Typed dictionaries for boto3 Glacier module](#typed-dictionaries-for-boto3-glacier-module)
   - [ArchiveCreationOutputTypeDef](#archivecreationoutputtypedef)
@@ -57,15 +59,13 @@ type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy
 from mypy_boto3_glacier.type_defs import ArchiveCreationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `location`: `str`
 - `checksum`: `str`
 - `archiveId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## CSVInputTypeDef
 
@@ -73,17 +73,15 @@ Required fields:
 from mypy_boto3_glacier.type_defs import CSVInputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileHeaderInfo`: `FileHeaderInfo`
+
+- `FileHeaderInfo`:
+  [FileHeaderInfo](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#fileheaderinfo)
 - `Comments`: `str`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
-
 
 ## CSVOutputTypeDef
 
@@ -91,17 +89,16 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import CSVOutputTypeDef
 ```
 
-
 Required fields:
-- `QuoteFields`: `QuoteFields`
+
+- `QuoteFields`:
+  [QuoteFields](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#quotefields)
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## CreateVaultOutputTypeDef
 
@@ -109,13 +106,11 @@ Required fields:
 from mypy_boto3_glacier.type_defs import CreateVaultOutputTypeDef
 ```
 
-
 Required fields:
+
 - `location`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## DataRetrievalPolicyTypeDef
 
@@ -123,12 +118,10 @@ Required fields:
 from mypy_boto3_glacier.type_defs import DataRetrievalPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Rules`: `List["DataRetrievalRuleTypeDef"]`
 
+- `Rules`:
+  `List`\[[DataRetrievalRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#dataretrievalruletypedef)\]
 
 ## DataRetrievalRuleTypeDef
 
@@ -136,13 +129,10 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import DataRetrievalRuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Strategy`: `str`
 - `BytesPerHour`: `int`
-
 
 ## DescribeVaultOutputTypeDef
 
@@ -150,18 +140,16 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import DescribeVaultOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VaultARN`: `str`
 - `VaultName`: `str`
 - `CreationDate`: `str`
 - `LastInventoryDate`: `str`
 - `NumberOfArchives`: `int`
 - `SizeInBytes`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## EncryptionTypeDef
 
@@ -169,14 +157,12 @@ Required fields:
 from mypy_boto3_glacier.type_defs import EncryptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EncryptionType`: `EncryptionType`
+
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#encryptiontype)
 - `KMSKeyId`: `str`
 - `KMSContext`: `str`
-
 
 ## GetDataRetrievalPolicyOutputTypeDef
 
@@ -184,13 +170,12 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import GetDataRetrievalPolicyOutputTypeDef
 ```
 
-
 Required fields:
-- `Policy`: `"DataRetrievalPolicyTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Policy`:
+  [DataRetrievalPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#dataretrievalpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## GetJobOutputOutputTypeDef
 
@@ -198,8 +183,8 @@ Required fields:
 from mypy_boto3_glacier.type_defs import GetJobOutputOutputTypeDef
 ```
 
-
 Required fields:
+
 - `body`: `StreamingBody`
 - `checksum`: `str`
 - `status`: `int`
@@ -207,10 +192,8 @@ Required fields:
 - `acceptRanges`: `str`
 - `contentType`: `str`
 - `archiveDescription`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## GetVaultAccessPolicyOutputTypeDef
 
@@ -218,13 +201,12 @@ Required fields:
 from mypy_boto3_glacier.type_defs import GetVaultAccessPolicyOutputTypeDef
 ```
 
-
 Required fields:
-- `policy`: `"VaultAccessPolicyTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `policy`:
+  [VaultAccessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultaccesspolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## GetVaultLockOutputTypeDef
 
@@ -232,16 +214,14 @@ Required fields:
 from mypy_boto3_glacier.type_defs import GetVaultLockOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Policy`: `str`
 - `State`: `str`
 - `ExpirationDate`: `str`
 - `CreationDate`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## GetVaultNotificationsOutputTypeDef
 
@@ -249,13 +229,12 @@ Required fields:
 from mypy_boto3_glacier.type_defs import GetVaultNotificationsOutputTypeDef
 ```
 
-
 Required fields:
-- `vaultNotificationConfig`: `"VaultNotificationConfigTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `vaultNotificationConfig`:
+  [VaultNotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultnotificationconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## GlacierJobDescriptionTypeDef
 
@@ -263,18 +242,18 @@ Required fields:
 from mypy_boto3_glacier.type_defs import GlacierJobDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobDescription`: `str`
-- `Action`: `ActionCode`
+- `Action`:
+  [ActionCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#actioncode)
 - `ArchiveId`: `str`
 - `VaultARN`: `str`
 - `CreationDate`: `str`
 - `Completed`: `bool`
-- `StatusCode`: `StatusCode`
+- `StatusCode`:
+  [StatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#statuscode)
 - `StatusMessage`: `str`
 - `ArchiveSizeInBytes`: `int`
 - `InventorySizeInBytes`: `int`
@@ -284,11 +263,13 @@ Optional fields:
 - `ArchiveSHA256TreeHash`: `str`
 - `RetrievalByteRange`: `str`
 - `Tier`: `str`
-- `InventoryRetrievalParameters`: `"InventoryRetrievalJobDescriptionTypeDef"`
+- `InventoryRetrievalParameters`:
+  [InventoryRetrievalJobDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#inventoryretrievaljobdescriptiontypedef)
 - `JobOutputPath`: `str`
-- `SelectParameters`: `"SelectParametersTypeDef"`
-- `OutputLocation`: `"OutputLocationTypeDef"`
-
+- `SelectParameters`:
+  [SelectParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#selectparameterstypedef)
+- `OutputLocation`:
+  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#outputlocationtypedef)
 
 ## GrantTypeDef
 
@@ -296,13 +277,12 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import GrantTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Grantee`: `"GranteeTypeDef"`
-- `Permission`: `Permission`
 
+- `Grantee`:
+  [GranteeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#granteetypedef)
+- `Permission`:
+  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#permission)
 
 ## GranteeTypeDef
 
@@ -310,18 +290,17 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import GranteeTypeDef
 ```
 
-
 Required fields:
-- `Type`: `TypeType`
 
-
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#typetype)
 
 Optional fields:
+
 - `DisplayName`: `str`
 - `URI`: `str`
 - `ID`: `str`
 - `EmailAddress`: `str`
-
 
 ## InitiateJobOutputTypeDef
 
@@ -329,15 +308,13 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import InitiateJobOutputTypeDef
 ```
 
-
 Required fields:
+
 - `location`: `str`
 - `jobId`: `str`
 - `jobOutputPath`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## InitiateMultipartUploadOutputTypeDef
 
@@ -345,14 +322,12 @@ Required fields:
 from mypy_boto3_glacier.type_defs import InitiateMultipartUploadOutputTypeDef
 ```
 
-
 Required fields:
+
 - `location`: `str`
 - `uploadId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## InitiateVaultLockOutputTypeDef
 
@@ -360,13 +335,11 @@ Required fields:
 from mypy_boto3_glacier.type_defs import InitiateVaultLockOutputTypeDef
 ```
 
-
 Required fields:
+
 - `lockId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## InputSerializationTypeDef
 
@@ -374,12 +347,10 @@ Required fields:
 from mypy_boto3_glacier.type_defs import InputSerializationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `csv`: `"CSVInputTypeDef"`
 
+- `csv`:
+  [CSVInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#csvinputtypedef)
 
 ## InventoryRetrievalJobDescriptionTypeDef
 
@@ -387,16 +358,13 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import InventoryRetrievalJobDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Format`: `str`
 - `StartDate`: `str`
 - `EndDate`: `str`
 - `Limit`: `str`
 - `Marker`: `str`
-
 
 ## InventoryRetrievalJobInputTypeDef
 
@@ -404,15 +372,12 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import InventoryRetrievalJobInputTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StartDate`: `str`
 - `EndDate`: `str`
 - `Limit`: `str`
 - `Marker`: `str`
-
 
 ## JobParametersTypeDef
 
@@ -420,10 +385,8 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import JobParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Format`: `str`
 - `Type`: `str`
 - `ArchiveId`: `str`
@@ -431,10 +394,12 @@ Optional fields:
 - `SNSTopic`: `str`
 - `RetrievalByteRange`: `str`
 - `Tier`: `str`
-- `InventoryRetrievalParameters`: `"InventoryRetrievalJobInputTypeDef"`
-- `SelectParameters`: `"SelectParametersTypeDef"`
-- `OutputLocation`: `"OutputLocationTypeDef"`
-
+- `InventoryRetrievalParameters`:
+  [InventoryRetrievalJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#inventoryretrievaljobinputtypedef)
+- `SelectParameters`:
+  [SelectParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#selectparameterstypedef)
+- `OutputLocation`:
+  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#outputlocationtypedef)
 
 ## ListJobsOutputTypeDef
 
@@ -442,14 +407,13 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import ListJobsOutputTypeDef
 ```
 
-
 Required fields:
-- `JobList`: `List["GlacierJobDescriptionTypeDef"]`
+
+- `JobList`:
+  `List`\[[GlacierJobDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#glacierjobdescriptiontypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ListMultipartUploadsOutputTypeDef
 
@@ -457,14 +421,13 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ListMultipartUploadsOutputTypeDef
 ```
 
-
 Required fields:
-- `UploadsList`: `List["UploadListElementTypeDef"]`
+
+- `UploadsList`:
+  `List`\[[UploadListElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#uploadlistelementtypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ListPartsOutputTypeDef
 
@@ -472,19 +435,18 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ListPartsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `MultipartUploadId`: `str`
 - `VaultARN`: `str`
 - `ArchiveDescription`: `str`
 - `PartSizeInBytes`: `int`
 - `CreationDate`: `str`
-- `Parts`: `List["PartListElementTypeDef"]`
+- `Parts`:
+  `List`\[[PartListElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#partlistelementtypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ListProvisionedCapacityOutputTypeDef
 
@@ -492,13 +454,12 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ListProvisionedCapacityOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedCapacityList`: `List["ProvisionedCapacityDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisionedCapacityList`:
+  `List`\[[ProvisionedCapacityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#provisionedcapacitydescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ListTagsForVaultOutputTypeDef
 
@@ -506,13 +467,11 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ListTagsForVaultOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `Dict[str, str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ListVaultsOutputTypeDef
 
@@ -520,14 +479,13 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ListVaultsOutputTypeDef
 ```
 
-
 Required fields:
-- `VaultList`: `List["DescribeVaultOutputTypeDef"]`
+
+- `VaultList`:
+  `List`\[[DescribeVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#describevaultoutputtypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## OutputLocationTypeDef
 
@@ -535,12 +493,10 @@ Required fields:
 from mypy_boto3_glacier.type_defs import OutputLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3`: `"S3LocationTypeDef"`
 
+- `S3`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#s3locationtypedef)
 
 ## OutputSerializationTypeDef
 
@@ -548,12 +504,10 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import OutputSerializationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `csv`: `"CSVOutputTypeDef"`
 
+- `csv`:
+  [CSVOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#csvoutputtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -561,14 +515,11 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PartListElementTypeDef
 
@@ -576,13 +527,10 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import PartListElementTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RangeInBytes`: `str`
 - `SHA256TreeHash`: `str`
-
 
 ## ProvisionedCapacityDescriptionTypeDef
 
@@ -590,14 +538,11 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import ProvisionedCapacityDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CapacityId`: `str`
 - `StartDate`: `str`
 - `ExpirationDate`: `str`
-
 
 ## PurchaseProvisionedCapacityOutputTypeDef
 
@@ -605,13 +550,11 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import PurchaseProvisionedCapacityOutputTypeDef
 ```
 
-
 Required fields:
+
 - `capacityId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -619,16 +562,13 @@ Required fields:
 from mypy_boto3_glacier.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3LocationTypeDef
 
@@ -636,19 +576,20 @@ Required fields:
 from mypy_boto3_glacier.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BucketName`: `str`
 - `Prefix`: `str`
-- `Encryption`: `"EncryptionTypeDef"`
-- `CannedACL`: `CannedACL`
-- `AccessControlList`: `List["GrantTypeDef"]`
-- `Tagging`: `Dict[str, str]`
-- `UserMetadata`: `Dict[str, str]`
-- `StorageClass`: `StorageClass`
-
+- `Encryption`:
+  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#encryptiontypedef)
+- `CannedACL`:
+  [CannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#cannedacl)
+- `AccessControlList`:
+  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#granttypedef)\]
+- `Tagging`: `Dict`\[`str`, `str`\]
+- `UserMetadata`: `Dict`\[`str`, `str`\]
+- `StorageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/literals.html#storageclass)
 
 ## SelectParametersTypeDef
 
@@ -656,15 +597,14 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import SelectParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputSerialization`: `"InputSerializationTypeDef"`
+
+- `InputSerialization`:
+  [InputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#inputserializationtypedef)
 - `ExpressionType`: `Literal['SQL']`
 - `Expression`: `str`
-- `OutputSerialization`: `"OutputSerializationTypeDef"`
-
+- `OutputSerialization`:
+  [OutputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#outputserializationtypedef)
 
 ## UploadListElementTypeDef
 
@@ -672,16 +612,13 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import UploadListElementTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MultipartUploadId`: `str`
 - `VaultARN`: `str`
 - `ArchiveDescription`: `str`
 - `PartSizeInBytes`: `int`
 - `CreationDate`: `str`
-
 
 ## UploadMultipartPartOutputTypeDef
 
@@ -689,13 +626,11 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import UploadMultipartPartOutputTypeDef
 ```
 
-
 Required fields:
+
 - `checksum`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#responsemetadata)
 
 ## VaultAccessPolicyTypeDef
 
@@ -703,12 +638,9 @@ Required fields:
 from mypy_boto3_glacier.type_defs import VaultAccessPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## VaultLockPolicyTypeDef
 
@@ -716,12 +648,9 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import VaultLockPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## VaultNotificationConfigTypeDef
 
@@ -729,13 +658,10 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import VaultNotificationConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SNSTopic`: `str`
-- `Events`: `List[str]`
 
+- `SNSTopic`: `str`
+- `Events`: `List`\[`str`\]
 
 ## WaiterConfigTypeDef
 
@@ -743,10 +669,7 @@ Optional fields:
 from mypy_boto3_glacier.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

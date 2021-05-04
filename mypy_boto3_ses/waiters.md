@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SES](./README.md) > Waiters
 
-Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+Auto-generated documentation for
+[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+type annotations stubs module
+[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Waiters for boto3 SES module](#waiters-for-boto3-ses-module)
   - [IdentityExistsWaiter](#identityexistswaiter)
@@ -21,9 +23,11 @@ def get_identity_exists_waiter() -> IdentityExistsWaiter:
     return boto3.client("ses").get_waiter("identity_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.identity_exists)
+Boto3 documentation:
+[SES.Waiter.identity_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.identity_exists)
 
 Arguments for `IdentityExistsWaiter.wait` method:
 
-- `Identities`: `List[str]` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#waiterconfigtypedef)
+- `Identities`: `List`\[`str`\] *(required)*
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#waiterconfigtypedef)

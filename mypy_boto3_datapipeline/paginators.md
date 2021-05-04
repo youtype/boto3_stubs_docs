@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataPipeline](./README.md) > Paginators
 
-Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
-type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+Auto-generated documentation for
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+type annotations stubs module
+[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Paginators for boto3 DataPipeline module](#paginators-for-boto3-datapipeline-module)
   - [DescribeObjectsPaginator](#describeobjectspaginator)
@@ -12,7 +14,8 @@ type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project
 
 ## DescribeObjectsPaginator
 
-Type annotations for `boto3.client("datapipeline").get_paginator("describe_objects")`.
+Type annotations for
+`boto3.client("datapipeline").get_paginator("describe_objects")`.
 
 Can be used directly:
 
@@ -23,22 +26,24 @@ def get_describe_objects_paginator() -> DescribeObjectsPaginator:
     return boto3.client("datapipeline").get_paginator("describe_objects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
+Boto3 documentation:
+[DataPipeline.Paginator.DescribeObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
 
-```python
-class DescribeObjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        pipelineId: str,
-        objectIds: List[str],
-        evaluateExpressions: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeObjectsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeObjectsPaginator.paginate` method:
+
+- `pipelineId`: `str` *(required)*
+- `objectIds`: `List`\[`str`\] *(required)*
+- `evaluateExpressions`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+
+`DescribeObjectsPaginator.paginate` returns
+`Iterator`\[[DescribeObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describeobjectsoutputtypedef)\].
+
 ## ListPipelinesPaginator
 
-Type annotations for `boto3.client("datapipeline").get_paginator("list_pipelines")`.
+Type annotations for
+`boto3.client("datapipeline").get_paginator("list_pipelines")`.
 
 Can be used directly:
 
@@ -49,19 +54,21 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("datapipeline").get_paginator("list_pipelines")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
+Boto3 documentation:
+[DataPipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
 
-```python
-class ListPipelinesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPipelinesOutputTypeDef]:
-        pass
-```
+Arguments for `ListPipelinesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+
+`ListPipelinesPaginator.paginate` returns
+`Iterator`\[[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#listpipelinesoutputtypedef)\].
+
 ## QueryObjectsPaginator
 
-Type annotations for `boto3.client("datapipeline").get_paginator("query_objects")`.
+Type annotations for
+`boto3.client("datapipeline").get_paginator("query_objects")`.
 
 Can be used directly:
 
@@ -72,16 +79,17 @@ def get_query_objects_paginator() -> QueryObjectsPaginator:
     return boto3.client("datapipeline").get_paginator("query_objects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
+Boto3 documentation:
+[DataPipeline.Paginator.QueryObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
 
-```python
-class QueryObjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        pipelineId: str,
-        sphere: str,
-        query: QueryTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[QueryObjectsOutputTypeDef]:
-        pass
-```
+Arguments for `QueryObjectsPaginator.paginate` method:
+
+- `pipelineId`: `str` *(required)*
+- `sphere`: `str` *(required)*
+- `query`:
+  [QueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#querytypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+
+`QueryObjectsPaginator.paginate` returns
+`Iterator`\[[QueryObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#queryobjectsoutputtypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SFN
 
-Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+Auto-generated documentation for
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+type annotations stubs module
+[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ```bash
 pip install mypy-boto3-stepfunctions
@@ -19,7 +21,8 @@ pip install mypy-boto3-stepfunctions
 
 ## SFNClient
 
-Type annotations for  `boto3.client("stepfunctions")` as [SFNClient](./client.md)
+Type annotations for `boto3.client("stepfunctions")` as
+[SFNClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_stepfunctions.client import SFNClient
 ```
 
-
 SFNClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_activity](./client.md#create-activity)
 - [create_state_machine](./client.md#create-state-machine)
@@ -60,10 +61,8 @@ SFNClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_state_machine](./client.md#update-state-machine)
 
-
-
-
 ### Exceptions
+
 - [ActivityDoesNotExist](./client.md#activitydoesnotexist)
 - [ActivityLimitExceeded](./client.md#activitylimitexceeded)
 - [ActivityWorkerLimitExceeded](./client.md#activityworkerlimitexceeded)
@@ -90,14 +89,10 @@ SFNClient [exceptions](./client.md#exceptions)
 - [TaskTimedOut](./client.md#tasktimedout)
 - [TooManyTags](./client.md#toomanytags)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("stepfunctions").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("stepfunctions").get_paginator("...")`.
 
 Can be used directly:
 
@@ -109,11 +104,6 @@ from mypy_boto3_stepfunctions.paginators import GetExecutionHistoryPaginator, ..
 - [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
 - [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
 - [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -136,13 +126,10 @@ from mypy_boto3_stepfunctions.literals import ExecutionStatus, ...
 - [StateMachineType](./literals.md#statemachinetype)
 - [SyncExecutionStatus](./literals.md#syncexecutionstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

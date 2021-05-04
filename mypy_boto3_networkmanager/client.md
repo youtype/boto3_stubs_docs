@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkManager](./README.md) > NetworkManagerClient
 
-Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+Auto-generated documentation for
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+type annotations stubs module
+[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [NetworkManagerClient for boto3 NetworkManager module](#networkmanagerclient-for-boto3-networkmanager-module)
   - [NetworkManagerClient](#networkmanagerclient)
@@ -61,12 +63,13 @@ def get_networkmanager_client() -> NetworkManagerClient:
     return boto3.client("networkmanager")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
+Boto3 documentation:
+[NetworkManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_networkmanager.client import Exceptions
@@ -74,7 +77,6 @@ from mypy_boto3_networkmanager.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -87,644 +89,678 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_customer_gateway
 
-Type annotations for `boto3.client("networkmanager").associate_customer_gateway` method.
+Type annotations for
+`boto3.client("networkmanager").associate_customer_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway]
+Boto3 documentation:
+[NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
 
-```python
-def associate_customer_gateway(
-    self,
-    CustomerGatewayArn: str,
-    GlobalNetworkId: str,
-    DeviceId: str,
-    LinkId: str = None
-) -> AssociateCustomerGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CustomerGatewayArn`: `str` *(required)*
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `LinkId`: `str`
+
+Returns
+[AssociateCustomerGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#associatecustomergatewayresponsetypedef).
 
 ### associate_link
 
 Type annotations for `boto3.client("networkmanager").associate_link` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link]
+Boto3 documentation:
+[NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
 
-```python
-def associate_link(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str,
-    LinkId: str
-) -> AssociateLinkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `LinkId`: `str` *(required)*
+
+Returns
+[AssociateLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#associatelinkresponsetypedef).
 
 ### associate_transit_gateway_connect_peer
 
-Type annotations for `boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
+Type annotations for
+`boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer]
+Boto3 documentation:
+[NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
 
-```python
-def associate_transit_gateway_connect_peer(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayConnectPeerArn: str,
-    DeviceId: str,
-    LinkId: str = None
-) -> AssociateTransitGatewayConnectPeerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayConnectPeerArn`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `LinkId`: `str`
+
+Returns
+[AssociateTransitGatewayConnectPeerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#associatetransitgatewayconnectpeerresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("networkmanager").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate]
+Boto3 documentation:
+[NetworkManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_connection
 
 Type annotations for `boto3.client("networkmanager").create_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection]
+Boto3 documentation:
+[NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
 
-```python
-def create_connection(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str,
-    ConnectedDeviceId: str,
-    LinkId: str = None,
-    ConnectedLinkId: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `ConnectedDeviceId`: `str` *(required)*
+- `LinkId`: `str`
+- `ConnectedLinkId`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#createconnectionresponsetypedef).
 
 ### create_device
 
 Type annotations for `boto3.client("networkmanager").create_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device]
+Boto3 documentation:
+[NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device)
 
-```python
-def create_device(
-    self,
-    GlobalNetworkId: str,
-    AWSLocation: "AWSLocationTypeDef" = None,
-    Description: str = None,
-    Type: str = None,
-    Vendor: str = None,
-    Model: str = None,
-    SerialNumber: str = None,
-    Location: "LocationTypeDef" = None,
-    SiteId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `AWSLocation`:
+  [AWSLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#awslocationtypedef)
+- `Description`: `str`
+- `Type`: `str`
+- `Vendor`: `str`
+- `Model`: `str`
+- `SerialNumber`: `str`
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
+- `SiteId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#createdeviceresponsetypedef).
 
 ### create_global_network
 
-Type annotations for `boto3.client("networkmanager").create_global_network` method.
+Type annotations for `boto3.client("networkmanager").create_global_network`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network]
+Boto3 documentation:
+[NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
 
-```python
-def create_global_network(
-    self,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateGlobalNetworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateGlobalNetworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#createglobalnetworkresponsetypedef).
 
 ### create_link
 
 Type annotations for `boto3.client("networkmanager").create_link` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link]
+Boto3 documentation:
+[NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link)
 
-```python
-def create_link(
-    self,
-    GlobalNetworkId: str,
-    Bandwidth: "BandwidthTypeDef",
-    SiteId: str,
-    Description: str = None,
-    Type: str = None,
-    Provider: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateLinkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `Bandwidth`:
+  [BandwidthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#bandwidthtypedef)
+  *(required)*
+- `SiteId`: `str` *(required)*
+- `Description`: `str`
+- `Type`: `str`
+- `Provider`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#createlinkresponsetypedef).
 
 ### create_site
 
 Type annotations for `boto3.client("networkmanager").create_site` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site]
+Boto3 documentation:
+[NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site)
 
-```python
-def create_site(
-    self,
-    GlobalNetworkId: str,
-    Description: str = None,
-    Location: "LocationTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateSiteResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `Description`: `str`
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateSiteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#createsiteresponsetypedef).
 
 ### delete_connection
 
 Type annotations for `boto3.client("networkmanager").delete_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection]
+Boto3 documentation:
+[NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
 
-```python
-def delete_connection(
-    self,
-    GlobalNetworkId: str,
-    ConnectionId: str
-) -> DeleteConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectionId`: `str` *(required)*
+
+Returns
+[DeleteConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deleteconnectionresponsetypedef).
 
 ### delete_device
 
 Type annotations for `boto3.client("networkmanager").delete_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device]
+Boto3 documentation:
+[NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
 
-```python
-def delete_device(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str
-) -> DeleteDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+
+Returns
+[DeleteDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deletedeviceresponsetypedef).
 
 ### delete_global_network
 
-Type annotations for `boto3.client("networkmanager").delete_global_network` method.
+Type annotations for `boto3.client("networkmanager").delete_global_network`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network]
+Boto3 documentation:
+[NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
 
-```python
-def delete_global_network(
-    self,
-    GlobalNetworkId: str
-) -> DeleteGlobalNetworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+
+Returns
+[DeleteGlobalNetworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deleteglobalnetworkresponsetypedef).
 
 ### delete_link
 
 Type annotations for `boto3.client("networkmanager").delete_link` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link]
+Boto3 documentation:
+[NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
 
-```python
-def delete_link(
-    self,
-    GlobalNetworkId: str,
-    LinkId: str
-) -> DeleteLinkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `LinkId`: `str` *(required)*
+
+Returns
+[DeleteLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deletelinkresponsetypedef).
 
 ### delete_site
 
 Type annotations for `boto3.client("networkmanager").delete_site` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site]
+Boto3 documentation:
+[NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
 
-```python
-def delete_site(
-    self,
-    GlobalNetworkId: str,
-    SiteId: str
-) -> DeleteSiteResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `SiteId`: `str` *(required)*
+
+Returns
+[DeleteSiteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deletesiteresponsetypedef).
 
 ### deregister_transit_gateway
 
-Type annotations for `boto3.client("networkmanager").deregister_transit_gateway` method.
+Type annotations for
+`boto3.client("networkmanager").deregister_transit_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway]
+Boto3 documentation:
+[NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
 
-```python
-def deregister_transit_gateway(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayArn: str
-) -> DeregisterTransitGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayArn`: `str` *(required)*
+
+Returns
+[DeregisterTransitGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#deregistertransitgatewayresponsetypedef).
 
 ### describe_global_networks
 
-Type annotations for `boto3.client("networkmanager").describe_global_networks` method.
+Type annotations for `boto3.client("networkmanager").describe_global_networks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks]
+Boto3 documentation:
+[NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
 
-```python
-def describe_global_networks(
-    self,
-    GlobalNetworkIds: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeGlobalNetworksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeGlobalNetworksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#describeglobalnetworksresponsetypedef).
 
 ### disassociate_customer_gateway
 
-Type annotations for `boto3.client("networkmanager").disassociate_customer_gateway` method.
+Type annotations for
+`boto3.client("networkmanager").disassociate_customer_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway]
+Boto3 documentation:
+[NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
 
-```python
-def disassociate_customer_gateway(
-    self,
-    GlobalNetworkId: str,
-    CustomerGatewayArn: str
-) -> DisassociateCustomerGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `CustomerGatewayArn`: `str` *(required)*
+
+Returns
+[DisassociateCustomerGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#disassociatecustomergatewayresponsetypedef).
 
 ### disassociate_link
 
 Type annotations for `boto3.client("networkmanager").disassociate_link` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link]
+Boto3 documentation:
+[NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
 
-```python
-def disassociate_link(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str,
-    LinkId: str
-) -> DisassociateLinkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `LinkId`: `str` *(required)*
+
+Returns
+[DisassociateLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#disassociatelinkresponsetypedef).
 
 ### disassociate_transit_gateway_connect_peer
 
-Type annotations for `boto3.client("networkmanager").disassociate_transit_gateway_connect_peer` method.
+Type annotations for
+`boto3.client("networkmanager").disassociate_transit_gateway_connect_peer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer]
+Boto3 documentation:
+[NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
 
-```python
-def disassociate_transit_gateway_connect_peer(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayConnectPeerArn: str
-) -> DisassociateTransitGatewayConnectPeerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayConnectPeerArn`: `str` *(required)*
+
+Returns
+[DisassociateTransitGatewayConnectPeerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#disassociatetransitgatewayconnectpeerresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("networkmanager").generate_presigned_url` method.
+Type annotations for `boto3.client("networkmanager").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url]
+Boto3 documentation:
+[NetworkManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_connections
 
 Type annotations for `boto3.client("networkmanager").get_connections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections]
+Boto3 documentation:
+[NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
 
-```python
-def get_connections(
-    self,
-    GlobalNetworkId: str,
-    ConnectionIds: List[str] = None,
-    DeviceId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetConnectionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectionIds`: `List`\[`str`\]
+- `DeviceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getconnectionsresponsetypedef).
 
 ### get_customer_gateway_associations
 
-Type annotations for `boto3.client("networkmanager").get_customer_gateway_associations` method.
+Type annotations for
+`boto3.client("networkmanager").get_customer_gateway_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations]
+Boto3 documentation:
+[NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
 
-```python
-def get_customer_gateway_associations(
-    self,
-    GlobalNetworkId: str,
-    CustomerGatewayArns: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetCustomerGatewayAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `CustomerGatewayArns`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetCustomerGatewayAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getcustomergatewayassociationsresponsetypedef).
 
 ### get_devices
 
 Type annotations for `boto3.client("networkmanager").get_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices]
+Boto3 documentation:
+[NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
 
-```python
-def get_devices(
-    self,
-    GlobalNetworkId: str,
-    DeviceIds: List[str] = None,
-    SiteId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceIds`: `List`\[`str`\]
+- `SiteId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getdevicesresponsetypedef).
 
 ### get_link_associations
 
-Type annotations for `boto3.client("networkmanager").get_link_associations` method.
+Type annotations for `boto3.client("networkmanager").get_link_associations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations]
+Boto3 documentation:
+[NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
 
-```python
-def get_link_associations(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str = None,
-    LinkId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetLinkAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str`
+- `LinkId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetLinkAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinkassociationsresponsetypedef).
 
 ### get_links
 
 Type annotations for `boto3.client("networkmanager").get_links` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links]
+Boto3 documentation:
+[NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links)
 
-```python
-def get_links(
-    self,
-    GlobalNetworkId: str,
-    LinkIds: List[str] = None,
-    SiteId: str = None,
-    Type: str = None,
-    Provider: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetLinksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `LinkIds`: `List`\[`str`\]
+- `SiteId`: `str`
+- `Type`: `str`
+- `Provider`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinksresponsetypedef).
 
 ### get_sites
 
 Type annotations for `boto3.client("networkmanager").get_sites` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites]
+Boto3 documentation:
+[NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
 
-```python
-def get_sites(
-    self,
-    GlobalNetworkId: str,
-    SiteIds: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetSitesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `SiteIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetSitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getsitesresponsetypedef).
 
 ### get_transit_gateway_connect_peer_associations
 
-Type annotations for `boto3.client("networkmanager").get_transit_gateway_connect_peer_associations` method.
+Type annotations for
+`boto3.client("networkmanager").get_transit_gateway_connect_peer_associations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations]
+Boto3 documentation:
+[NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
 
-```python
-def get_transit_gateway_connect_peer_associations(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayConnectPeerArns: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetTransitGatewayConnectPeerAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayConnectPeerArns`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayconnectpeerassociationsresponsetypedef).
 
 ### get_transit_gateway_registrations
 
-Type annotations for `boto3.client("networkmanager").get_transit_gateway_registrations` method.
+Type annotations for
+`boto3.client("networkmanager").get_transit_gateway_registrations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations]
+Boto3 documentation:
+[NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
 
-```python
-def get_transit_gateway_registrations(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayArns: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetTransitGatewayRegistrationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayArns`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetTransitGatewayRegistrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayregistrationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("networkmanager").list_tags_for_resource` method.
+Type annotations for `boto3.client("networkmanager").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource]
+Boto3 documentation:
+[NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### register_transit_gateway
 
-Type annotations for `boto3.client("networkmanager").register_transit_gateway` method.
+Type annotations for `boto3.client("networkmanager").register_transit_gateway`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway]
+Boto3 documentation:
+[NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
 
-```python
-def register_transit_gateway(
-    self,
-    GlobalNetworkId: str,
-    TransitGatewayArn: str
-) -> RegisterTransitGatewayResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayArn`: `str` *(required)*
+
+Returns
+[RegisterTransitGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#registertransitgatewayresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("networkmanager").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource]
+Boto3 documentation:
+[NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("networkmanager").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource]
+Boto3 documentation:
+[NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_connection
 
 Type annotations for `boto3.client("networkmanager").update_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection]
+Boto3 documentation:
+[NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
 
-```python
-def update_connection(
-    self,
-    GlobalNetworkId: str,
-    ConnectionId: str,
-    LinkId: str = None,
-    ConnectedLinkId: str = None,
-    Description: str = None
-) -> UpdateConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectionId`: `str` *(required)*
+- `LinkId`: `str`
+- `ConnectedLinkId`: `str`
+- `Description`: `str`
+
+Returns
+[UpdateConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#updateconnectionresponsetypedef).
 
 ### update_device
 
 Type annotations for `boto3.client("networkmanager").update_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device]
+Boto3 documentation:
+[NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device)
 
-```python
-def update_device(
-    self,
-    GlobalNetworkId: str,
-    DeviceId: str,
-    AWSLocation: "AWSLocationTypeDef" = None,
-    Description: str = None,
-    Type: str = None,
-    Vendor: str = None,
-    Model: str = None,
-    SerialNumber: str = None,
-    Location: "LocationTypeDef" = None,
-    SiteId: str = None
-) -> UpdateDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `AWSLocation`:
+  [AWSLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#awslocationtypedef)
+- `Description`: `str`
+- `Type`: `str`
+- `Vendor`: `str`
+- `Model`: `str`
+- `SerialNumber`: `str`
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
+- `SiteId`: `str`
+
+Returns
+[UpdateDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#updatedeviceresponsetypedef).
 
 ### update_global_network
 
-Type annotations for `boto3.client("networkmanager").update_global_network` method.
+Type annotations for `boto3.client("networkmanager").update_global_network`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network]
+Boto3 documentation:
+[NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
 
-```python
-def update_global_network(
-    self,
-    GlobalNetworkId: str,
-    Description: str = None
-) -> UpdateGlobalNetworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateGlobalNetworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#updateglobalnetworkresponsetypedef).
 
 ### update_link
 
 Type annotations for `boto3.client("networkmanager").update_link` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link]
+Boto3 documentation:
+[NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link)
 
-```python
-def update_link(
-    self,
-    GlobalNetworkId: str,
-    LinkId: str,
-    Description: str = None,
-    Type: str = None,
-    Bandwidth: "BandwidthTypeDef" = None,
-    Provider: str = None
-) -> UpdateLinkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `LinkId`: `str` *(required)*
+- `Description`: `str`
+- `Type`: `str`
+- `Bandwidth`:
+  [BandwidthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#bandwidthtypedef)
+- `Provider`: `str`
+
+Returns
+[UpdateLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#updatelinkresponsetypedef).
 
 ### update_site
 
 Type annotations for `boto3.client("networkmanager").update_site` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site]
+Boto3 documentation:
+[NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site)
 
-```python
-def update_site(
-    self,
-    GlobalNetworkId: str,
-    SiteId: str,
-    Description: str = None,
-    Location: "LocationTypeDef" = None
-) -> UpdateSiteResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `GlobalNetworkId`: `str` *(required)*
+- `SiteId`: `str` *(required)*
+- `Description`: `str`
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
 
+Returns
+[UpdateSiteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#updatesiteresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator` method with overloads.
+Type annotations for `boto3.client("networkmanager").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_global_networks")` -> [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
-- `client.get_paginator("get_connections")` -> [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
-- `client.get_paginator("get_customer_gateway_associations")` -> [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
-- `client.get_paginator("get_devices")` -> [GetDevicesPaginator](./paginators.md#getdevicespaginator)
-- `client.get_paginator("get_link_associations")` -> [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
-- `client.get_paginator("get_links")` -> [GetLinksPaginator](./paginators.md#getlinkspaginator)
-- `client.get_paginator("get_sites")` -> [GetSitesPaginator](./paginators.md#getsitespaginator)
-- `client.get_paginator("get_transit_gateway_connect_peer_associations")` -> [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
-- `client.get_paginator("get_transit_gateway_registrations")` -> [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
-
-
+- `client.get_paginator("describe_global_networks")` ->
+  [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
+- `client.get_paginator("get_connections")` ->
+  [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_customer_gateway_associations")` ->
+  [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
+- `client.get_paginator("get_devices")` ->
+  [GetDevicesPaginator](./paginators.md#getdevicespaginator)
+- `client.get_paginator("get_link_associations")` ->
+  [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
+- `client.get_paginator("get_links")` ->
+  [GetLinksPaginator](./paginators.md#getlinkspaginator)
+- `client.get_paginator("get_sites")` ->
+  [GetSitesPaginator](./paginators.md#getsitespaginator)
+- `client.get_paginator("get_transit_gateway_connect_peer_associations")` ->
+  [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
+- `client.get_paginator("get_transit_gateway_registrations")` ->
+  [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)

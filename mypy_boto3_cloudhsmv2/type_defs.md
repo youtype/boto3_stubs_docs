@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudHSMV2](./README.md) > Structures
 
-Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+Auto-generated documentation for
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+type annotations stubs module
+[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [Typed dictionaries for boto3 CloudHSMV2 module](#typed-dictionaries-for-boto3-cloudhsmv2-module)
   - [BackupRetentionPolicyTypeDef](#backupretentionpolicytypedef)
@@ -34,13 +36,10 @@ type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/m
 from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Type`: `Literal['DAYS']`
 - `Value`: `str`
-
 
 ## BackupTypeDef
 
@@ -48,14 +47,14 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import BackupTypeDef
 ```
 
-
 Required fields:
+
 - `BackupId`: `str`
 
-
-
 Optional fields:
-- `BackupState`: `BackupState`
+
+- `BackupState`:
+  [BackupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/literals.html#backupstate)
 - `ClusterId`: `str`
 - `CreateTimestamp`: `datetime`
 - `CopyTimestamp`: `datetime`
@@ -64,8 +63,8 @@ Optional fields:
 - `SourceBackup`: `str`
 - `SourceCluster`: `str`
 - `DeleteTimestamp`: `datetime`
-- `TagList`: `List["TagTypeDef"]`
-
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
 
 ## CertificatesTypeDef
 
@@ -73,16 +72,13 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import CertificatesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterCsr`: `str`
 - `HsmCertificate`: `str`
 - `AwsHardwareCertificate`: `str`
 - `ManufacturerHardwareCertificate`: `str`
 - `ClusterCertificate`: `str`
-
 
 ## ClusterTypeDef
 
@@ -90,26 +86,28 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import ClusterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BackupPolicy`: `Literal['DEFAULT']`
-- `BackupRetentionPolicy`: `"BackupRetentionPolicyTypeDef"`
+- `BackupRetentionPolicy`:
+  [BackupRetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backupretentionpolicytypedef)
 - `ClusterId`: `str`
 - `CreateTimestamp`: `datetime`
-- `Hsms`: `List["HsmTypeDef"]`
+- `Hsms`:
+  `List`\[[HsmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#hsmtypedef)\]
 - `HsmType`: `str`
 - `PreCoPassword`: `str`
 - `SecurityGroup`: `str`
 - `SourceBackupId`: `str`
-- `State`: `ClusterState`
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/literals.html#clusterstate)
 - `StateMessage`: `str`
-- `SubnetMapping`: `Dict[str, str]`
+- `SubnetMapping`: `Dict`\[`str`, `str`\]
 - `VpcId`: `str`
-- `Certificates`: `"CertificatesTypeDef"`
-- `TagList`: `List["TagTypeDef"]`
-
+- `Certificates`:
+  [CertificatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#certificatestypedef)
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
 
 ## CopyBackupToRegionResponseTypeDef
 
@@ -117,12 +115,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationBackup`: `"DestinationBackupTypeDef"`
 
+- `DestinationBackup`:
+  [DestinationBackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#destinationbackuptypedef)
 
 ## CreateClusterResponseTypeDef
 
@@ -130,12 +126,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import CreateClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Cluster`: `"ClusterTypeDef"`
 
+- `Cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#clustertypedef)
 
 ## CreateHsmResponseTypeDef
 
@@ -143,12 +137,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import CreateHsmResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Hsm`: `"HsmTypeDef"`
 
+- `Hsm`:
+  [HsmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#hsmtypedef)
 
 ## DeleteBackupResponseTypeDef
 
@@ -156,12 +148,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backup`: `"BackupTypeDef"`
 
+- `Backup`:
+  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backuptypedef)
 
 ## DeleteClusterResponseTypeDef
 
@@ -169,12 +159,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Cluster`: `"ClusterTypeDef"`
 
+- `Cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#clustertypedef)
 
 ## DeleteHsmResponseTypeDef
 
@@ -182,12 +170,9 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HsmId`: `str`
 
+- `HsmId`: `str`
 
 ## DescribeBackupsResponseTypeDef
 
@@ -195,13 +180,11 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backups`: `List["BackupTypeDef"]`
-- `NextToken`: `str`
 
+- `Backups`:
+  `List`\[[BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backuptypedef)\]
+- `NextToken`: `str`
 
 ## DescribeClustersResponseTypeDef
 
@@ -209,13 +192,11 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Clusters`: `List["ClusterTypeDef"]`
-- `NextToken`: `str`
 
+- `Clusters`:
+  `List`\[[ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#clustertypedef)\]
+- `NextToken`: `str`
 
 ## DestinationBackupTypeDef
 
@@ -223,15 +204,12 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import DestinationBackupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreateTimestamp`: `datetime`
 - `SourceRegion`: `str`
 - `SourceBackup`: `str`
 - `SourceCluster`: `str`
-
 
 ## HsmTypeDef
 
@@ -239,21 +217,20 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import HsmTypeDef
 ```
 
-
 Required fields:
+
 - `HsmId`: `str`
 
-
-
 Optional fields:
+
 - `AvailabilityZone`: `str`
 - `ClusterId`: `str`
 - `SubnetId`: `str`
 - `EniId`: `str`
 - `EniIp`: `str`
-- `State`: `HsmState`
+- `State`:
+  [HsmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/literals.html#hsmstate)
 - `StateMessage`: `str`
-
 
 ## InitializeClusterResponseTypeDef
 
@@ -261,13 +238,11 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `ClusterState`
-- `StateMessage`: `str`
 
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/literals.html#clusterstate)
+- `StateMessage`: `str`
 
 ## ListTagsResponseTypeDef
 
@@ -275,15 +250,14 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import ListTagsResponseTypeDef
 ```
 
-
 Required fields:
-- `TagList`: `List["TagTypeDef"]`
 
-
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ModifyBackupAttributesResponseTypeDef
 
@@ -291,12 +265,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backup`: `"BackupTypeDef"`
 
+- `Backup`:
+  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backuptypedef)
 
 ## ModifyClusterResponseTypeDef
 
@@ -304,12 +276,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Cluster`: `"ClusterTypeDef"`
 
+- `Cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#clustertypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -317,14 +287,11 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RestoreBackupResponseTypeDef
 
@@ -332,12 +299,10 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backup`: `"BackupTypeDef"`
 
+- `Backup`:
+  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backuptypedef)
 
 ## TagTypeDef
 
@@ -345,10 +310,7 @@ Optional fields:
 from mypy_boto3_cloudhsmv2.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-

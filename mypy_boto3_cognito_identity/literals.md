@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CognitoIdentity](./README.md) > Literals
 
-Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
-type annotations stubs module [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+Auto-generated documentation for
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+type annotations stubs module
+[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [Literals for boto3 CognitoIdentity module](#literals-for-boto3-cognitoidentity-module)
   - [AmbiguousRoleResolutionType](#ambiguousroleresolutiontype)

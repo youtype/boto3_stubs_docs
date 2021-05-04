@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Amplify](./README.md) > Literals
 
-Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+Auto-generated documentation for
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+type annotations stubs module
+[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Literals for boto3 Amplify module](#literals-for-boto3-amplify-module)
   - [DomainStatus](#domainstatus)

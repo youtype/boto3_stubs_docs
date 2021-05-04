@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Textract](./README.md) > Literals
 
-Auto-generated documentation for [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
-type annotations stubs module [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+Auto-generated documentation for
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+type annotations stubs module
+[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [Literals for boto3 Textract module](#literals-for-boto3-textract-module)
   - [BlockType](#blocktype)

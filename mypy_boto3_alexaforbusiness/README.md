@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AlexaForBusiness
 
-Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
-type annotations stubs module [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+Auto-generated documentation for
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+type annotations stubs module
+[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 ```bash
 pip install mypy-boto3-alexaforbusiness
@@ -19,7 +21,8 @@ pip install mypy-boto3-alexaforbusiness
 
 ## AlexaForBusinessClient
 
-Type annotations for  `boto3.client("alexaforbusiness")` as [AlexaForBusinessClient](./client.md)
+Type annotations for `boto3.client("alexaforbusiness")` as
+[AlexaForBusinessClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 ```
 
-
 AlexaForBusinessClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [approve_skill](./client.md#approve-skill)
 - [associate_contact_with_address_book](./client.md#associate-contact-with-address-book)
 - [associate_device_with_network_profile](./client.md#associate-device-with-network-profile)
@@ -130,10 +131,8 @@ AlexaForBusinessClient [exceptions](./client.md#exceptions)
 - [update_room](./client.md#update-room)
 - [update_skill_group](./client.md#update-skill-group)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -151,14 +150,10 @@ AlexaForBusinessClient [exceptions](./client.md#exceptions)
 - [SkillNotLinkedException](./client.md#skillnotlinkedexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("alexaforbusiness").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("alexaforbusiness").get_paginator("...")`.
 
 Can be used directly:
 
@@ -179,11 +174,6 @@ from mypy_boto3_alexaforbusiness.paginators import ListBusinessReportSchedulesPa
 - [SearchRoomsPaginator](./paginators.md#searchroomspaginator)
 - [SearchSkillGroupsPaginator](./paginators.md#searchskillgroupspaginator)
 - [SearchUsersPaginator](./paginators.md#searchuserspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -237,13 +227,10 @@ from mypy_boto3_alexaforbusiness.literals import BusinessReportFailureCode, ...
 - [TemperatureUnit](./literals.md#temperatureunit)
 - [WakeWord](./literals.md#wakeword)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

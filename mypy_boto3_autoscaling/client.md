@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AutoScaling](./README.md) > AutoScalingClient
 
-Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+Auto-generated documentation for
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+type annotations stubs module
+[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [AutoScalingClient for boto3 AutoScaling module](#autoscalingclient-for-boto3-autoscaling-module)
   - [AutoScalingClient](#autoscalingclient)
@@ -86,12 +88,13 @@ def get_autoscaling_client() -> AutoScalingClient:
     return boto3.client("autoscaling")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
+Boto3 documentation:
+[AutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_autoscaling.client import Exceptions
@@ -99,7 +102,6 @@ from mypy_boto3_autoscaling.client import Exceptions
 def handle_error(exc: Exceptions.ActiveInstanceRefreshNotFoundFault) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -114,1055 +116,1029 @@ Exceptions:
 - `Exceptions.ScalingActivityInProgressFault`
 - `Exceptions.ServiceLinkedRoleFailure`
 
-
 ## Methods
-
 
 ### attach_instances
 
 Type annotations for `boto3.client("autoscaling").attach_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances]
+Boto3 documentation:
+[AutoScaling.Client.attach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
 
-```python
-def attach_instances(
-    self,
-    AutoScalingGroupName: str,
-    InstanceIds: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
 
 ### attach_load_balancer_target_groups
 
-Type annotations for `boto3.client("autoscaling").attach_load_balancer_target_groups` method.
+Type annotations for
+`boto3.client("autoscaling").attach_load_balancer_target_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups]
+Boto3 documentation:
+[AutoScaling.Client.attach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
 
-```python
-def attach_load_balancer_target_groups(
-    self,
-    AutoScalingGroupName: str,
-    TargetGroupARNs: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `TargetGroupARNs`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### attach_load_balancers
 
-Type annotations for `boto3.client("autoscaling").attach_load_balancers` method.
+Type annotations for `boto3.client("autoscaling").attach_load_balancers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers]
+Boto3 documentation:
+[AutoScaling.Client.attach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
 
-```python
-def attach_load_balancers(
-    self,
-    AutoScalingGroupName: str,
-    LoadBalancerNames: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `LoadBalancerNames`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_delete_scheduled_action
 
-Type annotations for `boto3.client("autoscaling").batch_delete_scheduled_action` method.
+Type annotations for
+`boto3.client("autoscaling").batch_delete_scheduled_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action]
+Boto3 documentation:
+[AutoScaling.Client.batch_delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
 
-```python
-def batch_delete_scheduled_action(
-    self,
-    AutoScalingGroupName: str,
-    ScheduledActionNames: List[str]
-) -> BatchDeleteScheduledActionAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScheduledActionNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDeleteScheduledActionAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#batchdeletescheduledactionanswertypedef).
 
 ### batch_put_scheduled_update_group_action
 
-Type annotations for `boto3.client("autoscaling").batch_put_scheduled_update_group_action` method.
+Type annotations for
+`boto3.client("autoscaling").batch_put_scheduled_update_group_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action]
+Boto3 documentation:
+[AutoScaling.Client.batch_put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
 
-```python
-def batch_put_scheduled_update_group_action(
-    self,
-    AutoScalingGroupName: str,
-    ScheduledUpdateGroupActions: List[ScheduledUpdateGroupActionRequestTypeDef]
-) -> BatchPutScheduledUpdateGroupActionAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScheduledUpdateGroupActions`:
+  `List`\[[ScheduledUpdateGroupActionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledupdategroupactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchPutScheduledUpdateGroupActionAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#batchputscheduledupdategroupactionanswertypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("autoscaling").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate]
+Boto3 documentation:
+[AutoScaling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_instance_refresh
 
-Type annotations for `boto3.client("autoscaling").cancel_instance_refresh` method.
+Type annotations for `boto3.client("autoscaling").cancel_instance_refresh`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh]
+Boto3 documentation:
+[AutoScaling.Client.cancel_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
 
-```python
-def cancel_instance_refresh(
-    self,
-    AutoScalingGroupName: str
-) -> CancelInstanceRefreshAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+
+Returns
+[CancelInstanceRefreshAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#cancelinstancerefreshanswertypedef).
 
 ### complete_lifecycle_action
 
-Type annotations for `boto3.client("autoscaling").complete_lifecycle_action` method.
+Type annotations for `boto3.client("autoscaling").complete_lifecycle_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action]
+Boto3 documentation:
+[AutoScaling.Client.complete_lifecycle_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action)
 
-```python
-def complete_lifecycle_action(
-    self,
-    LifecycleHookName: str,
-    AutoScalingGroupName: str,
-    LifecycleActionResult: str,
-    LifecycleActionToken: str = None,
-    InstanceId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LifecycleHookName`: `str` *(required)*
+- `AutoScalingGroupName`: `str` *(required)*
+- `LifecycleActionResult`: `str` *(required)*
+- `LifecycleActionToken`: `str`
+- `InstanceId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_auto_scaling_group
 
-Type annotations for `boto3.client("autoscaling").create_auto_scaling_group` method.
+Type annotations for `boto3.client("autoscaling").create_auto_scaling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group]
+Boto3 documentation:
+[AutoScaling.Client.create_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group)
 
-```python
-def create_auto_scaling_group(
-    self,
-    AutoScalingGroupName: str,
-    MinSize: int,
-    MaxSize: int,
-    LaunchConfigurationName: str = None,
-    LaunchTemplate: "LaunchTemplateSpecificationTypeDef" = None,
-    MixedInstancesPolicy: "MixedInstancesPolicyTypeDef" = None,
-    InstanceId: str = None,
-    DesiredCapacity: int = None,
-    DefaultCooldown: int = None,
-    AvailabilityZones: List[str] = None,
-    LoadBalancerNames: List[str] = None,
-    TargetGroupARNs: List[str] = None,
-    HealthCheckType: str = None,
-    HealthCheckGracePeriod: int = None,
-    PlacementGroup: str = None,
-    VPCZoneIdentifier: str = None,
-    TerminationPolicies: List[str] = None,
-    NewInstancesProtectedFromScaleIn: bool = None,
-    CapacityRebalance: bool = None,
-    LifecycleHookSpecificationList: List[LifecycleHookSpecificationTypeDef] = None,
-    Tags: List[TagTypeDef] = None,
-    ServiceLinkedRoleARN: str = None,
-    MaxInstanceLifetime: int = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `MinSize`: `int` *(required)*
+- `MaxSize`: `int` *(required)*
+- `LaunchConfigurationName`: `str`
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+- `MixedInstancesPolicy`:
+  [MixedInstancesPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#mixedinstancespolicytypedef)
+- `InstanceId`: `str`
+- `DesiredCapacity`: `int`
+- `DefaultCooldown`: `int`
+- `AvailabilityZones`: `List`\[`str`\]
+- `LoadBalancerNames`: `List`\[`str`\]
+- `TargetGroupARNs`: `List`\[`str`\]
+- `HealthCheckType`: `str`
+- `HealthCheckGracePeriod`: `int`
+- `PlacementGroup`: `str`
+- `VPCZoneIdentifier`: `str`
+- `TerminationPolicies`: `List`\[`str`\]
+- `NewInstancesProtectedFromScaleIn`: `bool`
+- `CapacityRebalance`: `bool`
+- `LifecycleHookSpecificationList`:
+  `List`\[[LifecycleHookSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#lifecyclehookspecificationtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
+- `ServiceLinkedRoleARN`: `str`
+- `MaxInstanceLifetime`: `int`
 
 ### create_launch_configuration
 
-Type annotations for `boto3.client("autoscaling").create_launch_configuration` method.
+Type annotations for `boto3.client("autoscaling").create_launch_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration]
+Boto3 documentation:
+[AutoScaling.Client.create_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration)
 
-```python
-def create_launch_configuration(
-    self,
-    LaunchConfigurationName: str,
-    ImageId: str = None,
-    KeyName: str = None,
-    SecurityGroups: List[str] = None,
-    ClassicLinkVPCId: str = None,
-    ClassicLinkVPCSecurityGroups: List[str] = None,
-    UserData: str = None,
-    InstanceId: str = None,
-    InstanceType: str = None,
-    KernelId: str = None,
-    RamdiskId: str = None,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    InstanceMonitoring: "InstanceMonitoringTypeDef" = None,
-    SpotPrice: str = None,
-    IamInstanceProfile: str = None,
-    EbsOptimized: bool = None,
-    AssociatePublicIpAddress: bool = None,
-    PlacementTenancy: str = None,
-    MetadataOptions: "InstanceMetadataOptionsTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `LaunchConfigurationName`: `str` *(required)*
+- `ImageId`: `str`
+- `KeyName`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+- `ClassicLinkVPCId`: `str`
+- `ClassicLinkVPCSecurityGroups`: `List`\[`str`\]
+- `UserData`: `str`
+- `InstanceId`: `str`
+- `InstanceType`: `str`
+- `KernelId`: `str`
+- `RamdiskId`: `str`
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#blockdevicemappingtypedef)\]
+- `InstanceMonitoring`:
+  [InstanceMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemonitoringtypedef)
+- `SpotPrice`: `str`
+- `IamInstanceProfile`: `str`
+- `EbsOptimized`: `bool`
+- `AssociatePublicIpAddress`: `bool`
+- `PlacementTenancy`: `str`
+- `MetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemetadataoptionstypedef)
 
 ### create_or_update_tags
 
-Type annotations for `boto3.client("autoscaling").create_or_update_tags` method.
+Type annotations for `boto3.client("autoscaling").create_or_update_tags`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags]
+Boto3 documentation:
+[AutoScaling.Client.create_or_update_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
 
-```python
-def create_or_update_tags(
-    self,
-    Tags: List[TagTypeDef]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### delete_auto_scaling_group
 
-Type annotations for `boto3.client("autoscaling").delete_auto_scaling_group` method.
+Type annotations for `boto3.client("autoscaling").delete_auto_scaling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group]
+Boto3 documentation:
+[AutoScaling.Client.delete_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
 
-```python
-def delete_auto_scaling_group(
-    self,
-    AutoScalingGroupName: str,
-    ForceDelete: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ForceDelete`: `bool`
 
 ### delete_launch_configuration
 
-Type annotations for `boto3.client("autoscaling").delete_launch_configuration` method.
+Type annotations for `boto3.client("autoscaling").delete_launch_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration]
+Boto3 documentation:
+[AutoScaling.Client.delete_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
 
-```python
-def delete_launch_configuration(
-    self,
-    LaunchConfigurationName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `LaunchConfigurationName`: `str` *(required)*
 
 ### delete_lifecycle_hook
 
-Type annotations for `boto3.client("autoscaling").delete_lifecycle_hook` method.
+Type annotations for `boto3.client("autoscaling").delete_lifecycle_hook`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook]
+Boto3 documentation:
+[AutoScaling.Client.delete_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
 
-```python
-def delete_lifecycle_hook(
-    self,
-    LifecycleHookName: str,
-    AutoScalingGroupName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LifecycleHookName`: `str` *(required)*
+- `AutoScalingGroupName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_notification_configuration
 
-Type annotations for `boto3.client("autoscaling").delete_notification_configuration` method.
+Type annotations for
+`boto3.client("autoscaling").delete_notification_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration]
+Boto3 documentation:
+[AutoScaling.Client.delete_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
 
-```python
-def delete_notification_configuration(
-    self,
-    AutoScalingGroupName: str,
-    TopicARN: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `TopicARN`: `str` *(required)*
 
 ### delete_policy
 
 Type annotations for `boto3.client("autoscaling").delete_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy]
+Boto3 documentation:
+[AutoScaling.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
 
-```python
-def delete_policy(
-    self,
-    PolicyName: str,
-    AutoScalingGroupName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `AutoScalingGroupName`: `str`
 
 ### delete_scheduled_action
 
-Type annotations for `boto3.client("autoscaling").delete_scheduled_action` method.
+Type annotations for `boto3.client("autoscaling").delete_scheduled_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action]
+Boto3 documentation:
+[AutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
 
-```python
-def delete_scheduled_action(
-    self,
-    AutoScalingGroupName: str,
-    ScheduledActionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScheduledActionName`: `str` *(required)*
 
 ### delete_tags
 
 Type annotations for `boto3.client("autoscaling").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags]
+Boto3 documentation:
+[AutoScaling.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    Tags: List[TagTypeDef]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### delete_warm_pool
 
 Type annotations for `boto3.client("autoscaling").delete_warm_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool]
+Boto3 documentation:
+[AutoScaling.Client.delete_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
 
-```python
-def delete_warm_pool(
-    self,
-    AutoScalingGroupName: str,
-    ForceDelete: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ForceDelete`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
-Type annotations for `boto3.client("autoscaling").describe_account_limits` method.
+Type annotations for `boto3.client("autoscaling").describe_account_limits`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits]
+Boto3 documentation:
+[AutoScaling.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
 
-```python
-def describe_account_limits(
-    self
-) -> DescribeAccountLimitsAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeAccountLimitsAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeaccountlimitsanswertypedef).
 
 ### describe_adjustment_types
 
-Type annotations for `boto3.client("autoscaling").describe_adjustment_types` method.
+Type annotations for `boto3.client("autoscaling").describe_adjustment_types`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_adjustment_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
 
-```python
-def describe_adjustment_types(
-    self
-) -> DescribeAdjustmentTypesAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeAdjustmentTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeadjustmenttypesanswertypedef).
 
 ### describe_auto_scaling_groups
 
-Type annotations for `boto3.client("autoscaling").describe_auto_scaling_groups` method.
+Type annotations for `boto3.client("autoscaling").describe_auto_scaling_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups]
+Boto3 documentation:
+[AutoScaling.Client.describe_auto_scaling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups)
 
-```python
-def describe_auto_scaling_groups(
-    self,
-    AutoScalingGroupNames: List[str] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> AutoScalingGroupsTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[AutoScalingGroupsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinggroupstypetypedef).
 
 ### describe_auto_scaling_instances
 
-Type annotations for `boto3.client("autoscaling").describe_auto_scaling_instances` method.
+Type annotations for
+`boto3.client("autoscaling").describe_auto_scaling_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances]
+Boto3 documentation:
+[AutoScaling.Client.describe_auto_scaling_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances)
 
-```python
-def describe_auto_scaling_instances(
-    self,
-    InstanceIds: List[str] = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> AutoScalingInstancesTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceIds`: `List`\[`str`\]
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[AutoScalingInstancesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinginstancestypetypedef).
 
 ### describe_auto_scaling_notification_types
 
-Type annotations for `boto3.client("autoscaling").describe_auto_scaling_notification_types` method.
+Type annotations for
+`boto3.client("autoscaling").describe_auto_scaling_notification_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_auto_scaling_notification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
 
-```python
-def describe_auto_scaling_notification_types(
-    self
-) -> DescribeAutoScalingNotificationTypesAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeAutoScalingNotificationTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeautoscalingnotificationtypesanswertypedef).
 
 ### describe_instance_refreshes
 
-Type annotations for `boto3.client("autoscaling").describe_instance_refreshes` method.
+Type annotations for `boto3.client("autoscaling").describe_instance_refreshes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes]
+Boto3 documentation:
+[AutoScaling.Client.describe_instance_refreshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes)
 
-```python
-def describe_instance_refreshes(
-    self,
-    AutoScalingGroupName: str,
-    InstanceRefreshIds: List[str] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> DescribeInstanceRefreshesAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `InstanceRefreshIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribeInstanceRefreshesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeinstancerefreshesanswertypedef).
 
 ### describe_launch_configurations
 
-Type annotations for `boto3.client("autoscaling").describe_launch_configurations` method.
+Type annotations for
+`boto3.client("autoscaling").describe_launch_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations]
+Boto3 documentation:
+[AutoScaling.Client.describe_launch_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations)
 
-```python
-def describe_launch_configurations(
-    self,
-    LaunchConfigurationNames: List[str] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> LaunchConfigurationsTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `LaunchConfigurationNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[LaunchConfigurationsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchconfigurationstypetypedef).
 
 ### describe_lifecycle_hook_types
 
-Type annotations for `boto3.client("autoscaling").describe_lifecycle_hook_types` method.
+Type annotations for
+`boto3.client("autoscaling").describe_lifecycle_hook_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_lifecycle_hook_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
 
-```python
-def describe_lifecycle_hook_types(
-    self
-) -> DescribeLifecycleHookTypesAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeLifecycleHookTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describelifecyclehooktypesanswertypedef).
 
 ### describe_lifecycle_hooks
 
-Type annotations for `boto3.client("autoscaling").describe_lifecycle_hooks` method.
+Type annotations for `boto3.client("autoscaling").describe_lifecycle_hooks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks]
+Boto3 documentation:
+[AutoScaling.Client.describe_lifecycle_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
 
-```python
-def describe_lifecycle_hooks(
-    self,
-    AutoScalingGroupName: str,
-    LifecycleHookNames: List[str] = None
-) -> DescribeLifecycleHooksAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `LifecycleHookNames`: `List`\[`str`\]
+
+Returns
+[DescribeLifecycleHooksAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describelifecyclehooksanswertypedef).
 
 ### describe_load_balancer_target_groups
 
-Type annotations for `boto3.client("autoscaling").describe_load_balancer_target_groups` method.
+Type annotations for
+`boto3.client("autoscaling").describe_load_balancer_target_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups]
+Boto3 documentation:
+[AutoScaling.Client.describe_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
 
-```python
-def describe_load_balancer_target_groups(
-    self,
-    AutoScalingGroupName: str,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> DescribeLoadBalancerTargetGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribeLoadBalancerTargetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancertargetgroupsresponsetypedef).
 
 ### describe_load_balancers
 
-Type annotations for `boto3.client("autoscaling").describe_load_balancers` method.
+Type annotations for `boto3.client("autoscaling").describe_load_balancers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers]
+Boto3 documentation:
+[AutoScaling.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers)
 
-```python
-def describe_load_balancers(
-    self,
-    AutoScalingGroupName: str,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> DescribeLoadBalancersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribeLoadBalancersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancersresponsetypedef).
 
 ### describe_metric_collection_types
 
-Type annotations for `boto3.client("autoscaling").describe_metric_collection_types` method.
+Type annotations for
+`boto3.client("autoscaling").describe_metric_collection_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_metric_collection_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
 
-```python
-def describe_metric_collection_types(
-    self
-) -> DescribeMetricCollectionTypesAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeMetricCollectionTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describemetriccollectiontypesanswertypedef).
 
 ### describe_notification_configurations
 
-Type annotations for `boto3.client("autoscaling").describe_notification_configurations` method.
+Type annotations for
+`boto3.client("autoscaling").describe_notification_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations]
+Boto3 documentation:
+[AutoScaling.Client.describe_notification_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations)
 
-```python
-def describe_notification_configurations(
-    self,
-    AutoScalingGroupNames: List[str] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> DescribeNotificationConfigurationsAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribeNotificationConfigurationsAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describenotificationconfigurationsanswertypedef).
 
 ### describe_policies
 
 Type annotations for `boto3.client("autoscaling").describe_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies]
+Boto3 documentation:
+[AutoScaling.Client.describe_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies)
 
-```python
-def describe_policies(
-    self,
-    AutoScalingGroupName: str = None,
-    PolicyNames: List[str] = None,
-    PolicyTypes: List[str] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> PoliciesTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str`
+- `PolicyNames`: `List`\[`str`\]
+- `PolicyTypes`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[PoliciesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#policiestypetypedef).
 
 ### describe_scaling_activities
 
-Type annotations for `boto3.client("autoscaling").describe_scaling_activities` method.
+Type annotations for `boto3.client("autoscaling").describe_scaling_activities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities]
+Boto3 documentation:
+[AutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities)
 
-```python
-def describe_scaling_activities(
-    self,
-    ActivityIds: List[str] = None,
-    AutoScalingGroupName: str = None,
-    IncludeDeletedGroups: bool = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> ActivitiesTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `ActivityIds`: `List`\[`str`\]
+- `AutoScalingGroupName`: `str`
+- `IncludeDeletedGroups`: `bool`
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[ActivitiesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitiestypetypedef).
 
 ### describe_scaling_process_types
 
-Type annotations for `boto3.client("autoscaling").describe_scaling_process_types` method.
+Type annotations for
+`boto3.client("autoscaling").describe_scaling_process_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_scaling_process_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
 
-```python
-def describe_scaling_process_types(
-    self
-) -> ProcessesTypeTypeDef:
-    pass
-```
+Returns
+[ProcessesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#processestypetypedef).
 
 ### describe_scheduled_actions
 
-Type annotations for `boto3.client("autoscaling").describe_scheduled_actions` method.
+Type annotations for `boto3.client("autoscaling").describe_scheduled_actions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions]
+Boto3 documentation:
+[AutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions)
 
-```python
-def describe_scheduled_actions(
-    self,
-    AutoScalingGroupName: str = None,
-    ScheduledActionNames: List[str] = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> ScheduledActionsTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str`
+- `ScheduledActionNames`: `List`\[`str`\]
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[ScheduledActionsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledactionstypetypedef).
 
 ### describe_tags
 
 Type annotations for `boto3.client("autoscaling").describe_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags]
+Boto3 documentation:
+[AutoScaling.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags)
 
-```python
-def describe_tags(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxRecords: int = None
-) -> TagsTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[TagsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagstypetypedef).
 
 ### describe_termination_policy_types
 
-Type annotations for `boto3.client("autoscaling").describe_termination_policy_types` method.
+Type annotations for
+`boto3.client("autoscaling").describe_termination_policy_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types]
+Boto3 documentation:
+[AutoScaling.Client.describe_termination_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
 
-```python
-def describe_termination_policy_types(
-    self
-) -> DescribeTerminationPolicyTypesAnswerTypeDef:
-    pass
-```
+Returns
+[DescribeTerminationPolicyTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeterminationpolicytypesanswertypedef).
 
 ### describe_warm_pool
 
 Type annotations for `boto3.client("autoscaling").describe_warm_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool]
+Boto3 documentation:
+[AutoScaling.Client.describe_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool)
 
-```python
-def describe_warm_pool(
-    self,
-    AutoScalingGroupName: str,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> DescribeWarmPoolAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeWarmPoolAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describewarmpoolanswertypedef).
 
 ### detach_instances
 
 Type annotations for `boto3.client("autoscaling").detach_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances]
+Boto3 documentation:
+[AutoScaling.Client.detach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances)
 
-```python
-def detach_instances(
-    self,
-    AutoScalingGroupName: str,
-    ShouldDecrementDesiredCapacity: bool,
-    InstanceIds: List[str] = None
-) -> DetachInstancesAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+
+Returns
+[DetachInstancesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#detachinstancesanswertypedef).
 
 ### detach_load_balancer_target_groups
 
-Type annotations for `boto3.client("autoscaling").detach_load_balancer_target_groups` method.
+Type annotations for
+`boto3.client("autoscaling").detach_load_balancer_target_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups]
+Boto3 documentation:
+[AutoScaling.Client.detach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
 
-```python
-def detach_load_balancer_target_groups(
-    self,
-    AutoScalingGroupName: str,
-    TargetGroupARNs: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `TargetGroupARNs`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### detach_load_balancers
 
-Type annotations for `boto3.client("autoscaling").detach_load_balancers` method.
+Type annotations for `boto3.client("autoscaling").detach_load_balancers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers]
+Boto3 documentation:
+[AutoScaling.Client.detach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
 
-```python
-def detach_load_balancers(
-    self,
-    AutoScalingGroupName: str,
-    LoadBalancerNames: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `LoadBalancerNames`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_metrics_collection
 
-Type annotations for `boto3.client("autoscaling").disable_metrics_collection` method.
+Type annotations for `boto3.client("autoscaling").disable_metrics_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection]
+Boto3 documentation:
+[AutoScaling.Client.disable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
 
-```python
-def disable_metrics_collection(
-    self,
-    AutoScalingGroupName: str,
-    Metrics: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `Metrics`: `List`\[`str`\]
 
 ### enable_metrics_collection
 
-Type annotations for `boto3.client("autoscaling").enable_metrics_collection` method.
+Type annotations for `boto3.client("autoscaling").enable_metrics_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection]
+Boto3 documentation:
+[AutoScaling.Client.enable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
 
-```python
-def enable_metrics_collection(
-    self,
-    AutoScalingGroupName: str,
-    Granularity: str,
-    Metrics: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `Granularity`: `str` *(required)*
+- `Metrics`: `List`\[`str`\]
 
 ### enter_standby
 
 Type annotations for `boto3.client("autoscaling").enter_standby` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby]
+Boto3 documentation:
+[AutoScaling.Client.enter_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby)
 
-```python
-def enter_standby(
-    self,
-    AutoScalingGroupName: str,
-    ShouldDecrementDesiredCapacity: bool,
-    InstanceIds: List[str] = None
-) -> EnterStandbyAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+
+Returns
+[EnterStandbyAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#enterstandbyanswertypedef).
 
 ### execute_policy
 
 Type annotations for `boto3.client("autoscaling").execute_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy]
+Boto3 documentation:
+[AutoScaling.Client.execute_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy)
 
-```python
-def execute_policy(
-    self,
-    PolicyName: str,
-    AutoScalingGroupName: str = None,
-    HonorCooldown: bool = None,
-    MetricValue: float = None,
-    BreachThreshold: float = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `AutoScalingGroupName`: `str`
+- `HonorCooldown`: `bool`
+- `MetricValue`: `float`
+- `BreachThreshold`: `float`
 
 ### exit_standby
 
 Type annotations for `boto3.client("autoscaling").exit_standby` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby]
+Boto3 documentation:
+[AutoScaling.Client.exit_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
 
-```python
-def exit_standby(
-    self,
-    AutoScalingGroupName: str,
-    InstanceIds: List[str] = None
-) -> ExitStandbyAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+
+Returns
+[ExitStandbyAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#exitstandbyanswertypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("autoscaling").generate_presigned_url` method.
+Type annotations for `boto3.client("autoscaling").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url]
+Boto3 documentation:
+[AutoScaling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### put_lifecycle_hook
 
 Type annotations for `boto3.client("autoscaling").put_lifecycle_hook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook]
+Boto3 documentation:
+[AutoScaling.Client.put_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook)
 
-```python
-def put_lifecycle_hook(
-    self,
-    LifecycleHookName: str,
-    AutoScalingGroupName: str,
-    LifecycleTransition: str = None,
-    RoleARN: str = None,
-    NotificationTargetARN: str = None,
-    NotificationMetadata: str = None,
-    HeartbeatTimeout: int = None,
-    DefaultResult: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LifecycleHookName`: `str` *(required)*
+- `AutoScalingGroupName`: `str` *(required)*
+- `LifecycleTransition`: `str`
+- `RoleARN`: `str`
+- `NotificationTargetARN`: `str`
+- `NotificationMetadata`: `str`
+- `HeartbeatTimeout`: `int`
+- `DefaultResult`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_notification_configuration
 
-Type annotations for `boto3.client("autoscaling").put_notification_configuration` method.
+Type annotations for
+`boto3.client("autoscaling").put_notification_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration]
+Boto3 documentation:
+[AutoScaling.Client.put_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration)
 
-```python
-def put_notification_configuration(
-    self,
-    AutoScalingGroupName: str,
-    TopicARN: str,
-    NotificationTypes: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `TopicARN`: `str` *(required)*
+- `NotificationTypes`: `List`\[`str`\] *(required)*
 
 ### put_scaling_policy
 
 Type annotations for `boto3.client("autoscaling").put_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy]
+Boto3 documentation:
+[AutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy)
 
-```python
-def put_scaling_policy(
-    self,
-    AutoScalingGroupName: str,
-    PolicyName: str,
-    PolicyType: str = None,
-    AdjustmentType: str = None,
-    MinAdjustmentStep: int = None,
-    MinAdjustmentMagnitude: int = None,
-    ScalingAdjustment: int = None,
-    Cooldown: int = None,
-    MetricAggregationType: str = None,
-    StepAdjustments: List["StepAdjustmentTypeDef"] = None,
-    EstimatedInstanceWarmup: int = None,
-    TargetTrackingConfiguration: "TargetTrackingConfigurationTypeDef" = None,
-    Enabled: bool = None
-) -> PolicyARNTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `PolicyType`: `str`
+- `AdjustmentType`: `str`
+- `MinAdjustmentStep`: `int`
+- `MinAdjustmentMagnitude`: `int`
+- `ScalingAdjustment`: `int`
+- `Cooldown`: `int`
+- `MetricAggregationType`: `str`
+- `StepAdjustments`:
+  `List`\[[StepAdjustmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#stepadjustmenttypedef)\]
+- `EstimatedInstanceWarmup`: `int`
+- `TargetTrackingConfiguration`:
+  [TargetTrackingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#targettrackingconfigurationtypedef)
+- `Enabled`: `bool`
+
+Returns
+[PolicyARNTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#policyarntypetypedef).
 
 ### put_scheduled_update_group_action
 
-Type annotations for `boto3.client("autoscaling").put_scheduled_update_group_action` method.
+Type annotations for
+`boto3.client("autoscaling").put_scheduled_update_group_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action]
+Boto3 documentation:
+[AutoScaling.Client.put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action)
 
-```python
-def put_scheduled_update_group_action(
-    self,
-    AutoScalingGroupName: str,
-    ScheduledActionName: str,
-    Time: datetime = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Recurrence: str = None,
-    MinSize: int = None,
-    MaxSize: int = None,
-    DesiredCapacity: int = None,
-    TimeZone: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScheduledActionName`: `str` *(required)*
+- `Time`: `datetime`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Recurrence`: `str`
+- `MinSize`: `int`
+- `MaxSize`: `int`
+- `DesiredCapacity`: `int`
+- `TimeZone`: `str`
 
 ### put_warm_pool
 
 Type annotations for `boto3.client("autoscaling").put_warm_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool]
+Boto3 documentation:
+[AutoScaling.Client.put_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool)
 
-```python
-def put_warm_pool(
-    self,
-    AutoScalingGroupName: str,
-    MaxGroupPreparedCapacity: int = None,
-    MinSize: int = None,
-    PoolState: WarmPoolState = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `MaxGroupPreparedCapacity`: `int`
+- `MinSize`: `int`
+- `PoolState`:
+  [WarmPoolState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#warmpoolstate)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### record_lifecycle_action_heartbeat
 
-Type annotations for `boto3.client("autoscaling").record_lifecycle_action_heartbeat` method.
+Type annotations for
+`boto3.client("autoscaling").record_lifecycle_action_heartbeat` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat]
+Boto3 documentation:
+[AutoScaling.Client.record_lifecycle_action_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat)
 
-```python
-def record_lifecycle_action_heartbeat(
-    self,
-    LifecycleHookName: str,
-    AutoScalingGroupName: str,
-    LifecycleActionToken: str = None,
-    InstanceId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LifecycleHookName`: `str` *(required)*
+- `AutoScalingGroupName`: `str` *(required)*
+- `LifecycleActionToken`: `str`
+- `InstanceId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### resume_processes
 
 Type annotations for `boto3.client("autoscaling").resume_processes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes]
+Boto3 documentation:
+[AutoScaling.Client.resume_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
 
-```python
-def resume_processes(
-    self,
-    AutoScalingGroupName: str,
-    ScalingProcesses: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScalingProcesses`: `List`\[`str`\]
 
 ### set_desired_capacity
 
 Type annotations for `boto3.client("autoscaling").set_desired_capacity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity]
+Boto3 documentation:
+[AutoScaling.Client.set_desired_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity)
 
-```python
-def set_desired_capacity(
-    self,
-    AutoScalingGroupName: str,
-    DesiredCapacity: int,
-    HonorCooldown: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `DesiredCapacity`: `int` *(required)*
+- `HonorCooldown`: `bool`
 
 ### set_instance_health
 
 Type annotations for `boto3.client("autoscaling").set_instance_health` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health]
+Boto3 documentation:
+[AutoScaling.Client.set_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health)
 
-```python
-def set_instance_health(
-    self,
-    InstanceId: str,
-    HealthStatus: str,
-    ShouldRespectGracePeriod: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `HealthStatus`: `str` *(required)*
+- `ShouldRespectGracePeriod`: `bool`
 
 ### set_instance_protection
 
-Type annotations for `boto3.client("autoscaling").set_instance_protection` method.
+Type annotations for `boto3.client("autoscaling").set_instance_protection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection]
+Boto3 documentation:
+[AutoScaling.Client.set_instance_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection)
 
-```python
-def set_instance_protection(
-    self,
-    InstanceIds: List[str],
-    AutoScalingGroupName: str,
-    ProtectedFromScaleIn: bool
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceIds`: `List`\[`str`\] *(required)*
+- `AutoScalingGroupName`: `str` *(required)*
+- `ProtectedFromScaleIn`: `bool` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_instance_refresh
 
-Type annotations for `boto3.client("autoscaling").start_instance_refresh` method.
+Type annotations for `boto3.client("autoscaling").start_instance_refresh`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh]
+Boto3 documentation:
+[AutoScaling.Client.start_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)
 
-```python
-def start_instance_refresh(
-    self,
-    AutoScalingGroupName: str,
-    Strategy: Literal['Rolling'] = None,
-    Preferences: RefreshPreferencesTypeDef = None
-) -> StartInstanceRefreshAnswerTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `Strategy`: `Literal['Rolling']`
+- `Preferences`:
+  [RefreshPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#refreshpreferencestypedef)
+
+Returns
+[StartInstanceRefreshAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#startinstancerefreshanswertypedef).
 
 ### suspend_processes
 
 Type annotations for `boto3.client("autoscaling").suspend_processes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes]
+Boto3 documentation:
+[AutoScaling.Client.suspend_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
 
-```python
-def suspend_processes(
-    self,
-    AutoScalingGroupName: str,
-    ScalingProcesses: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoScalingGroupName`: `str` *(required)*
+- `ScalingProcesses`: `List`\[`str`\]
 
 ### terminate_instance_in_auto_scaling_group
 
-Type annotations for `boto3.client("autoscaling").terminate_instance_in_auto_scaling_group` method.
+Type annotations for
+`boto3.client("autoscaling").terminate_instance_in_auto_scaling_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group]
+Boto3 documentation:
+[AutoScaling.Client.terminate_instance_in_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
 
-```python
-def terminate_instance_in_auto_scaling_group(
-    self,
-    InstanceId: str,
-    ShouldDecrementDesiredCapacity: bool
-) -> ActivityTypeTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
+
+Returns
+[ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypetypedef).
 
 ### update_auto_scaling_group
 
-Type annotations for `boto3.client("autoscaling").update_auto_scaling_group` method.
+Type annotations for `boto3.client("autoscaling").update_auto_scaling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group]
+Boto3 documentation:
+[AutoScaling.Client.update_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group)
 
-```python
-def update_auto_scaling_group(
-    self,
-    AutoScalingGroupName: str,
-    LaunchConfigurationName: str = None,
-    LaunchTemplate: "LaunchTemplateSpecificationTypeDef" = None,
-    MixedInstancesPolicy: "MixedInstancesPolicyTypeDef" = None,
-    MinSize: int = None,
-    MaxSize: int = None,
-    DesiredCapacity: int = None,
-    DefaultCooldown: int = None,
-    AvailabilityZones: List[str] = None,
-    HealthCheckType: str = None,
-    HealthCheckGracePeriod: int = None,
-    PlacementGroup: str = None,
-    VPCZoneIdentifier: str = None,
-    TerminationPolicies: List[str] = None,
-    NewInstancesProtectedFromScaleIn: bool = None,
-    ServiceLinkedRoleARN: str = None,
-    MaxInstanceLifetime: int = None,
-    CapacityRebalance: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `AutoScalingGroupName`: `str` *(required)*
+- `LaunchConfigurationName`: `str`
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+- `MixedInstancesPolicy`:
+  [MixedInstancesPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#mixedinstancespolicytypedef)
+- `MinSize`: `int`
+- `MaxSize`: `int`
+- `DesiredCapacity`: `int`
+- `DefaultCooldown`: `int`
+- `AvailabilityZones`: `List`\[`str`\]
+- `HealthCheckType`: `str`
+- `HealthCheckGracePeriod`: `int`
+- `PlacementGroup`: `str`
+- `VPCZoneIdentifier`: `str`
+- `TerminationPolicies`: `List`\[`str`\]
+- `NewInstancesProtectedFromScaleIn`: `bool`
+- `ServiceLinkedRoleARN`: `str`
+- `MaxInstanceLifetime`: `int`
+- `CapacityRebalance`: `bool`
 
 ### get_paginator
 
-Type annotations for `boto3.client("autoscaling").get_paginator` method with overloads.
+Type annotations for `boto3.client("autoscaling").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_auto_scaling_groups")` -> [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
-- `client.get_paginator("describe_auto_scaling_instances")` -> [DescribeAutoScalingInstancesPaginator](./paginators.md#describeautoscalinginstancespaginator)
-- `client.get_paginator("describe_launch_configurations")` -> [DescribeLaunchConfigurationsPaginator](./paginators.md#describelaunchconfigurationspaginator)
-- `client.get_paginator("describe_load_balancer_target_groups")` -> [DescribeLoadBalancerTargetGroupsPaginator](./paginators.md#describeloadbalancertargetgroupspaginator)
-- `client.get_paginator("describe_load_balancers")` -> [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
-- `client.get_paginator("describe_notification_configurations")` -> [DescribeNotificationConfigurationsPaginator](./paginators.md#describenotificationconfigurationspaginator)
-- `client.get_paginator("describe_policies")` -> [DescribePoliciesPaginator](./paginators.md#describepoliciespaginator)
-- `client.get_paginator("describe_scaling_activities")` -> [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
-- `client.get_paginator("describe_scheduled_actions")` -> [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
-- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-
-
+- `client.get_paginator("describe_auto_scaling_groups")` ->
+  [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
+- `client.get_paginator("describe_auto_scaling_instances")` ->
+  [DescribeAutoScalingInstancesPaginator](./paginators.md#describeautoscalinginstancespaginator)
+- `client.get_paginator("describe_launch_configurations")` ->
+  [DescribeLaunchConfigurationsPaginator](./paginators.md#describelaunchconfigurationspaginator)
+- `client.get_paginator("describe_load_balancer_target_groups")` ->
+  [DescribeLoadBalancerTargetGroupsPaginator](./paginators.md#describeloadbalancertargetgroupspaginator)
+- `client.get_paginator("describe_load_balancers")` ->
+  [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
+- `client.get_paginator("describe_notification_configurations")` ->
+  [DescribeNotificationConfigurationsPaginator](./paginators.md#describenotificationconfigurationspaginator)
+- `client.get_paginator("describe_policies")` ->
+  [DescribePoliciesPaginator](./paginators.md#describepoliciespaginator)
+- `client.get_paginator("describe_scaling_activities")` ->
+  [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
+- `client.get_paginator("describe_scheduled_actions")` ->
+  [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+- `client.get_paginator("describe_tags")` ->
+  [DescribeTagsPaginator](./paginators.md#describetagspaginator)

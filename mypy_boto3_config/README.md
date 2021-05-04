@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ConfigService
 
-Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+Auto-generated documentation for
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+type annotations stubs module
+[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
 ```bash
 pip install mypy-boto3-config
@@ -19,7 +21,8 @@ pip install mypy-boto3-config
 
 ## ConfigServiceClient
 
-Type annotations for  `boto3.client("config")` as [ConfigServiceClient](./client.md)
+Type annotations for `boto3.client("config")` as
+[ConfigServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_config.client import ConfigServiceClient
 ```
 
-
 ConfigServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_get_aggregate_resource_config](./client.md#batch-get-aggregate-resource-config)
 - [batch_get_resource_config](./client.md#batch-get-resource-config)
 - [can_paginate](./client.md#can-paginate)
@@ -123,10 +124,8 @@ ConfigServiceClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConformancePackTemplateValidationException](./client.md#conformancepacktemplatevalidationexception)
 - [InsufficientDeliveryPolicyException](./client.md#insufficientdeliverypolicyexception)
@@ -182,14 +181,10 @@ ConfigServiceClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("config").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("config").get_paginator("...")`.
 
 Can be used directly:
 
@@ -214,11 +209,6 @@ from mypy_boto3_config.paginators import DescribeAggregateComplianceByConfigRule
 - [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
 - [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
 - [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -275,13 +265,10 @@ from mypy_boto3_config.literals import AggregateConformancePackComplianceSummary
 - [ResourceType](./literals.md#resourcetype)
 - [ResourceValueType](./literals.md#resourcevaluetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

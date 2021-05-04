@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Budgets](./README.md) > BudgetsClient
 
-Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+Auto-generated documentation for
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+type annotations stubs module
+[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [BudgetsClient for boto3 Budgets module](#budgetsclient-for-boto3-budgets-module)
   - [BudgetsClient](#budgetsclient)
@@ -48,12 +50,13 @@ def get_budgets_client() -> BudgetsClient:
     return boto3.client("budgets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
+Boto3 documentation:
+[Budgets.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_budgets.client import Exceptions
@@ -61,7 +64,6 @@ from mypy_boto3_budgets.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -76,430 +78,479 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.ResourceLockedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("budgets").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate]
+Boto3 documentation:
+[Budgets.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_budget
 
 Type annotations for `boto3.client("budgets").create_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget]
+Boto3 documentation:
+[Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
 
-```python
-def create_budget(
-    self,
-    AccountId: str,
-    Budget: "BudgetTypeDef",
-    NotificationsWithSubscribers: List[NotificationWithSubscribersTypeDef] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Budget`:
+  [BudgetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgettypedef)
+  *(required)*
+- `NotificationsWithSubscribers`:
+  `List`\[[NotificationWithSubscribersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationwithsubscriberstypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_budget_action
 
 Type annotations for `boto3.client("budgets").create_budget_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action]
+Boto3 documentation:
+[Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
 
-```python
-def create_budget_action(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    NotificationType: NotificationType,
-    ActionType: ActionType,
-    ActionThreshold: "ActionThresholdTypeDef",
-    Definition: "DefinitionTypeDef",
-    ExecutionRoleArn: str,
-    ApprovalModel: ApprovalModel,
-    Subscribers: List["SubscriberTypeDef"]
-) -> CreateBudgetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `NotificationType`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#notificationtype)
+  *(required)*
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#actiontype)
+  *(required)*
+- `ActionThreshold`:
+  [ActionThresholdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actionthresholdtypedef)
+  *(required)*
+- `Definition`:
+  [DefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#definitiontypedef)
+  *(required)*
+- `ExecutionRoleArn`: `str` *(required)*
+- `ApprovalModel`:
+  [ApprovalModel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#approvalmodel)
+  *(required)*
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+  *(required)*
+
+Returns
+[CreateBudgetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#createbudgetactionresponsetypedef).
 
 ### create_notification
 
 Type annotations for `boto3.client("budgets").create_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification]
+Boto3 documentation:
+[Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
 
-```python
-def create_notification(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef",
-    Subscribers: List["SubscriberTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_subscriber
 
 Type annotations for `boto3.client("budgets").create_subscriber` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber]
+Boto3 documentation:
+[Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
 
-```python
-def create_subscriber(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef",
-    Subscriber: "SubscriberTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `Subscriber`:
+  [SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_budget
 
 Type annotations for `boto3.client("budgets").delete_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget]
+Boto3 documentation:
+[Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
 
-```python
-def delete_budget(
-    self,
-    AccountId: str,
-    BudgetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_budget_action
 
 Type annotations for `boto3.client("budgets").delete_budget_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action]
+Boto3 documentation:
+[Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
 
-```python
-def delete_budget_action(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    ActionId: str
-) -> DeleteBudgetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+
+Returns
+[DeleteBudgetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#deletebudgetactionresponsetypedef).
 
 ### delete_notification
 
 Type annotations for `boto3.client("budgets").delete_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification]
+Boto3 documentation:
+[Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
 
-```python
-def delete_notification(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_subscriber
 
 Type annotations for `boto3.client("budgets").delete_subscriber` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber]
+Boto3 documentation:
+[Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
 
-```python
-def delete_subscriber(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef",
-    Subscriber: "SubscriberTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `Subscriber`:
+  [SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_budget
 
 Type annotations for `boto3.client("budgets").describe_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget]
+Boto3 documentation:
+[Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
 
-```python
-def describe_budget(
-    self,
-    AccountId: str,
-    BudgetName: str
-) -> DescribeBudgetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+
+Returns
+[DescribeBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetresponsetypedef).
 
 ### describe_budget_action
 
 Type annotations for `boto3.client("budgets").describe_budget_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action]
+Boto3 documentation:
+[Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
 
-```python
-def describe_budget_action(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    ActionId: str
-) -> DescribeBudgetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+
+Returns
+[DescribeBudgetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionresponsetypedef).
 
 ### describe_budget_action_histories
 
-Type annotations for `boto3.client("budgets").describe_budget_action_histories` method.
+Type annotations for `boto3.client("budgets").describe_budget_action_histories`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories]
+Boto3 documentation:
+[Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
 
-```python
-def describe_budget_action_histories(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    ActionId: str,
-    TimePeriod: "TimePeriodTypeDef" = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBudgetActionHistoriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+- `TimePeriod`:
+  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBudgetActionHistoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionhistoriesresponsetypedef).
 
 ### describe_budget_actions_for_account
 
-Type annotations for `boto3.client("budgets").describe_budget_actions_for_account` method.
+Type annotations for
+`boto3.client("budgets").describe_budget_actions_for_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account]
+Boto3 documentation:
+[Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
 
-```python
-def describe_budget_actions_for_account(
-    self,
-    AccountId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBudgetActionsForAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBudgetActionsForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforaccountresponsetypedef).
 
 ### describe_budget_actions_for_budget
 
-Type annotations for `boto3.client("budgets").describe_budget_actions_for_budget` method.
+Type annotations for
+`boto3.client("budgets").describe_budget_actions_for_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget]
+Boto3 documentation:
+[Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
 
-```python
-def describe_budget_actions_for_budget(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBudgetActionsForBudgetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBudgetActionsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforbudgetresponsetypedef).
 
 ### describe_budget_performance_history
 
-Type annotations for `boto3.client("budgets").describe_budget_performance_history` method.
+Type annotations for
+`boto3.client("budgets").describe_budget_performance_history` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history]
+Boto3 documentation:
+[Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
 
-```python
-def describe_budget_performance_history(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    TimePeriod: "TimePeriodTypeDef" = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBudgetPerformanceHistoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `TimePeriod`:
+  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBudgetPerformanceHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetperformancehistoryresponsetypedef).
 
 ### describe_budgets
 
 Type annotations for `boto3.client("budgets").describe_budgets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets]
+Boto3 documentation:
+[Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
 
-```python
-def describe_budgets(
-    self,
-    AccountId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBudgetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBudgetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetsresponsetypedef).
 
 ### describe_notifications_for_budget
 
-Type annotations for `boto3.client("budgets").describe_notifications_for_budget` method.
+Type annotations for
+`boto3.client("budgets").describe_notifications_for_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget]
+Boto3 documentation:
+[Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
 
-```python
-def describe_notifications_for_budget(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeNotificationsForBudgetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeNotificationsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describenotificationsforbudgetresponsetypedef).
 
 ### describe_subscribers_for_notification
 
-Type annotations for `boto3.client("budgets").describe_subscribers_for_notification` method.
+Type annotations for
+`boto3.client("budgets").describe_subscribers_for_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification]
+Boto3 documentation:
+[Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
 
-```python
-def describe_subscribers_for_notification(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef",
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeSubscribersForNotificationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeSubscribersForNotificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describesubscribersfornotificationresponsetypedef).
 
 ### execute_budget_action
 
 Type annotations for `boto3.client("budgets").execute_budget_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action]
+Boto3 documentation:
+[Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
 
-```python
-def execute_budget_action(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    ActionId: str,
-    ExecutionType: ExecutionType
-) -> ExecuteBudgetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+- `ExecutionType`:
+  [ExecutionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#executiontype)
+  *(required)*
+
+Returns
+[ExecuteBudgetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#executebudgetactionresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("budgets").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url]
+Boto3 documentation:
+[Budgets.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### update_budget
 
 Type annotations for `boto3.client("budgets").update_budget` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget]
+Boto3 documentation:
+[Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
 
-```python
-def update_budget(
-    self,
-    AccountId: str,
-    NewBudget: "BudgetTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `NewBudget`:
+  [BudgetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgettypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_budget_action
 
 Type annotations for `boto3.client("budgets").update_budget_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action]
+Boto3 documentation:
+[Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
 
-```python
-def update_budget_action(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    ActionId: str,
-    NotificationType: NotificationType = None,
-    ActionThreshold: "ActionThresholdTypeDef" = None,
-    Definition: "DefinitionTypeDef" = None,
-    ExecutionRoleArn: str = None,
-    ApprovalModel: ApprovalModel = None,
-    Subscribers: List["SubscriberTypeDef"] = None
-) -> UpdateBudgetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+- `NotificationType`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#notificationtype)
+- `ActionThreshold`:
+  [ActionThresholdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actionthresholdtypedef)
+- `Definition`:
+  [DefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#definitiontypedef)
+- `ExecutionRoleArn`: `str`
+- `ApprovalModel`:
+  [ApprovalModel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#approvalmodel)
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+
+Returns
+[UpdateBudgetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#updatebudgetactionresponsetypedef).
 
 ### update_notification
 
 Type annotations for `boto3.client("budgets").update_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification]
+Boto3 documentation:
+[Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
 
-```python
-def update_notification(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    OldNotification: "NotificationTypeDef",
-    NewNotification: "NotificationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `OldNotification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `NewNotification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_subscriber
 
 Type annotations for `boto3.client("budgets").update_subscriber` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber]
+Boto3 documentation:
+[Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
 
-```python
-def update_subscriber(
-    self,
-    AccountId: str,
-    BudgetName: str,
-    Notification: "NotificationTypeDef",
-    OldSubscriber: "SubscriberTypeDef",
-    NewSubscriber: "SubscriberTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `OldSubscriber`:
+  [SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)
+  *(required)*
+- `NewSubscriber`:
+  [SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("budgets").get_paginator` method with overloads.
+Type annotations for `boto3.client("budgets").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_budget_action_histories")` -> [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
-- `client.get_paginator("describe_budget_actions_for_account")` -> [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
-- `client.get_paginator("describe_budget_actions_for_budget")` -> [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
-- `client.get_paginator("describe_budget_performance_history")` -> [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
-- `client.get_paginator("describe_budgets")` -> [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
-- `client.get_paginator("describe_notifications_for_budget")` -> [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
-- `client.get_paginator("describe_subscribers_for_notification")` -> [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
-
-
+- `client.get_paginator("describe_budget_action_histories")` ->
+  [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
+- `client.get_paginator("describe_budget_actions_for_account")` ->
+  [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
+- `client.get_paginator("describe_budget_actions_for_budget")` ->
+  [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
+- `client.get_paginator("describe_budget_performance_history")` ->
+  [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
+- `client.get_paginator("describe_budgets")` ->
+  [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
+- `client.get_paginator("describe_notifications_for_budget")` ->
+  [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
+- `client.get_paginator("describe_subscribers_for_notification")` ->
+  [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)

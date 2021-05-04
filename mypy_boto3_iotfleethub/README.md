@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTFleetHub
 
-Auto-generated documentation for [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
-type annotations stubs module [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+Auto-generated documentation for
+[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
+type annotations stubs module
+[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 ```bash
 pip install mypy-boto3-iotfleethub
@@ -19,7 +21,8 @@ pip install mypy-boto3-iotfleethub
 
 ## IoTFleetHubClient
 
-Type annotations for  `boto3.client("iotfleethub")` as [IoTFleetHubClient](./client.md)
+Type annotations for `boto3.client("iotfleethub")` as
+[IoTFleetHubClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 ```
 
-
 IoTFleetHubClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_application](./client.md#create-application)
 - [delete_application](./client.md#delete-application)
@@ -45,10 +46,8 @@ IoTFleetHubClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_application](./client.md#update-application)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalFailureException](./client.md#internalfailureexception)
@@ -57,14 +56,10 @@ IoTFleetHubClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iotfleethub").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iotfleethub").get_paginator("...")`.
 
 Can be used directly:
 
@@ -73,11 +68,6 @@ from mypy_boto3_iotfleethub.paginators import ListApplicationsPaginator, ...
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -92,13 +82,10 @@ from mypy_boto3_iotfleethub.literals import ApplicationState, ...
 - [ApplicationState](./literals.md#applicationstate)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

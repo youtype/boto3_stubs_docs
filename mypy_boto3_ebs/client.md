@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EBS](./README.md) > EBSClient
 
-Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+Auto-generated documentation for
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+type annotations stubs module
+[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 - [EBSClient for boto3 EBS module](#ebsclient-for-boto3-ebs-module)
   - [EBSClient](#ebsclient)
@@ -31,12 +33,13 @@ def get_ebs_client() -> EBSClient:
     return boto3.client("ebs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
+Boto3 documentation:
+[EBS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ebs.client import Exceptions
@@ -44,7 +47,6 @@ from mypy_boto3_ebs.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -58,150 +60,144 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("ebs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate]
+Boto3 documentation:
+[EBS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_snapshot
 
 Type annotations for `boto3.client("ebs").complete_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot]
+Boto3 documentation:
+[EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
 
-```python
-def complete_snapshot(
-    self,
-    SnapshotId: str,
-    ChangedBlocksCount: int,
-    Checksum: str = None,
-    ChecksumAlgorithm: Literal['SHA256'] = None,
-    ChecksumAggregationMethod: Literal['LINEAR'] = None
-) -> CompleteSnapshotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `ChangedBlocksCount`: `int` *(required)*
+- `Checksum`: `str`
+- `ChecksumAlgorithm`: `Literal['SHA256']`
+- `ChecksumAggregationMethod`: `Literal['LINEAR']`
+
+Returns
+[CompleteSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#completesnapshotresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ebs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url]
+Boto3 documentation:
+[EBS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_snapshot_block
 
 Type annotations for `boto3.client("ebs").get_snapshot_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block]
+Boto3 documentation:
+[EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
 
-```python
-def get_snapshot_block(
-    self,
-    SnapshotId: str,
-    BlockIndex: int,
-    BlockToken: str
-) -> GetSnapshotBlockResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `BlockIndex`: `int` *(required)*
+- `BlockToken`: `str` *(required)*
+
+Returns
+[GetSnapshotBlockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#getsnapshotblockresponsetypedef).
 
 ### list_changed_blocks
 
 Type annotations for `boto3.client("ebs").list_changed_blocks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks]
+Boto3 documentation:
+[EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
 
-```python
-def list_changed_blocks(
-    self,
-    SecondSnapshotId: str,
-    FirstSnapshotId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StartingBlockIndex: int = None
-) -> ListChangedBlocksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecondSnapshotId`: `str` *(required)*
+- `FirstSnapshotId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartingBlockIndex`: `int`
+
+Returns
+[ListChangedBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#listchangedblocksresponsetypedef).
 
 ### list_snapshot_blocks
 
 Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks]
+Boto3 documentation:
+[EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
 
-```python
-def list_snapshot_blocks(
-    self,
-    SnapshotId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StartingBlockIndex: int = None
-) -> ListSnapshotBlocksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartingBlockIndex`: `int`
+
+Returns
+[ListSnapshotBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#listsnapshotblocksresponsetypedef).
 
 ### put_snapshot_block
 
 Type annotations for `boto3.client("ebs").put_snapshot_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block]
+Boto3 documentation:
+[EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
 
-```python
-def put_snapshot_block(
-    self,
-    SnapshotId: str,
-    BlockIndex: int,
-    BlockData: Union[bytes, IO[bytes]],
-    DataLength: int,
-    Checksum: str,
-    ChecksumAlgorithm: Literal['SHA256'],
-    Progress: int = None
-) -> PutSnapshotBlockResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+- `BlockIndex`: `int` *(required)*
+- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `DataLength`: `int` *(required)*
+- `Checksum`: `str` *(required)*
+- `ChecksumAlgorithm`: `Literal['SHA256']` *(required)*
+- `Progress`: `int`
+
+Returns
+[PutSnapshotBlockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#putsnapshotblockresponsetypedef).
 
 ### start_snapshot
 
 Type annotations for `boto3.client("ebs").start_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot]
+Boto3 documentation:
+[EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
 
-```python
-def start_snapshot(
-    self,
-    VolumeSize: int,
-    ParentSnapshotId: str = None,
-    Tags: List["TagTypeDef"] = None,
-    Description: str = None,
-    ClientToken: str = None,
-    Encrypted: bool = None,
-    KmsKeyArn: str = None,
-    Timeout: int = None
-) -> StartSnapshotResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `VolumeSize`: `int` *(required)*
+- `ParentSnapshotId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#tagtypedef)\]
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyArn`: `str`
+- `Timeout`: `int`
 
-
+Returns
+[StartSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#startsnapshotresponsetypedef).

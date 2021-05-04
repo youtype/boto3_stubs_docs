@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Schemas](./README.md) > Literals
 
-Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+Auto-generated documentation for
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+type annotations stubs module
+[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Literals for boto3 Schemas module](#literals-for-boto3-schemas-module)
   - [CodeBindingExistsWaiterName](#codebindingexistswaitername)

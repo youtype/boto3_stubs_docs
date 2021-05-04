@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudFront](./README.md) > Literals
 
-Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+Auto-generated documentation for
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+type annotations stubs module
+[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [Literals for boto3 CloudFront module](#literals-for-boto3-cloudfront-module)
   - [CachePolicyCookieBehavior](#cachepolicycookiebehavior)

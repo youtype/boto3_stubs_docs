@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkFirewall](./README.md) > Paginators
 
-Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+Auto-generated documentation for
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+type annotations stubs module
+[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Paginators for boto3 NetworkFirewall module](#paginators-for-boto3-networkfirewall-module)
   - [ListFirewallPoliciesPaginator](#listfirewallpoliciespaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_network_firewall](https://pypi.org/pro
 
 ## ListFirewallPoliciesPaginator
 
-Type annotations for `boto3.client("network-firewall").get_paginator("list_firewall_policies")`.
+Type annotations for
+`boto3.client("network-firewall").get_paginator("list_firewall_policies")`.
 
 Can be used directly:
 
@@ -24,19 +27,21 @@ def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
+Boto3 documentation:
+[NetworkFirewall.Paginator.ListFirewallPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
-```python
-class ListFirewallPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallPoliciesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallPoliciesPaginator.paginate` returns
+`Iterator`\[[ListFirewallPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listfirewallpoliciesresponsetypedef)\].
+
 ## ListFirewallsPaginator
 
-Type annotations for `boto3.client("network-firewall").get_paginator("list_firewalls")`.
+Type annotations for
+`boto3.client("network-firewall").get_paginator("list_firewalls")`.
 
 Can be used directly:
 
@@ -47,20 +52,22 @@ def get_list_firewalls_paginator() -> ListFirewallsPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewalls")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
+Boto3 documentation:
+[NetworkFirewall.Paginator.ListFirewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
-```python
-class ListFirewallsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        VpcIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFirewallsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFirewallsPaginator.paginate` method:
+
+- `VpcIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#paginatorconfigtypedef)
+
+`ListFirewallsPaginator.paginate` returns
+`Iterator`\[[ListFirewallsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listfirewallsresponsetypedef)\].
+
 ## ListRuleGroupsPaginator
 
-Type annotations for `boto3.client("network-firewall").get_paginator("list_rule_groups")`.
+Type annotations for
+`boto3.client("network-firewall").get_paginator("list_rule_groups")`.
 
 Can be used directly:
 
@@ -71,19 +78,21 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return boto3.client("network-firewall").get_paginator("list_rule_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
+Boto3 documentation:
+[NetworkFirewall.Paginator.ListRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
-```python
-class ListRuleGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRuleGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListRuleGroupsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#paginatorconfigtypedef)
+
+`ListRuleGroupsPaginator.paginate` returns
+`Iterator`\[[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listrulegroupsresponsetypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("network-firewall").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("network-firewall").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -94,14 +103,14 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("network-firewall").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
+Boto3 documentation:
+[NetworkFirewall.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listtagsforresourceresponsetypedef)\].

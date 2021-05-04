@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Mobile
 
-Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+Auto-generated documentation for
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+type annotations stubs module
+[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ```bash
 pip install mypy-boto3-mobile
@@ -19,7 +21,7 @@ pip install mypy-boto3-mobile
 
 ## MobileClient
 
-Type annotations for  `boto3.client("mobile")` as [MobileClient](./client.md)
+Type annotations for `boto3.client("mobile")` as [MobileClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mobile.client import MobileClient
 ```
 
-
 MobileClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_project](./client.md#create-project)
 - [delete_project](./client.md#delete-project)
@@ -46,10 +46,8 @@ MobileClient [exceptions](./client.md#exceptions)
 - [list_projects](./client.md#list-projects)
 - [update_project](./client.md#update-project)
 
-
-
-
 ### Exceptions
+
 - [AccountActionRequiredException](./client.md#accountactionrequiredexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -60,14 +58,10 @@ MobileClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mobile").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mobile").get_paginator("...")`.
 
 Can be used directly:
 
@@ -77,11 +71,6 @@ from mypy_boto3_mobile.paginators import ListBundlesPaginator, ...
 
 - [ListBundlesPaginator](./paginators.md#listbundlespaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -98,13 +87,10 @@ from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
 - [Platform](./literals.md#platform)
 - [ProjectState](./literals.md#projectstate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

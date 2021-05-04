@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DeviceFarm](./README.md) > Literals
 
-Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
-type annotations stubs module [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+Auto-generated documentation for
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+type annotations stubs module
+[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [Literals for boto3 DeviceFarm module](#literals-for-boto3-devicefarm-module)
   - [ArtifactCategory](#artifactcategory)

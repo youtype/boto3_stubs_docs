@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Batch](./README.md) > BatchClient
 
-Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+Auto-generated documentation for
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+type annotations stubs module
+[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [BatchClient for boto3 Batch module](#batchclient-for-boto3-batch-module)
   - [BatchClient](#batchclient)
@@ -45,12 +47,13 @@ def get_batch_client() -> BatchClient:
     return boto3.client("batch")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
+Boto3 documentation:
+[Batch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_batch.client import Exceptions
@@ -59,375 +62,390 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.ClientException`
 - `Exceptions.ServerException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("batch").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate]
+Boto3 documentation:
+[Batch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job
 
 Type annotations for `boto3.client("batch").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job]
+Boto3 documentation:
+[Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    jobId: str,
-    reason: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `reason`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_compute_environment
 
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment]
+Boto3 documentation:
+[Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
 
-```python
-def create_compute_environment(
-    self,
-    computeEnvironmentName: str,
-    type: CEType,
-    state: CEState = None,
-    computeResources: "ComputeResourceTypeDef" = None,
-    serviceRole: str = None,
-    tags: Dict[str, str] = None
-) -> CreateComputeEnvironmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `computeEnvironmentName`: `str` *(required)*
+- `type`:
+  [CEType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cetype)
+  *(required)*
+- `state`:
+  [CEState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestate)
+- `computeResources`:
+  [ComputeResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeresourcetypedef)
+- `serviceRole`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateComputeEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#createcomputeenvironmentresponsetypedef).
 
 ### create_job_queue
 
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue]
+Boto3 documentation:
+[Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
 
-```python
-def create_job_queue(
-    self,
-    jobQueueName: str,
-    priority: int,
-    computeEnvironmentOrder: List["ComputeEnvironmentOrderTypeDef"],
-    state: JQState = None,
-    tags: Dict[str, str] = None
-) -> CreateJobQueueResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobQueueName`: `str` *(required)*
+- `priority`: `int` *(required)*
+- `computeEnvironmentOrder`:
+  `List`\[[ComputeEnvironmentOrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentordertypedef)\]
+  *(required)*
+- `state`:
+  [JQState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstate)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateJobQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#createjobqueueresponsetypedef).
 
 ### delete_compute_environment
 
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment]
+Boto3 documentation:
+[Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
 
-```python
-def delete_compute_environment(
-    self,
-    computeEnvironment: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `computeEnvironment`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_job_queue
 
 Type annotations for `boto3.client("batch").delete_job_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue]
+Boto3 documentation:
+[Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
 
-```python
-def delete_job_queue(
-    self,
-    jobQueue: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobQueue`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_job_definition
 
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition]
+Boto3 documentation:
+[Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
 
-```python
-def deregister_job_definition(
-    self,
-    jobDefinition: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobDefinition`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_compute_environments
 
-Type annotations for `boto3.client("batch").describe_compute_environments` method.
+Type annotations for `boto3.client("batch").describe_compute_environments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments]
+Boto3 documentation:
+[Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
 
-```python
-def describe_compute_environments(
-    self,
-    computeEnvironments: List[str] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeComputeEnvironmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `computeEnvironments`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeComputeEnvironmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describecomputeenvironmentsresponsetypedef).
 
 ### describe_job_definitions
 
 Type annotations for `boto3.client("batch").describe_job_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions]
+Boto3 documentation:
+[Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
 
-```python
-def describe_job_definitions(
-    self,
-    jobDefinitions: List[str] = None,
-    maxResults: int = None,
-    jobDefinitionName: str = None,
-    status: str = None,
-    nextToken: str = None
-) -> DescribeJobDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobDefinitions`: `List`\[`str`\]
+- `maxResults`: `int`
+- `jobDefinitionName`: `str`
+- `status`: `str`
+- `nextToken`: `str`
+
+Returns
+[DescribeJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobdefinitionsresponsetypedef).
 
 ### describe_job_queues
 
 Type annotations for `boto3.client("batch").describe_job_queues` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues]
+Boto3 documentation:
+[Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
 
-```python
-def describe_job_queues(
-    self,
-    jobQueues: List[str] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeJobQueuesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobQueues`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeJobQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobqueuesresponsetypedef).
 
 ### describe_jobs
 
 Type annotations for `boto3.client("batch").describe_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs]
+Boto3 documentation:
+[Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
 
-```python
-def describe_jobs(
-    self,
-    jobs: List[str]
-) -> DescribeJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobs`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("batch").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url]
+Boto3 documentation:
+[Batch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_jobs
 
 Type annotations for `boto3.client("batch").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs]
+Boto3 documentation:
+[Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    jobQueue: str = None,
-    arrayJobId: str = None,
-    multiNodeJobId: str = None,
-    jobStatus: JobStatus = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobQueue`: `str`
+- `arrayJobId`: `str`
+- `multiNodeJobId`: `str`
+- `jobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listjobsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource]
+Boto3 documentation:
+[Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### register_job_definition
 
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition]
+Boto3 documentation:
+[Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
 
-```python
-def register_job_definition(
-    self,
-    jobDefinitionName: str,
-    type: JobDefinitionType,
-    parameters: Dict[str, str] = None,
-    containerProperties: "ContainerPropertiesTypeDef" = None,
-    nodeProperties: "NodePropertiesTypeDef" = None,
-    retryStrategy: "RetryStrategyTypeDef" = None,
-    propagateTags: bool = None,
-    timeout: "JobTimeoutTypeDef" = None,
-    tags: Dict[str, str] = None,
-    platformCapabilities: List[PlatformCapability] = None
-) -> RegisterJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobDefinitionName`: `str` *(required)*
+- `type`:
+  [JobDefinitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobdefinitiontype)
+  *(required)*
+- `parameters`: `Dict`\[`str`, `str`\]
+- `containerProperties`:
+  [ContainerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containerpropertiestypedef)
+- `nodeProperties`:
+  [NodePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertiestypedef)
+- `retryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+- `propagateTags`: `bool`
+- `timeout`:
+  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `platformCapabilities`:
+  `List`\[[PlatformCapability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#platformcapability)\]
+
+Returns
+[RegisterJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#registerjobdefinitionresponsetypedef).
 
 ### submit_job
 
 Type annotations for `boto3.client("batch").submit_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job]
+Boto3 documentation:
+[Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
 
-```python
-def submit_job(
-    self,
-    jobName: str,
-    jobQueue: str,
-    jobDefinition: str,
-    arrayProperties: ArrayPropertiesTypeDef = None,
-    dependsOn: List["JobDependencyTypeDef"] = None,
-    parameters: Dict[str, str] = None,
-    containerOverrides: "ContainerOverridesTypeDef" = None,
-    nodeOverrides: NodeOverridesTypeDef = None,
-    retryStrategy: "RetryStrategyTypeDef" = None,
-    propagateTags: bool = None,
-    timeout: "JobTimeoutTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> SubmitJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobName`: `str` *(required)*
+- `jobQueue`: `str` *(required)*
+- `jobDefinition`: `str` *(required)*
+- `arrayProperties`:
+  [ArrayPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#arraypropertiestypedef)
+- `dependsOn`:
+  `List`\[[JobDependencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobdependencytypedef)\]
+- `parameters`: `Dict`\[`str`, `str`\]
+- `containerOverrides`:
+  [ContainerOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containeroverridestypedef)
+- `nodeOverrides`:
+  [NodeOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodeoverridestypedef)
+- `retryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+- `propagateTags`: `bool`
+- `timeout`:
+  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[SubmitJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#submitjobresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("batch").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource]
+Boto3 documentation:
+[Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### terminate_job
 
 Type annotations for `boto3.client("batch").terminate_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job]
+Boto3 documentation:
+[Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
 
-```python
-def terminate_job(
-    self,
-    jobId: str,
-    reason: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `reason`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("batch").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource]
+Boto3 documentation:
+[Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_compute_environment
 
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment]
+Boto3 documentation:
+[Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
 
-```python
-def update_compute_environment(
-    self,
-    computeEnvironment: str,
-    state: CEState = None,
-    computeResources: ComputeResourceUpdateTypeDef = None,
-    serviceRole: str = None
-) -> UpdateComputeEnvironmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `computeEnvironment`: `str` *(required)*
+- `state`:
+  [CEState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestate)
+- `computeResources`:
+  [ComputeResourceUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeresourceupdatetypedef)
+- `serviceRole`: `str`
+
+Returns
+[UpdateComputeEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#updatecomputeenvironmentresponsetypedef).
 
 ### update_job_queue
 
 Type annotations for `boto3.client("batch").update_job_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue]
+Boto3 documentation:
+[Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
 
-```python
-def update_job_queue(
-    self,
-    jobQueue: str,
-    state: JQState = None,
-    priority: int = None,
-    computeEnvironmentOrder: List["ComputeEnvironmentOrderTypeDef"] = None
-) -> UpdateJobQueueResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `jobQueue`: `str` *(required)*
+- `state`:
+  [JQState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstate)
+- `priority`: `int`
+- `computeEnvironmentOrder`:
+  `List`\[[ComputeEnvironmentOrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentordertypedef)\]
 
+Returns
+[UpdateJobQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#updatejobqueueresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("batch").get_paginator` method with overloads.
+Type annotations for `boto3.client("batch").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_compute_environments")` -> [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
-- `client.get_paginator("describe_job_definitions")` -> [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
-- `client.get_paginator("describe_job_queues")` -> [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
+- `client.get_paginator("describe_compute_environments")` ->
+  [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
+- `client.get_paginator("describe_job_definitions")` ->
+  [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
+- `client.get_paginator("describe_job_queues")` ->
+  [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)

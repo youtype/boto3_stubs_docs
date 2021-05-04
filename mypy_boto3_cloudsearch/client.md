@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudSearch](./README.md) > CloudSearchClient
 
-Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+Auto-generated documentation for
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+type annotations stubs module
+[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [CloudSearchClient for boto3 CloudSearch module](#cloudsearchclient-for-boto3-cloudsearch-module)
   - [CloudSearchClient](#cloudsearchclient)
@@ -51,12 +53,13 @@ def get_cloudsearch_client() -> CloudSearchClient:
     return boto3.client("cloudsearch")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
+Boto3 documentation:
+[CloudSearch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudsearch.client import Exceptions
@@ -64,7 +67,6 @@ from mypy_boto3_cloudsearch.client import Exceptions
 def handle_error(exc: Exceptions.BaseException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -77,426 +79,441 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### build_suggesters
 
 Type annotations for `boto3.client("cloudsearch").build_suggesters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters]
+Boto3 documentation:
+[CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
 
-```python
-def build_suggesters(
-    self,
-    DomainName: str
-) -> BuildSuggestersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[BuildSuggestersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#buildsuggestersresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudsearch").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate]
+Boto3 documentation:
+[CloudSearch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_domain
 
 Type annotations for `boto3.client("cloudsearch").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain]
+Boto3 documentation:
+[CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    DomainName: str
-) -> CreateDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#createdomainresponsetypedef).
 
 ### define_analysis_scheme
 
-Type annotations for `boto3.client("cloudsearch").define_analysis_scheme` method.
+Type annotations for `boto3.client("cloudsearch").define_analysis_scheme`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme]
+Boto3 documentation:
+[CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
 
-```python
-def define_analysis_scheme(
-    self,
-    DomainName: str,
-    AnalysisScheme: "AnalysisSchemeTypeDef"
-) -> DefineAnalysisSchemeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AnalysisScheme`:
+  [AnalysisSchemeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemetypedef)
+  *(required)*
+
+Returns
+[DefineAnalysisSchemeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineanalysisschemeresponsetypedef).
 
 ### define_expression
 
 Type annotations for `boto3.client("cloudsearch").define_expression` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression]
+Boto3 documentation:
+[CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
 
-```python
-def define_expression(
-    self,
-    DomainName: str,
-    Expression: "ExpressionTypeDef"
-) -> DefineExpressionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Expression`:
+  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressiontypedef)
+  *(required)*
+
+Returns
+[DefineExpressionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineexpressionresponsetypedef).
 
 ### define_index_field
 
 Type annotations for `boto3.client("cloudsearch").define_index_field` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field]
+Boto3 documentation:
+[CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
 
-```python
-def define_index_field(
-    self,
-    DomainName: str,
-    IndexField: "IndexFieldTypeDef"
-) -> DefineIndexFieldResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `IndexField`:
+  [IndexFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldtypedef)
+  *(required)*
+
+Returns
+[DefineIndexFieldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineindexfieldresponsetypedef).
 
 ### define_suggester
 
 Type annotations for `boto3.client("cloudsearch").define_suggester` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester]
+Boto3 documentation:
+[CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
 
-```python
-def define_suggester(
-    self,
-    DomainName: str,
-    Suggester: "SuggesterTypeDef"
-) -> DefineSuggesterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Suggester`:
+  [SuggesterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggestertypedef)
+  *(required)*
+
+Returns
+[DefineSuggesterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#definesuggesterresponsetypedef).
 
 ### delete_analysis_scheme
 
-Type annotations for `boto3.client("cloudsearch").delete_analysis_scheme` method.
+Type annotations for `boto3.client("cloudsearch").delete_analysis_scheme`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme]
+Boto3 documentation:
+[CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
 
-```python
-def delete_analysis_scheme(
-    self,
-    DomainName: str,
-    AnalysisSchemeName: str
-) -> DeleteAnalysisSchemeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AnalysisSchemeName`: `str` *(required)*
+
+Returns
+[DeleteAnalysisSchemeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteanalysisschemeresponsetypedef).
 
 ### delete_domain
 
 Type annotations for `boto3.client("cloudsearch").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain]
+Boto3 documentation:
+[CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    DomainName: str
-) -> DeleteDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deletedomainresponsetypedef).
 
 ### delete_expression
 
 Type annotations for `boto3.client("cloudsearch").delete_expression` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression]
+Boto3 documentation:
+[CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
 
-```python
-def delete_expression(
-    self,
-    DomainName: str,
-    ExpressionName: str
-) -> DeleteExpressionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ExpressionName`: `str` *(required)*
+
+Returns
+[DeleteExpressionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteexpressionresponsetypedef).
 
 ### delete_index_field
 
 Type annotations for `boto3.client("cloudsearch").delete_index_field` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field]
+Boto3 documentation:
+[CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
 
-```python
-def delete_index_field(
-    self,
-    DomainName: str,
-    IndexFieldName: str
-) -> DeleteIndexFieldResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `IndexFieldName`: `str` *(required)*
+
+Returns
+[DeleteIndexFieldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteindexfieldresponsetypedef).
 
 ### delete_suggester
 
 Type annotations for `boto3.client("cloudsearch").delete_suggester` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester]
+Boto3 documentation:
+[CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
 
-```python
-def delete_suggester(
-    self,
-    DomainName: str,
-    SuggesterName: str
-) -> DeleteSuggesterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `SuggesterName`: `str` *(required)*
+
+Returns
+[DeleteSuggesterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deletesuggesterresponsetypedef).
 
 ### describe_analysis_schemes
 
-Type annotations for `boto3.client("cloudsearch").describe_analysis_schemes` method.
+Type annotations for `boto3.client("cloudsearch").describe_analysis_schemes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes]
+Boto3 documentation:
+[CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
 
-```python
-def describe_analysis_schemes(
-    self,
-    DomainName: str,
-    AnalysisSchemeNames: List[str] = None,
-    Deployed: bool = None
-) -> DescribeAnalysisSchemesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AnalysisSchemeNames`: `List`\[`str`\]
+- `Deployed`: `bool`
+
+Returns
+[DescribeAnalysisSchemesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeanalysisschemesresponsetypedef).
 
 ### describe_availability_options
 
-Type annotations for `boto3.client("cloudsearch").describe_availability_options` method.
+Type annotations for
+`boto3.client("cloudsearch").describe_availability_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options]
+Boto3 documentation:
+[CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
 
-```python
-def describe_availability_options(
-    self,
-    DomainName: str,
-    Deployed: bool = None
-) -> DescribeAvailabilityOptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Deployed`: `bool`
+
+Returns
+[DescribeAvailabilityOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeavailabilityoptionsresponsetypedef).
 
 ### describe_domain_endpoint_options
 
-Type annotations for `boto3.client("cloudsearch").describe_domain_endpoint_options` method.
+Type annotations for
+`boto3.client("cloudsearch").describe_domain_endpoint_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options]
+Boto3 documentation:
+[CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
 
-```python
-def describe_domain_endpoint_options(
-    self,
-    DomainName: str,
-    Deployed: bool = None
-) -> DescribeDomainEndpointOptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Deployed`: `bool`
+
+Returns
+[DescribeDomainEndpointOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describedomainendpointoptionsresponsetypedef).
 
 ### describe_domains
 
 Type annotations for `boto3.client("cloudsearch").describe_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains]
+Boto3 documentation:
+[CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
 
-```python
-def describe_domains(
-    self,
-    DomainNames: List[str] = None
-) -> DescribeDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainNames`: `List`\[`str`\]
+
+Returns
+[DescribeDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describedomainsresponsetypedef).
 
 ### describe_expressions
 
 Type annotations for `boto3.client("cloudsearch").describe_expressions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions]
+Boto3 documentation:
+[CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
 
-```python
-def describe_expressions(
-    self,
-    DomainName: str,
-    ExpressionNames: List[str] = None,
-    Deployed: bool = None
-) -> DescribeExpressionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ExpressionNames`: `List`\[`str`\]
+- `Deployed`: `bool`
+
+Returns
+[DescribeExpressionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeexpressionsresponsetypedef).
 
 ### describe_index_fields
 
-Type annotations for `boto3.client("cloudsearch").describe_index_fields` method.
+Type annotations for `boto3.client("cloudsearch").describe_index_fields`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields]
+Boto3 documentation:
+[CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
 
-```python
-def describe_index_fields(
-    self,
-    DomainName: str,
-    FieldNames: List[str] = None,
-    Deployed: bool = None
-) -> DescribeIndexFieldsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `FieldNames`: `List`\[`str`\]
+- `Deployed`: `bool`
+
+Returns
+[DescribeIndexFieldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeindexfieldsresponsetypedef).
 
 ### describe_scaling_parameters
 
-Type annotations for `boto3.client("cloudsearch").describe_scaling_parameters` method.
+Type annotations for `boto3.client("cloudsearch").describe_scaling_parameters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters]
+Boto3 documentation:
+[CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
 
-```python
-def describe_scaling_parameters(
-    self,
-    DomainName: str
-) -> DescribeScalingParametersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DescribeScalingParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describescalingparametersresponsetypedef).
 
 ### describe_service_access_policies
 
-Type annotations for `boto3.client("cloudsearch").describe_service_access_policies` method.
+Type annotations for
+`boto3.client("cloudsearch").describe_service_access_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies]
+Boto3 documentation:
+[CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
 
-```python
-def describe_service_access_policies(
-    self,
-    DomainName: str,
-    Deployed: bool = None
-) -> DescribeServiceAccessPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Deployed`: `bool`
+
+Returns
+[DescribeServiceAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeserviceaccesspoliciesresponsetypedef).
 
 ### describe_suggesters
 
 Type annotations for `boto3.client("cloudsearch").describe_suggesters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters]
+Boto3 documentation:
+[CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
 
-```python
-def describe_suggesters(
-    self,
-    DomainName: str,
-    SuggesterNames: List[str] = None,
-    Deployed: bool = None
-) -> DescribeSuggestersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `SuggesterNames`: `List`\[`str`\]
+- `Deployed`: `bool`
+
+Returns
+[DescribeSuggestersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describesuggestersresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cloudsearch").generate_presigned_url` method.
+Type annotations for `boto3.client("cloudsearch").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudSearch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### index_documents
 
 Type annotations for `boto3.client("cloudsearch").index_documents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents]
+Boto3 documentation:
+[CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
 
-```python
-def index_documents(
-    self,
-    DomainName: str
-) -> IndexDocumentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[IndexDocumentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexdocumentsresponsetypedef).
 
 ### list_domain_names
 
 Type annotations for `boto3.client("cloudsearch").list_domain_names` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names]
+Boto3 documentation:
+[CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
 
-```python
-def list_domain_names(
-    self
-) -> ListDomainNamesResponseTypeDef:
-    pass
-```
+Returns
+[ListDomainNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#listdomainnamesresponsetypedef).
 
 ### update_availability_options
 
-Type annotations for `boto3.client("cloudsearch").update_availability_options` method.
+Type annotations for `boto3.client("cloudsearch").update_availability_options`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options]
+Boto3 documentation:
+[CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
 
-```python
-def update_availability_options(
-    self,
-    DomainName: str,
-    MultiAZ: bool
-) -> UpdateAvailabilityOptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `MultiAZ`: `bool` *(required)*
+
+Returns
+[UpdateAvailabilityOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updateavailabilityoptionsresponsetypedef).
 
 ### update_domain_endpoint_options
 
-Type annotations for `boto3.client("cloudsearch").update_domain_endpoint_options` method.
+Type annotations for
+`boto3.client("cloudsearch").update_domain_endpoint_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options]
+Boto3 documentation:
+[CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
 
-```python
-def update_domain_endpoint_options(
-    self,
-    DomainName: str,
-    DomainEndpointOptions: "DomainEndpointOptionsTypeDef"
-) -> UpdateDomainEndpointOptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `DomainEndpointOptions`:
+  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainendpointoptionstypedef)
+  *(required)*
+
+Returns
+[UpdateDomainEndpointOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updatedomainendpointoptionsresponsetypedef).
 
 ### update_scaling_parameters
 
-Type annotations for `boto3.client("cloudsearch").update_scaling_parameters` method.
+Type annotations for `boto3.client("cloudsearch").update_scaling_parameters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters]
+Boto3 documentation:
+[CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
 
-```python
-def update_scaling_parameters(
-    self,
-    DomainName: str,
-    ScalingParameters: "ScalingParametersTypeDef"
-) -> UpdateScalingParametersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ScalingParameters`:
+  [ScalingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#scalingparameterstypedef)
+  *(required)*
+
+Returns
+[UpdateScalingParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updatescalingparametersresponsetypedef).
 
 ### update_service_access_policies
 
-Type annotations for `boto3.client("cloudsearch").update_service_access_policies` method.
+Type annotations for
+`boto3.client("cloudsearch").update_service_access_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies]
+Boto3 documentation:
+[CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
 
-```python
-def update_service_access_policies(
-    self,
-    DomainName: str,
-    AccessPolicies: str
-) -> UpdateServiceAccessPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `DomainName`: `str` *(required)*
+- `AccessPolicies`: `str` *(required)*
 
-
+Returns
+[UpdateServiceAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updateserviceaccesspoliciesresponsetypedef).

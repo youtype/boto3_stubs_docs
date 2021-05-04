@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudWatch](./README.md) > Structures
 
-Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+Auto-generated documentation for
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+type annotations stubs module
+[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 - [Typed dictionaries for boto3 CloudWatch module](#typed-dictionaries-for-boto3-cloudwatch-module)
   - [AlarmHistoryItemTypeDef](#alarmhistoryitemtypedef)
@@ -63,17 +65,16 @@ type annotations stubs module [mypy_boto3_cloudwatch](https://pypi.org/project/m
 from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlarmName`: `str`
-- `AlarmType`: `AlarmType`
+- `AlarmType`:
+  [AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)
 - `Timestamp`: `datetime`
-- `HistoryItemType`: `HistoryItemType`
+- `HistoryItemType`:
+  [HistoryItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#historyitemtype)
 - `HistorySummary`: `str`
 - `HistoryData`: `str`
-
 
 ## AnomalyDetectorConfigurationTypeDef
 
@@ -81,13 +82,11 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExcludedTimeRanges`: `List["RangeTypeDef"]`
-- `MetricTimezone`: `str`
 
+- `ExcludedTimeRanges`:
+  `List`\[[RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#rangetypedef)\]
+- `MetricTimezone`: `str`
 
 ## AnomalyDetectorTypeDef
 
@@ -95,17 +94,17 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import AnomalyDetectorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Dimensions`: `List["DimensionTypeDef"]`
+- `Dimensions`:
+  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
 - `Stat`: `str`
-- `Configuration`: `"AnomalyDetectorConfigurationTypeDef"`
-- `StateValue`: `AnomalyDetectorStateValue`
-
+- `Configuration`:
+  [AnomalyDetectorConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#anomalydetectorconfigurationtypedef)
+- `StateValue`:
+  [AnomalyDetectorStateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#anomalydetectorstatevalue)
 
 ## CompositeAlarmTypeDef
 
@@ -113,24 +112,22 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import CompositeAlarmTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionsEnabled`: `bool`
-- `AlarmActions`: `List[str]`
+- `AlarmActions`: `List`\[`str`\]
 - `AlarmArn`: `str`
 - `AlarmConfigurationUpdatedTimestamp`: `datetime`
 - `AlarmDescription`: `str`
 - `AlarmName`: `str`
 - `AlarmRule`: `str`
-- `InsufficientDataActions`: `List[str]`
-- `OKActions`: `List[str]`
+- `InsufficientDataActions`: `List`\[`str`\]
+- `OKActions`: `List`\[`str`\]
 - `StateReason`: `str`
 - `StateReasonData`: `str`
 - `StateUpdatedTimestamp`: `datetime`
-- `StateValue`: `StateValue`
-
+- `StateValue`:
+  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
 
 ## DashboardEntryTypeDef
 
@@ -138,15 +135,12 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import DashboardEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DashboardName`: `str`
 - `DashboardArn`: `str`
 - `LastModified`: `datetime`
 - `Size`: `int`
-
 
 ## DashboardValidationMessageTypeDef
 
@@ -154,13 +148,10 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import DashboardValidationMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DataPath`: `str`
 - `Message`: `str`
-
 
 ## DatapointTypeDef
 
@@ -168,19 +159,17 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import DatapointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Timestamp`: `datetime`
 - `SampleCount`: `float`
 - `Average`: `float`
 - `Sum`: `float`
 - `Minimum`: `float`
 - `Maximum`: `float`
-- `Unit`: `StandardUnit`
-- `ExtendedStatistics`: `Dict[str, float]`
-
+- `Unit`:
+  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
+- `ExtendedStatistics`: `Dict`\[`str`, `float`\]
 
 ## DeleteInsightRulesOutputTypeDef
 
@@ -188,13 +177,12 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
 ```
 
-
 Required fields:
-- `Failures`: `List["PartialFailureTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Failures`:
+  `List`\[[PartialFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#partialfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DescribeAlarmHistoryOutputTypeDef
 
@@ -202,14 +190,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
 ```
 
-
 Required fields:
-- `AlarmHistoryItems`: `List["AlarmHistoryItemTypeDef"]`
+
+- `AlarmHistoryItems`:
+  `List`\[[AlarmHistoryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#alarmhistoryitemtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DescribeAlarmsForMetricOutputTypeDef
 
@@ -217,13 +204,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricOutputTypeDef
 ```
 
-
 Required fields:
-- `MetricAlarms`: `List["MetricAlarmTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `MetricAlarms`:
+  `List`\[[MetricAlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricalarmtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DescribeAlarmsOutputTypeDef
 
@@ -231,15 +217,15 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsOutputTypeDef
 ```
 
-
 Required fields:
-- `CompositeAlarms`: `List["CompositeAlarmTypeDef"]`
-- `MetricAlarms`: `List["MetricAlarmTypeDef"]`
+
+- `CompositeAlarms`:
+  `List`\[[CompositeAlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#compositealarmtypedef)\]
+- `MetricAlarms`:
+  `List`\[[MetricAlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricalarmtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DescribeAnomalyDetectorsOutputTypeDef
 
@@ -247,14 +233,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsOutputTypeDef
 ```
 
-
 Required fields:
-- `AnomalyDetectors`: `List["AnomalyDetectorTypeDef"]`
+
+- `AnomalyDetectors`:
+  `List`\[[AnomalyDetectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#anomalydetectortypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DescribeInsightRulesOutputTypeDef
 
@@ -262,14 +247,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DescribeInsightRulesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NextToken`: `str`
-- `InsightRules`: `List["InsightRuleTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `InsightRules`:
+  `List`\[[InsightRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#insightruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## DimensionFilterTypeDef
 
@@ -277,15 +261,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DimensionFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## DimensionTypeDef
 
@@ -293,13 +275,10 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import DimensionTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## DisableInsightRulesOutputTypeDef
 
@@ -307,13 +286,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesOutputTypeDef
 ```
 
-
 Required fields:
-- `Failures`: `List["PartialFailureTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Failures`:
+  `List`\[[PartialFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#partialfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## EnableInsightRulesOutputTypeDef
 
@@ -321,13 +299,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesOutputTypeDef
 ```
 
-
 Required fields:
-- `Failures`: `List["PartialFailureTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Failures`:
+  `List`\[[PartialFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#partialfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetDashboardOutputTypeDef
 
@@ -335,15 +312,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetDashboardOutputTypeDef
 ```
 
-
 Required fields:
+
 - `DashboardArn`: `str`
 - `DashboardBody`: `str`
 - `DashboardName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetInsightRuleReportOutputTypeDef
 
@@ -351,18 +326,18 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetInsightRuleReportOutputTypeDef
 ```
 
-
 Required fields:
-- `KeyLabels`: `List[str]`
+
+- `KeyLabels`: `List`\[`str`\]
 - `AggregationStatistic`: `str`
 - `AggregateValue`: `float`
 - `ApproximateUniqueCount`: `int`
-- `Contributors`: `List["InsightRuleContributorTypeDef"]`
-- `MetricDatapoints`: `List["InsightRuleMetricDatapointTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Contributors`:
+  `List`\[[InsightRuleContributorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#insightrulecontributortypedef)\]
+- `MetricDatapoints`:
+  `List`\[[InsightRuleMetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#insightrulemetricdatapointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetMetricDataOutputTypeDef
 
@@ -370,15 +345,15 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetMetricDataOutputTypeDef
 ```
 
-
 Required fields:
-- `MetricDataResults`: `List["MetricDataResultTypeDef"]`
+
+- `MetricDataResults`:
+  `List`\[[MetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricdataresulttypedef)\]
 - `NextToken`: `str`
-- `Messages`: `List["MessageDataTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Messages`:
+  `List`\[[MessageDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#messagedatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetMetricStatisticsOutputTypeDef
 
@@ -386,14 +361,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetMetricStatisticsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Label`: `str`
-- `Datapoints`: `List["DatapointTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Datapoints`:
+  `List`\[[DatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#datapointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetMetricStreamOutputTypeDef
 
@@ -401,22 +375,23 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetMetricStreamOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `Name`: `str`
-- `IncludeFilters`: `List["MetricStreamFilterTypeDef"]`
-- `ExcludeFilters`: `List["MetricStreamFilterTypeDef"]`
+- `IncludeFilters`:
+  `List`\[[MetricStreamFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricstreamfiltertypedef)\]
+- `ExcludeFilters`:
+  `List`\[[MetricStreamFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricstreamfiltertypedef)\]
 - `FirehoseArn`: `str`
 - `RoleArn`: `str`
 - `State`: `str`
 - `CreationDate`: `datetime`
 - `LastUpdateDate`: `datetime`
-- `OutputFormat`: `MetricStreamOutputFormat`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `OutputFormat`:
+  [MetricStreamOutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#metricstreamoutputformat)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## GetMetricWidgetImageOutputTypeDef
 
@@ -424,13 +399,11 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import GetMetricWidgetImageOutputTypeDef
 ```
 
-
 Required fields:
-- `MetricWidgetImage`: `Union[bytes, IO[bytes]]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `MetricWidgetImage`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## InsightRuleContributorDatapointTypeDef
 
@@ -438,13 +411,10 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorDatapointTypeDef
 ```
 
-
 Required fields:
+
 - `Timestamp`: `datetime`
 - `ApproximateValue`: `float`
-
-
-
 
 ## InsightRuleContributorTypeDef
 
@@ -452,14 +422,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import InsightRuleContributorTypeDef
 ```
 
-
 Required fields:
-- `Keys`: `List[str]`
+
+- `Keys`: `List`\[`str`\]
 - `ApproximateAggregateValue`: `float`
-- `Datapoints`: `List["InsightRuleContributorDatapointTypeDef"]`
-
-
-
+- `Datapoints`:
+  `List`\[[InsightRuleContributorDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#insightrulecontributordatapointtypedef)\]
 
 ## InsightRuleMetricDatapointTypeDef
 
@@ -467,13 +435,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import InsightRuleMetricDatapointTypeDef
 ```
 
-
 Required fields:
+
 - `Timestamp`: `datetime`
 
-
-
 Optional fields:
+
 - `UniqueContributors`: `float`
 - `MaxContributorValue`: `float`
 - `SampleCount`: `float`
@@ -482,22 +449,18 @@ Optional fields:
 - `Minimum`: `float`
 - `Maximum`: `float`
 
-
 ## InsightRuleTypeDef
 
 ```python
 from mypy_boto3_cloudwatch.type_defs import InsightRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `State`: `str`
 - `Schema`: `str`
 - `Definition`: `str`
-
-
-
 
 ## LabelOptionsTypeDef
 
@@ -505,12 +468,9 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import LabelOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Timezone`: `str`
 
+- `Timezone`: `str`
 
 ## ListDashboardsOutputTypeDef
 
@@ -518,14 +478,13 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import ListDashboardsOutputTypeDef
 ```
 
-
 Required fields:
-- `DashboardEntries`: `List["DashboardEntryTypeDef"]`
+
+- `DashboardEntries`:
+  `List`\[[DashboardEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dashboardentrytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## ListMetricStreamsOutputTypeDef
 
@@ -533,14 +492,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NextToken`: `str`
-- `Entries`: `List["MetricStreamEntryTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Entries`:
+  `List`\[[MetricStreamEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricstreamentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## ListMetricsOutputTypeDef
 
@@ -548,14 +506,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import ListMetricsOutputTypeDef
 ```
 
-
 Required fields:
-- `Metrics`: `List["MetricTypeDef"]`
+
+- `Metrics`:
+  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metrictypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -563,13 +520,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## MessageDataTypeDef
 
@@ -577,13 +533,10 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import MessageDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Code`: `str`
 - `Value`: `str`
-
 
 ## MetricAlarmTypeDef
 
@@ -591,38 +544,41 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricAlarmTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlarmName`: `str`
 - `AlarmArn`: `str`
 - `AlarmDescription`: `str`
 - `AlarmConfigurationUpdatedTimestamp`: `datetime`
 - `ActionsEnabled`: `bool`
-- `OKActions`: `List[str]`
-- `AlarmActions`: `List[str]`
-- `InsufficientDataActions`: `List[str]`
-- `StateValue`: `StateValue`
+- `OKActions`: `List`\[`str`\]
+- `AlarmActions`: `List`\[`str`\]
+- `InsufficientDataActions`: `List`\[`str`\]
+- `StateValue`:
+  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
 - `StateReason`: `str`
 - `StateReasonData`: `str`
 - `StateUpdatedTimestamp`: `datetime`
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: `Statistic`
+- `Statistic`:
+  [Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statistic)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List["DimensionTypeDef"]`
+- `Dimensions`:
+  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
 - `Period`: `int`
-- `Unit`: `StandardUnit`
+- `Unit`:
+  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
 - `EvaluationPeriods`: `int`
 - `DatapointsToAlarm`: `int`
 - `Threshold`: `float`
-- `ComparisonOperator`: `ComparisonOperator`
+- `ComparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#comparisonoperator)
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
-- `Metrics`: `List["MetricDataQueryTypeDef"]`
+- `Metrics`:
+  `List`\[[MetricDataQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricdataquerytypedef)\]
 - `ThresholdMetricId`: `str`
-
 
 ## MetricDataQueryTypeDef
 
@@ -630,19 +586,18 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricDataQueryTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 
-
-
 Optional fields:
-- `MetricStat`: `"MetricStatTypeDef"`
+
+- `MetricStat`:
+  [MetricStatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricstattypedef)
 - `Expression`: `str`
 - `Label`: `str`
 - `ReturnData`: `bool`
 - `Period`: `int`
-
 
 ## MetricDataResultTypeDef
 
@@ -650,17 +605,16 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricDataResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Label`: `str`
-- `Timestamps`: `List[datetime]`
-- `Values`: `List[float]`
-- `StatusCode`: `StatusCode`
-- `Messages`: `List["MessageDataTypeDef"]`
-
+- `Timestamps`: `List`\[`datetime`\]
+- `Values`: `List`\[`float`\]
+- `StatusCode`:
+  [StatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statuscode)
+- `Messages`:
+  `List`\[[MessageDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#messagedatatypedef)\]
 
 ## MetricDatumTypeDef
 
@@ -668,22 +622,23 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricDatumTypeDef
 ```
 
-
 Required fields:
+
 - `MetricName`: `str`
 
-
-
 Optional fields:
-- `Dimensions`: `List["DimensionTypeDef"]`
+
+- `Dimensions`:
+  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
 - `Timestamp`: `datetime`
 - `Value`: `float`
-- `StatisticValues`: `"StatisticSetTypeDef"`
-- `Values`: `List[float]`
-- `Counts`: `List[float]`
-- `Unit`: `StandardUnit`
+- `StatisticValues`:
+  [StatisticSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#statisticsettypedef)
+- `Values`: `List`\[`float`\]
+- `Counts`: `List`\[`float`\]
+- `Unit`:
+  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
 - `StorageResolution`: `int`
-
 
 ## MetricStatTypeDef
 
@@ -691,17 +646,17 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricStatTypeDef
 ```
 
-
 Required fields:
-- `Metric`: `"MetricTypeDef"`
+
+- `Metric`:
+  [MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metrictypedef)
 - `Period`: `int`
 - `Stat`: `str`
 
-
-
 Optional fields:
-- `Unit`: `StandardUnit`
 
+- `Unit`:
+  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
 
 ## MetricStreamEntryTypeDef
 
@@ -709,18 +664,16 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricStreamEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationDate`: `datetime`
 - `LastUpdateDate`: `datetime`
 - `Name`: `str`
 - `FirehoseArn`: `str`
 - `State`: `str`
-- `OutputFormat`: `MetricStreamOutputFormat`
-
+- `OutputFormat`:
+  [MetricStreamOutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#metricstreamoutputformat)
 
 ## MetricStreamFilterTypeDef
 
@@ -728,12 +681,9 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricStreamFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Namespace`: `str`
 
+- `Namespace`: `str`
 
 ## MetricTypeDef
 
@@ -741,14 +691,12 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import MetricTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Dimensions`: `List["DimensionTypeDef"]`
-
+- `Dimensions`:
+  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -756,14 +704,11 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PartialFailureTypeDef
 
@@ -771,15 +716,12 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import PartialFailureTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FailureResource`: `str`
 - `ExceptionType`: `str`
 - `FailureCode`: `str`
 - `FailureDescription`: `str`
-
 
 ## PutDashboardOutputTypeDef
 
@@ -787,13 +729,12 @@ Optional fields:
 from mypy_boto3_cloudwatch.type_defs import PutDashboardOutputTypeDef
 ```
 
-
 Required fields:
-- `DashboardValidationMessages`: `List["DashboardValidationMessageTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `DashboardValidationMessages`:
+  `List`\[[DashboardValidationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dashboardvalidationmessagetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## PutMetricStreamOutputTypeDef
 
@@ -801,13 +742,11 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import PutMetricStreamOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#responsemetadata)
 
 ## RangeTypeDef
 
@@ -815,13 +754,10 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import RangeTypeDef
 ```
 
-
 Required fields:
+
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
-
-
 
 ## ResponseMetadata
 
@@ -829,16 +765,13 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## StatisticSetTypeDef
 
@@ -846,15 +779,12 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import StatisticSetTypeDef
 ```
 
-
 Required fields:
+
 - `SampleCount`: `float`
 - `Sum`: `float`
 - `Minimum`: `float`
 - `Maximum`: `float`
-
-
-
 
 ## TagTypeDef
 
@@ -862,13 +792,10 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## WaiterConfigTypeDef
 
@@ -876,10 +803,7 @@ Required fields:
 from mypy_boto3_cloudwatch.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

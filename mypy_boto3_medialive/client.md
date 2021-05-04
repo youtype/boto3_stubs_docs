@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaLive](./README.md) > MediaLiveClient
 
-Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+Auto-generated documentation for
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+type annotations stubs module
+[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 - [MediaLiveClient for boto3 MediaLive module](#medialiveclient-for-boto3-medialive-module)
   - [MediaLiveClient](#medialiveclient)
@@ -83,12 +85,13 @@ def get_medialive_client() -> MediaLiveClient:
     return boto3.client("medialive")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
+Boto3 documentation:
+[MediaLive.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_medialive.client import Exceptions
@@ -96,7 +99,6 @@ from mypy_boto3_medialive.client import Exceptions
 def handle_error(exc: Exceptions.BadGatewayException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -111,967 +113,1022 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnprocessableEntityException`
 
-
 ## Methods
-
 
 ### accept_input_device_transfer
 
-Type annotations for `boto3.client("medialive").accept_input_device_transfer` method.
+Type annotations for `boto3.client("medialive").accept_input_device_transfer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer]
+Boto3 documentation:
+[MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
 
-```python
-def accept_input_device_transfer(
-    self,
-    InputDeviceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_delete
 
 Type annotations for `boto3.client("medialive").batch_delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete]
+Boto3 documentation:
+[MediaLive.Client.batch_delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete)
 
-```python
-def batch_delete(
-    self,
-    ChannelIds: List[str] = None,
-    InputIds: List[str] = None,
-    InputSecurityGroupIds: List[str] = None,
-    MultiplexIds: List[str] = None
-) -> BatchDeleteResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelIds`: `List`\[`str`\]
+- `InputIds`: `List`\[`str`\]
+- `InputSecurityGroupIds`: `List`\[`str`\]
+- `MultiplexIds`: `List`\[`str`\]
+
+Returns
+[BatchDeleteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchdeleteresponsetypedef).
 
 ### batch_start
 
 Type annotations for `boto3.client("medialive").batch_start` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start]
+Boto3 documentation:
+[MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
 
-```python
-def batch_start(
-    self,
-    ChannelIds: List[str] = None,
-    MultiplexIds: List[str] = None
-) -> BatchStartResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelIds`: `List`\[`str`\]
+- `MultiplexIds`: `List`\[`str`\]
+
+Returns
+[BatchStartResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchstartresponsetypedef).
 
 ### batch_stop
 
 Type annotations for `boto3.client("medialive").batch_stop` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop]
+Boto3 documentation:
+[MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
 
-```python
-def batch_stop(
-    self,
-    ChannelIds: List[str] = None,
-    MultiplexIds: List[str] = None
-) -> BatchStopResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelIds`: `List`\[`str`\]
+- `MultiplexIds`: `List`\[`str`\]
+
+Returns
+[BatchStopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchstopresponsetypedef).
 
 ### batch_update_schedule
 
 Type annotations for `boto3.client("medialive").batch_update_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule]
+Boto3 documentation:
+[MediaLive.Client.batch_update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
 
-```python
-def batch_update_schedule(
-    self,
-    ChannelId: str,
-    Creates: BatchScheduleActionCreateRequestTypeDef = None,
-    Deletes: BatchScheduleActionDeleteRequestTypeDef = None
-) -> BatchUpdateScheduleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+- `Creates`:
+  [BatchScheduleActionCreateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchscheduleactioncreaterequesttypedef)
+- `Deletes`:
+  [BatchScheduleActionDeleteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchscheduleactiondeleterequesttypedef)
+
+Returns
+[BatchUpdateScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchupdatescheduleresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("medialive").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate]
+Boto3 documentation:
+[MediaLive.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_input_device_transfer
 
-Type annotations for `boto3.client("medialive").cancel_input_device_transfer` method.
+Type annotations for `boto3.client("medialive").cancel_input_device_transfer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer]
+Boto3 documentation:
+[MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
 
-```python
-def cancel_input_device_transfer(
-    self,
-    InputDeviceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_channel
 
 Type annotations for `boto3.client("medialive").create_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel]
+Boto3 documentation:
+[MediaLive.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel)
 
-```python
-def create_channel(
-    self,
-    CdiInputSpecification: "CdiInputSpecificationTypeDef" = None,
-    ChannelClass: ChannelClass = None,
-    Destinations: List["OutputDestinationTypeDef"] = None,
-    EncoderSettings: "EncoderSettingsTypeDef" = None,
-    InputAttachments: List["InputAttachmentTypeDef"] = None,
-    InputSpecification: "InputSpecificationTypeDef" = None,
-    LogLevel: LogLevel = None,
-    Name: str = None,
-    RequestId: str = None,
-    Reserved: str = None,
-    RoleArn: str = None,
-    Tags: Dict[str, str] = None,
-    Vpc: VpcOutputSettingsTypeDef = None
-) -> CreateChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CdiInputSpecification`:
+  [CdiInputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#cdiinputspecificationtypedef)
+- `ChannelClass`:
+  [ChannelClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#channelclass)
+- `Destinations`:
+  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+- `EncoderSettings`:
+  [EncoderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#encodersettingstypedef)
+- `InputAttachments`:
+  `List`\[[InputAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputattachmenttypedef)\]
+- `InputSpecification`:
+  [InputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputspecificationtypedef)
+- `LogLevel`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#loglevel)
+- `Name`: `str`
+- `RequestId`: `str`
+- `Reserved`: `str`
+- `RoleArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Vpc`:
+  [VpcOutputSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#vpcoutputsettingstypedef)
+
+Returns
+[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createchannelresponsetypedef).
 
 ### create_input
 
 Type annotations for `boto3.client("medialive").create_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input]
+Boto3 documentation:
+[MediaLive.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input)
 
-```python
-def create_input(
-    self,
-    Destinations: List[InputDestinationRequestTypeDef] = None,
-    InputDevices: List["InputDeviceSettingsTypeDef"] = None,
-    InputSecurityGroups: List[str] = None,
-    MediaConnectFlows: List[MediaConnectFlowRequestTypeDef] = None,
-    Name: str = None,
-    RequestId: str = None,
-    RoleArn: str = None,
-    Sources: List[InputSourceRequestTypeDef] = None,
-    Tags: Dict[str, str] = None,
-    Type: InputType = None,
-    Vpc: InputVpcRequestTypeDef = None
-) -> CreateInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Destinations`:
+  `List`\[[InputDestinationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdestinationrequesttypedef)\]
+- `InputDevices`:
+  `List`\[[InputDeviceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdevicesettingstypedef)\]
+- `InputSecurityGroups`: `List`\[`str`\]
+- `MediaConnectFlows`:
+  `List`\[[MediaConnectFlowRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#mediaconnectflowrequesttypedef)\]
+- `Name`: `str`
+- `RequestId`: `str`
+- `RoleArn`: `str`
+- `Sources`:
+  `List`\[[InputSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputsourcerequesttypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Type`:
+  [InputType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#inputtype)
+- `Vpc`:
+  [InputVpcRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputvpcrequesttypedef)
+
+Returns
+[CreateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createinputresponsetypedef).
 
 ### create_input_security_group
 
-Type annotations for `boto3.client("medialive").create_input_security_group` method.
+Type annotations for `boto3.client("medialive").create_input_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group]
+Boto3 documentation:
+[MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
 
-```python
-def create_input_security_group(
-    self,
-    Tags: Dict[str, str] = None,
-    WhitelistRules: List[InputWhitelistRuleCidrTypeDef] = None
-) -> CreateInputSecurityGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+- `WhitelistRules`:
+  `List`\[[InputWhitelistRuleCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputwhitelistrulecidrtypedef)\]
+
+Returns
+[CreateInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createinputsecuritygroupresponsetypedef).
 
 ### create_multiplex
 
 Type annotations for `boto3.client("medialive").create_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex]
+Boto3 documentation:
+[MediaLive.Client.create_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex)
 
-```python
-def create_multiplex(
-    self,
-    AvailabilityZones: List[str],
-    MultiplexSettings: "MultiplexSettingsTypeDef",
-    Name: str,
-    RequestId: str,
-    Tags: Dict[str, str] = None
-) -> CreateMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AvailabilityZones`: `List`\[`str`\] *(required)*
+- `MultiplexSettings`:
+  [MultiplexSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexsettingstypedef)
+  *(required)*
+- `Name`: `str` *(required)*
+- `RequestId`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createmultiplexresponsetypedef).
 
 ### create_multiplex_program
 
-Type annotations for `boto3.client("medialive").create_multiplex_program` method.
+Type annotations for `boto3.client("medialive").create_multiplex_program`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program]
+Boto3 documentation:
+[MediaLive.Client.create_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
 
-```python
-def create_multiplex_program(
-    self,
-    MultiplexId: str,
-    MultiplexProgramSettings: "MultiplexProgramSettingsTypeDef",
-    ProgramName: str,
-    RequestId: str
-) -> CreateMultiplexProgramResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `MultiplexProgramSettings`:
+  [MultiplexProgramSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexprogramsettingstypedef)
+  *(required)*
+- `ProgramName`: `str` *(required)*
+- `RequestId`: `str` *(required)*
+
+Returns
+[CreateMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createmultiplexprogramresponsetypedef).
 
 ### create_partner_input
 
 Type annotations for `boto3.client("medialive").create_partner_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input]
+Boto3 documentation:
+[MediaLive.Client.create_partner_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input)
 
-```python
-def create_partner_input(
-    self,
-    InputId: str,
-    RequestId: str = None,
-    Tags: Dict[str, str] = None
-) -> CreatePartnerInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputId`: `str` *(required)*
+- `RequestId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreatePartnerInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createpartnerinputresponsetypedef).
 
 ### create_tags
 
 Type annotations for `boto3.client("medialive").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags]
+Boto3 documentation:
+[MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
 
-```python
-def create_tags(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ### delete_channel
 
 Type annotations for `boto3.client("medialive").delete_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel]
+Boto3 documentation:
+[MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
 
-```python
-def delete_channel(
-    self,
-    ChannelId: str
-) -> DeleteChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+
+Returns
+[DeleteChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletechannelresponsetypedef).
 
 ### delete_input
 
 Type annotations for `boto3.client("medialive").delete_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input]
+Boto3 documentation:
+[MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
 
-```python
-def delete_input(
-    self,
-    InputId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_input_security_group
 
-Type annotations for `boto3.client("medialive").delete_input_security_group` method.
+Type annotations for `boto3.client("medialive").delete_input_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group]
+Boto3 documentation:
+[MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
 
-```python
-def delete_input_security_group(
-    self,
-    InputSecurityGroupId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputSecurityGroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_multiplex
 
 Type annotations for `boto3.client("medialive").delete_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex]
+Boto3 documentation:
+[MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
 
-```python
-def delete_multiplex(
-    self,
-    MultiplexId: str
-) -> DeleteMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+
+Returns
+[DeleteMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletemultiplexresponsetypedef).
 
 ### delete_multiplex_program
 
-Type annotations for `boto3.client("medialive").delete_multiplex_program` method.
+Type annotations for `boto3.client("medialive").delete_multiplex_program`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program]
+Boto3 documentation:
+[MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
 
-```python
-def delete_multiplex_program(
-    self,
-    MultiplexId: str,
-    ProgramName: str
-) -> DeleteMultiplexProgramResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `ProgramName`: `str` *(required)*
+
+Returns
+[DeleteMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletemultiplexprogramresponsetypedef).
 
 ### delete_reservation
 
 Type annotations for `boto3.client("medialive").delete_reservation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation]
+Boto3 documentation:
+[MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
 
-```python
-def delete_reservation(
-    self,
-    ReservationId: str
-) -> DeleteReservationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservationId`: `str` *(required)*
+
+Returns
+[DeleteReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletereservationresponsetypedef).
 
 ### delete_schedule
 
 Type annotations for `boto3.client("medialive").delete_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule]
+Boto3 documentation:
+[MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
 
-```python
-def delete_schedule(
-    self,
-    ChannelId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tags
 
 Type annotations for `boto3.client("medialive").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags]
+Boto3 documentation:
+[MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### describe_channel
 
 Type annotations for `boto3.client("medialive").describe_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel]
+Boto3 documentation:
+[MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
 
-```python
-def describe_channel(
-    self,
-    ChannelId: str
-) -> DescribeChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+
+Returns
+[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describechannelresponsetypedef).
 
 ### describe_input
 
 Type annotations for `boto3.client("medialive").describe_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input]
+Boto3 documentation:
+[MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
 
-```python
-def describe_input(
-    self,
-    InputId: str
-) -> DescribeInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputId`: `str` *(required)*
+
+Returns
+[DescribeInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputresponsetypedef).
 
 ### describe_input_device
 
 Type annotations for `boto3.client("medialive").describe_input_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device]
+Boto3 documentation:
+[MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
 
-```python
-def describe_input_device(
-    self,
-    InputDeviceId: str
-) -> DescribeInputDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+
+Returns
+[DescribeInputDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputdeviceresponsetypedef).
 
 ### describe_input_device_thumbnail
 
-Type annotations for `boto3.client("medialive").describe_input_device_thumbnail` method.
+Type annotations for
+`boto3.client("medialive").describe_input_device_thumbnail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail]
+Boto3 documentation:
+[MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
 
-```python
-def describe_input_device_thumbnail(
-    self,
-    InputDeviceId: str,
-    Accept: Literal['image/jpeg']
-) -> DescribeInputDeviceThumbnailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+- `Accept`: `Literal['image/jpeg']` *(required)*
+
+Returns
+[DescribeInputDeviceThumbnailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputdevicethumbnailresponsetypedef).
 
 ### describe_input_security_group
 
-Type annotations for `boto3.client("medialive").describe_input_security_group` method.
+Type annotations for `boto3.client("medialive").describe_input_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group]
+Boto3 documentation:
+[MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
 
-```python
-def describe_input_security_group(
-    self,
-    InputSecurityGroupId: str
-) -> DescribeInputSecurityGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputSecurityGroupId`: `str` *(required)*
+
+Returns
+[DescribeInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputsecuritygroupresponsetypedef).
 
 ### describe_multiplex
 
 Type annotations for `boto3.client("medialive").describe_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex]
+Boto3 documentation:
+[MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
 
-```python
-def describe_multiplex(
-    self,
-    MultiplexId: str
-) -> DescribeMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+
+Returns
+[DescribeMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describemultiplexresponsetypedef).
 
 ### describe_multiplex_program
 
-Type annotations for `boto3.client("medialive").describe_multiplex_program` method.
+Type annotations for `boto3.client("medialive").describe_multiplex_program`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program]
+Boto3 documentation:
+[MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
 
-```python
-def describe_multiplex_program(
-    self,
-    MultiplexId: str,
-    ProgramName: str
-) -> DescribeMultiplexProgramResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `ProgramName`: `str` *(required)*
+
+Returns
+[DescribeMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describemultiplexprogramresponsetypedef).
 
 ### describe_offering
 
 Type annotations for `boto3.client("medialive").describe_offering` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering]
+Boto3 documentation:
+[MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
 
-```python
-def describe_offering(
-    self,
-    OfferingId: str
-) -> DescribeOfferingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OfferingId`: `str` *(required)*
+
+Returns
+[DescribeOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeofferingresponsetypedef).
 
 ### describe_reservation
 
 Type annotations for `boto3.client("medialive").describe_reservation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation]
+Boto3 documentation:
+[MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
 
-```python
-def describe_reservation(
-    self,
-    ReservationId: str
-) -> DescribeReservationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservationId`: `str` *(required)*
+
+Returns
+[DescribeReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describereservationresponsetypedef).
 
 ### describe_schedule
 
 Type annotations for `boto3.client("medialive").describe_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule]
+Boto3 documentation:
+[MediaLive.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule)
 
-```python
-def describe_schedule(
-    self,
-    ChannelId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeScheduleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describescheduleresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("medialive").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url]
+Boto3 documentation:
+[MediaLive.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_channels
 
 Type annotations for `boto3.client("medialive").list_channels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels]
+Boto3 documentation:
+[MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
 
-```python
-def list_channels(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listchannelsresponsetypedef).
 
 ### list_input_device_transfers
 
-Type annotations for `boto3.client("medialive").list_input_device_transfers` method.
+Type annotations for `boto3.client("medialive").list_input_device_transfers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers]
+Boto3 documentation:
+[MediaLive.Client.list_input_device_transfers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
 
-```python
-def list_input_device_transfers(
-    self,
-    TransferType: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInputDeviceTransfersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransferType`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInputDeviceTransfersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicetransfersresponsetypedef).
 
 ### list_input_devices
 
 Type annotations for `boto3.client("medialive").list_input_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices]
+Boto3 documentation:
+[MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
 
-```python
-def list_input_devices(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInputDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInputDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicesresponsetypedef).
 
 ### list_input_security_groups
 
-Type annotations for `boto3.client("medialive").list_input_security_groups` method.
+Type annotations for `boto3.client("medialive").list_input_security_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups]
+Boto3 documentation:
+[MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
 
-```python
-def list_input_security_groups(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInputSecurityGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInputSecurityGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsecuritygroupsresponsetypedef).
 
 ### list_inputs
 
 Type annotations for `boto3.client("medialive").list_inputs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs]
+Boto3 documentation:
+[MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
 
-```python
-def list_inputs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInputsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsresponsetypedef).
 
 ### list_multiplex_programs
 
-Type annotations for `boto3.client("medialive").list_multiplex_programs` method.
+Type annotations for `boto3.client("medialive").list_multiplex_programs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs]
+Boto3 documentation:
+[MediaLive.Client.list_multiplex_programs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
 
-```python
-def list_multiplex_programs(
-    self,
-    MultiplexId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListMultiplexProgramsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMultiplexProgramsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexprogramsresponsetypedef).
 
 ### list_multiplexes
 
 Type annotations for `boto3.client("medialive").list_multiplexes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes]
+Boto3 documentation:
+[MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
 
-```python
-def list_multiplexes(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListMultiplexesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMultiplexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexesresponsetypedef).
 
 ### list_offerings
 
 Type annotations for `boto3.client("medialive").list_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings]
+Boto3 documentation:
+[MediaLive.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings)
 
-```python
-def list_offerings(
-    self,
-    ChannelClass: str = None,
-    ChannelConfiguration: str = None,
-    Codec: str = None,
-    Duration: str = None,
-    MaxResults: int = None,
-    MaximumBitrate: str = None,
-    MaximumFramerate: str = None,
-    NextToken: str = None,
-    Resolution: str = None,
-    ResourceType: str = None,
-    SpecialFeature: str = None,
-    VideoQuality: str = None
-) -> ListOfferingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelClass`: `str`
+- `ChannelConfiguration`: `str`
+- `Codec`: `str`
+- `Duration`: `str`
+- `MaxResults`: `int`
+- `MaximumBitrate`: `str`
+- `MaximumFramerate`: `str`
+- `NextToken`: `str`
+- `Resolution`: `str`
+- `ResourceType`: `str`
+- `SpecialFeature`: `str`
+- `VideoQuality`: `str`
+
+Returns
+[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listofferingsresponsetypedef).
 
 ### list_reservations
 
 Type annotations for `boto3.client("medialive").list_reservations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations]
+Boto3 documentation:
+[MediaLive.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations)
 
-```python
-def list_reservations(
-    self,
-    ChannelClass: str = None,
-    Codec: str = None,
-    MaxResults: int = None,
-    MaximumBitrate: str = None,
-    MaximumFramerate: str = None,
-    NextToken: str = None,
-    Resolution: str = None,
-    ResourceType: str = None,
-    SpecialFeature: str = None,
-    VideoQuality: str = None
-) -> ListReservationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelClass`: `str`
+- `Codec`: `str`
+- `MaxResults`: `int`
+- `MaximumBitrate`: `str`
+- `MaximumFramerate`: `str`
+- `NextToken`: `str`
+- `Resolution`: `str`
+- `ResourceType`: `str`
+- `SpecialFeature`: `str`
+- `VideoQuality`: `str`
+
+Returns
+[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource]
+Boto3 documentation:
+[MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
 Type annotations for `boto3.client("medialive").purchase_offering` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering]
+Boto3 documentation:
+[MediaLive.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering)
 
-```python
-def purchase_offering(
-    self,
-    Count: int,
-    OfferingId: str,
-    Name: str = None,
-    RequestId: str = None,
-    Start: str = None,
-    Tags: Dict[str, str] = None
-) -> PurchaseOfferingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Count`: `int` *(required)*
+- `OfferingId`: `str` *(required)*
+- `Name`: `str`
+- `RequestId`: `str`
+- `Start`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[PurchaseOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#purchaseofferingresponsetypedef).
 
 ### reject_input_device_transfer
 
-Type annotations for `boto3.client("medialive").reject_input_device_transfer` method.
+Type annotations for `boto3.client("medialive").reject_input_device_transfer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer]
+Boto3 documentation:
+[MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
 
-```python
-def reject_input_device_transfer(
-    self,
-    InputDeviceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_channel
 
 Type annotations for `boto3.client("medialive").start_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel]
+Boto3 documentation:
+[MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
 
-```python
-def start_channel(
-    self,
-    ChannelId: str
-) -> StartChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+
+Returns
+[StartChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#startchannelresponsetypedef).
 
 ### start_multiplex
 
 Type annotations for `boto3.client("medialive").start_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex]
+Boto3 documentation:
+[MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
 
-```python
-def start_multiplex(
-    self,
-    MultiplexId: str
-) -> StartMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+
+Returns
+[StartMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#startmultiplexresponsetypedef).
 
 ### stop_channel
 
 Type annotations for `boto3.client("medialive").stop_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel]
+Boto3 documentation:
+[MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
 
-```python
-def stop_channel(
-    self,
-    ChannelId: str
-) -> StopChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+
+Returns
+[StopChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#stopchannelresponsetypedef).
 
 ### stop_multiplex
 
 Type annotations for `boto3.client("medialive").stop_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex]
+Boto3 documentation:
+[MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
 
-```python
-def stop_multiplex(
-    self,
-    MultiplexId: str
-) -> StopMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+
+Returns
+[StopMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#stopmultiplexresponsetypedef).
 
 ### transfer_input_device
 
 Type annotations for `boto3.client("medialive").transfer_input_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device]
+Boto3 documentation:
+[MediaLive.Client.transfer_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
 
-```python
-def transfer_input_device(
-    self,
-    InputDeviceId: str,
-    TargetCustomerId: str = None,
-    TargetRegion: str = None,
-    TransferMessage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+- `TargetCustomerId`: `str`
+- `TargetRegion`: `str`
+- `TransferMessage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_channel
 
 Type annotations for `boto3.client("medialive").update_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel]
+Boto3 documentation:
+[MediaLive.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel)
 
-```python
-def update_channel(
-    self,
-    ChannelId: str,
-    CdiInputSpecification: "CdiInputSpecificationTypeDef" = None,
-    Destinations: List["OutputDestinationTypeDef"] = None,
-    EncoderSettings: "EncoderSettingsTypeDef" = None,
-    InputAttachments: List["InputAttachmentTypeDef"] = None,
-    InputSpecification: "InputSpecificationTypeDef" = None,
-    LogLevel: LogLevel = None,
-    Name: str = None,
-    RoleArn: str = None
-) -> UpdateChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelId`: `str` *(required)*
+- `CdiInputSpecification`:
+  [CdiInputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#cdiinputspecificationtypedef)
+- `Destinations`:
+  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+- `EncoderSettings`:
+  [EncoderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#encodersettingstypedef)
+- `InputAttachments`:
+  `List`\[[InputAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputattachmenttypedef)\]
+- `InputSpecification`:
+  [InputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputspecificationtypedef)
+- `LogLevel`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#loglevel)
+- `Name`: `str`
+- `RoleArn`: `str`
+
+Returns
+[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatechannelresponsetypedef).
 
 ### update_channel_class
 
 Type annotations for `boto3.client("medialive").update_channel_class` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class]
+Boto3 documentation:
+[MediaLive.Client.update_channel_class](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class)
 
-```python
-def update_channel_class(
-    self,
-    ChannelClass: ChannelClass,
-    ChannelId: str,
-    Destinations: List["OutputDestinationTypeDef"] = None
-) -> UpdateChannelClassResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelClass`:
+  [ChannelClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#channelclass)
+  *(required)*
+- `ChannelId`: `str` *(required)*
+- `Destinations`:
+  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+
+Returns
+[UpdateChannelClassResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatechannelclassresponsetypedef).
 
 ### update_input
 
 Type annotations for `boto3.client("medialive").update_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input]
+Boto3 documentation:
+[MediaLive.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input)
 
-```python
-def update_input(
-    self,
-    InputId: str,
-    Destinations: List[InputDestinationRequestTypeDef] = None,
-    InputDevices: List[InputDeviceRequestTypeDef] = None,
-    InputSecurityGroups: List[str] = None,
-    MediaConnectFlows: List[MediaConnectFlowRequestTypeDef] = None,
-    Name: str = None,
-    RoleArn: str = None,
-    Sources: List[InputSourceRequestTypeDef] = None
-) -> UpdateInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputId`: `str` *(required)*
+- `Destinations`:
+  `List`\[[InputDestinationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdestinationrequesttypedef)\]
+- `InputDevices`:
+  `List`\[[InputDeviceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdevicerequesttypedef)\]
+- `InputSecurityGroups`: `List`\[`str`\]
+- `MediaConnectFlows`:
+  `List`\[[MediaConnectFlowRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#mediaconnectflowrequesttypedef)\]
+- `Name`: `str`
+- `RoleArn`: `str`
+- `Sources`:
+  `List`\[[InputSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputsourcerequesttypedef)\]
+
+Returns
+[UpdateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputresponsetypedef).
 
 ### update_input_device
 
 Type annotations for `boto3.client("medialive").update_input_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device]
+Boto3 documentation:
+[MediaLive.Client.update_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device)
 
-```python
-def update_input_device(
-    self,
-    InputDeviceId: str,
-    HdDeviceSettings: InputDeviceConfigurableSettingsTypeDef = None,
-    Name: str = None,
-    UhdDeviceSettings: InputDeviceConfigurableSettingsTypeDef = None
-) -> UpdateInputDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDeviceId`: `str` *(required)*
+- `HdDeviceSettings`:
+  [InputDeviceConfigurableSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdeviceconfigurablesettingstypedef)
+- `Name`: `str`
+- `UhdDeviceSettings`:
+  [InputDeviceConfigurableSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdeviceconfigurablesettingstypedef)
+
+Returns
+[UpdateInputDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputdeviceresponsetypedef).
 
 ### update_input_security_group
 
-Type annotations for `boto3.client("medialive").update_input_security_group` method.
+Type annotations for `boto3.client("medialive").update_input_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group]
+Boto3 documentation:
+[MediaLive.Client.update_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
 
-```python
-def update_input_security_group(
-    self,
-    InputSecurityGroupId: str,
-    Tags: Dict[str, str] = None,
-    WhitelistRules: List[InputWhitelistRuleCidrTypeDef] = None
-) -> UpdateInputSecurityGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputSecurityGroupId`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+- `WhitelistRules`:
+  `List`\[[InputWhitelistRuleCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputwhitelistrulecidrtypedef)\]
+
+Returns
+[UpdateInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputsecuritygroupresponsetypedef).
 
 ### update_multiplex
 
 Type annotations for `boto3.client("medialive").update_multiplex` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex]
+Boto3 documentation:
+[MediaLive.Client.update_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex)
 
-```python
-def update_multiplex(
-    self,
-    MultiplexId: str,
-    MultiplexSettings: "MultiplexSettingsTypeDef" = None,
-    Name: str = None
-) -> UpdateMultiplexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `MultiplexSettings`:
+  [MultiplexSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexsettingstypedef)
+- `Name`: `str`
+
+Returns
+[UpdateMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatemultiplexresponsetypedef).
 
 ### update_multiplex_program
 
-Type annotations for `boto3.client("medialive").update_multiplex_program` method.
+Type annotations for `boto3.client("medialive").update_multiplex_program`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program]
+Boto3 documentation:
+[MediaLive.Client.update_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
 
-```python
-def update_multiplex_program(
-    self,
-    MultiplexId: str,
-    ProgramName: str,
-    MultiplexProgramSettings: "MultiplexProgramSettingsTypeDef" = None
-) -> UpdateMultiplexProgramResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MultiplexId`: `str` *(required)*
+- `ProgramName`: `str` *(required)*
+- `MultiplexProgramSettings`:
+  [MultiplexProgramSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexprogramsettingstypedef)
+
+Returns
+[UpdateMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatemultiplexprogramresponsetypedef).
 
 ### update_reservation
 
 Type annotations for `boto3.client("medialive").update_reservation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation]
+Boto3 documentation:
+[MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
 
-```python
-def update_reservation(
-    self,
-    ReservationId: str,
-    Name: str = None
-) -> UpdateReservationResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ReservationId`: `str` *(required)*
+- `Name`: `str`
 
+Returns
+[UpdateReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatereservationresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("medialive").get_paginator` method with overloads.
+Type annotations for `boto3.client("medialive").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_schedule")` -> [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
-- `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
-- `client.get_paginator("list_input_device_transfers")` -> [ListInputDeviceTransfersPaginator](./paginators.md#listinputdevicetransferspaginator)
-- `client.get_paginator("list_input_devices")` -> [ListInputDevicesPaginator](./paginators.md#listinputdevicespaginator)
-- `client.get_paginator("list_input_security_groups")` -> [ListInputSecurityGroupsPaginator](./paginators.md#listinputsecuritygroupspaginator)
-- `client.get_paginator("list_inputs")` -> [ListInputsPaginator](./paginators.md#listinputspaginator)
-- `client.get_paginator("list_multiplex_programs")` -> [ListMultiplexProgramsPaginator](./paginators.md#listmultiplexprogramspaginator)
-- `client.get_paginator("list_multiplexes")` -> [ListMultiplexesPaginator](./paginators.md#listmultiplexespaginator)
-- `client.get_paginator("list_offerings")` -> [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
-- `client.get_paginator("list_reservations")` -> [ListReservationsPaginator](./paginators.md#listreservationspaginator)
-
-
-
+- `client.get_paginator("describe_schedule")` ->
+  [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
+- `client.get_paginator("list_channels")` ->
+  [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_input_device_transfers")` ->
+  [ListInputDeviceTransfersPaginator](./paginators.md#listinputdevicetransferspaginator)
+- `client.get_paginator("list_input_devices")` ->
+  [ListInputDevicesPaginator](./paginators.md#listinputdevicespaginator)
+- `client.get_paginator("list_input_security_groups")` ->
+  [ListInputSecurityGroupsPaginator](./paginators.md#listinputsecuritygroupspaginator)
+- `client.get_paginator("list_inputs")` ->
+  [ListInputsPaginator](./paginators.md#listinputspaginator)
+- `client.get_paginator("list_multiplex_programs")` ->
+  [ListMultiplexProgramsPaginator](./paginators.md#listmultiplexprogramspaginator)
+- `client.get_paginator("list_multiplexes")` ->
+  [ListMultiplexesPaginator](./paginators.md#listmultiplexespaginator)
+- `client.get_paginator("list_offerings")` ->
+  [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+- `client.get_paginator("list_reservations")` ->
+  [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("medialive").get_waiter` method with overloads.
+Type annotations for `boto3.client("medialive").get_waiter` method with
+overloads.
 
-- `client.get_waiter("channel_created")` -> [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
-- `client.get_waiter("channel_deleted")` -> [ChannelDeletedWaiter](./waiters.md#channeldeletedwaiter)
-- `client.get_waiter("channel_running")` -> [ChannelRunningWaiter](./waiters.md#channelrunningwaiter)
-- `client.get_waiter("channel_stopped")` -> [ChannelStoppedWaiter](./waiters.md#channelstoppedwaiter)
-- `client.get_waiter("input_attached")` -> [InputAttachedWaiter](./waiters.md#inputattachedwaiter)
-- `client.get_waiter("input_deleted")` -> [InputDeletedWaiter](./waiters.md#inputdeletedwaiter)
-- `client.get_waiter("input_detached")` -> [InputDetachedWaiter](./waiters.md#inputdetachedwaiter)
-- `client.get_waiter("multiplex_created")` -> [MultiplexCreatedWaiter](./waiters.md#multiplexcreatedwaiter)
-- `client.get_waiter("multiplex_deleted")` -> [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
-- `client.get_waiter("multiplex_running")` -> [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
-- `client.get_waiter("multiplex_stopped")` -> [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
+- `client.get_waiter("channel_created")` ->
+  [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
+- `client.get_waiter("channel_deleted")` ->
+  [ChannelDeletedWaiter](./waiters.md#channeldeletedwaiter)
+- `client.get_waiter("channel_running")` ->
+  [ChannelRunningWaiter](./waiters.md#channelrunningwaiter)
+- `client.get_waiter("channel_stopped")` ->
+  [ChannelStoppedWaiter](./waiters.md#channelstoppedwaiter)
+- `client.get_waiter("input_attached")` ->
+  [InputAttachedWaiter](./waiters.md#inputattachedwaiter)
+- `client.get_waiter("input_deleted")` ->
+  [InputDeletedWaiter](./waiters.md#inputdeletedwaiter)
+- `client.get_waiter("input_detached")` ->
+  [InputDetachedWaiter](./waiters.md#inputdetachedwaiter)
+- `client.get_waiter("multiplex_created")` ->
+  [MultiplexCreatedWaiter](./waiters.md#multiplexcreatedwaiter)
+- `client.get_waiter("multiplex_deleted")` ->
+  [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
+- `client.get_waiter("multiplex_running")` ->
+  [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
+- `client.get_waiter("multiplex_stopped")` ->
+  [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)

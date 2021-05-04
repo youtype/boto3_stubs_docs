@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ForecastQueryService
 
-Auto-generated documentation for [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
-type annotations stubs module [mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
+Auto-generated documentation for
+[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
+type annotations stubs module
+[mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 ```bash
 pip install mypy-boto3-forecastquery
@@ -17,7 +19,8 @@ pip install mypy-boto3-forecastquery
 
 ## ForecastQueryServiceClient
 
-Type annotations for  `boto3.client("forecastquery")` as [ForecastQueryServiceClient](./client.md)
+Type annotations for `boto3.client("forecastquery")` as
+[ForecastQueryServiceClient](./client.md)
 
 Can be used directly:
 
@@ -25,20 +28,16 @@ Can be used directly:
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
 ```
 
-
 ForecastQueryServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [query_forecast](./client.md#query-forecast)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidInputException](./client.md#invalidinputexception)
 - [InvalidNextTokenException](./client.md#invalidnexttokenexception)
@@ -46,21 +45,10 @@ ForecastQueryServiceClient [exceptions](./client.md#exceptions)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

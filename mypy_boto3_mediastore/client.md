@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaStore](./README.md) > MediaStoreClient
 
-Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
-type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+Auto-generated documentation for
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+type annotations stubs module
+[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [MediaStoreClient for boto3 MediaStore module](#mediastoreclient-for-boto3-mediastore-module)
   - [MediaStoreClient](#mediastoreclient)
@@ -47,12 +49,13 @@ def get_mediastore_client() -> MediaStoreClient:
     return boto3.client("mediastore")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client)
+Boto3 documentation:
+[MediaStore.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mediastore.client import Exceptions
@@ -60,7 +63,6 @@ from mypy_boto3_mediastore.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -72,349 +74,341 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.PolicyNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mediastore").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.can_paginate]
+Boto3 documentation:
+[MediaStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_container
 
 Type annotations for `boto3.client("mediastore").create_container` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container]
+Boto3 documentation:
+[MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container)
 
-```python
-def create_container(
-    self,
-    ContainerName: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateContainerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateContainerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#createcontaineroutputtypedef).
 
 ### delete_container
 
 Type annotations for `boto3.client("mediastore").delete_container` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container]
+Boto3 documentation:
+[MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container)
 
-```python
-def delete_container(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_container_policy
 
-Type annotations for `boto3.client("mediastore").delete_container_policy` method.
+Type annotations for `boto3.client("mediastore").delete_container_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy]
+Boto3 documentation:
+[MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
 
-```python
-def delete_container_policy(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_cors_policy
 
 Type annotations for `boto3.client("mediastore").delete_cors_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy]
+Boto3 documentation:
+[MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
 
-```python
-def delete_cors_policy(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_lifecycle_policy
 
-Type annotations for `boto3.client("mediastore").delete_lifecycle_policy` method.
+Type annotations for `boto3.client("mediastore").delete_lifecycle_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy]
+Boto3 documentation:
+[MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
 
-```python
-def delete_lifecycle_policy(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_metric_policy
 
 Type annotations for `boto3.client("mediastore").delete_metric_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy]
+Boto3 documentation:
+[MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
 
-```python
-def delete_metric_policy(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_container
 
 Type annotations for `boto3.client("mediastore").describe_container` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container]
+Boto3 documentation:
+[MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container)
 
-```python
-def describe_container(
-    self,
-    ContainerName: str = None
-) -> DescribeContainerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str`
+
+Returns
+[DescribeContainerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#describecontaineroutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("mediastore").generate_presigned_url` method.
+Type annotations for `boto3.client("mediastore").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url]
+Boto3 documentation:
+[MediaStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_container_policy
 
 Type annotations for `boto3.client("mediastore").get_container_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy]
+Boto3 documentation:
+[MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
 
-```python
-def get_container_policy(
-    self,
-    ContainerName: str
-) -> GetContainerPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns
+[GetContainerPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getcontainerpolicyoutputtypedef).
 
 ### get_cors_policy
 
 Type annotations for `boto3.client("mediastore").get_cors_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy]
+Boto3 documentation:
+[MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
 
-```python
-def get_cors_policy(
-    self,
-    ContainerName: str
-) -> GetCorsPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns
+[GetCorsPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getcorspolicyoutputtypedef).
 
 ### get_lifecycle_policy
 
 Type annotations for `boto3.client("mediastore").get_lifecycle_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy]
+Boto3 documentation:
+[MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
 
-```python
-def get_lifecycle_policy(
-    self,
-    ContainerName: str
-) -> GetLifecyclePolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns
+[GetLifecyclePolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getlifecyclepolicyoutputtypedef).
 
 ### get_metric_policy
 
 Type annotations for `boto3.client("mediastore").get_metric_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy]
+Boto3 documentation:
+[MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
 
-```python
-def get_metric_policy(
-    self,
-    ContainerName: str
-) -> GetMetricPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns
+[GetMetricPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getmetricpolicyoutputtypedef).
 
 ### list_containers
 
 Type annotations for `boto3.client("mediastore").list_containers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers]
+Boto3 documentation:
+[MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers)
 
-```python
-def list_containers(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListContainersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListContainersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listcontainersoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("mediastore").list_tags_for_resource` method.
+Type annotations for `boto3.client("mediastore").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource]
+Boto3 documentation:
+[MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    Resource: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### put_container_policy
 
 Type annotations for `boto3.client("mediastore").put_container_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy]
+Boto3 documentation:
+[MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
 
-```python
-def put_container_policy(
-    self,
-    ContainerName: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_cors_policy
 
 Type annotations for `boto3.client("mediastore").put_cors_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy]
+Boto3 documentation:
+[MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
 
-```python
-def put_cors_policy(
-    self,
-    ContainerName: str,
-    CorsPolicy: List["CorsRuleTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+- `CorsPolicy`:
+  `List`\[[CorsRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#corsruletypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_lifecycle_policy
 
 Type annotations for `boto3.client("mediastore").put_lifecycle_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy]
+Boto3 documentation:
+[MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
 
-```python
-def put_lifecycle_policy(
-    self,
-    ContainerName: str,
-    LifecyclePolicy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+- `LifecyclePolicy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_metric_policy
 
 Type annotations for `boto3.client("mediastore").put_metric_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy]
+Boto3 documentation:
+[MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
 
-```python
-def put_metric_policy(
-    self,
-    ContainerName: str,
-    MetricPolicy: "MetricPolicyTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+- `MetricPolicy`:
+  [MetricPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#metricpolicytypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_access_logging
 
 Type annotations for `boto3.client("mediastore").start_access_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging]
+Boto3 documentation:
+[MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
 
-```python
-def start_access_logging(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_access_logging
 
 Type annotations for `boto3.client("mediastore").stop_access_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging]
+Boto3 documentation:
+[MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
 
-```python
-def stop_access_logging(
-    self,
-    ContainerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContainerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("mediastore").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource]
+Boto3 documentation:
+[MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    Resource: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("mediastore").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource]
+Boto3 documentation:
+[MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    Resource: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `Resource`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediastore").get_paginator` method with overloads.
+Type annotations for `boto3.client("mediastore").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_containers")` -> [ListContainersPaginator](./paginators.md#listcontainerspaginator)
-
-
+- `client.get_paginator("list_containers")` ->
+  [ListContainersPaginator](./paginators.md#listcontainerspaginator)

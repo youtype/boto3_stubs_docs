@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ResourceGroupsTaggingAPI
 
-Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
-type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+Auto-generated documentation for
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+type annotations stubs module
+[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 ```bash
 pip install mypy-boto3-resourcegroupstaggingapi
@@ -19,7 +21,8 @@ pip install mypy-boto3-resourcegroupstaggingapi
 
 ## ResourceGroupsTaggingAPIClient
 
-Type annotations for  `boto3.client("resourcegroupstaggingapi")` as [ResourceGroupsTaggingAPIClient](./client.md)
+Type annotations for `boto3.client("resourcegroupstaggingapi")` as
+[ResourceGroupsTaggingAPIClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 ```
 
-
 ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_report_creation](./client.md#describe-report-creation)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -45,10 +46,8 @@ ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
 - [tag_resources](./client.md#tag-resources)
 - [untag_resources](./client.md#untag-resources)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [ConstraintViolationException](./client.md#constraintviolationexception)
@@ -57,14 +56,10 @@ ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
 - [PaginationTokenExpiredException](./client.md#paginationtokenexpiredexception)
 - [ThrottledException](./client.md#throttledexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("resourcegroupstaggingapi").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("resourcegroupstaggingapi").get_paginator("...")`.
 
 Can be used directly:
 
@@ -76,11 +71,6 @@ from mypy_boto3_resourcegroupstaggingapi.paginators import GetComplianceSummaryP
 - [GetResourcesPaginator](./paginators.md#getresourcespaginator)
 - [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
 - [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -100,13 +90,10 @@ from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCode, ...
 - [GroupByAttribute](./literals.md#groupbyattribute)
 - [TargetIdType](./literals.md#targetidtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

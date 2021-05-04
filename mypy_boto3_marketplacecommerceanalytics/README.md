@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MarketplaceCommerceAnalytics
 
-Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
-type annotations stubs module [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+Auto-generated documentation for
+[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+type annotations stubs module
+[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 ```bash
 pip install mypy-boto3-marketplacecommerceanalytics
@@ -18,7 +20,8 @@ pip install mypy-boto3-marketplacecommerceanalytics
 
 ## MarketplaceCommerceAnalyticsClient
 
-Type annotations for  `boto3.client("marketplacecommerceanalytics")` as [MarketplaceCommerceAnalyticsClient](./client.md)
+Type annotations for `boto3.client("marketplacecommerceanalytics")` as
+[MarketplaceCommerceAnalyticsClient](./client.md)
 
 Can be used directly:
 
@@ -26,32 +29,19 @@ Can be used directly:
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
 ```
 
-
 MarketplaceCommerceAnalyticsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_data_set](./client.md#generate-data-set)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [start_support_data_export](./client.md#start-support-data-export)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [MarketplaceCommerceAnalyticsException](./client.md#marketplacecommerceanalyticsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -66,13 +56,10 @@ from mypy_boto3_marketplacecommerceanalytics.literals import DataSetType, ...
 - [DataSetType](./literals.md#datasettype)
 - [SupportDataSetType](./literals.md#supportdatasettype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

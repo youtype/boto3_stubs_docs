@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FMS](./README.md) > FMSClient
 
-Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+Auto-generated documentation for
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+type annotations stubs module
+[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [FMSClient for boto3 FMS module](#fmsclient-for-boto3-fms-module)
   - [FMSClient](#fmsclient)
@@ -52,12 +54,13 @@ def get_fms_client() -> FMSClient:
     return boto3.client("fms")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
+Boto3 documentation:
+[FMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_fms.client import Exceptions
@@ -65,7 +68,6 @@ from mypy_boto3_fms.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -77,435 +79,406 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### associate_admin_account
 
 Type annotations for `boto3.client("fms").associate_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account]
+Boto3 documentation:
+[FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
 
-```python
-def associate_admin_account(
-    self,
-    AdminAccount: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AdminAccount`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("fms").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate]
+Boto3 documentation:
+[FMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_apps_list
 
 Type annotations for `boto3.client("fms").delete_apps_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list]
+Boto3 documentation:
+[FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
 
-```python
-def delete_apps_list(
-    self,
-    ListId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ListId`: `str` *(required)*
 
 ### delete_notification_channel
 
 Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel]
-
-```python
-def delete_notification_channel(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[FMS.Client.delete_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel)
 
 ### delete_policy
 
 Type annotations for `boto3.client("fms").delete_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy]
+Boto3 documentation:
+[FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
 
-```python
-def delete_policy(
-    self,
-    PolicyId: str,
-    DeleteAllPolicyResources: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `DeleteAllPolicyResources`: `bool`
 
 ### delete_protocols_list
 
 Type annotations for `boto3.client("fms").delete_protocols_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list]
+Boto3 documentation:
+[FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
 
-```python
-def delete_protocols_list(
-    self,
-    ListId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ListId`: `str` *(required)*
 
 ### disassociate_admin_account
 
 Type annotations for `boto3.client("fms").disassociate_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account]
-
-```python
-def disassociate_admin_account(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("fms").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url]
+Boto3 documentation:
+[FMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_admin_account
 
 Type annotations for `boto3.client("fms").get_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account]
+Boto3 documentation:
+[FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
 
-```python
-def get_admin_account(
-    self
-) -> GetAdminAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getadminaccountresponsetypedef).
 
 ### get_apps_list
 
 Type annotations for `boto3.client("fms").get_apps_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list]
+Boto3 documentation:
+[FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
 
-```python
-def get_apps_list(
-    self,
-    ListId: str,
-    DefaultList: bool = None
-) -> GetAppsListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ListId`: `str` *(required)*
+- `DefaultList`: `bool`
+
+Returns
+[GetAppsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getappslistresponsetypedef).
 
 ### get_compliance_detail
 
 Type annotations for `boto3.client("fms").get_compliance_detail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail]
+Boto3 documentation:
+[FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
 
-```python
-def get_compliance_detail(
-    self,
-    PolicyId: str,
-    MemberAccount: str
-) -> GetComplianceDetailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `MemberAccount`: `str` *(required)*
+
+Returns
+[GetComplianceDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getcompliancedetailresponsetypedef).
 
 ### get_notification_channel
 
 Type annotations for `boto3.client("fms").get_notification_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel]
+Boto3 documentation:
+[FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
 
-```python
-def get_notification_channel(
-    self
-) -> GetNotificationChannelResponseTypeDef:
-    pass
-```
+Returns
+[GetNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getnotificationchannelresponsetypedef).
 
 ### get_policy
 
 Type annotations for `boto3.client("fms").get_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy]
+Boto3 documentation:
+[FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
 
-```python
-def get_policy(
-    self,
-    PolicyId: str
-) -> GetPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+
+Returns
+[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getpolicyresponsetypedef).
 
 ### get_protection_status
 
 Type annotations for `boto3.client("fms").get_protection_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status]
+Boto3 documentation:
+[FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
 
-```python
-def get_protection_status(
-    self,
-    PolicyId: str,
-    MemberAccountId: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetProtectionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `MemberAccountId`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetProtectionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getprotectionstatusresponsetypedef).
 
 ### get_protocols_list
 
 Type annotations for `boto3.client("fms").get_protocols_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list]
+Boto3 documentation:
+[FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
 
-```python
-def get_protocols_list(
-    self,
-    ListId: str,
-    DefaultList: bool = None
-) -> GetProtocolsListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ListId`: `str` *(required)*
+- `DefaultList`: `bool`
+
+Returns
+[GetProtocolsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getprotocolslistresponsetypedef).
 
 ### get_violation_details
 
 Type annotations for `boto3.client("fms").get_violation_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details]
+Boto3 documentation:
+[FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
 
-```python
-def get_violation_details(
-    self,
-    PolicyId: str,
-    MemberAccount: str,
-    ResourceId: str,
-    ResourceType: str
-) -> GetViolationDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `MemberAccount`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+
+Returns
+[GetViolationDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getviolationdetailsresponsetypedef).
 
 ### list_apps_lists
 
 Type annotations for `boto3.client("fms").list_apps_lists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists]
+Boto3 documentation:
+[FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
 
-```python
-def list_apps_lists(
-    self,
-    MaxResults: int,
-    DefaultLists: bool = None,
-    NextToken: str = None
-) -> ListAppsListsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int` *(required)*
+- `DefaultLists`: `bool`
+- `NextToken`: `str`
+
+Returns
+[ListAppsListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listappslistsresponsetypedef).
 
 ### list_compliance_status
 
 Type annotations for `boto3.client("fms").list_compliance_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status]
+Boto3 documentation:
+[FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
 
-```python
-def list_compliance_status(
-    self,
-    PolicyId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListComplianceStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListComplianceStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listcompliancestatusresponsetypedef).
 
 ### list_member_accounts
 
 Type annotations for `boto3.client("fms").list_member_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts]
+Boto3 documentation:
+[FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
 
-```python
-def list_member_accounts(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMemberAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMemberAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listmemberaccountsresponsetypedef).
 
 ### list_policies
 
 Type annotations for `boto3.client("fms").list_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies]
+Boto3 documentation:
+[FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
 
-```python
-def list_policies(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listpoliciesresponsetypedef).
 
 ### list_protocols_lists
 
 Type annotations for `boto3.client("fms").list_protocols_lists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists]
+Boto3 documentation:
+[FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
 
-```python
-def list_protocols_lists(
-    self,
-    MaxResults: int,
-    DefaultLists: bool = None,
-    NextToken: str = None
-) -> ListProtocolsListsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int` *(required)*
+- `DefaultLists`: `bool`
+- `NextToken`: `str`
+
+Returns
+[ListProtocolsListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listprotocolslistsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource]
+Boto3 documentation:
+[FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_apps_list
 
 Type annotations for `boto3.client("fms").put_apps_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list]
+Boto3 documentation:
+[FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
 
-```python
-def put_apps_list(
-    self,
-    AppsList: "AppsListDataTypeDef",
-    TagList: List["TagTypeDef"] = None
-) -> PutAppsListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppsList`:
+  [AppsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#appslistdatatypedef)
+  *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+
+Returns
+[PutAppsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putappslistresponsetypedef).
 
 ### put_notification_channel
 
 Type annotations for `boto3.client("fms").put_notification_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel]
+Boto3 documentation:
+[FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
 
-```python
-def put_notification_channel(
-    self,
-    SnsTopicArn: str,
-    SnsRoleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SnsTopicArn`: `str` *(required)*
+- `SnsRoleName`: `str` *(required)*
 
 ### put_policy
 
 Type annotations for `boto3.client("fms").put_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy]
+Boto3 documentation:
+[FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
 
-```python
-def put_policy(
-    self,
-    Policy: "PolicyTypeDef",
-    TagList: List["TagTypeDef"] = None
-) -> PutPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Policy`:
+  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policytypedef)
+  *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+
+Returns
+[PutPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putpolicyresponsetypedef).
 
 ### put_protocols_list
 
 Type annotations for `boto3.client("fms").put_protocols_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list]
+Boto3 documentation:
+[FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
 
-```python
-def put_protocols_list(
-    self,
-    ProtocolsList: "ProtocolsListDataTypeDef",
-    TagList: List["TagTypeDef"] = None
-) -> PutProtocolsListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProtocolsList`:
+  [ProtocolsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#protocolslistdatatypedef)
+  *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+
+Returns
+[PutProtocolsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putprotocolslistresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("fms").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource]
+Boto3 documentation:
+[FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    TagList: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("fms").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource]
+Boto3 documentation:
+[FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("fms").get_paginator` method with overloads.
 
-- `client.get_paginator("list_compliance_status")` -> [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
-- `client.get_paginator("list_member_accounts")` -> [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
-- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-
-
+- `client.get_paginator("list_compliance_status")` ->
+  [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
+- `client.get_paginator("list_member_accounts")` ->
+  [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+- `client.get_paginator("list_policies")` ->
+  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)

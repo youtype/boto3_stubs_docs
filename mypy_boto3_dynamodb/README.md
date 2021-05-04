@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DynamoDB
 
-Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+Auto-generated documentation for
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+type annotations stubs module
+[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 ```bash
 pip install mypy-boto3-dynamodb
@@ -23,7 +25,8 @@ pip install mypy-boto3-dynamodb
 
 ## DynamoDBClient
 
-Type annotations for  `boto3.client("dynamodb")` as [DynamoDBClient](./client.md)
+Type annotations for `boto3.client("dynamodb")` as
+[DynamoDBClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +34,10 @@ Can be used directly:
 from mypy_boto3_dynamodb.client import DynamoDBClient
 ```
 
-
 DynamoDBClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_execute_statement](./client.md#batch-execute-statement)
 - [batch_get_item](./client.md#batch-get-item)
 - [batch_write_item](./client.md#batch-write-item)
@@ -92,10 +93,8 @@ DynamoDBClient [exceptions](./client.md#exceptions)
 - [update_table_replica_auto_scaling](./client.md#update-table-replica-auto-scaling)
 - [update_time_to_live](./client.md#update-time-to-live)
 
-
-
-
 ### Exceptions
+
 - [BackupInUseException](./client.md#backupinuseexception)
 - [BackupNotFoundException](./client.md#backupnotfoundexception)
 - [ClientError](./client.md#clienterror)
@@ -127,19 +126,16 @@ DynamoDBClient [exceptions](./client.md#exceptions)
 - [TransactionConflictException](./client.md#transactionconflictexception)
 - [TransactionInProgressException](./client.md#transactioninprogressexception)
 
-
-
-
 ## DynamoDBServiceResource
 
-Type annotations for  `boto3.resource("dynamodb")` as [DynamoDBServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("dynamodb")` as
+[DynamoDBServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_dynamodb.service_resource import DynamoDBServiceResource
 ```
-
 
 ### Collections
 
@@ -153,9 +149,6 @@ from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection
 
 - [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresource.tables)
 
-
-
-
 ### Resources
 
 Type annotations for additional resources from `boto3.resource("dynamodb").*`.
@@ -168,13 +161,10 @@ from mypy_boto3_dynamodb.service_resource import Table, ...
 
 - [Table](./service_resource.md#table)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("dynamodb").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("dynamodb").get_paginator("...")`.
 
 Can be used directly:
 
@@ -188,12 +178,10 @@ from mypy_boto3_dynamodb.paginators import ListBackupsPaginator, ...
 - [QueryPaginator](./paginators.md#querypaginator)
 - [ScanPaginator](./paginators.md#scanpaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("dynamodb").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("dynamodb").get_waiter("...")`.
 
 Can be used directly:
 
@@ -203,9 +191,6 @@ from mypy_boto3_dynamodb.waiters import TableExistsWaiter, ...
 
 - [TableExistsWaiter](./waiters.md#tableexistswaiter)
 - [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)
-
-
-
 
 ## Literals
 
@@ -257,13 +242,10 @@ from mypy_boto3_dynamodb.literals import AttributeAction, ...
 - [TableStatus](./literals.md#tablestatus)
 - [TimeToLiveStatus](./literals.md#timetolivestatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

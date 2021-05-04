@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Structures
 
-Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+Auto-generated documentation for
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+type annotations stubs module
+[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [Typed dictionaries for boto3 PinpointEmail module](#typed-dictionaries-for-boto3-pinpointemail-module)
   - [BlacklistEntryTypeDef](#blacklistentrytypedef)
@@ -70,14 +72,11 @@ type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/proje
 from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RblName`: `str`
 - `ListingTime`: `datetime`
 - `Description`: `str`
-
 
 ## BodyTypeDef
 
@@ -85,13 +84,12 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import BodyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Text`: `"ContentTypeDef"`
-- `Html`: `"ContentTypeDef"`
 
+- `Text`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#contenttypedef)
+- `Html`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#contenttypedef)
 
 ## CloudWatchDestinationTypeDef
 
@@ -99,12 +97,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import CloudWatchDestinationTypeDef
 ```
 
-
 Required fields:
-- `DimensionConfigurations`: `List["CloudWatchDimensionConfigurationTypeDef"]`
 
-
-
+- `DimensionConfigurations`:
+  `List`\[[CloudWatchDimensionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#cloudwatchdimensionconfigurationtypedef)\]
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -112,14 +108,12 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import CloudWatchDimensionConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `DimensionName`: `str`
-- `DimensionValueSource`: `DimensionValueSource`
+- `DimensionValueSource`:
+  [DimensionValueSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#dimensionvaluesource)
 - `DefaultDimensionValue`: `str`
-
-
-
 
 ## ContentTypeDef
 
@@ -127,15 +121,13 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import ContentTypeDef
 ```
 
-
 Required fields:
+
 - `Data`: `str`
 
-
-
 Optional fields:
-- `Charset`: `str`
 
+- `Charset`: `str`
 
 ## CreateDeliverabilityTestReportResponseTypeDef
 
@@ -143,13 +135,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import CreateDeliverabilityTestReportResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ReportId`: `str`
-- `DeliverabilityTestStatus`: `DeliverabilityTestStatus`
-
-
-
+- `DeliverabilityTestStatus`:
+  [DeliverabilityTestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#deliverabilityteststatus)
 
 ## CreateEmailIdentityResponseTypeDef
 
@@ -157,14 +147,13 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import CreateEmailIdentityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityType`: `IdentityType`
-- `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: `"DkimAttributesTypeDef"`
 
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#identitytype)
+- `VerifiedForSendingStatus`: `bool`
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#dkimattributestypedef)
 
 ## DailyVolumeTypeDef
 
@@ -172,14 +161,13 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DailyVolumeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StartDate`: `datetime`
-- `VolumeStatistics`: `"VolumeStatisticsTypeDef"`
-- `DomainIspPlacements`: `List["DomainIspPlacementTypeDef"]`
 
+- `StartDate`: `datetime`
+- `VolumeStatistics`:
+  [VolumeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#volumestatisticstypedef)
+- `DomainIspPlacements`:
+  `List`\[[DomainIspPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domainispplacementtypedef)\]
 
 ## DedicatedIpTypeDef
 
@@ -187,17 +175,16 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DedicatedIpTypeDef
 ```
 
-
 Required fields:
+
 - `Ip`: `str`
-- `WarmupStatus`: `WarmupStatus`
+- `WarmupStatus`:
+  [WarmupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#warmupstatus)
 - `WarmupPercentage`: `int`
 
-
-
 Optional fields:
-- `PoolName`: `str`
 
+- `PoolName`: `str`
 
 ## DeliverabilityTestReportTypeDef
 
@@ -205,17 +192,15 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DeliverabilityTestReportTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReportId`: `str`
 - `ReportName`: `str`
 - `Subject`: `str`
 - `FromEmailAddress`: `str`
 - `CreateDate`: `datetime`
-- `DeliverabilityTestStatus`: `DeliverabilityTestStatus`
-
+- `DeliverabilityTestStatus`:
+  [DeliverabilityTestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#deliverabilityteststatus)
 
 ## DeliveryOptionsTypeDef
 
@@ -223,13 +208,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DeliveryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TlsPolicy`: `TlsPolicy`
-- `SendingPoolName`: `str`
 
+- `TlsPolicy`:
+  [TlsPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#tlspolicy)
+- `SendingPoolName`: `str`
 
 ## DestinationTypeDef
 
@@ -237,14 +220,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ToAddresses`: `List[str]`
-- `CcAddresses`: `List[str]`
-- `BccAddresses`: `List[str]`
 
+- `ToAddresses`: `List`\[`str`\]
+- `CcAddresses`: `List`\[`str`\]
+- `BccAddresses`: `List`\[`str`\]
 
 ## DkimAttributesTypeDef
 
@@ -252,14 +232,12 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DkimAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SigningEnabled`: `bool`
-- `Status`: `DkimStatus`
-- `Tokens`: `List[str]`
 
+- `SigningEnabled`: `bool`
+- `Status`:
+  [DkimStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#dkimstatus)
+- `Tokens`: `List`\[`str`\]
 
 ## DomainDeliverabilityCampaignTypeDef
 
@@ -267,15 +245,13 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DomainDeliverabilityCampaignTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CampaignId`: `str`
 - `ImageUrl`: `str`
 - `Subject`: `str`
 - `FromAddress`: `str`
-- `SendingIps`: `List[str]`
+- `SendingIps`: `List`\[`str`\]
 - `FirstSeenDateTime`: `datetime`
 - `LastSeenDateTime`: `datetime`
 - `InboxCount`: `int`
@@ -284,8 +260,7 @@ Optional fields:
 - `DeleteRate`: `float`
 - `ReadDeleteRate`: `float`
 - `ProjectedVolume`: `int`
-- `Esps`: `List[str]`
-
+- `Esps`: `List`\[`str`\]
 
 ## DomainDeliverabilityTrackingOptionTypeDef
 
@@ -293,14 +268,12 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DomainDeliverabilityTrackingOptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Domain`: `str`
 - `SubscriptionStartDate`: `datetime`
-- `InboxPlacementTrackingOption`: `"InboxPlacementTrackingOptionTypeDef"`
-
+- `InboxPlacementTrackingOption`:
+  [InboxPlacementTrackingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#inboxplacementtrackingoptiontypedef)
 
 ## DomainIspPlacementTypeDef
 
@@ -308,16 +281,13 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import DomainIspPlacementTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IspName`: `str`
 - `InboxRawCount`: `int`
 - `SpamRawCount`: `int`
 - `InboxPercentage`: `float`
 - `SpamPercentage`: `float`
-
 
 ## EmailContentTypeDef
 
@@ -325,14 +295,14 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import EmailContentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Simple`: `"MessageTypeDef"`
-- `Raw`: `"RawMessageTypeDef"`
-- `Template`: `"TemplateTypeDef"`
 
+- `Simple`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#messagetypedef)
+- `Raw`:
+  [RawMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#rawmessagetypedef)
+- `Template`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#templatetypedef)
 
 ## EventDestinationDefinitionTypeDef
 
@@ -340,17 +310,19 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import EventDestinationDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
-- `MatchingEventTypes`: `List[EventType]`
-- `KinesisFirehoseDestination`: `"KinesisFirehoseDestinationTypeDef"`
-- `CloudWatchDestination`: `"CloudWatchDestinationTypeDef"`
-- `SnsDestination`: `"SnsDestinationTypeDef"`
-- `PinpointDestination`: `"PinpointDestinationTypeDef"`
 
+- `Enabled`: `bool`
+- `MatchingEventTypes`:
+  `List`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#eventtype)\]
+- `KinesisFirehoseDestination`:
+  [KinesisFirehoseDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#kinesisfirehosedestinationtypedef)
+- `CloudWatchDestination`:
+  [CloudWatchDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#cloudwatchdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#snsdestinationtypedef)
+- `PinpointDestination`:
+  [PinpointDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#pinpointdestinationtypedef)
 
 ## EventDestinationTypeDef
 
@@ -358,20 +330,23 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import EventDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `MatchingEventTypes`: `List[EventType]`
-
-
+- `MatchingEventTypes`:
+  `List`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#eventtype)\]
 
 Optional fields:
-- `Enabled`: `bool`
-- `KinesisFirehoseDestination`: `"KinesisFirehoseDestinationTypeDef"`
-- `CloudWatchDestination`: `"CloudWatchDestinationTypeDef"`
-- `SnsDestination`: `"SnsDestinationTypeDef"`
-- `PinpointDestination`: `"PinpointDestinationTypeDef"`
 
+- `Enabled`: `bool`
+- `KinesisFirehoseDestination`:
+  [KinesisFirehoseDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#kinesisfirehosedestinationtypedef)
+- `CloudWatchDestination`:
+  [CloudWatchDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#cloudwatchdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#snsdestinationtypedef)
+- `PinpointDestination`:
+  [PinpointDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#pinpointdestinationtypedef)
 
 ## GetAccountResponseTypeDef
 
@@ -379,16 +354,14 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SendQuota`: `"SendQuotaTypeDef"`
+
+- `SendQuota`:
+  [SendQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#sendquotatypedef)
 - `SendingEnabled`: `bool`
 - `DedicatedIpAutoWarmupEnabled`: `bool`
 - `EnforcementStatus`: `str`
 - `ProductionAccessEnabled`: `bool`
-
 
 ## GetBlacklistReportsResponseTypeDef
 
@@ -396,12 +369,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetBlacklistReportsResponseTypeDef
 ```
 
-
 Required fields:
-- `BlacklistReport`: `Dict[str, List["BlacklistEntryTypeDef"]]`
 
-
-
+- `BlacklistReport`: `Dict`\[`str`,
+  `List`\[[BlacklistEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#blacklistentrytypedef)\]\]
 
 ## GetConfigurationSetEventDestinationsResponseTypeDef
 
@@ -409,12 +380,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventDestinations`: `List["EventDestinationTypeDef"]`
 
+- `EventDestinations`:
+  `List`\[[EventDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#eventdestinationtypedef)\]
 
 ## GetConfigurationSetResponseTypeDef
 
@@ -422,17 +391,19 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationSetName`: `str`
-- `TrackingOptions`: `"TrackingOptionsTypeDef"`
-- `DeliveryOptions`: `"DeliveryOptionsTypeDef"`
-- `ReputationOptions`: `"ReputationOptionsTypeDef"`
-- `SendingOptions`: `"SendingOptionsTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
 
+- `ConfigurationSetName`: `str`
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#trackingoptionstypedef)
+- `DeliveryOptions`:
+  [DeliveryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#deliveryoptionstypedef)
+- `ReputationOptions`:
+  [ReputationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#reputationoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#sendingoptionstypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
 
 ## GetDedicatedIpResponseTypeDef
 
@@ -440,12 +411,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DedicatedIp`: `"DedicatedIpTypeDef"`
 
+- `DedicatedIp`:
+  [DedicatedIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#dedicatediptypedef)
 
 ## GetDedicatedIpsResponseTypeDef
 
@@ -453,13 +422,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DedicatedIps`: `List["DedicatedIpTypeDef"]`
-- `NextToken`: `str`
 
+- `DedicatedIps`:
+  `List`\[[DedicatedIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#dedicatediptypedef)\]
+- `NextToken`: `str`
 
 ## GetDeliverabilityDashboardOptionsResponseTypeDef
 
@@ -467,18 +434,19 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDeliverabilityDashboardOptionsResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DashboardEnabled`: `bool`
 
-
-
 Optional fields:
-- `SubscriptionExpiryDate`: `datetime`
-- `AccountStatus`: `DeliverabilityDashboardAccountStatus`
-- `ActiveSubscribedDomains`: `List["DomainDeliverabilityTrackingOptionTypeDef"]`
-- `PendingExpirationSubscribedDomains`: `List["DomainDeliverabilityTrackingOptionTypeDef"]`
 
+- `SubscriptionExpiryDate`: `datetime`
+- `AccountStatus`:
+  [DeliverabilityDashboardAccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#deliverabilitydashboardaccountstatus)
+- `ActiveSubscribedDomains`:
+  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domaindeliverabilitytrackingoptiontypedef)\]
+- `PendingExpirationSubscribedDomains`:
+  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domaindeliverabilitytrackingoptiontypedef)\]
 
 ## GetDeliverabilityTestReportResponseTypeDef
 
@@ -486,18 +454,20 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDeliverabilityTestReportResponseTypeDef
 ```
 
-
 Required fields:
-- `DeliverabilityTestReport`: `"DeliverabilityTestReportTypeDef"`
-- `OverallPlacement`: `"PlacementStatisticsTypeDef"`
-- `IspPlacements`: `List["IspPlacementTypeDef"]`
 
-
+- `DeliverabilityTestReport`:
+  [DeliverabilityTestReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#deliverabilitytestreporttypedef)
+- `OverallPlacement`:
+  [PlacementStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#placementstatisticstypedef)
+- `IspPlacements`:
+  `List`\[[IspPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#ispplacementtypedef)\]
 
 Optional fields:
-- `Message`: `str`
-- `Tags`: `List["TagTypeDef"]`
 
+- `Message`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
 
 ## GetDomainDeliverabilityCampaignResponseTypeDef
 
@@ -505,12 +475,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDomainDeliverabilityCampaignResponseTypeDef
 ```
 
-
 Required fields:
-- `DomainDeliverabilityCampaign`: `"DomainDeliverabilityCampaignTypeDef"`
 
-
-
+- `DomainDeliverabilityCampaign`:
+  [DomainDeliverabilityCampaignTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domaindeliverabilitycampaigntypedef)
 
 ## GetDomainStatisticsReportResponseTypeDef
 
@@ -518,13 +486,12 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import GetDomainStatisticsReportResponseTypeDef
 ```
 
-
 Required fields:
-- `OverallVolume`: `"OverallVolumeTypeDef"`
-- `DailyVolumes`: `List["DailyVolumeTypeDef"]`
 
-
-
+- `OverallVolume`:
+  [OverallVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#overallvolumetypedef)
+- `DailyVolumes`:
+  `List`\[[DailyVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#dailyvolumetypedef)\]
 
 ## GetEmailIdentityResponseTypeDef
 
@@ -532,17 +499,18 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import GetEmailIdentityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityType`: `IdentityType`
+
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#identitytype)
 - `FeedbackForwardingStatus`: `bool`
 - `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: `"DkimAttributesTypeDef"`
-- `MailFromAttributes`: `"MailFromAttributesTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#dkimattributestypedef)
+- `MailFromAttributes`:
+  [MailFromAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#mailfromattributestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
 
 ## IdentityInfoTypeDef
 
@@ -550,14 +518,12 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import IdentityInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityType`: `IdentityType`
+
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#identitytype)
 - `IdentityName`: `str`
 - `SendingEnabled`: `bool`
-
 
 ## InboxPlacementTrackingOptionTypeDef
 
@@ -565,13 +531,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import InboxPlacementTrackingOptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Global`: `bool`
-- `TrackedIsps`: `List[str]`
 
+- `Global`: `bool`
+- `TrackedIsps`: `List`\[`str`\]
 
 ## IspPlacementTypeDef
 
@@ -579,13 +542,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import IspPlacementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IspName`: `str`
-- `PlacementStatistics`: `"PlacementStatisticsTypeDef"`
 
+- `IspName`: `str`
+- `PlacementStatistics`:
+  [PlacementStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#placementstatisticstypedef)
 
 ## KinesisFirehoseDestinationTypeDef
 
@@ -593,13 +554,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import KinesisFirehoseDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `IamRoleArn`: `str`
 - `DeliveryStreamArn`: `str`
-
-
-
 
 ## ListConfigurationSetsResponseTypeDef
 
@@ -607,13 +565,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import ListConfigurationSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationSets`: `List[str]`
-- `NextToken`: `str`
 
+- `ConfigurationSets`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListDedicatedIpPoolsResponseTypeDef
 
@@ -621,13 +576,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import ListDedicatedIpPoolsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DedicatedIpPools`: `List[str]`
-- `NextToken`: `str`
 
+- `DedicatedIpPools`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListDeliverabilityTestReportsResponseTypeDef
 
@@ -635,15 +587,14 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import ListDeliverabilityTestReportsResponseTypeDef
 ```
 
-
 Required fields:
-- `DeliverabilityTestReports`: `List["DeliverabilityTestReportTypeDef"]`
 
-
+- `DeliverabilityTestReports`:
+  `List`\[[DeliverabilityTestReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#deliverabilitytestreporttypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListDomainDeliverabilityCampaignsResponseTypeDef
 
@@ -651,15 +602,14 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import ListDomainDeliverabilityCampaignsResponseTypeDef
 ```
 
-
 Required fields:
-- `DomainDeliverabilityCampaigns`: `List["DomainDeliverabilityCampaignTypeDef"]`
 
-
+- `DomainDeliverabilityCampaigns`:
+  `List`\[[DomainDeliverabilityCampaignTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domaindeliverabilitycampaigntypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListEmailIdentitiesResponseTypeDef
 
@@ -667,13 +617,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import ListEmailIdentitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EmailIdentities`: `List["IdentityInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `EmailIdentities`:
+  `List`\[[IdentityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#identityinfotypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -681,12 +629,10 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
 
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
 
 ## MailFromAttributesTypeDef
 
@@ -694,14 +640,13 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import MailFromAttributesTypeDef
 ```
 
-
 Required fields:
+
 - `MailFromDomain`: `str`
-- `MailFromDomainStatus`: `MailFromDomainStatus`
-- `BehaviorOnMxFailure`: `BehaviorOnMxFailure`
-
-
-
+- `MailFromDomainStatus`:
+  [MailFromDomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#mailfromdomainstatus)
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#behavioronmxfailure)
 
 ## MessageTagTypeDef
 
@@ -709,13 +654,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import MessageTagTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## MessageTypeDef
 
@@ -723,13 +665,12 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import MessageTypeDef
 ```
 
-
 Required fields:
-- `Subject`: `"ContentTypeDef"`
-- `Body`: `"BodyTypeDef"`
 
-
-
+- `Subject`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#contenttypedef)
+- `Body`:
+  [BodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#bodytypedef)
 
 ## OverallVolumeTypeDef
 
@@ -737,14 +678,13 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import OverallVolumeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VolumeStatistics`: `"VolumeStatisticsTypeDef"`
-- `ReadRatePercent`: `float`
-- `DomainIspPlacements`: `List["DomainIspPlacementTypeDef"]`
 
+- `VolumeStatistics`:
+  [VolumeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#volumestatisticstypedef)
+- `ReadRatePercent`: `float`
+- `DomainIspPlacements`:
+  `List`\[[DomainIspPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domainispplacementtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -752,14 +692,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PinpointDestinationTypeDef
 
@@ -767,12 +704,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import PinpointDestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationArn`: `str`
 
+- `ApplicationArn`: `str`
 
 ## PlacementStatisticsTypeDef
 
@@ -780,16 +714,13 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import PlacementStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InboxPercentage`: `float`
 - `SpamPercentage`: `float`
 - `MissingPercentage`: `float`
 - `SpfPercentage`: `float`
 - `DkimPercentage`: `float`
-
 
 ## RawMessageTypeDef
 
@@ -797,12 +728,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import RawMessageTypeDef
 ```
 
-
 Required fields:
-- `Data`: `Union[bytes, IO[bytes]]`
 
-
-
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## ReputationOptionsTypeDef
 
@@ -810,13 +738,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import ReputationOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReputationMetricsEnabled`: `bool`
 - `LastFreshStart`: `datetime`
-
 
 ## SendEmailResponseTypeDef
 
@@ -824,12 +749,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import SendEmailResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageId`: `str`
 
+- `MessageId`: `str`
 
 ## SendQuotaTypeDef
 
@@ -837,14 +759,11 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import SendQuotaTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Max24HourSend`: `float`
 - `MaxSendRate`: `float`
 - `SentLast24Hours`: `float`
-
 
 ## SendingOptionsTypeDef
 
@@ -852,12 +771,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import SendingOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SendingEnabled`: `bool`
 
+- `SendingEnabled`: `bool`
 
 ## SnsDestinationTypeDef
 
@@ -865,12 +781,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import SnsDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `TopicArn`: `str`
-
-
-
 
 ## TagTypeDef
 
@@ -878,13 +791,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TemplateTypeDef
 
@@ -892,13 +802,10 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import TemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TemplateArn`: `str`
 - `TemplateData`: `str`
-
 
 ## TrackingOptionsTypeDef
 
@@ -906,12 +813,9 @@ Optional fields:
 from mypy_boto3_pinpoint_email.type_defs import TrackingOptionsTypeDef
 ```
 
-
 Required fields:
+
 - `CustomRedirectDomain`: `str`
-
-
-
 
 ## VolumeStatisticsTypeDef
 
@@ -919,12 +823,9 @@ Required fields:
 from mypy_boto3_pinpoint_email.type_defs import VolumeStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InboxRawCount`: `int`
 - `SpamRawCount`: `int`
 - `ProjectedInbox`: `int`
 - `ProjectedSpam`: `int`
-

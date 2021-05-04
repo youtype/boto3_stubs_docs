@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EventBridge
 
-Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+Auto-generated documentation for
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+type annotations stubs module
+[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
 ```bash
 pip install mypy-boto3-events
@@ -19,7 +21,8 @@ pip install mypy-boto3-events
 
 ## EventBridgeClient
 
-Type annotations for  `boto3.client("events")` as [EventBridgeClient](./client.md)
+Type annotations for `boto3.client("events")` as
+[EventBridgeClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_events.client import EventBridgeClient
 ```
 
-
 EventBridgeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [activate_event_source](./client.md#activate-event-source)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_replay](./client.md#cancel-replay)
@@ -88,10 +89,8 @@ EventBridgeClient [exceptions](./client.md#exceptions)
 - [update_archive](./client.md#update-archive)
 - [update_connection](./client.md#update-connection)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [IllegalStatusException](./client.md#illegalstatusexception)
@@ -105,14 +104,10 @@ EventBridgeClient [exceptions](./client.md#exceptions)
 - [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("events").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("events").get_paginator("...")`.
 
 Can be used directly:
 
@@ -123,11 +118,6 @@ from mypy_boto3_events.paginators import ListRuleNamesByTargetPaginator, ...
 - [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
 - [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -154,13 +144,10 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethod, ...
 - [ReplayState](./literals.md#replaystate)
 - [RuleState](./literals.md#rulestate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

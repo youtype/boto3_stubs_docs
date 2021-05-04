@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTFleetHub](./README.md) > IoTFleetHubClient
 
-Auto-generated documentation for [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
-type annotations stubs module [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+Auto-generated documentation for
+[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
+type annotations stubs module
+[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 - [IoTFleetHubClient for boto3 IoTFleetHub module](#iotfleethubclient-for-boto3-iotfleethub-module)
   - [IoTFleetHubClient](#iotfleethubclient)
@@ -34,12 +36,13 @@ def get_iotfleethub_client() -> IoTFleetHubClient:
     return boto3.client("iotfleethub")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client)
+Boto3 documentation:
+[IoTFleetHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iotfleethub.client import Exceptions
@@ -47,7 +50,6 @@ from mypy_boto3_iotfleethub.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -59,169 +61,161 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iotfleethub").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.can_paginate]
+Boto3 documentation:
+[IoTFleetHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_application
 
 Type annotations for `boto3.client("iotfleethub").create_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application]
+Boto3 documentation:
+[IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
 
-```python
-def create_application(
-    self,
-    applicationName: str,
-    roleArn: str,
-    applicationDescription: str = None,
-    clientToken: str = None,
-    tags: Dict[str, str] = None
-) -> CreateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `applicationDescription`: `str`
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#createapplicationresponsetypedef).
 
 ### delete_application
 
 Type annotations for `boto3.client("iotfleethub").delete_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application]
+Boto3 documentation:
+[IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    applicationId: str,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `applicationId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application
 
 Type annotations for `boto3.client("iotfleethub").describe_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application]
+Boto3 documentation:
+[IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
 
-```python
-def describe_application(
-    self,
-    applicationId: str
-) -> DescribeApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationId`: `str` *(required)*
+
+Returns
+[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#describeapplicationresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iotfleethub").generate_presigned_url` method.
+Type annotations for `boto3.client("iotfleethub").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTFleetHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_applications
 
 Type annotations for `boto3.client("iotfleethub").list_applications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications]
+Boto3 documentation:
+[IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
 
-```python
-def list_applications(
-    self,
-    nextToken: str = None
-) -> ListApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iotfleethub").list_tags_for_resource` method.
+Type annotations for `boto3.client("iotfleethub").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iotfleethub").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource]
+Boto3 documentation:
+[IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("iotfleethub").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource]
+Boto3 documentation:
+[IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
 Type annotations for `boto3.client("iotfleethub").update_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application]
+Boto3 documentation:
+[IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
 
-```python
-def update_application(
-    self,
-    applicationId: str,
-    applicationName: str = None,
-    applicationDescription: str = None,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `applicationId`: `str` *(required)*
+- `applicationName`: `str`
+- `applicationDescription`: `str`
+- `clientToken`: `str`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("iotfleethub").get_paginator` method with overloads.
+Type annotations for `boto3.client("iotfleethub").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
+- `client.get_paginator("list_applications")` ->
+  [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)

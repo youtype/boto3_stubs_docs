@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeCommit](./README.md) > Structures
 
-Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
-type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+Auto-generated documentation for
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+type annotations stubs module
+[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Typed dictionaries for boto3 CodeCommit module](#typed-dictionaries-for-boto3-codecommit-module)
   - [ApprovalRuleEventMetadataTypeDef](#approvalruleeventmetadatatypedef)
@@ -137,14 +139,11 @@ type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/m
 from mypy_boto3_codecommit.type_defs import ApprovalRuleEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approvalRuleName`: `str`
 - `approvalRuleId`: `str`
 - `approvalRuleContent`: `str`
-
 
 ## ApprovalRuleOverriddenEventMetadataTypeDef
 
@@ -152,13 +151,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ApprovalRuleOverriddenEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `revisionId`: `str`
-- `overrideStatus`: `OverrideStatus`
 
+- `revisionId`: `str`
+- `overrideStatus`:
+  [OverrideStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#overridestatus)
 
 ## ApprovalRuleTemplateTypeDef
 
@@ -166,10 +163,8 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ApprovalRuleTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approvalRuleTemplateId`: `str`
 - `approvalRuleTemplateName`: `str`
 - `approvalRuleTemplateDescription`: `str`
@@ -179,17 +174,14 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastModifiedUser`: `str`
 
-
 ## ApprovalRuleTypeDef
 
 ```python
 from mypy_boto3_codecommit.type_defs import ApprovalRuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approvalRuleId`: `str`
 - `approvalRuleName`: `str`
 - `approvalRuleContent`: `str`
@@ -197,8 +189,8 @@ Optional fields:
 - `lastModifiedDate`: `datetime`
 - `creationDate`: `datetime`
 - `lastModifiedUser`: `str`
-- `originApprovalRuleTemplate`: `"OriginApprovalRuleTemplateTypeDef"`
-
+- `originApprovalRuleTemplate`:
+  [OriginApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#originapprovalruletemplatetypedef)
 
 ## ApprovalStateChangedEventMetadataTypeDef
 
@@ -206,13 +198,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ApprovalStateChangedEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `revisionId`: `str`
-- `approvalStatus`: `ApprovalState`
 
+- `revisionId`: `str`
+- `approvalStatus`:
+  [ApprovalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#approvalstate)
 
 ## ApprovalTypeDef
 
@@ -220,13 +210,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ApprovalTypeDef
 ```
 
-
-
-
 Optional fields:
-- `userArn`: `str`
-- `approvalState`: `ApprovalState`
 
+- `userArn`: `str`
+- `approvalState`:
+  [ApprovalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#approvalstate)
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef
 
@@ -234,14 +222,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `errorCode`: `str`
 - `errorMessage`: `str`
-
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
 
@@ -249,14 +234,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
 ```
 
-
 Required fields:
-- `associatedRepositoryNames`: `List[str]`
-- `errors`: `List["BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `associatedRepositoryNames`: `List`\[`str`\]
+- `errors`:
+  `List`\[[BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchassociateapprovalruletemplatewithrepositorieserrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## BatchDescribeMergeConflictsErrorTypeDef
 
@@ -264,14 +248,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsErrorTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
 - `exceptionName`: `str`
 - `message`: `str`
-
-
-
 
 ## BatchDescribeMergeConflictsOutputTypeDef
 
@@ -279,18 +260,18 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsOutputTypeDef
 ```
 
-
 Required fields:
-- `conflicts`: `List["ConflictTypeDef"]`
+
+- `conflicts`:
+  `List`\[[ConflictTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflicttypedef)\]
 - `nextToken`: `str`
-- `errors`: `List["BatchDescribeMergeConflictsErrorTypeDef"]`
+- `errors`:
+  `List`\[[BatchDescribeMergeConflictsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdescribemergeconflictserrortypedef)\]
 - `destinationCommitId`: `str`
 - `sourceCommitId`: `str`
 - `baseCommitId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef
 
@@ -298,14 +279,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `errorCode`: `str`
 - `errorMessage`: `str`
-
 
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
 
@@ -313,14 +291,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
 ```
 
-
 Required fields:
-- `disassociatedRepositoryNames`: `List[str]`
-- `errors`: `List["BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `disassociatedRepositoryNames`: `List`\[`str`\]
+- `errors`:
+  `List`\[[BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdisassociateapprovalruletemplatefromrepositorieserrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## BatchGetCommitsErrorTypeDef
 
@@ -328,14 +305,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BatchGetCommitsErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `commitId`: `str`
 - `errorCode`: `str`
 - `errorMessage`: `str`
-
 
 ## BatchGetCommitsOutputTypeDef
 
@@ -343,14 +317,14 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import BatchGetCommitsOutputTypeDef
 ```
 
-
 Required fields:
-- `commits`: `List["CommitTypeDef"]`
-- `errors`: `List["BatchGetCommitsErrorTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `commits`:
+  `List`\[[CommitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#committypedef)\]
+- `errors`:
+  `List`\[[BatchGetCommitsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchgetcommitserrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## BatchGetRepositoriesOutputTypeDef
 
@@ -358,14 +332,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesOutputTypeDef
 ```
 
-
 Required fields:
-- `repositories`: `List["RepositoryMetadataTypeDef"]`
-- `repositoriesNotFound`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `repositories`:
+  `List`\[[RepositoryMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorymetadatatypedef)\]
+- `repositoriesNotFound`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## BlobMetadataTypeDef
 
@@ -373,14 +346,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import BlobMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `blobId`: `str`
 - `path`: `str`
 - `mode`: `str`
-
 
 ## BranchInfoTypeDef
 
@@ -388,13 +358,10 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import BranchInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `branchName`: `str`
 - `commitId`: `str`
-
 
 ## CommentTypeDef
 
@@ -402,10 +369,8 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import CommentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `commentId`: `str`
 - `content`: `str`
 - `inReplyTo`: `str`
@@ -414,9 +379,8 @@ Optional fields:
 - `authorArn`: `str`
 - `deleted`: `bool`
 - `clientRequestToken`: `str`
-- `callerReactions`: `List[str]`
-- `reactionCounts`: `Dict[str, int]`
-
+- `callerReactions`: `List`\[`str`\]
+- `reactionCounts`: `Dict`\[`str`, `int`\]
 
 ## CommentsForComparedCommitTypeDef
 
@@ -424,18 +388,17 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import CommentsForComparedCommitTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `beforeBlobId`: `str`
 - `afterBlobId`: `str`
-- `location`: `"LocationTypeDef"`
-- `comments`: `List["CommentTypeDef"]`
-
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `comments`:
+  `List`\[[CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)\]
 
 ## CommentsForPullRequestTypeDef
 
@@ -443,19 +406,18 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import CommentsForPullRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pullRequestId`: `str`
 - `repositoryName`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `beforeBlobId`: `str`
 - `afterBlobId`: `str`
-- `location`: `"LocationTypeDef"`
-- `comments`: `List["CommentTypeDef"]`
-
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `comments`:
+  `List`\[[CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)\]
 
 ## CommitTypeDef
 
@@ -463,18 +425,17 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import CommitTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `parents`: `List[str]`
+- `parents`: `List`\[`str`\]
 - `message`: `str`
-- `author`: `"UserInfoTypeDef"`
-- `committer`: `"UserInfoTypeDef"`
+- `author`:
+  [UserInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#userinfotypedef)
+- `committer`:
+  [UserInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#userinfotypedef)
 - `additionalData`: `str`
-
 
 ## ConflictMetadataTypeDef
 
@@ -482,21 +443,23 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ConflictMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `filePath`: `str`
-- `fileSizes`: `"FileSizesTypeDef"`
-- `fileModes`: `"FileModesTypeDef"`
-- `objectTypes`: `"ObjectTypesTypeDef"`
+- `fileSizes`:
+  [FileSizesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filesizestypedef)
+- `fileModes`:
+  [FileModesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filemodestypedef)
+- `objectTypes`:
+  [ObjectTypesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#objecttypestypedef)
 - `numberOfConflicts`: `int`
-- `isBinaryFile`: `"IsBinaryFileTypeDef"`
+- `isBinaryFile`:
+  [IsBinaryFileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#isbinaryfiletypedef)
 - `contentConflict`: `bool`
 - `fileModeConflict`: `bool`
 - `objectTypeConflict`: `bool`
-- `mergeOperations`: `"MergeOperationsTypeDef"`
-
+- `mergeOperations`:
+  [MergeOperationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergeoperationstypedef)
 
 ## ConflictResolutionTypeDef
 
@@ -504,14 +467,14 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ConflictResolutionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replaceContents`: `List["ReplaceContentEntryTypeDef"]`
-- `deleteFiles`: `List["DeleteFileEntryTypeDef"]`
-- `setFileModes`: `List["SetFileModeEntryTypeDef"]`
 
+- `replaceContents`:
+  `List`\[[ReplaceContentEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#replacecontententrytypedef)\]
+- `deleteFiles`:
+  `List`\[[DeleteFileEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletefileentrytypedef)\]
+- `setFileModes`:
+  `List`\[[SetFileModeEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#setfilemodeentrytypedef)\]
 
 ## ConflictTypeDef
 
@@ -519,13 +482,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ConflictTypeDef
 ```
 
-
-
-
 Optional fields:
-- `conflictMetadata`: `"ConflictMetadataTypeDef"`
-- `mergeHunks`: `List["MergeHunkTypeDef"]`
 
+- `conflictMetadata`:
+  [ConflictMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictmetadatatypedef)
+- `mergeHunks`:
+  `List`\[[MergeHunkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergehunktypedef)\]
 
 ## CreateApprovalRuleTemplateOutputTypeDef
 
@@ -533,13 +495,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import CreateApprovalRuleTemplateOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRuleTemplate`:
+  [ApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## CreateCommitOutputTypeDef
 
@@ -547,17 +508,18 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import CreateCommitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `filesAdded`: `List["FileMetadataTypeDef"]`
-- `filesUpdated`: `List["FileMetadataTypeDef"]`
-- `filesDeleted`: `List["FileMetadataTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `filesAdded`:
+  `List`\[[FileMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filemetadatatypedef)\]
+- `filesUpdated`:
+  `List`\[[FileMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filemetadatatypedef)\]
+- `filesDeleted`:
+  `List`\[[FileMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filemetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## CreatePullRequestApprovalRuleOutputTypeDef
 
@@ -565,13 +527,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import CreatePullRequestApprovalRuleOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRule`: `"ApprovalRuleTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRule`:
+  [ApprovalRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## CreatePullRequestOutputTypeDef
 
@@ -579,13 +540,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import CreatePullRequestOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## CreateRepositoryOutputTypeDef
 
@@ -593,13 +553,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import CreateRepositoryOutputTypeDef
 ```
 
-
 Required fields:
-- `repositoryMetadata`: `"RepositoryMetadataTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `repositoryMetadata`:
+  [RepositoryMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorymetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## CreateUnreferencedMergeCommitOutputTypeDef
 
@@ -607,14 +566,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import CreateUnreferencedMergeCommitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeleteApprovalRuleTemplateOutputTypeDef
 
@@ -622,13 +579,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateOutputTypeDef
 ```
 
-
 Required fields:
+
 - `approvalRuleTemplateId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeleteBranchOutputTypeDef
 
@@ -636,13 +591,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteBranchOutputTypeDef
 ```
 
-
 Required fields:
-- `deletedBranch`: `"BranchInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deletedBranch`:
+  [BranchInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#branchinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeleteCommentContentOutputTypeDef
 
@@ -650,13 +604,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteCommentContentOutputTypeDef
 ```
 
-
 Required fields:
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeleteFileEntryTypeDef
 
@@ -664,12 +617,9 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteFileEntryTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
-
-
-
 
 ## DeleteFileOutputTypeDef
 
@@ -677,16 +627,14 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteFileOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `blobId`: `str`
 - `treeId`: `str`
 - `filePath`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeletePullRequestApprovalRuleOutputTypeDef
 
@@ -694,13 +642,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeletePullRequestApprovalRuleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `approvalRuleId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DeleteRepositoryOutputTypeDef
 
@@ -708,13 +654,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DeleteRepositoryOutputTypeDef
 ```
 
-
 Required fields:
+
 - `repositoryId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DescribeMergeConflictsOutputTypeDef
 
@@ -722,18 +666,18 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DescribeMergeConflictsOutputTypeDef
 ```
 
-
 Required fields:
-- `conflictMetadata`: `"ConflictMetadataTypeDef"`
-- `mergeHunks`: `List["MergeHunkTypeDef"]`
+
+- `conflictMetadata`:
+  [ConflictMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictmetadatatypedef)
+- `mergeHunks`:
+  `List`\[[MergeHunkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergehunktypedef)\]
 - `nextToken`: `str`
 - `destinationCommitId`: `str`
 - `sourceCommitId`: `str`
 - `baseCommitId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DescribePullRequestEventsOutputTypeDef
 
@@ -741,14 +685,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DescribePullRequestEventsOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequestEvents`: `List["PullRequestEventTypeDef"]`
+
+- `pullRequestEvents`:
+  `List`\[[PullRequestEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesteventtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## DifferenceTypeDef
 
@@ -756,14 +699,14 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import DifferenceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `beforeBlob`: `"BlobMetadataTypeDef"`
-- `afterBlob`: `"BlobMetadataTypeDef"`
-- `changeType`: `ChangeTypeEnum`
 
+- `beforeBlob`:
+  [BlobMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#blobmetadatatypedef)
+- `afterBlob`:
+  [BlobMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#blobmetadatatypedef)
+- `changeType`:
+  [ChangeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#changetypeenum)
 
 ## EvaluatePullRequestApprovalRulesOutputTypeDef
 
@@ -771,13 +714,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import EvaluatePullRequestApprovalRulesOutputTypeDef
 ```
 
-
 Required fields:
-- `evaluation`: `"EvaluationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `evaluation`:
+  [EvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#evaluationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## EvaluationTypeDef
 
@@ -785,15 +727,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import EvaluationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approved`: `bool`
 - `overridden`: `bool`
-- `approvalRulesSatisfied`: `List[str]`
-- `approvalRulesNotSatisfied`: `List[str]`
-
+- `approvalRulesSatisfied`: `List`\[`str`\]
+- `approvalRulesNotSatisfied`: `List`\[`str`\]
 
 ## FileMetadataTypeDef
 
@@ -801,14 +740,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import FileMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `absolutePath`: `str`
 - `blobId`: `str`
-- `fileMode`: `FileModeTypeEnum`
-
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## FileModesTypeDef
 
@@ -816,14 +753,14 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import FileModesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `source`: `FileModeTypeEnum`
-- `destination`: `FileModeTypeEnum`
-- `base`: `FileModeTypeEnum`
 
+- `source`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
+- `destination`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
+- `base`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## FileSizesTypeDef
 
@@ -831,14 +768,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import FileSizesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `source`: `int`
 - `destination`: `int`
 - `base`: `int`
-
 
 ## FileTypeDef
 
@@ -846,15 +780,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import FileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `blobId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-- `fileMode`: `FileModeTypeEnum`
-
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## FolderTypeDef
 
@@ -862,14 +794,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import FolderTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `treeId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-
 
 ## GetApprovalRuleTemplateOutputTypeDef
 
@@ -877,13 +806,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRuleTemplate`:
+  [ApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetBlobOutputTypeDef
 
@@ -891,13 +819,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetBlobOutputTypeDef
 ```
 
-
 Required fields:
-- `content`: `Union[bytes, IO[bytes]]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetBranchOutputTypeDef
 
@@ -905,13 +831,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetBranchOutputTypeDef
 ```
 
-
 Required fields:
-- `branch`: `"BranchInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `branch`:
+  [BranchInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#branchinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetCommentOutputTypeDef
 
@@ -919,13 +844,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetCommentOutputTypeDef
 ```
 
-
 Required fields:
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetCommentReactionsOutputTypeDef
 
@@ -933,14 +857,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetCommentReactionsOutputTypeDef
 ```
 
-
 Required fields:
-- `reactionsForComment`: `List["ReactionForCommentTypeDef"]`
+
+- `reactionsForComment`:
+  `List`\[[ReactionForCommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#reactionforcommenttypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetCommentsForComparedCommitOutputTypeDef
 
@@ -948,14 +871,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetCommentsForComparedCommitOutputTypeDef
 ```
 
-
 Required fields:
-- `commentsForComparedCommitData`: `List["CommentsForComparedCommitTypeDef"]`
+
+- `commentsForComparedCommitData`:
+  `List`\[[CommentsForComparedCommitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commentsforcomparedcommittypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetCommentsForPullRequestOutputTypeDef
 
@@ -963,14 +885,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetCommentsForPullRequestOutputTypeDef
 ```
 
-
 Required fields:
-- `commentsForPullRequestData`: `List["CommentsForPullRequestTypeDef"]`
+
+- `commentsForPullRequestData`:
+  `List`\[[CommentsForPullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commentsforpullrequesttypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetCommitOutputTypeDef
 
@@ -978,13 +899,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetCommitOutputTypeDef
 ```
 
-
 Required fields:
-- `commit`: `"CommitTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `commit`:
+  [CommitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#committypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetDifferencesOutputTypeDef
 
@@ -992,14 +912,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetDifferencesOutputTypeDef
 ```
 
-
 Required fields:
-- `differences`: `List["DifferenceTypeDef"]`
+
+- `differences`:
+  `List`\[[DifferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#differencetypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetFileOutputTypeDef
 
@@ -1007,18 +926,17 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetFileOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `blobId`: `str`
 - `filePath`: `str`
-- `fileMode`: `FileModeTypeEnum`
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 - `fileSize`: `int`
-- `fileContent`: `Union[bytes, IO[bytes]]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetFolderOutputTypeDef
 
@@ -1026,19 +944,21 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetFolderOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `folderPath`: `str`
 - `treeId`: `str`
-- `subFolders`: `List["FolderTypeDef"]`
-- `files`: `List["FileTypeDef"]`
-- `symbolicLinks`: `List["SymbolicLinkTypeDef"]`
-- `subModules`: `List["SubModuleTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `subFolders`:
+  `List`\[[FolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#foldertypedef)\]
+- `files`:
+  `List`\[[FileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#filetypedef)\]
+- `symbolicLinks`:
+  `List`\[[SymbolicLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#symboliclinktypedef)\]
+- `subModules`:
+  `List`\[[SubModuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#submoduletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetMergeCommitOutputTypeDef
 
@@ -1046,16 +966,14 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetMergeCommitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `baseCommitId`: `str`
 - `mergedCommitId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetMergeConflictsOutputTypeDef
 
@@ -1063,18 +981,17 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetMergeConflictsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `mergeable`: `bool`
 - `destinationCommitId`: `str`
 - `sourceCommitId`: `str`
 - `baseCommitId`: `str`
-- `conflictMetadataList`: `List["ConflictMetadataTypeDef"]`
+- `conflictMetadataList`:
+  `List`\[[ConflictMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictmetadatatypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetMergeOptionsOutputTypeDef
 
@@ -1082,16 +999,15 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetMergeOptionsOutputTypeDef
 ```
 
-
 Required fields:
-- `mergeOptions`: `List[MergeOptionTypeEnum]`
+
+- `mergeOptions`:
+  `List`\[[MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)\]
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `baseCommitId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetPullRequestApprovalStatesOutputTypeDef
 
@@ -1099,13 +1015,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetPullRequestApprovalStatesOutputTypeDef
 ```
 
-
 Required fields:
-- `approvals`: `List["ApprovalTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvals`:
+  `List`\[[ApprovalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvaltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetPullRequestOutputTypeDef
 
@@ -1113,13 +1028,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetPullRequestOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetPullRequestOverrideStateOutputTypeDef
 
@@ -1127,14 +1041,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetPullRequestOverrideStateOutputTypeDef
 ```
 
-
 Required fields:
+
 - `overridden`: `bool`
 - `overrider`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetRepositoryOutputTypeDef
 
@@ -1142,13 +1054,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetRepositoryOutputTypeDef
 ```
 
-
 Required fields:
-- `repositoryMetadata`: `"RepositoryMetadataTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `repositoryMetadata`:
+  [RepositoryMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorymetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## GetRepositoryTriggersOutputTypeDef
 
@@ -1156,14 +1067,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersOutputTypeDef
 ```
 
-
 Required fields:
+
 - `configurationId`: `str`
-- `triggers`: `List["RepositoryTriggerTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `triggers`:
+  `List`\[[RepositoryTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## IsBinaryFileTypeDef
 
@@ -1171,14 +1081,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import IsBinaryFileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `source`: `bool`
 - `destination`: `bool`
 - `base`: `bool`
-
 
 ## ListApprovalRuleTemplatesOutputTypeDef
 
@@ -1186,14 +1093,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ListApprovalRuleTemplatesOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplateNames`: `List[str]`
+
+- `approvalRuleTemplateNames`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
 
@@ -1201,14 +1106,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplateNames`: `List[str]`
+
+- `approvalRuleTemplateNames`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListBranchesOutputTypeDef
 
@@ -1216,14 +1119,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListBranchesOutputTypeDef
 ```
 
-
 Required fields:
-- `branches`: `List[str]`
+
+- `branches`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListPullRequestsOutputTypeDef
 
@@ -1231,14 +1132,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListPullRequestsOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequestIds`: `List[str]`
+
+- `pullRequestIds`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListRepositoriesForApprovalRuleTemplateOutputTypeDef
 
@@ -1246,14 +1145,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListRepositoriesForApprovalRuleTemplateOutputTypeDef
 ```
 
-
 Required fields:
-- `repositoryNames`: `List[str]`
+
+- `repositoryNames`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListRepositoriesOutputTypeDef
 
@@ -1261,14 +1158,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListRepositoriesOutputTypeDef
 ```
 
-
 Required fields:
-- `repositories`: `List["RepositoryNameIdPairTypeDef"]`
+
+- `repositories`:
+  `List`\[[RepositoryNameIdPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorynameidpairtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1276,14 +1172,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `tags`: `Dict[str, str]`
+
+- `tags`: `Dict`\[`str`, `str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## LocationTypeDef
 
@@ -1291,14 +1185,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `filePath`: `str`
 - `filePosition`: `int`
-- `relativeFileVersion`: `RelativeFileVersionEnum`
-
+- `relativeFileVersion`:
+  [RelativeFileVersionEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#relativefileversionenum)
 
 ## MergeBranchesByFastForwardOutputTypeDef
 
@@ -1306,14 +1198,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import MergeBranchesByFastForwardOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## MergeBranchesBySquashOutputTypeDef
 
@@ -1321,14 +1211,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import MergeBranchesBySquashOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## MergeBranchesByThreeWayOutputTypeDef
 
@@ -1336,14 +1224,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import MergeBranchesByThreeWayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `treeId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## MergeHunkDetailTypeDef
 
@@ -1351,14 +1237,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import MergeHunkDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `startLine`: `int`
 - `endLine`: `int`
 - `hunkContent`: `str`
-
 
 ## MergeHunkTypeDef
 
@@ -1366,15 +1249,15 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import MergeHunkTypeDef
 ```
 
-
-
-
 Optional fields:
-- `isConflict`: `bool`
-- `source`: `"MergeHunkDetailTypeDef"`
-- `destination`: `"MergeHunkDetailTypeDef"`
-- `base`: `"MergeHunkDetailTypeDef"`
 
+- `isConflict`: `bool`
+- `source`:
+  [MergeHunkDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergehunkdetailtypedef)
+- `destination`:
+  [MergeHunkDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergehunkdetailtypedef)
+- `base`:
+  [MergeHunkDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergehunkdetailtypedef)
 
 ## MergeMetadataTypeDef
 
@@ -1382,15 +1265,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import MergeMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `isMerged`: `bool`
 - `mergedBy`: `str`
 - `mergeCommitId`: `str`
-- `mergeOption`: `MergeOptionTypeEnum`
-
+- `mergeOption`:
+  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
 
 ## MergeOperationsTypeDef
 
@@ -1398,13 +1279,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import MergeOperationsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `source`: `ChangeTypeEnum`
-- `destination`: `ChangeTypeEnum`
 
+- `source`:
+  [ChangeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#changetypeenum)
+- `destination`:
+  [ChangeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#changetypeenum)
 
 ## MergePullRequestByFastForwardOutputTypeDef
 
@@ -1412,13 +1292,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import MergePullRequestByFastForwardOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## MergePullRequestBySquashOutputTypeDef
 
@@ -1426,13 +1305,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import MergePullRequestBySquashOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## MergePullRequestByThreeWayOutputTypeDef
 
@@ -1440,13 +1318,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import MergePullRequestByThreeWayOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ObjectTypesTypeDef
 
@@ -1454,14 +1331,14 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ObjectTypesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `source`: `ObjectTypeEnum`
-- `destination`: `ObjectTypeEnum`
-- `base`: `ObjectTypeEnum`
 
+- `source`:
+  [ObjectTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#objecttypeenum)
+- `destination`:
+  [ObjectTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#objecttypeenum)
+- `base`:
+  [ObjectTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#objecttypeenum)
 
 ## OriginApprovalRuleTemplateTypeDef
 
@@ -1469,13 +1346,10 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import OriginApprovalRuleTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approvalRuleTemplateId`: `str`
 - `approvalRuleTemplateName`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -1483,14 +1357,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PostCommentForComparedCommitOutputTypeDef
 
@@ -1498,19 +1369,19 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PostCommentForComparedCommitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `repositoryName`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `beforeBlobId`: `str`
 - `afterBlobId`: `str`
-- `location`: `"LocationTypeDef"`
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## PostCommentForPullRequestOutputTypeDef
 
@@ -1518,20 +1389,20 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import PostCommentForPullRequestOutputTypeDef
 ```
 
-
 Required fields:
+
 - `repositoryName`: `str`
 - `pullRequestId`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `beforeBlobId`: `str`
 - `afterBlobId`: `str`
-- `location`: `"LocationTypeDef"`
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## PostCommentReplyOutputTypeDef
 
@@ -1539,13 +1410,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import PostCommentReplyOutputTypeDef
 ```
 
-
 Required fields:
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## PullRequestCreatedEventMetadataTypeDef
 
@@ -1553,15 +1423,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import PullRequestCreatedEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `mergeBase`: `str`
-
 
 ## PullRequestEventTypeDef
 
@@ -1569,22 +1436,27 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pullRequestId`: `str`
 - `eventDate`: `datetime`
-- `pullRequestEventType`: `PullRequestEventType`
+- `pullRequestEventType`:
+  [PullRequestEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequesteventtype)
 - `actorArn`: `str`
-- `pullRequestCreatedEventMetadata`: `"PullRequestCreatedEventMetadataTypeDef"`
-- `pullRequestStatusChangedEventMetadata`: `"PullRequestStatusChangedEventMetadataTypeDef"`
-- `pullRequestSourceReferenceUpdatedEventMetadata`: `"PullRequestSourceReferenceUpdatedEventMetadataTypeDef"`
-- `pullRequestMergedStateChangedEventMetadata`: `"PullRequestMergedStateChangedEventMetadataTypeDef"`
-- `approvalRuleEventMetadata`: `"ApprovalRuleEventMetadataTypeDef"`
-- `approvalStateChangedEventMetadata`: `"ApprovalStateChangedEventMetadataTypeDef"`
-- `approvalRuleOverriddenEventMetadata`: `"ApprovalRuleOverriddenEventMetadataTypeDef"`
-
+- `pullRequestCreatedEventMetadata`:
+  [PullRequestCreatedEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequestcreatedeventmetadatatypedef)
+- `pullRequestStatusChangedEventMetadata`:
+  [PullRequestStatusChangedEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequeststatuschangedeventmetadatatypedef)
+- `pullRequestSourceReferenceUpdatedEventMetadata`:
+  [PullRequestSourceReferenceUpdatedEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequestsourcereferenceupdatedeventmetadatatypedef)
+- `pullRequestMergedStateChangedEventMetadata`:
+  [PullRequestMergedStateChangedEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequestmergedstatechangedeventmetadatatypedef)
+- `approvalRuleEventMetadata`:
+  [ApprovalRuleEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruleeventmetadatatypedef)
+- `approvalStateChangedEventMetadata`:
+  [ApprovalStateChangedEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalstatechangedeventmetadatatypedef)
+- `approvalRuleOverriddenEventMetadata`:
+  [ApprovalRuleOverriddenEventMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruleoverriddeneventmetadatatypedef)
 
 ## PullRequestMergedStateChangedEventMetadataTypeDef
 
@@ -1592,14 +1464,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestMergedStateChangedEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `destinationReference`: `str`
-- `mergeMetadata`: `"MergeMetadataTypeDef"`
-
+- `mergeMetadata`:
+  [MergeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergemetadatatypedef)
 
 ## PullRequestSourceReferenceUpdatedEventMetadataTypeDef
 
@@ -1607,15 +1477,12 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestSourceReferenceUpdatedEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `mergeBase`: `str`
-
 
 ## PullRequestStatusChangedEventMetadataTypeDef
 
@@ -1623,12 +1490,10 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestStatusChangedEventMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `pullRequestStatus`: `PullRequestStatusEnum`
 
+- `pullRequestStatus`:
+  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
 
 ## PullRequestTargetTypeDef
 
@@ -1636,18 +1501,16 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `sourceReference`: `str`
 - `destinationReference`: `str`
 - `destinationCommit`: `str`
 - `sourceCommit`: `str`
 - `mergeBase`: `str`
-- `mergeMetadata`: `"MergeMetadataTypeDef"`
-
+- `mergeMetadata`:
+  [MergeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergemetadatatypedef)
 
 ## PullRequestTypeDef
 
@@ -1655,22 +1518,22 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PullRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pullRequestId`: `str`
 - `title`: `str`
 - `description`: `str`
 - `lastActivityDate`: `datetime`
 - `creationDate`: `datetime`
-- `pullRequestStatus`: `PullRequestStatusEnum`
+- `pullRequestStatus`:
+  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
 - `authorArn`: `str`
-- `pullRequestTargets`: `List["PullRequestTargetTypeDef"]`
+- `pullRequestTargets`:
+  `List`\[[PullRequestTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttargettypedef)\]
 - `clientRequestToken`: `str`
 - `revisionId`: `str`
-- `approvalRules`: `List["ApprovalRuleTypeDef"]`
-
+- `approvalRules`:
+  `List`\[[ApprovalRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletypedef)\]
 
 ## PutFileEntryTypeDef
 
@@ -1678,17 +1541,17 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PutFileEntryTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
 
-
-
 Optional fields:
-- `fileMode`: `FileModeTypeEnum`
-- `fileContent`: `Union[bytes, IO[bytes]]`
-- `sourceFile`: `"SourceFileSpecifierTypeDef"`
 
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `sourceFile`:
+  [SourceFileSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#sourcefilespecifiertypedef)
 
 ## PutFileOutputTypeDef
 
@@ -1696,15 +1559,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import PutFileOutputTypeDef
 ```
 
-
 Required fields:
+
 - `commitId`: `str`
 - `blobId`: `str`
 - `treeId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## PutRepositoryTriggersOutputTypeDef
 
@@ -1712,13 +1573,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import PutRepositoryTriggersOutputTypeDef
 ```
 
-
 Required fields:
+
 - `configurationId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## ReactionForCommentTypeDef
 
@@ -1726,14 +1585,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import ReactionForCommentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `reaction`: `"ReactionValueFormatsTypeDef"`
-- `reactionUsers`: `List[str]`
-- `reactionsFromDeletedUsersCount`: `int`
 
+- `reaction`:
+  [ReactionValueFormatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#reactionvalueformatstypedef)
+- `reactionUsers`: `List`\[`str`\]
+- `reactionsFromDeletedUsersCount`: `int`
 
 ## ReactionValueFormatsTypeDef
 
@@ -1741,14 +1598,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ReactionValueFormatsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `emoji`: `str`
 - `shortCode`: `str`
 - `unicode`: `str`
-
 
 ## ReplaceContentEntryTypeDef
 
@@ -1756,17 +1610,17 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ReplaceContentEntryTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
-- `replacementType`: `ReplacementTypeEnum`
-
-
+- `replacementType`:
+  [ReplacementTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#replacementtypeenum)
 
 Optional fields:
-- `content`: `Union[bytes, IO[bytes]]`
-- `fileMode`: `FileModeTypeEnum`
 
+- `content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## RepositoryMetadataTypeDef
 
@@ -1774,10 +1628,8 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import RepositoryMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `repositoryId`: `str`
 - `repositoryName`: `str`
@@ -1789,20 +1641,16 @@ Optional fields:
 - `cloneUrlSsh`: `str`
 - `Arn`: `str`
 
-
 ## RepositoryNameIdPairTypeDef
 
 ```python
 from mypy_boto3_codecommit.type_defs import RepositoryNameIdPairTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryName`: `str`
 - `repositoryId`: `str`
-
 
 ## RepositoryTriggerExecutionFailureTypeDef
 
@@ -1810,13 +1658,10 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import RepositoryTriggerExecutionFailureTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `trigger`: `str`
 - `failureMessage`: `str`
-
 
 ## RepositoryTriggerTypeDef
 
@@ -1824,18 +1669,17 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import RepositoryTriggerTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `destinationArn`: `str`
-- `events`: `List[RepositoryTriggerEventEnum]`
-
-
+- `events`:
+  `List`\[[RepositoryTriggerEventEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#repositorytriggereventenum)\]
 
 Optional fields:
-- `customData`: `str`
-- `branches`: `List[str]`
 
+- `customData`: `str`
+- `branches`: `List`\[`str`\]
 
 ## ResponseMetadata
 
@@ -1843,16 +1687,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SetFileModeEntryTypeDef
 
@@ -1860,13 +1701,11 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import SetFileModeEntryTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
-- `fileMode`: `FileModeTypeEnum`
-
-
-
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## SourceFileSpecifierTypeDef
 
@@ -1874,15 +1713,13 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import SourceFileSpecifierTypeDef
 ```
 
-
 Required fields:
+
 - `filePath`: `str`
 
-
-
 Optional fields:
-- `isMove`: `bool`
 
+- `isMove`: `bool`
 
 ## SubModuleTypeDef
 
@@ -1890,14 +1727,11 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import SubModuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `commitId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-
 
 ## SymbolicLinkTypeDef
 
@@ -1905,15 +1739,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import SymbolicLinkTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `blobId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-- `fileMode`: `FileModeTypeEnum`
-
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
 
 ## TargetTypeDef
 
@@ -1921,16 +1753,14 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import TargetTypeDef
 ```
 
-
 Required fields:
+
 - `repositoryName`: `str`
 - `sourceReference`: `str`
 
-
-
 Optional fields:
-- `destinationReference`: `str`
 
+- `destinationReference`: `str`
 
 ## TestRepositoryTriggersOutputTypeDef
 
@@ -1938,14 +1768,13 @@ Optional fields:
 from mypy_boto3_codecommit.type_defs import TestRepositoryTriggersOutputTypeDef
 ```
 
-
 Required fields:
-- `successfulExecutions`: `List[str]`
-- `failedExecutions`: `List["RepositoryTriggerExecutionFailureTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `successfulExecutions`: `List`\[`str`\]
+- `failedExecutions`:
+  `List`\[[RepositoryTriggerExecutionFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggerexecutionfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdateApprovalRuleTemplateContentOutputTypeDef
 
@@ -1953,13 +1782,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateContentOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRuleTemplate`:
+  [ApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdateApprovalRuleTemplateDescriptionOutputTypeDef
 
@@ -1967,13 +1795,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateDescriptionOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRuleTemplate`:
+  [ApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdateApprovalRuleTemplateNameOutputTypeDef
 
@@ -1981,13 +1808,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateNameOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRuleTemplate`:
+  [ApprovalRuleTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdateCommentOutputTypeDef
 
@@ -1995,13 +1821,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdateCommentOutputTypeDef
 ```
 
-
 Required fields:
-- `comment`: `"CommentTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `comment`:
+  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#commenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdatePullRequestApprovalRuleContentOutputTypeDef
 
@@ -2009,13 +1834,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalRuleContentOutputTypeDef
 ```
 
-
 Required fields:
-- `approvalRule`: `"ApprovalRuleTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `approvalRule`:
+  [ApprovalRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#approvalruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdatePullRequestDescriptionOutputTypeDef
 
@@ -2023,13 +1847,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdatePullRequestDescriptionOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdatePullRequestStatusOutputTypeDef
 
@@ -2037,13 +1860,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdatePullRequestStatusOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UpdatePullRequestTitleOutputTypeDef
 
@@ -2051,13 +1873,12 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UpdatePullRequestTitleOutputTypeDef
 ```
 
-
 Required fields:
-- `pullRequest`: `"PullRequestTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pullRequest`:
+  [PullRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#pullrequesttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#responsemetadata)
 
 ## UserInfoTypeDef
 
@@ -2065,11 +1886,8 @@ Required fields:
 from mypy_boto3_codecommit.type_defs import UserInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `email`: `str`
 - `date`: `str`
-

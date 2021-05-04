@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeGuruReviewer](./README.md) > Structures
 
-Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+Auto-generated documentation for
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+type annotations stubs module
+[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Typed dictionaries for boto3 CodeGuruReviewer module](#typed-dictionaries-for-boto3-codegurureviewer-module)
   - [AssociateRepositoryResponseTypeDef](#associaterepositoryresponsetypedef)
@@ -43,13 +45,11 @@ type annotations stubs module [mypy_boto3_codeguru_reviewer](https://pypi.org/pr
 from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RepositoryAssociation`: `"RepositoryAssociationTypeDef"`
-- `Tags`: `Dict[str, str]`
 
+- `RepositoryAssociation`:
+  [RepositoryAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryassociationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CodeCommitRepositoryTypeDef
 
@@ -57,12 +57,9 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CodeCommitRepositoryTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CodeReviewSummaryTypeDef
 
@@ -70,22 +67,23 @@ Required fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CodeReviewSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `CodeReviewArn`: `str`
 - `RepositoryName`: `str`
 - `Owner`: `str`
-- `ProviderType`: `ProviderType`
-- `State`: `JobState`
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)
+- `State`:
+  [JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#jobstate)
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
-- `Type`: `TypeType`
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#typetype)
 - `PullRequestId`: `str`
-- `MetricsSummary`: `"MetricsSummaryTypeDef"`
-
+- `MetricsSummary`:
+  [MetricsSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#metricssummarytypedef)
 
 ## CodeReviewTypeDef
 
@@ -93,25 +91,27 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CodeReviewTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `CodeReviewArn`: `str`
 - `RepositoryName`: `str`
 - `Owner`: `str`
-- `ProviderType`: `ProviderType`
-- `State`: `JobState`
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)
+- `State`:
+  [JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#jobstate)
 - `StateReason`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
-- `Type`: `TypeType`
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#typetype)
 - `PullRequestId`: `str`
-- `SourceCodeType`: `"SourceCodeTypeTypeDef"`
+- `SourceCodeType`:
+  [SourceCodeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#sourcecodetypetypedef)
 - `AssociationArn`: `str`
-- `Metrics`: `"MetricsTypeDef"`
-
+- `Metrics`:
+  [MetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#metricstypedef)
 
 ## CodeReviewTypeTypeDef
 
@@ -119,12 +119,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CodeReviewTypeTypeDef
 ```
 
-
 Required fields:
-- `RepositoryAnalysis`: `"RepositoryAnalysisTypeDef"`
 
-
-
+- `RepositoryAnalysis`:
+  [RepositoryAnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryanalysistypedef)
 
 ## CommitDiffSourceCodeTypeTypeDef
 
@@ -132,13 +130,10 @@ Required fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CommitDiffSourceCodeTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceCommit`: `str`
 - `DestinationCommit`: `str`
-
 
 ## CreateCodeReviewResponseTypeDef
 
@@ -146,12 +141,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import CreateCodeReviewResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CodeReview`: `"CodeReviewTypeDef"`
 
+- `CodeReview`:
+  [CodeReviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#codereviewtypedef)
 
 ## DescribeCodeReviewResponseTypeDef
 
@@ -159,12 +152,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import DescribeCodeReviewResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CodeReview`: `"CodeReviewTypeDef"`
 
+- `CodeReview`:
+  [CodeReviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#codereviewtypedef)
 
 ## DescribeRecommendationFeedbackResponseTypeDef
 
@@ -172,12 +163,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import DescribeRecommendationFeedbackResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RecommendationFeedback`: `"RecommendationFeedbackTypeDef"`
 
+- `RecommendationFeedback`:
+  [RecommendationFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#recommendationfeedbacktypedef)
 
 ## DescribeRepositoryAssociationResponseTypeDef
 
@@ -185,13 +174,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import DescribeRepositoryAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RepositoryAssociation`: `"RepositoryAssociationTypeDef"`
-- `Tags`: `Dict[str, str]`
 
+- `RepositoryAssociation`:
+  [RepositoryAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryassociationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DisassociateRepositoryResponseTypeDef
 
@@ -199,13 +186,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import DisassociateRepositoryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RepositoryAssociation`: `"RepositoryAssociationTypeDef"`
-- `Tags`: `Dict[str, str]`
 
+- `RepositoryAssociation`:
+  [RepositoryAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryassociationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## KMSKeyDetailsTypeDef
 
@@ -213,13 +198,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import KMSKeyDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KMSKeyId`: `str`
-- `EncryptionOption`: `EncryptionOption`
 
+- `KMSKeyId`: `str`
+- `EncryptionOption`:
+  [EncryptionOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#encryptionoption)
 
 ## ListCodeReviewsResponseTypeDef
 
@@ -227,13 +210,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ListCodeReviewsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CodeReviewSummaries`: `List["CodeReviewSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `CodeReviewSummaries`:
+  `List`\[[CodeReviewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#codereviewsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListRecommendationFeedbackResponseTypeDef
 
@@ -241,13 +222,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ListRecommendationFeedbackResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RecommendationFeedbackSummaries`: `List["RecommendationFeedbackSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `RecommendationFeedbackSummaries`:
+  `List`\[[RecommendationFeedbackSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#recommendationfeedbacksummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListRecommendationsResponseTypeDef
 
@@ -255,13 +234,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ListRecommendationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RecommendationSummaries`: `List["RecommendationSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `RecommendationSummaries`:
+  `List`\[[RecommendationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#recommendationsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListRepositoryAssociationsResponseTypeDef
 
@@ -269,13 +246,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ListRepositoryAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RepositoryAssociationSummaries`: `List["RepositoryAssociationSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `RepositoryAssociationSummaries`:
+  `List`\[[RepositoryAssociationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryassociationsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -283,12 +258,9 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## MetricsSummaryTypeDef
 
@@ -296,13 +268,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import MetricsSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MeteredLinesOfCodeCount`: `int`
 - `FindingsCount`: `int`
-
 
 ## MetricsTypeDef
 
@@ -310,13 +279,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import MetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MeteredLinesOfCodeCount`: `int`
 - `FindingsCount`: `int`
-
 
 ## PaginatorConfigTypeDef
 
@@ -324,14 +290,11 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RecommendationFeedbackSummaryTypeDef
 
@@ -339,14 +302,12 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RecommendationFeedbackSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RecommendationId`: `str`
-- `Reactions`: `List[Reaction]`
-- `UserId`: `str`
 
+- `RecommendationId`: `str`
+- `Reactions`:
+  `List`\[[Reaction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#reaction)\]
+- `UserId`: `str`
 
 ## RecommendationFeedbackTypeDef
 
@@ -354,17 +315,15 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RecommendationFeedbackTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CodeReviewArn`: `str`
 - `RecommendationId`: `str`
-- `Reactions`: `List[Reaction]`
+- `Reactions`:
+  `List`\[[Reaction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#reaction)\]
 - `UserId`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
-
 
 ## RecommendationSummaryTypeDef
 
@@ -372,16 +331,13 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RecommendationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FilePath`: `str`
 - `RecommendationId`: `str`
 - `StartLine`: `int`
 - `EndLine`: `int`
 - `Description`: `str`
-
 
 ## RepositoryAnalysisTypeDef
 
@@ -389,12 +345,10 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryAnalysisTypeDef
 ```
 
-
 Required fields:
-- `RepositoryHead`: `"RepositoryHeadSourceCodeTypeTypeDef"`
 
-
-
+- `RepositoryHead`:
+  [RepositoryHeadSourceCodeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryheadsourcecodetypetypedef)
 
 ## RepositoryAssociationSummaryTypeDef
 
@@ -402,19 +356,18 @@ Required fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryAssociationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationArn`: `str`
 - `ConnectionArn`: `str`
 - `LastUpdatedTimeStamp`: `datetime`
 - `AssociationId`: `str`
 - `Name`: `str`
 - `Owner`: `str`
-- `ProviderType`: `ProviderType`
-- `State`: `RepositoryAssociationState`
-
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)
+- `State`:
+  [RepositoryAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#repositoryassociationstate)
 
 ## RepositoryAssociationTypeDef
 
@@ -422,22 +375,22 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `AssociationArn`: `str`
 - `ConnectionArn`: `str`
 - `Name`: `str`
 - `Owner`: `str`
-- `ProviderType`: `ProviderType`
-- `State`: `RepositoryAssociationState`
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)
+- `State`:
+  [RepositoryAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#repositoryassociationstate)
 - `StateReason`: `str`
 - `LastUpdatedTimeStamp`: `datetime`
 - `CreatedTimeStamp`: `datetime`
-- `KMSKeyDetails`: `"KMSKeyDetailsTypeDef"`
-
+- `KMSKeyDetails`:
+  [KMSKeyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#kmskeydetailstypedef)
 
 ## RepositoryHeadSourceCodeTypeTypeDef
 
@@ -445,12 +398,9 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryHeadSourceCodeTypeTypeDef
 ```
 
-
 Required fields:
+
 - `BranchName`: `str`
-
-
-
 
 ## RepositoryTypeDef
 
@@ -458,14 +408,14 @@ Required fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CodeCommit`: `"CodeCommitRepositoryTypeDef"`
-- `Bitbucket`: `"ThirdPartySourceRepositoryTypeDef"`
-- `GitHubEnterpriseServer`: `"ThirdPartySourceRepositoryTypeDef"`
 
+- `CodeCommit`:
+  [CodeCommitRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#codecommitrepositorytypedef)
+- `Bitbucket`:
+  [ThirdPartySourceRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#thirdpartysourcerepositorytypedef)
+- `GitHubEnterpriseServer`:
+  [ThirdPartySourceRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#thirdpartysourcerepositorytypedef)
 
 ## SourceCodeTypeTypeDef
 
@@ -473,13 +423,12 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import SourceCodeTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CommitDiff`: `"CommitDiffSourceCodeTypeTypeDef"`
-- `RepositoryHead`: `"RepositoryHeadSourceCodeTypeTypeDef"`
 
+- `CommitDiff`:
+  [CommitDiffSourceCodeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#commitdiffsourcecodetypetypedef)
+- `RepositoryHead`:
+  [RepositoryHeadSourceCodeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositoryheadsourcecodetypetypedef)
 
 ## ThirdPartySourceRepositoryTypeDef
 
@@ -487,11 +436,8 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import ThirdPartySourceRepositoryTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `ConnectionArn`: `str`
 - `Owner`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WellArchitected](./README.md) > Structures
 
-Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+Auto-generated documentation for
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+type annotations stubs module
+[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Typed dictionaries for boto3 WellArchitected module](#typed-dictionaries-for-boto3-wellarchitected-module)
   - [AnswerSummaryTypeDef](#answersummarytypedef)
@@ -60,18 +62,17 @@ type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/proj
 from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuestionId`: `str`
 - `PillarId`: `str`
 - `QuestionTitle`: `str`
-- `Choices`: `List["ChoiceTypeDef"]`
-- `SelectedChoices`: `List[str]`
+- `Choices`:
+  `List`\[[ChoiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#choicetypedef)\]
+- `SelectedChoices`: `List`\[`str`\]
 - `IsApplicable`: `bool`
-- `Risk`: `Risk`
-
+- `Risk`:
+  [Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk)
 
 ## AnswerTypeDef
 
@@ -79,22 +80,21 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import AnswerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuestionId`: `str`
 - `PillarId`: `str`
 - `QuestionTitle`: `str`
 - `QuestionDescription`: `str`
 - `ImprovementPlanUrl`: `str`
 - `HelpfulResourceUrl`: `str`
-- `Choices`: `List["ChoiceTypeDef"]`
-- `SelectedChoices`: `List[str]`
+- `Choices`:
+  `List`\[[ChoiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#choicetypedef)\]
+- `SelectedChoices`: `List`\[`str`\]
 - `IsApplicable`: `bool`
-- `Risk`: `Risk`
+- `Risk`:
+  [Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk)
 - `Notes`: `str`
-
 
 ## ChoiceTypeDef
 
@@ -102,14 +102,11 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import ChoiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ChoiceId`: `str`
 - `Title`: `str`
 - `Description`: `str`
-
 
 ## CreateMilestoneOutputTypeDef
 
@@ -117,14 +114,12 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import CreateMilestoneOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## CreateWorkloadOutputTypeDef
 
@@ -132,14 +127,12 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `WorkloadArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## CreateWorkloadShareOutputTypeDef
 
@@ -147,14 +140,12 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `ShareId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetAnswerOutputTypeDef
 
@@ -162,16 +153,15 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetAnswerOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
-- `Answer`: `"AnswerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Answer`:
+  [AnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#answertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetLensReviewOutputTypeDef
 
@@ -179,15 +169,14 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
-- `LensReview`: `"LensReviewTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LensReview`:
+  [LensReviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lensreviewtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetLensReviewReportOutputTypeDef
 
@@ -195,15 +184,14 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewReportOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
-- `LensReviewReport`: `"LensReviewReportTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LensReviewReport`:
+  [LensReviewReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lensreviewreporttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetLensVersionDifferenceOutputTypeDef
 
@@ -211,16 +199,15 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `LensAlias`: `str`
 - `BaseLensVersion`: `str`
 - `LatestLensVersion`: `str`
-- `VersionDifferences`: `"VersionDifferencesTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `VersionDifferences`:
+  [VersionDifferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#versiondifferencestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetMilestoneOutputTypeDef
 
@@ -228,14 +215,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetMilestoneOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
-- `Milestone`: `"MilestoneTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Milestone`:
+  [MilestoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#milestonetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## GetWorkloadOutputTypeDef
 
@@ -243,13 +229,12 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import GetWorkloadOutputTypeDef
 ```
 
-
 Required fields:
-- `Workload`: `"WorkloadTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Workload`:
+  [WorkloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ImprovementSummaryTypeDef
 
@@ -257,16 +242,14 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ImprovementSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuestionId`: `str`
 - `PillarId`: `str`
 - `QuestionTitle`: `str`
-- `Risk`: `Risk`
+- `Risk`:
+  [Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk)
 - `ImprovementPlanUrl`: `str`
-
 
 ## LensReviewReportTypeDef
 
@@ -274,13 +257,10 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import LensReviewReportTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LensAlias`: `str`
 - `Base64String`: `str`
-
 
 ## LensReviewSummaryTypeDef
 
@@ -288,17 +268,17 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import LensReviewSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LensAlias`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
-- `LensStatus`: `LensStatus`
+- `LensStatus`:
+  [LensStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#lensstatus)
 - `UpdatedAt`: `datetime`
-- `RiskCounts`: `Dict[Risk, int]`
-
+- `RiskCounts`:
+  `Dict`\[[Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk),
+  `int`\]
 
 ## LensReviewTypeDef
 
@@ -306,20 +286,21 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import LensReviewTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LensAlias`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
-- `LensStatus`: `LensStatus`
-- `PillarReviewSummaries`: `List["PillarReviewSummaryTypeDef"]`
+- `LensStatus`:
+  [LensStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#lensstatus)
+- `PillarReviewSummaries`:
+  `List`\[[PillarReviewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#pillarreviewsummarytypedef)\]
 - `UpdatedAt`: `datetime`
 - `Notes`: `str`
-- `RiskCounts`: `Dict[Risk, int]`
+- `RiskCounts`:
+  `Dict`\[[Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk),
+  `int`\]
 - `NextToken`: `str`
-
 
 ## LensSummaryTypeDef
 
@@ -327,15 +308,12 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import LensSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LensAlias`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
 - `Description`: `str`
-
 
 ## LensUpgradeSummaryTypeDef
 
@@ -343,16 +321,13 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import LensUpgradeSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkloadId`: `str`
 - `WorkloadName`: `str`
 - `LensAlias`: `str`
 - `CurrentLensVersion`: `str`
 - `LatestLensVersion`: `str`
-
 
 ## ListAnswersOutputTypeDef
 
@@ -360,17 +335,16 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import ListAnswersOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
-- `AnswerSummaries`: `List["AnswerSummaryTypeDef"]`
+- `AnswerSummaries`:
+  `List`\[[AnswerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#answersummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListLensReviewImprovementsOutputTypeDef
 
@@ -378,17 +352,16 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewImprovementsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
-- `ImprovementSummaries`: `List["ImprovementSummaryTypeDef"]`
+- `ImprovementSummaries`:
+  `List`\[[ImprovementSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#improvementsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListLensReviewsOutputTypeDef
 
@@ -396,16 +369,15 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
-- `LensReviewSummaries`: `List["LensReviewSummaryTypeDef"]`
+- `LensReviewSummaries`:
+  `List`\[[LensReviewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lensreviewsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListLensesOutputTypeDef
 
@@ -413,14 +385,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListLensesOutputTypeDef
 ```
 
-
 Required fields:
-- `LensSummaries`: `List["LensSummaryTypeDef"]`
+
+- `LensSummaries`:
+  `List`\[[LensSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lenssummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListMilestonesOutputTypeDef
 
@@ -428,15 +399,14 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListMilestonesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
-- `MilestoneSummaries`: `List["MilestoneSummaryTypeDef"]`
+- `MilestoneSummaries`:
+  `List`\[[MilestoneSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#milestonesummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListNotificationsOutputTypeDef
 
@@ -444,14 +414,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListNotificationsOutputTypeDef
 ```
 
-
 Required fields:
-- `NotificationSummaries`: `List["NotificationSummaryTypeDef"]`
+
+- `NotificationSummaries`:
+  `List`\[[NotificationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#notificationsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListShareInvitationsOutputTypeDef
 
@@ -459,14 +428,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListShareInvitationsOutputTypeDef
 ```
 
-
 Required fields:
-- `ShareInvitationSummaries`: `List["ShareInvitationSummaryTypeDef"]`
+
+- `ShareInvitationSummaries`:
+  `List`\[[ShareInvitationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#shareinvitationsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -474,13 +442,11 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `Dict[str, str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListWorkloadSharesOutputTypeDef
 
@@ -488,15 +454,14 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadSharesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
-- `WorkloadShareSummaries`: `List["WorkloadShareSummaryTypeDef"]`
+- `WorkloadShareSummaries`:
+  `List`\[[WorkloadShareSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadsharesummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## ListWorkloadsOutputTypeDef
 
@@ -504,14 +469,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadsOutputTypeDef
 ```
 
-
 Required fields:
-- `WorkloadSummaries`: `List["WorkloadSummaryTypeDef"]`
+
+- `WorkloadSummaries`:
+  `List`\[[WorkloadSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## MilestoneSummaryTypeDef
 
@@ -519,15 +483,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import MilestoneSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MilestoneNumber`: `int`
 - `MilestoneName`: `str`
 - `RecordedAt`: `datetime`
-- `WorkloadSummary`: `"WorkloadSummaryTypeDef"`
-
+- `WorkloadSummary`:
+  [WorkloadSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadsummarytypedef)
 
 ## MilestoneTypeDef
 
@@ -535,15 +497,13 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import MilestoneTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MilestoneNumber`: `int`
 - `MilestoneName`: `str`
 - `RecordedAt`: `datetime`
-- `Workload`: `"WorkloadTypeDef"`
-
+- `Workload`:
+  [WorkloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadtypedef)
 
 ## NotificationSummaryTypeDef
 
@@ -551,13 +511,12 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import NotificationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `NotificationType`
-- `LensUpgradeSummary`: `"LensUpgradeSummaryTypeDef"`
 
+- `Type`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#notificationtype)
+- `LensUpgradeSummary`:
+  [LensUpgradeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lensupgradesummarytypedef)
 
 ## PillarDifferenceTypeDef
 
@@ -565,14 +524,13 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import PillarDifferenceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PillarId`: `str`
-- `DifferenceStatus`: `DifferenceStatus`
-- `QuestionDifferences`: `List["QuestionDifferenceTypeDef"]`
 
+- `PillarId`: `str`
+- `DifferenceStatus`:
+  [DifferenceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#differencestatus)
+- `QuestionDifferences`:
+  `List`\[[QuestionDifferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#questiondifferencetypedef)\]
 
 ## PillarReviewSummaryTypeDef
 
@@ -580,15 +538,14 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import PillarReviewSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PillarId`: `str`
 - `PillarName`: `str`
 - `Notes`: `str`
-- `RiskCounts`: `Dict[Risk, int]`
-
+- `RiskCounts`:
+  `Dict`\[[Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk),
+  `int`\]
 
 ## QuestionDifferenceTypeDef
 
@@ -596,14 +553,12 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import QuestionDifferenceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuestionId`: `str`
 - `QuestionTitle`: `str`
-- `DifferenceStatus`: `DifferenceStatus`
-
+- `DifferenceStatus`:
+  [DifferenceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#differencestatus)
 
 ## ResponseMetadata
 
@@ -611,16 +566,13 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## ShareInvitationSummaryTypeDef
 
@@ -628,17 +580,15 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import ShareInvitationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ShareInvitationId`: `str`
 - `SharedBy`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: `PermissionType`
+- `PermissionType`:
+  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
-
 
 ## ShareInvitationTypeDef
 
@@ -646,13 +596,10 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import ShareInvitationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ShareInvitationId`: `str`
 - `WorkloadId`: `str`
-
 
 ## UpdateAnswerOutputTypeDef
 
@@ -660,15 +607,14 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import UpdateAnswerOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
 - `LensAlias`: `str`
-- `Answer`: `"AnswerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Answer`:
+  [AnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#answertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## UpdateLensReviewOutputTypeDef
 
@@ -676,14 +622,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import UpdateLensReviewOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
-- `LensReview`: `"LensReviewTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LensReview`:
+  [LensReviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#lensreviewtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## UpdateShareInvitationOutputTypeDef
 
@@ -691,13 +636,12 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import UpdateShareInvitationOutputTypeDef
 ```
 
-
 Required fields:
-- `ShareInvitation`: `"ShareInvitationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ShareInvitation`:
+  [ShareInvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#shareinvitationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## UpdateWorkloadOutputTypeDef
 
@@ -705,13 +649,12 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadOutputTypeDef
 ```
 
-
 Required fields:
-- `Workload`: `"WorkloadTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Workload`:
+  [WorkloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## UpdateWorkloadShareOutputTypeDef
 
@@ -719,14 +662,13 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `WorkloadId`: `str`
-- `WorkloadShare`: `"WorkloadShareTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `WorkloadShare`:
+  [WorkloadShareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#workloadsharetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#responsemetadata)
 
 ## VersionDifferencesTypeDef
 
@@ -734,12 +676,10 @@ Required fields:
 from mypy_boto3_wellarchitected.type_defs import VersionDifferencesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PillarDifferences`: `List["PillarDifferenceTypeDef"]`
 
+- `PillarDifferences`:
+  `List`\[[PillarDifferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#pillardifferencetypedef)\]
 
 ## WorkloadShareSummaryTypeDef
 
@@ -747,15 +687,14 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import WorkloadShareSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ShareId`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: `PermissionType`
-- `Status`: `ShareStatus`
-
+- `PermissionType`:
+  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
+- `Status`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#sharestatus)
 
 ## WorkloadShareTypeDef
 
@@ -763,18 +702,17 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import WorkloadShareTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ShareId`: `str`
 - `SharedBy`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: `PermissionType`
-- `Status`: `ShareStatus`
+- `PermissionType`:
+  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
+- `Status`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#sharestatus)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
-
 
 ## WorkloadSummaryTypeDef
 
@@ -782,19 +720,19 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import WorkloadSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkloadId`: `str`
 - `WorkloadArn`: `str`
 - `WorkloadName`: `str`
 - `Owner`: `str`
 - `UpdatedAt`: `datetime`
-- `Lenses`: `List[str]`
-- `RiskCounts`: `Dict[Risk, int]`
-- `ImprovementStatus`: `WorkloadImprovementStatus`
-
+- `Lenses`: `List`\[`str`\]
+- `RiskCounts`:
+  `Dict`\[[Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk),
+  `int`\]
+- `ImprovementStatus`:
+  [WorkloadImprovementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadimprovementstatus)
 
 ## WorkloadTypeDef
 
@@ -802,19 +740,18 @@ Optional fields:
 from mypy_boto3_wellarchitected.type_defs import WorkloadTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkloadId`: `str`
 - `WorkloadArn`: `str`
 - `WorkloadName`: `str`
 - `Description`: `str`
-- `Environment`: `WorkloadEnvironment`
+- `Environment`:
+  [WorkloadEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadenvironment)
 - `UpdatedAt`: `datetime`
-- `AccountIds`: `List[str]`
-- `AwsRegions`: `List[str]`
-- `NonAwsRegions`: `List[str]`
+- `AccountIds`: `List`\[`str`\]
+- `AwsRegions`: `List`\[`str`\]
+- `NonAwsRegions`: `List`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `ReviewOwner`: `str`
 - `ReviewRestrictionDate`: `datetime`
@@ -822,11 +759,13 @@ Optional fields:
 - `IndustryType`: `str`
 - `Industry`: `str`
 - `Notes`: `str`
-- `ImprovementStatus`: `WorkloadImprovementStatus`
-- `RiskCounts`: `Dict[Risk, int]`
-- `PillarPriorities`: `List[str]`
-- `Lenses`: `List[str]`
+- `ImprovementStatus`:
+  [WorkloadImprovementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadimprovementstatus)
+- `RiskCounts`:
+  `Dict`\[[Risk](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#risk),
+  `int`\]
+- `PillarPriorities`: `List`\[`str`\]
+- `Lenses`: `List`\[`str`\]
 - `Owner`: `str`
 - `ShareInvitationId`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]

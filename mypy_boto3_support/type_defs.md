@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Support](./README.md) > Structures
 
-Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+Auto-generated documentation for
+[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+type annotations stubs module
+[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Typed dictionaries for boto3 Support module](#typed-dictionaries-for-boto3-support-module)
   - [AddAttachmentsToSetResponseTypeDef](#addattachmentstosetresponsetypedef)
@@ -44,13 +46,10 @@ type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy
 from mypy_boto3_support.type_defs import AddAttachmentsToSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `attachmentSetId`: `str`
 - `expiryTime`: `str`
-
 
 ## AddCommunicationToCaseResponseTypeDef
 
@@ -58,12 +57,9 @@ Optional fields:
 from mypy_boto3_support.type_defs import AddCommunicationToCaseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `result`: `bool`
 
+- `result`: `bool`
 
 ## AttachmentDetailsTypeDef
 
@@ -71,13 +67,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import AttachmentDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `attachmentId`: `str`
 - `fileName`: `str`
-
 
 ## AttachmentTypeDef
 
@@ -85,13 +78,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import AttachmentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fileName`: `str`
-- `data`: `Union[bytes, IO[bytes]]`
 
+- `fileName`: `str`
+- `data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## CaseDetailsTypeDef
 
@@ -99,10 +89,8 @@ Optional fields:
 from mypy_boto3_support.type_defs import CaseDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `caseId`: `str`
 - `displayId`: `str`
 - `subject`: `str`
@@ -112,10 +100,10 @@ Optional fields:
 - `severityCode`: `str`
 - `submittedBy`: `str`
 - `timeCreated`: `str`
-- `recentCommunications`: `"RecentCaseCommunicationsTypeDef"`
-- `ccEmailAddresses`: `List[str]`
+- `recentCommunications`:
+  [RecentCaseCommunicationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#recentcasecommunicationstypedef)
+- `ccEmailAddresses`: `List`\[`str`\]
 - `language`: `str`
-
 
 ## CategoryTypeDef
 
@@ -123,13 +111,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import CategoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `name`: `str`
-
 
 ## CommunicationTypeDef
 
@@ -137,16 +122,14 @@ Optional fields:
 from mypy_boto3_support.type_defs import CommunicationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `caseId`: `str`
 - `body`: `str`
 - `submittedBy`: `str`
 - `timeCreated`: `str`
-- `attachmentSet`: `List["AttachmentDetailsTypeDef"]`
-
+- `attachmentSet`:
+  `List`\[[AttachmentDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#attachmentdetailstypedef)\]
 
 ## CreateCaseResponseTypeDef
 
@@ -154,12 +137,9 @@ Optional fields:
 from mypy_boto3_support.type_defs import CreateCaseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `caseId`: `str`
 
+- `caseId`: `str`
 
 ## DescribeAttachmentResponseTypeDef
 
@@ -167,12 +147,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeAttachmentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attachment`: `"AttachmentTypeDef"`
 
+- `attachment`:
+  [AttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#attachmenttypedef)
 
 ## DescribeCasesResponseTypeDef
 
@@ -180,13 +158,11 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeCasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cases`: `List["CaseDetailsTypeDef"]`
-- `nextToken`: `str`
 
+- `cases`:
+  `List`\[[CaseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#casedetailstypedef)\]
+- `nextToken`: `str`
 
 ## DescribeCommunicationsResponseTypeDef
 
@@ -194,13 +170,11 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeCommunicationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `communications`: `List["CommunicationTypeDef"]`
-- `nextToken`: `str`
 
+- `communications`:
+  `List`\[[CommunicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#communicationtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeServicesResponseTypeDef
 
@@ -208,12 +182,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeServicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `services`: `List["ServiceTypeDef"]`
 
+- `services`:
+  `List`\[[ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#servicetypedef)\]
 
 ## DescribeSeverityLevelsResponseTypeDef
 
@@ -221,12 +193,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeSeverityLevelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `severityLevels`: `List["SeverityLevelTypeDef"]`
 
+- `severityLevels`:
+  `List`\[[SeverityLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#severityleveltypedef)\]
 
 ## DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
 
@@ -234,12 +204,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
 ```
 
-
 Required fields:
-- `statuses`: `List["TrustedAdvisorCheckRefreshStatusTypeDef"]`
 
-
-
+- `statuses`:
+  `List`\[[TrustedAdvisorCheckRefreshStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcheckrefreshstatustypedef)\]
 
 ## DescribeTrustedAdvisorCheckResultResponseTypeDef
 
@@ -247,12 +215,10 @@ Required fields:
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `result`: `"TrustedAdvisorCheckResultTypeDef"`
 
+- `result`:
+  [TrustedAdvisorCheckResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcheckresulttypedef)
 
 ## DescribeTrustedAdvisorCheckSummariesResponseTypeDef
 
@@ -260,12 +226,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesResponseTypeDef
 ```
 
-
 Required fields:
-- `summaries`: `List["TrustedAdvisorCheckSummaryTypeDef"]`
 
-
-
+- `summaries`:
+  `List`\[[TrustedAdvisorCheckSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorchecksummarytypedef)\]
 
 ## DescribeTrustedAdvisorChecksResponseTypeDef
 
@@ -273,12 +237,10 @@ Required fields:
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksResponseTypeDef
 ```
 
-
 Required fields:
-- `checks`: `List["TrustedAdvisorCheckDescriptionTypeDef"]`
 
-
-
+- `checks`:
+  `List`\[[TrustedAdvisorCheckDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcheckdescriptiontypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -286,14 +248,11 @@ Required fields:
 from mypy_boto3_support.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RecentCaseCommunicationsTypeDef
 
@@ -301,13 +260,11 @@ Optional fields:
 from mypy_boto3_support.type_defs import RecentCaseCommunicationsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `communications`: `List["CommunicationTypeDef"]`
-- `nextToken`: `str`
 
+- `communications`:
+  `List`\[[CommunicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#communicationtypedef)\]
+- `nextToken`: `str`
 
 ## RefreshTrustedAdvisorCheckResponseTypeDef
 
@@ -315,12 +272,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckResponseTypeDef
 ```
 
-
 Required fields:
-- `status`: `"TrustedAdvisorCheckRefreshStatusTypeDef"`
 
-
-
+- `status`:
+  [TrustedAdvisorCheckRefreshStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcheckrefreshstatustypedef)
 
 ## ResolveCaseResponseTypeDef
 
@@ -328,13 +283,10 @@ Required fields:
 from mypy_boto3_support.type_defs import ResolveCaseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `initialCaseStatus`: `str`
 - `finalCaseStatus`: `str`
-
 
 ## ServiceTypeDef
 
@@ -342,14 +294,12 @@ Optional fields:
 from mypy_boto3_support.type_defs import ServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `name`: `str`
-- `categories`: `List["CategoryTypeDef"]`
-
+- `categories`:
+  `List`\[[CategoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#categorytypedef)\]
 
 ## SeverityLevelTypeDef
 
@@ -357,13 +307,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import SeverityLevelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `name`: `str`
-
 
 ## TrustedAdvisorCategorySpecificSummaryTypeDef
 
@@ -371,12 +318,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCategorySpecificSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `costOptimizing`: `"TrustedAdvisorCostOptimizingSummaryTypeDef"`
 
+- `costOptimizing`:
+  [TrustedAdvisorCostOptimizingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcostoptimizingsummarytypedef)
 
 ## TrustedAdvisorCheckDescriptionTypeDef
 
@@ -384,16 +329,13 @@ Optional fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
 - `description`: `str`
 - `category`: `str`
-- `metadata`: `List[str]`
-
-
-
+- `metadata`: `List`\[`str`\]
 
 ## TrustedAdvisorCheckRefreshStatusTypeDef
 
@@ -401,14 +343,11 @@ Required fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckRefreshStatusTypeDef
 ```
 
-
 Required fields:
+
 - `checkId`: `str`
 - `status`: `str`
 - `millisUntilNextRefreshable`: `int`
-
-
-
 
 ## TrustedAdvisorCheckResultTypeDef
 
@@ -416,17 +355,17 @@ Required fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckResultTypeDef
 ```
 
-
 Required fields:
+
 - `checkId`: `str`
 - `timestamp`: `str`
 - `status`: `str`
-- `resourcesSummary`: `"TrustedAdvisorResourcesSummaryTypeDef"`
-- `categorySpecificSummary`: `"TrustedAdvisorCategorySpecificSummaryTypeDef"`
-- `flaggedResources`: `List["TrustedAdvisorResourceDetailTypeDef"]`
-
-
-
+- `resourcesSummary`:
+  [TrustedAdvisorResourcesSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorresourcessummarytypedef)
+- `categorySpecificSummary`:
+  [TrustedAdvisorCategorySpecificSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcategoryspecificsummarytypedef)
+- `flaggedResources`:
+  `List`\[[TrustedAdvisorResourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorresourcedetailtypedef)\]
 
 ## TrustedAdvisorCheckSummaryTypeDef
 
@@ -434,19 +373,19 @@ Required fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `checkId`: `str`
 - `timestamp`: `str`
 - `status`: `str`
-- `resourcesSummary`: `"TrustedAdvisorResourcesSummaryTypeDef"`
-- `categorySpecificSummary`: `"TrustedAdvisorCategorySpecificSummaryTypeDef"`
-
-
+- `resourcesSummary`:
+  [TrustedAdvisorResourcesSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorresourcessummarytypedef)
+- `categorySpecificSummary`:
+  [TrustedAdvisorCategorySpecificSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#trustedadvisorcategoryspecificsummarytypedef)
 
 Optional fields:
-- `hasFlaggedResources`: `bool`
 
+- `hasFlaggedResources`: `bool`
 
 ## TrustedAdvisorCostOptimizingSummaryTypeDef
 
@@ -454,13 +393,10 @@ Optional fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorCostOptimizingSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `estimatedMonthlySavings`: `float`
 - `estimatedPercentMonthlySavings`: `float`
-
-
-
 
 ## TrustedAdvisorResourceDetailTypeDef
 
@@ -468,18 +404,16 @@ Required fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorResourceDetailTypeDef
 ```
 
-
 Required fields:
+
 - `status`: `str`
 - `resourceId`: `str`
-- `metadata`: `List[str]`
-
-
+- `metadata`: `List`\[`str`\]
 
 Optional fields:
+
 - `region`: `str`
 - `isSuppressed`: `bool`
-
 
 ## TrustedAdvisorResourcesSummaryTypeDef
 
@@ -487,12 +421,9 @@ Optional fields:
 from mypy_boto3_support.type_defs import TrustedAdvisorResourcesSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `resourcesProcessed`: `int`
 - `resourcesFlagged`: `int`
 - `resourcesIgnored`: `int`
 - `resourcesSuppressed`: `int`
-
-
-

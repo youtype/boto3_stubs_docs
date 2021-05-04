@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [TimestreamQuery](./README.md) > TimestreamQueryClient
 
-Auto-generated documentation for [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
-type annotations stubs module [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+Auto-generated documentation for
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+type annotations stubs module
+[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [TimestreamQueryClient for boto3 TimestreamQuery module](#timestreamqueryclient-for-boto3-timestreamquery-module)
   - [TimestreamQueryClient](#timestreamqueryclient)
@@ -29,12 +31,13 @@ def get_timestream-query_client() -> TimestreamQueryClient:
     return boto3.client("timestream-query")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
+Boto3 documentation:
+[TimestreamQuery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_timestream_query.client import Exceptions
@@ -42,7 +45,6 @@ from mypy_boto3_timestream_query.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -55,91 +57,84 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("timestream-query").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate]
+Boto3 documentation:
+[TimestreamQuery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_query
 
 Type annotations for `boto3.client("timestream-query").cancel_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query]
+Boto3 documentation:
+[TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
 
-```python
-def cancel_query(
-    self,
-    QueryId: str
-) -> CancelQueryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryId`: `str` *(required)*
+
+Returns
+[CancelQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#cancelqueryresponsetypedef).
 
 ### describe_endpoints
 
-Type annotations for `boto3.client("timestream-query").describe_endpoints` method.
+Type annotations for `boto3.client("timestream-query").describe_endpoints`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints]
+Boto3 documentation:
+[TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
 
-```python
-def describe_endpoints(
-    self
-) -> DescribeEndpointsResponseTypeDef:
-    pass
-```
+Returns
+[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#describeendpointsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("timestream-query").generate_presigned_url` method.
+Type annotations for `boto3.client("timestream-query").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url]
+Boto3 documentation:
+[TimestreamQuery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### query
 
 Type annotations for `boto3.client("timestream-query").query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query]
+Boto3 documentation:
+[TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
 
-```python
-def query(
-    self,
-    QueryString: str,
-    ClientToken: str = None,
-    NextToken: str = None,
-    MaxRows: int = None
-) -> QueryResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `QueryString`: `str` *(required)*
+- `ClientToken`: `str`
+- `NextToken`: `str`
+- `MaxRows`: `int`
 
+Returns
+[QueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#queryresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("timestream-query").get_paginator` method with overloads.
+Type annotations for `boto3.client("timestream-query").get_paginator` method
+with overloads.
 
-- `client.get_paginator("query")` -> [QueryPaginator](./paginators.md#querypaginator)
-
-
+- `client.get_paginator("query")` ->
+  [QueryPaginator](./paginators.md#querypaginator)

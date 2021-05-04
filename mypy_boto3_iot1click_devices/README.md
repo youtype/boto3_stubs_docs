@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoT1ClickDevicesService
 
-Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+Auto-generated documentation for
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+type annotations stubs module
+[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ```bash
 pip install mypy-boto3-iot1click-devices
@@ -19,7 +21,8 @@ pip install mypy-boto3-iot1click-devices
 
 ## IoT1ClickDevicesServiceClient
 
-Type annotations for  `boto3.client("iot1click-devices")` as [IoT1ClickDevicesServiceClient](./client.md)
+Type annotations for `boto3.client("iot1click-devices")` as
+[IoT1ClickDevicesServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 ```
 
-
 IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [claim_devices_by_claim_code](./client.md#claim-devices-by-claim-code)
 - [describe_device](./client.md#describe-device)
@@ -50,10 +51,8 @@ IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_device_state](./client.md#update-device-state)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ForbiddenException](./client.md#forbiddenexception)
 - [InternalFailureException](./client.md#internalfailureexception)
@@ -63,14 +62,10 @@ IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
 - [ResourceConflictException](./client.md#resourceconflictexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iot1click-devices").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iot1click-devices").get_paginator("...")`.
 
 Can be used directly:
 
@@ -80,11 +75,6 @@ from mypy_boto3_iot1click_devices.paginators import ListDeviceEventsPaginator, .
 
 - [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
 - [ListDevicesPaginator](./paginators.md#listdevicespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -99,13 +89,10 @@ from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName,
 - [ListDeviceEventsPaginatorName](./literals.md#listdeviceeventspaginatorname)
 - [ListDevicesPaginatorName](./literals.md#listdevicespaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

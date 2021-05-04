@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Organizations](./README.md) > Literals
 
-Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+Auto-generated documentation for
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+type annotations stubs module
+[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Literals for boto3 Organizations module](#literals-for-boto3-organizations-module)
   - [AccountJoinedMethod](#accountjoinedmethod)

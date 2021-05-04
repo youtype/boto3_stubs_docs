@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IdentityStore
 
-Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
-type annotations stubs module [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+Auto-generated documentation for
+[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
+type annotations stubs module
+[mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 ```bash
 pip install mypy-boto3-identitystore
@@ -17,7 +19,8 @@ pip install mypy-boto3-identitystore
 
 ## IdentityStoreClient
 
-Type annotations for  `boto3.client("identitystore")` as [IdentityStoreClient](./client.md)
+Type annotations for `boto3.client("identitystore")` as
+[IdentityStoreClient](./client.md)
 
 Can be used directly:
 
@@ -25,12 +28,10 @@ Can be used directly:
 from mypy_boto3_identitystore.client import IdentityStoreClient
 ```
 
-
 IdentityStoreClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_group](./client.md#describe-group)
 - [describe_user](./client.md#describe-user)
@@ -38,10 +39,8 @@ IdentityStoreClient [exceptions](./client.md#exceptions)
 - [list_groups](./client.md#list-groups)
 - [list_users](./client.md#list-users)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
@@ -49,21 +48,10 @@ IdentityStoreClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

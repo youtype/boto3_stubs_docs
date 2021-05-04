@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > NetworkManager
 
-Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+Auto-generated documentation for
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+type annotations stubs module
+[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 ```bash
 pip install mypy-boto3-networkmanager
@@ -19,7 +21,8 @@ pip install mypy-boto3-networkmanager
 
 ## NetworkManagerClient
 
-Type annotations for  `boto3.client("networkmanager")` as [NetworkManagerClient](./client.md)
+Type annotations for `boto3.client("networkmanager")` as
+[NetworkManagerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_networkmanager.client import NetworkManagerClient
 ```
 
-
 NetworkManagerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_customer_gateway](./client.md#associate-customer-gateway)
 - [associate_link](./client.md#associate-link)
 - [associate_transit_gateway_connect_peer](./client.md#associate-transit-gateway-connect-peer)
@@ -72,10 +73,8 @@ NetworkManagerClient [exceptions](./client.md#exceptions)
 - [update_link](./client.md#update-link)
 - [update_site](./client.md#update-site)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -85,14 +84,10 @@ NetworkManagerClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("networkmanager").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("networkmanager").get_paginator("...")`.
 
 Can be used directly:
 
@@ -109,11 +104,6 @@ from mypy_boto3_networkmanager.paginators import DescribeGlobalNetworksPaginator
 - [GetSitesPaginator](./paginators.md#getsitespaginator)
 - [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
 - [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -144,13 +134,10 @@ from mypy_boto3_networkmanager.literals import ConnectionState, ...
 - [TransitGatewayConnectPeerAssociationState](./literals.md#transitgatewayconnectpeerassociationstate)
 - [TransitGatewayRegistrationState](./literals.md#transitgatewayregistrationstate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

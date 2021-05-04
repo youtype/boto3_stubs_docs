@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Structures
 
-Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+Auto-generated documentation for
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+type annotations stubs module
+[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Typed dictionaries for boto3 ElasticBeanstalk module](#typed-dictionaries-for-boto3-elasticbeanstalk-module)
   - [ApplicationDescriptionMessageTypeDef](#applicationdescriptionmessagetypedef)
@@ -97,12 +99,10 @@ type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/pro
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Application`: `"ApplicationDescriptionTypeDef"`
 
+- `Application`:
+  [ApplicationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationdescriptiontypedef)
 
 ## ApplicationDescriptionTypeDef
 
@@ -110,19 +110,17 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationArn`: `str`
 - `ApplicationName`: `str`
 - `Description`: `str`
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `Versions`: `List[str]`
-- `ConfigurationTemplates`: `List[str]`
-- `ResourceLifecycleConfig`: `"ApplicationResourceLifecycleConfigTypeDef"`
-
+- `Versions`: `List`\[`str`\]
+- `ConfigurationTemplates`: `List`\[`str`\]
+- `ResourceLifecycleConfig`:
+  [ApplicationResourceLifecycleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationresourcelifecycleconfigtypedef)
 
 ## ApplicationDescriptionsMessageTypeDef
 
@@ -130,12 +128,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Applications`: `List["ApplicationDescriptionTypeDef"]`
 
+- `Applications`:
+  `List`\[[ApplicationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationdescriptiontypedef)\]
 
 ## ApplicationMetricsTypeDef
 
@@ -143,15 +139,14 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Duration`: `int`
 - `RequestCount`: `int`
-- `StatusCodes`: `"StatusCodesTypeDef"`
-- `Latency`: `"LatencyTypeDef"`
-
+- `StatusCodes`:
+  [StatusCodesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#statuscodestypedef)
+- `Latency`:
+  [LatencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#latencytypedef)
 
 ## ApplicationResourceLifecycleConfigTypeDef
 
@@ -159,13 +154,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceRole`: `str`
-- `VersionLifecycleConfig`: `"ApplicationVersionLifecycleConfigTypeDef"`
 
+- `ServiceRole`: `str`
+- `VersionLifecycleConfig`:
+  [ApplicationVersionLifecycleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversionlifecycleconfigtypedef)
 
 ## ApplicationResourceLifecycleDescriptionMessageTypeDef
 
@@ -173,13 +166,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleDescriptionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationName`: `str`
-- `ResourceLifecycleConfig`: `"ApplicationResourceLifecycleConfigTypeDef"`
 
+- `ApplicationName`: `str`
+- `ResourceLifecycleConfig`:
+  [ApplicationResourceLifecycleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationresourcelifecycleconfigtypedef)
 
 ## ApplicationVersionDescriptionMessageTypeDef
 
@@ -187,12 +178,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationVersion`: `"ApplicationVersionDescriptionTypeDef"`
 
+- `ApplicationVersion`:
+  [ApplicationVersionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptiontypedef)
 
 ## ApplicationVersionDescriptionTypeDef
 
@@ -200,21 +189,21 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationVersionArn`: `str`
 - `ApplicationName`: `str`
 - `Description`: `str`
 - `VersionLabel`: `str`
-- `SourceBuildInformation`: `"SourceBuildInformationTypeDef"`
+- `SourceBuildInformation`:
+  [SourceBuildInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#sourcebuildinformationtypedef)
 - `BuildArn`: `str`
-- `SourceBundle`: `"S3LocationTypeDef"`
+- `SourceBundle`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#s3locationtypedef)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `Status`: `ApplicationVersionStatus`
-
+- `Status`:
+  [ApplicationVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#applicationversionstatus)
 
 ## ApplicationVersionDescriptionsMessageTypeDef
 
@@ -222,13 +211,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationVersions`: `List["ApplicationVersionDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `ApplicationVersions`:
+  `List`\[[ApplicationVersionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## ApplicationVersionLifecycleConfigTypeDef
 
@@ -236,13 +223,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionLifecycleConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MaxCountRule`: `"MaxCountRuleTypeDef"`
-- `MaxAgeRule`: `"MaxAgeRuleTypeDef"`
 
+- `MaxCountRule`:
+  [MaxCountRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#maxcountruletypedef)
+- `MaxAgeRule`:
+  [MaxAgeRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#maxageruletypedef)
 
 ## ApplyEnvironmentManagedActionResultTypeDef
 
@@ -250,15 +236,13 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionId`: `str`
 - `ActionDescription`: `str`
-- `ActionType`: `ActionType`
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actiontype)
 - `Status`: `str`
-
 
 ## AutoScalingGroupTypeDef
 
@@ -266,12 +250,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import AutoScalingGroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## BuildConfigurationTypeDef
 
@@ -279,18 +260,17 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import BuildConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `CodeBuildServiceRole`: `str`
 - `Image`: `str`
 
-
-
 Optional fields:
-- `ArtifactName`: `str`
-- `ComputeType`: `ComputeType`
-- `TimeoutInMinutes`: `int`
 
+- `ArtifactName`: `str`
+- `ComputeType`:
+  [ComputeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#computetype)
+- `TimeoutInMinutes`: `int`
 
 ## BuilderTypeDef
 
@@ -298,12 +278,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import BuilderTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
 
+- `ARN`: `str`
 
 ## CPUUtilizationTypeDef
 
@@ -311,10 +288,8 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import CPUUtilizationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `User`: `float`
 - `Nice`: `float`
 - `System`: `float`
@@ -324,20 +299,16 @@ Optional fields:
 - `SoftIRQ`: `float`
 - `Privileged`: `float`
 
-
 ## CheckDNSAvailabilityResultMessageTypeDef
 
 ```python
 from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityResultMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Available`: `bool`
 - `FullyQualifiedCNAME`: `str`
-
 
 ## ConfigurationOptionDescriptionTypeDef
 
@@ -345,22 +316,21 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Namespace`: `str`
 - `Name`: `str`
 - `DefaultValue`: `str`
 - `ChangeSeverity`: `str`
 - `UserDefined`: `bool`
-- `ValueType`: `ConfigurationOptionValueType`
-- `ValueOptions`: `List[str]`
+- `ValueType`:
+  [ConfigurationOptionValueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#configurationoptionvaluetype)
+- `ValueOptions`: `List`\[`str`\]
 - `MinValue`: `int`
 - `MaxValue`: `int`
 - `MaxLength`: `int`
-- `Regex`: `"OptionRestrictionRegexTypeDef"`
-
+- `Regex`:
+  [OptionRestrictionRegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#optionrestrictionregextypedef)
 
 ## ConfigurationOptionSettingTypeDef
 
@@ -368,15 +338,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionSettingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceName`: `str`
 - `Namespace`: `str`
 - `OptionName`: `str`
 - `Value`: `str`
-
 
 ## ConfigurationOptionsDescriptionTypeDef
 
@@ -384,14 +351,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionsDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
-- `Options`: `List["ConfigurationOptionDescriptionTypeDef"]`
-
+- `Options`:
+  `List`\[[ConfigurationOptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptiondescriptiontypedef)\]
 
 ## ConfigurationSettingsDescriptionTypeDef
 
@@ -399,21 +364,20 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
 - `Description`: `str`
 - `EnvironmentName`: `str`
-- `DeploymentStatus`: `ConfigurationDeploymentStatus`
+- `DeploymentStatus`:
+  [ConfigurationDeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#configurationdeploymentstatus)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `OptionSettings`: `List["ConfigurationOptionSettingTypeDef"]`
-
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
 
 ## ConfigurationSettingsDescriptionsTypeDef
 
@@ -421,12 +385,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationSettings`: `List["ConfigurationSettingsDescriptionTypeDef"]`
 
+- `ConfigurationSettings`:
+  `List`\[[ConfigurationSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationsettingsdescriptiontypedef)\]
 
 ## ConfigurationSettingsValidationMessagesTypeDef
 
@@ -434,12 +396,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsValidationMessagesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Messages`: `List["ValidationMessageTypeDef"]`
 
+- `Messages`:
+  `List`\[[ValidationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#validationmessagetypedef)\]
 
 ## CreatePlatformVersionResultTypeDef
 
@@ -447,13 +407,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformSummary`: `"PlatformSummaryTypeDef"`
-- `Builder`: `"BuilderTypeDef"`
 
+- `PlatformSummary`:
+  [PlatformSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformsummarytypedef)
+- `Builder`:
+  [BuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#buildertypedef)
 
 ## CreateStorageLocationResultMessageTypeDef
 
@@ -461,12 +420,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import CreateStorageLocationResultMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Bucket`: `str`
 
+- `S3Bucket`: `str`
 
 ## CustomAmiTypeDef
 
@@ -474,13 +430,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import CustomAmiTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VirtualizationType`: `str`
 - `ImageId`: `str`
-
 
 ## DeletePlatformVersionResultTypeDef
 
@@ -488,12 +441,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformSummary`: `"PlatformSummaryTypeDef"`
 
+- `PlatformSummary`:
+  [PlatformSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformsummarytypedef)
 
 ## DeploymentTypeDef
 
@@ -501,15 +452,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VersionLabel`: `str`
 - `DeploymentId`: `int`
 - `Status`: `str`
 - `DeploymentTime`: `datetime`
-
 
 ## DescribeAccountAttributesResultTypeDef
 
@@ -517,12 +465,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeAccountAttributesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceQuotas`: `"ResourceQuotasTypeDef"`
 
+- `ResourceQuotas`:
+  [ResourceQuotasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotastypedef)
 
 ## DescribeEnvironmentHealthResultTypeDef
 
@@ -530,19 +476,19 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnvironmentName`: `str`
 - `HealthStatus`: `str`
-- `Status`: `EnvironmentHealth`
+- `Status`:
+  [EnvironmentHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmenthealth)
 - `Color`: `str`
-- `Causes`: `List[str]`
-- `ApplicationMetrics`: `"ApplicationMetricsTypeDef"`
-- `InstancesHealth`: `"InstanceHealthSummaryTypeDef"`
+- `Causes`: `List`\[`str`\]
+- `ApplicationMetrics`:
+  [ApplicationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationmetricstypedef)
+- `InstancesHealth`:
+  [InstanceHealthSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#instancehealthsummarytypedef)
 - `RefreshedAt`: `datetime`
-
 
 ## DescribeEnvironmentManagedActionHistoryResultTypeDef
 
@@ -550,13 +496,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManagedActionHistoryItems`: `List["ManagedActionHistoryItemTypeDef"]`
-- `NextToken`: `str`
 
+- `ManagedActionHistoryItems`:
+  `List`\[[ManagedActionHistoryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#managedactionhistoryitemtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeEnvironmentManagedActionsResultTypeDef
 
@@ -564,12 +508,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManagedActions`: `List["ManagedActionTypeDef"]`
 
+- `ManagedActions`:
+  `List`\[[ManagedActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#managedactiontypedef)\]
 
 ## DescribeInstancesHealthResultTypeDef
 
@@ -577,14 +519,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceHealthList`: `List["SingleInstanceHealthTypeDef"]`
+
+- `InstanceHealthList`:
+  `List`\[[SingleInstanceHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#singleinstancehealthtypedef)\]
 - `RefreshedAt`: `datetime`
 - `NextToken`: `str`
-
 
 ## DescribePlatformVersionResultTypeDef
 
@@ -592,12 +532,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformDescription`: `"PlatformDescriptionTypeDef"`
 
+- `PlatformDescription`:
+  [PlatformDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformdescriptiontypedef)
 
 ## EnvironmentDescriptionTypeDef
 
@@ -605,10 +543,8 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `ApplicationName`: `str`
@@ -621,16 +557,21 @@ Optional fields:
 - `CNAME`: `str`
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `Status`: `EnvironmentStatus`
+- `Status`:
+  [EnvironmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmentstatus)
 - `AbortableOperationInProgress`: `bool`
-- `Health`: `EnvironmentHealth`
-- `HealthStatus`: `EnvironmentHealthStatus`
-- `Resources`: `"EnvironmentResourcesDescriptionTypeDef"`
-- `Tier`: `"EnvironmentTierTypeDef"`
-- `EnvironmentLinks`: `List["EnvironmentLinkTypeDef"]`
+- `Health`:
+  [EnvironmentHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmenthealth)
+- `HealthStatus`:
+  [EnvironmentHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmenthealthstatus)
+- `Resources`:
+  [EnvironmentResourcesDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentresourcesdescriptiontypedef)
+- `Tier`:
+  [EnvironmentTierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmenttiertypedef)
+- `EnvironmentLinks`:
+  `List`\[[EnvironmentLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentlinktypedef)\]
 - `EnvironmentArn`: `str`
 - `OperationsRole`: `str`
-
 
 ## EnvironmentDescriptionsMessageTypeDef
 
@@ -638,13 +579,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Environments`: `List["EnvironmentDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Environments`:
+  `List`\[[EnvironmentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## EnvironmentInfoDescriptionTypeDef
 
@@ -652,15 +591,13 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentInfoDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InfoType`: `EnvironmentInfoType`
+
+- `InfoType`:
+  [EnvironmentInfoType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmentinfotype)
 - `Ec2InstanceId`: `str`
 - `SampleTimestamp`: `datetime`
 - `Message`: `str`
-
 
 ## EnvironmentLinkTypeDef
 
@@ -668,13 +605,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentLinkTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LinkName`: `str`
 - `EnvironmentName`: `str`
-
 
 ## EnvironmentResourceDescriptionTypeDef
 
@@ -682,19 +616,23 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EnvironmentName`: `str`
-- `AutoScalingGroups`: `List["AutoScalingGroupTypeDef"]`
-- `Instances`: `List["InstanceTypeDef"]`
-- `LaunchConfigurations`: `List["LaunchConfigurationTypeDef"]`
-- `LaunchTemplates`: `List["LaunchTemplateTypeDef"]`
-- `LoadBalancers`: `List["LoadBalancerTypeDef"]`
-- `Triggers`: `List["TriggerTypeDef"]`
-- `Queues`: `List["QueueTypeDef"]`
 
+- `EnvironmentName`: `str`
+- `AutoScalingGroups`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#autoscalinggrouptypedef)\]
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#instancetypedef)\]
+- `LaunchConfigurations`:
+  `List`\[[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#launchconfigurationtypedef)\]
+- `LaunchTemplates`:
+  `List`\[[LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#launchtemplatetypedef)\]
+- `LoadBalancers`:
+  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#loadbalancertypedef)\]
+- `Triggers`:
+  `List`\[[TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#triggertypedef)\]
+- `Queues`:
+  `List`\[[QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#queuetypedef)\]
 
 ## EnvironmentResourceDescriptionsMessageTypeDef
 
@@ -702,12 +640,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EnvironmentResources`: `"EnvironmentResourceDescriptionTypeDef"`
 
+- `EnvironmentResources`:
+  [EnvironmentResourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentresourcedescriptiontypedef)
 
 ## EnvironmentResourcesDescriptionTypeDef
 
@@ -715,12 +651,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourcesDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoadBalancer`: `"LoadBalancerDescriptionTypeDef"`
 
+- `LoadBalancer`:
+  [LoadBalancerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#loadbalancerdescriptiontypedef)
 
 ## EnvironmentTierTypeDef
 
@@ -728,14 +662,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentTierTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Type`: `str`
 - `Version`: `str`
-
 
 ## EventDescriptionTypeDef
 
@@ -743,10 +674,8 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EventDate`: `datetime`
 - `Message`: `str`
 - `ApplicationName`: `str`
@@ -755,8 +684,8 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `PlatformArn`: `str`
 - `RequestId`: `str`
-- `Severity`: `EventSeverity`
-
+- `Severity`:
+  [EventSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#eventseverity)
 
 ## EventDescriptionsMessageTypeDef
 
@@ -764,13 +693,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Events`: `List["EventDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Events`:
+  `List`\[[EventDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#eventdescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## InstanceHealthSummaryTypeDef
 
@@ -778,10 +705,8 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import InstanceHealthSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NoData`: `int`
 - `Unknown`: `int`
 - `Pending`: `int`
@@ -791,19 +716,15 @@ Optional fields:
 - `Degraded`: `int`
 - `Severe`: `int`
 
-
 ## InstanceTypeDef
 
 ```python
 from mypy_boto3_elasticbeanstalk.type_defs import InstanceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
 
+- `Id`: `str`
 
 ## LatencyTypeDef
 
@@ -811,10 +732,8 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import LatencyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `P999`: `float`
 - `P99`: `float`
 - `P95`: `float`
@@ -824,19 +743,15 @@ Optional fields:
 - `P50`: `float`
 - `P10`: `float`
 
-
 ## LaunchConfigurationTypeDef
 
 ```python
 from mypy_boto3_elasticbeanstalk.type_defs import LaunchConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## LaunchTemplateTypeDef
 
@@ -844,12 +759,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import LaunchTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
 
+- `Id`: `str`
 
 ## ListAvailableSolutionStacksResultMessageTypeDef
 
@@ -857,13 +769,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ListAvailableSolutionStacksResultMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SolutionStacks`: `List[str]`
-- `SolutionStackDetails`: `List["SolutionStackDescriptionTypeDef"]`
 
+- `SolutionStacks`: `List`\[`str`\]
+- `SolutionStackDetails`:
+  `List`\[[SolutionStackDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#solutionstackdescriptiontypedef)\]
 
 ## ListPlatformBranchesResultTypeDef
 
@@ -871,13 +781,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformBranchSummaryList`: `List["PlatformBranchSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PlatformBranchSummaryList`:
+  `List`\[[PlatformBranchSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformbranchsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListPlatformVersionsResultTypeDef
 
@@ -885,13 +793,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformSummaryList`: `List["PlatformSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PlatformSummaryList`:
+  `List`\[[PlatformSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListenerTypeDef
 
@@ -899,13 +805,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ListenerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Protocol`: `str`
 - `Port`: `int`
-
 
 ## LoadBalancerDescriptionTypeDef
 
@@ -913,14 +816,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import LoadBalancerDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LoadBalancerName`: `str`
 - `Domain`: `str`
-- `Listeners`: `List["ListenerTypeDef"]`
-
+- `Listeners`:
+  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#listenertypedef)\]
 
 ## LoadBalancerTypeDef
 
@@ -928,12 +829,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import LoadBalancerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## ManagedActionHistoryItemTypeDef
 
@@ -941,19 +839,19 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ManagedActionHistoryItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionId`: `str`
-- `ActionType`: `ActionType`
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actiontype)
 - `ActionDescription`: `str`
-- `FailureType`: `FailureType`
-- `Status`: `ActionHistoryStatus`
+- `FailureType`:
+  [FailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#failuretype)
+- `Status`:
+  [ActionHistoryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actionhistorystatus)
 - `FailureDescription`: `str`
 - `ExecutedTime`: `datetime`
 - `FinishedTime`: `datetime`
-
 
 ## ManagedActionTypeDef
 
@@ -961,16 +859,15 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ManagedActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionId`: `str`
 - `ActionDescription`: `str`
-- `ActionType`: `ActionType`
-- `Status`: `ActionStatus`
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actiontype)
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actionstatus)
 - `WindowStartTime`: `datetime`
-
 
 ## MaxAgeRuleTypeDef
 
@@ -978,16 +875,14 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import MaxAgeRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `MaxAgeInDays`: `int`
 - `DeleteSourceFromS3`: `bool`
-
 
 ## MaxCountRuleTypeDef
 
@@ -995,16 +890,14 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import MaxCountRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `MaxCount`: `int`
 - `DeleteSourceFromS3`: `bool`
-
 
 ## OptionRestrictionRegexTypeDef
 
@@ -1012,13 +905,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import OptionRestrictionRegexTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Pattern`: `str`
 - `Label`: `str`
-
 
 ## OptionSpecificationTypeDef
 
@@ -1026,14 +916,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import OptionSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceName`: `str`
 - `Namespace`: `str`
 - `OptionName`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -1041,14 +928,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlatformBranchSummaryTypeDef
 
@@ -1056,16 +940,13 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformBranchSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PlatformName`: `str`
 - `BranchName`: `str`
 - `LifecycleState`: `str`
 - `BranchOrder`: `int`
-- `SupportedTierList`: `List[str]`
-
+- `SupportedTierList`: `List`\[`str`\]
 
 ## PlatformDescriptionTypeDef
 
@@ -1073,16 +954,15 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PlatformArn`: `str`
 - `PlatformOwner`: `str`
 - `PlatformName`: `str`
 - `PlatformVersion`: `str`
 - `SolutionStackName`: `str`
-- `PlatformStatus`: `PlatformStatus`
+- `PlatformStatus`:
+  [PlatformStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#platformstatus)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
 - `PlatformCategory`: `str`
@@ -1090,15 +970,17 @@ Optional fields:
 - `Maintainer`: `str`
 - `OperatingSystemName`: `str`
 - `OperatingSystemVersion`: `str`
-- `ProgrammingLanguages`: `List["PlatformProgrammingLanguageTypeDef"]`
-- `Frameworks`: `List["PlatformFrameworkTypeDef"]`
-- `CustomAmiList`: `List["CustomAmiTypeDef"]`
-- `SupportedTierList`: `List[str]`
-- `SupportedAddonList`: `List[str]`
+- `ProgrammingLanguages`:
+  `List`\[[PlatformProgrammingLanguageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformprogramminglanguagetypedef)\]
+- `Frameworks`:
+  `List`\[[PlatformFrameworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformframeworktypedef)\]
+- `CustomAmiList`:
+  `List`\[[CustomAmiTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#customamitypedef)\]
+- `SupportedTierList`: `List`\[`str`\]
+- `SupportedAddonList`: `List`\[`str`\]
 - `PlatformLifecycleState`: `str`
 - `PlatformBranchName`: `str`
 - `PlatformBranchLifecycleState`: `str`
-
 
 ## PlatformFilterTypeDef
 
@@ -1106,14 +988,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Type`: `str`
 - `Operator`: `str`
-- `Values`: `List[str]`
-
+- `Values`: `List`\[`str`\]
 
 ## PlatformFrameworkTypeDef
 
@@ -1121,13 +1000,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformFrameworkTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Version`: `str`
-
 
 ## PlatformProgrammingLanguageTypeDef
 
@@ -1135,13 +1011,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformProgrammingLanguageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Version`: `str`
-
 
 ## PlatformSummaryTypeDef
 
@@ -1149,23 +1022,21 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PlatformArn`: `str`
 - `PlatformOwner`: `str`
-- `PlatformStatus`: `PlatformStatus`
+- `PlatformStatus`:
+  [PlatformStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#platformstatus)
 - `PlatformCategory`: `str`
 - `OperatingSystemName`: `str`
 - `OperatingSystemVersion`: `str`
-- `SupportedTierList`: `List[str]`
-- `SupportedAddonList`: `List[str]`
+- `SupportedTierList`: `List`\[`str`\]
+- `SupportedAddonList`: `List`\[`str`\]
 - `PlatformLifecycleState`: `str`
 - `PlatformVersion`: `str`
 - `PlatformBranchName`: `str`
 - `PlatformBranchLifecycleState`: `str`
-
 
 ## QueueTypeDef
 
@@ -1173,13 +1044,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import QueueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `URL`: `str`
-
 
 ## ResourceQuotaTypeDef
 
@@ -1187,12 +1055,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Maximum`: `int`
 
+- `Maximum`: `int`
 
 ## ResourceQuotasTypeDef
 
@@ -1200,16 +1065,18 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotasTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationQuota`: `"ResourceQuotaTypeDef"`
-- `ApplicationVersionQuota`: `"ResourceQuotaTypeDef"`
-- `EnvironmentQuota`: `"ResourceQuotaTypeDef"`
-- `ConfigurationTemplateQuota`: `"ResourceQuotaTypeDef"`
-- `CustomPlatformQuota`: `"ResourceQuotaTypeDef"`
 
+- `ApplicationQuota`:
+  [ResourceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotatypedef)
+- `ApplicationVersionQuota`:
+  [ResourceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotatypedef)
+- `EnvironmentQuota`:
+  [ResourceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotatypedef)
+- `ConfigurationTemplateQuota`:
+  [ResourceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotatypedef)
+- `CustomPlatformQuota`:
+  [ResourceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcequotatypedef)
 
 ## ResourceTagsDescriptionMessageTypeDef
 
@@ -1217,13 +1084,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceTagsDescriptionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceArn`: `str`
-- `ResourceTags`: `List["TagTypeDef"]`
 
+- `ResourceArn`: `str`
+- `ResourceTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
 
 ## RetrieveEnvironmentInfoResultMessageTypeDef
 
@@ -1231,12 +1096,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoResultMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EnvironmentInfo`: `List["EnvironmentInfoDescriptionTypeDef"]`
 
+- `EnvironmentInfo`:
+  `List`\[[EnvironmentInfoDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentinfodescriptiontypedef)\]
 
 ## S3LocationTypeDef
 
@@ -1244,13 +1107,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `S3Bucket`: `str`
 - `S3Key`: `str`
-
 
 ## SearchFilterTypeDef
 
@@ -1258,14 +1118,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SearchFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Attribute`: `str`
 - `Operator`: `str`
-- `Values`: `List[str]`
-
+- `Values`: `List`\[`str`\]
 
 ## SingleInstanceHealthTypeDef
 
@@ -1273,21 +1130,21 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SingleInstanceHealthTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceId`: `str`
 - `HealthStatus`: `str`
 - `Color`: `str`
-- `Causes`: `List[str]`
+- `Causes`: `List`\[`str`\]
 - `LaunchedAt`: `datetime`
-- `ApplicationMetrics`: `"ApplicationMetricsTypeDef"`
-- `System`: `"SystemStatusTypeDef"`
-- `Deployment`: `"DeploymentTypeDef"`
+- `ApplicationMetrics`:
+  [ApplicationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationmetricstypedef)
+- `System`:
+  [SystemStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#systemstatustypedef)
+- `Deployment`:
+  [DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#deploymenttypedef)
 - `AvailabilityZone`: `str`
 - `InstanceType`: `str`
-
 
 ## SolutionStackDescriptionTypeDef
 
@@ -1295,13 +1152,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SolutionStackDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SolutionStackName`: `str`
-- `PermittedFileTypes`: `List[str]`
 
+- `SolutionStackName`: `str`
+- `PermittedFileTypes`: `List`\[`str`\]
 
 ## SourceBuildInformationTypeDef
 
@@ -1309,14 +1163,13 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SourceBuildInformationTypeDef
 ```
 
-
 Required fields:
-- `SourceType`: `SourceType`
-- `SourceRepository`: `SourceRepository`
+
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#sourcetype)
+- `SourceRepository`:
+  [SourceRepository](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#sourcerepository)
 - `SourceLocation`: `str`
-
-
-
 
 ## SourceConfigurationTypeDef
 
@@ -1324,13 +1177,10 @@ Required fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SourceConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
-
 
 ## StatusCodesTypeDef
 
@@ -1338,15 +1188,12 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import StatusCodesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Status2xx`: `int`
 - `Status3xx`: `int`
 - `Status4xx`: `int`
 - `Status5xx`: `int`
-
 
 ## SystemStatusTypeDef
 
@@ -1354,13 +1201,11 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import SystemStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CPUUtilization`: `"CPUUtilizationTypeDef"`
-- `LoadAverage`: `List[float]`
 
+- `CPUUtilization`:
+  [CPUUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#cpuutilizationtypedef)
+- `LoadAverage`: `List`\[`float`\]
 
 ## TagTypeDef
 
@@ -1368,13 +1213,10 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## TriggerTypeDef
 
@@ -1382,12 +1224,9 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import TriggerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## ValidationMessageTypeDef
 
@@ -1395,15 +1234,13 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import ValidationMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
-- `Severity`: `ValidationSeverity`
+- `Severity`:
+  [ValidationSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#validationseverity)
 - `Namespace`: `str`
 - `OptionName`: `str`
-
 
 ## WaiterConfigTypeDef
 
@@ -1411,10 +1248,7 @@ Optional fields:
 from mypy_boto3_elasticbeanstalk.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

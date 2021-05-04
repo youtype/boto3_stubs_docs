@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > RoboMaker
 
-Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+Auto-generated documentation for
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+type annotations stubs module
+[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ```bash
 pip install mypy-boto3-robomaker
@@ -19,7 +21,8 @@ pip install mypy-boto3-robomaker
 
 ## RoboMakerClient
 
-Type annotations for  `boto3.client("robomaker")` as [RoboMakerClient](./client.md)
+Type annotations for `boto3.client("robomaker")` as
+[RoboMakerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_robomaker.client import RoboMakerClient
 ```
 
-
 RoboMakerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_delete_worlds](./client.md#batch-delete-worlds)
 - [batch_describe_simulation_job](./client.md#batch-describe-simulation-job)
 - [can_paginate](./client.md#can-paginate)
@@ -94,10 +95,8 @@ RoboMakerClient [exceptions](./client.md#exceptions)
 - [update_simulation_application](./client.md#update-simulation-application)
 - [update_world_template](./client.md#update-world-template)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentDeploymentException](./client.md#concurrentdeploymentexception)
 - [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
@@ -109,14 +108,10 @@ RoboMakerClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("robomaker").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("robomaker").get_paginator("...")`.
 
 Can be used directly:
 
@@ -135,11 +130,6 @@ from mypy_boto3_robomaker.paginators import ListDeploymentJobsPaginator, ...
 - [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
 - [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
 - [ListWorldsPaginator](./paginators.md#listworldspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -183,13 +173,10 @@ from mypy_boto3_robomaker.literals import Architecture, ...
 - [WorldGenerationJobErrorCode](./literals.md#worldgenerationjoberrorcode)
 - [WorldGenerationJobStatus](./literals.md#worldgenerationjobstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

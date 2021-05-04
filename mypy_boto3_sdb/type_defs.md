@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Structures
 
-Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+Auto-generated documentation for
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+type annotations stubs module
+[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [Typed dictionaries for boto3 SimpleDB module](#typed-dictionaries-for-boto3-simpledb-module)
   - [AttributeTypeDef](#attributetypedef)
@@ -24,17 +26,15 @@ type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-bot
 from mypy_boto3_sdb.type_defs import AttributeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
 
-
-
 Optional fields:
+
 - `AlternateNameEncoding`: `str`
 - `AlternateValueEncoding`: `str`
-
 
 ## DeletableItemTypeDef
 
@@ -42,15 +42,14 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import DeletableItemTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Attributes`: `List["AttributeTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
 
 ## DomainMetadataResultTypeDef
 
@@ -58,10 +57,8 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import DomainMetadataResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ItemCount`: `int`
 - `ItemNamesSizeBytes`: `int`
 - `AttributeNameCount`: `int`
@@ -70,19 +67,16 @@ Optional fields:
 - `AttributeValuesSizeBytes`: `int`
 - `Timestamp`: `int`
 
-
 ## GetAttributesResultTypeDef
 
 ```python
 from mypy_boto3_sdb.type_defs import GetAttributesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
 
 ## ItemTypeDef
 
@@ -90,16 +84,15 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import ItemTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Attributes`: `List["AttributeTypeDef"]`
-
-
+- `Attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
 
 Optional fields:
-- `AlternateNameEncoding`: `str`
 
+- `AlternateNameEncoding`: `str`
 
 ## ListDomainsResultTypeDef
 
@@ -107,13 +100,10 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import ListDomainsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DomainNames`: `List[str]`
-- `NextToken`: `str`
 
+- `DomainNames`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -121,14 +111,11 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ReplaceableAttributeTypeDef
 
@@ -136,16 +123,14 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import ReplaceableAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
 
-
-
 Optional fields:
-- `Replace`: `bool`
 
+- `Replace`: `bool`
 
 ## ReplaceableItemTypeDef
 
@@ -153,13 +138,11 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import ReplaceableItemTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Attributes`: `List["ReplaceableAttributeTypeDef"]`
-
-
-
+- `Attributes`:
+  `List`\[[ReplaceableAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableattributetypedef)\]
 
 ## SelectResultTypeDef
 
@@ -167,13 +150,11 @@ Required fields:
 from mypy_boto3_sdb.type_defs import SelectResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#itemtypedef)\]
+- `NextToken`: `str`
 
 ## UpdateConditionTypeDef
 
@@ -181,11 +162,8 @@ Optional fields:
 from mypy_boto3_sdb.type_defs import UpdateConditionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Value`: `str`
 - `Exists`: `bool`
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Inspector](./README.md) > Literals
 
-Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+Auto-generated documentation for
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+type annotations stubs module
+[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Literals for boto3 Inspector module](#literals-for-boto3-inspector-module)
   - [AgentHealth](#agenthealth)

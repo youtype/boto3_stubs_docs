@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ECR
 
-Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+Auto-generated documentation for
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+type annotations stubs module
+[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 ```bash
 pip install mypy-boto3-ecr
@@ -20,7 +22,7 @@ pip install mypy-boto3-ecr
 
 ## ECRClient
 
-Type annotations for  `boto3.client("ecr")` as [ECRClient](./client.md)
+Type annotations for `boto3.client("ecr")` as [ECRClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_ecr.client import ECRClient
 ```
 
-
 ECRClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_check_layer_availability](./client.md#batch-check-layer-availability)
 - [batch_delete_image](./client.md#batch-delete-image)
 - [batch_get_image](./client.md#batch-get-image)
@@ -73,10 +73,8 @@ ECRClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [upload_layer_part](./client.md#upload-layer-part)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [EmptyUploadException](./client.md#emptyuploadexception)
 - [ImageAlreadyExistsException](./client.md#imagealreadyexistsexception)
@@ -109,14 +107,10 @@ ECRClient [exceptions](./client.md#exceptions)
 - [UploadNotFoundException](./client.md#uploadnotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ecr").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ecr").get_paginator("...")`.
 
 Can be used directly:
 
@@ -130,12 +124,10 @@ from mypy_boto3_ecr.paginators import DescribeImageScanFindingsPaginator, ...
 - [GetLifecyclePolicyPreviewPaginator](./paginators.md#getlifecyclepolicypreviewpaginator)
 - [ListImagesPaginator](./paginators.md#listimagespaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("ecr").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("ecr").get_waiter("...")`.
 
 Can be used directly:
 
@@ -145,9 +137,6 @@ from mypy_boto3_ecr.waiters import ImageScanCompleteWaiter, ...
 
 - [ImageScanCompleteWaiter](./waiters.md#imagescancompletewaiter)
 - [LifecyclePolicyPreviewCompleteWaiter](./waiters.md#lifecyclepolicypreviewcompletewaiter)
-
-
-
 
 ## Literals
 
@@ -177,13 +166,10 @@ from mypy_boto3_ecr.literals import DescribeImageScanFindingsPaginatorName, ...
 - [ScanStatus](./literals.md#scanstatus)
 - [TagStatus](./literals.md#tagstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

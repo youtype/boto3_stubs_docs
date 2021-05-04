@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EKS
 
-Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+Auto-generated documentation for
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+type annotations stubs module
+[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
 ```bash
 pip install mypy-boto3-eks
@@ -20,7 +22,7 @@ pip install mypy-boto3-eks
 
 ## EKSClient
 
-Type annotations for  `boto3.client("eks")` as [EKSClient](./client.md)
+Type annotations for `boto3.client("eks")` as [EKSClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_eks.client import EKSClient
 ```
 
-
 EKSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_encryption_config](./client.md#associate-encryption-config)
 - [associate_identity_provider_config](./client.md#associate-identity-provider-config)
 - [can_paginate](./client.md#can-paginate)
@@ -71,10 +71,8 @@ EKSClient [exceptions](./client.md#exceptions)
 - [update_nodegroup_config](./client.md#update-nodegroup-config)
 - [update_nodegroup_version](./client.md#update-nodegroup-version)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ClientException](./client.md#clientexception)
@@ -88,14 +86,10 @@ EKSClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [UnsupportedAvailabilityZoneException](./client.md#unsupportedavailabilityzoneexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("eks").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("eks").get_paginator("...")`.
 
 Can be used directly:
 
@@ -111,12 +105,10 @@ from mypy_boto3_eks.paginators import DescribeAddonVersionsPaginator, ...
 - [ListNodegroupsPaginator](./paginators.md#listnodegroupspaginator)
 - [ListUpdatesPaginator](./paginators.md#listupdatespaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("eks").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("eks").get_waiter("...")`.
 
 Can be used directly:
 
@@ -130,9 +122,6 @@ from mypy_boto3_eks.waiters import AddonActiveWaiter, ...
 - [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
 - [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
 - [NodegroupDeletedWaiter](./waiters.md#nodegroupdeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -173,13 +162,10 @@ from mypy_boto3_eks.literals import AMITypes, ...
 - [UpdateType](./literals.md#updatetype)
 - [configStatus](./literals.md#configstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

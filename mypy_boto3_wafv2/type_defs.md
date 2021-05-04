@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WAFV2](./README.md) > Structures
 
-Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+Auto-generated documentation for
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+type annotations stubs module
+[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [Typed dictionaries for boto3 WAFV2 module](#typed-dictionaries-for-boto3-wafv2-module)
   - [ActionConditionTypeDef](#actionconditiontypedef)
@@ -106,12 +108,10 @@ type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-b
 from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef
 ```
 
-
 Required fields:
-- `Action`: `ActionValue`
 
-
-
+- `Action`:
+  [ActionValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#actionvalue)
 
 ## AllowActionTypeDef
 
@@ -119,12 +119,10 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import AllowActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CustomRequestHandling`: `"CustomRequestHandlingTypeDef"`
 
+- `CustomRequestHandling`:
+  [CustomRequestHandlingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customrequesthandlingtypedef)
 
 ## AndStatementTypeDef
 
@@ -132,12 +130,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import AndStatementTypeDef
 ```
 
-
 Required fields:
-- `Statements`: `List["StatementTypeDef"]`
 
-
-
+- `Statements`:
+  `List`\[[StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)\]
 
 ## BlockActionTypeDef
 
@@ -145,12 +141,10 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import BlockActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CustomResponse`: `"CustomResponseTypeDef"`
 
+- `CustomResponse`:
+  [CustomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsetypedef)
 
 ## ByteMatchStatementTypeDef
 
@@ -158,15 +152,15 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ByteMatchStatementTypeDef
 ```
 
-
 Required fields:
-- `SearchString`: `Union[bytes, IO[bytes]]`
-- `FieldToMatch`: `"FieldToMatchTypeDef"`
-- `TextTransformations`: `List["TextTransformationTypeDef"]`
-- `PositionalConstraint`: `PositionalConstraint`
 
-
-
+- `SearchString`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `FieldToMatch`:
+  [FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)
+- `TextTransformations`:
+  `List`\[[TextTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#texttransformationtypedef)\]
+- `PositionalConstraint`:
+  [PositionalConstraint](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#positionalconstraint)
 
 ## CheckCapacityResponseTypeDef
 
@@ -174,12 +168,9 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import CheckCapacityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Capacity`: `int`
 
+- `Capacity`: `int`
 
 ## ConditionTypeDef
 
@@ -187,13 +178,12 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActionCondition`: `"ActionConditionTypeDef"`
-- `LabelNameCondition`: `"LabelNameConditionTypeDef"`
 
+- `ActionCondition`:
+  [ActionConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#actionconditiontypedef)
+- `LabelNameCondition`:
+  [LabelNameConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelnameconditiontypedef)
 
 ## CountActionTypeDef
 
@@ -201,12 +191,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CountActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CustomRequestHandling`: `"CustomRequestHandlingTypeDef"`
 
+- `CustomRequestHandling`:
+  [CustomRequestHandlingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customrequesthandlingtypedef)
 
 ## CreateIPSetResponseTypeDef
 
@@ -214,12 +202,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CreateIPSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Summary`: `"IPSetSummaryTypeDef"`
 
+- `Summary`:
+  [IPSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ipsetsummarytypedef)
 
 ## CreateRegexPatternSetResponseTypeDef
 
@@ -227,12 +213,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CreateRegexPatternSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Summary`: `"RegexPatternSetSummaryTypeDef"`
 
+- `Summary`:
+  [RegexPatternSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regexpatternsetsummarytypedef)
 
 ## CreateRuleGroupResponseTypeDef
 
@@ -240,12 +224,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CreateRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Summary`: `"RuleGroupSummaryTypeDef"`
 
+- `Summary`:
+  [RuleGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulegroupsummarytypedef)
 
 ## CreateWebACLResponseTypeDef
 
@@ -253,12 +235,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CreateWebACLResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Summary`: `"WebACLSummaryTypeDef"`
 
+- `Summary`:
+  [WebACLSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#webaclsummarytypedef)
 
 ## CustomHTTPHeaderTypeDef
 
@@ -266,13 +246,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import CustomHTTPHeaderTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## CustomRequestHandlingTypeDef
 
@@ -280,12 +257,10 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import CustomRequestHandlingTypeDef
 ```
 
-
 Required fields:
-- `InsertHeaders`: `List["CustomHTTPHeaderTypeDef"]`
 
-
-
+- `InsertHeaders`:
+  `List`\[[CustomHTTPHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customhttpheadertypedef)\]
 
 ## CustomResponseBodyTypeDef
 
@@ -293,13 +268,11 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import CustomResponseBodyTypeDef
 ```
 
-
 Required fields:
-- `ContentType`: `ResponseContentType`
+
+- `ContentType`:
+  [ResponseContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#responsecontenttype)
 - `Content`: `str`
-
-
-
 
 ## CustomResponseTypeDef
 
@@ -307,16 +280,15 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import CustomResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ResponseCode`: `int`
 
-
-
 Optional fields:
-- `CustomResponseBodyKey`: `str`
-- `ResponseHeaders`: `List["CustomHTTPHeaderTypeDef"]`
 
+- `CustomResponseBodyKey`: `str`
+- `ResponseHeaders`:
+  `List`\[[CustomHTTPHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customhttpheadertypedef)\]
 
 ## DefaultActionTypeDef
 
@@ -324,13 +296,12 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import DefaultActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Block`: `"BlockActionTypeDef"`
-- `Allow`: `"AllowActionTypeDef"`
 
+- `Block`:
+  [BlockActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#blockactiontypedef)
+- `Allow`:
+  [AllowActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#allowactiontypedef)
 
 ## DeleteFirewallManagerRuleGroupsResponseTypeDef
 
@@ -338,12 +309,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import DeleteFirewallManagerRuleGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextWebACLLockToken`: `str`
 
+- `NextWebACLLockToken`: `str`
 
 ## DescribeManagedRuleGroupResponseTypeDef
 
@@ -351,16 +319,16 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import DescribeManagedRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Capacity`: `int`
-- `Rules`: `List["RuleSummaryTypeDef"]`
-- `LabelNamespace`: `str`
-- `AvailableLabels`: `List["LabelSummaryTypeDef"]`
-- `ConsumedLabels`: `List["LabelSummaryTypeDef"]`
 
+- `Capacity`: `int`
+- `Rules`:
+  `List`\[[RuleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulesummarytypedef)\]
+- `LabelNamespace`: `str`
+- `AvailableLabels`:
+  `List`\[[LabelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelsummarytypedef)\]
+- `ConsumedLabels`:
+  `List`\[[LabelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelsummarytypedef)\]
 
 ## ExcludedRuleTypeDef
 
@@ -368,12 +336,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ExcludedRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## FieldToMatchTypeDef
 
@@ -381,19 +346,19 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import FieldToMatchTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SingleHeader`: `"SingleHeaderTypeDef"`
-- `SingleQueryArgument`: `"SingleQueryArgumentTypeDef"`
-- `AllQueryArguments`: `Dict[str, Any]`
-- `UriPath`: `Dict[str, Any]`
-- `QueryString`: `Dict[str, Any]`
-- `Body`: `Dict[str, Any]`
-- `Method`: `Dict[str, Any]`
-- `JsonBody`: `"JsonBodyTypeDef"`
 
+- `SingleHeader`:
+  [SingleHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#singleheadertypedef)
+- `SingleQueryArgument`:
+  [SingleQueryArgumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#singlequeryargumenttypedef)
+- `AllQueryArguments`: `Dict`\[`str`, `Any`\]
+- `UriPath`: `Dict`\[`str`, `Any`\]
+- `QueryString`: `Dict`\[`str`, `Any`\]
+- `Body`: `Dict`\[`str`, `Any`\]
+- `Method`: `Dict`\[`str`, `Any`\]
+- `JsonBody`:
+  [JsonBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#jsonbodytypedef)
 
 ## FilterTypeDef
 
@@ -401,14 +366,14 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
-- `Behavior`: `FilterBehavior`
-- `Requirement`: `FilterRequirement`
-- `Conditions`: `List["ConditionTypeDef"]`
 
-
-
+- `Behavior`:
+  [FilterBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#filterbehavior)
+- `Requirement`:
+  [FilterRequirement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#filterrequirement)
+- `Conditions`:
+  `List`\[[ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#conditiontypedef)\]
 
 ## FirewallManagerRuleGroupTypeDef
 
@@ -416,16 +381,16 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import FirewallManagerRuleGroupTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Priority`: `int`
-- `FirewallManagerStatement`: `"FirewallManagerStatementTypeDef"`
-- `OverrideAction`: `"OverrideActionTypeDef"`
-- `VisibilityConfig`: `"VisibilityConfigTypeDef"`
-
-
-
+- `FirewallManagerStatement`:
+  [FirewallManagerStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#firewallmanagerstatementtypedef)
+- `OverrideAction`:
+  [OverrideActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#overrideactiontypedef)
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
 
 ## FirewallManagerStatementTypeDef
 
@@ -433,13 +398,12 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import FirewallManagerStatementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManagedRuleGroupStatement`: `"ManagedRuleGroupStatementTypeDef"`
-- `RuleGroupReferenceStatement`: `"RuleGroupReferenceStatementTypeDef"`
 
+- `ManagedRuleGroupStatement`:
+  [ManagedRuleGroupStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#managedrulegroupstatementtypedef)
+- `RuleGroupReferenceStatement`:
+  [RuleGroupReferenceStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulegroupreferencestatementtypedef)
 
 ## ForwardedIPConfigTypeDef
 
@@ -447,13 +411,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ForwardedIPConfigTypeDef
 ```
 
-
 Required fields:
+
 - `HeaderName`: `str`
-- `FallbackBehavior`: `FallbackBehavior`
-
-
-
+- `FallbackBehavior`:
+  [FallbackBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#fallbackbehavior)
 
 ## GeoMatchStatementTypeDef
 
@@ -461,13 +423,12 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import GeoMatchStatementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CountryCodes`: `List[CountryCode]`
-- `ForwardedIPConfig`: `"ForwardedIPConfigTypeDef"`
 
+- `CountryCodes`:
+  `List`\[[CountryCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#countrycode)\]
+- `ForwardedIPConfig`:
+  [ForwardedIPConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#forwardedipconfigtypedef)
 
 ## GetIPSetResponseTypeDef
 
@@ -475,13 +436,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetIPSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IPSet`: `"IPSetTypeDef"`
-- `LockToken`: `str`
 
+- `IPSet`:
+  [IPSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ipsettypedef)
+- `LockToken`: `str`
 
 ## GetLoggingConfigurationResponseTypeDef
 
@@ -489,12 +448,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetLoggingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoggingConfiguration`: `"LoggingConfigurationTypeDef"`
 
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingconfigurationtypedef)
 
 ## GetPermissionPolicyResponseTypeDef
 
@@ -502,12 +459,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetPermissionPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## GetRateBasedStatementManagedKeysResponseTypeDef
 
@@ -515,13 +469,12 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetRateBasedStatementManagedKeysResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManagedKeysIPV4`: `"RateBasedStatementManagedKeysIPSetTypeDef"`
-- `ManagedKeysIPV6`: `"RateBasedStatementManagedKeysIPSetTypeDef"`
 
+- `ManagedKeysIPV4`:
+  [RateBasedStatementManagedKeysIPSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ratebasedstatementmanagedkeysipsettypedef)
+- `ManagedKeysIPV6`:
+  [RateBasedStatementManagedKeysIPSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ratebasedstatementmanagedkeysipsettypedef)
 
 ## GetRegexPatternSetResponseTypeDef
 
@@ -529,13 +482,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetRegexPatternSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegexPatternSet`: `"RegexPatternSetTypeDef"`
-- `LockToken`: `str`
 
+- `RegexPatternSet`:
+  [RegexPatternSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regexpatternsettypedef)
+- `LockToken`: `str`
 
 ## GetRuleGroupResponseTypeDef
 
@@ -543,13 +494,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RuleGroup`: `"RuleGroupTypeDef"`
-- `LockToken`: `str`
 
+- `RuleGroup`:
+  [RuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulegrouptypedef)
+- `LockToken`: `str`
 
 ## GetSampledRequestsResponseTypeDef
 
@@ -557,14 +506,13 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetSampledRequestsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SampledRequests`: `List["SampledHTTPRequestTypeDef"]`
-- `PopulationSize`: `int`
-- `TimeWindow`: `"TimeWindowTypeDef"`
 
+- `SampledRequests`:
+  `List`\[[SampledHTTPRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#sampledhttprequesttypedef)\]
+- `PopulationSize`: `int`
+- `TimeWindow`:
+  [TimeWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#timewindowtypedef)
 
 ## GetWebACLForResourceResponseTypeDef
 
@@ -572,12 +520,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetWebACLForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WebACL`: `"WebACLTypeDef"`
 
+- `WebACL`:
+  [WebACLTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#webacltypedef)
 
 ## GetWebACLResponseTypeDef
 
@@ -585,13 +531,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import GetWebACLResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WebACL`: `"WebACLTypeDef"`
-- `LockToken`: `str`
 
+- `WebACL`:
+  [WebACLTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#webacltypedef)
+- `LockToken`: `str`
 
 ## HTTPHeaderTypeDef
 
@@ -599,13 +543,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import HTTPHeaderTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
 
 ## HTTPRequestTypeDef
 
@@ -613,17 +554,15 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import HTTPRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientIP`: `str`
 - `Country`: `str`
 - `URI`: `str`
 - `Method`: `str`
 - `HTTPVersion`: `str`
-- `Headers`: `List["HTTPHeaderTypeDef"]`
-
+- `Headers`:
+  `List`\[[HTTPHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#httpheadertypedef)\]
 
 ## IPSetForwardedIPConfigTypeDef
 
@@ -631,14 +570,13 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import IPSetForwardedIPConfigTypeDef
 ```
 
-
 Required fields:
+
 - `HeaderName`: `str`
-- `FallbackBehavior`: `FallbackBehavior`
-- `Position`: `ForwardedIPPosition`
-
-
-
+- `FallbackBehavior`:
+  [FallbackBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#fallbackbehavior)
+- `Position`:
+  [ForwardedIPPosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#forwardedipposition)
 
 ## IPSetReferenceStatementTypeDef
 
@@ -646,15 +584,14 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import IPSetReferenceStatementTypeDef
 ```
 
-
 Required fields:
+
 - `ARN`: `str`
 
-
-
 Optional fields:
-- `IPSetForwardedIPConfig`: `"IPSetForwardedIPConfigTypeDef"`
 
+- `IPSetForwardedIPConfig`:
+  [IPSetForwardedIPConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ipsetforwardedipconfigtypedef)
 
 ## IPSetSummaryTypeDef
 
@@ -662,16 +599,13 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import IPSetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
-
 
 ## IPSetTypeDef
 
@@ -679,19 +613,18 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import IPSetTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `ARN`: `str`
-- `IPAddressVersion`: `IPAddressVersion`
-- `Addresses`: `List[str]`
-
-
+- `IPAddressVersion`:
+  [IPAddressVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#ipaddressversion)
+- `Addresses`: `List`\[`str`\]
 
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## JsonBodyTypeDef
 
@@ -699,16 +632,17 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import JsonBodyTypeDef
 ```
 
-
 Required fields:
-- `MatchPattern`: `"JsonMatchPatternTypeDef"`
-- `MatchScope`: `JsonMatchScope`
 
-
+- `MatchPattern`:
+  [JsonMatchPatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#jsonmatchpatterntypedef)
+- `MatchScope`:
+  [JsonMatchScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#jsonmatchscope)
 
 Optional fields:
-- `InvalidFallbackBehavior`: `BodyParsingFallbackBehavior`
 
+- `InvalidFallbackBehavior`:
+  [BodyParsingFallbackBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#bodyparsingfallbackbehavior)
 
 ## JsonMatchPatternTypeDef
 
@@ -716,13 +650,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import JsonMatchPatternTypeDef
 ```
 
-
-
-
 Optional fields:
-- `All`: `Dict[str, Any]`
-- `IncludedPaths`: `List[str]`
 
+- `All`: `Dict`\[`str`, `Any`\]
+- `IncludedPaths`: `List`\[`str`\]
 
 ## LabelMatchStatementTypeDef
 
@@ -730,13 +661,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import LabelMatchStatementTypeDef
 ```
 
-
 Required fields:
-- `Scope`: `LabelMatchScope`
+
+- `Scope`:
+  [LabelMatchScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#labelmatchscope)
 - `Key`: `str`
-
-
-
 
 ## LabelNameConditionTypeDef
 
@@ -744,12 +673,9 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import LabelNameConditionTypeDef
 ```
 
-
 Required fields:
+
 - `LabelName`: `str`
-
-
-
 
 ## LabelSummaryTypeDef
 
@@ -757,12 +683,9 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import LabelSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## LabelTypeDef
 
@@ -770,12 +693,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import LabelTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## ListAvailableManagedRuleGroupsResponseTypeDef
 
@@ -783,13 +703,11 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `ManagedRuleGroups`: `List["ManagedRuleGroupSummaryTypeDef"]`
 
+- `NextMarker`: `str`
+- `ManagedRuleGroups`:
+  `List`\[[ManagedRuleGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#managedrulegroupsummarytypedef)\]
 
 ## ListIPSetsResponseTypeDef
 
@@ -797,13 +715,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListIPSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `IPSets`: `List["IPSetSummaryTypeDef"]`
 
+- `NextMarker`: `str`
+- `IPSets`:
+  `List`\[[IPSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ipsetsummarytypedef)\]
 
 ## ListLoggingConfigurationsResponseTypeDef
 
@@ -811,13 +727,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListLoggingConfigurationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoggingConfigurations`: `List["LoggingConfigurationTypeDef"]`
-- `NextMarker`: `str`
 
+- `LoggingConfigurations`:
+  `List`\[[LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingconfigurationtypedef)\]
+- `NextMarker`: `str`
 
 ## ListRegexPatternSetsResponseTypeDef
 
@@ -825,13 +739,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListRegexPatternSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `RegexPatternSets`: `List["RegexPatternSetSummaryTypeDef"]`
 
+- `NextMarker`: `str`
+- `RegexPatternSets`:
+  `List`\[[RegexPatternSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regexpatternsetsummarytypedef)\]
 
 ## ListResourcesForWebACLResponseTypeDef
 
@@ -839,12 +751,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListResourcesForWebACLResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceArns`: `List[str]`
 
+- `ResourceArns`: `List`\[`str`\]
 
 ## ListRuleGroupsResponseTypeDef
 
@@ -852,13 +761,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListRuleGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `RuleGroups`: `List["RuleGroupSummaryTypeDef"]`
 
+- `NextMarker`: `str`
+- `RuleGroups`:
+  `List`\[[RuleGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulegroupsummarytypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -866,13 +773,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `TagInfoForResource`: `"TagInfoForResourceTypeDef"`
 
+- `NextMarker`: `str`
+- `TagInfoForResource`:
+  [TagInfoForResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#taginfoforresourcetypedef)
 
 ## ListWebACLsResponseTypeDef
 
@@ -880,13 +785,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ListWebACLsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextMarker`: `str`
-- `WebACLs`: `List["WebACLSummaryTypeDef"]`
 
+- `NextMarker`: `str`
+- `WebACLs`:
+  `List`\[[WebACLSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#webaclsummarytypedef)\]
 
 ## LoggingConfigurationTypeDef
 
@@ -894,18 +797,18 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import LoggingConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceArn`: `str`
-- `LogDestinationConfigs`: `List[str]`
-
-
+- `LogDestinationConfigs`: `List`\[`str`\]
 
 Optional fields:
-- `RedactedFields`: `List["FieldToMatchTypeDef"]`
-- `ManagedByFirewallManager`: `bool`
-- `LoggingFilter`: `"LoggingFilterTypeDef"`
 
+- `RedactedFields`:
+  `List`\[[FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)\]
+- `ManagedByFirewallManager`: `bool`
+- `LoggingFilter`:
+  [LoggingFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingfiltertypedef)
 
 ## LoggingFilterTypeDef
 
@@ -913,13 +816,12 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import LoggingFilterTypeDef
 ```
 
-
 Required fields:
-- `Filters`: `List["FilterTypeDef"]`
-- `DefaultBehavior`: `FilterBehavior`
 
-
-
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#filtertypedef)\]
+- `DefaultBehavior`:
+  [FilterBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#filterbehavior)
 
 ## ManagedRuleGroupStatementTypeDef
 
@@ -927,17 +829,17 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import ManagedRuleGroupStatementTypeDef
 ```
 
-
 Required fields:
+
 - `VendorName`: `str`
 - `Name`: `str`
 
-
-
 Optional fields:
-- `ExcludedRules`: `List["ExcludedRuleTypeDef"]`
-- `ScopeDownStatement`: `"StatementTypeDef"`
 
+- `ExcludedRules`:
+  `List`\[[ExcludedRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#excludedruletypedef)\]
+- `ScopeDownStatement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)
 
 ## ManagedRuleGroupSummaryTypeDef
 
@@ -945,14 +847,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import ManagedRuleGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VendorName`: `str`
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## NotStatementTypeDef
 
@@ -960,12 +859,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import NotStatementTypeDef
 ```
 
-
 Required fields:
-- `Statement`: `"StatementTypeDef"`
 
-
-
+- `Statement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)
 
 ## OrStatementTypeDef
 
@@ -973,12 +870,10 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import OrStatementTypeDef
 ```
 
-
 Required fields:
-- `Statements`: `List["StatementTypeDef"]`
 
-
-
+- `Statements`:
+  `List`\[[StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)\]
 
 ## OverrideActionTypeDef
 
@@ -986,13 +881,11 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import OverrideActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Count`: `"CountActionTypeDef"`
-- `None`: `Dict[str, Any]`
 
+- `Count`:
+  [CountActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#countactiontypedef)
+- `None`: `Dict`\[`str`, `Any`\]
 
 ## PutLoggingConfigurationResponseTypeDef
 
@@ -1000,12 +893,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import PutLoggingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoggingConfiguration`: `"LoggingConfigurationTypeDef"`
 
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingconfigurationtypedef)
 
 ## RateBasedStatementManagedKeysIPSetTypeDef
 
@@ -1013,13 +904,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RateBasedStatementManagedKeysIPSetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IPAddressVersion`: `IPAddressVersion`
-- `Addresses`: `List[str]`
 
+- `IPAddressVersion`:
+  [IPAddressVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#ipaddressversion)
+- `Addresses`: `List`\[`str`\]
 
 ## RateBasedStatementTypeDef
 
@@ -1027,17 +916,18 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RateBasedStatementTypeDef
 ```
 
-
 Required fields:
+
 - `Limit`: `int`
-- `AggregateKeyType`: `RateBasedStatementAggregateKeyType`
-
-
+- `AggregateKeyType`:
+  [RateBasedStatementAggregateKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#ratebasedstatementaggregatekeytype)
 
 Optional fields:
-- `ScopeDownStatement`: `"StatementTypeDef"`
-- `ForwardedIPConfig`: `"ForwardedIPConfigTypeDef"`
 
+- `ScopeDownStatement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)
+- `ForwardedIPConfig`:
+  [ForwardedIPConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#forwardedipconfigtypedef)
 
 ## RegexPatternSetReferenceStatementTypeDef
 
@@ -1045,14 +935,13 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RegexPatternSetReferenceStatementTypeDef
 ```
 
-
 Required fields:
+
 - `ARN`: `str`
-- `FieldToMatch`: `"FieldToMatchTypeDef"`
-- `TextTransformations`: `List["TextTransformationTypeDef"]`
-
-
-
+- `FieldToMatch`:
+  [FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)
+- `TextTransformations`:
+  `List`\[[TextTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#texttransformationtypedef)\]
 
 ## RegexPatternSetSummaryTypeDef
 
@@ -1060,16 +949,13 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import RegexPatternSetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
-
 
 ## RegexPatternSetTypeDef
 
@@ -1077,16 +963,14 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RegexPatternSetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `ARN`: `str`
 - `Description`: `str`
-- `RegularExpressionList`: `List["RegexTypeDef"]`
-
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regextypedef)\]
 
 ## RegexTypeDef
 
@@ -1094,12 +978,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RegexTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegexString`: `str`
 
+- `RegexString`: `str`
 
 ## RuleActionTypeDef
 
@@ -1107,14 +988,14 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Block`: `"BlockActionTypeDef"`
-- `Allow`: `"AllowActionTypeDef"`
-- `Count`: `"CountActionTypeDef"`
 
+- `Block`:
+  [BlockActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#blockactiontypedef)
+- `Allow`:
+  [AllowActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#allowactiontypedef)
+- `Count`:
+  [CountActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#countactiontypedef)
 
 ## RuleGroupReferenceStatementTypeDef
 
@@ -1122,15 +1003,14 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleGroupReferenceStatementTypeDef
 ```
 
-
 Required fields:
+
 - `ARN`: `str`
 
-
-
 Optional fields:
-- `ExcludedRules`: `List["ExcludedRuleTypeDef"]`
 
+- `ExcludedRules`:
+  `List`\[[ExcludedRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#excludedruletypedef)\]
 
 ## RuleGroupSummaryTypeDef
 
@@ -1138,16 +1018,13 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
-
 
 ## RuleGroupTypeDef
 
@@ -1155,24 +1032,27 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleGroupTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `Capacity`: `int`
 - `ARN`: `str`
-- `VisibilityConfig`: `"VisibilityConfigTypeDef"`
-
-
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
 
 Optional fields:
-- `Description`: `str`
-- `Rules`: `List["RuleTypeDef"]`
-- `LabelNamespace`: `str`
-- `CustomResponseBodies`: `Dict[str, "CustomResponseBodyTypeDef"]`
-- `AvailableLabels`: `List["LabelSummaryTypeDef"]`
-- `ConsumedLabels`: `List["LabelSummaryTypeDef"]`
 
+- `Description`: `str`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `LabelNamespace`: `str`
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+- `AvailableLabels`:
+  `List`\[[LabelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelsummarytypedef)\]
+- `ConsumedLabels`:
+  `List`\[[LabelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelsummarytypedef)\]
 
 ## RuleSummaryTypeDef
 
@@ -1180,13 +1060,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Action`: `"RuleActionTypeDef"`
 
+- `Name`: `str`
+- `Action`:
+  [RuleActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruleactiontypedef)
 
 ## RuleTypeDef
 
@@ -1194,20 +1072,23 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import RuleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Priority`: `int`
-- `Statement`: `"StatementTypeDef"`
-- `VisibilityConfig`: `"VisibilityConfigTypeDef"`
-
-
+- `Statement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#statementtypedef)
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
 
 Optional fields:
-- `Action`: `"RuleActionTypeDef"`
-- `OverrideAction`: `"OverrideActionTypeDef"`
-- `RuleLabels`: `List["LabelTypeDef"]`
 
+- `Action`:
+  [RuleActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruleactiontypedef)
+- `OverrideAction`:
+  [OverrideActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#overrideactiontypedef)
+- `RuleLabels`:
+  `List`\[[LabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labeltypedef)\]
 
 ## SampledHTTPRequestTypeDef
 
@@ -1215,21 +1096,22 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import SampledHTTPRequestTypeDef
 ```
 
-
 Required fields:
-- `Request`: `"HTTPRequestTypeDef"`
+
+- `Request`:
+  [HTTPRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#httprequesttypedef)
 - `Weight`: `int`
 
-
-
 Optional fields:
+
 - `Timestamp`: `datetime`
 - `Action`: `str`
 - `RuleNameWithinRuleGroup`: `str`
-- `RequestHeadersInserted`: `List["HTTPHeaderTypeDef"]`
+- `RequestHeadersInserted`:
+  `List`\[[HTTPHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#httpheadertypedef)\]
 - `ResponseCodeSent`: `int`
-- `Labels`: `List["LabelTypeDef"]`
-
+- `Labels`:
+  `List`\[[LabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labeltypedef)\]
 
 ## SingleHeaderTypeDef
 
@@ -1237,12 +1119,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import SingleHeaderTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## SingleQueryArgumentTypeDef
 
@@ -1250,12 +1129,9 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import SingleQueryArgumentTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## SizeConstraintStatementTypeDef
 
@@ -1263,15 +1139,15 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import SizeConstraintStatementTypeDef
 ```
 
-
 Required fields:
-- `FieldToMatch`: `"FieldToMatchTypeDef"`
-- `ComparisonOperator`: `ComparisonOperator`
+
+- `FieldToMatch`:
+  [FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)
+- `ComparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#comparisonoperator)
 - `Size`: `int`
-- `TextTransformations`: `List["TextTransformationTypeDef"]`
-
-
-
+- `TextTransformations`:
+  `List`\[[TextTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#texttransformationtypedef)\]
 
 ## SqliMatchStatementTypeDef
 
@@ -1279,13 +1155,12 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import SqliMatchStatementTypeDef
 ```
 
-
 Required fields:
-- `FieldToMatch`: `"FieldToMatchTypeDef"`
-- `TextTransformations`: `List["TextTransformationTypeDef"]`
 
-
-
+- `FieldToMatch`:
+  [FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)
+- `TextTransformations`:
+  `List`\[[TextTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#texttransformationtypedef)\]
 
 ## StatementTypeDef
 
@@ -1293,25 +1168,36 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import StatementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByteMatchStatement`: `"ByteMatchStatementTypeDef"`
-- `SqliMatchStatement`: `"SqliMatchStatementTypeDef"`
-- `XssMatchStatement`: `"XssMatchStatementTypeDef"`
-- `SizeConstraintStatement`: `"SizeConstraintStatementTypeDef"`
-- `GeoMatchStatement`: `"GeoMatchStatementTypeDef"`
-- `RuleGroupReferenceStatement`: `"RuleGroupReferenceStatementTypeDef"`
-- `IPSetReferenceStatement`: `"IPSetReferenceStatementTypeDef"`
-- `RegexPatternSetReferenceStatement`: `"RegexPatternSetReferenceStatementTypeDef"`
-- `RateBasedStatement`: `"RateBasedStatementTypeDef"`
-- `AndStatement`: `"AndStatementTypeDef"`
-- `OrStatement`: `"OrStatementTypeDef"`
-- `NotStatement`: `"NotStatementTypeDef"`
-- `ManagedRuleGroupStatement`: `"ManagedRuleGroupStatementTypeDef"`
-- `LabelMatchStatement`: `"LabelMatchStatementTypeDef"`
 
+- `ByteMatchStatement`:
+  [ByteMatchStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#bytematchstatementtypedef)
+- `SqliMatchStatement`:
+  [SqliMatchStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#sqlimatchstatementtypedef)
+- `XssMatchStatement`:
+  [XssMatchStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#xssmatchstatementtypedef)
+- `SizeConstraintStatement`:
+  [SizeConstraintStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#sizeconstraintstatementtypedef)
+- `GeoMatchStatement`:
+  [GeoMatchStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#geomatchstatementtypedef)
+- `RuleGroupReferenceStatement`:
+  [RuleGroupReferenceStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#rulegroupreferencestatementtypedef)
+- `IPSetReferenceStatement`:
+  [IPSetReferenceStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ipsetreferencestatementtypedef)
+- `RegexPatternSetReferenceStatement`:
+  [RegexPatternSetReferenceStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regexpatternsetreferencestatementtypedef)
+- `RateBasedStatement`:
+  [RateBasedStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ratebasedstatementtypedef)
+- `AndStatement`:
+  [AndStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#andstatementtypedef)
+- `OrStatement`:
+  [OrStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#orstatementtypedef)
+- `NotStatement`:
+  [NotStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#notstatementtypedef)
+- `ManagedRuleGroupStatement`:
+  [ManagedRuleGroupStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#managedrulegroupstatementtypedef)
+- `LabelMatchStatement`:
+  [LabelMatchStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#labelmatchstatementtypedef)
 
 ## TagInfoForResourceTypeDef
 
@@ -1319,13 +1205,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import TagInfoForResourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceARN`: `str`
-- `TagList`: `List["TagTypeDef"]`
 
+- `ResourceARN`: `str`
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1333,13 +1217,10 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TextTransformationTypeDef
 
@@ -1347,13 +1228,11 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import TextTransformationTypeDef
 ```
 
-
 Required fields:
+
 - `Priority`: `int`
-- `Type`: `TextTransformationType`
-
-
-
+- `Type`:
+  [TextTransformationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#texttransformationtype)
 
 ## TimeWindowTypeDef
 
@@ -1361,13 +1240,10 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import TimeWindowTypeDef
 ```
 
-
 Required fields:
+
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
-
-
 
 ## UpdateIPSetResponseTypeDef
 
@@ -1375,12 +1251,9 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import UpdateIPSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextLockToken`: `str`
 
+- `NextLockToken`: `str`
 
 ## UpdateRegexPatternSetResponseTypeDef
 
@@ -1388,12 +1261,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import UpdateRegexPatternSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextLockToken`: `str`
 
+- `NextLockToken`: `str`
 
 ## UpdateRuleGroupResponseTypeDef
 
@@ -1401,12 +1271,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import UpdateRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextLockToken`: `str`
 
+- `NextLockToken`: `str`
 
 ## UpdateWebACLResponseTypeDef
 
@@ -1414,12 +1281,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import UpdateWebACLResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextLockToken`: `str`
 
+- `NextLockToken`: `str`
 
 ## VisibilityConfigTypeDef
 
@@ -1427,14 +1291,11 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import VisibilityConfigTypeDef
 ```
 
-
 Required fields:
+
 - `SampledRequestsEnabled`: `bool`
 - `CloudWatchMetricsEnabled`: `bool`
 - `MetricName`: `str`
-
-
-
 
 ## WebACLSummaryTypeDef
 
@@ -1442,16 +1303,13 @@ Required fields:
 from mypy_boto3_wafv2.type_defs import WebACLSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
-
 
 ## WebACLTypeDef
 
@@ -1459,26 +1317,30 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import WebACLTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Id`: `str`
 - `ARN`: `str`
-- `DefaultAction`: `"DefaultActionTypeDef"`
-- `VisibilityConfig`: `"VisibilityConfigTypeDef"`
-
-
+- `DefaultAction`:
+  [DefaultActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#defaultactiontypedef)
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
 
 Optional fields:
+
 - `Description`: `str`
-- `Rules`: `List["RuleTypeDef"]`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
 - `Capacity`: `int`
-- `PreProcessFirewallManagerRuleGroups`: `List["FirewallManagerRuleGroupTypeDef"]`
-- `PostProcessFirewallManagerRuleGroups`: `List["FirewallManagerRuleGroupTypeDef"]`
+- `PreProcessFirewallManagerRuleGroups`:
+  `List`\[[FirewallManagerRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#firewallmanagerrulegrouptypedef)\]
+- `PostProcessFirewallManagerRuleGroups`:
+  `List`\[[FirewallManagerRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#firewallmanagerrulegrouptypedef)\]
 - `ManagedByFirewallManager`: `bool`
 - `LabelNamespace`: `str`
-- `CustomResponseBodies`: `Dict[str, "CustomResponseBodyTypeDef"]`
-
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
 
 ## XssMatchStatementTypeDef
 
@@ -1486,10 +1348,9 @@ Optional fields:
 from mypy_boto3_wafv2.type_defs import XssMatchStatementTypeDef
 ```
 
-
 Required fields:
-- `FieldToMatch`: `"FieldToMatchTypeDef"`
-- `TextTransformations`: `List["TextTransformationTypeDef"]`
 
-
-
+- `FieldToMatch`:
+  [FieldToMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#fieldtomatchtypedef)
+- `TextTransformations`:
+  `List`\[[TextTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#texttransformationtypedef)\]

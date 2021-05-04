@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MQ](./README.md) > Structures
 
-Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
-type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+Auto-generated documentation for
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+type annotations stubs module
+[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [Typed dictionaries for boto3 MQ module](#typed-dictionaries-for-boto3-mq-module)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
@@ -52,12 +54,9 @@ type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto
 from mypy_boto3_mq.type_defs import AvailabilityZoneTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## BrokerEngineTypeTypeDef
 
@@ -65,13 +64,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerEngineTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EngineType`: `EngineType`
-- `EngineVersions`: `List["EngineVersionTypeDef"]`
 
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
+- `EngineVersions`:
+  `List`\[[EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#engineversiontypedef)\]
 
 ## BrokerInstanceOptionTypeDef
 
@@ -79,17 +77,18 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerInstanceOptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AvailabilityZones`: `List["AvailabilityZoneTypeDef"]`
-- `EngineType`: `EngineType`
-- `HostInstanceType`: `str`
-- `StorageType`: `BrokerStorageType`
-- `SupportedDeploymentModes`: `List[DeploymentMode]`
-- `SupportedEngineVersions`: `List[str]`
 
+- `AvailabilityZones`:
+  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#availabilityzonetypedef)\]
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
+- `HostInstanceType`: `str`
+- `StorageType`:
+  [BrokerStorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#brokerstoragetype)
+- `SupportedDeploymentModes`:
+  `List`\[[DeploymentMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#deploymentmode)\]
+- `SupportedEngineVersions`: `List`\[`str`\]
 
 ## BrokerInstanceTypeDef
 
@@ -97,14 +96,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConsoleURL`: `str`
-- `Endpoints`: `List[str]`
-- `IpAddress`: `str`
 
+- `ConsoleURL`: `str`
+- `Endpoints`: `List`\[`str`\]
+- `IpAddress`: `str`
 
 ## BrokerSummaryTypeDef
 
@@ -112,19 +108,19 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BrokerArn`: `str`
 - `BrokerId`: `str`
 - `BrokerName`: `str`
-- `BrokerState`: `BrokerState`
+- `BrokerState`:
+  [BrokerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#brokerstate)
 - `Created`: `datetime`
-- `DeploymentMode`: `DeploymentMode`
-- `EngineType`: `EngineType`
+- `DeploymentMode`:
+  [DeploymentMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#deploymentmode)
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
 - `HostInstanceType`: `str`
-
 
 ## ConfigurationIdTypeDef
 
@@ -132,13 +128,10 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationIdTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Revision`: `int`
-
 
 ## ConfigurationRevisionTypeDef
 
@@ -146,14 +139,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationRevisionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Created`: `datetime`
 - `Description`: `str`
 - `Revision`: `int`
-
 
 ## ConfigurationTypeDef
 
@@ -161,21 +151,21 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
-- `AuthenticationStrategy`: `AuthenticationStrategy`
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `Created`: `datetime`
 - `Description`: `str`
-- `EngineType`: `EngineType`
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
 - `EngineVersion`: `str`
 - `Id`: `str`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ConfigurationsTypeDef
 
@@ -183,14 +173,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Current`: `"ConfigurationIdTypeDef"`
-- `History`: `List["ConfigurationIdTypeDef"]`
-- `Pending`: `"ConfigurationIdTypeDef"`
 
+- `Current`:
+  [ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)
+- `History`:
+  `List`\[[ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)\]
+- `Pending`:
+  [ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)
 
 ## CreateBrokerResponseTypeDef
 
@@ -198,13 +188,10 @@ Optional fields:
 from mypy_boto3_mq.type_defs import CreateBrokerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BrokerArn`: `str`
 - `BrokerId`: `str`
-
 
 ## CreateConfigurationResponseTypeDef
 
@@ -212,17 +199,16 @@ Optional fields:
 from mypy_boto3_mq.type_defs import CreateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
-- `AuthenticationStrategy`: `AuthenticationStrategy`
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `Created`: `datetime`
 - `Id`: `str`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-
 
 ## DeleteBrokerResponseTypeDef
 
@@ -230,12 +216,9 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DeleteBrokerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BrokerId`: `str`
 
+- `BrokerId`: `str`
 
 ## DescribeBrokerEngineTypesResponseTypeDef
 
@@ -243,14 +226,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BrokerEngineTypes`: `List["BrokerEngineTypeTypeDef"]`
+
+- `BrokerEngineTypes`:
+  `List`\[[BrokerEngineTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#brokerenginetypetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-
 
 ## DescribeBrokerInstanceOptionsResponseTypeDef
 
@@ -258,14 +239,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeBrokerInstanceOptionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BrokerInstanceOptions`: `List["BrokerInstanceOptionTypeDef"]`
+
+- `BrokerInstanceOptions`:
+  `List`\[[BrokerInstanceOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#brokerinstanceoptiontypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-
 
 ## DescribeBrokerResponseTypeDef
 
@@ -273,39 +252,50 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeBrokerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuthenticationStrategy`: `AuthenticationStrategy`
+
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `AutoMinorVersionUpgrade`: `bool`
 - `BrokerArn`: `str`
 - `BrokerId`: `str`
-- `BrokerInstances`: `List["BrokerInstanceTypeDef"]`
+- `BrokerInstances`:
+  `List`\[[BrokerInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#brokerinstancetypedef)\]
 - `BrokerName`: `str`
-- `BrokerState`: `BrokerState`
-- `Configurations`: `"ConfigurationsTypeDef"`
+- `BrokerState`:
+  [BrokerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#brokerstate)
+- `Configurations`:
+  [ConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationstypedef)
 - `Created`: `datetime`
-- `DeploymentMode`: `DeploymentMode`
-- `EncryptionOptions`: `"EncryptionOptionsTypeDef"`
-- `EngineType`: `EngineType`
+- `DeploymentMode`:
+  [DeploymentMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#deploymentmode)
+- `EncryptionOptions`:
+  [EncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#encryptionoptionstypedef)
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
 - `EngineVersion`: `str`
 - `HostInstanceType`: `str`
-- `LdapServerMetadata`: `"LdapServerMetadataOutputTypeDef"`
-- `Logs`: `"LogsSummaryTypeDef"`
-- `MaintenanceWindowStartTime`: `"WeeklyStartTimeTypeDef"`
-- `PendingAuthenticationStrategy`: `AuthenticationStrategy`
+- `LdapServerMetadata`:
+  [LdapServerMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#ldapservermetadataoutputtypedef)
+- `Logs`:
+  [LogsSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#logssummarytypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#weeklystarttimetypedef)
+- `PendingAuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `PendingEngineVersion`: `str`
 - `PendingHostInstanceType`: `str`
-- `PendingLdapServerMetadata`: `"LdapServerMetadataOutputTypeDef"`
-- `PendingSecurityGroups`: `List[str]`
+- `PendingLdapServerMetadata`:
+  [LdapServerMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#ldapservermetadataoutputtypedef)
+- `PendingSecurityGroups`: `List`\[`str`\]
 - `PubliclyAccessible`: `bool`
-- `SecurityGroups`: `List[str]`
-- `StorageType`: `BrokerStorageType`
-- `SubnetIds`: `List[str]`
-- `Tags`: `Dict[str, str]`
-- `Users`: `List["UserSummaryTypeDef"]`
-
+- `SecurityGroups`: `List`\[`str`\]
+- `StorageType`:
+  [BrokerStorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#brokerstoragetype)
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Users`:
+  `List`\[[UserSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#usersummarytypedef)\]
 
 ## DescribeConfigurationResponseTypeDef
 
@@ -313,21 +303,21 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
-- `AuthenticationStrategy`: `AuthenticationStrategy`
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `Created`: `datetime`
 - `Description`: `str`
-- `EngineType`: `EngineType`
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
 - `EngineVersion`: `str`
 - `Id`: `str`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeConfigurationRevisionResponseTypeDef
 
@@ -335,15 +325,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConfigurationId`: `str`
 - `Created`: `datetime`
 - `Data`: `str`
 - `Description`: `str`
-
 
 ## DescribeUserResponseTypeDef
 
@@ -351,16 +338,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import DescribeUserResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BrokerId`: `str`
 - `ConsoleAccess`: `bool`
-- `Groups`: `List[str]`
-- `Pending`: `"UserPendingChangesTypeDef"`
+- `Groups`: `List`\[`str`\]
+- `Pending`:
+  [UserPendingChangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#userpendingchangestypedef)
 - `Username`: `str`
-
 
 ## EncryptionOptionsTypeDef
 
@@ -368,15 +353,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import EncryptionOptionsTypeDef
 ```
 
-
 Required fields:
+
 - `UseAwsOwnedKey`: `bool`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## EngineVersionTypeDef
 
@@ -384,12 +367,9 @@ Optional fields:
 from mypy_boto3_mq.type_defs import EngineVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## LdapServerMetadataInputTypeDef
 
@@ -397,11 +377,9 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Hosts`: `List[str]`
+
+- `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
 - `RoleName`: `str`
 - `RoleSearchMatching`: `str`
@@ -413,16 +391,15 @@ Optional fields:
 - `UserSearchMatching`: `str`
 - `UserSearchSubtree`: `bool`
 
-
 ## LdapServerMetadataOutputTypeDef
 
 ```python
 from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
 ```
 
-
 Required fields:
-- `Hosts`: `List[str]`
+
+- `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
 - `RoleName`: `str`
 - `RoleSearchMatching`: `str`
@@ -432,10 +409,8 @@ Required fields:
 - `UserRoleName`: `str`
 - `UserSearchMatching`: `str`
 - `UserSearchSubtree`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#responsemetadata)
 
 ## ListBrokersResponseTypeDef
 
@@ -443,13 +418,11 @@ Required fields:
 from mypy_boto3_mq.type_defs import ListBrokersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BrokerSummaries`: `List["BrokerSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `BrokerSummaries`:
+  `List`\[[BrokerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#brokersummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListConfigurationRevisionsResponseTypeDef
 
@@ -457,15 +430,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ListConfigurationRevisionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConfigurationId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Revisions`: `List["ConfigurationRevisionTypeDef"]`
-
+- `Revisions`:
+  `List`\[[ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationrevisiontypedef)\]
 
 ## ListConfigurationsResponseTypeDef
 
@@ -473,14 +444,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ListConfigurationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Configurations`: `List["ConfigurationTypeDef"]`
+
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationtypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-
 
 ## ListTagsResponseTypeDef
 
@@ -488,12 +457,9 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ListTagsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListUsersResponseTypeDef
 
@@ -501,15 +467,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ListUsersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BrokerId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Users`: `List["UserSummaryTypeDef"]`
-
+- `Users`:
+  `List`\[[UserSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#usersummarytypedef)\]
 
 ## LogsSummaryTypeDef
 
@@ -517,16 +481,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LogsSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Audit`: `bool`
 - `AuditLogGroup`: `str`
 - `General`: `bool`
 - `GeneralLogGroup`: `str`
-- `Pending`: `"PendingLogsTypeDef"`
-
+- `Pending`:
+  [PendingLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#pendinglogstypedef)
 
 ## LogsTypeDef
 
@@ -534,13 +496,10 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LogsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Audit`: `bool`
 - `General`: `bool`
-
 
 ## PaginatorConfigTypeDef
 
@@ -548,14 +507,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PendingLogsTypeDef
 
@@ -563,13 +519,10 @@ Optional fields:
 from mypy_boto3_mq.type_defs import PendingLogsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Audit`: `bool`
 - `General`: `bool`
-
 
 ## ResponseMetadata
 
@@ -577,16 +530,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SanitizationWarningTypeDef
 
@@ -594,14 +544,12 @@ Required fields:
 from mypy_boto3_mq.type_defs import SanitizationWarningTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttributeName`: `str`
 - `ElementName`: `str`
-- `Reason`: `SanitizationWarningReason`
-
+- `Reason`:
+  [SanitizationWarningReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#sanitizationwarningreason)
 
 ## UpdateBrokerResponseTypeDef
 
@@ -609,20 +557,21 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UpdateBrokerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuthenticationStrategy`: `AuthenticationStrategy`
+
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
 - `AutoMinorVersionUpgrade`: `bool`
 - `BrokerId`: `str`
-- `Configuration`: `"ConfigurationIdTypeDef"`
+- `Configuration`:
+  [ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)
 - `EngineVersion`: `str`
 - `HostInstanceType`: `str`
-- `LdapServerMetadata`: `"LdapServerMetadataOutputTypeDef"`
-- `Logs`: `"LogsTypeDef"`
-- `SecurityGroups`: `List[str]`
-
+- `LdapServerMetadata`:
+  [LdapServerMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#ldapservermetadataoutputtypedef)
+- `Logs`:
+  [LogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#logstypedef)
+- `SecurityGroups`: `List`\[`str`\]
 
 ## UpdateConfigurationResponseTypeDef
 
@@ -630,17 +579,16 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UpdateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `Created`: `datetime`
 - `Id`: `str`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `Warnings`: `List["SanitizationWarningTypeDef"]`
-
+- `Warnings`:
+  `List`\[[SanitizationWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#sanitizationwarningtypedef)\]
 
 ## UserPendingChangesTypeDef
 
@@ -648,14 +596,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserPendingChangesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConsoleAccess`: `bool`
-- `Groups`: `List[str]`
-- `PendingChange`: `ChangeType`
 
+- `ConsoleAccess`: `bool`
+- `Groups`: `List`\[`str`\]
+- `PendingChange`:
+  [ChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#changetype)
 
 ## UserSummaryTypeDef
 
@@ -663,13 +609,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PendingChange`: `ChangeType`
-- `Username`: `str`
 
+- `PendingChange`:
+  [ChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#changetype)
+- `Username`: `str`
 
 ## UserTypeDef
 
@@ -677,15 +621,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConsoleAccess`: `bool`
-- `Groups`: `List[str]`
+- `Groups`: `List`\[`str`\]
 - `Password`: `str`
 - `Username`: `str`
-
 
 ## WeeklyStartTimeTypeDef
 
@@ -693,11 +634,9 @@ Optional fields:
 from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DayOfWeek`: `DayOfWeek`
+
+- `DayOfWeek`:
+  [DayOfWeek](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#dayofweek)
 - `TimeOfDay`: `str`
 - `TimeZone`: `str`
-

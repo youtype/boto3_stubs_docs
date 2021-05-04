@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SFN](./README.md) > Structures
 
-Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+Auto-generated documentation for
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+type annotations stubs module
+[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Typed dictionaries for boto3 SFN module](#typed-dictionaries-for-boto3-sfn-module)
   - [ActivityFailedEventDetailsTypeDef](#activityfailedeventdetailstypedef)
@@ -72,13 +74,10 @@ type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/projec
 from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## ActivityListItemTypeDef
 
@@ -86,14 +85,11 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ActivityListItemTypeDef
 ```
 
-
 Required fields:
+
 - `activityArn`: `str`
 - `name`: `str`
 - `creationDate`: `datetime`
-
-
-
 
 ## ActivityScheduleFailedEventDetailsTypeDef
 
@@ -101,13 +97,10 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import ActivityScheduleFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## ActivityScheduledEventDetailsTypeDef
 
@@ -115,18 +108,17 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ActivityScheduledEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resource`: `str`
 
-
-
 Optional fields:
+
 - `input`: `str`
-- `inputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
+- `inputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 - `timeoutInSeconds`: `int`
 - `heartbeatInSeconds`: `int`
-
 
 ## ActivityStartedEventDetailsTypeDef
 
@@ -134,12 +126,9 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ActivityStartedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `workerName`: `str`
 
+- `workerName`: `str`
 
 ## ActivitySucceededEventDetailsTypeDef
 
@@ -147,13 +136,11 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ActivitySucceededEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## ActivityTimedOutEventDetailsTypeDef
 
@@ -161,13 +148,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ActivityTimedOutEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## BillingDetailsTypeDef
 
@@ -175,13 +159,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import BillingDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `billedMemoryUsedInMB`: `int`
 - `billedDurationInMilliseconds`: `int`
-
 
 ## CloudWatchEventsExecutionDataDetailsTypeDef
 
@@ -189,12 +170,9 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import CloudWatchEventsExecutionDataDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `included`: `bool`
 
+- `included`: `bool`
 
 ## CloudWatchLogsLogGroupTypeDef
 
@@ -202,12 +180,9 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import CloudWatchLogsLogGroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logGroupArn`: `str`
 
+- `logGroupArn`: `str`
 
 ## CreateActivityOutputTypeDef
 
@@ -215,14 +190,12 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import CreateActivityOutputTypeDef
 ```
 
-
 Required fields:
+
 - `activityArn`: `str`
 - `creationDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## CreateStateMachineOutputTypeDef
 
@@ -230,14 +203,12 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import CreateStateMachineOutputTypeDef
 ```
 
-
 Required fields:
+
 - `stateMachineArn`: `str`
 - `creationDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## DescribeActivityOutputTypeDef
 
@@ -245,15 +216,13 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import DescribeActivityOutputTypeDef
 ```
 
-
 Required fields:
+
 - `activityArn`: `str`
 - `name`: `str`
 - `creationDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## DescribeExecutionOutputTypeDef
 
@@ -261,23 +230,24 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import DescribeExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: `ExecutionStatus`
+- `status`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
 - `startDate`: `datetime`
 - `stopDate`: `datetime`
 - `input`: `str`
-- `inputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
+- `inputDetails`:
+  [CloudWatchEventsExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#cloudwatcheventsexecutiondatadetailstypedef)
 - `output`: `str`
-- `outputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
+- `outputDetails`:
+  [CloudWatchEventsExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#cloudwatcheventsexecutiondatadetailstypedef)
 - `traceHeader`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## DescribeStateMachineForExecutionOutputTypeDef
 
@@ -285,19 +255,19 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `stateMachineArn`: `str`
 - `name`: `str`
 - `definition`: `str`
 - `roleArn`: `str`
 - `updateDate`: `datetime`
-- `loggingConfiguration`: `"LoggingConfigurationTypeDef"`
-- `tracingConfiguration`: `"TracingConfigurationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## DescribeStateMachineOutputTypeDef
 
@@ -305,21 +275,23 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineOutputTypeDef
 ```
 
-
 Required fields:
+
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: `StateMachineStatus`
+- `status`:
+  [StateMachineStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#statemachinestatus)
 - `definition`: `str`
 - `roleArn`: `str`
-- `type`: `StateMachineType`
+- `type`:
+  [StateMachineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#statemachinetype)
 - `creationDate`: `datetime`
-- `loggingConfiguration`: `"LoggingConfigurationTypeDef"`
-- `tracingConfiguration`: `"TracingConfigurationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## ExecutionAbortedEventDetailsTypeDef
 
@@ -327,13 +299,10 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionAbortedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## ExecutionFailedEventDetailsTypeDef
 
@@ -341,13 +310,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## ExecutionListItemTypeDef
 
@@ -355,19 +321,18 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionListItemTypeDef
 ```
 
-
 Required fields:
+
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: `ExecutionStatus`
+- `status`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
 - `startDate`: `datetime`
 
-
-
 Optional fields:
-- `stopDate`: `datetime`
 
+- `stopDate`: `datetime`
 
 ## ExecutionStartedEventDetailsTypeDef
 
@@ -375,14 +340,12 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionStartedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `input`: `str`
-- `inputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
-- `roleArn`: `str`
 
+- `input`: `str`
+- `inputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
+- `roleArn`: `str`
 
 ## ExecutionSucceededEventDetailsTypeDef
 
@@ -390,13 +353,11 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionSucceededEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## ExecutionTimedOutEventDetailsTypeDef
 
@@ -404,13 +365,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ExecutionTimedOutEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## GetActivityTaskOutputTypeDef
 
@@ -418,14 +376,12 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import GetActivityTaskOutputTypeDef
 ```
 
-
 Required fields:
+
 - `taskToken`: `str`
 - `input`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## GetExecutionHistoryOutputTypeDef
 
@@ -433,14 +389,13 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
 ```
 
-
 Required fields:
-- `events`: `List["HistoryEventTypeDef"]`
+
+- `events`:
+  `List`\[[HistoryEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## HistoryEventExecutionDataDetailsTypeDef
 
@@ -448,12 +403,9 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import HistoryEventExecutionDataDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `truncated`: `bool`
 
+- `truncated`: `bool`
 
 ## HistoryEventTypeDef
 
@@ -461,49 +413,80 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import HistoryEventTypeDef
 ```
 
-
 Required fields:
+
 - `timestamp`: `datetime`
-- `type`: `HistoryEventType`
+- `type`:
+  [HistoryEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#historyeventtype)
 - `id`: `int`
 
-
-
 Optional fields:
-- `previousEventId`: `int`
-- `activityFailedEventDetails`: `"ActivityFailedEventDetailsTypeDef"`
-- `activityScheduleFailedEventDetails`: `"ActivityScheduleFailedEventDetailsTypeDef"`
-- `activityScheduledEventDetails`: `"ActivityScheduledEventDetailsTypeDef"`
-- `activityStartedEventDetails`: `"ActivityStartedEventDetailsTypeDef"`
-- `activitySucceededEventDetails`: `"ActivitySucceededEventDetailsTypeDef"`
-- `activityTimedOutEventDetails`: `"ActivityTimedOutEventDetailsTypeDef"`
-- `taskFailedEventDetails`: `"TaskFailedEventDetailsTypeDef"`
-- `taskScheduledEventDetails`: `"TaskScheduledEventDetailsTypeDef"`
-- `taskStartFailedEventDetails`: `"TaskStartFailedEventDetailsTypeDef"`
-- `taskStartedEventDetails`: `"TaskStartedEventDetailsTypeDef"`
-- `taskSubmitFailedEventDetails`: `"TaskSubmitFailedEventDetailsTypeDef"`
-- `taskSubmittedEventDetails`: `"TaskSubmittedEventDetailsTypeDef"`
-- `taskSucceededEventDetails`: `"TaskSucceededEventDetailsTypeDef"`
-- `taskTimedOutEventDetails`: `"TaskTimedOutEventDetailsTypeDef"`
-- `executionFailedEventDetails`: `"ExecutionFailedEventDetailsTypeDef"`
-- `executionStartedEventDetails`: `"ExecutionStartedEventDetailsTypeDef"`
-- `executionSucceededEventDetails`: `"ExecutionSucceededEventDetailsTypeDef"`
-- `executionAbortedEventDetails`: `"ExecutionAbortedEventDetailsTypeDef"`
-- `executionTimedOutEventDetails`: `"ExecutionTimedOutEventDetailsTypeDef"`
-- `mapStateStartedEventDetails`: `"MapStateStartedEventDetailsTypeDef"`
-- `mapIterationStartedEventDetails`: `"MapIterationEventDetailsTypeDef"`
-- `mapIterationSucceededEventDetails`: `"MapIterationEventDetailsTypeDef"`
-- `mapIterationFailedEventDetails`: `"MapIterationEventDetailsTypeDef"`
-- `mapIterationAbortedEventDetails`: `"MapIterationEventDetailsTypeDef"`
-- `lambdaFunctionFailedEventDetails`: `"LambdaFunctionFailedEventDetailsTypeDef"`
-- `lambdaFunctionScheduleFailedEventDetails`: `"LambdaFunctionScheduleFailedEventDetailsTypeDef"`
-- `lambdaFunctionScheduledEventDetails`: `"LambdaFunctionScheduledEventDetailsTypeDef"`
-- `lambdaFunctionStartFailedEventDetails`: `"LambdaFunctionStartFailedEventDetailsTypeDef"`
-- `lambdaFunctionSucceededEventDetails`: `"LambdaFunctionSucceededEventDetailsTypeDef"`
-- `lambdaFunctionTimedOutEventDetails`: `"LambdaFunctionTimedOutEventDetailsTypeDef"`
-- `stateEnteredEventDetails`: `"StateEnteredEventDetailsTypeDef"`
-- `stateExitedEventDetails`: `"StateExitedEventDetailsTypeDef"`
 
+- `previousEventId`: `int`
+- `activityFailedEventDetails`:
+  [ActivityFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activityfailedeventdetailstypedef)
+- `activityScheduleFailedEventDetails`:
+  [ActivityScheduleFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activityschedulefailedeventdetailstypedef)
+- `activityScheduledEventDetails`:
+  [ActivityScheduledEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activityscheduledeventdetailstypedef)
+- `activityStartedEventDetails`:
+  [ActivityStartedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activitystartedeventdetailstypedef)
+- `activitySucceededEventDetails`:
+  [ActivitySucceededEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activitysucceededeventdetailstypedef)
+- `activityTimedOutEventDetails`:
+  [ActivityTimedOutEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activitytimedouteventdetailstypedef)
+- `taskFailedEventDetails`:
+  [TaskFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#taskfailedeventdetailstypedef)
+- `taskScheduledEventDetails`:
+  [TaskScheduledEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#taskscheduledeventdetailstypedef)
+- `taskStartFailedEventDetails`:
+  [TaskStartFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#taskstartfailedeventdetailstypedef)
+- `taskStartedEventDetails`:
+  [TaskStartedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#taskstartedeventdetailstypedef)
+- `taskSubmitFailedEventDetails`:
+  [TaskSubmitFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tasksubmitfailedeventdetailstypedef)
+- `taskSubmittedEventDetails`:
+  [TaskSubmittedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tasksubmittedeventdetailstypedef)
+- `taskSucceededEventDetails`:
+  [TaskSucceededEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tasksucceededeventdetailstypedef)
+- `taskTimedOutEventDetails`:
+  [TaskTimedOutEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tasktimedouteventdetailstypedef)
+- `executionFailedEventDetails`:
+  [ExecutionFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executionfailedeventdetailstypedef)
+- `executionStartedEventDetails`:
+  [ExecutionStartedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executionstartedeventdetailstypedef)
+- `executionSucceededEventDetails`:
+  [ExecutionSucceededEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executionsucceededeventdetailstypedef)
+- `executionAbortedEventDetails`:
+  [ExecutionAbortedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executionabortedeventdetailstypedef)
+- `executionTimedOutEventDetails`:
+  [ExecutionTimedOutEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executiontimedouteventdetailstypedef)
+- `mapStateStartedEventDetails`:
+  [MapStateStartedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#mapstatestartedeventdetailstypedef)
+- `mapIterationStartedEventDetails`:
+  [MapIterationEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#mapiterationeventdetailstypedef)
+- `mapIterationSucceededEventDetails`:
+  [MapIterationEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#mapiterationeventdetailstypedef)
+- `mapIterationFailedEventDetails`:
+  [MapIterationEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#mapiterationeventdetailstypedef)
+- `mapIterationAbortedEventDetails`:
+  [MapIterationEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#mapiterationeventdetailstypedef)
+- `lambdaFunctionFailedEventDetails`:
+  [LambdaFunctionFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctionfailedeventdetailstypedef)
+- `lambdaFunctionScheduleFailedEventDetails`:
+  [LambdaFunctionScheduleFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctionschedulefailedeventdetailstypedef)
+- `lambdaFunctionScheduledEventDetails`:
+  [LambdaFunctionScheduledEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctionscheduledeventdetailstypedef)
+- `lambdaFunctionStartFailedEventDetails`:
+  [LambdaFunctionStartFailedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctionstartfailedeventdetailstypedef)
+- `lambdaFunctionSucceededEventDetails`:
+  [LambdaFunctionSucceededEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctionsucceededeventdetailstypedef)
+- `lambdaFunctionTimedOutEventDetails`:
+  [LambdaFunctionTimedOutEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#lambdafunctiontimedouteventdetailstypedef)
+- `stateEnteredEventDetails`:
+  [StateEnteredEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#stateenteredeventdetailstypedef)
+- `stateExitedEventDetails`:
+  [StateExitedEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#stateexitedeventdetailstypedef)
 
 ## LambdaFunctionFailedEventDetailsTypeDef
 
@@ -511,13 +494,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## LambdaFunctionScheduleFailedEventDetailsTypeDef
 
@@ -525,13 +505,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduleFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## LambdaFunctionScheduledEventDetailsTypeDef
 
@@ -539,17 +516,16 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduledEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resource`: `str`
 
-
-
 Optional fields:
-- `input`: `str`
-- `inputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
-- `timeoutInSeconds`: `int`
 
+- `input`: `str`
+- `inputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
+- `timeoutInSeconds`: `int`
 
 ## LambdaFunctionStartFailedEventDetailsTypeDef
 
@@ -557,13 +533,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionStartFailedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## LambdaFunctionSucceededEventDetailsTypeDef
 
@@ -571,13 +544,11 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionSucceededEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## LambdaFunctionTimedOutEventDetailsTypeDef
 
@@ -585,13 +556,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionTimedOutEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## ListActivitiesOutputTypeDef
 
@@ -599,14 +567,13 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ListActivitiesOutputTypeDef
 ```
 
-
 Required fields:
-- `activities`: `List["ActivityListItemTypeDef"]`
+
+- `activities`:
+  `List`\[[ActivityListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#activitylistitemtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## ListExecutionsOutputTypeDef
 
@@ -614,14 +581,13 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import ListExecutionsOutputTypeDef
 ```
 
-
 Required fields:
-- `executions`: `List["ExecutionListItemTypeDef"]`
+
+- `executions`:
+  `List`\[[ExecutionListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#executionlistitemtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## ListStateMachinesOutputTypeDef
 
@@ -629,14 +595,13 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import ListStateMachinesOutputTypeDef
 ```
 
-
 Required fields:
-- `stateMachines`: `List["StateMachineListItemTypeDef"]`
+
+- `stateMachines`:
+  `List`\[[StateMachineListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#statemachinelistitemtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -644,13 +609,12 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## LogDestinationTypeDef
 
@@ -658,12 +622,10 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import LogDestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cloudWatchLogsLogGroup`: `"CloudWatchLogsLogGroupTypeDef"`
 
+- `cloudWatchLogsLogGroup`:
+  [CloudWatchLogsLogGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#cloudwatchlogsloggrouptypedef)
 
 ## LoggingConfigurationTypeDef
 
@@ -671,14 +633,13 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import LoggingConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `level`: `LogLevel`
-- `includeExecutionData`: `bool`
-- `destinations`: `List["LogDestinationTypeDef"]`
 
+- `level`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#loglevel)
+- `includeExecutionData`: `bool`
+- `destinations`:
+  `List`\[[LogDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#logdestinationtypedef)\]
 
 ## MapIterationEventDetailsTypeDef
 
@@ -686,13 +647,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import MapIterationEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `index`: `int`
-
 
 ## MapStateStartedEventDetailsTypeDef
 
@@ -700,12 +658,9 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import MapStateStartedEventDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `length`: `int`
 
+- `length`: `int`
 
 ## PaginatorConfigTypeDef
 
@@ -713,14 +668,11 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ResponseMetadata
 
@@ -728,16 +680,13 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## StartExecutionOutputTypeDef
 
@@ -745,14 +694,12 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import StartExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `executionArn`: `str`
 - `startDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## StartSyncExecutionOutputTypeDef
 
@@ -760,26 +707,28 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
 - `name`: `str`
 - `startDate`: `datetime`
 - `stopDate`: `datetime`
-- `status`: `SyncExecutionStatus`
+- `status`:
+  [SyncExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#syncexecutionstatus)
 - `error`: `str`
 - `cause`: `str`
 - `input`: `str`
-- `inputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
+- `inputDetails`:
+  [CloudWatchEventsExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#cloudwatcheventsexecutiondatadetailstypedef)
 - `output`: `str`
-- `outputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
+- `outputDetails`:
+  [CloudWatchEventsExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#cloudwatcheventsexecutiondatadetailstypedef)
 - `traceHeader`: `str`
-- `billingDetails`: `"BillingDetailsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `billingDetails`:
+  [BillingDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#billingdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## StateEnteredEventDetailsTypeDef
 
@@ -787,16 +736,15 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import StateEnteredEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
-- `input`: `str`
-- `inputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `input`: `str`
+- `inputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## StateExitedEventDetailsTypeDef
 
@@ -804,16 +752,15 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import StateExitedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## StateMachineListItemTypeDef
 
@@ -821,15 +768,13 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import StateMachineListItemTypeDef
 ```
 
-
 Required fields:
+
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `type`: `StateMachineType`
+- `type`:
+  [StateMachineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#statemachinetype)
 - `creationDate`: `datetime`
-
-
-
 
 ## StopExecutionOutputTypeDef
 
@@ -837,13 +782,11 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import StopExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `stopDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)
 
 ## TagTypeDef
 
@@ -851,13 +794,10 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `key`: `str`
 - `value`: `str`
-
 
 ## TaskFailedEventDetailsTypeDef
 
@@ -865,17 +805,15 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskFailedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## TaskScheduledEventDetailsTypeDef
 
@@ -883,19 +821,17 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskScheduledEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 - `region`: `str`
 - `parameters`: `str`
 
-
-
 Optional fields:
+
 - `timeoutInSeconds`: `int`
 - `heartbeatInSeconds`: `int`
-
 
 ## TaskStartFailedEventDetailsTypeDef
 
@@ -903,17 +839,15 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskStartFailedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## TaskStartedEventDetailsTypeDef
 
@@ -921,13 +855,10 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskStartedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
-
-
-
 
 ## TaskSubmitFailedEventDetailsTypeDef
 
@@ -935,17 +866,15 @@ Required fields:
 from mypy_boto3_stepfunctions.type_defs import TaskSubmitFailedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## TaskSubmittedEventDetailsTypeDef
 
@@ -953,17 +882,16 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskSubmittedEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## TaskSucceededEventDetailsTypeDef
 
@@ -971,17 +899,16 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskSucceededEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
-- `output`: `str`
-- `outputDetails`: `"HistoryEventExecutionDataDetailsTypeDef"`
 
+- `output`: `str`
+- `outputDetails`:
+  [HistoryEventExecutionDataDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#historyeventexecutiondatadetailstypedef)
 
 ## TaskTimedOutEventDetailsTypeDef
 
@@ -989,17 +916,15 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TaskTimedOutEventDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `resource`: `str`
 
-
-
 Optional fields:
+
 - `error`: `str`
 - `cause`: `str`
-
 
 ## TracingConfigurationTypeDef
 
@@ -1007,12 +932,9 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import TracingConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `enabled`: `bool`
 
+- `enabled`: `bool`
 
 ## UpdateStateMachineOutputTypeDef
 
@@ -1020,10 +942,8 @@ Optional fields:
 from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineOutputTypeDef
 ```
 
-
 Required fields:
+
 - `updateDate`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#responsemetadata)

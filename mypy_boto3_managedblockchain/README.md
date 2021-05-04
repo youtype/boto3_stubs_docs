@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ManagedBlockchain
 
-Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
-type annotations stubs module [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+Auto-generated documentation for
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+type annotations stubs module
+[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 ```bash
 pip install mypy-boto3-managedblockchain
@@ -18,7 +20,8 @@ pip install mypy-boto3-managedblockchain
 
 ## ManagedBlockchainClient
 
-Type annotations for  `boto3.client("managedblockchain")` as [ManagedBlockchainClient](./client.md)
+Type annotations for `boto3.client("managedblockchain")` as
+[ManagedBlockchainClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 ```
 
-
 ManagedBlockchainClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_member](./client.md#create-member)
 - [create_network](./client.md#create-network)
@@ -58,10 +59,8 @@ ManagedBlockchainClient [exceptions](./client.md#exceptions)
 - [update_node](./client.md#update-node)
 - [vote_on_proposal](./client.md#vote-on-proposal)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [IllegalActionException](./client.md#illegalactionexception)
@@ -73,15 +72,6 @@ ManagedBlockchainClient [exceptions](./client.md#exceptions)
 - [ResourceNotReadyException](./client.md#resourcenotreadyexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -104,13 +94,10 @@ from mypy_boto3_managedblockchain.literals import Edition, ...
 - [ThresholdComparator](./literals.md#thresholdcomparator)
 - [VoteValue](./literals.md#votevalue)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

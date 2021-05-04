@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudHSMV2](./README.md) > CloudHSMV2Client
 
-Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+Auto-generated documentation for
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+type annotations stubs module
+[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [CloudHSMV2Client for boto3 CloudHSMV2 module](#cloudhsmv2client-for-boto3-cloudhsmv2-module)
   - [CloudHSMV2Client](#cloudhsmv2client)
@@ -41,12 +43,13 @@ def get_cloudhsmv2_client() -> CloudHSMV2Client:
     return boto3.client("cloudhsmv2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
+Boto3 documentation:
+[CloudHSMV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudhsmv2.client import Exceptions
@@ -54,7 +57,6 @@ from mypy_boto3_cloudhsmv2.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -66,283 +68,286 @@ Exceptions:
 - `Exceptions.CloudHsmServiceException`
 - `Exceptions.CloudHsmTagException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudhsmv2").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate]
+Boto3 documentation:
+[CloudHSMV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### copy_backup_to_region
 
 Type annotations for `boto3.client("cloudhsmv2").copy_backup_to_region` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region]
+Boto3 documentation:
+[CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
 
-```python
-def copy_backup_to_region(
-    self,
-    DestinationRegion: str,
-    BackupId: str,
-    TagList: List["TagTypeDef"] = None
-) -> CopyBackupToRegionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DestinationRegion`: `str` *(required)*
+- `BackupId`: `str` *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CopyBackupToRegionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#copybackuptoregionresponsetypedef).
 
 ### create_cluster
 
 Type annotations for `boto3.client("cloudhsmv2").create_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster]
+Boto3 documentation:
+[CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
 
-```python
-def create_cluster(
-    self,
-    HsmType: str,
-    SubnetIds: List[str],
-    BackupRetentionPolicy: "BackupRetentionPolicyTypeDef" = None,
-    SourceBackupId: str = None,
-    TagList: List["TagTypeDef"] = None
-) -> CreateClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmType`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `BackupRetentionPolicy`:
+  [BackupRetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backupretentionpolicytypedef)
+- `SourceBackupId`: `str`
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#createclusterresponsetypedef).
 
 ### create_hsm
 
 Type annotations for `boto3.client("cloudhsmv2").create_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm]
+Boto3 documentation:
+[CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
 
-```python
-def create_hsm(
-    self,
-    ClusterId: str,
-    AvailabilityZone: str,
-    IpAddress: str = None
-) -> CreateHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `AvailabilityZone`: `str` *(required)*
+- `IpAddress`: `str`
+
+Returns
+[CreateHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#createhsmresponsetypedef).
 
 ### delete_backup
 
 Type annotations for `boto3.client("cloudhsmv2").delete_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup]
+Boto3 documentation:
+[CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
 
-```python
-def delete_backup(
-    self,
-    BackupId: str
-) -> DeleteBackupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str` *(required)*
+
+Returns
+[DeleteBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deletebackupresponsetypedef).
 
 ### delete_cluster
 
 Type annotations for `boto3.client("cloudhsmv2").delete_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster]
+Boto3 documentation:
+[CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
 
-```python
-def delete_cluster(
-    self,
-    ClusterId: str
-) -> DeleteClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[DeleteClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deleteclusterresponsetypedef).
 
 ### delete_hsm
 
 Type annotations for `boto3.client("cloudhsmv2").delete_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm]
+Boto3 documentation:
+[CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
 
-```python
-def delete_hsm(
-    self,
-    ClusterId: str,
-    HsmId: str = None,
-    EniId: str = None,
-    EniIp: str = None
-) -> DeleteHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `HsmId`: `str`
+- `EniId`: `str`
+- `EniIp`: `str`
+
+Returns
+[DeleteHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deletehsmresponsetypedef).
 
 ### describe_backups
 
 Type annotations for `boto3.client("cloudhsmv2").describe_backups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups]
+Boto3 documentation:
+[CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
 
-```python
-def describe_backups(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filters: Dict[str, List[str]] = None,
-    SortAscending: bool = None
-) -> DescribeBackupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `SortAscending`: `bool`
+
+Returns
+[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describebackupsresponsetypedef).
 
 ### describe_clusters
 
 Type annotations for `boto3.client("cloudhsmv2").describe_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters]
+Boto3 documentation:
+[CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
 
-```python
-def describe_clusters(
-    self,
-    Filters: Dict[str, List[str]] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeClustersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describeclustersresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cloudhsmv2").generate_presigned_url` method.
+Type annotations for `boto3.client("cloudhsmv2").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudHSMV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### initialize_cluster
 
 Type annotations for `boto3.client("cloudhsmv2").initialize_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster]
+Boto3 documentation:
+[CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
 
-```python
-def initialize_cluster(
-    self,
-    ClusterId: str,
-    SignedCert: str,
-    TrustAnchor: str
-) -> InitializeClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `SignedCert`: `str` *(required)*
+- `TrustAnchor`: `str` *(required)*
+
+Returns
+[InitializeClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#initializeclusterresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("cloudhsmv2").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags]
+Boto3 documentation:
+[CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#listtagsresponsetypedef).
 
 ### modify_backup_attributes
 
-Type annotations for `boto3.client("cloudhsmv2").modify_backup_attributes` method.
+Type annotations for `boto3.client("cloudhsmv2").modify_backup_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes]
+Boto3 documentation:
+[CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
 
-```python
-def modify_backup_attributes(
-    self,
-    BackupId: str,
-    NeverExpires: bool
-) -> ModifyBackupAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str` *(required)*
+- `NeverExpires`: `bool` *(required)*
+
+Returns
+[ModifyBackupAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#modifybackupattributesresponsetypedef).
 
 ### modify_cluster
 
 Type annotations for `boto3.client("cloudhsmv2").modify_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster]
+Boto3 documentation:
+[CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
 
-```python
-def modify_cluster(
-    self,
-    BackupRetentionPolicy: "BackupRetentionPolicyTypeDef",
-    ClusterId: str
-) -> ModifyClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupRetentionPolicy`:
+  [BackupRetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backupretentionpolicytypedef)
+  *(required)*
+- `ClusterId`: `str` *(required)*
+
+Returns
+[ModifyClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#modifyclusterresponsetypedef).
 
 ### restore_backup
 
 Type annotations for `boto3.client("cloudhsmv2").restore_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup]
+Boto3 documentation:
+[CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
 
-```python
-def restore_backup(
-    self,
-    BackupId: str
-) -> RestoreBackupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str` *(required)*
+
+Returns
+[RestoreBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#restorebackupresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("cloudhsmv2").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource]
+Boto3 documentation:
+[CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceId: str,
-    TagList: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("cloudhsmv2").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource]
+Boto3 documentation:
+[CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceId: str,
-    TagKeyList: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceId`: `str` *(required)*
+- `TagKeyList`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudhsmv2").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloudhsmv2").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_backups")` -> [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
-- `client.get_paginator("describe_clusters")` -> [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
-- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
-
-
+- `client.get_paginator("describe_backups")` ->
+  [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+- `client.get_paginator("describe_clusters")` ->
+  [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- `client.get_paginator("list_tags")` ->
+  [ListTagsPaginator](./paginators.md#listtagspaginator)

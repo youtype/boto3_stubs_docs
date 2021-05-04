@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AccessAnalyzer
 
-Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+Auto-generated documentation for
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+type annotations stubs module
+[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 ```bash
 pip install mypy-boto3-accessanalyzer
@@ -19,7 +21,8 @@ pip install mypy-boto3-accessanalyzer
 
 ## AccessAnalyzerClient
 
-Type annotations for  `boto3.client("accessanalyzer")` as [AccessAnalyzerClient](./client.md)
+Type annotations for `boto3.client("accessanalyzer")` as
+[AccessAnalyzerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 ```
 
-
 AccessAnalyzerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [apply_archive_rule](./client.md#apply-archive-rule)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_policy_generation](./client.md#cancel-policy-generation)
@@ -65,10 +66,8 @@ AccessAnalyzerClient [exceptions](./client.md#exceptions)
 - [update_findings](./client.md#update-findings)
 - [validate_policy](./client.md#validate-policy)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -78,14 +77,10 @@ AccessAnalyzerClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("accessanalyzer").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("accessanalyzer").get_paginator("...")`.
 
 Can be used directly:
 
@@ -101,11 +96,6 @@ from mypy_boto3_accessanalyzer.paginators import ListAccessPreviewFindingsPagina
 - [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
 - [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -144,13 +134,10 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatus, ...
 - [ValidatePolicyFindingType](./literals.md#validatepolicyfindingtype)
 - [ValidatePolicyPaginatorName](./literals.md#validatepolicypaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

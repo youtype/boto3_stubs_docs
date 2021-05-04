@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ApiGatewayV2](./README.md) > Structures
 
-Auto-generated documentation for [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
-type annotations stubs module [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+Auto-generated documentation for
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
+type annotations stubs module
+[mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 - [Typed dictionaries for boto3 ApiGatewayV2 module](#typed-dictionaries-for-boto3-apigatewayv2-module)
   - [AccessLogSettingsTypeDef](#accesslogsettingstypedef)
@@ -89,13 +91,10 @@ type annotations stubs module [mypy_boto3_apigatewayv2](https://pypi.org/project
 from mypy_boto3_apigatewayv2.type_defs import AccessLogSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DestinationArn`: `str`
 - `Format`: `str`
-
 
 ## ApiMappingTypeDef
 
@@ -103,17 +102,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ApiMappingTypeDef
 ```
 
-
 Required fields:
+
 - `ApiId`: `str`
 - `Stage`: `str`
 
-
-
 Optional fields:
+
 - `ApiMappingId`: `str`
 - `ApiMappingKey`: `str`
-
 
 ## ApiTypeDef
 
@@ -121,29 +118,29 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ApiTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
 
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
-- `Tags`: `Dict[str, str]`
+- `ImportInfo`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## AuthorizerTypeDef
 
@@ -151,24 +148,24 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import AuthorizerTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `AuthorizerCredentialsArn`: `str`
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: `AuthorizerType`
+- `AuthorizerType`:
+  [AuthorizerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizertype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List[str]`
+- `IdentitySource`: `List`\[`str`\]
 - `IdentityValidationExpression`: `str`
-- `JwtConfiguration`: `"JWTConfigurationTypeDef"`
-
+- `JwtConfiguration`:
+  [JWTConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#jwtconfigurationtypedef)
 
 ## CorsTypeDef
 
@@ -176,17 +173,14 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CorsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AllowCredentials`: `bool`
-- `AllowHeaders`: `List[str]`
-- `AllowMethods`: `List[str]`
-- `AllowOrigins`: `List[str]`
-- `ExposeHeaders`: `List[str]`
-- `MaxAge`: `int`
 
+- `AllowCredentials`: `bool`
+- `AllowHeaders`: `List`\[`str`\]
+- `AllowMethods`: `List`\[`str`\]
+- `AllowOrigins`: `List`\[`str`\]
+- `ExposeHeaders`: `List`\[`str`\]
+- `MaxAge`: `int`
 
 ## CreateApiMappingResponseTypeDef
 
@@ -194,15 +188,12 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateApiMappingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiId`: `str`
 - `ApiMappingId`: `str`
 - `ApiMappingKey`: `str`
 - `Stage`: `str`
-
 
 ## CreateApiResponseTypeDef
 
@@ -210,27 +201,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
+- `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## CreateAuthorizerResponseTypeDef
 
@@ -238,22 +228,21 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateAuthorizerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AuthorizerCredentialsArn`: `str`
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: `AuthorizerType`
+- `AuthorizerType`:
+  [AuthorizerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizertype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List[str]`
+- `IdentitySource`: `List`\[`str`\]
 - `IdentityValidationExpression`: `str`
-- `JwtConfiguration`: `"JWTConfigurationTypeDef"`
+- `JwtConfiguration`:
+  [JWTConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#jwtconfigurationtypedef)
 - `Name`: `str`
-
 
 ## CreateDeploymentResponseTypeDef
 
@@ -261,17 +250,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: `DeploymentStatus`
+- `DeploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#deploymentstatus)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
-
 
 ## CreateDomainNameResponseTypeDef
 
@@ -279,16 +266,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateDomainNameResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiMappingSelectionExpression`: `str`
 - `DomainName`: `str`
-- `DomainNameConfigurations`: `List["DomainNameConfigurationTypeDef"]`
-- `MutualTlsAuthentication`: `"MutualTlsAuthenticationTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `DomainNameConfigurations`:
+  `List`\[[DomainNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#domainnameconfigurationtypedef)\]
+- `MutualTlsAuthentication`:
+  [MutualTlsAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#mutualtlsauthenticationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateIntegrationResponseResponseTypeDef
 
@@ -296,17 +282,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateIntegrationResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
-- `ResponseParameters`: `Dict[str, str]`
-- `ResponseTemplates`: `Dict[str, str]`
+- `ResponseParameters`: `Dict`\[`str`, `str`\]
+- `ResponseTemplates`: `Dict`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
-
 
 ## CreateIntegrationResultTypeDef
 
@@ -314,31 +298,33 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateIntegrationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: `ConnectionType`
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+- `ConnectionType`:
+  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#connectiontype)
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: `IntegrationType`
+- `IntegrationType`:
+  [IntegrationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#integrationtype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: `PassthroughBehavior`
+- `PassthroughBehavior`:
+  [PassthroughBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#passthroughbehavior)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict[str, str]`
-- `RequestTemplates`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, Dict[str, str]]`
+- `RequestParameters`: `Dict`\[`str`, `str`\]
+- `RequestTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
-- `TlsConfig`: `"TlsConfigTypeDef"`
-
+- `TlsConfig`:
+  [TlsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#tlsconfigtypedef)
 
 ## CreateModelResponseTypeDef
 
@@ -346,16 +332,13 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContentType`: `str`
 - `Description`: `str`
 - `ModelId`: `str`
 - `Name`: `str`
 - `Schema`: `str`
-
 
 ## CreateRouteResponseResponseTypeDef
 
@@ -363,16 +346,14 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateRouteResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `ResponseModels`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteResponseId`: `str`
 - `RouteResponseKey`: `str`
-
 
 ## CreateRouteResultTypeDef
 
@@ -380,24 +361,23 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateRouteResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List[str]`
-- `AuthorizationType`: `AuthorizationType`
+- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationType`:
+  [AuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizationtype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict[str, str]`
-- `RequestParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `RequestModels`: `Dict`\[`str`, `str`\]
+- `RequestParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteId`: `str`
 - `RouteKey`: `str`
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
-
 
 ## CreateStageResponseTypeDef
 
@@ -405,25 +385,25 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateStageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessLogSettings`: `"AccessLogSettingsTypeDef"`
+
+- `AccessLogSettings`:
+  [AccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#accesslogsettingstypedef)
 - `ApiGatewayManaged`: `bool`
 - `AutoDeploy`: `bool`
 - `ClientCertificateId`: `str`
 - `CreatedDate`: `datetime`
-- `DefaultRouteSettings`: `"RouteSettingsTypeDef"`
+- `DefaultRouteSettings`:
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
 - `LastDeploymentStatusMessage`: `str`
 - `LastUpdatedDate`: `datetime`
-- `RouteSettings`: `Dict[str, "RouteSettingsTypeDef"]`
+- `RouteSettings`: `Dict`\[`str`,
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)\]
 - `StageName`: `str`
-- `StageVariables`: `Dict[str, str]`
-- `Tags`: `Dict[str, str]`
-
+- `StageVariables`: `Dict`\[`str`, `str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateVpcLinkResponseTypeDef
 
@@ -431,20 +411,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import CreateVpcLinkResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedDate`: `datetime`
 - `Name`: `str`
-- `SecurityGroupIds`: `List[str]`
-- `SubnetIds`: `List[str]`
-- `Tags`: `Dict[str, str]`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: `VpcLinkStatus`
+- `VpcLinkStatus`:
+  [VpcLinkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#vpclinkstatus)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']`
-
 
 ## DeploymentTypeDef
 
@@ -452,17 +430,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import DeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: `DeploymentStatus`
+- `DeploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#deploymentstatus)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
-
 
 ## DomainNameConfigurationTypeDef
 
@@ -470,20 +446,20 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import DomainNameConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayDomainName`: `str`
 - `CertificateArn`: `str`
 - `CertificateName`: `str`
 - `CertificateUploadDate`: `datetime`
-- `DomainNameStatus`: `DomainNameStatus`
+- `DomainNameStatus`:
+  [DomainNameStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#domainnamestatus)
 - `DomainNameStatusMessage`: `str`
-- `EndpointType`: `EndpointType`
+- `EndpointType`:
+  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#endpointtype)
 - `HostedZoneId`: `str`
-- `SecurityPolicy`: `SecurityPolicy`
-
+- `SecurityPolicy`:
+  [SecurityPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#securitypolicy)
 
 ## DomainNameTypeDef
 
@@ -491,18 +467,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import DomainNameTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 
-
-
 Optional fields:
-- `ApiMappingSelectionExpression`: `str`
-- `DomainNameConfigurations`: `List["DomainNameConfigurationTypeDef"]`
-- `MutualTlsAuthentication`: `"MutualTlsAuthenticationTypeDef"`
-- `Tags`: `Dict[str, str]`
 
+- `ApiMappingSelectionExpression`: `str`
+- `DomainNameConfigurations`:
+  `List`\[[DomainNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#domainnameconfigurationtypedef)\]
+- `MutualTlsAuthentication`:
+  [MutualTlsAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#mutualtlsauthenticationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ExportApiResponseTypeDef
 
@@ -510,12 +486,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ExportApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `body`: `Union[bytes, IO[bytes]]`
 
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## GetApiMappingResponseTypeDef
 
@@ -523,15 +496,12 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetApiMappingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiId`: `str`
 - `ApiMappingId`: `str`
 - `ApiMappingKey`: `str`
 - `Stage`: `str`
-
 
 ## GetApiMappingsResponseTypeDef
 
@@ -539,13 +509,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetApiMappingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ApiMappingTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ApiMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#apimappingtypedef)\]
+- `NextToken`: `str`
 
 ## GetApiResponseTypeDef
 
@@ -553,27 +521,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
+- `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## GetApisResponseTypeDef
 
@@ -581,13 +548,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetApisResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ApiTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ApiTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#apitypedef)\]
+- `NextToken`: `str`
 
 ## GetAuthorizerResponseTypeDef
 
@@ -595,22 +560,21 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetAuthorizerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AuthorizerCredentialsArn`: `str`
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: `AuthorizerType`
+- `AuthorizerType`:
+  [AuthorizerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizertype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List[str]`
+- `IdentitySource`: `List`\[`str`\]
 - `IdentityValidationExpression`: `str`
-- `JwtConfiguration`: `"JWTConfigurationTypeDef"`
+- `JwtConfiguration`:
+  [JWTConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#jwtconfigurationtypedef)
 - `Name`: `str`
-
 
 ## GetAuthorizersResponseTypeDef
 
@@ -618,13 +582,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetAuthorizersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["AuthorizerTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[AuthorizerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#authorizertypedef)\]
+- `NextToken`: `str`
 
 ## GetDeploymentResponseTypeDef
 
@@ -632,17 +594,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: `DeploymentStatus`
+- `DeploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#deploymentstatus)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
-
 
 ## GetDeploymentsResponseTypeDef
 
@@ -650,13 +610,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["DeploymentTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#deploymenttypedef)\]
+- `NextToken`: `str`
 
 ## GetDomainNameResponseTypeDef
 
@@ -664,16 +622,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetDomainNameResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiMappingSelectionExpression`: `str`
 - `DomainName`: `str`
-- `DomainNameConfigurations`: `List["DomainNameConfigurationTypeDef"]`
-- `MutualTlsAuthentication`: `"MutualTlsAuthenticationTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `DomainNameConfigurations`:
+  `List`\[[DomainNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#domainnameconfigurationtypedef)\]
+- `MutualTlsAuthentication`:
+  [MutualTlsAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#mutualtlsauthenticationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetDomainNamesResponseTypeDef
 
@@ -681,13 +638,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetDomainNamesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["DomainNameTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[DomainNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#domainnametypedef)\]
+- `NextToken`: `str`
 
 ## GetIntegrationResponseResponseTypeDef
 
@@ -695,17 +650,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetIntegrationResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
-- `ResponseParameters`: `Dict[str, str]`
-- `ResponseTemplates`: `Dict[str, str]`
+- `ResponseParameters`: `Dict`\[`str`, `str`\]
+- `ResponseTemplates`: `Dict`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
-
 
 ## GetIntegrationResponsesResponseTypeDef
 
@@ -713,13 +666,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetIntegrationResponsesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["IntegrationResponseTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[IntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#integrationresponsetypedef)\]
+- `NextToken`: `str`
 
 ## GetIntegrationResultTypeDef
 
@@ -727,31 +678,33 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetIntegrationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: `ConnectionType`
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+- `ConnectionType`:
+  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#connectiontype)
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: `IntegrationType`
+- `IntegrationType`:
+  [IntegrationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#integrationtype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: `PassthroughBehavior`
+- `PassthroughBehavior`:
+  [PassthroughBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#passthroughbehavior)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict[str, str]`
-- `RequestTemplates`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, Dict[str, str]]`
+- `RequestParameters`: `Dict`\[`str`, `str`\]
+- `RequestTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
-- `TlsConfig`: `"TlsConfigTypeDef"`
-
+- `TlsConfig`:
+  [TlsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#tlsconfigtypedef)
 
 ## GetIntegrationsResponseTypeDef
 
@@ -759,13 +712,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetIntegrationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["IntegrationTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[IntegrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#integrationtypedef)\]
+- `NextToken`: `str`
 
 ## GetModelResponseTypeDef
 
@@ -773,16 +724,13 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContentType`: `str`
 - `Description`: `str`
 - `ModelId`: `str`
 - `Name`: `str`
 - `Schema`: `str`
-
 
 ## GetModelTemplateResponseTypeDef
 
@@ -790,12 +738,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetModelTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## GetModelsResponseTypeDef
 
@@ -803,13 +748,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ModelTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#modeltypedef)\]
+- `NextToken`: `str`
 
 ## GetRouteResponseResponseTypeDef
 
@@ -817,16 +760,14 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetRouteResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `ResponseModels`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteResponseId`: `str`
 - `RouteResponseKey`: `str`
-
 
 ## GetRouteResponsesResponseTypeDef
 
@@ -834,13 +775,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetRouteResponsesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["RouteResponseTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[RouteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routeresponsetypedef)\]
+- `NextToken`: `str`
 
 ## GetRouteResultTypeDef
 
@@ -848,24 +787,23 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetRouteResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List[str]`
-- `AuthorizationType`: `AuthorizationType`
+- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationType`:
+  [AuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizationtype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict[str, str]`
-- `RequestParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `RequestModels`: `Dict`\[`str`, `str`\]
+- `RequestParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteId`: `str`
 - `RouteKey`: `str`
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
-
 
 ## GetRoutesResponseTypeDef
 
@@ -873,13 +811,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetRoutesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["RouteTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[RouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routetypedef)\]
+- `NextToken`: `str`
 
 ## GetStageResponseTypeDef
 
@@ -887,25 +823,25 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetStageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessLogSettings`: `"AccessLogSettingsTypeDef"`
+
+- `AccessLogSettings`:
+  [AccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#accesslogsettingstypedef)
 - `ApiGatewayManaged`: `bool`
 - `AutoDeploy`: `bool`
 - `ClientCertificateId`: `str`
 - `CreatedDate`: `datetime`
-- `DefaultRouteSettings`: `"RouteSettingsTypeDef"`
+- `DefaultRouteSettings`:
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
 - `LastDeploymentStatusMessage`: `str`
 - `LastUpdatedDate`: `datetime`
-- `RouteSettings`: `Dict[str, "RouteSettingsTypeDef"]`
+- `RouteSettings`: `Dict`\[`str`,
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)\]
 - `StageName`: `str`
-- `StageVariables`: `Dict[str, str]`
-- `Tags`: `Dict[str, str]`
-
+- `StageVariables`: `Dict`\[`str`, `str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetStagesResponseTypeDef
 
@@ -913,13 +849,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetStagesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["StageTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[StageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#stagetypedef)\]
+- `NextToken`: `str`
 
 ## GetTagsResponseTypeDef
 
@@ -927,12 +861,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetTagsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetVpcLinkResponseTypeDef
 
@@ -940,20 +871,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetVpcLinkResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedDate`: `datetime`
 - `Name`: `str`
-- `SecurityGroupIds`: `List[str]`
-- `SubnetIds`: `List[str]`
-- `Tags`: `Dict[str, str]`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: `VpcLinkStatus`
+- `VpcLinkStatus`:
+  [VpcLinkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#vpclinkstatus)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']`
-
 
 ## GetVpcLinksResponseTypeDef
 
@@ -961,13 +890,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import GetVpcLinksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["VpcLinkTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[VpcLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#vpclinktypedef)\]
+- `NextToken`: `str`
 
 ## ImportApiResponseTypeDef
 
@@ -975,27 +902,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ImportApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
+- `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## IntegrationResponseTypeDef
 
@@ -1003,19 +929,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import IntegrationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `IntegrationResponseKey`: `str`
 
-
-
 Optional fields:
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
-- `IntegrationResponseId`: `str`
-- `ResponseParameters`: `Dict[str, str]`
-- `ResponseTemplates`: `Dict[str, str]`
-- `TemplateSelectionExpression`: `str`
 
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
+- `IntegrationResponseId`: `str`
+- `ResponseParameters`: `Dict`\[`str`, `str`\]
+- `ResponseTemplates`: `Dict`\[`str`, `str`\]
+- `TemplateSelectionExpression`: `str`
 
 ## IntegrationTypeDef
 
@@ -1023,31 +948,33 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import IntegrationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: `ConnectionType`
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+- `ConnectionType`:
+  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#connectiontype)
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: `IntegrationType`
+- `IntegrationType`:
+  [IntegrationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#integrationtype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: `PassthroughBehavior`
+- `PassthroughBehavior`:
+  [PassthroughBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#passthroughbehavior)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict[str, str]`
-- `RequestTemplates`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, Dict[str, str]]`
+- `RequestParameters`: `Dict`\[`str`, `str`\]
+- `RequestTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
-- `TlsConfig`: `"TlsConfigTypeDef"`
-
+- `TlsConfig`:
+  [TlsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#tlsconfigtypedef)
 
 ## JWTConfigurationTypeDef
 
@@ -1055,13 +982,10 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import JWTConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Audience`: `List[str]`
-- `Issuer`: `str`
 
+- `Audience`: `List`\[`str`\]
+- `Issuer`: `str`
 
 ## ModelTypeDef
 
@@ -1069,18 +993,16 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ModelTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `ContentType`: `str`
 - `Description`: `str`
 - `ModelId`: `str`
 - `Schema`: `str`
-
 
 ## MutualTlsAuthenticationInputTypeDef
 
@@ -1088,13 +1010,10 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import MutualTlsAuthenticationInputTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TruststoreUri`: `str`
 - `TruststoreVersion`: `str`
-
 
 ## MutualTlsAuthenticationTypeDef
 
@@ -1102,14 +1021,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import MutualTlsAuthenticationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TruststoreUri`: `str`
 - `TruststoreVersion`: `str`
-- `TruststoreWarnings`: `List[str]`
-
+- `TruststoreWarnings`: `List`\[`str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -1117,14 +1033,11 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterConstraintsTypeDef
 
@@ -1132,12 +1045,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ParameterConstraintsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Required`: `bool`
 
+- `Required`: `bool`
 
 ## ReimportApiResponseTypeDef
 
@@ -1145,27 +1055,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import ReimportApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
+- `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## RouteResponseTypeDef
 
@@ -1173,18 +1082,17 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import RouteResponseTypeDef
 ```
 
-
 Required fields:
+
 - `RouteResponseKey`: `str`
 
-
-
 Optional fields:
-- `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
-- `RouteResponseId`: `str`
 
+- `ModelSelectionExpression`: `str`
+- `ResponseModels`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
+- `RouteResponseId`: `str`
 
 ## RouteSettingsTypeDef
 
@@ -1192,16 +1100,14 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import RouteSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DataTraceEnabled`: `bool`
 - `DetailedMetricsEnabled`: `bool`
-- `LoggingLevel`: `LoggingLevel`
+- `LoggingLevel`:
+  [LoggingLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#logginglevel)
 - `ThrottlingBurstLimit`: `int`
 - `ThrottlingRateLimit`: `float`
-
 
 ## RouteTypeDef
 
@@ -1209,26 +1115,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import RouteTypeDef
 ```
 
-
 Required fields:
+
 - `RouteKey`: `str`
 
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List[str]`
-- `AuthorizationType`: `AuthorizationType`
+- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationType`:
+  [AuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizationtype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict[str, str]`
-- `RequestParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `RequestModels`: `Dict`\[`str`, `str`\]
+- `RequestParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteId`: `str`
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
-
 
 ## StageTypeDef
 
@@ -1236,27 +1142,28 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import StageTypeDef
 ```
 
-
 Required fields:
+
 - `StageName`: `str`
 
-
-
 Optional fields:
-- `AccessLogSettings`: `"AccessLogSettingsTypeDef"`
+
+- `AccessLogSettings`:
+  [AccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#accesslogsettingstypedef)
 - `ApiGatewayManaged`: `bool`
 - `AutoDeploy`: `bool`
 - `ClientCertificateId`: `str`
 - `CreatedDate`: `datetime`
-- `DefaultRouteSettings`: `"RouteSettingsTypeDef"`
+- `DefaultRouteSettings`:
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
 - `LastDeploymentStatusMessage`: `str`
 - `LastUpdatedDate`: `datetime`
-- `RouteSettings`: `Dict[str, "RouteSettingsTypeDef"]`
-- `StageVariables`: `Dict[str, str]`
-- `Tags`: `Dict[str, str]`
-
+- `RouteSettings`: `Dict`\[`str`,
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)\]
+- `StageVariables`: `Dict`\[`str`, `str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## TlsConfigInputTypeDef
 
@@ -1264,12 +1171,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import TlsConfigInputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServerNameToVerify`: `str`
 
+- `ServerNameToVerify`: `str`
 
 ## TlsConfigTypeDef
 
@@ -1277,12 +1181,9 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import TlsConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServerNameToVerify`: `str`
 
+- `ServerNameToVerify`: `str`
 
 ## UpdateApiMappingResponseTypeDef
 
@@ -1290,15 +1191,12 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateApiMappingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiId`: `str`
 - `ApiMappingId`: `str`
 - `ApiMappingKey`: `str`
 - `Stage`: `str`
-
 
 ## UpdateApiResponseTypeDef
 
@@ -1306,27 +1204,26 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateApiResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiEndpoint`: `str`
 - `ApiGatewayManaged`: `bool`
 - `ApiId`: `str`
 - `ApiKeySelectionExpression`: `str`
-- `CorsConfiguration`: `"CorsTypeDef"`
+- `CorsConfiguration`:
+  [CorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#corstypedef)
 - `CreatedDate`: `datetime`
 - `Description`: `str`
 - `DisableSchemaValidation`: `bool`
 - `DisableExecuteApiEndpoint`: `bool`
-- `ImportInfo`: `List[str]`
+- `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: `ProtocolType`
+- `ProtocolType`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#protocoltype)
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
-- `Warnings`: `List[str]`
-
+- `Warnings`: `List`\[`str`\]
 
 ## UpdateAuthorizerResponseTypeDef
 
@@ -1334,22 +1231,21 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateAuthorizerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AuthorizerCredentialsArn`: `str`
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: `AuthorizerType`
+- `AuthorizerType`:
+  [AuthorizerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizertype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List[str]`
+- `IdentitySource`: `List`\[`str`\]
 - `IdentityValidationExpression`: `str`
-- `JwtConfiguration`: `"JWTConfigurationTypeDef"`
+- `JwtConfiguration`:
+  [JWTConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#jwtconfigurationtypedef)
 - `Name`: `str`
-
 
 ## UpdateDeploymentResponseTypeDef
 
@@ -1357,17 +1253,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: `DeploymentStatus`
+- `DeploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#deploymentstatus)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
-
 
 ## UpdateDomainNameResponseTypeDef
 
@@ -1375,16 +1269,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateDomainNameResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiMappingSelectionExpression`: `str`
 - `DomainName`: `str`
-- `DomainNameConfigurations`: `List["DomainNameConfigurationTypeDef"]`
-- `MutualTlsAuthentication`: `"MutualTlsAuthenticationTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `DomainNameConfigurations`:
+  `List`\[[DomainNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#domainnameconfigurationtypedef)\]
+- `MutualTlsAuthentication`:
+  [MutualTlsAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#mutualtlsauthenticationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateIntegrationResponseResponseTypeDef
 
@@ -1392,17 +1285,15 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateIntegrationResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
-- `ResponseParameters`: `Dict[str, str]`
-- `ResponseTemplates`: `Dict[str, str]`
+- `ResponseParameters`: `Dict`\[`str`, `str`\]
+- `ResponseTemplates`: `Dict`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
-
 
 ## UpdateIntegrationResultTypeDef
 
@@ -1410,31 +1301,33 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateIntegrationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: `ConnectionType`
-- `ContentHandlingStrategy`: `ContentHandlingStrategy`
+- `ConnectionType`:
+  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#connectiontype)
+- `ContentHandlingStrategy`:
+  [ContentHandlingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#contenthandlingstrategy)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: `IntegrationType`
+- `IntegrationType`:
+  [IntegrationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#integrationtype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: `PassthroughBehavior`
+- `PassthroughBehavior`:
+  [PassthroughBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#passthroughbehavior)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict[str, str]`
-- `RequestTemplates`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, Dict[str, str]]`
+- `RequestParameters`: `Dict`\[`str`, `str`\]
+- `RequestTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
-- `TlsConfig`: `"TlsConfigTypeDef"`
-
+- `TlsConfig`:
+  [TlsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#tlsconfigtypedef)
 
 ## UpdateModelResponseTypeDef
 
@@ -1442,16 +1335,13 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContentType`: `str`
 - `Description`: `str`
 - `ModelId`: `str`
 - `Name`: `str`
 - `Schema`: `str`
-
 
 ## UpdateRouteResponseResponseTypeDef
 
@@ -1459,16 +1349,14 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateRouteResponseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict[str, str]`
-- `ResponseParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `ResponseModels`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteResponseId`: `str`
 - `RouteResponseKey`: `str`
-
 
 ## UpdateRouteResultTypeDef
 
@@ -1476,24 +1364,23 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateRouteResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List[str]`
-- `AuthorizationType`: `AuthorizationType`
+- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationType`:
+  [AuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#authorizationtype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict[str, str]`
-- `RequestParameters`: `Dict[str, "ParameterConstraintsTypeDef"]`
+- `RequestModels`: `Dict`\[`str`, `str`\]
+- `RequestParameters`: `Dict`\[`str`,
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#parameterconstraintstypedef)\]
 - `RouteId`: `str`
 - `RouteKey`: `str`
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
-
 
 ## UpdateStageResponseTypeDef
 
@@ -1501,25 +1388,25 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateStageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessLogSettings`: `"AccessLogSettingsTypeDef"`
+
+- `AccessLogSettings`:
+  [AccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#accesslogsettingstypedef)
 - `ApiGatewayManaged`: `bool`
 - `AutoDeploy`: `bool`
 - `ClientCertificateId`: `str`
 - `CreatedDate`: `datetime`
-- `DefaultRouteSettings`: `"RouteSettingsTypeDef"`
+- `DefaultRouteSettings`:
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
 - `LastDeploymentStatusMessage`: `str`
 - `LastUpdatedDate`: `datetime`
-- `RouteSettings`: `Dict[str, "RouteSettingsTypeDef"]`
+- `RouteSettings`: `Dict`\[`str`,
+  [RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/type_defs.html#routesettingstypedef)\]
 - `StageName`: `str`
-- `StageVariables`: `Dict[str, str]`
-- `Tags`: `Dict[str, str]`
-
+- `StageVariables`: `Dict`\[`str`, `str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateVpcLinkResponseTypeDef
 
@@ -1527,20 +1414,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import UpdateVpcLinkResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedDate`: `datetime`
 - `Name`: `str`
-- `SecurityGroupIds`: `List[str]`
-- `SubnetIds`: `List[str]`
-- `Tags`: `Dict[str, str]`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: `VpcLinkStatus`
+- `VpcLinkStatus`:
+  [VpcLinkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#vpclinkstatus)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']`
-
 
 ## VpcLinkTypeDef
 
@@ -1548,19 +1433,18 @@ Optional fields:
 from mypy_boto3_apigatewayv2.type_defs import VpcLinkTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `SecurityGroupIds`: `List[str]`
-- `SubnetIds`: `List[str]`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
 - `VpcLinkId`: `str`
 
-
-
 Optional fields:
+
 - `CreatedDate`: `datetime`
-- `Tags`: `Dict[str, str]`
-- `VpcLinkStatus`: `VpcLinkStatus`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `VpcLinkStatus`:
+  [VpcLinkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewayv2/literals.html#vpclinkstatus)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']`
-

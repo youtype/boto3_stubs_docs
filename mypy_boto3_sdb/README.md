@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SimpleDB
 
-Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+Auto-generated documentation for
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+type annotations stubs module
+[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ```bash
 pip install mypy-boto3-sdb
@@ -19,7 +21,7 @@ pip install mypy-boto3-sdb
 
 ## SimpleDBClient
 
-Type annotations for  `boto3.client("sdb")` as [SimpleDBClient](./client.md)
+Type annotations for `boto3.client("sdb")` as [SimpleDBClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_sdb.client import SimpleDBClient
 ```
 
-
 SimpleDBClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_delete_attributes](./client.md#batch-delete-attributes)
 - [batch_put_attributes](./client.md#batch-put-attributes)
 - [can_paginate](./client.md#can-paginate)
@@ -47,10 +47,8 @@ SimpleDBClient [exceptions](./client.md#exceptions)
 - [put_attributes](./client.md#put-attributes)
 - [select](./client.md#select)
 
-
-
-
 ### Exceptions
+
 - [AttributeDoesNotExist](./client.md#attributedoesnotexist)
 - [ClientError](./client.md#clienterror)
 - [DuplicateItemName](./client.md#duplicateitemname)
@@ -70,14 +68,10 @@ SimpleDBClient [exceptions](./client.md#exceptions)
 - [RequestTimeout](./client.md#requesttimeout)
 - [TooManyRequestedAttributes](./client.md#toomanyrequestedattributes)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sdb").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sdb").get_paginator("...")`.
 
 Can be used directly:
 
@@ -87,11 +81,6 @@ from mypy_boto3_sdb.paginators import ListDomainsPaginator, ...
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - [SelectPaginator](./paginators.md#selectpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -106,13 +95,10 @@ from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
 - [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
 - [SelectPaginatorName](./literals.md#selectpaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SFN](./README.md) > SFNClient
 
-Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+Auto-generated documentation for
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+type annotations stubs module
+[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [SFNClient for boto3 SFN module](#sfnclient-for-boto3-sfn-module)
   - [SFNClient](#sfnclient)
@@ -49,12 +51,13 @@ def get_stepfunctions_client() -> SFNClient:
     return boto3.client("stepfunctions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
+Boto3 documentation:
+[SFN.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_stepfunctions.client import Exceptions
@@ -62,7 +65,6 @@ from mypy_boto3_stepfunctions.client import Exceptions
 def handle_error(exc: Exceptions.ActivityDoesNotExist) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -92,406 +94,417 @@ Exceptions:
 - `Exceptions.TaskTimedOut`
 - `Exceptions.TooManyTags`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("stepfunctions").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate]
+Boto3 documentation:
+[SFN.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_activity
 
 Type annotations for `boto3.client("stepfunctions").create_activity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity]
+Boto3 documentation:
+[SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
 
-```python
-def create_activity(
-    self,
-    name: str,
-    tags: List["TagTypeDef"] = None
-) -> CreateActivityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateActivityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#createactivityoutputtypedef).
 
 ### create_state_machine
 
-Type annotations for `boto3.client("stepfunctions").create_state_machine` method.
+Type annotations for `boto3.client("stepfunctions").create_state_machine`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine]
+Boto3 documentation:
+[SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
 
-```python
-def create_state_machine(
-    self,
-    name: str,
-    definition: str,
-    roleArn: str,
-    type: StateMachineType = None,
-    loggingConfiguration: "LoggingConfigurationTypeDef" = None,
-    tags: List["TagTypeDef"] = None,
-    tracingConfiguration: "TracingConfigurationTypeDef" = None
-) -> CreateStateMachineOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `definition`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `type`:
+  [StateMachineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#statemachinetype)
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
+
+Returns
+[CreateStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#createstatemachineoutputtypedef).
 
 ### delete_activity
 
 Type annotations for `boto3.client("stepfunctions").delete_activity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity]
+Boto3 documentation:
+[SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
 
-```python
-def delete_activity(
-    self,
-    activityArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `activityArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_state_machine
 
-Type annotations for `boto3.client("stepfunctions").delete_state_machine` method.
+Type annotations for `boto3.client("stepfunctions").delete_state_machine`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine]
+Boto3 documentation:
+[SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
 
-```python
-def delete_state_machine(
-    self,
-    stateMachineArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `stateMachineArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_activity
 
 Type annotations for `boto3.client("stepfunctions").describe_activity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity]
+Boto3 documentation:
+[SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
 
-```python
-def describe_activity(
-    self,
-    activityArn: str
-) -> DescribeActivityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `activityArn`: `str` *(required)*
+
+Returns
+[DescribeActivityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describeactivityoutputtypedef).
 
 ### describe_execution
 
 Type annotations for `boto3.client("stepfunctions").describe_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution]
+Boto3 documentation:
+[SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
 
-```python
-def describe_execution(
-    self,
-    executionArn: str
-) -> DescribeExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `executionArn`: `str` *(required)*
+
+Returns
+[DescribeExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describeexecutionoutputtypedef).
 
 ### describe_state_machine
 
-Type annotations for `boto3.client("stepfunctions").describe_state_machine` method.
+Type annotations for `boto3.client("stepfunctions").describe_state_machine`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine]
+Boto3 documentation:
+[SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
 
-```python
-def describe_state_machine(
-    self,
-    stateMachineArn: str
-) -> DescribeStateMachineOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `stateMachineArn`: `str` *(required)*
+
+Returns
+[DescribeStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describestatemachineoutputtypedef).
 
 ### describe_state_machine_for_execution
 
-Type annotations for `boto3.client("stepfunctions").describe_state_machine_for_execution` method.
+Type annotations for
+`boto3.client("stepfunctions").describe_state_machine_for_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution]
+Boto3 documentation:
+[SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
 
-```python
-def describe_state_machine_for_execution(
-    self,
-    executionArn: str
-) -> DescribeStateMachineForExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `executionArn`: `str` *(required)*
+
+Returns
+[DescribeStateMachineForExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describestatemachineforexecutionoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("stepfunctions").generate_presigned_url` method.
+Type annotations for `boto3.client("stepfunctions").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url]
+Boto3 documentation:
+[SFN.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_activity_task
 
 Type annotations for `boto3.client("stepfunctions").get_activity_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task]
+Boto3 documentation:
+[SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
 
-```python
-def get_activity_task(
-    self,
-    activityArn: str,
-    workerName: str = None
-) -> GetActivityTaskOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `activityArn`: `str` *(required)*
+- `workerName`: `str`
+
+Returns
+[GetActivityTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getactivitytaskoutputtypedef).
 
 ### get_execution_history
 
-Type annotations for `boto3.client("stepfunctions").get_execution_history` method.
+Type annotations for `boto3.client("stepfunctions").get_execution_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history]
+Boto3 documentation:
+[SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
 
-```python
-def get_execution_history(
-    self,
-    executionArn: str,
-    maxResults: int = None,
-    reverseOrder: bool = None,
-    nextToken: str = None,
-    includeExecutionData: bool = None
-) -> GetExecutionHistoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `executionArn`: `str` *(required)*
+- `maxResults`: `int`
+- `reverseOrder`: `bool`
+- `nextToken`: `str`
+- `includeExecutionData`: `bool`
+
+Returns
+[GetExecutionHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getexecutionhistoryoutputtypedef).
 
 ### list_activities
 
 Type annotations for `boto3.client("stepfunctions").list_activities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities]
+Boto3 documentation:
+[SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
 
-```python
-def list_activities(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListActivitiesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListActivitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listactivitiesoutputtypedef).
 
 ### list_executions
 
 Type annotations for `boto3.client("stepfunctions").list_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions]
+Boto3 documentation:
+[SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
 
-```python
-def list_executions(
-    self,
-    stateMachineArn: str,
-    statusFilter: ExecutionStatus = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListExecutionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `stateMachineArn`: `str` *(required)*
+- `statusFilter`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listexecutionsoutputtypedef).
 
 ### list_state_machines
 
-Type annotations for `boto3.client("stepfunctions").list_state_machines` method.
+Type annotations for `boto3.client("stepfunctions").list_state_machines`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines]
+Boto3 documentation:
+[SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
 
-```python
-def list_state_machines(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListStateMachinesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListStateMachinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#liststatemachinesoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("stepfunctions").list_tags_for_resource` method.
+Type annotations for `boto3.client("stepfunctions").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource]
+Boto3 documentation:
+[SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### send_task_failure
 
 Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure]
+Boto3 documentation:
+[SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
 
-```python
-def send_task_failure(
-    self,
-    taskToken: str,
-    error: str = None,
-    cause: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `error`: `str`
+- `cause`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_task_heartbeat
 
-Type annotations for `boto3.client("stepfunctions").send_task_heartbeat` method.
+Type annotations for `boto3.client("stepfunctions").send_task_heartbeat`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat]
+Boto3 documentation:
+[SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
 
-```python
-def send_task_heartbeat(
-    self,
-    taskToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_task_success
 
 Type annotations for `boto3.client("stepfunctions").send_task_success` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success]
+Boto3 documentation:
+[SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
 
-```python
-def send_task_success(
-    self,
-    taskToken: str,
-    output: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `output`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_execution
 
 Type annotations for `boto3.client("stepfunctions").start_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution]
+Boto3 documentation:
+[SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
 
-```python
-def start_execution(
-    self,
-    stateMachineArn: str,
-    name: str = None,
-    input: str = None,
-    traceHeader: str = None
-) -> StartExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `stateMachineArn`: `str` *(required)*
+- `name`: `str`
+- `input`: `str`
+- `traceHeader`: `str`
+
+Returns
+[StartExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#startexecutionoutputtypedef).
 
 ### start_sync_execution
 
-Type annotations for `boto3.client("stepfunctions").start_sync_execution` method.
+Type annotations for `boto3.client("stepfunctions").start_sync_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution]
+Boto3 documentation:
+[SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
 
-```python
-def start_sync_execution(
-    self,
-    stateMachineArn: str,
-    name: str = None,
-    input: str = None,
-    traceHeader: str = None
-) -> StartSyncExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `stateMachineArn`: `str` *(required)*
+- `name`: `str`
+- `input`: `str`
+- `traceHeader`: `str`
+
+Returns
+[StartSyncExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#startsyncexecutionoutputtypedef).
 
 ### stop_execution
 
 Type annotations for `boto3.client("stepfunctions").stop_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution]
+Boto3 documentation:
+[SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
 
-```python
-def stop_execution(
-    self,
-    executionArn: str,
-    error: str = None,
-    cause: str = None
-) -> StopExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `executionArn`: `str` *(required)*
+- `error`: `str`
+- `cause`: `str`
+
+Returns
+[StopExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#stopexecutionoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("stepfunctions").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource]
+Boto3 documentation:
+[SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("stepfunctions").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource]
+Boto3 documentation:
+[SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_state_machine
 
-Type annotations for `boto3.client("stepfunctions").update_state_machine` method.
+Type annotations for `boto3.client("stepfunctions").update_state_machine`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine]
+Boto3 documentation:
+[SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
 
-```python
-def update_state_machine(
-    self,
-    stateMachineArn: str,
-    definition: str = None,
-    roleArn: str = None,
-    loggingConfiguration: "LoggingConfigurationTypeDef" = None,
-    tracingConfiguration: "TracingConfigurationTypeDef" = None
-) -> UpdateStateMachineOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `stateMachineArn`: `str` *(required)*
+- `definition`: `str`
+- `roleArn`: `str`
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
 
+Returns
+[UpdateStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#updatestatemachineoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator` method with overloads.
+Type annotations for `boto3.client("stepfunctions").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_execution_history")` -> [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
-- `client.get_paginator("list_activities")` -> [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
-- `client.get_paginator("list_executions")` -> [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
-- `client.get_paginator("list_state_machines")` -> [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
-
-
+- `client.get_paginator("get_execution_history")` ->
+  [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
+- `client.get_paginator("list_activities")` ->
+  [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
+- `client.get_paginator("list_executions")` ->
+  [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_state_machines")` ->
+  [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)

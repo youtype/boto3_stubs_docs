@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticLoadBalancingv2
 
-Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+Auto-generated documentation for
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+type annotations stubs module
+[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ```bash
 pip install mypy-boto3-elbv2
@@ -20,7 +22,8 @@ pip install mypy-boto3-elbv2
 
 ## ElasticLoadBalancingv2Client
 
-Type annotations for  `boto3.client("elbv2")` as [ElasticLoadBalancingv2Client](./client.md)
+Type annotations for `boto3.client("elbv2")` as
+[ElasticLoadBalancingv2Client](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 ```
 
-
 ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_listener_certificates](./client.md#add-listener-certificates)
 - [add_tags](./client.md#add-tags)
 - [can_paginate](./client.md#can-paginate)
@@ -73,10 +74,8 @@ ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
 - [set_security_groups](./client.md#set-security-groups)
 - [set_subnets](./client.md#set-subnets)
 
-
-
-
 ### Exceptions
+
 - [ALPNPolicyNotSupportedException](./client.md#alpnpolicynotsupportedexception)
 - [AllocationIdNotFoundException](./client.md#allocationidnotfoundexception)
 - [AvailabilityZoneNotSupportedException](./client.md#availabilityzonenotsupportedexception)
@@ -116,14 +115,10 @@ ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
 - [TooManyUniqueTargetGroupsPerLoadBalancerException](./client.md#toomanyuniquetargetgroupsperloadbalancerexception)
 - [UnsupportedProtocolException](./client.md#unsupportedprotocolexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elbv2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elbv2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -139,12 +134,10 @@ from mypy_boto3_elbv2.paginators import DescribeAccountLimitsPaginator, ...
 - [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
 - [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("elbv2").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("elbv2").get_waiter("...")`.
 
 Can be used directly:
 
@@ -157,9 +150,6 @@ from mypy_boto3_elbv2.waiters import LoadBalancerAvailableWaiter, ...
 - [LoadBalancersDeletedWaiter](./waiters.md#loadbalancersdeletedwaiter)
 - [TargetDeregisteredWaiter](./waiters.md#targetderegisteredwaiter)
 - [TargetInServiceWaiter](./waiters.md#targetinservicewaiter)
-
-
-
 
 ## Literals
 
@@ -196,13 +186,10 @@ from mypy_boto3_elbv2.literals import ActionTypeEnum, ...
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)
 - [TargetTypeEnum](./literals.md#targettypeenum)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

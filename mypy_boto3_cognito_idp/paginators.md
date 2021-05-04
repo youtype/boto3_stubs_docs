@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Paginators
 
-Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+Auto-generated documentation for
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+type annotations stubs module
+[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 - [Paginators for boto3 CognitoIdentityProvider module](#paginators-for-boto3-cognitoidentityprovider-module)
   - [AdminListGroupsForUserPaginator](#adminlistgroupsforuserpaginator)
@@ -18,7 +20,8 @@ type annotations stubs module [mypy_boto3_cognito_idp](https://pypi.org/project/
 
 ## AdminListGroupsForUserPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")`.
 
 Can be used directly:
 
@@ -29,21 +32,23 @@ def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginato
     return boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.AdminListGroupsForUser](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
 
-```python
-class AdminListGroupsForUserPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Username: str,
-        UserPoolId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[AdminListGroupsForUserResponseTypeDef]:
-        pass
-```
+Arguments for `AdminListGroupsForUserPaginator.paginate` method:
+
+- `Username`: `str` *(required)*
+- `UserPoolId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`AdminListGroupsForUserPaginator.paginate` returns
+`Iterator`\[[AdminListGroupsForUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#adminlistgroupsforuserresponsetypedef)\].
+
 ## AdminListUserAuthEventsPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")`.
 
 Can be used directly:
 
@@ -54,21 +59,23 @@ def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPagina
     return boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.AdminListUserAuthEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
 
-```python
-class AdminListUserAuthEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        Username: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[AdminListUserAuthEventsResponseTypeDef]:
-        pass
-```
+Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `Username`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`AdminListUserAuthEventsPaginator.paginate` returns
+`Iterator`\[[AdminListUserAuthEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#adminlistuserautheventsresponsetypedef)\].
+
 ## ListGroupsPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_groups")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_groups")`.
 
 Can be used directly:
 
@@ -79,20 +86,22 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
 
-```python
-class ListGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListGroupsPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListGroupsPaginator.paginate` returns
+`Iterator`\[[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listgroupsresponsetypedef)\].
+
 ## ListIdentityProvidersPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_identity_providers")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_identity_providers")`.
 
 Can be used directly:
 
@@ -103,20 +112,22 @@ def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_identity_providers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListIdentityProviders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
 
-```python
-class ListIdentityProvidersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListIdentityProvidersResponseTypeDef]:
-        pass
-```
+Arguments for `ListIdentityProvidersPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListIdentityProvidersPaginator.paginate` returns
+`Iterator`\[[ListIdentityProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listidentityprovidersresponsetypedef)\].
+
 ## ListResourceServersPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_resource_servers")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_resource_servers")`.
 
 Can be used directly:
 
@@ -127,20 +138,22 @@ def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_resource_servers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListResourceServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
 
-```python
-class ListResourceServersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResourceServersResponseTypeDef]:
-        pass
-```
+Arguments for `ListResourceServersPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListResourceServersPaginator.paginate` returns
+`Iterator`\[[ListResourceServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listresourceserversresponsetypedef)\].
+
 ## ListUserPoolClientsPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_user_pool_clients")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_user_pool_clients")`.
 
 Can be used directly:
 
@@ -151,20 +164,22 @@ def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_user_pool_clients")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListUserPoolClients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
 
-```python
-class ListUserPoolClientsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUserPoolClientsResponseTypeDef]:
-        pass
-```
+Arguments for `ListUserPoolClientsPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListUserPoolClientsPaginator.paginate` returns
+`Iterator`\[[ListUserPoolClientsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listuserpoolclientsresponsetypedef)\].
+
 ## ListUserPoolsPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_user_pools")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_user_pools")`.
 
 Can be used directly:
 
@@ -175,16 +190,17 @@ def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_user_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListUserPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
 
-```python
-class ListUserPoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUserPoolsResponseTypeDef]:
-        pass
-```
+Arguments for `ListUserPoolsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListUserPoolsPaginator.paginate` returns
+`Iterator`\[[ListUserPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listuserpoolsresponsetypedef)\].
+
 ## ListUsersPaginator
 
 Type annotations for `boto3.client("cognito-idp").get_paginator("list_users")`.
@@ -198,22 +214,24 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_users")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
 
-```python
-class ListUsersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        AttributesToGet: List[str] = None,
-        Filter: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUsersResponseTypeDef]:
-        pass
-```
+Arguments for `ListUsersPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `AttributesToGet`: `List`\[`str`\]
+- `Filter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListUsersPaginator.paginate` returns
+`Iterator`\[[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listusersresponsetypedef)\].
+
 ## ListUsersInGroupPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_users_in_group")`.
+Type annotations for
+`boto3.client("cognito-idp").get_paginator("list_users_in_group")`.
 
 Can be used directly:
 
@@ -224,15 +242,15 @@ def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
     return boto3.client("cognito-idp").get_paginator("list_users_in_group")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
+Boto3 documentation:
+[CognitoIdentityProvider.Paginator.ListUsersInGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
 
-```python
-class ListUsersInGroupPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserPoolId: str,
-        GroupName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUsersInGroupResponseTypeDef]:
-        pass
-```
+Arguments for `ListUsersInGroupPaginator.paginate` method:
+
+- `UserPoolId`: `str` *(required)*
+- `GroupName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+
+`ListUsersInGroupPaginator.paginate` returns
+`Iterator`\[[ListUsersInGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listusersingroupresponsetypedef)\].

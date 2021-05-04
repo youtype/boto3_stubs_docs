@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECS](./README.md) > ECSClient
 
-Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+Auto-generated documentation for
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+type annotations stubs module
+[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [ECSClient for boto3 ECS module](#ecsclient-for-boto3-ecs-module)
   - [ECSClient](#ecsclient)
@@ -79,12 +81,13 @@ def get_ecs_client() -> ECSClient:
     return boto3.client("ecs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
+Boto3 documentation:
+[ECS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ecs.client import Exceptions
@@ -92,7 +95,6 @@ from mypy_boto3_ecs.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -122,995 +124,1103 @@ Exceptions:
 - `Exceptions.UnsupportedFeatureException`
 - `Exceptions.UpdateInProgressException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("ecs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate]
+Boto3 documentation:
+[ECS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_capacity_provider
 
 Type annotations for `boto3.client("ecs").create_capacity_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider]
+Boto3 documentation:
+[ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
 
-```python
-def create_capacity_provider(
-    self,
-    name: str,
-    autoScalingGroupProvider: "AutoScalingGroupProviderTypeDef",
-    tags: List["TagTypeDef"] = None
-) -> CreateCapacityProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `autoScalingGroupProvider`:
+  [AutoScalingGroupProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#autoscalinggroupprovidertypedef)
+  *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCapacityProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#createcapacityproviderresponsetypedef).
 
 ### create_cluster
 
 Type annotations for `boto3.client("ecs").create_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster]
+Boto3 documentation:
+[ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
 
-```python
-def create_cluster(
-    self,
-    clusterName: str = None,
-    tags: List["TagTypeDef"] = None,
-    settings: List["ClusterSettingTypeDef"] = None,
-    configuration: "ClusterConfigurationTypeDef" = None,
-    capacityProviders: List[str] = None,
-    defaultCapacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"] = None
-) -> CreateClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clusterName`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+- `settings`:
+  `List`\[[ClusterSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#clustersettingtypedef)\]
+- `configuration`:
+  [ClusterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#clusterconfigurationtypedef)
+- `capacityProviders`: `List`\[`str`\]
+- `defaultCapacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+
+Returns
+[CreateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#createclusterresponsetypedef).
 
 ### create_service
 
 Type annotations for `boto3.client("ecs").create_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service]
+Boto3 documentation:
+[ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
 
-```python
-def create_service(
-    self,
-    serviceName: str,
-    cluster: str = None,
-    taskDefinition: str = None,
-    loadBalancers: List["LoadBalancerTypeDef"] = None,
-    serviceRegistries: List["ServiceRegistryTypeDef"] = None,
-    desiredCount: int = None,
-    clientToken: str = None,
-    launchType: LaunchType = None,
-    capacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"] = None,
-    platformVersion: str = None,
-    role: str = None,
-    deploymentConfiguration: "DeploymentConfigurationTypeDef" = None,
-    placementConstraints: List["PlacementConstraintTypeDef"] = None,
-    placementStrategy: List["PlacementStrategyTypeDef"] = None,
-    networkConfiguration: "NetworkConfigurationTypeDef" = None,
-    healthCheckGracePeriodSeconds: int = None,
-    schedulingStrategy: SchedulingStrategy = None,
-    deploymentController: "DeploymentControllerTypeDef" = None,
-    tags: List["TagTypeDef"] = None,
-    enableECSManagedTags: bool = None,
-    propagateTags: PropagateTags = None,
-    enableExecuteCommand: bool = None
-) -> CreateServiceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `cluster`: `str`
+- `taskDefinition`: `str`
+- `loadBalancers`:
+  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#loadbalancertypedef)\]
+- `serviceRegistries`:
+  `List`\[[ServiceRegistryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#serviceregistrytypedef)\]
+- `desiredCount`: `int`
+- `clientToken`: `str`
+- `launchType`:
+  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+- `capacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+- `platformVersion`: `str`
+- `role`: `str`
+- `deploymentConfiguration`:
+  [DeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deploymentconfigurationtypedef)
+- `placementConstraints`:
+  `List`\[[PlacementConstraintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementconstrainttypedef)\]
+- `placementStrategy`:
+  `List`\[[PlacementStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementstrategytypedef)\]
+- `networkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkconfigurationtypedef)
+- `healthCheckGracePeriodSeconds`: `int`
+- `schedulingStrategy`:
+  [SchedulingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#schedulingstrategy)
+- `deploymentController`:
+  [DeploymentControllerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deploymentcontrollertypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+- `enableECSManagedTags`: `bool`
+- `propagateTags`:
+  [PropagateTags](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#propagatetags)
+- `enableExecuteCommand`: `bool`
+
+Returns
+[CreateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#createserviceresponsetypedef).
 
 ### create_task_set
 
 Type annotations for `boto3.client("ecs").create_task_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set]
+Boto3 documentation:
+[ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
 
-```python
-def create_task_set(
-    self,
-    service: str,
-    cluster: str,
-    taskDefinition: str,
-    externalId: str = None,
-    networkConfiguration: "NetworkConfigurationTypeDef" = None,
-    loadBalancers: List["LoadBalancerTypeDef"] = None,
-    serviceRegistries: List["ServiceRegistryTypeDef"] = None,
-    launchType: LaunchType = None,
-    capacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"] = None,
-    platformVersion: str = None,
-    scale: "ScaleTypeDef" = None,
-    clientToken: str = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateTaskSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `service`: `str` *(required)*
+- `cluster`: `str` *(required)*
+- `taskDefinition`: `str` *(required)*
+- `externalId`: `str`
+- `networkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkconfigurationtypedef)
+- `loadBalancers`:
+  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#loadbalancertypedef)\]
+- `serviceRegistries`:
+  `List`\[[ServiceRegistryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#serviceregistrytypedef)\]
+- `launchType`:
+  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+- `capacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+- `platformVersion`: `str`
+- `scale`:
+  [ScaleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#scaletypedef)
+- `clientToken`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTaskSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#createtasksetresponsetypedef).
 
 ### delete_account_setting
 
 Type annotations for `boto3.client("ecs").delete_account_setting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting]
+Boto3 documentation:
+[ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
 
-```python
-def delete_account_setting(
-    self,
-    name: SettingName,
-    principalArn: str = None
-) -> DeleteAccountSettingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`:
+  [SettingName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#settingname)
+  *(required)*
+- `principalArn`: `str`
+
+Returns
+[DeleteAccountSettingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deleteaccountsettingresponsetypedef).
 
 ### delete_attributes
 
 Type annotations for `boto3.client("ecs").delete_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes]
+Boto3 documentation:
+[ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
 
-```python
-def delete_attributes(
-    self,
-    attributes: List["AttributeTypeDef"],
-    cluster: str = None
-) -> DeleteAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#attributetypedef)\]
+  *(required)*
+- `cluster`: `str`
+
+Returns
+[DeleteAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deleteattributesresponsetypedef).
 
 ### delete_capacity_provider
 
 Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider]
+Boto3 documentation:
+[ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
-```python
-def delete_capacity_provider(
-    self,
-    capacityProvider: str
-) -> DeleteCapacityProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `capacityProvider`: `str` *(required)*
+
+Returns
+[DeleteCapacityProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deletecapacityproviderresponsetypedef).
 
 ### delete_cluster
 
 Type annotations for `boto3.client("ecs").delete_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster]
+Boto3 documentation:
+[ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
-```python
-def delete_cluster(
-    self,
-    cluster: str
-) -> DeleteClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+
+Returns
+[DeleteClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deleteclusterresponsetypedef).
 
 ### delete_service
 
 Type annotations for `boto3.client("ecs").delete_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service]
+Boto3 documentation:
+[ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
 
-```python
-def delete_service(
-    self,
-    service: str,
-    cluster: str = None,
-    force: bool = None
-) -> DeleteServiceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `service`: `str` *(required)*
+- `cluster`: `str`
+- `force`: `bool`
+
+Returns
+[DeleteServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deleteserviceresponsetypedef).
 
 ### delete_task_set
 
 Type annotations for `boto3.client("ecs").delete_task_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set]
+Boto3 documentation:
+[ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
 
-```python
-def delete_task_set(
-    self,
-    cluster: str,
-    service: str,
-    taskSet: str,
-    force: bool = None
-) -> DeleteTaskSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `service`: `str` *(required)*
+- `taskSet`: `str` *(required)*
+- `force`: `bool`
+
+Returns
+[DeleteTaskSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deletetasksetresponsetypedef).
 
 ### deregister_container_instance
 
-Type annotations for `boto3.client("ecs").deregister_container_instance` method.
+Type annotations for `boto3.client("ecs").deregister_container_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance]
+Boto3 documentation:
+[ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
 
-```python
-def deregister_container_instance(
-    self,
-    containerInstance: str,
-    cluster: str = None,
-    force: bool = None
-) -> DeregisterContainerInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstance`: `str` *(required)*
+- `cluster`: `str`
+- `force`: `bool`
+
+Returns
+[DeregisterContainerInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deregistercontainerinstanceresponsetypedef).
 
 ### deregister_task_definition
 
 Type annotations for `boto3.client("ecs").deregister_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition]
+Boto3 documentation:
+[ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
-```python
-def deregister_task_definition(
-    self,
-    taskDefinition: str
-) -> DeregisterTaskDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `taskDefinition`: `str` *(required)*
+
+Returns
+[DeregisterTaskDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deregistertaskdefinitionresponsetypedef).
 
 ### describe_capacity_providers
 
 Type annotations for `boto3.client("ecs").describe_capacity_providers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers]
+Boto3 documentation:
+[ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
 
-```python
-def describe_capacity_providers(
-    self,
-    capacityProviders: List[str] = None,
-    include: List[Literal['TAGS']] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeCapacityProvidersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `capacityProviders`: `List`\[`str`\]
+- `include`: `List`\[`Literal['TAGS']`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeCapacityProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describecapacityprovidersresponsetypedef).
 
 ### describe_clusters
 
 Type annotations for `boto3.client("ecs").describe_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters]
+Boto3 documentation:
+[ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
 
-```python
-def describe_clusters(
-    self,
-    clusters: List[str] = None,
-    include: List[ClusterField] = None
-) -> DescribeClustersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clusters`: `List`\[`str`\]
+- `include`:
+  `List`\[[ClusterField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#clusterfield)\]
+
+Returns
+[DescribeClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describeclustersresponsetypedef).
 
 ### describe_container_instances
 
 Type annotations for `boto3.client("ecs").describe_container_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances]
+Boto3 documentation:
+[ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
 
-```python
-def describe_container_instances(
-    self,
-    containerInstances: List[str],
-    cluster: str = None,
-    include: List[Literal['TAGS']] = None
-) -> DescribeContainerInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstances`: `List`\[`str`\] *(required)*
+- `cluster`: `str`
+- `include`: `List`\[`Literal['TAGS']`\]
+
+Returns
+[DescribeContainerInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describecontainerinstancesresponsetypedef).
 
 ### describe_services
 
 Type annotations for `boto3.client("ecs").describe_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services]
+Boto3 documentation:
+[ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
 
-```python
-def describe_services(
-    self,
-    services: List[str],
-    cluster: str = None,
-    include: List[Literal['TAGS']] = None
-) -> DescribeServicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `services`: `List`\[`str`\] *(required)*
+- `cluster`: `str`
+- `include`: `List`\[`Literal['TAGS']`\]
+
+Returns
+[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describeservicesresponsetypedef).
 
 ### describe_task_definition
 
 Type annotations for `boto3.client("ecs").describe_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition]
+Boto3 documentation:
+[ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
 
-```python
-def describe_task_definition(
-    self,
-    taskDefinition: str,
-    include: List[Literal['TAGS']] = None
-) -> DescribeTaskDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `taskDefinition`: `str` *(required)*
+- `include`: `List`\[`Literal['TAGS']`\]
+
+Returns
+[DescribeTaskDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describetaskdefinitionresponsetypedef).
 
 ### describe_task_sets
 
 Type annotations for `boto3.client("ecs").describe_task_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets]
+Boto3 documentation:
+[ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
 
-```python
-def describe_task_sets(
-    self,
-    cluster: str,
-    service: str,
-    taskSets: List[str] = None,
-    include: List[Literal['TAGS']] = None
-) -> DescribeTaskSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `service`: `str` *(required)*
+- `taskSets`: `List`\[`str`\]
+- `include`: `List`\[`Literal['TAGS']`\]
+
+Returns
+[DescribeTaskSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describetasksetsresponsetypedef).
 
 ### describe_tasks
 
 Type annotations for `boto3.client("ecs").describe_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks]
+Boto3 documentation:
+[ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
 
-```python
-def describe_tasks(
-    self,
-    tasks: List[str],
-    cluster: str = None,
-    include: List[Literal['TAGS']] = None
-) -> DescribeTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `tasks`: `List`\[`str`\] *(required)*
+- `cluster`: `str`
+- `include`: `List`\[`Literal['TAGS']`\]
+
+Returns
+[DescribeTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#describetasksresponsetypedef).
 
 ### discover_poll_endpoint
 
 Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint]
+Boto3 documentation:
+[ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
 
-```python
-def discover_poll_endpoint(
-    self,
-    containerInstance: str = None,
-    cluster: str = None
-) -> DiscoverPollEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstance`: `str`
+- `cluster`: `str`
+
+Returns
+[DiscoverPollEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#discoverpollendpointresponsetypedef).
 
 ### execute_command
 
 Type annotations for `boto3.client("ecs").execute_command` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command]
+Boto3 documentation:
+[ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
 
-```python
-def execute_command(
-    self,
-    command: str,
-    interactive: bool,
-    task: str,
-    cluster: str = None,
-    container: str = None
-) -> ExecuteCommandResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `command`: `str` *(required)*
+- `interactive`: `bool` *(required)*
+- `task`: `str` *(required)*
+- `cluster`: `str`
+- `container`: `str`
+
+Returns
+[ExecuteCommandResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#executecommandresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ecs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url]
+Boto3 documentation:
+[ECS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_account_settings
 
 Type annotations for `boto3.client("ecs").list_account_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings]
+Boto3 documentation:
+[ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
 
-```python
-def list_account_settings(
-    self,
-    name: SettingName = None,
-    value: str = None,
-    principalArn: str = None,
-    effectiveSettings: bool = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAccountSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`:
+  [SettingName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#settingname)
+- `value`: `str`
+- `principalArn`: `str`
+- `effectiveSettings`: `bool`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listaccountsettingsresponsetypedef).
 
 ### list_attributes
 
 Type annotations for `boto3.client("ecs").list_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes]
+Boto3 documentation:
+[ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
 
-```python
-def list_attributes(
-    self,
-    targetType: Literal['container-instance'],
-    cluster: str = None,
-    attributeName: str = None,
-    attributeValue: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `targetType`: `Literal['container-instance']` *(required)*
+- `cluster`: `str`
+- `attributeName`: `str`
+- `attributeValue`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listattributesresponsetypedef).
 
 ### list_clusters
 
 Type annotations for `boto3.client("ecs").list_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters]
+Boto3 documentation:
+[ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
 
-```python
-def list_clusters(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListClustersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listclustersresponsetypedef).
 
 ### list_container_instances
 
 Type annotations for `boto3.client("ecs").list_container_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances]
+Boto3 documentation:
+[ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
 
-```python
-def list_container_instances(
-    self,
-    cluster: str = None,
-    filter: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    status: ContainerInstanceStatus = None
-) -> ListContainerInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `filter`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `status`:
+  [ContainerInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#containerinstancestatus)
+
+Returns
+[ListContainerInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listcontainerinstancesresponsetypedef).
 
 ### list_services
 
 Type annotations for `boto3.client("ecs").list_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services]
+Boto3 documentation:
+[ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
 
-```python
-def list_services(
-    self,
-    cluster: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    launchType: LaunchType = None,
-    schedulingStrategy: SchedulingStrategy = None
-) -> ListServicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `launchType`:
+  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+- `schedulingStrategy`:
+  [SchedulingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#schedulingstrategy)
+
+Returns
+[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource]
+Boto3 documentation:
+[ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_task_definition_families
 
-Type annotations for `boto3.client("ecs").list_task_definition_families` method.
+Type annotations for `boto3.client("ecs").list_task_definition_families`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families]
+Boto3 documentation:
+[ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
 
-```python
-def list_task_definition_families(
-    self,
-    familyPrefix: str = None,
-    status: TaskDefinitionFamilyStatus = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTaskDefinitionFamiliesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `familyPrefix`: `str`
+- `status`:
+  [TaskDefinitionFamilyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#taskdefinitionfamilystatus)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTaskDefinitionFamiliesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtaskdefinitionfamiliesresponsetypedef).
 
 ### list_task_definitions
 
 Type annotations for `boto3.client("ecs").list_task_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions]
+Boto3 documentation:
+[ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
 
-```python
-def list_task_definitions(
-    self,
-    familyPrefix: str = None,
-    status: TaskDefinitionStatus = None,
-    sort: SortOrder = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTaskDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `familyPrefix`: `str`
+- `status`:
+  [TaskDefinitionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#taskdefinitionstatus)
+- `sort`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#sortorder)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTaskDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtaskdefinitionsresponsetypedef).
 
 ### list_tasks
 
 Type annotations for `boto3.client("ecs").list_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks]
+Boto3 documentation:
+[ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
 
-```python
-def list_tasks(
-    self,
-    cluster: str = None,
-    containerInstance: str = None,
-    family: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    startedBy: str = None,
-    serviceName: str = None,
-    desiredStatus: DesiredStatus = None,
-    launchType: LaunchType = None
-) -> ListTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `containerInstance`: `str`
+- `family`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `startedBy`: `str`
+- `serviceName`: `str`
+- `desiredStatus`:
+  [DesiredStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#desiredstatus)
+- `launchType`:
+  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+
+Returns
+[ListTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtasksresponsetypedef).
 
 ### put_account_setting
 
 Type annotations for `boto3.client("ecs").put_account_setting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting]
+Boto3 documentation:
+[ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
 
-```python
-def put_account_setting(
-    self,
-    name: SettingName,
-    value: str,
-    principalArn: str = None
-) -> PutAccountSettingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`:
+  [SettingName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#settingname)
+  *(required)*
+- `value`: `str` *(required)*
+- `principalArn`: `str`
+
+Returns
+[PutAccountSettingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#putaccountsettingresponsetypedef).
 
 ### put_account_setting_default
 
 Type annotations for `boto3.client("ecs").put_account_setting_default` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default]
+Boto3 documentation:
+[ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
 
-```python
-def put_account_setting_default(
-    self,
-    name: SettingName,
-    value: str
-) -> PutAccountSettingDefaultResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`:
+  [SettingName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#settingname)
+  *(required)*
+- `value`: `str` *(required)*
+
+Returns
+[PutAccountSettingDefaultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#putaccountsettingdefaultresponsetypedef).
 
 ### put_attributes
 
 Type annotations for `boto3.client("ecs").put_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes]
+Boto3 documentation:
+[ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
 
-```python
-def put_attributes(
-    self,
-    attributes: List["AttributeTypeDef"],
-    cluster: str = None
-) -> PutAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#attributetypedef)\]
+  *(required)*
+- `cluster`: `str`
+
+Returns
+[PutAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#putattributesresponsetypedef).
 
 ### put_cluster_capacity_providers
 
-Type annotations for `boto3.client("ecs").put_cluster_capacity_providers` method.
+Type annotations for `boto3.client("ecs").put_cluster_capacity_providers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers]
+Boto3 documentation:
+[ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
 
-```python
-def put_cluster_capacity_providers(
-    self,
-    cluster: str,
-    capacityProviders: List[str],
-    defaultCapacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"]
-) -> PutClusterCapacityProvidersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `capacityProviders`: `List`\[`str`\] *(required)*
+- `defaultCapacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+  *(required)*
+
+Returns
+[PutClusterCapacityProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#putclustercapacityprovidersresponsetypedef).
 
 ### register_container_instance
 
 Type annotations for `boto3.client("ecs").register_container_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance]
+Boto3 documentation:
+[ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
 
-```python
-def register_container_instance(
-    self,
-    cluster: str = None,
-    instanceIdentityDocument: str = None,
-    instanceIdentityDocumentSignature: str = None,
-    totalResources: List["ResourceTypeDef"] = None,
-    versionInfo: "VersionInfoTypeDef" = None,
-    containerInstanceArn: str = None,
-    attributes: List["AttributeTypeDef"] = None,
-    platformDevices: List[PlatformDeviceTypeDef] = None,
-    tags: List["TagTypeDef"] = None
-) -> RegisterContainerInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `instanceIdentityDocument`: `str`
+- `instanceIdentityDocumentSignature`: `str`
+- `totalResources`:
+  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#resourcetypedef)\]
+- `versionInfo`:
+  [VersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#versioninfotypedef)
+- `containerInstanceArn`: `str`
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#attributetypedef)\]
+- `platformDevices`:
+  `List`\[[PlatformDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#platformdevicetypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+
+Returns
+[RegisterContainerInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#registercontainerinstanceresponsetypedef).
 
 ### register_task_definition
 
 Type annotations for `boto3.client("ecs").register_task_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition]
+Boto3 documentation:
+[ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
 
-```python
-def register_task_definition(
-    self,
-    family: str,
-    containerDefinitions: List["ContainerDefinitionTypeDef"],
-    taskRoleArn: str = None,
-    executionRoleArn: str = None,
-    networkMode: NetworkMode = None,
-    volumes: List["VolumeTypeDef"] = None,
-    placementConstraints: List["TaskDefinitionPlacementConstraintTypeDef"] = None,
-    requiresCompatibilities: List[Compatibility] = None,
-    cpu: str = None,
-    memory: str = None,
-    tags: List["TagTypeDef"] = None,
-    pidMode: PidMode = None,
-    ipcMode: IpcMode = None,
-    proxyConfiguration: "ProxyConfigurationTypeDef" = None,
-    inferenceAccelerators: List["InferenceAcceleratorTypeDef"] = None,
-    ephemeralStorage: "EphemeralStorageTypeDef" = None
-) -> RegisterTaskDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `family`: `str` *(required)*
+- `containerDefinitions`:
+  `List`\[[ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#containerdefinitiontypedef)\]
+  *(required)*
+- `taskRoleArn`: `str`
+- `executionRoleArn`: `str`
+- `networkMode`:
+  [NetworkMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#networkmode)
+- `volumes`:
+  `List`\[[VolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#volumetypedef)\]
+- `placementConstraints`:
+  `List`\[[TaskDefinitionPlacementConstraintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#taskdefinitionplacementconstrainttypedef)\]
+- `requiresCompatibilities`:
+  `List`\[[Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#compatibility)\]
+- `cpu`: `str`
+- `memory`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+- `pidMode`:
+  [PidMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#pidmode)
+- `ipcMode`:
+  [IpcMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#ipcmode)
+- `proxyConfiguration`:
+  [ProxyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#proxyconfigurationtypedef)
+- `inferenceAccelerators`:
+  `List`\[[InferenceAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#inferenceacceleratortypedef)\]
+- `ephemeralStorage`:
+  [EphemeralStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#ephemeralstoragetypedef)
+
+Returns
+[RegisterTaskDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#registertaskdefinitionresponsetypedef).
 
 ### run_task
 
 Type annotations for `boto3.client("ecs").run_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task]
+Boto3 documentation:
+[ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
 
-```python
-def run_task(
-    self,
-    taskDefinition: str,
-    capacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"] = None,
-    cluster: str = None,
-    count: int = None,
-    enableECSManagedTags: bool = None,
-    enableExecuteCommand: bool = None,
-    group: str = None,
-    launchType: LaunchType = None,
-    networkConfiguration: "NetworkConfigurationTypeDef" = None,
-    overrides: "TaskOverrideTypeDef" = None,
-    placementConstraints: List["PlacementConstraintTypeDef"] = None,
-    placementStrategy: List["PlacementStrategyTypeDef"] = None,
-    platformVersion: str = None,
-    propagateTags: PropagateTags = None,
-    referenceId: str = None,
-    startedBy: str = None,
-    tags: List["TagTypeDef"] = None
-) -> RunTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `taskDefinition`: `str` *(required)*
+- `capacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+- `cluster`: `str`
+- `count`: `int`
+- `enableECSManagedTags`: `bool`
+- `enableExecuteCommand`: `bool`
+- `group`: `str`
+- `launchType`:
+  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+- `networkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkconfigurationtypedef)
+- `overrides`:
+  [TaskOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#taskoverridetypedef)
+- `placementConstraints`:
+  `List`\[[PlacementConstraintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementconstrainttypedef)\]
+- `placementStrategy`:
+  `List`\[[PlacementStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementstrategytypedef)\]
+- `platformVersion`: `str`
+- `propagateTags`:
+  [PropagateTags](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#propagatetags)
+- `referenceId`: `str`
+- `startedBy`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+
+Returns
+[RunTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#runtaskresponsetypedef).
 
 ### start_task
 
 Type annotations for `boto3.client("ecs").start_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task]
+Boto3 documentation:
+[ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
 
-```python
-def start_task(
-    self,
-    containerInstances: List[str],
-    taskDefinition: str,
-    cluster: str = None,
-    enableECSManagedTags: bool = None,
-    enableExecuteCommand: bool = None,
-    group: str = None,
-    networkConfiguration: "NetworkConfigurationTypeDef" = None,
-    overrides: "TaskOverrideTypeDef" = None,
-    propagateTags: PropagateTags = None,
-    referenceId: str = None,
-    startedBy: str = None,
-    tags: List["TagTypeDef"] = None
-) -> StartTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstances`: `List`\[`str`\] *(required)*
+- `taskDefinition`: `str` *(required)*
+- `cluster`: `str`
+- `enableECSManagedTags`: `bool`
+- `enableExecuteCommand`: `bool`
+- `group`: `str`
+- `networkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkconfigurationtypedef)
+- `overrides`:
+  [TaskOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#taskoverridetypedef)
+- `propagateTags`:
+  [PropagateTags](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#propagatetags)
+- `referenceId`: `str`
+- `startedBy`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+
+Returns
+[StartTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#starttaskresponsetypedef).
 
 ### stop_task
 
 Type annotations for `boto3.client("ecs").stop_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task]
+Boto3 documentation:
+[ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
 
-```python
-def stop_task(
-    self,
-    task: str,
-    cluster: str = None,
-    reason: str = None
-) -> StopTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `task`: `str` *(required)*
+- `cluster`: `str`
+- `reason`: `str`
+
+Returns
+[StopTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#stoptaskresponsetypedef).
 
 ### submit_attachment_state_changes
 
-Type annotations for `boto3.client("ecs").submit_attachment_state_changes` method.
+Type annotations for `boto3.client("ecs").submit_attachment_state_changes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes]
+Boto3 documentation:
+[ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
 
-```python
-def submit_attachment_state_changes(
-    self,
-    attachments: List[AttachmentStateChangeTypeDef],
-    cluster: str = None
-) -> SubmitAttachmentStateChangesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attachments`:
+  `List`\[[AttachmentStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#attachmentstatechangetypedef)\]
+  *(required)*
+- `cluster`: `str`
+
+Returns
+[SubmitAttachmentStateChangesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#submitattachmentstatechangesresponsetypedef).
 
 ### submit_container_state_change
 
-Type annotations for `boto3.client("ecs").submit_container_state_change` method.
+Type annotations for `boto3.client("ecs").submit_container_state_change`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change]
+Boto3 documentation:
+[ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
 
-```python
-def submit_container_state_change(
-    self,
-    cluster: str = None,
-    task: str = None,
-    containerName: str = None,
-    runtimeId: str = None,
-    status: str = None,
-    exitCode: int = None,
-    reason: str = None,
-    networkBindings: List["NetworkBindingTypeDef"] = None
-) -> SubmitContainerStateChangeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `task`: `str`
+- `containerName`: `str`
+- `runtimeId`: `str`
+- `status`: `str`
+- `exitCode`: `int`
+- `reason`: `str`
+- `networkBindings`:
+  `List`\[[NetworkBindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkbindingtypedef)\]
+
+Returns
+[SubmitContainerStateChangeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#submitcontainerstatechangeresponsetypedef).
 
 ### submit_task_state_change
 
 Type annotations for `boto3.client("ecs").submit_task_state_change` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change]
+Boto3 documentation:
+[ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
 
-```python
-def submit_task_state_change(
-    self,
-    cluster: str = None,
-    task: str = None,
-    status: str = None,
-    reason: str = None,
-    containers: List[ContainerStateChangeTypeDef] = None,
-    attachments: List[AttachmentStateChangeTypeDef] = None,
-    managedAgents: List[ManagedAgentStateChangeTypeDef] = None,
-    pullStartedAt: datetime = None,
-    pullStoppedAt: datetime = None,
-    executionStoppedAt: datetime = None
-) -> SubmitTaskStateChangeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str`
+- `task`: `str`
+- `status`: `str`
+- `reason`: `str`
+- `containers`:
+  `List`\[[ContainerStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#containerstatechangetypedef)\]
+- `attachments`:
+  `List`\[[AttachmentStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#attachmentstatechangetypedef)\]
+- `managedAgents`:
+  `List`\[[ManagedAgentStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#managedagentstatechangetypedef)\]
+- `pullStartedAt`: `datetime`
+- `pullStoppedAt`: `datetime`
+- `executionStoppedAt`: `datetime`
+
+Returns
+[SubmitTaskStateChangeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#submittaskstatechangeresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("ecs").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource]
+Boto3 documentation:
+[ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("ecs").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource]
+Boto3 documentation:
+[ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_capacity_provider
 
 Type annotations for `boto3.client("ecs").update_capacity_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider]
+Boto3 documentation:
+[ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
 
-```python
-def update_capacity_provider(
-    self,
-    name: str,
-    autoScalingGroupProvider: AutoScalingGroupProviderUpdateTypeDef
-) -> UpdateCapacityProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `autoScalingGroupProvider`:
+  [AutoScalingGroupProviderUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#autoscalinggroupproviderupdatetypedef)
+  *(required)*
+
+Returns
+[UpdateCapacityProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updatecapacityproviderresponsetypedef).
 
 ### update_cluster
 
 Type annotations for `boto3.client("ecs").update_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster]
+Boto3 documentation:
+[ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
 
-```python
-def update_cluster(
-    self,
-    cluster: str,
-    settings: List["ClusterSettingTypeDef"] = None,
-    configuration: "ClusterConfigurationTypeDef" = None
-) -> UpdateClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `settings`:
+  `List`\[[ClusterSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#clustersettingtypedef)\]
+- `configuration`:
+  [ClusterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#clusterconfigurationtypedef)
+
+Returns
+[UpdateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updateclusterresponsetypedef).
 
 ### update_cluster_settings
 
 Type annotations for `boto3.client("ecs").update_cluster_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings]
+Boto3 documentation:
+[ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
 
-```python
-def update_cluster_settings(
-    self,
-    cluster: str,
-    settings: List["ClusterSettingTypeDef"]
-) -> UpdateClusterSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `settings`:
+  `List`\[[ClusterSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#clustersettingtypedef)\]
+  *(required)*
+
+Returns
+[UpdateClusterSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updateclustersettingsresponsetypedef).
 
 ### update_container_agent
 
 Type annotations for `boto3.client("ecs").update_container_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent]
+Boto3 documentation:
+[ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
 
-```python
-def update_container_agent(
-    self,
-    containerInstance: str,
-    cluster: str = None
-) -> UpdateContainerAgentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstance`: `str` *(required)*
+- `cluster`: `str`
+
+Returns
+[UpdateContainerAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updatecontaineragentresponsetypedef).
 
 ### update_container_instances_state
 
-Type annotations for `boto3.client("ecs").update_container_instances_state` method.
+Type annotations for `boto3.client("ecs").update_container_instances_state`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state]
+Boto3 documentation:
+[ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
 
-```python
-def update_container_instances_state(
-    self,
-    containerInstances: List[str],
-    status: ContainerInstanceStatus,
-    cluster: str = None
-) -> UpdateContainerInstancesStateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerInstances`: `List`\[`str`\] *(required)*
+- `status`:
+  [ContainerInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#containerinstancestatus)
+  *(required)*
+- `cluster`: `str`
+
+Returns
+[UpdateContainerInstancesStateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updatecontainerinstancesstateresponsetypedef).
 
 ### update_service
 
 Type annotations for `boto3.client("ecs").update_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service]
+Boto3 documentation:
+[ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
 
-```python
-def update_service(
-    self,
-    service: str,
-    cluster: str = None,
-    desiredCount: int = None,
-    taskDefinition: str = None,
-    capacityProviderStrategy: List["CapacityProviderStrategyItemTypeDef"] = None,
-    deploymentConfiguration: "DeploymentConfigurationTypeDef" = None,
-    networkConfiguration: "NetworkConfigurationTypeDef" = None,
-    placementConstraints: List["PlacementConstraintTypeDef"] = None,
-    placementStrategy: List["PlacementStrategyTypeDef"] = None,
-    platformVersion: str = None,
-    forceNewDeployment: bool = None,
-    healthCheckGracePeriodSeconds: int = None,
-    enableExecuteCommand: bool = None
-) -> UpdateServiceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `service`: `str` *(required)*
+- `cluster`: `str`
+- `desiredCount`: `int`
+- `taskDefinition`: `str`
+- `capacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#capacityproviderstrategyitemtypedef)\]
+- `deploymentConfiguration`:
+  [DeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#deploymentconfigurationtypedef)
+- `networkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#networkconfigurationtypedef)
+- `placementConstraints`:
+  `List`\[[PlacementConstraintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementconstrainttypedef)\]
+- `placementStrategy`:
+  `List`\[[PlacementStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#placementstrategytypedef)\]
+- `platformVersion`: `str`
+- `forceNewDeployment`: `bool`
+- `healthCheckGracePeriodSeconds`: `int`
+- `enableExecuteCommand`: `bool`
+
+Returns
+[UpdateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updateserviceresponsetypedef).
 
 ### update_service_primary_task_set
 
-Type annotations for `boto3.client("ecs").update_service_primary_task_set` method.
+Type annotations for `boto3.client("ecs").update_service_primary_task_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set]
+Boto3 documentation:
+[ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
 
-```python
-def update_service_primary_task_set(
-    self,
-    cluster: str,
-    service: str,
-    primaryTaskSet: str
-) -> UpdateServicePrimaryTaskSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `cluster`: `str` *(required)*
+- `service`: `str` *(required)*
+- `primaryTaskSet`: `str` *(required)*
+
+Returns
+[UpdateServicePrimaryTaskSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updateserviceprimarytasksetresponsetypedef).
 
 ### update_task_set
 
 Type annotations for `boto3.client("ecs").update_task_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set]
+Boto3 documentation:
+[ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
 
-```python
-def update_task_set(
-    self,
-    cluster: str,
-    service: str,
-    taskSet: str,
-    scale: "ScaleTypeDef"
-) -> UpdateTaskSetResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `cluster`: `str` *(required)*
+- `service`: `str` *(required)*
+- `taskSet`: `str` *(required)*
+- `scale`:
+  [ScaleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#scaletypedef)
+  *(required)*
 
+Returns
+[UpdateTaskSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#updatetasksetresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("ecs").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_settings")` -> [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
-- `client.get_paginator("list_attributes")` -> [ListAttributesPaginator](./paginators.md#listattributespaginator)
-- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_container_instances")` -> [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
-- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
-- `client.get_paginator("list_task_definition_families")` -> [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
-- `client.get_paginator("list_task_definitions")` -> [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
-- `client.get_paginator("list_tasks")` -> [ListTasksPaginator](./paginators.md#listtaskspaginator)
-
-
-
+- `client.get_paginator("list_account_settings")` ->
+  [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
+- `client.get_paginator("list_attributes")` ->
+  [ListAttributesPaginator](./paginators.md#listattributespaginator)
+- `client.get_paginator("list_clusters")` ->
+  [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_container_instances")` ->
+  [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
+- `client.get_paginator("list_services")` ->
+  [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_task_definition_families")` ->
+  [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
+- `client.get_paginator("list_task_definitions")` ->
+  [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
+- `client.get_paginator("list_tasks")` ->
+  [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("ecs").get_waiter` method with overloads.
 
-- `client.get_waiter("services_inactive")` -> [ServicesInactiveWaiter](./waiters.md#servicesinactivewaiter)
-- `client.get_waiter("services_stable")` -> [ServicesStableWaiter](./waiters.md#servicesstablewaiter)
-- `client.get_waiter("tasks_running")` -> [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
-- `client.get_waiter("tasks_stopped")` -> [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)
+- `client.get_waiter("services_inactive")` ->
+  [ServicesInactiveWaiter](./waiters.md#servicesinactivewaiter)
+- `client.get_waiter("services_stable")` ->
+  [ServicesStableWaiter](./waiters.md#servicesstablewaiter)
+- `client.get_waiter("tasks_running")` ->
+  [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
+- `client.get_waiter("tasks_stopped")` ->
+  [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)

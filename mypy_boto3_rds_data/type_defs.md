@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RDSDataService](./README.md) > Structures
 
-Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
-type annotations stubs module [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+Auto-generated documentation for
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+type annotations stubs module
+[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 - [Typed dictionaries for boto3 RDSDataService module](#typed-dictionaries-for-boto3-rdsdataservice-module)
   - [ArrayValueTypeDef](#arrayvaluetypedef)
@@ -31,16 +33,14 @@ type annotations stubs module [mypy_boto3_rds_data](https://pypi.org/project/myp
 from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arrayValues`: `List["ArrayValueTypeDef"]`
-- `booleanValues`: `List[bool]`
-- `doubleValues`: `List[float]`
-- `longValues`: `List[int]`
-- `stringValues`: `List[str]`
 
+- `arrayValues`:
+  `List`\[[ArrayValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#arrayvaluetypedef)\]
+- `booleanValues`: `List`\[`bool`\]
+- `doubleValues`: `List`\[`float`\]
+- `longValues`: `List`\[`int`\]
+- `stringValues`: `List`\[`str`\]
 
 ## BatchExecuteStatementResponseTypeDef
 
@@ -48,12 +48,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import BatchExecuteStatementResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `updateResults`: `List["UpdateResultTypeDef"]`
 
+- `updateResults`:
+  `List`\[[UpdateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#updateresulttypedef)\]
 
 ## BeginTransactionResponseTypeDef
 
@@ -61,12 +59,9 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import BeginTransactionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `transactionId`: `str`
 
+- `transactionId`: `str`
 
 ## ColumnMetadataTypeDef
 
@@ -74,10 +69,8 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ColumnMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arrayBaseColumnType`: `int`
 - `isAutoIncrement`: `bool`
 - `isCaseSensitive`: `bool`
@@ -93,19 +86,15 @@ Optional fields:
 - `type`: `int`
 - `typeName`: `str`
 
-
 ## CommitTransactionResponseTypeDef
 
 ```python
 from mypy_boto3_rds_data.type_defs import CommitTransactionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `transactionStatus`: `str`
 
+- `transactionStatus`: `str`
 
 ## ExecuteSqlResponseTypeDef
 
@@ -113,12 +102,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ExecuteSqlResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `sqlStatementResults`: `List["SqlStatementResultTypeDef"]`
 
+- `sqlStatementResults`:
+  `List`\[[SqlStatementResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#sqlstatementresulttypedef)\]
 
 ## ExecuteStatementResponseTypeDef
 
@@ -126,15 +113,15 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ExecuteStatementResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `columnMetadata`: `List["ColumnMetadataTypeDef"]`
-- `generatedFields`: `List["FieldTypeDef"]`
-- `numberOfRecordsUpdated`: `int`
-- `records`: `List[List["FieldTypeDef"]]`
 
+- `columnMetadata`:
+  `List`\[[ColumnMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#columnmetadatatypedef)\]
+- `generatedFields`:
+  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#fieldtypedef)\]
+- `numberOfRecordsUpdated`: `int`
+- `records`:
+  `List`\[`List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#fieldtypedef)\]\]
 
 ## FieldTypeDef
 
@@ -142,18 +129,16 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import FieldTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arrayValue`: `"ArrayValueTypeDef"`
-- `blobValue`: `Union[bytes, IO[bytes]]`
+
+- `arrayValue`:
+  [ArrayValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#arrayvaluetypedef)
+- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `booleanValue`: `bool`
 - `doubleValue`: `float`
 - `isNull`: `bool`
 - `longValue`: `int`
 - `stringValue`: `str`
-
 
 ## RecordTypeDef
 
@@ -161,12 +146,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import RecordTypeDef
 ```
 
-
-
-
 Optional fields:
-- `values`: `List["ValueTypeDef"]`
 
+- `values`:
+  `List`\[[ValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#valuetypedef)\]
 
 ## ResultFrameTypeDef
 
@@ -174,13 +157,12 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ResultFrameTypeDef
 ```
 
-
-
-
 Optional fields:
-- `records`: `List["RecordTypeDef"]`
-- `resultSetMetadata`: `"ResultSetMetadataTypeDef"`
 
+- `records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#recordtypedef)\]
+- `resultSetMetadata`:
+  [ResultSetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#resultsetmetadatatypedef)
 
 ## ResultSetMetadataTypeDef
 
@@ -188,13 +170,11 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ResultSetMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `columnCount`: `int`
-- `columnMetadata`: `List["ColumnMetadataTypeDef"]`
 
+- `columnCount`: `int`
+- `columnMetadata`:
+  `List`\[[ColumnMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#columnmetadatatypedef)\]
 
 ## ResultSetOptionsTypeDef
 
@@ -202,12 +182,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ResultSetOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `decimalReturnType`: `DecimalReturnType`
 
+- `decimalReturnType`:
+  [DecimalReturnType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/literals.html#decimalreturntype)
 
 ## RollbackTransactionResponseTypeDef
 
@@ -215,12 +193,9 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import RollbackTransactionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `transactionStatus`: `str`
 
+- `transactionStatus`: `str`
 
 ## SqlParameterTypeDef
 
@@ -228,14 +203,13 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import SqlParameterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `typeHint`: `TypeHint`
-- `value`: `"FieldTypeDef"`
 
+- `name`: `str`
+- `typeHint`:
+  [TypeHint](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/literals.html#typehint)
+- `value`:
+  [FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#fieldtypedef)
 
 ## SqlStatementResultTypeDef
 
@@ -243,13 +217,11 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import SqlStatementResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `numberOfRecordsUpdated`: `int`
-- `resultFrame`: `"ResultFrameTypeDef"`
 
+- `numberOfRecordsUpdated`: `int`
+- `resultFrame`:
+  [ResultFrameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#resultframetypedef)
 
 ## StructValueTypeDef
 
@@ -257,12 +229,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import StructValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributes`: `List["ValueTypeDef"]`
 
+- `attributes`:
+  `List`\[[ValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#valuetypedef)\]
 
 ## UpdateResultTypeDef
 
@@ -270,12 +240,10 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import UpdateResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `generatedFields`: `List["FieldTypeDef"]`
 
+- `generatedFields`:
+  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#fieldtypedef)\]
 
 ## ValueTypeDef
 
@@ -283,18 +251,17 @@ Optional fields:
 from mypy_boto3_rds_data.type_defs import ValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arrayValues`: `List["ValueTypeDef"]`
+
+- `arrayValues`:
+  `List`\[[ValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#valuetypedef)\]
 - `bigIntValue`: `int`
 - `bitValue`: `bool`
-- `blobValue`: `Union[bytes, IO[bytes]]`
+- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `doubleValue`: `float`
 - `intValue`: `int`
 - `isNull`: `bool`
 - `realValue`: `float`
 - `stringValue`: `str`
-- `structValue`: `"StructValueTypeDef"`
-
+- `structValue`:
+  [StructValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#structvaluetypedef)

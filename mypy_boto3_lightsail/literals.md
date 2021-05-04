@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Lightsail](./README.md) > Literals
 
-Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
-type annotations stubs module [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+Auto-generated documentation for
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+type annotations stubs module
+[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [Literals for boto3 Lightsail module](#literals-for-boto3-lightsail-module)
   - [AccessDirection](#accessdirection)

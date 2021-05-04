@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Cloud9](./README.md) > Cloud9Client
 
-Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+Auto-generated documentation for
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+type annotations stubs module
+[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Cloud9Client for boto3 Cloud9 module](#cloud9client-for-boto3-cloud9-module)
   - [Cloud9Client](#cloud9client)
@@ -39,12 +41,13 @@ def get_cloud9_client() -> Cloud9Client:
     return boto3.client("cloud9")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
+Boto3 documentation:
+[Cloud9.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloud9.client import Exceptions
@@ -52,7 +55,6 @@ from mypy_boto3_cloud9.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -66,253 +68,257 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloud9").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate]
+Boto3 documentation:
+[Cloud9.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_environment_ec2
 
 Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2]
+Boto3 documentation:
+[Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
 
-```python
-def create_environment_ec2(
-    self,
-    name: str,
-    instanceType: str,
-    description: str = None,
-    clientRequestToken: str = None,
-    subnetId: str = None,
-    imageId: str = None,
-    automaticStopTimeMinutes: int = None,
-    ownerArn: str = None,
-    tags: List["TagTypeDef"] = None,
-    connectionType: ConnectionType = None
-) -> CreateEnvironmentEC2ResultTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `instanceType`: `str` *(required)*
+- `description`: `str`
+- `clientRequestToken`: `str`
+- `subnetId`: `str`
+- `imageId`: `str`
+- `automaticStopTimeMinutes`: `int`
+- `ownerArn`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#tagtypedef)\]
+- `connectionType`:
+  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#connectiontype)
+
+Returns
+[CreateEnvironmentEC2ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#createenvironmentec2resulttypedef).
 
 ### create_environment_membership
 
-Type annotations for `boto3.client("cloud9").create_environment_membership` method.
+Type annotations for `boto3.client("cloud9").create_environment_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership]
+Boto3 documentation:
+[Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
 
-```python
-def create_environment_membership(
-    self,
-    environmentId: str,
-    userArn: str,
-    permissions: MemberPermissions
-) -> CreateEnvironmentMembershipResultTypeDef:
-    pass
-```
+Arguments:
+
+- `environmentId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+- `permissions`:
+  [MemberPermissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#memberpermissions)
+  *(required)*
+
+Returns
+[CreateEnvironmentMembershipResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#createenvironmentmembershipresulttypedef).
 
 ### delete_environment
 
 Type annotations for `boto3.client("cloud9").delete_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment]
+Boto3 documentation:
+[Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
 
-```python
-def delete_environment(
-    self,
-    environmentId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `environmentId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_environment_membership
 
-Type annotations for `boto3.client("cloud9").delete_environment_membership` method.
+Type annotations for `boto3.client("cloud9").delete_environment_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership]
+Boto3 documentation:
+[Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
 
-```python
-def delete_environment_membership(
-    self,
-    environmentId: str,
-    userArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `environmentId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_environment_memberships
 
-Type annotations for `boto3.client("cloud9").describe_environment_memberships` method.
+Type annotations for `boto3.client("cloud9").describe_environment_memberships`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships]
+Boto3 documentation:
+[Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
 
-```python
-def describe_environment_memberships(
-    self,
-    userArn: str = None,
-    environmentId: str = None,
-    permissions: List[Permissions] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeEnvironmentMembershipsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `userArn`: `str`
+- `environmentId`: `str`
+- `permissions`:
+  `List`\[[Permissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#permissions)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeEnvironmentMembershipsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentmembershipsresulttypedef).
 
 ### describe_environment_status
 
-Type annotations for `boto3.client("cloud9").describe_environment_status` method.
+Type annotations for `boto3.client("cloud9").describe_environment_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status]
+Boto3 documentation:
+[Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
-```python
-def describe_environment_status(
-    self,
-    environmentId: str
-) -> DescribeEnvironmentStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `environmentId`: `str` *(required)*
+
+Returns
+[DescribeEnvironmentStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentstatusresulttypedef).
 
 ### describe_environments
 
 Type annotations for `boto3.client("cloud9").describe_environments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments]
+Boto3 documentation:
+[Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
-```python
-def describe_environments(
-    self,
-    environmentIds: List[str]
-) -> DescribeEnvironmentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `environmentIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentsresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("cloud9").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url]
+Boto3 documentation:
+[Cloud9.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_environments
 
 Type annotations for `boto3.client("cloud9").list_environments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments]
+Boto3 documentation:
+[Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
 
-```python
-def list_environments(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListEnvironmentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#listenvironmentsresulttypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource]
+Boto3 documentation:
+[Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("cloud9").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource]
+Boto3 documentation:
+[Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("cloud9").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource]
+Boto3 documentation:
+[Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment
 
 Type annotations for `boto3.client("cloud9").update_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment]
+Boto3 documentation:
+[Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
 
-```python
-def update_environment(
-    self,
-    environmentId: str,
-    name: str = None,
-    description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `environmentId`: `str` *(required)*
+- `name`: `str`
+- `description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment_membership
 
-Type annotations for `boto3.client("cloud9").update_environment_membership` method.
+Type annotations for `boto3.client("cloud9").update_environment_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership]
+Boto3 documentation:
+[Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
 
-```python
-def update_environment_membership(
-    self,
-    environmentId: str,
-    userArn: str,
-    permissions: MemberPermissions
-) -> UpdateEnvironmentMembershipResultTypeDef:
-    pass
-```
+Arguments:
 
+- `environmentId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+- `permissions`:
+  [MemberPermissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#memberpermissions)
+  *(required)*
 
+Returns
+[UpdateEnvironmentMembershipResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#updateenvironmentmembershipresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloud9").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloud9").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_environment_memberships")` -> [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
-- `client.get_paginator("list_environments")` -> [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
-
-
+- `client.get_paginator("describe_environment_memberships")` ->
+  [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
+- `client.get_paginator("list_environments")` ->
+  [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)

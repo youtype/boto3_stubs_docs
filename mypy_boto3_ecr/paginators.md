@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECR](./README.md) > Paginators
 
-Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+Auto-generated documentation for
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+type annotations stubs module
+[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Paginators for boto3 ECR module](#paginators-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginator](#describeimagescanfindingspaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-bot
 
 ## DescribeImageScanFindingsPaginator
 
-Type annotations for `boto3.client("ecr").get_paginator("describe_image_scan_findings")`.
+Type annotations for
+`boto3.client("ecr").get_paginator("describe_image_scan_findings")`.
 
 Can be used directly:
 
@@ -25,19 +28,22 @@ def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPag
     return boto3.client("ecr").get_paginator("describe_image_scan_findings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
+Boto3 documentation:
+[ECR.Paginator.DescribeImageScanFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
 
-```python
-class DescribeImageScanFindingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        imageId: "ImageIdentifierTypeDef",
-        registryId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeImageScanFindingsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeImageScanFindingsPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+  *(required)*
+- `registryId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#paginatorconfigtypedef)
+
+`DescribeImageScanFindingsPaginator.paginate` returns
+`Iterator`\[[DescribeImageScanFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagescanfindingsresponsetypedef)\].
+
 ## DescribeImagesPaginator
 
 Type annotations for `boto3.client("ecr").get_paginator("describe_images")`.
@@ -51,23 +57,27 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
     return boto3.client("ecr").get_paginator("describe_images")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
+Boto3 documentation:
+[ECR.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
 
-```python
-class DescribeImagesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        registryId: str = None,
-        imageIds: List["ImageIdentifierTypeDef"] = None,
-        filter: DescribeImagesFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeImagesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeImagesPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `filter`:
+  [DescribeImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#paginatorconfigtypedef)
+
+`DescribeImagesPaginator.paginate` returns
+`Iterator`\[[DescribeImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesresponsetypedef)\].
+
 ## DescribeRepositoriesPaginator
 
-Type annotations for `boto3.client("ecr").get_paginator("describe_repositories")`.
+Type annotations for
+`boto3.client("ecr").get_paginator("describe_repositories")`.
 
 Can be used directly:
 
@@ -78,21 +88,23 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return boto3.client("ecr").get_paginator("describe_repositories")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
+Boto3 documentation:
+[ECR.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
 
-```python
-class DescribeRepositoriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        registryId: str = None,
-        repositoryNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRepositoriesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeRepositoriesPaginator.paginate` method:
+
+- `registryId`: `str`
+- `repositoryNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRepositoriesPaginator.paginate` returns
+`Iterator`\[[DescribeRepositoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describerepositoriesresponsetypedef)\].
+
 ## GetLifecyclePolicyPreviewPaginator
 
-Type annotations for `boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")`.
+Type annotations for
+`boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")`.
 
 Can be used directly:
 
@@ -103,20 +115,23 @@ def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPag
     return boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
+Boto3 documentation:
+[ECR.Paginator.GetLifecyclePolicyPreview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
 
-```python
-class GetLifecyclePolicyPreviewPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        registryId: str = None,
-        imageIds: List["ImageIdentifierTypeDef"] = None,
-        filter: LifecyclePolicyPreviewFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetLifecyclePolicyPreviewResponseTypeDef]:
-        pass
-```
+Arguments for `GetLifecyclePolicyPreviewPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `filter`:
+  [LifecyclePolicyPreviewFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#paginatorconfigtypedef)
+
+`GetLifecyclePolicyPreviewPaginator.paginate` returns
+`Iterator`\[[GetLifecyclePolicyPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getlifecyclepolicypreviewresponsetypedef)\].
+
 ## ListImagesPaginator
 
 Type annotations for `boto3.client("ecr").get_paginator("list_images")`.
@@ -130,16 +145,17 @@ def get_list_images_paginator() -> ListImagesPaginator:
     return boto3.client("ecr").get_paginator("list_images")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
+Boto3 documentation:
+[ECR.Paginator.ListImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
 
-```python
-class ListImagesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        registryId: str = None,
-        filter: ListImagesFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListImagesResponseTypeDef]:
-        pass
-```
+Arguments for `ListImagesPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `filter`:
+  [ListImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#paginatorconfigtypedef)
+
+`ListImagesPaginator.paginate` returns
+`Iterator`\[[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesresponsetypedef)\].

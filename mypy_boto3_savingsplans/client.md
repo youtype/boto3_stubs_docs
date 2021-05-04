@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SavingsPlans](./README.md) > SavingsPlansClient
 
-Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+Auto-generated documentation for
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+type annotations stubs module
+[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [SavingsPlansClient for boto3 SavingsPlans module](#savingsplansclient-for-boto3-savingsplans-module)
   - [SavingsPlansClient](#savingsplansclient)
@@ -34,12 +36,13 @@ def get_savingsplans_client() -> SavingsPlansClient:
     return boto3.client("savingsplans")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
+Boto3 documentation:
+[SavingsPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_savingsplans.client import Exceptions
@@ -47,7 +50,6 @@ from mypy_boto3_savingsplans.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -57,202 +59,212 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("savingsplans").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate]
+Boto3 documentation:
+[SavingsPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_savings_plan
 
 Type annotations for `boto3.client("savingsplans").create_savings_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan]
+Boto3 documentation:
+[SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
 
-```python
-def create_savings_plan(
-    self,
-    savingsPlanOfferingId: str,
-    commitment: str,
-    upfrontPaymentAmount: str = None,
-    purchaseTime: datetime = None,
-    clientToken: str = None,
-    tags: Dict[str, str] = None
-) -> CreateSavingsPlanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `savingsPlanOfferingId`: `str` *(required)*
+- `commitment`: `str` *(required)*
+- `upfrontPaymentAmount`: `str`
+- `purchaseTime`: `datetime`
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateSavingsPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#createsavingsplanresponsetypedef).
 
 ### delete_queued_savings_plan
 
-Type annotations for `boto3.client("savingsplans").delete_queued_savings_plan` method.
+Type annotations for `boto3.client("savingsplans").delete_queued_savings_plan`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan]
+Boto3 documentation:
+[SavingsPlans.Client.delete_queued_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
 
-```python
-def delete_queued_savings_plan(
-    self,
-    savingsPlanId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `savingsPlanId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_savings_plan_rates
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plan_rates` method.
+Type annotations for `boto3.client("savingsplans").describe_savings_plan_rates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates]
+Boto3 documentation:
+[SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
 
-```python
-def describe_savings_plan_rates(
-    self,
-    savingsPlanId: str,
-    filters: List[SavingsPlanRateFilterTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeSavingsPlanRatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `savingsPlanId`: `str` *(required)*
+- `filters`:
+  `List`\[[SavingsPlanRateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanratefiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeSavingsPlanRatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplanratesresponsetypedef).
 
 ### describe_savings_plans
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plans` method.
+Type annotations for `boto3.client("savingsplans").describe_savings_plans`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans]
+Boto3 documentation:
+[SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
 
-```python
-def describe_savings_plans(
-    self,
-    savingsPlanArns: List[str] = None,
-    savingsPlanIds: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    states: List[SavingsPlanState] = None,
-    filters: List[SavingsPlanFilterTypeDef] = None
-) -> DescribeSavingsPlansResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `savingsPlanArns`: `List`\[`str`\]
+- `savingsPlanIds`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `states`:
+  `List`\[[SavingsPlanState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanstate)\]
+- `filters`:
+  `List`\[[SavingsPlanFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanfiltertypedef)\]
+
+Returns
+[DescribeSavingsPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansresponsetypedef).
 
 ### describe_savings_plans_offering_rates
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
+Type annotations for
+`boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates]
+Boto3 documentation:
+[SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
 
-```python
-def describe_savings_plans_offering_rates(
-    self,
-    savingsPlanOfferingIds: List[str] = None,
-    savingsPlanPaymentOptions: List[SavingsPlanPaymentOption] = None,
-    savingsPlanTypes: List[SavingsPlanType] = None,
-    products: List[SavingsPlanProductType] = None,
-    serviceCodes: List[SavingsPlanRateServiceCode] = None,
-    usageTypes: List[str] = None,
-    operations: List[str] = None,
-    filters: List[SavingsPlanOfferingRateFilterElementTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeSavingsPlansOfferingRatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `savingsPlanOfferingIds`: `List`\[`str`\]
+- `savingsPlanPaymentOptions`:
+  `List`\[[SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)\]
+- `savingsPlanTypes`:
+  `List`\[[SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)\]
+- `products`:
+  `List`\[[SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)\]
+- `serviceCodes`:
+  `List`\[[SavingsPlanRateServiceCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateservicecode)\]
+- `usageTypes`: `List`\[`str`\]
+- `operations`: `List`\[`str`\]
+- `filters`:
+  `List`\[[SavingsPlanOfferingRateFilterElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingratefilterelementtypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeSavingsPlansOfferingRatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansofferingratesresponsetypedef).
 
 ### describe_savings_plans_offerings
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plans_offerings` method.
+Type annotations for
+`boto3.client("savingsplans").describe_savings_plans_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings]
+Boto3 documentation:
+[SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
 
-```python
-def describe_savings_plans_offerings(
-    self,
-    offeringIds: List[str] = None,
-    paymentOptions: List[SavingsPlanPaymentOption] = None,
-    productType: SavingsPlanProductType = None,
-    planTypes: List[SavingsPlanType] = None,
-    durations: List[int] = None,
-    currencies: List[CurrencyCode] = None,
-    descriptions: List[str] = None,
-    serviceCodes: List[str] = None,
-    usageTypes: List[str] = None,
-    operations: List[str] = None,
-    filters: List[SavingsPlanOfferingFilterElementTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeSavingsPlansOfferingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `offeringIds`: `List`\[`str`\]
+- `paymentOptions`:
+  `List`\[[SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)\]
+- `productType`:
+  [SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)
+- `planTypes`:
+  `List`\[[SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)\]
+- `durations`: `List`\[`int`\]
+- `currencies`:
+  `List`\[[CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)\]
+- `descriptions`: `List`\[`str`\]
+- `serviceCodes`: `List`\[`str`\]
+- `usageTypes`: `List`\[`str`\]
+- `operations`: `List`\[`str`\]
+- `filters`:
+  `List`\[[SavingsPlanOfferingFilterElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingfilterelementtypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeSavingsPlansOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansofferingsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("savingsplans").generate_presigned_url` method.
+Type annotations for `boto3.client("savingsplans").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url]
+Boto3 documentation:
+[SavingsPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("savingsplans").list_tags_for_resource` method.
+Type annotations for `boto3.client("savingsplans").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource]
+Boto3 documentation:
+[SavingsPlans.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("savingsplans").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource]
+Boto3 documentation:
+[SavingsPlans.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("savingsplans").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource]
+Boto3 documentation:
+[SavingsPlans.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MTurk](./README.md) > MTurkClient
 
-Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+Auto-generated documentation for
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+type annotations stubs module
+[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [MTurkClient for boto3 MTurk module](#mturkclient-for-boto3-mturk-module)
   - [MTurkClient](#mturkclient)
@@ -65,12 +67,13 @@ def get_mturk_client() -> MTurkClient:
     return boto3.client("mturk")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
+Boto3 documentation:
+[MTurk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mturk.client import Exceptions
@@ -79,709 +82,721 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.RequestError`
 - `Exceptions.ServiceFault`
 
-
 ## Methods
-
 
 ### accept_qualification_request
 
-Type annotations for `boto3.client("mturk").accept_qualification_request` method.
+Type annotations for `boto3.client("mturk").accept_qualification_request`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request]
+Boto3 documentation:
+[MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
 
-```python
-def accept_qualification_request(
-    self,
-    QualificationRequestId: str,
-    IntegerValue: int = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QualificationRequestId`: `str` *(required)*
+- `IntegerValue`: `int`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### approve_assignment
 
 Type annotations for `boto3.client("mturk").approve_assignment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment]
+Boto3 documentation:
+[MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment)
 
-```python
-def approve_assignment(
-    self,
-    AssignmentId: str,
-    RequesterFeedback: str = None,
-    OverrideRejection: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AssignmentId`: `str` *(required)*
+- `RequesterFeedback`: `str`
+- `OverrideRejection`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_qualification_with_worker
 
-Type annotations for `boto3.client("mturk").associate_qualification_with_worker` method.
+Type annotations for
+`boto3.client("mturk").associate_qualification_with_worker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker]
+Boto3 documentation:
+[MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
 
-```python
-def associate_qualification_with_worker(
-    self,
-    QualificationTypeId: str,
-    WorkerId: str,
-    IntegerValue: int = None,
-    SendNotification: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+- `WorkerId`: `str` *(required)*
+- `IntegerValue`: `int`
+- `SendNotification`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("mturk").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate]
+Boto3 documentation:
+[MTurk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_additional_assignments_for_hit
 
-Type annotations for `boto3.client("mturk").create_additional_assignments_for_hit` method.
+Type annotations for
+`boto3.client("mturk").create_additional_assignments_for_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit]
+Boto3 documentation:
+[MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
 
-```python
-def create_additional_assignments_for_hit(
-    self,
-    HITId: str,
-    NumberOfAdditionalAssignments: int,
-    UniqueRequestToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `NumberOfAdditionalAssignments`: `int` *(required)*
+- `UniqueRequestToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_hit
 
 Type annotations for `boto3.client("mturk").create_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit]
+Boto3 documentation:
+[MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit)
 
-```python
-def create_hit(
-    self,
-    LifetimeInSeconds: int,
-    AssignmentDurationInSeconds: int,
-    Reward: str,
-    Title: str,
-    Description: str,
-    MaxAssignments: int = None,
-    AutoApprovalDelayInSeconds: int = None,
-    Keywords: str = None,
-    Question: str = None,
-    RequesterAnnotation: str = None,
-    QualificationRequirements: List["QualificationRequirementTypeDef"] = None,
-    UniqueRequestToken: str = None,
-    AssignmentReviewPolicy: "ReviewPolicyTypeDef" = None,
-    HITReviewPolicy: "ReviewPolicyTypeDef" = None,
-    HITLayoutId: str = None,
-    HITLayoutParameters: List[HITLayoutParameterTypeDef] = None
-) -> CreateHITResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LifetimeInSeconds`: `int` *(required)*
+- `AssignmentDurationInSeconds`: `int` *(required)*
+- `Reward`: `str` *(required)*
+- `Title`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `MaxAssignments`: `int`
+- `AutoApprovalDelayInSeconds`: `int`
+- `Keywords`: `str`
+- `Question`: `str`
+- `RequesterAnnotation`: `str`
+- `QualificationRequirements`:
+  `List`\[[QualificationRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#qualificationrequirementtypedef)\]
+- `UniqueRequestToken`: `str`
+- `AssignmentReviewPolicy`:
+  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+- `HITReviewPolicy`:
+  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+- `HITLayoutId`: `str`
+- `HITLayoutParameters`:
+  `List`\[[HITLayoutParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#hitlayoutparametertypedef)\]
+
+Returns
+[CreateHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhitresponsetypedef).
 
 ### create_hit_type
 
 Type annotations for `boto3.client("mturk").create_hit_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type]
+Boto3 documentation:
+[MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type)
 
-```python
-def create_hit_type(
-    self,
-    AssignmentDurationInSeconds: int,
-    Reward: str,
-    Title: str,
-    Description: str,
-    AutoApprovalDelayInSeconds: int = None,
-    Keywords: str = None,
-    QualificationRequirements: List["QualificationRequirementTypeDef"] = None
-) -> CreateHITTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssignmentDurationInSeconds`: `int` *(required)*
+- `Reward`: `str` *(required)*
+- `Title`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `AutoApprovalDelayInSeconds`: `int`
+- `Keywords`: `str`
+- `QualificationRequirements`:
+  `List`\[[QualificationRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#qualificationrequirementtypedef)\]
+
+Returns
+[CreateHITTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhittyperesponsetypedef).
 
 ### create_hit_with_hit_type
 
 Type annotations for `boto3.client("mturk").create_hit_with_hit_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type]
+Boto3 documentation:
+[MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
 
-```python
-def create_hit_with_hit_type(
-    self,
-    HITTypeId: str,
-    LifetimeInSeconds: int,
-    MaxAssignments: int = None,
-    Question: str = None,
-    RequesterAnnotation: str = None,
-    UniqueRequestToken: str = None,
-    AssignmentReviewPolicy: "ReviewPolicyTypeDef" = None,
-    HITReviewPolicy: "ReviewPolicyTypeDef" = None,
-    HITLayoutId: str = None,
-    HITLayoutParameters: List[HITLayoutParameterTypeDef] = None
-) -> CreateHITWithHITTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITTypeId`: `str` *(required)*
+- `LifetimeInSeconds`: `int` *(required)*
+- `MaxAssignments`: `int`
+- `Question`: `str`
+- `RequesterAnnotation`: `str`
+- `UniqueRequestToken`: `str`
+- `AssignmentReviewPolicy`:
+  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+- `HITReviewPolicy`:
+  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+- `HITLayoutId`: `str`
+- `HITLayoutParameters`:
+  `List`\[[HITLayoutParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#hitlayoutparametertypedef)\]
+
+Returns
+[CreateHITWithHITTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhitwithhittyperesponsetypedef).
 
 ### create_qualification_type
 
 Type annotations for `boto3.client("mturk").create_qualification_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type]
+Boto3 documentation:
+[MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type)
 
-```python
-def create_qualification_type(
-    self,
-    Name: str,
-    Description: str,
-    QualificationTypeStatus: QualificationTypeStatus,
-    Keywords: str = None,
-    RetryDelayInSeconds: int = None,
-    Test: str = None,
-    AnswerKey: str = None,
-    TestDurationInSeconds: int = None,
-    AutoGranted: bool = None,
-    AutoGrantedValue: int = None
-) -> CreateQualificationTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `QualificationTypeStatus`:
+  [QualificationTypeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationtypestatus)
+  *(required)*
+- `Keywords`: `str`
+- `RetryDelayInSeconds`: `int`
+- `Test`: `str`
+- `AnswerKey`: `str`
+- `TestDurationInSeconds`: `int`
+- `AutoGranted`: `bool`
+- `AutoGrantedValue`: `int`
+
+Returns
+[CreateQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createqualificationtyperesponsetypedef).
 
 ### create_worker_block
 
 Type annotations for `boto3.client("mturk").create_worker_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block]
+Boto3 documentation:
+[MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block)
 
-```python
-def create_worker_block(
-    self,
-    WorkerId: str,
-    Reason: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkerId`: `str` *(required)*
+- `Reason`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_hit
 
 Type annotations for `boto3.client("mturk").delete_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit]
+Boto3 documentation:
+[MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit)
 
-```python
-def delete_hit(
-    self,
-    HITId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_qualification_type
 
 Type annotations for `boto3.client("mturk").delete_qualification_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type]
+Boto3 documentation:
+[MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
 
-```python
-def delete_qualification_type(
-    self,
-    QualificationTypeId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_worker_block
 
 Type annotations for `boto3.client("mturk").delete_worker_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block]
+Boto3 documentation:
+[MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block)
 
-```python
-def delete_worker_block(
-    self,
-    WorkerId: str,
-    Reason: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkerId`: `str` *(required)*
+- `Reason`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_qualification_from_worker
 
-Type annotations for `boto3.client("mturk").disassociate_qualification_from_worker` method.
+Type annotations for
+`boto3.client("mturk").disassociate_qualification_from_worker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker]
+Boto3 documentation:
+[MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
 
-```python
-def disassociate_qualification_from_worker(
-    self,
-    WorkerId: str,
-    QualificationTypeId: str,
-    Reason: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkerId`: `str` *(required)*
+- `QualificationTypeId`: `str` *(required)*
+- `Reason`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mturk").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url]
+Boto3 documentation:
+[MTurk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_balance
 
 Type annotations for `boto3.client("mturk").get_account_balance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance]
+Boto3 documentation:
+[MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance)
 
-```python
-def get_account_balance(
-    self
-) -> GetAccountBalanceResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountBalanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getaccountbalanceresponsetypedef).
 
 ### get_assignment
 
 Type annotations for `boto3.client("mturk").get_assignment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment]
+Boto3 documentation:
+[MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment)
 
-```python
-def get_assignment(
-    self,
-    AssignmentId: str
-) -> GetAssignmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssignmentId`: `str` *(required)*
+
+Returns
+[GetAssignmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getassignmentresponsetypedef).
 
 ### get_file_upload_url
 
 Type annotations for `boto3.client("mturk").get_file_upload_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url]
+Boto3 documentation:
+[MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
 
-```python
-def get_file_upload_url(
-    self,
-    AssignmentId: str,
-    QuestionIdentifier: str
-) -> GetFileUploadURLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssignmentId`: `str` *(required)*
+- `QuestionIdentifier`: `str` *(required)*
+
+Returns
+[GetFileUploadURLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getfileuploadurlresponsetypedef).
 
 ### get_hit
 
 Type annotations for `boto3.client("mturk").get_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit]
+Boto3 documentation:
+[MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit)
 
-```python
-def get_hit(
-    self,
-    HITId: str
-) -> GetHITResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+
+Returns
+[GetHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#gethitresponsetypedef).
 
 ### get_qualification_score
 
 Type annotations for `boto3.client("mturk").get_qualification_score` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score]
+Boto3 documentation:
+[MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score)
 
-```python
-def get_qualification_score(
-    self,
-    QualificationTypeId: str,
-    WorkerId: str
-) -> GetQualificationScoreResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+- `WorkerId`: `str` *(required)*
+
+Returns
+[GetQualificationScoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getqualificationscoreresponsetypedef).
 
 ### get_qualification_type
 
 Type annotations for `boto3.client("mturk").get_qualification_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type]
+Boto3 documentation:
+[MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type)
 
-```python
-def get_qualification_type(
-    self,
-    QualificationTypeId: str
-) -> GetQualificationTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+
+Returns
+[GetQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getqualificationtyperesponsetypedef).
 
 ### list_assignments_for_hit
 
 Type annotations for `boto3.client("mturk").list_assignments_for_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit]
+Boto3 documentation:
+[MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
 
-```python
-def list_assignments_for_hit(
-    self,
-    HITId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    AssignmentStatuses: List[AssignmentStatus] = None
-) -> ListAssignmentsForHITResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AssignmentStatuses`:
+  `List`\[[AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#assignmentstatus)\]
+
+Returns
+[ListAssignmentsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listassignmentsforhitresponsetypedef).
 
 ### list_bonus_payments
 
 Type annotations for `boto3.client("mturk").list_bonus_payments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments]
+Boto3 documentation:
+[MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
 
-```python
-def list_bonus_payments(
-    self,
-    HITId: str = None,
-    AssignmentId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListBonusPaymentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITId`: `str`
+- `AssignmentId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListBonusPaymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listbonuspaymentsresponsetypedef).
 
 ### list_hits
 
 Type annotations for `boto3.client("mturk").list_hits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits]
+Boto3 documentation:
+[MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits)
 
-```python
-def list_hits(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHITsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsresponsetypedef).
 
 ### list_hits_for_qualification_type
 
-Type annotations for `boto3.client("mturk").list_hits_for_qualification_type` method.
+Type annotations for `boto3.client("mturk").list_hits_for_qualification_type`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type]
+Boto3 documentation:
+[MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
 
-```python
-def list_hits_for_qualification_type(
-    self,
-    QualificationTypeId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHITsForQualificationTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHITsForQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsforqualificationtyperesponsetypedef).
 
 ### list_qualification_requests
 
-Type annotations for `boto3.client("mturk").list_qualification_requests` method.
+Type annotations for `boto3.client("mturk").list_qualification_requests`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests]
+Boto3 documentation:
+[MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
 
-```python
-def list_qualification_requests(
-    self,
-    QualificationTypeId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListQualificationRequestsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListQualificationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationrequestsresponsetypedef).
 
 ### list_qualification_types
 
 Type annotations for `boto3.client("mturk").list_qualification_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types]
+Boto3 documentation:
+[MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types)
 
-```python
-def list_qualification_types(
-    self,
-    MustBeRequestable: bool,
-    Query: str = None,
-    MustBeOwnedByCaller: bool = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListQualificationTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MustBeRequestable`: `bool` *(required)*
+- `Query`: `str`
+- `MustBeOwnedByCaller`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListQualificationTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationtypesresponsetypedef).
 
 ### list_review_policy_results_for_hit
 
-Type annotations for `boto3.client("mturk").list_review_policy_results_for_hit` method.
+Type annotations for `boto3.client("mturk").list_review_policy_results_for_hit`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit]
+Boto3 documentation:
+[MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
 
-```python
-def list_review_policy_results_for_hit(
-    self,
-    HITId: str,
-    PolicyLevels: List[ReviewPolicyLevel] = None,
-    RetrieveActions: bool = None,
-    RetrieveResults: bool = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListReviewPolicyResultsForHITResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `PolicyLevels`:
+  `List`\[[ReviewPolicyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewpolicylevel)\]
+- `RetrieveActions`: `bool`
+- `RetrieveResults`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReviewPolicyResultsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewpolicyresultsforhitresponsetypedef).
 
 ### list_reviewable_hits
 
 Type annotations for `boto3.client("mturk").list_reviewable_hits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits]
+Boto3 documentation:
+[MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
 
-```python
-def list_reviewable_hits(
-    self,
-    HITTypeId: str = None,
-    Status: ReviewableHITStatus = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListReviewableHITsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HITTypeId`: `str`
+- `Status`:
+  [ReviewableHITStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewablehitstatus)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReviewableHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewablehitsresponsetypedef).
 
 ### list_worker_blocks
 
 Type annotations for `boto3.client("mturk").list_worker_blocks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks]
+Boto3 documentation:
+[MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
 
-```python
-def list_worker_blocks(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkerBlocksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkerBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerblocksresponsetypedef).
 
 ### list_workers_with_qualification_type
 
-Type annotations for `boto3.client("mturk").list_workers_with_qualification_type` method.
+Type annotations for
+`boto3.client("mturk").list_workers_with_qualification_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type]
+Boto3 documentation:
+[MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
 
-```python
-def list_workers_with_qualification_type(
-    self,
-    QualificationTypeId: str,
-    Status: QualificationStatus = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkersWithQualificationTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QualificationTypeId`: `str` *(required)*
+- `Status`:
+  [QualificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationstatus)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkersWithQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerswithqualificationtyperesponsetypedef).
 
 ### notify_workers
 
 Type annotations for `boto3.client("mturk").notify_workers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers]
+Boto3 documentation:
+[MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers)
 
-```python
-def notify_workers(
-    self,
-    Subject: str,
-    MessageText: str,
-    WorkerIds: List[str]
-) -> NotifyWorkersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Subject`: `str` *(required)*
+- `MessageText`: `str` *(required)*
+- `WorkerIds`: `List`\[`str`\] *(required)*
+
+Returns
+[NotifyWorkersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notifyworkersresponsetypedef).
 
 ### reject_assignment
 
 Type annotations for `boto3.client("mturk").reject_assignment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment]
+Boto3 documentation:
+[MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment)
 
-```python
-def reject_assignment(
-    self,
-    AssignmentId: str,
-    RequesterFeedback: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AssignmentId`: `str` *(required)*
+- `RequesterFeedback`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reject_qualification_request
 
-Type annotations for `boto3.client("mturk").reject_qualification_request` method.
+Type annotations for `boto3.client("mturk").reject_qualification_request`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request]
+Boto3 documentation:
+[MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
 
-```python
-def reject_qualification_request(
-    self,
-    QualificationRequestId: str,
-    Reason: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QualificationRequestId`: `str` *(required)*
+- `Reason`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_bonus
 
 Type annotations for `boto3.client("mturk").send_bonus` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus]
+Boto3 documentation:
+[MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus)
 
-```python
-def send_bonus(
-    self,
-    WorkerId: str,
-    BonusAmount: str,
-    AssignmentId: str,
-    Reason: str,
-    UniqueRequestToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkerId`: `str` *(required)*
+- `BonusAmount`: `str` *(required)*
+- `AssignmentId`: `str` *(required)*
+- `Reason`: `str` *(required)*
+- `UniqueRequestToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_test_event_notification
 
-Type annotations for `boto3.client("mturk").send_test_event_notification` method.
+Type annotations for `boto3.client("mturk").send_test_event_notification`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification]
+Boto3 documentation:
+[MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
 
-```python
-def send_test_event_notification(
-    self,
-    Notification: NotificationSpecificationTypeDef,
-    TestEventType: EventType
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Notification`:
+  [NotificationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notificationspecificationtypedef)
+  *(required)*
+- `TestEventType`:
+  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#eventtype)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_expiration_for_hit
 
 Type annotations for `boto3.client("mturk").update_expiration_for_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit]
+Boto3 documentation:
+[MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
 
-```python
-def update_expiration_for_hit(
-    self,
-    HITId: str,
-    ExpireAt: datetime
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `ExpireAt`: `datetime` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_hit_review_status
 
 Type annotations for `boto3.client("mturk").update_hit_review_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status]
+Boto3 documentation:
+[MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
 
-```python
-def update_hit_review_status(
-    self,
-    HITId: str,
-    Revert: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `Revert`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_hit_type_of_hit
 
 Type annotations for `boto3.client("mturk").update_hit_type_of_hit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit]
+Boto3 documentation:
+[MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
 
-```python
-def update_hit_type_of_hit(
-    self,
-    HITId: str,
-    HITTypeId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITId`: `str` *(required)*
+- `HITTypeId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_notification_settings
 
-Type annotations for `boto3.client("mturk").update_notification_settings` method.
+Type annotations for `boto3.client("mturk").update_notification_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings]
+Boto3 documentation:
+[MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings)
 
-```python
-def update_notification_settings(
-    self,
-    HITTypeId: str,
-    Notification: NotificationSpecificationTypeDef = None,
-    Active: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HITTypeId`: `str` *(required)*
+- `Notification`:
+  [NotificationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notificationspecificationtypedef)
+- `Active`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_qualification_type
 
 Type annotations for `boto3.client("mturk").update_qualification_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type]
+Boto3 documentation:
+[MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type)
 
-```python
-def update_qualification_type(
-    self,
-    QualificationTypeId: str,
-    Description: str = None,
-    QualificationTypeStatus: QualificationTypeStatus = None,
-    Test: str = None,
-    AnswerKey: str = None,
-    TestDurationInSeconds: int = None,
-    RetryDelayInSeconds: int = None,
-    AutoGranted: bool = None,
-    AutoGrantedValue: int = None
-) -> UpdateQualificationTypeResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `QualificationTypeId`: `str` *(required)*
+- `Description`: `str`
+- `QualificationTypeStatus`:
+  [QualificationTypeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationtypestatus)
+- `Test`: `str`
+- `AnswerKey`: `str`
+- `TestDurationInSeconds`: `int`
+- `RetryDelayInSeconds`: `int`
+- `AutoGranted`: `bool`
+- `AutoGrantedValue`: `int`
 
+Returns
+[UpdateQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#updatequalificationtyperesponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mturk").get_paginator` method with overloads.
+Type annotations for `boto3.client("mturk").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_assignments_for_hit")` -> [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
-- `client.get_paginator("list_bonus_payments")` -> [ListBonusPaymentsPaginator](./paginators.md#listbonuspaymentspaginator)
-- `client.get_paginator("list_hits")` -> [ListHITsPaginator](./paginators.md#listhitspaginator)
-- `client.get_paginator("list_hits_for_qualification_type")` -> [ListHITsForQualificationTypePaginator](./paginators.md#listhitsforqualificationtypepaginator)
-- `client.get_paginator("list_qualification_requests")` -> [ListQualificationRequestsPaginator](./paginators.md#listqualificationrequestspaginator)
-- `client.get_paginator("list_qualification_types")` -> [ListQualificationTypesPaginator](./paginators.md#listqualificationtypespaginator)
-- `client.get_paginator("list_reviewable_hits")` -> [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
-- `client.get_paginator("list_worker_blocks")` -> [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
-- `client.get_paginator("list_workers_with_qualification_type")` -> [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
-
-
+- `client.get_paginator("list_assignments_for_hit")` ->
+  [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
+- `client.get_paginator("list_bonus_payments")` ->
+  [ListBonusPaymentsPaginator](./paginators.md#listbonuspaymentspaginator)
+- `client.get_paginator("list_hits")` ->
+  [ListHITsPaginator](./paginators.md#listhitspaginator)
+- `client.get_paginator("list_hits_for_qualification_type")` ->
+  [ListHITsForQualificationTypePaginator](./paginators.md#listhitsforqualificationtypepaginator)
+- `client.get_paginator("list_qualification_requests")` ->
+  [ListQualificationRequestsPaginator](./paginators.md#listqualificationrequestspaginator)
+- `client.get_paginator("list_qualification_types")` ->
+  [ListQualificationTypesPaginator](./paginators.md#listqualificationtypespaginator)
+- `client.get_paginator("list_reviewable_hits")` ->
+  [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
+- `client.get_paginator("list_worker_blocks")` ->
+  [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
+- `client.get_paginator("list_workers_with_qualification_type")` ->
+  [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)

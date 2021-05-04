@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EFS](./README.md) > EFSClient
 
-Auto-generated documentation for [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
-type annotations stubs module [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+Auto-generated documentation for
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+type annotations stubs module
+[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
 - [EFSClient for boto3 EFS module](#efsclient-for-boto3-efs-module)
   - [EFSClient](#efsclient)
@@ -51,12 +53,13 @@ def get_efs_client() -> EFSClient:
     return boto3.client("efs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
+Boto3 documentation:
+[EFS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_efs.client import Exceptions
@@ -64,7 +67,6 @@ from mypy_boto3_efs.client import Exceptions
 def handle_error(exc: Exceptions.AccessPointAlreadyExists) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -98,439 +100,425 @@ Exceptions:
 - `Exceptions.UnsupportedAvailabilityZone`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("efs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate]
+Boto3 documentation:
+[EFS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_access_point
 
 Type annotations for `boto3.client("efs").create_access_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point]
+Boto3 documentation:
+[EFS.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
 
-```python
-def create_access_point(
-    self,
-    ClientToken: str,
-    FileSystemId: str,
-    Tags: List["TagTypeDef"] = None,
-    PosixUser: "PosixUserTypeDef" = None,
-    RootDirectory: "RootDirectoryTypeDef" = None
-) -> "AccessPointDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `ClientToken`: `str` *(required)*
+- `FileSystemId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `PosixUser`:
+  [PosixUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#posixusertypedef)
+- `RootDirectory`:
+  [RootDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#rootdirectorytypedef)
+
+Returns
+[AccessPointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#accesspointdescriptiontypedef).
 
 ### create_file_system
 
 Type annotations for `boto3.client("efs").create_file_system` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system]
+Boto3 documentation:
+[EFS.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
 
-```python
-def create_file_system(
-    self,
-    CreationToken: str,
-    PerformanceMode: PerformanceMode = None,
-    Encrypted: bool = None,
-    KmsKeyId: str = None,
-    ThroughputMode: ThroughputMode = None,
-    ProvisionedThroughputInMibps: float = None,
-    AvailabilityZoneName: str = None,
-    Backup: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> "FileSystemDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `CreationToken`: `str` *(required)*
+- `PerformanceMode`:
+  [PerformanceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#performancemode)
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `ThroughputMode`:
+  [ThroughputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#throughputmode)
+- `ProvisionedThroughputInMibps`: `float`
+- `AvailabilityZoneName`: `str`
+- `Backup`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+
+Returns
+[FileSystemDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemdescriptiontypedef).
 
 ### create_mount_target
 
 Type annotations for `boto3.client("efs").create_mount_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target]
+Boto3 documentation:
+[EFS.Client.create_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
 
-```python
-def create_mount_target(
-    self,
-    FileSystemId: str,
-    SubnetId: str,
-    IpAddress: str = None,
-    SecurityGroups: List[str] = None
-) -> "MountTargetDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `SubnetId`: `str` *(required)*
+- `IpAddress`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+
+Returns
+[MountTargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#mounttargetdescriptiontypedef).
 
 ### create_tags
 
 Type annotations for `boto3.client("efs").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags]
+Boto3 documentation:
+[EFS.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
 
-```python
-def create_tags(
-    self,
-    FileSystemId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### delete_access_point
 
 Type annotations for `boto3.client("efs").delete_access_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point]
+Boto3 documentation:
+[EFS.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
 
-```python
-def delete_access_point(
-    self,
-    AccessPointId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccessPointId`: `str` *(required)*
 
 ### delete_file_system
 
 Type annotations for `boto3.client("efs").delete_file_system` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system]
+Boto3 documentation:
+[EFS.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
 
-```python
-def delete_file_system(
-    self,
-    FileSystemId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
 
 ### delete_file_system_policy
 
 Type annotations for `boto3.client("efs").delete_file_system_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy]
+Boto3 documentation:
+[EFS.Client.delete_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
 
-```python
-def delete_file_system_policy(
-    self,
-    FileSystemId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
 
 ### delete_mount_target
 
 Type annotations for `boto3.client("efs").delete_mount_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target]
+Boto3 documentation:
+[EFS.Client.delete_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
 
-```python
-def delete_mount_target(
-    self,
-    MountTargetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MountTargetId`: `str` *(required)*
 
 ### delete_tags
 
 Type annotations for `boto3.client("efs").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags]
+Boto3 documentation:
+[EFS.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    FileSystemId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### describe_access_points
 
 Type annotations for `boto3.client("efs").describe_access_points` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points]
+Boto3 documentation:
+[EFS.Client.describe_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
 
-```python
-def describe_access_points(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    AccessPointId: str = None,
-    FileSystemId: str = None
-) -> DescribeAccessPointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `AccessPointId`: `str`
+- `FileSystemId`: `str`
+
+Returns
+[DescribeAccessPointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describeaccesspointsresponsetypedef).
 
 ### describe_backup_policy
 
 Type annotations for `boto3.client("efs").describe_backup_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy]
+Boto3 documentation:
+[EFS.Client.describe_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
 
-```python
-def describe_backup_policy(
-    self,
-    FileSystemId: str
-) -> BackupPolicyDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[BackupPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicydescriptiontypedef).
 
 ### describe_file_system_policy
 
 Type annotations for `boto3.client("efs").describe_file_system_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy]
+Boto3 documentation:
+[EFS.Client.describe_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
 
-```python
-def describe_file_system_policy(
-    self,
-    FileSystemId: str
-) -> FileSystemPolicyDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[FileSystemPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystempolicydescriptiontypedef).
 
 ### describe_file_systems
 
 Type annotations for `boto3.client("efs").describe_file_systems` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems]
+Boto3 documentation:
+[EFS.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
 
-```python
-def describe_file_systems(
-    self,
-    MaxItems: int = None,
-    Marker: str = None,
-    CreationToken: str = None,
-    FileSystemId: str = None
-) -> DescribeFileSystemsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxItems`: `int`
+- `Marker`: `str`
+- `CreationToken`: `str`
+- `FileSystemId`: `str`
+
+Returns
+[DescribeFileSystemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describefilesystemsresponsetypedef).
 
 ### describe_lifecycle_configuration
 
-Type annotations for `boto3.client("efs").describe_lifecycle_configuration` method.
+Type annotations for `boto3.client("efs").describe_lifecycle_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration]
+Boto3 documentation:
+[EFS.Client.describe_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
 
-```python
-def describe_lifecycle_configuration(
-    self,
-    FileSystemId: str
-) -> LifecycleConfigurationDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[LifecycleConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecycleconfigurationdescriptiontypedef).
 
 ### describe_mount_target_security_groups
 
-Type annotations for `boto3.client("efs").describe_mount_target_security_groups` method.
+Type annotations for
+`boto3.client("efs").describe_mount_target_security_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups]
+Boto3 documentation:
+[EFS.Client.describe_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
 
-```python
-def describe_mount_target_security_groups(
-    self,
-    MountTargetId: str
-) -> DescribeMountTargetSecurityGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MountTargetId`: `str` *(required)*
+
+Returns
+[DescribeMountTargetSecurityGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describemounttargetsecuritygroupsresponsetypedef).
 
 ### describe_mount_targets
 
 Type annotations for `boto3.client("efs").describe_mount_targets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets]
+Boto3 documentation:
+[EFS.Client.describe_mount_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
 
-```python
-def describe_mount_targets(
-    self,
-    MaxItems: int = None,
-    Marker: str = None,
-    FileSystemId: str = None,
-    MountTargetId: str = None,
-    AccessPointId: str = None
-) -> DescribeMountTargetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxItems`: `int`
+- `Marker`: `str`
+- `FileSystemId`: `str`
+- `MountTargetId`: `str`
+- `AccessPointId`: `str`
+
+Returns
+[DescribeMountTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describemounttargetsresponsetypedef).
 
 ### describe_tags
 
 Type annotations for `boto3.client("efs").describe_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags]
+Boto3 documentation:
+[EFS.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
 
-```python
-def describe_tags(
-    self,
-    FileSystemId: str,
-    MaxItems: int = None,
-    Marker: str = None
-) -> DescribeTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describetagsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("efs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url]
+Boto3 documentation:
+[EFS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("efs").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource]
+Boto3 documentation:
+[EFS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### modify_mount_target_security_groups
 
-Type annotations for `boto3.client("efs").modify_mount_target_security_groups` method.
+Type annotations for `boto3.client("efs").modify_mount_target_security_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups]
+Boto3 documentation:
+[EFS.Client.modify_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
 
-```python
-def modify_mount_target_security_groups(
-    self,
-    MountTargetId: str,
-    SecurityGroups: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `MountTargetId`: `str` *(required)*
+- `SecurityGroups`: `List`\[`str`\]
 
 ### put_backup_policy
 
 Type annotations for `boto3.client("efs").put_backup_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy]
+Boto3 documentation:
+[EFS.Client.put_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
 
-```python
-def put_backup_policy(
-    self,
-    FileSystemId: str,
-    BackupPolicy: "BackupPolicyTypeDef"
-) -> BackupPolicyDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `BackupPolicy`:
+  [BackupPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicytypedef)
+  *(required)*
+
+Returns
+[BackupPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicydescriptiontypedef).
 
 ### put_file_system_policy
 
 Type annotations for `boto3.client("efs").put_file_system_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy]
+Boto3 documentation:
+[EFS.Client.put_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
 
-```python
-def put_file_system_policy(
-    self,
-    FileSystemId: str,
-    Policy: str,
-    BypassPolicyLockoutSafetyCheck: bool = None
-) -> FileSystemPolicyDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `Policy`: `str` *(required)*
+- `BypassPolicyLockoutSafetyCheck`: `bool`
+
+Returns
+[FileSystemPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystempolicydescriptiontypedef).
 
 ### put_lifecycle_configuration
 
 Type annotations for `boto3.client("efs").put_lifecycle_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration]
+Boto3 documentation:
+[EFS.Client.put_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
 
-```python
-def put_lifecycle_configuration(
-    self,
-    FileSystemId: str,
-    LifecyclePolicies: List["LifecyclePolicyTypeDef"]
-) -> LifecycleConfigurationDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `LifecyclePolicies`:
+  `List`\[[LifecyclePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecyclepolicytypedef)\]
+  *(required)*
+
+Returns
+[LifecycleConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecycleconfigurationdescriptiontypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("efs").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource]
+Boto3 documentation:
+[EFS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("efs").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource]
+Boto3 documentation:
+[EFS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_file_system
 
 Type annotations for `boto3.client("efs").update_file_system` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system]
+Boto3 documentation:
+[EFS.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
 
-```python
-def update_file_system(
-    self,
-    FileSystemId: str,
-    ThroughputMode: ThroughputMode = None,
-    ProvisionedThroughputInMibps: float = None
-) -> "FileSystemDescriptionTypeDef":
-    pass
-```
+Arguments:
 
+- `FileSystemId`: `str` *(required)*
+- `ThroughputMode`:
+  [ThroughputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#throughputmode)
+- `ProvisionedThroughputInMibps`: `float`
 
+Returns
+[FileSystemDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemdescriptiontypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("efs").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_file_systems")` -> [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
-- `client.get_paginator("describe_mount_targets")` -> [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
-- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-
-
+- `client.get_paginator("describe_file_systems")` ->
+  [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
+- `client.get_paginator("describe_mount_targets")` ->
+  [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
+- `client.get_paginator("describe_tags")` ->
+  [DescribeTagsPaginator](./paginators.md#describetagspaginator)

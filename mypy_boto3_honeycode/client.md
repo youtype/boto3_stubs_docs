@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Honeycode](./README.md) > HoneycodeClient
 
-Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+Auto-generated documentation for
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+type annotations stubs module
+[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [HoneycodeClient for boto3 Honeycode module](#honeycodeclient-for-boto3-honeycode-module)
   - [HoneycodeClient](#honeycodeclient)
@@ -38,12 +40,13 @@ def get_honeycode_client() -> HoneycodeClient:
     return boto3.client("honeycode")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
+Boto3 documentation:
+[Honeycode.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_honeycode.client import Exceptions
@@ -51,7 +54,6 @@ from mypy_boto3_honeycode.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -67,260 +69,278 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### batch_create_table_rows
 
-Type annotations for `boto3.client("honeycode").batch_create_table_rows` method.
+Type annotations for `boto3.client("honeycode").batch_create_table_rows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows]
+Boto3 documentation:
+[Honeycode.Client.batch_create_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
 
-```python
-def batch_create_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    rowsToCreate: List[CreateRowDataTypeDef],
-    clientRequestToken: str = None
-) -> BatchCreateTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowsToCreate`:
+  `List`\[[CreateRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#createrowdatatypedef)\]
+  *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[BatchCreateTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchcreatetablerowsresulttypedef).
 
 ### batch_delete_table_rows
 
-Type annotations for `boto3.client("honeycode").batch_delete_table_rows` method.
+Type annotations for `boto3.client("honeycode").batch_delete_table_rows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows]
+Boto3 documentation:
+[Honeycode.Client.batch_delete_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
 
-```python
-def batch_delete_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    rowIds: List[str],
-    clientRequestToken: str = None
-) -> BatchDeleteTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowIds`: `List`\[`str`\] *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[BatchDeleteTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchdeletetablerowsresulttypedef).
 
 ### batch_update_table_rows
 
-Type annotations for `boto3.client("honeycode").batch_update_table_rows` method.
+Type annotations for `boto3.client("honeycode").batch_update_table_rows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows]
+Boto3 documentation:
+[Honeycode.Client.batch_update_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
 
-```python
-def batch_update_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    rowsToUpdate: List[UpdateRowDataTypeDef],
-    clientRequestToken: str = None
-) -> BatchUpdateTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowsToUpdate`:
+  `List`\[[UpdateRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#updaterowdatatypedef)\]
+  *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[BatchUpdateTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchupdatetablerowsresulttypedef).
 
 ### batch_upsert_table_rows
 
-Type annotations for `boto3.client("honeycode").batch_upsert_table_rows` method.
+Type annotations for `boto3.client("honeycode").batch_upsert_table_rows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows]
+Boto3 documentation:
+[Honeycode.Client.batch_upsert_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
 
-```python
-def batch_upsert_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    rowsToUpsert: List[UpsertRowDataTypeDef],
-    clientRequestToken: str = None
-) -> BatchUpsertTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowsToUpsert`:
+  `List`\[[UpsertRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#upsertrowdatatypedef)\]
+  *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[BatchUpsertTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchupserttablerowsresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("honeycode").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate]
+Boto3 documentation:
+[Honeycode.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_table_data_import_job
 
-Type annotations for `boto3.client("honeycode").describe_table_data_import_job` method.
+Type annotations for `boto3.client("honeycode").describe_table_data_import_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job]
+Boto3 documentation:
+[Honeycode.Client.describe_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
 
-```python
-def describe_table_data_import_job(
-    self,
-    workbookId: str,
-    tableId: str,
-    jobId: str
-) -> DescribeTableDataImportJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `jobId`: `str` *(required)*
+
+Returns
+[DescribeTableDataImportJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#describetabledataimportjobresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("honeycode").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url]
+Boto3 documentation:
+[Honeycode.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_screen_data
 
 Type annotations for `boto3.client("honeycode").get_screen_data` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data]
+Boto3 documentation:
+[Honeycode.Client.get_screen_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
 
-```python
-def get_screen_data(
-    self,
-    workbookId: str,
-    appId: str,
-    screenId: str,
-    variables: Dict[str, VariableValueTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> GetScreenDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `appId`: `str` *(required)*
+- `screenId`: `str` *(required)*
+- `variables`: `Dict`\[`str`,
+  [VariableValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#variablevaluetypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetScreenDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#getscreendataresulttypedef).
 
 ### invoke_screen_automation
 
-Type annotations for `boto3.client("honeycode").invoke_screen_automation` method.
+Type annotations for `boto3.client("honeycode").invoke_screen_automation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation]
+Boto3 documentation:
+[Honeycode.Client.invoke_screen_automation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
 
-```python
-def invoke_screen_automation(
-    self,
-    workbookId: str,
-    appId: str,
-    screenId: str,
-    screenAutomationId: str,
-    variables: Dict[str, VariableValueTypeDef] = None,
-    rowId: str = None,
-    clientRequestToken: str = None
-) -> InvokeScreenAutomationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `appId`: `str` *(required)*
+- `screenId`: `str` *(required)*
+- `screenAutomationId`: `str` *(required)*
+- `variables`: `Dict`\[`str`,
+  [VariableValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#variablevaluetypedef)\]
+- `rowId`: `str`
+- `clientRequestToken`: `str`
+
+Returns
+[InvokeScreenAutomationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#invokescreenautomationresulttypedef).
 
 ### list_table_columns
 
 Type annotations for `boto3.client("honeycode").list_table_columns` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns]
+Boto3 documentation:
+[Honeycode.Client.list_table_columns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
 
-```python
-def list_table_columns(
-    self,
-    workbookId: str,
-    tableId: str,
-    nextToken: str = None
-) -> ListTableColumnsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListTableColumnsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablecolumnsresulttypedef).
 
 ### list_table_rows
 
 Type annotations for `boto3.client("honeycode").list_table_rows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows]
+Boto3 documentation:
+[Honeycode.Client.list_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
 
-```python
-def list_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    rowIds: List[str] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowIds`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablerowsresulttypedef).
 
 ### list_tables
 
 Type annotations for `boto3.client("honeycode").list_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables]
+Boto3 documentation:
+[Honeycode.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
 
-```python
-def list_tables(
-    self,
-    workbookId: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListTablesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablesresulttypedef).
 
 ### query_table_rows
 
 Type annotations for `boto3.client("honeycode").query_table_rows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows]
+Boto3 documentation:
+[Honeycode.Client.query_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
 
-```python
-def query_table_rows(
-    self,
-    workbookId: str,
-    tableId: str,
-    filterFormula: "FilterTypeDef",
-    maxResults: int = None,
-    nextToken: str = None
-) -> QueryTableRowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `filterFormula`:
+  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#filtertypedef)
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[QueryTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#querytablerowsresulttypedef).
 
 ### start_table_data_import_job
 
-Type annotations for `boto3.client("honeycode").start_table_data_import_job` method.
+Type annotations for `boto3.client("honeycode").start_table_data_import_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job]
+Boto3 documentation:
+[Honeycode.Client.start_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
 
-```python
-def start_table_data_import_job(
-    self,
-    workbookId: str,
-    dataSource: "ImportDataSourceTypeDef",
-    dataFormat: Literal['DELIMITED_TEXT'],
-    destinationTableId: str,
-    importOptions: "ImportOptionsTypeDef",
-    clientRequestToken: str
-) -> StartTableDataImportJobResultTypeDef:
-    pass
-```
+Arguments:
 
+- `workbookId`: `str` *(required)*
+- `dataSource`:
+  [ImportDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importdatasourcetypedef)
+  *(required)*
+- `dataFormat`: `Literal['DELIMITED_TEXT']` *(required)*
+- `destinationTableId`: `str` *(required)*
+- `importOptions`:
+  [ImportOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importoptionstypedef)
+  *(required)*
+- `clientRequestToken`: `str` *(required)*
 
+Returns
+[StartTableDataImportJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#starttabledataimportjobresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("honeycode").get_paginator` method with overloads.
+Type annotations for `boto3.client("honeycode").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_table_columns")` -> [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
-- `client.get_paginator("list_table_rows")` -> [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
-- `client.get_paginator("list_tables")` -> [ListTablesPaginator](./paginators.md#listtablespaginator)
-- `client.get_paginator("query_table_rows")` -> [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
-
-
+- `client.get_paginator("list_table_columns")` ->
+  [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
+- `client.get_paginator("list_table_rows")` ->
+  [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
+- `client.get_paginator("list_tables")` ->
+  [ListTablesPaginator](./paginators.md#listtablespaginator)
+- `client.get_paginator("query_table_rows")` ->
+  [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)

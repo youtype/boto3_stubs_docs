@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaStore
 
-Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
-type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+Auto-generated documentation for
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+type annotations stubs module
+[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 ```bash
 pip install mypy-boto3-mediastore
@@ -19,7 +21,8 @@ pip install mypy-boto3-mediastore
 
 ## MediaStoreClient
 
-Type annotations for  `boto3.client("mediastore")` as [MediaStoreClient](./client.md)
+Type annotations for `boto3.client("mediastore")` as
+[MediaStoreClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_mediastore.client import MediaStoreClient
 ```
 
-
 MediaStoreClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_container](./client.md#create-container)
 - [delete_container](./client.md#delete-container)
@@ -58,10 +59,8 @@ MediaStoreClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ContainerInUseException](./client.md#containerinuseexception)
 - [ContainerNotFoundException](./client.md#containernotfoundexception)
@@ -70,14 +69,10 @@ MediaStoreClient [exceptions](./client.md#exceptions)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [PolicyNotFoundException](./client.md#policynotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediastore").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediastore").get_paginator("...")`.
 
 Can be used directly:
 
@@ -86,11 +81,6 @@ from mypy_boto3_mediastore.paginators import ListContainersPaginator, ...
 ```
 
 - [ListContainersPaginator](./paginators.md#listcontainerspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -107,13 +97,10 @@ from mypy_boto3_mediastore.literals import ContainerLevelMetrics, ...
 - [ListContainersPaginatorName](./literals.md#listcontainerspaginatorname)
 - [MethodName](./literals.md#methodname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

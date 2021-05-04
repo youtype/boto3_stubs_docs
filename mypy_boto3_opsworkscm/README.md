@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > OpsWorksCM
 
-Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+Auto-generated documentation for
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+type annotations stubs module
+[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 ```bash
 pip install mypy-boto3-opsworkscm
@@ -20,7 +22,8 @@ pip install mypy-boto3-opsworkscm
 
 ## OpsWorksCMClient
 
-Type annotations for  `boto3.client("opsworkscm")` as [OpsWorksCMClient](./client.md)
+Type annotations for `boto3.client("opsworkscm")` as
+[OpsWorksCMClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_opsworkscm.client import OpsWorksCMClient
 ```
 
-
 OpsWorksCMClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_node](./client.md#associate-node)
 - [can_paginate](./client.md#can-paginate)
 - [create_backup](./client.md#create-backup)
@@ -58,10 +59,8 @@ OpsWorksCMClient [exceptions](./client.md#exceptions)
 - [update_server](./client.md#update-server)
 - [update_server_engine_attributes](./client.md#update-server-engine-attributes)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidNextTokenException](./client.md#invalidnexttokenexception)
 - [InvalidStateException](./client.md#invalidstateexception)
@@ -70,14 +69,10 @@ OpsWorksCMClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("opsworkscm").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("opsworkscm").get_paginator("...")`.
 
 Can be used directly:
 
@@ -90,12 +85,10 @@ from mypy_boto3_opsworkscm.paginators import DescribeBackupsPaginator, ...
 - [DescribeServersPaginator](./paginators.md#describeserverspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("opsworkscm").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("opsworkscm").get_waiter("...")`.
 
 Can be used directly:
 
@@ -104,9 +97,6 @@ from mypy_boto3_opsworkscm.waiters import NodeAssociatedWaiter, ...
 ```
 
 - [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)
-
-
-
 
 ## Literals
 
@@ -129,13 +119,10 @@ from mypy_boto3_opsworkscm.literals import BackupStatus, ...
 - [NodeAssociationStatus](./literals.md#nodeassociationstatus)
 - [ServerStatus](./literals.md#serverstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

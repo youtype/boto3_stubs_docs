@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LexRuntimeV2
 
-Auto-generated documentation for [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
-type annotations stubs module [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+Auto-generated documentation for
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+type annotations stubs module
+[mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 ```bash
 pip install mypy-boto3-lexv2-runtime
@@ -18,7 +20,8 @@ pip install mypy-boto3-lexv2-runtime
 
 ## LexRuntimeV2Client
 
-Type annotations for  `boto3.client("lexv2-runtime")` as [LexRuntimeV2Client](./client.md)
+Type annotations for `boto3.client("lexv2-runtime")` as
+[LexRuntimeV2Client](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 ```
 
-
 LexRuntimeV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_session](./client.md#delete-session)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -40,10 +41,8 @@ LexRuntimeV2Client [exceptions](./client.md#exceptions)
 - [recognize_text](./client.md#recognize-text)
 - [recognize_utterance](./client.md#recognize-utterance)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadGatewayException](./client.md#badgatewayexception)
 - [ClientError](./client.md#clienterror)
@@ -53,15 +52,6 @@ LexRuntimeV2Client [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -79,13 +69,10 @@ from mypy_boto3_lexv2_runtime.literals import ConfirmationState, ...
 - [MessageContentType](./literals.md#messagecontenttype)
 - [SentimentType](./literals.md#sentimenttype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

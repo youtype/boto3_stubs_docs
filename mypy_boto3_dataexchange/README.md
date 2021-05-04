@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DataExchange
 
-Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
-type annotations stubs module [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+Auto-generated documentation for
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+type annotations stubs module
+[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ```bash
 pip install mypy-boto3-dataexchange
@@ -19,7 +21,8 @@ pip install mypy-boto3-dataexchange
 
 ## DataExchangeClient
 
-Type annotations for  `boto3.client("dataexchange")` as [DataExchangeClient](./client.md)
+Type annotations for `boto3.client("dataexchange")` as
+[DataExchangeClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_dataexchange.client import DataExchangeClient
 ```
 
-
 DataExchangeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job](./client.md#cancel-job)
 - [create_data_set](./client.md#create-data-set)
@@ -59,10 +60,8 @@ DataExchangeClient [exceptions](./client.md#exceptions)
 - [update_data_set](./client.md#update-data-set)
 - [update_revision](./client.md#update-revision)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -72,14 +71,10 @@ DataExchangeClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("dataexchange").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("dataexchange").get_paginator("...")`.
 
 Can be used directly:
 
@@ -91,11 +86,6 @@ from mypy_boto3_dataexchange.paginators import ListDataSetRevisionsPaginator, ..
 - [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -120,13 +110,10 @@ from mypy_boto3_dataexchange.literals import AssetType, ...
 - [State](./literals.md#state)
 - [TypeType](./literals.md#typetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

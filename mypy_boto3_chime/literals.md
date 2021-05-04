@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Chime](./README.md) > Literals
 
-Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+Auto-generated documentation for
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+type annotations stubs module
+[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [Literals for boto3 Chime module](#literals-for-boto3-chime-module)
   - [AccountType](#accounttype)

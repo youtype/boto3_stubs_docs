@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > ServiceCatalogClient
 
-Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+Auto-generated documentation for
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+type annotations stubs module
+[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [ServiceCatalogClient for boto3 ServiceCatalog module](#servicecatalogclient-for-boto3-servicecatalog-module)
   - [ServiceCatalogClient](#servicecatalogclient)
@@ -113,12 +115,13 @@ def get_servicecatalog_client() -> ServiceCatalogClient:
     return boto3.client("servicecatalog")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
+Boto3 documentation:
+[ServiceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_servicecatalog.client import Exceptions
@@ -126,7 +129,6 @@ from mypy_boto3_servicecatalog.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -140,1558 +142,1669 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TagOptionNotMigratedException`
 
-
 ## Methods
-
 
 ### accept_portfolio_share
 
-Type annotations for `boto3.client("servicecatalog").accept_portfolio_share` method.
+Type annotations for `boto3.client("servicecatalog").accept_portfolio_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share]
+Boto3 documentation:
+[ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
 
-```python
-def accept_portfolio_share(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    PortfolioShareType: PortfolioShareType = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PortfolioShareType`:
+  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_budget_with_resource
 
-Type annotations for `boto3.client("servicecatalog").associate_budget_with_resource` method.
+Type annotations for
+`boto3.client("servicecatalog").associate_budget_with_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource]
+Boto3 documentation:
+[ServiceCatalog.Client.associate_budget_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
 
-```python
-def associate_budget_with_resource(
-    self,
-    BudgetName: str,
-    ResourceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BudgetName`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_principal_with_portfolio
 
-Type annotations for `boto3.client("servicecatalog").associate_principal_with_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").associate_principal_with_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
 
-```python
-def associate_principal_with_portfolio(
-    self,
-    PortfolioId: str,
-    PrincipalARN: str,
-    PrincipalType: Literal['IAM'],
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `PrincipalARN`: `str` *(required)*
+- `PrincipalType`: `Literal['IAM']` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_product_with_portfolio
 
-Type annotations for `boto3.client("servicecatalog").associate_product_with_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").associate_product_with_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
 
-```python
-def associate_product_with_portfolio(
-    self,
-    ProductId: str,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    SourcePortfolioId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `SourcePortfolioId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_service_action_with_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
 
-```python
-def associate_service_action_with_provisioning_artifact(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    ServiceActionId: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `ServiceActionId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_tag_option_with_resource
 
-Type annotations for `boto3.client("servicecatalog").associate_tag_option_with_resource` method.
+Type annotations for
+`boto3.client("servicecatalog").associate_tag_option_with_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource]
+Boto3 documentation:
+[ServiceCatalog.Client.associate_tag_option_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
 
-```python
-def associate_tag_option_with_resource(
-    self,
-    ResourceId: str,
-    TagOptionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagOptionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_associate_service_action_with_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
 
-```python
-def batch_associate_service_action_with_provisioning_artifact(
-    self,
-    ServiceActionAssociations: List[ServiceActionAssociationTypeDef],
-    AcceptLanguage: str = None
-) -> BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceActionAssociations`:
+  `List`\[[ServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionassociationtypedef)\]
+  *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
 
 ### batch_disassociate_service_action_from_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
 
-```python
-def batch_disassociate_service_action_from_provisioning_artifact(
-    self,
-    ServiceActionAssociations: List[ServiceActionAssociationTypeDef],
-    AcceptLanguage: str = None
-) -> BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceActionAssociations`:
+  `List`\[[ServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionassociationtypedef)\]
+  *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("servicecatalog").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate]
+Boto3 documentation:
+[ServiceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### copy_product
 
 Type annotations for `boto3.client("servicecatalog").copy_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product]
+Boto3 documentation:
+[ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
 
-```python
-def copy_product(
-    self,
-    SourceProductArn: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None,
-    TargetProductId: str = None,
-    TargetProductName: str = None,
-    SourceProvisioningArtifactIdentifiers: List[Dict[Literal['Id'], str]] = None,
-    CopyOptions: List[Literal['CopyTags']] = None
-) -> CopyProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceProductArn`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `TargetProductId`: `str`
+- `TargetProductName`: `str`
+- `SourceProvisioningArtifactIdentifiers`: `List`\[`Dict`\[`Literal['Id']`,
+  `str`\]\]
+- `CopyOptions`: `List`\[`Literal['CopyTags']`\]
+
+Returns
+[CopyProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#copyproductoutputtypedef).
 
 ### create_constraint
 
 Type annotations for `boto3.client("servicecatalog").create_constraint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint]
+Boto3 documentation:
+[ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
 
-```python
-def create_constraint(
-    self,
-    PortfolioId: str,
-    ProductId: str,
-    Parameters: str,
-    Type: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None,
-    Description: str = None
-) -> CreateConstraintOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `ProductId`: `str` *(required)*
+- `Parameters`: `str` *(required)*
+- `Type`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Description`: `str`
+
+Returns
+[CreateConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createconstraintoutputtypedef).
 
 ### create_portfolio
 
 Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
 
-```python
-def create_portfolio(
-    self,
-    DisplayName: str,
-    ProviderName: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePortfolioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DisplayName`: `str` *(required)*
+- `ProviderName`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createportfoliooutputtypedef).
 
 ### create_portfolio_share
 
-Type annotations for `boto3.client("servicecatalog").create_portfolio_share` method.
+Type annotations for `boto3.client("servicecatalog").create_portfolio_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share]
+Boto3 documentation:
+[ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
 
-```python
-def create_portfolio_share(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    AccountId: str = None,
-    OrganizationNode: "OrganizationNodeTypeDef" = None,
-    ShareTagOptions: bool = None
-) -> CreatePortfolioShareOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `AccountId`: `str`
+- `OrganizationNode`:
+  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+- `ShareTagOptions`: `bool`
+
+Returns
+[CreatePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createportfolioshareoutputtypedef).
 
 ### create_product
 
 Type annotations for `boto3.client("servicecatalog").create_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product]
+Boto3 documentation:
+[ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
 
-```python
-def create_product(
-    self,
-    Name: str,
-    Owner: str,
-    ProductType: ProductType,
-    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None,
-    Description: str = None,
-    Distributor: str = None,
-    SupportDescription: str = None,
-    SupportEmail: str = None,
-    SupportUrl: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Owner`: `str` *(required)*
+- `ProductType`:
+  [ProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#producttype)
+  *(required)*
+- `ProvisioningArtifactParameters`:
+  [ProvisioningArtifactPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactpropertiestypedef)
+  *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Description`: `str`
+- `Distributor`: `str`
+- `SupportDescription`: `str`
+- `SupportEmail`: `str`
+- `SupportUrl`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createproductoutputtypedef).
 
 ### create_provisioned_product_plan
 
-Type annotations for `boto3.client("servicecatalog").create_provisioned_product_plan` method.
+Type annotations for
+`boto3.client("servicecatalog").create_provisioned_product_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan]
+Boto3 documentation:
+[ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
 
-```python
-def create_provisioned_product_plan(
-    self,
-    PlanName: str,
-    PlanType: Literal['CLOUDFORMATION'],
-    ProductId: str,
-    ProvisionedProductName: str,
-    ProvisioningArtifactId: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None,
-    NotificationArns: List[str] = None,
-    PathId: str = None,
-    ProvisioningParameters: List["UpdateProvisioningParameterTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateProvisionedProductPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlanName`: `str` *(required)*
+- `PlanType`: `Literal['CLOUDFORMATION']` *(required)*
+- `ProductId`: `str` *(required)*
+- `ProvisionedProductName`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `NotificationArns`: `List`\[`str`\]
+- `PathId`: `str`
+- `ProvisioningParameters`:
+  `List`\[[UpdateProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningparametertypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createprovisionedproductplanoutputtypedef).
 
 ### create_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").create_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").create_provisioning_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
 
-```python
-def create_provisioning_artifact(
-    self,
-    ProductId: str,
-    Parameters: ProvisioningArtifactPropertiesTypeDef,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None
-) -> CreateProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `Parameters`:
+  [ProvisioningArtifactPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactpropertiestypedef)
+  *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[CreateProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createprovisioningartifactoutputtypedef).
 
 ### create_service_action
 
-Type annotations for `boto3.client("servicecatalog").create_service_action` method.
+Type annotations for `boto3.client("servicecatalog").create_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
 
-```python
-def create_service_action(
-    self,
-    Name: str,
-    DefinitionType: Literal['SSM_AUTOMATION'],
-    Definition: Dict[ServiceActionDefinitionKey, str],
-    IdempotencyToken: str,
-    Description: str = None,
-    AcceptLanguage: str = None
-) -> CreateServiceActionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DefinitionType`: `Literal['SSM_AUTOMATION']` *(required)*
+- `Definition`:
+  `Dict`\[[ServiceActionDefinitionKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactiondefinitionkey),
+  `str`\] *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `Description`: `str`
+- `AcceptLanguage`: `str`
+
+Returns
+[CreateServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createserviceactionoutputtypedef).
 
 ### create_tag_option
 
 Type annotations for `boto3.client("servicecatalog").create_tag_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option]
+Boto3 documentation:
+[ServiceCatalog.Client.create_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
 
-```python
-def create_tag_option(
-    self,
-    Key: str,
-    Value: str
-) -> CreateTagOptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Key`: `str` *(required)*
+- `Value`: `str` *(required)*
+
+Returns
+[CreateTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createtagoptionoutputtypedef).
 
 ### delete_constraint
 
 Type annotations for `boto3.client("servicecatalog").delete_constraint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
 
-```python
-def delete_constraint(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_portfolio
 
 Type annotations for `boto3.client("servicecatalog").delete_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
 
-```python
-def delete_portfolio(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_portfolio_share
 
-Type annotations for `boto3.client("servicecatalog").delete_portfolio_share` method.
+Type annotations for `boto3.client("servicecatalog").delete_portfolio_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
 
-```python
-def delete_portfolio_share(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    AccountId: str = None,
-    OrganizationNode: "OrganizationNodeTypeDef" = None
-) -> DeletePortfolioShareOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `AccountId`: `str`
+- `OrganizationNode`:
+  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+
+Returns
+[DeletePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#deleteportfolioshareoutputtypedef).
 
 ### delete_product
 
 Type annotations for `boto3.client("servicecatalog").delete_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
 
-```python
-def delete_product(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_provisioned_product_plan
 
-Type annotations for `boto3.client("servicecatalog").delete_provisioned_product_plan` method.
+Type annotations for
+`boto3.client("servicecatalog").delete_provisioned_product_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
 
-```python
-def delete_provisioned_product_plan(
-    self,
-    PlanId: str,
-    AcceptLanguage: str = None,
-    IgnoreErrors: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PlanId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `IgnoreErrors`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").delete_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").delete_provisioning_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
 
-```python
-def delete_provisioning_artifact(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_service_action
 
-Type annotations for `boto3.client("servicecatalog").delete_service_action` method.
+Type annotations for `boto3.client("servicecatalog").delete_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
 
-```python
-def delete_service_action(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tag_option
 
 Type annotations for `boto3.client("servicecatalog").delete_tag_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option]
+Boto3 documentation:
+[ServiceCatalog.Client.delete_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
 
-```python
-def delete_tag_option(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_constraint
 
-Type annotations for `boto3.client("servicecatalog").describe_constraint` method.
+Type annotations for `boto3.client("servicecatalog").describe_constraint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
 
-```python
-def describe_constraint(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> DescribeConstraintOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribeConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeconstraintoutputtypedef).
 
 ### describe_copy_product_status
 
-Type annotations for `boto3.client("servicecatalog").describe_copy_product_status` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_copy_product_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_copy_product_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
 
-```python
-def describe_copy_product_status(
-    self,
-    CopyProductToken: str,
-    AcceptLanguage: str = None
-) -> DescribeCopyProductStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CopyProductToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribeCopyProductStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describecopyproductstatusoutputtypedef).
 
 ### describe_portfolio
 
-Type annotations for `boto3.client("servicecatalog").describe_portfolio` method.
+Type annotations for `boto3.client("servicecatalog").describe_portfolio`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
 
-```python
-def describe_portfolio(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> DescribePortfolioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliooutputtypedef).
 
 ### describe_portfolio_share_status
 
-Type annotations for `boto3.client("servicecatalog").describe_portfolio_share_status` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_portfolio_share_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_portfolio_share_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
 
-```python
-def describe_portfolio_share_status(
-    self,
-    PortfolioShareToken: str
-) -> DescribePortfolioShareStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioShareToken`: `str` *(required)*
+
+Returns
+[DescribePortfolioShareStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliosharestatusoutputtypedef).
 
 ### describe_portfolio_shares
 
-Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares` method.
+Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
 
-```python
-def describe_portfolio_shares(
-    self,
-    PortfolioId: str,
-    Type: DescribePortfolioShareType,
-    PageToken: str = None,
-    PageSize: int = None
-) -> DescribePortfolioSharesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `Type`:
+  [DescribePortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#describeportfoliosharetype)
+  *(required)*
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[DescribePortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliosharesoutputtypedef).
 
 ### describe_product
 
 Type annotations for `boto3.client("servicecatalog").describe_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
 
-```python
-def describe_product(
-    self,
-    AcceptLanguage: str = None,
-    Id: str = None,
-    Name: str = None
-) -> DescribeProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `Id`: `str`
+- `Name`: `str`
+
+Returns
+[DescribeProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductoutputtypedef).
 
 ### describe_product_as_admin
 
-Type annotations for `boto3.client("servicecatalog").describe_product_as_admin` method.
+Type annotations for `boto3.client("servicecatalog").describe_product_as_admin`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
 
-```python
-def describe_product_as_admin(
-    self,
-    AcceptLanguage: str = None,
-    Id: str = None,
-    Name: str = None,
-    SourcePortfolioId: str = None
-) -> DescribeProductAsAdminOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `SourcePortfolioId`: `str`
+
+Returns
+[DescribeProductAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductasadminoutputtypedef).
 
 ### describe_product_view
 
-Type annotations for `boto3.client("servicecatalog").describe_product_view` method.
+Type annotations for `boto3.client("servicecatalog").describe_product_view`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_product_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
 
-```python
-def describe_product_view(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> DescribeProductViewOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribeProductViewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductviewoutputtypedef).
 
 ### describe_provisioned_product
 
-Type annotations for `boto3.client("servicecatalog").describe_provisioned_product` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_provisioned_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
 
-```python
-def describe_provisioned_product(
-    self,
-    AcceptLanguage: str = None,
-    Id: str = None,
-    Name: str = None
-) -> DescribeProvisionedProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `Id`: `str`
+- `Name`: `str`
+
+Returns
+[DescribeProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisionedproductoutputtypedef).
 
 ### describe_provisioned_product_plan
 
-Type annotations for `boto3.client("servicecatalog").describe_provisioned_product_plan` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_provisioned_product_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
 
-```python
-def describe_provisioned_product_plan(
-    self,
-    PlanId: str,
-    AcceptLanguage: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> DescribeProvisionedProductPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlanId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[DescribeProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisionedproductplanoutputtypedef).
 
 ### describe_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").describe_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_provisioning_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
 
-```python
-def describe_provisioning_artifact(
-    self,
-    AcceptLanguage: str = None,
-    ProvisioningArtifactId: str = None,
-    ProductId: str = None,
-    ProvisioningArtifactName: str = None,
-    ProductName: str = None,
-    Verbose: bool = None
-) -> DescribeProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `ProvisioningArtifactId`: `str`
+- `ProductId`: `str`
+- `ProvisioningArtifactName`: `str`
+- `ProductName`: `str`
+- `Verbose`: `bool`
+
+Returns
+[DescribeProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisioningartifactoutputtypedef).
 
 ### describe_provisioning_parameters
 
-Type annotations for `boto3.client("servicecatalog").describe_provisioning_parameters` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_provisioning_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
 
-```python
-def describe_provisioning_parameters(
-    self,
-    AcceptLanguage: str = None,
-    ProductId: str = None,
-    ProductName: str = None,
-    ProvisioningArtifactId: str = None,
-    ProvisioningArtifactName: str = None,
-    PathId: str = None,
-    PathName: str = None
-) -> DescribeProvisioningParametersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `ProductId`: `str`
+- `ProductName`: `str`
+- `ProvisioningArtifactId`: `str`
+- `ProvisioningArtifactName`: `str`
+- `PathId`: `str`
+- `PathName`: `str`
+
+Returns
+[DescribeProvisioningParametersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisioningparametersoutputtypedef).
 
 ### describe_record
 
 Type annotations for `boto3.client("servicecatalog").describe_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
 
-```python
-def describe_record(
-    self,
-    Id: str,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> DescribeRecordOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[DescribeRecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describerecordoutputtypedef).
 
 ### describe_service_action
 
-Type annotations for `boto3.client("servicecatalog").describe_service_action` method.
+Type annotations for `boto3.client("servicecatalog").describe_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
 
-```python
-def describe_service_action(
-    self,
-    Id: str,
-    AcceptLanguage: str = None
-) -> DescribeServiceActionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribeServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeserviceactionoutputtypedef).
 
 ### describe_service_action_execution_parameters
 
-Type annotations for `boto3.client("servicecatalog").describe_service_action_execution_parameters` method.
+Type annotations for
+`boto3.client("servicecatalog").describe_service_action_execution_parameters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
 
-```python
-def describe_service_action_execution_parameters(
-    self,
-    ProvisionedProductId: str,
-    ServiceActionId: str,
-    AcceptLanguage: str = None
-) -> DescribeServiceActionExecutionParametersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProvisionedProductId`: `str` *(required)*
+- `ServiceActionId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[DescribeServiceActionExecutionParametersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeserviceactionexecutionparametersoutputtypedef).
 
 ### describe_tag_option
 
-Type annotations for `boto3.client("servicecatalog").describe_tag_option` method.
+Type annotations for `boto3.client("servicecatalog").describe_tag_option`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option]
+Boto3 documentation:
+[ServiceCatalog.Client.describe_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
 
-```python
-def describe_tag_option(
-    self,
-    Id: str
-) -> DescribeTagOptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describetagoptionoutputtypedef).
 
 ### disable_aws_organizations_access
 
-Type annotations for `boto3.client("servicecatalog").disable_aws_organizations_access` method.
+Type annotations for
+`boto3.client("servicecatalog").disable_aws_organizations_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access]
+Boto3 documentation:
+[ServiceCatalog.Client.disable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
 
-```python
-def disable_aws_organizations_access(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_budget_from_resource
 
-Type annotations for `boto3.client("servicecatalog").disassociate_budget_from_resource` method.
+Type annotations for
+`boto3.client("servicecatalog").disassociate_budget_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource]
+Boto3 documentation:
+[ServiceCatalog.Client.disassociate_budget_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
 
-```python
-def disassociate_budget_from_resource(
-    self,
-    BudgetName: str,
-    ResourceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BudgetName`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_principal_from_portfolio
 
-Type annotations for `boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
 
-```python
-def disassociate_principal_from_portfolio(
-    self,
-    PortfolioId: str,
-    PrincipalARN: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `PrincipalARN`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_product_from_portfolio
 
-Type annotations for `boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
 
-```python
-def disassociate_product_from_portfolio(
-    self,
-    ProductId: str,
-    PortfolioId: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_service_action_from_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
 
-```python
-def disassociate_service_action_from_provisioning_artifact(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    ServiceActionId: str,
-    AcceptLanguage: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `ServiceActionId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_tag_option_from_resource
 
-Type annotations for `boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
+Type annotations for
+`boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource]
+Boto3 documentation:
+[ServiceCatalog.Client.disassociate_tag_option_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
 
-```python
-def disassociate_tag_option_from_resource(
-    self,
-    ResourceId: str,
-    TagOptionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagOptionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_aws_organizations_access
 
-Type annotations for `boto3.client("servicecatalog").enable_aws_organizations_access` method.
+Type annotations for
+`boto3.client("servicecatalog").enable_aws_organizations_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access]
+Boto3 documentation:
+[ServiceCatalog.Client.enable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
 
-```python
-def enable_aws_organizations_access(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### execute_provisioned_product_plan
 
-Type annotations for `boto3.client("servicecatalog").execute_provisioned_product_plan` method.
+Type annotations for
+`boto3.client("servicecatalog").execute_provisioned_product_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan]
+Boto3 documentation:
+[ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
 
-```python
-def execute_provisioned_product_plan(
-    self,
-    PlanId: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None
-) -> ExecuteProvisionedProductPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlanId`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[ExecuteProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#executeprovisionedproductplanoutputtypedef).
 
 ### execute_provisioned_product_service_action
 
-Type annotations for `boto3.client("servicecatalog").execute_provisioned_product_service_action` method.
+Type annotations for
+`boto3.client("servicecatalog").execute_provisioned_product_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
 
-```python
-def execute_provisioned_product_service_action(
-    self,
-    ProvisionedProductId: str,
-    ServiceActionId: str,
-    ExecuteToken: str,
-    AcceptLanguage: str = None,
-    Parameters: Dict[str, List[str]] = None
-) -> ExecuteProvisionedProductServiceActionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProvisionedProductId`: `str` *(required)*
+- `ServiceActionId`: `str` *(required)*
+- `ExecuteToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+
+Returns
+[ExecuteProvisionedProductServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#executeprovisionedproductserviceactionoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("servicecatalog").generate_presigned_url` method.
+Type annotations for `boto3.client("servicecatalog").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url]
+Boto3 documentation:
+[ServiceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_aws_organizations_access_status
 
-Type annotations for `boto3.client("servicecatalog").get_aws_organizations_access_status` method.
+Type annotations for
+`boto3.client("servicecatalog").get_aws_organizations_access_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status]
+Boto3 documentation:
+[ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
 
-```python
-def get_aws_organizations_access_status(
-    self
-) -> GetAWSOrganizationsAccessStatusOutputTypeDef:
-    pass
-```
+Returns
+[GetAWSOrganizationsAccessStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#getawsorganizationsaccessstatusoutputtypedef).
 
 ### get_provisioned_product_outputs
 
-Type annotations for `boto3.client("servicecatalog").get_provisioned_product_outputs` method.
+Type annotations for
+`boto3.client("servicecatalog").get_provisioned_product_outputs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs]
+Boto3 documentation:
+[ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
 
-```python
-def get_provisioned_product_outputs(
-    self,
-    AcceptLanguage: str = None,
-    ProvisionedProductId: str = None,
-    ProvisionedProductName: str = None,
-    OutputKeys: List[str] = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> GetProvisionedProductOutputsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `ProvisionedProductId`: `str`
+- `ProvisionedProductName`: `str`
+- `OutputKeys`: `List`\[`str`\]
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[GetProvisionedProductOutputsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#getprovisionedproductoutputsoutputtypedef).
 
 ### import_as_provisioned_product
 
-Type annotations for `boto3.client("servicecatalog").import_as_provisioned_product` method.
+Type annotations for
+`boto3.client("servicecatalog").import_as_provisioned_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product]
+Boto3 documentation:
+[ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
 
-```python
-def import_as_provisioned_product(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    ProvisionedProductName: str,
-    PhysicalId: str,
-    IdempotencyToken: str,
-    AcceptLanguage: str = None
-) -> ImportAsProvisionedProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `ProvisionedProductName`: `str` *(required)*
+- `PhysicalId`: `str` *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[ImportAsProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#importasprovisionedproductoutputtypedef).
 
 ### list_accepted_portfolio_shares
 
-Type annotations for `boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
+Type annotations for
+`boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares]
+Boto3 documentation:
+[ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
 
-```python
-def list_accepted_portfolio_shares(
-    self,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None,
-    PortfolioShareType: PortfolioShareType = None
-) -> ListAcceptedPortfolioSharesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+- `PortfolioShareType`:
+  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+
+Returns
+[ListAcceptedPortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listacceptedportfoliosharesoutputtypedef).
 
 ### list_budgets_for_resource
 
-Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource` method.
+Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource]
+Boto3 documentation:
+[ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
 
-```python
-def list_budgets_for_resource(
-    self,
-    ResourceId: str,
-    AcceptLanguage: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListBudgetsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListBudgetsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listbudgetsforresourceoutputtypedef).
 
 ### list_constraints_for_portfolio
 
-Type annotations for `boto3.client("servicecatalog").list_constraints_for_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").list_constraints_for_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
 
-```python
-def list_constraints_for_portfolio(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    ProductId: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListConstraintsForPortfolioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `ProductId`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListConstraintsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listconstraintsforportfoliooutputtypedef).
 
 ### list_launch_paths
 
 Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths]
+Boto3 documentation:
+[ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
 
-```python
-def list_launch_paths(
-    self,
-    ProductId: str,
-    AcceptLanguage: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListLaunchPathsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListLaunchPathsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listlaunchpathsoutputtypedef).
 
 ### list_organization_portfolio_access
 
-Type annotations for `boto3.client("servicecatalog").list_organization_portfolio_access` method.
+Type annotations for
+`boto3.client("servicecatalog").list_organization_portfolio_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access]
+Boto3 documentation:
+[ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
 
-```python
-def list_organization_portfolio_access(
-    self,
-    PortfolioId: str,
-    OrganizationNodeType: OrganizationNodeType,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> ListOrganizationPortfolioAccessOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `OrganizationNodeType`:
+  [OrganizationNodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#organizationnodetype)
+  *(required)*
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListOrganizationPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listorganizationportfolioaccessoutputtypedef).
 
 ### list_portfolio_access
 
-Type annotations for `boto3.client("servicecatalog").list_portfolio_access` method.
+Type annotations for `boto3.client("servicecatalog").list_portfolio_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access]
+Boto3 documentation:
+[ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
 
-```python
-def list_portfolio_access(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    OrganizationParentId: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> ListPortfolioAccessOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `OrganizationParentId`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfolioaccessoutputtypedef).
 
 ### list_portfolios
 
 Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios]
+Boto3 documentation:
+[ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
 
-```python
-def list_portfolios(
-    self,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> ListPortfoliosOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListPortfoliosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosoutputtypedef).
 
 ### list_portfolios_for_product
 
-Type annotations for `boto3.client("servicecatalog").list_portfolios_for_product` method.
+Type annotations for
+`boto3.client("servicecatalog").list_portfolios_for_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product]
+Boto3 documentation:
+[ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
 
-```python
-def list_portfolios_for_product(
-    self,
-    ProductId: str,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> ListPortfoliosForProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListPortfoliosForProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosforproductoutputtypedef).
 
 ### list_principals_for_portfolio
 
-Type annotations for `boto3.client("servicecatalog").list_principals_for_portfolio` method.
+Type annotations for
+`boto3.client("servicecatalog").list_principals_for_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
 
-```python
-def list_principals_for_portfolio(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListPrincipalsForPortfolioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListPrincipalsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprincipalsforportfoliooutputtypedef).
 
 ### list_provisioned_product_plans
 
-Type annotations for `boto3.client("servicecatalog").list_provisioned_product_plans` method.
+Type annotations for
+`boto3.client("servicecatalog").list_provisioned_product_plans` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans]
+Boto3 documentation:
+[ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
 
-```python
-def list_provisioned_product_plans(
-    self,
-    AcceptLanguage: str = None,
-    ProvisionProductId: str = None,
-    PageSize: int = None,
-    PageToken: str = None,
-    AccessLevelFilter: AccessLevelFilterTypeDef = None
-) -> ListProvisionedProductPlansOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `ProvisionProductId`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+
+Returns
+[ListProvisionedProductPlansOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisionedproductplansoutputtypedef).
 
 ### list_provisioning_artifacts
 
-Type annotations for `boto3.client("servicecatalog").list_provisioning_artifacts` method.
+Type annotations for
+`boto3.client("servicecatalog").list_provisioning_artifacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts]
+Boto3 documentation:
+[ServiceCatalog.Client.list_provisioning_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
 
-```python
-def list_provisioning_artifacts(
-    self,
-    ProductId: str,
-    AcceptLanguage: str = None
-) -> ListProvisioningArtifactsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[ListProvisioningArtifactsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsoutputtypedef).
 
 ### list_provisioning_artifacts_for_service_action
 
-Type annotations for `boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action` method.
+Type annotations for
+`boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
 
-```python
-def list_provisioning_artifacts_for_service_action(
-    self,
-    ServiceActionId: str,
-    PageSize: int = None,
-    PageToken: str = None,
-    AcceptLanguage: str = None
-) -> ListProvisioningArtifactsForServiceActionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceActionId`: `str` *(required)*
+- `PageSize`: `int`
+- `PageToken`: `str`
+- `AcceptLanguage`: `str`
+
+Returns
+[ListProvisioningArtifactsForServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsforserviceactionoutputtypedef).
 
 ### list_record_history
 
-Type annotations for `boto3.client("servicecatalog").list_record_history` method.
+Type annotations for `boto3.client("servicecatalog").list_record_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history]
+Boto3 documentation:
+[ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
 
-```python
-def list_record_history(
-    self,
-    AcceptLanguage: str = None,
-    AccessLevelFilter: AccessLevelFilterTypeDef = None,
-    SearchFilter: ListRecordHistorySearchFilterTypeDef = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListRecordHistoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `SearchFilter`:
+  [ListRecordHistorySearchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistorysearchfiltertypedef)
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListRecordHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistoryoutputtypedef).
 
 ### list_resources_for_tag_option
 
-Type annotations for `boto3.client("servicecatalog").list_resources_for_tag_option` method.
+Type annotations for
+`boto3.client("servicecatalog").list_resources_for_tag_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option]
+Boto3 documentation:
+[ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
 
-```python
-def list_resources_for_tag_option(
-    self,
-    TagOptionId: str,
-    ResourceType: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListResourcesForTagOptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TagOptionId`: `str` *(required)*
+- `ResourceType`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListResourcesForTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listresourcesfortagoptionoutputtypedef).
 
 ### list_service_actions
 
-Type annotations for `boto3.client("servicecatalog").list_service_actions` method.
+Type annotations for `boto3.client("servicecatalog").list_service_actions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions]
+Boto3 documentation:
+[ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
 
-```python
-def list_service_actions(
-    self,
-    AcceptLanguage: str = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListServiceActionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListServiceActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsoutputtypedef).
 
 ### list_service_actions_for_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
 
-```python
-def list_service_actions_for_provisioning_artifact(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    PageSize: int = None,
-    PageToken: str = None,
-    AcceptLanguage: str = None
-) -> ListServiceActionsForProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `PageSize`: `int`
+- `PageToken`: `str`
+- `AcceptLanguage`: `str`
+
+Returns
+[ListServiceActionsForProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsforprovisioningartifactoutputtypedef).
 
 ### list_stack_instances_for_provisioned_product
 
-Type annotations for `boto3.client("servicecatalog").list_stack_instances_for_provisioned_product` method.
+Type annotations for
+`boto3.client("servicecatalog").list_stack_instances_for_provisioned_product`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product]
+Boto3 documentation:
+[ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
 
-```python
-def list_stack_instances_for_provisioned_product(
-    self,
-    ProvisionedProductId: str,
-    AcceptLanguage: str = None,
-    PageToken: str = None,
-    PageSize: int = None
-) -> ListStackInstancesForProvisionedProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProvisionedProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PageToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListStackInstancesForProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#liststackinstancesforprovisionedproductoutputtypedef).
 
 ### list_tag_options
 
 Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options]
+Boto3 documentation:
+[ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
 
-```python
-def list_tag_options(
-    self,
-    Filters: ListTagOptionsFiltersTypeDef = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ListTagOptionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  [ListTagOptionsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsfilterstypedef)
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ListTagOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsoutputtypedef).
 
 ### provision_product
 
 Type annotations for `boto3.client("servicecatalog").provision_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product]
+Boto3 documentation:
+[ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
 
-```python
-def provision_product(
-    self,
-    ProvisionedProductName: str,
-    ProvisionToken: str,
-    AcceptLanguage: str = None,
-    ProductId: str = None,
-    ProductName: str = None,
-    ProvisioningArtifactId: str = None,
-    ProvisioningArtifactName: str = None,
-    PathId: str = None,
-    PathName: str = None,
-    ProvisioningParameters: List[ProvisioningParameterTypeDef] = None,
-    ProvisioningPreferences: ProvisioningPreferencesTypeDef = None,
-    Tags: List["TagTypeDef"] = None,
-    NotificationArns: List[str] = None
-) -> ProvisionProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProvisionedProductName`: `str` *(required)*
+- `ProvisionToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `ProductId`: `str`
+- `ProductName`: `str`
+- `ProvisioningArtifactId`: `str`
+- `ProvisioningArtifactName`: `str`
+- `PathId`: `str`
+- `PathName`: `str`
+- `ProvisioningParameters`:
+  `List`\[[ProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningparametertypedef)\]
+- `ProvisioningPreferences`:
+  [ProvisioningPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningpreferencestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `NotificationArns`: `List`\[`str`\]
+
+Returns
+[ProvisionProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionproductoutputtypedef).
 
 ### reject_portfolio_share
 
-Type annotations for `boto3.client("servicecatalog").reject_portfolio_share` method.
+Type annotations for `boto3.client("servicecatalog").reject_portfolio_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share]
+Boto3 documentation:
+[ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
 
-```python
-def reject_portfolio_share(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    PortfolioShareType: PortfolioShareType = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PortfolioShareType`:
+  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### scan_provisioned_products
 
-Type annotations for `boto3.client("servicecatalog").scan_provisioned_products` method.
+Type annotations for `boto3.client("servicecatalog").scan_provisioned_products`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products]
+Boto3 documentation:
+[ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
 
-```python
-def scan_provisioned_products(
-    self,
-    AcceptLanguage: str = None,
-    AccessLevelFilter: AccessLevelFilterTypeDef = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> ScanProvisionedProductsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[ScanProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#scanprovisionedproductsoutputtypedef).
 
 ### search_products
 
 Type annotations for `boto3.client("servicecatalog").search_products` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products]
+Boto3 documentation:
+[ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
 
-```python
-def search_products(
-    self,
-    AcceptLanguage: str = None,
-    Filters: Dict[ProductViewFilterBy, List[str]] = None,
-    PageSize: int = None,
-    SortBy: ProductViewSortBy = None,
-    SortOrder: SortOrder = None,
-    PageToken: str = None
-) -> SearchProductsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `Filters`:
+  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+  `List`\[`str`\]\]
+- `PageSize`: `int`
+- `SortBy`:
+  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `PageToken`: `str`
+
+Returns
+[SearchProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsoutputtypedef).
 
 ### search_products_as_admin
 
-Type annotations for `boto3.client("servicecatalog").search_products_as_admin` method.
+Type annotations for `boto3.client("servicecatalog").search_products_as_admin`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin]
+Boto3 documentation:
+[ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
 
-```python
-def search_products_as_admin(
-    self,
-    AcceptLanguage: str = None,
-    PortfolioId: str = None,
-    Filters: Dict[ProductViewFilterBy, List[str]] = None,
-    SortBy: ProductViewSortBy = None,
-    SortOrder: SortOrder = None,
-    PageToken: str = None,
-    PageSize: int = None,
-    ProductSource: Literal['ACCOUNT'] = None
-) -> SearchProductsAsAdminOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `PortfolioId`: `str`
+- `Filters`:
+  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+  `List`\[`str`\]\]
+- `SortBy`:
+  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `PageToken`: `str`
+- `PageSize`: `int`
+- `ProductSource`: `Literal['ACCOUNT']`
+
+Returns
+[SearchProductsAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsasadminoutputtypedef).
 
 ### search_provisioned_products
 
-Type annotations for `boto3.client("servicecatalog").search_provisioned_products` method.
+Type annotations for
+`boto3.client("servicecatalog").search_provisioned_products` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products]
+Boto3 documentation:
+[ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
 
-```python
-def search_provisioned_products(
-    self,
-    AcceptLanguage: str = None,
-    AccessLevelFilter: AccessLevelFilterTypeDef = None,
-    Filters: Dict[Literal['SearchQuery'], List[str]] = None,
-    SortBy: str = None,
-    SortOrder: SortOrder = None,
-    PageSize: int = None,
-    PageToken: str = None
-) -> SearchProvisionedProductsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AcceptLanguage`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `Filters`: `Dict`\[`Literal['SearchQuery']`, `List`\[`str`\]\]
+- `SortBy`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `PageSize`: `int`
+- `PageToken`: `str`
+
+Returns
+[SearchProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchprovisionedproductsoutputtypedef).
 
 ### terminate_provisioned_product
 
-Type annotations for `boto3.client("servicecatalog").terminate_provisioned_product` method.
+Type annotations for
+`boto3.client("servicecatalog").terminate_provisioned_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product]
+Boto3 documentation:
+[ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
 
-```python
-def terminate_provisioned_product(
-    self,
-    TerminateToken: str,
-    ProvisionedProductName: str = None,
-    ProvisionedProductId: str = None,
-    IgnoreErrors: bool = None,
-    AcceptLanguage: str = None,
-    RetainPhysicalResources: bool = None
-) -> TerminateProvisionedProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TerminateToken`: `str` *(required)*
+- `ProvisionedProductName`: `str`
+- `ProvisionedProductId`: `str`
+- `IgnoreErrors`: `bool`
+- `AcceptLanguage`: `str`
+- `RetainPhysicalResources`: `bool`
+
+Returns
+[TerminateProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#terminateprovisionedproductoutputtypedef).
 
 ### update_constraint
 
 Type annotations for `boto3.client("servicecatalog").update_constraint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint]
+Boto3 documentation:
+[ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
 
-```python
-def update_constraint(
-    self,
-    Id: str,
-    AcceptLanguage: str = None,
-    Description: str = None,
-    Parameters: str = None
-) -> UpdateConstraintOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Description`: `str`
+- `Parameters`: `str`
+
+Returns
+[UpdateConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateconstraintoutputtypedef).
 
 ### update_portfolio
 
 Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio]
+Boto3 documentation:
+[ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
 
-```python
-def update_portfolio(
-    self,
-    Id: str,
-    AcceptLanguage: str = None,
-    DisplayName: str = None,
-    Description: str = None,
-    ProviderName: str = None,
-    AddTags: List["TagTypeDef"] = None,
-    RemoveTags: List[str] = None
-) -> UpdatePortfolioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `DisplayName`: `str`
+- `Description`: `str`
+- `ProviderName`: `str`
+- `AddTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `RemoveTags`: `List`\[`str`\]
+
+Returns
+[UpdatePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateportfoliooutputtypedef).
 
 ### update_portfolio_share
 
-Type annotations for `boto3.client("servicecatalog").update_portfolio_share` method.
+Type annotations for `boto3.client("servicecatalog").update_portfolio_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share]
+Boto3 documentation:
+[ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
 
-```python
-def update_portfolio_share(
-    self,
-    PortfolioId: str,
-    AcceptLanguage: str = None,
-    AccountId: str = None,
-    OrganizationNode: "OrganizationNodeTypeDef" = None,
-    ShareTagOptions: bool = None
-) -> UpdatePortfolioShareOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `AccountId`: `str`
+- `OrganizationNode`:
+  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+- `ShareTagOptions`: `bool`
+
+Returns
+[UpdatePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateportfolioshareoutputtypedef).
 
 ### update_product
 
 Type annotations for `boto3.client("servicecatalog").update_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product]
+Boto3 documentation:
+[ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
 
-```python
-def update_product(
-    self,
-    Id: str,
-    AcceptLanguage: str = None,
-    Name: str = None,
-    Owner: str = None,
-    Description: str = None,
-    Distributor: str = None,
-    SupportDescription: str = None,
-    SupportEmail: str = None,
-    SupportUrl: str = None,
-    AddTags: List["TagTypeDef"] = None,
-    RemoveTags: List[str] = None
-) -> UpdateProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Name`: `str`
+- `Owner`: `str`
+- `Description`: `str`
+- `Distributor`: `str`
+- `SupportDescription`: `str`
+- `SupportEmail`: `str`
+- `SupportUrl`: `str`
+- `AddTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `RemoveTags`: `List`\[`str`\]
+
+Returns
+[UpdateProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateproductoutputtypedef).
 
 ### update_provisioned_product
 
-Type annotations for `boto3.client("servicecatalog").update_provisioned_product` method.
+Type annotations for
+`boto3.client("servicecatalog").update_provisioned_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product]
+Boto3 documentation:
+[ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
 
-```python
-def update_provisioned_product(
-    self,
-    UpdateToken: str,
-    AcceptLanguage: str = None,
-    ProvisionedProductName: str = None,
-    ProvisionedProductId: str = None,
-    ProductId: str = None,
-    ProductName: str = None,
-    ProvisioningArtifactId: str = None,
-    ProvisioningArtifactName: str = None,
-    PathId: str = None,
-    PathName: str = None,
-    ProvisioningParameters: List["UpdateProvisioningParameterTypeDef"] = None,
-    ProvisioningPreferences: UpdateProvisioningPreferencesTypeDef = None,
-    Tags: List["TagTypeDef"] = None
-) -> UpdateProvisionedProductOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `UpdateToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `ProvisionedProductName`: `str`
+- `ProvisionedProductId`: `str`
+- `ProductId`: `str`
+- `ProductName`: `str`
+- `ProvisioningArtifactId`: `str`
+- `ProvisioningArtifactName`: `str`
+- `PathId`: `str`
+- `PathName`: `str`
+- `ProvisioningParameters`:
+  `List`\[[UpdateProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningparametertypedef)\]
+- `ProvisioningPreferences`:
+  [UpdateProvisioningPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningpreferencestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+
+Returns
+[UpdateProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisionedproductoutputtypedef).
 
 ### update_provisioned_product_properties
 
-Type annotations for `boto3.client("servicecatalog").update_provisioned_product_properties` method.
+Type annotations for
+`boto3.client("servicecatalog").update_provisioned_product_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties]
+Boto3 documentation:
+[ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
 
-```python
-def update_provisioned_product_properties(
-    self,
-    ProvisionedProductId: str,
-    ProvisionedProductProperties: Dict[PropertyKey, str],
-    IdempotencyToken: str,
-    AcceptLanguage: str = None
-) -> UpdateProvisionedProductPropertiesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProvisionedProductId`: `str` *(required)*
+- `ProvisionedProductProperties`:
+  `Dict`\[[PropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#propertykey),
+  `str`\] *(required)*
+- `IdempotencyToken`: `str` *(required)*
+- `AcceptLanguage`: `str`
+
+Returns
+[UpdateProvisionedProductPropertiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisionedproductpropertiesoutputtypedef).
 
 ### update_provisioning_artifact
 
-Type annotations for `boto3.client("servicecatalog").update_provisioning_artifact` method.
+Type annotations for
+`boto3.client("servicecatalog").update_provisioning_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact]
+Boto3 documentation:
+[ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
 
-```python
-def update_provisioning_artifact(
-    self,
-    ProductId: str,
-    ProvisioningArtifactId: str,
-    AcceptLanguage: str = None,
-    Name: str = None,
-    Description: str = None,
-    Active: bool = None,
-    Guidance: ProvisioningArtifactGuidance = None
-) -> UpdateProvisioningArtifactOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Active`: `bool`
+- `Guidance`:
+  [ProvisioningArtifactGuidance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifactguidance)
+
+Returns
+[UpdateProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningartifactoutputtypedef).
 
 ### update_service_action
 
-Type annotations for `boto3.client("servicecatalog").update_service_action` method.
+Type annotations for `boto3.client("servicecatalog").update_service_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action]
+Boto3 documentation:
+[ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
 
-```python
-def update_service_action(
-    self,
-    Id: str,
-    Name: str = None,
-    Definition: Dict[ServiceActionDefinitionKey, str] = None,
-    Description: str = None,
-    AcceptLanguage: str = None
-) -> UpdateServiceActionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Definition`:
+  `Dict`\[[ServiceActionDefinitionKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactiondefinitionkey),
+  `str`\]
+- `Description`: `str`
+- `AcceptLanguage`: `str`
+
+Returns
+[UpdateServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateserviceactionoutputtypedef).
 
 ### update_tag_option
 
 Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option]
+Boto3 documentation:
+[ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
 
-```python
-def update_tag_option(
-    self,
-    Id: str,
-    Value: str = None,
-    Active: bool = None
-) -> UpdateTagOptionOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `Value`: `str`
+- `Active`: `bool`
 
+Returns
+[UpdateTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updatetagoptionoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator` method with overloads.
+Type annotations for `boto3.client("servicecatalog").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_accepted_portfolio_shares")` -> [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
-- `client.get_paginator("list_constraints_for_portfolio")` -> [ListConstraintsForPortfolioPaginator](./paginators.md#listconstraintsforportfoliopaginator)
-- `client.get_paginator("list_launch_paths")` -> [ListLaunchPathsPaginator](./paginators.md#listlaunchpathspaginator)
-- `client.get_paginator("list_organization_portfolio_access")` -> [ListOrganizationPortfolioAccessPaginator](./paginators.md#listorganizationportfolioaccesspaginator)
-- `client.get_paginator("list_portfolios")` -> [ListPortfoliosPaginator](./paginators.md#listportfoliospaginator)
-- `client.get_paginator("list_portfolios_for_product")` -> [ListPortfoliosForProductPaginator](./paginators.md#listportfoliosforproductpaginator)
-- `client.get_paginator("list_principals_for_portfolio")` -> [ListPrincipalsForPortfolioPaginator](./paginators.md#listprincipalsforportfoliopaginator)
-- `client.get_paginator("list_provisioned_product_plans")` -> [ListProvisionedProductPlansPaginator](./paginators.md#listprovisionedproductplanspaginator)
-- `client.get_paginator("list_provisioning_artifacts_for_service_action")` -> [ListProvisioningArtifactsForServiceActionPaginator](./paginators.md#listprovisioningartifactsforserviceactionpaginator)
-- `client.get_paginator("list_record_history")` -> [ListRecordHistoryPaginator](./paginators.md#listrecordhistorypaginator)
-- `client.get_paginator("list_resources_for_tag_option")` -> [ListResourcesForTagOptionPaginator](./paginators.md#listresourcesfortagoptionpaginator)
-- `client.get_paginator("list_service_actions")` -> [ListServiceActionsPaginator](./paginators.md#listserviceactionspaginator)
-- `client.get_paginator("list_service_actions_for_provisioning_artifact")` -> [ListServiceActionsForProvisioningArtifactPaginator](./paginators.md#listserviceactionsforprovisioningartifactpaginator)
-- `client.get_paginator("list_tag_options")` -> [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
-- `client.get_paginator("scan_provisioned_products")` -> [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
-- `client.get_paginator("search_products_as_admin")` -> [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
-
-
+- `client.get_paginator("list_accepted_portfolio_shares")` ->
+  [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
+- `client.get_paginator("list_constraints_for_portfolio")` ->
+  [ListConstraintsForPortfolioPaginator](./paginators.md#listconstraintsforportfoliopaginator)
+- `client.get_paginator("list_launch_paths")` ->
+  [ListLaunchPathsPaginator](./paginators.md#listlaunchpathspaginator)
+- `client.get_paginator("list_organization_portfolio_access")` ->
+  [ListOrganizationPortfolioAccessPaginator](./paginators.md#listorganizationportfolioaccesspaginator)
+- `client.get_paginator("list_portfolios")` ->
+  [ListPortfoliosPaginator](./paginators.md#listportfoliospaginator)
+- `client.get_paginator("list_portfolios_for_product")` ->
+  [ListPortfoliosForProductPaginator](./paginators.md#listportfoliosforproductpaginator)
+- `client.get_paginator("list_principals_for_portfolio")` ->
+  [ListPrincipalsForPortfolioPaginator](./paginators.md#listprincipalsforportfoliopaginator)
+- `client.get_paginator("list_provisioned_product_plans")` ->
+  [ListProvisionedProductPlansPaginator](./paginators.md#listprovisionedproductplanspaginator)
+- `client.get_paginator("list_provisioning_artifacts_for_service_action")` ->
+  [ListProvisioningArtifactsForServiceActionPaginator](./paginators.md#listprovisioningartifactsforserviceactionpaginator)
+- `client.get_paginator("list_record_history")` ->
+  [ListRecordHistoryPaginator](./paginators.md#listrecordhistorypaginator)
+- `client.get_paginator("list_resources_for_tag_option")` ->
+  [ListResourcesForTagOptionPaginator](./paginators.md#listresourcesfortagoptionpaginator)
+- `client.get_paginator("list_service_actions")` ->
+  [ListServiceActionsPaginator](./paginators.md#listserviceactionspaginator)
+- `client.get_paginator("list_service_actions_for_provisioning_artifact")` ->
+  [ListServiceActionsForProvisioningArtifactPaginator](./paginators.md#listserviceactionsforprovisioningartifactpaginator)
+- `client.get_paginator("list_tag_options")` ->
+  [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
+- `client.get_paginator("scan_provisioned_products")` ->
+  [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
+- `client.get_paginator("search_products_as_admin")` ->
+  [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)

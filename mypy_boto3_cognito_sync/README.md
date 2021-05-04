@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CognitoSync
 
-Auto-generated documentation for [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
-type annotations stubs module [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+Auto-generated documentation for
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+type annotations stubs module
+[mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 ```bash
 pip install mypy-boto3-cognito-sync
@@ -18,7 +20,8 @@ pip install mypy-boto3-cognito-sync
 
 ## CognitoSyncClient
 
-Type annotations for  `boto3.client("cognito-sync")` as [CognitoSyncClient](./client.md)
+Type annotations for `boto3.client("cognito-sync")` as
+[CognitoSyncClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 ```
 
-
 CognitoSyncClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [bulk_publish](./client.md#bulk-publish)
 - [can_paginate](./client.md#can-paginate)
 - [delete_dataset](./client.md#delete-dataset)
@@ -52,10 +53,8 @@ CognitoSyncClient [exceptions](./client.md#exceptions)
 - [unsubscribe_from_dataset](./client.md#unsubscribe-from-dataset)
 - [update_records](./client.md#update-records)
 
-
-
-
 ### Exceptions
+
 - [AlreadyStreamedException](./client.md#alreadystreamedexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -70,15 +69,6 @@ CognitoSyncClient [exceptions](./client.md#exceptions)
 - [ResourceConflictException](./client.md#resourceconflictexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -95,13 +85,10 @@ from mypy_boto3_cognito_sync.literals import BulkPublishStatus, ...
 - [Platform](./literals.md#platform)
 - [StreamingStatus](./literals.md#streamingstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

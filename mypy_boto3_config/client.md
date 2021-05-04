@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ConfigService](./README.md) > ConfigServiceClient
 
-Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+Auto-generated documentation for
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+type annotations stubs module
+[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
 - [ConfigServiceClient for boto3 ConfigService module](#configserviceclient-for-boto3-configservice-module)
   - [ConfigServiceClient](#configserviceclient)
@@ -112,12 +114,13 @@ def get_config_client() -> ConfigServiceClient:
     return boto3.client("config")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
+Boto3 documentation:
+[ConfigService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_config.client import Exceptions
@@ -125,7 +128,6 @@ from mypy_boto3_config.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -184,1413 +186,1492 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### batch_get_aggregate_resource_config
 
-Type annotations for `boto3.client("config").batch_get_aggregate_resource_config` method.
+Type annotations for
+`boto3.client("config").batch_get_aggregate_resource_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config]
+Boto3 documentation:
+[ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
 
-```python
-def batch_get_aggregate_resource_config(
-    self,
-    ConfigurationAggregatorName: str,
-    ResourceIdentifiers: List["AggregateResourceIdentifierTypeDef"]
-) -> BatchGetAggregateResourceConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ResourceIdentifiers`:
+  `List`\[[AggregateResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateresourceidentifiertypedef)\]
+  *(required)*
+
+Returns
+[BatchGetAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#batchgetaggregateresourceconfigresponsetypedef).
 
 ### batch_get_resource_config
 
 Type annotations for `boto3.client("config").batch_get_resource_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config]
+Boto3 documentation:
+[ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
 
-```python
-def batch_get_resource_config(
-    self,
-    resourceKeys: List["ResourceKeyTypeDef"]
-) -> BatchGetResourceConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceKeys`:
+  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+  *(required)*
+
+Returns
+[BatchGetResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#batchgetresourceconfigresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("config").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.can_paginate]
+Boto3 documentation:
+[ConfigService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_aggregation_authorization
 
-Type annotations for `boto3.client("config").delete_aggregation_authorization` method.
+Type annotations for `boto3.client("config").delete_aggregation_authorization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization]
+Boto3 documentation:
+[ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
 
-```python
-def delete_aggregation_authorization(
-    self,
-    AuthorizedAccountId: str,
-    AuthorizedAwsRegion: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AuthorizedAccountId`: `str` *(required)*
+- `AuthorizedAwsRegion`: `str` *(required)*
 
 ### delete_config_rule
 
 Type annotations for `boto3.client("config").delete_config_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule]
+Boto3 documentation:
+[ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
 
-```python
-def delete_config_rule(
-    self,
-    ConfigRuleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
 
 ### delete_configuration_aggregator
 
-Type annotations for `boto3.client("config").delete_configuration_aggregator` method.
+Type annotations for `boto3.client("config").delete_configuration_aggregator`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator]
+Boto3 documentation:
+[ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
 
-```python
-def delete_configuration_aggregator(
-    self,
-    ConfigurationAggregatorName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
 
 ### delete_configuration_recorder
 
-Type annotations for `boto3.client("config").delete_configuration_recorder` method.
+Type annotations for `boto3.client("config").delete_configuration_recorder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder]
+Boto3 documentation:
+[ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
 
-```python
-def delete_configuration_recorder(
-    self,
-    ConfigurationRecorderName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorderName`: `str` *(required)*
 
 ### delete_conformance_pack
 
 Type annotations for `boto3.client("config").delete_conformance_pack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack]
+Boto3 documentation:
+[ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
 
-```python
-def delete_conformance_pack(
-    self,
-    ConformancePackName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConformancePackName`: `str` *(required)*
 
 ### delete_delivery_channel
 
 Type annotations for `boto3.client("config").delete_delivery_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel]
+Boto3 documentation:
+[ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
 
-```python
-def delete_delivery_channel(
-    self,
-    DeliveryChannelName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeliveryChannelName`: `str` *(required)*
 
 ### delete_evaluation_results
 
 Type annotations for `boto3.client("config").delete_evaluation_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results]
+Boto3 documentation:
+[ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
 
-```python
-def delete_evaluation_results(
-    self,
-    ConfigRuleName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_organization_config_rule
 
-Type annotations for `boto3.client("config").delete_organization_config_rule` method.
+Type annotations for `boto3.client("config").delete_organization_config_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule]
+Boto3 documentation:
+[ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
 
-```python
-def delete_organization_config_rule(
-    self,
-    OrganizationConfigRuleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OrganizationConfigRuleName`: `str` *(required)*
 
 ### delete_organization_conformance_pack
 
-Type annotations for `boto3.client("config").delete_organization_conformance_pack` method.
+Type annotations for
+`boto3.client("config").delete_organization_conformance_pack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack]
+Boto3 documentation:
+[ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
 
-```python
-def delete_organization_conformance_pack(
-    self,
-    OrganizationConformancePackName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OrganizationConformancePackName`: `str` *(required)*
 
 ### delete_pending_aggregation_request
 
-Type annotations for `boto3.client("config").delete_pending_aggregation_request` method.
+Type annotations for
+`boto3.client("config").delete_pending_aggregation_request` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request]
+Boto3 documentation:
+[ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
 
-```python
-def delete_pending_aggregation_request(
-    self,
-    RequesterAccountId: str,
-    RequesterAwsRegion: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RequesterAccountId`: `str` *(required)*
+- `RequesterAwsRegion`: `str` *(required)*
 
 ### delete_remediation_configuration
 
-Type annotations for `boto3.client("config").delete_remediation_configuration` method.
+Type annotations for `boto3.client("config").delete_remediation_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration]
+Boto3 documentation:
+[ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
 
-```python
-def delete_remediation_configuration(
-    self,
-    ConfigRuleName: str,
-    ResourceType: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceType`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_remediation_exceptions
 
-Type annotations for `boto3.client("config").delete_remediation_exceptions` method.
+Type annotations for `boto3.client("config").delete_remediation_exceptions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions]
+Boto3 documentation:
+[ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
 
-```python
-def delete_remediation_exceptions(
-    self,
-    ConfigRuleName: str,
-    ResourceKeys: List["RemediationExceptionResourceKeyTypeDef"]
-) -> DeleteRemediationExceptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+  *(required)*
+
+Returns
+[DeleteRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deleteremediationexceptionsresponsetypedef).
 
 ### delete_resource_config
 
 Type annotations for `boto3.client("config").delete_resource_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config]
+Boto3 documentation:
+[ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
 
-```python
-def delete_resource_config(
-    self,
-    ResourceType: str,
-    ResourceId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceType`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
 
 ### delete_retention_configuration
 
-Type annotations for `boto3.client("config").delete_retention_configuration` method.
+Type annotations for `boto3.client("config").delete_retention_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration]
+Boto3 documentation:
+[ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
 
-```python
-def delete_retention_configuration(
-    self,
-    RetentionConfigurationName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RetentionConfigurationName`: `str` *(required)*
 
 ### delete_stored_query
 
 Type annotations for `boto3.client("config").delete_stored_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query]
+Boto3 documentation:
+[ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
 
-```python
-def delete_stored_query(
-    self,
-    QueryName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QueryName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deliver_config_snapshot
 
 Type annotations for `boto3.client("config").deliver_config_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot]
+Boto3 documentation:
+[ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
 
-```python
-def deliver_config_snapshot(
-    self,
-    deliveryChannelName: str
-) -> DeliverConfigSnapshotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `deliveryChannelName`: `str` *(required)*
+
+Returns
+[DeliverConfigSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deliverconfigsnapshotresponsetypedef).
 
 ### describe_aggregate_compliance_by_config_rules
 
-Type annotations for `boto3.client("config").describe_aggregate_compliance_by_config_rules` method.
+Type annotations for
+`boto3.client("config").describe_aggregate_compliance_by_config_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules]
+Boto3 documentation:
+[ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
 
-```python
-def describe_aggregate_compliance_by_config_rules(
-    self,
-    ConfigurationAggregatorName: str,
-    Filters: ConfigRuleComplianceFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeAggregateComplianceByConfigRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [ConfigRuleComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAggregateComplianceByConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconfigrulesresponsetypedef).
 
 ### describe_aggregate_compliance_by_conformance_packs
 
-Type annotations for `boto3.client("config").describe_aggregate_compliance_by_conformance_packs` method.
+Type annotations for
+`boto3.client("config").describe_aggregate_compliance_by_conformance_packs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs]
+Boto3 documentation:
+[ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
 
-```python
-def describe_aggregate_compliance_by_conformance_packs(
-    self,
-    ConfigurationAggregatorName: str,
-    Filters: AggregateConformancePackComplianceFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeAggregateComplianceByConformancePacksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [AggregateConformancePackComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateconformancepackcompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAggregateComplianceByConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconformancepacksresponsetypedef).
 
 ### describe_aggregation_authorizations
 
-Type annotations for `boto3.client("config").describe_aggregation_authorizations` method.
+Type annotations for
+`boto3.client("config").describe_aggregation_authorizations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations]
+Boto3 documentation:
+[ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
 
-```python
-def describe_aggregation_authorizations(
-    self,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeAggregationAuthorizationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAggregationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregationauthorizationsresponsetypedef).
 
 ### describe_compliance_by_config_rule
 
-Type annotations for `boto3.client("config").describe_compliance_by_config_rule` method.
+Type annotations for
+`boto3.client("config").describe_compliance_by_config_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule]
+Boto3 documentation:
+[ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
 
-```python
-def describe_compliance_by_config_rule(
-    self,
-    ConfigRuleNames: List[str] = None,
-    ComplianceTypes: List[ComplianceType] = None,
-    NextToken: str = None
-) -> DescribeComplianceByConfigRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `NextToken`: `str`
+
+Returns
+[DescribeComplianceByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyconfigruleresponsetypedef).
 
 ### describe_compliance_by_resource
 
-Type annotations for `boto3.client("config").describe_compliance_by_resource` method.
+Type annotations for `boto3.client("config").describe_compliance_by_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource]
+Boto3 documentation:
+[ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
 
-```python
-def describe_compliance_by_resource(
-    self,
-    ResourceType: str = None,
-    ResourceId: str = None,
-    ComplianceTypes: List[ComplianceType] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeComplianceByResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeComplianceByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyresourceresponsetypedef).
 
 ### describe_config_rule_evaluation_status
 
-Type annotations for `boto3.client("config").describe_config_rule_evaluation_status` method.
+Type annotations for
+`boto3.client("config").describe_config_rule_evaluation_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status]
+Boto3 documentation:
+[ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
 
-```python
-def describe_config_rule_evaluation_status(
-    self,
-    ConfigRuleNames: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeConfigRuleEvaluationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeConfigRuleEvaluationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigruleevaluationstatusresponsetypedef).
 
 ### describe_config_rules
 
 Type annotations for `boto3.client("config").describe_config_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules]
+Boto3 documentation:
+[ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
 
-```python
-def describe_config_rules(
-    self,
-    ConfigRuleNames: List[str] = None,
-    NextToken: str = None
-) -> DescribeConfigRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `NextToken`: `str`
+
+Returns
+[DescribeConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigrulesresponsetypedef).
 
 ### describe_configuration_aggregator_sources_status
 
-Type annotations for `boto3.client("config").describe_configuration_aggregator_sources_status` method.
+Type annotations for
+`boto3.client("config").describe_configuration_aggregator_sources_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status]
+Boto3 documentation:
+[ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
 
-```python
-def describe_configuration_aggregator_sources_status(
-    self,
-    ConfigurationAggregatorName: str,
-    UpdateStatus: List[AggregatedSourceStatusType] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeConfigurationAggregatorSourcesStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `UpdateStatus`:
+  `List`\[[AggregatedSourceStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregatedsourcestatustype)\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsourcesstatusresponsetypedef).
 
 ### describe_configuration_aggregators
 
-Type annotations for `boto3.client("config").describe_configuration_aggregators` method.
+Type annotations for
+`boto3.client("config").describe_configuration_aggregators` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators]
+Boto3 documentation:
+[ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
 
-```python
-def describe_configuration_aggregators(
-    self,
-    ConfigurationAggregatorNames: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeConfigurationAggregatorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeConfigurationAggregatorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsresponsetypedef).
 
 ### describe_configuration_recorder_status
 
-Type annotations for `boto3.client("config").describe_configuration_recorder_status` method.
+Type annotations for
+`boto3.client("config").describe_configuration_recorder_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status]
+Boto3 documentation:
+[ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
 
-```python
-def describe_configuration_recorder_status(
-    self,
-    ConfigurationRecorderNames: List[str] = None
-) -> DescribeConfigurationRecorderStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorderNames`: `List`\[`str`\]
+
+Returns
+[DescribeConfigurationRecorderStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationrecorderstatusresponsetypedef).
 
 ### describe_configuration_recorders
 
-Type annotations for `boto3.client("config").describe_configuration_recorders` method.
+Type annotations for `boto3.client("config").describe_configuration_recorders`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders]
+Boto3 documentation:
+[ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
 
-```python
-def describe_configuration_recorders(
-    self,
-    ConfigurationRecorderNames: List[str] = None
-) -> DescribeConfigurationRecordersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorderNames`: `List`\[`str`\]
+
+Returns
+[DescribeConfigurationRecordersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationrecordersresponsetypedef).
 
 ### describe_conformance_pack_compliance
 
-Type annotations for `boto3.client("config").describe_conformance_pack_compliance` method.
+Type annotations for
+`boto3.client("config").describe_conformance_pack_compliance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance]
+Boto3 documentation:
+[ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
 
-```python
-def describe_conformance_pack_compliance(
-    self,
-    ConformancePackName: str,
-    Filters: ConformancePackComplianceFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeConformancePackComplianceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackName`: `str` *(required)*
+- `Filters`:
+  [ConformancePackComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackcompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeConformancePackComplianceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepackcomplianceresponsetypedef).
 
 ### describe_conformance_pack_status
 
-Type annotations for `boto3.client("config").describe_conformance_pack_status` method.
+Type annotations for `boto3.client("config").describe_conformance_pack_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status]
+Boto3 documentation:
+[ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
 
-```python
-def describe_conformance_pack_status(
-    self,
-    ConformancePackNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeConformancePackStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeConformancePackStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepackstatusresponsetypedef).
 
 ### describe_conformance_packs
 
-Type annotations for `boto3.client("config").describe_conformance_packs` method.
+Type annotations for `boto3.client("config").describe_conformance_packs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs]
+Boto3 documentation:
+[ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
 
-```python
-def describe_conformance_packs(
-    self,
-    ConformancePackNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeConformancePacksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepacksresponsetypedef).
 
 ### describe_delivery_channel_status
 
-Type annotations for `boto3.client("config").describe_delivery_channel_status` method.
+Type annotations for `boto3.client("config").describe_delivery_channel_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status]
+Boto3 documentation:
+[ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
 
-```python
-def describe_delivery_channel_status(
-    self,
-    DeliveryChannelNames: List[str] = None
-) -> DescribeDeliveryChannelStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryChannelNames`: `List`\[`str`\]
+
+Returns
+[DescribeDeliveryChannelStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describedeliverychannelstatusresponsetypedef).
 
 ### describe_delivery_channels
 
-Type annotations for `boto3.client("config").describe_delivery_channels` method.
+Type annotations for `boto3.client("config").describe_delivery_channels`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels]
+Boto3 documentation:
+[ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
 
-```python
-def describe_delivery_channels(
-    self,
-    DeliveryChannelNames: List[str] = None
-) -> DescribeDeliveryChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryChannelNames`: `List`\[`str`\]
+
+Returns
+[DescribeDeliveryChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describedeliverychannelsresponsetypedef).
 
 ### describe_organization_config_rule_statuses
 
-Type annotations for `boto3.client("config").describe_organization_config_rule_statuses` method.
+Type annotations for
+`boto3.client("config").describe_organization_config_rule_statuses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses]
+Boto3 documentation:
+[ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
 
-```python
-def describe_organization_config_rule_statuses(
-    self,
-    OrganizationConfigRuleNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeOrganizationConfigRuleStatusesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeOrganizationConfigRuleStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulestatusesresponsetypedef).
 
 ### describe_organization_config_rules
 
-Type annotations for `boto3.client("config").describe_organization_config_rules` method.
+Type annotations for
+`boto3.client("config").describe_organization_config_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules]
+Boto3 documentation:
+[ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
 
-```python
-def describe_organization_config_rules(
-    self,
-    OrganizationConfigRuleNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeOrganizationConfigRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeOrganizationConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulesresponsetypedef).
 
 ### describe_organization_conformance_pack_statuses
 
-Type annotations for `boto3.client("config").describe_organization_conformance_pack_statuses` method.
+Type annotations for
+`boto3.client("config").describe_organization_conformance_pack_statuses`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses]
+Boto3 documentation:
+[ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
 
-```python
-def describe_organization_conformance_pack_statuses(
-    self,
-    OrganizationConformancePackNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeOrganizationConformancePackStatusesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeOrganizationConformancePackStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepackstatusesresponsetypedef).
 
 ### describe_organization_conformance_packs
 
-Type annotations for `boto3.client("config").describe_organization_conformance_packs` method.
+Type annotations for
+`boto3.client("config").describe_organization_conformance_packs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs]
+Boto3 documentation:
+[ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
 
-```python
-def describe_organization_conformance_packs(
-    self,
-    OrganizationConformancePackNames: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeOrganizationConformancePacksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeOrganizationConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepacksresponsetypedef).
 
 ### describe_pending_aggregation_requests
 
-Type annotations for `boto3.client("config").describe_pending_aggregation_requests` method.
+Type annotations for
+`boto3.client("config").describe_pending_aggregation_requests` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests]
+Boto3 documentation:
+[ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
 
-```python
-def describe_pending_aggregation_requests(
-    self,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribePendingAggregationRequestsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribePendingAggregationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describependingaggregationrequestsresponsetypedef).
 
 ### describe_remediation_configurations
 
-Type annotations for `boto3.client("config").describe_remediation_configurations` method.
+Type annotations for
+`boto3.client("config").describe_remediation_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations]
+Boto3 documentation:
+[ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
 
-```python
-def describe_remediation_configurations(
-    self,
-    ConfigRuleNames: List[str]
-) -> DescribeRemediationConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleNames`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeRemediationConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationconfigurationsresponsetypedef).
 
 ### describe_remediation_exceptions
 
-Type annotations for `boto3.client("config").describe_remediation_exceptions` method.
+Type annotations for `boto3.client("config").describe_remediation_exceptions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions]
+Boto3 documentation:
+[ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
 
-```python
-def describe_remediation_exceptions(
-    self,
-    ConfigRuleName: str,
-    ResourceKeys: List["RemediationExceptionResourceKeyTypeDef"] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeRemediationExceptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexceptionsresponsetypedef).
 
 ### describe_remediation_execution_status
 
-Type annotations for `boto3.client("config").describe_remediation_execution_status` method.
+Type annotations for
+`boto3.client("config").describe_remediation_execution_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status]
+Boto3 documentation:
+[ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
 
-```python
-def describe_remediation_execution_status(
-    self,
-    ConfigRuleName: str,
-    ResourceKeys: List["ResourceKeyTypeDef"] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeRemediationExecutionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeRemediationExecutionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexecutionstatusresponsetypedef).
 
 ### describe_retention_configurations
 
-Type annotations for `boto3.client("config").describe_retention_configurations` method.
+Type annotations for `boto3.client("config").describe_retention_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations]
+Boto3 documentation:
+[ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
 
-```python
-def describe_retention_configurations(
-    self,
-    RetentionConfigurationNames: List[str] = None,
-    NextToken: str = None
-) -> DescribeRetentionConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RetentionConfigurationNames`: `List`\[`str`\]
+- `NextToken`: `str`
+
+Returns
+[DescribeRetentionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeretentionconfigurationsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("config").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.generate_presigned_url]
+Boto3 documentation:
+[ConfigService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_aggregate_compliance_details_by_config_rule
 
-Type annotations for `boto3.client("config").get_aggregate_compliance_details_by_config_rule` method.
+Type annotations for
+`boto3.client("config").get_aggregate_compliance_details_by_config_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule]
+Boto3 documentation:
+[ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
 
-```python
-def get_aggregate_compliance_details_by_config_rule(
-    self,
-    ConfigurationAggregatorName: str,
-    ConfigRuleName: str,
-    AccountId: str,
-    AwsRegion: str,
-    ComplianceType: ComplianceType = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetAggregateComplianceDetailsByConfigRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ConfigRuleName`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `AwsRegion`: `str` *(required)*
+- `ComplianceType`:
+  [ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_aggregate_config_rule_compliance_summary
 
-Type annotations for `boto3.client("config").get_aggregate_config_rule_compliance_summary` method.
+Type annotations for
+`boto3.client("config").get_aggregate_config_rule_compliance_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary]
+Boto3 documentation:
+[ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
 
-```python
-def get_aggregate_config_rule_compliance_summary(
-    self,
-    ConfigurationAggregatorName: str,
-    Filters: ConfigRuleComplianceSummaryFiltersTypeDef = None,
-    GroupByKey: ConfigRuleComplianceSummaryGroupKey = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetAggregateConfigRuleComplianceSummaryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [ConfigRuleComplianceSummaryFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancesummaryfilterstypedef)
+- `GroupByKey`:
+  [ConfigRuleComplianceSummaryGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#configrulecompliancesummarygroupkey)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetAggregateConfigRuleComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateconfigrulecompliancesummaryresponsetypedef).
 
 ### get_aggregate_conformance_pack_compliance_summary
 
-Type annotations for `boto3.client("config").get_aggregate_conformance_pack_compliance_summary` method.
+Type annotations for
+`boto3.client("config").get_aggregate_conformance_pack_compliance_summary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary]
+Boto3 documentation:
+[ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
 
-```python
-def get_aggregate_conformance_pack_compliance_summary(
-    self,
-    ConfigurationAggregatorName: str,
-    Filters: AggregateConformancePackComplianceSummaryFiltersTypeDef = None,
-    GroupByKey: AggregateConformancePackComplianceSummaryGroupKey = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetAggregateConformancePackComplianceSummaryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [AggregateConformancePackComplianceSummaryFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateconformancepackcompliancesummaryfilterstypedef)
+- `GroupByKey`:
+  [AggregateConformancePackComplianceSummaryGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregateconformancepackcompliancesummarygroupkey)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetAggregateConformancePackComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateconformancepackcompliancesummaryresponsetypedef).
 
 ### get_aggregate_discovered_resource_counts
 
-Type annotations for `boto3.client("config").get_aggregate_discovered_resource_counts` method.
+Type annotations for
+`boto3.client("config").get_aggregate_discovered_resource_counts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts]
+Boto3 documentation:
+[ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
 
-```python
-def get_aggregate_discovered_resource_counts(
-    self,
-    ConfigurationAggregatorName: str,
-    Filters: ResourceCountFiltersTypeDef = None,
-    GroupByKey: ResourceCountGroupKey = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetAggregateDiscoveredResourceCountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [ResourceCountFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcecountfilterstypedef)
+- `GroupByKey`:
+  [ResourceCountGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcecountgroupkey)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetAggregateDiscoveredResourceCountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatediscoveredresourcecountsresponsetypedef).
 
 ### get_aggregate_resource_config
 
-Type annotations for `boto3.client("config").get_aggregate_resource_config` method.
+Type annotations for `boto3.client("config").get_aggregate_resource_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config]
+Boto3 documentation:
+[ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
 
-```python
-def get_aggregate_resource_config(
-    self,
-    ConfigurationAggregatorName: str,
-    ResourceIdentifier: "AggregateResourceIdentifierTypeDef"
-) -> GetAggregateResourceConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ResourceIdentifier`:
+  [AggregateResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateresourceidentifiertypedef)
+  *(required)*
+
+Returns
+[GetAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateresourceconfigresponsetypedef).
 
 ### get_compliance_details_by_config_rule
 
-Type annotations for `boto3.client("config").get_compliance_details_by_config_rule` method.
+Type annotations for
+`boto3.client("config").get_compliance_details_by_config_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule]
+Boto3 documentation:
+[ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
 
-```python
-def get_compliance_details_by_config_rule(
-    self,
-    ConfigRuleName: str,
-    ComplianceTypes: List[ComplianceType] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetComplianceDetailsByConfigRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_compliance_details_by_resource
 
-Type annotations for `boto3.client("config").get_compliance_details_by_resource` method.
+Type annotations for
+`boto3.client("config").get_compliance_details_by_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource]
+Boto3 documentation:
+[ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
 
-```python
-def get_compliance_details_by_resource(
-    self,
-    ResourceType: str,
-    ResourceId: str,
-    ComplianceTypes: List[ComplianceType] = None,
-    NextToken: str = None
-) -> GetComplianceDetailsByResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceType`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `NextToken`: `str`
+
+Returns
+[GetComplianceDetailsByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyresourceresponsetypedef).
 
 ### get_compliance_summary_by_config_rule
 
-Type annotations for `boto3.client("config").get_compliance_summary_by_config_rule` method.
+Type annotations for
+`boto3.client("config").get_compliance_summary_by_config_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule]
+Boto3 documentation:
+[ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
 
-```python
-def get_compliance_summary_by_config_rule(
-    self
-) -> GetComplianceSummaryByConfigRuleResponseTypeDef:
-    pass
-```
+Returns
+[GetComplianceSummaryByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancesummarybyconfigruleresponsetypedef).
 
 ### get_compliance_summary_by_resource_type
 
-Type annotations for `boto3.client("config").get_compliance_summary_by_resource_type` method.
+Type annotations for
+`boto3.client("config").get_compliance_summary_by_resource_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type]
+Boto3 documentation:
+[ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
 
-```python
-def get_compliance_summary_by_resource_type(
-    self,
-    ResourceTypes: List[str] = None
-) -> GetComplianceSummaryByResourceTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceTypes`: `List`\[`str`\]
+
+Returns
+[GetComplianceSummaryByResourceTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancesummarybyresourcetyperesponsetypedef).
 
 ### get_conformance_pack_compliance_details
 
-Type annotations for `boto3.client("config").get_conformance_pack_compliance_details` method.
+Type annotations for
+`boto3.client("config").get_conformance_pack_compliance_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details]
+Boto3 documentation:
+[ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
 
-```python
-def get_conformance_pack_compliance_details(
-    self,
-    ConformancePackName: str,
-    Filters: ConformancePackEvaluationFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetConformancePackComplianceDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackName`: `str` *(required)*
+- `Filters`:
+  [ConformancePackEvaluationFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackevaluationfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetConformancePackComplianceDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getconformancepackcompliancedetailsresponsetypedef).
 
 ### get_conformance_pack_compliance_summary
 
-Type annotations for `boto3.client("config").get_conformance_pack_compliance_summary` method.
+Type annotations for
+`boto3.client("config").get_conformance_pack_compliance_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary]
+Boto3 documentation:
+[ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
 
-```python
-def get_conformance_pack_compliance_summary(
-    self,
-    ConformancePackNames: List[str],
-    Limit: int = None,
-    NextToken: str = None
-) -> GetConformancePackComplianceSummaryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackNames`: `List`\[`str`\] *(required)*
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetConformancePackComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getconformancepackcompliancesummaryresponsetypedef).
 
 ### get_discovered_resource_counts
 
-Type annotations for `boto3.client("config").get_discovered_resource_counts` method.
+Type annotations for `boto3.client("config").get_discovered_resource_counts`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts]
+Boto3 documentation:
+[ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
 
-```python
-def get_discovered_resource_counts(
-    self,
-    resourceTypes: List[str] = None,
-    limit: int = None,
-    nextToken: str = None
-) -> GetDiscoveredResourceCountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceTypes`: `List`\[`str`\]
+- `limit`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetDiscoveredResourceCountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getdiscoveredresourcecountsresponsetypedef).
 
 ### get_organization_config_rule_detailed_status
 
-Type annotations for `boto3.client("config").get_organization_config_rule_detailed_status` method.
+Type annotations for
+`boto3.client("config").get_organization_config_rule_detailed_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status]
+Boto3 documentation:
+[ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
 
-```python
-def get_organization_config_rule_detailed_status(
-    self,
-    OrganizationConfigRuleName: str,
-    Filters: StatusDetailFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetOrganizationConfigRuleDetailedStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConfigRuleName`: `str` *(required)*
+- `Filters`:
+  [StatusDetailFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#statusdetailfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconfigruledetailedstatusresponsetypedef).
 
 ### get_organization_conformance_pack_detailed_status
 
-Type annotations for `boto3.client("config").get_organization_conformance_pack_detailed_status` method.
+Type annotations for
+`boto3.client("config").get_organization_conformance_pack_detailed_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status]
+Boto3 documentation:
+[ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
 
-```python
-def get_organization_conformance_pack_detailed_status(
-    self,
-    OrganizationConformancePackName: str,
-    Filters: OrganizationResourceDetailedStatusFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> GetOrganizationConformancePackDetailedStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConformancePackName`: `str` *(required)*
+- `Filters`:
+  [OrganizationResourceDetailedStatusFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationresourcedetailedstatusfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetOrganizationConformancePackDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconformancepackdetailedstatusresponsetypedef).
 
 ### get_resource_config_history
 
-Type annotations for `boto3.client("config").get_resource_config_history` method.
+Type annotations for `boto3.client("config").get_resource_config_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history]
+Boto3 documentation:
+[ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
 
-```python
-def get_resource_config_history(
-    self,
-    resourceType: ResourceType,
-    resourceId: str,
-    laterTime: datetime = None,
-    earlierTime: datetime = None,
-    chronologicalOrder: ChronologicalOrder = None,
-    limit: int = None,
-    nextToken: str = None
-) -> GetResourceConfigHistoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `resourceId`: `str` *(required)*
+- `laterTime`: `datetime`
+- `earlierTime`: `datetime`
+- `chronologicalOrder`:
+  [ChronologicalOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#chronologicalorder)
+- `limit`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetResourceConfigHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getresourceconfighistoryresponsetypedef).
 
 ### get_stored_query
 
 Type annotations for `boto3.client("config").get_stored_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query]
+Boto3 documentation:
+[ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
 
-```python
-def get_stored_query(
-    self,
-    QueryName: str
-) -> GetStoredQueryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryName`: `str` *(required)*
+
+Returns
+[GetStoredQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getstoredqueryresponsetypedef).
 
 ### list_aggregate_discovered_resources
 
-Type annotations for `boto3.client("config").list_aggregate_discovered_resources` method.
+Type annotations for
+`boto3.client("config").list_aggregate_discovered_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources]
+Boto3 documentation:
+[ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
 
-```python
-def list_aggregate_discovered_resources(
-    self,
-    ConfigurationAggregatorName: str,
-    ResourceType: ResourceType,
-    Filters: ResourceFiltersTypeDef = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListAggregateDiscoveredResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ResourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `Filters`:
+  [ResourceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAggregateDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listaggregatediscoveredresourcesresponsetypedef).
 
 ### list_discovered_resources
 
 Type annotations for `boto3.client("config").list_discovered_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources]
+Boto3 documentation:
+[ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
 
-```python
-def list_discovered_resources(
-    self,
-    resourceType: ResourceType,
-    resourceIds: List[str] = None,
-    resourceName: str = None,
-    limit: int = None,
-    includeDeletedResources: bool = None,
-    nextToken: str = None
-) -> ListDiscoveredResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `resourceIds`: `List`\[`str`\]
+- `resourceName`: `str`
+- `limit`: `int`
+- `includeDeletedResources`: `bool`
+- `nextToken`: `str`
+
+Returns
+[ListDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listdiscoveredresourcesresponsetypedef).
 
 ### list_stored_queries
 
 Type annotations for `boto3.client("config").list_stored_queries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries]
+Boto3 documentation:
+[ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
 
-```python
-def list_stored_queries(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListStoredQueriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListStoredQueriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#liststoredqueriesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("config").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource]
+Boto3 documentation:
+[ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_aggregation_authorization
 
-Type annotations for `boto3.client("config").put_aggregation_authorization` method.
+Type annotations for `boto3.client("config").put_aggregation_authorization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization]
+Boto3 documentation:
+[ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
 
-```python
-def put_aggregation_authorization(
-    self,
-    AuthorizedAccountId: str,
-    AuthorizedAwsRegion: str,
-    Tags: List["TagTypeDef"] = None
-) -> PutAggregationAuthorizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthorizedAccountId`: `str` *(required)*
+- `AuthorizedAwsRegion`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+
+Returns
+[PutAggregationAuthorizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putaggregationauthorizationresponsetypedef).
 
 ### put_config_rule
 
 Type annotations for `boto3.client("config").put_config_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule]
+Boto3 documentation:
+[ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
 
-```python
-def put_config_rule(
-    self,
-    ConfigRule: "ConfigRuleTypeDef",
-    Tags: List["TagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigRule`:
+  [ConfigRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configruletypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
 
 ### put_configuration_aggregator
 
-Type annotations for `boto3.client("config").put_configuration_aggregator` method.
+Type annotations for `boto3.client("config").put_configuration_aggregator`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator]
+Boto3 documentation:
+[ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
 
-```python
-def put_configuration_aggregator(
-    self,
-    ConfigurationAggregatorName: str,
-    AccountAggregationSources: List["AccountAggregationSourceTypeDef"] = None,
-    OrganizationAggregationSource: "OrganizationAggregationSourceTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> PutConfigurationAggregatorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `AccountAggregationSources`:
+  `List`\[[AccountAggregationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#accountaggregationsourcetypedef)\]
+- `OrganizationAggregationSource`:
+  [OrganizationAggregationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationaggregationsourcetypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+
+Returns
+[PutConfigurationAggregatorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putconfigurationaggregatorresponsetypedef).
 
 ### put_configuration_recorder
 
-Type annotations for `boto3.client("config").put_configuration_recorder` method.
+Type annotations for `boto3.client("config").put_configuration_recorder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder]
+Boto3 documentation:
+[ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
 
-```python
-def put_configuration_recorder(
-    self,
-    ConfigurationRecorder: "ConfigurationRecorderTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorder`:
+  [ConfigurationRecorderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configurationrecordertypedef)
+  *(required)*
 
 ### put_conformance_pack
 
 Type annotations for `boto3.client("config").put_conformance_pack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack]
+Boto3 documentation:
+[ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
 
-```python
-def put_conformance_pack(
-    self,
-    ConformancePackName: str,
-    TemplateS3Uri: str = None,
-    TemplateBody: str = None,
-    DeliveryS3Bucket: str = None,
-    DeliveryS3KeyPrefix: str = None,
-    ConformancePackInputParameters: List["ConformancePackInputParameterTypeDef"] = None
-) -> PutConformancePackResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConformancePackName`: `str` *(required)*
+- `TemplateS3Uri`: `str`
+- `TemplateBody`: `str`
+- `DeliveryS3Bucket`: `str`
+- `DeliveryS3KeyPrefix`: `str`
+- `ConformancePackInputParameters`:
+  `List`\[[ConformancePackInputParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackinputparametertypedef)\]
+
+Returns
+[PutConformancePackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putconformancepackresponsetypedef).
 
 ### put_delivery_channel
 
 Type annotations for `boto3.client("config").put_delivery_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel]
+Boto3 documentation:
+[ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
 
-```python
-def put_delivery_channel(
-    self,
-    DeliveryChannel: "DeliveryChannelTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeliveryChannel`:
+  [DeliveryChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deliverychanneltypedef)
+  *(required)*
 
 ### put_evaluations
 
 Type annotations for `boto3.client("config").put_evaluations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations]
+Boto3 documentation:
+[ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
 
-```python
-def put_evaluations(
-    self,
-    ResultToken: str,
-    Evaluations: List["EvaluationTypeDef"] = None,
-    TestMode: bool = None
-) -> PutEvaluationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResultToken`: `str` *(required)*
+- `Evaluations`:
+  `List`\[[EvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#evaluationtypedef)\]
+- `TestMode`: `bool`
+
+Returns
+[PutEvaluationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putevaluationsresponsetypedef).
 
 ### put_external_evaluation
 
 Type annotations for `boto3.client("config").put_external_evaluation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation]
+Boto3 documentation:
+[ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
 
-```python
-def put_external_evaluation(
-    self,
-    ConfigRuleName: str,
-    ExternalEvaluation: ExternalEvaluationTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ExternalEvaluation`:
+  [ExternalEvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#externalevaluationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_organization_config_rule
 
-Type annotations for `boto3.client("config").put_organization_config_rule` method.
+Type annotations for `boto3.client("config").put_organization_config_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule]
+Boto3 documentation:
+[ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
 
-```python
-def put_organization_config_rule(
-    self,
-    OrganizationConfigRuleName: str,
-    OrganizationManagedRuleMetadata: "OrganizationManagedRuleMetadataTypeDef" = None,
-    OrganizationCustomRuleMetadata: "OrganizationCustomRuleMetadataTypeDef" = None,
-    ExcludedAccounts: List[str] = None
-) -> PutOrganizationConfigRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConfigRuleName`: `str` *(required)*
+- `OrganizationManagedRuleMetadata`:
+  [OrganizationManagedRuleMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationmanagedrulemetadatatypedef)
+- `OrganizationCustomRuleMetadata`:
+  [OrganizationCustomRuleMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationcustomrulemetadatatypedef)
+- `ExcludedAccounts`: `List`\[`str`\]
+
+Returns
+[PutOrganizationConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putorganizationconfigruleresponsetypedef).
 
 ### put_organization_conformance_pack
 
-Type annotations for `boto3.client("config").put_organization_conformance_pack` method.
+Type annotations for `boto3.client("config").put_organization_conformance_pack`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack]
+Boto3 documentation:
+[ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
 
-```python
-def put_organization_conformance_pack(
-    self,
-    OrganizationConformancePackName: str,
-    TemplateS3Uri: str = None,
-    TemplateBody: str = None,
-    DeliveryS3Bucket: str = None,
-    DeliveryS3KeyPrefix: str = None,
-    ConformancePackInputParameters: List["ConformancePackInputParameterTypeDef"] = None,
-    ExcludedAccounts: List[str] = None
-) -> PutOrganizationConformancePackResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationConformancePackName`: `str` *(required)*
+- `TemplateS3Uri`: `str`
+- `TemplateBody`: `str`
+- `DeliveryS3Bucket`: `str`
+- `DeliveryS3KeyPrefix`: `str`
+- `ConformancePackInputParameters`:
+  `List`\[[ConformancePackInputParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackinputparametertypedef)\]
+- `ExcludedAccounts`: `List`\[`str`\]
+
+Returns
+[PutOrganizationConformancePackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putorganizationconformancepackresponsetypedef).
 
 ### put_remediation_configurations
 
-Type annotations for `boto3.client("config").put_remediation_configurations` method.
+Type annotations for `boto3.client("config").put_remediation_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations]
+Boto3 documentation:
+[ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
 
-```python
-def put_remediation_configurations(
-    self,
-    RemediationConfigurations: List["RemediationConfigurationTypeDef"]
-) -> PutRemediationConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RemediationConfigurations`:
+  `List`\[[RemediationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[PutRemediationConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putremediationconfigurationsresponsetypedef).
 
 ### put_remediation_exceptions
 
-Type annotations for `boto3.client("config").put_remediation_exceptions` method.
+Type annotations for `boto3.client("config").put_remediation_exceptions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions]
+Boto3 documentation:
+[ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
 
-```python
-def put_remediation_exceptions(
-    self,
-    ConfigRuleName: str,
-    ResourceKeys: List["RemediationExceptionResourceKeyTypeDef"],
-    Message: str = None,
-    ExpirationTime: datetime = None
-) -> PutRemediationExceptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+  *(required)*
+- `Message`: `str`
+- `ExpirationTime`: `datetime`
+
+Returns
+[PutRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putremediationexceptionsresponsetypedef).
 
 ### put_resource_config
 
 Type annotations for `boto3.client("config").put_resource_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config]
+Boto3 documentation:
+[ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
 
-```python
-def put_resource_config(
-    self,
-    ResourceType: str,
-    SchemaVersionId: str,
-    ResourceId: str,
-    Configuration: str,
-    ResourceName: str = None,
-    Tags: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceType`: `str` *(required)*
+- `SchemaVersionId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `Configuration`: `str` *(required)*
+- `ResourceName`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ### put_retention_configuration
 
-Type annotations for `boto3.client("config").put_retention_configuration` method.
+Type annotations for `boto3.client("config").put_retention_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration]
+Boto3 documentation:
+[ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
 
-```python
-def put_retention_configuration(
-    self,
-    RetentionPeriodInDays: int
-) -> PutRetentionConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RetentionPeriodInDays`: `int` *(required)*
+
+Returns
+[PutRetentionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putretentionconfigurationresponsetypedef).
 
 ### put_stored_query
 
 Type annotations for `boto3.client("config").put_stored_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query]
+Boto3 documentation:
+[ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
 
-```python
-def put_stored_query(
-    self,
-    StoredQuery: "StoredQueryTypeDef",
-    Tags: List["TagTypeDef"] = None
-) -> PutStoredQueryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StoredQuery`:
+  [StoredQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#storedquerytypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+
+Returns
+[PutStoredQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putstoredqueryresponsetypedef).
 
 ### select_aggregate_resource_config
 
-Type annotations for `boto3.client("config").select_aggregate_resource_config` method.
+Type annotations for `boto3.client("config").select_aggregate_resource_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config]
+Boto3 documentation:
+[ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
 
-```python
-def select_aggregate_resource_config(
-    self,
-    Expression: str,
-    ConfigurationAggregatorName: str,
-    Limit: int = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> SelectAggregateResourceConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Expression`: `str` *(required)*
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Limit`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[SelectAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectaggregateresourceconfigresponsetypedef).
 
 ### select_resource_config
 
 Type annotations for `boto3.client("config").select_resource_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config]
+Boto3 documentation:
+[ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
 
-```python
-def select_resource_config(
-    self,
-    Expression: str,
-    Limit: int = None,
-    NextToken: str = None
-) -> SelectResourceConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Expression`: `str` *(required)*
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[SelectResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectresourceconfigresponsetypedef).
 
 ### start_config_rules_evaluation
 
-Type annotations for `boto3.client("config").start_config_rules_evaluation` method.
+Type annotations for `boto3.client("config").start_config_rules_evaluation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation]
+Boto3 documentation:
+[ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
 
-```python
-def start_config_rules_evaluation(
-    self,
-    ConfigRuleNames: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_configuration_recorder
 
-Type annotations for `boto3.client("config").start_configuration_recorder` method.
+Type annotations for `boto3.client("config").start_configuration_recorder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder]
+Boto3 documentation:
+[ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
 
-```python
-def start_configuration_recorder(
-    self,
-    ConfigurationRecorderName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorderName`: `str` *(required)*
 
 ### start_remediation_execution
 
-Type annotations for `boto3.client("config").start_remediation_execution` method.
+Type annotations for `boto3.client("config").start_remediation_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution]
+Boto3 documentation:
+[ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
 
-```python
-def start_remediation_execution(
-    self,
-    ConfigRuleName: str,
-    ResourceKeys: List["ResourceKeyTypeDef"]
-) -> StartRemediationExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+  *(required)*
+
+Returns
+[StartRemediationExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#startremediationexecutionresponsetypedef).
 
 ### stop_configuration_recorder
 
-Type annotations for `boto3.client("config").stop_configuration_recorder` method.
+Type annotations for `boto3.client("config").stop_configuration_recorder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder]
+Boto3 documentation:
+[ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
 
-```python
-def stop_configuration_recorder(
-    self,
-    ConfigurationRecorderName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationRecorderName`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("config").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource]
+Boto3 documentation:
+[ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("config").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource]
+Boto3 documentation:
+[ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### get_paginator
 
-Type annotations for `boto3.client("config").get_paginator` method with overloads.
+Type annotations for `boto3.client("config").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_aggregate_compliance_by_config_rules")` -> [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
-- `client.get_paginator("describe_aggregation_authorizations")` -> [DescribeAggregationAuthorizationsPaginator](./paginators.md#describeaggregationauthorizationspaginator)
-- `client.get_paginator("describe_compliance_by_config_rule")` -> [DescribeComplianceByConfigRulePaginator](./paginators.md#describecompliancebyconfigrulepaginator)
-- `client.get_paginator("describe_compliance_by_resource")` -> [DescribeComplianceByResourcePaginator](./paginators.md#describecompliancebyresourcepaginator)
-- `client.get_paginator("describe_config_rule_evaluation_status")` -> [DescribeConfigRuleEvaluationStatusPaginator](./paginators.md#describeconfigruleevaluationstatuspaginator)
-- `client.get_paginator("describe_config_rules")` -> [DescribeConfigRulesPaginator](./paginators.md#describeconfigrulespaginator)
-- `client.get_paginator("describe_configuration_aggregator_sources_status")` -> [DescribeConfigurationAggregatorSourcesStatusPaginator](./paginators.md#describeconfigurationaggregatorsourcesstatuspaginator)
-- `client.get_paginator("describe_configuration_aggregators")` -> [DescribeConfigurationAggregatorsPaginator](./paginators.md#describeconfigurationaggregatorspaginator)
-- `client.get_paginator("describe_pending_aggregation_requests")` -> [DescribePendingAggregationRequestsPaginator](./paginators.md#describependingaggregationrequestspaginator)
-- `client.get_paginator("describe_remediation_execution_status")` -> [DescribeRemediationExecutionStatusPaginator](./paginators.md#describeremediationexecutionstatuspaginator)
-- `client.get_paginator("describe_retention_configurations")` -> [DescribeRetentionConfigurationsPaginator](./paginators.md#describeretentionconfigurationspaginator)
-- `client.get_paginator("get_aggregate_compliance_details_by_config_rule")` -> [GetAggregateComplianceDetailsByConfigRulePaginator](./paginators.md#getaggregatecompliancedetailsbyconfigrulepaginator)
-- `client.get_paginator("get_compliance_details_by_config_rule")` -> [GetComplianceDetailsByConfigRulePaginator](./paginators.md#getcompliancedetailsbyconfigrulepaginator)
-- `client.get_paginator("get_compliance_details_by_resource")` -> [GetComplianceDetailsByResourcePaginator](./paginators.md#getcompliancedetailsbyresourcepaginator)
-- `client.get_paginator("get_resource_config_history")` -> [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
-- `client.get_paginator("list_aggregate_discovered_resources")` -> [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
-- `client.get_paginator("list_discovered_resources")` -> [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
-
-
+- `client.get_paginator("describe_aggregate_compliance_by_config_rules")` ->
+  [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
+- `client.get_paginator("describe_aggregation_authorizations")` ->
+  [DescribeAggregationAuthorizationsPaginator](./paginators.md#describeaggregationauthorizationspaginator)
+- `client.get_paginator("describe_compliance_by_config_rule")` ->
+  [DescribeComplianceByConfigRulePaginator](./paginators.md#describecompliancebyconfigrulepaginator)
+- `client.get_paginator("describe_compliance_by_resource")` ->
+  [DescribeComplianceByResourcePaginator](./paginators.md#describecompliancebyresourcepaginator)
+- `client.get_paginator("describe_config_rule_evaluation_status")` ->
+  [DescribeConfigRuleEvaluationStatusPaginator](./paginators.md#describeconfigruleevaluationstatuspaginator)
+- `client.get_paginator("describe_config_rules")` ->
+  [DescribeConfigRulesPaginator](./paginators.md#describeconfigrulespaginator)
+- `client.get_paginator("describe_configuration_aggregator_sources_status")` ->
+  [DescribeConfigurationAggregatorSourcesStatusPaginator](./paginators.md#describeconfigurationaggregatorsourcesstatuspaginator)
+- `client.get_paginator("describe_configuration_aggregators")` ->
+  [DescribeConfigurationAggregatorsPaginator](./paginators.md#describeconfigurationaggregatorspaginator)
+- `client.get_paginator("describe_pending_aggregation_requests")` ->
+  [DescribePendingAggregationRequestsPaginator](./paginators.md#describependingaggregationrequestspaginator)
+- `client.get_paginator("describe_remediation_execution_status")` ->
+  [DescribeRemediationExecutionStatusPaginator](./paginators.md#describeremediationexecutionstatuspaginator)
+- `client.get_paginator("describe_retention_configurations")` ->
+  [DescribeRetentionConfigurationsPaginator](./paginators.md#describeretentionconfigurationspaginator)
+- `client.get_paginator("get_aggregate_compliance_details_by_config_rule")` ->
+  [GetAggregateComplianceDetailsByConfigRulePaginator](./paginators.md#getaggregatecompliancedetailsbyconfigrulepaginator)
+- `client.get_paginator("get_compliance_details_by_config_rule")` ->
+  [GetComplianceDetailsByConfigRulePaginator](./paginators.md#getcompliancedetailsbyconfigrulepaginator)
+- `client.get_paginator("get_compliance_details_by_resource")` ->
+  [GetComplianceDetailsByResourcePaginator](./paginators.md#getcompliancedetailsbyresourcepaginator)
+- `client.get_paginator("get_resource_config_history")` ->
+  [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
+- `client.get_paginator("list_aggregate_discovered_resources")` ->
+  [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
+- `client.get_paginator("list_discovered_resources")` ->
+  [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)

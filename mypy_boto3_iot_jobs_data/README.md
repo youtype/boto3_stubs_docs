@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTJobsDataPlane
 
-Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+Auto-generated documentation for
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ```bash
 pip install mypy-boto3-iot-jobs-data
@@ -18,7 +20,8 @@ pip install mypy-boto3-iot-jobs-data
 
 ## IoTJobsDataPlaneClient
 
-Type annotations for  `boto3.client("iot-jobs-data")` as [IoTJobsDataPlaneClient](./client.md)
+Type annotations for `boto3.client("iot-jobs-data")` as
+[IoTJobsDataPlaneClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 ```
 
-
 IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_job_execution](./client.md#describe-job-execution)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -39,10 +40,8 @@ IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
 - [start_next_pending_job_execution](./client.md#start-next-pending-job-execution)
 - [update_job_execution](./client.md#update-job-execution)
 
-
-
-
 ### Exceptions
+
 - [CertificateValidationException](./client.md#certificatevalidationexception)
 - [ClientError](./client.md#clienterror)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -51,15 +50,6 @@ IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [TerminalStateException](./client.md#terminalstateexception)
 - [ThrottlingException](./client.md#throttlingexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -73,13 +63,10 @@ from mypy_boto3_iot_jobs_data.literals import JobExecutionStatus, ...
 
 - [JobExecutionStatus](./literals.md#jobexecutionstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

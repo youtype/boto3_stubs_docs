@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > TranscribeService
 
-Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+Auto-generated documentation for
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+type annotations stubs module
+[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 ```bash
 pip install mypy-boto3-transcribe
@@ -18,7 +20,8 @@ pip install mypy-boto3-transcribe
 
 ## TranscribeServiceClient
 
-Type annotations for  `boto3.client("transcribe")` as [TranscribeServiceClient](./client.md)
+Type annotations for `boto3.client("transcribe")` as
+[TranscribeServiceClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 ```
 
-
 TranscribeServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_language_model](./client.md#create-language-model)
 - [create_medical_vocabulary](./client.md#create-medical-vocabulary)
@@ -62,25 +63,14 @@ TranscribeServiceClient [exceptions](./client.md#exceptions)
 - [update_vocabulary](./client.md#update-vocabulary)
 - [update_vocabulary_filter](./client.md#update-vocabulary-filter)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [NotFoundException](./client.md#notfoundexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -106,13 +96,10 @@ from mypy_boto3_transcribe.literals import BaseModelName, ...
 - [VocabularyFilterMethod](./literals.md#vocabularyfiltermethod)
 - [VocabularyState](./literals.md#vocabularystate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

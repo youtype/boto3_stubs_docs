@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EMR](./README.md) > EMRClient
 
-Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+Auto-generated documentation for
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+type annotations stubs module
+[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [EMRClient for boto3 EMR module](#emrclient-for-boto3-emr-module)
   - [EMRClient](#emrclient)
@@ -74,12 +76,13 @@ def get_emr_client() -> EMRClient:
     return boto3.client("emr")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
+Boto3 documentation:
+[EMR.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_emr.client import Exceptions
@@ -88,7 +91,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -96,825 +98,848 @@ Exceptions:
 - `Exceptions.InternalServerException`
 - `Exceptions.InvalidRequestException`
 
-
 ## Methods
-
 
 ### add_instance_fleet
 
 Type annotations for `boto3.client("emr").add_instance_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet]
+Boto3 documentation:
+[EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
 
-```python
-def add_instance_fleet(
-    self,
-    ClusterId: str,
-    InstanceFleet: "InstanceFleetConfigTypeDef"
-) -> AddInstanceFleetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `InstanceFleet`:
+  [InstanceFleetConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetconfigtypedef)
+  *(required)*
+
+Returns
+[AddInstanceFleetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addinstancefleetoutputtypedef).
 
 ### add_instance_groups
 
 Type annotations for `boto3.client("emr").add_instance_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups]
+Boto3 documentation:
+[EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
 
-```python
-def add_instance_groups(
-    self,
-    InstanceGroups: List["InstanceGroupConfigTypeDef"],
-    JobFlowId: str
-) -> AddInstanceGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceGroups`:
+  `List`\[[InstanceGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupconfigtypedef)\]
+  *(required)*
+- `JobFlowId`: `str` *(required)*
+
+Returns
+[AddInstanceGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addinstancegroupsoutputtypedef).
 
 ### add_job_flow_steps
 
 Type annotations for `boto3.client("emr").add_job_flow_steps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps]
+Boto3 documentation:
+[EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
 
-```python
-def add_job_flow_steps(
-    self,
-    JobFlowId: str,
-    Steps: List["StepConfigTypeDef"]
-) -> AddJobFlowStepsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `JobFlowId`: `str` *(required)*
+- `Steps`:
+  `List`\[[StepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepconfigtypedef)\]
+  *(required)*
+
+Returns
+[AddJobFlowStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addjobflowstepsoutputtypedef).
 
 ### add_tags
 
 Type annotations for `boto3.client("emr").add_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags]
+Boto3 documentation:
+[EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
 
-```python
-def add_tags(
-    self,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("emr").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate]
+Boto3 documentation:
+[EMR.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_steps
 
 Type annotations for `boto3.client("emr").cancel_steps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps]
+Boto3 documentation:
+[EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
 
-```python
-def cancel_steps(
-    self,
-    ClusterId: str,
-    StepIds: List[str],
-    StepCancellationOption: StepCancellationOption = None
-) -> CancelStepsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `StepIds`: `List`\[`str`\] *(required)*
+- `StepCancellationOption`:
+  [StepCancellationOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepcancellationoption)
+
+Returns
+[CancelStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#cancelstepsoutputtypedef).
 
 ### create_security_configuration
 
-Type annotations for `boto3.client("emr").create_security_configuration` method.
+Type annotations for `boto3.client("emr").create_security_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration]
+Boto3 documentation:
+[EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
-```python
-def create_security_configuration(
-    self,
-    Name: str,
-    SecurityConfiguration: str
-) -> CreateSecurityConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `SecurityConfiguration`: `str` *(required)*
+
+Returns
+[CreateSecurityConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#createsecurityconfigurationoutputtypedef).
 
 ### create_studio
 
 Type annotations for `boto3.client("emr").create_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio]
+Boto3 documentation:
+[EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
 
-```python
-def create_studio(
-    self,
-    Name: str,
-    AuthMode: AuthMode,
-    VpcId: str,
-    SubnetIds: List[str],
-    ServiceRole: str,
-    UserRole: str,
-    WorkspaceSecurityGroupId: str,
-    EngineSecurityGroupId: str,
-    DefaultS3Location: str,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateStudioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `AuthMode`:
+  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#authmode)
+  *(required)*
+- `VpcId`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `ServiceRole`: `str` *(required)*
+- `UserRole`: `str` *(required)*
+- `WorkspaceSecurityGroupId`: `str` *(required)*
+- `EngineSecurityGroupId`: `str` *(required)*
+- `DefaultS3Location`: `str` *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateStudioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#createstudiooutputtypedef).
 
 ### create_studio_session_mapping
 
-Type annotations for `boto3.client("emr").create_studio_session_mapping` method.
+Type annotations for `boto3.client("emr").create_studio_session_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping]
+Boto3 documentation:
+[EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
 
-```python
-def create_studio_session_mapping(
-    self,
-    StudioId: str,
-    IdentityType: IdentityType,
-    SessionPolicyArn: str,
-    IdentityId: str = None,
-    IdentityName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+  *(required)*
+- `SessionPolicyArn`: `str` *(required)*
+- `IdentityId`: `str`
+- `IdentityName`: `str`
 
 ### delete_security_configuration
 
-Type annotations for `boto3.client("emr").delete_security_configuration` method.
+Type annotations for `boto3.client("emr").delete_security_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration]
+Boto3 documentation:
+[EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
 
-```python
-def delete_security_configuration(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_studio
 
 Type annotations for `boto3.client("emr").delete_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio]
+Boto3 documentation:
+[EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
 
-```python
-def delete_studio(
-    self,
-    StudioId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
 
 ### delete_studio_session_mapping
 
-Type annotations for `boto3.client("emr").delete_studio_session_mapping` method.
+Type annotations for `boto3.client("emr").delete_studio_session_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping]
+Boto3 documentation:
+[EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
 
-```python
-def delete_studio_session_mapping(
-    self,
-    StudioId: str,
-    IdentityType: IdentityType,
-    IdentityId: str = None,
-    IdentityName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+  *(required)*
+- `IdentityId`: `str`
+- `IdentityName`: `str`
 
 ### describe_cluster
 
 Type annotations for `boto3.client("emr").describe_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster]
+Boto3 documentation:
+[EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
 
-```python
-def describe_cluster(
-    self,
-    ClusterId: str
-) -> DescribeClusterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[DescribeClusterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describeclusteroutputtypedef).
 
 ### describe_job_flows
 
 Type annotations for `boto3.client("emr").describe_job_flows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows]
+Boto3 documentation:
+[EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
-```python
-def describe_job_flows(
-    self,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    JobFlowIds: List[str] = None,
-    JobFlowStates: List[JobFlowExecutionState] = None
-) -> DescribeJobFlowsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowStates`:
+  `List`\[[JobFlowExecutionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#jobflowexecutionstate)\]
+
+Returns
+[DescribeJobFlowsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describejobflowsoutputtypedef).
 
 ### describe_notebook_execution
 
 Type annotations for `boto3.client("emr").describe_notebook_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution]
+Boto3 documentation:
+[EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
-```python
-def describe_notebook_execution(
-    self,
-    NotebookExecutionId: str
-) -> DescribeNotebookExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookExecutionId`: `str` *(required)*
+
+Returns
+[DescribeNotebookExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describenotebookexecutionoutputtypedef).
 
 ### describe_security_configuration
 
-Type annotations for `boto3.client("emr").describe_security_configuration` method.
+Type annotations for `boto3.client("emr").describe_security_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration]
+Boto3 documentation:
+[EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
-```python
-def describe_security_configuration(
-    self,
-    Name: str
-) -> DescribeSecurityConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DescribeSecurityConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describesecurityconfigurationoutputtypedef).
 
 ### describe_step
 
 Type annotations for `boto3.client("emr").describe_step` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step]
+Boto3 documentation:
+[EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
-```python
-def describe_step(
-    self,
-    ClusterId: str,
-    StepId: str
-) -> DescribeStepOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `StepId`: `str` *(required)*
+
+Returns
+[DescribeStepOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describestepoutputtypedef).
 
 ### describe_studio
 
 Type annotations for `boto3.client("emr").describe_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio]
+Boto3 documentation:
+[EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
-```python
-def describe_studio(
-    self,
-    StudioId: str
-) -> DescribeStudioOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
+
+Returns
+[DescribeStudioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describestudiooutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("emr").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url]
+Boto3 documentation:
+[EMR.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_block_public_access_configuration
 
-Type annotations for `boto3.client("emr").get_block_public_access_configuration` method.
+Type annotations for
+`boto3.client("emr").get_block_public_access_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration]
+Boto3 documentation:
+[EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
-```python
-def get_block_public_access_configuration(
-    self
-) -> GetBlockPublicAccessConfigurationOutputTypeDef:
-    pass
-```
+Returns
+[GetBlockPublicAccessConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getblockpublicaccessconfigurationoutputtypedef).
 
 ### get_managed_scaling_policy
 
 Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy]
+Boto3 documentation:
+[EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
-```python
-def get_managed_scaling_policy(
-    self,
-    ClusterId: str
-) -> GetManagedScalingPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[GetManagedScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getmanagedscalingpolicyoutputtypedef).
 
 ### get_studio_session_mapping
 
 Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping]
+Boto3 documentation:
+[EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
 
-```python
-def get_studio_session_mapping(
-    self,
-    StudioId: str,
-    IdentityType: IdentityType,
-    IdentityId: str = None,
-    IdentityName: str = None
-) -> GetStudioSessionMappingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+  *(required)*
+- `IdentityId`: `str`
+- `IdentityName`: `str`
+
+Returns
+[GetStudioSessionMappingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getstudiosessionmappingoutputtypedef).
 
 ### list_bootstrap_actions
 
 Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions]
+Boto3 documentation:
+[EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
-```python
-def list_bootstrap_actions(
-    self,
-    ClusterId: str,
-    Marker: str = None
-) -> ListBootstrapActionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `Marker`: `str`
+
+Returns
+[ListBootstrapActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listbootstrapactionsoutputtypedef).
 
 ### list_clusters
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters]
+Boto3 documentation:
+[EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
-```python
-def list_clusters(
-    self,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    ClusterStates: List[ClusterState] = None,
-    Marker: str = None
-) -> ListClustersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `ClusterStates`:
+  `List`\[[ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#clusterstate)\]
+- `Marker`: `str`
+
+Returns
+[ListClustersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listclustersoutputtypedef).
 
 ### list_instance_fleets
 
 Type annotations for `boto3.client("emr").list_instance_fleets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets]
+Boto3 documentation:
+[EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
-```python
-def list_instance_fleets(
-    self,
-    ClusterId: str,
-    Marker: str = None
-) -> ListInstanceFleetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `Marker`: `str`
+
+Returns
+[ListInstanceFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancefleetsoutputtypedef).
 
 ### list_instance_groups
 
 Type annotations for `boto3.client("emr").list_instance_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups]
+Boto3 documentation:
+[EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
-```python
-def list_instance_groups(
-    self,
-    ClusterId: str,
-    Marker: str = None
-) -> ListInstanceGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `Marker`: `str`
+
+Returns
+[ListInstanceGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancegroupsoutputtypedef).
 
 ### list_instances
 
 Type annotations for `boto3.client("emr").list_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances]
+Boto3 documentation:
+[EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
 
-```python
-def list_instances(
-    self,
-    ClusterId: str,
-    InstanceGroupId: str = None,
-    InstanceGroupTypes: List[InstanceGroupType] = None,
-    InstanceFleetId: str = None,
-    InstanceFleetType: InstanceFleetType = None,
-    InstanceStates: List[InstanceState] = None,
-    Marker: str = None
-) -> ListInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `InstanceGroupId`: `str`
+- `InstanceGroupTypes`:
+  `List`\[[InstanceGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegrouptype)\]
+- `InstanceFleetId`: `str`
+- `InstanceFleetType`:
+  [InstanceFleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleettype)
+- `InstanceStates`:
+  `List`\[[InstanceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancestate)\]
+- `Marker`: `str`
+
+Returns
+[ListInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancesoutputtypedef).
 
 ### list_notebook_executions
 
 Type annotations for `boto3.client("emr").list_notebook_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions]
+Boto3 documentation:
+[EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
-```python
-def list_notebook_executions(
-    self,
-    EditorId: str = None,
-    Status: NotebookExecutionStatus = None,
-    From: datetime = None,
-    To: datetime = None,
-    Marker: str = None
-) -> ListNotebookExecutionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EditorId`: `str`
+- `Status`:
+  [NotebookExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#notebookexecutionstatus)
+- `From`: `datetime`
+- `To`: `datetime`
+- `Marker`: `str`
+
+Returns
+[ListNotebookExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listnotebookexecutionsoutputtypedef).
 
 ### list_security_configurations
 
 Type annotations for `boto3.client("emr").list_security_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations]
+Boto3 documentation:
+[EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
-```python
-def list_security_configurations(
-    self,
-    Marker: str = None
-) -> ListSecurityConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+
+Returns
+[ListSecurityConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listsecurityconfigurationsoutputtypedef).
 
 ### list_steps
 
 Type annotations for `boto3.client("emr").list_steps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps]
+Boto3 documentation:
+[EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
 
-```python
-def list_steps(
-    self,
-    ClusterId: str,
-    StepStates: List[StepState] = None,
-    StepIds: List[str] = None,
-    Marker: str = None
-) -> ListStepsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `StepStates`:
+  `List`\[[StepState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepstate)\]
+- `StepIds`: `List`\[`str`\]
+- `Marker`: `str`
+
+Returns
+[ListStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststepsoutputtypedef).
 
 ### list_studio_session_mappings
 
 Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings]
+Boto3 documentation:
+[EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
 
-```python
-def list_studio_session_mappings(
-    self,
-    StudioId: str = None,
-    IdentityType: IdentityType = None,
-    Marker: str = None
-) -> ListStudioSessionMappingsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str`
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+- `Marker`: `str`
+
+Returns
+[ListStudioSessionMappingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststudiosessionmappingsoutputtypedef).
 
 ### list_studios
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios]
+Boto3 documentation:
+[EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
-```python
-def list_studios(
-    self,
-    Marker: str = None
-) -> ListStudiosOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+
+Returns
+[ListStudiosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststudiosoutputtypedef).
 
 ### modify_cluster
 
 Type annotations for `boto3.client("emr").modify_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster]
+Boto3 documentation:
+[EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
 
-```python
-def modify_cluster(
-    self,
-    ClusterId: str,
-    StepConcurrencyLevel: int = None
-) -> ModifyClusterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `StepConcurrencyLevel`: `int`
+
+Returns
+[ModifyClusterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#modifyclusteroutputtypedef).
 
 ### modify_instance_fleet
 
 Type annotations for `boto3.client("emr").modify_instance_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet]
+Boto3 documentation:
+[EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
 
-```python
-def modify_instance_fleet(
-    self,
-    ClusterId: str,
-    InstanceFleet: InstanceFleetModifyConfigTypeDef
-) -> None:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `InstanceFleet`:
+  [InstanceFleetModifyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetmodifyconfigtypedef)
+  *(required)*
 
 ### modify_instance_groups
 
 Type annotations for `boto3.client("emr").modify_instance_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups]
+Boto3 documentation:
+[EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
 
-```python
-def modify_instance_groups(
-    self,
-    ClusterId: str = None,
-    InstanceGroups: List[InstanceGroupModifyConfigTypeDef] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str`
+- `InstanceGroups`:
+  `List`\[[InstanceGroupModifyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupmodifyconfigtypedef)\]
 
 ### put_auto_scaling_policy
 
 Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy]
+Boto3 documentation:
+[EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
 
-```python
-def put_auto_scaling_policy(
-    self,
-    ClusterId: str,
-    InstanceGroupId: str,
-    AutoScalingPolicy: "AutoScalingPolicyTypeDef"
-) -> PutAutoScalingPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `InstanceGroupId`: `str` *(required)*
+- `AutoScalingPolicy`:
+  [AutoScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicytypedef)
+  *(required)*
+
+Returns
+[PutAutoScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#putautoscalingpolicyoutputtypedef).
 
 ### put_block_public_access_configuration
 
-Type annotations for `boto3.client("emr").put_block_public_access_configuration` method.
+Type annotations for
+`boto3.client("emr").put_block_public_access_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration]
+Boto3 documentation:
+[EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
 
-```python
-def put_block_public_access_configuration(
-    self,
-    BlockPublicAccessConfiguration: "BlockPublicAccessConfigurationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BlockPublicAccessConfiguration`:
+  [BlockPublicAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#blockpublicaccessconfigurationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_managed_scaling_policy
 
 Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy]
+Boto3 documentation:
+[EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
 
-```python
-def put_managed_scaling_policy(
-    self,
-    ClusterId: str,
-    ManagedScalingPolicy: "ManagedScalingPolicyTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `ManagedScalingPolicy`:
+  [ManagedScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#managedscalingpolicytypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_auto_scaling_policy
 
 Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy]
+Boto3 documentation:
+[EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
 
-```python
-def remove_auto_scaling_policy(
-    self,
-    ClusterId: str,
-    InstanceGroupId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `InstanceGroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_managed_scaling_policy
 
-Type annotations for `boto3.client("emr").remove_managed_scaling_policy` method.
+Type annotations for `boto3.client("emr").remove_managed_scaling_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy]
+Boto3 documentation:
+[EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
 
-```python
-def remove_managed_scaling_policy(
-    self,
-    ClusterId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_tags
 
 Type annotations for `boto3.client("emr").remove_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags]
+Boto3 documentation:
+[EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
 
-```python
-def remove_tags(
-    self,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### run_job_flow
 
 Type annotations for `boto3.client("emr").run_job_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow]
+Boto3 documentation:
+[EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
 
-```python
-def run_job_flow(
-    self,
-    Name: str,
-    Instances: JobFlowInstancesConfigTypeDef,
-    LogUri: str = None,
-    LogEncryptionKmsKeyId: str = None,
-    AdditionalInfo: str = None,
-    AmiVersion: str = None,
-    ReleaseLabel: str = None,
-    Steps: List["StepConfigTypeDef"] = None,
-    BootstrapActions: List["BootstrapActionConfigTypeDef"] = None,
-    SupportedProducts: List[str] = None,
-    NewSupportedProducts: List[SupportedProductConfigTypeDef] = None,
-    Applications: List["ApplicationTypeDef"] = None,
-    Configurations: List["ConfigurationTypeDef"] = None,
-    VisibleToAllUsers: bool = None,
-    JobFlowRole: str = None,
-    ServiceRole: str = None,
-    Tags: List["TagTypeDef"] = None,
-    SecurityConfiguration: str = None,
-    AutoScalingRole: str = None,
-    ScaleDownBehavior: ScaleDownBehavior = None,
-    CustomAmiId: str = None,
-    EbsRootVolumeSize: int = None,
-    RepoUpgradeOnBoot: RepoUpgradeOnBoot = None,
-    KerberosAttributes: "KerberosAttributesTypeDef" = None,
-    StepConcurrencyLevel: int = None,
-    ManagedScalingPolicy: "ManagedScalingPolicyTypeDef" = None,
-    PlacementGroupConfigs: List["PlacementGroupConfigTypeDef"] = None
-) -> RunJobFlowOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Instances`:
+  [JobFlowInstancesConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#jobflowinstancesconfigtypedef)
+  *(required)*
+- `LogUri`: `str`
+- `LogEncryptionKmsKeyId`: `str`
+- `AdditionalInfo`: `str`
+- `AmiVersion`: `str`
+- `ReleaseLabel`: `str`
+- `Steps`:
+  `List`\[[StepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepconfigtypedef)\]
+- `BootstrapActions`:
+  `List`\[[BootstrapActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#bootstrapactionconfigtypedef)\]
+- `SupportedProducts`: `List`\[`str`\]
+- `NewSupportedProducts`:
+  `List`\[[SupportedProductConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#supportedproductconfigtypedef)\]
+- `Applications`:
+  `List`\[[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#applicationtypedef)\]
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
+- `VisibleToAllUsers`: `bool`
+- `JobFlowRole`: `str`
+- `ServiceRole`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+- `SecurityConfiguration`: `str`
+- `AutoScalingRole`: `str`
+- `ScaleDownBehavior`:
+  [ScaleDownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#scaledownbehavior)
+- `CustomAmiId`: `str`
+- `EbsRootVolumeSize`: `int`
+- `RepoUpgradeOnBoot`:
+  [RepoUpgradeOnBoot](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#repoupgradeonboot)
+- `KerberosAttributes`:
+  [KerberosAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#kerberosattributestypedef)
+- `StepConcurrencyLevel`: `int`
+- `ManagedScalingPolicy`:
+  [ManagedScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#managedscalingpolicytypedef)
+- `PlacementGroupConfigs`:
+  `List`\[[PlacementGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#placementgroupconfigtypedef)\]
+
+Returns
+[RunJobFlowOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#runjobflowoutputtypedef).
 
 ### set_termination_protection
 
 Type annotations for `boto3.client("emr").set_termination_protection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection]
+Boto3 documentation:
+[EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
 
-```python
-def set_termination_protection(
-    self,
-    JobFlowIds: List[str],
-    TerminationProtected: bool
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `TerminationProtected`: `bool` *(required)*
 
 ### set_visible_to_all_users
 
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users]
+Boto3 documentation:
+[EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
 
-```python
-def set_visible_to_all_users(
-    self,
-    JobFlowIds: List[str],
-    VisibleToAllUsers: bool
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `VisibleToAllUsers`: `bool` *(required)*
 
 ### start_notebook_execution
 
 Type annotations for `boto3.client("emr").start_notebook_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution]
+Boto3 documentation:
+[EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
 
-```python
-def start_notebook_execution(
-    self,
-    EditorId: str,
-    RelativePath: str,
-    ExecutionEngine: "ExecutionEngineConfigTypeDef",
-    ServiceRole: str,
-    NotebookExecutionName: str = None,
-    NotebookParams: str = None,
-    NotebookInstanceSecurityGroupId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> StartNotebookExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EditorId`: `str` *(required)*
+- `RelativePath`: `str` *(required)*
+- `ExecutionEngine`:
+  [ExecutionEngineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#executionengineconfigtypedef)
+  *(required)*
+- `ServiceRole`: `str` *(required)*
+- `NotebookExecutionName`: `str`
+- `NotebookParams`: `str`
+- `NotebookInstanceSecurityGroupId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+
+Returns
+[StartNotebookExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#startnotebookexecutionoutputtypedef).
 
 ### stop_notebook_execution
 
 Type annotations for `boto3.client("emr").stop_notebook_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution]
+Boto3 documentation:
+[EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
 
-```python
-def stop_notebook_execution(
-    self,
-    NotebookExecutionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `NotebookExecutionId`: `str` *(required)*
 
 ### terminate_job_flows
 
 Type annotations for `boto3.client("emr").terminate_job_flows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows]
+Boto3 documentation:
+[EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
 
-```python
-def terminate_job_flows(
-    self,
-    JobFlowIds: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobFlowIds`: `List`\[`str`\] *(required)*
 
 ### update_studio
 
 Type annotations for `boto3.client("emr").update_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio]
+Boto3 documentation:
+[EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
 
-```python
-def update_studio(
-    self,
-    StudioId: str,
-    Name: str = None,
-    Description: str = None,
-    SubnetIds: List[str] = None,
-    DefaultS3Location: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StudioId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `DefaultS3Location`: `str`
 
 ### update_studio_session_mapping
 
-Type annotations for `boto3.client("emr").update_studio_session_mapping` method.
+Type annotations for `boto3.client("emr").update_studio_session_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping]
+Boto3 documentation:
+[EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
 
-```python
-def update_studio_session_mapping(
-    self,
-    StudioId: str,
-    IdentityType: IdentityType,
-    SessionPolicyArn: str,
-    IdentityId: str = None,
-    IdentityName: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `StudioId`: `str` *(required)*
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+  *(required)*
+- `SessionPolicyArn`: `str` *(required)*
+- `IdentityId`: `str`
+- `IdentityName`: `str`
 
 ### get_paginator
 
 Type annotations for `boto3.client("emr").get_paginator` method with overloads.
 
-- `client.get_paginator("list_bootstrap_actions")` -> [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
-- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_instance_fleets")` -> [ListInstanceFleetsPaginator](./paginators.md#listinstancefleetspaginator)
-- `client.get_paginator("list_instance_groups")` -> [ListInstanceGroupsPaginator](./paginators.md#listinstancegroupspaginator)
-- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_notebook_executions")` -> [ListNotebookExecutionsPaginator](./paginators.md#listnotebookexecutionspaginator)
-- `client.get_paginator("list_security_configurations")` -> [ListSecurityConfigurationsPaginator](./paginators.md#listsecurityconfigurationspaginator)
-- `client.get_paginator("list_steps")` -> [ListStepsPaginator](./paginators.md#liststepspaginator)
-- `client.get_paginator("list_studio_session_mappings")` -> [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
-- `client.get_paginator("list_studios")` -> [ListStudiosPaginator](./paginators.md#liststudiospaginator)
-
-
-
+- `client.get_paginator("list_bootstrap_actions")` ->
+  [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
+- `client.get_paginator("list_clusters")` ->
+  [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_instance_fleets")` ->
+  [ListInstanceFleetsPaginator](./paginators.md#listinstancefleetspaginator)
+- `client.get_paginator("list_instance_groups")` ->
+  [ListInstanceGroupsPaginator](./paginators.md#listinstancegroupspaginator)
+- `client.get_paginator("list_instances")` ->
+  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_notebook_executions")` ->
+  [ListNotebookExecutionsPaginator](./paginators.md#listnotebookexecutionspaginator)
+- `client.get_paginator("list_security_configurations")` ->
+  [ListSecurityConfigurationsPaginator](./paginators.md#listsecurityconfigurationspaginator)
+- `client.get_paginator("list_steps")` ->
+  [ListStepsPaginator](./paginators.md#liststepspaginator)
+- `client.get_paginator("list_studio_session_mappings")` ->
+  [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
+- `client.get_paginator("list_studios")` ->
+  [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("emr").get_waiter` method with overloads.
 
-- `client.get_waiter("cluster_running")` -> [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
-- `client.get_waiter("cluster_terminated")` -> [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
-- `client.get_waiter("step_complete")` -> [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
+- `client.get_waiter("cluster_running")` ->
+  [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
+- `client.get_waiter("cluster_terminated")` ->
+  [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
+- `client.get_waiter("step_complete")` ->
+  [StepCompleteWaiter](./waiters.md#stepcompletewaiter)

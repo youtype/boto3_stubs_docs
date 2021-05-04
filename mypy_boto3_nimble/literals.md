@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > Literals
 
-Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+Auto-generated documentation for
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+type annotations stubs module
+[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Literals for boto3 NimbleStudio module](#literals-for-boto3-nimblestudio-module)
   - [LaunchProfilePersona](#launchprofilepersona)

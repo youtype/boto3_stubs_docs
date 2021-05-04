@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppSync](./README.md) > Literals
 
-Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
-type annotations stubs module [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+Auto-generated documentation for
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+type annotations stubs module
+[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [Literals for boto3 AppSync module](#literals-for-boto3-appsync-module)
   - [ApiCacheStatus](#apicachestatus)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AmplifyBackend](./README.md) > Structures
 
-Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
-type annotations stubs module [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+Auto-generated documentation for
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+type annotations stubs module
+[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [Typed dictionaries for boto3 AmplifyBackend module](#typed-dictionaries-for-boto3-amplifybackend-module)
   - [BackendAPIAppSyncAuthSettingsTypeDef](#backendapiappsyncauthsettingstypedef)
@@ -63,10 +65,8 @@ type annotations stubs module [mypy_boto3_amplifybackend](https://pypi.org/proje
 from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CognitoUserPoolId`: `str`
 - `Description`: `str`
 - `ExpirationTime`: `float`
@@ -76,20 +76,18 @@ Optional fields:
 - `OpenIDIssueURL`: `str`
 - `OpenIDProviderName`: `str`
 
-
 ## BackendAPIAuthTypeTypeDef
 
 ```python
 from mypy_boto3_amplifybackend.type_defs import BackendAPIAuthTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Mode`: `Mode`
-- `Settings`: `"BackendAPIAppSyncAuthSettingsTypeDef"`
 
+- `Mode`:
+  [Mode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#mode)
+- `Settings`:
+  [BackendAPIAppSyncAuthSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiappsyncauthsettingstypedef)
 
 ## BackendAPIConflictResolutionTypeDef
 
@@ -97,12 +95,10 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import BackendAPIConflictResolutionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolutionStrategy`: `ResolutionStrategy`
 
+- `ResolutionStrategy`:
+  [ResolutionStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#resolutionstrategy)
 
 ## BackendAPIResourceConfigTypeDef
 
@@ -110,17 +106,17 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import BackendAPIResourceConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdditionalAuthTypes`: `List["BackendAPIAuthTypeTypeDef"]`
+
+- `AdditionalAuthTypes`:
+  `List`\[[BackendAPIAuthTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiauthtypetypedef)\]
 - `ApiName`: `str`
-- `ConflictResolution`: `"BackendAPIConflictResolutionTypeDef"`
-- `DefaultAuthType`: `"BackendAPIAuthTypeTypeDef"`
+- `ConflictResolution`:
+  [BackendAPIConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiconflictresolutiontypedef)
+- `DefaultAuthType`:
+  [BackendAPIAuthTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiauthtypetypedef)
 - `Service`: `str`
 - `TransformSchema`: `str`
-
 
 ## BackendAuthSocialProviderConfigTypeDef
 
@@ -128,13 +124,10 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import BackendAuthSocialProviderConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientId`: `str`
 - `ClientSecret`: `str`
-
 
 ## BackendJobRespObjTypeDef
 
@@ -142,21 +135,19 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import BackendJobRespObjTypeDef
 ```
 
-
 Required fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 
-
-
 Optional fields:
+
 - `CreateTime`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
-
 
 ## CloneBackendResponseTypeDef
 
@@ -164,17 +155,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CloneBackendResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## CreateBackendAPIResponseTypeDef
 
@@ -182,17 +170,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAPIResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## CreateBackendAuthForgotPasswordConfigTypeDef
 
@@ -200,16 +185,17 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthForgotPasswordConfigTypeDef
 ```
 
-
 Required fields:
-- `DeliveryMethod`: `DeliveryMethod`
 
-
+- `DeliveryMethod`:
+  [DeliveryMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#deliverymethod)
 
 Optional fields:
-- `EmailSettings`: `"EmailSettingsTypeDef"`
-- `SmsSettings`: `"SmsSettingsTypeDef"`
 
+- `EmailSettings`:
+  [EmailSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#emailsettingstypedef)
+- `SmsSettings`:
+  [SmsSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#smssettingstypedef)
 
 ## CreateBackendAuthIdentityPoolConfigTypeDef
 
@@ -217,13 +203,10 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthIdentityPoolConfigTypeDef
 ```
 
-
 Required fields:
+
 - `IdentityPoolName`: `str`
 - `UnauthenticatedLogin`: `bool`
-
-
-
 
 ## CreateBackendAuthMFAConfigTypeDef
 
@@ -231,15 +214,15 @@ Required fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthMFAConfigTypeDef
 ```
 
-
 Required fields:
-- `MFAMode`: `MFAMode`
 
-
+- `MFAMode`:
+  [MFAMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#mfamode)
 
 Optional fields:
-- `Settings`: `"SettingsTypeDef"`
 
+- `Settings`:
+  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#settingstypedef)
 
 ## CreateBackendAuthOAuthConfigTypeDef
 
@@ -247,19 +230,20 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthOAuthConfigTypeDef
 ```
 
-
 Required fields:
-- `OAuthGrantType`: `OAuthGrantType`
-- `OAuthScopes`: `List[OAuthScopesElement]`
-- `RedirectSignInURIs`: `List[str]`
-- `RedirectSignOutURIs`: `List[str]`
 
-
+- `OAuthGrantType`:
+  [OAuthGrantType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#oauthgranttype)
+- `OAuthScopes`:
+  `List`\[[OAuthScopesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#oauthscopeselement)\]
+- `RedirectSignInURIs`: `List`\[`str`\]
+- `RedirectSignOutURIs`: `List`\[`str`\]
 
 Optional fields:
-- `DomainPrefix`: `str`
-- `SocialProviderSettings`: `"SocialProviderSettingsTypeDef"`
 
+- `DomainPrefix`: `str`
+- `SocialProviderSettings`:
+  [SocialProviderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#socialprovidersettingstypedef)
 
 ## CreateBackendAuthPasswordPolicyConfigTypeDef
 
@@ -267,15 +251,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthPasswordPolicyConfigTypeDef
 ```
 
-
 Required fields:
+
 - `MinimumLength`: `float`
 
-
-
 Optional fields:
-- `AdditionalConstraints`: `List[AdditionalConstraintsElement]`
 
+- `AdditionalConstraints`:
+  `List`\[[AdditionalConstraintsElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#additionalconstraintselement)\]
 
 ## CreateBackendAuthResourceConfigTypeDef
 
@@ -283,17 +266,18 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthResourceConfigTypeDef
 ```
 
-
 Required fields:
-- `AuthResources`: `AuthResources`
+
+- `AuthResources`:
+  [AuthResources](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#authresources)
 - `Service`: `Literal['COGNITO']`
-- `UserPoolConfigs`: `"CreateBackendAuthUserPoolConfigTypeDef"`
-
-
+- `UserPoolConfigs`:
+  [CreateBackendAuthUserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthuserpoolconfigtypedef)
 
 Optional fields:
-- `IdentityPoolConfigs`: `"CreateBackendAuthIdentityPoolConfigTypeDef"`
 
+- `IdentityPoolConfigs`:
+  [CreateBackendAuthIdentityPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthidentitypoolconfigtypedef)
 
 ## CreateBackendAuthResponseTypeDef
 
@@ -301,17 +285,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## CreateBackendAuthUserPoolConfigTypeDef
 
@@ -319,20 +300,24 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthUserPoolConfigTypeDef
 ```
 
-
 Required fields:
-- `RequiredSignUpAttributes`: `List[RequiredSignUpAttributesElement]`
-- `SignInMethod`: `SignInMethod`
+
+- `RequiredSignUpAttributes`:
+  `List`\[[RequiredSignUpAttributesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#requiredsignupattributeselement)\]
+- `SignInMethod`:
+  [SignInMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#signinmethod)
 - `UserPoolName`: `str`
 
-
-
 Optional fields:
-- `ForgotPassword`: `"CreateBackendAuthForgotPasswordConfigTypeDef"`
-- `Mfa`: `"CreateBackendAuthMFAConfigTypeDef"`
-- `OAuth`: `"CreateBackendAuthOAuthConfigTypeDef"`
-- `PasswordPolicy`: `"CreateBackendAuthPasswordPolicyConfigTypeDef"`
 
+- `ForgotPassword`:
+  [CreateBackendAuthForgotPasswordConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthforgotpasswordconfigtypedef)
+- `Mfa`:
+  [CreateBackendAuthMFAConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthmfaconfigtypedef)
+- `OAuth`:
+  [CreateBackendAuthOAuthConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthoauthconfigtypedef)
+- `PasswordPolicy`:
+  [CreateBackendAuthPasswordPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthpasswordpolicyconfigtypedef)
 
 ## CreateBackendConfigResponseTypeDef
 
@@ -340,15 +325,12 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `JobId`: `str`
 - `Status`: `str`
-
 
 ## CreateBackendResponseTypeDef
 
@@ -356,17 +338,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateBackendResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## CreateTokenResponseTypeDef
 
@@ -374,15 +353,12 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import CreateTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `ChallengeCode`: `str`
 - `SessionId`: `str`
 - `Ttl`: `str`
-
 
 ## DeleteBackendAPIResponseTypeDef
 
@@ -390,17 +366,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import DeleteBackendAPIResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## DeleteBackendAuthResponseTypeDef
 
@@ -408,17 +381,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import DeleteBackendAuthResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## DeleteBackendResponseTypeDef
 
@@ -426,17 +396,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import DeleteBackendResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## DeleteTokenResponseTypeDef
 
@@ -444,12 +411,9 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import DeleteTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsSuccess`: `bool`
 
+- `IsSuccess`: `bool`
 
 ## EmailSettingsTypeDef
 
@@ -457,13 +421,10 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import EmailSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EmailMessage`: `str`
 - `EmailSubject`: `str`
-
 
 ## GenerateBackendAPIModelsResponseTypeDef
 
@@ -471,17 +432,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GenerateBackendAPIModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## GetBackendAPIModelsResponseTypeDef
 
@@ -489,13 +447,11 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetBackendAPIModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Models`: `str`
-- `Status`: `Status`
 
+- `Models`: `str`
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#status)
 
 ## GetBackendAPIResponseTypeDef
 
@@ -503,16 +459,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetBackendAPIResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
-- `ResourceConfig`: `"BackendAPIResourceConfigTypeDef"`
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
 - `ResourceName`: `str`
-
 
 ## GetBackendAuthResponseTypeDef
 
@@ -520,16 +474,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetBackendAuthResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
-- `ResourceConfig`: `"CreateBackendAuthResourceConfigTypeDef"`
+- `ResourceConfig`:
+  [CreateBackendAuthResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthresourceconfigtypedef)
 - `ResourceName`: `str`
-
 
 ## GetBackendJobResponseTypeDef
 
@@ -537,10 +489,8 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetBackendJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `CreateTime`: `str`
@@ -549,7 +499,6 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
-
 
 ## GetBackendResponseTypeDef
 
@@ -557,17 +506,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetBackendResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AmplifyMetaConfig`: `str`
 - `AppId`: `str`
 - `AppName`: `str`
-- `BackendEnvironmentList`: `List[str]`
+- `BackendEnvironmentList`: `List`\[`str`\]
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
-
 
 ## GetTokenResponseTypeDef
 
@@ -575,15 +521,12 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import GetTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `ChallengeCode`: `str`
 - `SessionId`: `str`
 - `Ttl`: `str`
-
 
 ## ListBackendJobsResponseTypeDef
 
@@ -591,13 +534,11 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import ListBackendJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Jobs`: `List["BackendJobRespObjTypeDef"]`
-- `NextToken`: `str`
 
+- `Jobs`:
+  `List`\[[BackendJobRespObjTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendjobrespobjtypedef)\]
+- `NextToken`: `str`
 
 ## LoginAuthConfigReqObjTypeDef
 
@@ -605,15 +546,12 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import LoginAuthConfigReqObjTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AwsCognitoIdentityPoolId`: `str`
 - `AwsCognitoRegion`: `str`
 - `AwsUserPoolsId`: `str`
 - `AwsUserPoolsWebClientId`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -621,14 +559,11 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RemoveAllBackendsResponseTypeDef
 
@@ -636,16 +571,13 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import RemoveAllBackendsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## RemoveBackendConfigResponseTypeDef
 
@@ -653,12 +585,9 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import RemoveBackendConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Error`: `str`
 
+- `Error`: `str`
 
 ## SettingsTypeDef
 
@@ -666,13 +595,11 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import SettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MfaTypes`: `List[MfaTypesElement]`
-- `SmsMessage`: `str`
 
+- `MfaTypes`:
+  `List`\[[MfaTypesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#mfatypeselement)\]
+- `SmsMessage`: `str`
 
 ## SmsSettingsTypeDef
 
@@ -680,12 +607,9 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import SmsSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SmsMessage`: `str`
 
+- `SmsMessage`: `str`
 
 ## SocialProviderSettingsTypeDef
 
@@ -693,14 +617,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import SocialProviderSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Facebook`: `"BackendAuthSocialProviderConfigTypeDef"`
-- `Google`: `"BackendAuthSocialProviderConfigTypeDef"`
-- `LoginWithAmazon`: `"BackendAuthSocialProviderConfigTypeDef"`
 
+- `Facebook`:
+  [BackendAuthSocialProviderConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendauthsocialproviderconfigtypedef)
+- `Google`:
+  [BackendAuthSocialProviderConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendauthsocialproviderconfigtypedef)
+- `LoginWithAmazon`:
+  [BackendAuthSocialProviderConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendauthsocialproviderconfigtypedef)
 
 ## UpdateBackendAPIResponseTypeDef
 
@@ -708,17 +632,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAPIResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
-
 
 ## UpdateBackendAuthForgotPasswordConfigTypeDef
 
@@ -726,14 +647,14 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthForgotPasswordConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeliveryMethod`: `DeliveryMethod`
-- `EmailSettings`: `"EmailSettingsTypeDef"`
-- `SmsSettings`: `"SmsSettingsTypeDef"`
 
+- `DeliveryMethod`:
+  [DeliveryMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#deliverymethod)
+- `EmailSettings`:
+  [EmailSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#emailsettingstypedef)
+- `SmsSettings`:
+  [SmsSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#smssettingstypedef)
 
 ## UpdateBackendAuthIdentityPoolConfigTypeDef
 
@@ -741,12 +662,9 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthIdentityPoolConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UnauthenticatedLogin`: `bool`
 
+- `UnauthenticatedLogin`: `bool`
 
 ## UpdateBackendAuthMFAConfigTypeDef
 
@@ -754,13 +672,12 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthMFAConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MFAMode`: `MFAMode`
-- `Settings`: `"SettingsTypeDef"`
 
+- `MFAMode`:
+  [MFAMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#mfamode)
+- `Settings`:
+  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#settingstypedef)
 
 ## UpdateBackendAuthOAuthConfigTypeDef
 
@@ -768,17 +685,17 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthOAuthConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DomainPrefix`: `str`
-- `OAuthGrantType`: `OAuthGrantType`
-- `OAuthScopes`: `List[OAuthScopesElement]`
-- `RedirectSignInURIs`: `List[str]`
-- `RedirectSignOutURIs`: `List[str]`
-- `SocialProviderSettings`: `"SocialProviderSettingsTypeDef"`
 
+- `DomainPrefix`: `str`
+- `OAuthGrantType`:
+  [OAuthGrantType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#oauthgranttype)
+- `OAuthScopes`:
+  `List`\[[OAuthScopesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#oauthscopeselement)\]
+- `RedirectSignInURIs`: `List`\[`str`\]
+- `RedirectSignOutURIs`: `List`\[`str`\]
+- `SocialProviderSettings`:
+  [SocialProviderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#socialprovidersettingstypedef)
 
 ## UpdateBackendAuthPasswordPolicyConfigTypeDef
 
@@ -786,13 +703,11 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthPasswordPolicyConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdditionalConstraints`: `List[AdditionalConstraintsElement]`
-- `MinimumLength`: `float`
 
+- `AdditionalConstraints`:
+  `List`\[[AdditionalConstraintsElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#additionalconstraintselement)\]
+- `MinimumLength`: `float`
 
 ## UpdateBackendAuthResourceConfigTypeDef
 
@@ -800,17 +715,18 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthResourceConfigTypeDef
 ```
 
-
 Required fields:
-- `AuthResources`: `AuthResources`
+
+- `AuthResources`:
+  [AuthResources](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/literals.html#authresources)
 - `Service`: `Literal['COGNITO']`
-- `UserPoolConfigs`: `"UpdateBackendAuthUserPoolConfigTypeDef"`
-
-
+- `UserPoolConfigs`:
+  [UpdateBackendAuthUserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthuserpoolconfigtypedef)
 
 Optional fields:
-- `IdentityPoolConfigs`: `"UpdateBackendAuthIdentityPoolConfigTypeDef"`
 
+- `IdentityPoolConfigs`:
+  [UpdateBackendAuthIdentityPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthidentitypoolconfigtypedef)
 
 ## UpdateBackendAuthResponseTypeDef
 
@@ -818,10 +734,8 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
@@ -829,22 +743,22 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 
-
 ## UpdateBackendAuthUserPoolConfigTypeDef
 
 ```python
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthUserPoolConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ForgotPassword`: `"UpdateBackendAuthForgotPasswordConfigTypeDef"`
-- `Mfa`: `"UpdateBackendAuthMFAConfigTypeDef"`
-- `OAuth`: `"UpdateBackendAuthOAuthConfigTypeDef"`
-- `PasswordPolicy`: `"UpdateBackendAuthPasswordPolicyConfigTypeDef"`
 
+- `ForgotPassword`:
+  [UpdateBackendAuthForgotPasswordConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthforgotpasswordconfigtypedef)
+- `Mfa`:
+  [UpdateBackendAuthMFAConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthmfaconfigtypedef)
+- `OAuth`:
+  [UpdateBackendAuthOAuthConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthoauthconfigtypedef)
+- `PasswordPolicy`:
+  [UpdateBackendAuthPasswordPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthpasswordpolicyconfigtypedef)
 
 ## UpdateBackendConfigResponseTypeDef
 
@@ -852,15 +766,13 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendManagerAppId`: `str`
 - `Error`: `str`
-- `LoginAuthConfig`: `"LoginAuthConfigReqObjTypeDef"`
-
+- `LoginAuthConfig`:
+  [LoginAuthConfigReqObjTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#loginauthconfigreqobjtypedef)
 
 ## UpdateBackendJobResponseTypeDef
 
@@ -868,10 +780,8 @@ Optional fields:
 from mypy_boto3_amplifybackend.type_defs import UpdateBackendJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `CreateTime`: `str`
@@ -880,4 +790,3 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
-

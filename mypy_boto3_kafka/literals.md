@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kafka](./README.md) > Literals
 
-Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
-type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+Auto-generated documentation for
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+type annotations stubs module
+[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Literals for boto3 Kafka module](#literals-for-boto3-kafka-module)
   - [BrokerAZDistribution](#brokerazdistribution)

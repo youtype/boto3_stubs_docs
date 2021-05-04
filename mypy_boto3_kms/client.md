@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KMS](./README.md) > KMSClient
 
-Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+Auto-generated documentation for
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+type annotations stubs module
+[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [KMSClient for boto3 KMS module](#kmsclient-for-boto3-kms-module)
   - [KMSClient](#kmsclient)
@@ -72,12 +74,13 @@ def get_kms_client() -> KMSClient:
     return boto3.client("kms")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
+Boto3 documentation:
+[KMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kms.client import Exceptions
@@ -85,7 +88,6 @@ from mypy_boto3_kms.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -124,789 +126,768 @@ Exceptions:
 - `Exceptions.TagException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("kms").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.can_paginate]
+Boto3 documentation:
+[KMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_key_deletion
 
 Type annotations for `boto3.client("kms").cancel_key_deletion` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion]
+Boto3 documentation:
+[KMS.Client.cancel_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion)
 
-```python
-def cancel_key_deletion(
-    self,
-    KeyId: str
-) -> CancelKeyDeletionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+
+Returns
+[CancelKeyDeletionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#cancelkeydeletionresponsetypedef).
 
 ### connect_custom_key_store
 
 Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store]
+Boto3 documentation:
+[KMS.Client.connect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store)
 
-```python
-def connect_custom_key_store(
-    self,
-    CustomKeyStoreId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_alias
 
 Type annotations for `boto3.client("kms").create_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias]
+Boto3 documentation:
+[KMS.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias)
 
-```python
-def create_alias(
-    self,
-    AliasName: str,
-    TargetKeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AliasName`: `str` *(required)*
+- `TargetKeyId`: `str` *(required)*
 
 ### create_custom_key_store
 
 Type annotations for `boto3.client("kms").create_custom_key_store` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store]
+Boto3 documentation:
+[KMS.Client.create_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store)
 
-```python
-def create_custom_key_store(
-    self,
-    CustomKeyStoreName: str,
-    CloudHsmClusterId: str,
-    TrustAnchorCertificate: str,
-    KeyStorePassword: str
-) -> CreateCustomKeyStoreResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreName`: `str` *(required)*
+- `CloudHsmClusterId`: `str` *(required)*
+- `TrustAnchorCertificate`: `str` *(required)*
+- `KeyStorePassword`: `str` *(required)*
+
+Returns
+[CreateCustomKeyStoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#createcustomkeystoreresponsetypedef).
 
 ### create_grant
 
 Type annotations for `boto3.client("kms").create_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant]
+Boto3 documentation:
+[KMS.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant)
 
-```python
-def create_grant(
-    self,
-    KeyId: str,
-    GranteePrincipal: str,
-    Operations: List[GrantOperation],
-    RetiringPrincipal: str = None,
-    Constraints: "GrantConstraintsTypeDef" = None,
-    GrantTokens: List[str] = None,
-    Name: str = None
-) -> CreateGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `GranteePrincipal`: `str` *(required)*
+- `Operations`:
+  `List`\[[GrantOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#grantoperation)\]
+  *(required)*
+- `RetiringPrincipal`: `str`
+- `Constraints`:
+  [GrantConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#grantconstraintstypedef)
+- `GrantTokens`: `List`\[`str`\]
+- `Name`: `str`
+
+Returns
+[CreateGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#creategrantresponsetypedef).
 
 ### create_key
 
 Type annotations for `boto3.client("kms").create_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key]
+Boto3 documentation:
+[KMS.Client.create_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key)
 
-```python
-def create_key(
-    self,
-    Policy: str = None,
-    Description: str = None,
-    KeyUsage: KeyUsageType = None,
-    CustomerMasterKeySpec: CustomerMasterKeySpec = None,
-    Origin: OriginType = None,
-    CustomKeyStoreId: str = None,
-    BypassPolicyLockoutSafetyCheck: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Policy`: `str`
+- `Description`: `str`
+- `KeyUsage`:
+  [KeyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keyusagetype)
+- `CustomerMasterKeySpec`:
+  [CustomerMasterKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#customermasterkeyspec)
+- `Origin`:
+  [OriginType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#origintype)
+- `CustomKeyStoreId`: `str`
+- `BypassPolicyLockoutSafetyCheck`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#createkeyresponsetypedef).
 
 ### decrypt
 
 Type annotations for `boto3.client("kms").decrypt` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt]
+Boto3 documentation:
+[KMS.Client.decrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt)
 
-```python
-def decrypt(
-    self,
-    CiphertextBlob: Union[bytes, IO[bytes]],
-    EncryptionContext: Dict[str, str] = None,
-    GrantTokens: List[str] = None,
-    KeyId: str = None,
-    EncryptionAlgorithm: EncryptionAlgorithmSpec = None
-) -> DecryptResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `GrantTokens`: `List`\[`str`\]
+- `KeyId`: `str`
+- `EncryptionAlgorithm`:
+  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+
+Returns
+[DecryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#decryptresponsetypedef).
 
 ### delete_alias
 
 Type annotations for `boto3.client("kms").delete_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias]
+Boto3 documentation:
+[KMS.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias)
 
-```python
-def delete_alias(
-    self,
-    AliasName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AliasName`: `str` *(required)*
 
 ### delete_custom_key_store
 
 Type annotations for `boto3.client("kms").delete_custom_key_store` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store]
+Boto3 documentation:
+[KMS.Client.delete_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store)
 
-```python
-def delete_custom_key_store(
-    self,
-    CustomKeyStoreId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_imported_key_material
 
 Type annotations for `boto3.client("kms").delete_imported_key_material` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material]
+Boto3 documentation:
+[KMS.Client.delete_imported_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material)
 
-```python
-def delete_imported_key_material(
-    self,
-    KeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
 
 ### describe_custom_key_stores
 
 Type annotations for `boto3.client("kms").describe_custom_key_stores` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores]
+Boto3 documentation:
+[KMS.Client.describe_custom_key_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores)
 
-```python
-def describe_custom_key_stores(
-    self,
-    CustomKeyStoreId: str = None,
-    CustomKeyStoreName: str = None,
-    Limit: int = None,
-    Marker: str = None
-) -> DescribeCustomKeyStoresResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreId`: `str`
+- `CustomKeyStoreName`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeCustomKeyStoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#describecustomkeystoresresponsetypedef).
 
 ### describe_key
 
 Type annotations for `boto3.client("kms").describe_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key]
+Boto3 documentation:
+[KMS.Client.describe_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key)
 
-```python
-def describe_key(
-    self,
-    KeyId: str,
-    GrantTokens: List[str] = None
-) -> DescribeKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[DescribeKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#describekeyresponsetypedef).
 
 ### disable_key
 
 Type annotations for `boto3.client("kms").disable_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key]
+Boto3 documentation:
+[KMS.Client.disable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key)
 
-```python
-def disable_key(
-    self,
-    KeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
 
 ### disable_key_rotation
 
 Type annotations for `boto3.client("kms").disable_key_rotation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation]
+Boto3 documentation:
+[KMS.Client.disable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation)
 
-```python
-def disable_key_rotation(
-    self,
-    KeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
 
 ### disconnect_custom_key_store
 
 Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store]
+Boto3 documentation:
+[KMS.Client.disconnect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
 
-```python
-def disconnect_custom_key_store(
-    self,
-    CustomKeyStoreId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_key
 
 Type annotations for `boto3.client("kms").enable_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key]
+Boto3 documentation:
+[KMS.Client.enable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key)
 
-```python
-def enable_key(
-    self,
-    KeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
 
 ### enable_key_rotation
 
 Type annotations for `boto3.client("kms").enable_key_rotation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation]
+Boto3 documentation:
+[KMS.Client.enable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation)
 
-```python
-def enable_key_rotation(
-    self,
-    KeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
 
 ### encrypt
 
 Type annotations for `boto3.client("kms").encrypt` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt]
+Boto3 documentation:
+[KMS.Client.encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt)
 
-```python
-def encrypt(
-    self,
-    KeyId: str,
-    Plaintext: Union[bytes, IO[bytes]],
-    EncryptionContext: Dict[str, str] = None,
-    GrantTokens: List[str] = None,
-    EncryptionAlgorithm: EncryptionAlgorithmSpec = None
-) -> EncryptResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `GrantTokens`: `List`\[`str`\]
+- `EncryptionAlgorithm`:
+  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+
+Returns
+[EncryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#encryptresponsetypedef).
 
 ### generate_data_key
 
 Type annotations for `boto3.client("kms").generate_data_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key]
+Boto3 documentation:
+[KMS.Client.generate_data_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key)
 
-```python
-def generate_data_key(
-    self,
-    KeyId: str,
-    EncryptionContext: Dict[str, str] = None,
-    NumberOfBytes: int = None,
-    KeySpec: DataKeySpec = None,
-    GrantTokens: List[str] = None
-) -> GenerateDataKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `NumberOfBytes`: `int`
+- `KeySpec`:
+  [DataKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeyspec)
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[GenerateDataKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeyresponsetypedef).
 
 ### generate_data_key_pair
 
 Type annotations for `boto3.client("kms").generate_data_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair]
+Boto3 documentation:
+[KMS.Client.generate_data_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair)
 
-```python
-def generate_data_key_pair(
-    self,
-    KeyId: str,
-    KeyPairSpec: DataKeyPairSpec,
-    EncryptionContext: Dict[str, str] = None,
-    GrantTokens: List[str] = None
-) -> GenerateDataKeyPairResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `KeyPairSpec`:
+  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
+  *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[GenerateDataKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeypairresponsetypedef).
 
 ### generate_data_key_pair_without_plaintext
 
-Type annotations for `boto3.client("kms").generate_data_key_pair_without_plaintext` method.
+Type annotations for
+`boto3.client("kms").generate_data_key_pair_without_plaintext` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext]
+Boto3 documentation:
+[KMS.Client.generate_data_key_pair_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext)
 
-```python
-def generate_data_key_pair_without_plaintext(
-    self,
-    KeyId: str,
-    KeyPairSpec: DataKeyPairSpec,
-    EncryptionContext: Dict[str, str] = None,
-    GrantTokens: List[str] = None
-) -> GenerateDataKeyPairWithoutPlaintextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `KeyPairSpec`:
+  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
+  *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[GenerateDataKeyPairWithoutPlaintextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeypairwithoutplaintextresponsetypedef).
 
 ### generate_data_key_without_plaintext
 
-Type annotations for `boto3.client("kms").generate_data_key_without_plaintext` method.
+Type annotations for `boto3.client("kms").generate_data_key_without_plaintext`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext]
+Boto3 documentation:
+[KMS.Client.generate_data_key_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext)
 
-```python
-def generate_data_key_without_plaintext(
-    self,
-    KeyId: str,
-    EncryptionContext: Dict[str, str] = None,
-    KeySpec: DataKeySpec = None,
-    NumberOfBytes: int = None,
-    GrantTokens: List[str] = None
-) -> GenerateDataKeyWithoutPlaintextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `KeySpec`:
+  [DataKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeyspec)
+- `NumberOfBytes`: `int`
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[GenerateDataKeyWithoutPlaintextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeywithoutplaintextresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("kms").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_presigned_url]
+Boto3 documentation:
+[KMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### generate_random
 
 Type annotations for `boto3.client("kms").generate_random` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random]
+Boto3 documentation:
+[KMS.Client.generate_random](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random)
 
-```python
-def generate_random(
-    self,
-    NumberOfBytes: int = None,
-    CustomKeyStoreId: str = None
-) -> GenerateRandomResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NumberOfBytes`: `int`
+- `CustomKeyStoreId`: `str`
+
+Returns
+[GenerateRandomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generaterandomresponsetypedef).
 
 ### get_key_policy
 
 Type annotations for `boto3.client("kms").get_key_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy]
+Boto3 documentation:
+[KMS.Client.get_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy)
 
-```python
-def get_key_policy(
-    self,
-    KeyId: str,
-    PolicyName: str
-) -> GetKeyPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns
+[GetKeyPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getkeypolicyresponsetypedef).
 
 ### get_key_rotation_status
 
 Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status]
+Boto3 documentation:
+[KMS.Client.get_key_rotation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status)
 
-```python
-def get_key_rotation_status(
-    self,
-    KeyId: str
-) -> GetKeyRotationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+
+Returns
+[GetKeyRotationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getkeyrotationstatusresponsetypedef).
 
 ### get_parameters_for_import
 
 Type annotations for `boto3.client("kms").get_parameters_for_import` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import]
+Boto3 documentation:
+[KMS.Client.get_parameters_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import)
 
-```python
-def get_parameters_for_import(
-    self,
-    KeyId: str,
-    WrappingAlgorithm: AlgorithmSpec,
-    WrappingKeySpec: Literal['RSA_2048']
-) -> GetParametersForImportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `WrappingAlgorithm`:
+  [AlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#algorithmspec)
+  *(required)*
+- `WrappingKeySpec`: `Literal['RSA_2048']` *(required)*
+
+Returns
+[GetParametersForImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getparametersforimportresponsetypedef).
 
 ### get_public_key
 
 Type annotations for `boto3.client("kms").get_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key]
+Boto3 documentation:
+[KMS.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key)
 
-```python
-def get_public_key(
-    self,
-    KeyId: str,
-    GrantTokens: List[str] = None
-) -> GetPublicKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[GetPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getpublickeyresponsetypedef).
 
 ### import_key_material
 
 Type annotations for `boto3.client("kms").import_key_material` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material]
+Boto3 documentation:
+[KMS.Client.import_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material)
 
-```python
-def import_key_material(
-    self,
-    KeyId: str,
-    ImportToken: Union[bytes, IO[bytes]],
-    EncryptedKeyMaterial: Union[bytes, IO[bytes]],
-    ValidTo: datetime = None,
-    ExpirationModel: ExpirationModelType = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `EncryptedKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ValidTo`: `datetime`
+- `ExpirationModel`:
+  [ExpirationModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#expirationmodeltype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### list_aliases
 
 Type annotations for `boto3.client("kms").list_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases]
+Boto3 documentation:
+[KMS.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases)
 
-```python
-def list_aliases(
-    self,
-    KeyId: str = None,
-    Limit: int = None,
-    Marker: str = None
-) -> ListAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listaliasesresponsetypedef).
 
 ### list_grants
 
 Type annotations for `boto3.client("kms").list_grants` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants]
+Boto3 documentation:
+[KMS.Client.list_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants)
 
-```python
-def list_grants(
-    self,
-    KeyId: str,
-    Limit: int = None,
-    Marker: str = None,
-    GrantId: str = None,
-    GranteePrincipal: str = None
-) -> ListGrantsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Limit`: `int`
+- `Marker`: `str`
+- `GrantId`: `str`
+- `GranteePrincipal`: `str`
+
+Returns
+[ListGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listgrantsresponsetypedef).
 
 ### list_key_policies
 
 Type annotations for `boto3.client("kms").list_key_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies]
+Boto3 documentation:
+[KMS.Client.list_key_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies)
 
-```python
-def list_key_policies(
-    self,
-    KeyId: str,
-    Limit: int = None,
-    Marker: str = None
-) -> ListKeyPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[ListKeyPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeypoliciesresponsetypedef).
 
 ### list_keys
 
 Type annotations for `boto3.client("kms").list_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys]
+Boto3 documentation:
+[KMS.Client.list_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys)
 
-```python
-def list_keys(
-    self,
-    Limit: int = None,
-    Marker: str = None
-) -> ListKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[ListKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeysresponsetypedef).
 
 ### list_resource_tags
 
 Type annotations for `boto3.client("kms").list_resource_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags]
+Boto3 documentation:
+[KMS.Client.list_resource_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags)
 
-```python
-def list_resource_tags(
-    self,
-    KeyId: str,
-    Limit: int = None,
-    Marker: str = None
-) -> ListResourceTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[ListResourceTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listresourcetagsresponsetypedef).
 
 ### list_retirable_grants
 
 Type annotations for `boto3.client("kms").list_retirable_grants` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants]
+Boto3 documentation:
+[KMS.Client.list_retirable_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants)
 
-```python
-def list_retirable_grants(
-    self,
-    RetiringPrincipal: str,
-    Limit: int = None,
-    Marker: str = None
-) -> ListGrantsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RetiringPrincipal`: `str` *(required)*
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[ListGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listgrantsresponsetypedef).
 
 ### put_key_policy
 
 Type annotations for `boto3.client("kms").put_key_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy]
+Boto3 documentation:
+[KMS.Client.put_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy)
 
-```python
-def put_key_policy(
-    self,
-    KeyId: str,
-    PolicyName: str,
-    Policy: str,
-    BypassPolicyLockoutSafetyCheck: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `Policy`: `str` *(required)*
+- `BypassPolicyLockoutSafetyCheck`: `bool`
 
 ### re_encrypt
 
 Type annotations for `boto3.client("kms").re_encrypt` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt]
+Boto3 documentation:
+[KMS.Client.re_encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt)
 
-```python
-def re_encrypt(
-    self,
-    CiphertextBlob: Union[bytes, IO[bytes]],
-    DestinationKeyId: str,
-    SourceEncryptionContext: Dict[str, str] = None,
-    SourceKeyId: str = None,
-    DestinationEncryptionContext: Dict[str, str] = None,
-    SourceEncryptionAlgorithm: EncryptionAlgorithmSpec = None,
-    DestinationEncryptionAlgorithm: EncryptionAlgorithmSpec = None,
-    GrantTokens: List[str] = None
-) -> ReEncryptResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `DestinationKeyId`: `str` *(required)*
+- `SourceEncryptionContext`: `Dict`\[`str`, `str`\]
+- `SourceKeyId`: `str`
+- `DestinationEncryptionContext`: `Dict`\[`str`, `str`\]
+- `SourceEncryptionAlgorithm`:
+  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+- `DestinationEncryptionAlgorithm`:
+  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[ReEncryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#reencryptresponsetypedef).
 
 ### retire_grant
 
 Type annotations for `boto3.client("kms").retire_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant]
+Boto3 documentation:
+[KMS.Client.retire_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant)
 
-```python
-def retire_grant(
-    self,
-    GrantToken: str = None,
-    KeyId: str = None,
-    GrantId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `GrantToken`: `str`
+- `KeyId`: `str`
+- `GrantId`: `str`
 
 ### revoke_grant
 
 Type annotations for `boto3.client("kms").revoke_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant]
+Boto3 documentation:
+[KMS.Client.revoke_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant)
 
-```python
-def revoke_grant(
-    self,
-    KeyId: str,
-    GrantId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `GrantId`: `str` *(required)*
 
 ### schedule_key_deletion
 
 Type annotations for `boto3.client("kms").schedule_key_deletion` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion]
+Boto3 documentation:
+[KMS.Client.schedule_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion)
 
-```python
-def schedule_key_deletion(
-    self,
-    KeyId: str,
-    PendingWindowInDays: int = None
-) -> ScheduleKeyDeletionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `PendingWindowInDays`: `int`
+
+Returns
+[ScheduleKeyDeletionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#schedulekeydeletionresponsetypedef).
 
 ### sign
 
 Type annotations for `boto3.client("kms").sign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign]
+Boto3 documentation:
+[KMS.Client.sign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign)
 
-```python
-def sign(
-    self,
-    KeyId: str,
-    Message: Union[bytes, IO[bytes]],
-    SigningAlgorithm: SigningAlgorithmSpec,
-    MessageType: MessageType = None,
-    GrantTokens: List[str] = None
-) -> SignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+  *(required)*
+- `MessageType`:
+  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#messagetype)
+- `GrantTokens`: `List`\[`str`\]
+
+Returns
+[SignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#signresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("kms").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource]
+Boto3 documentation:
+[KMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    KeyId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("kms").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource]
+Boto3 documentation:
+[KMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    KeyId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_alias
 
 Type annotations for `boto3.client("kms").update_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias]
+Boto3 documentation:
+[KMS.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias)
 
-```python
-def update_alias(
-    self,
-    AliasName: str,
-    TargetKeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AliasName`: `str` *(required)*
+- `TargetKeyId`: `str` *(required)*
 
 ### update_custom_key_store
 
 Type annotations for `boto3.client("kms").update_custom_key_store` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store]
+Boto3 documentation:
+[KMS.Client.update_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store)
 
-```python
-def update_custom_key_store(
-    self,
-    CustomKeyStoreId: str,
-    NewCustomKeyStoreName: str = None,
-    KeyStorePassword: str = None,
-    CloudHsmClusterId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CustomKeyStoreId`: `str` *(required)*
+- `NewCustomKeyStoreName`: `str`
+- `KeyStorePassword`: `str`
+- `CloudHsmClusterId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_key_description
 
 Type annotations for `boto3.client("kms").update_key_description` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description]
+Boto3 documentation:
+[KMS.Client.update_key_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description)
 
-```python
-def update_key_description(
-    self,
-    KeyId: str,
-    Description: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `KeyId`: `str` *(required)*
+- `Description`: `str` *(required)*
 
 ### verify
 
 Type annotations for `boto3.client("kms").verify` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify]
+Boto3 documentation:
+[KMS.Client.verify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify)
 
-```python
-def verify(
-    self,
-    KeyId: str,
-    Message: Union[bytes, IO[bytes]],
-    Signature: Union[bytes, IO[bytes]],
-    SigningAlgorithm: SigningAlgorithmSpec,
-    MessageType: MessageType = None,
-    GrantTokens: List[str] = None
-) -> VerifyResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `KeyId`: `str` *(required)*
+- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+  *(required)*
+- `MessageType`:
+  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#messagetype)
+- `GrantTokens`: `List`\[`str`\]
 
+Returns
+[VerifyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#verifyresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("kms").get_paginator` method with overloads.
 
-- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_grants")` -> [ListGrantsPaginator](./paginators.md#listgrantspaginator)
-- `client.get_paginator("list_key_policies")` -> [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
-- `client.get_paginator("list_keys")` -> [ListKeysPaginator](./paginators.md#listkeyspaginator)
-
-
+- `client.get_paginator("list_aliases")` ->
+  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_grants")` ->
+  [ListGrantsPaginator](./paginators.md#listgrantspaginator)
+- `client.get_paginator("list_key_policies")` ->
+  [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
+- `client.get_paginator("list_keys")` ->
+  [ListKeysPaginator](./paginators.md#listkeyspaginator)

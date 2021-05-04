@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kinesis](./README.md) > Structures
 
-Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
-type annotations stubs module [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+Auto-generated documentation for
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+type annotations stubs module
+[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Typed dictionaries for boto3 Kinesis module](#typed-dictionaries-for-boto3-kinesis-module)
   - [ChildShardTypeDef](#childshardtypedef)
@@ -58,14 +60,12 @@ type annotations stubs module [mypy_boto3_kinesis](https://pypi.org/project/mypy
 from mypy_boto3_kinesis.type_defs import ChildShardTypeDef
 ```
 
-
 Required fields:
+
 - `ShardId`: `str`
-- `ParentShards`: `List[str]`
-- `HashKeyRange`: `"HashKeyRangeTypeDef"`
-
-
-
+- `ParentShards`: `List`\[`str`\]
+- `HashKeyRange`:
+  [HashKeyRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#hashkeyrangetypedef)
 
 ## ConsumerDescriptionTypeDef
 
@@ -73,16 +73,14 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ConsumerDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
-- `ConsumerStatus`: `ConsumerStatus`
+- `ConsumerStatus`:
+  [ConsumerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#consumerstatus)
 - `ConsumerCreationTimestamp`: `datetime`
 - `StreamARN`: `str`
-
-
-
 
 ## ConsumerTypeDef
 
@@ -90,15 +88,13 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ConsumerTypeDef
 ```
 
-
 Required fields:
+
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
-- `ConsumerStatus`: `ConsumerStatus`
+- `ConsumerStatus`:
+  [ConsumerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#consumerstatus)
 - `ConsumerCreationTimestamp`: `datetime`
-
-
-
 
 ## DescribeLimitsOutputTypeDef
 
@@ -106,14 +102,12 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import DescribeLimitsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ShardLimit`: `int`
 - `OpenShardCount`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## DescribeStreamConsumerOutputTypeDef
 
@@ -121,13 +115,12 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import DescribeStreamConsumerOutputTypeDef
 ```
 
-
 Required fields:
-- `ConsumerDescription`: `"ConsumerDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ConsumerDescription`:
+  [ConsumerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#consumerdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## DescribeStreamOutputTypeDef
 
@@ -135,13 +128,12 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import DescribeStreamOutputTypeDef
 ```
 
-
 Required fields:
-- `StreamDescription`: `"StreamDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `StreamDescription`:
+  [StreamDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#streamdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## DescribeStreamSummaryOutputTypeDef
 
@@ -149,13 +141,12 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import DescribeStreamSummaryOutputTypeDef
 ```
 
-
 Required fields:
-- `StreamDescriptionSummary`: `"StreamDescriptionSummaryTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `StreamDescriptionSummary`:
+  [StreamDescriptionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#streamdescriptionsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## EnhancedMetricsTypeDef
 
@@ -163,12 +154,10 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import EnhancedMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ShardLevelMetrics`: `List[MetricsName]`
 
+- `ShardLevelMetrics`:
+  `List`\[[MetricsName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#metricsname)\]
 
 ## EnhancedMonitoringOutputTypeDef
 
@@ -176,15 +165,15 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import EnhancedMonitoringOutputTypeDef
 ```
 
-
 Required fields:
+
 - `StreamName`: `str`
-- `CurrentShardLevelMetrics`: `List[MetricsName]`
-- `DesiredShardLevelMetrics`: `List[MetricsName]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `CurrentShardLevelMetrics`:
+  `List`\[[MetricsName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#metricsname)\]
+- `DesiredShardLevelMetrics`:
+  `List`\[[MetricsName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#metricsname)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## GetRecordsOutputTypeDef
 
@@ -192,16 +181,16 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import GetRecordsOutputTypeDef
 ```
 
-
 Required fields:
-- `Records`: `List["RecordTypeDef"]`
+
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#recordtypedef)\]
 - `NextShardIterator`: `str`
 - `MillisBehindLatest`: `int`
-- `ChildShards`: `List["ChildShardTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ChildShards`:
+  `List`\[[ChildShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#childshardtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## GetShardIteratorOutputTypeDef
 
@@ -209,13 +198,11 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import GetShardIteratorOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ShardIterator`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## HashKeyRangeTypeDef
 
@@ -223,13 +210,10 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import HashKeyRangeTypeDef
 ```
 
-
 Required fields:
+
 - `StartingHashKey`: `str`
 - `EndingHashKey`: `str`
-
-
-
 
 ## InternalFailureExceptionTypeDef
 
@@ -237,12 +221,9 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import InternalFailureExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSAccessDeniedExceptionTypeDef
 
@@ -250,12 +231,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSAccessDeniedExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSDisabledExceptionTypeDef
 
@@ -263,12 +241,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSDisabledExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSInvalidStateExceptionTypeDef
 
@@ -276,12 +251,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSInvalidStateExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSNotFoundExceptionTypeDef
 
@@ -289,12 +261,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSNotFoundExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSOptInRequiredTypeDef
 
@@ -302,12 +271,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSOptInRequiredTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## KMSThrottlingExceptionTypeDef
 
@@ -315,12 +281,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import KMSThrottlingExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## ListShardsOutputTypeDef
 
@@ -328,14 +291,13 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import ListShardsOutputTypeDef
 ```
 
-
 Required fields:
-- `Shards`: `List["ShardTypeDef"]`
+
+- `Shards`:
+  `List`\[[ShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#shardtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## ListStreamConsumersOutputTypeDef
 
@@ -343,14 +305,13 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ListStreamConsumersOutputTypeDef
 ```
 
-
 Required fields:
-- `Consumers`: `List["ConsumerTypeDef"]`
+
+- `Consumers`:
+  `List`\[[ConsumerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#consumertypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## ListStreamsOutputTypeDef
 
@@ -358,14 +319,12 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ListStreamsOutputTypeDef
 ```
 
-
 Required fields:
-- `StreamNames`: `List[str]`
+
+- `StreamNames`: `List`\[`str`\]
 - `HasMoreStreams`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## ListTagsForStreamOutputTypeDef
 
@@ -373,14 +332,13 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ListTagsForStreamOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#tagtypedef)\]
 - `HasMoreTags`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## PaginatorConfigTypeDef
 
@@ -388,14 +346,11 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutRecordOutputTypeDef
 
@@ -403,15 +358,14 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import PutRecordOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ShardId`: `str`
 - `SequenceNumber`: `str`
-- `EncryptionType`: `EncryptionType`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## PutRecordsOutputTypeDef
 
@@ -419,15 +373,15 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import PutRecordsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FailedRecordCount`: `int`
-- `Records`: `List["PutRecordsResultEntryTypeDef"]`
-- `EncryptionType`: `EncryptionType`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Records`:
+  `List`\[[PutRecordsResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#putrecordsresultentrytypedef)\]
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## PutRecordsRequestEntryTypeDef
 
@@ -435,16 +389,14 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import PutRecordsRequestEntryTypeDef
 ```
 
-
 Required fields:
-- `Data`: `Union[bytes, IO[bytes]]`
+
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PartitionKey`: `str`
 
-
-
 Optional fields:
-- `ExplicitHashKey`: `str`
 
+- `ExplicitHashKey`: `str`
 
 ## PutRecordsResultEntryTypeDef
 
@@ -452,15 +404,12 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import PutRecordsResultEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SequenceNumber`: `str`
 - `ShardId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## RecordTypeDef
 
@@ -468,18 +417,17 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import RecordTypeDef
 ```
 
-
 Required fields:
+
 - `SequenceNumber`: `str`
-- `Data`: `Union[bytes, IO[bytes]]`
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PartitionKey`: `str`
 
-
-
 Optional fields:
-- `ApproximateArrivalTimestamp`: `datetime`
-- `EncryptionType`: `EncryptionType`
 
+- `ApproximateArrivalTimestamp`: `datetime`
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
 
 ## RegisterStreamConsumerOutputTypeDef
 
@@ -487,13 +435,12 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import RegisterStreamConsumerOutputTypeDef
 ```
 
-
 Required fields:
-- `Consumer`: `"ConsumerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Consumer`:
+  [ConsumerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#consumertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## ResourceInUseExceptionTypeDef
 
@@ -501,12 +448,9 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import ResourceInUseExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## ResourceNotFoundExceptionTypeDef
 
@@ -514,12 +458,9 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import ResourceNotFoundExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## ResponseMetadata
 
@@ -527,16 +468,13 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SequenceNumberRangeTypeDef
 
@@ -544,15 +482,13 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import SequenceNumberRangeTypeDef
 ```
 
-
 Required fields:
+
 - `StartingSequenceNumber`: `str`
 
-
-
 Optional fields:
-- `EndingSequenceNumber`: `str`
 
+- `EndingSequenceNumber`: `str`
 
 ## ShardFilterTypeDef
 
@@ -560,16 +496,15 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import ShardFilterTypeDef
 ```
 
-
 Required fields:
-- `Type`: `ShardFilterType`
 
-
+- `Type`:
+  [ShardFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#shardfiltertype)
 
 Optional fields:
+
 - `ShardId`: `str`
 - `Timestamp`: `datetime`
-
 
 ## ShardTypeDef
 
@@ -577,18 +512,18 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import ShardTypeDef
 ```
 
-
 Required fields:
+
 - `ShardId`: `str`
-- `HashKeyRange`: `"HashKeyRangeTypeDef"`
-- `SequenceNumberRange`: `"SequenceNumberRangeTypeDef"`
-
-
+- `HashKeyRange`:
+  [HashKeyRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#hashkeyrangetypedef)
+- `SequenceNumberRange`:
+  [SequenceNumberRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#sequencenumberrangetypedef)
 
 Optional fields:
+
 - `ParentShardId`: `str`
 - `AdjacentParentShardId`: `str`
-
 
 ## StartingPositionTypeDef
 
@@ -596,16 +531,15 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import StartingPositionTypeDef
 ```
 
-
 Required fields:
-- `Type`: `ShardIteratorType`
 
-
+- `Type`:
+  [ShardIteratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#sharditeratortype)
 
 Optional fields:
+
 - `SequenceNumber`: `str`
 - `Timestamp`: `datetime`
-
 
 ## StreamDescriptionSummaryTypeDef
 
@@ -613,23 +547,24 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import StreamDescriptionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `StreamStatus`: `StreamStatus`
+- `StreamStatus`:
+  [StreamStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#streamstatus)
 - `RetentionPeriodHours`: `int`
 - `StreamCreationTimestamp`: `datetime`
-- `EnhancedMonitoring`: `List["EnhancedMetricsTypeDef"]`
+- `EnhancedMonitoring`:
+  `List`\[[EnhancedMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#enhancedmetricstypedef)\]
 - `OpenShardCount`: `int`
 
-
-
 Optional fields:
-- `EncryptionType`: `EncryptionType`
+
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
 - `KeyId`: `str`
 - `ConsumerCount`: `int`
-
 
 ## StreamDescriptionTypeDef
 
@@ -637,23 +572,25 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import StreamDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `StreamStatus`: `StreamStatus`
-- `Shards`: `List["ShardTypeDef"]`
+- `StreamStatus`:
+  [StreamStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#streamstatus)
+- `Shards`:
+  `List`\[[ShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#shardtypedef)\]
 - `HasMoreShards`: `bool`
 - `RetentionPeriodHours`: `int`
 - `StreamCreationTimestamp`: `datetime`
-- `EnhancedMonitoring`: `List["EnhancedMetricsTypeDef"]`
-
-
+- `EnhancedMonitoring`:
+  `List`\[[EnhancedMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#enhancedmetricstypedef)\]
 
 Optional fields:
-- `EncryptionType`: `EncryptionType`
-- `KeyId`: `str`
 
+- `EncryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
+- `KeyId`: `str`
 
 ## SubscribeToShardEventStreamTypeDef
 
@@ -661,23 +598,31 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import SubscribeToShardEventStreamTypeDef
 ```
 
-
 Required fields:
-- `SubscribeToShardEvent`: `"SubscribeToShardEventTypeDef"`
 
-
+- `SubscribeToShardEvent`:
+  [SubscribeToShardEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#subscribetoshardeventtypedef)
 
 Optional fields:
-- `ResourceNotFoundException`: `"ResourceNotFoundExceptionTypeDef"`
-- `ResourceInUseException`: `"ResourceInUseExceptionTypeDef"`
-- `KMSDisabledException`: `"KMSDisabledExceptionTypeDef"`
-- `KMSInvalidStateException`: `"KMSInvalidStateExceptionTypeDef"`
-- `KMSAccessDeniedException`: `"KMSAccessDeniedExceptionTypeDef"`
-- `KMSNotFoundException`: `"KMSNotFoundExceptionTypeDef"`
-- `KMSOptInRequired`: `"KMSOptInRequiredTypeDef"`
-- `KMSThrottlingException`: `"KMSThrottlingExceptionTypeDef"`
-- `InternalFailureException`: `"InternalFailureExceptionTypeDef"`
 
+- `ResourceNotFoundException`:
+  [ResourceNotFoundExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#resourcenotfoundexceptiontypedef)
+- `ResourceInUseException`:
+  [ResourceInUseExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#resourceinuseexceptiontypedef)
+- `KMSDisabledException`:
+  [KMSDisabledExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsdisabledexceptiontypedef)
+- `KMSInvalidStateException`:
+  [KMSInvalidStateExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsinvalidstateexceptiontypedef)
+- `KMSAccessDeniedException`:
+  [KMSAccessDeniedExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsaccessdeniedexceptiontypedef)
+- `KMSNotFoundException`:
+  [KMSNotFoundExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsnotfoundexceptiontypedef)
+- `KMSOptInRequired`:
+  [KMSOptInRequiredTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsoptinrequiredtypedef)
+- `KMSThrottlingException`:
+  [KMSThrottlingExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#kmsthrottlingexceptiontypedef)
+- `InternalFailureException`:
+  [InternalFailureExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#internalfailureexceptiontypedef)
 
 ## SubscribeToShardEventTypeDef
 
@@ -685,17 +630,17 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import SubscribeToShardEventTypeDef
 ```
 
-
 Required fields:
-- `Records`: `List["RecordTypeDef"]`
+
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#recordtypedef)\]
 - `ContinuationSequenceNumber`: `str`
 - `MillisBehindLatest`: `int`
 
-
-
 Optional fields:
-- `ChildShards`: `List["ChildShardTypeDef"]`
 
+- `ChildShards`:
+  `List`\[[ChildShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#childshardtypedef)\]
 
 ## SubscribeToShardOutputTypeDef
 
@@ -703,13 +648,12 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import SubscribeToShardOutputTypeDef
 ```
 
-
 Required fields:
-- `EventStream`: `"SubscribeToShardEventStreamTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `EventStream`:
+  [SubscribeToShardEventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#subscribetoshardeventstreamtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## TagTypeDef
 
@@ -717,15 +661,13 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## UpdateShardCountOutputTypeDef
 
@@ -733,15 +675,13 @@ Optional fields:
 from mypy_boto3_kinesis.type_defs import UpdateShardCountOutputTypeDef
 ```
 
-
 Required fields:
+
 - `StreamName`: `str`
 - `CurrentShardCount`: `int`
 - `TargetShardCount`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#responsemetadata)
 
 ## WaiterConfigTypeDef
 
@@ -749,10 +689,7 @@ Required fields:
 from mypy_boto3_kinesis.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

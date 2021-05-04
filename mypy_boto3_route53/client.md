@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53](./README.md) > Route53Client
 
-Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+Auto-generated documentation for
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+type annotations stubs module
+[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Route53Client for boto3 Route53 module](#route53client-for-boto3-route53-module)
   - [Route53Client](#route53client)
@@ -91,12 +93,13 @@ def get_route53_client() -> Route53Client:
     return boto3.client("route53")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
+Boto3 documentation:
+[Route53.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_route53.client import Exceptions
@@ -104,7 +107,6 @@ from mypy_boto3_route53.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -173,1051 +175,1100 @@ Exceptions:
 - `Exceptions.VPCAssociationAuthorizationNotFound`
 - `Exceptions.VPCAssociationNotFound`
 
-
 ## Methods
-
 
 ### activate_key_signing_key
 
 Type annotations for `boto3.client("route53").activate_key_signing_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key]
+Boto3 documentation:
+[Route53.Client.activate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key)
 
-```python
-def activate_key_signing_key(
-    self,
-    HostedZoneId: str,
-    Name: str
-) -> ActivateKeySigningKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[ActivateKeySigningKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#activatekeysigningkeyresponsetypedef).
 
 ### associate_vpc_with_hosted_zone
 
-Type annotations for `boto3.client("route53").associate_vpc_with_hosted_zone` method.
+Type annotations for `boto3.client("route53").associate_vpc_with_hosted_zone`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone]
+Boto3 documentation:
+[Route53.Client.associate_vpc_with_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone)
 
-```python
-def associate_vpc_with_hosted_zone(
-    self,
-    HostedZoneId: str,
-    VPC: "VPCTypeDef",
-    Comment: str = None
-) -> AssociateVPCWithHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `VPC`:
+  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+  *(required)*
+- `Comment`: `str`
+
+Returns
+[AssociateVPCWithHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#associatevpcwithhostedzoneresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("route53").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate]
+Boto3 documentation:
+[Route53.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### change_resource_record_sets
 
-Type annotations for `boto3.client("route53").change_resource_record_sets` method.
+Type annotations for `boto3.client("route53").change_resource_record_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets]
+Boto3 documentation:
+[Route53.Client.change_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets)
 
-```python
-def change_resource_record_sets(
-    self,
-    HostedZoneId: str,
-    ChangeBatch: ChangeBatchTypeDef
-) -> ChangeResourceRecordSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `ChangeBatch`:
+  [ChangeBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changebatchtypedef)
+  *(required)*
+
+Returns
+[ChangeResourceRecordSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeresourcerecordsetsresponsetypedef).
 
 ### change_tags_for_resource
 
 Type annotations for `boto3.client("route53").change_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource]
+Boto3 documentation:
+[Route53.Client.change_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource)
 
-```python
-def change_tags_for_resource(
-    self,
-    ResourceType: TagResourceType,
-    ResourceId: str,
-    AddTags: List["TagTypeDef"] = None,
-    RemoveTagKeys: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [TagResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#tagresourcetype)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+- `AddTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#tagtypedef)\]
+- `RemoveTagKeys`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_health_check
 
 Type annotations for `boto3.client("route53").create_health_check` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check]
+Boto3 documentation:
+[Route53.Client.create_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check)
 
-```python
-def create_health_check(
-    self,
-    CallerReference: str,
-    HealthCheckConfig: "HealthCheckConfigTypeDef"
-) -> CreateHealthCheckResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CallerReference`: `str` *(required)*
+- `HealthCheckConfig`:
+  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthcheckconfigtypedef)
+  *(required)*
+
+Returns
+[CreateHealthCheckResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createhealthcheckresponsetypedef).
 
 ### create_hosted_zone
 
 Type annotations for `boto3.client("route53").create_hosted_zone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone]
+Boto3 documentation:
+[Route53.Client.create_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone)
 
-```python
-def create_hosted_zone(
-    self,
-    Name: str,
-    CallerReference: str,
-    VPC: "VPCTypeDef" = None,
-    HostedZoneConfig: "HostedZoneConfigTypeDef" = None,
-    DelegationSetId: str = None
-) -> CreateHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CallerReference`: `str` *(required)*
+- `VPC`:
+  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+- `HostedZoneConfig`:
+  [HostedZoneConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzoneconfigtypedef)
+- `DelegationSetId`: `str`
+
+Returns
+[CreateHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createhostedzoneresponsetypedef).
 
 ### create_key_signing_key
 
 Type annotations for `boto3.client("route53").create_key_signing_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key]
+Boto3 documentation:
+[Route53.Client.create_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key)
 
-```python
-def create_key_signing_key(
-    self,
-    CallerReference: str,
-    HostedZoneId: str,
-    KeyManagementServiceArn: str,
-    Name: str,
-    Status: str
-) -> CreateKeySigningKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CallerReference`: `str` *(required)*
+- `HostedZoneId`: `str` *(required)*
+- `KeyManagementServiceArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Status`: `str` *(required)*
+
+Returns
+[CreateKeySigningKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createkeysigningkeyresponsetypedef).
 
 ### create_query_logging_config
 
-Type annotations for `boto3.client("route53").create_query_logging_config` method.
+Type annotations for `boto3.client("route53").create_query_logging_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config]
+Boto3 documentation:
+[Route53.Client.create_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config)
 
-```python
-def create_query_logging_config(
-    self,
-    HostedZoneId: str,
-    CloudWatchLogsLogGroupArn: str
-) -> CreateQueryLoggingConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `CloudWatchLogsLogGroupArn`: `str` *(required)*
+
+Returns
+[CreateQueryLoggingConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createqueryloggingconfigresponsetypedef).
 
 ### create_reusable_delegation_set
 
-Type annotations for `boto3.client("route53").create_reusable_delegation_set` method.
+Type annotations for `boto3.client("route53").create_reusable_delegation_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set]
+Boto3 documentation:
+[Route53.Client.create_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set)
 
-```python
-def create_reusable_delegation_set(
-    self,
-    CallerReference: str,
-    HostedZoneId: str = None
-) -> CreateReusableDelegationSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CallerReference`: `str` *(required)*
+- `HostedZoneId`: `str`
+
+Returns
+[CreateReusableDelegationSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createreusabledelegationsetresponsetypedef).
 
 ### create_traffic_policy
 
 Type annotations for `boto3.client("route53").create_traffic_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy]
+Boto3 documentation:
+[Route53.Client.create_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy)
 
-```python
-def create_traffic_policy(
-    self,
-    Name: str,
-    Document: str,
-    Comment: str = None
-) -> CreateTrafficPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Document`: `str` *(required)*
+- `Comment`: `str`
+
+Returns
+[CreateTrafficPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createtrafficpolicyresponsetypedef).
 
 ### create_traffic_policy_instance
 
-Type annotations for `boto3.client("route53").create_traffic_policy_instance` method.
+Type annotations for `boto3.client("route53").create_traffic_policy_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance]
+Boto3 documentation:
+[Route53.Client.create_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance)
 
-```python
-def create_traffic_policy_instance(
-    self,
-    HostedZoneId: str,
-    Name: str,
-    TTL: int,
-    TrafficPolicyId: str,
-    TrafficPolicyVersion: int
-) -> CreateTrafficPolicyInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `TTL`: `int` *(required)*
+- `TrafficPolicyId`: `str` *(required)*
+- `TrafficPolicyVersion`: `int` *(required)*
+
+Returns
+[CreateTrafficPolicyInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createtrafficpolicyinstanceresponsetypedef).
 
 ### create_traffic_policy_version
 
-Type annotations for `boto3.client("route53").create_traffic_policy_version` method.
+Type annotations for `boto3.client("route53").create_traffic_policy_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version]
+Boto3 documentation:
+[Route53.Client.create_traffic_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version)
 
-```python
-def create_traffic_policy_version(
-    self,
-    Id: str,
-    Document: str,
-    Comment: str = None
-) -> CreateTrafficPolicyVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Document`: `str` *(required)*
+- `Comment`: `str`
+
+Returns
+[CreateTrafficPolicyVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createtrafficpolicyversionresponsetypedef).
 
 ### create_vpc_association_authorization
 
-Type annotations for `boto3.client("route53").create_vpc_association_authorization` method.
+Type annotations for
+`boto3.client("route53").create_vpc_association_authorization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization]
+Boto3 documentation:
+[Route53.Client.create_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization)
 
-```python
-def create_vpc_association_authorization(
-    self,
-    HostedZoneId: str,
-    VPC: "VPCTypeDef"
-) -> CreateVPCAssociationAuthorizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `VPC`:
+  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+  *(required)*
+
+Returns
+[CreateVPCAssociationAuthorizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#createvpcassociationauthorizationresponsetypedef).
 
 ### deactivate_key_signing_key
 
-Type annotations for `boto3.client("route53").deactivate_key_signing_key` method.
+Type annotations for `boto3.client("route53").deactivate_key_signing_key`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key]
+Boto3 documentation:
+[Route53.Client.deactivate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key)
 
-```python
-def deactivate_key_signing_key(
-    self,
-    HostedZoneId: str,
-    Name: str
-) -> DeactivateKeySigningKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[DeactivateKeySigningKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#deactivatekeysigningkeyresponsetypedef).
 
 ### delete_health_check
 
 Type annotations for `boto3.client("route53").delete_health_check` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check]
+Boto3 documentation:
+[Route53.Client.delete_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check)
 
-```python
-def delete_health_check(
-    self,
-    HealthCheckId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HealthCheckId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_hosted_zone
 
 Type annotations for `boto3.client("route53").delete_hosted_zone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone]
+Boto3 documentation:
+[Route53.Client.delete_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone)
 
-```python
-def delete_hosted_zone(
-    self,
-    Id: str
-) -> DeleteHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DeleteHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#deletehostedzoneresponsetypedef).
 
 ### delete_key_signing_key
 
 Type annotations for `boto3.client("route53").delete_key_signing_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key]
+Boto3 documentation:
+[Route53.Client.delete_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key)
 
-```python
-def delete_key_signing_key(
-    self,
-    HostedZoneId: str,
-    Name: str
-) -> DeleteKeySigningKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteKeySigningKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#deletekeysigningkeyresponsetypedef).
 
 ### delete_query_logging_config
 
-Type annotations for `boto3.client("route53").delete_query_logging_config` method.
+Type annotations for `boto3.client("route53").delete_query_logging_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config]
+Boto3 documentation:
+[Route53.Client.delete_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config)
 
-```python
-def delete_query_logging_config(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_reusable_delegation_set
 
-Type annotations for `boto3.client("route53").delete_reusable_delegation_set` method.
+Type annotations for `boto3.client("route53").delete_reusable_delegation_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set]
+Boto3 documentation:
+[Route53.Client.delete_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set)
 
-```python
-def delete_reusable_delegation_set(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_traffic_policy
 
 Type annotations for `boto3.client("route53").delete_traffic_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy]
+Boto3 documentation:
+[Route53.Client.delete_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy)
 
-```python
-def delete_traffic_policy(
-    self,
-    Id: str,
-    Version: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Version`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_traffic_policy_instance
 
-Type annotations for `boto3.client("route53").delete_traffic_policy_instance` method.
+Type annotations for `boto3.client("route53").delete_traffic_policy_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance]
+Boto3 documentation:
+[Route53.Client.delete_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance)
 
-```python
-def delete_traffic_policy_instance(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_vpc_association_authorization
 
-Type annotations for `boto3.client("route53").delete_vpc_association_authorization` method.
+Type annotations for
+`boto3.client("route53").delete_vpc_association_authorization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization]
+Boto3 documentation:
+[Route53.Client.delete_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization)
 
-```python
-def delete_vpc_association_authorization(
-    self,
-    HostedZoneId: str,
-    VPC: "VPCTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `VPC`:
+  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_hosted_zone_dnssec
 
-Type annotations for `boto3.client("route53").disable_hosted_zone_dnssec` method.
+Type annotations for `boto3.client("route53").disable_hosted_zone_dnssec`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec]
+Boto3 documentation:
+[Route53.Client.disable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec)
 
-```python
-def disable_hosted_zone_dnssec(
-    self,
-    HostedZoneId: str
-) -> DisableHostedZoneDNSSECResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+
+Returns
+[DisableHostedZoneDNSSECResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#disablehostedzonednssecresponsetypedef).
 
 ### disassociate_vpc_from_hosted_zone
 
-Type annotations for `boto3.client("route53").disassociate_vpc_from_hosted_zone` method.
+Type annotations for
+`boto3.client("route53").disassociate_vpc_from_hosted_zone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone]
+Boto3 documentation:
+[Route53.Client.disassociate_vpc_from_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone)
 
-```python
-def disassociate_vpc_from_hosted_zone(
-    self,
-    HostedZoneId: str,
-    VPC: "VPCTypeDef",
-    Comment: str = None
-) -> DisassociateVPCFromHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `VPC`:
+  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+  *(required)*
+- `Comment`: `str`
+
+Returns
+[DisassociateVPCFromHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#disassociatevpcfromhostedzoneresponsetypedef).
 
 ### enable_hosted_zone_dnssec
 
-Type annotations for `boto3.client("route53").enable_hosted_zone_dnssec` method.
+Type annotations for `boto3.client("route53").enable_hosted_zone_dnssec`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec]
+Boto3 documentation:
+[Route53.Client.enable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec)
 
-```python
-def enable_hosted_zone_dnssec(
-    self,
-    HostedZoneId: str
-) -> EnableHostedZoneDNSSECResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+
+Returns
+[EnableHostedZoneDNSSECResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#enablehostedzonednssecresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("route53").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url]
+Boto3 documentation:
+[Route53.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_limit
 
 Type annotations for `boto3.client("route53").get_account_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit]
+Boto3 documentation:
+[Route53.Client.get_account_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit)
 
-```python
-def get_account_limit(
-    self,
-    Type: AccountLimitType
-) -> GetAccountLimitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [AccountLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#accountlimittype)
+  *(required)*
+
+Returns
+[GetAccountLimitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getaccountlimitresponsetypedef).
 
 ### get_change
 
 Type annotations for `boto3.client("route53").get_change` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change]
+Boto3 documentation:
+[Route53.Client.get_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change)
 
-```python
-def get_change(
-    self,
-    Id: str
-) -> GetChangeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetChangeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getchangeresponsetypedef).
 
 ### get_checker_ip_ranges
 
 Type annotations for `boto3.client("route53").get_checker_ip_ranges` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges]
+Boto3 documentation:
+[Route53.Client.get_checker_ip_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges)
 
-```python
-def get_checker_ip_ranges(
-    self
-) -> GetCheckerIpRangesResponseTypeDef:
-    pass
-```
+Returns
+[GetCheckerIpRangesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getcheckeriprangesresponsetypedef).
 
 ### get_dnssec
 
 Type annotations for `boto3.client("route53").get_dnssec` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec]
+Boto3 documentation:
+[Route53.Client.get_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec)
 
-```python
-def get_dnssec(
-    self,
-    HostedZoneId: str
-) -> GetDNSSECResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+
+Returns
+[GetDNSSECResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getdnssecresponsetypedef).
 
 ### get_geo_location
 
 Type annotations for `boto3.client("route53").get_geo_location` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location]
+Boto3 documentation:
+[Route53.Client.get_geo_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location)
 
-```python
-def get_geo_location(
-    self,
-    ContinentCode: str = None,
-    CountryCode: str = None,
-    SubdivisionCode: str = None
-) -> GetGeoLocationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContinentCode`: `str`
+- `CountryCode`: `str`
+- `SubdivisionCode`: `str`
+
+Returns
+[GetGeoLocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getgeolocationresponsetypedef).
 
 ### get_health_check
 
 Type annotations for `boto3.client("route53").get_health_check` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check]
+Boto3 documentation:
+[Route53.Client.get_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check)
 
-```python
-def get_health_check(
-    self,
-    HealthCheckId: str
-) -> GetHealthCheckResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HealthCheckId`: `str` *(required)*
+
+Returns
+[GetHealthCheckResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethealthcheckresponsetypedef).
 
 ### get_health_check_count
 
 Type annotations for `boto3.client("route53").get_health_check_count` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count]
+Boto3 documentation:
+[Route53.Client.get_health_check_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count)
 
-```python
-def get_health_check_count(
-    self
-) -> GetHealthCheckCountResponseTypeDef:
-    pass
-```
+Returns
+[GetHealthCheckCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethealthcheckcountresponsetypedef).
 
 ### get_health_check_last_failure_reason
 
-Type annotations for `boto3.client("route53").get_health_check_last_failure_reason` method.
+Type annotations for
+`boto3.client("route53").get_health_check_last_failure_reason` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason]
+Boto3 documentation:
+[Route53.Client.get_health_check_last_failure_reason](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason)
 
-```python
-def get_health_check_last_failure_reason(
-    self,
-    HealthCheckId: str
-) -> GetHealthCheckLastFailureReasonResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HealthCheckId`: `str` *(required)*
+
+Returns
+[GetHealthCheckLastFailureReasonResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethealthchecklastfailurereasonresponsetypedef).
 
 ### get_health_check_status
 
 Type annotations for `boto3.client("route53").get_health_check_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status]
+Boto3 documentation:
+[Route53.Client.get_health_check_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status)
 
-```python
-def get_health_check_status(
-    self,
-    HealthCheckId: str
-) -> GetHealthCheckStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HealthCheckId`: `str` *(required)*
+
+Returns
+[GetHealthCheckStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethealthcheckstatusresponsetypedef).
 
 ### get_hosted_zone
 
 Type annotations for `boto3.client("route53").get_hosted_zone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone]
+Boto3 documentation:
+[Route53.Client.get_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone)
 
-```python
-def get_hosted_zone(
-    self,
-    Id: str
-) -> GetHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethostedzoneresponsetypedef).
 
 ### get_hosted_zone_count
 
 Type annotations for `boto3.client("route53").get_hosted_zone_count` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count]
+Boto3 documentation:
+[Route53.Client.get_hosted_zone_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count)
 
-```python
-def get_hosted_zone_count(
-    self
-) -> GetHostedZoneCountResponseTypeDef:
-    pass
-```
+Returns
+[GetHostedZoneCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethostedzonecountresponsetypedef).
 
 ### get_hosted_zone_limit
 
 Type annotations for `boto3.client("route53").get_hosted_zone_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit]
+Boto3 documentation:
+[Route53.Client.get_hosted_zone_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit)
 
-```python
-def get_hosted_zone_limit(
-    self,
-    Type: HostedZoneLimitType,
-    HostedZoneId: str
-) -> GetHostedZoneLimitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [HostedZoneLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#hostedzonelimittype)
+  *(required)*
+- `HostedZoneId`: `str` *(required)*
+
+Returns
+[GetHostedZoneLimitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gethostedzonelimitresponsetypedef).
 
 ### get_query_logging_config
 
 Type annotations for `boto3.client("route53").get_query_logging_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config]
+Boto3 documentation:
+[Route53.Client.get_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config)
 
-```python
-def get_query_logging_config(
-    self,
-    Id: str
-) -> GetQueryLoggingConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetQueryLoggingConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getqueryloggingconfigresponsetypedef).
 
 ### get_reusable_delegation_set
 
-Type annotations for `boto3.client("route53").get_reusable_delegation_set` method.
+Type annotations for `boto3.client("route53").get_reusable_delegation_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set]
+Boto3 documentation:
+[Route53.Client.get_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set)
 
-```python
-def get_reusable_delegation_set(
-    self,
-    Id: str
-) -> GetReusableDelegationSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetReusableDelegationSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getreusabledelegationsetresponsetypedef).
 
 ### get_reusable_delegation_set_limit
 
-Type annotations for `boto3.client("route53").get_reusable_delegation_set_limit` method.
+Type annotations for
+`boto3.client("route53").get_reusable_delegation_set_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit]
+Boto3 documentation:
+[Route53.Client.get_reusable_delegation_set_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit)
 
-```python
-def get_reusable_delegation_set_limit(
-    self,
-    Type: Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET'],
-    DelegationSetId: str
-) -> GetReusableDelegationSetLimitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` *(required)*
+- `DelegationSetId`: `str` *(required)*
+
+Returns
+[GetReusableDelegationSetLimitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#getreusabledelegationsetlimitresponsetypedef).
 
 ### get_traffic_policy
 
 Type annotations for `boto3.client("route53").get_traffic_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy]
+Boto3 documentation:
+[Route53.Client.get_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy)
 
-```python
-def get_traffic_policy(
-    self,
-    Id: str,
-    Version: int
-) -> GetTrafficPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Version`: `int` *(required)*
+
+Returns
+[GetTrafficPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gettrafficpolicyresponsetypedef).
 
 ### get_traffic_policy_instance
 
-Type annotations for `boto3.client("route53").get_traffic_policy_instance` method.
+Type annotations for `boto3.client("route53").get_traffic_policy_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance]
+Boto3 documentation:
+[Route53.Client.get_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance)
 
-```python
-def get_traffic_policy_instance(
-    self,
-    Id: str
-) -> GetTrafficPolicyInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetTrafficPolicyInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gettrafficpolicyinstanceresponsetypedef).
 
 ### get_traffic_policy_instance_count
 
-Type annotations for `boto3.client("route53").get_traffic_policy_instance_count` method.
+Type annotations for
+`boto3.client("route53").get_traffic_policy_instance_count` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count]
+Boto3 documentation:
+[Route53.Client.get_traffic_policy_instance_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count)
 
-```python
-def get_traffic_policy_instance_count(
-    self
-) -> GetTrafficPolicyInstanceCountResponseTypeDef:
-    pass
-```
+Returns
+[GetTrafficPolicyInstanceCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#gettrafficpolicyinstancecountresponsetypedef).
 
 ### list_geo_locations
 
 Type annotations for `boto3.client("route53").list_geo_locations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations]
+Boto3 documentation:
+[Route53.Client.list_geo_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations)
 
-```python
-def list_geo_locations(
-    self,
-    StartContinentCode: str = None,
-    StartCountryCode: str = None,
-    StartSubdivisionCode: str = None,
-    MaxItems: str = None
-) -> ListGeoLocationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StartContinentCode`: `str`
+- `StartCountryCode`: `str`
+- `StartSubdivisionCode`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListGeoLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listgeolocationsresponsetypedef).
 
 ### list_health_checks
 
 Type annotations for `boto3.client("route53").list_health_checks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks]
+Boto3 documentation:
+[Route53.Client.list_health_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks)
 
-```python
-def list_health_checks(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListHealthChecksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListHealthChecksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhealthchecksresponsetypedef).
 
 ### list_hosted_zones
 
 Type annotations for `boto3.client("route53").list_hosted_zones` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones]
+Boto3 documentation:
+[Route53.Client.list_hosted_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones)
 
-```python
-def list_hosted_zones(
-    self,
-    Marker: str = None,
-    MaxItems: str = None,
-    DelegationSetId: str = None
-) -> ListHostedZonesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `DelegationSetId`: `str`
+
+Returns
+[ListHostedZonesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhostedzonesresponsetypedef).
 
 ### list_hosted_zones_by_name
 
-Type annotations for `boto3.client("route53").list_hosted_zones_by_name` method.
+Type annotations for `boto3.client("route53").list_hosted_zones_by_name`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name]
+Boto3 documentation:
+[Route53.Client.list_hosted_zones_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name)
 
-```python
-def list_hosted_zones_by_name(
-    self,
-    DNSName: str = None,
-    HostedZoneId: str = None,
-    MaxItems: str = None
-) -> ListHostedZonesByNameResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DNSName`: `str`
+- `HostedZoneId`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListHostedZonesByNameResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhostedzonesbynameresponsetypedef).
 
 ### list_hosted_zones_by_vpc
 
 Type annotations for `boto3.client("route53").list_hosted_zones_by_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc]
+Boto3 documentation:
+[Route53.Client.list_hosted_zones_by_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc)
 
-```python
-def list_hosted_zones_by_vpc(
-    self,
-    VPCId: str,
-    VPCRegion: VPCRegion,
-    MaxItems: str = None,
-    NextToken: str = None
-) -> ListHostedZonesByVPCResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VPCId`: `str` *(required)*
+- `VPCRegion`:
+  [VPCRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#vpcregion)
+  *(required)*
+- `MaxItems`: `str`
+- `NextToken`: `str`
+
+Returns
+[ListHostedZonesByVPCResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhostedzonesbyvpcresponsetypedef).
 
 ### list_query_logging_configs
 
-Type annotations for `boto3.client("route53").list_query_logging_configs` method.
+Type annotations for `boto3.client("route53").list_query_logging_configs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs]
+Boto3 documentation:
+[Route53.Client.list_query_logging_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs)
 
-```python
-def list_query_logging_configs(
-    self,
-    HostedZoneId: str = None,
-    NextToken: str = None,
-    MaxResults: str = None
-) -> ListQueryLoggingConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `str`
+
+Returns
+[ListQueryLoggingConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listqueryloggingconfigsresponsetypedef).
 
 ### list_resource_record_sets
 
-Type annotations for `boto3.client("route53").list_resource_record_sets` method.
+Type annotations for `boto3.client("route53").list_resource_record_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets]
+Boto3 documentation:
+[Route53.Client.list_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets)
 
-```python
-def list_resource_record_sets(
-    self,
-    HostedZoneId: str,
-    StartRecordName: str = None,
-    StartRecordType: RRType = None,
-    StartRecordIdentifier: str = None,
-    MaxItems: str = None
-) -> ListResourceRecordSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `StartRecordName`: `str`
+- `StartRecordType`:
+  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `StartRecordIdentifier`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListResourceRecordSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listresourcerecordsetsresponsetypedef).
 
 ### list_reusable_delegation_sets
 
-Type annotations for `boto3.client("route53").list_reusable_delegation_sets` method.
+Type annotations for `boto3.client("route53").list_reusable_delegation_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets]
+Boto3 documentation:
+[Route53.Client.list_reusable_delegation_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets)
 
-```python
-def list_reusable_delegation_sets(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListReusableDelegationSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListReusableDelegationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listreusabledelegationsetsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("route53").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource]
+Boto3 documentation:
+[Route53.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceType: TagResourceType,
-    ResourceId: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [TagResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#tagresourcetype)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_tags_for_resources
 
 Type annotations for `boto3.client("route53").list_tags_for_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources]
+Boto3 documentation:
+[Route53.Client.list_tags_for_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources)
 
-```python
-def list_tags_for_resources(
-    self,
-    ResourceType: TagResourceType,
-    ResourceIds: List[str]
-) -> ListTagsForResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [TagResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#tagresourcetype)
+  *(required)*
+- `ResourceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[ListTagsForResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtagsforresourcesresponsetypedef).
 
 ### list_traffic_policies
 
 Type annotations for `boto3.client("route53").list_traffic_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies]
+Boto3 documentation:
+[Route53.Client.list_traffic_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies)
 
-```python
-def list_traffic_policies(
-    self,
-    TrafficPolicyIdMarker: str = None,
-    MaxItems: str = None
-) -> ListTrafficPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrafficPolicyIdMarker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListTrafficPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtrafficpoliciesresponsetypedef).
 
 ### list_traffic_policy_instances
 
-Type annotations for `boto3.client("route53").list_traffic_policy_instances` method.
+Type annotations for `boto3.client("route53").list_traffic_policy_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances]
+Boto3 documentation:
+[Route53.Client.list_traffic_policy_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances)
 
-```python
-def list_traffic_policy_instances(
-    self,
-    HostedZoneIdMarker: str = None,
-    TrafficPolicyInstanceNameMarker: str = None,
-    TrafficPolicyInstanceTypeMarker: RRType = None,
-    MaxItems: str = None
-) -> ListTrafficPolicyInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneIdMarker`: `str`
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`:
+  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `MaxItems`: `str`
+
+Returns
+[ListTrafficPolicyInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtrafficpolicyinstancesresponsetypedef).
 
 ### list_traffic_policy_instances_by_hosted_zone
 
-Type annotations for `boto3.client("route53").list_traffic_policy_instances_by_hosted_zone` method.
+Type annotations for
+`boto3.client("route53").list_traffic_policy_instances_by_hosted_zone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone]
+Boto3 documentation:
+[Route53.Client.list_traffic_policy_instances_by_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone)
 
-```python
-def list_traffic_policy_instances_by_hosted_zone(
-    self,
-    HostedZoneId: str,
-    TrafficPolicyInstanceNameMarker: str = None,
-    TrafficPolicyInstanceTypeMarker: RRType = None,
-    MaxItems: str = None
-) -> ListTrafficPolicyInstancesByHostedZoneResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`:
+  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `MaxItems`: `str`
+
+Returns
+[ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtrafficpolicyinstancesbyhostedzoneresponsetypedef).
 
 ### list_traffic_policy_instances_by_policy
 
-Type annotations for `boto3.client("route53").list_traffic_policy_instances_by_policy` method.
+Type annotations for
+`boto3.client("route53").list_traffic_policy_instances_by_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy]
+Boto3 documentation:
+[Route53.Client.list_traffic_policy_instances_by_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy)
 
-```python
-def list_traffic_policy_instances_by_policy(
-    self,
-    TrafficPolicyId: str,
-    TrafficPolicyVersion: int,
-    HostedZoneIdMarker: str = None,
-    TrafficPolicyInstanceNameMarker: str = None,
-    TrafficPolicyInstanceTypeMarker: RRType = None,
-    MaxItems: str = None
-) -> ListTrafficPolicyInstancesByPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrafficPolicyId`: `str` *(required)*
+- `TrafficPolicyVersion`: `int` *(required)*
+- `HostedZoneIdMarker`: `str`
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`:
+  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `MaxItems`: `str`
+
+Returns
+[ListTrafficPolicyInstancesByPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtrafficpolicyinstancesbypolicyresponsetypedef).
 
 ### list_traffic_policy_versions
 
-Type annotations for `boto3.client("route53").list_traffic_policy_versions` method.
+Type annotations for `boto3.client("route53").list_traffic_policy_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions]
+Boto3 documentation:
+[Route53.Client.list_traffic_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions)
 
-```python
-def list_traffic_policy_versions(
-    self,
-    Id: str,
-    TrafficPolicyVersionMarker: str = None,
-    MaxItems: str = None
-) -> ListTrafficPolicyVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `TrafficPolicyVersionMarker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListTrafficPolicyVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listtrafficpolicyversionsresponsetypedef).
 
 ### list_vpc_association_authorizations
 
-Type annotations for `boto3.client("route53").list_vpc_association_authorizations` method.
+Type annotations for
+`boto3.client("route53").list_vpc_association_authorizations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations]
+Boto3 documentation:
+[Route53.Client.list_vpc_association_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations)
 
-```python
-def list_vpc_association_authorizations(
-    self,
-    HostedZoneId: str,
-    NextToken: str = None,
-    MaxResults: str = None
-) -> ListVPCAssociationAuthorizationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `str`
+
+Returns
+[ListVPCAssociationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listvpcassociationauthorizationsresponsetypedef).
 
 ### test_dns_answer
 
 Type annotations for `boto3.client("route53").test_dns_answer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer]
+Boto3 documentation:
+[Route53.Client.test_dns_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer)
 
-```python
-def test_dns_answer(
-    self,
-    HostedZoneId: str,
-    RecordName: str,
-    RecordType: RRType,
-    ResolverIP: str = None,
-    EDNS0ClientSubnetIP: str = None,
-    EDNS0ClientSubnetMask: str = None
-) -> TestDNSAnswerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HostedZoneId`: `str` *(required)*
+- `RecordName`: `str` *(required)*
+- `RecordType`:
+  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+  *(required)*
+- `ResolverIP`: `str`
+- `EDNS0ClientSubnetIP`: `str`
+- `EDNS0ClientSubnetMask`: `str`
+
+Returns
+[TestDNSAnswerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#testdnsanswerresponsetypedef).
 
 ### update_health_check
 
 Type annotations for `boto3.client("route53").update_health_check` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check]
+Boto3 documentation:
+[Route53.Client.update_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check)
 
-```python
-def update_health_check(
-    self,
-    HealthCheckId: str,
-    HealthCheckVersion: int = None,
-    IPAddress: str = None,
-    Port: int = None,
-    ResourcePath: str = None,
-    FullyQualifiedDomainName: str = None,
-    SearchString: str = None,
-    FailureThreshold: int = None,
-    Inverted: bool = None,
-    Disabled: bool = None,
-    HealthThreshold: int = None,
-    ChildHealthChecks: List[str] = None,
-    EnableSNI: bool = None,
-    Regions: List[HealthCheckRegion] = None,
-    AlarmIdentifier: "AlarmIdentifierTypeDef" = None,
-    InsufficientDataHealthStatus: InsufficientDataHealthStatus = None,
-    ResetElements: List[ResettableElementName] = None
-) -> UpdateHealthCheckResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HealthCheckId`: `str` *(required)*
+- `HealthCheckVersion`: `int`
+- `IPAddress`: `str`
+- `Port`: `int`
+- `ResourcePath`: `str`
+- `FullyQualifiedDomainName`: `str`
+- `SearchString`: `str`
+- `FailureThreshold`: `int`
+- `Inverted`: `bool`
+- `Disabled`: `bool`
+- `HealthThreshold`: `int`
+- `ChildHealthChecks`: `List`\[`str`\]
+- `EnableSNI`: `bool`
+- `Regions`:
+  `List`\[[HealthCheckRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#healthcheckregion)\]
+- `AlarmIdentifier`:
+  [AlarmIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#alarmidentifiertypedef)
+- `InsufficientDataHealthStatus`:
+  [InsufficientDataHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#insufficientdatahealthstatus)
+- `ResetElements`:
+  `List`\[[ResettableElementName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#resettableelementname)\]
+
+Returns
+[UpdateHealthCheckResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#updatehealthcheckresponsetypedef).
 
 ### update_hosted_zone_comment
 
-Type annotations for `boto3.client("route53").update_hosted_zone_comment` method.
+Type annotations for `boto3.client("route53").update_hosted_zone_comment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment]
+Boto3 documentation:
+[Route53.Client.update_hosted_zone_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment)
 
-```python
-def update_hosted_zone_comment(
-    self,
-    Id: str,
-    Comment: str = None
-) -> UpdateHostedZoneCommentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Comment`: `str`
+
+Returns
+[UpdateHostedZoneCommentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#updatehostedzonecommentresponsetypedef).
 
 ### update_traffic_policy_comment
 
-Type annotations for `boto3.client("route53").update_traffic_policy_comment` method.
+Type annotations for `boto3.client("route53").update_traffic_policy_comment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment]
+Boto3 documentation:
+[Route53.Client.update_traffic_policy_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment)
 
-```python
-def update_traffic_policy_comment(
-    self,
-    Id: str,
-    Version: int,
-    Comment: str
-) -> UpdateTrafficPolicyCommentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Version`: `int` *(required)*
+- `Comment`: `str` *(required)*
+
+Returns
+[UpdateTrafficPolicyCommentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#updatetrafficpolicycommentresponsetypedef).
 
 ### update_traffic_policy_instance
 
-Type annotations for `boto3.client("route53").update_traffic_policy_instance` method.
+Type annotations for `boto3.client("route53").update_traffic_policy_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance]
+Boto3 documentation:
+[Route53.Client.update_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance)
 
-```python
-def update_traffic_policy_instance(
-    self,
-    Id: str,
-    TTL: int,
-    TrafficPolicyId: str,
-    TrafficPolicyVersion: int
-) -> UpdateTrafficPolicyInstanceResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `TTL`: `int` *(required)*
+- `TrafficPolicyId`: `str` *(required)*
+- `TrafficPolicyVersion`: `int` *(required)*
 
+Returns
+[UpdateTrafficPolicyInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#updatetrafficpolicyinstanceresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53").get_paginator` method with overloads.
+Type annotations for `boto3.client("route53").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_health_checks")` -> [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
-- `client.get_paginator("list_hosted_zones")` -> [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
-- `client.get_paginator("list_query_logging_configs")` -> [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
-- `client.get_paginator("list_resource_record_sets")` -> [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
-- `client.get_paginator("list_vpc_association_authorizations")` -> [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
-
-
-
+- `client.get_paginator("list_health_checks")` ->
+  [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
+- `client.get_paginator("list_hosted_zones")` ->
+  [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
+- `client.get_paginator("list_query_logging_configs")` ->
+  [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
+- `client.get_paginator("list_resource_record_sets")` ->
+  [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
+- `client.get_paginator("list_vpc_association_authorizations")` ->
+  [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("route53").get_waiter` method with overloads.
+Type annotations for `boto3.client("route53").get_waiter` method with
+overloads.
 
-- `client.get_waiter("resource_record_sets_changed")` -> [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
+- `client.get_waiter("resource_record_sets_changed")` ->
+  [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)

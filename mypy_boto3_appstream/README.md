@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AppStream
 
-Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
-type annotations stubs module [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+Auto-generated documentation for
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+type annotations stubs module
+[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 ```bash
 pip install mypy-boto3-appstream
@@ -20,7 +22,8 @@ pip install mypy-boto3-appstream
 
 ## AppStreamClient
 
-Type annotations for  `boto3.client("appstream")` as [AppStreamClient](./client.md)
+Type annotations for `boto3.client("appstream")` as
+[AppStreamClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_appstream.client import AppStreamClient
 ```
 
-
 AppStreamClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_fleet](./client.md#associate-fleet)
 - [batch_associate_user_stack](./client.md#batch-associate-user-stack)
 - [batch_disassociate_user_stack](./client.md#batch-disassociate-user-stack)
@@ -87,10 +88,8 @@ AppStreamClient [exceptions](./client.md#exceptions)
 - [update_image_permissions](./client.md#update-image-permissions)
 - [update_stack](./client.md#update-stack)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [IncompatibleImageException](./client.md#incompatibleimageexception)
@@ -105,14 +104,10 @@ AppStreamClient [exceptions](./client.md#exceptions)
 - [ResourceNotAvailableException](./client.md#resourcenotavailableexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("appstream").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("appstream").get_paginator("...")`.
 
 Can be used directly:
 
@@ -131,12 +126,10 @@ from mypy_boto3_appstream.paginators import DescribeDirectoryConfigsPaginator, .
 - [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
 - [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("appstream").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("appstream").get_waiter("...")`.
 
 Can be used directly:
 
@@ -146,9 +139,6 @@ from mypy_boto3_appstream.waiters import FleetStartedWaiter, ...
 
 - [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
 - [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
-
-
-
 
 ## Literals
 
@@ -197,13 +187,10 @@ from mypy_boto3_appstream.literals import AccessEndpointType, ...
 - [UserStackAssociationErrorCode](./literals.md#userstackassociationerrorcode)
 - [VisibilityType](./literals.md#visibilitytype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

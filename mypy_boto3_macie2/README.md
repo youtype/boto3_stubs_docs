@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Macie2
 
-Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+Auto-generated documentation for
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+type annotations stubs module
+[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ```bash
 pip install mypy-boto3-macie2
@@ -19,7 +21,7 @@ pip install mypy-boto3-macie2
 
 ## Macie2Client
 
-Type annotations for  `boto3.client("macie2")` as [Macie2Client](./client.md)
+Type annotations for `boto3.client("macie2")` as [Macie2Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_macie2.client import Macie2Client
 ```
 
-
 Macie2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_invitation](./client.md#accept-invitation)
 - [batch_get_custom_data_identifiers](./client.md#batch-get-custom-data-identifiers)
 - [can_paginate](./client.md#can-paginate)
@@ -92,10 +92,8 @@ Macie2Client [exceptions](./client.md#exceptions)
 - [update_member_session](./client.md#update-member-session)
 - [update_organization_configuration](./client.md#update-organization-configuration)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -105,14 +103,10 @@ Macie2Client [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("macie2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("macie2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -129,11 +123,6 @@ from mypy_boto3_macie2.paginators import DescribeBucketsPaginator, ...
 - [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -194,13 +183,10 @@ from mypy_boto3_macie2.literals import AdminStatus, ...
 - [UsageType](./literals.md#usagetype)
 - [UserIdentityType](./literals.md#useridentitytype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Structures
 
-Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+Auto-generated documentation for
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+type annotations stubs module
+[mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [Typed dictionaries for boto3 StorageGateway module](#typed-dictionaries-for-boto3-storagegateway-module)
   - [ActivateGatewayOutputTypeDef](#activategatewayoutputtypedef)
@@ -131,13 +133,11 @@ type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/proje
 from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AddCacheOutputTypeDef
 
@@ -145,13 +145,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AddCacheOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AddTagsToResourceOutputTypeDef
 
@@ -159,13 +157,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AddTagsToResourceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AddUploadBufferOutputTypeDef
 
@@ -173,13 +169,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AddUploadBufferOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AddWorkingStorageOutputTypeDef
 
@@ -187,13 +181,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AddWorkingStorageOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AssignTapePoolOutputTypeDef
 
@@ -201,13 +193,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AssignTapePoolOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AssociateFileSystemOutputTypeDef
 
@@ -215,13 +205,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AssociateFileSystemOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AttachVolumeOutputTypeDef
 
@@ -229,14 +217,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AttachVolumeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
 - `TargetARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## AutomaticTapeCreationPolicyInfoTypeDef
 
@@ -244,13 +230,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import AutomaticTapeCreationPolicyInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomaticTapeCreationRules`: `List["AutomaticTapeCreationRuleTypeDef"]`
-- `GatewayARN`: `str`
 
+- `AutomaticTapeCreationRules`:
+  `List`\[[AutomaticTapeCreationRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#automatictapecreationruletypedef)\]
+- `GatewayARN`: `str`
 
 ## AutomaticTapeCreationRuleTypeDef
 
@@ -258,18 +242,16 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import AutomaticTapeCreationRuleTypeDef
 ```
 
-
 Required fields:
+
 - `TapeBarcodePrefix`: `str`
 - `PoolId`: `str`
 - `TapeSizeInBytes`: `int`
 - `MinimumNumTapes`: `int`
 
-
-
 Optional fields:
-- `Worm`: `bool`
 
+- `Worm`: `bool`
 
 ## BandwidthRateLimitIntervalTypeDef
 
@@ -277,20 +259,18 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import BandwidthRateLimitIntervalTypeDef
 ```
 
-
 Required fields:
+
 - `StartHourOfDay`: `int`
 - `StartMinuteOfHour`: `int`
 - `EndHourOfDay`: `int`
 - `EndMinuteOfHour`: `int`
-- `DaysOfWeek`: `List[int]`
-
-
+- `DaysOfWeek`: `List`\[`int`\]
 
 Optional fields:
+
 - `AverageUploadRateLimitInBitsPerSec`: `int`
 - `AverageDownloadRateLimitInBitsPerSec`: `int`
-
 
 ## CacheAttributesTypeDef
 
@@ -298,12 +278,9 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import CacheAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CacheStaleTimeoutInSeconds`: `int`
 
+- `CacheStaleTimeoutInSeconds`: `int`
 
 ## CachediSCSIVolumeTypeDef
 
@@ -311,10 +288,8 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import CachediSCSIVolumeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VolumeARN`: `str`
 - `VolumeId`: `str`
 - `VolumeType`: `str`
@@ -323,12 +298,12 @@ Optional fields:
 - `VolumeSizeInBytes`: `int`
 - `VolumeProgress`: `float`
 - `SourceSnapshotId`: `str`
-- `VolumeiSCSIAttributes`: `"VolumeiSCSIAttributesTypeDef"`
+- `VolumeiSCSIAttributes`:
+  [VolumeiSCSIAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#volumeiscsiattributestypedef)
 - `CreatedDate`: `datetime`
 - `VolumeUsedInBytes`: `int`
 - `KMSKey`: `str`
 - `TargetName`: `str`
-
 
 ## CancelArchivalOutputTypeDef
 
@@ -336,13 +311,11 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import CancelArchivalOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CancelRetrievalOutputTypeDef
 
@@ -350,13 +323,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CancelRetrievalOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ChapInfoTypeDef
 
@@ -364,15 +335,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ChapInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetARN`: `str`
 - `SecretToAuthenticateInitiator`: `str`
 - `InitiatorName`: `str`
 - `SecretToAuthenticateTarget`: `str`
-
 
 ## CreateCachediSCSIVolumeOutputTypeDef
 
@@ -380,14 +348,12 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
 - `TargetARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateNFSFileShareOutputTypeDef
 
@@ -395,13 +361,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateSMBFileShareOutputTypeDef
 
@@ -409,13 +373,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
 
@@ -423,15 +385,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `SnapshotId`: `str`
 - `VolumeARN`: `str`
 - `VolumeRecoveryPointTime`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateSnapshotOutputTypeDef
 
@@ -439,14 +399,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
 - `SnapshotId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateStorediSCSIVolumeOutputTypeDef
 
@@ -454,15 +412,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
 - `VolumeSizeInBytes`: `int`
 - `TargetARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateTapePoolOutputTypeDef
 
@@ -470,13 +426,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateTapePoolOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PoolARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateTapeWithBarcodeOutputTypeDef
 
@@ -484,13 +438,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## CreateTapesOutputTypeDef
 
@@ -498,13 +450,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import CreateTapesOutputTypeDef
 ```
 
-
 Required fields:
-- `TapeARNs`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TapeARNs`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteAutomaticTapeCreationPolicyOutputTypeDef
 
@@ -512,13 +462,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteBandwidthRateLimitOutputTypeDef
 
@@ -526,13 +474,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteChapCredentialsOutputTypeDef
 
@@ -540,14 +486,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TargetARN`: `str`
 - `InitiatorName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteFileShareOutputTypeDef
 
@@ -555,13 +499,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteFileShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteGatewayOutputTypeDef
 
@@ -569,13 +511,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteGatewayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteSnapshotScheduleOutputTypeDef
 
@@ -583,13 +523,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteTapeArchiveOutputTypeDef
 
@@ -597,13 +535,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteTapeOutputTypeDef
 
@@ -611,13 +547,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteTapeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteTapePoolOutputTypeDef
 
@@ -625,13 +559,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteTapePoolOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PoolARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeleteVolumeOutputTypeDef
 
@@ -639,13 +571,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeleteVolumeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeAvailabilityMonitorTestOutputTypeDef
 
@@ -653,15 +583,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `Status`: `AvailabilityMonitorTestStatus`
+- `Status`:
+  [AvailabilityMonitorTestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#availabilitymonitorteststatus)
 - `StartTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeBandwidthRateLimitOutputTypeDef
 
@@ -669,15 +598,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `AverageUploadRateLimitInBitsPerSec`: `int`
 - `AverageDownloadRateLimitInBitsPerSec`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeBandwidthRateLimitScheduleOutputTypeDef
 
@@ -685,14 +612,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `BandwidthRateLimitIntervals`: `List["BandwidthRateLimitIntervalTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `BandwidthRateLimitIntervals`:
+  `List`\[[BandwidthRateLimitIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#bandwidthratelimitintervaltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeCacheOutputTypeDef
 
@@ -700,19 +626,17 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeCacheOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `DiskIds`: `List[str]`
+- `DiskIds`: `List`\[`str`\]
 - `CacheAllocatedInBytes`: `int`
 - `CacheUsedPercentage`: `float`
 - `CacheDirtyPercentage`: `float`
 - `CacheHitPercentage`: `float`
 - `CacheMissPercentage`: `float`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeCachediSCSIVolumesOutputTypeDef
 
@@ -720,13 +644,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesOutputTypeDef
 ```
 
-
 Required fields:
-- `CachediSCSIVolumes`: `List["CachediSCSIVolumeTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `CachediSCSIVolumes`:
+  `List`\[[CachediSCSIVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#cachediscsivolumetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeChapCredentialsOutputTypeDef
 
@@ -734,13 +657,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputTypeDef
 ```
 
-
 Required fields:
-- `ChapCredentials`: `List["ChapInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ChapCredentials`:
+  `List`\[[ChapInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#chapinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeFileSystemAssociationsOutputTypeDef
 
@@ -748,13 +670,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsOutputTypeDef
 ```
 
-
 Required fields:
-- `FileSystemAssociationInfoList`: `List["FileSystemAssociationInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `FileSystemAssociationInfoList`:
+  `List`\[[FileSystemAssociationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#filesystemassociationinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeGatewayInformationOutputTypeDef
 
@@ -762,30 +683,31 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `GatewayId`: `str`
 - `GatewayName`: `str`
 - `GatewayTimezone`: `str`
 - `GatewayState`: `str`
-- `GatewayNetworkInterfaces`: `List["NetworkInterfaceTypeDef"]`
+- `GatewayNetworkInterfaces`:
+  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#networkinterfacetypedef)\]
 - `GatewayType`: `str`
 - `NextUpdateAvailabilityDate`: `str`
 - `LastSoftwareUpdate`: `str`
 - `Ec2InstanceId`: `str`
 - `Ec2InstanceRegion`: `str`
-- `Tags`: `List["TagTypeDef"]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
 - `VPCEndpoint`: `str`
 - `CloudWatchLogGroupARN`: `str`
-- `HostEnvironment`: `HostEnvironment`
+- `HostEnvironment`:
+  [HostEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#hostenvironment)
 - `EndpointType`: `str`
 - `SoftwareUpdatesEndDate`: `str`
 - `DeprecationDate`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeMaintenanceStartTimeOutputTypeDef
 
@@ -793,18 +715,16 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `HourOfDay`: `int`
 - `MinuteOfHour`: `int`
 - `DayOfWeek`: `int`
 - `DayOfMonth`: `int`
 - `Timezone`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeNFSFileSharesOutputTypeDef
 
@@ -812,13 +732,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesOutputTypeDef
 ```
 
-
 Required fields:
-- `NFSFileShareInfoList`: `List["NFSFileShareInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `NFSFileShareInfoList`:
+  `List`\[[NFSFileShareInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#nfsfileshareinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeSMBFileSharesOutputTypeDef
 
@@ -826,13 +745,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesOutputTypeDef
 ```
 
-
 Required fields:
-- `SMBFileShareInfoList`: `List["SMBFileShareInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `SMBFileShareInfoList`:
+  `List`\[[SMBFileShareInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#smbfileshareinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeSMBSettingsOutputTypeDef
 
@@ -840,18 +758,18 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `DomainName`: `str`
-- `ActiveDirectoryStatus`: `ActiveDirectoryStatus`
+- `ActiveDirectoryStatus`:
+  [ActiveDirectoryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#activedirectorystatus)
 - `SMBGuestPasswordSet`: `bool`
-- `SMBSecurityStrategy`: `SMBSecurityStrategy`
+- `SMBSecurityStrategy`:
+  [SMBSecurityStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#smbsecuritystrategy)
 - `FileSharesVisible`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeSnapshotScheduleOutputTypeDef
 
@@ -859,18 +777,17 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
 - `StartAt`: `int`
 - `RecurrenceInHours`: `int`
 - `Description`: `str`
 - `Timezone`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeStorediSCSIVolumesOutputTypeDef
 
@@ -878,13 +795,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesOutputTypeDef
 ```
 
-
 Required fields:
-- `StorediSCSIVolumes`: `List["StorediSCSIVolumeTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `StorediSCSIVolumes`:
+  `List`\[[StorediSCSIVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#storediscsivolumetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeTapeArchivesOutputTypeDef
 
@@ -892,14 +808,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDef
 ```
 
-
 Required fields:
-- `TapeArchives`: `List["TapeArchiveTypeDef"]`
+
+- `TapeArchives`:
+  `List`\[[TapeArchiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tapearchivetypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeTapeRecoveryPointsOutputTypeDef
 
@@ -907,15 +822,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `TapeRecoveryPointInfos`: `List["TapeRecoveryPointInfoTypeDef"]`
+- `TapeRecoveryPointInfos`:
+  `List`\[[TapeRecoveryPointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#taperecoverypointinfotypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeTapesOutputTypeDef
 
@@ -923,14 +837,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeTapesOutputTypeDef
 ```
 
-
 Required fields:
-- `Tapes`: `List["TapeTypeDef"]`
+
+- `Tapes`:
+  `List`\[[TapeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tapetypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeUploadBufferOutputTypeDef
 
@@ -938,16 +851,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `DiskIds`: `List[str]`
+- `DiskIds`: `List`\[`str`\]
 - `UploadBufferUsedInBytes`: `int`
 - `UploadBufferAllocatedInBytes`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeVTLDevicesOutputTypeDef
 
@@ -955,15 +866,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `VTLDevices`: `List["VTLDeviceTypeDef"]`
+- `VTLDevices`:
+  `List`\[[VTLDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#vtldevicetypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DescribeWorkingStorageOutputTypeDef
 
@@ -971,16 +881,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `DiskIds`: `List[str]`
+- `DiskIds`: `List`\[`str`\]
 - `WorkingStorageUsedInBytes`: `int`
 - `WorkingStorageAllocatedInBytes`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DetachVolumeOutputTypeDef
 
@@ -988,13 +896,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DetachVolumeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DeviceiSCSIAttributesTypeDef
 
@@ -1002,15 +908,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DeviceiSCSIAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetARN`: `str`
 - `NetworkInterfaceId`: `str`
 - `NetworkInterfacePort`: `int`
 - `ChapEnabled`: `bool`
-
 
 ## DisableGatewayOutputTypeDef
 
@@ -1018,13 +921,11 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import DisableGatewayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DisassociateFileSystemOutputTypeDef
 
@@ -1032,13 +933,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## DiskTypeDef
 
@@ -1046,10 +945,8 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import DiskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DiskId`: `str`
 - `DiskPath`: `str`
 - `DiskNode`: `str`
@@ -1057,8 +954,7 @@ Optional fields:
 - `DiskSizeInBytes`: `int`
 - `DiskAllocationType`: `str`
 - `DiskAllocationResource`: `str`
-- `DiskAttributeList`: `List[str]`
-
+- `DiskAttributeList`: `List`\[`str`\]
 
 ## FileShareInfoTypeDef
 
@@ -1066,16 +962,14 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import FileShareInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileShareType`: `FileShareType`
+
+- `FileShareType`:
+  [FileShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#filesharetype)
 - `FileShareARN`: `str`
 - `FileShareId`: `str`
 - `FileShareStatus`: `str`
 - `GatewayARN`: `str`
-
 
 ## FileSystemAssociationInfoTypeDef
 
@@ -1083,18 +977,17 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import FileSystemAssociationInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FileSystemAssociationARN`: `str`
 - `LocationARN`: `str`
 - `FileSystemAssociationStatus`: `str`
 - `AuditDestinationARN`: `str`
 - `GatewayARN`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `CacheAttributes`: `"CacheAttributesTypeDef"`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#cacheattributestypedef)
 
 ## FileSystemAssociationSummaryTypeDef
 
@@ -1102,15 +995,12 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import FileSystemAssociationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FileSystemAssociationId`: `str`
 - `FileSystemAssociationARN`: `str`
 - `FileSystemAssociationStatus`: `str`
 - `GatewayARN`: `str`
-
 
 ## GatewayInfoTypeDef
 
@@ -1118,10 +1008,8 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import GatewayInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GatewayId`: `str`
 - `GatewayARN`: `str`
 - `GatewayType`: `str`
@@ -1130,21 +1018,19 @@ Optional fields:
 - `Ec2InstanceId`: `str`
 - `Ec2InstanceRegion`: `str`
 
-
 ## JoinDomainOutputTypeDef
 
 ```python
 from mypy_boto3_storagegateway.type_defs import JoinDomainOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ActiveDirectoryStatus`: `ActiveDirectoryStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ActiveDirectoryStatus`:
+  [ActiveDirectoryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#activedirectorystatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListAutomaticTapeCreationPoliciesOutputTypeDef
 
@@ -1152,13 +1038,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesOutputTypeDef
 ```
 
-
 Required fields:
-- `AutomaticTapeCreationPolicyInfos`: `List["AutomaticTapeCreationPolicyInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `AutomaticTapeCreationPolicyInfos`:
+  `List`\[[AutomaticTapeCreationPolicyInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#automatictapecreationpolicyinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListFileSharesOutputTypeDef
 
@@ -1166,15 +1051,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListFileSharesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Marker`: `str`
 - `NextMarker`: `str`
-- `FileShareInfoList`: `List["FileShareInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `FileShareInfoList`:
+  `List`\[[FileShareInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#fileshareinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListFileSystemAssociationsOutputTypeDef
 
@@ -1182,15 +1066,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Marker`: `str`
 - `NextMarker`: `str`
-- `FileSystemAssociationSummaryList`: `List["FileSystemAssociationSummaryTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `FileSystemAssociationSummaryList`:
+  `List`\[[FileSystemAssociationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#filesystemassociationsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListGatewaysOutputTypeDef
 
@@ -1198,14 +1081,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListGatewaysOutputTypeDef
 ```
 
-
 Required fields:
-- `Gateways`: `List["GatewayInfoTypeDef"]`
+
+- `Gateways`:
+  `List`\[[GatewayInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#gatewayinfotypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListLocalDisksOutputTypeDef
 
@@ -1213,14 +1095,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListLocalDisksOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `Disks`: `List["DiskTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Disks`:
+  `List`\[[DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#disktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1228,15 +1109,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 - `Marker`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListTapePoolsOutputTypeDef
 
@@ -1244,14 +1124,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListTapePoolsOutputTypeDef
 ```
 
-
 Required fields:
-- `PoolInfos`: `List["PoolInfoTypeDef"]`
+
+- `PoolInfos`:
+  `List`\[[PoolInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#poolinfotypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListTapesOutputTypeDef
 
@@ -1259,14 +1138,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListTapesOutputTypeDef
 ```
 
-
 Required fields:
-- `TapeInfos`: `List["TapeInfoTypeDef"]`
+
+- `TapeInfos`:
+  `List`\[[TapeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tapeinfotypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListVolumeInitiatorsOutputTypeDef
 
@@ -1274,13 +1152,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsOutputTypeDef
 ```
 
-
 Required fields:
-- `Initiators`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Initiators`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListVolumeRecoveryPointsOutputTypeDef
 
@@ -1288,14 +1164,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `VolumeRecoveryPointInfos`: `List["VolumeRecoveryPointInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `VolumeRecoveryPointInfos`:
+  `List`\[[VolumeRecoveryPointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#volumerecoverypointinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ListVolumesOutputTypeDef
 
@@ -1303,15 +1178,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ListVolumesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `Marker`: `str`
-- `VolumeInfos`: `List["VolumeInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `VolumeInfos`:
+  `List`\[[VolumeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#volumeinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## NFSFileShareDefaultsTypeDef
 
@@ -1319,15 +1193,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import NFSFileShareDefaultsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FileMode`: `str`
 - `DirectoryMode`: `str`
 - `GroupId`: `int`
 - `OwnerId`: `int`
-
 
 ## NFSFileShareInfoTypeDef
 
@@ -1335,11 +1206,10 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import NFSFileShareInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NFSFileShareDefaults`: `"NFSFileShareDefaultsTypeDef"`
+
+- `NFSFileShareDefaults`:
+  [NFSFileShareDefaultsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#nfsfilesharedefaultstypedef)
 - `FileShareARN`: `str`
 - `FileShareId`: `str`
 - `FileShareStatus`: `str`
@@ -1350,17 +1220,19 @@ Optional fields:
 - `Role`: `str`
 - `LocationARN`: `str`
 - `DefaultStorageClass`: `str`
-- `ObjectACL`: `ObjectACL`
-- `ClientList`: `List[str]`
+- `ObjectACL`:
+  [ObjectACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#objectacl)
+- `ClientList`: `List`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
 - `RequesterPays`: `bool`
-- `Tags`: `List["TagTypeDef"]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
 - `FileShareName`: `str`
-- `CacheAttributes`: `"CacheAttributesTypeDef"`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#cacheattributestypedef)
 - `NotificationPolicy`: `str`
-
 
 ## NetworkInterfaceTypeDef
 
@@ -1368,14 +1240,11 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import NetworkInterfaceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Ipv4Address`: `str`
 - `MacAddress`: `str`
 - `Ipv6Address`: `str`
-
 
 ## NotifyWhenUploadedOutputTypeDef
 
@@ -1383,14 +1252,12 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
 - `NotificationId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## PaginatorConfigTypeDef
 
@@ -1398,14 +1265,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PoolInfoTypeDef
 
@@ -1413,17 +1277,17 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import PoolInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PoolARN`: `str`
 - `PoolName`: `str`
-- `StorageClass`: `TapeStorageClass`
-- `RetentionLockType`: `RetentionLockType`
+- `StorageClass`:
+  [TapeStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#tapestorageclass)
+- `RetentionLockType`:
+  [RetentionLockType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#retentionlocktype)
 - `RetentionLockTimeInDays`: `int`
-- `PoolStatus`: `PoolStatus`
-
+- `PoolStatus`:
+  [PoolStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#poolstatus)
 
 ## RefreshCacheOutputTypeDef
 
@@ -1431,14 +1295,12 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import RefreshCacheOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
 - `NotificationId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## RemoveTagsFromResourceOutputTypeDef
 
@@ -1446,13 +1308,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ResetCacheOutputTypeDef
 
@@ -1460,13 +1320,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ResetCacheOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -1474,16 +1332,13 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RetrieveTapeArchiveOutputTypeDef
 
@@ -1491,13 +1346,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## RetrieveTapeRecoveryPointOutputTypeDef
 
@@ -1505,13 +1358,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TapeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## SMBFileShareInfoTypeDef
 
@@ -1519,10 +1370,8 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import SMBFileShareInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FileShareARN`: `str`
 - `FileShareId`: `str`
 - `FileShareStatus`: `str`
@@ -1533,23 +1382,26 @@ Optional fields:
 - `Role`: `str`
 - `LocationARN`: `str`
 - `DefaultStorageClass`: `str`
-- `ObjectACL`: `ObjectACL`
+- `ObjectACL`:
+  [ObjectACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#objectacl)
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
 - `RequesterPays`: `bool`
 - `SMBACLEnabled`: `bool`
 - `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List[str]`
-- `ValidUserList`: `List[str]`
-- `InvalidUserList`: `List[str]`
+- `AdminUserList`: `List`\[`str`\]
+- `ValidUserList`: `List`\[`str`\]
+- `InvalidUserList`: `List`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `Authentication`: `str`
-- `CaseSensitivity`: `CaseSensitivity`
-- `Tags`: `List["TagTypeDef"]`
+- `CaseSensitivity`:
+  [CaseSensitivity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/literals.html#casesensitivity)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#tagtypedef)\]
 - `FileShareName`: `str`
-- `CacheAttributes`: `"CacheAttributesTypeDef"`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#cacheattributestypedef)
 - `NotificationPolicy`: `str`
-
 
 ## SetLocalConsolePasswordOutputTypeDef
 
@@ -1557,13 +1409,11 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## SetSMBGuestPasswordOutputTypeDef
 
@@ -1571,13 +1421,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## ShutdownGatewayOutputTypeDef
 
@@ -1585,13 +1433,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import ShutdownGatewayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## StartAvailabilityMonitorTestOutputTypeDef
 
@@ -1599,13 +1445,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## StartGatewayOutputTypeDef
 
@@ -1613,13 +1457,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import StartGatewayOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## StorediSCSIVolumeTypeDef
 
@@ -1627,10 +1469,8 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import StorediSCSIVolumeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VolumeARN`: `str`
 - `VolumeId`: `str`
 - `VolumeType`: `str`
@@ -1641,12 +1481,12 @@ Optional fields:
 - `VolumeDiskId`: `str`
 - `SourceSnapshotId`: `str`
 - `PreservedExistingData`: `bool`
-- `VolumeiSCSIAttributes`: `"VolumeiSCSIAttributesTypeDef"`
+- `VolumeiSCSIAttributes`:
+  [VolumeiSCSIAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#volumeiscsiattributestypedef)
 - `CreatedDate`: `datetime`
 - `VolumeUsedInBytes`: `int`
 - `KMSKey`: `str`
 - `TargetName`: `str`
-
 
 ## TagTypeDef
 
@@ -1654,13 +1494,10 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TapeArchiveTypeDef
 
@@ -1668,10 +1505,8 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import TapeArchiveTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TapeARN`: `str`
 - `TapeBarcode`: `str`
 - `TapeCreatedDate`: `datetime`
@@ -1686,17 +1521,14 @@ Optional fields:
 - `RetentionStartDate`: `datetime`
 - `PoolEntryDate`: `datetime`
 
-
 ## TapeInfoTypeDef
 
 ```python
 from mypy_boto3_storagegateway.type_defs import TapeInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TapeARN`: `str`
 - `TapeBarcode`: `str`
 - `TapeSizeInBytes`: `int`
@@ -1706,22 +1538,18 @@ Optional fields:
 - `RetentionStartDate`: `datetime`
 - `PoolEntryDate`: `datetime`
 
-
 ## TapeRecoveryPointInfoTypeDef
 
 ```python
 from mypy_boto3_storagegateway.type_defs import TapeRecoveryPointInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TapeARN`: `str`
 - `TapeRecoveryPointTime`: `datetime`
 - `TapeSizeInBytes`: `int`
 - `TapeStatus`: `str`
-
 
 ## TapeTypeDef
 
@@ -1729,10 +1557,8 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import TapeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TapeARN`: `str`
 - `TapeBarcode`: `str`
 - `TapeCreatedDate`: `datetime`
@@ -1747,20 +1573,17 @@ Optional fields:
 - `RetentionStartDate`: `datetime`
 - `PoolEntryDate`: `datetime`
 
-
 ## UpdateAutomaticTapeCreationPolicyOutputTypeDef
 
 ```python
 from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateBandwidthRateLimitOutputTypeDef
 
@@ -1768,13 +1591,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateBandwidthRateLimitScheduleOutputTypeDef
 
@@ -1782,13 +1603,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateChapCredentialsOutputTypeDef
 
@@ -1796,14 +1615,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TargetARN`: `str`
 - `InitiatorName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateFileSystemAssociationOutputTypeDef
 
@@ -1811,13 +1628,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateGatewayInformationOutputTypeDef
 
@@ -1825,14 +1640,12 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
 - `GatewayName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateGatewaySoftwareNowOutputTypeDef
 
@@ -1840,13 +1653,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateMaintenanceStartTimeOutputTypeDef
 
@@ -1854,13 +1665,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateNFSFileShareOutputTypeDef
 
@@ -1868,13 +1677,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateSMBFileShareOutputTypeDef
 
@@ -1882,13 +1689,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FileShareARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateSMBFileShareVisibilityOutputTypeDef
 
@@ -1896,13 +1701,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateSMBSecurityStrategyOutputTypeDef
 
@@ -1910,13 +1713,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GatewayARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateSnapshotScheduleOutputTypeDef
 
@@ -1924,13 +1725,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## UpdateVTLDeviceTypeOutputTypeDef
 
@@ -1938,13 +1737,11 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VTLDeviceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#responsemetadata)
 
 ## VTLDeviceTypeDef
 
@@ -1952,16 +1749,14 @@ Required fields:
 from mypy_boto3_storagegateway.type_defs import VTLDeviceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VTLDeviceARN`: `str`
 - `VTLDeviceType`: `str`
 - `VTLDeviceVendor`: `str`
 - `VTLDeviceProductIdentifier`: `str`
-- `DeviceiSCSIAttributes`: `"DeviceiSCSIAttributesTypeDef"`
-
+- `DeviceiSCSIAttributes`:
+  [DeviceiSCSIAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#deviceiscsiattributestypedef)
 
 ## VolumeInfoTypeDef
 
@@ -1969,10 +1764,8 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import VolumeInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VolumeARN`: `str`
 - `VolumeId`: `str`
 - `GatewayARN`: `str`
@@ -1981,22 +1774,18 @@ Optional fields:
 - `VolumeSizeInBytes`: `int`
 - `VolumeAttachmentStatus`: `str`
 
-
 ## VolumeRecoveryPointInfoTypeDef
 
 ```python
 from mypy_boto3_storagegateway.type_defs import VolumeRecoveryPointInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VolumeARN`: `str`
 - `VolumeSizeInBytes`: `int`
 - `VolumeUsageInBytes`: `int`
 - `VolumeRecoveryPointTime`: `str`
-
 
 ## VolumeiSCSIAttributesTypeDef
 
@@ -2004,13 +1793,10 @@ Optional fields:
 from mypy_boto3_storagegateway.type_defs import VolumeiSCSIAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetARN`: `str`
 - `NetworkInterfaceId`: `str`
 - `NetworkInterfacePort`: `int`
 - `LunNumber`: `int`
 - `ChapEnabled`: `bool`
-

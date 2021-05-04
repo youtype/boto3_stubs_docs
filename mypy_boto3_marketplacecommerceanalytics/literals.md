@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > Literals
 
-Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
-type annotations stubs module [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+Auto-generated documentation for
+[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+type annotations stubs module
+[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 - [Literals for boto3 MarketplaceCommerceAnalytics module](#literals-for-boto3-marketplacecommerceanalytics-module)
   - [DataSetType](#datasettype)

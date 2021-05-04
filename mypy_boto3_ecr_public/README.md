@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ECRPublic
 
-Auto-generated documentation for [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
-type annotations stubs module [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
+Auto-generated documentation for
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+type annotations stubs module
+[mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 ```bash
 pip install mypy-boto3-ecr-public
@@ -19,7 +21,8 @@ pip install mypy-boto3-ecr-public
 
 ## ECRPublicClient
 
-Type annotations for  `boto3.client("ecr-public")` as [ECRPublicClient](./client.md)
+Type annotations for `boto3.client("ecr-public")` as
+[ECRPublicClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_ecr_public.client import ECRPublicClient
 ```
 
-
 ECRPublicClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_check_layer_availability](./client.md#batch-check-layer-availability)
 - [batch_delete_image](./client.md#batch-delete-image)
 - [can_paginate](./client.md#can-paginate)
@@ -60,10 +61,8 @@ ECRPublicClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [upload_layer_part](./client.md#upload-layer-part)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [EmptyUploadException](./client.md#emptyuploadexception)
 - [ImageAlreadyExistsException](./client.md#imagealreadyexistsexception)
@@ -89,14 +88,10 @@ ECRPublicClient [exceptions](./client.md#exceptions)
 - [UnsupportedCommandException](./client.md#unsupportedcommandexception)
 - [UploadNotFoundException](./client.md#uploadnotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ecr-public").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ecr-public").get_paginator("...")`.
 
 Can be used directly:
 
@@ -108,11 +103,6 @@ from mypy_boto3_ecr_public.paginators import DescribeImageTagsPaginator, ...
 - [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
 - [DescribeRegistriesPaginator](./paginators.md#describeregistriespaginator)
 - [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +123,10 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 - [LayerFailureCode](./literals.md#layerfailurecode)
 - [RegistryAliasStatus](./literals.md#registryaliasstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

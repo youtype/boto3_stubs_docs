@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie2](./README.md) > Structures
 
-Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+Auto-generated documentation for
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+type annotations stubs module
+[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Typed dictionaries for boto3 Macie2 module](#typed-dictionaries-for-boto3-macie2-module)
   - [AccessControlListTypeDef](#accesscontrollisttypedef)
@@ -149,13 +151,10 @@ type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-
 from mypy_boto3_macie2.type_defs import AccessControlListTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `allowsPublicReadAccess`: `bool`
 - `allowsPublicWriteAccess`: `bool`
-
 
 ## AccountDetailTypeDef
 
@@ -163,13 +162,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import AccountDetailTypeDef
 ```
 
-
 Required fields:
+
 - `accountId`: `str`
 - `email`: `str`
-
-
-
 
 ## AccountLevelPermissionsTypeDef
 
@@ -177,12 +173,10 @@ Required fields:
 from mypy_boto3_macie2.type_defs import AccountLevelPermissionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `blockPublicAccess`: `"BlockPublicAccessTypeDef"`
 
+- `blockPublicAccess`:
+  [BlockPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#blockpublicaccesstypedef)
 
 ## AdminAccountTypeDef
 
@@ -190,13 +184,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import AdminAccountTypeDef
 ```
 
-
-
-
 Optional fields:
-- `accountId`: `str`
-- `status`: `AdminStatus`
 
+- `accountId`: `str`
+- `status`:
+  [AdminStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#adminstatus)
 
 ## ApiCallDetailsTypeDef
 
@@ -204,15 +196,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ApiCallDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `api`: `str`
 - `apiServiceName`: `str`
 - `firstSeen`: `datetime`
 - `lastSeen`: `datetime`
-
 
 ## AssumedRoleTypeDef
 
@@ -220,16 +209,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import AssumedRoleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accessKeyId`: `str`
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
-- `sessionContext`: `"SessionContextTypeDef"`
-
+- `sessionContext`:
+  [SessionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sessioncontexttypedef)
 
 ## AwsAccountTypeDef
 
@@ -237,13 +224,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import AwsAccountTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `principalId`: `str`
-
 
 ## AwsServiceTypeDef
 
@@ -251,12 +235,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import AwsServiceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `invokedBy`: `str`
 
+- `invokedBy`: `str`
 
 ## BatchGetCustomDataIdentifierSummaryTypeDef
 
@@ -264,17 +245,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifierSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `deleted`: `bool`
 - `description`: `str`
 - `id`: `str`
 - `name`: `str`
-
 
 ## BatchGetCustomDataIdentifiersResponseTypeDef
 
@@ -282,13 +260,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `customDataIdentifiers`: `List["BatchGetCustomDataIdentifierSummaryTypeDef"]`
-- `notFoundIdentifierIds`: `List[str]`
 
+- `customDataIdentifiers`:
+  `List`\[[BatchGetCustomDataIdentifierSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#batchgetcustomdataidentifiersummarytypedef)\]
+- `notFoundIdentifierIds`: `List`\[`str`\]
 
 ## BlockPublicAccessTypeDef
 
@@ -296,15 +272,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BlockPublicAccessTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `blockPublicAcls`: `bool`
 - `blockPublicPolicy`: `bool`
 - `ignorePublicAcls`: `bool`
 - `restrictPublicBuckets`: `bool`
-
 
 ## BucketCountByEffectivePermissionTypeDef
 
@@ -312,15 +285,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketCountByEffectivePermissionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `publiclyAccessible`: `int`
 - `publiclyReadable`: `int`
 - `publiclyWritable`: `int`
 - `unknown`: `int`
-
 
 ## BucketCountByEncryptionTypeTypeDef
 
@@ -328,15 +298,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketCountByEncryptionTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `kmsManaged`: `int`
 - `s3Managed`: `int`
 - `unencrypted`: `int`
 - `unknown`: `int`
-
 
 ## BucketCountBySharedAccessTypeTypeDef
 
@@ -344,15 +311,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketCountBySharedAccessTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `external`: `int`
 - `internal`: `int`
 - `notShared`: `int`
 - `unknown`: `int`
-
 
 ## BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef
 
@@ -360,14 +324,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `allowsUnencryptedObjectUploads`: `int`
 - `deniesUnencryptedObjectUploads`: `int`
 - `unknown`: `int`
-
 
 ## BucketCriteriaAdditionalPropertiesTypeDef
 
@@ -375,18 +336,15 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketCriteriaAdditionalPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `eq`: `List[str]`
+
+- `eq`: `List`\[`str`\]
 - `gt`: `int`
 - `gte`: `int`
 - `lt`: `int`
 - `lte`: `int`
-- `neq`: `List[str]`
+- `neq`: `List`\[`str`\]
 - `prefix`: `str`
-
 
 ## BucketLevelPermissionsTypeDef
 
@@ -394,14 +352,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketLevelPermissionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `accessControlList`: `"AccessControlListTypeDef"`
-- `blockPublicAccess`: `"BlockPublicAccessTypeDef"`
-- `bucketPolicy`: `"BucketPolicyTypeDef"`
 
+- `accessControlList`:
+  [AccessControlListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#accesscontrollisttypedef)
+- `blockPublicAccess`:
+  [BlockPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#blockpublicaccesstypedef)
+- `bucketPolicy`:
+  [BucketPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketpolicytypedef)
 
 ## BucketMetadataTypeDef
 
@@ -409,33 +367,40 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
-- `allowsUnencryptedObjectUploads`: `AllowsUnencryptedObjectUploads`
+- `allowsUnencryptedObjectUploads`:
+  [AllowsUnencryptedObjectUploads](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#allowsunencryptedobjectuploads)
 - `bucketArn`: `str`
 - `bucketCreatedAt`: `datetime`
 - `bucketName`: `str`
 - `classifiableObjectCount`: `int`
 - `classifiableSizeInBytes`: `int`
-- `jobDetails`: `"JobDetailsTypeDef"`
+- `jobDetails`:
+  [JobDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobdetailstypedef)
 - `lastUpdated`: `datetime`
 - `objectCount`: `int`
-- `objectCountByEncryptionType`: `"ObjectCountByEncryptionTypeTypeDef"`
-- `publicAccess`: `"BucketPublicAccessTypeDef"`
+- `objectCountByEncryptionType`:
+  [ObjectCountByEncryptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#objectcountbyencryptiontypetypedef)
+- `publicAccess`:
+  [BucketPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketpublicaccesstypedef)
 - `region`: `str`
-- `replicationDetails`: `"ReplicationDetailsTypeDef"`
-- `serverSideEncryption`: `"BucketServerSideEncryptionTypeDef"`
-- `sharedAccess`: `SharedAccess`
+- `replicationDetails`:
+  [ReplicationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#replicationdetailstypedef)
+- `serverSideEncryption`:
+  [BucketServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketserversideencryptiontypedef)
+- `sharedAccess`:
+  [SharedAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#sharedaccess)
 - `sizeInBytes`: `int`
 - `sizeInBytesCompressed`: `int`
-- `tags`: `List["KeyValuePairTypeDef"]`
-- `unclassifiableObjectCount`: `"ObjectLevelStatisticsTypeDef"`
-- `unclassifiableObjectSizeInBytes`: `"ObjectLevelStatisticsTypeDef"`
+- `tags`:
+  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#keyvaluepairtypedef)\]
+- `unclassifiableObjectCount`:
+  [ObjectLevelStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#objectlevelstatisticstypedef)
+- `unclassifiableObjectSizeInBytes`:
+  [ObjectLevelStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#objectlevelstatisticstypedef)
 - `versioning`: `bool`
-
 
 ## BucketPermissionConfigurationTypeDef
 
@@ -443,13 +408,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketPermissionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `accountLevelPermissions`: `"AccountLevelPermissionsTypeDef"`
-- `bucketLevelPermissions`: `"BucketLevelPermissionsTypeDef"`
 
+- `accountLevelPermissions`:
+  [AccountLevelPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#accountlevelpermissionstypedef)
+- `bucketLevelPermissions`:
+  [BucketLevelPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketlevelpermissionstypedef)
 
 ## BucketPolicyTypeDef
 
@@ -457,13 +421,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `allowsPublicReadAccess`: `bool`
 - `allowsPublicWriteAccess`: `bool`
-
 
 ## BucketPublicAccessTypeDef
 
@@ -471,13 +432,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketPublicAccessTypeDef
 ```
 
-
-
-
 Optional fields:
-- `effectivePermission`: `EffectivePermission`
-- `permissionConfiguration`: `"BucketPermissionConfigurationTypeDef"`
 
+- `effectivePermission`:
+  [EffectivePermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#effectivepermission)
+- `permissionConfiguration`:
+  [BucketPermissionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketpermissionconfigurationtypedef)
 
 ## BucketServerSideEncryptionTypeDef
 
@@ -485,13 +445,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketServerSideEncryptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `kmsMasterKeyId`: `str`
-- `type`: `TypeType`
 
+- `kmsMasterKeyId`: `str`
+- `type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#typetype)
 
 ## BucketSortCriteriaTypeDef
 
@@ -499,13 +457,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import BucketSortCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeName`: `str`
-- `orderBy`: `OrderBy`
 
+- `attributeName`: `str`
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#orderby)
 
 ## CellTypeDef
 
@@ -513,15 +469,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CellTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `cellReference`: `str`
 - `column`: `int`
 - `columnName`: `str`
 - `row`: `int`
-
 
 ## ClassificationDetailsTypeDef
 
@@ -529,15 +482,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ClassificationDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detailedResultsLocation`: `str`
 - `jobArn`: `str`
 - `jobId`: `str`
-- `result`: `"ClassificationResultTypeDef"`
-
+- `result`:
+  [ClassificationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationresulttypedef)
 
 ## ClassificationExportConfigurationTypeDef
 
@@ -545,12 +496,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ClassificationExportConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Destination`: `"S3DestinationTypeDef"`
 
+- `s3Destination`:
+  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3destinationtypedef)
 
 ## ClassificationResultStatusTypeDef
 
@@ -558,13 +507,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ClassificationResultStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `reason`: `str`
-
 
 ## ClassificationResultTypeDef
 
@@ -572,17 +518,17 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ClassificationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `additionalOccurrences`: `bool`
-- `customDataIdentifiers`: `"CustomDataIdentifiersTypeDef"`
-- `mimeType`: `str`
-- `sensitiveData`: `List["SensitiveDataItemTypeDef"]`
-- `sizeClassified`: `int`
-- `status`: `"ClassificationResultStatusTypeDef"`
 
+- `additionalOccurrences`: `bool`
+- `customDataIdentifiers`:
+  [CustomDataIdentifiersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#customdataidentifierstypedef)
+- `mimeType`: `str`
+- `sensitiveData`:
+  `List`\[[SensitiveDataItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sensitivedataitemtypedef)\]
+- `sizeClassified`: `int`
+- `status`:
+  [ClassificationResultStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationresultstatustypedef)
 
 ## CreateClassificationJobResponseTypeDef
 
@@ -590,13 +536,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CreateClassificationJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jobArn`: `str`
 - `jobId`: `str`
-
 
 ## CreateCustomDataIdentifierResponseTypeDef
 
@@ -604,12 +547,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `customDataIdentifierId`: `str`
 
+- `customDataIdentifierId`: `str`
 
 ## CreateFindingsFilterResponseTypeDef
 
@@ -617,13 +557,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CreateFindingsFilterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `id`: `str`
-
 
 ## CreateInvitationsResponseTypeDef
 
@@ -631,12 +568,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CreateInvitationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `unprocessedAccounts`: `List["UnprocessedAccountTypeDef"]`
 
+- `unprocessedAccounts`:
+  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#unprocessedaccounttypedef)\]
 
 ## CreateMemberResponseTypeDef
 
@@ -644,12 +579,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CreateMemberResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arn`: `str`
 
+- `arn`: `str`
 
 ## CriterionAdditionalPropertiesTypeDef
 
@@ -657,18 +589,15 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CriterionAdditionalPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `eq`: `List[str]`
-- `eqExactMatch`: `List[str]`
+
+- `eq`: `List`\[`str`\]
+- `eqExactMatch`: `List`\[`str`\]
 - `gt`: `int`
 - `gte`: `int`
 - `lt`: `int`
 - `lte`: `int`
-- `neq`: `List[str]`
-
+- `neq`: `List`\[`str`\]
 
 ## CustomDataIdentifierSummaryTypeDef
 
@@ -676,16 +605,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CustomDataIdentifierSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `description`: `str`
 - `id`: `str`
 - `name`: `str`
-
 
 ## CustomDataIdentifiersTypeDef
 
@@ -693,13 +619,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CustomDataIdentifiersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detections`: `List["CustomDetectionTypeDef"]`
-- `totalCount`: `int`
 
+- `detections`:
+  `List`\[[CustomDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#customdetectiontypedef)\]
+- `totalCount`: `int`
 
 ## CustomDetectionTypeDef
 
@@ -707,15 +631,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import CustomDetectionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `count`: `int`
 - `name`: `str`
-- `occurrences`: `"OccurrencesTypeDef"`
-
+- `occurrences`:
+  [OccurrencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#occurrencestypedef)
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -723,12 +645,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DeclineInvitationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `unprocessedAccounts`: `List["UnprocessedAccountTypeDef"]`
 
+- `unprocessedAccounts`:
+  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#unprocessedaccounttypedef)\]
 
 ## DefaultDetectionTypeDef
 
@@ -736,14 +656,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DefaultDetectionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `count`: `int`
-- `occurrences`: `"OccurrencesTypeDef"`
-- `type`: `str`
 
+- `count`: `int`
+- `occurrences`:
+  [OccurrencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#occurrencestypedef)
+- `type`: `str`
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -751,12 +669,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DeleteInvitationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `unprocessedAccounts`: `List["UnprocessedAccountTypeDef"]`
 
+- `unprocessedAccounts`:
+  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#unprocessedaccounttypedef)\]
 
 ## DescribeBucketsResponseTypeDef
 
@@ -764,13 +680,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DescribeBucketsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `buckets`: `List["BucketMetadataTypeDef"]`
-- `nextToken`: `str`
 
+- `buckets`:
+  `List`\[[BucketMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketmetadatatypedef)\]
+- `nextToken`: `str`
 
 ## DescribeClassificationJobResponseTypeDef
 
@@ -778,29 +692,33 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DescribeClassificationJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `clientToken`: `str`
 - `createdAt`: `datetime`
-- `customDataIdentifierIds`: `List[str]`
+- `customDataIdentifierIds`: `List`\[`str`\]
 - `description`: `str`
 - `initialRun`: `bool`
 - `jobArn`: `str`
 - `jobId`: `str`
-- `jobStatus`: `JobStatus`
-- `jobType`: `JobType`
-- `lastRunErrorStatus`: `"LastRunErrorStatusTypeDef"`
+- `jobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobstatus)
+- `jobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobtype)
+- `lastRunErrorStatus`:
+  [LastRunErrorStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#lastrunerrorstatustypedef)
 - `lastRunTime`: `datetime`
 - `name`: `str`
-- `s3JobDefinition`: `"S3JobDefinitionTypeDef"`
+- `s3JobDefinition`:
+  [S3JobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3jobdefinitiontypedef)
 - `samplingPercentage`: `int`
-- `scheduleFrequency`: `"JobScheduleFrequencyTypeDef"`
-- `statistics`: `"StatisticsTypeDef"`
-- `tags`: `Dict[str, str]`
-- `userPausedDetails`: `"UserPausedDetailsTypeDef"`
-
+- `scheduleFrequency`:
+  [JobScheduleFrequencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobschedulefrequencytypedef)
+- `statistics`:
+  [StatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#statisticstypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `userPausedDetails`:
+  [UserPausedDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#userpauseddetailstypedef)
 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
@@ -808,13 +726,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DescribeOrganizationConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `autoEnable`: `bool`
 - `maxAccountLimitReached`: `bool`
-
 
 ## DomainDetailsTypeDef
 
@@ -822,12 +737,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import DomainDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domainName`: `str`
 
+- `domainName`: `str`
 
 ## FederatedUserTypeDef
 
@@ -835,16 +747,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FederatedUserTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accessKeyId`: `str`
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
-- `sessionContext`: `"SessionContextTypeDef"`
-
+- `sessionContext`:
+  [SessionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sessioncontexttypedef)
 
 ## FindingActionTypeDef
 
@@ -852,13 +762,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionType`: `Literal['AWS_API_CALL']`
-- `apiCallDetails`: `"ApiCallDetailsTypeDef"`
 
+- `actionType`: `Literal['AWS_API_CALL']`
+- `apiCallDetails`:
+  [ApiCallDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#apicalldetailstypedef)
 
 ## FindingActorTypeDef
 
@@ -866,14 +774,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingActorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domainDetails`: `"DomainDetailsTypeDef"`
-- `ipAddressDetails`: `"IpAddressDetailsTypeDef"`
-- `userIdentity`: `"UserIdentityTypeDef"`
 
+- `domainDetails`:
+  [DomainDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#domaindetailstypedef)
+- `ipAddressDetails`:
+  [IpAddressDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#ipaddressdetailstypedef)
+- `userIdentity`:
+  [UserIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#useridentitytypedef)
 
 ## FindingCriteriaTypeDef
 
@@ -881,12 +789,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `criterion`: `Dict[str, "CriterionAdditionalPropertiesTypeDef"]`
 
+- `criterion`: `Dict`\[`str`,
+  [CriterionAdditionalPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#criterionadditionalpropertiestypedef)\]
 
 ## FindingStatisticsSortCriteriaTypeDef
 
@@ -894,13 +800,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingStatisticsSortCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeName`: `FindingStatisticsSortAttributeName`
-- `orderBy`: `OrderBy`
 
+- `attributeName`:
+  [FindingStatisticsSortAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingstatisticssortattributename)
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#orderby)
 
 ## FindingTypeDef
 
@@ -908,29 +813,32 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `archived`: `bool`
-- `category`: `FindingCategory`
-- `classificationDetails`: `"ClassificationDetailsTypeDef"`
+- `category`:
+  [FindingCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingcategory)
+- `classificationDetails`:
+  [ClassificationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationdetailstypedef)
 - `count`: `int`
 - `createdAt`: `datetime`
 - `description`: `str`
 - `id`: `str`
 - `partition`: `str`
-- `policyDetails`: `"PolicyDetailsTypeDef"`
+- `policyDetails`:
+  [PolicyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#policydetailstypedef)
 - `region`: `str`
-- `resourcesAffected`: `"ResourcesAffectedTypeDef"`
+- `resourcesAffected`:
+  [ResourcesAffectedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#resourcesaffectedtypedef)
 - `sample`: `bool`
 - `schemaVersion`: `str`
-- `severity`: `"SeverityTypeDef"`
+- `severity`:
+  [SeverityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#severitytypedef)
 - `title`: `str`
-- `type`: `FindingType`
+- `type`:
+  [FindingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingtype)
 - `updatedAt`: `datetime`
-
 
 ## FindingsFilterListItemTypeDef
 
@@ -938,16 +846,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import FindingsFilterListItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `FindingsFilterAction`
+
+- `action`:
+  [FindingsFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingsfilteraction)
 - `arn`: `str`
 - `id`: `str`
 - `name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetAdministratorAccountResponseTypeDef
 
@@ -955,12 +861,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetAdministratorAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `administrator`: `"InvitationTypeDef"`
 
+- `administrator`:
+  [InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#invitationtypedef)
 
 ## GetBucketStatisticsResponseTypeDef
 
@@ -968,24 +872,27 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucketCount`: `int`
-- `bucketCountByEffectivePermission`: `"BucketCountByEffectivePermissionTypeDef"`
-- `bucketCountByEncryptionType`: `"BucketCountByEncryptionTypeTypeDef"`
-- `bucketCountByObjectEncryptionRequirement`: `"BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef"`
-- `bucketCountBySharedAccessType`: `"BucketCountBySharedAccessTypeTypeDef"`
+- `bucketCountByEffectivePermission`:
+  [BucketCountByEffectivePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcountbyeffectivepermissiontypedef)
+- `bucketCountByEncryptionType`:
+  [BucketCountByEncryptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcountbyencryptiontypetypedef)
+- `bucketCountByObjectEncryptionRequirement`:
+  [BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcountpolicyallowsunencryptedobjectuploadstypedef)
+- `bucketCountBySharedAccessType`:
+  [BucketCountBySharedAccessTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcountbysharedaccesstypetypedef)
 - `classifiableObjectCount`: `int`
 - `classifiableSizeInBytes`: `int`
 - `lastUpdated`: `datetime`
 - `objectCount`: `int`
 - `sizeInBytes`: `int`
 - `sizeInBytesCompressed`: `int`
-- `unclassifiableObjectCount`: `"ObjectLevelStatisticsTypeDef"`
-- `unclassifiableObjectSizeInBytes`: `"ObjectLevelStatisticsTypeDef"`
-
+- `unclassifiableObjectCount`:
+  [ObjectLevelStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#objectlevelstatisticstypedef)
+- `unclassifiableObjectSizeInBytes`:
+  [ObjectLevelStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#objectlevelstatisticstypedef)
 
 ## GetClassificationExportConfigurationResponseTypeDef
 
@@ -993,12 +900,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetClassificationExportConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configuration`: `"ClassificationExportConfigurationTypeDef"`
 
+- `configuration`:
+  [ClassificationExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationexportconfigurationtypedef)
 
 ## GetCustomDataIdentifierResponseTypeDef
 
@@ -1006,22 +911,19 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `deleted`: `bool`
 - `description`: `str`
 - `id`: `str`
-- `ignoreWords`: `List[str]`
-- `keywords`: `List[str]`
+- `ignoreWords`: `List`\[`str`\]
+- `keywords`: `List`\[`str`\]
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetFindingStatisticsResponseTypeDef
 
@@ -1029,12 +931,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetFindingStatisticsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `countsByGroup`: `List["GroupCountTypeDef"]`
 
+- `countsByGroup`:
+  `List`\[[GroupCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#groupcounttypedef)\]
 
 ## GetFindingsFilterResponseTypeDef
 
@@ -1042,19 +942,18 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetFindingsFilterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `FindingsFilterAction`
+
+- `action`:
+  [FindingsFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingsfilteraction)
 - `arn`: `str`
 - `description`: `str`
-- `findingCriteria`: `"FindingCriteriaTypeDef"`
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
 - `id`: `str`
 - `name`: `str`
 - `position`: `int`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetFindingsPublicationConfigurationResponseTypeDef
 
@@ -1062,12 +961,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetFindingsPublicationConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `securityHubConfiguration`: `"SecurityHubConfigurationTypeDef"`
 
+- `securityHubConfiguration`:
+  [SecurityHubConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#securityhubconfigurationtypedef)
 
 ## GetFindingsResponseTypeDef
 
@@ -1075,12 +972,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetFindingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `findings`: `List["FindingTypeDef"]`
 
+- `findings`:
+  `List`\[[FindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingtypedef)\]
 
 ## GetInvitationsCountResponseTypeDef
 
@@ -1088,12 +983,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetInvitationsCountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `invitationsCount`: `int`
 
+- `invitationsCount`: `int`
 
 ## GetMacieSessionResponseTypeDef
 
@@ -1101,16 +993,15 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetMacieSessionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `createdAt`: `datetime`
-- `findingPublishingFrequency`: `FindingPublishingFrequency`
-- `serviceRole`: `str`
-- `status`: `MacieStatus`
-- `updatedAt`: `datetime`
 
+- `createdAt`: `datetime`
+- `findingPublishingFrequency`:
+  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingpublishingfrequency)
+- `serviceRole`: `str`
+- `status`:
+  [MacieStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#maciestatus)
+- `updatedAt`: `datetime`
 
 ## GetMasterAccountResponseTypeDef
 
@@ -1118,12 +1009,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetMasterAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `master`: `"InvitationTypeDef"`
 
+- `master`:
+  [InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#invitationtypedef)
 
 ## GetMemberResponseTypeDef
 
@@ -1131,20 +1020,18 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetMemberResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `administratorAccountId`: `str`
 - `arn`: `str`
 - `email`: `str`
 - `invitedAt`: `datetime`
 - `masterAccountId`: `str`
-- `relationshipStatus`: `RelationshipStatus`
-- `tags`: `Dict[str, str]`
+- `relationshipStatus`:
+  [RelationshipStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#relationshipstatus)
+- `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
-
 
 ## GetUsageStatisticsResponseTypeDef
 
@@ -1152,14 +1039,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetUsageStatisticsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextToken`: `str`
-- `records`: `List["UsageRecordTypeDef"]`
-- `timeRange`: `TimeRange`
 
+- `nextToken`: `str`
+- `records`:
+  `List`\[[UsageRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagerecordtypedef)\]
+- `timeRange`:
+  [TimeRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#timerange)
 
 ## GetUsageTotalsResponseTypeDef
 
@@ -1167,13 +1053,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GetUsageTotalsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `timeRange`: `TimeRange`
-- `usageTotals`: `List["UsageTotalTypeDef"]`
 
+- `timeRange`:
+  [TimeRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#timerange)
+- `usageTotals`:
+  `List`\[[UsageTotalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagetotaltypedef)\]
 
 ## GroupCountTypeDef
 
@@ -1181,13 +1066,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import GroupCountTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `count`: `int`
 - `groupKey`: `str`
-
 
 ## IamUserTypeDef
 
@@ -1195,15 +1077,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IamUserTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
 - `userName`: `str`
-
 
 ## InvitationTypeDef
 
@@ -1211,15 +1090,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import InvitationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `invitationId`: `str`
 - `invitedAt`: `datetime`
-- `relationshipStatus`: `RelationshipStatus`
-
+- `relationshipStatus`:
+  [RelationshipStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#relationshipstatus)
 
 ## IpAddressDetailsTypeDef
 
@@ -1227,16 +1104,17 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IpAddressDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ipAddressV4`: `str`
-- `ipCity`: `"IpCityTypeDef"`
-- `ipCountry`: `"IpCountryTypeDef"`
-- `ipGeoLocation`: `"IpGeoLocationTypeDef"`
-- `ipOwner`: `"IpOwnerTypeDef"`
 
+- `ipAddressV4`: `str`
+- `ipCity`:
+  [IpCityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#ipcitytypedef)
+- `ipCountry`:
+  [IpCountryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#ipcountrytypedef)
+- `ipGeoLocation`:
+  [IpGeoLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#ipgeolocationtypedef)
+- `ipOwner`:
+  [IpOwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#ipownertypedef)
 
 ## IpCityTypeDef
 
@@ -1244,12 +1122,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IpCityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## IpCountryTypeDef
 
@@ -1257,13 +1132,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IpCountryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `name`: `str`
-
 
 ## IpGeoLocationTypeDef
 
@@ -1271,13 +1143,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IpGeoLocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `lat`: `float`
 - `lon`: `float`
-
 
 ## IpOwnerTypeDef
 
@@ -1285,15 +1154,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import IpOwnerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `asn`: `str`
 - `asnOrg`: `str`
 - `isp`: `str`
 - `org`: `str`
-
 
 ## JobDetailsTypeDef
 
@@ -1301,15 +1167,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import JobDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `isDefinedInJob`: `IsDefinedInJob`
-- `isMonitoredByJob`: `IsMonitoredByJob`
+
+- `isDefinedInJob`:
+  [IsDefinedInJob](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#isdefinedinjob)
+- `isMonitoredByJob`:
+  [IsMonitoredByJob](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#ismonitoredbyjob)
 - `lastJobId`: `str`
 - `lastJobRunTime`: `datetime`
-
 
 ## JobScheduleFrequencyTypeDef
 
@@ -1317,14 +1182,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import JobScheduleFrequencyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dailySchedule`: `Dict[str, Any]`
-- `monthlySchedule`: `"MonthlyScheduleTypeDef"`
-- `weeklySchedule`: `"WeeklyScheduleTypeDef"`
 
+- `dailySchedule`: `Dict`\[`str`, `Any`\]
+- `monthlySchedule`:
+  [MonthlyScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#monthlyscheduletypedef)
+- `weeklySchedule`:
+  [WeeklyScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#weeklyscheduletypedef)
 
 ## JobScopeTermTypeDef
 
@@ -1332,13 +1196,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import JobScopeTermTypeDef
 ```
 
-
-
-
 Optional fields:
-- `simpleScopeTerm`: `"SimpleScopeTermTypeDef"`
-- `tagScopeTerm`: `"TagScopeTermTypeDef"`
 
+- `simpleScopeTerm`:
+  [SimpleScopeTermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#simplescopetermtypedef)
+- `tagScopeTerm`:
+  [TagScopeTermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#tagscopetermtypedef)
 
 ## JobScopingBlockTypeDef
 
@@ -1346,12 +1209,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import JobScopingBlockTypeDef
 ```
 
-
-
-
 Optional fields:
-- `and`: `List["JobScopeTermTypeDef"]`
 
+- `and`:
+  `List`\[[JobScopeTermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobscopetermtypedef)\]
 
 ## JobSummaryTypeDef
 
@@ -1359,19 +1220,21 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import JobSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `bucketDefinitions`: `List["S3BucketDefinitionForJobTypeDef"]`
+
+- `bucketDefinitions`:
+  `List`\[[S3BucketDefinitionForJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3bucketdefinitionforjobtypedef)\]
 - `createdAt`: `datetime`
 - `jobId`: `str`
-- `jobStatus`: `JobStatus`
-- `jobType`: `JobType`
-- `lastRunErrorStatus`: `"LastRunErrorStatusTypeDef"`
+- `jobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobstatus)
+- `jobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobtype)
+- `lastRunErrorStatus`:
+  [LastRunErrorStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#lastrunerrorstatustypedef)
 - `name`: `str`
-- `userPausedDetails`: `"UserPausedDetailsTypeDef"`
-
+- `userPausedDetails`:
+  [UserPausedDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#userpauseddetailstypedef)
 
 ## KeyValuePairTypeDef
 
@@ -1379,13 +1242,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import KeyValuePairTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `key`: `str`
 - `value`: `str`
-
 
 ## LastRunErrorStatusTypeDef
 
@@ -1393,12 +1253,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import LastRunErrorStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `LastRunErrorStatusCode`
 
+- `code`:
+  [LastRunErrorStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#lastrunerrorstatuscode)
 
 ## ListClassificationJobsResponseTypeDef
 
@@ -1406,13 +1264,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListClassificationJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["JobSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListCustomDataIdentifiersResponseTypeDef
 
@@ -1420,13 +1276,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["CustomDataIdentifierSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[CustomDataIdentifierSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#customdataidentifiersummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListFindingsFiltersResponseTypeDef
 
@@ -1434,13 +1288,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListFindingsFiltersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `findingsFilterListItems`: `List["FindingsFilterListItemTypeDef"]`
-- `nextToken`: `str`
 
+- `findingsFilterListItems`:
+  `List`\[[FindingsFilterListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingsfilterlistitemtypedef)\]
+- `nextToken`: `str`
 
 ## ListFindingsResponseTypeDef
 
@@ -1448,13 +1300,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListFindingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `findingIds`: `List[str]`
-- `nextToken`: `str`
 
+- `findingIds`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListInvitationsResponseTypeDef
 
@@ -1462,13 +1311,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListInvitationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `invitations`: `List["InvitationTypeDef"]`
-- `nextToken`: `str`
 
+- `invitations`:
+  `List`\[[InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#invitationtypedef)\]
+- `nextToken`: `str`
 
 ## ListJobsFilterCriteriaTypeDef
 
@@ -1476,13 +1323,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListJobsFilterCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `excludes`: `List["ListJobsFilterTermTypeDef"]`
-- `includes`: `List["ListJobsFilterTermTypeDef"]`
 
+- `excludes`:
+  `List`\[[ListJobsFilterTermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobsfiltertermtypedef)\]
+- `includes`:
+  `List`\[[ListJobsFilterTermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobsfiltertermtypedef)\]
 
 ## ListJobsFilterTermTypeDef
 
@@ -1490,14 +1336,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListJobsFilterTermTypeDef
 ```
 
-
-
-
 Optional fields:
-- `comparator`: `JobComparator`
-- `key`: `ListJobsFilterKey`
-- `values`: `List[str]`
 
+- `comparator`:
+  [JobComparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobcomparator)
+- `key`:
+  [ListJobsFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#listjobsfilterkey)
+- `values`: `List`\[`str`\]
 
 ## ListJobsSortCriteriaTypeDef
 
@@ -1505,13 +1350,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListJobsSortCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeName`: `ListJobsSortAttributeName`
-- `orderBy`: `OrderBy`
 
+- `attributeName`:
+  [ListJobsSortAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#listjobssortattributename)
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#orderby)
 
 ## ListMembersResponseTypeDef
 
@@ -1519,13 +1363,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListMembersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `members`: `List["MemberTypeDef"]`
-- `nextToken`: `str`
 
+- `members`:
+  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#membertypedef)\]
+- `nextToken`: `str`
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
@@ -1533,13 +1375,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `adminAccounts`: `List["AdminAccountTypeDef"]`
-- `nextToken`: `str`
 
+- `adminAccounts`:
+  `List`\[[AdminAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#adminaccounttypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1547,12 +1387,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## MemberTypeDef
 
@@ -1560,20 +1397,18 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import MemberTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `administratorAccountId`: `str`
 - `arn`: `str`
 - `email`: `str`
 - `invitedAt`: `datetime`
 - `masterAccountId`: `str`
-- `relationshipStatus`: `RelationshipStatus`
-- `tags`: `Dict[str, str]`
+- `relationshipStatus`:
+  [RelationshipStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#relationshipstatus)
+- `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
-
 
 ## MonthlyScheduleTypeDef
 
@@ -1581,12 +1416,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import MonthlyScheduleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dayOfMonth`: `int`
 
+- `dayOfMonth`: `int`
 
 ## ObjectCountByEncryptionTypeTypeDef
 
@@ -1594,16 +1426,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ObjectCountByEncryptionTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `customerManaged`: `int`
 - `kmsManaged`: `int`
 - `s3Managed`: `int`
 - `unencrypted`: `int`
 - `unknown`: `int`
-
 
 ## ObjectLevelStatisticsTypeDef
 
@@ -1611,14 +1440,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ObjectLevelStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `fileType`: `int`
 - `storageClass`: `int`
 - `total`: `int`
-
 
 ## OccurrencesTypeDef
 
@@ -1626,16 +1452,18 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import OccurrencesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cells`: `List["CellTypeDef"]`
-- `lineRanges`: `List["RangeTypeDef"]`
-- `offsetRanges`: `List["RangeTypeDef"]`
-- `pages`: `List["PageTypeDef"]`
-- `records`: `List["RecordTypeDef"]`
 
+- `cells`:
+  `List`\[[CellTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#celltypedef)\]
+- `lineRanges`:
+  `List`\[[RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#rangetypedef)\]
+- `offsetRanges`:
+  `List`\[[RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#rangetypedef)\]
+- `pages`:
+  `List`\[[PageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#pagetypedef)\]
+- `records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#recordtypedef)\]
 
 ## PageTypeDef
 
@@ -1643,14 +1471,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import PageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `lineRange`: `"RangeTypeDef"`
-- `offsetRange`: `"RangeTypeDef"`
-- `pageNumber`: `int`
 
+- `lineRange`:
+  [RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#rangetypedef)
+- `offsetRange`:
+  [RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#rangetypedef)
+- `pageNumber`: `int`
 
 ## PaginatorConfigTypeDef
 
@@ -1658,14 +1485,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PolicyDetailsTypeDef
 
@@ -1673,13 +1497,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import PolicyDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `"FindingActionTypeDef"`
-- `actor`: `"FindingActorTypeDef"`
 
+- `action`:
+  [FindingActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingactiontypedef)
+- `actor`:
+  [FindingActorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingactortypedef)
 
 ## PutClassificationExportConfigurationResponseTypeDef
 
@@ -1687,12 +1510,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configuration`: `"ClassificationExportConfigurationTypeDef"`
 
+- `configuration`:
+  [ClassificationExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationexportconfigurationtypedef)
 
 ## RangeTypeDef
 
@@ -1700,14 +1521,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import RangeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `end`: `int`
 - `start`: `int`
 - `startColumn`: `int`
-
 
 ## RecordTypeDef
 
@@ -1715,13 +1533,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import RecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jsonPath`: `str`
 - `recordIndex`: `int`
-
 
 ## ReplicationDetailsTypeDef
 
@@ -1729,14 +1544,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ReplicationDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `replicated`: `bool`
 - `replicatedExternally`: `bool`
-- `replicationAccounts`: `List[str]`
-
+- `replicationAccounts`: `List`\[`str`\]
 
 ## ResourcesAffectedTypeDef
 
@@ -1744,13 +1556,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ResourcesAffectedTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Bucket`: `"S3BucketTypeDef"`
-- `s3Object`: `"S3ObjectTypeDef"`
 
+- `s3Bucket`:
+  [S3BucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3buckettypedef)
+- `s3Object`:
+  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3objecttypedef)
 
 ## S3BucketDefinitionForJobTypeDef
 
@@ -1758,13 +1569,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import S3BucketDefinitionForJobTypeDef
 ```
 
-
 Required fields:
+
 - `accountId`: `str`
-- `buckets`: `List[str]`
-
-
-
+- `buckets`: `List`\[`str`\]
 
 ## S3BucketOwnerTypeDef
 
@@ -1772,13 +1580,10 @@ Required fields:
 from mypy_boto3_macie2.type_defs import S3BucketOwnerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `displayName`: `str`
 - `id`: `str`
-
 
 ## S3BucketTypeDef
 
@@ -1786,19 +1591,21 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import S3BucketTypeDef
 ```
 
-
-
-
 Optional fields:
-- `allowsUnencryptedObjectUploads`: `AllowsUnencryptedObjectUploads`
+
+- `allowsUnencryptedObjectUploads`:
+  [AllowsUnencryptedObjectUploads](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#allowsunencryptedobjectuploads)
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `defaultServerSideEncryption`: `"ServerSideEncryptionTypeDef"`
+- `defaultServerSideEncryption`:
+  [ServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#serversideencryptiontypedef)
 - `name`: `str`
-- `owner`: `"S3BucketOwnerTypeDef"`
-- `publicAccess`: `"BucketPublicAccessTypeDef"`
-- `tags`: `List["KeyValuePairTypeDef"]`
-
+- `owner`:
+  [S3BucketOwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3bucketownertypedef)
+- `publicAccess`:
+  [BucketPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketpublicaccesstypedef)
+- `tags`:
+  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#keyvaluepairtypedef)\]
 
 ## S3DestinationTypeDef
 
@@ -1806,16 +1613,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import S3DestinationTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
 - `kmsKeyArn`: `str`
 
-
-
 Optional fields:
-- `keyPrefix`: `str`
 
+- `keyPrefix`: `str`
 
 ## S3JobDefinitionTypeDef
 
@@ -1823,13 +1628,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import S3JobDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `bucketDefinitions`: `List["S3BucketDefinitionForJobTypeDef"]`
-- `scoping`: `"ScopingTypeDef"`
 
+- `bucketDefinitions`:
+  `List`\[[S3BucketDefinitionForJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3bucketdefinitionforjobtypedef)\]
+- `scoping`:
+  [ScopingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#scopingtypedef)
 
 ## S3ObjectTypeDef
 
@@ -1837,10 +1641,8 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import S3ObjectTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucketArn`: `str`
 - `eTag`: `str`
 - `extension`: `str`
@@ -1848,12 +1650,14 @@ Optional fields:
 - `lastModified`: `datetime`
 - `path`: `str`
 - `publicAccess`: `bool`
-- `serverSideEncryption`: `"ServerSideEncryptionTypeDef"`
+- `serverSideEncryption`:
+  [ServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#serversideencryptiontypedef)
 - `size`: `int`
-- `storageClass`: `StorageClass`
-- `tags`: `List["KeyValuePairTypeDef"]`
+- `storageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#storageclass)
+- `tags`:
+  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#keyvaluepairtypedef)\]
 - `versionId`: `str`
-
 
 ## ScopingTypeDef
 
@@ -1861,13 +1665,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ScopingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `excludes`: `"JobScopingBlockTypeDef"`
-- `includes`: `"JobScopingBlockTypeDef"`
 
+- `excludes`:
+  [JobScopingBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobscopingblocktypedef)
+- `includes`:
+  [JobScopingBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobscopingblocktypedef)
 
 ## SecurityHubConfigurationTypeDef
 
@@ -1875,13 +1678,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SecurityHubConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `publishClassificationFindings`: `bool`
 - `publishPolicyFindings`: `bool`
-
-
-
 
 ## SensitiveDataItemTypeDef
 
@@ -1889,14 +1689,13 @@ Required fields:
 from mypy_boto3_macie2.type_defs import SensitiveDataItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `category`: `SensitiveDataItemCategory`
-- `detections`: `List["DefaultDetectionTypeDef"]`
-- `totalCount`: `int`
 
+- `category`:
+  [SensitiveDataItemCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#sensitivedataitemcategory)
+- `detections`:
+  `List`\[[DefaultDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#defaultdetectiontypedef)\]
+- `totalCount`: `int`
 
 ## ServerSideEncryptionTypeDef
 
@@ -1904,13 +1703,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ServerSideEncryptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `encryptionType`: `EncryptionType`
-- `kmsMasterKeyId`: `str`
 
+- `encryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#encryptiontype)
+- `kmsMasterKeyId`: `str`
 
 ## ServiceLimitTypeDef
 
@@ -1918,14 +1715,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import ServiceLimitTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `isServiceLimited`: `bool`
 - `unit`: `Literal['TERABYTES']`
 - `value`: `int`
-
 
 ## SessionContextAttributesTypeDef
 
@@ -1933,13 +1727,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SessionContextAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `creationDate`: `datetime`
 - `mfaAuthenticated`: `bool`
-
 
 ## SessionContextTypeDef
 
@@ -1947,13 +1738,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SessionContextTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributes`: `"SessionContextAttributesTypeDef"`
-- `sessionIssuer`: `"SessionIssuerTypeDef"`
 
+- `attributes`:
+  [SessionContextAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sessioncontextattributestypedef)
+- `sessionIssuer`:
+  [SessionIssuerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sessionissuertypedef)
 
 ## SessionIssuerTypeDef
 
@@ -1961,16 +1751,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SessionIssuerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
 - `type`: `str`
 - `userName`: `str`
-
 
 ## SeverityTypeDef
 
@@ -1978,13 +1765,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SeverityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `description`: `SeverityDescription`
-- `score`: `int`
 
+- `description`:
+  [SeverityDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#severitydescription)
+- `score`: `int`
 
 ## SimpleScopeTermTypeDef
 
@@ -1992,14 +1777,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SimpleScopeTermTypeDef
 ```
 
-
-
-
 Optional fields:
-- `comparator`: `JobComparator`
-- `key`: `ScopeFilterKey`
-- `values`: `List[str]`
 
+- `comparator`:
+  [JobComparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobcomparator)
+- `key`:
+  [ScopeFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#scopefilterkey)
+- `values`: `List`\[`str`\]
 
 ## SortCriteriaTypeDef
 
@@ -2007,13 +1791,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import SortCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeName`: `str`
-- `orderBy`: `OrderBy`
 
+- `attributeName`: `str`
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#orderby)
 
 ## StatisticsTypeDef
 
@@ -2021,13 +1803,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import StatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `approximateNumberOfObjectsToProcess`: `float`
 - `numberOfRuns`: `float`
-
 
 ## TagScopeTermTypeDef
 
@@ -2035,15 +1814,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import TagScopeTermTypeDef
 ```
 
-
-
-
 Optional fields:
-- `comparator`: `JobComparator`
-- `key`: `str`
-- `tagValues`: `List["TagValuePairTypeDef"]`
-- `target`: `Literal['S3_OBJECT']`
 
+- `comparator`:
+  [JobComparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobcomparator)
+- `key`: `str`
+- `tagValues`:
+  `List`\[[TagValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#tagvaluepairtypedef)\]
+- `target`: `Literal['S3_OBJECT']`
 
 ## TagValuePairTypeDef
 
@@ -2051,13 +1829,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import TagValuePairTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `key`: `str`
 - `value`: `str`
-
 
 ## TestCustomDataIdentifierResponseTypeDef
 
@@ -2065,12 +1840,9 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `matchCount`: `int`
 
+- `matchCount`: `int`
 
 ## UnprocessedAccountTypeDef
 
@@ -2078,14 +1850,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UnprocessedAccountTypeDef
 ```
 
-
-
-
 Optional fields:
-- `accountId`: `str`
-- `errorCode`: `ErrorCode`
-- `errorMessage`: `str`
 
+- `accountId`: `str`
+- `errorCode`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#errorcode)
+- `errorMessage`: `str`
 
 ## UpdateFindingsFilterResponseTypeDef
 
@@ -2093,13 +1863,10 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UpdateFindingsFilterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `id`: `str`
-
 
 ## UsageByAccountTypeDef
 
@@ -2107,15 +1874,14 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UsageByAccountTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `currency`: `Literal['USD']`
 - `estimatedCost`: `str`
-- `serviceLimit`: `"ServiceLimitTypeDef"`
-- `type`: `UsageType`
-
+- `serviceLimit`:
+  [ServiceLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#servicelimittypedef)
+- `type`:
+  [UsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#usagetype)
 
 ## UsageRecordTypeDef
 
@@ -2123,14 +1889,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UsageRecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `freeTrialStartDate`: `datetime`
-- `usage`: `List["UsageByAccountTypeDef"]`
-
+- `usage`:
+  `List`\[[UsageByAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagebyaccounttypedef)\]
 
 ## UsageStatisticsFilterTypeDef
 
@@ -2138,14 +1902,13 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UsageStatisticsFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `comparator`: `UsageStatisticsFilterComparator`
-- `key`: `UsageStatisticsFilterKey`
-- `values`: `List[str]`
 
+- `comparator`:
+  [UsageStatisticsFilterComparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#usagestatisticsfiltercomparator)
+- `key`:
+  [UsageStatisticsFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#usagestatisticsfilterkey)
+- `values`: `List`\[`str`\]
 
 ## UsageStatisticsSortByTypeDef
 
@@ -2153,13 +1916,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UsageStatisticsSortByTypeDef
 ```
 
-
-
-
 Optional fields:
-- `key`: `UsageStatisticsSortKey`
-- `orderBy`: `OrderBy`
 
+- `key`:
+  [UsageStatisticsSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#usagestatisticssortkey)
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#orderby)
 
 ## UsageTotalTypeDef
 
@@ -2167,14 +1929,12 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UsageTotalTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `currency`: `Literal['USD']`
 - `estimatedCost`: `str`
-- `type`: `UsageType`
-
+- `type`:
+  [UsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#usagetype)
 
 ## UserIdentityRootTypeDef
 
@@ -2182,14 +1942,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UserIdentityRootTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
-
 
 ## UserIdentityTypeDef
 
@@ -2197,18 +1954,22 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UserIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `assumedRole`: `"AssumedRoleTypeDef"`
-- `awsAccount`: `"AwsAccountTypeDef"`
-- `awsService`: `"AwsServiceTypeDef"`
-- `federatedUser`: `"FederatedUserTypeDef"`
-- `iamUser`: `"IamUserTypeDef"`
-- `root`: `"UserIdentityRootTypeDef"`
-- `type`: `UserIdentityType`
 
+- `assumedRole`:
+  [AssumedRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#assumedroletypedef)
+- `awsAccount`:
+  [AwsAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#awsaccounttypedef)
+- `awsService`:
+  [AwsServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#awsservicetypedef)
+- `federatedUser`:
+  [FederatedUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#federatedusertypedef)
+- `iamUser`:
+  [IamUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#iamusertypedef)
+- `root`:
+  [UserIdentityRootTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#useridentityroottypedef)
+- `type`:
+  [UserIdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#useridentitytype)
 
 ## UserPausedDetailsTypeDef
 
@@ -2216,14 +1977,11 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import UserPausedDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jobExpiresAt`: `datetime`
 - `jobImminentExpirationHealthEventArn`: `str`
 - `jobPausedAt`: `datetime`
-
 
 ## WeeklyScheduleTypeDef
 
@@ -2231,9 +1989,7 @@ Optional fields:
 from mypy_boto3_macie2.type_defs import WeeklyScheduleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dayOfWeek`: `DayOfWeek`
 
+- `dayOfWeek`:
+  [DayOfWeek](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#dayofweek)

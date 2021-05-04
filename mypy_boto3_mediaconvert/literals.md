@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Literals
 
-Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+Auto-generated documentation for
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+type annotations stubs module
+[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 - [Literals for boto3 MediaConvert module](#literals-for-boto3-mediaconvert-module)
   - [AacAudioDescriptionBroadcasterMix](#aacaudiodescriptionbroadcastermix)

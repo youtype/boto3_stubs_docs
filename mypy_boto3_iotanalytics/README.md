@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTAnalytics
 
-Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
-type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+Auto-generated documentation for
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+type annotations stubs module
+[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 ```bash
 pip install mypy-boto3-iotanalytics
@@ -19,7 +21,8 @@ pip install mypy-boto3-iotanalytics
 
 ## IoTAnalyticsClient
 
-Type annotations for  `boto3.client("iotanalytics")` as [IoTAnalyticsClient](./client.md)
+Type annotations for `boto3.client("iotanalytics")` as
+[IoTAnalyticsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
 ```
 
-
 IoTAnalyticsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_put_message](./client.md#batch-put-message)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_pipeline_reprocessing](./client.md#cancel-pipeline-reprocessing)
@@ -71,10 +72,8 @@ IoTAnalyticsClient [exceptions](./client.md#exceptions)
 - [update_datastore](./client.md#update-datastore)
 - [update_pipeline](./client.md#update-pipeline)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -84,14 +83,10 @@ IoTAnalyticsClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iotanalytics").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iotanalytics").get_paginator("...")`.
 
 Can be used directly:
 
@@ -104,11 +99,6 @@ from mypy_boto3_iotanalytics.paginators import ListChannelsPaginator, ...
 - [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
 - [ListDatastoresPaginator](./paginators.md#listdatastorespaginator)
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -135,13 +125,10 @@ from mypy_boto3_iotanalytics.literals import ChannelStatus, ...
 - [LoggingLevel](./literals.md#logginglevel)
 - [ReprocessingStatus](./literals.md#reprocessingstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

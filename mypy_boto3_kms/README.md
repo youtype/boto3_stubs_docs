@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > KMS
 
-Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+Auto-generated documentation for
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+type annotations stubs module
+[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
 ```bash
 pip install mypy-boto3-kms
@@ -19,7 +21,7 @@ pip install mypy-boto3-kms
 
 ## KMSClient
 
-Type annotations for  `boto3.client("kms")` as [KMSClient](./client.md)
+Type annotations for `boto3.client("kms")` as [KMSClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_kms.client import KMSClient
 ```
 
-
 KMSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_key_deletion](./client.md#cancel-key-deletion)
 - [connect_custom_key_store](./client.md#connect-custom-key-store)
@@ -83,10 +83,8 @@ KMSClient [exceptions](./client.md#exceptions)
 - [update_key_description](./client.md#update-key-description)
 - [verify](./client.md#verify)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [ClientError](./client.md#clienterror)
 - [CloudHsmClusterInUseException](./client.md#cloudhsmclusterinuseexception)
@@ -122,14 +120,10 @@ KMSClient [exceptions](./client.md#exceptions)
 - [TagException](./client.md#tagexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("kms").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("kms").get_paginator("...")`.
 
 Can be used directly:
 
@@ -141,11 +135,6 @@ from mypy_boto3_kms.paginators import ListAliasesPaginator, ...
 - [ListGrantsPaginator](./paginators.md#listgrantspaginator)
 - [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
 - [ListKeysPaginator](./paginators.md#listkeyspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -178,13 +167,10 @@ from mypy_boto3_kms.literals import AlgorithmSpec, ...
 - [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
 - [WrappingKeySpec](./literals.md#wrappingkeyspec)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

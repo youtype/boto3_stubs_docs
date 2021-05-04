@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [XRay](./README.md) > Structures
 
-Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
+Auto-generated documentation for
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+type annotations stubs module
+[mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
 - [Typed dictionaries for boto3 XRay module](#typed-dictionaries-for-boto3-xray-module)
   - [AliasTypeDef](#aliastypedef)
@@ -91,14 +93,11 @@ type annotations stubs module [mypy_boto3_xray](https://pypi.org/project/mypy-bo
 from mypy_boto3_xray.type_defs import AliasTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Names`: `List[str]`
-- `Type`: `str`
 
+- `Name`: `str`
+- `Names`: `List`\[`str`\]
+- `Type`: `str`
 
 ## AnnotationValueTypeDef
 
@@ -106,14 +105,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import AnnotationValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NumberValue`: `float`
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
-
 
 ## AnomalousServiceTypeDef
 
@@ -121,12 +117,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import AnomalousServiceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceId`: `"ServiceIdTypeDef"`
 
+- `ServiceId`:
+  [ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)
 
 ## AvailabilityZoneDetailTypeDef
 
@@ -134,12 +128,9 @@ Optional fields:
 from mypy_boto3_xray.type_defs import AvailabilityZoneDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## BackendConnectionErrorsTypeDef
 
@@ -147,10 +138,8 @@ Optional fields:
 from mypy_boto3_xray.type_defs import BackendConnectionErrorsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TimeoutCount`: `int`
 - `ConnectionRefusedCount`: `int`
 - `HTTPCode4XXCount`: `int`
@@ -158,21 +147,18 @@ Optional fields:
 - `UnknownHostCount`: `int`
 - `OtherCount`: `int`
 
-
 ## BatchGetTracesResultTypeDef
 
 ```python
 from mypy_boto3_xray.type_defs import BatchGetTracesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Traces`: `List["TraceTypeDef"]`
-- `UnprocessedTraceIds`: `List[str]`
-- `NextToken`: `str`
 
+- `Traces`:
+  `List`\[[TraceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tracetypedef)\]
+- `UnprocessedTraceIds`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## CreateGroupResultTypeDef
 
@@ -180,12 +166,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import CreateGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Group`: `"GroupTypeDef"`
 
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#grouptypedef)
 
 ## CreateSamplingRuleResultTypeDef
 
@@ -193,12 +177,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import CreateSamplingRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingRuleRecord`: `"SamplingRuleRecordTypeDef"`
 
+- `SamplingRuleRecord`:
+  [SamplingRuleRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingrulerecordtypedef)
 
 ## DeleteSamplingRuleResultTypeDef
 
@@ -206,12 +188,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import DeleteSamplingRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingRuleRecord`: `"SamplingRuleRecordTypeDef"`
 
+- `SamplingRuleRecord`:
+  [SamplingRuleRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingrulerecordtypedef)
 
 ## EdgeStatisticsTypeDef
 
@@ -219,16 +199,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import EdgeStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OkCount`: `int`
-- `ErrorStatistics`: `"ErrorStatisticsTypeDef"`
-- `FaultStatistics`: `"FaultStatisticsTypeDef"`
+- `ErrorStatistics`:
+  [ErrorStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#errorstatisticstypedef)
+- `FaultStatistics`:
+  [FaultStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#faultstatisticstypedef)
 - `TotalCount`: `int`
 - `TotalResponseTime`: `float`
-
 
 ## EdgeTypeDef
 
@@ -236,17 +215,17 @@ Optional fields:
 from mypy_boto3_xray.type_defs import EdgeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReferenceId`: `int`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `SummaryStatistics`: `"EdgeStatisticsTypeDef"`
-- `ResponseTimeHistogram`: `List["HistogramEntryTypeDef"]`
-- `Aliases`: `List["AliasTypeDef"]`
-
+- `SummaryStatistics`:
+  [EdgeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#edgestatisticstypedef)
+- `ResponseTimeHistogram`:
+  `List`\[[HistogramEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#histogramentrytypedef)\]
+- `Aliases`:
+  `List`\[[AliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#aliastypedef)\]
 
 ## EncryptionConfigTypeDef
 
@@ -254,14 +233,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import EncryptionConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyId`: `str`
-- `Status`: `EncryptionStatus`
-- `Type`: `EncryptionType`
 
+- `KeyId`: `str`
+- `Status`:
+  [EncryptionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#encryptionstatus)
+- `Type`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#encryptiontype)
 
 ## ErrorRootCauseEntityTypeDef
 
@@ -269,14 +247,12 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ErrorRootCauseEntityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Exceptions`: `List["RootCauseExceptionTypeDef"]`
-- `Remote`: `bool`
 
+- `Name`: `str`
+- `Exceptions`:
+  `List`\[[RootCauseExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#rootcauseexceptiontypedef)\]
+- `Remote`: `bool`
 
 ## ErrorRootCauseServiceTypeDef
 
@@ -284,17 +260,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ErrorRootCauseServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `Type`: `str`
 - `AccountId`: `str`
-- `EntityPath`: `List["ErrorRootCauseEntityTypeDef"]`
+- `EntityPath`:
+  `List`\[[ErrorRootCauseEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#errorrootcauseentitytypedef)\]
 - `Inferred`: `bool`
-
 
 ## ErrorRootCauseTypeDef
 
@@ -302,13 +276,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ErrorRootCauseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Services`: `List["ErrorRootCauseServiceTypeDef"]`
-- `ClientImpacting`: `bool`
 
+- `Services`:
+  `List`\[[ErrorRootCauseServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#errorrootcauseservicetypedef)\]
+- `ClientImpacting`: `bool`
 
 ## ErrorStatisticsTypeDef
 
@@ -316,14 +288,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ErrorStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ThrottleCount`: `int`
 - `OtherCount`: `int`
 - `TotalCount`: `int`
-
 
 ## FaultRootCauseEntityTypeDef
 
@@ -331,14 +300,12 @@ Optional fields:
 from mypy_boto3_xray.type_defs import FaultRootCauseEntityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Exceptions`: `List["RootCauseExceptionTypeDef"]`
-- `Remote`: `bool`
 
+- `Name`: `str`
+- `Exceptions`:
+  `List`\[[RootCauseExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#rootcauseexceptiontypedef)\]
+- `Remote`: `bool`
 
 ## FaultRootCauseServiceTypeDef
 
@@ -346,17 +313,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import FaultRootCauseServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `Type`: `str`
 - `AccountId`: `str`
-- `EntityPath`: `List["FaultRootCauseEntityTypeDef"]`
+- `EntityPath`:
+  `List`\[[FaultRootCauseEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#faultrootcauseentitytypedef)\]
 - `Inferred`: `bool`
-
 
 ## FaultRootCauseTypeDef
 
@@ -364,13 +329,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import FaultRootCauseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Services`: `List["FaultRootCauseServiceTypeDef"]`
-- `ClientImpacting`: `bool`
 
+- `Services`:
+  `List`\[[FaultRootCauseServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#faultrootcauseservicetypedef)\]
+- `ClientImpacting`: `bool`
 
 ## FaultStatisticsTypeDef
 
@@ -378,13 +341,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import FaultStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OtherCount`: `int`
 - `TotalCount`: `int`
-
 
 ## ForecastStatisticsTypeDef
 
@@ -392,13 +352,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ForecastStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FaultCountHigh`: `int`
 - `FaultCountLow`: `int`
-
 
 ## GetEncryptionConfigResultTypeDef
 
@@ -406,12 +363,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetEncryptionConfigResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
 
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#encryptionconfigtypedef)
 
 ## GetGroupResultTypeDef
 
@@ -419,12 +374,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Group`: `"GroupTypeDef"`
 
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#grouptypedef)
 
 ## GetGroupsResultTypeDef
 
@@ -432,13 +385,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetGroupsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Groups`: `List["GroupSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Groups`:
+  `List`\[[GroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#groupsummarytypedef)\]
+- `NextToken`: `str`
 
 ## GetInsightEventsResultTypeDef
 
@@ -446,13 +397,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetInsightEventsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InsightEvents`: `List["InsightEventTypeDef"]`
-- `NextToken`: `str`
 
+- `InsightEvents`:
+  `List`\[[InsightEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insighteventtypedef)\]
+- `NextToken`: `str`
 
 ## GetInsightImpactGraphResultTypeDef
 
@@ -460,18 +409,16 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetInsightImpactGraphResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InsightId`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ServiceGraphStartTime`: `datetime`
 - `ServiceGraphEndTime`: `datetime`
-- `Services`: `List["InsightImpactGraphServiceTypeDef"]`
+- `Services`:
+  `List`\[[InsightImpactGraphServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightimpactgraphservicetypedef)\]
 - `NextToken`: `str`
-
 
 ## GetInsightResultTypeDef
 
@@ -479,12 +426,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetInsightResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Insight`: `"InsightTypeDef"`
 
+- `Insight`:
+  [InsightTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insighttypedef)
 
 ## GetInsightSummariesResultTypeDef
 
@@ -492,13 +437,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetInsightSummariesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InsightSummaries`: `List["InsightSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `InsightSummaries`:
+  `List`\[[InsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightsummarytypedef)\]
+- `NextToken`: `str`
 
 ## GetSamplingRulesResultTypeDef
 
@@ -506,13 +449,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetSamplingRulesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingRuleRecords`: `List["SamplingRuleRecordTypeDef"]`
-- `NextToken`: `str`
 
+- `SamplingRuleRecords`:
+  `List`\[[SamplingRuleRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingrulerecordtypedef)\]
+- `NextToken`: `str`
 
 ## GetSamplingStatisticSummariesResultTypeDef
 
@@ -520,13 +461,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingStatisticSummaries`: `List["SamplingStatisticSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `SamplingStatisticSummaries`:
+  `List`\[[SamplingStatisticSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingstatisticsummarytypedef)\]
+- `NextToken`: `str`
 
 ## GetSamplingTargetsResultTypeDef
 
@@ -534,14 +473,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetSamplingTargetsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingTargetDocuments`: `List["SamplingTargetDocumentTypeDef"]`
-- `LastRuleModification`: `datetime`
-- `UnprocessedStatistics`: `List["UnprocessedStatisticsTypeDef"]`
 
+- `SamplingTargetDocuments`:
+  `List`\[[SamplingTargetDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingtargetdocumenttypedef)\]
+- `LastRuleModification`: `datetime`
+- `UnprocessedStatistics`:
+  `List`\[[UnprocessedStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#unprocessedstatisticstypedef)\]
 
 ## GetServiceGraphResultTypeDef
 
@@ -549,16 +487,14 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetServiceGraphResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `Services`: `List["ServiceTypeDef"]`
+- `Services`:
+  `List`\[[ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#servicetypedef)\]
 - `ContainsOldGroupVersions`: `bool`
 - `NextToken`: `str`
-
 
 ## GetTimeSeriesServiceStatisticsResultTypeDef
 
@@ -566,14 +502,12 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimeSeriesServiceStatistics`: `List["TimeSeriesServiceStatisticsTypeDef"]`
+
+- `TimeSeriesServiceStatistics`:
+  `List`\[[TimeSeriesServiceStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#timeseriesservicestatisticstypedef)\]
 - `ContainsOldGroupVersions`: `bool`
 - `NextToken`: `str`
-
 
 ## GetTraceGraphResultTypeDef
 
@@ -581,13 +515,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetTraceGraphResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Services`: `List["ServiceTypeDef"]`
-- `NextToken`: `str`
 
+- `Services`:
+  `List`\[[ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#servicetypedef)\]
+- `NextToken`: `str`
 
 ## GetTraceSummariesResultTypeDef
 
@@ -595,15 +527,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GetTraceSummariesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TraceSummaries`: `List["TraceSummaryTypeDef"]`
+
+- `TraceSummaries`:
+  `List`\[[TraceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tracesummarytypedef)\]
 - `ApproximateTime`: `datetime`
 - `TracesProcessedCount`: `int`
 - `NextToken`: `str`
-
 
 ## GroupSummaryTypeDef
 
@@ -611,15 +541,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GroupName`: `str`
 - `GroupARN`: `str`
 - `FilterExpression`: `str`
-- `InsightsConfiguration`: `"InsightsConfigurationTypeDef"`
-
+- `InsightsConfiguration`:
+  [InsightsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightsconfigurationtypedef)
 
 ## GroupTypeDef
 
@@ -627,15 +555,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import GroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GroupName`: `str`
 - `GroupARN`: `str`
 - `FilterExpression`: `str`
-- `InsightsConfiguration`: `"InsightsConfigurationTypeDef"`
-
+- `InsightsConfiguration`:
+  [InsightsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightsconfigurationtypedef)
 
 ## HistogramEntryTypeDef
 
@@ -643,13 +569,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import HistogramEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Value`: `float`
 - `Count`: `int`
-
 
 ## HttpTypeDef
 
@@ -657,16 +580,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import HttpTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HttpURL`: `str`
 - `HttpStatus`: `int`
 - `HttpMethod`: `str`
 - `UserAgent`: `str`
 - `ClientIp`: `str`
-
 
 ## InsightEventTypeDef
 
@@ -674,16 +594,16 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Summary`: `str`
 - `EventTime`: `datetime`
-- `ClientRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `RootCauseServiceRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `TopAnomalousServices`: `List["AnomalousServiceTypeDef"]`
-
+- `ClientRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `RootCauseServiceRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `TopAnomalousServices`:
+  `List`\[[AnomalousServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#anomalousservicetypedef)\]
 
 ## InsightImpactGraphEdgeTypeDef
 
@@ -691,12 +611,9 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightImpactGraphEdgeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReferenceId`: `int`
 
+- `ReferenceId`: `int`
 
 ## InsightImpactGraphServiceTypeDef
 
@@ -704,17 +621,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightImpactGraphServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReferenceId`: `int`
 - `Type`: `str`
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `AccountId`: `str`
-- `Edges`: `List["InsightImpactGraphEdgeTypeDef"]`
-
+- `Edges`:
+  `List`\[[InsightImpactGraphEdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightimpactgraphedgetypedef)\]
 
 ## InsightSummaryTypeDef
 
@@ -722,24 +637,26 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InsightId`: `str`
 - `GroupARN`: `str`
 - `GroupName`: `str`
-- `RootCauseServiceId`: `"ServiceIdTypeDef"`
-- `Categories`: `List[Literal['FAULT']]`
-- `State`: `InsightState`
+- `RootCauseServiceId`:
+  [ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)
+- `Categories`: `List`\[`Literal['FAULT']`\]
+- `State`:
+  [InsightState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#insightstate)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Summary`: `str`
-- `ClientRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `RootCauseServiceRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `TopAnomalousServices`: `List["AnomalousServiceTypeDef"]`
+- `ClientRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `RootCauseServiceRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `TopAnomalousServices`:
+  `List`\[[AnomalousServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#anomalousservicetypedef)\]
 - `LastUpdateTime`: `datetime`
-
 
 ## InsightTypeDef
 
@@ -747,23 +664,25 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InsightId`: `str`
 - `GroupARN`: `str`
 - `GroupName`: `str`
-- `RootCauseServiceId`: `"ServiceIdTypeDef"`
-- `Categories`: `List[Literal['FAULT']]`
-- `State`: `InsightState`
+- `RootCauseServiceId`:
+  [ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)
+- `Categories`: `List`\[`Literal['FAULT']`\]
+- `State`:
+  [InsightState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#insightstate)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Summary`: `str`
-- `ClientRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `RootCauseServiceRequestImpactStatistics`: `"RequestImpactStatisticsTypeDef"`
-- `TopAnomalousServices`: `List["AnomalousServiceTypeDef"]`
-
+- `ClientRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `RootCauseServiceRequestImpactStatistics`:
+  [RequestImpactStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#requestimpactstatisticstypedef)
+- `TopAnomalousServices`:
+  `List`\[[AnomalousServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#anomalousservicetypedef)\]
 
 ## InsightsConfigurationTypeDef
 
@@ -771,13 +690,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InsightsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InsightsEnabled`: `bool`
 - `NotificationsEnabled`: `bool`
-
 
 ## InstanceIdDetailTypeDef
 
@@ -785,12 +701,9 @@ Optional fields:
 from mypy_boto3_xray.type_defs import InstanceIdDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
 
+- `Id`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -798,13 +711,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tagtypedef)\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -812,14 +723,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutEncryptionConfigResultTypeDef
 
@@ -827,12 +735,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import PutEncryptionConfigResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
 
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#encryptionconfigtypedef)
 
 ## PutTraceSegmentsResultTypeDef
 
@@ -840,12 +746,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import PutTraceSegmentsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UnprocessedTraceSegments`: `List["UnprocessedTraceSegmentTypeDef"]`
 
+- `UnprocessedTraceSegments`:
+  `List`\[[UnprocessedTraceSegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#unprocessedtracesegmenttypedef)\]
 
 ## RequestImpactStatisticsTypeDef
 
@@ -853,14 +757,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import RequestImpactStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FaultCount`: `int`
 - `OkCount`: `int`
 - `TotalCount`: `int`
-
 
 ## ResourceARNDetailTypeDef
 
@@ -868,12 +769,9 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ResourceARNDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
 
+- `ARN`: `str`
 
 ## ResponseTimeRootCauseEntityTypeDef
 
@@ -881,14 +779,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseEntityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Coverage`: `float`
 - `Remote`: `bool`
-
 
 ## ResponseTimeRootCauseServiceTypeDef
 
@@ -896,17 +791,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `Type`: `str`
 - `AccountId`: `str`
-- `EntityPath`: `List["ResponseTimeRootCauseEntityTypeDef"]`
+- `EntityPath`:
+  `List`\[[ResponseTimeRootCauseEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#responsetimerootcauseentitytypedef)\]
 - `Inferred`: `bool`
-
 
 ## ResponseTimeRootCauseTypeDef
 
@@ -914,13 +807,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Services`: `List["ResponseTimeRootCauseServiceTypeDef"]`
-- `ClientImpacting`: `bool`
 
+- `Services`:
+  `List`\[[ResponseTimeRootCauseServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#responsetimerootcauseservicetypedef)\]
+- `ClientImpacting`: `bool`
 
 ## RootCauseExceptionTypeDef
 
@@ -928,13 +819,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import RootCauseExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Message`: `str`
-
 
 ## SamplingRuleRecordTypeDef
 
@@ -942,14 +830,12 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingRuleRecordTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingRule`: `"SamplingRuleTypeDef"`
+
+- `SamplingRule`:
+  [SamplingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingruletypedef)
 - `CreatedAt`: `datetime`
 - `ModifiedAt`: `datetime`
-
 
 ## SamplingRuleTypeDef
 
@@ -957,8 +843,8 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingRuleTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 - `Priority`: `int`
 - `FixedRate`: `float`
@@ -970,13 +856,11 @@ Required fields:
 - `URLPath`: `str`
 - `Version`: `int`
 
-
-
 Optional fields:
+
 - `RuleName`: `str`
 - `RuleARN`: `str`
-- `Attributes`: `Dict[str, str]`
-
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## SamplingRuleUpdateTypeDef
 
@@ -984,10 +868,8 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingRuleUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleName`: `str`
 - `RuleARN`: `str`
 - `ResourceARN`: `str`
@@ -999,8 +881,7 @@ Optional fields:
 - `ServiceType`: `str`
 - `HTTPMethod`: `str`
 - `URLPath`: `str`
-- `Attributes`: `Dict[str, str]`
-
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## SamplingStatisticSummaryTypeDef
 
@@ -1008,16 +889,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingStatisticSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleName`: `str`
 - `Timestamp`: `datetime`
 - `RequestCount`: `int`
 - `BorrowCount`: `int`
 - `SampledCount`: `int`
-
 
 ## SamplingStatisticsDocumentTypeDef
 
@@ -1025,19 +903,17 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingStatisticsDocumentTypeDef
 ```
 
-
 Required fields:
+
 - `RuleName`: `str`
 - `ClientID`: `str`
 - `Timestamp`: `datetime`
 - `RequestCount`: `int`
 - `SampledCount`: `int`
 
-
-
 Optional fields:
-- `BorrowCount`: `int`
 
+- `BorrowCount`: `int`
 
 ## SamplingStrategyTypeDef
 
@@ -1045,13 +921,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingStrategyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `SamplingStrategyName`
-- `Value`: `float`
 
+- `Name`:
+  [SamplingStrategyName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#samplingstrategyname)
+- `Value`: `float`
 
 ## SamplingTargetDocumentTypeDef
 
@@ -1059,16 +933,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SamplingTargetDocumentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleName`: `str`
 - `FixedRate`: `float`
 - `ReservoirQuota`: `int`
 - `ReservoirQuotaTTL`: `datetime`
 - `Interval`: `int`
-
 
 ## SegmentTypeDef
 
@@ -1076,13 +947,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import SegmentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Document`: `str`
-
 
 ## ServiceIdTypeDef
 
@@ -1090,15 +958,12 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ServiceIdTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `AccountId`: `str`
 - `Type`: `str`
-
 
 ## ServiceStatisticsTypeDef
 
@@ -1106,16 +971,15 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ServiceStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OkCount`: `int`
-- `ErrorStatistics`: `"ErrorStatisticsTypeDef"`
-- `FaultStatistics`: `"FaultStatisticsTypeDef"`
+- `ErrorStatistics`:
+  [ErrorStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#errorstatisticstypedef)
+- `FaultStatistics`:
+  [FaultStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#faultstatisticstypedef)
 - `TotalCount`: `int`
 - `TotalResponseTime`: `float`
-
 
 ## ServiceTypeDef
 
@@ -1123,24 +987,25 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReferenceId`: `int`
 - `Name`: `str`
-- `Names`: `List[str]`
+- `Names`: `List`\[`str`\]
 - `Root`: `bool`
 - `AccountId`: `str`
 - `Type`: `str`
 - `State`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `Edges`: `List["EdgeTypeDef"]`
-- `SummaryStatistics`: `"ServiceStatisticsTypeDef"`
-- `DurationHistogram`: `List["HistogramEntryTypeDef"]`
-- `ResponseTimeHistogram`: `List["HistogramEntryTypeDef"]`
-
+- `Edges`:
+  `List`\[[EdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#edgetypedef)\]
+- `SummaryStatistics`:
+  [ServiceStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#servicestatisticstypedef)
+- `DurationHistogram`:
+  `List`\[[HistogramEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#histogramentrytypedef)\]
+- `ResponseTimeHistogram`:
+  `List`\[[HistogramEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#histogramentrytypedef)\]
 
 ## TagTypeDef
 
@@ -1148,13 +1013,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TelemetryRecordTypeDef
 
@@ -1162,19 +1024,18 @@ Required fields:
 from mypy_boto3_xray.type_defs import TelemetryRecordTypeDef
 ```
 
-
 Required fields:
+
 - `Timestamp`: `datetime`
 
-
-
 Optional fields:
+
 - `SegmentsReceivedCount`: `int`
 - `SegmentsSentCount`: `int`
 - `SegmentsSpilloverCount`: `int`
 - `SegmentsRejectedCount`: `int`
-- `BackendConnectionErrors`: `"BackendConnectionErrorsTypeDef"`
-
+- `BackendConnectionErrors`:
+  [BackendConnectionErrorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#backendconnectionerrorstypedef)
 
 ## TimeSeriesServiceStatisticsTypeDef
 
@@ -1182,16 +1043,17 @@ Optional fields:
 from mypy_boto3_xray.type_defs import TimeSeriesServiceStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Timestamp`: `datetime`
-- `EdgeSummaryStatistics`: `"EdgeStatisticsTypeDef"`
-- `ServiceSummaryStatistics`: `"ServiceStatisticsTypeDef"`
-- `ServiceForecastStatistics`: `"ForecastStatisticsTypeDef"`
-- `ResponseTimeHistogram`: `List["HistogramEntryTypeDef"]`
 
+- `Timestamp`: `datetime`
+- `EdgeSummaryStatistics`:
+  [EdgeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#edgestatisticstypedef)
+- `ServiceSummaryStatistics`:
+  [ServiceStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#servicestatisticstypedef)
+- `ServiceForecastStatistics`:
+  [ForecastStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#forecaststatisticstypedef)
+- `ResponseTimeHistogram`:
+  `List`\[[HistogramEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#histogramentrytypedef)\]
 
 ## TraceSummaryTypeDef
 
@@ -1199,10 +1061,8 @@ Optional fields:
 from mypy_boto3_xray.type_defs import TraceSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Duration`: `float`
 - `ResponseTime`: `float`
@@ -1210,20 +1070,30 @@ Optional fields:
 - `HasError`: `bool`
 - `HasThrottle`: `bool`
 - `IsPartial`: `bool`
-- `Http`: `"HttpTypeDef"`
-- `Annotations`: `Dict[str, List["ValueWithServiceIdsTypeDef"]]`
-- `Users`: `List["TraceUserTypeDef"]`
-- `ServiceIds`: `List["ServiceIdTypeDef"]`
-- `ResourceARNs`: `List["ResourceARNDetailTypeDef"]`
-- `InstanceIds`: `List["InstanceIdDetailTypeDef"]`
-- `AvailabilityZones`: `List["AvailabilityZoneDetailTypeDef"]`
-- `EntryPoint`: `"ServiceIdTypeDef"`
-- `FaultRootCauses`: `List["FaultRootCauseTypeDef"]`
-- `ErrorRootCauses`: `List["ErrorRootCauseTypeDef"]`
-- `ResponseTimeRootCauses`: `List["ResponseTimeRootCauseTypeDef"]`
+- `Http`:
+  [HttpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#httptypedef)
+- `Annotations`: `Dict`\[`str`,
+  `List`\[[ValueWithServiceIdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#valuewithserviceidstypedef)\]\]
+- `Users`:
+  `List`\[[TraceUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#traceusertypedef)\]
+- `ServiceIds`:
+  `List`\[[ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)\]
+- `ResourceARNs`:
+  `List`\[[ResourceARNDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#resourcearndetailtypedef)\]
+- `InstanceIds`:
+  `List`\[[InstanceIdDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#instanceiddetailtypedef)\]
+- `AvailabilityZones`:
+  `List`\[[AvailabilityZoneDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#availabilityzonedetailtypedef)\]
+- `EntryPoint`:
+  [ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)
+- `FaultRootCauses`:
+  `List`\[[FaultRootCauseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#faultrootcausetypedef)\]
+- `ErrorRootCauses`:
+  `List`\[[ErrorRootCauseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#errorrootcausetypedef)\]
+- `ResponseTimeRootCauses`:
+  `List`\[[ResponseTimeRootCauseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#responsetimerootcausetypedef)\]
 - `Revision`: `int`
 - `MatchedEventTime`: `datetime`
-
 
 ## TraceTypeDef
 
@@ -1231,15 +1101,13 @@ Optional fields:
 from mypy_boto3_xray.type_defs import TraceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Duration`: `float`
 - `LimitExceeded`: `bool`
-- `Segments`: `List["SegmentTypeDef"]`
-
+- `Segments`:
+  `List`\[[SegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#segmenttypedef)\]
 
 ## TraceUserTypeDef
 
@@ -1247,13 +1115,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import TraceUserTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserName`: `str`
-- `ServiceIds`: `List["ServiceIdTypeDef"]`
 
+- `UserName`: `str`
+- `ServiceIds`:
+  `List`\[[ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)\]
 
 ## UnprocessedStatisticsTypeDef
 
@@ -1261,14 +1127,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import UnprocessedStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleName`: `str`
 - `ErrorCode`: `str`
 - `Message`: `str`
-
 
 ## UnprocessedTraceSegmentTypeDef
 
@@ -1276,14 +1139,11 @@ Optional fields:
 from mypy_boto3_xray.type_defs import UnprocessedTraceSegmentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ErrorCode`: `str`
 - `Message`: `str`
-
 
 ## UpdateGroupResultTypeDef
 
@@ -1291,12 +1151,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import UpdateGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Group`: `"GroupTypeDef"`
 
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#grouptypedef)
 
 ## UpdateSamplingRuleResultTypeDef
 
@@ -1304,12 +1162,10 @@ Optional fields:
 from mypy_boto3_xray.type_defs import UpdateSamplingRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SamplingRuleRecord`: `"SamplingRuleRecordTypeDef"`
 
+- `SamplingRuleRecord`:
+  [SamplingRuleRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingrulerecordtypedef)
 
 ## ValueWithServiceIdsTypeDef
 
@@ -1317,10 +1173,9 @@ Optional fields:
 from mypy_boto3_xray.type_defs import ValueWithServiceIdsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnnotationValue`: `"AnnotationValueTypeDef"`
-- `ServiceIds`: `List["ServiceIdTypeDef"]`
 
+- `AnnotationValue`:
+  [AnnotationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#annotationvaluetypedef)
+- `ServiceIds`:
+  `List`\[[ServiceIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#serviceidtypedef)\]

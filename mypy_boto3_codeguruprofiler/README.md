@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeGuruProfiler
 
-Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
-type annotations stubs module [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+Auto-generated documentation for
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+type annotations stubs module
+[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 ```bash
 pip install mypy-boto3-codeguruprofiler
@@ -19,7 +21,8 @@ pip install mypy-boto3-codeguruprofiler
 
 ## CodeGuruProfilerClient
 
-Type annotations for  `boto3.client("codeguruprofiler")` as [CodeGuruProfilerClient](./client.md)
+Type annotations for `boto3.client("codeguruprofiler")` as
+[CodeGuruProfilerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codeguruprofiler.client import CodeGuruProfilerClient
 ```
 
-
 CodeGuruProfilerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_notification_channels](./client.md#add-notification-channels)
 - [batch_get_frame_metric_data](./client.md#batch-get-frame-metric-data)
 - [can_paginate](./client.md#can-paginate)
@@ -60,10 +61,8 @@ CodeGuruProfilerClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_profiling_group](./client.md#update-profiling-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
@@ -72,14 +71,10 @@ CodeGuruProfilerClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codeguruprofiler").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codeguruprofiler").get_paginator("...")`.
 
 Can be used directly:
 
@@ -88,11 +83,6 @@ from mypy_boto3_codeguruprofiler.paginators import ListProfileTimesPaginator, ..
 ```
 
 - [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -115,13 +105,10 @@ from mypy_boto3_codeguruprofiler.literals import ActionGroup, ...
 - [MetricType](./literals.md#metrictype)
 - [OrderBy](./literals.md#orderby)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

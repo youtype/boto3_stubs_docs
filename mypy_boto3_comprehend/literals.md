@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Comprehend](./README.md) > Literals
 
-Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
-type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+Auto-generated documentation for
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+type annotations stubs module
+[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Literals for boto3 Comprehend module](#literals-for-boto3-comprehend-module)
   - [DocumentClassifierDataFormat](#documentclassifierdataformat)

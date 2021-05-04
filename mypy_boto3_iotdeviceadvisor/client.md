@@ -1,9 +1,12 @@
 # IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module
 
-> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > IoTDeviceAdvisorClient
+> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) >
+> IoTDeviceAdvisorClient
 
-Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+Auto-generated documentation for
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+type annotations stubs module
+[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module](#iotdeviceadvisorclient-for-boto3-iotdeviceadvisor-module)
   - [IoTDeviceAdvisorClient](#iotdeviceadvisorclient)
@@ -38,12 +41,13 @@ def get_iotdeviceadvisor_client() -> IoTDeviceAdvisorClient:
     return boto3.client("iotdeviceadvisor")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
+Boto3 documentation:
+[IoTDeviceAdvisor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iotdeviceadvisor.client import Exceptions
@@ -51,7 +55,6 @@ from mypy_boto3_iotdeviceadvisor.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -61,238 +64,239 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iotdeviceadvisor").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_suite_definition
 
-Type annotations for `boto3.client("iotdeviceadvisor").create_suite_definition` method.
+Type annotations for `boto3.client("iotdeviceadvisor").create_suite_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.create_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition)
 
-```python
-def create_suite_definition(
-    self,
-    suiteDefinitionConfiguration: "SuiteDefinitionConfigurationTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateSuiteDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionConfiguration`:
+  [SuiteDefinitionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitionconfigurationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#createsuitedefinitionresponsetypedef).
 
 ### delete_suite_definition
 
-Type annotations for `boto3.client("iotdeviceadvisor").delete_suite_definition` method.
+Type annotations for `boto3.client("iotdeviceadvisor").delete_suite_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.delete_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition)
 
-```python
-def delete_suite_definition(
-    self,
-    suiteDefinitionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iotdeviceadvisor").generate_presigned_url` method.
+Type annotations for `boto3.client("iotdeviceadvisor").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_suite_definition
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_suite_definition` method.
+Type annotations for `boto3.client("iotdeviceadvisor").get_suite_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.get_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition)
 
-```python
-def get_suite_definition(
-    self,
-    suiteDefinitionId: str,
-    suiteDefinitionVersion: str = None
-) -> GetSuiteDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str` *(required)*
+- `suiteDefinitionVersion`: `str`
+
+Returns
+[GetSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuitedefinitionresponsetypedef).
 
 ### get_suite_run
 
 Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.get_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run)
 
-```python
-def get_suite_run(
-    self,
-    suiteDefinitionId: str,
-    suiteRunId: str
-) -> GetSuiteRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str` *(required)*
+- `suiteRunId`: `str` *(required)*
+
+Returns
+[GetSuiteRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuiterunresponsetypedef).
 
 ### get_suite_run_report
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run_report` method.
+Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.get_suite_run_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report)
 
-```python
-def get_suite_run_report(
-    self,
-    suiteDefinitionId: str,
-    suiteRunId: str
-) -> GetSuiteRunReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str` *(required)*
+- `suiteRunId`: `str` *(required)*
+
+Returns
+[GetSuiteRunReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuiterunreportresponsetypedef).
 
 ### list_suite_definitions
 
-Type annotations for `boto3.client("iotdeviceadvisor").list_suite_definitions` method.
+Type annotations for `boto3.client("iotdeviceadvisor").list_suite_definitions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.list_suite_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions)
 
-```python
-def list_suite_definitions(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListSuiteDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSuiteDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listsuitedefinitionsresponsetypedef).
 
 ### list_suite_runs
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_suite_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.list_suite_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs)
 
-```python
-def list_suite_runs(
-    self,
-    suiteDefinitionId: str = None,
-    suiteDefinitionVersion: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListSuiteRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str`
+- `suiteDefinitionVersion`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSuiteRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listsuiterunsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iotdeviceadvisor").list_tags_for_resource` method.
+Type annotations for `boto3.client("iotdeviceadvisor").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_test_cases
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_test_cases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_test_cases]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.list_test_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_test_cases)
 
-```python
-def list_test_cases(
-    self,
-    intendedForQualification: bool = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListTestCasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `intendedForQualification`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTestCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listtestcasesresponsetypedef).
 
 ### start_suite_run
 
 Type annotations for `boto3.client("iotdeviceadvisor").start_suite_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.start_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run)
 
-```python
-def start_suite_run(
-    self,
-    suiteDefinitionId: str,
-    suiteDefinitionVersion: str = None,
-    suiteRunConfiguration: "SuiteRunConfigurationTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> StartSuiteRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `suiteDefinitionId`: `str` *(required)*
+- `suiteDefinitionVersion`: `str`
+- `suiteRunConfiguration`:
+  [SuiteRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suiterunconfigurationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartSuiteRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#startsuiterunresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iotdeviceadvisor").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("iotdeviceadvisor").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_suite_definition
 
-Type annotations for `boto3.client("iotdeviceadvisor").update_suite_definition` method.
+Type annotations for `boto3.client("iotdeviceadvisor").update_suite_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition]
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.update_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition)
 
-```python
-def update_suite_definition(
-    self,
-    suiteDefinitionId: str,
-    suiteDefinitionConfiguration: "SuiteDefinitionConfigurationTypeDef" = None
-) -> UpdateSuiteDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `suiteDefinitionId`: `str` *(required)*
+- `suiteDefinitionConfiguration`:
+  [SuiteDefinitionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitionconfigurationtypedef)
 
-
+Returns
+[UpdateSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#updatesuitedefinitionresponsetypedef).

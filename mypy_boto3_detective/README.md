@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Detective
 
-Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
-type annotations stubs module [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
+Auto-generated documentation for
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+type annotations stubs module
+[mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
 ```bash
 pip install mypy-boto3-detective
@@ -18,7 +20,8 @@ pip install mypy-boto3-detective
 
 ## DetectiveClient
 
-Type annotations for  `boto3.client("detective")` as [DetectiveClient](./client.md)
+Type annotations for `boto3.client("detective")` as
+[DetectiveClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_detective.client import DetectiveClient
 ```
 
-
 DetectiveClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_invitation](./client.md#accept-invitation)
 - [can_paginate](./client.md#can-paginate)
 - [create_graph](./client.md#create-graph)
@@ -50,25 +51,14 @@ DetectiveClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -83,13 +73,10 @@ from mypy_boto3_detective.literals import MemberDisabledReason, ...
 - [MemberDisabledReason](./literals.md#memberdisabledreason)
 - [MemberStatus](./literals.md#memberstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

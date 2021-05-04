@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ServiceQuotas
 
-Auto-generated documentation for [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
-type annotations stubs module [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+Auto-generated documentation for
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+type annotations stubs module
+[mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 ```bash
 pip install mypy-boto3-service-quotas
@@ -19,7 +21,8 @@ pip install mypy-boto3-service-quotas
 
 ## ServiceQuotasClient
 
-Type annotations for  `boto3.client("service-quotas")` as [ServiceQuotasClient](./client.md)
+Type annotations for `boto3.client("service-quotas")` as
+[ServiceQuotasClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 ```
 
-
 ServiceQuotasClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_service_quota_template](./client.md#associate-service-quota-template)
 - [can_paginate](./client.md#can-paginate)
 - [delete_service_quota_increase_request_from_template](./client.md#delete-service-quota-increase-request-from-template)
@@ -56,10 +57,8 @@ ServiceQuotasClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AWSServiceAccessNotEnabledException](./client.md#awsserviceaccessnotenabledexception)
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
@@ -79,14 +78,10 @@ ServiceQuotasClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("service-quotas").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("service-quotas").get_paginator("...")`.
 
 Can be used directly:
 
@@ -100,11 +95,6 @@ from mypy_boto3_service_quotas.paginators import ListAWSDefaultServiceQuotasPagi
 - [ListServiceQuotaIncreaseRequestsInTemplatePaginator](./paginators.md#listservicequotaincreaserequestsintemplatepaginator)
 - [ListServiceQuotasPaginator](./paginators.md#listservicequotaspaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -127,13 +117,10 @@ from mypy_boto3_service_quotas.literals import ErrorCode, ...
 - [RequestStatus](./literals.md#requeststatus)
 - [ServiceQuotaTemplateAssociationStatus](./literals.md#servicequotatemplateassociationstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

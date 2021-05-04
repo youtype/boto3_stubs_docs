@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeStar](./README.md) > Paginators
 
-Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+Auto-generated documentation for
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+type annotations stubs module
+[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Paginators for boto3 CodeStar module](#paginators-for-boto3-codestar-module)
   - [ListProjectsPaginator](#listprojectspaginator)
@@ -24,19 +26,21 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("codestar").get_paginator("list_projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
+Boto3 documentation:
+[CodeStar.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
-```python
-class ListProjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectsResultTypeDef]:
-        pass
-```
+Arguments for `ListProjectsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectsPaginator.paginate` returns
+`Iterator`\[[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listprojectsresulttypedef)\].
+
 ## ListResourcesPaginator
 
-Type annotations for `boto3.client("codestar").get_paginator("list_resources")`.
+Type annotations for
+`boto3.client("codestar").get_paginator("list_resources")`.
 
 Can be used directly:
 
@@ -47,20 +51,22 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("codestar").get_paginator("list_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
+Boto3 documentation:
+[CodeStar.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
-```python
-class ListResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        projectId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResourcesResultTypeDef]:
-        pass
-```
+Arguments for `ListResourcesPaginator.paginate` method:
+
+- `projectId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+
+`ListResourcesPaginator.paginate` returns
+`Iterator`\[[ListResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listresourcesresulttypedef)\].
+
 ## ListTeamMembersPaginator
 
-Type annotations for `boto3.client("codestar").get_paginator("list_team_members")`.
+Type annotations for
+`boto3.client("codestar").get_paginator("list_team_members")`.
 
 Can be used directly:
 
@@ -71,20 +77,22 @@ def get_list_team_members_paginator() -> ListTeamMembersPaginator:
     return boto3.client("codestar").get_paginator("list_team_members")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
+Boto3 documentation:
+[CodeStar.Paginator.ListTeamMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
-```python
-class ListTeamMembersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        projectId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTeamMembersResultTypeDef]:
-        pass
-```
+Arguments for `ListTeamMembersPaginator.paginate` method:
+
+- `projectId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+
+`ListTeamMembersPaginator.paginate` returns
+`Iterator`\[[ListTeamMembersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listteammembersresulttypedef)\].
+
 ## ListUserProfilesPaginator
 
-Type annotations for `boto3.client("codestar").get_paginator("list_user_profiles")`.
+Type annotations for
+`boto3.client("codestar").get_paginator("list_user_profiles")`.
 
 Can be used directly:
 
@@ -95,13 +103,13 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return boto3.client("codestar").get_paginator("list_user_profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
+Boto3 documentation:
+[CodeStar.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
-```python
-class ListUserProfilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUserProfilesResultTypeDef]:
-        pass
-```
+Arguments for `ListUserProfilesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+
+`ListUserProfilesPaginator.paginate` returns
+`Iterator`\[[ListUserProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listuserprofilesresulttypedef)\].

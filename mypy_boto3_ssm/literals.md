@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSM](./README.md) > Literals
 
-Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+Auto-generated documentation for
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+type annotations stubs module
+[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Literals for boto3 SSM module](#literals-for-boto3-ssm-module)
   - [AssociationComplianceSeverity](#associationcomplianceseverity)

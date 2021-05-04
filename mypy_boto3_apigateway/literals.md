@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [APIGateway](./README.md) > Literals
 
-Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
-type annotations stubs module [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+Auto-generated documentation for
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+type annotations stubs module
+[mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [Literals for boto3 APIGateway module](#literals-for-boto3-apigateway-module)
   - [ApiKeySourceType](#apikeysourcetype)

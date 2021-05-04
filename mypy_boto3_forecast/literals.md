@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ForecastService](./README.md) > Literals
 
-Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+Auto-generated documentation for
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+type annotations stubs module
+[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Literals for boto3 ForecastService module](#literals-for-boto3-forecastservice-module)
   - [AttributeType](#attributetype)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SecretsManager
 
-Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+Auto-generated documentation for
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+type annotations stubs module
+[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 ```bash
 pip install mypy-boto3-secretsmanager
@@ -19,7 +21,8 @@ pip install mypy-boto3-secretsmanager
 
 ## SecretsManagerClient
 
-Type annotations for  `boto3.client("secretsmanager")` as [SecretsManagerClient](./client.md)
+Type annotations for `boto3.client("secretsmanager")` as
+[SecretsManagerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 ```
 
-
 SecretsManagerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_rotate_secret](./client.md#cancel-rotate-secret)
 - [create_secret](./client.md#create-secret)
@@ -59,10 +60,8 @@ SecretsManagerClient [exceptions](./client.md#exceptions)
 - [update_secret_version_stage](./client.md#update-secret-version-stage)
 - [validate_resource_policy](./client.md#validate-resource-policy)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DecryptionFailure](./client.md#decryptionfailure)
 - [EncryptionFailure](./client.md#encryptionfailure)
@@ -77,14 +76,10 @@ SecretsManagerClient [exceptions](./client.md#exceptions)
 - [ResourceExistsException](./client.md#resourceexistsexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("secretsmanager").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("secretsmanager").get_paginator("...")`.
 
 Can be used directly:
 
@@ -93,11 +88,6 @@ from mypy_boto3_secretsmanager.paginators import ListSecretsPaginator, ...
 ```
 
 - [ListSecretsPaginator](./paginators.md#listsecretspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -114,13 +104,10 @@ from mypy_boto3_secretsmanager.literals import FilterNameStringType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [StatusType](./literals.md#statustype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

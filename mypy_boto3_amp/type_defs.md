@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PrometheusService](./README.md) > Structures
 
-Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+Auto-generated documentation for
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+type annotations stubs module
+[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Typed dictionaries for boto3 PrometheusService module](#typed-dictionaries-for-boto3-prometheusservice-module)
   - [CreateWorkspaceResponseTypeDef](#createworkspaceresponsetypedef)
@@ -20,14 +22,12 @@ type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-bot
 from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
-- `status`: `"WorkspaceStatusTypeDef"`
+- `status`:
+  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
 - `workspaceId`: `str`
-
-
-
 
 ## DescribeWorkspaceResponseTypeDef
 
@@ -35,12 +35,10 @@ Required fields:
 from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseTypeDef
 ```
 
-
 Required fields:
-- `workspace`: `"WorkspaceDescriptionTypeDef"`
 
-
-
+- `workspace`:
+  [WorkspaceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacedescriptiontypedef)
 
 ## ListWorkspacesResponseTypeDef
 
@@ -48,15 +46,14 @@ Required fields:
 from mypy_boto3_amp.type_defs import ListWorkspacesResponseTypeDef
 ```
 
-
 Required fields:
-- `workspaces`: `List["WorkspaceSummaryTypeDef"]`
 
-
+- `workspaces`:
+  `List`\[[WorkspaceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacesummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -64,14 +61,11 @@ Optional fields:
 from mypy_boto3_amp.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## WorkspaceDescriptionTypeDef
 
@@ -79,19 +73,18 @@ Optional fields:
 from mypy_boto3_amp.type_defs import WorkspaceDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `status`: `"WorkspaceStatusTypeDef"`
+- `status`:
+  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
 - `workspaceId`: `str`
 
-
-
 Optional fields:
+
 - `alias`: `str`
 - `prometheusEndpoint`: `str`
-
 
 ## WorkspaceStatusTypeDef
 
@@ -99,12 +92,10 @@ Optional fields:
 from mypy_boto3_amp.type_defs import WorkspaceStatusTypeDef
 ```
 
-
 Required fields:
-- `statusCode`: `WorkspaceStatusCode`
 
-
-
+- `statusCode`:
+  [WorkspaceStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/literals.html#workspacestatuscode)
 
 ## WorkspaceSummaryTypeDef
 
@@ -112,15 +103,14 @@ Required fields:
 from mypy_boto3_amp.type_defs import WorkspaceSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `status`: `"WorkspaceStatusTypeDef"`
+- `status`:
+  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
 - `workspaceId`: `str`
 
-
-
 Optional fields:
-- `alias`: `str`
 
+- `alias`: `str`

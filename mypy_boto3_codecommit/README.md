@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeCommit
 
-Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
-type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+Auto-generated documentation for
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+type annotations stubs module
+[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 ```bash
 pip install mypy-boto3-codecommit
@@ -19,7 +21,8 @@ pip install mypy-boto3-codecommit
 
 ## CodeCommitClient
 
-Type annotations for  `boto3.client("codecommit")` as [CodeCommitClient](./client.md)
+Type annotations for `boto3.client("codecommit")` as
+[CodeCommitClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codecommit.client import CodeCommitClient
 ```
 
-
 CodeCommitClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_approval_rule_template_with_repository](./client.md#associate-approval-rule-template-with-repository)
 - [batch_associate_approval_rule_template_with_repositories](./client.md#batch-associate-approval-rule-template-with-repositories)
 - [batch_describe_merge_conflicts](./client.md#batch-describe-merge-conflicts)
@@ -114,10 +115,8 @@ CodeCommitClient [exceptions](./client.md#exceptions)
 - [update_repository_description](./client.md#update-repository-description)
 - [update_repository_name](./client.md#update-repository-name)
 
-
-
-
 ### Exceptions
+
 - [ActorDoesNotExistException](./client.md#actordoesnotexistexception)
 - [ApprovalRuleContentRequiredException](./client.md#approvalrulecontentrequiredexception)
 - [ApprovalRuleDoesNotExistException](./client.md#approvalruledoesnotexistexception)
@@ -305,14 +304,10 @@ CodeCommitClient [exceptions](./client.md#exceptions)
 - [TitleRequiredException](./client.md#titlerequiredexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codecommit").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codecommit").get_paginator("...")`.
 
 Can be used directly:
 
@@ -327,11 +322,6 @@ from mypy_boto3_codecommit.paginators import DescribePullRequestEventsPaginator,
 - [ListBranchesPaginator](./paginators.md#listbranchespaginator)
 - [ListPullRequestsPaginator](./paginators.md#listpullrequestspaginator)
 - [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -366,13 +356,10 @@ from mypy_boto3_codecommit.literals import ApprovalState, ...
 - [RepositoryTriggerEventEnum](./literals.md#repositorytriggereventenum)
 - [SortByEnum](./literals.md#sortbyenum)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

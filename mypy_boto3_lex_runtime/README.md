@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LexRuntimeService
 
-Auto-generated documentation for [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
-type annotations stubs module [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
+Auto-generated documentation for
+[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
+type annotations stubs module
+[mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 ```bash
 pip install mypy-boto3-lex-runtime
@@ -18,7 +20,8 @@ pip install mypy-boto3-lex-runtime
 
 ## LexRuntimeServiceClient
 
-Type annotations for  `boto3.client("lex-runtime")` as [LexRuntimeServiceClient](./client.md)
+Type annotations for `boto3.client("lex-runtime")` as
+[LexRuntimeServiceClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 ```
 
-
 LexRuntimeServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_session](./client.md#delete-session)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -40,10 +41,8 @@ LexRuntimeServiceClient [exceptions](./client.md#exceptions)
 - [post_text](./client.md#post-text)
 - [put_session](./client.md#put-session)
 
-
-
-
 ### Exceptions
+
 - [BadGatewayException](./client.md#badgatewayexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -56,15 +55,6 @@ LexRuntimeServiceClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [RequestTimeoutException](./client.md#requesttimeoutexception)
 - [UnsupportedMediaTypeException](./client.md#unsupportedmediatypeexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -83,13 +73,10 @@ from mypy_boto3_lex_runtime.literals import ConfirmationStatus, ...
 - [FulfillmentState](./literals.md#fulfillmentstate)
 - [MessageFormatType](./literals.md#messageformattype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -1,9 +1,12 @@
 # ConnectContactLensClient for boto3 ConnectContactLens module
 
-> [Index](../README.md) > [ConnectContactLens](./README.md) > ConnectContactLensClient
+> [Index](../README.md) > [ConnectContactLens](./README.md) >
+> ConnectContactLensClient
 
-Auto-generated documentation for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
-type annotations stubs module [mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
+Auto-generated documentation for
+[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
+type annotations stubs module
+[mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 - [ConnectContactLensClient for boto3 ConnectContactLens module](#connectcontactlensclient-for-boto3-connectcontactlens-module)
   - [ConnectContactLensClient](#connectcontactlensclient)
@@ -26,12 +29,13 @@ def get_connect-contact-lens_client() -> ConnectContactLensClient:
     return boto3.client("connect-contact-lens")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
+Boto3 documentation:
+[ConnectContactLens.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_connect_contact_lens.client import Exceptions
@@ -39,7 +43,6 @@ from mypy_boto3_connect_contact_lens.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -50,57 +53,54 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("connect-contact-lens").can_paginate` method.
+Type annotations for `boto3.client("connect-contact-lens").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate]
+Boto3 documentation:
+[ConnectContactLens.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("connect-contact-lens").generate_presigned_url` method.
+Type annotations for
+`boto3.client("connect-contact-lens").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url]
+Boto3 documentation:
+[ConnectContactLens.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_realtime_contact_analysis_segments
 
-Type annotations for `boto3.client("connect-contact-lens").list_realtime_contact_analysis_segments` method.
+Type annotations for
+`boto3.client("connect-contact-lens").list_realtime_contact_analysis_segments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments]
+Boto3 documentation:
+[ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
 
-```python
-def list_realtime_contact_analysis_segments(
-    self,
-    InstanceId: str,
-    ContactId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListRealtimeContactAnalysisSegmentsResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `InstanceId`: `str` *(required)*
+- `ContactId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
 
-
+Returns
+[ListRealtimeContactAnalysisSegmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#listrealtimecontactanalysissegmentsresponsetypedef).

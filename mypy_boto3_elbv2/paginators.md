@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Paginators
 
-Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+Auto-generated documentation for
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+type annotations stubs module
+[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 - [Paginators for boto3 ElasticLoadBalancingv2 module](#paginators-for-boto3-elasticloadbalancingv2-module)
   - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
@@ -16,7 +18,8 @@ type annotations stubs module [mypy_boto3_elbv2](https://pypi.org/project/mypy-b
 
 ## DescribeAccountLimitsPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_account_limits")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_account_limits")`.
 
 Can be used directly:
 
@@ -27,19 +30,21 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("elbv2").get_paginator("describe_account_limits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
-```python
-class DescribeAccountLimitsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAccountLimitsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeAccountLimitsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAccountLimitsPaginator.paginate` returns
+`Iterator`\[[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describeaccountlimitsoutputtypedef)\].
+
 ## DescribeListenerCertificatesPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_listener_certificates")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_listener_certificates")`.
 
 Can be used directly:
 
@@ -50,20 +55,22 @@ def get_describe_listener_certificates_paginator() -> DescribeListenerCertificat
     return boto3.client("elbv2").get_paginator("describe_listener_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
-```python
-class DescribeListenerCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ListenerArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeListenerCertificatesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeListenerCertificatesPaginator.paginate` method:
+
+- `ListenerArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeListenerCertificatesPaginator.paginate` returns
+`Iterator`\[[DescribeListenerCertificatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describelistenercertificatesoutputtypedef)\].
+
 ## DescribeListenersPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_listeners")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_listeners")`.
 
 Can be used directly:
 
@@ -74,21 +81,23 @@ def get_describe_listeners_paginator() -> DescribeListenersPaginator:
     return boto3.client("elbv2").get_paginator("describe_listeners")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
-```python
-class DescribeListenersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LoadBalancerArn: str = None,
-        ListenerArns: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeListenersOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeListenersPaginator.paginate` method:
+
+- `LoadBalancerArn`: `str`
+- `ListenerArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeListenersPaginator.paginate` returns
+`Iterator`\[[DescribeListenersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describelistenersoutputtypedef)\].
+
 ## DescribeLoadBalancersPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_load_balancers")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_load_balancers")`.
 
 Can be used directly:
 
@@ -99,18 +108,19 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("elbv2").get_paginator("describe_load_balancers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
-```python
-class DescribeLoadBalancersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LoadBalancerArns: List[str] = None,
-        Names: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLoadBalancersOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeLoadBalancersPaginator.paginate` method:
+
+- `LoadBalancerArns`: `List`\[`str`\]
+- `Names`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLoadBalancersPaginator.paginate` returns
+`Iterator`\[[DescribeLoadBalancersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describeloadbalancersoutputtypedef)\].
+
 ## DescribeRulesPaginator
 
 Type annotations for `boto3.client("elbv2").get_paginator("describe_rules")`.
@@ -124,21 +134,23 @@ def get_describe_rules_paginator() -> DescribeRulesPaginator:
     return boto3.client("elbv2").get_paginator("describe_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
-```python
-class DescribeRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ListenerArn: str = None,
-        RuleArns: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRulesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeRulesPaginator.paginate` method:
+
+- `ListenerArn`: `str`
+- `RuleArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRulesPaginator.paginate` returns
+`Iterator`\[[DescribeRulesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describerulesoutputtypedef)\].
+
 ## DescribeSSLPoliciesPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_ssl_policies")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_ssl_policies")`.
 
 Can be used directly:
 
@@ -149,20 +161,22 @@ def get_describe_ssl_policies_paginator() -> DescribeSSLPoliciesPaginator:
     return boto3.client("elbv2").get_paginator("describe_ssl_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
-```python
-class DescribeSSLPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Names: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSSLPoliciesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
+
+- `Names`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSSLPoliciesPaginator.paginate` returns
+`Iterator`\[[DescribeSSLPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describesslpoliciesoutputtypedef)\].
+
 ## DescribeTargetGroupsPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_target_groups")`.
+Type annotations for
+`boto3.client("elbv2").get_paginator("describe_target_groups")`.
 
 Can be used directly:
 
@@ -173,16 +187,16 @@ def get_describe_target_groups_paginator() -> DescribeTargetGroupsPaginator:
     return boto3.client("elbv2").get_paginator("describe_target_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
+Boto3 documentation:
+[ElasticLoadBalancingv2.Paginator.DescribeTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
-```python
-class DescribeTargetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LoadBalancerArn: str = None,
-        TargetGroupArns: List[str] = None,
-        Names: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTargetGroupsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeTargetGroupsPaginator.paginate` method:
+
+- `LoadBalancerArn`: `str`
+- `TargetGroupArns`: `List`\[`str`\]
+- `Names`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTargetGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeTargetGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describetargetgroupsoutputtypedef)\].

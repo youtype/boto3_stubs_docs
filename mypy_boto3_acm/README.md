@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ACM
 
-Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
-type annotations stubs module [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+Auto-generated documentation for
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+type annotations stubs module
+[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
 ```bash
 pip install mypy-boto3-acm
@@ -20,7 +22,7 @@ pip install mypy-boto3-acm
 
 ## ACMClient
 
-Type annotations for  `boto3.client("acm")` as [ACMClient](./client.md)
+Type annotations for `boto3.client("acm")` as [ACMClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_acm.client import ACMClient
 ```
 
-
 ACMClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags_to_certificate](./client.md#add-tags-to-certificate)
 - [can_paginate](./client.md#can-paginate)
 - [delete_certificate](./client.md#delete-certificate)
@@ -54,10 +54,8 @@ ACMClient [exceptions](./client.md#exceptions)
 - [resend_validation_email](./client.md#resend-validation-email)
 - [update_certificate_options](./client.md#update-certificate-options)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -76,14 +74,10 @@ ACMClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("acm").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("acm").get_paginator("...")`.
 
 Can be used directly:
 
@@ -93,12 +87,10 @@ from mypy_boto3_acm.paginators import ListCertificatesPaginator, ...
 
 - [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("acm").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("acm").get_waiter("...")`.
 
 Can be used directly:
 
@@ -107,9 +99,6 @@ from mypy_boto3_acm.waiters import CertificateValidatedWaiter, ...
 ```
 
 - [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
-
-
-
 
 ## Literals
 
@@ -137,13 +126,10 @@ from mypy_boto3_acm.literals import CertificateStatus, ...
 - [RevocationReason](./literals.md#revocationreason)
 - [ValidationMethod](./literals.md#validationmethod)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

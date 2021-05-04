@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EventBridge](./README.md) > Literals
 
-Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+Auto-generated documentation for
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+type annotations stubs module
+[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
 - [Literals for boto3 EventBridge module](#literals-for-boto3-eventbridge-module)
   - [ApiDestinationHttpMethod](#apidestinationhttpmethod)

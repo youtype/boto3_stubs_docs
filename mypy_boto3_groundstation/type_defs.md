@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GroundStation](./README.md) > Structures
 
-Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+Auto-generated documentation for
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+type annotations stubs module
+[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Typed dictionaries for boto3 GroundStation module](#typed-dictionaries-for-boto3-groundstation-module)
   - [AntennaDemodDecodeDetailsTypeDef](#antennademoddecodedetailstypedef)
@@ -63,12 +65,9 @@ type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/projec
 from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `outputNode`: `str`
 
+- `outputNode`: `str`
 
 ## AntennaDownlinkConfigTypeDef
 
@@ -76,12 +75,10 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import AntennaDownlinkConfigTypeDef
 ```
 
-
 Required fields:
-- `spectrumConfig`: `"SpectrumConfigTypeDef"`
 
-
-
+- `spectrumConfig`:
+  [SpectrumConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#spectrumconfigtypedef)
 
 ## AntennaDownlinkDemodDecodeConfigTypeDef
 
@@ -89,14 +86,14 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import AntennaDownlinkDemodDecodeConfigTypeDef
 ```
 
-
 Required fields:
-- `decodeConfig`: `"DecodeConfigTypeDef"`
-- `demodulationConfig`: `"DemodulationConfigTypeDef"`
-- `spectrumConfig`: `"SpectrumConfigTypeDef"`
 
-
-
+- `decodeConfig`:
+  [DecodeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#decodeconfigtypedef)
+- `demodulationConfig`:
+  [DemodulationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#demodulationconfigtypedef)
+- `spectrumConfig`:
+  [SpectrumConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#spectrumconfigtypedef)
 
 ## AntennaUplinkConfigTypeDef
 
@@ -104,16 +101,16 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import AntennaUplinkConfigTypeDef
 ```
 
-
 Required fields:
-- `spectrumConfig`: `"UplinkSpectrumConfigTypeDef"`
-- `targetEirp`: `"EirpTypeDef"`
 
-
+- `spectrumConfig`:
+  [UplinkSpectrumConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#uplinkspectrumconfigtypedef)
+- `targetEirp`:
+  [EirpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#eirptypedef)
 
 Optional fields:
-- `transmitDisabled`: `bool`
 
+- `transmitDisabled`: `bool`
 
 ## ConfigDetailsTypeDef
 
@@ -121,14 +118,14 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ConfigDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `antennaDemodDecodeDetails`: `"AntennaDemodDecodeDetailsTypeDef"`
-- `endpointDetails`: `"EndpointDetailsTypeDef"`
-- `s3RecordingDetails`: `"S3RecordingDetailsTypeDef"`
 
+- `antennaDemodDecodeDetails`:
+  [AntennaDemodDecodeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#antennademoddecodedetailstypedef)
+- `endpointDetails`:
+  [EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#endpointdetailstypedef)
+- `s3RecordingDetails`:
+  [S3RecordingDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#s3recordingdetailstypedef)
 
 ## ConfigIdResponseTypeDef
 
@@ -136,14 +133,12 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ConfigIdResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `configArn`: `str`
 - `configId`: `str`
-- `configType`: `ConfigCapabilityType`
-
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
 
 ## ConfigListItemTypeDef
 
@@ -151,15 +146,13 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ConfigListItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `configArn`: `str`
 - `configId`: `str`
-- `configType`: `ConfigCapabilityType`
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
 - `name`: `str`
-
 
 ## ConfigTypeDataTypeDef
 
@@ -167,18 +160,22 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ConfigTypeDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `antennaDownlinkConfig`: `"AntennaDownlinkConfigTypeDef"`
-- `antennaDownlinkDemodDecodeConfig`: `"AntennaDownlinkDemodDecodeConfigTypeDef"`
-- `antennaUplinkConfig`: `"AntennaUplinkConfigTypeDef"`
-- `dataflowEndpointConfig`: `"DataflowEndpointConfigTypeDef"`
-- `s3RecordingConfig`: `"S3RecordingConfigTypeDef"`
-- `trackingConfig`: `"TrackingConfigTypeDef"`
-- `uplinkEchoConfig`: `"UplinkEchoConfigTypeDef"`
 
+- `antennaDownlinkConfig`:
+  [AntennaDownlinkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#antennadownlinkconfigtypedef)
+- `antennaDownlinkDemodDecodeConfig`:
+  [AntennaDownlinkDemodDecodeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#antennadownlinkdemoddecodeconfigtypedef)
+- `antennaUplinkConfig`:
+  [AntennaUplinkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#antennauplinkconfigtypedef)
+- `dataflowEndpointConfig`:
+  [DataflowEndpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointconfigtypedef)
+- `s3RecordingConfig`:
+  [S3RecordingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#s3recordingconfigtypedef)
+- `trackingConfig`:
+  [TrackingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#trackingconfigtypedef)
+- `uplinkEchoConfig`:
+  [UplinkEchoConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#uplinkechoconfigtypedef)
 
 ## ContactDataTypeDef
 
@@ -186,24 +183,23 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ContactDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `contactId`: `str`
-- `contactStatus`: `ContactStatus`
+- `contactStatus`:
+  [ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)
 - `endTime`: `datetime`
 - `errorMessage`: `str`
 - `groundStation`: `str`
-- `maximumElevation`: `"ElevationTypeDef"`
+- `maximumElevation`:
+  [ElevationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#elevationtypedef)
 - `missionProfileArn`: `str`
 - `postPassEndTime`: `datetime`
 - `prePassStartTime`: `datetime`
 - `region`: `str`
 - `satelliteArn`: `str`
 - `startTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ContactIdResponseTypeDef
 
@@ -211,12 +207,9 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ContactIdResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `contactId`: `str`
 
+- `contactId`: `str`
 
 ## DataflowDetailTypeDef
 
@@ -224,14 +217,13 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DataflowDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `destination`: `"DestinationTypeDef"`
-- `errorMessage`: `str`
-- `source`: `"SourceTypeDef"`
 
+- `destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#destinationtypedef)
+- `errorMessage`: `str`
+- `source`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#sourcetypedef)
 
 ## DataflowEndpointConfigTypeDef
 
@@ -239,15 +231,13 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DataflowEndpointConfigTypeDef
 ```
 
-
 Required fields:
+
 - `dataflowEndpointName`: `str`
 
-
-
 Optional fields:
-- `dataflowEndpointRegion`: `str`
 
+- `dataflowEndpointRegion`: `str`
 
 ## DataflowEndpointGroupIdResponseTypeDef
 
@@ -255,12 +245,9 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DataflowEndpointGroupIdResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dataflowEndpointGroupId`: `str`
 
+- `dataflowEndpointGroupId`: `str`
 
 ## DataflowEndpointListItemTypeDef
 
@@ -268,13 +255,10 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DataflowEndpointListItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `dataflowEndpointGroupArn`: `str`
 - `dataflowEndpointGroupId`: `str`
-
 
 ## DataflowEndpointTypeDef
 
@@ -282,15 +266,14 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DataflowEndpointTypeDef
 ```
 
-
-
-
 Optional fields:
-- `address`: `"SocketAddressTypeDef"`
+
+- `address`:
+  [SocketAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#socketaddresstypedef)
 - `mtu`: `int`
 - `name`: `str`
-- `status`: `EndpointStatus`
-
+- `status`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#endpointstatus)
 
 ## DecodeConfigTypeDef
 
@@ -298,12 +281,9 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DecodeConfigTypeDef
 ```
 
-
 Required fields:
+
 - `unvalidatedJSON`: `str`
-
-
-
 
 ## DemodulationConfigTypeDef
 
@@ -311,12 +291,9 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import DemodulationConfigTypeDef
 ```
 
-
 Required fields:
+
 - `unvalidatedJSON`: `str`
-
-
-
 
 ## DescribeContactResponseTypeDef
 
@@ -324,25 +301,25 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import DescribeContactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `contactId`: `str`
-- `contactStatus`: `ContactStatus`
-- `dataflowList`: `List["DataflowDetailTypeDef"]`
+- `contactStatus`:
+  [ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)
+- `dataflowList`:
+  `List`\[[DataflowDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowdetailtypedef)\]
 - `endTime`: `datetime`
 - `errorMessage`: `str`
 - `groundStation`: `str`
-- `maximumElevation`: `"ElevationTypeDef"`
+- `maximumElevation`:
+  [ElevationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#elevationtypedef)
 - `missionProfileArn`: `str`
 - `postPassEndTime`: `datetime`
 - `prePassStartTime`: `datetime`
 - `region`: `str`
 - `satelliteArn`: `str`
 - `startTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## DestinationTypeDef
 
@@ -350,15 +327,14 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import DestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configDetails`: `"ConfigDetailsTypeDef"`
-- `configId`: `str`
-- `configType`: `ConfigCapabilityType`
-- `dataflowDestinationRegion`: `str`
 
+- `configDetails`:
+  [ConfigDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configdetailstypedef)
+- `configId`: `str`
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `dataflowDestinationRegion`: `str`
 
 ## EirpTypeDef
 
@@ -366,13 +342,10 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import EirpTypeDef
 ```
 
-
 Required fields:
+
 - `units`: `Literal['dBW']`
 - `value`: `float`
-
-
-
 
 ## ElevationTypeDef
 
@@ -380,13 +353,11 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import ElevationTypeDef
 ```
 
-
 Required fields:
-- `unit`: `AngleUnits`
+
+- `unit`:
+  [AngleUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#angleunits)
 - `value`: `float`
-
-
-
 
 ## EndpointDetailsTypeDef
 
@@ -394,13 +365,12 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import EndpointDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `endpoint`: `"DataflowEndpointTypeDef"`
-- `securityDetails`: `"SecurityDetailsTypeDef"`
 
+- `endpoint`:
+  [DataflowEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointtypedef)
+- `securityDetails`:
+  [SecurityDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#securitydetailstypedef)
 
 ## FrequencyBandwidthTypeDef
 
@@ -408,13 +378,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import FrequencyBandwidthTypeDef
 ```
 
-
 Required fields:
-- `units`: `BandwidthUnits`
+
+- `units`:
+  [BandwidthUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#bandwidthunits)
 - `value`: `float`
-
-
-
 
 ## FrequencyTypeDef
 
@@ -422,13 +390,11 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import FrequencyTypeDef
 ```
 
-
 Required fields:
-- `units`: `FrequencyUnits`
+
+- `units`:
+  [FrequencyUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#frequencyunits)
 - `value`: `float`
-
-
-
 
 ## GetConfigResponseTypeDef
 
@@ -436,19 +402,19 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import GetConfigResponseTypeDef
 ```
 
-
 Required fields:
+
 - `configArn`: `str`
-- `configData`: `"ConfigTypeDataTypeDef"`
+- `configData`:
+  [ConfigTypeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configtypedatatypedef)
 - `configId`: `str`
 - `name`: `str`
 
-
-
 Optional fields:
-- `configType`: `ConfigCapabilityType`
-- `tags`: `Dict[str, str]`
 
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetDataflowEndpointGroupResponseTypeDef
 
@@ -456,15 +422,13 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `dataflowEndpointGroupArn`: `str`
 - `dataflowEndpointGroupId`: `str`
-- `endpointsDetails`: `List["EndpointDetailsTypeDef"]`
-- `tags`: `Dict[str, str]`
-
+- `endpointsDetails`:
+  `List`\[[EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#endpointdetailstypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetMinuteUsageResponseTypeDef
 
@@ -472,16 +436,13 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import GetMinuteUsageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `estimatedMinutesRemaining`: `int`
 - `isReservedMinutesCustomer`: `bool`
 - `totalReservedMinuteAllocation`: `int`
 - `totalScheduledMinutes`: `int`
 - `upcomingMinutesScheduled`: `int`
-
 
 ## GetMissionProfileResponseTypeDef
 
@@ -489,21 +450,18 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import GetMissionProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `contactPostPassDurationSeconds`: `int`
 - `contactPrePassDurationSeconds`: `int`
-- `dataflowEdges`: `List[List[str]]`
+- `dataflowEdges`: `List`\[`List`\[`str`\]\]
 - `minimumViableContactDurationSeconds`: `int`
 - `missionProfileArn`: `str`
 - `missionProfileId`: `str`
 - `name`: `str`
 - `region`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `trackingConfigArn`: `str`
-
 
 ## GetSatelliteResponseTypeDef
 
@@ -511,15 +469,12 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import GetSatelliteResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `groundStations`: `List[str]`
+
+- `groundStations`: `List`\[`str`\]
 - `noradSatelliteID`: `int`
 - `satelliteArn`: `str`
 - `satelliteId`: `str`
-
 
 ## GroundStationDataTypeDef
 
@@ -527,14 +482,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import GroundStationDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `groundStationId`: `str`
 - `groundStationName`: `str`
 - `region`: `str`
-
 
 ## ListConfigsResponseTypeDef
 
@@ -542,13 +494,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configList`: `List["ConfigListItemTypeDef"]`
-- `nextToken`: `str`
 
+- `configList`:
+  `List`\[[ConfigListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configlistitemtypedef)\]
+- `nextToken`: `str`
 
 ## ListContactsResponseTypeDef
 
@@ -556,13 +506,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListContactsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `contactList`: `List["ContactDataTypeDef"]`
-- `nextToken`: `str`
 
+- `contactList`:
+  `List`\[[ContactDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#contactdatatypedef)\]
+- `nextToken`: `str`
 
 ## ListDataflowEndpointGroupsResponseTypeDef
 
@@ -570,13 +518,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListDataflowEndpointGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dataflowEndpointGroupList`: `List["DataflowEndpointListItemTypeDef"]`
-- `nextToken`: `str`
 
+- `dataflowEndpointGroupList`:
+  `List`\[[DataflowEndpointListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointlistitemtypedef)\]
+- `nextToken`: `str`
 
 ## ListGroundStationsResponseTypeDef
 
@@ -584,13 +530,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListGroundStationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `groundStationList`: `List["GroundStationDataTypeDef"]`
-- `nextToken`: `str`
 
+- `groundStationList`:
+  `List`\[[GroundStationDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#groundstationdatatypedef)\]
+- `nextToken`: `str`
 
 ## ListMissionProfilesResponseTypeDef
 
@@ -598,13 +542,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListMissionProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `missionProfileList`: `List["MissionProfileListItemTypeDef"]`
-- `nextToken`: `str`
 
+- `missionProfileList`:
+  `List`\[[MissionProfileListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofilelistitemtypedef)\]
+- `nextToken`: `str`
 
 ## ListSatellitesResponseTypeDef
 
@@ -612,13 +554,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListSatellitesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextToken`: `str`
-- `satellites`: `List["SatelliteListItemTypeDef"]`
 
+- `nextToken`: `str`
+- `satellites`:
+  `List`\[[SatelliteListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#satellitelistitemtypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -626,12 +566,9 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## MissionProfileIdResponseTypeDef
 
@@ -639,12 +576,9 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import MissionProfileIdResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `missionProfileId`: `str`
 
+- `missionProfileId`: `str`
 
 ## MissionProfileListItemTypeDef
 
@@ -652,15 +586,12 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import MissionProfileListItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `missionProfileArn`: `str`
 - `missionProfileId`: `str`
 - `name`: `str`
 - `region`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -668,14 +599,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## S3RecordingConfigTypeDef
 
@@ -683,16 +611,14 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import S3RecordingConfigTypeDef
 ```
 
-
 Required fields:
+
 - `bucketArn`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `prefix`: `str`
 
+- `prefix`: `str`
 
 ## S3RecordingDetailsTypeDef
 
@@ -700,13 +626,10 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import S3RecordingDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucketArn`: `str`
 - `keyTemplate`: `str`
-
 
 ## SatelliteListItemTypeDef
 
@@ -714,15 +637,12 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import SatelliteListItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `groundStations`: `List[str]`
+
+- `groundStations`: `List`\[`str`\]
 - `noradSatelliteID`: `int`
 - `satelliteArn`: `str`
 - `satelliteId`: `str`
-
 
 ## SecurityDetailsTypeDef
 
@@ -730,14 +650,11 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import SecurityDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `roleArn`: `str`
-- `securityGroupIds`: `List[str]`
-- `subnetIds`: `List[str]`
-
-
-
+- `securityGroupIds`: `List`\[`str`\]
+- `subnetIds`: `List`\[`str`\]
 
 ## SocketAddressTypeDef
 
@@ -745,13 +662,10 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import SocketAddressTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `port`: `int`
-
-
-
 
 ## SourceTypeDef
 
@@ -759,15 +673,14 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import SourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configDetails`: `"ConfigDetailsTypeDef"`
-- `configId`: `str`
-- `configType`: `ConfigCapabilityType`
-- `dataflowSourceRegion`: `str`
 
+- `configDetails`:
+  [ConfigDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configdetailstypedef)
+- `configId`: `str`
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `dataflowSourceRegion`: `str`
 
 ## SpectrumConfigTypeDef
 
@@ -775,16 +688,17 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import SpectrumConfigTypeDef
 ```
 
-
 Required fields:
-- `bandwidth`: `"FrequencyBandwidthTypeDef"`
-- `centerFrequency`: `"FrequencyTypeDef"`
 
-
+- `bandwidth`:
+  [FrequencyBandwidthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#frequencybandwidthtypedef)
+- `centerFrequency`:
+  [FrequencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#frequencytypedef)
 
 Optional fields:
-- `polarization`: `Polarization`
 
+- `polarization`:
+  [Polarization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#polarization)
 
 ## TrackingConfigTypeDef
 
@@ -792,12 +706,10 @@ Optional fields:
 from mypy_boto3_groundstation.type_defs import TrackingConfigTypeDef
 ```
 
-
 Required fields:
-- `autotrack`: `Criticality`
 
-
-
+- `autotrack`:
+  [Criticality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#criticality)
 
 ## UplinkEchoConfigTypeDef
 
@@ -805,13 +717,10 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import UplinkEchoConfigTypeDef
 ```
 
-
 Required fields:
+
 - `antennaUplinkConfigArn`: `str`
 - `enabled`: `bool`
-
-
-
 
 ## UplinkSpectrumConfigTypeDef
 
@@ -819,12 +728,12 @@ Required fields:
 from mypy_boto3_groundstation.type_defs import UplinkSpectrumConfigTypeDef
 ```
 
-
 Required fields:
-- `centerFrequency`: `"FrequencyTypeDef"`
 
-
+- `centerFrequency`:
+  [FrequencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#frequencytypedef)
 
 Optional fields:
-- `polarization`: `Polarization`
 
+- `polarization`:
+  [Polarization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#polarization)

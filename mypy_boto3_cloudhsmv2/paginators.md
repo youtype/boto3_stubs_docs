@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudHSMV2](./README.md) > Paginators
 
-Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+Auto-generated documentation for
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+type annotations stubs module
+[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [Paginators for boto3 CloudHSMV2 module](#paginators-for-boto3-cloudhsmv2-module)
   - [DescribeBackupsPaginator](#describebackupspaginator)
@@ -12,7 +14,8 @@ type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/m
 
 ## DescribeBackupsPaginator
 
-Type annotations for `boto3.client("cloudhsmv2").get_paginator("describe_backups")`.
+Type annotations for
+`boto3.client("cloudhsmv2").get_paginator("describe_backups")`.
 
 Can be used directly:
 
@@ -23,21 +26,23 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_backups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
+Boto3 documentation:
+[CloudHSMV2.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
 
-```python
-class DescribeBackupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: Dict[str, List[str]] = None,
-        SortAscending: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBackupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBackupsPaginator.paginate` method:
+
+- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `SortAscending`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBackupsPaginator.paginate` returns
+`Iterator`\[[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describebackupsresponsetypedef)\].
+
 ## DescribeClustersPaginator
 
-Type annotations for `boto3.client("cloudhsmv2").get_paginator("describe_clusters")`.
+Type annotations for
+`boto3.client("cloudhsmv2").get_paginator("describe_clusters")`.
 
 Can be used directly:
 
@@ -48,17 +53,18 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
+Boto3 documentation:
+[CloudHSMV2.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
 
-```python
-class DescribeClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: Dict[str, List[str]] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClustersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeClustersPaginator.paginate` method:
+
+- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClustersPaginator.paginate` returns
+`Iterator`\[[DescribeClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describeclustersresponsetypedef)\].
+
 ## ListTagsPaginator
 
 Type annotations for `boto3.client("cloudhsmv2").get_paginator("list_tags")`.
@@ -72,14 +78,14 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("list_tags")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
+Boto3 documentation:
+[CloudHSMV2.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
 
-```python
-class ListTagsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsPaginator.paginate` method:
+
+- `ResourceId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsPaginator.paginate` returns
+`Iterator`\[[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#listtagsresponsetypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > CodeDeployClient
 
-Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+Auto-generated documentation for
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+type annotations stubs module
+[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [CodeDeployClient for boto3 CodeDeploy module](#codedeployclient-for-boto3-codedeploy-module)
   - [CodeDeployClient](#codedeployclient)
@@ -74,12 +76,13 @@ def get_codedeploy_client() -> CodeDeployClient:
     return boto3.client("codedeploy")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
+Boto3 documentation:
+[CodeDeploy.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codedeploy.client import Exceptions
@@ -87,7 +90,6 @@ from mypy_boto3_codedeploy.client import Exceptions
 def handle_error(exc: Exceptions.AlarmsLimitExceededException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -205,810 +207,871 @@ Exceptions:
 - `Exceptions.TriggerTargetsLimitExceededException`
 - `Exceptions.UnsupportedActionForDeploymentTypeException`
 
-
 ## Methods
-
 
 ### add_tags_to_on_premises_instances
 
-Type annotations for `boto3.client("codedeploy").add_tags_to_on_premises_instances` method.
+Type annotations for
+`boto3.client("codedeploy").add_tags_to_on_premises_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances]
+Boto3 documentation:
+[CodeDeploy.Client.add_tags_to_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
 
-```python
-def add_tags_to_on_premises_instances(
-    self,
-    tags: List["TagTypeDef"],
-    instanceNames: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
+  *(required)*
+- `instanceNames`: `List`\[`str`\] *(required)*
 
 ### batch_get_application_revisions
 
-Type annotations for `boto3.client("codedeploy").batch_get_application_revisions` method.
+Type annotations for
+`boto3.client("codedeploy").batch_get_application_revisions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
 
-```python
-def batch_get_application_revisions(
-    self,
-    applicationName: str,
-    revisions: List["RevisionLocationTypeDef"]
-) -> BatchGetApplicationRevisionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `revisions`:
+  `List`\[[RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)\]
+  *(required)*
+
+Returns
+[BatchGetApplicationRevisionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetapplicationrevisionsoutputtypedef).
 
 ### batch_get_applications
 
-Type annotations for `boto3.client("codedeploy").batch_get_applications` method.
+Type annotations for `boto3.client("codedeploy").batch_get_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
 
-```python
-def batch_get_applications(
-    self,
-    applicationNames: List[str]
-) -> BatchGetApplicationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetApplicationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetapplicationsoutputtypedef).
 
 ### batch_get_deployment_groups
 
-Type annotations for `boto3.client("codedeploy").batch_get_deployment_groups` method.
+Type annotations for `boto3.client("codedeploy").batch_get_deployment_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
 
-```python
-def batch_get_deployment_groups(
-    self,
-    applicationName: str,
-    deploymentGroupNames: List[str]
-) -> BatchGetDeploymentGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `deploymentGroupNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetDeploymentGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetdeploymentgroupsoutputtypedef).
 
 ### batch_get_deployment_instances
 
-Type annotations for `boto3.client("codedeploy").batch_get_deployment_instances` method.
+Type annotations for
+`boto3.client("codedeploy").batch_get_deployment_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
 
-```python
-def batch_get_deployment_instances(
-    self,
-    deploymentId: str,
-    instanceIds: List[str]
-) -> BatchGetDeploymentInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str` *(required)*
+- `instanceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetDeploymentInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetdeploymentinstancesoutputtypedef).
 
 ### batch_get_deployment_targets
 
-Type annotations for `boto3.client("codedeploy").batch_get_deployment_targets` method.
+Type annotations for `boto3.client("codedeploy").batch_get_deployment_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
 
-```python
-def batch_get_deployment_targets(
-    self,
-    deploymentId: str = None,
-    targetIds: List[str] = None
-) -> BatchGetDeploymentTargetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
+- `targetIds`: `List`\[`str`\]
+
+Returns
+[BatchGetDeploymentTargetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetdeploymenttargetsoutputtypedef).
 
 ### batch_get_deployments
 
 Type annotations for `boto3.client("codedeploy").batch_get_deployments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
 
-```python
-def batch_get_deployments(
-    self,
-    deploymentIds: List[str]
-) -> BatchGetDeploymentsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetDeploymentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetdeploymentsoutputtypedef).
 
 ### batch_get_on_premises_instances
 
-Type annotations for `boto3.client("codedeploy").batch_get_on_premises_instances` method.
+Type annotations for
+`boto3.client("codedeploy").batch_get_on_premises_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances]
+Boto3 documentation:
+[CodeDeploy.Client.batch_get_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
 
-```python
-def batch_get_on_premises_instances(
-    self,
-    instanceNames: List[str]
-) -> BatchGetOnPremisesInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetOnPremisesInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#batchgetonpremisesinstancesoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codedeploy").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate]
+Boto3 documentation:
+[CodeDeploy.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### continue_deployment
 
 Type annotations for `boto3.client("codedeploy").continue_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment]
+Boto3 documentation:
+[CodeDeploy.Client.continue_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
 
-```python
-def continue_deployment(
-    self,
-    deploymentId: str = None,
-    deploymentWaitType: DeploymentWaitType = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
+- `deploymentWaitType`:
+  [DeploymentWaitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentwaittype)
 
 ### create_application
 
 Type annotations for `boto3.client("codedeploy").create_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application]
+Boto3 documentation:
+[CodeDeploy.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
 
-```python
-def create_application(
-    self,
-    applicationName: str,
-    computePlatform: ComputePlatform = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateApplicationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateApplicationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#createapplicationoutputtypedef).
 
 ### create_deployment
 
 Type annotations for `boto3.client("codedeploy").create_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment]
+Boto3 documentation:
+[CodeDeploy.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
 
-```python
-def create_deployment(
-    self,
-    applicationName: str,
-    deploymentGroupName: str = None,
-    revision: "RevisionLocationTypeDef" = None,
-    deploymentConfigName: str = None,
-    description: str = None,
-    ignoreApplicationStopFailures: bool = None,
-    targetInstances: "TargetInstancesTypeDef" = None,
-    autoRollbackConfiguration: "AutoRollbackConfigurationTypeDef" = None,
-    updateOutdatedInstancesOnly: bool = None,
-    fileExistsBehavior: FileExistsBehavior = None
-) -> CreateDeploymentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `deploymentGroupName`: `str`
+- `revision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `deploymentConfigName`: `str`
+- `description`: `str`
+- `ignoreApplicationStopFailures`: `bool`
+- `targetInstances`:
+  [TargetInstancesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetinstancestypedef)
+- `autoRollbackConfiguration`:
+  [AutoRollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autorollbackconfigurationtypedef)
+- `updateOutdatedInstancesOnly`: `bool`
+- `fileExistsBehavior`:
+  [FileExistsBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#fileexistsbehavior)
+
+Returns
+[CreateDeploymentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#createdeploymentoutputtypedef).
 
 ### create_deployment_config
 
-Type annotations for `boto3.client("codedeploy").create_deployment_config` method.
+Type annotations for `boto3.client("codedeploy").create_deployment_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config]
+Boto3 documentation:
+[CodeDeploy.Client.create_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
 
-```python
-def create_deployment_config(
-    self,
-    deploymentConfigName: str,
-    minimumHealthyHosts: "MinimumHealthyHostsTypeDef" = None,
-    trafficRoutingConfig: "TrafficRoutingConfigTypeDef" = None,
-    computePlatform: ComputePlatform = None
-) -> CreateDeploymentConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentConfigName`: `str` *(required)*
+- `minimumHealthyHosts`:
+  [MinimumHealthyHostsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#minimumhealthyhoststypedef)
+- `trafficRoutingConfig`:
+  [TrafficRoutingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#trafficroutingconfigtypedef)
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
+
+Returns
+[CreateDeploymentConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#createdeploymentconfigoutputtypedef).
 
 ### create_deployment_group
 
-Type annotations for `boto3.client("codedeploy").create_deployment_group` method.
+Type annotations for `boto3.client("codedeploy").create_deployment_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group]
+Boto3 documentation:
+[CodeDeploy.Client.create_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
 
-```python
-def create_deployment_group(
-    self,
-    applicationName: str,
-    deploymentGroupName: str,
-    serviceRoleArn: str,
-    deploymentConfigName: str = None,
-    ec2TagFilters: List["EC2TagFilterTypeDef"] = None,
-    onPremisesInstanceTagFilters: List["TagFilterTypeDef"] = None,
-    autoScalingGroups: List[str] = None,
-    triggerConfigurations: List["TriggerConfigTypeDef"] = None,
-    alarmConfiguration: "AlarmConfigurationTypeDef" = None,
-    autoRollbackConfiguration: "AutoRollbackConfigurationTypeDef" = None,
-    outdatedInstancesStrategy: OutdatedInstancesStrategy = None,
-    deploymentStyle: "DeploymentStyleTypeDef" = None,
-    blueGreenDeploymentConfiguration: "BlueGreenDeploymentConfigurationTypeDef" = None,
-    loadBalancerInfo: "LoadBalancerInfoTypeDef" = None,
-    ec2TagSet: "EC2TagSetTypeDef" = None,
-    ecsServices: List["ECSServiceTypeDef"] = None,
-    onPremisesTagSet: "OnPremisesTagSetTypeDef" = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateDeploymentGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `deploymentGroupName`: `str` *(required)*
+- `serviceRoleArn`: `str` *(required)*
+- `deploymentConfigName`: `str`
+- `ec2TagFilters`:
+  `List`\[[EC2TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagfiltertypedef)\]
+- `onPremisesInstanceTagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]
+- `autoScalingGroups`: `List`\[`str`\]
+- `triggerConfigurations`:
+  `List`\[[TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#triggerconfigtypedef)\]
+- `alarmConfiguration`:
+  [AlarmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#alarmconfigurationtypedef)
+- `autoRollbackConfiguration`:
+  [AutoRollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autorollbackconfigurationtypedef)
+- `outdatedInstancesStrategy`:
+  [OutdatedInstancesStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#outdatedinstancesstrategy)
+- `deploymentStyle`:
+  [DeploymentStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentstyletypedef)
+- `blueGreenDeploymentConfiguration`:
+  [BlueGreenDeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#bluegreendeploymentconfigurationtypedef)
+- `loadBalancerInfo`:
+  [LoadBalancerInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#loadbalancerinfotypedef)
+- `ec2TagSet`:
+  [EC2TagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagsettypedef)
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ecsservicetypedef)\]
+- `onPremisesTagSet`:
+  [OnPremisesTagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#onpremisestagsettypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDeploymentGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#createdeploymentgroupoutputtypedef).
 
 ### delete_application
 
 Type annotations for `boto3.client("codedeploy").delete_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application]
+Boto3 documentation:
+[CodeDeploy.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    applicationName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
 
 ### delete_deployment_config
 
-Type annotations for `boto3.client("codedeploy").delete_deployment_config` method.
+Type annotations for `boto3.client("codedeploy").delete_deployment_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config]
+Boto3 documentation:
+[CodeDeploy.Client.delete_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
 
-```python
-def delete_deployment_config(
-    self,
-    deploymentConfigName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `deploymentConfigName`: `str` *(required)*
 
 ### delete_deployment_group
 
-Type annotations for `boto3.client("codedeploy").delete_deployment_group` method.
+Type annotations for `boto3.client("codedeploy").delete_deployment_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group]
+Boto3 documentation:
+[CodeDeploy.Client.delete_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
 
-```python
-def delete_deployment_group(
-    self,
-    applicationName: str,
-    deploymentGroupName: str
-) -> DeleteDeploymentGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `deploymentGroupName`: `str` *(required)*
+
+Returns
+[DeleteDeploymentGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deletedeploymentgroupoutputtypedef).
 
 ### delete_git_hub_account_token
 
-Type annotations for `boto3.client("codedeploy").delete_git_hub_account_token` method.
+Type annotations for `boto3.client("codedeploy").delete_git_hub_account_token`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token]
+Boto3 documentation:
+[CodeDeploy.Client.delete_git_hub_account_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
 
-```python
-def delete_git_hub_account_token(
-    self,
-    tokenName: str = None
-) -> DeleteGitHubAccountTokenOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `tokenName`: `str`
+
+Returns
+[DeleteGitHubAccountTokenOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deletegithubaccounttokenoutputtypedef).
 
 ### delete_resources_by_external_id
 
-Type annotations for `boto3.client("codedeploy").delete_resources_by_external_id` method.
+Type annotations for
+`boto3.client("codedeploy").delete_resources_by_external_id` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id]
+Boto3 documentation:
+[CodeDeploy.Client.delete_resources_by_external_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
 
-```python
-def delete_resources_by_external_id(
-    self,
-    externalId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `externalId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_on_premises_instance
 
-Type annotations for `boto3.client("codedeploy").deregister_on_premises_instance` method.
+Type annotations for
+`boto3.client("codedeploy").deregister_on_premises_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance]
+Boto3 documentation:
+[CodeDeploy.Client.deregister_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
 
-```python
-def deregister_on_premises_instance(
-    self,
-    instanceName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codedeploy").generate_presigned_url` method.
+Type annotations for `boto3.client("codedeploy").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeDeploy.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_application
 
 Type annotations for `boto3.client("codedeploy").get_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application]
+Boto3 documentation:
+[CodeDeploy.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
 
-```python
-def get_application(
-    self,
-    applicationName: str
-) -> GetApplicationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+
+Returns
+[GetApplicationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getapplicationoutputtypedef).
 
 ### get_application_revision
 
-Type annotations for `boto3.client("codedeploy").get_application_revision` method.
+Type annotations for `boto3.client("codedeploy").get_application_revision`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision]
+Boto3 documentation:
+[CodeDeploy.Client.get_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
 
-```python
-def get_application_revision(
-    self,
-    applicationName: str,
-    revision: "RevisionLocationTypeDef"
-) -> GetApplicationRevisionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `revision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+  *(required)*
+
+Returns
+[GetApplicationRevisionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getapplicationrevisionoutputtypedef).
 
 ### get_deployment
 
 Type annotations for `boto3.client("codedeploy").get_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment]
+Boto3 documentation:
+[CodeDeploy.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
 
-```python
-def get_deployment(
-    self,
-    deploymentId: str
-) -> GetDeploymentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str` *(required)*
+
+Returns
+[GetDeploymentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getdeploymentoutputtypedef).
 
 ### get_deployment_config
 
 Type annotations for `boto3.client("codedeploy").get_deployment_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config]
+Boto3 documentation:
+[CodeDeploy.Client.get_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
 
-```python
-def get_deployment_config(
-    self,
-    deploymentConfigName: str
-) -> GetDeploymentConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentConfigName`: `str` *(required)*
+
+Returns
+[GetDeploymentConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getdeploymentconfigoutputtypedef).
 
 ### get_deployment_group
 
 Type annotations for `boto3.client("codedeploy").get_deployment_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group]
+Boto3 documentation:
+[CodeDeploy.Client.get_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
 
-```python
-def get_deployment_group(
-    self,
-    applicationName: str,
-    deploymentGroupName: str
-) -> GetDeploymentGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `deploymentGroupName`: `str` *(required)*
+
+Returns
+[GetDeploymentGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getdeploymentgroupoutputtypedef).
 
 ### get_deployment_instance
 
-Type annotations for `boto3.client("codedeploy").get_deployment_instance` method.
+Type annotations for `boto3.client("codedeploy").get_deployment_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance]
+Boto3 documentation:
+[CodeDeploy.Client.get_deployment_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
 
-```python
-def get_deployment_instance(
-    self,
-    deploymentId: str,
-    instanceId: str
-) -> GetDeploymentInstanceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str` *(required)*
+- `instanceId`: `str` *(required)*
+
+Returns
+[GetDeploymentInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getdeploymentinstanceoutputtypedef).
 
 ### get_deployment_target
 
 Type annotations for `boto3.client("codedeploy").get_deployment_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target]
+Boto3 documentation:
+[CodeDeploy.Client.get_deployment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
 
-```python
-def get_deployment_target(
-    self,
-    deploymentId: str = None,
-    targetId: str = None
-) -> GetDeploymentTargetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
+- `targetId`: `str`
+
+Returns
+[GetDeploymentTargetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getdeploymenttargetoutputtypedef).
 
 ### get_on_premises_instance
 
-Type annotations for `boto3.client("codedeploy").get_on_premises_instance` method.
+Type annotations for `boto3.client("codedeploy").get_on_premises_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance]
+Boto3 documentation:
+[CodeDeploy.Client.get_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
 
-```python
-def get_on_premises_instance(
-    self,
-    instanceName: str
-) -> GetOnPremisesInstanceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[GetOnPremisesInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#getonpremisesinstanceoutputtypedef).
 
 ### list_application_revisions
 
-Type annotations for `boto3.client("codedeploy").list_application_revisions` method.
+Type annotations for `boto3.client("codedeploy").list_application_revisions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions]
+Boto3 documentation:
+[CodeDeploy.Client.list_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
 
-```python
-def list_application_revisions(
-    self,
-    applicationName: str,
-    sortBy: ApplicationRevisionSortBy = None,
-    sortOrder: SortOrder = None,
-    s3Bucket: str = None,
-    s3KeyPrefix: str = None,
-    deployed: ListStateFilterAction = None,
-    nextToken: str = None
-) -> ListApplicationRevisionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `sortBy`:
+  [ApplicationRevisionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#applicationrevisionsortby)
+- `sortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#sortorder)
+- `s3Bucket`: `str`
+- `s3KeyPrefix`: `str`
+- `deployed`:
+  [ListStateFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#liststatefilteraction)
+- `nextToken`: `str`
+
+Returns
+[ListApplicationRevisionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listapplicationrevisionsoutputtypedef).
 
 ### list_applications
 
 Type annotations for `boto3.client("codedeploy").list_applications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications]
+Boto3 documentation:
+[CodeDeploy.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
 
-```python
-def list_applications(
-    self,
-    nextToken: str = None
-) -> ListApplicationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListApplicationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listapplicationsoutputtypedef).
 
 ### list_deployment_configs
 
-Type annotations for `boto3.client("codedeploy").list_deployment_configs` method.
+Type annotations for `boto3.client("codedeploy").list_deployment_configs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs]
+Boto3 documentation:
+[CodeDeploy.Client.list_deployment_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
 
-```python
-def list_deployment_configs(
-    self,
-    nextToken: str = None
-) -> ListDeploymentConfigsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListDeploymentConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentconfigsoutputtypedef).
 
 ### list_deployment_groups
 
-Type annotations for `boto3.client("codedeploy").list_deployment_groups` method.
+Type annotations for `boto3.client("codedeploy").list_deployment_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups]
+Boto3 documentation:
+[CodeDeploy.Client.list_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
 
-```python
-def list_deployment_groups(
-    self,
-    applicationName: str,
-    nextToken: str = None
-) -> ListDeploymentGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListDeploymentGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentgroupsoutputtypedef).
 
 ### list_deployment_instances
 
-Type annotations for `boto3.client("codedeploy").list_deployment_instances` method.
+Type annotations for `boto3.client("codedeploy").list_deployment_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances]
+Boto3 documentation:
+[CodeDeploy.Client.list_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
 
-```python
-def list_deployment_instances(
-    self,
-    deploymentId: str,
-    nextToken: str = None,
-    instanceStatusFilter: List[InstanceStatus] = None,
-    instanceTypeFilter: List[InstanceType] = None
-) -> ListDeploymentInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str` *(required)*
+- `nextToken`: `str`
+- `instanceStatusFilter`:
+  `List`\[[InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancestatus)\]
+- `instanceTypeFilter`:
+  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancetype)\]
+
+Returns
+[ListDeploymentInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentinstancesoutputtypedef).
 
 ### list_deployment_targets
 
-Type annotations for `boto3.client("codedeploy").list_deployment_targets` method.
+Type annotations for `boto3.client("codedeploy").list_deployment_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets]
+Boto3 documentation:
+[CodeDeploy.Client.list_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
 
-```python
-def list_deployment_targets(
-    self,
-    deploymentId: str = None,
-    nextToken: str = None,
-    targetFilters: Dict[TargetFilterName, List[str]] = None
-) -> ListDeploymentTargetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
+- `nextToken`: `str`
+- `targetFilters`:
+  `Dict`\[[TargetFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetfiltername),
+  `List`\[`str`\]\]
+
+Returns
+[ListDeploymentTargetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymenttargetsoutputtypedef).
 
 ### list_deployments
 
 Type annotations for `boto3.client("codedeploy").list_deployments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments]
+Boto3 documentation:
+[CodeDeploy.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
 
-```python
-def list_deployments(
-    self,
-    applicationName: str = None,
-    deploymentGroupName: str = None,
-    externalId: str = None,
-    includeOnlyStatuses: List[DeploymentStatus] = None,
-    createTimeRange: TimeRangeTypeDef = None,
-    nextToken: str = None
-) -> ListDeploymentsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str`
+- `deploymentGroupName`: `str`
+- `externalId`: `str`
+- `includeOnlyStatuses`:
+  `List`\[[DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentstatus)\]
+- `createTimeRange`:
+  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#timerangetypedef)
+- `nextToken`: `str`
+
+Returns
+[ListDeploymentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentsoutputtypedef).
 
 ### list_git_hub_account_token_names
 
-Type annotations for `boto3.client("codedeploy").list_git_hub_account_token_names` method.
+Type annotations for
+`boto3.client("codedeploy").list_git_hub_account_token_names` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names]
+Boto3 documentation:
+[CodeDeploy.Client.list_git_hub_account_token_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
 
-```python
-def list_git_hub_account_token_names(
-    self,
-    nextToken: str = None
-) -> ListGitHubAccountTokenNamesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListGitHubAccountTokenNamesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listgithubaccounttokennamesoutputtypedef).
 
 ### list_on_premises_instances
 
-Type annotations for `boto3.client("codedeploy").list_on_premises_instances` method.
+Type annotations for `boto3.client("codedeploy").list_on_premises_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances]
+Boto3 documentation:
+[CodeDeploy.Client.list_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
 
-```python
-def list_on_premises_instances(
-    self,
-    registrationStatus: RegistrationStatus = None,
-    tagFilters: List["TagFilterTypeDef"] = None,
-    nextToken: str = None
-) -> ListOnPremisesInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `registrationStatus`:
+  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#registrationstatus)
+- `tagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]
+- `nextToken`: `str`
+
+Returns
+[ListOnPremisesInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listonpremisesinstancesoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codedeploy").list_tags_for_resource` method.
+Type annotations for `boto3.client("codedeploy").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodeDeploy.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    NextToken: str = None
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### put_lifecycle_event_hook_execution_status
 
-Type annotations for `boto3.client("codedeploy").put_lifecycle_event_hook_execution_status` method.
+Type annotations for
+`boto3.client("codedeploy").put_lifecycle_event_hook_execution_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status]
+Boto3 documentation:
+[CodeDeploy.Client.put_lifecycle_event_hook_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
 
-```python
-def put_lifecycle_event_hook_execution_status(
-    self,
-    deploymentId: str = None,
-    lifecycleEventHookExecutionId: str = None,
-    status: LifecycleEventStatus = None
-) -> PutLifecycleEventHookExecutionStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
+- `lifecycleEventHookExecutionId`: `str`
+- `status`:
+  [LifecycleEventStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#lifecycleeventstatus)
+
+Returns
+[PutLifecycleEventHookExecutionStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#putlifecycleeventhookexecutionstatusoutputtypedef).
 
 ### register_application_revision
 
-Type annotations for `boto3.client("codedeploy").register_application_revision` method.
+Type annotations for `boto3.client("codedeploy").register_application_revision`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision]
+Boto3 documentation:
+[CodeDeploy.Client.register_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
 
-```python
-def register_application_revision(
-    self,
-    applicationName: str,
-    revision: "RevisionLocationTypeDef",
-    description: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str` *(required)*
+- `revision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+  *(required)*
+- `description`: `str`
 
 ### register_on_premises_instance
 
-Type annotations for `boto3.client("codedeploy").register_on_premises_instance` method.
+Type annotations for `boto3.client("codedeploy").register_on_premises_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance]
+Boto3 documentation:
+[CodeDeploy.Client.register_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
 
-```python
-def register_on_premises_instance(
-    self,
-    instanceName: str,
-    iamSessionArn: str = None,
-    iamUserArn: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+- `iamSessionArn`: `str`
+- `iamUserArn`: `str`
 
 ### remove_tags_from_on_premises_instances
 
-Type annotations for `boto3.client("codedeploy").remove_tags_from_on_premises_instances` method.
+Type annotations for
+`boto3.client("codedeploy").remove_tags_from_on_premises_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances]
+Boto3 documentation:
+[CodeDeploy.Client.remove_tags_from_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
 
-```python
-def remove_tags_from_on_premises_instances(
-    self,
-    tags: List["TagTypeDef"],
-    instanceNames: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
+  *(required)*
+- `instanceNames`: `List`\[`str`\] *(required)*
 
 ### skip_wait_time_for_instance_termination
 
-Type annotations for `boto3.client("codedeploy").skip_wait_time_for_instance_termination` method.
+Type annotations for
+`boto3.client("codedeploy").skip_wait_time_for_instance_termination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination]
+Boto3 documentation:
+[CodeDeploy.Client.skip_wait_time_for_instance_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
 
-```python
-def skip_wait_time_for_instance_termination(
-    self,
-    deploymentId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str`
 
 ### stop_deployment
 
 Type annotations for `boto3.client("codedeploy").stop_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment]
+Boto3 documentation:
+[CodeDeploy.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
 
-```python
-def stop_deployment(
-    self,
-    deploymentId: str,
-    autoRollbackEnabled: bool = None
-) -> StopDeploymentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `deploymentId`: `str` *(required)*
+- `autoRollbackEnabled`: `bool`
+
+Returns
+[StopDeploymentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#stopdeploymentoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("codedeploy").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource]
+Boto3 documentation:
+[CodeDeploy.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("codedeploy").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource]
+Boto3 documentation:
+[CodeDeploy.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
 Type annotations for `boto3.client("codedeploy").update_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application]
+Boto3 documentation:
+[CodeDeploy.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
 
-```python
-def update_application(
-    self,
-    applicationName: str = None,
-    newApplicationName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `applicationName`: `str`
+- `newApplicationName`: `str`
 
 ### update_deployment_group
 
-Type annotations for `boto3.client("codedeploy").update_deployment_group` method.
+Type annotations for `boto3.client("codedeploy").update_deployment_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group]
+Boto3 documentation:
+[CodeDeploy.Client.update_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
 
-```python
-def update_deployment_group(
-    self,
-    applicationName: str,
-    currentDeploymentGroupName: str,
-    newDeploymentGroupName: str = None,
-    deploymentConfigName: str = None,
-    ec2TagFilters: List["EC2TagFilterTypeDef"] = None,
-    onPremisesInstanceTagFilters: List["TagFilterTypeDef"] = None,
-    autoScalingGroups: List[str] = None,
-    serviceRoleArn: str = None,
-    triggerConfigurations: List["TriggerConfigTypeDef"] = None,
-    alarmConfiguration: "AlarmConfigurationTypeDef" = None,
-    autoRollbackConfiguration: "AutoRollbackConfigurationTypeDef" = None,
-    outdatedInstancesStrategy: OutdatedInstancesStrategy = None,
-    deploymentStyle: "DeploymentStyleTypeDef" = None,
-    blueGreenDeploymentConfiguration: "BlueGreenDeploymentConfigurationTypeDef" = None,
-    loadBalancerInfo: "LoadBalancerInfoTypeDef" = None,
-    ec2TagSet: "EC2TagSetTypeDef" = None,
-    ecsServices: List["ECSServiceTypeDef"] = None,
-    onPremisesTagSet: "OnPremisesTagSetTypeDef" = None
-) -> UpdateDeploymentGroupOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `applicationName`: `str` *(required)*
+- `currentDeploymentGroupName`: `str` *(required)*
+- `newDeploymentGroupName`: `str`
+- `deploymentConfigName`: `str`
+- `ec2TagFilters`:
+  `List`\[[EC2TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagfiltertypedef)\]
+- `onPremisesInstanceTagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]
+- `autoScalingGroups`: `List`\[`str`\]
+- `serviceRoleArn`: `str`
+- `triggerConfigurations`:
+  `List`\[[TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#triggerconfigtypedef)\]
+- `alarmConfiguration`:
+  [AlarmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#alarmconfigurationtypedef)
+- `autoRollbackConfiguration`:
+  [AutoRollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autorollbackconfigurationtypedef)
+- `outdatedInstancesStrategy`:
+  [OutdatedInstancesStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#outdatedinstancesstrategy)
+- `deploymentStyle`:
+  [DeploymentStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentstyletypedef)
+- `blueGreenDeploymentConfiguration`:
+  [BlueGreenDeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#bluegreendeploymentconfigurationtypedef)
+- `loadBalancerInfo`:
+  [LoadBalancerInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#loadbalancerinfotypedef)
+- `ec2TagSet`:
+  [EC2TagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagsettypedef)
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ecsservicetypedef)\]
+- `onPremisesTagSet`:
+  [OnPremisesTagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#onpremisestagsettypedef)
 
+Returns
+[UpdateDeploymentGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#updatedeploymentgroupoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("codedeploy").get_paginator` method with overloads.
+Type annotations for `boto3.client("codedeploy").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_application_revisions")` -> [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
-- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-- `client.get_paginator("list_deployment_configs")` -> [ListDeploymentConfigsPaginator](./paginators.md#listdeploymentconfigspaginator)
-- `client.get_paginator("list_deployment_groups")` -> [ListDeploymentGroupsPaginator](./paginators.md#listdeploymentgroupspaginator)
-- `client.get_paginator("list_deployment_instances")` -> [ListDeploymentInstancesPaginator](./paginators.md#listdeploymentinstancespaginator)
-- `client.get_paginator("list_deployment_targets")` -> [ListDeploymentTargetsPaginator](./paginators.md#listdeploymenttargetspaginator)
-- `client.get_paginator("list_deployments")` -> [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
-- `client.get_paginator("list_git_hub_account_token_names")` -> [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
-- `client.get_paginator("list_on_premises_instances")` -> [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
-
-
-
+- `client.get_paginator("list_application_revisions")` ->
+  [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
+- `client.get_paginator("list_applications")` ->
+  [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+- `client.get_paginator("list_deployment_configs")` ->
+  [ListDeploymentConfigsPaginator](./paginators.md#listdeploymentconfigspaginator)
+- `client.get_paginator("list_deployment_groups")` ->
+  [ListDeploymentGroupsPaginator](./paginators.md#listdeploymentgroupspaginator)
+- `client.get_paginator("list_deployment_instances")` ->
+  [ListDeploymentInstancesPaginator](./paginators.md#listdeploymentinstancespaginator)
+- `client.get_paginator("list_deployment_targets")` ->
+  [ListDeploymentTargetsPaginator](./paginators.md#listdeploymenttargetspaginator)
+- `client.get_paginator("list_deployments")` ->
+  [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+- `client.get_paginator("list_git_hub_account_token_names")` ->
+  [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
+- `client.get_paginator("list_on_premises_instances")` ->
+  [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("codedeploy").get_waiter` method with overloads.
+Type annotations for `boto3.client("codedeploy").get_waiter` method with
+overloads.
 
-- `client.get_waiter("deployment_successful")` -> [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
+- `client.get_waiter("deployment_successful")` ->
+  [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DLM](./README.md) > Literals
 
-Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
-type annotations stubs module [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+Auto-generated documentation for
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+type annotations stubs module
+[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 - [Literals for boto3 DLM module](#literals-for-boto3-dlm-module)
   - [EventSourceValues](#eventsourcevalues)

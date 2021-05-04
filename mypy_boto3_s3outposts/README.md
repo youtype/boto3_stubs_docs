@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > S3Outposts
 
-Auto-generated documentation for [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
-type annotations stubs module [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+Auto-generated documentation for
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+type annotations stubs module
+[mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 ```bash
 pip install mypy-boto3-s3outposts
@@ -19,7 +21,8 @@ pip install mypy-boto3-s3outposts
 
 ## S3OutpostsClient
 
-Type annotations for  `boto3.client("s3outposts")` as [S3OutpostsClient](./client.md)
+Type annotations for `boto3.client("s3outposts")` as
+[S3OutpostsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 ```
 
-
 S3OutpostsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_endpoint](./client.md#create-endpoint)
 - [delete_endpoint](./client.md#delete-endpoint)
@@ -40,10 +41,8 @@ S3OutpostsClient [exceptions](./client.md#exceptions)
 - [get_paginator](./client.md#get-paginator)
 - [list_endpoints](./client.md#list-endpoints)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -51,14 +50,10 @@ S3OutpostsClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("s3outposts").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("s3outposts").get_paginator("...")`.
 
 Can be used directly:
 
@@ -67,11 +62,6 @@ from mypy_boto3_s3outposts.paginators import ListEndpointsPaginator, ...
 ```
 
 - [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -86,13 +76,10 @@ from mypy_boto3_s3outposts.literals import EndpointStatus, ...
 - [EndpointStatus](./literals.md#endpointstatus)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

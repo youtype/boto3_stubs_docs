@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FIS](./README.md) > Structures
 
-Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+Auto-generated documentation for
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+type annotations stubs module
+[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
 - [Typed dictionaries for boto3 FIS module](#typed-dictionaries-for-boto3-fis-module)
   - [ActionParameterTypeDef](#actionparametertypedef)
@@ -50,13 +52,10 @@ type annotations stubs module [mypy_boto3_fis](https://pypi.org/project/mypy-bot
 from mypy_boto3_fis.type_defs import ActionParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `description`: `str`
 - `required`: `bool`
-
 
 ## ActionSummaryTypeDef
 
@@ -64,15 +63,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ActionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `description`: `str`
-- `targets`: `Dict[str, "ActionTargetTypeDef"]`
-- `tags`: `Dict[str, str]`
-
+- `targets`: `Dict`\[`str`,
+  [ActionTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#actiontargettypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ActionTargetTypeDef
 
@@ -80,12 +77,9 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ActionTargetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resourceType`: `str`
 
+- `resourceType`: `str`
 
 ## ActionTypeDef
 
@@ -93,16 +87,15 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `description`: `str`
-- `parameters`: `Dict[str, "ActionParameterTypeDef"]`
-- `targets`: `Dict[str, "ActionTargetTypeDef"]`
-- `tags`: `Dict[str, str]`
-
+- `parameters`: `Dict`\[`str`,
+  [ActionParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#actionparametertypedef)\]
+- `targets`: `Dict`\[`str`,
+  [ActionTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#actiontargettypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateExperimentTemplateActionInputTypeDef
 
@@ -110,18 +103,16 @@ Optional fields:
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateActionInputTypeDef
 ```
 
-
 Required fields:
+
 - `actionId`: `str`
 
-
-
 Optional fields:
-- `description`: `str`
-- `parameters`: `Dict[str, str]`
-- `targets`: `Dict[str, str]`
-- `startAfter`: `List[str]`
 
+- `description`: `str`
+- `parameters`: `Dict`\[`str`, `str`\]
+- `targets`: `Dict`\[`str`, `str`\]
+- `startAfter`: `List`\[`str`\]
 
 ## CreateExperimentTemplateResponseTypeDef
 
@@ -129,12 +120,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experimentTemplate`: `"ExperimentTemplateTypeDef"`
 
+- `experimentTemplate`:
+  [ExperimentTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetypedef)
 
 ## CreateExperimentTemplateStopConditionInputTypeDef
 
@@ -142,15 +131,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateStopConditionInputTypeDef
 ```
 
-
 Required fields:
+
 - `source`: `str`
 
-
-
 Optional fields:
-- `value`: `str`
 
+- `value`: `str`
 
 ## CreateExperimentTemplateTargetInputTypeDef
 
@@ -158,18 +145,17 @@ Optional fields:
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateTargetInputTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `selectionMode`: `str`
 
-
-
 Optional fields:
-- `resourceArns`: `List[str]`
-- `resourceTags`: `Dict[str, str]`
-- `filters`: `List["ExperimentTemplateTargetInputFilterTypeDef"]`
 
+- `resourceArns`: `List`\[`str`\]
+- `resourceTags`: `Dict`\[`str`, `str`\]
+- `filters`:
+  `List`\[[ExperimentTemplateTargetInputFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetargetinputfiltertypedef)\]
 
 ## DeleteExperimentTemplateResponseTypeDef
 
@@ -177,12 +163,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import DeleteExperimentTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experimentTemplate`: `"ExperimentTemplateTypeDef"`
 
+- `experimentTemplate`:
+  [ExperimentTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetypedef)
 
 ## ExperimentActionStateTypeDef
 
@@ -190,13 +174,11 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentActionStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `ExperimentActionStatus`
-- `reason`: `str`
 
+- `status`:
+  [ExperimentActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/literals.html#experimentactionstatus)
+- `reason`: `str`
 
 ## ExperimentActionTypeDef
 
@@ -204,17 +186,15 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `actionId`: `str`
 - `description`: `str`
-- `parameters`: `Dict[str, str]`
-- `targets`: `Dict[str, str]`
-- `startAfter`: `List[str]`
-- `state`: `"ExperimentActionStateTypeDef"`
-
+- `parameters`: `Dict`\[`str`, `str`\]
+- `targets`: `Dict`\[`str`, `str`\]
+- `startAfter`: `List`\[`str`\]
+- `state`:
+  [ExperimentActionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentactionstatetypedef)
 
 ## ExperimentStateTypeDef
 
@@ -222,13 +202,11 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `ExperimentStatus`
-- `reason`: `str`
 
+- `status`:
+  [ExperimentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/literals.html#experimentstatus)
+- `reason`: `str`
 
 ## ExperimentStopConditionTypeDef
 
@@ -236,13 +214,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentStopConditionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `source`: `str`
 - `value`: `str`
-
 
 ## ExperimentSummaryTypeDef
 
@@ -250,16 +225,14 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `experimentTemplateId`: `str`
-- `state`: `"ExperimentStateTypeDef"`
+- `state`:
+  [ExperimentStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentstatetypedef)
 - `creationTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ExperimentTargetFilterTypeDef
 
@@ -267,13 +240,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTargetFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `path`: `str`
-- `values`: `List[str]`
 
+- `path`: `str`
+- `values`: `List`\[`str`\]
 
 ## ExperimentTargetTypeDef
 
@@ -281,16 +251,14 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTargetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resourceType`: `str`
-- `resourceArns`: `List[str]`
-- `resourceTags`: `Dict[str, str]`
-- `filters`: `List["ExperimentTargetFilterTypeDef"]`
-- `selectionMode`: `str`
 
+- `resourceType`: `str`
+- `resourceArns`: `List`\[`str`\]
+- `resourceTags`: `Dict`\[`str`, `str`\]
+- `filters`:
+  `List`\[[ExperimentTargetFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttargetfiltertypedef)\]
+- `selectionMode`: `str`
 
 ## ExperimentTemplateActionTypeDef
 
@@ -298,16 +266,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `actionId`: `str`
 - `description`: `str`
-- `parameters`: `Dict[str, str]`
-- `targets`: `Dict[str, str]`
-- `startAfter`: `List[str]`
-
+- `parameters`: `Dict`\[`str`, `str`\]
+- `targets`: `Dict`\[`str`, `str`\]
+- `startAfter`: `List`\[`str`\]
 
 ## ExperimentTemplateStopConditionTypeDef
 
@@ -315,13 +280,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateStopConditionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `source`: `str`
 - `value`: `str`
-
 
 ## ExperimentTemplateSummaryTypeDef
 
@@ -329,16 +291,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ExperimentTemplateTargetFilterTypeDef
 
@@ -346,13 +305,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `path`: `str`
-- `values`: `List[str]`
 
+- `path`: `str`
+- `values`: `List`\[`str`\]
 
 ## ExperimentTemplateTargetInputFilterTypeDef
 
@@ -360,13 +316,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetInputFilterTypeDef
 ```
 
-
 Required fields:
+
 - `path`: `str`
-- `values`: `List[str]`
-
-
-
+- `values`: `List`\[`str`\]
 
 ## ExperimentTemplateTargetTypeDef
 
@@ -374,16 +327,14 @@ Required fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resourceType`: `str`
-- `resourceArns`: `List[str]`
-- `resourceTags`: `Dict[str, str]`
-- `filters`: `List["ExperimentTemplateTargetFilterTypeDef"]`
-- `selectionMode`: `str`
 
+- `resourceType`: `str`
+- `resourceArns`: `List`\[`str`\]
+- `resourceTags`: `Dict`\[`str`, `str`\]
+- `filters`:
+  `List`\[[ExperimentTemplateTargetFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetargetfiltertypedef)\]
+- `selectionMode`: `str`
 
 ## ExperimentTemplateTypeDef
 
@@ -391,20 +342,20 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `description`: `str`
-- `targets`: `Dict[str, "ExperimentTemplateTargetTypeDef"]`
-- `actions`: `Dict[str, "ExperimentTemplateActionTypeDef"]`
-- `stopConditions`: `List["ExperimentTemplateStopConditionTypeDef"]`
+- `targets`: `Dict`\[`str`,
+  [ExperimentTemplateTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetargettypedef)\]
+- `actions`: `Dict`\[`str`,
+  [ExperimentTemplateActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplateactiontypedef)\]
+- `stopConditions`:
+  `List`\[[ExperimentTemplateStopConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatestopconditiontypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `roleArn`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ExperimentTypeDef
 
@@ -412,22 +363,23 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ExperimentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `experimentTemplateId`: `str`
 - `roleArn`: `str`
-- `state`: `"ExperimentStateTypeDef"`
-- `targets`: `Dict[str, "ExperimentTargetTypeDef"]`
-- `actions`: `Dict[str, "ExperimentActionTypeDef"]`
-- `stopConditions`: `List["ExperimentStopConditionTypeDef"]`
+- `state`:
+  [ExperimentStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentstatetypedef)
+- `targets`: `Dict`\[`str`,
+  [ExperimentTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttargettypedef)\]
+- `actions`: `Dict`\[`str`,
+  [ExperimentActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentactiontypedef)\]
+- `stopConditions`:
+  `List`\[[ExperimentStopConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentstopconditiontypedef)\]
 - `creationTime`: `datetime`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetActionResponseTypeDef
 
@@ -435,12 +387,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import GetActionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `"ActionTypeDef"`
 
+- `action`:
+  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#actiontypedef)
 
 ## GetExperimentResponseTypeDef
 
@@ -448,12 +398,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import GetExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experiment`: `"ExperimentTypeDef"`
 
+- `experiment`:
+  [ExperimentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttypedef)
 
 ## GetExperimentTemplateResponseTypeDef
 
@@ -461,12 +409,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import GetExperimentTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experimentTemplate`: `"ExperimentTemplateTypeDef"`
 
+- `experimentTemplate`:
+  [ExperimentTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetypedef)
 
 ## ListActionsResponseTypeDef
 
@@ -474,13 +420,11 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ListActionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actions`: `List["ActionSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `actions`:
+  `List`\[[ActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#actionsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListExperimentTemplatesResponseTypeDef
 
@@ -488,13 +432,11 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ListExperimentTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experimentTemplates`: `List["ExperimentTemplateSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `experimentTemplates`:
+  `List`\[[ExperimentTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatesummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListExperimentsResponseTypeDef
 
@@ -502,13 +444,11 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ListExperimentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experiments`: `List["ExperimentSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `experiments`:
+  `List`\[[ExperimentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimentsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -516,12 +456,9 @@ Optional fields:
 from mypy_boto3_fis.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## StartExperimentResponseTypeDef
 
@@ -529,12 +466,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import StartExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experiment`: `"ExperimentTypeDef"`
 
+- `experiment`:
+  [ExperimentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttypedef)
 
 ## StopExperimentResponseTypeDef
 
@@ -542,12 +477,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import StopExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experiment`: `"ExperimentTypeDef"`
 
+- `experiment`:
+  [ExperimentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttypedef)
 
 ## UpdateExperimentTemplateActionInputItemTypeDef
 
@@ -555,16 +488,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateActionInputItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `actionId`: `str`
 - `description`: `str`
-- `parameters`: `Dict[str, str]`
-- `targets`: `Dict[str, str]`
-- `startAfter`: `List[str]`
-
+- `parameters`: `Dict`\[`str`, `str`\]
+- `targets`: `Dict`\[`str`, `str`\]
+- `startAfter`: `List`\[`str`\]
 
 ## UpdateExperimentTemplateResponseTypeDef
 
@@ -572,12 +502,10 @@ Optional fields:
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `experimentTemplate`: `"ExperimentTemplateTypeDef"`
 
+- `experimentTemplate`:
+  [ExperimentTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetypedef)
 
 ## UpdateExperimentTemplateStopConditionInputTypeDef
 
@@ -585,15 +513,13 @@ Optional fields:
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateStopConditionInputTypeDef
 ```
 
-
 Required fields:
+
 - `source`: `str`
 
-
-
 Optional fields:
-- `value`: `str`
 
+- `value`: `str`
 
 ## UpdateExperimentTemplateTargetInputTypeDef
 
@@ -601,15 +527,14 @@ Optional fields:
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateTargetInputTypeDef
 ```
 
-
 Required fields:
+
 - `resourceType`: `str`
 - `selectionMode`: `str`
 
-
-
 Optional fields:
-- `resourceArns`: `List[str]`
-- `resourceTags`: `Dict[str, str]`
-- `filters`: `List["ExperimentTemplateTargetInputFilterTypeDef"]`
 
+- `resourceArns`: `List`\[`str`\]
+- `resourceTags`: `Dict`\[`str`, `str`\]
+- `filters`:
+  `List`\[[ExperimentTemplateTargetInputFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#experimenttemplatetargetinputfiltertypedef)\]

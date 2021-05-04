@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SNS](./README.md) > Paginators
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Paginators for boto3 SNS module](#paginators-for-boto3-sns-module)
   - [ListEndpointsByPlatformApplicationPaginator](#listendpointsbyplatformapplicationpaginator)
@@ -15,7 +17,8 @@ type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-bot
 
 ## ListEndpointsByPlatformApplicationPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_endpoints_by_platform_application")`.
+Type annotations for
+`boto3.client("sns").get_paginator("list_endpoints_by_platform_application")`.
 
 Can be used directly:
 
@@ -26,20 +29,22 @@ def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPla
     return boto3.client("sns").get_paginator("list_endpoints_by_platform_application")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
+Boto3 documentation:
+[SNS.Paginator.ListEndpointsByPlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
 
-```python
-class ListEndpointsByPlatformApplicationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PlatformApplicationArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListEndpointsByPlatformApplicationResponseTypeDef]:
-        pass
-```
+Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
+
+- `PlatformApplicationArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListEndpointsByPlatformApplicationPaginator.paginate` returns
+`Iterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listendpointsbyplatformapplicationresponsetypedef)\].
+
 ## ListPhoneNumbersOptedOutPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_phone_numbers_opted_out")`.
+Type annotations for
+`boto3.client("sns").get_paginator("list_phone_numbers_opted_out")`.
 
 Can be used directly:
 
@@ -50,19 +55,21 @@ def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPagi
     return boto3.client("sns").get_paginator("list_phone_numbers_opted_out")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
+Boto3 documentation:
+[SNS.Paginator.ListPhoneNumbersOptedOut](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
 
-```python
-class ListPhoneNumbersOptedOutPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPhoneNumbersOptedOutResponseTypeDef]:
-        pass
-```
+Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListPhoneNumbersOptedOutPaginator.paginate` returns
+`Iterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listphonenumbersoptedoutresponsetypedef)\].
+
 ## ListPlatformApplicationsPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_platform_applications")`.
+Type annotations for
+`boto3.client("sns").get_paginator("list_platform_applications")`.
 
 Can be used directly:
 
@@ -73,16 +80,17 @@ def get_list_platform_applications_paginator() -> ListPlatformApplicationsPagina
     return boto3.client("sns").get_paginator("list_platform_applications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
+Boto3 documentation:
+[SNS.Paginator.ListPlatformApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
 
-```python
-class ListPlatformApplicationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPlatformApplicationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPlatformApplicationsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListPlatformApplicationsPaginator.paginate` returns
+`Iterator`\[[ListPlatformApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listplatformapplicationsresponsetypedef)\].
+
 ## ListSubscriptionsPaginator
 
 Type annotations for `boto3.client("sns").get_paginator("list_subscriptions")`.
@@ -96,19 +104,21 @@ def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
     return boto3.client("sns").get_paginator("list_subscriptions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
+Boto3 documentation:
+[SNS.Paginator.ListSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
 
-```python
-class ListSubscriptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSubscriptionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListSubscriptionsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListSubscriptionsPaginator.paginate` returns
+`Iterator`\[[ListSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsresponsetypedef)\].
+
 ## ListSubscriptionsByTopicPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_subscriptions_by_topic")`.
+Type annotations for
+`boto3.client("sns").get_paginator("list_subscriptions_by_topic")`.
 
 Can be used directly:
 
@@ -119,17 +129,18 @@ def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPagin
     return boto3.client("sns").get_paginator("list_subscriptions_by_topic")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
+Boto3 documentation:
+[SNS.Paginator.ListSubscriptionsByTopic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
 
-```python
-class ListSubscriptionsByTopicPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TopicArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSubscriptionsByTopicResponseTypeDef]:
-        pass
-```
+Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
+
+- `TopicArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListSubscriptionsByTopicPaginator.paginate` returns
+`Iterator`\[[ListSubscriptionsByTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsbytopicresponsetypedef)\].
+
 ## ListTopicsPaginator
 
 Type annotations for `boto3.client("sns").get_paginator("list_topics")`.
@@ -143,13 +154,13 @@ def get_list_topics_paginator() -> ListTopicsPaginator:
     return boto3.client("sns").get_paginator("list_topics")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
+Boto3 documentation:
+[SNS.Paginator.ListTopics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
 
-```python
-class ListTopicsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTopicsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTopicsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+
+`ListTopicsPaginator.paginate` returns
+`Iterator`\[[ListTopicsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtopicsresponsetypedef)\].

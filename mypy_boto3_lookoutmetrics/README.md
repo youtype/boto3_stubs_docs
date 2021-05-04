@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LookoutMetrics
 
-Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+Auto-generated documentation for
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+type annotations stubs module
+[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 ```bash
 pip install mypy-boto3-lookoutmetrics
@@ -18,7 +20,8 @@ pip install mypy-boto3-lookoutmetrics
 
 ## LookoutMetricsClient
 
-Type annotations for  `boto3.client("lookoutmetrics")` as [LookoutMetricsClient](./client.md)
+Type annotations for `boto3.client("lookoutmetrics")` as
+[LookoutMetricsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 ```
 
-
 LookoutMetricsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [activate_anomaly_detector](./client.md#activate-anomaly-detector)
 - [back_test_anomaly_detector](./client.md#back-test-anomaly-detector)
 - [can_paginate](./client.md#can-paginate)
@@ -60,10 +61,8 @@ LookoutMetricsClient [exceptions](./client.md#exceptions)
 - [update_anomaly_detector](./client.md#update-anomaly-detector)
 - [update_metric_set](./client.md#update-metric-set)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -72,15 +71,6 @@ LookoutMetricsClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -101,13 +91,10 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunction, ...
 - [Frequency](./literals.md#frequency)
 - [JsonFileCompression](./literals.md#jsonfilecompression)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

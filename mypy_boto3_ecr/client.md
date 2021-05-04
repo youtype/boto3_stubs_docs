@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECR](./README.md) > ECRClient
 
-Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+Auto-generated documentation for
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+type annotations stubs module
+[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [ECRClient for boto3 ECR module](#ecrclient-for-boto3-ecr-module)
   - [ECRClient](#ecrclient)
@@ -61,12 +63,13 @@ def get_ecr_client() -> ECRClient:
     return boto3.client("ecr")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client)
+Boto3 documentation:
+[ECR.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ecr.client import Exceptions
@@ -74,7 +77,6 @@ from mypy_boto3_ecr.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -110,601 +112,617 @@ Exceptions:
 - `Exceptions.UploadNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### batch_check_layer_availability
 
-Type annotations for `boto3.client("ecr").batch_check_layer_availability` method.
+Type annotations for `boto3.client("ecr").batch_check_layer_availability`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_check_layer_availability]
+Boto3 documentation:
+[ECR.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_check_layer_availability)
 
-```python
-def batch_check_layer_availability(
-    self,
-    repositoryName: str,
-    layerDigests: List[str],
-    registryId: str = None
-) -> BatchCheckLayerAvailabilityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `layerDigests`: `List`\[`str`\] *(required)*
+- `registryId`: `str`
+
+Returns
+[BatchCheckLayerAvailabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchchecklayeravailabilityresponsetypedef).
 
 ### batch_delete_image
 
 Type annotations for `boto3.client("ecr").batch_delete_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_delete_image]
+Boto3 documentation:
+[ECR.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_delete_image)
 
-```python
-def batch_delete_image(
-    self,
-    repositoryName: str,
-    imageIds: List["ImageIdentifierTypeDef"],
-    registryId: str = None
-) -> BatchDeleteImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[BatchDeleteImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchdeleteimageresponsetypedef).
 
 ### batch_get_image
 
 Type annotations for `boto3.client("ecr").batch_get_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_image]
+Boto3 documentation:
+[ECR.Client.batch_get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_image)
 
-```python
-def batch_get_image(
-    self,
-    repositoryName: str,
-    imageIds: List["ImageIdentifierTypeDef"],
-    registryId: str = None,
-    acceptedMediaTypes: List[str] = None
-) -> BatchGetImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  *(required)*
+- `registryId`: `str`
+- `acceptedMediaTypes`: `List`\[`str`\]
+
+Returns
+[BatchGetImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchgetimageresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("ecr").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.can_paginate]
+Boto3 documentation:
+[ECR.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_layer_upload
 
 Type annotations for `boto3.client("ecr").complete_layer_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.complete_layer_upload]
+Boto3 documentation:
+[ECR.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.complete_layer_upload)
 
-```python
-def complete_layer_upload(
-    self,
-    repositoryName: str,
-    uploadId: str,
-    layerDigests: List[str],
-    registryId: str = None
-) -> CompleteLayerUploadResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `layerDigests`: `List`\[`str`\] *(required)*
+- `registryId`: `str`
+
+Returns
+[CompleteLayerUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#completelayeruploadresponsetypedef).
 
 ### create_repository
 
 Type annotations for `boto3.client("ecr").create_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_repository]
+Boto3 documentation:
+[ECR.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_repository)
 
-```python
-def create_repository(
-    self,
-    repositoryName: str,
-    tags: List["TagTypeDef"] = None,
-    imageTagMutability: ImageTagMutability = None,
-    imageScanningConfiguration: "ImageScanningConfigurationTypeDef" = None,
-    encryptionConfiguration: "EncryptionConfigurationTypeDef" = None
-) -> CreateRepositoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#tagtypedef)\]
+- `imageTagMutability`:
+  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
+- `imageScanningConfiguration`:
+  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
+- `encryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#encryptionconfigurationtypedef)
+
+Returns
+[CreateRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#createrepositoryresponsetypedef).
 
 ### delete_lifecycle_policy
 
 Type annotations for `boto3.client("ecr").delete_lifecycle_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy]
+Boto3 documentation:
+[ECR.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy)
 
-```python
-def delete_lifecycle_policy(
-    self,
-    repositoryName: str,
-    registryId: str = None
-) -> DeleteLifecyclePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[DeleteLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deletelifecyclepolicyresponsetypedef).
 
 ### delete_registry_policy
 
 Type annotations for `boto3.client("ecr").delete_registry_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy]
+Boto3 documentation:
+[ECR.Client.delete_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy)
 
-```python
-def delete_registry_policy(
-    self
-) -> DeleteRegistryPolicyResponseTypeDef:
-    pass
-```
+Returns
+[DeleteRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleteregistrypolicyresponsetypedef).
 
 ### delete_repository
 
 Type annotations for `boto3.client("ecr").delete_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository]
+Boto3 documentation:
+[ECR.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository)
 
-```python
-def delete_repository(
-    self,
-    repositoryName: str,
-    registryId: str = None,
-    force: bool = None
-) -> DeleteRepositoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `force`: `bool`
+
+Returns
+[DeleteRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleterepositoryresponsetypedef).
 
 ### delete_repository_policy
 
 Type annotations for `boto3.client("ecr").delete_repository_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy]
+Boto3 documentation:
+[ECR.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy)
 
-```python
-def delete_repository_policy(
-    self,
-    repositoryName: str,
-    registryId: str = None
-) -> DeleteRepositoryPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[DeleteRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleterepositorypolicyresponsetypedef).
 
 ### describe_image_scan_findings
 
 Type annotations for `boto3.client("ecr").describe_image_scan_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_scan_findings]
+Boto3 documentation:
+[ECR.Client.describe_image_scan_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_scan_findings)
 
-```python
-def describe_image_scan_findings(
-    self,
-    repositoryName: str,
-    imageId: "ImageIdentifierTypeDef",
-    registryId: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeImageScanFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+  *(required)*
+- `registryId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeImageScanFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagescanfindingsresponsetypedef).
 
 ### describe_images
 
 Type annotations for `boto3.client("ecr").describe_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_images]
+Boto3 documentation:
+[ECR.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_images)
 
-```python
-def describe_images(
-    self,
-    repositoryName: str,
-    registryId: str = None,
-    imageIds: List["ImageIdentifierTypeDef"] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filter: DescribeImagesFilterTypeDef = None
-) -> DescribeImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`:
+  [DescribeImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesfiltertypedef)
+
+Returns
+[DescribeImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesresponsetypedef).
 
 ### describe_registry
 
 Type annotations for `boto3.client("ecr").describe_registry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry]
+Boto3 documentation:
+[ECR.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry)
 
-```python
-def describe_registry(
-    self
-) -> DescribeRegistryResponseTypeDef:
-    pass
-```
+Returns
+[DescribeRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeregistryresponsetypedef).
 
 ### describe_repositories
 
 Type annotations for `boto3.client("ecr").describe_repositories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_repositories]
+Boto3 documentation:
+[ECR.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_repositories)
 
-```python
-def describe_repositories(
-    self,
-    registryId: str = None,
-    repositoryNames: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeRepositoriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `registryId`: `str`
+- `repositoryNames`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeRepositoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describerepositoriesresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ecr").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.generate_presigned_url]
+Boto3 documentation:
+[ECR.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_authorization_token
 
 Type annotations for `boto3.client("ecr").get_authorization_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token]
+Boto3 documentation:
+[ECR.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token)
 
-```python
-def get_authorization_token(
-    self,
-    registryIds: List[str] = None
-) -> GetAuthorizationTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `registryIds`: `List`\[`str`\]
+
+Returns
+[GetAuthorizationTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getauthorizationtokenresponsetypedef).
 
 ### get_download_url_for_layer
 
 Type annotations for `boto3.client("ecr").get_download_url_for_layer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_download_url_for_layer]
+Boto3 documentation:
+[ECR.Client.get_download_url_for_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_download_url_for_layer)
 
-```python
-def get_download_url_for_layer(
-    self,
-    repositoryName: str,
-    layerDigest: str,
-    registryId: str = None
-) -> GetDownloadUrlForLayerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `layerDigest`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[GetDownloadUrlForLayerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getdownloadurlforlayerresponsetypedef).
 
 ### get_lifecycle_policy
 
 Type annotations for `boto3.client("ecr").get_lifecycle_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy]
+Boto3 documentation:
+[ECR.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy)
 
-```python
-def get_lifecycle_policy(
-    self,
-    repositoryName: str,
-    registryId: str = None
-) -> GetLifecyclePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[GetLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getlifecyclepolicyresponsetypedef).
 
 ### get_lifecycle_policy_preview
 
 Type annotations for `boto3.client("ecr").get_lifecycle_policy_preview` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy_preview]
+Boto3 documentation:
+[ECR.Client.get_lifecycle_policy_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy_preview)
 
-```python
-def get_lifecycle_policy_preview(
-    self,
-    repositoryName: str,
-    registryId: str = None,
-    imageIds: List["ImageIdentifierTypeDef"] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filter: LifecyclePolicyPreviewFilterTypeDef = None
-) -> GetLifecyclePolicyPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`:
+  [LifecyclePolicyPreviewFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewfiltertypedef)
+
+Returns
+[GetLifecyclePolicyPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getlifecyclepolicypreviewresponsetypedef).
 
 ### get_registry_policy
 
 Type annotations for `boto3.client("ecr").get_registry_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy]
+Boto3 documentation:
+[ECR.Client.get_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy)
 
-```python
-def get_registry_policy(
-    self
-) -> GetRegistryPolicyResponseTypeDef:
-    pass
-```
+Returns
+[GetRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getregistrypolicyresponsetypedef).
 
 ### get_repository_policy
 
 Type annotations for `boto3.client("ecr").get_repository_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy]
+Boto3 documentation:
+[ECR.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy)
 
-```python
-def get_repository_policy(
-    self,
-    repositoryName: str,
-    registryId: str = None
-) -> GetRepositoryPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[GetRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getrepositorypolicyresponsetypedef).
 
 ### initiate_layer_upload
 
 Type annotations for `boto3.client("ecr").initiate_layer_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload]
+Boto3 documentation:
+[ECR.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload)
 
-```python
-def initiate_layer_upload(
-    self,
-    repositoryName: str,
-    registryId: str = None
-) -> InitiateLayerUploadResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[InitiateLayerUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#initiatelayeruploadresponsetypedef).
 
 ### list_images
 
 Type annotations for `boto3.client("ecr").list_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_images]
+Boto3 documentation:
+[ECR.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_images)
 
-```python
-def list_images(
-    self,
-    repositoryName: str,
-    registryId: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filter: ListImagesFilterTypeDef = None
-) -> ListImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`:
+  [ListImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesfiltertypedef)
+
+Returns
+[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("ecr").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource]
+Boto3 documentation:
+[ECR.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_image
 
 Type annotations for `boto3.client("ecr").put_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image]
+Boto3 documentation:
+[ECR.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image)
 
-```python
-def put_image(
-    self,
-    repositoryName: str,
-    imageManifest: str,
-    registryId: str = None,
-    imageManifestMediaType: str = None,
-    imageTag: str = None,
-    imageDigest: str = None
-) -> PutImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageManifest`: `str` *(required)*
+- `registryId`: `str`
+- `imageManifestMediaType`: `str`
+- `imageTag`: `str`
+- `imageDigest`: `str`
+
+Returns
+[PutImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimageresponsetypedef).
 
 ### put_image_scanning_configuration
 
-Type annotations for `boto3.client("ecr").put_image_scanning_configuration` method.
+Type annotations for `boto3.client("ecr").put_image_scanning_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_scanning_configuration]
+Boto3 documentation:
+[ECR.Client.put_image_scanning_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_scanning_configuration)
 
-```python
-def put_image_scanning_configuration(
-    self,
-    repositoryName: str,
-    imageScanningConfiguration: "ImageScanningConfigurationTypeDef",
-    registryId: str = None
-) -> PutImageScanningConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageScanningConfiguration`:
+  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[PutImageScanningConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimagescanningconfigurationresponsetypedef).
 
 ### put_image_tag_mutability
 
 Type annotations for `boto3.client("ecr").put_image_tag_mutability` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_tag_mutability]
+Boto3 documentation:
+[ECR.Client.put_image_tag_mutability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_tag_mutability)
 
-```python
-def put_image_tag_mutability(
-    self,
-    repositoryName: str,
-    imageTagMutability: ImageTagMutability,
-    registryId: str = None
-) -> PutImageTagMutabilityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageTagMutability`:
+  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[PutImageTagMutabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimagetagmutabilityresponsetypedef).
 
 ### put_lifecycle_policy
 
 Type annotations for `boto3.client("ecr").put_lifecycle_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_lifecycle_policy]
+Boto3 documentation:
+[ECR.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_lifecycle_policy)
 
-```python
-def put_lifecycle_policy(
-    self,
-    repositoryName: str,
-    lifecyclePolicyText: str,
-    registryId: str = None
-) -> PutLifecyclePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `lifecyclePolicyText`: `str` *(required)*
+- `registryId`: `str`
+
+Returns
+[PutLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putlifecyclepolicyresponsetypedef).
 
 ### put_registry_policy
 
 Type annotations for `boto3.client("ecr").put_registry_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy]
+Boto3 documentation:
+[ECR.Client.put_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy)
 
-```python
-def put_registry_policy(
-    self,
-    policyText: str
-) -> PutRegistryPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `policyText`: `str` *(required)*
+
+Returns
+[PutRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putregistrypolicyresponsetypedef).
 
 ### put_replication_configuration
 
-Type annotations for `boto3.client("ecr").put_replication_configuration` method.
+Type annotations for `boto3.client("ecr").put_replication_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration]
+Boto3 documentation:
+[ECR.Client.put_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration)
 
-```python
-def put_replication_configuration(
-    self,
-    replicationConfiguration: "ReplicationConfigurationTypeDef"
-) -> PutReplicationConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `replicationConfiguration`:
+  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutReplicationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putreplicationconfigurationresponsetypedef).
 
 ### set_repository_policy
 
 Type annotations for `boto3.client("ecr").set_repository_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.set_repository_policy]
+Boto3 documentation:
+[ECR.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.set_repository_policy)
 
-```python
-def set_repository_policy(
-    self,
-    repositoryName: str,
-    policyText: str,
-    registryId: str = None,
-    force: bool = None
-) -> SetRepositoryPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `policyText`: `str` *(required)*
+- `registryId`: `str`
+- `force`: `bool`
+
+Returns
+[SetRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#setrepositorypolicyresponsetypedef).
 
 ### start_image_scan
 
 Type annotations for `boto3.client("ecr").start_image_scan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_image_scan]
+Boto3 documentation:
+[ECR.Client.start_image_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_image_scan)
 
-```python
-def start_image_scan(
-    self,
-    repositoryName: str,
-    imageId: "ImageIdentifierTypeDef",
-    registryId: str = None
-) -> StartImageScanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[StartImageScanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#startimagescanresponsetypedef).
 
 ### start_lifecycle_policy_preview
 
-Type annotations for `boto3.client("ecr").start_lifecycle_policy_preview` method.
+Type annotations for `boto3.client("ecr").start_lifecycle_policy_preview`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_lifecycle_policy_preview]
+Boto3 documentation:
+[ECR.Client.start_lifecycle_policy_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_lifecycle_policy_preview)
 
-```python
-def start_lifecycle_policy_preview(
-    self,
-    repositoryName: str,
-    registryId: str = None,
-    lifecyclePolicyText: str = None
-) -> StartLifecyclePolicyPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `lifecyclePolicyText`: `str`
+
+Returns
+[StartLifecyclePolicyPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#startlifecyclepolicypreviewresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("ecr").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource]
+Boto3 documentation:
+[ECR.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("ecr").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource]
+Boto3 documentation:
+[ECR.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### upload_layer_part
 
 Type annotations for `boto3.client("ecr").upload_layer_part` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.upload_layer_part]
+Boto3 documentation:
+[ECR.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.upload_layer_part)
 
-```python
-def upload_layer_part(
-    self,
-    repositoryName: str,
-    uploadId: str,
-    partFirstByte: int,
-    partLastByte: int,
-    layerPartBlob: Union[bytes, IO[bytes]],
-    registryId: str = None
-) -> UploadLayerPartResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `repositoryName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `partFirstByte`: `int` *(required)*
+- `partLastByte`: `int` *(required)*
+- `layerPartBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `registryId`: `str`
 
+Returns
+[UploadLayerPartResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#uploadlayerpartresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("ecr").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_image_scan_findings")` -> [DescribeImageScanFindingsPaginator](./paginators.md#describeimagescanfindingspaginator)
-- `client.get_paginator("describe_images")` -> [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
-- `client.get_paginator("describe_repositories")` -> [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
-- `client.get_paginator("get_lifecycle_policy_preview")` -> [GetLifecyclePolicyPreviewPaginator](./paginators.md#getlifecyclepolicypreviewpaginator)
-- `client.get_paginator("list_images")` -> [ListImagesPaginator](./paginators.md#listimagespaginator)
-
-
-
+- `client.get_paginator("describe_image_scan_findings")` ->
+  [DescribeImageScanFindingsPaginator](./paginators.md#describeimagescanfindingspaginator)
+- `client.get_paginator("describe_images")` ->
+  [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+- `client.get_paginator("describe_repositories")` ->
+  [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+- `client.get_paginator("get_lifecycle_policy_preview")` ->
+  [GetLifecyclePolicyPreviewPaginator](./paginators.md#getlifecyclepolicypreviewpaginator)
+- `client.get_paginator("list_images")` ->
+  [ListImagesPaginator](./paginators.md#listimagespaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("ecr").get_waiter` method with overloads.
 
-- `client.get_waiter("image_scan_complete")` -> [ImageScanCompleteWaiter](./waiters.md#imagescancompletewaiter)
-- `client.get_waiter("lifecycle_policy_preview_complete")` -> [LifecyclePolicyPreviewCompleteWaiter](./waiters.md#lifecyclepolicypreviewcompletewaiter)
+- `client.get_waiter("image_scan_complete")` ->
+  [ImageScanCompleteWaiter](./waiters.md#imagescancompletewaiter)
+- `client.get_waiter("lifecycle_policy_preview_complete")` ->
+  [LifecyclePolicyPreviewCompleteWaiter](./waiters.md#lifecyclepolicypreviewcompletewaiter)

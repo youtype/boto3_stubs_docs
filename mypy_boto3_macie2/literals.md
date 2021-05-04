@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie2](./README.md) > Literals
 
-Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+Auto-generated documentation for
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+type annotations stubs module
+[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Literals for boto3 Macie2 module](#literals-for-boto3-macie2-module)
   - [AdminStatus](#adminstatus)

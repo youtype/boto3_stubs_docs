@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Textract](./README.md) > TextractClient
 
-Auto-generated documentation for [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
-type annotations stubs module [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+Auto-generated documentation for
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+type annotations stubs module
+[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [TextractClient for boto3 Textract module](#textractclient-for-boto3-textract-module)
   - [TextractClient](#textractclient)
@@ -31,12 +33,13 @@ def get_textract_client() -> TextractClient:
     return boto3.client("textract")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
+Boto3 documentation:
+[Textract.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_textract.client import Exceptions
@@ -44,7 +47,6 @@ from mypy_boto3_textract.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -64,141 +66,153 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedDocumentException`
 
-
 ## Methods
-
 
 ### analyze_document
 
 Type annotations for `boto3.client("textract").analyze_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document]
+Boto3 documentation:
+[Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
 
-```python
-def analyze_document(
-    self,
-    Document: DocumentTypeDef,
-    FeatureTypes: List[FeatureType],
-    HumanLoopConfig: HumanLoopConfigTypeDef = None
-) -> AnalyzeDocumentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Document`:
+  [DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documenttypedef)
+  *(required)*
+- `FeatureTypes`:
+  `List`\[[FeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#featuretype)\]
+  *(required)*
+- `HumanLoopConfig`:
+  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#humanloopconfigtypedef)
+
+Returns
+[AnalyzeDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#analyzedocumentresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("textract").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate]
+Boto3 documentation:
+[Textract.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### detect_document_text
 
 Type annotations for `boto3.client("textract").detect_document_text` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text]
+Boto3 documentation:
+[Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
 
-```python
-def detect_document_text(
-    self,
-    Document: DocumentTypeDef
-) -> DetectDocumentTextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Document`:
+  [DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documenttypedef)
+  *(required)*
+
+Returns
+[DetectDocumentTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#detectdocumenttextresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("textract").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url]
+Boto3 documentation:
+[Textract.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_document_analysis
 
 Type annotations for `boto3.client("textract").get_document_analysis` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis]
+Boto3 documentation:
+[Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
 
-```python
-def get_document_analysis(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetDocumentAnalysisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetDocumentAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#getdocumentanalysisresponsetypedef).
 
 ### get_document_text_detection
 
-Type annotations for `boto3.client("textract").get_document_text_detection` method.
+Type annotations for `boto3.client("textract").get_document_text_detection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection]
+Boto3 documentation:
+[Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
 
-```python
-def get_document_text_detection(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetDocumentTextDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetDocumentTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#getdocumenttextdetectionresponsetypedef).
 
 ### start_document_analysis
 
 Type annotations for `boto3.client("textract").start_document_analysis` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis]
+Boto3 documentation:
+[Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
 
-```python
-def start_document_analysis(
-    self,
-    DocumentLocation: DocumentLocationTypeDef,
-    FeatureTypes: List[FeatureType],
-    ClientRequestToken: str = None,
-    JobTag: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    OutputConfig: OutputConfigTypeDef = None,
-    KMSKeyId: str = None
-) -> StartDocumentAnalysisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentLocation`:
+  [DocumentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentlocationtypedef)
+  *(required)*
+- `FeatureTypes`:
+  `List`\[[FeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#featuretype)\]
+  *(required)*
+- `ClientRequestToken`: `str`
+- `JobTag`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#notificationchanneltypedef)
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#outputconfigtypedef)
+- `KMSKeyId`: `str`
+
+Returns
+[StartDocumentAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#startdocumentanalysisresponsetypedef).
 
 ### start_document_text_detection
 
-Type annotations for `boto3.client("textract").start_document_text_detection` method.
+Type annotations for `boto3.client("textract").start_document_text_detection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection]
+Boto3 documentation:
+[Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
 
-```python
-def start_document_text_detection(
-    self,
-    DocumentLocation: DocumentLocationTypeDef,
-    ClientRequestToken: str = None,
-    JobTag: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    OutputConfig: OutputConfigTypeDef = None,
-    KMSKeyId: str = None
-) -> StartDocumentTextDetectionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `DocumentLocation`:
+  [DocumentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentlocationtypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `JobTag`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#notificationchanneltypedef)
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#outputconfigtypedef)
+- `KMSKeyId`: `str`
 
-
+Returns
+[StartDocumentTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#startdocumenttextdetectionresponsetypedef).

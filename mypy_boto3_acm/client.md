@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ACM](./README.md) > ACMClient
 
-Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
-type annotations stubs module [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+Auto-generated documentation for
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+type annotations stubs module
+[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [ACMClient for boto3 ACM module](#acmclient-for-boto3-acm-module)
   - [ACMClient](#acmclient)
@@ -42,12 +44,13 @@ def get_acm_client() -> ACMClient:
     return boto3.client("acm")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
+Boto3 documentation:
+[ACM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_acm.client import Exceptions
@@ -55,7 +58,6 @@ from mypy_boto3_acm.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -77,284 +79,267 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### add_tags_to_certificate
 
 Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate]
+Boto3 documentation:
+[ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
 
-```python
-def add_tags_to_certificate(
-    self,
-    CertificateArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("acm").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate]
+Boto3 documentation:
+[ACM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_certificate
 
 Type annotations for `boto3.client("acm").delete_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate]
+Boto3 documentation:
+[ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
 
-```python
-def delete_certificate(
-    self,
-    CertificateArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
 
 ### describe_certificate
 
 Type annotations for `boto3.client("acm").describe_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate]
+Boto3 documentation:
+[ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
 
-```python
-def describe_certificate(
-    self,
-    CertificateArn: str
-) -> DescribeCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+
+Returns
+[DescribeCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#describecertificateresponsetypedef).
 
 ### export_certificate
 
 Type annotations for `boto3.client("acm").export_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate]
+Boto3 documentation:
+[ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
 
-```python
-def export_certificate(
-    self,
-    CertificateArn: str,
-    Passphrase: Union[bytes, IO[bytes]]
-) -> ExportCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+- `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+
+Returns
+[ExportCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#exportcertificateresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("acm").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url]
+Boto3 documentation:
+[ACM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_configuration
 
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration]
+Boto3 documentation:
+[ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
 
-```python
-def get_account_configuration(
-    self
-) -> GetAccountConfigurationResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#getaccountconfigurationresponsetypedef).
 
 ### get_certificate
 
 Type annotations for `boto3.client("acm").get_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate]
+Boto3 documentation:
+[ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
 
-```python
-def get_certificate(
-    self,
-    CertificateArn: str
-) -> GetCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+
+Returns
+[GetCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#getcertificateresponsetypedef).
 
 ### import_certificate
 
 Type annotations for `boto3.client("acm").import_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate]
+Boto3 documentation:
+[ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
 
-```python
-def import_certificate(
-    self,
-    Certificate: Union[bytes, IO[bytes]],
-    PrivateKey: Union[bytes, IO[bytes]],
-    CertificateArn: str = None,
-    CertificateChain: Union[bytes, IO[bytes]] = None,
-    Tags: List["TagTypeDef"] = None
-) -> ImportCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `CertificateArn`: `str`
+- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+
+Returns
+[ImportCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#importcertificateresponsetypedef).
 
 ### list_certificates
 
 Type annotations for `boto3.client("acm").list_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates]
+Boto3 documentation:
+[ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
 
-```python
-def list_certificates(
-    self,
-    CertificateStatuses: List[CertificateStatus] = None,
-    Includes: FiltersTypeDef = None,
-    NextToken: str = None,
-    MaxItems: int = None
-) -> ListCertificatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateStatuses`:
+  `List`\[[CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatestatus)\]
+- `Includes`:
+  [FiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#filterstypedef)
+- `NextToken`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#listcertificatesresponsetypedef).
 
 ### list_tags_for_certificate
 
 Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate]
+Boto3 documentation:
+[ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
 
-```python
-def list_tags_for_certificate(
-    self,
-    CertificateArn: str
-) -> ListTagsForCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+
+Returns
+[ListTagsForCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#listtagsforcertificateresponsetypedef).
 
 ### put_account_configuration
 
 Type annotations for `boto3.client("acm").put_account_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration]
+Boto3 documentation:
+[ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
 
-```python
-def put_account_configuration(
-    self,
-    IdempotencyToken: str,
-    ExpiryEvents: "ExpiryEventsConfigurationTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `IdempotencyToken`: `str` *(required)*
+- `ExpiryEvents`:
+  [ExpiryEventsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#expiryeventsconfigurationtypedef)
 
 ### remove_tags_from_certificate
 
 Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate]
+Boto3 documentation:
+[ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
 
-```python
-def remove_tags_from_certificate(
-    self,
-    CertificateArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### renew_certificate
 
 Type annotations for `boto3.client("acm").renew_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate]
+Boto3 documentation:
+[ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
 
-```python
-def renew_certificate(
-    self,
-    CertificateArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
 
 ### request_certificate
 
 Type annotations for `boto3.client("acm").request_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate]
+Boto3 documentation:
+[ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
 
-```python
-def request_certificate(
-    self,
-    DomainName: str,
-    ValidationMethod: ValidationMethod = None,
-    SubjectAlternativeNames: List[str] = None,
-    IdempotencyToken: str = None,
-    DomainValidationOptions: List[DomainValidationOptionTypeDef] = None,
-    Options: "CertificateOptionsTypeDef" = None,
-    CertificateAuthorityArn: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> RequestCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ValidationMethod`:
+  [ValidationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#validationmethod)
+- `SubjectAlternativeNames`: `List`\[`str`\]
+- `IdempotencyToken`: `str`
+- `DomainValidationOptions`:
+  `List`\[[DomainValidationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#domainvalidationoptiontypedef)\]
+- `Options`:
+  [CertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificateoptionstypedef)
+- `CertificateAuthorityArn`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+
+Returns
+[RequestCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#requestcertificateresponsetypedef).
 
 ### resend_validation_email
 
 Type annotations for `boto3.client("acm").resend_validation_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email]
+Boto3 documentation:
+[ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
 
-```python
-def resend_validation_email(
-    self,
-    CertificateArn: str,
-    Domain: str,
-    ValidationDomain: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+- `Domain`: `str` *(required)*
+- `ValidationDomain`: `str` *(required)*
 
 ### update_certificate_options
 
 Type annotations for `boto3.client("acm").update_certificate_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options]
+Boto3 documentation:
+[ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
 
-```python
-def update_certificate_options(
-    self,
-    CertificateArn: str,
-    Options: "CertificateOptionsTypeDef"
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `CertificateArn`: `str` *(required)*
+- `Options`:
+  [CertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificateoptionstypedef)
+  *(required)*
 
 ### get_paginator
 
 Type annotations for `boto3.client("acm").get_paginator` method with overloads.
 
-- `client.get_paginator("list_certificates")` -> [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
-
-
-
+- `client.get_paginator("list_certificates")` ->
+  [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("acm").get_waiter` method with overloads.
 
-- `client.get_waiter("certificate_validated")` -> [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
+- `client.get_waiter("certificate_validated")` ->
+  [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)

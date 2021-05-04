@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Batch](./README.md) > Literals
 
-Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+Auto-generated documentation for
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+type annotations stubs module
+[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Literals for boto3 Batch module](#literals-for-boto3-batch-module)
   - [ArrayJobDependency](#arrayjobdependency)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WAFRegional](./README.md) > WAFRegionalClient
 
-Auto-generated documentation for [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
-type annotations stubs module [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
+Auto-generated documentation for
+[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
+type annotations stubs module
+[mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 - [WAFRegionalClient for boto3 WAFRegional module](#wafregionalclient-for-boto3-wafregional-module)
   - [WAFRegionalClient](#wafregionalclient)
@@ -106,12 +108,13 @@ def get_waf-regional_client() -> WAFRegionalClient:
     return boto3.client("waf-regional")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client)
+Boto3 documentation:
+[WAFRegional.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_waf_regional.client import Exceptions
@@ -119,7 +122,6 @@ from mypy_boto3_waf_regional.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -145,1263 +147,1334 @@ Exceptions:
 - `Exceptions.WAFTagOperationInternalErrorException`
 - `Exceptions.WAFUnavailableEntityException`
 
-
 ## Methods
-
 
 ### associate_web_acl
 
 Type annotations for `boto3.client("waf-regional").associate_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.associate_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.associate_web_acl)
 
-```python
-def associate_web_acl(
-    self,
-    WebACLId: str,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("waf-regional").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.can_paginate]
+Boto3 documentation:
+[WAFRegional.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_byte_match_set
 
-Type annotations for `boto3.client("waf-regional").create_byte_match_set` method.
+Type annotations for `boto3.client("waf-regional").create_byte_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_byte_match_set]
+Boto3 documentation:
+[WAFRegional.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_byte_match_set)
 
-```python
-def create_byte_match_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateByteMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateByteMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createbytematchsetresponsetypedef).
 
 ### create_geo_match_set
 
-Type annotations for `boto3.client("waf-regional").create_geo_match_set` method.
+Type annotations for `boto3.client("waf-regional").create_geo_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_geo_match_set]
+Boto3 documentation:
+[WAFRegional.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_geo_match_set)
 
-```python
-def create_geo_match_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateGeoMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateGeoMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#creategeomatchsetresponsetypedef).
 
 ### create_ip_set
 
 Type annotations for `boto3.client("waf-regional").create_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_ip_set]
+Boto3 documentation:
+[WAFRegional.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_ip_set)
 
-```python
-def create_ip_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createipsetresponsetypedef).
 
 ### create_rate_based_rule
 
-Type annotations for `boto3.client("waf-regional").create_rate_based_rule` method.
+Type annotations for `boto3.client("waf-regional").create_rate_based_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rate_based_rule]
+Boto3 documentation:
+[WAFRegional.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rate_based_rule)
 
-```python
-def create_rate_based_rule(
-    self,
-    Name: str,
-    MetricName: str,
-    RateKey: Literal['IP'],
-    RateLimit: int,
-    ChangeToken: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateRateBasedRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `RateKey`: `Literal['IP']` *(required)*
+- `RateLimit`: `int` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRateBasedRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createratebasedruleresponsetypedef).
 
 ### create_regex_match_set
 
-Type annotations for `boto3.client("waf-regional").create_regex_match_set` method.
+Type annotations for `boto3.client("waf-regional").create_regex_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_match_set]
+Boto3 documentation:
+[WAFRegional.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_match_set)
 
-```python
-def create_regex_match_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateRegexMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateRegexMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createregexmatchsetresponsetypedef).
 
 ### create_regex_pattern_set
 
-Type annotations for `boto3.client("waf-regional").create_regex_pattern_set` method.
+Type annotations for `boto3.client("waf-regional").create_regex_pattern_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_pattern_set]
+Boto3 documentation:
+[WAFRegional.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_pattern_set)
 
-```python
-def create_regex_pattern_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createregexpatternsetresponsetypedef).
 
 ### create_rule
 
 Type annotations for `boto3.client("waf-regional").create_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule]
+Boto3 documentation:
+[WAFRegional.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule)
 
-```python
-def create_rule(
-    self,
-    Name: str,
-    MetricName: str,
-    ChangeToken: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createruleresponsetypedef).
 
 ### create_rule_group
 
 Type annotations for `boto3.client("waf-regional").create_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule_group]
+Boto3 documentation:
+[WAFRegional.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule_group)
 
-```python
-def create_rule_group(
-    self,
-    Name: str,
-    MetricName: str,
-    ChangeToken: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createrulegroupresponsetypedef).
 
 ### create_size_constraint_set
 
-Type annotations for `boto3.client("waf-regional").create_size_constraint_set` method.
+Type annotations for `boto3.client("waf-regional").create_size_constraint_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_size_constraint_set]
+Boto3 documentation:
+[WAFRegional.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_size_constraint_set)
 
-```python
-def create_size_constraint_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateSizeConstraintSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateSizeConstraintSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createsizeconstraintsetresponsetypedef).
 
 ### create_sql_injection_match_set
 
-Type annotations for `boto3.client("waf-regional").create_sql_injection_match_set` method.
+Type annotations for
+`boto3.client("waf-regional").create_sql_injection_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_sql_injection_match_set]
+Boto3 documentation:
+[WAFRegional.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_sql_injection_match_set)
 
-```python
-def create_sql_injection_match_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateSqlInjectionMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateSqlInjectionMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createsqlinjectionmatchsetresponsetypedef).
 
 ### create_web_acl
 
 Type annotations for `boto3.client("waf-regional").create_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl)
 
-```python
-def create_web_acl(
-    self,
-    Name: str,
-    MetricName: str,
-    DefaultAction: "WafActionTypeDef",
-    ChangeToken: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `DefaultAction`:
+  [WafActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#wafactiontypedef)
+  *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createwebaclresponsetypedef).
 
 ### create_web_acl_migration_stack
 
-Type annotations for `boto3.client("waf-regional").create_web_acl_migration_stack` method.
+Type annotations for
+`boto3.client("waf-regional").create_web_acl_migration_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl_migration_stack]
+Boto3 documentation:
+[WAFRegional.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl_migration_stack)
 
-```python
-def create_web_acl_migration_stack(
-    self,
-    WebACLId: str,
-    S3BucketName: str,
-    IgnoreUnsupportedType: bool
-) -> CreateWebACLMigrationStackResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `S3BucketName`: `str` *(required)*
+- `IgnoreUnsupportedType`: `bool` *(required)*
+
+Returns
+[CreateWebACLMigrationStackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createwebaclmigrationstackresponsetypedef).
 
 ### create_xss_match_set
 
-Type annotations for `boto3.client("waf-regional").create_xss_match_set` method.
+Type annotations for `boto3.client("waf-regional").create_xss_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_xss_match_set]
+Boto3 documentation:
+[WAFRegional.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_xss_match_set)
 
-```python
-def create_xss_match_set(
-    self,
-    Name: str,
-    ChangeToken: str
-) -> CreateXssMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[CreateXssMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#createxssmatchsetresponsetypedef).
 
 ### delete_byte_match_set
 
-Type annotations for `boto3.client("waf-regional").delete_byte_match_set` method.
+Type annotations for `boto3.client("waf-regional").delete_byte_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_byte_match_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_byte_match_set)
 
-```python
-def delete_byte_match_set(
-    self,
-    ByteMatchSetId: str,
-    ChangeToken: str
-) -> DeleteByteMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ByteMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteByteMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletebytematchsetresponsetypedef).
 
 ### delete_geo_match_set
 
-Type annotations for `boto3.client("waf-regional").delete_geo_match_set` method.
+Type annotations for `boto3.client("waf-regional").delete_geo_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_geo_match_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_geo_match_set)
 
-```python
-def delete_geo_match_set(
-    self,
-    GeoMatchSetId: str,
-    ChangeToken: str
-) -> DeleteGeoMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GeoMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteGeoMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletegeomatchsetresponsetypedef).
 
 ### delete_ip_set
 
 Type annotations for `boto3.client("waf-regional").delete_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_ip_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_ip_set)
 
-```python
-def delete_ip_set(
-    self,
-    IPSetId: str,
-    ChangeToken: str
-) -> DeleteIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IPSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleteipsetresponsetypedef).
 
 ### delete_logging_configuration
 
-Type annotations for `boto3.client("waf-regional").delete_logging_configuration` method.
+Type annotations for
+`boto3.client("waf-regional").delete_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_logging_configuration]
+Boto3 documentation:
+[WAFRegional.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_logging_configuration)
 
-```python
-def delete_logging_configuration(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_permission_policy
 
-Type annotations for `boto3.client("waf-regional").delete_permission_policy` method.
+Type annotations for `boto3.client("waf-regional").delete_permission_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_permission_policy]
+Boto3 documentation:
+[WAFRegional.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_permission_policy)
 
-```python
-def delete_permission_policy(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_rate_based_rule
 
-Type annotations for `boto3.client("waf-regional").delete_rate_based_rule` method.
+Type annotations for `boto3.client("waf-regional").delete_rate_based_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rate_based_rule]
+Boto3 documentation:
+[WAFRegional.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rate_based_rule)
 
-```python
-def delete_rate_based_rule(
-    self,
-    RuleId: str,
-    ChangeToken: str
-) -> DeleteRateBasedRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteRateBasedRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleteratebasedruleresponsetypedef).
 
 ### delete_regex_match_set
 
-Type annotations for `boto3.client("waf-regional").delete_regex_match_set` method.
+Type annotations for `boto3.client("waf-regional").delete_regex_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_match_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_match_set)
 
-```python
-def delete_regex_match_set(
-    self,
-    RegexMatchSetId: str,
-    ChangeToken: str
-) -> DeleteRegexMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteRegexMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleteregexmatchsetresponsetypedef).
 
 ### delete_regex_pattern_set
 
-Type annotations for `boto3.client("waf-regional").delete_regex_pattern_set` method.
+Type annotations for `boto3.client("waf-regional").delete_regex_pattern_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_pattern_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_pattern_set)
 
-```python
-def delete_regex_pattern_set(
-    self,
-    RegexPatternSetId: str,
-    ChangeToken: str
-) -> DeleteRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexPatternSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleteregexpatternsetresponsetypedef).
 
 ### delete_rule
 
 Type annotations for `boto3.client("waf-regional").delete_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule]
+Boto3 documentation:
+[WAFRegional.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule)
 
-```python
-def delete_rule(
-    self,
-    RuleId: str,
-    ChangeToken: str
-) -> DeleteRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleteruleresponsetypedef).
 
 ### delete_rule_group
 
 Type annotations for `boto3.client("waf-regional").delete_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule_group]
+Boto3 documentation:
+[WAFRegional.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule_group)
 
-```python
-def delete_rule_group(
-    self,
-    RuleGroupId: str,
-    ChangeToken: str
-) -> DeleteRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deleterulegroupresponsetypedef).
 
 ### delete_size_constraint_set
 
-Type annotations for `boto3.client("waf-regional").delete_size_constraint_set` method.
+Type annotations for `boto3.client("waf-regional").delete_size_constraint_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_size_constraint_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_size_constraint_set)
 
-```python
-def delete_size_constraint_set(
-    self,
-    SizeConstraintSetId: str,
-    ChangeToken: str
-) -> DeleteSizeConstraintSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SizeConstraintSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteSizeConstraintSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletesizeconstraintsetresponsetypedef).
 
 ### delete_sql_injection_match_set
 
-Type annotations for `boto3.client("waf-regional").delete_sql_injection_match_set` method.
+Type annotations for
+`boto3.client("waf-regional").delete_sql_injection_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_sql_injection_match_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_sql_injection_match_set)
 
-```python
-def delete_sql_injection_match_set(
-    self,
-    SqlInjectionMatchSetId: str,
-    ChangeToken: str
-) -> DeleteSqlInjectionMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SqlInjectionMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteSqlInjectionMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletesqlinjectionmatchsetresponsetypedef).
 
 ### delete_web_acl
 
 Type annotations for `boto3.client("waf-regional").delete_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_web_acl)
 
-```python
-def delete_web_acl(
-    self,
-    WebACLId: str,
-    ChangeToken: str
-) -> DeleteWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletewebaclresponsetypedef).
 
 ### delete_xss_match_set
 
-Type annotations for `boto3.client("waf-regional").delete_xss_match_set` method.
+Type annotations for `boto3.client("waf-regional").delete_xss_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_xss_match_set]
+Boto3 documentation:
+[WAFRegional.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_xss_match_set)
 
-```python
-def delete_xss_match_set(
-    self,
-    XssMatchSetId: str,
-    ChangeToken: str
-) -> DeleteXssMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `XssMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[DeleteXssMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#deletexssmatchsetresponsetypedef).
 
 ### disassociate_web_acl
 
-Type annotations for `boto3.client("waf-regional").disassociate_web_acl` method.
+Type annotations for `boto3.client("waf-regional").disassociate_web_acl`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.disassociate_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.disassociate_web_acl)
 
-```python
-def disassociate_web_acl(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("waf-regional").generate_presigned_url` method.
+Type annotations for `boto3.client("waf-regional").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.generate_presigned_url]
+Boto3 documentation:
+[WAFRegional.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_byte_match_set
 
 Type annotations for `boto3.client("waf-regional").get_byte_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_byte_match_set]
+Boto3 documentation:
+[WAFRegional.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_byte_match_set)
 
-```python
-def get_byte_match_set(
-    self,
-    ByteMatchSetId: str
-) -> GetByteMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ByteMatchSetId`: `str` *(required)*
+
+Returns
+[GetByteMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getbytematchsetresponsetypedef).
 
 ### get_change_token
 
 Type annotations for `boto3.client("waf-regional").get_change_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token]
+Boto3 documentation:
+[WAFRegional.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token)
 
-```python
-def get_change_token(
-    self
-) -> GetChangeTokenResponseTypeDef:
-    pass
-```
+Returns
+[GetChangeTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getchangetokenresponsetypedef).
 
 ### get_change_token_status
 
-Type annotations for `boto3.client("waf-regional").get_change_token_status` method.
+Type annotations for `boto3.client("waf-regional").get_change_token_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token_status]
+Boto3 documentation:
+[WAFRegional.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token_status)
 
-```python
-def get_change_token_status(
-    self,
-    ChangeToken: str
-) -> GetChangeTokenStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[GetChangeTokenStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getchangetokenstatusresponsetypedef).
 
 ### get_geo_match_set
 
 Type annotations for `boto3.client("waf-regional").get_geo_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_geo_match_set]
+Boto3 documentation:
+[WAFRegional.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_geo_match_set)
 
-```python
-def get_geo_match_set(
-    self,
-    GeoMatchSetId: str
-) -> GetGeoMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GeoMatchSetId`: `str` *(required)*
+
+Returns
+[GetGeoMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getgeomatchsetresponsetypedef).
 
 ### get_ip_set
 
 Type annotations for `boto3.client("waf-regional").get_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_ip_set]
+Boto3 documentation:
+[WAFRegional.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_ip_set)
 
-```python
-def get_ip_set(
-    self,
-    IPSetId: str
-) -> GetIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IPSetId`: `str` *(required)*
+
+Returns
+[GetIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getipsetresponsetypedef).
 
 ### get_logging_configuration
 
-Type annotations for `boto3.client("waf-regional").get_logging_configuration` method.
+Type annotations for `boto3.client("waf-regional").get_logging_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_logging_configuration]
+Boto3 documentation:
+[WAFRegional.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_logging_configuration)
 
-```python
-def get_logging_configuration(
-    self,
-    ResourceArn: str
-) -> GetLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getloggingconfigurationresponsetypedef).
 
 ### get_permission_policy
 
-Type annotations for `boto3.client("waf-regional").get_permission_policy` method.
+Type annotations for `boto3.client("waf-regional").get_permission_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_permission_policy]
+Boto3 documentation:
+[WAFRegional.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_permission_policy)
 
-```python
-def get_permission_policy(
-    self,
-    ResourceArn: str
-) -> GetPermissionPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetPermissionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getpermissionpolicyresponsetypedef).
 
 ### get_rate_based_rule
 
 Type annotations for `boto3.client("waf-regional").get_rate_based_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule]
+Boto3 documentation:
+[WAFRegional.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule)
 
-```python
-def get_rate_based_rule(
-    self,
-    RuleId: str
-) -> GetRateBasedRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+
+Returns
+[GetRateBasedRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getratebasedruleresponsetypedef).
 
 ### get_rate_based_rule_managed_keys
 
-Type annotations for `boto3.client("waf-regional").get_rate_based_rule_managed_keys` method.
+Type annotations for
+`boto3.client("waf-regional").get_rate_based_rule_managed_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule_managed_keys]
+Boto3 documentation:
+[WAFRegional.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule_managed_keys)
 
-```python
-def get_rate_based_rule_managed_keys(
-    self,
-    RuleId: str,
-    NextMarker: str = None
-) -> GetRateBasedRuleManagedKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+- `NextMarker`: `str`
+
+Returns
+[GetRateBasedRuleManagedKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getratebasedrulemanagedkeysresponsetypedef).
 
 ### get_regex_match_set
 
 Type annotations for `boto3.client("waf-regional").get_regex_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_match_set]
+Boto3 documentation:
+[WAFRegional.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_match_set)
 
-```python
-def get_regex_match_set(
-    self,
-    RegexMatchSetId: str
-) -> GetRegexMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexMatchSetId`: `str` *(required)*
+
+Returns
+[GetRegexMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getregexmatchsetresponsetypedef).
 
 ### get_regex_pattern_set
 
-Type annotations for `boto3.client("waf-regional").get_regex_pattern_set` method.
+Type annotations for `boto3.client("waf-regional").get_regex_pattern_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_pattern_set]
+Boto3 documentation:
+[WAFRegional.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_pattern_set)
 
-```python
-def get_regex_pattern_set(
-    self,
-    RegexPatternSetId: str
-) -> GetRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexPatternSetId`: `str` *(required)*
+
+Returns
+[GetRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getregexpatternsetresponsetypedef).
 
 ### get_rule
 
 Type annotations for `boto3.client("waf-regional").get_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule]
+Boto3 documentation:
+[WAFRegional.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule)
 
-```python
-def get_rule(
-    self,
-    RuleId: str
-) -> GetRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+
+Returns
+[GetRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getruleresponsetypedef).
 
 ### get_rule_group
 
 Type annotations for `boto3.client("waf-regional").get_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule_group]
+Boto3 documentation:
+[WAFRegional.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule_group)
 
-```python
-def get_rule_group(
-    self,
-    RuleGroupId: str
-) -> GetRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupId`: `str` *(required)*
+
+Returns
+[GetRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getrulegroupresponsetypedef).
 
 ### get_sampled_requests
 
-Type annotations for `boto3.client("waf-regional").get_sampled_requests` method.
+Type annotations for `boto3.client("waf-regional").get_sampled_requests`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sampled_requests]
+Boto3 documentation:
+[WAFRegional.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sampled_requests)
 
-```python
-def get_sampled_requests(
-    self,
-    WebAclId: str,
-    RuleId: str,
-    TimeWindow: "TimeWindowTypeDef",
-    MaxItems: int
-) -> GetSampledRequestsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebAclId`: `str` *(required)*
+- `RuleId`: `str` *(required)*
+- `TimeWindow`:
+  [TimeWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#timewindowtypedef)
+  *(required)*
+- `MaxItems`: `int` *(required)*
+
+Returns
+[GetSampledRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getsampledrequestsresponsetypedef).
 
 ### get_size_constraint_set
 
-Type annotations for `boto3.client("waf-regional").get_size_constraint_set` method.
+Type annotations for `boto3.client("waf-regional").get_size_constraint_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_size_constraint_set]
+Boto3 documentation:
+[WAFRegional.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_size_constraint_set)
 
-```python
-def get_size_constraint_set(
-    self,
-    SizeConstraintSetId: str
-) -> GetSizeConstraintSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SizeConstraintSetId`: `str` *(required)*
+
+Returns
+[GetSizeConstraintSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getsizeconstraintsetresponsetypedef).
 
 ### get_sql_injection_match_set
 
-Type annotations for `boto3.client("waf-regional").get_sql_injection_match_set` method.
+Type annotations for `boto3.client("waf-regional").get_sql_injection_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sql_injection_match_set]
+Boto3 documentation:
+[WAFRegional.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sql_injection_match_set)
 
-```python
-def get_sql_injection_match_set(
-    self,
-    SqlInjectionMatchSetId: str
-) -> GetSqlInjectionMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SqlInjectionMatchSetId`: `str` *(required)*
+
+Returns
+[GetSqlInjectionMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getsqlinjectionmatchsetresponsetypedef).
 
 ### get_web_acl
 
 Type annotations for `boto3.client("waf-regional").get_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl)
 
-```python
-def get_web_acl(
-    self,
-    WebACLId: str
-) -> GetWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+
+Returns
+[GetWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getwebaclresponsetypedef).
 
 ### get_web_acl_for_resource
 
-Type annotations for `boto3.client("waf-regional").get_web_acl_for_resource` method.
+Type annotations for `boto3.client("waf-regional").get_web_acl_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl_for_resource]
+Boto3 documentation:
+[WAFRegional.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl_for_resource)
 
-```python
-def get_web_acl_for_resource(
-    self,
-    ResourceArn: str
-) -> GetWebACLForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetWebACLForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getwebaclforresourceresponsetypedef).
 
 ### get_xss_match_set
 
 Type annotations for `boto3.client("waf-regional").get_xss_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_xss_match_set]
+Boto3 documentation:
+[WAFRegional.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_xss_match_set)
 
-```python
-def get_xss_match_set(
-    self,
-    XssMatchSetId: str
-) -> GetXssMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `XssMatchSetId`: `str` *(required)*
+
+Returns
+[GetXssMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#getxssmatchsetresponsetypedef).
 
 ### list_activated_rules_in_rule_group
 
-Type annotations for `boto3.client("waf-regional").list_activated_rules_in_rule_group` method.
+Type annotations for
+`boto3.client("waf-regional").list_activated_rules_in_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_activated_rules_in_rule_group]
+Boto3 documentation:
+[WAFRegional.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_activated_rules_in_rule_group)
 
-```python
-def list_activated_rules_in_rule_group(
-    self,
-    RuleGroupId: str = None,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListActivatedRulesInRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupId`: `str`
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListActivatedRulesInRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listactivatedrulesinrulegroupresponsetypedef).
 
 ### list_byte_match_sets
 
-Type annotations for `boto3.client("waf-regional").list_byte_match_sets` method.
+Type annotations for `boto3.client("waf-regional").list_byte_match_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_byte_match_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_byte_match_sets)
 
-```python
-def list_byte_match_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListByteMatchSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListByteMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listbytematchsetsresponsetypedef).
 
 ### list_geo_match_sets
 
 Type annotations for `boto3.client("waf-regional").list_geo_match_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_geo_match_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_geo_match_sets)
 
-```python
-def list_geo_match_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListGeoMatchSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListGeoMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listgeomatchsetsresponsetypedef).
 
 ### list_ip_sets
 
 Type annotations for `boto3.client("waf-regional").list_ip_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_ip_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_ip_sets)
 
-```python
-def list_ip_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListIPSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listipsetsresponsetypedef).
 
 ### list_logging_configurations
 
-Type annotations for `boto3.client("waf-regional").list_logging_configurations` method.
+Type annotations for `boto3.client("waf-regional").list_logging_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_logging_configurations]
+Boto3 documentation:
+[WAFRegional.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_logging_configurations)
 
-```python
-def list_logging_configurations(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListLoggingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListLoggingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listloggingconfigurationsresponsetypedef).
 
 ### list_rate_based_rules
 
-Type annotations for `boto3.client("waf-regional").list_rate_based_rules` method.
+Type annotations for `boto3.client("waf-regional").list_rate_based_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rate_based_rules]
+Boto3 documentation:
+[WAFRegional.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rate_based_rules)
 
-```python
-def list_rate_based_rules(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRateBasedRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRateBasedRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listratebasedrulesresponsetypedef).
 
 ### list_regex_match_sets
 
-Type annotations for `boto3.client("waf-regional").list_regex_match_sets` method.
+Type annotations for `boto3.client("waf-regional").list_regex_match_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_match_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_match_sets)
 
-```python
-def list_regex_match_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRegexMatchSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRegexMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listregexmatchsetsresponsetypedef).
 
 ### list_regex_pattern_sets
 
-Type annotations for `boto3.client("waf-regional").list_regex_pattern_sets` method.
+Type annotations for `boto3.client("waf-regional").list_regex_pattern_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_pattern_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_pattern_sets)
 
-```python
-def list_regex_pattern_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRegexPatternSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRegexPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listregexpatternsetsresponsetypedef).
 
 ### list_resources_for_web_acl
 
-Type annotations for `boto3.client("waf-regional").list_resources_for_web_acl` method.
+Type annotations for `boto3.client("waf-regional").list_resources_for_web_acl`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_resources_for_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_resources_for_web_acl)
 
-```python
-def list_resources_for_web_acl(
-    self,
-    WebACLId: str,
-    ResourceType: ResourceType = None
-) -> ListResourcesForWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `ResourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/literals.html#resourcetype)
+
+Returns
+[ListResourcesForWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listresourcesforwebaclresponsetypedef).
 
 ### list_rule_groups
 
 Type annotations for `boto3.client("waf-regional").list_rule_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rule_groups]
+Boto3 documentation:
+[WAFRegional.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rule_groups)
 
-```python
-def list_rule_groups(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listrulegroupsresponsetypedef).
 
 ### list_rules
 
 Type annotations for `boto3.client("waf-regional").list_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rules]
+Boto3 documentation:
+[WAFRegional.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rules)
 
-```python
-def list_rules(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listrulesresponsetypedef).
 
 ### list_size_constraint_sets
 
-Type annotations for `boto3.client("waf-regional").list_size_constraint_sets` method.
+Type annotations for `boto3.client("waf-regional").list_size_constraint_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_size_constraint_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_size_constraint_sets)
 
-```python
-def list_size_constraint_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListSizeConstraintSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListSizeConstraintSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listsizeconstraintsetsresponsetypedef).
 
 ### list_sql_injection_match_sets
 
-Type annotations for `boto3.client("waf-regional").list_sql_injection_match_sets` method.
+Type annotations for
+`boto3.client("waf-regional").list_sql_injection_match_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_sql_injection_match_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_sql_injection_match_sets)
 
-```python
-def list_sql_injection_match_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListSqlInjectionMatchSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListSqlInjectionMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listsqlinjectionmatchsetsresponsetypedef).
 
 ### list_subscribed_rule_groups
 
-Type annotations for `boto3.client("waf-regional").list_subscribed_rule_groups` method.
+Type annotations for `boto3.client("waf-regional").list_subscribed_rule_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_subscribed_rule_groups]
+Boto3 documentation:
+[WAFRegional.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_subscribed_rule_groups)
 
-```python
-def list_subscribed_rule_groups(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListSubscribedRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListSubscribedRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listsubscribedrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("waf-regional").list_tags_for_resource` method.
+Type annotations for `boto3.client("waf-regional").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_tags_for_resource]
+Boto3 documentation:
+[WAFRegional.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_web_acls
 
 Type annotations for `boto3.client("waf-regional").list_web_acls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_web_acls]
+Boto3 documentation:
+[WAFRegional.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_web_acls)
 
-```python
-def list_web_acls(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListWebACLsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListWebACLsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listwebaclsresponsetypedef).
 
 ### list_xss_match_sets
 
 Type annotations for `boto3.client("waf-regional").list_xss_match_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_xss_match_sets]
+Boto3 documentation:
+[WAFRegional.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_xss_match_sets)
 
-```python
-def list_xss_match_sets(
-    self,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListXssMatchSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListXssMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#listxssmatchsetsresponsetypedef).
 
 ### put_logging_configuration
 
-Type annotations for `boto3.client("waf-regional").put_logging_configuration` method.
+Type annotations for `boto3.client("waf-regional").put_logging_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_logging_configuration]
+Boto3 documentation:
+[WAFRegional.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_logging_configuration)
 
-```python
-def put_logging_configuration(
-    self,
-    LoggingConfiguration: "LoggingConfigurationTypeDef"
-) -> PutLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#loggingconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#putloggingconfigurationresponsetypedef).
 
 ### put_permission_policy
 
-Type annotations for `boto3.client("waf-regional").put_permission_policy` method.
+Type annotations for `boto3.client("waf-regional").put_permission_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_permission_policy]
+Boto3 documentation:
+[WAFRegional.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_permission_policy)
 
-```python
-def put_permission_policy(
-    self,
-    ResourceArn: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("waf-regional").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.tag_resource]
+Boto3 documentation:
+[WAFRegional.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("waf-regional").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.untag_resource]
+Boto3 documentation:
+[WAFRegional.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_byte_match_set
 
-Type annotations for `boto3.client("waf-regional").update_byte_match_set` method.
+Type annotations for `boto3.client("waf-regional").update_byte_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_byte_match_set]
+Boto3 documentation:
+[WAFRegional.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_byte_match_set)
 
-```python
-def update_byte_match_set(
-    self,
-    ByteMatchSetId: str,
-    ChangeToken: str,
-    Updates: List[ByteMatchSetUpdateTypeDef]
-) -> UpdateByteMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ByteMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[ByteMatchSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#bytematchsetupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateByteMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updatebytematchsetresponsetypedef).
 
 ### update_geo_match_set
 
-Type annotations for `boto3.client("waf-regional").update_geo_match_set` method.
+Type annotations for `boto3.client("waf-regional").update_geo_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_geo_match_set]
+Boto3 documentation:
+[WAFRegional.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_geo_match_set)
 
-```python
-def update_geo_match_set(
-    self,
-    GeoMatchSetId: str,
-    ChangeToken: str,
-    Updates: List[GeoMatchSetUpdateTypeDef]
-) -> UpdateGeoMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GeoMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[GeoMatchSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#geomatchsetupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateGeoMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updategeomatchsetresponsetypedef).
 
 ### update_ip_set
 
 Type annotations for `boto3.client("waf-regional").update_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_ip_set]
+Boto3 documentation:
+[WAFRegional.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_ip_set)
 
-```python
-def update_ip_set(
-    self,
-    IPSetId: str,
-    ChangeToken: str,
-    Updates: List[IPSetUpdateTypeDef]
-) -> UpdateIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IPSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[IPSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#ipsetupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updateipsetresponsetypedef).
 
 ### update_rate_based_rule
 
-Type annotations for `boto3.client("waf-regional").update_rate_based_rule` method.
+Type annotations for `boto3.client("waf-regional").update_rate_based_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rate_based_rule]
+Boto3 documentation:
+[WAFRegional.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rate_based_rule)
 
-```python
-def update_rate_based_rule(
-    self,
-    RuleId: str,
-    ChangeToken: str,
-    Updates: List[RuleUpdateTypeDef],
-    RateLimit: int
-) -> UpdateRateBasedRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[RuleUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#ruleupdatetypedef)\]
+  *(required)*
+- `RateLimit`: `int` *(required)*
+
+Returns
+[UpdateRateBasedRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updateratebasedruleresponsetypedef).
 
 ### update_regex_match_set
 
-Type annotations for `boto3.client("waf-regional").update_regex_match_set` method.
+Type annotations for `boto3.client("waf-regional").update_regex_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_match_set]
+Boto3 documentation:
+[WAFRegional.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_match_set)
 
-```python
-def update_regex_match_set(
-    self,
-    RegexMatchSetId: str,
-    Updates: List[RegexMatchSetUpdateTypeDef],
-    ChangeToken: str
-) -> UpdateRegexMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexMatchSetId`: `str` *(required)*
+- `Updates`:
+  `List`\[[RegexMatchSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#regexmatchsetupdatetypedef)\]
+  *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[UpdateRegexMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updateregexmatchsetresponsetypedef).
 
 ### update_regex_pattern_set
 
-Type annotations for `boto3.client("waf-regional").update_regex_pattern_set` method.
+Type annotations for `boto3.client("waf-regional").update_regex_pattern_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_pattern_set]
+Boto3 documentation:
+[WAFRegional.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_pattern_set)
 
-```python
-def update_regex_pattern_set(
-    self,
-    RegexPatternSetId: str,
-    Updates: List[RegexPatternSetUpdateTypeDef],
-    ChangeToken: str
-) -> UpdateRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegexPatternSetId`: `str` *(required)*
+- `Updates`:
+  `List`\[[RegexPatternSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#regexpatternsetupdatetypedef)\]
+  *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[UpdateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updateregexpatternsetresponsetypedef).
 
 ### update_rule
 
 Type annotations for `boto3.client("waf-regional").update_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule]
+Boto3 documentation:
+[WAFRegional.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule)
 
-```python
-def update_rule(
-    self,
-    RuleId: str,
-    ChangeToken: str,
-    Updates: List[RuleUpdateTypeDef]
-) -> UpdateRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[RuleUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#ruleupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updateruleresponsetypedef).
 
 ### update_rule_group
 
 Type annotations for `boto3.client("waf-regional").update_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule_group]
+Boto3 documentation:
+[WAFRegional.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule_group)
 
-```python
-def update_rule_group(
-    self,
-    RuleGroupId: str,
-    Updates: List[RuleGroupUpdateTypeDef],
-    ChangeToken: str
-) -> UpdateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupId`: `str` *(required)*
+- `Updates`:
+  `List`\[[RuleGroupUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#rulegroupupdatetypedef)\]
+  *(required)*
+- `ChangeToken`: `str` *(required)*
+
+Returns
+[UpdateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updaterulegroupresponsetypedef).
 
 ### update_size_constraint_set
 
-Type annotations for `boto3.client("waf-regional").update_size_constraint_set` method.
+Type annotations for `boto3.client("waf-regional").update_size_constraint_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_size_constraint_set]
+Boto3 documentation:
+[WAFRegional.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_size_constraint_set)
 
-```python
-def update_size_constraint_set(
-    self,
-    SizeConstraintSetId: str,
-    ChangeToken: str,
-    Updates: List[SizeConstraintSetUpdateTypeDef]
-) -> UpdateSizeConstraintSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SizeConstraintSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[SizeConstraintSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#sizeconstraintsetupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateSizeConstraintSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updatesizeconstraintsetresponsetypedef).
 
 ### update_sql_injection_match_set
 
-Type annotations for `boto3.client("waf-regional").update_sql_injection_match_set` method.
+Type annotations for
+`boto3.client("waf-regional").update_sql_injection_match_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_sql_injection_match_set]
+Boto3 documentation:
+[WAFRegional.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_sql_injection_match_set)
 
-```python
-def update_sql_injection_match_set(
-    self,
-    SqlInjectionMatchSetId: str,
-    ChangeToken: str,
-    Updates: List[SqlInjectionMatchSetUpdateTypeDef]
-) -> UpdateSqlInjectionMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SqlInjectionMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[SqlInjectionMatchSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#sqlinjectionmatchsetupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateSqlInjectionMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updatesqlinjectionmatchsetresponsetypedef).
 
 ### update_web_acl
 
 Type annotations for `boto3.client("waf-regional").update_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_web_acl]
+Boto3 documentation:
+[WAFRegional.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_web_acl)
 
-```python
-def update_web_acl(
-    self,
-    WebACLId: str,
-    ChangeToken: str,
-    Updates: List[WebACLUpdateTypeDef] = None,
-    DefaultAction: "WafActionTypeDef" = None
-) -> UpdateWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[WebACLUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#webaclupdatetypedef)\]
+- `DefaultAction`:
+  [WafActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#wafactiontypedef)
+
+Returns
+[UpdateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updatewebaclresponsetypedef).
 
 ### update_xss_match_set
 
-Type annotations for `boto3.client("waf-regional").update_xss_match_set` method.
+Type annotations for `boto3.client("waf-regional").update_xss_match_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_xss_match_set]
+Boto3 documentation:
+[WAFRegional.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_xss_match_set)
 
-```python
-def update_xss_match_set(
-    self,
-    XssMatchSetId: str,
-    ChangeToken: str,
-    Updates: List[XssMatchSetUpdateTypeDef]
-) -> UpdateXssMatchSetResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `XssMatchSetId`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Updates`:
+  `List`\[[XssMatchSetUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#xssmatchsetupdatetypedef)\]
+  *(required)*
 
-
+Returns
+[UpdateXssMatchSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf_regional/type_defs.html#updatexssmatchsetresponsetypedef).

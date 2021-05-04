@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DevopsGuru](./README.md) > Paginators
 
-Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
-type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+Auto-generated documentation for
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+type annotations stubs module
+[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Paginators for boto3 DevopsGuru module](#paginators-for-boto3-devopsguru-module)
   - [DescribeResourceCollectionHealthPaginator](#describeresourcecollectionhealthpaginator)
@@ -17,7 +19,8 @@ type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/
 
 ## DescribeResourceCollectionHealthPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("describe_resource_collection_health")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("describe_resource_collection_health")`.
 
 Can be used directly:
 
@@ -28,20 +31,22 @@ def get_describe_resource_collection_health_paginator() -> DescribeResourceColle
     return boto3.client("devops-guru").get_paginator("describe_resource_collection_health")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
+Boto3 documentation:
+[DevopsGuru.Paginator.DescribeResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
 
-```python
-class DescribeResourceCollectionHealthPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceCollectionType: Literal['AWS_CLOUD_FORMATION'],
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeResourceCollectionHealthResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
+
+- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`DescribeResourceCollectionHealthPaginator.paginate` returns
+`Iterator`\[[DescribeResourceCollectionHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeresourcecollectionhealthresponsetypedef)\].
+
 ## GetResourceCollectionPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("get_resource_collection")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("get_resource_collection")`.
 
 Can be used directly:
 
@@ -52,20 +57,22 @@ def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
     return boto3.client("devops-guru").get_paginator("get_resource_collection")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
+Boto3 documentation:
+[DevopsGuru.Paginator.GetResourceCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
 
-```python
-class GetResourceCollectionPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceCollectionType: Literal['AWS_CLOUD_FORMATION'],
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetResourceCollectionResponseTypeDef]:
-        pass
-```
+Arguments for `GetResourceCollectionPaginator.paginate` method:
+
+- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`GetResourceCollectionPaginator.paginate` returns
+`Iterator`\[[GetResourceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getresourcecollectionresponsetypedef)\].
+
 ## ListAnomaliesForInsightPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")`.
 
 Can be used directly:
 
@@ -76,21 +83,24 @@ def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginat
     return boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
+Boto3 documentation:
+[DevopsGuru.Paginator.ListAnomaliesForInsight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
 
-```python
-class ListAnomaliesForInsightPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        InsightId: str,
-        StartTimeRange: "StartTimeRangeTypeDef" = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAnomaliesForInsightResponseTypeDef]:
-        pass
-```
+Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
+
+- `InsightId`: `str` *(required)*
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`ListAnomaliesForInsightPaginator.paginate` returns
+`Iterator`\[[ListAnomaliesForInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listanomaliesforinsightresponsetypedef)\].
+
 ## ListEventsPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("list_events")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_events")`.
 
 Can be used directly:
 
@@ -101,20 +111,24 @@ def get_list_events_paginator() -> ListEventsPaginator:
     return boto3.client("devops-guru").get_paginator("list_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
+Boto3 documentation:
+[DevopsGuru.Paginator.ListEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
 
-```python
-class ListEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: ListEventsFiltersTypeDef,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListEventsResponseTypeDef]:
-        pass
-```
+Arguments for `ListEventsPaginator.paginate` method:
+
+- `Filters`:
+  [ListEventsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsfilterstypedef)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`ListEventsPaginator.paginate` returns
+`Iterator`\[[ListEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsresponsetypedef)\].
+
 ## ListInsightsPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("list_insights")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_insights")`.
 
 Can be used directly:
 
@@ -125,20 +139,24 @@ def get_list_insights_paginator() -> ListInsightsPaginator:
     return boto3.client("devops-guru").get_paginator("list_insights")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
+Boto3 documentation:
+[DevopsGuru.Paginator.ListInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
 
-```python
-class ListInsightsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StatusFilter: ListInsightsStatusFilterTypeDef,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListInsightsResponseTypeDef]:
-        pass
-```
+Arguments for `ListInsightsPaginator.paginate` method:
+
+- `StatusFilter`:
+  [ListInsightsStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsstatusfiltertypedef)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`ListInsightsPaginator.paginate` returns
+`Iterator`\[[ListInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsresponsetypedef)\].
+
 ## ListNotificationChannelsPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("list_notification_channels")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_notification_channels")`.
 
 Can be used directly:
 
@@ -149,19 +167,21 @@ def get_list_notification_channels_paginator() -> ListNotificationChannelsPagina
     return boto3.client("devops-guru").get_paginator("list_notification_channels")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
+Boto3 documentation:
+[DevopsGuru.Paginator.ListNotificationChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
 
-```python
-class ListNotificationChannelsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListNotificationChannelsResponseTypeDef]:
-        pass
-```
+Arguments for `ListNotificationChannelsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`ListNotificationChannelsPaginator.paginate` returns
+`Iterator`\[[ListNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listnotificationchannelsresponsetypedef)\].
+
 ## ListRecommendationsPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("list_recommendations")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("list_recommendations")`.
 
 Can be used directly:
 
@@ -172,20 +192,22 @@ def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
     return boto3.client("devops-guru").get_paginator("list_recommendations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
+Boto3 documentation:
+[DevopsGuru.Paginator.ListRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
 
-```python
-class ListRecommendationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        InsightId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRecommendationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListRecommendationsPaginator.paginate` method:
+
+- `InsightId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`ListRecommendationsPaginator.paginate` returns
+`Iterator`\[[ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listrecommendationsresponsetypedef)\].
+
 ## SearchInsightsPaginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator("search_insights")`.
+Type annotations for
+`boto3.client("devops-guru").get_paginator("search_insights")`.
 
 Can be used directly:
 
@@ -196,16 +218,21 @@ def get_search_insights_paginator() -> SearchInsightsPaginator:
     return boto3.client("devops-guru").get_paginator("search_insights")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
+Boto3 documentation:
+[DevopsGuru.Paginator.SearchInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
 
-```python
-class SearchInsightsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StartTimeRange: "StartTimeRangeTypeDef",
-        Type: InsightType,
-        Filters: SearchInsightsFiltersTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchInsightsResponseTypeDef]:
-        pass
-```
+Arguments for `SearchInsightsPaginator.paginate` method:
+
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+  *(required)*
+- `Type`:
+  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
+  *(required)*
+- `Filters`:
+  [SearchInsightsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsfilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`SearchInsightsPaginator.paginate` returns
+`Iterator`\[[SearchInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsresponsetypedef)\].

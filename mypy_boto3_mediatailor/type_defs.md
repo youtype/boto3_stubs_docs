@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaTailor](./README.md) > Structures
 
-Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+Auto-generated documentation for
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+type annotations stubs module
+[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [Typed dictionaries for boto3 MediaTailor module](#typed-dictionaries-for-boto3-mediatailor-module)
   - [AccessConfigurationTypeDef](#accessconfigurationtypedef)
@@ -61,12 +63,9 @@ type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/
 from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessType`: `Literal['S3_SIGV4']`
 
+- `AccessType`: `Literal['S3_SIGV4']`
 
 ## AdBreakTypeDef
 
@@ -74,15 +73,14 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import AdBreakTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MessageType`: `Literal['SPLICE_INSERT']`
 - `OffsetMillis`: `int`
-- `Slate`: `"SlateSourceTypeDef"`
-- `SpliceInsertMessage`: `"SpliceInsertMessageTypeDef"`
-
+- `Slate`:
+  [SlateSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#slatesourcetypedef)
+- `SpliceInsertMessage`:
+  [SpliceInsertMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#spliceinsertmessagetypedef)
 
 ## AdMarkerPassthroughTypeDef
 
@@ -90,12 +88,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import AdMarkerPassthroughTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## AvailSuppressionTypeDef
 
@@ -103,13 +98,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import AvailSuppressionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Mode`: `Mode`
-- `Value`: `str`
 
+- `Mode`:
+  [Mode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#mode)
+- `Value`: `str`
 
 ## BumperTypeDef
 
@@ -117,13 +110,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import BumperTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndUrl`: `str`
 - `StartUrl`: `str`
-
 
 ## CdnConfigurationTypeDef
 
@@ -131,13 +121,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import CdnConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdSegmentUrlPrefix`: `str`
 - `ContentSegmentUrlPrefix`: `str`
-
 
 ## ChannelTypeDef
 
@@ -145,21 +132,20 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ChannelTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `ChannelName`: `str`
 - `ChannelState`: `str`
-- `Outputs`: `List["ResponseOutputItemTypeDef"]`
+- `Outputs`:
+  `List`\[[ResponseOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
 
-
-
 Optional fields:
+
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -167,19 +153,18 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import CreateChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: `ChannelState`
+- `ChannelState`:
+  [ChannelState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#channelstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `Outputs`: `List["ResponseOutputItemTypeDef"]`
+- `Outputs`:
+  `List`\[[ResponseOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateProgramResponseTypeDef
 
@@ -187,18 +172,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import CreateProgramResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdBreaks`: `List["AdBreakTypeDef"]`
+
+- `AdBreaks`:
+  `List`\[[AdBreakTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#adbreaktypedef)\]
 - `Arn`: `str`
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
-
 
 ## CreateSourceLocationResponseTypeDef
 
@@ -206,19 +189,19 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import CreateSourceLocationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessConfiguration`: `"AccessConfigurationTypeDef"`
+
+- `AccessConfiguration`:
+  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`: `"DefaultSegmentDeliveryConfigurationTypeDef"`
-- `HttpConfiguration`: `"HttpConfigurationTypeDef"`
+- `DefaultSegmentDeliveryConfiguration`:
+  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+- `HttpConfiguration`:
+  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateVodSourceResponseTypeDef
 
@@ -226,18 +209,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import CreateVodSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `HttpPackageConfigurations`: `List["HttpPackageConfigurationTypeDef"]`
+- `HttpPackageConfigurations`:
+  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VodSourceName`: `str`
-
 
 ## DashConfigurationForPutTypeDef
 
@@ -245,13 +226,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DashConfigurationForPutTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MpdLocation`: `str`
-- `OriginManifestType`: `OriginManifestType`
 
+- `MpdLocation`: `str`
+- `OriginManifestType`:
+  [OriginManifestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#originmanifesttype)
 
 ## DashConfigurationTypeDef
 
@@ -259,14 +238,12 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DashConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ManifestEndpointPrefix`: `str`
 - `MpdLocation`: `str`
-- `OriginManifestType`: `OriginManifestType`
-
+- `OriginManifestType`:
+  [OriginManifestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#originmanifesttype)
 
 ## DashPlaylistSettingsTypeDef
 
@@ -274,15 +251,12 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DashPlaylistSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ManifestWindowSeconds`: `int`
 - `MinBufferTimeSeconds`: `int`
 - `MinUpdatePeriodSeconds`: `int`
 - `SuggestedPresentationDelaySeconds`: `int`
-
 
 ## DefaultSegmentDeliveryConfigurationTypeDef
 
@@ -290,12 +264,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DefaultSegmentDeliveryConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseUrl`: `str`
 
+- `BaseUrl`: `str`
 
 ## DescribeChannelResponseTypeDef
 
@@ -303,19 +274,18 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DescribeChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: `ChannelState`
+- `ChannelState`:
+  [ChannelState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#channelstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `Outputs`: `List["ResponseOutputItemTypeDef"]`
+- `Outputs`:
+  `List`\[[ResponseOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeProgramResponseTypeDef
 
@@ -323,18 +293,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DescribeProgramResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdBreaks`: `List["AdBreakTypeDef"]`
+
+- `AdBreaks`:
+  `List`\[[AdBreakTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#adbreaktypedef)\]
 - `Arn`: `str`
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
-
 
 ## DescribeSourceLocationResponseTypeDef
 
@@ -342,19 +310,19 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DescribeSourceLocationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessConfiguration`: `"AccessConfigurationTypeDef"`
+
+- `AccessConfiguration`:
+  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`: `"DefaultSegmentDeliveryConfigurationTypeDef"`
-- `HttpConfiguration`: `"HttpConfigurationTypeDef"`
+- `DefaultSegmentDeliveryConfiguration`:
+  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+- `HttpConfiguration`:
+  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeVodSourceResponseTypeDef
 
@@ -362,18 +330,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import DescribeVodSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `HttpPackageConfigurations`: `List["HttpPackageConfigurationTypeDef"]`
+- `HttpPackageConfigurations`:
+  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VodSourceName`: `str`
-
 
 ## GetChannelPolicyResponseTypeDef
 
@@ -381,12 +347,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import GetChannelPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## GetChannelScheduleResponseTypeDef
 
@@ -394,13 +357,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import GetChannelScheduleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ScheduleEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ScheduleEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#scheduleentrytypedef)\]
+- `NextToken`: `str`
 
 ## GetPlaybackConfigurationResponseTypeDef
 
@@ -408,29 +369,33 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import GetPlaybackConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdDecisionServerUrl`: `str`
-- `AvailSuppression`: `"AvailSuppressionTypeDef"`
-- `Bumper`: `"BumperTypeDef"`
-- `CdnConfiguration`: `"CdnConfigurationTypeDef"`
-- `ConfigurationAliases`: `Dict[str, Dict[str, str]]`
-- `DashConfiguration`: `"DashConfigurationTypeDef"`
-- `HlsConfiguration`: `"HlsConfigurationTypeDef"`
-- `LivePreRollConfiguration`: `"LivePreRollConfigurationTypeDef"`
-- `ManifestProcessingRules`: `"ManifestProcessingRulesTypeDef"`
+- `AvailSuppression`:
+  [AvailSuppressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#availsuppressiontypedef)
+- `Bumper`:
+  [BumperTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#bumpertypedef)
+- `CdnConfiguration`:
+  [CdnConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#cdnconfigurationtypedef)
+- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `DashConfiguration`:
+  [DashConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashconfigurationtypedef)
+- `HlsConfiguration`:
+  [HlsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#hlsconfigurationtypedef)
+- `LivePreRollConfiguration`:
+  [LivePreRollConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#liveprerollconfigurationtypedef)
+- `ManifestProcessingRules`:
+  [ManifestProcessingRulesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#manifestprocessingrulestypedef)
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `PlaybackConfigurationArn`: `str`
 - `PlaybackEndpointPrefix`: `str`
 - `SessionInitializationEndpointPrefix`: `str`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
-
 
 ## HlsConfigurationTypeDef
 
@@ -438,12 +403,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import HlsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManifestEndpointPrefix`: `str`
 
+- `ManifestEndpointPrefix`: `str`
 
 ## HlsPlaylistSettingsTypeDef
 
@@ -451,12 +413,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import HlsPlaylistSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManifestWindowSeconds`: `int`
 
+- `ManifestWindowSeconds`: `int`
 
 ## HttpConfigurationTypeDef
 
@@ -464,12 +423,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import HttpConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `BaseUrl`: `str`
-
-
-
 
 ## HttpPackageConfigurationTypeDef
 
@@ -477,14 +433,12 @@ Required fields:
 from mypy_boto3_mediatailor.type_defs import HttpPackageConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Path`: `str`
 - `SourceGroup`: `str`
-- `Type`: `TypeType`
-
-
-
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#typetype)
 
 ## ListChannelsResponseTypeDef
 
@@ -492,13 +446,11 @@ Required fields:
 from mypy_boto3_mediatailor.type_defs import ListChannelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ChannelTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#channeltypedef)\]
+- `NextToken`: `str`
 
 ## ListPlaybackConfigurationsResponseTypeDef
 
@@ -506,13 +458,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ListPlaybackConfigurationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["PlaybackConfigurationTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[PlaybackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#playbackconfigurationtypedef)\]
+- `NextToken`: `str`
 
 ## ListSourceLocationsResponseTypeDef
 
@@ -520,13 +470,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ListSourceLocationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["SourceLocationTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[SourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#sourcelocationtypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -534,12 +482,9 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListVodSourcesResponseTypeDef
 
@@ -547,13 +492,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ListVodSourcesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["VodSourceTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[VodSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#vodsourcetypedef)\]
+- `NextToken`: `str`
 
 ## LivePreRollConfigurationTypeDef
 
@@ -561,13 +504,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import LivePreRollConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdDecisionServerUrl`: `str`
 - `MaxDurationSeconds`: `int`
-
 
 ## ManifestProcessingRulesTypeDef
 
@@ -575,12 +515,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ManifestProcessingRulesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdMarkerPassthrough`: `"AdMarkerPassthroughTypeDef"`
 
+- `AdMarkerPassthrough`:
+  [AdMarkerPassthroughTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#admarkerpassthroughtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -588,14 +526,11 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlaybackConfigurationTypeDef
 
@@ -603,29 +538,33 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import PlaybackConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdDecisionServerUrl`: `str`
-- `AvailSuppression`: `"AvailSuppressionTypeDef"`
-- `Bumper`: `"BumperTypeDef"`
-- `CdnConfiguration`: `"CdnConfigurationTypeDef"`
-- `ConfigurationAliases`: `Dict[str, Dict[str, str]]`
-- `DashConfiguration`: `"DashConfigurationTypeDef"`
-- `HlsConfiguration`: `"HlsConfigurationTypeDef"`
-- `LivePreRollConfiguration`: `"LivePreRollConfigurationTypeDef"`
-- `ManifestProcessingRules`: `"ManifestProcessingRulesTypeDef"`
+- `AvailSuppression`:
+  [AvailSuppressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#availsuppressiontypedef)
+- `Bumper`:
+  [BumperTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#bumpertypedef)
+- `CdnConfiguration`:
+  [CdnConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#cdnconfigurationtypedef)
+- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `DashConfiguration`:
+  [DashConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashconfigurationtypedef)
+- `HlsConfiguration`:
+  [HlsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#hlsconfigurationtypedef)
+- `LivePreRollConfiguration`:
+  [LivePreRollConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#liveprerollconfigurationtypedef)
+- `ManifestProcessingRules`:
+  [ManifestProcessingRulesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#manifestprocessingrulestypedef)
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `PlaybackConfigurationArn`: `str`
 - `PlaybackEndpointPrefix`: `str`
 - `SessionInitializationEndpointPrefix`: `str`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
-
 
 ## PutPlaybackConfigurationResponseTypeDef
 
@@ -633,29 +572,33 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import PutPlaybackConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdDecisionServerUrl`: `str`
-- `AvailSuppression`: `"AvailSuppressionTypeDef"`
-- `Bumper`: `"BumperTypeDef"`
-- `CdnConfiguration`: `"CdnConfigurationTypeDef"`
-- `ConfigurationAliases`: `Dict[str, Dict[str, str]]`
-- `DashConfiguration`: `"DashConfigurationTypeDef"`
-- `HlsConfiguration`: `"HlsConfigurationTypeDef"`
-- `LivePreRollConfiguration`: `"LivePreRollConfigurationTypeDef"`
-- `ManifestProcessingRules`: `"ManifestProcessingRulesTypeDef"`
+- `AvailSuppression`:
+  [AvailSuppressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#availsuppressiontypedef)
+- `Bumper`:
+  [BumperTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#bumpertypedef)
+- `CdnConfiguration`:
+  [CdnConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#cdnconfigurationtypedef)
+- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `DashConfiguration`:
+  [DashConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashconfigurationtypedef)
+- `HlsConfiguration`:
+  [HlsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#hlsconfigurationtypedef)
+- `LivePreRollConfiguration`:
+  [LivePreRollConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#liveprerollconfigurationtypedef)
+- `ManifestProcessingRules`:
+  [ManifestProcessingRulesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#manifestprocessingrulestypedef)
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `PlaybackConfigurationArn`: `str`
 - `PlaybackEndpointPrefix`: `str`
 - `SessionInitializationEndpointPrefix`: `str`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
-
 
 ## RequestOutputItemTypeDef
 
@@ -663,17 +606,17 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import RequestOutputItemTypeDef
 ```
 
-
 Required fields:
+
 - `ManifestName`: `str`
 - `SourceGroup`: `str`
 
-
-
 Optional fields:
-- `DashPlaylistSettings`: `"DashPlaylistSettingsTypeDef"`
-- `HlsPlaylistSettings`: `"HlsPlaylistSettingsTypeDef"`
 
+- `DashPlaylistSettings`:
+  [DashPlaylistSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashplaylistsettingstypedef)
+- `HlsPlaylistSettings`:
+  [HlsPlaylistSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#hlsplaylistsettingstypedef)
 
 ## ResponseOutputItemTypeDef
 
@@ -681,18 +624,18 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ResponseOutputItemTypeDef
 ```
 
-
 Required fields:
+
 - `ManifestName`: `str`
 - `PlaybackUrl`: `str`
 - `SourceGroup`: `str`
 
-
-
 Optional fields:
-- `DashPlaylistSettings`: `"DashPlaylistSettingsTypeDef"`
-- `HlsPlaylistSettings`: `"HlsPlaylistSettingsTypeDef"`
 
+- `DashPlaylistSettings`:
+  [DashPlaylistSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashplaylistsettingstypedef)
+- `HlsPlaylistSettings`:
+  [HlsPlaylistSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#hlsplaylistsettingstypedef)
 
 ## ScheduleConfigurationTypeDef
 
@@ -700,12 +643,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import ScheduleConfigurationTypeDef
 ```
 
-
 Required fields:
-- `Transition`: `"TransitionTypeDef"`
 
-
-
+- `Transition`:
+  [TransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#transitiontypedef)
 
 ## ScheduleEntryTypeDef
 
@@ -713,20 +654,18 @@ Required fields:
 from mypy_boto3_mediatailor.type_defs import ScheduleEntryTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `ChannelName`: `str`
 - `ProgramName`: `str`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 
-
-
 Optional fields:
+
 - `ApproximateDurationSeconds`: `int`
 - `ApproximateStartTime`: `datetime`
-
 
 ## SlateSourceTypeDef
 
@@ -734,13 +673,10 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import SlateSourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
-
 
 ## SourceLocationTypeDef
 
@@ -748,21 +684,22 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import SourceLocationTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `HttpConfiguration`: `"HttpConfigurationTypeDef"`
+- `HttpConfiguration`:
+  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
 - `SourceLocationName`: `str`
 
-
-
 Optional fields:
-- `AccessConfiguration`: `"AccessConfigurationTypeDef"`
-- `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`: `"DefaultSegmentDeliveryConfigurationTypeDef"`
-- `LastModifiedTime`: `datetime`
-- `Tags`: `Dict[str, str]`
 
+- `AccessConfiguration`:
+  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
+- `CreationTime`: `datetime`
+- `DefaultSegmentDeliveryConfiguration`:
+  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+- `LastModifiedTime`: `datetime`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## SpliceInsertMessageTypeDef
 
@@ -770,15 +707,12 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import SpliceInsertMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AvailNum`: `int`
 - `AvailsExpected`: `int`
 - `SpliceEventId`: `int`
 - `UniqueProgramId`: `int`
-
 
 ## TransitionTypeDef
 
@@ -786,16 +720,15 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import TransitionTypeDef
 ```
 
-
 Required fields:
-- `RelativePosition`: `RelativePosition`
+
+- `RelativePosition`:
+  [RelativePosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#relativeposition)
 - `Type`: `str`
 
-
-
 Optional fields:
-- `RelativeProgram`: `str`
 
+- `RelativeProgram`: `str`
 
 ## UpdateChannelResponseTypeDef
 
@@ -803,19 +736,18 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import UpdateChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: `ChannelState`
+- `ChannelState`:
+  [ChannelState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/literals.html#channelstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `Outputs`: `List["ResponseOutputItemTypeDef"]`
+- `Outputs`:
+  `List`\[[ResponseOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateSourceLocationResponseTypeDef
 
@@ -823,19 +755,19 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import UpdateSourceLocationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessConfiguration`: `"AccessConfigurationTypeDef"`
+
+- `AccessConfiguration`:
+  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`: `"DefaultSegmentDeliveryConfigurationTypeDef"`
-- `HttpConfiguration`: `"HttpConfigurationTypeDef"`
+- `DefaultSegmentDeliveryConfiguration`:
+  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+- `HttpConfiguration`:
+  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateVodSourceResponseTypeDef
 
@@ -843,18 +775,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import UpdateVodSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `HttpPackageConfigurations`: `List["HttpPackageConfigurationTypeDef"]`
+- `HttpPackageConfigurations`:
+  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
 - `LastModifiedTime`: `datetime`
 - `SourceLocationName`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VodSourceName`: `str`
-
 
 ## VodSourceTypeDef
 
@@ -862,17 +792,16 @@ Optional fields:
 from mypy_boto3_mediatailor.type_defs import VodSourceTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `HttpPackageConfigurations`: `List["HttpPackageConfigurationTypeDef"]`
+- `HttpPackageConfigurations`:
+  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 
-
-
 Optional fields:
+
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]

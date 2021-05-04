@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Literals
 
-Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+Auto-generated documentation for
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+type annotations stubs module
+[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [Literals for boto3 SimpleDB module](#literals-for-boto3-simpledb-module)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)

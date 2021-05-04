@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3Control](./README.md) > Literals
 
-Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+Auto-generated documentation for
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+type annotations stubs module
+[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [Literals for boto3 S3Control module](#literals-for-boto3-s3control-module)
   - [BucketCannedACL](#bucketcannedacl)

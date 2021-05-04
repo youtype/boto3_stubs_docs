@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AppConfig
 
-Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
-type annotations stubs module [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+Auto-generated documentation for
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+type annotations stubs module
+[mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 ```bash
 pip install mypy-boto3-appconfig
@@ -18,7 +20,8 @@ pip install mypy-boto3-appconfig
 
 ## AppConfigClient
 
-Type annotations for  `boto3.client("appconfig")` as [AppConfigClient](./client.md)
+Type annotations for `boto3.client("appconfig")` as
+[AppConfigClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_appconfig.client import AppConfigClient
 ```
 
-
 AppConfigClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_application](./client.md#create-application)
 - [create_configuration_profile](./client.md#create-configuration-profile)
@@ -68,10 +69,8 @@ AppConfigClient [exceptions](./client.md#exceptions)
 - [update_environment](./client.md#update-environment)
 - [validate_configuration](./client.md#validate-configuration)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -79,15 +78,6 @@ AppConfigClient [exceptions](./client.md#exceptions)
 - [PayloadTooLargeException](./client.md#payloadtoolargeexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -107,13 +97,10 @@ from mypy_boto3_appconfig.literals import DeploymentEventType, ...
 - [TriggeredBy](./literals.md#triggeredby)
 - [ValidatorType](./literals.md#validatortype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

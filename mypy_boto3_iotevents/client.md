@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTEvents](./README.md) > IoTEventsClient
 
-Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
-type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+Auto-generated documentation for
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+type annotations stubs module
+[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [IoTEventsClient for boto3 IoTEvents module](#ioteventsclient-for-boto3-iotevents-module)
   - [IoTEventsClient](#ioteventsclient)
@@ -44,12 +46,13 @@ def get_iotevents_client() -> IoTEventsClient:
     return boto3.client("iotevents")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client)
+Boto3 documentation:
+[IoTEvents.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iotevents.client import Exceptions
@@ -57,7 +60,6 @@ from mypy_boto3_iotevents.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -72,329 +74,336 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iotevents").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.can_paginate]
+Boto3 documentation:
+[IoTEvents.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_detector_model
 
 Type annotations for `boto3.client("iotevents").create_detector_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model]
+Boto3 documentation:
+[IoTEvents.Client.create_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model)
 
-```python
-def create_detector_model(
-    self,
-    detectorModelName: str,
-    detectorModelDefinition: "DetectorModelDefinitionTypeDef",
-    roleArn: str,
-    detectorModelDescription: str = None,
-    key: str = None,
-    tags: List["TagTypeDef"] = None,
-    evaluationMethod: EvaluationMethod = None
-) -> CreateDetectorModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `detectorModelName`: `str` *(required)*
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `detectorModelDescription`: `str`
+- `key`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
+- `evaluationMethod`:
+  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
+
+Returns
+[CreateDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#createdetectormodelresponsetypedef).
 
 ### create_input
 
 Type annotations for `boto3.client("iotevents").create_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input]
+Boto3 documentation:
+[IoTEvents.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input)
 
-```python
-def create_input(
-    self,
-    inputName: str,
-    inputDefinition: "InputDefinitionTypeDef",
-    inputDescription: str = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `inputName`: `str` *(required)*
+- `inputDefinition`:
+  [InputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputdefinitiontypedef)
+  *(required)*
+- `inputDescription`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#createinputresponsetypedef).
 
 ### delete_detector_model
 
 Type annotations for `boto3.client("iotevents").delete_detector_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_detector_model]
+Boto3 documentation:
+[IoTEvents.Client.delete_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_detector_model)
 
-```python
-def delete_detector_model(
-    self,
-    detectorModelName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `detectorModelName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_input
 
 Type annotations for `boto3.client("iotevents").delete_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_input]
+Boto3 documentation:
+[IoTEvents.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_input)
 
-```python
-def delete_input(
-    self,
-    inputName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `inputName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_detector_model
 
-Type annotations for `boto3.client("iotevents").describe_detector_model` method.
+Type annotations for `boto3.client("iotevents").describe_detector_model`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model]
+Boto3 documentation:
+[IoTEvents.Client.describe_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model)
 
-```python
-def describe_detector_model(
-    self,
-    detectorModelName: str,
-    detectorModelVersion: str = None
-) -> DescribeDetectorModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `detectorModelName`: `str` *(required)*
+- `detectorModelVersion`: `str`
+
+Returns
+[DescribeDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describedetectormodelresponsetypedef).
 
 ### describe_detector_model_analysis
 
-Type annotations for `boto3.client("iotevents").describe_detector_model_analysis` method.
+Type annotations for
+`boto3.client("iotevents").describe_detector_model_analysis` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model_analysis]
+Boto3 documentation:
+[IoTEvents.Client.describe_detector_model_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model_analysis)
 
-```python
-def describe_detector_model_analysis(
-    self,
-    analysisId: str
-) -> DescribeDetectorModelAnalysisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analysisId`: `str` *(required)*
+
+Returns
+[DescribeDetectorModelAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describedetectormodelanalysisresponsetypedef).
 
 ### describe_input
 
 Type annotations for `boto3.client("iotevents").describe_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_input]
+Boto3 documentation:
+[IoTEvents.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_input)
 
-```python
-def describe_input(
-    self,
-    inputName: str
-) -> DescribeInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `inputName`: `str` *(required)*
+
+Returns
+[DescribeInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describeinputresponsetypedef).
 
 ### describe_logging_options
 
-Type annotations for `boto3.client("iotevents").describe_logging_options` method.
+Type annotations for `boto3.client("iotevents").describe_logging_options`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options]
+Boto3 documentation:
+[IoTEvents.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options)
 
-```python
-def describe_logging_options(
-    self
-) -> DescribeLoggingOptionsResponseTypeDef:
-    pass
-```
+Returns
+[DescribeLoggingOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describeloggingoptionsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("iotevents").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTEvents.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_detector_model_analysis_results
 
-Type annotations for `boto3.client("iotevents").get_detector_model_analysis_results` method.
+Type annotations for
+`boto3.client("iotevents").get_detector_model_analysis_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results]
+Boto3 documentation:
+[IoTEvents.Client.get_detector_model_analysis_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results)
 
-```python
-def get_detector_model_analysis_results(
-    self,
-    analysisId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetDetectorModelAnalysisResultsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analysisId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetDetectorModelAnalysisResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#getdetectormodelanalysisresultsresponsetypedef).
 
 ### list_detector_model_versions
 
-Type annotations for `boto3.client("iotevents").list_detector_model_versions` method.
+Type annotations for `boto3.client("iotevents").list_detector_model_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions]
+Boto3 documentation:
+[IoTEvents.Client.list_detector_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions)
 
-```python
-def list_detector_model_versions(
-    self,
-    detectorModelName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDetectorModelVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `detectorModelName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDetectorModelVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listdetectormodelversionsresponsetypedef).
 
 ### list_detector_models
 
 Type annotations for `boto3.client("iotevents").list_detector_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_models]
+Boto3 documentation:
+[IoTEvents.Client.list_detector_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_models)
 
-```python
-def list_detector_models(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDetectorModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDetectorModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listdetectormodelsresponsetypedef).
 
 ### list_inputs
 
 Type annotations for `boto3.client("iotevents").list_inputs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_inputs]
+Boto3 documentation:
+[IoTEvents.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_inputs)
 
-```python
-def list_inputs(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListInputsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListInputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listinputsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("iotevents").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoTEvents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_logging_options
 
 Type annotations for `boto3.client("iotevents").put_logging_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.put_logging_options]
+Boto3 documentation:
+[IoTEvents.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.put_logging_options)
 
-```python
-def put_logging_options(
-    self,
-    loggingOptions: "LoggingOptionsTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#loggingoptionstypedef)
+  *(required)*
 
 ### start_detector_model_analysis
 
-Type annotations for `boto3.client("iotevents").start_detector_model_analysis` method.
+Type annotations for `boto3.client("iotevents").start_detector_model_analysis`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.start_detector_model_analysis]
+Boto3 documentation:
+[IoTEvents.Client.start_detector_model_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.start_detector_model_analysis)
 
-```python
-def start_detector_model_analysis(
-    self,
-    detectorModelDefinition: "DetectorModelDefinitionTypeDef"
-) -> StartDetectorModelAnalysisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  *(required)*
+
+Returns
+[StartDetectorModelAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#startdetectormodelanalysisresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iotevents").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.tag_resource]
+Boto3 documentation:
+[IoTEvents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("iotevents").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.untag_resource]
+Boto3 documentation:
+[IoTEvents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_detector_model
 
 Type annotations for `boto3.client("iotevents").update_detector_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model]
+Boto3 documentation:
+[IoTEvents.Client.update_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model)
 
-```python
-def update_detector_model(
-    self,
-    detectorModelName: str,
-    detectorModelDefinition: "DetectorModelDefinitionTypeDef",
-    roleArn: str,
-    detectorModelDescription: str = None,
-    evaluationMethod: EvaluationMethod = None
-) -> UpdateDetectorModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `detectorModelName`: `str` *(required)*
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `detectorModelDescription`: `str`
+- `evaluationMethod`:
+  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
+
+Returns
+[UpdateDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#updatedetectormodelresponsetypedef).
 
 ### update_input
 
 Type annotations for `boto3.client("iotevents").update_input` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input]
+Boto3 documentation:
+[IoTEvents.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input)
 
-```python
-def update_input(
-    self,
-    inputName: str,
-    inputDefinition: "InputDefinitionTypeDef",
-    inputDescription: str = None
-) -> UpdateInputResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `inputName`: `str` *(required)*
+- `inputDefinition`:
+  [InputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputdefinitiontypedef)
+  *(required)*
+- `inputDescription`: `str`
 
-
+Returns
+[UpdateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#updateinputresponsetypedef).

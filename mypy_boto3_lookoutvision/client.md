@@ -1,9 +1,12 @@
 # LookoutforVisionClient for boto3 LookoutforVision module
 
-> [Index](../README.md) > [LookoutforVision](./README.md) > LookoutforVisionClient
+> [Index](../README.md) > [LookoutforVision](./README.md) >
+> LookoutforVisionClient
 
-Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+Auto-generated documentation for
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+type annotations stubs module
+[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [LookoutforVisionClient for boto3 LookoutforVision module](#lookoutforvisionclient-for-boto3-lookoutforvision-module)
   - [LookoutforVisionClient](#lookoutforvisionclient)
@@ -45,12 +48,13 @@ def get_lookoutvision_client() -> LookoutforVisionClient:
     return boto3.client("lookoutvision")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
+Boto3 documentation:
+[LookoutforVision.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lookoutvision.client import Exceptions
@@ -58,7 +62,6 @@ from mypy_boto3_lookoutvision.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -71,355 +74,358 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("lookoutvision").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate]
+Boto3 documentation:
+[LookoutforVision.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_dataset
 
 Type annotations for `boto3.client("lookoutvision").create_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset]
+Boto3 documentation:
+[LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
 
-```python
-def create_dataset(
-    self,
-    ProjectName: str,
-    DatasetType: str,
-    DatasetSource: DatasetSourceTypeDef = None,
-    ClientToken: str = None
-) -> CreateDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `DatasetType`: `str` *(required)*
+- `DatasetSource`:
+  [DatasetSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetsourcetypedef)
+- `ClientToken`: `str`
+
+Returns
+[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createdatasetresponsetypedef).
 
 ### create_model
 
 Type annotations for `boto3.client("lookoutvision").create_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model]
+Boto3 documentation:
+[LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
 
-```python
-def create_model(
-    self,
-    ProjectName: str,
-    OutputConfig: "OutputConfigTypeDef",
-    Description: str = None,
-    ClientToken: str = None,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#outputconfigtypedef)
+  *(required)*
+- `Description`: `str`
+- `ClientToken`: `str`
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createmodelresponsetypedef).
 
 ### create_project
 
 Type annotations for `boto3.client("lookoutvision").create_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project]
+Boto3 documentation:
+[LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
 
-```python
-def create_project(
-    self,
-    ProjectName: str,
-    ClientToken: str = None
-) -> CreateProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createprojectresponsetypedef).
 
 ### delete_dataset
 
 Type annotations for `boto3.client("lookoutvision").delete_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset]
+Boto3 documentation:
+[LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
 
-```python
-def delete_dataset(
-    self,
-    ProjectName: str,
-    DatasetType: str,
-    ClientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `DatasetType`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_model
 
 Type annotations for `boto3.client("lookoutvision").delete_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model]
+Boto3 documentation:
+[LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
 
-```python
-def delete_model(
-    self,
-    ProjectName: str,
-    ModelVersion: str,
-    ClientToken: str = None
-) -> DeleteModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[DeleteModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#deletemodelresponsetypedef).
 
 ### delete_project
 
 Type annotations for `boto3.client("lookoutvision").delete_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project]
+Boto3 documentation:
+[LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    ProjectName: str,
-    ClientToken: str = None
-) -> DeleteProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[DeleteProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#deleteprojectresponsetypedef).
 
 ### describe_dataset
 
 Type annotations for `boto3.client("lookoutvision").describe_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset]
+Boto3 documentation:
+[LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
 
-```python
-def describe_dataset(
-    self,
-    ProjectName: str,
-    DatasetType: str
-) -> DescribeDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `DatasetType`: `str` *(required)*
+
+Returns
+[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describedatasetresponsetypedef).
 
 ### describe_model
 
 Type annotations for `boto3.client("lookoutvision").describe_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model]
+Boto3 documentation:
+[LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
 
-```python
-def describe_model(
-    self,
-    ProjectName: str,
-    ModelVersion: str
-) -> DescribeModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+
+Returns
+[DescribeModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describemodelresponsetypedef).
 
 ### describe_project
 
 Type annotations for `boto3.client("lookoutvision").describe_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project]
+Boto3 documentation:
+[LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
 
-```python
-def describe_project(
-    self,
-    ProjectName: str
-) -> DescribeProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+
+Returns
+[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describeprojectresponsetypedef).
 
 ### detect_anomalies
 
 Type annotations for `boto3.client("lookoutvision").detect_anomalies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies]
+Boto3 documentation:
+[LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
 
-```python
-def detect_anomalies(
-    self,
-    ProjectName: str,
-    ModelVersion: str,
-    Body: Union[bytes, IO[bytes]],
-    ContentType: str
-) -> DetectAnomaliesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ContentType`: `str` *(required)*
+
+Returns
+[DetectAnomaliesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#detectanomaliesresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lookoutvision").generate_presigned_url` method.
+Type annotations for `boto3.client("lookoutvision").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url]
+Boto3 documentation:
+[LookoutforVision.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_dataset_entries
 
-Type annotations for `boto3.client("lookoutvision").list_dataset_entries` method.
+Type annotations for `boto3.client("lookoutvision").list_dataset_entries`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries]
+Boto3 documentation:
+[LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
 
-```python
-def list_dataset_entries(
-    self,
-    ProjectName: str,
-    DatasetType: str,
-    Labeled: bool = None,
-    AnomalyClass: str = None,
-    BeforeCreationDate: datetime = None,
-    AfterCreationDate: datetime = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SourceRefContains: str = None
-) -> ListDatasetEntriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `DatasetType`: `str` *(required)*
+- `Labeled`: `bool`
+- `AnomalyClass`: `str`
+- `BeforeCreationDate`: `datetime`
+- `AfterCreationDate`: `datetime`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SourceRefContains`: `str`
+
+Returns
+[ListDatasetEntriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listdatasetentriesresponsetypedef).
 
 ### list_models
 
 Type annotations for `boto3.client("lookoutvision").list_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models]
+Boto3 documentation:
+[LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
 
-```python
-def list_models(
-    self,
-    ProjectName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listmodelsresponsetypedef).
 
 ### list_projects
 
 Type annotations for `boto3.client("lookoutvision").list_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects]
+Boto3 documentation:
+[LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
 
-```python
-def list_projects(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProjectsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("lookoutvision").list_tags_for_resource` method.
+Type annotations for `boto3.client("lookoutvision").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource]
+Boto3 documentation:
+[LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_model
 
 Type annotations for `boto3.client("lookoutvision").start_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model]
+Boto3 documentation:
+[LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
 
-```python
-def start_model(
-    self,
-    ProjectName: str,
-    ModelVersion: str,
-    MinInferenceUnits: int,
-    ClientToken: str = None
-) -> StartModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `MinInferenceUnits`: `int` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[StartModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#startmodelresponsetypedef).
 
 ### stop_model
 
 Type annotations for `boto3.client("lookoutvision").stop_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model]
+Boto3 documentation:
+[LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
 
-```python
-def stop_model(
-    self,
-    ProjectName: str,
-    ModelVersion: str,
-    ClientToken: str = None
-) -> StopModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[StopModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#stopmodelresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("lookoutvision").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource]
+Boto3 documentation:
+[LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("lookoutvision").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource]
+Boto3 documentation:
+[LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_dataset_entries
 
-Type annotations for `boto3.client("lookoutvision").update_dataset_entries` method.
+Type annotations for `boto3.client("lookoutvision").update_dataset_entries`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries]
+Boto3 documentation:
+[LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
 
-```python
-def update_dataset_entries(
-    self,
-    ProjectName: str,
-    DatasetType: str,
-    Changes: Union[bytes, IO[bytes]],
-    ClientToken: str = None
-) -> UpdateDatasetEntriesResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ProjectName`: `str` *(required)*
+- `DatasetType`: `str` *(required)*
+- `Changes`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ClientToken`: `str`
 
+Returns
+[UpdateDatasetEntriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#updatedatasetentriesresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("lookoutvision").get_paginator` method with overloads.
+Type annotations for `boto3.client("lookoutvision").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_dataset_entries")` -> [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
-- `client.get_paginator("list_models")` -> [ListModelsPaginator](./paginators.md#listmodelspaginator)
-- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
+- `client.get_paginator("list_dataset_entries")` ->
+  [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+- `client.get_paginator("list_models")` ->
+  [ListModelsPaginator](./paginators.md#listmodelspaginator)
+- `client.get_paginator("list_projects")` ->
+  [ListProjectsPaginator](./paginators.md#listprojectspaginator)

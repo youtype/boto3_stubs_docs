@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTSiteWise
 
-Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+Auto-generated documentation for
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+type annotations stubs module
+[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ```bash
 pip install mypy-boto3-iotsitewise
@@ -20,7 +22,8 @@ pip install mypy-boto3-iotsitewise
 
 ## IoTSiteWiseClient
 
-Type annotations for  `boto3.client("iotsitewise")` as [IoTSiteWiseClient](./client.md)
+Type annotations for `boto3.client("iotsitewise")` as
+[IoTSiteWiseClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 ```
 
-
 IoTSiteWiseClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_assets](./client.md#associate-assets)
 - [batch_associate_project_assets](./client.md#batch-associate-project-assets)
 - [batch_disassociate_project_assets](./client.md#batch-disassociate-project-assets)
@@ -97,10 +98,8 @@ IoTSiteWiseClient [exceptions](./client.md#exceptions)
 - [update_portal](./client.md#update-portal)
 - [update_project](./client.md#update-project)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictingOperationException](./client.md#conflictingoperationexception)
 - [InternalFailureException](./client.md#internalfailureexception)
@@ -113,14 +112,10 @@ IoTSiteWiseClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iotsitewise").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iotsitewise").get_paginator("...")`.
 
 Can be used directly:
 
@@ -142,12 +137,10 @@ from mypy_boto3_iotsitewise.paginators import GetAssetPropertyAggregatesPaginato
 - [ListProjectAssetsPaginator](./paginators.md#listprojectassetspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("iotsitewise").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("iotsitewise").get_waiter("...")`.
 
 Can be used directly:
 
@@ -161,9 +154,6 @@ from mypy_boto3_iotsitewise.waiters import AssetActiveWaiter, ...
 - [AssetNotExistsWaiter](./waiters.md#assetnotexistswaiter)
 - [PortalActiveWaiter](./waiters.md#portalactivewaiter)
 - [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
-
-
-
 
 ## Literals
 
@@ -220,13 +210,10 @@ from mypy_boto3_iotsitewise.literals import AggregateType, ...
 - [TraversalDirection](./literals.md#traversaldirection)
 - [TraversalType](./literals.md#traversaltype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

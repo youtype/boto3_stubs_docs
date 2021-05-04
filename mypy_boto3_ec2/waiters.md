@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EC2](./README.md) > Waiters
 
-Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+Auto-generated documentation for
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+type annotations stubs module
+[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Waiters for boto3 EC2 module](#waiters-for-boto3-ec2-module)
   - [BundleTaskCompleteWaiter](#bundletaskcompletewaiter)
@@ -52,18 +54,22 @@ def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
     return boto3.client("ec2").get_waiter("bundle_task_complete")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.bundle_task_complete)
+Boto3 documentation:
+[EC2.Waiter.bundle_task_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.bundle_task_complete)
 
 Arguments for `BundleTaskCompleteWaiter.wait` method:
 
-- `BundleIds`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
+- `BundleIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ConversionTaskCancelledWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("conversion_task_cancelled")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("conversion_task_cancelled")`.
 
 Can be used directly:
 
@@ -74,17 +80,20 @@ def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_cancelled")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_cancelled)
+Boto3 documentation:
+[EC2.Waiter.conversion_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_cancelled)
 
 Arguments for `ConversionTaskCancelledWaiter.wait` method:
 
-- `ConversionTaskIds`: `List[str]`
+- `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ConversionTaskCompletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("conversion_task_completed")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("conversion_task_completed")`.
 
 Can be used directly:
 
@@ -95,17 +104,20 @@ def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_completed")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_completed)
+Boto3 documentation:
+[EC2.Waiter.conversion_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_completed)
 
 Arguments for `ConversionTaskCompletedWaiter.wait` method:
 
-- `ConversionTaskIds`: `List[str]`
+- `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ConversionTaskDeletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("conversion_task_deleted")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("conversion_task_deleted")`.
 
 Can be used directly:
 
@@ -116,17 +128,20 @@ def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_deleted")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_deleted)
+Boto3 documentation:
+[EC2.Waiter.conversion_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_deleted)
 
 Arguments for `ConversionTaskDeletedWaiter.wait` method:
 
-- `ConversionTaskIds`: `List[str]`
+- `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## CustomerGatewayAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("customer_gateway_available")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("customer_gateway_available")`.
 
 Can be used directly:
 
@@ -137,14 +152,17 @@ def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
     return boto3.client("ec2").get_waiter("customer_gateway_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.customer_gateway_available)
+Boto3 documentation:
+[EC2.Waiter.customer_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.customer_gateway_available)
 
 Arguments for `CustomerGatewayAvailableWaiter.wait` method:
 
-- `CustomerGatewayIds`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
+- `CustomerGatewayIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ExportTaskCancelledWaiter
 
@@ -159,13 +177,16 @@ def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
     return boto3.client("ec2").get_waiter("export_task_cancelled")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_cancelled)
+Boto3 documentation:
+[EC2.Waiter.export_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_cancelled)
 
 Arguments for `ExportTaskCancelledWaiter.wait` method:
 
-- `ExportTaskIds`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `ExportTaskIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ExportTaskCompletedWaiter
 
@@ -180,13 +201,16 @@ def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
     return boto3.client("ec2").get_waiter("export_task_completed")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_completed)
+Boto3 documentation:
+[EC2.Waiter.export_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_completed)
 
 Arguments for `ExportTaskCompletedWaiter.wait` method:
 
-- `ExportTaskIds`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `ExportTaskIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ImageAvailableWaiter
 
@@ -201,16 +225,19 @@ def get_image_available_waiter() -> ImageAvailableWaiter:
     return boto3.client("ec2").get_waiter("image_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_available)
+Boto3 documentation:
+[EC2.Waiter.image_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_available)
 
 Arguments for `ImageAvailableWaiter.wait` method:
 
-- `ExecutableUsers`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
-- `ImageIds`: `List[str]`
-- `Owners`: `List[str]`
+- `ExecutableUsers`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ImageIds`: `List`\[`str`\]
+- `Owners`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## ImageExistsWaiter
 
@@ -225,16 +252,19 @@ def get_image_exists_waiter() -> ImageExistsWaiter:
     return boto3.client("ec2").get_waiter("image_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_exists)
+Boto3 documentation:
+[EC2.Waiter.image_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_exists)
 
 Arguments for `ImageExistsWaiter.wait` method:
 
-- `ExecutableUsers`: `List[str]`
-- `Filters`: `List[FilterTypeDef]`
-- `ImageIds`: `List[str]`
-- `Owners`: `List[str]`
+- `ExecutableUsers`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ImageIds`: `List`\[`str`\]
+- `Owners`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## InstanceExistsWaiter
 
@@ -249,16 +279,19 @@ def get_instance_exists_waiter() -> InstanceExistsWaiter:
     return boto3.client("ec2").get_waiter("instance_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_exists)
+Boto3 documentation:
+[EC2.Waiter.instance_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_exists)
 
 Arguments for `InstanceExistsWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## InstanceRunningWaiter
 
@@ -273,16 +306,19 @@ def get_instance_running_waiter() -> InstanceRunningWaiter:
     return boto3.client("ec2").get_waiter("instance_running")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_running)
+Boto3 documentation:
+[EC2.Waiter.instance_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_running)
 
 Arguments for `InstanceRunningWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## InstanceStatusOkWaiter
 
@@ -297,17 +333,20 @@ def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
     return boto3.client("ec2").get_waiter("instance_status_ok")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_status_ok)
+Boto3 documentation:
+[EC2.Waiter.instance_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_status_ok)
 
 Arguments for `InstanceStatusOkWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## InstanceStoppedWaiter
 
@@ -322,16 +361,19 @@ def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
     return boto3.client("ec2").get_waiter("instance_stopped")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_stopped)
+Boto3 documentation:
+[EC2.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_stopped)
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## InstanceTerminatedWaiter
 
@@ -346,16 +388,19 @@ def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
     return boto3.client("ec2").get_waiter("instance_terminated")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_terminated)
+Boto3 documentation:
+[EC2.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_terminated)
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## KeyPairExistsWaiter
 
@@ -370,15 +415,18 @@ def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
     return boto3.client("ec2").get_waiter("key_pair_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.key_pair_exists)
+Boto3 documentation:
+[EC2.Waiter.key_pair_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.key_pair_exists)
 
 Arguments for `KeyPairExistsWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `KeyNames`: `List[str]`
-- `KeyPairIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `KeyNames`: `List`\[`str`\]
+- `KeyPairIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## NatGatewayAvailableWaiter
 
@@ -393,20 +441,24 @@ def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
     return boto3.client("ec2").get_waiter("nat_gateway_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.nat_gateway_available)
+Boto3 documentation:
+[EC2.Waiter.nat_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.nat_gateway_available)
 
 Arguments for `NatGatewayAvailableWaiter.wait` method:
 
 - `DryRun`: `bool`
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `MaxResults`: `int`
-- `NatGatewayIds`: `List[str]`
+- `NatGatewayIds`: `List`\[`str`\]
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## NetworkInterfaceAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("network_interface_available")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("network_interface_available")`.
 
 Can be used directly:
 
@@ -417,20 +469,24 @@ def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
     return boto3.client("ec2").get_waiter("network_interface_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.network_interface_available)
+Boto3 documentation:
+[EC2.Waiter.network_interface_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.network_interface_available)
 
 Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkInterfaceIds`: `List[str]`
+- `NetworkInterfaceIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## PasswordDataAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("password_data_available")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("password_data_available")`.
 
 Can be used directly:
 
@@ -441,13 +497,15 @@ def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
     return boto3.client("ec2").get_waiter("password_data_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.password_data_available)
+Boto3 documentation:
+[EC2.Waiter.password_data_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.password_data_available)
 
 Arguments for `PasswordDataAvailableWaiter.wait` method:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## SecurityGroupExistsWaiter
 
@@ -462,17 +520,20 @@ def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
     return boto3.client("ec2").get_waiter("security_group_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.security_group_exists)
+Boto3 documentation:
+[EC2.Waiter.security_group_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.security_group_exists)
 
 Arguments for `SecurityGroupExistsWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `GroupIds`: `List[str]`
-- `GroupNames`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `GroupIds`: `List`\[`str`\]
+- `GroupNames`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## SnapshotCompletedWaiter
 
@@ -487,22 +548,26 @@ def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
     return boto3.client("ec2").get_waiter("snapshot_completed")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.snapshot_completed)
+Boto3 documentation:
+[EC2.Waiter.snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.snapshot_completed)
 
 Arguments for `SnapshotCompletedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `OwnerIds`: `List[str]`
-- `RestorableByUserIds`: `List[str]`
-- `SnapshotIds`: `List[str]`
+- `OwnerIds`: `List`\[`str`\]
+- `RestorableByUserIds`: `List`\[`str`\]
+- `SnapshotIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## SpotInstanceRequestFulfilledWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")`.
 
 Can be used directly:
 
@@ -513,16 +578,19 @@ def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilled
     return boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.spot_instance_request_fulfilled)
+Boto3 documentation:
+[EC2.Waiter.spot_instance_request_fulfilled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.spot_instance_request_fulfilled)
 
 Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `List[str]`
+- `SpotInstanceRequestIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## SubnetAvailableWaiter
 
@@ -537,16 +605,19 @@ def get_subnet_available_waiter() -> SubnetAvailableWaiter:
     return boto3.client("ec2").get_waiter("subnet_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.subnet_available)
+Boto3 documentation:
+[EC2.Waiter.subnet_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.subnet_available)
 
 Arguments for `SubnetAvailableWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `SubnetIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `SubnetIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## SystemStatusOkWaiter
 
@@ -561,17 +632,20 @@ def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
     return boto3.client("ec2").get_waiter("system_status_ok")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.system_status_ok)
+Boto3 documentation:
+[EC2.Waiter.system_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.system_status_ok)
 
 Arguments for `SystemStatusOkWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `InstanceIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VolumeAvailableWaiter
 
@@ -586,16 +660,19 @@ def get_volume_available_waiter() -> VolumeAvailableWaiter:
     return boto3.client("ec2").get_waiter("volume_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_available)
+Boto3 documentation:
+[EC2.Waiter.volume_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_available)
 
 Arguments for `VolumeAvailableWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VolumeIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VolumeDeletedWaiter
 
@@ -610,16 +687,19 @@ def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
     return boto3.client("ec2").get_waiter("volume_deleted")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_deleted)
+Boto3 documentation:
+[EC2.Waiter.volume_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_deleted)
 
 Arguments for `VolumeDeletedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VolumeIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VolumeInUseWaiter
 
@@ -634,16 +714,19 @@ def get_volume_in_use_waiter() -> VolumeInUseWaiter:
     return boto3.client("ec2").get_waiter("volume_in_use")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_in_use)
+Boto3 documentation:
+[EC2.Waiter.volume_in_use](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_in_use)
 
 Arguments for `VolumeInUseWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VolumeIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpcAvailableWaiter
 
@@ -658,16 +741,19 @@ def get_vpc_available_waiter() -> VpcAvailableWaiter:
     return boto3.client("ec2").get_waiter("vpc_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_available)
+Boto3 documentation:
+[EC2.Waiter.vpc_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_available)
 
 Arguments for `VpcAvailableWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VpcIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VpcIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpcExistsWaiter
 
@@ -682,20 +768,24 @@ def get_vpc_exists_waiter() -> VpcExistsWaiter:
     return boto3.client("ec2").get_waiter("vpc_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_exists)
+Boto3 documentation:
+[EC2.Waiter.vpc_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_exists)
 
 Arguments for `VpcExistsWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VpcIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VpcIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpcPeeringConnectionDeletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")`.
 
 Can be used directly:
 
@@ -706,20 +796,24 @@ def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWa
     return boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_deleted)
+Boto3 documentation:
+[EC2.Waiter.vpc_peering_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_deleted)
 
 Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List[str]`
+- `VpcPeeringConnectionIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpcPeeringConnectionExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpc_peering_connection_exists")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("vpc_peering_connection_exists")`.
 
 Can be used directly:
 
@@ -730,20 +824,24 @@ def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWait
     return boto3.client("ec2").get_waiter("vpc_peering_connection_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_exists)
+Boto3 documentation:
+[EC2.Waiter.vpc_peering_connection_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_exists)
 
 Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List[str]`
+- `VpcPeeringConnectionIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpnConnectionAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpn_connection_available")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("vpn_connection_available")`.
 
 Can be used directly:
 
@@ -754,18 +852,22 @@ def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
     return boto3.client("ec2").get_waiter("vpn_connection_available")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_available)
+Boto3 documentation:
+[EC2.Waiter.vpn_connection_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_available)
 
 Arguments for `VpnConnectionAvailableWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VpnConnectionIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VpnConnectionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
 
 ## VpnConnectionDeletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpn_connection_deleted")`.
+Type annotations for
+`boto3.client("ec2").get_waiter("vpn_connection_deleted")`.
 
 Can be used directly:
 
@@ -776,11 +878,14 @@ def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
     return boto3.client("ec2").get_waiter("vpn_connection_deleted")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_deleted)
+Boto3 documentation:
+[EC2.Waiter.vpn_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_deleted)
 
 Arguments for `VpnConnectionDeletedWaiter.wait` method:
 
-- `Filters`: `List[FilterTypeDef]`
-- `VpnConnectionIds`: `List[str]`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VpnConnectionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)

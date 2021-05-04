@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTThingsGraph](./README.md) > Structures
 
-Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+Auto-generated documentation for
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+type annotations stubs module
+[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Typed dictionaries for boto3 IoTThingsGraph module](#typed-dictionaries-for-boto3-iotthingsgraph-module)
   - [CreateFlowTemplateResponseTypeDef](#createflowtemplateresponsetypedef)
@@ -58,12 +60,10 @@ type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/proje
 from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"FlowTemplateSummaryTypeDef"`
 
+- `summary`:
+  [FlowTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatesummarytypedef)
 
 ## CreateSystemInstanceResponseTypeDef
 
@@ -71,12 +71,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemInstanceSummaryTypeDef"`
 
+- `summary`:
+  [SystemInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancesummarytypedef)
 
 ## CreateSystemTemplateResponseTypeDef
 
@@ -84,12 +82,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemTemplateSummaryTypeDef"`
 
+- `summary`:
+  [SystemTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatesummarytypedef)
 
 ## DefinitionDocumentTypeDef
 
@@ -97,13 +93,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import DefinitionDocumentTypeDef
 ```
 
-
 Required fields:
+
 - `language`: `Literal['GRAPHQL']`
 - `text`: `str`
-
-
-
 
 ## DeleteNamespaceResponseTypeDef
 
@@ -111,13 +104,10 @@ Required fields:
 from mypy_boto3_iotthingsgraph.type_defs import DeleteNamespaceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
-
 
 ## DependencyRevisionTypeDef
 
@@ -125,13 +115,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import DependencyRevisionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `revisionNumber`: `int`
-
 
 ## DeploySystemInstanceResponseTypeDef
 
@@ -139,15 +126,14 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceResponseTypeDef
 ```
 
-
 Required fields:
-- `summary`: `"SystemInstanceSummaryTypeDef"`
 
-
+- `summary`:
+  [SystemInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancesummarytypedef)
 
 Optional fields:
-- `greengrassDeploymentId`: `str`
 
+- `greengrassDeploymentId`: `str`
 
 ## DescribeNamespaceResponseTypeDef
 
@@ -155,16 +141,13 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
 - `trackingNamespaceName`: `str`
 - `trackingNamespaceVersion`: `int`
 - `namespaceVersion`: `int`
-
 
 ## EntityDescriptionTypeDef
 
@@ -172,16 +155,15 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import EntityDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
-- `type`: `EntityType`
+- `type`:
+  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#entitytype)
 - `createdAt`: `datetime`
-- `definition`: `"DefinitionDocumentTypeDef"`
-
+- `definition`:
+  [DefinitionDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#definitiondocumenttypedef)
 
 ## EntityFilterTypeDef
 
@@ -189,13 +171,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import EntityFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `EntityFilterName`
-- `value`: `List[str]`
 
+- `name`:
+  [EntityFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#entityfiltername)
+- `value`: `List`\[`str`\]
 
 ## FlowExecutionMessageTypeDef
 
@@ -203,15 +183,13 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import FlowExecutionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `messageId`: `str`
-- `eventType`: `FlowExecutionEventType`
+- `eventType`:
+  [FlowExecutionEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#flowexecutioneventtype)
 - `timestamp`: `datetime`
 - `payload`: `str`
-
 
 ## FlowExecutionSummaryTypeDef
 
@@ -219,17 +197,15 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import FlowExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `flowExecutionId`: `str`
-- `status`: `FlowExecutionStatus`
+- `status`:
+  [FlowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#flowexecutionstatus)
 - `systemInstanceId`: `str`
 - `flowTemplateId`: `str`
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
-
 
 ## FlowTemplateDescriptionTypeDef
 
@@ -237,14 +213,13 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"FlowTemplateSummaryTypeDef"`
-- `definition`: `"DefinitionDocumentTypeDef"`
-- `validatedNamespaceVersion`: `int`
 
+- `summary`:
+  [FlowTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatesummarytypedef)
+- `definition`:
+  [DefinitionDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#definitiondocumenttypedef)
+- `validatedNamespaceVersion`: `int`
 
 ## FlowTemplateFilterTypeDef
 
@@ -252,13 +227,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateFilterTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `Literal['DEVICE_MODEL_ID']`
-- `value`: `List[str]`
-
-
-
+- `value`: `List`\[`str`\]
 
 ## FlowTemplateSummaryTypeDef
 
@@ -266,15 +238,12 @@ Required fields:
 from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
-
 
 ## GetEntitiesResponseTypeDef
 
@@ -282,12 +251,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `descriptions`: `List["EntityDescriptionTypeDef"]`
 
+- `descriptions`:
+  `List`\[[EntityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#entitydescriptiontypedef)\]
 
 ## GetFlowTemplateResponseTypeDef
 
@@ -295,12 +262,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `description`: `"FlowTemplateDescriptionTypeDef"`
 
+- `description`:
+  [FlowTemplateDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatedescriptiontypedef)
 
 ## GetFlowTemplateRevisionsResponseTypeDef
 
@@ -308,13 +273,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["FlowTemplateSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[FlowTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatesummarytypedef)\]
+- `nextToken`: `str`
 
 ## GetNamespaceDeletionStatusResponseTypeDef
 
@@ -322,16 +285,14 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetNamespaceDeletionStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
-- `status`: `NamespaceDeletionStatus`
+- `status`:
+  [NamespaceDeletionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#namespacedeletionstatus)
 - `errorCode`: `Literal['VALIDATION_FAILED']`
 - `errorMessage`: `str`
-
 
 ## GetSystemInstanceResponseTypeDef
 
@@ -339,12 +300,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `description`: `"SystemInstanceDescriptionTypeDef"`
 
+- `description`:
+  [SystemInstanceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancedescriptiontypedef)
 
 ## GetSystemTemplateResponseTypeDef
 
@@ -352,12 +311,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `description`: `"SystemTemplateDescriptionTypeDef"`
 
+- `description`:
+  [SystemTemplateDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatedescriptiontypedef)
 
 ## GetSystemTemplateRevisionsResponseTypeDef
 
@@ -365,13 +322,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["SystemTemplateSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[SystemTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatesummarytypedef)\]
+- `nextToken`: `str`
 
 ## GetUploadStatusResponseTypeDef
 
@@ -379,20 +334,19 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusResponseTypeDef
 ```
 
-
 Required fields:
+
 - `uploadId`: `str`
-- `uploadStatus`: `UploadStatus`
+- `uploadStatus`:
+  [UploadStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#uploadstatus)
 - `createdDate`: `datetime`
 
-
-
 Optional fields:
+
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
 - `namespaceVersion`: `int`
-- `failureReason`: `List[str]`
-
+- `failureReason`: `List`\[`str`\]
 
 ## ListFlowExecutionMessagesResponseTypeDef
 
@@ -400,13 +354,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `messages`: `List["FlowExecutionMessageTypeDef"]`
-- `nextToken`: `str`
 
+- `messages`:
+  `List`\[[FlowExecutionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowexecutionmessagetypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -414,13 +366,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
-- `nextToken`: `str`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#tagtypedef)\]
+- `nextToken`: `str`
 
 ## MetricsConfigurationTypeDef
 
@@ -428,13 +378,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import MetricsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `cloudMetricEnabled`: `bool`
 - `metricRuleRoleArn`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -442,14 +389,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## SearchEntitiesResponseTypeDef
 
@@ -457,13 +401,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `descriptions`: `List["EntityDescriptionTypeDef"]`
-- `nextToken`: `str`
 
+- `descriptions`:
+  `List`\[[EntityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#entitydescriptiontypedef)\]
+- `nextToken`: `str`
 
 ## SearchFlowExecutionsResponseTypeDef
 
@@ -471,13 +413,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["FlowExecutionSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[FlowExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowexecutionsummarytypedef)\]
+- `nextToken`: `str`
 
 ## SearchFlowTemplatesResponseTypeDef
 
@@ -485,13 +425,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["FlowTemplateSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[FlowTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatesummarytypedef)\]
+- `nextToken`: `str`
 
 ## SearchSystemInstancesResponseTypeDef
 
@@ -499,13 +437,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["SystemInstanceSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[SystemInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancesummarytypedef)\]
+- `nextToken`: `str`
 
 ## SearchSystemTemplatesResponseTypeDef
 
@@ -513,13 +449,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summaries`: `List["SystemTemplateSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `summaries`:
+  `List`\[[SystemTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatesummarytypedef)\]
+- `nextToken`: `str`
 
 ## SearchThingsResponseTypeDef
 
@@ -527,13 +461,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SearchThingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `things`: `List["ThingTypeDef"]`
-- `nextToken`: `str`
 
+- `things`:
+  `List`\[[ThingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#thingtypedef)\]
+- `nextToken`: `str`
 
 ## SystemInstanceDescriptionTypeDef
 
@@ -541,18 +473,19 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemInstanceSummaryTypeDef"`
-- `definition`: `"DefinitionDocumentTypeDef"`
-- `s3BucketName`: `str`
-- `metricsConfiguration`: `"MetricsConfigurationTypeDef"`
-- `validatedNamespaceVersion`: `int`
-- `validatedDependencyRevisions`: `List["DependencyRevisionTypeDef"]`
-- `flowActionsRoleArn`: `str`
 
+- `summary`:
+  [SystemInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancesummarytypedef)
+- `definition`:
+  [DefinitionDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#definitiondocumenttypedef)
+- `s3BucketName`: `str`
+- `metricsConfiguration`:
+  [MetricsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#metricsconfigurationtypedef)
+- `validatedNamespaceVersion`: `int`
+- `validatedDependencyRevisions`:
+  `List`\[[DependencyRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#dependencyrevisiontypedef)\]
+- `flowActionsRoleArn`: `str`
 
 ## SystemInstanceFilterTypeDef
 
@@ -560,13 +493,11 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SystemInstanceFilterName`
-- `value`: `List[str]`
 
+- `name`:
+  [SystemInstanceFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#systeminstancefiltername)
+- `value`: `List`\[`str`\]
 
 ## SystemInstanceSummaryTypeDef
 
@@ -574,20 +505,19 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
-- `status`: `SystemInstanceDeploymentStatus`
-- `target`: `DeploymentTarget`
+- `status`:
+  [SystemInstanceDeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#systeminstancedeploymentstatus)
+- `target`:
+  [DeploymentTarget](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#deploymenttarget)
 - `greengrassGroupName`: `str`
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
 - `greengrassGroupId`: `str`
 - `greengrassGroupVersionId`: `str`
-
 
 ## SystemTemplateDescriptionTypeDef
 
@@ -595,14 +525,13 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemTemplateSummaryTypeDef"`
-- `definition`: `"DefinitionDocumentTypeDef"`
-- `validatedNamespaceVersion`: `int`
 
+- `summary`:
+  [SystemTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatesummarytypedef)
+- `definition`:
+  [DefinitionDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#definitiondocumenttypedef)
+- `validatedNamespaceVersion`: `int`
 
 ## SystemTemplateFilterTypeDef
 
@@ -610,13 +539,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateFilterTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `Literal['FLOW_TEMPLATE_ID']`
-- `value`: `List[str]`
-
-
-
+- `value`: `List`\[`str`\]
 
 ## SystemTemplateSummaryTypeDef
 
@@ -624,15 +550,12 @@ Required fields:
 from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
-
 
 ## TagTypeDef
 
@@ -640,13 +563,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## ThingTypeDef
 
@@ -654,13 +574,10 @@ Required fields:
 from mypy_boto3_iotthingsgraph.type_defs import ThingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `thingArn`: `str`
 - `thingName`: `str`
-
 
 ## UndeploySystemInstanceResponseTypeDef
 
@@ -668,12 +585,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemInstanceSummaryTypeDef"`
 
+- `summary`:
+  [SystemInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancesummarytypedef)
 
 ## UpdateFlowTemplateResponseTypeDef
 
@@ -681,12 +596,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"FlowTemplateSummaryTypeDef"`
 
+- `summary`:
+  [FlowTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatesummarytypedef)
 
 ## UpdateSystemTemplateResponseTypeDef
 
@@ -694,12 +607,10 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `summary`: `"SystemTemplateSummaryTypeDef"`
 
+- `summary`:
+  [SystemTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatesummarytypedef)
 
 ## UploadEntityDefinitionsResponseTypeDef
 
@@ -707,9 +618,6 @@ Optional fields:
 from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
+
 - `uploadId`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3](./README.md) > S3Client
 
-Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+Auto-generated documentation for
+[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+type annotations stubs module
+[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [S3Client for boto3 S3 module](#s3client-for-boto3-s3-module)
   - [S3Client](#s3client)
@@ -129,12 +131,13 @@ def get_s3_client() -> S3Client:
     return boto3.client("s3")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client)
+Boto3 documentation:
+[S3.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_s3.client import Exceptions
@@ -142,7 +145,6 @@ from mypy_boto3_s3.client import Exceptions
 def handle_error(exc: Exceptions.BucketAlreadyExists) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -156,1958 +158,1936 @@ Exceptions:
 - `Exceptions.ObjectAlreadyInActiveTierError`
 - `Exceptions.ObjectNotInActiveTierError`
 
-
 ## Methods
-
 
 ### abort_multipart_upload
 
 Type annotations for `boto3.client("s3").abort_multipart_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.abort_multipart_upload]
+Boto3 documentation:
+[S3.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.abort_multipart_upload)
 
-```python
-def abort_multipart_upload(
-    self,
-    Bucket: str,
-    Key: str,
-    UploadId: str,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> AbortMultipartUploadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `UploadId`: `str` *(required)*
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[AbortMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#abortmultipartuploadoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("s3").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.can_paginate]
+Boto3 documentation:
+[S3.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_multipart_upload
 
 Type annotations for `boto3.client("s3").complete_multipart_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.complete_multipart_upload]
+Boto3 documentation:
+[S3.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.complete_multipart_upload)
 
-```python
-def complete_multipart_upload(
-    self,
-    Bucket: str,
-    Key: str,
-    UploadId: str,
-    MultipartUpload: CompletedMultipartUploadTypeDef = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> CompleteMultipartUploadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `UploadId`: `str` *(required)*
+- `MultipartUpload`:
+  [CompletedMultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#completedmultipartuploadtypedef)
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[CompleteMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#completemultipartuploadoutputtypedef).
 
 ### copy
 
 Type annotations for `boto3.client("s3").copy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy]
+Boto3 documentation:
+[S3.Client.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy)
 
-```python
-def copy(
-    self,
-    CopySource: CopySourceTypeDef,
-    Bucket: str,
-    Key: str,
-    ExtraArgs: Dict[str, Any] = None,
-    Callback: Callable[..., Any] = None,
-    SourceClient: BaseClient = None,
-    Config: TransferConfig = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CopySource`:
+  [CopySourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copysourcetypedef)
+  *(required)*
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `SourceClient`: `BaseClient`
+- `Config`: `TransferConfig`
 
 ### copy_object
 
 Type annotations for `boto3.client("s3").copy_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy_object]
+Boto3 documentation:
+[S3.Client.copy_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy_object)
 
-```python
-def copy_object(
-    self,
-    Bucket: str,
-    CopySource: Union[str, CopySourceTypeDef],
-    Key: str,
-    ACL: ObjectCannedACL = None,
-    CacheControl: str = None,
-    ContentDisposition: str = None,
-    ContentEncoding: str = None,
-    ContentLanguage: str = None,
-    ContentType: str = None,
-    CopySourceIfMatch: str = None,
-    CopySourceIfModifiedSince: datetime = None,
-    CopySourceIfNoneMatch: str = None,
-    CopySourceIfUnmodifiedSince: datetime = None,
-    Expires: datetime = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWriteACP: str = None,
-    Metadata: Dict[str, str] = None,
-    MetadataDirective: MetadataDirective = None,
-    TaggingDirective: TaggingDirective = None,
-    ServerSideEncryption: ServerSideEncryption = None,
-    StorageClass: StorageClass = None,
-    WebsiteRedirectLocation: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    SSEKMSKeyId: str = None,
-    SSEKMSEncryptionContext: str = None,
-    BucketKeyEnabled: bool = None,
-    CopySourceSSECustomerAlgorithm: str = None,
-    CopySourceSSECustomerKey: str = None,
-    CopySourceSSECustomerKeyMD5: str = None,
-    RequestPayer: Literal['requester'] = None,
-    Tagging: str = None,
-    ObjectLockMode: ObjectLockMode = None,
-    ObjectLockRetainUntilDate: datetime = None,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = None,
-    ExpectedBucketOwner: str = None,
-    ExpectedSourceBucketOwner: str = None
-) -> CopyObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `CopySource`: `Union`\[`str`,
+  [CopySourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copysourcetypedef)\]
+  *(required)*
+- `Key`: `str` *(required)*
+- `ACL`:
+  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `datetime`
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `datetime`
+- `Expires`: `datetime`
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `MetadataDirective`:
+  [MetadataDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#metadatadirective)
+- `TaggingDirective`:
+  [TaggingDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#taggingdirective)
+- `ServerSideEncryption`:
+  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `StorageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `Tagging`: `str`
+- `ObjectLockMode`:
+  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+Returns
+[CopyObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copyobjectoutputtypedef).
 
 ### create_bucket
 
 Type annotations for `boto3.client("s3").create_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_bucket]
+Boto3 documentation:
+[S3.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_bucket)
 
-```python
-def create_bucket(
-    self,
-    Bucket: str,
-    ACL: BucketCannedACL = None,
-    CreateBucketConfiguration: CreateBucketConfigurationTypeDef = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWrite: str = None,
-    GrantWriteACP: str = None,
-    ObjectLockEnabledForBucket: bool = None
-) -> CreateBucketOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ACL`:
+  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketcannedacl)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+
+Returns
+[CreateBucketOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createbucketoutputtypedef).
 
 ### create_multipart_upload
 
 Type annotations for `boto3.client("s3").create_multipart_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload]
+Boto3 documentation:
+[S3.Client.create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload)
 
-```python
-def create_multipart_upload(
-    self,
-    Bucket: str,
-    Key: str,
-    ACL: ObjectCannedACL = None,
-    CacheControl: str = None,
-    ContentDisposition: str = None,
-    ContentEncoding: str = None,
-    ContentLanguage: str = None,
-    ContentType: str = None,
-    Expires: datetime = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWriteACP: str = None,
-    Metadata: Dict[str, str] = None,
-    ServerSideEncryption: ServerSideEncryption = None,
-    StorageClass: StorageClass = None,
-    WebsiteRedirectLocation: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    SSEKMSKeyId: str = None,
-    SSEKMSEncryptionContext: str = None,
-    BucketKeyEnabled: bool = None,
-    RequestPayer: Literal['requester'] = None,
-    Tagging: str = None,
-    ObjectLockMode: ObjectLockMode = None,
-    ObjectLockRetainUntilDate: datetime = None,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = None,
-    ExpectedBucketOwner: str = None
-) -> CreateMultipartUploadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ACL`:
+  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `Expires`: `datetime`
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `StorageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']`
+- `Tagging`: `str`
+- `ObjectLockMode`:
+  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[CreateMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createmultipartuploadoutputtypedef).
 
 ### delete_bucket
 
 Type annotations for `boto3.client("s3").delete_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket]
+Boto3 documentation:
+[S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket)
 
-```python
-def delete_bucket(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_analytics_configuration
 
-Type annotations for `boto3.client("s3").delete_bucket_analytics_configuration` method.
+Type annotations for `boto3.client("s3").delete_bucket_analytics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration]
+Boto3 documentation:
+[S3.Client.delete_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration)
 
-```python
-def delete_bucket_analytics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_cors
 
 Type annotations for `boto3.client("s3").delete_bucket_cors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors]
+Boto3 documentation:
+[S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors)
 
-```python
-def delete_bucket_cors(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_encryption
 
 Type annotations for `boto3.client("s3").delete_bucket_encryption` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption]
+Boto3 documentation:
+[S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption)
 
-```python
-def delete_bucket_encryption(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_intelligent_tiering_configuration
 
-Type annotations for `boto3.client("s3").delete_bucket_intelligent_tiering_configuration` method.
+Type annotations for
+`boto3.client("s3").delete_bucket_intelligent_tiering_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration]
+Boto3 documentation:
+[S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
 
-```python
-def delete_bucket_intelligent_tiering_configuration(
-    self,
-    Bucket: str,
-    Id: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
 
 ### delete_bucket_inventory_configuration
 
-Type annotations for `boto3.client("s3").delete_bucket_inventory_configuration` method.
+Type annotations for `boto3.client("s3").delete_bucket_inventory_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration]
+Boto3 documentation:
+[S3.Client.delete_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration)
 
-```python
-def delete_bucket_inventory_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_lifecycle
 
 Type annotations for `boto3.client("s3").delete_bucket_lifecycle` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle]
+Boto3 documentation:
+[S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
 
-```python
-def delete_bucket_lifecycle(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_metrics_configuration
 
-Type annotations for `boto3.client("s3").delete_bucket_metrics_configuration` method.
+Type annotations for `boto3.client("s3").delete_bucket_metrics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration]
+Boto3 documentation:
+[S3.Client.delete_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration)
 
-```python
-def delete_bucket_metrics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_ownership_controls
 
-Type annotations for `boto3.client("s3").delete_bucket_ownership_controls` method.
+Type annotations for `boto3.client("s3").delete_bucket_ownership_controls`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls]
+Boto3 documentation:
+[S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
 
-```python
-def delete_bucket_ownership_controls(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_policy
 
 Type annotations for `boto3.client("s3").delete_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy]
+Boto3 documentation:
+[S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy)
 
-```python
-def delete_bucket_policy(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_replication
 
 Type annotations for `boto3.client("s3").delete_bucket_replication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication]
+Boto3 documentation:
+[S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication)
 
-```python
-def delete_bucket_replication(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_tagging
 
 Type annotations for `boto3.client("s3").delete_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging]
+Boto3 documentation:
+[S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging)
 
-```python
-def delete_bucket_tagging(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_bucket_website
 
 Type annotations for `boto3.client("s3").delete_bucket_website` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website]
+Boto3 documentation:
+[S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website)
 
-```python
-def delete_bucket_website(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### delete_object
 
 Type annotations for `boto3.client("s3").delete_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object]
+Boto3 documentation:
+[S3.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object)
 
-```python
-def delete_object(
-    self,
-    Bucket: str,
-    Key: str,
-    MFA: str = None,
-    VersionId: str = None,
-    RequestPayer: Literal['requester'] = None,
-    BypassGovernanceRetention: bool = None,
-    ExpectedBucketOwner: str = None
-) -> DeleteObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `MFA`: `str`
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[DeleteObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectoutputtypedef).
 
 ### delete_object_tagging
 
 Type annotations for `boto3.client("s3").delete_object_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object_tagging]
+Boto3 documentation:
+[S3.Client.delete_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object_tagging)
 
-```python
-def delete_object_tagging(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    ExpectedBucketOwner: str = None
-) -> DeleteObjectTaggingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[DeleteObjectTaggingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjecttaggingoutputtypedef).
 
 ### delete_objects
 
 Type annotations for `boto3.client("s3").delete_objects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects]
+Boto3 documentation:
+[S3.Client.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects)
 
-```python
-def delete_objects(
-    self,
-    Bucket: str,
-    Delete: DeleteTypeDef,
-    MFA: str = None,
-    RequestPayer: Literal['requester'] = None,
-    BypassGovernanceRetention: bool = None,
-    ExpectedBucketOwner: str = None
-) -> DeleteObjectsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Delete`:
+  [DeleteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deletetypedef)
+  *(required)*
+- `MFA`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[DeleteObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectsoutputtypedef).
 
 ### delete_public_access_block
 
 Type annotations for `boto3.client("s3").delete_public_access_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block]
+Boto3 documentation:
+[S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block)
 
-```python
-def delete_public_access_block(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### download_file
 
 Type annotations for `boto3.client("s3").download_file` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_file]
+Boto3 documentation:
+[S3.Client.download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_file)
 
-```python
-def download_file(
-    self,
-    Bucket: str,
-    Key: str,
-    Filename: str,
-    ExtraArgs: Dict[str, Any] = None,
-    Callback: Callable[..., Any] = None,
-    Config: TransferConfig = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Filename`: `str` *(required)*
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ### download_fileobj
 
 Type annotations for `boto3.client("s3").download_fileobj` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_fileobj]
+Boto3 documentation:
+[S3.Client.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_fileobj)
 
-```python
-def download_fileobj(
-    self,
-    Bucket: str,
-    Key: str,
-    Fileobj: IO[Any],
-    ExtraArgs: Dict[str, Any] = None,
-    Callback: Callable[..., Any] = None,
-    Config: TransferConfig = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Fileobj`: `IO`\[`Any`\] *(required)*
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ### generate_presigned_post
 
 Type annotations for `boto3.client("s3").generate_presigned_post` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_post]
+Boto3 documentation:
+[S3.Client.generate_presigned_post](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_post)
 
-```python
-def generate_presigned_post(
-    self,
-    Bucket: str,
-    Key: str,
-    Fields: Dict[str, Any] = None,
-    Conditions: List[Any] = None,
-    ExpiresIn: int = 3600
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Fields`: `Dict`\[`str`, `Any`\]
+- `Conditions`: `List`\[`Any`\]
+- `ExpiresIn`: `int`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("s3").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_url]
+Boto3 documentation:
+[S3.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_bucket_accelerate_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_accelerate_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_accelerate_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
 
-```python
-def get_bucket_accelerate_configuration(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketAccelerateConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketAccelerateConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketaccelerateconfigurationoutputtypedef).
 
 ### get_bucket_acl
 
 Type annotations for `boto3.client("s3").get_bucket_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl]
+Boto3 documentation:
+[S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl)
 
-```python
-def get_bucket_acl(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketAclOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketAclOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketacloutputtypedef).
 
 ### get_bucket_analytics_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_analytics_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_analytics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration)
 
-```python
-def get_bucket_analytics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketAnalyticsConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketAnalyticsConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketanalyticsconfigurationoutputtypedef).
 
 ### get_bucket_cors
 
 Type annotations for `boto3.client("s3").get_bucket_cors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors]
+Boto3 documentation:
+[S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors)
 
-```python
-def get_bucket_cors(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketCorsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketCorsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketcorsoutputtypedef).
 
 ### get_bucket_encryption
 
 Type annotations for `boto3.client("s3").get_bucket_encryption` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption]
+Boto3 documentation:
+[S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption)
 
-```python
-def get_bucket_encryption(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketEncryptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketEncryptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketencryptionoutputtypedef).
 
 ### get_bucket_intelligent_tiering_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_intelligent_tiering_configuration` method.
+Type annotations for
+`boto3.client("s3").get_bucket_intelligent_tiering_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
 
-```python
-def get_bucket_intelligent_tiering_configuration(
-    self,
-    Bucket: str,
-    Id: str
-) -> GetBucketIntelligentTieringConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetBucketIntelligentTieringConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketintelligenttieringconfigurationoutputtypedef).
 
 ### get_bucket_inventory_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_inventory_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_inventory_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration)
 
-```python
-def get_bucket_inventory_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketInventoryConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketInventoryConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketinventoryconfigurationoutputtypedef).
 
 ### get_bucket_lifecycle
 
 Type annotations for `boto3.client("s3").get_bucket_lifecycle` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle]
+Boto3 documentation:
+[S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
 
-```python
-def get_bucket_lifecycle(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketLifecycleOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketLifecycleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketlifecycleoutputtypedef).
 
 ### get_bucket_lifecycle_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_lifecycle_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_lifecycle_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
 
-```python
-def get_bucket_lifecycle_configuration(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketLifecycleConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketLifecycleConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketlifecycleconfigurationoutputtypedef).
 
 ### get_bucket_location
 
 Type annotations for `boto3.client("s3").get_bucket_location` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location]
+Boto3 documentation:
+[S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location)
 
-```python
-def get_bucket_location(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketLocationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketLocationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketlocationoutputtypedef).
 
 ### get_bucket_logging
 
 Type annotations for `boto3.client("s3").get_bucket_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging]
+Boto3 documentation:
+[S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging)
 
-```python
-def get_bucket_logging(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketLoggingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketLoggingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketloggingoutputtypedef).
 
 ### get_bucket_metrics_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_metrics_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_metrics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration)
 
-```python
-def get_bucket_metrics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketMetricsConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketMetricsConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketmetricsconfigurationoutputtypedef).
 
 ### get_bucket_notification
 
 Type annotations for `boto3.client("s3").get_bucket_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification]
+Boto3 documentation:
+[S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)
 
-```python
-def get_bucket_notification(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> NotificationConfigurationDeprecatedTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[NotificationConfigurationDeprecatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationdeprecatedtypedef).
 
 ### get_bucket_notification_configuration
 
-Type annotations for `boto3.client("s3").get_bucket_notification_configuration` method.
+Type annotations for `boto3.client("s3").get_bucket_notification_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration]
+Boto3 documentation:
+[S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
 
-```python
-def get_bucket_notification_configuration(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> NotificationConfigurationTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationtypedef).
 
 ### get_bucket_ownership_controls
 
 Type annotations for `boto3.client("s3").get_bucket_ownership_controls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls]
+Boto3 documentation:
+[S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
 
-```python
-def get_bucket_ownership_controls(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketOwnershipControlsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketOwnershipControlsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketownershipcontrolsoutputtypedef).
 
 ### get_bucket_policy
 
 Type annotations for `boto3.client("s3").get_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy]
+Boto3 documentation:
+[S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy)
 
-```python
-def get_bucket_policy(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketpolicyoutputtypedef).
 
 ### get_bucket_policy_status
 
 Type annotations for `boto3.client("s3").get_bucket_policy_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status]
+Boto3 documentation:
+[S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status)
 
-```python
-def get_bucket_policy_status(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketPolicyStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketPolicyStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketpolicystatusoutputtypedef).
 
 ### get_bucket_replication
 
 Type annotations for `boto3.client("s3").get_bucket_replication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication]
+Boto3 documentation:
+[S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication)
 
-```python
-def get_bucket_replication(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketReplicationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketReplicationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketreplicationoutputtypedef).
 
 ### get_bucket_request_payment
 
 Type annotations for `boto3.client("s3").get_bucket_request_payment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment]
+Boto3 documentation:
+[S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment)
 
-```python
-def get_bucket_request_payment(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketRequestPaymentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketRequestPaymentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketrequestpaymentoutputtypedef).
 
 ### get_bucket_tagging
 
 Type annotations for `boto3.client("s3").get_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging]
+Boto3 documentation:
+[S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging)
 
-```python
-def get_bucket_tagging(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketTaggingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketTaggingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbuckettaggingoutputtypedef).
 
 ### get_bucket_versioning
 
 Type annotations for `boto3.client("s3").get_bucket_versioning` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning]
+Boto3 documentation:
+[S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning)
 
-```python
-def get_bucket_versioning(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketVersioningOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketVersioningOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketversioningoutputtypedef).
 
 ### get_bucket_website
 
 Type annotations for `boto3.client("s3").get_bucket_website` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website]
+Boto3 documentation:
+[S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website)
 
-```python
-def get_bucket_website(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetBucketWebsiteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetBucketWebsiteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getbucketwebsiteoutputtypedef).
 
 ### get_object
 
 Type annotations for `boto3.client("s3").get_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object]
+Boto3 documentation:
+[S3.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object)
 
-```python
-def get_object(
-    self,
-    Bucket: str,
-    Key: str,
-    IfMatch: str = None,
-    IfModifiedSince: datetime = None,
-    IfNoneMatch: str = None,
-    IfUnmodifiedSince: datetime = None,
-    Range: str = None,
-    ResponseCacheControl: str = None,
-    ResponseContentDisposition: str = None,
-    ResponseContentEncoding: str = None,
-    ResponseContentLanguage: str = None,
-    ResponseContentType: str = None,
-    ResponseExpires: datetime = None,
-    VersionId: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    RequestPayer: Literal['requester'] = None,
-    PartNumber: int = None,
-    ExpectedBucketOwner: str = None
-) -> GetObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `IfMatch`: `str`
+- `IfModifiedSince`: `datetime`
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `datetime`
+- `Range`: `str`
+- `ResponseCacheControl`: `str`
+- `ResponseContentDisposition`: `str`
+- `ResponseContentEncoding`: `str`
+- `ResponseContentLanguage`: `str`
+- `ResponseContentType`: `str`
+- `ResponseExpires`: `datetime`
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectoutputtypedef).
 
 ### get_object_acl
 
 Type annotations for `boto3.client("s3").get_object_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_acl]
+Boto3 documentation:
+[S3.Client.get_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_acl)
 
-```python
-def get_object_acl(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> GetObjectAclOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectAclOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectacloutputtypedef).
 
 ### get_object_legal_hold
 
 Type annotations for `boto3.client("s3").get_object_legal_hold` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_legal_hold]
+Boto3 documentation:
+[S3.Client.get_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_legal_hold)
 
-```python
-def get_object_legal_hold(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> GetObjectLegalHoldOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectLegalHoldOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectlegalholdoutputtypedef).
 
 ### get_object_lock_configuration
 
 Type annotations for `boto3.client("s3").get_object_lock_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration]
+Boto3 documentation:
+[S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration)
 
-```python
-def get_object_lock_configuration(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetObjectLockConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectLockConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectlockconfigurationoutputtypedef).
 
 ### get_object_retention
 
 Type annotations for `boto3.client("s3").get_object_retention` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_retention]
+Boto3 documentation:
+[S3.Client.get_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_retention)
 
-```python
-def get_object_retention(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> GetObjectRetentionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectRetentionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectretentionoutputtypedef).
 
 ### get_object_tagging
 
 Type annotations for `boto3.client("s3").get_object_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_tagging]
+Boto3 documentation:
+[S3.Client.get_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_tagging)
 
-```python
-def get_object_tagging(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    ExpectedBucketOwner: str = None,
-    RequestPayer: Literal['requester'] = None
-) -> GetObjectTaggingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+- `RequestPayer`: `Literal['requester']`
+
+Returns
+[GetObjectTaggingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjecttaggingoutputtypedef).
 
 ### get_object_torrent
 
 Type annotations for `boto3.client("s3").get_object_torrent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_torrent]
+Boto3 documentation:
+[S3.Client.get_object_torrent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_torrent)
 
-```python
-def get_object_torrent(
-    self,
-    Bucket: str,
-    Key: str,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> GetObjectTorrentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetObjectTorrentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjecttorrentoutputtypedef).
 
 ### get_public_access_block
 
 Type annotations for `boto3.client("s3").get_public_access_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block]
+Boto3 documentation:
+[S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block)
 
-```python
-def get_public_access_block(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> GetPublicAccessBlockOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[GetPublicAccessBlockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getpublicaccessblockoutputtypedef).
 
 ### head_bucket
 
 Type annotations for `boto3.client("s3").head_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket]
+Boto3 documentation:
+[S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket)
 
-```python
-def head_bucket(
-    self,
-    Bucket: str,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### head_object
 
 Type annotations for `boto3.client("s3").head_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object]
+Boto3 documentation:
+[S3.Client.head_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object)
 
-```python
-def head_object(
-    self,
-    Bucket: str,
-    Key: str,
-    IfMatch: str = None,
-    IfModifiedSince: datetime = None,
-    IfNoneMatch: str = None,
-    IfUnmodifiedSince: datetime = None,
-    Range: str = None,
-    VersionId: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    RequestPayer: Literal['requester'] = None,
-    PartNumber: int = None,
-    ExpectedBucketOwner: str = None
-) -> HeadObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `IfMatch`: `str`
+- `IfModifiedSince`: `datetime`
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `datetime`
+- `Range`: `str`
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[HeadObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#headobjectoutputtypedef).
 
 ### list_bucket_analytics_configurations
 
-Type annotations for `boto3.client("s3").list_bucket_analytics_configurations` method.
+Type annotations for `boto3.client("s3").list_bucket_analytics_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations]
+Boto3 documentation:
+[S3.Client.list_bucket_analytics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations)
 
-```python
-def list_bucket_analytics_configurations(
-    self,
-    Bucket: str,
-    ContinuationToken: str = None,
-    ExpectedBucketOwner: str = None
-) -> ListBucketAnalyticsConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListBucketAnalyticsConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listbucketanalyticsconfigurationsoutputtypedef).
 
 ### list_bucket_intelligent_tiering_configurations
 
-Type annotations for `boto3.client("s3").list_bucket_intelligent_tiering_configurations` method.
+Type annotations for
+`boto3.client("s3").list_bucket_intelligent_tiering_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations]
+Boto3 documentation:
+[S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
 
-```python
-def list_bucket_intelligent_tiering_configurations(
-    self,
-    Bucket: str,
-    ContinuationToken: str = None
-) -> ListBucketIntelligentTieringConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ContinuationToken`: `str`
+
+Returns
+[ListBucketIntelligentTieringConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listbucketintelligenttieringconfigurationsoutputtypedef).
 
 ### list_bucket_inventory_configurations
 
-Type annotations for `boto3.client("s3").list_bucket_inventory_configurations` method.
+Type annotations for `boto3.client("s3").list_bucket_inventory_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations]
+Boto3 documentation:
+[S3.Client.list_bucket_inventory_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations)
 
-```python
-def list_bucket_inventory_configurations(
-    self,
-    Bucket: str,
-    ContinuationToken: str = None,
-    ExpectedBucketOwner: str = None
-) -> ListBucketInventoryConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListBucketInventoryConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listbucketinventoryconfigurationsoutputtypedef).
 
 ### list_bucket_metrics_configurations
 
-Type annotations for `boto3.client("s3").list_bucket_metrics_configurations` method.
+Type annotations for `boto3.client("s3").list_bucket_metrics_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations]
+Boto3 documentation:
+[S3.Client.list_bucket_metrics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations)
 
-```python
-def list_bucket_metrics_configurations(
-    self,
-    Bucket: str,
-    ContinuationToken: str = None,
-    ExpectedBucketOwner: str = None
-) -> ListBucketMetricsConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListBucketMetricsConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listbucketmetricsconfigurationsoutputtypedef).
 
 ### list_buckets
 
 Type annotations for `boto3.client("s3").list_buckets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets]
+Boto3 documentation:
+[S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets)
 
-```python
-def list_buckets(
-    self
-) -> ListBucketsOutputTypeDef:
-    pass
-```
+Returns
+[ListBucketsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listbucketsoutputtypedef).
 
 ### list_multipart_uploads
 
 Type annotations for `boto3.client("s3").list_multipart_uploads` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_multipart_uploads]
+Boto3 documentation:
+[S3.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_multipart_uploads)
 
-```python
-def list_multipart_uploads(
-    self,
-    Bucket: str,
-    Delimiter: str = None,
-    EncodingType: Literal['url'] = None,
-    KeyMarker: str = None,
-    MaxUploads: int = None,
-    Prefix: str = None,
-    UploadIdMarker: str = None,
-    ExpectedBucketOwner: str = None
-) -> ListMultipartUploadsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `KeyMarker`: `str`
+- `MaxUploads`: `int`
+- `Prefix`: `str`
+- `UploadIdMarker`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listmultipartuploadsoutputtypedef).
 
 ### list_object_versions
 
 Type annotations for `boto3.client("s3").list_object_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_object_versions]
+Boto3 documentation:
+[S3.Client.list_object_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_object_versions)
 
-```python
-def list_object_versions(
-    self,
-    Bucket: str,
-    Delimiter: str = None,
-    EncodingType: Literal['url'] = None,
-    KeyMarker: str = None,
-    MaxKeys: int = None,
-    Prefix: str = None,
-    VersionIdMarker: str = None,
-    ExpectedBucketOwner: str = None
-) -> ListObjectVersionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `KeyMarker`: `str`
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `VersionIdMarker`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListObjectVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectversionsoutputtypedef).
 
 ### list_objects
 
 Type annotations for `boto3.client("s3").list_objects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects]
+Boto3 documentation:
+[S3.Client.list_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects)
 
-```python
-def list_objects(
-    self,
-    Bucket: str,
-    Delimiter: str = None,
-    EncodingType: Literal['url'] = None,
-    Marker: str = None,
-    MaxKeys: int = None,
-    Prefix: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> ListObjectsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `Marker`: `str`
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsoutputtypedef).
 
 ### list_objects_v2
 
 Type annotations for `boto3.client("s3").list_objects_v2` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2]
+Boto3 documentation:
+[S3.Client.list_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2)
 
-```python
-def list_objects_v2(
-    self,
-    Bucket: str,
-    Delimiter: str = None,
-    EncodingType: Literal['url'] = None,
-    MaxKeys: int = None,
-    Prefix: str = None,
-    ContinuationToken: str = None,
-    FetchOwner: bool = None,
-    StartAfter: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> ListObjectsV2OutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `ContinuationToken`: `str`
+- `FetchOwner`: `bool`
+- `StartAfter`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListObjectsV2OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsv2outputtypedef).
 
 ### list_parts
 
 Type annotations for `boto3.client("s3").list_parts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_parts]
+Boto3 documentation:
+[S3.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_parts)
 
-```python
-def list_parts(
-    self,
-    Bucket: str,
-    Key: str,
-    UploadId: str,
-    MaxParts: int = None,
-    PartNumberMarker: int = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> ListPartsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `UploadId`: `str` *(required)*
+- `MaxParts`: `int`
+- `PartNumberMarker`: `int`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listpartsoutputtypedef).
 
 ### put_bucket_accelerate_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_accelerate_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_accelerate_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration)
 
-```python
-def put_bucket_accelerate_configuration(
-    self,
-    Bucket: str,
-    AccelerateConfiguration: AccelerateConfigurationTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `AccelerateConfiguration`:
+  [AccelerateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accelerateconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_acl
 
 Type annotations for `boto3.client("s3").put_bucket_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_acl]
+Boto3 documentation:
+[S3.Client.put_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_acl)
 
-```python
-def put_bucket_acl(
-    self,
-    Bucket: str,
-    ACL: BucketCannedACL = None,
-    AccessControlPolicy: AccessControlPolicyTypeDef = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWrite: str = None,
-    GrantWriteACP: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ACL`:
+  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketcannedacl)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_analytics_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_analytics_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_analytics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration)
 
-```python
-def put_bucket_analytics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    AnalyticsConfiguration: "AnalyticsConfigurationTypeDef",
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `AnalyticsConfiguration`:
+  [AnalyticsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_cors
 
 Type annotations for `boto3.client("s3").put_bucket_cors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_cors]
+Boto3 documentation:
+[S3.Client.put_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_cors)
 
-```python
-def put_bucket_cors(
-    self,
-    Bucket: str,
-    CORSConfiguration: CORSConfigurationTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `CORSConfiguration`:
+  [CORSConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#corsconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_encryption
 
 Type annotations for `boto3.client("s3").put_bucket_encryption` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_encryption]
+Boto3 documentation:
+[S3.Client.put_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_encryption)
 
-```python
-def put_bucket_encryption(
-    self,
-    Bucket: str,
-    ServerSideEncryptionConfiguration: "ServerSideEncryptionConfigurationTypeDef",
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ServerSideEncryptionConfiguration`:
+  [ServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#serversideencryptionconfigurationtypedef)
+  *(required)*
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_intelligent_tiering_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_intelligent_tiering_configuration` method.
+Type annotations for
+`boto3.client("s3").put_bucket_intelligent_tiering_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration)
 
-```python
-def put_bucket_intelligent_tiering_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    IntelligentTieringConfiguration: "IntelligentTieringConfigurationTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `IntelligentTieringConfiguration`:
+  [IntelligentTieringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#intelligenttieringconfigurationtypedef)
+  *(required)*
 
 ### put_bucket_inventory_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_inventory_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_inventory_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration)
 
-```python
-def put_bucket_inventory_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    InventoryConfiguration: "InventoryConfigurationTypeDef",
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `InventoryConfiguration`:
+  [InventoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_lifecycle
 
 Type annotations for `boto3.client("s3").put_bucket_lifecycle` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle]
+Boto3 documentation:
+[S3.Client.put_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle)
 
-```python
-def put_bucket_lifecycle(
-    self,
-    Bucket: str,
-    LifecycleConfiguration: LifecycleConfigurationTypeDef = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `LifecycleConfiguration`:
+  [LifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_lifecycle_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_lifecycle_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_lifecycle_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration)
 
-```python
-def put_bucket_lifecycle_configuration(
-    self,
-    Bucket: str,
-    LifecycleConfiguration: BucketLifecycleConfigurationTypeDef = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `LifecycleConfiguration`:
+  [BucketLifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#bucketlifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_logging
 
 Type annotations for `boto3.client("s3").put_bucket_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_logging]
+Boto3 documentation:
+[S3.Client.put_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_logging)
 
-```python
-def put_bucket_logging(
-    self,
-    Bucket: str,
-    BucketLoggingStatus: BucketLoggingStatusTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `BucketLoggingStatus`:
+  [BucketLoggingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#bucketloggingstatustypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_metrics_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_metrics_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_metrics_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration)
 
-```python
-def put_bucket_metrics_configuration(
-    self,
-    Bucket: str,
-    Id: str,
-    MetricsConfiguration: "MetricsConfigurationTypeDef",
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `MetricsConfiguration`:
+  [MetricsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricsconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_notification
 
 Type annotations for `boto3.client("s3").put_bucket_notification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification]
+Boto3 documentation:
+[S3.Client.put_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification)
 
-```python
-def put_bucket_notification(
-    self,
-    Bucket: str,
-    NotificationConfiguration: NotificationConfigurationDeprecatedTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `NotificationConfiguration`:
+  [NotificationConfigurationDeprecatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationdeprecatedtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_notification_configuration
 
-Type annotations for `boto3.client("s3").put_bucket_notification_configuration` method.
+Type annotations for `boto3.client("s3").put_bucket_notification_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification_configuration]
+Boto3 documentation:
+[S3.Client.put_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification_configuration)
 
-```python
-def put_bucket_notification_configuration(
-    self,
-    Bucket: str,
-    NotificationConfiguration: NotificationConfigurationTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `NotificationConfiguration`:
+  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_ownership_controls
 
 Type annotations for `boto3.client("s3").put_bucket_ownership_controls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_ownership_controls]
+Boto3 documentation:
+[S3.Client.put_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_ownership_controls)
 
-```python
-def put_bucket_ownership_controls(
-    self,
-    Bucket: str,
-    OwnershipControls: "OwnershipControlsTypeDef",
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `OwnershipControls`:
+  [OwnershipControlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownershipcontrolstypedef)
+  *(required)*
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_policy
 
 Type annotations for `boto3.client("s3").put_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_policy]
+Boto3 documentation:
+[S3.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_policy)
 
-```python
-def put_bucket_policy(
-    self,
-    Bucket: str,
-    Policy: str,
-    ConfirmRemoveSelfBucketAccess: bool = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Policy`: `str` *(required)*
+- `ConfirmRemoveSelfBucketAccess`: `bool`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_replication
 
 Type annotations for `boto3.client("s3").put_bucket_replication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_replication]
+Boto3 documentation:
+[S3.Client.put_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_replication)
 
-```python
-def put_bucket_replication(
-    self,
-    Bucket: str,
-    ReplicationConfiguration: "ReplicationConfigurationTypeDef",
-    Token: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ReplicationConfiguration`:
+  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationconfigurationtypedef)
+  *(required)*
+- `Token`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_request_payment
 
 Type annotations for `boto3.client("s3").put_bucket_request_payment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_request_payment]
+Boto3 documentation:
+[S3.Client.put_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_request_payment)
 
-```python
-def put_bucket_request_payment(
-    self,
-    Bucket: str,
-    RequestPaymentConfiguration: RequestPaymentConfigurationTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `RequestPaymentConfiguration`:
+  [RequestPaymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#requestpaymentconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_tagging
 
 Type annotations for `boto3.client("s3").put_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_tagging]
+Boto3 documentation:
+[S3.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_tagging)
 
-```python
-def put_bucket_tagging(
-    self,
-    Bucket: str,
-    Tagging: "TaggingTypeDef",
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Tagging`:
+  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#taggingtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_versioning
 
 Type annotations for `boto3.client("s3").put_bucket_versioning` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_versioning]
+Boto3 documentation:
+[S3.Client.put_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_versioning)
 
-```python
-def put_bucket_versioning(
-    self,
-    Bucket: str,
-    VersioningConfiguration: VersioningConfigurationTypeDef,
-    MFA: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `VersioningConfiguration`:
+  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#versioningconfigurationtypedef)
+  *(required)*
+- `MFA`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### put_bucket_website
 
 Type annotations for `boto3.client("s3").put_bucket_website` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_website]
+Boto3 documentation:
+[S3.Client.put_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_website)
 
-```python
-def put_bucket_website(
-    self,
-    Bucket: str,
-    WebsiteConfiguration: WebsiteConfigurationTypeDef,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `WebsiteConfiguration`:
+  [WebsiteConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#websiteconfigurationtypedef)
+  *(required)*
+- `ExpectedBucketOwner`: `str`
 
 ### put_object
 
 Type annotations for `boto3.client("s3").put_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object]
+Boto3 documentation:
+[S3.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object)
 
-```python
-def put_object(
-    self,
-    Bucket: str,
-    Key: str,
-    ACL: ObjectCannedACL = None,
-    Body: Union[bytes, IO[bytes]] = None,
-    CacheControl: str = None,
-    ContentDisposition: str = None,
-    ContentEncoding: str = None,
-    ContentLanguage: str = None,
-    ContentLength: int = None,
-    ContentMD5: str = None,
-    ContentType: str = None,
-    Expires: datetime = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWriteACP: str = None,
-    Metadata: Dict[str, str] = None,
-    ServerSideEncryption: ServerSideEncryption = None,
-    StorageClass: StorageClass = None,
-    WebsiteRedirectLocation: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    SSEKMSKeyId: str = None,
-    SSEKMSEncryptionContext: str = None,
-    BucketKeyEnabled: bool = None,
-    RequestPayer: Literal['requester'] = None,
-    Tagging: str = None,
-    ObjectLockMode: ObjectLockMode = None,
-    ObjectLockRetainUntilDate: datetime = None,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = None,
-    ExpectedBucketOwner: str = None
-) -> PutObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ACL`:
+  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `ContentType`: `str`
+- `Expires`: `datetime`
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `StorageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']`
+- `Tagging`: `str`
+- `ObjectLockMode`:
+  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[PutObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectoutputtypedef).
 
 ### put_object_acl
 
 Type annotations for `boto3.client("s3").put_object_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_acl]
+Boto3 documentation:
+[S3.Client.put_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_acl)
 
-```python
-def put_object_acl(
-    self,
-    Bucket: str,
-    Key: str,
-    ACL: ObjectCannedACL = None,
-    AccessControlPolicy: AccessControlPolicyTypeDef = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWrite: str = None,
-    GrantWriteACP: str = None,
-    RequestPayer: Literal['requester'] = None,
-    VersionId: str = None,
-    ExpectedBucketOwner: str = None
-) -> PutObjectAclOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ACL`:
+  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[PutObjectAclOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectacloutputtypedef).
 
 ### put_object_legal_hold
 
 Type annotations for `boto3.client("s3").put_object_legal_hold` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_legal_hold]
+Boto3 documentation:
+[S3.Client.put_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_legal_hold)
 
-```python
-def put_object_legal_hold(
-    self,
-    Bucket: str,
-    Key: str,
-    LegalHold: "ObjectLockLegalHoldTypeDef" = None,
-    RequestPayer: Literal['requester'] = None,
-    VersionId: str = None,
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> PutObjectLegalHoldOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `LegalHold`:
+  [ObjectLockLegalHoldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlocklegalholdtypedef)
+- `RequestPayer`: `Literal['requester']`
+- `VersionId`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[PutObjectLegalHoldOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectlegalholdoutputtypedef).
 
 ### put_object_lock_configuration
 
 Type annotations for `boto3.client("s3").put_object_lock_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_lock_configuration]
+Boto3 documentation:
+[S3.Client.put_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_lock_configuration)
 
-```python
-def put_object_lock_configuration(
-    self,
-    Bucket: str,
-    ObjectLockConfiguration: "ObjectLockConfigurationTypeDef" = None,
-    RequestPayer: Literal['requester'] = None,
-    Token: str = None,
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> PutObjectLockConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ObjectLockConfiguration`:
+  [ObjectLockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlockconfigurationtypedef)
+- `RequestPayer`: `Literal['requester']`
+- `Token`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[PutObjectLockConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectlockconfigurationoutputtypedef).
 
 ### put_object_retention
 
 Type annotations for `boto3.client("s3").put_object_retention` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_retention]
+Boto3 documentation:
+[S3.Client.put_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_retention)
 
-```python
-def put_object_retention(
-    self,
-    Bucket: str,
-    Key: str,
-    Retention: "ObjectLockRetentionTypeDef" = None,
-    RequestPayer: Literal['requester'] = None,
-    VersionId: str = None,
-    BypassGovernanceRetention: bool = None,
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> PutObjectRetentionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Retention`:
+  [ObjectLockRetentionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlockretentiontypedef)
+- `RequestPayer`: `Literal['requester']`
+- `VersionId`: `str`
+- `BypassGovernanceRetention`: `bool`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[PutObjectRetentionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectretentionoutputtypedef).
 
 ### put_object_tagging
 
 Type annotations for `boto3.client("s3").put_object_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_tagging]
+Boto3 documentation:
+[S3.Client.put_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_tagging)
 
-```python
-def put_object_tagging(
-    self,
-    Bucket: str,
-    Key: str,
-    Tagging: "TaggingTypeDef",
-    VersionId: str = None,
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None,
-    RequestPayer: Literal['requester'] = None
-) -> PutObjectTaggingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Tagging`:
+  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#taggingtypedef)
+  *(required)*
+- `VersionId`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+- `RequestPayer`: `Literal['requester']`
+
+Returns
+[PutObjectTaggingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjecttaggingoutputtypedef).
 
 ### put_public_access_block
 
 Type annotations for `boto3.client("s3").put_public_access_block` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_public_access_block]
+Boto3 documentation:
+[S3.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_public_access_block)
 
-```python
-def put_public_access_block(
-    self,
-    Bucket: str,
-    PublicAccessBlockConfiguration: "PublicAccessBlockConfigurationTypeDef",
-    ContentMD5: str = None,
-    ExpectedBucketOwner: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#publicaccessblockconfigurationtypedef)
+  *(required)*
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ### restore_object
 
 Type annotations for `boto3.client("s3").restore_object` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.restore_object]
+Boto3 documentation:
+[S3.Client.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.restore_object)
 
-```python
-def restore_object(
-    self,
-    Bucket: str,
-    Key: str,
-    VersionId: str = None,
-    RestoreRequest: RestoreRequestTypeDef = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> RestoreObjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `VersionId`: `str`
+- `RestoreRequest`:
+  [RestoreRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[RestoreObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restoreobjectoutputtypedef).
 
 ### select_object_content
 
 Type annotations for `boto3.client("s3").select_object_content` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.select_object_content]
+Boto3 documentation:
+[S3.Client.select_object_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.select_object_content)
 
-```python
-def select_object_content(
-    self,
-    Bucket: str,
-    Key: str,
-    Expression: str,
-    ExpressionType: Literal['SQL'],
-    InputSerialization: "InputSerializationTypeDef",
-    OutputSerialization: "OutputSerializationTypeDef",
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    RequestProgress: RequestProgressTypeDef = None,
-    ScanRange: ScanRangeTypeDef = None,
-    ExpectedBucketOwner: str = None
-) -> SelectObjectContentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `Expression`: `str` *(required)*
+- `ExpressionType`: `Literal['SQL']` *(required)*
+- `InputSerialization`:
+  [InputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inputserializationtypedef)
+  *(required)*
+- `OutputSerialization`:
+  [OutputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#outputserializationtypedef)
+  *(required)*
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestProgress`:
+  [RequestProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#requestprogresstypedef)
+- `ScanRange`:
+  [ScanRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#scanrangetypedef)
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[SelectObjectContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#selectobjectcontentoutputtypedef).
 
 ### upload_file
 
 Type annotations for `boto3.client("s3").upload_file` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_file]
+Boto3 documentation:
+[S3.Client.upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_file)
 
-```python
-def upload_file(
-    self,
-    Filename: str,
-    Bucket: str,
-    Key: str,
-    ExtraArgs: Dict[str, Any] = None,
-    Callback: Callable[..., Any] = None,
-    Config: TransferConfig = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Filename`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ### upload_fileobj
 
 Type annotations for `boto3.client("s3").upload_fileobj` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_fileobj]
+Boto3 documentation:
+[S3.Client.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_fileobj)
 
-```python
-def upload_fileobj(
-    self,
-    Fileobj: IO[Any],
-    Bucket: str,
-    Key: str,
-    ExtraArgs: Dict[str, Any] = None,
-    Callback: Callable[..., Any] = None,
-    Config: TransferConfig = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Fileobj`: `IO`\[`Any`\] *(required)*
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ### upload_part
 
 Type annotations for `boto3.client("s3").upload_part` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part]
+Boto3 documentation:
+[S3.Client.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part)
 
-```python
-def upload_part(
-    self,
-    Bucket: str,
-    Key: str,
-    PartNumber: int,
-    UploadId: str,
-    Body: Union[bytes, IO[bytes]] = None,
-    ContentLength: int = None,
-    ContentMD5: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None
-) -> UploadPartOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `PartNumber`: `int` *(required)*
+- `UploadId`: `str` *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+
+Returns
+[UploadPartOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#uploadpartoutputtypedef).
 
 ### upload_part_copy
 
 Type annotations for `boto3.client("s3").upload_part_copy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part_copy]
+Boto3 documentation:
+[S3.Client.upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part_copy)
 
-```python
-def upload_part_copy(
-    self,
-    Bucket: str,
-    CopySource: Union[str, CopySourceTypeDef],
-    Key: str,
-    PartNumber: int,
-    UploadId: str,
-    CopySourceIfMatch: str = None,
-    CopySourceIfModifiedSince: datetime = None,
-    CopySourceIfNoneMatch: str = None,
-    CopySourceIfUnmodifiedSince: datetime = None,
-    CopySourceRange: str = None,
-    SSECustomerAlgorithm: str = None,
-    SSECustomerKey: str = None,
-    SSECustomerKeyMD5: str = None,
-    CopySourceSSECustomerAlgorithm: str = None,
-    CopySourceSSECustomerKey: str = None,
-    CopySourceSSECustomerKeyMD5: str = None,
-    RequestPayer: Literal['requester'] = None,
-    ExpectedBucketOwner: str = None,
-    ExpectedSourceBucketOwner: str = None
-) -> UploadPartCopyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `CopySource`: `Union`\[`str`,
+  [CopySourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copysourcetypedef)\]
+  *(required)*
+- `Key`: `str` *(required)*
+- `PartNumber`: `int` *(required)*
+- `UploadId`: `str` *(required)*
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `datetime`
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `datetime`
+- `CopySourceRange`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+Returns
+[UploadPartCopyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#uploadpartcopyoutputtypedef).
 
 ### write_get_object_response
 
 Type annotations for `boto3.client("s3").write_get_object_response` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.write_get_object_response]
+Boto3 documentation:
+[S3.Client.write_get_object_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.write_get_object_response)
 
-```python
-def write_get_object_response(
-    self,
-    RequestRoute: str,
-    RequestToken: str,
-    Body: Union[bytes, IO[bytes]] = None,
-    StatusCode: int = None,
-    ErrorCode: str = None,
-    ErrorMessage: str = None,
-    AcceptRanges: str = None,
-    CacheControl: str = None,
-    ContentDisposition: str = None,
-    ContentEncoding: str = None,
-    ContentLanguage: str = None,
-    ContentLength: int = None,
-    ContentRange: str = None,
-    ContentType: str = None,
-    DeleteMarker: bool = None,
-    ETag: str = None,
-    Expires: datetime = None,
-    Expiration: str = None,
-    LastModified: datetime = None,
-    MissingMeta: int = None,
-    Metadata: Dict[str, str] = None,
-    ObjectLockMode: ObjectLockMode = None,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = None,
-    ObjectLockRetainUntilDate: datetime = None,
-    PartsCount: int = None,
-    ReplicationStatus: ReplicationStatus = None,
-    RequestCharged: Literal['requester'] = None,
-    Restore: str = None,
-    ServerSideEncryption: ServerSideEncryption = None,
-    SSECustomerAlgorithm: str = None,
-    SSEKMSKeyId: str = None,
-    SSECustomerKeyMD5: str = None,
-    StorageClass: StorageClass = None,
-    TagCount: int = None,
-    VersionId: str = None,
-    BucketKeyEnabled: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `RequestRoute`: `str` *(required)*
+- `RequestToken`: `str` *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `StatusCode`: `int`
+- `ErrorCode`: `str`
+- `ErrorMessage`: `str`
+- `AcceptRanges`: `str`
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentRange`: `str`
+- `ContentType`: `str`
+- `DeleteMarker`: `bool`
+- `ETag`: `str`
+- `Expires`: `datetime`
+- `Expiration`: `str`
+- `LastModified`: `datetime`
+- `MissingMeta`: `int`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ObjectLockMode`:
+  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+- `ObjectLockRetainUntilDate`: `datetime`
+- `PartsCount`: `int`
+- `ReplicationStatus`:
+  [ReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicationstatus)
+- `RequestCharged`: `Literal['requester']`
+- `Restore`: `str`
+- `ServerSideEncryption`:
+  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `SSECustomerAlgorithm`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `StorageClass`:
+  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+- `TagCount`: `int`
+- `VersionId`: `str`
+- `BucketKeyEnabled`: `bool`
 
 ### get_paginator
 
 Type annotations for `boto3.client("s3").get_paginator` method with overloads.
 
-- `client.get_paginator("list_multipart_uploads")` -> [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
-- `client.get_paginator("list_object_versions")` -> [ListObjectVersionsPaginator](./paginators.md#listobjectversionspaginator)
-- `client.get_paginator("list_objects")` -> [ListObjectsPaginator](./paginators.md#listobjectspaginator)
-- `client.get_paginator("list_objects_v2")` -> [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
-- `client.get_paginator("list_parts")` -> [ListPartsPaginator](./paginators.md#listpartspaginator)
-
-
-
+- `client.get_paginator("list_multipart_uploads")` ->
+  [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+- `client.get_paginator("list_object_versions")` ->
+  [ListObjectVersionsPaginator](./paginators.md#listobjectversionspaginator)
+- `client.get_paginator("list_objects")` ->
+  [ListObjectsPaginator](./paginators.md#listobjectspaginator)
+- `client.get_paginator("list_objects_v2")` ->
+  [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
+- `client.get_paginator("list_parts")` ->
+  [ListPartsPaginator](./paginators.md#listpartspaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("s3").get_waiter` method with overloads.
 
-- `client.get_waiter("bucket_exists")` -> [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
-- `client.get_waiter("bucket_not_exists")` -> [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
-- `client.get_waiter("object_exists")` -> [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
-- `client.get_waiter("object_not_exists")` -> [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)
+- `client.get_waiter("bucket_exists")` ->
+  [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
+- `client.get_waiter("bucket_not_exists")` ->
+  [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
+- `client.get_waiter("object_exists")` ->
+  [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
+- `client.get_waiter("object_not_exists")` ->
+  [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)

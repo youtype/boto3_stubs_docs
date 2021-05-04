@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Health](./README.md) > HealthClient
 
-Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+Auto-generated documentation for
+[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+type annotations stubs module
+[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
 - [HealthClient for boto3 Health module](#healthclient-for-boto3-health-module)
   - [HealthClient](#healthclient)
@@ -39,12 +41,13 @@ def get_health_client() -> HealthClient:
     return boto3.client("health")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
+Boto3 documentation:
+[Health.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_health.client import Exceptions
@@ -53,7 +56,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -61,254 +63,259 @@ Exceptions:
 - `Exceptions.InvalidPaginationToken`
 - `Exceptions.UnsupportedLocale`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("health").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate]
+Boto3 documentation:
+[Health.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_affected_accounts_for_organization
 
-Type annotations for `boto3.client("health").describe_affected_accounts_for_organization` method.
+Type annotations for
+`boto3.client("health").describe_affected_accounts_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization]
+Boto3 documentation:
+[Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
 
-```python
-def describe_affected_accounts_for_organization(
-    self,
-    eventArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeAffectedAccountsForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eventArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeAffectedAccountsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedaccountsfororganizationresponsetypedef).
 
 ### describe_affected_entities
 
-Type annotations for `boto3.client("health").describe_affected_entities` method.
+Type annotations for `boto3.client("health").describe_affected_entities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities]
+Boto3 documentation:
+[Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
 
-```python
-def describe_affected_entities(
-    self,
-    filter: EntityFilterTypeDef,
-    locale: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeAffectedEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filter`:
+  [EntityFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#entityfiltertypedef)
+  *(required)*
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeAffectedEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesresponsetypedef).
 
 ### describe_affected_entities_for_organization
 
-Type annotations for `boto3.client("health").describe_affected_entities_for_organization` method.
+Type annotations for
+`boto3.client("health").describe_affected_entities_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization]
+Boto3 documentation:
+[Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
 
-```python
-def describe_affected_entities_for_organization(
-    self,
-    organizationEntityFilters: List[EventAccountFilterTypeDef],
-    locale: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeAffectedEntitiesForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `organizationEntityFilters`:
+  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  *(required)*
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeAffectedEntitiesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesfororganizationresponsetypedef).
 
 ### describe_entity_aggregates
 
-Type annotations for `boto3.client("health").describe_entity_aggregates` method.
+Type annotations for `boto3.client("health").describe_entity_aggregates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates]
+Boto3 documentation:
+[Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
-```python
-def describe_entity_aggregates(
-    self,
-    eventArns: List[str] = None
-) -> DescribeEntityAggregatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eventArns`: `List`\[`str`\]
+
+Returns
+[DescribeEntityAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeentityaggregatesresponsetypedef).
 
 ### describe_event_aggregates
 
 Type annotations for `boto3.client("health").describe_event_aggregates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates]
+Boto3 documentation:
+[Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
 
-```python
-def describe_event_aggregates(
-    self,
-    aggregateField: Literal['eventTypeCategory'],
-    filter: EventFilterTypeDef = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeEventAggregatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `aggregateField`: `Literal['eventTypeCategory']` *(required)*
+- `filter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeEventAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventaggregatesresponsetypedef).
 
 ### describe_event_details
 
 Type annotations for `boto3.client("health").describe_event_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details]
+Boto3 documentation:
+[Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
 
-```python
-def describe_event_details(
-    self,
-    eventArns: List[str],
-    locale: str = None
-) -> DescribeEventDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eventArns`: `List`\[`str`\] *(required)*
+- `locale`: `str`
+
+Returns
+[DescribeEventDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventdetailsresponsetypedef).
 
 ### describe_event_details_for_organization
 
-Type annotations for `boto3.client("health").describe_event_details_for_organization` method.
+Type annotations for
+`boto3.client("health").describe_event_details_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization]
+Boto3 documentation:
+[Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
 
-```python
-def describe_event_details_for_organization(
-    self,
-    organizationEventDetailFilters: List[EventAccountFilterTypeDef],
-    locale: str = None
-) -> DescribeEventDetailsForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `organizationEventDetailFilters`:
+  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  *(required)*
+- `locale`: `str`
+
+Returns
+[DescribeEventDetailsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventdetailsfororganizationresponsetypedef).
 
 ### describe_event_types
 
 Type annotations for `boto3.client("health").describe_event_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types]
+Boto3 documentation:
+[Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
 
-```python
-def describe_event_types(
-    self,
-    filter: EventTypeFilterTypeDef = None,
-    locale: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeEventTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filter`:
+  [EventTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypefiltertypedef)
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeEventTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventtypesresponsetypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("health").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events]
+Boto3 documentation:
+[Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    filter: EventFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    locale: str = None
-) -> DescribeEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `locale`: `str`
+
+Returns
+[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsresponsetypedef).
 
 ### describe_events_for_organization
 
-Type annotations for `boto3.client("health").describe_events_for_organization` method.
+Type annotations for `boto3.client("health").describe_events_for_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization]
+Boto3 documentation:
+[Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
 
-```python
-def describe_events_for_organization(
-    self,
-    filter: OrganizationEventFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    locale: str = None
-) -> DescribeEventsForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filter`:
+  [OrganizationEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `locale`: `str`
+
+Returns
+[DescribeEventsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsfororganizationresponsetypedef).
 
 ### describe_health_service_status_for_organization
 
-Type annotations for `boto3.client("health").describe_health_service_status_for_organization` method.
+Type annotations for
+`boto3.client("health").describe_health_service_status_for_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization]
+Boto3 documentation:
+[Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
-```python
-def describe_health_service_status_for_organization(
-    self
-) -> DescribeHealthServiceStatusForOrganizationResponseTypeDef:
-    pass
-```
+Returns
+[DescribeHealthServiceStatusForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describehealthservicestatusfororganizationresponsetypedef).
 
 ### disable_health_service_access_for_organization
 
-Type annotations for `boto3.client("health").disable_health_service_access_for_organization` method.
+Type annotations for
+`boto3.client("health").disable_health_service_access_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization]
-
-```python
-def disable_health_service_access_for_organization(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
 
 ### enable_health_service_access_for_organization
 
-Type annotations for `boto3.client("health").enable_health_service_access_for_organization` method.
+Type annotations for
+`boto3.client("health").enable_health_service_access_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization]
-
-```python
-def enable_health_service_access_for_organization(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("health").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url]
+Boto3 documentation:
+[Health.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
 
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
 
+Returns `str`.
 
 ### get_paginator
 
-Type annotations for `boto3.client("health").get_paginator` method with overloads.
+Type annotations for `boto3.client("health").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_affected_accounts_for_organization")` -> [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
-- `client.get_paginator("describe_affected_entities")` -> [DescribeAffectedEntitiesPaginator](./paginators.md#describeaffectedentitiespaginator)
-- `client.get_paginator("describe_affected_entities_for_organization")` -> [DescribeAffectedEntitiesForOrganizationPaginator](./paginators.md#describeaffectedentitiesfororganizationpaginator)
-- `client.get_paginator("describe_event_aggregates")` -> [DescribeEventAggregatesPaginator](./paginators.md#describeeventaggregatespaginator)
-- `client.get_paginator("describe_event_types")` -> [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_events_for_organization")` -> [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
-
-
+- `client.get_paginator("describe_affected_accounts_for_organization")` ->
+  [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
+- `client.get_paginator("describe_affected_entities")` ->
+  [DescribeAffectedEntitiesPaginator](./paginators.md#describeaffectedentitiespaginator)
+- `client.get_paginator("describe_affected_entities_for_organization")` ->
+  [DescribeAffectedEntitiesForOrganizationPaginator](./paginators.md#describeaffectedentitiesfororganizationpaginator)
+- `client.get_paginator("describe_event_aggregates")` ->
+  [DescribeEventAggregatesPaginator](./paginators.md#describeeventaggregatespaginator)
+- `client.get_paginator("describe_event_types")` ->
+  [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_events_for_organization")` ->
+  [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)

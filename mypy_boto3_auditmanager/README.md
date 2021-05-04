@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AuditManager
 
-Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+Auto-generated documentation for
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+type annotations stubs module
+[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 ```bash
 pip install mypy-boto3-auditmanager
@@ -18,7 +20,8 @@ pip install mypy-boto3-auditmanager
 
 ## AuditManagerClient
 
-Type annotations for  `boto3.client("auditmanager")` as [AuditManagerClient](./client.md)
+Type annotations for `boto3.client("auditmanager")` as
+[AuditManagerClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_auditmanager.client import AuditManagerClient
 ```
 
-
 AuditManagerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_assessment_report_evidence_folder](./client.md#associate-assessment-report-evidence-folder)
 - [batch_associate_assessment_report_evidence](./client.md#batch-associate-assessment-report-evidence)
 - [batch_create_delegation_by_assessment](./client.md#batch-create-delegation-by-assessment)
@@ -86,24 +87,13 @@ AuditManagerClient [exceptions](./client.md#exceptions)
 - [update_settings](./client.md#update-settings)
 - [validate_assessment_report_integrity](./client.md#validate-assessment-report-integrity)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -134,13 +124,10 @@ from mypy_boto3_auditmanager.literals import AccountStatus, ...
 - [SourceSetUpOption](./literals.md#sourcesetupoption)
 - [SourceType](./literals.md#sourcetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

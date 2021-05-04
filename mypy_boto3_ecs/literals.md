@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECS](./README.md) > Literals
 
-Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+Auto-generated documentation for
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+type annotations stubs module
+[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [Literals for boto3 ECS module](#literals-for-boto3-ecs-module)
   - [AgentUpdateStatus](#agentupdatestatus)

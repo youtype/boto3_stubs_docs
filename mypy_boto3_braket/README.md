@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Braket
 
-Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
-type annotations stubs module [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+Auto-generated documentation for
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+type annotations stubs module
+[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
 ```bash
 pip install mypy-boto3-braket
@@ -19,7 +21,7 @@ pip install mypy-boto3-braket
 
 ## BraketClient
 
-Type annotations for  `boto3.client("braket")` as [BraketClient](./client.md)
+Type annotations for `boto3.client("braket")` as [BraketClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_braket.client import BraketClient
 ```
 
-
 BraketClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_quantum_task](./client.md#cancel-quantum-task)
 - [create_quantum_task](./client.md#create-quantum-task)
@@ -46,10 +46,8 @@ BraketClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -60,14 +58,10 @@ BraketClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("braket").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("braket").get_paginator("...")`.
 
 Can be used directly:
 
@@ -77,11 +71,6 @@ from mypy_boto3_braket.paginators import SearchDevicesPaginator, ...
 
 - [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
 - [SearchQuantumTasksPaginator](./paginators.md#searchquantumtaskspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -101,13 +90,10 @@ from mypy_boto3_braket.literals import CancellationStatus, ...
 - [SearchQuantumTasksFilterOperator](./literals.md#searchquantumtasksfilteroperator)
 - [SearchQuantumTasksPaginatorName](./literals.md#searchquantumtaskspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

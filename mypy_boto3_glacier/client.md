@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Glacier](./README.md) > GlacierClient
 
-Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+Auto-generated documentation for
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+type annotations stubs module
+[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [GlacierClient for boto3 Glacier module](#glacierclient-for-boto3-glacier-module)
   - [GlacierClient](#glacierclient)
@@ -60,12 +62,13 @@ def get_glacier_client() -> GlacierClient:
     return boto3.client("glacier")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client)
+Boto3 documentation:
+[Glacier.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_glacier.client import Exceptions
@@ -73,7 +76,6 @@ from mypy_boto3_glacier.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -87,584 +89,560 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
-
 ## Methods
-
 
 ### abort_multipart_upload
 
 Type annotations for `boto3.client("glacier").abort_multipart_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_multipart_upload]
+Boto3 documentation:
+[Glacier.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_multipart_upload)
 
-```python
-def abort_multipart_upload(
-    self,
-    accountId: str,
-    vaultName: str,
-    uploadId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
 
 ### abort_vault_lock
 
 Type annotations for `boto3.client("glacier").abort_vault_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_vault_lock]
+Boto3 documentation:
+[Glacier.Client.abort_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_vault_lock)
 
-```python
-def abort_vault_lock(
-    self,
-    accountId: str,
-    vaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
 
 ### add_tags_to_vault
 
 Type annotations for `boto3.client("glacier").add_tags_to_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.add_tags_to_vault]
+Boto3 documentation:
+[Glacier.Client.add_tags_to_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.add_tags_to_vault)
 
-```python
-def add_tags_to_vault(
-    self,
-    accountId: str,
-    vaultName: str,
-    Tags: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ### can_paginate
 
 Type annotations for `boto3.client("glacier").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.can_paginate]
+Boto3 documentation:
+[Glacier.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_multipart_upload
 
-Type annotations for `boto3.client("glacier").complete_multipart_upload` method.
+Type annotations for `boto3.client("glacier").complete_multipart_upload`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_multipart_upload]
+Boto3 documentation:
+[Glacier.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_multipart_upload)
 
-```python
-def complete_multipart_upload(
-    self,
-    accountId: str,
-    vaultName: str,
-    uploadId: str,
-    archiveSize: str = None,
-    checksum: str = None
-) -> ArchiveCreationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `archiveSize`: `str`
+- `checksum`: `str`
+
+Returns
+[ArchiveCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#archivecreationoutputtypedef).
 
 ### complete_vault_lock
 
 Type annotations for `boto3.client("glacier").complete_vault_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_vault_lock]
+Boto3 documentation:
+[Glacier.Client.complete_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_vault_lock)
 
-```python
-def complete_vault_lock(
-    self,
-    accountId: str,
-    vaultName: str,
-    lockId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `lockId`: `str` *(required)*
 
 ### create_vault
 
 Type annotations for `boto3.client("glacier").create_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.create_vault]
+Boto3 documentation:
+[Glacier.Client.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.create_vault)
 
-```python
-def create_vault(
-    self,
-    accountId: str,
-    vaultName: str
-) -> CreateVaultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[CreateVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#createvaultoutputtypedef).
 
 ### delete_archive
 
 Type annotations for `boto3.client("glacier").delete_archive` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_archive]
+Boto3 documentation:
+[Glacier.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_archive)
 
-```python
-def delete_archive(
-    self,
-    accountId: str,
-    vaultName: str,
-    archiveId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `archiveId`: `str` *(required)*
 
 ### delete_vault
 
 Type annotations for `boto3.client("glacier").delete_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault]
+Boto3 documentation:
+[Glacier.Client.delete_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault)
 
-```python
-def delete_vault(
-    self,
-    accountId: str,
-    vaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
 
 ### delete_vault_access_policy
 
-Type annotations for `boto3.client("glacier").delete_vault_access_policy` method.
+Type annotations for `boto3.client("glacier").delete_vault_access_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_access_policy]
+Boto3 documentation:
+[Glacier.Client.delete_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_access_policy)
 
-```python
-def delete_vault_access_policy(
-    self,
-    accountId: str,
-    vaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
 
 ### delete_vault_notifications
 
-Type annotations for `boto3.client("glacier").delete_vault_notifications` method.
+Type annotations for `boto3.client("glacier").delete_vault_notifications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_notifications]
+Boto3 documentation:
+[Glacier.Client.delete_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_vault_notifications)
 
-```python
-def delete_vault_notifications(
-    self,
-    accountId: str,
-    vaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
 
 ### describe_job
 
 Type annotations for `boto3.client("glacier").describe_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_job]
+Boto3 documentation:
+[Glacier.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_job)
 
-```python
-def describe_job(
-    self,
-    accountId: str,
-    vaultName: str,
-    jobId: str
-) -> "GlacierJobDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+
+Returns
+[GlacierJobDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#glacierjobdescriptiontypedef).
 
 ### describe_vault
 
 Type annotations for `boto3.client("glacier").describe_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_vault]
+Boto3 documentation:
+[Glacier.Client.describe_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_vault)
 
-```python
-def describe_vault(
-    self,
-    accountId: str,
-    vaultName: str
-) -> "DescribeVaultOutputTypeDef":
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[DescribeVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#describevaultoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("glacier").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.generate_presigned_url]
+Boto3 documentation:
+[Glacier.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_data_retrieval_policy
 
-Type annotations for `boto3.client("glacier").get_data_retrieval_policy` method.
+Type annotations for `boto3.client("glacier").get_data_retrieval_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_data_retrieval_policy]
+Boto3 documentation:
+[Glacier.Client.get_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_data_retrieval_policy)
 
-```python
-def get_data_retrieval_policy(
-    self,
-    accountId: str
-) -> GetDataRetrievalPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+
+Returns
+[GetDataRetrievalPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getdataretrievalpolicyoutputtypedef).
 
 ### get_job_output
 
 Type annotations for `boto3.client("glacier").get_job_output` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_job_output]
+Boto3 documentation:
+[Glacier.Client.get_job_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_job_output)
 
-```python
-def get_job_output(
-    self,
-    accountId: str,
-    vaultName: str,
-    jobId: str,
-    range: str = None
-) -> GetJobOutputOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+- `range`: `str`
+
+Returns
+[GetJobOutputOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getjoboutputoutputtypedef).
 
 ### get_vault_access_policy
 
 Type annotations for `boto3.client("glacier").get_vault_access_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_access_policy]
+Boto3 documentation:
+[Glacier.Client.get_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_access_policy)
 
-```python
-def get_vault_access_policy(
-    self,
-    accountId: str,
-    vaultName: str
-) -> GetVaultAccessPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[GetVaultAccessPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultaccesspolicyoutputtypedef).
 
 ### get_vault_lock
 
 Type annotations for `boto3.client("glacier").get_vault_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_lock]
+Boto3 documentation:
+[Glacier.Client.get_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_lock)
 
-```python
-def get_vault_lock(
-    self,
-    accountId: str,
-    vaultName: str
-) -> GetVaultLockOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[GetVaultLockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultlockoutputtypedef).
 
 ### get_vault_notifications
 
 Type annotations for `boto3.client("glacier").get_vault_notifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_notifications]
+Boto3 documentation:
+[Glacier.Client.get_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_vault_notifications)
 
-```python
-def get_vault_notifications(
-    self,
-    accountId: str,
-    vaultName: str
-) -> GetVaultNotificationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[GetVaultNotificationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultnotificationsoutputtypedef).
 
 ### initiate_job
 
 Type annotations for `boto3.client("glacier").initiate_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_job]
+Boto3 documentation:
+[Glacier.Client.initiate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_job)
 
-```python
-def initiate_job(
-    self,
-    accountId: str,
-    vaultName: str,
-    jobParameters: JobParametersTypeDef = None
-) -> InitiateJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `jobParameters`:
+  [JobParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#jobparameterstypedef)
+
+Returns
+[InitiateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatejoboutputtypedef).
 
 ### initiate_multipart_upload
 
-Type annotations for `boto3.client("glacier").initiate_multipart_upload` method.
+Type annotations for `boto3.client("glacier").initiate_multipart_upload`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload]
+Boto3 documentation:
+[Glacier.Client.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload)
 
-```python
-def initiate_multipart_upload(
-    self,
-    accountId: str,
-    vaultName: str,
-    archiveDescription: str = None,
-    partSize: str = None
-) -> InitiateMultipartUploadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `archiveDescription`: `str`
+- `partSize`: `str`
+
+Returns
+[InitiateMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatemultipartuploadoutputtypedef).
 
 ### initiate_vault_lock
 
 Type annotations for `boto3.client("glacier").initiate_vault_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_vault_lock]
+Boto3 documentation:
+[Glacier.Client.initiate_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_vault_lock)
 
-```python
-def initiate_vault_lock(
-    self,
-    accountId: str,
-    vaultName: str,
-    policy: VaultLockPolicyTypeDef = None
-) -> InitiateVaultLockOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `policy`:
+  [VaultLockPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultlockpolicytypedef)
+
+Returns
+[InitiateVaultLockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatevaultlockoutputtypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("glacier").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_jobs]
+Boto3 documentation:
+[Glacier.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    accountId: str,
-    vaultName: str,
-    limit: str = None,
-    marker: str = None,
-    statuscode: str = None,
-    completed: str = None
-) -> ListJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `limit`: `str`
+- `marker`: `str`
+- `statuscode`: `str`
+- `completed`: `str`
+
+Returns
+[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listjobsoutputtypedef).
 
 ### list_multipart_uploads
 
 Type annotations for `boto3.client("glacier").list_multipart_uploads` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_multipart_uploads]
+Boto3 documentation:
+[Glacier.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_multipart_uploads)
 
-```python
-def list_multipart_uploads(
-    self,
-    accountId: str,
-    vaultName: str,
-    marker: str = None,
-    limit: str = None
-) -> ListMultipartUploadsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `marker`: `str`
+- `limit`: `str`
+
+Returns
+[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listmultipartuploadsoutputtypedef).
 
 ### list_parts
 
 Type annotations for `boto3.client("glacier").list_parts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_parts]
+Boto3 documentation:
+[Glacier.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_parts)
 
-```python
-def list_parts(
-    self,
-    accountId: str,
-    vaultName: str,
-    uploadId: str,
-    marker: str = None,
-    limit: str = None
-) -> ListPartsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `marker`: `str`
+- `limit`: `str`
+
+Returns
+[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listpartsoutputtypedef).
 
 ### list_provisioned_capacity
 
-Type annotations for `boto3.client("glacier").list_provisioned_capacity` method.
+Type annotations for `boto3.client("glacier").list_provisioned_capacity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_provisioned_capacity]
+Boto3 documentation:
+[Glacier.Client.list_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_provisioned_capacity)
 
-```python
-def list_provisioned_capacity(
-    self,
-    accountId: str
-) -> ListProvisionedCapacityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+
+Returns
+[ListProvisionedCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listprovisionedcapacityoutputtypedef).
 
 ### list_tags_for_vault
 
 Type annotations for `boto3.client("glacier").list_tags_for_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_tags_for_vault]
+Boto3 documentation:
+[Glacier.Client.list_tags_for_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_tags_for_vault)
 
-```python
-def list_tags_for_vault(
-    self,
-    accountId: str,
-    vaultName: str
-) -> ListTagsForVaultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+
+Returns
+[ListTagsForVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listtagsforvaultoutputtypedef).
 
 ### list_vaults
 
 Type annotations for `boto3.client("glacier").list_vaults` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_vaults]
+Boto3 documentation:
+[Glacier.Client.list_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_vaults)
 
-```python
-def list_vaults(
-    self,
-    accountId: str,
-    marker: str = None,
-    limit: str = None
-) -> ListVaultsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `marker`: `str`
+- `limit`: `str`
+
+Returns
+[ListVaultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listvaultsoutputtypedef).
 
 ### purchase_provisioned_capacity
 
-Type annotations for `boto3.client("glacier").purchase_provisioned_capacity` method.
+Type annotations for `boto3.client("glacier").purchase_provisioned_capacity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.purchase_provisioned_capacity]
+Boto3 documentation:
+[Glacier.Client.purchase_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.purchase_provisioned_capacity)
 
-```python
-def purchase_provisioned_capacity(
-    self,
-    accountId: str
-) -> PurchaseProvisionedCapacityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+
+Returns
+[PurchaseProvisionedCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#purchaseprovisionedcapacityoutputtypedef).
 
 ### remove_tags_from_vault
 
 Type annotations for `boto3.client("glacier").remove_tags_from_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault]
+Boto3 documentation:
+[Glacier.Client.remove_tags_from_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault)
 
-```python
-def remove_tags_from_vault(
-    self,
-    accountId: str,
-    vaultName: str,
-    TagKeys: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\]
 
 ### set_data_retrieval_policy
 
-Type annotations for `boto3.client("glacier").set_data_retrieval_policy` method.
+Type annotations for `boto3.client("glacier").set_data_retrieval_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_data_retrieval_policy]
+Boto3 documentation:
+[Glacier.Client.set_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_data_retrieval_policy)
 
-```python
-def set_data_retrieval_policy(
-    self,
-    accountId: str,
-    Policy: "DataRetrievalPolicyTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `Policy`:
+  [DataRetrievalPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#dataretrievalpolicytypedef)
 
 ### set_vault_access_policy
 
 Type annotations for `boto3.client("glacier").set_vault_access_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_access_policy]
+Boto3 documentation:
+[Glacier.Client.set_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_access_policy)
 
-```python
-def set_vault_access_policy(
-    self,
-    accountId: str,
-    vaultName: str,
-    policy: "VaultAccessPolicyTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `policy`:
+  [VaultAccessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultaccesspolicytypedef)
 
 ### set_vault_notifications
 
 Type annotations for `boto3.client("glacier").set_vault_notifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_notifications]
+Boto3 documentation:
+[Glacier.Client.set_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_notifications)
 
-```python
-def set_vault_notifications(
-    self,
-    accountId: str,
-    vaultName: str,
-    vaultNotificationConfig: "VaultNotificationConfigTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `vaultNotificationConfig`:
+  [VaultNotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultnotificationconfigtypedef)
 
 ### upload_archive
 
 Type annotations for `boto3.client("glacier").upload_archive` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_archive]
+Boto3 documentation:
+[Glacier.Client.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_archive)
 
-```python
-def upload_archive(
-    self,
-    vaultName: str,
-    accountId: str,
-    archiveDescription: str = None,
-    checksum: str = None,
-    body: Union[bytes, IO[bytes]] = None
-) -> ArchiveCreationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `vaultName`: `str` *(required)*
+- `accountId`: `str` *(required)*
+- `archiveDescription`: `str`
+- `checksum`: `str`
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+
+Returns
+[ArchiveCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#archivecreationoutputtypedef).
 
 ### upload_multipart_part
 
 Type annotations for `boto3.client("glacier").upload_multipart_part` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_multipart_part]
+Boto3 documentation:
+[Glacier.Client.upload_multipart_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_multipart_part)
 
-```python
-def upload_multipart_part(
-    self,
-    accountId: str,
-    vaultName: str,
-    uploadId: str,
-    checksum: str = None,
-    range: str = None,
-    body: Union[bytes, IO[bytes]] = None
-) -> UploadMultipartPartOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `checksum`: `str`
+- `range`: `str`
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
+Returns
+[UploadMultipartPartOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#uploadmultipartpartoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("glacier").get_paginator` method with overloads.
+Type annotations for `boto3.client("glacier").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_multipart_uploads")` -> [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
-- `client.get_paginator("list_parts")` -> [ListPartsPaginator](./paginators.md#listpartspaginator)
-- `client.get_paginator("list_vaults")` -> [ListVaultsPaginator](./paginators.md#listvaultspaginator)
-
-
-
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_multipart_uploads")` ->
+  [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+- `client.get_paginator("list_parts")` ->
+  [ListPartsPaginator](./paginators.md#listpartspaginator)
+- `client.get_paginator("list_vaults")` ->
+  [ListVaultsPaginator](./paginators.md#listvaultspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("glacier").get_waiter` method with overloads.
+Type annotations for `boto3.client("glacier").get_waiter` method with
+overloads.
 
-- `client.get_waiter("vault_exists")` -> [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
-- `client.get_waiter("vault_not_exists")` -> [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)
+- `client.get_waiter("vault_exists")` ->
+  [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
+- `client.get_waiter("vault_not_exists")` ->
+  [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)

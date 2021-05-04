@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Imagebuilder
 
-Auto-generated documentation for [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
-type annotations stubs module [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+Auto-generated documentation for
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
+type annotations stubs module
+[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ```bash
 pip install mypy-boto3-imagebuilder
@@ -18,7 +20,8 @@ pip install mypy-boto3-imagebuilder
 
 ## ImagebuilderClient
 
-Type annotations for  `boto3.client("imagebuilder")` as [ImagebuilderClient](./client.md)
+Type annotations for `boto3.client("imagebuilder")` as
+[ImagebuilderClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_imagebuilder.client import ImagebuilderClient
 ```
 
-
 ImagebuilderClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_image_creation](./client.md#cancel-image-creation)
 - [create_component](./client.md#create-component)
@@ -84,10 +85,8 @@ ImagebuilderClient [exceptions](./client.md#exceptions)
 - [update_image_pipeline](./client.md#update-image-pipeline)
 - [update_infrastructure_configuration](./client.md#update-infrastructure-configuration)
 
-
-
-
 ### Exceptions
+
 - [CallRateLimitExceededException](./client.md#callratelimitexceededexception)
 - [ClientError](./client.md#clienterror)
 - [ClientException](./client.md#clientexception)
@@ -106,15 +105,6 @@ ImagebuilderClient [exceptions](./client.md#exceptions)
 - [ServiceException](./client.md#serviceexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -138,13 +128,10 @@ from mypy_boto3_imagebuilder.literals import ComponentFormat, ...
 - [PipelineStatus](./literals.md#pipelinestatus)
 - [Platform](./literals.md#platform)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

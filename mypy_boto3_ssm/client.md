@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSM](./README.md) > SSMClient
 
-Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+Auto-generated documentation for
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+type annotations stubs module
+[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [SSMClient for boto3 SSM module](#ssmclient-for-boto3-ssm-module)
   - [SSMClient](#ssmclient)
@@ -159,12 +161,13 @@ def get_ssm_client() -> SSMClient:
     return boto3.client("ssm")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client)
+Boto3 documentation:
+[SSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ssm.client import Exceptions
@@ -172,7 +175,6 @@ from mypy_boto3_ssm.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -298,2372 +300,2584 @@ Exceptions:
 - `Exceptions.UnsupportedParameterType`
 - `Exceptions.UnsupportedPlatformType`
 
-
 ## Methods
-
 
 ### add_tags_to_resource
 
 Type annotations for `boto3.client("ssm").add_tags_to_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource]
+Boto3 documentation:
+[SSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource)
 
-```python
-def add_tags_to_resource(
-    self,
-    ResourceType: ResourceTypeForTagging,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [ResourceTypeForTagging](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#resourcetypefortagging)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("ssm").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.can_paginate]
+Boto3 documentation:
+[SSM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_command
 
 Type annotations for `boto3.client("ssm").cancel_command` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_command]
+Boto3 documentation:
+[SSM.Client.cancel_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_command)
 
-```python
-def cancel_command(
-    self,
-    CommandId: str,
-    InstanceIds: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CommandId`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_maintenance_window_execution
 
-Type annotations for `boto3.client("ssm").cancel_maintenance_window_execution` method.
+Type annotations for `boto3.client("ssm").cancel_maintenance_window_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_maintenance_window_execution]
+Boto3 documentation:
+[SSM.Client.cancel_maintenance_window_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_maintenance_window_execution)
 
-```python
-def cancel_maintenance_window_execution(
-    self,
-    WindowExecutionId: str
-) -> CancelMaintenanceWindowExecutionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+
+Returns
+[CancelMaintenanceWindowExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cancelmaintenancewindowexecutionresulttypedef).
 
 ### create_activation
 
 Type annotations for `boto3.client("ssm").create_activation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_activation]
+Boto3 documentation:
+[SSM.Client.create_activation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_activation)
 
-```python
-def create_activation(
-    self,
-    IamRole: str,
-    Description: str = None,
-    DefaultInstanceName: str = None,
-    RegistrationLimit: int = None,
-    ExpirationDate: datetime = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateActivationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `IamRole`: `str` *(required)*
+- `Description`: `str`
+- `DefaultInstanceName`: `str`
+- `RegistrationLimit`: `int`
+- `ExpirationDate`: `datetime`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateActivationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createactivationresulttypedef).
 
 ### create_association
 
 Type annotations for `boto3.client("ssm").create_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association]
+Boto3 documentation:
+[SSM.Client.create_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association)
 
-```python
-def create_association(
-    self,
-    Name: str,
-    DocumentVersion: str = None,
-    InstanceId: str = None,
-    Parameters: Dict[str, List[str]] = None,
-    Targets: List["TargetTypeDef"] = None,
-    ScheduleExpression: str = None,
-    OutputLocation: "InstanceAssociationOutputLocationTypeDef" = None,
-    AssociationName: str = None,
-    AutomationTargetParameterName: str = None,
-    MaxErrors: str = None,
-    MaxConcurrency: str = None,
-    ComplianceSeverity: AssociationComplianceSeverity = None,
-    SyncCompliance: AssociationSyncCompliance = None,
-    ApplyOnlyAtCronInterval: bool = None,
-    TargetLocations: List["TargetLocationTypeDef"] = None
-) -> CreateAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DocumentVersion`: `str`
+- `InstanceId`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `ScheduleExpression`: `str`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputlocationtypedef)
+- `AssociationName`: `str`
+- `AutomationTargetParameterName`: `str`
+- `MaxErrors`: `str`
+- `MaxConcurrency`: `str`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationcomplianceseverity)
+- `SyncCompliance`:
+  [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
+- `ApplyOnlyAtCronInterval`: `bool`
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
+
+Returns
+[CreateAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createassociationresulttypedef).
 
 ### create_association_batch
 
 Type annotations for `boto3.client("ssm").create_association_batch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association_batch]
+Boto3 documentation:
+[SSM.Client.create_association_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association_batch)
 
-```python
-def create_association_batch(
-    self,
-    Entries: List["CreateAssociationBatchRequestEntryTypeDef"]
-) -> CreateAssociationBatchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Entries`:
+  `List`\[[CreateAssociationBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createassociationbatchrequestentrytypedef)\]
+  *(required)*
+
+Returns
+[CreateAssociationBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createassociationbatchresulttypedef).
 
 ### create_document
 
 Type annotations for `boto3.client("ssm").create_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_document]
+Boto3 documentation:
+[SSM.Client.create_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_document)
 
-```python
-def create_document(
-    self,
-    Content: str,
-    Name: str,
-    Requires: List["DocumentRequiresTypeDef"] = None,
-    Attachments: List[AttachmentsSourceTypeDef] = None,
-    VersionName: str = None,
-    DocumentType: DocumentType = None,
-    DocumentFormat: DocumentFormat = None,
-    TargetType: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDocumentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Content`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Requires`:
+  `List`\[[DocumentRequiresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentrequirestypedef)\]
+- `Attachments`:
+  `List`\[[AttachmentsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentssourcetypedef)\]
+- `VersionName`: `str`
+- `DocumentType`:
+  [DocumentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenttype)
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
+- `TargetType`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDocumentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createdocumentresulttypedef).
 
 ### create_maintenance_window
 
 Type annotations for `boto3.client("ssm").create_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_maintenance_window]
+Boto3 documentation:
+[SSM.Client.create_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_maintenance_window)
 
-```python
-def create_maintenance_window(
-    self,
-    Name: str,
-    Schedule: str,
-    Duration: int,
-    Cutoff: int,
-    AllowUnassociatedTargets: bool,
-    Description: str = None,
-    StartDate: str = None,
-    EndDate: str = None,
-    ScheduleTimezone: str = None,
-    ScheduleOffset: int = None,
-    ClientToken: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Schedule`: `str` *(required)*
+- `Duration`: `int` *(required)*
+- `Cutoff`: `int` *(required)*
+- `AllowUnassociatedTargets`: `bool` *(required)*
+- `Description`: `str`
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `ScheduleTimezone`: `str`
+- `ScheduleOffset`: `int`
+- `ClientToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createmaintenancewindowresulttypedef).
 
 ### create_ops_item
 
 Type annotations for `boto3.client("ssm").create_ops_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_item]
+Boto3 documentation:
+[SSM.Client.create_ops_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_item)
 
-```python
-def create_ops_item(
-    self,
-    Description: str,
-    Source: str,
-    Title: str,
-    OpsItemType: str = None,
-    OperationalData: Dict[str, "OpsItemDataValueTypeDef"] = None,
-    Notifications: List["OpsItemNotificationTypeDef"] = None,
-    Priority: int = None,
-    RelatedOpsItems: List["RelatedOpsItemTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None,
-    Category: str = None,
-    Severity: str = None,
-    ActualStartTime: datetime = None,
-    ActualEndTime: datetime = None,
-    PlannedStartTime: datetime = None,
-    PlannedEndTime: datetime = None
-) -> CreateOpsItemResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Description`: `str` *(required)*
+- `Source`: `str` *(required)*
+- `Title`: `str` *(required)*
+- `OpsItemType`: `str`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemdatavaluetypedef)\]
+- `Notifications`:
+  `List`\[[OpsItemNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemnotificationtypedef)\]
+- `Priority`: `int`
+- `RelatedOpsItems`:
+  `List`\[[RelatedOpsItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#relatedopsitemtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+- `Category`: `str`
+- `Severity`: `str`
+- `ActualStartTime`: `datetime`
+- `ActualEndTime`: `datetime`
+- `PlannedStartTime`: `datetime`
+- `PlannedEndTime`: `datetime`
+
+Returns
+[CreateOpsItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createopsitemresponsetypedef).
 
 ### create_ops_metadata
 
 Type annotations for `boto3.client("ssm").create_ops_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_metadata]
+Boto3 documentation:
+[SSM.Client.create_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_metadata)
 
-```python
-def create_ops_metadata(
-    self,
-    ResourceId: str,
-    Metadata: Dict[str, "MetadataValueTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateOpsMetadataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Metadata`: `Dict`\[`str`,
+  [MetadataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#metadatavaluetypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateOpsMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createopsmetadataresulttypedef).
 
 ### create_patch_baseline
 
 Type annotations for `boto3.client("ssm").create_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_patch_baseline]
+Boto3 documentation:
+[SSM.Client.create_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_patch_baseline)
 
-```python
-def create_patch_baseline(
-    self,
-    Name: str,
-    OperatingSystem: OperatingSystem = None,
-    GlobalFilters: "PatchFilterGroupTypeDef" = None,
-    ApprovalRules: "PatchRuleGroupTypeDef" = None,
-    ApprovedPatches: List[str] = None,
-    ApprovedPatchesComplianceLevel: PatchComplianceLevel = None,
-    ApprovedPatchesEnableNonSecurity: bool = None,
-    RejectedPatches: List[str] = None,
-    RejectedPatchesAction: PatchAction = None,
-    Description: str = None,
-    Sources: List["PatchSourceTypeDef"] = None,
-    ClientToken: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
+- `ApprovedPatchesEnableNonSecurity`: `bool`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`:
+  [PatchAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchaction)
+- `Description`: `str`
+- `Sources`:
+  `List`\[[PatchSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchsourcetypedef)\]
+- `ClientToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createpatchbaselineresulttypedef).
 
 ### create_resource_data_sync
 
 Type annotations for `boto3.client("ssm").create_resource_data_sync` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_resource_data_sync]
+Boto3 documentation:
+[SSM.Client.create_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_resource_data_sync)
 
-```python
-def create_resource_data_sync(
-    self,
-    SyncName: str,
-    S3Destination: "ResourceDataSyncS3DestinationTypeDef" = None,
-    SyncType: str = None,
-    SyncSource: ResourceDataSyncSourceTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SyncName`: `str` *(required)*
+- `S3Destination`:
+  [ResourceDataSyncS3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncs3destinationtypedef)
+- `SyncType`: `str`
+- `SyncSource`:
+  [ResourceDataSyncSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncsourcetypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_activation
 
 Type annotations for `boto3.client("ssm").delete_activation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_activation]
+Boto3 documentation:
+[SSM.Client.delete_activation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_activation)
 
-```python
-def delete_activation(
-    self,
-    ActivationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ActivationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_association
 
 Type annotations for `boto3.client("ssm").delete_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_association]
+Boto3 documentation:
+[SSM.Client.delete_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_association)
 
-```python
-def delete_association(
-    self,
-    Name: str = None,
-    InstanceId: str = None,
-    AssociationId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `InstanceId`: `str`
+- `AssociationId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_document
 
 Type annotations for `boto3.client("ssm").delete_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_document]
+Boto3 documentation:
+[SSM.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_document)
 
-```python
-def delete_document(
-    self,
-    Name: str,
-    DocumentVersion: str = None,
-    VersionName: str = None,
-    Force: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DocumentVersion`: `str`
+- `VersionName`: `str`
+- `Force`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_inventory
 
 Type annotations for `boto3.client("ssm").delete_inventory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_inventory]
+Boto3 documentation:
+[SSM.Client.delete_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_inventory)
 
-```python
-def delete_inventory(
-    self,
-    TypeName: str,
-    SchemaDeleteOption: InventorySchemaDeleteOption = None,
-    DryRun: bool = None,
-    ClientToken: str = None
-) -> DeleteInventoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `TypeName`: `str` *(required)*
+- `SchemaDeleteOption`:
+  [InventorySchemaDeleteOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#inventoryschemadeleteoption)
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+Returns
+[DeleteInventoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deleteinventoryresulttypedef).
 
 ### delete_maintenance_window
 
 Type annotations for `boto3.client("ssm").delete_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_maintenance_window]
+Boto3 documentation:
+[SSM.Client.delete_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_maintenance_window)
 
-```python
-def delete_maintenance_window(
-    self,
-    WindowId: str
-) -> DeleteMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+
+Returns
+[DeleteMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deletemaintenancewindowresulttypedef).
 
 ### delete_ops_metadata
 
 Type annotations for `boto3.client("ssm").delete_ops_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_ops_metadata]
+Boto3 documentation:
+[SSM.Client.delete_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_ops_metadata)
 
-```python
-def delete_ops_metadata(
-    self,
-    OpsMetadataArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OpsMetadataArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_parameter
 
 Type annotations for `boto3.client("ssm").delete_parameter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameter]
+Boto3 documentation:
+[SSM.Client.delete_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameter)
 
-```python
-def delete_parameter(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_parameters
 
 Type annotations for `boto3.client("ssm").delete_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameters]
+Boto3 documentation:
+[SSM.Client.delete_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameters)
 
-```python
-def delete_parameters(
-    self,
-    Names: List[str]
-) -> DeleteParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deleteparametersresulttypedef).
 
 ### delete_patch_baseline
 
 Type annotations for `boto3.client("ssm").delete_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_patch_baseline]
+Boto3 documentation:
+[SSM.Client.delete_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_patch_baseline)
 
-```python
-def delete_patch_baseline(
-    self,
-    BaselineId: str
-) -> DeletePatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+
+Returns
+[DeletePatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deletepatchbaselineresulttypedef).
 
 ### delete_resource_data_sync
 
 Type annotations for `boto3.client("ssm").delete_resource_data_sync` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_resource_data_sync]
+Boto3 documentation:
+[SSM.Client.delete_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_resource_data_sync)
 
-```python
-def delete_resource_data_sync(
-    self,
-    SyncName: str,
-    SyncType: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SyncName`: `str` *(required)*
+- `SyncType`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_managed_instance
 
 Type annotations for `boto3.client("ssm").deregister_managed_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_managed_instance]
+Boto3 documentation:
+[SSM.Client.deregister_managed_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_managed_instance)
 
-```python
-def deregister_managed_instance(
-    self,
-    InstanceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_patch_baseline_for_patch_group
 
-Type annotations for `boto3.client("ssm").deregister_patch_baseline_for_patch_group` method.
+Type annotations for
+`boto3.client("ssm").deregister_patch_baseline_for_patch_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_patch_baseline_for_patch_group]
+Boto3 documentation:
+[SSM.Client.deregister_patch_baseline_for_patch_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_patch_baseline_for_patch_group)
 
-```python
-def deregister_patch_baseline_for_patch_group(
-    self,
-    BaselineId: str,
-    PatchGroup: str
-) -> DeregisterPatchBaselineForPatchGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+- `PatchGroup`: `str` *(required)*
+
+Returns
+[DeregisterPatchBaselineForPatchGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deregisterpatchbaselineforpatchgroupresulttypedef).
 
 ### deregister_target_from_maintenance_window
 
-Type annotations for `boto3.client("ssm").deregister_target_from_maintenance_window` method.
+Type annotations for
+`boto3.client("ssm").deregister_target_from_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_target_from_maintenance_window]
+Boto3 documentation:
+[SSM.Client.deregister_target_from_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_target_from_maintenance_window)
 
-```python
-def deregister_target_from_maintenance_window(
-    self,
-    WindowId: str,
-    WindowTargetId: str,
-    Safe: bool = None
-) -> DeregisterTargetFromMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `WindowTargetId`: `str` *(required)*
+- `Safe`: `bool`
+
+Returns
+[DeregisterTargetFromMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deregistertargetfrommaintenancewindowresulttypedef).
 
 ### deregister_task_from_maintenance_window
 
-Type annotations for `boto3.client("ssm").deregister_task_from_maintenance_window` method.
+Type annotations for
+`boto3.client("ssm").deregister_task_from_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_task_from_maintenance_window]
+Boto3 documentation:
+[SSM.Client.deregister_task_from_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_task_from_maintenance_window)
 
-```python
-def deregister_task_from_maintenance_window(
-    self,
-    WindowId: str,
-    WindowTaskId: str
-) -> DeregisterTaskFromMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `WindowTaskId`: `str` *(required)*
+
+Returns
+[DeregisterTaskFromMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#deregistertaskfrommaintenancewindowresulttypedef).
 
 ### describe_activations
 
 Type annotations for `boto3.client("ssm").describe_activations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_activations]
+Boto3 documentation:
+[SSM.Client.describe_activations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_activations)
 
-```python
-def describe_activations(
-    self,
-    Filters: List[DescribeActivationsFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeActivationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[DescribeActivationsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeactivationsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeActivationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeactivationsresulttypedef).
 
 ### describe_association
 
 Type annotations for `boto3.client("ssm").describe_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association]
+Boto3 documentation:
+[SSM.Client.describe_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association)
 
-```python
-def describe_association(
-    self,
-    Name: str = None,
-    InstanceId: str = None,
-    AssociationId: str = None,
-    AssociationVersion: str = None
-) -> DescribeAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `InstanceId`: `str`
+- `AssociationId`: `str`
+- `AssociationVersion`: `str`
+
+Returns
+[DescribeAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeassociationresulttypedef).
 
 ### describe_association_execution_targets
 
-Type annotations for `boto3.client("ssm").describe_association_execution_targets` method.
+Type annotations for
+`boto3.client("ssm").describe_association_execution_targets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_execution_targets]
+Boto3 documentation:
+[SSM.Client.describe_association_execution_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_execution_targets)
 
-```python
-def describe_association_execution_targets(
-    self,
-    AssociationId: str,
-    ExecutionId: str,
-    Filters: List[AssociationExecutionTargetsFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAssociationExecutionTargetsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AssociationId`: `str` *(required)*
+- `ExecutionId`: `str` *(required)*
+- `Filters`:
+  `List`\[[AssociationExecutionTargetsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutiontargetsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAssociationExecutionTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeassociationexecutiontargetsresulttypedef).
 
 ### describe_association_executions
 
-Type annotations for `boto3.client("ssm").describe_association_executions` method.
+Type annotations for `boto3.client("ssm").describe_association_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_executions]
+Boto3 documentation:
+[SSM.Client.describe_association_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_executions)
 
-```python
-def describe_association_executions(
-    self,
-    AssociationId: str,
-    Filters: List[AssociationExecutionFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAssociationExecutionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AssociationId`: `str` *(required)*
+- `Filters`:
+  `List`\[[AssociationExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutionfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAssociationExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeassociationexecutionsresulttypedef).
 
 ### describe_automation_executions
 
-Type annotations for `boto3.client("ssm").describe_automation_executions` method.
+Type annotations for `boto3.client("ssm").describe_automation_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_executions]
+Boto3 documentation:
+[SSM.Client.describe_automation_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_executions)
 
-```python
-def describe_automation_executions(
-    self,
-    Filters: List[AutomationExecutionFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAutomationExecutionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[AutomationExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#automationexecutionfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAutomationExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeautomationexecutionsresulttypedef).
 
 ### describe_automation_step_executions
 
-Type annotations for `boto3.client("ssm").describe_automation_step_executions` method.
+Type annotations for `boto3.client("ssm").describe_automation_step_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_step_executions]
+Boto3 documentation:
+[SSM.Client.describe_automation_step_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_step_executions)
 
-```python
-def describe_automation_step_executions(
-    self,
-    AutomationExecutionId: str,
-    Filters: List[StepExecutionFilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ReverseOrder: bool = None
-) -> DescribeAutomationStepExecutionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AutomationExecutionId`: `str` *(required)*
+- `Filters`:
+  `List`\[[StepExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#stepexecutionfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ReverseOrder`: `bool`
+
+Returns
+[DescribeAutomationStepExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeautomationstepexecutionsresulttypedef).
 
 ### describe_available_patches
 
 Type annotations for `boto3.client("ssm").describe_available_patches` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_available_patches]
+Boto3 documentation:
+[SSM.Client.describe_available_patches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_available_patches)
 
-```python
-def describe_available_patches(
-    self,
-    Filters: List[PatchOrchestratorFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAvailablePatchesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAvailablePatchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeavailablepatchesresulttypedef).
 
 ### describe_document
 
 Type annotations for `boto3.client("ssm").describe_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document]
+Boto3 documentation:
+[SSM.Client.describe_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document)
 
-```python
-def describe_document(
-    self,
-    Name: str,
-    DocumentVersion: str = None,
-    VersionName: str = None
-) -> DescribeDocumentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DocumentVersion`: `str`
+- `VersionName`: `str`
+
+Returns
+[DescribeDocumentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describedocumentresulttypedef).
 
 ### describe_document_permission
 
 Type annotations for `boto3.client("ssm").describe_document_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document_permission]
+Boto3 documentation:
+[SSM.Client.describe_document_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document_permission)
 
-```python
-def describe_document_permission(
-    self,
-    Name: str,
-    PermissionType: Literal['Share'],
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeDocumentPermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `PermissionType`: `Literal['Share']` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeDocumentPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describedocumentpermissionresponsetypedef).
 
 ### describe_effective_instance_associations
 
-Type annotations for `boto3.client("ssm").describe_effective_instance_associations` method.
+Type annotations for
+`boto3.client("ssm").describe_effective_instance_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_instance_associations]
+Boto3 documentation:
+[SSM.Client.describe_effective_instance_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_instance_associations)
 
-```python
-def describe_effective_instance_associations(
-    self,
-    InstanceId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeEffectiveInstanceAssociationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeEffectiveInstanceAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeeffectiveinstanceassociationsresulttypedef).
 
 ### describe_effective_patches_for_patch_baseline
 
-Type annotations for `boto3.client("ssm").describe_effective_patches_for_patch_baseline` method.
+Type annotations for
+`boto3.client("ssm").describe_effective_patches_for_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_patches_for_patch_baseline]
+Boto3 documentation:
+[SSM.Client.describe_effective_patches_for_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_patches_for_patch_baseline)
 
-```python
-def describe_effective_patches_for_patch_baseline(
-    self,
-    BaselineId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeEffectivePatchesForPatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeEffectivePatchesForPatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeeffectivepatchesforpatchbaselineresulttypedef).
 
 ### describe_instance_associations_status
 
-Type annotations for `boto3.client("ssm").describe_instance_associations_status` method.
+Type annotations for
+`boto3.client("ssm").describe_instance_associations_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_associations_status]
+Boto3 documentation:
+[SSM.Client.describe_instance_associations_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_associations_status)
 
-```python
-def describe_instance_associations_status(
-    self,
-    InstanceId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeInstanceAssociationsStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeInstanceAssociationsStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstanceassociationsstatusresulttypedef).
 
 ### describe_instance_information
 
-Type annotations for `boto3.client("ssm").describe_instance_information` method.
+Type annotations for `boto3.client("ssm").describe_instance_information`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_information]
+Boto3 documentation:
+[SSM.Client.describe_instance_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_information)
 
-```python
-def describe_instance_information(
-    self,
-    InstanceInformationFilterList: List[InstanceInformationFilterTypeDef] = None,
-    Filters: List[InstanceInformationStringFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeInstanceInformationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceInformationFilterList`:
+  `List`\[[InstanceInformationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceinformationfiltertypedef)\]
+- `Filters`:
+  `List`\[[InstanceInformationStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceinformationstringfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeInstanceInformationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstanceinformationresulttypedef).
 
 ### describe_instance_patch_states
 
-Type annotations for `boto3.client("ssm").describe_instance_patch_states` method.
+Type annotations for `boto3.client("ssm").describe_instance_patch_states`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states]
+Boto3 documentation:
+[SSM.Client.describe_instance_patch_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states)
 
-```python
-def describe_instance_patch_states(
-    self,
-    InstanceIds: List[str],
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeInstancePatchStatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceIds`: `List`\[`str`\] *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeInstancePatchStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchstatesresulttypedef).
 
 ### describe_instance_patch_states_for_patch_group
 
-Type annotations for `boto3.client("ssm").describe_instance_patch_states_for_patch_group` method.
+Type annotations for
+`boto3.client("ssm").describe_instance_patch_states_for_patch_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group]
+Boto3 documentation:
+[SSM.Client.describe_instance_patch_states_for_patch_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group)
 
-```python
-def describe_instance_patch_states_for_patch_group(
-    self,
-    PatchGroup: str,
-    Filters: List[InstancePatchStateFilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeInstancePatchStatesForPatchGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PatchGroup`: `str` *(required)*
+- `Filters`:
+  `List`\[[InstancePatchStateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instancepatchstatefiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeInstancePatchStatesForPatchGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchstatesforpatchgroupresulttypedef).
 
 ### describe_instance_patches
 
 Type annotations for `boto3.client("ssm").describe_instance_patches` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patches]
+Boto3 documentation:
+[SSM.Client.describe_instance_patches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patches)
 
-```python
-def describe_instance_patches(
-    self,
-    InstanceId: str,
-    Filters: List[PatchOrchestratorFilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeInstancePatchesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeInstancePatchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchesresulttypedef).
 
 ### describe_inventory_deletions
 
 Type annotations for `boto3.client("ssm").describe_inventory_deletions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_inventory_deletions]
+Boto3 documentation:
+[SSM.Client.describe_inventory_deletions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_inventory_deletions)
 
-```python
-def describe_inventory_deletions(
-    self,
-    DeletionId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeInventoryDeletionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DeletionId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeInventoryDeletionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinventorydeletionsresulttypedef).
 
 ### describe_maintenance_window_execution_task_invocations
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_execution_task_invocations` method.
+Type annotations for
+`boto3.client("ssm").describe_maintenance_window_execution_task_invocations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_task_invocations]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_execution_task_invocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_task_invocations)
 
-```python
-def describe_maintenance_window_execution_task_invocations(
-    self,
-    WindowExecutionId: str,
-    TaskId: str,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+- `TaskId`: `str` *(required)*
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutiontaskinvocationsresulttypedef).
 
 ### describe_maintenance_window_execution_tasks
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_execution_tasks` method.
+Type annotations for
+`boto3.client("ssm").describe_maintenance_window_execution_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_tasks]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_execution_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_tasks)
 
-```python
-def describe_maintenance_window_execution_tasks(
-    self,
-    WindowExecutionId: str,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowExecutionTasksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowExecutionTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutiontasksresulttypedef).
 
 ### describe_maintenance_window_executions
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_executions` method.
+Type annotations for
+`boto3.client("ssm").describe_maintenance_window_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_executions]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_executions)
 
-```python
-def describe_maintenance_window_executions(
-    self,
-    WindowId: str,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowExecutionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutionsresulttypedef).
 
 ### describe_maintenance_window_schedule
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_schedule` method.
+Type annotations for `boto3.client("ssm").describe_maintenance_window_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_schedule]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_schedule)
 
-```python
-def describe_maintenance_window_schedule(
-    self,
-    WindowId: str = None,
-    Targets: List["TargetTypeDef"] = None,
-    ResourceType: MaintenanceWindowResourceType = None,
-    Filters: List[PatchOrchestratorFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowScheduleResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `ResourceType`:
+  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowScheduleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowscheduleresulttypedef).
 
 ### describe_maintenance_window_targets
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_targets` method.
+Type annotations for `boto3.client("ssm").describe_maintenance_window_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_targets]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_targets)
 
-```python
-def describe_maintenance_window_targets(
-    self,
-    WindowId: str,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowTargetsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowtargetsresulttypedef).
 
 ### describe_maintenance_window_tasks
 
-Type annotations for `boto3.client("ssm").describe_maintenance_window_tasks` method.
+Type annotations for `boto3.client("ssm").describe_maintenance_window_tasks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_tasks]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_window_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_tasks)
 
-```python
-def describe_maintenance_window_tasks(
-    self,
-    WindowId: str,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowTasksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowtasksresulttypedef).
 
 ### describe_maintenance_windows
 
 Type annotations for `boto3.client("ssm").describe_maintenance_windows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows)
 
-```python
-def describe_maintenance_windows(
-    self,
-    Filters: List[MaintenanceWindowFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowsresulttypedef).
 
 ### describe_maintenance_windows_for_target
 
-Type annotations for `boto3.client("ssm").describe_maintenance_windows_for_target` method.
+Type annotations for
+`boto3.client("ssm").describe_maintenance_windows_for_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows_for_target]
+Boto3 documentation:
+[SSM.Client.describe_maintenance_windows_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows_for_target)
 
-```python
-def describe_maintenance_windows_for_target(
-    self,
-    Targets: List["TargetTypeDef"],
-    ResourceType: MaintenanceWindowResourceType,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeMaintenanceWindowsForTargetResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+  *(required)*
+- `ResourceType`:
+  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMaintenanceWindowsForTargetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowsfortargetresulttypedef).
 
 ### describe_ops_items
 
 Type annotations for `boto3.client("ssm").describe_ops_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_ops_items]
+Boto3 documentation:
+[SSM.Client.describe_ops_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_ops_items)
 
-```python
-def describe_ops_items(
-    self,
-    OpsItemFilters: List[OpsItemFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeOpsItemsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OpsItemFilters`:
+  `List`\[[OpsItemFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeOpsItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeopsitemsresponsetypedef).
 
 ### describe_parameters
 
 Type annotations for `boto3.client("ssm").describe_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_parameters]
+Boto3 documentation:
+[SSM.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_parameters)
 
-```python
-def describe_parameters(
-    self,
-    Filters: List[ParametersFilterTypeDef] = None,
-    ParameterFilters: List[ParameterStringFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[ParametersFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametersfiltertypedef)\]
+- `ParameterFilters`:
+  `List`\[[ParameterStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterstringfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeparametersresulttypedef).
 
 ### describe_patch_baselines
 
 Type annotations for `boto3.client("ssm").describe_patch_baselines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_baselines]
+Boto3 documentation:
+[SSM.Client.describe_patch_baselines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_baselines)
 
-```python
-def describe_patch_baselines(
-    self,
-    Filters: List[PatchOrchestratorFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribePatchBaselinesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribePatchBaselinesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchbaselinesresulttypedef).
 
 ### describe_patch_group_state
 
 Type annotations for `boto3.client("ssm").describe_patch_group_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_group_state]
+Boto3 documentation:
+[SSM.Client.describe_patch_group_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_group_state)
 
-```python
-def describe_patch_group_state(
-    self,
-    PatchGroup: str
-) -> DescribePatchGroupStateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PatchGroup`: `str` *(required)*
+
+Returns
+[DescribePatchGroupStateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchgroupstateresulttypedef).
 
 ### describe_patch_groups
 
 Type annotations for `boto3.client("ssm").describe_patch_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_groups]
+Boto3 documentation:
+[SSM.Client.describe_patch_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_groups)
 
-```python
-def describe_patch_groups(
-    self,
-    MaxResults: int = None,
-    Filters: List[PatchOrchestratorFilterTypeDef] = None,
-    NextToken: str = None
-) -> DescribePatchGroupsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+- `NextToken`: `str`
+
+Returns
+[DescribePatchGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchgroupsresulttypedef).
 
 ### describe_patch_properties
 
 Type annotations for `boto3.client("ssm").describe_patch_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_properties]
+Boto3 documentation:
+[SSM.Client.describe_patch_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_properties)
 
-```python
-def describe_patch_properties(
-    self,
-    OperatingSystem: OperatingSystem,
-    Property: PatchProperty,
-    PatchSet: PatchSet = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribePatchPropertiesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+  *(required)*
+- `Property`:
+  [PatchProperty](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchproperty)
+  *(required)*
+- `PatchSet`:
+  [PatchSet](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchset)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribePatchPropertiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchpropertiesresulttypedef).
 
 ### describe_sessions
 
 Type annotations for `boto3.client("ssm").describe_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_sessions]
+Boto3 documentation:
+[SSM.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_sessions)
 
-```python
-def describe_sessions(
-    self,
-    State: SessionState,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[SessionFilterTypeDef] = None
-) -> DescribeSessionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `State`:
+  [SessionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#sessionstate)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[SessionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#sessionfiltertypedef)\]
+
+Returns
+[DescribeSessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describesessionsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ssm").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.generate_presigned_url]
+Boto3 documentation:
+[SSM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_automation_execution
 
 Type annotations for `boto3.client("ssm").get_automation_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_automation_execution]
+Boto3 documentation:
+[SSM.Client.get_automation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_automation_execution)
 
-```python
-def get_automation_execution(
-    self,
-    AutomationExecutionId: str
-) -> GetAutomationExecutionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AutomationExecutionId`: `str` *(required)*
+
+Returns
+[GetAutomationExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getautomationexecutionresulttypedef).
 
 ### get_calendar_state
 
 Type annotations for `boto3.client("ssm").get_calendar_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_calendar_state]
+Boto3 documentation:
+[SSM.Client.get_calendar_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_calendar_state)
 
-```python
-def get_calendar_state(
-    self,
-    CalendarNames: List[str],
-    AtTime: str = None
-) -> GetCalendarStateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CalendarNames`: `List`\[`str`\] *(required)*
+- `AtTime`: `str`
+
+Returns
+[GetCalendarStateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getcalendarstateresponsetypedef).
 
 ### get_command_invocation
 
 Type annotations for `boto3.client("ssm").get_command_invocation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_command_invocation]
+Boto3 documentation:
+[SSM.Client.get_command_invocation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_command_invocation)
 
-```python
-def get_command_invocation(
-    self,
-    CommandId: str,
-    InstanceId: str,
-    PluginName: str = None
-) -> GetCommandInvocationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CommandId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `PluginName`: `str`
+
+Returns
+[GetCommandInvocationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getcommandinvocationresulttypedef).
 
 ### get_connection_status
 
 Type annotations for `boto3.client("ssm").get_connection_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_connection_status]
+Boto3 documentation:
+[SSM.Client.get_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_connection_status)
 
-```python
-def get_connection_status(
-    self,
-    Target: str
-) -> GetConnectionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Target`: `str` *(required)*
+
+Returns
+[GetConnectionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getconnectionstatusresponsetypedef).
 
 ### get_default_patch_baseline
 
 Type annotations for `boto3.client("ssm").get_default_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_default_patch_baseline]
+Boto3 documentation:
+[SSM.Client.get_default_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_default_patch_baseline)
 
-```python
-def get_default_patch_baseline(
-    self,
-    OperatingSystem: OperatingSystem = None
-) -> GetDefaultPatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+
+Returns
+[GetDefaultPatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getdefaultpatchbaselineresulttypedef).
 
 ### get_deployable_patch_snapshot_for_instance
 
-Type annotations for `boto3.client("ssm").get_deployable_patch_snapshot_for_instance` method.
+Type annotations for
+`boto3.client("ssm").get_deployable_patch_snapshot_for_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_deployable_patch_snapshot_for_instance]
+Boto3 documentation:
+[SSM.Client.get_deployable_patch_snapshot_for_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_deployable_patch_snapshot_for_instance)
 
-```python
-def get_deployable_patch_snapshot_for_instance(
-    self,
-    InstanceId: str,
-    SnapshotId: str,
-    BaselineOverride: BaselineOverrideTypeDef = None
-) -> GetDeployablePatchSnapshotForInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `SnapshotId`: `str` *(required)*
+- `BaselineOverride`:
+  [BaselineOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#baselineoverridetypedef)
+
+Returns
+[GetDeployablePatchSnapshotForInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getdeployablepatchsnapshotforinstanceresulttypedef).
 
 ### get_document
 
 Type annotations for `boto3.client("ssm").get_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_document]
+Boto3 documentation:
+[SSM.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_document)
 
-```python
-def get_document(
-    self,
-    Name: str,
-    VersionName: str = None,
-    DocumentVersion: str = None,
-    DocumentFormat: DocumentFormat = None
-) -> GetDocumentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `VersionName`: `str`
+- `DocumentVersion`: `str`
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
+
+Returns
+[GetDocumentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getdocumentresulttypedef).
 
 ### get_inventory
 
 Type annotations for `boto3.client("ssm").get_inventory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory]
+Boto3 documentation:
+[SSM.Client.get_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory)
 
-```python
-def get_inventory(
-    self,
-    Filters: List["InventoryFilterTypeDef"] = None,
-    Aggregators: List["InventoryAggregatorTypeDef"] = None,
-    ResultAttributes: List[ResultAttributeTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetInventoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryfiltertypedef)\]
+- `Aggregators`:
+  `List`\[[InventoryAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryaggregatortypedef)\]
+- `ResultAttributes`:
+  `List`\[[ResultAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resultattributetypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetInventoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getinventoryresulttypedef).
 
 ### get_inventory_schema
 
 Type annotations for `boto3.client("ssm").get_inventory_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory_schema]
+Boto3 documentation:
+[SSM.Client.get_inventory_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory_schema)
 
-```python
-def get_inventory_schema(
-    self,
-    TypeName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Aggregator: bool = None,
-    SubType: bool = None
-) -> GetInventorySchemaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `TypeName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Aggregator`: `bool`
+- `SubType`: `bool`
+
+Returns
+[GetInventorySchemaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getinventoryschemaresulttypedef).
 
 ### get_maintenance_window
 
 Type annotations for `boto3.client("ssm").get_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window]
+Boto3 documentation:
+[SSM.Client.get_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window)
 
-```python
-def get_maintenance_window(
-    self,
-    WindowId: str
-) -> GetMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+
+Returns
+[GetMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getmaintenancewindowresulttypedef).
 
 ### get_maintenance_window_execution
 
-Type annotations for `boto3.client("ssm").get_maintenance_window_execution` method.
+Type annotations for `boto3.client("ssm").get_maintenance_window_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution]
+Boto3 documentation:
+[SSM.Client.get_maintenance_window_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution)
 
-```python
-def get_maintenance_window_execution(
-    self,
-    WindowExecutionId: str
-) -> GetMaintenanceWindowExecutionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+
+Returns
+[GetMaintenanceWindowExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getmaintenancewindowexecutionresulttypedef).
 
 ### get_maintenance_window_execution_task
 
-Type annotations for `boto3.client("ssm").get_maintenance_window_execution_task` method.
+Type annotations for
+`boto3.client("ssm").get_maintenance_window_execution_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task]
+Boto3 documentation:
+[SSM.Client.get_maintenance_window_execution_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task)
 
-```python
-def get_maintenance_window_execution_task(
-    self,
-    WindowExecutionId: str,
-    TaskId: str
-) -> GetMaintenanceWindowExecutionTaskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+- `TaskId`: `str` *(required)*
+
+Returns
+[GetMaintenanceWindowExecutionTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getmaintenancewindowexecutiontaskresulttypedef).
 
 ### get_maintenance_window_execution_task_invocation
 
-Type annotations for `boto3.client("ssm").get_maintenance_window_execution_task_invocation` method.
+Type annotations for
+`boto3.client("ssm").get_maintenance_window_execution_task_invocation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task_invocation]
+Boto3 documentation:
+[SSM.Client.get_maintenance_window_execution_task_invocation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task_invocation)
 
-```python
-def get_maintenance_window_execution_task_invocation(
-    self,
-    WindowExecutionId: str,
-    TaskId: str,
-    InvocationId: str
-) -> GetMaintenanceWindowExecutionTaskInvocationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowExecutionId`: `str` *(required)*
+- `TaskId`: `str` *(required)*
+- `InvocationId`: `str` *(required)*
+
+Returns
+[GetMaintenanceWindowExecutionTaskInvocationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getmaintenancewindowexecutiontaskinvocationresulttypedef).
 
 ### get_maintenance_window_task
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_task]
+Boto3 documentation:
+[SSM.Client.get_maintenance_window_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_task)
 
-```python
-def get_maintenance_window_task(
-    self,
-    WindowId: str,
-    WindowTaskId: str
-) -> GetMaintenanceWindowTaskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `WindowTaskId`: `str` *(required)*
+
+Returns
+[GetMaintenanceWindowTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getmaintenancewindowtaskresulttypedef).
 
 ### get_ops_item
 
 Type annotations for `boto3.client("ssm").get_ops_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_item]
+Boto3 documentation:
+[SSM.Client.get_ops_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_item)
 
-```python
-def get_ops_item(
-    self,
-    OpsItemId: str
-) -> GetOpsItemResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OpsItemId`: `str` *(required)*
+
+Returns
+[GetOpsItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getopsitemresponsetypedef).
 
 ### get_ops_metadata
 
 Type annotations for `boto3.client("ssm").get_ops_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_metadata]
+Boto3 documentation:
+[SSM.Client.get_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_metadata)
 
-```python
-def get_ops_metadata(
-    self,
-    OpsMetadataArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetOpsMetadataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OpsMetadataArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetOpsMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getopsmetadataresulttypedef).
 
 ### get_ops_summary
 
 Type annotations for `boto3.client("ssm").get_ops_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_summary]
+Boto3 documentation:
+[SSM.Client.get_ops_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_summary)
 
-```python
-def get_ops_summary(
-    self,
-    SyncName: str = None,
-    Filters: List["OpsFilterTypeDef"] = None,
-    Aggregators: List["OpsAggregatorTypeDef"] = None,
-    ResultAttributes: List[OpsResultAttributeTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetOpsSummaryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SyncName`: `str`
+- `Filters`:
+  `List`\[[OpsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsfiltertypedef)\]
+- `Aggregators`:
+  `List`\[[OpsAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsaggregatortypedef)\]
+- `ResultAttributes`:
+  `List`\[[OpsResultAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsresultattributetypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetOpsSummaryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getopssummaryresulttypedef).
 
 ### get_parameter
 
 Type annotations for `boto3.client("ssm").get_parameter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter]
+Boto3 documentation:
+[SSM.Client.get_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter)
 
-```python
-def get_parameter(
-    self,
-    Name: str,
-    WithDecryption: bool = None
-) -> GetParameterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `WithDecryption`: `bool`
+
+Returns
+[GetParameterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparameterresulttypedef).
 
 ### get_parameter_history
 
 Type annotations for `boto3.client("ssm").get_parameter_history` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter_history]
+Boto3 documentation:
+[SSM.Client.get_parameter_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter_history)
 
-```python
-def get_parameter_history(
-    self,
-    Name: str,
-    WithDecryption: bool = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetParameterHistoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `WithDecryption`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetParameterHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparameterhistoryresulttypedef).
 
 ### get_parameters
 
 Type annotations for `boto3.client("ssm").get_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters]
+Boto3 documentation:
+[SSM.Client.get_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters)
 
-```python
-def get_parameters(
-    self,
-    Names: List[str],
-    WithDecryption: bool = None
-) -> GetParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\] *(required)*
+- `WithDecryption`: `bool`
+
+Returns
+[GetParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparametersresulttypedef).
 
 ### get_parameters_by_path
 
 Type annotations for `boto3.client("ssm").get_parameters_by_path` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters_by_path]
+Boto3 documentation:
+[SSM.Client.get_parameters_by_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters_by_path)
 
-```python
-def get_parameters_by_path(
-    self,
-    Path: str,
-    Recursive: bool = None,
-    ParameterFilters: List[ParameterStringFilterTypeDef] = None,
-    WithDecryption: bool = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetParametersByPathResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Path`: `str` *(required)*
+- `Recursive`: `bool`
+- `ParameterFilters`:
+  `List`\[[ParameterStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterstringfiltertypedef)\]
+- `WithDecryption`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetParametersByPathResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparametersbypathresulttypedef).
 
 ### get_patch_baseline
 
 Type annotations for `boto3.client("ssm").get_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline]
+Boto3 documentation:
+[SSM.Client.get_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline)
 
-```python
-def get_patch_baseline(
-    self,
-    BaselineId: str
-) -> GetPatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+
+Returns
+[GetPatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getpatchbaselineresulttypedef).
 
 ### get_patch_baseline_for_patch_group
 
-Type annotations for `boto3.client("ssm").get_patch_baseline_for_patch_group` method.
+Type annotations for `boto3.client("ssm").get_patch_baseline_for_patch_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline_for_patch_group]
+Boto3 documentation:
+[SSM.Client.get_patch_baseline_for_patch_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline_for_patch_group)
 
-```python
-def get_patch_baseline_for_patch_group(
-    self,
-    PatchGroup: str,
-    OperatingSystem: OperatingSystem = None
-) -> GetPatchBaselineForPatchGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PatchGroup`: `str` *(required)*
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+
+Returns
+[GetPatchBaselineForPatchGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getpatchbaselineforpatchgroupresulttypedef).
 
 ### get_service_setting
 
 Type annotations for `boto3.client("ssm").get_service_setting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_service_setting]
+Boto3 documentation:
+[SSM.Client.get_service_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_service_setting)
 
-```python
-def get_service_setting(
-    self,
-    SettingId: str
-) -> GetServiceSettingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SettingId`: `str` *(required)*
+
+Returns
+[GetServiceSettingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getservicesettingresulttypedef).
 
 ### label_parameter_version
 
 Type annotations for `boto3.client("ssm").label_parameter_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.label_parameter_version]
+Boto3 documentation:
+[SSM.Client.label_parameter_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.label_parameter_version)
 
-```python
-def label_parameter_version(
-    self,
-    Name: str,
-    Labels: List[str],
-    ParameterVersion: int = None
-) -> LabelParameterVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Labels`: `List`\[`str`\] *(required)*
+- `ParameterVersion`: `int`
+
+Returns
+[LabelParameterVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#labelparameterversionresulttypedef).
 
 ### list_association_versions
 
 Type annotations for `boto3.client("ssm").list_association_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_association_versions]
+Boto3 documentation:
+[SSM.Client.list_association_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_association_versions)
 
-```python
-def list_association_versions(
-    self,
-    AssociationId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAssociationVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AssociationId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAssociationVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listassociationversionsresulttypedef).
 
 ### list_associations
 
 Type annotations for `boto3.client("ssm").list_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_associations]
+Boto3 documentation:
+[SSM.Client.list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_associations)
 
-```python
-def list_associations(
-    self,
-    AssociationFilterList: List[AssociationFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAssociationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AssociationFilterList`:
+  `List`\[[AssociationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listassociationsresulttypedef).
 
 ### list_command_invocations
 
 Type annotations for `boto3.client("ssm").list_command_invocations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_command_invocations]
+Boto3 documentation:
+[SSM.Client.list_command_invocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_command_invocations)
 
-```python
-def list_command_invocations(
-    self,
-    CommandId: str = None,
-    InstanceId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[CommandFilterTypeDef] = None,
-    Details: bool = None
-) -> ListCommandInvocationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CommandId`: `str`
+- `InstanceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[CommandFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandfiltertypedef)\]
+- `Details`: `bool`
+
+Returns
+[ListCommandInvocationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcommandinvocationsresulttypedef).
 
 ### list_commands
 
 Type annotations for `boto3.client("ssm").list_commands` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_commands]
+Boto3 documentation:
+[SSM.Client.list_commands](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_commands)
 
-```python
-def list_commands(
-    self,
-    CommandId: str = None,
-    InstanceId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[CommandFilterTypeDef] = None
-) -> ListCommandsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CommandId`: `str`
+- `InstanceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[CommandFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandfiltertypedef)\]
+
+Returns
+[ListCommandsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcommandsresulttypedef).
 
 ### list_compliance_items
 
 Type annotations for `boto3.client("ssm").list_compliance_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_items]
+Boto3 documentation:
+[SSM.Client.list_compliance_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_items)
 
-```python
-def list_compliance_items(
-    self,
-    Filters: List[ComplianceStringFilterTypeDef] = None,
-    ResourceIds: List[str] = None,
-    ResourceTypes: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListComplianceItemsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+- `ResourceIds`: `List`\[`str`\]
+- `ResourceTypes`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListComplianceItemsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcomplianceitemsresulttypedef).
 
 ### list_compliance_summaries
 
 Type annotations for `boto3.client("ssm").list_compliance_summaries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_summaries]
+Boto3 documentation:
+[SSM.Client.list_compliance_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_summaries)
 
-```python
-def list_compliance_summaries(
-    self,
-    Filters: List[ComplianceStringFilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListComplianceSummariesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListComplianceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcompliancesummariesresulttypedef).
 
 ### list_document_metadata_history
 
-Type annotations for `boto3.client("ssm").list_document_metadata_history` method.
+Type annotations for `boto3.client("ssm").list_document_metadata_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_metadata_history]
+Boto3 documentation:
+[SSM.Client.list_document_metadata_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_metadata_history)
 
-```python
-def list_document_metadata_history(
-    self,
-    Name: str,
-    Metadata: Literal['DocumentReviews'],
-    DocumentVersion: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDocumentMetadataHistoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Metadata`: `Literal['DocumentReviews']` *(required)*
+- `DocumentVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDocumentMetadataHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listdocumentmetadatahistoryresponsetypedef).
 
 ### list_document_versions
 
 Type annotations for `boto3.client("ssm").list_document_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_versions]
+Boto3 documentation:
+[SSM.Client.list_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_versions)
 
-```python
-def list_document_versions(
-    self,
-    Name: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDocumentVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDocumentVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listdocumentversionsresulttypedef).
 
 ### list_documents
 
 Type annotations for `boto3.client("ssm").list_documents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_documents]
+Boto3 documentation:
+[SSM.Client.list_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_documents)
 
-```python
-def list_documents(
-    self,
-    DocumentFilterList: List[DocumentFilterTypeDef] = None,
-    Filters: List[DocumentKeyValuesFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDocumentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentFilterList`:
+  `List`\[[DocumentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentfiltertypedef)\]
+- `Filters`:
+  `List`\[[DocumentKeyValuesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentkeyvaluesfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDocumentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listdocumentsresulttypedef).
 
 ### list_inventory_entries
 
 Type annotations for `boto3.client("ssm").list_inventory_entries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_inventory_entries]
+Boto3 documentation:
+[SSM.Client.list_inventory_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_inventory_entries)
 
-```python
-def list_inventory_entries(
-    self,
-    InstanceId: str,
-    TypeName: str,
-    Filters: List["InventoryFilterTypeDef"] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListInventoryEntriesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `TypeName`: `str` *(required)*
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListInventoryEntriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listinventoryentriesresulttypedef).
 
 ### list_ops_item_events
 
 Type annotations for `boto3.client("ssm").list_ops_item_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_events]
+Boto3 documentation:
+[SSM.Client.list_ops_item_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_events)
 
-```python
-def list_ops_item_events(
-    self,
-    Filters: List[OpsItemEventFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListOpsItemEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[OpsItemEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemeventfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOpsItemEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemeventsresponsetypedef).
 
 ### list_ops_metadata
 
 Type annotations for `boto3.client("ssm").list_ops_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_metadata]
+Boto3 documentation:
+[SSM.Client.list_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_metadata)
 
-```python
-def list_ops_metadata(
-    self,
-    Filters: List[OpsMetadataFilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListOpsMetadataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[OpsMetadataFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsmetadatafiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOpsMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsmetadataresulttypedef).
 
 ### list_resource_compliance_summaries
 
-Type annotations for `boto3.client("ssm").list_resource_compliance_summaries` method.
+Type annotations for `boto3.client("ssm").list_resource_compliance_summaries`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_compliance_summaries]
+Boto3 documentation:
+[SSM.Client.list_resource_compliance_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_compliance_summaries)
 
-```python
-def list_resource_compliance_summaries(
-    self,
-    Filters: List[ComplianceStringFilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListResourceComplianceSummariesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListResourceComplianceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listresourcecompliancesummariesresulttypedef).
 
 ### list_resource_data_sync
 
 Type annotations for `boto3.client("ssm").list_resource_data_sync` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_data_sync]
+Boto3 documentation:
+[SSM.Client.list_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_data_sync)
 
-```python
-def list_resource_data_sync(
-    self,
-    SyncType: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListResourceDataSyncResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SyncType`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListResourceDataSyncResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listresourcedatasyncresulttypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("ssm").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_tags_for_resource]
+Boto3 documentation:
+[SSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceType: ResourceTypeForTagging,
-    ResourceId: str
-) -> ListTagsForResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [ResourceTypeForTagging](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#resourcetypefortagging)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listtagsforresourceresulttypedef).
 
 ### modify_document_permission
 
 Type annotations for `boto3.client("ssm").modify_document_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.modify_document_permission]
+Boto3 documentation:
+[SSM.Client.modify_document_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.modify_document_permission)
 
-```python
-def modify_document_permission(
-    self,
-    Name: str,
-    PermissionType: Literal['Share'],
-    AccountIdsToAdd: List[str] = None,
-    AccountIdsToRemove: List[str] = None,
-    SharedDocumentVersion: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `PermissionType`: `Literal['Share']` *(required)*
+- `AccountIdsToAdd`: `List`\[`str`\]
+- `AccountIdsToRemove`: `List`\[`str`\]
+- `SharedDocumentVersion`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_compliance_items
 
 Type annotations for `boto3.client("ssm").put_compliance_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_compliance_items]
+Boto3 documentation:
+[SSM.Client.put_compliance_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_compliance_items)
 
-```python
-def put_compliance_items(
-    self,
-    ResourceId: str,
-    ResourceType: str,
-    ComplianceType: str,
-    ExecutionSummary: "ComplianceExecutionSummaryTypeDef",
-    Items: List[ComplianceItemEntryTypeDef],
-    ItemContentHash: str = None,
-    UploadType: ComplianceUploadType = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+- `ComplianceType`: `str` *(required)*
+- `ExecutionSummary`:
+  [ComplianceExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#complianceexecutionsummarytypedef)
+  *(required)*
+- `Items`:
+  `List`\[[ComplianceItemEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#complianceitementrytypedef)\]
+  *(required)*
+- `ItemContentHash`: `str`
+- `UploadType`:
+  [ComplianceUploadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#complianceuploadtype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_inventory
 
 Type annotations for `boto3.client("ssm").put_inventory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_inventory]
+Boto3 documentation:
+[SSM.Client.put_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_inventory)
 
-```python
-def put_inventory(
-    self,
-    InstanceId: str,
-    Items: List[InventoryItemTypeDef]
-) -> PutInventoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Items`:
+  `List`\[[InventoryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryitemtypedef)\]
+  *(required)*
+
+Returns
+[PutInventoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#putinventoryresulttypedef).
 
 ### put_parameter
 
 Type annotations for `boto3.client("ssm").put_parameter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_parameter]
+Boto3 documentation:
+[SSM.Client.put_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_parameter)
 
-```python
-def put_parameter(
-    self,
-    Name: str,
-    Value: str,
-    Description: str = None,
-    Type: ParameterType = None,
-    KeyId: str = None,
-    Overwrite: bool = None,
-    AllowedPattern: str = None,
-    Tags: List["TagTypeDef"] = None,
-    Tier: ParameterTier = None,
-    Policies: str = None,
-    DataType: str = None
-) -> PutParameterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Value`: `str` *(required)*
+- `Description`: `str`
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertype)
+- `KeyId`: `str`
+- `Overwrite`: `bool`
+- `AllowedPattern`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+- `Tier`:
+  [ParameterTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertier)
+- `Policies`: `str`
+- `DataType`: `str`
+
+Returns
+[PutParameterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#putparameterresulttypedef).
 
 ### register_default_patch_baseline
 
-Type annotations for `boto3.client("ssm").register_default_patch_baseline` method.
+Type annotations for `boto3.client("ssm").register_default_patch_baseline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_default_patch_baseline]
+Boto3 documentation:
+[SSM.Client.register_default_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_default_patch_baseline)
 
-```python
-def register_default_patch_baseline(
-    self,
-    BaselineId: str
-) -> RegisterDefaultPatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+
+Returns
+[RegisterDefaultPatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#registerdefaultpatchbaselineresulttypedef).
 
 ### register_patch_baseline_for_patch_group
 
-Type annotations for `boto3.client("ssm").register_patch_baseline_for_patch_group` method.
+Type annotations for
+`boto3.client("ssm").register_patch_baseline_for_patch_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_patch_baseline_for_patch_group]
+Boto3 documentation:
+[SSM.Client.register_patch_baseline_for_patch_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_patch_baseline_for_patch_group)
 
-```python
-def register_patch_baseline_for_patch_group(
-    self,
-    BaselineId: str,
-    PatchGroup: str
-) -> RegisterPatchBaselineForPatchGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+- `PatchGroup`: `str` *(required)*
+
+Returns
+[RegisterPatchBaselineForPatchGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#registerpatchbaselineforpatchgroupresulttypedef).
 
 ### register_target_with_maintenance_window
 
-Type annotations for `boto3.client("ssm").register_target_with_maintenance_window` method.
+Type annotations for
+`boto3.client("ssm").register_target_with_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_target_with_maintenance_window]
+Boto3 documentation:
+[SSM.Client.register_target_with_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_target_with_maintenance_window)
 
-```python
-def register_target_with_maintenance_window(
-    self,
-    WindowId: str,
-    ResourceType: MaintenanceWindowResourceType,
-    Targets: List["TargetTypeDef"],
-    OwnerInformation: str = None,
-    Name: str = None,
-    Description: str = None,
-    ClientToken: str = None
-) -> RegisterTargetWithMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `ResourceType`:
+  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+  *(required)*
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+  *(required)*
+- `OwnerInformation`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+Returns
+[RegisterTargetWithMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#registertargetwithmaintenancewindowresulttypedef).
 
 ### register_task_with_maintenance_window
 
-Type annotations for `boto3.client("ssm").register_task_with_maintenance_window` method.
+Type annotations for
+`boto3.client("ssm").register_task_with_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_task_with_maintenance_window]
+Boto3 documentation:
+[SSM.Client.register_task_with_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_task_with_maintenance_window)
 
-```python
-def register_task_with_maintenance_window(
-    self,
-    WindowId: str,
-    TaskArn: str,
-    TaskType: MaintenanceWindowTaskType,
-    Targets: List["TargetTypeDef"] = None,
-    ServiceRoleArn: str = None,
-    TaskParameters: Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"] = None,
-    TaskInvocationParameters: "MaintenanceWindowTaskInvocationParametersTypeDef" = None,
-    Priority: int = None,
-    MaxConcurrency: str = None,
-    MaxErrors: str = None,
-    LoggingInfo: "LoggingInfoTypeDef" = None,
-    Name: str = None,
-    Description: str = None,
-    ClientToken: str = None
-) -> RegisterTaskWithMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `TaskArn`: `str` *(required)*
+- `TaskType`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
+  *(required)*
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `ServiceRoleArn`: `str`
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskinvocationparameterstypedef)
+- `Priority`: `int`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#logginginfotypedef)
+- `Name`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+Returns
+[RegisterTaskWithMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#registertaskwithmaintenancewindowresulttypedef).
 
 ### remove_tags_from_resource
 
 Type annotations for `boto3.client("ssm").remove_tags_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.remove_tags_from_resource]
+Boto3 documentation:
+[SSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.remove_tags_from_resource)
 
-```python
-def remove_tags_from_resource(
-    self,
-    ResourceType: ResourceTypeForTagging,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceType`:
+  [ResourceTypeForTagging](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#resourcetypefortagging)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reset_service_setting
 
 Type annotations for `boto3.client("ssm").reset_service_setting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.reset_service_setting]
+Boto3 documentation:
+[SSM.Client.reset_service_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.reset_service_setting)
 
-```python
-def reset_service_setting(
-    self,
-    SettingId: str
-) -> ResetServiceSettingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SettingId`: `str` *(required)*
+
+Returns
+[ResetServiceSettingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resetservicesettingresulttypedef).
 
 ### resume_session
 
 Type annotations for `boto3.client("ssm").resume_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.resume_session]
+Boto3 documentation:
+[SSM.Client.resume_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.resume_session)
 
-```python
-def resume_session(
-    self,
-    SessionId: str
-) -> ResumeSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SessionId`: `str` *(required)*
+
+Returns
+[ResumeSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resumesessionresponsetypedef).
 
 ### send_automation_signal
 
 Type annotations for `boto3.client("ssm").send_automation_signal` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_automation_signal]
+Boto3 documentation:
+[SSM.Client.send_automation_signal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_automation_signal)
 
-```python
-def send_automation_signal(
-    self,
-    AutomationExecutionId: str,
-    SignalType: SignalType,
-    Payload: Dict[str, List[str]] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutomationExecutionId`: `str` *(required)*
+- `SignalType`:
+  [SignalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#signaltype)
+  *(required)*
+- `Payload`: `Dict`\[`str`, `List`\[`str`\]\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_command
 
 Type annotations for `boto3.client("ssm").send_command` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_command]
+Boto3 documentation:
+[SSM.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_command)
 
-```python
-def send_command(
-    self,
-    DocumentName: str,
-    InstanceIds: List[str] = None,
-    Targets: List["TargetTypeDef"] = None,
-    DocumentVersion: str = None,
-    DocumentHash: str = None,
-    DocumentHashType: DocumentHashType = None,
-    TimeoutSeconds: int = None,
-    Comment: str = None,
-    Parameters: Dict[str, List[str]] = None,
-    OutputS3Region: str = None,
-    OutputS3BucketName: str = None,
-    OutputS3KeyPrefix: str = None,
-    MaxConcurrency: str = None,
-    MaxErrors: str = None,
-    ServiceRoleArn: str = None,
-    NotificationConfig: "NotificationConfigTypeDef" = None,
-    CloudWatchOutputConfig: "CloudWatchOutputConfigTypeDef" = None
-) -> SendCommandResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentName`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `DocumentVersion`: `str`
+- `DocumentHash`: `str`
+- `DocumentHashType`:
+  [DocumentHashType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenthashtype)
+- `TimeoutSeconds`: `int`
+- `Comment`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `OutputS3Region`: `str`
+- `OutputS3BucketName`: `str`
+- `OutputS3KeyPrefix`: `str`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `ServiceRoleArn`: `str`
+- `NotificationConfig`:
+  [NotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#notificationconfigtypedef)
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cloudwatchoutputconfigtypedef)
+
+Returns
+[SendCommandResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#sendcommandresulttypedef).
 
 ### start_associations_once
 
 Type annotations for `boto3.client("ssm").start_associations_once` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_associations_once]
+Boto3 documentation:
+[SSM.Client.start_associations_once](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_associations_once)
 
-```python
-def start_associations_once(
-    self,
-    AssociationIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AssociationIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_automation_execution
 
 Type annotations for `boto3.client("ssm").start_automation_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_automation_execution]
+Boto3 documentation:
+[SSM.Client.start_automation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_automation_execution)
 
-```python
-def start_automation_execution(
-    self,
-    DocumentName: str,
-    DocumentVersion: str = None,
-    Parameters: Dict[str, List[str]] = None,
-    ClientToken: str = None,
-    Mode: ExecutionMode = None,
-    TargetParameterName: str = None,
-    Targets: List["TargetTypeDef"] = None,
-    TargetMaps: List[Dict[str, List[str]]] = None,
-    MaxConcurrency: str = None,
-    MaxErrors: str = None,
-    TargetLocations: List["TargetLocationTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> StartAutomationExecutionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentName`: `str` *(required)*
+- `DocumentVersion`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ClientToken`: `str`
+- `Mode`:
+  [ExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#executionmode)
+- `TargetParameterName`: `str`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+Returns
+[StartAutomationExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#startautomationexecutionresulttypedef).
 
 ### start_change_request_execution
 
-Type annotations for `boto3.client("ssm").start_change_request_execution` method.
+Type annotations for `boto3.client("ssm").start_change_request_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_change_request_execution]
+Boto3 documentation:
+[SSM.Client.start_change_request_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_change_request_execution)
 
-```python
-def start_change_request_execution(
-    self,
-    DocumentName: str,
-    Runbooks: List["RunbookTypeDef"],
-    ScheduledTime: datetime = None,
-    DocumentVersion: str = None,
-    Parameters: Dict[str, List[str]] = None,
-    ChangeRequestName: str = None,
-    ClientToken: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ScheduledEndTime: datetime = None,
-    ChangeDetails: str = None
-) -> StartChangeRequestExecutionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentName`: `str` *(required)*
+- `Runbooks`:
+  `List`\[[RunbookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#runbooktypedef)\]
+  *(required)*
+- `ScheduledTime`: `datetime`
+- `DocumentVersion`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChangeRequestName`: `str`
+- `ClientToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+- `ScheduledEndTime`: `datetime`
+- `ChangeDetails`: `str`
+
+Returns
+[StartChangeRequestExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#startchangerequestexecutionresulttypedef).
 
 ### start_session
 
 Type annotations for `boto3.client("ssm").start_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_session]
+Boto3 documentation:
+[SSM.Client.start_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_session)
 
-```python
-def start_session(
-    self,
-    Target: str,
-    DocumentName: str = None,
-    Parameters: Dict[str, List[str]] = None
-) -> StartSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Target`: `str` *(required)*
+- `DocumentName`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+
+Returns
+[StartSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#startsessionresponsetypedef).
 
 ### stop_automation_execution
 
 Type annotations for `boto3.client("ssm").stop_automation_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.stop_automation_execution]
+Boto3 documentation:
+[SSM.Client.stop_automation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.stop_automation_execution)
 
-```python
-def stop_automation_execution(
-    self,
-    AutomationExecutionId: str,
-    Type: StopType = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutomationExecutionId`: `str` *(required)*
+- `Type`:
+  [StopType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#stoptype)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### terminate_session
 
 Type annotations for `boto3.client("ssm").terminate_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.terminate_session]
+Boto3 documentation:
+[SSM.Client.terminate_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.terminate_session)
 
-```python
-def terminate_session(
-    self,
-    SessionId: str
-) -> TerminateSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SessionId`: `str` *(required)*
+
+Returns
+[TerminateSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#terminatesessionresponsetypedef).
 
 ### unlabel_parameter_version
 
 Type annotations for `boto3.client("ssm").unlabel_parameter_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.unlabel_parameter_version]
+Boto3 documentation:
+[SSM.Client.unlabel_parameter_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.unlabel_parameter_version)
 
-```python
-def unlabel_parameter_version(
-    self,
-    Name: str,
-    ParameterVersion: int,
-    Labels: List[str]
-) -> UnlabelParameterVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ParameterVersion`: `int` *(required)*
+- `Labels`: `List`\[`str`\] *(required)*
+
+Returns
+[UnlabelParameterVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#unlabelparameterversionresulttypedef).
 
 ### update_association
 
 Type annotations for `boto3.client("ssm").update_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association]
+Boto3 documentation:
+[SSM.Client.update_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association)
 
-```python
-def update_association(
-    self,
-    AssociationId: str,
-    Parameters: Dict[str, List[str]] = None,
-    DocumentVersion: str = None,
-    ScheduleExpression: str = None,
-    OutputLocation: "InstanceAssociationOutputLocationTypeDef" = None,
-    Name: str = None,
-    Targets: List["TargetTypeDef"] = None,
-    AssociationName: str = None,
-    AssociationVersion: str = None,
-    AutomationTargetParameterName: str = None,
-    MaxErrors: str = None,
-    MaxConcurrency: str = None,
-    ComplianceSeverity: AssociationComplianceSeverity = None,
-    SyncCompliance: AssociationSyncCompliance = None,
-    ApplyOnlyAtCronInterval: bool = None,
-    TargetLocations: List["TargetLocationTypeDef"] = None
-) -> UpdateAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AssociationId`: `str` *(required)*
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `DocumentVersion`: `str`
+- `ScheduleExpression`: `str`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputlocationtypedef)
+- `Name`: `str`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `AssociationName`: `str`
+- `AssociationVersion`: `str`
+- `AutomationTargetParameterName`: `str`
+- `MaxErrors`: `str`
+- `MaxConcurrency`: `str`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationcomplianceseverity)
+- `SyncCompliance`:
+  [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
+- `ApplyOnlyAtCronInterval`: `bool`
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
+
+Returns
+[UpdateAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updateassociationresulttypedef).
 
 ### update_association_status
 
 Type annotations for `boto3.client("ssm").update_association_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association_status]
+Boto3 documentation:
+[SSM.Client.update_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association_status)
 
-```python
-def update_association_status(
-    self,
-    Name: str,
-    InstanceId: str,
-    AssociationStatus: "AssociationStatusTypeDef"
-) -> UpdateAssociationStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `AssociationStatus`:
+  [AssociationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationstatustypedef)
+  *(required)*
+
+Returns
+[UpdateAssociationStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updateassociationstatusresulttypedef).
 
 ### update_document
 
 Type annotations for `boto3.client("ssm").update_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document]
+Boto3 documentation:
+[SSM.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document)
 
-```python
-def update_document(
-    self,
-    Content: str,
-    Name: str,
-    Attachments: List[AttachmentsSourceTypeDef] = None,
-    VersionName: str = None,
-    DocumentVersion: str = None,
-    DocumentFormat: DocumentFormat = None,
-    TargetType: str = None
-) -> UpdateDocumentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Content`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Attachments`:
+  `List`\[[AttachmentsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentssourcetypedef)\]
+- `VersionName`: `str`
+- `DocumentVersion`: `str`
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
+- `TargetType`: `str`
+
+Returns
+[UpdateDocumentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatedocumentresulttypedef).
 
 ### update_document_default_version
 
-Type annotations for `boto3.client("ssm").update_document_default_version` method.
+Type annotations for `boto3.client("ssm").update_document_default_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_default_version]
+Boto3 documentation:
+[SSM.Client.update_document_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_default_version)
 
-```python
-def update_document_default_version(
-    self,
-    Name: str,
-    DocumentVersion: str
-) -> UpdateDocumentDefaultVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DocumentVersion`: `str` *(required)*
+
+Returns
+[UpdateDocumentDefaultVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatedocumentdefaultversionresulttypedef).
 
 ### update_document_metadata
 
 Type annotations for `boto3.client("ssm").update_document_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_metadata]
+Boto3 documentation:
+[SSM.Client.update_document_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_metadata)
 
-```python
-def update_document_metadata(
-    self,
-    Name: str,
-    DocumentReviews: DocumentReviewsTypeDef,
-    DocumentVersion: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DocumentReviews`:
+  [DocumentReviewsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentreviewstypedef)
+  *(required)*
+- `DocumentVersion`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_maintenance_window
 
 Type annotations for `boto3.client("ssm").update_maintenance_window` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window]
+Boto3 documentation:
+[SSM.Client.update_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window)
 
-```python
-def update_maintenance_window(
-    self,
-    WindowId: str,
-    Name: str = None,
-    Description: str = None,
-    StartDate: str = None,
-    EndDate: str = None,
-    Schedule: str = None,
-    ScheduleTimezone: str = None,
-    ScheduleOffset: int = None,
-    Duration: int = None,
-    Cutoff: int = None,
-    AllowUnassociatedTargets: bool = None,
-    Enabled: bool = None,
-    Replace: bool = None
-) -> UpdateMaintenanceWindowResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `Schedule`: `str`
+- `ScheduleTimezone`: `str`
+- `ScheduleOffset`: `int`
+- `Duration`: `int`
+- `Cutoff`: `int`
+- `AllowUnassociatedTargets`: `bool`
+- `Enabled`: `bool`
+- `Replace`: `bool`
+
+Returns
+[UpdateMaintenanceWindowResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatemaintenancewindowresulttypedef).
 
 ### update_maintenance_window_target
 
-Type annotations for `boto3.client("ssm").update_maintenance_window_target` method.
+Type annotations for `boto3.client("ssm").update_maintenance_window_target`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_target]
+Boto3 documentation:
+[SSM.Client.update_maintenance_window_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_target)
 
-```python
-def update_maintenance_window_target(
-    self,
-    WindowId: str,
-    WindowTargetId: str,
-    Targets: List["TargetTypeDef"] = None,
-    OwnerInformation: str = None,
-    Name: str = None,
-    Description: str = None,
-    Replace: bool = None
-) -> UpdateMaintenanceWindowTargetResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `WindowTargetId`: `str` *(required)*
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `OwnerInformation`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Replace`: `bool`
+
+Returns
+[UpdateMaintenanceWindowTargetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatemaintenancewindowtargetresulttypedef).
 
 ### update_maintenance_window_task
 
-Type annotations for `boto3.client("ssm").update_maintenance_window_task` method.
+Type annotations for `boto3.client("ssm").update_maintenance_window_task`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_task]
+Boto3 documentation:
+[SSM.Client.update_maintenance_window_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_task)
 
-```python
-def update_maintenance_window_task(
-    self,
-    WindowId: str,
-    WindowTaskId: str,
-    Targets: List["TargetTypeDef"] = None,
-    TaskArn: str = None,
-    ServiceRoleArn: str = None,
-    TaskParameters: Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"] = None,
-    TaskInvocationParameters: "MaintenanceWindowTaskInvocationParametersTypeDef" = None,
-    Priority: int = None,
-    MaxConcurrency: str = None,
-    MaxErrors: str = None,
-    LoggingInfo: "LoggingInfoTypeDef" = None,
-    Name: str = None,
-    Description: str = None,
-    Replace: bool = None
-) -> UpdateMaintenanceWindowTaskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WindowId`: `str` *(required)*
+- `WindowTaskId`: `str` *(required)*
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TaskArn`: `str`
+- `ServiceRoleArn`: `str`
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskinvocationparameterstypedef)
+- `Priority`: `int`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#logginginfotypedef)
+- `Name`: `str`
+- `Description`: `str`
+- `Replace`: `bool`
+
+Returns
+[UpdateMaintenanceWindowTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatemaintenancewindowtaskresulttypedef).
 
 ### update_managed_instance_role
 
 Type annotations for `boto3.client("ssm").update_managed_instance_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_managed_instance_role]
+Boto3 documentation:
+[SSM.Client.update_managed_instance_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_managed_instance_role)
 
-```python
-def update_managed_instance_role(
-    self,
-    InstanceId: str,
-    IamRole: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `IamRole`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_ops_item
 
 Type annotations for `boto3.client("ssm").update_ops_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_item]
+Boto3 documentation:
+[SSM.Client.update_ops_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_item)
 
-```python
-def update_ops_item(
-    self,
-    OpsItemId: str,
-    Description: str = None,
-    OperationalData: Dict[str, "OpsItemDataValueTypeDef"] = None,
-    OperationalDataToDelete: List[str] = None,
-    Notifications: List["OpsItemNotificationTypeDef"] = None,
-    Priority: int = None,
-    RelatedOpsItems: List["RelatedOpsItemTypeDef"] = None,
-    Status: OpsItemStatus = None,
-    Title: str = None,
-    Category: str = None,
-    Severity: str = None,
-    ActualStartTime: datetime = None,
-    ActualEndTime: datetime = None,
-    PlannedStartTime: datetime = None,
-    PlannedEndTime: datetime = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OpsItemId`: `str` *(required)*
+- `Description`: `str`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemdatavaluetypedef)\]
+- `OperationalDataToDelete`: `List`\[`str`\]
+- `Notifications`:
+  `List`\[[OpsItemNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemnotificationtypedef)\]
+- `Priority`: `int`
+- `RelatedOpsItems`:
+  `List`\[[RelatedOpsItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#relatedopsitemtypedef)\]
+- `Status`:
+  [OpsItemStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemstatus)
+- `Title`: `str`
+- `Category`: `str`
+- `Severity`: `str`
+- `ActualStartTime`: `datetime`
+- `ActualEndTime`: `datetime`
+- `PlannedStartTime`: `datetime`
+- `PlannedEndTime`: `datetime`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_ops_metadata
 
 Type annotations for `boto3.client("ssm").update_ops_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_metadata]
+Boto3 documentation:
+[SSM.Client.update_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_metadata)
 
-```python
-def update_ops_metadata(
-    self,
-    OpsMetadataArn: str,
-    MetadataToUpdate: Dict[str, "MetadataValueTypeDef"] = None,
-    KeysToDelete: List[str] = None
-) -> UpdateOpsMetadataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OpsMetadataArn`: `str` *(required)*
+- `MetadataToUpdate`: `Dict`\[`str`,
+  [MetadataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#metadatavaluetypedef)\]
+- `KeysToDelete`: `List`\[`str`\]
+
+Returns
+[UpdateOpsMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updateopsmetadataresulttypedef).
 
 ### update_patch_baseline
 
 Type annotations for `boto3.client("ssm").update_patch_baseline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_patch_baseline]
+Boto3 documentation:
+[SSM.Client.update_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_patch_baseline)
 
-```python
-def update_patch_baseline(
-    self,
-    BaselineId: str,
-    Name: str = None,
-    GlobalFilters: "PatchFilterGroupTypeDef" = None,
-    ApprovalRules: "PatchRuleGroupTypeDef" = None,
-    ApprovedPatches: List[str] = None,
-    ApprovedPatchesComplianceLevel: PatchComplianceLevel = None,
-    ApprovedPatchesEnableNonSecurity: bool = None,
-    RejectedPatches: List[str] = None,
-    RejectedPatchesAction: PatchAction = None,
-    Description: str = None,
-    Sources: List["PatchSourceTypeDef"] = None,
-    Replace: bool = None
-) -> UpdatePatchBaselineResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BaselineId`: `str` *(required)*
+- `Name`: `str`
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
+- `ApprovedPatchesEnableNonSecurity`: `bool`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`:
+  [PatchAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchaction)
+- `Description`: `str`
+- `Sources`:
+  `List`\[[PatchSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchsourcetypedef)\]
+- `Replace`: `bool`
+
+Returns
+[UpdatePatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#updatepatchbaselineresulttypedef).
 
 ### update_resource_data_sync
 
 Type annotations for `boto3.client("ssm").update_resource_data_sync` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_resource_data_sync]
+Boto3 documentation:
+[SSM.Client.update_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_resource_data_sync)
 
-```python
-def update_resource_data_sync(
-    self,
-    SyncName: str,
-    SyncType: str,
-    SyncSource: ResourceDataSyncSourceTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SyncName`: `str` *(required)*
+- `SyncType`: `str` *(required)*
+- `SyncSource`:
+  [ResourceDataSyncSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncsourcetypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_service_setting
 
 Type annotations for `boto3.client("ssm").update_service_setting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_service_setting]
+Boto3 documentation:
+[SSM.Client.update_service_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_service_setting)
 
-```python
-def update_service_setting(
-    self,
-    SettingId: str,
-    SettingValue: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `SettingId`: `str` *(required)*
+- `SettingValue`: `str` *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("ssm").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_activations")` -> [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
-- `client.get_paginator("describe_association_execution_targets")` -> [DescribeAssociationExecutionTargetsPaginator](./paginators.md#describeassociationexecutiontargetspaginator)
-- `client.get_paginator("describe_association_executions")` -> [DescribeAssociationExecutionsPaginator](./paginators.md#describeassociationexecutionspaginator)
-- `client.get_paginator("describe_automation_executions")` -> [DescribeAutomationExecutionsPaginator](./paginators.md#describeautomationexecutionspaginator)
-- `client.get_paginator("describe_automation_step_executions")` -> [DescribeAutomationStepExecutionsPaginator](./paginators.md#describeautomationstepexecutionspaginator)
-- `client.get_paginator("describe_available_patches")` -> [DescribeAvailablePatchesPaginator](./paginators.md#describeavailablepatchespaginator)
-- `client.get_paginator("describe_effective_instance_associations")` -> [DescribeEffectiveInstanceAssociationsPaginator](./paginators.md#describeeffectiveinstanceassociationspaginator)
-- `client.get_paginator("describe_effective_patches_for_patch_baseline")` -> [DescribeEffectivePatchesForPatchBaselinePaginator](./paginators.md#describeeffectivepatchesforpatchbaselinepaginator)
-- `client.get_paginator("describe_instance_associations_status")` -> [DescribeInstanceAssociationsStatusPaginator](./paginators.md#describeinstanceassociationsstatuspaginator)
-- `client.get_paginator("describe_instance_information")` -> [DescribeInstanceInformationPaginator](./paginators.md#describeinstanceinformationpaginator)
-- `client.get_paginator("describe_instance_patch_states")` -> [DescribeInstancePatchStatesPaginator](./paginators.md#describeinstancepatchstatespaginator)
-- `client.get_paginator("describe_instance_patch_states_for_patch_group")` -> [DescribeInstancePatchStatesForPatchGroupPaginator](./paginators.md#describeinstancepatchstatesforpatchgrouppaginator)
-- `client.get_paginator("describe_instance_patches")` -> [DescribeInstancePatchesPaginator](./paginators.md#describeinstancepatchespaginator)
-- `client.get_paginator("describe_inventory_deletions")` -> [DescribeInventoryDeletionsPaginator](./paginators.md#describeinventorydeletionspaginator)
-- `client.get_paginator("describe_maintenance_window_execution_task_invocations")` -> [DescribeMaintenanceWindowExecutionTaskInvocationsPaginator](./paginators.md#describemaintenancewindowexecutiontaskinvocationspaginator)
-- `client.get_paginator("describe_maintenance_window_execution_tasks")` -> [DescribeMaintenanceWindowExecutionTasksPaginator](./paginators.md#describemaintenancewindowexecutiontaskspaginator)
-- `client.get_paginator("describe_maintenance_window_executions")` -> [DescribeMaintenanceWindowExecutionsPaginator](./paginators.md#describemaintenancewindowexecutionspaginator)
-- `client.get_paginator("describe_maintenance_window_schedule")` -> [DescribeMaintenanceWindowSchedulePaginator](./paginators.md#describemaintenancewindowschedulepaginator)
-- `client.get_paginator("describe_maintenance_window_targets")` -> [DescribeMaintenanceWindowTargetsPaginator](./paginators.md#describemaintenancewindowtargetspaginator)
-- `client.get_paginator("describe_maintenance_window_tasks")` -> [DescribeMaintenanceWindowTasksPaginator](./paginators.md#describemaintenancewindowtaskspaginator)
-- `client.get_paginator("describe_maintenance_windows")` -> [DescribeMaintenanceWindowsPaginator](./paginators.md#describemaintenancewindowspaginator)
-- `client.get_paginator("describe_maintenance_windows_for_target")` -> [DescribeMaintenanceWindowsForTargetPaginator](./paginators.md#describemaintenancewindowsfortargetpaginator)
-- `client.get_paginator("describe_ops_items")` -> [DescribeOpsItemsPaginator](./paginators.md#describeopsitemspaginator)
-- `client.get_paginator("describe_parameters")` -> [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
-- `client.get_paginator("describe_patch_baselines")` -> [DescribePatchBaselinesPaginator](./paginators.md#describepatchbaselinespaginator)
-- `client.get_paginator("describe_patch_groups")` -> [DescribePatchGroupsPaginator](./paginators.md#describepatchgroupspaginator)
-- `client.get_paginator("describe_patch_properties")` -> [DescribePatchPropertiesPaginator](./paginators.md#describepatchpropertiespaginator)
-- `client.get_paginator("describe_sessions")` -> [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
-- `client.get_paginator("get_inventory")` -> [GetInventoryPaginator](./paginators.md#getinventorypaginator)
-- `client.get_paginator("get_inventory_schema")` -> [GetInventorySchemaPaginator](./paginators.md#getinventoryschemapaginator)
-- `client.get_paginator("get_ops_summary")` -> [GetOpsSummaryPaginator](./paginators.md#getopssummarypaginator)
-- `client.get_paginator("get_parameter_history")` -> [GetParameterHistoryPaginator](./paginators.md#getparameterhistorypaginator)
-- `client.get_paginator("get_parameters_by_path")` -> [GetParametersByPathPaginator](./paginators.md#getparametersbypathpaginator)
-- `client.get_paginator("list_association_versions")` -> [ListAssociationVersionsPaginator](./paginators.md#listassociationversionspaginator)
-- `client.get_paginator("list_associations")` -> [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
-- `client.get_paginator("list_command_invocations")` -> [ListCommandInvocationsPaginator](./paginators.md#listcommandinvocationspaginator)
-- `client.get_paginator("list_commands")` -> [ListCommandsPaginator](./paginators.md#listcommandspaginator)
-- `client.get_paginator("list_compliance_items")` -> [ListComplianceItemsPaginator](./paginators.md#listcomplianceitemspaginator)
-- `client.get_paginator("list_compliance_summaries")` -> [ListComplianceSummariesPaginator](./paginators.md#listcompliancesummariespaginator)
-- `client.get_paginator("list_document_versions")` -> [ListDocumentVersionsPaginator](./paginators.md#listdocumentversionspaginator)
-- `client.get_paginator("list_documents")` -> [ListDocumentsPaginator](./paginators.md#listdocumentspaginator)
-- `client.get_paginator("list_ops_item_events")` -> [ListOpsItemEventsPaginator](./paginators.md#listopsitemeventspaginator)
-- `client.get_paginator("list_ops_metadata")` -> [ListOpsMetadataPaginator](./paginators.md#listopsmetadatapaginator)
-- `client.get_paginator("list_resource_compliance_summaries")` -> [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
-- `client.get_paginator("list_resource_data_sync")` -> [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
-
-
-
+- `client.get_paginator("describe_activations")` ->
+  [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
+- `client.get_paginator("describe_association_execution_targets")` ->
+  [DescribeAssociationExecutionTargetsPaginator](./paginators.md#describeassociationexecutiontargetspaginator)
+- `client.get_paginator("describe_association_executions")` ->
+  [DescribeAssociationExecutionsPaginator](./paginators.md#describeassociationexecutionspaginator)
+- `client.get_paginator("describe_automation_executions")` ->
+  [DescribeAutomationExecutionsPaginator](./paginators.md#describeautomationexecutionspaginator)
+- `client.get_paginator("describe_automation_step_executions")` ->
+  [DescribeAutomationStepExecutionsPaginator](./paginators.md#describeautomationstepexecutionspaginator)
+- `client.get_paginator("describe_available_patches")` ->
+  [DescribeAvailablePatchesPaginator](./paginators.md#describeavailablepatchespaginator)
+- `client.get_paginator("describe_effective_instance_associations")` ->
+  [DescribeEffectiveInstanceAssociationsPaginator](./paginators.md#describeeffectiveinstanceassociationspaginator)
+- `client.get_paginator("describe_effective_patches_for_patch_baseline")` ->
+  [DescribeEffectivePatchesForPatchBaselinePaginator](./paginators.md#describeeffectivepatchesforpatchbaselinepaginator)
+- `client.get_paginator("describe_instance_associations_status")` ->
+  [DescribeInstanceAssociationsStatusPaginator](./paginators.md#describeinstanceassociationsstatuspaginator)
+- `client.get_paginator("describe_instance_information")` ->
+  [DescribeInstanceInformationPaginator](./paginators.md#describeinstanceinformationpaginator)
+- `client.get_paginator("describe_instance_patch_states")` ->
+  [DescribeInstancePatchStatesPaginator](./paginators.md#describeinstancepatchstatespaginator)
+- `client.get_paginator("describe_instance_patch_states_for_patch_group")` ->
+  [DescribeInstancePatchStatesForPatchGroupPaginator](./paginators.md#describeinstancepatchstatesforpatchgrouppaginator)
+- `client.get_paginator("describe_instance_patches")` ->
+  [DescribeInstancePatchesPaginator](./paginators.md#describeinstancepatchespaginator)
+- `client.get_paginator("describe_inventory_deletions")` ->
+  [DescribeInventoryDeletionsPaginator](./paginators.md#describeinventorydeletionspaginator)
+- `client.get_paginator("describe_maintenance_window_execution_task_invocations")`
+  ->
+  [DescribeMaintenanceWindowExecutionTaskInvocationsPaginator](./paginators.md#describemaintenancewindowexecutiontaskinvocationspaginator)
+- `client.get_paginator("describe_maintenance_window_execution_tasks")` ->
+  [DescribeMaintenanceWindowExecutionTasksPaginator](./paginators.md#describemaintenancewindowexecutiontaskspaginator)
+- `client.get_paginator("describe_maintenance_window_executions")` ->
+  [DescribeMaintenanceWindowExecutionsPaginator](./paginators.md#describemaintenancewindowexecutionspaginator)
+- `client.get_paginator("describe_maintenance_window_schedule")` ->
+  [DescribeMaintenanceWindowSchedulePaginator](./paginators.md#describemaintenancewindowschedulepaginator)
+- `client.get_paginator("describe_maintenance_window_targets")` ->
+  [DescribeMaintenanceWindowTargetsPaginator](./paginators.md#describemaintenancewindowtargetspaginator)
+- `client.get_paginator("describe_maintenance_window_tasks")` ->
+  [DescribeMaintenanceWindowTasksPaginator](./paginators.md#describemaintenancewindowtaskspaginator)
+- `client.get_paginator("describe_maintenance_windows")` ->
+  [DescribeMaintenanceWindowsPaginator](./paginators.md#describemaintenancewindowspaginator)
+- `client.get_paginator("describe_maintenance_windows_for_target")` ->
+  [DescribeMaintenanceWindowsForTargetPaginator](./paginators.md#describemaintenancewindowsfortargetpaginator)
+- `client.get_paginator("describe_ops_items")` ->
+  [DescribeOpsItemsPaginator](./paginators.md#describeopsitemspaginator)
+- `client.get_paginator("describe_parameters")` ->
+  [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+- `client.get_paginator("describe_patch_baselines")` ->
+  [DescribePatchBaselinesPaginator](./paginators.md#describepatchbaselinespaginator)
+- `client.get_paginator("describe_patch_groups")` ->
+  [DescribePatchGroupsPaginator](./paginators.md#describepatchgroupspaginator)
+- `client.get_paginator("describe_patch_properties")` ->
+  [DescribePatchPropertiesPaginator](./paginators.md#describepatchpropertiespaginator)
+- `client.get_paginator("describe_sessions")` ->
+  [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
+- `client.get_paginator("get_inventory")` ->
+  [GetInventoryPaginator](./paginators.md#getinventorypaginator)
+- `client.get_paginator("get_inventory_schema")` ->
+  [GetInventorySchemaPaginator](./paginators.md#getinventoryschemapaginator)
+- `client.get_paginator("get_ops_summary")` ->
+  [GetOpsSummaryPaginator](./paginators.md#getopssummarypaginator)
+- `client.get_paginator("get_parameter_history")` ->
+  [GetParameterHistoryPaginator](./paginators.md#getparameterhistorypaginator)
+- `client.get_paginator("get_parameters_by_path")` ->
+  [GetParametersByPathPaginator](./paginators.md#getparametersbypathpaginator)
+- `client.get_paginator("list_association_versions")` ->
+  [ListAssociationVersionsPaginator](./paginators.md#listassociationversionspaginator)
+- `client.get_paginator("list_associations")` ->
+  [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
+- `client.get_paginator("list_command_invocations")` ->
+  [ListCommandInvocationsPaginator](./paginators.md#listcommandinvocationspaginator)
+- `client.get_paginator("list_commands")` ->
+  [ListCommandsPaginator](./paginators.md#listcommandspaginator)
+- `client.get_paginator("list_compliance_items")` ->
+  [ListComplianceItemsPaginator](./paginators.md#listcomplianceitemspaginator)
+- `client.get_paginator("list_compliance_summaries")` ->
+  [ListComplianceSummariesPaginator](./paginators.md#listcompliancesummariespaginator)
+- `client.get_paginator("list_document_versions")` ->
+  [ListDocumentVersionsPaginator](./paginators.md#listdocumentversionspaginator)
+- `client.get_paginator("list_documents")` ->
+  [ListDocumentsPaginator](./paginators.md#listdocumentspaginator)
+- `client.get_paginator("list_ops_item_events")` ->
+  [ListOpsItemEventsPaginator](./paginators.md#listopsitemeventspaginator)
+- `client.get_paginator("list_ops_metadata")` ->
+  [ListOpsMetadataPaginator](./paginators.md#listopsmetadatapaginator)
+- `client.get_paginator("list_resource_compliance_summaries")` ->
+  [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
+- `client.get_paginator("list_resource_data_sync")` ->
+  [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("ssm").get_waiter` method with overloads.
 
-- `client.get_waiter("command_executed")` -> [CommandExecutedWaiter](./waiters.md#commandexecutedwaiter)
+- `client.get_waiter("command_executed")` ->
+  [CommandExecutedWaiter](./waiters.md#commandexecutedwaiter)

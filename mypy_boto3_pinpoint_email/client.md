@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > PinpointEmailClient
 
-Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+Auto-generated documentation for
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+type annotations stubs module
+[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [PinpointEmailClient for boto3 PinpointEmail module](#pinpointemailclient-for-boto3-pinpointemail-module)
   - [PinpointEmailClient](#pinpointemailclient)
@@ -68,12 +70,13 @@ def get_pinpoint-email_client() -> PinpointEmailClient:
     return boto3.client("pinpoint-email")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client)
+Boto3 documentation:
+[PinpointEmail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_pinpoint_email.client import Exceptions
@@ -81,7 +84,6 @@ from mypy_boto3_pinpoint_email.client import Exceptions
 def handle_error(exc: Exceptions.AccountSuspendedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -97,684 +99,722 @@ Exceptions:
 - `Exceptions.SendingPausedException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("pinpoint-email").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.can_paginate]
+Boto3 documentation:
+[PinpointEmail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_configuration_set
 
-Type annotations for `boto3.client("pinpoint-email").create_configuration_set` method.
+Type annotations for `boto3.client("pinpoint-email").create_configuration_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set]
+Boto3 documentation:
+[PinpointEmail.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set)
 
-```python
-def create_configuration_set(
-    self,
-    ConfigurationSetName: str,
-    TrackingOptions: "TrackingOptionsTypeDef" = None,
-    DeliveryOptions: "DeliveryOptionsTypeDef" = None,
-    ReputationOptions: "ReputationOptionsTypeDef" = None,
-    SendingOptions: "SendingOptionsTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#trackingoptionstypedef)
+- `DeliveryOptions`:
+  [DeliveryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#deliveryoptionstypedef)
+- `ReputationOptions`:
+  [ReputationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#reputationoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#sendingoptionstypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-email").create_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-email").create_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointEmail.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination)
 
-```python
-def create_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#eventdestinationdefinitiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_dedicated_ip_pool
 
-Type annotations for `boto3.client("pinpoint-email").create_dedicated_ip_pool` method.
+Type annotations for `boto3.client("pinpoint-email").create_dedicated_ip_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool]
+Boto3 documentation:
+[PinpointEmail.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool)
 
-```python
-def create_dedicated_ip_pool(
-    self,
-    PoolName: str,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_deliverability_test_report
 
-Type annotations for `boto3.client("pinpoint-email").create_deliverability_test_report` method.
+Type annotations for
+`boto3.client("pinpoint-email").create_deliverability_test_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report]
+Boto3 documentation:
+[PinpointEmail.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report)
 
-```python
-def create_deliverability_test_report(
-    self,
-    FromEmailAddress: str,
-    Content: EmailContentTypeDef,
-    ReportName: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDeliverabilityTestReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FromEmailAddress`: `str` *(required)*
+- `Content`:
+  [EmailContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#emailcontenttypedef)
+  *(required)*
+- `ReportName`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDeliverabilityTestReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#createdeliverabilitytestreportresponsetypedef).
 
 ### create_email_identity
 
-Type annotations for `boto3.client("pinpoint-email").create_email_identity` method.
+Type annotations for `boto3.client("pinpoint-email").create_email_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity]
+Boto3 documentation:
+[PinpointEmail.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity)
 
-```python
-def create_email_identity(
-    self,
-    EmailIdentity: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateEmailIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateEmailIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#createemailidentityresponsetypedef).
 
 ### delete_configuration_set
 
-Type annotations for `boto3.client("pinpoint-email").delete_configuration_set` method.
+Type annotations for `boto3.client("pinpoint-email").delete_configuration_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set]
+Boto3 documentation:
+[PinpointEmail.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set)
 
-```python
-def delete_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-email").delete_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-email").delete_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointEmail.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination)
 
-```python
-def delete_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dedicated_ip_pool
 
-Type annotations for `boto3.client("pinpoint-email").delete_dedicated_ip_pool` method.
+Type annotations for `boto3.client("pinpoint-email").delete_dedicated_ip_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool]
+Boto3 documentation:
+[PinpointEmail.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool)
 
-```python
-def delete_dedicated_ip_pool(
-    self,
-    PoolName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_email_identity
 
-Type annotations for `boto3.client("pinpoint-email").delete_email_identity` method.
+Type annotations for `boto3.client("pinpoint-email").delete_email_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity]
+Boto3 documentation:
+[PinpointEmail.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity)
 
-```python
-def delete_email_identity(
-    self,
-    EmailIdentity: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("pinpoint-email").generate_presigned_url` method.
+Type annotations for `boto3.client("pinpoint-email").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.generate_presigned_url]
+Boto3 documentation:
+[PinpointEmail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account
 
 Type annotations for `boto3.client("pinpoint-email").get_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account]
+Boto3 documentation:
+[PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
 
-```python
-def get_account(
-    self
-) -> GetAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getaccountresponsetypedef).
 
 ### get_blacklist_reports
 
-Type annotations for `boto3.client("pinpoint-email").get_blacklist_reports` method.
+Type annotations for `boto3.client("pinpoint-email").get_blacklist_reports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports]
+Boto3 documentation:
+[PinpointEmail.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports)
 
-```python
-def get_blacklist_reports(
-    self,
-    BlacklistItemNames: List[str]
-) -> GetBlacklistReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BlacklistItemNames`: `List`\[`str`\] *(required)*
+
+Returns
+[GetBlacklistReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getblacklistreportsresponsetypedef).
 
 ### get_configuration_set
 
-Type annotations for `boto3.client("pinpoint-email").get_configuration_set` method.
+Type annotations for `boto3.client("pinpoint-email").get_configuration_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set]
+Boto3 documentation:
+[PinpointEmail.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set)
 
-```python
-def get_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getconfigurationsetresponsetypedef).
 
 ### get_configuration_set_event_destinations
 
-Type annotations for `boto3.client("pinpoint-email").get_configuration_set_event_destinations` method.
+Type annotations for
+`boto3.client("pinpoint-email").get_configuration_set_event_destinations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations]
+Boto3 documentation:
+[PinpointEmail.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations)
 
-```python
-def get_configuration_set_event_destinations(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetEventDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetEventDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getconfigurationseteventdestinationsresponsetypedef).
 
 ### get_dedicated_ip
 
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip]
+Boto3 documentation:
+[PinpointEmail.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip)
 
-```python
-def get_dedicated_ip(
-    self,
-    Ip: str
-) -> GetDedicatedIpResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+
+Returns
+[GetDedicatedIpResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdedicatedipresponsetypedef).
 
 ### get_dedicated_ips
 
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ips` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips]
+Boto3 documentation:
+[PinpointEmail.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips)
 
-```python
-def get_dedicated_ips(
-    self,
-    PoolName: str = None,
-    NextToken: str = None,
-    PageSize: int = None
-) -> GetDedicatedIpsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str`
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[GetDedicatedIpsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdedicatedipsresponsetypedef).
 
 ### get_deliverability_dashboard_options
 
-Type annotations for `boto3.client("pinpoint-email").get_deliverability_dashboard_options` method.
+Type annotations for
+`boto3.client("pinpoint-email").get_deliverability_dashboard_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options]
+Boto3 documentation:
+[PinpointEmail.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options)
 
-```python
-def get_deliverability_dashboard_options(
-    self
-) -> GetDeliverabilityDashboardOptionsResponseTypeDef:
-    pass
-```
+Returns
+[GetDeliverabilityDashboardOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdeliverabilitydashboardoptionsresponsetypedef).
 
 ### get_deliverability_test_report
 
-Type annotations for `boto3.client("pinpoint-email").get_deliverability_test_report` method.
+Type annotations for
+`boto3.client("pinpoint-email").get_deliverability_test_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report]
+Boto3 documentation:
+[PinpointEmail.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report)
 
-```python
-def get_deliverability_test_report(
-    self,
-    ReportId: str
-) -> GetDeliverabilityTestReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReportId`: `str` *(required)*
+
+Returns
+[GetDeliverabilityTestReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdeliverabilitytestreportresponsetypedef).
 
 ### get_domain_deliverability_campaign
 
-Type annotations for `boto3.client("pinpoint-email").get_domain_deliverability_campaign` method.
+Type annotations for
+`boto3.client("pinpoint-email").get_domain_deliverability_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign]
+Boto3 documentation:
+[PinpointEmail.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign)
 
-```python
-def get_domain_deliverability_campaign(
-    self,
-    CampaignId: str
-) -> GetDomainDeliverabilityCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CampaignId`: `str` *(required)*
+
+Returns
+[GetDomainDeliverabilityCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdomaindeliverabilitycampaignresponsetypedef).
 
 ### get_domain_statistics_report
 
-Type annotations for `boto3.client("pinpoint-email").get_domain_statistics_report` method.
+Type annotations for
+`boto3.client("pinpoint-email").get_domain_statistics_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report]
+Boto3 documentation:
+[PinpointEmail.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report)
 
-```python
-def get_domain_statistics_report(
-    self,
-    Domain: str,
-    StartDate: datetime,
-    EndDate: datetime
-) -> GetDomainStatisticsReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Domain`: `str` *(required)*
+- `StartDate`: `datetime` *(required)*
+- `EndDate`: `datetime` *(required)*
+
+Returns
+[GetDomainStatisticsReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdomainstatisticsreportresponsetypedef).
 
 ### get_email_identity
 
-Type annotations for `boto3.client("pinpoint-email").get_email_identity` method.
+Type annotations for `boto3.client("pinpoint-email").get_email_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity]
+Boto3 documentation:
+[PinpointEmail.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity)
 
-```python
-def get_email_identity(
-    self,
-    EmailIdentity: str
-) -> GetEmailIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+
+Returns
+[GetEmailIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getemailidentityresponsetypedef).
 
 ### list_configuration_sets
 
-Type annotations for `boto3.client("pinpoint-email").list_configuration_sets` method.
+Type annotations for `boto3.client("pinpoint-email").list_configuration_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets]
+Boto3 documentation:
+[PinpointEmail.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets)
 
-```python
-def list_configuration_sets(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListConfigurationSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listconfigurationsetsresponsetypedef).
 
 ### list_dedicated_ip_pools
 
-Type annotations for `boto3.client("pinpoint-email").list_dedicated_ip_pools` method.
+Type annotations for `boto3.client("pinpoint-email").list_dedicated_ip_pools`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools]
+Boto3 documentation:
+[PinpointEmail.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools)
 
-```python
-def list_dedicated_ip_pools(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDedicatedIpPoolsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDedicatedIpPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdedicatedippoolsresponsetypedef).
 
 ### list_deliverability_test_reports
 
-Type annotations for `boto3.client("pinpoint-email").list_deliverability_test_reports` method.
+Type annotations for
+`boto3.client("pinpoint-email").list_deliverability_test_reports` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports]
+Boto3 documentation:
+[PinpointEmail.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports)
 
-```python
-def list_deliverability_test_reports(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDeliverabilityTestReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDeliverabilityTestReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdeliverabilitytestreportsresponsetypedef).
 
 ### list_domain_deliverability_campaigns
 
-Type annotations for `boto3.client("pinpoint-email").list_domain_deliverability_campaigns` method.
+Type annotations for
+`boto3.client("pinpoint-email").list_domain_deliverability_campaigns` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns]
+Boto3 documentation:
+[PinpointEmail.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns)
 
-```python
-def list_domain_deliverability_campaigns(
-    self,
-    StartDate: datetime,
-    EndDate: datetime,
-    SubscribedDomain: str,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDomainDeliverabilityCampaignsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StartDate`: `datetime` *(required)*
+- `EndDate`: `datetime` *(required)*
+- `SubscribedDomain`: `str` *(required)*
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDomainDeliverabilityCampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdomaindeliverabilitycampaignsresponsetypedef).
 
 ### list_email_identities
 
-Type annotations for `boto3.client("pinpoint-email").list_email_identities` method.
+Type annotations for `boto3.client("pinpoint-email").list_email_identities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities]
+Boto3 documentation:
+[PinpointEmail.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities)
 
-```python
-def list_email_identities(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListEmailIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListEmailIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listemailidentitiesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("pinpoint-email").list_tags_for_resource` method.
+Type annotations for `boto3.client("pinpoint-email").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource]
+Boto3 documentation:
+[PinpointEmail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_account_dedicated_ip_warmup_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_account_dedicated_ip_warmup_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_account_dedicated_ip_warmup_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes)
 
-```python
-def put_account_dedicated_ip_warmup_attributes(
-    self,
-    AutoWarmupEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoWarmupEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_account_sending_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_account_sending_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_account_sending_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes)
 
-```python
-def put_account_sending_attributes(
-    self,
-    SendingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SendingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_delivery_options
 
-Type annotations for `boto3.client("pinpoint-email").put_configuration_set_delivery_options` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_configuration_set_delivery_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options]
+Boto3 documentation:
+[PinpointEmail.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options)
 
-```python
-def put_configuration_set_delivery_options(
-    self,
-    ConfigurationSetName: str,
-    TlsPolicy: TlsPolicy = None,
-    SendingPoolName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TlsPolicy`:
+  [TlsPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#tlspolicy)
+- `SendingPoolName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_reputation_options
 
-Type annotations for `boto3.client("pinpoint-email").put_configuration_set_reputation_options` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_configuration_set_reputation_options`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options]
+Boto3 documentation:
+[PinpointEmail.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options)
 
-```python
-def put_configuration_set_reputation_options(
-    self,
-    ConfigurationSetName: str,
-    ReputationMetricsEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `ReputationMetricsEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_sending_options
 
-Type annotations for `boto3.client("pinpoint-email").put_configuration_set_sending_options` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_configuration_set_sending_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options]
+Boto3 documentation:
+[PinpointEmail.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options)
 
-```python
-def put_configuration_set_sending_options(
-    self,
-    ConfigurationSetName: str,
-    SendingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `SendingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_tracking_options
 
-Type annotations for `boto3.client("pinpoint-email").put_configuration_set_tracking_options` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_configuration_set_tracking_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options]
+Boto3 documentation:
+[PinpointEmail.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options)
 
-```python
-def put_configuration_set_tracking_options(
-    self,
-    ConfigurationSetName: str,
-    CustomRedirectDomain: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `CustomRedirectDomain`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_in_pool
 
-Type annotations for `boto3.client("pinpoint-email").put_dedicated_ip_in_pool` method.
+Type annotations for `boto3.client("pinpoint-email").put_dedicated_ip_in_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool]
+Boto3 documentation:
+[PinpointEmail.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool)
 
-```python
-def put_dedicated_ip_in_pool(
-    self,
-    Ip: str,
-    DestinationPoolName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+- `DestinationPoolName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_warmup_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_dedicated_ip_warmup_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_dedicated_ip_warmup_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes)
 
-```python
-def put_dedicated_ip_warmup_attributes(
-    self,
-    Ip: str,
-    WarmupPercentage: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+- `WarmupPercentage`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_deliverability_dashboard_option
 
-Type annotations for `boto3.client("pinpoint-email").put_deliverability_dashboard_option` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_deliverability_dashboard_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option]
+Boto3 documentation:
+[PinpointEmail.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option)
 
-```python
-def put_deliverability_dashboard_option(
-    self,
-    DashboardEnabled: bool,
-    SubscribedDomains: List["DomainDeliverabilityTrackingOptionTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DashboardEnabled`: `bool` *(required)*
+- `SubscribedDomains`:
+  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#domaindeliverabilitytrackingoptiontypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_dkim_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_email_identity_dkim_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_email_identity_dkim_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes)
 
-```python
-def put_email_identity_dkim_attributes(
-    self,
-    EmailIdentity: str,
-    SigningEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `SigningEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_feedback_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_email_identity_feedback_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_email_identity_feedback_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes)
 
-```python
-def put_email_identity_feedback_attributes(
-    self,
-    EmailIdentity: str,
-    EmailForwardingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `EmailForwardingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_mail_from_attributes
 
-Type annotations for `boto3.client("pinpoint-email").put_email_identity_mail_from_attributes` method.
+Type annotations for
+`boto3.client("pinpoint-email").put_email_identity_mail_from_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes]
+Boto3 documentation:
+[PinpointEmail.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes)
 
-```python
-def put_email_identity_mail_from_attributes(
-    self,
-    EmailIdentity: str,
-    MailFromDomain: str = None,
-    BehaviorOnMxFailure: BehaviorOnMxFailure = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `MailFromDomain`: `str`
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/literals.html#behavioronmxfailure)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_email
 
 Type annotations for `boto3.client("pinpoint-email").send_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email]
+Boto3 documentation:
+[PinpointEmail.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email)
 
-```python
-def send_email(
-    self,
-    Destination: DestinationTypeDef,
-    Content: EmailContentTypeDef,
-    FromEmailAddress: str = None,
-    ReplyToAddresses: List[str] = None,
-    FeedbackForwardingEmailAddress: str = None,
-    EmailTags: List[MessageTagTypeDef] = None,
-    ConfigurationSetName: str = None
-) -> SendEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#destinationtypedef)
+  *(required)*
+- `Content`:
+  [EmailContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#emailcontenttypedef)
+  *(required)*
+- `FromEmailAddress`: `str`
+- `ReplyToAddresses`: `List`\[`str`\]
+- `FeedbackForwardingEmailAddress`: `str`
+- `EmailTags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#sendemailresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("pinpoint-email").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource]
+Boto3 documentation:
+[PinpointEmail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("pinpoint-email").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource]
+Boto3 documentation:
+[PinpointEmail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-email").update_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-email").update_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointEmail.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination)
 
-```python
-def update_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#eventdestinationdefinitiontypedef)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator` method with overloads.
+Type annotations for `boto3.client("pinpoint-email").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_dedicated_ips")` -> [GetDedicatedIpsPaginator](./paginators.md#getdedicatedipspaginator)
-- `client.get_paginator("list_configuration_sets")` -> [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
-- `client.get_paginator("list_dedicated_ip_pools")` -> [ListDedicatedIpPoolsPaginator](./paginators.md#listdedicatedippoolspaginator)
-- `client.get_paginator("list_deliverability_test_reports")` -> [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
-- `client.get_paginator("list_email_identities")` -> [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)
-
-
+- `client.get_paginator("get_dedicated_ips")` ->
+  [GetDedicatedIpsPaginator](./paginators.md#getdedicatedipspaginator)
+- `client.get_paginator("list_configuration_sets")` ->
+  [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
+- `client.get_paginator("list_dedicated_ip_pools")` ->
+  [ListDedicatedIpPoolsPaginator](./paginators.md#listdedicatedippoolspaginator)
+- `client.get_paginator("list_deliverability_test_reports")` ->
+  [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
+- `client.get_paginator("list_email_identities")` ->
+  [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)

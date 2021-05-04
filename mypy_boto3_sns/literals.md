@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SNS](./README.md) > Literals
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Literals for boto3 SNS module](#literals-for-boto3-sns-module)
   - [ListEndpointsByPlatformApplicationPaginatorName](#listendpointsbyplatformapplicationpaginatorname)

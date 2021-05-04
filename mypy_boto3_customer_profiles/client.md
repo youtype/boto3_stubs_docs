@@ -1,9 +1,12 @@
 # CustomerProfilesClient for boto3 CustomerProfiles module
 
-> [Index](../README.md) > [CustomerProfiles](./README.md) > CustomerProfilesClient
+> [Index](../README.md) > [CustomerProfiles](./README.md) >
+> CustomerProfilesClient
 
-Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
-type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+Auto-generated documentation for
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+type annotations stubs module
+[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [CustomerProfilesClient for boto3 CustomerProfiles module](#customerprofilesclient-for-boto3-customerprofiles-module)
   - [CustomerProfilesClient](#customerprofilesclient)
@@ -55,12 +58,13 @@ def get_customer-profiles_client() -> CustomerProfilesClient:
     return boto3.client("customer-profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client)
+Boto3 documentation:
+[CustomerProfiles.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_customer_profiles.client import Exceptions
@@ -68,7 +72,6 @@ from mypy_boto3_customer_profiles.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -79,565 +82,593 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### add_profile_key
 
-Type annotations for `boto3.client("customer-profiles").add_profile_key` method.
+Type annotations for `boto3.client("customer-profiles").add_profile_key`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key]
+Boto3 documentation:
+[CustomerProfiles.Client.add_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)
 
-```python
-def add_profile_key(
-    self,
-    ProfileId: str,
-    KeyName: str,
-    Values: List[str],
-    DomainName: str
-) -> AddProfileKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProfileId`: `str` *(required)*
+- `KeyName`: `str` *(required)*
+- `Values`: `List`\[`str`\] *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[AddProfileKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addprofilekeyresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("customer-profiles").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.can_paginate]
+Boto3 documentation:
+[CustomerProfiles.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_domain
 
 Type annotations for `boto3.client("customer-profiles").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain]
+Boto3 documentation:
+[CustomerProfiles.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    DomainName: str,
-    DefaultExpirationDays: int,
-    DefaultEncryptionKey: str = None,
-    DeadLetterQueueUrl: str = None,
-    Matching: MatchingRequestTypeDef = None,
-    Tags: Dict[str, str] = None
-) -> CreateDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `DefaultExpirationDays`: `int` *(required)*
+- `DefaultEncryptionKey`: `str`
+- `DeadLetterQueueUrl`: `str`
+- `Matching`:
+  [MatchingRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingrequesttypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#createdomainresponsetypedef).
 
 ### create_profile
 
 Type annotations for `boto3.client("customer-profiles").create_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile]
+Boto3 documentation:
+[CustomerProfiles.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile)
 
-```python
-def create_profile(
-    self,
-    DomainName: str,
-    AccountNumber: str = None,
-    AdditionalInformation: str = None,
-    PartyType: PartyType = None,
-    BusinessName: str = None,
-    FirstName: str = None,
-    MiddleName: str = None,
-    LastName: str = None,
-    BirthDate: str = None,
-    Gender: Gender = None,
-    PhoneNumber: str = None,
-    MobilePhoneNumber: str = None,
-    HomePhoneNumber: str = None,
-    BusinessPhoneNumber: str = None,
-    EmailAddress: str = None,
-    PersonalEmailAddress: str = None,
-    BusinessEmailAddress: str = None,
-    Address: "AddressTypeDef" = None,
-    ShippingAddress: "AddressTypeDef" = None,
-    MailingAddress: "AddressTypeDef" = None,
-    BillingAddress: "AddressTypeDef" = None,
-    Attributes: Dict[str, str] = None
-) -> CreateProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AccountNumber`: `str`
+- `AdditionalInformation`: `str`
+- `PartyType`:
+  [PartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#partytype)
+- `BusinessName`: `str`
+- `FirstName`: `str`
+- `MiddleName`: `str`
+- `LastName`: `str`
+- `BirthDate`: `str`
+- `Gender`:
+  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#gender)
+- `PhoneNumber`: `str`
+- `MobilePhoneNumber`: `str`
+- `HomePhoneNumber`: `str`
+- `BusinessPhoneNumber`: `str`
+- `EmailAddress`: `str`
+- `PersonalEmailAddress`: `str`
+- `BusinessEmailAddress`: `str`
+- `Address`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `ShippingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `MailingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `BillingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `Attributes`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#createprofileresponsetypedef).
 
 ### delete_domain
 
 Type annotations for `boto3.client("customer-profiles").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    DomainName: str
-) -> DeleteDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deletedomainresponsetypedef).
 
 ### delete_integration
 
-Type annotations for `boto3.client("customer-profiles").delete_integration` method.
+Type annotations for `boto3.client("customer-profiles").delete_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration)
 
-```python
-def delete_integration(
-    self,
-    DomainName: str,
-    Uri: str
-) -> DeleteIntegrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Uri`: `str` *(required)*
+
+Returns
+[DeleteIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteintegrationresponsetypedef).
 
 ### delete_profile
 
 Type annotations for `boto3.client("customer-profiles").delete_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile)
 
-```python
-def delete_profile(
-    self,
-    ProfileId: str,
-    DomainName: str
-) -> DeleteProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProfileId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileresponsetypedef).
 
 ### delete_profile_key
 
-Type annotations for `boto3.client("customer-profiles").delete_profile_key` method.
+Type annotations for `boto3.client("customer-profiles").delete_profile_key`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key)
 
-```python
-def delete_profile_key(
-    self,
-    ProfileId: str,
-    KeyName: str,
-    Values: List[str],
-    DomainName: str
-) -> DeleteProfileKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProfileId`: `str` *(required)*
+- `KeyName`: `str` *(required)*
+- `Values`: `List`\[`str`\] *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteProfileKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofilekeyresponsetypedef).
 
 ### delete_profile_object
 
-Type annotations for `boto3.client("customer-profiles").delete_profile_object` method.
+Type annotations for `boto3.client("customer-profiles").delete_profile_object`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object)
 
-```python
-def delete_profile_object(
-    self,
-    ProfileId: str,
-    ProfileObjectUniqueKey: str,
-    ObjectTypeName: str,
-    DomainName: str
-) -> DeleteProfileObjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProfileId`: `str` *(required)*
+- `ProfileObjectUniqueKey`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[DeleteProfileObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileobjectresponsetypedef).
 
 ### delete_profile_object_type
 
-Type annotations for `boto3.client("customer-profiles").delete_profile_object_type` method.
+Type annotations for
+`boto3.client("customer-profiles").delete_profile_object_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type]
+Boto3 documentation:
+[CustomerProfiles.Client.delete_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type)
 
-```python
-def delete_profile_object_type(
-    self,
-    DomainName: str,
-    ObjectTypeName: str
-) -> DeleteProfileObjectTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+
+Returns
+[DeleteProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileobjecttyperesponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("customer-profiles").generate_presigned_url` method.
+Type annotations for `boto3.client("customer-profiles").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.generate_presigned_url]
+Boto3 documentation:
+[CustomerProfiles.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_domain
 
 Type annotations for `boto3.client("customer-profiles").get_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain]
+Boto3 documentation:
+[CustomerProfiles.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain)
 
-```python
-def get_domain(
-    self,
-    DomainName: str
-) -> GetDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[GetDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getdomainresponsetypedef).
 
 ### get_integration
 
-Type annotations for `boto3.client("customer-profiles").get_integration` method.
+Type annotations for `boto3.client("customer-profiles").get_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration]
+Boto3 documentation:
+[CustomerProfiles.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration)
 
-```python
-def get_integration(
-    self,
-    DomainName: str,
-    Uri: str
-) -> GetIntegrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Uri`: `str` *(required)*
+
+Returns
+[GetIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getintegrationresponsetypedef).
 
 ### get_matches
 
 Type annotations for `boto3.client("customer-profiles").get_matches` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches]
+Boto3 documentation:
+[CustomerProfiles.Client.get_matches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches)
 
-```python
-def get_matches(
-    self,
-    DomainName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetMatchesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetMatchesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getmatchesresponsetypedef).
 
 ### get_profile_object_type
 
-Type annotations for `boto3.client("customer-profiles").get_profile_object_type` method.
+Type annotations for
+`boto3.client("customer-profiles").get_profile_object_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type]
+Boto3 documentation:
+[CustomerProfiles.Client.get_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type)
 
-```python
-def get_profile_object_type(
-    self,
-    DomainName: str,
-    ObjectTypeName: str
-) -> GetProfileObjectTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+
+Returns
+[GetProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getprofileobjecttyperesponsetypedef).
 
 ### get_profile_object_type_template
 
-Type annotations for `boto3.client("customer-profiles").get_profile_object_type_template` method.
+Type annotations for
+`boto3.client("customer-profiles").get_profile_object_type_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template]
+Boto3 documentation:
+[CustomerProfiles.Client.get_profile_object_type_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template)
 
-```python
-def get_profile_object_type_template(
-    self,
-    TemplateId: str
-) -> GetProfileObjectTypeTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateId`: `str` *(required)*
+
+Returns
+[GetProfileObjectTypeTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getprofileobjecttypetemplateresponsetypedef).
 
 ### list_account_integrations
 
-Type annotations for `boto3.client("customer-profiles").list_account_integrations` method.
+Type annotations for
+`boto3.client("customer-profiles").list_account_integrations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations]
+Boto3 documentation:
+[CustomerProfiles.Client.list_account_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations)
 
-```python
-def list_account_integrations(
-    self,
-    Uri: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccountIntegrationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Uri`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccountIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listaccountintegrationsresponsetypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("customer-profiles").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains]
+Boto3 documentation:
+[CustomerProfiles.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listdomainsresponsetypedef).
 
 ### list_integrations
 
-Type annotations for `boto3.client("customer-profiles").list_integrations` method.
+Type annotations for `boto3.client("customer-profiles").list_integrations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations]
+Boto3 documentation:
+[CustomerProfiles.Client.list_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations)
 
-```python
-def list_integrations(
-    self,
-    DomainName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListIntegrationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listintegrationsresponsetypedef).
 
 ### list_profile_object_type_templates
 
-Type annotations for `boto3.client("customer-profiles").list_profile_object_type_templates` method.
+Type annotations for
+`boto3.client("customer-profiles").list_profile_object_type_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates]
+Boto3 documentation:
+[CustomerProfiles.Client.list_profile_object_type_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates)
 
-```python
-def list_profile_object_type_templates(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProfileObjectTypeTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProfileObjectTypeTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypetemplatesresponsetypedef).
 
 ### list_profile_object_types
 
-Type annotations for `boto3.client("customer-profiles").list_profile_object_types` method.
+Type annotations for
+`boto3.client("customer-profiles").list_profile_object_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types]
+Boto3 documentation:
+[CustomerProfiles.Client.list_profile_object_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types)
 
-```python
-def list_profile_object_types(
-    self,
-    DomainName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProfileObjectTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProfileObjectTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypesresponsetypedef).
 
 ### list_profile_objects
 
-Type annotations for `boto3.client("customer-profiles").list_profile_objects` method.
+Type annotations for `boto3.client("customer-profiles").list_profile_objects`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects]
+Boto3 documentation:
+[CustomerProfiles.Client.list_profile_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects)
 
-```python
-def list_profile_objects(
-    self,
-    DomainName: str,
-    ObjectTypeName: str,
-    ProfileId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProfileObjectsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+- `ProfileId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProfileObjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjectsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("customer-profiles").list_tags_for_resource` method.
+Type annotations for `boto3.client("customer-profiles").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource]
+Boto3 documentation:
+[CustomerProfiles.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### merge_profiles
 
 Type annotations for `boto3.client("customer-profiles").merge_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles]
+Boto3 documentation:
+[CustomerProfiles.Client.merge_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles)
 
-```python
-def merge_profiles(
-    self,
-    DomainName: str,
-    MainProfileId: str,
-    ProfileIdsToBeMerged: List[str],
-    FieldSourceProfileIds: FieldSourceProfileIdsTypeDef = None
-) -> MergeProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `MainProfileId`: `str` *(required)*
+- `ProfileIdsToBeMerged`: `List`\[`str`\] *(required)*
+- `FieldSourceProfileIds`:
+  [FieldSourceProfileIdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#fieldsourceprofileidstypedef)
+
+Returns
+[MergeProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#mergeprofilesresponsetypedef).
 
 ### put_integration
 
-Type annotations for `boto3.client("customer-profiles").put_integration` method.
+Type annotations for `boto3.client("customer-profiles").put_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration]
+Boto3 documentation:
+[CustomerProfiles.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration)
 
-```python
-def put_integration(
-    self,
-    DomainName: str,
-    ObjectTypeName: str,
-    Uri: str = None,
-    Tags: Dict[str, str] = None,
-    FlowDefinition: FlowDefinitionTypeDef = None
-) -> PutIntegrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+- `Uri`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `FlowDefinition`:
+  [FlowDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#flowdefinitiontypedef)
+
+Returns
+[PutIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putintegrationresponsetypedef).
 
 ### put_profile_object
 
-Type annotations for `boto3.client("customer-profiles").put_profile_object` method.
+Type annotations for `boto3.client("customer-profiles").put_profile_object`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object]
+Boto3 documentation:
+[CustomerProfiles.Client.put_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object)
 
-```python
-def put_profile_object(
-    self,
-    ObjectTypeName: str,
-    Object: str,
-    DomainName: str
-) -> PutProfileObjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ObjectTypeName`: `str` *(required)*
+- `Object`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[PutProfileObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putprofileobjectresponsetypedef).
 
 ### put_profile_object_type
 
-Type annotations for `boto3.client("customer-profiles").put_profile_object_type` method.
+Type annotations for
+`boto3.client("customer-profiles").put_profile_object_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type]
+Boto3 documentation:
+[CustomerProfiles.Client.put_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type)
 
-```python
-def put_profile_object_type(
-    self,
-    DomainName: str,
-    ObjectTypeName: str,
-    Description: str,
-    TemplateId: str = None,
-    ExpirationDays: int = None,
-    EncryptionKey: str = None,
-    AllowProfileCreation: bool = None,
-    Fields: Dict[str, "ObjectTypeFieldTypeDef"] = None,
-    Keys: Dict[str, List["ObjectTypeKeyTypeDef"]] = None,
-    Tags: Dict[str, str] = None
-) -> PutProfileObjectTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ObjectTypeName`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `TemplateId`: `str`
+- `ExpirationDays`: `int`
+- `EncryptionKey`: `str`
+- `AllowProfileCreation`: `bool`
+- `Fields`: `Dict`\[`str`,
+  [ObjectTypeFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypefieldtypedef)\]
+- `Keys`: `Dict`\[`str`,
+  `List`\[[ObjectTypeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypekeytypedef)\]\]
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[PutProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putprofileobjecttyperesponsetypedef).
 
 ### search_profiles
 
-Type annotations for `boto3.client("customer-profiles").search_profiles` method.
+Type annotations for `boto3.client("customer-profiles").search_profiles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles]
+Boto3 documentation:
+[CustomerProfiles.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
 
-```python
-def search_profiles(
-    self,
-    DomainName: str,
-    KeyName: str,
-    Values: List[str],
-    NextToken: str = None,
-    MaxResults: int = None
-) -> SearchProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `KeyName`: `str` *(required)*
+- `Values`: `List`\[`str`\] *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[SearchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#searchprofilesresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("customer-profiles").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource]
+Boto3 documentation:
+[CustomerProfiles.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("customer-profiles").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource]
+Boto3 documentation:
+[CustomerProfiles.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_domain
 
 Type annotations for `boto3.client("customer-profiles").update_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain]
+Boto3 documentation:
+[CustomerProfiles.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain)
 
-```python
-def update_domain(
-    self,
-    DomainName: str,
-    DefaultExpirationDays: int = None,
-    DefaultEncryptionKey: str = None,
-    DeadLetterQueueUrl: str = None,
-    Matching: MatchingRequestTypeDef = None,
-    Tags: Dict[str, str] = None
-) -> UpdateDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `DefaultExpirationDays`: `int`
+- `DefaultEncryptionKey`: `str`
+- `DeadLetterQueueUrl`: `str`
+- `Matching`:
+  [MatchingRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingrequesttypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[UpdateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updatedomainresponsetypedef).
 
 ### update_profile
 
 Type annotations for `boto3.client("customer-profiles").update_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile]
+Boto3 documentation:
+[CustomerProfiles.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile)
 
-```python
-def update_profile(
-    self,
-    DomainName: str,
-    ProfileId: str,
-    AdditionalInformation: str = None,
-    AccountNumber: str = None,
-    PartyType: PartyType = None,
-    BusinessName: str = None,
-    FirstName: str = None,
-    MiddleName: str = None,
-    LastName: str = None,
-    BirthDate: str = None,
-    Gender: Gender = None,
-    PhoneNumber: str = None,
-    MobilePhoneNumber: str = None,
-    HomePhoneNumber: str = None,
-    BusinessPhoneNumber: str = None,
-    EmailAddress: str = None,
-    PersonalEmailAddress: str = None,
-    BusinessEmailAddress: str = None,
-    Address: UpdateAddressTypeDef = None,
-    ShippingAddress: UpdateAddressTypeDef = None,
-    MailingAddress: UpdateAddressTypeDef = None,
-    BillingAddress: UpdateAddressTypeDef = None,
-    Attributes: Dict[str, str] = None
-) -> UpdateProfileResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `DomainName`: `str` *(required)*
+- `ProfileId`: `str` *(required)*
+- `AdditionalInformation`: `str`
+- `AccountNumber`: `str`
+- `PartyType`:
+  [PartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#partytype)
+- `BusinessName`: `str`
+- `FirstName`: `str`
+- `MiddleName`: `str`
+- `LastName`: `str`
+- `BirthDate`: `str`
+- `Gender`:
+  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#gender)
+- `PhoneNumber`: `str`
+- `MobilePhoneNumber`: `str`
+- `HomePhoneNumber`: `str`
+- `BusinessPhoneNumber`: `str`
+- `EmailAddress`: `str`
+- `PersonalEmailAddress`: `str`
+- `BusinessEmailAddress`: `str`
+- `Address`:
+  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
+- `ShippingAddress`:
+  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
+- `MailingAddress`:
+  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
+- `BillingAddress`:
+  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
+- `Attributes`: `Dict`\[`str`, `str`\]
 
-
+Returns
+[UpdateProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateprofileresponsetypedef).

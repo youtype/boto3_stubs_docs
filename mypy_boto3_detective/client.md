@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Detective](./README.md) > DetectiveClient
 
-Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
-type annotations stubs module [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
+Auto-generated documentation for
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+type annotations stubs module
+[mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [DetectiveClient for boto3 Detective module](#detectiveclient-for-boto3-detective-module)
   - [DetectiveClient](#detectiveclient)
@@ -40,12 +42,13 @@ def get_detective_client() -> DetectiveClient:
     return boto3.client("detective")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
+Boto3 documentation:
+[Detective.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_detective.client import Exceptions
@@ -53,7 +56,6 @@ from mypy_boto3_detective.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -64,262 +66,242 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### accept_invitation
 
 Type annotations for `boto3.client("detective").accept_invitation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation]
+Boto3 documentation:
+[Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
 
-```python
-def accept_invitation(
-    self,
-    GraphArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("detective").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate]
+Boto3 documentation:
+[Detective.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_graph
 
 Type annotations for `boto3.client("detective").create_graph` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph]
+Boto3 documentation:
+[Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
 
-```python
-def create_graph(
-    self,
-    Tags: Dict[str, str] = None
-) -> CreateGraphResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateGraphResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#creategraphresponsetypedef).
 
 ### create_members
 
 Type annotations for `boto3.client("detective").create_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members]
+Boto3 documentation:
+[Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
 
-```python
-def create_members(
-    self,
-    GraphArn: str,
-    Accounts: List[AccountTypeDef],
-    Message: str = None,
-    DisableEmailNotification: bool = None
-) -> CreateMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
+- `Accounts`:
+  `List`\[[AccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#accounttypedef)\]
+  *(required)*
+- `Message`: `str`
+- `DisableEmailNotification`: `bool`
+
+Returns
+[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#createmembersresponsetypedef).
 
 ### delete_graph
 
 Type annotations for `boto3.client("detective").delete_graph` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph]
+Boto3 documentation:
+[Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
 
-```python
-def delete_graph(
-    self,
-    GraphArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
 
 ### delete_members
 
 Type annotations for `boto3.client("detective").delete_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members]
+Boto3 documentation:
+[Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
 
-```python
-def delete_members(
-    self,
-    GraphArn: str,
-    AccountIds: List[str]
-) -> DeleteMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#deletemembersresponsetypedef).
 
 ### disassociate_membership
 
-Type annotations for `boto3.client("detective").disassociate_membership` method.
+Type annotations for `boto3.client("detective").disassociate_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership]
+Boto3 documentation:
+[Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
 
-```python
-def disassociate_membership(
-    self,
-    GraphArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("detective").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url]
+Boto3 documentation:
+[Detective.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_members
 
 Type annotations for `boto3.client("detective").get_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members]
+Boto3 documentation:
+[Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
 
-```python
-def get_members(
-    self,
-    GraphArn: str,
-    AccountIds: List[str]
-) -> GetMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#getmembersresponsetypedef).
 
 ### list_graphs
 
 Type annotations for `boto3.client("detective").list_graphs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs]
+Boto3 documentation:
+[Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
 
-```python
-def list_graphs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListGraphsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListGraphsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listgraphsresponsetypedef).
 
 ### list_invitations
 
 Type annotations for `boto3.client("detective").list_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations]
+Boto3 documentation:
+[Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
 
-```python
-def list_invitations(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listinvitationsresponsetypedef).
 
 ### list_members
 
 Type annotations for `boto3.client("detective").list_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members]
+Boto3 documentation:
+[Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
 
-```python
-def list_members(
-    self,
-    GraphArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listmembersresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("detective").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource]
+Boto3 documentation:
+[Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### reject_invitation
 
 Type annotations for `boto3.client("detective").reject_invitation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation]
+Boto3 documentation:
+[Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
 
-```python
-def reject_invitation(
-    self,
-    GraphArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
 
 ### start_monitoring_member
 
-Type annotations for `boto3.client("detective").start_monitoring_member` method.
+Type annotations for `boto3.client("detective").start_monitoring_member`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member]
+Boto3 documentation:
+[Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
 
-```python
-def start_monitoring_member(
-    self,
-    GraphArn: str,
-    AccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GraphArn`: `str` *(required)*
+- `AccountId`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("detective").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource]
+Boto3 documentation:
+[Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("detective").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource]
+Boto3 documentation:
+[Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

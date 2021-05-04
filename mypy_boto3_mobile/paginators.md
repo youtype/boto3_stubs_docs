@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Mobile](./README.md) > Paginators
 
-Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+Auto-generated documentation for
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+type annotations stubs module
+[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [Paginators for boto3 Mobile module](#paginators-for-boto3-mobile-module)
   - [ListBundlesPaginator](#listbundlespaginator)
@@ -22,16 +24,17 @@ def get_list_bundles_paginator() -> ListBundlesPaginator:
     return boto3.client("mobile").get_paginator("list_bundles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListBundles)
+Boto3 documentation:
+[Mobile.Paginator.ListBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListBundles)
 
-```python
-class ListBundlesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBundlesResultTypeDef]:
-        pass
-```
+Arguments for `ListBundlesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#paginatorconfigtypedef)
+
+`ListBundlesPaginator.paginate` returns
+`Iterator`\[[ListBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listbundlesresulttypedef)\].
+
 ## ListProjectsPaginator
 
 Type annotations for `boto3.client("mobile").get_paginator("list_projects")`.
@@ -45,13 +48,13 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("mobile").get_paginator("list_projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListProjects)
+Boto3 documentation:
+[Mobile.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListProjects)
 
-```python
-class ListProjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectsResultTypeDef]:
-        pass
-```
+Arguments for `ListProjectsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectsPaginator.paginate` returns
+`Iterator`\[[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listprojectsresulttypedef)\].

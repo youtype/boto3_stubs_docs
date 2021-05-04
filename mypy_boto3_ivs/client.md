@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IVS](./README.md) > IVSClient
 
-Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+Auto-generated documentation for
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+type annotations stubs module
+[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [IVSClient for boto3 IVS module](#ivsclient-for-boto3-ivs-module)
   - [IVSClient](#ivsclient)
@@ -52,12 +54,13 @@ def get_ivs_client() -> IVSClient:
     return boto3.client("ivs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
+Boto3 documentation:
+[IVS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ivs.client import Exceptions
@@ -65,7 +68,6 @@ from mypy_boto3_ivs.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -81,443 +83,433 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### batch_get_channel
 
 Type annotations for `boto3.client("ivs").batch_get_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel]
+Boto3 documentation:
+[IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel)
 
-```python
-def batch_get_channel(
-    self,
-    arns: List[str]
-) -> BatchGetChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arns`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batchgetchannelresponsetypedef).
 
 ### batch_get_stream_key
 
 Type annotations for `boto3.client("ivs").batch_get_stream_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key]
+Boto3 documentation:
+[IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
 
-```python
-def batch_get_stream_key(
-    self,
-    arns: List[str]
-) -> BatchGetStreamKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arns`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batchgetstreamkeyresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("ivs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.can_paginate]
+Boto3 documentation:
+[IVS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_channel
 
 Type annotations for `boto3.client("ivs").create_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel]
+Boto3 documentation:
+[IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel)
 
-```python
-def create_channel(
-    self,
-    name: str = None,
-    latencyMode: ChannelLatencyMode = None,
-    type: ChannelType = None,
-    authorized: bool = None,
-    recordingConfigurationArn: str = None,
-    tags: Dict[str, str] = None
-) -> CreateChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str`
+- `latencyMode`:
+  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
+- `type`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channeltype)
+- `authorized`: `bool`
+- `recordingConfigurationArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createchannelresponsetypedef).
 
 ### create_recording_configuration
 
-Type annotations for `boto3.client("ivs").create_recording_configuration` method.
+Type annotations for `boto3.client("ivs").create_recording_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration]
+Boto3 documentation:
+[IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration)
 
-```python
-def create_recording_configuration(
-    self,
-    destinationConfiguration: "DestinationConfigurationTypeDef",
-    name: str = None,
-    tags: Dict[str, str] = None
-) -> CreateRecordingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `destinationConfiguration`:
+  [DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#destinationconfigurationtypedef)
+  *(required)*
+- `name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRecordingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createrecordingconfigurationresponsetypedef).
 
 ### create_stream_key
 
 Type annotations for `boto3.client("ivs").create_stream_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key]
+Boto3 documentation:
+[IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key)
 
-```python
-def create_stream_key(
-    self,
-    channelArn: str,
-    tags: Dict[str, str] = None
-) -> CreateStreamKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `channelArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createstreamkeyresponsetypedef).
 
 ### delete_channel
 
 Type annotations for `boto3.client("ivs").delete_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel]
+Boto3 documentation:
+[IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel)
 
-```python
-def delete_channel(
-    self,
-    arn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
 
 ### delete_playback_key_pair
 
 Type annotations for `boto3.client("ivs").delete_playback_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair]
+Boto3 documentation:
+[IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
 
-```python
-def delete_playback_key_pair(
-    self,
-    arn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_recording_configuration
 
-Type annotations for `boto3.client("ivs").delete_recording_configuration` method.
+Type annotations for `boto3.client("ivs").delete_recording_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration]
+Boto3 documentation:
+[IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
 
-```python
-def delete_recording_configuration(
-    self,
-    arn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
 
 ### delete_stream_key
 
 Type annotations for `boto3.client("ivs").delete_stream_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key]
+Boto3 documentation:
+[IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key)
 
-```python
-def delete_stream_key(
-    self,
-    arn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ivs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.generate_presigned_url]
+Boto3 documentation:
+[IVS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_channel
 
 Type annotations for `boto3.client("ivs").get_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel]
+Boto3 documentation:
+[IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel)
 
-```python
-def get_channel(
-    self,
-    arn: str
-) -> GetChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns
+[GetChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getchannelresponsetypedef).
 
 ### get_playback_key_pair
 
 Type annotations for `boto3.client("ivs").get_playback_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair]
+Boto3 documentation:
+[IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
 
-```python
-def get_playback_key_pair(
-    self,
-    arn: str
-) -> GetPlaybackKeyPairResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns
+[GetPlaybackKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getplaybackkeypairresponsetypedef).
 
 ### get_recording_configuration
 
 Type annotations for `boto3.client("ivs").get_recording_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration]
+Boto3 documentation:
+[IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration)
 
-```python
-def get_recording_configuration(
-    self,
-    arn: str
-) -> GetRecordingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns
+[GetRecordingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getrecordingconfigurationresponsetypedef).
 
 ### get_stream
 
 Type annotations for `boto3.client("ivs").get_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream]
+Boto3 documentation:
+[IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream)
 
-```python
-def get_stream(
-    self,
-    channelArn: str
-) -> GetStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `channelArn`: `str` *(required)*
+
+Returns
+[GetStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getstreamresponsetypedef).
 
 ### get_stream_key
 
 Type annotations for `boto3.client("ivs").get_stream_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key]
+Boto3 documentation:
+[IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key)
 
-```python
-def get_stream_key(
-    self,
-    arn: str
-) -> GetStreamKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns
+[GetStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getstreamkeyresponsetypedef).
 
 ### import_playback_key_pair
 
 Type annotations for `boto3.client("ivs").import_playback_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair]
+Boto3 documentation:
+[IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
 
-```python
-def import_playback_key_pair(
-    self,
-    publicKeyMaterial: str,
-    name: str = None,
-    tags: Dict[str, str] = None
-) -> ImportPlaybackKeyPairResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `publicKeyMaterial`: `str` *(required)*
+- `name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ImportPlaybackKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#importplaybackkeypairresponsetypedef).
 
 ### list_channels
 
 Type annotations for `boto3.client("ivs").list_channels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels]
+Boto3 documentation:
+[IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels)
 
-```python
-def list_channels(
-    self,
-    filterByName: str = None,
-    filterByRecordingConfigurationArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filterByName`: `str`
+- `filterByRecordingConfigurationArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listchannelsresponsetypedef).
 
 ### list_playback_key_pairs
 
 Type annotations for `boto3.client("ivs").list_playback_key_pairs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs]
+Boto3 documentation:
+[IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
 
-```python
-def list_playback_key_pairs(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPlaybackKeyPairsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPlaybackKeyPairsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listplaybackkeypairsresponsetypedef).
 
 ### list_recording_configurations
 
-Type annotations for `boto3.client("ivs").list_recording_configurations` method.
+Type annotations for `boto3.client("ivs").list_recording_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations]
+Boto3 documentation:
+[IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations)
 
-```python
-def list_recording_configurations(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListRecordingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRecordingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listrecordingconfigurationsresponsetypedef).
 
 ### list_stream_keys
 
 Type annotations for `boto3.client("ivs").list_stream_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys]
+Boto3 documentation:
+[IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys)
 
-```python
-def list_stream_keys(
-    self,
-    channelArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListStreamKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `channelArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListStreamKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#liststreamkeysresponsetypedef).
 
 ### list_streams
 
 Type annotations for `boto3.client("ivs").list_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams]
+Boto3 documentation:
+[IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams)
 
-```python
-def list_streams(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListStreamsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#liststreamsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("ivs").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource]
+Boto3 documentation:
+[IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_metadata
 
 Type annotations for `boto3.client("ivs").put_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata]
+Boto3 documentation:
+[IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata)
 
-```python
-def put_metadata(
-    self,
-    channelArn: str,
-    metadata: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `channelArn`: `str` *(required)*
+- `metadata`: `str` *(required)*
 
 ### stop_stream
 
 Type annotations for `boto3.client("ivs").stop_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream]
+Boto3 documentation:
+[IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream)
 
-```python
-def stop_stream(
-    self,
-    channelArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `channelArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("ivs").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource]
+Boto3 documentation:
+[IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("ivs").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource]
+Boto3 documentation:
+[IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_channel
 
 Type annotations for `boto3.client("ivs").update_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel]
+Boto3 documentation:
+[IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel)
 
-```python
-def update_channel(
-    self,
-    arn: str,
-    name: str = None,
-    latencyMode: ChannelLatencyMode = None,
-    type: ChannelType = None,
-    authorized: bool = None,
-    recordingConfigurationArn: str = None
-) -> UpdateChannelResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `arn`: `str` *(required)*
+- `name`: `str`
+- `latencyMode`:
+  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
+- `type`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channeltype)
+- `authorized`: `bool`
+- `recordingConfigurationArn`: `str`
 
+Returns
+[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#updatechannelresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("ivs").get_paginator` method with overloads.
 
-- `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
-- `client.get_paginator("list_playback_key_pairs")` -> [ListPlaybackKeyPairsPaginator](./paginators.md#listplaybackkeypairspaginator)
-- `client.get_paginator("list_recording_configurations")` -> [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
-- `client.get_paginator("list_stream_keys")` -> [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
-- `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
-
-
+- `client.get_paginator("list_channels")` ->
+  [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_playback_key_pairs")` ->
+  [ListPlaybackKeyPairsPaginator](./paginators.md#listplaybackkeypairspaginator)
+- `client.get_paginator("list_recording_configurations")` ->
+  [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
+- `client.get_paginator("list_stream_keys")` ->
+  [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
+- `client.get_paginator("list_streams")` ->
+  [ListStreamsPaginator](./paginators.md#liststreamspaginator)

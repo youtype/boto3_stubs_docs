@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GlueDataBrew](./README.md) > Paginators
 
-Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+Auto-generated documentation for
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+type annotations stubs module
+[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Paginators for boto3 GlueDataBrew module](#paginators-for-boto3-gluedatabrew-module)
   - [ListDatasetsPaginator](#listdatasetspaginator)
@@ -27,16 +29,17 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("databrew").get_paginator("list_datasets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
 
-```python
-class ListDatasetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDatasetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDatasetsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListDatasetsPaginator.paginate` returns
+`Iterator`\[[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listdatasetsresponsetypedef)\].
+
 ## ListJobRunsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_job_runs")`.
@@ -50,17 +53,18 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return boto3.client("databrew").get_paginator("list_job_runs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
 
-```python
-class ListJobRunsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Name: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobRunsResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobRunsPaginator.paginate` method:
+
+- `Name`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListJobRunsPaginator.paginate` returns
+`Iterator`\[[ListJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listjobrunsresponsetypedef)\].
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_jobs")`.
@@ -74,18 +78,19 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("databrew").get_paginator("list_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
 
-```python
-class ListJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DatasetName: str = None,
-        ProjectName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobsPaginator.paginate` method:
+
+- `DatasetName`: `str`
+- `ProjectName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsPaginator.paginate` returns
+`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listjobsresponsetypedef)\].
+
 ## ListProjectsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_projects")`.
@@ -99,19 +104,21 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("databrew").get_paginator("list_projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
 
-```python
-class ListProjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectsResponseTypeDef]:
-        pass
-```
+Arguments for `ListProjectsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectsPaginator.paginate` returns
+`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listprojectsresponsetypedef)\].
+
 ## ListRecipeVersionsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_recipe_versions")`.
+Type annotations for
+`boto3.client("databrew").get_paginator("list_recipe_versions")`.
 
 Can be used directly:
 
@@ -122,17 +129,18 @@ def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
     return boto3.client("databrew").get_paginator("list_recipe_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListRecipeVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
 
-```python
-class ListRecipeVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Name: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRecipeVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListRecipeVersionsPaginator.paginate` method:
+
+- `Name`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListRecipeVersionsPaginator.paginate` returns
+`Iterator`\[[ListRecipeVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listrecipeversionsresponsetypedef)\].
+
 ## ListRecipesPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_recipes")`.
@@ -146,20 +154,22 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
     return boto3.client("databrew").get_paginator("list_recipes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListRecipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
 
-```python
-class ListRecipesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RecipeVersion: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRecipesResponseTypeDef]:
-        pass
-```
+Arguments for `ListRecipesPaginator.paginate` method:
+
+- `RecipeVersion`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListRecipesPaginator.paginate` returns
+`Iterator`\[[ListRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listrecipesresponsetypedef)\].
+
 ## ListSchedulesPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_schedules")`.
+Type annotations for
+`boto3.client("databrew").get_paginator("list_schedules")`.
 
 Can be used directly:
 
@@ -170,14 +180,14 @@ def get_list_schedules_paginator() -> ListSchedulesPaginator:
     return boto3.client("databrew").get_paginator("list_schedules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
+Boto3 documentation:
+[GlueDataBrew.Paginator.ListSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
 
-```python
-class ListSchedulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        JobName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSchedulesResponseTypeDef]:
-        pass
-```
+Arguments for `ListSchedulesPaginator.paginate` method:
+
+- `JobName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#paginatorconfigtypedef)
+
+`ListSchedulesPaginator.paginate` returns
+`Iterator`\[[ListSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listschedulesresponsetypedef)\].

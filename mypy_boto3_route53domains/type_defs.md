@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Structures
 
-Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+Auto-generated documentation for
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+type annotations stubs module
+[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Typed dictionaries for boto3 Route53Domains module](#typed-dictionaries-for-boto3-route53domains-module)
   - [AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](#acceptdomaintransferfromanotherawsaccountresponsetypedef)
@@ -47,12 +49,9 @@ type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/proje
 from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OperationId`: `str`
 
+- `OperationId`: `str`
 
 ## BillingRecordTypeDef
 
@@ -60,16 +59,14 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import BillingRecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainName`: `str`
-- `Operation`: `OperationType`
+- `Operation`:
+  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#operationtype)
 - `InvoiceId`: `str`
 - `BillDate`: `datetime`
 - `Price`: `float`
-
 
 ## CancelDomainTransferToAnotherAwsAccountResponseTypeDef
 
@@ -77,12 +74,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OperationId`: `str`
 
+- `OperationId`: `str`
 
 ## CheckDomainAvailabilityResponseTypeDef
 
@@ -90,12 +84,10 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityResponseTypeDef
 ```
 
-
 Required fields:
-- `Availability`: `DomainAvailability`
 
-
-
+- `Availability`:
+  [DomainAvailability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#domainavailability)
 
 ## CheckDomainTransferabilityResponseTypeDef
 
@@ -103,12 +95,10 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityResponseTypeDef
 ```
 
-
 Required fields:
-- `Transferability`: `"DomainTransferabilityTypeDef"`
 
-
-
+- `Transferability`:
+  [DomainTransferabilityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#domaintransferabilitytypedef)
 
 ## ContactDetailTypeDef
 
@@ -116,25 +106,25 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import ContactDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FirstName`: `str`
 - `LastName`: `str`
-- `ContactType`: `ContactType`
+- `ContactType`:
+  [ContactType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#contacttype)
 - `OrganizationName`: `str`
 - `AddressLine1`: `str`
 - `AddressLine2`: `str`
 - `City`: `str`
 - `State`: `str`
-- `CountryCode`: `CountryCode`
+- `CountryCode`:
+  [CountryCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#countrycode)
 - `ZipCode`: `str`
 - `PhoneNumber`: `str`
 - `Email`: `str`
 - `Fax`: `str`
-- `ExtraParams`: `List["ExtraParamTypeDef"]`
-
+- `ExtraParams`:
+  `List`\[[ExtraParamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#extraparamtypedef)\]
 
 ## DisableDomainTransferLockResponseTypeDef
 
@@ -142,12 +132,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## DomainSuggestionTypeDef
 
@@ -155,13 +142,10 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import DomainSuggestionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainName`: `str`
 - `Availability`: `str`
-
 
 ## DomainSummaryTypeDef
 
@@ -169,17 +153,15 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import DomainSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 
-
-
 Optional fields:
+
 - `AutoRenew`: `bool`
 - `TransferLock`: `bool`
 - `Expiry`: `datetime`
-
 
 ## DomainTransferabilityTypeDef
 
@@ -187,12 +169,10 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import DomainTransferabilityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Transferable`: `Transferable`
 
+- `Transferable`:
+  [Transferable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#transferable)
 
 ## EnableDomainTransferLockResponseTypeDef
 
@@ -200,12 +180,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## ExtraParamTypeDef
 
@@ -213,13 +190,11 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import ExtraParamTypeDef
 ```
 
-
 Required fields:
-- `Name`: `ExtraParamName`
+
+- `Name`:
+  [ExtraParamName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#extraparamname)
 - `Value`: `str`
-
-
-
 
 ## GetContactReachabilityStatusResponseTypeDef
 
@@ -227,13 +202,11 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domainName`: `str`
-- `status`: `ReachabilityStatus`
 
+- `domainName`: `str`
+- `status`:
+  [ReachabilityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#reachabilitystatus)
 
 ## GetDomainDetailResponseTypeDef
 
@@ -241,17 +214,20 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import GetDomainDetailResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
-- `Nameservers`: `List["NameserverTypeDef"]`
-- `AdminContact`: `"ContactDetailTypeDef"`
-- `RegistrantContact`: `"ContactDetailTypeDef"`
-- `TechContact`: `"ContactDetailTypeDef"`
-
-
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#nameservertypedef)\]
+- `AdminContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `RegistrantContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `TechContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
 
 Optional fields:
+
 - `AutoRenew`: `bool`
 - `AdminPrivacy`: `bool`
 - `RegistrantPrivacy`: `bool`
@@ -267,8 +243,7 @@ Optional fields:
 - `ExpirationDate`: `datetime`
 - `Reseller`: `str`
 - `DnsSec`: `str`
-- `StatusList`: `List[str]`
-
+- `StatusList`: `List`\[`str`\]
 
 ## GetDomainSuggestionsResponseTypeDef
 
@@ -276,12 +251,10 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SuggestionsList`: `List["DomainSuggestionTypeDef"]`
 
+- `SuggestionsList`:
+  `List`\[[DomainSuggestionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#domainsuggestiontypedef)\]
 
 ## GetOperationDetailResponseTypeDef
 
@@ -289,17 +262,16 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import GetOperationDetailResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OperationId`: `str`
-- `Status`: `OperationStatus`
+- `Status`:
+  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#operationstatus)
 - `Message`: `str`
 - `DomainName`: `str`
-- `Type`: `OperationType`
+- `Type`:
+  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#operationtype)
 - `SubmittedDate`: `datetime`
-
 
 ## ListDomainsResponseTypeDef
 
@@ -307,15 +279,14 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import ListDomainsResponseTypeDef
 ```
 
-
 Required fields:
-- `Domains`: `List["DomainSummaryTypeDef"]`
 
-
+- `Domains`:
+  `List`\[[DomainSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#domainsummarytypedef)\]
 
 Optional fields:
-- `NextPageMarker`: `str`
 
+- `NextPageMarker`: `str`
 
 ## ListOperationsResponseTypeDef
 
@@ -323,15 +294,14 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import ListOperationsResponseTypeDef
 ```
 
-
 Required fields:
-- `Operations`: `List["OperationSummaryTypeDef"]`
 
-
+- `Operations`:
+  `List`\[[OperationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#operationsummarytypedef)\]
 
 Optional fields:
-- `NextPageMarker`: `str`
 
+- `NextPageMarker`: `str`
 
 ## ListTagsForDomainResponseTypeDef
 
@@ -339,12 +309,10 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import ListTagsForDomainResponseTypeDef
 ```
 
-
 Required fields:
-- `TagList`: `List["TagTypeDef"]`
 
-
-
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#tagtypedef)\]
 
 ## NameserverTypeDef
 
@@ -352,15 +320,13 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import NameserverTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `GlueIps`: `List[str]`
 
+- `GlueIps`: `List`\[`str`\]
 
 ## OperationSummaryTypeDef
 
@@ -368,15 +334,14 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import OperationSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-- `Status`: `OperationStatus`
-- `Type`: `OperationType`
+- `Status`:
+  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#operationstatus)
+- `Type`:
+  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/literals.html#operationtype)
 - `SubmittedDate`: `datetime`
-
-
-
 
 ## PaginatorConfigTypeDef
 
@@ -384,14 +349,11 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RegisterDomainResponseTypeDef
 
@@ -399,12 +361,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import RegisterDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
 
@@ -412,12 +371,9 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OperationId`: `str`
 
+- `OperationId`: `str`
 
 ## RenewDomainResponseTypeDef
 
@@ -425,12 +381,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import RenewDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## ResendContactReachabilityEmailResponseTypeDef
 
@@ -438,14 +391,11 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `domainName`: `str`
 - `emailAddress`: `str`
 - `isAlreadyVerified`: `bool`
-
 
 ## RetrieveDomainAuthCodeResponseTypeDef
 
@@ -453,12 +403,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `AuthCode`: `str`
-
-
-
 
 ## TagTypeDef
 
@@ -466,13 +413,10 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## TransferDomainResponseTypeDef
 
@@ -480,12 +424,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import TransferDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## TransferDomainToAnotherAwsAccountResponseTypeDef
 
@@ -493,13 +434,10 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OperationId`: `str`
 - `Password`: `str`
-
 
 ## UpdateDomainContactPrivacyResponseTypeDef
 
@@ -507,12 +445,9 @@ Optional fields:
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## UpdateDomainContactResponseTypeDef
 
@@ -520,12 +455,9 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## UpdateDomainNameserversResponseTypeDef
 
@@ -533,12 +465,9 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversResponseTypeDef
 ```
 
-
 Required fields:
+
 - `OperationId`: `str`
-
-
-
 
 ## ViewBillingResponseTypeDef
 
@@ -546,10 +475,8 @@ Required fields:
 from mypy_boto3_route53domains.type_defs import ViewBillingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextPageMarker`: `str`
-- `BillingRecords`: `List["BillingRecordTypeDef"]`
 
+- `NextPageMarker`: `str`
+- `BillingRecords`:
+  `List`\[[BillingRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#billingrecordtypedef)\]

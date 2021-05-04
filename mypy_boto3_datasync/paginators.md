@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataSync](./README.md) > Paginators
 
-Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+Auto-generated documentation for
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+type annotations stubs module
+[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Paginators for boto3 DataSync module](#paginators-for-boto3-datasync-module)
   - [ListAgentsPaginator](#listagentspaginator)
@@ -25,19 +27,21 @@ def get_list_agents_paginator() -> ListAgentsPaginator:
     return boto3.client("datasync").get_paginator("list_agents")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
+Boto3 documentation:
+[DataSync.Paginator.ListAgents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
-```python
-class ListAgentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAgentsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAgentsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#paginatorconfigtypedef)
+
+`ListAgentsPaginator.paginate` returns
+`Iterator`\[[ListAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listagentsresponsetypedef)\].
+
 ## ListLocationsPaginator
 
-Type annotations for `boto3.client("datasync").get_paginator("list_locations")`.
+Type annotations for
+`boto3.client("datasync").get_paginator("list_locations")`.
 
 Can be used directly:
 
@@ -48,20 +52,23 @@ def get_list_locations_paginator() -> ListLocationsPaginator:
     return boto3.client("datasync").get_paginator("list_locations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
+Boto3 documentation:
+[DataSync.Paginator.ListLocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
-```python
-class ListLocationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[LocationFilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListLocationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListLocationsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[LocationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#locationfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#paginatorconfigtypedef)
+
+`ListLocationsPaginator.paginate` returns
+`Iterator`\[[ListLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listlocationsresponsetypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("datasync").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("datasync").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -72,20 +79,22 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("datasync").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
+Boto3 documentation:
+[DataSync.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtagsforresourceresponsetypedef)\].
+
 ## ListTaskExecutionsPaginator
 
-Type annotations for `boto3.client("datasync").get_paginator("list_task_executions")`.
+Type annotations for
+`boto3.client("datasync").get_paginator("list_task_executions")`.
 
 Can be used directly:
 
@@ -96,17 +105,18 @@ def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
     return boto3.client("datasync").get_paginator("list_task_executions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
+Boto3 documentation:
+[DataSync.Paginator.ListTaskExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
-```python
-class ListTaskExecutionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TaskArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTaskExecutionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTaskExecutionsPaginator.paginate` method:
+
+- `TaskArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#paginatorconfigtypedef)
+
+`ListTaskExecutionsPaginator.paginate` returns
+`Iterator`\[[ListTaskExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtaskexecutionsresponsetypedef)\].
+
 ## ListTasksPaginator
 
 Type annotations for `boto3.client("datasync").get_paginator("list_tasks")`.
@@ -120,14 +130,15 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
     return boto3.client("datasync").get_paginator("list_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
+Boto3 documentation:
+[DataSync.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
-```python
-class ListTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[TaskFilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTasksResponseTypeDef]:
-        pass
-```
+Arguments for `ListTasksPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[TaskFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#paginatorconfigtypedef)
+
+`ListTasksPaginator.paginate` returns
+`Iterator`\[[ListTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtasksresponsetypedef)\].

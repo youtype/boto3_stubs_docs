@@ -1,9 +1,12 @@
 # LookoutEquipmentClient for boto3 LookoutEquipment module
 
-> [Index](../README.md) > [LookoutEquipment](./README.md) > LookoutEquipmentClient
+> [Index](../README.md) > [LookoutEquipment](./README.md) >
+> LookoutEquipmentClient
 
-Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
-type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+Auto-generated documentation for
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+type annotations stubs module
+[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [LookoutEquipmentClient for boto3 LookoutEquipment module](#lookoutequipmentclient-for-boto3-lookoutequipment-module)
   - [LookoutEquipmentClient](#lookoutequipmentclient)
@@ -47,12 +50,13 @@ def get_lookoutequipment_client() -> LookoutEquipmentClient:
     return boto3.client("lookoutequipment")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
+Boto3 documentation:
+[LookoutEquipment.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lookoutequipment.client import Exceptions
@@ -60,7 +64,6 @@ from mypy_boto3_lookoutequipment.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -73,400 +76,417 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("lookoutequipment").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate]
+Boto3 documentation:
+[LookoutEquipment.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_dataset
 
 Type annotations for `boto3.client("lookoutequipment").create_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset]
+Boto3 documentation:
+[LookoutEquipment.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset)
 
-```python
-def create_dataset(
-    self,
-    DatasetName: str,
-    DatasetSchema: DatasetSchemaTypeDef,
-    ClientToken: str,
-    ServerSideKmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatasetName`: `str` *(required)*
+- `DatasetSchema`:
+  [DatasetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datasetschematypedef)
+  *(required)*
+- `ClientToken`: `str` *(required)*
+- `ServerSideKmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createdatasetresponsetypedef).
 
 ### create_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").create_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").create_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.create_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler)
 
-```python
-def create_inference_scheduler(
-    self,
-    ModelName: str,
-    InferenceSchedulerName: str,
-    DataUploadFrequency: DataUploadFrequency,
-    DataInputConfiguration: "InferenceInputConfigurationTypeDef",
-    DataOutputConfiguration: "InferenceOutputConfigurationTypeDef",
-    RoleArn: str,
-    ClientToken: str,
-    DataDelayOffsetInMinutes: int = None,
-    ServerSideKmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateInferenceSchedulerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+- `InferenceSchedulerName`: `str` *(required)*
+- `DataUploadFrequency`:
+  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
+  *(required)*
+- `DataInputConfiguration`:
+  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+  *(required)*
+- `DataOutputConfiguration`:
+  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `DataDelayOffsetInMinutes`: `int`
+- `ServerSideKmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createinferenceschedulerresponsetypedef).
 
 ### create_model
 
 Type annotations for `boto3.client("lookoutequipment").create_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model]
+Boto3 documentation:
+[LookoutEquipment.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model)
 
-```python
-def create_model(
-    self,
-    ModelName: str,
-    DatasetName: str,
-    ClientToken: str,
-    DatasetSchema: DatasetSchemaTypeDef = None,
-    LabelsInputConfiguration: "LabelsInputConfigurationTypeDef" = None,
-    TrainingDataStartTime: datetime = None,
-    TrainingDataEndTime: datetime = None,
-    EvaluationDataStartTime: datetime = None,
-    EvaluationDataEndTime: datetime = None,
-    RoleArn: str = None,
-    DataPreProcessingConfiguration: "DataPreProcessingConfigurationTypeDef" = None,
-    ServerSideKmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+- `DatasetName`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `DatasetSchema`:
+  [DatasetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datasetschematypedef)
+- `LabelsInputConfiguration`:
+  [LabelsInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#labelsinputconfigurationtypedef)
+- `TrainingDataStartTime`: `datetime`
+- `TrainingDataEndTime`: `datetime`
+- `EvaluationDataStartTime`: `datetime`
+- `EvaluationDataEndTime`: `datetime`
+- `RoleArn`: `str`
+- `DataPreProcessingConfiguration`:
+  [DataPreProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datapreprocessingconfigurationtypedef)
+- `ServerSideKmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createmodelresponsetypedef).
 
 ### delete_dataset
 
 Type annotations for `boto3.client("lookoutequipment").delete_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset]
+Boto3 documentation:
+[LookoutEquipment.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset)
 
-```python
-def delete_dataset(
-    self,
-    DatasetName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DatasetName`: `str` *(required)*
 
 ### delete_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").delete_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").delete_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.delete_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler)
 
-```python
-def delete_inference_scheduler(
-    self,
-    InferenceSchedulerName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InferenceSchedulerName`: `str` *(required)*
 
 ### delete_model
 
 Type annotations for `boto3.client("lookoutequipment").delete_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model]
+Boto3 documentation:
+[LookoutEquipment.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model)
 
-```python
-def delete_model(
-    self,
-    ModelName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
 
 ### describe_data_ingestion_job
 
-Type annotations for `boto3.client("lookoutequipment").describe_data_ingestion_job` method.
+Type annotations for
+`boto3.client("lookoutequipment").describe_data_ingestion_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job]
+Boto3 documentation:
+[LookoutEquipment.Client.describe_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
 
-```python
-def describe_data_ingestion_job(
-    self,
-    JobId: str
-) -> DescribeDataIngestionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeDataIngestionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describedataingestionjobresponsetypedef).
 
 ### describe_dataset
 
-Type annotations for `boto3.client("lookoutequipment").describe_dataset` method.
+Type annotations for `boto3.client("lookoutequipment").describe_dataset`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset]
+Boto3 documentation:
+[LookoutEquipment.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
 
-```python
-def describe_dataset(
-    self,
-    DatasetName: str
-) -> DescribeDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatasetName`: `str` *(required)*
+
+Returns
+[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describedatasetresponsetypedef).
 
 ### describe_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").describe_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").describe_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.describe_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler)
 
-```python
-def describe_inference_scheduler(
-    self,
-    InferenceSchedulerName: str
-) -> DescribeInferenceSchedulerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InferenceSchedulerName`: `str` *(required)*
+
+Returns
+[DescribeInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describeinferenceschedulerresponsetypedef).
 
 ### describe_model
 
 Type annotations for `boto3.client("lookoutequipment").describe_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model]
+Boto3 documentation:
+[LookoutEquipment.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model)
 
-```python
-def describe_model(
-    self,
-    ModelName: str
-) -> DescribeModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+
+Returns
+[DescribeModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describemodelresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lookoutequipment").generate_presigned_url` method.
+Type annotations for `boto3.client("lookoutequipment").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url]
+Boto3 documentation:
+[LookoutEquipment.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_data_ingestion_jobs
 
-Type annotations for `boto3.client("lookoutequipment").list_data_ingestion_jobs` method.
+Type annotations for
+`boto3.client("lookoutequipment").list_data_ingestion_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs]
+Boto3 documentation:
+[LookoutEquipment.Client.list_data_ingestion_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs)
 
-```python
-def list_data_ingestion_jobs(
-    self,
-    DatasetName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Status: IngestionJobStatus = None
-) -> ListDataIngestionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatasetName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Status`:
+  [IngestionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#ingestionjobstatus)
+
+Returns
+[ListDataIngestionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listdataingestionjobsresponsetypedef).
 
 ### list_datasets
 
 Type annotations for `boto3.client("lookoutequipment").list_datasets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets]
+Boto3 documentation:
+[LookoutEquipment.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets)
 
-```python
-def list_datasets(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    DatasetNameBeginsWith: str = None
-) -> ListDatasetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DatasetNameBeginsWith`: `str`
+
+Returns
+[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listdatasetsresponsetypedef).
 
 ### list_inference_executions
 
-Type annotations for `boto3.client("lookoutequipment").list_inference_executions` method.
+Type annotations for
+`boto3.client("lookoutequipment").list_inference_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions]
+Boto3 documentation:
+[LookoutEquipment.Client.list_inference_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions)
 
-```python
-def list_inference_executions(
-    self,
-    InferenceSchedulerName: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    DataStartTimeAfter: datetime = None,
-    DataEndTimeBefore: datetime = None,
-    Status: InferenceExecutionStatus = None
-) -> ListInferenceExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InferenceSchedulerName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DataStartTimeAfter`: `datetime`
+- `DataEndTimeBefore`: `datetime`
+- `Status`:
+  [InferenceExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceexecutionstatus)
+
+Returns
+[ListInferenceExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listinferenceexecutionsresponsetypedef).
 
 ### list_inference_schedulers
 
-Type annotations for `boto3.client("lookoutequipment").list_inference_schedulers` method.
+Type annotations for
+`boto3.client("lookoutequipment").list_inference_schedulers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers]
+Boto3 documentation:
+[LookoutEquipment.Client.list_inference_schedulers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers)
 
-```python
-def list_inference_schedulers(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    InferenceSchedulerNameBeginsWith: str = None,
-    ModelName: str = None
-) -> ListInferenceSchedulersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `InferenceSchedulerNameBeginsWith`: `str`
+- `ModelName`: `str`
+
+Returns
+[ListInferenceSchedulersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listinferenceschedulersresponsetypedef).
 
 ### list_models
 
 Type annotations for `boto3.client("lookoutequipment").list_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models]
+Boto3 documentation:
+[LookoutEquipment.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models)
 
-```python
-def list_models(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Status: ModelStatus = None,
-    ModelNameBeginsWith: str = None,
-    DatasetNameBeginsWith: str = None
-) -> ListModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#modelstatus)
+- `ModelNameBeginsWith`: `str`
+- `DatasetNameBeginsWith`: `str`
+
+Returns
+[ListModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listmodelsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("lookoutequipment").list_tags_for_resource` method.
+Type annotations for `boto3.client("lookoutequipment").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource]
+Boto3 documentation:
+[LookoutEquipment.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_data_ingestion_job
 
-Type annotations for `boto3.client("lookoutequipment").start_data_ingestion_job` method.
+Type annotations for
+`boto3.client("lookoutequipment").start_data_ingestion_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job]
+Boto3 documentation:
+[LookoutEquipment.Client.start_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job)
 
-```python
-def start_data_ingestion_job(
-    self,
-    DatasetName: str,
-    IngestionInputConfiguration: "IngestionInputConfigurationTypeDef",
-    RoleArn: str,
-    ClientToken: str
-) -> StartDataIngestionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatasetName`: `str` *(required)*
+- `IngestionInputConfiguration`:
+  [IngestionInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestioninputconfigurationtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+
+Returns
+[StartDataIngestionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#startdataingestionjobresponsetypedef).
 
 ### start_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").start_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").start_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.start_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler)
 
-```python
-def start_inference_scheduler(
-    self,
-    InferenceSchedulerName: str
-) -> StartInferenceSchedulerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InferenceSchedulerName`: `str` *(required)*
+
+Returns
+[StartInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#startinferenceschedulerresponsetypedef).
 
 ### stop_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").stop_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").stop_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.stop_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler)
 
-```python
-def stop_inference_scheduler(
-    self,
-    InferenceSchedulerName: str
-) -> StopInferenceSchedulerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InferenceSchedulerName`: `str` *(required)*
+
+Returns
+[StopInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#stopinferenceschedulerresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("lookoutequipment").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource]
+Boto3 documentation:
+[LookoutEquipment.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("lookoutequipment").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource]
+Boto3 documentation:
+[LookoutEquipment.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_inference_scheduler
 
-Type annotations for `boto3.client("lookoutequipment").update_inference_scheduler` method.
+Type annotations for
+`boto3.client("lookoutequipment").update_inference_scheduler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler]
+Boto3 documentation:
+[LookoutEquipment.Client.update_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler)
 
-```python
-def update_inference_scheduler(
-    self,
-    InferenceSchedulerName: str,
-    DataDelayOffsetInMinutes: int = None,
-    DataUploadFrequency: DataUploadFrequency = None,
-    DataInputConfiguration: "InferenceInputConfigurationTypeDef" = None,
-    DataOutputConfiguration: "InferenceOutputConfigurationTypeDef" = None,
-    RoleArn: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `InferenceSchedulerName`: `str` *(required)*
+- `DataDelayOffsetInMinutes`: `int`
+- `DataUploadFrequency`:
+  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
+- `DataInputConfiguration`:
+  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+- `DataOutputConfiguration`:
+  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
+- `RoleArn`: `str`

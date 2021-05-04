@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PrometheusService](./README.md) > Paginators
 
-Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+Auto-generated documentation for
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+type annotations stubs module
+[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Paginators for boto3 PrometheusService module](#paginators-for-boto3-prometheusservice-module)
   - [ListWorkspacesPaginator](#listworkspacespaginator)
@@ -21,14 +23,14 @@ def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
     return boto3.client("amp").get_paginator("list_workspaces")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
+Boto3 documentation:
+[PrometheusService.Paginator.ListWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
 
-```python
-class ListWorkspacesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        alias: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListWorkspacesResponseTypeDef]:
-        pass
-```
+Arguments for `ListWorkspacesPaginator.paginate` method:
+
+- `alias`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#paginatorconfigtypedef)
+
+`ListWorkspacesPaginator.paginate` returns
+`Iterator`\[[ListWorkspacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#listworkspacesresponsetypedef)\].

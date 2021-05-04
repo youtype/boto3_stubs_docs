@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkManager](./README.md) > Literals
 
-Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+Auto-generated documentation for
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+type annotations stubs module
+[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Literals for boto3 NetworkManager module](#literals-for-boto3-networkmanager-module)
   - [ConnectionState](#connectionstate)

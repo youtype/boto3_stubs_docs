@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SecretsManager](./README.md) > Structures
 
-Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+Auto-generated documentation for
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+type annotations stubs module
+[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [Typed dictionaries for boto3 SecretsManager module](#typed-dictionaries-for-boto3-secretsmanager-module)
   - [CancelRotateSecretResponseTypeDef](#cancelrotatesecretresponsetypedef)
@@ -42,14 +44,11 @@ type annotations stubs module [mypy_boto3_secretsmanager](https://pypi.org/proje
 from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-
 
 ## CreateSecretResponseTypeDef
 
@@ -57,15 +56,13 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import CreateSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-- `ReplicationStatus`: `List["ReplicationStatusTypeTypeDef"]`
-
+- `ReplicationStatus`:
+  `List`\[[ReplicationStatusTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicationstatustypetypedef)\]
 
 ## DeleteResourcePolicyResponseTypeDef
 
@@ -73,13 +70,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
-
 
 ## DeleteSecretResponseTypeDef
 
@@ -87,14 +81,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import DeleteSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `DeletionDate`: `datetime`
-
 
 ## DescribeSecretResponseTypeDef
 
@@ -102,28 +93,28 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import DescribeSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `RotationEnabled`: `bool`
 - `RotationLambdaARN`: `str`
-- `RotationRules`: `"RotationRulesTypeTypeDef"`
+- `RotationRules`:
+  [RotationRulesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotationrulestypetypedef)
 - `LastRotatedDate`: `datetime`
 - `LastChangedDate`: `datetime`
 - `LastAccessedDate`: `datetime`
 - `DeletedDate`: `datetime`
-- `Tags`: `List["TagTypeDef"]`
-- `VersionIdsToStages`: `Dict[str, List[str]]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
+- `VersionIdsToStages`: `Dict`\[`str`, `List`\[`str`\]\]
 - `OwningService`: `str`
 - `CreatedDate`: `datetime`
 - `PrimaryRegion`: `str`
-- `ReplicationStatus`: `List["ReplicationStatusTypeTypeDef"]`
-
+- `ReplicationStatus`:
+  `List`\[[ReplicationStatusTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicationstatustypetypedef)\]
 
 ## FilterTypeDef
 
@@ -131,13 +122,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import FilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `FilterNameStringType`
-- `Values`: `List[str]`
 
+- `Key`:
+  [FilterNameStringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/literals.html#filternamestringtype)
+- `Values`: `List`\[`str`\]
 
 ## GetRandomPasswordResponseTypeDef
 
@@ -145,12 +134,9 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RandomPassword`: `str`
 
+- `RandomPassword`: `str`
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -158,14 +144,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `ResourcePolicy`: `str`
-
 
 ## GetSecretValueResponseTypeDef
 
@@ -173,18 +156,15 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import GetSecretValueResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-- `SecretBinary`: `Union[bytes, IO[bytes]]`
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `SecretString`: `str`
-- `VersionStages`: `List[str]`
+- `VersionStages`: `List`\[`str`\]
 - `CreatedDate`: `datetime`
-
 
 ## ListSecretVersionIdsResponseTypeDef
 
@@ -192,15 +172,13 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Versions`: `List["SecretVersionsListEntryTypeDef"]`
+
+- `Versions`:
+  `List`\[[SecretVersionsListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#secretversionslistentrytypedef)\]
 - `NextToken`: `str`
 - `ARN`: `str`
 - `Name`: `str`
-
 
 ## ListSecretsResponseTypeDef
 
@@ -208,13 +186,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ListSecretsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SecretList`: `List["SecretListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `SecretList`:
+  `List`\[[SecretListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#secretlistentrytypedef)\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -222,14 +198,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -237,13 +210,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
-
 
 ## PutSecretValueResponseTypeDef
 
@@ -251,15 +221,12 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import PutSecretValueResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-- `VersionStages`: `List[str]`
-
+- `VersionStages`: `List`\[`str`\]
 
 ## RemoveRegionsFromReplicationResponseTypeDef
 
@@ -267,13 +234,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
-- `ReplicationStatus`: `List["ReplicationStatusTypeTypeDef"]`
 
+- `ARN`: `str`
+- `ReplicationStatus`:
+  `List`\[[ReplicationStatusTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicationstatustypetypedef)\]
 
 ## ReplicaRegionTypeTypeDef
 
@@ -281,13 +246,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ReplicaRegionTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Region`: `str`
 - `KmsKeyId`: `str`
-
 
 ## ReplicateSecretToRegionsResponseTypeDef
 
@@ -295,13 +257,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
-- `ReplicationStatus`: `List["ReplicationStatusTypeTypeDef"]`
 
+- `ARN`: `str`
+- `ReplicationStatus`:
+  `List`\[[ReplicationStatusTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicationstatustypetypedef)\]
 
 ## ReplicationStatusTypeTypeDef
 
@@ -309,16 +269,14 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ReplicationStatusTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Region`: `str`
 - `KmsKeyId`: `str`
-- `Status`: `StatusType`
+- `Status`:
+  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/literals.html#statustype)
 - `StatusMessage`: `str`
 - `LastAccessedDate`: `datetime`
-
 
 ## RestoreSecretResponseTypeDef
 
@@ -326,13 +284,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import RestoreSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
-
 
 ## RotateSecretResponseTypeDef
 
@@ -340,14 +295,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import RotateSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-
 
 ## RotationRulesTypeTypeDef
 
@@ -355,12 +307,9 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import RotationRulesTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomaticallyAfterDays`: `int`
 
+- `AutomaticallyAfterDays`: `int`
 
 ## SecretListEntryTypeDef
 
@@ -368,27 +317,26 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import SecretListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `RotationEnabled`: `bool`
 - `RotationLambdaARN`: `str`
-- `RotationRules`: `"RotationRulesTypeTypeDef"`
+- `RotationRules`:
+  [RotationRulesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotationrulestypetypedef)
 - `LastRotatedDate`: `datetime`
 - `LastChangedDate`: `datetime`
 - `LastAccessedDate`: `datetime`
 - `DeletedDate`: `datetime`
-- `Tags`: `List["TagTypeDef"]`
-- `SecretVersionsToStages`: `Dict[str, List[str]]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
+- `SecretVersionsToStages`: `Dict`\[`str`, `List`\[`str`\]\]
 - `OwningService`: `str`
 - `CreatedDate`: `datetime`
 - `PrimaryRegion`: `str`
-
 
 ## SecretVersionsListEntryTypeDef
 
@@ -396,15 +344,12 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import SecretVersionsListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VersionId`: `str`
-- `VersionStages`: `List[str]`
+- `VersionStages`: `List`\[`str`\]
 - `LastAccessedDate`: `datetime`
 - `CreatedDate`: `datetime`
-
 
 ## StopReplicationToReplicaResponseTypeDef
 
@@ -412,12 +357,9 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
 
+- `ARN`: `str`
 
 ## TagTypeDef
 
@@ -425,13 +367,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## UpdateSecretResponseTypeDef
 
@@ -439,14 +378,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-
 
 ## UpdateSecretVersionStageResponseTypeDef
 
@@ -454,13 +390,10 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ARN`: `str`
 - `Name`: `str`
-
 
 ## ValidateResourcePolicyResponseTypeDef
 
@@ -468,13 +401,11 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyValidationPassed`: `bool`
-- `ValidationErrors`: `List["ValidationErrorsEntryTypeDef"]`
 
+- `PolicyValidationPassed`: `bool`
+- `ValidationErrors`:
+  `List`\[[ValidationErrorsEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#validationerrorsentrytypedef)\]
 
 ## ValidationErrorsEntryTypeDef
 
@@ -482,10 +413,7 @@ Optional fields:
 from mypy_boto3_secretsmanager.type_defs import ValidationErrorsEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CheckName`: `str`
 - `ErrorMessage`: `str`
-

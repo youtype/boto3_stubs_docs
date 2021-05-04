@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Amplify](./README.md) > AmplifyClient
 
-Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+Auto-generated documentation for
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+type annotations stubs module
+[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [AmplifyClient for boto3 Amplify module](#amplifyclient-for-boto3-amplify-module)
   - [AmplifyClient](#amplifyclient)
@@ -63,12 +65,13 @@ def get_amplify_client() -> AmplifyClient:
     return boto3.client("amplify")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
+Boto3 documentation:
+[Amplify.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_amplify.client import Exceptions
@@ -76,7 +79,6 @@ from mypy_boto3_amplify.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -89,700 +91,713 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("amplify").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.can_paginate]
+Boto3 documentation:
+[Amplify.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_app
 
 Type annotations for `boto3.client("amplify").create_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app]
+Boto3 documentation:
+[Amplify.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app)
 
-```python
-def create_app(
-    self,
-    name: str,
-    description: str = None,
-    repository: str = None,
-    platform: Literal['WEB'] = None,
-    iamServiceRoleArn: str = None,
-    oauthToken: str = None,
-    accessToken: str = None,
-    environmentVariables: Dict[str, str] = None,
-    enableBranchAutoBuild: bool = None,
-    enableBranchAutoDeletion: bool = None,
-    enableBasicAuth: bool = None,
-    basicAuthCredentials: str = None,
-    customRules: List["CustomRuleTypeDef"] = None,
-    tags: Dict[str, str] = None,
-    buildSpec: str = None,
-    customHeaders: str = None,
-    enableAutoBranchCreation: bool = None,
-    autoBranchCreationPatterns: List[str] = None,
-    autoBranchCreationConfig: "AutoBranchCreationConfigTypeDef" = None
-) -> CreateAppResultTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `description`: `str`
+- `repository`: `str`
+- `platform`: `Literal['WEB']`
+- `iamServiceRoleArn`: `str`
+- `oauthToken`: `str`
+- `accessToken`: `str`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `enableBranchAutoBuild`: `bool`
+- `enableBranchAutoDeletion`: `bool`
+- `enableBasicAuth`: `bool`
+- `basicAuthCredentials`: `str`
+- `customRules`:
+  `List`\[[CustomRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#customruletypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `buildSpec`: `str`
+- `customHeaders`: `str`
+- `enableAutoBranchCreation`: `bool`
+- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationConfig`:
+  [AutoBranchCreationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#autobranchcreationconfigtypedef)
+
+Returns
+[CreateAppResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createappresulttypedef).
 
 ### create_backend_environment
 
-Type annotations for `boto3.client("amplify").create_backend_environment` method.
+Type annotations for `boto3.client("amplify").create_backend_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment]
+Boto3 documentation:
+[Amplify.Client.create_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment)
 
-```python
-def create_backend_environment(
-    self,
-    appId: str,
-    environmentName: str,
-    stackName: str = None,
-    deploymentArtifacts: str = None
-) -> CreateBackendEnvironmentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `environmentName`: `str` *(required)*
+- `stackName`: `str`
+- `deploymentArtifacts`: `str`
+
+Returns
+[CreateBackendEnvironmentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createbackendenvironmentresulttypedef).
 
 ### create_branch
 
 Type annotations for `boto3.client("amplify").create_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch]
+Boto3 documentation:
+[Amplify.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch)
 
-```python
-def create_branch(
-    self,
-    appId: str,
-    branchName: str,
-    description: str = None,
-    stage: Stage = None,
-    framework: str = None,
-    enableNotification: bool = None,
-    enableAutoBuild: bool = None,
-    environmentVariables: Dict[str, str] = None,
-    basicAuthCredentials: str = None,
-    enableBasicAuth: bool = None,
-    enablePerformanceMode: bool = None,
-    tags: Dict[str, str] = None,
-    buildSpec: str = None,
-    ttl: str = None,
-    displayName: str = None,
-    enablePullRequestPreview: bool = None,
-    pullRequestEnvironmentName: str = None,
-    backendEnvironmentArn: str = None
-) -> CreateBranchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `description`: `str`
+- `stage`:
+  [Stage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#stage)
+- `framework`: `str`
+- `enableNotification`: `bool`
+- `enableAutoBuild`: `bool`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `basicAuthCredentials`: `str`
+- `enableBasicAuth`: `bool`
+- `enablePerformanceMode`: `bool`
+- `tags`: `Dict`\[`str`, `str`\]
+- `buildSpec`: `str`
+- `ttl`: `str`
+- `displayName`: `str`
+- `enablePullRequestPreview`: `bool`
+- `pullRequestEnvironmentName`: `str`
+- `backendEnvironmentArn`: `str`
+
+Returns
+[CreateBranchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createbranchresulttypedef).
 
 ### create_deployment
 
 Type annotations for `boto3.client("amplify").create_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment]
+Boto3 documentation:
+[Amplify.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment)
 
-```python
-def create_deployment(
-    self,
-    appId: str,
-    branchName: str,
-    fileMap: Dict[str, str] = None
-) -> CreateDeploymentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `fileMap`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createdeploymentresulttypedef).
 
 ### create_domain_association
 
-Type annotations for `boto3.client("amplify").create_domain_association` method.
+Type annotations for `boto3.client("amplify").create_domain_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association]
+Boto3 documentation:
+[Amplify.Client.create_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association)
 
-```python
-def create_domain_association(
-    self,
-    appId: str,
-    domainName: str,
-    subDomainSettings: List["SubDomainSettingTypeDef"],
-    enableAutoSubDomain: bool = None,
-    autoSubDomainCreationPatterns: List[str] = None,
-    autoSubDomainIAMRole: str = None
-) -> CreateDomainAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `domainName`: `str` *(required)*
+- `subDomainSettings`:
+  `List`\[[SubDomainSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#subdomainsettingtypedef)\]
+  *(required)*
+- `enableAutoSubDomain`: `bool`
+- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainIAMRole`: `str`
+
+Returns
+[CreateDomainAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createdomainassociationresulttypedef).
 
 ### create_webhook
 
 Type annotations for `boto3.client("amplify").create_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook]
+Boto3 documentation:
+[Amplify.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook)
 
-```python
-def create_webhook(
-    self,
-    appId: str,
-    branchName: str,
-    description: str = None
-) -> CreateWebhookResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `description`: `str`
+
+Returns
+[CreateWebhookResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#createwebhookresulttypedef).
 
 ### delete_app
 
 Type annotations for `boto3.client("amplify").delete_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_app]
+Boto3 documentation:
+[Amplify.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_app)
 
-```python
-def delete_app(
-    self,
-    appId: str
-) -> DeleteAppResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+
+Returns
+[DeleteAppResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deleteappresulttypedef).
 
 ### delete_backend_environment
 
-Type annotations for `boto3.client("amplify").delete_backend_environment` method.
+Type annotations for `boto3.client("amplify").delete_backend_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_backend_environment]
+Boto3 documentation:
+[Amplify.Client.delete_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_backend_environment)
 
-```python
-def delete_backend_environment(
-    self,
-    appId: str,
-    environmentName: str
-) -> DeleteBackendEnvironmentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `environmentName`: `str` *(required)*
+
+Returns
+[DeleteBackendEnvironmentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deletebackendenvironmentresulttypedef).
 
 ### delete_branch
 
 Type annotations for `boto3.client("amplify").delete_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_branch]
+Boto3 documentation:
+[Amplify.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_branch)
 
-```python
-def delete_branch(
-    self,
-    appId: str,
-    branchName: str
-) -> DeleteBranchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+
+Returns
+[DeleteBranchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deletebranchresulttypedef).
 
 ### delete_domain_association
 
-Type annotations for `boto3.client("amplify").delete_domain_association` method.
+Type annotations for `boto3.client("amplify").delete_domain_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_domain_association]
+Boto3 documentation:
+[Amplify.Client.delete_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_domain_association)
 
-```python
-def delete_domain_association(
-    self,
-    appId: str,
-    domainName: str
-) -> DeleteDomainAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `domainName`: `str` *(required)*
+
+Returns
+[DeleteDomainAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deletedomainassociationresulttypedef).
 
 ### delete_job
 
 Type annotations for `boto3.client("amplify").delete_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job]
+Boto3 documentation:
+[Amplify.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job)
 
-```python
-def delete_job(
-    self,
-    appId: str,
-    branchName: str,
-    jobId: str
-) -> DeleteJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+
+Returns
+[DeleteJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deletejobresulttypedef).
 
 ### delete_webhook
 
 Type annotations for `boto3.client("amplify").delete_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_webhook]
+Boto3 documentation:
+[Amplify.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_webhook)
 
-```python
-def delete_webhook(
-    self,
-    webhookId: str
-) -> DeleteWebhookResultTypeDef:
-    pass
-```
+Arguments:
+
+- `webhookId`: `str` *(required)*
+
+Returns
+[DeleteWebhookResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#deletewebhookresulttypedef).
 
 ### generate_access_logs
 
 Type annotations for `boto3.client("amplify").generate_access_logs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs]
+Boto3 documentation:
+[Amplify.Client.generate_access_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs)
 
-```python
-def generate_access_logs(
-    self,
-    domainName: str,
-    appId: str,
-    startTime: datetime = None,
-    endTime: datetime = None
-) -> GenerateAccessLogsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+- `appId`: `str` *(required)*
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+
+Returns
+[GenerateAccessLogsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#generateaccesslogsresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("amplify").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_presigned_url]
+Boto3 documentation:
+[Amplify.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_app
 
 Type annotations for `boto3.client("amplify").get_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_app]
+Boto3 documentation:
+[Amplify.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_app)
 
-```python
-def get_app(
-    self,
-    appId: str
-) -> GetAppResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+
+Returns
+[GetAppResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getappresulttypedef).
 
 ### get_artifact_url
 
 Type annotations for `boto3.client("amplify").get_artifact_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_artifact_url]
+Boto3 documentation:
+[Amplify.Client.get_artifact_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_artifact_url)
 
-```python
-def get_artifact_url(
-    self,
-    artifactId: str
-) -> GetArtifactUrlResultTypeDef:
-    pass
-```
+Arguments:
+
+- `artifactId`: `str` *(required)*
+
+Returns
+[GetArtifactUrlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getartifacturlresulttypedef).
 
 ### get_backend_environment
 
 Type annotations for `boto3.client("amplify").get_backend_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_backend_environment]
+Boto3 documentation:
+[Amplify.Client.get_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_backend_environment)
 
-```python
-def get_backend_environment(
-    self,
-    appId: str,
-    environmentName: str
-) -> GetBackendEnvironmentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `environmentName`: `str` *(required)*
+
+Returns
+[GetBackendEnvironmentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getbackendenvironmentresulttypedef).
 
 ### get_branch
 
 Type annotations for `boto3.client("amplify").get_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_branch]
+Boto3 documentation:
+[Amplify.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_branch)
 
-```python
-def get_branch(
-    self,
-    appId: str,
-    branchName: str
-) -> GetBranchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+
+Returns
+[GetBranchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getbranchresulttypedef).
 
 ### get_domain_association
 
 Type annotations for `boto3.client("amplify").get_domain_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_domain_association]
+Boto3 documentation:
+[Amplify.Client.get_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_domain_association)
 
-```python
-def get_domain_association(
-    self,
-    appId: str,
-    domainName: str
-) -> GetDomainAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `domainName`: `str` *(required)*
+
+Returns
+[GetDomainAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getdomainassociationresulttypedef).
 
 ### get_job
 
 Type annotations for `boto3.client("amplify").get_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job]
+Boto3 documentation:
+[Amplify.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job)
 
-```python
-def get_job(
-    self,
-    appId: str,
-    branchName: str,
-    jobId: str
-) -> GetJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+
+Returns
+[GetJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getjobresulttypedef).
 
 ### get_webhook
 
 Type annotations for `boto3.client("amplify").get_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_webhook]
+Boto3 documentation:
+[Amplify.Client.get_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_webhook)
 
-```python
-def get_webhook(
-    self,
-    webhookId: str
-) -> GetWebhookResultTypeDef:
-    pass
-```
+Arguments:
+
+- `webhookId`: `str` *(required)*
+
+Returns
+[GetWebhookResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#getwebhookresulttypedef).
 
 ### list_apps
 
 Type annotations for `boto3.client("amplify").list_apps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_apps]
+Boto3 documentation:
+[Amplify.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_apps)
 
-```python
-def list_apps(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAppsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAppsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listappsresulttypedef).
 
 ### list_artifacts
 
 Type annotations for `boto3.client("amplify").list_artifacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts]
+Boto3 documentation:
+[Amplify.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts)
 
-```python
-def list_artifacts(
-    self,
-    appId: str,
-    branchName: str,
-    jobId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListArtifactsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listartifactsresulttypedef).
 
 ### list_backend_environments
 
-Type annotations for `boto3.client("amplify").list_backend_environments` method.
+Type annotations for `boto3.client("amplify").list_backend_environments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments]
+Boto3 documentation:
+[Amplify.Client.list_backend_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments)
 
-```python
-def list_backend_environments(
-    self,
-    appId: str,
-    environmentName: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListBackendEnvironmentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `environmentName`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListBackendEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listbackendenvironmentsresulttypedef).
 
 ### list_branches
 
 Type annotations for `boto3.client("amplify").list_branches` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches]
+Boto3 documentation:
+[Amplify.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches)
 
-```python
-def list_branches(
-    self,
-    appId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListBranchesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListBranchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listbranchesresulttypedef).
 
 ### list_domain_associations
 
 Type annotations for `boto3.client("amplify").list_domain_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations]
+Boto3 documentation:
+[Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations)
 
-```python
-def list_domain_associations(
-    self,
-    appId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDomainAssociationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDomainAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listdomainassociationsresulttypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("amplify").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs]
+Boto3 documentation:
+[Amplify.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    appId: str,
-    branchName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListJobsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listjobsresulttypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("amplify").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_tags_for_resource]
+Boto3 documentation:
+[Amplify.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_webhooks
 
 Type annotations for `boto3.client("amplify").list_webhooks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks]
+Boto3 documentation:
+[Amplify.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks)
 
-```python
-def list_webhooks(
-    self,
-    appId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListWebhooksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListWebhooksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listwebhooksresulttypedef).
 
 ### start_deployment
 
 Type annotations for `boto3.client("amplify").start_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment]
+Boto3 documentation:
+[Amplify.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment)
 
-```python
-def start_deployment(
-    self,
-    appId: str,
-    branchName: str,
-    jobId: str = None,
-    sourceUrl: str = None
-) -> StartDeploymentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobId`: `str`
+- `sourceUrl`: `str`
+
+Returns
+[StartDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#startdeploymentresulttypedef).
 
 ### start_job
 
 Type annotations for `boto3.client("amplify").start_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job]
+Boto3 documentation:
+[Amplify.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job)
 
-```python
-def start_job(
-    self,
-    appId: str,
-    branchName: str,
-    jobType: JobType,
-    jobId: str = None,
-    jobReason: str = None,
-    commitId: str = None,
-    commitMessage: str = None,
-    commitTime: datetime = None
-) -> StartJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#jobtype)
+  *(required)*
+- `jobId`: `str`
+- `jobReason`: `str`
+- `commitId`: `str`
+- `commitMessage`: `str`
+- `commitTime`: `datetime`
+
+Returns
+[StartJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#startjobresulttypedef).
 
 ### stop_job
 
 Type annotations for `boto3.client("amplify").stop_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job]
+Boto3 documentation:
+[Amplify.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job)
 
-```python
-def stop_job(
-    self,
-    appId: str,
-    branchName: str,
-    jobId: str
-) -> StopJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `jobId`: `str` *(required)*
+
+Returns
+[StopJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#stopjobresulttypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("amplify").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.tag_resource]
+Boto3 documentation:
+[Amplify.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("amplify").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.untag_resource]
+Boto3 documentation:
+[Amplify.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_app
 
 Type annotations for `boto3.client("amplify").update_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app]
+Boto3 documentation:
+[Amplify.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app)
 
-```python
-def update_app(
-    self,
-    appId: str,
-    name: str = None,
-    description: str = None,
-    platform: Literal['WEB'] = None,
-    iamServiceRoleArn: str = None,
-    environmentVariables: Dict[str, str] = None,
-    enableBranchAutoBuild: bool = None,
-    enableBranchAutoDeletion: bool = None,
-    enableBasicAuth: bool = None,
-    basicAuthCredentials: str = None,
-    customRules: List["CustomRuleTypeDef"] = None,
-    buildSpec: str = None,
-    customHeaders: str = None,
-    enableAutoBranchCreation: bool = None,
-    autoBranchCreationPatterns: List[str] = None,
-    autoBranchCreationConfig: "AutoBranchCreationConfigTypeDef" = None,
-    repository: str = None,
-    oauthToken: str = None,
-    accessToken: str = None
-) -> UpdateAppResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `name`: `str`
+- `description`: `str`
+- `platform`: `Literal['WEB']`
+- `iamServiceRoleArn`: `str`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `enableBranchAutoBuild`: `bool`
+- `enableBranchAutoDeletion`: `bool`
+- `enableBasicAuth`: `bool`
+- `basicAuthCredentials`: `str`
+- `customRules`:
+  `List`\[[CustomRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#customruletypedef)\]
+- `buildSpec`: `str`
+- `customHeaders`: `str`
+- `enableAutoBranchCreation`: `bool`
+- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationConfig`:
+  [AutoBranchCreationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#autobranchcreationconfigtypedef)
+- `repository`: `str`
+- `oauthToken`: `str`
+- `accessToken`: `str`
+
+Returns
+[UpdateAppResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#updateappresulttypedef).
 
 ### update_branch
 
 Type annotations for `boto3.client("amplify").update_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch]
+Boto3 documentation:
+[Amplify.Client.update_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch)
 
-```python
-def update_branch(
-    self,
-    appId: str,
-    branchName: str,
-    description: str = None,
-    framework: str = None,
-    stage: Stage = None,
-    enableNotification: bool = None,
-    enableAutoBuild: bool = None,
-    environmentVariables: Dict[str, str] = None,
-    basicAuthCredentials: str = None,
-    enableBasicAuth: bool = None,
-    enablePerformanceMode: bool = None,
-    buildSpec: str = None,
-    ttl: str = None,
-    displayName: str = None,
-    enablePullRequestPreview: bool = None,
-    pullRequestEnvironmentName: str = None,
-    backendEnvironmentArn: str = None
-) -> UpdateBranchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `description`: `str`
+- `framework`: `str`
+- `stage`:
+  [Stage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#stage)
+- `enableNotification`: `bool`
+- `enableAutoBuild`: `bool`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `basicAuthCredentials`: `str`
+- `enableBasicAuth`: `bool`
+- `enablePerformanceMode`: `bool`
+- `buildSpec`: `str`
+- `ttl`: `str`
+- `displayName`: `str`
+- `enablePullRequestPreview`: `bool`
+- `pullRequestEnvironmentName`: `str`
+- `backendEnvironmentArn`: `str`
+
+Returns
+[UpdateBranchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#updatebranchresulttypedef).
 
 ### update_domain_association
 
-Type annotations for `boto3.client("amplify").update_domain_association` method.
+Type annotations for `boto3.client("amplify").update_domain_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association]
+Boto3 documentation:
+[Amplify.Client.update_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association)
 
-```python
-def update_domain_association(
-    self,
-    appId: str,
-    domainName: str,
-    subDomainSettings: List["SubDomainSettingTypeDef"],
-    enableAutoSubDomain: bool = None,
-    autoSubDomainCreationPatterns: List[str] = None,
-    autoSubDomainIAMRole: str = None
-) -> UpdateDomainAssociationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `appId`: `str` *(required)*
+- `domainName`: `str` *(required)*
+- `subDomainSettings`:
+  `List`\[[SubDomainSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#subdomainsettingtypedef)\]
+  *(required)*
+- `enableAutoSubDomain`: `bool`
+- `autoSubDomainCreationPatterns`: `List`\[`str`\]
+- `autoSubDomainIAMRole`: `str`
+
+Returns
+[UpdateDomainAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#updatedomainassociationresulttypedef).
 
 ### update_webhook
 
 Type annotations for `boto3.client("amplify").update_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook]
+Boto3 documentation:
+[Amplify.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook)
 
-```python
-def update_webhook(
-    self,
-    webhookId: str,
-    branchName: str = None,
-    description: str = None
-) -> UpdateWebhookResultTypeDef:
-    pass
-```
+Arguments:
 
+- `webhookId`: `str` *(required)*
+- `branchName`: `str`
+- `description`: `str`
 
+Returns
+[UpdateWebhookResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#updatewebhookresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("amplify").get_paginator` method with overloads.
+Type annotations for `boto3.client("amplify").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_apps")` -> [ListAppsPaginator](./paginators.md#listappspaginator)
-- `client.get_paginator("list_branches")` -> [ListBranchesPaginator](./paginators.md#listbranchespaginator)
-- `client.get_paginator("list_domain_associations")` -> [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
+- `client.get_paginator("list_apps")` ->
+  [ListAppsPaginator](./paginators.md#listappspaginator)
+- `client.get_paginator("list_branches")` ->
+  [ListBranchesPaginator](./paginators.md#listbranchespaginator)
+- `client.get_paginator("list_domain_associations")` ->
+  [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)

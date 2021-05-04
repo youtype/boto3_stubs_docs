@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DevopsGuru](./README.md) > DevopsGuruClient
 
-Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
-type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+Auto-generated documentation for
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+type annotations stubs module
+[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [DevopsGuruClient for boto3 DevopsGuru module](#devopsguruclient-for-boto3-devopsguru-module)
   - [DevopsGuruClient](#devopsguruclient)
@@ -45,12 +47,13 @@ def get_devops-guru_client() -> DevopsGuruClient:
     return boto3.client("devops-guru")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client)
+Boto3 documentation:
+[DevopsGuru.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_devops_guru.client import Exceptions
@@ -58,7 +61,6 @@ from mypy_boto3_devops_guru.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -71,334 +73,356 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### add_notification_channel
 
-Type annotations for `boto3.client("devops-guru").add_notification_channel` method.
+Type annotations for `boto3.client("devops-guru").add_notification_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel]
+Boto3 documentation:
+[DevopsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel)
 
-```python
-def add_notification_channel(
-    self,
-    Config: "NotificationChannelConfigTypeDef"
-) -> AddNotificationChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Config`:
+  [NotificationChannelConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#notificationchannelconfigtypedef)
+  *(required)*
+
+Returns
+[AddNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#addnotificationchannelresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("devops-guru").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate]
+Boto3 documentation:
+[DevopsGuru.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_account_health
 
-Type annotations for `boto3.client("devops-guru").describe_account_health` method.
+Type annotations for `boto3.client("devops-guru").describe_account_health`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health]
+Boto3 documentation:
+[DevopsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health)
 
-```python
-def describe_account_health(
-    self
-) -> DescribeAccountHealthResponseTypeDef:
-    pass
-```
+Returns
+[DescribeAccountHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeaccounthealthresponsetypedef).
 
 ### describe_account_overview
 
-Type annotations for `boto3.client("devops-guru").describe_account_overview` method.
+Type annotations for `boto3.client("devops-guru").describe_account_overview`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview]
+Boto3 documentation:
+[DevopsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview)
 
-```python
-def describe_account_overview(
-    self,
-    FromTime: datetime,
-    ToTime: datetime = None
-) -> DescribeAccountOverviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FromTime`: `datetime` *(required)*
+- `ToTime`: `datetime`
+
+Returns
+[DescribeAccountOverviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeaccountoverviewresponsetypedef).
 
 ### describe_anomaly
 
 Type annotations for `boto3.client("devops-guru").describe_anomaly` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly]
+Boto3 documentation:
+[DevopsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly)
 
-```python
-def describe_anomaly(
-    self,
-    Id: str
-) -> DescribeAnomalyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeAnomalyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeanomalyresponsetypedef).
 
 ### describe_feedback
 
 Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback]
+Boto3 documentation:
+[DevopsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback)
 
-```python
-def describe_feedback(
-    self,
-    InsightId: str = None
-) -> DescribeFeedbackResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightId`: `str`
+
+Returns
+[DescribeFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describefeedbackresponsetypedef).
 
 ### describe_insight
 
 Type annotations for `boto3.client("devops-guru").describe_insight` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight]
+Boto3 documentation:
+[DevopsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight)
 
-```python
-def describe_insight(
-    self,
-    Id: str
-) -> DescribeInsightResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeinsightresponsetypedef).
 
 ### describe_resource_collection_health
 
-Type annotations for `boto3.client("devops-guru").describe_resource_collection_health` method.
+Type annotations for
+`boto3.client("devops-guru").describe_resource_collection_health` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health]
+Boto3 documentation:
+[DevopsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health)
 
-```python
-def describe_resource_collection_health(
-    self,
-    ResourceCollectionType: Literal['AWS_CLOUD_FORMATION'],
-    NextToken: str = None
-) -> DescribeResourceCollectionHealthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `NextToken`: `str`
+
+Returns
+[DescribeResourceCollectionHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeresourcecollectionhealthresponsetypedef).
 
 ### describe_service_integration
 
-Type annotations for `boto3.client("devops-guru").describe_service_integration` method.
+Type annotations for `boto3.client("devops-guru").describe_service_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration]
+Boto3 documentation:
+[DevopsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration)
 
-```python
-def describe_service_integration(
-    self
-) -> DescribeServiceIntegrationResponseTypeDef:
-    pass
-```
+Returns
+[DescribeServiceIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeserviceintegrationresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("devops-guru").generate_presigned_url` method.
+Type annotations for `boto3.client("devops-guru").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url]
+Boto3 documentation:
+[DevopsGuru.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_resource_collection
 
-Type annotations for `boto3.client("devops-guru").get_resource_collection` method.
+Type annotations for `boto3.client("devops-guru").get_resource_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection]
+Boto3 documentation:
+[DevopsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection)
 
-```python
-def get_resource_collection(
-    self,
-    ResourceCollectionType: Literal['AWS_CLOUD_FORMATION'],
-    NextToken: str = None
-) -> GetResourceCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `NextToken`: `str`
+
+Returns
+[GetResourceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getresourcecollectionresponsetypedef).
 
 ### list_anomalies_for_insight
 
-Type annotations for `boto3.client("devops-guru").list_anomalies_for_insight` method.
+Type annotations for `boto3.client("devops-guru").list_anomalies_for_insight`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight]
+Boto3 documentation:
+[DevopsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight)
 
-```python
-def list_anomalies_for_insight(
-    self,
-    InsightId: str,
-    StartTimeRange: "StartTimeRangeTypeDef" = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAnomaliesForInsightResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightId`: `str` *(required)*
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAnomaliesForInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listanomaliesforinsightresponsetypedef).
 
 ### list_events
 
 Type annotations for `boto3.client("devops-guru").list_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_events]
+Boto3 documentation:
+[DevopsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_events)
 
-```python
-def list_events(
-    self,
-    Filters: ListEventsFiltersTypeDef,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  [ListEventsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsfilterstypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsresponsetypedef).
 
 ### list_insights
 
 Type annotations for `boto3.client("devops-guru").list_insights` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_insights]
+Boto3 documentation:
+[DevopsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_insights)
 
-```python
-def list_insights(
-    self,
-    StatusFilter: ListInsightsStatusFilterTypeDef,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInsightsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StatusFilter`:
+  [ListInsightsStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsstatusfiltertypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsresponsetypedef).
 
 ### list_notification_channels
 
-Type annotations for `boto3.client("devops-guru").list_notification_channels` method.
+Type annotations for `boto3.client("devops-guru").list_notification_channels`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels]
+Boto3 documentation:
+[DevopsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels)
 
-```python
-def list_notification_channels(
-    self,
-    NextToken: str = None
-) -> ListNotificationChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listnotificationchannelsresponsetypedef).
 
 ### list_recommendations
 
 Type annotations for `boto3.client("devops-guru").list_recommendations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations]
+Boto3 documentation:
+[DevopsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations)
 
-```python
-def list_recommendations(
-    self,
-    InsightId: str,
-    NextToken: str = None
-) -> ListRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightId`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listrecommendationsresponsetypedef).
 
 ### put_feedback
 
 Type annotations for `boto3.client("devops-guru").put_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback]
+Boto3 documentation:
+[DevopsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback)
 
-```python
-def put_feedback(
-    self,
-    InsightFeedback: "InsightFeedbackTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InsightFeedback`:
+  [InsightFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insightfeedbacktypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_notification_channel
 
-Type annotations for `boto3.client("devops-guru").remove_notification_channel` method.
+Type annotations for `boto3.client("devops-guru").remove_notification_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel]
+Boto3 documentation:
+[DevopsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel)
 
-```python
-def remove_notification_channel(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### search_insights
 
 Type annotations for `boto3.client("devops-guru").search_insights` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.search_insights]
+Boto3 documentation:
+[DevopsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.search_insights)
 
-```python
-def search_insights(
-    self,
-    StartTimeRange: "StartTimeRangeTypeDef",
-    Type: InsightType,
-    Filters: SearchInsightsFiltersTypeDef = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> SearchInsightsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+  *(required)*
+- `Type`:
+  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
+  *(required)*
+- `Filters`:
+  [SearchInsightsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsfilterstypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[SearchInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsresponsetypedef).
 
 ### update_resource_collection
 
-Type annotations for `boto3.client("devops-guru").update_resource_collection` method.
+Type annotations for `boto3.client("devops-guru").update_resource_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection]
+Boto3 documentation:
+[DevopsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection)
 
-```python
-def update_resource_collection(
-    self,
-    Action: UpdateResourceCollectionAction,
-    ResourceCollection: UpdateResourceCollectionFilterTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Action`:
+  [UpdateResourceCollectionAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#updateresourcecollectionaction)
+  *(required)*
+- `ResourceCollection`:
+  [UpdateResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#updateresourcecollectionfiltertypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_service_integration
 
-Type annotations for `boto3.client("devops-guru").update_service_integration` method.
+Type annotations for `boto3.client("devops-guru").update_service_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration]
+Boto3 documentation:
+[DevopsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration)
 
-```python
-def update_service_integration(
-    self,
-    ServiceIntegration: UpdateServiceIntegrationConfigTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ServiceIntegration`:
+  [UpdateServiceIntegrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#updateserviceintegrationconfigtypedef)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("devops-guru").get_paginator` method with overloads.
+Type annotations for `boto3.client("devops-guru").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_resource_collection_health")` -> [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
-- `client.get_paginator("get_resource_collection")` -> [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
-- `client.get_paginator("list_anomalies_for_insight")` -> [ListAnomaliesForInsightPaginator](./paginators.md#listanomaliesforinsightpaginator)
-- `client.get_paginator("list_events")` -> [ListEventsPaginator](./paginators.md#listeventspaginator)
-- `client.get_paginator("list_insights")` -> [ListInsightsPaginator](./paginators.md#listinsightspaginator)
-- `client.get_paginator("list_notification_channels")` -> [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
-- `client.get_paginator("list_recommendations")` -> [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
-- `client.get_paginator("search_insights")` -> [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
-
-
+- `client.get_paginator("describe_resource_collection_health")` ->
+  [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
+- `client.get_paginator("get_resource_collection")` ->
+  [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
+- `client.get_paginator("list_anomalies_for_insight")` ->
+  [ListAnomaliesForInsightPaginator](./paginators.md#listanomaliesforinsightpaginator)
+- `client.get_paginator("list_events")` ->
+  [ListEventsPaginator](./paginators.md#listeventspaginator)
+- `client.get_paginator("list_insights")` ->
+  [ListInsightsPaginator](./paginators.md#listinsightspaginator)
+- `client.get_paginator("list_notification_channels")` ->
+  [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
+- `client.get_paginator("list_recommendations")` ->
+  [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
+- `client.get_paginator("search_insights")` ->
+  [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)

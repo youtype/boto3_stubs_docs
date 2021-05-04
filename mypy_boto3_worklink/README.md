@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WorkLink
 
-Auto-generated documentation for [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
-type annotations stubs module [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
+Auto-generated documentation for
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+type annotations stubs module
+[mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 ```bash
 pip install mypy-boto3-worklink
@@ -18,7 +20,8 @@ pip install mypy-boto3-worklink
 
 ## WorkLinkClient
 
-Type annotations for  `boto3.client("worklink")` as [WorkLinkClient](./client.md)
+Type annotations for `boto3.client("worklink")` as
+[WorkLinkClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_worklink.client import WorkLinkClient
 ```
 
-
 WorkLinkClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_domain](./client.md#associate-domain)
 - [associate_website_authorization_provider](./client.md#associate-website-authorization-provider)
 - [associate_website_certificate_authority](./client.md#associate-website-certificate-authority)
@@ -68,10 +69,8 @@ WorkLinkClient [exceptions](./client.md#exceptions)
 - [update_fleet_metadata](./client.md#update-fleet-metadata)
 - [update_identity_provider_configuration](./client.md#update-identity-provider-configuration)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerErrorException](./client.md#internalservererrorexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -79,15 +78,6 @@ WorkLinkClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -105,13 +95,10 @@ from mypy_boto3_worklink.literals import AuthorizationProviderType, ...
 - [FleetStatus](./literals.md#fleetstatus)
 - [IdentityProviderType](./literals.md#identityprovidertype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

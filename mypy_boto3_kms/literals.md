@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KMS](./README.md) > Literals
 
-Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+Auto-generated documentation for
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+type annotations stubs module
+[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [Literals for boto3 KMS module](#literals-for-boto3-kms-module)
   - [AlgorithmSpec](#algorithmspec)

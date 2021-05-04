@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaTailor](./README.md) > Literals
 
-Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+Auto-generated documentation for
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+type annotations stubs module
+[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [Literals for boto3 MediaTailor module](#literals-for-boto3-mediatailor-module)
   - [AccessType](#accesstype)

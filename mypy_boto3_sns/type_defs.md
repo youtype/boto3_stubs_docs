@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SNS](./README.md) > Structures
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Typed dictionaries for boto3 SNS module](#typed-dictionaries-for-boto3-sns-module)
   - [CheckIfPhoneNumberIsOptedOutResponseTypeDef](#checkifphonenumberisoptedoutresponsetypedef)
@@ -39,12 +41,9 @@ type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-bot
 from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `isOptedOut`: `bool`
 
+- `isOptedOut`: `bool`
 
 ## ConfirmSubscriptionResponseTypeDef
 
@@ -52,12 +51,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ConfirmSubscriptionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SubscriptionArn`: `str`
 
+- `SubscriptionArn`: `str`
 
 ## CreateEndpointResponseTypeDef
 
@@ -65,12 +61,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import CreateEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointArn`: `str`
 
+- `EndpointArn`: `str`
 
 ## CreatePlatformApplicationResponseTypeDef
 
@@ -78,12 +71,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import CreatePlatformApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformApplicationArn`: `str`
 
+- `PlatformApplicationArn`: `str`
 
 ## CreateTopicResponseTypeDef
 
@@ -91,12 +81,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import CreateTopicResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TopicArn`: `str`
 
+- `TopicArn`: `str`
 
 ## EndpointTypeDef
 
@@ -104,13 +91,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import EndpointTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointArn`: `str`
-- `Attributes`: `Dict[str, str]`
 
+- `EndpointArn`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## GetEndpointAttributesResponseTypeDef
 
@@ -118,12 +102,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import GetEndpointAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## GetPlatformApplicationAttributesResponseTypeDef
 
@@ -131,12 +112,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import GetPlatformApplicationAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## GetSMSAttributesResponseTypeDef
 
@@ -144,12 +122,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import GetSMSAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributes`: `Dict[str, str]`
 
+- `attributes`: `Dict`\[`str`, `str`\]
 
 ## GetSubscriptionAttributesResponseTypeDef
 
@@ -157,12 +132,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import GetSubscriptionAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## GetTopicAttributesResponseTypeDef
 
@@ -170,12 +142,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import GetTopicAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## ListEndpointsByPlatformApplicationResponseTypeDef
 
@@ -183,13 +152,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Endpoints`: `List["EndpointTypeDef"]`
-- `NextToken`: `str`
 
+- `Endpoints`:
+  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#endpointtypedef)\]
+- `NextToken`: `str`
 
 ## ListPhoneNumbersOptedOutResponseTypeDef
 
@@ -197,13 +164,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListPhoneNumbersOptedOutResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `phoneNumbers`: `List[str]`
-- `nextToken`: `str`
 
+- `phoneNumbers`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListPlatformApplicationsResponseTypeDef
 
@@ -211,13 +175,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListPlatformApplicationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformApplications`: `List["PlatformApplicationTypeDef"]`
-- `NextToken`: `str`
 
+- `PlatformApplications`:
+  `List`\[[PlatformApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#platformapplicationtypedef)\]
+- `NextToken`: `str`
 
 ## ListSubscriptionsByTopicResponseTypeDef
 
@@ -225,13 +187,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListSubscriptionsByTopicResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Subscriptions`: `List["SubscriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Subscriptions`:
+  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriptiontypedef)\]
+- `NextToken`: `str`
 
 ## ListSubscriptionsResponseTypeDef
 
@@ -239,13 +199,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListSubscriptionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Subscriptions`: `List["SubscriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Subscriptions`:
+  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriptiontypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -253,12 +211,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
 
 ## ListTopicsResponseTypeDef
 
@@ -266,13 +222,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import ListTopicsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Topics`: `List["TopicTypeDef"]`
-- `NextToken`: `str`
 
+- `Topics`:
+  `List`\[[TopicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#topictypedef)\]
+- `NextToken`: `str`
 
 ## MessageAttributeValueTypeDef
 
@@ -280,16 +234,14 @@ Optional fields:
 from mypy_boto3_sns.type_defs import MessageAttributeValueTypeDef
 ```
 
-
 Required fields:
+
 - `DataType`: `str`
 
-
-
 Optional fields:
-- `StringValue`: `str`
-- `BinaryValue`: `Union[bytes, IO[bytes]]`
 
+- `StringValue`: `str`
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## PaginatorConfigTypeDef
 
@@ -297,14 +249,11 @@ Optional fields:
 from mypy_boto3_sns.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlatformApplicationTypeDef
 
@@ -312,13 +261,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import PlatformApplicationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PlatformApplicationArn`: `str`
-- `Attributes`: `Dict[str, str]`
 
+- `PlatformApplicationArn`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## PublishResponseTypeDef
 
@@ -326,13 +272,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import PublishResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MessageId`: `str`
 - `SequenceNumber`: `str`
-
 
 ## SubscribeResponseTypeDef
 
@@ -340,12 +283,9 @@ Optional fields:
 from mypy_boto3_sns.type_defs import SubscribeResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SubscriptionArn`: `str`
 
+- `SubscriptionArn`: `str`
 
 ## SubscriptionTypeDef
 
@@ -353,16 +293,13 @@ Optional fields:
 from mypy_boto3_sns.type_defs import SubscriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SubscriptionArn`: `str`
 - `Owner`: `str`
 - `Protocol`: `str`
 - `Endpoint`: `str`
 - `TopicArn`: `str`
-
 
 ## TagTypeDef
 
@@ -370,13 +307,10 @@ Optional fields:
 from mypy_boto3_sns.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TopicTypeDef
 
@@ -384,9 +318,6 @@ Required fields:
 from mypy_boto3_sns.type_defs import TopicTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TopicArn`: `str`
 
+- `TopicArn`: `str`

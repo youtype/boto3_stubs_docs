@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GameLift](./README.md) > GameLiftClient
 
-Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+Auto-generated documentation for
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+type annotations stubs module
+[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [GameLiftClient for boto3 GameLift module](#gameliftclient-for-boto3-gamelift-module)
   - [GameLiftClient](#gameliftclient)
@@ -121,12 +123,13 @@ def get_gamelift_client() -> GameLiftClient:
     return boto3.client("gamelift")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
+Boto3 documentation:
+[GameLift.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_gamelift.client import Exceptions
@@ -134,7 +137,6 @@ from mypy_boto3_gamelift.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -155,1645 +157,1753 @@ Exceptions:
 - `Exceptions.UnauthorizedException`
 - `Exceptions.UnsupportedRegionException`
 
-
 ## Methods
-
 
 ### accept_match
 
 Type annotations for `boto3.client("gamelift").accept_match` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match]
+Boto3 documentation:
+[GameLift.Client.accept_match](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match)
 
-```python
-def accept_match(
-    self,
-    TicketId: str,
-    PlayerIds: List[str],
-    AcceptanceType: AcceptanceType
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TicketId`: `str` *(required)*
+- `PlayerIds`: `List`\[`str`\] *(required)*
+- `AcceptanceType`:
+  [AcceptanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#acceptancetype)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("gamelift").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate]
+Boto3 documentation:
+[GameLift.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### claim_game_server
 
 Type annotations for `boto3.client("gamelift").claim_game_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server]
+Boto3 documentation:
+[GameLift.Client.claim_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server)
 
-```python
-def claim_game_server(
-    self,
-    GameServerGroupName: str,
-    GameServerId: str = None,
-    GameServerData: str = None
-) -> ClaimGameServerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `GameServerId`: `str`
+- `GameServerData`: `str`
+
+Returns
+[ClaimGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#claimgameserveroutputtypedef).
 
 ### create_alias
 
 Type annotations for `boto3.client("gamelift").create_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias]
+Boto3 documentation:
+[GameLift.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias)
 
-```python
-def create_alias(
-    self,
-    Name: str,
-    RoutingStrategy: "RoutingStrategyTypeDef",
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAliasOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RoutingStrategy`:
+  [RoutingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#routingstrategytypedef)
+  *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createaliasoutputtypedef).
 
 ### create_build
 
 Type annotations for `boto3.client("gamelift").create_build` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build]
+Boto3 documentation:
+[GameLift.Client.create_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
 
-```python
-def create_build(
-    self,
-    Name: str = None,
-    Version: str = None,
-    StorageLocation: "S3LocationTypeDef" = None,
-    OperatingSystem: OperatingSystem = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateBuildOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `Version`: `str`
+- `StorageLocation`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#operatingsystem)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createbuildoutputtypedef).
 
 ### create_fleet
 
 Type annotations for `boto3.client("gamelift").create_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet]
+Boto3 documentation:
+[GameLift.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet)
 
-```python
-def create_fleet(
-    self,
-    Name: str,
-    EC2InstanceType: EC2InstanceType,
-    Description: str = None,
-    BuildId: str = None,
-    ScriptId: str = None,
-    ServerLaunchPath: str = None,
-    ServerLaunchParameters: str = None,
-    LogPaths: List[str] = None,
-    EC2InboundPermissions: List["IpPermissionTypeDef"] = None,
-    NewGameSessionProtectionPolicy: ProtectionPolicy = None,
-    RuntimeConfiguration: "RuntimeConfigurationTypeDef" = None,
-    ResourceCreationLimitPolicy: "ResourceCreationLimitPolicyTypeDef" = None,
-    MetricGroups: List[str] = None,
-    PeerVpcAwsAccountId: str = None,
-    PeerVpcId: str = None,
-    FleetType: FleetType = None,
-    InstanceRoleArn: str = None,
-    CertificateConfiguration: "CertificateConfigurationTypeDef" = None,
-    Locations: List[LocationConfigurationTypeDef] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFleetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `EC2InstanceType`:
+  [EC2InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#ec2instancetype)
+  *(required)*
+- `Description`: `str`
+- `BuildId`: `str`
+- `ScriptId`: `str`
+- `ServerLaunchPath`: `str`
+- `ServerLaunchParameters`: `str`
+- `LogPaths`: `List`\[`str`\]
+- `EC2InboundPermissions`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+- `NewGameSessionProtectionPolicy`:
+  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+- `RuntimeConfiguration`:
+  [RuntimeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#runtimeconfigurationtypedef)
+- `ResourceCreationLimitPolicy`:
+  [ResourceCreationLimitPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resourcecreationlimitpolicytypedef)
+- `MetricGroups`: `List`\[`str`\]
+- `PeerVpcAwsAccountId`: `str`
+- `PeerVpcId`: `str`
+- `FleetType`:
+  [FleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#fleettype)
+- `InstanceRoleArn`: `str`
+- `CertificateConfiguration`:
+  [CertificateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#certificateconfigurationtypedef)
+- `Locations`:
+  `List`\[[LocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#locationconfigurationtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFleetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createfleetoutputtypedef).
 
 ### create_fleet_locations
 
 Type annotations for `boto3.client("gamelift").create_fleet_locations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations]
+Boto3 documentation:
+[GameLift.Client.create_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
 
-```python
-def create_fleet_locations(
-    self,
-    FleetId: str,
-    Locations: List[LocationConfigurationTypeDef]
-) -> CreateFleetLocationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Locations`:
+  `List`\[[LocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#locationconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[CreateFleetLocationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createfleetlocationsoutputtypedef).
 
 ### create_game_server_group
 
-Type annotations for `boto3.client("gamelift").create_game_server_group` method.
+Type annotations for `boto3.client("gamelift").create_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group]
+Boto3 documentation:
+[GameLift.Client.create_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group)
 
-```python
-def create_game_server_group(
-    self,
-    GameServerGroupName: str,
-    RoleArn: str,
-    MinSize: int,
-    MaxSize: int,
-    LaunchTemplate: LaunchTemplateSpecificationTypeDef,
-    InstanceDefinitions: List["InstanceDefinitionTypeDef"],
-    AutoScalingPolicy: GameServerGroupAutoScalingPolicyTypeDef = None,
-    BalancingStrategy: BalancingStrategy = None,
-    GameServerProtectionPolicy: GameServerProtectionPolicy = None,
-    VpcSubnets: List[str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `MinSize`: `int` *(required)*
+- `MaxSize`: `int` *(required)*
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#launchtemplatespecificationtypedef)
+  *(required)*
+- `InstanceDefinitions`:
+  `List`\[[InstanceDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#instancedefinitiontypedef)\]
+  *(required)*
+- `AutoScalingPolicy`:
+  [GameServerGroupAutoScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gameservergroupautoscalingpolicytypedef)
+- `BalancingStrategy`:
+  [BalancingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#balancingstrategy)
+- `GameServerProtectionPolicy`:
+  [GameServerProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverprotectionpolicy)
+- `VpcSubnets`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategameservergroupoutputtypedef).
 
 ### create_game_session
 
 Type annotations for `boto3.client("gamelift").create_game_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session]
+Boto3 documentation:
+[GameLift.Client.create_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session)
 
-```python
-def create_game_session(
-    self,
-    MaximumPlayerSessionCount: int,
-    FleetId: str = None,
-    AliasId: str = None,
-    Name: str = None,
-    GameProperties: List["GamePropertyTypeDef"] = None,
-    CreatorId: str = None,
-    GameSessionId: str = None,
-    IdempotencyToken: str = None,
-    GameSessionData: str = None,
-    Location: str = None
-) -> CreateGameSessionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MaximumPlayerSessionCount`: `int` *(required)*
+- `FleetId`: `str`
+- `AliasId`: `str`
+- `Name`: `str`
+- `GameProperties`:
+  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+- `CreatorId`: `str`
+- `GameSessionId`: `str`
+- `IdempotencyToken`: `str`
+- `GameSessionData`: `str`
+- `Location`: `str`
+
+Returns
+[CreateGameSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategamesessionoutputtypedef).
 
 ### create_game_session_queue
 
-Type annotations for `boto3.client("gamelift").create_game_session_queue` method.
+Type annotations for `boto3.client("gamelift").create_game_session_queue`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue]
+Boto3 documentation:
+[GameLift.Client.create_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue)
 
-```python
-def create_game_session_queue(
-    self,
-    Name: str,
-    TimeoutInSeconds: int = None,
-    PlayerLatencyPolicies: List["PlayerLatencyPolicyTypeDef"] = None,
-    Destinations: List["GameSessionQueueDestinationTypeDef"] = None,
-    FilterConfiguration: "FilterConfigurationTypeDef" = None,
-    PriorityConfiguration: "PriorityConfigurationTypeDef" = None,
-    CustomEventData: str = None,
-    NotificationTarget: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateGameSessionQueueOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `TimeoutInSeconds`: `int`
+- `PlayerLatencyPolicies`:
+  `List`\[[PlayerLatencyPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencypolicytypedef)\]
+- `Destinations`:
+  `List`\[[GameSessionQueueDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamesessionqueuedestinationtypedef)\]
+- `FilterConfiguration`:
+  [FilterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#filterconfigurationtypedef)
+- `PriorityConfiguration`:
+  [PriorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#priorityconfigurationtypedef)
+- `CustomEventData`: `str`
+- `NotificationTarget`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateGameSessionQueueOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategamesessionqueueoutputtypedef).
 
 ### create_matchmaking_configuration
 
-Type annotations for `boto3.client("gamelift").create_matchmaking_configuration` method.
+Type annotations for
+`boto3.client("gamelift").create_matchmaking_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration]
+Boto3 documentation:
+[GameLift.Client.create_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration)
 
-```python
-def create_matchmaking_configuration(
-    self,
-    Name: str,
-    RequestTimeoutSeconds: int,
-    AcceptanceRequired: bool,
-    RuleSetName: str,
-    Description: str = None,
-    GameSessionQueueArns: List[str] = None,
-    AcceptanceTimeoutSeconds: int = None,
-    NotificationTarget: str = None,
-    AdditionalPlayerCount: int = None,
-    CustomEventData: str = None,
-    GameProperties: List["GamePropertyTypeDef"] = None,
-    GameSessionData: str = None,
-    BackfillMode: BackfillMode = None,
-    FlexMatchMode: FlexMatchMode = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateMatchmakingConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RequestTimeoutSeconds`: `int` *(required)*
+- `AcceptanceRequired`: `bool` *(required)*
+- `RuleSetName`: `str` *(required)*
+- `Description`: `str`
+- `GameSessionQueueArns`: `List`\[`str`\]
+- `AcceptanceTimeoutSeconds`: `int`
+- `NotificationTarget`: `str`
+- `AdditionalPlayerCount`: `int`
+- `CustomEventData`: `str`
+- `GameProperties`:
+  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+- `GameSessionData`: `str`
+- `BackfillMode`:
+  [BackfillMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#backfillmode)
+- `FlexMatchMode`:
+  [FlexMatchMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#flexmatchmode)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateMatchmakingConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creatematchmakingconfigurationoutputtypedef).
 
 ### create_matchmaking_rule_set
 
-Type annotations for `boto3.client("gamelift").create_matchmaking_rule_set` method.
+Type annotations for `boto3.client("gamelift").create_matchmaking_rule_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set]
+Boto3 documentation:
+[GameLift.Client.create_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set)
 
-```python
-def create_matchmaking_rule_set(
-    self,
-    Name: str,
-    RuleSetBody: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateMatchmakingRuleSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RuleSetBody`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateMatchmakingRuleSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creatematchmakingrulesetoutputtypedef).
 
 ### create_player_session
 
 Type annotations for `boto3.client("gamelift").create_player_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session]
+Boto3 documentation:
+[GameLift.Client.create_player_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session)
 
-```python
-def create_player_session(
-    self,
-    GameSessionId: str,
-    PlayerId: str,
-    PlayerData: str = None
-) -> CreatePlayerSessionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameSessionId`: `str` *(required)*
+- `PlayerId`: `str` *(required)*
+- `PlayerData`: `str`
+
+Returns
+[CreatePlayerSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createplayersessionoutputtypedef).
 
 ### create_player_sessions
 
 Type annotations for `boto3.client("gamelift").create_player_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions]
+Boto3 documentation:
+[GameLift.Client.create_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions)
 
-```python
-def create_player_sessions(
-    self,
-    GameSessionId: str,
-    PlayerIds: List[str],
-    PlayerDataMap: Dict[str, str] = None
-) -> CreatePlayerSessionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameSessionId`: `str` *(required)*
+- `PlayerIds`: `List`\[`str`\] *(required)*
+- `PlayerDataMap`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreatePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createplayersessionsoutputtypedef).
 
 ### create_script
 
 Type annotations for `boto3.client("gamelift").create_script` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script]
+Boto3 documentation:
+[GameLift.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script)
 
-```python
-def create_script(
-    self,
-    Name: str = None,
-    Version: str = None,
-    StorageLocation: "S3LocationTypeDef" = None,
-    ZipFile: Union[bytes, IO[bytes]] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateScriptOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `Version`: `str`
+- `StorageLocation`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createscriptoutputtypedef).
 
 ### create_vpc_peering_authorization
 
-Type annotations for `boto3.client("gamelift").create_vpc_peering_authorization` method.
+Type annotations for
+`boto3.client("gamelift").create_vpc_peering_authorization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization]
+Boto3 documentation:
+[GameLift.Client.create_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
 
-```python
-def create_vpc_peering_authorization(
-    self,
-    GameLiftAwsAccountId: str,
-    PeerVpcId: str
-) -> CreateVpcPeeringAuthorizationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameLiftAwsAccountId`: `str` *(required)*
+- `PeerVpcId`: `str` *(required)*
+
+Returns
+[CreateVpcPeeringAuthorizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createvpcpeeringauthorizationoutputtypedef).
 
 ### create_vpc_peering_connection
 
-Type annotations for `boto3.client("gamelift").create_vpc_peering_connection` method.
+Type annotations for `boto3.client("gamelift").create_vpc_peering_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection]
+Boto3 documentation:
+[GameLift.Client.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
 
-```python
-def create_vpc_peering_connection(
-    self,
-    FleetId: str,
-    PeerVpcAwsAccountId: str,
-    PeerVpcId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `PeerVpcAwsAccountId`: `str` *(required)*
+- `PeerVpcId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_alias
 
 Type annotations for `boto3.client("gamelift").delete_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias]
+Boto3 documentation:
+[GameLift.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
 
-```python
-def delete_alias(
-    self,
-    AliasId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
 
 ### delete_build
 
 Type annotations for `boto3.client("gamelift").delete_build` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build]
+Boto3 documentation:
+[GameLift.Client.delete_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
 
-```python
-def delete_build(
-    self,
-    BuildId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BuildId`: `str` *(required)*
 
 ### delete_fleet
 
 Type annotations for `boto3.client("gamelift").delete_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet]
+Boto3 documentation:
+[GameLift.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
 
-```python
-def delete_fleet(
-    self,
-    FleetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
 
 ### delete_fleet_locations
 
 Type annotations for `boto3.client("gamelift").delete_fleet_locations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations]
+Boto3 documentation:
+[GameLift.Client.delete_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
 
-```python
-def delete_fleet_locations(
-    self,
-    FleetId: str,
-    Locations: List[str]
-) -> DeleteFleetLocationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Locations`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteFleetLocationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#deletefleetlocationsoutputtypedef).
 
 ### delete_game_server_group
 
-Type annotations for `boto3.client("gamelift").delete_game_server_group` method.
+Type annotations for `boto3.client("gamelift").delete_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group]
+Boto3 documentation:
+[GameLift.Client.delete_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
 
-```python
-def delete_game_server_group(
-    self,
-    GameServerGroupName: str,
-    DeleteOption: GameServerGroupDeleteOption = None
-) -> DeleteGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `DeleteOption`:
+  [GameServerGroupDeleteOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameservergroupdeleteoption)
+
+Returns
+[DeleteGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#deletegameservergroupoutputtypedef).
 
 ### delete_game_session_queue
 
-Type annotations for `boto3.client("gamelift").delete_game_session_queue` method.
+Type annotations for `boto3.client("gamelift").delete_game_session_queue`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue]
+Boto3 documentation:
+[GameLift.Client.delete_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
 
-```python
-def delete_game_session_queue(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_matchmaking_configuration
 
-Type annotations for `boto3.client("gamelift").delete_matchmaking_configuration` method.
+Type annotations for
+`boto3.client("gamelift").delete_matchmaking_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration]
+Boto3 documentation:
+[GameLift.Client.delete_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
 
-```python
-def delete_matchmaking_configuration(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_matchmaking_rule_set
 
-Type annotations for `boto3.client("gamelift").delete_matchmaking_rule_set` method.
+Type annotations for `boto3.client("gamelift").delete_matchmaking_rule_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set]
+Boto3 documentation:
+[GameLift.Client.delete_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
 
-```python
-def delete_matchmaking_rule_set(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_scaling_policy
 
 Type annotations for `boto3.client("gamelift").delete_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy]
+Boto3 documentation:
+[GameLift.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
 
-```python
-def delete_scaling_policy(
-    self,
-    Name: str,
-    FleetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `FleetId`: `str` *(required)*
 
 ### delete_script
 
 Type annotations for `boto3.client("gamelift").delete_script` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script]
+Boto3 documentation:
+[GameLift.Client.delete_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
 
-```python
-def delete_script(
-    self,
-    ScriptId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ScriptId`: `str` *(required)*
 
 ### delete_vpc_peering_authorization
 
-Type annotations for `boto3.client("gamelift").delete_vpc_peering_authorization` method.
+Type annotations for
+`boto3.client("gamelift").delete_vpc_peering_authorization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization]
+Boto3 documentation:
+[GameLift.Client.delete_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
 
-```python
-def delete_vpc_peering_authorization(
-    self,
-    GameLiftAwsAccountId: str,
-    PeerVpcId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GameLiftAwsAccountId`: `str` *(required)*
+- `PeerVpcId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_vpc_peering_connection
 
-Type annotations for `boto3.client("gamelift").delete_vpc_peering_connection` method.
+Type annotations for `boto3.client("gamelift").delete_vpc_peering_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection]
+Boto3 documentation:
+[GameLift.Client.delete_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
 
-```python
-def delete_vpc_peering_connection(
-    self,
-    FleetId: str,
-    VpcPeeringConnectionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `VpcPeeringConnectionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_game_server
 
 Type annotations for `boto3.client("gamelift").deregister_game_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server]
+Boto3 documentation:
+[GameLift.Client.deregister_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
 
-```python
-def deregister_game_server(
-    self,
-    GameServerGroupName: str,
-    GameServerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `GameServerId`: `str` *(required)*
 
 ### describe_alias
 
 Type annotations for `boto3.client("gamelift").describe_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias]
+Boto3 documentation:
+[GameLift.Client.describe_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
 
-```python
-def describe_alias(
-    self,
-    AliasId: str
-) -> DescribeAliasOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+
+Returns
+[DescribeAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describealiasoutputtypedef).
 
 ### describe_build
 
 Type annotations for `boto3.client("gamelift").describe_build` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build]
+Boto3 documentation:
+[GameLift.Client.describe_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
 
-```python
-def describe_build(
-    self,
-    BuildId: str
-) -> DescribeBuildOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BuildId`: `str` *(required)*
+
+Returns
+[DescribeBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describebuildoutputtypedef).
 
 ### describe_ec2_instance_limits
 
-Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits` method.
+Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits]
+Boto3 documentation:
+[GameLift.Client.describe_ec2_instance_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
 
-```python
-def describe_ec2_instance_limits(
-    self,
-    EC2InstanceType: EC2InstanceType = None,
-    Location: str = None
-) -> DescribeEC2InstanceLimitsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EC2InstanceType`:
+  [EC2InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#ec2instancetype)
+- `Location`: `str`
+
+Returns
+[DescribeEC2InstanceLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeec2instancelimitsoutputtypedef).
 
 ### describe_fleet_attributes
 
-Type annotations for `boto3.client("gamelift").describe_fleet_attributes` method.
+Type annotations for `boto3.client("gamelift").describe_fleet_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes)
 
-```python
-def describe_fleet_attributes(
-    self,
-    FleetIds: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeFleetAttributesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetattributesoutputtypedef).
 
 ### describe_fleet_capacity
 
 Type annotations for `boto3.client("gamelift").describe_fleet_capacity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity)
 
-```python
-def describe_fleet_capacity(
-    self,
-    FleetIds: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeFleetCapacityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetcapacityoutputtypedef).
 
 ### describe_fleet_events
 
 Type annotations for `boto3.client("gamelift").describe_fleet_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events)
 
-```python
-def describe_fleet_events(
-    self,
-    FleetId: str,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeFleetEventsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeFleetEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleeteventsoutputtypedef).
 
 ### describe_fleet_location_attributes
 
-Type annotations for `boto3.client("gamelift").describe_fleet_location_attributes` method.
+Type annotations for
+`boto3.client("gamelift").describe_fleet_location_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_location_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes)
 
-```python
-def describe_fleet_location_attributes(
-    self,
-    FleetId: str,
-    Locations: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeFleetLocationAttributesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Locations`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeFleetLocationAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationattributesoutputtypedef).
 
 ### describe_fleet_location_capacity
 
-Type annotations for `boto3.client("gamelift").describe_fleet_location_capacity` method.
+Type annotations for
+`boto3.client("gamelift").describe_fleet_location_capacity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_location_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
 
-```python
-def describe_fleet_location_capacity(
-    self,
-    FleetId: str,
-    Location: str
-) -> DescribeFleetLocationCapacityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Location`: `str` *(required)*
+
+Returns
+[DescribeFleetLocationCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationcapacityoutputtypedef).
 
 ### describe_fleet_location_utilization
 
-Type annotations for `boto3.client("gamelift").describe_fleet_location_utilization` method.
+Type annotations for
+`boto3.client("gamelift").describe_fleet_location_utilization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_location_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
 
-```python
-def describe_fleet_location_utilization(
-    self,
-    FleetId: str,
-    Location: str
-) -> DescribeFleetLocationUtilizationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Location`: `str` *(required)*
+
+Returns
+[DescribeFleetLocationUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationutilizationoutputtypedef).
 
 ### describe_fleet_port_settings
 
-Type annotations for `boto3.client("gamelift").describe_fleet_port_settings` method.
+Type annotations for `boto3.client("gamelift").describe_fleet_port_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
 
-```python
-def describe_fleet_port_settings(
-    self,
-    FleetId: str,
-    Location: str = None
-) -> DescribeFleetPortSettingsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Location`: `str`
+
+Returns
+[DescribeFleetPortSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetportsettingsoutputtypedef).
 
 ### describe_fleet_utilization
 
-Type annotations for `boto3.client("gamelift").describe_fleet_utilization` method.
+Type annotations for `boto3.client("gamelift").describe_fleet_utilization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization]
+Boto3 documentation:
+[GameLift.Client.describe_fleet_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization)
 
-```python
-def describe_fleet_utilization(
-    self,
-    FleetIds: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeFleetUtilizationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeFleetUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetutilizationoutputtypedef).
 
 ### describe_game_server
 
 Type annotations for `boto3.client("gamelift").describe_game_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server]
+Boto3 documentation:
+[GameLift.Client.describe_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
 
-```python
-def describe_game_server(
-    self,
-    GameServerGroupName: str,
-    GameServerId: str
-) -> DescribeGameServerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `GameServerId`: `str` *(required)*
+
+Returns
+[DescribeGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserveroutputtypedef).
 
 ### describe_game_server_group
 
-Type annotations for `boto3.client("gamelift").describe_game_server_group` method.
+Type annotations for `boto3.client("gamelift").describe_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group]
+Boto3 documentation:
+[GameLift.Client.describe_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
 
-```python
-def describe_game_server_group(
-    self,
-    GameServerGroupName: str
-) -> DescribeGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+
+Returns
+[DescribeGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameservergroupoutputtypedef).
 
 ### describe_game_server_instances
 
-Type annotations for `boto3.client("gamelift").describe_game_server_instances` method.
+Type annotations for `boto3.client("gamelift").describe_game_server_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances]
+Boto3 documentation:
+[GameLift.Client.describe_game_server_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances)
 
-```python
-def describe_game_server_instances(
-    self,
-    GameServerGroupName: str,
-    InstanceIds: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeGameServerInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeGameServerInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserverinstancesoutputtypedef).
 
 ### describe_game_session_details
 
-Type annotations for `boto3.client("gamelift").describe_game_session_details` method.
+Type annotations for `boto3.client("gamelift").describe_game_session_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details]
+Boto3 documentation:
+[GameLift.Client.describe_game_session_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details)
 
-```python
-def describe_game_session_details(
-    self,
-    FleetId: str = None,
-    GameSessionId: str = None,
-    AliasId: str = None,
-    Location: str = None,
-    StatusFilter: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeGameSessionDetailsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str`
+- `GameSessionId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `StatusFilter`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeGameSessionDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessiondetailsoutputtypedef).
 
 ### describe_game_session_placement
 
-Type annotations for `boto3.client("gamelift").describe_game_session_placement` method.
+Type annotations for `boto3.client("gamelift").describe_game_session_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement]
+Boto3 documentation:
+[GameLift.Client.describe_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
 
-```python
-def describe_game_session_placement(
-    self,
-    PlacementId: str
-) -> DescribeGameSessionPlacementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlacementId`: `str` *(required)*
+
+Returns
+[DescribeGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionplacementoutputtypedef).
 
 ### describe_game_session_queues
 
-Type annotations for `boto3.client("gamelift").describe_game_session_queues` method.
+Type annotations for `boto3.client("gamelift").describe_game_session_queues`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues]
+Boto3 documentation:
+[GameLift.Client.describe_game_session_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues)
 
-```python
-def describe_game_session_queues(
-    self,
-    Names: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeGameSessionQueuesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeGameSessionQueuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionqueuesoutputtypedef).
 
 ### describe_game_sessions
 
 Type annotations for `boto3.client("gamelift").describe_game_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions]
+Boto3 documentation:
+[GameLift.Client.describe_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions)
 
-```python
-def describe_game_sessions(
-    self,
-    FleetId: str = None,
-    GameSessionId: str = None,
-    AliasId: str = None,
-    Location: str = None,
-    StatusFilter: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeGameSessionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str`
+- `GameSessionId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `StatusFilter`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionsoutputtypedef).
 
 ### describe_instances
 
 Type annotations for `boto3.client("gamelift").describe_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances]
+Boto3 documentation:
+[GameLift.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances)
 
-```python
-def describe_instances(
-    self,
-    FleetId: str,
-    InstanceId: str = None,
-    Limit: int = None,
-    NextToken: str = None,
-    Location: str = None
-) -> DescribeInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `InstanceId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+- `Location`: `str`
+
+Returns
+[DescribeInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeinstancesoutputtypedef).
 
 ### describe_matchmaking
 
 Type annotations for `boto3.client("gamelift").describe_matchmaking` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking]
+Boto3 documentation:
+[GameLift.Client.describe_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
 
-```python
-def describe_matchmaking(
-    self,
-    TicketIds: List[str]
-) -> DescribeMatchmakingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TicketIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeMatchmakingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingoutputtypedef).
 
 ### describe_matchmaking_configurations
 
-Type annotations for `boto3.client("gamelift").describe_matchmaking_configurations` method.
+Type annotations for
+`boto3.client("gamelift").describe_matchmaking_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations]
+Boto3 documentation:
+[GameLift.Client.describe_matchmaking_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations)
 
-```python
-def describe_matchmaking_configurations(
-    self,
-    Names: List[str] = None,
-    RuleSetName: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeMatchmakingConfigurationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\]
+- `RuleSetName`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMatchmakingConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingconfigurationsoutputtypedef).
 
 ### describe_matchmaking_rule_sets
 
-Type annotations for `boto3.client("gamelift").describe_matchmaking_rule_sets` method.
+Type annotations for `boto3.client("gamelift").describe_matchmaking_rule_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets]
+Boto3 documentation:
+[GameLift.Client.describe_matchmaking_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets)
 
-```python
-def describe_matchmaking_rule_sets(
-    self,
-    Names: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeMatchmakingRuleSetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeMatchmakingRuleSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingrulesetsoutputtypedef).
 
 ### describe_player_sessions
 
-Type annotations for `boto3.client("gamelift").describe_player_sessions` method.
+Type annotations for `boto3.client("gamelift").describe_player_sessions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions]
+Boto3 documentation:
+[GameLift.Client.describe_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions)
 
-```python
-def describe_player_sessions(
-    self,
-    GameSessionId: str = None,
-    PlayerId: str = None,
-    PlayerSessionId: str = None,
-    PlayerSessionStatusFilter: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribePlayerSessionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameSessionId`: `str`
+- `PlayerId`: `str`
+- `PlayerSessionId`: `str`
+- `PlayerSessionStatusFilter`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeplayersessionsoutputtypedef).
 
 ### describe_runtime_configuration
 
-Type annotations for `boto3.client("gamelift").describe_runtime_configuration` method.
+Type annotations for `boto3.client("gamelift").describe_runtime_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration]
+Boto3 documentation:
+[GameLift.Client.describe_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
 
-```python
-def describe_runtime_configuration(
-    self,
-    FleetId: str
-) -> DescribeRuntimeConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+
+Returns
+[DescribeRuntimeConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeruntimeconfigurationoutputtypedef).
 
 ### describe_scaling_policies
 
-Type annotations for `boto3.client("gamelift").describe_scaling_policies` method.
+Type annotations for `boto3.client("gamelift").describe_scaling_policies`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies]
+Boto3 documentation:
+[GameLift.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies)
 
-```python
-def describe_scaling_policies(
-    self,
-    FleetId: str,
-    StatusFilter: ScalingStatusType = None,
-    Limit: int = None,
-    NextToken: str = None,
-    Location: str = None
-) -> DescribeScalingPoliciesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `StatusFilter`:
+  [ScalingStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingstatustype)
+- `Limit`: `int`
+- `NextToken`: `str`
+- `Location`: `str`
+
+Returns
+[DescribeScalingPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescalingpoliciesoutputtypedef).
 
 ### describe_script
 
 Type annotations for `boto3.client("gamelift").describe_script` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script]
+Boto3 documentation:
+[GameLift.Client.describe_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
 
-```python
-def describe_script(
-    self,
-    ScriptId: str
-) -> DescribeScriptOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ScriptId`: `str` *(required)*
+
+Returns
+[DescribeScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescriptoutputtypedef).
 
 ### describe_vpc_peering_authorizations
 
-Type annotations for `boto3.client("gamelift").describe_vpc_peering_authorizations` method.
+Type annotations for
+`boto3.client("gamelift").describe_vpc_peering_authorizations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations]
+Boto3 documentation:
+[GameLift.Client.describe_vpc_peering_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
 
-```python
-def describe_vpc_peering_authorizations(
-    self
-) -> DescribeVpcPeeringAuthorizationsOutputTypeDef:
-    pass
-```
+Returns
+[DescribeVpcPeeringAuthorizationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describevpcpeeringauthorizationsoutputtypedef).
 
 ### describe_vpc_peering_connections
 
-Type annotations for `boto3.client("gamelift").describe_vpc_peering_connections` method.
+Type annotations for
+`boto3.client("gamelift").describe_vpc_peering_connections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections]
+Boto3 documentation:
+[GameLift.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
 
-```python
-def describe_vpc_peering_connections(
-    self,
-    FleetId: str = None
-) -> DescribeVpcPeeringConnectionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str`
+
+Returns
+[DescribeVpcPeeringConnectionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describevpcpeeringconnectionsoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("gamelift").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url]
+Boto3 documentation:
+[GameLift.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_game_session_log_url
 
-Type annotations for `boto3.client("gamelift").get_game_session_log_url` method.
+Type annotations for `boto3.client("gamelift").get_game_session_log_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url]
+Boto3 documentation:
+[GameLift.Client.get_game_session_log_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
 
-```python
-def get_game_session_log_url(
-    self,
-    GameSessionId: str
-) -> GetGameSessionLogUrlOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameSessionId`: `str` *(required)*
+
+Returns
+[GetGameSessionLogUrlOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#getgamesessionlogurloutputtypedef).
 
 ### get_instance_access
 
 Type annotations for `boto3.client("gamelift").get_instance_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access]
+Boto3 documentation:
+[GameLift.Client.get_instance_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
 
-```python
-def get_instance_access(
-    self,
-    FleetId: str,
-    InstanceId: str
-) -> GetInstanceAccessOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+
+Returns
+[GetInstanceAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#getinstanceaccessoutputtypedef).
 
 ### list_aliases
 
 Type annotations for `boto3.client("gamelift").list_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases]
+Boto3 documentation:
+[GameLift.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases)
 
-```python
-def list_aliases(
-    self,
-    RoutingStrategyType: RoutingStrategyType = None,
-    Name: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListAliasesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RoutingStrategyType`:
+  [RoutingStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#routingstrategytype)
+- `Name`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAliasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listaliasesoutputtypedef).
 
 ### list_builds
 
 Type annotations for `boto3.client("gamelift").list_builds` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds]
+Boto3 documentation:
+[GameLift.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds)
 
-```python
-def list_builds(
-    self,
-    Status: BuildStatus = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListBuildsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Status`:
+  [BuildStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#buildstatus)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listbuildsoutputtypedef).
 
 ### list_fleets
 
 Type annotations for `boto3.client("gamelift").list_fleets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets]
+Boto3 documentation:
+[GameLift.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets)
 
-```python
-def list_fleets(
-    self,
-    BuildId: str = None,
-    ScriptId: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListFleetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BuildId`: `str`
+- `ScriptId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listfleetsoutputtypedef).
 
 ### list_game_server_groups
 
 Type annotations for `boto3.client("gamelift").list_game_server_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups]
+Boto3 documentation:
+[GameLift.Client.list_game_server_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
 
-```python
-def list_game_server_groups(
-    self,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListGameServerGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListGameServerGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameservergroupsoutputtypedef).
 
 ### list_game_servers
 
 Type annotations for `boto3.client("gamelift").list_game_servers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers]
+Boto3 documentation:
+[GameLift.Client.list_game_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers)
 
-```python
-def list_game_servers(
-    self,
-    GameServerGroupName: str,
-    SortOrder: SortOrder = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListGameServersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#sortorder)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListGameServersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameserversoutputtypedef).
 
 ### list_scripts
 
 Type annotations for `boto3.client("gamelift").list_scripts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts]
+Boto3 documentation:
+[GameLift.Client.list_scripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
 
-```python
-def list_scripts(
-    self,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListScriptsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListScriptsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listscriptsoutputtypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("gamelift").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource]
+Boto3 documentation:
+[GameLift.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_scaling_policy
 
 Type annotations for `boto3.client("gamelift").put_scaling_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy]
+Boto3 documentation:
+[GameLift.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy)
 
-```python
-def put_scaling_policy(
-    self,
-    Name: str,
-    FleetId: str,
-    MetricName: MetricName,
-    ScalingAdjustment: int = None,
-    ScalingAdjustmentType: ScalingAdjustmentType = None,
-    Threshold: float = None,
-    ComparisonOperator: ComparisonOperatorType = None,
-    EvaluationPeriods: int = None,
-    PolicyType: PolicyType = None,
-    TargetConfiguration: "TargetConfigurationTypeDef" = None
-) -> PutScalingPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `FleetId`: `str` *(required)*
+- `MetricName`:
+  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#metricname)
+  *(required)*
+- `ScalingAdjustment`: `int`
+- `ScalingAdjustmentType`:
+  [ScalingAdjustmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingadjustmenttype)
+- `Threshold`: `float`
+- `ComparisonOperator`:
+  [ComparisonOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#comparisonoperatortype)
+- `EvaluationPeriods`: `int`
+- `PolicyType`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#policytype)
+- `TargetConfiguration`:
+  [TargetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#targetconfigurationtypedef)
+
+Returns
+[PutScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#putscalingpolicyoutputtypedef).
 
 ### register_game_server
 
 Type annotations for `boto3.client("gamelift").register_game_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server]
+Boto3 documentation:
+[GameLift.Client.register_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server)
 
-```python
-def register_game_server(
-    self,
-    GameServerGroupName: str,
-    GameServerId: str,
-    InstanceId: str,
-    ConnectionInfo: str = None,
-    GameServerData: str = None
-) -> RegisterGameServerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `GameServerId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `ConnectionInfo`: `str`
+- `GameServerData`: `str`
+
+Returns
+[RegisterGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#registergameserveroutputtypedef).
 
 ### request_upload_credentials
 
-Type annotations for `boto3.client("gamelift").request_upload_credentials` method.
+Type annotations for `boto3.client("gamelift").request_upload_credentials`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials]
+Boto3 documentation:
+[GameLift.Client.request_upload_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
 
-```python
-def request_upload_credentials(
-    self,
-    BuildId: str
-) -> RequestUploadCredentialsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BuildId`: `str` *(required)*
+
+Returns
+[RequestUploadCredentialsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#requestuploadcredentialsoutputtypedef).
 
 ### resolve_alias
 
 Type annotations for `boto3.client("gamelift").resolve_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias]
+Boto3 documentation:
+[GameLift.Client.resolve_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
 
-```python
-def resolve_alias(
-    self,
-    AliasId: str
-) -> ResolveAliasOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+
+Returns
+[ResolveAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resolvealiasoutputtypedef).
 
 ### resume_game_server_group
 
-Type annotations for `boto3.client("gamelift").resume_game_server_group` method.
+Type annotations for `boto3.client("gamelift").resume_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group]
+Boto3 documentation:
+[GameLift.Client.resume_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
 
-```python
-def resume_game_server_group(
-    self,
-    GameServerGroupName: str,
-    ResumeActions: List[Literal['REPLACE_INSTANCE_TYPES']]
-) -> ResumeGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']`\] *(required)*
+
+Returns
+[ResumeGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resumegameservergroupoutputtypedef).
 
 ### search_game_sessions
 
 Type annotations for `boto3.client("gamelift").search_game_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions]
+Boto3 documentation:
+[GameLift.Client.search_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions)
 
-```python
-def search_game_sessions(
-    self,
-    FleetId: str = None,
-    AliasId: str = None,
-    Location: str = None,
-    FilterExpression: str = None,
-    SortExpression: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> SearchGameSessionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `FilterExpression`: `str`
+- `SortExpression`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[SearchGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#searchgamesessionsoutputtypedef).
 
 ### start_fleet_actions
 
 Type annotations for `boto3.client("gamelift").start_fleet_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions]
+Boto3 documentation:
+[GameLift.Client.start_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
 
-```python
-def start_fleet_actions(
-    self,
-    FleetId: str,
-    Actions: List[Literal['AUTO_SCALING']],
-    Location: str = None
-) -> StartFleetActionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Actions`: `List`\[`Literal['AUTO_SCALING']`\] *(required)*
+- `Location`: `str`
+
+Returns
+[StartFleetActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startfleetactionsoutputtypedef).
 
 ### start_game_session_placement
 
-Type annotations for `boto3.client("gamelift").start_game_session_placement` method.
+Type annotations for `boto3.client("gamelift").start_game_session_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement]
+Boto3 documentation:
+[GameLift.Client.start_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
 
-```python
-def start_game_session_placement(
-    self,
-    PlacementId: str,
-    GameSessionQueueName: str,
-    MaximumPlayerSessionCount: int,
-    GameProperties: List["GamePropertyTypeDef"] = None,
-    GameSessionName: str = None,
-    PlayerLatencies: List["PlayerLatencyTypeDef"] = None,
-    DesiredPlayerSessions: List[DesiredPlayerSessionTypeDef] = None,
-    GameSessionData: str = None
-) -> StartGameSessionPlacementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlacementId`: `str` *(required)*
+- `GameSessionQueueName`: `str` *(required)*
+- `MaximumPlayerSessionCount`: `int` *(required)*
+- `GameProperties`:
+  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+- `GameSessionName`: `str`
+- `PlayerLatencies`:
+  `List`\[[PlayerLatencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencytypedef)\]
+- `DesiredPlayerSessions`:
+  `List`\[[DesiredPlayerSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#desiredplayersessiontypedef)\]
+- `GameSessionData`: `str`
+
+Returns
+[StartGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startgamesessionplacementoutputtypedef).
 
 ### start_match_backfill
 
 Type annotations for `boto3.client("gamelift").start_match_backfill` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill]
+Boto3 documentation:
+[GameLift.Client.start_match_backfill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill)
 
-```python
-def start_match_backfill(
-    self,
-    ConfigurationName: str,
-    Players: List["PlayerTypeDef"],
-    TicketId: str = None,
-    GameSessionArn: str = None
-) -> StartMatchBackfillOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationName`: `str` *(required)*
+- `Players`:
+  `List`\[[PlayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playertypedef)\]
+  *(required)*
+- `TicketId`: `str`
+- `GameSessionArn`: `str`
+
+Returns
+[StartMatchBackfillOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startmatchbackfilloutputtypedef).
 
 ### start_matchmaking
 
 Type annotations for `boto3.client("gamelift").start_matchmaking` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking]
+Boto3 documentation:
+[GameLift.Client.start_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking)
 
-```python
-def start_matchmaking(
-    self,
-    ConfigurationName: str,
-    Players: List["PlayerTypeDef"],
-    TicketId: str = None
-) -> StartMatchmakingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationName`: `str` *(required)*
+- `Players`:
+  `List`\[[PlayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playertypedef)\]
+  *(required)*
+- `TicketId`: `str`
+
+Returns
+[StartMatchmakingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startmatchmakingoutputtypedef).
 
 ### stop_fleet_actions
 
 Type annotations for `boto3.client("gamelift").stop_fleet_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions]
+Boto3 documentation:
+[GameLift.Client.stop_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions)
 
-```python
-def stop_fleet_actions(
-    self,
-    FleetId: str,
-    Actions: List[Literal['AUTO_SCALING']],
-    Location: str = None
-) -> StopFleetActionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Actions`: `List`\[`Literal['AUTO_SCALING']`\] *(required)*
+- `Location`: `str`
+
+Returns
+[StopFleetActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#stopfleetactionsoutputtypedef).
 
 ### stop_game_session_placement
 
-Type annotations for `boto3.client("gamelift").stop_game_session_placement` method.
+Type annotations for `boto3.client("gamelift").stop_game_session_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement]
+Boto3 documentation:
+[GameLift.Client.stop_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
 
-```python
-def stop_game_session_placement(
-    self,
-    PlacementId: str
-) -> StopGameSessionPlacementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PlacementId`: `str` *(required)*
+
+Returns
+[StopGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#stopgamesessionplacementoutputtypedef).
 
 ### stop_matchmaking
 
 Type annotations for `boto3.client("gamelift").stop_matchmaking` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking]
+Boto3 documentation:
+[GameLift.Client.stop_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
 
-```python
-def stop_matchmaking(
-    self,
-    TicketId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TicketId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### suspend_game_server_group
 
-Type annotations for `boto3.client("gamelift").suspend_game_server_group` method.
+Type annotations for `boto3.client("gamelift").suspend_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group]
+Boto3 documentation:
+[GameLift.Client.suspend_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
 
-```python
-def suspend_game_server_group(
-    self,
-    GameServerGroupName: str,
-    SuspendActions: List[Literal['REPLACE_INSTANCE_TYPES']]
-) -> SuspendGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']`\] *(required)*
+
+Returns
+[SuspendGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#suspendgameservergroupoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("gamelift").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource]
+Boto3 documentation:
+[GameLift.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("gamelift").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource]
+Boto3 documentation:
+[GameLift.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_alias
 
 Type annotations for `boto3.client("gamelift").update_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias]
+Boto3 documentation:
+[GameLift.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias)
 
-```python
-def update_alias(
-    self,
-    AliasId: str,
-    Name: str = None,
-    Description: str = None,
-    RoutingStrategy: "RoutingStrategyTypeDef" = None
-) -> UpdateAliasOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `RoutingStrategy`:
+  [RoutingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#routingstrategytypedef)
+
+Returns
+[UpdateAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatealiasoutputtypedef).
 
 ### update_build
 
 Type annotations for `boto3.client("gamelift").update_build` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build]
+Boto3 documentation:
+[GameLift.Client.update_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build)
 
-```python
-def update_build(
-    self,
-    BuildId: str,
-    Name: str = None,
-    Version: str = None
-) -> UpdateBuildOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BuildId`: `str` *(required)*
+- `Name`: `str`
+- `Version`: `str`
+
+Returns
+[UpdateBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatebuildoutputtypedef).
 
 ### update_fleet_attributes
 
 Type annotations for `boto3.client("gamelift").update_fleet_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes]
+Boto3 documentation:
+[GameLift.Client.update_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes)
 
-```python
-def update_fleet_attributes(
-    self,
-    FleetId: str,
-    Name: str = None,
-    Description: str = None,
-    NewGameSessionProtectionPolicy: ProtectionPolicy = None,
-    ResourceCreationLimitPolicy: "ResourceCreationLimitPolicyTypeDef" = None,
-    MetricGroups: List[str] = None
-) -> UpdateFleetAttributesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `NewGameSessionProtectionPolicy`:
+  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+- `ResourceCreationLimitPolicy`:
+  [ResourceCreationLimitPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resourcecreationlimitpolicytypedef)
+- `MetricGroups`: `List`\[`str`\]
+
+Returns
+[UpdateFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetattributesoutputtypedef).
 
 ### update_fleet_capacity
 
 Type annotations for `boto3.client("gamelift").update_fleet_capacity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity]
+Boto3 documentation:
+[GameLift.Client.update_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity)
 
-```python
-def update_fleet_capacity(
-    self,
-    FleetId: str,
-    DesiredInstances: int = None,
-    MinSize: int = None,
-    MaxSize: int = None,
-    Location: str = None
-) -> UpdateFleetCapacityOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `DesiredInstances`: `int`
+- `MinSize`: `int`
+- `MaxSize`: `int`
+- `Location`: `str`
+
+Returns
+[UpdateFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetcapacityoutputtypedef).
 
 ### update_fleet_port_settings
 
-Type annotations for `boto3.client("gamelift").update_fleet_port_settings` method.
+Type annotations for `boto3.client("gamelift").update_fleet_port_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings]
+Boto3 documentation:
+[GameLift.Client.update_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings)
 
-```python
-def update_fleet_port_settings(
-    self,
-    FleetId: str,
-    InboundPermissionAuthorizations: List["IpPermissionTypeDef"] = None,
-    InboundPermissionRevocations: List["IpPermissionTypeDef"] = None
-) -> UpdateFleetPortSettingsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `InboundPermissionAuthorizations`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+- `InboundPermissionRevocations`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+
+Returns
+[UpdateFleetPortSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetportsettingsoutputtypedef).
 
 ### update_game_server
 
 Type annotations for `boto3.client("gamelift").update_game_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server]
+Boto3 documentation:
+[GameLift.Client.update_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server)
 
-```python
-def update_game_server(
-    self,
-    GameServerGroupName: str,
-    GameServerId: str,
-    GameServerData: str = None,
-    UtilizationStatus: GameServerUtilizationStatus = None,
-    HealthCheck: Literal['HEALTHY'] = None
-) -> UpdateGameServerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `GameServerId`: `str` *(required)*
+- `GameServerData`: `str`
+- `UtilizationStatus`:
+  [GameServerUtilizationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverutilizationstatus)
+- `HealthCheck`: `Literal['HEALTHY']`
+
+Returns
+[UpdateGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategameserveroutputtypedef).
 
 ### update_game_server_group
 
-Type annotations for `boto3.client("gamelift").update_game_server_group` method.
+Type annotations for `boto3.client("gamelift").update_game_server_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group]
+Boto3 documentation:
+[GameLift.Client.update_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group)
 
-```python
-def update_game_server_group(
-    self,
-    GameServerGroupName: str,
-    RoleArn: str = None,
-    InstanceDefinitions: List["InstanceDefinitionTypeDef"] = None,
-    GameServerProtectionPolicy: GameServerProtectionPolicy = None,
-    BalancingStrategy: BalancingStrategy = None
-) -> UpdateGameServerGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameServerGroupName`: `str` *(required)*
+- `RoleArn`: `str`
+- `InstanceDefinitions`:
+  `List`\[[InstanceDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#instancedefinitiontypedef)\]
+- `GameServerProtectionPolicy`:
+  [GameServerProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverprotectionpolicy)
+- `BalancingStrategy`:
+  [BalancingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#balancingstrategy)
+
+Returns
+[UpdateGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategameservergroupoutputtypedef).
 
 ### update_game_session
 
 Type annotations for `boto3.client("gamelift").update_game_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session]
+Boto3 documentation:
+[GameLift.Client.update_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session)
 
-```python
-def update_game_session(
-    self,
-    GameSessionId: str,
-    MaximumPlayerSessionCount: int = None,
-    Name: str = None,
-    PlayerSessionCreationPolicy: PlayerSessionCreationPolicy = None,
-    ProtectionPolicy: ProtectionPolicy = None
-) -> UpdateGameSessionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GameSessionId`: `str` *(required)*
+- `MaximumPlayerSessionCount`: `int`
+- `Name`: `str`
+- `PlayerSessionCreationPolicy`:
+  [PlayerSessionCreationPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#playersessioncreationpolicy)
+- `ProtectionPolicy`:
+  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+
+Returns
+[UpdateGameSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategamesessionoutputtypedef).
 
 ### update_game_session_queue
 
-Type annotations for `boto3.client("gamelift").update_game_session_queue` method.
+Type annotations for `boto3.client("gamelift").update_game_session_queue`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue]
+Boto3 documentation:
+[GameLift.Client.update_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue)
 
-```python
-def update_game_session_queue(
-    self,
-    Name: str,
-    TimeoutInSeconds: int = None,
-    PlayerLatencyPolicies: List["PlayerLatencyPolicyTypeDef"] = None,
-    Destinations: List["GameSessionQueueDestinationTypeDef"] = None,
-    FilterConfiguration: "FilterConfigurationTypeDef" = None,
-    PriorityConfiguration: "PriorityConfigurationTypeDef" = None,
-    CustomEventData: str = None,
-    NotificationTarget: str = None
-) -> UpdateGameSessionQueueOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `TimeoutInSeconds`: `int`
+- `PlayerLatencyPolicies`:
+  `List`\[[PlayerLatencyPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencypolicytypedef)\]
+- `Destinations`:
+  `List`\[[GameSessionQueueDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamesessionqueuedestinationtypedef)\]
+- `FilterConfiguration`:
+  [FilterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#filterconfigurationtypedef)
+- `PriorityConfiguration`:
+  [PriorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#priorityconfigurationtypedef)
+- `CustomEventData`: `str`
+- `NotificationTarget`: `str`
+
+Returns
+[UpdateGameSessionQueueOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategamesessionqueueoutputtypedef).
 
 ### update_matchmaking_configuration
 
-Type annotations for `boto3.client("gamelift").update_matchmaking_configuration` method.
+Type annotations for
+`boto3.client("gamelift").update_matchmaking_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration]
+Boto3 documentation:
+[GameLift.Client.update_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration)
 
-```python
-def update_matchmaking_configuration(
-    self,
-    Name: str,
-    Description: str = None,
-    GameSessionQueueArns: List[str] = None,
-    RequestTimeoutSeconds: int = None,
-    AcceptanceTimeoutSeconds: int = None,
-    AcceptanceRequired: bool = None,
-    RuleSetName: str = None,
-    NotificationTarget: str = None,
-    AdditionalPlayerCount: int = None,
-    CustomEventData: str = None,
-    GameProperties: List["GamePropertyTypeDef"] = None,
-    GameSessionData: str = None,
-    BackfillMode: BackfillMode = None,
-    FlexMatchMode: FlexMatchMode = None
-) -> UpdateMatchmakingConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `GameSessionQueueArns`: `List`\[`str`\]
+- `RequestTimeoutSeconds`: `int`
+- `AcceptanceTimeoutSeconds`: `int`
+- `AcceptanceRequired`: `bool`
+- `RuleSetName`: `str`
+- `NotificationTarget`: `str`
+- `AdditionalPlayerCount`: `int`
+- `CustomEventData`: `str`
+- `GameProperties`:
+  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+- `GameSessionData`: `str`
+- `BackfillMode`:
+  [BackfillMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#backfillmode)
+- `FlexMatchMode`:
+  [FlexMatchMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#flexmatchmode)
+
+Returns
+[UpdateMatchmakingConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatematchmakingconfigurationoutputtypedef).
 
 ### update_runtime_configuration
 
-Type annotations for `boto3.client("gamelift").update_runtime_configuration` method.
+Type annotations for `boto3.client("gamelift").update_runtime_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration]
+Boto3 documentation:
+[GameLift.Client.update_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
 
-```python
-def update_runtime_configuration(
-    self,
-    FleetId: str,
-    RuntimeConfiguration: "RuntimeConfigurationTypeDef"
-) -> UpdateRuntimeConfigurationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FleetId`: `str` *(required)*
+- `RuntimeConfiguration`:
+  [RuntimeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#runtimeconfigurationtypedef)
+  *(required)*
+
+Returns
+[UpdateRuntimeConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updateruntimeconfigurationoutputtypedef).
 
 ### update_script
 
 Type annotations for `boto3.client("gamelift").update_script` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script]
+Boto3 documentation:
+[GameLift.Client.update_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script)
 
-```python
-def update_script(
-    self,
-    ScriptId: str,
-    Name: str = None,
-    Version: str = None,
-    StorageLocation: "S3LocationTypeDef" = None,
-    ZipFile: Union[bytes, IO[bytes]] = None
-) -> UpdateScriptOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ScriptId`: `str` *(required)*
+- `Name`: `str`
+- `Version`: `str`
+- `StorageLocation`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+
+Returns
+[UpdateScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatescriptoutputtypedef).
 
 ### validate_matchmaking_rule_set
 
-Type annotations for `boto3.client("gamelift").validate_matchmaking_rule_set` method.
+Type annotations for `boto3.client("gamelift").validate_matchmaking_rule_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set]
+Boto3 documentation:
+[GameLift.Client.validate_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
 
-```python
-def validate_matchmaking_rule_set(
-    self,
-    RuleSetBody: str
-) -> ValidateMatchmakingRuleSetOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `RuleSetBody`: `str` *(required)*
 
+Returns
+[ValidateMatchmakingRuleSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#validatematchmakingrulesetoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("gamelift").get_paginator` method with overloads.
+Type annotations for `boto3.client("gamelift").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_fleet_attributes")` -> [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
-- `client.get_paginator("describe_fleet_capacity")` -> [DescribeFleetCapacityPaginator](./paginators.md#describefleetcapacitypaginator)
-- `client.get_paginator("describe_fleet_events")` -> [DescribeFleetEventsPaginator](./paginators.md#describefleeteventspaginator)
-- `client.get_paginator("describe_fleet_utilization")` -> [DescribeFleetUtilizationPaginator](./paginators.md#describefleetutilizationpaginator)
-- `client.get_paginator("describe_game_server_instances")` -> [DescribeGameServerInstancesPaginator](./paginators.md#describegameserverinstancespaginator)
-- `client.get_paginator("describe_game_session_details")` -> [DescribeGameSessionDetailsPaginator](./paginators.md#describegamesessiondetailspaginator)
-- `client.get_paginator("describe_game_session_queues")` -> [DescribeGameSessionQueuesPaginator](./paginators.md#describegamesessionqueuespaginator)
-- `client.get_paginator("describe_game_sessions")` -> [DescribeGameSessionsPaginator](./paginators.md#describegamesessionspaginator)
-- `client.get_paginator("describe_instances")` -> [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
-- `client.get_paginator("describe_matchmaking_configurations")` -> [DescribeMatchmakingConfigurationsPaginator](./paginators.md#describematchmakingconfigurationspaginator)
-- `client.get_paginator("describe_matchmaking_rule_sets")` -> [DescribeMatchmakingRuleSetsPaginator](./paginators.md#describematchmakingrulesetspaginator)
-- `client.get_paginator("describe_player_sessions")` -> [DescribePlayerSessionsPaginator](./paginators.md#describeplayersessionspaginator)
-- `client.get_paginator("describe_scaling_policies")` -> [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
-- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_builds")` -> [ListBuildsPaginator](./paginators.md#listbuildspaginator)
-- `client.get_paginator("list_fleets")` -> [ListFleetsPaginator](./paginators.md#listfleetspaginator)
-- `client.get_paginator("list_game_server_groups")` -> [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
-- `client.get_paginator("list_game_servers")` -> [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
-- `client.get_paginator("list_scripts")` -> [ListScriptsPaginator](./paginators.md#listscriptspaginator)
-- `client.get_paginator("search_game_sessions")` -> [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
-
-
+- `client.get_paginator("describe_fleet_attributes")` ->
+  [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
+- `client.get_paginator("describe_fleet_capacity")` ->
+  [DescribeFleetCapacityPaginator](./paginators.md#describefleetcapacitypaginator)
+- `client.get_paginator("describe_fleet_events")` ->
+  [DescribeFleetEventsPaginator](./paginators.md#describefleeteventspaginator)
+- `client.get_paginator("describe_fleet_utilization")` ->
+  [DescribeFleetUtilizationPaginator](./paginators.md#describefleetutilizationpaginator)
+- `client.get_paginator("describe_game_server_instances")` ->
+  [DescribeGameServerInstancesPaginator](./paginators.md#describegameserverinstancespaginator)
+- `client.get_paginator("describe_game_session_details")` ->
+  [DescribeGameSessionDetailsPaginator](./paginators.md#describegamesessiondetailspaginator)
+- `client.get_paginator("describe_game_session_queues")` ->
+  [DescribeGameSessionQueuesPaginator](./paginators.md#describegamesessionqueuespaginator)
+- `client.get_paginator("describe_game_sessions")` ->
+  [DescribeGameSessionsPaginator](./paginators.md#describegamesessionspaginator)
+- `client.get_paginator("describe_instances")` ->
+  [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
+- `client.get_paginator("describe_matchmaking_configurations")` ->
+  [DescribeMatchmakingConfigurationsPaginator](./paginators.md#describematchmakingconfigurationspaginator)
+- `client.get_paginator("describe_matchmaking_rule_sets")` ->
+  [DescribeMatchmakingRuleSetsPaginator](./paginators.md#describematchmakingrulesetspaginator)
+- `client.get_paginator("describe_player_sessions")` ->
+  [DescribePlayerSessionsPaginator](./paginators.md#describeplayersessionspaginator)
+- `client.get_paginator("describe_scaling_policies")` ->
+  [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
+- `client.get_paginator("list_aliases")` ->
+  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_builds")` ->
+  [ListBuildsPaginator](./paginators.md#listbuildspaginator)
+- `client.get_paginator("list_fleets")` ->
+  [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+- `client.get_paginator("list_game_server_groups")` ->
+  [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
+- `client.get_paginator("list_game_servers")` ->
+  [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
+- `client.get_paginator("list_scripts")` ->
+  [ListScriptsPaginator](./paginators.md#listscriptspaginator)
+- `client.get_paginator("search_game_sessions")` ->
+  [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Transfer
 
-Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+Auto-generated documentation for
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+type annotations stubs module
+[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 ```bash
 pip install mypy-boto3-transfer
@@ -19,7 +21,8 @@ pip install mypy-boto3-transfer
 
 ## TransferClient
 
-Type annotations for  `boto3.client("transfer")` as [TransferClient](./client.md)
+Type annotations for `boto3.client("transfer")` as
+[TransferClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_transfer.client import TransferClient
 ```
 
-
 TransferClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_server](./client.md#create-server)
 - [create_user](./client.md#create-user)
@@ -57,10 +58,8 @@ TransferClient [exceptions](./client.md#exceptions)
 - [update_server](./client.md#update-server)
 - [update_user](./client.md#update-user)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -72,14 +71,10 @@ TransferClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("transfer").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("transfer").get_paginator("...")`.
 
 Can be used directly:
 
@@ -88,11 +83,6 @@ from mypy_boto3_transfer.paginators import ListServersPaginator, ...
 ```
 
 - [ListServersPaginator](./paginators.md#listserverspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -112,13 +102,10 @@ from mypy_boto3_transfer.literals import Domain, ...
 - [ProtocolType](./literals.md#protocoltype)
 - [State](./literals.md#state)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

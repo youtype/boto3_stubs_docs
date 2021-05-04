@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SNS](./README.md) > SNSClient
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [SNSClient for boto3 SNS module](#snsclient-for-boto3-sns-module)
   - [SNSClient](#snsclient)
@@ -59,12 +61,13 @@ def get_sns_client() -> SNSClient:
     return boto3.client("sns")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
+Boto3 documentation:
+[SNS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sns.client import Exceptions
@@ -72,7 +75,6 @@ from mypy_boto3_sns.client import Exceptions
 def handle_error(exc: Exceptions.AuthorizationErrorException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -101,549 +103,521 @@ Exceptions:
 - `Exceptions.ThrottledException`
 - `Exceptions.TopicLimitExceededException`
 
-
 ## Methods
-
 
 ### add_permission
 
 Type annotations for `boto3.client("sns").add_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission]
+Boto3 documentation:
+[SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
 
-```python
-def add_permission(
-    self,
-    TopicArn: str,
-    Label: str,
-    AWSAccountId: List[str],
-    ActionName: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `Label`: `str` *(required)*
+- `AWSAccountId`: `List`\[`str`\] *(required)*
+- `ActionName`: `List`\[`str`\] *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("sns").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate]
+Boto3 documentation:
+[SNS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### check_if_phone_number_is_opted_out
 
-Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out` method.
+Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out]
+Boto3 documentation:
+[SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
 
-```python
-def check_if_phone_number_is_opted_out(
-    self,
-    phoneNumber: str
-) -> CheckIfPhoneNumberIsOptedOutResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `phoneNumber`: `str` *(required)*
+
+Returns
+[CheckIfPhoneNumberIsOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#checkifphonenumberisoptedoutresponsetypedef).
 
 ### confirm_subscription
 
 Type annotations for `boto3.client("sns").confirm_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription]
+Boto3 documentation:
+[SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
 
-```python
-def confirm_subscription(
-    self,
-    TopicArn: str,
-    Token: str,
-    AuthenticateOnUnsubscribe: str = None
-) -> ConfirmSubscriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `Token`: `str` *(required)*
+- `AuthenticateOnUnsubscribe`: `str`
+
+Returns
+[ConfirmSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#confirmsubscriptionresponsetypedef).
 
 ### create_platform_application
 
 Type annotations for `boto3.client("sns").create_platform_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application]
+Boto3 documentation:
+[SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
 
-```python
-def create_platform_application(
-    self,
-    Name: str,
-    Platform: str,
-    Attributes: Dict[str, str]
-) -> CreatePlatformApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Platform`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns
+[CreatePlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createplatformapplicationresponsetypedef).
 
 ### create_platform_endpoint
 
 Type annotations for `boto3.client("sns").create_platform_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint]
+Boto3 documentation:
+[SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
 
-```python
-def create_platform_endpoint(
-    self,
-    PlatformApplicationArn: str,
-    Token: str,
-    CustomUserData: str = None,
-    Attributes: Dict[str, str] = None
-) -> CreateEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformApplicationArn`: `str` *(required)*
+- `Token`: `str` *(required)*
+- `CustomUserData`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createendpointresponsetypedef).
 
 ### create_topic
 
 Type annotations for `boto3.client("sns").create_topic` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic]
+Boto3 documentation:
+[SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
 
-```python
-def create_topic(
-    self,
-    Name: str,
-    Attributes: Dict[str, str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateTopicResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createtopicresponsetypedef).
 
 ### delete_endpoint
 
 Type annotations for `boto3.client("sns").delete_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint]
+Boto3 documentation:
+[SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
 
-```python
-def delete_endpoint(
-    self,
-    EndpointArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
 
 ### delete_platform_application
 
 Type annotations for `boto3.client("sns").delete_platform_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application]
+Boto3 documentation:
+[SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
 
-```python
-def delete_platform_application(
-    self,
-    PlatformApplicationArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PlatformApplicationArn`: `str` *(required)*
 
 ### delete_topic
 
 Type annotations for `boto3.client("sns").delete_topic` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic]
+Boto3 documentation:
+[SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
 
-```python
-def delete_topic(
-    self,
-    TopicArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sns").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url]
+Boto3 documentation:
+[SNS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_endpoint_attributes
 
 Type annotations for `boto3.client("sns").get_endpoint_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes]
+Boto3 documentation:
+[SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
 
-```python
-def get_endpoint_attributes(
-    self,
-    EndpointArn: str
-) -> GetEndpointAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+
+Returns
+[GetEndpointAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getendpointattributesresponsetypedef).
 
 ### get_platform_application_attributes
 
-Type annotations for `boto3.client("sns").get_platform_application_attributes` method.
+Type annotations for `boto3.client("sns").get_platform_application_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes]
+Boto3 documentation:
+[SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
 
-```python
-def get_platform_application_attributes(
-    self,
-    PlatformApplicationArn: str
-) -> GetPlatformApplicationAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformApplicationArn`: `str` *(required)*
+
+Returns
+[GetPlatformApplicationAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getplatformapplicationattributesresponsetypedef).
 
 ### get_sms_attributes
 
 Type annotations for `boto3.client("sns").get_sms_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes]
+Boto3 documentation:
+[SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
 
-```python
-def get_sms_attributes(
-    self,
-    attributes: List[str] = None
-) -> GetSMSAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attributes`: `List`\[`str`\]
+
+Returns
+[GetSMSAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getsmsattributesresponsetypedef).
 
 ### get_subscription_attributes
 
 Type annotations for `boto3.client("sns").get_subscription_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes]
+Boto3 documentation:
+[SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
 
-```python
-def get_subscription_attributes(
-    self,
-    SubscriptionArn: str
-) -> GetSubscriptionAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionArn`: `str` *(required)*
+
+Returns
+[GetSubscriptionAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getsubscriptionattributesresponsetypedef).
 
 ### get_topic_attributes
 
 Type annotations for `boto3.client("sns").get_topic_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes]
+Boto3 documentation:
+[SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
 
-```python
-def get_topic_attributes(
-    self,
-    TopicArn: str
-) -> GetTopicAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+
+Returns
+[GetTopicAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#gettopicattributesresponsetypedef).
 
 ### list_endpoints_by_platform_application
 
-Type annotations for `boto3.client("sns").list_endpoints_by_platform_application` method.
+Type annotations for
+`boto3.client("sns").list_endpoints_by_platform_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application]
+Boto3 documentation:
+[SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
 
-```python
-def list_endpoints_by_platform_application(
-    self,
-    PlatformApplicationArn: str,
-    NextToken: str = None
-) -> ListEndpointsByPlatformApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformApplicationArn`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListEndpointsByPlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listendpointsbyplatformapplicationresponsetypedef).
 
 ### list_phone_numbers_opted_out
 
 Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out]
+Boto3 documentation:
+[SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
 
-```python
-def list_phone_numbers_opted_out(
-    self,
-    nextToken: str = None
-) -> ListPhoneNumbersOptedOutResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListPhoneNumbersOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listphonenumbersoptedoutresponsetypedef).
 
 ### list_platform_applications
 
 Type annotations for `boto3.client("sns").list_platform_applications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications]
+Boto3 documentation:
+[SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
 
-```python
-def list_platform_applications(
-    self,
-    NextToken: str = None
-) -> ListPlatformApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListPlatformApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listplatformapplicationsresponsetypedef).
 
 ### list_subscriptions
 
 Type annotations for `boto3.client("sns").list_subscriptions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions]
+Boto3 documentation:
+[SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
 
-```python
-def list_subscriptions(
-    self,
-    NextToken: str = None
-) -> ListSubscriptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsresponsetypedef).
 
 ### list_subscriptions_by_topic
 
 Type annotations for `boto3.client("sns").list_subscriptions_by_topic` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic]
+Boto3 documentation:
+[SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
 
-```python
-def list_subscriptions_by_topic(
-    self,
-    TopicArn: str,
-    NextToken: str = None
-) -> ListSubscriptionsByTopicResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListSubscriptionsByTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsbytopicresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("sns").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource]
+Boto3 documentation:
+[SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_topics
 
 Type annotations for `boto3.client("sns").list_topics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics]
+Boto3 documentation:
+[SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
 
-```python
-def list_topics(
-    self,
-    NextToken: str = None
-) -> ListTopicsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListTopicsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtopicsresponsetypedef).
 
 ### opt_in_phone_number
 
 Type annotations for `boto3.client("sns").opt_in_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number]
+Boto3 documentation:
+[SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
 
-```python
-def opt_in_phone_number(
-    self,
-    phoneNumber: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `phoneNumber`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### publish
 
 Type annotations for `boto3.client("sns").publish` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish]
+Boto3 documentation:
+[SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
 
-```python
-def publish(
-    self,
-    Message: str,
-    TopicArn: str = None,
-    TargetArn: str = None,
-    PhoneNumber: str = None,
-    Subject: str = None,
-    MessageStructure: str = None,
-    MessageAttributes: Dict[str, MessageAttributeValueTypeDef] = None,
-    MessageDeduplicationId: str = None,
-    MessageGroupId: str = None
-) -> PublishResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Message`: `str` *(required)*
+- `TopicArn`: `str`
+- `TargetArn`: `str`
+- `PhoneNumber`: `str`
+- `Subject`: `str`
+- `MessageStructure`: `str`
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+- `MessageDeduplicationId`: `str`
+- `MessageGroupId`: `str`
+
+Returns
+[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
 
 ### remove_permission
 
 Type annotations for `boto3.client("sns").remove_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission]
+Boto3 documentation:
+[SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
 
-```python
-def remove_permission(
-    self,
-    TopicArn: str,
-    Label: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `Label`: `str` *(required)*
 
 ### set_endpoint_attributes
 
 Type annotations for `boto3.client("sns").set_endpoint_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes]
+Boto3 documentation:
+[SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
 
-```python
-def set_endpoint_attributes(
-    self,
-    EndpointArn: str,
-    Attributes: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 ### set_platform_application_attributes
 
-Type annotations for `boto3.client("sns").set_platform_application_attributes` method.
+Type annotations for `boto3.client("sns").set_platform_application_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes]
+Boto3 documentation:
+[SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
 
-```python
-def set_platform_application_attributes(
-    self,
-    PlatformApplicationArn: str,
-    Attributes: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `PlatformApplicationArn`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 ### set_sms_attributes
 
 Type annotations for `boto3.client("sns").set_sms_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes]
+Boto3 documentation:
+[SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
 
-```python
-def set_sms_attributes(
-    self,
-    attributes: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `attributes`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_subscription_attributes
 
 Type annotations for `boto3.client("sns").set_subscription_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes]
+Boto3 documentation:
+[SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
 
-```python
-def set_subscription_attributes(
-    self,
-    SubscriptionArn: str,
-    AttributeName: str,
-    AttributeValue: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `SubscriptionArn`: `str` *(required)*
+- `AttributeName`: `str` *(required)*
+- `AttributeValue`: `str`
 
 ### set_topic_attributes
 
 Type annotations for `boto3.client("sns").set_topic_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes]
+Boto3 documentation:
+[SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
 
-```python
-def set_topic_attributes(
-    self,
-    TopicArn: str,
-    AttributeName: str,
-    AttributeValue: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `AttributeName`: `str` *(required)*
+- `AttributeValue`: `str`
 
 ### subscribe
 
 Type annotations for `boto3.client("sns").subscribe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe]
+Boto3 documentation:
+[SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
 
-```python
-def subscribe(
-    self,
-    TopicArn: str,
-    Protocol: str,
-    Endpoint: str = None,
-    Attributes: Dict[str, str] = None,
-    ReturnSubscriptionArn: bool = None
-) -> SubscribeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TopicArn`: `str` *(required)*
+- `Protocol`: `str` *(required)*
+- `Endpoint`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `ReturnSubscriptionArn`: `bool`
+
+Returns
+[SubscribeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriberesponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("sns").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource]
+Boto3 documentation:
+[SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### unsubscribe
 
 Type annotations for `boto3.client("sns").unsubscribe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe]
+Boto3 documentation:
+[SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
 
-```python
-def unsubscribe(
-    self,
-    SubscriptionArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SubscriptionArn`: `str` *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("sns").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource]
+Boto3 documentation:
+[SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("sns").get_paginator` method with overloads.
 
-- `client.get_paginator("list_endpoints_by_platform_application")` -> [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
-- `client.get_paginator("list_phone_numbers_opted_out")` -> [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
-- `client.get_paginator("list_platform_applications")` -> [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
-- `client.get_paginator("list_subscriptions")` -> [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
-- `client.get_paginator("list_subscriptions_by_topic")` -> [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
-- `client.get_paginator("list_topics")` -> [ListTopicsPaginator](./paginators.md#listtopicspaginator)
-
-
+- `client.get_paginator("list_endpoints_by_platform_application")` ->
+  [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+- `client.get_paginator("list_phone_numbers_opted_out")` ->
+  [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
+- `client.get_paginator("list_platform_applications")` ->
+  [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
+- `client.get_paginator("list_subscriptions")` ->
+  [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
+- `client.get_paginator("list_subscriptions_by_topic")` ->
+  [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
+- `client.get_paginator("list_topics")` ->
+  [ListTopicsPaginator](./paginators.md#listtopicspaginator)

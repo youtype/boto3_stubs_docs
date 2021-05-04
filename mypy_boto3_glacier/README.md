@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Glacier
 
-Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+Auto-generated documentation for
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+type annotations stubs module
+[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ```bash
 pip install mypy-boto3-glacier
@@ -23,7 +25,7 @@ pip install mypy-boto3-glacier
 
 ## GlacierClient
 
-Type annotations for  `boto3.client("glacier")` as [GlacierClient](./client.md)
+Type annotations for `boto3.client("glacier")` as [GlacierClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +33,10 @@ Can be used directly:
 from mypy_boto3_glacier.client import GlacierClient
 ```
 
-
 GlacierClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [abort_multipart_upload](./client.md#abort-multipart-upload)
 - [abort_vault_lock](./client.md#abort-vault-lock)
 - [add_tags_to_vault](./client.md#add-tags-to-vault)
@@ -75,10 +75,8 @@ GlacierClient [exceptions](./client.md#exceptions)
 - [upload_archive](./client.md#upload-archive)
 - [upload_multipart_part](./client.md#upload-multipart-part)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InsufficientCapacityException](./client.md#insufficientcapacityexception)
 - [InvalidParameterValueException](./client.md#invalidparametervalueexception)
@@ -89,19 +87,16 @@ GlacierClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 
-
-
-
 ## GlacierServiceResource
 
-Type annotations for  `boto3.resource("glacier")` as [GlacierServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("glacier")` as
+[GlacierServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_glacier.service_resource import GlacierServiceResource
 ```
-
 
 ### Collections
 
@@ -114,9 +109,6 @@ from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection,
 ```
 
 - [ServiceResourceVaultsCollection](./service_resource.md#glacierserviceresource.vaults)
-
-
-
 
 ### Resources
 
@@ -135,13 +127,10 @@ from mypy_boto3_glacier.service_resource import Account, ...
 - [Notification](./service_resource.md#notification)
 - [Vault](./service_resource.md#vault)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("glacier").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("glacier").get_paginator("...")`.
 
 Can be used directly:
 
@@ -154,12 +143,10 @@ from mypy_boto3_glacier.paginators import ListJobsPaginator, ...
 - [ListPartsPaginator](./paginators.md#listpartspaginator)
 - [ListVaultsPaginator](./paginators.md#listvaultspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("glacier").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("glacier").get_waiter("...")`.
 
 Can be used directly:
 
@@ -169,9 +156,6 @@ from mypy_boto3_glacier.waiters import VaultExistsWaiter, ...
 
 - [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
 - [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)
-
-
-
 
 ## Literals
 
@@ -200,13 +184,10 @@ from mypy_boto3_glacier.literals import ActionCode, ...
 - [VaultExistsWaiterName](./literals.md#vaultexistswaitername)
 - [VaultNotExistsWaiterName](./literals.md#vaultnotexistswaitername)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

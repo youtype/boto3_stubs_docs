@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kendra](./README.md) > KendraClient
 
-Auto-generated documentation for [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
-type annotations stubs module [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+Auto-generated documentation for
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
+type annotations stubs module
+[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 - [KendraClient for boto3 Kendra module](#kendraclient-for-boto3-kendra-module)
   - [KendraClient](#kendraclient)
@@ -54,12 +56,13 @@ def get_kendra_client() -> KendraClient:
     return boto3.client("kendra")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client)
+Boto3 documentation:
+[Kendra.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kendra.client import Exceptions
@@ -67,7 +70,6 @@ from mypy_boto3_kendra.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -83,533 +85,536 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### batch_delete_document
 
 Type annotations for `boto3.client("kendra").batch_delete_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_delete_document]
+Boto3 documentation:
+[Kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_delete_document)
 
-```python
-def batch_delete_document(
-    self,
-    IndexId: str,
-    DocumentIdList: List[str],
-    DataSourceSyncJobMetricTarget: DataSourceSyncJobMetricTargetTypeDef = None
-) -> BatchDeleteDocumentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `DocumentIdList`: `List`\[`str`\] *(required)*
+- `DataSourceSyncJobMetricTarget`:
+  [DataSourceSyncJobMetricTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcesyncjobmetrictargettypedef)
+
+Returns
+[BatchDeleteDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchdeletedocumentresponsetypedef).
 
 ### batch_put_document
 
 Type annotations for `boto3.client("kendra").batch_put_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_put_document]
+Boto3 documentation:
+[Kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_put_document)
 
-```python
-def batch_put_document(
-    self,
-    IndexId: str,
-    Documents: List[DocumentTypeDef],
-    RoleArn: str = None
-) -> BatchPutDocumentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Documents`:
+  `List`\[[DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documenttypedef)\]
+  *(required)*
+- `RoleArn`: `str`
+
+Returns
+[BatchPutDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchputdocumentresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("kendra").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.can_paginate]
+Boto3 documentation:
+[Kendra.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_data_source
 
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_data_source]
+Boto3 documentation:
+[Kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_data_source)
 
-```python
-def create_data_source(
-    self,
-    Name: str,
-    IndexId: str,
-    Type: DataSourceType,
-    Configuration: "DataSourceConfigurationTypeDef" = None,
-    Description: str = None,
-    Schedule: str = None,
-    RoleArn: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientToken: str = None
-) -> CreateDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `Type`:
+  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcetype)
+  *(required)*
+- `Configuration`:
+  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `Schedule`: `str`
+- `RoleArn`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createdatasourceresponsetypedef).
 
 ### create_faq
 
 Type annotations for `boto3.client("kendra").create_faq` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_faq]
+Boto3 documentation:
+[Kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_faq)
 
-```python
-def create_faq(
-    self,
-    IndexId: str,
-    Name: str,
-    S3Path: "S3PathTypeDef",
-    RoleArn: str,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    FileFormat: FaqFileFormat = None,
-    ClientToken: str = None
-) -> CreateFaqResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `S3Path`:
+  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `FileFormat`:
+  [FaqFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqfileformat)
+- `ClientToken`: `str`
+
+Returns
+[CreateFaqResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createfaqresponsetypedef).
 
 ### create_index
 
 Type annotations for `boto3.client("kendra").create_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_index]
+Boto3 documentation:
+[Kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_index)
 
-```python
-def create_index(
-    self,
-    Name: str,
-    RoleArn: str,
-    Edition: IndexEdition = None,
-    ServerSideEncryptionConfiguration: "ServerSideEncryptionConfigurationTypeDef" = None,
-    Description: str = None,
-    ClientToken: str = None,
-    Tags: List["TagTypeDef"] = None,
-    UserTokenConfigurations: List["UserTokenConfigurationTypeDef"] = None,
-    UserContextPolicy: UserContextPolicy = None
-) -> CreateIndexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `Edition`:
+  [IndexEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexedition)
+- `ServerSideEncryptionConfiguration`:
+  [ServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#serversideencryptionconfigurationtypedef)
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `UserTokenConfigurations`:
+  `List`\[[UserTokenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`:
+  [UserContextPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#usercontextpolicy)
+
+Returns
+[CreateIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createindexresponsetypedef).
 
 ### create_thesaurus
 
 Type annotations for `boto3.client("kendra").create_thesaurus` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_thesaurus]
+Boto3 documentation:
+[Kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_thesaurus)
 
-```python
-def create_thesaurus(
-    self,
-    IndexId: str,
-    Name: str,
-    RoleArn: str,
-    SourceS3Path: "S3PathTypeDef",
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientToken: str = None
-) -> CreateThesaurusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `SourceS3Path`:
+  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+  *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `ClientToken`: `str`
+
+Returns
+[CreateThesaurusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createthesaurusresponsetypedef).
 
 ### delete_data_source
 
 Type annotations for `boto3.client("kendra").delete_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_data_source]
+Boto3 documentation:
+[Kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_data_source)
 
-```python
-def delete_data_source(
-    self,
-    Id: str,
-    IndexId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
 
 ### delete_faq
 
 Type annotations for `boto3.client("kendra").delete_faq` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_faq]
+Boto3 documentation:
+[Kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_faq)
 
-```python
-def delete_faq(
-    self,
-    Id: str,
-    IndexId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
 
 ### delete_index
 
 Type annotations for `boto3.client("kendra").delete_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_index]
+Boto3 documentation:
+[Kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_index)
 
-```python
-def delete_index(
-    self,
-    Id: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
 
 ### delete_thesaurus
 
 Type annotations for `boto3.client("kendra").delete_thesaurus` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_thesaurus]
+Boto3 documentation:
+[Kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_thesaurus)
 
-```python
-def delete_thesaurus(
-    self,
-    Id: str,
-    IndexId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
 
 ### describe_data_source
 
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_data_source]
+Boto3 documentation:
+[Kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_data_source)
 
-```python
-def describe_data_source(
-    self,
-    Id: str,
-    IndexId: str
-) -> DescribeDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns
+[DescribeDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describedatasourceresponsetypedef).
 
 ### describe_faq
 
 Type annotations for `boto3.client("kendra").describe_faq` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_faq]
+Boto3 documentation:
+[Kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_faq)
 
-```python
-def describe_faq(
-    self,
-    Id: str,
-    IndexId: str
-) -> DescribeFaqResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns
+[DescribeFaqResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describefaqresponsetypedef).
 
 ### describe_index
 
 Type annotations for `boto3.client("kendra").describe_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_index]
+Boto3 documentation:
+[Kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_index)
 
-```python
-def describe_index(
-    self,
-    Id: str
-) -> DescribeIndexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describeindexresponsetypedef).
 
 ### describe_thesaurus
 
 Type annotations for `boto3.client("kendra").describe_thesaurus` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_thesaurus]
+Boto3 documentation:
+[Kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_thesaurus)
 
-```python
-def describe_thesaurus(
-    self,
-    Id: str,
-    IndexId: str
-) -> DescribeThesaurusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns
+[DescribeThesaurusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describethesaurusresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("kendra").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.generate_presigned_url]
+Boto3 documentation:
+[Kendra.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_data_source_sync_jobs
 
-Type annotations for `boto3.client("kendra").list_data_source_sync_jobs` method.
+Type annotations for `boto3.client("kendra").list_data_source_sync_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs]
+Boto3 documentation:
+[Kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs)
 
-```python
-def list_data_source_sync_jobs(
-    self,
-    Id: str,
-    IndexId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StartTimeFilter: TimeRangeTypeDef = None,
-    StatusFilter: DataSourceSyncJobStatus = None
-) -> ListDataSourceSyncJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartTimeFilter`:
+  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#timerangetypedef)
+- `StatusFilter`:
+  [DataSourceSyncJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcesyncjobstatus)
+
+Returns
+[ListDataSourceSyncJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listdatasourcesyncjobsresponsetypedef).
 
 ### list_data_sources
 
 Type annotations for `boto3.client("kendra").list_data_sources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_sources]
+Boto3 documentation:
+[Kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_sources)
 
-```python
-def list_data_sources(
-    self,
-    IndexId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDataSourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDataSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listdatasourcesresponsetypedef).
 
 ### list_faqs
 
 Type annotations for `boto3.client("kendra").list_faqs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_faqs]
+Boto3 documentation:
+[Kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_faqs)
 
-```python
-def list_faqs(
-    self,
-    IndexId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListFaqsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFaqsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listfaqsresponsetypedef).
 
 ### list_indices
 
 Type annotations for `boto3.client("kendra").list_indices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_indices]
+Boto3 documentation:
+[Kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_indices)
 
-```python
-def list_indices(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListIndicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listindicesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_tags_for_resource]
+Boto3 documentation:
+[Kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_thesauri
 
 Type annotations for `boto3.client("kendra").list_thesauri` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_thesauri]
+Boto3 documentation:
+[Kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_thesauri)
 
-```python
-def list_thesauri(
-    self,
-    IndexId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListThesauriResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListThesauriResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listthesauriresponsetypedef).
 
 ### query
 
 Type annotations for `boto3.client("kendra").query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.query]
+Boto3 documentation:
+[Kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.query)
 
-```python
-def query(
-    self,
-    IndexId: str,
-    QueryText: str,
-    AttributeFilter: "AttributeFilterTypeDef" = None,
-    Facets: List[FacetTypeDef] = None,
-    RequestedDocumentAttributes: List[str] = None,
-    QueryResultTypeFilter: QueryResultType = None,
-    DocumentRelevanceOverrideConfigurations: List[DocumentRelevanceConfigurationTypeDef] = None,
-    PageNumber: int = None,
-    PageSize: int = None,
-    SortingConfiguration: SortingConfigurationTypeDef = None,
-    UserContext: UserContextTypeDef = None,
-    VisitorId: str = None
-) -> QueryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `QueryText`: `str` *(required)*
+- `AttributeFilter`:
+  [AttributeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#attributefiltertypedef)
+- `Facets`:
+  `List`\[[FacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#facettypedef)\]
+- `RequestedDocumentAttributes`: `List`\[`str`\]
+- `QueryResultTypeFilter`:
+  [QueryResultType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#queryresulttype)
+- `DocumentRelevanceOverrideConfigurations`:
+  `List`\[[DocumentRelevanceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentrelevanceconfigurationtypedef)\]
+- `PageNumber`: `int`
+- `PageSize`: `int`
+- `SortingConfiguration`:
+  [SortingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#sortingconfigurationtypedef)
+- `UserContext`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usercontexttypedef)
+- `VisitorId`: `str`
+
+Returns
+[QueryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#queryresulttypedef).
 
 ### start_data_source_sync_job
 
-Type annotations for `boto3.client("kendra").start_data_source_sync_job` method.
+Type annotations for `boto3.client("kendra").start_data_source_sync_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job]
+Boto3 documentation:
+[Kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job)
 
-```python
-def start_data_source_sync_job(
-    self,
-    Id: str,
-    IndexId: str
-) -> StartDataSourceSyncJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+
+Returns
+[StartDataSourceSyncJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#startdatasourcesyncjobresponsetypedef).
 
 ### stop_data_source_sync_job
 
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job]
+Boto3 documentation:
+[Kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job)
 
-```python
-def stop_data_source_sync_job(
-    self,
-    Id: str,
-    IndexId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
 
 ### submit_feedback
 
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.submit_feedback]
+Boto3 documentation:
+[Kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.submit_feedback)
 
-```python
-def submit_feedback(
-    self,
-    IndexId: str,
-    QueryId: str,
-    ClickFeedbackItems: List[ClickFeedbackTypeDef] = None,
-    RelevanceFeedbackItems: List[RelevanceFeedbackTypeDef] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `QueryId`: `str` *(required)*
+- `ClickFeedbackItems`:
+  `List`\[[ClickFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#clickfeedbacktypedef)\]
+- `RelevanceFeedbackItems`:
+  `List`\[[RelevanceFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#relevancefeedbacktypedef)\]
 
 ### tag_resource
 
 Type annotations for `boto3.client("kendra").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.tag_resource]
+Boto3 documentation:
+[Kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("kendra").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.untag_resource]
+Boto3 documentation:
+[Kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_data_source
 
 Type annotations for `boto3.client("kendra").update_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_data_source]
+Boto3 documentation:
+[Kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_data_source)
 
-```python
-def update_data_source(
-    self,
-    Id: str,
-    IndexId: str,
-    Name: str = None,
-    Configuration: "DataSourceConfigurationTypeDef" = None,
-    Description: str = None,
-    Schedule: str = None,
-    RoleArn: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `Name`: `str`
+- `Configuration`:
+  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `Schedule`: `str`
+- `RoleArn`: `str`
 
 ### update_index
 
 Type annotations for `boto3.client("kendra").update_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_index]
+Boto3 documentation:
+[Kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_index)
 
-```python
-def update_index(
-    self,
-    Id: str,
-    Name: str = None,
-    RoleArn: str = None,
-    Description: str = None,
-    DocumentMetadataConfigurationUpdates: List["DocumentMetadataConfigurationTypeDef"] = None,
-    CapacityUnits: "CapacityUnitsConfigurationTypeDef" = None,
-    UserTokenConfigurations: List["UserTokenConfigurationTypeDef"] = None,
-    UserContextPolicy: UserContextPolicy = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `RoleArn`: `str`
+- `Description`: `str`
+- `DocumentMetadataConfigurationUpdates`:
+  `List`\[[DocumentMetadataConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentmetadataconfigurationtypedef)\]
+- `CapacityUnits`:
+  [CapacityUnitsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#capacityunitsconfigurationtypedef)
+- `UserTokenConfigurations`:
+  `List`\[[UserTokenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`:
+  [UserContextPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#usercontextpolicy)
 
 ### update_thesaurus
 
 Type annotations for `boto3.client("kendra").update_thesaurus` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_thesaurus]
+Boto3 documentation:
+[Kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_thesaurus)
 
-```python
-def update_thesaurus(
-    self,
-    Id: str,
-    IndexId: str,
-    Name: str = None,
-    Description: str = None,
-    RoleArn: str = None,
-    SourceS3Path: "S3PathTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `Id`: `str` *(required)*
+- `IndexId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `RoleArn`: `str`
+- `SourceS3Path`:
+  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)

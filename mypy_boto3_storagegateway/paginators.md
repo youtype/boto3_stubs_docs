@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Paginators
 
-Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+Auto-generated documentation for
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+type annotations stubs module
+[mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [Paginators for boto3 StorageGateway module](#paginators-for-boto3-storagegateway-module)
   - [DescribeTapeArchivesPaginator](#describetapearchivespaginator)
@@ -20,7 +22,8 @@ type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/proje
 
 ## DescribeTapeArchivesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("describe_tape_archives")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("describe_tape_archives")`.
 
 Can be used directly:
 
@@ -31,20 +34,22 @@ def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tape_archives")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
+Boto3 documentation:
+[StorageGateway.Paginator.DescribeTapeArchives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
-```python
-class DescribeTapeArchivesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TapeARNs: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTapeArchivesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeTapeArchivesPaginator.paginate` method:
+
+- `TapeARNs`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTapeArchivesPaginator.paginate` returns
+`Iterator`\[[DescribeTapeArchivesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetapearchivesoutputtypedef)\].
+
 ## DescribeTapeRecoveryPointsPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")`.
 
 Can be used directly:
 
@@ -55,20 +60,22 @@ def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsP
     return boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
+Boto3 documentation:
+[StorageGateway.Paginator.DescribeTapeRecoveryPoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
-```python
-class DescribeTapeRecoveryPointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTapeRecoveryPointsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeTapeRecoveryPointsPaginator.paginate` method:
+
+- `GatewayARN`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTapeRecoveryPointsPaginator.paginate` returns
+`Iterator`\[[DescribeTapeRecoveryPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetaperecoverypointsoutputtypedef)\].
+
 ## DescribeTapesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("describe_tapes")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("describe_tapes")`.
 
 Can be used directly:
 
@@ -79,21 +86,23 @@ def get_describe_tapes_paginator() -> DescribeTapesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tapes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
+Boto3 documentation:
+[StorageGateway.Paginator.DescribeTapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
-```python
-class DescribeTapesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str,
-        TapeARNs: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTapesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeTapesPaginator.paginate` method:
+
+- `GatewayARN`: `str` *(required)*
+- `TapeARNs`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTapesPaginator.paginate` returns
+`Iterator`\[[DescribeTapesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetapesoutputtypedef)\].
+
 ## DescribeVTLDevicesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("describe_vtl_devices")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("describe_vtl_devices")`.
 
 Can be used directly:
 
@@ -104,21 +113,23 @@ def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_vtl_devices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
+Boto3 documentation:
+[StorageGateway.Paginator.DescribeVTLDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
-```python
-class DescribeVTLDevicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str,
-        VTLDeviceARNs: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVTLDevicesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeVTLDevicesPaginator.paginate` method:
+
+- `GatewayARN`: `str` *(required)*
+- `VTLDeviceARNs`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVTLDevicesPaginator.paginate` returns
+`Iterator`\[[DescribeVTLDevicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describevtldevicesoutputtypedef)\].
+
 ## ListFileSharesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_file_shares")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_file_shares")`.
 
 Can be used directly:
 
@@ -129,20 +140,22 @@ def get_list_file_shares_paginator() -> ListFileSharesPaginator:
     return boto3.client("storagegateway").get_paginator("list_file_shares")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
+Boto3 documentation:
+[StorageGateway.Paginator.ListFileShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
-```python
-class ListFileSharesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFileSharesOutputTypeDef]:
-        pass
-```
+Arguments for `ListFileSharesPaginator.paginate` method:
+
+- `GatewayARN`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListFileSharesPaginator.paginate` returns
+`Iterator`\[[ListFileSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listfilesharesoutputtypedef)\].
+
 ## ListFileSystemAssociationsPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_file_system_associations")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_file_system_associations")`.
 
 Can be used directly:
 
@@ -153,20 +166,22 @@ def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsP
     return boto3.client("storagegateway").get_paginator("list_file_system_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
+Boto3 documentation:
+[StorageGateway.Paginator.ListFileSystemAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
-```python
-class ListFileSystemAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFileSystemAssociationsOutputTypeDef]:
-        pass
-```
+Arguments for `ListFileSystemAssociationsPaginator.paginate` method:
+
+- `GatewayARN`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListFileSystemAssociationsPaginator.paginate` returns
+`Iterator`\[[ListFileSystemAssociationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listfilesystemassociationsoutputtypedef)\].
+
 ## ListGatewaysPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_gateways")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_gateways")`.
 
 Can be used directly:
 
@@ -177,19 +192,21 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("storagegateway").get_paginator("list_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
+Boto3 documentation:
+[StorageGateway.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
-```python
-class ListGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGatewaysOutputTypeDef]:
-        pass
-```
+Arguments for `ListGatewaysPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListGatewaysPaginator.paginate` returns
+`Iterator`\[[ListGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listgatewaysoutputtypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -200,20 +217,22 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("storagegateway").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
+Boto3 documentation:
+[StorageGateway.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceARN: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceOutputTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `ResourceARN`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtagsforresourceoutputtypedef)\].
+
 ## ListTapePoolsPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_tape_pools")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_tape_pools")`.
 
 Can be used directly:
 
@@ -224,20 +243,22 @@ def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
     return boto3.client("storagegateway").get_paginator("list_tape_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
+Boto3 documentation:
+[StorageGateway.Paginator.ListTapePools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
-```python
-class ListTapePoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolARNs: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTapePoolsOutputTypeDef]:
-        pass
-```
+Arguments for `ListTapePoolsPaginator.paginate` method:
+
+- `PoolARNs`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListTapePoolsPaginator.paginate` returns
+`Iterator`\[[ListTapePoolsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtapepoolsoutputtypedef)\].
+
 ## ListTapesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_tapes")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_tapes")`.
 
 Can be used directly:
 
@@ -248,20 +269,22 @@ def get_list_tapes_paginator() -> ListTapesPaginator:
     return boto3.client("storagegateway").get_paginator("list_tapes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
+Boto3 documentation:
+[StorageGateway.Paginator.ListTapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
-```python
-class ListTapesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TapeARNs: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTapesOutputTypeDef]:
-        pass
-```
+Arguments for `ListTapesPaginator.paginate` method:
+
+- `TapeARNs`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListTapesPaginator.paginate` returns
+`Iterator`\[[ListTapesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtapesoutputtypedef)\].
+
 ## ListVolumesPaginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator("list_volumes")`.
+Type annotations for
+`boto3.client("storagegateway").get_paginator("list_volumes")`.
 
 Can be used directly:
 
@@ -272,14 +295,14 @@ def get_list_volumes_paginator() -> ListVolumesPaginator:
     return boto3.client("storagegateway").get_paginator("list_volumes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
+Boto3 documentation:
+[StorageGateway.Paginator.ListVolumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
-```python
-class ListVolumesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GatewayARN: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVolumesOutputTypeDef]:
-        pass
-```
+Arguments for `ListVolumesPaginator.paginate` method:
+
+- `GatewayARN`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+
+`ListVolumesPaginator.paginate` returns
+`Iterator`\[[ListVolumesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listvolumesoutputtypedef)\].

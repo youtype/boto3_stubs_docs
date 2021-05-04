@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Greengrass
 
-Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
-type annotations stubs module [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+Auto-generated documentation for
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+type annotations stubs module
+[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 ```bash
 pip install mypy-boto3-greengrass
@@ -19,7 +21,8 @@ pip install mypy-boto3-greengrass
 
 ## GreengrassClient
 
-Type annotations for  `boto3.client("greengrass")` as [GreengrassClient](./client.md)
+Type annotations for `boto3.client("greengrass")` as
+[GreengrassClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_greengrass.client import GreengrassClient
 ```
 
-
 GreengrassClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_role_to_group](./client.md#associate-role-to-group)
 - [associate_service_role_to_account](./client.md#associate-service-role-to-account)
 - [can_paginate](./client.md#can-paginate)
@@ -129,22 +130,16 @@ GreengrassClient [exceptions](./client.md#exceptions)
 - [update_subscription_definition](./client.md#update-subscription-definition)
 - [update_thing_runtime_configuration](./client.md#update-thing-runtime-configuration)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerErrorException](./client.md#internalservererrorexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("greengrass").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("greengrass").get_paginator("...")`.
 
 Can be used directly:
 
@@ -171,11 +166,6 @@ from mypy_boto3_greengrass.paginators import ListBulkDeploymentDetailedReportsPa
 - [ListResourceDefinitionsPaginator](./paginators.md#listresourcedefinitionspaginator)
 - [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
 - [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -221,13 +211,10 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatus, ...
 - [UpdateTargetsArchitecture](./literals.md#updatetargetsarchitecture)
 - [UpdateTargetsOperatingSystem](./literals.md#updatetargetsoperatingsystem)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FMS](./README.md) > Paginators
 
-Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+Auto-generated documentation for
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+type annotations stubs module
+[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Paginators for boto3 FMS module](#paginators-for-boto3-fms-module)
   - [ListComplianceStatusPaginator](#listcompliancestatuspaginator)
@@ -12,7 +14,8 @@ type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-bot
 
 ## ListComplianceStatusPaginator
 
-Type annotations for `boto3.client("fms").get_paginator("list_compliance_status")`.
+Type annotations for
+`boto3.client("fms").get_paginator("list_compliance_status")`.
 
 Can be used directly:
 
@@ -23,20 +26,22 @@ def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
     return boto3.client("fms").get_paginator("list_compliance_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
+Boto3 documentation:
+[FMS.Paginator.ListComplianceStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
 
-```python
-class ListComplianceStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PolicyId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListComplianceStatusResponseTypeDef]:
-        pass
-```
+Arguments for `ListComplianceStatusPaginator.paginate` method:
+
+- `PolicyId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#paginatorconfigtypedef)
+
+`ListComplianceStatusPaginator.paginate` returns
+`Iterator`\[[ListComplianceStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listcompliancestatusresponsetypedef)\].
+
 ## ListMemberAccountsPaginator
 
-Type annotations for `boto3.client("fms").get_paginator("list_member_accounts")`.
+Type annotations for
+`boto3.client("fms").get_paginator("list_member_accounts")`.
 
 Can be used directly:
 
@@ -47,16 +52,17 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return boto3.client("fms").get_paginator("list_member_accounts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
+Boto3 documentation:
+[FMS.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
 
-```python
-class ListMemberAccountsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMemberAccountsResponseTypeDef]:
-        pass
-```
+Arguments for `ListMemberAccountsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#paginatorconfigtypedef)
+
+`ListMemberAccountsPaginator.paginate` returns
+`Iterator`\[[ListMemberAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listmemberaccountsresponsetypedef)\].
+
 ## ListPoliciesPaginator
 
 Type annotations for `boto3.client("fms").get_paginator("list_policies")`.
@@ -70,13 +76,13 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("fms").get_paginator("list_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
+Boto3 documentation:
+[FMS.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
 
-```python
-class ListPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListPoliciesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#paginatorconfigtypedef)
+
+`ListPoliciesPaginator.paginate` returns
+`Iterator`\[[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listpoliciesresponsetypedef)\].

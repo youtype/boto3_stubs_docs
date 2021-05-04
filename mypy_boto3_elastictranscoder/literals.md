@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticTranscoder](./README.md) > Literals
 
-Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+Auto-generated documentation for
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+type annotations stubs module
+[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Literals for boto3 ElasticTranscoder module](#literals-for-boto3-elastictranscoder-module)
   - [JobCompleteWaiterName](#jobcompletewaitername)

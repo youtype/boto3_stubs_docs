@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SavingsPlans](./README.md) > Literals
 
-Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+Auto-generated documentation for
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+type annotations stubs module
+[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Literals for boto3 SavingsPlans module](#literals-for-boto3-savingsplans-module)
   - [CurrencyCode](#currencycode)

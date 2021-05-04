@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DynamoDB](./README.md) > Paginators
 
-Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+Auto-generated documentation for
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+type annotations stubs module
+[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Paginators for boto3 DynamoDB module](#paginators-for-boto3-dynamodb-module)
   - [ListBackupsPaginator](#listbackupspaginator)
@@ -25,20 +27,22 @@ def get_list_backups_paginator() -> ListBackupsPaginator:
     return boto3.client("dynamodb").get_paginator("list_backups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
+Boto3 documentation:
+[DynamoDB.Paginator.ListBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
 
-```python
-class ListBackupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TableName: str = None,
-        TimeRangeLowerBound: datetime = None,
-        TimeRangeUpperBound: datetime = None,
-        BackupType: BackupTypeFilter = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBackupsOutputTypeDef]:
-        pass
-```
+Arguments for `ListBackupsPaginator.paginate` method:
+
+- `TableName`: `str`
+- `TimeRangeLowerBound`: `datetime`
+- `TimeRangeUpperBound`: `datetime`
+- `BackupType`:
+  [BackupTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backuptypefilter)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#paginatorconfigtypedef)
+
+`ListBackupsPaginator.paginate` returns
+`Iterator`\[[ListBackupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listbackupsoutputtypedef)\].
+
 ## ListTablesPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("list_tables")`.
@@ -52,19 +56,21 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("dynamodb").get_paginator("list_tables")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
+Boto3 documentation:
+[DynamoDB.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
 
-```python
-class ListTablesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTablesOutputTypeDef]:
-        pass
-```
+Arguments for `ListTablesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#paginatorconfigtypedef)
+
+`ListTablesPaginator.paginate` returns
+`Iterator`\[[ListTablesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listtablesoutputtypedef)\].
+
 ## ListTagsOfResourcePaginator
 
-Type annotations for `boto3.client("dynamodb").get_paginator("list_tags_of_resource")`.
+Type annotations for
+`boto3.client("dynamodb").get_paginator("list_tags_of_resource")`.
 
 Can be used directly:
 
@@ -75,17 +81,18 @@ def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
     return boto3.client("dynamodb").get_paginator("list_tags_of_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
+Boto3 documentation:
+[DynamoDB.Paginator.ListTagsOfResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
 
-```python
-class ListTagsOfResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsOfResourceOutputTypeDef]:
-        pass
-```
+Arguments for `ListTagsOfResourcePaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsOfResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsOfResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listtagsofresourceoutputtypedef)\].
+
 ## QueryPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("query")`.
@@ -99,31 +106,40 @@ def get_query_paginator() -> QueryPaginator:
     return boto3.client("dynamodb").get_paginator("query")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
+Boto3 documentation:
+[DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
 
-```python
-class QueryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TableName: str,
-        IndexName: str = None,
-        Select: Select = None,
-        AttributesToGet: List[str] = None,
-        ConsistentRead: bool = None,
-        KeyConditions: Dict[str, ConditionTypeDef] = None,
-        QueryFilter: Dict[str, ConditionTypeDef] = None,
-        ConditionalOperator: ConditionalOperator = None,
-        ScanIndexForward: bool = None,
-        ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-        ProjectionExpression: str = None,
-        FilterExpression: str = None,
-        KeyConditionExpression: str = None,
-        ExpressionAttributeNames: Dict[str, str] = None,
-        ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[QueryOutputTypeDef]:
-        pass
-```
+Arguments for `QueryPaginator.paginate` method:
+
+- `TableName`: `str` *(required)*
+- `IndexName`: `str`
+- `Select`:
+  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `AttributesToGet`: `List`\[`str`\]
+- `ConsistentRead`: `bool`
+- `KeyConditions`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `QueryFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ScanIndexForward`: `bool`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `KeyConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#paginatorconfigtypedef)
+
+`QueryPaginator.paginate` returns
+`Iterator`\[[QueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#queryoutputtypedef)\].
+
 ## ScanPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("scan")`.
@@ -137,27 +153,34 @@ def get_scan_paginator() -> ScanPaginator:
     return boto3.client("dynamodb").get_paginator("scan")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
+Boto3 documentation:
+[DynamoDB.Paginator.Scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
 
-```python
-class ScanPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TableName: str,
-        IndexName: str = None,
-        AttributesToGet: List[str] = None,
-        Select: Select = None,
-        ScanFilter: Dict[str, ConditionTypeDef] = None,
-        ConditionalOperator: ConditionalOperator = None,
-        ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-        TotalSegments: int = None,
-        Segment: int = None,
-        ProjectionExpression: str = None,
-        FilterExpression: str = None,
-        ExpressionAttributeNames: Dict[str, str] = None,
-        ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-        ConsistentRead: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ScanOutputTypeDef]:
-        pass
-```
+Arguments for `ScanPaginator.paginate` method:
+
+- `TableName`: `str` *(required)*
+- `IndexName`: `str`
+- `AttributesToGet`: `List`\[`str`\]
+- `Select`:
+  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `ScanFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `TotalSegments`: `int`
+- `Segment`: `int`
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#paginatorconfigtypedef)
+
+`ScanPaginator.paginate` returns
+`Iterator`\[[ScanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#scanoutputtypedef)\].

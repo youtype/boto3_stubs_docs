@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Chime](./README.md) > ChimeClient
 
-Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+Auto-generated documentation for
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+type annotations stubs module
+[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [ChimeClient for boto3 Chime module](#chimeclient-for-boto3-chime-module)
   - [ChimeClient](#chimeclient)
@@ -14,6 +16,7 @@ type annotations stubs module [mypy_boto3_chime](https://pypi.org/project/mypy-b
     - [associate_phone_numbers_with_voice_connector_group](#associate_phone_numbers_with_voice_connector_group)
     - [associate_signin_delegate_groups_with_account](#associate_signin_delegate_groups_with_account)
     - [batch_create_attendee](#batch_create_attendee)
+    - [batch_create_channel_membership](#batch_create_channel_membership)
     - [batch_create_room_membership](#batch_create_room_membership)
     - [batch_delete_phone_number](#batch_delete_phone_number)
     - [batch_suspend_user](#batch_suspend_user)
@@ -207,12 +210,13 @@ def get_chime_client() -> ChimeClient:
     return boto3.client("chime")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
+Boto3 documentation:
+[Chime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_chime.client import Exceptions
@@ -220,7 +224,6 @@ from mypy_boto3_chime.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -237,2857 +240,2906 @@ Exceptions:
 - `Exceptions.UnauthorizedClientException`
 - `Exceptions.UnprocessableEntityException`
 
-
 ## Methods
-
 
 ### associate_phone_number_with_user
 
-Type annotations for `boto3.client("chime").associate_phone_number_with_user` method.
+Type annotations for `boto3.client("chime").associate_phone_number_with_user`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user]
+Boto3 documentation:
+[Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
 
-```python
-def associate_phone_number_with_user(
-    self,
-    AccountId: str,
-    UserId: str,
-    E164PhoneNumber: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `E164PhoneNumber`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_phone_numbers_with_voice_connector
 
-Type annotations for `boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
+Type annotations for
+`boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector]
+Boto3 documentation:
+[Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
 
-```python
-def associate_phone_numbers_with_voice_connector(
-    self,
-    VoiceConnectorId: str,
-    E164PhoneNumbers: List[str],
-    ForceAssociate: bool = None
-) -> AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `ForceAssociate`: `bool`
+
+Returns
+[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#associatephonenumberswithvoiceconnectorresponsetypedef).
 
 ### associate_phone_numbers_with_voice_connector_group
 
-Type annotations for `boto3.client("chime").associate_phone_numbers_with_voice_connector_group` method.
+Type annotations for
+`boto3.client("chime").associate_phone_numbers_with_voice_connector_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
-```python
-def associate_phone_numbers_with_voice_connector_group(
-    self,
-    VoiceConnectorGroupId: str,
-    E164PhoneNumbers: List[str],
-    ForceAssociate: bool = None
-) -> AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorGroupId`: `str` *(required)*
+- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `ForceAssociate`: `bool`
+
+Returns
+[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
 
 ### associate_signin_delegate_groups_with_account
 
-Type annotations for `boto3.client("chime").associate_signin_delegate_groups_with_account` method.
+Type annotations for
+`boto3.client("chime").associate_signin_delegate_groups_with_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account]
+Boto3 documentation:
+[Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
 
-```python
-def associate_signin_delegate_groups_with_account(
-    self,
-    AccountId: str,
-    SigninDelegateGroups: List["SigninDelegateGroupTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `SigninDelegateGroups`:
+  `List`\[[SigninDelegateGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#signindelegategrouptypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_create_attendee
 
 Type annotations for `boto3.client("chime").batch_create_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee]
+Boto3 documentation:
+[Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
 
-```python
-def batch_create_attendee(
-    self,
-    MeetingId: str,
-    Attendees: List[CreateAttendeeRequestItemTypeDef]
-) -> BatchCreateAttendeeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `Attendees`:
+  `List`\[[CreateAttendeeRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeerequestitemtypedef)\]
+  *(required)*
+
+Returns
+[BatchCreateAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreateattendeeresponsetypedef).
+
+### batch_create_channel_membership
+
+Type annotations for `boto3.client("chime").batch_create_channel_membership`
+method.
+
+Boto3 documentation:
+[Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
+
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArns`: `List`\[`str`\] *(required)*
+- `Type`:
+  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+- `ChimeBearer`: `str`
+
+Returns
+[BatchCreateChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreatechannelmembershipresponsetypedef).
 
 ### batch_create_room_membership
 
-Type annotations for `boto3.client("chime").batch_create_room_membership` method.
+Type annotations for `boto3.client("chime").batch_create_room_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership]
+Boto3 documentation:
+[Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
 
-```python
-def batch_create_room_membership(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MembershipItemList: List[MembershipItemTypeDef]
-) -> BatchCreateRoomMembershipResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MembershipItemList`:
+  `List`\[[MembershipItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#membershipitemtypedef)\]
+  *(required)*
+
+Returns
+[BatchCreateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreateroommembershipresponsetypedef).
 
 ### batch_delete_phone_number
 
 Type annotations for `boto3.client("chime").batch_delete_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number]
+Boto3 documentation:
+[Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
 
-```python
-def batch_delete_phone_number(
-    self,
-    PhoneNumberIds: List[str]
-) -> BatchDeletePhoneNumberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PhoneNumberIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDeletePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchdeletephonenumberresponsetypedef).
 
 ### batch_suspend_user
 
 Type annotations for `boto3.client("chime").batch_suspend_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user]
+Boto3 documentation:
+[Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
 
-```python
-def batch_suspend_user(
-    self,
-    AccountId: str,
-    UserIdList: List[str]
-) -> BatchSuspendUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserIdList`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchSuspendUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchsuspenduserresponsetypedef).
 
 ### batch_unsuspend_user
 
 Type annotations for `boto3.client("chime").batch_unsuspend_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user]
+Boto3 documentation:
+[Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
 
-```python
-def batch_unsuspend_user(
-    self,
-    AccountId: str,
-    UserIdList: List[str]
-) -> BatchUnsuspendUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserIdList`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchUnsuspendUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchunsuspenduserresponsetypedef).
 
 ### batch_update_phone_number
 
 Type annotations for `boto3.client("chime").batch_update_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number]
+Boto3 documentation:
+[Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
 
-```python
-def batch_update_phone_number(
-    self,
-    UpdatePhoneNumberRequestItems: List[UpdatePhoneNumberRequestItemTypeDef]
-) -> BatchUpdatePhoneNumberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UpdatePhoneNumberRequestItems`:
+  `List`\[[UpdatePhoneNumberRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatephonenumberrequestitemtypedef)\]
+  *(required)*
+
+Returns
+[BatchUpdatePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchupdatephonenumberresponsetypedef).
 
 ### batch_update_user
 
 Type annotations for `boto3.client("chime").batch_update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user]
+Boto3 documentation:
+[Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
 
-```python
-def batch_update_user(
-    self,
-    AccountId: str,
-    UpdateUserRequestItems: List[UpdateUserRequestItemTypeDef]
-) -> BatchUpdateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UpdateUserRequestItems`:
+  `List`\[[UpdateUserRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateuserrequestitemtypedef)\]
+  *(required)*
+
+Returns
+[BatchUpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchupdateuserresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("chime").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate]
+Boto3 documentation:
+[Chime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_account
 
 Type annotations for `boto3.client("chime").create_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account]
+Boto3 documentation:
+[Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
 
-```python
-def create_account(
-    self,
-    Name: str
-) -> CreateAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[CreateAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createaccountresponsetypedef).
 
 ### create_app_instance
 
 Type annotations for `boto3.client("chime").create_app_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance]
+Boto3 documentation:
+[Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
 
-```python
-def create_app_instance(
-    self,
-    Name: str,
-    ClientRequestToken: str,
-    Metadata: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAppInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Metadata`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceresponsetypedef).
 
 ### create_app_instance_admin
 
 Type annotations for `boto3.client("chime").create_app_instance_admin` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin]
+Boto3 documentation:
+[Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
 
-```python
-def create_app_instance_admin(
-    self,
-    AppInstanceAdminArn: str,
-    AppInstanceArn: str
-) -> CreateAppInstanceAdminResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceAdminArn`: `str` *(required)*
+- `AppInstanceArn`: `str` *(required)*
+
+Returns
+[CreateAppInstanceAdminResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceadminresponsetypedef).
 
 ### create_app_instance_user
 
 Type annotations for `boto3.client("chime").create_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user]
+Boto3 documentation:
+[Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
 
-```python
-def create_app_instance_user(
-    self,
-    AppInstanceArn: str,
-    AppInstanceUserId: str,
-    Name: str,
-    ClientRequestToken: str,
-    Metadata: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `AppInstanceUserId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Metadata`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceuserresponsetypedef).
 
 ### create_attendee
 
 Type annotations for `boto3.client("chime").create_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee]
+Boto3 documentation:
+[Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
 
-```python
-def create_attendee(
-    self,
-    MeetingId: str,
-    ExternalUserId: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAttendeeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `ExternalUserId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeeresponsetypedef).
 
 ### create_bot
 
 Type annotations for `boto3.client("chime").create_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot]
+Boto3 documentation:
+[Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
 
-```python
-def create_bot(
-    self,
-    AccountId: str,
-    DisplayName: str,
-    Domain: str = None
-) -> CreateBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `DisplayName`: `str` *(required)*
+- `Domain`: `str`
+
+Returns
+[CreateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createbotresponsetypedef).
 
 ### create_channel
 
 Type annotations for `boto3.client("chime").create_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel]
+Boto3 documentation:
+[Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
 
-```python
-def create_channel(
-    self,
-    AppInstanceArn: str,
-    Name: str,
-    ClientRequestToken: str,
-    Mode: ChannelMode = None,
-    Privacy: ChannelPrivacy = None,
-    Metadata: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ChimeBearer: str = None
-) -> CreateChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Mode`:
+  [ChannelMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmode)
+- `Privacy`:
+  [ChannelPrivacy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelprivacy)
+- `Metadata`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `ChimeBearer`: `str`
+
+Returns
+[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelresponsetypedef).
 
 ### create_channel_ban
 
 Type annotations for `boto3.client("chime").create_channel_ban` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban]
+Boto3 documentation:
+[Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
 
-```python
-def create_channel_ban(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    ChimeBearer: str = None
-) -> CreateChannelBanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[CreateChannelBanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelbanresponsetypedef).
 
 ### create_channel_membership
 
 Type annotations for `boto3.client("chime").create_channel_membership` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership]
+Boto3 documentation:
+[Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
 
-```python
-def create_channel_membership(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    Type: ChannelMembershipType,
-    ChimeBearer: str = None
-) -> CreateChannelMembershipResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `Type`:
+  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+  *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[CreateChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelmembershipresponsetypedef).
 
 ### create_channel_moderator
 
 Type annotations for `boto3.client("chime").create_channel_moderator` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator]
+Boto3 documentation:
+[Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
 
-```python
-def create_channel_moderator(
-    self,
-    ChannelArn: str,
-    ChannelModeratorArn: str,
-    ChimeBearer: str = None
-) -> CreateChannelModeratorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChannelModeratorArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[CreateChannelModeratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelmoderatorresponsetypedef).
 
 ### create_meeting
 
 Type annotations for `boto3.client("chime").create_meeting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting]
+Boto3 documentation:
+[Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
 
-```python
-def create_meeting(
-    self,
-    ClientRequestToken: str,
-    ExternalMeetingId: str = None,
-    MeetingHostId: str = None,
-    MediaRegion: str = None,
-    Tags: List["TagTypeDef"] = None,
-    NotificationsConfiguration: MeetingNotificationConfigurationTypeDef = None
-) -> CreateMeetingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientRequestToken`: `str` *(required)*
+- `ExternalMeetingId`: `str`
+- `MeetingHostId`: `str`
+- `MediaRegion`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `NotificationsConfiguration`:
+  [MeetingNotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#meetingnotificationconfigurationtypedef)
+
+Returns
+[CreateMeetingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingresponsetypedef).
 
 ### create_meeting_dial_out
 
 Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out]
+Boto3 documentation:
+[Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
 
-```python
-def create_meeting_dial_out(
-    self,
-    MeetingId: str,
-    FromPhoneNumber: str,
-    ToPhoneNumber: str,
-    JoinToken: str
-) -> CreateMeetingDialOutResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `FromPhoneNumber`: `str` *(required)*
+- `ToPhoneNumber`: `str` *(required)*
+- `JoinToken`: `str` *(required)*
+
+Returns
+[CreateMeetingDialOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingdialoutresponsetypedef).
 
 ### create_meeting_with_attendees
 
-Type annotations for `boto3.client("chime").create_meeting_with_attendees` method.
+Type annotations for `boto3.client("chime").create_meeting_with_attendees`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees]
+Boto3 documentation:
+[Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
 
-```python
-def create_meeting_with_attendees(
-    self,
-    ClientRequestToken: str,
-    ExternalMeetingId: str = None,
-    MeetingHostId: str = None,
-    MediaRegion: str = None,
-    Tags: List["TagTypeDef"] = None,
-    NotificationsConfiguration: MeetingNotificationConfigurationTypeDef = None,
-    Attendees: List[CreateAttendeeRequestItemTypeDef] = None
-) -> CreateMeetingWithAttendeesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientRequestToken`: `str` *(required)*
+- `ExternalMeetingId`: `str`
+- `MeetingHostId`: `str`
+- `MediaRegion`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `NotificationsConfiguration`:
+  [MeetingNotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#meetingnotificationconfigurationtypedef)
+- `Attendees`:
+  `List`\[[CreateAttendeeRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeerequestitemtypedef)\]
+
+Returns
+[CreateMeetingWithAttendeesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingwithattendeesresponsetypedef).
 
 ### create_phone_number_order
 
 Type annotations for `boto3.client("chime").create_phone_number_order` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order]
+Boto3 documentation:
+[Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
 
-```python
-def create_phone_number_order(
-    self,
-    ProductType: PhoneNumberProductType,
-    E164PhoneNumbers: List[str]
-) -> CreatePhoneNumberOrderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductType`:
+  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+  *(required)*
+- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+
+Returns
+[CreatePhoneNumberOrderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createphonenumberorderresponsetypedef).
 
 ### create_proxy_session
 
 Type annotations for `boto3.client("chime").create_proxy_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session]
+Boto3 documentation:
+[Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
 
-```python
-def create_proxy_session(
-    self,
-    VoiceConnectorId: str,
-    ParticipantPhoneNumbers: List[str],
-    Capabilities: List[Capability],
-    Name: str = None,
-    ExpiryMinutes: int = None,
-    NumberSelectionBehavior: NumberSelectionBehavior = None,
-    GeoMatchLevel: GeoMatchLevel = None,
-    GeoMatchParams: "GeoMatchParamsTypeDef" = None
-) -> CreateProxySessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `ParticipantPhoneNumbers`: `List`\[`str`\] *(required)*
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#capability)\]
+  *(required)*
+- `Name`: `str`
+- `ExpiryMinutes`: `int`
+- `NumberSelectionBehavior`:
+  [NumberSelectionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#numberselectionbehavior)
+- `GeoMatchLevel`:
+  [GeoMatchLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#geomatchlevel)
+- `GeoMatchParams`:
+  [GeoMatchParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#geomatchparamstypedef)
+
+Returns
+[CreateProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createproxysessionresponsetypedef).
 
 ### create_room
 
 Type annotations for `boto3.client("chime").create_room` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room]
+Boto3 documentation:
+[Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
 
-```python
-def create_room(
-    self,
-    AccountId: str,
-    Name: str,
-    ClientRequestToken: str = None
-) -> CreateRoomResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createroomresponsetypedef).
 
 ### create_room_membership
 
 Type annotations for `boto3.client("chime").create_room_membership` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership]
+Boto3 documentation:
+[Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
 
-```python
-def create_room_membership(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MemberId: str,
-    Role: RoomMembershipRole = None
-) -> CreateRoomMembershipResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+- `Role`:
+  [RoomMembershipRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#roommembershiprole)
+
+Returns
+[CreateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createroommembershipresponsetypedef).
 
 ### create_sip_media_application
 
-Type annotations for `boto3.client("chime").create_sip_media_application` method.
+Type annotations for `boto3.client("chime").create_sip_media_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application]
+Boto3 documentation:
+[Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
 
-```python
-def create_sip_media_application(
-    self,
-    AwsRegion: str,
-    Name: str,
-    Endpoints: List["SipMediaApplicationEndpointTypeDef"]
-) -> CreateSipMediaApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AwsRegion`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Endpoints`:
+  `List`\[[SipMediaApplicationEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationendpointtypedef)\]
+  *(required)*
+
+Returns
+[CreateSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipmediaapplicationresponsetypedef).
 
 ### create_sip_media_application_call
 
-Type annotations for `boto3.client("chime").create_sip_media_application_call` method.
+Type annotations for `boto3.client("chime").create_sip_media_application_call`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call]
+Boto3 documentation:
+[Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
 
-```python
-def create_sip_media_application_call(
-    self,
-    FromPhoneNumber: str,
-    ToPhoneNumber: str,
-    SipMediaApplicationId: str
-) -> CreateSipMediaApplicationCallResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FromPhoneNumber`: `str` *(required)*
+- `ToPhoneNumber`: `str` *(required)*
+- `SipMediaApplicationId`: `str` *(required)*
+
+Returns
+[CreateSipMediaApplicationCallResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipmediaapplicationcallresponsetypedef).
 
 ### create_sip_rule
 
 Type annotations for `boto3.client("chime").create_sip_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule]
+Boto3 documentation:
+[Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
 
-```python
-def create_sip_rule(
-    self,
-    Name: str,
-    TriggerType: SipRuleTriggerType,
-    TriggerValue: str,
-    TargetApplications: List["SipRuleTargetApplicationTypeDef"],
-    Disabled: bool = None
-) -> CreateSipRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `TriggerType`:
+  [SipRuleTriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#sipruletriggertype)
+  *(required)*
+- `TriggerValue`: `str` *(required)*
+- `TargetApplications`:
+  `List`\[[SipRuleTargetApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipruletargetapplicationtypedef)\]
+  *(required)*
+- `Disabled`: `bool`
+
+Returns
+[CreateSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipruleresponsetypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("chime").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user]
+Boto3 documentation:
+[Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
 
-```python
-def create_user(
-    self,
-    AccountId: str,
-    Username: str = None,
-    Email: str = None,
-    UserType: UserType = None
-) -> CreateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Username`: `str`
+- `Email`: `str`
+- `UserType`:
+  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+
+Returns
+[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createuserresponsetypedef).
 
 ### create_voice_connector
 
 Type annotations for `boto3.client("chime").create_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector]
+Boto3 documentation:
+[Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
 
-```python
-def create_voice_connector(
-    self,
-    Name: str,
-    RequireEncryption: bool,
-    AwsRegion: VoiceConnectorAwsRegion = None
-) -> CreateVoiceConnectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RequireEncryption`: `bool` *(required)*
+- `AwsRegion`:
+  [VoiceConnectorAwsRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#voiceconnectorawsregion)
+
+Returns
+[CreateVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createvoiceconnectorresponsetypedef).
 
 ### create_voice_connector_group
 
-Type annotations for `boto3.client("chime").create_voice_connector_group` method.
+Type annotations for `boto3.client("chime").create_voice_connector_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
 
-```python
-def create_voice_connector_group(
-    self,
-    Name: str,
-    VoiceConnectorItems: List["VoiceConnectorItemTypeDef"] = None
-) -> CreateVoiceConnectorGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `VoiceConnectorItems`:
+  `List`\[[VoiceConnectorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectoritemtypedef)\]
+
+Returns
+[CreateVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createvoiceconnectorgroupresponsetypedef).
 
 ### delete_account
 
 Type annotations for `boto3.client("chime").delete_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account]
+Boto3 documentation:
+[Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
 
-```python
-def delete_account(
-    self,
-    AccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_app_instance
 
 Type annotations for `boto3.client("chime").delete_app_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance]
+Boto3 documentation:
+[Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
 
-```python
-def delete_app_instance(
-    self,
-    AppInstanceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
 
 ### delete_app_instance_admin
 
 Type annotations for `boto3.client("chime").delete_app_instance_admin` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin]
+Boto3 documentation:
+[Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
 
-```python
-def delete_app_instance_admin(
-    self,
-    AppInstanceAdminArn: str,
-    AppInstanceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppInstanceAdminArn`: `str` *(required)*
+- `AppInstanceArn`: `str` *(required)*
 
 ### delete_app_instance_streaming_configurations
 
-Type annotations for `boto3.client("chime").delete_app_instance_streaming_configurations` method.
+Type annotations for
+`boto3.client("chime").delete_app_instance_streaming_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations]
+Boto3 documentation:
+[Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
 
-```python
-def delete_app_instance_streaming_configurations(
-    self,
-    AppInstanceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
 
 ### delete_app_instance_user
 
 Type annotations for `boto3.client("chime").delete_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user]
+Boto3 documentation:
+[Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
 
-```python
-def delete_app_instance_user(
-    self,
-    AppInstanceUserArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
 
 ### delete_attendee
 
 Type annotations for `boto3.client("chime").delete_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee]
+Boto3 documentation:
+[Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
 
-```python
-def delete_attendee(
-    self,
-    MeetingId: str,
-    AttendeeId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `AttendeeId`: `str` *(required)*
 
 ### delete_channel
 
 Type annotations for `boto3.client("chime").delete_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel]
+Boto3 documentation:
+[Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
 
-```python
-def delete_channel(
-    self,
-    ChannelArn: str,
-    ChimeBearer: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChimeBearer`: `str`
 
 ### delete_channel_ban
 
 Type annotations for `boto3.client("chime").delete_channel_ban` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban]
+Boto3 documentation:
+[Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
 
-```python
-def delete_channel_ban(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    ChimeBearer: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str`
 
 ### delete_channel_membership
 
 Type annotations for `boto3.client("chime").delete_channel_membership` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership]
+Boto3 documentation:
+[Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
 
-```python
-def delete_channel_membership(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    ChimeBearer: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str`
 
 ### delete_channel_message
 
 Type annotations for `boto3.client("chime").delete_channel_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message]
+Boto3 documentation:
+[Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
 
-```python
-def delete_channel_message(
-    self,
-    ChannelArn: str,
-    MessageId: str,
-    ChimeBearer: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `ChimeBearer`: `str`
 
 ### delete_channel_moderator
 
 Type annotations for `boto3.client("chime").delete_channel_moderator` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator]
+Boto3 documentation:
+[Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
 
-```python
-def delete_channel_moderator(
-    self,
-    ChannelArn: str,
-    ChannelModeratorArn: str,
-    ChimeBearer: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChannelModeratorArn`: `str` *(required)*
+- `ChimeBearer`: `str`
 
 ### delete_events_configuration
 
-Type annotations for `boto3.client("chime").delete_events_configuration` method.
+Type annotations for `boto3.client("chime").delete_events_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration]
+Boto3 documentation:
+[Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
 
-```python
-def delete_events_configuration(
-    self,
-    AccountId: str,
-    BotId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
 
 ### delete_meeting
 
 Type annotations for `boto3.client("chime").delete_meeting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting]
+Boto3 documentation:
+[Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
 
-```python
-def delete_meeting(
-    self,
-    MeetingId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
 
 ### delete_phone_number
 
 Type annotations for `boto3.client("chime").delete_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number]
+Boto3 documentation:
+[Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
 
-```python
-def delete_phone_number(
-    self,
-    PhoneNumberId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PhoneNumberId`: `str` *(required)*
 
 ### delete_proxy_session
 
 Type annotations for `boto3.client("chime").delete_proxy_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session]
+Boto3 documentation:
+[Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
 
-```python
-def delete_proxy_session(
-    self,
-    VoiceConnectorId: str,
-    ProxySessionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `ProxySessionId`: `str` *(required)*
 
 ### delete_room
 
 Type annotations for `boto3.client("chime").delete_room` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room]
+Boto3 documentation:
+[Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
 
-```python
-def delete_room(
-    self,
-    AccountId: str,
-    RoomId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
 
 ### delete_room_membership
 
 Type annotations for `boto3.client("chime").delete_room_membership` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership]
+Boto3 documentation:
+[Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
 
-```python
-def delete_room_membership(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MemberId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
 
 ### delete_sip_media_application
 
-Type annotations for `boto3.client("chime").delete_sip_media_application` method.
+Type annotations for `boto3.client("chime").delete_sip_media_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application]
+Boto3 documentation:
+[Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
 
-```python
-def delete_sip_media_application(
-    self,
-    SipMediaApplicationId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
 
 ### delete_sip_rule
 
 Type annotations for `boto3.client("chime").delete_sip_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule]
+Boto3 documentation:
+[Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
 
-```python
-def delete_sip_rule(
-    self,
-    SipRuleId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SipRuleId`: `str` *(required)*
 
 ### delete_voice_connector
 
 Type annotations for `boto3.client("chime").delete_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
 
-```python
-def delete_voice_connector(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_emergency_calling_configuration
 
-Type annotations for `boto3.client("chime").delete_voice_connector_emergency_calling_configuration` method.
+Type annotations for
+`boto3.client("chime").delete_voice_connector_emergency_calling_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
 
-```python
-def delete_voice_connector_emergency_calling_configuration(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_group
 
-Type annotations for `boto3.client("chime").delete_voice_connector_group` method.
+Type annotations for `boto3.client("chime").delete_voice_connector_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
 
-```python
-def delete_voice_connector_group(
-    self,
-    VoiceConnectorGroupId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorGroupId`: `str` *(required)*
 
 ### delete_voice_connector_origination
 
-Type annotations for `boto3.client("chime").delete_voice_connector_origination` method.
+Type annotations for `boto3.client("chime").delete_voice_connector_origination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
 
-```python
-def delete_voice_connector_origination(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_proxy
 
-Type annotations for `boto3.client("chime").delete_voice_connector_proxy` method.
+Type annotations for `boto3.client("chime").delete_voice_connector_proxy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
 
-```python
-def delete_voice_connector_proxy(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_streaming_configuration
 
-Type annotations for `boto3.client("chime").delete_voice_connector_streaming_configuration` method.
+Type annotations for
+`boto3.client("chime").delete_voice_connector_streaming_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
 
-```python
-def delete_voice_connector_streaming_configuration(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_termination
 
-Type annotations for `boto3.client("chime").delete_voice_connector_termination` method.
+Type annotations for `boto3.client("chime").delete_voice_connector_termination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
 
-```python
-def delete_voice_connector_termination(
-    self,
-    VoiceConnectorId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_termination_credentials
 
-Type annotations for `boto3.client("chime").delete_voice_connector_termination_credentials` method.
+Type annotations for
+`boto3.client("chime").delete_voice_connector_termination_credentials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials]
+Boto3 documentation:
+[Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
 
-```python
-def delete_voice_connector_termination_credentials(
-    self,
-    VoiceConnectorId: str,
-    Usernames: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Usernames`: `List`\[`str`\] *(required)*
 
 ### describe_app_instance
 
 Type annotations for `boto3.client("chime").describe_app_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance]
+Boto3 documentation:
+[Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
 
-```python
-def describe_app_instance(
-    self,
-    AppInstanceArn: str
-) -> DescribeAppInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+
+Returns
+[DescribeAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceresponsetypedef).
 
 ### describe_app_instance_admin
 
-Type annotations for `boto3.client("chime").describe_app_instance_admin` method.
+Type annotations for `boto3.client("chime").describe_app_instance_admin`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin]
+Boto3 documentation:
+[Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
 
-```python
-def describe_app_instance_admin(
-    self,
-    AppInstanceAdminArn: str,
-    AppInstanceArn: str
-) -> DescribeAppInstanceAdminResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceAdminArn`: `str` *(required)*
+- `AppInstanceArn`: `str` *(required)*
+
+Returns
+[DescribeAppInstanceAdminResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceadminresponsetypedef).
 
 ### describe_app_instance_user
 
 Type annotations for `boto3.client("chime").describe_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user]
+Boto3 documentation:
+[Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
 
-```python
-def describe_app_instance_user(
-    self,
-    AppInstanceUserArn: str
-) -> DescribeAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+
+Returns
+[DescribeAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceuserresponsetypedef).
 
 ### describe_channel
 
 Type annotations for `boto3.client("chime").describe_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel]
+Boto3 documentation:
+[Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
 
-```python
-def describe_channel(
-    self,
-    ChannelArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelresponsetypedef).
 
 ### describe_channel_ban
 
 Type annotations for `boto3.client("chime").describe_channel_ban` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban]
+Boto3 documentation:
+[Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
 
-```python
-def describe_channel_ban(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelBanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelBanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelbanresponsetypedef).
 
 ### describe_channel_membership
 
-Type annotations for `boto3.client("chime").describe_channel_membership` method.
+Type annotations for `boto3.client("chime").describe_channel_membership`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership]
+Boto3 documentation:
+[Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
-```python
-def describe_channel_membership(
-    self,
-    ChannelArn: str,
-    MemberArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelMembershipResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MemberArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmembershipresponsetypedef).
 
 ### describe_channel_membership_for_app_instance_user
 
-Type annotations for `boto3.client("chime").describe_channel_membership_for_app_instance_user` method.
+Type annotations for
+`boto3.client("chime").describe_channel_membership_for_app_instance_user`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user]
+Boto3 documentation:
+[Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
-```python
-def describe_channel_membership_for_app_instance_user(
-    self,
-    ChannelArn: str,
-    AppInstanceUserArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `AppInstanceUserArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmembershipforappinstanceuserresponsetypedef).
 
 ### describe_channel_moderated_by_app_instance_user
 
-Type annotations for `boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
+Type annotations for
+`boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user]
+Boto3 documentation:
+[Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
-```python
-def describe_channel_moderated_by_app_instance_user(
-    self,
-    ChannelArn: str,
-    AppInstanceUserArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `AppInstanceUserArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmoderatedbyappinstanceuserresponsetypedef).
 
 ### describe_channel_moderator
 
 Type annotations for `boto3.client("chime").describe_channel_moderator` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator]
+Boto3 documentation:
+[Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
 
-```python
-def describe_channel_moderator(
-    self,
-    ChannelArn: str,
-    ChannelModeratorArn: str,
-    ChimeBearer: str = None
-) -> DescribeChannelModeratorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChannelModeratorArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[DescribeChannelModeratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmoderatorresponsetypedef).
 
 ### disassociate_phone_number_from_user
 
-Type annotations for `boto3.client("chime").disassociate_phone_number_from_user` method.
+Type annotations for
+`boto3.client("chime").disassociate_phone_number_from_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user]
+Boto3 documentation:
+[Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
 
-```python
-def disassociate_phone_number_from_user(
-    self,
-    AccountId: str,
-    UserId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_phone_numbers_from_voice_connector
 
-Type annotations for `boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
+Type annotations for
+`boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector]
+Boto3 documentation:
+[Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
 
-```python
-def disassociate_phone_numbers_from_voice_connector(
-    self,
-    VoiceConnectorId: str,
-    E164PhoneNumbers: List[str]
-) -> DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+
+Returns
+[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
 
 ### disassociate_phone_numbers_from_voice_connector_group
 
-Type annotations for `boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group` method.
+Type annotations for
+`boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
 
-```python
-def disassociate_phone_numbers_from_voice_connector_group(
-    self,
-    VoiceConnectorGroupId: str,
-    E164PhoneNumbers: List[str]
-) -> DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorGroupId`: `str` *(required)*
+- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+
+Returns
+[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
 
 ### disassociate_signin_delegate_groups_from_account
 
-Type annotations for `boto3.client("chime").disassociate_signin_delegate_groups_from_account` method.
+Type annotations for
+`boto3.client("chime").disassociate_signin_delegate_groups_from_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account]
+Boto3 documentation:
+[Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
 
-```python
-def disassociate_signin_delegate_groups_from_account(
-    self,
-    AccountId: str,
-    GroupNames: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `GroupNames`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("chime").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url]
+Boto3 documentation:
+[Chime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account
 
 Type annotations for `boto3.client("chime").get_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account]
+Boto3 documentation:
+[Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
 
-```python
-def get_account(
-    self,
-    AccountId: str
-) -> GetAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getaccountresponsetypedef).
 
 ### get_account_settings
 
 Type annotations for `boto3.client("chime").get_account_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings]
+Boto3 documentation:
+[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
 
-```python
-def get_account_settings(
-    self,
-    AccountId: str
-) -> GetAccountSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getaccountsettingsresponsetypedef).
 
 ### get_app_instance_retention_settings
 
-Type annotations for `boto3.client("chime").get_app_instance_retention_settings` method.
+Type annotations for
+`boto3.client("chime").get_app_instance_retention_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings]
+Boto3 documentation:
+[Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
 
-```python
-def get_app_instance_retention_settings(
-    self,
-    AppInstanceArn: str
-) -> GetAppInstanceRetentionSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+
+Returns
+[GetAppInstanceRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getappinstanceretentionsettingsresponsetypedef).
 
 ### get_app_instance_streaming_configurations
 
-Type annotations for `boto3.client("chime").get_app_instance_streaming_configurations` method.
+Type annotations for
+`boto3.client("chime").get_app_instance_streaming_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations]
+Boto3 documentation:
+[Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
 
-```python
-def get_app_instance_streaming_configurations(
-    self,
-    AppInstanceArn: str
-) -> GetAppInstanceStreamingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+
+Returns
+[GetAppInstanceStreamingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getappinstancestreamingconfigurationsresponsetypedef).
 
 ### get_attendee
 
 Type annotations for `boto3.client("chime").get_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee]
+Boto3 documentation:
+[Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
 
-```python
-def get_attendee(
-    self,
-    MeetingId: str,
-    AttendeeId: str
-) -> GetAttendeeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `AttendeeId`: `str` *(required)*
+
+Returns
+[GetAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getattendeeresponsetypedef).
 
 ### get_bot
 
 Type annotations for `boto3.client("chime").get_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot]
+Boto3 documentation:
+[Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
 
-```python
-def get_bot(
-    self,
-    AccountId: str,
-    BotId: str
-) -> GetBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
+
+Returns
+[GetBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getbotresponsetypedef).
 
 ### get_channel_message
 
 Type annotations for `boto3.client("chime").get_channel_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message]
+Boto3 documentation:
+[Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
 
-```python
-def get_channel_message(
-    self,
-    ChannelArn: str,
-    MessageId: str,
-    ChimeBearer: str = None
-) -> GetChannelMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[GetChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getchannelmessageresponsetypedef).
 
 ### get_events_configuration
 
 Type annotations for `boto3.client("chime").get_events_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration]
+Boto3 documentation:
+[Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
 
-```python
-def get_events_configuration(
-    self,
-    AccountId: str,
-    BotId: str
-) -> GetEventsConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
+
+Returns
+[GetEventsConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#geteventsconfigurationresponsetypedef).
 
 ### get_global_settings
 
 Type annotations for `boto3.client("chime").get_global_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings]
+Boto3 documentation:
+[Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
 
-```python
-def get_global_settings(
-    self
-) -> GetGlobalSettingsResponseTypeDef:
-    pass
-```
+Returns
+[GetGlobalSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getglobalsettingsresponsetypedef).
 
 ### get_meeting
 
 Type annotations for `boto3.client("chime").get_meeting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting]
+Boto3 documentation:
+[Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
 
-```python
-def get_meeting(
-    self,
-    MeetingId: str
-) -> GetMeetingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+
+Returns
+[GetMeetingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getmeetingresponsetypedef).
 
 ### get_messaging_session_endpoint
 
-Type annotations for `boto3.client("chime").get_messaging_session_endpoint` method.
+Type annotations for `boto3.client("chime").get_messaging_session_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint]
+Boto3 documentation:
+[Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
-```python
-def get_messaging_session_endpoint(
-    self
-) -> GetMessagingSessionEndpointResponseTypeDef:
-    pass
-```
+Returns
+[GetMessagingSessionEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getmessagingsessionendpointresponsetypedef).
 
 ### get_phone_number
 
 Type annotations for `boto3.client("chime").get_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number]
+Boto3 documentation:
+[Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
 
-```python
-def get_phone_number(
-    self,
-    PhoneNumberId: str
-) -> GetPhoneNumberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PhoneNumberId`: `str` *(required)*
+
+Returns
+[GetPhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumberresponsetypedef).
 
 ### get_phone_number_order
 
 Type annotations for `boto3.client("chime").get_phone_number_order` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order]
+Boto3 documentation:
+[Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
 
-```python
-def get_phone_number_order(
-    self,
-    PhoneNumberOrderId: str
-) -> GetPhoneNumberOrderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PhoneNumberOrderId`: `str` *(required)*
+
+Returns
+[GetPhoneNumberOrderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumberorderresponsetypedef).
 
 ### get_phone_number_settings
 
 Type annotations for `boto3.client("chime").get_phone_number_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings]
+Boto3 documentation:
+[Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
-```python
-def get_phone_number_settings(
-    self
-) -> GetPhoneNumberSettingsResponseTypeDef:
-    pass
-```
+Returns
+[GetPhoneNumberSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumbersettingsresponsetypedef).
 
 ### get_proxy_session
 
 Type annotations for `boto3.client("chime").get_proxy_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session]
+Boto3 documentation:
+[Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
 
-```python
-def get_proxy_session(
-    self,
-    VoiceConnectorId: str,
-    ProxySessionId: str
-) -> GetProxySessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `ProxySessionId`: `str` *(required)*
+
+Returns
+[GetProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getproxysessionresponsetypedef).
 
 ### get_retention_settings
 
 Type annotations for `boto3.client("chime").get_retention_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings]
+Boto3 documentation:
+[Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
 
-```python
-def get_retention_settings(
-    self,
-    AccountId: str
-) -> GetRetentionSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getretentionsettingsresponsetypedef).
 
 ### get_room
 
 Type annotations for `boto3.client("chime").get_room` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room]
+Boto3 documentation:
+[Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
 
-```python
-def get_room(
-    self,
-    AccountId: str,
-    RoomId: str
-) -> GetRoomResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+
+Returns
+[GetRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getroomresponsetypedef).
 
 ### get_sip_media_application
 
 Type annotations for `boto3.client("chime").get_sip_media_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application]
+Boto3 documentation:
+[Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
 
-```python
-def get_sip_media_application(
-    self,
-    SipMediaApplicationId: str
-) -> GetSipMediaApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
+
+Returns
+[GetSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipmediaapplicationresponsetypedef).
 
 ### get_sip_media_application_logging_configuration
 
-Type annotations for `boto3.client("chime").get_sip_media_application_logging_configuration` method.
+Type annotations for
+`boto3.client("chime").get_sip_media_application_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration]
+Boto3 documentation:
+[Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
 
-```python
-def get_sip_media_application_logging_configuration(
-    self,
-    SipMediaApplicationId: str
-) -> GetSipMediaApplicationLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
+
+Returns
+[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### get_sip_rule
 
 Type annotations for `boto3.client("chime").get_sip_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule]
+Boto3 documentation:
+[Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
 
-```python
-def get_sip_rule(
-    self,
-    SipRuleId: str
-) -> GetSipRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipRuleId`: `str` *(required)*
+
+Returns
+[GetSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipruleresponsetypedef).
 
 ### get_user
 
 Type annotations for `boto3.client("chime").get_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user]
+Boto3 documentation:
+[Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
 
-```python
-def get_user(
-    self,
-    AccountId: str,
-    UserId: str
-) -> GetUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[GetUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getuserresponsetypedef).
 
 ### get_user_settings
 
 Type annotations for `boto3.client("chime").get_user_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings]
+Boto3 documentation:
+[Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
 
-```python
-def get_user_settings(
-    self,
-    AccountId: str,
-    UserId: str
-) -> GetUserSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[GetUserSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getusersettingsresponsetypedef).
 
 ### get_voice_connector
 
 Type annotations for `boto3.client("chime").get_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector]
+Boto3 documentation:
+[Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
 
-```python
-def get_voice_connector(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorresponsetypedef).
 
 ### get_voice_connector_emergency_calling_configuration
 
-Type annotations for `boto3.client("chime").get_voice_connector_emergency_calling_configuration` method.
+Type annotations for
+`boto3.client("chime").get_voice_connector_emergency_calling_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
 
-```python
-def get_voice_connector_emergency_calling_configuration(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### get_voice_connector_group
 
 Type annotations for `boto3.client("chime").get_voice_connector_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
 
-```python
-def get_voice_connector_group(
-    self,
-    VoiceConnectorGroupId: str
-) -> GetVoiceConnectorGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorGroupId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorgroupresponsetypedef).
 
 ### get_voice_connector_logging_configuration
 
-Type annotations for `boto3.client("chime").get_voice_connector_logging_configuration` method.
+Type annotations for
+`boto3.client("chime").get_voice_connector_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
 
-```python
-def get_voice_connector_logging_configuration(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### get_voice_connector_origination
 
-Type annotations for `boto3.client("chime").get_voice_connector_origination` method.
+Type annotations for `boto3.client("chime").get_voice_connector_origination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
 
-```python
-def get_voice_connector_origination(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorOriginationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorOriginationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectororiginationresponsetypedef).
 
 ### get_voice_connector_proxy
 
 Type annotations for `boto3.client("chime").get_voice_connector_proxy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
 
-```python
-def get_voice_connector_proxy(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorProxyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorproxyresponsetypedef).
 
 ### get_voice_connector_streaming_configuration
 
-Type annotations for `boto3.client("chime").get_voice_connector_streaming_configuration` method.
+Type annotations for
+`boto3.client("chime").get_voice_connector_streaming_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
 
-```python
-def get_voice_connector_streaming_configuration(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorStreamingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorStreamingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### get_voice_connector_termination
 
-Type annotations for `boto3.client("chime").get_voice_connector_termination` method.
+Type annotations for `boto3.client("chime").get_voice_connector_termination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
 
-```python
-def get_voice_connector_termination(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorTerminationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorTerminationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorterminationresponsetypedef).
 
 ### get_voice_connector_termination_health
 
-Type annotations for `boto3.client("chime").get_voice_connector_termination_health` method.
+Type annotations for
+`boto3.client("chime").get_voice_connector_termination_health` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health]
+Boto3 documentation:
+[Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
 
-```python
-def get_voice_connector_termination_health(
-    self,
-    VoiceConnectorId: str
-) -> GetVoiceConnectorTerminationHealthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[GetVoiceConnectorTerminationHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorterminationhealthresponsetypedef).
 
 ### invite_users
 
 Type annotations for `boto3.client("chime").invite_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users]
+Boto3 documentation:
+[Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
 
-```python
-def invite_users(
-    self,
-    AccountId: str,
-    UserEmailList: List[str],
-    UserType: UserType = None
-) -> InviteUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserEmailList`: `List`\[`str`\] *(required)*
+- `UserType`:
+  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+
+Returns
+[InviteUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#inviteusersresponsetypedef).
 
 ### list_accounts
 
 Type annotations for `boto3.client("chime").list_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts]
+Boto3 documentation:
+[Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
 
-```python
-def list_accounts(
-    self,
-    Name: str = None,
-    UserEmail: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `UserEmail`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listaccountsresponsetypedef).
 
 ### list_app_instance_admins
 
 Type annotations for `boto3.client("chime").list_app_instance_admins` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins]
+Boto3 documentation:
+[Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
-```python
-def list_app_instance_admins(
-    self,
-    AppInstanceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAppInstanceAdminsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAppInstanceAdminsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstanceadminsresponsetypedef).
 
 ### list_app_instance_users
 
 Type annotations for `boto3.client("chime").list_app_instance_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users]
+Boto3 documentation:
+[Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
-```python
-def list_app_instance_users(
-    self,
-    AppInstanceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAppInstanceUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAppInstanceUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstanceusersresponsetypedef).
 
 ### list_app_instances
 
 Type annotations for `boto3.client("chime").list_app_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances]
+Boto3 documentation:
+[Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
 
-```python
-def list_app_instances(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAppInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAppInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstancesresponsetypedef).
 
 ### list_attendee_tags
 
 Type annotations for `boto3.client("chime").list_attendee_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags]
+Boto3 documentation:
+[Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
 
-```python
-def list_attendee_tags(
-    self,
-    MeetingId: str,
-    AttendeeId: str
-) -> ListAttendeeTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `AttendeeId`: `str` *(required)*
+
+Returns
+[ListAttendeeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listattendeetagsresponsetypedef).
 
 ### list_attendees
 
 Type annotations for `boto3.client("chime").list_attendees` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees]
+Boto3 documentation:
+[Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
 
-```python
-def list_attendees(
-    self,
-    MeetingId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAttendeesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAttendeesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listattendeesresponsetypedef).
 
 ### list_bots
 
 Type annotations for `boto3.client("chime").list_bots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots]
+Boto3 documentation:
+[Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
 
-```python
-def list_bots(
-    self,
-    AccountId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListBotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listbotsresponsetypedef).
 
 ### list_channel_bans
 
 Type annotations for `boto3.client("chime").list_channel_bans` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans]
+Boto3 documentation:
+[Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
 
-```python
-def list_channel_bans(
-    self,
-    ChannelArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelBansResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelBansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelbansresponsetypedef).
 
 ### list_channel_memberships
 
 Type annotations for `boto3.client("chime").list_channel_memberships` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships]
+Boto3 documentation:
+[Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
 
-```python
-def list_channel_memberships(
-    self,
-    ChannelArn: str,
-    Type: ChannelMembershipType = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelMembershipsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `Type`:
+  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelMembershipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmembershipsresponsetypedef).
 
 ### list_channel_memberships_for_app_instance_user
 
-Type annotations for `boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
+Type annotations for
+`boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user]
+Boto3 documentation:
+[Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
 
-```python
-def list_channel_memberships_for_app_instance_user(
-    self,
-    AppInstanceUserArn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceUserArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelMembershipsForAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmembershipsforappinstanceuserresponsetypedef).
 
 ### list_channel_messages
 
 Type annotations for `boto3.client("chime").list_channel_messages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages]
+Boto3 documentation:
+[Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
 
-```python
-def list_channel_messages(
-    self,
-    ChannelArn: str,
-    SortOrder: SortOrder = None,
-    NotBefore: datetime = None,
-    NotAfter: datetime = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelMessagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#sortorder)
+- `NotBefore`: `datetime`
+- `NotAfter`: `datetime`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelMessagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmessagesresponsetypedef).
 
 ### list_channel_moderators
 
 Type annotations for `boto3.client("chime").list_channel_moderators` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators]
+Boto3 documentation:
+[Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
-```python
-def list_channel_moderators(
-    self,
-    ChannelArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelModeratorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelModeratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmoderatorsresponsetypedef).
 
 ### list_channels
 
 Type annotations for `boto3.client("chime").list_channels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels]
+Boto3 documentation:
+[Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
 
-```python
-def list_channels(
-    self,
-    AppInstanceArn: str,
-    Privacy: ChannelPrivacy = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `Privacy`:
+  [ChannelPrivacy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelprivacy)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelsresponsetypedef).
 
 ### list_channels_moderated_by_app_instance_user
 
-Type annotations for `boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
+Type annotations for
+`boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user]
+Boto3 documentation:
+[Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
 
-```python
-def list_channels_moderated_by_app_instance_user(
-    self,
-    AppInstanceUserArn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ChimeBearer: str = None
-) -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceUserArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[ListChannelsModeratedByAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelsmoderatedbyappinstanceuserresponsetypedef).
 
 ### list_meeting_tags
 
 Type annotations for `boto3.client("chime").list_meeting_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags]
+Boto3 documentation:
+[Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
 
-```python
-def list_meeting_tags(
-    self,
-    MeetingId: str
-) -> ListMeetingTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+
+Returns
+[ListMeetingTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listmeetingtagsresponsetypedef).
 
 ### list_meetings
 
 Type annotations for `boto3.client("chime").list_meetings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings]
+Boto3 documentation:
+[Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
 
-```python
-def list_meetings(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMeetingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMeetingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listmeetingsresponsetypedef).
 
 ### list_phone_number_orders
 
 Type annotations for `boto3.client("chime").list_phone_number_orders` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders]
+Boto3 documentation:
+[Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
 
-```python
-def list_phone_number_orders(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPhoneNumberOrdersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPhoneNumberOrdersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listphonenumberordersresponsetypedef).
 
 ### list_phone_numbers
 
 Type annotations for `boto3.client("chime").list_phone_numbers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers]
+Boto3 documentation:
+[Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
 
-```python
-def list_phone_numbers(
-    self,
-    Status: PhoneNumberStatus = None,
-    ProductType: PhoneNumberProductType = None,
-    FilterName: PhoneNumberAssociationName = None,
-    FilterValue: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListPhoneNumbersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Status`:
+  [PhoneNumberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberstatus)
+- `ProductType`:
+  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `FilterName`:
+  [PhoneNumberAssociationName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberassociationname)
+- `FilterValue`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPhoneNumbersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listphonenumbersresponsetypedef).
 
 ### list_proxy_sessions
 
 Type annotations for `boto3.client("chime").list_proxy_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions]
+Boto3 documentation:
+[Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
 
-```python
-def list_proxy_sessions(
-    self,
-    VoiceConnectorId: str,
-    Status: ProxySessionStatus = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProxySessionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Status`:
+  [ProxySessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#proxysessionstatus)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProxySessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listproxysessionsresponsetypedef).
 
 ### list_room_memberships
 
 Type annotations for `boto3.client("chime").list_room_memberships` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships]
+Boto3 documentation:
+[Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
 
-```python
-def list_room_memberships(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListRoomMembershipsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListRoomMembershipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listroommembershipsresponsetypedef).
 
 ### list_rooms
 
 Type annotations for `boto3.client("chime").list_rooms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms]
+Boto3 documentation:
+[Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
 
-```python
-def list_rooms(
-    self,
-    AccountId: str,
-    MemberId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListRoomsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `MemberId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListRoomsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listroomsresponsetypedef).
 
 ### list_sip_media_applications
 
-Type annotations for `boto3.client("chime").list_sip_media_applications` method.
+Type annotations for `boto3.client("chime").list_sip_media_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications]
+Boto3 documentation:
+[Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
 
-```python
-def list_sip_media_applications(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListSipMediaApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListSipMediaApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsipmediaapplicationsresponsetypedef).
 
 ### list_sip_rules
 
 Type annotations for `boto3.client("chime").list_sip_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules]
+Boto3 documentation:
+[Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
 
-```python
-def list_sip_rules(
-    self,
-    SipMediaApplicationId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListSipRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListSipRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsiprulesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("chime").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource]
+Boto3 documentation:
+[Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_users
 
 Type annotations for `boto3.client("chime").list_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users]
+Boto3 documentation:
+[Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
 
-```python
-def list_users(
-    self,
-    AccountId: str,
-    UserEmail: str = None,
-    UserType: UserType = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserEmail`: `str`
+- `UserType`:
+  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listusersresponsetypedef).
 
 ### list_voice_connector_groups
 
-Type annotations for `boto3.client("chime").list_voice_connector_groups` method.
+Type annotations for `boto3.client("chime").list_voice_connector_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups]
+Boto3 documentation:
+[Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
 
-```python
-def list_voice_connector_groups(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListVoiceConnectorGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListVoiceConnectorGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorgroupsresponsetypedef).
 
 ### list_voice_connector_termination_credentials
 
-Type annotations for `boto3.client("chime").list_voice_connector_termination_credentials` method.
+Type annotations for
+`boto3.client("chime").list_voice_connector_termination_credentials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials]
+Boto3 documentation:
+[Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
 
-```python
-def list_voice_connector_termination_credentials(
-    self,
-    VoiceConnectorId: str
-) -> ListVoiceConnectorTerminationCredentialsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+
+Returns
+[ListVoiceConnectorTerminationCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorterminationcredentialsresponsetypedef).
 
 ### list_voice_connectors
 
 Type annotations for `boto3.client("chime").list_voice_connectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors]
+Boto3 documentation:
+[Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
 
-```python
-def list_voice_connectors(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListVoiceConnectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListVoiceConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorsresponsetypedef).
 
 ### logout_user
 
 Type annotations for `boto3.client("chime").logout_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user]
+Boto3 documentation:
+[Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
 
-```python
-def logout_user(
-    self,
-    AccountId: str,
-    UserId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_app_instance_retention_settings
 
-Type annotations for `boto3.client("chime").put_app_instance_retention_settings` method.
+Type annotations for
+`boto3.client("chime").put_app_instance_retention_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings]
+Boto3 documentation:
+[Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
 
-```python
-def put_app_instance_retention_settings(
-    self,
-    AppInstanceArn: str,
-    AppInstanceRetentionSettings: "AppInstanceRetentionSettingsTypeDef"
-) -> PutAppInstanceRetentionSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `AppInstanceRetentionSettings`:
+  [AppInstanceRetentionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#appinstanceretentionsettingstypedef)
+  *(required)*
+
+Returns
+[PutAppInstanceRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putappinstanceretentionsettingsresponsetypedef).
 
 ### put_app_instance_streaming_configurations
 
-Type annotations for `boto3.client("chime").put_app_instance_streaming_configurations` method.
+Type annotations for
+`boto3.client("chime").put_app_instance_streaming_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations]
+Boto3 documentation:
+[Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
 
-```python
-def put_app_instance_streaming_configurations(
-    self,
-    AppInstanceArn: str,
-    AppInstanceStreamingConfigurations: List["AppInstanceStreamingConfigurationTypeDef"]
-) -> PutAppInstanceStreamingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `AppInstanceStreamingConfigurations`:
+  `List`\[[AppInstanceStreamingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#appinstancestreamingconfigurationtypedef)\]
+  *(required)*
+
+Returns
+[PutAppInstanceStreamingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putappinstancestreamingconfigurationsresponsetypedef).
 
 ### put_events_configuration
 
 Type annotations for `boto3.client("chime").put_events_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration]
+Boto3 documentation:
+[Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
 
-```python
-def put_events_configuration(
-    self,
-    AccountId: str,
-    BotId: str,
-    OutboundEventsHTTPSEndpoint: str = None,
-    LambdaFunctionArn: str = None
-) -> PutEventsConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
+- `OutboundEventsHTTPSEndpoint`: `str`
+- `LambdaFunctionArn`: `str`
+
+Returns
+[PutEventsConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#puteventsconfigurationresponsetypedef).
 
 ### put_retention_settings
 
 Type annotations for `boto3.client("chime").put_retention_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings]
+Boto3 documentation:
+[Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
 
-```python
-def put_retention_settings(
-    self,
-    AccountId: str,
-    RetentionSettings: "RetentionSettingsTypeDef"
-) -> PutRetentionSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RetentionSettings`:
+  [RetentionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#retentionsettingstypedef)
+  *(required)*
+
+Returns
+[PutRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putretentionsettingsresponsetypedef).
 
 ### put_sip_media_application_logging_configuration
 
-Type annotations for `boto3.client("chime").put_sip_media_application_logging_configuration` method.
+Type annotations for
+`boto3.client("chime").put_sip_media_application_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration]
+Boto3 documentation:
+[Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
 
-```python
-def put_sip_media_application_logging_configuration(
-    self,
-    SipMediaApplicationId: str,
-    SipMediaApplicationLoggingConfiguration: "SipMediaApplicationLoggingConfigurationTypeDef" = None
-) -> PutSipMediaApplicationLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
+- `SipMediaApplicationLoggingConfiguration`:
+  [SipMediaApplicationLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationloggingconfigurationtypedef)
+
+Returns
+[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_emergency_calling_configuration
 
-Type annotations for `boto3.client("chime").put_voice_connector_emergency_calling_configuration` method.
+Type annotations for
+`boto3.client("chime").put_voice_connector_emergency_calling_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
 
-```python
-def put_voice_connector_emergency_calling_configuration(
-    self,
-    VoiceConnectorId: str,
-    EmergencyCallingConfiguration: "EmergencyCallingConfigurationTypeDef"
-) -> PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `EmergencyCallingConfiguration`:
+  [EmergencyCallingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#emergencycallingconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### put_voice_connector_logging_configuration
 
-Type annotations for `boto3.client("chime").put_voice_connector_logging_configuration` method.
+Type annotations for
+`boto3.client("chime").put_voice_connector_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
 
-```python
-def put_voice_connector_logging_configuration(
-    self,
-    VoiceConnectorId: str,
-    LoggingConfiguration: "LoggingConfigurationTypeDef"
-) -> PutVoiceConnectorLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#loggingconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutVoiceConnectorLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_origination
 
-Type annotations for `boto3.client("chime").put_voice_connector_origination` method.
+Type annotations for `boto3.client("chime").put_voice_connector_origination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
 
-```python
-def put_voice_connector_origination(
-    self,
-    VoiceConnectorId: str,
-    Origination: "OriginationTypeDef"
-) -> PutVoiceConnectorOriginationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Origination`:
+  [OriginationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#originationtypedef)
+  *(required)*
+
+Returns
+[PutVoiceConnectorOriginationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectororiginationresponsetypedef).
 
 ### put_voice_connector_proxy
 
 Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
 
-```python
-def put_voice_connector_proxy(
-    self,
-    VoiceConnectorId: str,
-    DefaultSessionExpiryMinutes: int,
-    PhoneNumberPoolCountries: List[str],
-    FallBackPhoneNumber: str = None,
-    Disabled: bool = None
-) -> PutVoiceConnectorProxyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `DefaultSessionExpiryMinutes`: `int` *(required)*
+- `PhoneNumberPoolCountries`: `List`\[`str`\] *(required)*
+- `FallBackPhoneNumber`: `str`
+- `Disabled`: `bool`
+
+Returns
+[PutVoiceConnectorProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorproxyresponsetypedef).
 
 ### put_voice_connector_streaming_configuration
 
-Type annotations for `boto3.client("chime").put_voice_connector_streaming_configuration` method.
+Type annotations for
+`boto3.client("chime").put_voice_connector_streaming_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
 
-```python
-def put_voice_connector_streaming_configuration(
-    self,
-    VoiceConnectorId: str,
-    StreamingConfiguration: "StreamingConfigurationTypeDef"
-) -> PutVoiceConnectorStreamingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `StreamingConfiguration`:
+  [StreamingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#streamingconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutVoiceConnectorStreamingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### put_voice_connector_termination
 
-Type annotations for `boto3.client("chime").put_voice_connector_termination` method.
+Type annotations for `boto3.client("chime").put_voice_connector_termination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
 
-```python
-def put_voice_connector_termination(
-    self,
-    VoiceConnectorId: str,
-    Termination: "TerminationTypeDef"
-) -> PutVoiceConnectorTerminationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Termination`:
+  [TerminationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#terminationtypedef)
+  *(required)*
+
+Returns
+[PutVoiceConnectorTerminationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorterminationresponsetypedef).
 
 ### put_voice_connector_termination_credentials
 
-Type annotations for `boto3.client("chime").put_voice_connector_termination_credentials` method.
+Type annotations for
+`boto3.client("chime").put_voice_connector_termination_credentials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials]
+Boto3 documentation:
+[Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
 
-```python
-def put_voice_connector_termination_credentials(
-    self,
-    VoiceConnectorId: str,
-    Credentials: List[CredentialTypeDef] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Credentials`:
+  `List`\[[CredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#credentialtypedef)\]
 
 ### redact_channel_message
 
 Type annotations for `boto3.client("chime").redact_channel_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message]
+Boto3 documentation:
+[Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
 
-```python
-def redact_channel_message(
-    self,
-    ChannelArn: str,
-    MessageId: str,
-    ChimeBearer: str = None
-) -> RedactChannelMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[RedactChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#redactchannelmessageresponsetypedef).
 
 ### redact_conversation_message
 
-Type annotations for `boto3.client("chime").redact_conversation_message` method.
+Type annotations for `boto3.client("chime").redact_conversation_message`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message]
+Boto3 documentation:
+[Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
 
-```python
-def redact_conversation_message(
-    self,
-    AccountId: str,
-    ConversationId: str,
-    MessageId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ConversationId`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### redact_room_message
 
 Type annotations for `boto3.client("chime").redact_room_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message]
+Boto3 documentation:
+[Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
 
-```python
-def redact_room_message(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MessageId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### regenerate_security_token
 
 Type annotations for `boto3.client("chime").regenerate_security_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token]
+Boto3 documentation:
+[Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
 
-```python
-def regenerate_security_token(
-    self,
-    AccountId: str,
-    BotId: str
-) -> RegenerateSecurityTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
+
+Returns
+[RegenerateSecurityTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#regeneratesecuritytokenresponsetypedef).
 
 ### reset_personal_pin
 
 Type annotations for `boto3.client("chime").reset_personal_pin` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin]
+Boto3 documentation:
+[Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
 
-```python
-def reset_personal_pin(
-    self,
-    AccountId: str,
-    UserId: str
-) -> ResetPersonalPINResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[ResetPersonalPINResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#resetpersonalpinresponsetypedef).
 
 ### restore_phone_number
 
 Type annotations for `boto3.client("chime").restore_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number]
+Boto3 documentation:
+[Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
 
-```python
-def restore_phone_number(
-    self,
-    PhoneNumberId: str
-) -> RestorePhoneNumberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PhoneNumberId`: `str` *(required)*
+
+Returns
+[RestorePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#restorephonenumberresponsetypedef).
 
 ### search_available_phone_numbers
 
-Type annotations for `boto3.client("chime").search_available_phone_numbers` method.
+Type annotations for `boto3.client("chime").search_available_phone_numbers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers]
+Boto3 documentation:
+[Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
 
-```python
-def search_available_phone_numbers(
-    self,
-    AreaCode: str = None,
-    City: str = None,
-    Country: str = None,
-    State: str = None,
-    TollFreePrefix: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> SearchAvailablePhoneNumbersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AreaCode`: `str`
+- `City`: `str`
+- `Country`: `str`
+- `State`: `str`
+- `TollFreePrefix`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[SearchAvailablePhoneNumbersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#searchavailablephonenumbersresponsetypedef).
 
 ### send_channel_message
 
 Type annotations for `boto3.client("chime").send_channel_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message]
+Boto3 documentation:
+[Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
 
-```python
-def send_channel_message(
-    self,
-    ChannelArn: str,
-    Content: str,
-    Type: ChannelMessageType,
-    Persistence: ChannelMessagePersistenceType,
-    ClientRequestToken: str,
-    Metadata: str = None,
-    ChimeBearer: str = None
-) -> SendChannelMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `Content`: `str` *(required)*
+- `Type`:
+  [ChannelMessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmessagetype)
+  *(required)*
+- `Persistence`:
+  [ChannelMessagePersistenceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmessagepersistencetype)
+  *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Metadata`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[SendChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sendchannelmessageresponsetypedef).
 
 ### tag_attendee
 
 Type annotations for `boto3.client("chime").tag_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee]
+Boto3 documentation:
+[Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
 
-```python
-def tag_attendee(
-    self,
-    MeetingId: str,
-    AttendeeId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `AttendeeId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_meeting
 
 Type annotations for `boto3.client("chime").tag_meeting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting]
+Boto3 documentation:
+[Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
 
-```python
-def tag_meeting(
-    self,
-    MeetingId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("chime").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource]
+Boto3 documentation:
+[Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_attendee
 
 Type annotations for `boto3.client("chime").untag_attendee` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee]
+Boto3 documentation:
+[Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
 
-```python
-def untag_attendee(
-    self,
-    MeetingId: str,
-    AttendeeId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `AttendeeId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_meeting
 
 Type annotations for `boto3.client("chime").untag_meeting` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting]
+Boto3 documentation:
+[Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
 
-```python
-def untag_meeting(
-    self,
-    MeetingId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `MeetingId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("chime").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource]
+Boto3 documentation:
+[Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_account
 
 Type annotations for `boto3.client("chime").update_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account]
+Boto3 documentation:
+[Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
 
-```python
-def update_account(
-    self,
-    AccountId: str,
-    Name: str = None
-) -> UpdateAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[UpdateAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateaccountresponsetypedef).
 
 ### update_account_settings
 
 Type annotations for `boto3.client("chime").update_account_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings]
+Boto3 documentation:
+[Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
 
-```python
-def update_account_settings(
-    self,
-    AccountId: str,
-    AccountSettings: "AccountSettingsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `AccountSettings`:
+  [AccountSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#accountsettingstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_app_instance
 
 Type annotations for `boto3.client("chime").update_app_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance]
+Boto3 documentation:
+[Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
 
-```python
-def update_app_instance(
-    self,
-    AppInstanceArn: str,
-    Name: str,
-    Metadata: str = None
-) -> UpdateAppInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Metadata`: `str`
+
+Returns
+[UpdateAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateappinstanceresponsetypedef).
 
 ### update_app_instance_user
 
 Type annotations for `boto3.client("chime").update_app_instance_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user]
+Boto3 documentation:
+[Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
 
-```python
-def update_app_instance_user(
-    self,
-    AppInstanceUserArn: str,
-    Name: str,
-    Metadata: str = None
-) -> UpdateAppInstanceUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppInstanceUserArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Metadata`: `str`
+
+Returns
+[UpdateAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateappinstanceuserresponsetypedef).
 
 ### update_bot
 
 Type annotations for `boto3.client("chime").update_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot]
+Boto3 documentation:
+[Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
 
-```python
-def update_bot(
-    self,
-    AccountId: str,
-    BotId: str,
-    Disabled: bool = None
-) -> UpdateBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `BotId`: `str` *(required)*
+- `Disabled`: `bool`
+
+Returns
+[UpdateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatebotresponsetypedef).
 
 ### update_channel
 
 Type annotations for `boto3.client("chime").update_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel]
+Boto3 documentation:
+[Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
 
-```python
-def update_channel(
-    self,
-    ChannelArn: str,
-    Name: str,
-    Mode: ChannelMode,
-    Metadata: str = None,
-    ChimeBearer: str = None
-) -> UpdateChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Mode`:
+  [ChannelMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmode)
+  *(required)*
+- `Metadata`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelresponsetypedef).
 
 ### update_channel_message
 
 Type annotations for `boto3.client("chime").update_channel_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message]
+Boto3 documentation:
+[Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
 
-```python
-def update_channel_message(
-    self,
-    ChannelArn: str,
-    MessageId: str,
-    Content: str = None,
-    Metadata: str = None,
-    ChimeBearer: str = None
-) -> UpdateChannelMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `Content`: `str`
+- `Metadata`: `str`
+- `ChimeBearer`: `str`
+
+Returns
+[UpdateChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelmessageresponsetypedef).
 
 ### update_channel_read_marker
 
 Type annotations for `boto3.client("chime").update_channel_read_marker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker]
+Boto3 documentation:
+[Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
 
-```python
-def update_channel_read_marker(
-    self,
-    ChannelArn: str,
-    ChimeBearer: str = None
-) -> UpdateChannelReadMarkerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChimeBearer`: `str`
+
+Returns
+[UpdateChannelReadMarkerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelreadmarkerresponsetypedef).
 
 ### update_global_settings
 
 Type annotations for `boto3.client("chime").update_global_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings]
+Boto3 documentation:
+[Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
 
-```python
-def update_global_settings(
-    self,
-    BusinessCalling: "BusinessCallingSettingsTypeDef",
-    VoiceConnector: "VoiceConnectorSettingsTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `BusinessCalling`:
+  [BusinessCallingSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#businesscallingsettingstypedef)
+  *(required)*
+- `VoiceConnector`:
+  [VoiceConnectorSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectorsettingstypedef)
+  *(required)*
 
 ### update_phone_number
 
 Type annotations for `boto3.client("chime").update_phone_number` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number]
+Boto3 documentation:
+[Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
 
-```python
-def update_phone_number(
-    self,
-    PhoneNumberId: str,
-    ProductType: PhoneNumberProductType = None,
-    CallingName: str = None
-) -> UpdatePhoneNumberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PhoneNumberId`: `str` *(required)*
+- `ProductType`:
+  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `CallingName`: `str`
+
+Returns
+[UpdatePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatephonenumberresponsetypedef).
 
 ### update_phone_number_settings
 
-Type annotations for `boto3.client("chime").update_phone_number_settings` method.
+Type annotations for `boto3.client("chime").update_phone_number_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings]
+Boto3 documentation:
+[Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
 
-```python
-def update_phone_number_settings(
-    self,
-    CallingName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CallingName`: `str` *(required)*
 
 ### update_proxy_session
 
 Type annotations for `boto3.client("chime").update_proxy_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session]
+Boto3 documentation:
+[Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
 
-```python
-def update_proxy_session(
-    self,
-    VoiceConnectorId: str,
-    ProxySessionId: str,
-    Capabilities: List[Capability],
-    ExpiryMinutes: int = None
-) -> UpdateProxySessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `ProxySessionId`: `str` *(required)*
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#capability)\]
+  *(required)*
+- `ExpiryMinutes`: `int`
+
+Returns
+[UpdateProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateproxysessionresponsetypedef).
 
 ### update_room
 
 Type annotations for `boto3.client("chime").update_room` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room]
+Boto3 documentation:
+[Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
 
-```python
-def update_room(
-    self,
-    AccountId: str,
-    RoomId: str,
-    Name: str = None
-) -> UpdateRoomResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[UpdateRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateroomresponsetypedef).
 
 ### update_room_membership
 
 Type annotations for `boto3.client("chime").update_room_membership` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership]
+Boto3 documentation:
+[Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
 
-```python
-def update_room_membership(
-    self,
-    AccountId: str,
-    RoomId: str,
-    MemberId: str,
-    Role: RoomMembershipRole = None
-) -> UpdateRoomMembershipResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `RoomId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+- `Role`:
+  [RoomMembershipRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#roommembershiprole)
+
+Returns
+[UpdateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateroommembershipresponsetypedef).
 
 ### update_sip_media_application
 
-Type annotations for `boto3.client("chime").update_sip_media_application` method.
+Type annotations for `boto3.client("chime").update_sip_media_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application]
+Boto3 documentation:
+[Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
 
-```python
-def update_sip_media_application(
-    self,
-    SipMediaApplicationId: str,
-    Name: str = None,
-    Endpoints: List["SipMediaApplicationEndpointTypeDef"] = None
-) -> UpdateSipMediaApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
+- `Name`: `str`
+- `Endpoints`:
+  `List`\[[SipMediaApplicationEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationendpointtypedef)\]
+
+Returns
+[UpdateSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatesipmediaapplicationresponsetypedef).
 
 ### update_sip_rule
 
 Type annotations for `boto3.client("chime").update_sip_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule]
+Boto3 documentation:
+[Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
 
-```python
-def update_sip_rule(
-    self,
-    SipRuleId: str,
-    Name: str,
-    Disabled: bool = None,
-    TargetApplications: List["SipRuleTargetApplicationTypeDef"] = None
-) -> UpdateSipRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SipRuleId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Disabled`: `bool`
+- `TargetApplications`:
+  `List`\[[SipRuleTargetApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipruletargetapplicationtypedef)\]
+
+Returns
+[UpdateSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatesipruleresponsetypedef).
 
 ### update_user
 
 Type annotations for `boto3.client("chime").update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user]
+Boto3 documentation:
+[Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
 
-```python
-def update_user(
-    self,
-    AccountId: str,
-    UserId: str,
-    LicenseType: License = None,
-    UserType: UserType = None,
-    AlexaForBusinessMetadata: "AlexaForBusinessMetadataTypeDef" = None
-) -> UpdateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `LicenseType`:
+  [License](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#license)
+- `UserType`:
+  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `AlexaForBusinessMetadata`:
+  [AlexaForBusinessMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#alexaforbusinessmetadatatypedef)
+
+Returns
+[UpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateuserresponsetypedef).
 
 ### update_user_settings
 
 Type annotations for `boto3.client("chime").update_user_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings]
+Boto3 documentation:
+[Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
 
-```python
-def update_user_settings(
-    self,
-    AccountId: str,
-    UserId: str,
-    UserSettings: "UserSettingsTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `UserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#usersettingstypedef)
+  *(required)*
 
 ### update_voice_connector
 
 Type annotations for `boto3.client("chime").update_voice_connector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector]
+Boto3 documentation:
+[Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
 
-```python
-def update_voice_connector(
-    self,
-    VoiceConnectorId: str,
-    Name: str,
-    RequireEncryption: bool
-) -> UpdateVoiceConnectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VoiceConnectorId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `RequireEncryption`: `bool` *(required)*
+
+Returns
+[UpdateVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatevoiceconnectorresponsetypedef).
 
 ### update_voice_connector_group
 
-Type annotations for `boto3.client("chime").update_voice_connector_group` method.
+Type annotations for `boto3.client("chime").update_voice_connector_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group]
+Boto3 documentation:
+[Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
 
-```python
-def update_voice_connector_group(
-    self,
-    VoiceConnectorGroupId: str,
-    Name: str,
-    VoiceConnectorItems: List["VoiceConnectorItemTypeDef"]
-) -> UpdateVoiceConnectorGroupResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `VoiceConnectorGroupId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `VoiceConnectorItems`:
+  `List`\[[VoiceConnectorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectoritemtypedef)\]
+  *(required)*
 
+Returns
+[UpdateVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatevoiceconnectorgroupresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("chime").get_paginator` method with overloads.
+Type annotations for `boto3.client("chime").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
-
-
+- `client.get_paginator("list_accounts")` ->
+  [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+- `client.get_paginator("list_users")` ->
+  [ListUsersPaginator](./paginators.md#listuserspaginator)

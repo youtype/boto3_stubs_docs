@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CognitoIdentity](./README.md) > CognitoIdentityClient
 
-Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
-type annotations stubs module [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+Auto-generated documentation for
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+type annotations stubs module
+[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [CognitoIdentityClient for boto3 CognitoIdentity module](#cognitoidentityclient-for-boto3-cognitoidentity-module)
   - [CognitoIdentityClient](#cognitoidentityclient)
@@ -49,12 +51,13 @@ def get_cognito-identity_client() -> CognitoIdentityClient:
     return boto3.client("cognito-identity")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
+Boto3 documentation:
+[CognitoIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cognito_identity.client import Exceptions
@@ -62,7 +65,6 @@ from mypy_boto3_cognito_identity.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -79,419 +81,422 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cognito-identity").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate]
+Boto3 documentation:
+[CognitoIdentity.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_identity_pool
 
-Type annotations for `boto3.client("cognito-identity").create_identity_pool` method.
+Type annotations for `boto3.client("cognito-identity").create_identity_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool]
+Boto3 documentation:
+[CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
 
-```python
-def create_identity_pool(
-    self,
-    IdentityPoolName: str,
-    AllowUnauthenticatedIdentities: bool,
-    AllowClassicFlow: bool = None,
-    SupportedLoginProviders: Dict[str, str] = None,
-    DeveloperProviderName: str = None,
-    OpenIdConnectProviderARNs: List[str] = None,
-    CognitoIdentityProviders: List["CognitoIdentityProviderTypeDef"] = None,
-    SamlProviderARNs: List[str] = None,
-    IdentityPoolTags: Dict[str, str] = None
-) -> IdentityPoolTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolName`: `str` *(required)*
+- `AllowUnauthenticatedIdentities`: `bool` *(required)*
+- `AllowClassicFlow`: `bool`
+- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `DeveloperProviderName`: `str`
+- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `CognitoIdentityProviders`:
+  `List`\[[CognitoIdentityProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `List`\[`str`\]
+- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
+
+Returns
+[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
 
 ### delete_identities
 
-Type annotations for `boto3.client("cognito-identity").delete_identities` method.
+Type annotations for `boto3.client("cognito-identity").delete_identities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities]
+Boto3 documentation:
+[CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
 
-```python
-def delete_identities(
-    self,
-    IdentityIdsToDelete: List[str]
-) -> DeleteIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityIdsToDelete`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#deleteidentitiesresponsetypedef).
 
 ### delete_identity_pool
 
-Type annotations for `boto3.client("cognito-identity").delete_identity_pool` method.
+Type annotations for `boto3.client("cognito-identity").delete_identity_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool]
+Boto3 documentation:
+[CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
 
-```python
-def delete_identity_pool(
-    self,
-    IdentityPoolId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
 
 ### describe_identity
 
-Type annotations for `boto3.client("cognito-identity").describe_identity` method.
+Type annotations for `boto3.client("cognito-identity").describe_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
 
-```python
-def describe_identity(
-    self,
-    IdentityId: str
-) -> "IdentityDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `IdentityId`: `str` *(required)*
+
+Returns
+[IdentityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitydescriptiontypedef).
 
 ### describe_identity_pool
 
-Type annotations for `boto3.client("cognito-identity").describe_identity_pool` method.
+Type annotations for `boto3.client("cognito-identity").describe_identity_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool]
+Boto3 documentation:
+[CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
 
-```python
-def describe_identity_pool(
-    self,
-    IdentityPoolId: str
-) -> IdentityPoolTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+
+Returns
+[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cognito-identity").generate_presigned_url` method.
+Type annotations for `boto3.client("cognito-identity").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url]
+Boto3 documentation:
+[CognitoIdentity.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_credentials_for_identity
 
-Type annotations for `boto3.client("cognito-identity").get_credentials_for_identity` method.
+Type annotations for
+`boto3.client("cognito-identity").get_credentials_for_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
 
-```python
-def get_credentials_for_identity(
-    self,
-    IdentityId: str,
-    Logins: Dict[str, str] = None,
-    CustomRoleArn: str = None
-) -> GetCredentialsForIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityId`: `str` *(required)*
+- `Logins`: `Dict`\[`str`, `str`\]
+- `CustomRoleArn`: `str`
+
+Returns
+[GetCredentialsForIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getcredentialsforidentityresponsetypedef).
 
 ### get_id
 
 Type annotations for `boto3.client("cognito-identity").get_id` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id]
+Boto3 documentation:
+[CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
 
-```python
-def get_id(
-    self,
-    IdentityPoolId: str,
-    AccountId: str = None,
-    Logins: Dict[str, str] = None
-) -> GetIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `AccountId`: `str`
+- `Logins`: `Dict`\[`str`, `str`\]
+
+Returns
+[GetIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getidresponsetypedef).
 
 ### get_identity_pool_roles
 
-Type annotations for `boto3.client("cognito-identity").get_identity_pool_roles` method.
+Type annotations for `boto3.client("cognito-identity").get_identity_pool_roles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles]
+Boto3 documentation:
+[CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
 
-```python
-def get_identity_pool_roles(
-    self,
-    IdentityPoolId: str
-) -> GetIdentityPoolRolesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+
+Returns
+[GetIdentityPoolRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getidentitypoolrolesresponsetypedef).
 
 ### get_open_id_token
 
-Type annotations for `boto3.client("cognito-identity").get_open_id_token` method.
+Type annotations for `boto3.client("cognito-identity").get_open_id_token`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token]
+Boto3 documentation:
+[CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
 
-```python
-def get_open_id_token(
-    self,
-    IdentityId: str,
-    Logins: Dict[str, str] = None
-) -> GetOpenIdTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityId`: `str` *(required)*
+- `Logins`: `Dict`\[`str`, `str`\]
+
+Returns
+[GetOpenIdTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getopenidtokenresponsetypedef).
 
 ### get_open_id_token_for_developer_identity
 
-Type annotations for `boto3.client("cognito-identity").get_open_id_token_for_developer_identity` method.
+Type annotations for
+`boto3.client("cognito-identity").get_open_id_token_for_developer_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
 
-```python
-def get_open_id_token_for_developer_identity(
-    self,
-    IdentityPoolId: str,
-    Logins: Dict[str, str],
-    IdentityId: str = None,
-    PrincipalTags: Dict[str, str] = None,
-    TokenDuration: int = None
-) -> GetOpenIdTokenForDeveloperIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `Logins`: `Dict`\[`str`, `str`\] *(required)*
+- `IdentityId`: `str`
+- `PrincipalTags`: `Dict`\[`str`, `str`\]
+- `TokenDuration`: `int`
+
+Returns
+[GetOpenIdTokenForDeveloperIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getopenidtokenfordeveloperidentityresponsetypedef).
 
 ### get_principal_tag_attribute_map
 
-Type annotations for `boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
+Type annotations for
+`boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map]
+Boto3 documentation:
+[CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
 
-```python
-def get_principal_tag_attribute_map(
-    self,
-    IdentityPoolId: str,
-    IdentityProviderName: str
-) -> GetPrincipalTagAttributeMapResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `IdentityProviderName`: `str` *(required)*
+
+Returns
+[GetPrincipalTagAttributeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getprincipaltagattributemapresponsetypedef).
 
 ### list_identities
 
 Type annotations for `boto3.client("cognito-identity").list_identities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities]
+Boto3 documentation:
+[CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
 
-```python
-def list_identities(
-    self,
-    IdentityPoolId: str,
-    MaxResults: int,
-    NextToken: str = None,
-    HideDisabled: bool = None
-) -> ListIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `MaxResults`: `int` *(required)*
+- `NextToken`: `str`
+- `HideDisabled`: `bool`
+
+Returns
+[ListIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listidentitiesresponsetypedef).
 
 ### list_identity_pools
 
-Type annotations for `boto3.client("cognito-identity").list_identity_pools` method.
+Type annotations for `boto3.client("cognito-identity").list_identity_pools`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools]
+Boto3 documentation:
+[CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
 
-```python
-def list_identity_pools(
-    self,
-    MaxResults: int,
-    NextToken: str = None
-) -> ListIdentityPoolsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListIdentityPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listidentitypoolsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("cognito-identity").list_tags_for_resource` method.
+Type annotations for `boto3.client("cognito-identity").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource]
+Boto3 documentation:
+[CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### lookup_developer_identity
 
-Type annotations for `boto3.client("cognito-identity").lookup_developer_identity` method.
+Type annotations for
+`boto3.client("cognito-identity").lookup_developer_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
 
-```python
-def lookup_developer_identity(
-    self,
-    IdentityPoolId: str,
-    IdentityId: str = None,
-    DeveloperUserIdentifier: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> LookupDeveloperIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `IdentityId`: `str`
+- `DeveloperUserIdentifier`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[LookupDeveloperIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#lookupdeveloperidentityresponsetypedef).
 
 ### merge_developer_identities
 
-Type annotations for `boto3.client("cognito-identity").merge_developer_identities` method.
+Type annotations for
+`boto3.client("cognito-identity").merge_developer_identities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities]
+Boto3 documentation:
+[CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
 
-```python
-def merge_developer_identities(
-    self,
-    SourceUserIdentifier: str,
-    DestinationUserIdentifier: str,
-    DeveloperProviderName: str,
-    IdentityPoolId: str
-) -> MergeDeveloperIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceUserIdentifier`: `str` *(required)*
+- `DestinationUserIdentifier`: `str` *(required)*
+- `DeveloperProviderName`: `str` *(required)*
+- `IdentityPoolId`: `str` *(required)*
+
+Returns
+[MergeDeveloperIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#mergedeveloperidentitiesresponsetypedef).
 
 ### set_identity_pool_roles
 
-Type annotations for `boto3.client("cognito-identity").set_identity_pool_roles` method.
+Type annotations for `boto3.client("cognito-identity").set_identity_pool_roles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles]
+Boto3 documentation:
+[CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
 
-```python
-def set_identity_pool_roles(
-    self,
-    IdentityPoolId: str,
-    Roles: Dict[str, str],
-    RoleMappings: Dict[str, "RoleMappingTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `Roles`: `Dict`\[`str`, `str`\] *(required)*
+- `RoleMappings`: `Dict`\[`str`,
+  [RoleMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#rolemappingtypedef)\]
 
 ### set_principal_tag_attribute_map
 
-Type annotations for `boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
+Type annotations for
+`boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map]
+Boto3 documentation:
+[CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
 
-```python
-def set_principal_tag_attribute_map(
-    self,
-    IdentityPoolId: str,
-    IdentityProviderName: str,
-    UseDefaults: bool = None,
-    PrincipalTags: Dict[str, str] = None
-) -> SetPrincipalTagAttributeMapResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityPoolId`: `str` *(required)*
+- `IdentityProviderName`: `str` *(required)*
+- `UseDefaults`: `bool`
+- `PrincipalTags`: `Dict`\[`str`, `str`\]
+
+Returns
+[SetPrincipalTagAttributeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#setprincipaltagattributemapresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("cognito-identity").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource]
+Boto3 documentation:
+[CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### unlink_developer_identity
 
-Type annotations for `boto3.client("cognito-identity").unlink_developer_identity` method.
+Type annotations for
+`boto3.client("cognito-identity").unlink_developer_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
 
-```python
-def unlink_developer_identity(
-    self,
-    IdentityId: str,
-    IdentityPoolId: str,
-    DeveloperProviderName: str,
-    DeveloperUserIdentifier: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `IdentityId`: `str` *(required)*
+- `IdentityPoolId`: `str` *(required)*
+- `DeveloperProviderName`: `str` *(required)*
+- `DeveloperUserIdentifier`: `str` *(required)*
 
 ### unlink_identity
 
 Type annotations for `boto3.client("cognito-identity").unlink_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity]
+Boto3 documentation:
+[CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
 
-```python
-def unlink_identity(
-    self,
-    IdentityId: str,
-    Logins: Dict[str, str],
-    LoginsToRemove: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `IdentityId`: `str` *(required)*
+- `Logins`: `Dict`\[`str`, `str`\] *(required)*
+- `LoginsToRemove`: `List`\[`str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("cognito-identity").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource]
+Boto3 documentation:
+[CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_identity_pool
 
-Type annotations for `boto3.client("cognito-identity").update_identity_pool` method.
+Type annotations for `boto3.client("cognito-identity").update_identity_pool`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool]
+Boto3 documentation:
+[CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
 
-```python
-def update_identity_pool(
-    self,
-    IdentityPoolId: str,
-    IdentityPoolName: str,
-    AllowUnauthenticatedIdentities: bool,
-    AllowClassicFlow: bool = None,
-    SupportedLoginProviders: Dict[str, str] = None,
-    DeveloperProviderName: str = None,
-    OpenIdConnectProviderARNs: List[str] = None,
-    CognitoIdentityProviders: List["CognitoIdentityProviderTypeDef"] = None,
-    SamlProviderARNs: List[str] = None,
-    IdentityPoolTags: Dict[str, str] = None
-) -> IdentityPoolTypeDef:
-    pass
-```
+Arguments:
 
+- `IdentityPoolId`: `str` *(required)*
+- `IdentityPoolName`: `str` *(required)*
+- `AllowUnauthenticatedIdentities`: `bool` *(required)*
+- `AllowClassicFlow`: `bool`
+- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `DeveloperProviderName`: `str`
+- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `CognitoIdentityProviders`:
+  `List`\[[CognitoIdentityProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `List`\[`str`\]
+- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
+Returns
+[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cognito-identity").get_paginator` method with overloads.
+Type annotations for `boto3.client("cognito-identity").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_identity_pools")` -> [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
-
-
+- `client.get_paginator("list_identity_pools")` ->
+  [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Neptune
 
-Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
-type annotations stubs module [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
+Auto-generated documentation for
+[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+type annotations stubs module
+[mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 ```bash
 pip install mypy-boto3-neptune
@@ -20,7 +22,7 @@ pip install mypy-boto3-neptune
 
 ## NeptuneClient
 
-Type annotations for  `boto3.client("neptune")` as [NeptuneClient](./client.md)
+Type annotations for `boto3.client("neptune")` as [NeptuneClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_neptune.client import NeptuneClient
 ```
 
-
 NeptuneClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_role_to_db_cluster](./client.md#add-role-to-db-cluster)
 - [add_source_identifier_to_subscription](./client.md#add-source-identifier-to-subscription)
 - [add_tags_to_resource](./client.md#add-tags-to-resource)
@@ -102,10 +102,8 @@ NeptuneClient [exceptions](./client.md#exceptions)
 - [start_db_cluster](./client.md#start-db-cluster)
 - [stop_db_cluster](./client.md#stop-db-cluster)
 
-
-
-
 ### Exceptions
+
 - [AuthorizationNotFoundFault](./client.md#authorizationnotfoundfault)
 - [CertificateNotFoundFault](./client.md#certificatenotfoundfault)
 - [ClientError](./client.md#clienterror)
@@ -171,14 +169,10 @@ NeptuneClient [exceptions](./client.md#exceptions)
 - [SubscriptionCategoryNotFoundFault](./client.md#subscriptioncategorynotfoundfault)
 - [SubscriptionNotFoundFault](./client.md#subscriptionnotfoundfault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("neptune").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("neptune").get_paginator("...")`.
 
 Can be used directly:
 
@@ -202,12 +196,10 @@ from mypy_boto3_neptune.paginators import DescribeDBClusterEndpointsPaginator, .
 - [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("neptune").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("neptune").get_waiter("...")`.
 
 Can be used directly:
 
@@ -217,9 +209,6 @@ from mypy_boto3_neptune.waiters import DBInstanceAvailableWaiter, ...
 
 - [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 - [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -251,13 +240,10 @@ from mypy_boto3_neptune.literals import ApplyMethod, ...
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
 - [SourceType](./literals.md#sourcetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

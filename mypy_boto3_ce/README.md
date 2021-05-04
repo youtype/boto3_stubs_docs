@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CostExplorer
 
-Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+Auto-generated documentation for
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+type annotations stubs module
+[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ```bash
 pip install mypy-boto3-ce
@@ -18,7 +20,7 @@ pip install mypy-boto3-ce
 
 ## CostExplorerClient
 
-Type annotations for  `boto3.client("ce")` as [CostExplorerClient](./client.md)
+Type annotations for `boto3.client("ce")` as [CostExplorerClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_ce.client import CostExplorerClient
 ```
 
-
 CostExplorerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_anomaly_monitor](./client.md#create-anomaly-monitor)
 - [create_anomaly_subscription](./client.md#create-anomaly-subscription)
@@ -65,10 +65,8 @@ CostExplorerClient [exceptions](./client.md#exceptions)
 - [update_anomaly_subscription](./client.md#update-anomaly-subscription)
 - [update_cost_category_definition](./client.md#update-cost-category-definition)
 
-
-
-
 ### Exceptions
+
 - [BillExpirationException](./client.md#billexpirationexception)
 - [ClientError](./client.md#clienterror)
 - [DataUnavailableException](./client.md#dataunavailableexception)
@@ -80,15 +78,6 @@ CostExplorerClient [exceptions](./client.md#exceptions)
 - [UnknownMonitorException](./client.md#unknownmonitorexception)
 - [UnknownSubscriptionException](./client.md#unknownsubscriptionexception)
 - [UnresolvableUsageUnitException](./client.md#unresolvableusageunitexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -129,13 +118,10 @@ from mypy_boto3_ce.literals import AccountScope, ...
 - [SupportedSavingsPlansType](./literals.md#supportedsavingsplanstype)
 - [TermInYears](./literals.md#terminyears)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

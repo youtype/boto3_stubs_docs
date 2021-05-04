@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > RedshiftDataAPIService
 
-Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
-type annotations stubs module [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+Auto-generated documentation for
+[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+type annotations stubs module
+[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 ```bash
 pip install mypy-boto3-redshift-data
@@ -19,7 +21,8 @@ pip install mypy-boto3-redshift-data
 
 ## RedshiftDataAPIServiceClient
 
-Type annotations for  `boto3.client("redshift-data")` as [RedshiftDataAPIServiceClient](./client.md)
+Type annotations for `boto3.client("redshift-data")` as
+[RedshiftDataAPIServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 ```
 
-
 RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_statement](./client.md#cancel-statement)
 - [describe_statement](./client.md#describe-statement)
@@ -46,10 +47,8 @@ RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
 - [list_statements](./client.md#list-statements)
 - [list_tables](./client.md#list-tables)
 
-
-
-
 ### Exceptions
+
 - [ActiveStatementsExceededException](./client.md#activestatementsexceededexception)
 - [ClientError](./client.md#clienterror)
 - [ExecuteStatementException](./client.md#executestatementexception)
@@ -57,14 +56,10 @@ RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("redshift-data").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("redshift-data").get_paginator("...")`.
 
 Can be used directly:
 
@@ -78,11 +73,6 @@ from mypy_boto3_redshift_data.paginators import DescribeTablePaginator, ...
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - [ListStatementsPaginator](./paginators.md#liststatementspaginator)
 - [ListTablesPaginator](./paginators.md#listtablespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -102,13 +92,10 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName, ...
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
 - [StatusString](./literals.md#statusstring)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

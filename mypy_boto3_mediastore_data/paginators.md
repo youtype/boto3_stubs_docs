@@ -2,15 +2,18 @@
 
 > [Index](../README.md) > [MediaStoreData](./README.md) > Paginators
 
-Auto-generated documentation for [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
-type annotations stubs module [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+Auto-generated documentation for
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+type annotations stubs module
+[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Paginators for boto3 MediaStoreData module](#paginators-for-boto3-mediastoredata-module)
   - [ListItemsPaginator](#listitemspaginator)
 
 ## ListItemsPaginator
 
-Type annotations for `boto3.client("mediastore-data").get_paginator("list_items")`.
+Type annotations for
+`boto3.client("mediastore-data").get_paginator("list_items")`.
 
 Can be used directly:
 
@@ -21,14 +24,14 @@ def get_list_items_paginator() -> ListItemsPaginator:
     return boto3.client("mediastore-data").get_paginator("list_items")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
+Boto3 documentation:
+[MediaStoreData.Paginator.ListItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
 
-```python
-class ListItemsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Path: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListItemsResponseTypeDef]:
-        pass
-```
+Arguments for `ListItemsPaginator.paginate` method:
+
+- `Path`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#paginatorconfigtypedef)
+
+`ListItemsPaginator.paginate` returns
+`Iterator`\[[ListItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#listitemsresponsetypedef)\].

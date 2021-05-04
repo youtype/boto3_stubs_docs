@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Support](./README.md) > SupportClient
 
-Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+Auto-generated documentation for
+[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+type annotations stubs module
+[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 - [SupportClient for boto3 Support module](#supportclient-for-boto3-support-module)
   - [SupportClient](#supportclient)
@@ -40,12 +42,13 @@ def get_support_client() -> SupportClient:
     return boto3.client("support")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
+Boto3 documentation:
+[Support.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_support.client import Exceptions
@@ -53,7 +56,6 @@ from mypy_boto3_support.client import Exceptions
 def handle_error(exc: Exceptions.AttachmentIdNotFound) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -68,270 +70,274 @@ Exceptions:
 - `Exceptions.DescribeAttachmentLimitExceeded`
 - `Exceptions.InternalServerError`
 
-
 ## Methods
-
 
 ### add_attachments_to_set
 
 Type annotations for `boto3.client("support").add_attachments_to_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set]
+Boto3 documentation:
+[Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set)
 
-```python
-def add_attachments_to_set(
-    self,
-    attachments: List["AttachmentTypeDef"],
-    attachmentSetId: str = None
-) -> AddAttachmentsToSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attachments`:
+  `List`\[[AttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#attachmenttypedef)\]
+  *(required)*
+- `attachmentSetId`: `str`
+
+Returns
+[AddAttachmentsToSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#addattachmentstosetresponsetypedef).
 
 ### add_communication_to_case
 
-Type annotations for `boto3.client("support").add_communication_to_case` method.
+Type annotations for `boto3.client("support").add_communication_to_case`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case]
+Boto3 documentation:
+[Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case)
 
-```python
-def add_communication_to_case(
-    self,
-    communicationBody: str,
-    caseId: str = None,
-    ccEmailAddresses: List[str] = None,
-    attachmentSetId: str = None
-) -> AddCommunicationToCaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `communicationBody`: `str` *(required)*
+- `caseId`: `str`
+- `ccEmailAddresses`: `List`\[`str`\]
+- `attachmentSetId`: `str`
+
+Returns
+[AddCommunicationToCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#addcommunicationtocaseresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("support").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate]
+Boto3 documentation:
+[Support.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_case
 
 Type annotations for `boto3.client("support").create_case` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case]
+Boto3 documentation:
+[Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case)
 
-```python
-def create_case(
-    self,
-    subject: str,
-    communicationBody: str,
-    serviceCode: str = None,
-    severityCode: str = None,
-    categoryCode: str = None,
-    ccEmailAddresses: List[str] = None,
-    language: str = None,
-    issueType: str = None,
-    attachmentSetId: str = None
-) -> CreateCaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `subject`: `str` *(required)*
+- `communicationBody`: `str` *(required)*
+- `serviceCode`: `str`
+- `severityCode`: `str`
+- `categoryCode`: `str`
+- `ccEmailAddresses`: `List`\[`str`\]
+- `language`: `str`
+- `issueType`: `str`
+- `attachmentSetId`: `str`
+
+Returns
+[CreateCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#createcaseresponsetypedef).
 
 ### describe_attachment
 
 Type annotations for `boto3.client("support").describe_attachment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment]
+Boto3 documentation:
+[Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment)
 
-```python
-def describe_attachment(
-    self,
-    attachmentId: str
-) -> DescribeAttachmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attachmentId`: `str` *(required)*
+
+Returns
+[DescribeAttachmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeattachmentresponsetypedef).
 
 ### describe_cases
 
 Type annotations for `boto3.client("support").describe_cases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases]
+Boto3 documentation:
+[Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases)
 
-```python
-def describe_cases(
-    self,
-    caseIdList: List[str] = None,
-    displayId: str = None,
-    afterTime: str = None,
-    beforeTime: str = None,
-    includeResolvedCases: bool = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    language: str = None,
-    includeCommunications: bool = None
-) -> DescribeCasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `caseIdList`: `List`\[`str`\]
+- `displayId`: `str`
+- `afterTime`: `str`
+- `beforeTime`: `str`
+- `includeResolvedCases`: `bool`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `language`: `str`
+- `includeCommunications`: `bool`
+
+Returns
+[DescribeCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecasesresponsetypedef).
 
 ### describe_communications
 
 Type annotations for `boto3.client("support").describe_communications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications]
+Boto3 documentation:
+[Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications)
 
-```python
-def describe_communications(
-    self,
-    caseId: str,
-    beforeTime: str = None,
-    afterTime: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeCommunicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `caseId`: `str` *(required)*
+- `beforeTime`: `str`
+- `afterTime`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeCommunicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecommunicationsresponsetypedef).
 
 ### describe_services
 
 Type annotations for `boto3.client("support").describe_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services]
+Boto3 documentation:
+[Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services)
 
-```python
-def describe_services(
-    self,
-    serviceCodeList: List[str] = None,
-    language: str = None
-) -> DescribeServicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceCodeList`: `List`\[`str`\]
+- `language`: `str`
+
+Returns
+[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeservicesresponsetypedef).
 
 ### describe_severity_levels
 
 Type annotations for `boto3.client("support").describe_severity_levels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels]
+Boto3 documentation:
+[Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels)
 
-```python
-def describe_severity_levels(
-    self,
-    language: str = None
-) -> DescribeSeverityLevelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `language`: `str`
+
+Returns
+[DescribeSeverityLevelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeseveritylevelsresponsetypedef).
 
 ### describe_trusted_advisor_check_refresh_statuses
 
-Type annotations for `boto3.client("support").describe_trusted_advisor_check_refresh_statuses` method.
+Type annotations for
+`boto3.client("support").describe_trusted_advisor_check_refresh_statuses`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses]
+Boto3 documentation:
+[Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
 
-```python
-def describe_trusted_advisor_check_refresh_statuses(
-    self,
-    checkIds: List[str]
-) -> DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `checkIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
 
 ### describe_trusted_advisor_check_result
 
-Type annotations for `boto3.client("support").describe_trusted_advisor_check_result` method.
+Type annotations for
+`boto3.client("support").describe_trusted_advisor_check_result` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result]
+Boto3 documentation:
+[Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
 
-```python
-def describe_trusted_advisor_check_result(
-    self,
-    checkId: str,
-    language: str = None
-) -> DescribeTrustedAdvisorCheckResultResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `checkId`: `str` *(required)*
+- `language`: `str`
+
+Returns
+[DescribeTrustedAdvisorCheckResultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorcheckresultresponsetypedef).
 
 ### describe_trusted_advisor_check_summaries
 
-Type annotations for `boto3.client("support").describe_trusted_advisor_check_summaries` method.
+Type annotations for
+`boto3.client("support").describe_trusted_advisor_check_summaries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries]
+Boto3 documentation:
+[Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
 
-```python
-def describe_trusted_advisor_check_summaries(
-    self,
-    checkIds: List[str]
-) -> DescribeTrustedAdvisorCheckSummariesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `checkIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeTrustedAdvisorCheckSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorchecksummariesresponsetypedef).
 
 ### describe_trusted_advisor_checks
 
-Type annotations for `boto3.client("support").describe_trusted_advisor_checks` method.
+Type annotations for `boto3.client("support").describe_trusted_advisor_checks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks]
+Boto3 documentation:
+[Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
 
-```python
-def describe_trusted_advisor_checks(
-    self,
-    language: str
-) -> DescribeTrustedAdvisorChecksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `language`: `str` *(required)*
+
+Returns
+[DescribeTrustedAdvisorChecksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorchecksresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("support").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url]
+Boto3 documentation:
+[Support.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### refresh_trusted_advisor_check
 
-Type annotations for `boto3.client("support").refresh_trusted_advisor_check` method.
+Type annotations for `boto3.client("support").refresh_trusted_advisor_check`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check]
+Boto3 documentation:
+[Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
 
-```python
-def refresh_trusted_advisor_check(
-    self,
-    checkId: str
-) -> RefreshTrustedAdvisorCheckResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `checkId`: `str` *(required)*
+
+Returns
+[RefreshTrustedAdvisorCheckResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#refreshtrustedadvisorcheckresponsetypedef).
 
 ### resolve_case
 
 Type annotations for `boto3.client("support").resolve_case` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case]
+Boto3 documentation:
+[Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case)
 
-```python
-def resolve_case(
-    self,
-    caseId: str = None
-) -> ResolveCaseResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `caseId`: `str`
 
+Returns
+[ResolveCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#resolvecaseresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("support").get_paginator` method with overloads.
+Type annotations for `boto3.client("support").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_cases")` -> [DescribeCasesPaginator](./paginators.md#describecasespaginator)
-- `client.get_paginator("describe_communications")` -> [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
-
-
+- `client.get_paginator("describe_cases")` ->
+  [DescribeCasesPaginator](./paginators.md#describecasespaginator)
+- `client.get_paginator("describe_communications")` ->
+  [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SavingsPlans](./README.md) > Structures
 
-Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+Auto-generated documentation for
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+type annotations stubs module
+[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Typed dictionaries for boto3 SavingsPlans module](#typed-dictionaries-for-boto3-savingsplans-module)
   - [CreateSavingsPlanResponseTypeDef](#createsavingsplanresponsetypedef)
@@ -31,12 +33,9 @@ type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project
 from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `savingsPlanId`: `str`
 
+- `savingsPlanId`: `str`
 
 ## DescribeSavingsPlanRatesResponseTypeDef
 
@@ -44,14 +43,12 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `savingsPlanId`: `str`
-- `searchResults`: `List["SavingsPlanRateTypeDef"]`
-- `nextToken`: `str`
 
+- `savingsPlanId`: `str`
+- `searchResults`:
+  `List`\[[SavingsPlanRateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanratetypedef)\]
+- `nextToken`: `str`
 
 ## DescribeSavingsPlansOfferingRatesResponseTypeDef
 
@@ -59,13 +56,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `searchResults`: `List["SavingsPlanOfferingRateTypeDef"]`
-- `nextToken`: `str`
 
+- `searchResults`:
+  `List`\[[SavingsPlanOfferingRateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingratetypedef)\]
+- `nextToken`: `str`
 
 ## DescribeSavingsPlansOfferingsResponseTypeDef
 
@@ -73,13 +68,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `searchResults`: `List["SavingsPlanOfferingTypeDef"]`
-- `nextToken`: `str`
 
+- `searchResults`:
+  `List`\[[SavingsPlanOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeSavingsPlansResponseTypeDef
 
@@ -87,13 +80,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `savingsPlans`: `List["SavingsPlanTypeDef"]`
-- `nextToken`: `str`
 
+- `savingsPlans`:
+  `List`\[[SavingsPlanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplantypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -101,12 +92,9 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ParentSavingsPlanOfferingTypeDef
 
@@ -114,17 +102,17 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import ParentSavingsPlanOfferingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `offeringId`: `str`
-- `paymentOption`: `SavingsPlanPaymentOption`
-- `planType`: `SavingsPlanType`
-- `durationSeconds`: `int`
-- `currency`: `CurrencyCode`
-- `planDescription`: `str`
 
+- `offeringId`: `str`
+- `paymentOption`:
+  [SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)
+- `planType`:
+  [SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)
+- `durationSeconds`: `int`
+- `currency`:
+  [CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)
+- `planDescription`: `str`
 
 ## SavingsPlanFilterTypeDef
 
@@ -132,13 +120,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlansFilterName`
-- `values`: `List[str]`
 
+- `name`:
+  [SavingsPlansFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplansfiltername)
+- `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingFilterElementTypeDef
 
@@ -146,13 +132,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingFilterElementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlanOfferingFilterAttribute`
-- `values`: `List[str]`
 
+- `name`:
+  [SavingsPlanOfferingFilterAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanofferingfilterattribute)
+- `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingPropertyTypeDef
 
@@ -160,13 +144,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingPropertyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlanOfferingPropertyKey`
-- `value`: `str`
 
+- `name`:
+  [SavingsPlanOfferingPropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanofferingpropertykey)
+- `value`: `str`
 
 ## SavingsPlanOfferingRateFilterElementTypeDef
 
@@ -174,13 +156,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateFilterElementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlanRateFilterAttribute`
-- `values`: `List[str]`
 
+- `name`:
+  [SavingsPlanRateFilterAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanratefilterattribute)
+- `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingRatePropertyTypeDef
 
@@ -188,13 +168,10 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRatePropertyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `value`: `str`
-
 
 ## SavingsPlanOfferingRateTypeDef
 
@@ -202,19 +179,21 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `savingsPlanOffering`: `"ParentSavingsPlanOfferingTypeDef"`
+
+- `savingsPlanOffering`:
+  [ParentSavingsPlanOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#parentsavingsplanofferingtypedef)
 - `rate`: `str`
-- `unit`: `SavingsPlanRateUnit`
-- `productType`: `SavingsPlanProductType`
-- `serviceCode`: `SavingsPlanRateServiceCode`
+- `unit`:
+  [SavingsPlanRateUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateunit)
+- `productType`:
+  [SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)
+- `serviceCode`:
+  [SavingsPlanRateServiceCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateservicecode)
 - `usageType`: `str`
 - `operation`: `str`
-- `properties`: `List["SavingsPlanOfferingRatePropertyTypeDef"]`
-
+- `properties`:
+  `List`\[[SavingsPlanOfferingRatePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingratepropertytypedef)\]
 
 ## SavingsPlanOfferingTypeDef
 
@@ -222,22 +201,24 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `offeringId`: `str`
-- `productTypes`: `List[SavingsPlanProductType]`
-- `planType`: `SavingsPlanType`
+- `productTypes`:
+  `List`\[[SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)\]
+- `planType`:
+  [SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)
 - `description`: `str`
-- `paymentOption`: `SavingsPlanPaymentOption`
+- `paymentOption`:
+  [SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)
 - `durationSeconds`: `int`
-- `currency`: `CurrencyCode`
+- `currency`:
+  [CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)
 - `serviceCode`: `str`
 - `usageType`: `str`
 - `operation`: `str`
-- `properties`: `List["SavingsPlanOfferingPropertyTypeDef"]`
-
+- `properties`:
+  `List`\[[SavingsPlanOfferingPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingpropertytypedef)\]
 
 ## SavingsPlanRateFilterTypeDef
 
@@ -245,13 +226,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanRateFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlanRateFilterName`
-- `values`: `List[str]`
 
+- `name`:
+  [SavingsPlanRateFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanratefiltername)
+- `values`: `List`\[`str`\]
 
 ## SavingsPlanRatePropertyTypeDef
 
@@ -259,13 +238,11 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanRatePropertyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `SavingsPlanRatePropertyKey`
-- `value`: `str`
 
+- `name`:
+  [SavingsPlanRatePropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanratepropertykey)
+- `value`: `str`
 
 ## SavingsPlanRateTypeDef
 
@@ -273,19 +250,21 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanRateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `rate`: `str`
-- `currency`: `CurrencyCode`
-- `unit`: `SavingsPlanRateUnit`
-- `productType`: `SavingsPlanProductType`
-- `serviceCode`: `SavingsPlanRateServiceCode`
+- `currency`:
+  [CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)
+- `unit`:
+  [SavingsPlanRateUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateunit)
+- `productType`:
+  [SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)
+- `serviceCode`:
+  [SavingsPlanRateServiceCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateservicecode)
 - `usageType`: `str`
 - `operation`: `str`
-- `properties`: `List["SavingsPlanRatePropertyTypeDef"]`
-
+- `properties`:
+  `List`\[[SavingsPlanRatePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanratepropertytypedef)\]
 
 ## SavingsPlanTypeDef
 
@@ -293,26 +272,28 @@ Optional fields:
 from mypy_boto3_savingsplans.type_defs import SavingsPlanTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `offeringId`: `str`
 - `savingsPlanId`: `str`
 - `savingsPlanArn`: `str`
 - `description`: `str`
 - `start`: `str`
 - `end`: `str`
-- `state`: `SavingsPlanState`
+- `state`:
+  [SavingsPlanState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanstate)
 - `region`: `str`
 - `ec2InstanceFamily`: `str`
-- `savingsPlanType`: `SavingsPlanType`
-- `paymentOption`: `SavingsPlanPaymentOption`
-- `productTypes`: `List[SavingsPlanProductType]`
-- `currency`: `CurrencyCode`
+- `savingsPlanType`:
+  [SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)
+- `paymentOption`:
+  [SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)
+- `productTypes`:
+  `List`\[[SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)\]
+- `currency`:
+  [CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)
 - `commitment`: `str`
 - `upfrontPaymentAmount`: `str`
 - `recurringPaymentAmount`: `str`
 - `termDurationInSeconds`: `int`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]

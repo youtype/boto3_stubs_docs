@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Outposts](./README.md) > OutpostsClient
 
-Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
-type annotations stubs module [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+Auto-generated documentation for
+[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+type annotations stubs module
+[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [OutpostsClient for boto3 Outposts module](#outpostsclient-for-boto3-outposts-module)
   - [OutpostsClient](#outpostsclient)
@@ -35,12 +37,13 @@ def get_outposts_client() -> OutpostsClient:
     return boto3.client("outposts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
+Boto3 documentation:
+[Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_outposts.client import Exceptions
@@ -48,7 +51,6 @@ from mypy_boto3_outposts.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -59,191 +61,181 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("outposts").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.can_paginate]
+Boto3 documentation:
+[Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_outpost
 
 Type annotations for `boto3.client("outposts").create_outpost` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost]
+Boto3 documentation:
+[Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
 
-```python
-def create_outpost(
-    self,
-    Name: str,
-    SiteId: str,
-    Description: str = None,
-    AvailabilityZone: str = None,
-    AvailabilityZoneId: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateOutpostOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `SiteId`: `str` *(required)*
+- `Description`: `str`
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateOutpostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#createoutpostoutputtypedef).
 
 ### delete_outpost
 
 Type annotations for `boto3.client("outposts").delete_outpost` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost]
+Boto3 documentation:
+[Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
 
-```python
-def delete_outpost(
-    self,
-    OutpostId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `OutpostId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_site
 
 Type annotations for `boto3.client("outposts").delete_site` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site]
+Boto3 documentation:
+[Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
 
-```python
-def delete_site(
-    self,
-    SiteId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SiteId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("outposts").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.generate_presigned_url]
+Boto3 documentation:
+[Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_outpost
 
 Type annotations for `boto3.client("outposts").get_outpost` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost]
+Boto3 documentation:
+[Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
 
-```python
-def get_outpost(
-    self,
-    OutpostId: str
-) -> GetOutpostOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `OutpostId`: `str` *(required)*
+
+Returns
+[GetOutpostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#getoutpostoutputtypedef).
 
 ### get_outpost_instance_types
 
-Type annotations for `boto3.client("outposts").get_outpost_instance_types` method.
+Type annotations for `boto3.client("outposts").get_outpost_instance_types`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types]
+Boto3 documentation:
+[Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
 
-```python
-def get_outpost_instance_types(
-    self,
-    OutpostId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetOutpostInstanceTypesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `OutpostId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetOutpostInstanceTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#getoutpostinstancetypesoutputtypedef).
 
 ### list_outposts
 
 Type annotations for `boto3.client("outposts").list_outposts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts]
+Boto3 documentation:
+[Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
 
-```python
-def list_outposts(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListOutpostsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListOutpostsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listoutpostsoutputtypedef).
 
 ### list_sites
 
 Type annotations for `boto3.client("outposts").list_sites` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites]
+Boto3 documentation:
+[Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
 
-```python
-def list_sites(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListSitesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSitesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listsitesoutputtypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("outposts").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource]
+Boto3 documentation:
+[Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("outposts").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource]
+Boto3 documentation:
+[Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("outposts").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource]
+Boto3 documentation:
+[Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

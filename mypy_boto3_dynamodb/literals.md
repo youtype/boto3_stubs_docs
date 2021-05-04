@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DynamoDB](./README.md) > Literals
 
-Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+Auto-generated documentation for
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+type annotations stubs module
+[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Literals for boto3 DynamoDB module](#literals-for-boto3-dynamodb-module)
   - [AttributeAction](#attributeaction)

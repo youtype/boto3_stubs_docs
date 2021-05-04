@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pricing](./README.md) > PricingClient
 
-Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+Auto-generated documentation for
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+type annotations stubs module
+[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [PricingClient for boto3 Pricing module](#pricingclient-for-boto3-pricing-module)
   - [PricingClient](#pricingclient)
@@ -29,12 +31,13 @@ def get_pricing_client() -> PricingClient:
     return boto3.client("pricing")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
+Boto3 documentation:
+[Pricing.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_pricing.client import Exceptions
@@ -42,7 +45,6 @@ from mypy_boto3_pricing.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -53,101 +55,98 @@ Exceptions:
 - `Exceptions.InvalidParameterException`
 - `Exceptions.NotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("pricing").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.can_paginate]
+Boto3 documentation:
+[Pricing.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_services
 
 Type annotations for `boto3.client("pricing").describe_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services]
+Boto3 documentation:
+[Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services)
 
-```python
-def describe_services(
-    self,
-    ServiceCode: str = None,
-    FormatVersion: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeServicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceCode`: `str`
+- `FormatVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#describeservicesresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("pricing").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.generate_presigned_url]
+Boto3 documentation:
+[Pricing.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_attribute_values
 
 Type annotations for `boto3.client("pricing").get_attribute_values` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values]
+Boto3 documentation:
+[Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values)
 
-```python
-def get_attribute_values(
-    self,
-    ServiceCode: str,
-    AttributeName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetAttributeValuesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceCode`: `str` *(required)*
+- `AttributeName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetAttributeValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getattributevaluesresponsetypedef).
 
 ### get_products
 
 Type annotations for `boto3.client("pricing").get_products` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products]
+Boto3 documentation:
+[Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products)
 
-```python
-def get_products(
-    self,
-    ServiceCode: str = None,
-    Filters: List[FilterTypeDef] = None,
-    FormatVersion: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetProductsResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ServiceCode`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#filtertypedef)\]
+- `FormatVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
 
+Returns
+[GetProductsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getproductsresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("pricing").get_paginator` method with overloads.
+Type annotations for `boto3.client("pricing").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_services")` -> [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
-- `client.get_paginator("get_attribute_values")` -> [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
-- `client.get_paginator("get_products")` -> [GetProductsPaginator](./paginators.md#getproductspaginator)
-
-
+- `client.get_paginator("describe_services")` ->
+  [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
+- `client.get_paginator("get_attribute_values")` ->
+  [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
+- `client.get_paginator("get_products")` ->
+  [GetProductsPaginator](./paginators.md#getproductspaginator)

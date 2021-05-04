@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GlobalAccelerator](./README.md) > Structures
 
-Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+Auto-generated documentation for
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+type annotations stubs module
+[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Typed dictionaries for boto3 GlobalAccelerator module](#typed-dictionaries-for-boto3-globalaccelerator-module)
   - [AcceleratorAttributesTypeDef](#acceleratorattributestypedef)
@@ -74,14 +76,11 @@ type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/pr
 from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FlowLogsEnabled`: `bool`
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
-
 
 ## AcceleratorTypeDef
 
@@ -89,20 +88,19 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import AcceleratorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AcceleratorArn`: `str`
 - `Name`: `str`
 - `IpAddressType`: `Literal['IPV4']`
 - `Enabled`: `bool`
-- `IpSets`: `List["IpSetTypeDef"]`
+- `IpSets`:
+  `List`\[[IpSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#ipsettypedef)\]
 - `DnsName`: `str`
-- `Status`: `AcceleratorStatus`
+- `Status`:
+  [AcceleratorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#acceleratorstatus)
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## AddCustomRoutingEndpointsResponseTypeDef
 
@@ -110,13 +108,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointDescriptions`: `List["CustomRoutingEndpointDescriptionTypeDef"]`
-- `EndpointGroupArn`: `str`
 
+- `EndpointDescriptions`:
+  `List`\[[CustomRoutingEndpointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointdescriptiontypedef)\]
+- `EndpointGroupArn`: `str`
 
 ## AdvertiseByoipCidrResponseTypeDef
 
@@ -124,12 +120,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByoipCidr`: `"ByoipCidrTypeDef"`
 
+- `ByoipCidr`:
+  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidrtypedef)
 
 ## ByoipCidrEventTypeDef
 
@@ -137,13 +131,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ByoipCidrEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
 - `Timestamp`: `datetime`
-
 
 ## ByoipCidrTypeDef
 
@@ -151,14 +142,13 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ByoipCidrTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Cidr`: `str`
-- `State`: `ByoipCidrState`
-- `Events`: `List["ByoipCidrEventTypeDef"]`
 
+- `Cidr`: `str`
+- `State`:
+  [ByoipCidrState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#byoipcidrstate)
+- `Events`:
+  `List`\[[ByoipCidrEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidreventtypedef)\]
 
 ## CidrAuthorizationContextTypeDef
 
@@ -166,13 +156,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CidrAuthorizationContextTypeDef
 ```
 
-
 Required fields:
+
 - `Message`: `str`
 - `Signature`: `str`
-
-
-
 
 ## CreateAcceleratorResponseTypeDef
 
@@ -180,12 +167,10 @@ Required fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"AcceleratorTypeDef"`
 
+- `Accelerator`:
+  [AcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratortypedef)
 
 ## CreateCustomRoutingAcceleratorResponseTypeDef
 
@@ -193,12 +178,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"CustomRoutingAcceleratorTypeDef"`
 
+- `Accelerator`:
+  [CustomRoutingAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratortypedef)
 
 ## CreateCustomRoutingEndpointGroupResponseTypeDef
 
@@ -206,12 +189,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroup`: `"CustomRoutingEndpointGroupTypeDef"`
 
+- `EndpointGroup`:
+  [CustomRoutingEndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointgrouptypedef)
 
 ## CreateCustomRoutingListenerResponseTypeDef
 
@@ -219,12 +200,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"CustomRoutingListenerTypeDef"`
 
+- `Listener`:
+  [CustomRoutingListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutinglistenertypedef)
 
 ## CreateEndpointGroupResponseTypeDef
 
@@ -232,12 +211,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroup`: `"EndpointGroupTypeDef"`
 
+- `EndpointGroup`:
+  [EndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointgrouptypedef)
 
 ## CreateListenerResponseTypeDef
 
@@ -245,12 +222,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CreateListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"ListenerTypeDef"`
 
+- `Listener`:
+  [ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listenertypedef)
 
 ## CustomRoutingAcceleratorAttributesTypeDef
 
@@ -258,14 +233,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingAcceleratorAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FlowLogsEnabled`: `bool`
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
-
 
 ## CustomRoutingAcceleratorTypeDef
 
@@ -273,20 +245,19 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingAcceleratorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AcceleratorArn`: `str`
 - `Name`: `str`
 - `IpAddressType`: `Literal['IPV4']`
 - `Enabled`: `bool`
-- `IpSets`: `List["IpSetTypeDef"]`
+- `IpSets`:
+  `List`\[[IpSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#ipsettypedef)\]
 - `DnsName`: `str`
-- `Status`: `CustomRoutingAcceleratorStatus`
+- `Status`:
+  [CustomRoutingAcceleratorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#customroutingacceleratorstatus)
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## CustomRoutingDestinationConfigurationTypeDef
 
@@ -294,14 +265,12 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `FromPort`: `int`
 - `ToPort`: `int`
-- `Protocols`: `List[CustomRoutingProtocol]`
-
-
-
+- `Protocols`:
+  `List`\[[CustomRoutingProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#customroutingprotocol)\]
 
 ## CustomRoutingDestinationDescriptionTypeDef
 
@@ -309,14 +278,12 @@ Required fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingDestinationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FromPort`: `int`
 - `ToPort`: `int`
-- `Protocols`: `List[ProtocolType]`
-
+- `Protocols`:
+  `List`\[[ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#protocoltype)\]
 
 ## CustomRoutingEndpointConfigurationTypeDef
 
@@ -324,12 +291,9 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointId`: `str`
 
+- `EndpointId`: `str`
 
 ## CustomRoutingEndpointDescriptionTypeDef
 
@@ -337,12 +301,9 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointId`: `str`
 
+- `EndpointId`: `str`
 
 ## CustomRoutingEndpointGroupTypeDef
 
@@ -350,15 +311,14 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndpointGroupArn`: `str`
 - `EndpointGroupRegion`: `str`
-- `DestinationDescriptions`: `List["CustomRoutingDestinationDescriptionTypeDef"]`
-- `EndpointDescriptions`: `List["CustomRoutingEndpointDescriptionTypeDef"]`
-
+- `DestinationDescriptions`:
+  `List`\[[CustomRoutingDestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingdestinationdescriptiontypedef)\]
+- `EndpointDescriptions`:
+  `List`\[[CustomRoutingEndpointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointdescriptiontypedef)\]
 
 ## CustomRoutingListenerTypeDef
 
@@ -366,13 +326,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingListenerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ListenerArn`: `str`
-- `PortRanges`: `List["PortRangeTypeDef"]`
 
+- `ListenerArn`: `str`
+- `PortRanges`:
+  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
 
 ## DeprovisionByoipCidrResponseTypeDef
 
@@ -380,12 +338,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByoipCidr`: `"ByoipCidrTypeDef"`
 
+- `ByoipCidr`:
+  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidrtypedef)
 
 ## DescribeAcceleratorAttributesResponseTypeDef
 
@@ -393,12 +349,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AcceleratorAttributes`: `"AcceleratorAttributesTypeDef"`
 
+- `AcceleratorAttributes`:
+  [AcceleratorAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratorattributestypedef)
 
 ## DescribeAcceleratorResponseTypeDef
 
@@ -406,12 +360,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"AcceleratorTypeDef"`
 
+- `Accelerator`:
+  [AcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratortypedef)
 
 ## DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 
@@ -419,12 +371,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AcceleratorAttributes`: `"CustomRoutingAcceleratorAttributesTypeDef"`
 
+- `AcceleratorAttributes`:
+  [CustomRoutingAcceleratorAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratorattributestypedef)
 
 ## DescribeCustomRoutingAcceleratorResponseTypeDef
 
@@ -432,12 +382,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"CustomRoutingAcceleratorTypeDef"`
 
+- `Accelerator`:
+  [CustomRoutingAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratortypedef)
 
 ## DescribeCustomRoutingEndpointGroupResponseTypeDef
 
@@ -445,12 +393,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroup`: `"CustomRoutingEndpointGroupTypeDef"`
 
+- `EndpointGroup`:
+  [CustomRoutingEndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointgrouptypedef)
 
 ## DescribeCustomRoutingListenerResponseTypeDef
 
@@ -458,12 +404,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"CustomRoutingListenerTypeDef"`
 
+- `Listener`:
+  [CustomRoutingListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutinglistenertypedef)
 
 ## DescribeEndpointGroupResponseTypeDef
 
@@ -471,12 +415,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroup`: `"EndpointGroupTypeDef"`
 
+- `EndpointGroup`:
+  [EndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointgrouptypedef)
 
 ## DescribeListenerResponseTypeDef
 
@@ -484,12 +426,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DescribeListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"ListenerTypeDef"`
 
+- `Listener`:
+  [ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listenertypedef)
 
 ## DestinationPortMappingTypeDef
 
@@ -497,19 +437,19 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import DestinationPortMappingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AcceleratorArn`: `str`
-- `AcceleratorSocketAddresses`: `List["SocketAddressTypeDef"]`
+- `AcceleratorSocketAddresses`:
+  `List`\[[SocketAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#socketaddresstypedef)\]
 - `EndpointGroupArn`: `str`
 - `EndpointId`: `str`
 - `EndpointGroupRegion`: `str`
-- `DestinationSocketAddress`: `"SocketAddressTypeDef"`
+- `DestinationSocketAddress`:
+  [SocketAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#socketaddresstypedef)
 - `IpAddressType`: `Literal['IPV4']`
-- `DestinationTrafficState`: `CustomRoutingDestinationTrafficState`
-
+- `DestinationTrafficState`:
+  [CustomRoutingDestinationTrafficState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#customroutingdestinationtrafficstate)
 
 ## EndpointConfigurationTypeDef
 
@@ -517,14 +457,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import EndpointConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndpointId`: `str`
 - `Weight`: `int`
 - `ClientIPPreservationEnabled`: `bool`
-
 
 ## EndpointDescriptionTypeDef
 
@@ -532,16 +469,14 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import EndpointDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndpointId`: `str`
 - `Weight`: `int`
-- `HealthState`: `HealthState`
+- `HealthState`:
+  [HealthState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#healthstate)
 - `HealthReason`: `str`
 - `ClientIPPreservationEnabled`: `bool`
-
 
 ## EndpointGroupTypeDef
 
@@ -549,21 +484,21 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import EndpointGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndpointGroupArn`: `str`
 - `EndpointGroupRegion`: `str`
-- `EndpointDescriptions`: `List["EndpointDescriptionTypeDef"]`
+- `EndpointDescriptions`:
+  `List`\[[EndpointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointdescriptiontypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
-- `HealthCheckProtocol`: `HealthCheckProtocol`
+- `HealthCheckProtocol`:
+  [HealthCheckProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#healthcheckprotocol)
 - `HealthCheckPath`: `str`
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
-- `PortOverrides`: `List["PortOverrideTypeDef"]`
-
+- `PortOverrides`:
+  `List`\[[PortOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portoverridetypedef)\]
 
 ## IpSetTypeDef
 
@@ -571,13 +506,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import IpSetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IpFamily`: `str`
-- `IpAddresses`: `List[str]`
 
+- `IpFamily`: `str`
+- `IpAddresses`: `List`\[`str`\]
 
 ## ListAcceleratorsResponseTypeDef
 
@@ -585,13 +517,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerators`: `List["AcceleratorTypeDef"]`
-- `NextToken`: `str`
 
+- `Accelerators`:
+  `List`\[[AcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratortypedef)\]
+- `NextToken`: `str`
 
 ## ListByoipCidrsResponseTypeDef
 
@@ -599,13 +529,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByoipCidrs`: `List["ByoipCidrTypeDef"]`
-- `NextToken`: `str`
 
+- `ByoipCidrs`:
+  `List`\[[ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidrtypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomRoutingAcceleratorsResponseTypeDef
 
@@ -613,13 +541,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerators`: `List["CustomRoutingAcceleratorTypeDef"]`
-- `NextToken`: `str`
 
+- `Accelerators`:
+  `List`\[[CustomRoutingAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratortypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomRoutingEndpointGroupsResponseTypeDef
 
@@ -627,13 +553,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroups`: `List["CustomRoutingEndpointGroupTypeDef"]`
-- `NextToken`: `str`
 
+- `EndpointGroups`:
+  `List`\[[CustomRoutingEndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointgrouptypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomRoutingListenersResponseTypeDef
 
@@ -641,13 +565,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listeners`: `List["CustomRoutingListenerTypeDef"]`
-- `NextToken`: `str`
 
+- `Listeners`:
+  `List`\[[CustomRoutingListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutinglistenertypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 
@@ -655,13 +577,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationPortMappings`: `List["DestinationPortMappingTypeDef"]`
-- `NextToken`: `str`
 
+- `DestinationPortMappings`:
+  `List`\[[DestinationPortMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#destinationportmappingtypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomRoutingPortMappingsResponseTypeDef
 
@@ -669,13 +589,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PortMappings`: `List["PortMappingTypeDef"]`
-- `NextToken`: `str`
 
+- `PortMappings`:
+  `List`\[[PortMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portmappingtypedef)\]
+- `NextToken`: `str`
 
 ## ListEndpointGroupsResponseTypeDef
 
@@ -683,13 +601,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroups`: `List["EndpointGroupTypeDef"]`
-- `NextToken`: `str`
 
+- `EndpointGroups`:
+  `List`\[[EndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointgrouptypedef)\]
+- `NextToken`: `str`
 
 ## ListListenersResponseTypeDef
 
@@ -697,13 +613,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListListenersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listeners`: `List["ListenerTypeDef"]`
-- `NextToken`: `str`
 
+- `Listeners`:
+  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listenertypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -711,12 +625,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#tagtypedef)\]
 
 ## ListenerTypeDef
 
@@ -724,15 +636,15 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ListenerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ListenerArn`: `str`
-- `PortRanges`: `List["PortRangeTypeDef"]`
-- `Protocol`: `ProtocolType`
-- `ClientAffinity`: `ClientAffinity`
 
+- `ListenerArn`: `str`
+- `PortRanges`:
+  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
+- `Protocol`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#protocoltype)
+- `ClientAffinity`:
+  [ClientAffinity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#clientaffinity)
 
 ## PaginatorConfigTypeDef
 
@@ -740,14 +652,11 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PortMappingTypeDef
 
@@ -755,17 +664,17 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import PortMappingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AcceleratorPort`: `int`
 - `EndpointGroupArn`: `str`
 - `EndpointId`: `str`
-- `DestinationSocketAddress`: `"SocketAddressTypeDef"`
-- `Protocols`: `List[CustomRoutingProtocol]`
-- `DestinationTrafficState`: `CustomRoutingDestinationTrafficState`
-
+- `DestinationSocketAddress`:
+  [SocketAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#socketaddresstypedef)
+- `Protocols`:
+  `List`\[[CustomRoutingProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#customroutingprotocol)\]
+- `DestinationTrafficState`:
+  [CustomRoutingDestinationTrafficState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#customroutingdestinationtrafficstate)
 
 ## PortOverrideTypeDef
 
@@ -773,13 +682,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import PortOverrideTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ListenerPort`: `int`
 - `EndpointPort`: `int`
-
 
 ## PortRangeTypeDef
 
@@ -787,13 +693,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import PortRangeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FromPort`: `int`
 - `ToPort`: `int`
-
 
 ## ProvisionByoipCidrResponseTypeDef
 
@@ -801,12 +704,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByoipCidr`: `"ByoipCidrTypeDef"`
 
+- `ByoipCidr`:
+  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidrtypedef)
 
 ## SocketAddressTypeDef
 
@@ -814,13 +715,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import SocketAddressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IpAddress`: `str`
 - `Port`: `int`
-
 
 ## TagTypeDef
 
@@ -828,13 +726,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## UpdateAcceleratorAttributesResponseTypeDef
 
@@ -842,12 +737,10 @@ Required fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AcceleratorAttributes`: `"AcceleratorAttributesTypeDef"`
 
+- `AcceleratorAttributes`:
+  [AcceleratorAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratorattributestypedef)
 
 ## UpdateAcceleratorResponseTypeDef
 
@@ -855,12 +748,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"AcceleratorTypeDef"`
 
+- `Accelerator`:
+  [AcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#acceleratortypedef)
 
 ## UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 
@@ -868,12 +759,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AcceleratorAttributes`: `"CustomRoutingAcceleratorAttributesTypeDef"`
 
+- `AcceleratorAttributes`:
+  [CustomRoutingAcceleratorAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratorattributestypedef)
 
 ## UpdateCustomRoutingAcceleratorResponseTypeDef
 
@@ -881,12 +770,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accelerator`: `"CustomRoutingAcceleratorTypeDef"`
 
+- `Accelerator`:
+  [CustomRoutingAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingacceleratortypedef)
 
 ## UpdateCustomRoutingListenerResponseTypeDef
 
@@ -894,12 +781,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"CustomRoutingListenerTypeDef"`
 
+- `Listener`:
+  [CustomRoutingListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutinglistenertypedef)
 
 ## UpdateEndpointGroupResponseTypeDef
 
@@ -907,12 +792,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointGroup`: `"EndpointGroupTypeDef"`
 
+- `EndpointGroup`:
+  [EndpointGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointgrouptypedef)
 
 ## UpdateListenerResponseTypeDef
 
@@ -920,12 +803,10 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import UpdateListenerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"ListenerTypeDef"`
 
+- `Listener`:
+  [ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listenertypedef)
 
 ## WithdrawByoipCidrResponseTypeDef
 
@@ -933,9 +814,7 @@ Optional fields:
 from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ByoipCidr`: `"ByoipCidrTypeDef"`
 
+- `ByoipCidr`:
+  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#byoipcidrtypedef)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > Structures
 
-Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+Auto-generated documentation for
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+type annotations stubs module
+[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [Typed dictionaries for boto3 LookoutMetrics module](#typed-dictionaries-for-boto3-lookoutmetrics-module)
   - [ActionTypeDef](#actiontypedef)
@@ -67,13 +69,12 @@ type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/proje
 from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SNSConfiguration`: `"SNSConfigurationTypeDef"`
-- `LambdaConfiguration`: `"LambdaConfigurationTypeDef"`
 
+- `SNSConfiguration`:
+  [SNSConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#snsconfigurationtypedef)
+- `LambdaConfiguration`:
+  [LambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#lambdaconfigurationtypedef)
 
 ## AlertSummaryTypeDef
 
@@ -81,20 +82,19 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AlertSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlertArn`: `str`
 - `AnomalyDetectorArn`: `str`
 - `AlertName`: `str`
 - `AlertSensitivityThreshold`: `int`
-- `AlertType`: `AlertType`
-- `AlertStatus`: `AlertStatus`
+- `AlertType`:
+  [AlertType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#alerttype)
+- `AlertStatus`:
+  [AlertStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#alertstatus)
 - `LastModificationTime`: `datetime`
 - `CreationTime`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## AlertTypeDef
 
@@ -102,21 +102,21 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AlertTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `"ActionTypeDef"`
+
+- `Action`:
+  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#actiontypedef)
 - `AlertDescription`: `str`
 - `AlertArn`: `str`
 - `AnomalyDetectorArn`: `str`
 - `AlertName`: `str`
 - `AlertSensitivityThreshold`: `int`
-- `AlertType`: `AlertType`
-- `AlertStatus`: `AlertStatus`
+- `AlertType`:
+  [AlertType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#alerttype)
+- `AlertStatus`:
+  [AlertStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#alertstatus)
 - `LastModificationTime`: `datetime`
 - `CreationTime`: `datetime`
-
 
 ## AnomalyDetectorConfigSummaryTypeDef
 
@@ -124,12 +124,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyDetectorFrequency`: `Frequency`
 
+- `AnomalyDetectorFrequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
 
 ## AnomalyDetectorConfigTypeDef
 
@@ -137,12 +135,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyDetectorFrequency`: `Frequency`
 
+- `AnomalyDetectorFrequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
 
 ## AnomalyDetectorSummaryTypeDef
 
@@ -150,18 +146,16 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AnomalyDetectorArn`: `str`
 - `AnomalyDetectorName`: `str`
 - `AnomalyDetectorDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-- `Status`: `AnomalyDetectorStatus`
-- `Tags`: `Dict[str, str]`
-
+- `Status`:
+  [AnomalyDetectorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#anomalydetectorstatus)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## AnomalyGroupStatisticsTypeDef
 
@@ -169,14 +163,12 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EvaluationStartDate`: `str`
 - `TotalCount`: `int`
-- `ItemizedMetricStatsList`: `List["ItemizedMetricStatsTypeDef"]`
-
+- `ItemizedMetricStatsList`:
+  `List`\[[ItemizedMetricStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#itemizedmetricstatstypedef)\]
 
 ## AnomalyGroupSummaryTypeDef
 
@@ -184,16 +176,13 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StartTime`: `str`
 - `EndTime`: `str`
 - `AnomalyGroupId`: `str`
 - `AnomalyGroupScore`: `float`
 - `PrimaryMetricName`: `str`
-
 
 ## AnomalyGroupTimeSeriesFeedbackTypeDef
 
@@ -201,14 +190,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTimeSeriesFeedbackTypeDef
 ```
 
-
 Required fields:
+
 - `AnomalyGroupId`: `str`
 - `TimeSeriesId`: `str`
 - `IsAnomaly`: `bool`
-
-
-
 
 ## AnomalyGroupTimeSeriesTypeDef
 
@@ -216,15 +202,13 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTimeSeriesTypeDef
 ```
 
-
 Required fields:
+
 - `AnomalyGroupId`: `str`
 
-
-
 Optional fields:
-- `TimeSeriesId`: `str`
 
+- `TimeSeriesId`: `str`
 
 ## AnomalyGroupTypeDef
 
@@ -232,17 +216,15 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StartTime`: `str`
 - `EndTime`: `str`
 - `AnomalyGroupId`: `str`
 - `AnomalyGroupScore`: `float`
 - `PrimaryMetricName`: `str`
-- `MetricLevelImpactList`: `List["MetricLevelImpactTypeDef"]`
-
+- `MetricLevelImpactList`:
+  `List`\[[MetricLevelImpactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metriclevelimpacttypedef)\]
 
 ## AppFlowConfigTypeDef
 
@@ -250,13 +232,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import AppFlowConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `FlowName`: `str`
-
-
-
 
 ## CloudWatchConfigTypeDef
 
@@ -264,12 +243,9 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
-
-
-
 
 ## ContributionMatrixTypeDef
 
@@ -277,12 +253,10 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import ContributionMatrixTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DimensionContributionList`: `List["DimensionContributionTypeDef"]`
 
+- `DimensionContributionList`:
+  `List`\[[DimensionContributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#dimensioncontributiontypedef)\]
 
 ## CreateAlertResponseTypeDef
 
@@ -290,12 +264,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import CreateAlertResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AlertArn`: `str`
 
+- `AlertArn`: `str`
 
 ## CreateAnomalyDetectorResponseTypeDef
 
@@ -303,12 +274,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyDetectorArn`: `str`
 
+- `AnomalyDetectorArn`: `str`
 
 ## CreateMetricSetResponseTypeDef
 
@@ -316,12 +284,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MetricSetArn`: `str`
 
+- `MetricSetArn`: `str`
 
 ## CsvFormatDescriptorTypeDef
 
@@ -329,17 +294,15 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import CsvFormatDescriptorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileCompression`: `CSVFileCompression`
+
+- `FileCompression`:
+  [CSVFileCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#csvfilecompression)
 - `Charset`: `str`
 - `ContainsHeader`: `bool`
 - `Delimiter`: `str`
-- `HeaderList`: `List[str]`
+- `HeaderList`: `List`\[`str`\]
 - `QuoteSymbol`: `str`
-
 
 ## DescribeAlertResponseTypeDef
 
@@ -347,12 +310,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Alert`: `"AlertTypeDef"`
 
+- `Alert`:
+  [AlertTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#alerttypedef)
 
 ## DescribeAnomalyDetectionExecutionsResponseTypeDef
 
@@ -360,13 +321,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExecutionList`: `List["ExecutionStatusTypeDef"]`
-- `NextToken`: `str`
 
+- `ExecutionList`:
+  `List`\[[ExecutionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#executionstatustypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAnomalyDetectorResponseTypeDef
 
@@ -374,20 +333,19 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AnomalyDetectorArn`: `str`
 - `AnomalyDetectorName`: `str`
 - `AnomalyDetectorDescription`: `str`
-- `AnomalyDetectorConfig`: `"AnomalyDetectorConfigSummaryTypeDef"`
+- `AnomalyDetectorConfig`:
+  [AnomalyDetectorConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorconfigsummarytypedef)
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-- `Status`: `AnomalyDetectorStatus`
+- `Status`:
+  [AnomalyDetectorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#anomalydetectorstatus)
 - `FailureReason`: `str`
 - `KmsKeyArn`: `str`
-
 
 ## DescribeMetricSetResponseTypeDef
 
@@ -395,10 +353,8 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricSetArn`: `str`
 - `AnomalyDetectorArn`: `str`
 - `MetricSetName`: `str`
@@ -406,13 +362,16 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 - `Offset`: `int`
-- `MetricList`: `List["MetricTypeDef"]`
-- `TimestampColumn`: `"TimestampColumnTypeDef"`
-- `DimensionList`: `List[str]`
-- `MetricSetFrequency`: `Frequency`
+- `MetricList`:
+  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metrictypedef)\]
+- `TimestampColumn`:
+  [TimestampColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timestampcolumntypedef)
+- `DimensionList`: `List`\[`str`\]
+- `MetricSetFrequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
 - `Timezone`: `str`
-- `MetricSource`: `"MetricSourceTypeDef"`
-
+- `MetricSource`:
+  [MetricSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsourcetypedef)
 
 ## DimensionContributionTypeDef
 
@@ -420,13 +379,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DimensionContributionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DimensionName`: `str`
-- `DimensionValueContributionList`: `List["DimensionValueContributionTypeDef"]`
 
+- `DimensionName`: `str`
+- `DimensionValueContributionList`:
+  `List`\[[DimensionValueContributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#dimensionvaluecontributiontypedef)\]
 
 ## DimensionNameValueTypeDef
 
@@ -434,13 +391,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import DimensionNameValueTypeDef
 ```
 
-
 Required fields:
+
 - `DimensionName`: `str`
 - `DimensionValue`: `str`
-
-
-
 
 ## DimensionValueContributionTypeDef
 
@@ -448,13 +402,10 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import DimensionValueContributionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DimensionValue`: `str`
 - `ContributionScore`: `float`
-
 
 ## ExecutionStatusTypeDef
 
@@ -462,14 +413,12 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ExecutionStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Timestamp`: `str`
-- `Status`: `AnomalyDetectionTaskStatus`
-- `FailureReason`: `str`
 
+- `Timestamp`: `str`
+- `Status`:
+  [AnomalyDetectionTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#anomalydetectiontaskstatus)
+- `FailureReason`: `str`
 
 ## FileFormatDescriptorTypeDef
 
@@ -477,13 +426,12 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import FileFormatDescriptorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CsvFormatDescriptor`: `"CsvFormatDescriptorTypeDef"`
-- `JsonFormatDescriptor`: `"JsonFormatDescriptorTypeDef"`
 
+- `CsvFormatDescriptor`:
+  [CsvFormatDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#csvformatdescriptortypedef)
+- `JsonFormatDescriptor`:
+  [JsonFormatDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#jsonformatdescriptortypedef)
 
 ## GetAnomalyGroupResponseTypeDef
 
@@ -491,12 +439,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyGroup`: `"AnomalyGroupTypeDef"`
 
+- `AnomalyGroup`:
+  [AnomalyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygrouptypedef)
 
 ## GetFeedbackResponseTypeDef
 
@@ -504,13 +450,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyGroupTimeSeriesFeedback`: `List["TimeSeriesFeedbackTypeDef"]`
-- `NextToken`: `str`
 
+- `AnomalyGroupTimeSeriesFeedback`:
+  `List`\[[TimeSeriesFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timeseriesfeedbacktypedef)\]
+- `NextToken`: `str`
 
 ## GetSampleDataResponseTypeDef
 
@@ -518,13 +462,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HeaderValues`: `List[str]`
-- `SampleRows`: `List[List[str]]`
 
+- `HeaderValues`: `List`\[`str`\]
+- `SampleRows`: `List`\[`List`\[`str`\]\]
 
 ## ItemizedMetricStatsTypeDef
 
@@ -532,13 +473,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ItemizedMetricStatsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricName`: `str`
 - `OccurrenceCount`: `int`
-
 
 ## JsonFormatDescriptorTypeDef
 
@@ -546,13 +484,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import JsonFormatDescriptorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileCompression`: `JsonFileCompression`
-- `Charset`: `str`
 
+- `FileCompression`:
+  [JsonFileCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#jsonfilecompression)
+- `Charset`: `str`
 
 ## LambdaConfigurationTypeDef
 
@@ -560,13 +496,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import LambdaConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `LambdaArn`: `str`
-
-
-
 
 ## ListAlertsResponseTypeDef
 
@@ -574,13 +507,11 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListAlertsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AlertSummaryList`: `List["AlertSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `AlertSummaryList`:
+  `List`\[[AlertSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#alertsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListAnomalyDetectorsResponseTypeDef
 
@@ -588,13 +519,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyDetectorSummaryList`: `List["AnomalyDetectorSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `AnomalyDetectorSummaryList`:
+  `List`\[[AnomalyDetectorSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListAnomalyGroupSummariesResponseTypeDef
 
@@ -602,14 +531,13 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyGroupSummaryList`: `List["AnomalyGroupSummaryTypeDef"]`
-- `AnomalyGroupStatistics`: `"AnomalyGroupStatisticsTypeDef"`
-- `NextToken`: `str`
 
+- `AnomalyGroupSummaryList`:
+  `List`\[[AnomalyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygroupsummarytypedef)\]
+- `AnomalyGroupStatistics`:
+  [AnomalyGroupStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygroupstatisticstypedef)
+- `NextToken`: `str`
 
 ## ListAnomalyGroupTimeSeriesResponseTypeDef
 
@@ -617,16 +545,14 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AnomalyGroupId`: `str`
 - `MetricName`: `str`
-- `TimestampList`: `List[str]`
+- `TimestampList`: `List`\[`str`\]
 - `NextToken`: `str`
-- `TimeSeriesList`: `List["TimeSeriesTypeDef"]`
-
+- `TimeSeriesList`:
+  `List`\[[TimeSeriesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timeseriestypedef)\]
 
 ## ListMetricSetsResponseTypeDef
 
@@ -634,13 +560,11 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MetricSetSummaryList`: `List["MetricSetSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `MetricSetSummaryList`:
+  `List`\[[MetricSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsetsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -648,12 +572,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## MetricLevelImpactTypeDef
 
@@ -661,14 +582,12 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import MetricLevelImpactTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricName`: `str`
 - `NumTimeSeries`: `int`
-- `ContributionMatrix`: `"ContributionMatrixTypeDef"`
-
+- `ContributionMatrix`:
+  [ContributionMatrixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#contributionmatrixtypedef)
 
 ## MetricSetSummaryTypeDef
 
@@ -676,18 +595,15 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import MetricSetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricSetArn`: `str`
 - `AnomalyDetectorArn`: `str`
 - `MetricSetDescription`: `str`
 - `MetricSetName`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## MetricSourceTypeDef
 
@@ -695,16 +611,18 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import MetricSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3SourceConfig`: `"S3SourceConfigTypeDef"`
-- `AppFlowConfig`: `"AppFlowConfigTypeDef"`
-- `CloudWatchConfig`: `"CloudWatchConfigTypeDef"`
-- `RDSSourceConfig`: `"RDSSourceConfigTypeDef"`
-- `RedshiftSourceConfig`: `"RedshiftSourceConfigTypeDef"`
 
+- `S3SourceConfig`:
+  [S3SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#s3sourceconfigtypedef)
+- `AppFlowConfig`:
+  [AppFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#appflowconfigtypedef)
+- `CloudWatchConfig`:
+  [CloudWatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#cloudwatchconfigtypedef)
+- `RDSSourceConfig`:
+  [RDSSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#rdssourceconfigtypedef)
+- `RedshiftSourceConfig`:
+  [RedshiftSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#redshiftsourceconfigtypedef)
 
 ## MetricTypeDef
 
@@ -712,16 +630,15 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import MetricTypeDef
 ```
 
-
 Required fields:
+
 - `MetricName`: `str`
-- `AggregationFunction`: `AggregationFunction`
-
-
+- `AggregationFunction`:
+  [AggregationFunction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#aggregationfunction)
 
 Optional fields:
-- `Namespace`: `str`
 
+- `Namespace`: `str`
 
 ## RDSSourceConfigTypeDef
 
@@ -729,8 +646,8 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import RDSSourceConfigTypeDef
 ```
 
-
 Required fields:
+
 - `DBInstanceIdentifier`: `str`
 - `DatabaseHost`: `str`
 - `DatabasePort`: `int`
@@ -738,10 +655,8 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `RoleArn`: `str`
-- `VpcConfiguration`: `"VpcConfigurationTypeDef"`
-
-
-
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#vpcconfigurationtypedef)
 
 ## RedshiftSourceConfigTypeDef
 
@@ -749,8 +664,8 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import RedshiftSourceConfigTypeDef
 ```
 
-
 Required fields:
+
 - `ClusterIdentifier`: `str`
 - `DatabaseHost`: `str`
 - `DatabasePort`: `int`
@@ -758,10 +673,8 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `RoleArn`: `str`
-- `VpcConfiguration`: `"VpcConfigurationTypeDef"`
-
-
-
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#vpcconfigurationtypedef)
 
 ## S3SourceConfigTypeDef
 
@@ -769,17 +682,16 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import S3SourceConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `TemplatedPathList`: `List[str]`
-- `HistoricalDataPathList`: `List[str]`
-- `FileFormatDescriptor`: `"FileFormatDescriptorTypeDef"`
 
+- `TemplatedPathList`: `List`\[`str`\]
+- `HistoricalDataPathList`: `List`\[`str`\]
+- `FileFormatDescriptor`:
+  [FileFormatDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#fileformatdescriptortypedef)
 
 ## SNSConfigurationTypeDef
 
@@ -787,13 +699,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import SNSConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `SnsTopicArn`: `str`
-
-
-
 
 ## SampleDataS3SourceConfigTypeDef
 
@@ -801,17 +710,16 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import SampleDataS3SourceConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
-- `FileFormatDescriptor`: `"FileFormatDescriptorTypeDef"`
-
-
+- `FileFormatDescriptor`:
+  [FileFormatDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#fileformatdescriptortypedef)
 
 Optional fields:
-- `TemplatedPathList`: `List[str]`
-- `HistoricalDataPathList`: `List[str]`
 
+- `TemplatedPathList`: `List`\[`str`\]
+- `HistoricalDataPathList`: `List`\[`str`\]
 
 ## TimeSeriesFeedbackTypeDef
 
@@ -819,13 +727,10 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import TimeSeriesFeedbackTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TimeSeriesId`: `str`
 - `IsAnomaly`: `bool`
-
 
 ## TimeSeriesTypeDef
 
@@ -833,14 +738,12 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import TimeSeriesTypeDef
 ```
 
-
 Required fields:
+
 - `TimeSeriesId`: `str`
-- `DimensionList`: `List["DimensionNameValueTypeDef"]`
-- `MetricValueList`: `List[float]`
-
-
-
+- `DimensionList`:
+  `List`\[[DimensionNameValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#dimensionnamevaluetypedef)\]
+- `MetricValueList`: `List`\[`float`\]
 
 ## TimestampColumnTypeDef
 
@@ -848,13 +751,10 @@ Required fields:
 from mypy_boto3_lookoutmetrics.type_defs import TimestampColumnTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ColumnName`: `str`
 - `ColumnFormat`: `str`
-
 
 ## UpdateAnomalyDetectorResponseTypeDef
 
@@ -862,12 +762,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AnomalyDetectorArn`: `str`
 
+- `AnomalyDetectorArn`: `str`
 
 ## UpdateMetricSetResponseTypeDef
 
@@ -875,12 +772,9 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MetricSetArn`: `str`
 
+- `MetricSetArn`: `str`
 
 ## VpcConfigurationTypeDef
 
@@ -888,10 +782,7 @@ Optional fields:
 from mypy_boto3_lookoutmetrics.type_defs import VpcConfigurationTypeDef
 ```
 
-
 Required fields:
-- `SubnetIdList`: `List[str]`
-- `SecurityGroupIdList`: `List[str]`
 
-
-
+- `SubnetIdList`: `List`\[`str`\]
+- `SecurityGroupIdList`: `List`\[`str`\]

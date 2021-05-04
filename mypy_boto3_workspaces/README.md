@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WorkSpaces
 
-Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+Auto-generated documentation for
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+type annotations stubs module
+[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ```bash
 pip install mypy-boto3-workspaces
@@ -19,7 +21,8 @@ pip install mypy-boto3-workspaces
 
 ## WorkSpacesClient
 
-Type annotations for  `boto3.client("workspaces")` as [WorkSpacesClient](./client.md)
+Type annotations for `boto3.client("workspaces")` as
+[WorkSpacesClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_workspaces.client import WorkSpacesClient
 ```
 
-
 WorkSpacesClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_connection_alias](./client.md#associate-connection-alias)
 - [associate_ip_groups](./client.md#associate-ip-groups)
 - [authorize_ip_rules](./client.md#authorize-ip-rules)
@@ -90,10 +91,8 @@ WorkSpacesClient [exceptions](./client.md#exceptions)
 - [update_workspace_bundle](./client.md#update-workspace-bundle)
 - [update_workspace_image_permission](./client.md#update-workspace-image-permission)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InvalidParameterValuesException](./client.md#invalidparametervaluesexception)
@@ -110,14 +109,10 @@ WorkSpacesClient [exceptions](./client.md#exceptions)
 - [UnsupportedWorkspaceConfigurationException](./client.md#unsupportedworkspaceconfigurationexception)
 - [WorkspacesDefaultRoleNotFoundException](./client.md#workspacesdefaultrolenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("workspaces").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("workspaces").get_paginator("...")`.
 
 Can be used directly:
 
@@ -133,11 +128,6 @@ from mypy_boto3_workspaces.paginators import DescribeAccountModificationsPaginat
 - [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
 - [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
 - [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -181,13 +171,10 @@ from mypy_boto3_workspaces.literals import AccessPropertyValue, ...
 - [WorkspaceImageState](./literals.md#workspaceimagestate)
 - [WorkspaceState](./literals.md#workspacestate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

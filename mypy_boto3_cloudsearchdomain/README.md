@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudSearchDomain
 
-Auto-generated documentation for [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
-type annotations stubs module [mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+Auto-generated documentation for
+[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+type annotations stubs module
+[mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 ```bash
 pip install mypy-boto3-cloudsearchdomain
@@ -18,7 +20,8 @@ pip install mypy-boto3-cloudsearchdomain
 
 ## CloudSearchDomainClient
 
-Type annotations for  `boto3.client("cloudsearchdomain")` as [CloudSearchDomainClient](./client.md)
+Type annotations for `boto3.client("cloudsearchdomain")` as
+[CloudSearchDomainClient](./client.md)
 
 Can be used directly:
 
@@ -26,34 +29,21 @@ Can be used directly:
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 ```
 
-
 CloudSearchDomainClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [search](./client.md#search)
 - [suggest](./client.md#suggest)
 - [upload_documents](./client.md#upload-documents)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DocumentServiceException](./client.md#documentserviceexception)
 - [SearchException](./client.md#searchexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -68,13 +58,10 @@ from mypy_boto3_cloudsearchdomain.literals import ContentType, ...
 - [ContentType](./literals.md#contenttype)
 - [QueryParser](./literals.md#queryparser)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

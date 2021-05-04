@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Kendra
 
-Auto-generated documentation for [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
-type annotations stubs module [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+Auto-generated documentation for
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
+type annotations stubs module
+[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ```bash
 pip install mypy-boto3-kendra
@@ -18,7 +20,7 @@ pip install mypy-boto3-kendra
 
 ## KendraClient
 
-Type annotations for  `boto3.client("kendra")` as [KendraClient](./client.md)
+Type annotations for `boto3.client("kendra")` as [KendraClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_kendra.client import KendraClient
 ```
 
-
 KendraClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_delete_document](./client.md#batch-delete-document)
 - [batch_put_document](./client.md#batch-put-document)
 - [can_paginate](./client.md#can-paginate)
@@ -64,10 +64,8 @@ KendraClient [exceptions](./client.md#exceptions)
 - [update_index](./client.md#update-index)
 - [update_thesaurus](./client.md#update-thesaurus)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -79,15 +77,6 @@ KendraClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -135,13 +124,10 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueType, ...
 - [ThesaurusStatus](./literals.md#thesaurusstatus)
 - [UserContextPolicy](./literals.md#usercontextpolicy)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FraudDetector](./README.md) > Literals
 
-Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
-type annotations stubs module [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+Auto-generated documentation for
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+type annotations stubs module
+[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [Literals for boto3 FraudDetector module](#literals-for-boto3-frauddetector-module)
   - [AsyncJobStatus](#asyncjobstatus)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pinpoint](./README.md) > Structures
 
-Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+Auto-generated documentation for
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+type annotations stubs module
+[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [Typed dictionaries for boto3 Pinpoint module](#typed-dictionaries-for-boto3-pinpoint-module)
   - [ADMChannelRequestTypeDef](#admchannelrequesttypedef)
@@ -302,16 +304,14 @@ type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/myp
 from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef
 ```
 
-
 Required fields:
+
 - `ClientId`: `str`
 - `ClientSecret`: `str`
 
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## ADMChannelResponseTypeDef
 
@@ -319,13 +319,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ADMChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -336,21 +335,19 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## ADMMessageTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import ADMMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `ConsolidationKey`: `str`
-- `Data`: `Dict[str, str]`
+- `Data`: `Dict`\[`str`, `str`\]
 - `ExpiresAfter`: `str`
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
@@ -360,10 +357,9 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## APNSChannelRequestTypeDef
 
@@ -371,10 +367,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BundleId`: `str`
 - `Certificate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -383,7 +377,6 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
-
 
 ## APNSChannelResponseTypeDef
 
@@ -391,13 +384,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -409,7 +401,6 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `str`
 - `Version`: `int`
-
 
 ## APNSMessageTypeDef
 
@@ -417,29 +408,27 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `APNSPushType`: `str`
-- `Action`: `Action`
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Badge`: `int`
 - `Body`: `str`
 - `Category`: `str`
 - `CollapseId`: `str`
-- `Data`: `Dict[str, str]`
+- `Data`: `Dict`\[`str`, `str`\]
 - `MediaUrl`: `str`
 - `PreferredAuthenticationMethod`: `str`
 - `Priority`: `str`
 - `RawContent`: `str`
 - `SilentPush`: `bool`
 - `Sound`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `ThreadId`: `str`
 - `TimeToLive`: `int`
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## APNSPushNotificationTemplateTypeDef
 
@@ -447,11 +436,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSPushNotificationTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `MediaUrl`: `str`
 - `RawContent`: `str`
@@ -459,17 +447,14 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
-
 ## APNSSandboxChannelRequestTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import APNSSandboxChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BundleId`: `str`
 - `Certificate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -478,7 +463,6 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
-
 
 ## APNSSandboxChannelResponseTypeDef
 
@@ -486,13 +470,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -504,7 +487,6 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `str`
 - `Version`: `int`
-
 
 ## APNSVoipChannelRequestTypeDef
 
@@ -512,10 +494,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSVoipChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BundleId`: `str`
 - `Certificate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -524,7 +504,6 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
-
 
 ## APNSVoipChannelResponseTypeDef
 
@@ -532,13 +511,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import APNSVoipChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -551,17 +529,14 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## APNSVoipSandboxChannelRequestTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import APNSVoipSandboxChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BundleId`: `str`
 - `Certificate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -571,20 +546,18 @@ Optional fields:
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
 
-
 ## APNSVoipSandboxChannelResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import APNSVoipSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `DefaultAuthenticationMethod`: `str`
@@ -597,22 +570,20 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## ActivitiesResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import ActivitiesResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["ActivityResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[ActivityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#activityresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ActivityResponseTypeDef
 
@@ -620,15 +591,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ActivityResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `CampaignId`: `str`
 - `Id`: `str`
 
-
-
 Optional fields:
+
 - `End`: `str`
 - `Result`: `str`
 - `ScheduledStart`: `str`
@@ -640,28 +610,33 @@ Optional fields:
 - `TotalEndpointCount`: `int`
 - `TreatmentId`: `str`
 
-
 ## ActivityTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import ActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CUSTOM`: `"CustomMessageActivityTypeDef"`
-- `ConditionalSplit`: `"ConditionalSplitActivityTypeDef"`
-- `Description`: `str`
-- `EMAIL`: `"EmailMessageActivityTypeDef"`
-- `Holdout`: `"HoldoutActivityTypeDef"`
-- `MultiCondition`: `"MultiConditionalSplitActivityTypeDef"`
-- `PUSH`: `"PushMessageActivityTypeDef"`
-- `RandomSplit`: `"RandomSplitActivityTypeDef"`
-- `SMS`: `"SMSMessageActivityTypeDef"`
-- `Wait`: `"WaitActivityTypeDef"`
 
+- `CUSTOM`:
+  [CustomMessageActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#custommessageactivitytypedef)
+- `ConditionalSplit`:
+  [ConditionalSplitActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#conditionalsplitactivitytypedef)
+- `Description`: `str`
+- `EMAIL`:
+  [EmailMessageActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailmessageactivitytypedef)
+- `Holdout`:
+  [HoldoutActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#holdoutactivitytypedef)
+- `MultiCondition`:
+  [MultiConditionalSplitActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#multiconditionalsplitactivitytypedef)
+- `PUSH`:
+  [PushMessageActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#pushmessageactivitytypedef)
+- `RandomSplit`:
+  [RandomSplitActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#randomsplitactivitytypedef)
+- `SMS`:
+  [SMSMessageActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smsmessageactivitytypedef)
+- `Wait`:
+  [WaitActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#waitactivitytypedef)
 
 ## AddressConfigurationTypeDef
 
@@ -669,17 +644,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import AddressConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BodyOverride`: `str`
-- `ChannelType`: `ChannelType`
-- `Context`: `Dict[str, str]`
-- `RawContent`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
-- `TitleOverride`: `str`
 
+- `BodyOverride`: `str`
+- `ChannelType`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#channeltype)
+- `Context`: `Dict`\[`str`, `str`\]
+- `RawContent`: `str`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `TitleOverride`: `str`
 
 ## AndroidPushNotificationTemplateTypeDef
 
@@ -687,11 +660,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import AndroidPushNotificationTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -701,26 +673,24 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
-
 ## ApplicationDateRangeKpiResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import ApplicationDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `EndTime`: `datetime`
 - `KpiName`: `str`
-- `KpiResult`: `"BaseKpiResultTypeDef"`
+- `KpiResult`:
+  [BaseKpiResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#basekpiresulttypedef)
 - `StartTime`: `datetime`
 
-
-
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ApplicationResponseTypeDef
 
@@ -728,17 +698,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ApplicationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `Id`: `str`
 - `Name`: `str`
 
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ApplicationSettingsResourceTypeDef
 
@@ -746,18 +714,19 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ApplicationSettingsResourceTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 
-
-
 Optional fields:
-- `CampaignHook`: `"CampaignHookTypeDef"`
-- `LastModifiedDate`: `str`
-- `Limits`: `"CampaignLimitsTypeDef"`
-- `QuietTime`: `"QuietTimeTypeDef"`
 
+- `CampaignHook`:
+  [CampaignHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignhooktypedef)
+- `LastModifiedDate`: `str`
+- `Limits`:
+  [CampaignLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignlimitstypedef)
+- `QuietTime`:
+  [QuietTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#quiettimetypedef)
 
 ## ApplicationsResponseTypeDef
 
@@ -765,13 +734,11 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ApplicationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Item`: `List["ApplicationResponseTypeDef"]`
-- `NextToken`: `str`
 
+- `Item`:
+  `List`\[[ApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationresponsetypedef)\]
+- `NextToken`: `str`
 
 ## AttributeDimensionTypeDef
 
@@ -779,15 +746,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import AttributeDimensionTypeDef
 ```
 
-
 Required fields:
-- `Values`: `List[str]`
 
-
+- `Values`: `List`\[`str`\]
 
 Optional fields:
-- `AttributeType`: `AttributeType`
 
+- `AttributeType`:
+  [AttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#attributetype)
 
 ## AttributesResourceTypeDef
 
@@ -795,16 +761,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import AttributesResourceTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `AttributeType`: `str`
 
-
-
 Optional fields:
-- `Attributes`: `List[str]`
 
+- `Attributes`: `List`\[`str`\]
 
 ## BaiduChannelRequestTypeDef
 
@@ -812,16 +776,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import BaiduChannelRequestTypeDef
 ```
 
-
 Required fields:
+
 - `ApiKey`: `str`
 - `SecretKey`: `str`
 
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## BaiduChannelResponseTypeDef
 
@@ -829,14 +791,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import BaiduChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Credential`: `str`
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -847,20 +808,18 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## BaiduMessageTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import BaiduMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
-- `Data`: `Dict[str, str]`
+- `Data`: `Dict`\[`str`, `str`\]
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -868,11 +827,10 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `TimeToLive`: `int`
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## BaseKpiResultTypeDef
 
@@ -880,12 +838,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import BaseKpiResultTypeDef
 ```
 
-
 Required fields:
-- `Rows`: `List["ResultRowTypeDef"]`
 
-
-
+- `Rows`:
+  `List`\[[ResultRowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#resultrowtypedef)\]
 
 ## CampaignCustomMessageTypeDef
 
@@ -893,12 +849,9 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CampaignCustomMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Data`: `str`
 
+- `Data`: `str`
 
 ## CampaignDateRangeKpiResponseTypeDef
 
@@ -906,20 +859,19 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `CampaignId`: `str`
 - `EndTime`: `datetime`
 - `KpiName`: `str`
-- `KpiResult`: `"BaseKpiResultTypeDef"`
+- `KpiResult`:
+  [BaseKpiResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#basekpiresulttypedef)
 - `StartTime`: `datetime`
 
-
-
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## CampaignEmailMessageTypeDef
 
@@ -927,15 +879,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignEmailMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `FromAddress`: `str`
 - `HtmlBody`: `str`
 - `Title`: `str`
-
 
 ## CampaignEventFilterTypeDef
 
@@ -943,13 +892,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignEventFilterTypeDef
 ```
 
-
 Required fields:
-- `Dimensions`: `"EventDimensionsTypeDef"`
-- `FilterType`: `FilterType`
 
-
-
+- `Dimensions`:
+  [EventDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventdimensionstypedef)
+- `FilterType`:
+  [FilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#filtertype)
 
 ## CampaignHookTypeDef
 
@@ -957,14 +905,12 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CampaignHookTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LambdaFunctionName`: `str`
-- `Mode`: `Mode`
-- `WebUrl`: `str`
 
+- `LambdaFunctionName`: `str`
+- `Mode`:
+  [Mode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#mode)
+- `WebUrl`: `str`
 
 ## CampaignLimitsTypeDef
 
@@ -972,15 +918,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignLimitsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Daily`: `int`
 - `MaximumDuration`: `int`
 - `MessagesPerSecond`: `int`
 - `Total`: `int`
-
 
 ## CampaignResponseTypeDef
 
@@ -988,8 +931,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `Arn`: `str`
 - `CreationDate`: `str`
@@ -998,27 +941,34 @@ Required fields:
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
 
-
-
 Optional fields:
-- `AdditionalTreatments`: `List["TreatmentResourceTypeDef"]`
-- `CustomDeliveryConfiguration`: `"CustomDeliveryConfigurationTypeDef"`
-- `DefaultState`: `"CampaignStateTypeDef"`
+
+- `AdditionalTreatments`:
+  `List`\[[TreatmentResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#treatmentresourcetypedef)\]
+- `CustomDeliveryConfiguration`:
+  [CustomDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#customdeliveryconfigurationtypedef)
+- `DefaultState`:
+  [CampaignStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignstatetypedef)
 - `Description`: `str`
 - `HoldoutPercent`: `int`
-- `Hook`: `"CampaignHookTypeDef"`
+- `Hook`:
+  [CampaignHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignhooktypedef)
 - `IsPaused`: `bool`
-- `Limits`: `"CampaignLimitsTypeDef"`
-- `MessageConfiguration`: `"MessageConfigurationTypeDef"`
+- `Limits`:
+  [CampaignLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignlimitstypedef)
+- `MessageConfiguration`:
+  [MessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageconfigurationtypedef)
 - `Name`: `str`
-- `Schedule`: `"ScheduleTypeDef"`
-- `State`: `"CampaignStateTypeDef"`
-- `tags`: `Dict[str, str]`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
+- `Schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#scheduletypedef)
+- `State`:
+  [CampaignStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignstatetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
 - `Version`: `int`
-
 
 ## CampaignSmsMessageTypeDef
 
@@ -1026,17 +976,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignSmsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
-- `MessageType`: `MessageType`
+- `MessageType`:
+  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#messagetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
 - `EntityId`: `str`
 - `TemplateId`: `str`
-
 
 ## CampaignStateTypeDef
 
@@ -1044,12 +992,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CampaignStatus`: `CampaignStatus`
 
+- `CampaignStatus`:
+  [CampaignStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#campaignstatus)
 
 ## CampaignsResponseTypeDef
 
@@ -1057,15 +1003,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CampaignsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["CampaignResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ChannelResponseTypeDef
 
@@ -1073,10 +1018,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -1087,19 +1030,16 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## ChannelsResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import ChannelsResponseTypeDef
 ```
 
-
 Required fields:
-- `Channels`: `Dict[str, "ChannelResponseTypeDef"]`
 
-
-
+- `Channels`: `Dict`\[`str`,
+  [ChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#channelresponsetypedef)\]
 
 ## ConditionTypeDef
 
@@ -1107,13 +1047,12 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Conditions`: `List["SimpleConditionTypeDef"]`
-- `Operator`: `Operator`
 
+- `Conditions`:
+  `List`\[[SimpleConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleconditiontypedef)\]
+- `Operator`:
+  [Operator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#operator)
 
 ## ConditionalSplitActivityTypeDef
 
@@ -1121,15 +1060,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ConditionalSplitActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Condition`: `"ConditionTypeDef"`
-- `EvaluationWaitTime`: `"WaitTimeTypeDef"`
+
+- `Condition`:
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#conditiontypedef)
+- `EvaluationWaitTime`:
+  [WaitTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#waittimetypedef)
 - `FalseActivity`: `str`
 - `TrueActivity`: `str`
-
 
 ## CreateAppResponseTypeDef
 
@@ -1137,12 +1075,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CreateAppResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationResponse`: `"ApplicationResponseTypeDef"`
 
-
-
+- `ApplicationResponse`:
+  [ApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationresponsetypedef)
 
 ## CreateApplicationRequestTypeDef
 
@@ -1150,15 +1086,13 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateApplicationRequestTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateCampaignResponseTypeDef
 
@@ -1166,12 +1100,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CreateCampaignResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignResponse`: `"CampaignResponseTypeDef"`
 
-
-
+- `CampaignResponse`:
+  [CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)
 
 ## CreateEmailTemplateResponseTypeDef
 
@@ -1179,12 +1111,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateEmailTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `CreateTemplateMessageBody`: `"CreateTemplateMessageBodyTypeDef"`
 
-
-
+- `CreateTemplateMessageBody`:
+  [CreateTemplateMessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createtemplatemessagebodytypedef)
 
 ## CreateExportJobResponseTypeDef
 
@@ -1192,12 +1122,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateExportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ExportJobResponse`: `"ExportJobResponseTypeDef"`
 
-
-
+- `ExportJobResponse`:
+  [ExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobresponsetypedef)
 
 ## CreateImportJobResponseTypeDef
 
@@ -1205,12 +1133,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateImportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ImportJobResponse`: `"ImportJobResponseTypeDef"`
 
-
-
+- `ImportJobResponse`:
+  [ImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobresponsetypedef)
 
 ## CreateJourneyResponseTypeDef
 
@@ -1218,12 +1144,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateJourneyResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyResponse`: `"JourneyResponseTypeDef"`
 
-
-
+- `JourneyResponse`:
+  [JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)
 
 ## CreatePushTemplateResponseTypeDef
 
@@ -1231,12 +1155,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreatePushTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `CreateTemplateMessageBody`: `"CreateTemplateMessageBodyTypeDef"`
 
-
-
+- `CreateTemplateMessageBody`:
+  [CreateTemplateMessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createtemplatemessagebodytypedef)
 
 ## CreateRecommenderConfigurationResponseTypeDef
 
@@ -1244,12 +1166,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateRecommenderConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `RecommenderConfigurationResponse`: `"RecommenderConfigurationResponseTypeDef"`
 
-
-
+- `RecommenderConfigurationResponse`:
+  [RecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recommenderconfigurationresponsetypedef)
 
 ## CreateRecommenderConfigurationTypeDef
 
@@ -1257,15 +1177,14 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateRecommenderConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RecommendationProviderRoleArn`: `str`
 - `RecommendationProviderUri`: `str`
 
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
+
+- `Attributes`: `Dict`\[`str`, `str`\]
 - `Description`: `str`
 - `Name`: `str`
 - `RecommendationProviderIdType`: `str`
@@ -1273,19 +1192,16 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
-
 ## CreateSegmentResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import CreateSegmentResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentResponse`: `"SegmentResponseTypeDef"`
 
-
-
+- `SegmentResponse`:
+  [SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)
 
 ## CreateSmsTemplateResponseTypeDef
 
@@ -1293,12 +1209,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateSmsTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `CreateTemplateMessageBody`: `"CreateTemplateMessageBodyTypeDef"`
 
-
-
+- `CreateTemplateMessageBody`:
+  [CreateTemplateMessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createtemplatemessagebodytypedef)
 
 ## CreateTemplateMessageBodyTypeDef
 
@@ -1306,14 +1220,11 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CreateTemplateMessageBodyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `Message`: `str`
 - `RequestID`: `str`
-
 
 ## CreateVoiceTemplateResponseTypeDef
 
@@ -1321,12 +1232,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CreateVoiceTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `CreateTemplateMessageBody`: `"CreateTemplateMessageBodyTypeDef"`
 
-
-
+- `CreateTemplateMessageBody`:
+  [CreateTemplateMessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createtemplatemessagebodytypedef)
 
 ## CustomDeliveryConfigurationTypeDef
 
@@ -1334,15 +1243,14 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import CustomDeliveryConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `DeliveryUri`: `str`
 
-
-
 Optional fields:
-- `EndpointTypes`: `List[__EndpointTypesElement]`
 
+- `EndpointTypes`:
+  `List`\[[\_\_EndpointTypesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#--endpointtypeselement)\]
 
 ## CustomMessageActivityTypeDef
 
@@ -1350,17 +1258,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import CustomMessageActivityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeliveryUri`: `str`
-- `EndpointTypes`: `List[__EndpointTypesElement]`
-- `MessageConfig`: `"JourneyCustomMessageTypeDef"`
+- `EndpointTypes`:
+  `List`\[[\_\_EndpointTypesElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#--endpointtypeselement)\]
+- `MessageConfig`:
+  [JourneyCustomMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeycustommessagetypedef)
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
-
 
 ## DefaultMessageTypeDef
 
@@ -1368,13 +1275,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import DefaultMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Body`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
 
+- `Body`: `str`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## DefaultPushNotificationMessageTypeDef
 
@@ -1382,18 +1286,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import DefaultPushNotificationMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
-- `Data`: `Dict[str, str]`
+- `Data`: `Dict`\[`str`, `str`\]
 - `SilentPush`: `bool`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## DefaultPushNotificationTemplateTypeDef
 
@@ -1401,16 +1303,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import DefaultPushNotificationTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `Sound`: `str`
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## DeleteAdmChannelResponseTypeDef
 
@@ -1418,12 +1318,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import DeleteAdmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `ADMChannelResponse`: `"ADMChannelResponseTypeDef"`
 
-
-
+- `ADMChannelResponse`:
+  [ADMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#admchannelresponsetypedef)
 
 ## DeleteApnsChannelResponseTypeDef
 
@@ -1431,12 +1329,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteApnsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSChannelResponse`: `"APNSChannelResponseTypeDef"`
 
-
-
+- `APNSChannelResponse`:
+  [APNSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnschannelresponsetypedef)
 
 ## DeleteApnsSandboxChannelResponseTypeDef
 
@@ -1444,12 +1340,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteApnsSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSSandboxChannelResponse`: `"APNSSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSSandboxChannelResponse`:
+  [APNSSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnssandboxchannelresponsetypedef)
 
 ## DeleteApnsVoipChannelResponseTypeDef
 
@@ -1457,12 +1351,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteApnsVoipChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipChannelResponse`: `"APNSVoipChannelResponseTypeDef"`
 
-
-
+- `APNSVoipChannelResponse`:
+  [APNSVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipchannelresponsetypedef)
 
 ## DeleteApnsVoipSandboxChannelResponseTypeDef
 
@@ -1470,12 +1362,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteApnsVoipSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipSandboxChannelResponse`: `"APNSVoipSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSVoipSandboxChannelResponse`:
+  [APNSVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipsandboxchannelresponsetypedef)
 
 ## DeleteAppResponseTypeDef
 
@@ -1483,12 +1373,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteAppResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationResponse`: `"ApplicationResponseTypeDef"`
 
-
-
+- `ApplicationResponse`:
+  [ApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationresponsetypedef)
 
 ## DeleteBaiduChannelResponseTypeDef
 
@@ -1496,12 +1384,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteBaiduChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `BaiduChannelResponse`: `"BaiduChannelResponseTypeDef"`
 
-
-
+- `BaiduChannelResponse`:
+  [BaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#baiduchannelresponsetypedef)
 
 ## DeleteCampaignResponseTypeDef
 
@@ -1509,12 +1395,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteCampaignResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignResponse`: `"CampaignResponseTypeDef"`
 
-
-
+- `CampaignResponse`:
+  [CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)
 
 ## DeleteEmailChannelResponseTypeDef
 
@@ -1522,12 +1406,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteEmailChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `EmailChannelResponse`: `"EmailChannelResponseTypeDef"`
 
-
-
+- `EmailChannelResponse`:
+  [EmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailchannelresponsetypedef)
 
 ## DeleteEmailTemplateResponseTypeDef
 
@@ -1535,12 +1417,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteEmailTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## DeleteEndpointResponseTypeDef
 
@@ -1548,12 +1428,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteEndpointResponseTypeDef
 ```
 
-
 Required fields:
-- `EndpointResponse`: `"EndpointResponseTypeDef"`
 
-
-
+- `EndpointResponse`:
+  [EndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointresponsetypedef)
 
 ## DeleteEventStreamResponseTypeDef
 
@@ -1561,12 +1439,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteEventStreamResponseTypeDef
 ```
 
-
 Required fields:
-- `EventStream`: `"EventStreamTypeDef"`
 
-
-
+- `EventStream`:
+  [EventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventstreamtypedef)
 
 ## DeleteGcmChannelResponseTypeDef
 
@@ -1574,12 +1450,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteGcmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `GCMChannelResponse`: `"GCMChannelResponseTypeDef"`
 
-
-
+- `GCMChannelResponse`:
+  [GCMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gcmchannelresponsetypedef)
 
 ## DeleteJourneyResponseTypeDef
 
@@ -1587,12 +1461,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteJourneyResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyResponse`: `"JourneyResponseTypeDef"`
 
-
-
+- `JourneyResponse`:
+  [JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)
 
 ## DeletePushTemplateResponseTypeDef
 
@@ -1600,12 +1472,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeletePushTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## DeleteRecommenderConfigurationResponseTypeDef
 
@@ -1613,12 +1483,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteRecommenderConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `RecommenderConfigurationResponse`: `"RecommenderConfigurationResponseTypeDef"`
 
-
-
+- `RecommenderConfigurationResponse`:
+  [RecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recommenderconfigurationresponsetypedef)
 
 ## DeleteSegmentResponseTypeDef
 
@@ -1626,12 +1494,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteSegmentResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentResponse`: `"SegmentResponseTypeDef"`
 
-
-
+- `SegmentResponse`:
+  [SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)
 
 ## DeleteSmsChannelResponseTypeDef
 
@@ -1639,12 +1505,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteSmsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `SMSChannelResponse`: `"SMSChannelResponseTypeDef"`
 
-
-
+- `SMSChannelResponse`:
+  [SMSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smschannelresponsetypedef)
 
 ## DeleteSmsTemplateResponseTypeDef
 
@@ -1652,12 +1516,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteSmsTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## DeleteUserEndpointsResponseTypeDef
 
@@ -1665,12 +1527,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteUserEndpointsResponseTypeDef
 ```
 
-
 Required fields:
-- `EndpointsResponse`: `"EndpointsResponseTypeDef"`
 
-
-
+- `EndpointsResponse`:
+  [EndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointsresponsetypedef)
 
 ## DeleteVoiceChannelResponseTypeDef
 
@@ -1678,12 +1538,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteVoiceChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `VoiceChannelResponse`: `"VoiceChannelResponseTypeDef"`
 
-
-
+- `VoiceChannelResponse`:
+  [VoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicechannelresponsetypedef)
 
 ## DeleteVoiceTemplateResponseTypeDef
 
@@ -1691,12 +1549,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DeleteVoiceTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## DirectMessageConfigurationTypeDef
 
@@ -1704,20 +1560,26 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import DirectMessageConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ADMMessage`: `"ADMMessageTypeDef"`
-- `APNSMessage`: `"APNSMessageTypeDef"`
-- `BaiduMessage`: `"BaiduMessageTypeDef"`
-- `DefaultMessage`: `"DefaultMessageTypeDef"`
-- `DefaultPushNotificationMessage`: `"DefaultPushNotificationMessageTypeDef"`
-- `EmailMessage`: `"EmailMessageTypeDef"`
-- `GCMMessage`: `"GCMMessageTypeDef"`
-- `SMSMessage`: `"SMSMessageTypeDef"`
-- `VoiceMessage`: `"VoiceMessageTypeDef"`
 
+- `ADMMessage`:
+  [ADMMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#admmessagetypedef)
+- `APNSMessage`:
+  [APNSMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsmessagetypedef)
+- `BaiduMessage`:
+  [BaiduMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#baidumessagetypedef)
+- `DefaultMessage`:
+  [DefaultMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#defaultmessagetypedef)
+- `DefaultPushNotificationMessage`:
+  [DefaultPushNotificationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#defaultpushnotificationmessagetypedef)
+- `EmailMessage`:
+  [EmailMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailmessagetypedef)
+- `GCMMessage`:
+  [GCMMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gcmmessagetypedef)
+- `SMSMessage`:
+  [SMSMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smsmessagetypedef)
+- `VoiceMessage`:
+  [VoiceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicemessagetypedef)
 
 ## EmailChannelRequestTypeDef
 
@@ -1725,18 +1587,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EmailChannelRequestTypeDef
 ```
 
-
 Required fields:
+
 - `FromAddress`: `str`
 - `Identity`: `str`
 
-
-
 Optional fields:
+
 - `ConfigurationSet`: `str`
 - `Enabled`: `bool`
 - `RoleArn`: `str`
-
 
 ## EmailChannelResponseTypeDef
 
@@ -1744,13 +1604,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EmailChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `ConfigurationSet`: `str`
 - `CreationDate`: `str`
@@ -1766,22 +1625,19 @@ Optional fields:
 - `RoleArn`: `str`
 - `Version`: `int`
 
-
 ## EmailMessageActivityTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import EmailMessageActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageConfig`: `"JourneyEmailMessageTypeDef"`
+
+- `MessageConfig`:
+  [JourneyEmailMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyemailmessagetypedef)
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
-
 
 ## EmailMessageTypeDef
 
@@ -1789,18 +1645,17 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EmailMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `FeedbackForwardingAddress`: `str`
 - `FromAddress`: `str`
-- `RawEmail`: `"RawEmailTypeDef"`
-- `ReplyToAddresses`: `List[str]`
-- `SimpleEmail`: `"SimpleEmailTypeDef"`
-- `Substitutions`: `Dict[str, List[str]]`
-
+- `RawEmail`:
+  [RawEmailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#rawemailtypedef)
+- `ReplyToAddresses`: `List`\[`str`\]
+- `SimpleEmail`:
+  [SimpleEmailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleemailtypedef)
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## EmailTemplateRequestTypeDef
 
@@ -1808,18 +1663,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EmailTemplateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DefaultSubstitutions`: `str`
 - `HtmlPart`: `str`
 - `RecommenderId`: `str`
 - `Subject`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `TextPart`: `str`
-
 
 ## EmailTemplateResponseTypeDef
 
@@ -1827,26 +1679,25 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EmailTemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: `TemplateType`
-
-
+- `TemplateType`:
+  [TemplateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#templatetype)
 
 Optional fields:
+
 - `Arn`: `str`
 - `DefaultSubstitutions`: `str`
 - `HtmlPart`: `str`
 - `RecommenderId`: `str`
 - `Subject`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `TextPart`: `str`
 - `Version`: `str`
-
 
 ## EndpointBatchItemTypeDef
 
@@ -1854,23 +1705,24 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointBatchItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address`: `str`
-- `Attributes`: `Dict[str, List[str]]`
-- `ChannelType`: `ChannelType`
-- `Demographic`: `"EndpointDemographicTypeDef"`
+- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChannelType`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#channeltype)
+- `Demographic`:
+  [EndpointDemographicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
 - `Id`: `str`
-- `Location`: `"EndpointLocationTypeDef"`
-- `Metrics`: `Dict[str, float]`
+- `Location`:
+  [EndpointLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointlocationtypedef)
+- `Metrics`: `Dict`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
-- `User`: `"EndpointUserTypeDef"`
-
+- `User`:
+  [EndpointUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointusertypedef)
 
 ## EndpointBatchRequestTypeDef
 
@@ -1878,12 +1730,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointBatchRequestTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["EndpointBatchItemTypeDef"]`
 
-
-
+- `Item`:
+  `List`\[[EndpointBatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointbatchitemtypedef)\]
 
 ## EndpointDemographicTypeDef
 
@@ -1891,10 +1741,8 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import EndpointDemographicTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppVersion`: `str`
 - `Locale`: `str`
 - `Make`: `str`
@@ -1904,20 +1752,16 @@ Optional fields:
 - `PlatformVersion`: `str`
 - `Timezone`: `str`
 
-
 ## EndpointItemResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import EndpointItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
 - `StatusCode`: `int`
-
 
 ## EndpointLocationTypeDef
 
@@ -1925,10 +1769,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointLocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `City`: `str`
 - `Country`: `str`
 - `Latitude`: `float`
@@ -1936,26 +1778,24 @@ Optional fields:
 - `PostalCode`: `str`
 - `Region`: `str`
 
-
 ## EndpointMessageResultTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import EndpointMessageResultTypeDef
 ```
 
-
 Required fields:
-- `DeliveryStatus`: `DeliveryStatus`
+
+- `DeliveryStatus`:
+  [DeliveryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#deliverystatus)
 - `StatusCode`: `int`
 
-
-
 Optional fields:
+
 - `Address`: `str`
 - `MessageId`: `str`
 - `StatusMessage`: `str`
 - `UpdatedToken`: `str`
-
 
 ## EndpointRequestTypeDef
 
@@ -1963,22 +1803,23 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address`: `str`
-- `Attributes`: `Dict[str, List[str]]`
-- `ChannelType`: `ChannelType`
-- `Demographic`: `"EndpointDemographicTypeDef"`
+- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChannelType`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#channeltype)
+- `Demographic`:
+  [EndpointDemographicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
-- `Location`: `"EndpointLocationTypeDef"`
-- `Metrics`: `Dict[str, float]`
+- `Location`:
+  [EndpointLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointlocationtypedef)
+- `Metrics`: `Dict`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
-- `User`: `"EndpointUserTypeDef"`
-
+- `User`:
+  [EndpointUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointusertypedef)
 
 ## EndpointResponseTypeDef
 
@@ -1986,26 +1827,27 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address`: `str`
 - `ApplicationId`: `str`
-- `Attributes`: `Dict[str, List[str]]`
-- `ChannelType`: `ChannelType`
+- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChannelType`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#channeltype)
 - `CohortId`: `str`
 - `CreationDate`: `str`
-- `Demographic`: `"EndpointDemographicTypeDef"`
+- `Demographic`:
+  [EndpointDemographicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
 - `Id`: `str`
-- `Location`: `"EndpointLocationTypeDef"`
-- `Metrics`: `Dict[str, float]`
+- `Location`:
+  [EndpointLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointlocationtypedef)
+- `Metrics`: `Dict`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
-- `User`: `"EndpointUserTypeDef"`
-
+- `User`:
+  [EndpointUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointusertypedef)
 
 ## EndpointSendConfigurationTypeDef
 
@@ -2013,16 +1855,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointSendConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BodyOverride`: `str`
-- `Context`: `Dict[str, str]`
-- `RawContent`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
-- `TitleOverride`: `str`
 
+- `BodyOverride`: `str`
+- `Context`: `Dict`\[`str`, `str`\]
+- `RawContent`: `str`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
+- `TitleOverride`: `str`
 
 ## EndpointUserTypeDef
 
@@ -2030,13 +1869,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointUserTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserAttributes`: `Dict[str, List[str]]`
-- `UserId`: `str`
 
+- `UserAttributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `UserId`: `str`
 
 ## EndpointsResponseTypeDef
 
@@ -2044,12 +1880,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EndpointsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["EndpointResponseTypeDef"]`
 
-
-
+- `Item`:
+  `List`\[[EndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointresponsetypedef)\]
 
 ## EventConditionTypeDef
 
@@ -2057,13 +1891,11 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import EventConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `"EventDimensionsTypeDef"`
-- `MessageActivity`: `str`
 
+- `Dimensions`:
+  [EventDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventdimensionstypedef)
+- `MessageActivity`: `str`
 
 ## EventDimensionsTypeDef
 
@@ -2071,14 +1903,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventDimensionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, "AttributeDimensionTypeDef"]`
-- `EventType`: `"SetDimensionTypeDef"`
-- `Metrics`: `Dict[str, "MetricDimensionTypeDef"]`
 
+- `Attributes`: `Dict`\[`str`,
+  [AttributeDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#attributedimensiontypedef)\]
+- `EventType`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `Metrics`: `Dict`\[`str`,
+  [MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#metricdimensiontypedef)\]
 
 ## EventFilterTypeDef
 
@@ -2086,13 +1918,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventFilterTypeDef
 ```
 
-
 Required fields:
-- `Dimensions`: `"EventDimensionsTypeDef"`
-- `FilterType`: `FilterType`
 
-
-
+- `Dimensions`:
+  [EventDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventdimensionstypedef)
+- `FilterType`:
+  [FilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#filtertype)
 
 ## EventItemResponseTypeDef
 
@@ -2100,13 +1931,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import EventItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
 - `StatusCode`: `int`
-
 
 ## EventStartConditionTypeDef
 
@@ -2114,13 +1942,11 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventStartConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventFilter`: `"EventFilterTypeDef"`
-- `SegmentId`: `str`
 
+- `EventFilter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventfiltertypedef)
+- `SegmentId`: `str`
 
 ## EventStreamTypeDef
 
@@ -2128,19 +1954,17 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventStreamTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `DestinationStreamArn`: `str`
 - `RoleArn`: `str`
 
-
-
 Optional fields:
+
 - `ExternalId`: `str`
 - `LastModifiedDate`: `str`
 - `LastUpdatedBy`: `str`
-
 
 ## EventTypeDef
 
@@ -2148,23 +1972,22 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventTypeDef
 ```
 
-
 Required fields:
+
 - `EventType`: `str`
 - `Timestamp`: `str`
 
-
-
 Optional fields:
+
 - `AppPackageName`: `str`
 - `AppTitle`: `str`
 - `AppVersionCode`: `str`
-- `Attributes`: `Dict[str, str]`
+- `Attributes`: `Dict`\[`str`, `str`\]
 - `ClientSdkVersion`: `str`
-- `Metrics`: `Dict[str, float]`
+- `Metrics`: `Dict`\[`str`, `float`\]
 - `SdkName`: `str`
-- `Session`: `"SessionTypeDef"`
-
+- `Session`:
+  [SessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#sessiontypedef)
 
 ## EventsBatchTypeDef
 
@@ -2172,13 +1995,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import EventsBatchTypeDef
 ```
 
-
 Required fields:
-- `Endpoint`: `"PublicEndpointTypeDef"`
-- `Events`: `Dict[str, "EventTypeDef"]`
 
-
-
+- `Endpoint`:
+  [PublicEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#publicendpointtypedef)
+- `Events`: `Dict`\[`str`,
+  [EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventtypedef)\]
 
 ## EventsRequestTypeDef
 
@@ -2186,12 +2008,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import EventsRequestTypeDef
 ```
 
-
 Required fields:
-- `BatchItem`: `Dict[str, "EventsBatchTypeDef"]`
 
-
-
+- `BatchItem`: `Dict`\[`str`,
+  [EventsBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventsbatchtypedef)\]
 
 ## EventsResponseTypeDef
 
@@ -2199,12 +2019,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import EventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Results`: `Dict[str, "ItemResponseTypeDef"]`
 
+- `Results`: `Dict`\[`str`,
+  [ItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#itemresponsetypedef)\]
 
 ## ExportJobRequestTypeDef
 
@@ -2212,17 +2030,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ExportJobRequestTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `S3UrlPrefix`: `str`
 
-
-
 Optional fields:
+
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
-
 
 ## ExportJobResourceTypeDef
 
@@ -2230,17 +2046,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ExportJobResourceTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `S3UrlPrefix`: `str`
 
-
-
 Optional fields:
+
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
-
 
 ## ExportJobResponseTypeDef
 
@@ -2248,26 +2062,26 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ExportJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
-- `Definition`: `"ExportJobResourceTypeDef"`
+- `Definition`:
+  [ExportJobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobresourcetypedef)
 - `Id`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#jobstatus)
 - `Type`: `str`
 
-
-
 Optional fields:
+
 - `CompletedPieces`: `int`
 - `CompletionDate`: `str`
 - `FailedPieces`: `int`
-- `Failures`: `List[str]`
+- `Failures`: `List`\[`str`\]
 - `TotalFailures`: `int`
 - `TotalPieces`: `int`
 - `TotalProcessed`: `int`
-
 
 ## ExportJobsResponseTypeDef
 
@@ -2275,15 +2089,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ExportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["ExportJobResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[ExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## GCMChannelRequestTypeDef
 
@@ -2291,15 +2104,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import GCMChannelRequestTypeDef
 ```
 
-
 Required fields:
+
 - `ApiKey`: `str`
 
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## GCMChannelResponseTypeDef
 
@@ -2307,14 +2118,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import GCMChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Credential`: `str`
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -2325,21 +2135,19 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## GCMMessageTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import GCMMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `CollapseKey`: `str`
-- `Data`: `Dict[str, str]`
+- `Data`: `Dict`\[`str`, `str`\]
 - `IconReference`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -2349,11 +2157,10 @@ Optional fields:
 - `SilentPush`: `bool`
 - `SmallImageIconUrl`: `str`
 - `Sound`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `TimeToLive`: `int`
 - `Title`: `str`
 - `Url`: `str`
-
 
 ## GPSCoordinatesTypeDef
 
@@ -2361,13 +2168,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import GPSCoordinatesTypeDef
 ```
 
-
 Required fields:
+
 - `Latitude`: `float`
 - `Longitude`: `float`
-
-
-
 
 ## GPSPointDimensionTypeDef
 
@@ -2375,15 +2179,14 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GPSPointDimensionTypeDef
 ```
 
-
 Required fields:
-- `Coordinates`: `"GPSCoordinatesTypeDef"`
 
-
+- `Coordinates`:
+  [GPSCoordinatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gpscoordinatestypedef)
 
 Optional fields:
-- `RangeInKilometers`: `float`
 
+- `RangeInKilometers`: `float`
 
 ## GetAdmChannelResponseTypeDef
 
@@ -2391,12 +2194,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import GetAdmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `ADMChannelResponse`: `"ADMChannelResponseTypeDef"`
 
-
-
+- `ADMChannelResponse`:
+  [ADMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#admchannelresponsetypedef)
 
 ## GetApnsChannelResponseTypeDef
 
@@ -2404,12 +2205,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApnsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSChannelResponse`: `"APNSChannelResponseTypeDef"`
 
-
-
+- `APNSChannelResponse`:
+  [APNSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnschannelresponsetypedef)
 
 ## GetApnsSandboxChannelResponseTypeDef
 
@@ -2417,12 +2216,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApnsSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSSandboxChannelResponse`: `"APNSSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSSandboxChannelResponse`:
+  [APNSSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnssandboxchannelresponsetypedef)
 
 ## GetApnsVoipChannelResponseTypeDef
 
@@ -2430,12 +2227,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApnsVoipChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipChannelResponse`: `"APNSVoipChannelResponseTypeDef"`
 
-
-
+- `APNSVoipChannelResponse`:
+  [APNSVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipchannelresponsetypedef)
 
 ## GetApnsVoipSandboxChannelResponseTypeDef
 
@@ -2443,12 +2238,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApnsVoipSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipSandboxChannelResponse`: `"APNSVoipSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSVoipSandboxChannelResponse`:
+  [APNSVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipsandboxchannelresponsetypedef)
 
 ## GetAppResponseTypeDef
 
@@ -2456,12 +2249,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetAppResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationResponse`: `"ApplicationResponseTypeDef"`
 
-
-
+- `ApplicationResponse`:
+  [ApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationresponsetypedef)
 
 ## GetApplicationDateRangeKpiResponseTypeDef
 
@@ -2469,12 +2260,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApplicationDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationDateRangeKpiResponse`: `"ApplicationDateRangeKpiResponseTypeDef"`
 
-
-
+- `ApplicationDateRangeKpiResponse`:
+  [ApplicationDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationdaterangekpiresponsetypedef)
 
 ## GetApplicationSettingsResponseTypeDef
 
@@ -2482,12 +2271,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetApplicationSettingsResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationSettingsResource`: `"ApplicationSettingsResourceTypeDef"`
 
-
-
+- `ApplicationSettingsResource`:
+  [ApplicationSettingsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationsettingsresourcetypedef)
 
 ## GetAppsResponseTypeDef
 
@@ -2495,12 +2282,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetAppsResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationsResponse`: `"ApplicationsResponseTypeDef"`
 
-
-
+- `ApplicationsResponse`:
+  [ApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationsresponsetypedef)
 
 ## GetBaiduChannelResponseTypeDef
 
@@ -2508,12 +2293,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetBaiduChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `BaiduChannelResponse`: `"BaiduChannelResponseTypeDef"`
 
-
-
+- `BaiduChannelResponse`:
+  [BaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#baiduchannelresponsetypedef)
 
 ## GetCampaignActivitiesResponseTypeDef
 
@@ -2521,12 +2304,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignActivitiesResponseTypeDef
 ```
 
-
 Required fields:
-- `ActivitiesResponse`: `"ActivitiesResponseTypeDef"`
 
-
-
+- `ActivitiesResponse`:
+  [ActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#activitiesresponsetypedef)
 
 ## GetCampaignDateRangeKpiResponseTypeDef
 
@@ -2534,12 +2315,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignDateRangeKpiResponse`: `"CampaignDateRangeKpiResponseTypeDef"`
 
-
-
+- `CampaignDateRangeKpiResponse`:
+  [CampaignDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaigndaterangekpiresponsetypedef)
 
 ## GetCampaignResponseTypeDef
 
@@ -2547,12 +2326,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignResponse`: `"CampaignResponseTypeDef"`
 
-
-
+- `CampaignResponse`:
+  [CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)
 
 ## GetCampaignVersionResponseTypeDef
 
@@ -2560,12 +2337,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignVersionResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignResponse`: `"CampaignResponseTypeDef"`
 
-
-
+- `CampaignResponse`:
+  [CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)
 
 ## GetCampaignVersionsResponseTypeDef
 
@@ -2573,12 +2348,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignVersionsResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignsResponse`: `"CampaignsResponseTypeDef"`
 
-
-
+- `CampaignsResponse`:
+  [CampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignsresponsetypedef)
 
 ## GetCampaignsResponseTypeDef
 
@@ -2586,12 +2359,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetCampaignsResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignsResponse`: `"CampaignsResponseTypeDef"`
 
-
-
+- `CampaignsResponse`:
+  [CampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignsresponsetypedef)
 
 ## GetChannelsResponseTypeDef
 
@@ -2599,12 +2370,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetChannelsResponseTypeDef
 ```
 
-
 Required fields:
-- `ChannelsResponse`: `"ChannelsResponseTypeDef"`
 
-
-
+- `ChannelsResponse`:
+  [ChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#channelsresponsetypedef)
 
 ## GetEmailChannelResponseTypeDef
 
@@ -2612,12 +2381,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetEmailChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `EmailChannelResponse`: `"EmailChannelResponseTypeDef"`
 
-
-
+- `EmailChannelResponse`:
+  [EmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailchannelresponsetypedef)
 
 ## GetEmailTemplateResponseTypeDef
 
@@ -2625,12 +2392,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetEmailTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `EmailTemplateResponse`: `"EmailTemplateResponseTypeDef"`
 
-
-
+- `EmailTemplateResponse`:
+  [EmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailtemplateresponsetypedef)
 
 ## GetEndpointResponseTypeDef
 
@@ -2638,12 +2403,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetEndpointResponseTypeDef
 ```
 
-
 Required fields:
-- `EndpointResponse`: `"EndpointResponseTypeDef"`
 
-
-
+- `EndpointResponse`:
+  [EndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointresponsetypedef)
 
 ## GetEventStreamResponseTypeDef
 
@@ -2651,12 +2414,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetEventStreamResponseTypeDef
 ```
 
-
 Required fields:
-- `EventStream`: `"EventStreamTypeDef"`
 
-
-
+- `EventStream`:
+  [EventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventstreamtypedef)
 
 ## GetExportJobResponseTypeDef
 
@@ -2664,12 +2425,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetExportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ExportJobResponse`: `"ExportJobResponseTypeDef"`
 
-
-
+- `ExportJobResponse`:
+  [ExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobresponsetypedef)
 
 ## GetExportJobsResponseTypeDef
 
@@ -2677,12 +2436,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetExportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `ExportJobsResponse`: `"ExportJobsResponseTypeDef"`
 
-
-
+- `ExportJobsResponse`:
+  [ExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobsresponsetypedef)
 
 ## GetGcmChannelResponseTypeDef
 
@@ -2690,12 +2447,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetGcmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `GCMChannelResponse`: `"GCMChannelResponseTypeDef"`
 
-
-
+- `GCMChannelResponse`:
+  [GCMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gcmchannelresponsetypedef)
 
 ## GetImportJobResponseTypeDef
 
@@ -2703,12 +2458,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetImportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ImportJobResponse`: `"ImportJobResponseTypeDef"`
 
-
-
+- `ImportJobResponse`:
+  [ImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobresponsetypedef)
 
 ## GetImportJobsResponseTypeDef
 
@@ -2716,12 +2469,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetImportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `ImportJobsResponse`: `"ImportJobsResponseTypeDef"`
 
-
-
+- `ImportJobsResponse`:
+  [ImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobsresponsetypedef)
 
 ## GetJourneyDateRangeKpiResponseTypeDef
 
@@ -2729,12 +2480,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetJourneyDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyDateRangeKpiResponse`: `"JourneyDateRangeKpiResponseTypeDef"`
 
-
-
+- `JourneyDateRangeKpiResponse`:
+  [JourneyDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeydaterangekpiresponsetypedef)
 
 ## GetJourneyExecutionActivityMetricsResponseTypeDef
 
@@ -2742,12 +2491,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetJourneyExecutionActivityMetricsResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyExecutionActivityMetricsResponse`: `"JourneyExecutionActivityMetricsResponseTypeDef"`
 
-
-
+- `JourneyExecutionActivityMetricsResponse`:
+  [JourneyExecutionActivityMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyexecutionactivitymetricsresponsetypedef)
 
 ## GetJourneyExecutionMetricsResponseTypeDef
 
@@ -2755,12 +2502,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetJourneyExecutionMetricsResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyExecutionMetricsResponse`: `"JourneyExecutionMetricsResponseTypeDef"`
 
-
-
+- `JourneyExecutionMetricsResponse`:
+  [JourneyExecutionMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyexecutionmetricsresponsetypedef)
 
 ## GetJourneyResponseTypeDef
 
@@ -2768,12 +2513,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetJourneyResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyResponse`: `"JourneyResponseTypeDef"`
 
-
-
+- `JourneyResponse`:
+  [JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)
 
 ## GetPushTemplateResponseTypeDef
 
@@ -2781,12 +2524,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetPushTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `PushNotificationTemplateResponse`: `"PushNotificationTemplateResponseTypeDef"`
 
-
-
+- `PushNotificationTemplateResponse`:
+  [PushNotificationTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#pushnotificationtemplateresponsetypedef)
 
 ## GetRecommenderConfigurationResponseTypeDef
 
@@ -2794,12 +2535,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetRecommenderConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `RecommenderConfigurationResponse`: `"RecommenderConfigurationResponseTypeDef"`
 
-
-
+- `RecommenderConfigurationResponse`:
+  [RecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recommenderconfigurationresponsetypedef)
 
 ## GetRecommenderConfigurationsResponseTypeDef
 
@@ -2807,12 +2546,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetRecommenderConfigurationsResponseTypeDef
 ```
 
-
 Required fields:
-- `ListRecommenderConfigurationsResponse`: `"ListRecommenderConfigurationsResponseTypeDef"`
 
-
-
+- `ListRecommenderConfigurationsResponse`:
+  [ListRecommenderConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#listrecommenderconfigurationsresponsetypedef)
 
 ## GetSegmentExportJobsResponseTypeDef
 
@@ -2820,12 +2557,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentExportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `ExportJobsResponse`: `"ExportJobsResponseTypeDef"`
 
-
-
+- `ExportJobsResponse`:
+  [ExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobsresponsetypedef)
 
 ## GetSegmentImportJobsResponseTypeDef
 
@@ -2833,12 +2568,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentImportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `ImportJobsResponse`: `"ImportJobsResponseTypeDef"`
 
-
-
+- `ImportJobsResponse`:
+  [ImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobsresponsetypedef)
 
 ## GetSegmentResponseTypeDef
 
@@ -2846,12 +2579,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentResponse`: `"SegmentResponseTypeDef"`
 
-
-
+- `SegmentResponse`:
+  [SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)
 
 ## GetSegmentVersionResponseTypeDef
 
@@ -2859,12 +2590,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentVersionResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentResponse`: `"SegmentResponseTypeDef"`
 
-
-
+- `SegmentResponse`:
+  [SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)
 
 ## GetSegmentVersionsResponseTypeDef
 
@@ -2872,12 +2601,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentVersionsResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentsResponse`: `"SegmentsResponseTypeDef"`
 
-
-
+- `SegmentsResponse`:
+  [SegmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentsresponsetypedef)
 
 ## GetSegmentsResponseTypeDef
 
@@ -2885,12 +2612,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSegmentsResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentsResponse`: `"SegmentsResponseTypeDef"`
 
-
-
+- `SegmentsResponse`:
+  [SegmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentsresponsetypedef)
 
 ## GetSmsChannelResponseTypeDef
 
@@ -2898,12 +2623,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSmsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `SMSChannelResponse`: `"SMSChannelResponseTypeDef"`
 
-
-
+- `SMSChannelResponse`:
+  [SMSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smschannelresponsetypedef)
 
 ## GetSmsTemplateResponseTypeDef
 
@@ -2911,12 +2634,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetSmsTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `SMSTemplateResponse`: `"SMSTemplateResponseTypeDef"`
 
-
-
+- `SMSTemplateResponse`:
+  [SMSTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smstemplateresponsetypedef)
 
 ## GetUserEndpointsResponseTypeDef
 
@@ -2924,12 +2645,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetUserEndpointsResponseTypeDef
 ```
 
-
 Required fields:
-- `EndpointsResponse`: `"EndpointsResponseTypeDef"`
 
-
-
+- `EndpointsResponse`:
+  [EndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointsresponsetypedef)
 
 ## GetVoiceChannelResponseTypeDef
 
@@ -2937,12 +2656,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetVoiceChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `VoiceChannelResponse`: `"VoiceChannelResponseTypeDef"`
 
-
-
+- `VoiceChannelResponse`:
+  [VoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicechannelresponsetypedef)
 
 ## GetVoiceTemplateResponseTypeDef
 
@@ -2950,12 +2667,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import GetVoiceTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `VoiceTemplateResponse`: `"VoiceTemplateResponseTypeDef"`
 
-
-
+- `VoiceTemplateResponse`:
+  [VoiceTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicetemplateresponsetypedef)
 
 ## HoldoutActivityTypeDef
 
@@ -2963,15 +2678,13 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import HoldoutActivityTypeDef
 ```
 
-
 Required fields:
+
 - `Percentage`: `int`
 
-
-
 Optional fields:
-- `NextActivity`: `str`
 
+- `NextActivity`: `str`
 
 ## ImportJobRequestTypeDef
 
@@ -2979,21 +2692,20 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ImportJobRequestTypeDef
 ```
 
-
 Required fields:
-- `Format`: `Format`
+
+- `Format`:
+  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#format)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 
-
-
 Optional fields:
+
 - `DefineSegment`: `bool`
 - `ExternalId`: `str`
 - `RegisterEndpoints`: `bool`
 - `SegmentId`: `str`
 - `SegmentName`: `str`
-
 
 ## ImportJobResourceTypeDef
 
@@ -3001,21 +2713,20 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ImportJobResourceTypeDef
 ```
 
-
 Required fields:
-- `Format`: `Format`
+
+- `Format`:
+  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#format)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 
-
-
 Optional fields:
+
 - `DefineSegment`: `bool`
 - `ExternalId`: `str`
 - `RegisterEndpoints`: `bool`
 - `SegmentId`: `str`
 - `SegmentName`: `str`
-
 
 ## ImportJobResponseTypeDef
 
@@ -3023,26 +2734,26 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ImportJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
-- `Definition`: `"ImportJobResourceTypeDef"`
+- `Definition`:
+  [ImportJobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobresourcetypedef)
 - `Id`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#jobstatus)
 - `Type`: `str`
 
-
-
 Optional fields:
+
 - `CompletedPieces`: `int`
 - `CompletionDate`: `str`
 - `FailedPieces`: `int`
-- `Failures`: `List[str]`
+- `Failures`: `List`\[`str`\]
 - `TotalFailures`: `int`
 - `TotalPieces`: `int`
 - `TotalProcessed`: `int`
-
 
 ## ImportJobsResponseTypeDef
 
@@ -3050,15 +2761,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ImportJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["ImportJobResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[ImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ItemResponseTypeDef
 
@@ -3066,13 +2776,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointItemResponse`: `"EndpointItemResponseTypeDef"`
-- `EventsItemResponse`: `Dict[str, "EventItemResponseTypeDef"]`
 
+- `EndpointItemResponse`:
+  [EndpointItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointitemresponsetypedef)
+- `EventsItemResponse`: `Dict`\[`str`,
+  [EventItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventitemresponsetypedef)\]
 
 ## JourneyCustomMessageTypeDef
 
@@ -3080,12 +2789,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyCustomMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Data`: `str`
 
+- `Data`: `str`
 
 ## JourneyDateRangeKpiResponseTypeDef
 
@@ -3093,20 +2799,19 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyDateRangeKpiResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `EndTime`: `datetime`
 - `JourneyId`: `str`
 - `KpiName`: `str`
-- `KpiResult`: `"BaseKpiResultTypeDef"`
+- `KpiResult`:
+  [BaseKpiResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#basekpiresulttypedef)
 - `StartTime`: `datetime`
 
-
-
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## JourneyEmailMessageTypeDef
 
@@ -3114,12 +2819,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyEmailMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FromAddress`: `str`
 
+- `FromAddress`: `str`
 
 ## JourneyExecutionActivityMetricsResponseTypeDef
 
@@ -3127,17 +2829,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyExecutionActivityMetricsResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ActivityType`: `str`
 - `ApplicationId`: `str`
 - `JourneyActivityId`: `str`
 - `JourneyId`: `str`
 - `LastEvaluatedTime`: `str`
-- `Metrics`: `Dict[str, str]`
-
-
-
+- `Metrics`: `Dict`\[`str`, `str`\]
 
 ## JourneyExecutionMetricsResponseTypeDef
 
@@ -3145,15 +2844,12 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import JourneyExecutionMetricsResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `JourneyId`: `str`
 - `LastEvaluatedTime`: `str`
-- `Metrics`: `Dict[str, str]`
-
-
-
+- `Metrics`: `Dict`\[`str`, `str`\]
 
 ## JourneyLimitsTypeDef
 
@@ -3161,15 +2857,12 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import JourneyLimitsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DailyCap`: `int`
 - `EndpointReentryCap`: `int`
 - `MessagesPerSecond`: `int`
 - `EndpointReentryInterval`: `str`
-
 
 ## JourneyPushMessageTypeDef
 
@@ -3177,12 +2870,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyPushMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimeToLive`: `str`
 
+- `TimeToLive`: `str`
 
 ## JourneyResponseTypeDef
 
@@ -3190,30 +2880,34 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `Id`: `str`
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Activities`: `Dict[str, "ActivityTypeDef"]`
+
+- `Activities`: `Dict`\[`str`,
+  [ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#activitytypedef)\]
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
-- `Limits`: `"JourneyLimitsTypeDef"`
+- `Limits`:
+  [JourneyLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeylimitstypedef)
 - `LocalTime`: `bool`
-- `QuietTime`: `"QuietTimeTypeDef"`
+- `QuietTime`:
+  [QuietTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#quiettimetypedef)
 - `RefreshFrequency`: `str`
-- `Schedule`: `"JourneyScheduleTypeDef"`
+- `Schedule`:
+  [JourneyScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyscheduletypedef)
 - `StartActivity`: `str`
-- `StartCondition`: `"StartConditionTypeDef"`
-- `State`: `State`
-- `tags`: `Dict[str, str]`
+- `StartCondition`:
+  [StartConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#startconditiontypedef)
+- `State`:
+  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#state)
+- `tags`: `Dict`\[`str`, `str`\]
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
-
 
 ## JourneySMSMessageTypeDef
 
@@ -3221,16 +2915,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneySMSMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageType`: `MessageType`
+
+- `MessageType`:
+  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#messagetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
 - `EntityId`: `str`
 - `TemplateId`: `str`
-
 
 ## JourneyScheduleTypeDef
 
@@ -3238,14 +2930,11 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyScheduleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndTime`: `datetime`
 - `StartTime`: `datetime`
 - `Timezone`: `str`
-
 
 ## JourneyStateRequestTypeDef
 
@@ -3253,12 +2942,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneyStateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `State`
 
+- `State`:
+  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#state)
 
 ## JourneysResponseTypeDef
 
@@ -3266,15 +2953,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import JourneysResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["JourneyResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListJourneysResponseTypeDef
 
@@ -3282,12 +2968,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ListJourneysResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneysResponse`: `"JourneysResponseTypeDef"`
 
-
-
+- `JourneysResponse`:
+  [JourneysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeysresponsetypedef)
 
 ## ListRecommenderConfigurationsResponseTypeDef
 
@@ -3295,15 +2979,14 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ListRecommenderConfigurationsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["RecommenderConfigurationResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[RecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recommenderconfigurationresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -3311,12 +2994,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
 Required fields:
-- `TagsModel`: `"TagsModelTypeDef"`
 
-
-
+- `TagsModel`:
+  [TagsModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#tagsmodeltypedef)
 
 ## ListTemplateVersionsResponseTypeDef
 
@@ -3324,12 +3005,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ListTemplateVersionsResponseTypeDef
 ```
 
-
 Required fields:
-- `TemplateVersionsResponse`: `"TemplateVersionsResponseTypeDef"`
 
-
-
+- `TemplateVersionsResponse`:
+  [TemplateVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateversionsresponsetypedef)
 
 ## ListTemplatesResponseTypeDef
 
@@ -3337,12 +3016,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ListTemplatesResponseTypeDef
 ```
 
-
 Required fields:
-- `TemplatesResponse`: `"TemplatesResponseTypeDef"`
 
-
-
+- `TemplatesResponse`:
+  [TemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templatesresponsetypedef)
 
 ## MessageBodyTypeDef
 
@@ -3350,13 +3027,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import MessageBodyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
 - `RequestID`: `str`
-
 
 ## MessageConfigurationTypeDef
 
@@ -3364,19 +3038,24 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MessageConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ADMMessage`: `"MessageTypeDef"`
-- `APNSMessage`: `"MessageTypeDef"`
-- `BaiduMessage`: `"MessageTypeDef"`
-- `CustomMessage`: `"CampaignCustomMessageTypeDef"`
-- `DefaultMessage`: `"MessageTypeDef"`
-- `EmailMessage`: `"CampaignEmailMessageTypeDef"`
-- `GCMMessage`: `"MessageTypeDef"`
-- `SMSMessage`: `"CampaignSmsMessageTypeDef"`
 
+- `ADMMessage`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagetypedef)
+- `APNSMessage`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagetypedef)
+- `BaiduMessage`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagetypedef)
+- `CustomMessage`:
+  [CampaignCustomMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaigncustommessagetypedef)
+- `DefaultMessage`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagetypedef)
+- `EmailMessage`:
+  [CampaignEmailMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignemailmessagetypedef)
+- `GCMMessage`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagetypedef)
+- `SMSMessage`:
+  [CampaignSmsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignsmsmessagetypedef)
 
 ## MessageRequestTypeDef
 
@@ -3384,19 +3063,21 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MessageRequestTypeDef
 ```
 
-
 Required fields:
-- `MessageConfiguration`: `"DirectMessageConfigurationTypeDef"`
 
-
+- `MessageConfiguration`:
+  [DirectMessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#directmessageconfigurationtypedef)
 
 Optional fields:
-- `Addresses`: `Dict[str, "AddressConfigurationTypeDef"]`
-- `Context`: `Dict[str, str]`
-- `Endpoints`: `Dict[str, "EndpointSendConfigurationTypeDef"]`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
-- `TraceId`: `str`
 
+- `Addresses`: `Dict`\[`str`,
+  [AddressConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#addressconfigurationtypedef)\]
+- `Context`: `Dict`\[`str`, `str`\]
+- `Endpoints`: `Dict`\[`str`,
+  [EndpointSendConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointsendconfigurationtypedef)\]
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
+- `TraceId`: `str`
 
 ## MessageResponseTypeDef
 
@@ -3404,17 +3085,17 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MessageResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 
-
-
 Optional fields:
-- `EndpointResult`: `Dict[str, "EndpointMessageResultTypeDef"]`
-- `RequestId`: `str`
-- `Result`: `Dict[str, "MessageResultTypeDef"]`
 
+- `EndpointResult`: `Dict`\[`str`,
+  [EndpointMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointmessageresulttypedef)\]
+- `RequestId`: `str`
+- `Result`: `Dict`\[`str`,
+  [MessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageresulttypedef)\]
 
 ## MessageResultTypeDef
 
@@ -3422,18 +3103,17 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MessageResultTypeDef
 ```
 
-
 Required fields:
-- `DeliveryStatus`: `DeliveryStatus`
+
+- `DeliveryStatus`:
+  [DeliveryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#deliverystatus)
 - `StatusCode`: `int`
 
-
-
 Optional fields:
+
 - `MessageId`: `str`
 - `StatusMessage`: `str`
 - `UpdatedToken`: `str`
-
 
 ## MessageTypeDef
 
@@ -3441,11 +3121,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `Action`
+
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#action)
 - `Body`: `str`
 - `ImageIconUrl`: `str`
 - `ImageSmallIconUrl`: `str`
@@ -3458,20 +3137,16 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
-
 ## MetricDimensionTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import MetricDimensionTypeDef
 ```
 
-
 Required fields:
+
 - `ComparisonOperator`: `str`
 - `Value`: `float`
-
-
-
 
 ## MultiConditionalBranchTypeDef
 
@@ -3479,13 +3154,11 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import MultiConditionalBranchTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Condition`: `"SimpleConditionTypeDef"`
-- `NextActivity`: `str`
 
+- `Condition`:
+  [SimpleConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleconditiontypedef)
+- `NextActivity`: `str`
 
 ## MultiConditionalSplitActivityTypeDef
 
@@ -3493,14 +3166,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import MultiConditionalSplitActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Branches`: `List["MultiConditionalBranchTypeDef"]`
-- `DefaultActivity`: `str`
-- `EvaluationWaitTime`: `"WaitTimeTypeDef"`
 
+- `Branches`:
+  `List`\[[MultiConditionalBranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#multiconditionalbranchtypedef)\]
+- `DefaultActivity`: `str`
+- `EvaluationWaitTime`:
+  [WaitTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#waittimetypedef)
 
 ## NumberValidateRequestTypeDef
 
@@ -3508,13 +3180,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import NumberValidateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IsoCountryCode`: `str`
 - `PhoneNumber`: `str`
-
 
 ## NumberValidateResponseTypeDef
 
@@ -3522,10 +3191,8 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import NumberValidateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Carrier`: `str`
 - `City`: `str`
 - `CleansedPhoneNumberE164`: `str`
@@ -3541,19 +3208,16 @@ Optional fields:
 - `Timezone`: `str`
 - `ZipCode`: `str`
 
-
 ## PhoneNumberValidateResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import PhoneNumberValidateResponseTypeDef
 ```
 
-
 Required fields:
-- `NumberValidateResponse`: `"NumberValidateResponseTypeDef"`
 
-
-
+- `NumberValidateResponse`:
+  [NumberValidateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#numbervalidateresponsetypedef)
 
 ## PublicEndpointTypeDef
 
@@ -3561,22 +3225,23 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import PublicEndpointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address`: `str`
-- `Attributes`: `Dict[str, List[str]]`
-- `ChannelType`: `ChannelType`
-- `Demographic`: `"EndpointDemographicTypeDef"`
+- `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChannelType`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#channeltype)
+- `Demographic`:
+  [EndpointDemographicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointdemographictypedef)
 - `EffectiveDate`: `str`
 - `EndpointStatus`: `str`
-- `Location`: `"EndpointLocationTypeDef"`
-- `Metrics`: `Dict[str, float]`
+- `Location`:
+  [EndpointLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointlocationtypedef)
+- `Metrics`: `Dict`\[`str`, `float`\]
 - `OptOut`: `str`
 - `RequestId`: `str`
-- `User`: `"EndpointUserTypeDef"`
-
+- `User`:
+  [EndpointUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointusertypedef)
 
 ## PushMessageActivityTypeDef
 
@@ -3584,15 +3249,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import PushMessageActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageConfig`: `"JourneyPushMessageTypeDef"`
+
+- `MessageConfig`:
+  [JourneyPushMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeypushmessagetypedef)
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
-
 
 ## PushNotificationTemplateRequestTypeDef
 
@@ -3600,20 +3263,22 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import PushNotificationTemplateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ADM`: `"AndroidPushNotificationTemplateTypeDef"`
-- `APNS`: `"APNSPushNotificationTemplateTypeDef"`
-- `Baidu`: `"AndroidPushNotificationTemplateTypeDef"`
-- `Default`: `"DefaultPushNotificationTemplateTypeDef"`
-- `DefaultSubstitutions`: `str`
-- `GCM`: `"AndroidPushNotificationTemplateTypeDef"`
-- `RecommenderId`: `str`
-- `tags`: `Dict[str, str]`
-- `TemplateDescription`: `str`
 
+- `ADM`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
+- `APNS`:
+  [APNSPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnspushnotificationtemplatetypedef)
+- `Baidu`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
+- `Default`:
+  [DefaultPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#defaultpushnotificationtemplatetypedef)
+- `DefaultSubstitutions`: `str`
+- `GCM`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
+- `RecommenderId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `TemplateDescription`: `str`
 
 ## PushNotificationTemplateResponseTypeDef
 
@@ -3621,28 +3286,32 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import PushNotificationTemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: `TemplateType`
-
-
+- `TemplateType`:
+  [TemplateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#templatetype)
 
 Optional fields:
-- `ADM`: `"AndroidPushNotificationTemplateTypeDef"`
-- `APNS`: `"APNSPushNotificationTemplateTypeDef"`
+
+- `ADM`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
+- `APNS`:
+  [APNSPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnspushnotificationtemplatetypedef)
 - `Arn`: `str`
-- `Baidu`: `"AndroidPushNotificationTemplateTypeDef"`
-- `Default`: `"DefaultPushNotificationTemplateTypeDef"`
+- `Baidu`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
+- `Default`:
+  [DefaultPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#defaultpushnotificationtemplatetypedef)
 - `DefaultSubstitutions`: `str`
-- `GCM`: `"AndroidPushNotificationTemplateTypeDef"`
+- `GCM`:
+  [AndroidPushNotificationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#androidpushnotificationtemplatetypedef)
 - `RecommenderId`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `Version`: `str`
-
 
 ## PutEventStreamResponseTypeDef
 
@@ -3650,12 +3319,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import PutEventStreamResponseTypeDef
 ```
 
-
 Required fields:
-- `EventStream`: `"EventStreamTypeDef"`
 
-
-
+- `EventStream`:
+  [EventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventstreamtypedef)
 
 ## PutEventsResponseTypeDef
 
@@ -3663,12 +3330,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import PutEventsResponseTypeDef
 ```
 
-
 Required fields:
-- `EventsResponse`: `"EventsResponseTypeDef"`
 
-
-
+- `EventsResponse`:
+  [EventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventsresponsetypedef)
 
 ## QuietTimeTypeDef
 
@@ -3676,13 +3341,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import QuietTimeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `End`: `str`
 - `Start`: `str`
-
 
 ## RandomSplitActivityTypeDef
 
@@ -3690,12 +3352,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import RandomSplitActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Branches`: `List["RandomSplitEntryTypeDef"]`
 
+- `Branches`:
+  `List`\[[RandomSplitEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#randomsplitentrytypedef)\]
 
 ## RandomSplitEntryTypeDef
 
@@ -3703,13 +3363,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import RandomSplitEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextActivity`: `str`
 - `Percentage`: `int`
-
 
 ## RawEmailTypeDef
 
@@ -3717,12 +3374,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import RawEmailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Data`: `Union[bytes, IO[bytes]]`
 
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## RecencyDimensionTypeDef
 
@@ -3730,13 +3384,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import RecencyDimensionTypeDef
 ```
 
-
 Required fields:
-- `Duration`: `Duration`
-- `RecencyType`: `RecencyType`
 
-
-
+- `Duration`:
+  [Duration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#duration)
+- `RecencyType`:
+  [RecencyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#recencytype)
 
 ## RecommenderConfigurationResponseTypeDef
 
@@ -3744,18 +3397,17 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import RecommenderConfigurationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `Id`: `str`
 - `LastModifiedDate`: `str`
 - `RecommendationProviderRoleArn`: `str`
 - `RecommendationProviderUri`: `str`
 
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
+
+- `Attributes`: `Dict`\[`str`, `str`\]
 - `Description`: `str`
 - `Name`: `str`
 - `RecommendationProviderIdType`: `str`
@@ -3763,19 +3415,16 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
-
 ## RemoveAttributesResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import RemoveAttributesResponseTypeDef
 ```
 
-
 Required fields:
-- `AttributesResource`: `"AttributesResourceTypeDef"`
 
-
-
+- `AttributesResource`:
+  [AttributesResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#attributesresourcetypedef)
 
 ## ResultRowTypeDef
 
@@ -3783,13 +3432,12 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ResultRowTypeDef
 ```
 
-
 Required fields:
-- `GroupedBys`: `List["ResultRowValueTypeDef"]`
-- `Values`: `List["ResultRowValueTypeDef"]`
 
-
-
+- `GroupedBys`:
+  `List`\[[ResultRowValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#resultrowvaluetypedef)\]
+- `Values`:
+  `List`\[[ResultRowValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#resultrowvaluetypedef)\]
 
 ## ResultRowValueTypeDef
 
@@ -3797,14 +3445,11 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import ResultRowValueTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Type`: `str`
 - `Value`: `str`
-
-
-
 
 ## SMSChannelRequestTypeDef
 
@@ -3812,14 +3457,11 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import SMSChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Enabled`: `bool`
 - `SenderId`: `str`
 - `ShortCode`: `str`
-
 
 ## SMSChannelResponseTypeDef
 
@@ -3827,13 +3469,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SMSChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -3848,22 +3489,19 @@ Optional fields:
 - `TransactionalMessagesPerSecond`: `int`
 - `Version`: `int`
 
-
 ## SMSMessageActivityTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import SMSMessageActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageConfig`: `"JourneySMSMessageTypeDef"`
+
+- `MessageConfig`:
+  [JourneySMSMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeysmsmessagetypedef)
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
-
 
 ## SMSMessageTypeDef
 
@@ -3871,20 +3509,18 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SMSMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `Keyword`: `str`
 - `MediaUrl`: `str`
-- `MessageType`: `MessageType`
+- `MessageType`:
+  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#messagetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `EntityId`: `str`
 - `TemplateId`: `str`
-
 
 ## SMSTemplateRequestTypeDef
 
@@ -3892,16 +3528,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SMSTemplateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `RecommenderId`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
-
 
 ## SMSTemplateResponseTypeDef
 
@@ -3909,24 +3542,23 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SMSTemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: `TemplateType`
-
-
+- `TemplateType`:
+  [TemplateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#templatetype)
 
 Optional fields:
+
 - `Arn`: `str`
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `RecommenderId`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `Version`: `str`
-
 
 ## ScheduleTypeDef
 
@@ -3934,20 +3566,21 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import ScheduleTypeDef
 ```
 
-
 Required fields:
+
 - `StartTime`: `str`
 
-
-
 Optional fields:
-- `EndTime`: `str`
-- `EventFilter`: `"CampaignEventFilterTypeDef"`
-- `Frequency`: `Frequency`
-- `IsLocalTime`: `bool`
-- `QuietTime`: `"QuietTimeTypeDef"`
-- `Timezone`: `str`
 
+- `EndTime`: `str`
+- `EventFilter`:
+  [CampaignEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaigneventfiltertypedef)
+- `Frequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#frequency)
+- `IsLocalTime`: `bool`
+- `QuietTime`:
+  [QuietTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#quiettimetypedef)
+- `Timezone`: `str`
 
 ## SegmentBehaviorsTypeDef
 
@@ -3955,12 +3588,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentBehaviorsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Recency`: `"RecencyDimensionTypeDef"`
 
+- `Recency`:
+  [RecencyDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recencydimensiontypedef)
 
 ## SegmentConditionTypeDef
 
@@ -3968,12 +3599,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentConditionTypeDef
 ```
 
-
 Required fields:
+
 - `SegmentId`: `str`
-
-
-
 
 ## SegmentDemographicsTypeDef
 
@@ -3981,17 +3609,20 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import SegmentDemographicsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppVersion`: `"SetDimensionTypeDef"`
-- `Channel`: `"SetDimensionTypeDef"`
-- `DeviceType`: `"SetDimensionTypeDef"`
-- `Make`: `"SetDimensionTypeDef"`
-- `Model`: `"SetDimensionTypeDef"`
-- `Platform`: `"SetDimensionTypeDef"`
 
+- `AppVersion`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `Channel`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `DeviceType`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `Make`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `Model`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `Platform`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
 
 ## SegmentDimensionsTypeDef
 
@@ -3999,17 +3630,20 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentDimensionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, "AttributeDimensionTypeDef"]`
-- `Behavior`: `"SegmentBehaviorsTypeDef"`
-- `Demographic`: `"SegmentDemographicsTypeDef"`
-- `Location`: `"SegmentLocationTypeDef"`
-- `Metrics`: `Dict[str, "MetricDimensionTypeDef"]`
-- `UserAttributes`: `Dict[str, "AttributeDimensionTypeDef"]`
 
+- `Attributes`: `Dict`\[`str`,
+  [AttributeDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#attributedimensiontypedef)\]
+- `Behavior`:
+  [SegmentBehaviorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentbehaviorstypedef)
+- `Demographic`:
+  [SegmentDemographicsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentdemographicstypedef)
+- `Location`:
+  [SegmentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentlocationtypedef)
+- `Metrics`: `Dict`\[`str`,
+  [MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#metricdimensiontypedef)\]
+- `UserAttributes`: `Dict`\[`str`,
+  [AttributeDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#attributedimensiontypedef)\]
 
 ## SegmentGroupListTypeDef
 
@@ -4017,13 +3651,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentGroupListTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Groups`: `List["SegmentGroupTypeDef"]`
-- `Include`: `Include`
 
+- `Groups`:
+  `List`\[[SegmentGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentgrouptypedef)\]
+- `Include`:
+  [Include](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#include)
 
 ## SegmentGroupTypeDef
 
@@ -4031,15 +3664,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentGroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `List["SegmentDimensionsTypeDef"]`
-- `SourceSegments`: `List["SegmentReferenceTypeDef"]`
-- `SourceType`: `SourceType`
-- `Type`: `TypeType`
 
+- `Dimensions`:
+  `List`\[[SegmentDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentdimensionstypedef)\]
+- `SourceSegments`:
+  `List`\[[SegmentReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentreferencetypedef)\]
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#sourcetype)
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#typetype)
 
 ## SegmentImportResourceTypeDef
 
@@ -4047,19 +3681,18 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentImportResourceTypeDef
 ```
 
-
 Required fields:
+
 - `ExternalId`: `str`
-- `Format`: `Format`
+- `Format`:
+  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#format)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 - `Size`: `int`
 
-
-
 Optional fields:
-- `ChannelCounts`: `Dict[str, int]`
 
+- `ChannelCounts`: `Dict`\[`str`, `int`\]
 
 ## SegmentLocationTypeDef
 
@@ -4067,13 +3700,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Country`: `"SetDimensionTypeDef"`
-- `GPSPoint`: `"GPSPointDimensionTypeDef"`
 
+- `Country`:
+  [SetDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#setdimensiontypedef)
+- `GPSPoint`:
+  [GPSPointDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gpspointdimensiontypedef)
 
 ## SegmentReferenceTypeDef
 
@@ -4081,15 +3713,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentReferenceTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 
-
-
 Optional fields:
-- `Version`: `int`
 
+- `Version`: `int`
 
 ## SegmentResponseTypeDef
 
@@ -4097,25 +3727,27 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 - `Arn`: `str`
 - `CreationDate`: `str`
 - `Id`: `str`
-- `SegmentType`: `SegmentType`
-
-
+- `SegmentType`:
+  [SegmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#segmenttype)
 
 Optional fields:
-- `Dimensions`: `"SegmentDimensionsTypeDef"`
-- `ImportDefinition`: `"SegmentImportResourceTypeDef"`
+
+- `Dimensions`:
+  [SegmentDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentdimensionstypedef)
+- `ImportDefinition`:
+  [SegmentImportResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentimportresourcetypedef)
 - `LastModifiedDate`: `str`
 - `Name`: `str`
-- `SegmentGroups`: `"SegmentGroupListTypeDef"`
-- `tags`: `Dict[str, str]`
+- `SegmentGroups`:
+  [SegmentGroupListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentgrouplisttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 - `Version`: `int`
-
 
 ## SegmentsResponseTypeDef
 
@@ -4123,15 +3755,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SegmentsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["SegmentResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## SendMessagesResponseTypeDef
 
@@ -4139,12 +3770,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SendMessagesResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageResponse`: `"MessageResponseTypeDef"`
 
-
-
+- `MessageResponse`:
+  [MessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageresponsetypedef)
 
 ## SendUsersMessageRequestTypeDef
 
@@ -4152,18 +3781,19 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import SendUsersMessageRequestTypeDef
 ```
 
-
 Required fields:
-- `MessageConfiguration`: `"DirectMessageConfigurationTypeDef"`
-- `Users`: `Dict[str, "EndpointSendConfigurationTypeDef"]`
 
-
+- `MessageConfiguration`:
+  [DirectMessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#directmessageconfigurationtypedef)
+- `Users`: `Dict`\[`str`,
+  [EndpointSendConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointsendconfigurationtypedef)\]
 
 Optional fields:
-- `Context`: `Dict[str, str]`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
-- `TraceId`: `str`
 
+- `Context`: `Dict`\[`str`, `str`\]
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
+- `TraceId`: `str`
 
 ## SendUsersMessageResponseTypeDef
 
@@ -4171,16 +3801,15 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SendUsersMessageResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationId`: `str`
 
-
-
 Optional fields:
-- `RequestId`: `str`
-- `Result`: `Dict[str, Dict[str, "EndpointMessageResultTypeDef"]]`
 
+- `RequestId`: `str`
+- `Result`: `Dict`\[`str`, `Dict`\[`str`,
+  [EndpointMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointmessageresulttypedef)\]\]
 
 ## SendUsersMessagesResponseTypeDef
 
@@ -4188,12 +3817,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SendUsersMessagesResponseTypeDef
 ```
 
-
 Required fields:
-- `SendUsersMessageResponse`: `"SendUsersMessageResponseTypeDef"`
 
-
-
+- `SendUsersMessageResponse`:
+  [SendUsersMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#sendusersmessageresponsetypedef)
 
 ## SessionTypeDef
 
@@ -4201,17 +3828,15 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import SessionTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `StartTimestamp`: `str`
 
-
-
 Optional fields:
+
 - `Duration`: `int`
 - `StopTimestamp`: `str`
-
 
 ## SetDimensionTypeDef
 
@@ -4219,15 +3844,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SetDimensionTypeDef
 ```
 
-
 Required fields:
-- `Values`: `List[str]`
 
-
+- `Values`: `List`\[`str`\]
 
 Optional fields:
-- `DimensionType`: `DimensionType`
 
+- `DimensionType`:
+  [DimensionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#dimensiontype)
 
 ## SimpleConditionTypeDef
 
@@ -4235,14 +3859,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SimpleConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventCondition`: `"EventConditionTypeDef"`
-- `SegmentCondition`: `"SegmentConditionTypeDef"`
-- `SegmentDimensions`: `"SegmentDimensionsTypeDef"`
 
+- `EventCondition`:
+  [EventConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventconditiontypedef)
+- `SegmentCondition`:
+  [SegmentConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentconditiontypedef)
+- `SegmentDimensions`:
+  [SegmentDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentdimensionstypedef)
 
 ## SimpleEmailPartTypeDef
 
@@ -4250,13 +3874,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SimpleEmailPartTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Charset`: `str`
 - `Data`: `str`
-
 
 ## SimpleEmailTypeDef
 
@@ -4264,14 +3885,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import SimpleEmailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HtmlPart`: `"SimpleEmailPartTypeDef"`
-- `Subject`: `"SimpleEmailPartTypeDef"`
-- `TextPart`: `"SimpleEmailPartTypeDef"`
 
+- `HtmlPart`:
+  [SimpleEmailPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleemailparttypedef)
+- `Subject`:
+  [SimpleEmailPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleemailparttypedef)
+- `TextPart`:
+  [SimpleEmailPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#simpleemailparttypedef)
 
 ## StartConditionTypeDef
 
@@ -4279,14 +3900,13 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import StartConditionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Description`: `str`
-- `EventStartCondition`: `"EventStartConditionTypeDef"`
-- `SegmentStartCondition`: `"SegmentConditionTypeDef"`
 
+- `Description`: `str`
+- `EventStartCondition`:
+  [EventStartConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventstartconditiontypedef)
+- `SegmentStartCondition`:
+  [SegmentConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentconditiontypedef)
 
 ## TagsModelTypeDef
 
@@ -4294,12 +3914,9 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TagsModelTypeDef
 ```
 
-
 Required fields:
-- `tags`: `Dict[str, str]`
 
-
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TemplateActiveVersionRequestTypeDef
 
@@ -4307,12 +3924,9 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import TemplateActiveVersionRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Version`: `str`
 
+- `Version`: `str`
 
 ## TemplateConfigurationTypeDef
 
@@ -4320,15 +3934,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplateConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EmailTemplate`: `"TemplateTypeDef"`
-- `PushTemplate`: `"TemplateTypeDef"`
-- `SMSTemplate`: `"TemplateTypeDef"`
-- `VoiceTemplate`: `"TemplateTypeDef"`
 
+- `EmailTemplate`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templatetypedef)
+- `PushTemplate`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templatetypedef)
+- `SMSTemplate`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templatetypedef)
+- `VoiceTemplate`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templatetypedef)
 
 ## TemplateResponseTypeDef
 
@@ -4336,22 +3951,21 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: `TemplateType`
-
-
+- `TemplateType`:
+  [TemplateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#templatetype)
 
 Optional fields:
+
 - `Arn`: `str`
 - `DefaultSubstitutions`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `Version`: `str`
-
 
 ## TemplateTypeDef
 
@@ -4359,13 +3973,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Version`: `str`
-
 
 ## TemplateVersionResponseTypeDef
 
@@ -4373,20 +3984,18 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplateVersionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
 - `TemplateType`: `str`
 
-
-
 Optional fields:
+
 - `DefaultSubstitutions`: `str`
 - `TemplateDescription`: `str`
 - `Version`: `str`
-
 
 ## TemplateVersionsResponseTypeDef
 
@@ -4394,17 +4003,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplateVersionsResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["TemplateVersionResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[TemplateVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateversionresponsetypedef)\]
 
 Optional fields:
+
 - `Message`: `str`
 - `NextToken`: `str`
 - `RequestID`: `str`
-
 
 ## TemplatesResponseTypeDef
 
@@ -4412,15 +4020,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TemplatesResponseTypeDef
 ```
 
-
 Required fields:
-- `Item`: `List["TemplateResponseTypeDef"]`
 
-
+- `Item`:
+  `List`\[[TemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateresponsetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## TreatmentResourceTypeDef
 
@@ -4428,22 +4035,25 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import TreatmentResourceTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `SizePercent`: `int`
 
-
-
 Optional fields:
-- `CustomDeliveryConfiguration`: `"CustomDeliveryConfigurationTypeDef"`
-- `MessageConfiguration`: `"MessageConfigurationTypeDef"`
-- `Schedule`: `"ScheduleTypeDef"`
-- `State`: `"CampaignStateTypeDef"`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
+
+- `CustomDeliveryConfiguration`:
+  [CustomDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#customdeliveryconfigurationtypedef)
+- `MessageConfiguration`:
+  [MessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageconfigurationtypedef)
+- `Schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#scheduletypedef)
+- `State`:
+  [CampaignStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignstatetypedef)
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
-
 
 ## UpdateAdmChannelResponseTypeDef
 
@@ -4451,12 +4061,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import UpdateAdmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `ADMChannelResponse`: `"ADMChannelResponseTypeDef"`
 
-
-
+- `ADMChannelResponse`:
+  [ADMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#admchannelresponsetypedef)
 
 ## UpdateApnsChannelResponseTypeDef
 
@@ -4464,12 +4072,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateApnsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSChannelResponse`: `"APNSChannelResponseTypeDef"`
 
-
-
+- `APNSChannelResponse`:
+  [APNSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnschannelresponsetypedef)
 
 ## UpdateApnsSandboxChannelResponseTypeDef
 
@@ -4477,12 +4083,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateApnsSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSSandboxChannelResponse`: `"APNSSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSSandboxChannelResponse`:
+  [APNSSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnssandboxchannelresponsetypedef)
 
 ## UpdateApnsVoipChannelResponseTypeDef
 
@@ -4490,12 +4094,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateApnsVoipChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipChannelResponse`: `"APNSVoipChannelResponseTypeDef"`
 
-
-
+- `APNSVoipChannelResponse`:
+  [APNSVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipchannelresponsetypedef)
 
 ## UpdateApnsVoipSandboxChannelResponseTypeDef
 
@@ -4503,12 +4105,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateApnsVoipSandboxChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `APNSVoipSandboxChannelResponse`: `"APNSVoipSandboxChannelResponseTypeDef"`
 
-
-
+- `APNSVoipSandboxChannelResponse`:
+  [APNSVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipsandboxchannelresponsetypedef)
 
 ## UpdateApplicationSettingsResponseTypeDef
 
@@ -4516,12 +4116,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateApplicationSettingsResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationSettingsResource`: `"ApplicationSettingsResourceTypeDef"`
 
-
-
+- `ApplicationSettingsResource`:
+  [ApplicationSettingsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#applicationsettingsresourcetypedef)
 
 ## UpdateAttributesRequestTypeDef
 
@@ -4529,12 +4127,9 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateAttributesRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Blacklist`: `List[str]`
 
+- `Blacklist`: `List`\[`str`\]
 
 ## UpdateBaiduChannelResponseTypeDef
 
@@ -4542,12 +4137,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import UpdateBaiduChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `BaiduChannelResponse`: `"BaiduChannelResponseTypeDef"`
 
-
-
+- `BaiduChannelResponse`:
+  [BaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#baiduchannelresponsetypedef)
 
 ## UpdateCampaignResponseTypeDef
 
@@ -4555,12 +4148,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateCampaignResponseTypeDef
 ```
 
-
 Required fields:
-- `CampaignResponse`: `"CampaignResponseTypeDef"`
 
-
-
+- `CampaignResponse`:
+  [CampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignresponsetypedef)
 
 ## UpdateEmailChannelResponseTypeDef
 
@@ -4568,12 +4159,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateEmailChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `EmailChannelResponse`: `"EmailChannelResponseTypeDef"`
 
-
-
+- `EmailChannelResponse`:
+  [EmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailchannelresponsetypedef)
 
 ## UpdateEmailTemplateResponseTypeDef
 
@@ -4581,12 +4170,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateEmailTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateEndpointResponseTypeDef
 
@@ -4594,12 +4181,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateEndpointResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateEndpointsBatchResponseTypeDef
 
@@ -4607,12 +4192,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateEndpointsBatchResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateGcmChannelResponseTypeDef
 
@@ -4620,12 +4203,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateGcmChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `GCMChannelResponse`: `"GCMChannelResponseTypeDef"`
 
-
-
+- `GCMChannelResponse`:
+  [GCMChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gcmchannelresponsetypedef)
 
 ## UpdateJourneyResponseTypeDef
 
@@ -4633,12 +4214,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateJourneyResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyResponse`: `"JourneyResponseTypeDef"`
 
-
-
+- `JourneyResponse`:
+  [JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)
 
 ## UpdateJourneyStateResponseTypeDef
 
@@ -4646,12 +4225,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateJourneyStateResponseTypeDef
 ```
 
-
 Required fields:
-- `JourneyResponse`: `"JourneyResponseTypeDef"`
 
-
-
+- `JourneyResponse`:
+  [JourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyresponsetypedef)
 
 ## UpdatePushTemplateResponseTypeDef
 
@@ -4659,12 +4236,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdatePushTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateRecommenderConfigurationResponseTypeDef
 
@@ -4672,12 +4247,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateRecommenderConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `RecommenderConfigurationResponse`: `"RecommenderConfigurationResponseTypeDef"`
 
-
-
+- `RecommenderConfigurationResponse`:
+  [RecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#recommenderconfigurationresponsetypedef)
 
 ## UpdateRecommenderConfigurationTypeDef
 
@@ -4685,15 +4258,14 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateRecommenderConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RecommendationProviderRoleArn`: `str`
 - `RecommendationProviderUri`: `str`
 
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
+
+- `Attributes`: `Dict`\[`str`, `str`\]
 - `Description`: `str`
 - `Name`: `str`
 - `RecommendationProviderIdType`: `str`
@@ -4701,19 +4273,16 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
-
 ## UpdateSegmentResponseTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import UpdateSegmentResponseTypeDef
 ```
 
-
 Required fields:
-- `SegmentResponse`: `"SegmentResponseTypeDef"`
 
-
-
+- `SegmentResponse`:
+  [SegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentresponsetypedef)
 
 ## UpdateSmsChannelResponseTypeDef
 
@@ -4721,12 +4290,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateSmsChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `SMSChannelResponse`: `"SMSChannelResponseTypeDef"`
 
-
-
+- `SMSChannelResponse`:
+  [SMSChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smschannelresponsetypedef)
 
 ## UpdateSmsTemplateResponseTypeDef
 
@@ -4734,12 +4301,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateSmsTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateTemplateActiveVersionResponseTypeDef
 
@@ -4747,12 +4312,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateTemplateActiveVersionResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## UpdateVoiceChannelResponseTypeDef
 
@@ -4760,12 +4323,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateVoiceChannelResponseTypeDef
 ```
 
-
 Required fields:
-- `VoiceChannelResponse`: `"VoiceChannelResponseTypeDef"`
 
-
-
+- `VoiceChannelResponse`:
+  [VoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicechannelresponsetypedef)
 
 ## UpdateVoiceTemplateResponseTypeDef
 
@@ -4773,12 +4334,10 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import UpdateVoiceTemplateResponseTypeDef
 ```
 
-
 Required fields:
-- `MessageBody`: `"MessageBodyTypeDef"`
 
-
-
+- `MessageBody`:
+  [MessageBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagebodytypedef)
 
 ## VoiceChannelRequestTypeDef
 
@@ -4786,12 +4345,9 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import VoiceChannelRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## VoiceChannelResponseTypeDef
 
@@ -4799,13 +4355,12 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import VoiceChannelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Platform`: `str`
 
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `CreationDate`: `str`
 - `Enabled`: `bool`
@@ -4816,23 +4371,19 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
-
 ## VoiceMessageTypeDef
 
 ```python
 from mypy_boto3_pinpoint.type_defs import VoiceMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `LanguageCode`: `str`
 - `OriginationNumber`: `str`
-- `Substitutions`: `Dict[str, List[str]]`
+- `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
 - `VoiceId`: `str`
-
 
 ## VoiceTemplateRequestTypeDef
 
@@ -4840,17 +4391,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import VoiceTemplateRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `LanguageCode`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `VoiceId`: `str`
-
 
 ## VoiceTemplateResponseTypeDef
 
@@ -4858,25 +4406,24 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import VoiceTemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: `TemplateType`
-
-
+- `TemplateType`:
+  [TemplateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#templatetype)
 
 Optional fields:
+
 - `Arn`: `str`
 - `Body`: `str`
 - `DefaultSubstitutions`: `str`
 - `LanguageCode`: `str`
-- `tags`: `Dict[str, str]`
+- `tags`: `Dict`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `Version`: `str`
 - `VoiceId`: `str`
-
 
 ## WaitActivityTypeDef
 
@@ -4884,13 +4431,11 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WaitActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextActivity`: `str`
-- `WaitTime`: `"WaitTimeTypeDef"`
 
+- `NextActivity`: `str`
+- `WaitTime`:
+  [WaitTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#waittimetypedef)
 
 ## WaitTimeTypeDef
 
@@ -4898,13 +4443,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WaitTimeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WaitFor`: `str`
 - `WaitUntil`: `str`
-
 
 ## WriteApplicationSettingsRequestTypeDef
 
@@ -4912,16 +4454,16 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WriteApplicationSettingsRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CampaignHook`: `"CampaignHookTypeDef"`
+
+- `CampaignHook`:
+  [CampaignHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignhooktypedef)
 - `CloudWatchMetricsEnabled`: `bool`
 - `EventTaggingEnabled`: `bool`
-- `Limits`: `"CampaignLimitsTypeDef"`
-- `QuietTime`: `"QuietTimeTypeDef"`
-
+- `Limits`:
+  [CampaignLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignlimitstypedef)
+- `QuietTime`:
+  [QuietTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#quiettimetypedef)
 
 ## WriteCampaignRequestTypeDef
 
@@ -4929,27 +4471,31 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WriteCampaignRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdditionalTreatments`: `List["WriteTreatmentResourceTypeDef"]`
-- `CustomDeliveryConfiguration`: `"CustomDeliveryConfigurationTypeDef"`
+
+- `AdditionalTreatments`:
+  `List`\[[WriteTreatmentResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writetreatmentresourcetypedef)\]
+- `CustomDeliveryConfiguration`:
+  [CustomDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#customdeliveryconfigurationtypedef)
 - `Description`: `str`
 - `HoldoutPercent`: `int`
-- `Hook`: `"CampaignHookTypeDef"`
+- `Hook`:
+  [CampaignHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignhooktypedef)
 - `IsPaused`: `bool`
-- `Limits`: `"CampaignLimitsTypeDef"`
-- `MessageConfiguration`: `"MessageConfigurationTypeDef"`
+- `Limits`:
+  [CampaignLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#campaignlimitstypedef)
+- `MessageConfiguration`:
+  [MessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageconfigurationtypedef)
 - `Name`: `str`
-- `Schedule`: `"ScheduleTypeDef"`
+- `Schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#scheduletypedef)
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
-- `tags`: `Dict[str, str]`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
+- `tags`: `Dict`\[`str`, `str`\]
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
-
 
 ## WriteEventStreamTypeDef
 
@@ -4957,13 +4503,10 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WriteEventStreamTypeDef
 ```
 
-
 Required fields:
+
 - `DestinationStreamArn`: `str`
 - `RoleArn`: `str`
-
-
-
 
 ## WriteJourneyRequestTypeDef
 
@@ -4971,27 +4514,31 @@ Required fields:
 from mypy_boto3_pinpoint.type_defs import WriteJourneyRequestTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Activities`: `Dict[str, "ActivityTypeDef"]`
+
+- `Activities`: `Dict`\[`str`,
+  [ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#activitytypedef)\]
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
-- `Limits`: `"JourneyLimitsTypeDef"`
+- `Limits`:
+  [JourneyLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeylimitstypedef)
 - `LocalTime`: `bool`
-- `QuietTime`: `"QuietTimeTypeDef"`
+- `QuietTime`:
+  [QuietTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#quiettimetypedef)
 - `RefreshFrequency`: `str`
-- `Schedule`: `"JourneyScheduleTypeDef"`
+- `Schedule`:
+  [JourneyScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeyscheduletypedef)
 - `StartActivity`: `str`
-- `StartCondition`: `"StartConditionTypeDef"`
-- `State`: `State`
+- `StartCondition`:
+  [StartConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#startconditiontypedef)
+- `State`:
+  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/literals.html#state)
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
-
 
 ## WriteSegmentRequestTypeDef
 
@@ -4999,15 +4546,14 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WriteSegmentRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `"SegmentDimensionsTypeDef"`
-- `Name`: `str`
-- `SegmentGroups`: `"SegmentGroupListTypeDef"`
-- `tags`: `Dict[str, str]`
 
+- `Dimensions`:
+  [SegmentDimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentdimensionstypedef)
+- `Name`: `str`
+- `SegmentGroups`:
+  [SegmentGroupListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#segmentgrouplisttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## WriteTreatmentResourceTypeDef
 
@@ -5015,17 +4561,19 @@ Optional fields:
 from mypy_boto3_pinpoint.type_defs import WriteTreatmentResourceTypeDef
 ```
 
-
 Required fields:
+
 - `SizePercent`: `int`
 
-
-
 Optional fields:
-- `CustomDeliveryConfiguration`: `"CustomDeliveryConfigurationTypeDef"`
-- `MessageConfiguration`: `"MessageConfigurationTypeDef"`
-- `Schedule`: `"ScheduleTypeDef"`
-- `TemplateConfiguration`: `"TemplateConfigurationTypeDef"`
+
+- `CustomDeliveryConfiguration`:
+  [CustomDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#customdeliveryconfigurationtypedef)
+- `MessageConfiguration`:
+  [MessageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messageconfigurationtypedef)
+- `Schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#scheduletypedef)
+- `TemplateConfiguration`:
+  [TemplateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateconfigurationtypedef)
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
-

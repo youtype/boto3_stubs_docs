@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Comprehend](./README.md) > ComprehendClient
 
-Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
-type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+Auto-generated documentation for
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+type annotations stubs module
+[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [ComprehendClient for boto3 Comprehend module](#comprehendclient-for-boto3-comprehend-module)
   - [ComprehendClient](#comprehendclient)
@@ -87,12 +89,13 @@ def get_comprehend_client() -> ComprehendClient:
     return boto3.client("comprehend")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client)
+Boto3 documentation:
+[Comprehend.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_comprehend.client import Exceptions
@@ -100,7 +103,6 @@ from mypy_boto3_comprehend.client import Exceptions
 def handle_error(exc: Exceptions.BatchSizeLimitExceededException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -122,1023 +124,1160 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnsupportedLanguageException`
 
-
 ## Methods
-
 
 ### batch_detect_dominant_language
 
-Type annotations for `boto3.client("comprehend").batch_detect_dominant_language` method.
+Type annotations for
+`boto3.client("comprehend").batch_detect_dominant_language` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language]
+Boto3 documentation:
+[Comprehend.Client.batch_detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language)
 
-```python
-def batch_detect_dominant_language(
-    self,
-    TextList: List[str]
-) -> BatchDetectDominantLanguageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TextList`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDetectDominantLanguageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectdominantlanguageresponsetypedef).
 
 ### batch_detect_entities
 
 Type annotations for `boto3.client("comprehend").batch_detect_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities]
+Boto3 documentation:
+[Comprehend.Client.batch_detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities)
 
-```python
-def batch_detect_entities(
-    self,
-    TextList: List[str],
-    LanguageCode: LanguageCode
-) -> BatchDetectEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TextList`: `List`\[`str`\] *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[BatchDetectEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectentitiesresponsetypedef).
 
 ### batch_detect_key_phrases
 
-Type annotations for `boto3.client("comprehend").batch_detect_key_phrases` method.
+Type annotations for `boto3.client("comprehend").batch_detect_key_phrases`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases]
+Boto3 documentation:
+[Comprehend.Client.batch_detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases)
 
-```python
-def batch_detect_key_phrases(
-    self,
-    TextList: List[str],
-    LanguageCode: LanguageCode
-) -> BatchDetectKeyPhrasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TextList`: `List`\[`str`\] *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[BatchDetectKeyPhrasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectkeyphrasesresponsetypedef).
 
 ### batch_detect_sentiment
 
-Type annotations for `boto3.client("comprehend").batch_detect_sentiment` method.
+Type annotations for `boto3.client("comprehend").batch_detect_sentiment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment]
+Boto3 documentation:
+[Comprehend.Client.batch_detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment)
 
-```python
-def batch_detect_sentiment(
-    self,
-    TextList: List[str],
-    LanguageCode: LanguageCode
-) -> BatchDetectSentimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TextList`: `List`\[`str`\] *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[BatchDetectSentimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectsentimentresponsetypedef).
 
 ### batch_detect_syntax
 
 Type annotations for `boto3.client("comprehend").batch_detect_syntax` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax]
+Boto3 documentation:
+[Comprehend.Client.batch_detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax)
 
-```python
-def batch_detect_syntax(
-    self,
-    TextList: List[str],
-    LanguageCode: SyntaxLanguageCode
-) -> BatchDetectSyntaxResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TextList`: `List`\[`str`\] *(required)*
+- `LanguageCode`:
+  [SyntaxLanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#syntaxlanguagecode)
+  *(required)*
+
+Returns
+[BatchDetectSyntaxResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectsyntaxresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("comprehend").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.can_paginate]
+Boto3 documentation:
+[Comprehend.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### classify_document
 
 Type annotations for `boto3.client("comprehend").classify_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document]
+Boto3 documentation:
+[Comprehend.Client.classify_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document)
 
-```python
-def classify_document(
-    self,
-    Text: str,
-    EndpointArn: str
-) -> ClassifyDocumentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `EndpointArn`: `str` *(required)*
+
+Returns
+[ClassifyDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#classifydocumentresponsetypedef).
 
 ### contains_pii_entities
 
 Type annotations for `boto3.client("comprehend").contains_pii_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities]
+Boto3 documentation:
+[Comprehend.Client.contains_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities)
 
-```python
-def contains_pii_entities(
-    self,
-    Text: str,
-    LanguageCode: LanguageCode
-) -> ContainsPiiEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[ContainsPiiEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#containspiientitiesresponsetypedef).
 
 ### create_document_classifier
 
-Type annotations for `boto3.client("comprehend").create_document_classifier` method.
+Type annotations for `boto3.client("comprehend").create_document_classifier`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier]
+Boto3 documentation:
+[Comprehend.Client.create_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier)
 
-```python
-def create_document_classifier(
-    self,
-    DocumentClassifierName: str,
-    DataAccessRoleArn: str,
-    InputDataConfig: "DocumentClassifierInputDataConfigTypeDef",
-    LanguageCode: LanguageCode,
-    Tags: List["TagTypeDef"] = None,
-    OutputDataConfig: "DocumentClassifierOutputDataConfigTypeDef" = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None,
-    Mode: DocumentClassifierMode = None,
-    ModelKmsKeyId: str = None
-) -> CreateDocumentClassifierResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentClassifierName`: `str` *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `InputDataConfig`:
+  [DocumentClassifierInputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierinputdataconfigtypedef)
+  *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#tagtypedef)\]
+- `OutputDataConfig`:
+  [DocumentClassifierOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifieroutputdataconfigtypedef)
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+- `Mode`:
+  [DocumentClassifierMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#documentclassifiermode)
+- `ModelKmsKeyId`: `str`
+
+Returns
+[CreateDocumentClassifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#createdocumentclassifierresponsetypedef).
 
 ### create_endpoint
 
 Type annotations for `boto3.client("comprehend").create_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint]
+Boto3 documentation:
+[Comprehend.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint)
 
-```python
-def create_endpoint(
-    self,
-    EndpointName: str,
-    ModelArn: str,
-    DesiredInferenceUnits: int,
-    ClientRequestToken: str = None,
-    Tags: List["TagTypeDef"] = None,
-    DataAccessRoleArn: str = None
-) -> CreateEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `ModelArn`: `str` *(required)*
+- `DesiredInferenceUnits`: `int` *(required)*
+- `ClientRequestToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#tagtypedef)\]
+- `DataAccessRoleArn`: `str`
+
+Returns
+[CreateEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#createendpointresponsetypedef).
 
 ### create_entity_recognizer
 
-Type annotations for `boto3.client("comprehend").create_entity_recognizer` method.
+Type annotations for `boto3.client("comprehend").create_entity_recognizer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer]
+Boto3 documentation:
+[Comprehend.Client.create_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer)
 
-```python
-def create_entity_recognizer(
-    self,
-    RecognizerName: str,
-    DataAccessRoleArn: str,
-    InputDataConfig: "EntityRecognizerInputDataConfigTypeDef",
-    LanguageCode: LanguageCode,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None,
-    ModelKmsKeyId: str = None
-) -> CreateEntityRecognizerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RecognizerName`: `str` *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `InputDataConfig`:
+  [EntityRecognizerInputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerinputdataconfigtypedef)
+  *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+- `ModelKmsKeyId`: `str`
+
+Returns
+[CreateEntityRecognizerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#createentityrecognizerresponsetypedef).
 
 ### delete_document_classifier
 
-Type annotations for `boto3.client("comprehend").delete_document_classifier` method.
+Type annotations for `boto3.client("comprehend").delete_document_classifier`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier]
+Boto3 documentation:
+[Comprehend.Client.delete_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier)
 
-```python
-def delete_document_classifier(
-    self,
-    DocumentClassifierArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DocumentClassifierArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_endpoint
 
 Type annotations for `boto3.client("comprehend").delete_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint]
+Boto3 documentation:
+[Comprehend.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint)
 
-```python
-def delete_endpoint(
-    self,
-    EndpointArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_entity_recognizer
 
-Type annotations for `boto3.client("comprehend").delete_entity_recognizer` method.
+Type annotations for `boto3.client("comprehend").delete_entity_recognizer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer]
+Boto3 documentation:
+[Comprehend.Client.delete_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer)
 
-```python
-def delete_entity_recognizer(
-    self,
-    EntityRecognizerArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EntityRecognizerArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_document_classification_job
 
-Type annotations for `boto3.client("comprehend").describe_document_classification_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_document_classification_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job]
+Boto3 documentation:
+[Comprehend.Client.describe_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job)
 
-```python
-def describe_document_classification_job(
-    self,
-    JobId: str
-) -> DescribeDocumentClassificationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeDocumentClassificationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describedocumentclassificationjobresponsetypedef).
 
 ### describe_document_classifier
 
-Type annotations for `boto3.client("comprehend").describe_document_classifier` method.
+Type annotations for `boto3.client("comprehend").describe_document_classifier`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier]
+Boto3 documentation:
+[Comprehend.Client.describe_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier)
 
-```python
-def describe_document_classifier(
-    self,
-    DocumentClassifierArn: str
-) -> DescribeDocumentClassifierResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentClassifierArn`: `str` *(required)*
+
+Returns
+[DescribeDocumentClassifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describedocumentclassifierresponsetypedef).
 
 ### describe_dominant_language_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_dominant_language_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_dominant_language_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job)
 
-```python
-def describe_dominant_language_detection_job(
-    self,
-    JobId: str
-) -> DescribeDominantLanguageDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeDominantLanguageDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describedominantlanguagedetectionjobresponsetypedef).
 
 ### describe_endpoint
 
 Type annotations for `boto3.client("comprehend").describe_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint]
+Boto3 documentation:
+[Comprehend.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint)
 
-```python
-def describe_endpoint(
-    self,
-    EndpointArn: str
-) -> DescribeEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+
+Returns
+[DescribeEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describeendpointresponsetypedef).
 
 ### describe_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_entities_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_entities_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job)
 
-```python
-def describe_entities_detection_job(
-    self,
-    JobId: str
-) -> DescribeEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describeentitiesdetectionjobresponsetypedef).
 
 ### describe_entity_recognizer
 
-Type annotations for `boto3.client("comprehend").describe_entity_recognizer` method.
+Type annotations for `boto3.client("comprehend").describe_entity_recognizer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer]
+Boto3 documentation:
+[Comprehend.Client.describe_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer)
 
-```python
-def describe_entity_recognizer(
-    self,
-    EntityRecognizerArn: str
-) -> DescribeEntityRecognizerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EntityRecognizerArn`: `str` *(required)*
+
+Returns
+[DescribeEntityRecognizerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describeentityrecognizerresponsetypedef).
 
 ### describe_events_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_events_detection_job` method.
+Type annotations for `boto3.client("comprehend").describe_events_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job)
 
-```python
-def describe_events_detection_job(
-    self,
-    JobId: str
-) -> DescribeEventsDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeEventsDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describeeventsdetectionjobresponsetypedef).
 
 ### describe_key_phrases_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_key_phrases_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_key_phrases_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job)
 
-```python
-def describe_key_phrases_detection_job(
-    self,
-    JobId: str
-) -> DescribeKeyPhrasesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeKeyPhrasesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describekeyphrasesdetectionjobresponsetypedef).
 
 ### describe_pii_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_pii_entities_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_pii_entities_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job)
 
-```python
-def describe_pii_entities_detection_job(
-    self,
-    JobId: str
-) -> DescribePiiEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribePiiEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describepiientitiesdetectionjobresponsetypedef).
 
 ### describe_sentiment_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_sentiment_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").describe_sentiment_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job)
 
-```python
-def describe_sentiment_detection_job(
-    self,
-    JobId: str
-) -> DescribeSentimentDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeSentimentDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describesentimentdetectionjobresponsetypedef).
 
 ### describe_topics_detection_job
 
-Type annotations for `boto3.client("comprehend").describe_topics_detection_job` method.
+Type annotations for `boto3.client("comprehend").describe_topics_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job]
+Boto3 documentation:
+[Comprehend.Client.describe_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job)
 
-```python
-def describe_topics_detection_job(
-    self,
-    JobId: str
-) -> DescribeTopicsDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeTopicsDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#describetopicsdetectionjobresponsetypedef).
 
 ### detect_dominant_language
 
-Type annotations for `boto3.client("comprehend").detect_dominant_language` method.
+Type annotations for `boto3.client("comprehend").detect_dominant_language`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language]
+Boto3 documentation:
+[Comprehend.Client.detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language)
 
-```python
-def detect_dominant_language(
-    self,
-    Text: str
-) -> DetectDominantLanguageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[DetectDominantLanguageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectdominantlanguageresponsetypedef).
 
 ### detect_entities
 
 Type annotations for `boto3.client("comprehend").detect_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities]
+Boto3 documentation:
+[Comprehend.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities)
 
-```python
-def detect_entities(
-    self,
-    Text: str,
-    LanguageCode: LanguageCode = None,
-    EndpointArn: str = None
-) -> DetectEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+- `EndpointArn`: `str`
+
+Returns
+[DetectEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectentitiesresponsetypedef).
 
 ### detect_key_phrases
 
 Type annotations for `boto3.client("comprehend").detect_key_phrases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases]
+Boto3 documentation:
+[Comprehend.Client.detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases)
 
-```python
-def detect_key_phrases(
-    self,
-    Text: str,
-    LanguageCode: LanguageCode
-) -> DetectKeyPhrasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[DetectKeyPhrasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectkeyphrasesresponsetypedef).
 
 ### detect_pii_entities
 
 Type annotations for `boto3.client("comprehend").detect_pii_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities]
+Boto3 documentation:
+[Comprehend.Client.detect_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities)
 
-```python
-def detect_pii_entities(
-    self,
-    Text: str,
-    LanguageCode: LanguageCode
-) -> DetectPiiEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[DetectPiiEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectpiientitiesresponsetypedef).
 
 ### detect_sentiment
 
 Type annotations for `boto3.client("comprehend").detect_sentiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment]
+Boto3 documentation:
+[Comprehend.Client.detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment)
 
-```python
-def detect_sentiment(
-    self,
-    Text: str,
-    LanguageCode: LanguageCode
-) -> DetectSentimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+
+Returns
+[DetectSentimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectsentimentresponsetypedef).
 
 ### detect_syntax
 
 Type annotations for `boto3.client("comprehend").detect_syntax` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax]
+Boto3 documentation:
+[Comprehend.Client.detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax)
 
-```python
-def detect_syntax(
-    self,
-    Text: str,
-    LanguageCode: SyntaxLanguageCode
-) -> DetectSyntaxResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+- `LanguageCode`:
+  [SyntaxLanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#syntaxlanguagecode)
+  *(required)*
+
+Returns
+[DetectSyntaxResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#detectsyntaxresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("comprehend").generate_presigned_url` method.
+Type annotations for `boto3.client("comprehend").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.generate_presigned_url]
+Boto3 documentation:
+[Comprehend.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_document_classification_jobs
 
-Type annotations for `boto3.client("comprehend").list_document_classification_jobs` method.
+Type annotations for
+`boto3.client("comprehend").list_document_classification_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_document_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs)
 
-```python
-def list_document_classification_jobs(
-    self,
-    Filter: DocumentClassificationJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDocumentClassificationJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [DocumentClassificationJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassificationjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDocumentClassificationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdocumentclassificationjobsresponsetypedef).
 
 ### list_document_classifiers
 
-Type annotations for `boto3.client("comprehend").list_document_classifiers` method.
+Type annotations for `boto3.client("comprehend").list_document_classifiers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers]
+Boto3 documentation:
+[Comprehend.Client.list_document_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers)
 
-```python
-def list_document_classifiers(
-    self,
-    Filter: DocumentClassifierFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDocumentClassifiersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [DocumentClassifierFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDocumentClassifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdocumentclassifiersresponsetypedef).
 
 ### list_dominant_language_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_dominant_language_detection_jobs` method.
+Type annotations for
+`boto3.client("comprehend").list_dominant_language_detection_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_dominant_language_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs)
 
-```python
-def list_dominant_language_detection_jobs(
-    self,
-    Filter: DominantLanguageDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDominantLanguageDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [DominantLanguageDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagedetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDominantLanguageDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdominantlanguagedetectionjobsresponsetypedef).
 
 ### list_endpoints
 
 Type annotations for `boto3.client("comprehend").list_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints]
+Boto3 documentation:
+[Comprehend.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints)
 
-```python
-def list_endpoints(
-    self,
-    Filter: EndpointFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [EndpointFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#endpointfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listendpointsresponsetypedef).
 
 ### list_entities_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_entities_detection_jobs` method.
+Type annotations for `boto3.client("comprehend").list_entities_detection_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs)
 
-```python
-def list_entities_detection_jobs(
-    self,
-    Filter: EntitiesDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEntitiesDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [EntitiesDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitiesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntitiesDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listentitiesdetectionjobsresponsetypedef).
 
 ### list_entity_recognizers
 
-Type annotations for `boto3.client("comprehend").list_entity_recognizers` method.
+Type annotations for `boto3.client("comprehend").list_entity_recognizers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers]
+Boto3 documentation:
+[Comprehend.Client.list_entity_recognizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers)
 
-```python
-def list_entity_recognizers(
-    self,
-    Filter: EntityRecognizerFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEntityRecognizersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [EntityRecognizerFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntityRecognizersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listentityrecognizersresponsetypedef).
 
 ### list_events_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_events_detection_jobs` method.
+Type annotations for `boto3.client("comprehend").list_events_detection_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_events_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs)
 
-```python
-def list_events_detection_jobs(
-    self,
-    Filter: EventsDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEventsDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [EventsDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#eventsdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEventsDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listeventsdetectionjobsresponsetypedef).
 
 ### list_key_phrases_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_key_phrases_detection_jobs` method.
+Type annotations for
+`boto3.client("comprehend").list_key_phrases_detection_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_key_phrases_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs)
 
-```python
-def list_key_phrases_detection_jobs(
-    self,
-    Filter: KeyPhrasesDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListKeyPhrasesDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [KeyPhrasesDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListKeyPhrasesDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listkeyphrasesdetectionjobsresponsetypedef).
 
 ### list_pii_entities_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_pii_entities_detection_jobs` method.
+Type annotations for
+`boto3.client("comprehend").list_pii_entities_detection_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_pii_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs)
 
-```python
-def list_pii_entities_detection_jobs(
-    self,
-    Filter: PiiEntitiesDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPiiEntitiesDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [PiiEntitiesDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#piientitiesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPiiEntitiesDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listpiientitiesdetectionjobsresponsetypedef).
 
 ### list_sentiment_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_sentiment_detection_jobs` method.
+Type annotations for `boto3.client("comprehend").list_sentiment_detection_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_sentiment_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs)
 
-```python
-def list_sentiment_detection_jobs(
-    self,
-    Filter: SentimentDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListSentimentDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [SentimentDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSentimentDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listsentimentdetectionjobsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("comprehend").list_tags_for_resource` method.
+Type annotations for `boto3.client("comprehend").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource]
+Boto3 documentation:
+[Comprehend.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_topics_detection_jobs
 
-Type annotations for `boto3.client("comprehend").list_topics_detection_jobs` method.
+Type annotations for `boto3.client("comprehend").list_topics_detection_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs]
+Boto3 documentation:
+[Comprehend.Client.list_topics_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs)
 
-```python
-def list_topics_detection_jobs(
-    self,
-    Filter: TopicsDetectionJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTopicsDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [TopicsDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#topicsdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTopicsDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listtopicsdetectionjobsresponsetypedef).
 
 ### start_document_classification_job
 
-Type annotations for `boto3.client("comprehend").start_document_classification_job` method.
+Type annotations for
+`boto3.client("comprehend").start_document_classification_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job]
+Boto3 documentation:
+[Comprehend.Client.start_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job)
 
-```python
-def start_document_classification_job(
-    self,
-    DocumentClassifierArn: str,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartDocumentClassificationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentClassifierArn`: `str` *(required)*
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartDocumentClassificationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startdocumentclassificationjobresponsetypedef).
 
 ### start_dominant_language_detection_job
 
-Type annotations for `boto3.client("comprehend").start_dominant_language_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").start_dominant_language_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job)
 
-```python
-def start_dominant_language_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartDominantLanguageDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartDominantLanguageDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startdominantlanguagedetectionjobresponsetypedef).
 
 ### start_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").start_entities_detection_job` method.
+Type annotations for `boto3.client("comprehend").start_entities_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job)
 
-```python
-def start_entities_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: LanguageCode,
-    JobName: str = None,
-    EntityRecognizerArn: str = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `JobName`: `str`
+- `EntityRecognizerArn`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startentitiesdetectionjobresponsetypedef).
 
 ### start_events_detection_job
 
-Type annotations for `boto3.client("comprehend").start_events_detection_job` method.
+Type annotations for `boto3.client("comprehend").start_events_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job)
 
-```python
-def start_events_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: LanguageCode,
-    TargetEventTypes: List[str],
-    JobName: str = None,
-    ClientRequestToken: str = None
-) -> StartEventsDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `TargetEventTypes`: `List`\[`str`\] *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[StartEventsDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#starteventsdetectionjobresponsetypedef).
 
 ### start_key_phrases_detection_job
 
-Type annotations for `boto3.client("comprehend").start_key_phrases_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").start_key_phrases_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job)
 
-```python
-def start_key_phrases_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: LanguageCode,
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartKeyPhrasesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartKeyPhrasesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startkeyphrasesdetectionjobresponsetypedef).
 
 ### start_pii_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").start_pii_entities_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").start_pii_entities_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job)
 
-```python
-def start_pii_entities_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    Mode: PiiEntitiesDetectionMode,
-    DataAccessRoleArn: str,
-    LanguageCode: LanguageCode,
-    RedactionConfig: "RedactionConfigTypeDef" = None,
-    JobName: str = None,
-    ClientRequestToken: str = None
-) -> StartPiiEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `Mode`:
+  [PiiEntitiesDetectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitiesdetectionmode)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `RedactionConfig`:
+  [RedactionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#redactionconfigtypedef)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[StartPiiEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startpiientitiesdetectionjobresponsetypedef).
 
 ### start_sentiment_detection_job
 
-Type annotations for `boto3.client("comprehend").start_sentiment_detection_job` method.
+Type annotations for `boto3.client("comprehend").start_sentiment_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job)
 
-```python
-def start_sentiment_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: LanguageCode,
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartSentimentDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+  *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartSentimentDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#startsentimentdetectionjobresponsetypedef).
 
 ### start_topics_detection_job
 
-Type annotations for `boto3.client("comprehend").start_topics_detection_job` method.
+Type annotations for `boto3.client("comprehend").start_topics_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job]
+Boto3 documentation:
+[Comprehend.Client.start_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job)
 
-```python
-def start_topics_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    JobName: str = None,
-    NumberOfTopics: int = None,
-    ClientRequestToken: str = None,
-    VolumeKmsKeyId: str = None,
-    VpcConfig: "VpcConfigTypeDef" = None
-) -> StartTopicsDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `JobName`: `str`
+- `NumberOfTopics`: `int`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+
+Returns
+[StartTopicsDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#starttopicsdetectionjobresponsetypedef).
 
 ### stop_dominant_language_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_dominant_language_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").stop_dominant_language_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job)
 
-```python
-def stop_dominant_language_detection_job(
-    self,
-    JobId: str
-) -> StopDominantLanguageDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopDominantLanguageDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stopdominantlanguagedetectionjobresponsetypedef).
 
 ### stop_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_entities_detection_job` method.
+Type annotations for `boto3.client("comprehend").stop_entities_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job)
 
-```python
-def stop_entities_detection_job(
-    self,
-    JobId: str
-) -> StopEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stopentitiesdetectionjobresponsetypedef).
 
 ### stop_events_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_events_detection_job` method.
+Type annotations for `boto3.client("comprehend").stop_events_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job)
 
-```python
-def stop_events_detection_job(
-    self,
-    JobId: str
-) -> StopEventsDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopEventsDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stopeventsdetectionjobresponsetypedef).
 
 ### stop_key_phrases_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_key_phrases_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").stop_key_phrases_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job)
 
-```python
-def stop_key_phrases_detection_job(
-    self,
-    JobId: str
-) -> StopKeyPhrasesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopKeyPhrasesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stopkeyphrasesdetectionjobresponsetypedef).
 
 ### stop_pii_entities_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_pii_entities_detection_job` method.
+Type annotations for
+`boto3.client("comprehend").stop_pii_entities_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job)
 
-```python
-def stop_pii_entities_detection_job(
-    self,
-    JobId: str
-) -> StopPiiEntitiesDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopPiiEntitiesDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stoppiientitiesdetectionjobresponsetypedef).
 
 ### stop_sentiment_detection_job
 
-Type annotations for `boto3.client("comprehend").stop_sentiment_detection_job` method.
+Type annotations for `boto3.client("comprehend").stop_sentiment_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job]
+Boto3 documentation:
+[Comprehend.Client.stop_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job)
 
-```python
-def stop_sentiment_detection_job(
-    self,
-    JobId: str
-) -> StopSentimentDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopSentimentDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#stopsentimentdetectionjobresponsetypedef).
 
 ### stop_training_document_classifier
 
-Type annotations for `boto3.client("comprehend").stop_training_document_classifier` method.
+Type annotations for
+`boto3.client("comprehend").stop_training_document_classifier` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier]
+Boto3 documentation:
+[Comprehend.Client.stop_training_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier)
 
-```python
-def stop_training_document_classifier(
-    self,
-    DocumentClassifierArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DocumentClassifierArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_training_entity_recognizer
 
-Type annotations for `boto3.client("comprehend").stop_training_entity_recognizer` method.
+Type annotations for
+`boto3.client("comprehend").stop_training_entity_recognizer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer]
+Boto3 documentation:
+[Comprehend.Client.stop_training_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer)
 
-```python
-def stop_training_entity_recognizer(
-    self,
-    EntityRecognizerArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EntityRecognizerArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("comprehend").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource]
+Boto3 documentation:
+[Comprehend.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("comprehend").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource]
+Boto3 documentation:
+[Comprehend.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_endpoint
 
 Type annotations for `boto3.client("comprehend").update_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint]
+Boto3 documentation:
+[Comprehend.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint)
 
-```python
-def update_endpoint(
-    self,
-    EndpointArn: str,
-    DesiredInferenceUnits: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `EndpointArn`: `str` *(required)*
+- `DesiredInferenceUnits`: `int` *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("comprehend").get_paginator` method with overloads.
+Type annotations for `boto3.client("comprehend").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_document_classification_jobs")` -> [ListDocumentClassificationJobsPaginator](./paginators.md#listdocumentclassificationjobspaginator)
-- `client.get_paginator("list_document_classifiers")` -> [ListDocumentClassifiersPaginator](./paginators.md#listdocumentclassifierspaginator)
-- `client.get_paginator("list_dominant_language_detection_jobs")` -> [ListDominantLanguageDetectionJobsPaginator](./paginators.md#listdominantlanguagedetectionjobspaginator)
-- `client.get_paginator("list_entities_detection_jobs")` -> [ListEntitiesDetectionJobsPaginator](./paginators.md#listentitiesdetectionjobspaginator)
-- `client.get_paginator("list_entity_recognizers")` -> [ListEntityRecognizersPaginator](./paginators.md#listentityrecognizerspaginator)
-- `client.get_paginator("list_key_phrases_detection_jobs")` -> [ListKeyPhrasesDetectionJobsPaginator](./paginators.md#listkeyphrasesdetectionjobspaginator)
-- `client.get_paginator("list_sentiment_detection_jobs")` -> [ListSentimentDetectionJobsPaginator](./paginators.md#listsentimentdetectionjobspaginator)
-- `client.get_paginator("list_topics_detection_jobs")` -> [ListTopicsDetectionJobsPaginator](./paginators.md#listtopicsdetectionjobspaginator)
-
-
+- `client.get_paginator("list_document_classification_jobs")` ->
+  [ListDocumentClassificationJobsPaginator](./paginators.md#listdocumentclassificationjobspaginator)
+- `client.get_paginator("list_document_classifiers")` ->
+  [ListDocumentClassifiersPaginator](./paginators.md#listdocumentclassifierspaginator)
+- `client.get_paginator("list_dominant_language_detection_jobs")` ->
+  [ListDominantLanguageDetectionJobsPaginator](./paginators.md#listdominantlanguagedetectionjobspaginator)
+- `client.get_paginator("list_entities_detection_jobs")` ->
+  [ListEntitiesDetectionJobsPaginator](./paginators.md#listentitiesdetectionjobspaginator)
+- `client.get_paginator("list_entity_recognizers")` ->
+  [ListEntityRecognizersPaginator](./paginators.md#listentityrecognizerspaginator)
+- `client.get_paginator("list_key_phrases_detection_jobs")` ->
+  [ListKeyPhrasesDetectionJobsPaginator](./paginators.md#listkeyphrasesdetectionjobspaginator)
+- `client.get_paginator("list_sentiment_detection_jobs")` ->
+  [ListSentimentDetectionJobsPaginator](./paginators.md#listsentimentdetectionjobspaginator)
+- `client.get_paginator("list_topics_detection_jobs")` ->
+  [ListTopicsDetectionJobsPaginator](./paginators.md#listtopicsdetectionjobspaginator)

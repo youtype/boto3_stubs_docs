@@ -1,9 +1,12 @@
 # SagemakerFeatureStoreRuntimeClient for boto3 SagemakerFeatureStoreRuntime module
 
-> [Index](../README.md) > [SagemakerFeatureStoreRuntime](./README.md) > SagemakerFeatureStoreRuntimeClient
+> [Index](../README.md) > [SagemakerFeatureStoreRuntime](./README.md) >
+> SagemakerFeatureStoreRuntimeClient
 
-Auto-generated documentation for [SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
-type annotations stubs module [mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
+Auto-generated documentation for
+[SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
+type annotations stubs module
+[mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
 - [SagemakerFeatureStoreRuntimeClient for boto3 SagemakerFeatureStoreRuntime module](#sagemakerfeaturestoreruntimeclient-for-boto3-sagemakerfeaturestoreruntime-module)
   - [SagemakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
@@ -28,12 +31,13 @@ def get_sagemaker-featurestore-runtime_client() -> SagemakerFeatureStoreRuntimeC
     return boto3.client("sagemaker-featurestore-runtime")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client)
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sagemaker_featurestore_runtime.client import Exceptions
@@ -41,7 +45,6 @@ from mypy_boto3_sagemaker_featurestore_runtime.client import Exceptions
 def handle_error(exc: Exceptions.AccessForbidden) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -52,87 +55,81 @@ Exceptions:
 - `Exceptions.ServiceUnavailable`
 - `Exceptions.ValidationError`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("sagemaker-featurestore-runtime").can_paginate` method.
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.can_paginate]
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_record
 
-Type annotations for `boto3.client("sagemaker-featurestore-runtime").delete_record` method.
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").delete_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.delete_record]
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client.delete_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.delete_record)
 
-```python
-def delete_record(
-    self,
-    FeatureGroupName: str,
-    RecordIdentifierValueAsString: str,
-    EventTime: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FeatureGroupName`: `str` *(required)*
+- `RecordIdentifierValueAsString`: `str` *(required)*
+- `EventTime`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("sagemaker-featurestore-runtime").generate_presigned_url` method.
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.generate_presigned_url]
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_record
 
-Type annotations for `boto3.client("sagemaker-featurestore-runtime").get_record` method.
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").get_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.get_record]
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client.get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.get_record)
 
-```python
-def get_record(
-    self,
-    FeatureGroupName: str,
-    RecordIdentifierValueAsString: str,
-    FeatureNames: List[str] = None
-) -> GetRecordResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FeatureGroupName`: `str` *(required)*
+- `RecordIdentifierValueAsString`: `str` *(required)*
+- `FeatureNames`: `List`\[`str`\]
+
+Returns
+[GetRecordResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_featurestore_runtime/type_defs.html#getrecordresponsetypedef).
 
 ### put_record
 
-Type annotations for `boto3.client("sagemaker-featurestore-runtime").put_record` method.
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").put_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.put_record]
+Boto3 documentation:
+[SagemakerFeatureStoreRuntime.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.put_record)
 
-```python
-def put_record(
-    self,
-    FeatureGroupName: str,
-    Record: List["FeatureValueTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `FeatureGroupName`: `str` *(required)*
+- `Record`:
+  `List`\[[FeatureValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_featurestore_runtime/type_defs.html#featurevaluetypedef)\]
+  *(required)*

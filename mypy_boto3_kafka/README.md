@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Kafka
 
-Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
-type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+Auto-generated documentation for
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+type annotations stubs module
+[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 ```bash
 pip install mypy-boto3-kafka
@@ -19,7 +21,7 @@ pip install mypy-boto3-kafka
 
 ## KafkaClient
 
-Type annotations for  `boto3.client("kafka")` as [KafkaClient](./client.md)
+Type annotations for `boto3.client("kafka")` as [KafkaClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_kafka.client import KafkaClient
 ```
 
-
 KafkaClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_associate_scram_secret](./client.md#batch-associate-scram-secret)
 - [batch_disassociate_scram_secret](./client.md#batch-disassociate-scram-secret)
 - [can_paginate](./client.md#can-paginate)
@@ -67,10 +67,8 @@ KafkaClient [exceptions](./client.md#exceptions)
 - [update_configuration](./client.md#update-configuration)
 - [update_monitoring](./client.md#update-monitoring)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -81,14 +79,10 @@ KafkaClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("kafka").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("kafka").get_paginator("...")`.
 
 Can be used directly:
 
@@ -103,11 +97,6 @@ from mypy_boto3_kafka.paginators import ListClusterOperationsPaginator, ...
 - [ListKafkaVersionsPaginator](./paginators.md#listkafkaversionspaginator)
 - [ListNodesPaginator](./paginators.md#listnodespaginator)
 - [ListScramSecretsPaginator](./paginators.md#listscramsecretspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -134,13 +123,10 @@ from mypy_boto3_kafka.literals import BrokerAZDistribution, ...
 - [ListScramSecretsPaginatorName](./literals.md#listscramsecretspaginatorname)
 - [NodeType](./literals.md#nodetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

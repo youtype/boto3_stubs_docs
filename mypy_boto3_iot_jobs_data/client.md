@@ -1,9 +1,12 @@
 # IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module
 
-> [Index](../README.md) > [IoTJobsDataPlane](./README.md) > IoTJobsDataPlaneClient
+> [Index](../README.md) > [IoTJobsDataPlane](./README.md) >
+> IoTJobsDataPlaneClient
 
-Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+Auto-generated documentation for
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module](#iotjobsdataplaneclient-for-boto3-iotjobsdataplane-module)
   - [IoTJobsDataPlaneClient](#iotjobsdataplaneclient)
@@ -29,12 +32,13 @@ def get_iot-jobs-data_client() -> IoTJobsDataPlaneClient:
     return boto3.client("iot-jobs-data")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
+Boto3 documentation:
+[IoTJobsDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iot_jobs_data.client import Exceptions
@@ -42,7 +46,6 @@ from mypy_boto3_iot_jobs_data.client import Exceptions
 def handle_error(exc: Exceptions.CertificateValidationException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -55,109 +58,109 @@ Exceptions:
 - `Exceptions.TerminalStateException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iot-jobs-data").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_job_execution
 
-Type annotations for `boto3.client("iot-jobs-data").describe_job_execution` method.
+Type annotations for `boto3.client("iot-jobs-data").describe_job_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
 
-```python
-def describe_job_execution(
-    self,
-    jobId: str,
-    thingName: str,
-    includeJobDocument: bool = None,
-    executionNumber: int = None
-) -> DescribeJobExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `thingName`: `str` *(required)*
+- `includeJobDocument`: `bool`
+- `executionNumber`: `int`
+
+Returns
+[DescribeJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#describejobexecutionresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url` method.
+Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_pending_job_executions
 
-Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions` method.
+Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
-```python
-def get_pending_job_executions(
-    self,
-    thingName: str
-) -> GetPendingJobExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str` *(required)*
+
+Returns
+[GetPendingJobExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#getpendingjobexecutionsresponsetypedef).
 
 ### start_next_pending_job_execution
 
-Type annotations for `boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
+Type annotations for
+`boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
 
-```python
-def start_next_pending_job_execution(
-    self,
-    thingName: str,
-    statusDetails: Dict[str, str] = None,
-    stepTimeoutInMinutes: int = None
-) -> StartNextPendingJobExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str` *(required)*
+- `statusDetails`: `Dict`\[`str`, `str`\]
+- `stepTimeoutInMinutes`: `int`
+
+Returns
+[StartNextPendingJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#startnextpendingjobexecutionresponsetypedef).
 
 ### update_job_execution
 
-Type annotations for `boto3.client("iot-jobs-data").update_job_execution` method.
+Type annotations for `boto3.client("iot-jobs-data").update_job_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution]
+Boto3 documentation:
+[IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
 
-```python
-def update_job_execution(
-    self,
-    jobId: str,
-    thingName: str,
-    status: JobExecutionStatus,
-    statusDetails: Dict[str, str] = None,
-    stepTimeoutInMinutes: int = None,
-    expectedVersion: int = None,
-    includeJobExecutionState: bool = None,
-    includeJobDocument: bool = None,
-    executionNumber: int = None
-) -> UpdateJobExecutionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `jobId`: `str` *(required)*
+- `thingName`: `str` *(required)*
+- `status`:
+  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
+  *(required)*
+- `statusDetails`: `Dict`\[`str`, `str`\]
+- `stepTimeoutInMinutes`: `int`
+- `expectedVersion`: `int`
+- `includeJobExecutionState`: `bool`
+- `includeJobDocument`: `bool`
+- `executionNumber`: `int`
 
-
+Returns
+[UpdateJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#updatejobexecutionresponsetypedef).

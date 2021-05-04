@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ACMPCA
 
-Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+Auto-generated documentation for
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+type annotations stubs module
+[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ```bash
 pip install mypy-boto3-acm-pca
@@ -20,7 +22,7 @@ pip install mypy-boto3-acm-pca
 
 ## ACMPCAClient
 
-Type annotations for  `boto3.client("acm-pca")` as [ACMPCAClient](./client.md)
+Type annotations for `boto3.client("acm-pca")` as [ACMPCAClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_acm_pca.client import ACMPCAClient
 ```
 
-
 ACMPCAClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_certificate_authority](./client.md#create-certificate-authority)
 - [create_certificate_authority_audit_report](./client.md#create-certificate-authority-audit-report)
@@ -62,10 +62,8 @@ ACMPCAClient [exceptions](./client.md#exceptions)
 - [untag_certificate_authority](./client.md#untag-certificate-authority)
 - [update_certificate_authority](./client.md#update-certificate-authority)
 
-
-
-
 ### Exceptions
+
 - [CertificateMismatchException](./client.md#certificatemismatchexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -87,14 +85,10 @@ ACMPCAClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("acm-pca").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("acm-pca").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,12 +100,10 @@ from mypy_boto3_acm_pca.paginators import ListCertificateAuthoritiesPaginator, .
 - [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("acm-pca").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("acm-pca").get_waiter("...")`.
 
 Can be used directly:
 
@@ -122,9 +114,6 @@ from mypy_boto3_acm_pca.waiters import AuditReportCreatedWaiter, ...
 - [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
 - [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
 - [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)
-
-
-
 
 ## Literals
 
@@ -157,13 +146,10 @@ from mypy_boto3_acm_pca.literals import AccessMethodType, ...
 - [SigningAlgorithm](./literals.md#signingalgorithm)
 - [ValidityPeriodType](./literals.md#validityperiodtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

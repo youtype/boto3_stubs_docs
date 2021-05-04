@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Athena
 
-Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
-type annotations stubs module [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+Auto-generated documentation for
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+type annotations stubs module
+[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
 ```bash
 pip install mypy-boto3-athena
@@ -19,7 +21,7 @@ pip install mypy-boto3-athena
 
 ## AthenaClient
 
-Type annotations for  `boto3.client("athena")` as [AthenaClient](./client.md)
+Type annotations for `boto3.client("athena")` as [AthenaClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_athena.client import AthenaClient
 ```
 
-
 AthenaClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_get_named_query](./client.md#batch-get-named-query)
 - [batch_get_query_execution](./client.md#batch-get-query-execution)
 - [can_paginate](./client.md#can-paginate)
@@ -71,10 +71,8 @@ AthenaClient [exceptions](./client.md#exceptions)
 - [update_prepared_statement](./client.md#update-prepared-statement)
 - [update_work_group](./client.md#update-work-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -82,14 +80,10 @@ AthenaClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("athena").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("athena").get_paginator("...")`.
 
 Can be used directly:
 
@@ -104,11 +98,6 @@ from mypy_boto3_athena.paginators import GetQueryResultsPaginator, ...
 - [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
 - [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -134,13 +123,10 @@ from mypy_boto3_athena.literals import ColumnNullable, ...
 - [StatementType](./literals.md#statementtype)
 - [WorkGroupState](./literals.md#workgroupstate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

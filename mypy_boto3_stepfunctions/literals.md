@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SFN](./README.md) > Literals
 
-Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+Auto-generated documentation for
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+type annotations stubs module
+[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Literals for boto3 SFN module](#literals-for-boto3-sfn-module)
   - [ExecutionStatus](#executionstatus)

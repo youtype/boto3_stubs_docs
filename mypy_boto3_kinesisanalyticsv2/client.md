@@ -1,9 +1,12 @@
 # KinesisAnalyticsV2Client for boto3 KinesisAnalyticsV2 module
 
-> [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > KinesisAnalyticsV2Client
+> [Index](../README.md) > [KinesisAnalyticsV2](./README.md) >
+> KinesisAnalyticsV2Client
 
-Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+Auto-generated documentation for
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+type annotations stubs module
+[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [KinesisAnalyticsV2Client for boto3 KinesisAnalyticsV2 module](#kinesisanalyticsv2client-for-boto3-kinesisanalyticsv2-module)
   - [KinesisAnalyticsV2Client](#kinesisanalyticsv2client)
@@ -54,12 +57,13 @@ def get_kinesisanalyticsv2_client() -> KinesisAnalyticsV2Client:
     return boto3.client("kinesisanalyticsv2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client)
+Boto3 documentation:
+[KinesisAnalyticsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kinesisanalyticsv2.client import Exceptions
@@ -67,7 +71,6 @@ from mypy_boto3_kinesisanalyticsv2.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -86,494 +89,547 @@ Exceptions:
 - `Exceptions.UnableToDetectSchemaException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### add_application_cloud_watch_logging_option
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_cloud_watch_logging_option` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").add_application_cloud_watch_logging_option`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option)
 
-```python
-def add_application_cloud_watch_logging_option(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    CloudWatchLoggingOption: CloudWatchLoggingOptionTypeDef
-) -> AddApplicationCloudWatchLoggingOptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `CloudWatchLoggingOption`:
+  [CloudWatchLoggingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiontypedef)
+  *(required)*
+
+Returns
+[AddApplicationCloudWatchLoggingOptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationcloudwatchloggingoptionresponsetypedef).
 
 ### add_application_input
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_input` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").add_application_input`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input)
 
-```python
-def add_application_input(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    Input: "InputTypeDef"
-) -> AddApplicationInputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `Input`:
+  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputtypedef)
+  *(required)*
+
+Returns
+[AddApplicationInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationinputresponsetypedef).
 
 ### add_application_input_processing_configuration
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_input_processing_configuration` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").add_application_input_processing_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input_processing_configuration]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input_processing_configuration)
 
-```python
-def add_application_input_processing_configuration(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    InputId: str,
-    InputProcessingConfiguration: "InputProcessingConfigurationTypeDef"
-) -> AddApplicationInputProcessingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `InputId`: `str` *(required)*
+- `InputProcessingConfiguration`:
+  [InputProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationtypedef)
+  *(required)*
+
+Returns
+[AddApplicationInputProcessingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationinputprocessingconfigurationresponsetypedef).
 
 ### add_application_output
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_output` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").add_application_output` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_output]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_output)
 
-```python
-def add_application_output(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    Output: "OutputTypeDef"
-) -> AddApplicationOutputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `Output`:
+  [OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#outputtypedef)
+  *(required)*
+
+Returns
+[AddApplicationOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationoutputresponsetypedef).
 
 ### add_application_reference_data_source
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_reference_data_source` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").add_application_reference_data_source`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_reference_data_source]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_reference_data_source)
 
-```python
-def add_application_reference_data_source(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    ReferenceDataSource: "ReferenceDataSourceTypeDef"
-) -> AddApplicationReferenceDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `ReferenceDataSource`:
+  [ReferenceDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#referencedatasourcetypedef)
+  *(required)*
+
+Returns
+[AddApplicationReferenceDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationreferencedatasourceresponsetypedef).
 
 ### add_application_vpc_configuration
 
-Type annotations for `boto3.client("kinesisanalyticsv2").add_application_vpc_configuration` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").add_application_vpc_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_vpc_configuration]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.add_application_vpc_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_vpc_configuration)
 
-```python
-def add_application_vpc_configuration(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    VpcConfiguration: "VpcConfigurationTypeDef"
-) -> AddApplicationVpcConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationtypedef)
+  *(required)*
+
+Returns
+[AddApplicationVpcConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationvpcconfigurationresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("kinesisanalyticsv2").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.can_paginate]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").create_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").create_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application)
 
-```python
-def create_application(
-    self,
-    ApplicationName: str,
-    RuntimeEnvironment: RuntimeEnvironment,
-    ServiceExecutionRole: str,
-    ApplicationDescription: str = None,
-    ApplicationConfiguration: ApplicationConfigurationTypeDef = None,
-    CloudWatchLoggingOptions: List[CloudWatchLoggingOptionTypeDef] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `RuntimeEnvironment`:
+  [RuntimeEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#runtimeenvironment)
+  *(required)*
+- `ServiceExecutionRole`: `str` *(required)*
+- `ApplicationDescription`: `str`
+- `ApplicationConfiguration`:
+  [ApplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  `List`\[[CloudWatchLoggingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiontypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#createapplicationresponsetypedef).
 
 ### create_application_presigned_url
 
-Type annotations for `boto3.client("kinesisanalyticsv2").create_application_presigned_url` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").create_application_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_presigned_url]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.create_application_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_presigned_url)
 
-```python
-def create_application_presigned_url(
-    self,
-    ApplicationName: str,
-    UrlType: Literal['FLINK_DASHBOARD_URL'],
-    SessionExpirationDurationInSeconds: int = None
-) -> CreateApplicationPresignedUrlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `UrlType`: `Literal['FLINK_DASHBOARD_URL']` *(required)*
+- `SessionExpirationDurationInSeconds`: `int`
+
+Returns
+[CreateApplicationPresignedUrlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#createapplicationpresignedurlresponsetypedef).
 
 ### create_application_snapshot
 
-Type annotations for `boto3.client("kinesisanalyticsv2").create_application_snapshot` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").create_application_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.create_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot)
 
-```python
-def create_application_snapshot(
-    self,
-    ApplicationName: str,
-    SnapshotName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `SnapshotName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").delete_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    ApplicationName: str,
-    CreateTimestamp: datetime
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CreateTimestamp`: `datetime` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_application_cloud_watch_logging_option
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_cloud_watch_logging_option` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_cloud_watch_logging_option`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option)
 
-```python
-def delete_application_cloud_watch_logging_option(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    CloudWatchLoggingOptionId: str
-) -> DeleteApplicationCloudWatchLoggingOptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `CloudWatchLoggingOptionId`: `str` *(required)*
+
+Returns
+[DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationcloudwatchloggingoptionresponsetypedef).
 
 ### delete_application_input_processing_configuration
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_input_processing_configuration` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_input_processing_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_input_processing_configuration]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_input_processing_configuration)
 
-```python
-def delete_application_input_processing_configuration(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    InputId: str
-) -> DeleteApplicationInputProcessingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `InputId`: `str` *(required)*
+
+Returns
+[DeleteApplicationInputProcessingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationinputprocessingconfigurationresponsetypedef).
 
 ### delete_application_output
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_output` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_output` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_output]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_output)
 
-```python
-def delete_application_output(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    OutputId: str
-) -> DeleteApplicationOutputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `OutputId`: `str` *(required)*
+
+Returns
+[DeleteApplicationOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationoutputresponsetypedef).
 
 ### delete_application_reference_data_source
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_reference_data_source` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_reference_data_source`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_reference_data_source]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_reference_data_source)
 
-```python
-def delete_application_reference_data_source(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    ReferenceId: str
-) -> DeleteApplicationReferenceDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `ReferenceId`: `str` *(required)*
+
+Returns
+[DeleteApplicationReferenceDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationreferencedatasourceresponsetypedef).
 
 ### delete_application_snapshot
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_snapshot` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_snapshot]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_snapshot)
 
-```python
-def delete_application_snapshot(
-    self,
-    ApplicationName: str,
-    SnapshotName: str,
-    SnapshotCreationTimestamp: datetime
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `SnapshotName`: `str` *(required)*
+- `SnapshotCreationTimestamp`: `datetime` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_application_vpc_configuration
 
-Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_vpc_configuration` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").delete_application_vpc_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_vpc_configuration]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.delete_application_vpc_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_vpc_configuration)
 
-```python
-def delete_application_vpc_configuration(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    VpcConfigurationId: str
-) -> DeleteApplicationVpcConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `VpcConfigurationId`: `str` *(required)*
+
+Returns
+[DeleteApplicationVpcConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationvpcconfigurationresponsetypedef).
 
 ### describe_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").describe_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").describe_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application)
 
-```python
-def describe_application(
-    self,
-    ApplicationName: str,
-    IncludeAdditionalDetails: bool = None
-) -> DescribeApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `IncludeAdditionalDetails`: `bool`
+
+Returns
+[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#describeapplicationresponsetypedef).
 
 ### describe_application_snapshot
 
-Type annotations for `boto3.client("kinesisanalyticsv2").describe_application_snapshot` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").describe_application_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.describe_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot)
 
-```python
-def describe_application_snapshot(
-    self,
-    ApplicationName: str,
-    SnapshotName: str
-) -> DescribeApplicationSnapshotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `SnapshotName`: `str` *(required)*
+
+Returns
+[DescribeApplicationSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#describeapplicationsnapshotresponsetypedef).
 
 ### discover_input_schema
 
-Type annotations for `boto3.client("kinesisanalyticsv2").discover_input_schema` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").discover_input_schema`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.discover_input_schema]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.discover_input_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.discover_input_schema)
 
-```python
-def discover_input_schema(
-    self,
-    ServiceExecutionRole: str,
-    ResourceARN: str = None,
-    InputStartingPositionConfiguration: "InputStartingPositionConfigurationTypeDef" = None,
-    S3Configuration: S3ConfigurationTypeDef = None,
-    InputProcessingConfiguration: "InputProcessingConfigurationTypeDef" = None
-) -> DiscoverInputSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceExecutionRole`: `str` *(required)*
+- `ResourceARN`: `str`
+- `InputStartingPositionConfiguration`:
+  [InputStartingPositionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputstartingpositionconfigurationtypedef)
+- `S3Configuration`:
+  [S3ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3configurationtypedef)
+- `InputProcessingConfiguration`:
+  [InputProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationtypedef)
+
+Returns
+[DiscoverInputSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#discoverinputschemaresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("kinesisanalyticsv2").generate_presigned_url` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.generate_presigned_url]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_application_snapshots
 
-Type annotations for `boto3.client("kinesisanalyticsv2").list_application_snapshots` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").list_application_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_snapshots]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.list_application_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_snapshots)
 
-```python
-def list_application_snapshots(
-    self,
-    ApplicationName: str,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListApplicationSnapshotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationSnapshotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationsnapshotsresponsetypedef).
 
 ### list_applications
 
-Type annotations for `boto3.client("kinesisanalyticsv2").list_applications` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").list_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications)
 
-```python
-def list_applications(
-    self,
-    Limit: int = None,
-    NextToken: str = None
-) -> ListApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("kinesisanalyticsv2").list_tags_for_resource` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").start_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").start_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application)
 
-```python
-def start_application(
-    self,
-    ApplicationName: str,
-    RunConfiguration: RunConfigurationTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `RunConfiguration`:
+  [RunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#runconfigurationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").stop_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").stop_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application)
 
-```python
-def stop_application(
-    self,
-    ApplicationName: str,
-    Force: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `Force`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("kinesisanalyticsv2").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Type annotations for `boto3.client("kinesisanalyticsv2").untag_resource` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").untag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
-Type annotations for `boto3.client("kinesisanalyticsv2").update_application` method.
+Type annotations for `boto3.client("kinesisanalyticsv2").update_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application)
 
-```python
-def update_application(
-    self,
-    ApplicationName: str,
-    CurrentApplicationVersionId: int,
-    ApplicationConfigurationUpdate: ApplicationConfigurationUpdateTypeDef = None,
-    ServiceExecutionRoleUpdate: str = None,
-    RunConfigurationUpdate: RunConfigurationUpdateTypeDef = None,
-    CloudWatchLoggingOptionUpdates: List[CloudWatchLoggingOptionUpdateTypeDef] = None
-) -> UpdateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+- `ApplicationConfigurationUpdate`:
+  [ApplicationConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationconfigurationupdatetypedef)
+- `ServiceExecutionRoleUpdate`: `str`
+- `RunConfigurationUpdate`:
+  [RunConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#runconfigurationupdatetypedef)
+- `CloudWatchLoggingOptionUpdates`:
+  `List`\[[CloudWatchLoggingOptionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptionupdatetypedef)\]
+
+Returns
+[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#updateapplicationresponsetypedef).
 
 ### update_application_maintenance_configuration
 
-Type annotations for `boto3.client("kinesisanalyticsv2").update_application_maintenance_configuration` method.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").update_application_maintenance_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration]
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.update_application_maintenance_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration)
 
-```python
-def update_application_maintenance_configuration(
-    self,
-    ApplicationName: str,
-    ApplicationMaintenanceConfigurationUpdate: ApplicationMaintenanceConfigurationUpdateTypeDef
-) -> UpdateApplicationMaintenanceConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ApplicationName`: `str` *(required)*
+- `ApplicationMaintenanceConfigurationUpdate`:
+  [ApplicationMaintenanceConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationmaintenanceconfigurationupdatetypedef)
+  *(required)*
 
+Returns
+[UpdateApplicationMaintenanceConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#updateapplicationmaintenanceconfigurationresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator` method with overloads.
+Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_application_snapshots")` -> [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
-- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
+- `client.get_paginator("list_application_snapshots")` ->
+  [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
+- `client.get_paginator("list_applications")` ->
+  [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)

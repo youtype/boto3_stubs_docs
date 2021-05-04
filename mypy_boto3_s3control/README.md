@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > S3Control
 
-Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+Auto-generated documentation for
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+type annotations stubs module
+[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ```bash
 pip install mypy-boto3-s3control
@@ -19,7 +21,8 @@ pip install mypy-boto3-s3control
 
 ## S3ControlClient
 
-Type annotations for  `boto3.client("s3control")` as [S3ControlClient](./client.md)
+Type annotations for `boto3.client("s3control")` as
+[S3ControlClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_s3control.client import S3ControlClient
 ```
 
-
 S3ControlClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_access_point](./client.md#create-access-point)
 - [create_access_point_for_object_lambda](./client.md#create-access-point-for-object-lambda)
@@ -86,10 +87,8 @@ S3ControlClient [exceptions](./client.md#exceptions)
 - [update_job_priority](./client.md#update-job-priority)
 - [update_job_status](./client.md#update-job-status)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [BucketAlreadyExists](./client.md#bucketalreadyexists)
 - [BucketAlreadyOwnedByYou](./client.md#bucketalreadyownedbyyou)
@@ -104,14 +103,10 @@ S3ControlClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("s3control").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("s3control").get_paginator("...")`.
 
 Can be used directly:
 
@@ -120,11 +115,6 @@ from mypy_boto3_s3control.paginators import ListAccessPointsForObjectLambdaPagin
 ```
 
 - [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -164,13 +154,10 @@ from mypy_boto3_s3control.literals import BucketCannedACL, ...
 - [S3StorageClass](./literals.md#s3storageclass)
 - [TransitionStorageClass](./literals.md#transitionstorageclass)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

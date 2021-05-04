@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > KinesisAnalyticsV2
 
-Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+Auto-generated documentation for
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+type annotations stubs module
+[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 ```bash
 pip install mypy-boto3-kinesisanalyticsv2
@@ -19,7 +21,8 @@ pip install mypy-boto3-kinesisanalyticsv2
 
 ## KinesisAnalyticsV2Client
 
-Type annotations for  `boto3.client("kinesisanalyticsv2")` as [KinesisAnalyticsV2Client](./client.md)
+Type annotations for `boto3.client("kinesisanalyticsv2")` as
+[KinesisAnalyticsV2Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 ```
 
-
 KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_application_cloud_watch_logging_option](./client.md#add-application-cloud-watch-logging-option)
 - [add_application_input](./client.md#add-application-input)
 - [add_application_input_processing_configuration](./client.md#add-application-input-processing-configuration)
@@ -65,10 +66,8 @@ KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
 - [update_application](./client.md#update-application)
 - [update_application_maintenance_configuration](./client.md#update-application-maintenance-configuration)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CodeValidationException](./client.md#codevalidationexception)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -84,14 +83,10 @@ KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
 - [UnableToDetectSchemaException](./client.md#unabletodetectschemaexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("kinesisanalyticsv2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("kinesisanalyticsv2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -101,11 +96,6 @@ from mypy_boto3_kinesisanalyticsv2.paginators import ListApplicationSnapshotsPag
 
 - [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -131,13 +121,10 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreType, ...
 - [SnapshotStatus](./literals.md#snapshotstatus)
 - [UrlType](./literals.md#urltype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

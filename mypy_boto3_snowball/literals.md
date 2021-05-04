@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Snowball](./README.md) > Literals
 
-Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+Auto-generated documentation for
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+type annotations stubs module
+[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [Literals for boto3 Snowball module](#literals-for-boto3-snowball-module)
   - [ClusterState](#clusterstate)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudTrail
 
-Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+Auto-generated documentation for
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+type annotations stubs module
+[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 ```bash
 pip install mypy-boto3-cloudtrail
@@ -19,7 +21,8 @@ pip install mypy-boto3-cloudtrail
 
 ## CloudTrailClient
 
-Type annotations for  `boto3.client("cloudtrail")` as [CloudTrailClient](./client.md)
+Type annotations for `boto3.client("cloudtrail")` as
+[CloudTrailClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_cloudtrail.client import CloudTrailClient
 ```
 
-
 CloudTrailClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags](./client.md#add-tags)
 - [can_paginate](./client.md#can-paginate)
 - [create_trail](./client.md#create-trail)
@@ -55,10 +56,8 @@ CloudTrailClient [exceptions](./client.md#exceptions)
 - [stop_logging](./client.md#stop-logging)
 - [update_trail](./client.md#update-trail)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CloudTrailARNInvalidException](./client.md#cloudtrailarninvalidexception)
 - [CloudTrailAccessNotEnabledException](./client.md#cloudtrailaccessnotenabledexception)
@@ -105,14 +104,10 @@ CloudTrailClient [exceptions](./client.md#exceptions)
 - [TrailNotProvidedException](./client.md#trailnotprovidedexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloudtrail").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloudtrail").get_paginator("...")`.
 
 Can be used directly:
 
@@ -124,11 +119,6 @@ from mypy_boto3_cloudtrail.paginators import ListPublicKeysPaginator, ...
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
 - [ListTrailsPaginator](./paginators.md#listtrailspaginator)
 - [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -149,13 +139,10 @@ from mypy_boto3_cloudtrail.literals import EventCategory, ...
 - [LookupEventsPaginatorName](./literals.md#lookupeventspaginatorname)
 - [ReadWriteType](./literals.md#readwritetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

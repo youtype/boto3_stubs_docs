@@ -1,9 +1,12 @@
 # ApplicationInsightsClient for boto3 ApplicationInsights module
 
-> [Index](../README.md) > [ApplicationInsights](./README.md) > ApplicationInsightsClient
+> [Index](../README.md) > [ApplicationInsights](./README.md) >
+> ApplicationInsightsClient
 
-Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
-type annotations stubs module [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+Auto-generated documentation for
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+type annotations stubs module
+[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 - [ApplicationInsightsClient for boto3 ApplicationInsights module](#applicationinsightsclient-for-boto3-applicationinsights-module)
   - [ApplicationInsightsClient](#applicationinsightsclient)
@@ -52,12 +55,13 @@ def get_application-insights_client() -> ApplicationInsightsClient:
     return boto3.client("application-insights")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
+Boto3 documentation:
+[ApplicationInsights.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_application_insights.client import Exceptions
@@ -65,7 +69,6 @@ from mypy_boto3_application_insights.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -79,471 +82,493 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("application-insights").can_paginate` method.
+Type annotations for `boto3.client("application-insights").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate]
+Boto3 documentation:
+[ApplicationInsights.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_application
 
-Type annotations for `boto3.client("application-insights").create_application` method.
+Type annotations for `boto3.client("application-insights").create_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application]
+Boto3 documentation:
+[ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
 
-```python
-def create_application(
-    self,
-    ResourceGroupName: str,
-    OpsCenterEnabled: bool = None,
-    CWEMonitorEnabled: bool = None,
-    OpsItemSNSTopicArn: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `OpsCenterEnabled`: `bool`
+- `CWEMonitorEnabled`: `bool`
+- `OpsItemSNSTopicArn`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#createapplicationresponsetypedef).
 
 ### create_component
 
-Type annotations for `boto3.client("application-insights").create_component` method.
+Type annotations for `boto3.client("application-insights").create_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component]
+Boto3 documentation:
+[ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
 
-```python
-def create_component(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str,
-    ResourceList: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+- `ResourceList`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_log_pattern
 
-Type annotations for `boto3.client("application-insights").create_log_pattern` method.
+Type annotations for `boto3.client("application-insights").create_log_pattern`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern]
+Boto3 documentation:
+[ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
 
-```python
-def create_log_pattern(
-    self,
-    ResourceGroupName: str,
-    PatternSetName: str,
-    PatternName: str,
-    Pattern: str,
-    Rank: int
-) -> CreateLogPatternResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `PatternSetName`: `str` *(required)*
+- `PatternName`: `str` *(required)*
+- `Pattern`: `str` *(required)*
+- `Rank`: `int` *(required)*
+
+Returns
+[CreateLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#createlogpatternresponsetypedef).
 
 ### delete_application
 
-Type annotations for `boto3.client("application-insights").delete_application` method.
+Type annotations for `boto3.client("application-insights").delete_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application]
+Boto3 documentation:
+[ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    ResourceGroupName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_component
 
-Type annotations for `boto3.client("application-insights").delete_component` method.
+Type annotations for `boto3.client("application-insights").delete_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component]
+Boto3 documentation:
+[ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
 
-```python
-def delete_component(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_log_pattern
 
-Type annotations for `boto3.client("application-insights").delete_log_pattern` method.
+Type annotations for `boto3.client("application-insights").delete_log_pattern`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern]
+Boto3 documentation:
+[ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
 
-```python
-def delete_log_pattern(
-    self,
-    ResourceGroupName: str,
-    PatternSetName: str,
-    PatternName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `PatternSetName`: `str` *(required)*
+- `PatternName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application
 
-Type annotations for `boto3.client("application-insights").describe_application` method.
+Type annotations for
+`boto3.client("application-insights").describe_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
 
-```python
-def describe_application(
-    self,
-    ResourceGroupName: str
-) -> DescribeApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+
+Returns
+[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeapplicationresponsetypedef).
 
 ### describe_component
 
-Type annotations for `boto3.client("application-insights").describe_component` method.
+Type annotations for `boto3.client("application-insights").describe_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
 
-```python
-def describe_component(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str
-) -> DescribeComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+
+Returns
+[DescribeComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentresponsetypedef).
 
 ### describe_component_configuration
 
-Type annotations for `boto3.client("application-insights").describe_component_configuration` method.
+Type annotations for
+`boto3.client("application-insights").describe_component_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
 
-```python
-def describe_component_configuration(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str
-) -> DescribeComponentConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+
+Returns
+[DescribeComponentConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentconfigurationresponsetypedef).
 
 ### describe_component_configuration_recommendation
 
-Type annotations for `boto3.client("application-insights").describe_component_configuration_recommendation` method.
+Type annotations for
+`boto3.client("application-insights").describe_component_configuration_recommendation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
 
-```python
-def describe_component_configuration_recommendation(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str,
-    Tier: Tier
-) -> DescribeComponentConfigurationRecommendationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+- `Tier`:
+  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
+  *(required)*
+
+Returns
+[DescribeComponentConfigurationRecommendationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentconfigurationrecommendationresponsetypedef).
 
 ### describe_log_pattern
 
-Type annotations for `boto3.client("application-insights").describe_log_pattern` method.
+Type annotations for
+`boto3.client("application-insights").describe_log_pattern` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
 
-```python
-def describe_log_pattern(
-    self,
-    ResourceGroupName: str,
-    PatternSetName: str,
-    PatternName: str
-) -> DescribeLogPatternResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `PatternSetName`: `str` *(required)*
+- `PatternName`: `str` *(required)*
+
+Returns
+[DescribeLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describelogpatternresponsetypedef).
 
 ### describe_observation
 
-Type annotations for `boto3.client("application-insights").describe_observation` method.
+Type annotations for
+`boto3.client("application-insights").describe_observation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
 
-```python
-def describe_observation(
-    self,
-    ObservationId: str
-) -> DescribeObservationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ObservationId`: `str` *(required)*
+
+Returns
+[DescribeObservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeobservationresponsetypedef).
 
 ### describe_problem
 
-Type annotations for `boto3.client("application-insights").describe_problem` method.
+Type annotations for `boto3.client("application-insights").describe_problem`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
 
-```python
-def describe_problem(
-    self,
-    ProblemId: str
-) -> DescribeProblemResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProblemId`: `str` *(required)*
+
+Returns
+[DescribeProblemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeproblemresponsetypedef).
 
 ### describe_problem_observations
 
-Type annotations for `boto3.client("application-insights").describe_problem_observations` method.
+Type annotations for
+`boto3.client("application-insights").describe_problem_observations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations]
+Boto3 documentation:
+[ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
 
-```python
-def describe_problem_observations(
-    self,
-    ProblemId: str
-) -> DescribeProblemObservationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProblemId`: `str` *(required)*
+
+Returns
+[DescribeProblemObservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeproblemobservationsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("application-insights").generate_presigned_url` method.
+Type annotations for
+`boto3.client("application-insights").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url]
+Boto3 documentation:
+[ApplicationInsights.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_applications
 
-Type annotations for `boto3.client("application-insights").list_applications` method.
+Type annotations for `boto3.client("application-insights").list_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications]
+Boto3 documentation:
+[ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
 
-```python
-def list_applications(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listapplicationsresponsetypedef).
 
 ### list_components
 
-Type annotations for `boto3.client("application-insights").list_components` method.
+Type annotations for `boto3.client("application-insights").list_components`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components]
+Boto3 documentation:
+[ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
 
-```python
-def list_components(
-    self,
-    ResourceGroupName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListComponentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listcomponentsresponsetypedef).
 
 ### list_configuration_history
 
-Type annotations for `boto3.client("application-insights").list_configuration_history` method.
+Type annotations for
+`boto3.client("application-insights").list_configuration_history` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history]
+Boto3 documentation:
+[ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
 
-```python
-def list_configuration_history(
-    self,
-    ResourceGroupName: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    EventStatus: ConfigurationEventStatus = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConfigurationHistoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `EventStatus`:
+  [ConfigurationEventStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#configurationeventstatus)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConfigurationHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listconfigurationhistoryresponsetypedef).
 
 ### list_log_pattern_sets
 
-Type annotations for `boto3.client("application-insights").list_log_pattern_sets` method.
+Type annotations for
+`boto3.client("application-insights").list_log_pattern_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets]
+Boto3 documentation:
+[ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
 
-```python
-def list_log_pattern_sets(
-    self,
-    ResourceGroupName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListLogPatternSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListLogPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listlogpatternsetsresponsetypedef).
 
 ### list_log_patterns
 
-Type annotations for `boto3.client("application-insights").list_log_patterns` method.
+Type annotations for `boto3.client("application-insights").list_log_patterns`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns]
+Boto3 documentation:
+[ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
 
-```python
-def list_log_patterns(
-    self,
-    ResourceGroupName: str,
-    PatternSetName: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListLogPatternsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `PatternSetName`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListLogPatternsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listlogpatternsresponsetypedef).
 
 ### list_problems
 
-Type annotations for `boto3.client("application-insights").list_problems` method.
+Type annotations for `boto3.client("application-insights").list_problems`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems]
+Boto3 documentation:
+[ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
 
-```python
-def list_problems(
-    self,
-    ResourceGroupName: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListProblemsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListProblemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listproblemsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("application-insights").list_tags_for_resource` method.
+Type annotations for
+`boto3.client("application-insights").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource]
+Boto3 documentation:
+[ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
-Type annotations for `boto3.client("application-insights").tag_resource` method.
+Type annotations for `boto3.client("application-insights").tag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource]
+Boto3 documentation:
+[ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Type annotations for `boto3.client("application-insights").untag_resource` method.
+Type annotations for `boto3.client("application-insights").untag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource]
+Boto3 documentation:
+[ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
-Type annotations for `boto3.client("application-insights").update_application` method.
+Type annotations for `boto3.client("application-insights").update_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application]
+Boto3 documentation:
+[ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
 
-```python
-def update_application(
-    self,
-    ResourceGroupName: str,
-    OpsCenterEnabled: bool = None,
-    CWEMonitorEnabled: bool = None,
-    OpsItemSNSTopicArn: str = None,
-    RemoveSNSTopic: bool = None
-) -> UpdateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `OpsCenterEnabled`: `bool`
+- `CWEMonitorEnabled`: `bool`
+- `OpsItemSNSTopicArn`: `str`
+- `RemoveSNSTopic`: `bool`
+
+Returns
+[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#updateapplicationresponsetypedef).
 
 ### update_component
 
-Type annotations for `boto3.client("application-insights").update_component` method.
+Type annotations for `boto3.client("application-insights").update_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component]
+Boto3 documentation:
+[ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
 
-```python
-def update_component(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str,
-    NewComponentName: str = None,
-    ResourceList: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+- `NewComponentName`: `str`
+- `ResourceList`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_component_configuration
 
-Type annotations for `boto3.client("application-insights").update_component_configuration` method.
+Type annotations for
+`boto3.client("application-insights").update_component_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration]
+Boto3 documentation:
+[ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
 
-```python
-def update_component_configuration(
-    self,
-    ResourceGroupName: str,
-    ComponentName: str,
-    Monitor: bool = None,
-    Tier: Tier = None,
-    ComponentConfiguration: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceGroupName`: `str` *(required)*
+- `ComponentName`: `str` *(required)*
+- `Monitor`: `bool`
+- `Tier`:
+  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
+- `ComponentConfiguration`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_log_pattern
 
-Type annotations for `boto3.client("application-insights").update_log_pattern` method.
+Type annotations for `boto3.client("application-insights").update_log_pattern`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern]
+Boto3 documentation:
+[ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
 
-```python
-def update_log_pattern(
-    self,
-    ResourceGroupName: str,
-    PatternSetName: str,
-    PatternName: str,
-    Pattern: str = None,
-    Rank: int = None
-) -> UpdateLogPatternResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ResourceGroupName`: `str` *(required)*
+- `PatternSetName`: `str` *(required)*
+- `PatternName`: `str` *(required)*
+- `Pattern`: `str`
+- `Rank`: `int`
 
-
+Returns
+[UpdateLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#updatelogpatternresponsetypedef).

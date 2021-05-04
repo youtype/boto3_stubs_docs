@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SMS](./README.md) > Structures
 
-Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+Auto-generated documentation for
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+type annotations stubs module
+[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
 - [Typed dictionaries for boto3 SMS module](#typed-dictionaries-for-boto3-sms-module)
   - [AppSummaryTypeDef](#appsummarytypedef)
@@ -60,30 +62,33 @@ type annotations stubs module [mypy_boto3_sms](https://pypi.org/project/mypy-bot
 from mypy_boto3_sms.type_defs import AppSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `appId`: `str`
 - `importedAppId`: `str`
 - `name`: `str`
 - `description`: `str`
-- `status`: `AppStatus`
+- `status`:
+  [AppStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#appstatus)
 - `statusMessage`: `str`
-- `replicationConfigurationStatus`: `AppReplicationConfigurationStatus`
-- `replicationStatus`: `AppReplicationStatus`
+- `replicationConfigurationStatus`:
+  [AppReplicationConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#appreplicationconfigurationstatus)
+- `replicationStatus`:
+  [AppReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#appreplicationstatus)
 - `replicationStatusMessage`: `str`
 - `latestReplicationTime`: `datetime`
-- `launchConfigurationStatus`: `AppLaunchConfigurationStatus`
-- `launchStatus`: `AppLaunchStatus`
+- `launchConfigurationStatus`:
+  [AppLaunchConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#applaunchconfigurationstatus)
+- `launchStatus`:
+  [AppLaunchStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#applaunchstatus)
 - `launchStatusMessage`: `str`
-- `launchDetails`: `"LaunchDetailsTypeDef"`
+- `launchDetails`:
+  [LaunchDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#launchdetailstypedef)
 - `creationTime`: `datetime`
 - `lastModified`: `datetime`
 - `roleName`: `str`
 - `totalServerGroups`: `int`
 - `totalServers`: `int`
-
 
 ## AppValidationConfigurationTypeDef
 
@@ -91,15 +96,13 @@ Optional fields:
 from mypy_boto3_sms.type_defs import AppValidationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `validationId`: `str`
 - `name`: `str`
 - `appValidationStrategy`: `Literal['SSM']`
-- `ssmValidationParameters`: `"SSMValidationParametersTypeDef"`
-
+- `ssmValidationParameters`:
+  [SSMValidationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#ssmvalidationparameterstypedef)
 
 ## AppValidationOutputTypeDef
 
@@ -107,13 +110,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import AppValidationOutputTypeDef
 ```
 
-
 Required fields:
-- `ssmOutput`: `"SSMOutputTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ssmOutput`:
+  [SSMOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#ssmoutputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#responsemetadata)
 
 ## ConnectorTypeDef
 
@@ -121,21 +123,21 @@ Required fields:
 from mypy_boto3_sms.type_defs import ConnectorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `connectorId`: `str`
 - `version`: `str`
-- `status`: `ConnectorStatus`
-- `capabilityList`: `List[ConnectorCapability]`
+- `status`:
+  [ConnectorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#connectorstatus)
+- `capabilityList`:
+  `List`\[[ConnectorCapability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#connectorcapability)\]
 - `vmManagerName`: `str`
-- `vmManagerType`: `VmManagerType`
+- `vmManagerType`:
+  [VmManagerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#vmmanagertype)
 - `vmManagerId`: `str`
 - `ipAddress`: `str`
 - `macAddress`: `str`
 - `associatedOn`: `datetime`
-
 
 ## CreateAppResponseTypeDef
 
@@ -143,14 +145,14 @@ Optional fields:
 from mypy_boto3_sms.type_defs import CreateAppResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `appSummary`: `"AppSummaryTypeDef"`
-- `serverGroups`: `List["ServerGroupTypeDef"]`
-- `tags`: `List["TagTypeDef"]`
 
+- `appSummary`:
+  [AppSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appsummarytypedef)
+- `serverGroups`:
+  `List`\[[ServerGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouptypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#tagtypedef)\]
 
 ## CreateReplicationJobResponseTypeDef
 
@@ -158,12 +160,9 @@ Optional fields:
 from mypy_boto3_sms.type_defs import CreateReplicationJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replicationJobId`: `str`
 
+- `replicationJobId`: `str`
 
 ## GenerateChangeSetResponseTypeDef
 
@@ -171,12 +170,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GenerateChangeSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Location`: `"S3LocationTypeDef"`
 
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
 
 ## GenerateTemplateResponseTypeDef
 
@@ -184,12 +181,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GenerateTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Location`: `"S3LocationTypeDef"`
 
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
 
 ## GetAppLaunchConfigurationResponseTypeDef
 
@@ -197,15 +192,13 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `appId`: `str`
 - `roleName`: `str`
 - `autoLaunch`: `bool`
-- `serverGroupLaunchConfigurations`: `List["ServerGroupLaunchConfigurationTypeDef"]`
-
+- `serverGroupLaunchConfigurations`:
+  `List`\[[ServerGroupLaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouplaunchconfigurationtypedef)\]
 
 ## GetAppReplicationConfigurationResponseTypeDef
 
@@ -213,12 +206,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serverGroupReplicationConfigurations`: `List["ServerGroupReplicationConfigurationTypeDef"]`
 
+- `serverGroupReplicationConfigurations`:
+  `List`\[[ServerGroupReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergroupreplicationconfigurationtypedef)\]
 
 ## GetAppResponseTypeDef
 
@@ -226,14 +217,14 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetAppResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `appSummary`: `"AppSummaryTypeDef"`
-- `serverGroups`: `List["ServerGroupTypeDef"]`
-- `tags`: `List["TagTypeDef"]`
 
+- `appSummary`:
+  [AppSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appsummarytypedef)
+- `serverGroups`:
+  `List`\[[ServerGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouptypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#tagtypedef)\]
 
 ## GetAppValidationConfigurationResponseTypeDef
 
@@ -241,13 +232,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetAppValidationConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `appValidationConfigurations`: `List["AppValidationConfigurationTypeDef"]`
-- `serverGroupValidationConfigurations`: `List["ServerGroupValidationConfigurationTypeDef"]`
 
+- `appValidationConfigurations`:
+  `List`\[[AppValidationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appvalidationconfigurationtypedef)\]
+- `serverGroupValidationConfigurations`:
+  `List`\[[ServerGroupValidationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergroupvalidationconfigurationtypedef)\]
 
 ## GetAppValidationOutputResponseTypeDef
 
@@ -255,12 +245,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetAppValidationOutputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `validationOutputList`: `List["ValidationOutputTypeDef"]`
 
+- `validationOutputList`:
+  `List`\[[ValidationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#validationoutputtypedef)\]
 
 ## GetConnectorsResponseTypeDef
 
@@ -268,13 +256,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetConnectorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `connectorList`: `List["ConnectorTypeDef"]`
-- `nextToken`: `str`
 
+- `connectorList`:
+  `List`\[[ConnectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#connectortypedef)\]
+- `nextToken`: `str`
 
 ## GetReplicationJobsResponseTypeDef
 
@@ -282,13 +268,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetReplicationJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replicationJobList`: `List["ReplicationJobTypeDef"]`
-- `nextToken`: `str`
 
+- `replicationJobList`:
+  `List`\[[ReplicationJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#replicationjobtypedef)\]
+- `nextToken`: `str`
 
 ## GetReplicationRunsResponseTypeDef
 
@@ -296,14 +280,13 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetReplicationRunsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replicationJob`: `"ReplicationJobTypeDef"`
-- `replicationRunList`: `List["ReplicationRunTypeDef"]`
-- `nextToken`: `str`
 
+- `replicationJob`:
+  [ReplicationJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#replicationjobtypedef)
+- `replicationRunList`:
+  `List`\[[ReplicationRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#replicationruntypedef)\]
+- `nextToken`: `str`
 
 ## GetServersResponseTypeDef
 
@@ -311,15 +294,14 @@ Optional fields:
 from mypy_boto3_sms.type_defs import GetServersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `lastModifiedOn`: `datetime`
-- `serverCatalogStatus`: `ServerCatalogStatus`
-- `serverList`: `List["ServerTypeDef"]`
-- `nextToken`: `str`
 
+- `lastModifiedOn`: `datetime`
+- `serverCatalogStatus`:
+  [ServerCatalogStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#servercatalogstatus)
+- `serverList`:
+  `List`\[[ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)\]
+- `nextToken`: `str`
 
 ## LaunchDetailsTypeDef
 
@@ -327,14 +309,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import LaunchDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `latestLaunchTime`: `datetime`
 - `stackName`: `str`
 - `stackId`: `str`
-
 
 ## ListAppsResponseTypeDef
 
@@ -342,13 +321,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ListAppsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `apps`: `List["AppSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `apps`:
+  `List`\[[AppSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appsummarytypedef)\]
+- `nextToken`: `str`
 
 ## NotificationContextTypeDef
 
@@ -356,14 +333,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import NotificationContextTypeDef
 ```
 
-
-
-
 Optional fields:
-- `validationId`: `str`
-- `status`: `ValidationStatus`
-- `statusMessage`: `str`
 
+- `validationId`: `str`
+- `status`:
+  [ValidationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#validationstatus)
+- `statusMessage`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -371,14 +346,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ReplicationJobTypeDef
 
@@ -386,29 +358,30 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ReplicationJobTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `replicationJobId`: `str`
 - `serverId`: `str`
 - `serverType`: `Literal['VIRTUAL_MACHINE']`
-- `vmServer`: `"VmServerTypeDef"`
+- `vmServer`:
+  [VmServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#vmservertypedef)
 - `seedReplicationTime`: `datetime`
 - `frequency`: `int`
 - `runOnce`: `bool`
 - `nextReplicationRunStartTime`: `datetime`
-- `licenseType`: `LicenseType`
+- `licenseType`:
+  [LicenseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#licensetype)
 - `roleName`: `str`
 - `latestAmiId`: `str`
-- `state`: `ReplicationJobState`
+- `state`:
+  [ReplicationJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#replicationjobstate)
 - `statusMessage`: `str`
 - `description`: `str`
 - `numberOfRecentAmisToKeep`: `int`
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
-- `replicationRunList`: `List["ReplicationRunTypeDef"]`
-
+- `replicationRunList`:
+  `List`\[[ReplicationRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#replicationruntypedef)\]
 
 ## ReplicationRunStageDetailsTypeDef
 
@@ -416,13 +389,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ReplicationRunStageDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `stage`: `str`
 - `stageProgress`: `str`
-
 
 ## ReplicationRunTypeDef
 
@@ -430,14 +400,15 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ReplicationRunTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `replicationRunId`: `str`
-- `state`: `ReplicationRunState`
-- `type`: `ReplicationRunType`
-- `stageDetails`: `"ReplicationRunStageDetailsTypeDef"`
+- `state`:
+  [ReplicationRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#replicationrunstate)
+- `type`:
+  [ReplicationRunType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#replicationruntype)
+- `stageDetails`:
+  [ReplicationRunStageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#replicationrunstagedetailstypedef)
 - `statusMessage`: `str`
 - `amiId`: `str`
 - `scheduledStartTime`: `datetime`
@@ -446,23 +417,19 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
-
 ## ResponseMetadata
 
 ```python
 from mypy_boto3_sms.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3LocationTypeDef
 
@@ -470,13 +437,10 @@ Required fields:
 from mypy_boto3_sms.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucket`: `str`
 - `key`: `str`
-
 
 ## SSMOutputTypeDef
 
@@ -484,13 +448,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import SSMOutputTypeDef
 ```
 
-
 Required fields:
-- `s3Location`: `"S3LocationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#responsemetadata)
 
 ## SSMValidationParametersTypeDef
 
@@ -498,17 +461,16 @@ Required fields:
 from mypy_boto3_sms.type_defs import SSMValidationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `source`: `"SourceTypeDef"`
+
+- `source`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#sourcetypedef)
 - `instanceId`: `str`
-- `scriptType`: `ScriptType`
+- `scriptType`:
+  [ScriptType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#scripttype)
 - `command`: `str`
 - `executionTimeoutSeconds`: `int`
 - `outputS3BucketName`: `str`
-
 
 ## ServerGroupLaunchConfigurationTypeDef
 
@@ -516,14 +478,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerGroupLaunchConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `serverGroupId`: `str`
 - `launchOrder`: `int`
-- `serverLaunchConfigurations`: `List["ServerLaunchConfigurationTypeDef"]`
-
+- `serverLaunchConfigurations`:
+  `List`\[[ServerLaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#serverlaunchconfigurationtypedef)\]
 
 ## ServerGroupReplicationConfigurationTypeDef
 
@@ -531,13 +491,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerGroupReplicationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serverGroupId`: `str`
-- `serverReplicationConfigurations`: `List["ServerReplicationConfigurationTypeDef"]`
 
+- `serverGroupId`: `str`
+- `serverReplicationConfigurations`:
+  `List`\[[ServerReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#serverreplicationconfigurationtypedef)\]
 
 ## ServerGroupTypeDef
 
@@ -545,14 +503,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `serverGroupId`: `str`
 - `name`: `str`
-- `serverList`: `List["ServerTypeDef"]`
-
+- `serverList`:
+  `List`\[[ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)\]
 
 ## ServerGroupValidationConfigurationTypeDef
 
@@ -560,13 +516,11 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerGroupValidationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serverGroupId`: `str`
-- `serverValidationConfigurations`: `List["ServerValidationConfigurationTypeDef"]`
 
+- `serverGroupId`: `str`
+- `serverValidationConfigurations`:
+  `List`\[[ServerValidationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servervalidationconfigurationtypedef)\]
 
 ## ServerLaunchConfigurationTypeDef
 
@@ -574,23 +528,24 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerLaunchConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `server`: `"ServerTypeDef"`
+
+- `server`:
+  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)
 - `logicalId`: `str`
 - `vpc`: `str`
 - `subnet`: `str`
 - `securityGroup`: `str`
 - `ec2KeyName`: `str`
-- `userData`: `"UserDataTypeDef"`
+- `userData`:
+  [UserDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#userdatatypedef)
 - `instanceType`: `str`
 - `associatePublicIpAddress`: `bool`
 - `iamInstanceProfileName`: `str`
-- `configureScript`: `"S3LocationTypeDef"`
-- `configureScriptType`: `ScriptType`
-
+- `configureScript`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
+- `configureScriptType`:
+  [ScriptType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#scripttype)
 
 ## ServerReplicationConfigurationTypeDef
 
@@ -598,13 +553,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerReplicationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `server`: `"ServerTypeDef"`
-- `serverReplicationParameters`: `"ServerReplicationParametersTypeDef"`
 
+- `server`:
+  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)
+- `serverReplicationParameters`:
+  [ServerReplicationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#serverreplicationparameterstypedef)
 
 ## ServerReplicationParametersTypeDef
 
@@ -612,18 +566,16 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerReplicationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `seedTime`: `datetime`
 - `frequency`: `int`
 - `runOnce`: `bool`
-- `licenseType`: `LicenseType`
+- `licenseType`:
+  [LicenseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#licensetype)
 - `numberOfRecentAmisToKeep`: `int`
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
-
 
 ## ServerTypeDef
 
@@ -631,16 +583,14 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `serverId`: `str`
 - `serverType`: `Literal['VIRTUAL_MACHINE']`
-- `vmServer`: `"VmServerTypeDef"`
+- `vmServer`:
+  [VmServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#vmservertypedef)
 - `replicationJobId`: `str`
 - `replicationJobTerminated`: `bool`
-
 
 ## ServerValidationConfigurationTypeDef
 
@@ -648,16 +598,15 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerValidationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `server`: `"ServerTypeDef"`
+
+- `server`:
+  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)
 - `validationId`: `str`
 - `name`: `str`
 - `serverValidationStrategy`: `Literal['USERDATA']`
-- `userDataValidationParameters`: `"UserDataValidationParametersTypeDef"`
-
+- `userDataValidationParameters`:
+  [UserDataValidationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#userdatavalidationparameterstypedef)
 
 ## ServerValidationOutputTypeDef
 
@@ -665,13 +614,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ServerValidationOutputTypeDef
 ```
 
-
 Required fields:
-- `server`: `"ServerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `server`:
+  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#responsemetadata)
 
 ## SourceTypeDef
 
@@ -679,12 +627,10 @@ Required fields:
 from mypy_boto3_sms.type_defs import SourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Location`: `"S3LocationTypeDef"`
 
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
 
 ## StartOnDemandReplicationRunResponseTypeDef
 
@@ -692,12 +638,9 @@ Optional fields:
 from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replicationRunId`: `str`
 
+- `replicationRunId`: `str`
 
 ## TagTypeDef
 
@@ -705,13 +648,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `key`: `str`
 - `value`: `str`
-
 
 ## UpdateAppResponseTypeDef
 
@@ -719,14 +659,14 @@ Optional fields:
 from mypy_boto3_sms.type_defs import UpdateAppResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `appSummary`: `"AppSummaryTypeDef"`
-- `serverGroups`: `List["ServerGroupTypeDef"]`
-- `tags`: `List["TagTypeDef"]`
 
+- `appSummary`:
+  [AppSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appsummarytypedef)
+- `serverGroups`:
+  `List`\[[ServerGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouptypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#tagtypedef)\]
 
 ## UserDataTypeDef
 
@@ -734,12 +674,10 @@ Optional fields:
 from mypy_boto3_sms.type_defs import UserDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Location`: `"S3LocationTypeDef"`
 
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#s3locationtypedef)
 
 ## UserDataValidationParametersTypeDef
 
@@ -747,13 +685,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import UserDataValidationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `source`: `"SourceTypeDef"`
-- `scriptType`: `ScriptType`
 
+- `source`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#sourcetypedef)
+- `scriptType`:
+  [ScriptType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#scripttype)
 
 ## ValidationOutputTypeDef
 
@@ -761,19 +698,20 @@ Optional fields:
 from mypy_boto3_sms.type_defs import ValidationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `validationId`: `str`
 - `name`: `str`
-- `status`: `ValidationStatus`
+- `status`:
+  [ValidationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#validationstatus)
 - `statusMessage`: `str`
 - `latestValidationTime`: `datetime`
-- `appValidationOutput`: `"AppValidationOutputTypeDef"`
-- `serverValidationOutput`: `"ServerValidationOutputTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `appValidationOutput`:
+  [AppValidationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appvalidationoutputtypedef)
+- `serverValidationOutput`:
+  [ServerValidationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servervalidationoutputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#responsemetadata)
 
 ## VmServerAddressTypeDef
 
@@ -781,13 +719,10 @@ Required fields:
 from mypy_boto3_sms.type_defs import VmServerAddressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `vmManagerId`: `str`
 - `vmId`: `str`
-
 
 ## VmServerTypeDef
 
@@ -795,13 +730,12 @@ Optional fields:
 from mypy_boto3_sms.type_defs import VmServerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `vmServerAddress`: `"VmServerAddressTypeDef"`
+
+- `vmServerAddress`:
+  [VmServerAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#vmserveraddresstypedef)
 - `vmName`: `str`
 - `vmManagerName`: `str`
-- `vmManagerType`: `VmManagerType`
+- `vmManagerType`:
+  [VmManagerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#vmmanagertype)
 - `vmPath`: `str`
-

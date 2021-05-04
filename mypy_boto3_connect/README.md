@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Connect
 
-Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+Auto-generated documentation for
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+type annotations stubs module
+[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ```bash
 pip install mypy-boto3-connect
@@ -19,7 +21,7 @@ pip install mypy-boto3-connect
 
 ## ConnectClient
 
-Type annotations for  `boto3.client("connect")` as [ConnectClient](./client.md)
+Type annotations for `boto3.client("connect")` as [ConnectClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_connect.client import ConnectClient
 ```
 
-
 ConnectClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_approved_origin](./client.md#associate-approved-origin)
 - [associate_instance_storage_config](./client.md#associate-instance-storage-config)
 - [associate_lambda_function](./client.md#associate-lambda-function)
@@ -136,10 +136,8 @@ ConnectClient [exceptions](./client.md#exceptions)
 - [update_user_routing_profile](./client.md#update-user-routing-profile)
 - [update_user_security_profiles](./client.md#update-user-security-profiles)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ContactFlowNotPublishedException](./client.md#contactflownotpublishedexception)
 - [ContactNotFoundException](./client.md#contactnotfoundexception)
@@ -158,14 +156,10 @@ ConnectClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [UserNotFoundException](./client.md#usernotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("connect").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("connect").get_paginator("...")`.
 
 Can be used directly:
 
@@ -195,11 +189,6 @@ from mypy_boto3_connect.paginators import GetMetricDataPaginator, ...
 - [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
 - [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -260,13 +249,10 @@ from mypy_boto3_connect.literals import Channel, ...
 - [UseCaseType](./literals.md#usecasetype)
 - [VoiceRecordingTrack](./literals.md#voicerecordingtrack)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

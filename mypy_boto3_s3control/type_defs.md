@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3Control](./README.md) > Structures
 
-Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+Auto-generated documentation for
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+type annotations stubs module
+[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [Typed dictionaries for boto3 S3Control module](#typed-dictionaries-for-boto3-s3control-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
@@ -104,12 +106,9 @@ type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/my
 from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DaysAfterInitiation`: `int`
 
+- `DaysAfterInitiation`: `int`
 
 ## AccessPointTypeDef
 
@@ -117,18 +116,18 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import AccessPointTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `NetworkOrigin`: `NetworkOrigin`
+- `NetworkOrigin`:
+  [NetworkOrigin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#networkorigin)
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `VpcConfiguration`: `"VpcConfigurationTypeDef"`
-- `AccessPointArn`: `str`
 
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#vpcconfigurationtypedef)
+- `AccessPointArn`: `str`
 
 ## AccountLevelTypeDef
 
@@ -136,15 +135,15 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import AccountLevelTypeDef
 ```
 
-
 Required fields:
-- `BucketLevel`: `"BucketLevelTypeDef"`
 
-
+- `BucketLevel`:
+  [BucketLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#bucketleveltypedef)
 
 Optional fields:
-- `ActivityMetrics`: `"ActivityMetricsTypeDef"`
 
+- `ActivityMetrics`:
+  [ActivityMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#activitymetricstypedef)
 
 ## ActivityMetricsTypeDef
 
@@ -152,12 +151,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ActivityMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsEnabled`: `bool`
 
+- `IsEnabled`: `bool`
 
 ## AwsLambdaTransformationTypeDef
 
@@ -165,15 +161,13 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import AwsLambdaTransformationTypeDef
 ```
 
-
 Required fields:
+
 - `FunctionArn`: `str`
 
-
-
 Optional fields:
-- `FunctionPayload`: `str`
 
+- `FunctionPayload`: `str`
 
 ## BucketLevelTypeDef
 
@@ -181,13 +175,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import BucketLevelTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActivityMetrics`: `"ActivityMetricsTypeDef"`
-- `PrefixLevel`: `"PrefixLevelTypeDef"`
 
+- `ActivityMetrics`:
+  [ActivityMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#activitymetricstypedef)
+- `PrefixLevel`:
+  [PrefixLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#prefixleveltypedef)
 
 ## CreateAccessPointForObjectLambdaResultTypeDef
 
@@ -195,12 +188,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectLambdaAccessPointArn`: `str`
 
+- `ObjectLambdaAccessPointArn`: `str`
 
 ## CreateAccessPointResultTypeDef
 
@@ -208,12 +198,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessPointArn`: `str`
 
+- `AccessPointArn`: `str`
 
 ## CreateBucketConfigurationTypeDef
 
@@ -221,12 +208,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import CreateBucketConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationConstraint`: `BucketLocationConstraint`
 
+- `LocationConstraint`:
+  [BucketLocationConstraint](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#bucketlocationconstraint)
 
 ## CreateBucketResultTypeDef
 
@@ -234,13 +219,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import CreateBucketResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Location`: `str`
 - `BucketArn`: `str`
-
 
 ## CreateJobResultTypeDef
 
@@ -248,12 +230,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import CreateJobResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
 
+- `JobId`: `str`
 
 ## DescribeJobResultTypeDef
 
@@ -261,12 +240,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import DescribeJobResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Job`: `"JobDescriptorTypeDef"`
 
+- `Job`:
+  [JobDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobdescriptortypedef)
 
 ## ExcludeTypeDef
 
@@ -274,13 +251,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ExcludeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Buckets`: `List[str]`
-- `Regions`: `List[str]`
 
+- `Buckets`: `List`\[`str`\]
+- `Regions`: `List`\[`str`\]
 
 ## GetAccessPointConfigurationForObjectLambdaResultTypeDef
 
@@ -288,12 +262,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Configuration`: `"ObjectLambdaConfigurationTypeDef"`
 
+- `Configuration`:
+  [ObjectLambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaconfigurationtypedef)
 
 ## GetAccessPointForObjectLambdaResultTypeDef
 
@@ -301,14 +273,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `PublicAccessBlockConfiguration`: `"PublicAccessBlockConfigurationTypeDef"`
-- `CreationDate`: `datetime`
 
+- `Name`: `str`
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+- `CreationDate`: `datetime`
 
 ## GetAccessPointPolicyForObjectLambdaResultTypeDef
 
@@ -316,12 +286,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## GetAccessPointPolicyResultTypeDef
 
@@ -329,12 +296,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
 
@@ -342,12 +306,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyStatus`: `"PolicyStatusTypeDef"`
 
+- `PolicyStatus`:
+  [PolicyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#policystatustypedef)
 
 ## GetAccessPointPolicyStatusResultTypeDef
 
@@ -355,12 +317,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyStatus`: `"PolicyStatusTypeDef"`
 
+- `PolicyStatus`:
+  [PolicyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#policystatustypedef)
 
 ## GetAccessPointResultTypeDef
 
@@ -368,17 +328,17 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetAccessPointResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Bucket`: `str`
-- `NetworkOrigin`: `NetworkOrigin`
-- `VpcConfiguration`: `"VpcConfigurationTypeDef"`
-- `PublicAccessBlockConfiguration`: `"PublicAccessBlockConfigurationTypeDef"`
+- `NetworkOrigin`:
+  [NetworkOrigin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#networkorigin)
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#vpcconfigurationtypedef)
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
 - `CreationDate`: `datetime`
-
 
 ## GetBucketLifecycleConfigurationResultTypeDef
 
@@ -386,12 +346,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Rules`: `List["LifecycleRuleTypeDef"]`
 
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleruletypedef)\]
 
 ## GetBucketPolicyResultTypeDef
 
@@ -399,12 +357,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetBucketPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `str`
 
+- `Policy`: `str`
 
 ## GetBucketResultTypeDef
 
@@ -412,14 +367,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetBucketResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Bucket`: `str`
 - `PublicAccessBlockEnabled`: `bool`
 - `CreationDate`: `datetime`
-
 
 ## GetBucketTaggingResultTypeDef
 
@@ -427,12 +379,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetBucketTaggingResultTypeDef
 ```
 
-
 Required fields:
-- `TagSet`: `List["S3TagTypeDef"]`
 
-
-
+- `TagSet`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 
 ## GetJobTaggingResultTypeDef
 
@@ -440,12 +390,10 @@ Required fields:
 from mypy_boto3_s3control.type_defs import GetJobTaggingResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["S3TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 
 ## GetPublicAccessBlockOutputTypeDef
 
@@ -453,13 +401,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputTypeDef
 ```
 
-
 Required fields:
-- `PublicAccessBlockConfiguration`: `"PublicAccessBlockConfigurationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#responsemetadata)
 
 ## GetStorageLensConfigurationResultTypeDef
 
@@ -467,12 +414,10 @@ Required fields:
 from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StorageLensConfiguration`: `"StorageLensConfigurationTypeDef"`
 
+- `StorageLensConfiguration`:
+  [StorageLensConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensconfigurationtypedef)
 
 ## GetStorageLensConfigurationTaggingResultTypeDef
 
@@ -480,12 +425,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["StorageLensTagTypeDef"]`
 
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelenstagtypedef)\]
 
 ## IncludeTypeDef
 
@@ -493,13 +436,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import IncludeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Buckets`: `List[str]`
-- `Regions`: `List[str]`
 
+- `Buckets`: `List`\[`str`\]
+- `Regions`: `List`\[`str`\]
 
 ## JobDescriptorTypeDef
 
@@ -507,28 +447,31 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobDescriptorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `ConfirmationRequired`: `bool`
 - `Description`: `str`
 - `JobArn`: `str`
-- `Status`: `JobStatus`
-- `Manifest`: `"JobManifestTypeDef"`
-- `Operation`: `"JobOperationTypeDef"`
+- `Status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobstatus)
+- `Manifest`:
+  [JobManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobmanifesttypedef)
+- `Operation`:
+  [JobOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#joboperationtypedef)
 - `Priority`: `int`
-- `ProgressSummary`: `"JobProgressSummaryTypeDef"`
+- `ProgressSummary`:
+  [JobProgressSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobprogresssummarytypedef)
 - `StatusUpdateReason`: `str`
-- `FailureReasons`: `List["JobFailureTypeDef"]`
-- `Report`: `"JobReportTypeDef"`
+- `FailureReasons`:
+  `List`\[[JobFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobfailuretypedef)\]
+- `Report`:
+  [JobReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobreporttypedef)
 - `CreationTime`: `datetime`
 - `TerminationDate`: `datetime`
 - `RoleArn`: `str`
 - `SuspendedDate`: `datetime`
 - `SuspendedCause`: `str`
-
 
 ## JobFailureTypeDef
 
@@ -536,13 +479,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobFailureTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FailureCode`: `str`
 - `FailureReason`: `str`
-
 
 ## JobListDescriptorTypeDef
 
@@ -550,19 +490,19 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobListDescriptorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `Description`: `str`
-- `Operation`: `OperationName`
+- `Operation`:
+  [OperationName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#operationname)
 - `Priority`: `int`
-- `Status`: `JobStatus`
+- `Status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobstatus)
 - `CreationTime`: `datetime`
 - `TerminationDate`: `datetime`
-- `ProgressSummary`: `"JobProgressSummaryTypeDef"`
-
+- `ProgressSummary`:
+  [JobProgressSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobprogresssummarytypedef)
 
 ## JobManifestLocationTypeDef
 
@@ -570,16 +510,14 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobManifestLocationTypeDef
 ```
 
-
 Required fields:
+
 - `ObjectArn`: `str`
 - `ETag`: `str`
 
-
-
 Optional fields:
-- `ObjectVersionId`: `str`
 
+- `ObjectVersionId`: `str`
 
 ## JobManifestSpecTypeDef
 
@@ -587,15 +525,15 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobManifestSpecTypeDef
 ```
 
-
 Required fields:
-- `Format`: `JobManifestFormat`
 
-
+- `Format`:
+  [JobManifestFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobmanifestformat)
 
 Optional fields:
-- `Fields`: `List[JobManifestFieldName]`
 
+- `Fields`:
+  `List`\[[JobManifestFieldName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobmanifestfieldname)\]
 
 ## JobManifestTypeDef
 
@@ -603,13 +541,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobManifestTypeDef
 ```
 
-
 Required fields:
-- `Spec`: `"JobManifestSpecTypeDef"`
-- `Location`: `"JobManifestLocationTypeDef"`
 
-
-
+- `Spec`:
+  [JobManifestSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobmanifestspectypedef)
+- `Location`:
+  [JobManifestLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobmanifestlocationtypedef)
 
 ## JobOperationTypeDef
 
@@ -617,19 +554,23 @@ Required fields:
 from mypy_boto3_s3control.type_defs import JobOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LambdaInvoke`: `"LambdaInvokeOperationTypeDef"`
-- `S3PutObjectCopy`: `"S3CopyObjectOperationTypeDef"`
-- `S3PutObjectAcl`: `"S3SetObjectAclOperationTypeDef"`
-- `S3PutObjectTagging`: `"S3SetObjectTaggingOperationTypeDef"`
-- `S3DeleteObjectTagging`: `Dict[str, Any]`
-- `S3InitiateRestoreObject`: `"S3InitiateRestoreObjectOperationTypeDef"`
-- `S3PutObjectLegalHold`: `"S3SetObjectLegalHoldOperationTypeDef"`
-- `S3PutObjectRetention`: `"S3SetObjectRetentionOperationTypeDef"`
 
+- `LambdaInvoke`:
+  [LambdaInvokeOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lambdainvokeoperationtypedef)
+- `S3PutObjectCopy`:
+  [S3CopyObjectOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3copyobjectoperationtypedef)
+- `S3PutObjectAcl`:
+  [S3SetObjectAclOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3setobjectacloperationtypedef)
+- `S3PutObjectTagging`:
+  [S3SetObjectTaggingOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3setobjecttaggingoperationtypedef)
+- `S3DeleteObjectTagging`: `Dict`\[`str`, `Any`\]
+- `S3InitiateRestoreObject`:
+  [S3InitiateRestoreObjectOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3initiaterestoreobjectoperationtypedef)
+- `S3PutObjectLegalHold`:
+  [S3SetObjectLegalHoldOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3setobjectlegalholdoperationtypedef)
+- `S3PutObjectRetention`:
+  [S3SetObjectRetentionOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3setobjectretentionoperationtypedef)
 
 ## JobProgressSummaryTypeDef
 
@@ -637,14 +578,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobProgressSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalNumberOfTasks`: `int`
 - `NumberOfTasksSucceeded`: `int`
 - `NumberOfTasksFailed`: `int`
-
 
 ## JobReportTypeDef
 
@@ -652,18 +590,17 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import JobReportTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `Bucket`: `str`
 - `Format`: `Literal['Report_CSV_20180820']`
 - `Prefix`: `str`
-- `ReportScope`: `JobReportScope`
-
+- `ReportScope`:
+  [JobReportScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobreportscope)
 
 ## LambdaInvokeOperationTypeDef
 
@@ -671,12 +608,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LambdaInvokeOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FunctionArn`: `str`
 
+- `FunctionArn`: `str`
 
 ## LifecycleConfigurationTypeDef
 
@@ -684,12 +618,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LifecycleConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Rules`: `List["LifecycleRuleTypeDef"]`
 
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleruletypedef)\]
 
 ## LifecycleExpirationTypeDef
 
@@ -697,14 +629,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LifecycleExpirationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Date`: `datetime`
 - `Days`: `int`
 - `ExpiredObjectDeleteMarker`: `bool`
-
 
 ## LifecycleRuleAndOperatorTypeDef
 
@@ -712,13 +641,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LifecycleRuleAndOperatorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Prefix`: `str`
-- `Tags`: `List["S3TagTypeDef"]`
 
+- `Prefix`: `str`
+- `Tags`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 
 ## LifecycleRuleFilterTypeDef
 
@@ -726,14 +653,13 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LifecycleRuleFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Prefix`: `str`
-- `Tag`: `"S3TagTypeDef"`
-- `And`: `"LifecycleRuleAndOperatorTypeDef"`
 
+- `Prefix`: `str`
+- `Tag`:
+  [S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)
+- `And`:
+  [LifecycleRuleAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleruleandoperatortypedef)
 
 ## LifecycleRuleTypeDef
 
@@ -741,21 +667,26 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import LifecycleRuleTypeDef
 ```
 
-
 Required fields:
-- `Status`: `ExpirationStatus`
 
-
+- `Status`:
+  [ExpirationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#expirationstatus)
 
 Optional fields:
-- `Expiration`: `"LifecycleExpirationTypeDef"`
-- `ID`: `str`
-- `Filter`: `"LifecycleRuleFilterTypeDef"`
-- `Transitions`: `List["TransitionTypeDef"]`
-- `NoncurrentVersionTransitions`: `List["NoncurrentVersionTransitionTypeDef"]`
-- `NoncurrentVersionExpiration`: `"NoncurrentVersionExpirationTypeDef"`
-- `AbortIncompleteMultipartUpload`: `"AbortIncompleteMultipartUploadTypeDef"`
 
+- `Expiration`:
+  [LifecycleExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleexpirationtypedef)
+- `ID`: `str`
+- `Filter`:
+  [LifecycleRuleFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecyclerulefiltertypedef)
+- `Transitions`:
+  `List`\[[TransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#transitiontypedef)\]
+- `NoncurrentVersionTransitions`:
+  `List`\[[NoncurrentVersionTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#noncurrentversiontransitiontypedef)\]
+- `NoncurrentVersionExpiration`:
+  [NoncurrentVersionExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#noncurrentversionexpirationtypedef)
+- `AbortIncompleteMultipartUpload`:
+  [AbortIncompleteMultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#abortincompletemultipartuploadtypedef)
 
 ## ListAccessPointsForObjectLambdaResultTypeDef
 
@@ -763,13 +694,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectLambdaAccessPointList`: `List["ObjectLambdaAccessPointTypeDef"]`
-- `NextToken`: `str`
 
+- `ObjectLambdaAccessPointList`:
+  `List`\[[ObjectLambdaAccessPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaaccesspointtypedef)\]
+- `NextToken`: `str`
 
 ## ListAccessPointsResultTypeDef
 
@@ -777,13 +706,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListAccessPointsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessPointList`: `List["AccessPointTypeDef"]`
-- `NextToken`: `str`
 
+- `AccessPointList`:
+  `List`\[[AccessPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#accesspointtypedef)\]
+- `NextToken`: `str`
 
 ## ListJobsResultTypeDef
 
@@ -791,13 +718,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListJobsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Jobs`: `List["JobListDescriptorTypeDef"]`
 
+- `NextToken`: `str`
+- `Jobs`:
+  `List`\[[JobListDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#joblistdescriptortypedef)\]
 
 ## ListRegionalBucketsResultTypeDef
 
@@ -805,13 +730,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListRegionalBucketsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegionalBucketList`: `List["RegionalBucketTypeDef"]`
-- `NextToken`: `str`
 
+- `RegionalBucketList`:
+  `List`\[[RegionalBucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#regionalbuckettypedef)\]
+- `NextToken`: `str`
 
 ## ListStorageLensConfigurationEntryTypeDef
 
@@ -819,17 +742,15 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListStorageLensConfigurationEntryTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `StorageLensArn`: `str`
 - `HomeRegion`: `str`
 
-
-
 Optional fields:
-- `IsEnabled`: `bool`
 
+- `IsEnabled`: `bool`
 
 ## ListStorageLensConfigurationsResultTypeDef
 
@@ -837,13 +758,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ListStorageLensConfigurationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `StorageLensConfigurationList`: `List["ListStorageLensConfigurationEntryTypeDef"]`
 
+- `NextToken`: `str`
+- `StorageLensConfigurationList`:
+  `List`\[[ListStorageLensConfigurationEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#liststoragelensconfigurationentrytypedef)\]
 
 ## NoncurrentVersionExpirationTypeDef
 
@@ -851,12 +770,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import NoncurrentVersionExpirationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NoncurrentDays`: `int`
 
+- `NoncurrentDays`: `int`
 
 ## NoncurrentVersionTransitionTypeDef
 
@@ -864,13 +780,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import NoncurrentVersionTransitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NoncurrentDays`: `int`
-- `StorageClass`: `TransitionStorageClass`
 
+- `NoncurrentDays`: `int`
+- `StorageClass`:
+  [TransitionStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#transitionstorageclass)
 
 ## ObjectLambdaAccessPointTypeDef
 
@@ -878,15 +792,13 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ObjectLambdaAccessPointTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `ObjectLambdaAccessPointArn`: `str`
 
+- `ObjectLambdaAccessPointArn`: `str`
 
 ## ObjectLambdaConfigurationTypeDef
 
@@ -894,17 +806,17 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ObjectLambdaConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `SupportingAccessPoint`: `str`
-- `TransformationConfigurations`: `List["ObjectLambdaTransformationConfigurationTypeDef"]`
-
-
+- `TransformationConfigurations`:
+  `List`\[[ObjectLambdaTransformationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdatransformationconfigurationtypedef)\]
 
 Optional fields:
-- `CloudWatchMetricsEnabled`: `bool`
-- `AllowedFeatures`: `List[ObjectLambdaAllowedFeature]`
 
+- `CloudWatchMetricsEnabled`: `bool`
+- `AllowedFeatures`:
+  `List`\[[ObjectLambdaAllowedFeature](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#objectlambdaallowedfeature)\]
 
 ## ObjectLambdaContentTransformationTypeDef
 
@@ -912,12 +824,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ObjectLambdaContentTransformationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AwsLambda`: `"AwsLambdaTransformationTypeDef"`
 
+- `AwsLambda`:
+  [AwsLambdaTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#awslambdatransformationtypedef)
 
 ## ObjectLambdaTransformationConfigurationTypeDef
 
@@ -925,13 +835,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ObjectLambdaTransformationConfigurationTypeDef
 ```
 
-
 Required fields:
-- `Actions`: `List[Literal['GetObject']]`
-- `ContentTransformation`: `"ObjectLambdaContentTransformationTypeDef"`
 
-
-
+- `Actions`: `List`\[`Literal['GetObject']`\]
+- `ContentTransformation`:
+  [ObjectLambdaContentTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdacontenttransformationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -939,14 +847,11 @@ Required fields:
 from mypy_boto3_s3control.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PolicyStatusTypeDef
 
@@ -954,12 +859,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import PolicyStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsPublic`: `bool`
 
+- `IsPublic`: `bool`
 
 ## PrefixLevelStorageMetricsTypeDef
 
@@ -967,13 +869,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import PrefixLevelStorageMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsEnabled`: `bool`
-- `SelectionCriteria`: `"SelectionCriteriaTypeDef"`
 
+- `IsEnabled`: `bool`
+- `SelectionCriteria`:
+  [SelectionCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#selectioncriteriatypedef)
 
 ## PrefixLevelTypeDef
 
@@ -981,12 +881,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import PrefixLevelTypeDef
 ```
 
-
 Required fields:
-- `StorageMetrics`: `"PrefixLevelStorageMetricsTypeDef"`
 
-
-
+- `StorageMetrics`:
+  [PrefixLevelStorageMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#prefixlevelstoragemetricstypedef)
 
 ## PublicAccessBlockConfigurationTypeDef
 
@@ -994,15 +892,12 @@ Required fields:
 from mypy_boto3_s3control.type_defs import PublicAccessBlockConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BlockPublicAcls`: `bool`
 - `IgnorePublicAcls`: `bool`
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
-
 
 ## RegionalBucketTypeDef
 
@@ -1010,18 +905,16 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import RegionalBucketTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 - `PublicAccessBlockEnabled`: `bool`
 - `CreationDate`: `datetime`
 
-
-
 Optional fields:
+
 - `BucketArn`: `str`
 - `OutpostId`: `str`
-
 
 ## ResponseMetadata
 
@@ -1029,16 +922,13 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3AccessControlListTypeDef
 
@@ -1046,15 +936,15 @@ Required fields:
 from mypy_boto3_s3control.type_defs import S3AccessControlListTypeDef
 ```
 
-
 Required fields:
-- `Owner`: `"S3ObjectOwnerTypeDef"`
 
-
+- `Owner`:
+  [S3ObjectOwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3objectownertypedef)
 
 Optional fields:
-- `Grants`: `List["S3GrantTypeDef"]`
 
+- `Grants`:
+  `List`\[[S3GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3granttypedef)\]
 
 ## S3AccessControlPolicyTypeDef
 
@@ -1062,13 +952,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3AccessControlPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessControlList`: `"S3AccessControlListTypeDef"`
-- `CannedAccessControlList`: `S3CannedAccessControlList`
 
+- `AccessControlList`:
+  [S3AccessControlListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3accesscontrollisttypedef)
+- `CannedAccessControlList`:
+  [S3CannedAccessControlList](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3cannedaccesscontrollist)
 
 ## S3BucketDestinationTypeDef
 
@@ -1076,19 +965,19 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3BucketDestinationTypeDef
 ```
 
-
 Required fields:
-- `Format`: `Format`
+
+- `Format`:
+  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#format)
 - `OutputSchemaVersion`: `Literal['V_1']`
 - `AccountId`: `str`
 - `Arn`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
-- `Encryption`: `"StorageLensDataExportEncryptionTypeDef"`
 
+- `Prefix`: `str`
+- `Encryption`:
+  [StorageLensDataExportEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensdataexportencryptiontypedef)
 
 ## S3CopyObjectOperationTypeDef
 
@@ -1096,27 +985,32 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3CopyObjectOperationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetResource`: `str`
-- `CannedAccessControlList`: `S3CannedAccessControlList`
-- `AccessControlGrants`: `List["S3GrantTypeDef"]`
-- `MetadataDirective`: `S3MetadataDirective`
+- `CannedAccessControlList`:
+  [S3CannedAccessControlList](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3cannedaccesscontrollist)
+- `AccessControlGrants`:
+  `List`\[[S3GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3granttypedef)\]
+- `MetadataDirective`:
+  [S3MetadataDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3metadatadirective)
 - `ModifiedSinceConstraint`: `datetime`
-- `NewObjectMetadata`: `"S3ObjectMetadataTypeDef"`
-- `NewObjectTagging`: `List["S3TagTypeDef"]`
+- `NewObjectMetadata`:
+  [S3ObjectMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3objectmetadatatypedef)
+- `NewObjectTagging`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 - `RedirectLocation`: `str`
 - `RequesterPays`: `bool`
-- `StorageClass`: `S3StorageClass`
+- `StorageClass`:
+  [S3StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3storageclass)
 - `UnModifiedSinceConstraint`: `datetime`
 - `SSEAwsKmsKeyId`: `str`
 - `TargetKeyPrefix`: `str`
-- `ObjectLockLegalHoldStatus`: `S3ObjectLockLegalHoldStatus`
-- `ObjectLockMode`: `S3ObjectLockMode`
+- `ObjectLockLegalHoldStatus`:
+  [S3ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3objectlocklegalholdstatus)
+- `ObjectLockMode`:
+  [S3ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
-
 
 ## S3GrantTypeDef
 
@@ -1124,13 +1018,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3GrantTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Grantee`: `"S3GranteeTypeDef"`
-- `Permission`: `S3Permission`
 
+- `Grantee`:
+  [S3GranteeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3granteetypedef)
+- `Permission`:
+  [S3Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3permission)
 
 ## S3GranteeTypeDef
 
@@ -1138,14 +1031,12 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3GranteeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TypeIdentifier`: `S3GranteeTypeIdentifier`
+
+- `TypeIdentifier`:
+  [S3GranteeTypeIdentifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3granteetypeidentifier)
 - `Identifier`: `str`
 - `DisplayName`: `str`
-
 
 ## S3InitiateRestoreObjectOperationTypeDef
 
@@ -1153,13 +1044,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3InitiateRestoreObjectOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExpirationInDays`: `int`
-- `GlacierJobTier`: `S3GlacierJobTier`
 
+- `ExpirationInDays`: `int`
+- `GlacierJobTier`:
+  [S3GlacierJobTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3glacierjobtier)
 
 ## S3ObjectLockLegalHoldTypeDef
 
@@ -1167,12 +1056,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3ObjectLockLegalHoldTypeDef
 ```
 
-
 Required fields:
-- `Status`: `S3ObjectLockLegalHoldStatus`
 
-
-
+- `Status`:
+  [S3ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3objectlocklegalholdstatus)
 
 ## S3ObjectMetadataTypeDef
 
@@ -1180,22 +1067,20 @@ Required fields:
 from mypy_boto3_s3control.type_defs import S3ObjectMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
-- `UserMetadata`: `Dict[str, str]`
+- `UserMetadata`: `Dict`\[`str`, `str`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
 - `HttpExpiresDate`: `datetime`
 - `RequesterCharged`: `bool`
-- `SSEAlgorithm`: `S3SSEAlgorithm`
-
+- `SSEAlgorithm`:
+  [S3SSEAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3ssealgorithm)
 
 ## S3ObjectOwnerTypeDef
 
@@ -1203,13 +1088,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3ObjectOwnerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ID`: `str`
 - `DisplayName`: `str`
-
 
 ## S3RetentionTypeDef
 
@@ -1217,13 +1099,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3RetentionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RetainUntilDate`: `datetime`
-- `Mode`: `S3ObjectLockRetentionMode`
 
+- `RetainUntilDate`: `datetime`
+- `Mode`:
+  [S3ObjectLockRetentionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#s3objectlockretentionmode)
 
 ## S3SetObjectAclOperationTypeDef
 
@@ -1231,12 +1111,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3SetObjectAclOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessControlPolicy`: `"S3AccessControlPolicyTypeDef"`
 
+- `AccessControlPolicy`:
+  [S3AccessControlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3accesscontrolpolicytypedef)
 
 ## S3SetObjectLegalHoldOperationTypeDef
 
@@ -1244,12 +1122,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3SetObjectLegalHoldOperationTypeDef
 ```
 
-
 Required fields:
-- `LegalHold`: `"S3ObjectLockLegalHoldTypeDef"`
 
-
-
+- `LegalHold`:
+  [S3ObjectLockLegalHoldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3objectlocklegalholdtypedef)
 
 ## S3SetObjectRetentionOperationTypeDef
 
@@ -1257,15 +1133,14 @@ Required fields:
 from mypy_boto3_s3control.type_defs import S3SetObjectRetentionOperationTypeDef
 ```
 
-
 Required fields:
-- `Retention`: `"S3RetentionTypeDef"`
 
-
+- `Retention`:
+  [S3RetentionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3retentiontypedef)
 
 Optional fields:
-- `BypassGovernanceRetention`: `bool`
 
+- `BypassGovernanceRetention`: `bool`
 
 ## S3SetObjectTaggingOperationTypeDef
 
@@ -1273,12 +1148,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3SetObjectTaggingOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TagSet`: `List["S3TagTypeDef"]`
 
+- `TagSet`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 
 ## S3TagTypeDef
 
@@ -1286,13 +1159,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import S3TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## SSEKMSTypeDef
 
@@ -1300,12 +1170,9 @@ Required fields:
 from mypy_boto3_s3control.type_defs import SSEKMSTypeDef
 ```
 
-
 Required fields:
+
 - `KeyId`: `str`
-
-
-
 
 ## SelectionCriteriaTypeDef
 
@@ -1313,14 +1180,11 @@ Required fields:
 from mypy_boto3_s3control.type_defs import SelectionCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delimiter`: `str`
 - `MaxDepth`: `int`
 - `MinStorageBytesPercentage`: `float`
-
 
 ## StorageLensAwsOrgTypeDef
 
@@ -1328,12 +1192,9 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import StorageLensAwsOrgTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-
-
-
 
 ## StorageLensConfigurationTypeDef
 
@@ -1341,21 +1202,24 @@ Required fields:
 from mypy_boto3_s3control.type_defs import StorageLensConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
-- `AccountLevel`: `"AccountLevelTypeDef"`
+- `AccountLevel`:
+  [AccountLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#accountleveltypedef)
 - `IsEnabled`: `bool`
 
-
-
 Optional fields:
-- `Include`: `"IncludeTypeDef"`
-- `Exclude`: `"ExcludeTypeDef"`
-- `DataExport`: `"StorageLensDataExportTypeDef"`
-- `AwsOrg`: `"StorageLensAwsOrgTypeDef"`
-- `StorageLensArn`: `str`
 
+- `Include`:
+  [IncludeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#includetypedef)
+- `Exclude`:
+  [ExcludeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#excludetypedef)
+- `DataExport`:
+  [StorageLensDataExportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensdataexporttypedef)
+- `AwsOrg`:
+  [StorageLensAwsOrgTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensawsorgtypedef)
+- `StorageLensArn`: `str`
 
 ## StorageLensDataExportEncryptionTypeDef
 
@@ -1363,13 +1227,11 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import StorageLensDataExportEncryptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SSES3`: `Dict[str, Any]`
-- `SSEKMS`: `"SSEKMSTypeDef"`
 
+- `SSES3`: `Dict`\[`str`, `Any`\]
+- `SSEKMS`:
+  [SSEKMSTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#ssekmstypedef)
 
 ## StorageLensDataExportTypeDef
 
@@ -1377,12 +1239,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import StorageLensDataExportTypeDef
 ```
 
-
 Required fields:
-- `S3BucketDestination`: `"S3BucketDestinationTypeDef"`
 
-
-
+- `S3BucketDestination`:
+  [S3BucketDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3bucketdestinationtypedef)
 
 ## StorageLensTagTypeDef
 
@@ -1390,13 +1250,10 @@ Required fields:
 from mypy_boto3_s3control.type_defs import StorageLensTagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TaggingTypeDef
 
@@ -1404,12 +1261,10 @@ Required fields:
 from mypy_boto3_s3control.type_defs import TaggingTypeDef
 ```
 
-
 Required fields:
-- `TagSet`: `List["S3TagTypeDef"]`
 
-
-
+- `TagSet`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
 
 ## TransitionTypeDef
 
@@ -1417,14 +1272,12 @@ Required fields:
 from mypy_boto3_s3control.type_defs import TransitionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Date`: `datetime`
 - `Days`: `int`
-- `StorageClass`: `TransitionStorageClass`
-
+- `StorageClass`:
+  [TransitionStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#transitionstorageclass)
 
 ## UpdateJobPriorityResultTypeDef
 
@@ -1432,13 +1285,10 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import UpdateJobPriorityResultTypeDef
 ```
 
-
 Required fields:
+
 - `JobId`: `str`
 - `Priority`: `int`
-
-
-
 
 ## UpdateJobStatusResultTypeDef
 
@@ -1446,14 +1296,12 @@ Required fields:
 from mypy_boto3_s3control.type_defs import UpdateJobStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `Status`: `JobStatus`
-- `StatusUpdateReason`: `str`
 
+- `JobId`: `str`
+- `Status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobstatus)
+- `StatusUpdateReason`: `str`
 
 ## VpcConfigurationTypeDef
 
@@ -1461,9 +1309,6 @@ Optional fields:
 from mypy_boto3_s3control.type_defs import VpcConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `VpcId`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DAX](./README.md) > Paginators
 
-Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+Auto-generated documentation for
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+type annotations stubs module
+[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [Paginators for boto3 DAX module](#paginators-for-boto3-dax-module)
   - [DescribeClustersPaginator](#describeclusterspaginator)
@@ -27,20 +29,22 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("dax").get_paginator("describe_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
+Boto3 documentation:
+[DAX.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
 
-```python
-class DescribeClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClustersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeClustersPaginator.paginate` method:
+
+- `ClusterNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClustersPaginator.paginate` returns
+`Iterator`\[[DescribeClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describeclustersresponsetypedef)\].
+
 ## DescribeDefaultParametersPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_default_parameters")`.
+Type annotations for
+`boto3.client("dax").get_paginator("describe_default_parameters")`.
 
 Can be used directly:
 
@@ -51,16 +55,17 @@ def get_describe_default_parameters_paginator() -> DescribeDefaultParametersPagi
     return boto3.client("dax").get_paginator("describe_default_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
+Boto3 documentation:
+[DAX.Paginator.DescribeDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
 
-```python
-class DescribeDefaultParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDefaultParametersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDefaultParametersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDefaultParametersPaginator.paginate` returns
+`Iterator`\[[DescribeDefaultParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describedefaultparametersresponsetypedef)\].
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("dax").get_paginator("describe_events")`.
@@ -74,24 +79,27 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("dax").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
+Boto3 documentation:
+[DAX.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SourceName: str = None,
-        SourceType: SourceType = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Duration: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `SourceName`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describeeventsresponsetypedef)\].
+
 ## DescribeParameterGroupsPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_parameter_groups")`.
+Type annotations for
+`boto3.client("dax").get_paginator("describe_parameter_groups")`.
 
 Can be used directly:
 
@@ -102,20 +110,22 @@ def get_describe_parameter_groups_paginator() -> DescribeParameterGroupsPaginato
     return boto3.client("dax").get_paginator("describe_parameter_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
+Boto3 documentation:
+[DAX.Paginator.DescribeParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
 
-```python
-class DescribeParameterGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParameterGroupNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeParameterGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeParameterGroupsPaginator.paginate` method:
+
+- `ParameterGroupNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeParameterGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeParameterGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describeparametergroupsresponsetypedef)\].
+
 ## DescribeParametersPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_parameters")`.
+Type annotations for
+`boto3.client("dax").get_paginator("describe_parameters")`.
 
 Can be used directly:
 
@@ -126,21 +136,23 @@ def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return boto3.client("dax").get_paginator("describe_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
+Boto3 documentation:
+[DAX.Paginator.DescribeParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
 
-```python
-class DescribeParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParameterGroupName: str,
-        Source: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeParametersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeParametersPaginator.paginate` method:
+
+- `ParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeParametersPaginator.paginate` returns
+`Iterator`\[[DescribeParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describeparametersresponsetypedef)\].
+
 ## DescribeSubnetGroupsPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_subnet_groups")`.
+Type annotations for
+`boto3.client("dax").get_paginator("describe_subnet_groups")`.
 
 Can be used directly:
 
@@ -151,17 +163,18 @@ def get_describe_subnet_groups_paginator() -> DescribeSubnetGroupsPaginator:
     return boto3.client("dax").get_paginator("describe_subnet_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
+Boto3 documentation:
+[DAX.Paginator.DescribeSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
 
-```python
-class DescribeSubnetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SubnetGroupNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSubnetGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeSubnetGroupsPaginator.paginate` method:
+
+- `SubnetGroupNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSubnetGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeSubnetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#describesubnetgroupsresponsetypedef)\].
+
 ## ListTagsPaginator
 
 Type annotations for `boto3.client("dax").get_paginator("list_tags")`.
@@ -175,14 +188,14 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("dax").get_paginator("list_tags")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
+Boto3 documentation:
+[DAX.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
 
-```python
-class ListTagsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsPaginator.paginate` method:
+
+- `ResourceName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsPaginator.paginate` returns
+`Iterator`\[[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#listtagsresponsetypedef)\].

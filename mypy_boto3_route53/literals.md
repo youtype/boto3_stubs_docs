@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53](./README.md) > Literals
 
-Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+Auto-generated documentation for
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+type annotations stubs module
+[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Literals for boto3 Route53 module](#literals-for-boto3-route53-module)
   - [AccountLimitType](#accountlimittype)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SWF](./README.md) > SWFClient
 
-Auto-generated documentation for [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
-type annotations stubs module [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+Auto-generated documentation for
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
+type annotations stubs module
+[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [SWFClient for boto3 SWF module](#swfclient-for-boto3-swf-module)
   - [SWFClient](#swfclient)
@@ -63,12 +65,13 @@ def get_swf_client() -> SWFClient:
     return boto3.client("swf")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client)
+Boto3 documentation:
+[SWF.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_swf.client import Exceptions
@@ -76,7 +79,6 @@ from mypy_boto3_swf.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -92,681 +94,700 @@ Exceptions:
 - `Exceptions.UnknownResourceFault`
 - `Exceptions.WorkflowExecutionAlreadyStartedFault`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("swf").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.can_paginate]
+Boto3 documentation:
+[SWF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### count_closed_workflow_executions
 
-Type annotations for `boto3.client("swf").count_closed_workflow_executions` method.
+Type annotations for `boto3.client("swf").count_closed_workflow_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions]
+Boto3 documentation:
+[SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
 
-```python
-def count_closed_workflow_executions(
-    self,
-    domain: str,
-    startTimeFilter: ExecutionTimeFilterTypeDef = None,
-    closeTimeFilter: ExecutionTimeFilterTypeDef = None,
-    executionFilter: WorkflowExecutionFilterTypeDef = None,
-    typeFilter: WorkflowTypeFilterTypeDef = None,
-    tagFilter: TagFilterTypeDef = None,
-    closeStatusFilter: CloseStatusFilterTypeDef = None
-) -> WorkflowExecutionCountTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `startTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+- `closeTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+- `executionFilter`:
+  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+- `typeFilter`:
+  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
+- `tagFilter`:
+  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+- `closeStatusFilter`:
+  [CloseStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#closestatusfiltertypedef)
+
+Returns
+[WorkflowExecutionCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncounttypedef).
 
 ### count_open_workflow_executions
 
-Type annotations for `boto3.client("swf").count_open_workflow_executions` method.
+Type annotations for `boto3.client("swf").count_open_workflow_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions]
+Boto3 documentation:
+[SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
 
-```python
-def count_open_workflow_executions(
-    self,
-    domain: str,
-    startTimeFilter: ExecutionTimeFilterTypeDef,
-    typeFilter: WorkflowTypeFilterTypeDef = None,
-    tagFilter: TagFilterTypeDef = None,
-    executionFilter: WorkflowExecutionFilterTypeDef = None
-) -> WorkflowExecutionCountTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `startTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  *(required)*
+- `typeFilter`:
+  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
+- `tagFilter`:
+  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+- `executionFilter`:
+  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+
+Returns
+[WorkflowExecutionCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncounttypedef).
 
 ### count_pending_activity_tasks
 
 Type annotations for `boto3.client("swf").count_pending_activity_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks]
+Boto3 documentation:
+[SWF.Client.count_pending_activity_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks)
 
-```python
-def count_pending_activity_tasks(
-    self,
-    domain: str,
-    taskList: "TaskListTypeDef"
-) -> PendingTaskCountTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `taskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+  *(required)*
+
+Returns
+[PendingTaskCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#pendingtaskcounttypedef).
 
 ### count_pending_decision_tasks
 
 Type annotations for `boto3.client("swf").count_pending_decision_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks]
+Boto3 documentation:
+[SWF.Client.count_pending_decision_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks)
 
-```python
-def count_pending_decision_tasks(
-    self,
-    domain: str,
-    taskList: "TaskListTypeDef"
-) -> PendingTaskCountTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `taskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+  *(required)*
+
+Returns
+[PendingTaskCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#pendingtaskcounttypedef).
 
 ### deprecate_activity_type
 
 Type annotations for `boto3.client("swf").deprecate_activity_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type]
+Boto3 documentation:
+[SWF.Client.deprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type)
 
-```python
-def deprecate_activity_type(
-    self,
-    domain: str,
-    activityType: "ActivityTypeTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `activityType`:
+  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+  *(required)*
 
 ### deprecate_domain
 
 Type annotations for `boto3.client("swf").deprecate_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain]
+Boto3 documentation:
+[SWF.Client.deprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain)
 
-```python
-def deprecate_domain(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### deprecate_workflow_type
 
 Type annotations for `boto3.client("swf").deprecate_workflow_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type]
+Boto3 documentation:
+[SWF.Client.deprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type)
 
-```python
-def deprecate_workflow_type(
-    self,
-    domain: str,
-    workflowType: "WorkflowTypeTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowType`:
+  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  *(required)*
 
 ### describe_activity_type
 
 Type annotations for `boto3.client("swf").describe_activity_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type]
+Boto3 documentation:
+[SWF.Client.describe_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type)
 
-```python
-def describe_activity_type(
-    self,
-    domain: str,
-    activityType: "ActivityTypeTypeDef"
-) -> ActivityTypeDetailTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `activityType`:
+  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+  *(required)*
+
+Returns
+[ActivityTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypedetailtypedef).
 
 ### describe_domain
 
 Type annotations for `boto3.client("swf").describe_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain]
+Boto3 documentation:
+[SWF.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain)
 
-```python
-def describe_domain(
-    self,
-    name: str
-) -> DomainDetailTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns
+[DomainDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaindetailtypedef).
 
 ### describe_workflow_execution
 
 Type annotations for `boto3.client("swf").describe_workflow_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution]
+Boto3 documentation:
+[SWF.Client.describe_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution)
 
-```python
-def describe_workflow_execution(
-    self,
-    domain: str,
-    execution: "WorkflowExecutionTypeDef"
-) -> WorkflowExecutionDetailTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `execution`:
+  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  *(required)*
+
+Returns
+[WorkflowExecutionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiondetailtypedef).
 
 ### describe_workflow_type
 
 Type annotations for `boto3.client("swf").describe_workflow_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type]
+Boto3 documentation:
+[SWF.Client.describe_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type)
 
-```python
-def describe_workflow_type(
-    self,
-    domain: str,
-    workflowType: "WorkflowTypeTypeDef"
-) -> WorkflowTypeDetailTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowType`:
+  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  *(required)*
+
+Returns
+[WorkflowTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypedetailtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("swf").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.generate_presigned_url]
+Boto3 documentation:
+[SWF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_workflow_execution_history
 
-Type annotations for `boto3.client("swf").get_workflow_execution_history` method.
+Type annotations for `boto3.client("swf").get_workflow_execution_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history]
+Boto3 documentation:
+[SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
 
-```python
-def get_workflow_execution_history(
-    self,
-    domain: str,
-    execution: "WorkflowExecutionTypeDef",
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> HistoryTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `execution`:
+  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  *(required)*
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[HistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#historytypedef).
 
 ### list_activity_types
 
 Type annotations for `boto3.client("swf").list_activity_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types]
+Boto3 documentation:
+[SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types)
 
-```python
-def list_activity_types(
-    self,
-    domain: str,
-    registrationStatus: RegistrationStatus,
-    name: str = None,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> ActivityTypeInfosTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `registrationStatus`:
+  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+  *(required)*
+- `name`: `str`
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[ActivityTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeinfostypedef).
 
 ### list_closed_workflow_executions
 
-Type annotations for `boto3.client("swf").list_closed_workflow_executions` method.
+Type annotations for `boto3.client("swf").list_closed_workflow_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions]
+Boto3 documentation:
+[SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
 
-```python
-def list_closed_workflow_executions(
-    self,
-    domain: str,
-    startTimeFilter: ExecutionTimeFilterTypeDef = None,
-    closeTimeFilter: ExecutionTimeFilterTypeDef = None,
-    executionFilter: WorkflowExecutionFilterTypeDef = None,
-    closeStatusFilter: CloseStatusFilterTypeDef = None,
-    typeFilter: WorkflowTypeFilterTypeDef = None,
-    tagFilter: TagFilterTypeDef = None,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> WorkflowExecutionInfosTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `startTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+- `closeTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+- `executionFilter`:
+  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+- `closeStatusFilter`:
+  [CloseStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#closestatusfiltertypedef)
+- `typeFilter`:
+  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
+- `tagFilter`:
+  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("swf").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains]
+Boto3 documentation:
+[SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    registrationStatus: RegistrationStatus,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> DomainInfosTypeDef:
-    pass
-```
+Arguments:
+
+- `registrationStatus`:
+  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+  *(required)*
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[DomainInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaininfostypedef).
 
 ### list_open_workflow_executions
 
-Type annotations for `boto3.client("swf").list_open_workflow_executions` method.
+Type annotations for `boto3.client("swf").list_open_workflow_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions]
+Boto3 documentation:
+[SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
 
-```python
-def list_open_workflow_executions(
-    self,
-    domain: str,
-    startTimeFilter: ExecutionTimeFilterTypeDef,
-    typeFilter: WorkflowTypeFilterTypeDef = None,
-    tagFilter: TagFilterTypeDef = None,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None,
-    executionFilter: WorkflowExecutionFilterTypeDef = None
-) -> WorkflowExecutionInfosTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `startTimeFilter`:
+  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  *(required)*
+- `typeFilter`:
+  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
+- `tagFilter`:
+  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+- `executionFilter`:
+  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+
+Returns
+[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("swf").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource]
+Boto3 documentation:
+[SWF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### list_workflow_types
 
 Type annotations for `boto3.client("swf").list_workflow_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types]
+Boto3 documentation:
+[SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types)
 
-```python
-def list_workflow_types(
-    self,
-    domain: str,
-    registrationStatus: RegistrationStatus,
-    name: str = None,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> WorkflowTypeInfosTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `registrationStatus`:
+  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+  *(required)*
+- `name`: `str`
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[WorkflowTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeinfostypedef).
 
 ### poll_for_activity_task
 
 Type annotations for `boto3.client("swf").poll_for_activity_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task]
+Boto3 documentation:
+[SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task)
 
-```python
-def poll_for_activity_task(
-    self,
-    domain: str,
-    taskList: "TaskListTypeDef",
-    identity: str = None
-) -> ActivityTaskTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `taskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+  *(required)*
+- `identity`: `str`
+
+Returns
+[ActivityTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytasktypedef).
 
 ### poll_for_decision_task
 
 Type annotations for `boto3.client("swf").poll_for_decision_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task]
+Boto3 documentation:
+[SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task)
 
-```python
-def poll_for_decision_task(
-    self,
-    domain: str,
-    taskList: "TaskListTypeDef",
-    identity: str = None,
-    nextPageToken: str = None,
-    maximumPageSize: int = None,
-    reverseOrder: bool = None
-) -> DecisionTaskTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `taskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+  *(required)*
+- `identity`: `str`
+- `nextPageToken`: `str`
+- `maximumPageSize`: `int`
+- `reverseOrder`: `bool`
+
+Returns
+[DecisionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontasktypedef).
 
 ### record_activity_task_heartbeat
 
-Type annotations for `boto3.client("swf").record_activity_task_heartbeat` method.
+Type annotations for `boto3.client("swf").record_activity_task_heartbeat`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat]
+Boto3 documentation:
+[SWF.Client.record_activity_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat)
 
-```python
-def record_activity_task_heartbeat(
-    self,
-    taskToken: str,
-    details: str = None
-) -> ActivityTaskStatusTypeDef:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `details`: `str`
+
+Returns
+[ActivityTaskStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskstatustypedef).
 
 ### register_activity_type
 
 Type annotations for `boto3.client("swf").register_activity_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type]
+Boto3 documentation:
+[SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type)
 
-```python
-def register_activity_type(
-    self,
-    domain: str,
-    name: str,
-    version: str,
-    description: str = None,
-    defaultTaskStartToCloseTimeout: str = None,
-    defaultTaskHeartbeatTimeout: str = None,
-    defaultTaskList: "TaskListTypeDef" = None,
-    defaultTaskPriority: str = None,
-    defaultTaskScheduleToStartTimeout: str = None,
-    defaultTaskScheduleToCloseTimeout: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
+- `description`: `str`
+- `defaultTaskStartToCloseTimeout`: `str`
+- `defaultTaskHeartbeatTimeout`: `str`
+- `defaultTaskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskPriority`: `str`
+- `defaultTaskScheduleToStartTimeout`: `str`
+- `defaultTaskScheduleToCloseTimeout`: `str`
 
 ### register_domain
 
 Type annotations for `boto3.client("swf").register_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain]
+Boto3 documentation:
+[SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain)
 
-```python
-def register_domain(
-    self,
-    name: str,
-    workflowExecutionRetentionPeriodInDays: str,
-    description: str = None,
-    tags: List["ResourceTagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `workflowExecutionRetentionPeriodInDays`: `str` *(required)*
+- `description`: `str`
+- `tags`:
+  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#resourcetagtypedef)\]
 
 ### register_workflow_type
 
 Type annotations for `boto3.client("swf").register_workflow_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type]
+Boto3 documentation:
+[SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type)
 
-```python
-def register_workflow_type(
-    self,
-    domain: str,
-    name: str,
-    version: str,
-    description: str = None,
-    defaultTaskStartToCloseTimeout: str = None,
-    defaultExecutionStartToCloseTimeout: str = None,
-    defaultTaskList: "TaskListTypeDef" = None,
-    defaultTaskPriority: str = None,
-    defaultChildPolicy: ChildPolicy = None,
-    defaultLambdaRole: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
+- `description`: `str`
+- `defaultTaskStartToCloseTimeout`: `str`
+- `defaultExecutionStartToCloseTimeout`: `str`
+- `defaultTaskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskPriority`: `str`
+- `defaultChildPolicy`:
+  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `defaultLambdaRole`: `str`
 
 ### request_cancel_workflow_execution
 
-Type annotations for `boto3.client("swf").request_cancel_workflow_execution` method.
+Type annotations for `boto3.client("swf").request_cancel_workflow_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution]
+Boto3 documentation:
+[SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
 
-```python
-def request_cancel_workflow_execution(
-    self,
-    domain: str,
-    workflowId: str,
-    runId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowId`: `str` *(required)*
+- `runId`: `str`
 
 ### respond_activity_task_canceled
 
-Type annotations for `boto3.client("swf").respond_activity_task_canceled` method.
+Type annotations for `boto3.client("swf").respond_activity_task_canceled`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled]
+Boto3 documentation:
+[SWF.Client.respond_activity_task_canceled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled)
 
-```python
-def respond_activity_task_canceled(
-    self,
-    taskToken: str,
-    details: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `details`: `str`
 
 ### respond_activity_task_completed
 
-Type annotations for `boto3.client("swf").respond_activity_task_completed` method.
+Type annotations for `boto3.client("swf").respond_activity_task_completed`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed]
+Boto3 documentation:
+[SWF.Client.respond_activity_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed)
 
-```python
-def respond_activity_task_completed(
-    self,
-    taskToken: str,
-    result: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `result`: `str`
 
 ### respond_activity_task_failed
 
 Type annotations for `boto3.client("swf").respond_activity_task_failed` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed]
+Boto3 documentation:
+[SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
 
-```python
-def respond_activity_task_failed(
-    self,
-    taskToken: str,
-    reason: str = None,
-    details: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `reason`: `str`
+- `details`: `str`
 
 ### respond_decision_task_completed
 
-Type annotations for `boto3.client("swf").respond_decision_task_completed` method.
+Type annotations for `boto3.client("swf").respond_decision_task_completed`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed]
+Boto3 documentation:
+[SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
 
-```python
-def respond_decision_task_completed(
-    self,
-    taskToken: str,
-    decisions: List[DecisionTypeDef] = None,
-    executionContext: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `taskToken`: `str` *(required)*
+- `decisions`:
+  `List`\[[DecisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontypedef)\]
+- `executionContext`: `str`
 
 ### signal_workflow_execution
 
 Type annotations for `boto3.client("swf").signal_workflow_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution]
+Boto3 documentation:
+[SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution)
 
-```python
-def signal_workflow_execution(
-    self,
-    domain: str,
-    workflowId: str,
-    signalName: str,
-    runId: str = None,
-    input: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowId`: `str` *(required)*
+- `signalName`: `str` *(required)*
+- `runId`: `str`
+- `input`: `str`
 
 ### start_workflow_execution
 
 Type annotations for `boto3.client("swf").start_workflow_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution]
+Boto3 documentation:
+[SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution)
 
-```python
-def start_workflow_execution(
-    self,
-    domain: str,
-    workflowId: str,
-    workflowType: "WorkflowTypeTypeDef",
-    taskList: "TaskListTypeDef" = None,
-    taskPriority: str = None,
-    input: str = None,
-    executionStartToCloseTimeout: str = None,
-    tagList: List[str] = None,
-    taskStartToCloseTimeout: str = None,
-    childPolicy: ChildPolicy = None,
-    lambdaRole: str = None
-) -> RunTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowId`: `str` *(required)*
+- `workflowType`:
+  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  *(required)*
+- `taskList`:
+  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskPriority`: `str`
+- `input`: `str`
+- `executionStartToCloseTimeout`: `str`
+- `tagList`: `List`\[`str`\]
+- `taskStartToCloseTimeout`: `str`
+- `childPolicy`:
+  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `lambdaRole`: `str`
+
+Returns
+[RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#runtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("swf").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource]
+Boto3 documentation:
+[SWF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["ResourceTagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#resourcetagtypedef)\]
+  *(required)*
 
 ### terminate_workflow_execution
 
 Type annotations for `boto3.client("swf").terminate_workflow_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution]
+Boto3 documentation:
+[SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
 
-```python
-def terminate_workflow_execution(
-    self,
-    domain: str,
-    workflowId: str,
-    runId: str = None,
-    reason: str = None,
-    details: str = None,
-    childPolicy: ChildPolicy = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowId`: `str` *(required)*
+- `runId`: `str`
+- `reason`: `str`
+- `details`: `str`
+- `childPolicy`:
+  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
 
 ### undeprecate_activity_type
 
 Type annotations for `boto3.client("swf").undeprecate_activity_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type]
+Boto3 documentation:
+[SWF.Client.undeprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type)
 
-```python
-def undeprecate_activity_type(
-    self,
-    domain: str,
-    activityType: "ActivityTypeTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `activityType`:
+  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+  *(required)*
 
 ### undeprecate_domain
 
 Type annotations for `boto3.client("swf").undeprecate_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain]
+Boto3 documentation:
+[SWF.Client.undeprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain)
 
-```python
-def undeprecate_domain(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### undeprecate_workflow_type
 
 Type annotations for `boto3.client("swf").undeprecate_workflow_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type]
+Boto3 documentation:
+[SWF.Client.undeprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type)
 
-```python
-def undeprecate_workflow_type(
-    self,
-    domain: str,
-    workflowType: "WorkflowTypeTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `workflowType`:
+  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("swf").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource]
+Boto3 documentation:
+[SWF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
 ### get_paginator
 
 Type annotations for `boto3.client("swf").get_paginator` method with overloads.
 
-- `client.get_paginator("get_workflow_execution_history")` -> [GetWorkflowExecutionHistoryPaginator](./paginators.md#getworkflowexecutionhistorypaginator)
-- `client.get_paginator("list_activity_types")` -> [ListActivityTypesPaginator](./paginators.md#listactivitytypespaginator)
-- `client.get_paginator("list_closed_workflow_executions")` -> [ListClosedWorkflowExecutionsPaginator](./paginators.md#listclosedworkflowexecutionspaginator)
-- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("list_open_workflow_executions")` -> [ListOpenWorkflowExecutionsPaginator](./paginators.md#listopenworkflowexecutionspaginator)
-- `client.get_paginator("list_workflow_types")` -> [ListWorkflowTypesPaginator](./paginators.md#listworkflowtypespaginator)
-- `client.get_paginator("poll_for_decision_task")` -> [PollForDecisionTaskPaginator](./paginators.md#pollfordecisiontaskpaginator)
-
-
+- `client.get_paginator("get_workflow_execution_history")` ->
+  [GetWorkflowExecutionHistoryPaginator](./paginators.md#getworkflowexecutionhistorypaginator)
+- `client.get_paginator("list_activity_types")` ->
+  [ListActivityTypesPaginator](./paginators.md#listactivitytypespaginator)
+- `client.get_paginator("list_closed_workflow_executions")` ->
+  [ListClosedWorkflowExecutionsPaginator](./paginators.md#listclosedworkflowexecutionspaginator)
+- `client.get_paginator("list_domains")` ->
+  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_open_workflow_executions")` ->
+  [ListOpenWorkflowExecutionsPaginator](./paginators.md#listopenworkflowexecutionspaginator)
+- `client.get_paginator("list_workflow_types")` ->
+  [ListWorkflowTypesPaginator](./paginators.md#listworkflowtypespaginator)
+- `client.get_paginator("poll_for_decision_task")` ->
+  [PollForDecisionTaskPaginator](./paginators.md#pollfordecisiontaskpaginator)

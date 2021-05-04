@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GuardDuty](./README.md) > GuardDutyClient
 
-Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
-type annotations stubs module [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+Auto-generated documentation for
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+type annotations stubs module
+[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 - [GuardDutyClient for boto3 GuardDuty module](#guarddutyclient-for-boto3-guardduty-module)
   - [GuardDutyClient](#guarddutyclient)
@@ -84,12 +86,13 @@ def get_guardduty_client() -> GuardDutyClient:
     return boto3.client("guardduty")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
+Boto3 documentation:
+[GuardDuty.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_guardduty.client import Exceptions
@@ -98,975 +101,1001 @@ def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.BadRequestException`
 - `Exceptions.ClientError`
 - `Exceptions.InternalServerErrorException`
 
-
 ## Methods
-
 
 ### accept_invitation
 
 Type annotations for `boto3.client("guardduty").accept_invitation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation]
+Boto3 documentation:
+[GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
 
-```python
-def accept_invitation(
-    self,
-    DetectorId: str,
-    MasterId: str,
-    InvitationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MasterId`: `str` *(required)*
+- `InvitationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### archive_findings
 
 Type annotations for `boto3.client("guardduty").archive_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings]
+Boto3 documentation:
+[GuardDuty.Client.archive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
 
-```python
-def archive_findings(
-    self,
-    DetectorId: str,
-    FindingIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("guardduty").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate]
+Boto3 documentation:
+[GuardDuty.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_detector
 
 Type annotations for `boto3.client("guardduty").create_detector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector]
+Boto3 documentation:
+[GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
 
-```python
-def create_detector(
-    self,
-    Enable: bool,
-    ClientToken: str = None,
-    FindingPublishingFrequency: FindingPublishingFrequency = None,
-    DataSources: DataSourceConfigurationsTypeDef = None,
-    Tags: Dict[str, str] = None
-) -> CreateDetectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Enable`: `bool` *(required)*
+- `ClientToken`: `str`
+- `FindingPublishingFrequency`:
+  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#findingpublishingfrequency)
+- `DataSources`:
+  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createdetectorresponsetypedef).
 
 ### create_filter
 
 Type annotations for `boto3.client("guardduty").create_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter]
+Boto3 documentation:
+[GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
 
-```python
-def create_filter(
-    self,
-    DetectorId: str,
-    Name: str,
-    FindingCriteria: "FindingCriteriaTypeDef",
-    Description: str = None,
-    Action: FilterAction = None,
-    Rank: int = None,
-    ClientToken: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `FindingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+  *(required)*
+- `Description`: `str`
+- `Action`:
+  [FilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#filteraction)
+- `Rank`: `int`
+- `ClientToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createfilterresponsetypedef).
 
 ### create_ip_set
 
 Type annotations for `boto3.client("guardduty").create_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set]
+Boto3 documentation:
+[GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
 
-```python
-def create_ip_set(
-    self,
-    DetectorId: str,
-    Name: str,
-    Format: IpSetFormat,
-    Location: str,
-    Activate: bool,
-    ClientToken: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Format`:
+  [IpSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#ipsetformat)
+  *(required)*
+- `Location`: `str` *(required)*
+- `Activate`: `bool` *(required)*
+- `ClientToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createipsetresponsetypedef).
 
 ### create_members
 
 Type annotations for `boto3.client("guardduty").create_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members]
+Boto3 documentation:
+[GuardDuty.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
 
-```python
-def create_members(
-    self,
-    DetectorId: str,
-    AccountDetails: List[AccountDetailTypeDef]
-) -> CreateMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountDetails`:
+  `List`\[[AccountDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#accountdetailtypedef)\]
+  *(required)*
+
+Returns
+[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createmembersresponsetypedef).
 
 ### create_publishing_destination
 
-Type annotations for `boto3.client("guardduty").create_publishing_destination` method.
+Type annotations for `boto3.client("guardduty").create_publishing_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination]
+Boto3 documentation:
+[GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
 
-```python
-def create_publishing_destination(
-    self,
-    DetectorId: str,
-    DestinationType: Literal['S3'],
-    DestinationProperties: "DestinationPropertiesTypeDef",
-    ClientToken: str = None
-) -> CreatePublishingDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `DestinationType`: `Literal['S3']` *(required)*
+- `DestinationProperties`:
+  [DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationpropertiestypedef)
+  *(required)*
+- `ClientToken`: `str`
+
+Returns
+[CreatePublishingDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createpublishingdestinationresponsetypedef).
 
 ### create_sample_findings
 
 Type annotations for `boto3.client("guardduty").create_sample_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings]
+Boto3 documentation:
+[GuardDuty.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
 
-```python
-def create_sample_findings(
-    self,
-    DetectorId: str,
-    FindingTypes: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingTypes`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_threat_intel_set
 
-Type annotations for `boto3.client("guardduty").create_threat_intel_set` method.
+Type annotations for `boto3.client("guardduty").create_threat_intel_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set]
+Boto3 documentation:
+[GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
 
-```python
-def create_threat_intel_set(
-    self,
-    DetectorId: str,
-    Name: str,
-    Format: ThreatIntelSetFormat,
-    Location: str,
-    Activate: bool,
-    ClientToken: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateThreatIntelSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Format`:
+  [ThreatIntelSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#threatintelsetformat)
+  *(required)*
+- `Location`: `str` *(required)*
+- `Activate`: `bool` *(required)*
+- `ClientToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateThreatIntelSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createthreatintelsetresponsetypedef).
 
 ### decline_invitations
 
 Type annotations for `boto3.client("guardduty").decline_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations]
+Boto3 documentation:
+[GuardDuty.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
 
-```python
-def decline_invitations(
-    self,
-    AccountIds: List[str]
-) -> DeclineInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeclineInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#declineinvitationsresponsetypedef).
 
 ### delete_detector
 
 Type annotations for `boto3.client("guardduty").delete_detector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector]
+Boto3 documentation:
+[GuardDuty.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
 
-```python
-def delete_detector(
-    self,
-    DetectorId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_filter
 
 Type annotations for `boto3.client("guardduty").delete_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter]
+Boto3 documentation:
+[GuardDuty.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
 
-```python
-def delete_filter(
-    self,
-    DetectorId: str,
-    FilterName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FilterName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_invitations
 
 Type annotations for `boto3.client("guardduty").delete_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations]
+Boto3 documentation:
+[GuardDuty.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
 
-```python
-def delete_invitations(
-    self,
-    AccountIds: List[str]
-) -> DeleteInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#deleteinvitationsresponsetypedef).
 
 ### delete_ip_set
 
 Type annotations for `boto3.client("guardduty").delete_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set]
+Boto3 documentation:
+[GuardDuty.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
 
-```python
-def delete_ip_set(
-    self,
-    DetectorId: str,
-    IpSetId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `IpSetId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_members
 
 Type annotations for `boto3.client("guardduty").delete_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members]
+Boto3 documentation:
+[GuardDuty.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
 
-```python
-def delete_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> DeleteMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#deletemembersresponsetypedef).
 
 ### delete_publishing_destination
 
-Type annotations for `boto3.client("guardduty").delete_publishing_destination` method.
+Type annotations for `boto3.client("guardduty").delete_publishing_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination]
+Boto3 documentation:
+[GuardDuty.Client.delete_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
 
-```python
-def delete_publishing_destination(
-    self,
-    DetectorId: str,
-    DestinationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `DestinationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_threat_intel_set
 
-Type annotations for `boto3.client("guardduty").delete_threat_intel_set` method.
+Type annotations for `boto3.client("guardduty").delete_threat_intel_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set]
+Boto3 documentation:
+[GuardDuty.Client.delete_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
 
-```python
-def delete_threat_intel_set(
-    self,
-    DetectorId: str,
-    ThreatIntelSetId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `ThreatIntelSetId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_organization_configuration
 
-Type annotations for `boto3.client("guardduty").describe_organization_configuration` method.
+Type annotations for
+`boto3.client("guardduty").describe_organization_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration]
+Boto3 documentation:
+[GuardDuty.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
 
-```python
-def describe_organization_configuration(
-    self,
-    DetectorId: str
-) -> DescribeOrganizationConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+
+Returns
+[DescribeOrganizationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#describeorganizationconfigurationresponsetypedef).
 
 ### describe_publishing_destination
 
-Type annotations for `boto3.client("guardduty").describe_publishing_destination` method.
+Type annotations for
+`boto3.client("guardduty").describe_publishing_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination]
+Boto3 documentation:
+[GuardDuty.Client.describe_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
 
-```python
-def describe_publishing_destination(
-    self,
-    DetectorId: str,
-    DestinationId: str
-) -> DescribePublishingDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `DestinationId`: `str` *(required)*
+
+Returns
+[DescribePublishingDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#describepublishingdestinationresponsetypedef).
 
 ### disable_organization_admin_account
 
-Type annotations for `boto3.client("guardduty").disable_organization_admin_account` method.
+Type annotations for
+`boto3.client("guardduty").disable_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account]
+Boto3 documentation:
+[GuardDuty.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
 
-```python
-def disable_organization_admin_account(
-    self,
-    AdminAccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AdminAccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_master_account
 
-Type annotations for `boto3.client("guardduty").disassociate_from_master_account` method.
+Type annotations for
+`boto3.client("guardduty").disassociate_from_master_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account]
+Boto3 documentation:
+[GuardDuty.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
 
-```python
-def disassociate_from_master_account(
-    self,
-    DetectorId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_members
 
 Type annotations for `boto3.client("guardduty").disassociate_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members]
+Boto3 documentation:
+[GuardDuty.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
 
-```python
-def disassociate_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> DisassociateMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DisassociateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#disassociatemembersresponsetypedef).
 
 ### enable_organization_admin_account
 
-Type annotations for `boto3.client("guardduty").enable_organization_admin_account` method.
+Type annotations for
+`boto3.client("guardduty").enable_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account]
+Boto3 documentation:
+[GuardDuty.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
 
-```python
-def enable_organization_admin_account(
-    self,
-    AdminAccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AdminAccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("guardduty").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url]
+Boto3 documentation:
+[GuardDuty.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_detector
 
 Type annotations for `boto3.client("guardduty").get_detector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector]
+Boto3 documentation:
+[GuardDuty.Client.get_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
 
-```python
-def get_detector(
-    self,
-    DetectorId: str
-) -> GetDetectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+
+Returns
+[GetDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getdetectorresponsetypedef).
 
 ### get_filter
 
 Type annotations for `boto3.client("guardduty").get_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter]
+Boto3 documentation:
+[GuardDuty.Client.get_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
 
-```python
-def get_filter(
-    self,
-    DetectorId: str,
-    FilterName: str
-) -> GetFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FilterName`: `str` *(required)*
+
+Returns
+[GetFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfilterresponsetypedef).
 
 ### get_findings
 
 Type annotations for `boto3.client("guardduty").get_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings]
+Boto3 documentation:
+[GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
 
-```python
-def get_findings(
-    self,
-    DetectorId: str,
-    FindingIds: List[str],
-    SortCriteria: SortCriteriaTypeDef = None
-) -> GetFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingIds`: `List`\[`str`\] *(required)*
+- `SortCriteria`:
+  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#sortcriteriatypedef)
+
+Returns
+[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfindingsresponsetypedef).
 
 ### get_findings_statistics
 
-Type annotations for `boto3.client("guardduty").get_findings_statistics` method.
+Type annotations for `boto3.client("guardduty").get_findings_statistics`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics]
+Boto3 documentation:
+[GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
 
-```python
-def get_findings_statistics(
-    self,
-    DetectorId: str,
-    FindingStatisticTypes: List[Literal['COUNT_BY_SEVERITY']],
-    FindingCriteria: "FindingCriteriaTypeDef" = None
-) -> GetFindingsStatisticsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']`\] *(required)*
+- `FindingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+
+Returns
+[GetFindingsStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfindingsstatisticsresponsetypedef).
 
 ### get_invitations_count
 
 Type annotations for `boto3.client("guardduty").get_invitations_count` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count]
+Boto3 documentation:
+[GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
 
-```python
-def get_invitations_count(
-    self
-) -> GetInvitationsCountResponseTypeDef:
-    pass
-```
+Returns
+[GetInvitationsCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getinvitationscountresponsetypedef).
 
 ### get_ip_set
 
 Type annotations for `boto3.client("guardduty").get_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set]
+Boto3 documentation:
+[GuardDuty.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
 
-```python
-def get_ip_set(
-    self,
-    DetectorId: str,
-    IpSetId: str
-) -> GetIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `IpSetId`: `str` *(required)*
+
+Returns
+[GetIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getipsetresponsetypedef).
 
 ### get_master_account
 
 Type annotations for `boto3.client("guardduty").get_master_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account]
+Boto3 documentation:
+[GuardDuty.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
 
-```python
-def get_master_account(
-    self,
-    DetectorId: str
-) -> GetMasterAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+
+Returns
+[GetMasterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmasteraccountresponsetypedef).
 
 ### get_member_detectors
 
 Type annotations for `boto3.client("guardduty").get_member_detectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors]
+Boto3 documentation:
+[GuardDuty.Client.get_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
 
-```python
-def get_member_detectors(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> GetMemberDetectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[GetMemberDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmemberdetectorsresponsetypedef).
 
 ### get_members
 
 Type annotations for `boto3.client("guardduty").get_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members]
+Boto3 documentation:
+[GuardDuty.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
 
-```python
-def get_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> GetMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmembersresponsetypedef).
 
 ### get_threat_intel_set
 
 Type annotations for `boto3.client("guardduty").get_threat_intel_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set]
+Boto3 documentation:
+[GuardDuty.Client.get_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
 
-```python
-def get_threat_intel_set(
-    self,
-    DetectorId: str,
-    ThreatIntelSetId: str
-) -> GetThreatIntelSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `ThreatIntelSetId`: `str` *(required)*
+
+Returns
+[GetThreatIntelSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getthreatintelsetresponsetypedef).
 
 ### get_usage_statistics
 
 Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics]
+Boto3 documentation:
+[GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
 
-```python
-def get_usage_statistics(
-    self,
-    DetectorId: str,
-    UsageStatisticType: UsageStatisticType,
-    UsageCriteria: UsageCriteriaTypeDef,
-    Unit: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetUsageStatisticsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `UsageStatisticType`:
+  [UsageStatisticType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#usagestatistictype)
+  *(required)*
+- `UsageCriteria`:
+  [UsageCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usagecriteriatypedef)
+  *(required)*
+- `Unit`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetUsageStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getusagestatisticsresponsetypedef).
 
 ### invite_members
 
 Type annotations for `boto3.client("guardduty").invite_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members]
+Boto3 documentation:
+[GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
 
-```python
-def invite_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str],
-    DisableEmailNotification: bool = None,
-    Message: str = None
-) -> InviteMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+- `DisableEmailNotification`: `bool`
+- `Message`: `str`
+
+Returns
+[InviteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#invitemembersresponsetypedef).
 
 ### list_detectors
 
 Type annotations for `boto3.client("guardduty").list_detectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors]
+Boto3 documentation:
+[GuardDuty.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
 
-```python
-def list_detectors(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDetectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listdetectorsresponsetypedef).
 
 ### list_filters
 
 Type annotations for `boto3.client("guardduty").list_filters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters]
+Boto3 documentation:
+[GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
 
-```python
-def list_filters(
-    self,
-    DetectorId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFiltersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listfiltersresponsetypedef).
 
 ### list_findings
 
 Type annotations for `boto3.client("guardduty").list_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings]
+Boto3 documentation:
+[GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
 
-```python
-def list_findings(
-    self,
-    DetectorId: str,
-    FindingCriteria: "FindingCriteriaTypeDef" = None,
-    SortCriteria: SortCriteriaTypeDef = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+- `SortCriteria`:
+  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#sortcriteriatypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listfindingsresponsetypedef).
 
 ### list_invitations
 
 Type annotations for `boto3.client("guardduty").list_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations]
+Boto3 documentation:
+[GuardDuty.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
 
-```python
-def list_invitations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listinvitationsresponsetypedef).
 
 ### list_ip_sets
 
 Type annotations for `boto3.client("guardduty").list_ip_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets]
+Boto3 documentation:
+[GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
 
-```python
-def list_ip_sets(
-    self,
-    DetectorId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListIPSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listipsetsresponsetypedef).
 
 ### list_members
 
 Type annotations for `boto3.client("guardduty").list_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members]
+Boto3 documentation:
+[GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
 
-```python
-def list_members(
-    self,
-    DetectorId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    OnlyAssociated: str = None
-) -> ListMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `OnlyAssociated`: `str`
+
+Returns
+[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
-Type annotations for `boto3.client("guardduty").list_organization_admin_accounts` method.
+Type annotations for
+`boto3.client("guardduty").list_organization_admin_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts]
+Boto3 documentation:
+[GuardDuty.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
 
-```python
-def list_organization_admin_accounts(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListOrganizationAdminAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listorganizationadminaccountsresponsetypedef).
 
 ### list_publishing_destinations
 
-Type annotations for `boto3.client("guardduty").list_publishing_destinations` method.
+Type annotations for `boto3.client("guardduty").list_publishing_destinations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations]
+Boto3 documentation:
+[GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
 
-```python
-def list_publishing_destinations(
-    self,
-    DetectorId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListPublishingDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPublishingDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listpublishingdestinationsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("guardduty").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource]
+Boto3 documentation:
+[GuardDuty.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_threat_intel_sets
 
 Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets]
+Boto3 documentation:
+[GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
 
-```python
-def list_threat_intel_sets(
-    self,
-    DetectorId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListThreatIntelSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListThreatIntelSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listthreatintelsetsresponsetypedef).
 
 ### start_monitoring_members
 
-Type annotations for `boto3.client("guardduty").start_monitoring_members` method.
+Type annotations for `boto3.client("guardduty").start_monitoring_members`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members]
+Boto3 documentation:
+[GuardDuty.Client.start_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
 
-```python
-def start_monitoring_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> StartMonitoringMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[StartMonitoringMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#startmonitoringmembersresponsetypedef).
 
 ### stop_monitoring_members
 
-Type annotations for `boto3.client("guardduty").stop_monitoring_members` method.
+Type annotations for `boto3.client("guardduty").stop_monitoring_members`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members]
+Boto3 documentation:
+[GuardDuty.Client.stop_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
 
-```python
-def stop_monitoring_members(
-    self,
-    DetectorId: str,
-    AccountIds: List[str]
-) -> StopMonitoringMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[StopMonitoringMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#stopmonitoringmembersresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("guardduty").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource]
+Boto3 documentation:
+[GuardDuty.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### unarchive_findings
 
 Type annotations for `boto3.client("guardduty").unarchive_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings]
+Boto3 documentation:
+[GuardDuty.Client.unarchive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
 
-```python
-def unarchive_findings(
-    self,
-    DetectorId: str,
-    FindingIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("guardduty").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource]
+Boto3 documentation:
+[GuardDuty.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_detector
 
 Type annotations for `boto3.client("guardduty").update_detector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector]
+Boto3 documentation:
+[GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
 
-```python
-def update_detector(
-    self,
-    DetectorId: str,
-    Enable: bool = None,
-    FindingPublishingFrequency: FindingPublishingFrequency = None,
-    DataSources: DataSourceConfigurationsTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `Enable`: `bool`
+- `FindingPublishingFrequency`:
+  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#findingpublishingfrequency)
+- `DataSources`:
+  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_filter
 
 Type annotations for `boto3.client("guardduty").update_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter]
+Boto3 documentation:
+[GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
 
-```python
-def update_filter(
-    self,
-    DetectorId: str,
-    FilterName: str,
-    Description: str = None,
-    Action: FilterAction = None,
-    Rank: int = None,
-    FindingCriteria: "FindingCriteriaTypeDef" = None
-) -> UpdateFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FilterName`: `str` *(required)*
+- `Description`: `str`
+- `Action`:
+  [FilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#filteraction)
+- `Rank`: `int`
+- `FindingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+
+Returns
+[UpdateFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#updatefilterresponsetypedef).
 
 ### update_findings_feedback
 
-Type annotations for `boto3.client("guardduty").update_findings_feedback` method.
+Type annotations for `boto3.client("guardduty").update_findings_feedback`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback]
+Boto3 documentation:
+[GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
 
-```python
-def update_findings_feedback(
-    self,
-    DetectorId: str,
-    FindingIds: List[str],
-    Feedback: Feedback,
-    Comments: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `FindingIds`: `List`\[`str`\] *(required)*
+- `Feedback`:
+  [Feedback](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#feedback)
+  *(required)*
+- `Comments`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_ip_set
 
 Type annotations for `boto3.client("guardduty").update_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set]
+Boto3 documentation:
+[GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
 
-```python
-def update_ip_set(
-    self,
-    DetectorId: str,
-    IpSetId: str,
-    Name: str = None,
-    Location: str = None,
-    Activate: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `IpSetId`: `str` *(required)*
+- `Name`: `str`
+- `Location`: `str`
+- `Activate`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_member_detectors
 
-Type annotations for `boto3.client("guardduty").update_member_detectors` method.
+Type annotations for `boto3.client("guardduty").update_member_detectors`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors]
+Boto3 documentation:
+[GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
 
-```python
-def update_member_detectors(
-    self,
-    DetectorId: str,
-    AccountIds: List[str],
-    DataSources: DataSourceConfigurationsTypeDef = None
-) -> UpdateMemberDetectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\] *(required)*
+- `DataSources`:
+  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+
+Returns
+[UpdateMemberDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#updatememberdetectorsresponsetypedef).
 
 ### update_organization_configuration
 
-Type annotations for `boto3.client("guardduty").update_organization_configuration` method.
+Type annotations for
+`boto3.client("guardduty").update_organization_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration]
+Boto3 documentation:
+[GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
 
-```python
-def update_organization_configuration(
-    self,
-    DetectorId: str,
-    AutoEnable: bool,
-    DataSources: OrganizationDataSourceConfigurationsTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `AutoEnable`: `bool` *(required)*
+- `DataSources`:
+  [OrganizationDataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizationdatasourceconfigurationstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_publishing_destination
 
-Type annotations for `boto3.client("guardduty").update_publishing_destination` method.
+Type annotations for `boto3.client("guardduty").update_publishing_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination]
+Boto3 documentation:
+[GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
 
-```python
-def update_publishing_destination(
-    self,
-    DetectorId: str,
-    DestinationId: str,
-    DestinationProperties: "DestinationPropertiesTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DetectorId`: `str` *(required)*
+- `DestinationId`: `str` *(required)*
+- `DestinationProperties`:
+  [DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationpropertiestypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_threat_intel_set
 
-Type annotations for `boto3.client("guardduty").update_threat_intel_set` method.
+Type annotations for `boto3.client("guardduty").update_threat_intel_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set]
+Boto3 documentation:
+[GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
 
-```python
-def update_threat_intel_set(
-    self,
-    DetectorId: str,
-    ThreatIntelSetId: str,
-    Name: str = None,
-    Location: str = None,
-    Activate: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `DetectorId`: `str` *(required)*
+- `ThreatIntelSetId`: `str` *(required)*
+- `Name`: `str`
+- `Location`: `str`
+- `Activate`: `bool`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("guardduty").get_paginator` method with overloads.
+Type annotations for `boto3.client("guardduty").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_detectors")` -> [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
-- `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
-- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_ip_sets")` -> [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
-- `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
-- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
-- `client.get_paginator("list_organization_admin_accounts")` -> [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
-- `client.get_paginator("list_threat_intel_sets")` -> [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
-
-
+- `client.get_paginator("list_detectors")` ->
+  [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
+- `client.get_paginator("list_filters")` ->
+  [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_findings")` ->
+  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_ip_sets")` ->
+  [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
+- `client.get_paginator("list_invitations")` ->
+  [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_members")` ->
+  [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` ->
+  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- `client.get_paginator("list_threat_intel_sets")` ->
+  [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)

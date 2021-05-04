@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kafka](./README.md) > KafkaClient
 
-Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
-type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+Auto-generated documentation for
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+type annotations stubs module
+[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [KafkaClient for boto3 Kafka module](#kafkaclient-for-boto3-kafka-module)
   - [KafkaClient](#kafkaclient)
@@ -56,12 +58,13 @@ def get_kafka_client() -> KafkaClient:
     return boto3.client("kafka")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
+Boto3 documentation:
+[Kafka.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kafka.client import Exceptions
@@ -69,7 +72,6 @@ from mypy_boto3_kafka.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -83,522 +85,539 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### batch_associate_scram_secret
 
-Type annotations for `boto3.client("kafka").batch_associate_scram_secret` method.
+Type annotations for `boto3.client("kafka").batch_associate_scram_secret`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret]
+Boto3 documentation:
+[Kafka.Client.batch_associate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret)
 
-```python
-def batch_associate_scram_secret(
-    self,
-    ClusterArn: str,
-    SecretArnList: List[str]
-) -> BatchAssociateScramSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `SecretArnList`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchAssociateScramSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#batchassociatescramsecretresponsetypedef).
 
 ### batch_disassociate_scram_secret
 
-Type annotations for `boto3.client("kafka").batch_disassociate_scram_secret` method.
+Type annotations for `boto3.client("kafka").batch_disassociate_scram_secret`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret]
+Boto3 documentation:
+[Kafka.Client.batch_disassociate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret)
 
-```python
-def batch_disassociate_scram_secret(
-    self,
-    ClusterArn: str,
-    SecretArnList: List[str]
-) -> BatchDisassociateScramSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `SecretArnList`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDisassociateScramSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#batchdisassociatescramsecretresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("kafka").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.can_paginate]
+Boto3 documentation:
+[Kafka.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_cluster
 
 Type annotations for `boto3.client("kafka").create_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster]
+Boto3 documentation:
+[Kafka.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster)
 
-```python
-def create_cluster(
-    self,
-    BrokerNodeGroupInfo: "BrokerNodeGroupInfoTypeDef",
-    ClusterName: str,
-    KafkaVersion: str,
-    NumberOfBrokerNodes: int,
-    ClientAuthentication: "ClientAuthenticationTypeDef" = None,
-    ConfigurationInfo: "ConfigurationInfoTypeDef" = None,
-    EncryptionInfo: "EncryptionInfoTypeDef" = None,
-    EnhancedMonitoring: EnhancedMonitoring = None,
-    OpenMonitoring: OpenMonitoringInfoTypeDef = None,
-    LoggingInfo: "LoggingInfoTypeDef" = None,
-    Tags: Dict[str, str] = None
-) -> CreateClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerNodeGroupInfo`:
+  [BrokerNodeGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokernodegroupinfotypedef)
+  *(required)*
+- `ClusterName`: `str` *(required)*
+- `KafkaVersion`: `str` *(required)*
+- `NumberOfBrokerNodes`: `int` *(required)*
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clientauthenticationtypedef)
+- `ConfigurationInfo`:
+  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#encryptioninfotypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+- `OpenMonitoring`:
+  [OpenMonitoringInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringinfotypedef)
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#createclusterresponsetypedef).
 
 ### create_configuration
 
 Type annotations for `boto3.client("kafka").create_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration]
+Boto3 documentation:
+[Kafka.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration)
 
-```python
-def create_configuration(
-    self,
-    Name: str,
-    ServerProperties: Union[bytes, IO[bytes]],
-    Description: str = None,
-    KafkaVersions: List[str] = None
-) -> CreateConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Description`: `str`
+- `KafkaVersions`: `List`\[`str`\]
+
+Returns
+[CreateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#createconfigurationresponsetypedef).
 
 ### delete_cluster
 
 Type annotations for `boto3.client("kafka").delete_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster]
+Boto3 documentation:
+[Kafka.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster)
 
-```python
-def delete_cluster(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str = None
-) -> DeleteClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str`
+
+Returns
+[DeleteClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#deleteclusterresponsetypedef).
 
 ### delete_configuration
 
 Type annotations for `boto3.client("kafka").delete_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration]
+Boto3 documentation:
+[Kafka.Client.delete_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration)
 
-```python
-def delete_configuration(
-    self,
-    Arn: str
-) -> DeleteConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[DeleteConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#deleteconfigurationresponsetypedef).
 
 ### describe_cluster
 
 Type annotations for `boto3.client("kafka").describe_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster]
+Boto3 documentation:
+[Kafka.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster)
 
-```python
-def describe_cluster(
-    self,
-    ClusterArn: str
-) -> DescribeClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+
+Returns
+[DescribeClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeclusterresponsetypedef).
 
 ### describe_cluster_operation
 
 Type annotations for `boto3.client("kafka").describe_cluster_operation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation]
+Boto3 documentation:
+[Kafka.Client.describe_cluster_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation)
 
-```python
-def describe_cluster_operation(
-    self,
-    ClusterOperationArn: str
-) -> DescribeClusterOperationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterOperationArn`: `str` *(required)*
+
+Returns
+[DescribeClusterOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeclusteroperationresponsetypedef).
 
 ### describe_configuration
 
 Type annotations for `boto3.client("kafka").describe_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration]
+Boto3 documentation:
+[Kafka.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration)
 
-```python
-def describe_configuration(
-    self,
-    Arn: str
-) -> DescribeConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[DescribeConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeconfigurationresponsetypedef).
 
 ### describe_configuration_revision
 
-Type annotations for `boto3.client("kafka").describe_configuration_revision` method.
+Type annotations for `boto3.client("kafka").describe_configuration_revision`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision]
+Boto3 documentation:
+[Kafka.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision)
 
-```python
-def describe_configuration_revision(
-    self,
-    Arn: str,
-    Revision: int
-) -> DescribeConfigurationRevisionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `Revision`: `int` *(required)*
+
+Returns
+[DescribeConfigurationRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeconfigurationrevisionresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("kafka").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.generate_presigned_url]
+Boto3 documentation:
+[Kafka.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_bootstrap_brokers
 
 Type annotations for `boto3.client("kafka").get_bootstrap_brokers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers]
+Boto3 documentation:
+[Kafka.Client.get_bootstrap_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers)
 
-```python
-def get_bootstrap_brokers(
-    self,
-    ClusterArn: str
-) -> GetBootstrapBrokersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+
+Returns
+[GetBootstrapBrokersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#getbootstrapbrokersresponsetypedef).
 
 ### get_compatible_kafka_versions
 
-Type annotations for `boto3.client("kafka").get_compatible_kafka_versions` method.
+Type annotations for `boto3.client("kafka").get_compatible_kafka_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions]
+Boto3 documentation:
+[Kafka.Client.get_compatible_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions)
 
-```python
-def get_compatible_kafka_versions(
-    self,
-    ClusterArn: str = None
-) -> GetCompatibleKafkaVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str`
+
+Returns
+[GetCompatibleKafkaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#getcompatiblekafkaversionsresponsetypedef).
 
 ### list_cluster_operations
 
 Type annotations for `boto3.client("kafka").list_cluster_operations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations]
+Boto3 documentation:
+[Kafka.Client.list_cluster_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations)
 
-```python
-def list_cluster_operations(
-    self,
-    ClusterArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListClusterOperationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListClusterOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listclusteroperationsresponsetypedef).
 
 ### list_clusters
 
 Type annotations for `boto3.client("kafka").list_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters]
+Boto3 documentation:
+[Kafka.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters)
 
-```python
-def list_clusters(
-    self,
-    ClusterNameFilter: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListClustersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterNameFilter`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listclustersresponsetypedef).
 
 ### list_configuration_revisions
 
-Type annotations for `boto3.client("kafka").list_configuration_revisions` method.
+Type annotations for `boto3.client("kafka").list_configuration_revisions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions]
+Boto3 documentation:
+[Kafka.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions)
 
-```python
-def list_configuration_revisions(
-    self,
-    Arn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConfigurationRevisionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConfigurationRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listconfigurationrevisionsresponsetypedef).
 
 ### list_configurations
 
 Type annotations for `boto3.client("kafka").list_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations]
+Boto3 documentation:
+[Kafka.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations)
 
-```python
-def list_configurations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listconfigurationsresponsetypedef).
 
 ### list_kafka_versions
 
 Type annotations for `boto3.client("kafka").list_kafka_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions]
+Boto3 documentation:
+[Kafka.Client.list_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions)
 
-```python
-def list_kafka_versions(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListKafkaVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListKafkaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listkafkaversionsresponsetypedef).
 
 ### list_nodes
 
 Type annotations for `boto3.client("kafka").list_nodes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes]
+Boto3 documentation:
+[Kafka.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes)
 
-```python
-def list_nodes(
-    self,
-    ClusterArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListNodesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListNodesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listnodesresponsetypedef).
 
 ### list_scram_secrets
 
 Type annotations for `boto3.client("kafka").list_scram_secrets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets]
+Boto3 documentation:
+[Kafka.Client.list_scram_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets)
 
-```python
-def list_scram_secrets(
-    self,
-    ClusterArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListScramSecretsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListScramSecretsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listscramsecretsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("kafka").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource]
+Boto3 documentation:
+[Kafka.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### reboot_broker
 
 Type annotations for `boto3.client("kafka").reboot_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker]
+Boto3 documentation:
+[Kafka.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker)
 
-```python
-def reboot_broker(
-    self,
-    BrokerIds: List[str],
-    ClusterArn: str
-) -> RebootBrokerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerIds`: `List`\[`str`\] *(required)*
+- `ClusterArn`: `str` *(required)*
+
+Returns
+[RebootBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#rebootbrokerresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("kafka").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource]
+Boto3 documentation:
+[Kafka.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("kafka").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource]
+Boto3 documentation:
+[Kafka.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_broker_count
 
 Type annotations for `boto3.client("kafka").update_broker_count` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count]
+Boto3 documentation:
+[Kafka.Client.update_broker_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count)
 
-```python
-def update_broker_count(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str,
-    TargetNumberOfBrokerNodes: int
-) -> UpdateBrokerCountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `TargetNumberOfBrokerNodes`: `int` *(required)*
+
+Returns
+[UpdateBrokerCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokercountresponsetypedef).
 
 ### update_broker_storage
 
 Type annotations for `boto3.client("kafka").update_broker_storage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage]
+Boto3 documentation:
+[Kafka.Client.update_broker_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage)
 
-```python
-def update_broker_storage(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str,
-    TargetBrokerEBSVolumeInfo: List["BrokerEBSVolumeInfoTypeDef"]
-) -> UpdateBrokerStorageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `TargetBrokerEBSVolumeInfo`:
+  `List`\[[BrokerEBSVolumeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokerebsvolumeinfotypedef)\]
+  *(required)*
+
+Returns
+[UpdateBrokerStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokerstorageresponsetypedef).
 
 ### update_broker_type
 
 Type annotations for `boto3.client("kafka").update_broker_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type]
+Boto3 documentation:
+[Kafka.Client.update_broker_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type)
 
-```python
-def update_broker_type(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str,
-    TargetInstanceType: str
-) -> UpdateBrokerTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `TargetInstanceType`: `str` *(required)*
+
+Returns
+[UpdateBrokerTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokertyperesponsetypedef).
 
 ### update_cluster_configuration
 
-Type annotations for `boto3.client("kafka").update_cluster_configuration` method.
+Type annotations for `boto3.client("kafka").update_cluster_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration]
+Boto3 documentation:
+[Kafka.Client.update_cluster_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration)
 
-```python
-def update_cluster_configuration(
-    self,
-    ClusterArn: str,
-    ConfigurationInfo: "ConfigurationInfoTypeDef",
-    CurrentVersion: str
-) -> UpdateClusterConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `ConfigurationInfo`:
+  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+  *(required)*
+- `CurrentVersion`: `str` *(required)*
+
+Returns
+[UpdateClusterConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateclusterconfigurationresponsetypedef).
 
 ### update_cluster_kafka_version
 
-Type annotations for `boto3.client("kafka").update_cluster_kafka_version` method.
+Type annotations for `boto3.client("kafka").update_cluster_kafka_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version]
+Boto3 documentation:
+[Kafka.Client.update_cluster_kafka_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version)
 
-```python
-def update_cluster_kafka_version(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str,
-    TargetKafkaVersion: str,
-    ConfigurationInfo: "ConfigurationInfoTypeDef" = None
-) -> UpdateClusterKafkaVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `TargetKafkaVersion`: `str` *(required)*
+- `ConfigurationInfo`:
+  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+
+Returns
+[UpdateClusterKafkaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateclusterkafkaversionresponsetypedef).
 
 ### update_configuration
 
 Type annotations for `boto3.client("kafka").update_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration]
+Boto3 documentation:
+[Kafka.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration)
 
-```python
-def update_configuration(
-    self,
-    Arn: str,
-    ServerProperties: Union[bytes, IO[bytes]],
-    Description: str = None
-) -> UpdateConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateconfigurationresponsetypedef).
 
 ### update_monitoring
 
 Type annotations for `boto3.client("kafka").update_monitoring` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring]
+Boto3 documentation:
+[Kafka.Client.update_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring)
 
-```python
-def update_monitoring(
-    self,
-    ClusterArn: str,
-    CurrentVersion: str,
-    EnhancedMonitoring: EnhancedMonitoring = None,
-    OpenMonitoring: OpenMonitoringInfoTypeDef = None,
-    LoggingInfo: "LoggingInfoTypeDef" = None
-) -> UpdateMonitoringResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `EnhancedMonitoring`:
+  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+- `OpenMonitoring`:
+  [OpenMonitoringInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringinfotypedef)
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
 
+Returns
+[UpdateMonitoringResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatemonitoringresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("kafka").get_paginator` method with overloads.
+Type annotations for `boto3.client("kafka").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_cluster_operations")` -> [ListClusterOperationsPaginator](./paginators.md#listclusteroperationspaginator)
-- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_configuration_revisions")` -> [ListConfigurationRevisionsPaginator](./paginators.md#listconfigurationrevisionspaginator)
-- `client.get_paginator("list_configurations")` -> [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
-- `client.get_paginator("list_kafka_versions")` -> [ListKafkaVersionsPaginator](./paginators.md#listkafkaversionspaginator)
-- `client.get_paginator("list_nodes")` -> [ListNodesPaginator](./paginators.md#listnodespaginator)
-- `client.get_paginator("list_scram_secrets")` -> [ListScramSecretsPaginator](./paginators.md#listscramsecretspaginator)
-
-
+- `client.get_paginator("list_cluster_operations")` ->
+  [ListClusterOperationsPaginator](./paginators.md#listclusteroperationspaginator)
+- `client.get_paginator("list_clusters")` ->
+  [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_configuration_revisions")` ->
+  [ListConfigurationRevisionsPaginator](./paginators.md#listconfigurationrevisionspaginator)
+- `client.get_paginator("list_configurations")` ->
+  [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+- `client.get_paginator("list_kafka_versions")` ->
+  [ListKafkaVersionsPaginator](./paginators.md#listkafkaversionspaginator)
+- `client.get_paginator("list_nodes")` ->
+  [ListNodesPaginator](./paginators.md#listnodespaginator)
+- `client.get_paginator("list_scram_secrets")` ->
+  [ListScramSecretsPaginator](./paginators.md#listscramsecretspaginator)

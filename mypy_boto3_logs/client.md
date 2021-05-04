@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > CloudWatchLogsClient
 
-Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+Auto-generated documentation for
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+type annotations stubs module
+[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [CloudWatchLogsClient for boto3 CloudWatchLogs module](#cloudwatchlogsclient-for-boto3-cloudwatchlogs-module)
   - [CloudWatchLogsClient](#cloudwatchlogsclient)
@@ -68,12 +70,13 @@ def get_logs_client() -> CloudWatchLogsClient:
     return boto3.client("logs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
+Boto3 documentation:
+[CloudWatchLogs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_logs.client import Exceptions
@@ -81,7 +84,6 @@ from mypy_boto3_logs.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -98,724 +100,681 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.UnrecognizedClientException`
 
-
 ## Methods
-
 
 ### associate_kms_key
 
 Type annotations for `boto3.client("logs").associate_kms_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key]
+Boto3 documentation:
+[CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
 
-```python
-def associate_kms_key(
-    self,
-    logGroupName: str,
-    kmsKeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `kmsKeyId`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("logs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate]
+Boto3 documentation:
+[CloudWatchLogs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_export_task
 
 Type annotations for `boto3.client("logs").cancel_export_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task]
+Boto3 documentation:
+[CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
 
-```python
-def cancel_export_task(
-    self,
-    taskId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `taskId`: `str` *(required)*
 
 ### create_export_task
 
 Type annotations for `boto3.client("logs").create_export_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task]
+Boto3 documentation:
+[CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
 
-```python
-def create_export_task(
-    self,
-    logGroupName: str,
-    fromTime: int,
-    to: int,
-    destination: str,
-    taskName: str = None,
-    logStreamNamePrefix: str = None,
-    destinationPrefix: str = None
-) -> CreateExportTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `fromTime`: `int` *(required)*
+- `to`: `int` *(required)*
+- `destination`: `str` *(required)*
+- `taskName`: `str`
+- `logStreamNamePrefix`: `str`
+- `destinationPrefix`: `str`
+
+Returns
+[CreateExportTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#createexporttaskresponsetypedef).
 
 ### create_log_group
 
 Type annotations for `boto3.client("logs").create_log_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group]
+Boto3 documentation:
+[CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
 
-```python
-def create_log_group(
-    self,
-    logGroupName: str,
-    kmsKeyId: str = None,
-    tags: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `kmsKeyId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ### create_log_stream
 
 Type annotations for `boto3.client("logs").create_log_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream]
+Boto3 documentation:
+[CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
 
-```python
-def create_log_stream(
-    self,
-    logGroupName: str,
-    logStreamName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamName`: `str` *(required)*
 
 ### delete_destination
 
 Type annotations for `boto3.client("logs").delete_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
 
-```python
-def delete_destination(
-    self,
-    destinationName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `destinationName`: `str` *(required)*
 
 ### delete_log_group
 
 Type annotations for `boto3.client("logs").delete_log_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
 
-```python
-def delete_log_group(
-    self,
-    logGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
 
 ### delete_log_stream
 
 Type annotations for `boto3.client("logs").delete_log_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
 
-```python
-def delete_log_stream(
-    self,
-    logGroupName: str,
-    logStreamName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamName`: `str` *(required)*
 
 ### delete_metric_filter
 
 Type annotations for `boto3.client("logs").delete_metric_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
 
-```python
-def delete_metric_filter(
-    self,
-    logGroupName: str,
-    filterName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `filterName`: `str` *(required)*
 
 ### delete_query_definition
 
 Type annotations for `boto3.client("logs").delete_query_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
 
-```python
-def delete_query_definition(
-    self,
-    queryDefinitionId: str
-) -> DeleteQueryDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `queryDefinitionId`: `str` *(required)*
+
+Returns
+[DeleteQueryDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#deletequerydefinitionresponsetypedef).
 
 ### delete_resource_policy
 
 Type annotations for `boto3.client("logs").delete_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
 
-```python
-def delete_resource_policy(
-    self,
-    policyName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `policyName`: `str`
 
 ### delete_retention_policy
 
 Type annotations for `boto3.client("logs").delete_retention_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
 
-```python
-def delete_retention_policy(
-    self,
-    logGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
 
 ### delete_subscription_filter
 
 Type annotations for `boto3.client("logs").delete_subscription_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter]
+Boto3 documentation:
+[CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
 
-```python
-def delete_subscription_filter(
-    self,
-    logGroupName: str,
-    filterName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `filterName`: `str` *(required)*
 
 ### describe_destinations
 
 Type annotations for `boto3.client("logs").describe_destinations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
 
-```python
-def describe_destinations(
-    self,
-    DestinationNamePrefix: str = None,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DestinationNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describedestinationsresponsetypedef).
 
 ### describe_export_tasks
 
 Type annotations for `boto3.client("logs").describe_export_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
 
-```python
-def describe_export_tasks(
-    self,
-    taskId: str = None,
-    statusCode: ExportTaskStatusCode = None,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeExportTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `taskId`: `str`
+- `statusCode`:
+  [ExportTaskStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#exporttaskstatuscode)
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeExportTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeexporttasksresponsetypedef).
 
 ### describe_log_groups
 
 Type annotations for `boto3.client("logs").describe_log_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
 
-```python
-def describe_log_groups(
-    self,
-    logGroupNamePrefix: str = None,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeLogGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeLogGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeloggroupsresponsetypedef).
 
 ### describe_log_streams
 
 Type annotations for `boto3.client("logs").describe_log_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
 
-```python
-def describe_log_streams(
-    self,
-    logGroupName: str,
-    logStreamNamePrefix: str = None,
-    orderBy: OrderBy = None,
-    descending: bool = None,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeLogStreamsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamNamePrefix`: `str`
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#orderby)
+- `descending`: `bool`
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeLogStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describelogstreamsresponsetypedef).
 
 ### describe_metric_filters
 
 Type annotations for `boto3.client("logs").describe_metric_filters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
 
-```python
-def describe_metric_filters(
-    self,
-    logGroupName: str = None,
-    filterNamePrefix: str = None,
-    nextToken: str = None,
-    limit: int = None,
-    metricName: str = None,
-    metricNamespace: str = None
-) -> DescribeMetricFiltersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str`
+- `filterNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+- `metricName`: `str`
+- `metricNamespace`: `str`
+
+Returns
+[DescribeMetricFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describemetricfiltersresponsetypedef).
 
 ### describe_queries
 
 Type annotations for `boto3.client("logs").describe_queries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
 
-```python
-def describe_queries(
-    self,
-    logGroupName: str = None,
-    status: QueryStatus = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeQueriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str`
+- `status`:
+  [QueryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#querystatus)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeQueriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describequeriesresponsetypedef).
 
 ### describe_query_definitions
 
 Type annotations for `boto3.client("logs").describe_query_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
 
-```python
-def describe_query_definitions(
-    self,
-    queryDefinitionNamePrefix: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeQueryDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `queryDefinitionNamePrefix`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeQueryDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describequerydefinitionsresponsetypedef).
 
 ### describe_resource_policies
 
 Type annotations for `boto3.client("logs").describe_resource_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
 
-```python
-def describe_resource_policies(
-    self,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeResourcePoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeresourcepoliciesresponsetypedef).
 
 ### describe_subscription_filters
 
-Type annotations for `boto3.client("logs").describe_subscription_filters` method.
+Type annotations for `boto3.client("logs").describe_subscription_filters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters]
+Boto3 documentation:
+[CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
 
-```python
-def describe_subscription_filters(
-    self,
-    logGroupName: str,
-    filterNamePrefix: str = None,
-    nextToken: str = None,
-    limit: int = None
-) -> DescribeSubscriptionFiltersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `filterNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+Returns
+[DescribeSubscriptionFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describesubscriptionfiltersresponsetypedef).
 
 ### disassociate_kms_key
 
 Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key]
+Boto3 documentation:
+[CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
 
-```python
-def disassociate_kms_key(
-    self,
-    logGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
 
 ### filter_log_events
 
 Type annotations for `boto3.client("logs").filter_log_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events]
+Boto3 documentation:
+[CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
 
-```python
-def filter_log_events(
-    self,
-    logGroupName: str,
-    logStreamNames: List[str] = None,
-    logStreamNamePrefix: str = None,
-    startTime: int = None,
-    endTime: int = None,
-    filterPattern: str = None,
-    nextToken: str = None,
-    limit: int = None,
-    interleaved: bool = None
-) -> FilterLogEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamNames`: `List`\[`str`\]
+- `logStreamNamePrefix`: `str`
+- `startTime`: `int`
+- `endTime`: `int`
+- `filterPattern`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+- `interleaved`: `bool`
+
+Returns
+[FilterLogEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#filterlogeventsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("logs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudWatchLogs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_log_events
 
 Type annotations for `boto3.client("logs").get_log_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events]
+Boto3 documentation:
+[CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
 
-```python
-def get_log_events(
-    self,
-    logGroupName: str,
-    logStreamName: str,
-    startTime: int = None,
-    endTime: int = None,
-    nextToken: str = None,
-    limit: int = None,
-    startFromHead: bool = None
-) -> GetLogEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamName`: `str` *(required)*
+- `startTime`: `int`
+- `endTime`: `int`
+- `nextToken`: `str`
+- `limit`: `int`
+- `startFromHead`: `bool`
+
+Returns
+[GetLogEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#getlogeventsresponsetypedef).
 
 ### get_log_group_fields
 
 Type annotations for `boto3.client("logs").get_log_group_fields` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields]
+Boto3 documentation:
+[CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
 
-```python
-def get_log_group_fields(
-    self,
-    logGroupName: str,
-    time: int = None
-) -> GetLogGroupFieldsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `time`: `int`
+
+Returns
+[GetLogGroupFieldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#getloggroupfieldsresponsetypedef).
 
 ### get_log_record
 
 Type annotations for `boto3.client("logs").get_log_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record]
+Boto3 documentation:
+[CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
 
-```python
-def get_log_record(
-    self,
-    logRecordPointer: str
-) -> GetLogRecordResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logRecordPointer`: `str` *(required)*
+
+Returns
+[GetLogRecordResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#getlogrecordresponsetypedef).
 
 ### get_query_results
 
 Type annotations for `boto3.client("logs").get_query_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results]
+Boto3 documentation:
+[CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
 
-```python
-def get_query_results(
-    self,
-    queryId: str
-) -> GetQueryResultsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `queryId`: `str` *(required)*
+
+Returns
+[GetQueryResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#getqueryresultsresponsetypedef).
 
 ### list_tags_log_group
 
 Type annotations for `boto3.client("logs").list_tags_log_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group]
+Boto3 documentation:
+[CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
 
-```python
-def list_tags_log_group(
-    self,
-    logGroupName: str
-) -> ListTagsLogGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+
+Returns
+[ListTagsLogGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#listtagsloggroupresponsetypedef).
 
 ### put_destination
 
 Type annotations for `boto3.client("logs").put_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
 
-```python
-def put_destination(
-    self,
-    destinationName: str,
-    targetArn: str,
-    roleArn: str
-) -> PutDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `destinationName`: `str` *(required)*
+- `targetArn`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+
+Returns
+[PutDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#putdestinationresponsetypedef).
 
 ### put_destination_policy
 
 Type annotations for `boto3.client("logs").put_destination_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
 
-```python
-def put_destination_policy(
-    self,
-    destinationName: str,
-    accessPolicy: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `destinationName`: `str` *(required)*
+- `accessPolicy`: `str` *(required)*
 
 ### put_log_events
 
 Type annotations for `boto3.client("logs").put_log_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
 
-```python
-def put_log_events(
-    self,
-    logGroupName: str,
-    logStreamName: str,
-    logEvents: List[InputLogEventTypeDef],
-    sequenceToken: str = None
-) -> PutLogEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `logStreamName`: `str` *(required)*
+- `logEvents`:
+  `List`\[[InputLogEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#inputlogeventtypedef)\]
+  *(required)*
+- `sequenceToken`: `str`
+
+Returns
+[PutLogEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#putlogeventsresponsetypedef).
 
 ### put_metric_filter
 
 Type annotations for `boto3.client("logs").put_metric_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
 
-```python
-def put_metric_filter(
-    self,
-    logGroupName: str,
-    filterName: str,
-    filterPattern: str,
-    metricTransformations: List["MetricTransformationTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `filterName`: `str` *(required)*
+- `filterPattern`: `str` *(required)*
+- `metricTransformations`:
+  `List`\[[MetricTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#metrictransformationtypedef)\]
+  *(required)*
 
 ### put_query_definition
 
 Type annotations for `boto3.client("logs").put_query_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
 
-```python
-def put_query_definition(
-    self,
-    name: str,
-    queryString: str,
-    queryDefinitionId: str = None,
-    logGroupNames: List[str] = None
-) -> PutQueryDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `queryString`: `str` *(required)*
+- `queryDefinitionId`: `str`
+- `logGroupNames`: `List`\[`str`\]
+
+Returns
+[PutQueryDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#putquerydefinitionresponsetypedef).
 
 ### put_resource_policy
 
 Type annotations for `boto3.client("logs").put_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
 
-```python
-def put_resource_policy(
-    self,
-    policyName: str = None,
-    policyDocument: str = None
-) -> PutResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `policyName`: `str`
+- `policyDocument`: `str`
+
+Returns
+[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#putresourcepolicyresponsetypedef).
 
 ### put_retention_policy
 
 Type annotations for `boto3.client("logs").put_retention_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
 
-```python
-def put_retention_policy(
-    self,
-    logGroupName: str,
-    retentionInDays: int
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `retentionInDays`: `int` *(required)*
 
 ### put_subscription_filter
 
 Type annotations for `boto3.client("logs").put_subscription_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter]
+Boto3 documentation:
+[CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
 
-```python
-def put_subscription_filter(
-    self,
-    logGroupName: str,
-    filterName: str,
-    filterPattern: str,
-    destinationArn: str,
-    roleArn: str = None,
-    distribution: Distribution = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `filterName`: `str` *(required)*
+- `filterPattern`: `str` *(required)*
+- `destinationArn`: `str` *(required)*
+- `roleArn`: `str`
+- `distribution`:
+  [Distribution](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#distribution)
 
 ### start_query
 
 Type annotations for `boto3.client("logs").start_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query]
+Boto3 documentation:
+[CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query)
 
-```python
-def start_query(
-    self,
-    startTime: int,
-    endTime: int,
-    queryString: str,
-    logGroupName: str = None,
-    logGroupNames: List[str] = None,
-    limit: int = None
-) -> StartQueryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `startTime`: `int` *(required)*
+- `endTime`: `int` *(required)*
+- `queryString`: `str` *(required)*
+- `logGroupName`: `str`
+- `logGroupNames`: `List`\[`str`\]
+- `limit`: `int`
+
+Returns
+[StartQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#startqueryresponsetypedef).
 
 ### stop_query
 
 Type annotations for `boto3.client("logs").stop_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query]
+Boto3 documentation:
+[CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
 
-```python
-def stop_query(
-    self,
-    queryId: str
-) -> StopQueryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `queryId`: `str` *(required)*
+
+Returns
+[StopQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#stopqueryresponsetypedef).
 
 ### tag_log_group
 
 Type annotations for `boto3.client("logs").tag_log_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group]
+Boto3 documentation:
+[CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
 
-```python
-def tag_log_group(
-    self,
-    logGroupName: str,
-    tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `logGroupName`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### test_metric_filter
 
 Type annotations for `boto3.client("logs").test_metric_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter]
+Boto3 documentation:
+[CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
 
-```python
-def test_metric_filter(
-    self,
-    filterPattern: str,
-    logEventMessages: List[str]
-) -> TestMetricFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filterPattern`: `str` *(required)*
+- `logEventMessages`: `List`\[`str`\] *(required)*
+
+Returns
+[TestMetricFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#testmetricfilterresponsetypedef).
 
 ### untag_log_group
 
 Type annotations for `boto3.client("logs").untag_log_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group]
+Boto3 documentation:
+[CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
 
-```python
-def untag_log_group(
-    self,
-    logGroupName: str,
-    tags: List[str]
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `logGroupName`: `str` *(required)*
+- `tags`: `List`\[`str`\] *(required)*
 
 ### get_paginator
 
-Type annotations for `boto3.client("logs").get_paginator` method with overloads.
+Type annotations for `boto3.client("logs").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_destinations")` -> [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
-- `client.get_paginator("describe_export_tasks")` -> [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
-- `client.get_paginator("describe_log_groups")` -> [DescribeLogGroupsPaginator](./paginators.md#describeloggroupspaginator)
-- `client.get_paginator("describe_log_streams")` -> [DescribeLogStreamsPaginator](./paginators.md#describelogstreamspaginator)
-- `client.get_paginator("describe_metric_filters")` -> [DescribeMetricFiltersPaginator](./paginators.md#describemetricfilterspaginator)
-- `client.get_paginator("describe_queries")` -> [DescribeQueriesPaginator](./paginators.md#describequeriespaginator)
-- `client.get_paginator("describe_resource_policies")` -> [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
-- `client.get_paginator("describe_subscription_filters")` -> [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
-- `client.get_paginator("filter_log_events")` -> [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
-
-
+- `client.get_paginator("describe_destinations")` ->
+  [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
+- `client.get_paginator("describe_export_tasks")` ->
+  [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+- `client.get_paginator("describe_log_groups")` ->
+  [DescribeLogGroupsPaginator](./paginators.md#describeloggroupspaginator)
+- `client.get_paginator("describe_log_streams")` ->
+  [DescribeLogStreamsPaginator](./paginators.md#describelogstreamspaginator)
+- `client.get_paginator("describe_metric_filters")` ->
+  [DescribeMetricFiltersPaginator](./paginators.md#describemetricfilterspaginator)
+- `client.get_paginator("describe_queries")` ->
+  [DescribeQueriesPaginator](./paginators.md#describequeriespaginator)
+- `client.get_paginator("describe_resource_policies")` ->
+  [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
+- `client.get_paginator("describe_subscription_filters")` ->
+  [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
+- `client.get_paginator("filter_log_events")` ->
+  [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)

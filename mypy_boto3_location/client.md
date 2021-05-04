@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LocationService](./README.md) > LocationServiceClient
 
-Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+Auto-generated documentation for
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+type annotations stubs module
+[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 - [LocationServiceClient for boto3 LocationService module](#locationserviceclient-for-boto3-locationservice-module)
   - [LocationServiceClient](#locationserviceclient)
@@ -61,12 +63,13 @@ def get_location_client() -> LocationServiceClient:
     return boto3.client("location")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
+Boto3 documentation:
+[LocationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_location.client import Exceptions
@@ -74,7 +77,6 @@ from mypy_boto3_location.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -86,591 +88,617 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_tracker_consumer
 
-Type annotations for `boto3.client("location").associate_tracker_consumer` method.
+Type annotations for `boto3.client("location").associate_tracker_consumer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.associate_tracker_consumer]
+Boto3 documentation:
+[LocationService.Client.associate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.associate_tracker_consumer)
 
-```python
-def associate_tracker_consumer(
-    self,
-    ConsumerArn: str,
-    TrackerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConsumerArn`: `str` *(required)*
+- `TrackerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_delete_geofence
 
 Type annotations for `boto3.client("location").batch_delete_geofence` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_geofence]
+Boto3 documentation:
+[LocationService.Client.batch_delete_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_geofence)
 
-```python
-def batch_delete_geofence(
-    self,
-    CollectionName: str,
-    GeofenceIds: List[str]
-) -> BatchDeleteGeofenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `GeofenceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDeleteGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchdeletegeofenceresponsetypedef).
 
 ### batch_evaluate_geofences
 
-Type annotations for `boto3.client("location").batch_evaluate_geofences` method.
+Type annotations for `boto3.client("location").batch_evaluate_geofences`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_evaluate_geofences]
+Boto3 documentation:
+[LocationService.Client.batch_evaluate_geofences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_evaluate_geofences)
 
-```python
-def batch_evaluate_geofences(
-    self,
-    CollectionName: str,
-    DevicePositionUpdates: List[DevicePositionUpdateTypeDef]
-) -> BatchEvaluateGeofencesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `DevicePositionUpdates`:
+  `List`\[[DevicePositionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositionupdatetypedef)\]
+  *(required)*
+
+Returns
+[BatchEvaluateGeofencesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchevaluategeofencesresponsetypedef).
 
 ### batch_get_device_position
 
-Type annotations for `boto3.client("location").batch_get_device_position` method.
+Type annotations for `boto3.client("location").batch_get_device_position`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_get_device_position]
+Boto3 documentation:
+[LocationService.Client.batch_get_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_get_device_position)
 
-```python
-def batch_get_device_position(
-    self,
-    DeviceIds: List[str],
-    TrackerName: str
-) -> BatchGetDevicePositionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceIds`: `List`\[`str`\] *(required)*
+- `TrackerName`: `str` *(required)*
+
+Returns
+[BatchGetDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchgetdevicepositionresponsetypedef).
 
 ### batch_put_geofence
 
 Type annotations for `boto3.client("location").batch_put_geofence` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_put_geofence]
+Boto3 documentation:
+[LocationService.Client.batch_put_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_put_geofence)
 
-```python
-def batch_put_geofence(
-    self,
-    CollectionName: str,
-    Entries: List[BatchPutGeofenceRequestEntryTypeDef]
-) -> BatchPutGeofenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `Entries`:
+  `List`\[[BatchPutGeofenceRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofencerequestentrytypedef)\]
+  *(required)*
+
+Returns
+[BatchPutGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofenceresponsetypedef).
 
 ### batch_update_device_position
 
-Type annotations for `boto3.client("location").batch_update_device_position` method.
+Type annotations for `boto3.client("location").batch_update_device_position`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_update_device_position]
+Boto3 documentation:
+[LocationService.Client.batch_update_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_update_device_position)
 
-```python
-def batch_update_device_position(
-    self,
-    TrackerName: str,
-    Updates: List[DevicePositionUpdateTypeDef]
-) -> BatchUpdateDevicePositionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrackerName`: `str` *(required)*
+- `Updates`:
+  `List`\[[DevicePositionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositionupdatetypedef)\]
+  *(required)*
+
+Returns
+[BatchUpdateDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchupdatedevicepositionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("location").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.can_paginate]
+Boto3 documentation:
+[LocationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_geofence_collection
 
-Type annotations for `boto3.client("location").create_geofence_collection` method.
+Type annotations for `boto3.client("location").create_geofence_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection]
+Boto3 documentation:
+[LocationService.Client.create_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection)
 
-```python
-def create_geofence_collection(
-    self,
-    CollectionName: str,
-    PricingPlan: PricingPlan,
-    Description: str = None,
-    PricingPlanDataSource: str = None
-) -> CreateGeofenceCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `PricingPlan`:
+  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+  *(required)*
+- `Description`: `str`
+- `PricingPlanDataSource`: `str`
+
+Returns
+[CreateGeofenceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#creategeofencecollectionresponsetypedef).
 
 ### create_map
 
 Type annotations for `boto3.client("location").create_map` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map]
+Boto3 documentation:
+[LocationService.Client.create_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map)
 
-```python
-def create_map(
-    self,
-    Configuration: "MapConfigurationTypeDef",
-    MapName: str,
-    PricingPlan: PricingPlan,
-    Description: str = None
-) -> CreateMapResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Configuration`:
+  [MapConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#mapconfigurationtypedef)
+  *(required)*
+- `MapName`: `str` *(required)*
+- `PricingPlan`:
+  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+  *(required)*
+- `Description`: `str`
+
+Returns
+[CreateMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createmapresponsetypedef).
 
 ### create_place_index
 
 Type annotations for `boto3.client("location").create_place_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index]
+Boto3 documentation:
+[LocationService.Client.create_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index)
 
-```python
-def create_place_index(
-    self,
-    DataSource: str,
-    IndexName: str,
-    PricingPlan: PricingPlan,
-    DataSourceConfiguration: "DataSourceConfigurationTypeDef" = None,
-    Description: str = None
-) -> CreatePlaceIndexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSource`: `str` *(required)*
+- `IndexName`: `str` *(required)*
+- `PricingPlan`:
+  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+  *(required)*
+- `DataSourceConfiguration`:
+  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#datasourceconfigurationtypedef)
+- `Description`: `str`
+
+Returns
+[CreatePlaceIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createplaceindexresponsetypedef).
 
 ### create_tracker
 
 Type annotations for `boto3.client("location").create_tracker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker]
+Boto3 documentation:
+[LocationService.Client.create_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker)
 
-```python
-def create_tracker(
-    self,
-    PricingPlan: PricingPlan,
-    TrackerName: str,
-    Description: str = None,
-    PricingPlanDataSource: str = None
-) -> CreateTrackerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PricingPlan`:
+  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+  *(required)*
+- `TrackerName`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlanDataSource`: `str`
+
+Returns
+[CreateTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createtrackerresponsetypedef).
 
 ### delete_geofence_collection
 
-Type annotations for `boto3.client("location").delete_geofence_collection` method.
+Type annotations for `boto3.client("location").delete_geofence_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection]
+Boto3 documentation:
+[LocationService.Client.delete_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection)
 
-```python
-def delete_geofence_collection(
-    self,
-    CollectionName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_map
 
 Type annotations for `boto3.client("location").delete_map` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map]
+Boto3 documentation:
+[LocationService.Client.delete_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map)
 
-```python
-def delete_map(
-    self,
-    MapName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `MapName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_place_index
 
 Type annotations for `boto3.client("location").delete_place_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index]
+Boto3 documentation:
+[LocationService.Client.delete_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index)
 
-```python
-def delete_place_index(
-    self,
-    IndexName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `IndexName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tracker
 
 Type annotations for `boto3.client("location").delete_tracker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker]
+Boto3 documentation:
+[LocationService.Client.delete_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker)
 
-```python
-def delete_tracker(
-    self,
-    TrackerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TrackerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_geofence_collection
 
-Type annotations for `boto3.client("location").describe_geofence_collection` method.
+Type annotations for `boto3.client("location").describe_geofence_collection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_geofence_collection]
+Boto3 documentation:
+[LocationService.Client.describe_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_geofence_collection)
 
-```python
-def describe_geofence_collection(
-    self,
-    CollectionName: str
-) -> DescribeGeofenceCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+
+Returns
+[DescribeGeofenceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describegeofencecollectionresponsetypedef).
 
 ### describe_map
 
 Type annotations for `boto3.client("location").describe_map` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_map]
+Boto3 documentation:
+[LocationService.Client.describe_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_map)
 
-```python
-def describe_map(
-    self,
-    MapName: str
-) -> DescribeMapResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MapName`: `str` *(required)*
+
+Returns
+[DescribeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describemapresponsetypedef).
 
 ### describe_place_index
 
 Type annotations for `boto3.client("location").describe_place_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_place_index]
+Boto3 documentation:
+[LocationService.Client.describe_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_place_index)
 
-```python
-def describe_place_index(
-    self,
-    IndexName: str
-) -> DescribePlaceIndexResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexName`: `str` *(required)*
+
+Returns
+[DescribePlaceIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describeplaceindexresponsetypedef).
 
 ### describe_tracker
 
 Type annotations for `boto3.client("location").describe_tracker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_tracker]
+Boto3 documentation:
+[LocationService.Client.describe_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_tracker)
 
-```python
-def describe_tracker(
-    self,
-    TrackerName: str
-) -> DescribeTrackerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrackerName`: `str` *(required)*
+
+Returns
+[DescribeTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describetrackerresponsetypedef).
 
 ### disassociate_tracker_consumer
 
-Type annotations for `boto3.client("location").disassociate_tracker_consumer` method.
+Type annotations for `boto3.client("location").disassociate_tracker_consumer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer]
+Boto3 documentation:
+[LocationService.Client.disassociate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer)
 
-```python
-def disassociate_tracker_consumer(
-    self,
-    ConsumerArn: str,
-    TrackerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConsumerArn`: `str` *(required)*
+- `TrackerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("location").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.generate_presigned_url]
+Boto3 documentation:
+[LocationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_device_position
 
 Type annotations for `boto3.client("location").get_device_position` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position]
+Boto3 documentation:
+[LocationService.Client.get_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position)
 
-```python
-def get_device_position(
-    self,
-    DeviceId: str,
-    TrackerName: str
-) -> GetDevicePositionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+- `TrackerName`: `str` *(required)*
+
+Returns
+[GetDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getdevicepositionresponsetypedef).
 
 ### get_device_position_history
 
-Type annotations for `boto3.client("location").get_device_position_history` method.
+Type annotations for `boto3.client("location").get_device_position_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history]
+Boto3 documentation:
+[LocationService.Client.get_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history)
 
-```python
-def get_device_position_history(
-    self,
-    DeviceId: str,
-    TrackerName: str,
-    EndTimeExclusive: datetime = None,
-    NextToken: str = None,
-    StartTimeInclusive: datetime = None
-) -> GetDevicePositionHistoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+- `TrackerName`: `str` *(required)*
+- `EndTimeExclusive`: `datetime`
+- `NextToken`: `str`
+- `StartTimeInclusive`: `datetime`
+
+Returns
+[GetDevicePositionHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getdevicepositionhistoryresponsetypedef).
 
 ### get_geofence
 
 Type annotations for `boto3.client("location").get_geofence` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_geofence]
+Boto3 documentation:
+[LocationService.Client.get_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_geofence)
 
-```python
-def get_geofence(
-    self,
-    CollectionName: str,
-    GeofenceId: str
-) -> GetGeofenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `GeofenceId`: `str` *(required)*
+
+Returns
+[GetGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getgeofenceresponsetypedef).
 
 ### get_map_glyphs
 
 Type annotations for `boto3.client("location").get_map_glyphs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs]
+Boto3 documentation:
+[LocationService.Client.get_map_glyphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs)
 
-```python
-def get_map_glyphs(
-    self,
-    FontStack: str,
-    FontUnicodeRange: str,
-    MapName: str
-) -> GetMapGlyphsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FontStack`: `str` *(required)*
+- `FontUnicodeRange`: `str` *(required)*
+- `MapName`: `str` *(required)*
+
+Returns
+[GetMapGlyphsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapglyphsresponsetypedef).
 
 ### get_map_sprites
 
 Type annotations for `boto3.client("location").get_map_sprites` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_sprites]
+Boto3 documentation:
+[LocationService.Client.get_map_sprites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_sprites)
 
-```python
-def get_map_sprites(
-    self,
-    FileName: str,
-    MapName: str
-) -> GetMapSpritesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FileName`: `str` *(required)*
+- `MapName`: `str` *(required)*
+
+Returns
+[GetMapSpritesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapspritesresponsetypedef).
 
 ### get_map_style_descriptor
 
-Type annotations for `boto3.client("location").get_map_style_descriptor` method.
+Type annotations for `boto3.client("location").get_map_style_descriptor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_style_descriptor]
+Boto3 documentation:
+[LocationService.Client.get_map_style_descriptor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_style_descriptor)
 
-```python
-def get_map_style_descriptor(
-    self,
-    MapName: str
-) -> GetMapStyleDescriptorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MapName`: `str` *(required)*
+
+Returns
+[GetMapStyleDescriptorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapstyledescriptorresponsetypedef).
 
 ### get_map_tile
 
 Type annotations for `boto3.client("location").get_map_tile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile]
+Boto3 documentation:
+[LocationService.Client.get_map_tile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile)
 
-```python
-def get_map_tile(
-    self,
-    MapName: str,
-    X: str,
-    Y: str,
-    Z: str
-) -> GetMapTileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MapName`: `str` *(required)*
+- `X`: `str` *(required)*
+- `Y`: `str` *(required)*
+- `Z`: `str` *(required)*
+
+Returns
+[GetMapTileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmaptileresponsetypedef).
 
 ### list_geofence_collections
 
-Type annotations for `boto3.client("location").list_geofence_collections` method.
+Type annotations for `boto3.client("location").list_geofence_collections`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections]
+Boto3 documentation:
+[LocationService.Client.list_geofence_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections)
 
-```python
-def list_geofence_collections(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListGeofenceCollectionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListGeofenceCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencecollectionsresponsetypedef).
 
 ### list_geofences
 
 Type annotations for `boto3.client("location").list_geofences` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofences]
+Boto3 documentation:
+[LocationService.Client.list_geofences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofences)
 
-```python
-def list_geofences(
-    self,
-    CollectionName: str,
-    NextToken: str = None
-) -> ListGeofencesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListGeofencesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencesresponsetypedef).
 
 ### list_maps
 
 Type annotations for `boto3.client("location").list_maps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps]
+Boto3 documentation:
+[LocationService.Client.list_maps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps)
 
-```python
-def list_maps(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListMapsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMapsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listmapsresponsetypedef).
 
 ### list_place_indexes
 
 Type annotations for `boto3.client("location").list_place_indexes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes]
+Boto3 documentation:
+[LocationService.Client.list_place_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes)
 
-```python
-def list_place_indexes(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListPlaceIndexesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPlaceIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listplaceindexesresponsetypedef).
 
 ### list_tracker_consumers
 
 Type annotations for `boto3.client("location").list_tracker_consumers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers]
+Boto3 documentation:
+[LocationService.Client.list_tracker_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers)
 
-```python
-def list_tracker_consumers(
-    self,
-    TrackerName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTrackerConsumersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrackerName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTrackerConsumersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackerconsumersresponsetypedef).
 
 ### list_trackers
 
 Type annotations for `boto3.client("location").list_trackers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers]
+Boto3 documentation:
+[LocationService.Client.list_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers)
 
-```python
-def list_trackers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTrackersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTrackersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackersresponsetypedef).
 
 ### put_geofence
 
 Type annotations for `boto3.client("location").put_geofence` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence]
+Boto3 documentation:
+[LocationService.Client.put_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence)
 
-```python
-def put_geofence(
-    self,
-    CollectionName: str,
-    GeofenceId: str,
-    Geometry: "GeofenceGeometryTypeDef"
-) -> PutGeofenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionName`: `str` *(required)*
+- `GeofenceId`: `str` *(required)*
+- `Geometry`:
+  [GeofenceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#geofencegeometrytypedef)
+  *(required)*
+
+Returns
+[PutGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#putgeofenceresponsetypedef).
 
 ### search_place_index_for_position
 
-Type annotations for `boto3.client("location").search_place_index_for_position` method.
+Type annotations for `boto3.client("location").search_place_index_for_position`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position]
+Boto3 documentation:
+[LocationService.Client.search_place_index_for_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position)
 
-```python
-def search_place_index_for_position(
-    self,
-    IndexName: str,
-    Position: List[float],
-    MaxResults: int = None
-) -> SearchPlaceIndexForPositionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IndexName`: `str` *(required)*
+- `Position`: `List`\[`float`\] *(required)*
+- `MaxResults`: `int`
+
+Returns
+[SearchPlaceIndexForPositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexforpositionresponsetypedef).
 
 ### search_place_index_for_text
 
-Type annotations for `boto3.client("location").search_place_index_for_text` method.
+Type annotations for `boto3.client("location").search_place_index_for_text`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text]
+Boto3 documentation:
+[LocationService.Client.search_place_index_for_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text)
 
-```python
-def search_place_index_for_text(
-    self,
-    IndexName: str,
-    Text: str,
-    BiasPosition: List[float] = None,
-    FilterBBox: List[float] = None,
-    FilterCountries: List[str] = None,
-    MaxResults: int = None
-) -> SearchPlaceIndexForTextResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `IndexName`: `str` *(required)*
+- `Text`: `str` *(required)*
+- `BiasPosition`: `List`\[`float`\]
+- `FilterBBox`: `List`\[`float`\]
+- `FilterCountries`: `List`\[`str`\]
+- `MaxResults`: `int`
 
+Returns
+[SearchPlaceIndexForTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexfortextresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("location").get_paginator` method with overloads.
+Type annotations for `boto3.client("location").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_device_position_history")` -> [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
-- `client.get_paginator("list_geofence_collections")` -> [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
-- `client.get_paginator("list_geofences")` -> [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
-- `client.get_paginator("list_maps")` -> [ListMapsPaginator](./paginators.md#listmapspaginator)
-- `client.get_paginator("list_place_indexes")` -> [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
-- `client.get_paginator("list_tracker_consumers")` -> [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
-- `client.get_paginator("list_trackers")` -> [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
-
-
+- `client.get_paginator("get_device_position_history")` ->
+  [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
+- `client.get_paginator("list_geofence_collections")` ->
+  [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
+- `client.get_paginator("list_geofences")` ->
+  [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
+- `client.get_paginator("list_maps")` ->
+  [ListMapsPaginator](./paginators.md#listmapspaginator)
+- `client.get_paginator("list_place_indexes")` ->
+  [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
+- `client.get_paginator("list_tracker_consumers")` ->
+  [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
+- `client.get_paginator("list_trackers")` ->
+  [ListTrackersPaginator](./paginators.md#listtrackerspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeStar](./README.md) > Structures
 
-Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+Auto-generated documentation for
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+type annotations stubs module
+[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Typed dictionaries for boto3 CodeStar module](#typed-dictionaries-for-boto3-codestar-module)
   - [AssociateTeamMemberResultTypeDef](#associateteammemberresulttypedef)
@@ -42,12 +44,9 @@ type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/myp
 from mypy_boto3_codestar.type_defs import AssociateTeamMemberResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `clientRequestToken`: `str`
 
+- `clientRequestToken`: `str`
 
 ## CodeCommitCodeDestinationTypeDef
 
@@ -55,12 +54,9 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import CodeCommitCodeDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-
-
-
 
 ## CodeDestinationTypeDef
 
@@ -68,13 +64,12 @@ Required fields:
 from mypy_boto3_codestar.type_defs import CodeDestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `codeCommit`: `"CodeCommitCodeDestinationTypeDef"`
-- `gitHub`: `"GitHubCodeDestinationTypeDef"`
 
+- `codeCommit`:
+  [CodeCommitCodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codecommitcodedestinationtypedef)
+- `gitHub`:
+  [GitHubCodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#githubcodedestinationtypedef)
 
 ## CodeSourceTypeDef
 
@@ -82,12 +77,10 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import CodeSourceTypeDef
 ```
 
-
 Required fields:
-- `s3`: `"S3LocationTypeDef"`
 
-
-
+- `s3`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#s3locationtypedef)
 
 ## CodeTypeDef
 
@@ -95,13 +88,12 @@ Required fields:
 from mypy_boto3_codestar.type_defs import CodeTypeDef
 ```
 
-
 Required fields:
-- `source`: `"CodeSourceTypeDef"`
-- `destination`: `"CodeDestinationTypeDef"`
 
-
-
+- `source`:
+  [CodeSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codesourcetypedef)
+- `destination`:
+  [CodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codedestinationtypedef)
 
 ## CreateProjectResultTypeDef
 
@@ -109,17 +101,15 @@ Required fields:
 from mypy_boto3_codestar.type_defs import CreateProjectResultTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `arn`: `str`
 
-
-
 Optional fields:
+
 - `clientRequestToken`: `str`
 - `projectTemplateId`: `str`
-
 
 ## CreateUserProfileResultTypeDef
 
@@ -127,19 +117,17 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import CreateUserProfileResultTypeDef
 ```
 
-
 Required fields:
+
 - `userArn`: `str`
 
-
-
 Optional fields:
+
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
 - `createdTimestamp`: `datetime`
 - `lastModifiedTimestamp`: `datetime`
-
 
 ## DeleteProjectResultTypeDef
 
@@ -147,13 +135,10 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import DeleteProjectResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `stackId`: `str`
 - `projectArn`: `str`
-
 
 ## DeleteUserProfileResultTypeDef
 
@@ -161,12 +146,9 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import DeleteUserProfileResultTypeDef
 ```
 
-
 Required fields:
+
 - `userArn`: `str`
-
-
-
 
 ## DescribeProjectResultTypeDef
 
@@ -174,10 +156,8 @@ Required fields:
 from mypy_boto3_codestar.type_defs import DescribeProjectResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `id`: `str`
 - `arn`: `str`
@@ -186,8 +166,8 @@ Optional fields:
 - `createdTimeStamp`: `datetime`
 - `stackId`: `str`
 - `projectTemplateId`: `str`
-- `status`: `"ProjectStatusTypeDef"`
-
+- `status`:
+  [ProjectStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#projectstatustypedef)
 
 ## DescribeUserProfileResultTypeDef
 
@@ -195,19 +175,17 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import DescribeUserProfileResultTypeDef
 ```
 
-
 Required fields:
+
 - `userArn`: `str`
 - `createdTimestamp`: `datetime`
 - `lastModifiedTimestamp`: `datetime`
 
-
-
 Optional fields:
+
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
-
 
 ## GitHubCodeDestinationTypeDef
 
@@ -215,8 +193,8 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import GitHubCodeDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
 - `owner`: `str`
@@ -224,11 +202,9 @@ Required fields:
 - `issuesEnabled`: `bool`
 - `token`: `str`
 
-
-
 Optional fields:
-- `description`: `str`
 
+- `description`: `str`
 
 ## ListProjectsResultTypeDef
 
@@ -236,15 +212,14 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ListProjectsResultTypeDef
 ```
 
-
 Required fields:
-- `projects`: `List["ProjectSummaryTypeDef"]`
 
-
+- `projects`:
+  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#projectsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListResourcesResultTypeDef
 
@@ -252,13 +227,11 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ListResourcesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resources`: `List["ResourceTypeDef"]`
-- `nextToken`: `str`
 
+- `resources`:
+  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#resourcetypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForProjectResultTypeDef
 
@@ -266,13 +239,10 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ListTagsForProjectResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
-- `nextToken`: `str`
 
+- `tags`: `Dict`\[`str`, `str`\]
+- `nextToken`: `str`
 
 ## ListTeamMembersResultTypeDef
 
@@ -280,15 +250,14 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ListTeamMembersResultTypeDef
 ```
 
-
 Required fields:
-- `teamMembers`: `List["TeamMemberTypeDef"]`
 
-
+- `teamMembers`:
+  `List`\[[TeamMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#teammembertypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListUserProfilesResultTypeDef
 
@@ -296,15 +265,14 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ListUserProfilesResultTypeDef
 ```
 
-
 Required fields:
-- `userProfiles`: `List["UserProfileSummaryTypeDef"]`
 
-
+- `userProfiles`:
+  `List`\[[UserProfileSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#userprofilesummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -312,14 +280,11 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ProjectStatusTypeDef
 
@@ -327,15 +292,13 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ProjectStatusTypeDef
 ```
 
-
 Required fields:
+
 - `state`: `str`
 
-
-
 Optional fields:
-- `reason`: `str`
 
+- `reason`: `str`
 
 ## ProjectSummaryTypeDef
 
@@ -343,13 +306,10 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ProjectSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `projectId`: `str`
 - `projectArn`: `str`
-
 
 ## ResourceTypeDef
 
@@ -357,12 +317,9 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ResourceTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-
-
-
 
 ## S3LocationTypeDef
 
@@ -370,13 +327,10 @@ Required fields:
 from mypy_boto3_codestar.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucketName`: `str`
 - `bucketKey`: `str`
-
 
 ## TagProjectResultTypeDef
 
@@ -384,12 +338,9 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import TagProjectResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TeamMemberTypeDef
 
@@ -397,16 +348,14 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import TeamMemberTypeDef
 ```
 
-
 Required fields:
+
 - `userArn`: `str`
 - `projectRole`: `str`
 
-
-
 Optional fields:
-- `remoteAccessAllowed`: `bool`
 
+- `remoteAccessAllowed`: `bool`
 
 ## ToolchainSourceTypeDef
 
@@ -414,12 +363,10 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import ToolchainSourceTypeDef
 ```
 
-
 Required fields:
-- `s3`: `"S3LocationTypeDef"`
 
-
-
+- `s3`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#s3locationtypedef)
 
 ## ToolchainTypeDef
 
@@ -427,16 +374,15 @@ Required fields:
 from mypy_boto3_codestar.type_defs import ToolchainTypeDef
 ```
 
-
 Required fields:
-- `source`: `"ToolchainSourceTypeDef"`
 
-
+- `source`:
+  [ToolchainSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#toolchainsourcetypedef)
 
 Optional fields:
-- `roleArn`: `str`
-- `stackParameters`: `Dict[str, str]`
 
+- `roleArn`: `str`
+- `stackParameters`: `Dict`\[`str`, `str`\]
 
 ## UpdateTeamMemberResultTypeDef
 
@@ -444,14 +390,11 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import UpdateTeamMemberResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `userArn`: `str`
 - `projectRole`: `str`
 - `remoteAccessAllowed`: `bool`
-
 
 ## UpdateUserProfileResultTypeDef
 
@@ -459,19 +402,17 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import UpdateUserProfileResultTypeDef
 ```
 
-
 Required fields:
+
 - `userArn`: `str`
 
-
-
 Optional fields:
+
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
 - `createdTimestamp`: `datetime`
 - `lastModifiedTimestamp`: `datetime`
-
 
 ## UserProfileSummaryTypeDef
 
@@ -479,12 +420,9 @@ Optional fields:
 from mypy_boto3_codestar.type_defs import UserProfileSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `userArn`: `str`
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
-

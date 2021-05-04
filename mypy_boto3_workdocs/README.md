@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WorkDocs
 
-Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+Auto-generated documentation for
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+type annotations stubs module
+[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 ```bash
 pip install mypy-boto3-workdocs
@@ -19,7 +21,8 @@ pip install mypy-boto3-workdocs
 
 ## WorkDocsClient
 
-Type annotations for  `boto3.client("workdocs")` as [WorkDocsClient](./client.md)
+Type annotations for `boto3.client("workdocs")` as
+[WorkDocsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_workdocs.client import WorkDocsClient
 ```
 
-
 WorkDocsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [abort_document_version_upload](./client.md#abort-document-version-upload)
 - [activate_user](./client.md#activate-user)
 - [add_resource_permissions](./client.md#add-resource-permissions)
@@ -78,10 +79,8 @@ WorkDocsClient [exceptions](./client.md#exceptions)
 - [update_folder](./client.md#update-folder)
 - [update_user](./client.md#update-user)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [ConflictingOperationException](./client.md#conflictingoperationexception)
@@ -109,14 +108,10 @@ WorkDocsClient [exceptions](./client.md#exceptions)
 - [UnauthorizedOperationException](./client.md#unauthorizedoperationexception)
 - [UnauthorizedResourceAccessException](./client.md#unauthorizedresourceaccessexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("workdocs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("workdocs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -133,11 +128,6 @@ from mypy_boto3_workdocs.paginators import DescribeActivitiesPaginator, ...
 - [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
 - [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -185,13 +175,10 @@ from mypy_boto3_workdocs.literals import ActivityType, ...
 - [UserStatusType](./literals.md#userstatustype)
 - [UserType](./literals.md#usertype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

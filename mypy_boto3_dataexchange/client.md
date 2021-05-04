@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataExchange](./README.md) > DataExchangeClient
 
-Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
-type annotations stubs module [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+Auto-generated documentation for
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+type annotations stubs module
+[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [DataExchangeClient for boto3 DataExchange module](#dataexchangeclient-for-boto3-dataexchange-module)
   - [DataExchangeClient](#dataexchangeclient)
@@ -48,12 +50,13 @@ def get_dataexchange_client() -> DataExchangeClient:
     return boto3.client("dataexchange")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
+Boto3 documentation:
+[DataExchange.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_dataexchange.client import Exceptions
@@ -61,7 +64,6 @@ from mypy_boto3_dataexchange.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -74,390 +76,376 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("dataexchange").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate]
+Boto3 documentation:
+[DataExchange.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job
 
 Type annotations for `boto3.client("dataexchange").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job]
+Boto3 documentation:
+[DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    JobId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
 
 ### create_data_set
 
 Type annotations for `boto3.client("dataexchange").create_data_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set]
+Boto3 documentation:
+[DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
 
-```python
-def create_data_set(
-    self,
-    AssetType: Literal['S3_SNAPSHOT'],
-    Description: str,
-    Name: str,
-    Tags: Dict[str, str] = None
-) -> CreateDataSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssetType`: `Literal['S3_SNAPSHOT']` *(required)*
+- `Description`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createdatasetresponsetypedef).
 
 ### create_job
 
 Type annotations for `boto3.client("dataexchange").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job]
+Boto3 documentation:
+[DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
 
-```python
-def create_job(
-    self,
-    Details: RequestDetailsTypeDef,
-    Type: TypeType
-) -> CreateJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Details`:
+  [RequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#requestdetailstypedef)
+  *(required)*
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#typetype)
+  *(required)*
+
+Returns
+[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createjobresponsetypedef).
 
 ### create_revision
 
 Type annotations for `boto3.client("dataexchange").create_revision` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision]
+Boto3 documentation:
+[DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
 
-```python
-def create_revision(
-    self,
-    DataSetId: str,
-    Comment: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateRevisionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `Comment`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createrevisionresponsetypedef).
 
 ### delete_asset
 
 Type annotations for `boto3.client("dataexchange").delete_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset]
+Boto3 documentation:
+[DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
 
-```python
-def delete_asset(
-    self,
-    AssetId: str,
-    DataSetId: str,
-    RevisionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AssetId`: `str` *(required)*
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
 
 ### delete_data_set
 
 Type annotations for `boto3.client("dataexchange").delete_data_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set]
+Boto3 documentation:
+[DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
 
-```python
-def delete_data_set(
-    self,
-    DataSetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
 
 ### delete_revision
 
 Type annotations for `boto3.client("dataexchange").delete_revision` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision]
+Boto3 documentation:
+[DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
 
-```python
-def delete_revision(
-    self,
-    DataSetId: str,
-    RevisionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("dataexchange").generate_presigned_url` method.
+Type annotations for `boto3.client("dataexchange").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url]
+Boto3 documentation:
+[DataExchange.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_asset
 
 Type annotations for `boto3.client("dataexchange").get_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset]
+Boto3 documentation:
+[DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
 
-```python
-def get_asset(
-    self,
-    AssetId: str,
-    DataSetId: str,
-    RevisionId: str
-) -> GetAssetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssetId`: `str` *(required)*
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+
+Returns
+[GetAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getassetresponsetypedef).
 
 ### get_data_set
 
 Type annotations for `boto3.client("dataexchange").get_data_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set]
+Boto3 documentation:
+[DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
 
-```python
-def get_data_set(
-    self,
-    DataSetId: str
-) -> GetDataSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+
+Returns
+[GetDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getdatasetresponsetypedef).
 
 ### get_job
 
 Type annotations for `boto3.client("dataexchange").get_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job]
+Boto3 documentation:
+[DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
 
-```python
-def get_job(
-    self,
-    JobId: str
-) -> GetJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getjobresponsetypedef).
 
 ### get_revision
 
 Type annotations for `boto3.client("dataexchange").get_revision` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision]
+Boto3 documentation:
+[DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
 
-```python
-def get_revision(
-    self,
-    DataSetId: str,
-    RevisionId: str
-) -> GetRevisionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+
+Returns
+[GetRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getrevisionresponsetypedef).
 
 ### list_data_set_revisions
 
-Type annotations for `boto3.client("dataexchange").list_data_set_revisions` method.
+Type annotations for `boto3.client("dataexchange").list_data_set_revisions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions]
+Boto3 documentation:
+[DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
 
-```python
-def list_data_set_revisions(
-    self,
-    DataSetId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDataSetRevisionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDataSetRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetrevisionsresponsetypedef).
 
 ### list_data_sets
 
 Type annotations for `boto3.client("dataexchange").list_data_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets]
+Boto3 documentation:
+[DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
 
-```python
-def list_data_sets(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Origin: str = None
-) -> ListDataSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Origin`: `str`
+
+Returns
+[ListDataSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetsresponsetypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("dataexchange").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs]
+Boto3 documentation:
+[DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    DataSetId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    RevisionId: str = None
-) -> ListJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `RevisionId`: `str`
+
+Returns
+[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listjobsresponsetypedef).
 
 ### list_revision_assets
 
-Type annotations for `boto3.client("dataexchange").list_revision_assets` method.
+Type annotations for `boto3.client("dataexchange").list_revision_assets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets]
+Boto3 documentation:
+[DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
 
-```python
-def list_revision_assets(
-    self,
-    DataSetId: str,
-    RevisionId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListRevisionAssetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListRevisionAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listrevisionassetsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("dataexchange").list_tags_for_resource` method.
+Type annotations for `boto3.client("dataexchange").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource]
+Boto3 documentation:
+[DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_job
 
 Type annotations for `boto3.client("dataexchange").start_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job]
+Boto3 documentation:
+[DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
 
-```python
-def start_job(
-    self,
-    JobId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("dataexchange").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource]
+Boto3 documentation:
+[DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("dataexchange").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource]
+Boto3 documentation:
+[DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_asset
 
 Type annotations for `boto3.client("dataexchange").update_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset]
+Boto3 documentation:
+[DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
 
-```python
-def update_asset(
-    self,
-    AssetId: str,
-    DataSetId: str,
-    Name: str,
-    RevisionId: str
-) -> UpdateAssetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssetId`: `str` *(required)*
+- `DataSetId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+
+Returns
+[UpdateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updateassetresponsetypedef).
 
 ### update_data_set
 
 Type annotations for `boto3.client("dataexchange").update_data_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set]
+Boto3 documentation:
+[DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
 
-```python
-def update_data_set(
-    self,
-    DataSetId: str,
-    Description: str = None,
-    Name: str = None
-) -> UpdateDataSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSetId`: `str` *(required)*
+- `Description`: `str`
+- `Name`: `str`
+
+Returns
+[UpdateDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updatedatasetresponsetypedef).
 
 ### update_revision
 
 Type annotations for `boto3.client("dataexchange").update_revision` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision]
+Boto3 documentation:
+[DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
 
-```python
-def update_revision(
-    self,
-    DataSetId: str,
-    RevisionId: str,
-    Comment: str = None,
-    Finalized: bool = None
-) -> UpdateRevisionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `DataSetId`: `str` *(required)*
+- `RevisionId`: `str` *(required)*
+- `Comment`: `str`
+- `Finalized`: `bool`
 
+Returns
+[UpdateRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updaterevisionresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("dataexchange").get_paginator` method with overloads.
+Type annotations for `boto3.client("dataexchange").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_data_set_revisions")` -> [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
-- `client.get_paginator("list_data_sets")` -> [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_revision_assets")` -> [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
-
-
+- `client.get_paginator("list_data_set_revisions")` ->
+  [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
+- `client.get_paginator("list_data_sets")` ->
+  [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_revision_assets")` ->
+  [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoT](./README.md) > Paginators
 
-Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
-type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+Auto-generated documentation for
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+type annotations stubs module
+[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
 - [Paginators for boto3 IoT module](#paginators-for-boto3-iot-module)
   - [GetBehaviorModelTrainingSummariesPaginator](#getbehaviormodeltrainingsummariespaginator)
@@ -61,7 +63,8 @@ type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-bot
 
 ## GetBehaviorModelTrainingSummariesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("get_behavior_model_training_summaries")`.
+Type annotations for
+`boto3.client("iot").get_paginator("get_behavior_model_training_summaries")`.
 
 Can be used directly:
 
@@ -72,20 +75,22 @@ def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTra
     return boto3.client("iot").get_paginator("get_behavior_model_training_summaries")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
+Boto3 documentation:
+[IoT.Paginator.GetBehaviorModelTrainingSummaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
 
-```python
-class GetBehaviorModelTrainingSummariesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        securityProfileName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetBehaviorModelTrainingSummariesResponseTypeDef]:
-        pass
-```
+Arguments for `GetBehaviorModelTrainingSummariesPaginator.paginate` method:
+
+- `securityProfileName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`GetBehaviorModelTrainingSummariesPaginator.paginate` returns
+`Iterator`\[[GetBehaviorModelTrainingSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#getbehaviormodeltrainingsummariesresponsetypedef)\].
+
 ## ListActiveViolationsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_active_violations")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_active_violations")`.
 
 Can be used directly:
 
@@ -96,23 +101,26 @@ def get_list_active_violations_paginator() -> ListActiveViolationsPaginator:
     return boto3.client("iot").get_paginator("list_active_violations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
+Boto3 documentation:
+[IoT.Paginator.ListActiveViolations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
 
-```python
-class ListActiveViolationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingName: str = None,
-        securityProfileName: str = None,
-        behaviorCriteriaType: BehaviorCriteriaType = None,
-        listSuppressedAlerts: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListActiveViolationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListActiveViolationsPaginator.paginate` method:
+
+- `thingName`: `str`
+- `securityProfileName`: `str`
+- `behaviorCriteriaType`:
+  [BehaviorCriteriaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#behaviorcriteriatype)
+- `listSuppressedAlerts`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListActiveViolationsPaginator.paginate` returns
+`Iterator`\[[ListActiveViolationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listactiveviolationsresponsetypedef)\].
+
 ## ListAttachedPoliciesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_attached_policies")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_attached_policies")`.
 
 Can be used directly:
 
@@ -123,21 +131,23 @@ def get_list_attached_policies_paginator() -> ListAttachedPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_attached_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
+Boto3 documentation:
+[IoT.Paginator.ListAttachedPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
 
-```python
-class ListAttachedPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        target: str,
-        recursive: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAttachedPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListAttachedPoliciesPaginator.paginate` method:
+
+- `target`: `str` *(required)*
+- `recursive`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAttachedPoliciesPaginator.paginate` returns
+`Iterator`\[[ListAttachedPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listattachedpoliciesresponsetypedef)\].
+
 ## ListAuditFindingsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_audit_findings")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_audit_findings")`.
 
 Can be used directly:
 
@@ -148,25 +158,28 @@ def get_list_audit_findings_paginator() -> ListAuditFindingsPaginator:
     return boto3.client("iot").get_paginator("list_audit_findings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
+Boto3 documentation:
+[IoT.Paginator.ListAuditFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
 
-```python
-class ListAuditFindingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        taskId: str = None,
-        checkName: str = None,
-        resourceIdentifier: "ResourceIdentifierTypeDef" = None,
-        startTime: datetime = None,
-        endTime: datetime = None,
-        listSuppressedFindings: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuditFindingsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuditFindingsPaginator.paginate` method:
+
+- `taskId`: `str`
+- `checkName`: `str`
+- `resourceIdentifier`:
+  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+- `listSuppressedFindings`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuditFindingsPaginator.paginate` returns
+`Iterator`\[[ListAuditFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditfindingsresponsetypedef)\].
+
 ## ListAuditMitigationActionsExecutionsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")`.
 
 Can be used directly:
 
@@ -177,22 +190,25 @@ def get_list_audit_mitigation_actions_executions_paginator() -> ListAuditMitigat
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
+Boto3 documentation:
+[IoT.Paginator.ListAuditMitigationActionsExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
 
-```python
-class ListAuditMitigationActionsExecutionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        taskId: str,
-        findingId: str,
-        actionStatus: AuditMitigationActionsExecutionStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuditMitigationActionsExecutionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuditMitigationActionsExecutionsPaginator.paginate` method:
+
+- `taskId`: `str` *(required)*
+- `findingId`: `str` *(required)*
+- `actionStatus`:
+  [AuditMitigationActionsExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionsexecutionstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuditMitigationActionsExecutionsPaginator.paginate` returns
+`Iterator`\[[ListAuditMitigationActionsExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditmitigationactionsexecutionsresponsetypedef)\].
+
 ## ListAuditMitigationActionsTasksPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")`.
 
 Can be used directly:
 
@@ -203,24 +219,27 @@ def get_list_audit_mitigation_actions_tasks_paginator() -> ListAuditMitigationAc
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
+Boto3 documentation:
+[IoT.Paginator.ListAuditMitigationActionsTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
 
-```python
-class ListAuditMitigationActionsTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        startTime: datetime,
-        endTime: datetime,
-        auditTaskId: str = None,
-        findingId: str = None,
-        taskStatus: AuditMitigationActionsTaskStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuditMitigationActionsTasksResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuditMitigationActionsTasksPaginator.paginate` method:
+
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `auditTaskId`: `str`
+- `findingId`: `str`
+- `taskStatus`:
+  [AuditMitigationActionsTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionstaskstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuditMitigationActionsTasksPaginator.paginate` returns
+`Iterator`\[[ListAuditMitigationActionsTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditmitigationactionstasksresponsetypedef)\].
+
 ## ListAuditSuppressionsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_audit_suppressions")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_audit_suppressions")`.
 
 Can be used directly:
 
@@ -231,19 +250,21 @@ def get_list_audit_suppressions_paginator() -> ListAuditSuppressionsPaginator:
     return boto3.client("iot").get_paginator("list_audit_suppressions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
+Boto3 documentation:
+[IoT.Paginator.ListAuditSuppressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
 
-```python
-class ListAuditSuppressionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        checkName: str = None,
-        resourceIdentifier: "ResourceIdentifierTypeDef" = None,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuditSuppressionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuditSuppressionsPaginator.paginate` method:
+
+- `checkName`: `str`
+- `resourceIdentifier`:
+  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuditSuppressionsPaginator.paginate` returns
+`Iterator`\[[ListAuditSuppressionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditsuppressionsresponsetypedef)\].
+
 ## ListAuditTasksPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_audit_tasks")`.
@@ -257,20 +278,23 @@ def get_list_audit_tasks_paginator() -> ListAuditTasksPaginator:
     return boto3.client("iot").get_paginator("list_audit_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
+Boto3 documentation:
+[IoT.Paginator.ListAuditTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
 
-```python
-class ListAuditTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        startTime: datetime,
-        endTime: datetime,
-        taskType: AuditTaskType = None,
-        taskStatus: AuditTaskStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuditTasksResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuditTasksPaginator.paginate` method:
+
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `taskType`:
+  [AuditTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittasktype)
+- `taskStatus`:
+  [AuditTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittaskstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuditTasksPaginator.paginate` returns
+`Iterator`\[[ListAuditTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listaudittasksresponsetypedef)\].
+
 ## ListAuthorizersPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_authorizers")`.
@@ -284,21 +308,24 @@ def get_list_authorizers_paginator() -> ListAuthorizersPaginator:
     return boto3.client("iot").get_paginator("list_authorizers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
+Boto3 documentation:
+[IoT.Paginator.ListAuthorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
 
-```python
-class ListAuthorizersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        status: AuthorizerStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAuthorizersResponseTypeDef]:
-        pass
-```
+Arguments for `ListAuthorizersPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `status`:
+  [AuthorizerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#authorizerstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListAuthorizersPaginator.paginate` returns
+`Iterator`\[[ListAuthorizersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauthorizersresponsetypedef)\].
+
 ## ListBillingGroupsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_billing_groups")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_billing_groups")`.
 
 Can be used directly:
 
@@ -309,20 +336,22 @@ def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_billing_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
+Boto3 documentation:
+[IoT.Paginator.ListBillingGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
 
-```python
-class ListBillingGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        namePrefixFilter: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBillingGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListBillingGroupsPaginator.paginate` method:
+
+- `namePrefixFilter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListBillingGroupsPaginator.paginate` returns
+`Iterator`\[[ListBillingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listbillinggroupsresponsetypedef)\].
+
 ## ListCACertificatesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_ca_certificates")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_ca_certificates")`.
 
 Can be used directly:
 
@@ -333,17 +362,18 @@ def get_list_ca_certificates_paginator() -> ListCACertificatesPaginator:
     return boto3.client("iot").get_paginator("list_ca_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
+Boto3 documentation:
+[IoT.Paginator.ListCACertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
 
-```python
-class ListCACertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCACertificatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListCACertificatesPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListCACertificatesPaginator.paginate` returns
+`Iterator`\[[ListCACertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcacertificatesresponsetypedef)\].
+
 ## ListCertificatesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_certificates")`.
@@ -357,20 +387,22 @@ def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return boto3.client("iot").get_paginator("list_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
+Boto3 documentation:
+[IoT.Paginator.ListCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
 
-```python
-class ListCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCertificatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListCertificatesPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListCertificatesPaginator.paginate` returns
+`Iterator`\[[ListCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcertificatesresponsetypedef)\].
+
 ## ListCertificatesByCAPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_certificates_by_ca")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_certificates_by_ca")`.
 
 Can be used directly:
 
@@ -381,21 +413,23 @@ def get_list_certificates_by_ca_paginator() -> ListCertificatesByCAPaginator:
     return boto3.client("iot").get_paginator("list_certificates_by_ca")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
+Boto3 documentation:
+[IoT.Paginator.ListCertificatesByCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
 
-```python
-class ListCertificatesByCAPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        caCertificateId: str,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCertificatesByCAResponseTypeDef]:
-        pass
-```
+Arguments for `ListCertificatesByCAPaginator.paginate` method:
+
+- `caCertificateId`: `str` *(required)*
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListCertificatesByCAPaginator.paginate` returns
+`Iterator`\[[ListCertificatesByCAResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcertificatesbycaresponsetypedef)\].
+
 ## ListCustomMetricsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_custom_metrics")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_custom_metrics")`.
 
 Can be used directly:
 
@@ -406,19 +440,21 @@ def get_list_custom_metrics_paginator() -> ListCustomMetricsPaginator:
     return boto3.client("iot").get_paginator("list_custom_metrics")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
+Boto3 documentation:
+[IoT.Paginator.ListCustomMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
 
-```python
-class ListCustomMetricsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomMetricsResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomMetricsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomMetricsPaginator.paginate` returns
+`Iterator`\[[ListCustomMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcustommetricsresponsetypedef)\].
+
 ## ListDetectMitigationActionsExecutionsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")`.
 
 Can be used directly:
 
@@ -429,24 +465,26 @@ def get_list_detect_mitigation_actions_executions_paginator() -> ListDetectMitig
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
+Boto3 documentation:
+[IoT.Paginator.ListDetectMitigationActionsExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
 
-```python
-class ListDetectMitigationActionsExecutionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        taskId: str = None,
-        violationId: str = None,
-        thingName: str = None,
-        startTime: datetime = None,
-        endTime: datetime = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDetectMitigationActionsExecutionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDetectMitigationActionsExecutionsPaginator.paginate` method:
+
+- `taskId`: `str`
+- `violationId`: `str`
+- `thingName`: `str`
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListDetectMitigationActionsExecutionsPaginator.paginate` returns
+`Iterator`\[[ListDetectMitigationActionsExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdetectmitigationactionsexecutionsresponsetypedef)\].
+
 ## ListDetectMitigationActionsTasksPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")`.
 
 Can be used directly:
 
@@ -457,18 +495,19 @@ def get_list_detect_mitigation_actions_tasks_paginator() -> ListDetectMitigation
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
+Boto3 documentation:
+[IoT.Paginator.ListDetectMitigationActionsTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
 
-```python
-class ListDetectMitigationActionsTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        startTime: datetime,
-        endTime: datetime,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDetectMitigationActionsTasksResponseTypeDef]:
-        pass
-```
+Arguments for `ListDetectMitigationActionsTasksPaginator.paginate` method:
+
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListDetectMitigationActionsTasksPaginator.paginate` returns
+`Iterator`\[[ListDetectMitigationActionsTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdetectmitigationactionstasksresponsetypedef)\].
+
 ## ListDimensionsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_dimensions")`.
@@ -482,19 +521,21 @@ def get_list_dimensions_paginator() -> ListDimensionsPaginator:
     return boto3.client("iot").get_paginator("list_dimensions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
+Boto3 documentation:
+[IoT.Paginator.ListDimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
 
-```python
-class ListDimensionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDimensionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDimensionsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListDimensionsPaginator.paginate` returns
+`Iterator`\[[ListDimensionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdimensionsresponsetypedef)\].
+
 ## ListDomainConfigurationsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_domain_configurations")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_domain_configurations")`.
 
 Can be used directly:
 
@@ -505,17 +546,19 @@ def get_list_domain_configurations_paginator() -> ListDomainConfigurationsPagina
     return boto3.client("iot").get_paginator("list_domain_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
+Boto3 documentation:
+[IoT.Paginator.ListDomainConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
 
-```python
-class ListDomainConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        serviceType: ServiceType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDomainConfigurationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDomainConfigurationsPaginator.paginate` method:
+
+- `serviceType`:
+  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#servicetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListDomainConfigurationsPaginator.paginate` returns
+`Iterator`\[[ListDomainConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdomainconfigurationsresponsetypedef)\].
+
 ## ListIndicesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_indices")`.
@@ -529,19 +572,21 @@ def get_list_indices_paginator() -> ListIndicesPaginator:
     return boto3.client("iot").get_paginator("list_indices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
+Boto3 documentation:
+[IoT.Paginator.ListIndices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
 
-```python
-class ListIndicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListIndicesResponseTypeDef]:
-        pass
-```
+Arguments for `ListIndicesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListIndicesPaginator.paginate` returns
+`Iterator`\[[ListIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listindicesresponsetypedef)\].
+
 ## ListJobExecutionsForJobPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_job_executions_for_job")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_job_executions_for_job")`.
 
 Can be used directly:
 
@@ -552,21 +597,24 @@ def get_list_job_executions_for_job_paginator() -> ListJobExecutionsForJobPagina
     return boto3.client("iot").get_paginator("list_job_executions_for_job")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
+Boto3 documentation:
+[IoT.Paginator.ListJobExecutionsForJob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
 
-```python
-class ListJobExecutionsForJobPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        jobId: str,
-        status: JobExecutionStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobExecutionsForJobResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobExecutionsForJobPaginator.paginate` method:
+
+- `jobId`: `str` *(required)*
+- `status`:
+  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListJobExecutionsForJobPaginator.paginate` returns
+`Iterator`\[[ListJobExecutionsForJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobexecutionsforjobresponsetypedef)\].
+
 ## ListJobExecutionsForThingPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_job_executions_for_thing")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_job_executions_for_thing")`.
 
 Can be used directly:
 
@@ -577,19 +625,21 @@ def get_list_job_executions_for_thing_paginator() -> ListJobExecutionsForThingPa
     return boto3.client("iot").get_paginator("list_job_executions_for_thing")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
+Boto3 documentation:
+[IoT.Paginator.ListJobExecutionsForThing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
 
-```python
-class ListJobExecutionsForThingPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingName: str,
-        status: JobExecutionStatus = None,
-        namespaceId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobExecutionsForThingResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
+
+- `thingName`: `str` *(required)*
+- `status`:
+  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `namespaceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListJobExecutionsForThingPaginator.paginate` returns
+`Iterator`\[[ListJobExecutionsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobexecutionsforthingresponsetypedef)\].
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_jobs")`.
@@ -603,24 +653,28 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("iot").get_paginator("list_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
+Boto3 documentation:
+[IoT.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
 
-```python
-class ListJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        status: JobStatus = None,
-        targetSelection: TargetSelection = None,
-        thingGroupName: str = None,
-        thingGroupId: str = None,
-        namespaceId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobsPaginator.paginate` method:
+
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobstatus)
+- `targetSelection`:
+  [TargetSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#targetselection)
+- `thingGroupName`: `str`
+- `thingGroupId`: `str`
+- `namespaceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsPaginator.paginate` returns
+`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobsresponsetypedef)\].
+
 ## ListMitigationActionsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_mitigation_actions")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_mitigation_actions")`.
 
 Can be used directly:
 
@@ -631,17 +685,19 @@ def get_list_mitigation_actions_paginator() -> ListMitigationActionsPaginator:
     return boto3.client("iot").get_paginator("list_mitigation_actions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
+Boto3 documentation:
+[IoT.Paginator.ListMitigationActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
 
-```python
-class ListMitigationActionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        actionType: MitigationActionType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMitigationActionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListMitigationActionsPaginator.paginate` method:
+
+- `actionType`:
+  [MitigationActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#mitigationactiontype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListMitigationActionsPaginator.paginate` returns
+`Iterator`\[[ListMitigationActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listmitigationactionsresponsetypedef)\].
+
 ## ListOTAUpdatesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_ota_updates")`.
@@ -655,20 +711,23 @@ def get_list_ota_updates_paginator() -> ListOTAUpdatesPaginator:
     return boto3.client("iot").get_paginator("list_ota_updates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
+Boto3 documentation:
+[IoT.Paginator.ListOTAUpdates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
 
-```python
-class ListOTAUpdatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        otaUpdateStatus: OTAUpdateStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListOTAUpdatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListOTAUpdatesPaginator.paginate` method:
+
+- `otaUpdateStatus`:
+  [OTAUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#otaupdatestatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListOTAUpdatesPaginator.paginate` returns
+`Iterator`\[[ListOTAUpdatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listotaupdatesresponsetypedef)\].
+
 ## ListOutgoingCertificatesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_outgoing_certificates")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_outgoing_certificates")`.
 
 Can be used directly:
 
@@ -679,17 +738,18 @@ def get_list_outgoing_certificates_paginator() -> ListOutgoingCertificatesPagina
     return boto3.client("iot").get_paginator("list_outgoing_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
+Boto3 documentation:
+[IoT.Paginator.ListOutgoingCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
 
-```python
-class ListOutgoingCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListOutgoingCertificatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListOutgoingCertificatesPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListOutgoingCertificatesPaginator.paginate` returns
+`Iterator`\[[ListOutgoingCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listoutgoingcertificatesresponsetypedef)\].
+
 ## ListPoliciesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_policies")`.
@@ -703,20 +763,22 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
+Boto3 documentation:
+[IoT.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
 
-```python
-class ListPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListPoliciesPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListPoliciesPaginator.paginate` returns
+`Iterator`\[[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listpoliciesresponsetypedef)\].
+
 ## ListPolicyPrincipalsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_policy_principals")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_policy_principals")`.
 
 Can be used directly:
 
@@ -727,21 +789,23 @@ def get_list_policy_principals_paginator() -> ListPolicyPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_policy_principals")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
+Boto3 documentation:
+[IoT.Paginator.ListPolicyPrincipals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
 
-```python
-class ListPolicyPrincipalsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        policyName: str,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPolicyPrincipalsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPolicyPrincipalsPaginator.paginate` method:
+
+- `policyName`: `str` *(required)*
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListPolicyPrincipalsPaginator.paginate` returns
+`Iterator`\[[ListPolicyPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listpolicyprincipalsresponsetypedef)\].
+
 ## ListPrincipalPoliciesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_principal_policies")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_principal_policies")`.
 
 Can be used directly:
 
@@ -752,21 +816,23 @@ def get_list_principal_policies_paginator() -> ListPrincipalPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_principal_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
+Boto3 documentation:
+[IoT.Paginator.ListPrincipalPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
 
-```python
-class ListPrincipalPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        principal: str,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPrincipalPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListPrincipalPoliciesPaginator.paginate` method:
+
+- `principal`: `str` *(required)*
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListPrincipalPoliciesPaginator.paginate` returns
+`Iterator`\[[ListPrincipalPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprincipalpoliciesresponsetypedef)\].
+
 ## ListPrincipalThingsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_principal_things")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_principal_things")`.
 
 Can be used directly:
 
@@ -777,20 +843,22 @@ def get_list_principal_things_paginator() -> ListPrincipalThingsPaginator:
     return boto3.client("iot").get_paginator("list_principal_things")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
+Boto3 documentation:
+[IoT.Paginator.ListPrincipalThings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
 
-```python
-class ListPrincipalThingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        principal: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPrincipalThingsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPrincipalThingsPaginator.paginate` method:
+
+- `principal`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListPrincipalThingsPaginator.paginate` returns
+`Iterator`\[[ListPrincipalThingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprincipalthingsresponsetypedef)\].
+
 ## ListProvisioningTemplateVersionsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_provisioning_template_versions")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_provisioning_template_versions")`.
 
 Can be used directly:
 
@@ -801,20 +869,22 @@ def get_list_provisioning_template_versions_paginator() -> ListProvisioningTempl
     return boto3.client("iot").get_paginator("list_provisioning_template_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
+Boto3 documentation:
+[IoT.Paginator.ListProvisioningTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
 
-```python
-class ListProvisioningTemplateVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        templateName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProvisioningTemplateVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListProvisioningTemplateVersionsPaginator.paginate` method:
+
+- `templateName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListProvisioningTemplateVersionsPaginator.paginate` returns
+`Iterator`\[[ListProvisioningTemplateVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprovisioningtemplateversionsresponsetypedef)\].
+
 ## ListProvisioningTemplatesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_provisioning_templates")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_provisioning_templates")`.
 
 Can be used directly:
 
@@ -825,16 +895,17 @@ def get_list_provisioning_templates_paginator() -> ListProvisioningTemplatesPagi
     return boto3.client("iot").get_paginator("list_provisioning_templates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
+Boto3 documentation:
+[IoT.Paginator.ListProvisioningTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
 
-```python
-class ListProvisioningTemplatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProvisioningTemplatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListProvisioningTemplatesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListProvisioningTemplatesPaginator.paginate` returns
+`Iterator`\[[ListProvisioningTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprovisioningtemplatesresponsetypedef)\].
+
 ## ListRoleAliasesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_role_aliases")`.
@@ -848,20 +919,22 @@ def get_list_role_aliases_paginator() -> ListRoleAliasesPaginator:
     return boto3.client("iot").get_paginator("list_role_aliases")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
+Boto3 documentation:
+[IoT.Paginator.ListRoleAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
 
-```python
-class ListRoleAliasesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRoleAliasesResponseTypeDef]:
-        pass
-```
+Arguments for `ListRoleAliasesPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListRoleAliasesPaginator.paginate` returns
+`Iterator`\[[ListRoleAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listrolealiasesresponsetypedef)\].
+
 ## ListScheduledAuditsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_scheduled_audits")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_scheduled_audits")`.
 
 Can be used directly:
 
@@ -872,19 +945,21 @@ def get_list_scheduled_audits_paginator() -> ListScheduledAuditsPaginator:
     return boto3.client("iot").get_paginator("list_scheduled_audits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
+Boto3 documentation:
+[IoT.Paginator.ListScheduledAudits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
 
-```python
-class ListScheduledAuditsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListScheduledAuditsResponseTypeDef]:
-        pass
-```
+Arguments for `ListScheduledAuditsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListScheduledAuditsPaginator.paginate` returns
+`Iterator`\[[ListScheduledAuditsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listscheduledauditsresponsetypedef)\].
+
 ## ListSecurityProfilesPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_security_profiles")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_security_profiles")`.
 
 Can be used directly:
 
@@ -895,21 +970,23 @@ def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return boto3.client("iot").get_paginator("list_security_profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
+Boto3 documentation:
+[IoT.Paginator.ListSecurityProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
 
-```python
-class ListSecurityProfilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        dimensionName: str = None,
-        metricName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSecurityProfilesResponseTypeDef]:
-        pass
-```
+Arguments for `ListSecurityProfilesPaginator.paginate` method:
+
+- `dimensionName`: `str`
+- `metricName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListSecurityProfilesPaginator.paginate` returns
+`Iterator`\[[ListSecurityProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listsecurityprofilesresponsetypedef)\].
+
 ## ListSecurityProfilesForTargetPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_security_profiles_for_target")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_security_profiles_for_target")`.
 
 Can be used directly:
 
@@ -920,18 +997,19 @@ def get_list_security_profiles_for_target_paginator() -> ListSecurityProfilesFor
     return boto3.client("iot").get_paginator("list_security_profiles_for_target")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
+Boto3 documentation:
+[IoT.Paginator.ListSecurityProfilesForTarget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
 
-```python
-class ListSecurityProfilesForTargetPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        securityProfileTargetArn: str,
-        recursive: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSecurityProfilesForTargetResponseTypeDef]:
-        pass
-```
+Arguments for `ListSecurityProfilesForTargetPaginator.paginate` method:
+
+- `securityProfileTargetArn`: `str` *(required)*
+- `recursive`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListSecurityProfilesForTargetPaginator.paginate` returns
+`Iterator`\[[ListSecurityProfilesForTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listsecurityprofilesfortargetresponsetypedef)\].
+
 ## ListStreamsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_streams")`.
@@ -945,20 +1023,22 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("iot").get_paginator("list_streams")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
+Boto3 documentation:
+[IoT.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
 
-```python
-class ListStreamsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ascendingOrder: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStreamsResponseTypeDef]:
-        pass
-```
+Arguments for `ListStreamsPaginator.paginate` method:
+
+- `ascendingOrder`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListStreamsPaginator.paginate` returns
+`Iterator`\[[ListStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#liststreamsresponsetypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -969,20 +1049,22 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("iot").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
+Boto3 documentation:
+[IoT.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        resourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `resourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtagsforresourceresponsetypedef)\].
+
 ## ListTargetsForPolicyPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_targets_for_policy")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_targets_for_policy")`.
 
 Can be used directly:
 
@@ -993,20 +1075,22 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return boto3.client("iot").get_paginator("list_targets_for_policy")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
+Boto3 documentation:
+[IoT.Paginator.ListTargetsForPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
 
-```python
-class ListTargetsForPolicyPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        policyName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTargetsForPolicyResponseTypeDef]:
-        pass
-```
+Arguments for `ListTargetsForPolicyPaginator.paginate` method:
+
+- `policyName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListTargetsForPolicyPaginator.paginate` returns
+`Iterator`\[[ListTargetsForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtargetsforpolicyresponsetypedef)\].
+
 ## ListTargetsForSecurityProfilePaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_targets_for_security_profile")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_targets_for_security_profile")`.
 
 Can be used directly:
 
@@ -1017,17 +1101,18 @@ def get_list_targets_for_security_profile_paginator() -> ListTargetsForSecurityP
     return boto3.client("iot").get_paginator("list_targets_for_security_profile")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
+Boto3 documentation:
+[IoT.Paginator.ListTargetsForSecurityProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
 
-```python
-class ListTargetsForSecurityProfilePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        securityProfileName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTargetsForSecurityProfileResponseTypeDef]:
-        pass
-```
+Arguments for `ListTargetsForSecurityProfilePaginator.paginate` method:
+
+- `securityProfileName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListTargetsForSecurityProfilePaginator.paginate` returns
+`Iterator`\[[ListTargetsForSecurityProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtargetsforsecurityprofileresponsetypedef)\].
+
 ## ListThingGroupsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_thing_groups")`.
@@ -1041,22 +1126,24 @@ def get_list_thing_groups_paginator() -> ListThingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_thing_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
+Boto3 documentation:
+[IoT.Paginator.ListThingGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
 
-```python
-class ListThingGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        parentGroup: str = None,
-        namePrefixFilter: str = None,
-        recursive: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingGroupsPaginator.paginate` method:
+
+- `parentGroup`: `str`
+- `namePrefixFilter`: `str`
+- `recursive`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingGroupsPaginator.paginate` returns
+`Iterator`\[[ListThingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthinggroupsresponsetypedef)\].
+
 ## ListThingGroupsForThingPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_thing_groups_for_thing")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_thing_groups_for_thing")`.
 
 Can be used directly:
 
@@ -1067,20 +1154,22 @@ def get_list_thing_groups_for_thing_paginator() -> ListThingGroupsForThingPagina
     return boto3.client("iot").get_paginator("list_thing_groups_for_thing")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
+Boto3 documentation:
+[IoT.Paginator.ListThingGroupsForThing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
 
-```python
-class ListThingGroupsForThingPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingGroupsForThingResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingGroupsForThingPaginator.paginate` method:
+
+- `thingName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingGroupsForThingPaginator.paginate` returns
+`Iterator`\[[ListThingGroupsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthinggroupsforthingresponsetypedef)\].
+
 ## ListThingPrincipalsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_thing_principals")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_thing_principals")`.
 
 Can be used directly:
 
@@ -1091,20 +1180,22 @@ def get_list_thing_principals_paginator() -> ListThingPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_thing_principals")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
+Boto3 documentation:
+[IoT.Paginator.ListThingPrincipals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
 
-```python
-class ListThingPrincipalsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingPrincipalsResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingPrincipalsPaginator.paginate` method:
+
+- `thingName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingPrincipalsPaginator.paginate` returns
+`Iterator`\[[ListThingPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingprincipalsresponsetypedef)\].
+
 ## ListThingRegistrationTaskReportsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_thing_registration_task_reports")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_thing_registration_task_reports")`.
 
 Can be used directly:
 
@@ -1115,21 +1206,25 @@ def get_list_thing_registration_task_reports_paginator() -> ListThingRegistratio
     return boto3.client("iot").get_paginator("list_thing_registration_task_reports")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
+Boto3 documentation:
+[IoT.Paginator.ListThingRegistrationTaskReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
 
-```python
-class ListThingRegistrationTaskReportsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        taskId: str,
-        reportType: ReportType,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingRegistrationTaskReportsResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingRegistrationTaskReportsPaginator.paginate` method:
+
+- `taskId`: `str` *(required)*
+- `reportType`:
+  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#reporttype)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingRegistrationTaskReportsPaginator.paginate` returns
+`Iterator`\[[ListThingRegistrationTaskReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingregistrationtaskreportsresponsetypedef)\].
+
 ## ListThingRegistrationTasksPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_thing_registration_tasks")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_thing_registration_tasks")`.
 
 Can be used directly:
 
@@ -1140,17 +1235,19 @@ def get_list_thing_registration_tasks_paginator() -> ListThingRegistrationTasksP
     return boto3.client("iot").get_paginator("list_thing_registration_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
+Boto3 documentation:
+[IoT.Paginator.ListThingRegistrationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
 
-```python
-class ListThingRegistrationTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        status: Status = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingRegistrationTasksResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingRegistrationTasksPaginator.paginate` method:
+
+- `status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#status)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingRegistrationTasksPaginator.paginate` returns
+`Iterator`\[[ListThingRegistrationTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingregistrationtasksresponsetypedef)\].
+
 ## ListThingTypesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_thing_types")`.
@@ -1164,17 +1261,18 @@ def get_list_thing_types_paginator() -> ListThingTypesPaginator:
     return boto3.client("iot").get_paginator("list_thing_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
+Boto3 documentation:
+[IoT.Paginator.ListThingTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
 
-```python
-class ListThingTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingTypeName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingTypesResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingTypesPaginator.paginate` method:
+
+- `thingTypeName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingTypesPaginator.paginate` returns
+`Iterator`\[[ListThingTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingtypesresponsetypedef)\].
+
 ## ListThingsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_things")`.
@@ -1188,23 +1286,25 @@ def get_list_things_paginator() -> ListThingsPaginator:
     return boto3.client("iot").get_paginator("list_things")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
+Boto3 documentation:
+[IoT.Paginator.ListThings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
 
-```python
-class ListThingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        attributeName: str = None,
-        attributeValue: str = None,
-        thingTypeName: str = None,
-        usePrefixAttributeValue: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingsResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingsPaginator.paginate` method:
+
+- `attributeName`: `str`
+- `attributeValue`: `str`
+- `thingTypeName`: `str`
+- `usePrefixAttributeValue`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingsPaginator.paginate` returns
+`Iterator`\[[ListThingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsresponsetypedef)\].
+
 ## ListThingsInBillingGroupPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_things_in_billing_group")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_things_in_billing_group")`.
 
 Can be used directly:
 
@@ -1215,20 +1315,22 @@ def get_list_things_in_billing_group_paginator() -> ListThingsInBillingGroupPagi
     return boto3.client("iot").get_paginator("list_things_in_billing_group")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
+Boto3 documentation:
+[IoT.Paginator.ListThingsInBillingGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
 
-```python
-class ListThingsInBillingGroupPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        billingGroupName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingsInBillingGroupResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingsInBillingGroupPaginator.paginate` method:
+
+- `billingGroupName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingsInBillingGroupPaginator.paginate` returns
+`Iterator`\[[ListThingsInBillingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsinbillinggroupresponsetypedef)\].
+
 ## ListThingsInThingGroupPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_things_in_thing_group")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_things_in_thing_group")`.
 
 Can be used directly:
 
@@ -1239,21 +1341,23 @@ def get_list_things_in_thing_group_paginator() -> ListThingsInThingGroupPaginato
     return boto3.client("iot").get_paginator("list_things_in_thing_group")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
+Boto3 documentation:
+[IoT.Paginator.ListThingsInThingGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
 
-```python
-class ListThingsInThingGroupPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        thingGroupName: str,
-        recursive: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListThingsInThingGroupResponseTypeDef]:
-        pass
-```
+Arguments for `ListThingsInThingGroupPaginator.paginate` method:
+
+- `thingGroupName`: `str` *(required)*
+- `recursive`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListThingsInThingGroupPaginator.paginate` returns
+`Iterator`\[[ListThingsInThingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsinthinggroupresponsetypedef)\].
+
 ## ListTopicRuleDestinationsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_topic_rule_destinations")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_topic_rule_destinations")`.
 
 Can be used directly:
 
@@ -1264,16 +1368,17 @@ def get_list_topic_rule_destinations_paginator() -> ListTopicRuleDestinationsPag
     return boto3.client("iot").get_paginator("list_topic_rule_destinations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
+Boto3 documentation:
+[IoT.Paginator.ListTopicRuleDestinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
 
-```python
-class ListTopicRuleDestinationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTopicRuleDestinationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTopicRuleDestinationsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListTopicRuleDestinationsPaginator.paginate` returns
+`Iterator`\[[ListTopicRuleDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtopicruledestinationsresponsetypedef)\].
+
 ## ListTopicRulesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_topic_rules")`.
@@ -1287,21 +1392,23 @@ def get_list_topic_rules_paginator() -> ListTopicRulesPaginator:
     return boto3.client("iot").get_paginator("list_topic_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
+Boto3 documentation:
+[IoT.Paginator.ListTopicRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
 
-```python
-class ListTopicRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        topic: str = None,
-        ruleDisabled: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTopicRulesResponseTypeDef]:
-        pass
-```
+Arguments for `ListTopicRulesPaginator.paginate` method:
+
+- `topic`: `str`
+- `ruleDisabled`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListTopicRulesPaginator.paginate` returns
+`Iterator`\[[ListTopicRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtopicrulesresponsetypedef)\].
+
 ## ListV2LoggingLevelsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_v2_logging_levels")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_v2_logging_levels")`.
 
 Can be used directly:
 
@@ -1312,20 +1419,23 @@ def get_list_v2_logging_levels_paginator() -> ListV2LoggingLevelsPaginator:
     return boto3.client("iot").get_paginator("list_v2_logging_levels")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
+Boto3 documentation:
+[IoT.Paginator.ListV2LoggingLevels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
 
-```python
-class ListV2LoggingLevelsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        targetType: LogTargetType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListV2LoggingLevelsResponseTypeDef]:
-        pass
-```
+Arguments for `ListV2LoggingLevelsPaginator.paginate` method:
+
+- `targetType`:
+  [LogTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#logtargettype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListV2LoggingLevelsPaginator.paginate` returns
+`Iterator`\[[ListV2LoggingLevelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listv2logginglevelsresponsetypedef)\].
+
 ## ListViolationEventsPaginator
 
-Type annotations for `boto3.client("iot").get_paginator("list_violation_events")`.
+Type annotations for
+`boto3.client("iot").get_paginator("list_violation_events")`.
 
 Can be used directly:
 
@@ -1336,19 +1446,20 @@ def get_list_violation_events_paginator() -> ListViolationEventsPaginator:
     return boto3.client("iot").get_paginator("list_violation_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
+Boto3 documentation:
+[IoT.Paginator.ListViolationEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
 
-```python
-class ListViolationEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        startTime: datetime,
-        endTime: datetime,
-        thingName: str = None,
-        securityProfileName: str = None,
-        behaviorCriteriaType: BehaviorCriteriaType = None,
-        listSuppressedAlerts: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListViolationEventsResponseTypeDef]:
-        pass
-```
+Arguments for `ListViolationEventsPaginator.paginate` method:
+
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `thingName`: `str`
+- `securityProfileName`: `str`
+- `behaviorCriteriaType`:
+  [BehaviorCriteriaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#behaviorcriteriatype)
+- `listSuppressedAlerts`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+
+`ListViolationEventsPaginator.paginate` returns
+`Iterator`\[[ListViolationEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listviolationeventsresponsetypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElastiCache
 
-Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+Auto-generated documentation for
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+type annotations stubs module
+[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 ```bash
 pip install mypy-boto3-elasticache
@@ -20,7 +22,8 @@ pip install mypy-boto3-elasticache
 
 ## ElastiCacheClient
 
-Type annotations for  `boto3.client("elasticache")` as [ElastiCacheClient](./client.md)
+Type annotations for `boto3.client("elasticache")` as
+[ElastiCacheClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_elasticache.client import ElastiCacheClient
 ```
 
-
 ElastiCacheClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags_to_resource](./client.md#add-tags-to-resource)
 - [authorize_cache_security_group_ingress](./client.md#authorize-cache-security-group-ingress)
 - [batch_apply_update_action](./client.md#batch-apply-update-action)
@@ -104,10 +105,8 @@ ElastiCacheClient [exceptions](./client.md#exceptions)
 - [start_migration](./client.md#start-migration)
 - [test_failover](./client.md#test-failover)
 
-
-
-
 ### Exceptions
+
 - [APICallRateForCustomerExceededFault](./client.md#apicallrateforcustomerexceededfault)
 - [AuthorizationAlreadyExistsFault](./client.md#authorizationalreadyexistsfault)
 - [AuthorizationNotFoundFault](./client.md#authorizationnotfoundfault)
@@ -177,14 +176,10 @@ ElastiCacheClient [exceptions](./client.md#exceptions)
 - [UserNotFoundFault](./client.md#usernotfoundfault)
 - [UserQuotaExceededFault](./client.md#userquotaexceededfault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elasticache").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elasticache").get_paginator("...")`.
 
 Can be used directly:
 
@@ -210,12 +205,10 @@ from mypy_boto3_elasticache.paginators import DescribeCacheClustersPaginator, ..
 - [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("elasticache").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("elasticache").get_waiter("...")`.
 
 Can be used directly:
 
@@ -227,9 +220,6 @@ from mypy_boto3_elasticache.waiters import CacheClusterAvailableWaiter, ...
 - [CacheClusterDeletedWaiter](./waiters.md#cacheclusterdeletedwaiter)
 - [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
 - [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -284,13 +274,10 @@ from mypy_boto3_elasticache.literals import AZMode, ...
 - [SourceType](./literals.md#sourcetype)
 - [UpdateActionStatus](./literals.md#updateactionstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

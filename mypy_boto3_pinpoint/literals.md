@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pinpoint](./README.md) > Literals
 
-Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+Auto-generated documentation for
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+type annotations stubs module
+[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [Literals for boto3 Pinpoint module](#literals-for-boto3-pinpoint-module)
   - [Action](#action)
@@ -27,7 +29,7 @@ type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/myp
   - [State](#state)
   - [TemplateType](#templatetype)
   - [TypeType](#typetype)
-  - [__EndpointTypesElement](#__endpointtypeselement)
+  - [\_\_EndpointTypesElement](#__endpointtypeselement)
 
 ## Action
 
@@ -308,7 +310,7 @@ Values:
 - `ANY`
 - `NONE`
 
-## __EndpointTypesElement
+## \_\_EndpointTypesElement
 
 ```python
 from mypy_boto3_pinpoint.literals import __EndpointTypesElement

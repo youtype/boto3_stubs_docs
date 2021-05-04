@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataPipeline](./README.md) > DataPipelineClient
 
-Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
-type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+Auto-generated documentation for
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+type annotations stubs module
+[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [DataPipelineClient for boto3 DataPipeline module](#datapipelineclient-for-boto3-datapipeline-module)
   - [DataPipelineClient](#datapipelineclient)
@@ -45,12 +47,13 @@ def get_datapipeline_client() -> DataPipelineClient:
     return boto3.client("datapipeline")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
+Boto3 documentation:
+[DataPipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_datapipeline.client import Exceptions
@@ -58,7 +61,6 @@ from mypy_boto3_datapipeline.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -69,350 +71,358 @@ Exceptions:
 - `Exceptions.PipelineNotFoundException`
 - `Exceptions.TaskNotFoundException`
 
-
 ## Methods
-
 
 ### activate_pipeline
 
 Type annotations for `boto3.client("datapipeline").activate_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline]
+Boto3 documentation:
+[DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
 
-```python
-def activate_pipeline(
-    self,
-    pipelineId: str,
-    parameterValues: List["ParameterValueTypeDef"] = None,
-    startTimestamp: datetime = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `parameterValues`:
+  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+- `startTimestamp`: `datetime`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### add_tags
 
 Type annotations for `boto3.client("datapipeline").add_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags]
+Boto3 documentation:
+[DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
 
-```python
-def add_tags(
-    self,
-    pipelineId: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("datapipeline").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate]
+Boto3 documentation:
+[DataPipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_pipeline
 
 Type annotations for `boto3.client("datapipeline").create_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline]
+Boto3 documentation:
+[DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
 
-```python
-def create_pipeline(
-    self,
-    name: str,
-    uniqueId: str,
-    description: str = None,
-    tags: List["TagTypeDef"] = None
-) -> CreatePipelineOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `uniqueId`: `str` *(required)*
+- `description`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#createpipelineoutputtypedef).
 
 ### deactivate_pipeline
 
 Type annotations for `boto3.client("datapipeline").deactivate_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline]
+Boto3 documentation:
+[DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
 
-```python
-def deactivate_pipeline(
-    self,
-    pipelineId: str,
-    cancelActive: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `cancelActive`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_pipeline
 
 Type annotations for `boto3.client("datapipeline").delete_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline]
+Boto3 documentation:
+[DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
 
-```python
-def delete_pipeline(
-    self,
-    pipelineId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
 
 ### describe_objects
 
 Type annotations for `boto3.client("datapipeline").describe_objects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects]
+Boto3 documentation:
+[DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
 
-```python
-def describe_objects(
-    self,
-    pipelineId: str,
-    objectIds: List[str],
-    evaluateExpressions: bool = None,
-    marker: str = None
-) -> DescribeObjectsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `objectIds`: `List`\[`str`\] *(required)*
+- `evaluateExpressions`: `bool`
+- `marker`: `str`
+
+Returns
+[DescribeObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describeobjectsoutputtypedef).
 
 ### describe_pipelines
 
 Type annotations for `boto3.client("datapipeline").describe_pipelines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines]
+Boto3 documentation:
+[DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
 
-```python
-def describe_pipelines(
-    self,
-    pipelineIds: List[str]
-) -> DescribePipelinesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribePipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describepipelinesoutputtypedef).
 
 ### evaluate_expression
 
 Type annotations for `boto3.client("datapipeline").evaluate_expression` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression]
+Boto3 documentation:
+[DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
 
-```python
-def evaluate_expression(
-    self,
-    pipelineId: str,
-    objectId: str,
-    expression: str
-) -> EvaluateExpressionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `objectId`: `str` *(required)*
+- `expression`: `str` *(required)*
+
+Returns
+[EvaluateExpressionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#evaluateexpressionoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("datapipeline").generate_presigned_url` method.
+Type annotations for `boto3.client("datapipeline").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url]
+Boto3 documentation:
+[DataPipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_pipeline_definition
 
-Type annotations for `boto3.client("datapipeline").get_pipeline_definition` method.
+Type annotations for `boto3.client("datapipeline").get_pipeline_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition]
+Boto3 documentation:
+[DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
 
-```python
-def get_pipeline_definition(
-    self,
-    pipelineId: str,
-    version: str = None
-) -> GetPipelineDefinitionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `version`: `str`
+
+Returns
+[GetPipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#getpipelinedefinitionoutputtypedef).
 
 ### list_pipelines
 
 Type annotations for `boto3.client("datapipeline").list_pipelines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines]
+Boto3 documentation:
+[DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
 
-```python
-def list_pipelines(
-    self,
-    marker: str = None
-) -> ListPipelinesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `marker`: `str`
+
+Returns
+[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#listpipelinesoutputtypedef).
 
 ### poll_for_task
 
 Type annotations for `boto3.client("datapipeline").poll_for_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task]
+Boto3 documentation:
+[DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
 
-```python
-def poll_for_task(
-    self,
-    workerGroup: str,
-    hostname: str = None,
-    instanceIdentity: InstanceIdentityTypeDef = None
-) -> PollForTaskOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `workerGroup`: `str` *(required)*
+- `hostname`: `str`
+- `instanceIdentity`:
+  [InstanceIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#instanceidentitytypedef)
+
+Returns
+[PollForTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pollfortaskoutputtypedef).
 
 ### put_pipeline_definition
 
-Type annotations for `boto3.client("datapipeline").put_pipeline_definition` method.
+Type annotations for `boto3.client("datapipeline").put_pipeline_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition]
+Boto3 documentation:
+[DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
 
-```python
-def put_pipeline_definition(
-    self,
-    pipelineId: str,
-    pipelineObjects: List["PipelineObjectTypeDef"],
-    parameterObjects: List["ParameterObjectTypeDef"] = None,
-    parameterValues: List["ParameterValueTypeDef"] = None
-) -> PutPipelineDefinitionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `pipelineObjects`:
+  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  *(required)*
+- `parameterObjects`:
+  `List`\[[ParameterObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterobjecttypedef)\]
+- `parameterValues`:
+  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+
+Returns
+[PutPipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#putpipelinedefinitionoutputtypedef).
 
 ### query_objects
 
 Type annotations for `boto3.client("datapipeline").query_objects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects]
+Boto3 documentation:
+[DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
 
-```python
-def query_objects(
-    self,
-    pipelineId: str,
-    sphere: str,
-    query: QueryTypeDef = None,
-    marker: str = None,
-    limit: int = None
-) -> QueryObjectsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `sphere`: `str` *(required)*
+- `query`:
+  [QueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#querytypedef)
+- `marker`: `str`
+- `limit`: `int`
+
+Returns
+[QueryObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#queryobjectsoutputtypedef).
 
 ### remove_tags
 
 Type annotations for `boto3.client("datapipeline").remove_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags]
+Boto3 documentation:
+[DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
 
-```python
-def remove_tags(
-    self,
-    pipelineId: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### report_task_progress
 
-Type annotations for `boto3.client("datapipeline").report_task_progress` method.
+Type annotations for `boto3.client("datapipeline").report_task_progress`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress]
+Boto3 documentation:
+[DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
 
-```python
-def report_task_progress(
-    self,
-    taskId: str,
-    fields: List["FieldTypeDef"] = None
-) -> ReportTaskProgressOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `taskId`: `str` *(required)*
+- `fields`:
+  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#fieldtypedef)\]
+
+Returns
+[ReportTaskProgressOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#reporttaskprogressoutputtypedef).
 
 ### report_task_runner_heartbeat
 
-Type annotations for `boto3.client("datapipeline").report_task_runner_heartbeat` method.
+Type annotations for
+`boto3.client("datapipeline").report_task_runner_heartbeat` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat]
+Boto3 documentation:
+[DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
 
-```python
-def report_task_runner_heartbeat(
-    self,
-    taskrunnerId: str,
-    workerGroup: str = None,
-    hostname: str = None
-) -> ReportTaskRunnerHeartbeatOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `taskrunnerId`: `str` *(required)*
+- `workerGroup`: `str`
+- `hostname`: `str`
+
+Returns
+[ReportTaskRunnerHeartbeatOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#reporttaskrunnerheartbeatoutputtypedef).
 
 ### set_status
 
 Type annotations for `boto3.client("datapipeline").set_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status]
+Boto3 documentation:
+[DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
 
-```python
-def set_status(
-    self,
-    pipelineId: str,
-    objectIds: List[str],
-    status: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `pipelineId`: `str` *(required)*
+- `objectIds`: `List`\[`str`\] *(required)*
+- `status`: `str` *(required)*
 
 ### set_task_status
 
 Type annotations for `boto3.client("datapipeline").set_task_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status]
+Boto3 documentation:
+[DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
 
-```python
-def set_task_status(
-    self,
-    taskId: str,
-    taskStatus: TaskStatus,
-    errorId: str = None,
-    errorMessage: str = None,
-    errorStackTrace: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `taskId`: `str` *(required)*
+- `taskStatus`:
+  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/literals.html#taskstatus)
+  *(required)*
+- `errorId`: `str`
+- `errorMessage`: `str`
+- `errorStackTrace`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### validate_pipeline_definition
 
-Type annotations for `boto3.client("datapipeline").validate_pipeline_definition` method.
+Type annotations for
+`boto3.client("datapipeline").validate_pipeline_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition]
+Boto3 documentation:
+[DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
 
-```python
-def validate_pipeline_definition(
-    self,
-    pipelineId: str,
-    pipelineObjects: List["PipelineObjectTypeDef"],
-    parameterObjects: List["ParameterObjectTypeDef"] = None,
-    parameterValues: List["ParameterValueTypeDef"] = None
-) -> ValidatePipelineDefinitionOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `pipelineId`: `str` *(required)*
+- `pipelineObjects`:
+  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  *(required)*
+- `parameterObjects`:
+  `List`\[[ParameterObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterobjecttypedef)\]
+- `parameterValues`:
+  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
 
+Returns
+[ValidatePipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validatepipelinedefinitionoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("datapipeline").get_paginator` method with overloads.
+Type annotations for `boto3.client("datapipeline").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_objects")` -> [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
-- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("query_objects")` -> [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)
-
-
+- `client.get_paginator("describe_objects")` ->
+  [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
+- `client.get_paginator("list_pipelines")` ->
+  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("query_objects")` ->
+  [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)

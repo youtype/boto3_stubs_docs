@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SecurityHub](./README.md) > SecurityHubClient
 
-Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+Auto-generated documentation for
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+type annotations stubs module
+[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [SecurityHubClient for boto3 SecurityHub module](#securityhubclient-for-boto3-securityhub-module)
   - [SecurityHubClient](#securityhubclient)
@@ -77,12 +79,13 @@ def get_securityhub_client() -> SecurityHubClient:
     return boto3.client("securityhub")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
+Boto3 documentation:
+[SecurityHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_securityhub.client import Exceptions
@@ -90,7 +93,6 @@ from mypy_boto3_securityhub.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -103,805 +105,812 @@ Exceptions:
 - `Exceptions.ResourceConflictException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### accept_administrator_invitation
 
-Type annotations for `boto3.client("securityhub").accept_administrator_invitation` method.
+Type annotations for
+`boto3.client("securityhub").accept_administrator_invitation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation]
+Boto3 documentation:
+[SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
 
-```python
-def accept_administrator_invitation(
-    self,
-    AdministratorId: str,
-    InvitationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AdministratorId`: `str` *(required)*
+- `InvitationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### accept_invitation
 
 Type annotations for `boto3.client("securityhub").accept_invitation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation]
+Boto3 documentation:
+[SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
 
-```python
-def accept_invitation(
-    self,
-    MasterId: str,
-    InvitationId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `MasterId`: `str` *(required)*
+- `InvitationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_disable_standards
 
-Type annotations for `boto3.client("securityhub").batch_disable_standards` method.
+Type annotations for `boto3.client("securityhub").batch_disable_standards`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards]
+Boto3 documentation:
+[SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
 
-```python
-def batch_disable_standards(
-    self,
-    StandardsSubscriptionArns: List[str]
-) -> BatchDisableStandardsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDisableStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchdisablestandardsresponsetypedef).
 
 ### batch_enable_standards
 
-Type annotations for `boto3.client("securityhub").batch_enable_standards` method.
+Type annotations for `boto3.client("securityhub").batch_enable_standards`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards]
+Boto3 documentation:
+[SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
 
-```python
-def batch_enable_standards(
-    self,
-    StandardsSubscriptionRequests: List[StandardsSubscriptionRequestTypeDef]
-) -> BatchEnableStandardsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StandardsSubscriptionRequests`:
+  `List`\[[StandardsSubscriptionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardssubscriptionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchEnableStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchenablestandardsresponsetypedef).
 
 ### batch_import_findings
 
-Type annotations for `boto3.client("securityhub").batch_import_findings` method.
+Type annotations for `boto3.client("securityhub").batch_import_findings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings]
+Boto3 documentation:
+[SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
 
-```python
-def batch_import_findings(
-    self,
-    Findings: List["AwsSecurityFindingTypeDef"]
-) -> BatchImportFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Findings`:
+  `List`\[[AwsSecurityFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingtypedef)\]
+  *(required)*
+
+Returns
+[BatchImportFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchimportfindingsresponsetypedef).
 
 ### batch_update_findings
 
-Type annotations for `boto3.client("securityhub").batch_update_findings` method.
+Type annotations for `boto3.client("securityhub").batch_update_findings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings]
+Boto3 documentation:
+[SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
 
-```python
-def batch_update_findings(
-    self,
-    FindingIdentifiers: List["AwsSecurityFindingIdentifierTypeDef"],
-    Note: NoteUpdateTypeDef = None,
-    Severity: SeverityUpdateTypeDef = None,
-    VerificationState: VerificationState = None,
-    Confidence: int = None,
-    Criticality: int = None,
-    Types: List[str] = None,
-    UserDefinedFields: Dict[str, str] = None,
-    Workflow: WorkflowUpdateTypeDef = None,
-    RelatedFindings: List["RelatedFindingTypeDef"] = None
-) -> BatchUpdateFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FindingIdentifiers`:
+  `List`\[[AwsSecurityFindingIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingidentifiertypedef)\]
+  *(required)*
+- `Note`:
+  [NoteUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#noteupdatetypedef)
+- `Severity`:
+  [SeverityUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#severityupdatetypedef)
+- `VerificationState`:
+  [VerificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#verificationstate)
+- `Confidence`: `int`
+- `Criticality`: `int`
+- `Types`: `List`\[`str`\]
+- `UserDefinedFields`: `Dict`\[`str`, `str`\]
+- `Workflow`:
+  [WorkflowUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#workflowupdatetypedef)
+- `RelatedFindings`:
+  `List`\[[RelatedFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#relatedfindingtypedef)\]
+
+Returns
+[BatchUpdateFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchupdatefindingsresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("securityhub").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate]
+Boto3 documentation:
+[SecurityHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_action_target
 
 Type annotations for `boto3.client("securityhub").create_action_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target]
+Boto3 documentation:
+[SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
 
-```python
-def create_action_target(
-    self,
-    Name: str,
-    Description: str,
-    Id: str
-) -> CreateActionTargetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[CreateActionTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createactiontargetresponsetypedef).
 
 ### create_insight
 
 Type annotations for `boto3.client("securityhub").create_insight` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight]
+Boto3 documentation:
+[SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
 
-```python
-def create_insight(
-    self,
-    Name: str,
-    Filters: "AwsSecurityFindingFiltersTypeDef",
-    GroupByAttribute: str
-) -> CreateInsightResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Filters`:
+  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  *(required)*
+- `GroupByAttribute`: `str` *(required)*
+
+Returns
+[CreateInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createinsightresponsetypedef).
 
 ### create_members
 
 Type annotations for `boto3.client("securityhub").create_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members]
+Boto3 documentation:
+[SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
 
-```python
-def create_members(
-    self,
-    AccountDetails: List[AccountDetailsTypeDef]
-) -> CreateMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountDetails`:
+  `List`\[[AccountDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#accountdetailstypedef)\]
+  *(required)*
+
+Returns
+[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createmembersresponsetypedef).
 
 ### decline_invitations
 
 Type annotations for `boto3.client("securityhub").decline_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations]
+Boto3 documentation:
+[SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
 
-```python
-def decline_invitations(
-    self,
-    AccountIds: List[str]
-) -> DeclineInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeclineInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#declineinvitationsresponsetypedef).
 
 ### delete_action_target
 
 Type annotations for `boto3.client("securityhub").delete_action_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target]
+Boto3 documentation:
+[SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
 
-```python
-def delete_action_target(
-    self,
-    ActionTargetArn: str
-) -> DeleteActionTargetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionTargetArn`: `str` *(required)*
+
+Returns
+[DeleteActionTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteactiontargetresponsetypedef).
 
 ### delete_insight
 
 Type annotations for `boto3.client("securityhub").delete_insight` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight]
+Boto3 documentation:
+[SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
 
-```python
-def delete_insight(
-    self,
-    InsightArn: str
-) -> DeleteInsightResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightArn`: `str` *(required)*
+
+Returns
+[DeleteInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteinsightresponsetypedef).
 
 ### delete_invitations
 
 Type annotations for `boto3.client("securityhub").delete_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations]
+Boto3 documentation:
+[SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
 
-```python
-def delete_invitations(
-    self,
-    AccountIds: List[str]
-) -> DeleteInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteinvitationsresponsetypedef).
 
 ### delete_members
 
 Type annotations for `boto3.client("securityhub").delete_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members]
+Boto3 documentation:
+[SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
 
-```python
-def delete_members(
-    self,
-    AccountIds: List[str]
-) -> DeleteMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deletemembersresponsetypedef).
 
 ### describe_action_targets
 
-Type annotations for `boto3.client("securityhub").describe_action_targets` method.
+Type annotations for `boto3.client("securityhub").describe_action_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets]
+Boto3 documentation:
+[SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
 
-```python
-def describe_action_targets(
-    self,
-    ActionTargetArns: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeActionTargetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionTargetArns`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeActionTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeactiontargetsresponsetypedef).
 
 ### describe_hub
 
 Type annotations for `boto3.client("securityhub").describe_hub` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub]
+Boto3 documentation:
+[SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
 
-```python
-def describe_hub(
-    self,
-    HubArn: str = None
-) -> DescribeHubResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HubArn`: `str`
+
+Returns
+[DescribeHubResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describehubresponsetypedef).
 
 ### describe_organization_configuration
 
-Type annotations for `boto3.client("securityhub").describe_organization_configuration` method.
+Type annotations for
+`boto3.client("securityhub").describe_organization_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration]
+Boto3 documentation:
+[SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
 
-```python
-def describe_organization_configuration(
-    self
-) -> DescribeOrganizationConfigurationResponseTypeDef:
-    pass
-```
+Returns
+[DescribeOrganizationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeorganizationconfigurationresponsetypedef).
 
 ### describe_products
 
 Type annotations for `boto3.client("securityhub").describe_products` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products]
+Boto3 documentation:
+[SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
 
-```python
-def describe_products(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ProductArn: str = None
-) -> DescribeProductsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ProductArn`: `str`
+
+Returns
+[DescribeProductsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeproductsresponsetypedef).
 
 ### describe_standards
 
 Type annotations for `boto3.client("securityhub").describe_standards` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards]
+Boto3 documentation:
+[SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
 
-```python
-def describe_standards(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeStandardsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describestandardsresponsetypedef).
 
 ### describe_standards_controls
 
-Type annotations for `boto3.client("securityhub").describe_standards_controls` method.
+Type annotations for `boto3.client("securityhub").describe_standards_controls`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls]
+Boto3 documentation:
+[SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
 
-```python
-def describe_standards_controls(
-    self,
-    StandardsSubscriptionArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeStandardsControlsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StandardsSubscriptionArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeStandardsControlsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describestandardscontrolsresponsetypedef).
 
 ### disable_import_findings_for_product
 
-Type annotations for `boto3.client("securityhub").disable_import_findings_for_product` method.
+Type annotations for
+`boto3.client("securityhub").disable_import_findings_for_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product]
+Boto3 documentation:
+[SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
 
-```python
-def disable_import_findings_for_product(
-    self,
-    ProductSubscriptionArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProductSubscriptionArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_organization_admin_account
 
-Type annotations for `boto3.client("securityhub").disable_organization_admin_account` method.
+Type annotations for
+`boto3.client("securityhub").disable_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account]
+Boto3 documentation:
+[SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
 
-```python
-def disable_organization_admin_account(
-    self,
-    AdminAccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AdminAccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_security_hub
 
 Type annotations for `boto3.client("securityhub").disable_security_hub` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub]
+Boto3 documentation:
+[SecurityHub.Client.disable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub)
 
-```python
-def disable_security_hub(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_administrator_account
 
-Type annotations for `boto3.client("securityhub").disassociate_from_administrator_account` method.
+Type annotations for
+`boto3.client("securityhub").disassociate_from_administrator_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account]
+Boto3 documentation:
+[SecurityHub.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account)
 
-```python
-def disassociate_from_administrator_account(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_master_account
 
-Type annotations for `boto3.client("securityhub").disassociate_from_master_account` method.
+Type annotations for
+`boto3.client("securityhub").disassociate_from_master_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account]
+Boto3 documentation:
+[SecurityHub.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account)
 
-```python
-def disassociate_from_master_account(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_members
 
 Type annotations for `boto3.client("securityhub").disassociate_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members]
+Boto3 documentation:
+[SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
 
-```python
-def disassociate_members(
-    self,
-    AccountIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_import_findings_for_product
 
-Type annotations for `boto3.client("securityhub").enable_import_findings_for_product` method.
+Type annotations for
+`boto3.client("securityhub").enable_import_findings_for_product` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product]
+Boto3 documentation:
+[SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
 
-```python
-def enable_import_findings_for_product(
-    self,
-    ProductArn: str
-) -> EnableImportFindingsForProductResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductArn`: `str` *(required)*
+
+Returns
+[EnableImportFindingsForProductResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#enableimportfindingsforproductresponsetypedef).
 
 ### enable_organization_admin_account
 
-Type annotations for `boto3.client("securityhub").enable_organization_admin_account` method.
+Type annotations for
+`boto3.client("securityhub").enable_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account]
+Boto3 documentation:
+[SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
 
-```python
-def enable_organization_admin_account(
-    self,
-    AdminAccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AdminAccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_security_hub
 
 Type annotations for `boto3.client("securityhub").enable_security_hub` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub]
+Boto3 documentation:
+[SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
 
-```python
-def enable_security_hub(
-    self,
-    Tags: Dict[str, str] = None,
-    EnableDefaultStandards: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+- `EnableDefaultStandards`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("securityhub").generate_presigned_url` method.
+Type annotations for `boto3.client("securityhub").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url]
+Boto3 documentation:
+[SecurityHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_administrator_account
 
-Type annotations for `boto3.client("securityhub").get_administrator_account` method.
+Type annotations for `boto3.client("securityhub").get_administrator_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account]
+Boto3 documentation:
+[SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
 
-```python
-def get_administrator_account(
-    self
-) -> GetAdministratorAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetAdministratorAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getadministratoraccountresponsetypedef).
 
 ### get_enabled_standards
 
-Type annotations for `boto3.client("securityhub").get_enabled_standards` method.
+Type annotations for `boto3.client("securityhub").get_enabled_standards`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards]
+Boto3 documentation:
+[SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
 
-```python
-def get_enabled_standards(
-    self,
-    StandardsSubscriptionArns: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetEnabledStandardsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetEnabledStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getenabledstandardsresponsetypedef).
 
 ### get_findings
 
 Type annotations for `boto3.client("securityhub").get_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings]
+Boto3 documentation:
+[SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
 
-```python
-def get_findings(
-    self,
-    Filters: "AwsSecurityFindingFiltersTypeDef" = None,
-    SortCriteria: List[SortCriterionTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+- `SortCriteria`:
+  `List`\[[SortCriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#sortcriteriontypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getfindingsresponsetypedef).
 
 ### get_insight_results
 
 Type annotations for `boto3.client("securityhub").get_insight_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results]
+Boto3 documentation:
+[SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
 
-```python
-def get_insight_results(
-    self,
-    InsightArn: str
-) -> GetInsightResultsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightArn`: `str` *(required)*
+
+Returns
+[GetInsightResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinsightresultsresponsetypedef).
 
 ### get_insights
 
 Type annotations for `boto3.client("securityhub").get_insights` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights]
+Boto3 documentation:
+[SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
 
-```python
-def get_insights(
-    self,
-    InsightArns: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetInsightsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InsightArns`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinsightsresponsetypedef).
 
 ### get_invitations_count
 
-Type annotations for `boto3.client("securityhub").get_invitations_count` method.
+Type annotations for `boto3.client("securityhub").get_invitations_count`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count]
+Boto3 documentation:
+[SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
 
-```python
-def get_invitations_count(
-    self
-) -> GetInvitationsCountResponseTypeDef:
-    pass
-```
+Returns
+[GetInvitationsCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinvitationscountresponsetypedef).
 
 ### get_master_account
 
 Type annotations for `boto3.client("securityhub").get_master_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account]
+Boto3 documentation:
+[SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
 
-```python
-def get_master_account(
-    self
-) -> GetMasterAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetMasterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getmasteraccountresponsetypedef).
 
 ### get_members
 
 Type annotations for `boto3.client("securityhub").get_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members]
+Boto3 documentation:
+[SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
 
-```python
-def get_members(
-    self,
-    AccountIds: List[str]
-) -> GetMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getmembersresponsetypedef).
 
 ### invite_members
 
 Type annotations for `boto3.client("securityhub").invite_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members]
+Boto3 documentation:
+[SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
 
-```python
-def invite_members(
-    self,
-    AccountIds: List[str]
-) -> InviteMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountIds`: `List`\[`str`\] *(required)*
+
+Returns
+[InviteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#invitemembersresponsetypedef).
 
 ### list_enabled_products_for_import
 
-Type annotations for `boto3.client("securityhub").list_enabled_products_for_import` method.
+Type annotations for
+`boto3.client("securityhub").list_enabled_products_for_import` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import]
+Boto3 documentation:
+[SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
 
-```python
-def list_enabled_products_for_import(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEnabledProductsForImportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEnabledProductsForImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listenabledproductsforimportresponsetypedef).
 
 ### list_invitations
 
 Type annotations for `boto3.client("securityhub").list_invitations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations]
+Boto3 documentation:
+[SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
 
-```python
-def list_invitations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listinvitationsresponsetypedef).
 
 ### list_members
 
 Type annotations for `boto3.client("securityhub").list_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members]
+Boto3 documentation:
+[SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
 
-```python
-def list_members(
-    self,
-    OnlyAssociated: bool = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OnlyAssociated`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
-Type annotations for `boto3.client("securityhub").list_organization_admin_accounts` method.
+Type annotations for
+`boto3.client("securityhub").list_organization_admin_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts]
+Boto3 documentation:
+[SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
 
-```python
-def list_organization_admin_accounts(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListOrganizationAdminAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listorganizationadminaccountsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("securityhub").list_tags_for_resource` method.
+Type annotations for `boto3.client("securityhub").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource]
+Boto3 documentation:
+[SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("securityhub").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource]
+Boto3 documentation:
+[SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("securityhub").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource]
+Boto3 documentation:
+[SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_action_target
 
 Type annotations for `boto3.client("securityhub").update_action_target` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target]
+Boto3 documentation:
+[SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
 
-```python
-def update_action_target(
-    self,
-    ActionTargetArn: str,
-    Name: str = None,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ActionTargetArn`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_findings
 
 Type annotations for `boto3.client("securityhub").update_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings]
+Boto3 documentation:
+[SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
 
-```python
-def update_findings(
-    self,
-    Filters: "AwsSecurityFindingFiltersTypeDef",
-    Note: NoteUpdateTypeDef = None,
-    RecordState: RecordState = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  *(required)*
+- `Note`:
+  [NoteUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#noteupdatetypedef)
+- `RecordState`:
+  [RecordState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#recordstate)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_insight
 
 Type annotations for `boto3.client("securityhub").update_insight` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight]
+Boto3 documentation:
+[SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
 
-```python
-def update_insight(
-    self,
-    InsightArn: str,
-    Name: str = None,
-    Filters: "AwsSecurityFindingFiltersTypeDef" = None,
-    GroupByAttribute: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InsightArn`: `str` *(required)*
+- `Name`: `str`
+- `Filters`:
+  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+- `GroupByAttribute`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_organization_configuration
 
-Type annotations for `boto3.client("securityhub").update_organization_configuration` method.
+Type annotations for
+`boto3.client("securityhub").update_organization_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration]
+Boto3 documentation:
+[SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
 
-```python
-def update_organization_configuration(
-    self,
-    AutoEnable: bool
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoEnable`: `bool` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_security_hub_configuration
 
-Type annotations for `boto3.client("securityhub").update_security_hub_configuration` method.
+Type annotations for
+`boto3.client("securityhub").update_security_hub_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration]
+Boto3 documentation:
+[SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
 
-```python
-def update_security_hub_configuration(
-    self,
-    AutoEnableControls: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoEnableControls`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_standards_control
 
-Type annotations for `boto3.client("securityhub").update_standards_control` method.
+Type annotations for `boto3.client("securityhub").update_standards_control`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control]
+Boto3 documentation:
+[SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
 
-```python
-def update_standards_control(
-    self,
-    StandardsControlArn: str,
-    ControlStatus: ControlStatus = None,
-    DisabledReason: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `StandardsControlArn`: `str` *(required)*
+- `ControlStatus`:
+  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#controlstatus)
+- `DisabledReason`: `str`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("securityhub").get_paginator` method with overloads.
+Type annotations for `boto3.client("securityhub").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_enabled_standards")` -> [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
-- `client.get_paginator("get_findings")` -> [GetFindingsPaginator](./paginators.md#getfindingspaginator)
-- `client.get_paginator("get_insights")` -> [GetInsightsPaginator](./paginators.md#getinsightspaginator)
-- `client.get_paginator("list_enabled_products_for_import")` -> [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
-- `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
-- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
-
-
+- `client.get_paginator("get_enabled_standards")` ->
+  [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
+- `client.get_paginator("get_findings")` ->
+  [GetFindingsPaginator](./paginators.md#getfindingspaginator)
+- `client.get_paginator("get_insights")` ->
+  [GetInsightsPaginator](./paginators.md#getinsightspaginator)
+- `client.get_paginator("list_enabled_products_for_import")` ->
+  [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
+- `client.get_paginator("list_invitations")` ->
+  [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_members")` ->
+  [ListMembersPaginator](./paginators.md#listmemberspaginator)

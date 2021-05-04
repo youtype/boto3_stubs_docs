@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FSx](./README.md) > Literals
 
-Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
-type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+Auto-generated documentation for
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+type annotations stubs module
+[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Literals for boto3 FSx module](#literals-for-boto3-fsx-module)
   - [AdministrativeActionType](#administrativeactiontype)

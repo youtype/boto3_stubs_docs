@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CustomerProfiles](./README.md) > Literals
 
-Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
-type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+Auto-generated documentation for
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+type annotations stubs module
+[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Literals for boto3 CustomerProfiles module](#literals-for-boto3-customerprofiles-module)
   - [DataPullMode](#datapullmode)

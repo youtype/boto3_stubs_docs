@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PI](./README.md) > PIClient
 
-Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+Auto-generated documentation for
+[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+type annotations stubs module
+[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [PIClient for boto3 PI module](#piclient-for-boto3-pi-module)
   - [PIClient](#piclient)
@@ -27,12 +29,13 @@ def get_pi_client() -> PIClient:
     return boto3.client("pi")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
+Boto3 documentation:
+[PI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_pi.client import Exceptions
@@ -41,7 +44,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -49,85 +51,83 @@ Exceptions:
 - `Exceptions.InvalidArgumentException`
 - `Exceptions.NotAuthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("pi").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate]
+Boto3 documentation:
+[PI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_dimension_keys
 
 Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys]
+Boto3 documentation:
+[PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
 
-```python
-def describe_dimension_keys(
-    self,
-    ServiceType: Literal['RDS'],
-    Identifier: str,
-    StartTime: datetime,
-    EndTime: datetime,
-    Metric: str,
-    GroupBy: "DimensionGroupTypeDef",
-    PeriodInSeconds: int = None,
-    PartitionBy: "DimensionGroupTypeDef" = None,
-    Filter: Dict[str, str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeDimensionKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceType`: `Literal['RDS']` *(required)*
+- `Identifier`: `str` *(required)*
+- `StartTime`: `datetime` *(required)*
+- `EndTime`: `datetime` *(required)*
+- `Metric`: `str` *(required)*
+- `GroupBy`:
+  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+  *(required)*
+- `PeriodInSeconds`: `int`
+- `PartitionBy`:
+  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+- `Filter`: `Dict`\[`str`, `str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeDimensionKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#describedimensionkeysresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("pi").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url]
+Boto3 documentation:
+[PI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_resource_metrics
 
 Type annotations for `boto3.client("pi").get_resource_metrics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics]
+Boto3 documentation:
+[PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
 
-```python
-def get_resource_metrics(
-    self,
-    ServiceType: Literal['RDS'],
-    Identifier: str,
-    MetricQueries: List[MetricQueryTypeDef],
-    StartTime: datetime,
-    EndTime: datetime,
-    PeriodInSeconds: int = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetResourceMetricsResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ServiceType`: `Literal['RDS']` *(required)*
+- `Identifier`: `str` *(required)*
+- `MetricQueries`:
+  `List`\[[MetricQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#metricquerytypedef)\]
+  *(required)*
+- `StartTime`: `datetime` *(required)*
+- `EndTime`: `datetime` *(required)*
+- `PeriodInSeconds`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
 
-
+Returns
+[GetResourceMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#getresourcemetricsresponsetypedef).

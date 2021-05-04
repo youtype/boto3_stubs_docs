@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTDataPlane
 
-Auto-generated documentation for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
-type annotations stubs module [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
+Auto-generated documentation for
+[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 ```bash
 pip install mypy-boto3-iot-data
@@ -17,7 +19,8 @@ pip install mypy-boto3-iot-data
 
 ## IoTDataPlaneClient
 
-Type annotations for  `boto3.client("iot-data")` as [IoTDataPlaneClient](./client.md)
+Type annotations for `boto3.client("iot-data")` as
+[IoTDataPlaneClient](./client.md)
 
 Can be used directly:
 
@@ -25,12 +28,10 @@ Can be used directly:
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 ```
 
-
 IoTDataPlaneClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_thing_shadow](./client.md#delete-thing-shadow)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -39,10 +40,8 @@ IoTDataPlaneClient [exceptions](./client.md#exceptions)
 - [publish](./client.md#publish)
 - [update_thing_shadow](./client.md#update-thing-shadow)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalFailureException](./client.md#internalfailureexception)
@@ -55,21 +54,10 @@ IoTDataPlaneClient [exceptions](./client.md#exceptions)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 - [UnsupportedDocumentEncodingException](./client.md#unsupporteddocumentencodingexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

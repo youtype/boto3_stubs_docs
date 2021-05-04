@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EKS](./README.md) > Paginators
 
-Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+Auto-generated documentation for
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+type annotations stubs module
+[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [Paginators for boto3 EKS module](#paginators-for-boto3-eks-module)
   - [DescribeAddonVersionsPaginator](#describeaddonversionspaginator)
@@ -16,7 +18,8 @@ type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-bot
 
 ## DescribeAddonVersionsPaginator
 
-Type annotations for `boto3.client("eks").get_paginator("describe_addon_versions")`.
+Type annotations for
+`boto3.client("eks").get_paginator("describe_addon_versions")`.
 
 Can be used directly:
 
@@ -27,18 +30,19 @@ def get_describe_addon_versions_paginator() -> DescribeAddonVersionsPaginator:
     return boto3.client("eks").get_paginator("describe_addon_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
+Boto3 documentation:
+[EKS.Paginator.DescribeAddonVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
 
-```python
-class DescribeAddonVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        kubernetesVersion: str = None,
-        addonName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAddonVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAddonVersionsPaginator.paginate` method:
+
+- `kubernetesVersion`: `str`
+- `addonName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAddonVersionsPaginator.paginate` returns
+`Iterator`\[[DescribeAddonVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#describeaddonversionsresponsetypedef)\].
+
 ## ListAddonsPaginator
 
 Type annotations for `boto3.client("eks").get_paginator("list_addons")`.
@@ -52,17 +56,18 @@ def get_list_addons_paginator() -> ListAddonsPaginator:
     return boto3.client("eks").get_paginator("list_addons")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListAddons)
+Boto3 documentation:
+[EKS.Paginator.ListAddons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListAddons)
 
-```python
-class ListAddonsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        clusterName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAddonsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAddonsPaginator.paginate` method:
+
+- `clusterName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListAddonsPaginator.paginate` returns
+`Iterator`\[[ListAddonsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listaddonsresponsetypedef)\].
+
 ## ListClustersPaginator
 
 Type annotations for `boto3.client("eks").get_paginator("list_clusters")`.
@@ -76,19 +81,21 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("eks").get_paginator("list_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListClusters)
+Boto3 documentation:
+[EKS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListClusters)
 
-```python
-class ListClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListClustersResponseTypeDef]:
-        pass
-```
+Arguments for `ListClustersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListClustersPaginator.paginate` returns
+`Iterator`\[[ListClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listclustersresponsetypedef)\].
+
 ## ListFargateProfilesPaginator
 
-Type annotations for `boto3.client("eks").get_paginator("list_fargate_profiles")`.
+Type annotations for
+`boto3.client("eks").get_paginator("list_fargate_profiles")`.
 
 Can be used directly:
 
@@ -99,20 +106,22 @@ def get_list_fargate_profiles_paginator() -> ListFargateProfilesPaginator:
     return boto3.client("eks").get_paginator("list_fargate_profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
+Boto3 documentation:
+[EKS.Paginator.ListFargateProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
 
-```python
-class ListFargateProfilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        clusterName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFargateProfilesResponseTypeDef]:
-        pass
-```
+Arguments for `ListFargateProfilesPaginator.paginate` method:
+
+- `clusterName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListFargateProfilesPaginator.paginate` returns
+`Iterator`\[[ListFargateProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listfargateprofilesresponsetypedef)\].
+
 ## ListIdentityProviderConfigsPaginator
 
-Type annotations for `boto3.client("eks").get_paginator("list_identity_provider_configs")`.
+Type annotations for
+`boto3.client("eks").get_paginator("list_identity_provider_configs")`.
 
 Can be used directly:
 
@@ -123,17 +132,18 @@ def get_list_identity_provider_configs_paginator() -> ListIdentityProviderConfig
     return boto3.client("eks").get_paginator("list_identity_provider_configs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
+Boto3 documentation:
+[EKS.Paginator.ListIdentityProviderConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
 
-```python
-class ListIdentityProviderConfigsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        clusterName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListIdentityProviderConfigsResponseTypeDef]:
-        pass
-```
+Arguments for `ListIdentityProviderConfigsPaginator.paginate` method:
+
+- `clusterName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListIdentityProviderConfigsPaginator.paginate` returns
+`Iterator`\[[ListIdentityProviderConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listidentityproviderconfigsresponsetypedef)\].
+
 ## ListNodegroupsPaginator
 
 Type annotations for `boto3.client("eks").get_paginator("list_nodegroups")`.
@@ -147,17 +157,18 @@ def get_list_nodegroups_paginator() -> ListNodegroupsPaginator:
     return boto3.client("eks").get_paginator("list_nodegroups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListNodegroups)
+Boto3 documentation:
+[EKS.Paginator.ListNodegroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListNodegroups)
 
-```python
-class ListNodegroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        clusterName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListNodegroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListNodegroupsPaginator.paginate` method:
+
+- `clusterName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListNodegroupsPaginator.paginate` returns
+`Iterator`\[[ListNodegroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listnodegroupsresponsetypedef)\].
+
 ## ListUpdatesPaginator
 
 Type annotations for `boto3.client("eks").get_paginator("list_updates")`.
@@ -171,16 +182,16 @@ def get_list_updates_paginator() -> ListUpdatesPaginator:
     return boto3.client("eks").get_paginator("list_updates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListUpdates)
+Boto3 documentation:
+[EKS.Paginator.ListUpdates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListUpdates)
 
-```python
-class ListUpdatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        name: str,
-        nodegroupName: str = None,
-        addonName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUpdatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListUpdatesPaginator.paginate` method:
+
+- `name`: `str` *(required)*
+- `nodegroupName`: `str`
+- `addonName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#paginatorconfigtypedef)
+
+`ListUpdatesPaginator.paginate` returns
+`Iterator`\[[ListUpdatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#listupdatesresponsetypedef)\].

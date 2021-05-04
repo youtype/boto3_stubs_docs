@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SQS](./README.md) > Paginators
 
-Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
-type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
+Auto-generated documentation for
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+type annotations stubs module
+[mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 - [Paginators for boto3 SQS module](#paginators-for-boto3-sqs-module)
   - [ListDeadLetterSourceQueuesPaginator](#listdeadlettersourcequeuespaginator)
@@ -11,7 +13,8 @@ type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-bot
 
 ## ListDeadLetterSourceQueuesPaginator
 
-Type annotations for `boto3.client("sqs").get_paginator("list_dead_letter_source_queues")`.
+Type annotations for
+`boto3.client("sqs").get_paginator("list_dead_letter_source_queues")`.
 
 Can be used directly:
 
@@ -22,17 +25,18 @@ def get_list_dead_letter_source_queues_paginator() -> ListDeadLetterSourceQueues
     return boto3.client("sqs").get_paginator("list_dead_letter_source_queues")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
+Boto3 documentation:
+[SQS.Paginator.ListDeadLetterSourceQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
 
-```python
-class ListDeadLetterSourceQueuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        QueueUrl: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDeadLetterSourceQueuesResultTypeDef]:
-        pass
-```
+Arguments for `ListDeadLetterSourceQueuesPaginator.paginate` method:
+
+- `QueueUrl`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#paginatorconfigtypedef)
+
+`ListDeadLetterSourceQueuesPaginator.paginate` returns
+`Iterator`\[[ListDeadLetterSourceQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listdeadlettersourcequeuesresulttypedef)\].
+
 ## ListQueuesPaginator
 
 Type annotations for `boto3.client("sqs").get_paginator("list_queues")`.
@@ -46,14 +50,14 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("sqs").get_paginator("list_queues")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
+Boto3 documentation:
+[SQS.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
 
-```python
-class ListQueuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        QueueNamePrefix: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListQueuesResultTypeDef]:
-        pass
-```
+Arguments for `ListQueuesPaginator.paginate` method:
+
+- `QueueNamePrefix`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#paginatorconfigtypedef)
+
+`ListQueuesPaginator.paginate` returns
+`Iterator`\[[ListQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuesresulttypedef)\].

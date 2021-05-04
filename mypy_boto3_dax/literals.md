@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DAX](./README.md) > Literals
 
-Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+Auto-generated documentation for
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+type annotations stubs module
+[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [Literals for boto3 DAX module](#literals-for-boto3-dax-module)
   - [ChangeType](#changetype)

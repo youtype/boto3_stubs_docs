@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GameLift](./README.md) > Paginators
 
-Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+Auto-generated documentation for
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+type annotations stubs module
+[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Paginators for boto3 GameLift module](#paginators-for-boto3-gamelift-module)
   - [DescribeFleetAttributesPaginator](#describefleetattributespaginator)
@@ -29,7 +31,8 @@ type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/myp
 
 ## DescribeFleetAttributesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_fleet_attributes")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_fleet_attributes")`.
 
 Can be used directly:
 
@@ -40,20 +43,22 @@ def get_describe_fleet_attributes_paginator() -> DescribeFleetAttributesPaginato
     return boto3.client("gamelift").get_paginator("describe_fleet_attributes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
+Boto3 documentation:
+[GameLift.Paginator.DescribeFleetAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
 
-```python
-class DescribeFleetAttributesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFleetAttributesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeFleetAttributesPaginator.paginate` method:
+
+- `FleetIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFleetAttributesPaginator.paginate` returns
+`Iterator`\[[DescribeFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetattributesoutputtypedef)\].
+
 ## DescribeFleetCapacityPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_fleet_capacity")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_fleet_capacity")`.
 
 Can be used directly:
 
@@ -64,20 +69,22 @@ def get_describe_fleet_capacity_paginator() -> DescribeFleetCapacityPaginator:
     return boto3.client("gamelift").get_paginator("describe_fleet_capacity")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
+Boto3 documentation:
+[GameLift.Paginator.DescribeFleetCapacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
 
-```python
-class DescribeFleetCapacityPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFleetCapacityOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeFleetCapacityPaginator.paginate` method:
+
+- `FleetIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFleetCapacityPaginator.paginate` returns
+`Iterator`\[[DescribeFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetcapacityoutputtypedef)\].
+
 ## DescribeFleetEventsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_fleet_events")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_fleet_events")`.
 
 Can be used directly:
 
@@ -88,22 +95,24 @@ def get_describe_fleet_events_paginator() -> DescribeFleetEventsPaginator:
     return boto3.client("gamelift").get_paginator("describe_fleet_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
+Boto3 documentation:
+[GameLift.Paginator.DescribeFleetEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
 
-```python
-class DescribeFleetEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFleetEventsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeFleetEventsPaginator.paginate` method:
+
+- `FleetId`: `str` *(required)*
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFleetEventsPaginator.paginate` returns
+`Iterator`\[[DescribeFleetEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleeteventsoutputtypedef)\].
+
 ## DescribeFleetUtilizationPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_fleet_utilization")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_fleet_utilization")`.
 
 Can be used directly:
 
@@ -114,20 +123,22 @@ def get_describe_fleet_utilization_paginator() -> DescribeFleetUtilizationPagina
     return boto3.client("gamelift").get_paginator("describe_fleet_utilization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
+Boto3 documentation:
+[GameLift.Paginator.DescribeFleetUtilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
 
-```python
-class DescribeFleetUtilizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFleetUtilizationOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
+
+- `FleetIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFleetUtilizationPaginator.paginate` returns
+`Iterator`\[[DescribeFleetUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetutilizationoutputtypedef)\].
+
 ## DescribeGameServerInstancesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_game_server_instances")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_game_server_instances")`.
 
 Can be used directly:
 
@@ -138,21 +149,23 @@ def get_describe_game_server_instances_paginator() -> DescribeGameServerInstance
     return boto3.client("gamelift").get_paginator("describe_game_server_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
+Boto3 documentation:
+[GameLift.Paginator.DescribeGameServerInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
 
-```python
-class DescribeGameServerInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GameServerGroupName: str,
-        InstanceIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGameServerInstancesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
+
+- `GameServerGroupName`: `str` *(required)*
+- `InstanceIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGameServerInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeGameServerInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserverinstancesoutputtypedef)\].
+
 ## DescribeGameSessionDetailsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_game_session_details")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_game_session_details")`.
 
 Can be used directly:
 
@@ -163,24 +176,26 @@ def get_describe_game_session_details_paginator() -> DescribeGameSessionDetailsP
     return boto3.client("gamelift").get_paginator("describe_game_session_details")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
+Boto3 documentation:
+[GameLift.Paginator.DescribeGameSessionDetails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
 
-```python
-class DescribeGameSessionDetailsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str = None,
-        GameSessionId: str = None,
-        AliasId: str = None,
-        Location: str = None,
-        StatusFilter: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGameSessionDetailsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeGameSessionDetailsPaginator.paginate` method:
+
+- `FleetId`: `str`
+- `GameSessionId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `StatusFilter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGameSessionDetailsPaginator.paginate` returns
+`Iterator`\[[DescribeGameSessionDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessiondetailsoutputtypedef)\].
+
 ## DescribeGameSessionQueuesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_game_session_queues")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_game_session_queues")`.
 
 Can be used directly:
 
@@ -191,20 +206,22 @@ def get_describe_game_session_queues_paginator() -> DescribeGameSessionQueuesPag
     return boto3.client("gamelift").get_paginator("describe_game_session_queues")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
+Boto3 documentation:
+[GameLift.Paginator.DescribeGameSessionQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
 
-```python
-class DescribeGameSessionQueuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Names: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGameSessionQueuesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
+
+- `Names`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGameSessionQueuesPaginator.paginate` returns
+`Iterator`\[[DescribeGameSessionQueuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionqueuesoutputtypedef)\].
+
 ## DescribeGameSessionsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_game_sessions")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_game_sessions")`.
 
 Can be used directly:
 
@@ -215,24 +232,26 @@ def get_describe_game_sessions_paginator() -> DescribeGameSessionsPaginator:
     return boto3.client("gamelift").get_paginator("describe_game_sessions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
+Boto3 documentation:
+[GameLift.Paginator.DescribeGameSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
 
-```python
-class DescribeGameSessionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str = None,
-        GameSessionId: str = None,
-        AliasId: str = None,
-        Location: str = None,
-        StatusFilter: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGameSessionsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeGameSessionsPaginator.paginate` method:
+
+- `FleetId`: `str`
+- `GameSessionId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `StatusFilter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGameSessionsPaginator.paginate` returns
+`Iterator`\[[DescribeGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionsoutputtypedef)\].
+
 ## DescribeInstancesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_instances")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_instances")`.
 
 Can be used directly:
 
@@ -243,22 +262,24 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return boto3.client("gamelift").get_paginator("describe_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
+Boto3 documentation:
+[GameLift.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
 
-```python
-class DescribeInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str,
-        InstanceId: str = None,
-        Location: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstancesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeInstancesPaginator.paginate` method:
+
+- `FleetId`: `str` *(required)*
+- `InstanceId`: `str`
+- `Location`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeinstancesoutputtypedef)\].
+
 ## DescribeMatchmakingConfigurationsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_matchmaking_configurations")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_matchmaking_configurations")`.
 
 Can be used directly:
 
@@ -269,21 +290,23 @@ def get_describe_matchmaking_configurations_paginator() -> DescribeMatchmakingCo
     return boto3.client("gamelift").get_paginator("describe_matchmaking_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
+Boto3 documentation:
+[GameLift.Paginator.DescribeMatchmakingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
 
-```python
-class DescribeMatchmakingConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Names: List[str] = None,
-        RuleSetName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeMatchmakingConfigurationsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
+
+- `Names`: `List`\[`str`\]
+- `RuleSetName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeMatchmakingConfigurationsPaginator.paginate` returns
+`Iterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingconfigurationsoutputtypedef)\].
+
 ## DescribeMatchmakingRuleSetsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_matchmaking_rule_sets")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_matchmaking_rule_sets")`.
 
 Can be used directly:
 
@@ -294,20 +317,22 @@ def get_describe_matchmaking_rule_sets_paginator() -> DescribeMatchmakingRuleSet
     return boto3.client("gamelift").get_paginator("describe_matchmaking_rule_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
+Boto3 documentation:
+[GameLift.Paginator.DescribeMatchmakingRuleSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
 
-```python
-class DescribeMatchmakingRuleSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Names: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeMatchmakingRuleSetsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
+
+- `Names`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeMatchmakingRuleSetsPaginator.paginate` returns
+`Iterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingrulesetsoutputtypedef)\].
+
 ## DescribePlayerSessionsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_player_sessions")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_player_sessions")`.
 
 Can be used directly:
 
@@ -318,23 +343,25 @@ def get_describe_player_sessions_paginator() -> DescribePlayerSessionsPaginator:
     return boto3.client("gamelift").get_paginator("describe_player_sessions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
+Boto3 documentation:
+[GameLift.Paginator.DescribePlayerSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
 
-```python
-class DescribePlayerSessionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GameSessionId: str = None,
-        PlayerId: str = None,
-        PlayerSessionId: str = None,
-        PlayerSessionStatusFilter: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePlayerSessionsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribePlayerSessionsPaginator.paginate` method:
+
+- `GameSessionId`: `str`
+- `PlayerId`: `str`
+- `PlayerSessionId`: `str`
+- `PlayerSessionStatusFilter`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribePlayerSessionsPaginator.paginate` returns
+`Iterator`\[[DescribePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeplayersessionsoutputtypedef)\].
+
 ## DescribeScalingPoliciesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("describe_scaling_policies")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("describe_scaling_policies")`.
 
 Can be used directly:
 
@@ -345,19 +372,21 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
     return boto3.client("gamelift").get_paginator("describe_scaling_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
+Boto3 documentation:
+[GameLift.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
 
-```python
-class DescribeScalingPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str,
-        StatusFilter: ScalingStatusType = None,
-        Location: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeScalingPoliciesOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
+
+- `FleetId`: `str` *(required)*
+- `StatusFilter`:
+  [ScalingStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingstatustype)
+- `Location`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScalingPoliciesPaginator.paginate` returns
+`Iterator`\[[DescribeScalingPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescalingpoliciesoutputtypedef)\].
+
 ## ListAliasesPaginator
 
 Type annotations for `boto3.client("gamelift").get_paginator("list_aliases")`.
@@ -371,18 +400,20 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return boto3.client("gamelift").get_paginator("list_aliases")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
+Boto3 documentation:
+[GameLift.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
 
-```python
-class ListAliasesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RoutingStrategyType: RoutingStrategyType = None,
-        Name: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAliasesOutputTypeDef]:
-        pass
-```
+Arguments for `ListAliasesPaginator.paginate` method:
+
+- `RoutingStrategyType`:
+  [RoutingStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#routingstrategytype)
+- `Name`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListAliasesPaginator.paginate` returns
+`Iterator`\[[ListAliasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listaliasesoutputtypedef)\].
+
 ## ListBuildsPaginator
 
 Type annotations for `boto3.client("gamelift").get_paginator("list_builds")`.
@@ -396,17 +427,19 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return boto3.client("gamelift").get_paginator("list_builds")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
+Boto3 documentation:
+[GameLift.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
 
-```python
-class ListBuildsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Status: BuildStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBuildsOutputTypeDef]:
-        pass
-```
+Arguments for `ListBuildsPaginator.paginate` method:
+
+- `Status`:
+  [BuildStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#buildstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListBuildsPaginator.paginate` returns
+`Iterator`\[[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listbuildsoutputtypedef)\].
+
 ## ListFleetsPaginator
 
 Type annotations for `boto3.client("gamelift").get_paginator("list_fleets")`.
@@ -420,21 +453,23 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
     return boto3.client("gamelift").get_paginator("list_fleets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
+Boto3 documentation:
+[GameLift.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
 
-```python
-class ListFleetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        BuildId: str = None,
-        ScriptId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFleetsOutputTypeDef]:
-        pass
-```
+Arguments for `ListFleetsPaginator.paginate` method:
+
+- `BuildId`: `str`
+- `ScriptId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListFleetsPaginator.paginate` returns
+`Iterator`\[[ListFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listfleetsoutputtypedef)\].
+
 ## ListGameServerGroupsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_game_server_groups")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("list_game_server_groups")`.
 
 Can be used directly:
 
@@ -445,19 +480,21 @@ def get_list_game_server_groups_paginator() -> ListGameServerGroupsPaginator:
     return boto3.client("gamelift").get_paginator("list_game_server_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
+Boto3 documentation:
+[GameLift.Paginator.ListGameServerGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
 
-```python
-class ListGameServerGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGameServerGroupsOutputTypeDef]:
-        pass
-```
+Arguments for `ListGameServerGroupsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListGameServerGroupsPaginator.paginate` returns
+`Iterator`\[[ListGameServerGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameservergroupsoutputtypedef)\].
+
 ## ListGameServersPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_game_servers")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("list_game_servers")`.
 
 Can be used directly:
 
@@ -468,18 +505,20 @@ def get_list_game_servers_paginator() -> ListGameServersPaginator:
     return boto3.client("gamelift").get_paginator("list_game_servers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
+Boto3 documentation:
+[GameLift.Paginator.ListGameServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
 
-```python
-class ListGameServersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GameServerGroupName: str,
-        SortOrder: SortOrder = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGameServersOutputTypeDef]:
-        pass
-```
+Arguments for `ListGameServersPaginator.paginate` method:
+
+- `GameServerGroupName`: `str` *(required)*
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#sortorder)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListGameServersPaginator.paginate` returns
+`Iterator`\[[ListGameServersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameserversoutputtypedef)\].
+
 ## ListScriptsPaginator
 
 Type annotations for `boto3.client("gamelift").get_paginator("list_scripts")`.
@@ -493,19 +532,21 @@ def get_list_scripts_paginator() -> ListScriptsPaginator:
     return boto3.client("gamelift").get_paginator("list_scripts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
+Boto3 documentation:
+[GameLift.Paginator.ListScripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
 
-```python
-class ListScriptsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListScriptsOutputTypeDef]:
-        pass
-```
+Arguments for `ListScriptsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`ListScriptsPaginator.paginate` returns
+`Iterator`\[[ListScriptsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listscriptsoutputtypedef)\].
+
 ## SearchGameSessionsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("search_game_sessions")`.
+Type annotations for
+`boto3.client("gamelift").get_paginator("search_game_sessions")`.
 
 Can be used directly:
 
@@ -516,18 +557,18 @@ def get_search_game_sessions_paginator() -> SearchGameSessionsPaginator:
     return boto3.client("gamelift").get_paginator("search_game_sessions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
+Boto3 documentation:
+[GameLift.Paginator.SearchGameSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
 
-```python
-class SearchGameSessionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FleetId: str = None,
-        AliasId: str = None,
-        Location: str = None,
-        FilterExpression: str = None,
-        SortExpression: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchGameSessionsOutputTypeDef]:
-        pass
-```
+Arguments for `SearchGameSessionsPaginator.paginate` method:
+
+- `FleetId`: `str`
+- `AliasId`: `str`
+- `Location`: `str`
+- `FilterExpression`: `str`
+- `SortExpression`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+
+`SearchGameSessionsPaginator.paginate` returns
+`Iterator`\[[SearchGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#searchgamesessionsoutputtypedef)\].

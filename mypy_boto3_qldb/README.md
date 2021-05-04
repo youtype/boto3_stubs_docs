@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > QLDB
 
-Auto-generated documentation for [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
-type annotations stubs module [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
+Auto-generated documentation for
+[QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
+type annotations stubs module
+[mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 ```bash
 pip install mypy-boto3-qldb
@@ -18,7 +20,7 @@ pip install mypy-boto3-qldb
 
 ## QLDBClient
 
-Type annotations for  `boto3.client("qldb")` as [QLDBClient](./client.md)
+Type annotations for `boto3.client("qldb")` as [QLDBClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_qldb.client import QLDBClient
 ```
 
-
 QLDBClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_journal_kinesis_stream](./client.md#cancel-journal-kinesis-stream)
 - [create_ledger](./client.md#create-ledger)
@@ -54,10 +54,8 @@ QLDBClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_ledger](./client.md#update-ledger)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidParameterException](./client.md#invalidparameterexception)
 - [LimitExceededException](./client.md#limitexceededexception)
@@ -65,15 +63,6 @@ QLDBClient [exceptions](./client.md#exceptions)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ResourcePreconditionNotMetException](./client.md#resourcepreconditionnotmetexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -92,13 +81,10 @@ from mypy_boto3_qldb.literals import ErrorCause, ...
 - [S3ObjectEncryptionType](./literals.md#s3objectencryptiontype)
 - [StreamStatus](./literals.md#streamstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

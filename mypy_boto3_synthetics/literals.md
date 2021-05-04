@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Synthetics](./README.md) > Literals
 
-Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
-type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+Auto-generated documentation for
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+type annotations stubs module
+[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Literals for boto3 Synthetics module](#literals-for-boto3-synthetics-module)
   - [CanaryRunState](#canaryrunstate)

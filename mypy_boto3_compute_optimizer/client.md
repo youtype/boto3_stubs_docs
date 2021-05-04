@@ -1,9 +1,12 @@
 # ComputeOptimizerClient for boto3 ComputeOptimizer module
 
-> [Index](../README.md) > [ComputeOptimizer](./README.md) > ComputeOptimizerClient
+> [Index](../README.md) > [ComputeOptimizer](./README.md) >
+> ComputeOptimizerClient
 
-Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
-type annotations stubs module [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+Auto-generated documentation for
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+type annotations stubs module
+[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [ComputeOptimizerClient for boto3 ComputeOptimizer module](#computeoptimizerclient-for-boto3-computeoptimizer-module)
   - [ComputeOptimizerClient](#computeoptimizerclient)
@@ -36,12 +39,13 @@ def get_compute-optimizer_client() -> ComputeOptimizerClient:
     return boto3.client("compute-optimizer")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
+Boto3 documentation:
+[ComputeOptimizer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_compute_optimizer.client import Exceptions
@@ -49,7 +53,6 @@ from mypy_boto3_compute_optimizer.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -64,229 +67,251 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("compute-optimizer").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate]
+Boto3 documentation:
+[ComputeOptimizer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_recommendation_export_jobs
 
-Type annotations for `boto3.client("compute-optimizer").describe_recommendation_export_jobs` method.
+Type annotations for
+`boto3.client("compute-optimizer").describe_recommendation_export_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs]
+Boto3 documentation:
+[ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
 
-```python
-def describe_recommendation_export_jobs(
-    self,
-    jobIds: List[str] = None,
-    filters: List[JobFilterTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribeRecommendationExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[JobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#jobfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribeRecommendationExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#describerecommendationexportjobsresponsetypedef).
 
 ### export_auto_scaling_group_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").export_auto_scaling_group_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").export_auto_scaling_group_recommendations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
 
-```python
-def export_auto_scaling_group_recommendations(
-    self,
-    s3DestinationConfig: S3DestinationConfigTypeDef,
-    accountIds: List[str] = None,
-    filters: List[FilterTypeDef] = None,
-    fieldsToExport: List[ExportableAutoScalingGroupField] = None,
-    fileFormat: Literal['Csv'] = None,
-    includeMemberAccounts: bool = None
-) -> ExportAutoScalingGroupRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `s3DestinationConfig`:
+  [S3DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationconfigtypedef)
+  *(required)*
+- `accountIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `fieldsToExport`:
+  `List`\[[ExportableAutoScalingGroupField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#exportableautoscalinggroupfield)\]
+- `fileFormat`: `Literal['Csv']`
+- `includeMemberAccounts`: `bool`
+
+Returns
+[ExportAutoScalingGroupRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#exportautoscalinggrouprecommendationsresponsetypedef).
 
 ### export_ec2_instance_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").export_ec2_instance_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").export_ec2_instance_recommendations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
 
-```python
-def export_ec2_instance_recommendations(
-    self,
-    s3DestinationConfig: S3DestinationConfigTypeDef,
-    accountIds: List[str] = None,
-    filters: List[FilterTypeDef] = None,
-    fieldsToExport: List[ExportableInstanceField] = None,
-    fileFormat: Literal['Csv'] = None,
-    includeMemberAccounts: bool = None
-) -> ExportEC2InstanceRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `s3DestinationConfig`:
+  [S3DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationconfigtypedef)
+  *(required)*
+- `accountIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `fieldsToExport`:
+  `List`\[[ExportableInstanceField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#exportableinstancefield)\]
+- `fileFormat`: `Literal['Csv']`
+- `includeMemberAccounts`: `bool`
+
+Returns
+[ExportEC2InstanceRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#exportec2instancerecommendationsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("compute-optimizer").generate_presigned_url` method.
+Type annotations for `boto3.client("compute-optimizer").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url]
+Boto3 documentation:
+[ComputeOptimizer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_auto_scaling_group_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").get_auto_scaling_group_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_auto_scaling_group_recommendations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
 
-```python
-def get_auto_scaling_group_recommendations(
-    self,
-    accountIds: List[str] = None,
-    autoScalingGroupArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> GetAutoScalingGroupRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accountIds`: `List`\[`str`\]
+- `autoScalingGroupArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+
+Returns
+[GetAutoScalingGroupRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getautoscalinggrouprecommendationsresponsetypedef).
 
 ### get_ebs_volume_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").get_ebs_volume_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_ebs_volume_recommendations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
 
-```python
-def get_ebs_volume_recommendations(
-    self,
-    volumeArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[EBSFilterTypeDef] = None,
-    accountIds: List[str] = None
-) -> GetEBSVolumeRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `volumeArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[EBSFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#ebsfiltertypedef)\]
+- `accountIds`: `List`\[`str`\]
+
+Returns
+[GetEBSVolumeRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getebsvolumerecommendationsresponsetypedef).
 
 ### get_ec2_instance_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").get_ec2_instance_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_ec2_instance_recommendations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
 
-```python
-def get_ec2_instance_recommendations(
-    self,
-    instanceArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None,
-    accountIds: List[str] = None
-) -> GetEC2InstanceRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `accountIds`: `List`\[`str`\]
+
+Returns
+[GetEC2InstanceRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getec2instancerecommendationsresponsetypedef).
 
 ### get_ec2_recommendation_projected_metrics
 
-Type annotations for `boto3.client("compute-optimizer").get_ec2_recommendation_projected_metrics` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_ec2_recommendation_projected_metrics`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
 
-```python
-def get_ec2_recommendation_projected_metrics(
-    self,
-    instanceArn: str,
-    stat: MetricStatistic,
-    period: int,
-    startTime: datetime,
-    endTime: datetime
-) -> GetEC2RecommendationProjectedMetricsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceArn`: `str` *(required)*
+- `stat`:
+  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricstatistic)
+  *(required)*
+- `period`: `int` *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+
+Returns
+[GetEC2RecommendationProjectedMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getec2recommendationprojectedmetricsresponsetypedef).
 
 ### get_enrollment_status
 
-Type annotations for `boto3.client("compute-optimizer").get_enrollment_status` method.
+Type annotations for `boto3.client("compute-optimizer").get_enrollment_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
 
-```python
-def get_enrollment_status(
-    self
-) -> GetEnrollmentStatusResponseTypeDef:
-    pass
-```
+Returns
+[GetEnrollmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getenrollmentstatusresponsetypedef).
 
 ### get_lambda_function_recommendations
 
-Type annotations for `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
 
-```python
-def get_lambda_function_recommendations(
-    self,
-    functionArns: List[str] = None,
-    accountIds: List[str] = None,
-    filters: List[LambdaFunctionRecommendationFilterTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetLambdaFunctionRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `functionArns`: `List`\[`str`\]
+- `accountIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[LambdaFunctionRecommendationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionrecommendationfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetLambdaFunctionRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getlambdafunctionrecommendationsresponsetypedef).
 
 ### get_recommendation_summaries
 
-Type annotations for `boto3.client("compute-optimizer").get_recommendation_summaries` method.
+Type annotations for
+`boto3.client("compute-optimizer").get_recommendation_summaries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries]
+Boto3 documentation:
+[ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
 
-```python
-def get_recommendation_summaries(
-    self,
-    accountIds: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetRecommendationSummariesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accountIds`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetRecommendationSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getrecommendationsummariesresponsetypedef).
 
 ### update_enrollment_status
 
-Type annotations for `boto3.client("compute-optimizer").update_enrollment_status` method.
+Type annotations for
+`boto3.client("compute-optimizer").update_enrollment_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status]
+Boto3 documentation:
+[ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
 
-```python
-def update_enrollment_status(
-    self,
-    status: Status,
-    includeMemberAccounts: bool = None
-) -> UpdateEnrollmentStatusResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#status)
+  *(required)*
+- `includeMemberAccounts`: `bool`
 
-
+Returns
+[UpdateEnrollmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#updateenrollmentstatusresponsetypedef).

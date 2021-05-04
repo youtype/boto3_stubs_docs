@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Literals
 
-Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+Auto-generated documentation for
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+type annotations stubs module
+[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [Literals for boto3 PinpointEmail module](#literals-for-boto3-pinpointemail-module)
   - [BehaviorOnMxFailure](#behavioronmxfailure)

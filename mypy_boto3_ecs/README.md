@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ECS
 
-Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+Auto-generated documentation for
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+type annotations stubs module
+[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ```bash
 pip install mypy-boto3-ecs
@@ -20,7 +22,7 @@ pip install mypy-boto3-ecs
 
 ## ECSClient
 
-Type annotations for  `boto3.client("ecs")` as [ECSClient](./client.md)
+Type annotations for `boto3.client("ecs")` as [ECSClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_ecs.client import ECSClient
 ```
 
-
 ECSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_capacity_provider](./client.md#create-capacity-provider)
 - [create_cluster](./client.md#create-cluster)
@@ -91,10 +91,8 @@ ECSClient [exceptions](./client.md#exceptions)
 - [update_service_primary_task_set](./client.md#update-service-primary-task-set)
 - [update_task_set](./client.md#update-task-set)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AttributeLimitExceededException](./client.md#attributelimitexceededexception)
 - [BlockedException](./client.md#blockedexception)
@@ -121,14 +119,10 @@ ECSClient [exceptions](./client.md#exceptions)
 - [UnsupportedFeatureException](./client.md#unsupportedfeatureexception)
 - [UpdateInProgressException](./client.md#updateinprogressexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ecs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ecs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -145,12 +139,10 @@ from mypy_boto3_ecs.paginators import ListAccountSettingsPaginator, ...
 - [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
 - [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("ecs").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("ecs").get_waiter("...")`.
 
 Can be used directly:
 
@@ -162,9 +154,6 @@ from mypy_boto3_ecs.waiters import ServicesInactiveWaiter, ...
 - [ServicesStableWaiter](./waiters.md#servicesstablewaiter)
 - [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
 - [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)
-
-
-
 
 ## Literals
 
@@ -242,13 +231,10 @@ from mypy_boto3_ecs.literals import AgentUpdateStatus, ...
 - [TransportProtocol](./literals.md#transportprotocol)
 - [UlimitName](./literals.md#ulimitname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

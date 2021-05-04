@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticBeanstalk
 
-Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+Auto-generated documentation for
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+type annotations stubs module
+[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ```bash
 pip install mypy-boto3-elasticbeanstalk
@@ -20,7 +22,8 @@ pip install mypy-boto3-elasticbeanstalk
 
 ## ElasticBeanstalkClient
 
-Type annotations for  `boto3.client("elasticbeanstalk")` as [ElasticBeanstalkClient](./client.md)
+Type annotations for `boto3.client("elasticbeanstalk")` as
+[ElasticBeanstalkClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 ```
 
-
 ElasticBeanstalkClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [abort_environment_update](./client.md#abort-environment-update)
 - [apply_environment_managed_action](./client.md#apply-environment-managed-action)
 - [associate_environment_operations_role](./client.md#associate-environment-operations-role)
@@ -86,10 +87,8 @@ ElasticBeanstalkClient [exceptions](./client.md#exceptions)
 - [update_tags_for_resource](./client.md#update-tags-for-resource)
 - [validate_configuration_settings](./client.md#validate-configuration-settings)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CodeBuildNotInServiceRegionException](./client.md#codebuildnotinserviceregionexception)
 - [ElasticBeanstalkServiceException](./client.md#elasticbeanstalkserviceexception)
@@ -111,14 +110,10 @@ ElasticBeanstalkClient [exceptions](./client.md#exceptions)
 - [TooManyPlatformsException](./client.md#toomanyplatformsexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elasticbeanstalk").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elasticbeanstalk").get_paginator("...")`.
 
 Can be used directly:
 
@@ -132,12 +127,10 @@ from mypy_boto3_elasticbeanstalk.paginators import DescribeApplicationVersionsPa
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("elasticbeanstalk").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("elasticbeanstalk").get_waiter("...")`.
 
 Can be used directly:
 
@@ -148,9 +141,6 @@ from mypy_boto3_elasticbeanstalk.waiters import EnvironmentExistsWaiter, ...
 - [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
 - [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
 - [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
-
-
-
 
 ## Literals
 
@@ -190,13 +180,10 @@ from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatus, ...
 - [SourceType](./literals.md#sourcetype)
 - [ValidationSeverity](./literals.md#validationseverity)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

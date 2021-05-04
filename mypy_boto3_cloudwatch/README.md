@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudWatch
 
-Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+Auto-generated documentation for
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+type annotations stubs module
+[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ```bash
 pip install mypy-boto3-cloudwatch
@@ -23,7 +25,8 @@ pip install mypy-boto3-cloudwatch
 
 ## CloudWatchClient
 
-Type annotations for  `boto3.client("cloudwatch")` as [CloudWatchClient](./client.md)
+Type annotations for `boto3.client("cloudwatch")` as
+[CloudWatchClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +34,10 @@ Can be used directly:
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 ```
 
-
 CloudWatchClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_alarms](./client.md#delete-alarms)
 - [delete_anomaly_detector](./client.md#delete-anomaly-detector)
@@ -78,10 +79,8 @@ CloudWatchClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [DashboardInvalidInputError](./client.md#dashboardinvalidinputerror)
@@ -97,19 +96,16 @@ CloudWatchClient [exceptions](./client.md#exceptions)
 - [ResourceNotFound](./client.md#resourcenotfound)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
 ## CloudWatchServiceResource
 
-Type annotations for  `boto3.resource("cloudwatch")` as [CloudWatchServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("cloudwatch")` as
+[CloudWatchServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
 ```
-
 
 ### Collections
 
@@ -124,12 +120,10 @@ from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollecti
 - [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresource.alarms)
 - [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresource.metrics)
 
-
-
-
 ### Resources
 
-Type annotations for additional resources from `boto3.resource("cloudwatch").*`.
+Type annotations for additional resources from
+`boto3.resource("cloudwatch").*`.
 
 Can be used directly:
 
@@ -140,13 +134,10 @@ from mypy_boto3_cloudwatch.service_resource import Alarm, ...
 - [Alarm](./service_resource.md#alarm)
 - [Metric](./service_resource.md#metric)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloudwatch").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloudwatch").get_paginator("...")`.
 
 Can be used directly:
 
@@ -160,12 +151,10 @@ from mypy_boto3_cloudwatch.paginators import DescribeAlarmHistoryPaginator, ...
 - [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
 - [ListMetricsPaginator](./paginators.md#listmetricspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("cloudwatch").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("cloudwatch").get_waiter("...")`.
 
 Can be used directly:
 
@@ -175,9 +164,6 @@ from mypy_boto3_cloudwatch.waiters import AlarmExistsWaiter, ...
 
 - [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
 - [CompositeAlarmExistsWaiter](./waiters.md#compositealarmexistswaiter)
-
-
-
 
 ## Literals
 
@@ -208,13 +194,10 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
 - [Statistic](./literals.md#statistic)
 - [StatusCode](./literals.md#statuscode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Personalize
 
-Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+Auto-generated documentation for
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+type annotations stubs module
+[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ```bash
 pip install mypy-boto3-personalize
@@ -19,7 +21,8 @@ pip install mypy-boto3-personalize
 
 ## PersonalizeClient
 
-Type annotations for  `boto3.client("personalize")` as [PersonalizeClient](./client.md)
+Type annotations for `boto3.client("personalize")` as
+[PersonalizeClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_personalize.client import PersonalizeClient
 ```
 
-
 PersonalizeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_batch_inference_job](./client.md#create-batch-inference-job)
 - [create_campaign](./client.md#create-campaign)
@@ -83,10 +84,8 @@ PersonalizeClient [exceptions](./client.md#exceptions)
 - [list_solutions](./client.md#list-solutions)
 - [update_campaign](./client.md#update-campaign)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidInputException](./client.md#invalidinputexception)
 - [InvalidNextTokenException](./client.md#invalidnexttokenexception)
@@ -95,14 +94,10 @@ PersonalizeClient [exceptions](./client.md#exceptions)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("personalize").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("personalize").get_paginator("...")`.
 
 Can be used directly:
 
@@ -122,11 +117,6 @@ from mypy_boto3_personalize.paginators import ListBatchInferenceJobsPaginator, .
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
 - [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -154,13 +144,10 @@ from mypy_boto3_personalize.literals import IngestionMode, ...
 - [RecipeProvider](./literals.md#recipeprovider)
 - [TrainingMode](./literals.md#trainingmode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

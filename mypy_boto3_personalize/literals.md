@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Personalize](./README.md) > Literals
 
-Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+Auto-generated documentation for
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+type annotations stubs module
+[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Literals for boto3 Personalize module](#literals-for-boto3-personalize-module)
   - [IngestionMode](#ingestionmode)

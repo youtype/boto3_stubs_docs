@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppMesh](./README.md) > Paginators
 
-Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+Auto-generated documentation for
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+type annotations stubs module
+[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Paginators for boto3 AppMesh module](#paginators-for-boto3-appmesh-module)
   - [ListGatewayRoutesPaginator](#listgatewayroutespaginator)
@@ -17,7 +19,8 @@ type annotations stubs module [mypy_boto3_appmesh](https://pypi.org/project/mypy
 
 ## ListGatewayRoutesPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_gateway_routes")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_gateway_routes")`.
 
 Can be used directly:
 
@@ -28,19 +31,20 @@ def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_gateway_routes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
+Boto3 documentation:
+[AppMesh.Paginator.ListGatewayRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
 
-```python
-class ListGatewayRoutesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        virtualGatewayName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGatewayRoutesOutputTypeDef]:
-        pass
-```
+Arguments for `ListGatewayRoutesPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListGatewayRoutesPaginator.paginate` returns
+`Iterator`\[[ListGatewayRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listgatewayroutesoutputtypedef)\].
+
 ## ListMeshesPaginator
 
 Type annotations for `boto3.client("appmesh").get_paginator("list_meshes")`.
@@ -54,16 +58,17 @@ def get_list_meshes_paginator() -> ListMeshesPaginator:
     return boto3.client("appmesh").get_paginator("list_meshes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
+Boto3 documentation:
+[AppMesh.Paginator.ListMeshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
 
-```python
-class ListMeshesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMeshesOutputTypeDef]:
-        pass
-```
+Arguments for `ListMeshesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListMeshesPaginator.paginate` returns
+`Iterator`\[[ListMeshesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listmeshesoutputtypedef)\].
+
 ## ListRoutesPaginator
 
 Type annotations for `boto3.client("appmesh").get_paginator("list_routes")`.
@@ -77,22 +82,24 @@ def get_list_routes_paginator() -> ListRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_routes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
+Boto3 documentation:
+[AppMesh.Paginator.ListRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
 
-```python
-class ListRoutesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        virtualRouterName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRoutesOutputTypeDef]:
-        pass
-```
+Arguments for `ListRoutesPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListRoutesPaginator.paginate` returns
+`Iterator`\[[ListRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listroutesoutputtypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -103,20 +110,22 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
+Boto3 documentation:
+[AppMesh.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        resourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceOutputTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `resourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listtagsforresourceoutputtypedef)\].
+
 ## ListVirtualGatewaysPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_gateways")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_virtual_gateways")`.
 
 Can be used directly:
 
@@ -127,21 +136,23 @@ def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
+Boto3 documentation:
+[AppMesh.Paginator.ListVirtualGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
 
-```python
-class ListVirtualGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVirtualGatewaysOutputTypeDef]:
-        pass
-```
+Arguments for `ListVirtualGatewaysPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListVirtualGatewaysPaginator.paginate` returns
+`Iterator`\[[ListVirtualGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualgatewaysoutputtypedef)\].
+
 ## ListVirtualNodesPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_nodes")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_virtual_nodes")`.
 
 Can be used directly:
 
@@ -152,21 +163,23 @@ def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
+Boto3 documentation:
+[AppMesh.Paginator.ListVirtualNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
 
-```python
-class ListVirtualNodesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVirtualNodesOutputTypeDef]:
-        pass
-```
+Arguments for `ListVirtualNodesPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListVirtualNodesPaginator.paginate` returns
+`Iterator`\[[ListVirtualNodesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualnodesoutputtypedef)\].
+
 ## ListVirtualRoutersPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_routers")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_virtual_routers")`.
 
 Can be used directly:
 
@@ -177,21 +190,23 @@ def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_routers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
+Boto3 documentation:
+[AppMesh.Paginator.ListVirtualRouters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
 
-```python
-class ListVirtualRoutersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVirtualRoutersOutputTypeDef]:
-        pass
-```
+Arguments for `ListVirtualRoutersPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListVirtualRoutersPaginator.paginate` returns
+`Iterator`\[[ListVirtualRoutersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualroutersoutputtypedef)\].
+
 ## ListVirtualServicesPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_services")`.
+Type annotations for
+`boto3.client("appmesh").get_paginator("list_virtual_services")`.
 
 Can be used directly:
 
@@ -202,15 +217,15 @@ def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_services")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
+Boto3 documentation:
+[AppMesh.Paginator.ListVirtualServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
 
-```python
-class ListVirtualServicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        meshName: str,
-        meshOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVirtualServicesOutputTypeDef]:
-        pass
-```
+Arguments for `ListVirtualServicesPaginator.paginate` method:
+
+- `meshName`: `str` *(required)*
+- `meshOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+
+`ListVirtualServicesPaginator.paginate` returns
+`Iterator`\[[ListVirtualServicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualservicesoutputtypedef)\].

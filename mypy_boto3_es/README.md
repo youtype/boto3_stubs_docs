@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticsearchService
 
-Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
-type annotations stubs module [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
+Auto-generated documentation for
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+type annotations stubs module
+[mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
 ```bash
 pip install mypy-boto3-es
@@ -19,7 +21,8 @@ pip install mypy-boto3-es
 
 ## ElasticsearchServiceClient
 
-Type annotations for  `boto3.client("es")` as [ElasticsearchServiceClient](./client.md)
+Type annotations for `boto3.client("es")` as
+[ElasticsearchServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_es.client import ElasticsearchServiceClient
 ```
 
-
 ElasticsearchServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_inbound_cross_cluster_search_connection](./client.md#accept-inbound-cross-cluster-search-connection)
 - [add_tags](./client.md#add-tags)
 - [associate_package](./client.md#associate-package)
@@ -77,10 +78,8 @@ ElasticsearchServiceClient [exceptions](./client.md#exceptions)
 - [update_package](./client.md#update-package)
 - [upgrade_elasticsearch_domain](./client.md#upgrade-elasticsearch-domain)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BaseException](./client.md#baseexception)
 - [ClientError](./client.md#clienterror)
@@ -94,14 +93,10 @@ ElasticsearchServiceClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("es").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("es").get_paginator("...")`.
 
 Can be used directly:
 
@@ -114,11 +109,6 @@ from mypy_boto3_es.paginators import DescribeReservedElasticsearchInstanceOfferi
 - [GetUpgradeHistoryPaginator](./paginators.md#getupgradehistorypaginator)
 - [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
 - [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -159,13 +149,10 @@ from mypy_boto3_es.literals import AutoTuneDesiredState, ...
 - [UpgradeStep](./literals.md#upgradestep)
 - [VolumeType](./literals.md#volumetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

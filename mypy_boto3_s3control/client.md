@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3Control](./README.md) > S3ControlClient
 
-Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+Auto-generated documentation for
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+type annotations stubs module
+[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [S3ControlClient for boto3 S3Control module](#s3controlclient-for-boto3-s3control-module)
   - [S3ControlClient](#s3controlclient)
@@ -75,12 +77,13 @@ def get_s3control_client() -> S3ControlClient:
     return boto3.client("s3control")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
+Boto3 documentation:
+[S3Control.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_s3control.client import Exceptions
@@ -88,7 +91,6 @@ from mypy_boto3_s3control.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -106,821 +108,818 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("s3control").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate]
+Boto3 documentation:
+[S3Control.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_access_point
 
 Type annotations for `boto3.client("s3control").create_access_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point]
+Boto3 documentation:
+[S3Control.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point)
 
-```python
-def create_access_point(
-    self,
-    AccountId: str,
-    Name: str,
-    Bucket: str,
-    VpcConfiguration: "VpcConfigurationTypeDef" = None,
-    PublicAccessBlockConfiguration: "PublicAccessBlockConfigurationTypeDef" = None
-) -> CreateAccessPointResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#vpcconfigurationtypedef)
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+
+Returns
+[CreateAccessPointResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createaccesspointresulttypedef).
 
 ### create_access_point_for_object_lambda
 
-Type annotations for `boto3.client("s3control").create_access_point_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").create_access_point_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.create_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
 
-```python
-def create_access_point_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str,
-    Configuration: "ObjectLambdaConfigurationTypeDef"
-) -> CreateAccessPointForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Configuration`:
+  [ObjectLambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaconfigurationtypedef)
+  *(required)*
+
+Returns
+[CreateAccessPointForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createaccesspointforobjectlambdaresulttypedef).
 
 ### create_bucket
 
 Type annotations for `boto3.client("s3control").create_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket]
+Boto3 documentation:
+[S3Control.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket)
 
-```python
-def create_bucket(
-    self,
-    Bucket: str,
-    ACL: BucketCannedACL = None,
-    CreateBucketConfiguration: CreateBucketConfigurationTypeDef = None,
-    GrantFullControl: str = None,
-    GrantRead: str = None,
-    GrantReadACP: str = None,
-    GrantWrite: str = None,
-    GrantWriteACP: str = None,
-    ObjectLockEnabledForBucket: bool = None,
-    OutpostId: str = None
-) -> CreateBucketResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Bucket`: `str` *(required)*
+- `ACL`:
+  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#bucketcannedacl)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+- `OutpostId`: `str`
+
+Returns
+[CreateBucketResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createbucketresulttypedef).
 
 ### create_job
 
 Type annotations for `boto3.client("s3control").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job]
+Boto3 documentation:
+[S3Control.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job)
 
-```python
-def create_job(
-    self,
-    AccountId: str,
-    Operation: "JobOperationTypeDef",
-    Report: "JobReportTypeDef",
-    ClientRequestToken: str,
-    Manifest: "JobManifestTypeDef",
-    Priority: int,
-    RoleArn: str,
-    ConfirmationRequired: bool = None,
-    Description: str = None,
-    Tags: List["S3TagTypeDef"] = None
-) -> CreateJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Operation`:
+  [JobOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#joboperationtypedef)
+  *(required)*
+- `Report`:
+  [JobReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobreporttypedef)
+  *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Manifest`:
+  [JobManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobmanifesttypedef)
+  *(required)*
+- `Priority`: `int` *(required)*
+- `RoleArn`: `str` *(required)*
+- `ConfirmationRequired`: `bool`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
+
+Returns
+[CreateJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createjobresulttypedef).
 
 ### delete_access_point
 
 Type annotations for `boto3.client("s3control").delete_access_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point]
+Boto3 documentation:
+[S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
 
-```python
-def delete_access_point(
-    self,
-    AccountId: str,
-    Name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
 
 ### delete_access_point_for_object_lambda
 
-Type annotations for `boto3.client("s3control").delete_access_point_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").delete_access_point_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
 
-```python
-def delete_access_point_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
 
 ### delete_access_point_policy
 
-Type annotations for `boto3.client("s3control").delete_access_point_policy` method.
+Type annotations for `boto3.client("s3control").delete_access_point_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy]
+Boto3 documentation:
+[S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
 
-```python
-def delete_access_point_policy(
-    self,
-    AccountId: str,
-    Name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
 
 ### delete_access_point_policy_for_object_lambda
 
-Type annotations for `boto3.client("s3control").delete_access_point_policy_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").delete_access_point_policy_for_object_lambda`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
 
-```python
-def delete_access_point_policy_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
 
 ### delete_bucket
 
 Type annotations for `boto3.client("s3control").delete_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket]
+Boto3 documentation:
+[S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
 
-```python
-def delete_bucket(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
 
 ### delete_bucket_lifecycle_configuration
 
-Type annotations for `boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
+Type annotations for
+`boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration]
+Boto3 documentation:
+[S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
 
-```python
-def delete_bucket_lifecycle_configuration(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
 
 ### delete_bucket_policy
 
 Type annotations for `boto3.client("s3control").delete_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy]
+Boto3 documentation:
+[S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
 
-```python
-def delete_bucket_policy(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
 
 ### delete_bucket_tagging
 
 Type annotations for `boto3.client("s3control").delete_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging]
+Boto3 documentation:
+[S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
 
-```python
-def delete_bucket_tagging(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
 
 ### delete_job_tagging
 
 Type annotations for `boto3.client("s3control").delete_job_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging]
+Boto3 documentation:
+[S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
 
-```python
-def delete_job_tagging(
-    self,
-    AccountId: str,
-    JobId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_public_access_block
 
-Type annotations for `boto3.client("s3control").delete_public_access_block` method.
+Type annotations for `boto3.client("s3control").delete_public_access_block`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block]
+Boto3 documentation:
+[S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
 
-```python
-def delete_public_access_block(
-    self,
-    AccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
 
 ### delete_storage_lens_configuration
 
-Type annotations for `boto3.client("s3control").delete_storage_lens_configuration` method.
+Type annotations for
+`boto3.client("s3control").delete_storage_lens_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration]
+Boto3 documentation:
+[S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
 
-```python
-def delete_storage_lens_configuration(
-    self,
-    ConfigId: str,
-    AccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
 
 ### delete_storage_lens_configuration_tagging
 
-Type annotations for `boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
+Type annotations for
+`boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging]
+Boto3 documentation:
+[S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
 
-```python
-def delete_storage_lens_configuration_tagging(
-    self,
-    ConfigId: str,
-    AccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_job
 
 Type annotations for `boto3.client("s3control").describe_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job]
+Boto3 documentation:
+[S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
 
-```python
-def describe_job(
-    self,
-    AccountId: str,
-    JobId: str
-) -> DescribeJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#describejobresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("s3control").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url]
+Boto3 documentation:
+[S3Control.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_access_point
 
 Type annotations for `boto3.client("s3control").get_access_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point]
+Boto3 documentation:
+[S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
 
-```python
-def get_access_point(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointresulttypedef).
 
 ### get_access_point_configuration_for_object_lambda
 
-Type annotations for `boto3.client("s3control").get_access_point_configuration_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").get_access_point_configuration_for_object_lambda`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
 
-```python
-def get_access_point_configuration_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointConfigurationForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointConfigurationForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointconfigurationforobjectlambdaresulttypedef).
 
 ### get_access_point_for_object_lambda
 
-Type annotations for `boto3.client("s3control").get_access_point_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").get_access_point_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
 
-```python
-def get_access_point_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointforobjectlambdaresulttypedef).
 
 ### get_access_point_policy
 
-Type annotations for `boto3.client("s3control").get_access_point_policy` method.
+Type annotations for `boto3.client("s3control").get_access_point_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy]
+Boto3 documentation:
+[S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
 
-```python
-def get_access_point_policy(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicyresulttypedef).
 
 ### get_access_point_policy_for_object_lambda
 
-Type annotations for `boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
 
-```python
-def get_access_point_policy_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointPolicyForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointPolicyForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicyforobjectlambdaresulttypedef).
 
 ### get_access_point_policy_status
 
-Type annotations for `boto3.client("s3control").get_access_point_policy_status` method.
+Type annotations for `boto3.client("s3control").get_access_point_policy_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status]
+Boto3 documentation:
+[S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
 
-```python
-def get_access_point_policy_status(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointPolicyStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointPolicyStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicystatusresulttypedef).
 
 ### get_access_point_policy_status_for_object_lambda
 
-Type annotations for `boto3.client("s3control").get_access_point_policy_status_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").get_access_point_policy_status_for_object_lambda`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
 
-```python
-def get_access_point_policy_status_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str
-) -> GetAccessPointPolicyStatusForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicystatusforobjectlambdaresulttypedef).
 
 ### get_bucket
 
 Type annotations for `boto3.client("s3control").get_bucket` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket]
+Boto3 documentation:
+[S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
 
-```python
-def get_bucket(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> GetBucketResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+
+Returns
+[GetBucketResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketresulttypedef).
 
 ### get_bucket_lifecycle_configuration
 
-Type annotations for `boto3.client("s3control").get_bucket_lifecycle_configuration` method.
+Type annotations for
+`boto3.client("s3control").get_bucket_lifecycle_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration]
+Boto3 documentation:
+[S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
 
-```python
-def get_bucket_lifecycle_configuration(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> GetBucketLifecycleConfigurationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+
+Returns
+[GetBucketLifecycleConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketlifecycleconfigurationresulttypedef).
 
 ### get_bucket_policy
 
 Type annotations for `boto3.client("s3control").get_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy]
+Boto3 documentation:
+[S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
 
-```python
-def get_bucket_policy(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> GetBucketPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+
+Returns
+[GetBucketPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketpolicyresulttypedef).
 
 ### get_bucket_tagging
 
 Type annotations for `boto3.client("s3control").get_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging]
+Boto3 documentation:
+[S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
 
-```python
-def get_bucket_tagging(
-    self,
-    AccountId: str,
-    Bucket: str
-) -> GetBucketTaggingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+
+Returns
+[GetBucketTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbuckettaggingresulttypedef).
 
 ### get_job_tagging
 
 Type annotations for `boto3.client("s3control").get_job_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging]
+Boto3 documentation:
+[S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
 
-```python
-def get_job_tagging(
-    self,
-    AccountId: str,
-    JobId: str
-) -> GetJobTaggingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[GetJobTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getjobtaggingresulttypedef).
 
 ### get_public_access_block
 
-Type annotations for `boto3.client("s3control").get_public_access_block` method.
+Type annotations for `boto3.client("s3control").get_public_access_block`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block]
+Boto3 documentation:
+[S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
 
-```python
-def get_public_access_block(
-    self,
-    AccountId: str
-) -> GetPublicAccessBlockOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetPublicAccessBlockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getpublicaccessblockoutputtypedef).
 
 ### get_storage_lens_configuration
 
-Type annotations for `boto3.client("s3control").get_storage_lens_configuration` method.
+Type annotations for `boto3.client("s3control").get_storage_lens_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration]
+Boto3 documentation:
+[S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
 
-```python
-def get_storage_lens_configuration(
-    self,
-    ConfigId: str,
-    AccountId: str
-) -> GetStorageLensConfigurationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetStorageLensConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getstoragelensconfigurationresulttypedef).
 
 ### get_storage_lens_configuration_tagging
 
-Type annotations for `boto3.client("s3control").get_storage_lens_configuration_tagging` method.
+Type annotations for
+`boto3.client("s3control").get_storage_lens_configuration_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging]
+Boto3 documentation:
+[S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
 
-```python
-def get_storage_lens_configuration_tagging(
-    self,
-    ConfigId: str,
-    AccountId: str
-) -> GetStorageLensConfigurationTaggingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetStorageLensConfigurationTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getstoragelensconfigurationtaggingresulttypedef).
 
 ### list_access_points
 
 Type annotations for `boto3.client("s3control").list_access_points` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points]
+Boto3 documentation:
+[S3Control.Client.list_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)
 
-```python
-def list_access_points(
-    self,
-    AccountId: str,
-    Bucket: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccessPointsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccessPointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listaccesspointsresulttypedef).
 
 ### list_access_points_for_object_lambda
 
-Type annotations for `boto3.client("s3control").list_access_points_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").list_access_points_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.list_access_points_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
 
-```python
-def list_access_points_for_object_lambda(
-    self,
-    AccountId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccessPointsForObjectLambdaResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccessPointsForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listaccesspointsforobjectlambdaresulttypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("s3control").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs]
+Boto3 documentation:
+[S3Control.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    AccountId: str,
-    JobStatuses: List[JobStatus] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListJobsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobStatuses`:
+  `List`\[[JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobstatus)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listjobsresulttypedef).
 
 ### list_regional_buckets
 
 Type annotations for `boto3.client("s3control").list_regional_buckets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets]
+Boto3 documentation:
+[S3Control.Client.list_regional_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
 
-```python
-def list_regional_buckets(
-    self,
-    AccountId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    OutpostId: str = None
-) -> ListRegionalBucketsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `OutpostId`: `str`
+
+Returns
+[ListRegionalBucketsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listregionalbucketsresulttypedef).
 
 ### list_storage_lens_configurations
 
-Type annotations for `boto3.client("s3control").list_storage_lens_configurations` method.
+Type annotations for
+`boto3.client("s3control").list_storage_lens_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations]
+Boto3 documentation:
+[S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
 
-```python
-def list_storage_lens_configurations(
-    self,
-    AccountId: str,
-    NextToken: str = None
-) -> ListStorageLensConfigurationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListStorageLensConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#liststoragelensconfigurationsresulttypedef).
 
 ### put_access_point_configuration_for_object_lambda
 
-Type annotations for `boto3.client("s3control").put_access_point_configuration_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").put_access_point_configuration_for_object_lambda`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.put_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
 
-```python
-def put_access_point_configuration_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str,
-    Configuration: "ObjectLambdaConfigurationTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Configuration`:
+  [ObjectLambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaconfigurationtypedef)
+  *(required)*
 
 ### put_access_point_policy
 
-Type annotations for `boto3.client("s3control").put_access_point_policy` method.
+Type annotations for `boto3.client("s3control").put_access_point_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy]
+Boto3 documentation:
+[S3Control.Client.put_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
 
-```python
-def put_access_point_policy(
-    self,
-    AccountId: str,
-    Name: str,
-    Policy: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Policy`: `str` *(required)*
 
 ### put_access_point_policy_for_object_lambda
 
-Type annotations for `boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
+Type annotations for
+`boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda]
+Boto3 documentation:
+[S3Control.Client.put_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
 
-```python
-def put_access_point_policy_for_object_lambda(
-    self,
-    AccountId: str,
-    Name: str,
-    Policy: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Policy`: `str` *(required)*
 
 ### put_bucket_lifecycle_configuration
 
-Type annotations for `boto3.client("s3control").put_bucket_lifecycle_configuration` method.
+Type annotations for
+`boto3.client("s3control").put_bucket_lifecycle_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration]
+Boto3 documentation:
+[S3Control.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
 
-```python
-def put_bucket_lifecycle_configuration(
-    self,
-    AccountId: str,
-    Bucket: str,
-    LifecycleConfiguration: LifecycleConfigurationTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+- `LifecycleConfiguration`:
+  [LifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleconfigurationtypedef)
 
 ### put_bucket_policy
 
 Type annotations for `boto3.client("s3control").put_bucket_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy]
+Boto3 documentation:
+[S3Control.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
 
-```python
-def put_bucket_policy(
-    self,
-    AccountId: str,
-    Bucket: str,
-    Policy: str,
-    ConfirmRemoveSelfBucketAccess: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+- `Policy`: `str` *(required)*
+- `ConfirmRemoveSelfBucketAccess`: `bool`
 
 ### put_bucket_tagging
 
 Type annotations for `boto3.client("s3control").put_bucket_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging]
+Boto3 documentation:
+[S3Control.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
 
-```python
-def put_bucket_tagging(
-    self,
-    AccountId: str,
-    Bucket: str,
-    Tagging: TaggingTypeDef
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `Bucket`: `str` *(required)*
+- `Tagging`:
+  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#taggingtypedef)
+  *(required)*
 
 ### put_job_tagging
 
 Type annotations for `boto3.client("s3control").put_job_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging]
+Boto3 documentation:
+[S3Control.Client.put_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging)
 
-```python
-def put_job_tagging(
-    self,
-    AccountId: str,
-    JobId: str,
-    Tags: List["S3TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+- `Tags`:
+  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_public_access_block
 
-Type annotations for `boto3.client("s3control").put_public_access_block` method.
+Type annotations for `boto3.client("s3control").put_public_access_block`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block]
+Boto3 documentation:
+[S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
 
-```python
-def put_public_access_block(
-    self,
-    PublicAccessBlockConfiguration: "PublicAccessBlockConfigurationTypeDef",
-    AccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+  *(required)*
+- `AccountId`: `str` *(required)*
 
 ### put_storage_lens_configuration
 
-Type annotations for `boto3.client("s3control").put_storage_lens_configuration` method.
+Type annotations for `boto3.client("s3control").put_storage_lens_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration]
+Boto3 documentation:
+[S3Control.Client.put_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
 
-```python
-def put_storage_lens_configuration(
-    self,
-    ConfigId: str,
-    AccountId: str,
-    StorageLensConfiguration: "StorageLensConfigurationTypeDef",
-    Tags: List["StorageLensTagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `StorageLensConfiguration`:
+  [StorageLensConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensconfigurationtypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelenstagtypedef)\]
 
 ### put_storage_lens_configuration_tagging
 
-Type annotations for `boto3.client("s3control").put_storage_lens_configuration_tagging` method.
+Type annotations for
+`boto3.client("s3control").put_storage_lens_configuration_tagging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging]
+Boto3 documentation:
+[S3Control.Client.put_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
 
-```python
-def put_storage_lens_configuration_tagging(
-    self,
-    ConfigId: str,
-    AccountId: str,
-    Tags: List["StorageLensTagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigId`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelenstagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_job_priority
 
 Type annotations for `boto3.client("s3control").update_job_priority` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority]
+Boto3 documentation:
+[S3Control.Client.update_job_priority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority)
 
-```python
-def update_job_priority(
-    self,
-    AccountId: str,
-    JobId: str,
-    Priority: int
-) -> UpdateJobPriorityResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+- `Priority`: `int` *(required)*
+
+Returns
+[UpdateJobPriorityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#updatejobpriorityresulttypedef).
 
 ### update_job_status
 
 Type annotations for `boto3.client("s3control").update_job_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status]
+Boto3 documentation:
+[S3Control.Client.update_job_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status)
 
-```python
-def update_job_status(
-    self,
-    AccountId: str,
-    JobId: str,
-    RequestedJobStatus: RequestedJobStatus,
-    StatusUpdateReason: str = None
-) -> UpdateJobStatusResultTypeDef:
-    pass
-```
+Arguments:
 
+- `AccountId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+- `RequestedJobStatus`:
+  [RequestedJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#requestedjobstatus)
+  *(required)*
+- `StatusUpdateReason`: `str`
 
+Returns
+[UpdateJobStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#updatejobstatusresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("s3control").get_paginator` method with overloads.
+Type annotations for `boto3.client("s3control").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_access_points_for_object_lambda")` -> [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
-
-
+- `client.get_paginator("list_access_points_for_object_lambda")` ->
+  [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)

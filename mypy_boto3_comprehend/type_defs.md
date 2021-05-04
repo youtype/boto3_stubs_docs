@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Comprehend](./README.md) > Structures
 
-Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
-type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+Auto-generated documentation for
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+type annotations stubs module
+[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Typed dictionaries for boto3 Comprehend module](#typed-dictionaries-for-boto3-comprehend-module)
   - [AugmentedManifestsListItemTypeDef](#augmentedmanifestslistitemtypedef)
@@ -125,13 +127,10 @@ type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/m
 from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
-- `AttributeNames`: `List[str]`
-
-
-
+- `AttributeNames`: `List`\[`str`\]
 
 ## BatchDetectDominantLanguageItemResultTypeDef
 
@@ -139,13 +138,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageItemResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Index`: `int`
-- `Languages`: `List["DominantLanguageTypeDef"]`
 
+- `Index`: `int`
+- `Languages`:
+  `List`\[[DominantLanguageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagetypedef)\]
 
 ## BatchDetectDominantLanguageResponseTypeDef
 
@@ -153,13 +150,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageResponseTypeDef
 ```
 
-
 Required fields:
-- `ResultList`: `List["BatchDetectDominantLanguageItemResultTypeDef"]`
-- `ErrorList`: `List["BatchItemErrorTypeDef"]`
 
-
-
+- `ResultList`:
+  `List`\[[BatchDetectDominantLanguageItemResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectdominantlanguageitemresulttypedef)\]
+- `ErrorList`:
+  `List`\[[BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchitemerrortypedef)\]
 
 ## BatchDetectEntitiesItemResultTypeDef
 
@@ -167,13 +163,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesItemResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Index`: `int`
-- `Entities`: `List["EntityTypeDef"]`
 
+- `Index`: `int`
+- `Entities`:
+  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitytypedef)\]
 
 ## BatchDetectEntitiesResponseTypeDef
 
@@ -181,13 +175,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesResponseTypeDef
 ```
 
-
 Required fields:
-- `ResultList`: `List["BatchDetectEntitiesItemResultTypeDef"]`
-- `ErrorList`: `List["BatchItemErrorTypeDef"]`
 
-
-
+- `ResultList`:
+  `List`\[[BatchDetectEntitiesItemResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectentitiesitemresulttypedef)\]
+- `ErrorList`:
+  `List`\[[BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchitemerrortypedef)\]
 
 ## BatchDetectKeyPhrasesItemResultTypeDef
 
@@ -195,13 +188,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesItemResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Index`: `int`
-- `KeyPhrases`: `List["KeyPhraseTypeDef"]`
 
+- `Index`: `int`
+- `KeyPhrases`:
+  `List`\[[KeyPhraseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasetypedef)\]
 
 ## BatchDetectKeyPhrasesResponseTypeDef
 
@@ -209,13 +200,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesResponseTypeDef
 ```
 
-
 Required fields:
-- `ResultList`: `List["BatchDetectKeyPhrasesItemResultTypeDef"]`
-- `ErrorList`: `List["BatchItemErrorTypeDef"]`
 
-
-
+- `ResultList`:
+  `List`\[[BatchDetectKeyPhrasesItemResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectkeyphrasesitemresulttypedef)\]
+- `ErrorList`:
+  `List`\[[BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchitemerrortypedef)\]
 
 ## BatchDetectSentimentItemResultTypeDef
 
@@ -223,14 +213,13 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectSentimentItemResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Index`: `int`
-- `Sentiment`: `SentimentType`
-- `SentimentScore`: `"SentimentScoreTypeDef"`
 
+- `Index`: `int`
+- `Sentiment`:
+  [SentimentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#sentimenttype)
+- `SentimentScore`:
+  [SentimentScoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentscoretypedef)
 
 ## BatchDetectSentimentResponseTypeDef
 
@@ -238,13 +227,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectSentimentResponseTypeDef
 ```
 
-
 Required fields:
-- `ResultList`: `List["BatchDetectSentimentItemResultTypeDef"]`
-- `ErrorList`: `List["BatchItemErrorTypeDef"]`
 
-
-
+- `ResultList`:
+  `List`\[[BatchDetectSentimentItemResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectsentimentitemresulttypedef)\]
+- `ErrorList`:
+  `List`\[[BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchitemerrortypedef)\]
 
 ## BatchDetectSyntaxItemResultTypeDef
 
@@ -252,13 +240,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxItemResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Index`: `int`
-- `SyntaxTokens`: `List["SyntaxTokenTypeDef"]`
 
+- `Index`: `int`
+- `SyntaxTokens`:
+  `List`\[[SyntaxTokenTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#syntaxtokentypedef)\]
 
 ## BatchDetectSyntaxResponseTypeDef
 
@@ -266,13 +252,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxResponseTypeDef
 ```
 
-
 Required fields:
-- `ResultList`: `List["BatchDetectSyntaxItemResultTypeDef"]`
-- `ErrorList`: `List["BatchItemErrorTypeDef"]`
 
-
-
+- `ResultList`:
+  `List`\[[BatchDetectSyntaxItemResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchdetectsyntaxitemresulttypedef)\]
+- `ErrorList`:
+  `List`\[[BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#batchitemerrortypedef)\]
 
 ## BatchItemErrorTypeDef
 
@@ -280,14 +265,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import BatchItemErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Index`: `int`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## ClassifierEvaluationMetricsTypeDef
 
@@ -295,10 +277,8 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ClassifierEvaluationMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Accuracy`: `float`
 - `Precision`: `float`
 - `Recall`: `float`
@@ -308,22 +288,19 @@ Optional fields:
 - `MicroF1Score`: `float`
 - `HammingLoss`: `float`
 
-
 ## ClassifierMetadataTypeDef
 
 ```python
 from mypy_boto3_comprehend.type_defs import ClassifierMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NumberOfLabels`: `int`
 - `NumberOfTrainedDocuments`: `int`
 - `NumberOfTestDocuments`: `int`
-- `EvaluationMetrics`: `"ClassifierEvaluationMetricsTypeDef"`
-
+- `EvaluationMetrics`:
+  [ClassifierEvaluationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#classifierevaluationmetricstypedef)
 
 ## ClassifyDocumentResponseTypeDef
 
@@ -331,13 +308,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ClassifyDocumentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Classes`: `List["DocumentClassTypeDef"]`
-- `Labels`: `List["DocumentLabelTypeDef"]`
 
+- `Classes`:
+  `List`\[[DocumentClassTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclasstypedef)\]
+- `Labels`:
+  `List`\[[DocumentLabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentlabeltypedef)\]
 
 ## ContainsPiiEntitiesResponseTypeDef
 
@@ -345,12 +321,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ContainsPiiEntitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Labels`: `List["EntityLabelTypeDef"]`
 
+- `Labels`:
+  `List`\[[EntityLabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitylabeltypedef)\]
 
 ## CreateDocumentClassifierResponseTypeDef
 
@@ -358,12 +332,9 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import CreateDocumentClassifierResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentClassifierArn`: `str`
 
+- `DocumentClassifierArn`: `str`
 
 ## CreateEndpointResponseTypeDef
 
@@ -371,12 +342,9 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import CreateEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointArn`: `str`
 
+- `EndpointArn`: `str`
 
 ## CreateEntityRecognizerResponseTypeDef
 
@@ -384,12 +352,9 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import CreateEntityRecognizerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EntityRecognizerArn`: `str`
 
+- `EntityRecognizerArn`: `str`
 
 ## DescribeDocumentClassificationJobResponseTypeDef
 
@@ -397,12 +362,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeDocumentClassificationJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentClassificationJobProperties`: `"DocumentClassificationJobPropertiesTypeDef"`
 
+- `DocumentClassificationJobProperties`:
+  [DocumentClassificationJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassificationjobpropertiestypedef)
 
 ## DescribeDocumentClassifierResponseTypeDef
 
@@ -410,12 +373,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeDocumentClassifierResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentClassifierProperties`: `"DocumentClassifierPropertiesTypeDef"`
 
+- `DocumentClassifierProperties`:
+  [DocumentClassifierPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierpropertiestypedef)
 
 ## DescribeDominantLanguageDetectionJobResponseTypeDef
 
@@ -423,12 +384,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeDominantLanguageDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DominantLanguageDetectionJobProperties`: `"DominantLanguageDetectionJobPropertiesTypeDef"`
 
+- `DominantLanguageDetectionJobProperties`:
+  [DominantLanguageDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagedetectionjobpropertiestypedef)
 
 ## DescribeEndpointResponseTypeDef
 
@@ -436,12 +395,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointProperties`: `"EndpointPropertiesTypeDef"`
 
+- `EndpointProperties`:
+  [EndpointPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#endpointpropertiestypedef)
 
 ## DescribeEntitiesDetectionJobResponseTypeDef
 
@@ -449,12 +406,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EntitiesDetectionJobProperties`: `"EntitiesDetectionJobPropertiesTypeDef"`
 
+- `EntitiesDetectionJobProperties`:
+  [EntitiesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitiesdetectionjobpropertiestypedef)
 
 ## DescribeEntityRecognizerResponseTypeDef
 
@@ -462,12 +417,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeEntityRecognizerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EntityRecognizerProperties`: `"EntityRecognizerPropertiesTypeDef"`
 
+- `EntityRecognizerProperties`:
+  [EntityRecognizerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerpropertiestypedef)
 
 ## DescribeEventsDetectionJobResponseTypeDef
 
@@ -475,12 +428,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeEventsDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventsDetectionJobProperties`: `"EventsDetectionJobPropertiesTypeDef"`
 
+- `EventsDetectionJobProperties`:
+  [EventsDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#eventsdetectionjobpropertiestypedef)
 
 ## DescribeKeyPhrasesDetectionJobResponseTypeDef
 
@@ -488,12 +439,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeKeyPhrasesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyPhrasesDetectionJobProperties`: `"KeyPhrasesDetectionJobPropertiesTypeDef"`
 
+- `KeyPhrasesDetectionJobProperties`:
+  [KeyPhrasesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasesdetectionjobpropertiestypedef)
 
 ## DescribePiiEntitiesDetectionJobResponseTypeDef
 
@@ -501,12 +450,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribePiiEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PiiEntitiesDetectionJobProperties`: `"PiiEntitiesDetectionJobPropertiesTypeDef"`
 
+- `PiiEntitiesDetectionJobProperties`:
+  [PiiEntitiesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#piientitiesdetectionjobpropertiestypedef)
 
 ## DescribeSentimentDetectionJobResponseTypeDef
 
@@ -514,12 +461,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeSentimentDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SentimentDetectionJobProperties`: `"SentimentDetectionJobPropertiesTypeDef"`
 
+- `SentimentDetectionJobProperties`:
+  [SentimentDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentdetectionjobpropertiestypedef)
 
 ## DescribeTopicsDetectionJobResponseTypeDef
 
@@ -527,12 +472,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DescribeTopicsDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TopicsDetectionJobProperties`: `"TopicsDetectionJobPropertiesTypeDef"`
 
+- `TopicsDetectionJobProperties`:
+  [TopicsDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#topicsdetectionjobpropertiestypedef)
 
 ## DetectDominantLanguageResponseTypeDef
 
@@ -540,12 +483,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectDominantLanguageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Languages`: `List["DominantLanguageTypeDef"]`
 
+- `Languages`:
+  `List`\[[DominantLanguageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagetypedef)\]
 
 ## DetectEntitiesResponseTypeDef
 
@@ -553,12 +494,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectEntitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entities`: `List["EntityTypeDef"]`
 
+- `Entities`:
+  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitytypedef)\]
 
 ## DetectKeyPhrasesResponseTypeDef
 
@@ -566,12 +505,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectKeyPhrasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyPhrases`: `List["KeyPhraseTypeDef"]`
 
+- `KeyPhrases`:
+  `List`\[[KeyPhraseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasetypedef)\]
 
 ## DetectPiiEntitiesResponseTypeDef
 
@@ -579,12 +516,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectPiiEntitiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entities`: `List["PiiEntityTypeDef"]`
 
+- `Entities`:
+  `List`\[[PiiEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#piientitytypedef)\]
 
 ## DetectSentimentResponseTypeDef
 
@@ -592,13 +527,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectSentimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Sentiment`: `SentimentType`
-- `SentimentScore`: `"SentimentScoreTypeDef"`
 
+- `Sentiment`:
+  [SentimentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#sentimenttype)
+- `SentimentScore`:
+  [SentimentScoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentscoretypedef)
 
 ## DetectSyntaxResponseTypeDef
 
@@ -606,12 +540,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DetectSyntaxResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SyntaxTokens`: `List["SyntaxTokenTypeDef"]`
 
+- `SyntaxTokens`:
+  `List`\[[SyntaxTokenTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#syntaxtokentypedef)\]
 
 ## DocumentClassTypeDef
 
@@ -619,13 +551,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Score`: `float`
-
 
 ## DocumentClassificationJobFilterTypeDef
 
@@ -633,15 +562,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassificationJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## DocumentClassificationJobPropertiesTypeDef
 
@@ -649,23 +576,24 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassificationJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
 - `DocumentClassifierArn`: `str`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## DocumentClassifierFilterTypeDef
 
@@ -673,14 +601,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassifierFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `ModelStatus`
+
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#modelstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## DocumentClassifierInputDataConfigTypeDef
 
@@ -688,15 +614,14 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassifierInputDataConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DataFormat`: `DocumentClassifierDataFormat`
+
+- `DataFormat`:
+  [DocumentClassifierDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#documentclassifierdataformat)
 - `S3Uri`: `str`
 - `LabelDelimiter`: `str`
-- `AugmentedManifests`: `List["AugmentedManifestsListItemTypeDef"]`
-
+- `AugmentedManifests`:
+  `List`\[[AugmentedManifestsListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#augmentedmanifestslistitemtypedef)\]
 
 ## DocumentClassifierOutputDataConfigTypeDef
 
@@ -704,13 +629,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassifierOutputDataConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `S3Uri`: `str`
 - `KmsKeyId`: `str`
-
 
 ## DocumentClassifierPropertiesTypeDef
 
@@ -718,27 +640,31 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentClassifierPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DocumentClassifierArn`: `str`
-- `LanguageCode`: `LanguageCode`
-- `Status`: `ModelStatus`
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#modelstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
 - `TrainingStartTime`: `datetime`
 - `TrainingEndTime`: `datetime`
-- `InputDataConfig`: `"DocumentClassifierInputDataConfigTypeDef"`
-- `OutputDataConfig`: `"DocumentClassifierOutputDataConfigTypeDef"`
-- `ClassifierMetadata`: `"ClassifierMetadataTypeDef"`
+- `InputDataConfig`:
+  [DocumentClassifierInputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierinputdataconfigtypedef)
+- `OutputDataConfig`:
+  [DocumentClassifierOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifieroutputdataconfigtypedef)
+- `ClassifierMetadata`:
+  [ClassifierMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#classifiermetadatatypedef)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-- `Mode`: `DocumentClassifierMode`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
+- `Mode`:
+  [DocumentClassifierMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#documentclassifiermode)
 - `ModelKmsKeyId`: `str`
-
 
 ## DocumentLabelTypeDef
 
@@ -746,13 +672,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DocumentLabelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Score`: `float`
-
 
 ## DominantLanguageDetectionJobFilterTypeDef
 
@@ -760,15 +683,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DominantLanguageDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## DominantLanguageDetectionJobPropertiesTypeDef
 
@@ -776,22 +697,23 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DominantLanguageDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## DominantLanguageTypeDef
 
@@ -799,13 +721,10 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import DominantLanguageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LanguageCode`: `str`
 - `Score`: `float`
-
 
 ## EndpointFilterTypeDef
 
@@ -813,15 +732,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EndpointFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelArn`: `str`
-- `Status`: `EndpointStatus`
+- `Status`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#endpointstatus)
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
-
 
 ## EndpointPropertiesTypeDef
 
@@ -829,12 +746,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EndpointPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EndpointArn`: `str`
-- `Status`: `EndpointStatus`
+- `Status`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#endpointstatus)
 - `Message`: `str`
 - `ModelArn`: `str`
 - `DesiredInferenceUnits`: `int`
@@ -843,22 +759,19 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `DataAccessRoleArn`: `str`
 
-
 ## EntitiesDetectionJobFilterTypeDef
 
 ```python
 from mypy_boto3_comprehend.type_defs import EntitiesDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## EntitiesDetectionJobPropertiesTypeDef
 
@@ -866,24 +779,26 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntitiesDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
 - `EntityRecognizerArn`: `str`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `LanguageCode`: `LanguageCode`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## EntityLabelTypeDef
 
@@ -891,13 +806,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityLabelTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `PiiEntityType`
-- `Score`: `float`
 
+- `Name`:
+  [PiiEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitytype)
+- `Score`: `float`
 
 ## EntityRecognizerAnnotationsTypeDef
 
@@ -905,12 +818,9 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerAnnotationsTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
-
-
-
 
 ## EntityRecognizerDocumentsTypeDef
 
@@ -918,12 +828,9 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerDocumentsTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
-
-
-
 
 ## EntityRecognizerEntityListTypeDef
 
@@ -931,12 +838,9 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerEntityListTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
-
-
-
 
 ## EntityRecognizerEvaluationMetricsTypeDef
 
@@ -944,14 +848,11 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerEvaluationMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Precision`: `float`
 - `Recall`: `float`
 - `F1Score`: `float`
-
 
 ## EntityRecognizerFilterTypeDef
 
@@ -959,14 +860,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `ModelStatus`
+
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#modelstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## EntityRecognizerInputDataConfigTypeDef
 
@@ -974,19 +873,23 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerInputDataConfigTypeDef
 ```
 
-
 Required fields:
-- `EntityTypes`: `List["EntityTypesListItemTypeDef"]`
 
-
+- `EntityTypes`:
+  `List`\[[EntityTypesListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitytypeslistitemtypedef)\]
 
 Optional fields:
-- `DataFormat`: `EntityRecognizerDataFormat`
-- `Documents`: `"EntityRecognizerDocumentsTypeDef"`
-- `Annotations`: `"EntityRecognizerAnnotationsTypeDef"`
-- `EntityList`: `"EntityRecognizerEntityListTypeDef"`
-- `AugmentedManifests`: `List["AugmentedManifestsListItemTypeDef"]`
 
+- `DataFormat`:
+  [EntityRecognizerDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#entityrecognizerdataformat)
+- `Documents`:
+  [EntityRecognizerDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerdocumentstypedef)
+- `Annotations`:
+  [EntityRecognizerAnnotationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerannotationstypedef)
+- `EntityList`:
+  [EntityRecognizerEntityListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerentitylisttypedef)
+- `AugmentedManifests`:
+  `List`\[[AugmentedManifestsListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#augmentedmanifestslistitemtypedef)\]
 
 ## EntityRecognizerMetadataEntityTypesListItemTypeDef
 
@@ -994,14 +897,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerMetadataEntityTypesListItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `str`
-- `EvaluationMetrics`: `"EntityTypesEvaluationMetricsTypeDef"`
-- `NumberOfTrainMentions`: `int`
 
+- `Type`: `str`
+- `EvaluationMetrics`:
+  [EntityTypesEvaluationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitytypesevaluationmetricstypedef)
+- `NumberOfTrainMentions`: `int`
 
 ## EntityRecognizerMetadataTypeDef
 
@@ -1009,15 +910,14 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NumberOfTrainedDocuments`: `int`
 - `NumberOfTestDocuments`: `int`
-- `EvaluationMetrics`: `"EntityRecognizerEvaluationMetricsTypeDef"`
-- `EntityTypes`: `List["EntityRecognizerMetadataEntityTypesListItemTypeDef"]`
-
+- `EvaluationMetrics`:
+  [EntityRecognizerEvaluationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerevaluationmetricstypedef)
+- `EntityTypes`:
+  `List`\[[EntityRecognizerMetadataEntityTypesListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizermetadataentitytypeslistitemtypedef)\]
 
 ## EntityRecognizerPropertiesTypeDef
 
@@ -1025,25 +925,27 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityRecognizerPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EntityRecognizerArn`: `str`
-- `LanguageCode`: `LanguageCode`
-- `Status`: `ModelStatus`
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#modelstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
 - `TrainingStartTime`: `datetime`
 - `TrainingEndTime`: `datetime`
-- `InputDataConfig`: `"EntityRecognizerInputDataConfigTypeDef"`
-- `RecognizerMetadata`: `"EntityRecognizerMetadataTypeDef"`
+- `InputDataConfig`:
+  [EntityRecognizerInputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerinputdataconfigtypedef)
+- `RecognizerMetadata`:
+  [EntityRecognizerMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizermetadatatypedef)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
-
 
 ## EntityTypeDef
 
@@ -1051,16 +953,14 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Score`: `float`
-- `Type`: `EntityType`
+- `Type`:
+  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#entitytype)
 - `Text`: `str`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
-
 
 ## EntityTypesEvaluationMetricsTypeDef
 
@@ -1068,14 +968,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityTypesEvaluationMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Precision`: `float`
 - `Recall`: `float`
 - `F1Score`: `float`
-
 
 ## EntityTypesListItemTypeDef
 
@@ -1083,12 +980,9 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EntityTypesListItemTypeDef
 ```
 
-
 Required fields:
+
 - `Type`: `str`
-
-
-
 
 ## EventsDetectionJobFilterTypeDef
 
@@ -1096,15 +990,13 @@ Required fields:
 from mypy_boto3_comprehend.type_defs import EventsDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## EventsDetectionJobPropertiesTypeDef
 
@@ -1112,22 +1004,23 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import EventsDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `LanguageCode`: `LanguageCode`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
 - `DataAccessRoleArn`: `str`
-- `TargetEventTypes`: `List[str]`
-
+- `TargetEventTypes`: `List`\[`str`\]
 
 ## InputDataConfigTypeDef
 
@@ -1135,15 +1028,14 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import InputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `InputFormat`: `InputFormat`
 
+- `InputFormat`:
+  [InputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#inputformat)
 
 ## KeyPhraseTypeDef
 
@@ -1151,15 +1043,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import KeyPhraseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Score`: `float`
 - `Text`: `str`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
-
 
 ## KeyPhrasesDetectionJobFilterTypeDef
 
@@ -1167,15 +1056,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import KeyPhrasesDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## KeyPhrasesDetectionJobPropertiesTypeDef
 
@@ -1183,23 +1070,25 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import KeyPhrasesDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `LanguageCode`: `LanguageCode`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## ListDocumentClassificationJobsResponseTypeDef
 
@@ -1207,13 +1096,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListDocumentClassificationJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentClassificationJobPropertiesList`: `List["DocumentClassificationJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `DocumentClassificationJobPropertiesList`:
+  `List`\[[DocumentClassificationJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassificationjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListDocumentClassifiersResponseTypeDef
 
@@ -1221,13 +1108,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListDocumentClassifiersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentClassifierPropertiesList`: `List["DocumentClassifierPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `DocumentClassifierPropertiesList`:
+  `List`\[[DocumentClassifierPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListDominantLanguageDetectionJobsResponseTypeDef
 
@@ -1235,13 +1120,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListDominantLanguageDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DominantLanguageDetectionJobPropertiesList`: `List["DominantLanguageDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `DominantLanguageDetectionJobPropertiesList`:
+  `List`\[[DominantLanguageDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagedetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListEndpointsResponseTypeDef
 
@@ -1249,13 +1132,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListEndpointsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointPropertiesList`: `List["EndpointPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `EndpointPropertiesList`:
+  `List`\[[EndpointPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#endpointpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListEntitiesDetectionJobsResponseTypeDef
 
@@ -1263,13 +1144,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListEntitiesDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EntitiesDetectionJobPropertiesList`: `List["EntitiesDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `EntitiesDetectionJobPropertiesList`:
+  `List`\[[EntitiesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitiesdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListEntityRecognizersResponseTypeDef
 
@@ -1277,13 +1156,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListEntityRecognizersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EntityRecognizerPropertiesList`: `List["EntityRecognizerPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `EntityRecognizerPropertiesList`:
+  `List`\[[EntityRecognizerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListEventsDetectionJobsResponseTypeDef
 
@@ -1291,13 +1168,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListEventsDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventsDetectionJobPropertiesList`: `List["EventsDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `EventsDetectionJobPropertiesList`:
+  `List`\[[EventsDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#eventsdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListKeyPhrasesDetectionJobsResponseTypeDef
 
@@ -1305,13 +1180,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListKeyPhrasesDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyPhrasesDetectionJobPropertiesList`: `List["KeyPhrasesDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `KeyPhrasesDetectionJobPropertiesList`:
+  `List`\[[KeyPhrasesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasesdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListPiiEntitiesDetectionJobsResponseTypeDef
 
@@ -1319,13 +1192,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListPiiEntitiesDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PiiEntitiesDetectionJobPropertiesList`: `List["PiiEntitiesDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `PiiEntitiesDetectionJobPropertiesList`:
+  `List`\[[PiiEntitiesDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#piientitiesdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListSentimentDetectionJobsResponseTypeDef
 
@@ -1333,13 +1204,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListSentimentDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SentimentDetectionJobPropertiesList`: `List["SentimentDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `SentimentDetectionJobPropertiesList`:
+  `List`\[[SentimentDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1347,13 +1216,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceArn`: `str`
-- `Tags`: `List["TagTypeDef"]`
 
+- `ResourceArn`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#tagtypedef)\]
 
 ## ListTopicsDetectionJobsResponseTypeDef
 
@@ -1361,13 +1228,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import ListTopicsDetectionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TopicsDetectionJobPropertiesList`: `List["TopicsDetectionJobPropertiesTypeDef"]`
-- `NextToken`: `str`
 
+- `TopicsDetectionJobPropertiesList`:
+  `List`\[[TopicsDetectionJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#topicsdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
 
 ## OutputDataConfigTypeDef
 
@@ -1375,15 +1240,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import OutputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -1391,14 +1254,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PartOfSpeechTagTypeDef
 
@@ -1406,13 +1266,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PartOfSpeechTagTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tag`: `PartOfSpeechTagType`
-- `Score`: `float`
 
+- `Tag`:
+  [PartOfSpeechTagType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#partofspeechtagtype)
+- `Score`: `float`
 
 ## PiiEntitiesDetectionJobFilterTypeDef
 
@@ -1420,15 +1278,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PiiEntitiesDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## PiiEntitiesDetectionJobPropertiesTypeDef
 
@@ -1436,23 +1292,26 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PiiEntitiesDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"PiiOutputDataConfigTypeDef"`
-- `RedactionConfig`: `"RedactionConfigTypeDef"`
-- `LanguageCode`: `LanguageCode`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [PiiOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#piioutputdataconfigtypedef)
+- `RedactionConfig`:
+  [RedactionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#redactionconfigtypedef)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
 - `DataAccessRoleArn`: `str`
-- `Mode`: `PiiEntitiesDetectionMode`
-
+- `Mode`:
+  [PiiEntitiesDetectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitiesdetectionmode)
 
 ## PiiEntityTypeDef
 
@@ -1460,15 +1319,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PiiEntityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Score`: `float`
-- `Type`: `PiiEntityType`
+- `Type`:
+  [PiiEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitytype)
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
-
 
 ## PiiOutputDataConfigTypeDef
 
@@ -1476,15 +1333,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import PiiOutputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## RedactionConfigTypeDef
 
@@ -1492,14 +1347,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import RedactionConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PiiEntityTypes`: `List[PiiEntityType]`
-- `MaskMode`: `PiiEntitiesDetectionMaskMode`
-- `MaskCharacter`: `str`
 
+- `PiiEntityTypes`:
+  `List`\[[PiiEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitytype)\]
+- `MaskMode`:
+  [PiiEntitiesDetectionMaskMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#piientitiesdetectionmaskmode)
+- `MaskCharacter`: `str`
 
 ## SentimentDetectionJobFilterTypeDef
 
@@ -1507,15 +1361,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import SentimentDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## SentimentDetectionJobPropertiesTypeDef
 
@@ -1523,23 +1375,25 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import SentimentDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `LanguageCode`: `LanguageCode`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#languagecode)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## SentimentScoreTypeDef
 
@@ -1547,15 +1401,12 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import SentimentScoreTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Positive`: `float`
 - `Negative`: `float`
 - `Neutral`: `float`
 - `Mixed`: `float`
-
 
 ## StartDocumentClassificationJobResponseTypeDef
 
@@ -1563,13 +1414,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartDominantLanguageDetectionJobResponseTypeDef
 
@@ -1577,13 +1426,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartEntitiesDetectionJobResponseTypeDef
 
@@ -1591,13 +1438,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartEventsDetectionJobResponseTypeDef
 
@@ -1605,13 +1450,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
@@ -1619,13 +1462,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartPiiEntitiesDetectionJobResponseTypeDef
 
@@ -1633,13 +1474,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartSentimentDetectionJobResponseTypeDef
 
@@ -1647,13 +1486,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StartTopicsDetectionJobResponseTypeDef
 
@@ -1661,13 +1498,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopDominantLanguageDetectionJobResponseTypeDef
 
@@ -1675,13 +1510,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopEntitiesDetectionJobResponseTypeDef
 
@@ -1689,13 +1522,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopEventsDetectionJobResponseTypeDef
 
@@ -1703,13 +1534,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopKeyPhrasesDetectionJobResponseTypeDef
 
@@ -1717,13 +1546,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopPiiEntitiesDetectionJobResponseTypeDef
 
@@ -1731,13 +1558,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## StopSentimentDetectionJobResponseTypeDef
 
@@ -1745,13 +1570,11 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `JobStatus`: `JobStatus`
 
+- `JobId`: `str`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 
 ## SyntaxTokenTypeDef
 
@@ -1759,16 +1582,14 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import SyntaxTokenTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TokenId`: `int`
 - `Text`: `str`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
-- `PartOfSpeech`: `"PartOfSpeechTagTypeDef"`
-
+- `PartOfSpeech`:
+  [PartOfSpeechTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#partofspeechtagtypedef)
 
 ## TagTypeDef
 
@@ -1776,15 +1597,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## TopicsDetectionJobFilterTypeDef
 
@@ -1792,15 +1611,13 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import TopicsDetectionJobFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
-
 
 ## TopicsDetectionJobPropertiesTypeDef
 
@@ -1808,23 +1625,24 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import TopicsDetectionJobPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/literals.html#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#outputdataconfigtypedef)
 - `NumberOfTopics`: `int`
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#vpcconfigtypedef)
 
 ## VpcConfigTypeDef
 
@@ -1832,10 +1650,7 @@ Optional fields:
 from mypy_boto3_comprehend.type_defs import VpcConfigTypeDef
 ```
 
-
 Required fields:
-- `SecurityGroupIds`: `List[str]`
-- `Subnets`: `List[str]`
 
-
-
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Subnets`: `List`\[`str`\]

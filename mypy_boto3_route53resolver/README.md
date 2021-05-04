@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Route53Resolver
 
-Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+Auto-generated documentation for
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+type annotations stubs module
+[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ```bash
 pip install mypy-boto3-route53resolver
@@ -19,7 +21,8 @@ pip install mypy-boto3-route53resolver
 
 ## Route53ResolverClient
 
-Type annotations for  `boto3.client("route53resolver")` as [Route53ResolverClient](./client.md)
+Type annotations for `boto3.client("route53resolver")` as
+[Route53ResolverClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_route53resolver.client import Route53ResolverClient
 ```
 
-
 Route53ResolverClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_firewall_rule_group](./client.md#associate-firewall-rule-group)
 - [associate_resolver_endpoint_ip_address](./client.md#associate-resolver-endpoint-ip-address)
 - [associate_resolver_query_log_config](./client.md#associate-resolver-query-log-config)
@@ -97,10 +98,8 @@ Route53ResolverClient [exceptions](./client.md#exceptions)
 - [update_resolver_endpoint](./client.md#update-resolver-endpoint)
 - [update_resolver_rule](./client.md#update-resolver-rule)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -119,14 +118,10 @@ Route53ResolverClient [exceptions](./client.md#exceptions)
 - [UnknownResourceException](./client.md#unknownresourceexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("route53resolver").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("route53resolver").get_paginator("...")`.
 
 Can be used directly:
 
@@ -148,11 +143,6 @@ from mypy_boto3_route53resolver.paginators import ListFirewallConfigsPaginator, 
 - [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
 - [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -202,13 +192,10 @@ from mypy_boto3_route53resolver.literals import Action, ...
 - [SortOrder](./literals.md#sortorder)
 - [Validation](./literals.md#validation)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

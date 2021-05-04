@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTSecureTunneling
 
-Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
-type annotations stubs module [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+Auto-generated documentation for
+[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+type annotations stubs module
+[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 ```bash
 pip install mypy-boto3-iotsecuretunneling
@@ -18,7 +20,8 @@ pip install mypy-boto3-iotsecuretunneling
 
 ## IoTSecureTunnelingClient
 
-Type annotations for  `boto3.client("iotsecuretunneling")` as [IoTSecureTunnelingClient](./client.md)
+Type annotations for `boto3.client("iotsecuretunneling")` as
+[IoTSecureTunnelingClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 ```
 
-
 IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [close_tunnel](./client.md#close-tunnel)
 - [describe_tunnel](./client.md#describe-tunnel)
@@ -42,22 +43,11 @@ IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -72,13 +62,10 @@ from mypy_boto3_iotsecuretunneling.literals import ConnectionStatus, ...
 - [ConnectionStatus](./literals.md#connectionstatus)
 - [TunnelStatus](./literals.md#tunnelstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

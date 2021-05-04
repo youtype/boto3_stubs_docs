@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ComprehendMedical
 
-Auto-generated documentation for [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
-type annotations stubs module [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
+Auto-generated documentation for
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+type annotations stubs module
+[mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 ```bash
 pip install mypy-boto3-comprehendmedical
@@ -18,7 +20,8 @@ pip install mypy-boto3-comprehendmedical
 
 ## ComprehendMedicalClient
 
-Type annotations for  `boto3.client("comprehendmedical")` as [ComprehendMedicalClient](./client.md)
+Type annotations for `boto3.client("comprehendmedical")` as
+[ComprehendMedicalClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 ```
 
-
 ComprehendMedicalClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_entities_detection_v2_job](./client.md#describe-entities-detection-v2-job)
 - [describe_icd10_cm_inference_job](./client.md#describe-icd10-cm-inference-job)
@@ -56,10 +57,8 @@ ComprehendMedicalClient [exceptions](./client.md#exceptions)
 - [stop_phi_detection_job](./client.md#stop-phi-detection-job)
 - [stop_rx_norm_inference_job](./client.md#stop-rx-norm-inference-job)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [InvalidEncodingException](./client.md#invalidencodingexception)
@@ -69,15 +68,6 @@ ComprehendMedicalClient [exceptions](./client.md#exceptions)
 - [TextSizeLimitExceededException](./client.md#textsizelimitexceededexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -105,13 +95,10 @@ from mypy_boto3_comprehendmedical.literals import AttributeName, ...
 - [RxNormEntityType](./literals.md#rxnormentitytype)
 - [RxNormTraitName](./literals.md#rxnormtraitname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

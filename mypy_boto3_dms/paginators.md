@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DatabaseMigrationService](./README.md) > Paginators
 
-Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+Auto-generated documentation for
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+type annotations stubs module
+[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [Paginators for boto3 DatabaseMigrationService module](#paginators-for-boto3-databasemigrationservice-module)
   - [DescribeCertificatesPaginator](#describecertificatespaginator)
@@ -22,7 +24,8 @@ type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-bot
 
 ## DescribeCertificatesPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_certificates")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_certificates")`.
 
 Can be used directly:
 
@@ -33,20 +36,23 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("dms").get_paginator("describe_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
 
-```python
-class DescribeCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCertificatesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeCertificatesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCertificatesPaginator.paginate` returns
+`Iterator`\[[DescribeCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describecertificatesresponsetypedef)\].
+
 ## DescribeConnectionsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_connections")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_connections")`.
 
 Can be used directly:
 
@@ -57,20 +63,23 @@ def get_describe_connections_paginator() -> DescribeConnectionsPaginator:
     return boto3.client("dms").get_paginator("describe_connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
 
-```python
-class DescribeConnectionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeConnectionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeConnectionsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeConnectionsPaginator.paginate` returns
+`Iterator`\[[DescribeConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeconnectionsresponsetypedef)\].
+
 ## DescribeEndpointTypesPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_endpoint_types")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_endpoint_types")`.
 
 Can be used directly:
 
@@ -81,17 +90,19 @@ def get_describe_endpoint_types_paginator() -> DescribeEndpointTypesPaginator:
     return boto3.client("dms").get_paginator("describe_endpoint_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeEndpointTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
 
-```python
-class DescribeEndpointTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEndpointTypesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEndpointTypesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEndpointTypesPaginator.paginate` returns
+`Iterator`\[[DescribeEndpointTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeendpointtypesresponsetypedef)\].
+
 ## DescribeEndpointsPaginator
 
 Type annotations for `boto3.client("dms").get_paginator("describe_endpoints")`.
@@ -105,20 +116,23 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return boto3.client("dms").get_paginator("describe_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
 
-```python
-class DescribeEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEndpointsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEndpointsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEndpointsPaginator.paginate` returns
+`Iterator`\[[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeendpointsresponsetypedef)\].
+
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_event_subscriptions")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_event_subscriptions")`.
 
 Can be used directly:
 
@@ -129,18 +143,20 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("dms").get_paginator("describe_event_subscriptions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
 
-```python
-class DescribeEventSubscriptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SubscriptionName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventSubscriptionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+
+- `SubscriptionName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventSubscriptionsPaginator.paginate` returns
+`Iterator`\[[DescribeEventSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeeventsubscriptionsresponsetypedef)\].
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("dms").get_paginator("describe_events")`.
@@ -154,26 +170,29 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("dms").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SourceIdentifier: str = None,
-        SourceType: Literal['replication-instance'] = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Duration: int = None,
-        EventCategories: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `SourceIdentifier`: `str`
+- `SourceType`: `Literal['replication-instance']`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `EventCategories`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeeventsresponsetypedef)\].
+
 ## DescribeOrderableReplicationInstancesPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_orderable_replication_instances")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_orderable_replication_instances")`.
 
 Can be used directly:
 
@@ -184,19 +203,21 @@ def get_describe_orderable_replication_instances_paginator() -> DescribeOrderabl
     return boto3.client("dms").get_paginator("describe_orderable_replication_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
 
-```python
-class DescribeOrderableReplicationInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeOrderableReplicationInstancesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeOrderableReplicationInstancesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeOrderableReplicationInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeOrderableReplicationInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeorderablereplicationinstancesresponsetypedef)\].
+
 ## DescribeReplicationInstancesPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_replication_instances")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_replication_instances")`.
 
 Can be used directly:
 
@@ -207,20 +228,23 @@ def get_describe_replication_instances_paginator() -> DescribeReplicationInstanc
     return boto3.client("dms").get_paginator("describe_replication_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
 
-```python
-class DescribeReplicationInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReplicationInstancesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeReplicationInstancesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplicationInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeReplicationInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationinstancesresponsetypedef)\].
+
 ## DescribeReplicationSubnetGroupsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_replication_subnet_groups")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_replication_subnet_groups")`.
 
 Can be used directly:
 
@@ -231,20 +255,23 @@ def get_describe_replication_subnet_groups_paginator() -> DescribeReplicationSub
     return boto3.client("dms").get_paginator("describe_replication_subnet_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
 
-```python
-class DescribeReplicationSubnetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReplicationSubnetGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeReplicationSubnetGroupsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplicationSubnetGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeReplicationSubnetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationsubnetgroupsresponsetypedef)\].
+
 ## DescribeReplicationTaskAssessmentResultsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_replication_task_assessment_results")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_replication_task_assessment_results")`.
 
 Can be used directly:
 
@@ -255,20 +282,23 @@ def get_describe_replication_task_assessment_results_paginator() -> DescribeRepl
     return boto3.client("dms").get_paginator("describe_replication_task_assessment_results")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
 
-```python
-class DescribeReplicationTaskAssessmentResultsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReplicationTaskArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReplicationTaskAssessmentResultsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeReplicationTaskAssessmentResultsPaginator.paginate`
+method:
+
+- `ReplicationTaskArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplicationTaskAssessmentResultsPaginator.paginate` returns
+`Iterator`\[[DescribeReplicationTaskAssessmentResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtaskassessmentresultsresponsetypedef)\].
+
 ## DescribeReplicationTasksPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_replication_tasks")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_replication_tasks")`.
 
 Can be used directly:
 
@@ -279,18 +309,20 @@ def get_describe_replication_tasks_paginator() -> DescribeReplicationTasksPagina
     return boto3.client("dms").get_paginator("describe_replication_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeReplicationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
 
-```python
-class DescribeReplicationTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        WithoutSettings: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReplicationTasksResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeReplicationTasksPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `WithoutSettings`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplicationTasksPaginator.paginate` returns
+`Iterator`\[[DescribeReplicationTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtasksresponsetypedef)\].
+
 ## DescribeSchemasPaginator
 
 Type annotations for `boto3.client("dms").get_paginator("describe_schemas")`.
@@ -304,20 +336,22 @@ def get_describe_schemas_paginator() -> DescribeSchemasPaginator:
     return boto3.client("dms").get_paginator("describe_schemas")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
 
-```python
-class DescribeSchemasPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        EndpointArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSchemasResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeSchemasPaginator.paginate` method:
+
+- `EndpointArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSchemasPaginator.paginate` returns
+`Iterator`\[[DescribeSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeschemasresponsetypedef)\].
+
 ## DescribeTableStatisticsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_table_statistics")`.
+Type annotations for
+`boto3.client("dms").get_paginator("describe_table_statistics")`.
 
 Can be used directly:
 
@@ -328,15 +362,16 @@ def get_describe_table_statistics_paginator() -> DescribeTableStatisticsPaginato
     return boto3.client("dms").get_paginator("describe_table_statistics")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
+Boto3 documentation:
+[DatabaseMigrationService.Paginator.DescribeTableStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
 
-```python
-class DescribeTableStatisticsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReplicationTaskArn: str,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTableStatisticsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeTableStatisticsPaginator.paginate` method:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTableStatisticsPaginator.paginate` returns
+`Iterator`\[[DescribeTableStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describetablestatisticsresponsetypedef)\].

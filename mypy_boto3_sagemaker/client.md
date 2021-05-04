@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SageMaker](./README.md) > SageMakerClient
 
-Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
-type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+Auto-generated documentation for
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+type annotations stubs module
+[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [SageMakerClient for boto3 SageMaker module](#sagemakerclient-for-boto3-sagemaker-module)
   - [SageMakerClient](#sagemakerclient)
@@ -260,12 +262,13 @@ def get_sagemaker_client() -> SageMakerClient:
     return boto3.client("sagemaker")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client)
+Boto3 documentation:
+[SageMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sagemaker.client import Exceptions
@@ -273,7 +276,6 @@ from mypy_boto3_sagemaker.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -283,4112 +285,4501 @@ Exceptions:
 - `Exceptions.ResourceLimitExceeded`
 - `Exceptions.ResourceNotFound`
 
-
 ## Methods
-
 
 ### add_association
 
 Type annotations for `boto3.client("sagemaker").add_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association]
+Boto3 documentation:
+[SageMaker.Client.add_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association)
 
-```python
-def add_association(
-    self,
-    SourceArn: str,
-    DestinationArn: str,
-    AssociationType: AssociationEdgeType = None
-) -> AddAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceArn`: `str` *(required)*
+- `DestinationArn`: `str` *(required)*
+- `AssociationType`:
+  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
+
+Returns
+[AddAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#addassociationresponsetypedef).
 
 ### add_tags
 
 Type annotations for `boto3.client("sagemaker").add_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags]
+Boto3 documentation:
+[SageMaker.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags)
 
-```python
-def add_tags(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> AddTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns
+[AddTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#addtagsoutputtypedef).
 
 ### associate_trial_component
 
-Type annotations for `boto3.client("sagemaker").associate_trial_component` method.
+Type annotations for `boto3.client("sagemaker").associate_trial_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.associate_trial_component]
+Boto3 documentation:
+[SageMaker.Client.associate_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.associate_trial_component)
 
-```python
-def associate_trial_component(
-    self,
-    TrialComponentName: str,
-    TrialName: str
-) -> AssociateTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+- `TrialName`: `str` *(required)*
+
+Returns
+[AssociateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#associatetrialcomponentresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("sagemaker").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.can_paginate]
+Boto3 documentation:
+[SageMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_action
 
 Type annotations for `boto3.client("sagemaker").create_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action]
+Boto3 documentation:
+[SageMaker.Client.create_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action)
 
-```python
-def create_action(
-    self,
-    ActionName: str,
-    Source: "ActionSourceTypeDef",
-    ActionType: str,
-    Description: str = None,
-    Status: ActionStatus = None,
-    Properties: Dict[str, str] = None,
-    MetadataProperties: "MetadataPropertiesTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionName`: `str` *(required)*
+- `Source`:
+  [ActionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#actionsourcetypedef)
+  *(required)*
+- `ActionType`: `str` *(required)*
+- `Description`: `str`
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
+- `Properties`: `Dict`\[`str`, `str`\]
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createactionresponsetypedef).
 
 ### create_algorithm
 
 Type annotations for `boto3.client("sagemaker").create_algorithm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm]
+Boto3 documentation:
+[SageMaker.Client.create_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm)
 
-```python
-def create_algorithm(
-    self,
-    AlgorithmName: str,
-    TrainingSpecification: "TrainingSpecificationTypeDef",
-    AlgorithmDescription: str = None,
-    InferenceSpecification: "InferenceSpecificationTypeDef" = None,
-    ValidationSpecification: "AlgorithmValidationSpecificationTypeDef" = None,
-    CertifyForMarketplace: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAlgorithmOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AlgorithmName`: `str` *(required)*
+- `TrainingSpecification`:
+  [TrainingSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingspecificationtypedef)
+  *(required)*
+- `AlgorithmDescription`: `str`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+- `ValidationSpecification`:
+  [AlgorithmValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmvalidationspecificationtypedef)
+- `CertifyForMarketplace`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAlgorithmOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createalgorithmoutputtypedef).
 
 ### create_app
 
 Type annotations for `boto3.client("sagemaker").create_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app]
+Boto3 documentation:
+[SageMaker.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app)
 
-```python
-def create_app(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    AppType: AppType,
-    AppName: str,
-    Tags: List["TagTypeDef"] = None,
-    ResourceSpec: "ResourceSpecTypeDef" = None
-) -> CreateAppResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `AppType`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
+  *(required)*
+- `AppName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ResourceSpec`:
+  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
+
+Returns
+[CreateAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createappresponsetypedef).
 
 ### create_app_image_config
 
-Type annotations for `boto3.client("sagemaker").create_app_image_config` method.
+Type annotations for `boto3.client("sagemaker").create_app_image_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config]
+Boto3 documentation:
+[SageMaker.Client.create_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config)
 
-```python
-def create_app_image_config(
-    self,
-    AppImageConfigName: str,
-    Tags: List["TagTypeDef"] = None,
-    KernelGatewayImageConfig: "KernelGatewayImageConfigTypeDef" = None
-) -> CreateAppImageConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppImageConfigName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `KernelGatewayImageConfig`:
+  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
+
+Returns
+[CreateAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createappimageconfigresponsetypedef).
 
 ### create_artifact
 
 Type annotations for `boto3.client("sagemaker").create_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact]
+Boto3 documentation:
+[SageMaker.Client.create_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact)
 
-```python
-def create_artifact(
-    self,
-    Source: "ArtifactSourceTypeDef",
-    ArtifactType: str,
-    ArtifactName: str = None,
-    Properties: Dict[str, str] = None,
-    MetadataProperties: "MetadataPropertiesTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateArtifactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Source`:
+  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
+  *(required)*
+- `ArtifactType`: `str` *(required)*
+- `ArtifactName`: `str`
+- `Properties`: `Dict`\[`str`, `str`\]
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createartifactresponsetypedef).
 
 ### create_auto_ml_job
 
 Type annotations for `boto3.client("sagemaker").create_auto_ml_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job]
+Boto3 documentation:
+[SageMaker.Client.create_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
 
-```python
-def create_auto_ml_job(
-    self,
-    AutoMLJobName: str,
-    InputDataConfig: List["AutoMLChannelTypeDef"],
-    OutputDataConfig: "AutoMLOutputDataConfigTypeDef",
-    RoleArn: str,
-    ProblemType: ProblemType = None,
-    AutoMLJobObjective: "AutoMLJobObjectiveTypeDef" = None,
-    AutoMLJobConfig: "AutoMLJobConfigTypeDef" = None,
-    GenerateCandidateDefinitionsOnly: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAutoMLJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoMLJobName`: `str` *(required)*
+- `InputDataConfig`:
+  `List`\[[AutoMLChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlchanneltypedef)\]
+  *(required)*
+- `OutputDataConfig`:
+  [AutoMLOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automloutputdataconfigtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ProblemType`:
+  [ProblemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#problemtype)
+- `AutoMLJobObjective`:
+  [AutoMLJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobobjectivetypedef)
+- `AutoMLJobConfig`:
+  [AutoMLJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobconfigtypedef)
+- `GenerateCandidateDefinitionsOnly`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createautomljobresponsetypedef).
 
 ### create_code_repository
 
 Type annotations for `boto3.client("sagemaker").create_code_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository]
+Boto3 documentation:
+[SageMaker.Client.create_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository)
 
-```python
-def create_code_repository(
-    self,
-    CodeRepositoryName: str,
-    GitConfig: "GitConfigTypeDef",
-    Tags: List["TagTypeDef"] = None
-) -> CreateCodeRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeRepositoryName`: `str` *(required)*
+- `GitConfig`:
+  [GitConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigtypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcoderepositoryoutputtypedef).
 
 ### create_compilation_job
 
 Type annotations for `boto3.client("sagemaker").create_compilation_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job]
+Boto3 documentation:
+[SageMaker.Client.create_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job)
 
-```python
-def create_compilation_job(
-    self,
-    CompilationJobName: str,
-    RoleArn: str,
-    InputConfig: "InputConfigTypeDef",
-    OutputConfig: "OutputConfigTypeDef",
-    StoppingCondition: "StoppingConditionTypeDef",
-    Tags: List["TagTypeDef"] = None
-) -> CreateCompilationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CompilationJobName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `InputConfig`:
+  [InputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inputconfigtypedef)
+  *(required)*
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputconfigtypedef)
+  *(required)*
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCompilationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcompilationjobresponsetypedef).
 
 ### create_context
 
 Type annotations for `boto3.client("sagemaker").create_context` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context]
+Boto3 documentation:
+[SageMaker.Client.create_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context)
 
-```python
-def create_context(
-    self,
-    ContextName: str,
-    Source: "ContextSourceTypeDef",
-    ContextType: str,
-    Description: str = None,
-    Properties: Dict[str, str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateContextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContextName`: `str` *(required)*
+- `Source`:
+  [ContextSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#contextsourcetypedef)
+  *(required)*
+- `ContextType`: `str` *(required)*
+- `Description`: `str`
+- `Properties`: `Dict`\[`str`, `str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcontextresponsetypedef).
 
 ### create_data_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").create_data_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").create_data_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.create_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition)
 
-```python
-def create_data_quality_job_definition(
-    self,
-    JobDefinitionName: str,
-    DataQualityAppSpecification: "DataQualityAppSpecificationTypeDef",
-    DataQualityJobInput: "DataQualityJobInputTypeDef",
-    DataQualityJobOutputConfig: "MonitoringOutputConfigTypeDef",
-    JobResources: "MonitoringResourcesTypeDef",
-    RoleArn: str,
-    DataQualityBaselineConfig: "DataQualityBaselineConfigTypeDef" = None,
-    NetworkConfig: "MonitoringNetworkConfigTypeDef" = None,
-    StoppingCondition: "MonitoringStoppingConditionTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDataQualityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+- `DataQualityAppSpecification`:
+  [DataQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityappspecificationtypedef)
+  *(required)*
+- `DataQualityJobInput`:
+  [DataQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityjobinputtypedef)
+  *(required)*
+- `DataQualityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  *(required)*
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `DataQualityBaselineConfig`:
+  [DataQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDataQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createdataqualityjobdefinitionresponsetypedef).
 
 ### create_device_fleet
 
 Type annotations for `boto3.client("sagemaker").create_device_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet]
+Boto3 documentation:
+[SageMaker.Client.create_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet)
 
-```python
-def create_device_fleet(
-    self,
-    DeviceFleetName: str,
-    OutputConfig: "EdgeOutputConfigTypeDef",
-    RoleArn: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
+  *(required)*
+- `RoleArn`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ### create_domain
 
 Type annotations for `boto3.client("sagemaker").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain]
+Boto3 documentation:
+[SageMaker.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    DomainName: str,
-    AuthMode: AuthMode,
-    DefaultUserSettings: "UserSettingsTypeDef",
-    SubnetIds: List[str],
-    VpcId: str,
-    Tags: List["TagTypeDef"] = None,
-    AppNetworkAccessType: AppNetworkAccessType = None,
-    HomeEfsFileSystemKmsKeyId: str = None,
-    KmsKeyId: str = None
-) -> CreateDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AuthMode`:
+  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#authmode)
+  *(required)*
+- `DefaultUserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+  *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `VpcId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `AppNetworkAccessType`:
+  [AppNetworkAccessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appnetworkaccesstype)
+- `HomeEfsFileSystemKmsKeyId`: `str`
+- `KmsKeyId`: `str`
+
+Returns
+[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createdomainresponsetypedef).
 
 ### create_edge_packaging_job
 
-Type annotations for `boto3.client("sagemaker").create_edge_packaging_job` method.
+Type annotations for `boto3.client("sagemaker").create_edge_packaging_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job]
+Boto3 documentation:
+[SageMaker.Client.create_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job)
 
-```python
-def create_edge_packaging_job(
-    self,
-    EdgePackagingJobName: str,
-    CompilationJobName: str,
-    ModelName: str,
-    ModelVersion: str,
-    RoleArn: str,
-    OutputConfig: "EdgeOutputConfigTypeDef",
-    ResourceKey: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `EdgePackagingJobName`: `str` *(required)*
+- `CompilationJobName`: `str` *(required)*
+- `ModelName`: `str` *(required)*
+- `ModelVersion`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
+  *(required)*
+- `ResourceKey`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ### create_endpoint
 
 Type annotations for `boto3.client("sagemaker").create_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint]
+Boto3 documentation:
+[SageMaker.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint)
 
-```python
-def create_endpoint(
-    self,
-    EndpointName: str,
-    EndpointConfigName: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateEndpointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `EndpointConfigName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createendpointoutputtypedef).
 
 ### create_endpoint_config
 
 Type annotations for `boto3.client("sagemaker").create_endpoint_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config]
+Boto3 documentation:
+[SageMaker.Client.create_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config)
 
-```python
-def create_endpoint_config(
-    self,
-    EndpointConfigName: str,
-    ProductionVariants: List["ProductionVariantTypeDef"],
-    DataCaptureConfig: "DataCaptureConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    KmsKeyId: str = None
-) -> CreateEndpointConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointConfigName`: `str` *(required)*
+- `ProductionVariants`:
+  `List`\[[ProductionVariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvarianttypedef)\]
+  *(required)*
+- `DataCaptureConfig`:
+  [DataCaptureConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacaptureconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `KmsKeyId`: `str`
+
+Returns
+[CreateEndpointConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createendpointconfigoutputtypedef).
 
 ### create_experiment
 
 Type annotations for `boto3.client("sagemaker").create_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment]
+Boto3 documentation:
+[SageMaker.Client.create_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment)
 
-```python
-def create_experiment(
-    self,
-    ExperimentName: str,
-    DisplayName: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str` *(required)*
+- `DisplayName`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createexperimentresponsetypedef).
 
 ### create_feature_group
 
 Type annotations for `boto3.client("sagemaker").create_feature_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group]
+Boto3 documentation:
+[SageMaker.Client.create_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group)
 
-```python
-def create_feature_group(
-    self,
-    FeatureGroupName: str,
-    RecordIdentifierFeatureName: str,
-    EventTimeFeatureName: str,
-    FeatureDefinitions: List["FeatureDefinitionTypeDef"],
-    OnlineStoreConfig: "OnlineStoreConfigTypeDef" = None,
-    OfflineStoreConfig: "OfflineStoreConfigTypeDef" = None,
-    RoleArn: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFeatureGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FeatureGroupName`: `str` *(required)*
+- `RecordIdentifierFeatureName`: `str` *(required)*
+- `EventTimeFeatureName`: `str` *(required)*
+- `FeatureDefinitions`:
+  `List`\[[FeatureDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuredefinitiontypedef)\]
+  *(required)*
+- `OnlineStoreConfig`:
+  [OnlineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#onlinestoreconfigtypedef)
+- `OfflineStoreConfig`:
+  [OfflineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestoreconfigtypedef)
+- `RoleArn`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFeatureGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createfeaturegroupresponsetypedef).
 
 ### create_flow_definition
 
 Type annotations for `boto3.client("sagemaker").create_flow_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition]
+Boto3 documentation:
+[SageMaker.Client.create_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition)
 
-```python
-def create_flow_definition(
-    self,
-    FlowDefinitionName: str,
-    HumanLoopConfig: "HumanLoopConfigTypeDef",
-    OutputConfig: "FlowDefinitionOutputConfigTypeDef",
-    RoleArn: str,
-    HumanLoopRequestSource: "HumanLoopRequestSourceTypeDef" = None,
-    HumanLoopActivationConfig: "HumanLoopActivationConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFlowDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowDefinitionName`: `str` *(required)*
+- `HumanLoopConfig`:
+  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopconfigtypedef)
+  *(required)*
+- `OutputConfig`:
+  [FlowDefinitionOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#flowdefinitionoutputconfigtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `HumanLoopRequestSource`:
+  [HumanLoopRequestSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanlooprequestsourcetypedef)
+- `HumanLoopActivationConfig`:
+  [HumanLoopActivationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopactivationconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFlowDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createflowdefinitionresponsetypedef).
 
 ### create_human_task_ui
 
 Type annotations for `boto3.client("sagemaker").create_human_task_ui` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui]
+Boto3 documentation:
+[SageMaker.Client.create_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui)
 
-```python
-def create_human_task_ui(
-    self,
-    HumanTaskUiName: str,
-    UiTemplate: UiTemplateTypeDef,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHumanTaskUiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HumanTaskUiName`: `str` *(required)*
+- `UiTemplate`:
+  [UiTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uitemplatetypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHumanTaskUiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createhumantaskuiresponsetypedef).
 
 ### create_hyper_parameter_tuning_job
 
-Type annotations for `boto3.client("sagemaker").create_hyper_parameter_tuning_job` method.
+Type annotations for
+`boto3.client("sagemaker").create_hyper_parameter_tuning_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job]
+Boto3 documentation:
+[SageMaker.Client.create_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job)
 
-```python
-def create_hyper_parameter_tuning_job(
-    self,
-    HyperParameterTuningJobName: str,
-    HyperParameterTuningJobConfig: "HyperParameterTuningJobConfigTypeDef",
-    TrainingJobDefinition: "HyperParameterTrainingJobDefinitionTypeDef" = None,
-    TrainingJobDefinitions: List["HyperParameterTrainingJobDefinitionTypeDef"] = None,
-    WarmStartConfig: "HyperParameterTuningJobWarmStartConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHyperParameterTuningJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HyperParameterTuningJobName`: `str` *(required)*
+- `HyperParameterTuningJobConfig`:
+  [HyperParameterTuningJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobconfigtypedef)
+  *(required)*
+- `TrainingJobDefinition`:
+  [HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)
+- `TrainingJobDefinitions`:
+  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)\]
+- `WarmStartConfig`:
+  [HyperParameterTuningJobWarmStartConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobwarmstartconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createhyperparametertuningjobresponsetypedef).
 
 ### create_image
 
 Type annotations for `boto3.client("sagemaker").create_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image]
+Boto3 documentation:
+[SageMaker.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image)
 
-```python
-def create_image(
-    self,
-    ImageName: str,
-    RoleArn: str,
-    Description: str = None,
-    DisplayName: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `Description`: `str`
+- `DisplayName`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createimageresponsetypedef).
 
 ### create_image_version
 
 Type annotations for `boto3.client("sagemaker").create_image_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version]
+Boto3 documentation:
+[SageMaker.Client.create_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version)
 
-```python
-def create_image_version(
-    self,
-    BaseImage: str,
-    ClientToken: str,
-    ImageName: str
-) -> CreateImageVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BaseImage`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `ImageName`: `str` *(required)*
+
+Returns
+[CreateImageVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createimageversionresponsetypedef).
 
 ### create_labeling_job
 
 Type annotations for `boto3.client("sagemaker").create_labeling_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job]
+Boto3 documentation:
+[SageMaker.Client.create_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job)
 
-```python
-def create_labeling_job(
-    self,
-    LabelingJobName: str,
-    LabelAttributeName: str,
-    InputConfig: "LabelingJobInputConfigTypeDef",
-    OutputConfig: "LabelingJobOutputConfigTypeDef",
-    RoleArn: str,
-    HumanTaskConfig: "HumanTaskConfigTypeDef",
-    LabelCategoryConfigS3Uri: str = None,
-    StoppingConditions: "LabelingJobStoppingConditionsTypeDef" = None,
-    LabelingJobAlgorithmsConfig: "LabelingJobAlgorithmsConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateLabelingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LabelingJobName`: `str` *(required)*
+- `LabelAttributeName`: `str` *(required)*
+- `InputConfig`:
+  [LabelingJobInputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobinputconfigtypedef)
+  *(required)*
+- `OutputConfig`:
+  [LabelingJobOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjoboutputconfigtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `HumanTaskConfig`:
+  [HumanTaskConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humantaskconfigtypedef)
+  *(required)*
+- `LabelCategoryConfigS3Uri`: `str`
+- `StoppingConditions`:
+  [LabelingJobStoppingConditionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobstoppingconditionstypedef)
+- `LabelingJobAlgorithmsConfig`:
+  [LabelingJobAlgorithmsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobalgorithmsconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateLabelingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createlabelingjobresponsetypedef).
 
 ### create_model
 
 Type annotations for `boto3.client("sagemaker").create_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model]
+Boto3 documentation:
+[SageMaker.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model)
 
-```python
-def create_model(
-    self,
-    ModelName: str,
-    ExecutionRoleArn: str,
-    PrimaryContainer: "ContainerDefinitionTypeDef" = None,
-    Containers: List["ContainerDefinitionTypeDef"] = None,
-    InferenceExecutionConfig: "InferenceExecutionConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    VpcConfig: "VpcConfigTypeDef" = None,
-    EnableNetworkIsolation: bool = None
-) -> CreateModelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+- `ExecutionRoleArn`: `str` *(required)*
+- `PrimaryContainer`:
+  [ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)
+- `Containers`:
+  `List`\[[ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)\]
+- `InferenceExecutionConfig`:
+  [InferenceExecutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferenceexecutionconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
+- `EnableNetworkIsolation`: `bool`
+
+Returns
+[CreateModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodeloutputtypedef).
 
 ### create_model_bias_job_definition
 
-Type annotations for `boto3.client("sagemaker").create_model_bias_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").create_model_bias_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition]
+Boto3 documentation:
+[SageMaker.Client.create_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition)
 
-```python
-def create_model_bias_job_definition(
-    self,
-    JobDefinitionName: str,
-    ModelBiasAppSpecification: "ModelBiasAppSpecificationTypeDef",
-    ModelBiasJobInput: "ModelBiasJobInputTypeDef",
-    ModelBiasJobOutputConfig: "MonitoringOutputConfigTypeDef",
-    JobResources: "MonitoringResourcesTypeDef",
-    RoleArn: str,
-    ModelBiasBaselineConfig: "ModelBiasBaselineConfigTypeDef" = None,
-    NetworkConfig: "MonitoringNetworkConfigTypeDef" = None,
-    StoppingCondition: "MonitoringStoppingConditionTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelBiasJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+- `ModelBiasAppSpecification`:
+  [ModelBiasAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasappspecificationtypedef)
+  *(required)*
+- `ModelBiasJobInput`:
+  [ModelBiasJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasjobinputtypedef)
+  *(required)*
+- `ModelBiasJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  *(required)*
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ModelBiasBaselineConfig`:
+  [ModelBiasBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasbaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelBiasJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelbiasjobdefinitionresponsetypedef).
 
 ### create_model_explainability_job_definition
 
-Type annotations for `boto3.client("sagemaker").create_model_explainability_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").create_model_explainability_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition]
+Boto3 documentation:
+[SageMaker.Client.create_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition)
 
-```python
-def create_model_explainability_job_definition(
-    self,
-    JobDefinitionName: str,
-    ModelExplainabilityAppSpecification: "ModelExplainabilityAppSpecificationTypeDef",
-    ModelExplainabilityJobInput: "ModelExplainabilityJobInputTypeDef",
-    ModelExplainabilityJobOutputConfig: "MonitoringOutputConfigTypeDef",
-    JobResources: "MonitoringResourcesTypeDef",
-    RoleArn: str,
-    ModelExplainabilityBaselineConfig: "ModelExplainabilityBaselineConfigTypeDef" = None,
-    NetworkConfig: "MonitoringNetworkConfigTypeDef" = None,
-    StoppingCondition: "MonitoringStoppingConditionTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelExplainabilityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+- `ModelExplainabilityAppSpecification`:
+  [ModelExplainabilityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityappspecificationtypedef)
+  *(required)*
+- `ModelExplainabilityJobInput`:
+  [ModelExplainabilityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityjobinputtypedef)
+  *(required)*
+- `ModelExplainabilityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  *(required)*
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ModelExplainabilityBaselineConfig`:
+  [ModelExplainabilityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelExplainabilityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelexplainabilityjobdefinitionresponsetypedef).
 
 ### create_model_package
 
 Type annotations for `boto3.client("sagemaker").create_model_package` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package]
+Boto3 documentation:
+[SageMaker.Client.create_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package)
 
-```python
-def create_model_package(
-    self,
-    ModelPackageName: str = None,
-    ModelPackageGroupName: str = None,
-    ModelPackageDescription: str = None,
-    InferenceSpecification: "InferenceSpecificationTypeDef" = None,
-    ValidationSpecification: "ModelPackageValidationSpecificationTypeDef" = None,
-    SourceAlgorithmSpecification: "SourceAlgorithmSpecificationTypeDef" = None,
-    CertifyForMarketplace: bool = None,
-    Tags: List["TagTypeDef"] = None,
-    ModelApprovalStatus: ModelApprovalStatus = None,
-    MetadataProperties: "MetadataPropertiesTypeDef" = None,
-    ModelMetrics: "ModelMetricsTypeDef" = None,
-    ClientToken: str = None
-) -> CreateModelPackageOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageName`: `str`
+- `ModelPackageGroupName`: `str`
+- `ModelPackageDescription`: `str`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+- `ValidationSpecification`:
+  [ModelPackageValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagevalidationspecificationtypedef)
+- `SourceAlgorithmSpecification`:
+  [SourceAlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourcealgorithmspecificationtypedef)
+- `CertifyForMarketplace`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `ModelMetrics`:
+  [ModelMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelmetricstypedef)
+- `ClientToken`: `str`
+
+Returns
+[CreateModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelpackageoutputtypedef).
 
 ### create_model_package_group
 
-Type annotations for `boto3.client("sagemaker").create_model_package_group` method.
+Type annotations for `boto3.client("sagemaker").create_model_package_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group]
+Boto3 documentation:
+[SageMaker.Client.create_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group)
 
-```python
-def create_model_package_group(
-    self,
-    ModelPackageGroupName: str,
-    ModelPackageGroupDescription: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelPackageGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
+- `ModelPackageGroupDescription`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelPackageGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelpackagegroupoutputtypedef).
 
 ### create_model_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").create_model_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").create_model_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.create_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition)
 
-```python
-def create_model_quality_job_definition(
-    self,
-    JobDefinitionName: str,
-    ModelQualityAppSpecification: "ModelQualityAppSpecificationTypeDef",
-    ModelQualityJobInput: "ModelQualityJobInputTypeDef",
-    ModelQualityJobOutputConfig: "MonitoringOutputConfigTypeDef",
-    JobResources: "MonitoringResourcesTypeDef",
-    RoleArn: str,
-    ModelQualityBaselineConfig: "ModelQualityBaselineConfigTypeDef" = None,
-    NetworkConfig: "MonitoringNetworkConfigTypeDef" = None,
-    StoppingCondition: "MonitoringStoppingConditionTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateModelQualityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+- `ModelQualityAppSpecification`:
+  [ModelQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityappspecificationtypedef)
+  *(required)*
+- `ModelQualityJobInput`:
+  [ModelQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityjobinputtypedef)
+  *(required)*
+- `ModelQualityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  *(required)*
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ModelQualityBaselineConfig`:
+  [ModelQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateModelQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelqualityjobdefinitionresponsetypedef).
 
 ### create_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").create_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").create_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.create_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule)
 
-```python
-def create_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str,
-    MonitoringScheduleConfig: "MonitoringScheduleConfigTypeDef",
-    Tags: List["TagTypeDef"] = None
-) -> CreateMonitoringScheduleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
+- `MonitoringScheduleConfig`:
+  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmonitoringscheduleresponsetypedef).
 
 ### create_notebook_instance
 
-Type annotations for `boto3.client("sagemaker").create_notebook_instance` method.
+Type annotations for `boto3.client("sagemaker").create_notebook_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.create_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance)
 
-```python
-def create_notebook_instance(
-    self,
-    NotebookInstanceName: str,
-    InstanceType: InstanceType,
-    RoleArn: str,
-    SubnetId: str = None,
-    SecurityGroupIds: List[str] = None,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None,
-    LifecycleConfigName: str = None,
-    DirectInternetAccess: DirectInternetAccess = None,
-    VolumeSizeInGB: int = None,
-    AcceleratorTypes: List[NotebookInstanceAcceleratorType] = None,
-    DefaultCodeRepository: str = None,
-    AdditionalCodeRepositories: List[str] = None,
-    RootAccess: RootAccess = None
-) -> CreateNotebookInstanceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `SubnetId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `LifecycleConfigName`: `str`
+- `DirectInternetAccess`:
+  [DirectInternetAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#directinternetaccess)
+- `VolumeSizeInGB`: `int`
+- `AcceleratorTypes`:
+  `List`\[[NotebookInstanceAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstanceacceleratortype)\]
+- `DefaultCodeRepository`: `str`
+- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `RootAccess`:
+  [RootAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#rootaccess)
+
+Returns
+[CreateNotebookInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createnotebookinstanceoutputtypedef).
 
 ### create_notebook_instance_lifecycle_config
 
-Type annotations for `boto3.client("sagemaker").create_notebook_instance_lifecycle_config` method.
+Type annotations for
+`boto3.client("sagemaker").create_notebook_instance_lifecycle_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config]
+Boto3 documentation:
+[SageMaker.Client.create_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config)
 
-```python
-def create_notebook_instance_lifecycle_config(
-    self,
-    NotebookInstanceLifecycleConfigName: str,
-    OnCreate: List["NotebookInstanceLifecycleHookTypeDef"] = None,
-    OnStart: List["NotebookInstanceLifecycleHookTypeDef"] = None
-) -> CreateNotebookInstanceLifecycleConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceLifecycleConfigName`: `str` *(required)*
+- `OnCreate`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+- `OnStart`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+
+Returns
+[CreateNotebookInstanceLifecycleConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createnotebookinstancelifecycleconfigoutputtypedef).
 
 ### create_pipeline
 
 Type annotations for `boto3.client("sagemaker").create_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline]
+Boto3 documentation:
+[SageMaker.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline)
 
-```python
-def create_pipeline(
-    self,
-    PipelineName: str,
-    PipelineDefinition: str,
-    ClientRequestToken: str,
-    RoleArn: str,
-    PipelineDisplayName: str = None,
-    PipelineDescription: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+- `PipelineDefinition`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `PipelineDisplayName`: `str`
+- `PipelineDescription`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpipelineresponsetypedef).
 
 ### create_presigned_domain_url
 
-Type annotations for `boto3.client("sagemaker").create_presigned_domain_url` method.
+Type annotations for `boto3.client("sagemaker").create_presigned_domain_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url]
+Boto3 documentation:
+[SageMaker.Client.create_presigned_domain_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url)
 
-```python
-def create_presigned_domain_url(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    SessionExpirationDurationInSeconds: int = None,
-    ExpiresInSeconds: int = None
-) -> CreatePresignedDomainUrlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `SessionExpirationDurationInSeconds`: `int`
+- `ExpiresInSeconds`: `int`
+
+Returns
+[CreatePresignedDomainUrlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpresigneddomainurlresponsetypedef).
 
 ### create_presigned_notebook_instance_url
 
-Type annotations for `boto3.client("sagemaker").create_presigned_notebook_instance_url` method.
+Type annotations for
+`boto3.client("sagemaker").create_presigned_notebook_instance_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_notebook_instance_url]
+Boto3 documentation:
+[SageMaker.Client.create_presigned_notebook_instance_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_notebook_instance_url)
 
-```python
-def create_presigned_notebook_instance_url(
-    self,
-    NotebookInstanceName: str,
-    SessionExpirationDurationInSeconds: int = None
-) -> CreatePresignedNotebookInstanceUrlOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `SessionExpirationDurationInSeconds`: `int`
+
+Returns
+[CreatePresignedNotebookInstanceUrlOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpresignednotebookinstanceurloutputtypedef).
 
 ### create_processing_job
 
 Type annotations for `boto3.client("sagemaker").create_processing_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job]
+Boto3 documentation:
+[SageMaker.Client.create_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job)
 
-```python
-def create_processing_job(
-    self,
-    ProcessingJobName: str,
-    ProcessingResources: "ProcessingResourcesTypeDef",
-    AppSpecification: "AppSpecificationTypeDef",
-    RoleArn: str,
-    ProcessingInputs: List["ProcessingInputTypeDef"] = None,
-    ProcessingOutputConfig: "ProcessingOutputConfigTypeDef" = None,
-    StoppingCondition: "ProcessingStoppingConditionTypeDef" = None,
-    Environment: Dict[str, str] = None,
-    NetworkConfig: "NetworkConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    ExperimentConfig: "ExperimentConfigTypeDef" = None
-) -> CreateProcessingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProcessingJobName`: `str` *(required)*
+- `ProcessingResources`:
+  [ProcessingResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingresourcestypedef)
+  *(required)*
+- `AppSpecification`:
+  [AppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appspecificationtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `ProcessingInputs`:
+  `List`\[[ProcessingInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processinginputtypedef)\]
+- `ProcessingOutputConfig`:
+  [ProcessingOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingoutputconfigtypedef)
+- `StoppingCondition`:
+  [ProcessingStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingstoppingconditiontypedef)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `NetworkConfig`:
+  [NetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#networkconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+
+Returns
+[CreateProcessingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createprocessingjobresponsetypedef).
 
 ### create_project
 
 Type annotations for `boto3.client("sagemaker").create_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project]
+Boto3 documentation:
+[SageMaker.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project)
 
-```python
-def create_project(
-    self,
-    ProjectName: str,
-    ServiceCatalogProvisioningDetails: "ServiceCatalogProvisioningDetailsTypeDef",
-    ProjectDescription: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateProjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+- `ServiceCatalogProvisioningDetails`:
+  [ServiceCatalogProvisioningDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#servicecatalogprovisioningdetailstypedef)
+  *(required)*
+- `ProjectDescription`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createprojectoutputtypedef).
 
 ### create_training_job
 
 Type annotations for `boto3.client("sagemaker").create_training_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job]
+Boto3 documentation:
+[SageMaker.Client.create_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job)
 
-```python
-def create_training_job(
-    self,
-    TrainingJobName: str,
-    AlgorithmSpecification: "AlgorithmSpecificationTypeDef",
-    RoleArn: str,
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    ResourceConfig: "ResourceConfigTypeDef",
-    StoppingCondition: "StoppingConditionTypeDef",
-    HyperParameters: Dict[str, str] = None,
-    InputDataConfig: List["ChannelTypeDef"] = None,
-    VpcConfig: "VpcConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    EnableNetworkIsolation: bool = None,
-    EnableInterContainerTrafficEncryption: bool = None,
-    EnableManagedSpotTraining: bool = None,
-    CheckpointConfig: "CheckpointConfigTypeDef" = None,
-    DebugHookConfig: "DebugHookConfigTypeDef" = None,
-    DebugRuleConfigurations: List["DebugRuleConfigurationTypeDef"] = None,
-    TensorBoardOutputConfig: "TensorBoardOutputConfigTypeDef" = None,
-    ExperimentConfig: "ExperimentConfigTypeDef" = None,
-    ProfilerConfig: "ProfilerConfigTypeDef" = None,
-    ProfilerRuleConfigurations: List["ProfilerRuleConfigurationTypeDef"] = None,
-    Environment: Dict[str, str] = None
-) -> CreateTrainingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrainingJobName`: `str` *(required)*
+- `AlgorithmSpecification`:
+  [AlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmspecificationtypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+  *(required)*
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
+  *(required)*
+- `HyperParameters`: `Dict`\[`str`, `str`\]
+- `InputDataConfig`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `EnableNetworkIsolation`: `bool`
+- `EnableInterContainerTrafficEncryption`: `bool`
+- `EnableManagedSpotTraining`: `bool`
+- `CheckpointConfig`:
+  [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
+- `DebugHookConfig`:
+  [DebugHookConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debughookconfigtypedef)
+- `DebugRuleConfigurations`:
+  `List`\[[DebugRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleconfigurationtypedef)\]
+- `TensorBoardOutputConfig`:
+  [TensorBoardOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tensorboardoutputconfigtypedef)
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+- `ProfilerConfig`:
+  [ProfilerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerconfigtypedef)
+- `ProfilerRuleConfigurations`:
+  `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
+- `Environment`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrainingjobresponsetypedef).
 
 ### create_transform_job
 
 Type annotations for `boto3.client("sagemaker").create_transform_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job]
+Boto3 documentation:
+[SageMaker.Client.create_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job)
 
-```python
-def create_transform_job(
-    self,
-    TransformJobName: str,
-    ModelName: str,
-    TransformInput: "TransformInputTypeDef",
-    TransformOutput: "TransformOutputTypeDef",
-    TransformResources: "TransformResourcesTypeDef",
-    MaxConcurrentTransforms: int = None,
-    ModelClientConfig: "ModelClientConfigTypeDef" = None,
-    MaxPayloadInMB: int = None,
-    BatchStrategy: BatchStrategy = None,
-    Environment: Dict[str, str] = None,
-    DataProcessing: "DataProcessingTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    ExperimentConfig: "ExperimentConfigTypeDef" = None
-) -> CreateTransformJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformJobName`: `str` *(required)*
+- `ModelName`: `str` *(required)*
+- `TransformInput`:
+  [TransformInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforminputtypedef)
+  *(required)*
+- `TransformOutput`:
+  [TransformOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformoutputtypedef)
+  *(required)*
+- `TransformResources`:
+  [TransformResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformresourcestypedef)
+  *(required)*
+- `MaxConcurrentTransforms`: `int`
+- `ModelClientConfig`:
+  [ModelClientConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelclientconfigtypedef)
+- `MaxPayloadInMB`: `int`
+- `BatchStrategy`:
+  [BatchStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#batchstrategy)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `DataProcessing`:
+  [DataProcessingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataprocessingtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+
+Returns
+[CreateTransformJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtransformjobresponsetypedef).
 
 ### create_trial
 
 Type annotations for `boto3.client("sagemaker").create_trial` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial]
+Boto3 documentation:
+[SageMaker.Client.create_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial)
 
-```python
-def create_trial(
-    self,
-    TrialName: str,
-    ExperimentName: str,
-    DisplayName: str = None,
-    MetadataProperties: "MetadataPropertiesTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateTrialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialName`: `str` *(required)*
+- `ExperimentName`: `str` *(required)*
+- `DisplayName`: `str`
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrialresponsetypedef).
 
 ### create_trial_component
 
 Type annotations for `boto3.client("sagemaker").create_trial_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component]
+Boto3 documentation:
+[SageMaker.Client.create_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component)
 
-```python
-def create_trial_component(
-    self,
-    TrialComponentName: str,
-    DisplayName: str = None,
-    Status: "TrialComponentStatusTypeDef" = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Parameters: Dict[str, "TrialComponentParameterValueTypeDef"] = None,
-    InputArtifacts: Dict[str, "TrialComponentArtifactTypeDef"] = None,
-    OutputArtifacts: Dict[str, "TrialComponentArtifactTypeDef"] = None,
-    MetadataProperties: "MetadataPropertiesTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+- `DisplayName`: `str`
+- `Status`:
+  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Parameters`: `Dict`\[`str`,
+  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+- `InputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `OutputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrialcomponentresponsetypedef).
 
 ### create_user_profile
 
 Type annotations for `boto3.client("sagemaker").create_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile]
+Boto3 documentation:
+[SageMaker.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile)
 
-```python
-def create_user_profile(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    SingleSignOnUserIdentifier: str = None,
-    SingleSignOnUserValue: str = None,
-    Tags: List["TagTypeDef"] = None,
-    UserSettings: "UserSettingsTypeDef" = None
-) -> CreateUserProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `SingleSignOnUserIdentifier`: `str`
+- `SingleSignOnUserValue`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `UserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+
+Returns
+[CreateUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createuserprofileresponsetypedef).
 
 ### create_workforce
 
 Type annotations for `boto3.client("sagemaker").create_workforce` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce]
+Boto3 documentation:
+[SageMaker.Client.create_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce)
 
-```python
-def create_workforce(
-    self,
-    WorkforceName: str,
-    CognitoConfig: "CognitoConfigTypeDef" = None,
-    OidcConfig: OidcConfigTypeDef = None,
-    SourceIpConfig: "SourceIpConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWorkforceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkforceName`: `str` *(required)*
+- `CognitoConfig`:
+  [CognitoConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#cognitoconfigtypedef)
+- `OidcConfig`:
+  [OidcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcconfigtypedef)
+- `SourceIpConfig`:
+  [SourceIpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourceipconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createworkforceresponsetypedef).
 
 ### create_workteam
 
 Type annotations for `boto3.client("sagemaker").create_workteam` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam]
+Boto3 documentation:
+[SageMaker.Client.create_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam)
 
-```python
-def create_workteam(
-    self,
-    WorkteamName: str,
-    MemberDefinitions: List["MemberDefinitionTypeDef"],
-    Description: str,
-    WorkforceName: str = None,
-    NotificationConfiguration: "NotificationConfigurationTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkteamName`: `str` *(required)*
+- `MemberDefinitions`:
+  `List`\[[MemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#memberdefinitiontypedef)\]
+  *(required)*
+- `Description`: `str` *(required)*
+- `WorkforceName`: `str`
+- `NotificationConfiguration`:
+  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notificationconfigurationtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createworkteamresponsetypedef).
 
 ### delete_action
 
 Type annotations for `boto3.client("sagemaker").delete_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_action]
+Boto3 documentation:
+[SageMaker.Client.delete_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_action)
 
-```python
-def delete_action(
-    self,
-    ActionName: str
-) -> DeleteActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionName`: `str` *(required)*
+
+Returns
+[DeleteActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteactionresponsetypedef).
 
 ### delete_algorithm
 
 Type annotations for `boto3.client("sagemaker").delete_algorithm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_algorithm]
+Boto3 documentation:
+[SageMaker.Client.delete_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_algorithm)
 
-```python
-def delete_algorithm(
-    self,
-    AlgorithmName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AlgorithmName`: `str` *(required)*
 
 ### delete_app
 
 Type annotations for `boto3.client("sagemaker").delete_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app]
+Boto3 documentation:
+[SageMaker.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app)
 
-```python
-def delete_app(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    AppType: AppType,
-    AppName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `AppType`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
+  *(required)*
+- `AppName`: `str` *(required)*
 
 ### delete_app_image_config
 
-Type annotations for `boto3.client("sagemaker").delete_app_image_config` method.
+Type annotations for `boto3.client("sagemaker").delete_app_image_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app_image_config]
+Boto3 documentation:
+[SageMaker.Client.delete_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app_image_config)
 
-```python
-def delete_app_image_config(
-    self,
-    AppImageConfigName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppImageConfigName`: `str` *(required)*
 
 ### delete_artifact
 
 Type annotations for `boto3.client("sagemaker").delete_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_artifact]
+Boto3 documentation:
+[SageMaker.Client.delete_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_artifact)
 
-```python
-def delete_artifact(
-    self,
-    ArtifactArn: str = None,
-    Source: "ArtifactSourceTypeDef" = None
-) -> DeleteArtifactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ArtifactArn`: `str`
+- `Source`:
+  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
+
+Returns
+[DeleteArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteartifactresponsetypedef).
 
 ### delete_association
 
 Type annotations for `boto3.client("sagemaker").delete_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_association]
+Boto3 documentation:
+[SageMaker.Client.delete_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_association)
 
-```python
-def delete_association(
-    self,
-    SourceArn: str,
-    DestinationArn: str
-) -> DeleteAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceArn`: `str` *(required)*
+- `DestinationArn`: `str` *(required)*
+
+Returns
+[DeleteAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteassociationresponsetypedef).
 
 ### delete_code_repository
 
 Type annotations for `boto3.client("sagemaker").delete_code_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_code_repository]
+Boto3 documentation:
+[SageMaker.Client.delete_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_code_repository)
 
-```python
-def delete_code_repository(
-    self,
-    CodeRepositoryName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CodeRepositoryName`: `str` *(required)*
 
 ### delete_context
 
 Type annotations for `boto3.client("sagemaker").delete_context` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_context]
+Boto3 documentation:
+[SageMaker.Client.delete_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_context)
 
-```python
-def delete_context(
-    self,
-    ContextName: str
-) -> DeleteContextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContextName`: `str` *(required)*
+
+Returns
+[DeleteContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletecontextresponsetypedef).
 
 ### delete_data_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").delete_data_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").delete_data_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_data_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.delete_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_data_quality_job_definition)
 
-```python
-def delete_data_quality_job_definition(
-    self,
-    JobDefinitionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
 
 ### delete_device_fleet
 
 Type annotations for `boto3.client("sagemaker").delete_device_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_device_fleet]
+Boto3 documentation:
+[SageMaker.Client.delete_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_device_fleet)
 
-```python
-def delete_device_fleet(
-    self,
-    DeviceFleetName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
 
 ### delete_domain
 
 Type annotations for `boto3.client("sagemaker").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_domain]
+Boto3 documentation:
+[SageMaker.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    DomainId: str,
-    RetentionPolicy: RetentionPolicyTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `RetentionPolicy`:
+  [RetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retentionpolicytypedef)
 
 ### delete_endpoint
 
 Type annotations for `boto3.client("sagemaker").delete_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint]
+Boto3 documentation:
+[SageMaker.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint)
 
-```python
-def delete_endpoint(
-    self,
-    EndpointName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
 
 ### delete_endpoint_config
 
 Type annotations for `boto3.client("sagemaker").delete_endpoint_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint_config]
+Boto3 documentation:
+[SageMaker.Client.delete_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint_config)
 
-```python
-def delete_endpoint_config(
-    self,
-    EndpointConfigName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EndpointConfigName`: `str` *(required)*
 
 ### delete_experiment
 
 Type annotations for `boto3.client("sagemaker").delete_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_experiment]
+Boto3 documentation:
+[SageMaker.Client.delete_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_experiment)
 
-```python
-def delete_experiment(
-    self,
-    ExperimentName: str
-) -> DeleteExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str` *(required)*
+
+Returns
+[DeleteExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteexperimentresponsetypedef).
 
 ### delete_feature_group
 
 Type annotations for `boto3.client("sagemaker").delete_feature_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_feature_group]
+Boto3 documentation:
+[SageMaker.Client.delete_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_feature_group)
 
-```python
-def delete_feature_group(
-    self,
-    FeatureGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FeatureGroupName`: `str` *(required)*
 
 ### delete_flow_definition
 
 Type annotations for `boto3.client("sagemaker").delete_flow_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_flow_definition]
+Boto3 documentation:
+[SageMaker.Client.delete_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_flow_definition)
 
-```python
-def delete_flow_definition(
-    self,
-    FlowDefinitionName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `FlowDefinitionName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_human_task_ui
 
 Type annotations for `boto3.client("sagemaker").delete_human_task_ui` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_human_task_ui]
+Boto3 documentation:
+[SageMaker.Client.delete_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_human_task_ui)
 
-```python
-def delete_human_task_ui(
-    self,
-    HumanTaskUiName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HumanTaskUiName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_image
 
 Type annotations for `boto3.client("sagemaker").delete_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image]
+Boto3 documentation:
+[SageMaker.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image)
 
-```python
-def delete_image(
-    self,
-    ImageName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_image_version
 
 Type annotations for `boto3.client("sagemaker").delete_image_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image_version]
+Boto3 documentation:
+[SageMaker.Client.delete_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image_version)
 
-```python
-def delete_image_version(
-    self,
-    ImageName: str,
-    Version: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+- `Version`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_model
 
 Type annotations for `boto3.client("sagemaker").delete_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model]
+Boto3 documentation:
+[SageMaker.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model)
 
-```python
-def delete_model(
-    self,
-    ModelName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
 
 ### delete_model_bias_job_definition
 
-Type annotations for `boto3.client("sagemaker").delete_model_bias_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").delete_model_bias_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_bias_job_definition]
+Boto3 documentation:
+[SageMaker.Client.delete_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_bias_job_definition)
 
-```python
-def delete_model_bias_job_definition(
-    self,
-    JobDefinitionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
 
 ### delete_model_explainability_job_definition
 
-Type annotations for `boto3.client("sagemaker").delete_model_explainability_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").delete_model_explainability_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_explainability_job_definition]
+Boto3 documentation:
+[SageMaker.Client.delete_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_explainability_job_definition)
 
-```python
-def delete_model_explainability_job_definition(
-    self,
-    JobDefinitionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
 
 ### delete_model_package
 
 Type annotations for `boto3.client("sagemaker").delete_model_package` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package]
+Boto3 documentation:
+[SageMaker.Client.delete_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package)
 
-```python
-def delete_model_package(
-    self,
-    ModelPackageName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelPackageName`: `str` *(required)*
 
 ### delete_model_package_group
 
-Type annotations for `boto3.client("sagemaker").delete_model_package_group` method.
+Type annotations for `boto3.client("sagemaker").delete_model_package_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group]
+Boto3 documentation:
+[SageMaker.Client.delete_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group)
 
-```python
-def delete_model_package_group(
-    self,
-    ModelPackageGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
 
 ### delete_model_package_group_policy
 
-Type annotations for `boto3.client("sagemaker").delete_model_package_group_policy` method.
+Type annotations for
+`boto3.client("sagemaker").delete_model_package_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group_policy]
+Boto3 documentation:
+[SageMaker.Client.delete_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group_policy)
 
-```python
-def delete_model_package_group_policy(
-    self,
-    ModelPackageGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
 
 ### delete_model_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").delete_model_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").delete_model_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.delete_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_quality_job_definition)
 
-```python
-def delete_model_quality_job_definition(
-    self,
-    JobDefinitionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
 
 ### delete_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").delete_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").delete_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.delete_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_monitoring_schedule)
 
-```python
-def delete_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
 
 ### delete_notebook_instance
 
-Type annotations for `boto3.client("sagemaker").delete_notebook_instance` method.
+Type annotations for `boto3.client("sagemaker").delete_notebook_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.delete_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance)
 
-```python
-def delete_notebook_instance(
-    self,
-    NotebookInstanceName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
 
 ### delete_notebook_instance_lifecycle_config
 
-Type annotations for `boto3.client("sagemaker").delete_notebook_instance_lifecycle_config` method.
+Type annotations for
+`boto3.client("sagemaker").delete_notebook_instance_lifecycle_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance_lifecycle_config]
+Boto3 documentation:
+[SageMaker.Client.delete_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance_lifecycle_config)
 
-```python
-def delete_notebook_instance_lifecycle_config(
-    self,
-    NotebookInstanceLifecycleConfigName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 
 ### delete_pipeline
 
 Type annotations for `boto3.client("sagemaker").delete_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_pipeline]
+Boto3 documentation:
+[SageMaker.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_pipeline)
 
-```python
-def delete_pipeline(
-    self,
-    PipelineName: str,
-    ClientRequestToken: str
-) -> DeletePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[DeletePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletepipelineresponsetypedef).
 
 ### delete_project
 
 Type annotations for `boto3.client("sagemaker").delete_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_project]
+Boto3 documentation:
+[SageMaker.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    ProjectName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
 
 ### delete_tags
 
 Type annotations for `boto3.client("sagemaker").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags]
+Boto3 documentation:
+[SageMaker.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_trial
 
 Type annotations for `boto3.client("sagemaker").delete_trial` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial]
+Boto3 documentation:
+[SageMaker.Client.delete_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial)
 
-```python
-def delete_trial(
-    self,
-    TrialName: str
-) -> DeleteTrialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialName`: `str` *(required)*
+
+Returns
+[DeleteTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletetrialresponsetypedef).
 
 ### delete_trial_component
 
 Type annotations for `boto3.client("sagemaker").delete_trial_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial_component]
+Boto3 documentation:
+[SageMaker.Client.delete_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial_component)
 
-```python
-def delete_trial_component(
-    self,
-    TrialComponentName: str
-) -> DeleteTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+
+Returns
+[DeleteTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletetrialcomponentresponsetypedef).
 
 ### delete_user_profile
 
 Type annotations for `boto3.client("sagemaker").delete_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_user_profile]
+Boto3 documentation:
+[SageMaker.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_user_profile)
 
-```python
-def delete_user_profile(
-    self,
-    DomainId: str,
-    UserProfileName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
 
 ### delete_workforce
 
 Type annotations for `boto3.client("sagemaker").delete_workforce` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workforce]
+Boto3 documentation:
+[SageMaker.Client.delete_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workforce)
 
-```python
-def delete_workforce(
-    self,
-    WorkforceName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkforceName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workteam
 
 Type annotations for `boto3.client("sagemaker").delete_workteam` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workteam]
+Boto3 documentation:
+[SageMaker.Client.delete_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workteam)
 
-```python
-def delete_workteam(
-    self,
-    WorkteamName: str
-) -> DeleteWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkteamName`: `str` *(required)*
+
+Returns
+[DeleteWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteworkteamresponsetypedef).
 
 ### deregister_devices
 
 Type annotations for `boto3.client("sagemaker").deregister_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.deregister_devices]
+Boto3 documentation:
+[SageMaker.Client.deregister_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.deregister_devices)
 
-```python
-def deregister_devices(
-    self,
-    DeviceFleetName: str,
-    DeviceNames: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+- `DeviceNames`: `List`\[`str`\] *(required)*
 
 ### describe_action
 
 Type annotations for `boto3.client("sagemaker").describe_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_action]
+Boto3 documentation:
+[SageMaker.Client.describe_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_action)
 
-```python
-def describe_action(
-    self,
-    ActionName: str
-) -> DescribeActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionName`: `str` *(required)*
+
+Returns
+[DescribeActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeactionresponsetypedef).
 
 ### describe_algorithm
 
 Type annotations for `boto3.client("sagemaker").describe_algorithm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_algorithm]
+Boto3 documentation:
+[SageMaker.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_algorithm)
 
-```python
-def describe_algorithm(
-    self,
-    AlgorithmName: str
-) -> DescribeAlgorithmOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AlgorithmName`: `str` *(required)*
+
+Returns
+[DescribeAlgorithmOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describealgorithmoutputtypedef).
 
 ### describe_app
 
 Type annotations for `boto3.client("sagemaker").describe_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app]
+Boto3 documentation:
+[SageMaker.Client.describe_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app)
 
-```python
-def describe_app(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    AppType: AppType,
-    AppName: str
-) -> DescribeAppResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `AppType`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
+  *(required)*
+- `AppName`: `str` *(required)*
+
+Returns
+[DescribeAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeappresponsetypedef).
 
 ### describe_app_image_config
 
-Type annotations for `boto3.client("sagemaker").describe_app_image_config` method.
+Type annotations for `boto3.client("sagemaker").describe_app_image_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app_image_config]
+Boto3 documentation:
+[SageMaker.Client.describe_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app_image_config)
 
-```python
-def describe_app_image_config(
-    self,
-    AppImageConfigName: str
-) -> DescribeAppImageConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppImageConfigName`: `str` *(required)*
+
+Returns
+[DescribeAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeappimageconfigresponsetypedef).
 
 ### describe_artifact
 
 Type annotations for `boto3.client("sagemaker").describe_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_artifact]
+Boto3 documentation:
+[SageMaker.Client.describe_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_artifact)
 
-```python
-def describe_artifact(
-    self,
-    ArtifactArn: str
-) -> DescribeArtifactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ArtifactArn`: `str` *(required)*
+
+Returns
+[DescribeArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeartifactresponsetypedef).
 
 ### describe_auto_ml_job
 
 Type annotations for `boto3.client("sagemaker").describe_auto_ml_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job]
+Boto3 documentation:
+[SageMaker.Client.describe_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job)
 
-```python
-def describe_auto_ml_job(
-    self,
-    AutoMLJobName: str
-) -> DescribeAutoMLJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoMLJobName`: `str` *(required)*
+
+Returns
+[DescribeAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeautomljobresponsetypedef).
 
 ### describe_code_repository
 
-Type annotations for `boto3.client("sagemaker").describe_code_repository` method.
+Type annotations for `boto3.client("sagemaker").describe_code_repository`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_code_repository]
+Boto3 documentation:
+[SageMaker.Client.describe_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_code_repository)
 
-```python
-def describe_code_repository(
-    self,
-    CodeRepositoryName: str
-) -> DescribeCodeRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeRepositoryName`: `str` *(required)*
+
+Returns
+[DescribeCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecoderepositoryoutputtypedef).
 
 ### describe_compilation_job
 
-Type annotations for `boto3.client("sagemaker").describe_compilation_job` method.
+Type annotations for `boto3.client("sagemaker").describe_compilation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job]
+Boto3 documentation:
+[SageMaker.Client.describe_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job)
 
-```python
-def describe_compilation_job(
-    self,
-    CompilationJobName: str
-) -> DescribeCompilationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CompilationJobName`: `str` *(required)*
+
+Returns
+[DescribeCompilationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecompilationjobresponsetypedef).
 
 ### describe_context
 
 Type annotations for `boto3.client("sagemaker").describe_context` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_context]
+Boto3 documentation:
+[SageMaker.Client.describe_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_context)
 
-```python
-def describe_context(
-    self,
-    ContextName: str
-) -> DescribeContextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContextName`: `str` *(required)*
+
+Returns
+[DescribeContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecontextresponsetypedef).
 
 ### describe_data_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").describe_data_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").describe_data_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_data_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.describe_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_data_quality_job_definition)
 
-```python
-def describe_data_quality_job_definition(
-    self,
-    JobDefinitionName: str
-) -> DescribeDataQualityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+
+Returns
+[DescribeDataQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedataqualityjobdefinitionresponsetypedef).
 
 ### describe_device
 
 Type annotations for `boto3.client("sagemaker").describe_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device]
+Boto3 documentation:
+[SageMaker.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device)
 
-```python
-def describe_device(
-    self,
-    DeviceName: str,
-    DeviceFleetName: str,
-    NextToken: str = None
-) -> DescribeDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceName`: `str` *(required)*
+- `DeviceFleetName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[DescribeDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedeviceresponsetypedef).
 
 ### describe_device_fleet
 
 Type annotations for `boto3.client("sagemaker").describe_device_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device_fleet]
+Boto3 documentation:
+[SageMaker.Client.describe_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device_fleet)
 
-```python
-def describe_device_fleet(
-    self,
-    DeviceFleetName: str
-) -> DescribeDeviceFleetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+
+Returns
+[DescribeDeviceFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedevicefleetresponsetypedef).
 
 ### describe_domain
 
 Type annotations for `boto3.client("sagemaker").describe_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_domain]
+Boto3 documentation:
+[SageMaker.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_domain)
 
-```python
-def describe_domain(
-    self,
-    DomainId: str
-) -> DescribeDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+
+Returns
+[DescribeDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedomainresponsetypedef).
 
 ### describe_edge_packaging_job
 
-Type annotations for `boto3.client("sagemaker").describe_edge_packaging_job` method.
+Type annotations for `boto3.client("sagemaker").describe_edge_packaging_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_packaging_job]
+Boto3 documentation:
+[SageMaker.Client.describe_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_packaging_job)
 
-```python
-def describe_edge_packaging_job(
-    self,
-    EdgePackagingJobName: str
-) -> DescribeEdgePackagingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EdgePackagingJobName`: `str` *(required)*
+
+Returns
+[DescribeEdgePackagingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeedgepackagingjobresponsetypedef).
 
 ### describe_endpoint
 
 Type annotations for `boto3.client("sagemaker").describe_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint]
+Boto3 documentation:
+[SageMaker.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint)
 
-```python
-def describe_endpoint(
-    self,
-    EndpointName: str
-) -> DescribeEndpointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+
+Returns
+[DescribeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeendpointoutputtypedef).
 
 ### describe_endpoint_config
 
-Type annotations for `boto3.client("sagemaker").describe_endpoint_config` method.
+Type annotations for `boto3.client("sagemaker").describe_endpoint_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config]
+Boto3 documentation:
+[SageMaker.Client.describe_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config)
 
-```python
-def describe_endpoint_config(
-    self,
-    EndpointConfigName: str
-) -> DescribeEndpointConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointConfigName`: `str` *(required)*
+
+Returns
+[DescribeEndpointConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeendpointconfigoutputtypedef).
 
 ### describe_experiment
 
 Type annotations for `boto3.client("sagemaker").describe_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_experiment]
+Boto3 documentation:
+[SageMaker.Client.describe_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_experiment)
 
-```python
-def describe_experiment(
-    self,
-    ExperimentName: str
-) -> DescribeExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str` *(required)*
+
+Returns
+[DescribeExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeexperimentresponsetypedef).
 
 ### describe_feature_group
 
 Type annotations for `boto3.client("sagemaker").describe_feature_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_group]
+Boto3 documentation:
+[SageMaker.Client.describe_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_group)
 
-```python
-def describe_feature_group(
-    self,
-    FeatureGroupName: str,
-    NextToken: str = None
-) -> DescribeFeatureGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FeatureGroupName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[DescribeFeatureGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describefeaturegroupresponsetypedef).
 
 ### describe_flow_definition
 
-Type annotations for `boto3.client("sagemaker").describe_flow_definition` method.
+Type annotations for `boto3.client("sagemaker").describe_flow_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_flow_definition]
+Boto3 documentation:
+[SageMaker.Client.describe_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_flow_definition)
 
-```python
-def describe_flow_definition(
-    self,
-    FlowDefinitionName: str
-) -> DescribeFlowDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowDefinitionName`: `str` *(required)*
+
+Returns
+[DescribeFlowDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeflowdefinitionresponsetypedef).
 
 ### describe_human_task_ui
 
 Type annotations for `boto3.client("sagemaker").describe_human_task_ui` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_human_task_ui]
+Boto3 documentation:
+[SageMaker.Client.describe_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_human_task_ui)
 
-```python
-def describe_human_task_ui(
-    self,
-    HumanTaskUiName: str
-) -> DescribeHumanTaskUiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HumanTaskUiName`: `str` *(required)*
+
+Returns
+[DescribeHumanTaskUiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describehumantaskuiresponsetypedef).
 
 ### describe_hyper_parameter_tuning_job
 
-Type annotations for `boto3.client("sagemaker").describe_hyper_parameter_tuning_job` method.
+Type annotations for
+`boto3.client("sagemaker").describe_hyper_parameter_tuning_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hyper_parameter_tuning_job]
+Boto3 documentation:
+[SageMaker.Client.describe_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hyper_parameter_tuning_job)
 
-```python
-def describe_hyper_parameter_tuning_job(
-    self,
-    HyperParameterTuningJobName: str
-) -> DescribeHyperParameterTuningJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HyperParameterTuningJobName`: `str` *(required)*
+
+Returns
+[DescribeHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describehyperparametertuningjobresponsetypedef).
 
 ### describe_image
 
 Type annotations for `boto3.client("sagemaker").describe_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image]
+Boto3 documentation:
+[SageMaker.Client.describe_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image)
 
-```python
-def describe_image(
-    self,
-    ImageName: str
-) -> DescribeImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+
+Returns
+[DescribeImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeimageresponsetypedef).
 
 ### describe_image_version
 
 Type annotations for `boto3.client("sagemaker").describe_image_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image_version]
+Boto3 documentation:
+[SageMaker.Client.describe_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image_version)
 
-```python
-def describe_image_version(
-    self,
-    ImageName: str,
-    Version: int = None
-) -> DescribeImageVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+- `Version`: `int`
+
+Returns
+[DescribeImageVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeimageversionresponsetypedef).
 
 ### describe_labeling_job
 
 Type annotations for `boto3.client("sagemaker").describe_labeling_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_labeling_job]
+Boto3 documentation:
+[SageMaker.Client.describe_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_labeling_job)
 
-```python
-def describe_labeling_job(
-    self,
-    LabelingJobName: str
-) -> DescribeLabelingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LabelingJobName`: `str` *(required)*
+
+Returns
+[DescribeLabelingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describelabelingjobresponsetypedef).
 
 ### describe_model
 
 Type annotations for `boto3.client("sagemaker").describe_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model]
+Boto3 documentation:
+[SageMaker.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model)
 
-```python
-def describe_model(
-    self,
-    ModelName: str
-) -> DescribeModelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+
+Returns
+[DescribeModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodeloutputtypedef).
 
 ### describe_model_bias_job_definition
 
-Type annotations for `boto3.client("sagemaker").describe_model_bias_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").describe_model_bias_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_bias_job_definition]
+Boto3 documentation:
+[SageMaker.Client.describe_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_bias_job_definition)
 
-```python
-def describe_model_bias_job_definition(
-    self,
-    JobDefinitionName: str
-) -> DescribeModelBiasJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+
+Returns
+[DescribeModelBiasJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelbiasjobdefinitionresponsetypedef).
 
 ### describe_model_explainability_job_definition
 
-Type annotations for `boto3.client("sagemaker").describe_model_explainability_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").describe_model_explainability_job_definition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_explainability_job_definition]
+Boto3 documentation:
+[SageMaker.Client.describe_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_explainability_job_definition)
 
-```python
-def describe_model_explainability_job_definition(
-    self,
-    JobDefinitionName: str
-) -> DescribeModelExplainabilityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+
+Returns
+[DescribeModelExplainabilityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelexplainabilityjobdefinitionresponsetypedef).
 
 ### describe_model_package
 
 Type annotations for `boto3.client("sagemaker").describe_model_package` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package]
+Boto3 documentation:
+[SageMaker.Client.describe_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package)
 
-```python
-def describe_model_package(
-    self,
-    ModelPackageName: str
-) -> DescribeModelPackageOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageName`: `str` *(required)*
+
+Returns
+[DescribeModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelpackageoutputtypedef).
 
 ### describe_model_package_group
 
-Type annotations for `boto3.client("sagemaker").describe_model_package_group` method.
+Type annotations for `boto3.client("sagemaker").describe_model_package_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package_group]
+Boto3 documentation:
+[SageMaker.Client.describe_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package_group)
 
-```python
-def describe_model_package_group(
-    self,
-    ModelPackageGroupName: str
-) -> DescribeModelPackageGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
+
+Returns
+[DescribeModelPackageGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelpackagegroupoutputtypedef).
 
 ### describe_model_quality_job_definition
 
-Type annotations for `boto3.client("sagemaker").describe_model_quality_job_definition` method.
+Type annotations for
+`boto3.client("sagemaker").describe_model_quality_job_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_quality_job_definition]
+Boto3 documentation:
+[SageMaker.Client.describe_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_quality_job_definition)
 
-```python
-def describe_model_quality_job_definition(
-    self,
-    JobDefinitionName: str
-) -> DescribeModelQualityJobDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobDefinitionName`: `str` *(required)*
+
+Returns
+[DescribeModelQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelqualityjobdefinitionresponsetypedef).
 
 ### describe_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").describe_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").describe_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.describe_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_monitoring_schedule)
 
-```python
-def describe_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str
-) -> DescribeMonitoringScheduleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
+
+Returns
+[DescribeMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemonitoringscheduleresponsetypedef).
 
 ### describe_notebook_instance
 
-Type annotations for `boto3.client("sagemaker").describe_notebook_instance` method.
+Type annotations for `boto3.client("sagemaker").describe_notebook_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.describe_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance)
 
-```python
-def describe_notebook_instance(
-    self,
-    NotebookInstanceName: str
-) -> DescribeNotebookInstanceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
+
+Returns
+[DescribeNotebookInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describenotebookinstanceoutputtypedef).
 
 ### describe_notebook_instance_lifecycle_config
 
-Type annotations for `boto3.client("sagemaker").describe_notebook_instance_lifecycle_config` method.
+Type annotations for
+`boto3.client("sagemaker").describe_notebook_instance_lifecycle_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance_lifecycle_config]
+Boto3 documentation:
+[SageMaker.Client.describe_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance_lifecycle_config)
 
-```python
-def describe_notebook_instance_lifecycle_config(
-    self,
-    NotebookInstanceLifecycleConfigName: str
-) -> DescribeNotebookInstanceLifecycleConfigOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceLifecycleConfigName`: `str` *(required)*
+
+Returns
+[DescribeNotebookInstanceLifecycleConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describenotebookinstancelifecycleconfigoutputtypedef).
 
 ### describe_pipeline
 
 Type annotations for `boto3.client("sagemaker").describe_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline]
+Boto3 documentation:
+[SageMaker.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline)
 
-```python
-def describe_pipeline(
-    self,
-    PipelineName: str
-) -> DescribePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+
+Returns
+[DescribePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelineresponsetypedef).
 
 ### describe_pipeline_definition_for_execution
 
-Type annotations for `boto3.client("sagemaker").describe_pipeline_definition_for_execution` method.
+Type annotations for
+`boto3.client("sagemaker").describe_pipeline_definition_for_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_definition_for_execution]
+Boto3 documentation:
+[SageMaker.Client.describe_pipeline_definition_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_definition_for_execution)
 
-```python
-def describe_pipeline_definition_for_execution(
-    self,
-    PipelineExecutionArn: str
-) -> DescribePipelineDefinitionForExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+
+Returns
+[DescribePipelineDefinitionForExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelinedefinitionforexecutionresponsetypedef).
 
 ### describe_pipeline_execution
 
-Type annotations for `boto3.client("sagemaker").describe_pipeline_execution` method.
+Type annotations for `boto3.client("sagemaker").describe_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_execution]
+Boto3 documentation:
+[SageMaker.Client.describe_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_execution)
 
-```python
-def describe_pipeline_execution(
-    self,
-    PipelineExecutionArn: str
-) -> DescribePipelineExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+
+Returns
+[DescribePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelineexecutionresponsetypedef).
 
 ### describe_processing_job
 
-Type annotations for `boto3.client("sagemaker").describe_processing_job` method.
+Type annotations for `boto3.client("sagemaker").describe_processing_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_processing_job]
+Boto3 documentation:
+[SageMaker.Client.describe_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_processing_job)
 
-```python
-def describe_processing_job(
-    self,
-    ProcessingJobName: str
-) -> DescribeProcessingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProcessingJobName`: `str` *(required)*
+
+Returns
+[DescribeProcessingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeprocessingjobresponsetypedef).
 
 ### describe_project
 
 Type annotations for `boto3.client("sagemaker").describe_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_project]
+Boto3 documentation:
+[SageMaker.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_project)
 
-```python
-def describe_project(
-    self,
-    ProjectName: str
-) -> DescribeProjectOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+
+Returns
+[DescribeProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeprojectoutputtypedef).
 
 ### describe_subscribed_workteam
 
-Type annotations for `boto3.client("sagemaker").describe_subscribed_workteam` method.
+Type annotations for `boto3.client("sagemaker").describe_subscribed_workteam`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_subscribed_workteam]
+Boto3 documentation:
+[SageMaker.Client.describe_subscribed_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_subscribed_workteam)
 
-```python
-def describe_subscribed_workteam(
-    self,
-    WorkteamArn: str
-) -> DescribeSubscribedWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkteamArn`: `str` *(required)*
+
+Returns
+[DescribeSubscribedWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describesubscribedworkteamresponsetypedef).
 
 ### describe_training_job
 
 Type annotations for `boto3.client("sagemaker").describe_training_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_training_job]
+Boto3 documentation:
+[SageMaker.Client.describe_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_training_job)
 
-```python
-def describe_training_job(
-    self,
-    TrainingJobName: str
-) -> DescribeTrainingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrainingJobName`: `str` *(required)*
+
+Returns
+[DescribeTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrainingjobresponsetypedef).
 
 ### describe_transform_job
 
 Type annotations for `boto3.client("sagemaker").describe_transform_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_transform_job]
+Boto3 documentation:
+[SageMaker.Client.describe_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_transform_job)
 
-```python
-def describe_transform_job(
-    self,
-    TransformJobName: str
-) -> DescribeTransformJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformJobName`: `str` *(required)*
+
+Returns
+[DescribeTransformJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetransformjobresponsetypedef).
 
 ### describe_trial
 
 Type annotations for `boto3.client("sagemaker").describe_trial` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial]
+Boto3 documentation:
+[SageMaker.Client.describe_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial)
 
-```python
-def describe_trial(
-    self,
-    TrialName: str
-) -> DescribeTrialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialName`: `str` *(required)*
+
+Returns
+[DescribeTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrialresponsetypedef).
 
 ### describe_trial_component
 
-Type annotations for `boto3.client("sagemaker").describe_trial_component` method.
+Type annotations for `boto3.client("sagemaker").describe_trial_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial_component]
+Boto3 documentation:
+[SageMaker.Client.describe_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial_component)
 
-```python
-def describe_trial_component(
-    self,
-    TrialComponentName: str
-) -> DescribeTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+
+Returns
+[DescribeTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrialcomponentresponsetypedef).
 
 ### describe_user_profile
 
 Type annotations for `boto3.client("sagemaker").describe_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_user_profile]
+Boto3 documentation:
+[SageMaker.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_user_profile)
 
-```python
-def describe_user_profile(
-    self,
-    DomainId: str,
-    UserProfileName: str
-) -> DescribeUserProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+
+Returns
+[DescribeUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeuserprofileresponsetypedef).
 
 ### describe_workforce
 
 Type annotations for `boto3.client("sagemaker").describe_workforce` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce]
+Boto3 documentation:
+[SageMaker.Client.describe_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce)
 
-```python
-def describe_workforce(
-    self,
-    WorkforceName: str
-) -> DescribeWorkforceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkforceName`: `str` *(required)*
+
+Returns
+[DescribeWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeworkforceresponsetypedef).
 
 ### describe_workteam
 
 Type annotations for `boto3.client("sagemaker").describe_workteam` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workteam]
+Boto3 documentation:
+[SageMaker.Client.describe_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workteam)
 
-```python
-def describe_workteam(
-    self,
-    WorkteamName: str
-) -> DescribeWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkteamName`: `str` *(required)*
+
+Returns
+[DescribeWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeworkteamresponsetypedef).
 
 ### disable_sagemaker_servicecatalog_portfolio
 
-Type annotations for `boto3.client("sagemaker").disable_sagemaker_servicecatalog_portfolio` method.
+Type annotations for
+`boto3.client("sagemaker").disable_sagemaker_servicecatalog_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disable_sagemaker_servicecatalog_portfolio]
+Boto3 documentation:
+[SageMaker.Client.disable_sagemaker_servicecatalog_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disable_sagemaker_servicecatalog_portfolio)
 
-```python
-def disable_sagemaker_servicecatalog_portfolio(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_trial_component
 
-Type annotations for `boto3.client("sagemaker").disassociate_trial_component` method.
+Type annotations for `boto3.client("sagemaker").disassociate_trial_component`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disassociate_trial_component]
+Boto3 documentation:
+[SageMaker.Client.disassociate_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disassociate_trial_component)
 
-```python
-def disassociate_trial_component(
-    self,
-    TrialComponentName: str,
-    TrialName: str
-) -> DisassociateTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+- `TrialName`: `str` *(required)*
+
+Returns
+[DisassociateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#disassociatetrialcomponentresponsetypedef).
 
 ### enable_sagemaker_servicecatalog_portfolio
 
-Type annotations for `boto3.client("sagemaker").enable_sagemaker_servicecatalog_portfolio` method.
+Type annotations for
+`boto3.client("sagemaker").enable_sagemaker_servicecatalog_portfolio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.enable_sagemaker_servicecatalog_portfolio]
+Boto3 documentation:
+[SageMaker.Client.enable_sagemaker_servicecatalog_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.enable_sagemaker_servicecatalog_portfolio)
 
-```python
-def enable_sagemaker_servicecatalog_portfolio(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sagemaker").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.generate_presigned_url]
+Boto3 documentation:
+[SageMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_device_fleet_report
 
-Type annotations for `boto3.client("sagemaker").get_device_fleet_report` method.
+Type annotations for `boto3.client("sagemaker").get_device_fleet_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_device_fleet_report]
+Boto3 documentation:
+[SageMaker.Client.get_device_fleet_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_device_fleet_report)
 
-```python
-def get_device_fleet_report(
-    self,
-    DeviceFleetName: str
-) -> GetDeviceFleetReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+
+Returns
+[GetDeviceFleetReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getdevicefleetreportresponsetypedef).
 
 ### get_model_package_group_policy
 
-Type annotations for `boto3.client("sagemaker").get_model_package_group_policy` method.
+Type annotations for `boto3.client("sagemaker").get_model_package_group_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_model_package_group_policy]
+Boto3 documentation:
+[SageMaker.Client.get_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_model_package_group_policy)
 
-```python
-def get_model_package_group_policy(
-    self,
-    ModelPackageGroupName: str
-) -> GetModelPackageGroupPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
+
+Returns
+[GetModelPackageGroupPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getmodelpackagegrouppolicyoutputtypedef).
 
 ### get_sagemaker_servicecatalog_portfolio_status
 
-Type annotations for `boto3.client("sagemaker").get_sagemaker_servicecatalog_portfolio_status` method.
+Type annotations for
+`boto3.client("sagemaker").get_sagemaker_servicecatalog_portfolio_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status]
+Boto3 documentation:
+[SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status)
 
-```python
-def get_sagemaker_servicecatalog_portfolio_status(
-    self
-) -> GetSagemakerServicecatalogPortfolioStatusOutputTypeDef:
-    pass
-```
+Returns
+[GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getsagemakerservicecatalogportfoliostatusoutputtypedef).
 
 ### get_search_suggestions
 
 Type annotations for `boto3.client("sagemaker").get_search_suggestions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions]
+Boto3 documentation:
+[SageMaker.Client.get_search_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions)
 
-```python
-def get_search_suggestions(
-    self,
-    Resource: ResourceType,
-    SuggestionQuery: SuggestionQueryTypeDef = None
-) -> GetSearchSuggestionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Resource`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#resourcetype)
+  *(required)*
+- `SuggestionQuery`:
+  [SuggestionQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#suggestionquerytypedef)
+
+Returns
+[GetSearchSuggestionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getsearchsuggestionsresponsetypedef).
 
 ### list_actions
 
 Type annotations for `boto3.client("sagemaker").list_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions]
+Boto3 documentation:
+[SageMaker.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions)
 
-```python
-def list_actions(
-    self,
-    SourceUri: str = None,
-    ActionType: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortActionsBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListActionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceUri`: `str`
+- `ActionType`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortActionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortactionsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listactionsresponsetypedef).
 
 ### list_algorithms
 
 Type annotations for `boto3.client("sagemaker").list_algorithms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms]
+Boto3 documentation:
+[SageMaker.Client.list_algorithms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms)
 
-```python
-def list_algorithms(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    SortBy: AlgorithmSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListAlgorithmsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `SortBy`:
+  [AlgorithmSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#algorithmsortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListAlgorithmsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listalgorithmsoutputtypedef).
 
 ### list_app_image_configs
 
 Type annotations for `boto3.client("sagemaker").list_app_image_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs]
+Boto3 documentation:
+[SageMaker.Client.list_app_image_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs)
 
-```python
-def list_app_image_configs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    ModifiedTimeBefore: datetime = None,
-    ModifiedTimeAfter: datetime = None,
-    SortBy: AppImageConfigSortKey = None,
-    SortOrder: SortOrder = None
-) -> ListAppImageConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `ModifiedTimeBefore`: `datetime`
+- `ModifiedTimeAfter`: `datetime`
+- `SortBy`:
+  [AppImageConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appimageconfigsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListAppImageConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappimageconfigsresponsetypedef).
 
 ### list_apps
 
 Type annotations for `boto3.client("sagemaker").list_apps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps]
+Boto3 documentation:
+[SageMaker.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps)
 
-```python
-def list_apps(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortOrder: SortOrder = None,
-    SortBy: Literal['CreationTime'] = None,
-    DomainIdEquals: str = None,
-    UserProfileNameEquals: str = None
-) -> ListAppsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: `Literal['CreationTime']`
+- `DomainIdEquals`: `str`
+- `UserProfileNameEquals`: `str`
+
+Returns
+[ListAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappsresponsetypedef).
 
 ### list_artifacts
 
 Type annotations for `boto3.client("sagemaker").list_artifacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts]
+Boto3 documentation:
+[SageMaker.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts)
 
-```python
-def list_artifacts(
-    self,
-    SourceUri: str = None,
-    ArtifactType: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: Literal['CreationTime'] = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListArtifactsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceUri`: `str`
+- `ArtifactType`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`: `Literal['CreationTime']`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListArtifactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listartifactsresponsetypedef).
 
 ### list_associations
 
 Type annotations for `boto3.client("sagemaker").list_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations]
+Boto3 documentation:
+[SageMaker.Client.list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations)
 
-```python
-def list_associations(
-    self,
-    SourceArn: str = None,
-    DestinationArn: str = None,
-    SourceType: str = None,
-    DestinationType: str = None,
-    AssociationType: AssociationEdgeType = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortAssociationsBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceArn`: `str`
+- `DestinationArn`: `str`
+- `SourceType`: `str`
+- `DestinationType`: `str`
+- `AssociationType`:
+  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortAssociationsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortassociationsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listassociationsresponsetypedef).
 
 ### list_auto_ml_jobs
 
 Type annotations for `boto3.client("sagemaker").list_auto_ml_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_auto_ml_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs)
 
-```python
-def list_auto_ml_jobs(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    StatusEquals: AutoMLJobStatus = None,
-    SortOrder: AutoMLSortOrder = None,
-    SortBy: AutoMLSortBy = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAutoMLJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `StatusEquals`:
+  [AutoMLJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobstatus)
+- `SortOrder`:
+  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
+- `SortBy`:
+  [AutoMLSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAutoMLJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listautomljobsresponsetypedef).
 
 ### list_candidates_for_auto_ml_job
 
-Type annotations for `boto3.client("sagemaker").list_candidates_for_auto_ml_job` method.
+Type annotations for
+`boto3.client("sagemaker").list_candidates_for_auto_ml_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job]
+Boto3 documentation:
+[SageMaker.Client.list_candidates_for_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)
 
-```python
-def list_candidates_for_auto_ml_job(
-    self,
-    AutoMLJobName: str,
-    StatusEquals: CandidateStatus = None,
-    CandidateNameEquals: str = None,
-    SortOrder: AutoMLSortOrder = None,
-    SortBy: CandidateSortBy = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListCandidatesForAutoMLJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AutoMLJobName`: `str` *(required)*
+- `StatusEquals`:
+  [CandidateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatestatus)
+- `CandidateNameEquals`: `str`
+- `SortOrder`:
+  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
+- `SortBy`:
+  [CandidateSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatesortby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListCandidatesForAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcandidatesforautomljobresponsetypedef).
 
 ### list_code_repositories
 
 Type annotations for `boto3.client("sagemaker").list_code_repositories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories]
+Boto3 documentation:
+[SageMaker.Client.list_code_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories)
 
-```python
-def list_code_repositories(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    SortBy: CodeRepositorySortBy = None,
-    SortOrder: CodeRepositorySortOrder = None
-) -> ListCodeRepositoriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `SortBy`:
+  [CodeRepositorySortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortby)
+- `SortOrder`:
+  [CodeRepositorySortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortorder)
+
+Returns
+[ListCodeRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcoderepositoriesoutputtypedef).
 
 ### list_compilation_jobs
 
 Type annotations for `boto3.client("sagemaker").list_compilation_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_compilation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs)
 
-```python
-def list_compilation_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    StatusEquals: CompilationJobStatus = None,
-    SortBy: ListCompilationJobsSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListCompilationJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `StatusEquals`:
+  [CompilationJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compilationjobstatus)
+- `SortBy`:
+  [ListCompilationJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listcompilationjobssortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListCompilationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcompilationjobsresponsetypedef).
 
 ### list_contexts
 
 Type annotations for `boto3.client("sagemaker").list_contexts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts]
+Boto3 documentation:
+[SageMaker.Client.list_contexts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts)
 
-```python
-def list_contexts(
-    self,
-    SourceUri: str = None,
-    ContextType: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortContextsBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListContextsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceUri`: `str`
+- `ContextType`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortContextsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortcontextsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListContextsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcontextsresponsetypedef).
 
 ### list_data_quality_job_definitions
 
-Type annotations for `boto3.client("sagemaker").list_data_quality_job_definitions` method.
+Type annotations for
+`boto3.client("sagemaker").list_data_quality_job_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions]
+Boto3 documentation:
+[SageMaker.Client.list_data_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions)
 
-```python
-def list_data_quality_job_definitions(
-    self,
-    EndpointName: str = None,
-    SortBy: MonitoringJobDefinitionSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListDataQualityJobDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListDataQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdataqualityjobdefinitionsresponsetypedef).
 
 ### list_device_fleets
 
 Type annotations for `boto3.client("sagemaker").list_device_fleets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets]
+Boto3 documentation:
+[SageMaker.Client.list_device_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets)
 
-```python
-def list_device_fleets(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    SortBy: ListDeviceFleetsSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListDeviceFleetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `SortBy`:
+  [ListDeviceFleetsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listdevicefleetssortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListDeviceFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicefleetsresponsetypedef).
 
 ### list_devices
 
 Type annotations for `boto3.client("sagemaker").list_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices]
+Boto3 documentation:
+[SageMaker.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices)
 
-```python
-def list_devices(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    LatestHeartbeatAfter: datetime = None,
-    ModelName: str = None,
-    DeviceFleetName: str = None
-) -> ListDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `LatestHeartbeatAfter`: `datetime`
+- `ModelName`: `str`
+- `DeviceFleetName`: `str`
+
+Returns
+[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicesresponsetypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("sagemaker").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_domains]
+Boto3 documentation:
+[SageMaker.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdomainsresponsetypedef).
 
 ### list_edge_packaging_jobs
 
-Type annotations for `boto3.client("sagemaker").list_edge_packaging_jobs` method.
+Type annotations for `boto3.client("sagemaker").list_edge_packaging_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_edge_packaging_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs)
 
-```python
-def list_edge_packaging_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    ModelNameContains: str = None,
-    StatusEquals: EdgePackagingJobStatus = None,
-    SortBy: ListEdgePackagingJobsSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListEdgePackagingJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `ModelNameContains`: `str`
+- `StatusEquals`:
+  [EdgePackagingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#edgepackagingjobstatus)
+- `SortBy`:
+  [ListEdgePackagingJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listedgepackagingjobssortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListEdgePackagingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listedgepackagingjobsresponsetypedef).
 
 ### list_endpoint_configs
 
 Type annotations for `boto3.client("sagemaker").list_endpoint_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs]
+Boto3 documentation:
+[SageMaker.Client.list_endpoint_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs)
 
-```python
-def list_endpoint_configs(
-    self,
-    SortBy: EndpointConfigSortKey = None,
-    SortOrder: OrderKey = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListEndpointConfigsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `SortBy`:
+  [EndpointConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointconfigsortkey)
+- `SortOrder`:
+  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListEndpointConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointconfigsoutputtypedef).
 
 ### list_endpoints
 
 Type annotations for `boto3.client("sagemaker").list_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints]
+Boto3 documentation:
+[SageMaker.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints)
 
-```python
-def list_endpoints(
-    self,
-    SortBy: EndpointSortKey = None,
-    SortOrder: OrderKey = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    StatusEquals: EndpointStatus = None
-) -> ListEndpointsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `SortBy`:
+  [EndpointSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointsortkey)
+- `SortOrder`:
+  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `StatusEquals`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
+
+Returns
+[ListEndpointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointsoutputtypedef).
 
 ### list_experiments
 
 Type annotations for `boto3.client("sagemaker").list_experiments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments]
+Boto3 documentation:
+[SageMaker.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments)
 
-```python
-def list_experiments(
-    self,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortExperimentsBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListExperimentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortExperimentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortexperimentsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListExperimentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listexperimentsresponsetypedef).
 
 ### list_feature_groups
 
 Type annotations for `boto3.client("sagemaker").list_feature_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups]
+Boto3 documentation:
+[SageMaker.Client.list_feature_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups)
 
-```python
-def list_feature_groups(
-    self,
-    NameContains: str = None,
-    FeatureGroupStatusEquals: FeatureGroupStatus = None,
-    OfflineStoreStatusEquals: OfflineStoreStatusValue = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    SortOrder: FeatureGroupSortOrder = None,
-    SortBy: FeatureGroupSortBy = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFeatureGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NameContains`: `str`
+- `FeatureGroupStatusEquals`:
+  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+- `OfflineStoreStatusEquals`:
+  [OfflineStoreStatusValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#offlinestorestatusvalue)
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `SortOrder`:
+  [FeatureGroupSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortorder)
+- `SortBy`:
+  [FeatureGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFeatureGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listfeaturegroupsresponsetypedef).
 
 ### list_flow_definitions
 
 Type annotations for `boto3.client("sagemaker").list_flow_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions]
+Boto3 documentation:
+[SageMaker.Client.list_flow_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions)
 
-```python
-def list_flow_definitions(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListFlowDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFlowDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listflowdefinitionsresponsetypedef).
 
 ### list_human_task_uis
 
 Type annotations for `boto3.client("sagemaker").list_human_task_uis` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis]
+Boto3 documentation:
+[SageMaker.Client.list_human_task_uis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis)
 
-```python
-def list_human_task_uis(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHumanTaskUisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHumanTaskUisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhumantaskuisresponsetypedef).
 
 ### list_hyper_parameter_tuning_jobs
 
-Type annotations for `boto3.client("sagemaker").list_hyper_parameter_tuning_jobs` method.
+Type annotations for
+`boto3.client("sagemaker").list_hyper_parameter_tuning_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_hyper_parameter_tuning_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs)
 
-```python
-def list_hyper_parameter_tuning_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortBy: HyperParameterTuningJobSortByOptions = None,
-    SortOrder: SortOrder = None,
-    NameContains: str = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    StatusEquals: HyperParameterTuningJobStatus = None
-) -> ListHyperParameterTuningJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortBy`:
+  [HyperParameterTuningJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobsortbyoptions)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NameContains`: `str`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `StatusEquals`:
+  [HyperParameterTuningJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstatus)
+
+Returns
+[ListHyperParameterTuningJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhyperparametertuningjobsresponsetypedef).
 
 ### list_image_versions
 
 Type annotations for `boto3.client("sagemaker").list_image_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions]
+Boto3 documentation:
+[SageMaker.Client.list_image_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions)
 
-```python
-def list_image_versions(
-    self,
-    ImageName: str,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: ImageVersionSortBy = None,
-    SortOrder: ImageVersionSortOrder = None
-) -> ListImageVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [ImageVersionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortby)
+- `SortOrder`:
+  [ImageVersionSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortorder)
+
+Returns
+[ListImageVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimageversionsresponsetypedef).
 
 ### list_images
 
 Type annotations for `boto3.client("sagemaker").list_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images]
+Boto3 documentation:
+[SageMaker.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images)
 
-```python
-def list_images(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    SortBy: ImageSortBy = None,
-    SortOrder: ImageSortOrder = None
-) -> ListImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `SortBy`:
+  [ImageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortby)
+- `SortOrder`:
+  [ImageSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortorder)
+
+Returns
+[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimagesresponsetypedef).
 
 ### list_labeling_jobs
 
 Type annotations for `boto3.client("sagemaker").list_labeling_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_labeling_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs)
 
-```python
-def list_labeling_jobs(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    NameContains: str = None,
-    SortBy: SortBy = None,
-    SortOrder: SortOrder = None,
-    StatusEquals: LabelingJobStatus = None
-) -> ListLabelingJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `NameContains`: `str`
+- `SortBy`:
+  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`:
+  [LabelingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#labelingjobstatus)
+
+Returns
+[ListLabelingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsresponsetypedef).
 
 ### list_labeling_jobs_for_workteam
 
-Type annotations for `boto3.client("sagemaker").list_labeling_jobs_for_workteam` method.
+Type annotations for
+`boto3.client("sagemaker").list_labeling_jobs_for_workteam` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam]
+Boto3 documentation:
+[SageMaker.Client.list_labeling_jobs_for_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam)
 
-```python
-def list_labeling_jobs_for_workteam(
-    self,
-    WorkteamArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    JobReferenceCodeContains: str = None,
-    SortBy: Literal['CreationTime'] = None,
-    SortOrder: SortOrder = None
-) -> ListLabelingJobsForWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkteamArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `JobReferenceCodeContains`: `str`
+- `SortBy`: `Literal['CreationTime']`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListLabelingJobsForWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsforworkteamresponsetypedef).
 
 ### list_model_bias_job_definitions
 
-Type annotations for `boto3.client("sagemaker").list_model_bias_job_definitions` method.
+Type annotations for
+`boto3.client("sagemaker").list_model_bias_job_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions]
+Boto3 documentation:
+[SageMaker.Client.list_model_bias_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions)
 
-```python
-def list_model_bias_job_definitions(
-    self,
-    EndpointName: str = None,
-    SortBy: MonitoringJobDefinitionSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListModelBiasJobDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListModelBiasJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelbiasjobdefinitionsresponsetypedef).
 
 ### list_model_explainability_job_definitions
 
-Type annotations for `boto3.client("sagemaker").list_model_explainability_job_definitions` method.
+Type annotations for
+`boto3.client("sagemaker").list_model_explainability_job_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions]
+Boto3 documentation:
+[SageMaker.Client.list_model_explainability_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions)
 
-```python
-def list_model_explainability_job_definitions(
-    self,
-    EndpointName: str = None,
-    SortBy: MonitoringJobDefinitionSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListModelExplainabilityJobDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListModelExplainabilityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelexplainabilityjobdefinitionsresponsetypedef).
 
 ### list_model_package_groups
 
-Type annotations for `boto3.client("sagemaker").list_model_package_groups` method.
+Type annotations for `boto3.client("sagemaker").list_model_package_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups]
+Boto3 documentation:
+[SageMaker.Client.list_model_package_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups)
 
-```python
-def list_model_package_groups(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    SortBy: ModelPackageGroupSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListModelPackageGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `SortBy`:
+  [ModelPackageGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupsortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListModelPackageGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagegroupsoutputtypedef).
 
 ### list_model_packages
 
 Type annotations for `boto3.client("sagemaker").list_model_packages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages]
+Boto3 documentation:
+[SageMaker.Client.list_model_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages)
 
-```python
-def list_model_packages(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    ModelApprovalStatus: ModelApprovalStatus = None,
-    ModelPackageGroupName: str = None,
-    ModelPackageType: ModelPackageType = None,
-    NextToken: str = None,
-    SortBy: ModelPackageSortBy = None,
-    SortOrder: SortOrder = None
-) -> ListModelPackagesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `ModelPackageGroupName`: `str`
+- `ModelPackageType`:
+  [ModelPackageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagetype)
+- `NextToken`: `str`
+- `SortBy`:
+  [ModelPackageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagesortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListModelPackagesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagesoutputtypedef).
 
 ### list_model_quality_job_definitions
 
-Type annotations for `boto3.client("sagemaker").list_model_quality_job_definitions` method.
+Type annotations for
+`boto3.client("sagemaker").list_model_quality_job_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions]
+Boto3 documentation:
+[SageMaker.Client.list_model_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions)
 
-```python
-def list_model_quality_job_definitions(
-    self,
-    EndpointName: str = None,
-    SortBy: MonitoringJobDefinitionSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListModelQualityJobDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListModelQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelqualityjobdefinitionsresponsetypedef).
 
 ### list_models
 
 Type annotations for `boto3.client("sagemaker").list_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models]
+Boto3 documentation:
+[SageMaker.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models)
 
-```python
-def list_models(
-    self,
-    SortBy: ModelSortKey = None,
-    SortOrder: OrderKey = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None
-) -> ListModelsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `SortBy`:
+  [ModelSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelsortkey)
+- `SortOrder`:
+  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+
+Returns
+[ListModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelsoutputtypedef).
 
 ### list_monitoring_executions
 
-Type annotations for `boto3.client("sagemaker").list_monitoring_executions` method.
+Type annotations for `boto3.client("sagemaker").list_monitoring_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions]
+Boto3 documentation:
+[SageMaker.Client.list_monitoring_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions)
 
-```python
-def list_monitoring_executions(
-    self,
-    MonitoringScheduleName: str = None,
-    EndpointName: str = None,
-    SortBy: MonitoringExecutionSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ScheduledTimeBefore: datetime = None,
-    ScheduledTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    StatusEquals: ExecutionStatus = None,
-    MonitoringJobDefinitionName: str = None,
-    MonitoringTypeEquals: MonitoringType = None
-) -> ListMonitoringExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str`
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringExecutionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringexecutionsortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ScheduledTimeBefore`: `datetime`
+- `ScheduledTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `StatusEquals`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#executionstatus)
+- `MonitoringJobDefinitionName`: `str`
+- `MonitoringTypeEquals`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+
+Returns
+[ListMonitoringExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringexecutionsresponsetypedef).
 
 ### list_monitoring_schedules
 
-Type annotations for `boto3.client("sagemaker").list_monitoring_schedules` method.
+Type annotations for `boto3.client("sagemaker").list_monitoring_schedules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules]
+Boto3 documentation:
+[SageMaker.Client.list_monitoring_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules)
 
-```python
-def list_monitoring_schedules(
-    self,
-    EndpointName: str = None,
-    SortBy: MonitoringScheduleSortKey = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    StatusEquals: ScheduleStatus = None,
-    MonitoringJobDefinitionName: str = None,
-    MonitoringTypeEquals: MonitoringType = None
-) -> ListMonitoringSchedulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str`
+- `SortBy`:
+  [MonitoringScheduleSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringschedulesortkey)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `StatusEquals`:
+  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
+- `MonitoringJobDefinitionName`: `str`
+- `MonitoringTypeEquals`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+
+Returns
+[ListMonitoringSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringschedulesresponsetypedef).
 
 ### list_notebook_instance_lifecycle_configs
 
-Type annotations for `boto3.client("sagemaker").list_notebook_instance_lifecycle_configs` method.
+Type annotations for
+`boto3.client("sagemaker").list_notebook_instance_lifecycle_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs]
+Boto3 documentation:
+[SageMaker.Client.list_notebook_instance_lifecycle_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs)
 
-```python
-def list_notebook_instance_lifecycle_configs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortBy: NotebookInstanceLifecycleConfigSortKey = None,
-    SortOrder: NotebookInstanceLifecycleConfigSortOrder = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None
-) -> ListNotebookInstanceLifecycleConfigsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortBy`:
+  [NotebookInstanceLifecycleConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortkey)
+- `SortOrder`:
+  [NotebookInstanceLifecycleConfigSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortorder)
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+
+Returns
+[ListNotebookInstanceLifecycleConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancelifecycleconfigsoutputtypedef).
 
 ### list_notebook_instances
 
-Type annotations for `boto3.client("sagemaker").list_notebook_instances` method.
+Type annotations for `boto3.client("sagemaker").list_notebook_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances]
+Boto3 documentation:
+[SageMaker.Client.list_notebook_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances)
 
-```python
-def list_notebook_instances(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortBy: NotebookInstanceSortKey = None,
-    SortOrder: NotebookInstanceSortOrder = None,
-    NameContains: str = None,
-    CreationTimeBefore: datetime = None,
-    CreationTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    StatusEquals: NotebookInstanceStatus = None,
-    NotebookInstanceLifecycleConfigNameContains: str = None,
-    DefaultCodeRepositoryContains: str = None,
-    AdditionalCodeRepositoryEquals: str = None
-) -> ListNotebookInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortBy`:
+  [NotebookInstanceSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortkey)
+- `SortOrder`:
+  [NotebookInstanceSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortorder)
+- `NameContains`: `str`
+- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `StatusEquals`:
+  [NotebookInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancestatus)
+- `NotebookInstanceLifecycleConfigNameContains`: `str`
+- `DefaultCodeRepositoryContains`: `str`
+- `AdditionalCodeRepositoryEquals`: `str`
+
+Returns
+[ListNotebookInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancesoutputtypedef).
 
 ### list_pipeline_execution_steps
 
-Type annotations for `boto3.client("sagemaker").list_pipeline_execution_steps` method.
+Type annotations for `boto3.client("sagemaker").list_pipeline_execution_steps`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps]
+Boto3 documentation:
+[SageMaker.Client.list_pipeline_execution_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps)
 
-```python
-def list_pipeline_execution_steps(
-    self,
-    PipelineExecutionArn: str = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortOrder: SortOrder = None
-) -> ListPipelineExecutionStepsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListPipelineExecutionStepsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionstepsresponsetypedef).
 
 ### list_pipeline_executions
 
-Type annotations for `boto3.client("sagemaker").list_pipeline_executions` method.
+Type annotations for `boto3.client("sagemaker").list_pipeline_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions]
+Boto3 documentation:
+[SageMaker.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions)
 
-```python
-def list_pipeline_executions(
-    self,
-    PipelineName: str,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortPipelineExecutionsBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPipelineExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortPipelineExecutionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelineexecutionsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPipelineExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionsresponsetypedef).
 
 ### list_pipeline_parameters_for_execution
 
-Type annotations for `boto3.client("sagemaker").list_pipeline_parameters_for_execution` method.
+Type annotations for
+`boto3.client("sagemaker").list_pipeline_parameters_for_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution]
+Boto3 documentation:
+[SageMaker.Client.list_pipeline_parameters_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution)
 
-```python
-def list_pipeline_parameters_for_execution(
-    self,
-    PipelineExecutionArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPipelineParametersForExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPipelineParametersForExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineparametersforexecutionresponsetypedef).
 
 ### list_pipelines
 
 Type annotations for `boto3.client("sagemaker").list_pipelines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines]
+Boto3 documentation:
+[SageMaker.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines)
 
-```python
-def list_pipelines(
-    self,
-    PipelineNamePrefix: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortPipelinesBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPipelinesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineNamePrefix`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortPipelinesBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelinesby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelinesresponsetypedef).
 
 ### list_processing_jobs
 
 Type annotations for `boto3.client("sagemaker").list_processing_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_processing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs)
 
-```python
-def list_processing_jobs(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    StatusEquals: ProcessingJobStatus = None,
-    SortBy: SortBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProcessingJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `StatusEquals`:
+  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
+- `SortBy`:
+  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProcessingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listprocessingjobsresponsetypedef).
 
 ### list_projects
 
 Type annotations for `boto3.client("sagemaker").list_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects]
+Boto3 documentation:
+[SageMaker.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects)
 
-```python
-def list_projects(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    MaxResults: int = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    SortBy: ProjectSortBy = None,
-    SortOrder: ProjectSortOrder = None
-) -> ListProjectsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `SortBy`:
+  [ProjectSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectsortby)
+- `SortOrder`:
+  [ProjectSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectsortorder)
+
+Returns
+[ListProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listprojectsoutputtypedef).
 
 ### list_subscribed_workteams
 
-Type annotations for `boto3.client("sagemaker").list_subscribed_workteams` method.
+Type annotations for `boto3.client("sagemaker").list_subscribed_workteams`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams]
+Boto3 documentation:
+[SageMaker.Client.list_subscribed_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams)
 
-```python
-def list_subscribed_workteams(
-    self,
-    NameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListSubscribedWorkteamsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSubscribedWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listsubscribedworkteamsresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("sagemaker").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags]
+Boto3 documentation:
+[SageMaker.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtagsoutputtypedef).
 
 ### list_training_jobs
 
 Type annotations for `boto3.client("sagemaker").list_training_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_training_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs)
 
-```python
-def list_training_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    StatusEquals: TrainingJobStatus = None,
-    SortBy: SortBy = None,
-    SortOrder: SortOrder = None
-) -> ListTrainingJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `StatusEquals`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
+- `SortBy`:
+  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListTrainingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsresponsetypedef).
 
 ### list_training_jobs_for_hyper_parameter_tuning_job
 
-Type annotations for `boto3.client("sagemaker").list_training_jobs_for_hyper_parameter_tuning_job` method.
+Type annotations for
+`boto3.client("sagemaker").list_training_jobs_for_hyper_parameter_tuning_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job]
+Boto3 documentation:
+[SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job)
 
-```python
-def list_training_jobs_for_hyper_parameter_tuning_job(
-    self,
-    HyperParameterTuningJobName: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StatusEquals: TrainingJobStatus = None,
-    SortBy: TrainingJobSortByOptions = None,
-    SortOrder: SortOrder = None
-) -> ListTrainingJobsForHyperParameterTuningJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HyperParameterTuningJobName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StatusEquals`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
+- `SortBy`:
+  [TrainingJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobsortbyoptions)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+
+Returns
+[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsforhyperparametertuningjobresponsetypedef).
 
 ### list_transform_jobs
 
 Type annotations for `boto3.client("sagemaker").list_transform_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs]
+Boto3 documentation:
+[SageMaker.Client.list_transform_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs)
 
-```python
-def list_transform_jobs(
-    self,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    LastModifiedTimeAfter: datetime = None,
-    LastModifiedTimeBefore: datetime = None,
-    NameContains: str = None,
-    StatusEquals: TransformJobStatus = None,
-    SortBy: SortBy = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTransformJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `LastModifiedTimeAfter`: `datetime`
+- `LastModifiedTimeBefore`: `datetime`
+- `NameContains`: `str`
+- `StatusEquals`:
+  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
+- `SortBy`:
+  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTransformJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtransformjobsresponsetypedef).
 
 ### list_trial_components
 
 Type annotations for `boto3.client("sagemaker").list_trial_components` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components]
+Boto3 documentation:
+[SageMaker.Client.list_trial_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components)
 
-```python
-def list_trial_components(
-    self,
-    ExperimentName: str = None,
-    TrialName: str = None,
-    SourceArn: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortTrialComponentsBy = None,
-    SortOrder: SortOrder = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTrialComponentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str`
+- `TrialName`: `str`
+- `SourceArn`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortTrialComponentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialcomponentsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTrialComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialcomponentsresponsetypedef).
 
 ### list_trials
 
 Type annotations for `boto3.client("sagemaker").list_trials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials]
+Boto3 documentation:
+[SageMaker.Client.list_trials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials)
 
-```python
-def list_trials(
-    self,
-    ExperimentName: str = None,
-    TrialComponentName: str = None,
-    CreatedAfter: datetime = None,
-    CreatedBefore: datetime = None,
-    SortBy: SortTrialsBy = None,
-    SortOrder: SortOrder = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTrialsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str`
+- `TrialComponentName`: `str`
+- `CreatedAfter`: `datetime`
+- `CreatedBefore`: `datetime`
+- `SortBy`:
+  [SortTrialsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialsby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTrialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialsresponsetypedef).
 
 ### list_user_profiles
 
 Type annotations for `boto3.client("sagemaker").list_user_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles]
+Boto3 documentation:
+[SageMaker.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles)
 
-```python
-def list_user_profiles(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    SortOrder: SortOrder = None,
-    SortBy: UserProfileSortKey = None,
-    DomainIdEquals: str = None,
-    UserProfileNameContains: str = None
-) -> ListUserProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`:
+  [UserProfileSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#userprofilesortkey)
+- `DomainIdEquals`: `str`
+- `UserProfileNameContains`: `str`
+
+Returns
+[ListUserProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listuserprofilesresponsetypedef).
 
 ### list_workforces
 
 Type annotations for `boto3.client("sagemaker").list_workforces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces]
+Boto3 documentation:
+[SageMaker.Client.list_workforces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces)
 
-```python
-def list_workforces(
-    self,
-    SortBy: ListWorkforcesSortByOptions = None,
-    SortOrder: SortOrder = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkforcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SortBy`:
+  [ListWorkforcesSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkforcessortbyoptions)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkforcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkforcesresponsetypedef).
 
 ### list_workteams
 
 Type annotations for `boto3.client("sagemaker").list_workteams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams]
+Boto3 documentation:
+[SageMaker.Client.list_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams)
 
-```python
-def list_workteams(
-    self,
-    SortBy: ListWorkteamsSortByOptions = None,
-    SortOrder: SortOrder = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkteamsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SortBy`:
+  [ListWorkteamsSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkteamssortbyoptions)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkteamsresponsetypedef).
 
 ### put_model_package_group_policy
 
-Type annotations for `boto3.client("sagemaker").put_model_package_group_policy` method.
+Type annotations for `boto3.client("sagemaker").put_model_package_group_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.put_model_package_group_policy]
+Boto3 documentation:
+[SageMaker.Client.put_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.put_model_package_group_policy)
 
-```python
-def put_model_package_group_policy(
-    self,
-    ModelPackageGroupName: str,
-    ResourcePolicy: str
-) -> PutModelPackageGroupPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageGroupName`: `str` *(required)*
+- `ResourcePolicy`: `str` *(required)*
+
+Returns
+[PutModelPackageGroupPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#putmodelpackagegrouppolicyoutputtypedef).
 
 ### register_devices
 
 Type annotations for `boto3.client("sagemaker").register_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices]
+Boto3 documentation:
+[SageMaker.Client.register_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices)
 
-```python
-def register_devices(
-    self,
-    DeviceFleetName: str,
-    Devices: List[DeviceTypeDef],
-    Tags: List["TagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+- `Devices`:
+  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicetypedef)\]
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ### render_ui_template
 
 Type annotations for `boto3.client("sagemaker").render_ui_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template]
+Boto3 documentation:
+[SageMaker.Client.render_ui_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template)
 
-```python
-def render_ui_template(
-    self,
-    Task: RenderableTaskTypeDef,
-    RoleArn: str,
-    UiTemplate: UiTemplateTypeDef = None,
-    HumanTaskUiArn: str = None
-) -> RenderUiTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Task`:
+  [RenderableTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#renderabletasktypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `UiTemplate`:
+  [UiTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uitemplatetypedef)
+- `HumanTaskUiArn`: `str`
+
+Returns
+[RenderUiTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#renderuitemplateresponsetypedef).
 
 ### search
 
 Type annotations for `boto3.client("sagemaker").search` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search]
+Boto3 documentation:
+[SageMaker.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search)
 
-```python
-def search(
-    self,
-    Resource: ResourceType,
-    SearchExpression: "SearchExpressionTypeDef" = None,
-    SortBy: str = None,
-    SortOrder: SearchSortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> SearchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Resource`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#resourcetype)
+  *(required)*
+- `SearchExpression`:
+  [SearchExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchexpressiontypedef)
+- `SortBy`: `str`
+- `SortOrder`:
+  [SearchSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#searchsortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[SearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchresponsetypedef).
 
 ### start_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").start_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").start_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.start_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_monitoring_schedule)
 
-```python
-def start_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
 
 ### start_notebook_instance
 
-Type annotations for `boto3.client("sagemaker").start_notebook_instance` method.
+Type annotations for `boto3.client("sagemaker").start_notebook_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.start_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_notebook_instance)
 
-```python
-def start_notebook_instance(
-    self,
-    NotebookInstanceName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
 
 ### start_pipeline_execution
 
-Type annotations for `boto3.client("sagemaker").start_pipeline_execution` method.
+Type annotations for `boto3.client("sagemaker").start_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution]
+Boto3 documentation:
+[SageMaker.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution)
 
-```python
-def start_pipeline_execution(
-    self,
-    PipelineName: str,
-    ClientRequestToken: str,
-    PipelineExecutionDisplayName: str = None,
-    PipelineParameters: List["ParameterTypeDef"] = None,
-    PipelineExecutionDescription: str = None
-) -> StartPipelineExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `PipelineExecutionDisplayName`: `str`
+- `PipelineParameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parametertypedef)\]
+- `PipelineExecutionDescription`: `str`
+
+Returns
+[StartPipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#startpipelineexecutionresponsetypedef).
 
 ### stop_auto_ml_job
 
 Type annotations for `boto3.client("sagemaker").stop_auto_ml_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job]
+Boto3 documentation:
+[SageMaker.Client.stop_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job)
 
-```python
-def stop_auto_ml_job(
-    self,
-    AutoMLJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AutoMLJobName`: `str` *(required)*
 
 ### stop_compilation_job
 
 Type annotations for `boto3.client("sagemaker").stop_compilation_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_compilation_job]
+Boto3 documentation:
+[SageMaker.Client.stop_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_compilation_job)
 
-```python
-def stop_compilation_job(
-    self,
-    CompilationJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CompilationJobName`: `str` *(required)*
 
 ### stop_edge_packaging_job
 
-Type annotations for `boto3.client("sagemaker").stop_edge_packaging_job` method.
+Type annotations for `boto3.client("sagemaker").stop_edge_packaging_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_packaging_job]
+Boto3 documentation:
+[SageMaker.Client.stop_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_packaging_job)
 
-```python
-def stop_edge_packaging_job(
-    self,
-    EdgePackagingJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EdgePackagingJobName`: `str` *(required)*
 
 ### stop_hyper_parameter_tuning_job
 
-Type annotations for `boto3.client("sagemaker").stop_hyper_parameter_tuning_job` method.
+Type annotations for
+`boto3.client("sagemaker").stop_hyper_parameter_tuning_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_hyper_parameter_tuning_job]
+Boto3 documentation:
+[SageMaker.Client.stop_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_hyper_parameter_tuning_job)
 
-```python
-def stop_hyper_parameter_tuning_job(
-    self,
-    HyperParameterTuningJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `HyperParameterTuningJobName`: `str` *(required)*
 
 ### stop_labeling_job
 
 Type annotations for `boto3.client("sagemaker").stop_labeling_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_labeling_job]
+Boto3 documentation:
+[SageMaker.Client.stop_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_labeling_job)
 
-```python
-def stop_labeling_job(
-    self,
-    LabelingJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `LabelingJobName`: `str` *(required)*
 
 ### stop_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").stop_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").stop_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.stop_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_monitoring_schedule)
 
-```python
-def stop_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
 
 ### stop_notebook_instance
 
 Type annotations for `boto3.client("sagemaker").stop_notebook_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.stop_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_notebook_instance)
 
-```python
-def stop_notebook_instance(
-    self,
-    NotebookInstanceName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
 
 ### stop_pipeline_execution
 
-Type annotations for `boto3.client("sagemaker").stop_pipeline_execution` method.
+Type annotations for `boto3.client("sagemaker").stop_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_pipeline_execution]
+Boto3 documentation:
+[SageMaker.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_pipeline_execution)
 
-```python
-def stop_pipeline_execution(
-    self,
-    PipelineExecutionArn: str,
-    ClientRequestToken: str
-) -> StopPipelineExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[StopPipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppipelineexecutionresponsetypedef).
 
 ### stop_processing_job
 
 Type annotations for `boto3.client("sagemaker").stop_processing_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_processing_job]
+Boto3 documentation:
+[SageMaker.Client.stop_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_processing_job)
 
-```python
-def stop_processing_job(
-    self,
-    ProcessingJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ProcessingJobName`: `str` *(required)*
 
 ### stop_training_job
 
 Type annotations for `boto3.client("sagemaker").stop_training_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_training_job]
+Boto3 documentation:
+[SageMaker.Client.stop_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_training_job)
 
-```python
-def stop_training_job(
-    self,
-    TrainingJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TrainingJobName`: `str` *(required)*
 
 ### stop_transform_job
 
 Type annotations for `boto3.client("sagemaker").stop_transform_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_transform_job]
+Boto3 documentation:
+[SageMaker.Client.stop_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_transform_job)
 
-```python
-def stop_transform_job(
-    self,
-    TransformJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TransformJobName`: `str` *(required)*
 
 ### update_action
 
 Type annotations for `boto3.client("sagemaker").update_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action]
+Boto3 documentation:
+[SageMaker.Client.update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action)
 
-```python
-def update_action(
-    self,
-    ActionName: str,
-    Description: str = None,
-    Status: ActionStatus = None,
-    Properties: Dict[str, str] = None,
-    PropertiesToRemove: List[str] = None
-) -> UpdateActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionName`: `str` *(required)*
+- `Description`: `str`
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
+- `Properties`: `Dict`\[`str`, `str`\]
+- `PropertiesToRemove`: `List`\[`str`\]
+
+Returns
+[UpdateActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateactionresponsetypedef).
 
 ### update_app_image_config
 
-Type annotations for `boto3.client("sagemaker").update_app_image_config` method.
+Type annotations for `boto3.client("sagemaker").update_app_image_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_app_image_config]
+Boto3 documentation:
+[SageMaker.Client.update_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_app_image_config)
 
-```python
-def update_app_image_config(
-    self,
-    AppImageConfigName: str,
-    KernelGatewayImageConfig: "KernelGatewayImageConfigTypeDef" = None
-) -> UpdateAppImageConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppImageConfigName`: `str` *(required)*
+- `KernelGatewayImageConfig`:
+  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
+
+Returns
+[UpdateAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateappimageconfigresponsetypedef).
 
 ### update_artifact
 
 Type annotations for `boto3.client("sagemaker").update_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact]
+Boto3 documentation:
+[SageMaker.Client.update_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact)
 
-```python
-def update_artifact(
-    self,
-    ArtifactArn: str,
-    ArtifactName: str = None,
-    Properties: Dict[str, str] = None,
-    PropertiesToRemove: List[str] = None
-) -> UpdateArtifactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ArtifactArn`: `str` *(required)*
+- `ArtifactName`: `str`
+- `Properties`: `Dict`\[`str`, `str`\]
+- `PropertiesToRemove`: `List`\[`str`\]
+
+Returns
+[UpdateArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateartifactresponsetypedef).
 
 ### update_code_repository
 
 Type annotations for `boto3.client("sagemaker").update_code_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_code_repository]
+Boto3 documentation:
+[SageMaker.Client.update_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_code_repository)
 
-```python
-def update_code_repository(
-    self,
-    CodeRepositoryName: str,
-    GitConfig: GitConfigForUpdateTypeDef = None
-) -> UpdateCodeRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeRepositoryName`: `str` *(required)*
+- `GitConfig`:
+  [GitConfigForUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigforupdatetypedef)
+
+Returns
+[UpdateCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatecoderepositoryoutputtypedef).
 
 ### update_context
 
 Type annotations for `boto3.client("sagemaker").update_context` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context]
+Boto3 documentation:
+[SageMaker.Client.update_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context)
 
-```python
-def update_context(
-    self,
-    ContextName: str,
-    Description: str = None,
-    Properties: Dict[str, str] = None,
-    PropertiesToRemove: List[str] = None
-) -> UpdateContextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContextName`: `str` *(required)*
+- `Description`: `str`
+- `Properties`: `Dict`\[`str`, `str`\]
+- `PropertiesToRemove`: `List`\[`str`\]
+
+Returns
+[UpdateContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatecontextresponsetypedef).
 
 ### update_device_fleet
 
 Type annotations for `boto3.client("sagemaker").update_device_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet]
+Boto3 documentation:
+[SageMaker.Client.update_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet)
 
-```python
-def update_device_fleet(
-    self,
-    DeviceFleetName: str,
-    OutputConfig: "EdgeOutputConfigTypeDef",
-    RoleArn: str = None,
-    Description: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
+  *(required)*
+- `RoleArn`: `str`
+- `Description`: `str`
 
 ### update_devices
 
 Type annotations for `boto3.client("sagemaker").update_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_devices]
+Boto3 documentation:
+[SageMaker.Client.update_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_devices)
 
-```python
-def update_devices(
-    self,
-    DeviceFleetName: str,
-    Devices: List[DeviceTypeDef]
-) -> None:
-    pass
-```
+Arguments:
+
+- `DeviceFleetName`: `str` *(required)*
+- `Devices`:
+  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicetypedef)\]
+  *(required)*
 
 ### update_domain
 
 Type annotations for `boto3.client("sagemaker").update_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_domain]
+Boto3 documentation:
+[SageMaker.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_domain)
 
-```python
-def update_domain(
-    self,
-    DomainId: str,
-    DefaultUserSettings: "UserSettingsTypeDef" = None
-) -> UpdateDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `DefaultUserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+
+Returns
+[UpdateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatedomainresponsetypedef).
 
 ### update_endpoint
 
 Type annotations for `boto3.client("sagemaker").update_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint]
+Boto3 documentation:
+[SageMaker.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint)
 
-```python
-def update_endpoint(
-    self,
-    EndpointName: str,
-    EndpointConfigName: str,
-    RetainAllVariantProperties: bool = None,
-    ExcludeRetainedVariantProperties: List[VariantPropertyTypeDef] = None,
-    DeploymentConfig: "DeploymentConfigTypeDef" = None
-) -> UpdateEndpointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `EndpointConfigName`: `str` *(required)*
+- `RetainAllVariantProperties`: `bool`
+- `ExcludeRetainedVariantProperties`:
+  `List`\[[VariantPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#variantpropertytypedef)\]
+- `DeploymentConfig`:
+  [DeploymentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deploymentconfigtypedef)
+
+Returns
+[UpdateEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateendpointoutputtypedef).
 
 ### update_endpoint_weights_and_capacities
 
-Type annotations for `boto3.client("sagemaker").update_endpoint_weights_and_capacities` method.
+Type annotations for
+`boto3.client("sagemaker").update_endpoint_weights_and_capacities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint_weights_and_capacities]
+Boto3 documentation:
+[SageMaker.Client.update_endpoint_weights_and_capacities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint_weights_and_capacities)
 
-```python
-def update_endpoint_weights_and_capacities(
-    self,
-    EndpointName: str,
-    DesiredWeightsAndCapacities: List[DesiredWeightAndCapacityTypeDef]
-) -> UpdateEndpointWeightsAndCapacitiesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `DesiredWeightsAndCapacities`:
+  `List`\[[DesiredWeightAndCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#desiredweightandcapacitytypedef)\]
+  *(required)*
+
+Returns
+[UpdateEndpointWeightsAndCapacitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateendpointweightsandcapacitiesoutputtypedef).
 
 ### update_experiment
 
 Type annotations for `boto3.client("sagemaker").update_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment]
+Boto3 documentation:
+[SageMaker.Client.update_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment)
 
-```python
-def update_experiment(
-    self,
-    ExperimentName: str,
-    DisplayName: str = None,
-    Description: str = None
-) -> UpdateExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExperimentName`: `str` *(required)*
+- `DisplayName`: `str`
+- `Description`: `str`
+
+Returns
+[UpdateExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateexperimentresponsetypedef).
 
 ### update_image
 
 Type annotations for `boto3.client("sagemaker").update_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image]
+Boto3 documentation:
+[SageMaker.Client.update_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image)
 
-```python
-def update_image(
-    self,
-    ImageName: str,
-    DeleteProperties: List[str] = None,
-    Description: str = None,
-    DisplayName: str = None,
-    RoleArn: str = None
-) -> UpdateImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageName`: `str` *(required)*
+- `DeleteProperties`: `List`\[`str`\]
+- `Description`: `str`
+- `DisplayName`: `str`
+- `RoleArn`: `str`
+
+Returns
+[UpdateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateimageresponsetypedef).
 
 ### update_model_package
 
 Type annotations for `boto3.client("sagemaker").update_model_package` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package]
+Boto3 documentation:
+[SageMaker.Client.update_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package)
 
-```python
-def update_model_package(
-    self,
-    ModelPackageArn: str,
-    ModelApprovalStatus: ModelApprovalStatus,
-    ApprovalDescription: str = None
-) -> UpdateModelPackageOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelPackageArn`: `str` *(required)*
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+  *(required)*
+- `ApprovalDescription`: `str`
+
+Returns
+[UpdateModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatemodelpackageoutputtypedef).
 
 ### update_monitoring_schedule
 
-Type annotations for `boto3.client("sagemaker").update_monitoring_schedule` method.
+Type annotations for `boto3.client("sagemaker").update_monitoring_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_schedule]
+Boto3 documentation:
+[SageMaker.Client.update_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_schedule)
 
-```python
-def update_monitoring_schedule(
-    self,
-    MonitoringScheduleName: str,
-    MonitoringScheduleConfig: "MonitoringScheduleConfigTypeDef"
-) -> UpdateMonitoringScheduleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MonitoringScheduleName`: `str` *(required)*
+- `MonitoringScheduleConfig`:
+  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
+  *(required)*
+
+Returns
+[UpdateMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatemonitoringscheduleresponsetypedef).
 
 ### update_notebook_instance
 
-Type annotations for `boto3.client("sagemaker").update_notebook_instance` method.
+Type annotations for `boto3.client("sagemaker").update_notebook_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance]
+Boto3 documentation:
+[SageMaker.Client.update_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance)
 
-```python
-def update_notebook_instance(
-    self,
-    NotebookInstanceName: str,
-    InstanceType: InstanceType = None,
-    RoleArn: str = None,
-    LifecycleConfigName: str = None,
-    DisassociateLifecycleConfig: bool = None,
-    VolumeSizeInGB: int = None,
-    DefaultCodeRepository: str = None,
-    AdditionalCodeRepositories: List[str] = None,
-    AcceleratorTypes: List[NotebookInstanceAcceleratorType] = None,
-    DisassociateAcceleratorTypes: bool = None,
-    DisassociateDefaultCodeRepository: bool = None,
-    DisassociateAdditionalCodeRepositories: bool = None,
-    RootAccess: RootAccess = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
+- `RoleArn`: `str`
+- `LifecycleConfigName`: `str`
+- `DisassociateLifecycleConfig`: `bool`
+- `VolumeSizeInGB`: `int`
+- `DefaultCodeRepository`: `str`
+- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `AcceleratorTypes`:
+  `List`\[[NotebookInstanceAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstanceacceleratortype)\]
+- `DisassociateAcceleratorTypes`: `bool`
+- `DisassociateDefaultCodeRepository`: `bool`
+- `DisassociateAdditionalCodeRepositories`: `bool`
+- `RootAccess`:
+  [RootAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#rootaccess)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_notebook_instance_lifecycle_config
 
-Type annotations for `boto3.client("sagemaker").update_notebook_instance_lifecycle_config` method.
+Type annotations for
+`boto3.client("sagemaker").update_notebook_instance_lifecycle_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config]
+Boto3 documentation:
+[SageMaker.Client.update_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config)
 
-```python
-def update_notebook_instance_lifecycle_config(
-    self,
-    NotebookInstanceLifecycleConfigName: str,
-    OnCreate: List["NotebookInstanceLifecycleHookTypeDef"] = None,
-    OnStart: List["NotebookInstanceLifecycleHookTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `NotebookInstanceLifecycleConfigName`: `str` *(required)*
+- `OnCreate`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+- `OnStart`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_pipeline
 
 Type annotations for `boto3.client("sagemaker").update_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline]
+Boto3 documentation:
+[SageMaker.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline)
 
-```python
-def update_pipeline(
-    self,
-    PipelineName: str,
-    PipelineDisplayName: str = None,
-    PipelineDefinition: str = None,
-    PipelineDescription: str = None,
-    RoleArn: str = None
-) -> UpdatePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineName`: `str` *(required)*
+- `PipelineDisplayName`: `str`
+- `PipelineDefinition`: `str`
+- `PipelineDescription`: `str`
+- `RoleArn`: `str`
+
+Returns
+[UpdatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatepipelineresponsetypedef).
 
 ### update_pipeline_execution
 
-Type annotations for `boto3.client("sagemaker").update_pipeline_execution` method.
+Type annotations for `boto3.client("sagemaker").update_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution]
+Boto3 documentation:
+[SageMaker.Client.update_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution)
 
-```python
-def update_pipeline_execution(
-    self,
-    PipelineExecutionArn: str,
-    PipelineExecutionDescription: str = None,
-    PipelineExecutionDisplayName: str = None
-) -> UpdatePipelineExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+- `PipelineExecutionDescription`: `str`
+- `PipelineExecutionDisplayName`: `str`
+
+Returns
+[UpdatePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatepipelineexecutionresponsetypedef).
 
 ### update_training_job
 
 Type annotations for `boto3.client("sagemaker").update_training_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job]
+Boto3 documentation:
+[SageMaker.Client.update_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job)
 
-```python
-def update_training_job(
-    self,
-    TrainingJobName: str,
-    ProfilerConfig: ProfilerConfigForUpdateTypeDef = None,
-    ProfilerRuleConfigurations: List["ProfilerRuleConfigurationTypeDef"] = None
-) -> UpdateTrainingJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrainingJobName`: `str` *(required)*
+- `ProfilerConfig`:
+  [ProfilerConfigForUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerconfigforupdatetypedef)
+- `ProfilerRuleConfigurations`:
+  `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
+
+Returns
+[UpdateTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrainingjobresponsetypedef).
 
 ### update_trial
 
 Type annotations for `boto3.client("sagemaker").update_trial` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial]
+Boto3 documentation:
+[SageMaker.Client.update_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial)
 
-```python
-def update_trial(
-    self,
-    TrialName: str,
-    DisplayName: str = None
-) -> UpdateTrialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialName`: `str` *(required)*
+- `DisplayName`: `str`
+
+Returns
+[UpdateTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrialresponsetypedef).
 
 ### update_trial_component
 
 Type annotations for `boto3.client("sagemaker").update_trial_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component]
+Boto3 documentation:
+[SageMaker.Client.update_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component)
 
-```python
-def update_trial_component(
-    self,
-    TrialComponentName: str,
-    DisplayName: str = None,
-    Status: "TrialComponentStatusTypeDef" = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Parameters: Dict[str, "TrialComponentParameterValueTypeDef"] = None,
-    ParametersToRemove: List[str] = None,
-    InputArtifacts: Dict[str, "TrialComponentArtifactTypeDef"] = None,
-    InputArtifactsToRemove: List[str] = None,
-    OutputArtifacts: Dict[str, "TrialComponentArtifactTypeDef"] = None,
-    OutputArtifactsToRemove: List[str] = None
-) -> UpdateTrialComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrialComponentName`: `str` *(required)*
+- `DisplayName`: `str`
+- `Status`:
+  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Parameters`: `Dict`\[`str`,
+  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+- `ParametersToRemove`: `List`\[`str`\]
+- `InputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `InputArtifactsToRemove`: `List`\[`str`\]
+- `OutputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `OutputArtifactsToRemove`: `List`\[`str`\]
+
+Returns
+[UpdateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrialcomponentresponsetypedef).
 
 ### update_user_profile
 
 Type annotations for `boto3.client("sagemaker").update_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile]
+Boto3 documentation:
+[SageMaker.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile)
 
-```python
-def update_user_profile(
-    self,
-    DomainId: str,
-    UserProfileName: str,
-    UserSettings: "UserSettingsTypeDef" = None
-) -> UpdateUserProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainId`: `str` *(required)*
+- `UserProfileName`: `str` *(required)*
+- `UserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+
+Returns
+[UpdateUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateuserprofileresponsetypedef).
 
 ### update_workforce
 
 Type annotations for `boto3.client("sagemaker").update_workforce` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce]
+Boto3 documentation:
+[SageMaker.Client.update_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce)
 
-```python
-def update_workforce(
-    self,
-    WorkforceName: str,
-    SourceIpConfig: "SourceIpConfigTypeDef" = None,
-    OidcConfig: OidcConfigTypeDef = None
-) -> UpdateWorkforceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkforceName`: `str` *(required)*
+- `SourceIpConfig`:
+  [SourceIpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourceipconfigtypedef)
+- `OidcConfig`:
+  [OidcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcconfigtypedef)
+
+Returns
+[UpdateWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateworkforceresponsetypedef).
 
 ### update_workteam
 
 Type annotations for `boto3.client("sagemaker").update_workteam` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam]
+Boto3 documentation:
+[SageMaker.Client.update_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam)
 
-```python
-def update_workteam(
-    self,
-    WorkteamName: str,
-    MemberDefinitions: List["MemberDefinitionTypeDef"] = None,
-    Description: str = None,
-    NotificationConfiguration: "NotificationConfigurationTypeDef" = None
-) -> UpdateWorkteamResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `WorkteamName`: `str` *(required)*
+- `MemberDefinitions`:
+  `List`\[[MemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#memberdefinitiontypedef)\]
+- `Description`: `str`
+- `NotificationConfiguration`:
+  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notificationconfigurationtypedef)
 
+Returns
+[UpdateWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateworkteamresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("sagemaker").get_paginator` method with overloads.
+Type annotations for `boto3.client("sagemaker").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_actions")` -> [ListActionsPaginator](./paginators.md#listactionspaginator)
-- `client.get_paginator("list_algorithms")` -> [ListAlgorithmsPaginator](./paginators.md#listalgorithmspaginator)
-- `client.get_paginator("list_app_image_configs")` -> [ListAppImageConfigsPaginator](./paginators.md#listappimageconfigspaginator)
-- `client.get_paginator("list_apps")` -> [ListAppsPaginator](./paginators.md#listappspaginator)
-- `client.get_paginator("list_artifacts")` -> [ListArtifactsPaginator](./paginators.md#listartifactspaginator)
-- `client.get_paginator("list_associations")` -> [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
-- `client.get_paginator("list_auto_ml_jobs")` -> [ListAutoMLJobsPaginator](./paginators.md#listautomljobspaginator)
-- `client.get_paginator("list_candidates_for_auto_ml_job")` -> [ListCandidatesForAutoMLJobPaginator](./paginators.md#listcandidatesforautomljobpaginator)
-- `client.get_paginator("list_code_repositories")` -> [ListCodeRepositoriesPaginator](./paginators.md#listcoderepositoriespaginator)
-- `client.get_paginator("list_compilation_jobs")` -> [ListCompilationJobsPaginator](./paginators.md#listcompilationjobspaginator)
-- `client.get_paginator("list_contexts")` -> [ListContextsPaginator](./paginators.md#listcontextspaginator)
-- `client.get_paginator("list_data_quality_job_definitions")` -> [ListDataQualityJobDefinitionsPaginator](./paginators.md#listdataqualityjobdefinitionspaginator)
-- `client.get_paginator("list_device_fleets")` -> [ListDeviceFleetsPaginator](./paginators.md#listdevicefleetspaginator)
-- `client.get_paginator("list_devices")` -> [ListDevicesPaginator](./paginators.md#listdevicespaginator)
-- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("list_edge_packaging_jobs")` -> [ListEdgePackagingJobsPaginator](./paginators.md#listedgepackagingjobspaginator)
-- `client.get_paginator("list_endpoint_configs")` -> [ListEndpointConfigsPaginator](./paginators.md#listendpointconfigspaginator)
-- `client.get_paginator("list_endpoints")` -> [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
-- `client.get_paginator("list_experiments")` -> [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
-- `client.get_paginator("list_feature_groups")` -> [ListFeatureGroupsPaginator](./paginators.md#listfeaturegroupspaginator)
-- `client.get_paginator("list_flow_definitions")` -> [ListFlowDefinitionsPaginator](./paginators.md#listflowdefinitionspaginator)
-- `client.get_paginator("list_human_task_uis")` -> [ListHumanTaskUisPaginator](./paginators.md#listhumantaskuispaginator)
-- `client.get_paginator("list_hyper_parameter_tuning_jobs")` -> [ListHyperParameterTuningJobsPaginator](./paginators.md#listhyperparametertuningjobspaginator)
-- `client.get_paginator("list_image_versions")` -> [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
-- `client.get_paginator("list_images")` -> [ListImagesPaginator](./paginators.md#listimagespaginator)
-- `client.get_paginator("list_labeling_jobs")` -> [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
-- `client.get_paginator("list_labeling_jobs_for_workteam")` -> [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)
-- `client.get_paginator("list_model_bias_job_definitions")` -> [ListModelBiasJobDefinitionsPaginator](./paginators.md#listmodelbiasjobdefinitionspaginator)
-- `client.get_paginator("list_model_explainability_job_definitions")` -> [ListModelExplainabilityJobDefinitionsPaginator](./paginators.md#listmodelexplainabilityjobdefinitionspaginator)
-- `client.get_paginator("list_model_package_groups")` -> [ListModelPackageGroupsPaginator](./paginators.md#listmodelpackagegroupspaginator)
-- `client.get_paginator("list_model_packages")` -> [ListModelPackagesPaginator](./paginators.md#listmodelpackagespaginator)
-- `client.get_paginator("list_model_quality_job_definitions")` -> [ListModelQualityJobDefinitionsPaginator](./paginators.md#listmodelqualityjobdefinitionspaginator)
-- `client.get_paginator("list_models")` -> [ListModelsPaginator](./paginators.md#listmodelspaginator)
-- `client.get_paginator("list_monitoring_executions")` -> [ListMonitoringExecutionsPaginator](./paginators.md#listmonitoringexecutionspaginator)
-- `client.get_paginator("list_monitoring_schedules")` -> [ListMonitoringSchedulesPaginator](./paginators.md#listmonitoringschedulespaginator)
-- `client.get_paginator("list_notebook_instance_lifecycle_configs")` -> [ListNotebookInstanceLifecycleConfigsPaginator](./paginators.md#listnotebookinstancelifecycleconfigspaginator)
-- `client.get_paginator("list_notebook_instances")` -> [ListNotebookInstancesPaginator](./paginators.md#listnotebookinstancespaginator)
-- `client.get_paginator("list_pipeline_execution_steps")` -> [ListPipelineExecutionStepsPaginator](./paginators.md#listpipelineexecutionstepspaginator)
-- `client.get_paginator("list_pipeline_executions")` -> [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
-- `client.get_paginator("list_pipeline_parameters_for_execution")` -> [ListPipelineParametersForExecutionPaginator](./paginators.md#listpipelineparametersforexecutionpaginator)
-- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("list_processing_jobs")` -> [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
-- `client.get_paginator("list_subscribed_workteams")` -> [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)
-- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
-- `client.get_paginator("list_training_jobs")` -> [ListTrainingJobsPaginator](./paginators.md#listtrainingjobspaginator)
-- `client.get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")` -> [ListTrainingJobsForHyperParameterTuningJobPaginator](./paginators.md#listtrainingjobsforhyperparametertuningjobpaginator)
-- `client.get_paginator("list_transform_jobs")` -> [ListTransformJobsPaginator](./paginators.md#listtransformjobspaginator)
-- `client.get_paginator("list_trial_components")` -> [ListTrialComponentsPaginator](./paginators.md#listtrialcomponentspaginator)
-- `client.get_paginator("list_trials")` -> [ListTrialsPaginator](./paginators.md#listtrialspaginator)
-- `client.get_paginator("list_user_profiles")` -> [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
-- `client.get_paginator("list_workforces")` -> [ListWorkforcesPaginator](./paginators.md#listworkforcespaginator)
-- `client.get_paginator("list_workteams")` -> [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
-- `client.get_paginator("search")` -> [SearchPaginator](./paginators.md#searchpaginator)
-
-
-
+- `client.get_paginator("list_actions")` ->
+  [ListActionsPaginator](./paginators.md#listactionspaginator)
+- `client.get_paginator("list_algorithms")` ->
+  [ListAlgorithmsPaginator](./paginators.md#listalgorithmspaginator)
+- `client.get_paginator("list_app_image_configs")` ->
+  [ListAppImageConfigsPaginator](./paginators.md#listappimageconfigspaginator)
+- `client.get_paginator("list_apps")` ->
+  [ListAppsPaginator](./paginators.md#listappspaginator)
+- `client.get_paginator("list_artifacts")` ->
+  [ListArtifactsPaginator](./paginators.md#listartifactspaginator)
+- `client.get_paginator("list_associations")` ->
+  [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
+- `client.get_paginator("list_auto_ml_jobs")` ->
+  [ListAutoMLJobsPaginator](./paginators.md#listautomljobspaginator)
+- `client.get_paginator("list_candidates_for_auto_ml_job")` ->
+  [ListCandidatesForAutoMLJobPaginator](./paginators.md#listcandidatesforautomljobpaginator)
+- `client.get_paginator("list_code_repositories")` ->
+  [ListCodeRepositoriesPaginator](./paginators.md#listcoderepositoriespaginator)
+- `client.get_paginator("list_compilation_jobs")` ->
+  [ListCompilationJobsPaginator](./paginators.md#listcompilationjobspaginator)
+- `client.get_paginator("list_contexts")` ->
+  [ListContextsPaginator](./paginators.md#listcontextspaginator)
+- `client.get_paginator("list_data_quality_job_definitions")` ->
+  [ListDataQualityJobDefinitionsPaginator](./paginators.md#listdataqualityjobdefinitionspaginator)
+- `client.get_paginator("list_device_fleets")` ->
+  [ListDeviceFleetsPaginator](./paginators.md#listdevicefleetspaginator)
+- `client.get_paginator("list_devices")` ->
+  [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+- `client.get_paginator("list_domains")` ->
+  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_edge_packaging_jobs")` ->
+  [ListEdgePackagingJobsPaginator](./paginators.md#listedgepackagingjobspaginator)
+- `client.get_paginator("list_endpoint_configs")` ->
+  [ListEndpointConfigsPaginator](./paginators.md#listendpointconfigspaginator)
+- `client.get_paginator("list_endpoints")` ->
+  [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- `client.get_paginator("list_experiments")` ->
+  [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
+- `client.get_paginator("list_feature_groups")` ->
+  [ListFeatureGroupsPaginator](./paginators.md#listfeaturegroupspaginator)
+- `client.get_paginator("list_flow_definitions")` ->
+  [ListFlowDefinitionsPaginator](./paginators.md#listflowdefinitionspaginator)
+- `client.get_paginator("list_human_task_uis")` ->
+  [ListHumanTaskUisPaginator](./paginators.md#listhumantaskuispaginator)
+- `client.get_paginator("list_hyper_parameter_tuning_jobs")` ->
+  [ListHyperParameterTuningJobsPaginator](./paginators.md#listhyperparametertuningjobspaginator)
+- `client.get_paginator("list_image_versions")` ->
+  [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
+- `client.get_paginator("list_images")` ->
+  [ListImagesPaginator](./paginators.md#listimagespaginator)
+- `client.get_paginator("list_labeling_jobs")` ->
+  [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
+- `client.get_paginator("list_labeling_jobs_for_workteam")` ->
+  [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)
+- `client.get_paginator("list_model_bias_job_definitions")` ->
+  [ListModelBiasJobDefinitionsPaginator](./paginators.md#listmodelbiasjobdefinitionspaginator)
+- `client.get_paginator("list_model_explainability_job_definitions")` ->
+  [ListModelExplainabilityJobDefinitionsPaginator](./paginators.md#listmodelexplainabilityjobdefinitionspaginator)
+- `client.get_paginator("list_model_package_groups")` ->
+  [ListModelPackageGroupsPaginator](./paginators.md#listmodelpackagegroupspaginator)
+- `client.get_paginator("list_model_packages")` ->
+  [ListModelPackagesPaginator](./paginators.md#listmodelpackagespaginator)
+- `client.get_paginator("list_model_quality_job_definitions")` ->
+  [ListModelQualityJobDefinitionsPaginator](./paginators.md#listmodelqualityjobdefinitionspaginator)
+- `client.get_paginator("list_models")` ->
+  [ListModelsPaginator](./paginators.md#listmodelspaginator)
+- `client.get_paginator("list_monitoring_executions")` ->
+  [ListMonitoringExecutionsPaginator](./paginators.md#listmonitoringexecutionspaginator)
+- `client.get_paginator("list_monitoring_schedules")` ->
+  [ListMonitoringSchedulesPaginator](./paginators.md#listmonitoringschedulespaginator)
+- `client.get_paginator("list_notebook_instance_lifecycle_configs")` ->
+  [ListNotebookInstanceLifecycleConfigsPaginator](./paginators.md#listnotebookinstancelifecycleconfigspaginator)
+- `client.get_paginator("list_notebook_instances")` ->
+  [ListNotebookInstancesPaginator](./paginators.md#listnotebookinstancespaginator)
+- `client.get_paginator("list_pipeline_execution_steps")` ->
+  [ListPipelineExecutionStepsPaginator](./paginators.md#listpipelineexecutionstepspaginator)
+- `client.get_paginator("list_pipeline_executions")` ->
+  [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
+- `client.get_paginator("list_pipeline_parameters_for_execution")` ->
+  [ListPipelineParametersForExecutionPaginator](./paginators.md#listpipelineparametersforexecutionpaginator)
+- `client.get_paginator("list_pipelines")` ->
+  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("list_processing_jobs")` ->
+  [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
+- `client.get_paginator("list_subscribed_workteams")` ->
+  [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)
+- `client.get_paginator("list_tags")` ->
+  [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("list_training_jobs")` ->
+  [ListTrainingJobsPaginator](./paginators.md#listtrainingjobspaginator)
+- `client.get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")` ->
+  [ListTrainingJobsForHyperParameterTuningJobPaginator](./paginators.md#listtrainingjobsforhyperparametertuningjobpaginator)
+- `client.get_paginator("list_transform_jobs")` ->
+  [ListTransformJobsPaginator](./paginators.md#listtransformjobspaginator)
+- `client.get_paginator("list_trial_components")` ->
+  [ListTrialComponentsPaginator](./paginators.md#listtrialcomponentspaginator)
+- `client.get_paginator("list_trials")` ->
+  [ListTrialsPaginator](./paginators.md#listtrialspaginator)
+- `client.get_paginator("list_user_profiles")` ->
+  [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+- `client.get_paginator("list_workforces")` ->
+  [ListWorkforcesPaginator](./paginators.md#listworkforcespaginator)
+- `client.get_paginator("list_workteams")` ->
+  [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
+- `client.get_paginator("search")` ->
+  [SearchPaginator](./paginators.md#searchpaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("sagemaker").get_waiter` method with overloads.
+Type annotations for `boto3.client("sagemaker").get_waiter` method with
+overloads.
 
-- `client.get_waiter("endpoint_deleted")` -> [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
-- `client.get_waiter("endpoint_in_service")` -> [EndpointInServiceWaiter](./waiters.md#endpointinservicewaiter)
-- `client.get_waiter("notebook_instance_deleted")` -> [NotebookInstanceDeletedWaiter](./waiters.md#notebookinstancedeletedwaiter)
-- `client.get_waiter("notebook_instance_in_service")` -> [NotebookInstanceInServiceWaiter](./waiters.md#notebookinstanceinservicewaiter)
-- `client.get_waiter("notebook_instance_stopped")` -> [NotebookInstanceStoppedWaiter](./waiters.md#notebookinstancestoppedwaiter)
-- `client.get_waiter("processing_job_completed_or_stopped")` -> [ProcessingJobCompletedOrStoppedWaiter](./waiters.md#processingjobcompletedorstoppedwaiter)
-- `client.get_waiter("training_job_completed_or_stopped")` -> [TrainingJobCompletedOrStoppedWaiter](./waiters.md#trainingjobcompletedorstoppedwaiter)
-- `client.get_waiter("transform_job_completed_or_stopped")` -> [TransformJobCompletedOrStoppedWaiter](./waiters.md#transformjobcompletedorstoppedwaiter)
+- `client.get_waiter("endpoint_deleted")` ->
+  [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
+- `client.get_waiter("endpoint_in_service")` ->
+  [EndpointInServiceWaiter](./waiters.md#endpointinservicewaiter)
+- `client.get_waiter("notebook_instance_deleted")` ->
+  [NotebookInstanceDeletedWaiter](./waiters.md#notebookinstancedeletedwaiter)
+- `client.get_waiter("notebook_instance_in_service")` ->
+  [NotebookInstanceInServiceWaiter](./waiters.md#notebookinstanceinservicewaiter)
+- `client.get_waiter("notebook_instance_stopped")` ->
+  [NotebookInstanceStoppedWaiter](./waiters.md#notebookinstancestoppedwaiter)
+- `client.get_waiter("processing_job_completed_or_stopped")` ->
+  [ProcessingJobCompletedOrStoppedWaiter](./waiters.md#processingjobcompletedorstoppedwaiter)
+- `client.get_waiter("training_job_completed_or_stopped")` ->
+  [TrainingJobCompletedOrStoppedWaiter](./waiters.md#trainingjobcompletedorstoppedwaiter)
+- `client.get_waiter("transform_job_completed_or_stopped")` ->
+  [TransformJobCompletedOrStoppedWaiter](./waiters.md#transformjobcompletedorstoppedwaiter)

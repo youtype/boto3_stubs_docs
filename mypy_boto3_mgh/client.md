@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MigrationHub](./README.md) > MigrationHubClient
 
-Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+Auto-generated documentation for
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+type annotations stubs module
+[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [MigrationHubClient for boto3 MigrationHub module](#migrationhubclient-for-boto3-migrationhub-module)
   - [MigrationHubClient](#migrationhubclient)
@@ -43,12 +45,13 @@ def get_mgh_client() -> MigrationHubClient:
     return boto3.client("mgh")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
+Boto3 documentation:
+[MigrationHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mgh.client import Exceptions
@@ -56,7 +59,6 @@ from mypy_boto3_mgh.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -72,328 +74,330 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnauthorizedOperation`
 
-
 ## Methods
-
 
 ### associate_created_artifact
 
 Type annotations for `boto3.client("mgh").associate_created_artifact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact]
+Boto3 documentation:
+[MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
 
-```python
-def associate_created_artifact(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    CreatedArtifact: "CreatedArtifactTypeDef",
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `CreatedArtifact`:
+  [CreatedArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#createdartifacttypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### associate_discovered_resource
 
-Type annotations for `boto3.client("mgh").associate_discovered_resource` method.
+Type annotations for `boto3.client("mgh").associate_discovered_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource]
+Boto3 documentation:
+[MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
 
-```python
-def associate_discovered_resource(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    DiscoveredResource: "DiscoveredResourceTypeDef",
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `DiscoveredResource`:
+  [DiscoveredResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#discoveredresourcetypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("mgh").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate]
+Boto3 documentation:
+[MigrationHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_progress_update_stream
 
-Type annotations for `boto3.client("mgh").create_progress_update_stream` method.
+Type annotations for `boto3.client("mgh").create_progress_update_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream]
+Boto3 documentation:
+[MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
 
-```python
-def create_progress_update_stream(
-    self,
-    ProgressUpdateStreamName: str,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStreamName`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_progress_update_stream
 
-Type annotations for `boto3.client("mgh").delete_progress_update_stream` method.
+Type annotations for `boto3.client("mgh").delete_progress_update_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream]
+Boto3 documentation:
+[MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
 
-```python
-def delete_progress_update_stream(
-    self,
-    ProgressUpdateStreamName: str,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStreamName`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application_state
 
 Type annotations for `boto3.client("mgh").describe_application_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state]
+Boto3 documentation:
+[MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
 
-```python
-def describe_application_state(
-    self,
-    ApplicationId: str
-) -> DescribeApplicationStateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DescribeApplicationStateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#describeapplicationstateresulttypedef).
 
 ### describe_migration_task
 
 Type annotations for `boto3.client("mgh").describe_migration_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task]
+Boto3 documentation:
+[MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
 
-```python
-def describe_migration_task(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str
-) -> DescribeMigrationTaskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+
+Returns
+[DescribeMigrationTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#describemigrationtaskresulttypedef).
 
 ### disassociate_created_artifact
 
-Type annotations for `boto3.client("mgh").disassociate_created_artifact` method.
+Type annotations for `boto3.client("mgh").disassociate_created_artifact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact]
+Boto3 documentation:
+[MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
 
-```python
-def disassociate_created_artifact(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    CreatedArtifactName: str,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `CreatedArtifactName`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_discovered_resource
 
-Type annotations for `boto3.client("mgh").disassociate_discovered_resource` method.
+Type annotations for `boto3.client("mgh").disassociate_discovered_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource]
+Boto3 documentation:
+[MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
 
-```python
-def disassociate_discovered_resource(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    ConfigurationId: str,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `ConfigurationId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mgh").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url]
+Boto3 documentation:
+[MigrationHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### import_migration_task
 
 Type annotations for `boto3.client("mgh").import_migration_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task]
+Boto3 documentation:
+[MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
 
-```python
-def import_migration_task(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### list_application_states
 
 Type annotations for `boto3.client("mgh").list_application_states` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states]
+Boto3 documentation:
+[MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
 
-```python
-def list_application_states(
-    self,
-    ApplicationIds: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListApplicationStatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListApplicationStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listapplicationstatesresulttypedef).
 
 ### list_created_artifacts
 
 Type annotations for `boto3.client("mgh").list_created_artifacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts]
+Boto3 documentation:
+[MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
-```python
-def list_created_artifacts(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListCreatedArtifactsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCreatedArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listcreatedartifactsresulttypedef).
 
 ### list_discovered_resources
 
 Type annotations for `boto3.client("mgh").list_discovered_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources]
+Boto3 documentation:
+[MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
-```python
-def list_discovered_resources(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDiscoveredResourcesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDiscoveredResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listdiscoveredresourcesresulttypedef).
 
 ### list_migration_tasks
 
 Type annotations for `boto3.client("mgh").list_migration_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks]
+Boto3 documentation:
+[MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
 
-```python
-def list_migration_tasks(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ResourceName: str = None
-) -> ListMigrationTasksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ResourceName`: `str`
+
+Returns
+[ListMigrationTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listmigrationtasksresulttypedef).
 
 ### list_progress_update_streams
 
 Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams]
+Boto3 documentation:
+[MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
 
-```python
-def list_progress_update_streams(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProgressUpdateStreamsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProgressUpdateStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listprogressupdatestreamsresulttypedef).
 
 ### notify_application_state
 
 Type annotations for `boto3.client("mgh").notify_application_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state]
+Boto3 documentation:
+[MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
-```python
-def notify_application_state(
-    self,
-    ApplicationId: str,
-    Status: ApplicationStatus,
-    UpdateDateTime: datetime = None,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `Status`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#applicationstatus)
+  *(required)*
+- `UpdateDateTime`: `datetime`
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### notify_migration_task_state
 
 Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state]
+Boto3 documentation:
+[MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
 
-```python
-def notify_migration_task_state(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    Task: "TaskTypeDef",
-    UpdateDateTime: datetime,
-    NextUpdateSeconds: int,
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `Task`:
+  [TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#tasktypedef)
+  *(required)*
+- `UpdateDateTime`: `datetime` *(required)*
+- `NextUpdateSeconds`: `int` *(required)*
+- `DryRun`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_resource_attributes
 
 Type annotations for `boto3.client("mgh").put_resource_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes]
+Boto3 documentation:
+[MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
 
-```python
-def put_resource_attributes(
-    self,
-    ProgressUpdateStream: str,
-    MigrationTaskName: str,
-    ResourceAttributeList: List["ResourceAttributeTypeDef"],
-    DryRun: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `ResourceAttributeList`:
+  `List`\[[ResourceAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#resourceattributetypedef)\]
+  *(required)*
+- `DryRun`: `bool`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("mgh").get_paginator` method with overloads.
 
-- `client.get_paginator("list_application_states")` -> [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
-- `client.get_paginator("list_created_artifacts")` -> [ListCreatedArtifactsPaginator](./paginators.md#listcreatedartifactspaginator)
-- `client.get_paginator("list_discovered_resources")` -> [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
-- `client.get_paginator("list_migration_tasks")` -> [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
-- `client.get_paginator("list_progress_update_streams")` -> [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
-
-
+- `client.get_paginator("list_application_states")` ->
+  [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
+- `client.get_paginator("list_created_artifacts")` ->
+  [ListCreatedArtifactsPaginator](./paginators.md#listcreatedartifactspaginator)
+- `client.get_paginator("list_discovered_resources")` ->
+  [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+- `client.get_paginator("list_migration_tasks")` ->
+  [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
+- `client.get_paginator("list_progress_update_streams")` ->
+  [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)

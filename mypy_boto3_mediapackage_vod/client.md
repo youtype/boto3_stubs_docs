@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaPackageVod](./README.md) > MediaPackageVodClient
 
-Auto-generated documentation for [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
-type annotations stubs module [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+Auto-generated documentation for
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+type annotations stubs module
+[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [MediaPackageVodClient for boto3 MediaPackageVod module](#mediapackagevodclient-for-boto3-mediapackagevod-module)
   - [MediaPackageVodClient](#mediapackagevodclient)
@@ -43,12 +45,13 @@ def get_mediapackage-vod_client() -> MediaPackageVodClient:
     return boto3.client("mediapackage-vod")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client)
+Boto3 documentation:
+[MediaPackageVod.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mediapackage_vod.client import Exceptions
@@ -56,7 +59,6 @@ from mypy_boto3_mediapackage_vod.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -68,310 +70,316 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnprocessableEntityException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mediapackage-vod").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.can_paginate]
+Boto3 documentation:
+[MediaPackageVod.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### configure_logs
 
 Type annotations for `boto3.client("mediapackage-vod").configure_logs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.configure_logs]
+Boto3 documentation:
+[MediaPackageVod.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.configure_logs)
 
-```python
-def configure_logs(
-    self,
-    Id: str,
-    EgressAccessLogs: "EgressAccessLogsTypeDef" = None
-) -> ConfigureLogsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `EgressAccessLogs`:
+  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#egressaccesslogstypedef)
+
+Returns
+[ConfigureLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#configurelogsresponsetypedef).
 
 ### create_asset
 
 Type annotations for `boto3.client("mediapackage-vod").create_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset]
+Boto3 documentation:
+[MediaPackageVod.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset)
 
-```python
-def create_asset(
-    self,
-    Id: str,
-    PackagingGroupId: str,
-    SourceArn: str,
-    SourceRoleArn: str,
-    ResourceId: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateAssetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `PackagingGroupId`: `str` *(required)*
+- `SourceArn`: `str` *(required)*
+- `SourceRoleArn`: `str` *(required)*
+- `ResourceId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createassetresponsetypedef).
 
 ### create_packaging_configuration
 
-Type annotations for `boto3.client("mediapackage-vod").create_packaging_configuration` method.
+Type annotations for
+`boto3.client("mediapackage-vod").create_packaging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration]
+Boto3 documentation:
+[MediaPackageVod.Client.create_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration)
 
-```python
-def create_packaging_configuration(
-    self,
-    Id: str,
-    PackagingGroupId: str,
-    CmafPackage: "CmafPackageTypeDef" = None,
-    DashPackage: "DashPackageTypeDef" = None,
-    HlsPackage: "HlsPackageTypeDef" = None,
-    MssPackage: "MssPackageTypeDef" = None,
-    Tags: Dict[str, str] = None
-) -> CreatePackagingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `PackagingGroupId`: `str` *(required)*
+- `CmafPackage`:
+  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#cmafpackagetypedef)
+- `DashPackage`:
+  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#dashpackagetypedef)
+- `HlsPackage`:
+  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#hlspackagetypedef)
+- `MssPackage`:
+  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#msspackagetypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreatePackagingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createpackagingconfigurationresponsetypedef).
 
 ### create_packaging_group
 
-Type annotations for `boto3.client("mediapackage-vod").create_packaging_group` method.
+Type annotations for `boto3.client("mediapackage-vod").create_packaging_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group]
+Boto3 documentation:
+[MediaPackageVod.Client.create_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group)
 
-```python
-def create_packaging_group(
-    self,
-    Id: str,
-    Authorization: "AuthorizationTypeDef" = None,
-    EgressAccessLogs: "EgressAccessLogsTypeDef" = None,
-    Tags: Dict[str, str] = None
-) -> CreatePackagingGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Authorization`:
+  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#authorizationtypedef)
+- `EgressAccessLogs`:
+  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#egressaccesslogstypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreatePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createpackaginggroupresponsetypedef).
 
 ### delete_asset
 
 Type annotations for `boto3.client("mediapackage-vod").delete_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_asset]
+Boto3 documentation:
+[MediaPackageVod.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_asset)
 
-```python
-def delete_asset(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_packaging_configuration
 
-Type annotations for `boto3.client("mediapackage-vod").delete_packaging_configuration` method.
+Type annotations for
+`boto3.client("mediapackage-vod").delete_packaging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_configuration]
+Boto3 documentation:
+[MediaPackageVod.Client.delete_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_configuration)
 
-```python
-def delete_packaging_configuration(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_packaging_group
 
-Type annotations for `boto3.client("mediapackage-vod").delete_packaging_group` method.
+Type annotations for `boto3.client("mediapackage-vod").delete_packaging_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_group]
+Boto3 documentation:
+[MediaPackageVod.Client.delete_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_group)
 
-```python
-def delete_packaging_group(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_asset
 
 Type annotations for `boto3.client("mediapackage-vod").describe_asset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_asset]
+Boto3 documentation:
+[MediaPackageVod.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_asset)
 
-```python
-def describe_asset(
-    self,
-    Id: str
-) -> DescribeAssetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describeassetresponsetypedef).
 
 ### describe_packaging_configuration
 
-Type annotations for `boto3.client("mediapackage-vod").describe_packaging_configuration` method.
+Type annotations for
+`boto3.client("mediapackage-vod").describe_packaging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_configuration]
+Boto3 documentation:
+[MediaPackageVod.Client.describe_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_configuration)
 
-```python
-def describe_packaging_configuration(
-    self,
-    Id: str
-) -> DescribePackagingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribePackagingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describepackagingconfigurationresponsetypedef).
 
 ### describe_packaging_group
 
-Type annotations for `boto3.client("mediapackage-vod").describe_packaging_group` method.
+Type annotations for
+`boto3.client("mediapackage-vod").describe_packaging_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_group]
+Boto3 documentation:
+[MediaPackageVod.Client.describe_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_group)
 
-```python
-def describe_packaging_group(
-    self,
-    Id: str
-) -> DescribePackagingGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describepackaginggroupresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("mediapackage-vod").generate_presigned_url` method.
+Type annotations for `boto3.client("mediapackage-vod").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.generate_presigned_url]
+Boto3 documentation:
+[MediaPackageVod.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_assets
 
 Type annotations for `boto3.client("mediapackage-vod").list_assets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets]
+Boto3 documentation:
+[MediaPackageVod.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets)
 
-```python
-def list_assets(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    PackagingGroupId: str = None
-) -> ListAssetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `PackagingGroupId`: `str`
+
+Returns
+[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listassetsresponsetypedef).
 
 ### list_packaging_configurations
 
-Type annotations for `boto3.client("mediapackage-vod").list_packaging_configurations` method.
+Type annotations for
+`boto3.client("mediapackage-vod").list_packaging_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations]
+Boto3 documentation:
+[MediaPackageVod.Client.list_packaging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations)
 
-```python
-def list_packaging_configurations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    PackagingGroupId: str = None
-) -> ListPackagingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `PackagingGroupId`: `str`
+
+Returns
+[ListPackagingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackagingconfigurationsresponsetypedef).
 
 ### list_packaging_groups
 
-Type annotations for `boto3.client("mediapackage-vod").list_packaging_groups` method.
+Type annotations for `boto3.client("mediapackage-vod").list_packaging_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_groups]
+Boto3 documentation:
+[MediaPackageVod.Client.list_packaging_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_groups)
 
-```python
-def list_packaging_groups(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListPackagingGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPackagingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackaginggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("mediapackage-vod").list_tags_for_resource` method.
+Type annotations for `boto3.client("mediapackage-vod").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_tags_for_resource]
+Boto3 documentation:
+[MediaPackageVod.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("mediapackage-vod").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.tag_resource]
+Boto3 documentation:
+[MediaPackageVod.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("mediapackage-vod").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.untag_resource]
+Boto3 documentation:
+[MediaPackageVod.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_packaging_group
 
-Type annotations for `boto3.client("mediapackage-vod").update_packaging_group` method.
+Type annotations for `boto3.client("mediapackage-vod").update_packaging_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.update_packaging_group]
+Boto3 documentation:
+[MediaPackageVod.Client.update_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.update_packaging_group)
 
-```python
-def update_packaging_group(
-    self,
-    Id: str,
-    Authorization: "AuthorizationTypeDef" = None
-) -> UpdatePackagingGroupResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `Authorization`:
+  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#authorizationtypedef)
 
+Returns
+[UpdatePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#updatepackaginggroupresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediapackage-vod").get_paginator` method with overloads.
+Type annotations for `boto3.client("mediapackage-vod").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_assets")` -> [ListAssetsPaginator](./paginators.md#listassetspaginator)
-- `client.get_paginator("list_packaging_configurations")` -> [ListPackagingConfigurationsPaginator](./paginators.md#listpackagingconfigurationspaginator)
-- `client.get_paginator("list_packaging_groups")` -> [ListPackagingGroupsPaginator](./paginators.md#listpackaginggroupspaginator)
-
-
+- `client.get_paginator("list_assets")` ->
+  [ListAssetsPaginator](./paginators.md#listassetspaginator)
+- `client.get_paginator("list_packaging_configurations")` ->
+  [ListPackagingConfigurationsPaginator](./paginators.md#listpackagingconfigurationspaginator)
+- `client.get_paginator("list_packaging_groups")` ->
+  [ListPackagingGroupsPaginator](./paginators.md#listpackaginggroupspaginator)

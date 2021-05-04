@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EBS](./README.md) > Literals
 
-Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+Auto-generated documentation for
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+type annotations stubs module
+[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 - [Literals for boto3 EBS module](#literals-for-boto3-ebs-module)
   - [ChecksumAggregationMethod](#checksumaggregationmethod)

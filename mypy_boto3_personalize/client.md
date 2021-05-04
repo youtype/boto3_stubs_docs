@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Personalize](./README.md) > PersonalizeClient
 
-Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+Auto-generated documentation for
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+type annotations stubs module
+[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [PersonalizeClient for boto3 Personalize module](#personalizeclient-for-boto3-personalize-module)
   - [PersonalizeClient](#personalizeclient)
@@ -72,12 +74,13 @@ def get_personalize_client() -> PersonalizeClient:
     return boto3.client("personalize")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
+Boto3 documentation:
+[Personalize.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_personalize.client import Exceptions
@@ -85,7 +88,6 @@ from mypy_boto3_personalize.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -97,760 +99,774 @@ Exceptions:
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("personalize").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate]
+Boto3 documentation:
+[Personalize.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_batch_inference_job
 
-Type annotations for `boto3.client("personalize").create_batch_inference_job` method.
+Type annotations for `boto3.client("personalize").create_batch_inference_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job]
+Boto3 documentation:
+[Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
 
-```python
-def create_batch_inference_job(
-    self,
-    jobName: str,
-    solutionVersionArn: str,
-    jobInput: "BatchInferenceJobInputTypeDef",
-    jobOutput: "BatchInferenceJobOutputTypeDef",
-    roleArn: str,
-    filterArn: str = None,
-    numResults: int = None,
-    batchInferenceJobConfig: "BatchInferenceJobConfigTypeDef" = None
-) -> CreateBatchInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobName`: `str` *(required)*
+- `solutionVersionArn`: `str` *(required)*
+- `jobInput`:
+  [BatchInferenceJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobinputtypedef)
+  *(required)*
+- `jobOutput`:
+  [BatchInferenceJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejoboutputtypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `filterArn`: `str`
+- `numResults`: `int`
+- `batchInferenceJobConfig`:
+  [BatchInferenceJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobconfigtypedef)
+
+Returns
+[CreateBatchInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createbatchinferencejobresponsetypedef).
 
 ### create_campaign
 
 Type annotations for `boto3.client("personalize").create_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign]
+Boto3 documentation:
+[Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
 
-```python
-def create_campaign(
-    self,
-    name: str,
-    solutionVersionArn: str,
-    minProvisionedTPS: int,
-    campaignConfig: "CampaignConfigTypeDef" = None
-) -> CreateCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `solutionVersionArn`: `str` *(required)*
+- `minProvisionedTPS`: `int` *(required)*
+- `campaignConfig`:
+  [CampaignConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignconfigtypedef)
+
+Returns
+[CreateCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createcampaignresponsetypedef).
 
 ### create_dataset
 
 Type annotations for `boto3.client("personalize").create_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset]
+Boto3 documentation:
+[Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
 
-```python
-def create_dataset(
-    self,
-    name: str,
-    schemaArn: str,
-    datasetGroupArn: str,
-    datasetType: str
-) -> CreateDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `schemaArn`: `str` *(required)*
+- `datasetGroupArn`: `str` *(required)*
+- `datasetType`: `str` *(required)*
+
+Returns
+[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createdatasetresponsetypedef).
 
 ### create_dataset_export_job
 
-Type annotations for `boto3.client("personalize").create_dataset_export_job` method.
+Type annotations for `boto3.client("personalize").create_dataset_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job]
+Boto3 documentation:
+[Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
 
-```python
-def create_dataset_export_job(
-    self,
-    jobName: str,
-    datasetArn: str,
-    roleArn: str,
-    jobOutput: "DatasetExportJobOutputTypeDef",
-    ingestionMode: IngestionMode = None
-) -> CreateDatasetExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobName`: `str` *(required)*
+- `datasetArn`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `jobOutput`:
+  [DatasetExportJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetexportjoboutputtypedef)
+  *(required)*
+- `ingestionMode`:
+  [IngestionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/literals.html#ingestionmode)
+
+Returns
+[CreateDatasetExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createdatasetexportjobresponsetypedef).
 
 ### create_dataset_group
 
 Type annotations for `boto3.client("personalize").create_dataset_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group]
+Boto3 documentation:
+[Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
 
-```python
-def create_dataset_group(
-    self,
-    name: str,
-    roleArn: str = None,
-    kmsKeyArn: str = None
-) -> CreateDatasetGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `roleArn`: `str`
+- `kmsKeyArn`: `str`
+
+Returns
+[CreateDatasetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createdatasetgroupresponsetypedef).
 
 ### create_dataset_import_job
 
-Type annotations for `boto3.client("personalize").create_dataset_import_job` method.
+Type annotations for `boto3.client("personalize").create_dataset_import_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job]
+Boto3 documentation:
+[Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
 
-```python
-def create_dataset_import_job(
-    self,
-    jobName: str,
-    datasetArn: str,
-    dataSource: "DataSourceTypeDef",
-    roleArn: str
-) -> CreateDatasetImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobName`: `str` *(required)*
+- `datasetArn`: `str` *(required)*
+- `dataSource`:
+  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasourcetypedef)
+  *(required)*
+- `roleArn`: `str` *(required)*
+
+Returns
+[CreateDatasetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createdatasetimportjobresponsetypedef).
 
 ### create_event_tracker
 
 Type annotations for `boto3.client("personalize").create_event_tracker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker]
+Boto3 documentation:
+[Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
 
-```python
-def create_event_tracker(
-    self,
-    name: str,
-    datasetGroupArn: str
-) -> CreateEventTrackerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `datasetGroupArn`: `str` *(required)*
+
+Returns
+[CreateEventTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createeventtrackerresponsetypedef).
 
 ### create_filter
 
 Type annotations for `boto3.client("personalize").create_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter]
+Boto3 documentation:
+[Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
 
-```python
-def create_filter(
-    self,
-    name: str,
-    datasetGroupArn: str,
-    filterExpression: str
-) -> CreateFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `datasetGroupArn`: `str` *(required)*
+- `filterExpression`: `str` *(required)*
+
+Returns
+[CreateFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createfilterresponsetypedef).
 
 ### create_schema
 
 Type annotations for `boto3.client("personalize").create_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema]
+Boto3 documentation:
+[Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
 
-```python
-def create_schema(
-    self,
-    name: str,
-    schema: str
-) -> CreateSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `schema`: `str` *(required)*
+
+Returns
+[CreateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createschemaresponsetypedef).
 
 ### create_solution
 
 Type annotations for `boto3.client("personalize").create_solution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution]
+Boto3 documentation:
+[Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
 
-```python
-def create_solution(
-    self,
-    name: str,
-    datasetGroupArn: str,
-    performHPO: bool = None,
-    performAutoML: bool = None,
-    recipeArn: str = None,
-    eventType: str = None,
-    solutionConfig: "SolutionConfigTypeDef" = None
-) -> CreateSolutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `datasetGroupArn`: `str` *(required)*
+- `performHPO`: `bool`
+- `performAutoML`: `bool`
+- `recipeArn`: `str`
+- `eventType`: `str`
+- `solutionConfig`:
+  [SolutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionconfigtypedef)
+
+Returns
+[CreateSolutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createsolutionresponsetypedef).
 
 ### create_solution_version
 
-Type annotations for `boto3.client("personalize").create_solution_version` method.
+Type annotations for `boto3.client("personalize").create_solution_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version]
+Boto3 documentation:
+[Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
-```python
-def create_solution_version(
-    self,
-    solutionArn: str,
-    trainingMode: TrainingMode = None
-) -> CreateSolutionVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionArn`: `str` *(required)*
+- `trainingMode`:
+  [TrainingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/literals.html#trainingmode)
+
+Returns
+[CreateSolutionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#createsolutionversionresponsetypedef).
 
 ### delete_campaign
 
 Type annotations for `boto3.client("personalize").delete_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign]
+Boto3 documentation:
+[Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
 
-```python
-def delete_campaign(
-    self,
-    campaignArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `campaignArn`: `str` *(required)*
 
 ### delete_dataset
 
 Type annotations for `boto3.client("personalize").delete_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset]
+Boto3 documentation:
+[Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
 
-```python
-def delete_dataset(
-    self,
-    datasetArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `datasetArn`: `str` *(required)*
 
 ### delete_dataset_group
 
 Type annotations for `boto3.client("personalize").delete_dataset_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group]
+Boto3 documentation:
+[Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
 
-```python
-def delete_dataset_group(
-    self,
-    datasetGroupArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str` *(required)*
 
 ### delete_event_tracker
 
 Type annotations for `boto3.client("personalize").delete_event_tracker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker]
+Boto3 documentation:
+[Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
 
-```python
-def delete_event_tracker(
-    self,
-    eventTrackerArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `eventTrackerArn`: `str` *(required)*
 
 ### delete_filter
 
 Type annotations for `boto3.client("personalize").delete_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter]
+Boto3 documentation:
+[Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
 
-```python
-def delete_filter(
-    self,
-    filterArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `filterArn`: `str` *(required)*
 
 ### delete_schema
 
 Type annotations for `boto3.client("personalize").delete_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema]
+Boto3 documentation:
+[Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
 
-```python
-def delete_schema(
-    self,
-    schemaArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `schemaArn`: `str` *(required)*
 
 ### delete_solution
 
 Type annotations for `boto3.client("personalize").delete_solution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution]
+Boto3 documentation:
+[Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
 
-```python
-def delete_solution(
-    self,
-    solutionArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `solutionArn`: `str` *(required)*
 
 ### describe_algorithm
 
 Type annotations for `boto3.client("personalize").describe_algorithm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm]
+Boto3 documentation:
+[Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
 
-```python
-def describe_algorithm(
-    self,
-    algorithmArn: str
-) -> DescribeAlgorithmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `algorithmArn`: `str` *(required)*
+
+Returns
+[DescribeAlgorithmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describealgorithmresponsetypedef).
 
 ### describe_batch_inference_job
 
-Type annotations for `boto3.client("personalize").describe_batch_inference_job` method.
+Type annotations for `boto3.client("personalize").describe_batch_inference_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job]
+Boto3 documentation:
+[Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
-```python
-def describe_batch_inference_job(
-    self,
-    batchInferenceJobArn: str
-) -> DescribeBatchInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `batchInferenceJobArn`: `str` *(required)*
+
+Returns
+[DescribeBatchInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describebatchinferencejobresponsetypedef).
 
 ### describe_campaign
 
 Type annotations for `boto3.client("personalize").describe_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign]
+Boto3 documentation:
+[Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
-```python
-def describe_campaign(
-    self,
-    campaignArn: str
-) -> DescribeCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `campaignArn`: `str` *(required)*
+
+Returns
+[DescribeCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describecampaignresponsetypedef).
 
 ### describe_dataset
 
 Type annotations for `boto3.client("personalize").describe_dataset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset]
+Boto3 documentation:
+[Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
-```python
-def describe_dataset(
-    self,
-    datasetArn: str
-) -> DescribeDatasetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetArn`: `str` *(required)*
+
+Returns
+[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describedatasetresponsetypedef).
 
 ### describe_dataset_export_job
 
-Type annotations for `boto3.client("personalize").describe_dataset_export_job` method.
+Type annotations for `boto3.client("personalize").describe_dataset_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job]
+Boto3 documentation:
+[Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
-```python
-def describe_dataset_export_job(
-    self,
-    datasetExportJobArn: str
-) -> DescribeDatasetExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetExportJobArn`: `str` *(required)*
+
+Returns
+[DescribeDatasetExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describedatasetexportjobresponsetypedef).
 
 ### describe_dataset_group
 
-Type annotations for `boto3.client("personalize").describe_dataset_group` method.
+Type annotations for `boto3.client("personalize").describe_dataset_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group]
+Boto3 documentation:
+[Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
-```python
-def describe_dataset_group(
-    self,
-    datasetGroupArn: str
-) -> DescribeDatasetGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str` *(required)*
+
+Returns
+[DescribeDatasetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describedatasetgroupresponsetypedef).
 
 ### describe_dataset_import_job
 
-Type annotations for `boto3.client("personalize").describe_dataset_import_job` method.
+Type annotations for `boto3.client("personalize").describe_dataset_import_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job]
+Boto3 documentation:
+[Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
-```python
-def describe_dataset_import_job(
-    self,
-    datasetImportJobArn: str
-) -> DescribeDatasetImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetImportJobArn`: `str` *(required)*
+
+Returns
+[DescribeDatasetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describedatasetimportjobresponsetypedef).
 
 ### describe_event_tracker
 
-Type annotations for `boto3.client("personalize").describe_event_tracker` method.
+Type annotations for `boto3.client("personalize").describe_event_tracker`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker]
+Boto3 documentation:
+[Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
-```python
-def describe_event_tracker(
-    self,
-    eventTrackerArn: str
-) -> DescribeEventTrackerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eventTrackerArn`: `str` *(required)*
+
+Returns
+[DescribeEventTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describeeventtrackerresponsetypedef).
 
 ### describe_feature_transformation
 
-Type annotations for `boto3.client("personalize").describe_feature_transformation` method.
+Type annotations for
+`boto3.client("personalize").describe_feature_transformation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation]
+Boto3 documentation:
+[Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
-```python
-def describe_feature_transformation(
-    self,
-    featureTransformationArn: str
-) -> DescribeFeatureTransformationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `featureTransformationArn`: `str` *(required)*
+
+Returns
+[DescribeFeatureTransformationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describefeaturetransformationresponsetypedef).
 
 ### describe_filter
 
 Type annotations for `boto3.client("personalize").describe_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter]
+Boto3 documentation:
+[Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
 
-```python
-def describe_filter(
-    self,
-    filterArn: str
-) -> DescribeFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filterArn`: `str` *(required)*
+
+Returns
+[DescribeFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describefilterresponsetypedef).
 
 ### describe_recipe
 
 Type annotations for `boto3.client("personalize").describe_recipe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe]
+Boto3 documentation:
+[Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
-```python
-def describe_recipe(
-    self,
-    recipeArn: str
-) -> DescribeRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `recipeArn`: `str` *(required)*
+
+Returns
+[DescribeRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describereciperesponsetypedef).
 
 ### describe_schema
 
 Type annotations for `boto3.client("personalize").describe_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema]
+Boto3 documentation:
+[Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
 
-```python
-def describe_schema(
-    self,
-    schemaArn: str
-) -> DescribeSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `schemaArn`: `str` *(required)*
+
+Returns
+[DescribeSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describeschemaresponsetypedef).
 
 ### describe_solution
 
 Type annotations for `boto3.client("personalize").describe_solution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution]
+Boto3 documentation:
+[Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
 
-```python
-def describe_solution(
-    self,
-    solutionArn: str
-) -> DescribeSolutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionArn`: `str` *(required)*
+
+Returns
+[DescribeSolutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describesolutionresponsetypedef).
 
 ### describe_solution_version
 
-Type annotations for `boto3.client("personalize").describe_solution_version` method.
+Type annotations for `boto3.client("personalize").describe_solution_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version]
+Boto3 documentation:
+[Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
-```python
-def describe_solution_version(
-    self,
-    solutionVersionArn: str
-) -> DescribeSolutionVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionVersionArn`: `str` *(required)*
+
+Returns
+[DescribeSolutionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#describesolutionversionresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("personalize").generate_presigned_url` method.
+Type annotations for `boto3.client("personalize").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url]
+Boto3 documentation:
+[Personalize.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_solution_metrics
 
 Type annotations for `boto3.client("personalize").get_solution_metrics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics]
+Boto3 documentation:
+[Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
 
-```python
-def get_solution_metrics(
-    self,
-    solutionVersionArn: str
-) -> GetSolutionMetricsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionVersionArn`: `str` *(required)*
+
+Returns
+[GetSolutionMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#getsolutionmetricsresponsetypedef).
 
 ### list_batch_inference_jobs
 
-Type annotations for `boto3.client("personalize").list_batch_inference_jobs` method.
+Type annotations for `boto3.client("personalize").list_batch_inference_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs]
+Boto3 documentation:
+[Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
 
-```python
-def list_batch_inference_jobs(
-    self,
-    solutionVersionArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListBatchInferenceJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionVersionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListBatchInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listbatchinferencejobsresponsetypedef).
 
 ### list_campaigns
 
 Type annotations for `boto3.client("personalize").list_campaigns` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns]
+Boto3 documentation:
+[Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
 
-```python
-def list_campaigns(
-    self,
-    solutionArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListCampaignsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListCampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listcampaignsresponsetypedef).
 
 ### list_dataset_export_jobs
 
-Type annotations for `boto3.client("personalize").list_dataset_export_jobs` method.
+Type annotations for `boto3.client("personalize").list_dataset_export_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs]
+Boto3 documentation:
+[Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
-```python
-def list_dataset_export_jobs(
-    self,
-    datasetArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDatasetExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDatasetExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetexportjobsresponsetypedef).
 
 ### list_dataset_groups
 
 Type annotations for `boto3.client("personalize").list_dataset_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups]
+Boto3 documentation:
+[Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
 
-```python
-def list_dataset_groups(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDatasetGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDatasetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetgroupsresponsetypedef).
 
 ### list_dataset_import_jobs
 
-Type annotations for `boto3.client("personalize").list_dataset_import_jobs` method.
+Type annotations for `boto3.client("personalize").list_dataset_import_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs]
+Boto3 documentation:
+[Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
-```python
-def list_dataset_import_jobs(
-    self,
-    datasetArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDatasetImportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDatasetImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetimportjobsresponsetypedef).
 
 ### list_datasets
 
 Type annotations for `boto3.client("personalize").list_datasets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets]
+Boto3 documentation:
+[Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
 
-```python
-def list_datasets(
-    self,
-    datasetGroupArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDatasetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetsresponsetypedef).
 
 ### list_event_trackers
 
 Type annotations for `boto3.client("personalize").list_event_trackers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers]
+Boto3 documentation:
+[Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
-```python
-def list_event_trackers(
-    self,
-    datasetGroupArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListEventTrackersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListEventTrackersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listeventtrackersresponsetypedef).
 
 ### list_filters
 
 Type annotations for `boto3.client("personalize").list_filters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters]
+Boto3 documentation:
+[Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
 
-```python
-def list_filters(
-    self,
-    datasetGroupArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListFiltersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listfiltersresponsetypedef).
 
 ### list_recipes
 
 Type annotations for `boto3.client("personalize").list_recipes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes]
+Boto3 documentation:
+[Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
 
-```python
-def list_recipes(
-    self,
-    recipeProvider: Literal['SERVICE'] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListRecipesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `recipeProvider`: `Literal['SERVICE']`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listrecipesresponsetypedef).
 
 ### list_schemas
 
 Type annotations for `boto3.client("personalize").list_schemas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas]
+Boto3 documentation:
+[Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
 
-```python
-def list_schemas(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListSchemasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listschemasresponsetypedef).
 
 ### list_solution_versions
 
-Type annotations for `boto3.client("personalize").list_solution_versions` method.
+Type annotations for `boto3.client("personalize").list_solution_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions]
+Boto3 documentation:
+[Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
 
-```python
-def list_solution_versions(
-    self,
-    solutionArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListSolutionVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `solutionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListSolutionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listsolutionversionsresponsetypedef).
 
 ### list_solutions
 
 Type annotations for `boto3.client("personalize").list_solutions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions]
+Boto3 documentation:
+[Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
 
-```python
-def list_solutions(
-    self,
-    datasetGroupArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListSolutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListSolutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listsolutionsresponsetypedef).
 
 ### update_campaign
 
 Type annotations for `boto3.client("personalize").update_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign]
+Boto3 documentation:
+[Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
 
-```python
-def update_campaign(
-    self,
-    campaignArn: str,
-    solutionVersionArn: str = None,
-    minProvisionedTPS: int = None,
-    campaignConfig: "CampaignConfigTypeDef" = None
-) -> UpdateCampaignResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `campaignArn`: `str` *(required)*
+- `solutionVersionArn`: `str`
+- `minProvisionedTPS`: `int`
+- `campaignConfig`:
+  [CampaignConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignconfigtypedef)
 
+Returns
+[UpdateCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#updatecampaignresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("personalize").get_paginator` method with overloads.
+Type annotations for `boto3.client("personalize").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_batch_inference_jobs")` -> [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
-- `client.get_paginator("list_campaigns")` -> [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
-- `client.get_paginator("list_dataset_export_jobs")` -> [ListDatasetExportJobsPaginator](./paginators.md#listdatasetexportjobspaginator)
-- `client.get_paginator("list_dataset_groups")` -> [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
-- `client.get_paginator("list_dataset_import_jobs")` -> [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
-- `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_event_trackers")` -> [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
-- `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
-- `client.get_paginator("list_recipes")` -> [ListRecipesPaginator](./paginators.md#listrecipespaginator)
-- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-- `client.get_paginator("list_solution_versions")` -> [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
-- `client.get_paginator("list_solutions")` -> [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
-
-
+- `client.get_paginator("list_batch_inference_jobs")` ->
+  [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
+- `client.get_paginator("list_campaigns")` ->
+  [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
+- `client.get_paginator("list_dataset_export_jobs")` ->
+  [ListDatasetExportJobsPaginator](./paginators.md#listdatasetexportjobspaginator)
+- `client.get_paginator("list_dataset_groups")` ->
+  [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
+- `client.get_paginator("list_dataset_import_jobs")` ->
+  [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
+- `client.get_paginator("list_datasets")` ->
+  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_event_trackers")` ->
+  [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
+- `client.get_paginator("list_filters")` ->
+  [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_recipes")` ->
+  [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- `client.get_paginator("list_schemas")` ->
+  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("list_solution_versions")` ->
+  [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
+- `client.get_paginator("list_solutions")` ->
+  [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)

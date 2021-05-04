@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeDeploy
 
-Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+Auto-generated documentation for
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+type annotations stubs module
+[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ```bash
 pip install mypy-boto3-codedeploy
@@ -20,7 +22,8 @@ pip install mypy-boto3-codedeploy
 
 ## CodeDeployClient
 
-Type annotations for  `boto3.client("codedeploy")` as [CodeDeployClient](./client.md)
+Type annotations for `boto3.client("codedeploy")` as
+[CodeDeployClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_codedeploy.client import CodeDeployClient
 ```
 
-
 CodeDeployClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags_to_on_premises_instances](./client.md#add-tags-to-on-premises-instances)
 - [batch_get_application_revisions](./client.md#batch-get-application-revisions)
 - [batch_get_applications](./client.md#batch-get-applications)
@@ -86,10 +87,8 @@ CodeDeployClient [exceptions](./client.md#exceptions)
 - [update_application](./client.md#update-application)
 - [update_deployment_group](./client.md#update-deployment-group)
 
-
-
-
 ### Exceptions
+
 - [AlarmsLimitExceededException](./client.md#alarmslimitexceededexception)
 - [ApplicationAlreadyExistsException](./client.md#applicationalreadyexistsexception)
 - [ApplicationDoesNotExistException](./client.md#applicationdoesnotexistexception)
@@ -204,14 +203,10 @@ CodeDeployClient [exceptions](./client.md#exceptions)
 - [TriggerTargetsLimitExceededException](./client.md#triggertargetslimitexceededexception)
 - [UnsupportedActionForDeploymentTypeException](./client.md#unsupportedactionfordeploymenttypeexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codedeploy").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codedeploy").get_paginator("...")`.
 
 Can be used directly:
 
@@ -229,12 +224,10 @@ from mypy_boto3_codedeploy.paginators import ListApplicationRevisionsPaginator, 
 - [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
 - [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("codedeploy").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("codedeploy").get_waiter("...")`.
 
 Can be used directly:
 
@@ -243,9 +236,6 @@ from mypy_boto3_codedeploy.waiters import DeploymentSuccessfulWaiter, ...
 ```
 
 - [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
-
-
-
 
 ## Literals
 
@@ -301,13 +291,10 @@ from mypy_boto3_codedeploy.literals import ApplicationRevisionSortBy, ...
 - [TrafficRoutingType](./literals.md#trafficroutingtype)
 - [TriggerEventType](./literals.md#triggereventtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

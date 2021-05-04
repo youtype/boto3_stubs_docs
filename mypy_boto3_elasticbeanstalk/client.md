@@ -1,9 +1,12 @@
 # ElasticBeanstalkClient for boto3 ElasticBeanstalk module
 
-> [Index](../README.md) > [ElasticBeanstalk](./README.md) > ElasticBeanstalkClient
+> [Index](../README.md) > [ElasticBeanstalk](./README.md) >
+> ElasticBeanstalkClient
 
-Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+Auto-generated documentation for
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+type annotations stubs module
+[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [ElasticBeanstalkClient for boto3 ElasticBeanstalk module](#elasticbeanstalkclient-for-boto3-elasticbeanstalk-module)
   - [ElasticBeanstalkClient](#elasticbeanstalkclient)
@@ -74,12 +77,13 @@ def get_elasticbeanstalk_client() -> ElasticBeanstalkClient:
     return boto3.client("elasticbeanstalk")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
+Boto3 documentation:
+[ElasticBeanstalk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_elasticbeanstalk.client import Exceptions
@@ -87,7 +91,6 @@ from mypy_boto3_elasticbeanstalk.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -112,842 +115,887 @@ Exceptions:
 - `Exceptions.TooManyPlatformsException`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### abort_environment_update
 
-Type annotations for `boto3.client("elasticbeanstalk").abort_environment_update` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").abort_environment_update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update]
+Boto3 documentation:
+[ElasticBeanstalk.Client.abort_environment_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
 
-```python
-def abort_environment_update(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
 
 ### apply_environment_managed_action
 
-Type annotations for `boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action]
+Boto3 documentation:
+[ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
 
-```python
-def apply_environment_managed_action(
-    self,
-    ActionId: str,
-    EnvironmentName: str = None,
-    EnvironmentId: str = None
-) -> ApplyEnvironmentManagedActionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionId`: `str` *(required)*
+- `EnvironmentName`: `str`
+- `EnvironmentId`: `str`
+
+Returns
+[ApplyEnvironmentManagedActionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applyenvironmentmanagedactionresulttypedef).
 
 ### associate_environment_operations_role
 
-Type annotations for `boto3.client("elasticbeanstalk").associate_environment_operations_role` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").associate_environment_operations_role`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role]
+Boto3 documentation:
+[ElasticBeanstalk.Client.associate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
 
-```python
-def associate_environment_operations_role(
-    self,
-    EnvironmentName: str,
-    OperationsRole: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str` *(required)*
+- `OperationsRole`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("elasticbeanstalk").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate]
+Boto3 documentation:
+[ElasticBeanstalk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### check_dns_availability
 
-Type annotations for `boto3.client("elasticbeanstalk").check_dns_availability` method.
+Type annotations for `boto3.client("elasticbeanstalk").check_dns_availability`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability]
+Boto3 documentation:
+[ElasticBeanstalk.Client.check_dns_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
 
-```python
-def check_dns_availability(
-    self,
-    CNAMEPrefix: str
-) -> CheckDNSAvailabilityResultMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CNAMEPrefix`: `str` *(required)*
+
+Returns
+[CheckDNSAvailabilityResultMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#checkdnsavailabilityresultmessagetypedef).
 
 ### compose_environments
 
-Type annotations for `boto3.client("elasticbeanstalk").compose_environments` method.
+Type annotations for `boto3.client("elasticbeanstalk").compose_environments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments]
+Boto3 documentation:
+[ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
 
-```python
-def compose_environments(
-    self,
-    ApplicationName: str = None,
-    GroupName: str = None,
-    VersionLabels: List[str] = None
-) -> EnvironmentDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `GroupName`: `str`
+- `VersionLabels`: `List`\[`str`\]
+
+Returns
+[EnvironmentDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptionsmessagetypedef).
 
 ### create_application
 
-Type annotations for `boto3.client("elasticbeanstalk").create_application` method.
+Type annotations for `boto3.client("elasticbeanstalk").create_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
 
-```python
-def create_application(
-    self,
-    ApplicationName: str,
-    Description: str = None,
-    ResourceLifecycleConfig: "ApplicationResourceLifecycleConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> ApplicationDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `Description`: `str`
+- `ResourceLifecycleConfig`:
+  [ApplicationResourceLifecycleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationresourcelifecycleconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+
+Returns
+[ApplicationDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationdescriptionmessagetypedef).
 
 ### create_application_version
 
-Type annotations for `boto3.client("elasticbeanstalk").create_application_version` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").create_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
 
-```python
-def create_application_version(
-    self,
-    ApplicationName: str,
-    VersionLabel: str,
-    Description: str = None,
-    SourceBuildInformation: "SourceBuildInformationTypeDef" = None,
-    SourceBundle: "S3LocationTypeDef" = None,
-    BuildConfiguration: BuildConfigurationTypeDef = None,
-    AutoCreateApplication: bool = None,
-    Process: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> ApplicationVersionDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `VersionLabel`: `str` *(required)*
+- `Description`: `str`
+- `SourceBuildInformation`:
+  [SourceBuildInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#sourcebuildinformationtypedef)
+- `SourceBundle`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#s3locationtypedef)
+- `BuildConfiguration`:
+  [BuildConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#buildconfigurationtypedef)
+- `AutoCreateApplication`: `bool`
+- `Process`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+
+Returns
+[ApplicationVersionDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptionmessagetypedef).
 
 ### create_configuration_template
 
-Type annotations for `boto3.client("elasticbeanstalk").create_configuration_template` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").create_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
 
-```python
-def create_configuration_template(
-    self,
-    ApplicationName: str,
-    TemplateName: str,
-    SolutionStackName: str = None,
-    PlatformArn: str = None,
-    SourceConfiguration: SourceConfigurationTypeDef = None,
-    EnvironmentId: str = None,
-    Description: str = None,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> "ConfigurationSettingsDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `TemplateName`: `str` *(required)*
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `SourceConfiguration`:
+  [SourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#sourceconfigurationtypedef)
+- `EnvironmentId`: `str`
+- `Description`: `str`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+
+Returns
+[ConfigurationSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationsettingsdescriptiontypedef).
 
 ### create_environment
 
-Type annotations for `boto3.client("elasticbeanstalk").create_environment` method.
+Type annotations for `boto3.client("elasticbeanstalk").create_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
 
-```python
-def create_environment(
-    self,
-    ApplicationName: str,
-    EnvironmentName: str = None,
-    GroupName: str = None,
-    Description: str = None,
-    CNAMEPrefix: str = None,
-    Tier: "EnvironmentTierTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    VersionLabel: str = None,
-    TemplateName: str = None,
-    SolutionStackName: str = None,
-    PlatformArn: str = None,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"] = None,
-    OptionsToRemove: List[OptionSpecificationTypeDef] = None,
-    OperationsRole: str = None
-) -> "EnvironmentDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `EnvironmentName`: `str`
+- `GroupName`: `str`
+- `Description`: `str`
+- `CNAMEPrefix`: `str`
+- `Tier`:
+  [EnvironmentTierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmenttiertypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+- `VersionLabel`: `str`
+- `TemplateName`: `str`
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+- `OptionsToRemove`:
+  `List`\[[OptionSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#optionspecificationtypedef)\]
+- `OperationsRole`: `str`
+
+Returns
+[EnvironmentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptiontypedef).
 
 ### create_platform_version
 
-Type annotations for `boto3.client("elasticbeanstalk").create_platform_version` method.
+Type annotations for `boto3.client("elasticbeanstalk").create_platform_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
 
-```python
-def create_platform_version(
-    self,
-    PlatformName: str,
-    PlatformVersion: str,
-    PlatformDefinitionBundle: "S3LocationTypeDef",
-    EnvironmentName: str = None,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePlatformVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformName`: `str` *(required)*
+- `PlatformVersion`: `str` *(required)*
+- `PlatformDefinitionBundle`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#s3locationtypedef)
+  *(required)*
+- `EnvironmentName`: `str`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePlatformVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#createplatformversionresulttypedef).
 
 ### create_storage_location
 
-Type annotations for `boto3.client("elasticbeanstalk").create_storage_location` method.
+Type annotations for `boto3.client("elasticbeanstalk").create_storage_location`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location]
+Boto3 documentation:
+[ElasticBeanstalk.Client.create_storage_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
 
-```python
-def create_storage_location(
-    self
-) -> CreateStorageLocationResultMessageTypeDef:
-    pass
-```
+Returns
+[CreateStorageLocationResultMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#createstoragelocationresultmessagetypedef).
 
 ### delete_application
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_application` method.
+Type annotations for `boto3.client("elasticbeanstalk").delete_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application]
+Boto3 documentation:
+[ElasticBeanstalk.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    ApplicationName: str,
-    TerminateEnvByForce: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `TerminateEnvByForce`: `bool`
 
 ### delete_application_version
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_application_version` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").delete_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
 
-```python
-def delete_application_version(
-    self,
-    ApplicationName: str,
-    VersionLabel: str,
-    DeleteSourceBundle: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `VersionLabel`: `str` *(required)*
+- `DeleteSourceBundle`: `bool`
 
 ### delete_configuration_template
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_configuration_template` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").delete_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template]
+Boto3 documentation:
+[ElasticBeanstalk.Client.delete_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
 
-```python
-def delete_configuration_template(
-    self,
-    ApplicationName: str,
-    TemplateName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `TemplateName`: `str` *(required)*
 
 ### delete_environment_configuration
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_environment_configuration` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").delete_environment_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration]
+Boto3 documentation:
+[ElasticBeanstalk.Client.delete_environment_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
 
-```python
-def delete_environment_configuration(
-    self,
-    ApplicationName: str,
-    EnvironmentName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `EnvironmentName`: `str` *(required)*
 
 ### delete_platform_version
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_platform_version` method.
+Type annotations for `boto3.client("elasticbeanstalk").delete_platform_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.delete_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
 
-```python
-def delete_platform_version(
-    self,
-    PlatformArn: str = None
-) -> DeletePlatformVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformArn`: `str`
+
+Returns
+[DeletePlatformVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#deleteplatformversionresulttypedef).
 
 ### describe_account_attributes
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_account_attributes` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_account_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
 
-```python
-def describe_account_attributes(
-    self
-) -> DescribeAccountAttributesResultTypeDef:
-    pass
-```
+Returns
+[DescribeAccountAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeaccountattributesresulttypedef).
 
 ### describe_application_versions
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_application_versions` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_application_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
 
-```python
-def describe_application_versions(
-    self,
-    ApplicationName: str = None,
-    VersionLabels: List[str] = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> ApplicationVersionDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `VersionLabels`: `List`\[`str`\]
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[ApplicationVersionDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptionsmessagetypedef).
 
 ### describe_applications
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_applications` method.
+Type annotations for `boto3.client("elasticbeanstalk").describe_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
 
-```python
-def describe_applications(
-    self,
-    ApplicationNames: List[str] = None
-) -> ApplicationDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationNames`: `List`\[`str`\]
+
+Returns
+[ApplicationDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationdescriptionsmessagetypedef).
 
 ### describe_configuration_options
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_configuration_options` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_configuration_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
 
-```python
-def describe_configuration_options(
-    self,
-    ApplicationName: str = None,
-    TemplateName: str = None,
-    EnvironmentName: str = None,
-    SolutionStackName: str = None,
-    PlatformArn: str = None,
-    Options: List[OptionSpecificationTypeDef] = None
-) -> ConfigurationOptionsDescriptionTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `TemplateName`: `str`
+- `EnvironmentName`: `str`
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `Options`:
+  `List`\[[OptionSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#optionspecificationtypedef)\]
+
+Returns
+[ConfigurationOptionsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsdescriptiontypedef).
 
 ### describe_configuration_settings
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_configuration_settings` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_configuration_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
 
-```python
-def describe_configuration_settings(
-    self,
-    ApplicationName: str,
-    TemplateName: str = None,
-    EnvironmentName: str = None
-) -> ConfigurationSettingsDescriptionsTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `TemplateName`: `str`
+- `EnvironmentName`: `str`
+
+Returns
+[ConfigurationSettingsDescriptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationsettingsdescriptionstypedef).
 
 ### describe_environment_health
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environment_health` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_environment_health` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
 
-```python
-def describe_environment_health(
-    self,
-    EnvironmentName: str = None,
-    EnvironmentId: str = None,
-    AttributeNames: List[EnvironmentHealthAttribute] = None
-) -> DescribeEnvironmentHealthResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str`
+- `EnvironmentId`: `str`
+- `AttributeNames`:
+  `List`\[[EnvironmentHealthAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmenthealthattribute)\]
+
+Returns
+[DescribeEnvironmentHealthResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeenvironmenthealthresulttypedef).
 
 ### describe_environment_managed_action_history
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environment_managed_action_history` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_environment_managed_action_history`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
 
-```python
-def describe_environment_managed_action_history(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None,
-    NextToken: str = None,
-    MaxItems: int = None
-) -> DescribeEnvironmentManagedActionHistoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+- `NextToken`: `str`
+- `MaxItems`: `int`
+
+Returns
+[DescribeEnvironmentManagedActionHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeenvironmentmanagedactionhistoryresulttypedef).
 
 ### describe_environment_managed_actions
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
 
-```python
-def describe_environment_managed_actions(
-    self,
-    EnvironmentName: str = None,
-    EnvironmentId: str = None,
-    Status: ActionStatus = None
-) -> DescribeEnvironmentManagedActionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str`
+- `EnvironmentId`: `str`
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#actionstatus)
+
+Returns
+[DescribeEnvironmentManagedActionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeenvironmentmanagedactionsresulttypedef).
 
 ### describe_environment_resources
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environment_resources` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_environment_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_environment_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
 
-```python
-def describe_environment_resources(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> EnvironmentResourceDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+
+Returns
+[EnvironmentResourceDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentresourcedescriptionsmessagetypedef).
 
 ### describe_environments
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environments` method.
+Type annotations for `boto3.client("elasticbeanstalk").describe_environments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
 
-```python
-def describe_environments(
-    self,
-    ApplicationName: str = None,
-    VersionLabel: str = None,
-    EnvironmentIds: List[str] = None,
-    EnvironmentNames: List[str] = None,
-    IncludeDeleted: bool = None,
-    IncludedDeletedBackTo: datetime = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> EnvironmentDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `VersionLabel`: `str`
+- `EnvironmentIds`: `List`\[`str`\]
+- `EnvironmentNames`: `List`\[`str`\]
+- `IncludeDeleted`: `bool`
+- `IncludedDeletedBackTo`: `datetime`
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[EnvironmentDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptionsmessagetypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    ApplicationName: str = None,
-    VersionLabel: str = None,
-    TemplateName: str = None,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None,
-    PlatformArn: str = None,
-    RequestId: str = None,
-    Severity: EventSeverity = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> EventDescriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `VersionLabel`: `str`
+- `TemplateName`: `str`
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+- `PlatformArn`: `str`
+- `RequestId`: `str`
+- `Severity`:
+  [EventSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#eventseverity)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[EventDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#eventdescriptionsmessagetypedef).
 
 ### describe_instances_health
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_instances_health` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_instances_health` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
 
-```python
-def describe_instances_health(
-    self,
-    EnvironmentName: str = None,
-    EnvironmentId: str = None,
-    AttributeNames: List[InstancesHealthAttribute] = None,
-    NextToken: str = None
-) -> DescribeInstancesHealthResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str`
+- `EnvironmentId`: `str`
+- `AttributeNames`:
+  `List`\[[InstancesHealthAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#instanceshealthattribute)\]
+- `NextToken`: `str`
+
+Returns
+[DescribeInstancesHealthResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeinstanceshealthresulttypedef).
 
 ### describe_platform_version
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_platform_version` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").describe_platform_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.describe_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
 
-```python
-def describe_platform_version(
-    self,
-    PlatformArn: str = None
-) -> DescribePlatformVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PlatformArn`: `str`
+
+Returns
+[DescribePlatformVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeplatformversionresulttypedef).
 
 ### disassociate_environment_operations_role
 
-Type annotations for `boto3.client("elasticbeanstalk").disassociate_environment_operations_role` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").disassociate_environment_operations_role`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role]
+Boto3 documentation:
+[ElasticBeanstalk.Client.disassociate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
 
-```python
-def disassociate_environment_operations_role(
-    self,
-    EnvironmentName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("elasticbeanstalk").generate_presigned_url` method.
+Type annotations for `boto3.client("elasticbeanstalk").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url]
+Boto3 documentation:
+[ElasticBeanstalk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_available_solution_stacks
 
-Type annotations for `boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks]
+Boto3 documentation:
+[ElasticBeanstalk.Client.list_available_solution_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
 
-```python
-def list_available_solution_stacks(
-    self
-) -> ListAvailableSolutionStacksResultMessageTypeDef:
-    pass
-```
+Returns
+[ListAvailableSolutionStacksResultMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#listavailablesolutionstacksresultmessagetypedef).
 
 ### list_platform_branches
 
-Type annotations for `boto3.client("elasticbeanstalk").list_platform_branches` method.
+Type annotations for `boto3.client("elasticbeanstalk").list_platform_branches`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches]
+Boto3 documentation:
+[ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
 
-```python
-def list_platform_branches(
-    self,
-    Filters: List[SearchFilterTypeDef] = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> ListPlatformBranchesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[SearchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#searchfiltertypedef)\]
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPlatformBranchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#listplatformbranchesresulttypedef).
 
 ### list_platform_versions
 
-Type annotations for `boto3.client("elasticbeanstalk").list_platform_versions` method.
+Type annotations for `boto3.client("elasticbeanstalk").list_platform_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions]
+Boto3 documentation:
+[ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
 
-```python
-def list_platform_versions(
-    self,
-    Filters: List[PlatformFilterTypeDef] = None,
-    MaxRecords: int = None,
-    NextToken: str = None
-) -> ListPlatformVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[PlatformFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformfiltertypedef)\]
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPlatformVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#listplatformversionsresulttypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("elasticbeanstalk").list_tags_for_resource` method.
+Type annotations for `boto3.client("elasticbeanstalk").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource]
+Boto3 documentation:
+[ElasticBeanstalk.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ResourceTagsDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ResourceTagsDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#resourcetagsdescriptionmessagetypedef).
 
 ### rebuild_environment
 
-Type annotations for `boto3.client("elasticbeanstalk").rebuild_environment` method.
+Type annotations for `boto3.client("elasticbeanstalk").rebuild_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment]
+Boto3 documentation:
+[ElasticBeanstalk.Client.rebuild_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
 
-```python
-def rebuild_environment(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
 
 ### request_environment_info
 
-Type annotations for `boto3.client("elasticbeanstalk").request_environment_info` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").request_environment_info` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info]
+Boto3 documentation:
+[ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
 
-```python
-def request_environment_info(
-    self,
-    InfoType: EnvironmentInfoType,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InfoType`:
+  [EnvironmentInfoType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmentinfotype)
+  *(required)*
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
 
 ### restart_app_server
 
-Type annotations for `boto3.client("elasticbeanstalk").restart_app_server` method.
+Type annotations for `boto3.client("elasticbeanstalk").restart_app_server`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server]
+Boto3 documentation:
+[ElasticBeanstalk.Client.restart_app_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
 
-```python
-def restart_app_server(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
 
 ### retrieve_environment_info
 
-Type annotations for `boto3.client("elasticbeanstalk").retrieve_environment_info` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").retrieve_environment_info` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info]
+Boto3 documentation:
+[ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
 
-```python
-def retrieve_environment_info(
-    self,
-    InfoType: EnvironmentInfoType,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None
-) -> RetrieveEnvironmentInfoResultMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `InfoType`:
+  [EnvironmentInfoType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#environmentinfotype)
+  *(required)*
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+
+Returns
+[RetrieveEnvironmentInfoResultMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#retrieveenvironmentinforesultmessagetypedef).
 
 ### swap_environment_cnames
 
-Type annotations for `boto3.client("elasticbeanstalk").swap_environment_cnames` method.
+Type annotations for `boto3.client("elasticbeanstalk").swap_environment_cnames`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames]
+Boto3 documentation:
+[ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
 
-```python
-def swap_environment_cnames(
-    self,
-    SourceEnvironmentId: str = None,
-    SourceEnvironmentName: str = None,
-    DestinationEnvironmentId: str = None,
-    DestinationEnvironmentName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `SourceEnvironmentId`: `str`
+- `SourceEnvironmentName`: `str`
+- `DestinationEnvironmentId`: `str`
+- `DestinationEnvironmentName`: `str`
 
 ### terminate_environment
 
-Type annotations for `boto3.client("elasticbeanstalk").terminate_environment` method.
+Type annotations for `boto3.client("elasticbeanstalk").terminate_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment]
+Boto3 documentation:
+[ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
 
-```python
-def terminate_environment(
-    self,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None,
-    TerminateResources: bool = None,
-    ForceTerminate: bool = None
-) -> "EnvironmentDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+- `TerminateResources`: `bool`
+- `ForceTerminate`: `bool`
+
+Returns
+[EnvironmentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptiontypedef).
 
 ### update_application
 
-Type annotations for `boto3.client("elasticbeanstalk").update_application` method.
+Type annotations for `boto3.client("elasticbeanstalk").update_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
 
-```python
-def update_application(
-    self,
-    ApplicationName: str,
-    Description: str = None
-) -> ApplicationDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[ApplicationDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationdescriptionmessagetypedef).
 
 ### update_application_resource_lifecycle
 
-Type annotations for `boto3.client("elasticbeanstalk").update_application_resource_lifecycle` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").update_application_resource_lifecycle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_application_resource_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
 
-```python
-def update_application_resource_lifecycle(
-    self,
-    ApplicationName: str,
-    ResourceLifecycleConfig: "ApplicationResourceLifecycleConfigTypeDef"
-) -> ApplicationResourceLifecycleDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `ResourceLifecycleConfig`:
+  [ApplicationResourceLifecycleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationresourcelifecycleconfigtypedef)
+  *(required)*
+
+Returns
+[ApplicationResourceLifecycleDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationresourcelifecycledescriptionmessagetypedef).
 
 ### update_application_version
 
-Type annotations for `boto3.client("elasticbeanstalk").update_application_version` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").update_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
 
-```python
-def update_application_version(
-    self,
-    ApplicationName: str,
-    VersionLabel: str,
-    Description: str = None
-) -> ApplicationVersionDescriptionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `VersionLabel`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[ApplicationVersionDescriptionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptionmessagetypedef).
 
 ### update_configuration_template
 
-Type annotations for `boto3.client("elasticbeanstalk").update_configuration_template` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").update_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
 
-```python
-def update_configuration_template(
-    self,
-    ApplicationName: str,
-    TemplateName: str,
-    Description: str = None,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"] = None,
-    OptionsToRemove: List[OptionSpecificationTypeDef] = None
-) -> "ConfigurationSettingsDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `TemplateName`: `str` *(required)*
+- `Description`: `str`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+- `OptionsToRemove`:
+  `List`\[[OptionSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#optionspecificationtypedef)\]
+
+Returns
+[ConfigurationSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationsettingsdescriptiontypedef).
 
 ### update_environment
 
-Type annotations for `boto3.client("elasticbeanstalk").update_environment` method.
+Type annotations for `boto3.client("elasticbeanstalk").update_environment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
 
-```python
-def update_environment(
-    self,
-    ApplicationName: str = None,
-    EnvironmentId: str = None,
-    EnvironmentName: str = None,
-    GroupName: str = None,
-    Description: str = None,
-    Tier: "EnvironmentTierTypeDef" = None,
-    VersionLabel: str = None,
-    TemplateName: str = None,
-    SolutionStackName: str = None,
-    PlatformArn: str = None,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"] = None,
-    OptionsToRemove: List[OptionSpecificationTypeDef] = None
-) -> "EnvironmentDescriptionTypeDef":
-    pass
-```
+Arguments:
+
+- `ApplicationName`: `str`
+- `EnvironmentId`: `str`
+- `EnvironmentName`: `str`
+- `GroupName`: `str`
+- `Description`: `str`
+- `Tier`:
+  [EnvironmentTierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmenttiertypedef)
+- `VersionLabel`: `str`
+- `TemplateName`: `str`
+- `SolutionStackName`: `str`
+- `PlatformArn`: `str`
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+- `OptionsToRemove`:
+  `List`\[[OptionSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#optionspecificationtypedef)\]
+
+Returns
+[EnvironmentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptiontypedef).
 
 ### update_tags_for_resource
 
-Type annotations for `boto3.client("elasticbeanstalk").update_tags_for_resource` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").update_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource]
+Boto3 documentation:
+[ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
 
-```python
-def update_tags_for_resource(
-    self,
-    ResourceArn: str,
-    TagsToAdd: List["TagTypeDef"] = None,
-    TagsToRemove: List[str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagsToAdd`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#tagtypedef)\]
+- `TagsToRemove`: `List`\[`str`\]
 
 ### validate_configuration_settings
 
-Type annotations for `boto3.client("elasticbeanstalk").validate_configuration_settings` method.
+Type annotations for
+`boto3.client("elasticbeanstalk").validate_configuration_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings]
+Boto3 documentation:
+[ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
 
-```python
-def validate_configuration_settings(
-    self,
-    ApplicationName: str,
-    OptionSettings: List["ConfigurationOptionSettingTypeDef"],
-    TemplateName: str = None,
-    EnvironmentName: str = None
-) -> ConfigurationSettingsValidationMessagesTypeDef:
-    pass
-```
+Arguments:
 
+- `ApplicationName`: `str` *(required)*
+- `OptionSettings`:
+  `List`\[[ConfigurationOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationoptionsettingtypedef)\]
+  *(required)*
+- `TemplateName`: `str`
+- `EnvironmentName`: `str`
 
+Returns
+[ConfigurationSettingsValidationMessagesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#configurationsettingsvalidationmessagestypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("elasticbeanstalk").get_paginator` method with overloads.
+Type annotations for `boto3.client("elasticbeanstalk").get_paginator` method
+with overloads.
 
-- `client.get_paginator("describe_application_versions")` -> [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
-- `client.get_paginator("describe_environment_managed_action_history")` -> [DescribeEnvironmentManagedActionHistoryPaginator](./paginators.md#describeenvironmentmanagedactionhistorypaginator)
-- `client.get_paginator("describe_environments")` -> [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("list_platform_versions")` -> [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
-
-
-
+- `client.get_paginator("describe_application_versions")` ->
+  [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
+- `client.get_paginator("describe_environment_managed_action_history")` ->
+  [DescribeEnvironmentManagedActionHistoryPaginator](./paginators.md#describeenvironmentmanagedactionhistorypaginator)
+- `client.get_paginator("describe_environments")` ->
+  [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("list_platform_versions")` ->
+  [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("elasticbeanstalk").get_waiter` method with overloads.
+Type annotations for `boto3.client("elasticbeanstalk").get_waiter` method with
+overloads.
 
-- `client.get_waiter("environment_exists")` -> [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
-- `client.get_waiter("environment_terminated")` -> [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
-- `client.get_waiter("environment_updated")` -> [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
+- `client.get_waiter("environment_exists")` ->
+  [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
+- `client.get_waiter("environment_terminated")` ->
+  [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
+- `client.get_waiter("environment_updated")` ->
+  [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)

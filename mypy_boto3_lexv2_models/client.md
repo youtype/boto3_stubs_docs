@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > LexModelsV2Client
 
-Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+Auto-generated documentation for
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+type annotations stubs module
+[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [LexModelsV2Client for boto3 LexModelsV2 module](#lexmodelsv2client-for-boto3-lexmodelsv2-module)
   - [LexModelsV2Client](#lexmodelsv2client)
@@ -65,12 +67,13 @@ def get_lexv2-models_client() -> LexModelsV2Client:
     return boto3.client("lexv2-models")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
+Boto3 documentation:
+[LexModelsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lexv2_models.client import Exceptions
@@ -78,7 +81,6 @@ from mypy_boto3_lexv2_models.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -91,771 +93,814 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### build_bot_locale
 
 Type annotations for `boto3.client("lexv2-models").build_bot_locale` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale]
+Boto3 documentation:
+[LexModelsV2.Client.build_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
 
-```python
-def build_bot_locale(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> BuildBotLocaleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[BuildBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#buildbotlocaleresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("lexv2-models").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate]
+Boto3 documentation:
+[LexModelsV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_bot
 
 Type annotations for `boto3.client("lexv2-models").create_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot]
+Boto3 documentation:
+[LexModelsV2.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
 
-```python
-def create_bot(
-    self,
-    botName: str,
-    roleArn: str,
-    dataPrivacy: "DataPrivacyTypeDef",
-    idleSessionTTLInSeconds: int,
-    description: str = None,
-    botTags: Dict[str, str] = None,
-    testBotAliasTags: Dict[str, str] = None
-) -> CreateBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botName`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `dataPrivacy`:
+  [DataPrivacyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dataprivacytypedef)
+  *(required)*
+- `idleSessionTTLInSeconds`: `int` *(required)*
+- `description`: `str`
+- `botTags`: `Dict`\[`str`, `str`\]
+- `testBotAliasTags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotresponsetypedef).
 
 ### create_bot_alias
 
 Type annotations for `boto3.client("lexv2-models").create_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias]
+Boto3 documentation:
+[LexModelsV2.Client.create_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
 
-```python
-def create_bot_alias(
-    self,
-    botAliasName: str,
-    botId: str,
-    description: str = None,
-    botVersion: str = None,
-    botAliasLocaleSettings: Dict[str, "BotAliasLocaleSettingsTypeDef"] = None,
-    conversationLogSettings: "ConversationLogSettingsTypeDef" = None,
-    sentimentAnalysisSettings: "SentimentAnalysisSettingsTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botAliasName`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `description`: `str`
+- `botVersion`: `str`
+- `botAliasLocaleSettings`: `Dict`\[`str`,
+  [BotAliasLocaleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botaliaslocalesettingstypedef)\]
+- `conversationLogSettings`:
+  [ConversationLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#conversationlogsettingstypedef)
+- `sentimentAnalysisSettings`:
+  [SentimentAnalysisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sentimentanalysissettingstypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotaliasresponsetypedef).
 
 ### create_bot_locale
 
 Type annotations for `boto3.client("lexv2-models").create_bot_locale` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale]
+Boto3 documentation:
+[LexModelsV2.Client.create_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
 
-```python
-def create_bot_locale(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    nluIntentConfidenceThreshold: float,
-    description: str = None,
-    voiceSettings: "VoiceSettingsTypeDef" = None
-) -> CreateBotLocaleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `nluIntentConfidenceThreshold`: `float` *(required)*
+- `description`: `str`
+- `voiceSettings`:
+  [VoiceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#voicesettingstypedef)
+
+Returns
+[CreateBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotlocaleresponsetypedef).
 
 ### create_bot_version
 
 Type annotations for `boto3.client("lexv2-models").create_bot_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version]
+Boto3 documentation:
+[LexModelsV2.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
 
-```python
-def create_bot_version(
-    self,
-    botId: str,
-    botVersionLocaleSpecification: Dict[str, "BotVersionLocaleDetailsTypeDef"],
-    description: str = None
-) -> CreateBotVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersionLocaleSpecification`: `Dict`\[`str`,
+  [BotVersionLocaleDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botversionlocaledetailstypedef)\]
+  *(required)*
+- `description`: `str`
+
+Returns
+[CreateBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotversionresponsetypedef).
 
 ### create_intent
 
 Type annotations for `boto3.client("lexv2-models").create_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent]
+Boto3 documentation:
+[LexModelsV2.Client.create_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
 
-```python
-def create_intent(
-    self,
-    intentName: str,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    description: str = None,
-    parentIntentSignature: str = None,
-    sampleUtterances: List["SampleUtteranceTypeDef"] = None,
-    dialogCodeHook: "DialogCodeHookSettingsTypeDef" = None,
-    fulfillmentCodeHook: "FulfillmentCodeHookSettingsTypeDef" = None,
-    intentConfirmationSetting: "IntentConfirmationSettingTypeDef" = None,
-    intentClosingSetting: "IntentClosingSettingTypeDef" = None,
-    inputContexts: List["InputContextTypeDef"] = None,
-    outputContexts: List["OutputContextTypeDef"] = None,
-    kendraConfiguration: "KendraConfigurationTypeDef" = None
-) -> CreateIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `intentName`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `description`: `str`
+- `parentIntentSignature`: `str`
+- `sampleUtterances`:
+  `List`\[[SampleUtteranceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sampleutterancetypedef)\]
+- `dialogCodeHook`:
+  [DialogCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dialogcodehooksettingstypedef)
+- `fulfillmentCodeHook`:
+  [FulfillmentCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#fulfillmentcodehooksettingstypedef)
+- `intentConfirmationSetting`:
+  [IntentConfirmationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentconfirmationsettingtypedef)
+- `intentClosingSetting`:
+  [IntentClosingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentclosingsettingtypedef)
+- `inputContexts`:
+  `List`\[[InputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#inputcontexttypedef)\]
+- `outputContexts`:
+  `List`\[[OutputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#outputcontexttypedef)\]
+- `kendraConfiguration`:
+  [KendraConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#kendraconfigurationtypedef)
+
+Returns
+[CreateIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createintentresponsetypedef).
 
 ### create_slot
 
 Type annotations for `boto3.client("lexv2-models").create_slot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot]
+Boto3 documentation:
+[LexModelsV2.Client.create_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
 
-```python
-def create_slot(
-    self,
-    slotName: str,
-    slotTypeId: str,
-    valueElicitationSetting: "SlotValueElicitationSettingTypeDef",
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    intentId: str,
-    description: str = None,
-    obfuscationSetting: "ObfuscationSettingTypeDef" = None
-) -> CreateSlotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `slotName`: `str` *(required)*
+- `slotTypeId`: `str` *(required)*
+- `valueElicitationSetting`:
+  [SlotValueElicitationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueelicitationsettingtypedef)
+  *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `intentId`: `str` *(required)*
+- `description`: `str`
+- `obfuscationSetting`:
+  [ObfuscationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#obfuscationsettingtypedef)
+
+Returns
+[CreateSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createslotresponsetypedef).
 
 ### create_slot_type
 
 Type annotations for `boto3.client("lexv2-models").create_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type]
+Boto3 documentation:
+[LexModelsV2.Client.create_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
 
-```python
-def create_slot_type(
-    self,
-    slotTypeName: str,
-    valueSelectionSetting: "SlotValueSelectionSettingTypeDef",
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    description: str = None,
-    slotTypeValues: List["SlotTypeValueTypeDef"] = None,
-    parentSlotTypeSignature: str = None
-) -> CreateSlotTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `slotTypeName`: `str` *(required)*
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueselectionsettingtypedef)
+  *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `description`: `str`
+- `slotTypeValues`:
+  `List`\[[SlotTypeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypevaluetypedef)\]
+- `parentSlotTypeSignature`: `str`
+
+Returns
+[CreateSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createslottyperesponsetypedef).
 
 ### delete_bot
 
 Type annotations for `boto3.client("lexv2-models").delete_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot]
+Boto3 documentation:
+[LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
 
-```python
-def delete_bot(
-    self,
-    botId: str,
-    skipResourceInUseCheck: bool = None
-) -> DeleteBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `skipResourceInUseCheck`: `bool`
+
+Returns
+[DeleteBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotresponsetypedef).
 
 ### delete_bot_alias
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias]
+Boto3 documentation:
+[LexModelsV2.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
 
-```python
-def delete_bot_alias(
-    self,
-    botAliasId: str,
-    botId: str,
-    skipResourceInUseCheck: bool = None
-) -> DeleteBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botAliasId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `skipResourceInUseCheck`: `bool`
+
+Returns
+[DeleteBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotaliasresponsetypedef).
 
 ### delete_bot_locale
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_locale` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale]
+Boto3 documentation:
+[LexModelsV2.Client.delete_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
 
-```python
-def delete_bot_locale(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> DeleteBotLocaleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DeleteBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotlocaleresponsetypedef).
 
 ### delete_bot_version
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version]
+Boto3 documentation:
+[LexModelsV2.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
 
-```python
-def delete_bot_version(
-    self,
-    botId: str,
-    botVersion: str,
-    skipResourceInUseCheck: bool = None
-) -> DeleteBotVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `skipResourceInUseCheck`: `bool`
+
+Returns
+[DeleteBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotversionresponsetypedef).
 
 ### delete_intent
 
 Type annotations for `boto3.client("lexv2-models").delete_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent]
+Boto3 documentation:
+[LexModelsV2.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
 
-```python
-def delete_intent(
-    self,
-    intentId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `intentId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
 
 ### delete_slot
 
 Type annotations for `boto3.client("lexv2-models").delete_slot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot]
+Boto3 documentation:
+[LexModelsV2.Client.delete_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
 
-```python
-def delete_slot(
-    self,
-    slotId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    intentId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `slotId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `intentId`: `str` *(required)*
 
 ### delete_slot_type
 
 Type annotations for `boto3.client("lexv2-models").delete_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type]
+Boto3 documentation:
+[LexModelsV2.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
 
-```python
-def delete_slot_type(
-    self,
-    slotTypeId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    skipResourceInUseCheck: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `slotTypeId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `skipResourceInUseCheck`: `bool`
 
 ### describe_bot
 
 Type annotations for `boto3.client("lexv2-models").describe_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot]
+Boto3 documentation:
+[LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
 
-```python
-def describe_bot(
-    self,
-    botId: str
-) -> DescribeBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+
+Returns
+[DescribeBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotresponsetypedef).
 
 ### describe_bot_alias
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias]
+Boto3 documentation:
+[LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
 
-```python
-def describe_bot_alias(
-    self,
-    botAliasId: str,
-    botId: str
-) -> DescribeBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botAliasId`: `str` *(required)*
+- `botId`: `str` *(required)*
+
+Returns
+[DescribeBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotaliasresponsetypedef).
 
 ### describe_bot_locale
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_locale` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale]
+Boto3 documentation:
+[LexModelsV2.Client.describe_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
 
-```python
-def describe_bot_locale(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> DescribeBotLocaleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DescribeBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotlocaleresponsetypedef).
 
 ### describe_bot_version
 
-Type annotations for `boto3.client("lexv2-models").describe_bot_version` method.
+Type annotations for `boto3.client("lexv2-models").describe_bot_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version]
+Boto3 documentation:
+[LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
 
-```python
-def describe_bot_version(
-    self,
-    botId: str,
-    botVersion: str
-) -> DescribeBotVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+
+Returns
+[DescribeBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotversionresponsetypedef).
 
 ### describe_intent
 
 Type annotations for `boto3.client("lexv2-models").describe_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent]
+Boto3 documentation:
+[LexModelsV2.Client.describe_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
 
-```python
-def describe_intent(
-    self,
-    intentId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> DescribeIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `intentId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DescribeIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeintentresponsetypedef).
 
 ### describe_slot
 
 Type annotations for `boto3.client("lexv2-models").describe_slot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot]
+Boto3 documentation:
+[LexModelsV2.Client.describe_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
 
-```python
-def describe_slot(
-    self,
-    slotId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    intentId: str
-) -> DescribeSlotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `slotId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `intentId`: `str` *(required)*
+
+Returns
+[DescribeSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeslotresponsetypedef).
 
 ### describe_slot_type
 
 Type annotations for `boto3.client("lexv2-models").describe_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type]
+Boto3 documentation:
+[LexModelsV2.Client.describe_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
 
-```python
-def describe_slot_type(
-    self,
-    slotTypeId: str,
-    botId: str,
-    botVersion: str,
-    localeId: str
-) -> DescribeSlotTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `slotTypeId`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+
+Returns
+[DescribeSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeslottyperesponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lexv2-models").generate_presigned_url` method.
+Type annotations for `boto3.client("lexv2-models").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url]
+Boto3 documentation:
+[LexModelsV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_bot_aliases
 
 Type annotations for `boto3.client("lexv2-models").list_bot_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases]
+Boto3 documentation:
+[LexModelsV2.Client.list_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
 
-```python
-def list_bot_aliases(
-    self,
-    botId: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBotAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBotAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotaliasesresponsetypedef).
 
 ### list_bot_locales
 
 Type annotations for `boto3.client("lexv2-models").list_bot_locales` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales]
+Boto3 documentation:
+[LexModelsV2.Client.list_bot_locales](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
 
-```python
-def list_bot_locales(
-    self,
-    botId: str,
-    botVersion: str,
-    sortBy: BotLocaleSortByTypeDef = None,
-    filters: List[BotLocaleFilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBotLocalesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `sortBy`:
+  [BotLocaleSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botlocalesortbytypedef)
+- `filters`:
+  `List`\[[BotLocaleFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botlocalefiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBotLocalesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotlocalesresponsetypedef).
 
 ### list_bot_versions
 
 Type annotations for `boto3.client("lexv2-models").list_bot_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions]
+Boto3 documentation:
+[LexModelsV2.Client.list_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
 
-```python
-def list_bot_versions(
-    self,
-    botId: str,
-    sortBy: BotVersionSortByTypeDef = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBotVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `sortBy`:
+  [BotVersionSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botversionsortbytypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBotVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotversionsresponsetypedef).
 
 ### list_bots
 
 Type annotations for `boto3.client("lexv2-models").list_bots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots]
+Boto3 documentation:
+[LexModelsV2.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
 
-```python
-def list_bots(
-    self,
-    sortBy: BotSortByTypeDef = None,
-    filters: List[BotFilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sortBy`:
+  [BotSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botsortbytypedef)
+- `filters`:
+  `List`\[[BotFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotsresponsetypedef).
 
 ### list_built_in_intents
 
-Type annotations for `boto3.client("lexv2-models").list_built_in_intents` method.
+Type annotations for `boto3.client("lexv2-models").list_built_in_intents`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents]
+Boto3 documentation:
+[LexModelsV2.Client.list_built_in_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
 
-```python
-def list_built_in_intents(
-    self,
-    localeId: str,
-    sortBy: BuiltInIntentSortByTypeDef = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBuiltInIntentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `localeId`: `str` *(required)*
+- `sortBy`:
+  [BuiltInIntentSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#builtinintentsortbytypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBuiltInIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbuiltinintentsresponsetypedef).
 
 ### list_built_in_slot_types
 
-Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types` method.
+Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types]
+Boto3 documentation:
+[LexModelsV2.Client.list_built_in_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
 
-```python
-def list_built_in_slot_types(
-    self,
-    localeId: str,
-    sortBy: BuiltInSlotTypeSortByTypeDef = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBuiltInSlotTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `localeId`: `str` *(required)*
+- `sortBy`:
+  [BuiltInSlotTypeSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#builtinslottypesortbytypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBuiltInSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbuiltinslottypesresponsetypedef).
 
 ### list_intents
 
 Type annotations for `boto3.client("lexv2-models").list_intents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents]
+Boto3 documentation:
+[LexModelsV2.Client.list_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
 
-```python
-def list_intents(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    sortBy: IntentSortByTypeDef = None,
-    filters: List[IntentFilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListIntentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `sortBy`:
+  [IntentSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentsortbytypedef)
+- `filters`:
+  `List`\[[IntentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listintentsresponsetypedef).
 
 ### list_slot_types
 
 Type annotations for `boto3.client("lexv2-models").list_slot_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types]
+Boto3 documentation:
+[LexModelsV2.Client.list_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
 
-```python
-def list_slot_types(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    sortBy: SlotTypeSortByTypeDef = None,
-    filters: List[SlotTypeFilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListSlotTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `sortBy`:
+  [SlotTypeSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypesortbytypedef)
+- `filters`:
+  `List`\[[SlotTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypefiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listslottypesresponsetypedef).
 
 ### list_slots
 
 Type annotations for `boto3.client("lexv2-models").list_slots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots]
+Boto3 documentation:
+[LexModelsV2.Client.list_slots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
 
-```python
-def list_slots(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    intentId: str,
-    sortBy: SlotSortByTypeDef = None,
-    filters: List[SlotFilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListSlotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `intentId`: `str` *(required)*
+- `sortBy`:
+  [SlotSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotsortbytypedef)
+- `filters`:
+  `List`\[[SlotFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSlotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listslotsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("lexv2-models").list_tags_for_resource` method.
+Type annotations for `boto3.client("lexv2-models").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource]
+Boto3 documentation:
+[LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("lexv2-models").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource]
+Boto3 documentation:
+[LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceARN: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceARN`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("lexv2-models").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource]
+Boto3 documentation:
+[LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceARN: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceARN`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_bot
 
 Type annotations for `boto3.client("lexv2-models").update_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot]
+Boto3 documentation:
+[LexModelsV2.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
 
-```python
-def update_bot(
-    self,
-    botId: str,
-    botName: str,
-    roleArn: str,
-    dataPrivacy: "DataPrivacyTypeDef",
-    idleSessionTTLInSeconds: int,
-    description: str = None
-) -> UpdateBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botName`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `dataPrivacy`:
+  [DataPrivacyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dataprivacytypedef)
+  *(required)*
+- `idleSessionTTLInSeconds`: `int` *(required)*
+- `description`: `str`
+
+Returns
+[UpdateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotresponsetypedef).
 
 ### update_bot_alias
 
 Type annotations for `boto3.client("lexv2-models").update_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias]
+Boto3 documentation:
+[LexModelsV2.Client.update_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
 
-```python
-def update_bot_alias(
-    self,
-    botAliasId: str,
-    botAliasName: str,
-    botId: str,
-    description: str = None,
-    botVersion: str = None,
-    botAliasLocaleSettings: Dict[str, "BotAliasLocaleSettingsTypeDef"] = None,
-    conversationLogSettings: "ConversationLogSettingsTypeDef" = None,
-    sentimentAnalysisSettings: "SentimentAnalysisSettingsTypeDef" = None
-) -> UpdateBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botAliasId`: `str` *(required)*
+- `botAliasName`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `description`: `str`
+- `botVersion`: `str`
+- `botAliasLocaleSettings`: `Dict`\[`str`,
+  [BotAliasLocaleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botaliaslocalesettingstypedef)\]
+- `conversationLogSettings`:
+  [ConversationLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#conversationlogsettingstypedef)
+- `sentimentAnalysisSettings`:
+  [SentimentAnalysisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sentimentanalysissettingstypedef)
+
+Returns
+[UpdateBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotaliasresponsetypedef).
 
 ### update_bot_locale
 
 Type annotations for `boto3.client("lexv2-models").update_bot_locale` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale]
+Boto3 documentation:
+[LexModelsV2.Client.update_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
 
-```python
-def update_bot_locale(
-    self,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    nluIntentConfidenceThreshold: float,
-    description: str = None,
-    voiceSettings: "VoiceSettingsTypeDef" = None
-) -> UpdateBotLocaleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `nluIntentConfidenceThreshold`: `float` *(required)*
+- `description`: `str`
+- `voiceSettings`:
+  [VoiceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#voicesettingstypedef)
+
+Returns
+[UpdateBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotlocaleresponsetypedef).
 
 ### update_intent
 
 Type annotations for `boto3.client("lexv2-models").update_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent]
+Boto3 documentation:
+[LexModelsV2.Client.update_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
 
-```python
-def update_intent(
-    self,
-    intentId: str,
-    intentName: str,
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    description: str = None,
-    parentIntentSignature: str = None,
-    sampleUtterances: List["SampleUtteranceTypeDef"] = None,
-    dialogCodeHook: "DialogCodeHookSettingsTypeDef" = None,
-    fulfillmentCodeHook: "FulfillmentCodeHookSettingsTypeDef" = None,
-    slotPriorities: List["SlotPriorityTypeDef"] = None,
-    intentConfirmationSetting: "IntentConfirmationSettingTypeDef" = None,
-    intentClosingSetting: "IntentClosingSettingTypeDef" = None,
-    inputContexts: List["InputContextTypeDef"] = None,
-    outputContexts: List["OutputContextTypeDef"] = None,
-    kendraConfiguration: "KendraConfigurationTypeDef" = None
-) -> UpdateIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `intentId`: `str` *(required)*
+- `intentName`: `str` *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `description`: `str`
+- `parentIntentSignature`: `str`
+- `sampleUtterances`:
+  `List`\[[SampleUtteranceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sampleutterancetypedef)\]
+- `dialogCodeHook`:
+  [DialogCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dialogcodehooksettingstypedef)
+- `fulfillmentCodeHook`:
+  [FulfillmentCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#fulfillmentcodehooksettingstypedef)
+- `slotPriorities`:
+  `List`\[[SlotPriorityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotprioritytypedef)\]
+- `intentConfirmationSetting`:
+  [IntentConfirmationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentconfirmationsettingtypedef)
+- `intentClosingSetting`:
+  [IntentClosingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentclosingsettingtypedef)
+- `inputContexts`:
+  `List`\[[InputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#inputcontexttypedef)\]
+- `outputContexts`:
+  `List`\[[OutputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#outputcontexttypedef)\]
+- `kendraConfiguration`:
+  [KendraConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#kendraconfigurationtypedef)
+
+Returns
+[UpdateIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateintentresponsetypedef).
 
 ### update_slot
 
 Type annotations for `boto3.client("lexv2-models").update_slot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot]
+Boto3 documentation:
+[LexModelsV2.Client.update_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
 
-```python
-def update_slot(
-    self,
-    slotId: str,
-    slotName: str,
-    slotTypeId: str,
-    valueElicitationSetting: "SlotValueElicitationSettingTypeDef",
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    intentId: str,
-    description: str = None,
-    obfuscationSetting: "ObfuscationSettingTypeDef" = None
-) -> UpdateSlotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `slotId`: `str` *(required)*
+- `slotName`: `str` *(required)*
+- `slotTypeId`: `str` *(required)*
+- `valueElicitationSetting`:
+  [SlotValueElicitationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueelicitationsettingtypedef)
+  *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `intentId`: `str` *(required)*
+- `description`: `str`
+- `obfuscationSetting`:
+  [ObfuscationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#obfuscationsettingtypedef)
+
+Returns
+[UpdateSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateslotresponsetypedef).
 
 ### update_slot_type
 
 Type annotations for `boto3.client("lexv2-models").update_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type]
+Boto3 documentation:
+[LexModelsV2.Client.update_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
 
-```python
-def update_slot_type(
-    self,
-    slotTypeId: str,
-    slotTypeName: str,
-    valueSelectionSetting: "SlotValueSelectionSettingTypeDef",
-    botId: str,
-    botVersion: str,
-    localeId: str,
-    description: str = None,
-    slotTypeValues: List["SlotTypeValueTypeDef"] = None,
-    parentSlotTypeSignature: str = None
-) -> UpdateSlotTypeResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `slotTypeId`: `str` *(required)*
+- `slotTypeName`: `str` *(required)*
+- `valueSelectionSetting`:
+  [SlotValueSelectionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueselectionsettingtypedef)
+  *(required)*
+- `botId`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `description`: `str`
+- `slotTypeValues`:
+  `List`\[[SlotTypeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypevaluetypedef)\]
+- `parentSlotTypeSignature`: `str`
 
-
+Returns
+[UpdateSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateslottyperesponsetypedef).

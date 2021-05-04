@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeCommit](./README.md) > CodeCommitClient
 
-Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
-type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+Auto-generated documentation for
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+type annotations stubs module
+[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [CodeCommitClient for boto3 CodeCommit module](#codecommitclient-for-boto3-codecommit-module)
   - [CodeCommitClient](#codecommitclient)
@@ -103,12 +105,13 @@ def get_codecommit_client() -> CodeCommitClient:
     return boto3.client("codecommit")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client)
+Boto3 documentation:
+[CodeCommit.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codecommit.client import Exceptions
@@ -116,7 +119,6 @@ from mypy_boto3_codecommit.client import Exceptions
 def handle_error(exc: Exceptions.ActorDoesNotExistException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -307,1339 +309,1414 @@ Exceptions:
 - `Exceptions.TitleRequiredException`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### associate_approval_rule_template_with_repository
 
-Type annotations for `boto3.client("codecommit").associate_approval_rule_template_with_repository` method.
+Type annotations for
+`boto3.client("codecommit").associate_approval_rule_template_with_repository`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository]
+Boto3 documentation:
+[CodeCommit.Client.associate_approval_rule_template_with_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
 
-```python
-def associate_approval_rule_template_with_repository(
-    self,
-    approvalRuleTemplateName: str,
-    repositoryName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
 
 ### batch_associate_approval_rule_template_with_repositories
 
-Type annotations for `boto3.client("codecommit").batch_associate_approval_rule_template_with_repositories` method.
+Type annotations for
+`boto3.client("codecommit").batch_associate_approval_rule_template_with_repositories`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories]
+Boto3 documentation:
+[CodeCommit.Client.batch_associate_approval_rule_template_with_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
 
-```python
-def batch_associate_approval_rule_template_with_repositories(
-    self,
-    approvalRuleTemplateName: str,
-    repositoryNames: List[str]
-) -> BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `repositoryNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
 
 ### batch_describe_merge_conflicts
 
-Type annotations for `boto3.client("codecommit").batch_describe_merge_conflicts` method.
+Type annotations for
+`boto3.client("codecommit").batch_describe_merge_conflicts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts]
+Boto3 documentation:
+[CodeCommit.Client.batch_describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
 
-```python
-def batch_describe_merge_conflicts(
-    self,
-    repositoryName: str,
-    destinationCommitSpecifier: str,
-    sourceCommitSpecifier: str,
-    mergeOption: MergeOptionTypeEnum,
-    maxMergeHunks: int = None,
-    maxConflictFiles: int = None,
-    filePaths: List[str] = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    nextToken: str = None
-) -> BatchDescribeMergeConflictsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+  *(required)*
+- `maxMergeHunks`: `int`
+- `maxConflictFiles`: `int`
+- `filePaths`: `List`\[`str`\]
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `nextToken`: `str`
+
+Returns
+[BatchDescribeMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdescribemergeconflictsoutputtypedef).
 
 ### batch_disassociate_approval_rule_template_from_repositories
 
-Type annotations for `boto3.client("codecommit").batch_disassociate_approval_rule_template_from_repositories` method.
+Type annotations for
+`boto3.client("codecommit").batch_disassociate_approval_rule_template_from_repositories`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories]
+Boto3 documentation:
+[CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
 
-```python
-def batch_disassociate_approval_rule_template_from_repositories(
-    self,
-    approvalRuleTemplateName: str,
-    repositoryNames: List[str]
-) -> BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `repositoryNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
 
 ### batch_get_commits
 
 Type annotations for `boto3.client("codecommit").batch_get_commits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits]
+Boto3 documentation:
+[CodeCommit.Client.batch_get_commits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
 
-```python
-def batch_get_commits(
-    self,
-    commitIds: List[str],
-    repositoryName: str
-) -> BatchGetCommitsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `commitIds`: `List`\[`str`\] *(required)*
+- `repositoryName`: `str` *(required)*
+
+Returns
+[BatchGetCommitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchgetcommitsoutputtypedef).
 
 ### batch_get_repositories
 
-Type annotations for `boto3.client("codecommit").batch_get_repositories` method.
+Type annotations for `boto3.client("codecommit").batch_get_repositories`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories]
+Boto3 documentation:
+[CodeCommit.Client.batch_get_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
 
-```python
-def batch_get_repositories(
-    self,
-    repositoryNames: List[str]
-) -> BatchGetRepositoriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchgetrepositoriesoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codecommit").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.can_paginate]
+Boto3 documentation:
+[CodeCommit.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_approval_rule_template
 
-Type annotations for `boto3.client("codecommit").create_approval_rule_template` method.
+Type annotations for `boto3.client("codecommit").create_approval_rule_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template]
+Boto3 documentation:
+[CodeCommit.Client.create_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
 
-```python
-def create_approval_rule_template(
-    self,
-    approvalRuleTemplateName: str,
-    approvalRuleTemplateContent: str,
-    approvalRuleTemplateDescription: str = None
-) -> CreateApprovalRuleTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `approvalRuleTemplateContent`: `str` *(required)*
+- `approvalRuleTemplateDescription`: `str`
+
+Returns
+[CreateApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createapprovalruletemplateoutputtypedef).
 
 ### create_branch
 
 Type annotations for `boto3.client("codecommit").create_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch]
+Boto3 documentation:
+[CodeCommit.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch)
 
-```python
-def create_branch(
-    self,
-    repositoryName: str,
-    branchName: str,
-    commitId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `commitId`: `str` *(required)*
 
 ### create_commit
 
 Type annotations for `boto3.client("codecommit").create_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit]
+Boto3 documentation:
+[CodeCommit.Client.create_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit)
 
-```python
-def create_commit(
-    self,
-    repositoryName: str,
-    branchName: str,
-    parentCommitId: str = None,
-    authorName: str = None,
-    email: str = None,
-    commitMessage: str = None,
-    keepEmptyFolders: bool = None,
-    putFiles: List[PutFileEntryTypeDef] = None,
-    deleteFiles: List["DeleteFileEntryTypeDef"] = None,
-    setFileModes: List["SetFileModeEntryTypeDef"] = None
-) -> CreateCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `parentCommitId`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `putFiles`:
+  `List`\[[PutFileEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putfileentrytypedef)\]
+- `deleteFiles`:
+  `List`\[[DeleteFileEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletefileentrytypedef)\]
+- `setFileModes`:
+  `List`\[[SetFileModeEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#setfilemodeentrytypedef)\]
+
+Returns
+[CreateCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createcommitoutputtypedef).
 
 ### create_pull_request
 
 Type annotations for `boto3.client("codecommit").create_pull_request` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request]
+Boto3 documentation:
+[CodeCommit.Client.create_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
 
-```python
-def create_pull_request(
-    self,
-    title: str,
-    targets: List[TargetTypeDef],
-    description: str = None,
-    clientRequestToken: str = None
-) -> CreatePullRequestOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `title`: `str` *(required)*
+- `targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#targettypedef)\]
+  *(required)*
+- `description`: `str`
+- `clientRequestToken`: `str`
+
+Returns
+[CreatePullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createpullrequestoutputtypedef).
 
 ### create_pull_request_approval_rule
 
-Type annotations for `boto3.client("codecommit").create_pull_request_approval_rule` method.
+Type annotations for
+`boto3.client("codecommit").create_pull_request_approval_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule]
+Boto3 documentation:
+[CodeCommit.Client.create_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
 
-```python
-def create_pull_request_approval_rule(
-    self,
-    pullRequestId: str,
-    approvalRuleName: str,
-    approvalRuleContent: str
-) -> CreatePullRequestApprovalRuleOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `approvalRuleName`: `str` *(required)*
+- `approvalRuleContent`: `str` *(required)*
+
+Returns
+[CreatePullRequestApprovalRuleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createpullrequestapprovalruleoutputtypedef).
 
 ### create_repository
 
 Type annotations for `boto3.client("codecommit").create_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository]
+Boto3 documentation:
+[CodeCommit.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository)
 
-```python
-def create_repository(
-    self,
-    repositoryName: str,
-    repositoryDescription: str = None,
-    tags: Dict[str, str] = None
-) -> CreateRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `repositoryDescription`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createrepositoryoutputtypedef).
 
 ### create_unreferenced_merge_commit
 
-Type annotations for `boto3.client("codecommit").create_unreferenced_merge_commit` method.
+Type annotations for
+`boto3.client("codecommit").create_unreferenced_merge_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit]
+Boto3 documentation:
+[CodeCommit.Client.create_unreferenced_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
 
-```python
-def create_unreferenced_merge_commit(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    mergeOption: MergeOptionTypeEnum,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    authorName: str = None,
-    email: str = None,
-    commitMessage: str = None,
-    keepEmptyFolders: bool = None,
-    conflictResolution: ConflictResolutionTypeDef = None
-) -> CreateUnreferencedMergeCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+  *(required)*
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+
+Returns
+[CreateUnreferencedMergeCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createunreferencedmergecommitoutputtypedef).
 
 ### delete_approval_rule_template
 
-Type annotations for `boto3.client("codecommit").delete_approval_rule_template` method.
+Type annotations for `boto3.client("codecommit").delete_approval_rule_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template]
+Boto3 documentation:
+[CodeCommit.Client.delete_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
 
-```python
-def delete_approval_rule_template(
-    self,
-    approvalRuleTemplateName: str
-) -> DeleteApprovalRuleTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+
+Returns
+[DeleteApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deleteapprovalruletemplateoutputtypedef).
 
 ### delete_branch
 
 Type annotations for `boto3.client("codecommit").delete_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch]
+Boto3 documentation:
+[CodeCommit.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
 
-```python
-def delete_branch(
-    self,
-    repositoryName: str,
-    branchName: str
-) -> DeleteBranchOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `branchName`: `str` *(required)*
+
+Returns
+[DeleteBranchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletebranchoutputtypedef).
 
 ### delete_comment_content
 
-Type annotations for `boto3.client("codecommit").delete_comment_content` method.
+Type annotations for `boto3.client("codecommit").delete_comment_content`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content]
+Boto3 documentation:
+[CodeCommit.Client.delete_comment_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
 
-```python
-def delete_comment_content(
-    self,
-    commentId: str
-) -> DeleteCommentContentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `commentId`: `str` *(required)*
+
+Returns
+[DeleteCommentContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletecommentcontentoutputtypedef).
 
 ### delete_file
 
 Type annotations for `boto3.client("codecommit").delete_file` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file]
+Boto3 documentation:
+[CodeCommit.Client.delete_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file)
 
-```python
-def delete_file(
-    self,
-    repositoryName: str,
-    branchName: str,
-    filePath: str,
-    parentCommitId: str,
-    keepEmptyFolders: bool = None,
-    commitMessage: str = None,
-    name: str = None,
-    email: str = None
-) -> DeleteFileOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `filePath`: `str` *(required)*
+- `parentCommitId`: `str` *(required)*
+- `keepEmptyFolders`: `bool`
+- `commitMessage`: `str`
+- `name`: `str`
+- `email`: `str`
+
+Returns
+[DeleteFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletefileoutputtypedef).
 
 ### delete_pull_request_approval_rule
 
-Type annotations for `boto3.client("codecommit").delete_pull_request_approval_rule` method.
+Type annotations for
+`boto3.client("codecommit").delete_pull_request_approval_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule]
+Boto3 documentation:
+[CodeCommit.Client.delete_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
 
-```python
-def delete_pull_request_approval_rule(
-    self,
-    pullRequestId: str,
-    approvalRuleName: str
-) -> DeletePullRequestApprovalRuleOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `approvalRuleName`: `str` *(required)*
+
+Returns
+[DeletePullRequestApprovalRuleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletepullrequestapprovalruleoutputtypedef).
 
 ### delete_repository
 
 Type annotations for `boto3.client("codecommit").delete_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository]
+Boto3 documentation:
+[CodeCommit.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
 
-```python
-def delete_repository(
-    self,
-    repositoryName: str
-) -> DeleteRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+
+Returns
+[DeleteRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deleterepositoryoutputtypedef).
 
 ### describe_merge_conflicts
 
-Type annotations for `boto3.client("codecommit").describe_merge_conflicts` method.
+Type annotations for `boto3.client("codecommit").describe_merge_conflicts`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts]
+Boto3 documentation:
+[CodeCommit.Client.describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
 
-```python
-def describe_merge_conflicts(
-    self,
-    repositoryName: str,
-    destinationCommitSpecifier: str,
-    sourceCommitSpecifier: str,
-    mergeOption: MergeOptionTypeEnum,
-    filePath: str,
-    maxMergeHunks: int = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    nextToken: str = None
-) -> DescribeMergeConflictsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+  *(required)*
+- `filePath`: `str` *(required)*
+- `maxMergeHunks`: `int`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `nextToken`: `str`
+
+Returns
+[DescribeMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describemergeconflictsoutputtypedef).
 
 ### describe_pull_request_events
 
-Type annotations for `boto3.client("codecommit").describe_pull_request_events` method.
+Type annotations for `boto3.client("codecommit").describe_pull_request_events`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events]
+Boto3 documentation:
+[CodeCommit.Client.describe_pull_request_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
 
-```python
-def describe_pull_request_events(
-    self,
-    pullRequestId: str,
-    pullRequestEventType: PullRequestEventType = None,
-    actorArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> DescribePullRequestEventsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `pullRequestEventType`:
+  [PullRequestEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequesteventtype)
+- `actorArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[DescribePullRequestEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describepullrequesteventsoutputtypedef).
 
 ### disassociate_approval_rule_template_from_repository
 
-Type annotations for `boto3.client("codecommit").disassociate_approval_rule_template_from_repository` method.
+Type annotations for
+`boto3.client("codecommit").disassociate_approval_rule_template_from_repository`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository]
+Boto3 documentation:
+[CodeCommit.Client.disassociate_approval_rule_template_from_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
 
-```python
-def disassociate_approval_rule_template_from_repository(
-    self,
-    approvalRuleTemplateName: str,
-    repositoryName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
 
 ### evaluate_pull_request_approval_rules
 
-Type annotations for `boto3.client("codecommit").evaluate_pull_request_approval_rules` method.
+Type annotations for
+`boto3.client("codecommit").evaluate_pull_request_approval_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules]
+Boto3 documentation:
+[CodeCommit.Client.evaluate_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
 
-```python
-def evaluate_pull_request_approval_rules(
-    self,
-    pullRequestId: str,
-    revisionId: str
-) -> EvaluatePullRequestApprovalRulesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+
+Returns
+[EvaluatePullRequestApprovalRulesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#evaluatepullrequestapprovalrulesoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codecommit").generate_presigned_url` method.
+Type annotations for `boto3.client("codecommit").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeCommit.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_approval_rule_template
 
-Type annotations for `boto3.client("codecommit").get_approval_rule_template` method.
+Type annotations for `boto3.client("codecommit").get_approval_rule_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template]
+Boto3 documentation:
+[CodeCommit.Client.get_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
 
-```python
-def get_approval_rule_template(
-    self,
-    approvalRuleTemplateName: str
-) -> GetApprovalRuleTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+
+Returns
+[GetApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getapprovalruletemplateoutputtypedef).
 
 ### get_blob
 
 Type annotations for `boto3.client("codecommit").get_blob` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob]
+Boto3 documentation:
+[CodeCommit.Client.get_blob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob)
 
-```python
-def get_blob(
-    self,
-    repositoryName: str,
-    blobId: str
-) -> GetBlobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `blobId`: `str` *(required)*
+
+Returns
+[GetBlobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getbloboutputtypedef).
 
 ### get_branch
 
 Type annotations for `boto3.client("codecommit").get_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch]
+Boto3 documentation:
+[CodeCommit.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch)
 
-```python
-def get_branch(
-    self,
-    repositoryName: str = None,
-    branchName: str = None
-) -> GetBranchOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+
+Returns
+[GetBranchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getbranchoutputtypedef).
 
 ### get_comment
 
 Type annotations for `boto3.client("codecommit").get_comment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment]
+Boto3 documentation:
+[CodeCommit.Client.get_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment)
 
-```python
-def get_comment(
-    self,
-    commentId: str
-) -> GetCommentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `commentId`: `str` *(required)*
+
+Returns
+[GetCommentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentoutputtypedef).
 
 ### get_comment_reactions
 
 Type annotations for `boto3.client("codecommit").get_comment_reactions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions]
+Boto3 documentation:
+[CodeCommit.Client.get_comment_reactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
 
-```python
-def get_comment_reactions(
-    self,
-    commentId: str,
-    reactionUserArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetCommentReactionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `commentId`: `str` *(required)*
+- `reactionUserArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetCommentReactionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentreactionsoutputtypedef).
 
 ### get_comments_for_compared_commit
 
-Type annotations for `boto3.client("codecommit").get_comments_for_compared_commit` method.
+Type annotations for
+`boto3.client("codecommit").get_comments_for_compared_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit]
+Boto3 documentation:
+[CodeCommit.Client.get_comments_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
 
-```python
-def get_comments_for_compared_commit(
-    self,
-    repositoryName: str,
-    afterCommitId: str,
-    beforeCommitId: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetCommentsForComparedCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `afterCommitId`: `str` *(required)*
+- `beforeCommitId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetCommentsForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforcomparedcommitoutputtypedef).
 
 ### get_comments_for_pull_request
 
-Type annotations for `boto3.client("codecommit").get_comments_for_pull_request` method.
+Type annotations for `boto3.client("codecommit").get_comments_for_pull_request`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request]
+Boto3 documentation:
+[CodeCommit.Client.get_comments_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
 
-```python
-def get_comments_for_pull_request(
-    self,
-    pullRequestId: str,
-    repositoryName: str = None,
-    beforeCommitId: str = None,
-    afterCommitId: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetCommentsForPullRequestOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str`
+- `beforeCommitId`: `str`
+- `afterCommitId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetCommentsForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforpullrequestoutputtypedef).
 
 ### get_commit
 
 Type annotations for `boto3.client("codecommit").get_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit]
+Boto3 documentation:
+[CodeCommit.Client.get_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit)
 
-```python
-def get_commit(
-    self,
-    repositoryName: str,
-    commitId: str
-) -> GetCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `commitId`: `str` *(required)*
+
+Returns
+[GetCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommitoutputtypedef).
 
 ### get_differences
 
 Type annotations for `boto3.client("codecommit").get_differences` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences]
+Boto3 documentation:
+[CodeCommit.Client.get_differences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences)
 
-```python
-def get_differences(
-    self,
-    repositoryName: str,
-    afterCommitSpecifier: str,
-    beforeCommitSpecifier: str = None,
-    beforePath: str = None,
-    afterPath: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetDifferencesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `afterCommitSpecifier`: `str` *(required)*
+- `beforeCommitSpecifier`: `str`
+- `beforePath`: `str`
+- `afterPath`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetDifferencesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getdifferencesoutputtypedef).
 
 ### get_file
 
 Type annotations for `boto3.client("codecommit").get_file` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file]
+Boto3 documentation:
+[CodeCommit.Client.get_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file)
 
-```python
-def get_file(
-    self,
-    repositoryName: str,
-    filePath: str,
-    commitSpecifier: str = None
-) -> GetFileOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `filePath`: `str` *(required)*
+- `commitSpecifier`: `str`
+
+Returns
+[GetFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getfileoutputtypedef).
 
 ### get_folder
 
 Type annotations for `boto3.client("codecommit").get_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder]
+Boto3 documentation:
+[CodeCommit.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder)
 
-```python
-def get_folder(
-    self,
-    repositoryName: str,
-    folderPath: str,
-    commitSpecifier: str = None
-) -> GetFolderOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `folderPath`: `str` *(required)*
+- `commitSpecifier`: `str`
+
+Returns
+[GetFolderOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getfolderoutputtypedef).
 
 ### get_merge_commit
 
 Type annotations for `boto3.client("codecommit").get_merge_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit]
+Boto3 documentation:
+[CodeCommit.Client.get_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
 
-```python
-def get_merge_commit(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None
-) -> GetMergeCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+
+Returns
+[GetMergeCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergecommitoutputtypedef).
 
 ### get_merge_conflicts
 
 Type annotations for `boto3.client("codecommit").get_merge_conflicts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts]
+Boto3 documentation:
+[CodeCommit.Client.get_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
 
-```python
-def get_merge_conflicts(
-    self,
-    repositoryName: str,
-    destinationCommitSpecifier: str,
-    sourceCommitSpecifier: str,
-    mergeOption: MergeOptionTypeEnum,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    maxConflictFiles: int = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    nextToken: str = None
-) -> GetMergeConflictsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+  *(required)*
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `maxConflictFiles`: `int`
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `nextToken`: `str`
+
+Returns
+[GetMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergeconflictsoutputtypedef).
 
 ### get_merge_options
 
 Type annotations for `boto3.client("codecommit").get_merge_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options]
+Boto3 documentation:
+[CodeCommit.Client.get_merge_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
 
-```python
-def get_merge_options(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None
-) -> GetMergeOptionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+
+Returns
+[GetMergeOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergeoptionsoutputtypedef).
 
 ### get_pull_request
 
 Type annotations for `boto3.client("codecommit").get_pull_request` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request]
+Boto3 documentation:
+[CodeCommit.Client.get_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
 
-```python
-def get_pull_request(
-    self,
-    pullRequestId: str
-) -> GetPullRequestOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+
+Returns
+[GetPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestoutputtypedef).
 
 ### get_pull_request_approval_states
 
-Type annotations for `boto3.client("codecommit").get_pull_request_approval_states` method.
+Type annotations for
+`boto3.client("codecommit").get_pull_request_approval_states` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states]
+Boto3 documentation:
+[CodeCommit.Client.get_pull_request_approval_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
 
-```python
-def get_pull_request_approval_states(
-    self,
-    pullRequestId: str,
-    revisionId: str
-) -> GetPullRequestApprovalStatesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+
+Returns
+[GetPullRequestApprovalStatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestapprovalstatesoutputtypedef).
 
 ### get_pull_request_override_state
 
-Type annotations for `boto3.client("codecommit").get_pull_request_override_state` method.
+Type annotations for
+`boto3.client("codecommit").get_pull_request_override_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state]
+Boto3 documentation:
+[CodeCommit.Client.get_pull_request_override_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
 
-```python
-def get_pull_request_override_state(
-    self,
-    pullRequestId: str,
-    revisionId: str
-) -> GetPullRequestOverrideStateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+
+Returns
+[GetPullRequestOverrideStateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestoverridestateoutputtypedef).
 
 ### get_repository
 
 Type annotations for `boto3.client("codecommit").get_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository]
+Boto3 documentation:
+[CodeCommit.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository)
 
-```python
-def get_repository(
-    self,
-    repositoryName: str
-) -> GetRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+
+Returns
+[GetRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getrepositoryoutputtypedef).
 
 ### get_repository_triggers
 
-Type annotations for `boto3.client("codecommit").get_repository_triggers` method.
+Type annotations for `boto3.client("codecommit").get_repository_triggers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers]
+Boto3 documentation:
+[CodeCommit.Client.get_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
 
-```python
-def get_repository_triggers(
-    self,
-    repositoryName: str
-) -> GetRepositoryTriggersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+
+Returns
+[GetRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getrepositorytriggersoutputtypedef).
 
 ### list_approval_rule_templates
 
-Type annotations for `boto3.client("codecommit").list_approval_rule_templates` method.
+Type annotations for `boto3.client("codecommit").list_approval_rule_templates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates]
+Boto3 documentation:
+[CodeCommit.Client.list_approval_rule_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
 
-```python
-def list_approval_rule_templates(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListApprovalRuleTemplatesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListApprovalRuleTemplatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listapprovalruletemplatesoutputtypedef).
 
 ### list_associated_approval_rule_templates_for_repository
 
-Type annotations for `boto3.client("codecommit").list_associated_approval_rule_templates_for_repository` method.
+Type annotations for
+`boto3.client("codecommit").list_associated_approval_rule_templates_for_repository`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository]
+Boto3 documentation:
+[CodeCommit.Client.list_associated_approval_rule_templates_for_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
 
-```python
-def list_associated_approval_rule_templates_for_repository(
-    self,
-    repositoryName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
 
 ### list_branches
 
 Type annotations for `boto3.client("codecommit").list_branches` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches]
+Boto3 documentation:
+[CodeCommit.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches)
 
-```python
-def list_branches(
-    self,
-    repositoryName: str,
-    nextToken: str = None
-) -> ListBranchesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListBranchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listbranchesoutputtypedef).
 
 ### list_pull_requests
 
 Type annotations for `boto3.client("codecommit").list_pull_requests` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests]
+Boto3 documentation:
+[CodeCommit.Client.list_pull_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
 
-```python
-def list_pull_requests(
-    self,
-    repositoryName: str,
-    authorArn: str = None,
-    pullRequestStatus: PullRequestStatusEnum = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPullRequestsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `authorArn`: `str`
+- `pullRequestStatus`:
+  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPullRequestsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listpullrequestsoutputtypedef).
 
 ### list_repositories
 
 Type annotations for `boto3.client("codecommit").list_repositories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories]
+Boto3 documentation:
+[CodeCommit.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
 
-```python
-def list_repositories(
-    self,
-    nextToken: str = None,
-    sortBy: SortByEnum = None,
-    order: OrderEnum = None
-) -> ListRepositoriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `sortBy`:
+  [SortByEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#sortbyenum)
+- `order`:
+  [OrderEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#orderenum)
+
+Returns
+[ListRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesoutputtypedef).
 
 ### list_repositories_for_approval_rule_template
 
-Type annotations for `boto3.client("codecommit").list_repositories_for_approval_rule_template` method.
+Type annotations for
+`boto3.client("codecommit").list_repositories_for_approval_rule_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template]
+Boto3 documentation:
+[CodeCommit.Client.list_repositories_for_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
 
-```python
-def list_repositories_for_approval_rule_template(
-    self,
-    approvalRuleTemplateName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListRepositoriesForApprovalRuleTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRepositoriesForApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesforapprovalruletemplateoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codecommit").list_tags_for_resource` method.
+Type annotations for `boto3.client("codecommit").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodeCommit.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str,
-    nextToken: str = None
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `nextToken`: `str`
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### merge_branches_by_fast_forward
 
-Type annotations for `boto3.client("codecommit").merge_branches_by_fast_forward` method.
+Type annotations for
+`boto3.client("codecommit").merge_branches_by_fast_forward` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward]
+Boto3 documentation:
+[CodeCommit.Client.merge_branches_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
 
-```python
-def merge_branches_by_fast_forward(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    targetBranch: str = None
-) -> MergeBranchesByFastForwardOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `targetBranch`: `str`
+
+Returns
+[MergeBranchesByFastForwardOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbyfastforwardoutputtypedef).
 
 ### merge_branches_by_squash
 
-Type annotations for `boto3.client("codecommit").merge_branches_by_squash` method.
+Type annotations for `boto3.client("codecommit").merge_branches_by_squash`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash]
+Boto3 documentation:
+[CodeCommit.Client.merge_branches_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
 
-```python
-def merge_branches_by_squash(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    targetBranch: str = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    authorName: str = None,
-    email: str = None,
-    commitMessage: str = None,
-    keepEmptyFolders: bool = None,
-    conflictResolution: ConflictResolutionTypeDef = None
-) -> MergeBranchesBySquashOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `targetBranch`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+
+Returns
+[MergeBranchesBySquashOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbysquashoutputtypedef).
 
 ### merge_branches_by_three_way
 
-Type annotations for `boto3.client("codecommit").merge_branches_by_three_way` method.
+Type annotations for `boto3.client("codecommit").merge_branches_by_three_way`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way]
+Boto3 documentation:
+[CodeCommit.Client.merge_branches_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
 
-```python
-def merge_branches_by_three_way(
-    self,
-    repositoryName: str,
-    sourceCommitSpecifier: str,
-    destinationCommitSpecifier: str,
-    targetBranch: str = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    authorName: str = None,
-    email: str = None,
-    commitMessage: str = None,
-    keepEmptyFolders: bool = None,
-    conflictResolution: ConflictResolutionTypeDef = None
-) -> MergeBranchesByThreeWayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `sourceCommitSpecifier`: `str` *(required)*
+- `destinationCommitSpecifier`: `str` *(required)*
+- `targetBranch`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+
+Returns
+[MergeBranchesByThreeWayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbythreewayoutputtypedef).
 
 ### merge_pull_request_by_fast_forward
 
-Type annotations for `boto3.client("codecommit").merge_pull_request_by_fast_forward` method.
+Type annotations for
+`boto3.client("codecommit").merge_pull_request_by_fast_forward` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward]
+Boto3 documentation:
+[CodeCommit.Client.merge_pull_request_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
 
-```python
-def merge_pull_request_by_fast_forward(
-    self,
-    pullRequestId: str,
-    repositoryName: str,
-    sourceCommitId: str = None
-) -> MergePullRequestByFastForwardOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `sourceCommitId`: `str`
+
+Returns
+[MergePullRequestByFastForwardOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbyfastforwardoutputtypedef).
 
 ### merge_pull_request_by_squash
 
-Type annotations for `boto3.client("codecommit").merge_pull_request_by_squash` method.
+Type annotations for `boto3.client("codecommit").merge_pull_request_by_squash`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash]
+Boto3 documentation:
+[CodeCommit.Client.merge_pull_request_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
 
-```python
-def merge_pull_request_by_squash(
-    self,
-    pullRequestId: str,
-    repositoryName: str,
-    sourceCommitId: str = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    commitMessage: str = None,
-    authorName: str = None,
-    email: str = None,
-    keepEmptyFolders: bool = None,
-    conflictResolution: ConflictResolutionTypeDef = None
-) -> MergePullRequestBySquashOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `sourceCommitId`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `commitMessage`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+
+Returns
+[MergePullRequestBySquashOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbysquashoutputtypedef).
 
 ### merge_pull_request_by_three_way
 
-Type annotations for `boto3.client("codecommit").merge_pull_request_by_three_way` method.
+Type annotations for
+`boto3.client("codecommit").merge_pull_request_by_three_way` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way]
+Boto3 documentation:
+[CodeCommit.Client.merge_pull_request_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
 
-```python
-def merge_pull_request_by_three_way(
-    self,
-    pullRequestId: str,
-    repositoryName: str,
-    sourceCommitId: str = None,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = None,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = None,
-    commitMessage: str = None,
-    authorName: str = None,
-    email: str = None,
-    keepEmptyFolders: bool = None,
-    conflictResolution: ConflictResolutionTypeDef = None
-) -> MergePullRequestByThreeWayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `sourceCommitId`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+- `commitMessage`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+
+Returns
+[MergePullRequestByThreeWayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbythreewayoutputtypedef).
 
 ### override_pull_request_approval_rules
 
-Type annotations for `boto3.client("codecommit").override_pull_request_approval_rules` method.
+Type annotations for
+`boto3.client("codecommit").override_pull_request_approval_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules]
+Boto3 documentation:
+[CodeCommit.Client.override_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
 
-```python
-def override_pull_request_approval_rules(
-    self,
-    pullRequestId: str,
-    revisionId: str,
-    overrideStatus: OverrideStatus
-) -> None:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+- `overrideStatus`:
+  [OverrideStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#overridestatus)
+  *(required)*
 
 ### post_comment_for_compared_commit
 
-Type annotations for `boto3.client("codecommit").post_comment_for_compared_commit` method.
+Type annotations for
+`boto3.client("codecommit").post_comment_for_compared_commit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit]
+Boto3 documentation:
+[CodeCommit.Client.post_comment_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
 
-```python
-def post_comment_for_compared_commit(
-    self,
-    repositoryName: str,
-    afterCommitId: str,
-    content: str,
-    beforeCommitId: str = None,
-    location: "LocationTypeDef" = None,
-    clientRequestToken: str = None
-) -> PostCommentForComparedCommitOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `afterCommitId`: `str` *(required)*
+- `content`: `str` *(required)*
+- `beforeCommitId`: `str`
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `clientRequestToken`: `str`
+
+Returns
+[PostCommentForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentforcomparedcommitoutputtypedef).
 
 ### post_comment_for_pull_request
 
-Type annotations for `boto3.client("codecommit").post_comment_for_pull_request` method.
+Type annotations for `boto3.client("codecommit").post_comment_for_pull_request`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request]
+Boto3 documentation:
+[CodeCommit.Client.post_comment_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
 
-```python
-def post_comment_for_pull_request(
-    self,
-    pullRequestId: str,
-    repositoryName: str,
-    beforeCommitId: str,
-    afterCommitId: str,
-    content: str,
-    location: "LocationTypeDef" = None,
-    clientRequestToken: str = None
-) -> PostCommentForPullRequestOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str` *(required)*
+- `beforeCommitId`: `str` *(required)*
+- `afterCommitId`: `str` *(required)*
+- `content`: `str` *(required)*
+- `location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `clientRequestToken`: `str`
+
+Returns
+[PostCommentForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentforpullrequestoutputtypedef).
 
 ### post_comment_reply
 
 Type annotations for `boto3.client("codecommit").post_comment_reply` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply]
+Boto3 documentation:
+[CodeCommit.Client.post_comment_reply](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
 
-```python
-def post_comment_reply(
-    self,
-    inReplyTo: str,
-    content: str,
-    clientRequestToken: str = None
-) -> PostCommentReplyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `inReplyTo`: `str` *(required)*
+- `content`: `str` *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[PostCommentReplyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentreplyoutputtypedef).
 
 ### put_comment_reaction
 
 Type annotations for `boto3.client("codecommit").put_comment_reaction` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction]
+Boto3 documentation:
+[CodeCommit.Client.put_comment_reaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
 
-```python
-def put_comment_reaction(
-    self,
-    commentId: str,
-    reactionValue: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `commentId`: `str` *(required)*
+- `reactionValue`: `str` *(required)*
 
 ### put_file
 
 Type annotations for `boto3.client("codecommit").put_file` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file]
+Boto3 documentation:
+[CodeCommit.Client.put_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file)
 
-```python
-def put_file(
-    self,
-    repositoryName: str,
-    branchName: str,
-    fileContent: Union[bytes, IO[bytes]],
-    filePath: str,
-    fileMode: FileModeTypeEnum = None,
-    parentCommitId: str = None,
-    commitMessage: str = None,
-    name: str = None,
-    email: str = None
-) -> PutFileOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `filePath`: `str` *(required)*
+- `fileMode`:
+  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
+- `parentCommitId`: `str`
+- `commitMessage`: `str`
+- `name`: `str`
+- `email`: `str`
+
+Returns
+[PutFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putfileoutputtypedef).
 
 ### put_repository_triggers
 
-Type annotations for `boto3.client("codecommit").put_repository_triggers` method.
+Type annotations for `boto3.client("codecommit").put_repository_triggers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers]
+Boto3 documentation:
+[CodeCommit.Client.put_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
 
-```python
-def put_repository_triggers(
-    self,
-    repositoryName: str,
-    triggers: List["RepositoryTriggerTypeDef"]
-) -> PutRepositoryTriggersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `triggers`:
+  `List`\[[RepositoryTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggertypedef)\]
+  *(required)*
+
+Returns
+[PutRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putrepositorytriggersoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("codecommit").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource]
+Boto3 documentation:
+[CodeCommit.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### test_repository_triggers
 
-Type annotations for `boto3.client("codecommit").test_repository_triggers` method.
+Type annotations for `boto3.client("codecommit").test_repository_triggers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers]
+Boto3 documentation:
+[CodeCommit.Client.test_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
 
-```python
-def test_repository_triggers(
-    self,
-    repositoryName: str,
-    triggers: List["RepositoryTriggerTypeDef"]
-) -> TestRepositoryTriggersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `triggers`:
+  `List`\[[RepositoryTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggertypedef)\]
+  *(required)*
+
+Returns
+[TestRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#testrepositorytriggersoutputtypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("codecommit").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource]
+Boto3 documentation:
+[CodeCommit.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
 ### update_approval_rule_template_content
 
-Type annotations for `boto3.client("codecommit").update_approval_rule_template_content` method.
+Type annotations for
+`boto3.client("codecommit").update_approval_rule_template_content` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content]
+Boto3 documentation:
+[CodeCommit.Client.update_approval_rule_template_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
 
-```python
-def update_approval_rule_template_content(
-    self,
-    approvalRuleTemplateName: str,
-    newRuleContent: str,
-    existingRuleContentSha256: str = None
-) -> UpdateApprovalRuleTemplateContentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `newRuleContent`: `str` *(required)*
+- `existingRuleContentSha256`: `str`
+
+Returns
+[UpdateApprovalRuleTemplateContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatecontentoutputtypedef).
 
 ### update_approval_rule_template_description
 
-Type annotations for `boto3.client("codecommit").update_approval_rule_template_description` method.
+Type annotations for
+`boto3.client("codecommit").update_approval_rule_template_description` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description]
+Boto3 documentation:
+[CodeCommit.Client.update_approval_rule_template_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
 
-```python
-def update_approval_rule_template_description(
-    self,
-    approvalRuleTemplateName: str,
-    approvalRuleTemplateDescription: str
-) -> UpdateApprovalRuleTemplateDescriptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `approvalRuleTemplateName`: `str` *(required)*
+- `approvalRuleTemplateDescription`: `str` *(required)*
+
+Returns
+[UpdateApprovalRuleTemplateDescriptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatedescriptionoutputtypedef).
 
 ### update_approval_rule_template_name
 
-Type annotations for `boto3.client("codecommit").update_approval_rule_template_name` method.
+Type annotations for
+`boto3.client("codecommit").update_approval_rule_template_name` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name]
+Boto3 documentation:
+[CodeCommit.Client.update_approval_rule_template_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
 
-```python
-def update_approval_rule_template_name(
-    self,
-    oldApprovalRuleTemplateName: str,
-    newApprovalRuleTemplateName: str
-) -> UpdateApprovalRuleTemplateNameOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `oldApprovalRuleTemplateName`: `str` *(required)*
+- `newApprovalRuleTemplateName`: `str` *(required)*
+
+Returns
+[UpdateApprovalRuleTemplateNameOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatenameoutputtypedef).
 
 ### update_comment
 
 Type annotations for `boto3.client("codecommit").update_comment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment]
+Boto3 documentation:
+[CodeCommit.Client.update_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment)
 
-```python
-def update_comment(
-    self,
-    commentId: str,
-    content: str
-) -> UpdateCommentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `commentId`: `str` *(required)*
+- `content`: `str` *(required)*
+
+Returns
+[UpdateCommentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatecommentoutputtypedef).
 
 ### update_default_branch
 
 Type annotations for `boto3.client("codecommit").update_default_branch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch]
+Boto3 documentation:
+[CodeCommit.Client.update_default_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
 
-```python
-def update_default_branch(
-    self,
-    repositoryName: str,
-    defaultBranchName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `defaultBranchName`: `str` *(required)*
 
 ### update_pull_request_approval_rule_content
 
-Type annotations for `boto3.client("codecommit").update_pull_request_approval_rule_content` method.
+Type annotations for
+`boto3.client("codecommit").update_pull_request_approval_rule_content` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content]
+Boto3 documentation:
+[CodeCommit.Client.update_pull_request_approval_rule_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
 
-```python
-def update_pull_request_approval_rule_content(
-    self,
-    pullRequestId: str,
-    approvalRuleName: str,
-    newRuleContent: str,
-    existingRuleContentSha256: str = None
-) -> UpdatePullRequestApprovalRuleContentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `approvalRuleName`: `str` *(required)*
+- `newRuleContent`: `str` *(required)*
+- `existingRuleContentSha256`: `str`
+
+Returns
+[UpdatePullRequestApprovalRuleContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequestapprovalrulecontentoutputtypedef).
 
 ### update_pull_request_approval_state
 
-Type annotations for `boto3.client("codecommit").update_pull_request_approval_state` method.
+Type annotations for
+`boto3.client("codecommit").update_pull_request_approval_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state]
+Boto3 documentation:
+[CodeCommit.Client.update_pull_request_approval_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
 
-```python
-def update_pull_request_approval_state(
-    self,
-    pullRequestId: str,
-    revisionId: str,
-    approvalState: ApprovalState
-) -> None:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+- `approvalState`:
+  [ApprovalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#approvalstate)
+  *(required)*
 
 ### update_pull_request_description
 
-Type annotations for `boto3.client("codecommit").update_pull_request_description` method.
+Type annotations for
+`boto3.client("codecommit").update_pull_request_description` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description]
+Boto3 documentation:
+[CodeCommit.Client.update_pull_request_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
 
-```python
-def update_pull_request_description(
-    self,
-    pullRequestId: str,
-    description: str
-) -> UpdatePullRequestDescriptionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `description`: `str` *(required)*
+
+Returns
+[UpdatePullRequestDescriptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequestdescriptionoutputtypedef).
 
 ### update_pull_request_status
 
-Type annotations for `boto3.client("codecommit").update_pull_request_status` method.
+Type annotations for `boto3.client("codecommit").update_pull_request_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status]
+Boto3 documentation:
+[CodeCommit.Client.update_pull_request_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
 
-```python
-def update_pull_request_status(
-    self,
-    pullRequestId: str,
-    pullRequestStatus: PullRequestStatusEnum
-) -> UpdatePullRequestStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `pullRequestStatus`:
+  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
+  *(required)*
+
+Returns
+[UpdatePullRequestStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequeststatusoutputtypedef).
 
 ### update_pull_request_title
 
-Type annotations for `boto3.client("codecommit").update_pull_request_title` method.
+Type annotations for `boto3.client("codecommit").update_pull_request_title`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title]
+Boto3 documentation:
+[CodeCommit.Client.update_pull_request_title](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
 
-```python
-def update_pull_request_title(
-    self,
-    pullRequestId: str,
-    title: str
-) -> UpdatePullRequestTitleOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pullRequestId`: `str` *(required)*
+- `title`: `str` *(required)*
+
+Returns
+[UpdatePullRequestTitleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequesttitleoutputtypedef).
 
 ### update_repository_description
 
-Type annotations for `boto3.client("codecommit").update_repository_description` method.
+Type annotations for `boto3.client("codecommit").update_repository_description`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description]
+Boto3 documentation:
+[CodeCommit.Client.update_repository_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
 
-```python
-def update_repository_description(
-    self,
-    repositoryName: str,
-    repositoryDescription: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `repositoryName`: `str` *(required)*
+- `repositoryDescription`: `str`
 
 ### update_repository_name
 
-Type annotations for `boto3.client("codecommit").update_repository_name` method.
+Type annotations for `boto3.client("codecommit").update_repository_name`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name]
+Boto3 documentation:
+[CodeCommit.Client.update_repository_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
 
-```python
-def update_repository_name(
-    self,
-    oldName: str,
-    newName: str
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `oldName`: `str` *(required)*
+- `newName`: `str` *(required)*
 
 ### get_paginator
 
-Type annotations for `boto3.client("codecommit").get_paginator` method with overloads.
+Type annotations for `boto3.client("codecommit").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_pull_request_events")` -> [DescribePullRequestEventsPaginator](./paginators.md#describepullrequesteventspaginator)
-- `client.get_paginator("get_comments_for_compared_commit")` -> [GetCommentsForComparedCommitPaginator](./paginators.md#getcommentsforcomparedcommitpaginator)
-- `client.get_paginator("get_comments_for_pull_request")` -> [GetCommentsForPullRequestPaginator](./paginators.md#getcommentsforpullrequestpaginator)
-- `client.get_paginator("get_differences")` -> [GetDifferencesPaginator](./paginators.md#getdifferencespaginator)
-- `client.get_paginator("list_branches")` -> [ListBranchesPaginator](./paginators.md#listbranchespaginator)
-- `client.get_paginator("list_pull_requests")` -> [ListPullRequestsPaginator](./paginators.md#listpullrequestspaginator)
-- `client.get_paginator("list_repositories")` -> [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
-
-
+- `client.get_paginator("describe_pull_request_events")` ->
+  [DescribePullRequestEventsPaginator](./paginators.md#describepullrequesteventspaginator)
+- `client.get_paginator("get_comments_for_compared_commit")` ->
+  [GetCommentsForComparedCommitPaginator](./paginators.md#getcommentsforcomparedcommitpaginator)
+- `client.get_paginator("get_comments_for_pull_request")` ->
+  [GetCommentsForPullRequestPaginator](./paginators.md#getcommentsforpullrequestpaginator)
+- `client.get_paginator("get_differences")` ->
+  [GetDifferencesPaginator](./paginators.md#getdifferencespaginator)
+- `client.get_paginator("list_branches")` ->
+  [ListBranchesPaginator](./paginators.md#listbranchespaginator)
+- `client.get_paginator("list_pull_requests")` ->
+  [ListPullRequestsPaginator](./paginators.md#listpullrequestspaginator)
+- `client.get_paginator("list_repositories")` ->
+  [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)

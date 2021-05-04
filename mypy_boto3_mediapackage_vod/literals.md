@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaPackageVod](./README.md) > Literals
 
-Auto-generated documentation for [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
-type annotations stubs module [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+Auto-generated documentation for
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+type annotations stubs module
+[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [Literals for boto3 MediaPackageVod module](#literals-for-boto3-mediapackagevod-module)
   - [AdMarkers](#admarkers)
@@ -15,7 +17,7 @@ type annotations stubs module [mypy_boto3_mediapackage_vod](https://pypi.org/pro
   - [Profile](#profile)
   - [SegmentTemplateFormat](#segmenttemplateformat)
   - [StreamOrder](#streamorder)
-  - [__PeriodTriggersElement](#__periodtriggerselement)
+  - [\_\_PeriodTriggersElement](#__periodtriggerselement)
 
 ## AdMarkers
 
@@ -116,7 +118,7 @@ Values:
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
 
-## __PeriodTriggersElement
+## \_\_PeriodTriggersElement
 
 ```python
 from mypy_boto3_mediapackage_vod.literals import __PeriodTriggersElement

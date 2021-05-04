@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ImportExport
 
-Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
-type annotations stubs module [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
+Auto-generated documentation for
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+type annotations stubs module
+[mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 ```bash
 pip install mypy-boto3-importexport
@@ -19,7 +21,8 @@ pip install mypy-boto3-importexport
 
 ## ImportExportClient
 
-Type annotations for  `boto3.client("importexport")` as [ImportExportClient](./client.md)
+Type annotations for `boto3.client("importexport")` as
+[ImportExportClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_importexport.client import ImportExportClient
 ```
 
-
 ImportExportClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job](./client.md#cancel-job)
 - [create_job](./client.md#create-job)
@@ -43,10 +44,8 @@ ImportExportClient [exceptions](./client.md#exceptions)
 - [list_jobs](./client.md#list-jobs)
 - [update_job](./client.md#update-job)
 
-
-
-
 ### Exceptions
+
 - [BucketPermissionException](./client.md#bucketpermissionexception)
 - [CanceledJobIdException](./client.md#canceledjobidexception)
 - [ClientError](./client.md#clienterror)
@@ -69,14 +68,10 @@ ImportExportClient [exceptions](./client.md#exceptions)
 - [UnableToCancelJobIdException](./client.md#unabletocanceljobidexception)
 - [UnableToUpdateJobIdException](./client.md#unabletoupdatejobidexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("importexport").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("importexport").get_paginator("...")`.
 
 Can be used directly:
 
@@ -85,11 +80,6 @@ from mypy_boto3_importexport.paginators import ListJobsPaginator, ...
 ```
 
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -104,13 +94,10 @@ from mypy_boto3_importexport.literals import JobType, ...
 - [JobType](./literals.md#jobtype)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SecretsManager](./README.md) > SecretsManagerClient
 
-Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+Auto-generated documentation for
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+type annotations stubs module
+[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [SecretsManagerClient for boto3 SecretsManager module](#secretsmanagerclient-for-boto3-secretsmanager-module)
   - [SecretsManagerClient](#secretsmanagerclient)
@@ -48,12 +50,13 @@ def get_secretsmanager_client() -> SecretsManagerClient:
     return boto3.client("secretsmanager")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
+Boto3 documentation:
+[SecretsManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_secretsmanager.client import Exceptions
@@ -61,7 +64,6 @@ from mypy_boto3_secretsmanager.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -79,403 +81,412 @@ Exceptions:
 - `Exceptions.ResourceExistsException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("secretsmanager").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate]
+Boto3 documentation:
+[SecretsManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_rotate_secret
 
-Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret` method.
+Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret]
+Boto3 documentation:
+[SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
 
-```python
-def cancel_rotate_secret(
-    self,
-    SecretId: str
-) -> CancelRotateSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[CancelRotateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#cancelrotatesecretresponsetypedef).
 
 ### create_secret
 
 Type annotations for `boto3.client("secretsmanager").create_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret]
+Boto3 documentation:
+[SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
 
-```python
-def create_secret(
-    self,
-    Name: str,
-    ClientRequestToken: str = None,
-    Description: str = None,
-    KmsKeyId: str = None,
-    SecretBinary: Union[bytes, IO[bytes]] = None,
-    SecretString: str = None,
-    Tags: List["TagTypeDef"] = None,
-    AddReplicaRegions: List[ReplicaRegionTypeTypeDef] = None,
-    ForceOverwriteReplicaSecret: bool = None
-) -> CreateSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `Description`: `str`
+- `KmsKeyId`: `str`
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretString`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
+- `AddReplicaRegions`:
+  `List`\[[ReplicaRegionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicaregiontypetypedef)\]
+- `ForceOverwriteReplicaSecret`: `bool`
+
+Returns
+[CreateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#createsecretresponsetypedef).
 
 ### delete_resource_policy
 
-Type annotations for `boto3.client("secretsmanager").delete_resource_policy` method.
+Type annotations for `boto3.client("secretsmanager").delete_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy]
+Boto3 documentation:
+[SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
 
-```python
-def delete_resource_policy(
-    self,
-    SecretId: str
-) -> DeleteResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[DeleteResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#deleteresourcepolicyresponsetypedef).
 
 ### delete_secret
 
 Type annotations for `boto3.client("secretsmanager").delete_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret]
+Boto3 documentation:
+[SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
 
-```python
-def delete_secret(
-    self,
-    SecretId: str,
-    RecoveryWindowInDays: int = None,
-    ForceDeleteWithoutRecovery: bool = None
-) -> DeleteSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `RecoveryWindowInDays`: `int`
+- `ForceDeleteWithoutRecovery`: `bool`
+
+Returns
+[DeleteSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#deletesecretresponsetypedef).
 
 ### describe_secret
 
 Type annotations for `boto3.client("secretsmanager").describe_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret]
+Boto3 documentation:
+[SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
 
-```python
-def describe_secret(
-    self,
-    SecretId: str
-) -> DescribeSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[DescribeSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#describesecretresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("secretsmanager").generate_presigned_url` method.
+Type annotations for `boto3.client("secretsmanager").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url]
+Boto3 documentation:
+[SecretsManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_random_password
 
-Type annotations for `boto3.client("secretsmanager").get_random_password` method.
+Type annotations for `boto3.client("secretsmanager").get_random_password`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password]
+Boto3 documentation:
+[SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
 
-```python
-def get_random_password(
-    self,
-    PasswordLength: int = None,
-    ExcludeCharacters: str = None,
-    ExcludeNumbers: bool = None,
-    ExcludePunctuation: bool = None,
-    ExcludeUppercase: bool = None,
-    ExcludeLowercase: bool = None,
-    IncludeSpace: bool = None,
-    RequireEachIncludedType: bool = None
-) -> GetRandomPasswordResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PasswordLength`: `int`
+- `ExcludeCharacters`: `str`
+- `ExcludeNumbers`: `bool`
+- `ExcludePunctuation`: `bool`
+- `ExcludeUppercase`: `bool`
+- `ExcludeLowercase`: `bool`
+- `IncludeSpace`: `bool`
+- `RequireEachIncludedType`: `bool`
+
+Returns
+[GetRandomPasswordResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getrandompasswordresponsetypedef).
 
 ### get_resource_policy
 
-Type annotations for `boto3.client("secretsmanager").get_resource_policy` method.
+Type annotations for `boto3.client("secretsmanager").get_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy]
+Boto3 documentation:
+[SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
 
-```python
-def get_resource_policy(
-    self,
-    SecretId: str
-) -> GetResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[GetResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getresourcepolicyresponsetypedef).
 
 ### get_secret_value
 
 Type annotations for `boto3.client("secretsmanager").get_secret_value` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value]
+Boto3 documentation:
+[SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
 
-```python
-def get_secret_value(
-    self,
-    SecretId: str,
-    VersionId: str = None,
-    VersionStage: str = None
-) -> GetSecretValueResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `VersionId`: `str`
+- `VersionStage`: `str`
+
+Returns
+[GetSecretValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getsecretvalueresponsetypedef).
 
 ### list_secret_version_ids
 
-Type annotations for `boto3.client("secretsmanager").list_secret_version_ids` method.
+Type annotations for `boto3.client("secretsmanager").list_secret_version_ids`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids]
+Boto3 documentation:
+[SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
 
-```python
-def list_secret_version_ids(
-    self,
-    SecretId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    IncludeDeprecated: bool = None
-) -> ListSecretVersionIdsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `IncludeDeprecated`: `bool`
+
+Returns
+[ListSecretVersionIdsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#listsecretversionidsresponsetypedef).
 
 ### list_secrets
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets]
+Boto3 documentation:
+[SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
 
-```python
-def list_secrets(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None,
-    SortOrder: SortOrderType = None
-) -> ListSecretsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#filtertypedef)\]
+- `SortOrder`:
+  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/literals.html#sortordertype)
+
+Returns
+[ListSecretsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#listsecretsresponsetypedef).
 
 ### put_resource_policy
 
-Type annotations for `boto3.client("secretsmanager").put_resource_policy` method.
+Type annotations for `boto3.client("secretsmanager").put_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy]
+Boto3 documentation:
+[SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
 
-```python
-def put_resource_policy(
-    self,
-    SecretId: str,
-    ResourcePolicy: str,
-    BlockPublicPolicy: bool = None
-) -> PutResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `ResourcePolicy`: `str` *(required)*
+- `BlockPublicPolicy`: `bool`
+
+Returns
+[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#putresourcepolicyresponsetypedef).
 
 ### put_secret_value
 
 Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value]
+Boto3 documentation:
+[SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
 
-```python
-def put_secret_value(
-    self,
-    SecretId: str,
-    ClientRequestToken: str = None,
-    SecretBinary: Union[bytes, IO[bytes]] = None,
-    SecretString: str = None,
-    VersionStages: List[str] = None
-) -> PutSecretValueResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretString`: `str`
+- `VersionStages`: `List`\[`str`\]
+
+Returns
+[PutSecretValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#putsecretvalueresponsetypedef).
 
 ### remove_regions_from_replication
 
-Type annotations for `boto3.client("secretsmanager").remove_regions_from_replication` method.
+Type annotations for
+`boto3.client("secretsmanager").remove_regions_from_replication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication]
+Boto3 documentation:
+[SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
 
-```python
-def remove_regions_from_replication(
-    self,
-    SecretId: str,
-    RemoveReplicaRegions: List[str]
-) -> RemoveRegionsFromReplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `RemoveReplicaRegions`: `List`\[`str`\] *(required)*
+
+Returns
+[RemoveRegionsFromReplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#removeregionsfromreplicationresponsetypedef).
 
 ### replicate_secret_to_regions
 
-Type annotations for `boto3.client("secretsmanager").replicate_secret_to_regions` method.
+Type annotations for
+`boto3.client("secretsmanager").replicate_secret_to_regions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions]
+Boto3 documentation:
+[SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
 
-```python
-def replicate_secret_to_regions(
-    self,
-    SecretId: str,
-    AddReplicaRegions: List[ReplicaRegionTypeTypeDef],
-    ForceOverwriteReplicaSecret: bool = None
-) -> ReplicateSecretToRegionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `AddReplicaRegions`:
+  `List`\[[ReplicaRegionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicaregiontypetypedef)\]
+  *(required)*
+- `ForceOverwriteReplicaSecret`: `bool`
+
+Returns
+[ReplicateSecretToRegionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicatesecrettoregionsresponsetypedef).
 
 ### restore_secret
 
 Type annotations for `boto3.client("secretsmanager").restore_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret]
+Boto3 documentation:
+[SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
 
-```python
-def restore_secret(
-    self,
-    SecretId: str
-) -> RestoreSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[RestoreSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#restoresecretresponsetypedef).
 
 ### rotate_secret
 
 Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret]
+Boto3 documentation:
+[SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
 
-```python
-def rotate_secret(
-    self,
-    SecretId: str,
-    ClientRequestToken: str = None,
-    RotationLambdaARN: str = None,
-    RotationRules: "RotationRulesTypeTypeDef" = None
-) -> RotateSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `RotationLambdaARN`: `str`
+- `RotationRules`:
+  [RotationRulesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotationrulestypetypedef)
+
+Returns
+[RotateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotatesecretresponsetypedef).
 
 ### stop_replication_to_replica
 
-Type annotations for `boto3.client("secretsmanager").stop_replication_to_replica` method.
+Type annotations for
+`boto3.client("secretsmanager").stop_replication_to_replica` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica]
+Boto3 documentation:
+[SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
 
-```python
-def stop_replication_to_replica(
-    self,
-    SecretId: str
-) -> StopReplicationToReplicaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+
+Returns
+[StopReplicationToReplicaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#stopreplicationtoreplicaresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("secretsmanager").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource]
+Boto3 documentation:
+[SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    SecretId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("secretsmanager").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource]
+Boto3 documentation:
+[SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    SecretId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_secret
 
 Type annotations for `boto3.client("secretsmanager").update_secret` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret]
+Boto3 documentation:
+[SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
 
-```python
-def update_secret(
-    self,
-    SecretId: str,
-    ClientRequestToken: str = None,
-    Description: str = None,
-    KmsKeyId: str = None,
-    SecretBinary: Union[bytes, IO[bytes]] = None,
-    SecretString: str = None
-) -> UpdateSecretResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `Description`: `str`
+- `KmsKeyId`: `str`
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretString`: `str`
+
+Returns
+[UpdateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#updatesecretresponsetypedef).
 
 ### update_secret_version_stage
 
-Type annotations for `boto3.client("secretsmanager").update_secret_version_stage` method.
+Type annotations for
+`boto3.client("secretsmanager").update_secret_version_stage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage]
+Boto3 documentation:
+[SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
 
-```python
-def update_secret_version_stage(
-    self,
-    SecretId: str,
-    VersionStage: str,
-    RemoveFromVersionId: str = None,
-    MoveToVersionId: str = None
-) -> UpdateSecretVersionStageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecretId`: `str` *(required)*
+- `VersionStage`: `str` *(required)*
+- `RemoveFromVersionId`: `str`
+- `MoveToVersionId`: `str`
+
+Returns
+[UpdateSecretVersionStageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#updatesecretversionstageresponsetypedef).
 
 ### validate_resource_policy
 
-Type annotations for `boto3.client("secretsmanager").validate_resource_policy` method.
+Type annotations for `boto3.client("secretsmanager").validate_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy]
+Boto3 documentation:
+[SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
 
-```python
-def validate_resource_policy(
-    self,
-    ResourcePolicy: str,
-    SecretId: str = None
-) -> ValidateResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ResourcePolicy`: `str` *(required)*
+- `SecretId`: `str`
 
+Returns
+[ValidateResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#validateresourcepolicyresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("secretsmanager").get_paginator` method with overloads.
+Type annotations for `boto3.client("secretsmanager").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_secrets")` -> [ListSecretsPaginator](./paginators.md#listsecretspaginator)
-
-
+- `client.get_paginator("list_secrets")` ->
+  [ListSecretsPaginator](./paginators.md#listsecretspaginator)

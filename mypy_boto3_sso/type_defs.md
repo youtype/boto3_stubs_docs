@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSO](./README.md) > Structures
 
-Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+Auto-generated documentation for
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+type annotations stubs module
+[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [Typed dictionaries for boto3 SSO module](#typed-dictionaries-for-boto3-sso-module)
   - [AccountInfoTypeDef](#accountinfotypedef)
@@ -20,14 +22,11 @@ type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-bot
 from mypy_boto3_sso.type_defs import AccountInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accountId`: `str`
 - `accountName`: `str`
 - `emailAddress`: `str`
-
 
 ## GetRoleCredentialsResponseTypeDef
 
@@ -35,12 +34,10 @@ Optional fields:
 from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `roleCredentials`: `"RoleCredentialsTypeDef"`
 
+- `roleCredentials`:
+  [RoleCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#rolecredentialstypedef)
 
 ## ListAccountRolesResponseTypeDef
 
@@ -48,13 +45,11 @@ Optional fields:
 from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextToken`: `str`
-- `roleList`: `List["RoleInfoTypeDef"]`
 
+- `nextToken`: `str`
+- `roleList`:
+  `List`\[[RoleInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#roleinfotypedef)\]
 
 ## ListAccountsResponseTypeDef
 
@@ -62,13 +57,11 @@ Optional fields:
 from mypy_boto3_sso.type_defs import ListAccountsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextToken`: `str`
-- `accountList`: `List["AccountInfoTypeDef"]`
 
+- `nextToken`: `str`
+- `accountList`:
+  `List`\[[AccountInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#accountinfotypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -76,14 +69,11 @@ Optional fields:
 from mypy_boto3_sso.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RoleCredentialsTypeDef
 
@@ -91,15 +81,12 @@ Optional fields:
 from mypy_boto3_sso.type_defs import RoleCredentialsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accessKeyId`: `str`
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
 - `expiration`: `int`
-
 
 ## RoleInfoTypeDef
 
@@ -107,10 +94,7 @@ Optional fields:
 from mypy_boto3_sso.type_defs import RoleInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `roleName`: `str`
 - `accountId`: `str`
-

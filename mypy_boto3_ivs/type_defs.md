@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IVS](./README.md) > Structures
 
-Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+Auto-generated documentation for
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+type annotations stubs module
+[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Typed dictionaries for boto3 IVS module](#typed-dictionaries-for-boto3-ivs-module)
   - [BatchErrorTypeDef](#batcherrortypedef)
@@ -45,14 +47,11 @@ type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-bot
 from mypy_boto3_ivs.type_defs import BatchErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `code`: `str`
 - `message`: `str`
-
 
 ## BatchGetChannelResponseTypeDef
 
@@ -60,13 +59,12 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import BatchGetChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channels`: `List["ChannelTypeDef"]`
-- `errors`: `List["BatchErrorTypeDef"]`
 
+- `channels`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#channeltypedef)\]
+- `errors`:
+  `List`\[[BatchErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batcherrortypedef)\]
 
 ## BatchGetStreamKeyResponseTypeDef
 
@@ -74,13 +72,12 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import BatchGetStreamKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `streamKeys`: `List["StreamKeyTypeDef"]`
-- `errors`: `List["BatchErrorTypeDef"]`
 
+- `streamKeys`:
+  `List`\[[StreamKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamkeytypedef)\]
+- `errors`:
+  `List`\[[BatchErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batcherrortypedef)\]
 
 ## ChannelSummaryTypeDef
 
@@ -88,17 +85,15 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ChannelSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `name`: `str`
-- `latencyMode`: `ChannelLatencyMode`
+- `latencyMode`:
+  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ChannelTypeDef
 
@@ -106,20 +101,19 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ChannelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `name`: `str`
-- `latencyMode`: `ChannelLatencyMode`
-- `type`: `ChannelType`
+- `latencyMode`:
+  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
+- `type`:
+  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channeltype)
 - `recordingConfigurationArn`: `str`
 - `ingestEndpoint`: `str`
 - `playbackUrl`: `str`
 - `authorized`: `bool`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -127,13 +121,12 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import CreateChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channel`: `"ChannelTypeDef"`
-- `streamKey`: `"StreamKeyTypeDef"`
 
+- `channel`:
+  [ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#channeltypedef)
+- `streamKey`:
+  [StreamKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamkeytypedef)
 
 ## CreateRecordingConfigurationResponseTypeDef
 
@@ -141,12 +134,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import CreateRecordingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `recordingConfiguration`: `"RecordingConfigurationTypeDef"`
 
+- `recordingConfiguration`:
+  [RecordingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#recordingconfigurationtypedef)
 
 ## CreateStreamKeyResponseTypeDef
 
@@ -154,12 +145,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import CreateStreamKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `streamKey`: `"StreamKeyTypeDef"`
 
+- `streamKey`:
+  [StreamKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamkeytypedef)
 
 ## DestinationConfigurationTypeDef
 
@@ -167,12 +156,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import DestinationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3`: `"S3DestinationConfigurationTypeDef"`
 
+- `s3`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#s3destinationconfigurationtypedef)
 
 ## GetChannelResponseTypeDef
 
@@ -180,12 +167,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import GetChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channel`: `"ChannelTypeDef"`
 
+- `channel`:
+  [ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#channeltypedef)
 
 ## GetPlaybackKeyPairResponseTypeDef
 
@@ -193,12 +178,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `keyPair`: `"PlaybackKeyPairTypeDef"`
 
+- `keyPair`:
+  [PlaybackKeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#playbackkeypairtypedef)
 
 ## GetRecordingConfigurationResponseTypeDef
 
@@ -206,12 +189,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import GetRecordingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `recordingConfiguration`: `"RecordingConfigurationTypeDef"`
 
+- `recordingConfiguration`:
+  [RecordingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#recordingconfigurationtypedef)
 
 ## GetStreamKeyResponseTypeDef
 
@@ -219,12 +200,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import GetStreamKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `streamKey`: `"StreamKeyTypeDef"`
 
+- `streamKey`:
+  [StreamKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamkeytypedef)
 
 ## GetStreamResponseTypeDef
 
@@ -232,12 +211,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import GetStreamResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `stream`: `"StreamTypeDef"`
 
+- `stream`:
+  [StreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamtypedef)
 
 ## ImportPlaybackKeyPairResponseTypeDef
 
@@ -245,12 +222,10 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ImportPlaybackKeyPairResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `keyPair`: `"PlaybackKeyPairTypeDef"`
 
+- `keyPair`:
+  [PlaybackKeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#playbackkeypairtypedef)
 
 ## ListChannelsResponseTypeDef
 
@@ -258,15 +233,14 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListChannelsResponseTypeDef
 ```
 
-
 Required fields:
-- `channels`: `List["ChannelSummaryTypeDef"]`
 
-
+- `channels`:
+  `List`\[[ChannelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#channelsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListPlaybackKeyPairsResponseTypeDef
 
@@ -274,15 +248,14 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListPlaybackKeyPairsResponseTypeDef
 ```
 
-
 Required fields:
-- `keyPairs`: `List["PlaybackKeyPairSummaryTypeDef"]`
 
-
+- `keyPairs`:
+  `List`\[[PlaybackKeyPairSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#playbackkeypairsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListRecordingConfigurationsResponseTypeDef
 
@@ -290,15 +263,14 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListRecordingConfigurationsResponseTypeDef
 ```
 
-
 Required fields:
-- `recordingConfigurations`: `List["RecordingConfigurationSummaryTypeDef"]`
 
-
+- `recordingConfigurations`:
+  `List`\[[RecordingConfigurationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#recordingconfigurationsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListStreamKeysResponseTypeDef
 
@@ -306,15 +278,14 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListStreamKeysResponseTypeDef
 ```
 
-
 Required fields:
-- `streamKeys`: `List["StreamKeySummaryTypeDef"]`
 
-
+- `streamKeys`:
+  `List`\[[StreamKeySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamkeysummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListStreamsResponseTypeDef
 
@@ -322,15 +293,14 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListStreamsResponseTypeDef
 ```
 
-
 Required fields:
-- `streams`: `List["StreamSummaryTypeDef"]`
 
-
+- `streams`:
+  `List`\[[StreamSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#streamsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -338,15 +308,13 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
 Required fields:
-- `tags`: `Dict[str, str]`
 
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -354,14 +322,11 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlaybackKeyPairSummaryTypeDef
 
@@ -369,14 +334,11 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import PlaybackKeyPairSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## PlaybackKeyPairTypeDef
 
@@ -384,15 +346,12 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import PlaybackKeyPairTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `name`: `str`
 - `fingerprint`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## RecordingConfigurationSummaryTypeDef
 
@@ -400,18 +359,18 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import RecordingConfigurationSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
-- `destinationConfiguration`: `"DestinationConfigurationTypeDef"`
-- `state`: `RecordingConfigurationState`
-
-
+- `destinationConfiguration`:
+  [DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#destinationconfigurationtypedef)
+- `state`:
+  [RecordingConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#recordingconfigurationstate)
 
 Optional fields:
-- `name`: `str`
-- `tags`: `Dict[str, str]`
 
+- `name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## RecordingConfigurationTypeDef
 
@@ -419,18 +378,18 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import RecordingConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
-- `destinationConfiguration`: `"DestinationConfigurationTypeDef"`
-- `state`: `RecordingConfigurationState`
-
-
+- `destinationConfiguration`:
+  [DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#destinationconfigurationtypedef)
+- `state`:
+  [RecordingConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#recordingconfigurationstate)
 
 Optional fields:
-- `name`: `str`
-- `tags`: `Dict[str, str]`
 
+- `name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## S3DestinationConfigurationTypeDef
 
@@ -438,12 +397,9 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import S3DestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
-
-
-
 
 ## StreamKeySummaryTypeDef
 
@@ -451,14 +407,11 @@ Required fields:
 from mypy_boto3_ivs.type_defs import StreamKeySummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `channelArn`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## StreamKeyTypeDef
 
@@ -466,15 +419,12 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import StreamKeyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `value`: `str`
 - `channelArn`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## StreamSummaryTypeDef
 
@@ -482,16 +432,15 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import StreamSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `channelArn`: `str`
-- `state`: `StreamState`
-- `health`: `StreamHealth`
+- `state`:
+  [StreamState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#streamstate)
+- `health`:
+  [StreamHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#streamhealth)
 - `viewerCount`: `int`
 - `startTime`: `datetime`
-
 
 ## StreamTypeDef
 
@@ -499,17 +448,16 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import StreamTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `channelArn`: `str`
 - `playbackUrl`: `str`
 - `startTime`: `datetime`
-- `state`: `StreamState`
-- `health`: `StreamHealth`
+- `state`:
+  [StreamState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#streamstate)
+- `health`:
+  [StreamHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#streamhealth)
 - `viewerCount`: `int`
-
 
 ## UpdateChannelResponseTypeDef
 
@@ -517,9 +465,7 @@ Optional fields:
 from mypy_boto3_ivs.type_defs import UpdateChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channel`: `"ChannelTypeDef"`
 
+- `channel`:
+  [ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#channeltypedef)

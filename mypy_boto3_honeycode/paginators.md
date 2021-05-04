@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Honeycode](./README.md) > Paginators
 
-Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+Auto-generated documentation for
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+type annotations stubs module
+[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [Paginators for boto3 Honeycode module](#paginators-for-boto3-honeycode-module)
   - [ListTableColumnsPaginator](#listtablecolumnspaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_honeycode](https://pypi.org/project/my
 
 ## ListTableColumnsPaginator
 
-Type annotations for `boto3.client("honeycode").get_paginator("list_table_columns")`.
+Type annotations for
+`boto3.client("honeycode").get_paginator("list_table_columns")`.
 
 Can be used directly:
 
@@ -24,21 +27,23 @@ def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_columns")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
+Boto3 documentation:
+[Honeycode.Paginator.ListTableColumns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
-```python
-class ListTableColumnsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        workbookId: str,
-        tableId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTableColumnsResultTypeDef]:
-        pass
-```
+Arguments for `ListTableColumnsPaginator.paginate` method:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+
+`ListTableColumnsPaginator.paginate` returns
+`Iterator`\[[ListTableColumnsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablecolumnsresulttypedef)\].
+
 ## ListTableRowsPaginator
 
-Type annotations for `boto3.client("honeycode").get_paginator("list_table_rows")`.
+Type annotations for
+`boto3.client("honeycode").get_paginator("list_table_rows")`.
 
 Can be used directly:
 
@@ -49,19 +54,20 @@ def get_list_table_rows_paginator() -> ListTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_rows")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
+Boto3 documentation:
+[Honeycode.Paginator.ListTableRows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
-```python
-class ListTableRowsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        workbookId: str,
-        tableId: str,
-        rowIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTableRowsResultTypeDef]:
-        pass
-```
+Arguments for `ListTableRowsPaginator.paginate` method:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `rowIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+
+`ListTableRowsPaginator.paginate` returns
+`Iterator`\[[ListTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablerowsresulttypedef)\].
+
 ## ListTablesPaginator
 
 Type annotations for `boto3.client("honeycode").get_paginator("list_tables")`.
@@ -75,20 +81,22 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("honeycode").get_paginator("list_tables")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
+Boto3 documentation:
+[Honeycode.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
-```python
-class ListTablesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        workbookId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTablesResultTypeDef]:
-        pass
-```
+Arguments for `ListTablesPaginator.paginate` method:
+
+- `workbookId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+
+`ListTablesPaginator.paginate` returns
+`Iterator`\[[ListTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablesresulttypedef)\].
+
 ## QueryTableRowsPaginator
 
-Type annotations for `boto3.client("honeycode").get_paginator("query_table_rows")`.
+Type annotations for
+`boto3.client("honeycode").get_paginator("query_table_rows")`.
 
 Can be used directly:
 
@@ -99,16 +107,18 @@ def get_query_table_rows_paginator() -> QueryTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("query_table_rows")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
+Boto3 documentation:
+[Honeycode.Paginator.QueryTableRows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
-```python
-class QueryTableRowsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        workbookId: str,
-        tableId: str,
-        filterFormula: "FilterTypeDef",
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[QueryTableRowsResultTypeDef]:
-        pass
-```
+Arguments for `QueryTableRowsPaginator.paginate` method:
+
+- `workbookId`: `str` *(required)*
+- `tableId`: `str` *(required)*
+- `filterFormula`:
+  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#filtertypedef)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+
+`QueryTableRowsPaginator.paginate` returns
+`Iterator`\[[QueryTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#querytablerowsresulttypedef)\].

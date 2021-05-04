@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > Structures
 
-Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+Auto-generated documentation for
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+type annotations stubs module
+[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [Typed dictionaries for boto3 IoTDeviceAdvisor module](#typed-dictionaries-for-boto3-iotdeviceadvisor-module)
   - [CreateSuiteDefinitionResponseTypeDef](#createsuitedefinitionresponsetypedef)
@@ -34,15 +36,12 @@ type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/pro
 from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
 - `suiteDefinitionName`: `str`
 - `createdAt`: `datetime`
-
 
 ## DeviceUnderTestTypeDef
 
@@ -50,13 +49,10 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import DeviceUnderTestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `thingArn`: `str`
 - `certificateArn`: `str`
-
 
 ## GetSuiteDefinitionResponseTypeDef
 
@@ -64,19 +60,17 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
 - `suiteDefinitionVersion`: `str`
 - `latestVersion`: `str`
-- `suiteDefinitionConfiguration`: `"SuiteDefinitionConfigurationTypeDef"`
+- `suiteDefinitionConfiguration`:
+  [SuiteDefinitionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitionconfigurationtypedef)
 - `createdAt`: `datetime`
 - `lastModifiedAt`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetSuiteRunReportResponseTypeDef
 
@@ -84,12 +78,9 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `qualificationReportDownloadUrl`: `str`
 
+- `qualificationReportDownloadUrl`: `str`
 
 ## GetSuiteRunResponseTypeDef
 
@@ -97,22 +88,22 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionVersion`: `str`
 - `suiteRunId`: `str`
 - `suiteRunArn`: `str`
-- `suiteRunConfiguration`: `"SuiteRunConfigurationTypeDef"`
-- `testResult`: `"TestResultTypeDef"`
+- `suiteRunConfiguration`:
+  [SuiteRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suiterunconfigurationtypedef)
+- `testResult`:
+  [TestResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#testresulttypedef)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
-- `status`: `SuiteRunStatus`
+- `status`:
+  [SuiteRunStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/literals.html#suiterunstatus)
 - `errorReason`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GroupResultTypeDef
 
@@ -120,14 +111,12 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import GroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `groupId`: `str`
 - `groupName`: `str`
-- `tests`: `List["TestCaseRunTypeDef"]`
-
+- `tests`:
+  `List`\[[TestCaseRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#testcaseruntypedef)\]
 
 ## ListSuiteDefinitionsResponseTypeDef
 
@@ -135,13 +124,11 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `suiteDefinitionInformationList`: `List["SuiteDefinitionInformationTypeDef"]`
-- `nextToken`: `str`
 
+- `suiteDefinitionInformationList`:
+  `List`\[[SuiteDefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitioninformationtypedef)\]
+- `nextToken`: `str`
 
 ## ListSuiteRunsResponseTypeDef
 
@@ -149,13 +136,11 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `suiteRunsList`: `List["SuiteRunInformationTypeDef"]`
-- `nextToken`: `str`
 
+- `suiteRunsList`:
+  `List`\[[SuiteRunInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suiteruninformationtypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -163,12 +148,9 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ListTestCasesResponseTypeDef
 
@@ -176,15 +158,13 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import ListTestCasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `categories`: `List["TestCaseCategoryTypeDef"]`
-- `rootGroupConfiguration`: `Dict[str, str]`
-- `groupConfiguration`: `Dict[str, str]`
-- `nextToken`: `str`
 
+- `categories`:
+  `List`\[[TestCaseCategoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#testcasecategorytypedef)\]
+- `rootGroupConfiguration`: `Dict`\[`str`, `str`\]
+- `groupConfiguration`: `Dict`\[`str`, `str`\]
+- `nextToken`: `str`
 
 ## StartSuiteRunResponseTypeDef
 
@@ -192,14 +172,11 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteRunId`: `str`
 - `suiteRunArn`: `str`
 - `createdAt`: `datetime`
-
 
 ## SuiteDefinitionConfigurationTypeDef
 
@@ -207,16 +184,14 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteDefinitionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionName`: `str`
-- `devices`: `List["DeviceUnderTestTypeDef"]`
+- `devices`:
+  `List`\[[DeviceUnderTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#deviceundertesttypedef)\]
 - `intendedForQualification`: `bool`
 - `rootGroup`: `str`
 - `devicePermissionRoleArn`: `str`
-
 
 ## SuiteDefinitionInformationTypeDef
 
@@ -224,16 +199,14 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteDefinitionInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionName`: `str`
-- `defaultDevices`: `List["DeviceUnderTestTypeDef"]`
+- `defaultDevices`:
+  `List`\[[DeviceUnderTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#deviceundertesttypedef)\]
 - `intendedForQualification`: `bool`
 - `createdAt`: `datetime`
-
 
 ## SuiteRunConfigurationTypeDef
 
@@ -241,14 +214,13 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteRunConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `primaryDevice`: `"DeviceUnderTestTypeDef"`
-- `secondaryDevice`: `"DeviceUnderTestTypeDef"`
-- `selectedTestList`: `List[str]`
 
+- `primaryDevice`:
+  [DeviceUnderTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#deviceundertesttypedef)
+- `secondaryDevice`:
+  [DeviceUnderTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#deviceundertesttypedef)
+- `selectedTestList`: `List`\[`str`\]
 
 ## SuiteRunInformationTypeDef
 
@@ -256,10 +228,8 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteRunInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionVersion`: `str`
 - `suiteDefinitionName`: `str`
@@ -267,10 +237,10 @@ Optional fields:
 - `createdAt`: `datetime`
 - `startedAt`: `datetime`
 - `endAt`: `datetime`
-- `status`: `SuiteRunStatus`
+- `status`:
+  [SuiteRunStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/literals.html#suiterunstatus)
 - `passed`: `int`
 - `failed`: `int`
-
 
 ## TestCaseCategoryTypeDef
 
@@ -278,13 +248,11 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseCategoryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `tests`: `List["TestCaseTypeDef"]`
 
+- `name`: `str`
+- `tests`:
+  `List`\[[TestCaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#testcasetypedef)\]
 
 ## TestCaseDefinitionTypeDef
 
@@ -292,13 +260,10 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `testCaseVersion`: `str`
-
 
 ## TestCaseRunTypeDef
 
@@ -306,20 +271,18 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseRunTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `testCaseRunId`: `str`
 - `testCaseDefinitionId`: `str`
 - `testCaseDefinitionName`: `str`
-- `status`: `Status`
+- `status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/literals.html#status)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `logUrl`: `str`
 - `warnings`: `str`
 - `failure`: `str`
-
 
 ## TestCaseTypeDef
 
@@ -327,14 +290,12 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `configuration`: `Dict[str, str]`
-- `test`: `"TestCaseDefinitionTypeDef"`
 
+- `name`: `str`
+- `configuration`: `Dict`\[`str`, `str`\]
+- `test`:
+  [TestCaseDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#testcasedefinitiontypedef)
 
 ## TestResultTypeDef
 
@@ -342,12 +303,10 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import TestResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `groups`: `List["GroupResultTypeDef"]`
 
+- `groups`:
+  `List`\[[GroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#groupresulttypedef)\]
 
 ## UpdateSuiteDefinitionResponseTypeDef
 
@@ -355,14 +314,11 @@ Optional fields:
 from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
 - `suiteDefinitionName`: `str`
 - `suiteDefinitionVersion`: `str`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
-

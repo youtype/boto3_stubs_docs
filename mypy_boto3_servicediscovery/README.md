@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ServiceDiscovery
 
-Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+Auto-generated documentation for
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+type annotations stubs module
+[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ```bash
 pip install mypy-boto3-servicediscovery
@@ -19,7 +21,8 @@ pip install mypy-boto3-servicediscovery
 
 ## ServiceDiscoveryClient
 
-Type annotations for  `boto3.client("servicediscovery")` as [ServiceDiscoveryClient](./client.md)
+Type annotations for `boto3.client("servicediscovery")` as
+[ServiceDiscoveryClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 ```
 
-
 ServiceDiscoveryClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_http_namespace](./client.md#create-http-namespace)
 - [create_private_dns_namespace](./client.md#create-private-dns-namespace)
@@ -60,10 +61,8 @@ ServiceDiscoveryClient [exceptions](./client.md#exceptions)
 - [update_instance_custom_health_status](./client.md#update-instance-custom-health-status)
 - [update_service](./client.md#update-service)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CustomHealthNotFound](./client.md#customhealthnotfound)
 - [DuplicateRequest](./client.md#duplicaterequest)
@@ -80,14 +79,10 @@ ServiceDiscoveryClient [exceptions](./client.md#exceptions)
 - [ServiceNotFound](./client.md#servicenotfound)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("servicediscovery").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("servicediscovery").get_paginator("...")`.
 
 Can be used directly:
 
@@ -99,11 +94,6 @@ from mypy_boto3_servicediscovery.paginators import ListInstancesPaginator, ...
 - [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
 - [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -136,13 +126,10 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatus, ...
 - [ServiceType](./literals.md#servicetype)
 - [ServiceTypeOption](./literals.md#servicetypeoption)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

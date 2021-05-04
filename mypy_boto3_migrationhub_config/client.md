@@ -1,9 +1,12 @@
 # MigrationHubConfigClient for boto3 MigrationHubConfig module
 
-> [Index](../README.md) > [MigrationHubConfig](./README.md) > MigrationHubConfigClient
+> [Index](../README.md) > [MigrationHubConfig](./README.md) >
+> MigrationHubConfigClient
 
-Auto-generated documentation for [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
-type annotations stubs module [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
+Auto-generated documentation for
+[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
+type annotations stubs module
+[mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 - [MigrationHubConfigClient for boto3 MigrationHubConfig module](#migrationhubconfigclient-for-boto3-migrationhubconfig-module)
   - [MigrationHubConfigClient](#migrationhubconfigclient)
@@ -28,12 +31,13 @@ def get_migrationhub-config_client() -> MigrationHubConfigClient:
     return boto3.client("migrationhub-config")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
+Boto3 documentation:
+[MigrationHubConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_migrationhub_config.client import Exceptions
@@ -41,7 +45,6 @@ from mypy_boto3_migrationhub_config.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -53,87 +56,84 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("migrationhub-config").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate]
+Boto3 documentation:
+[MigrationHubConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_home_region_control
 
-Type annotations for `boto3.client("migrationhub-config").create_home_region_control` method.
+Type annotations for
+`boto3.client("migrationhub-config").create_home_region_control` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control]
+Boto3 documentation:
+[MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
 
-```python
-def create_home_region_control(
-    self,
-    HomeRegion: str,
-    Target: "TargetTypeDef",
-    DryRun: bool = None
-) -> CreateHomeRegionControlResultTypeDef:
-    pass
-```
+Arguments:
+
+- `HomeRegion`: `str` *(required)*
+- `Target`:
+  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#targettypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[CreateHomeRegionControlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#createhomeregioncontrolresulttypedef).
 
 ### describe_home_region_controls
 
-Type annotations for `boto3.client("migrationhub-config").describe_home_region_controls` method.
+Type annotations for
+`boto3.client("migrationhub-config").describe_home_region_controls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls]
+Boto3 documentation:
+[MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
 
-```python
-def describe_home_region_controls(
-    self,
-    ControlId: str = None,
-    HomeRegion: str = None,
-    Target: "TargetTypeDef" = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeHomeRegionControlsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ControlId`: `str`
+- `HomeRegion`: `str`
+- `Target`:
+  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#targettypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeHomeRegionControlsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#describehomeregioncontrolsresulttypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("migrationhub-config").generate_presigned_url` method.
+Type annotations for
+`boto3.client("migrationhub-config").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url]
+Boto3 documentation:
+[MigrationHubConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_home_region
 
-Type annotations for `boto3.client("migrationhub-config").get_home_region` method.
+Type annotations for `boto3.client("migrationhub-config").get_home_region`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region]
+Boto3 documentation:
+[MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
-```python
-def get_home_region(
-    self
-) -> GetHomeRegionResultTypeDef:
-    pass
-```
-
-
-
+Returns
+[GetHomeRegionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#gethomeregionresulttypedef).

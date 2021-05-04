@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GlobalAccelerator](./README.md) > Literals
 
-Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+Auto-generated documentation for
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+type annotations stubs module
+[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Literals for boto3 GlobalAccelerator module](#literals-for-boto3-globalaccelerator-module)
   - [AcceleratorStatus](#acceleratorstatus)

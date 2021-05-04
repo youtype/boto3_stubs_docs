@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ResourceGroups](./README.md) > Literals
 
-Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
-type annotations stubs module [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+Auto-generated documentation for
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+type annotations stubs module
+[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Literals for boto3 ResourceGroups module](#literals-for-boto3-resourcegroups-module)
   - [GroupConfigurationStatus](#groupconfigurationstatus)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > PrometheusService
 
-Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+Auto-generated documentation for
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+type annotations stubs module
+[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 ```bash
 pip install mypy-boto3-amp
@@ -19,7 +21,8 @@ pip install mypy-boto3-amp
 
 ## PrometheusServiceClient
 
-Type annotations for  `boto3.client("amp")` as [PrometheusServiceClient](./client.md)
+Type annotations for `boto3.client("amp")` as
+[PrometheusServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_amp.client import PrometheusServiceClient
 ```
 
-
 PrometheusServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_workspace](./client.md#create-workspace)
 - [delete_workspace](./client.md#delete-workspace)
@@ -42,10 +43,8 @@ PrometheusServiceClient [exceptions](./client.md#exceptions)
 - [list_workspaces](./client.md#list-workspaces)
 - [update_workspace_alias](./client.md#update-workspace-alias)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -55,14 +54,10 @@ PrometheusServiceClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("amp").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("amp").get_paginator("...")`.
 
 Can be used directly:
 
@@ -71,11 +66,6 @@ from mypy_boto3_amp.paginators import ListWorkspacesPaginator, ...
 ```
 
 - [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -90,13 +80,10 @@ from mypy_boto3_amp.literals import ListWorkspacesPaginatorName, ...
 - [ListWorkspacesPaginatorName](./literals.md#listworkspacespaginatorname)
 - [WorkspaceStatusCode](./literals.md#workspacestatuscode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

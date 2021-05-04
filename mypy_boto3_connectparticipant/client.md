@@ -1,9 +1,12 @@
 # ConnectParticipantClient for boto3 ConnectParticipant module
 
-> [Index](../README.md) > [ConnectParticipant](./README.md) > ConnectParticipantClient
+> [Index](../README.md) > [ConnectParticipant](./README.md) >
+> ConnectParticipantClient
 
-Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
-type annotations stubs module [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+Auto-generated documentation for
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+type annotations stubs module
+[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [ConnectParticipantClient for boto3 ConnectParticipant module](#connectparticipantclient-for-boto3-connectparticipant-module)
   - [ConnectParticipantClient](#connectparticipantclient)
@@ -33,12 +36,13 @@ def get_connectparticipant_client() -> ConnectParticipantClient:
     return boto3.client("connectparticipant")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
+Boto3 documentation:
+[ConnectParticipant.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_connectparticipant.client import Exceptions
@@ -46,7 +50,6 @@ from mypy_boto3_connectparticipant.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -58,173 +61,176 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("connectparticipant").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate]
+Boto3 documentation:
+[ConnectParticipant.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_attachment_upload
 
-Type annotations for `boto3.client("connectparticipant").complete_attachment_upload` method.
+Type annotations for
+`boto3.client("connectparticipant").complete_attachment_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload]
+Boto3 documentation:
+[ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
 
-```python
-def complete_attachment_upload(
-    self,
-    AttachmentIds: List[str],
-    ClientToken: str,
-    ConnectionToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AttachmentIds`: `List`\[`str`\] *(required)*
+- `ClientToken`: `str` *(required)*
+- `ConnectionToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_participant_connection
 
-Type annotations for `boto3.client("connectparticipant").create_participant_connection` method.
+Type annotations for
+`boto3.client("connectparticipant").create_participant_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection]
+Boto3 documentation:
+[ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
 
-```python
-def create_participant_connection(
-    self,
-    Type: List[ConnectionType],
-    ParticipantToken: str
-) -> CreateParticipantConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  `List`\[[ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#connectiontype)\]
+  *(required)*
+- `ParticipantToken`: `str` *(required)*
+
+Returns
+[CreateParticipantConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#createparticipantconnectionresponsetypedef).
 
 ### disconnect_participant
 
-Type annotations for `boto3.client("connectparticipant").disconnect_participant` method.
+Type annotations for
+`boto3.client("connectparticipant").disconnect_participant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant]
+Boto3 documentation:
+[ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
 
-```python
-def disconnect_participant(
-    self,
-    ConnectionToken: str,
-    ClientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConnectionToken`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("connectparticipant").generate_presigned_url` method.
+Type annotations for
+`boto3.client("connectparticipant").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url]
+Boto3 documentation:
+[ConnectParticipant.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_attachment
 
-Type annotations for `boto3.client("connectparticipant").get_attachment` method.
+Type annotations for `boto3.client("connectparticipant").get_attachment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment]
+Boto3 documentation:
+[ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
 
-```python
-def get_attachment(
-    self,
-    AttachmentId: str,
-    ConnectionToken: str
-) -> GetAttachmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AttachmentId`: `str` *(required)*
+- `ConnectionToken`: `str` *(required)*
+
+Returns
+[GetAttachmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#getattachmentresponsetypedef).
 
 ### get_transcript
 
-Type annotations for `boto3.client("connectparticipant").get_transcript` method.
+Type annotations for `boto3.client("connectparticipant").get_transcript`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript]
+Boto3 documentation:
+[ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
 
-```python
-def get_transcript(
-    self,
-    ConnectionToken: str,
-    ContactId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    ScanDirection: ScanDirection = None,
-    SortOrder: SortKey = None,
-    StartPosition: StartPositionTypeDef = None
-) -> GetTranscriptResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionToken`: `str` *(required)*
+- `ContactId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ScanDirection`:
+  [ScanDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#scandirection)
+- `SortOrder`:
+  [SortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#sortkey)
+- `StartPosition`:
+  [StartPositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#startpositiontypedef)
+
+Returns
+[GetTranscriptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#gettranscriptresponsetypedef).
 
 ### send_event
 
 Type annotations for `boto3.client("connectparticipant").send_event` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event]
+Boto3 documentation:
+[ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
 
-```python
-def send_event(
-    self,
-    ContentType: str,
-    ConnectionToken: str,
-    Content: str = None,
-    ClientToken: str = None
-) -> SendEventResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContentType`: `str` *(required)*
+- `ConnectionToken`: `str` *(required)*
+- `Content`: `str`
+- `ClientToken`: `str`
+
+Returns
+[SendEventResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#sendeventresponsetypedef).
 
 ### send_message
 
 Type annotations for `boto3.client("connectparticipant").send_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message]
+Boto3 documentation:
+[ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
 
-```python
-def send_message(
-    self,
-    ContentType: str,
-    Content: str,
-    ConnectionToken: str,
-    ClientToken: str = None
-) -> SendMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContentType`: `str` *(required)*
+- `Content`: `str` *(required)*
+- `ConnectionToken`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns
+[SendMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#sendmessageresponsetypedef).
 
 ### start_attachment_upload
 
-Type annotations for `boto3.client("connectparticipant").start_attachment_upload` method.
+Type annotations for
+`boto3.client("connectparticipant").start_attachment_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload]
+Boto3 documentation:
+[ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
 
-```python
-def start_attachment_upload(
-    self,
-    ContentType: str,
-    AttachmentSizeInBytes: int,
-    AttachmentName: str,
-    ClientToken: str,
-    ConnectionToken: str
-) -> StartAttachmentUploadResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ContentType`: `str` *(required)*
+- `AttachmentSizeInBytes`: `int` *(required)*
+- `AttachmentName`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `ConnectionToken`: `str` *(required)*
 
-
+Returns
+[StartAttachmentUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#startattachmentuploadresponsetypedef).

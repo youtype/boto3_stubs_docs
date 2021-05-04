@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ApplicationInsights
 
-Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
-type annotations stubs module [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+Auto-generated documentation for
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+type annotations stubs module
+[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 ```bash
 pip install mypy-boto3-application-insights
@@ -18,7 +20,8 @@ pip install mypy-boto3-application-insights
 
 ## ApplicationInsightsClient
 
-Type annotations for  `boto3.client("application-insights")` as [ApplicationInsightsClient](./client.md)
+Type annotations for `boto3.client("application-insights")` as
+[ApplicationInsightsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 ```
 
-
 ApplicationInsightsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_application](./client.md#create-application)
 - [create_component](./client.md#create-component)
@@ -62,10 +63,8 @@ ApplicationInsightsClient [exceptions](./client.md#exceptions)
 - [update_component_configuration](./client.md#update-component-configuration)
 - [update_log_pattern](./client.md#update-log-pattern)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -75,15 +74,6 @@ ApplicationInsightsClient [exceptions](./client.md#exceptions)
 - [TagsAlreadyExistException](./client.md#tagsalreadyexistexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -106,13 +96,10 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSource, ...
 - [Status](./literals.md#status)
 - [Tier](./literals.md#tier)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

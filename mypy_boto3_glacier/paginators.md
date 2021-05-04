@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Glacier](./README.md) > Paginators
 
-Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+Auto-generated documentation for
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+type annotations stubs module
+[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [Paginators for boto3 Glacier module](#paginators-for-boto3-glacier-module)
   - [ListJobsPaginator](#listjobspaginator)
@@ -24,23 +26,25 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("glacier").get_paginator("list_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
+Boto3 documentation:
+[Glacier.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
 
-```python
-class ListJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accountId: str,
-        vaultName: str,
-        statuscode: str = None,
-        completed: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsOutputTypeDef]:
-        pass
-```
+Arguments for `ListJobsPaginator.paginate` method:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `statuscode`: `str`
+- `completed`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsPaginator.paginate` returns
+`Iterator`\[[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listjobsoutputtypedef)\].
+
 ## ListMultipartUploadsPaginator
 
-Type annotations for `boto3.client("glacier").get_paginator("list_multipart_uploads")`.
+Type annotations for
+`boto3.client("glacier").get_paginator("list_multipart_uploads")`.
 
 Can be used directly:
 
@@ -51,18 +55,19 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return boto3.client("glacier").get_paginator("list_multipart_uploads")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
+Boto3 documentation:
+[Glacier.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
 
-```python
-class ListMultipartUploadsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accountId: str,
-        vaultName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMultipartUploadsOutputTypeDef]:
-        pass
-```
+Arguments for `ListMultipartUploadsPaginator.paginate` method:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#paginatorconfigtypedef)
+
+`ListMultipartUploadsPaginator.paginate` returns
+`Iterator`\[[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listmultipartuploadsoutputtypedef)\].
+
 ## ListPartsPaginator
 
 Type annotations for `boto3.client("glacier").get_paginator("list_parts")`.
@@ -76,19 +81,20 @@ def get_list_parts_paginator() -> ListPartsPaginator:
     return boto3.client("glacier").get_paginator("list_parts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
+Boto3 documentation:
+[Glacier.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
 
-```python
-class ListPartsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accountId: str,
-        vaultName: str,
-        uploadId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPartsOutputTypeDef]:
-        pass
-```
+Arguments for `ListPartsPaginator.paginate` method:
+
+- `accountId`: `str` *(required)*
+- `vaultName`: `str` *(required)*
+- `uploadId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#paginatorconfigtypedef)
+
+`ListPartsPaginator.paginate` returns
+`Iterator`\[[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listpartsoutputtypedef)\].
+
 ## ListVaultsPaginator
 
 Type annotations for `boto3.client("glacier").get_paginator("list_vaults")`.
@@ -102,14 +108,14 @@ def get_list_vaults_paginator() -> ListVaultsPaginator:
     return boto3.client("glacier").get_paginator("list_vaults")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
+Boto3 documentation:
+[Glacier.Paginator.ListVaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
 
-```python
-class ListVaultsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accountId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListVaultsOutputTypeDef]:
-        pass
-```
+Arguments for `ListVaultsPaginator.paginate` method:
+
+- `accountId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#paginatorconfigtypedef)
+
+`ListVaultsPaginator.paginate` returns
+`Iterator`\[[ListVaultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listvaultsoutputtypedef)\].

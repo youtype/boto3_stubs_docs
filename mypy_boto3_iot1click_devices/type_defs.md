@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Structures
 
-Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+Auto-generated documentation for
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+type annotations stubs module
+[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [Typed dictionaries for boto3 IoT1ClickDevicesService module](#typed-dictionaries-for-boto3-iot1clickdevicesservice-module)
   - [ClaimDevicesByClaimCodeResponseTypeDef](#claimdevicesbyclaimcoderesponsetypedef)
@@ -28,13 +30,10 @@ type annotations stubs module [mypy_boto3_iot1click_devices](https://pypi.org/pr
 from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClaimCode`: `str`
 - `Total`: `int`
-
 
 ## DescribeDeviceResponseTypeDef
 
@@ -42,12 +41,10 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceDescription`: `"DeviceDescriptionTypeDef"`
 
+- `DeviceDescription`:
+  [DeviceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicedescriptiontypedef)
 
 ## DeviceDescriptionTypeDef
 
@@ -55,18 +52,15 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import DeviceDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
-- `Attributes`: `Dict[str, str]`
+- `Attributes`: `Dict`\[`str`, `str`\]
 - `DeviceId`: `str`
 - `Enabled`: `bool`
 - `RemainingLife`: `float`
 - `Type`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DeviceEventTypeDef
 
@@ -74,13 +68,11 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import DeviceEventTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Device`: `"DeviceTypeDef"`
-- `StdEvent`: `str`
 
+- `Device`:
+  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicetypedef)
+- `StdEvent`: `str`
 
 ## DeviceMethodTypeDef
 
@@ -88,13 +80,10 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import DeviceMethodTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeviceType`: `str`
 - `MethodName`: `str`
-
 
 ## DeviceTypeDef
 
@@ -102,14 +91,11 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import DeviceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, Any]`
+
+- `Attributes`: `Dict`\[`str`, `Any`\]
 - `DeviceId`: `str`
 - `Type`: `str`
-
 
 ## FinalizeDeviceClaimResponseTypeDef
 
@@ -117,12 +103,9 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `str`
 
+- `State`: `str`
 
 ## GetDeviceMethodsResponseTypeDef
 
@@ -130,12 +113,10 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceMethods`: `List["DeviceMethodTypeDef"]`
 
+- `DeviceMethods`:
+  `List`\[[DeviceMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicemethodtypedef)\]
 
 ## InitiateDeviceClaimResponseTypeDef
 
@@ -143,12 +124,9 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `str`
 
+- `State`: `str`
 
 ## InvokeDeviceMethodResponseTypeDef
 
@@ -156,12 +134,9 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceMethodResponse`: `str`
 
+- `DeviceMethodResponse`: `str`
 
 ## ListDeviceEventsResponseTypeDef
 
@@ -169,13 +144,11 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Events`: `List["DeviceEventTypeDef"]`
-- `NextToken`: `str`
 
+- `Events`:
+  `List`\[[DeviceEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#deviceeventtypedef)\]
+- `NextToken`: `str`
 
 ## ListDevicesResponseTypeDef
 
@@ -183,13 +156,11 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import ListDevicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Devices`: `List["DeviceDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Devices`:
+  `List`\[[DeviceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicedescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -197,12 +168,9 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -210,14 +178,11 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## UnclaimDeviceResponseTypeDef
 
@@ -225,9 +190,6 @@ Optional fields:
 from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `str`
 
+- `State`: `str`

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > RDS
 
-Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
-type annotations stubs module [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+Auto-generated documentation for
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+type annotations stubs module
+[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
 ```bash
 pip install mypy-boto3-rds
@@ -20,7 +22,7 @@ pip install mypy-boto3-rds
 
 ## RDSClient
 
-Type annotations for  `boto3.client("rds")` as [RDSClient](./client.md)
+Type annotations for `boto3.client("rds")` as [RDSClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_rds.client import RDSClient
 ```
 
-
 RDSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_role_to_db_cluster](./client.md#add-role-to-db-cluster)
 - [add_role_to_db_instance](./client.md#add-role-to-db-instance)
 - [add_source_identifier_to_subscription](./client.md#add-source-identifier-to-subscription)
@@ -177,10 +177,8 @@ RDSClient [exceptions](./client.md#exceptions)
 - [stop_db_instance](./client.md#stop-db-instance)
 - [stop_db_instance_automated_backups_replication](./client.md#stop-db-instance-automated-backups-replication)
 
-
-
-
 ### Exceptions
+
 - [AuthorizationAlreadyExistsFault](./client.md#authorizationalreadyexistsfault)
 - [AuthorizationNotFoundFault](./client.md#authorizationnotfoundfault)
 - [AuthorizationQuotaExceededFault](./client.md#authorizationquotaexceededfault)
@@ -300,14 +298,10 @@ RDSClient [exceptions](./client.md#exceptions)
 - [SubscriptionCategoryNotFoundFault](./client.md#subscriptioncategorynotfoundfault)
 - [SubscriptionNotFoundFault](./client.md#subscriptionnotfoundfault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("rds").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("rds").get_paginator("...")`.
 
 Can be used directly:
 
@@ -352,12 +346,10 @@ from mypy_boto3_rds.paginators import DescribeCertificatesPaginator, ...
 - [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
 - [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("rds").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("rds").get_waiter("...")`.
 
 Can be used directly:
 
@@ -372,9 +364,6 @@ from mypy_boto3_rds.waiters import DBClusterSnapshotAvailableWaiter, ...
 - [DBSnapshotAvailableWaiter](./waiters.md#dbsnapshotavailablewaiter)
 - [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
 - [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -447,13 +436,10 @@ from mypy_boto3_rds.literals import ActivityStreamMode, ...
 - [TargetType](./literals.md#targettype)
 - [WriteForwardingStatus](./literals.md#writeforwardingstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Outposts](./README.md) > Structures
 
-Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
-type annotations stubs module [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+Auto-generated documentation for
+[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+type annotations stubs module
+[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
   - [CreateOutpostOutputTypeDef](#createoutpostoutputtypedef)
@@ -23,13 +25,12 @@ type annotations stubs module [mypy_boto3_outposts](https://pypi.org/project/myp
 from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef
 ```
 
-
 Required fields:
-- `Outpost`: `"OutpostTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Outpost`:
+  [OutpostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#outposttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#responsemetadata)
 
 ## GetOutpostInstanceTypesOutputTypeDef
 
@@ -37,16 +38,15 @@ Required fields:
 from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesOutputTypeDef
 ```
 
-
 Required fields:
-- `InstanceTypes`: `List["InstanceTypeItemTypeDef"]`
+
+- `InstanceTypes`:
+  `List`\[[InstanceTypeItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#instancetypeitemtypedef)\]
 - `NextToken`: `str`
 - `OutpostId`: `str`
 - `OutpostArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#responsemetadata)
 
 ## GetOutpostOutputTypeDef
 
@@ -54,13 +54,12 @@ Required fields:
 from mypy_boto3_outposts.type_defs import GetOutpostOutputTypeDef
 ```
 
-
 Required fields:
-- `Outpost`: `"OutpostTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Outpost`:
+  [OutpostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#outposttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#responsemetadata)
 
 ## InstanceTypeItemTypeDef
 
@@ -68,12 +67,9 @@ Required fields:
 from mypy_boto3_outposts.type_defs import InstanceTypeItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceType`: `str`
 
+- `InstanceType`: `str`
 
 ## ListOutpostsOutputTypeDef
 
@@ -81,14 +77,13 @@ Optional fields:
 from mypy_boto3_outposts.type_defs import ListOutpostsOutputTypeDef
 ```
 
-
 Required fields:
-- `Outposts`: `List["OutpostTypeDef"]`
+
+- `Outposts`:
+  `List`\[[OutpostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#outposttypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#responsemetadata)
 
 ## ListSitesOutputTypeDef
 
@@ -96,14 +91,13 @@ Required fields:
 from mypy_boto3_outposts.type_defs import ListSitesOutputTypeDef
 ```
 
-
 Required fields:
-- `Sites`: `List["SiteTypeDef"]`
+
+- `Sites`:
+  `List`\[[SiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#sitetypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -111,12 +105,9 @@ Required fields:
 from mypy_boto3_outposts.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## OutpostTypeDef
 
@@ -124,10 +115,8 @@ Optional fields:
 from mypy_boto3_outposts.type_defs import OutpostTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OutpostId`: `str`
 - `OwnerId`: `str`
 - `OutpostArn`: `str`
@@ -137,8 +126,7 @@ Optional fields:
 - `LifeCycleStatus`: `str`
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ResponseMetadata
 
@@ -146,16 +134,13 @@ Optional fields:
 from mypy_boto3_outposts.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SiteTypeDef
 
@@ -163,13 +148,10 @@ Required fields:
 from mypy_boto3_outposts.type_defs import SiteTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SiteId`: `str`
 - `AccountId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]

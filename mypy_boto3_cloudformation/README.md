@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudFormation
 
-Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+Auto-generated documentation for
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+type annotations stubs module
+[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ```bash
 pip install mypy-boto3-cloudformation
@@ -23,7 +25,8 @@ pip install mypy-boto3-cloudformation
 
 ## CloudFormationClient
 
-Type annotations for  `boto3.client("cloudformation")` as [CloudFormationClient](./client.md)
+Type annotations for `boto3.client("cloudformation")` as
+[CloudFormationClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +34,10 @@ Can be used directly:
 from mypy_boto3_cloudformation.client import CloudFormationClient
 ```
 
-
 CloudFormationClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_update_stack](./client.md#cancel-update-stack)
 - [continue_update_rollback](./client.md#continue-update-rollback)
@@ -97,10 +98,8 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 - [update_termination_protection](./client.md#update-termination-protection)
 - [validate_template](./client.md#validate-template)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [CFNRegistryException](./client.md#cfnregistryexception)
 - [ChangeSetNotFoundException](./client.md#changesetnotfoundexception)
@@ -123,19 +122,16 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 - [TokenAlreadyExistsException](./client.md#tokenalreadyexistsexception)
 - [TypeNotFoundException](./client.md#typenotfoundexception)
 
-
-
-
 ## CloudFormationServiceResource
 
-Type annotations for  `boto3.resource("cloudformation")` as [CloudFormationServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("cloudformation")` as
+[CloudFormationServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_cloudformation.service_resource import CloudFormationServiceResource
 ```
-
 
 ### Collections
 
@@ -149,12 +145,10 @@ from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksColl
 
 - [ServiceResourceStacksCollection](./service_resource.md#cloudformationserviceresource.stacks)
 
-
-
-
 ### Resources
 
-Type annotations for additional resources from `boto3.resource("cloudformation").*`.
+Type annotations for additional resources from
+`boto3.resource("cloudformation").*`.
 
 Can be used directly:
 
@@ -167,13 +161,10 @@ from mypy_boto3_cloudformation.service_resource import Event, ...
 - [StackResource](./service_resource.md#stackresource)
 - [StackResourceSummary](./service_resource.md#stackresourcesummary)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloudformation").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloudformation").get_paginator("...")`.
 
 Can be used directly:
 
@@ -195,12 +186,10 @@ from mypy_boto3_cloudformation.paginators import DescribeAccountLimitsPaginator,
 - [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
 - [ListStacksPaginator](./paginators.md#liststackspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("cloudformation").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("cloudformation").get_waiter("...")`.
 
 Can be used directly:
 
@@ -216,9 +205,6 @@ from mypy_boto3_cloudformation.waiters import ChangeSetCreateCompleteWaiter, ...
 - [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
 - [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
 - [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
-
-
-
 
 ## Literals
 
@@ -292,13 +278,10 @@ from mypy_boto3_cloudformation.literals import AccountGateStatus, ...
 - [TypeRegistrationCompleteWaiterName](./literals.md#typeregistrationcompletewaitername)
 - [Visibility](./literals.md#visibility)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

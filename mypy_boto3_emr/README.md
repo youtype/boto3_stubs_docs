@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EMR
 
-Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+Auto-generated documentation for
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+type annotations stubs module
+[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ```bash
 pip install mypy-boto3-emr
@@ -20,7 +22,7 @@ pip install mypy-boto3-emr
 
 ## EMRClient
 
-Type annotations for  `boto3.client("emr")` as [EMRClient](./client.md)
+Type annotations for `boto3.client("emr")` as [EMRClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_emr.client import EMRClient
 ```
 
-
 EMRClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_instance_fleet](./client.md#add-instance-fleet)
 - [add_instance_groups](./client.md#add-instance-groups)
 - [add_job_flow_steps](./client.md#add-job-flow-steps)
@@ -86,23 +86,17 @@ EMRClient [exceptions](./client.md#exceptions)
 - [update_studio](./client.md#update-studio)
 - [update_studio_session_mapping](./client.md#update-studio-session-mapping)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerError](./client.md#internalservererror)
 - [InternalServerException](./client.md#internalserverexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("emr").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("emr").get_paginator("...")`.
 
 Can be used directly:
 
@@ -121,12 +115,10 @@ from mypy_boto3_emr.paginators import ListBootstrapActionsPaginator, ...
 - [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("emr").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("emr").get_waiter("...")`.
 
 Can be used directly:
 
@@ -137,9 +129,6 @@ from mypy_boto3_emr.waiters import ClusterRunningWaiter, ...
 - [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
 - [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
 - [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
-
-
-
 
 ## Literals
 
@@ -204,13 +193,10 @@ from mypy_boto3_emr.literals import ActionOnFailure, ...
 - [StepStateChangeReasonCode](./literals.md#stepstatechangereasoncode)
 - [Unit](./literals.md#unit)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

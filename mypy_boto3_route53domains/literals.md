@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Literals
 
-Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+Auto-generated documentation for
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+type annotations stubs module
+[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Literals for boto3 Route53Domains module](#literals-for-boto3-route53domains-module)
   - [ContactType](#contacttype)

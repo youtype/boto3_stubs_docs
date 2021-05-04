@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaConnect](./README.md) > Literals
 
-Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
-type annotations stubs module [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+Auto-generated documentation for
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+type annotations stubs module
+[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Literals for boto3 MediaConnect module](#literals-for-boto3-mediaconnect-module)
   - [Algorithm](#algorithm)

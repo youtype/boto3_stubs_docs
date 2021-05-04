@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FMS](./README.md) > Structures
 
-Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+Auto-generated documentation for
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+type annotations stubs module
+[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Typed dictionaries for boto3 FMS module](#typed-dictionaries-for-boto3-fms-module)
   - [AppTypeDef](#apptypedef)
@@ -63,14 +65,11 @@ type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-bot
 from mypy_boto3_fms.type_defs import AppTypeDef
 ```
 
-
 Required fields:
+
 - `AppName`: `str`
 - `Protocol`: `str`
 - `Port`: `int`
-
-
-
 
 ## AppsListDataSummaryTypeDef
 
@@ -78,15 +77,13 @@ Required fields:
 from mypy_boto3_fms.type_defs import AppsListDataSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ListArn`: `str`
 - `ListId`: `str`
 - `ListName`: `str`
-- `AppsList`: `List["AppTypeDef"]`
-
+- `AppsList`:
+  `List`\[[AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#apptypedef)\]
 
 ## AppsListDataTypeDef
 
@@ -94,20 +91,20 @@ Optional fields:
 from mypy_boto3_fms.type_defs import AppsListDataTypeDef
 ```
 
-
 Required fields:
+
 - `ListName`: `str`
-- `AppsList`: `List["AppTypeDef"]`
-
-
+- `AppsList`:
+  `List`\[[AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#apptypedef)\]
 
 Optional fields:
+
 - `ListId`: `str`
 - `ListUpdateToken`: `str`
 - `CreateTime`: `datetime`
 - `LastUpdateTime`: `datetime`
-- `PreviousAppsList`: `Dict[str, List["AppTypeDef"]]`
-
+- `PreviousAppsList`: `Dict`\[`str`,
+  `List`\[[AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#apptypedef)\]\]
 
 ## AwsEc2InstanceViolationTypeDef
 
@@ -115,13 +112,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import AwsEc2InstanceViolationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ViolationTarget`: `str`
-- `AwsEc2NetworkInterfaceViolations`: `List["AwsEc2NetworkInterfaceViolationTypeDef"]`
 
+- `ViolationTarget`: `str`
+- `AwsEc2NetworkInterfaceViolations`:
+  `List`\[[AwsEc2NetworkInterfaceViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#awsec2networkinterfaceviolationtypedef)\]
 
 ## AwsEc2NetworkInterfaceViolationTypeDef
 
@@ -129,13 +124,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import AwsEc2NetworkInterfaceViolationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ViolationTarget`: `str`
-- `ViolatingSecurityGroups`: `List[str]`
 
+- `ViolationTarget`: `str`
+- `ViolatingSecurityGroups`: `List`\[`str`\]
 
 ## AwsVPCSecurityGroupViolationTypeDef
 
@@ -143,15 +135,14 @@ Optional fields:
 from mypy_boto3_fms.type_defs import AwsVPCSecurityGroupViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `ViolationTargetDescription`: `str`
-- `PartialMatches`: `List["PartialMatchTypeDef"]`
-- `PossibleSecurityGroupRemediationActions`: `List["SecurityGroupRemediationActionTypeDef"]`
-
+- `PartialMatches`:
+  `List`\[[PartialMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#partialmatchtypedef)\]
+- `PossibleSecurityGroupRemediationActions`:
+  `List`\[[SecurityGroupRemediationActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#securitygroupremediationactiontypedef)\]
 
 ## ComplianceViolatorTypeDef
 
@@ -159,14 +150,12 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ComplianceViolatorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceId`: `str`
-- `ViolationReason`: `ViolationReason`
-- `ResourceType`: `str`
 
+- `ResourceId`: `str`
+- `ViolationReason`:
+  [ViolationReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#violationreason)
+- `ResourceType`: `str`
 
 ## DnsDuplicateRuleGroupViolationTypeDef
 
@@ -174,13 +163,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import DnsDuplicateRuleGroupViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `ViolationTargetDescription`: `str`
-
 
 ## DnsRuleGroupLimitExceededViolationTypeDef
 
@@ -188,14 +174,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import DnsRuleGroupLimitExceededViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `ViolationTargetDescription`: `str`
 - `NumberOfRuleGroupsAlreadyAssociated`: `int`
-
 
 ## DnsRuleGroupPriorityConflictViolationTypeDef
 
@@ -203,16 +186,13 @@ Optional fields:
 from mypy_boto3_fms.type_defs import DnsRuleGroupPriorityConflictViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `ViolationTargetDescription`: `str`
 - `ConflictingPriority`: `int`
 - `ConflictingPolicyId`: `str`
-- `UnavailablePriorities`: `List[int]`
-
+- `UnavailablePriorities`: `List`\[`int`\]
 
 ## EvaluationResultTypeDef
 
@@ -220,14 +200,12 @@ Optional fields:
 from mypy_boto3_fms.type_defs import EvaluationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ComplianceStatus`: `PolicyComplianceStatusType`
+
+- `ComplianceStatus`:
+  [PolicyComplianceStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#policycompliancestatustype)
 - `ViolatorCount`: `int`
 - `EvaluationLimitExceeded`: `bool`
-
 
 ## GetAdminAccountResponseTypeDef
 
@@ -235,13 +213,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetAdminAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdminAccount`: `str`
-- `RoleStatus`: `AccountRoleStatus`
 
+- `AdminAccount`: `str`
+- `RoleStatus`:
+  [AccountRoleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#accountrolestatus)
 
 ## GetAppsListResponseTypeDef
 
@@ -249,13 +225,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetAppsListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppsList`: `"AppsListDataTypeDef"`
-- `AppsListArn`: `str`
 
+- `AppsList`:
+  [AppsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#appslistdatatypedef)
+- `AppsListArn`: `str`
 
 ## GetComplianceDetailResponseTypeDef
 
@@ -263,12 +237,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetComplianceDetailResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyComplianceDetail`: `"PolicyComplianceDetailTypeDef"`
 
+- `PolicyComplianceDetail`:
+  [PolicyComplianceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policycompliancedetailtypedef)
 
 ## GetNotificationChannelResponseTypeDef
 
@@ -276,13 +248,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetNotificationChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SnsTopicArn`: `str`
 - `SnsRoleName`: `str`
-
 
 ## GetPolicyResponseTypeDef
 
@@ -290,13 +259,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `"PolicyTypeDef"`
-- `PolicyArn`: `str`
 
+- `Policy`:
+  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policytypedef)
+- `PolicyArn`: `str`
 
 ## GetProtectionStatusResponseTypeDef
 
@@ -304,15 +271,13 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetProtectionStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AdminAccountId`: `str`
-- `ServiceType`: `SecurityServiceType`
+- `ServiceType`:
+  [SecurityServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#securityservicetype)
 - `Data`: `str`
 - `NextToken`: `str`
-
 
 ## GetProtocolsListResponseTypeDef
 
@@ -320,13 +285,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetProtocolsListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProtocolsList`: `"ProtocolsListDataTypeDef"`
-- `ProtocolsListArn`: `str`
 
+- `ProtocolsList`:
+  [ProtocolsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#protocolslistdatatypedef)
+- `ProtocolsListArn`: `str`
 
 ## GetViolationDetailsResponseTypeDef
 
@@ -334,12 +297,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import GetViolationDetailsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ViolationDetail`: `"ViolationDetailTypeDef"`
 
+- `ViolationDetail`:
+  [ViolationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#violationdetailtypedef)
 
 ## ListAppsListsResponseTypeDef
 
@@ -347,13 +308,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListAppsListsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppsLists`: `List["AppsListDataSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `AppsLists`:
+  `List`\[[AppsListDataSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#appslistdatasummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListComplianceStatusResponseTypeDef
 
@@ -361,13 +320,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListComplianceStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyComplianceStatusList`: `List["PolicyComplianceStatusTypeDef"]`
-- `NextToken`: `str`
 
+- `PolicyComplianceStatusList`:
+  `List`\[[PolicyComplianceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policycompliancestatustypedef)\]
+- `NextToken`: `str`
 
 ## ListMemberAccountsResponseTypeDef
 
@@ -375,13 +332,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListMemberAccountsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MemberAccounts`: `List[str]`
-- `NextToken`: `str`
 
+- `MemberAccounts`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListPoliciesResponseTypeDef
 
@@ -389,13 +343,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListPoliciesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyList`: `List["PolicySummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PolicyList`:
+  `List`\[[PolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policysummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListProtocolsListsResponseTypeDef
 
@@ -403,13 +355,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListProtocolsListsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProtocolsLists`: `List["ProtocolsListDataSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ProtocolsLists`:
+  `List`\[[ProtocolsListDataSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#protocolslistdatasummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -417,12 +367,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TagList`: `List["TagTypeDef"]`
 
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
 
 ## NetworkFirewallMissingExpectedRTViolationTypeDef
 
@@ -430,16 +378,13 @@ Optional fields:
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingExpectedRTViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `VPC`: `str`
 - `AvailabilityZone`: `str`
 - `CurrentRouteTable`: `str`
 - `ExpectedRouteTable`: `str`
-
 
 ## NetworkFirewallMissingFirewallViolationTypeDef
 
@@ -447,15 +392,12 @@ Optional fields:
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingFirewallViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `VPC`: `str`
 - `AvailabilityZone`: `str`
 - `TargetViolationReason`: `str`
-
 
 ## NetworkFirewallMissingSubnetViolationTypeDef
 
@@ -463,15 +405,12 @@ Optional fields:
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingSubnetViolationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ViolationTarget`: `str`
 - `VPC`: `str`
 - `AvailabilityZone`: `str`
 - `TargetViolationReason`: `str`
-
 
 ## NetworkFirewallPolicyDescriptionTypeDef
 
@@ -479,16 +418,15 @@ Optional fields:
 from mypy_boto3_fms.type_defs import NetworkFirewallPolicyDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StatelessRuleGroups`: `List["StatelessRuleGroupTypeDef"]`
-- `StatelessDefaultActions`: `List[str]`
-- `StatelessFragmentDefaultActions`: `List[str]`
-- `StatelessCustomActions`: `List[str]`
-- `StatefulRuleGroups`: `List["StatefulRuleGroupTypeDef"]`
 
+- `StatelessRuleGroups`:
+  `List`\[[StatelessRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#statelessrulegrouptypedef)\]
+- `StatelessDefaultActions`: `List`\[`str`\]
+- `StatelessFragmentDefaultActions`: `List`\[`str`\]
+- `StatelessCustomActions`: `List`\[`str`\]
+- `StatefulRuleGroups`:
+  `List`\[[StatefulRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#statefulrulegrouptypedef)\]
 
 ## NetworkFirewallPolicyModifiedViolationTypeDef
 
@@ -496,14 +434,13 @@ Optional fields:
 from mypy_boto3_fms.type_defs import NetworkFirewallPolicyModifiedViolationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ViolationTarget`: `str`
-- `CurrentPolicyDescription`: `"NetworkFirewallPolicyDescriptionTypeDef"`
-- `ExpectedPolicyDescription`: `"NetworkFirewallPolicyDescriptionTypeDef"`
 
+- `ViolationTarget`: `str`
+- `CurrentPolicyDescription`:
+  [NetworkFirewallPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallpolicydescriptiontypedef)
+- `ExpectedPolicyDescription`:
+  [NetworkFirewallPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallpolicydescriptiontypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -511,14 +448,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PartialMatchTypeDef
 
@@ -526,13 +460,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PartialMatchTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Reference`: `str`
-- `TargetViolationReasons`: `List[str]`
 
+- `Reference`: `str`
+- `TargetViolationReasons`: `List`\[`str`\]
 
 ## PolicyComplianceDetailTypeDef
 
@@ -540,18 +471,18 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PolicyComplianceDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyOwner`: `str`
 - `PolicyId`: `str`
 - `MemberAccount`: `str`
-- `Violators`: `List["ComplianceViolatorTypeDef"]`
+- `Violators`:
+  `List`\[[ComplianceViolatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#complianceviolatortypedef)\]
 - `EvaluationLimitExceeded`: `bool`
 - `ExpiredAt`: `datetime`
-- `IssueInfoMap`: `Dict[DependentServiceName, str]`
-
+- `IssueInfoMap`:
+  `Dict`\[[DependentServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#dependentservicename),
+  `str`\]
 
 ## PolicyComplianceStatusTypeDef
 
@@ -559,18 +490,18 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PolicyComplianceStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyOwner`: `str`
 - `PolicyId`: `str`
 - `PolicyName`: `str`
 - `MemberAccount`: `str`
-- `EvaluationResults`: `List["EvaluationResultTypeDef"]`
+- `EvaluationResults`:
+  `List`\[[EvaluationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#evaluationresulttypedef)\]
 - `LastUpdated`: `datetime`
-- `IssueInfoMap`: `Dict[DependentServiceName, str]`
-
+- `IssueInfoMap`:
+  `Dict`\[[DependentServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#dependentservicename),
+  `str`\]
 
 ## PolicySummaryTypeDef
 
@@ -578,17 +509,15 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PolicySummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyArn`: `str`
 - `PolicyId`: `str`
 - `PolicyName`: `str`
 - `ResourceType`: `str`
-- `SecurityServiceType`: `SecurityServiceType`
+- `SecurityServiceType`:
+  [SecurityServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#securityservicetype)
 - `RemediationEnabled`: `bool`
-
 
 ## PolicyTypeDef
 
@@ -596,24 +525,28 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PolicyTypeDef
 ```
 
-
 Required fields:
+
 - `PolicyName`: `str`
-- `SecurityServicePolicyData`: `"SecurityServicePolicyDataTypeDef"`
+- `SecurityServicePolicyData`:
+  [SecurityServicePolicyDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#securityservicepolicydatatypedef)
 - `ResourceType`: `str`
 - `ExcludeResourceTags`: `bool`
 - `RemediationEnabled`: `bool`
 
-
-
 Optional fields:
+
 - `PolicyId`: `str`
 - `PolicyUpdateToken`: `str`
-- `ResourceTypeList`: `List[str]`
-- `ResourceTags`: `List["ResourceTagTypeDef"]`
-- `IncludeMap`: `Dict[CustomerPolicyScopeIdType, List[str]]`
-- `ExcludeMap`: `Dict[CustomerPolicyScopeIdType, List[str]]`
-
+- `ResourceTypeList`: `List`\[`str`\]
+- `ResourceTags`:
+  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#resourcetagtypedef)\]
+- `IncludeMap`:
+  `Dict`\[[CustomerPolicyScopeIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#customerpolicyscopeidtype),
+  `List`\[`str`\]\]
+- `ExcludeMap`:
+  `Dict`\[[CustomerPolicyScopeIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#customerpolicyscopeidtype),
+  `List`\[`str`\]\]
 
 ## ProtocolsListDataSummaryTypeDef
 
@@ -621,15 +554,12 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ProtocolsListDataSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ListArn`: `str`
 - `ListId`: `str`
 - `ListName`: `str`
-- `ProtocolsList`: `List[str]`
-
+- `ProtocolsList`: `List`\[`str`\]
 
 ## ProtocolsListDataTypeDef
 
@@ -637,20 +567,18 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ProtocolsListDataTypeDef
 ```
 
-
 Required fields:
+
 - `ListName`: `str`
-- `ProtocolsList`: `List[str]`
-
-
+- `ProtocolsList`: `List`\[`str`\]
 
 Optional fields:
+
 - `ListId`: `str`
 - `ListUpdateToken`: `str`
 - `CreateTime`: `datetime`
 - `LastUpdateTime`: `datetime`
-- `PreviousProtocolsList`: `Dict[str, List[str]]`
-
+- `PreviousProtocolsList`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## PutAppsListResponseTypeDef
 
@@ -658,13 +586,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PutAppsListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppsList`: `"AppsListDataTypeDef"`
-- `AppsListArn`: `str`
 
+- `AppsList`:
+  [AppsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#appslistdatatypedef)
+- `AppsListArn`: `str`
 
 ## PutPolicyResponseTypeDef
 
@@ -672,13 +598,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PutPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Policy`: `"PolicyTypeDef"`
-- `PolicyArn`: `str`
 
+- `Policy`:
+  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policytypedef)
+- `PolicyArn`: `str`
 
 ## PutProtocolsListResponseTypeDef
 
@@ -686,13 +610,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import PutProtocolsListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProtocolsList`: `"ProtocolsListDataTypeDef"`
-- `ProtocolsListArn`: `str`
 
+- `ProtocolsList`:
+  [ProtocolsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#protocolslistdatatypedef)
+- `ProtocolsListArn`: `str`
 
 ## ResourceTagTypeDef
 
@@ -700,15 +622,13 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ResourceTagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## ResourceViolationTypeDef
 
@@ -716,21 +636,28 @@ Optional fields:
 from mypy_boto3_fms.type_defs import ResourceViolationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AwsVPCSecurityGroupViolation`: `"AwsVPCSecurityGroupViolationTypeDef"`
-- `AwsEc2NetworkInterfaceViolation`: `"AwsEc2NetworkInterfaceViolationTypeDef"`
-- `AwsEc2InstanceViolation`: `"AwsEc2InstanceViolationTypeDef"`
-- `NetworkFirewallMissingFirewallViolation`: `"NetworkFirewallMissingFirewallViolationTypeDef"`
-- `NetworkFirewallMissingSubnetViolation`: `"NetworkFirewallMissingSubnetViolationTypeDef"`
-- `NetworkFirewallMissingExpectedRTViolation`: `"NetworkFirewallMissingExpectedRTViolationTypeDef"`
-- `NetworkFirewallPolicyModifiedViolation`: `"NetworkFirewallPolicyModifiedViolationTypeDef"`
-- `DnsRuleGroupPriorityConflictViolation`: `"DnsRuleGroupPriorityConflictViolationTypeDef"`
-- `DnsDuplicateRuleGroupViolation`: `"DnsDuplicateRuleGroupViolationTypeDef"`
-- `DnsRuleGroupLimitExceededViolation`: `"DnsRuleGroupLimitExceededViolationTypeDef"`
 
+- `AwsVPCSecurityGroupViolation`:
+  [AwsVPCSecurityGroupViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#awsvpcsecuritygroupviolationtypedef)
+- `AwsEc2NetworkInterfaceViolation`:
+  [AwsEc2NetworkInterfaceViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#awsec2networkinterfaceviolationtypedef)
+- `AwsEc2InstanceViolation`:
+  [AwsEc2InstanceViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#awsec2instanceviolationtypedef)
+- `NetworkFirewallMissingFirewallViolation`:
+  [NetworkFirewallMissingFirewallViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallmissingfirewallviolationtypedef)
+- `NetworkFirewallMissingSubnetViolation`:
+  [NetworkFirewallMissingSubnetViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallmissingsubnetviolationtypedef)
+- `NetworkFirewallMissingExpectedRTViolation`:
+  [NetworkFirewallMissingExpectedRTViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallmissingexpectedrtviolationtypedef)
+- `NetworkFirewallPolicyModifiedViolation`:
+  [NetworkFirewallPolicyModifiedViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#networkfirewallpolicymodifiedviolationtypedef)
+- `DnsRuleGroupPriorityConflictViolation`:
+  [DnsRuleGroupPriorityConflictViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#dnsrulegrouppriorityconflictviolationtypedef)
+- `DnsDuplicateRuleGroupViolation`:
+  [DnsDuplicateRuleGroupViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#dnsduplicaterulegroupviolationtypedef)
+- `DnsRuleGroupLimitExceededViolation`:
+  [DnsRuleGroupLimitExceededViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#dnsrulegrouplimitexceededviolationtypedef)
 
 ## SecurityGroupRemediationActionTypeDef
 
@@ -738,15 +665,14 @@ Optional fields:
 from mypy_boto3_fms.type_defs import SecurityGroupRemediationActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RemediationActionType`: `RemediationActionType`
-- `Description`: `str`
-- `RemediationResult`: `"SecurityGroupRuleDescriptionTypeDef"`
-- `IsDefaultAction`: `bool`
 
+- `RemediationActionType`:
+  [RemediationActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#remediationactiontype)
+- `Description`: `str`
+- `RemediationResult`:
+  [SecurityGroupRuleDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#securitygroupruledescriptiontypedef)
+- `IsDefaultAction`: `bool`
 
 ## SecurityGroupRuleDescriptionTypeDef
 
@@ -754,10 +680,8 @@ Optional fields:
 from mypy_boto3_fms.type_defs import SecurityGroupRuleDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IPV4Range`: `str`
 - `IPV6Range`: `str`
 - `PrefixListId`: `str`
@@ -765,22 +689,20 @@ Optional fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 
-
 ## SecurityServicePolicyDataTypeDef
 
 ```python
 from mypy_boto3_fms.type_defs import SecurityServicePolicyDataTypeDef
 ```
 
-
 Required fields:
-- `Type`: `SecurityServiceType`
 
-
+- `Type`:
+  [SecurityServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/literals.html#securityservicetype)
 
 Optional fields:
-- `ManagedServiceData`: `str`
 
+- `ManagedServiceData`: `str`
 
 ## StatefulRuleGroupTypeDef
 
@@ -788,13 +710,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import StatefulRuleGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleGroupName`: `str`
 - `ResourceId`: `str`
-
 
 ## StatelessRuleGroupTypeDef
 
@@ -802,14 +721,11 @@ Optional fields:
 from mypy_boto3_fms.type_defs import StatelessRuleGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleGroupName`: `str`
 - `ResourceId`: `str`
 - `Priority`: `int`
-
 
 ## TagTypeDef
 
@@ -817,13 +733,10 @@ Optional fields:
 from mypy_boto3_fms.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## ViolationDetailTypeDef
 
@@ -831,17 +744,17 @@ Required fields:
 from mypy_boto3_fms.type_defs import ViolationDetailTypeDef
 ```
 
-
 Required fields:
+
 - `PolicyId`: `str`
 - `MemberAccount`: `str`
 - `ResourceId`: `str`
 - `ResourceType`: `str`
-- `ResourceViolations`: `List["ResourceViolationTypeDef"]`
-
-
+- `ResourceViolations`:
+  `List`\[[ResourceViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#resourceviolationtypedef)\]
 
 Optional fields:
-- `ResourceTags`: `List["TagTypeDef"]`
-- `ResourceDescription`: `str`
 
+- `ResourceTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+- `ResourceDescription`: `str`

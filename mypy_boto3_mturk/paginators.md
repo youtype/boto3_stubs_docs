@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MTurk](./README.md) > Paginators
 
-Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+Auto-generated documentation for
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+type annotations stubs module
+[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Paginators for boto3 MTurk module](#paginators-for-boto3-mturk-module)
   - [ListAssignmentsForHITPaginator](#listassignmentsforhitpaginator)
@@ -18,7 +20,8 @@ type annotations stubs module [mypy_boto3_mturk](https://pypi.org/project/mypy-b
 
 ## ListAssignmentsForHITPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_assignments_for_hit")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_assignments_for_hit")`.
 
 Can be used directly:
 
@@ -29,21 +32,24 @@ def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
     return boto3.client("mturk").get_paginator("list_assignments_for_hit")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
+Boto3 documentation:
+[MTurk.Paginator.ListAssignmentsForHIT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
 
-```python
-class ListAssignmentsForHITPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        HITId: str,
-        AssignmentStatuses: List[AssignmentStatus] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssignmentsForHITResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssignmentsForHITPaginator.paginate` method:
+
+- `HITId`: `str` *(required)*
+- `AssignmentStatuses`:
+  `List`\[[AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#assignmentstatus)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListAssignmentsForHITPaginator.paginate` returns
+`Iterator`\[[ListAssignmentsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listassignmentsforhitresponsetypedef)\].
+
 ## ListBonusPaymentsPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_bonus_payments")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_bonus_payments")`.
 
 Can be used directly:
 
@@ -54,18 +60,19 @@ def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
     return boto3.client("mturk").get_paginator("list_bonus_payments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
+Boto3 documentation:
+[MTurk.Paginator.ListBonusPayments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
 
-```python
-class ListBonusPaymentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        HITId: str = None,
-        AssignmentId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBonusPaymentsResponseTypeDef]:
-        pass
-```
+Arguments for `ListBonusPaymentsPaginator.paginate` method:
+
+- `HITId`: `str`
+- `AssignmentId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListBonusPaymentsPaginator.paginate` returns
+`Iterator`\[[ListBonusPaymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listbonuspaymentsresponsetypedef)\].
+
 ## ListHITsPaginator
 
 Type annotations for `boto3.client("mturk").get_paginator("list_hits")`.
@@ -79,19 +86,21 @@ def get_list_hits_paginator() -> ListHITsPaginator:
     return boto3.client("mturk").get_paginator("list_hits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
+Boto3 documentation:
+[MTurk.Paginator.ListHITs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
 
-```python
-class ListHITsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListHITsResponseTypeDef]:
-        pass
-```
+Arguments for `ListHITsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListHITsPaginator.paginate` returns
+`Iterator`\[[ListHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsresponsetypedef)\].
+
 ## ListHITsForQualificationTypePaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_hits_for_qualification_type")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_hits_for_qualification_type")`.
 
 Can be used directly:
 
@@ -102,20 +111,22 @@ def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualification
     return boto3.client("mturk").get_paginator("list_hits_for_qualification_type")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
+Boto3 documentation:
+[MTurk.Paginator.ListHITsForQualificationType](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
 
-```python
-class ListHITsForQualificationTypePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        QualificationTypeId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListHITsForQualificationTypeResponseTypeDef]:
-        pass
-```
+Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
+
+- `QualificationTypeId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListHITsForQualificationTypePaginator.paginate` returns
+`Iterator`\[[ListHITsForQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsforqualificationtyperesponsetypedef)\].
+
 ## ListQualificationRequestsPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_qualification_requests")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_qualification_requests")`.
 
 Can be used directly:
 
@@ -126,20 +137,22 @@ def get_list_qualification_requests_paginator() -> ListQualificationRequestsPagi
     return boto3.client("mturk").get_paginator("list_qualification_requests")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
+Boto3 documentation:
+[MTurk.Paginator.ListQualificationRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
 
-```python
-class ListQualificationRequestsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        QualificationTypeId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListQualificationRequestsResponseTypeDef]:
-        pass
-```
+Arguments for `ListQualificationRequestsPaginator.paginate` method:
+
+- `QualificationTypeId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListQualificationRequestsPaginator.paginate` returns
+`Iterator`\[[ListQualificationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationrequestsresponsetypedef)\].
+
 ## ListQualificationTypesPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_qualification_types")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_qualification_types")`.
 
 Can be used directly:
 
@@ -150,22 +163,24 @@ def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
     return boto3.client("mturk").get_paginator("list_qualification_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
+Boto3 documentation:
+[MTurk.Paginator.ListQualificationTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
 
-```python
-class ListQualificationTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        MustBeRequestable: bool,
-        Query: str = None,
-        MustBeOwnedByCaller: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListQualificationTypesResponseTypeDef]:
-        pass
-```
+Arguments for `ListQualificationTypesPaginator.paginate` method:
+
+- `MustBeRequestable`: `bool` *(required)*
+- `Query`: `str`
+- `MustBeOwnedByCaller`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListQualificationTypesPaginator.paginate` returns
+`Iterator`\[[ListQualificationTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationtypesresponsetypedef)\].
+
 ## ListReviewableHITsPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_reviewable_hits")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_reviewable_hits")`.
 
 Can be used directly:
 
@@ -176,21 +191,24 @@ def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
     return boto3.client("mturk").get_paginator("list_reviewable_hits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
+Boto3 documentation:
+[MTurk.Paginator.ListReviewableHITs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
 
-```python
-class ListReviewableHITsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        HITTypeId: str = None,
-        Status: ReviewableHITStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListReviewableHITsResponseTypeDef]:
-        pass
-```
+Arguments for `ListReviewableHITsPaginator.paginate` method:
+
+- `HITTypeId`: `str`
+- `Status`:
+  [ReviewableHITStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewablehitstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListReviewableHITsPaginator.paginate` returns
+`Iterator`\[[ListReviewableHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewablehitsresponsetypedef)\].
+
 ## ListWorkerBlocksPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_worker_blocks")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_worker_blocks")`.
 
 Can be used directly:
 
@@ -201,19 +219,21 @@ def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
     return boto3.client("mturk").get_paginator("list_worker_blocks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
+Boto3 documentation:
+[MTurk.Paginator.ListWorkerBlocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
 
-```python
-class ListWorkerBlocksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListWorkerBlocksResponseTypeDef]:
-        pass
-```
+Arguments for `ListWorkerBlocksPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListWorkerBlocksPaginator.paginate` returns
+`Iterator`\[[ListWorkerBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerblocksresponsetypedef)\].
+
 ## ListWorkersWithQualificationTypePaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_workers_with_qualification_type")`.
+Type annotations for
+`boto3.client("mturk").get_paginator("list_workers_with_qualification_type")`.
 
 Can be used directly:
 
@@ -224,15 +244,16 @@ def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQuali
     return boto3.client("mturk").get_paginator("list_workers_with_qualification_type")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
+Boto3 documentation:
+[MTurk.Paginator.ListWorkersWithQualificationType](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
 
-```python
-class ListWorkersWithQualificationTypePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        QualificationTypeId: str,
-        Status: QualificationStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListWorkersWithQualificationTypeResponseTypeDef]:
-        pass
-```
+Arguments for `ListWorkersWithQualificationTypePaginator.paginate` method:
+
+- `QualificationTypeId`: `str` *(required)*
+- `Status`:
+  [QualificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+
+`ListWorkersWithQualificationTypePaginator.paginate` returns
+`Iterator`\[[ListWorkersWithQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerswithqualificationtyperesponsetypedef)\].

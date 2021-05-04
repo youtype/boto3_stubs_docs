@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Appflow](./README.md) > AppflowClient
 
-Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+Auto-generated documentation for
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+type annotations stubs module
+[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [AppflowClient for boto3 Appflow module](#appflowclient-for-boto3-appflow-module)
   - [AppflowClient](#appflowclient)
@@ -43,12 +45,13 @@ def get_appflow_client() -> AppflowClient:
     return boto3.client("appflow")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
+Boto3 documentation:
+[Appflow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_appflow.client import Exceptions
@@ -56,7 +59,6 @@ from mypy_boto3_appflow.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -70,325 +72,346 @@ Exceptions:
 - `Exceptions.UnsupportedOperationException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("appflow").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate]
+Boto3 documentation:
+[Appflow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_connector_profile
 
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile]
+Boto3 documentation:
+[Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
 
-```python
-def create_connector_profile(
-    self,
-    connectorProfileName: str,
-    connectorType: ConnectorType,
-    connectionMode: ConnectionMode,
-    connectorProfileConfig: ConnectorProfileConfigTypeDef,
-    kmsArn: str = None
-) -> CreateConnectorProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorProfileName`: `str` *(required)*
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+  *(required)*
+- `connectionMode`:
+  [ConnectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectionmode)
+  *(required)*
+- `connectorProfileConfig`:
+  [ConnectorProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofileconfigtypedef)
+  *(required)*
+- `kmsArn`: `str`
+
+Returns
+[CreateConnectorProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#createconnectorprofileresponsetypedef).
 
 ### create_flow
 
 Type annotations for `boto3.client("appflow").create_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow]
+Boto3 documentation:
+[Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
 
-```python
-def create_flow(
-    self,
-    flowName: str,
-    triggerConfig: "TriggerConfigTypeDef",
-    sourceFlowConfig: "SourceFlowConfigTypeDef",
-    destinationFlowConfigList: List["DestinationFlowConfigTypeDef"],
-    tasks: List["TaskTypeDef"],
-    description: str = None,
-    kmsArn: str = None,
-    tags: Dict[str, str] = None
-) -> CreateFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+- `triggerConfig`:
+  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerconfigtypedef)
+  *(required)*
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceflowconfigtypedef)
+  *(required)*
+- `destinationFlowConfigList`:
+  `List`\[[DestinationFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationflowconfigtypedef)\]
+  *(required)*
+- `tasks`:
+  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#tasktypedef)\]
+  *(required)*
+- `description`: `str`
+- `kmsArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#createflowresponsetypedef).
 
 ### delete_connector_profile
 
 Type annotations for `boto3.client("appflow").delete_connector_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile]
+Boto3 documentation:
+[Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
 
-```python
-def delete_connector_profile(
-    self,
-    connectorProfileName: str,
-    forceDelete: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `connectorProfileName`: `str` *(required)*
+- `forceDelete`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_flow
 
 Type annotations for `boto3.client("appflow").delete_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow]
+Boto3 documentation:
+[Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
 
-```python
-def delete_flow(
-    self,
-    flowName: str,
-    forceDelete: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+- `forceDelete`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_connector_entity
 
-Type annotations for `boto3.client("appflow").describe_connector_entity` method.
+Type annotations for `boto3.client("appflow").describe_connector_entity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity]
+Boto3 documentation:
+[Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
 
-```python
-def describe_connector_entity(
-    self,
-    connectorEntityName: str,
-    connectorType: ConnectorType = None,
-    connectorProfileName: str = None
-) -> DescribeConnectorEntityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorEntityName`: `str` *(required)*
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `connectorProfileName`: `str`
+
+Returns
+[DescribeConnectorEntityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorentityresponsetypedef).
 
 ### describe_connector_profiles
 
-Type annotations for `boto3.client("appflow").describe_connector_profiles` method.
+Type annotations for `boto3.client("appflow").describe_connector_profiles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles]
+Boto3 documentation:
+[Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
 
-```python
-def describe_connector_profiles(
-    self,
-    connectorProfileNames: List[str] = None,
-    connectorType: ConnectorType = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeConnectorProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorProfileNames`: `List`\[`str`\]
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeConnectorProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorprofilesresponsetypedef).
 
 ### describe_connectors
 
 Type annotations for `boto3.client("appflow").describe_connectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors]
+Boto3 documentation:
+[Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
 
-```python
-def describe_connectors(
-    self,
-    connectorTypes: List[ConnectorType] = None,
-    nextToken: str = None
-) -> DescribeConnectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorTypes`:
+  `List`\[[ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)\]
+- `nextToken`: `str`
+
+Returns
+[DescribeConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorsresponsetypedef).
 
 ### describe_flow
 
 Type annotations for `boto3.client("appflow").describe_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow]
+Boto3 documentation:
+[Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
 
-```python
-def describe_flow(
-    self,
-    flowName: str
-) -> DescribeFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+
+Returns
+[DescribeFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeflowresponsetypedef).
 
 ### describe_flow_execution_records
 
-Type annotations for `boto3.client("appflow").describe_flow_execution_records` method.
+Type annotations for `boto3.client("appflow").describe_flow_execution_records`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records]
+Boto3 documentation:
+[Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
 
-```python
-def describe_flow_execution_records(
-    self,
-    flowName: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeFlowExecutionRecordsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeFlowExecutionRecordsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeflowexecutionrecordsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("appflow").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url]
+Boto3 documentation:
+[Appflow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_connector_entities
 
 Type annotations for `boto3.client("appflow").list_connector_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities]
+Boto3 documentation:
+[Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
 
-```python
-def list_connector_entities(
-    self,
-    connectorProfileName: str = None,
-    connectorType: ConnectorType = None,
-    entitiesPath: str = None
-) -> ListConnectorEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorProfileName`: `str`
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `entitiesPath`: `str`
+
+Returns
+[ListConnectorEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listconnectorentitiesresponsetypedef).
 
 ### list_flows
 
 Type annotations for `boto3.client("appflow").list_flows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows]
+Boto3 documentation:
+[Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
 
-```python
-def list_flows(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListFlowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListFlowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listflowsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource]
+Boto3 documentation:
+[Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_flow
 
 Type annotations for `boto3.client("appflow").start_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow]
+Boto3 documentation:
+[Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
 
-```python
-def start_flow(
-    self,
-    flowName: str
-) -> StartFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+
+Returns
+[StartFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#startflowresponsetypedef).
 
 ### stop_flow
 
 Type annotations for `boto3.client("appflow").stop_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow]
+Boto3 documentation:
+[Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
 
-```python
-def stop_flow(
-    self,
-    flowName: str
-) -> StopFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `flowName`: `str` *(required)*
+
+Returns
+[StopFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#stopflowresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("appflow").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource]
+Boto3 documentation:
+[Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("appflow").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource]
+Boto3 documentation:
+[Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_connector_profile
 
 Type annotations for `boto3.client("appflow").update_connector_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile]
+Boto3 documentation:
+[Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
 
-```python
-def update_connector_profile(
-    self,
-    connectorProfileName: str,
-    connectionMode: ConnectionMode,
-    connectorProfileConfig: ConnectorProfileConfigTypeDef
-) -> UpdateConnectorProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `connectorProfileName`: `str` *(required)*
+- `connectionMode`:
+  [ConnectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectionmode)
+  *(required)*
+- `connectorProfileConfig`:
+  [ConnectorProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofileconfigtypedef)
+  *(required)*
+
+Returns
+[UpdateConnectorProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#updateconnectorprofileresponsetypedef).
 
 ### update_flow
 
 Type annotations for `boto3.client("appflow").update_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow]
+Boto3 documentation:
+[Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
 
-```python
-def update_flow(
-    self,
-    flowName: str,
-    triggerConfig: "TriggerConfigTypeDef",
-    destinationFlowConfigList: List["DestinationFlowConfigTypeDef"],
-    tasks: List["TaskTypeDef"],
-    description: str = None,
-    sourceFlowConfig: "SourceFlowConfigTypeDef" = None
-) -> UpdateFlowResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `flowName`: `str` *(required)*
+- `triggerConfig`:
+  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerconfigtypedef)
+  *(required)*
+- `destinationFlowConfigList`:
+  `List`\[[DestinationFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationflowconfigtypedef)\]
+  *(required)*
+- `tasks`:
+  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#tasktypedef)\]
+  *(required)*
+- `description`: `str`
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceflowconfigtypedef)
 
-
+Returns
+[UpdateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#updateflowresponsetypedef).

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Synthetics](./README.md) > Structures
 
-Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
-type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+Auto-generated documentation for
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+type annotations stubs module
+[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Typed dictionaries for boto3 Synthetics module](#typed-dictionaries-for-boto3-synthetics-module)
   - [CanaryCodeInputTypeDef](#canarycodeinputtypedef)
@@ -37,18 +39,16 @@ type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/m
 from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef
 ```
 
-
 Required fields:
+
 - `Handler`: `str`
 
-
-
 Optional fields:
+
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 - `S3Version`: `str`
-- `ZipFile`: `Union[bytes, IO[bytes]]`
-
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## CanaryCodeOutputTypeDef
 
@@ -56,14 +56,12 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryCodeOutputTypeDef
 ```
 
-
 Required fields:
+
 - `SourceLocationArn`: `str`
 - `Handler`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#responsemetadata)
 
 ## CanaryLastRunTypeDef
 
@@ -71,13 +69,11 @@ Required fields:
 from mypy_boto3_synthetics.type_defs import CanaryLastRunTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CanaryName`: `str`
-- `LastRun`: `"CanaryRunTypeDef"`
 
+- `CanaryName`: `str`
+- `LastRun`:
+  [CanaryRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryruntypedef)
 
 ## CanaryRunConfigInputTypeDef
 
@@ -85,15 +81,12 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryRunConfigInputTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TimeoutInSeconds`: `int`
 - `MemoryInMB`: `int`
 - `ActiveTracing`: `bool`
-- `EnvironmentVariables`: `Dict[str, str]`
-
+- `EnvironmentVariables`: `Dict`\[`str`, `str`\]
 
 ## CanaryRunConfigOutputTypeDef
 
@@ -101,15 +94,13 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryRunConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TimeoutInSeconds`: `int`
 - `MemoryInMB`: `int`
 - `ActiveTracing`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#responsemetadata)
 
 ## CanaryRunStatusTypeDef
 
@@ -117,14 +108,13 @@ Required fields:
 from mypy_boto3_synthetics.type_defs import CanaryRunStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `CanaryRunState`
-- `StateReason`: `str`
-- `StateReasonCode`: `CanaryRunStateReasonCode`
 
+- `State`:
+  [CanaryRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/literals.html#canaryrunstate)
+- `StateReason`: `str`
+- `StateReasonCode`:
+  [CanaryRunStateReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/literals.html#canaryrunstatereasoncode)
 
 ## CanaryRunTimelineTypeDef
 
@@ -132,13 +122,10 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryRunTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Started`: `datetime`
 - `Completed`: `datetime`
-
 
 ## CanaryRunTypeDef
 
@@ -146,16 +133,15 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryRunTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `"CanaryRunStatusTypeDef"`
-- `Timeline`: `"CanaryRunTimelineTypeDef"`
+- `Status`:
+  [CanaryRunStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryrunstatustypedef)
+- `Timeline`:
+  [CanaryRunTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryruntimelinetypedef)
 - `ArtifactS3Location`: `str`
-
 
 ## CanaryScheduleInputTypeDef
 
@@ -163,15 +149,13 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryScheduleInputTypeDef
 ```
 
-
 Required fields:
+
 - `Expression`: `str`
 
-
-
 Optional fields:
-- `DurationInSeconds`: `int`
 
+- `DurationInSeconds`: `int`
 
 ## CanaryScheduleOutputTypeDef
 
@@ -179,14 +163,12 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryScheduleOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Expression`: `str`
 - `DurationInSeconds`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#responsemetadata)
 
 ## CanaryStatusTypeDef
 
@@ -194,14 +176,12 @@ Required fields:
 from mypy_boto3_synthetics.type_defs import CanaryStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `CanaryState`
+
+- `State`:
+  [CanaryState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/literals.html#canarystate)
 - `StateReason`: `str`
 - `StateReasonCode`: `Literal['INVALID_PERMISSIONS']`
-
 
 ## CanaryTimelineTypeDef
 
@@ -209,15 +189,12 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Created`: `datetime`
 - `LastModified`: `datetime`
 - `LastStarted`: `datetime`
 - `LastStopped`: `datetime`
-
 
 ## CanaryTypeDef
 
@@ -225,26 +202,29 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CanaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Code`: `"CanaryCodeOutputTypeDef"`
+- `Code`:
+  [CanaryCodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarycodeoutputtypedef)
 - `ExecutionRoleArn`: `str`
-- `Schedule`: `"CanaryScheduleOutputTypeDef"`
-- `RunConfig`: `"CanaryRunConfigOutputTypeDef"`
+- `Schedule`:
+  [CanaryScheduleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryscheduleoutputtypedef)
+- `RunConfig`:
+  [CanaryRunConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryrunconfigoutputtypedef)
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
-- `Status`: `"CanaryStatusTypeDef"`
-- `Timeline`: `"CanaryTimelineTypeDef"`
+- `Status`:
+  [CanaryStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarystatustypedef)
+- `Timeline`:
+  [CanaryTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarytimelinetypedef)
 - `ArtifactS3Location`: `str`
 - `EngineArn`: `str`
 - `RuntimeVersion`: `str`
-- `VpcConfig`: `"VpcConfigOutputTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `VpcConfig`:
+  [VpcConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#vpcconfigoutputtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateCanaryResponseTypeDef
 
@@ -252,12 +232,10 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import CreateCanaryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Canary`: `"CanaryTypeDef"`
 
+- `Canary`:
+  [CanaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarytypedef)
 
 ## DescribeCanariesLastRunResponseTypeDef
 
@@ -265,13 +243,11 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import DescribeCanariesLastRunResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CanariesLastRun`: `List["CanaryLastRunTypeDef"]`
-- `NextToken`: `str`
 
+- `CanariesLastRun`:
+  `List`\[[CanaryLastRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarylastruntypedef)\]
+- `NextToken`: `str`
 
 ## DescribeCanariesResponseTypeDef
 
@@ -279,13 +255,11 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import DescribeCanariesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Canaries`: `List["CanaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Canaries`:
+  `List`\[[CanaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeRuntimeVersionsResponseTypeDef
 
@@ -293,13 +267,11 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import DescribeRuntimeVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RuntimeVersions`: `List["RuntimeVersionTypeDef"]`
-- `NextToken`: `str`
 
+- `RuntimeVersions`:
+  `List`\[[RuntimeVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#runtimeversiontypedef)\]
+- `NextToken`: `str`
 
 ## GetCanaryResponseTypeDef
 
@@ -307,12 +279,10 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import GetCanaryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Canary`: `"CanaryTypeDef"`
 
+- `Canary`:
+  [CanaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarytypedef)
 
 ## GetCanaryRunsResponseTypeDef
 
@@ -320,13 +290,11 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import GetCanaryRunsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CanaryRuns`: `List["CanaryRunTypeDef"]`
-- `NextToken`: `str`
 
+- `CanaryRuns`:
+  `List`\[[CanaryRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryruntypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -334,12 +302,9 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ResponseMetadata
 
@@ -347,16 +312,13 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RuntimeVersionTypeDef
 
@@ -364,15 +326,12 @@ Required fields:
 from mypy_boto3_synthetics.type_defs import RuntimeVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VersionName`: `str`
 - `Description`: `str`
 - `ReleaseDate`: `datetime`
 - `DeprecationDate`: `datetime`
-
 
 ## VpcConfigInputTypeDef
 
@@ -380,13 +339,10 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import VpcConfigInputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SubnetIds`: `List[str]`
-- `SecurityGroupIds`: `List[str]`
 
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
 
 ## VpcConfigOutputTypeDef
 
@@ -394,12 +350,10 @@ Optional fields:
 from mypy_boto3_synthetics.type_defs import VpcConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `SecurityGroupIds`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#responsemetadata)

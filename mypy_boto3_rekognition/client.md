@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Rekognition](./README.md) > RekognitionClient
 
-Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+Auto-generated documentation for
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+type annotations stubs module
+[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [RekognitionClient for boto3 Rekognition module](#rekognitionclient-for-boto3-rekognition-module)
   - [RekognitionClient](#rekognitionclient)
@@ -78,12 +80,13 @@ def get_rekognition_client() -> RekognitionClient:
     return boto3.client("rekognition")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
+Boto3 documentation:
+[Rekognition.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_rekognition.client import Exceptions
@@ -91,7 +94,6 @@ from mypy_boto3_rekognition.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -115,874 +117,969 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.VideoTooLargeException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("rekognition").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate]
+Boto3 documentation:
+[Rekognition.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### compare_faces
 
 Type annotations for `boto3.client("rekognition").compare_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces]
+Boto3 documentation:
+[Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
 
-```python
-def compare_faces(
-    self,
-    SourceImage: ImageTypeDef,
-    TargetImage: ImageTypeDef,
-    SimilarityThreshold: float = None,
-    QualityFilter: QualityFilter = None
-) -> CompareFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceImage`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `TargetImage`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `SimilarityThreshold`: `float`
+- `QualityFilter`:
+  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+
+Returns
+[CompareFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparefacesresponsetypedef).
 
 ### create_collection
 
 Type annotations for `boto3.client("rekognition").create_collection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection]
+Boto3 documentation:
+[Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
 
-```python
-def create_collection(
-    self,
-    CollectionId: str,
-    Tags: Dict[str, str] = None
-) -> CreateCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createcollectionresponsetypedef).
 
 ### create_project
 
 Type annotations for `boto3.client("rekognition").create_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project]
+Boto3 documentation:
+[Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
 
-```python
-def create_project(
-    self,
-    ProjectName: str
-) -> CreateProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectName`: `str` *(required)*
+
+Returns
+[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createprojectresponsetypedef).
 
 ### create_project_version
 
-Type annotations for `boto3.client("rekognition").create_project_version` method.
+Type annotations for `boto3.client("rekognition").create_project_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version]
+Boto3 documentation:
+[Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
 
-```python
-def create_project_version(
-    self,
-    ProjectArn: str,
-    VersionName: str,
-    OutputConfig: "OutputConfigTypeDef",
-    TrainingData: "TrainingDataTypeDef",
-    TestingData: "TestingDataTypeDef",
-    Tags: Dict[str, str] = None
-) -> CreateProjectVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectArn`: `str` *(required)*
+- `VersionName`: `str` *(required)*
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#outputconfigtypedef)
+  *(required)*
+- `TrainingData`:
+  [TrainingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#trainingdatatypedef)
+  *(required)*
+- `TestingData`:
+  [TestingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#testingdatatypedef)
+  *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createprojectversionresponsetypedef).
 
 ### create_stream_processor
 
-Type annotations for `boto3.client("rekognition").create_stream_processor` method.
+Type annotations for `boto3.client("rekognition").create_stream_processor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor]
+Boto3 documentation:
+[Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
 
-```python
-def create_stream_processor(
-    self,
-    Input: "StreamProcessorInputTypeDef",
-    Output: "StreamProcessorOutputTypeDef",
-    Name: str,
-    Settings: "StreamProcessorSettingsTypeDef",
-    RoleArn: str,
-    Tags: Dict[str, str] = None
-) -> CreateStreamProcessorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Input`:
+  [StreamProcessorInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorinputtypedef)
+  *(required)*
+- `Output`:
+  [StreamProcessorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessoroutputtypedef)
+  *(required)*
+- `Name`: `str` *(required)*
+- `Settings`:
+  [StreamProcessorSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorsettingstypedef)
+  *(required)*
+- `RoleArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStreamProcessorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createstreamprocessorresponsetypedef).
 
 ### delete_collection
 
 Type annotations for `boto3.client("rekognition").delete_collection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection]
+Boto3 documentation:
+[Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
 
-```python
-def delete_collection(
-    self,
-    CollectionId: str
-) -> DeleteCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+
+Returns
+[DeleteCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deletecollectionresponsetypedef).
 
 ### delete_faces
 
 Type annotations for `boto3.client("rekognition").delete_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces]
+Boto3 documentation:
+[Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
 
-```python
-def delete_faces(
-    self,
-    CollectionId: str,
-    FaceIds: List[str]
-) -> DeleteFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `FaceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DeleteFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deletefacesresponsetypedef).
 
 ### delete_project
 
 Type annotations for `boto3.client("rekognition").delete_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project]
+Boto3 documentation:
+[Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    ProjectArn: str
-) -> DeleteProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectArn`: `str` *(required)*
+
+Returns
+[DeleteProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deleteprojectresponsetypedef).
 
 ### delete_project_version
 
-Type annotations for `boto3.client("rekognition").delete_project_version` method.
+Type annotations for `boto3.client("rekognition").delete_project_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version]
+Boto3 documentation:
+[Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
 
-```python
-def delete_project_version(
-    self,
-    ProjectVersionArn: str
-) -> DeleteProjectVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectVersionArn`: `str` *(required)*
+
+Returns
+[DeleteProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deleteprojectversionresponsetypedef).
 
 ### delete_stream_processor
 
-Type annotations for `boto3.client("rekognition").delete_stream_processor` method.
+Type annotations for `boto3.client("rekognition").delete_stream_processor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor]
+Boto3 documentation:
+[Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
 
-```python
-def delete_stream_processor(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_collection
 
 Type annotations for `boto3.client("rekognition").describe_collection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection]
+Boto3 documentation:
+[Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
 
-```python
-def describe_collection(
-    self,
-    CollectionId: str
-) -> DescribeCollectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+
+Returns
+[DescribeCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describecollectionresponsetypedef).
 
 ### describe_project_versions
 
-Type annotations for `boto3.client("rekognition").describe_project_versions` method.
+Type annotations for `boto3.client("rekognition").describe_project_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions]
+Boto3 documentation:
+[Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
 
-```python
-def describe_project_versions(
-    self,
-    ProjectArn: str,
-    VersionNames: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeProjectVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectArn`: `str` *(required)*
+- `VersionNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeProjectVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectversionsresponsetypedef).
 
 ### describe_projects
 
 Type annotations for `boto3.client("rekognition").describe_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects]
+Boto3 documentation:
+[Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
 
-```python
-def describe_projects(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeProjectsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectsresponsetypedef).
 
 ### describe_stream_processor
 
-Type annotations for `boto3.client("rekognition").describe_stream_processor` method.
+Type annotations for `boto3.client("rekognition").describe_stream_processor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor]
+Boto3 documentation:
+[Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
 
-```python
-def describe_stream_processor(
-    self,
-    Name: str
-) -> DescribeStreamProcessorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DescribeStreamProcessorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describestreamprocessorresponsetypedef).
 
 ### detect_custom_labels
 
 Type annotations for `boto3.client("rekognition").detect_custom_labels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels]
+Boto3 documentation:
+[Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
 
-```python
-def detect_custom_labels(
-    self,
-    ProjectVersionArn: str,
-    Image: ImageTypeDef,
-    MaxResults: int = None,
-    MinConfidence: float = None
-) -> DetectCustomLabelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectVersionArn`: `str` *(required)*
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `MinConfidence`: `float`
+
+Returns
+[DetectCustomLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectcustomlabelsresponsetypedef).
 
 ### detect_faces
 
 Type annotations for `boto3.client("rekognition").detect_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces]
+Boto3 documentation:
+[Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
 
-```python
-def detect_faces(
-    self,
-    Image: ImageTypeDef,
-    Attributes: List[Attribute] = None
-) -> DetectFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `Attributes`:
+  `List`\[[Attribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#attribute)\]
+
+Returns
+[DetectFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectfacesresponsetypedef).
 
 ### detect_labels
 
 Type annotations for `boto3.client("rekognition").detect_labels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels]
+Boto3 documentation:
+[Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
 
-```python
-def detect_labels(
-    self,
-    Image: ImageTypeDef,
-    MaxLabels: int = None,
-    MinConfidence: float = None
-) -> DetectLabelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `MaxLabels`: `int`
+- `MinConfidence`: `float`
+
+Returns
+[DetectLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectlabelsresponsetypedef).
 
 ### detect_moderation_labels
 
-Type annotations for `boto3.client("rekognition").detect_moderation_labels` method.
+Type annotations for `boto3.client("rekognition").detect_moderation_labels`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels]
+Boto3 documentation:
+[Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
 
-```python
-def detect_moderation_labels(
-    self,
-    Image: ImageTypeDef,
-    MinConfidence: float = None,
-    HumanLoopConfig: HumanLoopConfigTypeDef = None
-) -> DetectModerationLabelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `MinConfidence`: `float`
+- `HumanLoopConfig`:
+  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#humanloopconfigtypedef)
+
+Returns
+[DetectModerationLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectmoderationlabelsresponsetypedef).
 
 ### detect_protective_equipment
 
-Type annotations for `boto3.client("rekognition").detect_protective_equipment` method.
+Type annotations for `boto3.client("rekognition").detect_protective_equipment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment]
+Boto3 documentation:
+[Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
 
-```python
-def detect_protective_equipment(
-    self,
-    Image: ImageTypeDef,
-    SummarizationAttributes: ProtectiveEquipmentSummarizationAttributesTypeDef = None
-) -> DetectProtectiveEquipmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `SummarizationAttributes`:
+  [ProtectiveEquipmentSummarizationAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#protectiveequipmentsummarizationattributestypedef)
+
+Returns
+[DetectProtectiveEquipmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectprotectiveequipmentresponsetypedef).
 
 ### detect_text
 
 Type annotations for `boto3.client("rekognition").detect_text` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text]
+Boto3 documentation:
+[Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
 
-```python
-def detect_text(
-    self,
-    Image: ImageTypeDef,
-    Filters: DetectTextFiltersTypeDef = None
-) -> DetectTextResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `Filters`:
+  [DetectTextFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detecttextfilterstypedef)
+
+Returns
+[DetectTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detecttextresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("rekognition").generate_presigned_url` method.
+Type annotations for `boto3.client("rekognition").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url]
+Boto3 documentation:
+[Rekognition.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_celebrity_info
 
 Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info]
+Boto3 documentation:
+[Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
 
-```python
-def get_celebrity_info(
-    self,
-    Id: str
-) -> GetCelebrityInfoResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetCelebrityInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcelebrityinforesponsetypedef).
 
 ### get_celebrity_recognition
 
-Type annotations for `boto3.client("rekognition").get_celebrity_recognition` method.
+Type annotations for `boto3.client("rekognition").get_celebrity_recognition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition]
+Boto3 documentation:
+[Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
 
-```python
-def get_celebrity_recognition(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: CelebrityRecognitionSortBy = None
-) -> GetCelebrityRecognitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [CelebrityRecognitionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#celebrityrecognitionsortby)
+
+Returns
+[GetCelebrityRecognitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcelebrityrecognitionresponsetypedef).
 
 ### get_content_moderation
 
-Type annotations for `boto3.client("rekognition").get_content_moderation` method.
+Type annotations for `boto3.client("rekognition").get_content_moderation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation]
+Boto3 documentation:
+[Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
 
-```python
-def get_content_moderation(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: ContentModerationSortBy = None
-) -> GetContentModerationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [ContentModerationSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#contentmoderationsortby)
+
+Returns
+[GetContentModerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcontentmoderationresponsetypedef).
 
 ### get_face_detection
 
 Type annotations for `boto3.client("rekognition").get_face_detection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection]
+Boto3 documentation:
+[Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
 
-```python
-def get_face_detection(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetFaceDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetFaceDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getfacedetectionresponsetypedef).
 
 ### get_face_search
 
 Type annotations for `boto3.client("rekognition").get_face_search` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search]
+Boto3 documentation:
+[Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
 
-```python
-def get_face_search(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: FaceSearchSortBy = None
-) -> GetFaceSearchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [FaceSearchSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#facesearchsortby)
+
+Returns
+[GetFaceSearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getfacesearchresponsetypedef).
 
 ### get_label_detection
 
 Type annotations for `boto3.client("rekognition").get_label_detection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection]
+Boto3 documentation:
+[Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
 
-```python
-def get_label_detection(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: LabelDetectionSortBy = None
-) -> GetLabelDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [LabelDetectionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#labeldetectionsortby)
+
+Returns
+[GetLabelDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getlabeldetectionresponsetypedef).
 
 ### get_person_tracking
 
 Type annotations for `boto3.client("rekognition").get_person_tracking` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking]
+Boto3 documentation:
+[Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
 
-```python
-def get_person_tracking(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SortBy: PersonTrackingSortBy = None
-) -> GetPersonTrackingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SortBy`:
+  [PersonTrackingSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#persontrackingsortby)
+
+Returns
+[GetPersonTrackingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getpersontrackingresponsetypedef).
 
 ### get_segment_detection
 
-Type annotations for `boto3.client("rekognition").get_segment_detection` method.
+Type annotations for `boto3.client("rekognition").get_segment_detection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection]
+Boto3 documentation:
+[Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
 
-```python
-def get_segment_detection(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetSegmentDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetSegmentDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getsegmentdetectionresponsetypedef).
 
 ### get_text_detection
 
 Type annotations for `boto3.client("rekognition").get_text_detection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection]
+Boto3 documentation:
+[Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
 
-```python
-def get_text_detection(
-    self,
-    JobId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetTextDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#gettextdetectionresponsetypedef).
 
 ### index_faces
 
 Type annotations for `boto3.client("rekognition").index_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces]
+Boto3 documentation:
+[Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
 
-```python
-def index_faces(
-    self,
-    CollectionId: str,
-    Image: ImageTypeDef,
-    ExternalImageId: str = None,
-    DetectionAttributes: List[Attribute] = None,
-    MaxFaces: int = None,
-    QualityFilter: QualityFilter = None
-) -> IndexFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `ExternalImageId`: `str`
+- `DetectionAttributes`:
+  `List`\[[Attribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#attribute)\]
+- `MaxFaces`: `int`
+- `QualityFilter`:
+  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+
+Returns
+[IndexFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#indexfacesresponsetypedef).
 
 ### list_collections
 
 Type annotations for `boto3.client("rekognition").list_collections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections]
+Boto3 documentation:
+[Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
 
-```python
-def list_collections(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListCollectionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listcollectionsresponsetypedef).
 
 ### list_faces
 
 Type annotations for `boto3.client("rekognition").list_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces]
+Boto3 documentation:
+[Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
 
-```python
-def list_faces(
-    self,
-    CollectionId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listfacesresponsetypedef).
 
 ### list_stream_processors
 
-Type annotations for `boto3.client("rekognition").list_stream_processors` method.
+Type annotations for `boto3.client("rekognition").list_stream_processors`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors]
+Boto3 documentation:
+[Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
 
-```python
-def list_stream_processors(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListStreamProcessorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListStreamProcessorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#liststreamprocessorsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("rekognition").list_tags_for_resource` method.
+Type annotations for `boto3.client("rekognition").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource]
+Boto3 documentation:
+[Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### recognize_celebrities
 
-Type annotations for `boto3.client("rekognition").recognize_celebrities` method.
+Type annotations for `boto3.client("rekognition").recognize_celebrities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities]
+Boto3 documentation:
+[Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
 
-```python
-def recognize_celebrities(
-    self,
-    Image: ImageTypeDef
-) -> RecognizeCelebritiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+
+Returns
+[RecognizeCelebritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#recognizecelebritiesresponsetypedef).
 
 ### search_faces
 
 Type annotations for `boto3.client("rekognition").search_faces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces]
+Boto3 documentation:
+[Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
 
-```python
-def search_faces(
-    self,
-    CollectionId: str,
-    FaceId: str,
-    MaxFaces: int = None,
-    FaceMatchThreshold: float = None
-) -> SearchFacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `FaceId`: `str` *(required)*
+- `MaxFaces`: `int`
+- `FaceMatchThreshold`: `float`
+
+Returns
+[SearchFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#searchfacesresponsetypedef).
 
 ### search_faces_by_image
 
-Type annotations for `boto3.client("rekognition").search_faces_by_image` method.
+Type annotations for `boto3.client("rekognition").search_faces_by_image`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image]
+Boto3 documentation:
+[Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
 
-```python
-def search_faces_by_image(
-    self,
-    CollectionId: str,
-    Image: ImageTypeDef,
-    MaxFaces: int = None,
-    FaceMatchThreshold: float = None,
-    QualityFilter: QualityFilter = None
-) -> SearchFacesByImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CollectionId`: `str` *(required)*
+- `Image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
+  *(required)*
+- `MaxFaces`: `int`
+- `FaceMatchThreshold`: `float`
+- `QualityFilter`:
+  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+
+Returns
+[SearchFacesByImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#searchfacesbyimageresponsetypedef).
 
 ### start_celebrity_recognition
 
-Type annotations for `boto3.client("rekognition").start_celebrity_recognition` method.
+Type annotations for `boto3.client("rekognition").start_celebrity_recognition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition]
+Boto3 documentation:
+[Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
 
-```python
-def start_celebrity_recognition(
-    self,
-    Video: VideoTypeDef,
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None
-) -> StartCelebrityRecognitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+
+Returns
+[StartCelebrityRecognitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startcelebrityrecognitionresponsetypedef).
 
 ### start_content_moderation
 
-Type annotations for `boto3.client("rekognition").start_content_moderation` method.
+Type annotations for `boto3.client("rekognition").start_content_moderation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation]
+Boto3 documentation:
+[Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
 
-```python
-def start_content_moderation(
-    self,
-    Video: VideoTypeDef,
-    MinConfidence: float = None,
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None
-) -> StartContentModerationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `MinConfidence`: `float`
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+
+Returns
+[StartContentModerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startcontentmoderationresponsetypedef).
 
 ### start_face_detection
 
 Type annotations for `boto3.client("rekognition").start_face_detection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection]
+Boto3 documentation:
+[Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
 
-```python
-def start_face_detection(
-    self,
-    Video: VideoTypeDef,
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    FaceAttributes: FaceAttributes = None,
-    JobTag: str = None
-) -> StartFaceDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `FaceAttributes`:
+  [FaceAttributes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#faceattributes)
+- `JobTag`: `str`
+
+Returns
+[StartFaceDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startfacedetectionresponsetypedef).
 
 ### start_face_search
 
 Type annotations for `boto3.client("rekognition").start_face_search` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search]
+Boto3 documentation:
+[Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
 
-```python
-def start_face_search(
-    self,
-    Video: VideoTypeDef,
-    CollectionId: str,
-    ClientRequestToken: str = None,
-    FaceMatchThreshold: float = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None
-) -> StartFaceSearchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `CollectionId`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `FaceMatchThreshold`: `float`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+
+Returns
+[StartFaceSearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startfacesearchresponsetypedef).
 
 ### start_label_detection
 
-Type annotations for `boto3.client("rekognition").start_label_detection` method.
+Type annotations for `boto3.client("rekognition").start_label_detection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection]
+Boto3 documentation:
+[Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
 
-```python
-def start_label_detection(
-    self,
-    Video: VideoTypeDef,
-    ClientRequestToken: str = None,
-    MinConfidence: float = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None
-) -> StartLabelDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `MinConfidence`: `float`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+
+Returns
+[StartLabelDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startlabeldetectionresponsetypedef).
 
 ### start_person_tracking
 
-Type annotations for `boto3.client("rekognition").start_person_tracking` method.
+Type annotations for `boto3.client("rekognition").start_person_tracking`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking]
+Boto3 documentation:
+[Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
 
-```python
-def start_person_tracking(
-    self,
-    Video: VideoTypeDef,
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None
-) -> StartPersonTrackingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+
+Returns
+[StartPersonTrackingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startpersontrackingresponsetypedef).
 
 ### start_project_version
 
-Type annotations for `boto3.client("rekognition").start_project_version` method.
+Type annotations for `boto3.client("rekognition").start_project_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version]
+Boto3 documentation:
+[Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
 
-```python
-def start_project_version(
-    self,
-    ProjectVersionArn: str,
-    MinInferenceUnits: int
-) -> StartProjectVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectVersionArn`: `str` *(required)*
+- `MinInferenceUnits`: `int` *(required)*
+
+Returns
+[StartProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startprojectversionresponsetypedef).
 
 ### start_segment_detection
 
-Type annotations for `boto3.client("rekognition").start_segment_detection` method.
+Type annotations for `boto3.client("rekognition").start_segment_detection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection]
+Boto3 documentation:
+[Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
 
-```python
-def start_segment_detection(
-    self,
-    Video: VideoTypeDef,
-    SegmentTypes: List[SegmentType],
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None,
-    Filters: StartSegmentDetectionFiltersTypeDef = None
-) -> StartSegmentDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `SegmentTypes`:
+  `List`\[[SegmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#segmenttype)\]
+  *(required)*
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+- `Filters`:
+  [StartSegmentDetectionFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startsegmentdetectionfilterstypedef)
+
+Returns
+[StartSegmentDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startsegmentdetectionresponsetypedef).
 
 ### start_stream_processor
 
-Type annotations for `boto3.client("rekognition").start_stream_processor` method.
+Type annotations for `boto3.client("rekognition").start_stream_processor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor]
+Boto3 documentation:
+[Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
 
-```python
-def start_stream_processor(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_text_detection
 
 Type annotations for `boto3.client("rekognition").start_text_detection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection]
+Boto3 documentation:
+[Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
 
-```python
-def start_text_detection(
-    self,
-    Video: VideoTypeDef,
-    ClientRequestToken: str = None,
-    NotificationChannel: NotificationChannelTypeDef = None,
-    JobTag: str = None,
-    Filters: StartTextDetectionFiltersTypeDef = None
-) -> StartTextDetectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Video`:
+  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
+  *(required)*
+- `ClientRequestToken`: `str`
+- `NotificationChannel`:
+  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+- `JobTag`: `str`
+- `Filters`:
+  [StartTextDetectionFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#starttextdetectionfilterstypedef)
+
+Returns
+[StartTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#starttextdetectionresponsetypedef).
 
 ### stop_project_version
 
 Type annotations for `boto3.client("rekognition").stop_project_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version]
+Boto3 documentation:
+[Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
 
-```python
-def stop_project_version(
-    self,
-    ProjectVersionArn: str
-) -> StopProjectVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProjectVersionArn`: `str` *(required)*
+
+Returns
+[StopProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#stopprojectversionresponsetypedef).
 
 ### stop_stream_processor
 
-Type annotations for `boto3.client("rekognition").stop_stream_processor` method.
+Type annotations for `boto3.client("rekognition").stop_stream_processor`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor]
+Boto3 documentation:
+[Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
 
-```python
-def stop_stream_processor(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("rekognition").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource]
+Boto3 documentation:
+[Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("rekognition").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource]
+Boto3 documentation:
+[Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("rekognition").get_paginator` method with overloads.
+Type annotations for `boto3.client("rekognition").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_project_versions")` -> [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
-- `client.get_paginator("describe_projects")` -> [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
-- `client.get_paginator("list_collections")` -> [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
-- `client.get_paginator("list_faces")` -> [ListFacesPaginator](./paginators.md#listfacespaginator)
-- `client.get_paginator("list_stream_processors")` -> [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
-
-
-
+- `client.get_paginator("describe_project_versions")` ->
+  [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
+- `client.get_paginator("describe_projects")` ->
+  [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
+- `client.get_paginator("list_collections")` ->
+  [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
+- `client.get_paginator("list_faces")` ->
+  [ListFacesPaginator](./paginators.md#listfacespaginator)
+- `client.get_paginator("list_stream_processors")` ->
+  [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("rekognition").get_waiter` method with overloads.
+Type annotations for `boto3.client("rekognition").get_waiter` method with
+overloads.
 
-- `client.get_waiter("project_version_running")` -> [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
-- `client.get_waiter("project_version_training_completed")` -> [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
+- `client.get_waiter("project_version_running")` ->
+  [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
+- `client.get_waiter("project_version_training_completed")` ->
+  [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)

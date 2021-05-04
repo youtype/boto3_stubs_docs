@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ManagedBlockchain](./README.md) > Literals
 
-Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
-type annotations stubs module [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+Auto-generated documentation for
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+type annotations stubs module
+[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 - [Literals for boto3 ManagedBlockchain module](#literals-for-boto3-managedblockchain-module)
   - [Edition](#edition)

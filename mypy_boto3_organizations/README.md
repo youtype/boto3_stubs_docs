@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Organizations
 
-Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+Auto-generated documentation for
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+type annotations stubs module
+[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 ```bash
 pip install mypy-boto3-organizations
@@ -19,7 +21,8 @@ pip install mypy-boto3-organizations
 
 ## OrganizationsClient
 
-Type annotations for  `boto3.client("organizations")` as [OrganizationsClient](./client.md)
+Type annotations for `boto3.client("organizations")` as
+[OrganizationsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_organizations.client import OrganizationsClient
 ```
 
-
 OrganizationsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_handshake](./client.md#accept-handshake)
 - [attach_policy](./client.md#attach-policy)
 - [can_paginate](./client.md#can-paginate)
@@ -88,10 +89,8 @@ OrganizationsClient [exceptions](./client.md#exceptions)
 - [update_organizational_unit](./client.md#update-organizational-unit)
 - [update_policy](./client.md#update-policy)
 
-
-
-
 ### Exceptions
+
 - [AWSOrganizationsNotInUseException](./client.md#awsorganizationsnotinuseexception)
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AccessDeniedForDependencyException](./client.md#accessdeniedfordependencyexception)
@@ -138,14 +137,10 @@ OrganizationsClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnsupportedAPIEndpointException](./client.md#unsupportedapiendpointexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("organizations").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("organizations").get_paginator("...")`.
 
 Can be used directly:
 
@@ -169,11 +164,6 @@ from mypy_boto3_organizations.paginators import ListAWSServiceAccessForOrganizat
 - [ListRootsPaginator](./paginators.md#listrootspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -218,13 +208,10 @@ from mypy_boto3_organizations.literals import AccountJoinedMethod, ...
 - [PolicyTypeStatus](./literals.md#policytypestatus)
 - [TargetType](./literals.md#targettype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

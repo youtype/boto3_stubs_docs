@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MachineLearning](./README.md) > MachineLearningClient
 
-Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+Auto-generated documentation for
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+type annotations stubs module
+[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [MachineLearningClient for boto3 MachineLearning module](#machinelearningclient-for-boto3-machinelearning-module)
   - [MachineLearningClient](#machinelearningclient)
@@ -55,12 +57,13 @@ def get_machinelearning_client() -> MachineLearningClient:
     return boto3.client("machinelearning")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
+Boto3 documentation:
+[MachineLearning.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_machinelearning.client import Exceptions
@@ -68,7 +71,6 @@ from mypy_boto3_machinelearning.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -82,530 +84,574 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TagLimitExceededException`
 
-
 ## Methods
-
 
 ### add_tags
 
 Type annotations for `boto3.client("machinelearning").add_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags]
+Boto3 documentation:
+[MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
 
-```python
-def add_tags(
-    self,
-    Tags: List["TagTypeDef"],
-    ResourceId: str,
-    ResourceType: TaggableResourceType
-) -> AddTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#tagtypedef)\]
+  *(required)*
+- `ResourceId`: `str` *(required)*
+- `ResourceType`:
+  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+  *(required)*
+
+Returns
+[AddTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#addtagsoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("machinelearning").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate]
+Boto3 documentation:
+[MachineLearning.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_batch_prediction
 
-Type annotations for `boto3.client("machinelearning").create_batch_prediction` method.
+Type annotations for `boto3.client("machinelearning").create_batch_prediction`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction]
+Boto3 documentation:
+[MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
 
-```python
-def create_batch_prediction(
-    self,
-    BatchPredictionId: str,
-    MLModelId: str,
-    BatchPredictionDataSourceId: str,
-    OutputUri: str,
-    BatchPredictionName: str = None
-) -> CreateBatchPredictionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BatchPredictionId`: `str` *(required)*
+- `MLModelId`: `str` *(required)*
+- `BatchPredictionDataSourceId`: `str` *(required)*
+- `OutputUri`: `str` *(required)*
+- `BatchPredictionName`: `str`
+
+Returns
+[CreateBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createbatchpredictionoutputtypedef).
 
 ### create_data_source_from_rds
 
-Type annotations for `boto3.client("machinelearning").create_data_source_from_rds` method.
+Type annotations for
+`boto3.client("machinelearning").create_data_source_from_rds` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds]
+Boto3 documentation:
+[MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
 
-```python
-def create_data_source_from_rds(
-    self,
-    DataSourceId: str,
-    RDSData: RDSDataSpecTypeDef,
-    RoleARN: str,
-    DataSourceName: str = None,
-    ComputeStatistics: bool = None
-) -> CreateDataSourceFromRDSOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+- `RDSData`:
+  [RDSDataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsdataspectypedef)
+  *(required)*
+- `RoleARN`: `str` *(required)*
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+Returns
+[CreateDataSourceFromRDSOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefromrdsoutputtypedef).
 
 ### create_data_source_from_redshift
 
-Type annotations for `boto3.client("machinelearning").create_data_source_from_redshift` method.
+Type annotations for
+`boto3.client("machinelearning").create_data_source_from_redshift` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift]
+Boto3 documentation:
+[MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
 
-```python
-def create_data_source_from_redshift(
-    self,
-    DataSourceId: str,
-    DataSpec: RedshiftDataSpecTypeDef,
-    RoleARN: str,
-    DataSourceName: str = None,
-    ComputeStatistics: bool = None
-) -> CreateDataSourceFromRedshiftOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+- `DataSpec`:
+  [RedshiftDataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftdataspectypedef)
+  *(required)*
+- `RoleARN`: `str` *(required)*
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+Returns
+[CreateDataSourceFromRedshiftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefromredshiftoutputtypedef).
 
 ### create_data_source_from_s3
 
-Type annotations for `boto3.client("machinelearning").create_data_source_from_s3` method.
+Type annotations for
+`boto3.client("machinelearning").create_data_source_from_s3` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3]
+Boto3 documentation:
+[MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
 
-```python
-def create_data_source_from_s3(
-    self,
-    DataSourceId: str,
-    DataSpec: S3DataSpecTypeDef,
-    DataSourceName: str = None,
-    ComputeStatistics: bool = None
-) -> CreateDataSourceFromS3OutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+- `DataSpec`:
+  [S3DataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#s3dataspectypedef)
+  *(required)*
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+Returns
+[CreateDataSourceFromS3OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefroms3outputtypedef).
 
 ### create_evaluation
 
-Type annotations for `boto3.client("machinelearning").create_evaluation` method.
+Type annotations for `boto3.client("machinelearning").create_evaluation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation]
+Boto3 documentation:
+[MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
 
-```python
-def create_evaluation(
-    self,
-    EvaluationId: str,
-    MLModelId: str,
-    EvaluationDataSourceId: str,
-    EvaluationName: str = None
-) -> CreateEvaluationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EvaluationId`: `str` *(required)*
+- `MLModelId`: `str` *(required)*
+- `EvaluationDataSourceId`: `str` *(required)*
+- `EvaluationName`: `str`
+
+Returns
+[CreateEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createevaluationoutputtypedef).
 
 ### create_ml_model
 
 Type annotations for `boto3.client("machinelearning").create_ml_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model]
+Boto3 documentation:
+[MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
 
-```python
-def create_ml_model(
-    self,
-    MLModelId: str,
-    MLModelType: MLModelType,
-    TrainingDataSourceId: str,
-    MLModelName: str = None,
-    Parameters: Dict[str, str] = None,
-    Recipe: str = None,
-    RecipeUri: str = None
-) -> CreateMLModelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+- `MLModelType`:
+  [MLModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodeltype)
+  *(required)*
+- `TrainingDataSourceId`: `str` *(required)*
+- `MLModelName`: `str`
+- `Parameters`: `Dict`\[`str`, `str`\]
+- `Recipe`: `str`
+- `RecipeUri`: `str`
+
+Returns
+[CreateMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createmlmodeloutputtypedef).
 
 ### create_realtime_endpoint
 
-Type annotations for `boto3.client("machinelearning").create_realtime_endpoint` method.
+Type annotations for `boto3.client("machinelearning").create_realtime_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint]
+Boto3 documentation:
+[MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
 
-```python
-def create_realtime_endpoint(
-    self,
-    MLModelId: str
-) -> CreateRealtimeEndpointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+
+Returns
+[CreateRealtimeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createrealtimeendpointoutputtypedef).
 
 ### delete_batch_prediction
 
-Type annotations for `boto3.client("machinelearning").delete_batch_prediction` method.
+Type annotations for `boto3.client("machinelearning").delete_batch_prediction`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction]
+Boto3 documentation:
+[MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
 
-```python
-def delete_batch_prediction(
-    self,
-    BatchPredictionId: str
-) -> DeleteBatchPredictionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BatchPredictionId`: `str` *(required)*
+
+Returns
+[DeleteBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletebatchpredictionoutputtypedef).
 
 ### delete_data_source
 
-Type annotations for `boto3.client("machinelearning").delete_data_source` method.
+Type annotations for `boto3.client("machinelearning").delete_data_source`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source]
+Boto3 documentation:
+[MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
 
-```python
-def delete_data_source(
-    self,
-    DataSourceId: str
-) -> DeleteDataSourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+
+Returns
+[DeleteDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletedatasourceoutputtypedef).
 
 ### delete_evaluation
 
-Type annotations for `boto3.client("machinelearning").delete_evaluation` method.
+Type annotations for `boto3.client("machinelearning").delete_evaluation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation]
+Boto3 documentation:
+[MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
 
-```python
-def delete_evaluation(
-    self,
-    EvaluationId: str
-) -> DeleteEvaluationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EvaluationId`: `str` *(required)*
+
+Returns
+[DeleteEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deleteevaluationoutputtypedef).
 
 ### delete_ml_model
 
 Type annotations for `boto3.client("machinelearning").delete_ml_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model]
+Boto3 documentation:
+[MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
 
-```python
-def delete_ml_model(
-    self,
-    MLModelId: str
-) -> DeleteMLModelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+
+Returns
+[DeleteMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletemlmodeloutputtypedef).
 
 ### delete_realtime_endpoint
 
-Type annotations for `boto3.client("machinelearning").delete_realtime_endpoint` method.
+Type annotations for `boto3.client("machinelearning").delete_realtime_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint]
+Boto3 documentation:
+[MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
 
-```python
-def delete_realtime_endpoint(
-    self,
-    MLModelId: str
-) -> DeleteRealtimeEndpointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+
+Returns
+[DeleteRealtimeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deleterealtimeendpointoutputtypedef).
 
 ### delete_tags
 
 Type annotations for `boto3.client("machinelearning").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags]
+Boto3 documentation:
+[MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    TagKeys: List[str],
-    ResourceId: str,
-    ResourceType: TaggableResourceType
-) -> DeleteTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TagKeys`: `List`\[`str`\] *(required)*
+- `ResourceId`: `str` *(required)*
+- `ResourceType`:
+  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+  *(required)*
+
+Returns
+[DeleteTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletetagsoutputtypedef).
 
 ### describe_batch_predictions
 
-Type annotations for `boto3.client("machinelearning").describe_batch_predictions` method.
+Type annotations for
+`boto3.client("machinelearning").describe_batch_predictions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions]
+Boto3 documentation:
+[MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
 
-```python
-def describe_batch_predictions(
-    self,
-    FilterVariable: BatchPredictionFilterVariable = None,
-    EQ: str = None,
-    GT: str = None,
-    LT: str = None,
-    GE: str = None,
-    LE: str = None,
-    NE: str = None,
-    Prefix: str = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeBatchPredictionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FilterVariable`:
+  [BatchPredictionFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#batchpredictionfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeBatchPredictionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describebatchpredictionsoutputtypedef).
 
 ### describe_data_sources
 
-Type annotations for `boto3.client("machinelearning").describe_data_sources` method.
+Type annotations for `boto3.client("machinelearning").describe_data_sources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources]
+Boto3 documentation:
+[MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
 
-```python
-def describe_data_sources(
-    self,
-    FilterVariable: DataSourceFilterVariable = None,
-    EQ: str = None,
-    GT: str = None,
-    LT: str = None,
-    GE: str = None,
-    LE: str = None,
-    NE: str = None,
-    Prefix: str = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeDataSourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FilterVariable`:
+  [DataSourceFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#datasourcefiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeDataSourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describedatasourcesoutputtypedef).
 
 ### describe_evaluations
 
-Type annotations for `boto3.client("machinelearning").describe_evaluations` method.
+Type annotations for `boto3.client("machinelearning").describe_evaluations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations]
+Boto3 documentation:
+[MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
 
-```python
-def describe_evaluations(
-    self,
-    FilterVariable: EvaluationFilterVariable = None,
-    EQ: str = None,
-    GT: str = None,
-    LT: str = None,
-    GE: str = None,
-    LE: str = None,
-    NE: str = None,
-    Prefix: str = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeEvaluationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FilterVariable`:
+  [EvaluationFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#evaluationfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeEvaluationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describeevaluationsoutputtypedef).
 
 ### describe_ml_models
 
-Type annotations for `boto3.client("machinelearning").describe_ml_models` method.
+Type annotations for `boto3.client("machinelearning").describe_ml_models`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models]
+Boto3 documentation:
+[MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
 
-```python
-def describe_ml_models(
-    self,
-    FilterVariable: MLModelFilterVariable = None,
-    EQ: str = None,
-    GT: str = None,
-    LT: str = None,
-    GE: str = None,
-    LE: str = None,
-    NE: str = None,
-    Prefix: str = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeMLModelsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `FilterVariable`:
+  [MLModelFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodelfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeMLModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describemlmodelsoutputtypedef).
 
 ### describe_tags
 
 Type annotations for `boto3.client("machinelearning").describe_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags]
+Boto3 documentation:
+[MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
 
-```python
-def describe_tags(
-    self,
-    ResourceId: str,
-    ResourceType: TaggableResourceType
-) -> DescribeTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `ResourceType`:
+  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+  *(required)*
+
+Returns
+[DescribeTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describetagsoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("machinelearning").generate_presigned_url` method.
+Type annotations for `boto3.client("machinelearning").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url]
+Boto3 documentation:
+[MachineLearning.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_batch_prediction
 
-Type annotations for `boto3.client("machinelearning").get_batch_prediction` method.
+Type annotations for `boto3.client("machinelearning").get_batch_prediction`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction]
+Boto3 documentation:
+[MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
 
-```python
-def get_batch_prediction(
-    self,
-    BatchPredictionId: str
-) -> GetBatchPredictionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BatchPredictionId`: `str` *(required)*
+
+Returns
+[GetBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getbatchpredictionoutputtypedef).
 
 ### get_data_source
 
 Type annotations for `boto3.client("machinelearning").get_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source]
+Boto3 documentation:
+[MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
 
-```python
-def get_data_source(
-    self,
-    DataSourceId: str,
-    Verbose: bool = None
-) -> GetDataSourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+- `Verbose`: `bool`
+
+Returns
+[GetDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getdatasourceoutputtypedef).
 
 ### get_evaluation
 
 Type annotations for `boto3.client("machinelearning").get_evaluation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation]
+Boto3 documentation:
+[MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
 
-```python
-def get_evaluation(
-    self,
-    EvaluationId: str
-) -> GetEvaluationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EvaluationId`: `str` *(required)*
+
+Returns
+[GetEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getevaluationoutputtypedef).
 
 ### get_ml_model
 
 Type annotations for `boto3.client("machinelearning").get_ml_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model]
+Boto3 documentation:
+[MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
 
-```python
-def get_ml_model(
-    self,
-    MLModelId: str,
-    Verbose: bool = None
-) -> GetMLModelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+- `Verbose`: `bool`
+
+Returns
+[GetMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getmlmodeloutputtypedef).
 
 ### predict
 
 Type annotations for `boto3.client("machinelearning").predict` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict]
+Boto3 documentation:
+[MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict)
 
-```python
-def predict(
-    self,
-    MLModelId: str,
-    Record: Dict[str, str],
-    PredictEndpoint: str
-) -> PredictOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MLModelId`: `str` *(required)*
+- `Record`: `Dict`\[`str`, `str`\] *(required)*
+- `PredictEndpoint`: `str` *(required)*
+
+Returns
+[PredictOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#predictoutputtypedef).
 
 ### update_batch_prediction
 
-Type annotations for `boto3.client("machinelearning").update_batch_prediction` method.
+Type annotations for `boto3.client("machinelearning").update_batch_prediction`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction]
+Boto3 documentation:
+[MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
 
-```python
-def update_batch_prediction(
-    self,
-    BatchPredictionId: str,
-    BatchPredictionName: str
-) -> UpdateBatchPredictionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BatchPredictionId`: `str` *(required)*
+- `BatchPredictionName`: `str` *(required)*
+
+Returns
+[UpdateBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatebatchpredictionoutputtypedef).
 
 ### update_data_source
 
-Type annotations for `boto3.client("machinelearning").update_data_source` method.
+Type annotations for `boto3.client("machinelearning").update_data_source`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source]
+Boto3 documentation:
+[MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
 
-```python
-def update_data_source(
-    self,
-    DataSourceId: str,
-    DataSourceName: str
-) -> UpdateDataSourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DataSourceId`: `str` *(required)*
+- `DataSourceName`: `str` *(required)*
+
+Returns
+[UpdateDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatedatasourceoutputtypedef).
 
 ### update_evaluation
 
-Type annotations for `boto3.client("machinelearning").update_evaluation` method.
+Type annotations for `boto3.client("machinelearning").update_evaluation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation]
+Boto3 documentation:
+[MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
 
-```python
-def update_evaluation(
-    self,
-    EvaluationId: str,
-    EvaluationName: str
-) -> UpdateEvaluationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EvaluationId`: `str` *(required)*
+- `EvaluationName`: `str` *(required)*
+
+Returns
+[UpdateEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updateevaluationoutputtypedef).
 
 ### update_ml_model
 
 Type annotations for `boto3.client("machinelearning").update_ml_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model]
+Boto3 documentation:
+[MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
 
-```python
-def update_ml_model(
-    self,
-    MLModelId: str,
-    MLModelName: str = None,
-    ScoreThreshold: float = None
-) -> UpdateMLModelOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `MLModelId`: `str` *(required)*
+- `MLModelName`: `str`
+- `ScoreThreshold`: `float`
 
+Returns
+[UpdateMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatemlmodeloutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("machinelearning").get_paginator` method with overloads.
+Type annotations for `boto3.client("machinelearning").get_paginator` method
+with overloads.
 
-- `client.get_paginator("describe_batch_predictions")` -> [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
-- `client.get_paginator("describe_data_sources")` -> [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
-- `client.get_paginator("describe_evaluations")` -> [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
-- `client.get_paginator("describe_ml_models")` -> [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
-
-
-
+- `client.get_paginator("describe_batch_predictions")` ->
+  [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
+- `client.get_paginator("describe_data_sources")` ->
+  [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
+- `client.get_paginator("describe_evaluations")` ->
+  [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
+- `client.get_paginator("describe_ml_models")` ->
+  [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("machinelearning").get_waiter` method with overloads.
+Type annotations for `boto3.client("machinelearning").get_waiter` method with
+overloads.
 
-- `client.get_waiter("batch_prediction_available")` -> [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
-- `client.get_waiter("data_source_available")` -> [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
-- `client.get_waiter("evaluation_available")` -> [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
-- `client.get_waiter("ml_model_available")` -> [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
+- `client.get_waiter("batch_prediction_available")` ->
+  [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
+- `client.get_waiter("data_source_available")` ->
+  [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
+- `client.get_waiter("evaluation_available")` ->
+  [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
+- `client.get_waiter("ml_model_available")` ->
+  [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)

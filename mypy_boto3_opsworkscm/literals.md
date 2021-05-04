@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [OpsWorksCM](./README.md) > Literals
 
-Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+Auto-generated documentation for
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+type annotations stubs module
+[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [Literals for boto3 OpsWorksCM module](#literals-for-boto3-opsworkscm-module)
   - [BackupStatus](#backupstatus)

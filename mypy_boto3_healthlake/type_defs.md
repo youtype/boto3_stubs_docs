@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [HealthLake](./README.md) > Structures
 
-Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+Auto-generated documentation for
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+type annotations stubs module
+[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Typed dictionaries for boto3 HealthLake module](#typed-dictionaries-for-boto3-healthlake-module)
   - [CreateFHIRDatastoreResponseTypeDef](#createfhirdatastoreresponsetypedef)
@@ -28,15 +30,13 @@ type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/m
 from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: `DatastoreStatus`
+- `DatastoreStatus`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#datastorestatus)
 - `DatastoreEndpoint`: `str`
-
-
-
 
 ## DatastoreFilterTypeDef
 
@@ -44,15 +44,13 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import DatastoreFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatastoreName`: `str`
-- `DatastoreStatus`: `DatastoreStatus`
+- `DatastoreStatus`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#datastorestatus)
 - `CreatedBefore`: `datetime`
 - `CreatedAfter`: `datetime`
-
 
 ## DatastorePropertiesTypeDef
 
@@ -60,21 +58,21 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import DatastorePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: `DatastoreStatus`
+- `DatastoreStatus`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#datastorestatus)
 - `DatastoreTypeVersion`: `Literal['R4']`
 - `DatastoreEndpoint`: `str`
 
-
-
 Optional fields:
+
 - `DatastoreName`: `str`
 - `CreatedAt`: `datetime`
-- `PreloadDataConfig`: `"PreloadDataConfigTypeDef"`
-
+- `PreloadDataConfig`:
+  [PreloadDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#preloaddataconfigtypedef)
 
 ## DeleteFHIRDatastoreResponseTypeDef
 
@@ -82,15 +80,13 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: `DatastoreStatus`
+- `DatastoreStatus`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#datastorestatus)
 - `DatastoreEndpoint`: `str`
-
-
-
 
 ## DescribeFHIRDatastoreResponseTypeDef
 
@@ -98,12 +94,10 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreResponseTypeDef
 ```
 
-
 Required fields:
-- `DatastoreProperties`: `"DatastorePropertiesTypeDef"`
 
-
-
+- `DatastoreProperties`:
+  [DatastorePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#datastorepropertiestypedef)
 
 ## DescribeFHIRExportJobResponseTypeDef
 
@@ -111,12 +105,10 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import DescribeFHIRExportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ExportJobProperties`: `"ExportJobPropertiesTypeDef"`
 
-
-
+- `ExportJobProperties`:
+  [ExportJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#exportjobpropertiestypedef)
 
 ## DescribeFHIRImportJobResponseTypeDef
 
@@ -124,12 +116,10 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import DescribeFHIRImportJobResponseTypeDef
 ```
 
-
 Required fields:
-- `ImportJobProperties`: `"ImportJobPropertiesTypeDef"`
 
-
-
+- `ImportJobProperties`:
+  [ImportJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#importjobpropertiestypedef)
 
 ## ExportJobPropertiesTypeDef
 
@@ -137,22 +127,22 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import ExportJobPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `JobId`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#jobstatus)
 - `SubmitTime`: `datetime`
 - `DatastoreId`: `str`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-
-
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#outputdataconfigtypedef)
 
 Optional fields:
+
 - `JobName`: `str`
 - `EndTime`: `datetime`
 - `DataAccessRoleArn`: `str`
 - `Message`: `str`
-
 
 ## ImportJobPropertiesTypeDef
 
@@ -160,22 +150,22 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import ImportJobPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `JobId`: `str`
-- `JobStatus`: `JobStatus`
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#jobstatus)
 - `SubmitTime`: `datetime`
 - `DatastoreId`: `str`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-
-
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#inputdataconfigtypedef)
 
 Optional fields:
+
 - `JobName`: `str`
 - `EndTime`: `datetime`
 - `DataAccessRoleArn`: `str`
 - `Message`: `str`
-
 
 ## InputDataConfigTypeDef
 
@@ -183,12 +173,9 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import InputDataConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Uri`: `str`
 
+- `S3Uri`: `str`
 
 ## ListFHIRDatastoresResponseTypeDef
 
@@ -196,15 +183,14 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import ListFHIRDatastoresResponseTypeDef
 ```
 
-
 Required fields:
-- `DatastorePropertiesList`: `List["DatastorePropertiesTypeDef"]`
 
-
+- `DatastorePropertiesList`:
+  `List`\[[DatastorePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#datastorepropertiestypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## OutputDataConfigTypeDef
 
@@ -212,12 +198,9 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import OutputDataConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Uri`: `str`
 
+- `S3Uri`: `str`
 
 ## PreloadDataConfigTypeDef
 
@@ -225,12 +208,9 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import PreloadDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `PreloadDataType`: `Literal['SYNTHEA']`
-
-
-
 
 ## StartFHIRExportJobResponseTypeDef
 
@@ -238,16 +218,15 @@ Required fields:
 from mypy_boto3_healthlake.type_defs import StartFHIRExportJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobId`: `str`
-- `JobStatus`: `JobStatus`
-
-
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#jobstatus)
 
 Optional fields:
-- `DatastoreId`: `str`
 
+- `DatastoreId`: `str`
 
 ## StartFHIRImportJobResponseTypeDef
 
@@ -255,13 +234,12 @@ Optional fields:
 from mypy_boto3_healthlake.type_defs import StartFHIRImportJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobId`: `str`
-- `JobStatus`: `JobStatus`
-
-
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/literals.html#jobstatus)
 
 Optional fields:
-- `DatastoreId`: `str`
 
+- `DatastoreId`: `str`

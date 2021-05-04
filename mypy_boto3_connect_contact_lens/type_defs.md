@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ConnectContactLens](./README.md) > Structures
 
-Auto-generated documentation for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
-type annotations stubs module [mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
+Auto-generated documentation for
+[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
+type annotations stubs module
+[mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 - [Typed dictionaries for boto3 ConnectContactLens module](#typed-dictionaries-for-boto3-connectcontactlens-module)
   - [CategoriesTypeDef](#categoriestypedef)
@@ -21,13 +23,11 @@ type annotations stubs module [mypy_boto3_connect_contact_lens](https://pypi.org
 from mypy_boto3_connect_contact_lens.type_defs import CategoriesTypeDef
 ```
 
-
 Required fields:
-- `MatchedCategories`: `List[str]`
-- `MatchedDetails`: `Dict[str, "CategoryDetailsTypeDef"]`
 
-
-
+- `MatchedCategories`: `List`\[`str`\]
+- `MatchedDetails`: `Dict`\[`str`,
+  [CategoryDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#categorydetailstypedef)\]
 
 ## CategoryDetailsTypeDef
 
@@ -35,12 +35,10 @@ Required fields:
 from mypy_boto3_connect_contact_lens.type_defs import CategoryDetailsTypeDef
 ```
 
-
 Required fields:
-- `PointsOfInterest`: `List["PointOfInterestTypeDef"]`
 
-
-
+- `PointsOfInterest`:
+  `List`\[[PointOfInterestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#pointofinteresttypedef)\]
 
 ## CharacterOffsetsTypeDef
 
@@ -48,13 +46,10 @@ Required fields:
 from mypy_boto3_connect_contact_lens.type_defs import CharacterOffsetsTypeDef
 ```
 
-
 Required fields:
+
 - `BeginOffsetChar`: `int`
 - `EndOffsetChar`: `int`
-
-
-
 
 ## IssueDetectedTypeDef
 
@@ -62,12 +57,10 @@ Required fields:
 from mypy_boto3_connect_contact_lens.type_defs import IssueDetectedTypeDef
 ```
 
-
 Required fields:
-- `CharacterOffsets`: `"CharacterOffsetsTypeDef"`
 
-
-
+- `CharacterOffsets`:
+  [CharacterOffsetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#characteroffsetstypedef)
 
 ## ListRealtimeContactAnalysisSegmentsResponseTypeDef
 
@@ -75,15 +68,14 @@ Required fields:
 from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseTypeDef
 ```
 
-
 Required fields:
-- `Segments`: `List["RealtimeContactAnalysisSegmentTypeDef"]`
 
-
+- `Segments`:
+  `List`\[[RealtimeContactAnalysisSegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#realtimecontactanalysissegmenttypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## PointOfInterestTypeDef
 
@@ -91,13 +83,10 @@ Optional fields:
 from mypy_boto3_connect_contact_lens.type_defs import PointOfInterestTypeDef
 ```
 
-
 Required fields:
+
 - `BeginOffsetMillis`: `int`
 - `EndOffsetMillis`: `int`
-
-
-
 
 ## RealtimeContactAnalysisSegmentTypeDef
 
@@ -105,13 +94,12 @@ Required fields:
 from mypy_boto3_connect_contact_lens.type_defs import RealtimeContactAnalysisSegmentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Transcript`: `"TranscriptTypeDef"`
-- `Categories`: `"CategoriesTypeDef"`
 
+- `Transcript`:
+  [TranscriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#transcripttypedef)
+- `Categories`:
+  [CategoriesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#categoriestypedef)
 
 ## TranscriptTypeDef
 
@@ -119,18 +107,18 @@ Optional fields:
 from mypy_boto3_connect_contact_lens.type_defs import TranscriptTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `ParticipantId`: `str`
 - `ParticipantRole`: `str`
 - `Content`: `str`
 - `BeginOffsetMillis`: `int`
 - `EndOffsetMillis`: `int`
-- `Sentiment`: `SentimentValue`
-
-
+- `Sentiment`:
+  [SentimentValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/literals.html#sentimentvalue)
 
 Optional fields:
-- `IssuesDetected`: `List["IssueDetectedTypeDef"]`
 
+- `IssuesDetected`:
+  `List`\[[IssueDetectedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#issuedetectedtypedef)\]

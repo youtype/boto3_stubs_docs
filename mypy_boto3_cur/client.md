@@ -1,9 +1,12 @@
 # CostandUsageReportServiceClient for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) > CostandUsageReportServiceClient
+> [Index](../README.md) > [CostandUsageReportService](./README.md) >
+> CostandUsageReportServiceClient
 
-Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
+Auto-generated documentation for
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+type annotations stubs module
+[mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [CostandUsageReportServiceClient for boto3 CostandUsageReportService module](#costandusagereportserviceclient-for-boto3-costandusagereportservice-module)
   - [CostandUsageReportServiceClient](#costandusagereportserviceclient)
@@ -30,12 +33,13 @@ def get_cur_client() -> CostandUsageReportServiceClient:
     return boto3.client("cur")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
+Boto3 documentation:
+[CostandUsageReportService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cur.client import Exceptions
@@ -43,7 +47,6 @@ from mypy_boto3_cur.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -53,105 +56,100 @@ Exceptions:
 - `Exceptions.ReportLimitReachedException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cur").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate]
+Boto3 documentation:
+[CostandUsageReportService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_report_definition
 
 Type annotations for `boto3.client("cur").delete_report_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition]
+Boto3 documentation:
+[CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
 
-```python
-def delete_report_definition(
-    self,
-    ReportName: str = None
-) -> DeleteReportDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReportName`: `str`
+
+Returns
+[DeleteReportDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#deletereportdefinitionresponsetypedef).
 
 ### describe_report_definitions
 
 Type annotations for `boto3.client("cur").describe_report_definitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions]
+Boto3 documentation:
+[CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
 
-```python
-def describe_report_definitions(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeReportDefinitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeReportDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#describereportdefinitionsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("cur").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url]
+Boto3 documentation:
+[CostandUsageReportService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### modify_report_definition
 
 Type annotations for `boto3.client("cur").modify_report_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition]
+Boto3 documentation:
+[CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
 
-```python
-def modify_report_definition(
-    self,
-    ReportName: str,
-    ReportDefinition: "ReportDefinitionTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ReportName`: `str` *(required)*
+- `ReportDefinition`:
+  [ReportDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#reportdefinitiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_report_definition
 
 Type annotations for `boto3.client("cur").put_report_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition]
+Boto3 documentation:
+[CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
 
-```python
-def put_report_definition(
-    self,
-    ReportDefinition: "ReportDefinitionTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ReportDefinition`:
+  [ReportDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#reportdefinitiontypedef)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("cur").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_report_definitions")` -> [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
-
-
+- `client.get_paginator("describe_report_definitions")` ->
+  [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie](./README.md) > Paginators
 
-Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+Auto-generated documentation for
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+type annotations stubs module
+[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [Paginators for boto3 Macie module](#paginators-for-boto3-macie-module)
   - [ListMemberAccountsPaginator](#listmemberaccountspaginator)
@@ -11,7 +13,8 @@ type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-b
 
 ## ListMemberAccountsPaginator
 
-Type annotations for `boto3.client("macie").get_paginator("list_member_accounts")`.
+Type annotations for
+`boto3.client("macie").get_paginator("list_member_accounts")`.
 
 Can be used directly:
 
@@ -22,19 +25,21 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return boto3.client("macie").get_paginator("list_member_accounts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
+Boto3 documentation:
+[Macie.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
 
-```python
-class ListMemberAccountsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMemberAccountsResultTypeDef]:
-        pass
-```
+Arguments for `ListMemberAccountsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#paginatorconfigtypedef)
+
+`ListMemberAccountsPaginator.paginate` returns
+`Iterator`\[[ListMemberAccountsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#listmemberaccountsresulttypedef)\].
+
 ## ListS3ResourcesPaginator
 
-Type annotations for `boto3.client("macie").get_paginator("list_s3_resources")`.
+Type annotations for
+`boto3.client("macie").get_paginator("list_s3_resources")`.
 
 Can be used directly:
 
@@ -45,14 +50,14 @@ def get_list_s3_resources_paginator() -> ListS3ResourcesPaginator:
     return boto3.client("macie").get_paginator("list_s3_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListS3Resources)
+Boto3 documentation:
+[Macie.Paginator.ListS3Resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListS3Resources)
 
-```python
-class ListS3ResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        memberAccountId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListS3ResourcesResultTypeDef]:
-        pass
-```
+Arguments for `ListS3ResourcesPaginator.paginate` method:
+
+- `memberAccountId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#paginatorconfigtypedef)
+
+`ListS3ResourcesPaginator.paginate` returns
+`Iterator`\[[ListS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#lists3resourcesresulttypedef)\].

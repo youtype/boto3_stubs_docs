@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Connect](./README.md) > Literals
 
-Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+Auto-generated documentation for
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+type annotations stubs module
+[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
   - [Channel](#channel)

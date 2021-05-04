@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RoboMaker](./README.md) > RoboMakerClient
 
-Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+Auto-generated documentation for
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+type annotations stubs module
+[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 - [RoboMakerClient for boto3 RoboMaker module](#robomakerclient-for-boto3-robomaker-module)
   - [RoboMakerClient](#robomakerclient)
@@ -83,12 +85,13 @@ def get_robomaker_client() -> RoboMakerClient:
     return boto3.client("robomaker")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
+Boto3 documentation:
+[RoboMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_robomaker.client import Exceptions
@@ -96,7 +99,6 @@ from mypy_boto3_robomaker.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -111,943 +113,1016 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### batch_delete_worlds
 
 Type annotations for `boto3.client("robomaker").batch_delete_worlds` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds]
+Boto3 documentation:
+[RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
 
-```python
-def batch_delete_worlds(
-    self,
-    worlds: List[str]
-) -> BatchDeleteWorldsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `worlds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDeleteWorldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchdeleteworldsresponsetypedef).
 
 ### batch_describe_simulation_job
 
-Type annotations for `boto3.client("robomaker").batch_describe_simulation_job` method.
+Type annotations for `boto3.client("robomaker").batch_describe_simulation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job]
+Boto3 documentation:
+[RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
 
-```python
-def batch_describe_simulation_job(
-    self,
-    jobs: List[str]
-) -> BatchDescribeSimulationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobs`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDescribeSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchdescribesimulationjobresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("robomaker").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate]
+Boto3 documentation:
+[RoboMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_deployment_job
 
 Type annotations for `boto3.client("robomaker").cancel_deployment_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job]
+Boto3 documentation:
+[RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
 
-```python
-def cancel_deployment_job(
-    self,
-    job: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_simulation_job
 
 Type annotations for `boto3.client("robomaker").cancel_simulation_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job]
+Boto3 documentation:
+[RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
 
-```python
-def cancel_simulation_job(
-    self,
-    job: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_simulation_job_batch
 
-Type annotations for `boto3.client("robomaker").cancel_simulation_job_batch` method.
+Type annotations for `boto3.client("robomaker").cancel_simulation_job_batch`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch]
+Boto3 documentation:
+[RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
 
-```python
-def cancel_simulation_job_batch(
-    self,
-    batch: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `batch`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_world_export_job
 
-Type annotations for `boto3.client("robomaker").cancel_world_export_job` method.
+Type annotations for `boto3.client("robomaker").cancel_world_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job]
+Boto3 documentation:
+[RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
 
-```python
-def cancel_world_export_job(
-    self,
-    job: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_world_generation_job
 
-Type annotations for `boto3.client("robomaker").cancel_world_generation_job` method.
+Type annotations for `boto3.client("robomaker").cancel_world_generation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job]
+Boto3 documentation:
+[RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
 
-```python
-def cancel_world_generation_job(
-    self,
-    job: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_deployment_job
 
 Type annotations for `boto3.client("robomaker").create_deployment_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job]
+Boto3 documentation:
+[RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
 
-```python
-def create_deployment_job(
-    self,
-    clientRequestToken: str,
-    fleet: str,
-    deploymentApplicationConfigs: List["DeploymentApplicationConfigTypeDef"],
-    deploymentConfig: "DeploymentConfigTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateDeploymentJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientRequestToken`: `str` *(required)*
+- `fleet`: `str` *(required)*
+- `deploymentApplicationConfigs`:
+  `List`\[[DeploymentApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deploymentapplicationconfigtypedef)\]
+  *(required)*
+- `deploymentConfig`:
+  [DeploymentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deploymentconfigtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createdeploymentjobresponsetypedef).
 
 ### create_fleet
 
 Type annotations for `boto3.client("robomaker").create_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet]
+Boto3 documentation:
+[RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
 
-```python
-def create_fleet(
-    self,
-    name: str,
-    tags: Dict[str, str] = None
-) -> CreateFleetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createfleetresponsetypedef).
 
 ### create_robot
 
 Type annotations for `boto3.client("robomaker").create_robot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot]
+Boto3 documentation:
+[RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
 
-```python
-def create_robot(
-    self,
-    name: str,
-    architecture: Architecture,
-    greengrassGroupId: str,
-    tags: Dict[str, str] = None
-) -> CreateRobotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `architecture`:
+  [Architecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/literals.html#architecture)
+  *(required)*
+- `greengrassGroupId`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotresponsetypedef).
 
 ### create_robot_application
 
-Type annotations for `boto3.client("robomaker").create_robot_application` method.
+Type annotations for `boto3.client("robomaker").create_robot_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application]
+Boto3 documentation:
+[RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
 
-```python
-def create_robot_application(
-    self,
-    name: str,
-    sources: List[SourceConfigTypeDef],
-    robotSoftwareSuite: "RobotSoftwareSuiteTypeDef",
-    tags: Dict[str, str] = None
-) -> CreateRobotApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `sources`:
+  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+  *(required)*
+- `robotSoftwareSuite`:
+  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotapplicationresponsetypedef).
 
 ### create_robot_application_version
 
-Type annotations for `boto3.client("robomaker").create_robot_application_version` method.
+Type annotations for
+`boto3.client("robomaker").create_robot_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version]
+Boto3 documentation:
+[RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
 
-```python
-def create_robot_application_version(
-    self,
-    application: str,
-    currentRevisionId: str = None
-) -> CreateRobotApplicationVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `currentRevisionId`: `str`
+
+Returns
+[CreateRobotApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotapplicationversionresponsetypedef).
 
 ### create_simulation_application
 
-Type annotations for `boto3.client("robomaker").create_simulation_application` method.
+Type annotations for `boto3.client("robomaker").create_simulation_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application]
+Boto3 documentation:
+[RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
 
-```python
-def create_simulation_application(
-    self,
-    name: str,
-    sources: List[SourceConfigTypeDef],
-    simulationSoftwareSuite: "SimulationSoftwareSuiteTypeDef",
-    robotSoftwareSuite: "RobotSoftwareSuiteTypeDef",
-    renderingEngine: "RenderingEngineTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateSimulationApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `sources`:
+  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+  *(required)*
+- `simulationSoftwareSuite`:
+  [SimulationSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationsoftwaresuitetypedef)
+  *(required)*
+- `robotSoftwareSuite`:
+  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  *(required)*
+- `renderingEngine`:
+  [RenderingEngineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#renderingenginetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationapplicationresponsetypedef).
 
 ### create_simulation_application_version
 
-Type annotations for `boto3.client("robomaker").create_simulation_application_version` method.
+Type annotations for
+`boto3.client("robomaker").create_simulation_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version]
+Boto3 documentation:
+[RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
 
-```python
-def create_simulation_application_version(
-    self,
-    application: str,
-    currentRevisionId: str = None
-) -> CreateSimulationApplicationVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `currentRevisionId`: `str`
+
+Returns
+[CreateSimulationApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationapplicationversionresponsetypedef).
 
 ### create_simulation_job
 
 Type annotations for `boto3.client("robomaker").create_simulation_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job]
+Boto3 documentation:
+[RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
 
-```python
-def create_simulation_job(
-    self,
-    maxJobDurationInSeconds: int,
-    iamRole: str,
-    clientRequestToken: str = None,
-    outputLocation: "OutputLocationTypeDef" = None,
-    loggingConfig: "LoggingConfigTypeDef" = None,
-    failureBehavior: FailureBehavior = None,
-    robotApplications: List["RobotApplicationConfigTypeDef"] = None,
-    simulationApplications: List["SimulationApplicationConfigTypeDef"] = None,
-    dataSources: List["DataSourceConfigTypeDef"] = None,
-    tags: Dict[str, str] = None,
-    vpcConfig: "VPCConfigTypeDef" = None,
-    compute: "ComputeTypeDef" = None
-) -> CreateSimulationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxJobDurationInSeconds`: `int` *(required)*
+- `iamRole`: `str` *(required)*
+- `clientRequestToken`: `str`
+- `outputLocation`:
+  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#outputlocationtypedef)
+- `loggingConfig`:
+  [LoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#loggingconfigtypedef)
+- `failureBehavior`:
+  [FailureBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/literals.html#failurebehavior)
+- `robotApplications`:
+  `List`\[[RobotApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotapplicationconfigtypedef)\]
+- `simulationApplications`:
+  `List`\[[SimulationApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationapplicationconfigtypedef)\]
+- `dataSources`:
+  `List`\[[DataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#datasourceconfigtypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `vpcConfig`:
+  [VPCConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#vpcconfigtypedef)
+- `compute`:
+  [ComputeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#computetypedef)
+
+Returns
+[CreateSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationjobresponsetypedef).
 
 ### create_world_export_job
 
-Type annotations for `boto3.client("robomaker").create_world_export_job` method.
+Type annotations for `boto3.client("robomaker").create_world_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job]
+Boto3 documentation:
+[RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
 
-```python
-def create_world_export_job(
-    self,
-    worlds: List[str],
-    outputLocation: "OutputLocationTypeDef",
-    iamRole: str,
-    clientRequestToken: str = None,
-    tags: Dict[str, str] = None
-) -> CreateWorldExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `worlds`: `List`\[`str`\] *(required)*
+- `outputLocation`:
+  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#outputlocationtypedef)
+  *(required)*
+- `iamRole`: `str` *(required)*
+- `clientRequestToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateWorldExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldexportjobresponsetypedef).
 
 ### create_world_generation_job
 
-Type annotations for `boto3.client("robomaker").create_world_generation_job` method.
+Type annotations for `boto3.client("robomaker").create_world_generation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job]
+Boto3 documentation:
+[RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
 
-```python
-def create_world_generation_job(
-    self,
-    template: str,
-    worldCount: "WorldCountTypeDef",
-    clientRequestToken: str = None,
-    tags: Dict[str, str] = None,
-    worldTags: Dict[str, str] = None
-) -> CreateWorldGenerationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `template`: `str` *(required)*
+- `worldCount`:
+  [WorldCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#worldcounttypedef)
+  *(required)*
+- `clientRequestToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `worldTags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateWorldGenerationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldgenerationjobresponsetypedef).
 
 ### create_world_template
 
 Type annotations for `boto3.client("robomaker").create_world_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template]
+Boto3 documentation:
+[RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
 
-```python
-def create_world_template(
-    self,
-    clientRequestToken: str = None,
-    name: str = None,
-    templateBody: str = None,
-    templateLocation: TemplateLocationTypeDef = None,
-    tags: Dict[str, str] = None
-) -> CreateWorldTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientRequestToken`: `str`
+- `name`: `str`
+- `templateBody`: `str`
+- `templateLocation`:
+  [TemplateLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#templatelocationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldtemplateresponsetypedef).
 
 ### delete_fleet
 
 Type annotations for `boto3.client("robomaker").delete_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet]
+Boto3 documentation:
+[RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
 
-```python
-def delete_fleet(
-    self,
-    fleet: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `fleet`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_robot
 
 Type annotations for `boto3.client("robomaker").delete_robot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot]
+Boto3 documentation:
+[RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
 
-```python
-def delete_robot(
-    self,
-    robot: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `robot`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_robot_application
 
-Type annotations for `boto3.client("robomaker").delete_robot_application` method.
+Type annotations for `boto3.client("robomaker").delete_robot_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application]
+Boto3 documentation:
+[RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
 
-```python
-def delete_robot_application(
-    self,
-    application: str,
-    applicationVersion: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `applicationVersion`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_simulation_application
 
-Type annotations for `boto3.client("robomaker").delete_simulation_application` method.
+Type annotations for `boto3.client("robomaker").delete_simulation_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application]
+Boto3 documentation:
+[RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
 
-```python
-def delete_simulation_application(
-    self,
-    application: str,
-    applicationVersion: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `applicationVersion`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_world_template
 
 Type annotations for `boto3.client("robomaker").delete_world_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template]
+Boto3 documentation:
+[RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
 
-```python
-def delete_world_template(
-    self,
-    template: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `template`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_robot
 
 Type annotations for `boto3.client("robomaker").deregister_robot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot]
+Boto3 documentation:
+[RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
 
-```python
-def deregister_robot(
-    self,
-    fleet: str,
-    robot: str
-) -> DeregisterRobotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `fleet`: `str` *(required)*
+- `robot`: `str` *(required)*
+
+Returns
+[DeregisterRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deregisterrobotresponsetypedef).
 
 ### describe_deployment_job
 
-Type annotations for `boto3.client("robomaker").describe_deployment_job` method.
+Type annotations for `boto3.client("robomaker").describe_deployment_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job]
+Boto3 documentation:
+[RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
 
-```python
-def describe_deployment_job(
-    self,
-    job: str
-) -> DescribeDeploymentJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns
+[DescribeDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describedeploymentjobresponsetypedef).
 
 ### describe_fleet
 
 Type annotations for `boto3.client("robomaker").describe_fleet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet]
+Boto3 documentation:
+[RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
 
-```python
-def describe_fleet(
-    self,
-    fleet: str
-) -> DescribeFleetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `fleet`: `str` *(required)*
+
+Returns
+[DescribeFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describefleetresponsetypedef).
 
 ### describe_robot
 
 Type annotations for `boto3.client("robomaker").describe_robot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot]
+Boto3 documentation:
+[RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
 
-```python
-def describe_robot(
-    self,
-    robot: str
-) -> DescribeRobotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `robot`: `str` *(required)*
+
+Returns
+[DescribeRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describerobotresponsetypedef).
 
 ### describe_robot_application
 
-Type annotations for `boto3.client("robomaker").describe_robot_application` method.
+Type annotations for `boto3.client("robomaker").describe_robot_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application]
+Boto3 documentation:
+[RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
 
-```python
-def describe_robot_application(
-    self,
-    application: str,
-    applicationVersion: str = None
-) -> DescribeRobotApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `applicationVersion`: `str`
+
+Returns
+[DescribeRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describerobotapplicationresponsetypedef).
 
 ### describe_simulation_application
 
-Type annotations for `boto3.client("robomaker").describe_simulation_application` method.
+Type annotations for
+`boto3.client("robomaker").describe_simulation_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application]
+Boto3 documentation:
+[RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
 
-```python
-def describe_simulation_application(
-    self,
-    application: str,
-    applicationVersion: str = None
-) -> DescribeSimulationApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `applicationVersion`: `str`
+
+Returns
+[DescribeSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationapplicationresponsetypedef).
 
 ### describe_simulation_job
 
-Type annotations for `boto3.client("robomaker").describe_simulation_job` method.
+Type annotations for `boto3.client("robomaker").describe_simulation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job]
+Boto3 documentation:
+[RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
 
-```python
-def describe_simulation_job(
-    self,
-    job: str
-) -> DescribeSimulationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns
+[DescribeSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationjobresponsetypedef).
 
 ### describe_simulation_job_batch
 
-Type annotations for `boto3.client("robomaker").describe_simulation_job_batch` method.
+Type annotations for `boto3.client("robomaker").describe_simulation_job_batch`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch]
+Boto3 documentation:
+[RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
 
-```python
-def describe_simulation_job_batch(
-    self,
-    batch: str
-) -> DescribeSimulationJobBatchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `batch`: `str` *(required)*
+
+Returns
+[DescribeSimulationJobBatchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationjobbatchresponsetypedef).
 
 ### describe_world
 
 Type annotations for `boto3.client("robomaker").describe_world` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world]
+Boto3 documentation:
+[RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
 
-```python
-def describe_world(
-    self,
-    world: str
-) -> DescribeWorldResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `world`: `str` *(required)*
+
+Returns
+[DescribeWorldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldresponsetypedef).
 
 ### describe_world_export_job
 
-Type annotations for `boto3.client("robomaker").describe_world_export_job` method.
+Type annotations for `boto3.client("robomaker").describe_world_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job]
+Boto3 documentation:
+[RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
 
-```python
-def describe_world_export_job(
-    self,
-    job: str
-) -> DescribeWorldExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns
+[DescribeWorldExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldexportjobresponsetypedef).
 
 ### describe_world_generation_job
 
-Type annotations for `boto3.client("robomaker").describe_world_generation_job` method.
+Type annotations for `boto3.client("robomaker").describe_world_generation_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job]
+Boto3 documentation:
+[RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
 
-```python
-def describe_world_generation_job(
-    self,
-    job: str
-) -> DescribeWorldGenerationJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns
+[DescribeWorldGenerationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldgenerationjobresponsetypedef).
 
 ### describe_world_template
 
-Type annotations for `boto3.client("robomaker").describe_world_template` method.
+Type annotations for `boto3.client("robomaker").describe_world_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template]
+Boto3 documentation:
+[RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
 
-```python
-def describe_world_template(
-    self,
-    template: str
-) -> DescribeWorldTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `template`: `str` *(required)*
+
+Returns
+[DescribeWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldtemplateresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("robomaker").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url]
+Boto3 documentation:
+[RoboMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_world_template_body
 
-Type annotations for `boto3.client("robomaker").get_world_template_body` method.
+Type annotations for `boto3.client("robomaker").get_world_template_body`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body]
+Boto3 documentation:
+[RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
 
-```python
-def get_world_template_body(
-    self,
-    template: str = None,
-    generationJob: str = None
-) -> GetWorldTemplateBodyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `template`: `str`
+- `generationJob`: `str`
+
+Returns
+[GetWorldTemplateBodyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#getworldtemplatebodyresponsetypedef).
 
 ### list_deployment_jobs
 
 Type annotations for `boto3.client("robomaker").list_deployment_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs]
+Boto3 documentation:
+[RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
 
-```python
-def list_deployment_jobs(
-    self,
-    filters: List[FilterTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDeploymentJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDeploymentJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listdeploymentjobsresponsetypedef).
 
 ### list_fleets
 
 Type annotations for `boto3.client("robomaker").list_fleets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets]
+Boto3 documentation:
+[RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
 
-```python
-def list_fleets(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListFleetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listfleetsresponsetypedef).
 
 ### list_robot_applications
 
-Type annotations for `boto3.client("robomaker").list_robot_applications` method.
+Type annotations for `boto3.client("robomaker").list_robot_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications]
+Boto3 documentation:
+[RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
 
-```python
-def list_robot_applications(
-    self,
-    versionQualifier: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListRobotApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `versionQualifier`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListRobotApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotapplicationsresponsetypedef).
 
 ### list_robots
 
 Type annotations for `boto3.client("robomaker").list_robots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots]
+Boto3 documentation:
+[RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
 
-```python
-def list_robots(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListRobotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListRobotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotsresponsetypedef).
 
 ### list_simulation_applications
 
-Type annotations for `boto3.client("robomaker").list_simulation_applications` method.
+Type annotations for `boto3.client("robomaker").list_simulation_applications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications]
+Boto3 documentation:
+[RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
 
-```python
-def list_simulation_applications(
-    self,
-    versionQualifier: str = None,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListSimulationApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `versionQualifier`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListSimulationApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationapplicationsresponsetypedef).
 
 ### list_simulation_job_batches
 
-Type annotations for `boto3.client("robomaker").list_simulation_job_batches` method.
+Type annotations for `boto3.client("robomaker").list_simulation_job_batches`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches]
+Boto3 documentation:
+[RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
 
-```python
-def list_simulation_job_batches(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListSimulationJobBatchesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListSimulationJobBatchesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobbatchesresponsetypedef).
 
 ### list_simulation_jobs
 
 Type annotations for `boto3.client("robomaker").list_simulation_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs]
+Boto3 documentation:
+[RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
 
-```python
-def list_simulation_jobs(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListSimulationJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListSimulationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("robomaker").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource]
+Boto3 documentation:
+[RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_world_export_jobs
 
 Type annotations for `boto3.client("robomaker").list_world_export_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs]
+Boto3 documentation:
+[RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
 
-```python
-def list_world_export_jobs(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListWorldExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListWorldExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldexportjobsresponsetypedef).
 
 ### list_world_generation_jobs
 
-Type annotations for `boto3.client("robomaker").list_world_generation_jobs` method.
+Type annotations for `boto3.client("robomaker").list_world_generation_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs]
+Boto3 documentation:
+[RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
 
-```python
-def list_world_generation_jobs(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListWorldGenerationJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListWorldGenerationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldgenerationjobsresponsetypedef).
 
 ### list_world_templates
 
 Type annotations for `boto3.client("robomaker").list_world_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates]
+Boto3 documentation:
+[RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
 
-```python
-def list_world_templates(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListWorldTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListWorldTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldtemplatesresponsetypedef).
 
 ### list_worlds
 
 Type annotations for `boto3.client("robomaker").list_worlds` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds]
+Boto3 documentation:
+[RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
 
-```python
-def list_worlds(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    filters: List[FilterTypeDef] = None
-) -> ListWorldsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+
+Returns
+[ListWorldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldsresponsetypedef).
 
 ### register_robot
 
 Type annotations for `boto3.client("robomaker").register_robot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot]
+Boto3 documentation:
+[RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
 
-```python
-def register_robot(
-    self,
-    fleet: str,
-    robot: str
-) -> RegisterRobotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `fleet`: `str` *(required)*
+- `robot`: `str` *(required)*
+
+Returns
+[RegisterRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#registerrobotresponsetypedef).
 
 ### restart_simulation_job
 
 Type annotations for `boto3.client("robomaker").restart_simulation_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job]
+Boto3 documentation:
+[RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
 
-```python
-def restart_simulation_job(
-    self,
-    job: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `job`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_simulation_job_batch
 
-Type annotations for `boto3.client("robomaker").start_simulation_job_batch` method.
+Type annotations for `boto3.client("robomaker").start_simulation_job_batch`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch]
+Boto3 documentation:
+[RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
 
-```python
-def start_simulation_job_batch(
-    self,
-    createSimulationJobRequests: List["SimulationJobRequestTypeDef"],
-    clientRequestToken: str = None,
-    batchPolicy: "BatchPolicyTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> StartSimulationJobBatchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `createSimulationJobRequests`:
+  `List`\[[SimulationJobRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationjobrequesttypedef)\]
+  *(required)*
+- `clientRequestToken`: `str`
+- `batchPolicy`:
+  [BatchPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchpolicytypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartSimulationJobBatchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#startsimulationjobbatchresponsetypedef).
 
 ### sync_deployment_job
 
 Type annotations for `boto3.client("robomaker").sync_deployment_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job]
+Boto3 documentation:
+[RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
 
-```python
-def sync_deployment_job(
-    self,
-    clientRequestToken: str,
-    fleet: str
-) -> SyncDeploymentJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientRequestToken`: `str` *(required)*
+- `fleet`: `str` *(required)*
+
+Returns
+[SyncDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#syncdeploymentjobresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("robomaker").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource]
+Boto3 documentation:
+[RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("robomaker").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource]
+Boto3 documentation:
+[RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_robot_application
 
-Type annotations for `boto3.client("robomaker").update_robot_application` method.
+Type annotations for `boto3.client("robomaker").update_robot_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application]
+Boto3 documentation:
+[RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
 
-```python
-def update_robot_application(
-    self,
-    application: str,
-    sources: List[SourceConfigTypeDef],
-    robotSoftwareSuite: "RobotSoftwareSuiteTypeDef",
-    currentRevisionId: str = None
-) -> UpdateRobotApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `sources`:
+  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+  *(required)*
+- `robotSoftwareSuite`:
+  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  *(required)*
+- `currentRevisionId`: `str`
+
+Returns
+[UpdateRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updaterobotapplicationresponsetypedef).
 
 ### update_simulation_application
 
-Type annotations for `boto3.client("robomaker").update_simulation_application` method.
+Type annotations for `boto3.client("robomaker").update_simulation_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application]
+Boto3 documentation:
+[RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
 
-```python
-def update_simulation_application(
-    self,
-    application: str,
-    sources: List[SourceConfigTypeDef],
-    simulationSoftwareSuite: "SimulationSoftwareSuiteTypeDef",
-    robotSoftwareSuite: "RobotSoftwareSuiteTypeDef",
-    renderingEngine: "RenderingEngineTypeDef" = None,
-    currentRevisionId: str = None
-) -> UpdateSimulationApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `application`: `str` *(required)*
+- `sources`:
+  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+  *(required)*
+- `simulationSoftwareSuite`:
+  [SimulationSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationsoftwaresuitetypedef)
+  *(required)*
+- `robotSoftwareSuite`:
+  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  *(required)*
+- `renderingEngine`:
+  [RenderingEngineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#renderingenginetypedef)
+- `currentRevisionId`: `str`
+
+Returns
+[UpdateSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updatesimulationapplicationresponsetypedef).
 
 ### update_world_template
 
 Type annotations for `boto3.client("robomaker").update_world_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template]
+Boto3 documentation:
+[RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
 
-```python
-def update_world_template(
-    self,
-    template: str,
-    name: str = None,
-    templateBody: str = None,
-    templateLocation: TemplateLocationTypeDef = None
-) -> UpdateWorldTemplateResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `template`: `str` *(required)*
+- `name`: `str`
+- `templateBody`: `str`
+- `templateLocation`:
+  [TemplateLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#templatelocationtypedef)
 
+Returns
+[UpdateWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updateworldtemplateresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("robomaker").get_paginator` method with overloads.
+Type annotations for `boto3.client("robomaker").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_deployment_jobs")` -> [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
-- `client.get_paginator("list_fleets")` -> [ListFleetsPaginator](./paginators.md#listfleetspaginator)
-- `client.get_paginator("list_robot_applications")` -> [ListRobotApplicationsPaginator](./paginators.md#listrobotapplicationspaginator)
-- `client.get_paginator("list_robots")` -> [ListRobotsPaginator](./paginators.md#listrobotspaginator)
-- `client.get_paginator("list_simulation_applications")` -> [ListSimulationApplicationsPaginator](./paginators.md#listsimulationapplicationspaginator)
-- `client.get_paginator("list_simulation_job_batches")` -> [ListSimulationJobBatchesPaginator](./paginators.md#listsimulationjobbatchespaginator)
-- `client.get_paginator("list_simulation_jobs")` -> [ListSimulationJobsPaginator](./paginators.md#listsimulationjobspaginator)
-- `client.get_paginator("list_world_export_jobs")` -> [ListWorldExportJobsPaginator](./paginators.md#listworldexportjobspaginator)
-- `client.get_paginator("list_world_generation_jobs")` -> [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
-- `client.get_paginator("list_world_templates")` -> [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
-- `client.get_paginator("list_worlds")` -> [ListWorldsPaginator](./paginators.md#listworldspaginator)
-
-
+- `client.get_paginator("list_deployment_jobs")` ->
+  [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
+- `client.get_paginator("list_fleets")` ->
+  [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+- `client.get_paginator("list_robot_applications")` ->
+  [ListRobotApplicationsPaginator](./paginators.md#listrobotapplicationspaginator)
+- `client.get_paginator("list_robots")` ->
+  [ListRobotsPaginator](./paginators.md#listrobotspaginator)
+- `client.get_paginator("list_simulation_applications")` ->
+  [ListSimulationApplicationsPaginator](./paginators.md#listsimulationapplicationspaginator)
+- `client.get_paginator("list_simulation_job_batches")` ->
+  [ListSimulationJobBatchesPaginator](./paginators.md#listsimulationjobbatchespaginator)
+- `client.get_paginator("list_simulation_jobs")` ->
+  [ListSimulationJobsPaginator](./paginators.md#listsimulationjobspaginator)
+- `client.get_paginator("list_world_export_jobs")` ->
+  [ListWorldExportJobsPaginator](./paginators.md#listworldexportjobspaginator)
+- `client.get_paginator("list_world_generation_jobs")` ->
+  [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
+- `client.get_paginator("list_world_templates")` ->
+  [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
+- `client.get_paginator("list_worlds")` ->
+  [ListWorldsPaginator](./paginators.md#listworldspaginator)

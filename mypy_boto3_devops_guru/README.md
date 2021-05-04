@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DevopsGuru
 
-Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
-type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+Auto-generated documentation for
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+type annotations stubs module
+[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 ```bash
 pip install mypy-boto3-devops-guru
@@ -19,7 +21,8 @@ pip install mypy-boto3-devops-guru
 
 ## DevopsGuruClient
 
-Type annotations for  `boto3.client("devops-guru")` as [DevopsGuruClient](./client.md)
+Type annotations for `boto3.client("devops-guru")` as
+[DevopsGuruClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_devops_guru.client import DevopsGuruClient
 ```
 
-
 DevopsGuruClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_notification_channel](./client.md#add-notification-channel)
 - [can_paginate](./client.md#can-paginate)
 - [describe_account_health](./client.md#describe-account-health)
@@ -56,10 +57,8 @@ DevopsGuruClient [exceptions](./client.md#exceptions)
 - [update_resource_collection](./client.md#update-resource-collection)
 - [update_service_integration](./client.md#update-service-integration)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -69,14 +68,10 @@ DevopsGuruClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("devops-guru").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("devops-guru").get_paginator("...")`.
 
 Can be used directly:
 
@@ -92,11 +87,6 @@ from mypy_boto3_devops_guru.paginators import DescribeResourceCollectionHealthPa
 - [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
 - [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
 - [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -129,13 +119,10 @@ from mypy_boto3_devops_guru.literals import AnomalySeverity, ...
 - [SearchInsightsPaginatorName](./literals.md#searchinsightspaginatorname)
 - [UpdateResourceCollectionAction](./literals.md#updateresourcecollectionaction)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoT1ClickProjects](./README.md) > Structures
 
-Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+Auto-generated documentation for
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+type annotations stubs module
+[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
   - [DescribePlacementResponseTypeDef](#describeplacementresponsetypedef)
@@ -26,12 +28,10 @@ type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/p
 from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseTypeDef
 ```
 
-
 Required fields:
-- `placement`: `"PlacementDescriptionTypeDef"`
 
-
-
+- `placement`:
+  [PlacementDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementdescriptiontypedef)
 
 ## DescribeProjectResponseTypeDef
 
@@ -39,12 +39,10 @@ Required fields:
 from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseTypeDef
 ```
 
-
 Required fields:
-- `project`: `"ProjectDescriptionTypeDef"`
 
-
-
+- `project`:
+  [ProjectDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#projectdescriptiontypedef)
 
 ## DeviceTemplateTypeDef
 
@@ -52,13 +50,10 @@ Required fields:
 from mypy_boto3_iot1click_projects.type_defs import DeviceTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deviceType`: `str`
-- `callbackOverrides`: `Dict[str, str]`
 
+- `deviceType`: `str`
+- `callbackOverrides`: `Dict`\[`str`, `str`\]
 
 ## GetDevicesInPlacementResponseTypeDef
 
@@ -66,12 +61,9 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseTypeDef
 ```
 
-
 Required fields:
-- `devices`: `Dict[str, str]`
 
-
-
+- `devices`: `Dict`\[`str`, `str`\]
 
 ## ListPlacementsResponseTypeDef
 
@@ -79,15 +71,14 @@ Required fields:
 from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseTypeDef
 ```
 
-
 Required fields:
-- `placements`: `List["PlacementSummaryTypeDef"]`
 
-
+- `placements`:
+  `List`\[[PlacementSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListProjectsResponseTypeDef
 
@@ -95,15 +86,14 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseTypeDef
 ```
 
-
 Required fields:
-- `projects`: `List["ProjectSummaryTypeDef"]`
 
-
+- `projects`:
+  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#projectsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -111,12 +101,9 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -124,14 +111,11 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlacementDescriptionTypeDef
 
@@ -139,16 +123,13 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import PlacementDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `projectName`: `str`
 - `placementName`: `str`
-- `attributes`: `Dict[str, str]`
+- `attributes`: `Dict`\[`str`, `str`\]
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
-
-
-
 
 ## PlacementSummaryTypeDef
 
@@ -156,15 +137,12 @@ Required fields:
 from mypy_boto3_iot1click_projects.type_defs import PlacementSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `projectName`: `str`
 - `placementName`: `str`
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
-
-
-
 
 ## PlacementTemplateTypeDef
 
@@ -172,13 +150,11 @@ Required fields:
 from mypy_boto3_iot1click_projects.type_defs import PlacementTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `defaultAttributes`: `Dict[str, str]`
-- `deviceTemplates`: `Dict[str, "DeviceTemplateTypeDef"]`
 
+- `defaultAttributes`: `Dict`\[`str`, `str`\]
+- `deviceTemplates`: `Dict`\[`str`,
+  [DeviceTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#devicetemplatetypedef)\]
 
 ## ProjectDescriptionTypeDef
 
@@ -186,20 +162,19 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import ProjectDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `projectName`: `str`
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
 
-
-
 Optional fields:
+
 - `arn`: `str`
 - `description`: `str`
-- `placementTemplate`: `"PlacementTemplateTypeDef"`
-- `tags`: `Dict[str, str]`
-
+- `placementTemplate`:
+  [PlacementTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementtemplatetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ProjectSummaryTypeDef
 
@@ -207,15 +182,13 @@ Optional fields:
 from mypy_boto3_iot1click_projects.type_defs import ProjectSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `projectName`: `str`
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
 
-
-
 Optional fields:
-- `arn`: `str`
-- `tags`: `Dict[str, str]`
 
+- `arn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]

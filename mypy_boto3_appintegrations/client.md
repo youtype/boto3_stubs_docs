@@ -1,9 +1,12 @@
 # AppIntegrationsServiceClient for boto3 AppIntegrationsService module
 
-> [Index](../README.md) > [AppIntegrationsService](./README.md) > AppIntegrationsServiceClient
+> [Index](../README.md) > [AppIntegrationsService](./README.md) >
+> AppIntegrationsServiceClient
 
-Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
-type annotations stubs module [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+Auto-generated documentation for
+[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+type annotations stubs module
+[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [AppIntegrationsServiceClient for boto3 AppIntegrationsService module](#appintegrationsserviceclient-for-boto3-appintegrationsservice-module)
   - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
@@ -34,12 +37,13 @@ def get_appintegrations_client() -> AppIntegrationsServiceClient:
     return boto3.client("appintegrations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
+Boto3 documentation:
+[AppIntegrationsService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_appintegrations.client import Exceptions
@@ -47,7 +51,6 @@ from mypy_boto3_appintegrations.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -60,177 +63,176 @@ Exceptions:
 - `Exceptions.ResourceQuotaExceededException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("appintegrations").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate]
+Boto3 documentation:
+[AppIntegrationsService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_event_integration
 
-Type annotations for `boto3.client("appintegrations").create_event_integration` method.
+Type annotations for `boto3.client("appintegrations").create_event_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration]
+Boto3 documentation:
+[AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
 
-```python
-def create_event_integration(
-    self,
-    Name: str,
-    EventFilter: "EventFilterTypeDef",
-    EventBridgeBus: str,
-    Description: str = None,
-    ClientToken: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateEventIntegrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `EventFilter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventfiltertypedef)
+  *(required)*
+- `EventBridgeBus`: `str` *(required)*
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateEventIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#createeventintegrationresponsetypedef).
 
 ### delete_event_integration
 
-Type annotations for `boto3.client("appintegrations").delete_event_integration` method.
+Type annotations for `boto3.client("appintegrations").delete_event_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration]
+Boto3 documentation:
+[AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
 
-```python
-def delete_event_integration(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("appintegrations").generate_presigned_url` method.
+Type annotations for `boto3.client("appintegrations").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url]
+Boto3 documentation:
+[AppIntegrationsService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_event_integration
 
-Type annotations for `boto3.client("appintegrations").get_event_integration` method.
+Type annotations for `boto3.client("appintegrations").get_event_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration]
+Boto3 documentation:
+[AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
-```python
-def get_event_integration(
-    self,
-    Name: str
-) -> GetEventIntegrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetEventIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#geteventintegrationresponsetypedef).
 
 ### list_event_integration_associations
 
-Type annotations for `boto3.client("appintegrations").list_event_integration_associations` method.
+Type annotations for
+`boto3.client("appintegrations").list_event_integration_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations]
+Boto3 documentation:
+[AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
 
-```python
-def list_event_integration_associations(
-    self,
-    EventIntegrationName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEventIntegrationAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EventIntegrationName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEventIntegrationAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listeventintegrationassociationsresponsetypedef).
 
 ### list_event_integrations
 
-Type annotations for `boto3.client("appintegrations").list_event_integrations` method.
+Type annotations for `boto3.client("appintegrations").list_event_integrations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations]
+Boto3 documentation:
+[AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
-```python
-def list_event_integrations(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEventIntegrationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEventIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listeventintegrationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("appintegrations").list_tags_for_resource` method.
+Type annotations for `boto3.client("appintegrations").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource]
+Boto3 documentation:
+[AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("appintegrations").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource]
+Boto3 documentation:
+[AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("appintegrations").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource]
+Boto3 documentation:
+[AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_event_integration
 
-Type annotations for `boto3.client("appintegrations").update_event_integration` method.
+Type annotations for `boto3.client("appintegrations").update_event_integration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration]
+Boto3 documentation:
+[AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
 
-```python
-def update_event_integration(
-    self,
-    Name: str,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `Description`: `str`
 
-
+Returns `Dict`\[`str`, `Any`\].

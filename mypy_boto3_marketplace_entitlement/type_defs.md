@@ -1,9 +1,12 @@
 # Typed dictionaries for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Structures
+> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) >
+> Structures
 
-Auto-generated documentation for [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
-type annotations stubs module [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+Auto-generated documentation for
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+type annotations stubs module
+[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
   - [EntitlementTypeDef](#entitlementtypedef)
@@ -17,16 +20,14 @@ type annotations stubs module [mypy_boto3_marketplace_entitlement](https://pypi.
 from mypy_boto3_marketplace_entitlement.type_defs import EntitlementTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProductCode`: `str`
 - `Dimension`: `str`
 - `CustomerIdentifier`: `str`
-- `Value`: `"EntitlementValueTypeDef"`
+- `Value`:
+  [EntitlementValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#entitlementvaluetypedef)
 - `ExpirationDate`: `datetime`
-
 
 ## EntitlementValueTypeDef
 
@@ -34,15 +35,12 @@ Optional fields:
 from mypy_boto3_marketplace_entitlement.type_defs import EntitlementValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IntegerValue`: `int`
 - `DoubleValue`: `float`
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
-
 
 ## GetEntitlementsResultTypeDef
 
@@ -50,13 +48,11 @@ Optional fields:
 from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entitlements`: `List["EntitlementTypeDef"]`
-- `NextToken`: `str`
 
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#entitlementtypedef)\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -64,11 +60,8 @@ Optional fields:
 from mypy_boto3_marketplace_entitlement.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-

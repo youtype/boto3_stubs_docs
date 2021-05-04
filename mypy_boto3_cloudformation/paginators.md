@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudFormation](./README.md) > Paginators
 
-Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+Auto-generated documentation for
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+type annotations stubs module
+[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Paginators for boto3 CloudFormation module](#paginators-for-boto3-cloudformation-module)
   - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
@@ -22,7 +24,8 @@ type annotations stubs module [mypy_boto3_cloudformation](https://pypi.org/proje
 
 ## DescribeAccountLimitsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("describe_account_limits")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("describe_account_limits")`.
 
 Can be used directly:
 
@@ -33,19 +36,21 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_account_limits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
+Boto3 documentation:
+[CloudFormation.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
 
-```python
-class DescribeAccountLimitsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAccountLimitsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeAccountLimitsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAccountLimitsPaginator.paginate` returns
+`Iterator`\[[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describeaccountlimitsoutputtypedef)\].
+
 ## DescribeChangeSetPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("describe_change_set")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("describe_change_set")`.
 
 Can be used directly:
 
@@ -56,21 +61,23 @@ def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
     return boto3.client("cloudformation").get_paginator("describe_change_set")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
+Boto3 documentation:
+[CloudFormation.Paginator.DescribeChangeSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
 
-```python
-class DescribeChangeSetPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ChangeSetName: str,
-        StackName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeChangeSetOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeChangeSetPaginator.paginate` method:
+
+- `ChangeSetName`: `str` *(required)*
+- `StackName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`DescribeChangeSetPaginator.paginate` returns
+`Iterator`\[[DescribeChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describechangesetoutputtypedef)\].
+
 ## DescribeStackEventsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("describe_stack_events")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("describe_stack_events")`.
 
 Can be used directly:
 
@@ -81,20 +88,22 @@ def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stack_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
+Boto3 documentation:
+[CloudFormation.Paginator.DescribeStackEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
 
-```python
-class DescribeStackEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeStackEventsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeStackEventsPaginator.paginate` method:
+
+- `StackName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`DescribeStackEventsPaginator.paginate` returns
+`Iterator`\[[DescribeStackEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackeventsoutputtypedef)\].
+
 ## DescribeStacksPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("describe_stacks")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("describe_stacks")`.
 
 Can be used directly:
 
@@ -105,20 +114,22 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stacks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
+Boto3 documentation:
+[CloudFormation.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
 
-```python
-class DescribeStacksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeStacksOutputTypeDef]:
-        pass
-```
+Arguments for `DescribeStacksPaginator.paginate` method:
+
+- `StackName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`DescribeStacksPaginator.paginate` returns
+`Iterator`\[[DescribeStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksoutputtypedef)\].
+
 ## ListChangeSetsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_change_sets")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_change_sets")`.
 
 Can be used directly:
 
@@ -129,20 +140,22 @@ def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_change_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
+Boto3 documentation:
+[CloudFormation.Paginator.ListChangeSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
 
-```python
-class ListChangeSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListChangeSetsOutputTypeDef]:
-        pass
-```
+Arguments for `ListChangeSetsPaginator.paginate` method:
+
+- `StackName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListChangeSetsPaginator.paginate` returns
+`Iterator`\[[ListChangeSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listchangesetsoutputtypedef)\].
+
 ## ListExportsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_exports")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_exports")`.
 
 Can be used directly:
 
@@ -153,19 +166,21 @@ def get_list_exports_paginator() -> ListExportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_exports")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
+Boto3 documentation:
+[CloudFormation.Paginator.ListExports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
 
-```python
-class ListExportsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListExportsOutputTypeDef]:
-        pass
-```
+Arguments for `ListExportsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListExportsPaginator.paginate` returns
+`Iterator`\[[ListExportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listexportsoutputtypedef)\].
+
 ## ListImportsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_imports")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_imports")`.
 
 Can be used directly:
 
@@ -176,20 +191,22 @@ def get_list_imports_paginator() -> ListImportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_imports")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
+Boto3 documentation:
+[CloudFormation.Paginator.ListImports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
 
-```python
-class ListImportsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ExportName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListImportsOutputTypeDef]:
-        pass
-```
+Arguments for `ListImportsPaginator.paginate` method:
+
+- `ExportName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListImportsPaginator.paginate` returns
+`Iterator`\[[ListImportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listimportsoutputtypedef)\].
+
 ## ListStackInstancesPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_instances")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stack_instances")`.
 
 Can be used directly:
 
@@ -200,24 +217,28 @@ def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStackInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
 
-```python
-class ListStackInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackSetName: str,
-        Filters: List[StackInstanceFilterTypeDef] = None,
-        StackInstanceAccount: str = None,
-        StackInstanceRegion: str = None,
-        CallAs: CallAs = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStackInstancesOutputTypeDef]:
-        pass
-```
+Arguments for `ListStackInstancesPaginator.paginate` method:
+
+- `StackSetName`: `str` *(required)*
+- `Filters`:
+  `List`\[[StackInstanceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stackinstancefiltertypedef)\]
+- `StackInstanceAccount`: `str`
+- `StackInstanceRegion`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStackInstancesPaginator.paginate` returns
+`Iterator`\[[ListStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackinstancesoutputtypedef)\].
+
 ## ListStackResourcesPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_resources")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stack_resources")`.
 
 Can be used directly:
 
@@ -228,20 +249,22 @@ def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStackResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
 
-```python
-class ListStackResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStackResourcesOutputTypeDef]:
-        pass
-```
+Arguments for `ListStackResourcesPaginator.paginate` method:
+
+- `StackName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStackResourcesPaginator.paginate` returns
+`Iterator`\[[ListStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackresourcesoutputtypedef)\].
+
 ## ListStackSetOperationResultsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")`.
 
 Can be used directly:
 
@@ -252,22 +275,25 @@ def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationRes
     return boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStackSetOperationResults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
 
-```python
-class ListStackSetOperationResultsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackSetName: str,
-        OperationId: str,
-        CallAs: CallAs = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStackSetOperationResultsOutputTypeDef]:
-        pass
-```
+Arguments for `ListStackSetOperationResultsPaginator.paginate` method:
+
+- `StackSetName`: `str` *(required)*
+- `OperationId`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStackSetOperationResultsPaginator.paginate` returns
+`Iterator`\[[ListStackSetOperationResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationresultsoutputtypedef)\].
+
 ## ListStackSetOperationsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_set_operations")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stack_set_operations")`.
 
 Can be used directly:
 
@@ -278,21 +304,24 @@ def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator
     return boto3.client("cloudformation").get_paginator("list_stack_set_operations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStackSetOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
 
-```python
-class ListStackSetOperationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackSetName: str,
-        CallAs: CallAs = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStackSetOperationsOutputTypeDef]:
-        pass
-```
+Arguments for `ListStackSetOperationsPaginator.paginate` method:
+
+- `StackSetName`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStackSetOperationsPaginator.paginate` returns
+`Iterator`\[[ListStackSetOperationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationsoutputtypedef)\].
+
 ## ListStackSetsPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_sets")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stack_sets")`.
 
 Can be used directly:
 
@@ -303,21 +332,25 @@ def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStackSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
 
-```python
-class ListStackSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Status: StackSetStatus = None,
-        CallAs: CallAs = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStackSetsOutputTypeDef]:
-        pass
-```
+Arguments for `ListStackSetsPaginator.paginate` method:
+
+- `Status`:
+  [StackSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stacksetstatus)
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStackSetsPaginator.paginate` returns
+`Iterator`\[[ListStackSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetsoutputtypedef)\].
+
 ## ListStacksPaginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator("list_stacks")`.
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_stacks")`.
 
 Can be used directly:
 
@@ -328,14 +361,15 @@ def get_list_stacks_paginator() -> ListStacksPaginator:
     return boto3.client("cloudformation").get_paginator("list_stacks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
+Boto3 documentation:
+[CloudFormation.Paginator.ListStacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
 
-```python
-class ListStacksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StackStatusFilter: List[StackStatus] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStacksOutputTypeDef]:
-        pass
-```
+Arguments for `ListStacksPaginator.paginate` method:
+
+- `StackStatusFilter`:
+  `List`\[[StackStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackstatus)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+
+`ListStacksPaginator.paginate` returns
+`Iterator`\[[ListStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksoutputtypedef)\].

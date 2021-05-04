@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Appflow](./README.md) > Structures
 
-Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+Auto-generated documentation for
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+type annotations stubs module
+[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [Typed dictionaries for boto3 Appflow module](#typed-dictionaries-for-boto3-appflow-module)
   - [AggregationConfigTypeDef](#aggregationconfigtypedef)
@@ -116,12 +118,10 @@ type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy
 from mypy_boto3_appflow.type_defs import AggregationConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `aggregationType`: `AggregationType`
 
+- `aggregationType`:
+  [AggregationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#aggregationtype)
 
 ## AmplitudeConnectorProfileCredentialsTypeDef
 
@@ -129,13 +129,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import AmplitudeConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `apiKey`: `str`
 - `secretKey`: `str`
-
-
-
 
 ## AmplitudeSourcePropertiesTypeDef
 
@@ -143,12 +140,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import AmplitudeSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## ConnectorConfigurationTypeDef
 
@@ -156,19 +150,20 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ConnectorConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `canUseAsSource`: `bool`
 - `canUseAsDestination`: `bool`
-- `supportedDestinationConnectors`: `List[ConnectorType]`
-- `supportedSchedulingFrequencies`: `List[ScheduleFrequencyType]`
+- `supportedDestinationConnectors`:
+  `List`\[[ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)\]
+- `supportedSchedulingFrequencies`:
+  `List`\[[ScheduleFrequencyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#schedulefrequencytype)\]
 - `isPrivateLinkEnabled`: `bool`
 - `isPrivateLinkEndpointUrlRequired`: `bool`
-- `supportedTriggerTypes`: `List[TriggerType]`
-- `connectorMetadata`: `"ConnectorMetadataTypeDef"`
-
+- `supportedTriggerTypes`:
+  `List`\[[TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#triggertype)\]
+- `connectorMetadata`:
+  [ConnectorMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectormetadatatypedef)
 
 ## ConnectorEntityFieldTypeDef
 
@@ -176,19 +171,20 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorEntityFieldTypeDef
 ```
 
-
 Required fields:
+
 - `identifier`: `str`
 
-
-
 Optional fields:
-- `label`: `str`
-- `supportedFieldTypeDetails`: `"SupportedFieldTypeDetailsTypeDef"`
-- `description`: `str`
-- `sourceProperties`: `"SourceFieldPropertiesTypeDef"`
-- `destinationProperties`: `"DestinationFieldPropertiesTypeDef"`
 
+- `label`: `str`
+- `supportedFieldTypeDetails`:
+  [SupportedFieldTypeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#supportedfieldtypedetailstypedef)
+- `description`: `str`
+- `sourceProperties`:
+  [SourceFieldPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourcefieldpropertiestypedef)
+- `destinationProperties`:
+  [DestinationFieldPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationfieldpropertiestypedef)
 
 ## ConnectorEntityTypeDef
 
@@ -196,16 +192,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorEntityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
+
 - `label`: `str`
 - `hasNestedEntities`: `bool`
-
 
 ## ConnectorMetadataTypeDef
 
@@ -213,31 +207,34 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Amplitude`: `Dict[str, Any]`
-- `Datadog`: `Dict[str, Any]`
-- `Dynatrace`: `Dict[str, Any]`
-- `GoogleAnalytics`: `"GoogleAnalyticsMetadataTypeDef"`
-- `InforNexus`: `Dict[str, Any]`
-- `Marketo`: `Dict[str, Any]`
-- `Redshift`: `Dict[str, Any]`
-- `S3`: `Dict[str, Any]`
-- `Salesforce`: `"SalesforceMetadataTypeDef"`
-- `ServiceNow`: `Dict[str, Any]`
-- `Singular`: `Dict[str, Any]`
-- `Slack`: `"SlackMetadataTypeDef"`
-- `Snowflake`: `"SnowflakeMetadataTypeDef"`
-- `Trendmicro`: `Dict[str, Any]`
-- `Veeva`: `Dict[str, Any]`
-- `Zendesk`: `"ZendeskMetadataTypeDef"`
-- `EventBridge`: `Dict[str, Any]`
-- `Upsolver`: `Dict[str, Any]`
-- `CustomerProfiles`: `Dict[str, Any]`
-- `Honeycode`: `"HoneycodeMetadataTypeDef"`
 
+- `Amplitude`: `Dict`\[`str`, `Any`\]
+- `Datadog`: `Dict`\[`str`, `Any`\]
+- `Dynatrace`: `Dict`\[`str`, `Any`\]
+- `GoogleAnalytics`:
+  [GoogleAnalyticsMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#googleanalyticsmetadatatypedef)
+- `InforNexus`: `Dict`\[`str`, `Any`\]
+- `Marketo`: `Dict`\[`str`, `Any`\]
+- `Redshift`: `Dict`\[`str`, `Any`\]
+- `S3`: `Dict`\[`str`, `Any`\]
+- `Salesforce`:
+  [SalesforceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#salesforcemetadatatypedef)
+- `ServiceNow`: `Dict`\[`str`, `Any`\]
+- `Singular`: `Dict`\[`str`, `Any`\]
+- `Slack`:
+  [SlackMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#slackmetadatatypedef)
+- `Snowflake`:
+  [SnowflakeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#snowflakemetadatatypedef)
+- `Trendmicro`: `Dict`\[`str`, `Any`\]
+- `Veeva`: `Dict`\[`str`, `Any`\]
+- `Zendesk`:
+  [ZendeskMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#zendeskmetadatatypedef)
+- `EventBridge`: `Dict`\[`str`, `Any`\]
+- `Upsolver`: `Dict`\[`str`, `Any`\]
+- `CustomerProfiles`: `Dict`\[`str`, `Any`\]
+- `Honeycode`:
+  [HoneycodeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#honeycodemetadatatypedef)
 
 ## ConnectorOAuthRequestTypeDef
 
@@ -245,13 +242,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorOAuthRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `authCode`: `str`
 - `redirectUri`: `str`
-
 
 ## ConnectorOperatorTypeDef
 
@@ -259,25 +253,35 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorOperatorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Amplitude`: `Literal['BETWEEN']`
-- `Datadog`: `DatadogConnectorOperator`
-- `Dynatrace`: `DynatraceConnectorOperator`
-- `GoogleAnalytics`: `GoogleAnalyticsConnectorOperator`
-- `InforNexus`: `InforNexusConnectorOperator`
-- `Marketo`: `MarketoConnectorOperator`
-- `S3`: `S3ConnectorOperator`
-- `Salesforce`: `SalesforceConnectorOperator`
-- `ServiceNow`: `ServiceNowConnectorOperator`
-- `Singular`: `SingularConnectorOperator`
-- `Slack`: `SlackConnectorOperator`
-- `Trendmicro`: `TrendmicroConnectorOperator`
-- `Veeva`: `VeevaConnectorOperator`
-- `Zendesk`: `ZendeskConnectorOperator`
 
+- `Amplitude`: `Literal['BETWEEN']`
+- `Datadog`:
+  [DatadogConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#datadogconnectoroperator)
+- `Dynatrace`:
+  [DynatraceConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#dynatraceconnectoroperator)
+- `GoogleAnalytics`:
+  [GoogleAnalyticsConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#googleanalyticsconnectoroperator)
+- `InforNexus`:
+  [InforNexusConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#infornexusconnectoroperator)
+- `Marketo`:
+  [MarketoConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#marketoconnectoroperator)
+- `S3`:
+  [S3ConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#s3connectoroperator)
+- `Salesforce`:
+  [SalesforceConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#salesforceconnectoroperator)
+- `ServiceNow`:
+  [ServiceNowConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#servicenowconnectoroperator)
+- `Singular`:
+  [SingularConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#singularconnectoroperator)
+- `Slack`:
+  [SlackConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#slackconnectoroperator)
+- `Trendmicro`:
+  [TrendmicroConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#trendmicroconnectoroperator)
+- `Veeva`:
+  [VeevaConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#veevaconnectoroperator)
+- `Zendesk`:
+  [ZendeskConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#zendeskconnectoroperator)
 
 ## ConnectorProfileConfigTypeDef
 
@@ -285,13 +289,12 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorProfileConfigTypeDef
 ```
 
-
 Required fields:
-- `connectorProfileProperties`: `"ConnectorProfilePropertiesTypeDef"`
-- `connectorProfileCredentials`: `"ConnectorProfileCredentialsTypeDef"`
 
-
-
+- `connectorProfileProperties`:
+  [ConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofilepropertiestypedef)
+- `connectorProfileCredentials`:
+  [ConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofilecredentialstypedef)
 
 ## ConnectorProfileCredentialsTypeDef
 
@@ -299,27 +302,40 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ConnectorProfileCredentialsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Amplitude`: `"AmplitudeConnectorProfileCredentialsTypeDef"`
-- `Datadog`: `"DatadogConnectorProfileCredentialsTypeDef"`
-- `Dynatrace`: `"DynatraceConnectorProfileCredentialsTypeDef"`
-- `GoogleAnalytics`: `"GoogleAnalyticsConnectorProfileCredentialsTypeDef"`
-- `Honeycode`: `"HoneycodeConnectorProfileCredentialsTypeDef"`
-- `InforNexus`: `"InforNexusConnectorProfileCredentialsTypeDef"`
-- `Marketo`: `"MarketoConnectorProfileCredentialsTypeDef"`
-- `Redshift`: `"RedshiftConnectorProfileCredentialsTypeDef"`
-- `Salesforce`: `"SalesforceConnectorProfileCredentialsTypeDef"`
-- `ServiceNow`: `"ServiceNowConnectorProfileCredentialsTypeDef"`
-- `Singular`: `"SingularConnectorProfileCredentialsTypeDef"`
-- `Slack`: `"SlackConnectorProfileCredentialsTypeDef"`
-- `Snowflake`: `"SnowflakeConnectorProfileCredentialsTypeDef"`
-- `Trendmicro`: `"TrendmicroConnectorProfileCredentialsTypeDef"`
-- `Veeva`: `"VeevaConnectorProfileCredentialsTypeDef"`
-- `Zendesk`: `"ZendeskConnectorProfileCredentialsTypeDef"`
 
+- `Amplitude`:
+  [AmplitudeConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#amplitudeconnectorprofilecredentialstypedef)
+- `Datadog`:
+  [DatadogConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#datadogconnectorprofilecredentialstypedef)
+- `Dynatrace`:
+  [DynatraceConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#dynatraceconnectorprofilecredentialstypedef)
+- `GoogleAnalytics`:
+  [GoogleAnalyticsConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#googleanalyticsconnectorprofilecredentialstypedef)
+- `Honeycode`:
+  [HoneycodeConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#honeycodeconnectorprofilecredentialstypedef)
+- `InforNexus`:
+  [InforNexusConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#infornexusconnectorprofilecredentialstypedef)
+- `Marketo`:
+  [MarketoConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#marketoconnectorprofilecredentialstypedef)
+- `Redshift`:
+  [RedshiftConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#redshiftconnectorprofilecredentialstypedef)
+- `Salesforce`:
+  [SalesforceConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#salesforceconnectorprofilecredentialstypedef)
+- `ServiceNow`:
+  [ServiceNowConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#servicenowconnectorprofilecredentialstypedef)
+- `Singular`:
+  [SingularConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#singularconnectorprofilecredentialstypedef)
+- `Slack`:
+  [SlackConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#slackconnectorprofilecredentialstypedef)
+- `Snowflake`:
+  [SnowflakeConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#snowflakeconnectorprofilecredentialstypedef)
+- `Trendmicro`:
+  [TrendmicroConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#trendmicroconnectorprofilecredentialstypedef)
+- `Veeva`:
+  [VeevaConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#veevaconnectorprofilecredentialstypedef)
+- `Zendesk`:
+  [ZendeskConnectorProfileCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#zendeskconnectorprofilecredentialstypedef)
 
 ## ConnectorProfilePropertiesTypeDef
 
@@ -327,27 +343,35 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorProfilePropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Amplitude`: `Dict[str, Any]`
-- `Datadog`: `"DatadogConnectorProfilePropertiesTypeDef"`
-- `Dynatrace`: `"DynatraceConnectorProfilePropertiesTypeDef"`
-- `GoogleAnalytics`: `Dict[str, Any]`
-- `Honeycode`: `Dict[str, Any]`
-- `InforNexus`: `"InforNexusConnectorProfilePropertiesTypeDef"`
-- `Marketo`: `"MarketoConnectorProfilePropertiesTypeDef"`
-- `Redshift`: `"RedshiftConnectorProfilePropertiesTypeDef"`
-- `Salesforce`: `"SalesforceConnectorProfilePropertiesTypeDef"`
-- `ServiceNow`: `"ServiceNowConnectorProfilePropertiesTypeDef"`
-- `Singular`: `Dict[str, Any]`
-- `Slack`: `"SlackConnectorProfilePropertiesTypeDef"`
-- `Snowflake`: `"SnowflakeConnectorProfilePropertiesTypeDef"`
-- `Trendmicro`: `Dict[str, Any]`
-- `Veeva`: `"VeevaConnectorProfilePropertiesTypeDef"`
-- `Zendesk`: `"ZendeskConnectorProfilePropertiesTypeDef"`
 
+- `Amplitude`: `Dict`\[`str`, `Any`\]
+- `Datadog`:
+  [DatadogConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#datadogconnectorprofilepropertiestypedef)
+- `Dynatrace`:
+  [DynatraceConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#dynatraceconnectorprofilepropertiestypedef)
+- `GoogleAnalytics`: `Dict`\[`str`, `Any`\]
+- `Honeycode`: `Dict`\[`str`, `Any`\]
+- `InforNexus`:
+  [InforNexusConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#infornexusconnectorprofilepropertiestypedef)
+- `Marketo`:
+  [MarketoConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#marketoconnectorprofilepropertiestypedef)
+- `Redshift`:
+  [RedshiftConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#redshiftconnectorprofilepropertiestypedef)
+- `Salesforce`:
+  [SalesforceConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#salesforceconnectorprofilepropertiestypedef)
+- `ServiceNow`:
+  [ServiceNowConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#servicenowconnectorprofilepropertiestypedef)
+- `Singular`: `Dict`\[`str`, `Any`\]
+- `Slack`:
+  [SlackConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#slackconnectorprofilepropertiestypedef)
+- `Snowflake`:
+  [SnowflakeConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#snowflakeconnectorprofilepropertiestypedef)
+- `Trendmicro`: `Dict`\[`str`, `Any`\]
+- `Veeva`:
+  [VeevaConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#veevaconnectorprofilepropertiestypedef)
+- `Zendesk`:
+  [ZendeskConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#zendeskconnectorprofilepropertiestypedef)
 
 ## ConnectorProfileTypeDef
 
@@ -355,19 +379,19 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ConnectorProfileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `connectorProfileArn`: `str`
 - `connectorProfileName`: `str`
-- `connectorType`: `ConnectorType`
-- `connectionMode`: `ConnectionMode`
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `connectionMode`:
+  [ConnectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectionmode)
 - `credentialsArn`: `str`
-- `connectorProfileProperties`: `"ConnectorProfilePropertiesTypeDef"`
+- `connectorProfileProperties`:
+  [ConnectorProfilePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofilepropertiestypedef)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
-
 
 ## CreateConnectorProfileResponseTypeDef
 
@@ -375,12 +399,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import CreateConnectorProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `connectorProfileArn`: `str`
 
+- `connectorProfileArn`: `str`
 
 ## CreateFlowResponseTypeDef
 
@@ -388,13 +409,11 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import CreateFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flowArn`: `str`
-- `flowStatus`: `FlowStatus`
 
+- `flowArn`: `str`
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
 
 ## CustomerProfilesDestinationPropertiesTypeDef
 
@@ -402,15 +421,13 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import CustomerProfilesDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `domainName`: `str`
 
-
-
 Optional fields:
-- `objectTypeName`: `str`
 
+- `objectTypeName`: `str`
 
 ## DatadogConnectorProfileCredentialsTypeDef
 
@@ -418,13 +435,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DatadogConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `apiKey`: `str`
 - `applicationKey`: `str`
-
-
-
 
 ## DatadogConnectorProfilePropertiesTypeDef
 
@@ -432,12 +446,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DatadogConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## DatadogSourcePropertiesTypeDef
 
@@ -445,12 +456,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DatadogSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## DescribeConnectorEntityResponseTypeDef
 
@@ -458,12 +466,10 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DescribeConnectorEntityResponseTypeDef
 ```
 
-
 Required fields:
-- `connectorEntityFields`: `List["ConnectorEntityFieldTypeDef"]`
 
-
-
+- `connectorEntityFields`:
+  `List`\[[ConnectorEntityFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorentityfieldtypedef)\]
 
 ## DescribeConnectorProfilesResponseTypeDef
 
@@ -471,13 +477,11 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `connectorProfileDetails`: `List["ConnectorProfileTypeDef"]`
-- `nextToken`: `str`
 
+- `connectorProfileDetails`:
+  `List`\[[ConnectorProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofiletypedef)\]
+- `nextToken`: `str`
 
 ## DescribeConnectorsResponseTypeDef
 
@@ -485,13 +489,12 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DescribeConnectorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `connectorConfigurations`: `Dict[ConnectorType, "ConnectorConfigurationTypeDef"]`
-- `nextToken`: `str`
 
+- `connectorConfigurations`:
+  `Dict`\[[ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype),
+  [ConnectorConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorconfigurationtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeFlowExecutionRecordsResponseTypeDef
 
@@ -499,13 +502,11 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flowExecutions`: `List["ExecutionRecordTypeDef"]`
-- `nextToken`: `str`
 
+- `flowExecutions`:
+  `List`\[[ExecutionRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#executionrecordtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeFlowResponseTypeDef
 
@@ -513,27 +514,30 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DescribeFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `flowArn`: `str`
 - `description`: `str`
 - `flowName`: `str`
 - `kmsArn`: `str`
-- `flowStatus`: `FlowStatus`
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
 - `flowStatusMessage`: `str`
-- `sourceFlowConfig`: `"SourceFlowConfigTypeDef"`
-- `destinationFlowConfigList`: `List["DestinationFlowConfigTypeDef"]`
-- `lastRunExecutionDetails`: `"ExecutionDetailsTypeDef"`
-- `triggerConfig`: `"TriggerConfigTypeDef"`
-- `tasks`: `List["TaskTypeDef"]`
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceflowconfigtypedef)
+- `destinationFlowConfigList`:
+  `List`\[[DestinationFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationflowconfigtypedef)\]
+- `lastRunExecutionDetails`:
+  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#executiondetailstypedef)
+- `triggerConfig`:
+  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerconfigtypedef)
+- `tasks`:
+  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#tasktypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
 - `lastUpdatedBy`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## DestinationConnectorPropertiesTypeDef
 
@@ -541,21 +545,27 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DestinationConnectorPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Redshift`: `"RedshiftDestinationPropertiesTypeDef"`
-- `S3`: `"S3DestinationPropertiesTypeDef"`
-- `Salesforce`: `"SalesforceDestinationPropertiesTypeDef"`
-- `Snowflake`: `"SnowflakeDestinationPropertiesTypeDef"`
-- `EventBridge`: `"EventBridgeDestinationPropertiesTypeDef"`
-- `LookoutMetrics`: `Dict[str, Any]`
-- `Upsolver`: `"UpsolverDestinationPropertiesTypeDef"`
-- `Honeycode`: `"HoneycodeDestinationPropertiesTypeDef"`
-- `CustomerProfiles`: `"CustomerProfilesDestinationPropertiesTypeDef"`
-- `Zendesk`: `"ZendeskDestinationPropertiesTypeDef"`
 
+- `Redshift`:
+  [RedshiftDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#redshiftdestinationpropertiestypedef)
+- `S3`:
+  [S3DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#s3destinationpropertiestypedef)
+- `Salesforce`:
+  [SalesforceDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#salesforcedestinationpropertiestypedef)
+- `Snowflake`:
+  [SnowflakeDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#snowflakedestinationpropertiestypedef)
+- `EventBridge`:
+  [EventBridgeDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#eventbridgedestinationpropertiestypedef)
+- `LookoutMetrics`: `Dict`\[`str`, `Any`\]
+- `Upsolver`:
+  [UpsolverDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#upsolverdestinationpropertiestypedef)
+- `Honeycode`:
+  [HoneycodeDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#honeycodedestinationpropertiestypedef)
+- `CustomerProfiles`:
+  [CustomerProfilesDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#customerprofilesdestinationpropertiestypedef)
+- `Zendesk`:
+  [ZendeskDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#zendeskdestinationpropertiestypedef)
 
 ## DestinationFieldPropertiesTypeDef
 
@@ -563,16 +573,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DestinationFieldPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `isCreatable`: `bool`
 - `isNullable`: `bool`
 - `isUpsertable`: `bool`
 - `isUpdatable`: `bool`
-- `supportedWriteOperations`: `List[WriteOperationType]`
-
+- `supportedWriteOperations`:
+  `List`\[[WriteOperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#writeoperationtype)\]
 
 ## DestinationFlowConfigTypeDef
 
@@ -580,16 +588,16 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DestinationFlowConfigTypeDef
 ```
 
-
 Required fields:
-- `connectorType`: `ConnectorType`
-- `destinationConnectorProperties`: `"DestinationConnectorPropertiesTypeDef"`
 
-
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `destinationConnectorProperties`:
+  [DestinationConnectorPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationconnectorpropertiestypedef)
 
 Optional fields:
-- `connectorProfileName`: `str`
 
+- `connectorProfileName`: `str`
 
 ## DynatraceConnectorProfileCredentialsTypeDef
 
@@ -597,12 +605,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import DynatraceConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `apiToken`: `str`
-
-
-
 
 ## DynatraceConnectorProfilePropertiesTypeDef
 
@@ -610,12 +615,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DynatraceConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## DynatraceSourcePropertiesTypeDef
 
@@ -623,12 +625,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import DynatraceSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## ErrorHandlingConfigTypeDef
 
@@ -636,14 +635,11 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ErrorHandlingConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `failOnFirstDestinationError`: `bool`
 - `bucketPrefix`: `str`
 - `bucketName`: `str`
-
 
 ## ErrorInfoTypeDef
 
@@ -651,13 +647,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ErrorInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `putFailuresCount`: `int`
 - `executionMessage`: `str`
-
 
 ## EventBridgeDestinationPropertiesTypeDef
 
@@ -665,15 +658,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import EventBridgeDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 
-
-
 Optional fields:
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
 
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
 
 ## ExecutionDetailsTypeDef
 
@@ -681,14 +673,12 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ExecutionDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `mostRecentExecutionMessage`: `str`
 - `mostRecentExecutionTime`: `datetime`
-- `mostRecentExecutionStatus`: `ExecutionStatus`
-
+- `mostRecentExecutionStatus`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#executionstatus)
 
 ## ExecutionRecordTypeDef
 
@@ -696,18 +686,17 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ExecutionRecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `executionId`: `str`
-- `executionStatus`: `ExecutionStatus`
-- `executionResult`: `"ExecutionResultTypeDef"`
+- `executionStatus`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#executionstatus)
+- `executionResult`:
+  [ExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#executionresulttypedef)
 - `startedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `dataPullStartTime`: `datetime`
 - `dataPullEndTime`: `datetime`
-
 
 ## ExecutionResultTypeDef
 
@@ -715,15 +704,13 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errorInfo`: `"ErrorInfoTypeDef"`
+
+- `errorInfo`:
+  [ErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorinfotypedef)
 - `bytesProcessed`: `int`
 - `bytesWritten`: `int`
 - `recordsProcessed`: `int`
-
 
 ## FieldTypeDetailsTypeDef
 
@@ -731,16 +718,15 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import FieldTypeDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `fieldType`: `str`
-- `filterOperators`: `List[Operator]`
-
-
+- `filterOperators`:
+  `List`\[[Operator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#operator)\]
 
 Optional fields:
-- `supportedValues`: `List[str]`
 
+- `supportedValues`: `List`\[`str`\]
 
 ## FlowDefinitionTypeDef
 
@@ -748,24 +734,26 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import FlowDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `flowArn`: `str`
 - `description`: `str`
 - `flowName`: `str`
-- `flowStatus`: `FlowStatus`
-- `sourceConnectorType`: `ConnectorType`
-- `destinationConnectorType`: `ConnectorType`
-- `triggerType`: `TriggerType`
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
+- `sourceConnectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `destinationConnectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `triggerType`:
+  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#triggertype)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
 - `lastUpdatedBy`: `str`
-- `tags`: `Dict[str, str]`
-- `lastRunExecutionDetails`: `"ExecutionDetailsTypeDef"`
-
+- `tags`: `Dict`\[`str`, `str`\]
+- `lastRunExecutionDetails`:
+  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#executiondetailstypedef)
 
 ## GoogleAnalyticsConnectorProfileCredentialsTypeDef
 
@@ -773,18 +761,17 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `clientId`: `str`
 - `clientSecret`: `str`
 
-
-
 Optional fields:
+
 - `accessToken`: `str`
 - `refreshToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
-
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 
 ## GoogleAnalyticsMetadataTypeDef
 
@@ -792,12 +779,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oAuthScopes`: `List[str]`
 
+- `oAuthScopes`: `List`\[`str`\]
 
 ## GoogleAnalyticsSourcePropertiesTypeDef
 
@@ -805,12 +789,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## HoneycodeConnectorProfileCredentialsTypeDef
 
@@ -818,14 +799,12 @@ Required fields:
 from mypy_boto3_appflow.type_defs import HoneycodeConnectorProfileCredentialsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accessToken`: `str`
 - `refreshToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
-
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 
 ## HoneycodeDestinationPropertiesTypeDef
 
@@ -833,15 +812,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import HoneycodeDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 
-
-
 Optional fields:
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
 
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
 
 ## HoneycodeMetadataTypeDef
 
@@ -849,12 +827,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import HoneycodeMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oAuthScopes`: `List[str]`
 
+- `oAuthScopes`: `List`\[`str`\]
 
 ## IncrementalPullConfigTypeDef
 
@@ -862,12 +837,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import IncrementalPullConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `datetimeTypeFieldName`: `str`
 
+- `datetimeTypeFieldName`: `str`
 
 ## InforNexusConnectorProfileCredentialsTypeDef
 
@@ -875,15 +847,12 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import InforNexusConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `accessKeyId`: `str`
 - `userId`: `str`
 - `secretAccessKey`: `str`
 - `datakey`: `str`
-
-
-
 
 ## InforNexusConnectorProfilePropertiesTypeDef
 
@@ -891,12 +860,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import InforNexusConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## InforNexusSourcePropertiesTypeDef
 
@@ -904,12 +870,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import InforNexusSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## ListConnectorEntitiesResponseTypeDef
 
@@ -917,12 +880,10 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ListConnectorEntitiesResponseTypeDef
 ```
 
-
 Required fields:
-- `connectorEntityMap`: `Dict[str, List["ConnectorEntityTypeDef"]]`
 
-
-
+- `connectorEntityMap`: `Dict`\[`str`,
+  `List`\[[ConnectorEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorentitytypedef)\]\]
 
 ## ListFlowsResponseTypeDef
 
@@ -930,13 +891,11 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ListFlowsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flows`: `List["FlowDefinitionTypeDef"]`
-- `nextToken`: `str`
 
+- `flows`:
+  `List`\[[FlowDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#flowdefinitiontypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -944,12 +903,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## MarketoConnectorProfileCredentialsTypeDef
 
@@ -957,17 +913,16 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import MarketoConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `clientId`: `str`
 - `clientSecret`: `str`
 
-
-
 Optional fields:
-- `accessToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
 
+- `accessToken`: `str`
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 
 ## MarketoConnectorProfilePropertiesTypeDef
 
@@ -975,12 +930,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import MarketoConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## MarketoSourcePropertiesTypeDef
 
@@ -988,12 +940,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import MarketoSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## PrefixConfigTypeDef
 
@@ -1001,13 +950,12 @@ Required fields:
 from mypy_boto3_appflow.type_defs import PrefixConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `prefixType`: `PrefixType`
-- `prefixFormat`: `PrefixFormat`
 
+- `prefixType`:
+  [PrefixType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#prefixtype)
+- `prefixFormat`:
+  [PrefixFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#prefixformat)
 
 ## RedshiftConnectorProfileCredentialsTypeDef
 
@@ -1015,13 +963,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import RedshiftConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `username`: `str`
 - `password`: `str`
-
-
-
 
 ## RedshiftConnectorProfilePropertiesTypeDef
 
@@ -1029,17 +974,15 @@ Required fields:
 from mypy_boto3_appflow.type_defs import RedshiftConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `databaseUrl`: `str`
 - `bucketName`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `bucketPrefix`: `str`
 
+- `bucketPrefix`: `str`
 
 ## RedshiftDestinationPropertiesTypeDef
 
@@ -1047,17 +990,16 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import RedshiftDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 - `intermediateBucketName`: `str`
 
-
-
 Optional fields:
-- `bucketPrefix`: `str`
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
 
+- `bucketPrefix`: `str`
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
 
 ## S3DestinationPropertiesTypeDef
 
@@ -1065,16 +1007,15 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import S3DestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
 
-
-
 Optional fields:
-- `bucketPrefix`: `str`
-- `s3OutputFormatConfig`: `"S3OutputFormatConfigTypeDef"`
 
+- `bucketPrefix`: `str`
+- `s3OutputFormatConfig`:
+  [S3OutputFormatConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#s3outputformatconfigtypedef)
 
 ## S3OutputFormatConfigTypeDef
 
@@ -1082,14 +1023,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import S3OutputFormatConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fileType`: `FileType`
-- `prefixConfig`: `"PrefixConfigTypeDef"`
-- `aggregationConfig`: `"AggregationConfigTypeDef"`
 
+- `fileType`:
+  [FileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#filetype)
+- `prefixConfig`:
+  [PrefixConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#prefixconfigtypedef)
+- `aggregationConfig`:
+  [AggregationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#aggregationconfigtypedef)
 
 ## S3SourcePropertiesTypeDef
 
@@ -1097,15 +1038,13 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import S3SourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
 
-
-
 Optional fields:
-- `bucketPrefix`: `str`
 
+- `bucketPrefix`: `str`
 
 ## SalesforceConnectorProfileCredentialsTypeDef
 
@@ -1113,15 +1052,13 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SalesforceConnectorProfileCredentialsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `accessToken`: `str`
 - `refreshToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 - `clientCredentialsArn`: `str`
-
 
 ## SalesforceConnectorProfilePropertiesTypeDef
 
@@ -1129,13 +1066,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SalesforceConnectorProfilePropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `instanceUrl`: `str`
 - `isSandboxEnvironment`: `bool`
-
 
 ## SalesforceDestinationPropertiesTypeDef
 
@@ -1143,17 +1077,17 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SalesforceDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 
-
-
 Optional fields:
-- `idFieldNames`: `List[str]`
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
-- `writeOperationType`: `WriteOperationType`
 
+- `idFieldNames`: `List`\[`str`\]
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
+- `writeOperationType`:
+  [WriteOperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#writeoperationtype)
 
 ## SalesforceMetadataTypeDef
 
@@ -1161,12 +1095,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SalesforceMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oAuthScopes`: `List[str]`
 
+- `oAuthScopes`: `List`\[`str`\]
 
 ## SalesforceSourcePropertiesTypeDef
 
@@ -1174,16 +1105,14 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SalesforceSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 
-
-
 Optional fields:
+
 - `enableDynamicFieldUpdate`: `bool`
 - `includeDeletedRecords`: `bool`
-
 
 ## ScheduledTriggerPropertiesTypeDef
 
@@ -1191,20 +1120,19 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ScheduledTriggerPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `scheduleExpression`: `str`
 
-
-
 Optional fields:
-- `dataPullMode`: `DataPullMode`
+
+- `dataPullMode`:
+  [DataPullMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#datapullmode)
 - `scheduleStartTime`: `datetime`
 - `scheduleEndTime`: `datetime`
 - `timezone`: `str`
 - `scheduleOffset`: `int`
 - `firstExecutionFrom`: `datetime`
-
 
 ## ServiceNowConnectorProfileCredentialsTypeDef
 
@@ -1212,13 +1140,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ServiceNowConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `username`: `str`
 - `password`: `str`
-
-
-
 
 ## ServiceNowConnectorProfilePropertiesTypeDef
 
@@ -1226,12 +1151,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ServiceNowConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## ServiceNowSourcePropertiesTypeDef
 
@@ -1239,12 +1161,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ServiceNowSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## SingularConnectorProfileCredentialsTypeDef
 
@@ -1252,12 +1171,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SingularConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `apiKey`: `str`
-
-
-
 
 ## SingularSourcePropertiesTypeDef
 
@@ -1265,12 +1181,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SingularSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## SlackConnectorProfileCredentialsTypeDef
 
@@ -1278,17 +1191,16 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SlackConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `clientId`: `str`
 - `clientSecret`: `str`
 
-
-
 Optional fields:
-- `accessToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
 
+- `accessToken`: `str`
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 
 ## SlackConnectorProfilePropertiesTypeDef
 
@@ -1296,12 +1208,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SlackConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## SlackMetadataTypeDef
 
@@ -1309,12 +1218,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SlackMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oAuthScopes`: `List[str]`
 
+- `oAuthScopes`: `List`\[`str`\]
 
 ## SlackSourcePropertiesTypeDef
 
@@ -1322,12 +1228,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SlackSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## SnowflakeConnectorProfileCredentialsTypeDef
 
@@ -1335,13 +1238,10 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SnowflakeConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `username`: `str`
 - `password`: `str`
-
-
-
 
 ## SnowflakeConnectorProfilePropertiesTypeDef
 
@@ -1349,20 +1249,18 @@ Required fields:
 from mypy_boto3_appflow.type_defs import SnowflakeConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `warehouse`: `str`
 - `stage`: `str`
 - `bucketName`: `str`
 
-
-
 Optional fields:
+
 - `bucketPrefix`: `str`
 - `privateLinkServiceName`: `str`
 - `accountName`: `str`
 - `region`: `str`
-
 
 ## SnowflakeDestinationPropertiesTypeDef
 
@@ -1370,17 +1268,16 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SnowflakeDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 - `intermediateBucketName`: `str`
 
-
-
 Optional fields:
-- `bucketPrefix`: `str`
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
 
+- `bucketPrefix`: `str`
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
 
 ## SnowflakeMetadataTypeDef
 
@@ -1388,12 +1285,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SnowflakeMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `supportedRegions`: `List[str]`
 
+- `supportedRegions`: `List`\[`str`\]
 
 ## SourceConnectorPropertiesTypeDef
 
@@ -1401,25 +1295,36 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SourceConnectorPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Amplitude`: `"AmplitudeSourcePropertiesTypeDef"`
-- `Datadog`: `"DatadogSourcePropertiesTypeDef"`
-- `Dynatrace`: `"DynatraceSourcePropertiesTypeDef"`
-- `GoogleAnalytics`: `"GoogleAnalyticsSourcePropertiesTypeDef"`
-- `InforNexus`: `"InforNexusSourcePropertiesTypeDef"`
-- `Marketo`: `"MarketoSourcePropertiesTypeDef"`
-- `S3`: `"S3SourcePropertiesTypeDef"`
-- `Salesforce`: `"SalesforceSourcePropertiesTypeDef"`
-- `ServiceNow`: `"ServiceNowSourcePropertiesTypeDef"`
-- `Singular`: `"SingularSourcePropertiesTypeDef"`
-- `Slack`: `"SlackSourcePropertiesTypeDef"`
-- `Trendmicro`: `"TrendmicroSourcePropertiesTypeDef"`
-- `Veeva`: `"VeevaSourcePropertiesTypeDef"`
-- `Zendesk`: `"ZendeskSourcePropertiesTypeDef"`
 
+- `Amplitude`:
+  [AmplitudeSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#amplitudesourcepropertiestypedef)
+- `Datadog`:
+  [DatadogSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#datadogsourcepropertiestypedef)
+- `Dynatrace`:
+  [DynatraceSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#dynatracesourcepropertiestypedef)
+- `GoogleAnalytics`:
+  [GoogleAnalyticsSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#googleanalyticssourcepropertiestypedef)
+- `InforNexus`:
+  [InforNexusSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#infornexussourcepropertiestypedef)
+- `Marketo`:
+  [MarketoSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#marketosourcepropertiestypedef)
+- `S3`:
+  [S3SourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#s3sourcepropertiestypedef)
+- `Salesforce`:
+  [SalesforceSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#salesforcesourcepropertiestypedef)
+- `ServiceNow`:
+  [ServiceNowSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#servicenowsourcepropertiestypedef)
+- `Singular`:
+  [SingularSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#singularsourcepropertiestypedef)
+- `Slack`:
+  [SlackSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#slacksourcepropertiestypedef)
+- `Trendmicro`:
+  [TrendmicroSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#trendmicrosourcepropertiestypedef)
+- `Veeva`:
+  [VeevaSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#veevasourcepropertiestypedef)
+- `Zendesk`:
+  [ZendeskSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#zendesksourcepropertiestypedef)
 
 ## SourceFieldPropertiesTypeDef
 
@@ -1427,13 +1332,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SourceFieldPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `isRetrievable`: `bool`
 - `isQueryable`: `bool`
-
 
 ## SourceFlowConfigTypeDef
 
@@ -1441,17 +1343,18 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SourceFlowConfigTypeDef
 ```
 
-
 Required fields:
-- `connectorType`: `ConnectorType`
-- `sourceConnectorProperties`: `"SourceConnectorPropertiesTypeDef"`
 
-
+- `connectorType`:
+  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `sourceConnectorProperties`:
+  [SourceConnectorPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceconnectorpropertiestypedef)
 
 Optional fields:
-- `connectorProfileName`: `str`
-- `incrementalPullConfig`: `"IncrementalPullConfigTypeDef"`
 
+- `connectorProfileName`: `str`
+- `incrementalPullConfig`:
+  [IncrementalPullConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#incrementalpullconfigtypedef)
 
 ## StartFlowResponseTypeDef
 
@@ -1459,14 +1362,12 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import StartFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flowArn`: `str`
-- `flowStatus`: `FlowStatus`
-- `executionId`: `str`
 
+- `flowArn`: `str`
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
+- `executionId`: `str`
 
 ## StopFlowResponseTypeDef
 
@@ -1474,13 +1375,11 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import StopFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flowArn`: `str`
-- `flowStatus`: `FlowStatus`
 
+- `flowArn`: `str`
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
 
 ## SupportedFieldTypeDetailsTypeDef
 
@@ -1488,12 +1387,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import SupportedFieldTypeDetailsTypeDef
 ```
 
-
 Required fields:
-- `v1`: `"FieldTypeDetailsTypeDef"`
 
-
-
+- `v1`:
+  [FieldTypeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#fieldtypedetailstypedef)
 
 ## TaskTypeDef
 
@@ -1501,18 +1398,20 @@ Required fields:
 from mypy_boto3_appflow.type_defs import TaskTypeDef
 ```
 
-
 Required fields:
-- `sourceFields`: `List[str]`
-- `taskType`: `TaskType`
 
-
+- `sourceFields`: `List`\[`str`\]
+- `taskType`:
+  [TaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#tasktype)
 
 Optional fields:
-- `connectorOperator`: `"ConnectorOperatorTypeDef"`
-- `destinationField`: `str`
-- `taskProperties`: `Dict[OperatorPropertiesKeys, str]`
 
+- `connectorOperator`:
+  [ConnectorOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroperatortypedef)
+- `destinationField`: `str`
+- `taskProperties`:
+  `Dict`\[[OperatorPropertiesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#operatorpropertieskeys),
+  `str`\]
 
 ## TrendmicroConnectorProfileCredentialsTypeDef
 
@@ -1520,12 +1419,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import TrendmicroConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `apiSecretKey`: `str`
-
-
-
 
 ## TrendmicroSourcePropertiesTypeDef
 
@@ -1533,12 +1429,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import TrendmicroSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## TriggerConfigTypeDef
 
@@ -1546,15 +1439,15 @@ Required fields:
 from mypy_boto3_appflow.type_defs import TriggerConfigTypeDef
 ```
 
-
 Required fields:
-- `triggerType`: `TriggerType`
 
-
+- `triggerType`:
+  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#triggertype)
 
 Optional fields:
-- `triggerProperties`: `"TriggerPropertiesTypeDef"`
 
+- `triggerProperties`:
+  [TriggerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerpropertiestypedef)
 
 ## TriggerPropertiesTypeDef
 
@@ -1562,12 +1455,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import TriggerPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Scheduled`: `"ScheduledTriggerPropertiesTypeDef"`
 
+- `Scheduled`:
+  [ScheduledTriggerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#scheduledtriggerpropertiestypedef)
 
 ## UpdateConnectorProfileResponseTypeDef
 
@@ -1575,12 +1466,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import UpdateConnectorProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `connectorProfileArn`: `str`
 
+- `connectorProfileArn`: `str`
 
 ## UpdateFlowResponseTypeDef
 
@@ -1588,12 +1476,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import UpdateFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `flowStatus`: `FlowStatus`
 
+- `flowStatus`:
+  [FlowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#flowstatus)
 
 ## UpsolverDestinationPropertiesTypeDef
 
@@ -1601,16 +1487,15 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import UpsolverDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
-- `s3OutputFormatConfig`: `"UpsolverS3OutputFormatConfigTypeDef"`
-
-
+- `s3OutputFormatConfig`:
+  [UpsolverS3OutputFormatConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#upsolvers3outputformatconfigtypedef)
 
 Optional fields:
-- `bucketPrefix`: `str`
 
+- `bucketPrefix`: `str`
 
 ## UpsolverS3OutputFormatConfigTypeDef
 
@@ -1618,16 +1503,17 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import UpsolverS3OutputFormatConfigTypeDef
 ```
 
-
 Required fields:
-- `prefixConfig`: `"PrefixConfigTypeDef"`
 
-
+- `prefixConfig`:
+  [PrefixConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#prefixconfigtypedef)
 
 Optional fields:
-- `fileType`: `FileType`
-- `aggregationConfig`: `"AggregationConfigTypeDef"`
 
+- `fileType`:
+  [FileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#filetype)
+- `aggregationConfig`:
+  [AggregationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#aggregationconfigtypedef)
 
 ## VeevaConnectorProfileCredentialsTypeDef
 
@@ -1635,13 +1521,10 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import VeevaConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `username`: `str`
 - `password`: `str`
-
-
-
 
 ## VeevaConnectorProfilePropertiesTypeDef
 
@@ -1649,12 +1532,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import VeevaConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## VeevaSourcePropertiesTypeDef
 
@@ -1662,12 +1542,9 @@ Required fields:
 from mypy_boto3_appflow.type_defs import VeevaSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-
 
 ## ZendeskConnectorProfileCredentialsTypeDef
 
@@ -1675,17 +1552,16 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ZendeskConnectorProfileCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `clientId`: `str`
 - `clientSecret`: `str`
 
-
-
 Optional fields:
-- `accessToken`: `str`
-- `oAuthRequest`: `"ConnectorOAuthRequestTypeDef"`
 
+- `accessToken`: `str`
+- `oAuthRequest`:
+  [ConnectorOAuthRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectoroauthrequesttypedef)
 
 ## ZendeskConnectorProfilePropertiesTypeDef
 
@@ -1693,12 +1569,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ZendeskConnectorProfilePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `instanceUrl`: `str`
-
-
-
 
 ## ZendeskDestinationPropertiesTypeDef
 
@@ -1706,17 +1579,17 @@ Required fields:
 from mypy_boto3_appflow.type_defs import ZendeskDestinationPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
 
-
-
 Optional fields:
-- `idFieldNames`: `List[str]`
-- `errorHandlingConfig`: `"ErrorHandlingConfigTypeDef"`
-- `writeOperationType`: `WriteOperationType`
 
+- `idFieldNames`: `List`\[`str`\]
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#errorhandlingconfigtypedef)
+- `writeOperationType`:
+  [WriteOperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#writeoperationtype)
 
 ## ZendeskMetadataTypeDef
 
@@ -1724,12 +1597,9 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ZendeskMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oAuthScopes`: `List[str]`
 
+- `oAuthScopes`: `List`\[`str`\]
 
 ## ZendeskSourcePropertiesTypeDef
 
@@ -1737,9 +1607,6 @@ Optional fields:
 from mypy_boto3_appflow.type_defs import ZendeskSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `object`: `str`
-
-
-

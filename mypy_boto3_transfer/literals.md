@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Transfer](./README.md) > Literals
 
-Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+Auto-generated documentation for
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+type annotations stubs module
+[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Literals for boto3 Transfer module](#literals-for-boto3-transfer-module)
   - [Domain](#domain)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Paginators
 
-Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+Auto-generated documentation for
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+type annotations stubs module
+[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [Paginators for boto3 PinpointEmail module](#paginators-for-boto3-pinpointemail-module)
   - [GetDedicatedIpsPaginator](#getdedicatedipspaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/proje
 
 ## GetDedicatedIpsPaginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")`.
+Type annotations for
+`boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")`.
 
 Can be used directly:
 
@@ -25,20 +28,22 @@ def get_get_dedicated_ips_paginator() -> GetDedicatedIpsPaginator:
     return boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
+Boto3 documentation:
+[PinpointEmail.Paginator.GetDedicatedIps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
 
-```python
-class GetDedicatedIpsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetDedicatedIpsResponseTypeDef]:
-        pass
-```
+Arguments for `GetDedicatedIpsPaginator.paginate` method:
+
+- `PoolName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+
+`GetDedicatedIpsPaginator.paginate` returns
+`Iterator`\[[GetDedicatedIpsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdedicatedipsresponsetypedef)\].
+
 ## ListConfigurationSetsPaginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator("list_configuration_sets")`.
+Type annotations for
+`boto3.client("pinpoint-email").get_paginator("list_configuration_sets")`.
 
 Can be used directly:
 
@@ -49,19 +54,21 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_configuration_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
+Boto3 documentation:
+[PinpointEmail.Paginator.ListConfigurationSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
 
-```python
-class ListConfigurationSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListConfigurationSetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListConfigurationSetsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+
+`ListConfigurationSetsPaginator.paginate` returns
+`Iterator`\[[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listconfigurationsetsresponsetypedef)\].
+
 ## ListDedicatedIpPoolsPaginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")`.
+Type annotations for
+`boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")`.
 
 Can be used directly:
 
@@ -72,19 +79,21 @@ def get_list_dedicated_ip_pools_paginator() -> ListDedicatedIpPoolsPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
+Boto3 documentation:
+[PinpointEmail.Paginator.ListDedicatedIpPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
 
-```python
-class ListDedicatedIpPoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDedicatedIpPoolsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDedicatedIpPoolsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+
+`ListDedicatedIpPoolsPaginator.paginate` returns
+`Iterator`\[[ListDedicatedIpPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdedicatedippoolsresponsetypedef)\].
+
 ## ListDeliverabilityTestReportsPaginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")`.
+Type annotations for
+`boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")`.
 
 Can be used directly:
 
@@ -95,19 +104,21 @@ def get_list_deliverability_test_reports_paginator() -> ListDeliverabilityTestRe
     return boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
+Boto3 documentation:
+[PinpointEmail.Paginator.ListDeliverabilityTestReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
 
-```python
-class ListDeliverabilityTestReportsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDeliverabilityTestReportsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDeliverabilityTestReportsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+
+`ListDeliverabilityTestReportsPaginator.paginate` returns
+`Iterator`\[[ListDeliverabilityTestReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdeliverabilitytestreportsresponsetypedef)\].
+
 ## ListEmailIdentitiesPaginator
 
-Type annotations for `boto3.client("pinpoint-email").get_paginator("list_email_identities")`.
+Type annotations for
+`boto3.client("pinpoint-email").get_paginator("list_email_identities")`.
 
 Can be used directly:
 
@@ -118,13 +129,13 @@ def get_list_email_identities_paginator() -> ListEmailIdentitiesPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_email_identities")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
+Boto3 documentation:
+[PinpointEmail.Paginator.ListEmailIdentities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
 
-```python
-class ListEmailIdentitiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListEmailIdentitiesResponseTypeDef]:
-        pass
-```
+Arguments for `ListEmailIdentitiesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+
+`ListEmailIdentitiesPaginator.paginate` returns
+`Iterator`\[[ListEmailIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listemailidentitiesresponsetypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SFN](./README.md) > Paginators
 
-Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+Auto-generated documentation for
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+type annotations stubs module
+[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Paginators for boto3 SFN module](#paginators-for-boto3-sfn-module)
   - [GetExecutionHistoryPaginator](#getexecutionhistorypaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/projec
 
 ## GetExecutionHistoryPaginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator("get_execution_history")`.
+Type annotations for
+`boto3.client("stepfunctions").get_paginator("get_execution_history")`.
 
 Can be used directly:
 
@@ -24,22 +27,24 @@ def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
     return boto3.client("stepfunctions").get_paginator("get_execution_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
+Boto3 documentation:
+[SFN.Paginator.GetExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
-```python
-class GetExecutionHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        executionArn: str,
-        reverseOrder: bool = None,
-        includeExecutionData: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetExecutionHistoryOutputTypeDef]:
-        pass
-```
+Arguments for `GetExecutionHistoryPaginator.paginate` method:
+
+- `executionArn`: `str` *(required)*
+- `reverseOrder`: `bool`
+- `includeExecutionData`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+
+`GetExecutionHistoryPaginator.paginate` returns
+`Iterator`\[[GetExecutionHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getexecutionhistoryoutputtypedef)\].
+
 ## ListActivitiesPaginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator("list_activities")`.
+Type annotations for
+`boto3.client("stepfunctions").get_paginator("list_activities")`.
 
 Can be used directly:
 
@@ -50,19 +55,21 @@ def get_list_activities_paginator() -> ListActivitiesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_activities")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
+Boto3 documentation:
+[SFN.Paginator.ListActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
-```python
-class ListActivitiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListActivitiesOutputTypeDef]:
-        pass
-```
+Arguments for `ListActivitiesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+
+`ListActivitiesPaginator.paginate` returns
+`Iterator`\[[ListActivitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listactivitiesoutputtypedef)\].
+
 ## ListExecutionsPaginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator("list_executions")`.
+Type annotations for
+`boto3.client("stepfunctions").get_paginator("list_executions")`.
 
 Can be used directly:
 
@@ -73,21 +80,24 @@ def get_list_executions_paginator() -> ListExecutionsPaginator:
     return boto3.client("stepfunctions").get_paginator("list_executions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
+Boto3 documentation:
+[SFN.Paginator.ListExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
-```python
-class ListExecutionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        stateMachineArn: str,
-        statusFilter: ExecutionStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListExecutionsOutputTypeDef]:
-        pass
-```
+Arguments for `ListExecutionsPaginator.paginate` method:
+
+- `stateMachineArn`: `str` *(required)*
+- `statusFilter`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+
+`ListExecutionsPaginator.paginate` returns
+`Iterator`\[[ListExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listexecutionsoutputtypedef)\].
+
 ## ListStateMachinesPaginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator("list_state_machines")`.
+Type annotations for
+`boto3.client("stepfunctions").get_paginator("list_state_machines")`.
 
 Can be used directly:
 
@@ -98,13 +108,13 @@ def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_state_machines")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
+Boto3 documentation:
+[SFN.Paginator.ListStateMachines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
-```python
-class ListStateMachinesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListStateMachinesOutputTypeDef]:
-        pass
-```
+Arguments for `ListStateMachinesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+
+`ListStateMachinesPaginator.paginate` returns
+`Iterator`\[[ListStateMachinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#liststatemachinesoutputtypedef)\].

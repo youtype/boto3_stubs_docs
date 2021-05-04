@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IVS](./README.md) > Literals
 
-Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+Auto-generated documentation for
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+type annotations stubs module
+[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Literals for boto3 IVS module](#literals-for-boto3-ivs-module)
   - [ChannelLatencyMode](#channellatencymode)

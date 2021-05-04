@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > QLDBSession
 
-Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
-type annotations stubs module [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+Auto-generated documentation for
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+type annotations stubs module
+[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 ```bash
 pip install mypy-boto3-qldb-session
@@ -17,7 +19,8 @@ pip install mypy-boto3-qldb-session
 
 ## QLDBSessionClient
 
-Type annotations for  `boto3.client("qldb-session")` as [QLDBSessionClient](./client.md)
+Type annotations for `boto3.client("qldb-session")` as
+[QLDBSessionClient](./client.md)
 
 Can be used directly:
 
@@ -25,20 +28,16 @@ Can be used directly:
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 ```
 
-
 QLDBSessionClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [send_command](./client.md#send-command)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [CapacityExceededException](./client.md#capacityexceededexception)
 - [ClientError](./client.md#clienterror)
@@ -47,21 +46,10 @@ QLDBSessionClient [exceptions](./client.md#exceptions)
 - [OccConflictException](./client.md#occconflictexception)
 - [RateExceededException](./client.md#rateexceededexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

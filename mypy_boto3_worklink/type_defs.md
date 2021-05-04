@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkLink](./README.md) > Structures
 
-Auto-generated documentation for [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
-type annotations stubs module [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
+Auto-generated documentation for
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+type annotations stubs module
+[mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [Typed dictionaries for boto3 WorkLink module](#typed-dictionaries-for-boto3-worklink-module)
   - [AssociateWebsiteAuthorizationProviderResponseTypeDef](#associatewebsiteauthorizationproviderresponsetypedef)
@@ -35,12 +37,9 @@ type annotations stubs module [mypy_boto3_worklink](https://pypi.org/project/myp
 from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuthorizationProviderId`: `str`
 
+- `AuthorizationProviderId`: `str`
 
 ## AssociateWebsiteCertificateAuthorityResponseTypeDef
 
@@ -48,12 +47,9 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WebsiteCaId`: `str`
 
+- `WebsiteCaId`: `str`
 
 ## CreateFleetResponseTypeDef
 
@@ -61,12 +57,9 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import CreateFleetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FleetArn`: `str`
 
+- `FleetArn`: `str`
 
 ## DescribeAuditStreamConfigurationResponseTypeDef
 
@@ -74,12 +67,9 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuditStreamArn`: `str`
 
+- `AuditStreamArn`: `str`
 
 ## DescribeCompanyNetworkConfigurationResponseTypeDef
 
@@ -87,14 +77,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `SecurityGroupIds`: `List[str]`
 
+- `VpcId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
 
 ## DescribeDevicePolicyConfigurationResponseTypeDef
 
@@ -102,12 +89,9 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceCaCertificate`: `str`
 
+- `DeviceCaCertificate`: `str`
 
 ## DescribeDeviceResponseTypeDef
 
@@ -115,11 +99,10 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeDeviceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `DeviceStatus`
+
+- `Status`:
+  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#devicestatus)
 - `Model`: `str`
 - `Manufacturer`: `str`
 - `OperatingSystem`: `str`
@@ -129,23 +112,20 @@ Optional fields:
 - `LastAccessedTime`: `datetime`
 - `Username`: `str`
 
-
 ## DescribeDomainResponseTypeDef
 
 ```python
 from mypy_boto3_worklink.type_defs import DescribeDomainResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainName`: `str`
 - `DisplayName`: `str`
 - `CreatedTime`: `datetime`
-- `DomainStatus`: `DomainStatus`
+- `DomainStatus`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#domainstatus)
 - `AcmCertificateArn`: `str`
-
 
 ## DescribeFleetMetadataResponseTypeDef
 
@@ -153,19 +133,17 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeFleetMetadataResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `FleetName`: `str`
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
 - `CompanyCode`: `str`
-- `FleetStatus`: `FleetStatus`
-- `Tags`: `Dict[str, str]`
-
+- `FleetStatus`:
+  [FleetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#fleetstatus)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeIdentityProviderConfigurationResponseTypeDef
 
@@ -173,14 +151,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IdentityProviderType`: `Literal['SAML']`
 - `ServiceProviderSamlMetadata`: `str`
 - `IdentityProviderSamlMetadata`: `str`
-
 
 ## DescribeWebsiteCertificateAuthorityResponseTypeDef
 
@@ -188,14 +163,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Certificate`: `str`
 - `CreatedTime`: `datetime`
 - `DisplayName`: `str`
-
 
 ## DeviceSummaryTypeDef
 
@@ -203,13 +175,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DeviceSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceId`: `str`
-- `DeviceStatus`: `DeviceStatus`
 
+- `DeviceId`: `str`
+- `DeviceStatus`:
+  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#devicestatus)
 
 ## DomainSummaryTypeDef
 
@@ -217,17 +187,16 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import DomainSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `CreatedTime`: `datetime`
-- `DomainStatus`: `DomainStatus`
-
-
+- `DomainStatus`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#domainstatus)
 
 Optional fields:
-- `DisplayName`: `str`
 
+- `DisplayName`: `str`
 
 ## FleetSummaryTypeDef
 
@@ -235,19 +204,17 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import FleetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FleetArn`: `str`
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `FleetName`: `str`
 - `DisplayName`: `str`
 - `CompanyCode`: `str`
-- `FleetStatus`: `FleetStatus`
-- `Tags`: `Dict[str, str]`
-
+- `FleetStatus`:
+  [FleetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/literals.html#fleetstatus)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListDevicesResponseTypeDef
 
@@ -255,13 +222,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListDevicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Devices`: `List["DeviceSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Devices`:
+  `List`\[[DeviceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#devicesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListDomainsResponseTypeDef
 
@@ -269,13 +234,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Domains`: `List["DomainSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Domains`:
+  `List`\[[DomainSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#domainsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListFleetsResponseTypeDef
 
@@ -283,13 +246,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListFleetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FleetSummaryList`: `List["FleetSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `FleetSummaryList`:
+  `List`\[[FleetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#fleetsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -297,12 +258,9 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListWebsiteAuthorizationProvidersResponseTypeDef
 
@@ -310,13 +268,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WebsiteAuthorizationProviders`: `List["WebsiteAuthorizationProviderSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `WebsiteAuthorizationProviders`:
+  `List`\[[WebsiteAuthorizationProviderSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#websiteauthorizationprovidersummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListWebsiteCertificateAuthoritiesResponseTypeDef
 
@@ -324,13 +280,11 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WebsiteCertificateAuthorities`: `List["WebsiteCaSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `WebsiteCertificateAuthorities`:
+  `List`\[[WebsiteCaSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#websitecasummarytypedef)\]
+- `NextToken`: `str`
 
 ## WebsiteAuthorizationProviderSummaryTypeDef
 
@@ -338,17 +292,15 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import WebsiteAuthorizationProviderSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `AuthorizationProviderType`: `Literal['SAML']`
 
-
-
 Optional fields:
+
 - `AuthorizationProviderId`: `str`
 - `DomainName`: `str`
 - `CreatedTime`: `datetime`
-
 
 ## WebsiteCaSummaryTypeDef
 
@@ -356,11 +308,8 @@ Optional fields:
 from mypy_boto3_worklink.type_defs import WebsiteCaSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WebsiteCaId`: `str`
 - `CreatedTime`: `datetime`
 - `DisplayName`: `str`
-

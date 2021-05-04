@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AuditManager](./README.md) > AuditManagerClient
 
-Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+Auto-generated documentation for
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+type annotations stubs module
+[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [AuditManagerClient for boto3 AuditManager module](#auditmanagerclient-for-boto3-auditmanager-module)
   - [AuditManagerClient](#auditmanagerclient)
@@ -76,12 +78,13 @@ def get_auditmanager_client() -> AuditManagerClient:
     return boto3.client("auditmanager")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
+Boto3 documentation:
+[AuditManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_auditmanager.client import Exceptions
@@ -89,7 +92,6 @@ from mypy_boto3_auditmanager.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -99,839 +101,884 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_assessment_report_evidence_folder
 
-Type annotations for `boto3.client("auditmanager").associate_assessment_report_evidence_folder` method.
+Type annotations for
+`boto3.client("auditmanager").associate_assessment_report_evidence_folder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder]
+Boto3 documentation:
+[AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
 
-```python
-def associate_assessment_report_evidence_folder(
-    self,
-    assessmentId: str,
-    evidenceFolderId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### batch_associate_assessment_report_evidence
 
-Type annotations for `boto3.client("auditmanager").batch_associate_assessment_report_evidence` method.
+Type annotations for
+`boto3.client("auditmanager").batch_associate_assessment_report_evidence`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence]
+Boto3 documentation:
+[AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
 
-```python
-def batch_associate_assessment_report_evidence(
-    self,
-    assessmentId: str,
-    evidenceFolderId: str,
-    evidenceIds: List[str]
-) -> BatchAssociateAssessmentReportEvidenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+- `evidenceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchAssociateAssessmentReportEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchassociateassessmentreportevidenceresponsetypedef).
 
 ### batch_create_delegation_by_assessment
 
-Type annotations for `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
+Type annotations for
+`boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment]
+Boto3 documentation:
+[AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
 
-```python
-def batch_create_delegation_by_assessment(
-    self,
-    createDelegationRequests: List["CreateDelegationRequestTypeDef"],
-    assessmentId: str
-) -> BatchCreateDelegationByAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `createDelegationRequests`:
+  `List`\[[CreateDelegationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createdelegationrequesttypedef)\]
+  *(required)*
+- `assessmentId`: `str` *(required)*
+
+Returns
+[BatchCreateDelegationByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchcreatedelegationbyassessmentresponsetypedef).
 
 ### batch_delete_delegation_by_assessment
 
-Type annotations for `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
+Type annotations for
+`boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment]
+Boto3 documentation:
+[AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
 
-```python
-def batch_delete_delegation_by_assessment(
-    self,
-    delegationIds: List[str],
-    assessmentId: str
-) -> BatchDeleteDelegationByAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `delegationIds`: `List`\[`str`\] *(required)*
+- `assessmentId`: `str` *(required)*
+
+Returns
+[BatchDeleteDelegationByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchdeletedelegationbyassessmentresponsetypedef).
 
 ### batch_disassociate_assessment_report_evidence
 
-Type annotations for `boto3.client("auditmanager").batch_disassociate_assessment_report_evidence` method.
+Type annotations for
+`boto3.client("auditmanager").batch_disassociate_assessment_report_evidence`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence]
+Boto3 documentation:
+[AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
 
-```python
-def batch_disassociate_assessment_report_evidence(
-    self,
-    assessmentId: str,
-    evidenceFolderId: str,
-    evidenceIds: List[str]
-) -> BatchDisassociateAssessmentReportEvidenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+- `evidenceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchDisassociateAssessmentReportEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchdisassociateassessmentreportevidenceresponsetypedef).
 
 ### batch_import_evidence_to_assessment_control
 
-Type annotations for `boto3.client("auditmanager").batch_import_evidence_to_assessment_control` method.
+Type annotations for
+`boto3.client("auditmanager").batch_import_evidence_to_assessment_control`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control]
+Boto3 documentation:
+[AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
 
-```python
-def batch_import_evidence_to_assessment_control(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    controlId: str,
-    manualEvidence: List["ManualEvidenceTypeDef"]
-) -> BatchImportEvidenceToAssessmentControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `controlId`: `str` *(required)*
+- `manualEvidence`:
+  `List`\[[ManualEvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#manualevidencetypedef)\]
+  *(required)*
+
+Returns
+[BatchImportEvidenceToAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchimportevidencetoassessmentcontrolresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("auditmanager").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate]
+Boto3 documentation:
+[AuditManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_assessment
 
 Type annotations for `boto3.client("auditmanager").create_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment]
+Boto3 documentation:
+[AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
 
-```python
-def create_assessment(
-    self,
-    name: str,
-    assessmentReportsDestination: "AssessmentReportsDestinationTypeDef",
-    scope: "ScopeTypeDef",
-    roles: List["RoleTypeDef"],
-    frameworkId: str,
-    description: str = None,
-    tags: Dict[str, str] = None
-) -> CreateAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `assessmentReportsDestination`:
+  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
+  *(required)*
+- `scope`:
+  [ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#scopetypedef)
+  *(required)*
+- `roles`:
+  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+  *(required)*
+- `frameworkId`: `str` *(required)*
+- `description`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentresponsetypedef).
 
 ### create_assessment_framework
 
-Type annotations for `boto3.client("auditmanager").create_assessment_framework` method.
+Type annotations for `boto3.client("auditmanager").create_assessment_framework`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework]
+Boto3 documentation:
+[AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
 
-```python
-def create_assessment_framework(
-    self,
-    name: str,
-    controlSets: List[CreateAssessmentFrameworkControlSetTypeDef],
-    description: str = None,
-    complianceType: str = None,
-    tags: Dict[str, str] = None
-) -> CreateAssessmentFrameworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `controlSets`:
+  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontrolsettypedef)\]
+  *(required)*
+- `description`: `str`
+- `complianceType`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkresponsetypedef).
 
 ### create_assessment_report
 
-Type annotations for `boto3.client("auditmanager").create_assessment_report` method.
+Type annotations for `boto3.client("auditmanager").create_assessment_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report]
+Boto3 documentation:
+[AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
 
-```python
-def create_assessment_report(
-    self,
-    name: str,
-    assessmentId: str,
-    description: str = None
-) -> CreateAssessmentReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `assessmentId`: `str` *(required)*
+- `description`: `str`
+
+Returns
+[CreateAssessmentReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentreportresponsetypedef).
 
 ### create_control
 
 Type annotations for `boto3.client("auditmanager").create_control` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control]
+Boto3 documentation:
+[AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control)
 
-```python
-def create_control(
-    self,
-    name: str,
-    controlMappingSources: List[CreateControlMappingSourceTypeDef],
-    description: str = None,
-    testingInformation: str = None,
-    actionPlanTitle: str = None,
-    actionPlanInstructions: str = None,
-    tags: Dict[str, str] = None
-) -> CreateControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `controlMappingSources`:
+  `List`\[[CreateControlMappingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createcontrolmappingsourcetypedef)\]
+  *(required)*
+- `description`: `str`
+- `testingInformation`: `str`
+- `actionPlanTitle`: `str`
+- `actionPlanInstructions`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createcontrolresponsetypedef).
 
 ### delete_assessment
 
 Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment]
+Boto3 documentation:
+[AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
 
-```python
-def delete_assessment(
-    self,
-    assessmentId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_framework
 
-Type annotations for `boto3.client("auditmanager").delete_assessment_framework` method.
+Type annotations for `boto3.client("auditmanager").delete_assessment_framework`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework]
+Boto3 documentation:
+[AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
 
-```python
-def delete_assessment_framework(
-    self,
-    frameworkId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `frameworkId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_report
 
-Type annotations for `boto3.client("auditmanager").delete_assessment_report` method.
+Type annotations for `boto3.client("auditmanager").delete_assessment_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report]
+Boto3 documentation:
+[AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
 
-```python
-def delete_assessment_report(
-    self,
-    assessmentId: str,
-    assessmentReportId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `assessmentReportId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_control
 
 Type annotations for `boto3.client("auditmanager").delete_control` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control]
+Boto3 documentation:
+[AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control)
 
-```python
-def delete_control(
-    self,
-    controlId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `controlId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_account
 
 Type annotations for `boto3.client("auditmanager").deregister_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account]
+Boto3 documentation:
+[AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
 
-```python
-def deregister_account(
-    self
-) -> DeregisterAccountResponseTypeDef:
-    pass
-```
+Returns
+[DeregisterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#deregisteraccountresponsetypedef).
 
 ### deregister_organization_admin_account
 
-Type annotations for `boto3.client("auditmanager").deregister_organization_admin_account` method.
+Type annotations for
+`boto3.client("auditmanager").deregister_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account]
+Boto3 documentation:
+[AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
 
-```python
-def deregister_organization_admin_account(
-    self,
-    adminAccountId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `adminAccountId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_assessment_report_evidence_folder
 
-Type annotations for `boto3.client("auditmanager").disassociate_assessment_report_evidence_folder` method.
+Type annotations for
+`boto3.client("auditmanager").disassociate_assessment_report_evidence_folder`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder]
+Boto3 documentation:
+[AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
 
-```python
-def disassociate_assessment_report_evidence_folder(
-    self,
-    assessmentId: str,
-    evidenceFolderId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("auditmanager").generate_presigned_url` method.
+Type annotations for `boto3.client("auditmanager").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url]
+Boto3 documentation:
+[AuditManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_status
 
 Type annotations for `boto3.client("auditmanager").get_account_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status]
+Boto3 documentation:
+[AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
 
-```python
-def get_account_status(
-    self
-) -> GetAccountStatusResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getaccountstatusresponsetypedef).
 
 ### get_assessment
 
 Type annotations for `boto3.client("auditmanager").get_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment]
+Boto3 documentation:
+[AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
 
-```python
-def get_assessment(
-    self,
-    assessmentId: str
-) -> GetAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+
+Returns
+[GetAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentresponsetypedef).
 
 ### get_assessment_framework
 
-Type annotations for `boto3.client("auditmanager").get_assessment_framework` method.
+Type annotations for `boto3.client("auditmanager").get_assessment_framework`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework]
+Boto3 documentation:
+[AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
 
-```python
-def get_assessment_framework(
-    self,
-    frameworkId: str
-) -> GetAssessmentFrameworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `frameworkId`: `str` *(required)*
+
+Returns
+[GetAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentframeworkresponsetypedef).
 
 ### get_assessment_report_url
 
-Type annotations for `boto3.client("auditmanager").get_assessment_report_url` method.
+Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url]
+Boto3 documentation:
+[AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
 
-```python
-def get_assessment_report_url(
-    self,
-    assessmentReportId: str,
-    assessmentId: str
-) -> GetAssessmentReportUrlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentReportId`: `str` *(required)*
+- `assessmentId`: `str` *(required)*
+
+Returns
+[GetAssessmentReportUrlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentreporturlresponsetypedef).
 
 ### get_change_logs
 
 Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs]
+Boto3 documentation:
+[AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
 
-```python
-def get_change_logs(
-    self,
-    assessmentId: str,
-    controlSetId: str = None,
-    controlId: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetChangeLogsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str`
+- `controlId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetChangeLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getchangelogsresponsetypedef).
 
 ### get_control
 
 Type annotations for `boto3.client("auditmanager").get_control` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control]
+Boto3 documentation:
+[AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control)
 
-```python
-def get_control(
-    self,
-    controlId: str
-) -> GetControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `controlId`: `str` *(required)*
+
+Returns
+[GetControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getcontrolresponsetypedef).
 
 ### get_delegations
 
 Type annotations for `boto3.client("auditmanager").get_delegations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations]
+Boto3 documentation:
+[AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
 
-```python
-def get_delegations(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetDelegationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetDelegationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getdelegationsresponsetypedef).
 
 ### get_evidence
 
 Type annotations for `boto3.client("auditmanager").get_evidence` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence]
+Boto3 documentation:
+[AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
 
-```python
-def get_evidence(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    evidenceFolderId: str,
-    evidenceId: str
-) -> GetEvidenceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+- `evidenceId`: `str` *(required)*
+
+Returns
+[GetEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidenceresponsetypedef).
 
 ### get_evidence_by_evidence_folder
 
-Type annotations for `boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
+Type annotations for
+`boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder]
+Boto3 documentation:
+[AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
 
-```python
-def get_evidence_by_evidence_folder(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    evidenceFolderId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetEvidenceByEvidenceFolderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetEvidenceByEvidenceFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencebyevidencefolderresponsetypedef).
 
 ### get_evidence_folder
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder]
+Boto3 documentation:
+[AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
 
-```python
-def get_evidence_folder(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    evidenceFolderId: str
-) -> GetEvidenceFolderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `evidenceFolderId`: `str` *(required)*
+
+Returns
+[GetEvidenceFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefolderresponsetypedef).
 
 ### get_evidence_folders_by_assessment
 
-Type annotations for `boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
+Type annotations for
+`boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment]
+Boto3 documentation:
+[AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
 
-```python
-def get_evidence_folders_by_assessment(
-    self,
-    assessmentId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetEvidenceFoldersByAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetEvidenceFoldersByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefoldersbyassessmentresponsetypedef).
 
 ### get_evidence_folders_by_assessment_control
 
-Type annotations for `boto3.client("auditmanager").get_evidence_folders_by_assessment_control` method.
+Type annotations for
+`boto3.client("auditmanager").get_evidence_folders_by_assessment_control`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control]
+Boto3 documentation:
+[AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
 
-```python
-def get_evidence_folders_by_assessment_control(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    controlId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetEvidenceFoldersByAssessmentControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `controlId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetEvidenceFoldersByAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefoldersbyassessmentcontrolresponsetypedef).
 
 ### get_organization_admin_account
 
-Type annotations for `boto3.client("auditmanager").get_organization_admin_account` method.
+Type annotations for
+`boto3.client("auditmanager").get_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account]
+Boto3 documentation:
+[AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
 
-```python
-def get_organization_admin_account(
-    self
-) -> GetOrganizationAdminAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetOrganizationAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getorganizationadminaccountresponsetypedef).
 
 ### get_services_in_scope
 
-Type annotations for `boto3.client("auditmanager").get_services_in_scope` method.
+Type annotations for `boto3.client("auditmanager").get_services_in_scope`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope]
+Boto3 documentation:
+[AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
 
-```python
-def get_services_in_scope(
-    self
-) -> GetServicesInScopeResponseTypeDef:
-    pass
-```
+Returns
+[GetServicesInScopeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getservicesinscoperesponsetypedef).
 
 ### get_settings
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings]
+Boto3 documentation:
+[AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings)
 
-```python
-def get_settings(
-    self,
-    attribute: SettingAttribute
-) -> GetSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `attribute`:
+  [SettingAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#settingattribute)
+  *(required)*
+
+Returns
+[GetSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getsettingsresponsetypedef).
 
 ### list_assessment_frameworks
 
-Type annotations for `boto3.client("auditmanager").list_assessment_frameworks` method.
+Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks]
+Boto3 documentation:
+[AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
 
-```python
-def list_assessment_frameworks(
-    self,
-    frameworkType: FrameworkType,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentFrameworksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `frameworkType`:
+  [FrameworkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#frameworktype)
+  *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentFrameworksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentframeworksresponsetypedef).
 
 ### list_assessment_reports
 
-Type annotations for `boto3.client("auditmanager").list_assessment_reports` method.
+Type annotations for `boto3.client("auditmanager").list_assessment_reports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports]
+Boto3 documentation:
+[AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
 
-```python
-def list_assessment_reports(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentreportsresponsetypedef).
 
 ### list_assessments
 
 Type annotations for `boto3.client("auditmanager").list_assessments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments]
+Boto3 documentation:
+[AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
 
-```python
-def list_assessments(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentsresponsetypedef).
 
 ### list_controls
 
 Type annotations for `boto3.client("auditmanager").list_controls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls]
+Boto3 documentation:
+[AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls)
 
-```python
-def list_controls(
-    self,
-    controlType: ControlType,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListControlsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `controlType`:
+  [ControlType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controltype)
+  *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListControlsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listcontrolsresponsetypedef).
 
 ### list_keywords_for_data_source
 
-Type annotations for `boto3.client("auditmanager").list_keywords_for_data_source` method.
+Type annotations for
+`boto3.client("auditmanager").list_keywords_for_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source]
+Boto3 documentation:
+[AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
 
-```python
-def list_keywords_for_data_source(
-    self,
-    source: SourceType,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListKeywordsForDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `source`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcetype)
+  *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListKeywordsForDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listkeywordsfordatasourceresponsetypedef).
 
 ### list_notifications
 
 Type annotations for `boto3.client("auditmanager").list_notifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications]
+Boto3 documentation:
+[AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
 
-```python
-def list_notifications(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListNotificationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListNotificationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listnotificationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("auditmanager").list_tags_for_resource` method.
+Type annotations for `boto3.client("auditmanager").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource]
+Boto3 documentation:
+[AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### register_account
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account]
+Boto3 documentation:
+[AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account)
 
-```python
-def register_account(
-    self,
-    kmsKey: str = None,
-    delegatedAdminAccount: str = None
-) -> RegisterAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `kmsKey`: `str`
+- `delegatedAdminAccount`: `str`
+
+Returns
+[RegisterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#registeraccountresponsetypedef).
 
 ### register_organization_admin_account
 
-Type annotations for `boto3.client("auditmanager").register_organization_admin_account` method.
+Type annotations for
+`boto3.client("auditmanager").register_organization_admin_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account]
+Boto3 documentation:
+[AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
 
-```python
-def register_organization_admin_account(
-    self,
-    adminAccountId: str
-) -> RegisterOrganizationAdminAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `adminAccountId`: `str` *(required)*
+
+Returns
+[RegisterOrganizationAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#registerorganizationadminaccountresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("auditmanager").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource]
+Boto3 documentation:
+[AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("auditmanager").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource]
+Boto3 documentation:
+[AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_assessment
 
 Type annotations for `boto3.client("auditmanager").update_assessment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment]
+Boto3 documentation:
+[AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
 
-```python
-def update_assessment(
-    self,
-    assessmentId: str,
-    scope: "ScopeTypeDef",
-    assessmentName: str = None,
-    assessmentDescription: str = None,
-    assessmentReportsDestination: "AssessmentReportsDestinationTypeDef" = None,
-    roles: List["RoleTypeDef"] = None
-) -> UpdateAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `scope`:
+  [ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#scopetypedef)
+  *(required)*
+- `assessmentName`: `str`
+- `assessmentDescription`: `str`
+- `assessmentReportsDestination`:
+  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
+- `roles`:
+  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+
+Returns
+[UpdateAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentresponsetypedef).
 
 ### update_assessment_control
 
-Type annotations for `boto3.client("auditmanager").update_assessment_control` method.
+Type annotations for `boto3.client("auditmanager").update_assessment_control`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control]
+Boto3 documentation:
+[AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
 
-```python
-def update_assessment_control(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    controlId: str,
-    controlStatus: ControlStatus = None,
-    commentBody: str = None
-) -> UpdateAssessmentControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `controlId`: `str` *(required)*
+- `controlStatus`:
+  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlstatus)
+- `commentBody`: `str`
+
+Returns
+[UpdateAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentcontrolresponsetypedef).
 
 ### update_assessment_control_set_status
 
-Type annotations for `boto3.client("auditmanager").update_assessment_control_set_status` method.
+Type annotations for
+`boto3.client("auditmanager").update_assessment_control_set_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status]
+Boto3 documentation:
+[AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
 
-```python
-def update_assessment_control_set_status(
-    self,
-    assessmentId: str,
-    controlSetId: str,
-    status: ControlSetStatus,
-    comment: str
-) -> UpdateAssessmentControlSetStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `controlSetId`: `str` *(required)*
+- `status`:
+  [ControlSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlsetstatus)
+  *(required)*
+- `comment`: `str` *(required)*
+
+Returns
+[UpdateAssessmentControlSetStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentcontrolsetstatusresponsetypedef).
 
 ### update_assessment_framework
 
-Type annotations for `boto3.client("auditmanager").update_assessment_framework` method.
+Type annotations for `boto3.client("auditmanager").update_assessment_framework`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework]
+Boto3 documentation:
+[AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
 
-```python
-def update_assessment_framework(
-    self,
-    frameworkId: str,
-    name: str,
-    controlSets: List[UpdateAssessmentFrameworkControlSetTypeDef],
-    description: str = None,
-    complianceType: str = None
-) -> UpdateAssessmentFrameworkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `frameworkId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `controlSets`:
+  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentframeworkcontrolsettypedef)\]
+  *(required)*
+- `description`: `str`
+- `complianceType`: `str`
+
+Returns
+[UpdateAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentframeworkresponsetypedef).
 
 ### update_assessment_status
 
-Type annotations for `boto3.client("auditmanager").update_assessment_status` method.
+Type annotations for `boto3.client("auditmanager").update_assessment_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status]
+Boto3 documentation:
+[AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
 
-```python
-def update_assessment_status(
-    self,
-    assessmentId: str,
-    status: AssessmentStatus
-) -> UpdateAssessmentStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentId`: `str` *(required)*
+- `status`:
+  [AssessmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentstatus)
+  *(required)*
+
+Returns
+[UpdateAssessmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentstatusresponsetypedef).
 
 ### update_control
 
 Type annotations for `boto3.client("auditmanager").update_control` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control]
+Boto3 documentation:
+[AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control)
 
-```python
-def update_control(
-    self,
-    controlId: str,
-    name: str,
-    controlMappingSources: List["ControlMappingSourceTypeDef"],
-    description: str = None,
-    testingInformation: str = None,
-    actionPlanTitle: str = None,
-    actionPlanInstructions: str = None
-) -> UpdateControlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `controlId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `controlMappingSources`:
+  `List`\[[ControlMappingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlmappingsourcetypedef)\]
+  *(required)*
+- `description`: `str`
+- `testingInformation`: `str`
+- `actionPlanTitle`: `str`
+- `actionPlanInstructions`: `str`
+
+Returns
+[UpdateControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updatecontrolresponsetypedef).
 
 ### update_settings
 
 Type annotations for `boto3.client("auditmanager").update_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings]
+Boto3 documentation:
+[AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
 
-```python
-def update_settings(
-    self,
-    snsTopic: str = None,
-    defaultAssessmentReportsDestination: "AssessmentReportsDestinationTypeDef" = None,
-    defaultProcessOwners: List["RoleTypeDef"] = None,
-    kmsKey: str = None
-) -> UpdateSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `snsTopic`: `str`
+- `defaultAssessmentReportsDestination`:
+  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
+- `defaultProcessOwners`:
+  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+- `kmsKey`: `str`
+
+Returns
+[UpdateSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updatesettingsresponsetypedef).
 
 ### validate_assessment_report_integrity
 
-Type annotations for `boto3.client("auditmanager").validate_assessment_report_integrity` method.
+Type annotations for
+`boto3.client("auditmanager").validate_assessment_report_integrity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity]
+Boto3 documentation:
+[AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
 
-```python
-def validate_assessment_report_integrity(
-    self,
-    s3RelativePath: str
-) -> ValidateAssessmentReportIntegrityResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `s3RelativePath`: `str` *(required)*
 
-
+Returns
+[ValidateAssessmentReportIntegrityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#validateassessmentreportintegrityresponsetypedef).

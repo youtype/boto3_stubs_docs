@@ -2,27 +2,30 @@
 
 > [Index](../README.md) > [SNS](./README.md) > SNSServiceResource
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [SNSServiceResource for boto3 SNS module](#snsserviceresource-for-boto3-sns-module)
   - [SNSServiceResource](#snsserviceresource)
-  - [Methods](#methods)
-    - [SNSServiceResource.PlatformApplication](#snsserviceresourceplatformapplication)
-    - [SNSServiceResource.PlatformEndpoint](#snsserviceresourceplatformendpoint)
-    - [SNSServiceResource.Subscription](#snsserviceresourcesubscription)
-    - [SNSServiceResource.Topic](#snsserviceresourcetopic)
-    - [SNSServiceResource.create_platform_application](#snsserviceresourcecreate_platform_application)
-    - [SNSServiceResource.create_topic](#snsserviceresourcecreate_topic)
-    - [SNSServiceResource.get_available_subresources](#snsserviceresourceget_available_subresources)
+  - [Attributes](#attributes)
   - [Collections](#collections)
-    - [SNSServiceResource.platform_applications](#snsserviceresourceplatform_applications)
-    - [SNSServiceResource.subscriptions](#snsserviceresourcesubscriptions)
-    - [SNSServiceResource.topics](#snsserviceresourcetopics)
+    - [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
+    - [ServiceResourceSubscriptionsCollection](#serviceresourcesubscriptionscollection)
+    - [ServiceResourceTopicsCollection](#serviceresourcetopicscollection)
+  - [Methods](#methods)
+    - [SNSServiceResource.PlatformApplication method](#snsserviceresourceplatformapplication-method)
+    - [SNSServiceResource.PlatformEndpoint method](#snsserviceresourceplatformendpoint-method)
+    - [SNSServiceResource.Subscription method](#snsserviceresourcesubscription-method)
+    - [SNSServiceResource.Topic method](#snsserviceresourcetopic-method)
+    - [SNSServiceResource.create_platform_application method](#snsserviceresourcecreate_platform_application-method)
+    - [SNSServiceResource.create_topic method](#snsserviceresourcecreate_topic-method)
+    - [SNSServiceResource.get_available_subresources method](#snsserviceresourceget_available_subresources-method)
   - [PlatformApplication](#platformapplication)
     - [PlatformApplication attributes](#platformapplication-attributes)
-    - [PlatformApplication methods](#platformapplication-methods)
     - [PlatformApplication collections](#platformapplication-collections)
+    - [PlatformApplication methods](#platformapplication-methods)
   - [PlatformEndpoint](#platformendpoint)
     - [PlatformEndpoint attributes](#platformendpoint-attributes)
     - [PlatformEndpoint methods](#platformendpoint-methods)
@@ -31,12 +34,13 @@ type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-bot
     - [Subscription methods](#subscription-methods)
   - [Topic](#topic)
     - [Topic attributes](#topic-attributes)
-    - [Topic methods](#topic-methods)
     - [Topic collections](#topic-collections)
+    - [Topic methods](#topic-methods)
 
 ## SNSServiceResource
 
-Type annotations for `boto3.resource("sns")`, included resources and collections.
+Type annotations for `boto3.resource("sns")`, included resources and
+collections.
 
 Can be used directly:
 
@@ -47,132 +51,22 @@ def get_sns_resource() -> SNSServiceResource:
     return boto3.resource("sns")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
+Boto3 documentation:
+[SNS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
 
+## Attributes
 
-## Methods
+- `platform_applications`:
+  [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
 
-### SNSServiceResource.PlatformApplication
+- `subscriptions`:
+  [ServiceResourceSubscriptionsCollection](#serviceresourcesubscriptionscollection)
 
-Type annotations for `boto3.resource("sns").PlatformApplication` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.PlatformApplication]
-
-Definition:
-
-```python
-def PlatformApplication(
-    self,
-    arn: str
-) -> _PlatformApplication:
-    pass
-```
-
-### SNSServiceResource.PlatformEndpoint
-
-Type annotations for `boto3.resource("sns").PlatformEndpoint` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.PlatformEndpoint]
-
-Definition:
-
-```python
-def PlatformEndpoint(
-    self,
-    arn: str
-) -> _PlatformEndpoint:
-    pass
-```
-
-### SNSServiceResource.Subscription
-
-Type annotations for `boto3.resource("sns").Subscription` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.Subscription]
-
-Definition:
-
-```python
-def Subscription(
-    self,
-    arn: str
-) -> _Subscription:
-    pass
-```
-
-### SNSServiceResource.Topic
-
-Type annotations for `boto3.resource("sns").Topic` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.Topic]
-
-Definition:
-
-```python
-def Topic(
-    self,
-    arn: str
-) -> _Topic:
-    pass
-```
-
-### SNSServiceResource.create_platform_application
-
-Type annotations for `boto3.resource("sns").create_platform_application` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.create_platform_application]
-
-Definition:
-
-```python
-def create_platform_application(
-    self,
-    Name: str,
-    Platform: str,
-    Attributes: Dict[str, str]
-) -> _PlatformApplication:
-    pass
-```
-
-### SNSServiceResource.create_topic
-
-Type annotations for `boto3.resource("sns").create_topic` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.create_topic]
-
-Definition:
-
-```python
-def create_topic(
-    self,
-    Name: str,
-    Attributes: Dict[str, str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> _Topic:
-    pass
-```
-
-### SNSServiceResource.get_available_subresources
-
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.SNSServiceResource.get_available_subresources]
-
-Definition:
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
+- `topics`: [ServiceResourceTopicsCollection](#serviceresourcetopicscollection)
 
 ## Collections
 
-### SNSServiceResource.platform_applications
+### ServiceResourcePlatformApplicationsCollection
 
 Type annotations for `boto3.resource("sns").platform_applications` collection.
 
@@ -182,52 +76,15 @@ Can be used directly:
 from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection,
 
 def get_collection() -> ServiceResourcePlatformApplicationsCollection:
-    return boto3.resource("sns").platform_applications(
-        ...
-    )
+    return boto3.resource("sns").platform_applications
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.ServiceResourcePlatformApplicationsCollection)
+Provides access to [PlatformApplication](#platformapplication) resource.
 
-Definition:
+Boto3 documentation:
+[SNS.ServiceResource.platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.platform_applications)
 
-```python
-class ServiceResourcePlatformApplicationsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourcePlatformApplicationsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        NextToken: str = None
-    ) -> "ServiceResourcePlatformApplicationsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourcePlatformApplicationsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourcePlatformApplicationsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["PlatformApplication"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["PlatformApplication"]:
-        pass
-```
-
-### SNSServiceResource.subscriptions
+### ServiceResourceSubscriptionsCollection
 
 Type annotations for `boto3.resource("sns").subscriptions` collection.
 
@@ -237,52 +94,15 @@ Can be used directly:
 from mypy_boto3_sns.service_resource import ServiceResourceSubscriptionsCollection,
 
 def get_collection() -> ServiceResourceSubscriptionsCollection:
-    return boto3.resource("sns").subscriptions(
-        ...
-    )
+    return boto3.resource("sns").subscriptions
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.ServiceResourceSubscriptionsCollection)
+Provides access to [Subscription](#subscription) resource.
 
-Definition:
+Boto3 documentation:
+[SNS.ServiceResource.subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.subscriptions)
 
-```python
-class ServiceResourceSubscriptionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceSubscriptionsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        NextToken: str = None
-    ) -> "ServiceResourceSubscriptionsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceSubscriptionsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceSubscriptionsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Subscription"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Subscription"]:
-        pass
-```
-
-### SNSServiceResource.topics
+### ServiceResourceTopicsCollection
 
 Type annotations for `boto3.resource("sns").topics` collection.
 
@@ -292,53 +112,108 @@ Can be used directly:
 from mypy_boto3_sns.service_resource import ServiceResourceTopicsCollection,
 
 def get_collection() -> ServiceResourceTopicsCollection:
-    return boto3.resource("sns").topics(
-        ...
-    )
+    return boto3.resource("sns").topics
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.ServiceResourceTopicsCollection)
+Provides access to [Topic](#topic) resource.
 
-Definition:
+Boto3 documentation:
+[SNS.ServiceResource.topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.topics)
 
-```python
-class ServiceResourceTopicsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceTopicsCollection":
-        pass
+## Methods
 
-    def filter(  # type: ignore
-        self,
-        NextToken: str = None
-    ) -> "ServiceResourceTopicsCollection":
-        pass
+### SNSServiceResource.PlatformApplication method
 
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceTopicsCollection":
-        pass
+Type annotations for `boto3.resource("sns").PlatformApplication` method.
 
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceTopicsCollection":
-        pass
+Boto3 documentation:
+[SNS.ServiceResource.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
 
-    def pages(
-        self
-    ) -> Iterator[List["Topic"]]:
-        pass
+Arguments:
 
-    def __iter__(
-        self
-    ) -> Iterator["Topic"]:
-        pass
-```
+- `arn`: `str` *(required)*
 
+Returns [PlatformApplication](#platformapplication).
 
+### SNSServiceResource.PlatformEndpoint method
 
+Type annotations for `boto3.resource("sns").PlatformEndpoint` method.
+
+Boto3 documentation:
+[SNS.ServiceResource.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
+
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns [PlatformEndpoint](#platformendpoint).
+
+### SNSServiceResource.Subscription method
+
+Type annotations for `boto3.resource("sns").Subscription` method.
+
+Boto3 documentation:
+[SNS.ServiceResource.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
+
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns [Subscription](#subscription).
+
+### SNSServiceResource.Topic method
+
+Type annotations for `boto3.resource("sns").Topic` method.
+
+Boto3 documentation:
+[SNS.ServiceResource.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
+
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns [Topic](#topic).
+
+### SNSServiceResource.create_platform_application method
+
+Type annotations for `boto3.resource("sns").create_platform_application`
+method.
+
+Boto3 documentation:
+[SNS.ServiceResource.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_platform_application)
+
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Platform`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns [PlatformApplication](#platformapplication).
+
+### SNSServiceResource.create_topic method
+
+Type annotations for `boto3.resource("sns").create_topic` method.
+
+Boto3 documentation:
+[SNS.ServiceResource.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_topic)
+
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+
+Returns [Topic](#topic).
+
+### SNSServiceResource.get_available_subresources method
+
+Type annotations for `boto3.resource("sns").get_available_subresources` method.
+
+Boto3 documentation:
+[SNS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.get_available_subresources)
+
+Returns `List`\[`str`\].
 
 ## PlatformApplication
 
@@ -353,115 +228,22 @@ def get_resource() -> PlatformApplication:
     return boto3.resource("sns").PlatformApplication(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
-
+Boto3 documentation:
+[SNS.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
 
 ### PlatformApplication attributes
 
-
-- `attributes`: `Dict[str, Any]`
-
+- `attributes`: `Dict`\[`str`, `Any`\]
 - `arn`: `str`
-
-- `endpoints`: `PlatformApplicationEndpointsCollection`
-
-
-
-
-### PlatformApplication methods
-
-
-#### PlatformApplication.create_platform_endpoint
-
-Type annotations for `boto3.resource("sns").create_platform_endpoint` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint]
-
-```python
-def create_platform_endpoint(
-    self,
-    Token: str,
-    CustomUserData: str = None,
-    Attributes: Dict[str, str] = None
-) -> _PlatformEndpoint:
-    pass
-```
-
-#### PlatformApplication.delete
-
-Type annotations for `boto3.resource("sns").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformApplication.get_available_subresources
-
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### PlatformApplication.load
-
-Type annotations for `boto3.resource("sns").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformApplication.reload
-
-Type annotations for `boto3.resource("sns").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformApplication.set_attributes
-
-Type annotations for `boto3.resource("sns").set_attributes` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes]
-
-```python
-def set_attributes(
-    self,
-    Attributes: Dict[str, str]
-) -> None:
-    pass
-```
-
-
-
+- `endpoints`:
+  [PlatformApplicationEndpointsCollection](#platformapplicationendpointscollection)
 
 ### PlatformApplication collections
 
-
 #### PlatformApplication.endpoints
 
-Type annotations for `boto3.resource("sns").PlatformApplication(...).endpoints` collection.
+Type annotations for `boto3.resource("sns").PlatformApplication(...).endpoints`
+collection.
 
 Can be used directly:
 
@@ -473,46 +255,68 @@ def get_collection() -> PlatformApplicationEndpointsCollection:
     return resource.endpoints
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.PlatformApplicationEndpointsCollection)
+Provides access to [PlatformEndpoint](#platformendpoint) resource.
 
-```python
-class PlatformApplicationEndpointsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PlatformApplicationEndpointsCollection":
-        pass
+Boto3 documentation:
+[SNS.PlatformApplication.PlatformApplicationEndpointsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.endpoints)
 
-    def filter(  # type: ignore
-        self,
-        NextToken: str = None
-    ) -> "PlatformApplicationEndpointsCollection":
-        pass
+### PlatformApplication methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "PlatformApplicationEndpointsCollection":
-        pass
+#### PlatformApplication.create_platform_endpoint method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "PlatformApplicationEndpointsCollection":
-        pass
+Type annotations for `boto3.resource("sns").create_platform_endpoint` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["PlatformEndpoint"]]:
-        pass
+Boto3 documentation:
+[SNS.PlatformApplication.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint)
 
-    def __iter__(
-        self
-    ) -> Iterator["PlatformEndpoint"]:
-        pass
-```
+Arguments:
 
+- `Token`: `str` *(required)*
+- `CustomUserData`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
 
+Returns [PlatformEndpoint](#platformendpoint).
 
+#### PlatformApplication.delete method
+
+Type annotations for `boto3.resource("sns").delete` method.
+
+Boto3 documentation:
+[SNS.PlatformApplication.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
+
+#### PlatformApplication.get_available_subresources method
+
+Type annotations for `boto3.resource("sns").get_available_subresources` method.
+
+Boto3 documentation:
+[SNS.PlatformApplication.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### PlatformApplication.load method
+
+Type annotations for `boto3.resource("sns").load` method.
+
+Boto3 documentation:
+[SNS.PlatformApplication.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load)
+
+#### PlatformApplication.reload method
+
+Type annotations for `boto3.resource("sns").reload` method.
+
+Boto3 documentation:
+[SNS.PlatformApplication.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload)
+
+#### PlatformApplication.set_attributes method
+
+Type annotations for `boto3.resource("sns").set_attributes` method.
+
+Boto3 documentation:
+[SNS.PlatformApplication.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes)
+
+Arguments:
+
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 ## PlatformEndpoint
 
@@ -527,113 +331,78 @@ def get_resource() -> PlatformEndpoint:
     return boto3.resource("sns").PlatformEndpoint(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
-
+Boto3 documentation:
+[SNS.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
 
 ### PlatformEndpoint attributes
 
-
-- `attributes`: `Dict[str, Any]`
-
+- `attributes`: `Dict`\[`str`, `Any`\]
 - `arn`: `str`
-
-
-
 
 ### PlatformEndpoint methods
 
-
-#### PlatformEndpoint.delete
+#### PlatformEndpoint.delete method
 
 Type annotations for `boto3.resource("sns").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete]
+Boto3 documentation:
+[SNS.PlatformEndpoint.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformEndpoint.get_available_subresources
+#### PlatformEndpoint.get_available_subresources method
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.get_available_subresources]
+Boto3 documentation:
+[SNS.PlatformEndpoint.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### PlatformEndpoint.load
+#### PlatformEndpoint.load method
 
 Type annotations for `boto3.resource("sns").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.load]
+Boto3 documentation:
+[SNS.PlatformEndpoint.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformEndpoint.publish
+#### PlatformEndpoint.publish method
 
 Type annotations for `boto3.resource("sns").publish` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish]
+Boto3 documentation:
+[SNS.PlatformEndpoint.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish)
 
-```python
-def publish(
-    self,
-    Message: str,
-    TopicArn: str = None,
-    PhoneNumber: str = None,
-    Subject: str = None,
-    MessageStructure: str = None,
-    MessageAttributes: Dict[str, MessageAttributeValueTypeDef] = None,
-    MessageDeduplicationId: str = None,
-    MessageGroupId: str = None
-) -> PublishResponseTypeDef:
-    pass
-```
+Arguments:
 
-#### PlatformEndpoint.reload
+- `Message`: `str` *(required)*
+- `TopicArn`: `str`
+- `PhoneNumber`: `str`
+- `Subject`: `str`
+- `MessageStructure`: `str`
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+- `MessageDeduplicationId`: `str`
+- `MessageGroupId`: `str`
+
+Returns
+[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
+
+#### PlatformEndpoint.reload method
 
 Type annotations for `boto3.resource("sns").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload]
+Boto3 documentation:
+[SNS.PlatformEndpoint.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### PlatformEndpoint.set_attributes
+#### PlatformEndpoint.set_attributes method
 
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes]
+Boto3 documentation:
+[SNS.PlatformEndpoint.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes)
 
-```python
-def set_attributes(
-    self,
-    Attributes: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 ## Subscription
 
@@ -648,93 +417,57 @@ def get_resource() -> Subscription:
     return boto3.resource("sns").Subscription(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
-
+Boto3 documentation:
+[SNS.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
 
 ### Subscription attributes
 
-
-- `attributes`: `Dict[str, Any]`
-
+- `attributes`: `Dict`\[`str`, `Any`\]
 - `arn`: `str`
-
-
-
 
 ### Subscription methods
 
-
-#### Subscription.delete
+#### Subscription.delete method
 
 Type annotations for `boto3.resource("sns").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete]
+Boto3 documentation:
+[SNS.Subscription.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### Subscription.get_available_subresources
+#### Subscription.get_available_subresources method
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.get_available_subresources]
+Boto3 documentation:
+[SNS.Subscription.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### Subscription.load
+#### Subscription.load method
 
 Type annotations for `boto3.resource("sns").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load]
+Boto3 documentation:
+[SNS.Subscription.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Subscription.reload
+#### Subscription.reload method
 
 Type annotations for `boto3.resource("sns").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload]
+Boto3 documentation:
+[SNS.Subscription.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Subscription.set_attributes
+#### Subscription.set_attributes method
 
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes]
+Boto3 documentation:
+[SNS.Subscription.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes)
 
-```python
-def set_attributes(
-    self,
-    AttributeName: str,
-    AttributeValue: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `AttributeName`: `str` *(required)*
+- `AttributeValue`: `str`
 
 ## Topic
 
@@ -749,183 +482,21 @@ def get_resource() -> Topic:
     return boto3.resource("sns").Topic(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
-
+Boto3 documentation:
+[SNS.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
 
 ### Topic attributes
 
-
-- `attributes`: `Dict[str, Any]`
-
+- `attributes`: `Dict`\[`str`, `Any`\]
 - `arn`: `str`
-
-- `subscriptions`: `TopicSubscriptionsCollection`
-
-
-
-
-### Topic methods
-
-
-#### Topic.add_permission
-
-Type annotations for `boto3.resource("sns").add_permission` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission]
-
-```python
-def add_permission(
-    self,
-    Label: str,
-    AWSAccountId: List[str],
-    ActionName: List[str]
-) -> None:
-    pass
-```
-
-#### Topic.confirm_subscription
-
-Type annotations for `boto3.resource("sns").confirm_subscription` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription]
-
-```python
-def confirm_subscription(
-    self,
-    Token: str,
-    AuthenticateOnUnsubscribe: str = None
-) -> _Subscription:
-    pass
-```
-
-#### Topic.delete
-
-Type annotations for `boto3.resource("sns").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### Topic.get_available_subresources
-
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Topic.load
-
-Type annotations for `boto3.resource("sns").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Topic.publish
-
-Type annotations for `boto3.resource("sns").publish` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish]
-
-```python
-def publish(
-    self,
-    Message: str,
-    TargetArn: str = None,
-    PhoneNumber: str = None,
-    Subject: str = None,
-    MessageStructure: str = None,
-    MessageAttributes: Dict[str, MessageAttributeValueTypeDef] = None,
-    MessageDeduplicationId: str = None,
-    MessageGroupId: str = None
-) -> PublishResponseTypeDef:
-    pass
-```
-
-#### Topic.reload
-
-Type annotations for `boto3.resource("sns").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Topic.remove_permission
-
-Type annotations for `boto3.resource("sns").remove_permission` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission]
-
-```python
-def remove_permission(
-    self,
-    Label: str
-) -> None:
-    pass
-```
-
-#### Topic.set_attributes
-
-Type annotations for `boto3.resource("sns").set_attributes` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes]
-
-```python
-def set_attributes(
-    self,
-    AttributeName: str,
-    AttributeValue: str = None
-) -> None:
-    pass
-```
-
-#### Topic.subscribe
-
-Type annotations for `boto3.resource("sns").subscribe` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe]
-
-```python
-def subscribe(
-    self,
-    Protocol: str,
-    Endpoint: str = None,
-    Attributes: Dict[str, str] = None,
-    ReturnSubscriptionArn: bool = None
-) -> _Subscription:
-    pass
-```
-
-
-
+- `subscriptions`: [TopicSubscriptionsCollection](#topicsubscriptionscollection)
 
 ### Topic collections
 
-
 #### Topic.subscriptions
 
-Type annotations for `boto3.resource("sns").Topic(...).subscriptions` collection.
+Type annotations for `boto3.resource("sns").Topic(...).subscriptions`
+collection.
 
 Can be used directly:
 
@@ -937,42 +508,127 @@ def get_collection() -> TopicSubscriptionsCollection:
     return resource.subscriptions
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.TopicSubscriptionsCollection)
+Provides access to [Subscription](#subscription) resource.
 
-```python
-class TopicSubscriptionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "TopicSubscriptionsCollection":
-        pass
+Boto3 documentation:
+[SNS.Topic.TopicSubscriptionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscriptions)
 
-    def filter(  # type: ignore
-        self,
-        NextToken: str = None
-    ) -> "TopicSubscriptionsCollection":
-        pass
+### Topic methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "TopicSubscriptionsCollection":
-        pass
+#### Topic.add_permission method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "TopicSubscriptionsCollection":
-        pass
+Type annotations for `boto3.resource("sns").add_permission` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["Subscription"]]:
-        pass
+Boto3 documentation:
+[SNS.Topic.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission)
 
-    def __iter__(
-        self
-    ) -> Iterator["Subscription"]:
-        pass
-```
+Arguments:
 
+- `Label`: `str` *(required)*
+- `AWSAccountId`: `List`\[`str`\] *(required)*
+- `ActionName`: `List`\[`str`\] *(required)*
 
+#### Topic.confirm_subscription method
+
+Type annotations for `boto3.resource("sns").confirm_subscription` method.
+
+Boto3 documentation:
+[SNS.Topic.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription)
+
+Arguments:
+
+- `Token`: `str` *(required)*
+- `AuthenticateOnUnsubscribe`: `str`
+
+Returns [Subscription](#subscription).
+
+#### Topic.delete method
+
+Type annotations for `boto3.resource("sns").delete` method.
+
+Boto3 documentation:
+[SNS.Topic.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
+
+#### Topic.get_available_subresources method
+
+Type annotations for `boto3.resource("sns").get_available_subresources` method.
+
+Boto3 documentation:
+[SNS.Topic.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Topic.load method
+
+Type annotations for `boto3.resource("sns").load` method.
+
+Boto3 documentation:
+[SNS.Topic.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.load)
+
+#### Topic.publish method
+
+Type annotations for `boto3.resource("sns").publish` method.
+
+Boto3 documentation:
+[SNS.Topic.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish)
+
+Arguments:
+
+- `Message`: `str` *(required)*
+- `TargetArn`: `str`
+- `PhoneNumber`: `str`
+- `Subject`: `str`
+- `MessageStructure`: `str`
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+- `MessageDeduplicationId`: `str`
+- `MessageGroupId`: `str`
+
+Returns
+[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
+
+#### Topic.reload method
+
+Type annotations for `boto3.resource("sns").reload` method.
+
+Boto3 documentation:
+[SNS.Topic.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload)
+
+#### Topic.remove_permission method
+
+Type annotations for `boto3.resource("sns").remove_permission` method.
+
+Boto3 documentation:
+[SNS.Topic.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission)
+
+Arguments:
+
+- `Label`: `str` *(required)*
+
+#### Topic.set_attributes method
+
+Type annotations for `boto3.resource("sns").set_attributes` method.
+
+Boto3 documentation:
+[SNS.Topic.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes)
+
+Arguments:
+
+- `AttributeName`: `str` *(required)*
+- `AttributeValue`: `str`
+
+#### Topic.subscribe method
+
+Type annotations for `boto3.resource("sns").subscribe` method.
+
+Boto3 documentation:
+[SNS.Topic.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe)
+
+Arguments:
+
+- `Protocol`: `str` *(required)*
+- `Endpoint`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `ReturnSubscriptionArn`: `bool`
+
+Returns [Subscription](#subscription).

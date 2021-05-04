@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > Structures
 
-Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+Auto-generated documentation for
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+type annotations stubs module
+[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [Typed dictionaries for boto3 ServiceCatalog module](#typed-dictionaries-for-boto3-servicecatalog-module)
   - [AccessLevelFilterTypeDef](#accesslevelfiltertypedef)
@@ -134,13 +136,11 @@ type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/proje
 from mypy_boto3_servicecatalog.type_defs import AccessLevelFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `AccessLevelFilterKey`
-- `Value`: `str`
 
+- `Key`:
+  [AccessLevelFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#accesslevelfilterkey)
+- `Value`: `str`
 
 ## BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
 
@@ -148,13 +148,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `FailedServiceActionAssociations`: `List["FailedServiceActionAssociationTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `FailedServiceActionAssociations`:
+  `List`\[[FailedServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#failedserviceactionassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
 
@@ -162,13 +161,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `FailedServiceActionAssociations`: `List["FailedServiceActionAssociationTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `FailedServiceActionAssociations`:
+  `List`\[[FailedServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#failedserviceactionassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## BudgetDetailTypeDef
 
@@ -176,12 +174,9 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import BudgetDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BudgetName`: `str`
 
+- `BudgetName`: `str`
 
 ## CloudWatchDashboardTypeDef
 
@@ -189,12 +184,9 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import CloudWatchDashboardTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## ConstraintDetailTypeDef
 
@@ -202,10 +194,8 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ConstraintDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConstraintId`: `str`
 - `Type`: `str`
 - `Description`: `str`
@@ -213,20 +203,16 @@ Optional fields:
 - `ProductId`: `str`
 - `PortfolioId`: `str`
 
-
 ## ConstraintSummaryTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import ConstraintSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Type`: `str`
 - `Description`: `str`
-
 
 ## CopyProductOutputTypeDef
 
@@ -234,13 +220,11 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import CopyProductOutputTypeDef
 ```
 
-
 Required fields:
+
 - `CopyProductToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateConstraintOutputTypeDef
 
@@ -248,15 +232,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputTypeDef
 ```
 
-
 Required fields:
-- `ConstraintDetail`: `"ConstraintDetailTypeDef"`
+
+- `ConstraintDetail`:
+  [ConstraintDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreatePortfolioOutputTypeDef
 
@@ -264,14 +248,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetail`: `"PortfolioDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PortfolioDetail`:
+  [PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreatePortfolioShareOutputTypeDef
 
@@ -279,13 +263,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PortfolioShareToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateProductOutputTypeDef
 
@@ -293,15 +275,16 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateProductOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewDetail`: `"ProductViewDetailTypeDef"`
-- `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProductViewDetail`:
+  [ProductViewDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewdetailtypedef)
+- `ProvisioningArtifactDetail`:
+  [ProvisioningArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactdetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateProvisionedProductPlanOutputTypeDef
 
@@ -309,17 +292,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PlanName`: `str`
 - `PlanId`: `str`
 - `ProvisionProductId`: `str`
 - `ProvisionedProductName`: `str`
 - `ProvisioningArtifactId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateProvisioningArtifactOutputTypeDef
 
@@ -327,15 +308,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
-- `Info`: `Dict[str, str]`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisioningArtifactDetail`:
+  [ProvisioningArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactdetailtypedef)
+- `Info`: `Dict`\[`str`, `str`\]
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateServiceActionOutputTypeDef
 
@@ -343,13 +324,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ServiceActionDetail`:
+  [ServiceActionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## CreateTagOptionOutputTypeDef
 
@@ -357,13 +337,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputTypeDef
 ```
 
-
 Required fields:
-- `TagOptionDetail`: `"TagOptionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TagOptionDetail`:
+  [TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DeletePortfolioShareOutputTypeDef
 
@@ -371,13 +350,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PortfolioShareToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeConstraintOutputTypeDef
 
@@ -385,15 +362,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputTypeDef
 ```
 
-
 Required fields:
-- `ConstraintDetail`: `"ConstraintDetailTypeDef"`
+
+- `ConstraintDetail`:
+  [ConstraintDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeCopyProductStatusOutputTypeDef
 
@@ -401,15 +378,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputTypeDef
 ```
 
-
 Required fields:
-- `CopyProductStatus`: `CopyProductStatus`
+
+- `CopyProductStatus`:
+  [CopyProductStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#copyproductstatus)
 - `TargetProductId`: `str`
 - `StatusDetail`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribePortfolioOutputTypeDef
 
@@ -417,16 +393,18 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetail`: `"PortfolioDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `TagOptions`: `List["TagOptionDetailTypeDef"]`
-- `Budgets`: `List["BudgetDetailTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PortfolioDetail`:
+  [PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `TagOptions`:
+  `List`\[[TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#budgetdetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribePortfolioShareStatusOutputTypeDef
 
@@ -434,17 +412,17 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PortfolioShareToken`: `str`
 - `PortfolioId`: `str`
 - `OrganizationNodeValue`: `str`
-- `Status`: `ShareStatus`
-- `ShareDetails`: `"ShareDetailsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sharestatus)
+- `ShareDetails`:
+  [ShareDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#sharedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribePortfolioSharesOutputTypeDef
 
@@ -452,14 +430,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NextPageToken`: `str`
-- `PortfolioShareDetails`: `List["PortfolioShareDetailTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `PortfolioShareDetails`:
+  `List`\[[PortfolioShareDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliosharedetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProductAsAdminOutputTypeDef
 
@@ -467,17 +444,20 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewDetail`: `"ProductViewDetailTypeDef"`
-- `ProvisioningArtifactSummaries`: `List["ProvisioningArtifactSummaryTypeDef"]`
-- `Tags`: `List["TagTypeDef"]`
-- `TagOptions`: `List["TagOptionDetailTypeDef"]`
-- `Budgets`: `List["BudgetDetailTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProductViewDetail`:
+  [ProductViewDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewdetailtypedef)
+- `ProvisioningArtifactSummaries`:
+  `List`\[[ProvisioningArtifactSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactsummarytypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `TagOptions`:
+  `List`\[[TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#budgetdetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProductOutputTypeDef
 
@@ -485,16 +465,18 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
-- `ProvisioningArtifacts`: `List["ProvisioningArtifactTypeDef"]`
-- `Budgets`: `List["BudgetDetailTypeDef"]`
-- `LaunchPaths`: `List["LaunchPathTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProductViewSummary`:
+  [ProductViewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewsummarytypedef)
+- `ProvisioningArtifacts`:
+  `List`\[[ProvisioningArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifacttypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#budgetdetailtypedef)\]
+- `LaunchPaths`:
+  `List`\[[LaunchPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#launchpathtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProductViewOutputTypeDef
 
@@ -502,14 +484,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
-- `ProvisioningArtifacts`: `List["ProvisioningArtifactTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProductViewSummary`:
+  [ProductViewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewsummarytypedef)
+- `ProvisioningArtifacts`:
+  `List`\[[ProvisioningArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifacttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProvisionedProductOutputTypeDef
 
@@ -517,14 +499,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedProductDetail`: `"ProvisionedProductDetailTypeDef"`
-- `CloudWatchDashboards`: `List["CloudWatchDashboardTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisionedProductDetail`:
+  [ProvisionedProductDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionedproductdetailtypedef)
+- `CloudWatchDashboards`:
+  `List`\[[CloudWatchDashboardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#cloudwatchdashboardtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProvisionedProductPlanOutputTypeDef
 
@@ -532,15 +514,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedProductPlanDetails`: `"ProvisionedProductPlanDetailsTypeDef"`
-- `ResourceChanges`: `List["ResourceChangeTypeDef"]`
+
+- `ProvisionedProductPlanDetails`:
+  [ProvisionedProductPlanDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionedproductplandetailstypedef)
+- `ResourceChanges`:
+  `List`\[[ResourceChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#resourcechangetypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProvisioningArtifactOutputTypeDef
 
@@ -548,15 +530,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
-- `Info`: `Dict[str, str]`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisioningArtifactDetail`:
+  [ProvisioningArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactdetailtypedef)
+- `Info`: `Dict`\[`str`, `str`\]
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeProvisioningParametersOutputTypeDef
 
@@ -564,18 +546,22 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactParameters`: `List["ProvisioningArtifactParameterTypeDef"]`
-- `ConstraintSummaries`: `List["ConstraintSummaryTypeDef"]`
-- `UsageInstructions`: `List["UsageInstructionTypeDef"]`
-- `TagOptions`: `List["TagOptionSummaryTypeDef"]`
-- `ProvisioningArtifactPreferences`: `"ProvisioningArtifactPreferencesTypeDef"`
-- `ProvisioningArtifactOutputs`: `List["ProvisioningArtifactOutputTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisioningArtifactParameters`:
+  `List`\[[ProvisioningArtifactParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactparametertypedef)\]
+- `ConstraintSummaries`:
+  `List`\[[ConstraintSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintsummarytypedef)\]
+- `UsageInstructions`:
+  `List`\[[UsageInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#usageinstructiontypedef)\]
+- `TagOptions`:
+  `List`\[[TagOptionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptionsummarytypedef)\]
+- `ProvisioningArtifactPreferences`:
+  [ProvisioningArtifactPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactpreferencestypedef)
+- `ProvisioningArtifactOutputs`:
+  `List`\[[ProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactoutputtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeRecordOutputTypeDef
 
@@ -583,15 +569,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `RecordOutputs`: `List["RecordOutputTypeDef"]`
+
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `RecordOutputs`:
+  `List`\[[RecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recordoutputtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeServiceActionExecutionParametersOutputTypeDef
 
@@ -599,13 +585,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionParametersOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionParameters`: `List["ExecutionParameterTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ServiceActionParameters`:
+  `List`\[[ExecutionParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#executionparametertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeServiceActionOutputTypeDef
 
@@ -613,13 +598,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ServiceActionDetail`:
+  [ServiceActionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## DescribeTagOptionOutputTypeDef
 
@@ -627,13 +611,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputTypeDef
 ```
 
-
 Required fields:
-- `TagOptionDetail`: `"TagOptionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TagOptionDetail`:
+  [TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ExecuteProvisionedProductPlanOutputTypeDef
 
@@ -641,13 +624,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ExecuteProvisionedProductServiceActionOutputTypeDef
 
@@ -655,13 +637,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductServiceActionOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ExecutionParameterTypeDef
 
@@ -669,14 +650,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ExecutionParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Type`: `str`
-- `DefaultValues`: `List[str]`
-
+- `DefaultValues`: `List`\[`str`\]
 
 ## FailedServiceActionAssociationTypeDef
 
@@ -684,16 +662,14 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import FailedServiceActionAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ServiceActionId`: `str`
 - `ProductId`: `str`
 - `ProvisioningArtifactId`: `str`
-- `ErrorCode`: `ServiceActionAssociationErrorCode`
+- `ErrorCode`:
+  [ServiceActionAssociationErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactionassociationerrorcode)
 - `ErrorMessage`: `str`
-
 
 ## GetAWSOrganizationsAccessStatusOutputTypeDef
 
@@ -701,13 +677,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusOutputTypeDef
 ```
 
-
 Required fields:
-- `AccessStatus`: `AccessStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `AccessStatus`:
+  [AccessStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#accessstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## GetProvisionedProductOutputsOutputTypeDef
 
@@ -715,14 +690,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutputTypeDef
 ```
 
-
 Required fields:
-- `Outputs`: `List["RecordOutputTypeDef"]`
+
+- `Outputs`:
+  `List`\[[RecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recordoutputtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ImportAsProvisionedProductOutputTypeDef
 
@@ -730,13 +704,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## LaunchPathSummaryTypeDef
 
@@ -744,15 +717,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import LaunchPathSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
-- `ConstraintSummaries`: `List["ConstraintSummaryTypeDef"]`
-- `Tags`: `List["TagTypeDef"]`
-- `Name`: `str`
 
+- `Id`: `str`
+- `ConstraintSummaries`:
+  `List`\[[ConstraintSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintsummarytypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `Name`: `str`
 
 ## LaunchPathTypeDef
 
@@ -760,13 +732,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import LaunchPathTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-
 
 ## ListAcceptedPortfolioSharesOutputTypeDef
 
@@ -774,14 +743,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
+
+- `PortfolioDetails`:
+  `List`\[[PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListBudgetsForResourceOutputTypeDef
 
@@ -789,14 +757,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Budgets`: `List["BudgetDetailTypeDef"]`
+
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#budgetdetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListConstraintsForPortfolioOutputTypeDef
 
@@ -804,14 +771,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutputTypeDef
 ```
 
-
 Required fields:
-- `ConstraintDetails`: `List["ConstraintDetailTypeDef"]`
+
+- `ConstraintDetails`:
+  `List`\[[ConstraintDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintdetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListLaunchPathsOutputTypeDef
 
@@ -819,14 +785,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputTypeDef
 ```
 
-
 Required fields:
-- `LaunchPathSummaries`: `List["LaunchPathSummaryTypeDef"]`
+
+- `LaunchPathSummaries`:
+  `List`\[[LaunchPathSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#launchpathsummarytypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListOrganizationPortfolioAccessOutputTypeDef
 
@@ -834,14 +799,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessOutputTypeDef
 ```
 
-
 Required fields:
-- `OrganizationNodes`: `List["OrganizationNodeTypeDef"]`
+
+- `OrganizationNodes`:
+  `List`\[[OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListPortfolioAccessOutputTypeDef
 
@@ -849,14 +813,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessOutputTypeDef
 ```
 
-
 Required fields:
-- `AccountIds`: `List[str]`
+
+- `AccountIds`: `List`\[`str`\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListPortfoliosForProductOutputTypeDef
 
@@ -864,14 +826,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
+
+- `PortfolioDetails`:
+  `List`\[[PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListPortfoliosOutputTypeDef
 
@@ -879,14 +840,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListPortfoliosOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
+
+- `PortfolioDetails`:
+  `List`\[[PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListPrincipalsForPortfolioOutputTypeDef
 
@@ -894,14 +854,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioOutputTypeDef
 ```
 
-
 Required fields:
-- `Principals`: `List["PrincipalTypeDef"]`
+
+- `Principals`:
+  `List`\[[PrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#principaltypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListProvisionedProductPlansOutputTypeDef
 
@@ -909,14 +868,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedProductPlans`: `List["ProvisionedProductPlanSummaryTypeDef"]`
+
+- `ProvisionedProductPlans`:
+  `List`\[[ProvisionedProductPlanSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionedproductplansummarytypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListProvisioningArtifactsForServiceActionOutputTypeDef
 
@@ -924,14 +882,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServiceActionOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactViews`: `List["ProvisioningArtifactViewTypeDef"]`
+
+- `ProvisioningArtifactViews`:
+  `List`\[[ProvisioningArtifactViewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactviewtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListProvisioningArtifactsOutputTypeDef
 
@@ -939,14 +896,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactDetails`: `List["ProvisioningArtifactDetailTypeDef"]`
+
+- `ProvisioningArtifactDetails`:
+  `List`\[[ProvisioningArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactdetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListRecordHistoryOutputTypeDef
 
@@ -954,14 +910,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetails`: `List["RecordDetailTypeDef"]`
+
+- `RecordDetails`:
+  `List`\[[RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListRecordHistorySearchFilterTypeDef
 
@@ -969,13 +924,10 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListRecordHistorySearchFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## ListResourcesForTagOptionOutputTypeDef
 
@@ -983,14 +935,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionOutputTypeDef
 ```
 
-
 Required fields:
-- `ResourceDetails`: `List["ResourceDetailTypeDef"]`
+
+- `ResourceDetails`:
+  `List`\[[ResourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#resourcedetailtypedef)\]
 - `PageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListServiceActionsForProvisioningArtifactOutputTypeDef
 
@@ -998,14 +949,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionSummaries`: `List["ServiceActionSummaryTypeDef"]`
+
+- `ServiceActionSummaries`:
+  `List`\[[ServiceActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionsummarytypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListServiceActionsOutputTypeDef
 
@@ -1013,14 +963,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListServiceActionsOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionSummaries`: `List["ServiceActionSummaryTypeDef"]`
+
+- `ServiceActionSummaries`:
+  `List`\[[ServiceActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionsummarytypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListStackInstancesForProvisionedProductOutputTypeDef
 
@@ -1028,14 +977,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisionedProductOutputTypeDef
 ```
 
-
 Required fields:
-- `StackInstances`: `List["StackInstanceTypeDef"]`
+
+- `StackInstances`:
+  `List`\[[StackInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#stackinstancetypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ListTagOptionsFiltersTypeDef
 
@@ -1043,14 +991,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ListTagOptionsFiltersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
 - `Active`: `bool`
-
 
 ## ListTagOptionsOutputTypeDef
 
@@ -1058,14 +1003,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputTypeDef
 ```
 
-
 Required fields:
-- `TagOptionDetails`: `List["TagOptionDetailTypeDef"]`
+
+- `TagOptionDetails`:
+  `List`\[[TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)\]
 - `PageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## OrganizationNodeTypeDef
 
@@ -1073,13 +1017,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import OrganizationNodeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `OrganizationNodeType`
-- `Value`: `str`
 
+- `Type`:
+  [OrganizationNodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#organizationnodetype)
+- `Value`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -1087,14 +1029,11 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterConstraintsTypeDef
 
@@ -1102,11 +1041,9 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ParameterConstraintsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AllowedValues`: `List[str]`
+
+- `AllowedValues`: `List`\[`str`\]
 - `AllowedPattern`: `str`
 - `ConstraintDescription`: `str`
 - `MaxLength`: `str`
@@ -1114,17 +1051,14 @@ Optional fields:
 - `MaxValue`: `str`
 - `MinValue`: `str`
 
-
 ## PortfolioDetailTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import PortfolioDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ARN`: `str`
 - `DisplayName`: `str`
@@ -1132,22 +1066,19 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `ProviderName`: `str`
 
-
 ## PortfolioShareDetailTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import PortfolioShareDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PrincipalId`: `str`
-- `Type`: `DescribePortfolioShareType`
+- `Type`:
+  [DescribePortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#describeportfoliosharetype)
 - `Accepted`: `bool`
 - `ShareTagOptions`: `bool`
-
 
 ## PrincipalTypeDef
 
@@ -1155,13 +1086,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import PrincipalTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PrincipalARN`: `str`
 - `PrincipalType`: `Literal['IAM']`
-
 
 ## ProductViewAggregationValueTypeDef
 
@@ -1169,13 +1097,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProductViewAggregationValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Value`: `str`
 - `ApproximateCount`: `int`
-
 
 ## ProductViewDetailTypeDef
 
@@ -1183,15 +1108,14 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProductViewDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
-- `Status`: `Status`
+
+- `ProductViewSummary`:
+  [ProductViewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewsummarytypedef)
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
 - `ProductARN`: `str`
 - `CreatedTime`: `datetime`
-
 
 ## ProductViewSummaryTypeDef
 
@@ -1199,22 +1123,20 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProductViewSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ProductId`: `str`
 - `Name`: `str`
 - `Owner`: `str`
 - `ShortDescription`: `str`
-- `Type`: `ProductType`
+- `Type`:
+  [ProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#producttype)
 - `Distributor`: `str`
 - `HasDefaultPath`: `bool`
 - `SupportEmail`: `str`
 - `SupportDescription`: `str`
 - `SupportUrl`: `str`
-
 
 ## ProvisionProductOutputTypeDef
 
@@ -1222,13 +1144,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ProvisionedProductAttributeTypeDef
 
@@ -1236,22 +1157,22 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisionedProductAttributeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Arn`: `str`
 - `Type`: `str`
 - `Id`: `str`
-- `Status`: `ProvisionedProductStatus`
+- `Status`:
+  [ProvisionedProductStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisionedproductstatus)
 - `StatusMessage`: `str`
 - `CreatedTime`: `datetime`
 - `IdempotencyToken`: `str`
 - `LastRecordId`: `str`
 - `LastProvisioningRecordId`: `str`
 - `LastSuccessfulProvisioningRecordId`: `str`
-- `Tags`: `List["TagTypeDef"]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
 - `PhysicalId`: `str`
 - `ProductId`: `str`
 - `ProductName`: `str`
@@ -1260,22 +1181,20 @@ Optional fields:
 - `UserArn`: `str`
 - `UserArnSession`: `str`
 
-
 ## ProvisionedProductDetailTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import ProvisionedProductDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Arn`: `str`
 - `Type`: `str`
 - `Id`: `str`
-- `Status`: `ProvisionedProductStatus`
+- `Status`:
+  [ProvisionedProductStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisionedproductstatus)
 - `StatusMessage`: `str`
 - `CreatedTime`: `datetime`
 - `IdempotencyToken`: `str`
@@ -1286,17 +1205,14 @@ Optional fields:
 - `ProvisioningArtifactId`: `str`
 - `LaunchRoleArn`: `str`
 
-
 ## ProvisionedProductPlanDetailsTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedTime`: `datetime`
 - `PathId`: `str`
 - `ProductId`: `str`
@@ -1306,13 +1222,15 @@ Optional fields:
 - `ProvisionProductName`: `str`
 - `PlanType`: `Literal['CLOUDFORMATION']`
 - `ProvisioningArtifactId`: `str`
-- `Status`: `ProvisionedProductPlanStatus`
+- `Status`:
+  [ProvisionedProductPlanStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisionedproductplanstatus)
 - `UpdatedTime`: `datetime`
-- `NotificationArns`: `List[str]`
-- `ProvisioningParameters`: `List["UpdateProvisioningParameterTypeDef"]`
-- `Tags`: `List["TagTypeDef"]`
+- `NotificationArns`: `List`\[`str`\]
+- `ProvisioningParameters`:
+  `List`\[[UpdateProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningparametertypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
 - `StatusMessage`: `str`
-
 
 ## ProvisionedProductPlanSummaryTypeDef
 
@@ -1320,10 +1238,8 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisionedProductPlanSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PlanName`: `str`
 - `PlanId`: `str`
 - `ProvisionProductId`: `str`
@@ -1331,25 +1247,23 @@ Optional fields:
 - `PlanType`: `Literal['CLOUDFORMATION']`
 - `ProvisioningArtifactId`: `str`
 
-
 ## ProvisioningArtifactDetailTypeDef
 
 ```python
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: `ProvisioningArtifactType`
+- `Type`:
+  [ProvisioningArtifactType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifacttype)
 - `CreatedTime`: `datetime`
 - `Active`: `bool`
-- `Guidance`: `ProvisioningArtifactGuidance`
-
+- `Guidance`:
+  [ProvisioningArtifactGuidance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifactguidance)
 
 ## ProvisioningArtifactOutputTypeDef
 
@@ -1357,14 +1271,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Description`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ProvisioningArtifactParameterTypeDef
 
@@ -1372,17 +1284,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ParameterKey`: `str`
 - `DefaultValue`: `str`
 - `ParameterType`: `str`
 - `IsNoEcho`: `bool`
 - `Description`: `str`
-- `ParameterConstraints`: `"ParameterConstraintsTypeDef"`
-
+- `ParameterConstraints`:
+  [ParameterConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#parameterconstraintstypedef)
 
 ## ProvisioningArtifactPreferencesTypeDef
 
@@ -1390,13 +1300,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPreferencesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StackSetAccounts`: `List[str]`
-- `StackSetRegions`: `List[str]`
 
+- `StackSetAccounts`: `List`\[`str`\]
+- `StackSetRegions`: `List`\[`str`\]
 
 ## ProvisioningArtifactPropertiesTypeDef
 
@@ -1404,18 +1311,17 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPropertiesTypeDef
 ```
 
-
 Required fields:
-- `Info`: `Dict[str, str]`
 
-
+- `Info`: `Dict`\[`str`, `str`\]
 
 Optional fields:
+
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: `ProvisioningArtifactType`
+- `Type`:
+  [ProvisioningArtifactType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifacttype)
 - `DisableTemplateValidation`: `bool`
-
 
 ## ProvisioningArtifactSummaryTypeDef
 
@@ -1423,16 +1329,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `CreatedTime`: `datetime`
-- `ProvisioningArtifactMetadata`: `Dict[str, str]`
-
+- `ProvisioningArtifactMetadata`: `Dict`\[`str`, `str`\]
 
 ## ProvisioningArtifactTypeDef
 
@@ -1440,16 +1343,14 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `CreatedTime`: `datetime`
-- `Guidance`: `ProvisioningArtifactGuidance`
-
+- `Guidance`:
+  [ProvisioningArtifactGuidance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifactguidance)
 
 ## ProvisioningArtifactViewTypeDef
 
@@ -1457,13 +1358,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactViewTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
-- `ProvisioningArtifact`: `"ProvisioningArtifactTypeDef"`
 
+- `ProductViewSummary`:
+  [ProductViewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewsummarytypedef)
+- `ProvisioningArtifact`:
+  [ProvisioningArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifacttypedef)
 
 ## ProvisioningParameterTypeDef
 
@@ -1471,13 +1371,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## ProvisioningPreferencesTypeDef
 
@@ -1485,17 +1382,14 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ProvisioningPreferencesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StackSetAccounts`: `List[str]`
-- `StackSetRegions`: `List[str]`
+
+- `StackSetAccounts`: `List`\[`str`\]
+- `StackSetRegions`: `List`\[`str`\]
 - `StackSetFailureToleranceCount`: `int`
 - `StackSetFailureTolerancePercentage`: `int`
 - `StackSetMaxConcurrencyCount`: `int`
 - `StackSetMaxConcurrencyPercentage`: `int`
-
 
 ## RecordDetailTypeDef
 
@@ -1503,13 +1397,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import RecordDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RecordId`: `str`
 - `ProvisionedProductName`: `str`
-- `Status`: `RecordStatus`
+- `Status`:
+  [RecordStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#recordstatus)
 - `CreatedTime`: `datetime`
 - `UpdatedTime`: `datetime`
 - `ProvisionedProductType`: `str`
@@ -1518,10 +1411,11 @@ Optional fields:
 - `ProductId`: `str`
 - `ProvisioningArtifactId`: `str`
 - `PathId`: `str`
-- `RecordErrors`: `List["RecordErrorTypeDef"]`
-- `RecordTags`: `List["RecordTagTypeDef"]`
+- `RecordErrors`:
+  `List`\[[RecordErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorderrortypedef)\]
+- `RecordTags`:
+  `List`\[[RecordTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recordtagtypedef)\]
 - `LaunchRoleArn`: `str`
-
 
 ## RecordErrorTypeDef
 
@@ -1529,13 +1423,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import RecordErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Code`: `str`
 - `Description`: `str`
-
 
 ## RecordOutputTypeDef
 
@@ -1543,15 +1434,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import RecordOutputTypeDef
 ```
 
-
 Required fields:
+
 - `OutputKey`: `str`
 - `OutputValue`: `str`
 - `Description`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## RecordTagTypeDef
 
@@ -1559,13 +1448,10 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import RecordTagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## ResourceChangeDetailTypeDef
 
@@ -1573,14 +1459,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ResourceChangeDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Target`: `"ResourceTargetDefinitionTypeDef"`
-- `Evaluation`: `EvaluationType`
-- `CausingEntity`: `str`
 
+- `Target`:
+  [ResourceTargetDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#resourcetargetdefinitiontypedef)
+- `Evaluation`:
+  [EvaluationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#evaluationtype)
+- `CausingEntity`: `str`
 
 ## ResourceChangeTypeDef
 
@@ -1588,18 +1473,19 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ResourceChangeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Action`: `ChangeAction`
+
+- `Action`:
+  [ChangeAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#changeaction)
 - `LogicalResourceId`: `str`
 - `PhysicalResourceId`: `str`
 - `ResourceType`: `str`
-- `Replacement`: `Replacement`
-- `Scope`: `List[ResourceAttribute]`
-- `Details`: `List["ResourceChangeDetailTypeDef"]`
-
+- `Replacement`:
+  [Replacement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#replacement)
+- `Scope`:
+  `List`\[[ResourceAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#resourceattribute)\]
+- `Details`:
+  `List`\[[ResourceChangeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#resourcechangedetailtypedef)\]
 
 ## ResourceDetailTypeDef
 
@@ -1607,16 +1493,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ResourceDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ARN`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `CreatedTime`: `datetime`
-
 
 ## ResourceTargetDefinitionTypeDef
 
@@ -1624,14 +1507,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ResourceTargetDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attribute`: `ResourceAttribute`
-- `Name`: `str`
-- `RequiresRecreation`: `RequiresRecreation`
 
+- `Attribute`:
+  [ResourceAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#resourceattribute)
+- `Name`: `str`
+- `RequiresRecreation`:
+  [RequiresRecreation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#requiresrecreation)
 
 ## ResponseMetadata
 
@@ -1639,16 +1521,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## ScanProvisionedProductsOutputTypeDef
 
@@ -1656,14 +1535,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedProducts`: `List["ProvisionedProductDetailTypeDef"]`
+
+- `ProvisionedProducts`:
+  `List`\[[ProvisionedProductDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionedproductdetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## SearchProductsAsAdminOutputTypeDef
 
@@ -1671,14 +1549,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewDetails`: `List["ProductViewDetailTypeDef"]`
+
+- `ProductViewDetails`:
+  `List`\[[ProductViewDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewdetailtypedef)\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## SearchProductsOutputTypeDef
 
@@ -1686,15 +1563,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewSummaries`: `List["ProductViewSummaryTypeDef"]`
-- `ProductViewAggregations`: `Dict[str, List["ProductViewAggregationValueTypeDef"]]`
+
+- `ProductViewSummaries`:
+  `List`\[[ProductViewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewsummarytypedef)\]
+- `ProductViewAggregations`: `Dict`\[`str`,
+  `List`\[[ProductViewAggregationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewaggregationvaluetypedef)\]\]
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## SearchProvisionedProductsOutputTypeDef
 
@@ -1702,15 +1579,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisionedProducts`: `List["ProvisionedProductAttributeTypeDef"]`
+
+- `ProvisionedProducts`:
+  `List`\[[ProvisionedProductAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionedproductattributetypedef)\]
 - `TotalResultsCount`: `int`
 - `NextPageToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## ServiceActionAssociationTypeDef
 
@@ -1718,14 +1594,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ServiceActionAssociationTypeDef
 ```
 
-
 Required fields:
+
 - `ServiceActionId`: `str`
 - `ProductId`: `str`
 - `ProvisioningArtifactId`: `str`
-
-
-
 
 ## ServiceActionDetailTypeDef
 
@@ -1733,13 +1606,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import ServiceActionDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceActionSummary`: `"ServiceActionSummaryTypeDef"`
-- `Definition`: `Dict[ServiceActionDefinitionKey, str]`
 
+- `ServiceActionSummary`:
+  [ServiceActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionsummarytypedef)
+- `Definition`:
+  `Dict`\[[ServiceActionDefinitionKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactiondefinitionkey),
+  `str`\]
 
 ## ServiceActionSummaryTypeDef
 
@@ -1747,15 +1620,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ServiceActionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `DefinitionType`: `Literal['SSM_AUTOMATION']`
-
 
 ## ShareDetailsTypeDef
 
@@ -1763,13 +1633,11 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ShareDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SuccessfulShares`: `List[str]`
-- `ShareErrors`: `List["ShareErrorTypeDef"]`
 
+- `SuccessfulShares`: `List`\[`str`\]
+- `ShareErrors`:
+  `List`\[[ShareErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#shareerrortypedef)\]
 
 ## ShareErrorTypeDef
 
@@ -1777,14 +1645,11 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import ShareErrorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accounts`: `List[str]`
+
+- `Accounts`: `List`\[`str`\]
 - `Message`: `str`
 - `Error`: `str`
-
 
 ## StackInstanceTypeDef
 
@@ -1792,14 +1657,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import StackInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Account`: `str`
 - `Region`: `str`
-- `StackInstanceStatus`: `StackInstanceStatus`
-
+- `StackInstanceStatus`:
+  [StackInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#stackinstancestatus)
 
 ## TagOptionDetailTypeDef
 
@@ -1807,16 +1670,13 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import TagOptionDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
 - `Active`: `bool`
 - `Id`: `str`
 - `Owner`: `str`
-
 
 ## TagOptionSummaryTypeDef
 
@@ -1824,13 +1684,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import TagOptionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
 
 ## TagTypeDef
 
@@ -1838,13 +1695,10 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TerminateProvisionedProductOutputTypeDef
 
@@ -1852,13 +1706,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateConstraintOutputTypeDef
 
@@ -1866,15 +1719,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputTypeDef
 ```
 
-
 Required fields:
-- `ConstraintDetail`: `"ConstraintDetailTypeDef"`
+
+- `ConstraintDetail`:
+  [ConstraintDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdatePortfolioOutputTypeDef
 
@@ -1882,14 +1735,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputTypeDef
 ```
 
-
 Required fields:
-- `PortfolioDetail`: `"PortfolioDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PortfolioDetail`:
+  [PortfolioDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#portfoliodetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdatePortfolioShareOutputTypeDef
 
@@ -1897,14 +1750,13 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDef
 ```
 
-
 Required fields:
+
 - `PortfolioShareToken`: `str`
-- `Status`: `ShareStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sharestatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateProductOutputTypeDef
 
@@ -1912,14 +1764,14 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputTypeDef
 ```
 
-
 Required fields:
-- `ProductViewDetail`: `"ProductViewDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProductViewDetail`:
+  [ProductViewDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#productviewdetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateProvisionedProductOutputTypeDef
 
@@ -1927,13 +1779,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputTypeDef
 ```
 
-
 Required fields:
-- `RecordDetail`: `"RecordDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `RecordDetail`:
+  [RecordDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#recorddetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateProvisionedProductPropertiesOutputTypeDef
 
@@ -1941,16 +1792,17 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductPropertiesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ProvisionedProductId`: `str`
-- `ProvisionedProductProperties`: `Dict[PropertyKey, str]`
+- `ProvisionedProductProperties`:
+  `Dict`\[[PropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#propertykey),
+  `str`\]
 - `RecordId`: `str`
-- `Status`: `RecordStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Status`:
+  [RecordStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#recordstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateProvisioningArtifactOutputTypeDef
 
@@ -1958,15 +1810,15 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutputTypeDef
 ```
 
-
 Required fields:
-- `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
-- `Info`: `Dict[str, str]`
-- `Status`: `Status`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ProvisioningArtifactDetail`:
+  [ProvisioningArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactdetailtypedef)
+- `Info`: `Dict`\[`str`, `str`\]
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#status)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateProvisioningParameterTypeDef
 
@@ -1974,14 +1826,11 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
 - `UsePreviousValue`: `bool`
-
 
 ## UpdateProvisioningPreferencesTypeDef
 
@@ -1989,18 +1838,16 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningPreferencesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StackSetAccounts`: `List[str]`
-- `StackSetRegions`: `List[str]`
+
+- `StackSetAccounts`: `List`\[`str`\]
+- `StackSetRegions`: `List`\[`str`\]
 - `StackSetFailureToleranceCount`: `int`
 - `StackSetFailureTolerancePercentage`: `int`
 - `StackSetMaxConcurrencyCount`: `int`
 - `StackSetMaxConcurrencyPercentage`: `int`
-- `StackSetOperationType`: `StackSetOperationType`
-
+- `StackSetOperationType`:
+  [StackSetOperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#stacksetoperationtype)
 
 ## UpdateServiceActionOutputTypeDef
 
@@ -2008,13 +1855,12 @@ Optional fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionOutputTypeDef
 ```
 
-
 Required fields:
-- `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ServiceActionDetail`:
+  [ServiceActionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UpdateTagOptionOutputTypeDef
 
@@ -2022,13 +1868,12 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputTypeDef
 ```
 
-
 Required fields:
-- `TagOptionDetail`: `"TagOptionDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TagOptionDetail`:
+  [TagOptionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagoptiondetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#responsemetadata)
 
 ## UsageInstructionTypeDef
 
@@ -2036,10 +1881,7 @@ Required fields:
 from mypy_boto3_servicecatalog.type_defs import UsageInstructionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Type`: `str`
 - `Value`: `str`
-

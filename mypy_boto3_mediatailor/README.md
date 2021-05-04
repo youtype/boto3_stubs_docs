@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaTailor
 
-Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+Auto-generated documentation for
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+type annotations stubs module
+[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 ```bash
 pip install mypy-boto3-mediatailor
@@ -19,7 +21,8 @@ pip install mypy-boto3-mediatailor
 
 ## MediaTailorClient
 
-Type annotations for  `boto3.client("mediatailor")` as [MediaTailorClient](./client.md)
+Type annotations for `boto3.client("mediatailor")` as
+[MediaTailorClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_mediatailor.client import MediaTailorClient
 ```
 
-
 MediaTailorClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_channel](./client.md#create-channel)
 - [create_program](./client.md#create-program)
@@ -68,21 +69,15 @@ MediaTailorClient [exceptions](./client.md#exceptions)
 - [update_source_location](./client.md#update-source-location)
 - [update_vod_source](./client.md#update-vod-source)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediatailor").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediatailor").get_paginator("...")`.
 
 Can be used directly:
 
@@ -95,11 +90,6 @@ from mypy_boto3_mediatailor.paginators import GetChannelSchedulePaginator, ...
 - [ListPlaybackConfigurationsPaginator](./paginators.md#listplaybackconfigurationspaginator)
 - [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)
 - [ListVodSourcesPaginator](./paginators.md#listvodsourcespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -125,13 +115,10 @@ from mypy_boto3_mediatailor.literals import AccessType, ...
 - [RelativePosition](./literals.md#relativeposition)
 - [TypeType](./literals.md#typetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

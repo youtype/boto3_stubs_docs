@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > Paginators
 
-Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+Auto-generated documentation for
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+type annotations stubs module
+[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [Paginators for boto3 ServiceCatalog module](#paginators-for-boto3-servicecatalog-module)
   - [ListAcceptedPortfolioSharesPaginator](#listacceptedportfoliosharespaginator)
@@ -25,7 +27,8 @@ type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/proje
 
 ## ListAcceptedPortfolioSharesPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_accepted_portfolio_shares")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_accepted_portfolio_shares")`.
 
 Can be used directly:
 
@@ -36,21 +39,24 @@ def get_list_accepted_portfolio_shares_paginator() -> ListAcceptedPortfolioShare
     return boto3.client("servicecatalog").get_paginator("list_accepted_portfolio_shares")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListAcceptedPortfolioShares)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListAcceptedPortfolioShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListAcceptedPortfolioShares)
 
-```python
-class ListAcceptedPortfolioSharesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        PortfolioShareType: PortfolioShareType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAcceptedPortfolioSharesOutputTypeDef]:
-        pass
-```
+Arguments for `ListAcceptedPortfolioSharesPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `PortfolioShareType`:
+  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListAcceptedPortfolioSharesPaginator.paginate` returns
+`Iterator`\[[ListAcceptedPortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listacceptedportfoliosharesoutputtypedef)\].
+
 ## ListConstraintsForPortfolioPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_constraints_for_portfolio")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_constraints_for_portfolio")`.
 
 Can be used directly:
 
@@ -61,22 +67,24 @@ def get_list_constraints_for_portfolio_paginator() -> ListConstraintsForPortfoli
     return boto3.client("servicecatalog").get_paginator("list_constraints_for_portfolio")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListConstraintsForPortfolio)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListConstraintsForPortfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListConstraintsForPortfolio)
 
-```python
-class ListConstraintsForPortfolioPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PortfolioId: str,
-        AcceptLanguage: str = None,
-        ProductId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListConstraintsForPortfolioOutputTypeDef]:
-        pass
-```
+Arguments for `ListConstraintsForPortfolioPaginator.paginate` method:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `ProductId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListConstraintsForPortfolioPaginator.paginate` returns
+`Iterator`\[[ListConstraintsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listconstraintsforportfoliooutputtypedef)\].
+
 ## ListLaunchPathsPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_launch_paths")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_launch_paths")`.
 
 Can be used directly:
 
@@ -87,21 +95,23 @@ def get_list_launch_paths_paginator() -> ListLaunchPathsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_launch_paths")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListLaunchPaths)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListLaunchPaths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListLaunchPaths)
 
-```python
-class ListLaunchPathsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ProductId: str,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListLaunchPathsOutputTypeDef]:
-        pass
-```
+Arguments for `ListLaunchPathsPaginator.paginate` method:
+
+- `ProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListLaunchPathsPaginator.paginate` returns
+`Iterator`\[[ListLaunchPathsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listlaunchpathsoutputtypedef)\].
+
 ## ListOrganizationPortfolioAccessPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_organization_portfolio_access")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_organization_portfolio_access")`.
 
 Can be used directly:
 
@@ -112,22 +122,26 @@ def get_list_organization_portfolio_access_paginator() -> ListOrganizationPortfo
     return boto3.client("servicecatalog").get_paginator("list_organization_portfolio_access")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListOrganizationPortfolioAccess)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListOrganizationPortfolioAccess](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListOrganizationPortfolioAccess)
 
-```python
-class ListOrganizationPortfolioAccessPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PortfolioId: str,
-        OrganizationNodeType: OrganizationNodeType,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListOrganizationPortfolioAccessOutputTypeDef]:
-        pass
-```
+Arguments for `ListOrganizationPortfolioAccessPaginator.paginate` method:
+
+- `PortfolioId`: `str` *(required)*
+- `OrganizationNodeType`:
+  [OrganizationNodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#organizationnodetype)
+  *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListOrganizationPortfolioAccessPaginator.paginate` returns
+`Iterator`\[[ListOrganizationPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listorganizationportfolioaccessoutputtypedef)\].
+
 ## ListPortfoliosPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_portfolios")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_portfolios")`.
 
 Can be used directly:
 
@@ -138,20 +152,22 @@ def get_list_portfolios_paginator() -> ListPortfoliosPaginator:
     return boto3.client("servicecatalog").get_paginator("list_portfolios")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfolios)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListPortfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfolios)
 
-```python
-class ListPortfoliosPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPortfoliosOutputTypeDef]:
-        pass
-```
+Arguments for `ListPortfoliosPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListPortfoliosPaginator.paginate` returns
+`Iterator`\[[ListPortfoliosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosoutputtypedef)\].
+
 ## ListPortfoliosForProductPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_portfolios_for_product")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_portfolios_for_product")`.
 
 Can be used directly:
 
@@ -162,21 +178,23 @@ def get_list_portfolios_for_product_paginator() -> ListPortfoliosForProductPagin
     return boto3.client("servicecatalog").get_paginator("list_portfolios_for_product")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfoliosForProduct)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListPortfoliosForProduct](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfoliosForProduct)
 
-```python
-class ListPortfoliosForProductPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ProductId: str,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPortfoliosForProductOutputTypeDef]:
-        pass
-```
+Arguments for `ListPortfoliosForProductPaginator.paginate` method:
+
+- `ProductId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListPortfoliosForProductPaginator.paginate` returns
+`Iterator`\[[ListPortfoliosForProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosforproductoutputtypedef)\].
+
 ## ListPrincipalsForPortfolioPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_principals_for_portfolio")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_principals_for_portfolio")`.
 
 Can be used directly:
 
@@ -187,21 +205,23 @@ def get_list_principals_for_portfolio_paginator() -> ListPrincipalsForPortfolioP
     return boto3.client("servicecatalog").get_paginator("list_principals_for_portfolio")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPrincipalsForPortfolio)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListPrincipalsForPortfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPrincipalsForPortfolio)
 
-```python
-class ListPrincipalsForPortfolioPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PortfolioId: str,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPrincipalsForPortfolioOutputTypeDef]:
-        pass
-```
+Arguments for `ListPrincipalsForPortfolioPaginator.paginate` method:
+
+- `PortfolioId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListPrincipalsForPortfolioPaginator.paginate` returns
+`Iterator`\[[ListPrincipalsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprincipalsforportfoliooutputtypedef)\].
+
 ## ListProvisionedProductPlansPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_provisioned_product_plans")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_provisioned_product_plans")`.
 
 Can be used directly:
 
@@ -212,22 +232,25 @@ def get_list_provisioned_product_plans_paginator() -> ListProvisionedProductPlan
     return boto3.client("servicecatalog").get_paginator("list_provisioned_product_plans")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisionedProductPlans)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListProvisionedProductPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisionedProductPlans)
 
-```python
-class ListProvisionedProductPlansPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        ProvisionProductId: str = None,
-        AccessLevelFilter: AccessLevelFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProvisionedProductPlansOutputTypeDef]:
-        pass
-```
+Arguments for `ListProvisionedProductPlansPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `ProvisionProductId`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListProvisionedProductPlansPaginator.paginate` returns
+`Iterator`\[[ListProvisionedProductPlansOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisionedproductplansoutputtypedef)\].
+
 ## ListProvisioningArtifactsForServiceActionPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")`.
 
 Can be used directly:
 
@@ -238,21 +261,24 @@ def get_list_provisioning_artifacts_for_service_action_paginator() -> ListProvis
     return boto3.client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisioningArtifactsForServiceAction)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListProvisioningArtifactsForServiceAction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisioningArtifactsForServiceAction)
 
-```python
-class ListProvisioningArtifactsForServiceActionPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ServiceActionId: str,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProvisioningArtifactsForServiceActionOutputTypeDef]:
-        pass
-```
+Arguments for `ListProvisioningArtifactsForServiceActionPaginator.paginate`
+method:
+
+- `ServiceActionId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListProvisioningArtifactsForServiceActionPaginator.paginate` returns
+`Iterator`\[[ListProvisioningArtifactsForServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsforserviceactionoutputtypedef)\].
+
 ## ListRecordHistoryPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_record_history")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_record_history")`.
 
 Can be used directly:
 
@@ -263,22 +289,26 @@ def get_list_record_history_paginator() -> ListRecordHistoryPaginator:
     return boto3.client("servicecatalog").get_paginator("list_record_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListRecordHistory)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListRecordHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListRecordHistory)
 
-```python
-class ListRecordHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        AccessLevelFilter: AccessLevelFilterTypeDef = None,
-        SearchFilter: ListRecordHistorySearchFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRecordHistoryOutputTypeDef]:
-        pass
-```
+Arguments for `ListRecordHistoryPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `SearchFilter`:
+  [ListRecordHistorySearchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistorysearchfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListRecordHistoryPaginator.paginate` returns
+`Iterator`\[[ListRecordHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistoryoutputtypedef)\].
+
 ## ListResourcesForTagOptionPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_resources_for_tag_option")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_resources_for_tag_option")`.
 
 Can be used directly:
 
@@ -289,21 +319,23 @@ def get_list_resources_for_tag_option_paginator() -> ListResourcesForTagOptionPa
     return boto3.client("servicecatalog").get_paginator("list_resources_for_tag_option")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListResourcesForTagOption)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListResourcesForTagOption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListResourcesForTagOption)
 
-```python
-class ListResourcesForTagOptionPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TagOptionId: str,
-        ResourceType: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResourcesForTagOptionOutputTypeDef]:
-        pass
-```
+Arguments for `ListResourcesForTagOptionPaginator.paginate` method:
+
+- `TagOptionId`: `str` *(required)*
+- `ResourceType`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListResourcesForTagOptionPaginator.paginate` returns
+`Iterator`\[[ListResourcesForTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listresourcesfortagoptionoutputtypedef)\].
+
 ## ListServiceActionsPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_service_actions")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_service_actions")`.
 
 Can be used directly:
 
@@ -314,20 +346,22 @@ def get_list_service_actions_paginator() -> ListServiceActionsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_service_actions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActions)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListServiceActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActions)
 
-```python
-class ListServiceActionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListServiceActionsOutputTypeDef]:
-        pass
-```
+Arguments for `ListServiceActionsPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListServiceActionsPaginator.paginate` returns
+`Iterator`\[[ListServiceActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsoutputtypedef)\].
+
 ## ListServiceActionsForProvisioningArtifactPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")`.
 
 Can be used directly:
 
@@ -338,22 +372,25 @@ def get_list_service_actions_for_provisioning_artifact_paginator() -> ListServic
     return boto3.client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActionsForProvisioningArtifact)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListServiceActionsForProvisioningArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActionsForProvisioningArtifact)
 
-```python
-class ListServiceActionsForProvisioningArtifactPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ProductId: str,
-        ProvisioningArtifactId: str,
-        AcceptLanguage: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListServiceActionsForProvisioningArtifactOutputTypeDef]:
-        pass
-```
+Arguments for `ListServiceActionsForProvisioningArtifactPaginator.paginate`
+method:
+
+- `ProductId`: `str` *(required)*
+- `ProvisioningArtifactId`: `str` *(required)*
+- `AcceptLanguage`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListServiceActionsForProvisioningArtifactPaginator.paginate` returns
+`Iterator`\[[ListServiceActionsForProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsforprovisioningartifactoutputtypedef)\].
+
 ## ListTagOptionsPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("list_tag_options")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("list_tag_options")`.
 
 Can be used directly:
 
@@ -364,20 +401,23 @@ def get_list_tag_options_paginator() -> ListTagOptionsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_tag_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListTagOptions)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ListTagOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListTagOptions)
 
-```python
-class ListTagOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: ListTagOptionsFiltersTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagOptionsOutputTypeDef]:
-        pass
-```
+Arguments for `ListTagOptionsPaginator.paginate` method:
+
+- `Filters`:
+  [ListTagOptionsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsfilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ListTagOptionsPaginator.paginate` returns
+`Iterator`\[[ListTagOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsoutputtypedef)\].
+
 ## ScanProvisionedProductsPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("scan_provisioned_products")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("scan_provisioned_products")`.
 
 Can be used directly:
 
@@ -388,21 +428,24 @@ def get_scan_provisioned_products_paginator() -> ScanProvisionedProductsPaginato
     return boto3.client("servicecatalog").get_paginator("scan_provisioned_products")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ScanProvisionedProducts)
+Boto3 documentation:
+[ServiceCatalog.Paginator.ScanProvisionedProducts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ScanProvisionedProducts)
 
-```python
-class ScanProvisionedProductsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        AccessLevelFilter: AccessLevelFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ScanProvisionedProductsOutputTypeDef]:
-        pass
-```
+Arguments for `ScanProvisionedProductsPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `AccessLevelFilter`:
+  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`ScanProvisionedProductsPaginator.paginate` returns
+`Iterator`\[[ScanProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#scanprovisionedproductsoutputtypedef)\].
+
 ## SearchProductsAsAdminPaginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator("search_products_as_admin")`.
+Type annotations for
+`boto3.client("servicecatalog").get_paginator("search_products_as_admin")`.
 
 Can be used directly:
 
@@ -413,19 +456,23 @@ def get_search_products_as_admin_paginator() -> SearchProductsAsAdminPaginator:
     return boto3.client("servicecatalog").get_paginator("search_products_as_admin")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.SearchProductsAsAdmin)
+Boto3 documentation:
+[ServiceCatalog.Paginator.SearchProductsAsAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.SearchProductsAsAdmin)
 
-```python
-class SearchProductsAsAdminPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceptLanguage: str = None,
-        PortfolioId: str = None,
-        Filters: Dict[ProductViewFilterBy, List[str]] = None,
-        SortBy: ProductViewSortBy = None,
-        SortOrder: SortOrder = None,
-        ProductSource: Literal['ACCOUNT'] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchProductsAsAdminOutputTypeDef]:
-        pass
-```
+Arguments for `SearchProductsAsAdminPaginator.paginate` method:
+
+- `AcceptLanguage`: `str`
+- `PortfolioId`: `str`
+- `Filters`:
+  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+  `List`\[`str`\]\]
+- `SortBy`:
+  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `ProductSource`: `Literal['ACCOUNT']`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+
+`SearchProductsAsAdminPaginator.paginate` returns
+`Iterator`\[[SearchProductsAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsasadminoutputtypedef)\].

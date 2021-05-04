@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTDataPlane](./README.md) > IoTDataPlaneClient
 
-Auto-generated documentation for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
-type annotations stubs module [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
+Auto-generated documentation for
+[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 - [IoTDataPlaneClient for boto3 IoTDataPlane module](#iotdataplaneclient-for-boto3-iotdataplane-module)
   - [IoTDataPlaneClient](#iotdataplaneclient)
@@ -30,12 +32,13 @@ def get_iot-data_client() -> IoTDataPlaneClient:
     return boto3.client("iot-data")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
+Boto3 documentation:
+[IoTDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iot_data.client import Exceptions
@@ -43,7 +46,6 @@ from mypy_boto3_iot_data.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -59,118 +61,109 @@ Exceptions:
 - `Exceptions.UnauthorizedException`
 - `Exceptions.UnsupportedDocumentEncodingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iot-data").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate]
+Boto3 documentation:
+[IoTDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_thing_shadow
 
 Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow]
+Boto3 documentation:
+[IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
 
-```python
-def delete_thing_shadow(
-    self,
-    thingName: str,
-    shadowName: str = None
-) -> DeleteThingShadowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str` *(required)*
+- `shadowName`: `str`
+
+Returns
+[DeleteThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#deletethingshadowresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("iot-data").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url]
+Boto3 documentation:
+[IoTDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_thing_shadow
 
 Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow]
+Boto3 documentation:
+[IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
 
-```python
-def get_thing_shadow(
-    self,
-    thingName: str,
-    shadowName: str = None
-) -> GetThingShadowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str` *(required)*
+- `shadowName`: `str`
+
+Returns
+[GetThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#getthingshadowresponsetypedef).
 
 ### list_named_shadows_for_thing
 
-Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing` method.
+Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing]
+Boto3 documentation:
+[IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
 
-```python
-def list_named_shadows_for_thing(
-    self,
-    thingName: str,
-    nextToken: str = None,
-    pageSize: int = None
-) -> ListNamedShadowsForThingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `thingName`: `str` *(required)*
+- `nextToken`: `str`
+- `pageSize`: `int`
+
+Returns
+[ListNamedShadowsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#listnamedshadowsforthingresponsetypedef).
 
 ### publish
 
 Type annotations for `boto3.client("iot-data").publish` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish]
+Boto3 documentation:
+[IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
 
-```python
-def publish(
-    self,
-    topic: str,
-    qos: int = None,
-    payload: Union[bytes, IO[bytes]] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `topic`: `str` *(required)*
+- `qos`: `int`
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ### update_thing_shadow
 
 Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow]
+Boto3 documentation:
+[IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
 
-```python
-def update_thing_shadow(
-    self,
-    thingName: str,
-    payload: Union[bytes, IO[bytes]],
-    shadowName: str = None
-) -> UpdateThingShadowResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `thingName`: `str` *(required)*
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `shadowName`: `str`
 
-
+Returns
+[UpdateThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#updatethingshadowresponsetypedef).

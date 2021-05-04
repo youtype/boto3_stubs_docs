@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ConnectParticipant](./README.md) > Literals
 
-Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
-type annotations stubs module [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+Auto-generated documentation for
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+type annotations stubs module
+[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [Literals for boto3 ConnectParticipant module](#literals-for-boto3-connectparticipant-module)
   - [ArtifactStatus](#artifactstatus)

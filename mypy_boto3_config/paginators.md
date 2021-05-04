@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ConfigService](./README.md) > Paginators
 
-Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+Auto-generated documentation for
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+type annotations stubs module
+[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Paginators for boto3 ConfigService module](#paginators-for-boto3-configservice-module)
   - [DescribeAggregateComplianceByConfigRulesPaginator](#describeaggregatecompliancebyconfigrulespaginator)
@@ -26,7 +28,8 @@ type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-
 
 ## DescribeAggregateComplianceByConfigRulesPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")`.
 
 Can be used directly:
 
@@ -37,21 +40,25 @@ def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAgg
     return boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeAggregateComplianceByConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
 
-```python
-class DescribeAggregateComplianceByConfigRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigurationAggregatorName: str,
-        Filters: ConfigRuleComplianceFiltersTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAggregateComplianceByConfigRulesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAggregateComplianceByConfigRulesPaginator.paginate`
+method:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `Filters`:
+  [ConfigRuleComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancefilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAggregateComplianceByConfigRulesPaginator.paginate` returns
+`Iterator`\[[DescribeAggregateComplianceByConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconfigrulesresponsetypedef)\].
+
 ## DescribeAggregationAuthorizationsPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_aggregation_authorizations")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_aggregation_authorizations")`.
 
 Can be used directly:
 
@@ -62,19 +69,21 @@ def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAu
     return boto3.client("config").get_paginator("describe_aggregation_authorizations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeAggregationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
 
-```python
-class DescribeAggregationAuthorizationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAggregationAuthorizationsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAggregationAuthorizationsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAggregationAuthorizationsPaginator.paginate` returns
+`Iterator`\[[DescribeAggregationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregationauthorizationsresponsetypedef)\].
+
 ## DescribeComplianceByConfigRulePaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_compliance_by_config_rule")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_compliance_by_config_rule")`.
 
 Can be used directly:
 
@@ -85,21 +94,24 @@ def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByCo
     return boto3.client("config").get_paginator("describe_compliance_by_config_rule")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeComplianceByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
 
-```python
-class DescribeComplianceByConfigRulePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigRuleNames: List[str] = None,
-        ComplianceTypes: List[ComplianceType] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeComplianceByConfigRuleResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeComplianceByConfigRulePaginator.paginate` returns
+`Iterator`\[[DescribeComplianceByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyconfigruleresponsetypedef)\].
+
 ## DescribeComplianceByResourcePaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_compliance_by_resource")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_compliance_by_resource")`.
 
 Can be used directly:
 
@@ -110,23 +122,26 @@ def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResou
     return boto3.client("config").get_paginator("describe_compliance_by_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeComplianceByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
 
-```python
-class DescribeComplianceByResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceType: str = None,
-        ResourceId: str = None,
-        ComplianceTypes: List[ComplianceType] = None,
-        Limit: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeComplianceByResourceResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
+
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `Limit`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeComplianceByResourcePaginator.paginate` returns
+`Iterator`\[[DescribeComplianceByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyresourceresponsetypedef)\].
+
 ## DescribeConfigRuleEvaluationStatusPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_config_rule_evaluation_status")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_config_rule_evaluation_status")`.
 
 Can be used directly:
 
@@ -137,20 +152,22 @@ def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRule
     return boto3.client("config").get_paginator("describe_config_rule_evaluation_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeConfigRuleEvaluationStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
 
-```python
-class DescribeConfigRuleEvaluationStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigRuleNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeConfigRuleEvaluationStatusResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeConfigRuleEvaluationStatusPaginator.paginate` returns
+`Iterator`\[[DescribeConfigRuleEvaluationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigruleevaluationstatusresponsetypedef)\].
+
 ## DescribeConfigRulesPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_config_rules")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_config_rules")`.
 
 Can be used directly:
 
@@ -161,20 +178,22 @@ def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
     return boto3.client("config").get_paginator("describe_config_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
 
-```python
-class DescribeConfigRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigRuleNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeConfigRulesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeConfigRulesPaginator.paginate` method:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeConfigRulesPaginator.paginate` returns
+`Iterator`\[[DescribeConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigrulesresponsetypedef)\].
+
 ## DescribeConfigurationAggregatorSourcesStatusPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")`.
 
 Can be used directly:
 
@@ -185,21 +204,25 @@ def get_describe_configuration_aggregator_sources_status_paginator() -> Describe
     return boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
 
-```python
-class DescribeConfigurationAggregatorSourcesStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigurationAggregatorName: str,
-        UpdateStatus: List[AggregatedSourceStatusType] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeConfigurationAggregatorSourcesStatusPaginator.paginate`
+method:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `UpdateStatus`:
+  `List`\[[AggregatedSourceStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregatedsourcestatustype)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeConfigurationAggregatorSourcesStatusPaginator.paginate` returns
+`Iterator`\[[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsourcesstatusresponsetypedef)\].
+
 ## DescribeConfigurationAggregatorsPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_configuration_aggregators")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_configuration_aggregators")`.
 
 Can be used directly:
 
@@ -210,20 +233,22 @@ def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationA
     return boto3.client("config").get_paginator("describe_configuration_aggregators")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeConfigurationAggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
 
-```python
-class DescribeConfigurationAggregatorsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigurationAggregatorNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeConfigurationAggregatorsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
+
+- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeConfigurationAggregatorsPaginator.paginate` returns
+`Iterator`\[[DescribeConfigurationAggregatorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsresponsetypedef)\].
+
 ## DescribePendingAggregationRequestsPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_pending_aggregation_requests")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_pending_aggregation_requests")`.
 
 Can be used directly:
 
@@ -234,19 +259,21 @@ def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggr
     return boto3.client("config").get_paginator("describe_pending_aggregation_requests")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
+Boto3 documentation:
+[ConfigService.Paginator.DescribePendingAggregationRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
 
-```python
-class DescribePendingAggregationRequestsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePendingAggregationRequestsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribePendingAggregationRequestsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribePendingAggregationRequestsPaginator.paginate` returns
+`Iterator`\[[DescribePendingAggregationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describependingaggregationrequestsresponsetypedef)\].
+
 ## DescribeRemediationExecutionStatusPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_remediation_execution_status")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_remediation_execution_status")`.
 
 Can be used directly:
 
@@ -257,21 +284,24 @@ def get_describe_remediation_execution_status_paginator() -> DescribeRemediation
     return boto3.client("config").get_paginator("describe_remediation_execution_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeRemediationExecutionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
 
-```python
-class DescribeRemediationExecutionStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigRuleName: str,
-        ResourceKeys: List["ResourceKeyTypeDef"] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRemediationExecutionStatusResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ResourceKeys`:
+  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRemediationExecutionStatusPaginator.paginate` returns
+`Iterator`\[[DescribeRemediationExecutionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexecutionstatusresponsetypedef)\].
+
 ## DescribeRetentionConfigurationsPaginator
 
-Type annotations for `boto3.client("config").get_paginator("describe_retention_configurations")`.
+Type annotations for
+`boto3.client("config").get_paginator("describe_retention_configurations")`.
 
 Can be used directly:
 
@@ -282,20 +312,22 @@ def get_describe_retention_configurations_paginator() -> DescribeRetentionConfig
     return boto3.client("config").get_paginator("describe_retention_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
+Boto3 documentation:
+[ConfigService.Paginator.DescribeRetentionConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
 
-```python
-class DescribeRetentionConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RetentionConfigurationNames: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRetentionConfigurationsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
+
+- `RetentionConfigurationNames`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRetentionConfigurationsPaginator.paginate` returns
+`Iterator`\[[DescribeRetentionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeretentionconfigurationsresponsetypedef)\].
+
 ## GetAggregateComplianceDetailsByConfigRulePaginator
 
-Type annotations for `boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")`.
+Type annotations for
+`boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")`.
 
 Can be used directly:
 
@@ -306,24 +338,28 @@ def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggreg
     return boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
+Boto3 documentation:
+[ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
 
-```python
-class GetAggregateComplianceDetailsByConfigRulePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigurationAggregatorName: str,
-        ConfigRuleName: str,
-        AccountId: str,
-        AwsRegion: str,
-        ComplianceType: ComplianceType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef]:
-        pass
-```
+Arguments for `GetAggregateComplianceDetailsByConfigRulePaginator.paginate`
+method:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ConfigRuleName`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `AwsRegion`: `str` *(required)*
+- `ComplianceType`:
+  [ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`GetAggregateComplianceDetailsByConfigRulePaginator.paginate` returns
+`Iterator`\[[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatecompliancedetailsbyconfigruleresponsetypedef)\].
+
 ## GetComplianceDetailsByConfigRulePaginator
 
-Type annotations for `boto3.client("config").get_paginator("get_compliance_details_by_config_rule")`.
+Type annotations for
+`boto3.client("config").get_paginator("get_compliance_details_by_config_rule")`.
 
 Can be used directly:
 
@@ -334,22 +370,25 @@ def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetail
     return boto3.client("config").get_paginator("get_compliance_details_by_config_rule")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
+Boto3 documentation:
+[ConfigService.Paginator.GetComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
 
-```python
-class GetComplianceDetailsByConfigRulePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigRuleName: str,
-        ComplianceTypes: List[ComplianceType] = None,
-        Limit: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetComplianceDetailsByConfigRuleResponseTypeDef]:
-        pass
-```
+Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
+
+- `ConfigRuleName`: `str` *(required)*
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `Limit`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`GetComplianceDetailsByConfigRulePaginator.paginate` returns
+`Iterator`\[[GetComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyconfigruleresponsetypedef)\].
+
 ## GetComplianceDetailsByResourcePaginator
 
-Type annotations for `boto3.client("config").get_paginator("get_compliance_details_by_resource")`.
+Type annotations for
+`boto3.client("config").get_paginator("get_compliance_details_by_resource")`.
 
 Can be used directly:
 
@@ -360,22 +399,25 @@ def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsBy
     return boto3.client("config").get_paginator("get_compliance_details_by_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
+Boto3 documentation:
+[ConfigService.Paginator.GetComplianceDetailsByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
 
-```python
-class GetComplianceDetailsByResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceType: str,
-        ResourceId: str,
-        ComplianceTypes: List[ComplianceType] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetComplianceDetailsByResourceResponseTypeDef]:
-        pass
-```
+Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
+
+- `ResourceType`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+- `ComplianceTypes`:
+  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`GetComplianceDetailsByResourcePaginator.paginate` returns
+`Iterator`\[[GetComplianceDetailsByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyresourceresponsetypedef)\].
+
 ## GetResourceConfigHistoryPaginator
 
-Type annotations for `boto3.client("config").get_paginator("get_resource_config_history")`.
+Type annotations for
+`boto3.client("config").get_paginator("get_resource_config_history")`.
 
 Can be used directly:
 
@@ -386,24 +428,29 @@ def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPagin
     return boto3.client("config").get_paginator("get_resource_config_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
+Boto3 documentation:
+[ConfigService.Paginator.GetResourceConfigHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
 
-```python
-class GetResourceConfigHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        resourceType: ResourceType,
-        resourceId: str,
-        laterTime: datetime = None,
-        earlierTime: datetime = None,
-        chronologicalOrder: ChronologicalOrder = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetResourceConfigHistoryResponseTypeDef]:
-        pass
-```
+Arguments for `GetResourceConfigHistoryPaginator.paginate` method:
+
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `resourceId`: `str` *(required)*
+- `laterTime`: `datetime`
+- `earlierTime`: `datetime`
+- `chronologicalOrder`:
+  [ChronologicalOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#chronologicalorder)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`GetResourceConfigHistoryPaginator.paginate` returns
+`Iterator`\[[GetResourceConfigHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getresourceconfighistoryresponsetypedef)\].
+
 ## ListAggregateDiscoveredResourcesPaginator
 
-Type annotations for `boto3.client("config").get_paginator("list_aggregate_discovered_resources")`.
+Type annotations for
+`boto3.client("config").get_paginator("list_aggregate_discovered_resources")`.
 
 Can be used directly:
 
@@ -414,22 +461,27 @@ def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscover
     return boto3.client("config").get_paginator("list_aggregate_discovered_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
+Boto3 documentation:
+[ConfigService.Paginator.ListAggregateDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
 
-```python
-class ListAggregateDiscoveredResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ConfigurationAggregatorName: str,
-        ResourceType: ResourceType,
-        Filters: ResourceFiltersTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAggregateDiscoveredResourcesResponseTypeDef]:
-        pass
-```
+Arguments for `ListAggregateDiscoveredResourcesPaginator.paginate` method:
+
+- `ConfigurationAggregatorName`: `str` *(required)*
+- `ResourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `Filters`:
+  [ResourceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcefilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`ListAggregateDiscoveredResourcesPaginator.paginate` returns
+`Iterator`\[[ListAggregateDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listaggregatediscoveredresourcesresponsetypedef)\].
+
 ## ListDiscoveredResourcesPaginator
 
-Type annotations for `boto3.client("config").get_paginator("list_discovered_resources")`.
+Type annotations for
+`boto3.client("config").get_paginator("list_discovered_resources")`.
 
 Can be used directly:
 
@@ -440,18 +492,20 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return boto3.client("config").get_paginator("list_discovered_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
+Boto3 documentation:
+[ConfigService.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
 
-```python
-class ListDiscoveredResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        resourceType: ResourceType,
-        resourceIds: List[str] = None,
-        resourceName: str = None,
-        limit: int = None,
-        includeDeletedResources: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDiscoveredResourcesResponseTypeDef]:
-        pass
-```
+Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
+
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
+  *(required)*
+- `resourceIds`: `List`\[`str`\]
+- `resourceName`: `str`
+- `limit`: `int`
+- `includeDeletedResources`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+
+`ListDiscoveredResourcesPaginator.paginate` returns
+`Iterator`\[[ListDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listdiscoveredresourcesresponsetypedef)\].

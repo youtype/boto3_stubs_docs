@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WAFV2
 
-Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+Auto-generated documentation for
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+type annotations stubs module
+[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 ```bash
 pip install mypy-boto3-wafv2
@@ -18,7 +20,7 @@ pip install mypy-boto3-wafv2
 
 ## WAFV2Client
 
-Type annotations for  `boto3.client("wafv2")` as [WAFV2Client](./client.md)
+Type annotations for `boto3.client("wafv2")` as [WAFV2Client](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_wafv2.client import WAFV2Client
 ```
 
-
 WAFV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_web_acl](./client.md#associate-web-acl)
 - [can_paginate](./client.md#can-paginate)
 - [check_capacity](./client.md#check-capacity)
@@ -75,10 +75,8 @@ WAFV2Client [exceptions](./client.md#exceptions)
 - [update_rule_group](./client.md#update-rule-group)
 - [update_web_acl](./client.md#update-web-acl)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [WAFAssociatedItemException](./client.md#wafassociateditemexception)
 - [WAFDuplicateItemException](./client.md#wafduplicateitemexception)
@@ -95,15 +93,6 @@ WAFV2Client [exceptions](./client.md#exceptions)
 - [WAFTagOperationException](./client.md#waftagoperationexception)
 - [WAFTagOperationInternalErrorException](./client.md#waftagoperationinternalerrorexception)
 - [WAFUnavailableEntityException](./client.md#wafunavailableentityexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +122,10 @@ from mypy_boto3_wafv2.literals import ActionValue, ...
 - [Scope](./literals.md#scope)
 - [TextTransformationType](./literals.md#texttransformationtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

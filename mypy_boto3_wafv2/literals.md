@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WAFV2](./README.md) > Literals
 
-Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+Auto-generated documentation for
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+type annotations stubs module
+[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [Literals for boto3 WAFV2 module](#literals-for-boto3-wafv2-module)
   - [ActionValue](#actionvalue)

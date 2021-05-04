@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DirectConnect
 
-Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
-type annotations stubs module [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+Auto-generated documentation for
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+type annotations stubs module
+[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 ```bash
 pip install mypy-boto3-directconnect
@@ -19,7 +21,8 @@ pip install mypy-boto3-directconnect
 
 ## DirectConnectClient
 
-Type annotations for  `boto3.client("directconnect")` as [DirectConnectClient](./client.md)
+Type annotations for `boto3.client("directconnect")` as
+[DirectConnectClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_directconnect.client import DirectConnectClient
 ```
 
-
 DirectConnectClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_direct_connect_gateway_association_proposal](./client.md#accept-direct-connect-gateway-association-proposal)
 - [allocate_connection_on_interconnect](./client.md#allocate-connection-on-interconnect)
 - [allocate_hosted_connection](./client.md#allocate-hosted-connection)
@@ -96,24 +97,18 @@ DirectConnectClient [exceptions](./client.md#exceptions)
 - [update_lag](./client.md#update-lag)
 - [update_virtual_interface_attributes](./client.md#update-virtual-interface-attributes)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DirectConnectClientException](./client.md#directconnectclientexception)
 - [DirectConnectServerException](./client.md#directconnectserverexception)
 - [DuplicateTagKeysException](./client.md#duplicatetagkeysexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("directconnect").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("directconnect").get_paginator("...")`.
 
 Can be used directly:
 
@@ -124,11 +119,6 @@ from mypy_boto3_directconnect.paginators import DescribeDirectConnectGatewayAsso
 - [DescribeDirectConnectGatewayAssociationsPaginator](./paginators.md#describedirectconnectgatewayassociationspaginator)
 - [DescribeDirectConnectGatewayAttachmentsPaginator](./paginators.md#describedirectconnectgatewayattachmentspaginator)
 - [DescribeDirectConnectGatewaysPaginator](./paginators.md#describedirectconnectgatewayspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -159,13 +149,10 @@ from mypy_boto3_directconnect.literals import AddressFamily, ...
 - [LoaContentType](./literals.md#loacontenttype)
 - [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

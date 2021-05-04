@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SMSVoice](./README.md) > SMSVoiceClient
 
-Auto-generated documentation for [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
-type annotations stubs module [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
+Auto-generated documentation for
+[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
+type annotations stubs module
+[mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
 - [SMSVoiceClient for boto3 SMSVoice module](#smsvoiceclient-for-boto3-smsvoice-module)
   - [SMSVoiceClient](#smsvoiceclient)
@@ -33,12 +35,13 @@ def get_sms-voice_client() -> SMSVoiceClient:
     return boto3.client("sms-voice")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client)
+Boto3 documentation:
+[SMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sms_voice.client import Exceptions
@@ -46,7 +49,6 @@ from mypy_boto3_sms_voice.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -58,162 +60,160 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("sms-voice").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.can_paginate]
+Boto3 documentation:
+[SMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_configuration_set
 
-Type annotations for `boto3.client("sms-voice").create_configuration_set` method.
+Type annotations for `boto3.client("sms-voice").create_configuration_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set]
+Boto3 documentation:
+[SMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set)
 
-```python
-def create_configuration_set(
-    self,
-    ConfigurationSetName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
-Type annotations for `boto3.client("sms-voice").create_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sms-voice").create_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination]
+Boto3 documentation:
+[SMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination)
 
-```python
-def create_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestination: EventDestinationDefinitionTypeDef = None,
-    EventDestinationName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
+- `EventDestinationName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set
 
-Type annotations for `boto3.client("sms-voice").delete_configuration_set` method.
+Type annotations for `boto3.client("sms-voice").delete_configuration_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set]
+Boto3 documentation:
+[SMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set)
 
-```python
-def delete_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
-Type annotations for `boto3.client("sms-voice").delete_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sms-voice").delete_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination]
+Boto3 documentation:
+[SMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination)
 
-```python
-def delete_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sms-voice").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url]
+Boto3 documentation:
+[SMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_configuration_set_event_destinations
 
-Type annotations for `boto3.client("sms-voice").get_configuration_set_event_destinations` method.
+Type annotations for
+`boto3.client("sms-voice").get_configuration_set_event_destinations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations]
+Boto3 documentation:
+[SMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations)
 
-```python
-def get_configuration_set_event_destinations(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetEventDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetEventDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#getconfigurationseteventdestinationsresponsetypedef).
 
 ### list_configuration_sets
 
-Type annotations for `boto3.client("sms-voice").list_configuration_sets` method.
+Type annotations for `boto3.client("sms-voice").list_configuration_sets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets]
+Boto3 documentation:
+[SMSVoice.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets)
 
-```python
-def list_configuration_sets(
-    self,
-    NextToken: str = None,
-    PageSize: str = None
-) -> ListConfigurationSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `str`
+
+Returns
+[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#listconfigurationsetsresponsetypedef).
 
 ### send_voice_message
 
 Type annotations for `boto3.client("sms-voice").send_voice_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message]
+Boto3 documentation:
+[SMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message)
 
-```python
-def send_voice_message(
-    self,
-    CallerId: str = None,
-    ConfigurationSetName: str = None,
-    Content: VoiceMessageContentTypeDef = None,
-    DestinationPhoneNumber: str = None,
-    OriginationPhoneNumber: str = None
-) -> SendVoiceMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CallerId`: `str`
+- `ConfigurationSetName`: `str`
+- `Content`:
+  [VoiceMessageContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#voicemessagecontenttypedef)
+- `DestinationPhoneNumber`: `str`
+- `OriginationPhoneNumber`: `str`
+
+Returns
+[SendVoiceMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#sendvoicemessageresponsetypedef).
 
 ### update_configuration_set_event_destination
 
-Type annotations for `boto3.client("sms-voice").update_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sms-voice").update_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination]
+Boto3 documentation:
+[SMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination)
 
-```python
-def update_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
 
-
+Returns `Dict`\[`str`, `Any`\].

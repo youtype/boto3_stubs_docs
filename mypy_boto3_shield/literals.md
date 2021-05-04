@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Shield](./README.md) > Literals
 
-Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
-type annotations stubs module [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+Auto-generated documentation for
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+type annotations stubs module
+[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Literals for boto3 Shield module](#literals-for-boto3-shield-module)
   - [AttackLayer](#attacklayer)

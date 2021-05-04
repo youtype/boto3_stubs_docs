@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GroundStation](./README.md) > Paginators
 
-Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+Auto-generated documentation for
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+type annotations stubs module
+[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Paginators for boto3 GroundStation module](#paginators-for-boto3-groundstation-module)
   - [ListConfigsPaginator](#listconfigspaginator)
@@ -15,7 +17,8 @@ type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/projec
 
 ## ListConfigsPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_configs")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_configs")`.
 
 Can be used directly:
 
@@ -26,19 +29,21 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
     return boto3.client("groundstation").get_paginator("list_configs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
+Boto3 documentation:
+[GroundStation.Paginator.ListConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
 
-```python
-class ListConfigsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListConfigsResponseTypeDef]:
-        pass
-```
+Arguments for `ListConfigsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListConfigsPaginator.paginate` returns
+`Iterator`\[[ListConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listconfigsresponsetypedef)\].
+
 ## ListContactsPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_contacts")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_contacts")`.
 
 Can be used directly:
 
@@ -49,25 +54,29 @@ def get_list_contacts_paginator() -> ListContactsPaginator:
     return boto3.client("groundstation").get_paginator("list_contacts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
+Boto3 documentation:
+[GroundStation.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
 
-```python
-class ListContactsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        endTime: datetime,
-        startTime: datetime,
-        statusList: List[ContactStatus],
-        groundStation: str = None,
-        missionProfileArn: str = None,
-        satelliteArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListContactsResponseTypeDef]:
-        pass
-```
+Arguments for `ListContactsPaginator.paginate` method:
+
+- `endTime`: `datetime` *(required)*
+- `startTime`: `datetime` *(required)*
+- `statusList`:
+  `List`\[[ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)\]
+  *(required)*
+- `groundStation`: `str`
+- `missionProfileArn`: `str`
+- `satelliteArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListContactsPaginator.paginate` returns
+`Iterator`\[[ListContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listcontactsresponsetypedef)\].
+
 ## ListDataflowEndpointGroupsPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")`.
 
 Can be used directly:
 
@@ -78,19 +87,21 @@ def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsP
     return boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
+Boto3 documentation:
+[GroundStation.Paginator.ListDataflowEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
 
-```python
-class ListDataflowEndpointGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDataflowEndpointGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListDataflowEndpointGroupsPaginator.paginate` returns
+`Iterator`\[[ListDataflowEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listdataflowendpointgroupsresponsetypedef)\].
+
 ## ListGroundStationsPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_ground_stations")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_ground_stations")`.
 
 Can be used directly:
 
@@ -101,20 +112,22 @@ def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
     return boto3.client("groundstation").get_paginator("list_ground_stations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
+Boto3 documentation:
+[GroundStation.Paginator.ListGroundStations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
 
-```python
-class ListGroundStationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        satelliteId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGroundStationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListGroundStationsPaginator.paginate` method:
+
+- `satelliteId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListGroundStationsPaginator.paginate` returns
+`Iterator`\[[ListGroundStationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listgroundstationsresponsetypedef)\].
+
 ## ListMissionProfilesPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_mission_profiles")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_mission_profiles")`.
 
 Can be used directly:
 
@@ -125,19 +138,21 @@ def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
     return boto3.client("groundstation").get_paginator("list_mission_profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
+Boto3 documentation:
+[GroundStation.Paginator.ListMissionProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
 
-```python
-class ListMissionProfilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMissionProfilesResponseTypeDef]:
-        pass
-```
+Arguments for `ListMissionProfilesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListMissionProfilesPaginator.paginate` returns
+`Iterator`\[[ListMissionProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listmissionprofilesresponsetypedef)\].
+
 ## ListSatellitesPaginator
 
-Type annotations for `boto3.client("groundstation").get_paginator("list_satellites")`.
+Type annotations for
+`boto3.client("groundstation").get_paginator("list_satellites")`.
 
 Can be used directly:
 
@@ -148,13 +163,13 @@ def get_list_satellites_paginator() -> ListSatellitesPaginator:
     return boto3.client("groundstation").get_paginator("list_satellites")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
+Boto3 documentation:
+[GroundStation.Paginator.ListSatellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
 
-```python
-class ListSatellitesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSatellitesResponseTypeDef]:
-        pass
-```
+Arguments for `ListSatellitesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+
+`ListSatellitesPaginator.paginate` returns
+`Iterator`\[[ListSatellitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listsatellitesresponsetypedef)\].

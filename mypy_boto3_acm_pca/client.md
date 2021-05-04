@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ACMPCA](./README.md) > ACMPCAClient
 
-Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+Auto-generated documentation for
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+type annotations stubs module
+[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [ACMPCAClient for boto3 ACMPCA module](#acmpcaclient-for-boto3-acmpca-module)
   - [ACMPCAClient](#acmpcaclient)
@@ -50,12 +52,13 @@ def get_acm-pca_client() -> ACMPCAClient:
     return boto3.client("acm-pca")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
+Boto3 documentation:
+[ACMPCA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_acm_pca.client import Exceptions
@@ -63,7 +66,6 @@ from mypy_boto3_acm_pca.client import Exceptions
 def handle_error(exc: Exceptions.CertificateMismatchException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -88,416 +90,420 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("acm-pca").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate]
+Boto3 documentation:
+[ACMPCA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").create_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").create_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
 
-```python
-def create_certificate_authority(
-    self,
-    CertificateAuthorityConfiguration: "CertificateAuthorityConfigurationTypeDef",
-    CertificateAuthorityType: CertificateAuthorityType,
-    RevocationConfiguration: "RevocationConfigurationTypeDef" = None,
-    IdempotencyToken: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateCertificateAuthorityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityConfiguration`:
+  [CertificateAuthorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#certificateauthorityconfigurationtypedef)
+  *(required)*
+- `CertificateAuthorityType`:
+  [CertificateAuthorityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritytype)
+  *(required)*
+- `RevocationConfiguration`:
+  [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
+- `IdempotencyToken`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#createcertificateauthorityresponsetypedef).
 
 ### create_certificate_authority_audit_report
 
-Type annotations for `boto3.client("acm-pca").create_certificate_authority_audit_report` method.
+Type annotations for
+`boto3.client("acm-pca").create_certificate_authority_audit_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report]
+Boto3 documentation:
+[ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
 
-```python
-def create_certificate_authority_audit_report(
-    self,
-    CertificateAuthorityArn: str,
-    S3BucketName: str,
-    AuditReportResponseFormat: AuditReportResponseFormat
-) -> CreateCertificateAuthorityAuditReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `S3BucketName`: `str` *(required)*
+- `AuditReportResponseFormat`:
+  [AuditReportResponseFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#auditreportresponseformat)
+  *(required)*
+
+Returns
+[CreateCertificateAuthorityAuditReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#createcertificateauthorityauditreportresponsetypedef).
 
 ### create_permission
 
 Type annotations for `boto3.client("acm-pca").create_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission]
+Boto3 documentation:
+[ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
 
-```python
-def create_permission(
-    self,
-    CertificateAuthorityArn: str,
-    Principal: str,
-    Actions: List[ActionType],
-    SourceAccount: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Principal`: `str` *(required)*
+- `Actions`:
+  `List`\[[ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#actiontype)\]
+  *(required)*
+- `SourceAccount`: `str`
 
 ### delete_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").delete_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").delete_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
 
-```python
-def delete_certificate_authority(
-    self,
-    CertificateAuthorityArn: str,
-    PermanentDeletionTimeInDays: int = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `PermanentDeletionTimeInDays`: `int`
 
 ### delete_permission
 
 Type annotations for `boto3.client("acm-pca").delete_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission]
+Boto3 documentation:
+[ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
 
-```python
-def delete_permission(
-    self,
-    CertificateAuthorityArn: str,
-    Principal: str,
-    SourceAccount: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Principal`: `str` *(required)*
+- `SourceAccount`: `str`
 
 ### delete_policy
 
 Type annotations for `boto3.client("acm-pca").delete_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy]
+Boto3 documentation:
+[ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
 
-```python
-def delete_policy(
-    self,
-    ResourceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
 
 ### describe_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").describe_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").describe_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
 
-```python
-def describe_certificate_authority(
-    self,
-    CertificateAuthorityArn: str
-) -> DescribeCertificateAuthorityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+
+Returns
+[DescribeCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#describecertificateauthorityresponsetypedef).
 
 ### describe_certificate_authority_audit_report
 
-Type annotations for `boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
+Type annotations for
+`boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report]
+Boto3 documentation:
+[ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
 
-```python
-def describe_certificate_authority_audit_report(
-    self,
-    CertificateAuthorityArn: str,
-    AuditReportId: str
-) -> DescribeCertificateAuthorityAuditReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `AuditReportId`: `str` *(required)*
+
+Returns
+[DescribeCertificateAuthorityAuditReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#describecertificateauthorityauditreportresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("acm-pca").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url]
+Boto3 documentation:
+[ACMPCA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_certificate
 
 Type annotations for `boto3.client("acm-pca").get_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate]
+Boto3 documentation:
+[ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
 
-```python
-def get_certificate(
-    self,
-    CertificateAuthorityArn: str,
-    CertificateArn: str
-) -> GetCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `CertificateArn`: `str` *(required)*
+
+Returns
+[GetCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateresponsetypedef).
 
 ### get_certificate_authority_certificate
 
-Type annotations for `boto3.client("acm-pca").get_certificate_authority_certificate` method.
+Type annotations for
+`boto3.client("acm-pca").get_certificate_authority_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate]
+Boto3 documentation:
+[ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
 
-```python
-def get_certificate_authority_certificate(
-    self,
-    CertificateAuthorityArn: str
-) -> GetCertificateAuthorityCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+
+Returns
+[GetCertificateAuthorityCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateauthoritycertificateresponsetypedef).
 
 ### get_certificate_authority_csr
 
-Type annotations for `boto3.client("acm-pca").get_certificate_authority_csr` method.
+Type annotations for `boto3.client("acm-pca").get_certificate_authority_csr`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr]
+Boto3 documentation:
+[ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
 
-```python
-def get_certificate_authority_csr(
-    self,
-    CertificateAuthorityArn: str
-) -> GetCertificateAuthorityCsrResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+
+Returns
+[GetCertificateAuthorityCsrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateauthoritycsrresponsetypedef).
 
 ### get_policy
 
 Type annotations for `boto3.client("acm-pca").get_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy]
+Boto3 documentation:
+[ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
 
-```python
-def get_policy(
-    self,
-    ResourceArn: str
-) -> GetPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getpolicyresponsetypedef).
 
 ### import_certificate_authority_certificate
 
-Type annotations for `boto3.client("acm-pca").import_certificate_authority_certificate` method.
+Type annotations for
+`boto3.client("acm-pca").import_certificate_authority_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate]
+Boto3 documentation:
+[ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
 
-```python
-def import_certificate_authority_certificate(
-    self,
-    CertificateAuthorityArn: str,
-    Certificate: Union[bytes, IO[bytes]],
-    CertificateChain: Union[bytes, IO[bytes]] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ### issue_certificate
 
 Type annotations for `boto3.client("acm-pca").issue_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate]
+Boto3 documentation:
+[ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
 
-```python
-def issue_certificate(
-    self,
-    CertificateAuthorityArn: str,
-    Csr: Union[bytes, IO[bytes]],
-    SigningAlgorithm: SigningAlgorithm,
-    Validity: ValidityTypeDef,
-    ApiPassthrough: ApiPassthroughTypeDef = None,
-    TemplateArn: str = None,
-    ValidityNotBefore: ValidityTypeDef = None,
-    IdempotencyToken: str = None
-) -> IssueCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `SigningAlgorithm`:
+  [SigningAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#signingalgorithm)
+  *(required)*
+- `Validity`:
+  [ValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#validitytypedef)
+  *(required)*
+- `ApiPassthrough`:
+  [ApiPassthroughTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#apipassthroughtypedef)
+- `TemplateArn`: `str`
+- `ValidityNotBefore`:
+  [ValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#validitytypedef)
+- `IdempotencyToken`: `str`
+
+Returns
+[IssueCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#issuecertificateresponsetypedef).
 
 ### list_certificate_authorities
 
-Type annotations for `boto3.client("acm-pca").list_certificate_authorities` method.
+Type annotations for `boto3.client("acm-pca").list_certificate_authorities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities]
+Boto3 documentation:
+[ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
 
-```python
-def list_certificate_authorities(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ResourceOwner: ResourceOwner = None
-) -> ListCertificateAuthoritiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ResourceOwner`:
+  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#resourceowner)
+
+Returns
+[ListCertificateAuthoritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listcertificateauthoritiesresponsetypedef).
 
 ### list_permissions
 
 Type annotations for `boto3.client("acm-pca").list_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions]
+Boto3 documentation:
+[ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
 
-```python
-def list_permissions(
-    self,
-    CertificateAuthorityArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listpermissionsresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("acm-pca").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags]
+Boto3 documentation:
+[ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    CertificateAuthorityArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listtagsresponsetypedef).
 
 ### put_policy
 
 Type annotations for `boto3.client("acm-pca").put_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy]
+Boto3 documentation:
+[ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
 
-```python
-def put_policy(
-    self,
-    ResourceArn: str,
-    Policy: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Policy`: `str` *(required)*
 
 ### restore_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").restore_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").restore_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
 
-```python
-def restore_certificate_authority(
-    self,
-    CertificateAuthorityArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
 
 ### revoke_certificate
 
 Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate]
+Boto3 documentation:
+[ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
 
-```python
-def revoke_certificate(
-    self,
-    CertificateAuthorityArn: str,
-    CertificateSerial: str,
-    RevocationReason: RevocationReason
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `CertificateSerial`: `str` *(required)*
+- `RevocationReason`:
+  [RevocationReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#revocationreason)
+  *(required)*
 
 ### tag_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").tag_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").tag_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
 
-```python
-def tag_certificate_authority(
-    self,
-    CertificateAuthorityArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").untag_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").untag_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
 
-```python
-def untag_certificate_authority(
-    self,
-    CertificateAuthorityArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### update_certificate_authority
 
-Type annotations for `boto3.client("acm-pca").update_certificate_authority` method.
+Type annotations for `boto3.client("acm-pca").update_certificate_authority`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority]
+Boto3 documentation:
+[ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
 
-```python
-def update_certificate_authority(
-    self,
-    CertificateAuthorityArn: str,
-    RevocationConfiguration: "RevocationConfigurationTypeDef" = None,
-    Status: CertificateAuthorityStatus = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `CertificateAuthorityArn`: `str` *(required)*
+- `RevocationConfiguration`:
+  [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
+- `Status`:
+  [CertificateAuthorityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritystatus)
 
 ### get_paginator
 
-Type annotations for `boto3.client("acm-pca").get_paginator` method with overloads.
+Type annotations for `boto3.client("acm-pca").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_certificate_authorities")` -> [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
-- `client.get_paginator("list_permissions")` -> [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
-- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
-
-
-
+- `client.get_paginator("list_certificate_authorities")` ->
+  [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
+- `client.get_paginator("list_permissions")` ->
+  [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+- `client.get_paginator("list_tags")` ->
+  [ListTagsPaginator](./paginators.md#listtagspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("acm-pca").get_waiter` method with overloads.
+Type annotations for `boto3.client("acm-pca").get_waiter` method with
+overloads.
 
-- `client.get_waiter("audit_report_created")` -> [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
-- `client.get_waiter("certificate_authority_csr_created")` -> [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
-- `client.get_waiter("certificate_issued")` -> [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)
+- `client.get_waiter("audit_report_created")` ->
+  [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
+- `client.get_waiter("certificate_authority_csr_created")` ->
+  [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
+- `client.get_waiter("certificate_issued")` ->
+  [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)

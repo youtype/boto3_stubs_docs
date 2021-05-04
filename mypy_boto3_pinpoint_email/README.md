@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > PinpointEmail
 
-Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+Auto-generated documentation for
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+type annotations stubs module
+[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ```bash
 pip install mypy-boto3-pinpoint-email
@@ -19,7 +21,8 @@ pip install mypy-boto3-pinpoint-email
 
 ## PinpointEmailClient
 
-Type annotations for  `boto3.client("pinpoint-email")` as [PinpointEmailClient](./client.md)
+Type annotations for `boto3.client("pinpoint-email")` as
+[PinpointEmailClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_pinpoint_email.client import PinpointEmailClient
 ```
 
-
 PinpointEmailClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_configuration_set](./client.md#create-configuration-set)
 - [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
@@ -79,10 +80,8 @@ PinpointEmailClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_configuration_set_event_destination](./client.md#update-configuration-set-event-destination)
 
-
-
-
 ### Exceptions
+
 - [AccountSuspendedException](./client.md#accountsuspendedexception)
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [BadRequestException](./client.md#badrequestexception)
@@ -95,14 +94,10 @@ PinpointEmailClient [exceptions](./client.md#exceptions)
 - [SendingPausedException](./client.md#sendingpausedexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("pinpoint-email").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("pinpoint-email").get_paginator("...")`.
 
 Can be used directly:
 
@@ -115,11 +110,6 @@ from mypy_boto3_pinpoint_email.paginators import GetDedicatedIpsPaginator, ...
 - [ListDedicatedIpPoolsPaginator](./paginators.md#listdedicatedippoolspaginator)
 - [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
 - [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -147,13 +137,10 @@ from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailure, ...
 - [TlsPolicy](./literals.md#tlspolicy)
 - [WarmupStatus](./literals.md#warmupstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

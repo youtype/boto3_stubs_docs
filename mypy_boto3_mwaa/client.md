@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MWAA](./README.md) > MWAAClient
 
-Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
-type annotations stubs module [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+Auto-generated documentation for
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+type annotations stubs module
+[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [MWAAClient for boto3 MWAA module](#mwaaclient-for-boto3-mwaa-module)
   - [MWAAClient](#mwaaclient)
@@ -37,12 +39,13 @@ def get_mwaa_client() -> MWAAClient:
     return boto3.client("mwaa")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
+Boto3 documentation:
+[MWAA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mwaa.client import Exceptions
@@ -50,7 +53,6 @@ from mypy_boto3_mwaa.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -60,239 +62,238 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mwaa").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate]
+Boto3 documentation:
+[MWAA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_cli_token
 
 Type annotations for `boto3.client("mwaa").create_cli_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token]
+Boto3 documentation:
+[MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
 
-```python
-def create_cli_token(
-    self,
-    Name: str
-) -> CreateCliTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[CreateCliTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createclitokenresponsetypedef).
 
 ### create_environment
 
 Type annotations for `boto3.client("mwaa").create_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment]
+Boto3 documentation:
+[MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
 
-```python
-def create_environment(
-    self,
-    DagS3Path: str,
-    ExecutionRoleArn: str,
-    Name: str,
-    NetworkConfiguration: "NetworkConfigurationTypeDef",
-    SourceBucketArn: str,
-    AirflowConfigurationOptions: Dict[str, str] = None,
-    AirflowVersion: str = None,
-    EnvironmentClass: str = None,
-    KmsKey: str = None,
-    LoggingConfiguration: LoggingConfigurationInputTypeDef = None,
-    MaxWorkers: int = None,
-    MinWorkers: int = None,
-    PluginsS3ObjectVersion: str = None,
-    PluginsS3Path: str = None,
-    RequirementsS3ObjectVersion: str = None,
-    RequirementsS3Path: str = None,
-    Tags: Dict[str, str] = None,
-    WebserverAccessMode: WebserverAccessMode = None,
-    WeeklyMaintenanceWindowStart: str = None
-) -> CreateEnvironmentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DagS3Path`: `str` *(required)*
+- `ExecutionRoleArn`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#networkconfigurationtypedef)
+  *(required)*
+- `SourceBucketArn`: `str` *(required)*
+- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowVersion`: `str`
+- `EnvironmentClass`: `str`
+- `KmsKey`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#loggingconfigurationinputtypedef)
+- `MaxWorkers`: `int`
+- `MinWorkers`: `int`
+- `PluginsS3ObjectVersion`: `str`
+- `PluginsS3Path`: `str`
+- `RequirementsS3ObjectVersion`: `str`
+- `RequirementsS3Path`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `WebserverAccessMode`:
+  [WebserverAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#webserveraccessmode)
+- `WeeklyMaintenanceWindowStart`: `str`
+
+Returns
+[CreateEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createenvironmentoutputtypedef).
 
 ### create_web_login_token
 
 Type annotations for `boto3.client("mwaa").create_web_login_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token]
+Boto3 documentation:
+[MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
 
-```python
-def create_web_login_token(
-    self,
-    Name: str
-) -> CreateWebLoginTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[CreateWebLoginTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createweblogintokenresponsetypedef).
 
 ### delete_environment
 
 Type annotations for `boto3.client("mwaa").delete_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment]
+Boto3 documentation:
+[MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
 
-```python
-def delete_environment(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mwaa").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url]
+Boto3 documentation:
+[MWAA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_environment
 
 Type annotations for `boto3.client("mwaa").get_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment]
+Boto3 documentation:
+[MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
 
-```python
-def get_environment(
-    self,
-    Name: str
-) -> GetEnvironmentOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#getenvironmentoutputtypedef).
 
 ### list_environments
 
 Type annotations for `boto3.client("mwaa").list_environments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments]
+Boto3 documentation:
+[MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
 
-```python
-def list_environments(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListEnvironmentsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListEnvironmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#listenvironmentsoutputtypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("mwaa").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource]
+Boto3 documentation:
+[MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### publish_metrics
 
 Type annotations for `boto3.client("mwaa").publish_metrics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics]
+Boto3 documentation:
+[MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
 
-```python
-def publish_metrics(
-    self,
-    EnvironmentName: str,
-    MetricData: List[MetricDatumTypeDef]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EnvironmentName`: `str` *(required)*
+- `MetricData`:
+  `List`\[[MetricDatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#metricdatumtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("mwaa").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource]
+Boto3 documentation:
+[MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("mwaa").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource]
+Boto3 documentation:
+[MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment
 
 Type annotations for `boto3.client("mwaa").update_environment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment]
+Boto3 documentation:
+[MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
 
-```python
-def update_environment(
-    self,
-    Name: str,
-    AirflowConfigurationOptions: Dict[str, str] = None,
-    AirflowVersion: str = None,
-    DagS3Path: str = None,
-    EnvironmentClass: str = None,
-    ExecutionRoleArn: str = None,
-    LoggingConfiguration: LoggingConfigurationInputTypeDef = None,
-    MaxWorkers: int = None,
-    MinWorkers: int = None,
-    NetworkConfiguration: UpdateNetworkConfigurationInputTypeDef = None,
-    PluginsS3ObjectVersion: str = None,
-    PluginsS3Path: str = None,
-    RequirementsS3ObjectVersion: str = None,
-    RequirementsS3Path: str = None,
-    SourceBucketArn: str = None,
-    WebserverAccessMode: WebserverAccessMode = None,
-    WeeklyMaintenanceWindowStart: str = None
-) -> UpdateEnvironmentOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowVersion`: `str`
+- `DagS3Path`: `str`
+- `EnvironmentClass`: `str`
+- `ExecutionRoleArn`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#loggingconfigurationinputtypedef)
+- `MaxWorkers`: `int`
+- `MinWorkers`: `int`
+- `NetworkConfiguration`:
+  [UpdateNetworkConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#updatenetworkconfigurationinputtypedef)
+- `PluginsS3ObjectVersion`: `str`
+- `PluginsS3Path`: `str`
+- `RequirementsS3ObjectVersion`: `str`
+- `RequirementsS3Path`: `str`
+- `SourceBucketArn`: `str`
+- `WebserverAccessMode`:
+  [WebserverAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#webserveraccessmode)
+- `WeeklyMaintenanceWindowStart`: `str`
 
+Returns
+[UpdateEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#updateenvironmentoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mwaa").get_paginator` method with overloads.
+Type annotations for `boto3.client("mwaa").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_environments")` -> [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
-
-
+- `client.get_paginator("list_environments")` ->
+  [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)

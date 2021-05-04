@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoT1ClickProjects](./README.md) > Paginators
 
-Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+Auto-generated documentation for
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+type annotations stubs module
+[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [Paginators for boto3 IoT1ClickProjects module](#paginators-for-boto3-iot1clickprojects-module)
   - [ListPlacementsPaginator](#listplacementspaginator)
@@ -11,7 +13,8 @@ type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/p
 
 ## ListPlacementsPaginator
 
-Type annotations for `boto3.client("iot1click-projects").get_paginator("list_placements")`.
+Type annotations for
+`boto3.client("iot1click-projects").get_paginator("list_placements")`.
 
 Can be used directly:
 
@@ -22,20 +25,22 @@ def get_list_placements_paginator() -> ListPlacementsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_placements")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
+Boto3 documentation:
+[IoT1ClickProjects.Paginator.ListPlacements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
 
-```python
-class ListPlacementsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        projectName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPlacementsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPlacementsPaginator.paginate` method:
+
+- `projectName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#paginatorconfigtypedef)
+
+`ListPlacementsPaginator.paginate` returns
+`Iterator`\[[ListPlacementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listplacementsresponsetypedef)\].
+
 ## ListProjectsPaginator
 
-Type annotations for `boto3.client("iot1click-projects").get_paginator("list_projects")`.
+Type annotations for
+`boto3.client("iot1click-projects").get_paginator("list_projects")`.
 
 Can be used directly:
 
@@ -46,13 +51,13 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
+Boto3 documentation:
+[IoT1ClickProjects.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
 
-```python
-class ListProjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectsResponseTypeDef]:
-        pass
-```
+Arguments for `ListProjectsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectsPaginator.paginate` returns
+`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listprojectsresponsetypedef)\].

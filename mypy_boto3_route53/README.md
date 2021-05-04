@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Route53
 
-Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+Auto-generated documentation for
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+type annotations stubs module
+[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ```bash
 pip install mypy-boto3-route53
@@ -20,7 +22,7 @@ pip install mypy-boto3-route53
 
 ## Route53Client
 
-Type annotations for  `boto3.client("route53")` as [Route53Client](./client.md)
+Type annotations for `boto3.client("route53")` as [Route53Client](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_route53.client import Route53Client
 ```
 
-
 Route53Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [activate_key_signing_key](./client.md#activate-key-signing-key)
 - [associate_vpc_with_hosted_zone](./client.md#associate-vpc-with-hosted-zone)
 - [can_paginate](./client.md#can-paginate)
@@ -103,10 +103,8 @@ Route53Client [exceptions](./client.md#exceptions)
 - [update_traffic_policy_comment](./client.md#update-traffic-policy-comment)
 - [update_traffic_policy_instance](./client.md#update-traffic-policy-instance)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModification](./client.md#concurrentmodification)
 - [ConflictingDomainExists](./client.md#conflictingdomainexists)
@@ -172,14 +170,10 @@ Route53Client [exceptions](./client.md#exceptions)
 - [VPCAssociationAuthorizationNotFound](./client.md#vpcassociationauthorizationnotfound)
 - [VPCAssociationNotFound](./client.md#vpcassociationnotfound)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("route53").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("route53").get_paginator("...")`.
 
 Can be used directly:
 
@@ -193,12 +187,10 @@ from mypy_boto3_route53.paginators import ListHealthChecksPaginator, ...
 - [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
 - [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("route53").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("route53").get_waiter("...")`.
 
 Can be used directly:
 
@@ -207,9 +199,6 @@ from mypy_boto3_route53.waiters import ResourceRecordSetsChangedWaiter, ...
 ```
 
 - [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
-
-
-
 
 ## Literals
 
@@ -245,13 +234,10 @@ from mypy_boto3_route53.literals import AccountLimitType, ...
 - [TagResourceType](./literals.md#tagresourcetype)
 - [VPCRegion](./literals.md#vpcregion)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

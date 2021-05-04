@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Paginators
 
-Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
-type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+Auto-generated documentation for
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+type annotations stubs module
+[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [Paginators for boto3 ResourceGroupsTaggingAPI module](#paginators-for-boto3-resourcegroupstaggingapi-module)
   - [GetComplianceSummaryPaginator](#getcompliancesummarypaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi
 
 ## GetComplianceSummaryPaginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")`.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")`.
 
 Can be used directly:
 
@@ -24,24 +27,27 @@ def get_get_compliance_summary_paginator() -> GetComplianceSummaryPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
 
-```python
-class GetComplianceSummaryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TargetIdFilters: List[str] = None,
-        RegionFilters: List[str] = None,
-        ResourceTypeFilters: List[str] = None,
-        TagKeyFilters: List[str] = None,
-        GroupBy: List[GroupByAttribute] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetComplianceSummaryOutputTypeDef]:
-        pass
-```
+Arguments for `GetComplianceSummaryPaginator.paginate` method:
+
+- `TargetIdFilters`: `List`\[`str`\]
+- `RegionFilters`: `List`\[`str`\]
+- `ResourceTypeFilters`: `List`\[`str`\]
+- `TagKeyFilters`: `List`\[`str`\]
+- `GroupBy`:
+  `List`\[[GroupByAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#groupbyattribute)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+
+`GetComplianceSummaryPaginator.paginate` returns
+`Iterator`\[[GetComplianceSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getcompliancesummaryoutputtypedef)\].
+
 ## GetResourcesPaginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")`.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")`.
 
 Can be used directly:
 
@@ -52,25 +58,28 @@ def get_get_resources_paginator() -> GetResourcesPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
 
-```python
-class GetResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TagFilters: List[TagFilterTypeDef] = None,
-        TagsPerPage: int = None,
-        ResourceTypeFilters: List[str] = None,
-        IncludeComplianceDetails: bool = None,
-        ExcludeCompliantResources: bool = None,
-        ResourceARNList: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetResourcesOutputTypeDef]:
-        pass
-```
+Arguments for `GetResourcesPaginator.paginate` method:
+
+- `TagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagfiltertypedef)\]
+- `TagsPerPage`: `int`
+- `ResourceTypeFilters`: `List`\[`str`\]
+- `IncludeComplianceDetails`: `bool`
+- `ExcludeCompliantResources`: `bool`
+- `ResourceARNList`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+
+`GetResourcesPaginator.paginate` returns
+`Iterator`\[[GetResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getresourcesoutputtypedef)\].
+
 ## GetTagKeysPaginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")`.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")`.
 
 Can be used directly:
 
@@ -81,19 +90,21 @@ def get_get_tag_keys_paginator() -> GetTagKeysPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Paginator.GetTagKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
 
-```python
-class GetTagKeysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTagKeysOutputTypeDef]:
-        pass
-```
+Arguments for `GetTagKeysPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+
+`GetTagKeysPaginator.paginate` returns
+`Iterator`\[[GetTagKeysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagkeysoutputtypedef)\].
+
 ## GetTagValuesPaginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")`.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")`.
 
 Can be used directly:
 
@@ -104,14 +115,14 @@ def get_get_tag_values_paginator() -> GetTagValuesPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Paginator.GetTagValues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
 
-```python
-class GetTagValuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Key: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTagValuesOutputTypeDef]:
-        pass
-```
+Arguments for `GetTagValuesPaginator.paginate` method:
+
+- `Key`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+
+`GetTagValuesPaginator.paginate` returns
+`Iterator`\[[GetTagValuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagvaluesoutputtypedef)\].

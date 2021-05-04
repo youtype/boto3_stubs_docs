@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Literals
 
-Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+Auto-generated documentation for
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [Literals for boto3 IoTJobsDataPlane module](#literals-for-boto3-iotjobsdataplane-module)
   - [JobExecutionStatus](#jobexecutionstatus)

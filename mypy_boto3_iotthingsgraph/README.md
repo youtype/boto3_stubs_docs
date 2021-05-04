@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTThingsGraph
 
-Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+Auto-generated documentation for
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+type annotations stubs module
+[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 ```bash
 pip install mypy-boto3-iotthingsgraph
@@ -19,7 +21,8 @@ pip install mypy-boto3-iotthingsgraph
 
 ## IoTThingsGraphClient
 
-Type annotations for  `boto3.client("iotthingsgraph")` as [IoTThingsGraphClient](./client.md)
+Type annotations for `boto3.client("iotthingsgraph")` as
+[IoTThingsGraphClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 ```
 
-
 IoTThingsGraphClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_entity_to_thing](./client.md#associate-entity-to-thing)
 - [can_paginate](./client.md#can-paginate)
 - [create_flow_template](./client.md#create-flow-template)
@@ -72,10 +73,8 @@ IoTThingsGraphClient [exceptions](./client.md#exceptions)
 - [update_system_template](./client.md#update-system-template)
 - [upload_entity_definitions](./client.md#upload-entity-definitions)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -85,14 +84,10 @@ IoTThingsGraphClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iotthingsgraph").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iotthingsgraph").get_paginator("...")`.
 
 Can be used directly:
 
@@ -110,11 +105,6 @@ from mypy_boto3_iotthingsgraph.paginators import GetFlowTemplateRevisionsPaginat
 - [SearchSystemInstancesPaginator](./paginators.md#searchsysteminstancespaginator)
 - [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
 - [SearchThingsPaginator](./paginators.md#searchthingspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -150,13 +140,10 @@ from mypy_boto3_iotthingsgraph.literals import DefinitionLanguage, ...
 - [SystemTemplateFilterName](./literals.md#systemtemplatefiltername)
 - [UploadStatus](./literals.md#uploadstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

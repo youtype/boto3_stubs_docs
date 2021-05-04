@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Lightsail
 
-Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
-type annotations stubs module [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+Auto-generated documentation for
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+type annotations stubs module
+[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 ```bash
 pip install mypy-boto3-lightsail
@@ -19,7 +21,8 @@ pip install mypy-boto3-lightsail
 
 ## LightsailClient
 
-Type annotations for  `boto3.client("lightsail")` as [LightsailClient](./client.md)
+Type annotations for `boto3.client("lightsail")` as
+[LightsailClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_lightsail.client import LightsailClient
 ```
 
-
 LightsailClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [allocate_static_ip](./client.md#allocate-static-ip)
 - [attach_certificate_to_distribution](./client.md#attach-certificate-to-distribution)
 - [attach_disk](./client.md#attach-disk)
@@ -179,10 +180,8 @@ LightsailClient [exceptions](./client.md#exceptions)
 - [update_relational_database](./client.md#update-relational-database)
 - [update_relational_database_parameters](./client.md#update-relational-database-parameters)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AccountSetupInProgressException](./client.md#accountsetupinprogressexception)
 - [ClientError](./client.md#clienterror)
@@ -192,14 +191,10 @@ LightsailClient [exceptions](./client.md#exceptions)
 - [ServiceException](./client.md#serviceexception)
 - [UnauthenticatedException](./client.md#unauthenticatedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("lightsail").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("lightsail").get_paginator("...")`.
 
 Can be used directly:
 
@@ -227,11 +222,6 @@ from mypy_boto3_lightsail.paginators import GetActiveNamesPaginator, ...
 - [GetRelationalDatabaseSnapshotsPaginator](./paginators.md#getrelationaldatabasesnapshotspaginator)
 - [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
 - [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -322,13 +312,10 @@ from mypy_boto3_lightsail.literals import AccessDirection, ...
 - [ResourceType](./literals.md#resourcetype)
 - [TreatMissingData](./literals.md#treatmissingdata)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

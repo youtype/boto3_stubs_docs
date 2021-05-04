@@ -1,9 +1,12 @@
 # LexModelBuildingServiceClient for boto3 LexModelBuildingService module
 
-> [Index](../README.md) > [LexModelBuildingService](./README.md) > LexModelBuildingServiceClient
+> [Index](../README.md) > [LexModelBuildingService](./README.md) >
+> LexModelBuildingServiceClient
 
-Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
+Auto-generated documentation for
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+type annotations stubs module
+[mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 - [LexModelBuildingServiceClient for boto3 LexModelBuildingService module](#lexmodelbuildingserviceclient-for-boto3-lexmodelbuildingservice-module)
   - [LexModelBuildingServiceClient](#lexmodelbuildingserviceclient)
@@ -65,12 +68,13 @@ def get_lex-models_client() -> LexModelBuildingServiceClient:
     return boto3.client("lex-models")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
+Boto3 documentation:
+[LexModelBuildingService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lex_models.client import Exceptions
@@ -78,7 +82,6 @@ from mypy_boto3_lex_models.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -91,696 +94,716 @@ Exceptions:
 - `Exceptions.PreconditionFailedException`
 - `Exceptions.ResourceInUseException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("lex-models").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate]
+Boto3 documentation:
+[LexModelBuildingService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_bot_version
 
 Type annotations for `boto3.client("lex-models").create_bot_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version)
 
-```python
-def create_bot_version(
-    self,
-    name: str,
-    checksum: str = None
-) -> CreateBotVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `checksum`: `str`
+
+Returns
+[CreateBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#createbotversionresponsetypedef).
 
 ### create_intent_version
 
 Type annotations for `boto3.client("lex-models").create_intent_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.create_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version)
 
-```python
-def create_intent_version(
-    self,
-    name: str,
-    checksum: str = None
-) -> CreateIntentVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `checksum`: `str`
+
+Returns
+[CreateIntentVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#createintentversionresponsetypedef).
 
 ### create_slot_type_version
 
-Type annotations for `boto3.client("lex-models").create_slot_type_version` method.
+Type annotations for `boto3.client("lex-models").create_slot_type_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.create_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version)
 
-```python
-def create_slot_type_version(
-    self,
-    name: str,
-    checksum: str = None
-) -> CreateSlotTypeVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `checksum`: `str`
+
+Returns
+[CreateSlotTypeVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#createslottypeversionresponsetypedef).
 
 ### delete_bot
 
 Type annotations for `boto3.client("lex-models").delete_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot)
 
-```python
-def delete_bot(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### delete_bot_alias
 
 Type annotations for `boto3.client("lex-models").delete_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias)
 
-```python
-def delete_bot_alias(
-    self,
-    name: str,
-    botName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `botName`: `str` *(required)*
 
 ### delete_bot_channel_association
 
-Type annotations for `boto3.client("lex-models").delete_bot_channel_association` method.
+Type annotations for
+`boto3.client("lex-models").delete_bot_channel_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association)
 
-```python
-def delete_bot_channel_association(
-    self,
-    name: str,
-    botName: str,
-    botAlias: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `botName`: `str` *(required)*
+- `botAlias`: `str` *(required)*
 
 ### delete_bot_version
 
 Type annotations for `boto3.client("lex-models").delete_bot_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version)
 
-```python
-def delete_bot_version(
-    self,
-    name: str,
-    version: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
 
 ### delete_intent
 
 Type annotations for `boto3.client("lex-models").delete_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent)
 
-```python
-def delete_intent(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### delete_intent_version
 
 Type annotations for `boto3.client("lex-models").delete_intent_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version)
 
-```python
-def delete_intent_version(
-    self,
-    name: str,
-    version: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
 
 ### delete_slot_type
 
 Type annotations for `boto3.client("lex-models").delete_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type)
 
-```python
-def delete_slot_type(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### delete_slot_type_version
 
-Type annotations for `boto3.client("lex-models").delete_slot_type_version` method.
+Type annotations for `boto3.client("lex-models").delete_slot_type_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version)
 
-```python
-def delete_slot_type_version(
-    self,
-    name: str,
-    version: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
 
 ### delete_utterances
 
 Type annotations for `boto3.client("lex-models").delete_utterances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances]
+Boto3 documentation:
+[LexModelBuildingService.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances)
 
-```python
-def delete_utterances(
-    self,
-    botName: str,
-    userId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `botName`: `str` *(required)*
+- `userId`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lex-models").generate_presigned_url` method.
+Type annotations for `boto3.client("lex-models").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url]
+Boto3 documentation:
+[LexModelBuildingService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_bot
 
 Type annotations for `boto3.client("lex-models").get_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot)
 
-```python
-def get_bot(
-    self,
-    name: str,
-    versionOrAlias: str
-) -> GetBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `versionOrAlias`: `str` *(required)*
+
+Returns
+[GetBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotresponsetypedef).
 
 ### get_bot_alias
 
 Type annotations for `boto3.client("lex-models").get_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias)
 
-```python
-def get_bot_alias(
-    self,
-    name: str,
-    botName: str
-) -> GetBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `botName`: `str` *(required)*
+
+Returns
+[GetBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotaliasresponsetypedef).
 
 ### get_bot_aliases
 
 Type annotations for `boto3.client("lex-models").get_bot_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases)
 
-```python
-def get_bot_aliases(
-    self,
-    botName: str,
-    nextToken: str = None,
-    maxResults: int = None,
-    nameContains: str = None
-) -> GetBotAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `nameContains`: `str`
+
+Returns
+[GetBotAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotaliasesresponsetypedef).
 
 ### get_bot_channel_association
 
-Type annotations for `boto3.client("lex-models").get_bot_channel_association` method.
+Type annotations for `boto3.client("lex-models").get_bot_channel_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association)
 
-```python
-def get_bot_channel_association(
-    self,
-    name: str,
-    botName: str,
-    botAlias: str
-) -> GetBotChannelAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `botName`: `str` *(required)*
+- `botAlias`: `str` *(required)*
+
+Returns
+[GetBotChannelAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotchannelassociationresponsetypedef).
 
 ### get_bot_channel_associations
 
-Type annotations for `boto3.client("lex-models").get_bot_channel_associations` method.
+Type annotations for `boto3.client("lex-models").get_bot_channel_associations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot_channel_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations)
 
-```python
-def get_bot_channel_associations(
-    self,
-    botName: str,
-    botAlias: str,
-    nextToken: str = None,
-    maxResults: int = None,
-    nameContains: str = None
-) -> GetBotChannelAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botName`: `str` *(required)*
+- `botAlias`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `nameContains`: `str`
+
+Returns
+[GetBotChannelAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotchannelassociationsresponsetypedef).
 
 ### get_bot_versions
 
 Type annotations for `boto3.client("lex-models").get_bot_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions)
 
-```python
-def get_bot_versions(
-    self,
-    name: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetBotVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetBotVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotversionsresponsetypedef).
 
 ### get_bots
 
 Type annotations for `boto3.client("lex-models").get_bots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots)
 
-```python
-def get_bots(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    nameContains: str = None
-) -> GetBotsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `nameContains`: `str`
+
+Returns
+[GetBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotsresponsetypedef).
 
 ### get_builtin_intent
 
 Type annotations for `boto3.client("lex-models").get_builtin_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_builtin_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent)
 
-```python
-def get_builtin_intent(
-    self,
-    signature: str
-) -> GetBuiltinIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `signature`: `str` *(required)*
+
+Returns
+[GetBuiltinIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbuiltinintentresponsetypedef).
 
 ### get_builtin_intents
 
 Type annotations for `boto3.client("lex-models").get_builtin_intents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_builtin_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents)
 
-```python
-def get_builtin_intents(
-    self,
-    locale: Locale = None,
-    signatureContains: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetBuiltinIntentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#locale)
+- `signatureContains`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetBuiltinIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbuiltinintentsresponsetypedef).
 
 ### get_builtin_slot_types
 
-Type annotations for `boto3.client("lex-models").get_builtin_slot_types` method.
+Type annotations for `boto3.client("lex-models").get_builtin_slot_types`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_builtin_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types)
 
-```python
-def get_builtin_slot_types(
-    self,
-    locale: Locale = None,
-    signatureContains: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetBuiltinSlotTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#locale)
+- `signatureContains`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetBuiltinSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbuiltinslottypesresponsetypedef).
 
 ### get_export
 
 Type annotations for `boto3.client("lex-models").get_export` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export)
 
-```python
-def get_export(
-    self,
-    name: str,
-    version: str,
-    resourceType: ResourceType,
-    exportType: ExportType
-) -> GetExportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#resourcetype)
+  *(required)*
+- `exportType`:
+  [ExportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#exporttype)
+  *(required)*
+
+Returns
+[GetExportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getexportresponsetypedef).
 
 ### get_import
 
 Type annotations for `boto3.client("lex-models").get_import` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import)
 
-```python
-def get_import(
-    self,
-    importId: str
-) -> GetImportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `importId`: `str` *(required)*
+
+Returns
+[GetImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getimportresponsetypedef).
 
 ### get_intent
 
 Type annotations for `boto3.client("lex-models").get_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent)
 
-```python
-def get_intent(
-    self,
-    name: str,
-    version: str
-) -> GetIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
+
+Returns
+[GetIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getintentresponsetypedef).
 
 ### get_intent_versions
 
 Type annotations for `boto3.client("lex-models").get_intent_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_intent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions)
 
-```python
-def get_intent_versions(
-    self,
-    name: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetIntentVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetIntentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getintentversionsresponsetypedef).
 
 ### get_intents
 
 Type annotations for `boto3.client("lex-models").get_intents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents)
 
-```python
-def get_intents(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    nameContains: str = None
-) -> GetIntentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `nameContains`: `str`
+
+Returns
+[GetIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getintentsresponsetypedef).
 
 ### get_slot_type
 
 Type annotations for `boto3.client("lex-models").get_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type)
 
-```python
-def get_slot_type(
-    self,
-    name: str,
-    version: str
-) -> GetSlotTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `str` *(required)*
+
+Returns
+[GetSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getslottyperesponsetypedef).
 
 ### get_slot_type_versions
 
-Type annotations for `boto3.client("lex-models").get_slot_type_versions` method.
+Type annotations for `boto3.client("lex-models").get_slot_type_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_slot_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions)
 
-```python
-def get_slot_type_versions(
-    self,
-    name: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetSlotTypeVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetSlotTypeVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getslottypeversionsresponsetypedef).
 
 ### get_slot_types
 
 Type annotations for `boto3.client("lex-models").get_slot_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types)
 
-```python
-def get_slot_types(
-    self,
-    nextToken: str = None,
-    maxResults: int = None,
-    nameContains: str = None
-) -> GetSlotTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `nameContains`: `str`
+
+Returns
+[GetSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getslottypesresponsetypedef).
 
 ### get_utterances_view
 
 Type annotations for `boto3.client("lex-models").get_utterances_view` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view]
+Boto3 documentation:
+[LexModelBuildingService.Client.get_utterances_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view)
 
-```python
-def get_utterances_view(
-    self,
-    botName: str,
-    botVersions: List[str],
-    statusType: StatusType
-) -> GetUtterancesViewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `botName`: `str` *(required)*
+- `botVersions`: `List`\[`str`\] *(required)*
+- `statusType`:
+  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#statustype)
+  *(required)*
+
+Returns
+[GetUtterancesViewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getutterancesviewresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("lex-models").list_tags_for_resource` method.
+Type annotations for `boto3.client("lex-models").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource]
+Boto3 documentation:
+[LexModelBuildingService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_bot
 
 Type annotations for `boto3.client("lex-models").put_bot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot]
+Boto3 documentation:
+[LexModelBuildingService.Client.put_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot)
 
-```python
-def put_bot(
-    self,
-    name: str,
-    locale: Locale,
-    childDirected: bool,
-    description: str = None,
-    intents: List["IntentTypeDef"] = None,
-    enableModelImprovements: bool = None,
-    nluIntentConfidenceThreshold: float = None,
-    clarificationPrompt: "PromptTypeDef" = None,
-    abortStatement: "StatementTypeDef" = None,
-    idleSessionTTLInSeconds: int = None,
-    voiceId: str = None,
-    checksum: str = None,
-    processBehavior: ProcessBehavior = None,
-    detectSentiment: bool = None,
-    createVersion: bool = None,
-    tags: List["TagTypeDef"] = None
-) -> PutBotResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#locale)
+  *(required)*
+- `childDirected`: `bool` *(required)*
+- `description`: `str`
+- `intents`:
+  `List`\[[IntentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#intenttypedef)\]
+- `enableModelImprovements`: `bool`
+- `nluIntentConfidenceThreshold`: `float`
+- `clarificationPrompt`:
+  [PromptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#prompttypedef)
+- `abortStatement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#statementtypedef)
+- `idleSessionTTLInSeconds`: `int`
+- `voiceId`: `str`
+- `checksum`: `str`
+- `processBehavior`:
+  [ProcessBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#processbehavior)
+- `detectSentiment`: `bool`
+- `createVersion`: `bool`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#tagtypedef)\]
+
+Returns
+[PutBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#putbotresponsetypedef).
 
 ### put_bot_alias
 
 Type annotations for `boto3.client("lex-models").put_bot_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias]
+Boto3 documentation:
+[LexModelBuildingService.Client.put_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias)
 
-```python
-def put_bot_alias(
-    self,
-    name: str,
-    botVersion: str,
-    botName: str,
-    description: str = None,
-    checksum: str = None,
-    conversationLogs: ConversationLogsRequestTypeDef = None,
-    tags: List["TagTypeDef"] = None
-) -> PutBotAliasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `botVersion`: `str` *(required)*
+- `botName`: `str` *(required)*
+- `description`: `str`
+- `checksum`: `str`
+- `conversationLogs`:
+  [ConversationLogsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#conversationlogsrequesttypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#tagtypedef)\]
+
+Returns
+[PutBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#putbotaliasresponsetypedef).
 
 ### put_intent
 
 Type annotations for `boto3.client("lex-models").put_intent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent]
+Boto3 documentation:
+[LexModelBuildingService.Client.put_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent)
 
-```python
-def put_intent(
-    self,
-    name: str,
-    description: str = None,
-    slots: List["SlotTypeDef"] = None,
-    sampleUtterances: List[str] = None,
-    confirmationPrompt: "PromptTypeDef" = None,
-    rejectionStatement: "StatementTypeDef" = None,
-    followUpPrompt: "FollowUpPromptTypeDef" = None,
-    conclusionStatement: "StatementTypeDef" = None,
-    dialogCodeHook: "CodeHookTypeDef" = None,
-    fulfillmentActivity: "FulfillmentActivityTypeDef" = None,
-    parentIntentSignature: str = None,
-    checksum: str = None,
-    createVersion: bool = None,
-    kendraConfiguration: "KendraConfigurationTypeDef" = None,
-    inputContexts: List["InputContextTypeDef"] = None,
-    outputContexts: List["OutputContextTypeDef"] = None
-) -> PutIntentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `description`: `str`
+- `slots`:
+  `List`\[[SlotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#slottypedef)\]
+- `sampleUtterances`: `List`\[`str`\]
+- `confirmationPrompt`:
+  [PromptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#prompttypedef)
+- `rejectionStatement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#statementtypedef)
+- `followUpPrompt`:
+  [FollowUpPromptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#followupprompttypedef)
+- `conclusionStatement`:
+  [StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#statementtypedef)
+- `dialogCodeHook`:
+  [CodeHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#codehooktypedef)
+- `fulfillmentActivity`:
+  [FulfillmentActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#fulfillmentactivitytypedef)
+- `parentIntentSignature`: `str`
+- `checksum`: `str`
+- `createVersion`: `bool`
+- `kendraConfiguration`:
+  [KendraConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#kendraconfigurationtypedef)
+- `inputContexts`:
+  `List`\[[InputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#inputcontexttypedef)\]
+- `outputContexts`:
+  `List`\[[OutputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#outputcontexttypedef)\]
+
+Returns
+[PutIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#putintentresponsetypedef).
 
 ### put_slot_type
 
 Type annotations for `boto3.client("lex-models").put_slot_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type]
+Boto3 documentation:
+[LexModelBuildingService.Client.put_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type)
 
-```python
-def put_slot_type(
-    self,
-    name: str,
-    description: str = None,
-    enumerationValues: List["EnumerationValueTypeDef"] = None,
-    checksum: str = None,
-    valueSelectionStrategy: SlotValueSelectionStrategy = None,
-    createVersion: bool = None,
-    parentSlotTypeSignature: str = None,
-    slotTypeConfigurations: List["SlotTypeConfigurationTypeDef"] = None
-) -> PutSlotTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `description`: `str`
+- `enumerationValues`:
+  `List`\[[EnumerationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#enumerationvaluetypedef)\]
+- `checksum`: `str`
+- `valueSelectionStrategy`:
+  [SlotValueSelectionStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#slotvalueselectionstrategy)
+- `createVersion`: `bool`
+- `parentSlotTypeSignature`: `str`
+- `slotTypeConfigurations`:
+  `List`\[[SlotTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#slottypeconfigurationtypedef)\]
+
+Returns
+[PutSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#putslottyperesponsetypedef).
 
 ### start_import
 
 Type annotations for `boto3.client("lex-models").start_import` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import]
+Boto3 documentation:
+[LexModelBuildingService.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import)
 
-```python
-def start_import(
-    self,
-    payload: Union[bytes, IO[bytes]],
-    resourceType: ResourceType,
-    mergeStrategy: MergeStrategy,
-    tags: List["TagTypeDef"] = None
-) -> StartImportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#resourcetype)
+  *(required)*
+- `mergeStrategy`:
+  [MergeStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#mergestrategy)
+  *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#tagtypedef)\]
+
+Returns
+[StartImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#startimportresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("lex-models").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource]
+Boto3 documentation:
+[LexModelBuildingService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("lex-models").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource]
+Boto3 documentation:
+[LexModelBuildingService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("lex-models").get_paginator` method with overloads.
+Type annotations for `boto3.client("lex-models").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_bot_aliases")` -> [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
-- `client.get_paginator("get_bot_channel_associations")` -> [GetBotChannelAssociationsPaginator](./paginators.md#getbotchannelassociationspaginator)
-- `client.get_paginator("get_bot_versions")` -> [GetBotVersionsPaginator](./paginators.md#getbotversionspaginator)
-- `client.get_paginator("get_bots")` -> [GetBotsPaginator](./paginators.md#getbotspaginator)
-- `client.get_paginator("get_builtin_intents")` -> [GetBuiltinIntentsPaginator](./paginators.md#getbuiltinintentspaginator)
-- `client.get_paginator("get_builtin_slot_types")` -> [GetBuiltinSlotTypesPaginator](./paginators.md#getbuiltinslottypespaginator)
-- `client.get_paginator("get_intent_versions")` -> [GetIntentVersionsPaginator](./paginators.md#getintentversionspaginator)
-- `client.get_paginator("get_intents")` -> [GetIntentsPaginator](./paginators.md#getintentspaginator)
-- `client.get_paginator("get_slot_type_versions")` -> [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
-- `client.get_paginator("get_slot_types")` -> [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
-
-
+- `client.get_paginator("get_bot_aliases")` ->
+  [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
+- `client.get_paginator("get_bot_channel_associations")` ->
+  [GetBotChannelAssociationsPaginator](./paginators.md#getbotchannelassociationspaginator)
+- `client.get_paginator("get_bot_versions")` ->
+  [GetBotVersionsPaginator](./paginators.md#getbotversionspaginator)
+- `client.get_paginator("get_bots")` ->
+  [GetBotsPaginator](./paginators.md#getbotspaginator)
+- `client.get_paginator("get_builtin_intents")` ->
+  [GetBuiltinIntentsPaginator](./paginators.md#getbuiltinintentspaginator)
+- `client.get_paginator("get_builtin_slot_types")` ->
+  [GetBuiltinSlotTypesPaginator](./paginators.md#getbuiltinslottypespaginator)
+- `client.get_paginator("get_intent_versions")` ->
+  [GetIntentVersionsPaginator](./paginators.md#getintentversionspaginator)
+- `client.get_paginator("get_intents")` ->
+  [GetIntentsPaginator](./paginators.md#getintentspaginator)
+- `client.get_paginator("get_slot_type_versions")` ->
+  [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
+- `client.get_paginator("get_slot_types")` ->
+  [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)

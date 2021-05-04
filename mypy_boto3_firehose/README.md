@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Firehose
 
-Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
-type annotations stubs module [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+Auto-generated documentation for
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+type annotations stubs module
+[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 ```bash
 pip install mypy-boto3-firehose
@@ -18,7 +20,8 @@ pip install mypy-boto3-firehose
 
 ## FirehoseClient
 
-Type annotations for  `boto3.client("firehose")` as [FirehoseClient](./client.md)
+Type annotations for `boto3.client("firehose")` as
+[FirehoseClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_firehose.client import FirehoseClient
 ```
 
-
 FirehoseClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_delivery_stream](./client.md#create-delivery-stream)
 - [delete_delivery_stream](./client.md#delete-delivery-stream)
@@ -47,10 +48,8 @@ FirehoseClient [exceptions](./client.md#exceptions)
 - [untag_delivery_stream](./client.md#untag-delivery-stream)
 - [update_destination](./client.md#update-destination)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [InvalidArgumentException](./client.md#invalidargumentexception)
@@ -59,15 +58,6 @@ FirehoseClient [exceptions](./client.md#exceptions)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -101,13 +91,10 @@ from mypy_boto3_firehose.literals import CompressionFormat, ...
 - [S3BackupMode](./literals.md#s3backupmode)
 - [SplunkS3BackupMode](./literals.md#splunks3backupmode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

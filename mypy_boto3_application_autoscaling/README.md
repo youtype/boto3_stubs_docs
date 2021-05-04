@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ApplicationAutoScaling
 
-Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+Auto-generated documentation for
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+type annotations stubs module
+[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ```bash
 pip install mypy-boto3-application-autoscaling
@@ -19,7 +21,8 @@ pip install mypy-boto3-application-autoscaling
 
 ## ApplicationAutoScalingClient
 
-Type annotations for  `boto3.client("application-autoscaling")` as [ApplicationAutoScalingClient](./client.md)
+Type annotations for `boto3.client("application-autoscaling")` as
+[ApplicationAutoScalingClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
 ```
 
-
 ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_scaling_policy](./client.md#delete-scaling-policy)
 - [delete_scheduled_action](./client.md#delete-scheduled-action)
@@ -47,10 +48,8 @@ ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
 - [put_scheduled_action](./client.md#put-scheduled-action)
 - [register_scalable_target](./client.md#register-scalable-target)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentUpdateException](./client.md#concurrentupdateexception)
 - [FailedResourceAccessException](./client.md#failedresourceaccessexception)
@@ -60,14 +59,10 @@ ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
 - [ObjectNotFoundException](./client.md#objectnotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("application-autoscaling").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("application-autoscaling").get_paginator("...")`.
 
 Can be used directly:
 
@@ -79,11 +74,6 @@ from mypy_boto3_application_autoscaling.paginators import DescribeScalableTarget
 - [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
 - [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -108,13 +98,10 @@ from mypy_boto3_application_autoscaling.literals import AdjustmentType, ...
 - [ScalingActivityStatusCode](./literals.md#scalingactivitystatuscode)
 - [ServiceNamespace](./literals.md#servicenamespace)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

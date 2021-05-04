@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ACM](./README.md) > Literals
 
-Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
-type annotations stubs module [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+Auto-generated documentation for
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+type annotations stubs module
+[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [Literals for boto3 ACM module](#literals-for-boto3-acm-module)
   - [CertificateStatus](#certificatestatus)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ForecastService
 
-Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+Auto-generated documentation for
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+type annotations stubs module
+[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ```bash
 pip install mypy-boto3-forecast
@@ -19,7 +21,8 @@ pip install mypy-boto3-forecast
 
 ## ForecastServiceClient
 
-Type annotations for  `boto3.client("forecast")` as [ForecastServiceClient](./client.md)
+Type annotations for `boto3.client("forecast")` as
+[ForecastServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_forecast.client import ForecastServiceClient
 ```
 
-
 ForecastServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_dataset](./client.md#create-dataset)
 - [create_dataset_group](./client.md#create-dataset-group)
@@ -72,10 +73,8 @@ ForecastServiceClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_dataset_group](./client.md#update-dataset-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidInputException](./client.md#invalidinputexception)
 - [InvalidNextTokenException](./client.md#invalidnexttokenexception)
@@ -84,14 +83,10 @@ ForecastServiceClient [exceptions](./client.md#exceptions)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("forecast").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("forecast").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,11 +101,6 @@ from mypy_boto3_forecast.paginators import ListDatasetGroupsPaginator, ...
 - [ListForecastsPaginator](./paginators.md#listforecastspaginator)
 - [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
 - [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -137,13 +127,10 @@ from mypy_boto3_forecast.literals import AttributeType, ...
 - [ListPredictorsPaginatorName](./literals.md#listpredictorspaginatorname)
 - [ScalingType](./literals.md#scalingtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

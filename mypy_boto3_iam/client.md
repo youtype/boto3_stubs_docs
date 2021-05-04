@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IAM](./README.md) > IAMClient
 
-Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+Auto-generated documentation for
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+type annotations stubs module
+[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [IAMClient for boto3 IAM module](#iamclient-for-boto3-iam-module)
   - [IAMClient](#iamclient)
@@ -185,12 +187,13 @@ def get_iam_client() -> IAMClient:
     return boto3.client("iam")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
+Boto3 documentation:
+[IAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iam.client import Exceptions
@@ -198,7 +201,6 @@ from mypy_boto3_iam.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -231,2521 +233,2379 @@ Exceptions:
 - `Exceptions.UnmodifiableEntityException`
 - `Exceptions.UnrecognizedPublicKeyEncodingException`
 
-
 ## Methods
-
 
 ### add_client_id_to_open_id_connect_provider
 
-Type annotations for `boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
+Type annotations for
+`boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
 
-```python
-def add_client_id_to_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str,
-    ClientID: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `ClientID`: `str` *(required)*
 
 ### add_role_to_instance_profile
 
 Type annotations for `boto3.client("iam").add_role_to_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile]
+Boto3 documentation:
+[IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
 
-```python
-def add_role_to_instance_profile(
-    self,
-    InstanceProfileName: str,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `RoleName`: `str` *(required)*
 
 ### add_user_to_group
 
 Type annotations for `boto3.client("iam").add_user_to_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group]
+Boto3 documentation:
+[IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
 
-```python
-def add_user_to_group(
-    self,
-    GroupName: str,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `UserName`: `str` *(required)*
 
 ### attach_group_policy
 
 Type annotations for `boto3.client("iam").attach_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy]
+Boto3 documentation:
+[IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
 
-```python
-def attach_group_policy(
-    self,
-    GroupName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### attach_role_policy
 
 Type annotations for `boto3.client("iam").attach_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy]
+Boto3 documentation:
+[IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
 
-```python
-def attach_role_policy(
-    self,
-    RoleName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### attach_user_policy
 
 Type annotations for `boto3.client("iam").attach_user_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy]
+Boto3 documentation:
+[IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
 
-```python
-def attach_user_policy(
-    self,
-    UserName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("iam").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate]
+Boto3 documentation:
+[IAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### change_password
 
 Type annotations for `boto3.client("iam").change_password` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password]
+Boto3 documentation:
+[IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
 
-```python
-def change_password(
-    self,
-    OldPassword: str,
-    NewPassword: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OldPassword`: `str` *(required)*
+- `NewPassword`: `str` *(required)*
 
 ### create_access_key
 
 Type annotations for `boto3.client("iam").create_access_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key]
+Boto3 documentation:
+[IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
 
-```python
-def create_access_key(
-    self,
-    UserName: str = None
-) -> CreateAccessKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+
+Returns
+[CreateAccessKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createaccesskeyresponsetypedef).
 
 ### create_account_alias
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias]
+Boto3 documentation:
+[IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
 
-```python
-def create_account_alias(
-    self,
-    AccountAlias: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountAlias`: `str` *(required)*
 
 ### create_group
 
 Type annotations for `boto3.client("iam").create_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group]
+Boto3 documentation:
+[IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
 
-```python
-def create_group(
-    self,
-    GroupName: str,
-    Path: str = None
-) -> CreateGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `Path`: `str`
+
+Returns
+[CreateGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#creategroupresponsetypedef).
 
 ### create_instance_profile
 
 Type annotations for `boto3.client("iam").create_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile]
+Boto3 documentation:
+[IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
 
-```python
-def create_instance_profile(
-    self,
-    InstanceProfileName: str,
-    Path: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateInstanceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `Path`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateInstanceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createinstanceprofileresponsetypedef).
 
 ### create_login_profile
 
 Type annotations for `boto3.client("iam").create_login_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile]
+Boto3 documentation:
+[IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
 
-```python
-def create_login_profile(
-    self,
-    UserName: str,
-    Password: str,
-    PasswordResetRequired: bool = None
-) -> CreateLoginProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `PasswordResetRequired`: `bool`
+
+Returns
+[CreateLoginProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createloginprofileresponsetypedef).
 
 ### create_open_id_connect_provider
 
-Type annotations for `boto3.client("iam").create_open_id_connect_provider` method.
+Type annotations for `boto3.client("iam").create_open_id_connect_provider`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
 
-```python
-def create_open_id_connect_provider(
-    self,
-    Url: str,
-    ThumbprintList: List[str],
-    ClientIDList: List[str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateOpenIDConnectProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Url`: `str` *(required)*
+- `ThumbprintList`: `List`\[`str`\] *(required)*
+- `ClientIDList`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateOpenIDConnectProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createopenidconnectproviderresponsetypedef).
 
 ### create_policy
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy]
+Boto3 documentation:
+[IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
 
-```python
-def create_policy(
-    self,
-    PolicyName: str,
-    PolicyDocument: str,
-    Path: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+- `Path`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createpolicyresponsetypedef).
 
 ### create_policy_version
 
 Type annotations for `boto3.client("iam").create_policy_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version]
+Boto3 documentation:
+[IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
 
-```python
-def create_policy_version(
-    self,
-    PolicyArn: str,
-    PolicyDocument: str,
-    SetAsDefault: bool = None
-) -> CreatePolicyVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+- `SetAsDefault`: `bool`
+
+Returns
+[CreatePolicyVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createpolicyversionresponsetypedef).
 
 ### create_role
 
 Type annotations for `boto3.client("iam").create_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role]
+Boto3 documentation:
+[IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
 
-```python
-def create_role(
-    self,
-    RoleName: str,
-    AssumeRolePolicyDocument: str,
-    Path: str = None,
-    Description: str = None,
-    MaxSessionDuration: int = None,
-    PermissionsBoundary: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `AssumeRolePolicyDocument`: `str` *(required)*
+- `Path`: `str`
+- `Description`: `str`
+- `MaxSessionDuration`: `int`
+- `PermissionsBoundary`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createroleresponsetypedef).
 
 ### create_saml_provider
 
 Type annotations for `boto3.client("iam").create_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider]
+Boto3 documentation:
+[IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
 
-```python
-def create_saml_provider(
-    self,
-    SAMLMetadataDocument: str,
-    Name: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateSAMLProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SAMLMetadataDocument`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createsamlproviderresponsetypedef).
 
 ### create_service_linked_role
 
 Type annotations for `boto3.client("iam").create_service_linked_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role]
+Boto3 documentation:
+[IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
 
-```python
-def create_service_linked_role(
-    self,
-    AWSServiceName: str,
-    Description: str = None,
-    CustomSuffix: str = None
-) -> CreateServiceLinkedRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AWSServiceName`: `str` *(required)*
+- `Description`: `str`
+- `CustomSuffix`: `str`
+
+Returns
+[CreateServiceLinkedRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createservicelinkedroleresponsetypedef).
 
 ### create_service_specific_credential
 
-Type annotations for `boto3.client("iam").create_service_specific_credential` method.
+Type annotations for `boto3.client("iam").create_service_specific_credential`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential]
+Boto3 documentation:
+[IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
 
-```python
-def create_service_specific_credential(
-    self,
-    UserName: str,
-    ServiceName: str
-) -> CreateServiceSpecificCredentialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `ServiceName`: `str` *(required)*
+
+Returns
+[CreateServiceSpecificCredentialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createservicespecificcredentialresponsetypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("iam").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user]
+Boto3 documentation:
+[IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
 
-```python
-def create_user(
-    self,
-    UserName: str,
-    Path: str = None,
-    PermissionsBoundary: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Path`: `str`
+- `PermissionsBoundary`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device]
+Boto3 documentation:
+[IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
 
-```python
-def create_virtual_mfa_device(
-    self,
-    VirtualMFADeviceName: str,
-    Path: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateVirtualMFADeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VirtualMFADeviceName`: `str` *(required)*
+- `Path`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateVirtualMFADeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createvirtualmfadeviceresponsetypedef).
 
 ### deactivate_mfa_device
 
 Type annotations for `boto3.client("iam").deactivate_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device]
+Boto3 documentation:
+[IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
 
-```python
-def deactivate_mfa_device(
-    self,
-    UserName: str,
-    SerialNumber: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SerialNumber`: `str` *(required)*
 
 ### delete_access_key
 
 Type annotations for `boto3.client("iam").delete_access_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key]
+Boto3 documentation:
+[IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
 
-```python
-def delete_access_key(
-    self,
-    AccessKeyId: str,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccessKeyId`: `str` *(required)*
+- `UserName`: `str`
 
 ### delete_account_alias
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias]
+Boto3 documentation:
+[IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
 
-```python
-def delete_account_alias(
-    self,
-    AccountAlias: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountAlias`: `str` *(required)*
 
 ### delete_account_password_policy
 
-Type annotations for `boto3.client("iam").delete_account_password_policy` method.
+Type annotations for `boto3.client("iam").delete_account_password_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy]
-
-```python
-def delete_account_password_policy(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[IAM.Client.delete_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy)
 
 ### delete_group
 
 Type annotations for `boto3.client("iam").delete_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group]
+Boto3 documentation:
+[IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
 
-```python
-def delete_group(
-    self,
-    GroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
 
 ### delete_group_policy
 
 Type annotations for `boto3.client("iam").delete_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy]
+Boto3 documentation:
+[IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
 
-```python
-def delete_group_policy(
-    self,
-    GroupName: str,
-    PolicyName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
 
 ### delete_instance_profile
 
 Type annotations for `boto3.client("iam").delete_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile]
+Boto3 documentation:
+[IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
 
-```python
-def delete_instance_profile(
-    self,
-    InstanceProfileName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
 
 ### delete_login_profile
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile]
+Boto3 documentation:
+[IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
 
-```python
-def delete_login_profile(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
 
 ### delete_open_id_connect_provider
 
-Type annotations for `boto3.client("iam").delete_open_id_connect_provider` method.
+Type annotations for `boto3.client("iam").delete_open_id_connect_provider`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
 
-```python
-def delete_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
 
 ### delete_policy
 
 Type annotations for `boto3.client("iam").delete_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy]
+Boto3 documentation:
+[IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
 
-```python
-def delete_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
 
 ### delete_policy_version
 
 Type annotations for `boto3.client("iam").delete_policy_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version]
+Boto3 documentation:
+[IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
 
-```python
-def delete_policy_version(
-    self,
-    PolicyArn: str,
-    VersionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `VersionId`: `str` *(required)*
 
 ### delete_role
 
 Type annotations for `boto3.client("iam").delete_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role]
+Boto3 documentation:
+[IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
 
-```python
-def delete_role(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
 
 ### delete_role_permissions_boundary
 
-Type annotations for `boto3.client("iam").delete_role_permissions_boundary` method.
+Type annotations for `boto3.client("iam").delete_role_permissions_boundary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary]
+Boto3 documentation:
+[IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
 
-```python
-def delete_role_permissions_boundary(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
 
 ### delete_role_policy
 
 Type annotations for `boto3.client("iam").delete_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy]
+Boto3 documentation:
+[IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
 
-```python
-def delete_role_policy(
-    self,
-    RoleName: str,
-    PolicyName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
 
 ### delete_saml_provider
 
 Type annotations for `boto3.client("iam").delete_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider]
+Boto3 documentation:
+[IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
 
-```python
-def delete_saml_provider(
-    self,
-    SAMLProviderArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SAMLProviderArn`: `str` *(required)*
 
 ### delete_server_certificate
 
 Type annotations for `boto3.client("iam").delete_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate]
+Boto3 documentation:
+[IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
 
-```python
-def delete_server_certificate(
-    self,
-    ServerCertificateName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
 
 ### delete_service_linked_role
 
 Type annotations for `boto3.client("iam").delete_service_linked_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role]
+Boto3 documentation:
+[IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
 
-```python
-def delete_service_linked_role(
-    self,
-    RoleName: str
-) -> DeleteServiceLinkedRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+
+Returns
+[DeleteServiceLinkedRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#deleteservicelinkedroleresponsetypedef).
 
 ### delete_service_specific_credential
 
-Type annotations for `boto3.client("iam").delete_service_specific_credential` method.
+Type annotations for `boto3.client("iam").delete_service_specific_credential`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential]
+Boto3 documentation:
+[IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
 
-```python
-def delete_service_specific_credential(
-    self,
-    ServiceSpecificCredentialId: str,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServiceSpecificCredentialId`: `str` *(required)*
+- `UserName`: `str`
 
 ### delete_signing_certificate
 
 Type annotations for `boto3.client("iam").delete_signing_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate]
+Boto3 documentation:
+[IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
 
-```python
-def delete_signing_certificate(
-    self,
-    CertificateId: str,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateId`: `str` *(required)*
+- `UserName`: `str`
 
 ### delete_ssh_public_key
 
 Type annotations for `boto3.client("iam").delete_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key]
+Boto3 documentation:
+[IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
 
-```python
-def delete_ssh_public_key(
-    self,
-    UserName: str,
-    SSHPublicKeyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SSHPublicKeyId`: `str` *(required)*
 
 ### delete_user
 
 Type annotations for `boto3.client("iam").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user]
+Boto3 documentation:
+[IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
 
 ### delete_user_permissions_boundary
 
-Type annotations for `boto3.client("iam").delete_user_permissions_boundary` method.
+Type annotations for `boto3.client("iam").delete_user_permissions_boundary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary]
+Boto3 documentation:
+[IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
 
-```python
-def delete_user_permissions_boundary(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
 
 ### delete_user_policy
 
 Type annotations for `boto3.client("iam").delete_user_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy]
+Boto3 documentation:
+[IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
 
-```python
-def delete_user_policy(
-    self,
-    UserName: str,
-    PolicyName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
 
 ### delete_virtual_mfa_device
 
 Type annotations for `boto3.client("iam").delete_virtual_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device]
+Boto3 documentation:
+[IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
 
-```python
-def delete_virtual_mfa_device(
-    self,
-    SerialNumber: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SerialNumber`: `str` *(required)*
 
 ### detach_group_policy
 
 Type annotations for `boto3.client("iam").detach_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy]
+Boto3 documentation:
+[IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
 
-```python
-def detach_group_policy(
-    self,
-    GroupName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### detach_role_policy
 
 Type annotations for `boto3.client("iam").detach_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy]
+Boto3 documentation:
+[IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
 
-```python
-def detach_role_policy(
-    self,
-    RoleName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### detach_user_policy
 
 Type annotations for `boto3.client("iam").detach_user_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy]
+Boto3 documentation:
+[IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
 
-```python
-def detach_user_policy(
-    self,
-    UserName: str,
-    PolicyArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PolicyArn`: `str` *(required)*
 
 ### enable_mfa_device
 
 Type annotations for `boto3.client("iam").enable_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device]
+Boto3 documentation:
+[IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
 
-```python
-def enable_mfa_device(
-    self,
-    UserName: str,
-    SerialNumber: str,
-    AuthenticationCode1: str,
-    AuthenticationCode2: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SerialNumber`: `str` *(required)*
+- `AuthenticationCode1`: `str` *(required)*
+- `AuthenticationCode2`: `str` *(required)*
 
 ### generate_credential_report
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report]
+Boto3 documentation:
+[IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
 
-```python
-def generate_credential_report(
-    self
-) -> GenerateCredentialReportResponseTypeDef:
-    pass
-```
+Returns
+[GenerateCredentialReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generatecredentialreportresponsetypedef).
 
 ### generate_organizations_access_report
 
-Type annotations for `boto3.client("iam").generate_organizations_access_report` method.
+Type annotations for `boto3.client("iam").generate_organizations_access_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report]
+Boto3 documentation:
+[IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
 
-```python
-def generate_organizations_access_report(
-    self,
-    EntityPath: str,
-    OrganizationsPolicyId: str = None
-) -> GenerateOrganizationsAccessReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EntityPath`: `str` *(required)*
+- `OrganizationsPolicyId`: `str`
+
+Returns
+[GenerateOrganizationsAccessReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generateorganizationsaccessreportresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("iam").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url]
+Boto3 documentation:
+[IAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### generate_service_last_accessed_details
 
-Type annotations for `boto3.client("iam").generate_service_last_accessed_details` method.
+Type annotations for
+`boto3.client("iam").generate_service_last_accessed_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details]
+Boto3 documentation:
+[IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
 
-```python
-def generate_service_last_accessed_details(
-    self,
-    Arn: str,
-    Granularity: AccessAdvisorUsageGranularityType = None
-) -> GenerateServiceLastAccessedDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `Granularity`:
+  [AccessAdvisorUsageGranularityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#accessadvisorusagegranularitytype)
+
+Returns
+[GenerateServiceLastAccessedDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generateservicelastaccesseddetailsresponsetypedef).
 
 ### get_access_key_last_used
 
 Type annotations for `boto3.client("iam").get_access_key_last_used` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used]
+Boto3 documentation:
+[IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
 
-```python
-def get_access_key_last_used(
-    self,
-    AccessKeyId: str
-) -> GetAccessKeyLastUsedResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccessKeyId`: `str` *(required)*
+
+Returns
+[GetAccessKeyLastUsedResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccesskeylastusedresponsetypedef).
 
 ### get_account_authorization_details
 
-Type annotations for `boto3.client("iam").get_account_authorization_details` method.
+Type annotations for `boto3.client("iam").get_account_authorization_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details]
+Boto3 documentation:
+[IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
 
-```python
-def get_account_authorization_details(
-    self,
-    Filter: List[EntityType] = None,
-    MaxItems: int = None,
-    Marker: str = None
-) -> GetAccountAuthorizationDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  `List`\[[EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)\]
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[GetAccountAuthorizationDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountauthorizationdetailsresponsetypedef).
 
 ### get_account_password_policy
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy]
+Boto3 documentation:
+[IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
 
-```python
-def get_account_password_policy(
-    self
-) -> GetAccountPasswordPolicyResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountPasswordPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountpasswordpolicyresponsetypedef).
 
 ### get_account_summary
 
 Type annotations for `boto3.client("iam").get_account_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary]
+Boto3 documentation:
+[IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
 
-```python
-def get_account_summary(
-    self
-) -> GetAccountSummaryResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountsummaryresponsetypedef).
 
 ### get_context_keys_for_custom_policy
 
-Type annotations for `boto3.client("iam").get_context_keys_for_custom_policy` method.
+Type annotations for `boto3.client("iam").get_context_keys_for_custom_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy]
+Boto3 documentation:
+[IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
 
-```python
-def get_context_keys_for_custom_policy(
-    self,
-    PolicyInputList: List[str]
-) -> GetContextKeysForPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyInputList`: `List`\[`str`\] *(required)*
+
+Returns
+[GetContextKeysForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcontextkeysforpolicyresponsetypedef).
 
 ### get_context_keys_for_principal_policy
 
-Type annotations for `boto3.client("iam").get_context_keys_for_principal_policy` method.
+Type annotations for
+`boto3.client("iam").get_context_keys_for_principal_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy]
+Boto3 documentation:
+[IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
 
-```python
-def get_context_keys_for_principal_policy(
-    self,
-    PolicySourceArn: str,
-    PolicyInputList: List[str] = None
-) -> GetContextKeysForPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicySourceArn`: `str` *(required)*
+- `PolicyInputList`: `List`\[`str`\]
+
+Returns
+[GetContextKeysForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcontextkeysforpolicyresponsetypedef).
 
 ### get_credential_report
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report]
+Boto3 documentation:
+[IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
 
-```python
-def get_credential_report(
-    self
-) -> GetCredentialReportResponseTypeDef:
-    pass
-```
+Returns
+[GetCredentialReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcredentialreportresponsetypedef).
 
 ### get_group
 
 Type annotations for `boto3.client("iam").get_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group]
+Boto3 documentation:
+[IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
 
-```python
-def get_group(
-    self,
-    GroupName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> GetGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[GetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getgroupresponsetypedef).
 
 ### get_group_policy
 
 Type annotations for `boto3.client("iam").get_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy]
+Boto3 documentation:
+[IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
 
-```python
-def get_group_policy(
-    self,
-    GroupName: str,
-    PolicyName: str
-) -> GetGroupPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns
+[GetGroupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getgrouppolicyresponsetypedef).
 
 ### get_instance_profile
 
 Type annotations for `boto3.client("iam").get_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile]
+Boto3 documentation:
+[IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
 
-```python
-def get_instance_profile(
-    self,
-    InstanceProfileName: str
-) -> GetInstanceProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+
+Returns
+[GetInstanceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getinstanceprofileresponsetypedef).
 
 ### get_login_profile
 
 Type annotations for `boto3.client("iam").get_login_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile]
+Boto3 documentation:
+[IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
 
-```python
-def get_login_profile(
-    self,
-    UserName: str
-) -> GetLoginProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+
+Returns
+[GetLoginProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getloginprofileresponsetypedef).
 
 ### get_open_id_connect_provider
 
 Type annotations for `boto3.client("iam").get_open_id_connect_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
 
-```python
-def get_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str
-) -> GetOpenIDConnectProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+
+Returns
+[GetOpenIDConnectProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getopenidconnectproviderresponsetypedef).
 
 ### get_organizations_access_report
 
-Type annotations for `boto3.client("iam").get_organizations_access_report` method.
+Type annotations for `boto3.client("iam").get_organizations_access_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report]
+Boto3 documentation:
+[IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
 
-```python
-def get_organizations_access_report(
-    self,
-    JobId: str,
-    MaxItems: int = None,
-    Marker: str = None,
-    SortKey: sortKeyType = None
-) -> GetOrganizationsAccessReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxItems`: `int`
+- `Marker`: `str`
+- `SortKey`:
+  [sortKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#sortkeytype)
+
+Returns
+[GetOrganizationsAccessReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getorganizationsaccessreportresponsetypedef).
 
 ### get_policy
 
 Type annotations for `boto3.client("iam").get_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy]
+Boto3 documentation:
+[IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
 
-```python
-def get_policy(
-    self,
-    PolicyArn: str
-) -> GetPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+Returns
+[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getpolicyresponsetypedef).
 
 ### get_policy_version
 
 Type annotations for `boto3.client("iam").get_policy_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version]
+Boto3 documentation:
+[IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
 
-```python
-def get_policy_version(
-    self,
-    PolicyArn: str,
-    VersionId: str
-) -> GetPolicyVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+
+Returns
+[GetPolicyVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getpolicyversionresponsetypedef).
 
 ### get_role
 
 Type annotations for `boto3.client("iam").get_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role]
+Boto3 documentation:
+[IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
 
-```python
-def get_role(
-    self,
-    RoleName: str
-) -> GetRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+
+Returns
+[GetRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getroleresponsetypedef).
 
 ### get_role_policy
 
 Type annotations for `boto3.client("iam").get_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy]
+Boto3 documentation:
+[IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
 
-```python
-def get_role_policy(
-    self,
-    RoleName: str,
-    PolicyName: str
-) -> GetRolePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns
+[GetRolePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getrolepolicyresponsetypedef).
 
 ### get_saml_provider
 
 Type annotations for `boto3.client("iam").get_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider]
+Boto3 documentation:
+[IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
 
-```python
-def get_saml_provider(
-    self,
-    SAMLProviderArn: str
-) -> GetSAMLProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SAMLProviderArn`: `str` *(required)*
+
+Returns
+[GetSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getsamlproviderresponsetypedef).
 
 ### get_server_certificate
 
 Type annotations for `boto3.client("iam").get_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate]
+Boto3 documentation:
+[IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
 
-```python
-def get_server_certificate(
-    self,
-    ServerCertificateName: str
-) -> GetServerCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+
+Returns
+[GetServerCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservercertificateresponsetypedef).
 
 ### get_service_last_accessed_details
 
-Type annotations for `boto3.client("iam").get_service_last_accessed_details` method.
+Type annotations for `boto3.client("iam").get_service_last_accessed_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details]
+Boto3 documentation:
+[IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
 
-```python
-def get_service_last_accessed_details(
-    self,
-    JobId: str,
-    MaxItems: int = None,
-    Marker: str = None
-) -> GetServiceLastAccessedDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[GetServiceLastAccessedDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelastaccesseddetailsresponsetypedef).
 
 ### get_service_last_accessed_details_with_entities
 
-Type annotations for `boto3.client("iam").get_service_last_accessed_details_with_entities` method.
+Type annotations for
+`boto3.client("iam").get_service_last_accessed_details_with_entities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities]
+Boto3 documentation:
+[IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
 
-```python
-def get_service_last_accessed_details_with_entities(
-    self,
-    JobId: str,
-    ServiceNamespace: str,
-    MaxItems: int = None,
-    Marker: str = None
-) -> GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `ServiceNamespace`: `str` *(required)*
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelastaccesseddetailswithentitiesresponsetypedef).
 
 ### get_service_linked_role_deletion_status
 
-Type annotations for `boto3.client("iam").get_service_linked_role_deletion_status` method.
+Type annotations for
+`boto3.client("iam").get_service_linked_role_deletion_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status]
+Boto3 documentation:
+[IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
 
-```python
-def get_service_linked_role_deletion_status(
-    self,
-    DeletionTaskId: str
-) -> GetServiceLinkedRoleDeletionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeletionTaskId`: `str` *(required)*
+
+Returns
+[GetServiceLinkedRoleDeletionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelinkedroledeletionstatusresponsetypedef).
 
 ### get_ssh_public_key
 
 Type annotations for `boto3.client("iam").get_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key]
+Boto3 documentation:
+[IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
 
-```python
-def get_ssh_public_key(
-    self,
-    UserName: str,
-    SSHPublicKeyId: str,
-    Encoding: encodingType
-) -> GetSSHPublicKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SSHPublicKeyId`: `str` *(required)*
+- `Encoding`:
+  [encodingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#encodingtype)
+  *(required)*
+
+Returns
+[GetSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getsshpublickeyresponsetypedef).
 
 ### get_user
 
 Type annotations for `boto3.client("iam").get_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user]
+Boto3 documentation:
+[IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
 
-```python
-def get_user(
-    self,
-    UserName: str = None
-) -> GetUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+
+Returns
+[GetUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getuserresponsetypedef).
 
 ### get_user_policy
 
 Type annotations for `boto3.client("iam").get_user_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy]
+Boto3 documentation:
+[IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
 
-```python
-def get_user_policy(
-    self,
-    UserName: str,
-    PolicyName: str
-) -> GetUserPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns
+[GetUserPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getuserpolicyresponsetypedef).
 
 ### list_access_keys
 
 Type annotations for `boto3.client("iam").list_access_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys]
+Boto3 documentation:
+[IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
 
-```python
-def list_access_keys(
-    self,
-    UserName: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAccessKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAccessKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccesskeysresponsetypedef).
 
 ### list_account_aliases
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases]
+Boto3 documentation:
+[IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
 
-```python
-def list_account_aliases(
-    self,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAccountAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAccountAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccountaliasesresponsetypedef).
 
 ### list_attached_group_policies
 
 Type annotations for `boto3.client("iam").list_attached_group_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies]
+Boto3 documentation:
+[IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
 
-```python
-def list_attached_group_policies(
-    self,
-    GroupName: str,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAttachedGroupPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAttachedGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedgrouppoliciesresponsetypedef).
 
 ### list_attached_role_policies
 
 Type annotations for `boto3.client("iam").list_attached_role_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies]
+Boto3 documentation:
+[IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
 
-```python
-def list_attached_role_policies(
-    self,
-    RoleName: str,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAttachedRolePoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAttachedRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedrolepoliciesresponsetypedef).
 
 ### list_attached_user_policies
 
 Type annotations for `boto3.client("iam").list_attached_user_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies]
+Boto3 documentation:
+[IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
 
-```python
-def list_attached_user_policies(
-    self,
-    UserName: str,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAttachedUserPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAttachedUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattacheduserpoliciesresponsetypedef).
 
 ### list_entities_for_policy
 
 Type annotations for `boto3.client("iam").list_entities_for_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy]
+Boto3 documentation:
+[IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
 
-```python
-def list_entities_for_policy(
-    self,
-    PolicyArn: str,
-    EntityFilter: EntityType = None,
-    PathPrefix: str = None,
-    PolicyUsageFilter: PolicyUsageType = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListEntitiesForPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `EntityFilter`:
+  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)
+- `PathPrefix`: `str`
+- `PolicyUsageFilter`:
+  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListEntitiesForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listentitiesforpolicyresponsetypedef).
 
 ### list_group_policies
 
 Type annotations for `boto3.client("iam").list_group_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies]
+Boto3 documentation:
+[IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
 
-```python
-def list_group_policies(
-    self,
-    GroupName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListGroupPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgrouppoliciesresponsetypedef).
 
 ### list_groups
 
 Type annotations for `boto3.client("iam").list_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups]
+Boto3 documentation:
+[IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
 
-```python
-def list_groups(
-    self,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsresponsetypedef).
 
 ### list_groups_for_user
 
 Type annotations for `boto3.client("iam").list_groups_for_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user]
+Boto3 documentation:
+[IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
 
-```python
-def list_groups_for_user(
-    self,
-    UserName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListGroupsForUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListGroupsForUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsforuserresponsetypedef).
 
 ### list_instance_profile_tags
 
 Type annotations for `boto3.client("iam").list_instance_profile_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags]
+Boto3 documentation:
+[IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
 
-```python
-def list_instance_profile_tags(
-    self,
-    InstanceProfileName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListInstanceProfileTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListInstanceProfileTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofiletagsresponsetypedef).
 
 ### list_instance_profiles
 
 Type annotations for `boto3.client("iam").list_instance_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles]
+Boto3 documentation:
+[IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
 
-```python
-def list_instance_profiles(
-    self,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListInstanceProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListInstanceProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesresponsetypedef).
 
 ### list_instance_profiles_for_role
 
-Type annotations for `boto3.client("iam").list_instance_profiles_for_role` method.
+Type annotations for `boto3.client("iam").list_instance_profiles_for_role`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role]
+Boto3 documentation:
+[IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
 
-```python
-def list_instance_profiles_for_role(
-    self,
-    RoleName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListInstanceProfilesForRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListInstanceProfilesForRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesforroleresponsetypedef).
 
 ### list_mfa_device_tags
 
 Type annotations for `boto3.client("iam").list_mfa_device_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags]
+Boto3 documentation:
+[IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
 
-```python
-def list_mfa_device_tags(
-    self,
-    SerialNumber: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListMFADeviceTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SerialNumber`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListMFADeviceTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listmfadevicetagsresponsetypedef).
 
 ### list_mfa_devices
 
 Type annotations for `boto3.client("iam").list_mfa_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices]
+Boto3 documentation:
+[IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
 
-```python
-def list_mfa_devices(
-    self,
-    UserName: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListMFADevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listmfadevicesresponsetypedef).
 
 ### list_open_id_connect_provider_tags
 
-Type annotations for `boto3.client("iam").list_open_id_connect_provider_tags` method.
+Type annotations for `boto3.client("iam").list_open_id_connect_provider_tags`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags]
+Boto3 documentation:
+[IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
 
-```python
-def list_open_id_connect_provider_tags(
-    self,
-    OpenIDConnectProviderArn: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListOpenIDConnectProviderTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListOpenIDConnectProviderTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listopenidconnectprovidertagsresponsetypedef).
 
 ### list_open_id_connect_providers
 
-Type annotations for `boto3.client("iam").list_open_id_connect_providers` method.
+Type annotations for `boto3.client("iam").list_open_id_connect_providers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers]
+Boto3 documentation:
+[IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
 
-```python
-def list_open_id_connect_providers(
-    self
-) -> ListOpenIDConnectProvidersResponseTypeDef:
-    pass
-```
+Returns
+[ListOpenIDConnectProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listopenidconnectprovidersresponsetypedef).
 
 ### list_policies
 
 Type annotations for `boto3.client("iam").list_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies]
+Boto3 documentation:
+[IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
 
-```python
-def list_policies(
-    self,
-    Scope: policyScopeType = None,
-    OnlyAttached: bool = None,
-    PathPrefix: str = None,
-    PolicyUsageFilter: PolicyUsageType = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [policyScopeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyscopetype)
+- `OnlyAttached`: `bool`
+- `PathPrefix`: `str`
+- `PolicyUsageFilter`:
+  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesresponsetypedef).
 
 ### list_policies_granting_service_access
 
-Type annotations for `boto3.client("iam").list_policies_granting_service_access` method.
+Type annotations for
+`boto3.client("iam").list_policies_granting_service_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access]
+Boto3 documentation:
+[IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
 
-```python
-def list_policies_granting_service_access(
-    self,
-    Arn: str,
-    ServiceNamespaces: List[str],
-    Marker: str = None
-) -> ListPoliciesGrantingServiceAccessResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `ServiceNamespaces`: `List`\[`str`\] *(required)*
+- `Marker`: `str`
+
+Returns
+[ListPoliciesGrantingServiceAccessResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesgrantingserviceaccessresponsetypedef).
 
 ### list_policy_tags
 
 Type annotations for `boto3.client("iam").list_policy_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags]
+Boto3 documentation:
+[IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
 
-```python
-def list_policy_tags(
-    self,
-    PolicyArn: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListPolicyTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListPolicyTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpolicytagsresponsetypedef).
 
 ### list_policy_versions
 
 Type annotations for `boto3.client("iam").list_policy_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions]
+Boto3 documentation:
+[IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
 
-```python
-def list_policy_versions(
-    self,
-    PolicyArn: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListPolicyVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListPolicyVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpolicyversionsresponsetypedef).
 
 ### list_role_policies
 
 Type annotations for `boto3.client("iam").list_role_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies]
+Boto3 documentation:
+[IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
 
-```python
-def list_role_policies(
-    self,
-    RoleName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListRolePoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolepoliciesresponsetypedef).
 
 ### list_role_tags
 
 Type annotations for `boto3.client("iam").list_role_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags]
+Boto3 documentation:
+[IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
 
-```python
-def list_role_tags(
-    self,
-    RoleName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListRoleTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListRoleTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listroletagsresponsetypedef).
 
 ### list_roles
 
 Type annotations for `boto3.client("iam").list_roles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles]
+Boto3 documentation:
+[IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
 
-```python
-def list_roles(
-    self,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListRolesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolesresponsetypedef).
 
 ### list_saml_provider_tags
 
 Type annotations for `boto3.client("iam").list_saml_provider_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags]
+Boto3 documentation:
+[IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
 
-```python
-def list_saml_provider_tags(
-    self,
-    SAMLProviderArn: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListSAMLProviderTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SAMLProviderArn`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListSAMLProviderTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsamlprovidertagsresponsetypedef).
 
 ### list_saml_providers
 
 Type annotations for `boto3.client("iam").list_saml_providers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers]
+Boto3 documentation:
+[IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
 
-```python
-def list_saml_providers(
-    self
-) -> ListSAMLProvidersResponseTypeDef:
-    pass
-```
+Returns
+[ListSAMLProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsamlprovidersresponsetypedef).
 
 ### list_server_certificate_tags
 
 Type annotations for `boto3.client("iam").list_server_certificate_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags]
+Boto3 documentation:
+[IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
 
-```python
-def list_server_certificate_tags(
-    self,
-    ServerCertificateName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListServerCertificateTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListServerCertificateTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservercertificatetagsresponsetypedef).
 
 ### list_server_certificates
 
 Type annotations for `boto3.client("iam").list_server_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates]
+Boto3 documentation:
+[IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
 
-```python
-def list_server_certificates(
-    self,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListServerCertificatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListServerCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservercertificatesresponsetypedef).
 
 ### list_service_specific_credentials
 
-Type annotations for `boto3.client("iam").list_service_specific_credentials` method.
+Type annotations for `boto3.client("iam").list_service_specific_credentials`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials]
+Boto3 documentation:
+[IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
 
-```python
-def list_service_specific_credentials(
-    self,
-    UserName: str = None,
-    ServiceName: str = None
-) -> ListServiceSpecificCredentialsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+- `ServiceName`: `str`
+
+Returns
+[ListServiceSpecificCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservicespecificcredentialsresponsetypedef).
 
 ### list_signing_certificates
 
 Type annotations for `boto3.client("iam").list_signing_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates]
+Boto3 documentation:
+[IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
 
-```python
-def list_signing_certificates(
-    self,
-    UserName: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListSigningCertificatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListSigningCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsigningcertificatesresponsetypedef).
 
 ### list_ssh_public_keys
 
 Type annotations for `boto3.client("iam").list_ssh_public_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys]
+Boto3 documentation:
+[IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
 
-```python
-def list_ssh_public_keys(
-    self,
-    UserName: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListSSHPublicKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListSSHPublicKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsshpublickeysresponsetypedef).
 
 ### list_user_policies
 
 Type annotations for `boto3.client("iam").list_user_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies]
+Boto3 documentation:
+[IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
 
-```python
-def list_user_policies(
-    self,
-    UserName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListUserPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listuserpoliciesresponsetypedef).
 
 ### list_user_tags
 
 Type annotations for `boto3.client("iam").list_user_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags]
+Boto3 documentation:
+[IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
 
-```python
-def list_user_tags(
-    self,
-    UserName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListUserTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListUserTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listusertagsresponsetypedef).
 
 ### list_users
 
 Type annotations for `boto3.client("iam").list_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users]
+Boto3 documentation:
+[IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
 
-```python
-def list_users(
-    self,
-    PathPrefix: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PathPrefix`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices]
+Boto3 documentation:
+[IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
 
-```python
-def list_virtual_mfa_devices(
-    self,
-    AssignmentStatus: assignmentStatusType = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListVirtualMFADevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AssignmentStatus`:
+  [assignmentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#assignmentstatustype)
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListVirtualMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listvirtualmfadevicesresponsetypedef).
 
 ### put_group_policy
 
 Type annotations for `boto3.client("iam").put_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy]
+Boto3 documentation:
+[IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
 
-```python
-def put_group_policy(
-    self,
-    GroupName: str,
-    PolicyName: str,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
 
 ### put_role_permissions_boundary
 
-Type annotations for `boto3.client("iam").put_role_permissions_boundary` method.
+Type annotations for `boto3.client("iam").put_role_permissions_boundary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary]
+Boto3 documentation:
+[IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
 
-```python
-def put_role_permissions_boundary(
-    self,
-    RoleName: str,
-    PermissionsBoundary: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PermissionsBoundary`: `str` *(required)*
 
 ### put_role_policy
 
 Type annotations for `boto3.client("iam").put_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy]
+Boto3 documentation:
+[IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
 
-```python
-def put_role_policy(
-    self,
-    RoleName: str,
-    PolicyName: str,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
 
 ### put_user_permissions_boundary
 
-Type annotations for `boto3.client("iam").put_user_permissions_boundary` method.
+Type annotations for `boto3.client("iam").put_user_permissions_boundary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary]
+Boto3 documentation:
+[IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
 
-```python
-def put_user_permissions_boundary(
-    self,
-    UserName: str,
-    PermissionsBoundary: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PermissionsBoundary`: `str` *(required)*
 
 ### put_user_policy
 
 Type annotations for `boto3.client("iam").put_user_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy]
+Boto3 documentation:
+[IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
 
-```python
-def put_user_policy(
-    self,
-    UserName: str,
-    PolicyName: str,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
 
 ### remove_client_id_from_open_id_connect_provider
 
-Type annotations for `boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
+Type annotations for
+`boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
 
-```python
-def remove_client_id_from_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str,
-    ClientID: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `ClientID`: `str` *(required)*
 
 ### remove_role_from_instance_profile
 
-Type annotations for `boto3.client("iam").remove_role_from_instance_profile` method.
+Type annotations for `boto3.client("iam").remove_role_from_instance_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile]
+Boto3 documentation:
+[IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
 
-```python
-def remove_role_from_instance_profile(
-    self,
-    InstanceProfileName: str,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `RoleName`: `str` *(required)*
 
 ### remove_user_from_group
 
 Type annotations for `boto3.client("iam").remove_user_from_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group]
+Boto3 documentation:
+[IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
 
-```python
-def remove_user_from_group(
-    self,
-    GroupName: str,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `UserName`: `str` *(required)*
 
 ### reset_service_specific_credential
 
-Type annotations for `boto3.client("iam").reset_service_specific_credential` method.
+Type annotations for `boto3.client("iam").reset_service_specific_credential`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential]
+Boto3 documentation:
+[IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
 
-```python
-def reset_service_specific_credential(
-    self,
-    ServiceSpecificCredentialId: str,
-    UserName: str = None
-) -> ResetServiceSpecificCredentialResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceSpecificCredentialId`: `str` *(required)*
+- `UserName`: `str`
+
+Returns
+[ResetServiceSpecificCredentialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#resetservicespecificcredentialresponsetypedef).
 
 ### resync_mfa_device
 
 Type annotations for `boto3.client("iam").resync_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device]
+Boto3 documentation:
+[IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
 
-```python
-def resync_mfa_device(
-    self,
-    UserName: str,
-    SerialNumber: str,
-    AuthenticationCode1: str,
-    AuthenticationCode2: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SerialNumber`: `str` *(required)*
+- `AuthenticationCode1`: `str` *(required)*
+- `AuthenticationCode2`: `str` *(required)*
 
 ### set_default_policy_version
 
 Type annotations for `boto3.client("iam").set_default_policy_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version]
+Boto3 documentation:
+[IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
 
-```python
-def set_default_policy_version(
-    self,
-    PolicyArn: str,
-    VersionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `VersionId`: `str` *(required)*
 
 ### set_security_token_service_preferences
 
-Type annotations for `boto3.client("iam").set_security_token_service_preferences` method.
+Type annotations for
+`boto3.client("iam").set_security_token_service_preferences` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences]
+Boto3 documentation:
+[IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
 
-```python
-def set_security_token_service_preferences(
-    self,
-    GlobalEndpointTokenVersion: globalEndpointTokenVersion
-) -> None:
-    pass
-```
+Arguments:
+
+- `GlobalEndpointTokenVersion`:
+  [globalEndpointTokenVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#globalendpointtokenversion)
+  *(required)*
 
 ### simulate_custom_policy
 
 Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy]
+Boto3 documentation:
+[IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
 
-```python
-def simulate_custom_policy(
-    self,
-    PolicyInputList: List[str],
-    ActionNames: List[str],
-    PermissionsBoundaryPolicyInputList: List[str] = None,
-    ResourceArns: List[str] = None,
-    ResourcePolicy: str = None,
-    ResourceOwner: str = None,
-    CallerArn: str = None,
-    ContextEntries: List[ContextEntryTypeDef] = None,
-    ResourceHandlingOption: str = None,
-    MaxItems: int = None,
-    Marker: str = None
-) -> SimulatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyInputList`: `List`\[`str`\] *(required)*
+- `ActionNames`: `List`\[`str`\] *(required)*
+- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
+- `ResourceArns`: `List`\[`str`\]
+- `ResourcePolicy`: `str`
+- `ResourceOwner`: `str`
+- `CallerArn`: `str`
+- `ContextEntries`:
+  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+- `ResourceHandlingOption`: `str`
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef).
 
 ### simulate_principal_policy
 
 Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy]
+Boto3 documentation:
+[IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
 
-```python
-def simulate_principal_policy(
-    self,
-    PolicySourceArn: str,
-    ActionNames: List[str],
-    PolicyInputList: List[str] = None,
-    PermissionsBoundaryPolicyInputList: List[str] = None,
-    ResourceArns: List[str] = None,
-    ResourcePolicy: str = None,
-    ResourceOwner: str = None,
-    CallerArn: str = None,
-    ContextEntries: List[ContextEntryTypeDef] = None,
-    ResourceHandlingOption: str = None,
-    MaxItems: int = None,
-    Marker: str = None
-) -> SimulatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicySourceArn`: `str` *(required)*
+- `ActionNames`: `List`\[`str`\] *(required)*
+- `PolicyInputList`: `List`\[`str`\]
+- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
+- `ResourceArns`: `List`\[`str`\]
+- `ResourcePolicy`: `str`
+- `ResourceOwner`: `str`
+- `CallerArn`: `str`
+- `ContextEntries`:
+  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+- `ResourceHandlingOption`: `str`
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef).
 
 ### tag_instance_profile
 
 Type annotations for `boto3.client("iam").tag_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile]
+Boto3 documentation:
+[IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
 
-```python
-def tag_instance_profile(
-    self,
-    InstanceProfileName: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_mfa_device
 
 Type annotations for `boto3.client("iam").tag_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device]
+Boto3 documentation:
+[IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
 
-```python
-def tag_mfa_device(
-    self,
-    SerialNumber: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SerialNumber`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_open_id_connect_provider
 
 Type annotations for `boto3.client("iam").tag_open_id_connect_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
 
-```python
-def tag_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_policy
 
 Type annotations for `boto3.client("iam").tag_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy]
+Boto3 documentation:
+[IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
 
-```python
-def tag_policy(
-    self,
-    PolicyArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_role
 
 Type annotations for `boto3.client("iam").tag_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role]
+Boto3 documentation:
+[IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
 
-```python
-def tag_role(
-    self,
-    RoleName: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_saml_provider
 
 Type annotations for `boto3.client("iam").tag_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider]
+Boto3 documentation:
+[IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
 
-```python
-def tag_saml_provider(
-    self,
-    SAMLProviderArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SAMLProviderArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_server_certificate
 
 Type annotations for `boto3.client("iam").tag_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate]
+Boto3 documentation:
+[IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
 
-```python
-def tag_server_certificate(
-    self,
-    ServerCertificateName: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### tag_user
 
 Type annotations for `boto3.client("iam").tag_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user]
+Boto3 documentation:
+[IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
 
-```python
-def tag_user(
-    self,
-    UserName: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_instance_profile
 
 Type annotations for `boto3.client("iam").untag_instance_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile]
+Boto3 documentation:
+[IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
 
-```python
-def untag_instance_profile(
-    self,
-    InstanceProfileName: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_mfa_device
 
 Type annotations for `boto3.client("iam").untag_mfa_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device]
+Boto3 documentation:
+[IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
 
-```python
-def untag_mfa_device(
-    self,
-    SerialNumber: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SerialNumber`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_open_id_connect_provider
 
-Type annotations for `boto3.client("iam").untag_open_id_connect_provider` method.
+Type annotations for `boto3.client("iam").untag_open_id_connect_provider`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider]
+Boto3 documentation:
+[IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
 
-```python
-def untag_open_id_connect_provider(
-    self,
-    OpenIDConnectProviderArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_policy
 
 Type annotations for `boto3.client("iam").untag_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy]
+Boto3 documentation:
+[IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
 
-```python
-def untag_policy(
-    self,
-    PolicyArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_role
 
 Type annotations for `boto3.client("iam").untag_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role]
+Boto3 documentation:
+[IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
 
-```python
-def untag_role(
-    self,
-    RoleName: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_saml_provider
 
 Type annotations for `boto3.client("iam").untag_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider]
+Boto3 documentation:
+[IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
 
-```python
-def untag_saml_provider(
-    self,
-    SAMLProviderArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `SAMLProviderArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_server_certificate
 
 Type annotations for `boto3.client("iam").untag_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate]
+Boto3 documentation:
+[IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
 
-```python
-def untag_server_certificate(
-    self,
-    ServerCertificateName: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### untag_user
 
 Type annotations for `boto3.client("iam").untag_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user]
+Boto3 documentation:
+[IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
 
-```python
-def untag_user(
-    self,
-    UserName: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_access_key
 
 Type annotations for `boto3.client("iam").update_access_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key]
+Boto3 documentation:
+[IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
 
-```python
-def update_access_key(
-    self,
-    AccessKeyId: str,
-    Status: statusType,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccessKeyId`: `str` *(required)*
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+- `UserName`: `str`
 
 ### update_account_password_policy
 
-Type annotations for `boto3.client("iam").update_account_password_policy` method.
+Type annotations for `boto3.client("iam").update_account_password_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy]
+Boto3 documentation:
+[IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
 
-```python
-def update_account_password_policy(
-    self,
-    MinimumPasswordLength: int = None,
-    RequireSymbols: bool = None,
-    RequireNumbers: bool = None,
-    RequireUppercaseCharacters: bool = None,
-    RequireLowercaseCharacters: bool = None,
-    AllowUsersToChangePassword: bool = None,
-    MaxPasswordAge: int = None,
-    PasswordReusePrevention: int = None,
-    HardExpiry: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `MinimumPasswordLength`: `int`
+- `RequireSymbols`: `bool`
+- `RequireNumbers`: `bool`
+- `RequireUppercaseCharacters`: `bool`
+- `RequireLowercaseCharacters`: `bool`
+- `AllowUsersToChangePassword`: `bool`
+- `MaxPasswordAge`: `int`
+- `PasswordReusePrevention`: `int`
+- `HardExpiry`: `bool`
 
 ### update_assume_role_policy
 
 Type annotations for `boto3.client("iam").update_assume_role_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy]
+Boto3 documentation:
+[IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
 
-```python
-def update_assume_role_policy(
-    self,
-    RoleName: str,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
 
 ### update_group
 
 Type annotations for `boto3.client("iam").update_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group]
+Boto3 documentation:
+[IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
 
-```python
-def update_group(
-    self,
-    GroupName: str,
-    NewPath: str = None,
-    NewGroupName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `NewPath`: `str`
+- `NewGroupName`: `str`
 
 ### update_login_profile
 
 Type annotations for `boto3.client("iam").update_login_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile]
+Boto3 documentation:
+[IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
 
-```python
-def update_login_profile(
-    self,
-    UserName: str,
-    Password: str = None,
-    PasswordResetRequired: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Password`: `str`
+- `PasswordResetRequired`: `bool`
 
 ### update_open_id_connect_provider_thumbprint
 
-Type annotations for `boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
+Type annotations for
+`boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint]
+Boto3 documentation:
+[IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
 
-```python
-def update_open_id_connect_provider_thumbprint(
-    self,
-    OpenIDConnectProviderArn: str,
-    ThumbprintList: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `OpenIDConnectProviderArn`: `str` *(required)*
+- `ThumbprintList`: `List`\[`str`\] *(required)*
 
 ### update_role
 
 Type annotations for `boto3.client("iam").update_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role]
+Boto3 documentation:
+[IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
 
-```python
-def update_role(
-    self,
-    RoleName: str,
-    Description: str = None,
-    MaxSessionDuration: int = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Description`: `str`
+- `MaxSessionDuration`: `int`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_role_description
 
 Type annotations for `boto3.client("iam").update_role_description` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description]
+Boto3 documentation:
+[IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
 
-```python
-def update_role_description(
-    self,
-    RoleName: str,
-    Description: str
-) -> UpdateRoleDescriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `Description`: `str` *(required)*
+
+Returns
+[UpdateRoleDescriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updateroledescriptionresponsetypedef).
 
 ### update_saml_provider
 
 Type annotations for `boto3.client("iam").update_saml_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider]
+Boto3 documentation:
+[IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
 
-```python
-def update_saml_provider(
-    self,
-    SAMLMetadataDocument: str,
-    SAMLProviderArn: str
-) -> UpdateSAMLProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SAMLMetadataDocument`: `str` *(required)*
+- `SAMLProviderArn`: `str` *(required)*
+
+Returns
+[UpdateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updatesamlproviderresponsetypedef).
 
 ### update_server_certificate
 
 Type annotations for `boto3.client("iam").update_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate]
+Boto3 documentation:
+[IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
 
-```python
-def update_server_certificate(
-    self,
-    ServerCertificateName: str,
-    NewPath: str = None,
-    NewServerCertificateName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `NewPath`: `str`
+- `NewServerCertificateName`: `str`
 
 ### update_service_specific_credential
 
-Type annotations for `boto3.client("iam").update_service_specific_credential` method.
+Type annotations for `boto3.client("iam").update_service_specific_credential`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential]
+Boto3 documentation:
+[IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
 
-```python
-def update_service_specific_credential(
-    self,
-    ServiceSpecificCredentialId: str,
-    Status: statusType,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServiceSpecificCredentialId`: `str` *(required)*
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+- `UserName`: `str`
 
 ### update_signing_certificate
 
 Type annotations for `boto3.client("iam").update_signing_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate]
+Boto3 documentation:
+[IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
 
-```python
-def update_signing_certificate(
-    self,
-    CertificateId: str,
-    Status: statusType,
-    UserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `CertificateId`: `str` *(required)*
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+- `UserName`: `str`
 
 ### update_ssh_public_key
 
 Type annotations for `boto3.client("iam").update_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key]
+Boto3 documentation:
+[IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
 
-```python
-def update_ssh_public_key(
-    self,
-    UserName: str,
-    SSHPublicKeyId: str,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `SSHPublicKeyId`: `str` *(required)*
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
 
 ### update_user
 
 Type annotations for `boto3.client("iam").update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user]
+Boto3 documentation:
+[IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
 
-```python
-def update_user(
-    self,
-    UserName: str,
-    NewPath: str = None,
-    NewUserName: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `NewPath`: `str`
+- `NewUserName`: `str`
 
 ### upload_server_certificate
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate]
+Boto3 documentation:
+[IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
 
-```python
-def upload_server_certificate(
-    self,
-    ServerCertificateName: str,
-    CertificateBody: str,
-    PrivateKey: str,
-    Path: str = None,
-    CertificateChain: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> UploadServerCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `CertificateBody`: `str` *(required)*
+- `PrivateKey`: `str` *(required)*
+- `Path`: `str`
+- `CertificateChain`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns
+[UploadServerCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadservercertificateresponsetypedef).
 
 ### upload_signing_certificate
 
 Type annotations for `boto3.client("iam").upload_signing_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate]
+Boto3 documentation:
+[IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
 
-```python
-def upload_signing_certificate(
-    self,
-    CertificateBody: str,
-    UserName: str = None
-) -> UploadSigningCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateBody`: `str` *(required)*
+- `UserName`: `str`
+
+Returns
+[UploadSigningCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadsigningcertificateresponsetypedef).
 
 ### upload_ssh_public_key
 
 Type annotations for `boto3.client("iam").upload_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key]
+Boto3 documentation:
+[IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
 
-```python
-def upload_ssh_public_key(
-    self,
-    UserName: str,
-    SSHPublicKeyBody: str
-) -> UploadSSHPublicKeyResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `UserName`: `str` *(required)*
+- `SSHPublicKeyBody`: `str` *(required)*
 
+Returns
+[UploadSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadsshpublickeyresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("iam").get_paginator` method with overloads.
 
-- `client.get_paginator("get_account_authorization_details")` -> [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
-- `client.get_paginator("get_group")` -> [GetGroupPaginator](./paginators.md#getgrouppaginator)
-- `client.get_paginator("list_access_keys")` -> [ListAccessKeysPaginator](./paginators.md#listaccesskeyspaginator)
-- `client.get_paginator("list_account_aliases")` -> [ListAccountAliasesPaginator](./paginators.md#listaccountaliasespaginator)
-- `client.get_paginator("list_attached_group_policies")` -> [ListAttachedGroupPoliciesPaginator](./paginators.md#listattachedgrouppoliciespaginator)
-- `client.get_paginator("list_attached_role_policies")` -> [ListAttachedRolePoliciesPaginator](./paginators.md#listattachedrolepoliciespaginator)
-- `client.get_paginator("list_attached_user_policies")` -> [ListAttachedUserPoliciesPaginator](./paginators.md#listattacheduserpoliciespaginator)
-- `client.get_paginator("list_entities_for_policy")` -> [ListEntitiesForPolicyPaginator](./paginators.md#listentitiesforpolicypaginator)
-- `client.get_paginator("list_group_policies")` -> [ListGroupPoliciesPaginator](./paginators.md#listgrouppoliciespaginator)
-- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_groups_for_user")` -> [ListGroupsForUserPaginator](./paginators.md#listgroupsforuserpaginator)
-- `client.get_paginator("list_instance_profiles")` -> [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
-- `client.get_paginator("list_instance_profiles_for_role")` -> [ListInstanceProfilesForRolePaginator](./paginators.md#listinstanceprofilesforrolepaginator)
-- `client.get_paginator("list_mfa_devices")` -> [ListMFADevicesPaginator](./paginators.md#listmfadevicespaginator)
-- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_policy_versions")` -> [ListPolicyVersionsPaginator](./paginators.md#listpolicyversionspaginator)
-- `client.get_paginator("list_role_policies")` -> [ListRolePoliciesPaginator](./paginators.md#listrolepoliciespaginator)
-- `client.get_paginator("list_roles")` -> [ListRolesPaginator](./paginators.md#listrolespaginator)
-- `client.get_paginator("list_ssh_public_keys")` -> [ListSSHPublicKeysPaginator](./paginators.md#listsshpublickeyspaginator)
-- `client.get_paginator("list_server_certificates")` -> [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
-- `client.get_paginator("list_signing_certificates")` -> [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
-- `client.get_paginator("list_user_policies")` -> [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
-- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
-- `client.get_paginator("list_virtual_mfa_devices")` -> [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
-- `client.get_paginator("simulate_custom_policy")` -> [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
-- `client.get_paginator("simulate_principal_policy")` -> [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
-
-
-
+- `client.get_paginator("get_account_authorization_details")` ->
+  [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
+- `client.get_paginator("get_group")` ->
+  [GetGroupPaginator](./paginators.md#getgrouppaginator)
+- `client.get_paginator("list_access_keys")` ->
+  [ListAccessKeysPaginator](./paginators.md#listaccesskeyspaginator)
+- `client.get_paginator("list_account_aliases")` ->
+  [ListAccountAliasesPaginator](./paginators.md#listaccountaliasespaginator)
+- `client.get_paginator("list_attached_group_policies")` ->
+  [ListAttachedGroupPoliciesPaginator](./paginators.md#listattachedgrouppoliciespaginator)
+- `client.get_paginator("list_attached_role_policies")` ->
+  [ListAttachedRolePoliciesPaginator](./paginators.md#listattachedrolepoliciespaginator)
+- `client.get_paginator("list_attached_user_policies")` ->
+  [ListAttachedUserPoliciesPaginator](./paginators.md#listattacheduserpoliciespaginator)
+- `client.get_paginator("list_entities_for_policy")` ->
+  [ListEntitiesForPolicyPaginator](./paginators.md#listentitiesforpolicypaginator)
+- `client.get_paginator("list_group_policies")` ->
+  [ListGroupPoliciesPaginator](./paginators.md#listgrouppoliciespaginator)
+- `client.get_paginator("list_groups")` ->
+  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_groups_for_user")` ->
+  [ListGroupsForUserPaginator](./paginators.md#listgroupsforuserpaginator)
+- `client.get_paginator("list_instance_profiles")` ->
+  [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
+- `client.get_paginator("list_instance_profiles_for_role")` ->
+  [ListInstanceProfilesForRolePaginator](./paginators.md#listinstanceprofilesforrolepaginator)
+- `client.get_paginator("list_mfa_devices")` ->
+  [ListMFADevicesPaginator](./paginators.md#listmfadevicespaginator)
+- `client.get_paginator("list_policies")` ->
+  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_policy_versions")` ->
+  [ListPolicyVersionsPaginator](./paginators.md#listpolicyversionspaginator)
+- `client.get_paginator("list_role_policies")` ->
+  [ListRolePoliciesPaginator](./paginators.md#listrolepoliciespaginator)
+- `client.get_paginator("list_roles")` ->
+  [ListRolesPaginator](./paginators.md#listrolespaginator)
+- `client.get_paginator("list_ssh_public_keys")` ->
+  [ListSSHPublicKeysPaginator](./paginators.md#listsshpublickeyspaginator)
+- `client.get_paginator("list_server_certificates")` ->
+  [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
+- `client.get_paginator("list_signing_certificates")` ->
+  [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
+- `client.get_paginator("list_user_policies")` ->
+  [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
+- `client.get_paginator("list_users")` ->
+  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_virtual_mfa_devices")` ->
+  [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
+- `client.get_paginator("simulate_custom_policy")` ->
+  [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
+- `client.get_paginator("simulate_principal_policy")` ->
+  [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("iam").get_waiter` method with overloads.
 
-- `client.get_waiter("instance_profile_exists")` -> [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
-- `client.get_waiter("policy_exists")` -> [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
-- `client.get_waiter("role_exists")` -> [RoleExistsWaiter](./waiters.md#roleexistswaiter)
-- `client.get_waiter("user_exists")` -> [UserExistsWaiter](./waiters.md#userexistswaiter)
+- `client.get_waiter("instance_profile_exists")` ->
+  [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
+- `client.get_waiter("policy_exists")` ->
+  [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
+- `client.get_waiter("role_exists")` ->
+  [RoleExistsWaiter](./waiters.md#roleexistswaiter)
+- `client.get_waiter("user_exists")` ->
+  [UserExistsWaiter](./waiters.md#userexistswaiter)

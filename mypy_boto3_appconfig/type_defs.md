@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppConfig](./README.md) > Structures
 
-Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
-type annotations stubs module [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+Auto-generated documentation for
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+type annotations stubs module
+[mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 - [Typed dictionaries for boto3 AppConfig module](#typed-dictionaries-for-boto3-appconfig-module)
   - [ApplicationTypeDef](#applicationtypedef)
@@ -33,14 +35,11 @@ type annotations stubs module [mypy_boto3_appconfig](https://pypi.org/project/my
 from mypy_boto3_appconfig.type_defs import ApplicationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## ApplicationsTypeDef
 
@@ -48,13 +47,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ApplicationsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ApplicationTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#applicationtypedef)\]
+- `NextToken`: `str`
 
 ## ConfigurationProfileSummaryTypeDef
 
@@ -62,16 +59,14 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ConfigurationProfileSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `Id`: `str`
 - `Name`: `str`
 - `LocationUri`: `str`
-- `ValidatorTypes`: `List[ValidatorType]`
-
+- `ValidatorTypes`:
+  `List`\[[ValidatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#validatortype)\]
 
 ## ConfigurationProfileTypeDef
 
@@ -79,18 +74,16 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ConfigurationProfileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `LocationUri`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`: `List["ValidatorTypeDef"]`
-
+- `Validators`:
+  `List`\[[ValidatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#validatortypedef)\]
 
 ## ConfigurationProfilesTypeDef
 
@@ -98,13 +91,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ConfigurationProfilesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ConfigurationProfileSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ConfigurationProfileSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationprofilesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ConfigurationTypeDef
 
@@ -112,14 +103,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Content`: `Union[bytes, IO[bytes]]`
+
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ConfigurationVersion`: `str`
 - `ContentType`: `str`
-
 
 ## DeploymentEventTypeDef
 
@@ -127,15 +115,14 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentEventTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventType`: `DeploymentEventType`
-- `TriggeredBy`: `TriggeredBy`
+
+- `EventType`:
+  [DeploymentEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#deploymenteventtype)
+- `TriggeredBy`:
+  [TriggeredBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#triggeredby)
 - `Description`: `str`
 - `OccurredAt`: `datetime`
-
 
 ## DeploymentStrategiesTypeDef
 
@@ -143,13 +130,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentStrategiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["DeploymentStrategyTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[DeploymentStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstrategytypedef)\]
+- `NextToken`: `str`
 
 ## DeploymentStrategyTypeDef
 
@@ -157,19 +142,18 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentStrategyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: `GrowthType`
+- `GrowthType`:
+  [GrowthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#growthtype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `ReplicateTo`: `ReplicateTo`
-
+- `ReplicateTo`:
+  [ReplicateTo](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#replicateto)
 
 ## DeploymentSummaryTypeDef
 
@@ -177,22 +161,21 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeploymentNumber`: `int`
 - `ConfigurationName`: `str`
 - `ConfigurationVersion`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: `GrowthType`
+- `GrowthType`:
+  [GrowthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#growthtype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `State`: `DeploymentState`
+- `State`:
+  [DeploymentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#deploymentstate)
 - `PercentageComplete`: `float`
 - `StartedAt`: `datetime`
 - `CompletedAt`: `datetime`
-
 
 ## DeploymentTypeDef
 
@@ -200,10 +183,8 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `EnvironmentId`: `str`
 - `DeploymentStrategyId`: `str`
@@ -214,15 +195,17 @@ Optional fields:
 - `ConfigurationVersion`: `str`
 - `Description`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: `GrowthType`
+- `GrowthType`:
+  [GrowthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#growthtype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `State`: `DeploymentState`
-- `EventLog`: `List["DeploymentEventTypeDef"]`
+- `State`:
+  [DeploymentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#deploymentstate)
+- `EventLog`:
+  `List`\[[DeploymentEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymenteventtypedef)\]
 - `PercentageComplete`: `float`
 - `StartedAt`: `datetime`
 - `CompletedAt`: `datetime`
-
 
 ## DeploymentsTypeDef
 
@@ -230,13 +213,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import DeploymentsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["DeploymentSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[DeploymentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentsummarytypedef)\]
+- `NextToken`: `str`
 
 ## EnvironmentTypeDef
 
@@ -244,17 +225,16 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import EnvironmentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `State`: `EnvironmentState`
-- `Monitors`: `List["MonitorTypeDef"]`
-
+- `State`:
+  [EnvironmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#environmentstate)
+- `Monitors`:
+  `List`\[[MonitorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#monitortypedef)\]
 
 ## EnvironmentsTypeDef
 
@@ -262,13 +242,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import EnvironmentsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["EnvironmentTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#environmenttypedef)\]
+- `NextToken`: `str`
 
 ## HostedConfigurationVersionSummaryTypeDef
 
@@ -276,16 +254,13 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `ConfigurationProfileId`: `str`
 - `VersionNumber`: `int`
 - `Description`: `str`
 - `ContentType`: `str`
-
 
 ## HostedConfigurationVersionTypeDef
 
@@ -293,17 +268,14 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationId`: `str`
 - `ConfigurationProfileId`: `str`
 - `VersionNumber`: `int`
 - `Description`: `str`
-- `Content`: `Union[bytes, IO[bytes]]`
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ContentType`: `str`
-
 
 ## HostedConfigurationVersionsTypeDef
 
@@ -311,13 +283,11 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["HostedConfigurationVersionSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[HostedConfigurationVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#hostedconfigurationversionsummarytypedef)\]
+- `NextToken`: `str`
 
 ## MonitorTypeDef
 
@@ -325,13 +295,10 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import MonitorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlarmArn`: `str`
 - `AlarmRoleArn`: `str`
-
 
 ## ResourceTagsTypeDef
 
@@ -339,12 +306,9 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ResourceTagsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ValidatorTypeDef
 
@@ -352,10 +316,8 @@ Optional fields:
 from mypy_boto3_appconfig.type_defs import ValidatorTypeDef
 ```
 
-
 Required fields:
-- `Type`: `ValidatorType`
+
+- `Type`:
+  [ValidatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#validatortype)
 - `Content`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Literals
 
-Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+Auto-generated documentation for
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+type annotations stubs module
+[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Literals for boto3 ElasticBeanstalk module](#literals-for-boto3-elasticbeanstalk-module)
   - [ActionHistoryStatus](#actionhistorystatus)

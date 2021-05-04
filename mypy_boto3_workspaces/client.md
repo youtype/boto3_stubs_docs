@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > WorkSpacesClient
 
-Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+Auto-generated documentation for
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+type annotations stubs module
+[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [WorkSpacesClient for boto3 WorkSpaces module](#workspacesclient-for-boto3-workspaces-module)
   - [WorkSpacesClient](#workspacesclient)
@@ -79,12 +81,13 @@ def get_workspaces_client() -> WorkSpacesClient:
     return boto3.client("workspaces")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
+Boto3 documentation:
+[WorkSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_workspaces.client import Exceptions
@@ -92,7 +95,6 @@ from mypy_boto3_workspaces.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -112,863 +114,918 @@ Exceptions:
 - `Exceptions.UnsupportedWorkspaceConfigurationException`
 - `Exceptions.WorkspacesDefaultRoleNotFoundException`
 
-
 ## Methods
-
 
 ### associate_connection_alias
 
-Type annotations for `boto3.client("workspaces").associate_connection_alias` method.
+Type annotations for `boto3.client("workspaces").associate_connection_alias`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias]
+Boto3 documentation:
+[WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
 
-```python
-def associate_connection_alias(
-    self,
-    AliasId: str,
-    ResourceId: str
-) -> AssociateConnectionAliasResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[AssociateConnectionAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#associateconnectionaliasresulttypedef).
 
 ### associate_ip_groups
 
 Type annotations for `boto3.client("workspaces").associate_ip_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups]
+Boto3 documentation:
+[WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
 
-```python
-def associate_ip_groups(
-    self,
-    DirectoryId: str,
-    GroupIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `GroupIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### authorize_ip_rules
 
 Type annotations for `boto3.client("workspaces").authorize_ip_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules]
+Boto3 documentation:
+[WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
 
-```python
-def authorize_ip_rules(
-    self,
-    GroupId: str,
-    UserRules: List["IpRuleItemTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GroupId`: `str` *(required)*
+- `UserRules`:
+  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("workspaces").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate]
+Boto3 documentation:
+[WorkSpaces.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### copy_workspace_image
 
 Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image]
+Boto3 documentation:
+[WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
 
-```python
-def copy_workspace_image(
-    self,
-    Name: str,
-    SourceImageId: str,
-    SourceRegion: str,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CopyWorkspaceImageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `SourceImageId`: `str` *(required)*
+- `SourceRegion`: `str` *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+
+Returns
+[CopyWorkspaceImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#copyworkspaceimageresulttypedef).
 
 ### create_connection_alias
 
-Type annotations for `boto3.client("workspaces").create_connection_alias` method.
+Type annotations for `boto3.client("workspaces").create_connection_alias`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias]
+Boto3 documentation:
+[WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
 
-```python
-def create_connection_alias(
-    self,
-    ConnectionString: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateConnectionAliasResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionString`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateConnectionAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createconnectionaliasresulttypedef).
 
 ### create_ip_group
 
 Type annotations for `boto3.client("workspaces").create_ip_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group]
+Boto3 documentation:
+[WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
 
-```python
-def create_ip_group(
-    self,
-    GroupName: str,
-    GroupDesc: str = None,
-    UserRules: List["IpRuleItemTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateIpGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `GroupDesc`: `str`
+- `UserRules`:
+  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateIpGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createipgroupresulttypedef).
 
 ### create_tags
 
 Type annotations for `boto3.client("workspaces").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags]
+Boto3 documentation:
+[WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
 
-```python
-def create_tags(
-    self,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_workspace_bundle
 
-Type annotations for `boto3.client("workspaces").create_workspace_bundle` method.
+Type annotations for `boto3.client("workspaces").create_workspace_bundle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle]
+Boto3 documentation:
+[WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
 
-```python
-def create_workspace_bundle(
-    self,
-    BundleName: str,
-    BundleDescription: str,
-    ImageId: str,
-    ComputeType: "ComputeTypeTypeDef",
-    UserStorage: "UserStorageTypeDef",
-    RootStorage: "RootStorageTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateWorkspaceBundleResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BundleName`: `str` *(required)*
+- `BundleDescription`: `str` *(required)*
+- `ImageId`: `str` *(required)*
+- `ComputeType`:
+  [ComputeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#computetypetypedef)
+  *(required)*
+- `UserStorage`:
+  [UserStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#userstoragetypedef)
+  *(required)*
+- `RootStorage`:
+  [RootStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rootstoragetypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateWorkspaceBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createworkspacebundleresulttypedef).
 
 ### create_workspaces
 
 Type annotations for `boto3.client("workspaces").create_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
 
-```python
-def create_workspaces(
-    self,
-    Workspaces: List["WorkspaceRequestTypeDef"]
-) -> CreateWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Workspaces`:
+  `List`\[[WorkspaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacerequesttypedef)\]
+  *(required)*
+
+Returns
+[CreateWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createworkspacesresulttypedef).
 
 ### delete_connection_alias
 
-Type annotations for `boto3.client("workspaces").delete_connection_alias` method.
+Type annotations for `boto3.client("workspaces").delete_connection_alias`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias]
+Boto3 documentation:
+[WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
 
-```python
-def delete_connection_alias(
-    self,
-    AliasId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_ip_group
 
 Type annotations for `boto3.client("workspaces").delete_ip_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group]
+Boto3 documentation:
+[WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
 
-```python
-def delete_ip_group(
-    self,
-    GroupId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tags
 
 Type annotations for `boto3.client("workspaces").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags]
+Boto3 documentation:
+[WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workspace_bundle
 
-Type annotations for `boto3.client("workspaces").delete_workspace_bundle` method.
+Type annotations for `boto3.client("workspaces").delete_workspace_bundle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle]
+Boto3 documentation:
+[WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
 
-```python
-def delete_workspace_bundle(
-    self,
-    BundleId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BundleId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workspace_image
 
-Type annotations for `boto3.client("workspaces").delete_workspace_image` method.
+Type annotations for `boto3.client("workspaces").delete_workspace_image`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image]
+Boto3 documentation:
+[WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
 
-```python
-def delete_workspace_image(
-    self,
-    ImageId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ImageId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_workspace_directory
 
-Type annotations for `boto3.client("workspaces").deregister_workspace_directory` method.
+Type annotations for
+`boto3.client("workspaces").deregister_workspace_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory]
+Boto3 documentation:
+[WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
 
-```python
-def deregister_workspace_directory(
-    self,
-    DirectoryId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account
 
 Type annotations for `boto3.client("workspaces").describe_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account]
+Boto3 documentation:
+[WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
-```python
-def describe_account(
-    self
-) -> DescribeAccountResultTypeDef:
-    pass
-```
+Returns
+[DescribeAccountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeaccountresulttypedef).
 
 ### describe_account_modifications
 
-Type annotations for `boto3.client("workspaces").describe_account_modifications` method.
+Type annotations for
+`boto3.client("workspaces").describe_account_modifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications]
+Boto3 documentation:
+[WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
 
-```python
-def describe_account_modifications(
-    self,
-    NextToken: str = None
-) -> DescribeAccountModificationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[DescribeAccountModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeaccountmodificationsresulttypedef).
 
 ### describe_client_properties
 
-Type annotations for `boto3.client("workspaces").describe_client_properties` method.
+Type annotations for `boto3.client("workspaces").describe_client_properties`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties]
+Boto3 documentation:
+[WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
 
-```python
-def describe_client_properties(
-    self,
-    ResourceIds: List[str]
-) -> DescribeClientPropertiesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeClientPropertiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeclientpropertiesresulttypedef).
 
 ### describe_connection_alias_permissions
 
-Type annotations for `boto3.client("workspaces").describe_connection_alias_permissions` method.
+Type annotations for
+`boto3.client("workspaces").describe_connection_alias_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions]
+Boto3 documentation:
+[WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
 
-```python
-def describe_connection_alias_permissions(
-    self,
-    AliasId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeConnectionAliasPermissionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeConnectionAliasPermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeconnectionaliaspermissionsresulttypedef).
 
 ### describe_connection_aliases
 
-Type annotations for `boto3.client("workspaces").describe_connection_aliases` method.
+Type annotations for `boto3.client("workspaces").describe_connection_aliases`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases]
+Boto3 documentation:
+[WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
 
-```python
-def describe_connection_aliases(
-    self,
-    AliasIds: List[str] = None,
-    ResourceId: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeConnectionAliasesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AliasIds`: `List`\[`str`\]
+- `ResourceId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeConnectionAliasesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeconnectionaliasesresulttypedef).
 
 ### describe_ip_groups
 
 Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups]
+Boto3 documentation:
+[WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
 
-```python
-def describe_ip_groups(
-    self,
-    GroupIds: List[str] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeIpGroupsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GroupIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeIpGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeipgroupsresulttypedef).
 
 ### describe_tags
 
 Type annotations for `boto3.client("workspaces").describe_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags]
+Boto3 documentation:
+[WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
 
-```python
-def describe_tags(
-    self,
-    ResourceId: str
-) -> DescribeTagsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+
+Returns
+[DescribeTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describetagsresulttypedef).
 
 ### describe_workspace_bundles
 
-Type annotations for `boto3.client("workspaces").describe_workspace_bundles` method.
+Type annotations for `boto3.client("workspaces").describe_workspace_bundles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
 
-```python
-def describe_workspace_bundles(
-    self,
-    BundleIds: List[str] = None,
-    Owner: str = None,
-    NextToken: str = None
-) -> DescribeWorkspaceBundlesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `BundleIds`: `List`\[`str`\]
+- `Owner`: `str`
+- `NextToken`: `str`
+
+Returns
+[DescribeWorkspaceBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacebundlesresulttypedef).
 
 ### describe_workspace_directories
 
-Type annotations for `boto3.client("workspaces").describe_workspace_directories` method.
+Type annotations for
+`boto3.client("workspaces").describe_workspace_directories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
 
-```python
-def describe_workspace_directories(
-    self,
-    DirectoryIds: List[str] = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeWorkspaceDirectoriesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeWorkspaceDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacedirectoriesresulttypedef).
 
 ### describe_workspace_image_permissions
 
-Type annotations for `boto3.client("workspaces").describe_workspace_image_permissions` method.
+Type annotations for
+`boto3.client("workspaces").describe_workspace_image_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
 
-```python
-def describe_workspace_image_permissions(
-    self,
-    ImageId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeWorkspaceImagePermissionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeWorkspaceImagePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspaceimagepermissionsresulttypedef).
 
 ### describe_workspace_images
 
-Type annotations for `boto3.client("workspaces").describe_workspace_images` method.
+Type annotations for `boto3.client("workspaces").describe_workspace_images`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
 
-```python
-def describe_workspace_images(
-    self,
-    ImageIds: List[str] = None,
-    ImageType: ImageType = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeWorkspaceImagesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ImageIds`: `List`\[`str`\]
+- `ImageType`:
+  [ImageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#imagetype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeWorkspaceImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspaceimagesresulttypedef).
 
 ### describe_workspace_snapshots
 
-Type annotations for `boto3.client("workspaces").describe_workspace_snapshots` method.
+Type annotations for `boto3.client("workspaces").describe_workspace_snapshots`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
 
-```python
-def describe_workspace_snapshots(
-    self,
-    WorkspaceId: str
-) -> DescribeWorkspaceSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkspaceId`: `str` *(required)*
+
+Returns
+[DescribeWorkspaceSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesnapshotsresulttypedef).
 
 ### describe_workspaces
 
 Type annotations for `boto3.client("workspaces").describe_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
 
-```python
-def describe_workspaces(
-    self,
-    WorkspaceIds: List[str] = None,
-    DirectoryId: str = None,
-    UserName: str = None,
-    BundleId: str = None,
-    Limit: int = None,
-    NextToken: str = None
-) -> DescribeWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkspaceIds`: `List`\[`str`\]
+- `DirectoryId`: `str`
+- `UserName`: `str`
+- `BundleId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesresulttypedef).
 
 ### describe_workspaces_connection_status
 
-Type annotations for `boto3.client("workspaces").describe_workspaces_connection_status` method.
+Type annotations for
+`boto3.client("workspaces").describe_workspaces_connection_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status]
+Boto3 documentation:
+[WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
 
-```python
-def describe_workspaces_connection_status(
-    self,
-    WorkspaceIds: List[str] = None,
-    NextToken: str = None
-) -> DescribeWorkspacesConnectionStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkspaceIds`: `List`\[`str`\]
+- `NextToken`: `str`
+
+Returns
+[DescribeWorkspacesConnectionStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesconnectionstatusresulttypedef).
 
 ### disassociate_connection_alias
 
-Type annotations for `boto3.client("workspaces").disassociate_connection_alias` method.
+Type annotations for `boto3.client("workspaces").disassociate_connection_alias`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias]
+Boto3 documentation:
+[WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
 
-```python
-def disassociate_connection_alias(
-    self,
-    AliasId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_ip_groups
 
-Type annotations for `boto3.client("workspaces").disassociate_ip_groups` method.
+Type annotations for `boto3.client("workspaces").disassociate_ip_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups]
+Boto3 documentation:
+[WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
 
-```python
-def disassociate_ip_groups(
-    self,
-    DirectoryId: str,
-    GroupIds: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `GroupIds`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("workspaces").generate_presigned_url` method.
+Type annotations for `boto3.client("workspaces").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url]
+Boto3 documentation:
+[WorkSpaces.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### import_workspace_image
 
-Type annotations for `boto3.client("workspaces").import_workspace_image` method.
+Type annotations for `boto3.client("workspaces").import_workspace_image`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image]
+Boto3 documentation:
+[WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
 
-```python
-def import_workspace_image(
-    self,
-    Ec2ImageId: str,
-    IngestionProcess: WorkspaceImageIngestionProcess,
-    ImageName: str,
-    ImageDescription: str,
-    Tags: List["TagTypeDef"] = None,
-    Applications: List[Application] = None
-) -> ImportWorkspaceImageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Ec2ImageId`: `str` *(required)*
+- `IngestionProcess`:
+  [WorkspaceImageIngestionProcess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspaceimageingestionprocess)
+  *(required)*
+- `ImageName`: `str` *(required)*
+- `ImageDescription`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `Applications`:
+  `List`\[[Application](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#application)\]
+
+Returns
+[ImportWorkspaceImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#importworkspaceimageresulttypedef).
 
 ### list_available_management_cidr_ranges
 
-Type annotations for `boto3.client("workspaces").list_available_management_cidr_ranges` method.
+Type annotations for
+`boto3.client("workspaces").list_available_management_cidr_ranges` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges]
+Boto3 documentation:
+[WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
 
-```python
-def list_available_management_cidr_ranges(
-    self,
-    ManagementCidrRangeConstraint: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAvailableManagementCidrRangesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ManagementCidrRangeConstraint`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAvailableManagementCidrRangesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#listavailablemanagementcidrrangesresulttypedef).
 
 ### migrate_workspace
 
 Type annotations for `boto3.client("workspaces").migrate_workspace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace]
+Boto3 documentation:
+[WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
 
-```python
-def migrate_workspace(
-    self,
-    SourceWorkspaceId: str,
-    BundleId: str
-) -> MigrateWorkspaceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceWorkspaceId`: `str` *(required)*
+- `BundleId`: `str` *(required)*
+
+Returns
+[MigrateWorkspaceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#migrateworkspaceresulttypedef).
 
 ### modify_account
 
 Type annotations for `boto3.client("workspaces").modify_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account]
+Boto3 documentation:
+[WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
 
-```python
-def modify_account(
-    self,
-    DedicatedTenancySupport: Literal['ENABLED'] = None,
-    DedicatedTenancyManagementCidrRange: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DedicatedTenancySupport`: `Literal['ENABLED']`
+- `DedicatedTenancyManagementCidrRange`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_client_properties
 
-Type annotations for `boto3.client("workspaces").modify_client_properties` method.
+Type annotations for `boto3.client("workspaces").modify_client_properties`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties]
+Boto3 documentation:
+[WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
 
-```python
-def modify_client_properties(
-    self,
-    ResourceId: str,
-    ClientProperties: "ClientPropertiesTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `ClientProperties`:
+  [ClientPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#clientpropertiestypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_selfservice_permissions
 
-Type annotations for `boto3.client("workspaces").modify_selfservice_permissions` method.
+Type annotations for
+`boto3.client("workspaces").modify_selfservice_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions]
+Boto3 documentation:
+[WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
 
-```python
-def modify_selfservice_permissions(
-    self,
-    ResourceId: str,
-    SelfservicePermissions: "SelfservicePermissionsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `SelfservicePermissions`:
+  [SelfservicePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#selfservicepermissionstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_access_properties
 
-Type annotations for `boto3.client("workspaces").modify_workspace_access_properties` method.
+Type annotations for
+`boto3.client("workspaces").modify_workspace_access_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties]
+Boto3 documentation:
+[WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
 
-```python
-def modify_workspace_access_properties(
-    self,
-    ResourceId: str,
-    WorkspaceAccessProperties: "WorkspaceAccessPropertiesTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `WorkspaceAccessProperties`:
+  [WorkspaceAccessPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspaceaccesspropertiestypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_creation_properties
 
-Type annotations for `boto3.client("workspaces").modify_workspace_creation_properties` method.
+Type annotations for
+`boto3.client("workspaces").modify_workspace_creation_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties]
+Boto3 documentation:
+[WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
 
-```python
-def modify_workspace_creation_properties(
-    self,
-    ResourceId: str,
-    WorkspaceCreationProperties: WorkspaceCreationPropertiesTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `WorkspaceCreationProperties`:
+  [WorkspaceCreationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacecreationpropertiestypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_properties
 
-Type annotations for `boto3.client("workspaces").modify_workspace_properties` method.
+Type annotations for `boto3.client("workspaces").modify_workspace_properties`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties]
+Boto3 documentation:
+[WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
 
-```python
-def modify_workspace_properties(
-    self,
-    WorkspaceId: str,
-    WorkspaceProperties: "WorkspacePropertiesTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkspaceId`: `str` *(required)*
+- `WorkspaceProperties`:
+  [WorkspacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacepropertiestypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_state
 
-Type annotations for `boto3.client("workspaces").modify_workspace_state` method.
+Type annotations for `boto3.client("workspaces").modify_workspace_state`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state]
+Boto3 documentation:
+[WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
 
-```python
-def modify_workspace_state(
-    self,
-    WorkspaceId: str,
-    WorkspaceState: TargetWorkspaceState
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkspaceId`: `str` *(required)*
+- `WorkspaceState`:
+  [TargetWorkspaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#targetworkspacestate)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reboot_workspaces
 
 Type annotations for `boto3.client("workspaces").reboot_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
 
-```python
-def reboot_workspaces(
-    self,
-    RebootWorkspaceRequests: List[RebootRequestTypeDef]
-) -> RebootWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `RebootWorkspaceRequests`:
+  `List`\[[RebootRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebootrequesttypedef)\]
+  *(required)*
+
+Returns
+[RebootWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebootworkspacesresulttypedef).
 
 ### rebuild_workspaces
 
 Type annotations for `boto3.client("workspaces").rebuild_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
 
-```python
-def rebuild_workspaces(
-    self,
-    RebuildWorkspaceRequests: List[RebuildRequestTypeDef]
-) -> RebuildWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `RebuildWorkspaceRequests`:
+  `List`\[[RebuildRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebuildrequesttypedef)\]
+  *(required)*
+
+Returns
+[RebuildWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebuildworkspacesresulttypedef).
 
 ### register_workspace_directory
 
-Type annotations for `boto3.client("workspaces").register_workspace_directory` method.
+Type annotations for `boto3.client("workspaces").register_workspace_directory`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory]
+Boto3 documentation:
+[WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
 
-```python
-def register_workspace_directory(
-    self,
-    DirectoryId: str,
-    EnableWorkDocs: bool,
-    SubnetIds: List[str] = None,
-    EnableSelfService: bool = None,
-    Tenancy: Tenancy = None,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `EnableWorkDocs`: `bool` *(required)*
+- `SubnetIds`: `List`\[`str`\]
+- `EnableSelfService`: `bool`
+- `Tenancy`:
+  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#tenancy)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### restore_workspace
 
 Type annotations for `boto3.client("workspaces").restore_workspace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace]
+Boto3 documentation:
+[WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
 
-```python
-def restore_workspace(
-    self,
-    WorkspaceId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkspaceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### revoke_ip_rules
 
 Type annotations for `boto3.client("workspaces").revoke_ip_rules` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules]
+Boto3 documentation:
+[WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
 
-```python
-def revoke_ip_rules(
-    self,
-    GroupId: str,
-    UserRules: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GroupId`: `str` *(required)*
+- `UserRules`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_workspaces
 
 Type annotations for `boto3.client("workspaces").start_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
 
-```python
-def start_workspaces(
-    self,
-    StartWorkspaceRequests: List[StartRequestTypeDef]
-) -> StartWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StartWorkspaceRequests`:
+  `List`\[[StartRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#startrequesttypedef)\]
+  *(required)*
+
+Returns
+[StartWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#startworkspacesresulttypedef).
 
 ### stop_workspaces
 
 Type annotations for `boto3.client("workspaces").stop_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
 
-```python
-def stop_workspaces(
-    self,
-    StopWorkspaceRequests: List[StopRequestTypeDef]
-) -> StopWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StopWorkspaceRequests`:
+  `List`\[[StopRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#stoprequesttypedef)\]
+  *(required)*
+
+Returns
+[StopWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#stopworkspacesresulttypedef).
 
 ### terminate_workspaces
 
 Type annotations for `boto3.client("workspaces").terminate_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces]
+Boto3 documentation:
+[WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
 
-```python
-def terminate_workspaces(
-    self,
-    TerminateWorkspaceRequests: List[TerminateRequestTypeDef]
-) -> TerminateWorkspacesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `TerminateWorkspaceRequests`:
+  `List`\[[TerminateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#terminaterequesttypedef)\]
+  *(required)*
+
+Returns
+[TerminateWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#terminateworkspacesresulttypedef).
 
 ### update_connection_alias_permission
 
-Type annotations for `boto3.client("workspaces").update_connection_alias_permission` method.
+Type annotations for
+`boto3.client("workspaces").update_connection_alias_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission]
+Boto3 documentation:
+[WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
 
-```python
-def update_connection_alias_permission(
-    self,
-    AliasId: str,
-    ConnectionAliasPermission: "ConnectionAliasPermissionTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AliasId`: `str` *(required)*
+- `ConnectionAliasPermission`:
+  [ConnectionAliasPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#connectionaliaspermissiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_rules_of_ip_group
 
-Type annotations for `boto3.client("workspaces").update_rules_of_ip_group` method.
+Type annotations for `boto3.client("workspaces").update_rules_of_ip_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group]
+Boto3 documentation:
+[WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
 
-```python
-def update_rules_of_ip_group(
-    self,
-    GroupId: str,
-    UserRules: List["IpRuleItemTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GroupId`: `str` *(required)*
+- `UserRules`:
+  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_bundle
 
-Type annotations for `boto3.client("workspaces").update_workspace_bundle` method.
+Type annotations for `boto3.client("workspaces").update_workspace_bundle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle]
+Boto3 documentation:
+[WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
 
-```python
-def update_workspace_bundle(
-    self,
-    BundleId: str = None,
-    ImageId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BundleId`: `str`
+- `ImageId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_image_permission
 
-Type annotations for `boto3.client("workspaces").update_workspace_image_permission` method.
+Type annotations for
+`boto3.client("workspaces").update_workspace_image_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission]
+Boto3 documentation:
+[WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
 
-```python
-def update_workspace_image_permission(
-    self,
-    ImageId: str,
-    AllowCopyImage: bool,
-    SharedAccountId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ImageId`: `str` *(required)*
+- `AllowCopyImage`: `bool` *(required)*
+- `SharedAccountId`: `str` *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("workspaces").get_paginator` method with overloads.
+Type annotations for `boto3.client("workspaces").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_account_modifications")` -> [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
-- `client.get_paginator("describe_ip_groups")` -> [DescribeIpGroupsPaginator](./paginators.md#describeipgroupspaginator)
-- `client.get_paginator("describe_workspace_bundles")` -> [DescribeWorkspaceBundlesPaginator](./paginators.md#describeworkspacebundlespaginator)
-- `client.get_paginator("describe_workspace_directories")` -> [DescribeWorkspaceDirectoriesPaginator](./paginators.md#describeworkspacedirectoriespaginator)
-- `client.get_paginator("describe_workspace_images")` -> [DescribeWorkspaceImagesPaginator](./paginators.md#describeworkspaceimagespaginator)
-- `client.get_paginator("describe_workspaces")` -> [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
-- `client.get_paginator("describe_workspaces_connection_status")` -> [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
-- `client.get_paginator("list_available_management_cidr_ranges")` -> [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
-
-
+- `client.get_paginator("describe_account_modifications")` ->
+  [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
+- `client.get_paginator("describe_ip_groups")` ->
+  [DescribeIpGroupsPaginator](./paginators.md#describeipgroupspaginator)
+- `client.get_paginator("describe_workspace_bundles")` ->
+  [DescribeWorkspaceBundlesPaginator](./paginators.md#describeworkspacebundlespaginator)
+- `client.get_paginator("describe_workspace_directories")` ->
+  [DescribeWorkspaceDirectoriesPaginator](./paginators.md#describeworkspacedirectoriespaginator)
+- `client.get_paginator("describe_workspace_images")` ->
+  [DescribeWorkspaceImagesPaginator](./paginators.md#describeworkspaceimagespaginator)
+- `client.get_paginator("describe_workspaces")` ->
+  [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
+- `client.get_paginator("describe_workspaces_connection_status")` ->
+  [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
+- `client.get_paginator("list_available_management_cidr_ranges")` ->
+  [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)

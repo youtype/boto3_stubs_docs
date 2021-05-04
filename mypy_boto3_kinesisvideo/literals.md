@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KinesisVideo](./README.md) > Literals
 
-Auto-generated documentation for [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
-type annotations stubs module [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+Auto-generated documentation for
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
+type annotations stubs module
+[mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 - [Literals for boto3 KinesisVideo module](#literals-for-boto3-kinesisvideo-module)
   - [APIName](#apiname)

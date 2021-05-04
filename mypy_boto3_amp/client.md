@@ -1,9 +1,12 @@
 # PrometheusServiceClient for boto3 PrometheusService module
 
-> [Index](../README.md) > [PrometheusService](./README.md) > PrometheusServiceClient
+> [Index](../README.md) > [PrometheusService](./README.md) >
+> PrometheusServiceClient
 
-Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+Auto-generated documentation for
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+type annotations stubs module
+[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [PrometheusServiceClient for boto3 PrometheusService module](#prometheusserviceclient-for-boto3-prometheusservice-module)
   - [PrometheusServiceClient](#prometheusserviceclient)
@@ -31,12 +34,13 @@ def get_amp_client() -> PrometheusServiceClient:
     return boto3.client("amp")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
+Boto3 documentation:
+[PrometheusService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_amp.client import Exceptions
@@ -44,7 +48,6 @@ from mypy_boto3_amp.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -57,123 +60,110 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("amp").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate]
+Boto3 documentation:
+[PrometheusService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_workspace
 
 Type annotations for `boto3.client("amp").create_workspace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace]
+Boto3 documentation:
+[PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
 
-```python
-def create_workspace(
-    self,
-    alias: str = None,
-    clientToken: str = None
-) -> CreateWorkspaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `alias`: `str`
+- `clientToken`: `str`
+
+Returns
+[CreateWorkspaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#createworkspaceresponsetypedef).
 
 ### delete_workspace
 
 Type annotations for `boto3.client("amp").delete_workspace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace]
+Boto3 documentation:
+[PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
 
-```python
-def delete_workspace(
-    self,
-    workspaceId: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `workspaceId`: `str` *(required)*
+- `clientToken`: `str`
 
 ### describe_workspace
 
 Type annotations for `boto3.client("amp").describe_workspace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace]
+Boto3 documentation:
+[PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
 
-```python
-def describe_workspace(
-    self,
-    workspaceId: str
-) -> DescribeWorkspaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `workspaceId`: `str` *(required)*
+
+Returns
+[DescribeWorkspaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#describeworkspaceresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("amp").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url]
+Boto3 documentation:
+[PrometheusService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_workspaces
 
 Type annotations for `boto3.client("amp").list_workspaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces]
+Boto3 documentation:
+[PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
 
-```python
-def list_workspaces(
-    self,
-    alias: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListWorkspacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `alias`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListWorkspacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#listworkspacesresponsetypedef).
 
 ### update_workspace_alias
 
 Type annotations for `boto3.client("amp").update_workspace_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias]
+Boto3 documentation:
+[PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
 
-```python
-def update_workspace_alias(
-    self,
-    workspaceId: str,
-    alias: str = None,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `workspaceId`: `str` *(required)*
+- `alias`: `str`
+- `clientToken`: `str`
 
 ### get_paginator
 
 Type annotations for `boto3.client("amp").get_paginator` method with overloads.
 
-- `client.get_paginator("list_workspaces")` -> [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
-
-
+- `client.get_paginator("list_workspaces")` ->
+  [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)

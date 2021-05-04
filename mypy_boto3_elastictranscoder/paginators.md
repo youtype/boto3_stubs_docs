@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticTranscoder](./README.md) > Paginators
 
-Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+Auto-generated documentation for
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+type annotations stubs module
+[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Paginators for boto3 ElasticTranscoder module](#paginators-for-boto3-elastictranscoder-module)
   - [ListJobsByPipelinePaginator](#listjobsbypipelinepaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/pr
 
 ## ListJobsByPipelinePaginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")`.
+Type annotations for
+`boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")`.
 
 Can be used directly:
 
@@ -24,21 +27,23 @@ def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
     return boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
+Boto3 documentation:
+[ElasticTranscoder.Paginator.ListJobsByPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
 
-```python
-class ListJobsByPipelinePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PipelineId: str,
-        Ascending: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsByPipelineResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobsByPipelinePaginator.paginate` method:
+
+- `PipelineId`: `str` *(required)*
+- `Ascending`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsByPipelinePaginator.paginate` returns
+`Iterator`\[[ListJobsByPipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbypipelineresponsetypedef)\].
+
 ## ListJobsByStatusPaginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")`.
+Type annotations for
+`boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")`.
 
 Can be used directly:
 
@@ -49,21 +54,23 @@ def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
+Boto3 documentation:
+[ElasticTranscoder.Paginator.ListJobsByStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
 
-```python
-class ListJobsByStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Status: str,
-        Ascending: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsByStatusResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobsByStatusPaginator.paginate` method:
+
+- `Status`: `str` *(required)*
+- `Ascending`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsByStatusPaginator.paginate` returns
+`Iterator`\[[ListJobsByStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbystatusresponsetypedef)\].
+
 ## ListPipelinesPaginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator("list_pipelines")`.
+Type annotations for
+`boto3.client("elastictranscoder").get_paginator("list_pipelines")`.
 
 Can be used directly:
 
@@ -74,20 +81,22 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_pipelines")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
+Boto3 documentation:
+[ElasticTranscoder.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
 
-```python
-class ListPipelinesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Ascending: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPipelinesResponseTypeDef]:
-        pass
-```
+Arguments for `ListPipelinesPaginator.paginate` method:
+
+- `Ascending`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#paginatorconfigtypedef)
+
+`ListPipelinesPaginator.paginate` returns
+`Iterator`\[[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpipelinesresponsetypedef)\].
+
 ## ListPresetsPaginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator("list_presets")`.
+Type annotations for
+`boto3.client("elastictranscoder").get_paginator("list_presets")`.
 
 Can be used directly:
 
@@ -98,14 +107,14 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_presets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
+Boto3 documentation:
+[ElasticTranscoder.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
 
-```python
-class ListPresetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Ascending: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPresetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPresetsPaginator.paginate` method:
+
+- `Ascending`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#paginatorconfigtypedef)
+
+`ListPresetsPaginator.paginate` returns
+`Iterator`\[[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpresetsresponsetypedef)\].

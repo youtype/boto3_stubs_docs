@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DirectConnect](./README.md) > Literals
 
-Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
-type annotations stubs module [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+Auto-generated documentation for
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+type annotations stubs module
+[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Literals for boto3 DirectConnect module](#literals-for-boto3-directconnect-module)
   - [AddressFamily](#addressfamily)

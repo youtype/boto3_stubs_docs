@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeGuruReviewer](./README.md) > Literals
 
-Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+Auto-generated documentation for
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+type annotations stubs module
+[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Literals for boto3 CodeGuruReviewer module](#literals-for-boto3-codegurureviewer-module)
   - [EncryptionOption](#encryptionoption)

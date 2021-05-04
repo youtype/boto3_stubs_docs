@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > Structures
 
-Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+Auto-generated documentation for
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+type annotations stubs module
+[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [Typed dictionaries for boto3 WorkSpaces module](#typed-dictionaries-for-boto3-workspaces-module)
   - [AccountModificationTypeDef](#accountmodificationtypedef)
@@ -76,17 +78,16 @@ type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/m
 from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModificationState`: `DedicatedTenancyModificationStateEnum`
-- `DedicatedTenancySupport`: `DedicatedTenancySupportResultEnum`
+
+- `ModificationState`:
+  [DedicatedTenancyModificationStateEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#dedicatedtenancymodificationstateenum)
+- `DedicatedTenancySupport`:
+  [DedicatedTenancySupportResultEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#dedicatedtenancysupportresultenum)
 - `DedicatedTenancyManagementCidrRange`: `str`
 - `StartTime`: `datetime`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## AssociateConnectionAliasResultTypeDef
 
@@ -94,12 +95,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConnectionIdentifier`: `str`
 
+- `ConnectionIdentifier`: `str`
 
 ## ClientPropertiesResultTypeDef
 
@@ -107,13 +105,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ClientPropertiesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceId`: `str`
-- `ClientProperties`: `"ClientPropertiesTypeDef"`
 
+- `ResourceId`: `str`
+- `ClientProperties`:
+  [ClientPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#clientpropertiestypedef)
 
 ## ClientPropertiesTypeDef
 
@@ -121,12 +117,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ClientPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReconnectEnabled`: `ReconnectEnum`
 
+- `ReconnectEnabled`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
 
 ## ComputeTypeTypeDef
 
@@ -134,12 +128,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ComputeTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `Compute`
 
+- `Name`:
+  [Compute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#compute)
 
 ## ConnectionAliasAssociationTypeDef
 
@@ -147,15 +139,13 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ConnectionAliasAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationStatus`: `AssociationStatus`
+
+- `AssociationStatus`:
+  [AssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#associationstatus)
 - `AssociatedAccountId`: `str`
 - `ResourceId`: `str`
 - `ConnectionIdentifier`: `str`
-
 
 ## ConnectionAliasPermissionTypeDef
 
@@ -163,13 +153,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ConnectionAliasPermissionTypeDef
 ```
 
-
 Required fields:
+
 - `SharedAccountId`: `str`
 - `AllowAssociation`: `bool`
-
-
-
 
 ## ConnectionAliasTypeDef
 
@@ -177,16 +164,15 @@ Required fields:
 from mypy_boto3_workspaces.type_defs import ConnectionAliasTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConnectionString`: `str`
 - `AliasId`: `str`
-- `State`: `ConnectionAliasState`
+- `State`:
+  [ConnectionAliasState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#connectionaliasstate)
 - `OwnerAccountId`: `str`
-- `Associations`: `List["ConnectionAliasAssociationTypeDef"]`
-
+- `Associations`:
+  `List`\[[ConnectionAliasAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#connectionaliasassociationtypedef)\]
 
 ## CopyWorkspaceImageResultTypeDef
 
@@ -194,12 +180,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageId`: `str`
 
+- `ImageId`: `str`
 
 ## CreateConnectionAliasResultTypeDef
 
@@ -207,12 +190,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import CreateConnectionAliasResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AliasId`: `str`
 
+- `AliasId`: `str`
 
 ## CreateIpGroupResultTypeDef
 
@@ -220,12 +200,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import CreateIpGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GroupId`: `str`
 
+- `GroupId`: `str`
 
 ## CreateWorkspaceBundleResultTypeDef
 
@@ -233,12 +210,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkspaceBundle`: `"WorkspaceBundleTypeDef"`
 
+- `WorkspaceBundle`:
+  [WorkspaceBundleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacebundletypedef)
 
 ## CreateWorkspacesResultTypeDef
 
@@ -246,13 +221,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import CreateWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedCreateWorkspaceRequestTypeDef"]`
-- `PendingRequests`: `List["WorkspaceTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedCreateWorkspaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedcreateworkspacerequesttypedef)\]
+- `PendingRequests`:
+  `List`\[[WorkspaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacetypedef)\]
 
 ## DefaultWorkspaceCreationPropertiesTypeDef
 
@@ -260,17 +234,14 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DefaultWorkspaceCreationPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnableWorkDocs`: `bool`
 - `EnableInternetAccess`: `bool`
 - `DefaultOu`: `str`
 - `CustomSecurityGroupId`: `str`
 - `UserEnabledAsLocalAdministrator`: `bool`
 - `EnableMaintenanceMode`: `bool`
-
 
 ## DescribeAccountModificationsResultTypeDef
 
@@ -278,13 +249,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccountModifications`: `List["AccountModificationTypeDef"]`
-- `NextToken`: `str`
 
+- `AccountModifications`:
+  `List`\[[AccountModificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#accountmodificationtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAccountResultTypeDef
 
@@ -292,13 +261,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeAccountResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DedicatedTenancySupport`: `DedicatedTenancySupportResultEnum`
-- `DedicatedTenancyManagementCidrRange`: `str`
 
+- `DedicatedTenancySupport`:
+  [DedicatedTenancySupportResultEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#dedicatedtenancysupportresultenum)
+- `DedicatedTenancyManagementCidrRange`: `str`
 
 ## DescribeClientPropertiesResultTypeDef
 
@@ -306,12 +273,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClientPropertiesList`: `List["ClientPropertiesResultTypeDef"]`
 
+- `ClientPropertiesList`:
+  `List`\[[ClientPropertiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#clientpropertiesresulttypedef)\]
 
 ## DescribeConnectionAliasPermissionsResultTypeDef
 
@@ -319,14 +284,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AliasId`: `str`
-- `ConnectionAliasPermissions`: `List["ConnectionAliasPermissionTypeDef"]`
-- `NextToken`: `str`
 
+- `AliasId`: `str`
+- `ConnectionAliasPermissions`:
+  `List`\[[ConnectionAliasPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#connectionaliaspermissiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeConnectionAliasesResultTypeDef
 
@@ -334,13 +297,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConnectionAliases`: `List["ConnectionAliasTypeDef"]`
-- `NextToken`: `str`
 
+- `ConnectionAliases`:
+  `List`\[[ConnectionAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#connectionaliastypedef)\]
+- `NextToken`: `str`
 
 ## DescribeIpGroupsResultTypeDef
 
@@ -348,13 +309,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeIpGroupsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Result`: `List["WorkspacesIpGroupTypeDef"]`
-- `NextToken`: `str`
 
+- `Result`:
+  `List`\[[WorkspacesIpGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacesipgrouptypedef)\]
+- `NextToken`: `str`
 
 ## DescribeTagsResultTypeDef
 
@@ -362,12 +321,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeTagsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TagList`: `List["TagTypeDef"]`
 
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
 
 ## DescribeWorkspaceBundlesResultTypeDef
 
@@ -375,13 +332,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Bundles`: `List["WorkspaceBundleTypeDef"]`
-- `NextToken`: `str`
 
+- `Bundles`:
+  `List`\[[WorkspaceBundleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacebundletypedef)\]
+- `NextToken`: `str`
 
 ## DescribeWorkspaceDirectoriesResultTypeDef
 
@@ -389,13 +344,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Directories`: `List["WorkspaceDirectoryTypeDef"]`
-- `NextToken`: `str`
 
+- `Directories`:
+  `List`\[[WorkspaceDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacedirectorytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeWorkspaceImagePermissionsResultTypeDef
 
@@ -403,14 +356,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageId`: `str`
-- `ImagePermissions`: `List["ImagePermissionTypeDef"]`
-- `NextToken`: `str`
 
+- `ImageId`: `str`
+- `ImagePermissions`:
+  `List`\[[ImagePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#imagepermissiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeWorkspaceImagesResultTypeDef
 
@@ -418,13 +369,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Images`: `List["WorkspaceImageTypeDef"]`
-- `NextToken`: `str`
 
+- `Images`:
+  `List`\[[WorkspaceImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspaceimagetypedef)\]
+- `NextToken`: `str`
 
 ## DescribeWorkspaceSnapshotsResultTypeDef
 
@@ -432,13 +381,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RebuildSnapshots`: `List["SnapshotTypeDef"]`
-- `RestoreSnapshots`: `List["SnapshotTypeDef"]`
 
+- `RebuildSnapshots`:
+  `List`\[[SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#snapshottypedef)\]
+- `RestoreSnapshots`:
+  `List`\[[SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#snapshottypedef)\]
 
 ## DescribeWorkspacesConnectionStatusResultTypeDef
 
@@ -446,13 +394,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkspacesConnectionStatus`: `List["WorkspaceConnectionStatusTypeDef"]`
-- `NextToken`: `str`
 
+- `WorkspacesConnectionStatus`:
+  `List`\[[WorkspaceConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspaceconnectionstatustypedef)\]
+- `NextToken`: `str`
 
 ## DescribeWorkspacesResultTypeDef
 
@@ -460,13 +406,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Workspaces`: `List["WorkspaceTypeDef"]`
-- `NextToken`: `str`
 
+- `Workspaces`:
+  `List`\[[WorkspaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacetypedef)\]
+- `NextToken`: `str`
 
 ## FailedCreateWorkspaceRequestTypeDef
 
@@ -474,14 +418,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import FailedCreateWorkspaceRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkspaceRequest`: `"WorkspaceRequestTypeDef"`
+
+- `WorkspaceRequest`:
+  [WorkspaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacerequesttypedef)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## FailedWorkspaceChangeRequestTypeDef
 
@@ -489,14 +431,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import FailedWorkspaceChangeRequestTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkspaceId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## ImagePermissionTypeDef
 
@@ -504,12 +443,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ImagePermissionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedAccountId`: `str`
 
+- `SharedAccountId`: `str`
 
 ## ImportWorkspaceImageResultTypeDef
 
@@ -517,12 +453,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageId`: `str`
 
+- `ImageId`: `str`
 
 ## IpRuleItemTypeDef
 
@@ -530,13 +463,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import IpRuleItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ipRule`: `str`
 - `ruleDesc`: `str`
-
 
 ## ListAvailableManagementCidrRangesResultTypeDef
 
@@ -544,13 +474,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ManagementCidrRanges`: `List[str]`
-- `NextToken`: `str`
 
+- `ManagementCidrRanges`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## MigrateWorkspaceResultTypeDef
 
@@ -558,13 +485,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import MigrateWorkspaceResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceWorkspaceId`: `str`
 - `TargetWorkspaceId`: `str`
-
 
 ## ModificationStateTypeDef
 
@@ -572,13 +496,12 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import ModificationStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Resource`: `ModificationResourceEnum`
-- `State`: `ModificationStateEnum`
 
+- `Resource`:
+  [ModificationResourceEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#modificationresourceenum)
+- `State`:
+  [ModificationStateEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#modificationstateenum)
 
 ## OperatingSystemTypeDef
 
@@ -586,12 +509,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import OperatingSystemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `OperatingSystemType`
 
+- `Type`:
+  [OperatingSystemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#operatingsystemtype)
 
 ## PaginatorConfigTypeDef
 
@@ -599,14 +520,11 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RebootRequestTypeDef
 
@@ -614,12 +532,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import RebootRequestTypeDef
 ```
 
-
 Required fields:
+
 - `WorkspaceId`: `str`
-
-
-
 
 ## RebootWorkspacesResultTypeDef
 
@@ -627,12 +542,10 @@ Required fields:
 from mypy_boto3_workspaces.type_defs import RebootWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedWorkspaceChangeRequestTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedworkspacechangerequesttypedef)\]
 
 ## RebuildRequestTypeDef
 
@@ -640,12 +553,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import RebuildRequestTypeDef
 ```
 
-
 Required fields:
+
 - `WorkspaceId`: `str`
-
-
-
 
 ## RebuildWorkspacesResultTypeDef
 
@@ -653,12 +563,10 @@ Required fields:
 from mypy_boto3_workspaces.type_defs import RebuildWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedWorkspaceChangeRequestTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedworkspacechangerequesttypedef)\]
 
 ## RootStorageTypeDef
 
@@ -666,12 +574,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import RootStorageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Capacity`: `str`
 
+- `Capacity`: `str`
 
 ## SelfservicePermissionsTypeDef
 
@@ -679,16 +584,18 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import SelfservicePermissionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RestartWorkspace`: `ReconnectEnum`
-- `IncreaseVolumeSize`: `ReconnectEnum`
-- `ChangeComputeType`: `ReconnectEnum`
-- `SwitchRunningMode`: `ReconnectEnum`
-- `RebuildWorkspace`: `ReconnectEnum`
 
+- `RestartWorkspace`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
+- `IncreaseVolumeSize`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
+- `ChangeComputeType`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
+- `SwitchRunningMode`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
+- `RebuildWorkspace`:
+  [ReconnectEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#reconnectenum)
 
 ## SnapshotTypeDef
 
@@ -696,12 +603,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import SnapshotTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SnapshotTime`: `datetime`
 
+- `SnapshotTime`: `datetime`
 
 ## StartRequestTypeDef
 
@@ -709,12 +613,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import StartRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkspaceId`: `str`
 
+- `WorkspaceId`: `str`
 
 ## StartWorkspacesResultTypeDef
 
@@ -722,12 +623,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import StartWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedWorkspaceChangeRequestTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedworkspacechangerequesttypedef)\]
 
 ## StopRequestTypeDef
 
@@ -735,12 +634,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import StopRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkspaceId`: `str`
 
+- `WorkspaceId`: `str`
 
 ## StopWorkspacesResultTypeDef
 
@@ -748,12 +644,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import StopWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedWorkspaceChangeRequestTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedworkspacechangerequesttypedef)\]
 
 ## TagTypeDef
 
@@ -761,15 +655,13 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## TerminateRequestTypeDef
 
@@ -777,12 +669,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import TerminateRequestTypeDef
 ```
 
-
 Required fields:
+
 - `WorkspaceId`: `str`
-
-
-
 
 ## TerminateWorkspacesResultTypeDef
 
@@ -790,12 +679,10 @@ Required fields:
 from mypy_boto3_workspaces.type_defs import TerminateWorkspacesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedRequests`: `List["FailedWorkspaceChangeRequestTypeDef"]`
 
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#failedworkspacechangerequesttypedef)\]
 
 ## UserStorageTypeDef
 
@@ -803,12 +690,9 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import UserStorageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Capacity`: `str`
 
+- `Capacity`: `str`
 
 ## WorkspaceAccessPropertiesTypeDef
 
@@ -816,18 +700,22 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceAccessPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceTypeWindows`: `AccessPropertyValue`
-- `DeviceTypeOsx`: `AccessPropertyValue`
-- `DeviceTypeWeb`: `AccessPropertyValue`
-- `DeviceTypeIos`: `AccessPropertyValue`
-- `DeviceTypeAndroid`: `AccessPropertyValue`
-- `DeviceTypeChromeOs`: `AccessPropertyValue`
-- `DeviceTypeZeroClient`: `AccessPropertyValue`
 
+- `DeviceTypeWindows`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeOsx`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeWeb`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeIos`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeAndroid`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeChromeOs`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
+- `DeviceTypeZeroClient`:
+  [AccessPropertyValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#accesspropertyvalue)
 
 ## WorkspaceBundleTypeDef
 
@@ -835,21 +723,21 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceBundleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BundleId`: `str`
 - `Name`: `str`
 - `Owner`: `str`
 - `Description`: `str`
 - `ImageId`: `str`
-- `RootStorage`: `"RootStorageTypeDef"`
-- `UserStorage`: `"UserStorageTypeDef"`
-- `ComputeType`: `"ComputeTypeTypeDef"`
+- `RootStorage`:
+  [RootStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rootstoragetypedef)
+- `UserStorage`:
+  [UserStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#userstoragetypedef)
+- `ComputeType`:
+  [ComputeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#computetypetypedef)
 - `LastUpdatedTime`: `datetime`
 - `CreationTime`: `datetime`
-
 
 ## WorkspaceConnectionStatusTypeDef
 
@@ -857,15 +745,13 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceConnectionStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkspaceId`: `str`
-- `ConnectionState`: `ConnectionState`
+- `ConnectionState`:
+  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#connectionstate)
 - `ConnectionStateCheckTimestamp`: `datetime`
 - `LastKnownUserConnectionTimestamp`: `datetime`
-
 
 ## WorkspaceCreationPropertiesTypeDef
 
@@ -873,10 +759,8 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceCreationPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnableWorkDocs`: `bool`
 - `EnableInternetAccess`: `bool`
 - `DefaultOu`: `str`
@@ -884,34 +768,36 @@ Optional fields:
 - `UserEnabledAsLocalAdministrator`: `bool`
 - `EnableMaintenanceMode`: `bool`
 
-
 ## WorkspaceDirectoryTypeDef
 
 ```python
 from mypy_boto3_workspaces.type_defs import WorkspaceDirectoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `Alias`: `str`
 - `DirectoryName`: `str`
 - `RegistrationCode`: `str`
-- `SubnetIds`: `List[str]`
-- `DnsIpAddresses`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
+- `DnsIpAddresses`: `List`\[`str`\]
 - `CustomerUserName`: `str`
 - `IamRoleId`: `str`
-- `DirectoryType`: `WorkspaceDirectoryType`
+- `DirectoryType`:
+  [WorkspaceDirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspacedirectorytype)
 - `WorkspaceSecurityGroupId`: `str`
-- `State`: `WorkspaceDirectoryState`
-- `WorkspaceCreationProperties`: `"DefaultWorkspaceCreationPropertiesTypeDef"`
-- `ipGroupIds`: `List[str]`
-- `WorkspaceAccessProperties`: `"WorkspaceAccessPropertiesTypeDef"`
-- `Tenancy`: `Tenancy`
-- `SelfservicePermissions`: `"SelfservicePermissionsTypeDef"`
-
+- `State`:
+  [WorkspaceDirectoryState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspacedirectorystate)
+- `WorkspaceCreationProperties`:
+  [DefaultWorkspaceCreationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#defaultworkspacecreationpropertiestypedef)
+- `ipGroupIds`: `List`\[`str`\]
+- `WorkspaceAccessProperties`:
+  [WorkspaceAccessPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspaceaccesspropertiestypedef)
+- `Tenancy`:
+  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#tenancy)
+- `SelfservicePermissions`:
+  [SelfservicePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#selfservicepermissionstypedef)
 
 ## WorkspaceImageTypeDef
 
@@ -919,21 +805,21 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceImageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ImageId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `OperatingSystem`: `"OperatingSystemTypeDef"`
-- `State`: `WorkspaceImageState`
-- `RequiredTenancy`: `WorkspaceImageRequiredTenancy`
+- `OperatingSystem`:
+  [OperatingSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#operatingsystemtypedef)
+- `State`:
+  [WorkspaceImageState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspaceimagestate)
+- `RequiredTenancy`:
+  [WorkspaceImageRequiredTenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspaceimagerequiredtenancy)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `Created`: `datetime`
 - `OwnerAccountId`: `str`
-
 
 ## WorkspacePropertiesTypeDef
 
@@ -941,16 +827,15 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspacePropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RunningMode`: `RunningMode`
+
+- `RunningMode`:
+  [RunningMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#runningmode)
 - `RunningModeAutoStopTimeoutInMinutes`: `int`
 - `RootVolumeSizeGib`: `int`
 - `UserVolumeSizeGib`: `int`
-- `ComputeTypeName`: `Compute`
-
+- `ComputeTypeName`:
+  [Compute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#compute)
 
 ## WorkspaceRequestTypeDef
 
@@ -958,21 +843,21 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceRequestTypeDef
 ```
 
-
 Required fields:
+
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `BundleId`: `str`
 
-
-
 Optional fields:
+
 - `VolumeEncryptionKey`: `str`
 - `UserVolumeEncryptionEnabled`: `bool`
 - `RootVolumeEncryptionEnabled`: `bool`
-- `WorkspaceProperties`: `"WorkspacePropertiesTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `WorkspaceProperties`:
+  [WorkspacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacepropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
 
 ## WorkspaceTypeDef
 
@@ -980,15 +865,14 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspaceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WorkspaceId`: `str`
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `IpAddress`: `str`
-- `State`: `WorkspaceState`
+- `State`:
+  [WorkspaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspacestate)
 - `BundleId`: `str`
 - `SubnetId`: `str`
 - `ErrorMessage`: `str`
@@ -997,9 +881,10 @@ Optional fields:
 - `VolumeEncryptionKey`: `str`
 - `UserVolumeEncryptionEnabled`: `bool`
 - `RootVolumeEncryptionEnabled`: `bool`
-- `WorkspaceProperties`: `"WorkspacePropertiesTypeDef"`
-- `ModificationStates`: `List["ModificationStateTypeDef"]`
-
+- `WorkspaceProperties`:
+  [WorkspacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacepropertiestypedef)
+- `ModificationStates`:
+  `List`\[[ModificationStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#modificationstatetypedef)\]
 
 ## WorkspacesIpGroupTypeDef
 
@@ -1007,12 +892,10 @@ Optional fields:
 from mypy_boto3_workspaces.type_defs import WorkspacesIpGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `groupId`: `str`
 - `groupName`: `str`
 - `groupDesc`: `str`
-- `userRules`: `List["IpRuleItemTypeDef"]`
-
+- `userRules`:
+  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]

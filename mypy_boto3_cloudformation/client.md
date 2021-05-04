@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudFormation](./README.md) > CloudFormationClient
 
-Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+Auto-generated documentation for
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+type annotations stubs module
+[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [CloudFormationClient for boto3 CloudFormation module](#cloudformationclient-for-boto3-cloudformation-module)
   - [CloudFormationClient](#cloudformationclient)
@@ -82,12 +84,13 @@ def get_cloudformation_client() -> CloudFormationClient:
     return boto3.client("cloudformation")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
+Boto3 documentation:
+[CloudFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudformation.client import Exceptions
@@ -95,7 +98,6 @@ from mypy_boto3_cloudformation.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -121,1044 +123,1148 @@ Exceptions:
 - `Exceptions.TokenAlreadyExistsException`
 - `Exceptions.TypeNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudformation").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate]
+Boto3 documentation:
+[CloudFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_update_stack
 
-Type annotations for `boto3.client("cloudformation").cancel_update_stack` method.
+Type annotations for `boto3.client("cloudformation").cancel_update_stack`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack]
+Boto3 documentation:
+[CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
 
-```python
-def cancel_update_stack(
-    self,
-    StackName: str,
-    ClientRequestToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `ClientRequestToken`: `str`
 
 ### continue_update_rollback
 
-Type annotations for `boto3.client("cloudformation").continue_update_rollback` method.
+Type annotations for `boto3.client("cloudformation").continue_update_rollback`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback]
+Boto3 documentation:
+[CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
 
-```python
-def continue_update_rollback(
-    self,
-    StackName: str,
-    RoleARN: str = None,
-    ResourcesToSkip: List[str] = None,
-    ClientRequestToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `RoleARN`: `str`
+- `ResourcesToSkip`: `List`\[`str`\]
+- `ClientRequestToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_change_set
 
 Type annotations for `boto3.client("cloudformation").create_change_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set]
+Boto3 documentation:
+[CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
 
-```python
-def create_change_set(
-    self,
-    StackName: str,
-    ChangeSetName: str,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    UsePreviousTemplate: bool = None,
-    Parameters: List["ParameterTypeDef"] = None,
-    Capabilities: List[Capability] = None,
-    ResourceTypes: List[str] = None,
-    RoleARN: str = None,
-    RollbackConfiguration: "RollbackConfigurationTypeDef" = None,
-    NotificationARNs: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientToken: str = None,
-    Description: str = None,
-    ChangeSetType: ChangeSetType = None,
-    ResourcesToImport: List[ResourceToImportTypeDef] = None,
-    IncludeNestedStacks: bool = None
-) -> CreateChangeSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `ChangeSetName`: `str` *(required)*
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+- `NotificationARNs`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `ClientToken`: `str`
+- `Description`: `str`
+- `ChangeSetType`:
+  [ChangeSetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#changesettype)
+- `ResourcesToImport`:
+  `List`\[[ResourceToImportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#resourcetoimporttypedef)\]
+- `IncludeNestedStacks`: `bool`
+
+Returns
+[CreateChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createchangesetoutputtypedef).
 
 ### create_stack
 
 Type annotations for `boto3.client("cloudformation").create_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack]
+Boto3 documentation:
+[CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
 
-```python
-def create_stack(
-    self,
-    StackName: str,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    Parameters: List["ParameterTypeDef"] = None,
-    DisableRollback: bool = None,
-    RollbackConfiguration: "RollbackConfigurationTypeDef" = None,
-    TimeoutInMinutes: int = None,
-    NotificationARNs: List[str] = None,
-    Capabilities: List[Capability] = None,
-    ResourceTypes: List[str] = None,
-    RoleARN: str = None,
-    OnFailure: OnFailure = None,
-    StackPolicyBody: str = None,
-    StackPolicyURL: str = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None,
-    EnableTerminationProtection: bool = None
-) -> CreateStackOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `DisableRollback`: `bool`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+- `TimeoutInMinutes`: `int`
+- `NotificationARNs`: `List`\[`str`\]
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `OnFailure`:
+  [OnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#onfailure)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+- `EnableTerminationProtection`: `bool`
+
+Returns
+[CreateStackOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstackoutputtypedef).
 
 ### create_stack_instances
 
-Type annotations for `boto3.client("cloudformation").create_stack_instances` method.
+Type annotations for `boto3.client("cloudformation").create_stack_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances]
+Boto3 documentation:
+[CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
 
-```python
-def create_stack_instances(
-    self,
-    StackSetName: str,
-    Regions: List[str],
-    Accounts: List[str] = None,
-    DeploymentTargets: "DeploymentTargetsTypeDef" = None,
-    ParameterOverrides: List["ParameterTypeDef"] = None,
-    OperationPreferences: "StackSetOperationPreferencesTypeDef" = None,
-    OperationId: str = None,
-    CallAs: CallAs = None
-) -> CreateStackInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `Regions`: `List`\[`str`\] *(required)*
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+- `ParameterOverrides`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[CreateStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstackinstancesoutputtypedef).
 
 ### create_stack_set
 
 Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set]
+Boto3 documentation:
+[CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
 
-```python
-def create_stack_set(
-    self,
-    StackSetName: str,
-    Description: str = None,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    Parameters: List["ParameterTypeDef"] = None,
-    Capabilities: List[Capability] = None,
-    Tags: List["TagTypeDef"] = None,
-    AdministrationRoleARN: str = None,
-    ExecutionRoleName: str = None,
-    PermissionModel: PermissionModels = None,
-    AutoDeployment: "AutoDeploymentTypeDef" = None,
-    CallAs: CallAs = None,
-    ClientRequestToken: str = None
-) -> CreateStackSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `Description`: `str`
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `AdministrationRoleARN`: `str`
+- `ExecutionRoleName`: `str`
+- `PermissionModel`:
+  [PermissionModels](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#permissionmodels)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#autodeploymenttypedef)
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `ClientRequestToken`: `str`
+
+Returns
+[CreateStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstacksetoutputtypedef).
 
 ### delete_change_set
 
 Type annotations for `boto3.client("cloudformation").delete_change_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set]
+Boto3 documentation:
+[CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
 
-```python
-def delete_change_set(
-    self,
-    ChangeSetName: str,
-    StackName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ChangeSetName`: `str` *(required)*
+- `StackName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_stack
 
 Type annotations for `boto3.client("cloudformation").delete_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack]
+Boto3 documentation:
+[CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
 
-```python
-def delete_stack(
-    self,
-    StackName: str,
-    RetainResources: List[str] = None,
-    RoleARN: str = None,
-    ClientRequestToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `RetainResources`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
 
 ### delete_stack_instances
 
-Type annotations for `boto3.client("cloudformation").delete_stack_instances` method.
+Type annotations for `boto3.client("cloudformation").delete_stack_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances]
+Boto3 documentation:
+[CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
 
-```python
-def delete_stack_instances(
-    self,
-    StackSetName: str,
-    Regions: List[str],
-    RetainStacks: bool,
-    Accounts: List[str] = None,
-    DeploymentTargets: "DeploymentTargetsTypeDef" = None,
-    OperationPreferences: "StackSetOperationPreferencesTypeDef" = None,
-    OperationId: str = None,
-    CallAs: CallAs = None
-) -> DeleteStackInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `Regions`: `List`\[`str`\] *(required)*
+- `RetainStacks`: `bool` *(required)*
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[DeleteStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deletestackinstancesoutputtypedef).
 
 ### delete_stack_set
 
 Type annotations for `boto3.client("cloudformation").delete_stack_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set]
+Boto3 documentation:
+[CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
 
-```python
-def delete_stack_set(
-    self,
-    StackSetName: str,
-    CallAs: CallAs = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_type
 
 Type annotations for `boto3.client("cloudformation").deregister_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type]
+Boto3 documentation:
+[CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
 
-```python
-def deregister_type(
-    self,
-    Arn: str = None,
-    Type: RegistryType = None,
-    TypeName: str = None,
-    VersionId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str`
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
-Type annotations for `boto3.client("cloudformation").describe_account_limits` method.
+Type annotations for `boto3.client("cloudformation").describe_account_limits`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits]
+Boto3 documentation:
+[CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
 
-```python
-def describe_account_limits(
-    self,
-    NextToken: str = None
-) -> DescribeAccountLimitsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describeaccountlimitsoutputtypedef).
 
 ### describe_change_set
 
-Type annotations for `boto3.client("cloudformation").describe_change_set` method.
+Type annotations for `boto3.client("cloudformation").describe_change_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set]
+Boto3 documentation:
+[CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
 
-```python
-def describe_change_set(
-    self,
-    ChangeSetName: str,
-    StackName: str = None,
-    NextToken: str = None
-) -> DescribeChangeSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ChangeSetName`: `str` *(required)*
+- `StackName`: `str`
+- `NextToken`: `str`
+
+Returns
+[DescribeChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describechangesetoutputtypedef).
 
 ### describe_stack_drift_detection_status
 
-Type annotations for `boto3.client("cloudformation").describe_stack_drift_detection_status` method.
+Type annotations for
+`boto3.client("cloudformation").describe_stack_drift_detection_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
 
-```python
-def describe_stack_drift_detection_status(
-    self,
-    StackDriftDetectionId: str
-) -> DescribeStackDriftDetectionStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackDriftDetectionId`: `str` *(required)*
+
+Returns
+[DescribeStackDriftDetectionStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackdriftdetectionstatusoutputtypedef).
 
 ### describe_stack_events
 
-Type annotations for `boto3.client("cloudformation").describe_stack_events` method.
+Type annotations for `boto3.client("cloudformation").describe_stack_events`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
 
-```python
-def describe_stack_events(
-    self,
-    StackName: str = None,
-    NextToken: str = None
-) -> DescribeStackEventsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+
+Returns
+[DescribeStackEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackeventsoutputtypedef).
 
 ### describe_stack_instance
 
-Type annotations for `boto3.client("cloudformation").describe_stack_instance` method.
+Type annotations for `boto3.client("cloudformation").describe_stack_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
 
-```python
-def describe_stack_instance(
-    self,
-    StackSetName: str,
-    StackInstanceAccount: str,
-    StackInstanceRegion: str,
-    CallAs: CallAs = None
-) -> DescribeStackInstanceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `StackInstanceAccount`: `str` *(required)*
+- `StackInstanceRegion`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[DescribeStackInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackinstanceoutputtypedef).
 
 ### describe_stack_resource
 
-Type annotations for `boto3.client("cloudformation").describe_stack_resource` method.
+Type annotations for `boto3.client("cloudformation").describe_stack_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
 
-```python
-def describe_stack_resource(
-    self,
-    StackName: str,
-    LogicalResourceId: str
-) -> DescribeStackResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `LogicalResourceId`: `str` *(required)*
+
+Returns
+[DescribeStackResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourceoutputtypedef).
 
 ### describe_stack_resource_drifts
 
-Type annotations for `boto3.client("cloudformation").describe_stack_resource_drifts` method.
+Type annotations for
+`boto3.client("cloudformation").describe_stack_resource_drifts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
 
-```python
-def describe_stack_resource_drifts(
-    self,
-    StackName: str,
-    StackResourceDriftStatusFilters: List[StackResourceDriftStatus] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeStackResourceDriftsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `StackResourceDriftStatusFilters`:
+  `List`\[[StackResourceDriftStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackresourcedriftstatus)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeStackResourceDriftsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourcedriftsoutputtypedef).
 
 ### describe_stack_resources
 
-Type annotations for `boto3.client("cloudformation").describe_stack_resources` method.
+Type annotations for `boto3.client("cloudformation").describe_stack_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
 
-```python
-def describe_stack_resources(
-    self,
-    StackName: str = None,
-    LogicalResourceId: str = None,
-    PhysicalResourceId: str = None
-) -> DescribeStackResourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str`
+- `LogicalResourceId`: `str`
+- `PhysicalResourceId`: `str`
+
+Returns
+[DescribeStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourcesoutputtypedef).
 
 ### describe_stack_set
 
-Type annotations for `boto3.client("cloudformation").describe_stack_set` method.
+Type annotations for `boto3.client("cloudformation").describe_stack_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
 
-```python
-def describe_stack_set(
-    self,
-    StackSetName: str,
-    CallAs: CallAs = None
-) -> DescribeStackSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[DescribeStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksetoutputtypedef).
 
 ### describe_stack_set_operation
 
-Type annotations for `boto3.client("cloudformation").describe_stack_set_operation` method.
+Type annotations for
+`boto3.client("cloudformation").describe_stack_set_operation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation]
+Boto3 documentation:
+[CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
 
-```python
-def describe_stack_set_operation(
-    self,
-    StackSetName: str,
-    OperationId: str,
-    CallAs: CallAs = None
-) -> DescribeStackSetOperationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `OperationId`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[DescribeStackSetOperationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksetoperationoutputtypedef).
 
 ### describe_stacks
 
 Type annotations for `boto3.client("cloudformation").describe_stacks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks]
+Boto3 documentation:
+[CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
 
-```python
-def describe_stacks(
-    self,
-    StackName: str = None,
-    NextToken: str = None
-) -> DescribeStacksOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+
+Returns
+[DescribeStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksoutputtypedef).
 
 ### describe_type
 
 Type annotations for `boto3.client("cloudformation").describe_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type]
+Boto3 documentation:
+[CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
 
-```python
-def describe_type(
-    self,
-    Type: RegistryType = None,
-    TypeName: str = None,
-    Arn: str = None,
-    VersionId: str = None
-) -> DescribeTypeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `TypeName`: `str`
+- `Arn`: `str`
+- `VersionId`: `str`
+
+Returns
+[DescribeTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describetypeoutputtypedef).
 
 ### describe_type_registration
 
-Type annotations for `boto3.client("cloudformation").describe_type_registration` method.
+Type annotations for
+`boto3.client("cloudformation").describe_type_registration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration]
+Boto3 documentation:
+[CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
 
-```python
-def describe_type_registration(
-    self,
-    RegistrationToken: str
-) -> DescribeTypeRegistrationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistrationToken`: `str` *(required)*
+
+Returns
+[DescribeTypeRegistrationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describetyperegistrationoutputtypedef).
 
 ### detect_stack_drift
 
-Type annotations for `boto3.client("cloudformation").detect_stack_drift` method.
+Type annotations for `boto3.client("cloudformation").detect_stack_drift`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift]
+Boto3 documentation:
+[CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
 
-```python
-def detect_stack_drift(
-    self,
-    StackName: str,
-    LogicalResourceIds: List[str] = None
-) -> DetectStackDriftOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `LogicalResourceIds`: `List`\[`str`\]
+
+Returns
+[DetectStackDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstackdriftoutputtypedef).
 
 ### detect_stack_resource_drift
 
-Type annotations for `boto3.client("cloudformation").detect_stack_resource_drift` method.
+Type annotations for
+`boto3.client("cloudformation").detect_stack_resource_drift` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift]
+Boto3 documentation:
+[CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
 
-```python
-def detect_stack_resource_drift(
-    self,
-    StackName: str,
-    LogicalResourceId: str
-) -> DetectStackResourceDriftOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `LogicalResourceId`: `str` *(required)*
+
+Returns
+[DetectStackResourceDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstackresourcedriftoutputtypedef).
 
 ### detect_stack_set_drift
 
-Type annotations for `boto3.client("cloudformation").detect_stack_set_drift` method.
+Type annotations for `boto3.client("cloudformation").detect_stack_set_drift`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift]
+Boto3 documentation:
+[CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
 
-```python
-def detect_stack_set_drift(
-    self,
-    StackSetName: str,
-    OperationPreferences: "StackSetOperationPreferencesTypeDef" = None,
-    OperationId: str = None,
-    CallAs: CallAs = None
-) -> DetectStackSetDriftOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[DetectStackSetDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstacksetdriftoutputtypedef).
 
 ### estimate_template_cost
 
-Type annotations for `boto3.client("cloudformation").estimate_template_cost` method.
+Type annotations for `boto3.client("cloudformation").estimate_template_cost`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost]
+Boto3 documentation:
+[CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
 
-```python
-def estimate_template_cost(
-    self,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    Parameters: List["ParameterTypeDef"] = None
-) -> EstimateTemplateCostOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+
+Returns
+[EstimateTemplateCostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#estimatetemplatecostoutputtypedef).
 
 ### execute_change_set
 
-Type annotations for `boto3.client("cloudformation").execute_change_set` method.
+Type annotations for `boto3.client("cloudformation").execute_change_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set]
+Boto3 documentation:
+[CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
 
-```python
-def execute_change_set(
-    self,
-    ChangeSetName: str,
-    StackName: str = None,
-    ClientRequestToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ChangeSetName`: `str` *(required)*
+- `StackName`: `str`
+- `ClientRequestToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cloudformation").generate_presigned_url` method.
+Type annotations for `boto3.client("cloudformation").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_stack_policy
 
 Type annotations for `boto3.client("cloudformation").get_stack_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy]
+Boto3 documentation:
+[CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
 
-```python
-def get_stack_policy(
-    self,
-    StackName: str
-) -> GetStackPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+
+Returns
+[GetStackPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#getstackpolicyoutputtypedef).
 
 ### get_template
 
 Type annotations for `boto3.client("cloudformation").get_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template]
+Boto3 documentation:
+[CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
 
-```python
-def get_template(
-    self,
-    StackName: str = None,
-    ChangeSetName: str = None,
-    TemplateStage: TemplateStage = None
-) -> GetTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str`
+- `ChangeSetName`: `str`
+- `TemplateStage`:
+  [TemplateStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#templatestage)
+
+Returns
+[GetTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#gettemplateoutputtypedef).
 
 ### get_template_summary
 
-Type annotations for `boto3.client("cloudformation").get_template_summary` method.
+Type annotations for `boto3.client("cloudformation").get_template_summary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary]
+Boto3 documentation:
+[CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
 
-```python
-def get_template_summary(
-    self,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    StackName: str = None,
-    StackSetName: str = None,
-    CallAs: CallAs = None
-) -> GetTemplateSummaryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `StackName`: `str`
+- `StackSetName`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[GetTemplateSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#gettemplatesummaryoutputtypedef).
 
 ### list_change_sets
 
 Type annotations for `boto3.client("cloudformation").list_change_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets]
+Boto3 documentation:
+[CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
 
-```python
-def list_change_sets(
-    self,
-    StackName: str,
-    NextToken: str = None
-) -> ListChangeSetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListChangeSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listchangesetsoutputtypedef).
 
 ### list_exports
 
 Type annotations for `boto3.client("cloudformation").list_exports` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports]
+Boto3 documentation:
+[CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
 
-```python
-def list_exports(
-    self,
-    NextToken: str = None
-) -> ListExportsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListExportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listexportsoutputtypedef).
 
 ### list_imports
 
 Type annotations for `boto3.client("cloudformation").list_imports` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports]
+Boto3 documentation:
+[CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
 
-```python
-def list_imports(
-    self,
-    ExportName: str,
-    NextToken: str = None
-) -> ListImportsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ExportName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListImportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listimportsoutputtypedef).
 
 ### list_stack_instances
 
-Type annotations for `boto3.client("cloudformation").list_stack_instances` method.
+Type annotations for `boto3.client("cloudformation").list_stack_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances]
+Boto3 documentation:
+[CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
 
-```python
-def list_stack_instances(
-    self,
-    StackSetName: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filters: List[StackInstanceFilterTypeDef] = None,
-    StackInstanceAccount: str = None,
-    StackInstanceRegion: str = None,
-    CallAs: CallAs = None
-) -> ListStackInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[StackInstanceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stackinstancefiltertypedef)\]
+- `StackInstanceAccount`: `str`
+- `StackInstanceRegion`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[ListStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackinstancesoutputtypedef).
 
 ### list_stack_resources
 
-Type annotations for `boto3.client("cloudformation").list_stack_resources` method.
+Type annotations for `boto3.client("cloudformation").list_stack_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources]
+Boto3 documentation:
+[CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
 
-```python
-def list_stack_resources(
-    self,
-    StackName: str,
-    NextToken: str = None
-) -> ListStackResourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackresourcesoutputtypedef).
 
 ### list_stack_set_operation_results
 
-Type annotations for `boto3.client("cloudformation").list_stack_set_operation_results` method.
+Type annotations for
+`boto3.client("cloudformation").list_stack_set_operation_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results]
+Boto3 documentation:
+[CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
 
-```python
-def list_stack_set_operation_results(
-    self,
-    StackSetName: str,
-    OperationId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CallAs: CallAs = None
-) -> ListStackSetOperationResultsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `OperationId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[ListStackSetOperationResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationresultsoutputtypedef).
 
 ### list_stack_set_operations
 
-Type annotations for `boto3.client("cloudformation").list_stack_set_operations` method.
+Type annotations for `boto3.client("cloudformation").list_stack_set_operations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations]
+Boto3 documentation:
+[CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
 
-```python
-def list_stack_set_operations(
-    self,
-    StackSetName: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    CallAs: CallAs = None
-) -> ListStackSetOperationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[ListStackSetOperationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationsoutputtypedef).
 
 ### list_stack_sets
 
 Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets]
+Boto3 documentation:
+[CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
 
-```python
-def list_stack_sets(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Status: StackSetStatus = None,
-    CallAs: CallAs = None
-) -> ListStackSetsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Status`:
+  [StackSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stacksetstatus)
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[ListStackSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetsoutputtypedef).
 
 ### list_stacks
 
 Type annotations for `boto3.client("cloudformation").list_stacks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks]
+Boto3 documentation:
+[CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
 
-```python
-def list_stacks(
-    self,
-    NextToken: str = None,
-    StackStatusFilter: List[StackStatus] = None
-) -> ListStacksOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `StackStatusFilter`:
+  `List`\[[StackStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackstatus)\]
+
+Returns
+[ListStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksoutputtypedef).
 
 ### list_type_registrations
 
-Type annotations for `boto3.client("cloudformation").list_type_registrations` method.
+Type annotations for `boto3.client("cloudformation").list_type_registrations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations]
+Boto3 documentation:
+[CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
 
-```python
-def list_type_registrations(
-    self,
-    Type: RegistryType = None,
-    TypeName: str = None,
-    TypeArn: str = None,
-    RegistrationStatusFilter: RegistrationStatus = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTypeRegistrationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `TypeName`: `str`
+- `TypeArn`: `str`
+- `RegistrationStatusFilter`:
+  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrationstatus)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTypeRegistrationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtyperegistrationsoutputtypedef).
 
 ### list_type_versions
 
-Type annotations for `boto3.client("cloudformation").list_type_versions` method.
+Type annotations for `boto3.client("cloudformation").list_type_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions]
+Boto3 documentation:
+[CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
 
-```python
-def list_type_versions(
-    self,
-    Type: RegistryType = None,
-    TypeName: str = None,
-    Arn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    DeprecatedStatus: DeprecatedStatus = None
-) -> ListTypeVersionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `TypeName`: `str`
+- `Arn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DeprecatedStatus`:
+  [DeprecatedStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#deprecatedstatus)
+
+Returns
+[ListTypeVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtypeversionsoutputtypedef).
 
 ### list_types
 
 Type annotations for `boto3.client("cloudformation").list_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types]
+Boto3 documentation:
+[CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
 
-```python
-def list_types(
-    self,
-    Visibility: Visibility = None,
-    ProvisioningType: ProvisioningType = None,
-    DeprecatedStatus: DeprecatedStatus = None,
-    Type: RegistryType = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTypesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Visibility`:
+  [Visibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#visibility)
+- `ProvisioningType`:
+  [ProvisioningType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#provisioningtype)
+- `DeprecatedStatus`:
+  [DeprecatedStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#deprecatedstatus)
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtypesoutputtypedef).
 
 ### record_handler_progress
 
-Type annotations for `boto3.client("cloudformation").record_handler_progress` method.
+Type annotations for `boto3.client("cloudformation").record_handler_progress`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress]
+Boto3 documentation:
+[CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
 
-```python
-def record_handler_progress(
-    self,
-    BearerToken: str,
-    OperationStatus: OperationStatus,
-    CurrentOperationStatus: OperationStatus = None,
-    StatusMessage: str = None,
-    ErrorCode: HandlerErrorCode = None,
-    ResourceModel: str = None,
-    ClientRequestToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BearerToken`: `str` *(required)*
+- `OperationStatus`:
+  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#operationstatus)
+  *(required)*
+- `CurrentOperationStatus`:
+  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#operationstatus)
+- `StatusMessage`: `str`
+- `ErrorCode`:
+  [HandlerErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#handlererrorcode)
+- `ResourceModel`: `str`
+- `ClientRequestToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### register_type
 
 Type annotations for `boto3.client("cloudformation").register_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type]
+Boto3 documentation:
+[CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
 
-```python
-def register_type(
-    self,
-    TypeName: str,
-    SchemaHandlerPackage: str,
-    Type: RegistryType = None,
-    LoggingConfig: "LoggingConfigTypeDef" = None,
-    ExecutionRoleArn: str = None,
-    ClientRequestToken: str = None
-) -> RegisterTypeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TypeName`: `str` *(required)*
+- `SchemaHandlerPackage`: `str` *(required)*
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `LoggingConfig`:
+  [LoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#loggingconfigtypedef)
+- `ExecutionRoleArn`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[RegisterTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#registertypeoutputtypedef).
 
 ### set_stack_policy
 
 Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy]
+Boto3 documentation:
+[CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
 
-```python
-def set_stack_policy(
-    self,
-    StackName: str,
-    StackPolicyBody: str = None,
-    StackPolicyURL: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
 
 ### set_type_default_version
 
-Type annotations for `boto3.client("cloudformation").set_type_default_version` method.
+Type annotations for `boto3.client("cloudformation").set_type_default_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version]
+Boto3 documentation:
+[CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
 
-```python
-def set_type_default_version(
-    self,
-    Arn: str = None,
-    Type: RegistryType = None,
-    TypeName: str = None,
-    VersionId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str`
+- `Type`:
+  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### signal_resource
 
 Type annotations for `boto3.client("cloudformation").signal_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource]
+Boto3 documentation:
+[CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
 
-```python
-def signal_resource(
-    self,
-    StackName: str,
-    LogicalResourceId: str,
-    UniqueId: str,
-    Status: ResourceSignalStatus
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `LogicalResourceId`: `str` *(required)*
+- `UniqueId`: `str` *(required)*
+- `Status`:
+  [ResourceSignalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#resourcesignalstatus)
+  *(required)*
 
 ### stop_stack_set_operation
 
-Type annotations for `boto3.client("cloudformation").stop_stack_set_operation` method.
+Type annotations for `boto3.client("cloudformation").stop_stack_set_operation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation]
+Boto3 documentation:
+[CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
 
-```python
-def stop_stack_set_operation(
-    self,
-    StackSetName: str,
-    OperationId: str,
-    CallAs: CallAs = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `OperationId`: `str` *(required)*
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_stack
 
 Type annotations for `boto3.client("cloudformation").update_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack]
+Boto3 documentation:
+[CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
 
-```python
-def update_stack(
-    self,
-    StackName: str,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    UsePreviousTemplate: bool = None,
-    StackPolicyDuringUpdateBody: str = None,
-    StackPolicyDuringUpdateURL: str = None,
-    Parameters: List["ParameterTypeDef"] = None,
-    Capabilities: List[Capability] = None,
-    ResourceTypes: List[str] = None,
-    RoleARN: str = None,
-    RollbackConfiguration: "RollbackConfigurationTypeDef" = None,
-    StackPolicyBody: str = None,
-    StackPolicyURL: str = None,
-    NotificationARNs: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    ClientRequestToken: str = None
-) -> UpdateStackOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackName`: `str` *(required)*
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `StackPolicyDuringUpdateBody`: `str`
+- `StackPolicyDuringUpdateURL`: `str`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `NotificationARNs`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[UpdateStackOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestackoutputtypedef).
 
 ### update_stack_instances
 
-Type annotations for `boto3.client("cloudformation").update_stack_instances` method.
+Type annotations for `boto3.client("cloudformation").update_stack_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances]
+Boto3 documentation:
+[CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
 
-```python
-def update_stack_instances(
-    self,
-    StackSetName: str,
-    Regions: List[str],
-    Accounts: List[str] = None,
-    DeploymentTargets: "DeploymentTargetsTypeDef" = None,
-    ParameterOverrides: List["ParameterTypeDef"] = None,
-    OperationPreferences: "StackSetOperationPreferencesTypeDef" = None,
-    OperationId: str = None,
-    CallAs: CallAs = None
-) -> UpdateStackInstancesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `Regions`: `List`\[`str`\] *(required)*
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+- `ParameterOverrides`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[UpdateStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestackinstancesoutputtypedef).
 
 ### update_stack_set
 
 Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set]
+Boto3 documentation:
+[CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
 
-```python
-def update_stack_set(
-    self,
-    StackSetName: str,
-    Description: str = None,
-    TemplateBody: str = None,
-    TemplateURL: str = None,
-    UsePreviousTemplate: bool = None,
-    Parameters: List["ParameterTypeDef"] = None,
-    Capabilities: List[Capability] = None,
-    Tags: List["TagTypeDef"] = None,
-    OperationPreferences: "StackSetOperationPreferencesTypeDef" = None,
-    AdministrationRoleARN: str = None,
-    ExecutionRoleName: str = None,
-    DeploymentTargets: "DeploymentTargetsTypeDef" = None,
-    PermissionModel: PermissionModels = None,
-    AutoDeployment: "AutoDeploymentTypeDef" = None,
-    OperationId: str = None,
-    Accounts: List[str] = None,
-    Regions: List[str] = None,
-    CallAs: CallAs = None
-) -> UpdateStackSetOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StackSetName`: `str` *(required)*
+- `Description`: `str`
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Capabilities`:
+  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+- `AdministrationRoleARN`: `str`
+- `ExecutionRoleName`: `str`
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+- `PermissionModel`:
+  [PermissionModels](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#permissionmodels)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#autodeploymenttypedef)
+- `OperationId`: `str`
+- `Accounts`: `List`\[`str`\]
+- `Regions`: `List`\[`str`\]
+- `CallAs`:
+  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+
+Returns
+[UpdateStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestacksetoutputtypedef).
 
 ### update_termination_protection
 
-Type annotations for `boto3.client("cloudformation").update_termination_protection` method.
+Type annotations for
+`boto3.client("cloudformation").update_termination_protection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection]
+Boto3 documentation:
+[CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
 
-```python
-def update_termination_protection(
-    self,
-    EnableTerminationProtection: bool,
-    StackName: str
-) -> UpdateTerminationProtectionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `EnableTerminationProtection`: `bool` *(required)*
+- `StackName`: `str` *(required)*
+
+Returns
+[UpdateTerminationProtectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updateterminationprotectionoutputtypedef).
 
 ### validate_template
 
 Type annotations for `boto3.client("cloudformation").validate_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template]
+Boto3 documentation:
+[CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
 
-```python
-def validate_template(
-    self,
-    TemplateBody: str = None,
-    TemplateURL: str = None
-) -> ValidateTemplateOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
 
+Returns
+[ValidateTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#validatetemplateoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloudformation").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_account_limits")` -> [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
-- `client.get_paginator("describe_change_set")` -> [DescribeChangeSetPaginator](./paginators.md#describechangesetpaginator)
-- `client.get_paginator("describe_stack_events")` -> [DescribeStackEventsPaginator](./paginators.md#describestackeventspaginator)
-- `client.get_paginator("describe_stacks")` -> [DescribeStacksPaginator](./paginators.md#describestackspaginator)
-- `client.get_paginator("list_change_sets")` -> [ListChangeSetsPaginator](./paginators.md#listchangesetspaginator)
-- `client.get_paginator("list_exports")` -> [ListExportsPaginator](./paginators.md#listexportspaginator)
-- `client.get_paginator("list_imports")` -> [ListImportsPaginator](./paginators.md#listimportspaginator)
-- `client.get_paginator("list_stack_instances")` -> [ListStackInstancesPaginator](./paginators.md#liststackinstancespaginator)
-- `client.get_paginator("list_stack_resources")` -> [ListStackResourcesPaginator](./paginators.md#liststackresourcespaginator)
-- `client.get_paginator("list_stack_set_operation_results")` -> [ListStackSetOperationResultsPaginator](./paginators.md#liststacksetoperationresultspaginator)
-- `client.get_paginator("list_stack_set_operations")` -> [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
-- `client.get_paginator("list_stack_sets")` -> [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
-- `client.get_paginator("list_stacks")` -> [ListStacksPaginator](./paginators.md#liststackspaginator)
-
-
-
+- `client.get_paginator("describe_account_limits")` ->
+  [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+- `client.get_paginator("describe_change_set")` ->
+  [DescribeChangeSetPaginator](./paginators.md#describechangesetpaginator)
+- `client.get_paginator("describe_stack_events")` ->
+  [DescribeStackEventsPaginator](./paginators.md#describestackeventspaginator)
+- `client.get_paginator("describe_stacks")` ->
+  [DescribeStacksPaginator](./paginators.md#describestackspaginator)
+- `client.get_paginator("list_change_sets")` ->
+  [ListChangeSetsPaginator](./paginators.md#listchangesetspaginator)
+- `client.get_paginator("list_exports")` ->
+  [ListExportsPaginator](./paginators.md#listexportspaginator)
+- `client.get_paginator("list_imports")` ->
+  [ListImportsPaginator](./paginators.md#listimportspaginator)
+- `client.get_paginator("list_stack_instances")` ->
+  [ListStackInstancesPaginator](./paginators.md#liststackinstancespaginator)
+- `client.get_paginator("list_stack_resources")` ->
+  [ListStackResourcesPaginator](./paginators.md#liststackresourcespaginator)
+- `client.get_paginator("list_stack_set_operation_results")` ->
+  [ListStackSetOperationResultsPaginator](./paginators.md#liststacksetoperationresultspaginator)
+- `client.get_paginator("list_stack_set_operations")` ->
+  [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
+- `client.get_paginator("list_stack_sets")` ->
+  [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
+- `client.get_paginator("list_stacks")` ->
+  [ListStacksPaginator](./paginators.md#liststackspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudformation").get_waiter` method with overloads.
+Type annotations for `boto3.client("cloudformation").get_waiter` method with
+overloads.
 
-- `client.get_waiter("change_set_create_complete")` -> [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
-- `client.get_waiter("stack_create_complete")` -> [StackCreateCompleteWaiter](./waiters.md#stackcreatecompletewaiter)
-- `client.get_waiter("stack_delete_complete")` -> [StackDeleteCompleteWaiter](./waiters.md#stackdeletecompletewaiter)
-- `client.get_waiter("stack_exists")` -> [StackExistsWaiter](./waiters.md#stackexistswaiter)
-- `client.get_waiter("stack_import_complete")` -> [StackImportCompleteWaiter](./waiters.md#stackimportcompletewaiter)
-- `client.get_waiter("stack_rollback_complete")` -> [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
-- `client.get_waiter("stack_update_complete")` -> [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
-- `client.get_waiter("type_registration_complete")` -> [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
+- `client.get_waiter("change_set_create_complete")` ->
+  [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
+- `client.get_waiter("stack_create_complete")` ->
+  [StackCreateCompleteWaiter](./waiters.md#stackcreatecompletewaiter)
+- `client.get_waiter("stack_delete_complete")` ->
+  [StackDeleteCompleteWaiter](./waiters.md#stackdeletecompletewaiter)
+- `client.get_waiter("stack_exists")` ->
+  [StackExistsWaiter](./waiters.md#stackexistswaiter)
+- `client.get_waiter("stack_import_complete")` ->
+  [StackImportCompleteWaiter](./waiters.md#stackimportcompletewaiter)
+- `client.get_waiter("stack_rollback_complete")` ->
+  [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
+- `client.get_waiter("stack_update_complete")` ->
+  [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
+- `client.get_waiter("type_registration_complete")` ->
+  [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)

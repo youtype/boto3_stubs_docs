@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataSync](./README.md) > Structures
 
-Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+Auto-generated documentation for
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+type annotations stubs module
+[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Typed dictionaries for boto3 DataSync module](#typed-dictionaries-for-boto3-datasync-module)
   - [AgentListEntryTypeDef](#agentlistentrytypedef)
@@ -54,14 +56,12 @@ type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/myp
 from mypy_boto3_datasync.type_defs import AgentListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AgentArn`: `str`
 - `Name`: `str`
-- `Status`: `AgentStatus`
-
+- `Status`:
+  [AgentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#agentstatus)
 
 ## CreateAgentResponseTypeDef
 
@@ -69,12 +69,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateAgentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AgentArn`: `str`
 
+- `AgentArn`: `str`
 
 ## CreateLocationEfsResponseTypeDef
 
@@ -82,12 +79,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationEfsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateLocationFsxWindowsResponseTypeDef
 
@@ -95,12 +89,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateLocationNfsResponseTypeDef
 
@@ -108,12 +99,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationNfsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateLocationObjectStorageResponseTypeDef
 
@@ -121,12 +109,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationObjectStorageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateLocationS3ResponseTypeDef
 
@@ -134,12 +119,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationS3ResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateLocationSmbResponseTypeDef
 
@@ -147,12 +129,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateLocationSmbResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocationArn`: `str`
 
+- `LocationArn`: `str`
 
 ## CreateTaskResponseTypeDef
 
@@ -160,12 +139,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import CreateTaskResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TaskArn`: `str`
 
+- `TaskArn`: `str`
 
 ## DescribeAgentResponseTypeDef
 
@@ -173,18 +149,18 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeAgentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AgentArn`: `str`
 - `Name`: `str`
-- `Status`: `AgentStatus`
+- `Status`:
+  [AgentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#agentstatus)
 - `LastConnectionTime`: `datetime`
 - `CreationTime`: `datetime`
-- `EndpointType`: `EndpointType`
-- `PrivateLinkConfig`: `"PrivateLinkConfigTypeDef"`
-
+- `EndpointType`:
+  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#endpointtype)
+- `PrivateLinkConfig`:
+  [PrivateLinkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#privatelinkconfigtypedef)
 
 ## DescribeLocationEfsResponseTypeDef
 
@@ -192,15 +168,13 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationEfsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `Ec2Config`: `"Ec2ConfigTypeDef"`
+- `Ec2Config`:
+  [Ec2ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#ec2configtypedef)
 - `CreationTime`: `datetime`
-
 
 ## DescribeLocationFsxWindowsResponseTypeDef
 
@@ -208,17 +182,14 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationFsxWindowsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `SecurityGroupArns`: `List[str]`
+- `SecurityGroupArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
 - `User`: `str`
 - `Domain`: `str`
-
 
 ## DescribeLocationNfsResponseTypeDef
 
@@ -226,16 +197,15 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationNfsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `OnPremConfig`: `"OnPremConfigTypeDef"`
-- `MountOptions`: `"NfsMountOptionsTypeDef"`
+- `OnPremConfig`:
+  [OnPremConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#onpremconfigtypedef)
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#nfsmountoptionstypedef)
 - `CreationTime`: `datetime`
-
 
 ## DescribeLocationObjectStorageResponseTypeDef
 
@@ -243,18 +213,16 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationObjectStorageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
 - `AccessKey`: `str`
 - `ServerPort`: `int`
-- `ServerProtocol`: `ObjectStorageServerProtocol`
-- `AgentArns`: `List[str]`
+- `ServerProtocol`:
+  [ObjectStorageServerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#objectstorageserverprotocol)
+- `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
-
 
 ## DescribeLocationS3ResponseTypeDef
 
@@ -262,17 +230,16 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationS3ResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `S3StorageClass`: `S3StorageClass`
-- `S3Config`: `"S3ConfigTypeDef"`
-- `AgentArns`: `List[str]`
+- `S3StorageClass`:
+  [S3StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#s3storageclass)
+- `S3Config`:
+  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#s3configtypedef)
+- `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
-
 
 ## DescribeLocationSmbResponseTypeDef
 
@@ -280,18 +247,16 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeLocationSmbResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `AgentArns`: `List[str]`
+- `AgentArns`: `List`\[`str`\]
 - `User`: `str`
 - `Domain`: `str`
-- `MountOptions`: `"SmbMountOptionsTypeDef"`
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#smbmountoptionstypedef)
 - `CreationTime`: `datetime`
-
 
 ## DescribeTaskExecutionResponseTypeDef
 
@@ -299,23 +264,25 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeTaskExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TaskExecutionArn`: `str`
-- `Status`: `TaskExecutionStatus`
-- `Options`: `"OptionsTypeDef"`
-- `Excludes`: `List["FilterRuleTypeDef"]`
-- `Includes`: `List["FilterRuleTypeDef"]`
+- `Status`:
+  [TaskExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskexecutionstatus)
+- `Options`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+- `Excludes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+- `Includes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
 - `StartTime`: `datetime`
 - `EstimatedFilesToTransfer`: `int`
 - `EstimatedBytesToTransfer`: `int`
 - `FilesTransferred`: `int`
 - `BytesWritten`: `int`
 - `BytesTransferred`: `int`
-- `Result`: `"TaskExecutionResultDetailTypeDef"`
-
+- `Result`:
+  [TaskExecutionResultDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskexecutionresultdetailtypedef)
 
 ## DescribeTaskResponseTypeDef
 
@@ -323,26 +290,27 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import DescribeTaskResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TaskArn`: `str`
-- `Status`: `TaskStatus`
+- `Status`:
+  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskstatus)
 - `Name`: `str`
 - `CurrentTaskExecutionArn`: `str`
 - `SourceLocationArn`: `str`
 - `DestinationLocationArn`: `str`
 - `CloudWatchLogGroupArn`: `str`
-- `SourceNetworkInterfaceArns`: `List[str]`
-- `DestinationNetworkInterfaceArns`: `List[str]`
-- `Options`: `"OptionsTypeDef"`
-- `Excludes`: `List["FilterRuleTypeDef"]`
-- `Schedule`: `"TaskScheduleTypeDef"`
+- `SourceNetworkInterfaceArns`: `List`\[`str`\]
+- `DestinationNetworkInterfaceArns`: `List`\[`str`\]
+- `Options`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+- `Excludes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+- `Schedule`:
+  [TaskScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskscheduletypedef)
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 - `CreationTime`: `datetime`
-
 
 ## Ec2ConfigTypeDef
 
@@ -350,13 +318,10 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import Ec2ConfigTypeDef
 ```
 
-
 Required fields:
+
 - `SubnetArn`: `str`
-- `SecurityGroupArns`: `List[str]`
-
-
-
+- `SecurityGroupArns`: `List`\[`str`\]
 
 ## FilterRuleTypeDef
 
@@ -364,13 +329,10 @@ Required fields:
 from mypy_boto3_datasync.type_defs import FilterRuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FilterType`: `Literal['SIMPLE_PATTERN']`
 - `Value`: `str`
-
 
 ## ListAgentsResponseTypeDef
 
@@ -378,13 +340,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import ListAgentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Agents`: `List["AgentListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `Agents`:
+  `List`\[[AgentListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#agentlistentrytypedef)\]
+- `NextToken`: `str`
 
 ## ListLocationsResponseTypeDef
 
@@ -392,13 +352,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import ListLocationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Locations`: `List["LocationListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `Locations`:
+  `List`\[[LocationListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#locationlistentrytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -406,13 +364,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `NextToken`: `str`
 
 ## ListTaskExecutionsResponseTypeDef
 
@@ -420,13 +376,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import ListTaskExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TaskExecutions`: `List["TaskExecutionListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `TaskExecutions`:
+  `List`\[[TaskExecutionListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskexecutionlistentrytypedef)\]
+- `NextToken`: `str`
 
 ## ListTasksResponseTypeDef
 
@@ -434,13 +388,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import ListTasksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tasks`: `List["TaskListEntryTypeDef"]`
-- `NextToken`: `str`
 
+- `Tasks`:
+  `List`\[[TaskListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#tasklistentrytypedef)\]
+- `NextToken`: `str`
 
 ## LocationFilterTypeDef
 
@@ -448,14 +400,13 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import LocationFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `LocationFilterName`
-- `Values`: `List[str]`
-- `Operator`: `Operator`
 
-
-
+- `Name`:
+  [LocationFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#locationfiltername)
+- `Values`: `List`\[`str`\]
+- `Operator`:
+  [Operator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#operator)
 
 ## LocationListEntryTypeDef
 
@@ -463,13 +414,10 @@ Required fields:
 from mypy_boto3_datasync.type_defs import LocationListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-
 
 ## NfsMountOptionsTypeDef
 
@@ -477,12 +425,10 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import NfsMountOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Version`: `NfsVersion`
 
+- `Version`:
+  [NfsVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#nfsversion)
 
 ## OnPremConfigTypeDef
 
@@ -490,12 +436,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import OnPremConfigTypeDef
 ```
 
-
 Required fields:
-- `AgentArns`: `List[str]`
 
-
-
+- `AgentArns`: `List`\[`str`\]
 
 ## OptionsTypeDef
 
@@ -503,24 +446,33 @@ Required fields:
 from mypy_boto3_datasync.type_defs import OptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VerifyMode`: `VerifyMode`
-- `OverwriteMode`: `OverwriteMode`
-- `Atime`: `Atime`
-- `Mtime`: `Mtime`
-- `Uid`: `Uid`
-- `Gid`: `Gid`
-- `PreserveDeletedFiles`: `PreserveDeletedFiles`
-- `PreserveDevices`: `PreserveDevices`
-- `PosixPermissions`: `PosixPermissions`
-- `BytesPerSecond`: `int`
-- `TaskQueueing`: `TaskQueueing`
-- `LogLevel`: `LogLevel`
-- `TransferMode`: `TransferMode`
 
+- `VerifyMode`:
+  [VerifyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#verifymode)
+- `OverwriteMode`:
+  [OverwriteMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#overwritemode)
+- `Atime`:
+  [Atime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#atime)
+- `Mtime`:
+  [Mtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#mtime)
+- `Uid`:
+  [Uid](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#uid)
+- `Gid`:
+  [Gid](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#gid)
+- `PreserveDeletedFiles`:
+  [PreserveDeletedFiles](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#preservedeletedfiles)
+- `PreserveDevices`:
+  [PreserveDevices](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#preservedevices)
+- `PosixPermissions`:
+  [PosixPermissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#posixpermissions)
+- `BytesPerSecond`: `int`
+- `TaskQueueing`:
+  [TaskQueueing](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskqueueing)
+- `LogLevel`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#loglevel)
+- `TransferMode`:
+  [TransferMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#transfermode)
 
 ## PaginatorConfigTypeDef
 
@@ -528,14 +480,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PrivateLinkConfigTypeDef
 
@@ -543,15 +492,12 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import PrivateLinkConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VpcEndpointId`: `str`
 - `PrivateLinkEndpoint`: `str`
-- `SubnetArns`: `List[str]`
-- `SecurityGroupArns`: `List[str]`
-
+- `SubnetArns`: `List`\[`str`\]
+- `SecurityGroupArns`: `List`\[`str`\]
 
 ## S3ConfigTypeDef
 
@@ -559,12 +505,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import S3ConfigTypeDef
 ```
 
-
 Required fields:
+
 - `BucketAccessRoleArn`: `str`
-
-
-
 
 ## SmbMountOptionsTypeDef
 
@@ -572,12 +515,10 @@ Required fields:
 from mypy_boto3_datasync.type_defs import SmbMountOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Version`: `SmbVersion`
 
+- `Version`:
+  [SmbVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#smbversion)
 
 ## StartTaskExecutionResponseTypeDef
 
@@ -585,12 +526,9 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import StartTaskExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TaskExecutionArn`: `str`
 
+- `TaskExecutionArn`: `str`
 
 ## TagListEntryTypeDef
 
@@ -598,15 +536,13 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import TagListEntryTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## TaskExecutionListEntryTypeDef
 
@@ -614,13 +550,11 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import TaskExecutionListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TaskExecutionArn`: `str`
-- `Status`: `TaskExecutionStatus`
 
+- `TaskExecutionArn`: `str`
+- `Status`:
+  [TaskExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskexecutionstatus)
 
 ## TaskExecutionResultDetailTypeDef
 
@@ -628,20 +562,20 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import TaskExecutionResultDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PrepareDuration`: `int`
-- `PrepareStatus`: `PhaseStatus`
+- `PrepareStatus`:
+  [PhaseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#phasestatus)
 - `TotalDuration`: `int`
 - `TransferDuration`: `int`
-- `TransferStatus`: `PhaseStatus`
+- `TransferStatus`:
+  [PhaseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#phasestatus)
 - `VerifyDuration`: `int`
-- `VerifyStatus`: `PhaseStatus`
+- `VerifyStatus`:
+  [PhaseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#phasestatus)
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
-
 
 ## TaskFilterTypeDef
 
@@ -649,14 +583,13 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import TaskFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `TaskFilterName`
-- `Values`: `List[str]`
-- `Operator`: `Operator`
 
-
-
+- `Name`:
+  [TaskFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskfiltername)
+- `Values`: `List`\[`str`\]
+- `Operator`:
+  [Operator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#operator)
 
 ## TaskListEntryTypeDef
 
@@ -664,14 +597,12 @@ Required fields:
 from mypy_boto3_datasync.type_defs import TaskListEntryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TaskArn`: `str`
-- `Status`: `TaskStatus`
-- `Name`: `str`
 
+- `TaskArn`: `str`
+- `Status`:
+  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#taskstatus)
+- `Name`: `str`
 
 ## TaskScheduleTypeDef
 
@@ -679,9 +610,6 @@ Optional fields:
 from mypy_boto3_datasync.type_defs import TaskScheduleTypeDef
 ```
 
-
 Required fields:
+
 - `ScheduleExpression`: `str`
-
-
-

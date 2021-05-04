@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AmplifyBackend
 
-Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
-type annotations stubs module [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+Auto-generated documentation for
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+type annotations stubs module
+[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 ```bash
 pip install mypy-boto3-amplifybackend
@@ -19,7 +21,8 @@ pip install mypy-boto3-amplifybackend
 
 ## AmplifyBackendClient
 
-Type annotations for  `boto3.client("amplifybackend")` as [AmplifyBackendClient](./client.md)
+Type annotations for `boto3.client("amplifybackend")` as
+[AmplifyBackendClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 ```
 
-
 AmplifyBackendClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [clone_backend](./client.md#clone-backend)
 - [create_backend](./client.md#create-backend)
@@ -61,24 +62,18 @@ AmplifyBackendClient [exceptions](./client.md#exceptions)
 - [update_backend_config](./client.md#update-backend-config)
 - [update_backend_job](./client.md#update-backend-job)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [GatewayTimeoutException](./client.md#gatewaytimeoutexception)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("amplifybackend").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("amplifybackend").get_paginator("...")`.
 
 Can be used directly:
 
@@ -87,11 +82,6 @@ from mypy_boto3_amplifybackend.paginators import ListBackendJobsPaginator, ...
 ```
 
 - [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -118,13 +108,10 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElement, ...
 - [SignInMethod](./literals.md#signinmethod)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

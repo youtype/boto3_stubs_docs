@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkFirewall](./README.md) > NetworkFirewallClient
 
-Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+Auto-generated documentation for
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+type annotations stubs module
+[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [NetworkFirewallClient for boto3 NetworkFirewall module](#networkfirewallclient-for-boto3-networkfirewall-module)
   - [NetworkFirewallClient](#networkfirewallclient)
@@ -55,12 +57,13 @@ def get_network-firewall_client() -> NetworkFirewallClient:
     return boto3.client("network-firewall")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
+Boto3 documentation:
+[NetworkFirewall.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_network_firewall.client import Exceptions
@@ -68,7 +71,6 @@ from mypy_boto3_network_firewall.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -86,528 +88,568 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### associate_firewall_policy
 
-Type annotations for `boto3.client("network-firewall").associate_firewall_policy` method.
+Type annotations for
+`boto3.client("network-firewall").associate_firewall_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.associate_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
 
-```python
-def associate_firewall_policy(
-    self,
-    FirewallPolicyArn: str,
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> AssociateFirewallPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallPolicyArn`: `str` *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[AssociateFirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#associatefirewallpolicyresponsetypedef).
 
 ### associate_subnets
 
-Type annotations for `boto3.client("network-firewall").associate_subnets` method.
+Type annotations for `boto3.client("network-firewall").associate_subnets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets]
+Boto3 documentation:
+[NetworkFirewall.Client.associate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets)
 
-```python
-def associate_subnets(
-    self,
-    SubnetMappings: List["SubnetMappingTypeDef"],
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> AssociateSubnetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubnetMappings`:
+  `List`\[[SubnetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#subnetmappingtypedef)\]
+  *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[AssociateSubnetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#associatesubnetsresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("network-firewall").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate]
+Boto3 documentation:
+[NetworkFirewall.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_firewall
 
 Type annotations for `boto3.client("network-firewall").create_firewall` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall]
+Boto3 documentation:
+[NetworkFirewall.Client.create_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall)
 
-```python
-def create_firewall(
-    self,
-    FirewallName: str,
-    FirewallPolicyArn: str,
-    VpcId: str,
-    SubnetMappings: List["SubnetMappingTypeDef"],
-    DeleteProtection: bool = None,
-    SubnetChangeProtection: bool = None,
-    FirewallPolicyChangeProtection: bool = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFirewallResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallName`: `str` *(required)*
+- `FirewallPolicyArn`: `str` *(required)*
+- `VpcId`: `str` *(required)*
+- `SubnetMappings`:
+  `List`\[[SubnetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#subnetmappingtypedef)\]
+  *(required)*
+- `DeleteProtection`: `bool`
+- `SubnetChangeProtection`: `bool`
+- `FirewallPolicyChangeProtection`: `bool`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFirewallResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#createfirewallresponsetypedef).
 
 ### create_firewall_policy
 
-Type annotations for `boto3.client("network-firewall").create_firewall_policy` method.
+Type annotations for `boto3.client("network-firewall").create_firewall_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.create_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy)
 
-```python
-def create_firewall_policy(
-    self,
-    FirewallPolicyName: str,
-    FirewallPolicy: "FirewallPolicyTypeDef",
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    DryRun: bool = None
-) -> CreateFirewallPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallPolicyName`: `str` *(required)*
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicytypedef)
+  *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CreateFirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#createfirewallpolicyresponsetypedef).
 
 ### create_rule_group
 
-Type annotations for `boto3.client("network-firewall").create_rule_group` method.
+Type annotations for `boto3.client("network-firewall").create_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group]
+Boto3 documentation:
+[NetworkFirewall.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group)
 
-```python
-def create_rule_group(
-    self,
-    RuleGroupName: str,
-    Type: RuleGroupType,
-    Capacity: int,
-    RuleGroup: "RuleGroupTypeDef" = None,
-    Rules: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None,
-    DryRun: bool = None
-) -> CreateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupName`: `str` *(required)*
+- `Type`:
+  [RuleGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#rulegrouptype)
+  *(required)*
+- `Capacity`: `int` *(required)*
+- `RuleGroup`:
+  [RuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegrouptypedef)
+- `Rules`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CreateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#createrulegroupresponsetypedef).
 
 ### delete_firewall
 
 Type annotations for `boto3.client("network-firewall").delete_firewall` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall]
+Boto3 documentation:
+[NetworkFirewall.Client.delete_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall)
 
-```python
-def delete_firewall(
-    self,
-    FirewallName: str = None,
-    FirewallArn: str = None
-) -> DeleteFirewallResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallName`: `str`
+- `FirewallArn`: `str`
+
+Returns
+[DeleteFirewallResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#deletefirewallresponsetypedef).
 
 ### delete_firewall_policy
 
-Type annotations for `boto3.client("network-firewall").delete_firewall_policy` method.
+Type annotations for `boto3.client("network-firewall").delete_firewall_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.delete_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
 
-```python
-def delete_firewall_policy(
-    self,
-    FirewallPolicyName: str = None,
-    FirewallPolicyArn: str = None
-) -> DeleteFirewallPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallPolicyName`: `str`
+- `FirewallPolicyArn`: `str`
+
+Returns
+[DeleteFirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#deletefirewallpolicyresponsetypedef).
 
 ### delete_resource_policy
 
-Type annotations for `boto3.client("network-firewall").delete_resource_policy` method.
+Type annotations for `boto3.client("network-firewall").delete_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy)
 
-```python
-def delete_resource_policy(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_rule_group
 
-Type annotations for `boto3.client("network-firewall").delete_rule_group` method.
+Type annotations for `boto3.client("network-firewall").delete_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group]
+Boto3 documentation:
+[NetworkFirewall.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)
 
-```python
-def delete_rule_group(
-    self,
-    RuleGroupName: str = None,
-    RuleGroupArn: str = None,
-    Type: RuleGroupType = None
-) -> DeleteRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`:
+  [RuleGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#rulegrouptype)
+
+Returns
+[DeleteRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#deleterulegroupresponsetypedef).
 
 ### describe_firewall
 
-Type annotations for `boto3.client("network-firewall").describe_firewall` method.
+Type annotations for `boto3.client("network-firewall").describe_firewall`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall]
+Boto3 documentation:
+[NetworkFirewall.Client.describe_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall)
 
-```python
-def describe_firewall(
-    self,
-    FirewallName: str = None,
-    FirewallArn: str = None
-) -> DescribeFirewallResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallName`: `str`
+- `FirewallArn`: `str`
+
+Returns
+[DescribeFirewallResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#describefirewallresponsetypedef).
 
 ### describe_firewall_policy
 
-Type annotations for `boto3.client("network-firewall").describe_firewall_policy` method.
+Type annotations for
+`boto3.client("network-firewall").describe_firewall_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.describe_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy)
 
-```python
-def describe_firewall_policy(
-    self,
-    FirewallPolicyName: str = None,
-    FirewallPolicyArn: str = None
-) -> DescribeFirewallPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallPolicyName`: `str`
+- `FirewallPolicyArn`: `str`
+
+Returns
+[DescribeFirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#describefirewallpolicyresponsetypedef).
 
 ### describe_logging_configuration
 
-Type annotations for `boto3.client("network-firewall").describe_logging_configuration` method.
+Type annotations for
+`boto3.client("network-firewall").describe_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration]
+Boto3 documentation:
+[NetworkFirewall.Client.describe_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration)
 
-```python
-def describe_logging_configuration(
-    self,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> DescribeLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[DescribeLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#describeloggingconfigurationresponsetypedef).
 
 ### describe_resource_policy
 
-Type annotations for `boto3.client("network-firewall").describe_resource_policy` method.
+Type annotations for
+`boto3.client("network-firewall").describe_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy)
 
-```python
-def describe_resource_policy(
-    self,
-    ResourceArn: str
-) -> DescribeResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[DescribeResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#describeresourcepolicyresponsetypedef).
 
 ### describe_rule_group
 
-Type annotations for `boto3.client("network-firewall").describe_rule_group` method.
+Type annotations for `boto3.client("network-firewall").describe_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group]
+Boto3 documentation:
+[NetworkFirewall.Client.describe_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group)
 
-```python
-def describe_rule_group(
-    self,
-    RuleGroupName: str = None,
-    RuleGroupArn: str = None,
-    Type: RuleGroupType = None
-) -> DescribeRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`:
+  [RuleGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#rulegrouptype)
+
+Returns
+[DescribeRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#describerulegroupresponsetypedef).
 
 ### disassociate_subnets
 
-Type annotations for `boto3.client("network-firewall").disassociate_subnets` method.
+Type annotations for `boto3.client("network-firewall").disassociate_subnets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets]
+Boto3 documentation:
+[NetworkFirewall.Client.disassociate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets)
 
-```python
-def disassociate_subnets(
-    self,
-    SubnetIds: List[str],
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> DisassociateSubnetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[DisassociateSubnetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#disassociatesubnetsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("network-firewall").generate_presigned_url` method.
+Type annotations for `boto3.client("network-firewall").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url]
+Boto3 documentation:
+[NetworkFirewall.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_firewall_policies
 
-Type annotations for `boto3.client("network-firewall").list_firewall_policies` method.
+Type annotations for `boto3.client("network-firewall").list_firewall_policies`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies]
+Boto3 documentation:
+[NetworkFirewall.Client.list_firewall_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies)
 
-```python
-def list_firewall_policies(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListFirewallPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFirewallPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listfirewallpoliciesresponsetypedef).
 
 ### list_firewalls
 
 Type annotations for `boto3.client("network-firewall").list_firewalls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls]
+Boto3 documentation:
+[NetworkFirewall.Client.list_firewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls)
 
-```python
-def list_firewalls(
-    self,
-    NextToken: str = None,
-    VpcIds: List[str] = None,
-    MaxResults: int = None
-) -> ListFirewallsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `VpcIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+
+Returns
+[ListFirewallsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listfirewallsresponsetypedef).
 
 ### list_rule_groups
 
-Type annotations for `boto3.client("network-firewall").list_rule_groups` method.
+Type annotations for `boto3.client("network-firewall").list_rule_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups]
+Boto3 documentation:
+[NetworkFirewall.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups)
 
-```python
-def list_rule_groups(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("network-firewall").list_tags_for_resource` method.
+Type annotations for `boto3.client("network-firewall").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource]
+Boto3 documentation:
+[NetworkFirewall.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_resource_policy
 
-Type annotations for `boto3.client("network-firewall").put_resource_policy` method.
+Type annotations for `boto3.client("network-firewall").put_resource_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
 
-```python
-def put_resource_policy(
-    self,
-    ResourceArn: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("network-firewall").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource]
+Boto3 documentation:
+[NetworkFirewall.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("network-firewall").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource]
+Boto3 documentation:
+[NetworkFirewall.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_firewall_delete_protection
 
-Type annotations for `boto3.client("network-firewall").update_firewall_delete_protection` method.
+Type annotations for
+`boto3.client("network-firewall").update_firewall_delete_protection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection]
+Boto3 documentation:
+[NetworkFirewall.Client.update_firewall_delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection)
 
-```python
-def update_firewall_delete_protection(
-    self,
-    DeleteProtection: bool,
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> UpdateFirewallDeleteProtectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeleteProtection`: `bool` *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[UpdateFirewallDeleteProtectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updatefirewalldeleteprotectionresponsetypedef).
 
 ### update_firewall_description
 
-Type annotations for `boto3.client("network-firewall").update_firewall_description` method.
+Type annotations for
+`boto3.client("network-firewall").update_firewall_description` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description]
+Boto3 documentation:
+[NetworkFirewall.Client.update_firewall_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description)
 
-```python
-def update_firewall_description(
-    self,
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None,
-    Description: str = None
-) -> UpdateFirewallDescriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+- `Description`: `str`
+
+Returns
+[UpdateFirewallDescriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updatefirewalldescriptionresponsetypedef).
 
 ### update_firewall_policy
 
-Type annotations for `boto3.client("network-firewall").update_firewall_policy` method.
+Type annotations for `boto3.client("network-firewall").update_firewall_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy]
+Boto3 documentation:
+[NetworkFirewall.Client.update_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy)
 
-```python
-def update_firewall_policy(
-    self,
-    UpdateToken: str,
-    FirewallPolicy: "FirewallPolicyTypeDef",
-    FirewallPolicyArn: str = None,
-    FirewallPolicyName: str = None,
-    Description: str = None,
-    DryRun: bool = None
-) -> UpdateFirewallPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UpdateToken`: `str` *(required)*
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicytypedef)
+  *(required)*
+- `FirewallPolicyArn`: `str`
+- `FirewallPolicyName`: `str`
+- `Description`: `str`
+- `DryRun`: `bool`
+
+Returns
+[UpdateFirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updatefirewallpolicyresponsetypedef).
 
 ### update_firewall_policy_change_protection
 
-Type annotations for `boto3.client("network-firewall").update_firewall_policy_change_protection` method.
+Type annotations for
+`boto3.client("network-firewall").update_firewall_policy_change_protection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection]
+Boto3 documentation:
+[NetworkFirewall.Client.update_firewall_policy_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection)
 
-```python
-def update_firewall_policy_change_protection(
-    self,
-    FirewallPolicyChangeProtection: bool,
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> UpdateFirewallPolicyChangeProtectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallPolicyChangeProtection`: `bool` *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+Returns
+[UpdateFirewallPolicyChangeProtectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updatefirewallpolicychangeprotectionresponsetypedef).
 
 ### update_logging_configuration
 
-Type annotations for `boto3.client("network-firewall").update_logging_configuration` method.
+Type annotations for
+`boto3.client("network-firewall").update_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration]
+Boto3 documentation:
+[NetworkFirewall.Client.update_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration)
 
-```python
-def update_logging_configuration(
-    self,
-    FirewallArn: str = None,
-    FirewallName: str = None,
-    LoggingConfiguration: "LoggingConfigurationTypeDef" = None
-) -> UpdateLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#loggingconfigurationtypedef)
+
+Returns
+[UpdateLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updateloggingconfigurationresponsetypedef).
 
 ### update_rule_group
 
-Type annotations for `boto3.client("network-firewall").update_rule_group` method.
+Type annotations for `boto3.client("network-firewall").update_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group]
+Boto3 documentation:
+[NetworkFirewall.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group)
 
-```python
-def update_rule_group(
-    self,
-    UpdateToken: str,
-    RuleGroupArn: str = None,
-    RuleGroupName: str = None,
-    RuleGroup: "RuleGroupTypeDef" = None,
-    Rules: str = None,
-    Type: RuleGroupType = None,
-    Description: str = None,
-    DryRun: bool = None
-) -> UpdateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UpdateToken`: `str` *(required)*
+- `RuleGroupArn`: `str`
+- `RuleGroupName`: `str`
+- `RuleGroup`:
+  [RuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegrouptypedef)
+- `Rules`: `str`
+- `Type`:
+  [RuleGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#rulegrouptype)
+- `Description`: `str`
+- `DryRun`: `bool`
+
+Returns
+[UpdateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updaterulegroupresponsetypedef).
 
 ### update_subnet_change_protection
 
-Type annotations for `boto3.client("network-firewall").update_subnet_change_protection` method.
+Type annotations for
+`boto3.client("network-firewall").update_subnet_change_protection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection]
+Boto3 documentation:
+[NetworkFirewall.Client.update_subnet_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection)
 
-```python
-def update_subnet_change_protection(
-    self,
-    SubnetChangeProtection: bool,
-    UpdateToken: str = None,
-    FirewallArn: str = None,
-    FirewallName: str = None
-) -> UpdateSubnetChangeProtectionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `SubnetChangeProtection`: `bool` *(required)*
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
 
+Returns
+[UpdateSubnetChangeProtectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#updatesubnetchangeprotectionresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("network-firewall").get_paginator` method with overloads.
+Type annotations for `boto3.client("network-firewall").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_firewall_policies")` -> [ListFirewallPoliciesPaginator](./paginators.md#listfirewallpoliciespaginator)
-- `client.get_paginator("list_firewalls")` -> [ListFirewallsPaginator](./paginators.md#listfirewallspaginator)
-- `client.get_paginator("list_rule_groups")` -> [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
+- `client.get_paginator("list_firewall_policies")` ->
+  [ListFirewallPoliciesPaginator](./paginators.md#listfirewallpoliciespaginator)
+- `client.get_paginator("list_firewalls")` ->
+  [ListFirewallsPaginator](./paginators.md#listfirewallspaginator)
+- `client.get_paginator("list_rule_groups")` ->
+  [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaStore](./README.md) > Structures
 
-Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
-type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+Auto-generated documentation for
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+type annotations stubs module
+[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [Typed dictionaries for boto3 MediaStore module](#typed-dictionaries-for-boto3-mediastore-module)
   - [ContainerTypeDef](#containertypedef)
@@ -28,17 +30,15 @@ type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/m
 from mypy_boto3_mediastore.type_defs import ContainerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Endpoint`: `str`
 - `CreationTime`: `datetime`
 - `ARN`: `str`
 - `Name`: `str`
-- `Status`: `ContainerStatus`
+- `Status`:
+  [ContainerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/literals.html#containerstatus)
 - `AccessLoggingEnabled`: `bool`
-
 
 ## CorsRuleTypeDef
 
@@ -46,18 +46,17 @@ Optional fields:
 from mypy_boto3_mediastore.type_defs import CorsRuleTypeDef
 ```
 
-
 Required fields:
-- `AllowedOrigins`: `List[str]`
-- `AllowedHeaders`: `List[str]`
 
-
+- `AllowedOrigins`: `List`\[`str`\]
+- `AllowedHeaders`: `List`\[`str`\]
 
 Optional fields:
-- `AllowedMethods`: `List[MethodName]`
-- `MaxAgeSeconds`: `int`
-- `ExposeHeaders`: `List[str]`
 
+- `AllowedMethods`:
+  `List`\[[MethodName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/literals.html#methodname)\]
+- `MaxAgeSeconds`: `int`
+- `ExposeHeaders`: `List`\[`str`\]
 
 ## CreateContainerOutputTypeDef
 
@@ -65,13 +64,12 @@ Optional fields:
 from mypy_boto3_mediastore.type_defs import CreateContainerOutputTypeDef
 ```
 
-
 Required fields:
-- `Container`: `"ContainerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Container`:
+  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#containertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## DescribeContainerOutputTypeDef
 
@@ -79,13 +77,12 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import DescribeContainerOutputTypeDef
 ```
 
-
 Required fields:
-- `Container`: `"ContainerTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Container`:
+  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#containertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## GetContainerPolicyOutputTypeDef
 
@@ -93,13 +90,11 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import GetContainerPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Policy`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## GetCorsPolicyOutputTypeDef
 
@@ -107,13 +102,12 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import GetCorsPolicyOutputTypeDef
 ```
 
-
 Required fields:
-- `CorsPolicy`: `List["CorsRuleTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `CorsPolicy`:
+  `List`\[[CorsRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#corsruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## GetLifecyclePolicyOutputTypeDef
 
@@ -121,13 +115,11 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import GetLifecyclePolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `LifecyclePolicy`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## GetMetricPolicyOutputTypeDef
 
@@ -135,13 +127,12 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import GetMetricPolicyOutputTypeDef
 ```
 
-
 Required fields:
-- `MetricPolicy`: `"MetricPolicyTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `MetricPolicy`:
+  [MetricPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#metricpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## ListContainersOutputTypeDef
 
@@ -149,14 +140,13 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import ListContainersOutputTypeDef
 ```
 
-
 Required fields:
-- `Containers`: `List["ContainerTypeDef"]`
+
+- `Containers`:
+  `List`\[[ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#containertypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -164,13 +154,12 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#responsemetadata)
 
 ## MetricPolicyRuleTypeDef
 
@@ -178,13 +167,10 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import MetricPolicyRuleTypeDef
 ```
 
-
 Required fields:
+
 - `ObjectGroup`: `str`
 - `ObjectGroupName`: `str`
-
-
-
 
 ## MetricPolicyTypeDef
 
@@ -192,15 +178,15 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import MetricPolicyTypeDef
 ```
 
-
 Required fields:
-- `ContainerLevelMetrics`: `ContainerLevelMetrics`
 
-
+- `ContainerLevelMetrics`:
+  [ContainerLevelMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/literals.html#containerlevelmetrics)
 
 Optional fields:
-- `MetricPolicyRules`: `List["MetricPolicyRuleTypeDef"]`
 
+- `MetricPolicyRules`:
+  `List`\[[MetricPolicyRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#metricpolicyruletypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -208,14 +194,11 @@ Optional fields:
 from mypy_boto3_mediastore.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ResponseMetadata
 
@@ -223,16 +206,13 @@ Optional fields:
 from mypy_boto3_mediastore.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## TagTypeDef
 
@@ -240,12 +220,10 @@ Required fields:
 from mypy_boto3_mediastore.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`

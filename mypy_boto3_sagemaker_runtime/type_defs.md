@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SageMakerRuntime](./README.md) > Structures
 
-Auto-generated documentation for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
-type annotations stubs module [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+Auto-generated documentation for
+[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+type annotations stubs module
+[mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
   - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
@@ -15,16 +17,14 @@ type annotations stubs module [mypy_boto3_sagemaker_runtime](https://pypi.org/pr
 from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
 ```
 
-
 Required fields:
-- `Body`: `Union[bytes, IO[bytes]]`
+
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ContentType`: `str`
 - `InvokedProductionVariant`: `str`
 - `CustomAttributes`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_runtime/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -32,13 +32,10 @@ Required fields:
 from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-

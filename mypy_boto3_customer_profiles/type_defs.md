@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CustomerProfiles](./README.md) > Structures
 
-Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
-type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+Auto-generated documentation for
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+type annotations stubs module
+[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Typed dictionaries for boto3 CustomerProfiles module](#typed-dictionaries-for-boto3-customerprofiles-module)
   - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
@@ -70,13 +72,10 @@ type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/pr
 from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyName`: `str`
-- `Values`: `List[str]`
 
+- `KeyName`: `str`
+- `Values`: `List`\[`str`\]
 
 ## AddressTypeDef
 
@@ -84,10 +83,8 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import AddressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address1`: `str`
 - `Address2`: `str`
 - `Address3`: `str`
@@ -99,23 +96,24 @@ Optional fields:
 - `Country`: `str`
 - `PostalCode`: `str`
 
-
 ## ConnectorOperatorTypeDef
 
 ```python
 from mypy_boto3_customer_profiles.type_defs import ConnectorOperatorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marketo`: `MarketoConnectorOperator`
-- `S3`: `S3ConnectorOperator`
-- `Salesforce`: `SalesforceConnectorOperator`
-- `ServiceNow`: `ServiceNowConnectorOperator`
-- `Zendesk`: `ZendeskConnectorOperator`
 
+- `Marketo`:
+  [MarketoConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#marketoconnectoroperator)
+- `S3`:
+  [S3ConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#s3connectoroperator)
+- `Salesforce`:
+  [SalesforceConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#salesforceconnectoroperator)
+- `ServiceNow`:
+  [ServiceNowConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#servicenowconnectoroperator)
+- `Zendesk`:
+  [ZendeskConnectorOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#zendeskconnectoroperator)
 
 ## CreateDomainResponseTypeDef
 
@@ -123,21 +121,20 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import CreateDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `DefaultExpirationDays`: `int`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
+
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
-- `Matching`: `"MatchingResponseTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `Matching`:
+  [MatchingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingresponsetypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateProfileResponseTypeDef
 
@@ -145,12 +142,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import CreateProfileResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ProfileId`: `str`
-
-
-
 
 ## DeleteDomainResponseTypeDef
 
@@ -158,12 +152,9 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Message`: `str`
-
-
-
 
 ## DeleteIntegrationResponseTypeDef
 
@@ -171,12 +162,9 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Message`: `str`
-
-
-
 
 ## DeleteProfileKeyResponseTypeDef
 
@@ -184,12 +172,9 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## DeleteProfileObjectResponseTypeDef
 
@@ -197,12 +182,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## DeleteProfileObjectTypeResponseTypeDef
 
@@ -210,12 +192,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Message`: `str`
-
-
-
 
 ## DeleteProfileResponseTypeDef
 
@@ -223,12 +202,9 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## DomainStatsTypeDef
 
@@ -236,15 +212,12 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import DomainStatsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProfileCount`: `int`
 - `MeteringProfileCount`: `int`
 - `ObjectCount`: `int`
 - `TotalSize`: `int`
-
 
 ## FieldSourceProfileIdsTypeDef
 
@@ -252,10 +225,8 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import FieldSourceProfileIdsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AccountNumber`: `str`
 - `AdditionalInformation`: `str`
 - `PartyType`: `str`
@@ -276,8 +247,7 @@ Optional fields:
 - `ShippingAddress`: `str`
 - `MailingAddress`: `str`
 - `BillingAddress`: `str`
-- `Attributes`: `Dict[str, str]`
-
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## FlowDefinitionTypeDef
 
@@ -285,19 +255,20 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import FlowDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `FlowName`: `str`
 - `KmsArn`: `str`
-- `SourceFlowConfig`: `"SourceFlowConfigTypeDef"`
-- `Tasks`: `List["TaskTypeDef"]`
-- `TriggerConfig`: `"TriggerConfigTypeDef"`
-
-
+- `SourceFlowConfig`:
+  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#sourceflowconfigtypedef)
+- `Tasks`:
+  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#tasktypedef)\]
+- `TriggerConfig`:
+  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#triggerconfigtypedef)
 
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## GetDomainResponseTypeDef
 
@@ -305,22 +276,22 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import GetDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
+
 - `DefaultExpirationDays`: `int`
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
-- `Stats`: `"DomainStatsTypeDef"`
-- `Matching`: `"MatchingResponseTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `Stats`:
+  [DomainStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#domainstatstypedef)
+- `Matching`:
+  [MatchingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingresponsetypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetIntegrationResponseTypeDef
 
@@ -328,19 +299,17 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import GetIntegrationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `Uri`: `str`
 - `ObjectTypeName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetMatchesResponseTypeDef
 
@@ -348,15 +317,13 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import GetMatchesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `MatchGenerationDate`: `datetime`
 - `PotentialMatches`: `int`
-- `Matches`: `List["MatchItemTypeDef"]`
-
+- `Matches`:
+  `List`\[[MatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchitemtypedef)\]
 
 ## GetProfileObjectTypeResponseTypeDef
 
@@ -364,24 +331,24 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ObjectTypeName`: `str`
 - `Description`: `str`
 
-
-
 Optional fields:
+
 - `TemplateId`: `str`
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
-- `Fields`: `Dict[str, "ObjectTypeFieldTypeDef"]`
-- `Keys`: `Dict[str, List["ObjectTypeKeyTypeDef"]]`
+- `Fields`: `Dict`\[`str`,
+  [ObjectTypeFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypefieldtypedef)\]
+- `Keys`: `Dict`\[`str`,
+  `List`\[[ObjectTypeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypekeytypedef)\]\]
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetProfileObjectTypeTemplateResponseTypeDef
 
@@ -389,17 +356,16 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TemplateId`: `str`
 - `SourceName`: `str`
 - `SourceObject`: `str`
 - `AllowProfileCreation`: `bool`
-- `Fields`: `Dict[str, "ObjectTypeFieldTypeDef"]`
-- `Keys`: `Dict[str, List["ObjectTypeKeyTypeDef"]]`
-
+- `Fields`: `Dict`\[`str`,
+  [ObjectTypeFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypefieldtypedef)\]
+- `Keys`: `Dict`\[`str`,
+  `List`\[[ObjectTypeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypekeytypedef)\]\]
 
 ## IncrementalPullConfigTypeDef
 
@@ -407,12 +373,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import IncrementalPullConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatetimeTypeFieldName`: `str`
 
+- `DatetimeTypeFieldName`: `str`
 
 ## ListAccountIntegrationsResponseTypeDef
 
@@ -420,13 +383,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListIntegrationItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListIntegrationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listintegrationitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListDomainItemTypeDef
 
@@ -434,17 +395,15 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListDomainItemTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListDomainsResponseTypeDef
 
@@ -452,13 +411,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListDomainItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListDomainItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listdomainitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListIntegrationItemTypeDef
 
@@ -466,19 +423,17 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListIntegrationItemTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `Uri`: `str`
 - `ObjectTypeName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListIntegrationsResponseTypeDef
 
@@ -486,13 +441,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListIntegrationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListIntegrationItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListIntegrationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listintegrationitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListProfileObjectTypeItemTypeDef
 
@@ -500,18 +453,16 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeItemTypeDef
 ```
 
-
 Required fields:
+
 - `ObjectTypeName`: `str`
 - `Description`: `str`
 
-
-
 Optional fields:
+
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListProfileObjectTypeTemplateItemTypeDef
 
@@ -519,14 +470,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplateItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TemplateId`: `str`
 - `SourceName`: `str`
 - `SourceObject`: `str`
-
 
 ## ListProfileObjectTypeTemplatesResponseTypeDef
 
@@ -534,13 +482,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListProfileObjectTypeTemplateItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListProfileObjectTypeTemplateItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypetemplateitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListProfileObjectTypesResponseTypeDef
 
@@ -548,13 +494,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListProfileObjectTypeItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListProfileObjectTypeItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypeitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListProfileObjectsItemTypeDef
 
@@ -562,14 +506,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ObjectTypeName`: `str`
 - `ProfileObjectUniqueKey`: `str`
 - `Object`: `str`
-
 
 ## ListProfileObjectsResponseTypeDef
 
@@ -577,13 +518,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ListProfileObjectsItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ListProfileObjectsItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjectsitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -591,12 +530,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## MarketoSourcePropertiesTypeDef
 
@@ -604,12 +540,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import MarketoSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `Object`: `str`
-
-
-
 
 ## MatchItemTypeDef
 
@@ -617,13 +550,10 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import MatchItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MatchId`: `str`
-- `ProfileIds`: `List[str]`
 
+- `MatchId`: `str`
+- `ProfileIds`: `List`\[`str`\]
 
 ## MatchingRequestTypeDef
 
@@ -631,12 +561,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import MatchingRequestTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
-
-
-
 
 ## MatchingResponseTypeDef
 
@@ -644,12 +571,9 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import MatchingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## MergeProfilesResponseTypeDef
 
@@ -657,12 +581,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import MergeProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## ObjectTypeFieldTypeDef
 
@@ -670,14 +591,12 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ObjectTypeFieldTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Source`: `str`
 - `Target`: `str`
-- `ContentType`: `FieldContentType`
-
+- `ContentType`:
+  [FieldContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#fieldcontenttype)
 
 ## ObjectTypeKeyTypeDef
 
@@ -685,13 +604,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ObjectTypeKeyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StandardIdentifiers`: `List[StandardIdentifier]`
-- `FieldNames`: `List[str]`
 
+- `StandardIdentifiers`:
+  `List`\[[StandardIdentifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#standardidentifier)\]
+- `FieldNames`: `List`\[`str`\]
 
 ## ProfileTypeDef
 
@@ -699,20 +616,20 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ProfileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProfileId`: `str`
 - `AccountNumber`: `str`
 - `AdditionalInformation`: `str`
-- `PartyType`: `PartyType`
+- `PartyType`:
+  [PartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#partytype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`: `Gender`
+- `Gender`:
+  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#gender)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -720,12 +637,15 @@ Optional fields:
 - `EmailAddress`: `str`
 - `PersonalEmailAddress`: `str`
 - `BusinessEmailAddress`: `str`
-- `Address`: `"AddressTypeDef"`
-- `ShippingAddress`: `"AddressTypeDef"`
-- `MailingAddress`: `"AddressTypeDef"`
-- `BillingAddress`: `"AddressTypeDef"`
-- `Attributes`: `Dict[str, str]`
-
+- `Address`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `ShippingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `MailingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `BillingAddress`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## PutIntegrationResponseTypeDef
 
@@ -733,19 +653,17 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import PutIntegrationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `Uri`: `str`
 - `ObjectTypeName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## PutProfileObjectResponseTypeDef
 
@@ -753,12 +671,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProfileObjectUniqueKey`: `str`
 
+- `ProfileObjectUniqueKey`: `str`
 
 ## PutProfileObjectTypeResponseTypeDef
 
@@ -766,24 +681,24 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ObjectTypeName`: `str`
 - `Description`: `str`
 
-
-
 Optional fields:
+
 - `TemplateId`: `str`
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
-- `Fields`: `Dict[str, "ObjectTypeFieldTypeDef"]`
-- `Keys`: `Dict[str, List["ObjectTypeKeyTypeDef"]]`
+- `Fields`: `Dict`\[`str`,
+  [ObjectTypeFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypefieldtypedef)\]
+- `Keys`: `Dict`\[`str`,
+  `List`\[[ObjectTypeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypekeytypedef)\]\]
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## S3SourcePropertiesTypeDef
 
@@ -791,15 +706,13 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import S3SourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `BucketName`: `str`
 
-
-
 Optional fields:
-- `BucketPrefix`: `str`
 
+- `BucketPrefix`: `str`
 
 ## SalesforceSourcePropertiesTypeDef
 
@@ -807,16 +720,14 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import SalesforceSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `Object`: `str`
 
-
-
 Optional fields:
+
 - `EnableDynamicFieldUpdate`: `bool`
 - `IncludeDeletedRecords`: `bool`
-
 
 ## ScheduledTriggerPropertiesTypeDef
 
@@ -824,20 +735,19 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ScheduledTriggerPropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `ScheduleExpression`: `str`
 
-
-
 Optional fields:
-- `DataPullMode`: `DataPullMode`
+
+- `DataPullMode`:
+  [DataPullMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#datapullmode)
 - `ScheduleStartTime`: `datetime`
 - `ScheduleEndTime`: `datetime`
 - `Timezone`: `str`
 - `ScheduleOffset`: `int`
 - `FirstExecutionFrom`: `datetime`
-
 
 ## SearchProfilesResponseTypeDef
 
@@ -845,13 +755,11 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ProfileTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#profiletypedef)\]
+- `NextToken`: `str`
 
 ## ServiceNowSourcePropertiesTypeDef
 
@@ -859,12 +767,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import ServiceNowSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `Object`: `str`
-
-
-
 
 ## SourceConnectorPropertiesTypeDef
 
@@ -872,16 +777,18 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import SourceConnectorPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marketo`: `"MarketoSourcePropertiesTypeDef"`
-- `S3`: `"S3SourcePropertiesTypeDef"`
-- `Salesforce`: `"SalesforceSourcePropertiesTypeDef"`
-- `ServiceNow`: `"ServiceNowSourcePropertiesTypeDef"`
-- `Zendesk`: `"ZendeskSourcePropertiesTypeDef"`
 
+- `Marketo`:
+  [MarketoSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#marketosourcepropertiestypedef)
+- `S3`:
+  [S3SourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#s3sourcepropertiestypedef)
+- `Salesforce`:
+  [SalesforceSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#salesforcesourcepropertiestypedef)
+- `ServiceNow`:
+  [ServiceNowSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#servicenowsourcepropertiestypedef)
+- `Zendesk`:
+  [ZendeskSourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#zendesksourcepropertiestypedef)
 
 ## SourceFlowConfigTypeDef
 
@@ -889,17 +796,18 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import SourceFlowConfigTypeDef
 ```
 
-
 Required fields:
-- `ConnectorType`: `SourceConnectorType`
-- `SourceConnectorProperties`: `"SourceConnectorPropertiesTypeDef"`
 
-
+- `ConnectorType`:
+  [SourceConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#sourceconnectortype)
+- `SourceConnectorProperties`:
+  [SourceConnectorPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#sourceconnectorpropertiestypedef)
 
 Optional fields:
-- `ConnectorProfileName`: `str`
-- `IncrementalPullConfig`: `"IncrementalPullConfigTypeDef"`
 
+- `ConnectorProfileName`: `str`
+- `IncrementalPullConfig`:
+  [IncrementalPullConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#incrementalpullconfigtypedef)
 
 ## TaskTypeDef
 
@@ -907,18 +815,20 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import TaskTypeDef
 ```
 
-
 Required fields:
-- `SourceFields`: `List[str]`
-- `TaskType`: `TaskType`
 
-
+- `SourceFields`: `List`\[`str`\]
+- `TaskType`:
+  [TaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#tasktype)
 
 Optional fields:
-- `ConnectorOperator`: `"ConnectorOperatorTypeDef"`
-- `DestinationField`: `str`
-- `TaskProperties`: `Dict[OperatorPropertiesKeys, str]`
 
+- `ConnectorOperator`:
+  [ConnectorOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#connectoroperatortypedef)
+- `DestinationField`: `str`
+- `TaskProperties`:
+  `Dict`\[[OperatorPropertiesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#operatorpropertieskeys),
+  `str`\]
 
 ## TriggerConfigTypeDef
 
@@ -926,15 +836,15 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import TriggerConfigTypeDef
 ```
 
-
 Required fields:
-- `TriggerType`: `TriggerType`
 
-
+- `TriggerType`:
+  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#triggertype)
 
 Optional fields:
-- `TriggerProperties`: `"TriggerPropertiesTypeDef"`
 
+- `TriggerProperties`:
+  [TriggerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#triggerpropertiestypedef)
 
 ## TriggerPropertiesTypeDef
 
@@ -942,12 +852,10 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import TriggerPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Scheduled`: `"ScheduledTriggerPropertiesTypeDef"`
 
+- `Scheduled`:
+  [ScheduledTriggerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#scheduledtriggerpropertiestypedef)
 
 ## UpdateAddressTypeDef
 
@@ -955,10 +863,8 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import UpdateAddressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address1`: `str`
 - `Address2`: `str`
 - `Address3`: `str`
@@ -970,28 +876,26 @@ Optional fields:
 - `Country`: `str`
 - `PostalCode`: `str`
 
-
 ## UpdateDomainResponseTypeDef
 
 ```python
 from mypy_boto3_customer_profiles.type_defs import UpdateDomainResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 
-
-
 Optional fields:
+
 - `DefaultExpirationDays`: `int`
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
-- `Matching`: `"MatchingResponseTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `Matching`:
+  [MatchingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingresponsetypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateProfileResponseTypeDef
 
@@ -999,12 +903,9 @@ Optional fields:
 from mypy_boto3_customer_profiles.type_defs import UpdateProfileResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ProfileId`: `str`
-
-
-
 
 ## ZendeskSourcePropertiesTypeDef
 
@@ -1012,9 +913,6 @@ Required fields:
 from mypy_boto3_customer_profiles.type_defs import ZendeskSourcePropertiesTypeDef
 ```
 
-
 Required fields:
+
 - `Object`: `str`
-
-
-

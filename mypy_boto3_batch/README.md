@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Batch
 
-Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+Auto-generated documentation for
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+type annotations stubs module
+[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
 ```bash
 pip install mypy-boto3-batch
@@ -19,7 +21,7 @@ pip install mypy-boto3-batch
 
 ## BatchClient
 
-Type annotations for  `boto3.client("batch")` as [BatchClient](./client.md)
+Type annotations for `boto3.client("batch")` as [BatchClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_batch.client import BatchClient
 ```
 
-
 BatchClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job](./client.md#cancel-job)
 - [create_compute_environment](./client.md#create-compute-environment)
@@ -56,22 +56,16 @@ BatchClient [exceptions](./client.md#exceptions)
 - [update_compute_environment](./client.md#update-compute-environment)
 - [update_job_queue](./client.md#update-job-queue)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ClientException](./client.md#clientexception)
 - [ServerException](./client.md#serverexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("batch").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("batch").get_paginator("...")`.
 
 Can be used directly:
 
@@ -83,11 +77,6 @@ from mypy_boto3_batch.paginators import DescribeComputeEnvironmentsPaginator, ..
 - [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
 - [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -122,13 +111,10 @@ from mypy_boto3_batch.literals import ArrayJobDependency, ...
 - [ResourceType](./literals.md#resourcetype)
 - [RetryAction](./literals.md#retryaction)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

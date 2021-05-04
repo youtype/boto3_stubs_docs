@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Route53ResolverClient
 
-Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+Auto-generated documentation for
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+type annotations stubs module
+[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Route53ResolverClient for boto3 Route53Resolver module](#route53resolverclient-for-boto3-route53resolver-module)
   - [Route53ResolverClient](#route53resolverclient)
@@ -86,12 +88,13 @@ def get_route53resolver_client() -> Route53ResolverClient:
     return boto3.client("route53resolver")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
+Boto3 documentation:
+[Route53Resolver.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_route53resolver.client import Exceptions
@@ -99,7 +102,6 @@ from mypy_boto3_route53resolver.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -121,999 +123,1113 @@ Exceptions:
 - `Exceptions.UnknownResourceException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_firewall_rule_group
 
-Type annotations for `boto3.client("route53resolver").associate_firewall_rule_group` method.
+Type annotations for
+`boto3.client("route53resolver").associate_firewall_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group]
+Boto3 documentation:
+[Route53Resolver.Client.associate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
 
-```python
-def associate_firewall_rule_group(
-    self,
-    CreatorRequestId: str,
-    FirewallRuleGroupId: str,
-    VpcId: str,
-    Priority: int,
-    Name: str,
-    MutationProtection: MutationProtectionStatus = None,
-    Tags: List["TagTypeDef"] = None
-) -> AssociateFirewallRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `FirewallRuleGroupId`: `str` *(required)*
+- `VpcId`: `str` *(required)*
+- `Priority`: `int` *(required)*
+- `Name`: `str` *(required)*
+- `MutationProtection`:
+  [MutationProtectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#mutationprotectionstatus)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[AssociateFirewallRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#associatefirewallrulegroupresponsetypedef).
 
 ### associate_resolver_endpoint_ip_address
 
-Type annotations for `boto3.client("route53resolver").associate_resolver_endpoint_ip_address` method.
+Type annotations for
+`boto3.client("route53resolver").associate_resolver_endpoint_ip_address`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address]
+Boto3 documentation:
+[Route53Resolver.Client.associate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
 
-```python
-def associate_resolver_endpoint_ip_address(
-    self,
-    ResolverEndpointId: str,
-    IpAddress: IpAddressUpdateTypeDef
-) -> AssociateResolverEndpointIpAddressResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+- `IpAddress`:
+  [IpAddressUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#ipaddressupdatetypedef)
+  *(required)*
+
+Returns
+[AssociateResolverEndpointIpAddressResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#associateresolverendpointipaddressresponsetypedef).
 
 ### associate_resolver_query_log_config
 
-Type annotations for `boto3.client("route53resolver").associate_resolver_query_log_config` method.
+Type annotations for
+`boto3.client("route53resolver").associate_resolver_query_log_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config]
+Boto3 documentation:
+[Route53Resolver.Client.associate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
 
-```python
-def associate_resolver_query_log_config(
-    self,
-    ResolverQueryLogConfigId: str,
-    ResourceId: str
-) -> AssociateResolverQueryLogConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverQueryLogConfigId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[AssociateResolverQueryLogConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#associateresolverquerylogconfigresponsetypedef).
 
 ### associate_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").associate_resolver_rule` method.
+Type annotations for `boto3.client("route53resolver").associate_resolver_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.associate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
 
-```python
-def associate_resolver_rule(
-    self,
-    ResolverRuleId: str,
-    VPCId: str,
-    Name: str = None
-) -> AssociateResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverRuleId`: `str` *(required)*
+- `VPCId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[AssociateResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#associateresolverruleresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("route53resolver").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate]
+Boto3 documentation:
+[Route53Resolver.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_firewall_domain_list
 
-Type annotations for `boto3.client("route53resolver").create_firewall_domain_list` method.
+Type annotations for
+`boto3.client("route53resolver").create_firewall_domain_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list]
+Boto3 documentation:
+[Route53Resolver.Client.create_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
 
-```python
-def create_firewall_domain_list(
-    self,
-    CreatorRequestId: str,
-    Name: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFirewallDomainListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFirewallDomainListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createfirewalldomainlistresponsetypedef).
 
 ### create_firewall_rule
 
-Type annotations for `boto3.client("route53resolver").create_firewall_rule` method.
+Type annotations for `boto3.client("route53resolver").create_firewall_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule]
+Boto3 documentation:
+[Route53Resolver.Client.create_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
 
-```python
-def create_firewall_rule(
-    self,
-    CreatorRequestId: str,
-    FirewallRuleGroupId: str,
-    FirewallDomainListId: str,
-    Priority: int,
-    Action: Action,
-    Name: str,
-    BlockResponse: BlockResponse = None,
-    BlockOverrideDomain: str = None,
-    BlockOverrideDnsType: Literal['CNAME'] = None,
-    BlockOverrideTtl: int = None
-) -> CreateFirewallRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `FirewallRuleGroupId`: `str` *(required)*
+- `FirewallDomainListId`: `str` *(required)*
+- `Priority`: `int` *(required)*
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#action)
+  *(required)*
+- `Name`: `str` *(required)*
+- `BlockResponse`:
+  [BlockResponse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#blockresponse)
+- `BlockOverrideDomain`: `str`
+- `BlockOverrideDnsType`: `Literal['CNAME']`
+- `BlockOverrideTtl`: `int`
+
+Returns
+[CreateFirewallRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createfirewallruleresponsetypedef).
 
 ### create_firewall_rule_group
 
-Type annotations for `boto3.client("route53resolver").create_firewall_rule_group` method.
+Type annotations for
+`boto3.client("route53resolver").create_firewall_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group]
+Boto3 documentation:
+[Route53Resolver.Client.create_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
 
-```python
-def create_firewall_rule_group(
-    self,
-    CreatorRequestId: str,
-    Name: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateFirewallRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateFirewallRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createfirewallrulegroupresponsetypedef).
 
 ### create_resolver_endpoint
 
-Type annotations for `boto3.client("route53resolver").create_resolver_endpoint` method.
+Type annotations for `boto3.client("route53resolver").create_resolver_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint]
+Boto3 documentation:
+[Route53Resolver.Client.create_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
 
-```python
-def create_resolver_endpoint(
-    self,
-    CreatorRequestId: str,
-    SecurityGroupIds: List[str],
-    Direction: ResolverEndpointDirection,
-    IpAddresses: List[IpAddressRequestTypeDef],
-    Name: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateResolverEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `SecurityGroupIds`: `List`\[`str`\] *(required)*
+- `Direction`:
+  [ResolverEndpointDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverendpointdirection)
+  *(required)*
+- `IpAddresses`:
+  `List`\[[IpAddressRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#ipaddressrequesttypedef)\]
+  *(required)*
+- `Name`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateResolverEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createresolverendpointresponsetypedef).
 
 ### create_resolver_query_log_config
 
-Type annotations for `boto3.client("route53resolver").create_resolver_query_log_config` method.
+Type annotations for
+`boto3.client("route53resolver").create_resolver_query_log_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config]
+Boto3 documentation:
+[Route53Resolver.Client.create_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
 
-```python
-def create_resolver_query_log_config(
-    self,
-    Name: str,
-    DestinationArn: str,
-    CreatorRequestId: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateResolverQueryLogConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DestinationArn`: `str` *(required)*
+- `CreatorRequestId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateResolverQueryLogConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createresolverquerylogconfigresponsetypedef).
 
 ### create_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").create_resolver_rule` method.
+Type annotations for `boto3.client("route53resolver").create_resolver_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.create_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
 
-```python
-def create_resolver_rule(
-    self,
-    CreatorRequestId: str,
-    RuleType: RuleTypeOption,
-    DomainName: str,
-    Name: str = None,
-    TargetIps: List["TargetAddressTypeDef"] = None,
-    ResolverEndpointId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreatorRequestId`: `str` *(required)*
+- `RuleType`:
+  [RuleTypeOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#ruletypeoption)
+  *(required)*
+- `DomainName`: `str` *(required)*
+- `Name`: `str`
+- `TargetIps`:
+  `List`\[[TargetAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#targetaddresstypedef)\]
+- `ResolverEndpointId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#createresolverruleresponsetypedef).
 
 ### delete_firewall_domain_list
 
-Type annotations for `boto3.client("route53resolver").delete_firewall_domain_list` method.
+Type annotations for
+`boto3.client("route53resolver").delete_firewall_domain_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list]
+Boto3 documentation:
+[Route53Resolver.Client.delete_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
 
-```python
-def delete_firewall_domain_list(
-    self,
-    FirewallDomainListId: str
-) -> DeleteFirewallDomainListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallDomainListId`: `str` *(required)*
+
+Returns
+[DeleteFirewallDomainListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deletefirewalldomainlistresponsetypedef).
 
 ### delete_firewall_rule
 
-Type annotations for `boto3.client("route53resolver").delete_firewall_rule` method.
+Type annotations for `boto3.client("route53resolver").delete_firewall_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule]
+Boto3 documentation:
+[Route53Resolver.Client.delete_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
 
-```python
-def delete_firewall_rule(
-    self,
-    FirewallRuleGroupId: str,
-    FirewallDomainListId: str
-) -> DeleteFirewallRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+- `FirewallDomainListId`: `str` *(required)*
+
+Returns
+[DeleteFirewallRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deletefirewallruleresponsetypedef).
 
 ### delete_firewall_rule_group
 
-Type annotations for `boto3.client("route53resolver").delete_firewall_rule_group` method.
+Type annotations for
+`boto3.client("route53resolver").delete_firewall_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group]
+Boto3 documentation:
+[Route53Resolver.Client.delete_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
 
-```python
-def delete_firewall_rule_group(
-    self,
-    FirewallRuleGroupId: str
-) -> DeleteFirewallRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+
+Returns
+[DeleteFirewallRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deletefirewallrulegroupresponsetypedef).
 
 ### delete_resolver_endpoint
 
-Type annotations for `boto3.client("route53resolver").delete_resolver_endpoint` method.
+Type annotations for `boto3.client("route53resolver").delete_resolver_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint]
+Boto3 documentation:
+[Route53Resolver.Client.delete_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
 
-```python
-def delete_resolver_endpoint(
-    self,
-    ResolverEndpointId: str
-) -> DeleteResolverEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+
+Returns
+[DeleteResolverEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deleteresolverendpointresponsetypedef).
 
 ### delete_resolver_query_log_config
 
-Type annotations for `boto3.client("route53resolver").delete_resolver_query_log_config` method.
+Type annotations for
+`boto3.client("route53resolver").delete_resolver_query_log_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config]
+Boto3 documentation:
+[Route53Resolver.Client.delete_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
 
-```python
-def delete_resolver_query_log_config(
-    self,
-    ResolverQueryLogConfigId: str
-) -> DeleteResolverQueryLogConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverQueryLogConfigId`: `str` *(required)*
+
+Returns
+[DeleteResolverQueryLogConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deleteresolverquerylogconfigresponsetypedef).
 
 ### delete_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").delete_resolver_rule` method.
+Type annotations for `boto3.client("route53resolver").delete_resolver_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.delete_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
 
-```python
-def delete_resolver_rule(
-    self,
-    ResolverRuleId: str
-) -> DeleteResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverRuleId`: `str` *(required)*
+
+Returns
+[DeleteResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#deleteresolverruleresponsetypedef).
 
 ### disassociate_firewall_rule_group
 
-Type annotations for `boto3.client("route53resolver").disassociate_firewall_rule_group` method.
+Type annotations for
+`boto3.client("route53resolver").disassociate_firewall_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group]
+Boto3 documentation:
+[Route53Resolver.Client.disassociate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
 
-```python
-def disassociate_firewall_rule_group(
-    self,
-    FirewallRuleGroupAssociationId: str
-) -> DisassociateFirewallRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupAssociationId`: `str` *(required)*
+
+Returns
+[DisassociateFirewallRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#disassociatefirewallrulegroupresponsetypedef).
 
 ### disassociate_resolver_endpoint_ip_address
 
-Type annotations for `boto3.client("route53resolver").disassociate_resolver_endpoint_ip_address` method.
+Type annotations for
+`boto3.client("route53resolver").disassociate_resolver_endpoint_ip_address`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address]
+Boto3 documentation:
+[Route53Resolver.Client.disassociate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
 
-```python
-def disassociate_resolver_endpoint_ip_address(
-    self,
-    ResolverEndpointId: str,
-    IpAddress: IpAddressUpdateTypeDef
-) -> DisassociateResolverEndpointIpAddressResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+- `IpAddress`:
+  [IpAddressUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#ipaddressupdatetypedef)
+  *(required)*
+
+Returns
+[DisassociateResolverEndpointIpAddressResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#disassociateresolverendpointipaddressresponsetypedef).
 
 ### disassociate_resolver_query_log_config
 
-Type annotations for `boto3.client("route53resolver").disassociate_resolver_query_log_config` method.
+Type annotations for
+`boto3.client("route53resolver").disassociate_resolver_query_log_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config]
+Boto3 documentation:
+[Route53Resolver.Client.disassociate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
 
-```python
-def disassociate_resolver_query_log_config(
-    self,
-    ResolverQueryLogConfigId: str,
-    ResourceId: str
-) -> DisassociateResolverQueryLogConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverQueryLogConfigId`: `str` *(required)*
+- `ResourceId`: `str` *(required)*
+
+Returns
+[DisassociateResolverQueryLogConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#disassociateresolverquerylogconfigresponsetypedef).
 
 ### disassociate_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").disassociate_resolver_rule` method.
+Type annotations for
+`boto3.client("route53resolver").disassociate_resolver_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.disassociate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
 
-```python
-def disassociate_resolver_rule(
-    self,
-    VPCId: str,
-    ResolverRuleId: str
-) -> DisassociateResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VPCId`: `str` *(required)*
+- `ResolverRuleId`: `str` *(required)*
+
+Returns
+[DisassociateResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#disassociateresolverruleresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("route53resolver").generate_presigned_url` method.
+Type annotations for `boto3.client("route53resolver").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url]
+Boto3 documentation:
+[Route53Resolver.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_firewall_config
 
-Type annotations for `boto3.client("route53resolver").get_firewall_config` method.
+Type annotations for `boto3.client("route53resolver").get_firewall_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config]
+Boto3 documentation:
+[Route53Resolver.Client.get_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
 
-```python
-def get_firewall_config(
-    self,
-    ResourceId: str
-) -> GetFirewallConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+
+Returns
+[GetFirewallConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getfirewallconfigresponsetypedef).
 
 ### get_firewall_domain_list
 
-Type annotations for `boto3.client("route53resolver").get_firewall_domain_list` method.
+Type annotations for `boto3.client("route53resolver").get_firewall_domain_list`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list]
+Boto3 documentation:
+[Route53Resolver.Client.get_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
 
-```python
-def get_firewall_domain_list(
-    self,
-    FirewallDomainListId: str
-) -> GetFirewallDomainListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallDomainListId`: `str` *(required)*
+
+Returns
+[GetFirewallDomainListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getfirewalldomainlistresponsetypedef).
 
 ### get_firewall_rule_group
 
-Type annotations for `boto3.client("route53resolver").get_firewall_rule_group` method.
+Type annotations for `boto3.client("route53resolver").get_firewall_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group]
+Boto3 documentation:
+[Route53Resolver.Client.get_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
 
-```python
-def get_firewall_rule_group(
-    self,
-    FirewallRuleGroupId: str
-) -> GetFirewallRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+
+Returns
+[GetFirewallRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getfirewallrulegroupresponsetypedef).
 
 ### get_firewall_rule_group_association
 
-Type annotations for `boto3.client("route53resolver").get_firewall_rule_group_association` method.
+Type annotations for
+`boto3.client("route53resolver").get_firewall_rule_group_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association]
+Boto3 documentation:
+[Route53Resolver.Client.get_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
 
-```python
-def get_firewall_rule_group_association(
-    self,
-    FirewallRuleGroupAssociationId: str
-) -> GetFirewallRuleGroupAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupAssociationId`: `str` *(required)*
+
+Returns
+[GetFirewallRuleGroupAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getfirewallrulegroupassociationresponsetypedef).
 
 ### get_firewall_rule_group_policy
 
-Type annotations for `boto3.client("route53resolver").get_firewall_rule_group_policy` method.
+Type annotations for
+`boto3.client("route53resolver").get_firewall_rule_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy]
+Boto3 documentation:
+[Route53Resolver.Client.get_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
 
-```python
-def get_firewall_rule_group_policy(
-    self,
-    Arn: str
-) -> GetFirewallRuleGroupPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[GetFirewallRuleGroupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getfirewallrulegrouppolicyresponsetypedef).
 
 ### get_resolver_dnssec_config
 
-Type annotations for `boto3.client("route53resolver").get_resolver_dnssec_config` method.
+Type annotations for
+`boto3.client("route53resolver").get_resolver_dnssec_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
 
-```python
-def get_resolver_dnssec_config(
-    self,
-    ResourceId: str
-) -> GetResolverDnssecConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+
+Returns
+[GetResolverDnssecConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverdnssecconfigresponsetypedef).
 
 ### get_resolver_endpoint
 
-Type annotations for `boto3.client("route53resolver").get_resolver_endpoint` method.
+Type annotations for `boto3.client("route53resolver").get_resolver_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
 
-```python
-def get_resolver_endpoint(
-    self,
-    ResolverEndpointId: str
-) -> GetResolverEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+
+Returns
+[GetResolverEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverendpointresponsetypedef).
 
 ### get_resolver_query_log_config
 
-Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config` method.
+Type annotations for
+`boto3.client("route53resolver").get_resolver_query_log_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
 
-```python
-def get_resolver_query_log_config(
-    self,
-    ResolverQueryLogConfigId: str
-) -> GetResolverQueryLogConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverQueryLogConfigId`: `str` *(required)*
+
+Returns
+[GetResolverQueryLogConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverquerylogconfigresponsetypedef).
 
 ### get_resolver_query_log_config_association
 
-Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config_association` method.
+Type annotations for
+`boto3.client("route53resolver").get_resolver_query_log_config_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_query_log_config_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
 
-```python
-def get_resolver_query_log_config_association(
-    self,
-    ResolverQueryLogConfigAssociationId: str
-) -> GetResolverQueryLogConfigAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverQueryLogConfigAssociationId`: `str` *(required)*
+
+Returns
+[GetResolverQueryLogConfigAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverquerylogconfigassociationresponsetypedef).
 
 ### get_resolver_query_log_config_policy
 
-Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
+Type annotations for
+`boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
 
-```python
-def get_resolver_query_log_config_policy(
-    self,
-    Arn: str
-) -> GetResolverQueryLogConfigPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[GetResolverQueryLogConfigPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverquerylogconfigpolicyresponsetypedef).
 
 ### get_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").get_resolver_rule` method.
+Type annotations for `boto3.client("route53resolver").get_resolver_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
 
-```python
-def get_resolver_rule(
-    self,
-    ResolverRuleId: str
-) -> GetResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverRuleId`: `str` *(required)*
+
+Returns
+[GetResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverruleresponsetypedef).
 
 ### get_resolver_rule_association
 
-Type annotations for `boto3.client("route53resolver").get_resolver_rule_association` method.
+Type annotations for
+`boto3.client("route53resolver").get_resolver_rule_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_rule_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
 
-```python
-def get_resolver_rule_association(
-    self,
-    ResolverRuleAssociationId: str
-) -> GetResolverRuleAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverRuleAssociationId`: `str` *(required)*
+
+Returns
+[GetResolverRuleAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverruleassociationresponsetypedef).
 
 ### get_resolver_rule_policy
 
-Type annotations for `boto3.client("route53resolver").get_resolver_rule_policy` method.
+Type annotations for `boto3.client("route53resolver").get_resolver_rule_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy]
+Boto3 documentation:
+[Route53Resolver.Client.get_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
 
-```python
-def get_resolver_rule_policy(
-    self,
-    Arn: str
-) -> GetResolverRulePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[GetResolverRulePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#getresolverrulepolicyresponsetypedef).
 
 ### import_firewall_domains
 
-Type annotations for `boto3.client("route53resolver").import_firewall_domains` method.
+Type annotations for `boto3.client("route53resolver").import_firewall_domains`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains]
+Boto3 documentation:
+[Route53Resolver.Client.import_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
 
-```python
-def import_firewall_domains(
-    self,
-    FirewallDomainListId: str,
-    Operation: Literal['REPLACE'],
-    DomainFileUrl: str
-) -> ImportFirewallDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallDomainListId`: `str` *(required)*
+- `Operation`: `Literal['REPLACE']` *(required)*
+- `DomainFileUrl`: `str` *(required)*
+
+Returns
+[ImportFirewallDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#importfirewalldomainsresponsetypedef).
 
 ### list_firewall_configs
 
-Type annotations for `boto3.client("route53resolver").list_firewall_configs` method.
+Type annotations for `boto3.client("route53resolver").list_firewall_configs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
 
-```python
-def list_firewall_configs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallconfigsresponsetypedef).
 
 ### list_firewall_domain_lists
 
-Type annotations for `boto3.client("route53resolver").list_firewall_domain_lists` method.
+Type annotations for
+`boto3.client("route53resolver").list_firewall_domain_lists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_domain_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
 
-```python
-def list_firewall_domain_lists(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallDomainListsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallDomainListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewalldomainlistsresponsetypedef).
 
 ### list_firewall_domains
 
-Type annotations for `boto3.client("route53resolver").list_firewall_domains` method.
+Type annotations for `boto3.client("route53resolver").list_firewall_domains`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
 
-```python
-def list_firewall_domains(
-    self,
-    FirewallDomainListId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallDomainListId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewalldomainsresponsetypedef).
 
 ### list_firewall_rule_group_associations
 
-Type annotations for `boto3.client("route53resolver").list_firewall_rule_group_associations` method.
+Type annotations for
+`boto3.client("route53resolver").list_firewall_rule_group_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_rule_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
 
-```python
-def list_firewall_rule_group_associations(
-    self,
-    FirewallRuleGroupId: str = None,
-    VpcId: str = None,
-    Priority: int = None,
-    Status: FirewallRuleGroupAssociationStatus = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallRuleGroupAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str`
+- `VpcId`: `str`
+- `Priority`: `int`
+- `Status`:
+  [FirewallRuleGroupAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallrulegroupassociationstatus)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallRuleGroupAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulegroupassociationsresponsetypedef).
 
 ### list_firewall_rule_groups
 
-Type annotations for `boto3.client("route53resolver").list_firewall_rule_groups` method.
+Type annotations for
+`boto3.client("route53resolver").list_firewall_rule_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
 
-```python
-def list_firewall_rule_groups(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulegroupsresponsetypedef).
 
 ### list_firewall_rules
 
-Type annotations for `boto3.client("route53resolver").list_firewall_rules` method.
+Type annotations for `boto3.client("route53resolver").list_firewall_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules]
+Boto3 documentation:
+[Route53Resolver.Client.list_firewall_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
 
-```python
-def list_firewall_rules(
-    self,
-    FirewallRuleGroupId: str,
-    Priority: int = None,
-    Action: Action = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFirewallRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+- `Priority`: `int`
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#action)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFirewallRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listfirewallrulesresponsetypedef).
 
 ### list_resolver_dnssec_configs
 
-Type annotations for `boto3.client("route53resolver").list_resolver_dnssec_configs` method.
+Type annotations for
+`boto3.client("route53resolver").list_resolver_dnssec_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_dnssec_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
 
-```python
-def list_resolver_dnssec_configs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListResolverDnssecConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+
+Returns
+[ListResolverDnssecConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverdnssecconfigsresponsetypedef).
 
 ### list_resolver_endpoint_ip_addresses
 
-Type annotations for `boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
+Type annotations for
+`boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_endpoint_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
 
-```python
-def list_resolver_endpoint_ip_addresses(
-    self,
-    ResolverEndpointId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListResolverEndpointIpAddressesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListResolverEndpointIpAddressesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverendpointipaddressesresponsetypedef).
 
 ### list_resolver_endpoints
 
-Type annotations for `boto3.client("route53resolver").list_resolver_endpoints` method.
+Type annotations for `boto3.client("route53resolver").list_resolver_endpoints`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
 
-```python
-def list_resolver_endpoints(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListResolverEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+
+Returns
+[ListResolverEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverendpointsresponsetypedef).
 
 ### list_resolver_query_log_config_associations
 
-Type annotations for `boto3.client("route53resolver").list_resolver_query_log_config_associations` method.
+Type annotations for
+`boto3.client("route53resolver").list_resolver_query_log_config_associations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_query_log_config_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
 
-```python
-def list_resolver_query_log_config_associations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None,
-    SortBy: str = None,
-    SortOrder: SortOrder = None
-) -> ListResolverQueryLogConfigAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sortorder)
+
+Returns
+[ListResolverQueryLogConfigAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverquerylogconfigassociationsresponsetypedef).
 
 ### list_resolver_query_log_configs
 
-Type annotations for `boto3.client("route53resolver").list_resolver_query_log_configs` method.
+Type annotations for
+`boto3.client("route53resolver").list_resolver_query_log_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_query_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
 
-```python
-def list_resolver_query_log_configs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None,
-    SortBy: str = None,
-    SortOrder: SortOrder = None
-) -> ListResolverQueryLogConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sortorder)
+
+Returns
+[ListResolverQueryLogConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverquerylogconfigsresponsetypedef).
 
 ### list_resolver_rule_associations
 
-Type annotations for `boto3.client("route53resolver").list_resolver_rule_associations` method.
+Type annotations for
+`boto3.client("route53resolver").list_resolver_rule_associations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_rule_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
 
-```python
-def list_resolver_rule_associations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListResolverRuleAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+
+Returns
+[ListResolverRuleAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverruleassociationsresponsetypedef).
 
 ### list_resolver_rules
 
-Type annotations for `boto3.client("route53resolver").list_resolver_rules` method.
+Type annotations for `boto3.client("route53resolver").list_resolver_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules]
+Boto3 documentation:
+[Route53Resolver.Client.list_resolver_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
 
-```python
-def list_resolver_rules(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListResolverRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#filtertypedef)\]
+
+Returns
+[ListResolverRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listresolverrulesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("route53resolver").list_tags_for_resource` method.
+Type annotations for `boto3.client("route53resolver").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource]
+Boto3 documentation:
+[Route53Resolver.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_firewall_rule_group_policy
 
-Type annotations for `boto3.client("route53resolver").put_firewall_rule_group_policy` method.
+Type annotations for
+`boto3.client("route53resolver").put_firewall_rule_group_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy]
+Boto3 documentation:
+[Route53Resolver.Client.put_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
 
-```python
-def put_firewall_rule_group_policy(
-    self,
-    Arn: str,
-    FirewallRuleGroupPolicy: str
-) -> PutFirewallRuleGroupPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `FirewallRuleGroupPolicy`: `str` *(required)*
+
+Returns
+[PutFirewallRuleGroupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#putfirewallrulegrouppolicyresponsetypedef).
 
 ### put_resolver_query_log_config_policy
 
-Type annotations for `boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
+Type annotations for
+`boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy]
+Boto3 documentation:
+[Route53Resolver.Client.put_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
 
-```python
-def put_resolver_query_log_config_policy(
-    self,
-    Arn: str,
-    ResolverQueryLogConfigPolicy: str
-) -> PutResolverQueryLogConfigPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `ResolverQueryLogConfigPolicy`: `str` *(required)*
+
+Returns
+[PutResolverQueryLogConfigPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#putresolverquerylogconfigpolicyresponsetypedef).
 
 ### put_resolver_rule_policy
 
-Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy` method.
+Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy]
+Boto3 documentation:
+[Route53Resolver.Client.put_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
 
-```python
-def put_resolver_rule_policy(
-    self,
-    Arn: str,
-    ResolverRulePolicy: str
-) -> PutResolverRulePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `ResolverRulePolicy`: `str` *(required)*
+
+Returns
+[PutResolverRulePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#putresolverrulepolicyresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("route53resolver").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource]
+Boto3 documentation:
+[Route53Resolver.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("route53resolver").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource]
+Boto3 documentation:
+[Route53Resolver.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_firewall_config
 
-Type annotations for `boto3.client("route53resolver").update_firewall_config` method.
+Type annotations for `boto3.client("route53resolver").update_firewall_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config]
+Boto3 documentation:
+[Route53Resolver.Client.update_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
 
-```python
-def update_firewall_config(
-    self,
-    ResourceId: str,
-    FirewallFailOpen: FirewallFailOpenStatus
-) -> UpdateFirewallConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `FirewallFailOpen`:
+  [FirewallFailOpenStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallfailopenstatus)
+  *(required)*
+
+Returns
+[UpdateFirewallConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updatefirewallconfigresponsetypedef).
 
 ### update_firewall_domains
 
-Type annotations for `boto3.client("route53resolver").update_firewall_domains` method.
+Type annotations for `boto3.client("route53resolver").update_firewall_domains`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains]
+Boto3 documentation:
+[Route53Resolver.Client.update_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
 
-```python
-def update_firewall_domains(
-    self,
-    FirewallDomainListId: str,
-    Operation: FirewallDomainUpdateOperation,
-    Domains: List[str]
-) -> UpdateFirewallDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallDomainListId`: `str` *(required)*
+- `Operation`:
+  [FirewallDomainUpdateOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewalldomainupdateoperation)
+  *(required)*
+- `Domains`: `List`\[`str`\] *(required)*
+
+Returns
+[UpdateFirewallDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updatefirewalldomainsresponsetypedef).
 
 ### update_firewall_rule
 
-Type annotations for `boto3.client("route53resolver").update_firewall_rule` method.
+Type annotations for `boto3.client("route53resolver").update_firewall_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule]
+Boto3 documentation:
+[Route53Resolver.Client.update_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
 
-```python
-def update_firewall_rule(
-    self,
-    FirewallRuleGroupId: str,
-    FirewallDomainListId: str,
-    Priority: int = None,
-    Action: Action = None,
-    BlockResponse: BlockResponse = None,
-    BlockOverrideDomain: str = None,
-    BlockOverrideDnsType: Literal['CNAME'] = None,
-    BlockOverrideTtl: int = None,
-    Name: str = None
-) -> UpdateFirewallRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupId`: `str` *(required)*
+- `FirewallDomainListId`: `str` *(required)*
+- `Priority`: `int`
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#action)
+- `BlockResponse`:
+  [BlockResponse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#blockresponse)
+- `BlockOverrideDomain`: `str`
+- `BlockOverrideDnsType`: `Literal['CNAME']`
+- `BlockOverrideTtl`: `int`
+- `Name`: `str`
+
+Returns
+[UpdateFirewallRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updatefirewallruleresponsetypedef).
 
 ### update_firewall_rule_group_association
 
-Type annotations for `boto3.client("route53resolver").update_firewall_rule_group_association` method.
+Type annotations for
+`boto3.client("route53resolver").update_firewall_rule_group_association`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association]
+Boto3 documentation:
+[Route53Resolver.Client.update_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
 
-```python
-def update_firewall_rule_group_association(
-    self,
-    FirewallRuleGroupAssociationId: str,
-    Priority: int = None,
-    MutationProtection: MutationProtectionStatus = None,
-    Name: str = None
-) -> UpdateFirewallRuleGroupAssociationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FirewallRuleGroupAssociationId`: `str` *(required)*
+- `Priority`: `int`
+- `MutationProtection`:
+  [MutationProtectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#mutationprotectionstatus)
+- `Name`: `str`
+
+Returns
+[UpdateFirewallRuleGroupAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updatefirewallrulegroupassociationresponsetypedef).
 
 ### update_resolver_dnssec_config
 
-Type annotations for `boto3.client("route53resolver").update_resolver_dnssec_config` method.
+Type annotations for
+`boto3.client("route53resolver").update_resolver_dnssec_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config]
+Boto3 documentation:
+[Route53Resolver.Client.update_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
 
-```python
-def update_resolver_dnssec_config(
-    self,
-    ResourceId: str,
-    Validation: Validation
-) -> UpdateResolverDnssecConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Validation`:
+  [Validation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#validation)
+  *(required)*
+
+Returns
+[UpdateResolverDnssecConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updateresolverdnssecconfigresponsetypedef).
 
 ### update_resolver_endpoint
 
-Type annotations for `boto3.client("route53resolver").update_resolver_endpoint` method.
+Type annotations for `boto3.client("route53resolver").update_resolver_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint]
+Boto3 documentation:
+[Route53Resolver.Client.update_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
 
-```python
-def update_resolver_endpoint(
-    self,
-    ResolverEndpointId: str,
-    Name: str = None
-) -> UpdateResolverEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResolverEndpointId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[UpdateResolverEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updateresolverendpointresponsetypedef).
 
 ### update_resolver_rule
 
-Type annotations for `boto3.client("route53resolver").update_resolver_rule` method.
+Type annotations for `boto3.client("route53resolver").update_resolver_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule]
+Boto3 documentation:
+[Route53Resolver.Client.update_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
 
-```python
-def update_resolver_rule(
-    self,
-    ResolverRuleId: str,
-    Config: ResolverRuleConfigTypeDef
-) -> UpdateResolverRuleResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ResolverRuleId`: `str` *(required)*
+- `Config`:
+  [ResolverRuleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruleconfigtypedef)
+  *(required)*
 
+Returns
+[UpdateResolverRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#updateresolverruleresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator` method with overloads.
+Type annotations for `boto3.client("route53resolver").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_firewall_configs")` -> [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
-- `client.get_paginator("list_firewall_domain_lists")` -> [ListFirewallDomainListsPaginator](./paginators.md#listfirewalldomainlistspaginator)
-- `client.get_paginator("list_firewall_domains")` -> [ListFirewallDomainsPaginator](./paginators.md#listfirewalldomainspaginator)
-- `client.get_paginator("list_firewall_rule_group_associations")` -> [ListFirewallRuleGroupAssociationsPaginator](./paginators.md#listfirewallrulegroupassociationspaginator)
-- `client.get_paginator("list_firewall_rule_groups")` -> [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
-- `client.get_paginator("list_firewall_rules")` -> [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
-- `client.get_paginator("list_resolver_dnssec_configs")` -> [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
-- `client.get_paginator("list_resolver_endpoint_ip_addresses")` -> [ListResolverEndpointIpAddressesPaginator](./paginators.md#listresolverendpointipaddressespaginator)
-- `client.get_paginator("list_resolver_endpoints")` -> [ListResolverEndpointsPaginator](./paginators.md#listresolverendpointspaginator)
-- `client.get_paginator("list_resolver_query_log_config_associations")` -> [ListResolverQueryLogConfigAssociationsPaginator](./paginators.md#listresolverquerylogconfigassociationspaginator)
-- `client.get_paginator("list_resolver_query_log_configs")` -> [ListResolverQueryLogConfigsPaginator](./paginators.md#listresolverquerylogconfigspaginator)
-- `client.get_paginator("list_resolver_rule_associations")` -> [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
-- `client.get_paginator("list_resolver_rules")` -> [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
+- `client.get_paginator("list_firewall_configs")` ->
+  [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
+- `client.get_paginator("list_firewall_domain_lists")` ->
+  [ListFirewallDomainListsPaginator](./paginators.md#listfirewalldomainlistspaginator)
+- `client.get_paginator("list_firewall_domains")` ->
+  [ListFirewallDomainsPaginator](./paginators.md#listfirewalldomainspaginator)
+- `client.get_paginator("list_firewall_rule_group_associations")` ->
+  [ListFirewallRuleGroupAssociationsPaginator](./paginators.md#listfirewallrulegroupassociationspaginator)
+- `client.get_paginator("list_firewall_rule_groups")` ->
+  [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
+- `client.get_paginator("list_firewall_rules")` ->
+  [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
+- `client.get_paginator("list_resolver_dnssec_configs")` ->
+  [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
+- `client.get_paginator("list_resolver_endpoint_ip_addresses")` ->
+  [ListResolverEndpointIpAddressesPaginator](./paginators.md#listresolverendpointipaddressespaginator)
+- `client.get_paginator("list_resolver_endpoints")` ->
+  [ListResolverEndpointsPaginator](./paginators.md#listresolverendpointspaginator)
+- `client.get_paginator("list_resolver_query_log_config_associations")` ->
+  [ListResolverQueryLogConfigAssociationsPaginator](./paginators.md#listresolverquerylogconfigassociationspaginator)
+- `client.get_paginator("list_resolver_query_log_configs")` ->
+  [ListResolverQueryLogConfigsPaginator](./paginators.md#listresolverquerylogconfigspaginator)
+- `client.get_paginator("list_resolver_rule_associations")` ->
+  [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
+- `client.get_paginator("list_resolver_rules")` ->
+  [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WAF
 
-Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
-type annotations stubs module [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
+Auto-generated documentation for
+[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+type annotations stubs module
+[mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ```bash
 pip install mypy-boto3-waf
@@ -19,7 +21,7 @@ pip install mypy-boto3-waf
 
 ## WAFClient
 
-Type annotations for  `boto3.client("waf")` as [WAFClient](./client.md)
+Type annotations for `boto3.client("waf")` as [WAFClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_waf.client import WAFClient
 ```
 
-
 WAFClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_byte_match_set](./client.md#create-byte-match-set)
 - [create_geo_match_set](./client.md#create-geo-match-set)
@@ -114,10 +114,8 @@ WAFClient [exceptions](./client.md#exceptions)
 - [update_web_acl](./client.md#update-web-acl)
 - [update_xss_match_set](./client.md#update-xss-match-set)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [WAFBadRequestException](./client.md#wafbadrequestexception)
 - [WAFDisallowedNameException](./client.md#wafdisallowednameexception)
@@ -139,14 +137,10 @@ WAFClient [exceptions](./client.md#exceptions)
 - [WAFTagOperationException](./client.md#waftagoperationexception)
 - [WAFTagOperationInternalErrorException](./client.md#waftagoperationinternalerrorexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("waf").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("waf").get_paginator("...")`.
 
 Can be used directly:
 
@@ -170,11 +164,6 @@ from mypy_boto3_waf.paginators import GetRateBasedRuleManagedKeysPaginator, ...
 - [ListSubscribedRuleGroupsPaginator](./paginators.md#listsubscribedrulegroupspaginator)
 - [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
 - [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -217,13 +206,10 @@ from mypy_boto3_waf.literals import ChangeAction, ...
 - [WafOverrideActionType](./literals.md#wafoverrideactiontype)
 - [WafRuleType](./literals.md#wafruletype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

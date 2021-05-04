@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Literals
 
-Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+Auto-generated documentation for
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+type annotations stubs module
+[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Literals for boto3 ElasticLoadBalancing module](#literals-for-boto3-elasticloadbalancing-module)
   - [AnyInstanceInServiceWaiterName](#anyinstanceinservicewaitername)

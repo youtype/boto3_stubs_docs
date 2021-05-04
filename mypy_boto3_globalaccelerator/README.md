@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > GlobalAccelerator
 
-Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+Auto-generated documentation for
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+type annotations stubs module
+[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ```bash
 pip install mypy-boto3-globalaccelerator
@@ -19,7 +21,8 @@ pip install mypy-boto3-globalaccelerator
 
 ## GlobalAcceleratorClient
 
-Type annotations for  `boto3.client("globalaccelerator")` as [GlobalAcceleratorClient](./client.md)
+Type annotations for `boto3.client("globalaccelerator")` as
+[GlobalAcceleratorClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 ```
 
-
 GlobalAcceleratorClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_custom_routing_endpoints](./client.md#add-custom-routing-endpoints)
 - [advertise_byoip_cidr](./client.md#advertise-byoip-cidr)
 - [allow_custom_routing_traffic](./client.md#allow-custom-routing-traffic)
@@ -84,10 +85,8 @@ GlobalAcceleratorClient [exceptions](./client.md#exceptions)
 - [update_listener](./client.md#update-listener)
 - [withdraw_byoip_cidr](./client.md#withdraw-byoip-cidr)
 
-
-
-
 ### Exceptions
+
 - [AcceleratorNotDisabledException](./client.md#acceleratornotdisabledexception)
 - [AcceleratorNotFoundException](./client.md#acceleratornotfoundexception)
 - [AccessDeniedException](./client.md#accessdeniedexception)
@@ -108,14 +107,10 @@ GlobalAcceleratorClient [exceptions](./client.md#exceptions)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ListenerNotFoundException](./client.md#listenernotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("globalaccelerator").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("globalaccelerator").get_paginator("...")`.
 
 Can be used directly:
 
@@ -131,11 +126,6 @@ from mypy_boto3_globalaccelerator.paginators import ListAcceleratorsPaginator, .
 - [ListCustomRoutingPortMappingsByDestinationPaginator](./paginators.md#listcustomroutingportmappingsbydestinationpaginator)
 - [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
 - [ListListenersPaginator](./paginators.md#listlistenerspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -166,13 +156,10 @@ from mypy_boto3_globalaccelerator.literals import AcceleratorStatus, ...
 - [ListListenersPaginatorName](./literals.md#listlistenerspaginatorname)
 - [ProtocolType](./literals.md#protocoltype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

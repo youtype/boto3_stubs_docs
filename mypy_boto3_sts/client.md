@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [STS](./README.md) > STSClient
 
-Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+Auto-generated documentation for
+[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+type annotations stubs module
+[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [STSClient for boto3 STS module](#stsclient-for-boto3-sts-module)
   - [STSClient](#stsclient)
@@ -33,12 +35,13 @@ def get_sts_client() -> STSClient:
     return boto3.client("sts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
+Boto3 documentation:
+[STS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sts.client import Exceptions
@@ -46,7 +49,6 @@ from mypy_boto3_sts.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -60,178 +62,175 @@ Exceptions:
 - `Exceptions.PackedPolicyTooLargeException`
 - `Exceptions.RegionDisabledException`
 
-
 ## Methods
-
 
 ### assume_role
 
 Type annotations for `boto3.client("sts").assume_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role]
+Boto3 documentation:
+[STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
 
-```python
-def assume_role(
-    self,
-    RoleArn: str,
-    RoleSessionName: str,
-    PolicyArns: List[PolicyDescriptorTypeTypeDef] = None,
-    Policy: str = None,
-    DurationSeconds: int = None,
-    Tags: List[TagTypeDef] = None,
-    TransitiveTagKeys: List[str] = None,
-    ExternalId: str = None,
-    SerialNumber: str = None,
-    TokenCode: str = None,
-    SourceIdentity: str = None
-) -> AssumeRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleArn`: `str` *(required)*
+- `RoleSessionName`: `str` *(required)*
+- `PolicyArns`:
+  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+- `Policy`: `str`
+- `DurationSeconds`: `int`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#tagtypedef)\]
+- `TransitiveTagKeys`: `List`\[`str`\]
+- `ExternalId`: `str`
+- `SerialNumber`: `str`
+- `TokenCode`: `str`
+- `SourceIdentity`: `str`
+
+Returns
+[AssumeRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumeroleresponsetypedef).
 
 ### assume_role_with_saml
 
 Type annotations for `boto3.client("sts").assume_role_with_saml` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml]
+Boto3 documentation:
+[STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
 
-```python
-def assume_role_with_saml(
-    self,
-    RoleArn: str,
-    PrincipalArn: str,
-    SAMLAssertion: str,
-    PolicyArns: List[PolicyDescriptorTypeTypeDef] = None,
-    Policy: str = None,
-    DurationSeconds: int = None
-) -> AssumeRoleWithSAMLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleArn`: `str` *(required)*
+- `PrincipalArn`: `str` *(required)*
+- `SAMLAssertion`: `str` *(required)*
+- `PolicyArns`:
+  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+- `Policy`: `str`
+- `DurationSeconds`: `int`
+
+Returns
+[AssumeRoleWithSAMLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumerolewithsamlresponsetypedef).
 
 ### assume_role_with_web_identity
 
-Type annotations for `boto3.client("sts").assume_role_with_web_identity` method.
+Type annotations for `boto3.client("sts").assume_role_with_web_identity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity]
+Boto3 documentation:
+[STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
 
-```python
-def assume_role_with_web_identity(
-    self,
-    RoleArn: str,
-    RoleSessionName: str,
-    WebIdentityToken: str,
-    ProviderId: str = None,
-    PolicyArns: List[PolicyDescriptorTypeTypeDef] = None,
-    Policy: str = None,
-    DurationSeconds: int = None
-) -> AssumeRoleWithWebIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RoleArn`: `str` *(required)*
+- `RoleSessionName`: `str` *(required)*
+- `WebIdentityToken`: `str` *(required)*
+- `ProviderId`: `str`
+- `PolicyArns`:
+  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+- `Policy`: `str`
+- `DurationSeconds`: `int`
+
+Returns
+[AssumeRoleWithWebIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumerolewithwebidentityresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("sts").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate]
+Boto3 documentation:
+[STS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### decode_authorization_message
 
 Type annotations for `boto3.client("sts").decode_authorization_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message]
+Boto3 documentation:
+[STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
 
-```python
-def decode_authorization_message(
-    self,
-    EncodedMessage: str
-) -> DecodeAuthorizationMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EncodedMessage`: `str` *(required)*
+
+Returns
+[DecodeAuthorizationMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#decodeauthorizationmessageresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sts").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url]
+Boto3 documentation:
+[STS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_access_key_info
 
 Type annotations for `boto3.client("sts").get_access_key_info` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info]
+Boto3 documentation:
+[STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
 
-```python
-def get_access_key_info(
-    self,
-    AccessKeyId: str
-) -> GetAccessKeyInfoResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccessKeyId`: `str` *(required)*
+
+Returns
+[GetAccessKeyInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getaccesskeyinforesponsetypedef).
 
 ### get_caller_identity
 
 Type annotations for `boto3.client("sts").get_caller_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity]
+Boto3 documentation:
+[STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
-```python
-def get_caller_identity(
-    self
-) -> GetCallerIdentityResponseTypeDef:
-    pass
-```
+Returns
+[GetCallerIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getcalleridentityresponsetypedef).
 
 ### get_federation_token
 
 Type annotations for `boto3.client("sts").get_federation_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token]
+Boto3 documentation:
+[STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
 
-```python
-def get_federation_token(
-    self,
-    Name: str,
-    Policy: str = None,
-    PolicyArns: List[PolicyDescriptorTypeTypeDef] = None,
-    DurationSeconds: int = None,
-    Tags: List[TagTypeDef] = None
-) -> GetFederationTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Policy`: `str`
+- `PolicyArns`:
+  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+- `DurationSeconds`: `int`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#tagtypedef)\]
+
+Returns
+[GetFederationTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getfederationtokenresponsetypedef).
 
 ### get_session_token
 
 Type annotations for `boto3.client("sts").get_session_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token]
+Boto3 documentation:
+[STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
 
-```python
-def get_session_token(
-    self,
-    DurationSeconds: int = None,
-    SerialNumber: str = None,
-    TokenCode: str = None
-) -> GetSessionTokenResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `DurationSeconds`: `int`
+- `SerialNumber`: `str`
+- `TokenCode`: `str`
 
-
+Returns
+[GetSessionTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getsessiontokenresponsetypedef).

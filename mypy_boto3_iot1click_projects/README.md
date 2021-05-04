@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoT1ClickProjects
 
-Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+Auto-generated documentation for
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+type annotations stubs module
+[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 ```bash
 pip install mypy-boto3-iot1click-projects
@@ -19,7 +21,8 @@ pip install mypy-boto3-iot1click-projects
 
 ## IoT1ClickProjectsClient
 
-Type annotations for  `boto3.client("iot1click-projects")` as [IoT1ClickProjectsClient](./client.md)
+Type annotations for `boto3.client("iot1click-projects")` as
+[IoT1ClickProjectsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
 ```
 
-
 IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_device_with_placement](./client.md#associate-device-with-placement)
 - [can_paginate](./client.md#can-paginate)
 - [create_placement](./client.md#create-placement)
@@ -53,10 +54,8 @@ IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
 - [update_placement](./client.md#update-placement)
 - [update_project](./client.md#update-project)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -64,14 +63,10 @@ IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iot1click-projects").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iot1click-projects").get_paginator("...")`.
 
 Can be used directly:
 
@@ -81,11 +76,6 @@ from mypy_boto3_iot1click_projects.paginators import ListPlacementsPaginator, ..
 
 - [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -100,13 +90,10 @@ from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, 
 - [ListPlacementsPaginatorName](./literals.md#listplacementspaginatorname)
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

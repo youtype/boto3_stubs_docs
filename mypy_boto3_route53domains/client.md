@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Route53DomainsClient
 
-Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+Auto-generated documentation for
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+type annotations stubs module
+[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Route53DomainsClient for boto3 Route53Domains module](#route53domainsclient-for-boto3-route53domains-module)
   - [Route53DomainsClient](#route53domainsclient)
@@ -54,12 +56,13 @@ def get_route53domains_client() -> Route53DomainsClient:
     return boto3.client("route53domains")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client)
+Boto3 documentation:
+[Route53Domains.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_route53domains.client import Exceptions
@@ -67,7 +70,6 @@ from mypy_boto3_route53domains.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -79,485 +81,521 @@ Exceptions:
 - `Exceptions.TLDRulesViolation`
 - `Exceptions.UnsupportedTLD`
 
-
 ## Methods
-
 
 ### accept_domain_transfer_from_another_aws_account
 
-Type annotations for `boto3.client("route53domains").accept_domain_transfer_from_another_aws_account` method.
+Type annotations for
+`boto3.client("route53domains").accept_domain_transfer_from_another_aws_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account]
+Boto3 documentation:
+[Route53Domains.Client.accept_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account)
 
-```python
-def accept_domain_transfer_from_another_aws_account(
-    self,
-    DomainName: str,
-    Password: str
-) -> AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Password`: `str` *(required)*
+
+Returns
+[AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#acceptdomaintransferfromanotherawsaccountresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("route53domains").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.can_paginate]
+Boto3 documentation:
+[Route53Domains.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_domain_transfer_to_another_aws_account
 
-Type annotations for `boto3.client("route53domains").cancel_domain_transfer_to_another_aws_account` method.
+Type annotations for
+`boto3.client("route53domains").cancel_domain_transfer_to_another_aws_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account]
+Boto3 documentation:
+[Route53Domains.Client.cancel_domain_transfer_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account)
 
-```python
-def cancel_domain_transfer_to_another_aws_account(
-    self,
-    DomainName: str
-) -> CancelDomainTransferToAnotherAwsAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[CancelDomainTransferToAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#canceldomaintransfertoanotherawsaccountresponsetypedef).
 
 ### check_domain_availability
 
-Type annotations for `boto3.client("route53domains").check_domain_availability` method.
+Type annotations for `boto3.client("route53domains").check_domain_availability`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability]
+Boto3 documentation:
+[Route53Domains.Client.check_domain_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability)
 
-```python
-def check_domain_availability(
-    self,
-    DomainName: str,
-    IdnLangCode: str = None
-) -> CheckDomainAvailabilityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `IdnLangCode`: `str`
+
+Returns
+[CheckDomainAvailabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#checkdomainavailabilityresponsetypedef).
 
 ### check_domain_transferability
 
-Type annotations for `boto3.client("route53domains").check_domain_transferability` method.
+Type annotations for
+`boto3.client("route53domains").check_domain_transferability` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability]
+Boto3 documentation:
+[Route53Domains.Client.check_domain_transferability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability)
 
-```python
-def check_domain_transferability(
-    self,
-    DomainName: str,
-    AuthCode: str = None
-) -> CheckDomainTransferabilityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AuthCode`: `str`
+
+Returns
+[CheckDomainTransferabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#checkdomaintransferabilityresponsetypedef).
 
 ### delete_tags_for_domain
 
-Type annotations for `boto3.client("route53domains").delete_tags_for_domain` method.
+Type annotations for `boto3.client("route53domains").delete_tags_for_domain`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain]
+Boto3 documentation:
+[Route53Domains.Client.delete_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain)
 
-```python
-def delete_tags_for_domain(
-    self,
-    DomainName: str,
-    TagsToDelete: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `TagsToDelete`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_domain_auto_renew
 
-Type annotations for `boto3.client("route53domains").disable_domain_auto_renew` method.
+Type annotations for `boto3.client("route53domains").disable_domain_auto_renew`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew]
+Boto3 documentation:
+[Route53Domains.Client.disable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew)
 
-```python
-def disable_domain_auto_renew(
-    self,
-    DomainName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_domain_transfer_lock
 
-Type annotations for `boto3.client("route53domains").disable_domain_transfer_lock` method.
+Type annotations for
+`boto3.client("route53domains").disable_domain_transfer_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock]
+Boto3 documentation:
+[Route53Domains.Client.disable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock)
 
-```python
-def disable_domain_transfer_lock(
-    self,
-    DomainName: str
-) -> DisableDomainTransferLockResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DisableDomainTransferLockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#disabledomaintransferlockresponsetypedef).
 
 ### enable_domain_auto_renew
 
-Type annotations for `boto3.client("route53domains").enable_domain_auto_renew` method.
+Type annotations for `boto3.client("route53domains").enable_domain_auto_renew`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew]
+Boto3 documentation:
+[Route53Domains.Client.enable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew)
 
-```python
-def enable_domain_auto_renew(
-    self,
-    DomainName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_domain_transfer_lock
 
-Type annotations for `boto3.client("route53domains").enable_domain_transfer_lock` method.
+Type annotations for
+`boto3.client("route53domains").enable_domain_transfer_lock` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock]
+Boto3 documentation:
+[Route53Domains.Client.enable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock)
 
-```python
-def enable_domain_transfer_lock(
-    self,
-    DomainName: str
-) -> EnableDomainTransferLockResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[EnableDomainTransferLockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#enabledomaintransferlockresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("route53domains").generate_presigned_url` method.
+Type annotations for `boto3.client("route53domains").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.generate_presigned_url]
+Boto3 documentation:
+[Route53Domains.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_contact_reachability_status
 
-Type annotations for `boto3.client("route53domains").get_contact_reachability_status` method.
+Type annotations for
+`boto3.client("route53domains").get_contact_reachability_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status]
+Boto3 documentation:
+[Route53Domains.Client.get_contact_reachability_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status)
 
-```python
-def get_contact_reachability_status(
-    self,
-    domainName: str = None
-) -> GetContactReachabilityStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str`
+
+Returns
+[GetContactReachabilityStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getcontactreachabilitystatusresponsetypedef).
 
 ### get_domain_detail
 
 Type annotations for `boto3.client("route53domains").get_domain_detail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail]
+Boto3 documentation:
+[Route53Domains.Client.get_domain_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail)
 
-```python
-def get_domain_detail(
-    self,
-    DomainName: str
-) -> GetDomainDetailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[GetDomainDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getdomaindetailresponsetypedef).
 
 ### get_domain_suggestions
 
-Type annotations for `boto3.client("route53domains").get_domain_suggestions` method.
+Type annotations for `boto3.client("route53domains").get_domain_suggestions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions]
+Boto3 documentation:
+[Route53Domains.Client.get_domain_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions)
 
-```python
-def get_domain_suggestions(
-    self,
-    DomainName: str,
-    SuggestionCount: int,
-    OnlyAvailable: bool
-) -> GetDomainSuggestionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `SuggestionCount`: `int` *(required)*
+- `OnlyAvailable`: `bool` *(required)*
+
+Returns
+[GetDomainSuggestionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getdomainsuggestionsresponsetypedef).
 
 ### get_operation_detail
 
-Type annotations for `boto3.client("route53domains").get_operation_detail` method.
+Type annotations for `boto3.client("route53domains").get_operation_detail`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail]
+Boto3 documentation:
+[Route53Domains.Client.get_operation_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail)
 
-```python
-def get_operation_detail(
-    self,
-    OperationId: str
-) -> GetOperationDetailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OperationId`: `str` *(required)*
+
+Returns
+[GetOperationDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getoperationdetailresponsetypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("route53domains").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains]
+Boto3 documentation:
+[Route53Domains.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListDomainsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listdomainsresponsetypedef).
 
 ### list_operations
 
 Type annotations for `boto3.client("route53domains").list_operations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations]
+Boto3 documentation:
+[Route53Domains.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations)
 
-```python
-def list_operations(
-    self,
-    SubmittedSince: datetime = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListOperationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubmittedSince`: `datetime`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listoperationsresponsetypedef).
 
 ### list_tags_for_domain
 
-Type annotations for `boto3.client("route53domains").list_tags_for_domain` method.
+Type annotations for `boto3.client("route53domains").list_tags_for_domain`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain]
+Boto3 documentation:
+[Route53Domains.Client.list_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain)
 
-```python
-def list_tags_for_domain(
-    self,
-    DomainName: str
-) -> ListTagsForDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[ListTagsForDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listtagsfordomainresponsetypedef).
 
 ### register_domain
 
 Type annotations for `boto3.client("route53domains").register_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain]
+Boto3 documentation:
+[Route53Domains.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain)
 
-```python
-def register_domain(
-    self,
-    DomainName: str,
-    DurationInYears: int,
-    AdminContact: "ContactDetailTypeDef",
-    RegistrantContact: "ContactDetailTypeDef",
-    TechContact: "ContactDetailTypeDef",
-    IdnLangCode: str = None,
-    AutoRenew: bool = None,
-    PrivacyProtectAdminContact: bool = None,
-    PrivacyProtectRegistrantContact: bool = None,
-    PrivacyProtectTechContact: bool = None
-) -> RegisterDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `DurationInYears`: `int` *(required)*
+- `AdminContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `RegistrantContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `TechContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `IdnLangCode`: `str`
+- `AutoRenew`: `bool`
+- `PrivacyProtectAdminContact`: `bool`
+- `PrivacyProtectRegistrantContact`: `bool`
+- `PrivacyProtectTechContact`: `bool`
+
+Returns
+[RegisterDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#registerdomainresponsetypedef).
 
 ### reject_domain_transfer_from_another_aws_account
 
-Type annotations for `boto3.client("route53domains").reject_domain_transfer_from_another_aws_account` method.
+Type annotations for
+`boto3.client("route53domains").reject_domain_transfer_from_another_aws_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account]
+Boto3 documentation:
+[Route53Domains.Client.reject_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account)
 
-```python
-def reject_domain_transfer_from_another_aws_account(
-    self,
-    DomainName: str
-) -> RejectDomainTransferFromAnotherAwsAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#rejectdomaintransferfromanotherawsaccountresponsetypedef).
 
 ### renew_domain
 
 Type annotations for `boto3.client("route53domains").renew_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain]
+Boto3 documentation:
+[Route53Domains.Client.renew_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain)
 
-```python
-def renew_domain(
-    self,
-    DomainName: str,
-    CurrentExpiryYear: int,
-    DurationInYears: int = None
-) -> RenewDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `CurrentExpiryYear`: `int` *(required)*
+- `DurationInYears`: `int`
+
+Returns
+[RenewDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#renewdomainresponsetypedef).
 
 ### resend_contact_reachability_email
 
-Type annotations for `boto3.client("route53domains").resend_contact_reachability_email` method.
+Type annotations for
+`boto3.client("route53domains").resend_contact_reachability_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email]
+Boto3 documentation:
+[Route53Domains.Client.resend_contact_reachability_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email)
 
-```python
-def resend_contact_reachability_email(
-    self,
-    domainName: str = None
-) -> ResendContactReachabilityEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str`
+
+Returns
+[ResendContactReachabilityEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#resendcontactreachabilityemailresponsetypedef).
 
 ### retrieve_domain_auth_code
 
-Type annotations for `boto3.client("route53domains").retrieve_domain_auth_code` method.
+Type annotations for `boto3.client("route53domains").retrieve_domain_auth_code`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code]
+Boto3 documentation:
+[Route53Domains.Client.retrieve_domain_auth_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code)
 
-```python
-def retrieve_domain_auth_code(
-    self,
-    DomainName: str
-) -> RetrieveDomainAuthCodeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[RetrieveDomainAuthCodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#retrievedomainauthcoderesponsetypedef).
 
 ### transfer_domain
 
 Type annotations for `boto3.client("route53domains").transfer_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain]
+Boto3 documentation:
+[Route53Domains.Client.transfer_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain)
 
-```python
-def transfer_domain(
-    self,
-    DomainName: str,
-    DurationInYears: int,
-    AdminContact: "ContactDetailTypeDef",
-    RegistrantContact: "ContactDetailTypeDef",
-    TechContact: "ContactDetailTypeDef",
-    IdnLangCode: str = None,
-    Nameservers: List["NameserverTypeDef"] = None,
-    AuthCode: str = None,
-    AutoRenew: bool = None,
-    PrivacyProtectAdminContact: bool = None,
-    PrivacyProtectRegistrantContact: bool = None,
-    PrivacyProtectTechContact: bool = None
-) -> TransferDomainResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `DurationInYears`: `int` *(required)*
+- `AdminContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `RegistrantContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `TechContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  *(required)*
+- `IdnLangCode`: `str`
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#nameservertypedef)\]
+- `AuthCode`: `str`
+- `AutoRenew`: `bool`
+- `PrivacyProtectAdminContact`: `bool`
+- `PrivacyProtectRegistrantContact`: `bool`
+- `PrivacyProtectTechContact`: `bool`
+
+Returns
+[TransferDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#transferdomainresponsetypedef).
 
 ### transfer_domain_to_another_aws_account
 
-Type annotations for `boto3.client("route53domains").transfer_domain_to_another_aws_account` method.
+Type annotations for
+`boto3.client("route53domains").transfer_domain_to_another_aws_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account]
+Boto3 documentation:
+[Route53Domains.Client.transfer_domain_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account)
 
-```python
-def transfer_domain_to_another_aws_account(
-    self,
-    DomainName: str,
-    AccountId: str
-) -> TransferDomainToAnotherAwsAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+
+Returns
+[TransferDomainToAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#transferdomaintoanotherawsaccountresponsetypedef).
 
 ### update_domain_contact
 
-Type annotations for `boto3.client("route53domains").update_domain_contact` method.
+Type annotations for `boto3.client("route53domains").update_domain_contact`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact]
+Boto3 documentation:
+[Route53Domains.Client.update_domain_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact)
 
-```python
-def update_domain_contact(
-    self,
-    DomainName: str,
-    AdminContact: "ContactDetailTypeDef" = None,
-    RegistrantContact: "ContactDetailTypeDef" = None,
-    TechContact: "ContactDetailTypeDef" = None
-) -> UpdateDomainContactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AdminContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `RegistrantContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `TechContact`:
+  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+
+Returns
+[UpdateDomainContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomaincontactresponsetypedef).
 
 ### update_domain_contact_privacy
 
-Type annotations for `boto3.client("route53domains").update_domain_contact_privacy` method.
+Type annotations for
+`boto3.client("route53domains").update_domain_contact_privacy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy]
+Boto3 documentation:
+[Route53Domains.Client.update_domain_contact_privacy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy)
 
-```python
-def update_domain_contact_privacy(
-    self,
-    DomainName: str,
-    AdminPrivacy: bool = None,
-    RegistrantPrivacy: bool = None,
-    TechPrivacy: bool = None
-) -> UpdateDomainContactPrivacyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `AdminPrivacy`: `bool`
+- `RegistrantPrivacy`: `bool`
+- `TechPrivacy`: `bool`
+
+Returns
+[UpdateDomainContactPrivacyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomaincontactprivacyresponsetypedef).
 
 ### update_domain_nameservers
 
-Type annotations for `boto3.client("route53domains").update_domain_nameservers` method.
+Type annotations for `boto3.client("route53domains").update_domain_nameservers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers]
+Boto3 documentation:
+[Route53Domains.Client.update_domain_nameservers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers)
 
-```python
-def update_domain_nameservers(
-    self,
-    DomainName: str,
-    Nameservers: List["NameserverTypeDef"],
-    FIAuthKey: str = None
-) -> UpdateDomainNameserversResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#nameservertypedef)\]
+  *(required)*
+- `FIAuthKey`: `str`
+
+Returns
+[UpdateDomainNameserversResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomainnameserversresponsetypedef).
 
 ### update_tags_for_domain
 
-Type annotations for `boto3.client("route53domains").update_tags_for_domain` method.
+Type annotations for `boto3.client("route53domains").update_tags_for_domain`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain]
+Boto3 documentation:
+[Route53Domains.Client.update_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain)
 
-```python
-def update_tags_for_domain(
-    self,
-    DomainName: str,
-    TagsToUpdate: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `TagsToUpdate`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### view_billing
 
 Type annotations for `boto3.client("route53domains").view_billing` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing]
+Boto3 documentation:
+[Route53Domains.Client.view_billing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing)
 
-```python
-def view_billing(
-    self,
-    Start: datetime = None,
-    End: datetime = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ViewBillingResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Start`: `datetime`
+- `End`: `datetime`
+- `Marker`: `str`
+- `MaxItems`: `int`
 
+Returns
+[ViewBillingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#viewbillingresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53domains").get_paginator` method with overloads.
+Type annotations for `boto3.client("route53domains").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("list_operations")` -> [ListOperationsPaginator](./paginators.md#listoperationspaginator)
-- `client.get_paginator("view_billing")` -> [ViewBillingPaginator](./paginators.md#viewbillingpaginator)
-
-
+- `client.get_paginator("list_domains")` ->
+  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_operations")` ->
+  [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+- `client.get_paginator("view_billing")` ->
+  [ViewBillingPaginator](./paginators.md#viewbillingpaginator)

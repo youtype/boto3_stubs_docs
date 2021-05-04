@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Firehose](./README.md) > FirehoseClient
 
-Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
-type annotations stubs module [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+Auto-generated documentation for
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+type annotations stubs module
+[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [FirehoseClient for boto3 Firehose module](#firehoseclient-for-boto3-firehose-module)
   - [FirehoseClient](#firehoseclient)
@@ -37,12 +39,13 @@ def get_firehose_client() -> FirehoseClient:
     return boto3.client("firehose")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
+Boto3 documentation:
+[Firehose.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_firehose.client import Exceptions
@@ -50,7 +53,6 @@ from mypy_boto3_firehose.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -63,238 +65,253 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("firehose").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.can_paginate]
+Boto3 documentation:
+[Firehose.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_delivery_stream
 
 Type annotations for `boto3.client("firehose").create_delivery_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.create_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream)
 
-```python
-def create_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    DeliveryStreamType: DeliveryStreamType = None,
-    KinesisStreamSourceConfiguration: KinesisStreamSourceConfigurationTypeDef = None,
-    DeliveryStreamEncryptionConfigurationInput: DeliveryStreamEncryptionConfigurationInputTypeDef = None,
-    S3DestinationConfiguration: "S3DestinationConfigurationTypeDef" = None,
-    ExtendedS3DestinationConfiguration: ExtendedS3DestinationConfigurationTypeDef = None,
-    RedshiftDestinationConfiguration: RedshiftDestinationConfigurationTypeDef = None,
-    ElasticsearchDestinationConfiguration: ElasticsearchDestinationConfigurationTypeDef = None,
-    SplunkDestinationConfiguration: SplunkDestinationConfigurationTypeDef = None,
-    HttpEndpointDestinationConfiguration: HttpEndpointDestinationConfigurationTypeDef = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDeliveryStreamOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `DeliveryStreamType`:
+  [DeliveryStreamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamtype)
+- `KinesisStreamSourceConfiguration`:
+  [KinesisStreamSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#kinesisstreamsourceconfigurationtypedef)
+- `DeliveryStreamEncryptionConfigurationInput`:
+  [DeliveryStreamEncryptionConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamencryptionconfigurationinputtypedef)
+- `S3DestinationConfiguration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
+- `ExtendedS3DestinationConfiguration`:
+  [ExtendedS3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#extendeds3destinationconfigurationtypedef)
+- `RedshiftDestinationConfiguration`:
+  [RedshiftDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftdestinationconfigurationtypedef)
+- `ElasticsearchDestinationConfiguration`:
+  [ElasticsearchDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchdestinationconfigurationtypedef)
+- `SplunkDestinationConfiguration`:
+  [SplunkDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkdestinationconfigurationtypedef)
+- `HttpEndpointDestinationConfiguration`:
+  [HttpEndpointDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdestinationconfigurationtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#createdeliverystreamoutputtypedef).
 
 ### delete_delivery_stream
 
 Type annotations for `boto3.client("firehose").delete_delivery_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.delete_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream)
 
-```python
-def delete_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    AllowForceDelete: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `AllowForceDelete`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_delivery_stream
 
-Type annotations for `boto3.client("firehose").describe_delivery_stream` method.
+Type annotations for `boto3.client("firehose").describe_delivery_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.describe_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream)
 
-```python
-def describe_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    Limit: int = None,
-    ExclusiveStartDestinationId: str = None
-) -> DescribeDeliveryStreamOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `Limit`: `int`
+- `ExclusiveStartDestinationId`: `str`
+
+Returns
+[DescribeDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#describedeliverystreamoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("firehose").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.generate_presigned_url]
+Boto3 documentation:
+[Firehose.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_delivery_streams
 
 Type annotations for `boto3.client("firehose").list_delivery_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams]
+Boto3 documentation:
+[Firehose.Client.list_delivery_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams)
 
-```python
-def list_delivery_streams(
-    self,
-    Limit: int = None,
-    DeliveryStreamType: DeliveryStreamType = None,
-    ExclusiveStartDeliveryStreamName: str = None
-) -> ListDeliveryStreamsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Limit`: `int`
+- `DeliveryStreamType`:
+  [DeliveryStreamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamtype)
+- `ExclusiveStartDeliveryStreamName`: `str`
+
+Returns
+[ListDeliveryStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#listdeliverystreamsoutputtypedef).
 
 ### list_tags_for_delivery_stream
 
-Type annotations for `boto3.client("firehose").list_tags_for_delivery_stream` method.
+Type annotations for `boto3.client("firehose").list_tags_for_delivery_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.list_tags_for_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream)
 
-```python
-def list_tags_for_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    ExclusiveStartTagKey: str = None,
-    Limit: int = None
-) -> ListTagsForDeliveryStreamOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `ExclusiveStartTagKey`: `str`
+- `Limit`: `int`
+
+Returns
+[ListTagsForDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#listtagsfordeliverystreamoutputtypedef).
 
 ### put_record
 
 Type annotations for `boto3.client("firehose").put_record` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record]
+Boto3 documentation:
+[Firehose.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record)
 
-```python
-def put_record(
-    self,
-    DeliveryStreamName: str,
-    Record: RecordTypeDef
-) -> PutRecordOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `Record`:
+  [RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#recordtypedef)
+  *(required)*
+
+Returns
+[PutRecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#putrecordoutputtypedef).
 
 ### put_record_batch
 
 Type annotations for `boto3.client("firehose").put_record_batch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch]
+Boto3 documentation:
+[Firehose.Client.put_record_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch)
 
-```python
-def put_record_batch(
-    self,
-    DeliveryStreamName: str,
-    Records: List[RecordTypeDef]
-) -> PutRecordBatchOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#recordtypedef)\]
+  *(required)*
+
+Returns
+[PutRecordBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#putrecordbatchoutputtypedef).
 
 ### start_delivery_stream_encryption
 
-Type annotations for `boto3.client("firehose").start_delivery_stream_encryption` method.
+Type annotations for
+`boto3.client("firehose").start_delivery_stream_encryption` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption]
+Boto3 documentation:
+[Firehose.Client.start_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption)
 
-```python
-def start_delivery_stream_encryption(
-    self,
-    DeliveryStreamName: str,
-    DeliveryStreamEncryptionConfigurationInput: DeliveryStreamEncryptionConfigurationInputTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `DeliveryStreamEncryptionConfigurationInput`:
+  [DeliveryStreamEncryptionConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamencryptionconfigurationinputtypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_delivery_stream_encryption
 
-Type annotations for `boto3.client("firehose").stop_delivery_stream_encryption` method.
+Type annotations for `boto3.client("firehose").stop_delivery_stream_encryption`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption]
+Boto3 documentation:
+[Firehose.Client.stop_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption)
 
-```python
-def stop_delivery_stream_encryption(
-    self,
-    DeliveryStreamName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_delivery_stream
 
 Type annotations for `boto3.client("firehose").tag_delivery_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.tag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream)
 
-```python
-def tag_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_delivery_stream
 
 Type annotations for `boto3.client("firehose").untag_delivery_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream]
+Boto3 documentation:
+[Firehose.Client.untag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream)
 
-```python
-def untag_delivery_stream(
-    self,
-    DeliveryStreamName: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DeliveryStreamName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_destination
 
 Type annotations for `boto3.client("firehose").update_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination]
+Boto3 documentation:
+[Firehose.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination)
 
-```python
-def update_destination(
-    self,
-    DeliveryStreamName: str,
-    CurrentDeliveryStreamVersionId: str,
-    DestinationId: str,
-    S3DestinationUpdate: "S3DestinationUpdateTypeDef" = None,
-    ExtendedS3DestinationUpdate: ExtendedS3DestinationUpdateTypeDef = None,
-    RedshiftDestinationUpdate: RedshiftDestinationUpdateTypeDef = None,
-    ElasticsearchDestinationUpdate: ElasticsearchDestinationUpdateTypeDef = None,
-    SplunkDestinationUpdate: SplunkDestinationUpdateTypeDef = None,
-    HttpEndpointDestinationUpdate: HttpEndpointDestinationUpdateTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `DeliveryStreamName`: `str` *(required)*
+- `CurrentDeliveryStreamVersionId`: `str` *(required)*
+- `DestinationId`: `str` *(required)*
+- `S3DestinationUpdate`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `ExtendedS3DestinationUpdate`:
+  [ExtendedS3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#extendeds3destinationupdatetypedef)
+- `RedshiftDestinationUpdate`:
+  [RedshiftDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftdestinationupdatetypedef)
+- `ElasticsearchDestinationUpdate`:
+  [ElasticsearchDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchdestinationupdatetypedef)
+- `SplunkDestinationUpdate`:
+  [SplunkDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkdestinationupdatetypedef)
+- `HttpEndpointDestinationUpdate`:
+  [HttpEndpointDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdestinationupdatetypedef)
 
-
+Returns `Dict`\[`str`, `Any`\].

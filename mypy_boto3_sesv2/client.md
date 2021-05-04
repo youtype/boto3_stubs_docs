@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SESV2](./README.md) > SESV2Client
 
-Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
-type annotations stubs module [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+Auto-generated documentation for
+[SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
+type annotations stubs module
+[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 - [SESV2Client for boto3 SESV2 module](#sesv2client-for-boto3-sesv2-module)
   - [SESV2Client](#sesv2client)
@@ -106,12 +108,13 @@ def get_sesv2_client() -> SESV2Client:
     return boto3.client("sesv2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client)
+Boto3 documentation:
+[SESV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sesv2.client import Exceptions
@@ -119,7 +122,6 @@ from mypy_boto3_sesv2.client import Exceptions
 def handle_error(exc: Exceptions.AccountSuspendedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -137,1291 +139,1330 @@ Exceptions:
 - `Exceptions.SendingPausedException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("sesv2").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.can_paginate]
+Boto3 documentation:
+[SESV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_configuration_set
 
 Type annotations for `boto3.client("sesv2").create_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set]
+Boto3 documentation:
+[SESV2.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set)
 
-```python
-def create_configuration_set(
-    self,
-    ConfigurationSetName: str,
-    TrackingOptions: "TrackingOptionsTypeDef" = None,
-    DeliveryOptions: "DeliveryOptionsTypeDef" = None,
-    ReputationOptions: "ReputationOptionsTypeDef" = None,
-    SendingOptions: "SendingOptionsTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    SuppressionOptions: "SuppressionOptionsTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#trackingoptionstypedef)
+- `DeliveryOptions`:
+  [DeliveryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#deliveryoptionstypedef)
+- `ReputationOptions`:
+  [ReputationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#reputationoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#sendingoptionstypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+- `SuppressionOptions`:
+  [SuppressionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#suppressionoptionstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
-Type annotations for `boto3.client("sesv2").create_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sesv2").create_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set_event_destination]
+Boto3 documentation:
+[SESV2.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set_event_destination)
 
-```python
-def create_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#eventdestinationdefinitiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_contact
 
 Type annotations for `boto3.client("sesv2").create_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact]
+Boto3 documentation:
+[SESV2.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact)
 
-```python
-def create_contact(
-    self,
-    ContactListName: str,
-    EmailAddress: str,
-    TopicPreferences: List["TopicPreferenceTypeDef"] = None,
-    UnsubscribeAll: bool = None,
-    AttributesData: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `EmailAddress`: `str` *(required)*
+- `TopicPreferences`:
+  `List`\[[TopicPreferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#topicpreferencetypedef)\]
+- `UnsubscribeAll`: `bool`
+- `AttributesData`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_contact_list
 
 Type annotations for `boto3.client("sesv2").create_contact_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact_list]
+Boto3 documentation:
+[SESV2.Client.create_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact_list)
 
-```python
-def create_contact_list(
-    self,
-    ContactListName: str,
-    Topics: List["TopicTypeDef"] = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `Topics`:
+  `List`\[[TopicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#topictypedef)\]
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_custom_verification_email_template
 
-Type annotations for `boto3.client("sesv2").create_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("sesv2").create_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_custom_verification_email_template]
+Boto3 documentation:
+[SESV2.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_custom_verification_email_template)
 
-```python
-def create_custom_verification_email_template(
-    self,
-    TemplateName: str,
-    FromEmailAddress: str,
-    TemplateSubject: str,
-    TemplateContent: str,
-    SuccessRedirectionURL: str,
-    FailureRedirectionURL: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `FromEmailAddress`: `str` *(required)*
+- `TemplateSubject`: `str` *(required)*
+- `TemplateContent`: `str` *(required)*
+- `SuccessRedirectionURL`: `str` *(required)*
+- `FailureRedirectionURL`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_dedicated_ip_pool
 
 Type annotations for `boto3.client("sesv2").create_dedicated_ip_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool]
+Boto3 documentation:
+[SESV2.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool)
 
-```python
-def create_dedicated_ip_pool(
-    self,
-    PoolName: str,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_deliverability_test_report
 
-Type annotations for `boto3.client("sesv2").create_deliverability_test_report` method.
+Type annotations for `boto3.client("sesv2").create_deliverability_test_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_deliverability_test_report]
+Boto3 documentation:
+[SESV2.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_deliverability_test_report)
 
-```python
-def create_deliverability_test_report(
-    self,
-    FromEmailAddress: str,
-    Content: EmailContentTypeDef,
-    ReportName: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDeliverabilityTestReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FromEmailAddress`: `str` *(required)*
+- `Content`:
+  [EmailContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#emailcontenttypedef)
+  *(required)*
+- `ReportName`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDeliverabilityTestReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#createdeliverabilitytestreportresponsetypedef).
 
 ### create_email_identity
 
 Type annotations for `boto3.client("sesv2").create_email_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity]
+Boto3 documentation:
+[SESV2.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity)
 
-```python
-def create_email_identity(
-    self,
-    EmailIdentity: str,
-    Tags: List["TagTypeDef"] = None,
-    DkimSigningAttributes: DkimSigningAttributesTypeDef = None,
-    ConfigurationSetName: str = None
-) -> CreateEmailIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+- `DkimSigningAttributes`:
+  [DkimSigningAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#dkimsigningattributestypedef)
+- `ConfigurationSetName`: `str`
+
+Returns
+[CreateEmailIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#createemailidentityresponsetypedef).
 
 ### create_email_identity_policy
 
-Type annotations for `boto3.client("sesv2").create_email_identity_policy` method.
+Type annotations for `boto3.client("sesv2").create_email_identity_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity_policy]
+Boto3 documentation:
+[SESV2.Client.create_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity_policy)
 
-```python
-def create_email_identity_policy(
-    self,
-    EmailIdentity: str,
-    PolicyName: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_email_template
 
 Type annotations for `boto3.client("sesv2").create_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template]
+Boto3 documentation:
+[SESV2.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template)
 
-```python
-def create_email_template(
-    self,
-    TemplateName: str,
-    TemplateContent: "EmailTemplateContentTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `TemplateContent`:
+  [EmailTemplateContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#emailtemplatecontenttypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_import_job
 
 Type annotations for `boto3.client("sesv2").create_import_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job]
+Boto3 documentation:
+[SESV2.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job)
 
-```python
-def create_import_job(
-    self,
-    ImportDestination: "ImportDestinationTypeDef",
-    ImportDataSource: "ImportDataSourceTypeDef"
-) -> CreateImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImportDestination`:
+  [ImportDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#importdestinationtypedef)
+  *(required)*
+- `ImportDataSource`:
+  [ImportDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#importdatasourcetypedef)
+  *(required)*
+
+Returns
+[CreateImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#createimportjobresponsetypedef).
 
 ### delete_configuration_set
 
 Type annotations for `boto3.client("sesv2").delete_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set]
+Boto3 documentation:
+[SESV2.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set)
 
-```python
-def delete_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
-Type annotations for `boto3.client("sesv2").delete_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sesv2").delete_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination]
+Boto3 documentation:
+[SESV2.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination)
 
-```python
-def delete_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_contact
 
 Type annotations for `boto3.client("sesv2").delete_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact]
+Boto3 documentation:
+[SESV2.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact)
 
-```python
-def delete_contact(
-    self,
-    ContactListName: str,
-    EmailAddress: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `EmailAddress`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_contact_list
 
 Type annotations for `boto3.client("sesv2").delete_contact_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list]
+Boto3 documentation:
+[SESV2.Client.delete_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list)
 
-```python
-def delete_contact_list(
-    self,
-    ContactListName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_custom_verification_email_template
 
-Type annotations for `boto3.client("sesv2").delete_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("sesv2").delete_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template]
+Boto3 documentation:
+[SESV2.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template)
 
-```python
-def delete_custom_verification_email_template(
-    self,
-    TemplateName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dedicated_ip_pool
 
 Type annotations for `boto3.client("sesv2").delete_dedicated_ip_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool]
+Boto3 documentation:
+[SESV2.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool)
 
-```python
-def delete_dedicated_ip_pool(
-    self,
-    PoolName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_email_identity
 
 Type annotations for `boto3.client("sesv2").delete_email_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity]
+Boto3 documentation:
+[SESV2.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity)
 
-```python
-def delete_email_identity(
-    self,
-    EmailIdentity: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_email_identity_policy
 
-Type annotations for `boto3.client("sesv2").delete_email_identity_policy` method.
+Type annotations for `boto3.client("sesv2").delete_email_identity_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy]
+Boto3 documentation:
+[SESV2.Client.delete_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy)
 
-```python
-def delete_email_identity_policy(
-    self,
-    EmailIdentity: str,
-    PolicyName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_email_template
 
 Type annotations for `boto3.client("sesv2").delete_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template]
+Boto3 documentation:
+[SESV2.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template)
 
-```python
-def delete_email_template(
-    self,
-    TemplateName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_suppressed_destination
 
-Type annotations for `boto3.client("sesv2").delete_suppressed_destination` method.
+Type annotations for `boto3.client("sesv2").delete_suppressed_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination]
+Boto3 documentation:
+[SESV2.Client.delete_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination)
 
-```python
-def delete_suppressed_destination(
-    self,
-    EmailAddress: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sesv2").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.generate_presigned_url]
+Boto3 documentation:
+[SESV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account
 
 Type annotations for `boto3.client("sesv2").get_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account]
+Boto3 documentation:
+[SESV2.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account)
 
-```python
-def get_account(
-    self
-) -> GetAccountResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getaccountresponsetypedef).
 
 ### get_blacklist_reports
 
 Type annotations for `boto3.client("sesv2").get_blacklist_reports` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports]
+Boto3 documentation:
+[SESV2.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports)
 
-```python
-def get_blacklist_reports(
-    self,
-    BlacklistItemNames: List[str]
-) -> GetBlacklistReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BlacklistItemNames`: `List`\[`str`\] *(required)*
+
+Returns
+[GetBlacklistReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getblacklistreportsresponsetypedef).
 
 ### get_configuration_set
 
 Type annotations for `boto3.client("sesv2").get_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set]
+Boto3 documentation:
+[SESV2.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set)
 
-```python
-def get_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getconfigurationsetresponsetypedef).
 
 ### get_configuration_set_event_destinations
 
-Type annotations for `boto3.client("sesv2").get_configuration_set_event_destinations` method.
+Type annotations for
+`boto3.client("sesv2").get_configuration_set_event_destinations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations]
+Boto3 documentation:
+[SESV2.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations)
 
-```python
-def get_configuration_set_event_destinations(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetEventDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetEventDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getconfigurationseteventdestinationsresponsetypedef).
 
 ### get_contact
 
 Type annotations for `boto3.client("sesv2").get_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact]
+Boto3 documentation:
+[SESV2.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact)
 
-```python
-def get_contact(
-    self,
-    ContactListName: str,
-    EmailAddress: str
-) -> GetContactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `EmailAddress`: `str` *(required)*
+
+Returns
+[GetContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getcontactresponsetypedef).
 
 ### get_contact_list
 
 Type annotations for `boto3.client("sesv2").get_contact_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list]
+Boto3 documentation:
+[SESV2.Client.get_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list)
 
-```python
-def get_contact_list(
-    self,
-    ContactListName: str
-) -> GetContactListResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+
+Returns
+[GetContactListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getcontactlistresponsetypedef).
 
 ### get_custom_verification_email_template
 
-Type annotations for `boto3.client("sesv2").get_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("sesv2").get_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template]
+Boto3 documentation:
+[SESV2.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template)
 
-```python
-def get_custom_verification_email_template(
-    self,
-    TemplateName: str
-) -> GetCustomVerificationEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns
+[GetCustomVerificationEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getcustomverificationemailtemplateresponsetypedef).
 
 ### get_dedicated_ip
 
 Type annotations for `boto3.client("sesv2").get_dedicated_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip]
+Boto3 documentation:
+[SESV2.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip)
 
-```python
-def get_dedicated_ip(
-    self,
-    Ip: str
-) -> GetDedicatedIpResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+
+Returns
+[GetDedicatedIpResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdedicatedipresponsetypedef).
 
 ### get_dedicated_ips
 
 Type annotations for `boto3.client("sesv2").get_dedicated_ips` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ips]
+Boto3 documentation:
+[SESV2.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ips)
 
-```python
-def get_dedicated_ips(
-    self,
-    PoolName: str = None,
-    NextToken: str = None,
-    PageSize: int = None
-) -> GetDedicatedIpsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PoolName`: `str`
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[GetDedicatedIpsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdedicatedipsresponsetypedef).
 
 ### get_deliverability_dashboard_options
 
-Type annotations for `boto3.client("sesv2").get_deliverability_dashboard_options` method.
+Type annotations for
+`boto3.client("sesv2").get_deliverability_dashboard_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_dashboard_options]
+Boto3 documentation:
+[SESV2.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_dashboard_options)
 
-```python
-def get_deliverability_dashboard_options(
-    self
-) -> GetDeliverabilityDashboardOptionsResponseTypeDef:
-    pass
-```
+Returns
+[GetDeliverabilityDashboardOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdeliverabilitydashboardoptionsresponsetypedef).
 
 ### get_deliverability_test_report
 
-Type annotations for `boto3.client("sesv2").get_deliverability_test_report` method.
+Type annotations for `boto3.client("sesv2").get_deliverability_test_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report]
+Boto3 documentation:
+[SESV2.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report)
 
-```python
-def get_deliverability_test_report(
-    self,
-    ReportId: str
-) -> GetDeliverabilityTestReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReportId`: `str` *(required)*
+
+Returns
+[GetDeliverabilityTestReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdeliverabilitytestreportresponsetypedef).
 
 ### get_domain_deliverability_campaign
 
-Type annotations for `boto3.client("sesv2").get_domain_deliverability_campaign` method.
+Type annotations for `boto3.client("sesv2").get_domain_deliverability_campaign`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign]
+Boto3 documentation:
+[SESV2.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign)
 
-```python
-def get_domain_deliverability_campaign(
-    self,
-    CampaignId: str
-) -> GetDomainDeliverabilityCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CampaignId`: `str` *(required)*
+
+Returns
+[GetDomainDeliverabilityCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdomaindeliverabilitycampaignresponsetypedef).
 
 ### get_domain_statistics_report
 
-Type annotations for `boto3.client("sesv2").get_domain_statistics_report` method.
+Type annotations for `boto3.client("sesv2").get_domain_statistics_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_statistics_report]
+Boto3 documentation:
+[SESV2.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_statistics_report)
 
-```python
-def get_domain_statistics_report(
-    self,
-    Domain: str,
-    StartDate: datetime,
-    EndDate: datetime
-) -> GetDomainStatisticsReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Domain`: `str` *(required)*
+- `StartDate`: `datetime` *(required)*
+- `EndDate`: `datetime` *(required)*
+
+Returns
+[GetDomainStatisticsReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getdomainstatisticsreportresponsetypedef).
 
 ### get_email_identity
 
 Type annotations for `boto3.client("sesv2").get_email_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity]
+Boto3 documentation:
+[SESV2.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity)
 
-```python
-def get_email_identity(
-    self,
-    EmailIdentity: str
-) -> GetEmailIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+
+Returns
+[GetEmailIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getemailidentityresponsetypedef).
 
 ### get_email_identity_policies
 
-Type annotations for `boto3.client("sesv2").get_email_identity_policies` method.
+Type annotations for `boto3.client("sesv2").get_email_identity_policies`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies]
+Boto3 documentation:
+[SESV2.Client.get_email_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies)
 
-```python
-def get_email_identity_policies(
-    self,
-    EmailIdentity: str
-) -> GetEmailIdentityPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+
+Returns
+[GetEmailIdentityPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getemailidentitypoliciesresponsetypedef).
 
 ### get_email_template
 
 Type annotations for `boto3.client("sesv2").get_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template]
+Boto3 documentation:
+[SESV2.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template)
 
-```python
-def get_email_template(
-    self,
-    TemplateName: str
-) -> GetEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns
+[GetEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getemailtemplateresponsetypedef).
 
 ### get_import_job
 
 Type annotations for `boto3.client("sesv2").get_import_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job]
+Boto3 documentation:
+[SESV2.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job)
 
-```python
-def get_import_job(
-    self,
-    JobId: str
-) -> GetImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[GetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getimportjobresponsetypedef).
 
 ### get_suppressed_destination
 
 Type annotations for `boto3.client("sesv2").get_suppressed_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination]
+Boto3 documentation:
+[SESV2.Client.get_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination)
 
-```python
-def get_suppressed_destination(
-    self,
-    EmailAddress: str
-) -> GetSuppressedDestinationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
+
+Returns
+[GetSuppressedDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#getsuppresseddestinationresponsetypedef).
 
 ### list_configuration_sets
 
 Type annotations for `boto3.client("sesv2").list_configuration_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets]
+Boto3 documentation:
+[SESV2.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets)
 
-```python
-def list_configuration_sets(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListConfigurationSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listconfigurationsetsresponsetypedef).
 
 ### list_contact_lists
 
 Type annotations for `boto3.client("sesv2").list_contact_lists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists]
+Boto3 documentation:
+[SESV2.Client.list_contact_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists)
 
-```python
-def list_contact_lists(
-    self,
-    PageSize: int = None,
-    NextToken: str = None
-) -> ListContactListsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PageSize`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListContactListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listcontactlistsresponsetypedef).
 
 ### list_contacts
 
 Type annotations for `boto3.client("sesv2").list_contacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contacts]
+Boto3 documentation:
+[SESV2.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contacts)
 
-```python
-def list_contacts(
-    self,
-    ContactListName: str,
-    Filter: ListContactsFilterTypeDef = None,
-    PageSize: int = None,
-    NextToken: str = None
-) -> ListContactsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `Filter`:
+  [ListContactsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listcontactsfiltertypedef)
+- `PageSize`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listcontactsresponsetypedef).
 
 ### list_custom_verification_email_templates
 
-Type annotations for `boto3.client("sesv2").list_custom_verification_email_templates` method.
+Type annotations for
+`boto3.client("sesv2").list_custom_verification_email_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates]
+Boto3 documentation:
+[SESV2.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates)
 
-```python
-def list_custom_verification_email_templates(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListCustomVerificationEmailTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListCustomVerificationEmailTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listcustomverificationemailtemplatesresponsetypedef).
 
 ### list_dedicated_ip_pools
 
 Type annotations for `boto3.client("sesv2").list_dedicated_ip_pools` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools]
+Boto3 documentation:
+[SESV2.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools)
 
-```python
-def list_dedicated_ip_pools(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDedicatedIpPoolsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDedicatedIpPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listdedicatedippoolsresponsetypedef).
 
 ### list_deliverability_test_reports
 
-Type annotations for `boto3.client("sesv2").list_deliverability_test_reports` method.
+Type annotations for `boto3.client("sesv2").list_deliverability_test_reports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports]
+Boto3 documentation:
+[SESV2.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports)
 
-```python
-def list_deliverability_test_reports(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDeliverabilityTestReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDeliverabilityTestReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listdeliverabilitytestreportsresponsetypedef).
 
 ### list_domain_deliverability_campaigns
 
-Type annotations for `boto3.client("sesv2").list_domain_deliverability_campaigns` method.
+Type annotations for
+`boto3.client("sesv2").list_domain_deliverability_campaigns` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_domain_deliverability_campaigns]
+Boto3 documentation:
+[SESV2.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_domain_deliverability_campaigns)
 
-```python
-def list_domain_deliverability_campaigns(
-    self,
-    StartDate: datetime,
-    EndDate: datetime,
-    SubscribedDomain: str,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListDomainDeliverabilityCampaignsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StartDate`: `datetime` *(required)*
+- `EndDate`: `datetime` *(required)*
+- `SubscribedDomain`: `str` *(required)*
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListDomainDeliverabilityCampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listdomaindeliverabilitycampaignsresponsetypedef).
 
 ### list_email_identities
 
 Type annotations for `boto3.client("sesv2").list_email_identities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities]
+Boto3 documentation:
+[SESV2.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities)
 
-```python
-def list_email_identities(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListEmailIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListEmailIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listemailidentitiesresponsetypedef).
 
 ### list_email_templates
 
 Type annotations for `boto3.client("sesv2").list_email_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates]
+Boto3 documentation:
+[SESV2.Client.list_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates)
 
-```python
-def list_email_templates(
-    self,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListEmailTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListEmailTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listemailtemplatesresponsetypedef).
 
 ### list_import_jobs
 
 Type annotations for `boto3.client("sesv2").list_import_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_import_jobs]
+Boto3 documentation:
+[SESV2.Client.list_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_import_jobs)
 
-```python
-def list_import_jobs(
-    self,
-    ImportDestinationType: ImportDestinationType = None,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListImportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ImportDestinationType`:
+  [ImportDestinationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#importdestinationtype)
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listimportjobsresponsetypedef).
 
 ### list_suppressed_destinations
 
-Type annotations for `boto3.client("sesv2").list_suppressed_destinations` method.
+Type annotations for `boto3.client("sesv2").list_suppressed_destinations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_suppressed_destinations]
+Boto3 documentation:
+[SESV2.Client.list_suppressed_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_suppressed_destinations)
 
-```python
-def list_suppressed_destinations(
-    self,
-    Reasons: List[SuppressionListReason] = None,
-    StartDate: datetime = None,
-    EndDate: datetime = None,
-    NextToken: str = None,
-    PageSize: int = None
-) -> ListSuppressedDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Reasons`:
+  `List`\[[SuppressionListReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#suppressionlistreason)\]
+- `StartDate`: `datetime`
+- `EndDate`: `datetime`
+- `NextToken`: `str`
+- `PageSize`: `int`
+
+Returns
+[ListSuppressedDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listsuppresseddestinationsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("sesv2").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource]
+Boto3 documentation:
+[SESV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_account_dedicated_ip_warmup_attributes
 
-Type annotations for `boto3.client("sesv2").put_account_dedicated_ip_warmup_attributes` method.
+Type annotations for
+`boto3.client("sesv2").put_account_dedicated_ip_warmup_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes]
+Boto3 documentation:
+[SESV2.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes)
 
-```python
-def put_account_dedicated_ip_warmup_attributes(
-    self,
-    AutoWarmupEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AutoWarmupEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_account_details
 
 Type annotations for `boto3.client("sesv2").put_account_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_details]
+Boto3 documentation:
+[SESV2.Client.put_account_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_details)
 
-```python
-def put_account_details(
-    self,
-    MailType: MailType,
-    WebsiteURL: str,
-    UseCaseDescription: str,
-    ContactLanguage: ContactLanguage = None,
-    AdditionalContactEmailAddresses: List[str] = None,
-    ProductionAccessEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `MailType`:
+  [MailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#mailtype)
+  *(required)*
+- `WebsiteURL`: `str` *(required)*
+- `UseCaseDescription`: `str` *(required)*
+- `ContactLanguage`:
+  [ContactLanguage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#contactlanguage)
+- `AdditionalContactEmailAddresses`: `List`\[`str`\]
+- `ProductionAccessEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_account_sending_attributes
 
-Type annotations for `boto3.client("sesv2").put_account_sending_attributes` method.
+Type annotations for `boto3.client("sesv2").put_account_sending_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes]
+Boto3 documentation:
+[SESV2.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes)
 
-```python
-def put_account_sending_attributes(
-    self,
-    SendingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SendingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_account_suppression_attributes
 
-Type annotations for `boto3.client("sesv2").put_account_suppression_attributes` method.
+Type annotations for `boto3.client("sesv2").put_account_suppression_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes]
+Boto3 documentation:
+[SESV2.Client.put_account_suppression_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes)
 
-```python
-def put_account_suppression_attributes(
-    self,
-    SuppressedReasons: List[SuppressionListReason] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SuppressedReasons`:
+  `List`\[[SuppressionListReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#suppressionlistreason)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_delivery_options
 
-Type annotations for `boto3.client("sesv2").put_configuration_set_delivery_options` method.
+Type annotations for
+`boto3.client("sesv2").put_configuration_set_delivery_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_delivery_options]
+Boto3 documentation:
+[SESV2.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_delivery_options)
 
-```python
-def put_configuration_set_delivery_options(
-    self,
-    ConfigurationSetName: str,
-    TlsPolicy: TlsPolicy = None,
-    SendingPoolName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TlsPolicy`:
+  [TlsPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#tlspolicy)
+- `SendingPoolName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_reputation_options
 
-Type annotations for `boto3.client("sesv2").put_configuration_set_reputation_options` method.
+Type annotations for
+`boto3.client("sesv2").put_configuration_set_reputation_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options]
+Boto3 documentation:
+[SESV2.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options)
 
-```python
-def put_configuration_set_reputation_options(
-    self,
-    ConfigurationSetName: str,
-    ReputationMetricsEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `ReputationMetricsEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_sending_options
 
-Type annotations for `boto3.client("sesv2").put_configuration_set_sending_options` method.
+Type annotations for
+`boto3.client("sesv2").put_configuration_set_sending_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options]
+Boto3 documentation:
+[SESV2.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options)
 
-```python
-def put_configuration_set_sending_options(
-    self,
-    ConfigurationSetName: str,
-    SendingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `SendingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_suppression_options
 
-Type annotations for `boto3.client("sesv2").put_configuration_set_suppression_options` method.
+Type annotations for
+`boto3.client("sesv2").put_configuration_set_suppression_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options]
+Boto3 documentation:
+[SESV2.Client.put_configuration_set_suppression_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options)
 
-```python
-def put_configuration_set_suppression_options(
-    self,
-    ConfigurationSetName: str,
-    SuppressedReasons: List[SuppressionListReason] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `SuppressedReasons`:
+  `List`\[[SuppressionListReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#suppressionlistreason)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_tracking_options
 
-Type annotations for `boto3.client("sesv2").put_configuration_set_tracking_options` method.
+Type annotations for
+`boto3.client("sesv2").put_configuration_set_tracking_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options]
+Boto3 documentation:
+[SESV2.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options)
 
-```python
-def put_configuration_set_tracking_options(
-    self,
-    ConfigurationSetName: str,
-    CustomRedirectDomain: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `CustomRedirectDomain`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_in_pool
 
 Type annotations for `boto3.client("sesv2").put_dedicated_ip_in_pool` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool]
+Boto3 documentation:
+[SESV2.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool)
 
-```python
-def put_dedicated_ip_in_pool(
-    self,
-    Ip: str,
-    DestinationPoolName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+- `DestinationPoolName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_warmup_attributes
 
-Type annotations for `boto3.client("sesv2").put_dedicated_ip_warmup_attributes` method.
+Type annotations for `boto3.client("sesv2").put_dedicated_ip_warmup_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes]
+Boto3 documentation:
+[SESV2.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes)
 
-```python
-def put_dedicated_ip_warmup_attributes(
-    self,
-    Ip: str,
-    WarmupPercentage: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Ip`: `str` *(required)*
+- `WarmupPercentage`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_deliverability_dashboard_option
 
-Type annotations for `boto3.client("sesv2").put_deliverability_dashboard_option` method.
+Type annotations for
+`boto3.client("sesv2").put_deliverability_dashboard_option` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option]
+Boto3 documentation:
+[SESV2.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option)
 
-```python
-def put_deliverability_dashboard_option(
-    self,
-    DashboardEnabled: bool,
-    SubscribedDomains: List["DomainDeliverabilityTrackingOptionTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DashboardEnabled`: `bool` *(required)*
+- `SubscribedDomains`:
+  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#domaindeliverabilitytrackingoptiontypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_configuration_set_attributes
 
-Type annotations for `boto3.client("sesv2").put_email_identity_configuration_set_attributes` method.
+Type annotations for
+`boto3.client("sesv2").put_email_identity_configuration_set_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes]
+Boto3 documentation:
+[SESV2.Client.put_email_identity_configuration_set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes)
 
-```python
-def put_email_identity_configuration_set_attributes(
-    self,
-    EmailIdentity: str,
-    ConfigurationSetName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `ConfigurationSetName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_dkim_attributes
 
-Type annotations for `boto3.client("sesv2").put_email_identity_dkim_attributes` method.
+Type annotations for `boto3.client("sesv2").put_email_identity_dkim_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes]
+Boto3 documentation:
+[SESV2.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes)
 
-```python
-def put_email_identity_dkim_attributes(
-    self,
-    EmailIdentity: str,
-    SigningEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `SigningEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_dkim_signing_attributes
 
-Type annotations for `boto3.client("sesv2").put_email_identity_dkim_signing_attributes` method.
+Type annotations for
+`boto3.client("sesv2").put_email_identity_dkim_signing_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_signing_attributes]
+Boto3 documentation:
+[SESV2.Client.put_email_identity_dkim_signing_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_signing_attributes)
 
-```python
-def put_email_identity_dkim_signing_attributes(
-    self,
-    EmailIdentity: str,
-    SigningAttributesOrigin: DkimSigningAttributesOrigin,
-    SigningAttributes: DkimSigningAttributesTypeDef = None
-) -> PutEmailIdentityDkimSigningAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `SigningAttributesOrigin`:
+  [DkimSigningAttributesOrigin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#dkimsigningattributesorigin)
+  *(required)*
+- `SigningAttributes`:
+  [DkimSigningAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#dkimsigningattributestypedef)
+
+Returns
+[PutEmailIdentityDkimSigningAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#putemailidentitydkimsigningattributesresponsetypedef).
 
 ### put_email_identity_feedback_attributes
 
-Type annotations for `boto3.client("sesv2").put_email_identity_feedback_attributes` method.
+Type annotations for
+`boto3.client("sesv2").put_email_identity_feedback_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes]
+Boto3 documentation:
+[SESV2.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes)
 
-```python
-def put_email_identity_feedback_attributes(
-    self,
-    EmailIdentity: str,
-    EmailForwardingEnabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `EmailForwardingEnabled`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_mail_from_attributes
 
-Type annotations for `boto3.client("sesv2").put_email_identity_mail_from_attributes` method.
+Type annotations for
+`boto3.client("sesv2").put_email_identity_mail_from_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_mail_from_attributes]
+Boto3 documentation:
+[SESV2.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_mail_from_attributes)
 
-```python
-def put_email_identity_mail_from_attributes(
-    self,
-    EmailIdentity: str,
-    MailFromDomain: str = None,
-    BehaviorOnMxFailure: BehaviorOnMxFailure = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `MailFromDomain`: `str`
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#behavioronmxfailure)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_suppressed_destination
 
 Type annotations for `boto3.client("sesv2").put_suppressed_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination]
+Boto3 documentation:
+[SESV2.Client.put_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination)
 
-```python
-def put_suppressed_destination(
-    self,
-    EmailAddress: str,
-    Reason: SuppressionListReason
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
+- `Reason`:
+  [SuppressionListReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/literals.html#suppressionlistreason)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_bulk_email
 
 Type annotations for `boto3.client("sesv2").send_bulk_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_bulk_email]
+Boto3 documentation:
+[SESV2.Client.send_bulk_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_bulk_email)
 
-```python
-def send_bulk_email(
-    self,
-    DefaultContent: BulkEmailContentTypeDef,
-    BulkEmailEntries: List[BulkEmailEntryTypeDef],
-    FromEmailAddress: str = None,
-    FromEmailAddressIdentityArn: str = None,
-    ReplyToAddresses: List[str] = None,
-    FeedbackForwardingEmailAddress: str = None,
-    FeedbackForwardingEmailAddressIdentityArn: str = None,
-    DefaultEmailTags: List["MessageTagTypeDef"] = None,
-    ConfigurationSetName: str = None
-) -> SendBulkEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DefaultContent`:
+  [BulkEmailContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#bulkemailcontenttypedef)
+  *(required)*
+- `BulkEmailEntries`:
+  `List`\[[BulkEmailEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#bulkemailentrytypedef)\]
+  *(required)*
+- `FromEmailAddress`: `str`
+- `FromEmailAddressIdentityArn`: `str`
+- `ReplyToAddresses`: `List`\[`str`\]
+- `FeedbackForwardingEmailAddress`: `str`
+- `FeedbackForwardingEmailAddressIdentityArn`: `str`
+- `DefaultEmailTags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendBulkEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#sendbulkemailresponsetypedef).
 
 ### send_custom_verification_email
 
-Type annotations for `boto3.client("sesv2").send_custom_verification_email` method.
+Type annotations for `boto3.client("sesv2").send_custom_verification_email`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_custom_verification_email]
+Boto3 documentation:
+[SESV2.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_custom_verification_email)
 
-```python
-def send_custom_verification_email(
-    self,
-    EmailAddress: str,
-    TemplateName: str,
-    ConfigurationSetName: str = None
-) -> SendCustomVerificationEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
+- `TemplateName`: `str` *(required)*
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendCustomVerificationEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#sendcustomverificationemailresponsetypedef).
 
 ### send_email
 
 Type annotations for `boto3.client("sesv2").send_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_email]
+Boto3 documentation:
+[SESV2.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_email)
 
-```python
-def send_email(
-    self,
-    Content: EmailContentTypeDef,
-    FromEmailAddress: str = None,
-    FromEmailAddressIdentityArn: str = None,
-    Destination: "DestinationTypeDef" = None,
-    ReplyToAddresses: List[str] = None,
-    FeedbackForwardingEmailAddress: str = None,
-    FeedbackForwardingEmailAddressIdentityArn: str = None,
-    EmailTags: List["MessageTagTypeDef"] = None,
-    ConfigurationSetName: str = None,
-    ListManagementOptions: ListManagementOptionsTypeDef = None
-) -> SendEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Content`:
+  [EmailContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#emailcontenttypedef)
+  *(required)*
+- `FromEmailAddress`: `str`
+- `FromEmailAddressIdentityArn`: `str`
+- `Destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#destinationtypedef)
+- `ReplyToAddresses`: `List`\[`str`\]
+- `FeedbackForwardingEmailAddress`: `str`
+- `FeedbackForwardingEmailAddressIdentityArn`: `str`
+- `EmailTags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+- `ListManagementOptions`:
+  [ListManagementOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#listmanagementoptionstypedef)
+
+Returns
+[SendEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#sendemailresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("sesv2").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource]
+Boto3 documentation:
+[SESV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### test_render_email_template
 
 Type annotations for `boto3.client("sesv2").test_render_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template]
+Boto3 documentation:
+[SESV2.Client.test_render_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template)
 
-```python
-def test_render_email_template(
-    self,
-    TemplateName: str,
-    TemplateData: str
-) -> TestRenderEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `TemplateData`: `str` *(required)*
+
+Returns
+[TestRenderEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#testrenderemailtemplateresponsetypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("sesv2").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource]
+Boto3 documentation:
+[SESV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_configuration_set_event_destination
 
-Type annotations for `boto3.client("sesv2").update_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("sesv2").update_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_configuration_set_event_destination]
+Boto3 documentation:
+[SESV2.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_configuration_set_event_destination)
 
-```python
-def update_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#eventdestinationdefinitiontypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_contact
 
 Type annotations for `boto3.client("sesv2").update_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact]
+Boto3 documentation:
+[SESV2.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact)
 
-```python
-def update_contact(
-    self,
-    ContactListName: str,
-    EmailAddress: str,
-    TopicPreferences: List["TopicPreferenceTypeDef"] = None,
-    UnsubscribeAll: bool = None,
-    AttributesData: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `EmailAddress`: `str` *(required)*
+- `TopicPreferences`:
+  `List`\[[TopicPreferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#topicpreferencetypedef)\]
+- `UnsubscribeAll`: `bool`
+- `AttributesData`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_contact_list
 
 Type annotations for `boto3.client("sesv2").update_contact_list` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact_list]
+Boto3 documentation:
+[SESV2.Client.update_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact_list)
 
-```python
-def update_contact_list(
-    self,
-    ContactListName: str,
-    Topics: List["TopicTypeDef"] = None,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ContactListName`: `str` *(required)*
+- `Topics`:
+  `List`\[[TopicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#topictypedef)\]
+- `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_custom_verification_email_template
 
-Type annotations for `boto3.client("sesv2").update_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("sesv2").update_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_custom_verification_email_template]
+Boto3 documentation:
+[SESV2.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_custom_verification_email_template)
 
-```python
-def update_custom_verification_email_template(
-    self,
-    TemplateName: str,
-    FromEmailAddress: str,
-    TemplateSubject: str,
-    TemplateContent: str,
-    SuccessRedirectionURL: str,
-    FailureRedirectionURL: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `FromEmailAddress`: `str` *(required)*
+- `TemplateSubject`: `str` *(required)*
+- `TemplateContent`: `str` *(required)*
+- `SuccessRedirectionURL`: `str` *(required)*
+- `FailureRedirectionURL`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_email_identity_policy
 
-Type annotations for `boto3.client("sesv2").update_email_identity_policy` method.
+Type annotations for `boto3.client("sesv2").update_email_identity_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_identity_policy]
+Boto3 documentation:
+[SESV2.Client.update_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_identity_policy)
 
-```python
-def update_email_identity_policy(
-    self,
-    EmailIdentity: str,
-    PolicyName: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EmailIdentity`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_email_template
 
 Type annotations for `boto3.client("sesv2").update_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template]
+Boto3 documentation:
+[SESV2.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template)
 
-```python
-def update_email_template(
-    self,
-    TemplateName: str,
-    TemplateContent: "EmailTemplateContentTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `TemplateName`: `str` *(required)*
+- `TemplateContent`:
+  [EmailTemplateContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sesv2/type_defs.html#emailtemplatecontenttypedef)
+  *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > GlueDataBrew
 
-Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+Auto-generated documentation for
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+type annotations stubs module
+[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 ```bash
 pip install mypy-boto3-databrew
@@ -19,7 +21,8 @@ pip install mypy-boto3-databrew
 
 ## GlueDataBrewClient
 
-Type annotations for  `boto3.client("databrew")` as [GlueDataBrewClient](./client.md)
+Type annotations for `boto3.client("databrew")` as
+[GlueDataBrewClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_databrew.client import GlueDataBrewClient
 ```
 
-
 GlueDataBrewClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_delete_recipe_version](./client.md#batch-delete-recipe-version)
 - [can_paginate](./client.md#can-paginate)
 - [create_dataset](./client.md#create-dataset)
@@ -76,10 +77,8 @@ GlueDataBrewClient [exceptions](./client.md#exceptions)
 - [update_recipe_job](./client.md#update-recipe-job)
 - [update_schedule](./client.md#update-schedule)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -88,14 +87,10 @@ GlueDataBrewClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("databrew").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("databrew").get_paginator("...")`.
 
 Can be used directly:
 
@@ -110,11 +105,6 @@ from mypy_boto3_databrew.paginators import ListDatasetsPaginator, ...
 - [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
 - [ListRecipesPaginator](./paginators.md#listrecipespaginator)
 - [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -148,13 +138,10 @@ from mypy_boto3_databrew.literals import CompressionFormat, ...
 - [SessionStatus](./literals.md#sessionstatus)
 - [Source](./literals.md#source)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

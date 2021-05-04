@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pinpoint](./README.md) > PinpointClient
 
-Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+Auto-generated documentation for
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+type annotations stubs module
+[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [PinpointClient for boto3 Pinpoint module](#pinpointclient-for-boto3-pinpoint-module)
   - [PinpointClient](#pinpointclient)
@@ -137,12 +139,13 @@ def get_pinpoint_client() -> PinpointClient:
     return boto3.client("pinpoint")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
+Boto3 documentation:
+[Pinpoint.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_pinpoint.client import Exceptions
@@ -150,7 +153,6 @@ from mypy_boto3_pinpoint.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -164,1743 +166,1833 @@ Exceptions:
 - `Exceptions.PayloadTooLargeException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("pinpoint").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate]
+Boto3 documentation:
+[Pinpoint.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_app
 
 Type annotations for `boto3.client("pinpoint").create_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app]
+Boto3 documentation:
+[Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app)
 
-```python
-def create_app(
-    self,
-    CreateApplicationRequest: CreateApplicationRequestTypeDef
-) -> CreateAppResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreateApplicationRequest`:
+  [CreateApplicationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createapplicationrequesttypedef)
+  *(required)*
+
+Returns
+[CreateAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createappresponsetypedef).
 
 ### create_campaign
 
 Type annotations for `boto3.client("pinpoint").create_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign]
+Boto3 documentation:
+[Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
 
-```python
-def create_campaign(
-    self,
-    ApplicationId: str,
-    WriteCampaignRequest: WriteCampaignRequestTypeDef
-) -> CreateCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `WriteCampaignRequest`:
+  [WriteCampaignRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writecampaignrequesttypedef)
+  *(required)*
+
+Returns
+[CreateCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createcampaignresponsetypedef).
 
 ### create_email_template
 
 Type annotations for `boto3.client("pinpoint").create_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template]
+Boto3 documentation:
+[Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
 
-```python
-def create_email_template(
-    self,
-    EmailTemplateRequest: EmailTemplateRequestTypeDef,
-    TemplateName: str
-) -> CreateEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailTemplateRequest`:
+  [EmailTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailtemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+
+Returns
+[CreateEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createemailtemplateresponsetypedef).
 
 ### create_export_job
 
 Type annotations for `boto3.client("pinpoint").create_export_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job]
+Boto3 documentation:
+[Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
 
-```python
-def create_export_job(
-    self,
-    ApplicationId: str,
-    ExportJobRequest: ExportJobRequestTypeDef
-) -> CreateExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `ExportJobRequest`:
+  [ExportJobRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#exportjobrequesttypedef)
+  *(required)*
+
+Returns
+[CreateExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createexportjobresponsetypedef).
 
 ### create_import_job
 
 Type annotations for `boto3.client("pinpoint").create_import_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job]
+Boto3 documentation:
+[Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
 
-```python
-def create_import_job(
-    self,
-    ApplicationId: str,
-    ImportJobRequest: ImportJobRequestTypeDef
-) -> CreateImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `ImportJobRequest`:
+  [ImportJobRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#importjobrequesttypedef)
+  *(required)*
+
+Returns
+[CreateImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createimportjobresponsetypedef).
 
 ### create_journey
 
 Type annotations for `boto3.client("pinpoint").create_journey` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey]
+Boto3 documentation:
+[Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
 
-```python
-def create_journey(
-    self,
-    ApplicationId: str,
-    WriteJourneyRequest: WriteJourneyRequestTypeDef
-) -> CreateJourneyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `WriteJourneyRequest`:
+  [WriteJourneyRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writejourneyrequesttypedef)
+  *(required)*
+
+Returns
+[CreateJourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createjourneyresponsetypedef).
 
 ### create_push_template
 
 Type annotations for `boto3.client("pinpoint").create_push_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template]
+Boto3 documentation:
+[Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
 
-```python
-def create_push_template(
-    self,
-    PushNotificationTemplateRequest: PushNotificationTemplateRequestTypeDef,
-    TemplateName: str
-) -> CreatePushTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PushNotificationTemplateRequest`:
+  [PushNotificationTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#pushnotificationtemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+
+Returns
+[CreatePushTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createpushtemplateresponsetypedef).
 
 ### create_recommender_configuration
 
-Type annotations for `boto3.client("pinpoint").create_recommender_configuration` method.
+Type annotations for
+`boto3.client("pinpoint").create_recommender_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration]
+Boto3 documentation:
+[Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
 
-```python
-def create_recommender_configuration(
-    self,
-    CreateRecommenderConfiguration: CreateRecommenderConfigurationTypeDef
-) -> CreateRecommenderConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreateRecommenderConfiguration`:
+  [CreateRecommenderConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createrecommenderconfigurationtypedef)
+  *(required)*
+
+Returns
+[CreateRecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createrecommenderconfigurationresponsetypedef).
 
 ### create_segment
 
 Type annotations for `boto3.client("pinpoint").create_segment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment]
+Boto3 documentation:
+[Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
 
-```python
-def create_segment(
-    self,
-    ApplicationId: str,
-    WriteSegmentRequest: WriteSegmentRequestTypeDef
-) -> CreateSegmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `WriteSegmentRequest`:
+  [WriteSegmentRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writesegmentrequesttypedef)
+  *(required)*
+
+Returns
+[CreateSegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createsegmentresponsetypedef).
 
 ### create_sms_template
 
 Type annotations for `boto3.client("pinpoint").create_sms_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template]
+Boto3 documentation:
+[Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
 
-```python
-def create_sms_template(
-    self,
-    SMSTemplateRequest: SMSTemplateRequestTypeDef,
-    TemplateName: str
-) -> CreateSmsTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SMSTemplateRequest`:
+  [SMSTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smstemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+
+Returns
+[CreateSmsTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createsmstemplateresponsetypedef).
 
 ### create_voice_template
 
 Type annotations for `boto3.client("pinpoint").create_voice_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template]
+Boto3 documentation:
+[Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
 
-```python
-def create_voice_template(
-    self,
-    TemplateName: str,
-    VoiceTemplateRequest: VoiceTemplateRequestTypeDef
-) -> CreateVoiceTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `VoiceTemplateRequest`:
+  [VoiceTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicetemplaterequesttypedef)
+  *(required)*
+
+Returns
+[CreateVoiceTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#createvoicetemplateresponsetypedef).
 
 ### delete_adm_channel
 
 Type annotations for `boto3.client("pinpoint").delete_adm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
 
-```python
-def delete_adm_channel(
-    self,
-    ApplicationId: str
-) -> DeleteAdmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteAdmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteadmchannelresponsetypedef).
 
 ### delete_apns_channel
 
 Type annotations for `boto3.client("pinpoint").delete_apns_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
 
-```python
-def delete_apns_channel(
-    self,
-    ApplicationId: str
-) -> DeleteApnsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteApnsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteapnschannelresponsetypedef).
 
 ### delete_apns_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").delete_apns_sandbox_channel` method.
+Type annotations for `boto3.client("pinpoint").delete_apns_sandbox_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
 
-```python
-def delete_apns_sandbox_channel(
-    self,
-    ApplicationId: str
-) -> DeleteApnsSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteApnsSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteapnssandboxchannelresponsetypedef).
 
 ### delete_apns_voip_channel
 
-Type annotations for `boto3.client("pinpoint").delete_apns_voip_channel` method.
+Type annotations for `boto3.client("pinpoint").delete_apns_voip_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
 
-```python
-def delete_apns_voip_channel(
-    self,
-    ApplicationId: str
-) -> DeleteApnsVoipChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteApnsVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteapnsvoipchannelresponsetypedef).
 
 ### delete_apns_voip_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
+Type annotations for
+`boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
 
-```python
-def delete_apns_voip_sandbox_channel(
-    self,
-    ApplicationId: str
-) -> DeleteApnsVoipSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteApnsVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteapnsvoipsandboxchannelresponsetypedef).
 
 ### delete_app
 
 Type annotations for `boto3.client("pinpoint").delete_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app]
+Boto3 documentation:
+[Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
 
-```python
-def delete_app(
-    self,
-    ApplicationId: str
-) -> DeleteAppResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteappresponsetypedef).
 
 ### delete_baidu_channel
 
 Type annotations for `boto3.client("pinpoint").delete_baidu_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
 
-```python
-def delete_baidu_channel(
-    self,
-    ApplicationId: str
-) -> DeleteBaiduChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteBaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletebaiduchannelresponsetypedef).
 
 ### delete_campaign
 
 Type annotations for `boto3.client("pinpoint").delete_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign]
+Boto3 documentation:
+[Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
 
-```python
-def delete_campaign(
-    self,
-    ApplicationId: str,
-    CampaignId: str
-) -> DeleteCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+
+Returns
+[DeleteCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletecampaignresponsetypedef).
 
 ### delete_email_channel
 
 Type annotations for `boto3.client("pinpoint").delete_email_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
 
-```python
-def delete_email_channel(
-    self,
-    ApplicationId: str
-) -> DeleteEmailChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteEmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteemailchannelresponsetypedef).
 
 ### delete_email_template
 
 Type annotations for `boto3.client("pinpoint").delete_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template]
+Boto3 documentation:
+[Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
 
-```python
-def delete_email_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> DeleteEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[DeleteEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteemailtemplateresponsetypedef).
 
 ### delete_endpoint
 
 Type annotations for `boto3.client("pinpoint").delete_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint]
+Boto3 documentation:
+[Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
 
-```python
-def delete_endpoint(
-    self,
-    ApplicationId: str,
-    EndpointId: str
-) -> DeleteEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+
+Returns
+[DeleteEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteendpointresponsetypedef).
 
 ### delete_event_stream
 
 Type annotations for `boto3.client("pinpoint").delete_event_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream]
+Boto3 documentation:
+[Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
 
-```python
-def delete_event_stream(
-    self,
-    ApplicationId: str
-) -> DeleteEventStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteEventStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteeventstreamresponsetypedef).
 
 ### delete_gcm_channel
 
 Type annotations for `boto3.client("pinpoint").delete_gcm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
 
-```python
-def delete_gcm_channel(
-    self,
-    ApplicationId: str
-) -> DeleteGcmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteGcmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletegcmchannelresponsetypedef).
 
 ### delete_journey
 
 Type annotations for `boto3.client("pinpoint").delete_journey` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey]
+Boto3 documentation:
+[Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
 
-```python
-def delete_journey(
-    self,
-    ApplicationId: str,
-    JourneyId: str
-) -> DeleteJourneyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+
+Returns
+[DeleteJourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletejourneyresponsetypedef).
 
 ### delete_push_template
 
 Type annotations for `boto3.client("pinpoint").delete_push_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template]
+Boto3 documentation:
+[Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
 
-```python
-def delete_push_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> DeletePushTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[DeletePushTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletepushtemplateresponsetypedef).
 
 ### delete_recommender_configuration
 
-Type annotations for `boto3.client("pinpoint").delete_recommender_configuration` method.
+Type annotations for
+`boto3.client("pinpoint").delete_recommender_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration]
+Boto3 documentation:
+[Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
 
-```python
-def delete_recommender_configuration(
-    self,
-    RecommenderId: str
-) -> DeleteRecommenderConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RecommenderId`: `str` *(required)*
+
+Returns
+[DeleteRecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleterecommenderconfigurationresponsetypedef).
 
 ### delete_segment
 
 Type annotations for `boto3.client("pinpoint").delete_segment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment]
+Boto3 documentation:
+[Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
 
-```python
-def delete_segment(
-    self,
-    ApplicationId: str,
-    SegmentId: str
-) -> DeleteSegmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+
+Returns
+[DeleteSegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletesegmentresponsetypedef).
 
 ### delete_sms_channel
 
 Type annotations for `boto3.client("pinpoint").delete_sms_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
 
-```python
-def delete_sms_channel(
-    self,
-    ApplicationId: str
-) -> DeleteSmsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteSmsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletesmschannelresponsetypedef).
 
 ### delete_sms_template
 
 Type annotations for `boto3.client("pinpoint").delete_sms_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template]
+Boto3 documentation:
+[Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
 
-```python
-def delete_sms_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> DeleteSmsTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[DeleteSmsTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletesmstemplateresponsetypedef).
 
 ### delete_user_endpoints
 
 Type annotations for `boto3.client("pinpoint").delete_user_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints]
+Boto3 documentation:
+[Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
 
-```python
-def delete_user_endpoints(
-    self,
-    ApplicationId: str,
-    UserId: str
-) -> DeleteUserEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[DeleteUserEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deleteuserendpointsresponsetypedef).
 
 ### delete_voice_channel
 
 Type annotations for `boto3.client("pinpoint").delete_voice_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel]
+Boto3 documentation:
+[Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
 
-```python
-def delete_voice_channel(
-    self,
-    ApplicationId: str
-) -> DeleteVoiceChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[DeleteVoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletevoicechannelresponsetypedef).
 
 ### delete_voice_template
 
 Type annotations for `boto3.client("pinpoint").delete_voice_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template]
+Boto3 documentation:
+[Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
 
-```python
-def delete_voice_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> DeleteVoiceTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[DeleteVoiceTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#deletevoicetemplateresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("pinpoint").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url]
+Boto3 documentation:
+[Pinpoint.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_adm_channel
 
 Type annotations for `boto3.client("pinpoint").get_adm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
 
-```python
-def get_adm_channel(
-    self,
-    ApplicationId: str
-) -> GetAdmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetAdmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getadmchannelresponsetypedef).
 
 ### get_apns_channel
 
 Type annotations for `boto3.client("pinpoint").get_apns_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
 
-```python
-def get_apns_channel(
-    self,
-    ApplicationId: str
-) -> GetApnsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApnsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapnschannelresponsetypedef).
 
 ### get_apns_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").get_apns_sandbox_channel` method.
+Type annotations for `boto3.client("pinpoint").get_apns_sandbox_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
 
-```python
-def get_apns_sandbox_channel(
-    self,
-    ApplicationId: str
-) -> GetApnsSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApnsSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapnssandboxchannelresponsetypedef).
 
 ### get_apns_voip_channel
 
 Type annotations for `boto3.client("pinpoint").get_apns_voip_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
 
-```python
-def get_apns_voip_channel(
-    self,
-    ApplicationId: str
-) -> GetApnsVoipChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApnsVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapnsvoipchannelresponsetypedef).
 
 ### get_apns_voip_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").get_apns_voip_sandbox_channel` method.
+Type annotations for `boto3.client("pinpoint").get_apns_voip_sandbox_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
 
-```python
-def get_apns_voip_sandbox_channel(
-    self,
-    ApplicationId: str
-) -> GetApnsVoipSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApnsVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapnsvoipsandboxchannelresponsetypedef).
 
 ### get_app
 
 Type annotations for `boto3.client("pinpoint").get_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app]
+Boto3 documentation:
+[Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app)
 
-```python
-def get_app(
-    self,
-    ApplicationId: str
-) -> GetAppResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getappresponsetypedef).
 
 ### get_application_date_range_kpi
 
-Type annotations for `boto3.client("pinpoint").get_application_date_range_kpi` method.
+Type annotations for `boto3.client("pinpoint").get_application_date_range_kpi`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi]
+Boto3 documentation:
+[Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
 
-```python
-def get_application_date_range_kpi(
-    self,
-    ApplicationId: str,
-    KpiName: str,
-    EndTime: datetime = None,
-    NextToken: str = None,
-    PageSize: str = None,
-    StartTime: datetime = None
-) -> GetApplicationDateRangeKpiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `KpiName`: `str` *(required)*
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+- `PageSize`: `str`
+- `StartTime`: `datetime`
+
+Returns
+[GetApplicationDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapplicationdaterangekpiresponsetypedef).
 
 ### get_application_settings
 
-Type annotations for `boto3.client("pinpoint").get_application_settings` method.
+Type annotations for `boto3.client("pinpoint").get_application_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings]
+Boto3 documentation:
+[Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
 
-```python
-def get_application_settings(
-    self,
-    ApplicationId: str
-) -> GetApplicationSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApplicationSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getapplicationsettingsresponsetypedef).
 
 ### get_apps
 
 Type annotations for `boto3.client("pinpoint").get_apps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps]
+Boto3 documentation:
+[Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
 
-```python
-def get_apps(
-    self,
-    PageSize: str = None,
-    Token: str = None
-) -> GetAppsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getappsresponsetypedef).
 
 ### get_baidu_channel
 
 Type annotations for `boto3.client("pinpoint").get_baidu_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
 
-```python
-def get_baidu_channel(
-    self,
-    ApplicationId: str
-) -> GetBaiduChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetBaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getbaiduchannelresponsetypedef).
 
 ### get_campaign
 
 Type annotations for `boto3.client("pinpoint").get_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign]
+Boto3 documentation:
+[Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
 
-```python
-def get_campaign(
-    self,
-    ApplicationId: str,
-    CampaignId: str
-) -> GetCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+
+Returns
+[GetCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaignresponsetypedef).
 
 ### get_campaign_activities
 
 Type annotations for `boto3.client("pinpoint").get_campaign_activities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities]
+Boto3 documentation:
+[Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
 
-```python
-def get_campaign_activities(
-    self,
-    ApplicationId: str,
-    CampaignId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetCampaignActivitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetCampaignActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaignactivitiesresponsetypedef).
 
 ### get_campaign_date_range_kpi
 
-Type annotations for `boto3.client("pinpoint").get_campaign_date_range_kpi` method.
+Type annotations for `boto3.client("pinpoint").get_campaign_date_range_kpi`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi]
+Boto3 documentation:
+[Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
 
-```python
-def get_campaign_date_range_kpi(
-    self,
-    ApplicationId: str,
-    CampaignId: str,
-    KpiName: str,
-    EndTime: datetime = None,
-    NextToken: str = None,
-    PageSize: str = None,
-    StartTime: datetime = None
-) -> GetCampaignDateRangeKpiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+- `KpiName`: `str` *(required)*
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+- `PageSize`: `str`
+- `StartTime`: `datetime`
+
+Returns
+[GetCampaignDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaigndaterangekpiresponsetypedef).
 
 ### get_campaign_version
 
 Type annotations for `boto3.client("pinpoint").get_campaign_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version]
+Boto3 documentation:
+[Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
 
-```python
-def get_campaign_version(
-    self,
-    ApplicationId: str,
-    CampaignId: str,
-    Version: str
-) -> GetCampaignVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+- `Version`: `str` *(required)*
+
+Returns
+[GetCampaignVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaignversionresponsetypedef).
 
 ### get_campaign_versions
 
 Type annotations for `boto3.client("pinpoint").get_campaign_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions]
+Boto3 documentation:
+[Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
 
-```python
-def get_campaign_versions(
-    self,
-    ApplicationId: str,
-    CampaignId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetCampaignVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetCampaignVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaignversionsresponsetypedef).
 
 ### get_campaigns
 
 Type annotations for `boto3.client("pinpoint").get_campaigns` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns]
+Boto3 documentation:
+[Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
 
-```python
-def get_campaigns(
-    self,
-    ApplicationId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetCampaignsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetCampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getcampaignsresponsetypedef).
 
 ### get_channels
 
 Type annotations for `boto3.client("pinpoint").get_channels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels]
+Boto3 documentation:
+[Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
 
-```python
-def get_channels(
-    self,
-    ApplicationId: str
-) -> GetChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getchannelsresponsetypedef).
 
 ### get_email_channel
 
 Type annotations for `boto3.client("pinpoint").get_email_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
 
-```python
-def get_email_channel(
-    self,
-    ApplicationId: str
-) -> GetEmailChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetEmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getemailchannelresponsetypedef).
 
 ### get_email_template
 
 Type annotations for `boto3.client("pinpoint").get_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template]
+Boto3 documentation:
+[Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
 
-```python
-def get_email_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> GetEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getemailtemplateresponsetypedef).
 
 ### get_endpoint
 
 Type annotations for `boto3.client("pinpoint").get_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint]
+Boto3 documentation:
+[Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
 
-```python
-def get_endpoint(
-    self,
-    ApplicationId: str,
-    EndpointId: str
-) -> GetEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+
+Returns
+[GetEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getendpointresponsetypedef).
 
 ### get_event_stream
 
 Type annotations for `boto3.client("pinpoint").get_event_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream]
+Boto3 documentation:
+[Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
 
-```python
-def get_event_stream(
-    self,
-    ApplicationId: str
-) -> GetEventStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetEventStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#geteventstreamresponsetypedef).
 
 ### get_export_job
 
 Type annotations for `boto3.client("pinpoint").get_export_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job]
+Boto3 documentation:
+[Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
 
-```python
-def get_export_job(
-    self,
-    ApplicationId: str,
-    JobId: str
-) -> GetExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[GetExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getexportjobresponsetypedef).
 
 ### get_export_jobs
 
 Type annotations for `boto3.client("pinpoint").get_export_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs]
+Boto3 documentation:
+[Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
 
-```python
-def get_export_jobs(
-    self,
-    ApplicationId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getexportjobsresponsetypedef).
 
 ### get_gcm_channel
 
 Type annotations for `boto3.client("pinpoint").get_gcm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
 
-```python
-def get_gcm_channel(
-    self,
-    ApplicationId: str
-) -> GetGcmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetGcmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getgcmchannelresponsetypedef).
 
 ### get_import_job
 
 Type annotations for `boto3.client("pinpoint").get_import_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job]
+Boto3 documentation:
+[Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
 
-```python
-def get_import_job(
-    self,
-    ApplicationId: str,
-    JobId: str
-) -> GetImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[GetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getimportjobresponsetypedef).
 
 ### get_import_jobs
 
 Type annotations for `boto3.client("pinpoint").get_import_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs]
+Boto3 documentation:
+[Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
 
-```python
-def get_import_jobs(
-    self,
-    ApplicationId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetImportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getimportjobsresponsetypedef).
 
 ### get_journey
 
 Type annotations for `boto3.client("pinpoint").get_journey` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey]
+Boto3 documentation:
+[Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
 
-```python
-def get_journey(
-    self,
-    ApplicationId: str,
-    JourneyId: str
-) -> GetJourneyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+
+Returns
+[GetJourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getjourneyresponsetypedef).
 
 ### get_journey_date_range_kpi
 
-Type annotations for `boto3.client("pinpoint").get_journey_date_range_kpi` method.
+Type annotations for `boto3.client("pinpoint").get_journey_date_range_kpi`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi]
+Boto3 documentation:
+[Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
 
-```python
-def get_journey_date_range_kpi(
-    self,
-    ApplicationId: str,
-    JourneyId: str,
-    KpiName: str,
-    EndTime: datetime = None,
-    NextToken: str = None,
-    PageSize: str = None,
-    StartTime: datetime = None
-) -> GetJourneyDateRangeKpiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+- `KpiName`: `str` *(required)*
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+- `PageSize`: `str`
+- `StartTime`: `datetime`
+
+Returns
+[GetJourneyDateRangeKpiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getjourneydaterangekpiresponsetypedef).
 
 ### get_journey_execution_activity_metrics
 
-Type annotations for `boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
+Type annotations for
+`boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics]
+Boto3 documentation:
+[Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
 
-```python
-def get_journey_execution_activity_metrics(
-    self,
-    ApplicationId: str,
-    JourneyActivityId: str,
-    JourneyId: str,
-    NextToken: str = None,
-    PageSize: str = None
-) -> GetJourneyExecutionActivityMetricsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyActivityId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+- `NextToken`: `str`
+- `PageSize`: `str`
+
+Returns
+[GetJourneyExecutionActivityMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getjourneyexecutionactivitymetricsresponsetypedef).
 
 ### get_journey_execution_metrics
 
-Type annotations for `boto3.client("pinpoint").get_journey_execution_metrics` method.
+Type annotations for `boto3.client("pinpoint").get_journey_execution_metrics`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics]
+Boto3 documentation:
+[Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
 
-```python
-def get_journey_execution_metrics(
-    self,
-    ApplicationId: str,
-    JourneyId: str,
-    NextToken: str = None,
-    PageSize: str = None
-) -> GetJourneyExecutionMetricsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+- `NextToken`: `str`
+- `PageSize`: `str`
+
+Returns
+[GetJourneyExecutionMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getjourneyexecutionmetricsresponsetypedef).
 
 ### get_push_template
 
 Type annotations for `boto3.client("pinpoint").get_push_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template]
+Boto3 documentation:
+[Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
 
-```python
-def get_push_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> GetPushTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetPushTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getpushtemplateresponsetypedef).
 
 ### get_recommender_configuration
 
-Type annotations for `boto3.client("pinpoint").get_recommender_configuration` method.
+Type annotations for `boto3.client("pinpoint").get_recommender_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration]
+Boto3 documentation:
+[Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
 
-```python
-def get_recommender_configuration(
-    self,
-    RecommenderId: str
-) -> GetRecommenderConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RecommenderId`: `str` *(required)*
+
+Returns
+[GetRecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getrecommenderconfigurationresponsetypedef).
 
 ### get_recommender_configurations
 
-Type annotations for `boto3.client("pinpoint").get_recommender_configurations` method.
+Type annotations for `boto3.client("pinpoint").get_recommender_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations]
+Boto3 documentation:
+[Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
 
-```python
-def get_recommender_configurations(
-    self,
-    PageSize: str = None,
-    Token: str = None
-) -> GetRecommenderConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetRecommenderConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getrecommenderconfigurationsresponsetypedef).
 
 ### get_segment
 
 Type annotations for `boto3.client("pinpoint").get_segment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment]
+Boto3 documentation:
+[Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
 
-```python
-def get_segment(
-    self,
-    ApplicationId: str,
-    SegmentId: str
-) -> GetSegmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+
+Returns
+[GetSegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentresponsetypedef).
 
 ### get_segment_export_jobs
 
 Type annotations for `boto3.client("pinpoint").get_segment_export_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs]
+Boto3 documentation:
+[Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
 
-```python
-def get_segment_export_jobs(
-    self,
-    ApplicationId: str,
-    SegmentId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetSegmentExportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetSegmentExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentexportjobsresponsetypedef).
 
 ### get_segment_import_jobs
 
 Type annotations for `boto3.client("pinpoint").get_segment_import_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs]
+Boto3 documentation:
+[Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
 
-```python
-def get_segment_import_jobs(
-    self,
-    ApplicationId: str,
-    SegmentId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetSegmentImportJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetSegmentImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentimportjobsresponsetypedef).
 
 ### get_segment_version
 
 Type annotations for `boto3.client("pinpoint").get_segment_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version]
+Boto3 documentation:
+[Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
 
-```python
-def get_segment_version(
-    self,
-    ApplicationId: str,
-    SegmentId: str,
-    Version: str
-) -> GetSegmentVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+- `Version`: `str` *(required)*
+
+Returns
+[GetSegmentVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentversionresponsetypedef).
 
 ### get_segment_versions
 
 Type annotations for `boto3.client("pinpoint").get_segment_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions]
+Boto3 documentation:
+[Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
 
-```python
-def get_segment_versions(
-    self,
-    ApplicationId: str,
-    SegmentId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetSegmentVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetSegmentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentversionsresponsetypedef).
 
 ### get_segments
 
 Type annotations for `boto3.client("pinpoint").get_segments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments]
+Boto3 documentation:
+[Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
 
-```python
-def get_segments(
-    self,
-    ApplicationId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> GetSegmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[GetSegmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsegmentsresponsetypedef).
 
 ### get_sms_channel
 
 Type annotations for `boto3.client("pinpoint").get_sms_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
 
-```python
-def get_sms_channel(
-    self,
-    ApplicationId: str
-) -> GetSmsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetSmsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsmschannelresponsetypedef).
 
 ### get_sms_template
 
 Type annotations for `boto3.client("pinpoint").get_sms_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template]
+Boto3 documentation:
+[Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
 
-```python
-def get_sms_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> GetSmsTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetSmsTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getsmstemplateresponsetypedef).
 
 ### get_user_endpoints
 
 Type annotations for `boto3.client("pinpoint").get_user_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints]
+Boto3 documentation:
+[Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
 
-```python
-def get_user_endpoints(
-    self,
-    ApplicationId: str,
-    UserId: str
-) -> GetUserEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+
+Returns
+[GetUserEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getuserendpointsresponsetypedef).
 
 ### get_voice_channel
 
 Type annotations for `boto3.client("pinpoint").get_voice_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel]
+Boto3 documentation:
+[Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
 
-```python
-def get_voice_channel(
-    self,
-    ApplicationId: str
-) -> GetVoiceChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetVoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getvoicechannelresponsetypedef).
 
 ### get_voice_template
 
 Type annotations for `boto3.client("pinpoint").get_voice_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template]
+Boto3 documentation:
+[Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
 
-```python
-def get_voice_template(
-    self,
-    TemplateName: str,
-    Version: str = None
-) -> GetVoiceTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetVoiceTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#getvoicetemplateresponsetypedef).
 
 ### list_journeys
 
 Type annotations for `boto3.client("pinpoint").list_journeys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys]
+Boto3 documentation:
+[Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
 
-```python
-def list_journeys(
-    self,
-    ApplicationId: str,
-    PageSize: str = None,
-    Token: str = None
-) -> ListJourneysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `PageSize`: `str`
+- `Token`: `str`
+
+Returns
+[ListJourneysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#listjourneysresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("pinpoint").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource]
+Boto3 documentation:
+[Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_template_versions
 
 Type annotations for `boto3.client("pinpoint").list_template_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions]
+Boto3 documentation:
+[Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
 
-```python
-def list_template_versions(
-    self,
-    TemplateName: str,
-    TemplateType: str,
-    NextToken: str = None,
-    PageSize: str = None
-) -> ListTemplateVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `TemplateType`: `str` *(required)*
+- `NextToken`: `str`
+- `PageSize`: `str`
+
+Returns
+[ListTemplateVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#listtemplateversionsresponsetypedef).
 
 ### list_templates
 
 Type annotations for `boto3.client("pinpoint").list_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates]
+Boto3 documentation:
+[Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
 
-```python
-def list_templates(
-    self,
-    NextToken: str = None,
-    PageSize: str = None,
-    Prefix: str = None,
-    TemplateType: str = None
-) -> ListTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `PageSize`: `str`
+- `Prefix`: `str`
+- `TemplateType`: `str`
+
+Returns
+[ListTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#listtemplatesresponsetypedef).
 
 ### phone_number_validate
 
 Type annotations for `boto3.client("pinpoint").phone_number_validate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate]
+Boto3 documentation:
+[Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
 
-```python
-def phone_number_validate(
-    self,
-    NumberValidateRequest: NumberValidateRequestTypeDef
-) -> PhoneNumberValidateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NumberValidateRequest`:
+  [NumberValidateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#numbervalidaterequesttypedef)
+  *(required)*
+
+Returns
+[PhoneNumberValidateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#phonenumbervalidateresponsetypedef).
 
 ### put_event_stream
 
 Type annotations for `boto3.client("pinpoint").put_event_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream]
+Boto3 documentation:
+[Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
 
-```python
-def put_event_stream(
-    self,
-    ApplicationId: str,
-    WriteEventStream: WriteEventStreamTypeDef
-) -> PutEventStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `WriteEventStream`:
+  [WriteEventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writeeventstreamtypedef)
+  *(required)*
+
+Returns
+[PutEventStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#puteventstreamresponsetypedef).
 
 ### put_events
 
 Type annotations for `boto3.client("pinpoint").put_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events]
+Boto3 documentation:
+[Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events)
 
-```python
-def put_events(
-    self,
-    ApplicationId: str,
-    EventsRequest: EventsRequestTypeDef
-) -> PutEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EventsRequest`:
+  [EventsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#eventsrequesttypedef)
+  *(required)*
+
+Returns
+[PutEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#puteventsresponsetypedef).
 
 ### remove_attributes
 
 Type annotations for `boto3.client("pinpoint").remove_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes]
+Boto3 documentation:
+[Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
 
-```python
-def remove_attributes(
-    self,
-    ApplicationId: str,
-    AttributeType: str,
-    UpdateAttributesRequest: UpdateAttributesRequestTypeDef
-) -> RemoveAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `AttributeType`: `str` *(required)*
+- `UpdateAttributesRequest`:
+  [UpdateAttributesRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateattributesrequesttypedef)
+  *(required)*
+
+Returns
+[RemoveAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#removeattributesresponsetypedef).
 
 ### send_messages
 
 Type annotations for `boto3.client("pinpoint").send_messages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages]
+Boto3 documentation:
+[Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
 
-```python
-def send_messages(
-    self,
-    ApplicationId: str,
-    MessageRequest: MessageRequestTypeDef
-) -> SendMessagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `MessageRequest`:
+  [MessageRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#messagerequesttypedef)
+  *(required)*
+
+Returns
+[SendMessagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#sendmessagesresponsetypedef).
 
 ### send_users_messages
 
 Type annotations for `boto3.client("pinpoint").send_users_messages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages]
+Boto3 documentation:
+[Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
 
-```python
-def send_users_messages(
-    self,
-    ApplicationId: str,
-    SendUsersMessageRequest: SendUsersMessageRequestTypeDef
-) -> SendUsersMessagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SendUsersMessageRequest`:
+  [SendUsersMessageRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#sendusersmessagerequesttypedef)
+  *(required)*
+
+Returns
+[SendUsersMessagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#sendusersmessagesresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("pinpoint").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource]
+Boto3 documentation:
+[Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    TagsModel: "TagsModelTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagsModel`:
+  [TagsModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#tagsmodeltypedef)
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("pinpoint").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource]
+Boto3 documentation:
+[Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_adm_channel
 
 Type annotations for `boto3.client("pinpoint").update_adm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
 
-```python
-def update_adm_channel(
-    self,
-    ADMChannelRequest: ADMChannelRequestTypeDef,
-    ApplicationId: str
-) -> UpdateAdmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ADMChannelRequest`:
+  [ADMChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#admchannelrequesttypedef)
+  *(required)*
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[UpdateAdmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateadmchannelresponsetypedef).
 
 ### update_apns_channel
 
 Type annotations for `boto3.client("pinpoint").update_apns_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
 
-```python
-def update_apns_channel(
-    self,
-    APNSChannelRequest: APNSChannelRequestTypeDef,
-    ApplicationId: str
-) -> UpdateApnsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `APNSChannelRequest`:
+  [APNSChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnschannelrequesttypedef)
+  *(required)*
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[UpdateApnsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateapnschannelresponsetypedef).
 
 ### update_apns_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").update_apns_sandbox_channel` method.
+Type annotations for `boto3.client("pinpoint").update_apns_sandbox_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
 
-```python
-def update_apns_sandbox_channel(
-    self,
-    APNSSandboxChannelRequest: APNSSandboxChannelRequestTypeDef,
-    ApplicationId: str
-) -> UpdateApnsSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `APNSSandboxChannelRequest`:
+  [APNSSandboxChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnssandboxchannelrequesttypedef)
+  *(required)*
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[UpdateApnsSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateapnssandboxchannelresponsetypedef).
 
 ### update_apns_voip_channel
 
-Type annotations for `boto3.client("pinpoint").update_apns_voip_channel` method.
+Type annotations for `boto3.client("pinpoint").update_apns_voip_channel`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
 
-```python
-def update_apns_voip_channel(
-    self,
-    APNSVoipChannelRequest: APNSVoipChannelRequestTypeDef,
-    ApplicationId: str
-) -> UpdateApnsVoipChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `APNSVoipChannelRequest`:
+  [APNSVoipChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipchannelrequesttypedef)
+  *(required)*
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[UpdateApnsVoipChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateapnsvoipchannelresponsetypedef).
 
 ### update_apns_voip_sandbox_channel
 
-Type annotations for `boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
+Type annotations for
+`boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
 
-```python
-def update_apns_voip_sandbox_channel(
-    self,
-    APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequestTypeDef,
-    ApplicationId: str
-) -> UpdateApnsVoipSandboxChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `APNSVoipSandboxChannelRequest`:
+  [APNSVoipSandboxChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#apnsvoipsandboxchannelrequesttypedef)
+  *(required)*
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[UpdateApnsVoipSandboxChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateapnsvoipsandboxchannelresponsetypedef).
 
 ### update_application_settings
 
-Type annotations for `boto3.client("pinpoint").update_application_settings` method.
+Type annotations for `boto3.client("pinpoint").update_application_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings]
+Boto3 documentation:
+[Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
 
-```python
-def update_application_settings(
-    self,
-    ApplicationId: str,
-    WriteApplicationSettingsRequest: WriteApplicationSettingsRequestTypeDef
-) -> UpdateApplicationSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `WriteApplicationSettingsRequest`:
+  [WriteApplicationSettingsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writeapplicationsettingsrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateApplicationSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateapplicationsettingsresponsetypedef).
 
 ### update_baidu_channel
 
 Type annotations for `boto3.client("pinpoint").update_baidu_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
 
-```python
-def update_baidu_channel(
-    self,
-    ApplicationId: str,
-    BaiduChannelRequest: BaiduChannelRequestTypeDef
-) -> UpdateBaiduChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `BaiduChannelRequest`:
+  [BaiduChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#baiduchannelrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateBaiduChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatebaiduchannelresponsetypedef).
 
 ### update_campaign
 
 Type annotations for `boto3.client("pinpoint").update_campaign` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign]
+Boto3 documentation:
+[Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
 
-```python
-def update_campaign(
-    self,
-    ApplicationId: str,
-    CampaignId: str,
-    WriteCampaignRequest: WriteCampaignRequestTypeDef
-) -> UpdateCampaignResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `CampaignId`: `str` *(required)*
+- `WriteCampaignRequest`:
+  [WriteCampaignRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writecampaignrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateCampaignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatecampaignresponsetypedef).
 
 ### update_email_channel
 
 Type annotations for `boto3.client("pinpoint").update_email_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
 
-```python
-def update_email_channel(
-    self,
-    ApplicationId: str,
-    EmailChannelRequest: EmailChannelRequestTypeDef
-) -> UpdateEmailChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EmailChannelRequest`:
+  [EmailChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailchannelrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateEmailChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateemailchannelresponsetypedef).
 
 ### update_email_template
 
 Type annotations for `boto3.client("pinpoint").update_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template]
+Boto3 documentation:
+[Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
 
-```python
-def update_email_template(
-    self,
-    EmailTemplateRequest: EmailTemplateRequestTypeDef,
-    TemplateName: str,
-    CreateNewVersion: bool = None,
-    Version: str = None
-) -> UpdateEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailTemplateRequest`:
+  [EmailTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#emailtemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
+
+Returns
+[UpdateEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateemailtemplateresponsetypedef).
 
 ### update_endpoint
 
 Type annotations for `boto3.client("pinpoint").update_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint]
+Boto3 documentation:
+[Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
 
-```python
-def update_endpoint(
-    self,
-    ApplicationId: str,
-    EndpointId: str,
-    EndpointRequest: EndpointRequestTypeDef
-) -> UpdateEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EndpointId`: `str` *(required)*
+- `EndpointRequest`:
+  [EndpointRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateendpointresponsetypedef).
 
 ### update_endpoints_batch
 
 Type annotations for `boto3.client("pinpoint").update_endpoints_batch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch]
+Boto3 documentation:
+[Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
 
-```python
-def update_endpoints_batch(
-    self,
-    ApplicationId: str,
-    EndpointBatchRequest: EndpointBatchRequestTypeDef
-) -> UpdateEndpointsBatchResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `EndpointBatchRequest`:
+  [EndpointBatchRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#endpointbatchrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateEndpointsBatchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updateendpointsbatchresponsetypedef).
 
 ### update_gcm_channel
 
 Type annotations for `boto3.client("pinpoint").update_gcm_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
 
-```python
-def update_gcm_channel(
-    self,
-    ApplicationId: str,
-    GCMChannelRequest: GCMChannelRequestTypeDef
-) -> UpdateGcmChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `GCMChannelRequest`:
+  [GCMChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#gcmchannelrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateGcmChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updategcmchannelresponsetypedef).
 
 ### update_journey
 
 Type annotations for `boto3.client("pinpoint").update_journey` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey]
+Boto3 documentation:
+[Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
 
-```python
-def update_journey(
-    self,
-    ApplicationId: str,
-    JourneyId: str,
-    WriteJourneyRequest: WriteJourneyRequestTypeDef
-) -> UpdateJourneyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+- `WriteJourneyRequest`:
+  [WriteJourneyRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writejourneyrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateJourneyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatejourneyresponsetypedef).
 
 ### update_journey_state
 
 Type annotations for `boto3.client("pinpoint").update_journey_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state]
+Boto3 documentation:
+[Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
 
-```python
-def update_journey_state(
-    self,
-    ApplicationId: str,
-    JourneyId: str,
-    JourneyStateRequest: JourneyStateRequestTypeDef
-) -> UpdateJourneyStateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `JourneyId`: `str` *(required)*
+- `JourneyStateRequest`:
+  [JourneyStateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#journeystaterequesttypedef)
+  *(required)*
+
+Returns
+[UpdateJourneyStateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatejourneystateresponsetypedef).
 
 ### update_push_template
 
 Type annotations for `boto3.client("pinpoint").update_push_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template]
+Boto3 documentation:
+[Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
 
-```python
-def update_push_template(
-    self,
-    PushNotificationTemplateRequest: PushNotificationTemplateRequestTypeDef,
-    TemplateName: str,
-    CreateNewVersion: bool = None,
-    Version: str = None
-) -> UpdatePushTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PushNotificationTemplateRequest`:
+  [PushNotificationTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#pushnotificationtemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
+
+Returns
+[UpdatePushTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatepushtemplateresponsetypedef).
 
 ### update_recommender_configuration
 
-Type annotations for `boto3.client("pinpoint").update_recommender_configuration` method.
+Type annotations for
+`boto3.client("pinpoint").update_recommender_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration]
+Boto3 documentation:
+[Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
 
-```python
-def update_recommender_configuration(
-    self,
-    RecommenderId: str,
-    UpdateRecommenderConfiguration: UpdateRecommenderConfigurationTypeDef
-) -> UpdateRecommenderConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RecommenderId`: `str` *(required)*
+- `UpdateRecommenderConfiguration`:
+  [UpdateRecommenderConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updaterecommenderconfigurationtypedef)
+  *(required)*
+
+Returns
+[UpdateRecommenderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updaterecommenderconfigurationresponsetypedef).
 
 ### update_segment
 
 Type annotations for `boto3.client("pinpoint").update_segment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment]
+Boto3 documentation:
+[Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
 
-```python
-def update_segment(
-    self,
-    ApplicationId: str,
-    SegmentId: str,
-    WriteSegmentRequest: WriteSegmentRequestTypeDef
-) -> UpdateSegmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SegmentId`: `str` *(required)*
+- `WriteSegmentRequest`:
+  [WriteSegmentRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#writesegmentrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateSegmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatesegmentresponsetypedef).
 
 ### update_sms_channel
 
 Type annotations for `boto3.client("pinpoint").update_sms_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
 
-```python
-def update_sms_channel(
-    self,
-    ApplicationId: str,
-    SMSChannelRequest: SMSChannelRequestTypeDef
-) -> UpdateSmsChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SMSChannelRequest`:
+  [SMSChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smschannelrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateSmsChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatesmschannelresponsetypedef).
 
 ### update_sms_template
 
 Type annotations for `boto3.client("pinpoint").update_sms_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template]
+Boto3 documentation:
+[Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
 
-```python
-def update_sms_template(
-    self,
-    SMSTemplateRequest: SMSTemplateRequestTypeDef,
-    TemplateName: str,
-    CreateNewVersion: bool = None,
-    Version: str = None
-) -> UpdateSmsTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SMSTemplateRequest`:
+  [SMSTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#smstemplaterequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
+
+Returns
+[UpdateSmsTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatesmstemplateresponsetypedef).
 
 ### update_template_active_version
 
-Type annotations for `boto3.client("pinpoint").update_template_active_version` method.
+Type annotations for `boto3.client("pinpoint").update_template_active_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version]
+Boto3 documentation:
+[Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
 
-```python
-def update_template_active_version(
-    self,
-    TemplateActiveVersionRequest: TemplateActiveVersionRequestTypeDef,
-    TemplateName: str,
-    TemplateType: str
-) -> UpdateTemplateActiveVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateActiveVersionRequest`:
+  [TemplateActiveVersionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#templateactiveversionrequesttypedef)
+  *(required)*
+- `TemplateName`: `str` *(required)*
+- `TemplateType`: `str` *(required)*
+
+Returns
+[UpdateTemplateActiveVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatetemplateactiveversionresponsetypedef).
 
 ### update_voice_channel
 
 Type annotations for `boto3.client("pinpoint").update_voice_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel]
+Boto3 documentation:
+[Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
 
-```python
-def update_voice_channel(
-    self,
-    ApplicationId: str,
-    VoiceChannelRequest: VoiceChannelRequestTypeDef
-) -> UpdateVoiceChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `VoiceChannelRequest`:
+  [VoiceChannelRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicechannelrequesttypedef)
+  *(required)*
+
+Returns
+[UpdateVoiceChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatevoicechannelresponsetypedef).
 
 ### update_voice_template
 
 Type annotations for `boto3.client("pinpoint").update_voice_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template]
+Boto3 documentation:
+[Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
 
-```python
-def update_voice_template(
-    self,
-    TemplateName: str,
-    VoiceTemplateRequest: VoiceTemplateRequestTypeDef,
-    CreateNewVersion: bool = None,
-    Version: str = None
-) -> UpdateVoiceTemplateResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `TemplateName`: `str` *(required)*
+- `VoiceTemplateRequest`:
+  [VoiceTemplateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#voicetemplaterequesttypedef)
+  *(required)*
+- `CreateNewVersion`: `bool`
+- `Version`: `str`
 
-
+Returns
+[UpdateVoiceTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint/type_defs.html#updatevoicetemplateresponsetypedef).

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IAM
 
-Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+Auto-generated documentation for
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+type annotations stubs module
+[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ```bash
 pip install mypy-boto3-iam
@@ -23,7 +25,7 @@ pip install mypy-boto3-iam
 
 ## IAMClient
 
-Type annotations for  `boto3.client("iam")` as [IAMClient](./client.md)
+Type annotations for `boto3.client("iam")` as [IAMClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +33,10 @@ Can be used directly:
 from mypy_boto3_iam.client import IAMClient
 ```
 
-
 IAMClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_client_id_to_open_id_connect_provider](./client.md#add-client-id-to-open-id-connect-provider)
 - [add_role_to_instance_profile](./client.md#add-role-to-instance-profile)
 - [add_user_to_group](./client.md#add-user-to-group)
@@ -200,10 +200,8 @@ IAMClient [exceptions](./client.md#exceptions)
 - [upload_signing_certificate](./client.md#upload-signing-certificate)
 - [upload_ssh_public_key](./client.md#upload-ssh-public-key)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [CredentialReportExpiredException](./client.md#credentialreportexpiredexception)
@@ -233,19 +231,16 @@ IAMClient [exceptions](./client.md#exceptions)
 - [UnmodifiableEntityException](./client.md#unmodifiableentityexception)
 - [UnrecognizedPublicKeyEncodingException](./client.md#unrecognizedpublickeyencodingexception)
 
-
-
-
 ## IAMServiceResource
 
-Type annotations for  `boto3.resource("iam")` as [IAMServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("iam")` as
+[IAMServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_iam.service_resource import IAMServiceResource
 ```
-
 
 ### Collections
 
@@ -265,9 +260,6 @@ from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection, ...
 - [ServiceResourceServerCertificatesCollection](./service_resource.md#iamserviceresource.server-certificates)
 - [ServiceResourceUsersCollection](./service_resource.md#iamserviceresource.users)
 - [ServiceResourceVirtualMfaDevicesCollection](./service_resource.md#iamserviceresource.virtual-mfa-devices)
-
-
-
 
 ### Resources
 
@@ -301,13 +293,10 @@ from mypy_boto3_iam.service_resource import AccessKey, ...
 - [UserPolicy](./service_resource.md#userpolicy)
 - [VirtualMfaDevice](./service_resource.md#virtualmfadevice)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iam").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iam").get_paginator("...")`.
 
 Can be used directly:
 
@@ -342,12 +331,10 @@ from mypy_boto3_iam.paginators import GetAccountAuthorizationDetailsPaginator, .
 - [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
 - [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("iam").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("iam").get_waiter("...")`.
 
 Can be used directly:
 
@@ -359,9 +346,6 @@ from mypy_boto3_iam.waiters import InstanceProfileExistsWaiter, ...
 - [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
 - [RoleExistsWaiter](./waiters.md#roleexistswaiter)
 - [UserExistsWaiter](./waiters.md#userexistswaiter)
-
-
-
 
 ## Literals
 
@@ -424,13 +408,10 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityType, ...
 - [statusType](./literals.md#statustype)
 - [summaryKeyType](./literals.md#summarykeytype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

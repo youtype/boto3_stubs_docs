@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > QuickSight
 
-Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
-type annotations stubs module [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+Auto-generated documentation for
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+type annotations stubs module
+[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 ```bash
 pip install mypy-boto3-quicksight
@@ -19,7 +21,8 @@ pip install mypy-boto3-quicksight
 
 ## QuickSightClient
 
-Type annotations for  `boto3.client("quicksight")` as [QuickSightClient](./client.md)
+Type annotations for `boto3.client("quicksight")` as
+[QuickSightClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_quicksight.client import QuickSightClient
 ```
 
-
 QuickSightClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_ingestion](./client.md#cancel-ingestion)
 - [create_account_customization](./client.md#create-account-customization)
@@ -136,10 +137,8 @@ QuickSightClient [exceptions](./client.md#exceptions)
 - [update_theme_permissions](./client.md#update-theme-permissions)
 - [update_user](./client.md#update-user)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentUpdatingException](./client.md#concurrentupdatingexception)
@@ -160,14 +159,10 @@ QuickSightClient [exceptions](./client.md#exceptions)
 - [UnsupportedPricingPlanException](./client.md#unsupportedpricingplanexception)
 - [UnsupportedUserEditionException](./client.md#unsupportedusereditionexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("quicksight").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("quicksight").get_paginator("...")`.
 
 Can be used directly:
 
@@ -189,11 +184,6 @@ from mypy_boto3_quicksight.paginators import ListAnalysesPaginator, ...
 - [ListThemesPaginator](./paginators.md#listthemespaginator)
 - [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
 - [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -254,13 +244,10 @@ from mypy_boto3_quicksight.literals import AnalysisErrorType, ...
 - [ThemeType](./literals.md#themetype)
 - [UserRole](./literals.md#userrole)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

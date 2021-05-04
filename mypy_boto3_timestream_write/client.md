@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [TimestreamWrite](./README.md) > TimestreamWriteClient
 
-Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
-type annotations stubs module [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+Auto-generated documentation for
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+type annotations stubs module
+[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [TimestreamWriteClient for boto3 TimestreamWrite module](#timestreamwriteclient-for-boto3-timestreamwrite-module)
   - [TimestreamWriteClient](#timestreamwriteclient)
@@ -40,12 +42,13 @@ def get_timestream-write_client() -> TimestreamWriteClient:
     return boto3.client("timestream-write")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
+Boto3 documentation:
+[TimestreamWrite.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_timestream_write.client import Exceptions
@@ -53,7 +56,6 @@ from mypy_boto3_timestream_write.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -68,267 +70,260 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("timestream-write").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate]
+Boto3 documentation:
+[TimestreamWrite.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_database
 
 Type annotations for `boto3.client("timestream-write").create_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database]
+Boto3 documentation:
+[TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
 
-```python
-def create_database(
-    self,
-    DatabaseName: str,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDatabaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#createdatabaseresponsetypedef).
 
 ### create_table
 
 Type annotations for `boto3.client("timestream-write").create_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table]
+Boto3 documentation:
+[TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
 
-```python
-def create_table(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    RetentionProperties: "RetentionPropertiesTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `RetentionProperties`:
+  [RetentionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#retentionpropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#createtableresponsetypedef).
 
 ### delete_database
 
 Type annotations for `boto3.client("timestream-write").delete_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database]
+Boto3 documentation:
+[TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
 
-```python
-def delete_database(
-    self,
-    DatabaseName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
 
 ### delete_table
 
 Type annotations for `boto3.client("timestream-write").delete_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table]
+Boto3 documentation:
+[TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
 
-```python
-def delete_table(
-    self,
-    DatabaseName: str,
-    TableName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
 
 ### describe_database
 
-Type annotations for `boto3.client("timestream-write").describe_database` method.
+Type annotations for `boto3.client("timestream-write").describe_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database]
+Boto3 documentation:
+[TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
-```python
-def describe_database(
-    self,
-    DatabaseName: str
-) -> DescribeDatabaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+
+Returns
+[DescribeDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describedatabaseresponsetypedef).
 
 ### describe_endpoints
 
-Type annotations for `boto3.client("timestream-write").describe_endpoints` method.
+Type annotations for `boto3.client("timestream-write").describe_endpoints`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints]
+Boto3 documentation:
+[TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
-```python
-def describe_endpoints(
-    self
-) -> DescribeEndpointsResponseTypeDef:
-    pass
-```
+Returns
+[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describeendpointsresponsetypedef).
 
 ### describe_table
 
 Type annotations for `boto3.client("timestream-write").describe_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table]
+Boto3 documentation:
+[TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
 
-```python
-def describe_table(
-    self,
-    DatabaseName: str,
-    TableName: str
-) -> DescribeTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describetableresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("timestream-write").generate_presigned_url` method.
+Type annotations for `boto3.client("timestream-write").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url]
+Boto3 documentation:
+[TimestreamWrite.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_databases
 
 Type annotations for `boto3.client("timestream-write").list_databases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases]
+Boto3 documentation:
+[TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
 
-```python
-def list_databases(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDatabasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listdatabasesresponsetypedef).
 
 ### list_tables
 
 Type annotations for `boto3.client("timestream-write").list_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables]
+Boto3 documentation:
+[TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
 
-```python
-def list_tables(
-    self,
-    DatabaseName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTablesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listtablesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("timestream-write").list_tags_for_resource` method.
+Type annotations for `boto3.client("timestream-write").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource]
+Boto3 documentation:
+[TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("timestream-write").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource]
+Boto3 documentation:
+[TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("timestream-write").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource]
+Boto3 documentation:
+[TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_database
 
 Type annotations for `boto3.client("timestream-write").update_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database]
+Boto3 documentation:
+[TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
 
-```python
-def update_database(
-    self,
-    DatabaseName: str,
-    KmsKeyId: str
-) -> UpdateDatabaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `KmsKeyId`: `str` *(required)*
+
+Returns
+[UpdateDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#updatedatabaseresponsetypedef).
 
 ### update_table
 
 Type annotations for `boto3.client("timestream-write").update_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table]
+Boto3 documentation:
+[TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
 
-```python
-def update_table(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    RetentionProperties: "RetentionPropertiesTypeDef"
-) -> UpdateTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `RetentionProperties`:
+  [RetentionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#retentionpropertiestypedef)
+  *(required)*
+
+Returns
+[UpdateTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#updatetableresponsetypedef).
 
 ### write_records
 
 Type annotations for `boto3.client("timestream-write").write_records` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records]
+Boto3 documentation:
+[TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
 
-```python
-def write_records(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    Records: List[RecordTypeDef],
-    CommonAttributes: RecordTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#recordtypedef)\]
+  *(required)*
+- `CommonAttributes`:
+  [RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#recordtypedef)

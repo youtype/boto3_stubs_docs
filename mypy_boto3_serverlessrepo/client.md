@@ -1,9 +1,12 @@
 # ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > ServerlessApplicationRepositoryClient
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
+> ServerlessApplicationRepositoryClient
 
-Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+Auto-generated documentation for
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+type annotations stubs module
+[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module](#serverlessapplicationrepositoryclient-for-boto3-serverlessapplicationrepository-module)
   - [ServerlessApplicationRepositoryClient](#serverlessapplicationrepositoryclient)
@@ -40,12 +43,13 @@ def get_serverlessrepo_client() -> ServerlessApplicationRepositoryClient:
     return boto3.client("serverlessrepo")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
+Boto3 documentation:
+[ServerlessApplicationRepository.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_serverlessrepo.client import Exceptions
@@ -53,7 +57,6 @@ from mypy_boto3_serverlessrepo.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -65,293 +68,301 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("serverlessrepo").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_application
 
-Type annotations for `boto3.client("serverlessrepo").create_application` method.
+Type annotations for `boto3.client("serverlessrepo").create_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
 
-```python
-def create_application(
-    self,
-    Author: str,
-    Description: str,
-    Name: str,
-    HomePageUrl: str = None,
-    Labels: List[str] = None,
-    LicenseBody: str = None,
-    LicenseUrl: str = None,
-    ReadmeBody: str = None,
-    ReadmeUrl: str = None,
-    SemanticVersion: str = None,
-    SourceCodeArchiveUrl: str = None,
-    SourceCodeUrl: str = None,
-    SpdxLicenseId: str = None,
-    TemplateBody: str = None,
-    TemplateUrl: str = None
-) -> CreateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Author`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `HomePageUrl`: `str`
+- `Labels`: `List`\[`str`\]
+- `LicenseBody`: `str`
+- `LicenseUrl`: `str`
+- `ReadmeBody`: `str`
+- `ReadmeUrl`: `str`
+- `SemanticVersion`: `str`
+- `SourceCodeArchiveUrl`: `str`
+- `SourceCodeUrl`: `str`
+- `SpdxLicenseId`: `str`
+- `TemplateBody`: `str`
+- `TemplateUrl`: `str`
+
+Returns
+[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createapplicationresponsetypedef).
 
 ### create_application_version
 
-Type annotations for `boto3.client("serverlessrepo").create_application_version` method.
+Type annotations for
+`boto3.client("serverlessrepo").create_application_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
 
-```python
-def create_application_version(
-    self,
-    ApplicationId: str,
-    SemanticVersion: str,
-    SourceCodeArchiveUrl: str = None,
-    SourceCodeUrl: str = None,
-    TemplateBody: str = None,
-    TemplateUrl: str = None
-) -> CreateApplicationVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SemanticVersion`: `str` *(required)*
+- `SourceCodeArchiveUrl`: `str`
+- `SourceCodeUrl`: `str`
+- `TemplateBody`: `str`
+- `TemplateUrl`: `str`
+
+Returns
+[CreateApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createapplicationversionresponsetypedef).
 
 ### create_cloud_formation_change_set
 
-Type annotations for `boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
+Type annotations for
+`boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
 
-```python
-def create_cloud_formation_change_set(
-    self,
-    ApplicationId: str,
-    StackName: str,
-    Capabilities: List[str] = None,
-    ChangeSetName: str = None,
-    ClientToken: str = None,
-    Description: str = None,
-    NotificationArns: List[str] = None,
-    ParameterOverrides: List[ParameterValueTypeDef] = None,
-    ResourceTypes: List[str] = None,
-    RollbackConfiguration: RollbackConfigurationTypeDef = None,
-    SemanticVersion: str = None,
-    Tags: List[TagTypeDef] = None,
-    TemplateId: str = None
-) -> CreateCloudFormationChangeSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `StackName`: `str` *(required)*
+- `Capabilities`: `List`\[`str`\]
+- `ChangeSetName`: `str`
+- `ClientToken`: `str`
+- `Description`: `str`
+- `NotificationArns`: `List`\[`str`\]
+- `ParameterOverrides`:
+  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#parametervaluetypedef)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#rollbackconfigurationtypedef)
+- `SemanticVersion`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#tagtypedef)\]
+- `TemplateId`: `str`
+
+Returns
+[CreateCloudFormationChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createcloudformationchangesetresponsetypedef).
 
 ### create_cloud_formation_template
 
-Type annotations for `boto3.client("serverlessrepo").create_cloud_formation_template` method.
+Type annotations for
+`boto3.client("serverlessrepo").create_cloud_formation_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.create_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
 
-```python
-def create_cloud_formation_template(
-    self,
-    ApplicationId: str,
-    SemanticVersion: str = None
-) -> CreateCloudFormationTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SemanticVersion`: `str`
+
+Returns
+[CreateCloudFormationTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createcloudformationtemplateresponsetypedef).
 
 ### delete_application
 
-Type annotations for `boto3.client("serverlessrepo").delete_application` method.
+Type annotations for `boto3.client("serverlessrepo").delete_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
 
-```python
-def delete_application(
-    self,
-    ApplicationId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("serverlessrepo").generate_presigned_url` method.
+Type annotations for `boto3.client("serverlessrepo").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_application
 
 Type annotations for `boto3.client("serverlessrepo").get_application` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
 
-```python
-def get_application(
-    self,
-    ApplicationId: str,
-    SemanticVersion: str = None
-) -> GetApplicationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `SemanticVersion`: `str`
+
+Returns
+[GetApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getapplicationresponsetypedef).
 
 ### get_application_policy
 
-Type annotations for `boto3.client("serverlessrepo").get_application_policy` method.
+Type annotations for `boto3.client("serverlessrepo").get_application_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.get_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
 
-```python
-def get_application_policy(
-    self,
-    ApplicationId: str
-) -> GetApplicationPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+
+Returns
+[GetApplicationPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getapplicationpolicyresponsetypedef).
 
 ### get_cloud_formation_template
 
-Type annotations for `boto3.client("serverlessrepo").get_cloud_formation_template` method.
+Type annotations for
+`boto3.client("serverlessrepo").get_cloud_formation_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.get_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
 
-```python
-def get_cloud_formation_template(
-    self,
-    ApplicationId: str,
-    TemplateId: str
-) -> GetCloudFormationTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `TemplateId`: `str` *(required)*
+
+Returns
+[GetCloudFormationTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getcloudformationtemplateresponsetypedef).
 
 ### list_application_dependencies
 
-Type annotations for `boto3.client("serverlessrepo").list_application_dependencies` method.
+Type annotations for
+`boto3.client("serverlessrepo").list_application_dependencies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
 
-```python
-def list_application_dependencies(
-    self,
-    ApplicationId: str,
-    MaxItems: int = None,
-    NextToken: str = None,
-    SemanticVersion: str = None
-) -> ListApplicationDependenciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `MaxItems`: `int`
+- `NextToken`: `str`
+- `SemanticVersion`: `str`
+
+Returns
+[ListApplicationDependenciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationdependenciesresponsetypedef).
 
 ### list_application_versions
 
-Type annotations for `boto3.client("serverlessrepo").list_application_versions` method.
+Type annotations for `boto3.client("serverlessrepo").list_application_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
 
-```python
-def list_application_versions(
-    self,
-    ApplicationId: str,
-    MaxItems: int = None,
-    NextToken: str = None
-) -> ListApplicationVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `MaxItems`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationversionsresponsetypedef).
 
 ### list_applications
 
 Type annotations for `boto3.client("serverlessrepo").list_applications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
 
-```python
-def list_applications(
-    self,
-    MaxItems: int = None,
-    NextToken: str = None
-) -> ListApplicationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxItems`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationsresponsetypedef).
 
 ### put_application_policy
 
-Type annotations for `boto3.client("serverlessrepo").put_application_policy` method.
+Type annotations for `boto3.client("serverlessrepo").put_application_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.put_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
 
-```python
-def put_application_policy(
-    self,
-    ApplicationId: str,
-    Statements: List["ApplicationPolicyStatementTypeDef"]
-) -> PutApplicationPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `Statements`:
+  `List`\[[ApplicationPolicyStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationpolicystatementtypedef)\]
+  *(required)*
+
+Returns
+[PutApplicationPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#putapplicationpolicyresponsetypedef).
 
 ### unshare_application
 
-Type annotations for `boto3.client("serverlessrepo").unshare_application` method.
+Type annotations for `boto3.client("serverlessrepo").unshare_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.unshare_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
 
-```python
-def unshare_application(
-    self,
-    ApplicationId: str,
-    OrganizationId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ApplicationId`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
 
 ### update_application
 
-Type annotations for `boto3.client("serverlessrepo").update_application` method.
+Type annotations for `boto3.client("serverlessrepo").update_application`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application]
+Boto3 documentation:
+[ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
 
-```python
-def update_application(
-    self,
-    ApplicationId: str,
-    Author: str = None,
-    Description: str = None,
-    HomePageUrl: str = None,
-    Labels: List[str] = None,
-    ReadmeBody: str = None,
-    ReadmeUrl: str = None
-) -> UpdateApplicationResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ApplicationId`: `str` *(required)*
+- `Author`: `str`
+- `Description`: `str`
+- `HomePageUrl`: `str`
+- `Labels`: `List`\[`str`\]
+- `ReadmeBody`: `str`
+- `ReadmeUrl`: `str`
 
+Returns
+[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#updateapplicationresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("serverlessrepo").get_paginator` method with overloads.
+Type annotations for `boto3.client("serverlessrepo").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_application_dependencies")` -> [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
-- `client.get_paginator("list_application_versions")` -> [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
-- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
+- `client.get_paginator("list_application_dependencies")` ->
+  [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
+- `client.get_paginator("list_application_versions")` ->
+  [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
+- `client.get_paginator("list_applications")` ->
+  [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)

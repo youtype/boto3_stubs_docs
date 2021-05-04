@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Schemas](./README.md) > Structures
 
-Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+Auto-generated documentation for
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+type annotations stubs module
+[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Typed dictionaries for boto3 Schemas module](#typed-dictionaries-for-boto3-schemas-module)
   - [CreateDiscovererResponseTypeDef](#creatediscovererresponsetypedef)
@@ -45,17 +47,15 @@ type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy
 from mypy_boto3_schemas.type_defs import CreateDiscovererResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `DiscovererArn`: `str`
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
-- `State`: `DiscovererState`
-- `Tags`: `Dict[str, str]`
-
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateRegistryResponseTypeDef
 
@@ -63,15 +63,12 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import CreateRegistryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `RegistryArn`: `str`
 - `RegistryName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateSchemaResponseTypeDef
 
@@ -79,19 +76,16 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import CreateSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `LastModified`: `datetime`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Type`: `str`
 - `VersionCreatedDate`: `datetime`
-
 
 ## DescribeCodeBindingResponseTypeDef
 
@@ -99,15 +93,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import DescribeCodeBindingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDate`: `datetime`
 - `LastModified`: `datetime`
 - `SchemaVersion`: `str`
-- `Status`: `CodeGenerationStatus`
-
+- `Status`:
+  [CodeGenerationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#codegenerationstatus)
 
 ## DescribeDiscovererResponseTypeDef
 
@@ -115,17 +107,15 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import DescribeDiscovererResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `DiscovererArn`: `str`
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
-- `State`: `DiscovererState`
-- `Tags`: `Dict[str, str]`
-
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeRegistryResponseTypeDef
 
@@ -133,15 +123,12 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import DescribeRegistryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `RegistryArn`: `str`
 - `RegistryName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeSchemaResponseTypeDef
 
@@ -149,20 +136,17 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import DescribeSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Content`: `str`
 - `Description`: `str`
 - `LastModified`: `datetime`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Type`: `str`
 - `VersionCreatedDate`: `datetime`
-
 
 ## DiscovererSummaryTypeDef
 
@@ -170,16 +154,14 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import DiscovererSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DiscovererArn`: `str`
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
-- `State`: `DiscovererState`
-- `Tags`: `Dict[str, str]`
-
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ExportSchemaResponseTypeDef
 
@@ -187,16 +169,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ExportSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Content`: `str`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
 - `Type`: `str`
-
 
 ## GetCodeBindingSourceResponseTypeDef
 
@@ -204,12 +183,9 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Body`: `Union[bytes, IO[bytes]]`
 
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## GetDiscoveredSchemaResponseTypeDef
 
@@ -217,12 +193,9 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Content`: `str`
 
+- `Content`: `str`
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -230,13 +203,10 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import GetResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Policy`: `str`
 - `RevisionId`: `str`
-
 
 ## ListDiscoverersResponseTypeDef
 
@@ -244,13 +214,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ListDiscoverersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Discoverers`: `List["DiscovererSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Discoverers`:
+  `List`\[[DiscovererSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#discoverersummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListRegistriesResponseTypeDef
 
@@ -258,13 +226,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ListRegistriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Registries`: `List["RegistrySummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `Registries`:
+  `List`\[[RegistrySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#registrysummarytypedef)\]
 
 ## ListSchemaVersionsResponseTypeDef
 
@@ -272,13 +238,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ListSchemaVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `SchemaVersions`: `List["SchemaVersionSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `SchemaVersions`:
+  `List`\[[SchemaVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#schemaversionsummarytypedef)\]
 
 ## ListSchemasResponseTypeDef
 
@@ -286,13 +250,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ListSchemasResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Schemas`: `List["SchemaSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `Schemas`:
+  `List`\[[SchemaSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#schemasummarytypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -300,12 +262,9 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -313,14 +272,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutCodeBindingResponseTypeDef
 
@@ -328,15 +284,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import PutCodeBindingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDate`: `datetime`
 - `LastModified`: `datetime`
 - `SchemaVersion`: `str`
-- `Status`: `CodeGenerationStatus`
-
+- `Status`:
+  [CodeGenerationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#codegenerationstatus)
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -344,13 +298,10 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Policy`: `str`
 - `RevisionId`: `str`
-
 
 ## RegistrySummaryTypeDef
 
@@ -358,14 +309,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import RegistrySummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RegistryArn`: `str`
 - `RegistryName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## SchemaSummaryTypeDef
 
@@ -373,16 +321,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import SchemaSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LastModified`: `datetime`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `VersionCount`: `int`
-
 
 ## SchemaVersionSummaryTypeDef
 
@@ -390,15 +335,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import SchemaVersionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
-- `Type`: `TypeType`
-
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#typetype)
 
 ## SearchSchemaSummaryTypeDef
 
@@ -406,15 +349,13 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import SearchSchemaSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RegistryName`: `str`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
-- `SchemaVersions`: `List["SearchSchemaVersionSummaryTypeDef"]`
-
+- `SchemaVersions`:
+  `List`\[[SearchSchemaVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#searchschemaversionsummarytypedef)\]
 
 ## SearchSchemaVersionSummaryTypeDef
 
@@ -422,14 +363,12 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import SearchSchemaVersionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedDate`: `datetime`
 - `SchemaVersion`: `str`
-- `Type`: `TypeType`
-
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#typetype)
 
 ## SearchSchemasResponseTypeDef
 
@@ -437,13 +376,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import SearchSchemasResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Schemas`: `List["SearchSchemaSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `Schemas`:
+  `List`\[[SearchSchemaSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#searchschemasummarytypedef)\]
 
 ## StartDiscovererResponseTypeDef
 
@@ -451,13 +388,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import StartDiscovererResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DiscovererId`: `str`
-- `State`: `DiscovererState`
 
+- `DiscovererId`: `str`
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
 
 ## StopDiscovererResponseTypeDef
 
@@ -465,13 +400,11 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import StopDiscovererResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DiscovererId`: `str`
-- `State`: `DiscovererState`
 
+- `DiscovererId`: `str`
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
 
 ## UpdateDiscovererResponseTypeDef
 
@@ -479,17 +412,15 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import UpdateDiscovererResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `DiscovererArn`: `str`
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
-- `State`: `DiscovererState`
-- `Tags`: `Dict[str, str]`
-
+- `State`:
+  [DiscovererState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#discovererstate)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateRegistryResponseTypeDef
 
@@ -497,15 +428,12 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import UpdateRegistryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `RegistryArn`: `str`
 - `RegistryName`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateSchemaResponseTypeDef
 
@@ -513,19 +441,16 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import UpdateSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Description`: `str`
 - `LastModified`: `datetime`
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Type`: `str`
 - `VersionCreatedDate`: `datetime`
-
 
 ## WaiterConfigTypeDef
 
@@ -533,10 +458,7 @@ Optional fields:
 from mypy_boto3_schemas.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

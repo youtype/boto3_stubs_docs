@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IdentityStore](./README.md) > Structures
 
-Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
-type annotations stubs module [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+Auto-generated documentation for
+[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
+type annotations stubs module
+[mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [Typed dictionaries for boto3 IdentityStore module](#typed-dictionaries-for-boto3-identitystore-module)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
@@ -20,13 +22,10 @@ type annotations stubs module [mypy_boto3_identitystore](https://pypi.org/projec
 from mypy_boto3_identitystore.type_defs import DescribeGroupResponseTypeDef
 ```
 
-
 Required fields:
+
 - `GroupId`: `str`
 - `DisplayName`: `str`
-
-
-
 
 ## DescribeUserResponseTypeDef
 
@@ -34,13 +33,10 @@ Required fields:
 from mypy_boto3_identitystore.type_defs import DescribeUserResponseTypeDef
 ```
 
-
 Required fields:
+
 - `UserName`: `str`
 - `UserId`: `str`
-
-
-
 
 ## FilterTypeDef
 
@@ -48,13 +44,10 @@ Required fields:
 from mypy_boto3_identitystore.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
+
 - `AttributePath`: `str`
 - `AttributeValue`: `str`
-
-
-
 
 ## GroupTypeDef
 
@@ -62,13 +55,10 @@ Required fields:
 from mypy_boto3_identitystore.type_defs import GroupTypeDef
 ```
 
-
 Required fields:
+
 - `GroupId`: `str`
 - `DisplayName`: `str`
-
-
-
 
 ## ListGroupsResponseTypeDef
 
@@ -76,15 +66,14 @@ Required fields:
 from mypy_boto3_identitystore.type_defs import ListGroupsResponseTypeDef
 ```
 
-
 Required fields:
-- `Groups`: `List["GroupTypeDef"]`
 
-
+- `Groups`:
+  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#grouptypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListUsersResponseTypeDef
 
@@ -92,15 +81,14 @@ Optional fields:
 from mypy_boto3_identitystore.type_defs import ListUsersResponseTypeDef
 ```
 
-
 Required fields:
-- `Users`: `List["UserTypeDef"]`
 
-
+- `Users`:
+  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#usertypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## UserTypeDef
 
@@ -108,10 +96,7 @@ Optional fields:
 from mypy_boto3_identitystore.type_defs import UserTypeDef
 ```
 
-
 Required fields:
+
 - `UserName`: `str`
 - `UserId`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Inspector
 
-Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+Auto-generated documentation for
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+type annotations stubs module
+[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ```bash
 pip install mypy-boto3-inspector
@@ -19,7 +21,8 @@ pip install mypy-boto3-inspector
 
 ## InspectorClient
 
-Type annotations for  `boto3.client("inspector")` as [InspectorClient](./client.md)
+Type annotations for `boto3.client("inspector")` as
+[InspectorClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_inspector.client import InspectorClient
 ```
 
-
 InspectorClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_attributes_to_findings](./client.md#add-attributes-to-findings)
 - [can_paginate](./client.md#can-paginate)
 - [create_assessment_target](./client.md#create-assessment-target)
@@ -74,10 +75,8 @@ InspectorClient [exceptions](./client.md#exceptions)
 - [unsubscribe_from_event](./client.md#unsubscribe-from-event)
 - [update_assessment_target](./client.md#update-assessment-target)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AgentsAlreadyRunningAssessmentException](./client.md#agentsalreadyrunningassessmentexception)
 - [AssessmentRunInProgressException](./client.md#assessmentruninprogressexception)
@@ -91,14 +90,10 @@ InspectorClient [exceptions](./client.md#exceptions)
 - [ServiceTemporarilyUnavailableException](./client.md#servicetemporarilyunavailableexception)
 - [UnsupportedFeatureException](./client.md#unsupportedfeatureexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("inspector").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("inspector").get_paginator("...")`.
 
 Can be used directly:
 
@@ -115,11 +110,6 @@ from mypy_boto3_inspector.paginators import ListAssessmentRunAgentsPaginator, ..
 - [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
 - [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -156,13 +146,10 @@ from mypy_boto3_inspector.literals import AgentHealth, ...
 - [Severity](./literals.md#severity)
 - [StopAction](./literals.md#stopaction)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

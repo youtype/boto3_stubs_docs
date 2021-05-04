@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kafka](./README.md) > Structures
 
-Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
-type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+Auto-generated documentation for
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+type annotations stubs module
+[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Typed dictionaries for boto3 Kafka module](#typed-dictionaries-for-boto3-kafka-module)
   - [BatchAssociateScramSecretResponseTypeDef](#batchassociatescramsecretresponsetypedef)
@@ -83,13 +85,11 @@ type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-b
 from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterArn`: `str`
-- `UnprocessedScramSecrets`: `List["UnprocessedScramSecretTypeDef"]`
 
+- `ClusterArn`: `str`
+- `UnprocessedScramSecrets`:
+  `List`\[[UnprocessedScramSecretTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#unprocessedscramsecrettypedef)\]
 
 ## BatchDisassociateScramSecretResponseTypeDef
 
@@ -97,13 +97,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import BatchDisassociateScramSecretResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterArn`: `str`
-- `UnprocessedScramSecrets`: `List["UnprocessedScramSecretTypeDef"]`
 
+- `ClusterArn`: `str`
+- `UnprocessedScramSecrets`:
+  `List`\[[UnprocessedScramSecretTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#unprocessedscramsecrettypedef)\]
 
 ## BrokerEBSVolumeInfoTypeDef
 
@@ -111,13 +109,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import BrokerEBSVolumeInfoTypeDef
 ```
 
-
 Required fields:
+
 - `KafkaBrokerNodeId`: `str`
 - `VolumeSizeGB`: `int`
-
-
-
 
 ## BrokerLogsTypeDef
 
@@ -125,14 +120,14 @@ Required fields:
 from mypy_boto3_kafka.type_defs import BrokerLogsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CloudWatchLogs`: `"CloudWatchLogsTypeDef"`
-- `Firehose`: `"FirehoseTypeDef"`
-- `S3`: `"S3TypeDef"`
 
+- `CloudWatchLogs`:
+  [CloudWatchLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#cloudwatchlogstypedef)
+- `Firehose`:
+  [FirehoseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#firehosetypedef)
+- `S3`:
+  [S3TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#s3typedef)
 
 ## BrokerNodeGroupInfoTypeDef
 
@@ -140,18 +135,17 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import BrokerNodeGroupInfoTypeDef
 ```
 
-
 Required fields:
-- `ClientSubnets`: `List[str]`
+
+- `ClientSubnets`: `List`\[`str`\]
 - `InstanceType`: `str`
 
-
-
 Optional fields:
-- `BrokerAZDistribution`: `Literal['DEFAULT']`
-- `SecurityGroups`: `List[str]`
-- `StorageInfo`: `"StorageInfoTypeDef"`
 
+- `BrokerAZDistribution`: `Literal['DEFAULT']`
+- `SecurityGroups`: `List`\[`str`\]
+- `StorageInfo`:
+  [StorageInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#storageinfotypedef)
 
 ## BrokerNodeInfoTypeDef
 
@@ -159,17 +153,15 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import BrokerNodeInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttachedENIId`: `str`
 - `BrokerId`: `float`
 - `ClientSubnet`: `str`
 - `ClientVpcIpAddress`: `str`
-- `CurrentBrokerSoftwareInfo`: `"BrokerSoftwareInfoTypeDef"`
-- `Endpoints`: `List[str]`
-
+- `CurrentBrokerSoftwareInfo`:
+  [BrokerSoftwareInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokersoftwareinfotypedef)
+- `Endpoints`: `List`\[`str`\]
 
 ## BrokerSoftwareInfoTypeDef
 
@@ -177,14 +169,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import BrokerSoftwareInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConfigurationArn`: `str`
 - `ConfigurationRevision`: `int`
 - `KafkaVersion`: `str`
-
 
 ## ClientAuthenticationTypeDef
 
@@ -192,13 +181,12 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ClientAuthenticationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Sasl`: `"SaslTypeDef"`
-- `Tls`: `"TlsTypeDef"`
 
+- `Sasl`:
+  [SaslTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#sasltypedef)
+- `Tls`:
+  [TlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#tlstypedef)
 
 ## CloudWatchLogsTypeDef
 
@@ -206,15 +194,13 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import CloudWatchLogsTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
-- `LogGroup`: `str`
 
+- `LogGroup`: `str`
 
 ## ClusterInfoTypeDef
 
@@ -222,29 +208,35 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ClusterInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActiveOperationArn`: `str`
-- `BrokerNodeGroupInfo`: `"BrokerNodeGroupInfoTypeDef"`
-- `ClientAuthentication`: `"ClientAuthenticationTypeDef"`
+- `BrokerNodeGroupInfo`:
+  [BrokerNodeGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokernodegroupinfotypedef)
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clientauthenticationtypedef)
 - `ClusterArn`: `str`
 - `ClusterName`: `str`
 - `CreationTime`: `datetime`
-- `CurrentBrokerSoftwareInfo`: `"BrokerSoftwareInfoTypeDef"`
+- `CurrentBrokerSoftwareInfo`:
+  [BrokerSoftwareInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokersoftwareinfotypedef)
 - `CurrentVersion`: `str`
-- `EncryptionInfo`: `"EncryptionInfoTypeDef"`
-- `EnhancedMonitoring`: `EnhancedMonitoring`
-- `OpenMonitoring`: `"OpenMonitoringTypeDef"`
-- `LoggingInfo`: `"LoggingInfoTypeDef"`
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#encryptioninfotypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+- `OpenMonitoring`:
+  [OpenMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringtypedef)
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
 - `NumberOfBrokerNodes`: `int`
-- `State`: `ClusterState`
-- `StateInfo`: `"StateInfoTypeDef"`
-- `Tags`: `Dict[str, str]`
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#clusterstate)
+- `StateInfo`:
+  [StateInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#stateinfotypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 - `ZookeeperConnectString`: `str`
 - `ZookeeperConnectStringTls`: `str`
-
 
 ## ClusterOperationInfoTypeDef
 
@@ -252,22 +244,23 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ClusterOperationInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientRequestId`: `str`
 - `ClusterArn`: `str`
 - `CreationTime`: `datetime`
 - `EndTime`: `datetime`
-- `ErrorInfo`: `"ErrorInfoTypeDef"`
+- `ErrorInfo`:
+  [ErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#errorinfotypedef)
 - `OperationArn`: `str`
 - `OperationState`: `str`
-- `OperationSteps`: `List["ClusterOperationStepTypeDef"]`
+- `OperationSteps`:
+  `List`\[[ClusterOperationStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusteroperationsteptypedef)\]
 - `OperationType`: `str`
-- `SourceClusterInfo`: `"MutableClusterInfoTypeDef"`
-- `TargetClusterInfo`: `"MutableClusterInfoTypeDef"`
-
+- `SourceClusterInfo`:
+  [MutableClusterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#mutableclusterinfotypedef)
+- `TargetClusterInfo`:
+  [MutableClusterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#mutableclusterinfotypedef)
 
 ## ClusterOperationStepInfoTypeDef
 
@@ -275,12 +268,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ClusterOperationStepInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StepStatus`: `str`
 
+- `StepStatus`: `str`
 
 ## ClusterOperationStepTypeDef
 
@@ -288,13 +278,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ClusterOperationStepTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StepInfo`: `"ClusterOperationStepInfoTypeDef"`
-- `StepName`: `str`
 
+- `StepInfo`:
+  [ClusterOperationStepInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusteroperationstepinfotypedef)
+- `StepName`: `str`
 
 ## CompatibleKafkaVersionTypeDef
 
@@ -302,13 +290,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import CompatibleKafkaVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SourceVersion`: `str`
-- `TargetVersions`: `List[str]`
 
+- `SourceVersion`: `str`
+- `TargetVersions`: `List`\[`str`\]
 
 ## ConfigurationInfoTypeDef
 
@@ -316,13 +301,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ConfigurationInfoTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `Revision`: `int`
-
-
-
 
 ## ConfigurationRevisionTypeDef
 
@@ -330,16 +312,14 @@ Required fields:
 from mypy_boto3_kafka.type_defs import ConfigurationRevisionTypeDef
 ```
 
-
 Required fields:
+
 - `CreationTime`: `datetime`
 - `Revision`: `int`
 
-
-
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## ConfigurationTypeDef
 
@@ -347,18 +327,17 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
 - `Description`: `str`
-- `KafkaVersions`: `List[str]`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `KafkaVersions`: `List`\[`str`\]
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: `ConfigurationState`
-
-
-
+- `State`:
+  [ConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#configurationstate)
 
 ## CreateClusterResponseTypeDef
 
@@ -366,14 +345,12 @@ Required fields:
 from mypy_boto3_kafka.type_defs import CreateClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterName`: `str`
-- `State`: `ClusterState`
-
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#clusterstate)
 
 ## CreateConfigurationResponseTypeDef
 
@@ -381,16 +358,15 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import CreateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: `ConfigurationState`
-
+- `State`:
+  [ConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#configurationstate)
 
 ## DeleteClusterResponseTypeDef
 
@@ -398,13 +374,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DeleteClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterArn`: `str`
-- `State`: `ClusterState`
 
+- `ClusterArn`: `str`
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#clusterstate)
 
 ## DeleteConfigurationResponseTypeDef
 
@@ -412,13 +386,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DeleteConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
-- `State`: `ConfigurationState`
 
+- `Arn`: `str`
+- `State`:
+  [ConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#configurationstate)
 
 ## DescribeClusterOperationResponseTypeDef
 
@@ -426,12 +398,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DescribeClusterOperationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterOperationInfo`: `"ClusterOperationInfoTypeDef"`
 
+- `ClusterOperationInfo`:
+  [ClusterOperationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusteroperationinfotypedef)
 
 ## DescribeClusterResponseTypeDef
 
@@ -439,12 +409,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DescribeClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterInfo`: `"ClusterInfoTypeDef"`
 
+- `ClusterInfo`:
+  [ClusterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusterinfotypedef)
 
 ## DescribeConfigurationResponseTypeDef
 
@@ -452,18 +420,17 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DescribeConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
 - `Description`: `str`
-- `KafkaVersions`: `List[str]`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
+- `KafkaVersions`: `List`\[`str`\]
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: `ConfigurationState`
-
+- `State`:
+  [ConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#configurationstate)
 
 ## DescribeConfigurationRevisionResponseTypeDef
 
@@ -471,16 +438,13 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import DescribeConfigurationRevisionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTime`: `datetime`
 - `Description`: `str`
 - `Revision`: `int`
-- `ServerProperties`: `Union[bytes, IO[bytes]]`
-
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## EBSStorageInfoTypeDef
 
@@ -488,12 +452,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import EBSStorageInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VolumeSize`: `int`
 
+- `VolumeSize`: `int`
 
 ## EncryptionAtRestTypeDef
 
@@ -501,12 +462,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import EncryptionAtRestTypeDef
 ```
 
-
 Required fields:
+
 - `DataVolumeKMSKeyId`: `str`
-
-
-
 
 ## EncryptionInTransitTypeDef
 
@@ -514,13 +472,11 @@ Required fields:
 from mypy_boto3_kafka.type_defs import EncryptionInTransitTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClientBroker`: `ClientBroker`
-- `InCluster`: `bool`
 
+- `ClientBroker`:
+  [ClientBroker](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#clientbroker)
+- `InCluster`: `bool`
 
 ## EncryptionInfoTypeDef
 
@@ -528,13 +484,12 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import EncryptionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EncryptionAtRest`: `"EncryptionAtRestTypeDef"`
-- `EncryptionInTransit`: `"EncryptionInTransitTypeDef"`
 
+- `EncryptionAtRest`:
+  [EncryptionAtRestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#encryptionatresttypedef)
+- `EncryptionInTransit`:
+  [EncryptionInTransitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#encryptionintransittypedef)
 
 ## ErrorInfoTypeDef
 
@@ -542,13 +497,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ErrorInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ErrorCode`: `str`
 - `ErrorString`: `str`
-
 
 ## FirehoseTypeDef
 
@@ -556,15 +508,13 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import FirehoseTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
-- `DeliveryStream`: `str`
 
+- `DeliveryStream`: `str`
 
 ## GetBootstrapBrokersResponseTypeDef
 
@@ -572,14 +522,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import GetBootstrapBrokersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BootstrapBrokerString`: `str`
 - `BootstrapBrokerStringTls`: `str`
 - `BootstrapBrokerStringSaslScram`: `str`
-
 
 ## GetCompatibleKafkaVersionsResponseTypeDef
 
@@ -587,12 +534,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import GetCompatibleKafkaVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CompatibleKafkaVersions`: `List["CompatibleKafkaVersionTypeDef"]`
 
+- `CompatibleKafkaVersions`:
+  `List`\[[CompatibleKafkaVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#compatiblekafkaversiontypedef)\]
 
 ## JmxExporterInfoTypeDef
 
@@ -600,12 +545,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import JmxExporterInfoTypeDef
 ```
 
-
 Required fields:
+
 - `EnabledInBroker`: `bool`
-
-
-
 
 ## JmxExporterTypeDef
 
@@ -613,12 +555,9 @@ Required fields:
 from mypy_boto3_kafka.type_defs import JmxExporterTypeDef
 ```
 
-
 Required fields:
+
 - `EnabledInBroker`: `bool`
-
-
-
 
 ## KafkaVersionTypeDef
 
@@ -626,13 +565,11 @@ Required fields:
 from mypy_boto3_kafka.type_defs import KafkaVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Version`: `str`
-- `Status`: `KafkaVersionStatus`
 
+- `Version`: `str`
+- `Status`:
+  [KafkaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#kafkaversionstatus)
 
 ## ListClusterOperationsResponseTypeDef
 
@@ -640,13 +577,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListClusterOperationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterOperationInfoList`: `List["ClusterOperationInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `ClusterOperationInfoList`:
+  `List`\[[ClusterOperationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusteroperationinfotypedef)\]
+- `NextToken`: `str`
 
 ## ListClustersResponseTypeDef
 
@@ -654,13 +589,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListClustersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClusterInfoList`: `List["ClusterInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `ClusterInfoList`:
+  `List`\[[ClusterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clusterinfotypedef)\]
+- `NextToken`: `str`
 
 ## ListConfigurationRevisionsResponseTypeDef
 
@@ -668,13 +601,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListConfigurationRevisionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Revisions`: `List["ConfigurationRevisionTypeDef"]`
 
+- `NextToken`: `str`
+- `Revisions`:
+  `List`\[[ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationrevisiontypedef)\]
 
 ## ListConfigurationsResponseTypeDef
 
@@ -682,13 +613,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListConfigurationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Configurations`: `List["ConfigurationTypeDef"]`
-- `NextToken`: `str`
 
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationtypedef)\]
+- `NextToken`: `str`
 
 ## ListKafkaVersionsResponseTypeDef
 
@@ -696,13 +625,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListKafkaVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KafkaVersions`: `List["KafkaVersionTypeDef"]`
-- `NextToken`: `str`
 
+- `KafkaVersions`:
+  `List`\[[KafkaVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#kafkaversiontypedef)\]
+- `NextToken`: `str`
 
 ## ListNodesResponseTypeDef
 
@@ -710,13 +637,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListNodesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `NodeInfoList`: `List["NodeInfoTypeDef"]`
 
+- `NextToken`: `str`
+- `NodeInfoList`:
+  `List`\[[NodeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#nodeinfotypedef)\]
 
 ## ListScramSecretsResponseTypeDef
 
@@ -724,13 +649,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListScramSecretsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `SecretArnList`: `List[str]`
 
+- `NextToken`: `str`
+- `SecretArnList`: `List`\[`str`\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -738,12 +660,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## LoggingInfoTypeDef
 
@@ -751,12 +670,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import LoggingInfoTypeDef
 ```
 
-
 Required fields:
-- `BrokerLogs`: `"BrokerLogsTypeDef"`
 
-
-
+- `BrokerLogs`:
+  [BrokerLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokerlogstypedef)
 
 ## MutableClusterInfoTypeDef
 
@@ -764,19 +681,21 @@ Required fields:
 from mypy_boto3_kafka.type_defs import MutableClusterInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BrokerEBSVolumeInfo`: `List["BrokerEBSVolumeInfoTypeDef"]`
-- `ConfigurationInfo`: `"ConfigurationInfoTypeDef"`
-- `NumberOfBrokerNodes`: `int`
-- `EnhancedMonitoring`: `EnhancedMonitoring`
-- `OpenMonitoring`: `"OpenMonitoringTypeDef"`
-- `KafkaVersion`: `str`
-- `LoggingInfo`: `"LoggingInfoTypeDef"`
-- `InstanceType`: `str`
 
+- `BrokerEBSVolumeInfo`:
+  `List`\[[BrokerEBSVolumeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokerebsvolumeinfotypedef)\]
+- `ConfigurationInfo`:
+  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+- `NumberOfBrokerNodes`: `int`
+- `EnhancedMonitoring`:
+  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+- `OpenMonitoring`:
+  [OpenMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringtypedef)
+- `KafkaVersion`: `str`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
+- `InstanceType`: `str`
 
 ## NodeExporterInfoTypeDef
 
@@ -784,12 +703,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import NodeExporterInfoTypeDef
 ```
 
-
 Required fields:
+
 - `EnabledInBroker`: `bool`
-
-
-
 
 ## NodeExporterTypeDef
 
@@ -797,12 +713,9 @@ Required fields:
 from mypy_boto3_kafka.type_defs import NodeExporterTypeDef
 ```
 
-
 Required fields:
+
 - `EnabledInBroker`: `bool`
-
-
-
 
 ## NodeInfoTypeDef
 
@@ -810,17 +723,16 @@ Required fields:
 from mypy_boto3_kafka.type_defs import NodeInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AddedToClusterTime`: `str`
-- `BrokerNodeInfo`: `"BrokerNodeInfoTypeDef"`
+- `BrokerNodeInfo`:
+  [BrokerNodeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokernodeinfotypedef)
 - `InstanceType`: `str`
 - `NodeARN`: `str`
 - `NodeType`: `Literal['BROKER']`
-- `ZookeeperNodeInfo`: `"ZookeeperNodeInfoTypeDef"`
-
+- `ZookeeperNodeInfo`:
+  [ZookeeperNodeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#zookeepernodeinfotypedef)
 
 ## OpenMonitoringInfoTypeDef
 
@@ -828,12 +740,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import OpenMonitoringInfoTypeDef
 ```
 
-
 Required fields:
-- `Prometheus`: `"PrometheusInfoTypeDef"`
 
-
-
+- `Prometheus`:
+  [PrometheusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#prometheusinfotypedef)
 
 ## OpenMonitoringTypeDef
 
@@ -841,12 +751,10 @@ Required fields:
 from mypy_boto3_kafka.type_defs import OpenMonitoringTypeDef
 ```
 
-
 Required fields:
-- `Prometheus`: `"PrometheusTypeDef"`
 
-
-
+- `Prometheus`:
+  [PrometheusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#prometheustypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -854,14 +762,11 @@ Required fields:
 from mypy_boto3_kafka.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PrometheusInfoTypeDef
 
@@ -869,13 +774,12 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import PrometheusInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JmxExporter`: `"JmxExporterInfoTypeDef"`
-- `NodeExporter`: `"NodeExporterInfoTypeDef"`
 
+- `JmxExporter`:
+  [JmxExporterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#jmxexporterinfotypedef)
+- `NodeExporter`:
+  [NodeExporterInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#nodeexporterinfotypedef)
 
 ## PrometheusTypeDef
 
@@ -883,13 +787,12 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import PrometheusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JmxExporter`: `"JmxExporterTypeDef"`
-- `NodeExporter`: `"NodeExporterTypeDef"`
 
+- `JmxExporter`:
+  [JmxExporterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#jmxexportertypedef)
+- `NodeExporter`:
+  [NodeExporterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#nodeexportertypedef)
 
 ## RebootBrokerResponseTypeDef
 
@@ -897,13 +800,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import RebootBrokerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## S3TypeDef
 
@@ -911,16 +811,14 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import S3TypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `Bucket`: `str`
 - `Prefix`: `str`
-
 
 ## SaslTypeDef
 
@@ -928,12 +826,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import SaslTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Scram`: `"ScramTypeDef"`
 
+- `Scram`:
+  [ScramTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#scramtypedef)
 
 ## ScramTypeDef
 
@@ -941,12 +837,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ScramTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## StateInfoTypeDef
 
@@ -954,13 +847,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import StateInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Code`: `str`
 - `Message`: `str`
-
 
 ## StorageInfoTypeDef
 
@@ -968,12 +858,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import StorageInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EbsStorageInfo`: `"EBSStorageInfoTypeDef"`
 
+- `EbsStorageInfo`:
+  [EBSStorageInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#ebsstorageinfotypedef)
 
 ## TlsTypeDef
 
@@ -981,12 +869,9 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import TlsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CertificateAuthorityArnList`: `List[str]`
 
+- `CertificateAuthorityArnList`: `List`\[`str`\]
 
 ## UnprocessedScramSecretTypeDef
 
@@ -994,14 +879,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UnprocessedScramSecretTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `SecretArn`: `str`
-
 
 ## UpdateBrokerCountResponseTypeDef
 
@@ -1009,13 +891,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateBrokerCountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## UpdateBrokerStorageResponseTypeDef
 
@@ -1023,13 +902,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateBrokerStorageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## UpdateBrokerTypeResponseTypeDef
 
@@ -1037,13 +913,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateBrokerTypeResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## UpdateClusterConfigurationResponseTypeDef
 
@@ -1051,13 +924,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateClusterConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## UpdateClusterKafkaVersionResponseTypeDef
 
@@ -1065,13 +935,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateClusterKafkaVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## UpdateConfigurationResponseTypeDef
 
@@ -1079,13 +946,11 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
-- `LatestRevision`: `"ConfigurationRevisionTypeDef"`
 
+- `Arn`: `str`
+- `LatestRevision`:
+  [ConfigurationRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationrevisiontypedef)
 
 ## UpdateMonitoringResponseTypeDef
 
@@ -1093,13 +958,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import UpdateMonitoringResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClusterArn`: `str`
 - `ClusterOperationArn`: `str`
-
 
 ## ZookeeperNodeInfoTypeDef
 
@@ -1107,13 +969,10 @@ Optional fields:
 from mypy_boto3_kafka.type_defs import ZookeeperNodeInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttachedENIId`: `str`
 - `ClientVpcIpAddress`: `str`
-- `Endpoints`: `List[str]`
+- `Endpoints`: `List`\[`str`\]
 - `ZookeeperId`: `float`
 - `ZookeeperVersion`: `str`
-

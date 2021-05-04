@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GreengrassV2](./README.md) > Structures
 
-Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
-type annotations stubs module [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+Auto-generated documentation for
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+type annotations stubs module
+[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Typed dictionaries for boto3 GreengrassV2 module](#typed-dictionaries-for-boto3-greengrassv2-module)
   - [CancelDeploymentResponseTypeDef](#canceldeploymentresponsetypedef)
@@ -62,12 +64,9 @@ type annotations stubs module [mypy_boto3_greengrassv2](https://pypi.org/project
 from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `message`: `str`
 
+- `message`: `str`
 
 ## CloudComponentStatusTypeDef
 
@@ -75,14 +74,12 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import CloudComponentStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `componentState`: `CloudComponentState`
-- `message`: `str`
-- `errors`: `Dict[str, str]`
 
+- `componentState`:
+  [CloudComponentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#cloudcomponentstate)
+- `message`: `str`
+- `errors`: `Dict`\[`str`, `str`\]
 
 ## ComponentCandidateTypeDef
 
@@ -90,14 +87,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentCandidateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `versionRequirements`: `Dict[str, str]`
-
+- `versionRequirements`: `Dict`\[`str`, `str`\]
 
 ## ComponentConfigurationUpdateTypeDef
 
@@ -105,13 +99,10 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `merge`: `str`
-- `reset`: `List[str]`
 
+- `merge`: `str`
+- `reset`: `List`\[`str`\]
 
 ## ComponentDependencyRequirementTypeDef
 
@@ -119,13 +110,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentDependencyRequirementTypeDef
 ```
 
-
-
-
 Optional fields:
-- `versionRequirement`: `str`
-- `dependencyType`: `ComponentDependencyType`
 
+- `versionRequirement`: `str`
+- `dependencyType`:
+  [ComponentDependencyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#componentdependencytype)
 
 ## ComponentDeploymentSpecificationTypeDef
 
@@ -133,14 +122,13 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentDeploymentSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `componentVersion`: `str`
-- `configurationUpdate`: `"ComponentConfigurationUpdateTypeDef"`
-- `runWith`: `"ComponentRunWithTypeDef"`
 
+- `componentVersion`: `str`
+- `configurationUpdate`:
+  [ComponentConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentconfigurationupdatetypedef)
+- `runWith`:
+  [ComponentRunWithTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentrunwithtypedef)
 
 ## ComponentLatestVersionTypeDef
 
@@ -148,17 +136,15 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentLatestVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `componentVersion`: `str`
 - `creationTimestamp`: `datetime`
 - `description`: `str`
 - `publisher`: `str`
-- `platforms`: `List["ComponentPlatformTypeDef"]`
-
+- `platforms`:
+  `List`\[[ComponentPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentplatformtypedef)\]
 
 ## ComponentPlatformTypeDef
 
@@ -166,13 +152,10 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentPlatformTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `attributes`: `Dict[str, str]`
 
+- `name`: `str`
+- `attributes`: `Dict`\[`str`, `str`\]
 
 ## ComponentRunWithTypeDef
 
@@ -180,12 +163,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentRunWithTypeDef
 ```
 
-
-
-
 Optional fields:
-- `posixUser`: `str`
 
+- `posixUser`: `str`
 
 ## ComponentTypeDef
 
@@ -193,14 +173,12 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `componentName`: `str`
-- `latestVersion`: `"ComponentLatestVersionTypeDef"`
-
+- `latestVersion`:
+  [ComponentLatestVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentlatestversiontypedef)
 
 ## ComponentVersionListItemTypeDef
 
@@ -208,14 +186,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ComponentVersionListItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `arn`: `str`
-
 
 ## CoreDeviceTypeDef
 
@@ -223,14 +198,12 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import CoreDeviceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `coreDeviceThingName`: `str`
-- `status`: `CoreDeviceStatus`
-- `lastStatusUpdateTimestamp`: `datetime`
 
+- `coreDeviceThingName`: `str`
+- `status`:
+  [CoreDeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#coredevicestatus)
+- `lastStatusUpdateTimestamp`: `datetime`
 
 ## CreateComponentVersionResponseTypeDef
 
@@ -238,18 +211,17 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `creationTimestamp`: `datetime`
-- `status`: `"CloudComponentStatusTypeDef"`
-
-
+- `status`:
+  [CloudComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#cloudcomponentstatustypedef)
 
 Optional fields:
-- `arn`: `str`
 
+- `arn`: `str`
 
 ## CreateDeploymentResponseTypeDef
 
@@ -257,14 +229,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import CreateDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `iotJobId`: `str`
 - `iotJobArn`: `str`
-
 
 ## DeploymentComponentUpdatePolicyTypeDef
 
@@ -272,13 +241,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DeploymentComponentUpdatePolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `timeoutInSeconds`: `int`
-- `action`: `DeploymentComponentUpdatePolicyAction`
 
+- `timeoutInSeconds`: `int`
+- `action`:
+  [DeploymentComponentUpdatePolicyAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymentcomponentupdatepolicyaction)
 
 ## DeploymentConfigurationValidationPolicyTypeDef
 
@@ -286,12 +253,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DeploymentConfigurationValidationPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `timeoutInSeconds`: `int`
 
+- `timeoutInSeconds`: `int`
 
 ## DeploymentIoTJobConfigurationTypeDef
 
@@ -299,14 +263,14 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DeploymentIoTJobConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `jobExecutionsRolloutConfig`: `"IoTJobExecutionsRolloutConfigTypeDef"`
-- `abortConfig`: `"IoTJobAbortConfigTypeDef"`
-- `timeoutConfig`: `"IoTJobTimeoutConfigTypeDef"`
 
+- `jobExecutionsRolloutConfig`:
+  [IoTJobExecutionsRolloutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobexecutionsrolloutconfigtypedef)
+- `abortConfig`:
+  [IoTJobAbortConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobabortconfigtypedef)
+- `timeoutConfig`:
+  [IoTJobTimeoutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobtimeoutconfigtypedef)
 
 ## DeploymentPoliciesTypeDef
 
@@ -314,14 +278,14 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DeploymentPoliciesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `failureHandlingPolicy`: `DeploymentFailureHandlingPolicy`
-- `componentUpdatePolicy`: `"DeploymentComponentUpdatePolicyTypeDef"`
-- `configurationValidationPolicy`: `"DeploymentConfigurationValidationPolicyTypeDef"`
 
+- `failureHandlingPolicy`:
+  [DeploymentFailureHandlingPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymentfailurehandlingpolicy)
+- `componentUpdatePolicy`:
+  [DeploymentComponentUpdatePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentcomponentupdatepolicytypedef)
+- `configurationValidationPolicy`:
+  [DeploymentConfigurationValidationPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentconfigurationvalidationpolicytypedef)
 
 ## DeploymentTypeDef
 
@@ -329,18 +293,16 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `targetArn`: `str`
 - `revisionId`: `str`
 - `deploymentId`: `str`
 - `deploymentName`: `str`
 - `creationTimestamp`: `datetime`
-- `deploymentStatus`: `DeploymentStatus`
+- `deploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymentstatus)
 - `isLatestForTarget`: `bool`
-
 
 ## DescribeComponentResponseTypeDef
 
@@ -348,20 +310,19 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import DescribeComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `creationTimestamp`: `datetime`
 - `publisher`: `str`
 - `description`: `str`
-- `status`: `"CloudComponentStatusTypeDef"`
-- `platforms`: `List["ComponentPlatformTypeDef"]`
-- `tags`: `Dict[str, str]`
-
+- `status`:
+  [CloudComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#cloudcomponentstatustypedef)
+- `platforms`:
+  `List`\[[ComponentPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentplatformtypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## EffectiveDeploymentTypeDef
 
@@ -369,23 +330,22 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import EffectiveDeploymentTypeDef
 ```
 
-
 Required fields:
+
 - `deploymentId`: `str`
 - `deploymentName`: `str`
 - `targetArn`: `str`
-- `coreDeviceExecutionStatus`: `EffectiveDeploymentExecutionStatus`
+- `coreDeviceExecutionStatus`:
+  [EffectiveDeploymentExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#effectivedeploymentexecutionstatus)
 - `creationTimestamp`: `datetime`
 - `modifiedTimestamp`: `datetime`
 
-
-
 Optional fields:
+
 - `iotJobId`: `str`
 - `iotJobArn`: `str`
 - `description`: `str`
 - `reason`: `str`
-
 
 ## GetComponentResponseTypeDef
 
@@ -393,16 +353,15 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import GetComponentResponseTypeDef
 ```
 
-
 Required fields:
-- `recipeOutputFormat`: `RecipeOutputFormat`
-- `recipe`: `Union[bytes, IO[bytes]]`
 
-
+- `recipeOutputFormat`:
+  [RecipeOutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#recipeoutputformat)
+- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetComponentVersionArtifactResponseTypeDef
 
@@ -410,12 +369,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactResponseTypeDef
 ```
 
-
 Required fields:
+
 - `preSignedUrl`: `str`
-
-
-
 
 ## GetCoreDeviceResponseTypeDef
 
@@ -423,18 +379,16 @@ Required fields:
 from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `coreDeviceThingName`: `str`
 - `coreVersion`: `str`
 - `platform`: `str`
 - `architecture`: `str`
-- `status`: `CoreDeviceStatus`
+- `status`:
+  [CoreDeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#coredevicestatus)
 - `lastStatusUpdateTimestamp`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetDeploymentResponseTypeDef
 
@@ -442,24 +396,25 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import GetDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `targetArn`: `str`
 - `revisionId`: `str`
 - `deploymentId`: `str`
 - `deploymentName`: `str`
-- `deploymentStatus`: `DeploymentStatus`
+- `deploymentStatus`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymentstatus)
 - `iotJobId`: `str`
 - `iotJobArn`: `str`
-- `components`: `Dict[str, "ComponentDeploymentSpecificationTypeDef"]`
-- `deploymentPolicies`: `"DeploymentPoliciesTypeDef"`
-- `iotJobConfiguration`: `"DeploymentIoTJobConfigurationTypeDef"`
+- `components`: `Dict`\[`str`,
+  [ComponentDeploymentSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentdeploymentspecificationtypedef)\]
+- `deploymentPolicies`:
+  [DeploymentPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentpoliciestypedef)
+- `iotJobConfiguration`:
+  [DeploymentIoTJobConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentiotjobconfigurationtypedef)
 - `creationTimestamp`: `datetime`
 - `isLatestForTarget`: `bool`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## InstalledComponentTypeDef
 
@@ -467,16 +422,14 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import InstalledComponentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `lifecycleState`: `InstalledComponentLifecycleState`
+- `lifecycleState`:
+  [InstalledComponentLifecycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#installedcomponentlifecyclestate)
 - `lifecycleStateDetails`: `str`
 - `isRoot`: `bool`
-
 
 ## IoTJobAbortConfigTypeDef
 
@@ -484,12 +437,10 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobAbortConfigTypeDef
 ```
 
-
 Required fields:
-- `criteriaList`: `List["IoTJobAbortCriteriaTypeDef"]`
 
-
-
+- `criteriaList`:
+  `List`\[[IoTJobAbortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobabortcriteriatypedef)\]
 
 ## IoTJobAbortCriteriaTypeDef
 
@@ -497,15 +448,13 @@ Required fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobAbortCriteriaTypeDef
 ```
 
-
 Required fields:
-- `failureType`: `IoTJobExecutionFailureType`
+
+- `failureType`:
+  [IoTJobExecutionFailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#iotjobexecutionfailuretype)
 - `action`: `Literal['CANCEL']`
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
-
-
-
 
 ## IoTJobExecutionsRolloutConfigTypeDef
 
@@ -513,13 +462,11 @@ Required fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobExecutionsRolloutConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `exponentialRate`: `"IoTJobExponentialRolloutRateTypeDef"`
-- `maximumPerMinute`: `int`
 
+- `exponentialRate`:
+  [IoTJobExponentialRolloutRateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobexponentialrolloutratetypedef)
+- `maximumPerMinute`: `int`
 
 ## IoTJobExponentialRolloutRateTypeDef
 
@@ -527,14 +474,12 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobExponentialRolloutRateTypeDef
 ```
 
-
 Required fields:
+
 - `baseRatePerMinute`: `int`
 - `incrementFactor`: `float`
-- `rateIncreaseCriteria`: `"IoTJobRateIncreaseCriteriaTypeDef"`
-
-
-
+- `rateIncreaseCriteria`:
+  [IoTJobRateIncreaseCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#iotjobrateincreasecriteriatypedef)
 
 ## IoTJobRateIncreaseCriteriaTypeDef
 
@@ -542,13 +487,10 @@ Required fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobRateIncreaseCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `numberOfNotifiedThings`: `int`
 - `numberOfSucceededThings`: `int`
-
 
 ## IoTJobTimeoutConfigTypeDef
 
@@ -556,12 +498,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import IoTJobTimeoutConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inProgressTimeoutInMinutes`: `int`
 
+- `inProgressTimeoutInMinutes`: `int`
 
 ## LambdaContainerParamsTypeDef
 
@@ -569,15 +508,14 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaContainerParamsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `memorySizeInKB`: `int`
 - `mountROSysfs`: `bool`
-- `volumes`: `List["LambdaVolumeMountTypeDef"]`
-- `devices`: `List["LambdaDeviceMountTypeDef"]`
-
+- `volumes`:
+  `List`\[[LambdaVolumeMountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdavolumemounttypedef)\]
+- `devices`:
+  `List`\[[LambdaDeviceMountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdadevicemounttypedef)\]
 
 ## LambdaDeviceMountTypeDef
 
@@ -585,16 +523,15 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaDeviceMountTypeDef
 ```
 
-
 Required fields:
+
 - `path`: `str`
 
-
-
 Optional fields:
-- `permission`: `LambdaFilesystemPermission`
-- `addGroupOwner`: `bool`
 
+- `permission`:
+  [LambdaFilesystemPermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#lambdafilesystempermission)
+- `addGroupOwner`: `bool`
 
 ## LambdaEventSourceTypeDef
 
@@ -602,13 +539,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaEventSourceTypeDef
 ```
 
-
 Required fields:
+
 - `topic`: `str`
-- `type`: `LambdaEventSourceType`
-
-
-
+- `type`:
+  [LambdaEventSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#lambdaeventsourcetype)
 
 ## LambdaExecutionParametersTypeDef
 
@@ -616,22 +551,22 @@ Required fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaExecutionParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `eventSources`: `List["LambdaEventSourceTypeDef"]`
+
+- `eventSources`:
+  `List`\[[LambdaEventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdaeventsourcetypedef)\]
 - `maxQueueSize`: `int`
 - `maxInstancesCount`: `int`
 - `maxIdleTimeInSeconds`: `int`
 - `timeoutInSeconds`: `int`
 - `statusTimeoutInSeconds`: `int`
 - `pinned`: `bool`
-- `inputPayloadEncodingType`: `LambdaInputPayloadEncodingType`
-- `execArgs`: `List[str]`
-- `environmentVariables`: `Dict[str, str]`
-- `linuxProcessParams`: `"LambdaLinuxProcessParamsTypeDef"`
-
+- `inputPayloadEncodingType`:
+  [LambdaInputPayloadEncodingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#lambdainputpayloadencodingtype)
+- `execArgs`: `List`\[`str`\]
+- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `linuxProcessParams`:
+  [LambdaLinuxProcessParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdalinuxprocessparamstypedef)
 
 ## LambdaFunctionRecipeSourceTypeDef
 
@@ -639,19 +574,20 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaFunctionRecipeSourceTypeDef
 ```
 
-
 Required fields:
+
 - `lambdaArn`: `str`
 
-
-
 Optional fields:
+
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `componentPlatforms`: `List["ComponentPlatformTypeDef"]`
-- `componentDependencies`: `Dict[str, "ComponentDependencyRequirementTypeDef"]`
-- `componentLambdaParameters`: `"LambdaExecutionParametersTypeDef"`
-
+- `componentPlatforms`:
+  `List`\[[ComponentPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentplatformtypedef)\]
+- `componentDependencies`: `Dict`\[`str`,
+  [ComponentDependencyRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentdependencyrequirementtypedef)\]
+- `componentLambdaParameters`:
+  [LambdaExecutionParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdaexecutionparameterstypedef)
 
 ## LambdaLinuxProcessParamsTypeDef
 
@@ -659,13 +595,12 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaLinuxProcessParamsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `isolationMode`: `LambdaIsolationMode`
-- `containerParams`: `"LambdaContainerParamsTypeDef"`
 
+- `isolationMode`:
+  [LambdaIsolationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#lambdaisolationmode)
+- `containerParams`:
+  [LambdaContainerParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdacontainerparamstypedef)
 
 ## LambdaVolumeMountTypeDef
 
@@ -673,17 +608,16 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import LambdaVolumeMountTypeDef
 ```
 
-
 Required fields:
+
 - `sourcePath`: `str`
 - `destinationPath`: `str`
 
-
-
 Optional fields:
-- `permission`: `LambdaFilesystemPermission`
-- `addGroupOwner`: `bool`
 
+- `permission`:
+  [LambdaFilesystemPermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#lambdafilesystempermission)
+- `addGroupOwner`: `bool`
 
 ## ListComponentVersionsResponseTypeDef
 
@@ -691,13 +625,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `componentVersions`: `List["ComponentVersionListItemTypeDef"]`
-- `nextToken`: `str`
 
+- `componentVersions`:
+  `List`\[[ComponentVersionListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentversionlistitemtypedef)\]
+- `nextToken`: `str`
 
 ## ListComponentsResponseTypeDef
 
@@ -705,13 +637,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListComponentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `components`: `List["ComponentTypeDef"]`
-- `nextToken`: `str`
 
+- `components`:
+  `List`\[[ComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componenttypedef)\]
+- `nextToken`: `str`
 
 ## ListCoreDevicesResponseTypeDef
 
@@ -719,13 +649,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `coreDevices`: `List["CoreDeviceTypeDef"]`
-- `nextToken`: `str`
 
+- `coreDevices`:
+  `List`\[[CoreDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#coredevicetypedef)\]
+- `nextToken`: `str`
 
 ## ListDeploymentsResponseTypeDef
 
@@ -733,13 +661,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deployments`: `List["DeploymentTypeDef"]`
-- `nextToken`: `str`
 
+- `deployments`:
+  `List`\[[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymenttypedef)\]
+- `nextToken`: `str`
 
 ## ListEffectiveDeploymentsResponseTypeDef
 
@@ -747,13 +673,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `effectiveDeployments`: `List["EffectiveDeploymentTypeDef"]`
-- `nextToken`: `str`
 
+- `effectiveDeployments`:
+  `List`\[[EffectiveDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#effectivedeploymenttypedef)\]
+- `nextToken`: `str`
 
 ## ListInstalledComponentsResponseTypeDef
 
@@ -761,13 +685,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `installedComponents`: `List["InstalledComponentTypeDef"]`
-- `nextToken`: `str`
 
+- `installedComponents`:
+  `List`\[[InstalledComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#installedcomponenttypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -775,12 +697,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -788,14 +707,11 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ResolveComponentCandidatesResponseTypeDef
 
@@ -803,12 +719,10 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resolvedComponentVersions`: `List["ResolvedComponentVersionTypeDef"]`
 
+- `resolvedComponentVersions`:
+  `List`\[[ResolvedComponentVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#resolvedcomponentversiontypedef)\]
 
 ## ResolvedComponentVersionTypeDef
 
@@ -816,12 +730,9 @@ Optional fields:
 from mypy_boto3_greengrassv2.type_defs import ResolvedComponentVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `arn`: `str`
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `recipe`: `Union[bytes, IO[bytes]]`
-
+- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]

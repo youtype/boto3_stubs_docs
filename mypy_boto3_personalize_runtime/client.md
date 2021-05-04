@@ -1,9 +1,12 @@
 # PersonalizeRuntimeClient for boto3 PersonalizeRuntime module
 
-> [Index](../README.md) > [PersonalizeRuntime](./README.md) > PersonalizeRuntimeClient
+> [Index](../README.md) > [PersonalizeRuntime](./README.md) >
+> PersonalizeRuntimeClient
 
-Auto-generated documentation for [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
-type annotations stubs module [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
+Auto-generated documentation for
+[PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
+type annotations stubs module
+[mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [PersonalizeRuntimeClient for boto3 PersonalizeRuntime module](#personalizeruntimeclient-for-boto3-personalizeruntime-module)
   - [PersonalizeRuntimeClient](#personalizeruntimeclient)
@@ -27,12 +30,13 @@ def get_personalize-runtime_client() -> PersonalizeRuntimeClient:
     return boto3.client("personalize-runtime")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
+Boto3 documentation:
+[PersonalizeRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_personalize_runtime.client import Exceptions
@@ -41,86 +45,81 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.InvalidInputException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("personalize-runtime").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate]
+Boto3 documentation:
+[PersonalizeRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("personalize-runtime").generate_presigned_url` method.
+Type annotations for
+`boto3.client("personalize-runtime").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url]
+Boto3 documentation:
+[PersonalizeRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_personalized_ranking
 
-Type annotations for `boto3.client("personalize-runtime").get_personalized_ranking` method.
+Type annotations for
+`boto3.client("personalize-runtime").get_personalized_ranking` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking]
+Boto3 documentation:
+[PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
 
-```python
-def get_personalized_ranking(
-    self,
-    campaignArn: str,
-    inputList: List[str],
-    userId: str,
-    context: Dict[str, str] = None,
-    filterArn: str = None,
-    filterValues: Dict[str, str] = None
-) -> GetPersonalizedRankingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `campaignArn`: `str` *(required)*
+- `inputList`: `List`\[`str`\] *(required)*
+- `userId`: `str` *(required)*
+- `context`: `Dict`\[`str`, `str`\]
+- `filterArn`: `str`
+- `filterValues`: `Dict`\[`str`, `str`\]
+
+Returns
+[GetPersonalizedRankingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#getpersonalizedrankingresponsetypedef).
 
 ### get_recommendations
 
-Type annotations for `boto3.client("personalize-runtime").get_recommendations` method.
+Type annotations for `boto3.client("personalize-runtime").get_recommendations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations]
+Boto3 documentation:
+[PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
 
-```python
-def get_recommendations(
-    self,
-    campaignArn: str,
-    itemId: str = None,
-    userId: str = None,
-    numResults: int = None,
-    context: Dict[str, str] = None,
-    filterArn: str = None,
-    filterValues: Dict[str, str] = None
-) -> GetRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `campaignArn`: `str` *(required)*
+- `itemId`: `str`
+- `userId`: `str`
+- `numResults`: `int`
+- `context`: `Dict`\[`str`, `str`\]
+- `filterArn`: `str`
+- `filterValues`: `Dict`\[`str`, `str`\]
 
-
+Returns
+[GetRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#getrecommendationsresponsetypedef).

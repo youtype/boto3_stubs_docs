@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodePipeline](./README.md) > CodePipelineClient
 
-Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+Auto-generated documentation for
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+type annotations stubs module
+[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [CodePipelineClient for boto3 CodePipeline module](#codepipelineclient-for-boto3-codepipeline-module)
   - [CodePipelineClient](#codepipelineclient)
@@ -65,12 +67,13 @@ def get_codepipeline_client() -> CodePipelineClient:
     return boto3.client("codepipeline")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
+Boto3 documentation:
+[CodePipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codepipeline.client import Exceptions
@@ -78,7 +81,6 @@ from mypy_boto3_codepipeline.client import Exceptions
 def handle_error(exc: Exceptions.ActionNotFoundException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -121,664 +123,699 @@ Exceptions:
 - `Exceptions.ValidationException`
 - `Exceptions.WebhookNotFoundException`
 
-
 ## Methods
-
 
 ### acknowledge_job
 
 Type annotations for `boto3.client("codepipeline").acknowledge_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job]
+Boto3 documentation:
+[CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
 
-```python
-def acknowledge_job(
-    self,
-    jobId: str,
-    nonce: str
-) -> AcknowledgeJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `nonce`: `str` *(required)*
+
+Returns
+[AcknowledgeJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#acknowledgejoboutputtypedef).
 
 ### acknowledge_third_party_job
 
-Type annotations for `boto3.client("codepipeline").acknowledge_third_party_job` method.
+Type annotations for `boto3.client("codepipeline").acknowledge_third_party_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job]
+Boto3 documentation:
+[CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
 
-```python
-def acknowledge_third_party_job(
-    self,
-    jobId: str,
-    nonce: str,
-    clientToken: str
-) -> AcknowledgeThirdPartyJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `nonce`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+
+Returns
+[AcknowledgeThirdPartyJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#acknowledgethirdpartyjoboutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codepipeline").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate]
+Boto3 documentation:
+[CodePipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_custom_action_type
 
-Type annotations for `boto3.client("codepipeline").create_custom_action_type` method.
+Type annotations for `boto3.client("codepipeline").create_custom_action_type`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type]
+Boto3 documentation:
+[CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
 
-```python
-def create_custom_action_type(
-    self,
-    category: ActionCategory,
-    provider: str,
-    version: str,
-    inputArtifactDetails: "ArtifactDetailsTypeDef",
-    outputArtifactDetails: "ArtifactDetailsTypeDef",
-    settings: "ActionTypeSettingsTypeDef" = None,
-    configurationProperties: List["ActionConfigurationPropertyTypeDef"] = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateCustomActionTypeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `category`:
+  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
+  *(required)*
+- `provider`: `str` *(required)*
+- `version`: `str` *(required)*
+- `inputArtifactDetails`:
+  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
+  *(required)*
+- `outputArtifactDetails`:
+  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
+  *(required)*
+- `settings`:
+  [ActionTypeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypesettingstypedef)
+- `configurationProperties`:
+  `List`\[[ActionConfigurationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionconfigurationpropertytypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCustomActionTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#createcustomactiontypeoutputtypedef).
 
 ### create_pipeline
 
 Type annotations for `boto3.client("codepipeline").create_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline]
+Boto3 documentation:
+[CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
 
-```python
-def create_pipeline(
-    self,
-    pipeline: "PipelineDeclarationTypeDef",
-    tags: List["TagTypeDef"] = None
-) -> CreatePipelineOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipeline`:
+  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+  *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#createpipelineoutputtypedef).
 
 ### delete_custom_action_type
 
-Type annotations for `boto3.client("codepipeline").delete_custom_action_type` method.
+Type annotations for `boto3.client("codepipeline").delete_custom_action_type`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type]
+Boto3 documentation:
+[CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
 
-```python
-def delete_custom_action_type(
-    self,
-    category: ActionCategory,
-    provider: str,
-    version: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `category`:
+  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
+  *(required)*
+- `provider`: `str` *(required)*
+- `version`: `str` *(required)*
 
 ### delete_pipeline
 
 Type annotations for `boto3.client("codepipeline").delete_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline]
+Boto3 documentation:
+[CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
 
-```python
-def delete_pipeline(
-    self,
-    name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
 
 ### delete_webhook
 
 Type annotations for `boto3.client("codepipeline").delete_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook]
+Boto3 documentation:
+[CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
 
-```python
-def delete_webhook(
-    self,
-    name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_webhook_with_third_party
 
-Type annotations for `boto3.client("codepipeline").deregister_webhook_with_third_party` method.
+Type annotations for
+`boto3.client("codepipeline").deregister_webhook_with_third_party` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party]
+Boto3 documentation:
+[CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
 
-```python
-def deregister_webhook_with_third_party(
-    self,
-    webhookName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `webhookName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_stage_transition
 
-Type annotations for `boto3.client("codepipeline").disable_stage_transition` method.
+Type annotations for `boto3.client("codepipeline").disable_stage_transition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition]
+Boto3 documentation:
+[CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
 
-```python
-def disable_stage_transition(
-    self,
-    pipelineName: str,
-    stageName: str,
-    transitionType: StageTransitionType,
-    reason: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `stageName`: `str` *(required)*
+- `transitionType`:
+  [StageTransitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#stagetransitiontype)
+  *(required)*
+- `reason`: `str` *(required)*
 
 ### enable_stage_transition
 
-Type annotations for `boto3.client("codepipeline").enable_stage_transition` method.
+Type annotations for `boto3.client("codepipeline").enable_stage_transition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition]
+Boto3 documentation:
+[CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
 
-```python
-def enable_stage_transition(
-    self,
-    pipelineName: str,
-    stageName: str,
-    transitionType: StageTransitionType
-) -> None:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `stageName`: `str` *(required)*
+- `transitionType`:
+  [StageTransitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#stagetransitiontype)
+  *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codepipeline").generate_presigned_url` method.
+Type annotations for `boto3.client("codepipeline").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url]
+Boto3 documentation:
+[CodePipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_action_type
 
 Type annotations for `boto3.client("codepipeline").get_action_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type]
+Boto3 documentation:
+[CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
 
-```python
-def get_action_type(
-    self,
-    category: ActionCategory,
-    owner: str,
-    provider: str,
-    version: str
-) -> GetActionTypeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `category`:
+  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
+  *(required)*
+- `owner`: `str` *(required)*
+- `provider`: `str` *(required)*
+- `version`: `str` *(required)*
+
+Returns
+[GetActionTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getactiontypeoutputtypedef).
 
 ### get_job_details
 
 Type annotations for `boto3.client("codepipeline").get_job_details` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details]
+Boto3 documentation:
+[CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
 
-```python
-def get_job_details(
-    self,
-    jobId: str
-) -> GetJobDetailsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+
+Returns
+[GetJobDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getjobdetailsoutputtypedef).
 
 ### get_pipeline
 
 Type annotations for `boto3.client("codepipeline").get_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline]
+Boto3 documentation:
+[CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
 
-```python
-def get_pipeline(
-    self,
-    name: str,
-    version: int = None
-) -> GetPipelineOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `version`: `int`
+
+Returns
+[GetPipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelineoutputtypedef).
 
 ### get_pipeline_execution
 
-Type annotations for `boto3.client("codepipeline").get_pipeline_execution` method.
+Type annotations for `boto3.client("codepipeline").get_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution]
+Boto3 documentation:
+[CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
 
-```python
-def get_pipeline_execution(
-    self,
-    pipelineName: str,
-    pipelineExecutionId: str
-) -> GetPipelineExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `pipelineExecutionId`: `str` *(required)*
+
+Returns
+[GetPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelineexecutionoutputtypedef).
 
 ### get_pipeline_state
 
 Type annotations for `boto3.client("codepipeline").get_pipeline_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state]
+Boto3 documentation:
+[CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
 
-```python
-def get_pipeline_state(
-    self,
-    name: str
-) -> GetPipelineStateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns
+[GetPipelineStateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelinestateoutputtypedef).
 
 ### get_third_party_job_details
 
-Type annotations for `boto3.client("codepipeline").get_third_party_job_details` method.
+Type annotations for `boto3.client("codepipeline").get_third_party_job_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details]
+Boto3 documentation:
+[CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
 
-```python
-def get_third_party_job_details(
-    self,
-    jobId: str,
-    clientToken: str
-) -> GetThirdPartyJobDetailsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+
+Returns
+[GetThirdPartyJobDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getthirdpartyjobdetailsoutputtypedef).
 
 ### list_action_executions
 
-Type annotations for `boto3.client("codepipeline").list_action_executions` method.
+Type annotations for `boto3.client("codepipeline").list_action_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions]
+Boto3 documentation:
+[CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
 
-```python
-def list_action_executions(
-    self,
-    pipelineName: str,
-    filter: ActionExecutionFilterTypeDef = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListActionExecutionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `filter`:
+  [ActionExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutionfiltertypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListActionExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactionexecutionsoutputtypedef).
 
 ### list_action_types
 
 Type annotations for `boto3.client("codepipeline").list_action_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types]
+Boto3 documentation:
+[CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
 
-```python
-def list_action_types(
-    self,
-    actionOwnerFilter: ActionOwner = None,
-    nextToken: str = None,
-    regionFilter: str = None
-) -> ListActionTypesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `actionOwnerFilter`:
+  [ActionOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionowner)
+- `nextToken`: `str`
+- `regionFilter`: `str`
+
+Returns
+[ListActionTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactiontypesoutputtypedef).
 
 ### list_pipeline_executions
 
-Type annotations for `boto3.client("codepipeline").list_pipeline_executions` method.
+Type annotations for `boto3.client("codepipeline").list_pipeline_executions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions]
+Boto3 documentation:
+[CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
 
-```python
-def list_pipeline_executions(
-    self,
-    pipelineName: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListPipelineExecutionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListPipelineExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelineexecutionsoutputtypedef).
 
 ### list_pipelines
 
 Type annotations for `boto3.client("codepipeline").list_pipelines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines]
+Boto3 documentation:
+[CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
 
-```python
-def list_pipelines(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPipelinesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelinesoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codepipeline").list_tags_for_resource` method.
+Type annotations for `boto3.client("codepipeline").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### list_webhooks
 
 Type annotations for `boto3.client("codepipeline").list_webhooks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks]
+Boto3 documentation:
+[CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
 
-```python
-def list_webhooks(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWebhooksOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWebhooksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listwebhooksoutputtypedef).
 
 ### poll_for_jobs
 
 Type annotations for `boto3.client("codepipeline").poll_for_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs]
+Boto3 documentation:
+[CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
 
-```python
-def poll_for_jobs(
-    self,
-    actionTypeId: "ActionTypeIdTypeDef",
-    maxBatchSize: int = None,
-    queryParam: Dict[str, str] = None
-) -> PollForJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+  *(required)*
+- `maxBatchSize`: `int`
+- `queryParam`: `Dict`\[`str`, `str`\]
+
+Returns
+[PollForJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pollforjobsoutputtypedef).
 
 ### poll_for_third_party_jobs
 
-Type annotations for `boto3.client("codepipeline").poll_for_third_party_jobs` method.
+Type annotations for `boto3.client("codepipeline").poll_for_third_party_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs]
+Boto3 documentation:
+[CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
 
-```python
-def poll_for_third_party_jobs(
-    self,
-    actionTypeId: "ActionTypeIdTypeDef",
-    maxBatchSize: int = None
-) -> PollForThirdPartyJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+  *(required)*
+- `maxBatchSize`: `int`
+
+Returns
+[PollForThirdPartyJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pollforthirdpartyjobsoutputtypedef).
 
 ### put_action_revision
 
 Type annotations for `boto3.client("codepipeline").put_action_revision` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision]
+Boto3 documentation:
+[CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
 
-```python
-def put_action_revision(
-    self,
-    pipelineName: str,
-    stageName: str,
-    actionName: str,
-    actionRevision: "ActionRevisionTypeDef"
-) -> PutActionRevisionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `stageName`: `str` *(required)*
+- `actionName`: `str` *(required)*
+- `actionRevision`:
+  [ActionRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionrevisiontypedef)
+  *(required)*
+
+Returns
+[PutActionRevisionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putactionrevisionoutputtypedef).
 
 ### put_approval_result
 
 Type annotations for `boto3.client("codepipeline").put_approval_result` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result]
+Boto3 documentation:
+[CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
 
-```python
-def put_approval_result(
-    self,
-    pipelineName: str,
-    stageName: str,
-    actionName: str,
-    result: ApprovalResultTypeDef,
-    token: str
-) -> PutApprovalResultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `stageName`: `str` *(required)*
+- `actionName`: `str` *(required)*
+- `result`:
+  [ApprovalResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#approvalresulttypedef)
+  *(required)*
+- `token`: `str` *(required)*
+
+Returns
+[PutApprovalResultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putapprovalresultoutputtypedef).
 
 ### put_job_failure_result
 
-Type annotations for `boto3.client("codepipeline").put_job_failure_result` method.
+Type annotations for `boto3.client("codepipeline").put_job_failure_result`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result]
+Boto3 documentation:
+[CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
 
-```python
-def put_job_failure_result(
-    self,
-    jobId: str,
-    failureDetails: FailureDetailsTypeDef
-) -> None:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `failureDetails`:
+  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#failuredetailstypedef)
+  *(required)*
 
 ### put_job_success_result
 
-Type annotations for `boto3.client("codepipeline").put_job_success_result` method.
+Type annotations for `boto3.client("codepipeline").put_job_success_result`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result]
+Boto3 documentation:
+[CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
 
-```python
-def put_job_success_result(
-    self,
-    jobId: str,
-    currentRevision: CurrentRevisionTypeDef = None,
-    continuationToken: str = None,
-    executionDetails: ExecutionDetailsTypeDef = None,
-    outputVariables: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `currentRevision`:
+  [CurrentRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#currentrevisiontypedef)
+- `continuationToken`: `str`
+- `executionDetails`:
+  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executiondetailstypedef)
+- `outputVariables`: `Dict`\[`str`, `str`\]
 
 ### put_third_party_job_failure_result
 
-Type annotations for `boto3.client("codepipeline").put_third_party_job_failure_result` method.
+Type annotations for
+`boto3.client("codepipeline").put_third_party_job_failure_result` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result]
+Boto3 documentation:
+[CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
 
-```python
-def put_third_party_job_failure_result(
-    self,
-    jobId: str,
-    clientToken: str,
-    failureDetails: FailureDetailsTypeDef
-) -> None:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `failureDetails`:
+  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#failuredetailstypedef)
+  *(required)*
 
 ### put_third_party_job_success_result
 
-Type annotations for `boto3.client("codepipeline").put_third_party_job_success_result` method.
+Type annotations for
+`boto3.client("codepipeline").put_third_party_job_success_result` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result]
+Boto3 documentation:
+[CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
 
-```python
-def put_third_party_job_success_result(
-    self,
-    jobId: str,
-    clientToken: str,
-    currentRevision: CurrentRevisionTypeDef = None,
-    continuationToken: str = None,
-    executionDetails: ExecutionDetailsTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `currentRevision`:
+  [CurrentRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#currentrevisiontypedef)
+- `continuationToken`: `str`
+- `executionDetails`:
+  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executiondetailstypedef)
 
 ### put_webhook
 
 Type annotations for `boto3.client("codepipeline").put_webhook` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook]
+Boto3 documentation:
+[CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
 
-```python
-def put_webhook(
-    self,
-    webhook: "WebhookDefinitionTypeDef",
-    tags: List["TagTypeDef"] = None
-) -> PutWebhookOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `webhook`:
+  [WebhookDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#webhookdefinitiontypedef)
+  *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+
+Returns
+[PutWebhookOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putwebhookoutputtypedef).
 
 ### register_webhook_with_third_party
 
-Type annotations for `boto3.client("codepipeline").register_webhook_with_third_party` method.
+Type annotations for
+`boto3.client("codepipeline").register_webhook_with_third_party` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party]
+Boto3 documentation:
+[CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
 
-```python
-def register_webhook_with_third_party(
-    self,
-    webhookName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `webhookName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### retry_stage_execution
 
-Type annotations for `boto3.client("codepipeline").retry_stage_execution` method.
+Type annotations for `boto3.client("codepipeline").retry_stage_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution]
+Boto3 documentation:
+[CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
 
-```python
-def retry_stage_execution(
-    self,
-    pipelineName: str,
-    stageName: str,
-    pipelineExecutionId: str,
-    retryMode: Literal['FAILED_ACTIONS']
-) -> RetryStageExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `stageName`: `str` *(required)*
+- `pipelineExecutionId`: `str` *(required)*
+- `retryMode`: `Literal['FAILED_ACTIONS']` *(required)*
+
+Returns
+[RetryStageExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#retrystageexecutionoutputtypedef).
 
 ### start_pipeline_execution
 
-Type annotations for `boto3.client("codepipeline").start_pipeline_execution` method.
+Type annotations for `boto3.client("codepipeline").start_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution]
+Boto3 documentation:
+[CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
 
-```python
-def start_pipeline_execution(
-    self,
-    name: str,
-    clientRequestToken: str = None
-) -> StartPipelineExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[StartPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#startpipelineexecutionoutputtypedef).
 
 ### stop_pipeline_execution
 
-Type annotations for `boto3.client("codepipeline").stop_pipeline_execution` method.
+Type annotations for `boto3.client("codepipeline").stop_pipeline_execution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution]
+Boto3 documentation:
+[CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
 
-```python
-def stop_pipeline_execution(
-    self,
-    pipelineName: str,
-    pipelineExecutionId: str,
-    abandon: bool = None,
-    reason: str = None
-) -> StopPipelineExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `pipelineName`: `str` *(required)*
+- `pipelineExecutionId`: `str` *(required)*
+- `abandon`: `bool`
+- `reason`: `str`
+
+Returns
+[StopPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stoppipelineexecutionoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("codepipeline").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource]
+Boto3 documentation:
+[CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("codepipeline").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource]
+Boto3 documentation:
+[CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_action_type
 
 Type annotations for `boto3.client("codepipeline").update_action_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type]
+Boto3 documentation:
+[CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
 
-```python
-def update_action_type(
-    self,
-    actionType: "ActionTypeDeclarationTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `actionType`:
+  [ActionTypeDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypedeclarationtypedef)
+  *(required)*
 
 ### update_pipeline
 
 Type annotations for `boto3.client("codepipeline").update_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline]
+Boto3 documentation:
+[CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
 
-```python
-def update_pipeline(
-    self,
-    pipeline: "PipelineDeclarationTypeDef"
-) -> UpdatePipelineOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `pipeline`:
+  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+  *(required)*
 
+Returns
+[UpdatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#updatepipelineoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("codepipeline").get_paginator` method with overloads.
+Type annotations for `boto3.client("codepipeline").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_action_executions")` -> [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
-- `client.get_paginator("list_action_types")` -> [ListActionTypesPaginator](./paginators.md#listactiontypespaginator)
-- `client.get_paginator("list_pipeline_executions")` -> [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
-- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_webhooks")` -> [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
-
-
+- `client.get_paginator("list_action_executions")` ->
+  [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
+- `client.get_paginator("list_action_types")` ->
+  [ListActionTypesPaginator](./paginators.md#listactiontypespaginator)
+- `client.get_paginator("list_pipeline_executions")` ->
+  [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
+- `client.get_paginator("list_pipelines")` ->
+  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_webhooks")` ->
+  [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)

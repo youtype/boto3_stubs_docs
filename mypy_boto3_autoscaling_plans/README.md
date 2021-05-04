@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AutoScalingPlans
 
-Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
-type annotations stubs module [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+Auto-generated documentation for
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+type annotations stubs module
+[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 ```bash
 pip install mypy-boto3-autoscaling-plans
@@ -19,7 +21,8 @@ pip install mypy-boto3-autoscaling-plans
 
 ## AutoScalingPlansClient
 
-Type annotations for  `boto3.client("autoscaling-plans")` as [AutoScalingPlansClient](./client.md)
+Type annotations for `boto3.client("autoscaling-plans")` as
+[AutoScalingPlansClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 ```
 
-
 AutoScalingPlansClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_scaling_plan](./client.md#create-scaling-plan)
 - [delete_scaling_plan](./client.md#delete-scaling-plan)
@@ -43,10 +44,8 @@ AutoScalingPlansClient [exceptions](./client.md#exceptions)
 - [get_scaling_plan_resource_forecast_data](./client.md#get-scaling-plan-resource-forecast-data)
 - [update_scaling_plan](./client.md#update-scaling-plan)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentUpdateException](./client.md#concurrentupdateexception)
 - [InternalServiceException](./client.md#internalserviceexception)
@@ -55,14 +54,10 @@ AutoScalingPlansClient [exceptions](./client.md#exceptions)
 - [ObjectNotFoundException](./client.md#objectnotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("autoscaling-plans").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("autoscaling-plans").get_paginator("...")`.
 
 Can be used directly:
 
@@ -72,11 +67,6 @@ from mypy_boto3_autoscaling_plans.paginators import DescribeScalingPlanResources
 
 - [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
 - [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -103,13 +93,10 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 - [ScalingStatusCode](./literals.md#scalingstatuscode)
 - [ServiceNamespace](./literals.md#servicenamespace)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

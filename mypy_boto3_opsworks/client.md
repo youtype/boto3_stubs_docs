@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [OpsWorks](./README.md) > OpsWorksClient
 
-Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+Auto-generated documentation for
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+type annotations stubs module
+[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [OpsWorksClient for boto3 OpsWorks module](#opsworksclient-for-boto3-opsworks-module)
   - [OpsWorksClient](#opsworksclient)
@@ -101,12 +103,13 @@ def get_opsworks_client() -> OpsWorksClient:
     return boto3.client("opsworks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client)
+Boto3 documentation:
+[OpsWorks.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_opsworks.client import Exceptions
@@ -115,1312 +118,1258 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### assign_instance
 
 Type annotations for `boto3.client("opsworks").assign_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance]
+Boto3 documentation:
+[OpsWorks.Client.assign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
 
-```python
-def assign_instance(
-    self,
-    InstanceId: str,
-    LayerIds: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LayerIds`: `List`\[`str`\] *(required)*
 
 ### assign_volume
 
 Type annotations for `boto3.client("opsworks").assign_volume` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume]
+Boto3 documentation:
+[OpsWorks.Client.assign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
 
-```python
-def assign_volume(
-    self,
-    VolumeId: str,
-    InstanceId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `VolumeId`: `str` *(required)*
+- `InstanceId`: `str`
 
 ### associate_elastic_ip
 
 Type annotations for `boto3.client("opsworks").associate_elastic_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip]
+Boto3 documentation:
+[OpsWorks.Client.associate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
 
-```python
-def associate_elastic_ip(
-    self,
-    ElasticIp: str,
-    InstanceId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticIp`: `str` *(required)*
+- `InstanceId`: `str`
 
 ### attach_elastic_load_balancer
 
-Type annotations for `boto3.client("opsworks").attach_elastic_load_balancer` method.
+Type annotations for `boto3.client("opsworks").attach_elastic_load_balancer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer]
+Boto3 documentation:
+[OpsWorks.Client.attach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
 
-```python
-def attach_elastic_load_balancer(
-    self,
-    ElasticLoadBalancerName: str,
-    LayerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticLoadBalancerName`: `str` *(required)*
+- `LayerId`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("opsworks").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.can_paginate]
+Boto3 documentation:
+[OpsWorks.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### clone_stack
 
 Type annotations for `boto3.client("opsworks").clone_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.clone_stack]
+Boto3 documentation:
+[OpsWorks.Client.clone_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.clone_stack)
 
-```python
-def clone_stack(
-    self,
-    SourceStackId: str,
-    ServiceRoleArn: str,
-    Name: str = None,
-    Region: str = None,
-    VpcId: str = None,
-    Attributes: Dict[Literal['Color'], str] = None,
-    DefaultInstanceProfileArn: str = None,
-    DefaultOs: str = None,
-    HostnameTheme: str = None,
-    DefaultAvailabilityZone: str = None,
-    DefaultSubnetId: str = None,
-    CustomJson: str = None,
-    ConfigurationManager: "StackConfigurationManagerTypeDef" = None,
-    ChefConfiguration: "ChefConfigurationTypeDef" = None,
-    UseCustomCookbooks: bool = None,
-    UseOpsworksSecurityGroups: bool = None,
-    CustomCookbooksSource: "SourceTypeDef" = None,
-    DefaultSshKeyName: str = None,
-    ClonePermissions: bool = None,
-    CloneAppIds: List[str] = None,
-    DefaultRootDeviceType: RootDeviceType = None,
-    AgentVersion: str = None
-) -> CloneStackResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceStackId`: `str` *(required)*
+- `ServiceRoleArn`: `str` *(required)*
+- `Name`: `str`
+- `Region`: `str`
+- `VpcId`: `str`
+- `Attributes`: `Dict`\[`Literal['Color']`, `str`\]
+- `DefaultInstanceProfileArn`: `str`
+- `DefaultOs`: `str`
+- `HostnameTheme`: `str`
+- `DefaultAvailabilityZone`: `str`
+- `DefaultSubnetId`: `str`
+- `CustomJson`: `str`
+- `ConfigurationManager`:
+  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+- `ChefConfiguration`:
+  [ChefConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#chefconfigurationtypedef)
+- `UseCustomCookbooks`: `bool`
+- `UseOpsworksSecurityGroups`: `bool`
+- `CustomCookbooksSource`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `DefaultSshKeyName`: `str`
+- `ClonePermissions`: `bool`
+- `CloneAppIds`: `List`\[`str`\]
+- `DefaultRootDeviceType`:
+  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `AgentVersion`: `str`
+
+Returns
+[CloneStackResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#clonestackresulttypedef).
 
 ### create_app
 
 Type annotations for `boto3.client("opsworks").create_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_app]
+Boto3 documentation:
+[OpsWorks.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_app)
 
-```python
-def create_app(
-    self,
-    StackId: str,
-    Name: str,
-    Type: AppType,
-    Shortname: str = None,
-    Description: str = None,
-    DataSources: List["DataSourceTypeDef"] = None,
-    AppSource: "SourceTypeDef" = None,
-    Domains: List[str] = None,
-    EnableSsl: bool = None,
-    SslConfiguration: "SslConfigurationTypeDef" = None,
-    Attributes: Dict[AppAttributesKeys, str] = None,
-    Environment: List["EnvironmentVariableTypeDef"] = None
-) -> CreateAppResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Type`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#apptype)
+  *(required)*
+- `Shortname`: `str`
+- `Description`: `str`
+- `DataSources`:
+  `List`\[[DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#datasourcetypedef)\]
+- `AppSource`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `Domains`: `List`\[`str`\]
+- `EnableSsl`: `bool`
+- `SslConfiguration`:
+  [SslConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sslconfigurationtypedef)
+- `Attributes`:
+  `Dict`\[[AppAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#appattributeskeys),
+  `str`\]
+- `Environment`:
+  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#environmentvariabletypedef)\]
+
+Returns
+[CreateAppResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createappresulttypedef).
 
 ### create_deployment
 
 Type annotations for `boto3.client("opsworks").create_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_deployment]
+Boto3 documentation:
+[OpsWorks.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_deployment)
 
-```python
-def create_deployment(
-    self,
-    StackId: str,
-    Command: "DeploymentCommandTypeDef",
-    AppId: str = None,
-    InstanceIds: List[str] = None,
-    LayerIds: List[str] = None,
-    Comment: str = None,
-    CustomJson: str = None
-) -> CreateDeploymentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Command`:
+  [DeploymentCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#deploymentcommandtypedef)
+  *(required)*
+- `AppId`: `str`
+- `InstanceIds`: `List`\[`str`\]
+- `LayerIds`: `List`\[`str`\]
+- `Comment`: `str`
+- `CustomJson`: `str`
+
+Returns
+[CreateDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createdeploymentresulttypedef).
 
 ### create_instance
 
 Type annotations for `boto3.client("opsworks").create_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_instance]
+Boto3 documentation:
+[OpsWorks.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_instance)
 
-```python
-def create_instance(
-    self,
-    StackId: str,
-    LayerIds: List[str],
-    InstanceType: str,
-    AutoScalingType: AutoScalingType = None,
-    Hostname: str = None,
-    Os: str = None,
-    AmiId: str = None,
-    SshKeyName: str = None,
-    AvailabilityZone: str = None,
-    VirtualizationType: str = None,
-    SubnetId: str = None,
-    Architecture: Architecture = None,
-    RootDeviceType: RootDeviceType = None,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    InstallUpdatesOnBoot: bool = None,
-    EbsOptimized: bool = None,
-    AgentVersion: str = None,
-    Tenancy: str = None
-) -> CreateInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `LayerIds`: `List`\[`str`\] *(required)*
+- `InstanceType`: `str` *(required)*
+- `AutoScalingType`:
+  [AutoScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#autoscalingtype)
+- `Hostname`: `str`
+- `Os`: `str`
+- `AmiId`: `str`
+- `SshKeyName`: `str`
+- `AvailabilityZone`: `str`
+- `VirtualizationType`: `str`
+- `SubnetId`: `str`
+- `Architecture`:
+  [Architecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#architecture)
+- `RootDeviceType`:
+  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#blockdevicemappingtypedef)\]
+- `InstallUpdatesOnBoot`: `bool`
+- `EbsOptimized`: `bool`
+- `AgentVersion`: `str`
+- `Tenancy`: `str`
+
+Returns
+[CreateInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createinstanceresulttypedef).
 
 ### create_layer
 
 Type annotations for `boto3.client("opsworks").create_layer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_layer]
+Boto3 documentation:
+[OpsWorks.Client.create_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_layer)
 
-```python
-def create_layer(
-    self,
-    StackId: str,
-    Type: LayerType,
-    Name: str,
-    Shortname: str,
-    Attributes: Dict[LayerAttributesKeys, str] = None,
-    CloudWatchLogsConfiguration: "CloudWatchLogsConfigurationTypeDef" = None,
-    CustomInstanceProfileArn: str = None,
-    CustomJson: str = None,
-    CustomSecurityGroupIds: List[str] = None,
-    Packages: List[str] = None,
-    VolumeConfigurations: List["VolumeConfigurationTypeDef"] = None,
-    EnableAutoHealing: bool = None,
-    AutoAssignElasticIps: bool = None,
-    AutoAssignPublicIps: bool = None,
-    CustomRecipes: "RecipesTypeDef" = None,
-    InstallUpdatesOnBoot: bool = None,
-    UseEbsOptimizedInstances: bool = None,
-    LifecycleEventConfiguration: "LifecycleEventConfigurationTypeDef" = None
-) -> CreateLayerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Type`:
+  [LayerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layertype)
+  *(required)*
+- `Name`: `str` *(required)*
+- `Shortname`: `str` *(required)*
+- `Attributes`:
+  `Dict`\[[LayerAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layerattributeskeys),
+  `str`\]
+- `CloudWatchLogsConfiguration`:
+  [CloudWatchLogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#cloudwatchlogsconfigurationtypedef)
+- `CustomInstanceProfileArn`: `str`
+- `CustomJson`: `str`
+- `CustomSecurityGroupIds`: `List`\[`str`\]
+- `Packages`: `List`\[`str`\]
+- `VolumeConfigurations`:
+  `List`\[[VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#volumeconfigurationtypedef)\]
+- `EnableAutoHealing`: `bool`
+- `AutoAssignElasticIps`: `bool`
+- `AutoAssignPublicIps`: `bool`
+- `CustomRecipes`:
+  [RecipesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#recipestypedef)
+- `InstallUpdatesOnBoot`: `bool`
+- `UseEbsOptimizedInstances`: `bool`
+- `LifecycleEventConfiguration`:
+  [LifecycleEventConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#lifecycleeventconfigurationtypedef)
+
+Returns
+[CreateLayerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createlayerresulttypedef).
 
 ### create_stack
 
 Type annotations for `boto3.client("opsworks").create_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_stack]
+Boto3 documentation:
+[OpsWorks.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_stack)
 
-```python
-def create_stack(
-    self,
-    Name: str,
-    Region: str,
-    ServiceRoleArn: str,
-    DefaultInstanceProfileArn: str,
-    VpcId: str = None,
-    Attributes: Dict[Literal['Color'], str] = None,
-    DefaultOs: str = None,
-    HostnameTheme: str = None,
-    DefaultAvailabilityZone: str = None,
-    DefaultSubnetId: str = None,
-    CustomJson: str = None,
-    ConfigurationManager: "StackConfigurationManagerTypeDef" = None,
-    ChefConfiguration: "ChefConfigurationTypeDef" = None,
-    UseCustomCookbooks: bool = None,
-    UseOpsworksSecurityGroups: bool = None,
-    CustomCookbooksSource: "SourceTypeDef" = None,
-    DefaultSshKeyName: str = None,
-    DefaultRootDeviceType: RootDeviceType = None,
-    AgentVersion: str = None
-) -> CreateStackResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Region`: `str` *(required)*
+- `ServiceRoleArn`: `str` *(required)*
+- `DefaultInstanceProfileArn`: `str` *(required)*
+- `VpcId`: `str`
+- `Attributes`: `Dict`\[`Literal['Color']`, `str`\]
+- `DefaultOs`: `str`
+- `HostnameTheme`: `str`
+- `DefaultAvailabilityZone`: `str`
+- `DefaultSubnetId`: `str`
+- `CustomJson`: `str`
+- `ConfigurationManager`:
+  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+- `ChefConfiguration`:
+  [ChefConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#chefconfigurationtypedef)
+- `UseCustomCookbooks`: `bool`
+- `UseOpsworksSecurityGroups`: `bool`
+- `CustomCookbooksSource`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `DefaultSshKeyName`: `str`
+- `DefaultRootDeviceType`:
+  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `AgentVersion`: `str`
+
+Returns
+[CreateStackResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createstackresulttypedef).
 
 ### create_user_profile
 
 Type annotations for `boto3.client("opsworks").create_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_user_profile]
+Boto3 documentation:
+[OpsWorks.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_user_profile)
 
-```python
-def create_user_profile(
-    self,
-    IamUserArn: str,
-    SshUsername: str = None,
-    SshPublicKey: str = None,
-    AllowSelfManagement: bool = None
-) -> CreateUserProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `IamUserArn`: `str` *(required)*
+- `SshUsername`: `str`
+- `SshPublicKey`: `str`
+- `AllowSelfManagement`: `bool`
+
+Returns
+[CreateUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#createuserprofileresulttypedef).
 
 ### delete_app
 
 Type annotations for `boto3.client("opsworks").delete_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app]
+Boto3 documentation:
+[OpsWorks.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app)
 
-```python
-def delete_app(
-    self,
-    AppId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
 
 ### delete_instance
 
 Type annotations for `boto3.client("opsworks").delete_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_instance]
+Boto3 documentation:
+[OpsWorks.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_instance)
 
-```python
-def delete_instance(
-    self,
-    InstanceId: str,
-    DeleteElasticIp: bool = None,
-    DeleteVolumes: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `DeleteElasticIp`: `bool`
+- `DeleteVolumes`: `bool`
 
 ### delete_layer
 
 Type annotations for `boto3.client("opsworks").delete_layer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer]
+Boto3 documentation:
+[OpsWorks.Client.delete_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
 
-```python
-def delete_layer(
-    self,
-    LayerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `LayerId`: `str` *(required)*
 
 ### delete_stack
 
 Type annotations for `boto3.client("opsworks").delete_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack]
+Boto3 documentation:
+[OpsWorks.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
 
-```python
-def delete_stack(
-    self,
-    StackId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
 
 ### delete_user_profile
 
 Type annotations for `boto3.client("opsworks").delete_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile]
+Boto3 documentation:
+[OpsWorks.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
 
-```python
-def delete_user_profile(
-    self,
-    IamUserArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `IamUserArn`: `str` *(required)*
 
 ### deregister_ecs_cluster
 
 Type annotations for `boto3.client("opsworks").deregister_ecs_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster]
+Boto3 documentation:
+[OpsWorks.Client.deregister_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
 
-```python
-def deregister_ecs_cluster(
-    self,
-    EcsClusterArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EcsClusterArn`: `str` *(required)*
 
 ### deregister_elastic_ip
 
 Type annotations for `boto3.client("opsworks").deregister_elastic_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip]
+Boto3 documentation:
+[OpsWorks.Client.deregister_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
 
-```python
-def deregister_elastic_ip(
-    self,
-    ElasticIp: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticIp`: `str` *(required)*
 
 ### deregister_instance
 
 Type annotations for `boto3.client("opsworks").deregister_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance]
+Boto3 documentation:
+[OpsWorks.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
 
-```python
-def deregister_instance(
-    self,
-    InstanceId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
 
 ### deregister_rds_db_instance
 
-Type annotations for `boto3.client("opsworks").deregister_rds_db_instance` method.
+Type annotations for `boto3.client("opsworks").deregister_rds_db_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance]
+Boto3 documentation:
+[OpsWorks.Client.deregister_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
 
-```python
-def deregister_rds_db_instance(
-    self,
-    RdsDbInstanceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `RdsDbInstanceArn`: `str` *(required)*
 
 ### deregister_volume
 
 Type annotations for `boto3.client("opsworks").deregister_volume` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume]
+Boto3 documentation:
+[OpsWorks.Client.deregister_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
 
-```python
-def deregister_volume(
-    self,
-    VolumeId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VolumeId`: `str` *(required)*
 
 ### describe_agent_versions
 
 Type annotations for `boto3.client("opsworks").describe_agent_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions]
+Boto3 documentation:
+[OpsWorks.Client.describe_agent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
 
-```python
-def describe_agent_versions(
-    self,
-    StackId: str = None,
-    ConfigurationManager: "StackConfigurationManagerTypeDef" = None
-) -> DescribeAgentVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `ConfigurationManager`:
+  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+
+Returns
+[DescribeAgentVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeagentversionsresulttypedef).
 
 ### describe_apps
 
 Type annotations for `boto3.client("opsworks").describe_apps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps]
+Boto3 documentation:
+[OpsWorks.Client.describe_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
 
-```python
-def describe_apps(
-    self,
-    StackId: str = None,
-    AppIds: List[str] = None
-) -> DescribeAppsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `AppIds`: `List`\[`str`\]
+
+Returns
+[DescribeAppsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeappsresulttypedef).
 
 ### describe_commands
 
 Type annotations for `boto3.client("opsworks").describe_commands` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_commands]
+Boto3 documentation:
+[OpsWorks.Client.describe_commands](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_commands)
 
-```python
-def describe_commands(
-    self,
-    DeploymentId: str = None,
-    InstanceId: str = None,
-    CommandIds: List[str] = None
-) -> DescribeCommandsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DeploymentId`: `str`
+- `InstanceId`: `str`
+- `CommandIds`: `List`\[`str`\]
+
+Returns
+[DescribeCommandsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describecommandsresulttypedef).
 
 ### describe_deployments
 
 Type annotations for `boto3.client("opsworks").describe_deployments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_deployments]
+Boto3 documentation:
+[OpsWorks.Client.describe_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_deployments)
 
-```python
-def describe_deployments(
-    self,
-    StackId: str = None,
-    AppId: str = None,
-    DeploymentIds: List[str] = None
-) -> DescribeDeploymentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `AppId`: `str`
+- `DeploymentIds`: `List`\[`str`\]
+
+Returns
+[DescribeDeploymentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describedeploymentsresulttypedef).
 
 ### describe_ecs_clusters
 
 Type annotations for `boto3.client("opsworks").describe_ecs_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters]
+Boto3 documentation:
+[OpsWorks.Client.describe_ecs_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters)
 
-```python
-def describe_ecs_clusters(
-    self,
-    EcsClusterArns: List[str] = None,
-    StackId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeEcsClustersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EcsClusterArns`: `List`\[`str`\]
+- `StackId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeEcsClustersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeecsclustersresulttypedef).
 
 ### describe_elastic_ips
 
 Type annotations for `boto3.client("opsworks").describe_elastic_ips` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips]
+Boto3 documentation:
+[OpsWorks.Client.describe_elastic_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)
 
-```python
-def describe_elastic_ips(
-    self,
-    InstanceId: str = None,
-    StackId: str = None,
-    Ips: List[str] = None
-) -> DescribeElasticIpsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str`
+- `StackId`: `str`
+- `Ips`: `List`\[`str`\]
+
+Returns
+[DescribeElasticIpsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeelasticipsresulttypedef).
 
 ### describe_elastic_load_balancers
 
-Type annotations for `boto3.client("opsworks").describe_elastic_load_balancers` method.
+Type annotations for `boto3.client("opsworks").describe_elastic_load_balancers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers]
+Boto3 documentation:
+[OpsWorks.Client.describe_elastic_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
 
-```python
-def describe_elastic_load_balancers(
-    self,
-    StackId: str = None,
-    LayerIds: List[str] = None
-) -> DescribeElasticLoadBalancersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `LayerIds`: `List`\[`str`\]
+
+Returns
+[DescribeElasticLoadBalancersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeelasticloadbalancersresulttypedef).
 
 ### describe_instances
 
 Type annotations for `boto3.client("opsworks").describe_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_instances]
+Boto3 documentation:
+[OpsWorks.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_instances)
 
-```python
-def describe_instances(
-    self,
-    StackId: str = None,
-    LayerId: str = None,
-    InstanceIds: List[str] = None
-) -> DescribeInstancesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `LayerId`: `str`
+- `InstanceIds`: `List`\[`str`\]
+
+Returns
+[DescribeInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeinstancesresulttypedef).
 
 ### describe_layers
 
 Type annotations for `boto3.client("opsworks").describe_layers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers]
+Boto3 documentation:
+[OpsWorks.Client.describe_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
 
-```python
-def describe_layers(
-    self,
-    StackId: str = None,
-    LayerIds: List[str] = None
-) -> DescribeLayersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `LayerIds`: `List`\[`str`\]
+
+Returns
+[DescribeLayersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describelayersresulttypedef).
 
 ### describe_load_based_auto_scaling
 
-Type annotations for `boto3.client("opsworks").describe_load_based_auto_scaling` method.
+Type annotations for
+`boto3.client("opsworks").describe_load_based_auto_scaling` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling]
+Boto3 documentation:
+[OpsWorks.Client.describe_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
 
-```python
-def describe_load_based_auto_scaling(
-    self,
-    LayerIds: List[str]
-) -> DescribeLoadBasedAutoScalingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeLoadBasedAutoScalingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeloadbasedautoscalingresulttypedef).
 
 ### describe_my_user_profile
 
-Type annotations for `boto3.client("opsworks").describe_my_user_profile` method.
+Type annotations for `boto3.client("opsworks").describe_my_user_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile]
+Boto3 documentation:
+[OpsWorks.Client.describe_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile)
 
-```python
-def describe_my_user_profile(
-    self
-) -> DescribeMyUserProfileResultTypeDef:
-    pass
-```
+Returns
+[DescribeMyUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describemyuserprofileresulttypedef).
 
 ### describe_operating_systems
 
-Type annotations for `boto3.client("opsworks").describe_operating_systems` method.
+Type annotations for `boto3.client("opsworks").describe_operating_systems`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems]
+Boto3 documentation:
+[OpsWorks.Client.describe_operating_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems)
 
-```python
-def describe_operating_systems(
-    self
-) -> DescribeOperatingSystemsResponseTypeDef:
-    pass
-```
+Returns
+[DescribeOperatingSystemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeoperatingsystemsresponsetypedef).
 
 ### describe_permissions
 
 Type annotations for `boto3.client("opsworks").describe_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions]
+Boto3 documentation:
+[OpsWorks.Client.describe_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
 
-```python
-def describe_permissions(
-    self,
-    IamUserArn: str = None,
-    StackId: str = None
-) -> DescribePermissionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `IamUserArn`: `str`
+- `StackId`: `str`
+
+Returns
+[DescribePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describepermissionsresulttypedef).
 
 ### describe_raid_arrays
 
 Type annotations for `boto3.client("opsworks").describe_raid_arrays` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays]
+Boto3 documentation:
+[OpsWorks.Client.describe_raid_arrays](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays)
 
-```python
-def describe_raid_arrays(
-    self,
-    InstanceId: str = None,
-    StackId: str = None,
-    RaidArrayIds: List[str] = None
-) -> DescribeRaidArraysResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str`
+- `StackId`: `str`
+- `RaidArrayIds`: `List`\[`str`\]
+
+Returns
+[DescribeRaidArraysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeraidarraysresulttypedef).
 
 ### describe_rds_db_instances
 
-Type annotations for `boto3.client("opsworks").describe_rds_db_instances` method.
+Type annotations for `boto3.client("opsworks").describe_rds_db_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances]
+Boto3 documentation:
+[OpsWorks.Client.describe_rds_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
 
-```python
-def describe_rds_db_instances(
-    self,
-    StackId: str,
-    RdsDbInstanceArns: List[str] = None
-) -> DescribeRdsDbInstancesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `RdsDbInstanceArns`: `List`\[`str`\]
+
+Returns
+[DescribeRdsDbInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describerdsdbinstancesresulttypedef).
 
 ### describe_service_errors
 
 Type annotations for `boto3.client("opsworks").describe_service_errors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors]
+Boto3 documentation:
+[OpsWorks.Client.describe_service_errors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors)
 
-```python
-def describe_service_errors(
-    self,
-    StackId: str = None,
-    InstanceId: str = None,
-    ServiceErrorIds: List[str] = None
-) -> DescribeServiceErrorsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str`
+- `InstanceId`: `str`
+- `ServiceErrorIds`: `List`\[`str`\]
+
+Returns
+[DescribeServiceErrorsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeserviceerrorsresulttypedef).
 
 ### describe_stack_provisioning_parameters
 
-Type annotations for `boto3.client("opsworks").describe_stack_provisioning_parameters` method.
+Type annotations for
+`boto3.client("opsworks").describe_stack_provisioning_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters]
+Boto3 documentation:
+[OpsWorks.Client.describe_stack_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
 
-```python
-def describe_stack_provisioning_parameters(
-    self,
-    StackId: str
-) -> DescribeStackProvisioningParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+
+Returns
+[DescribeStackProvisioningParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describestackprovisioningparametersresulttypedef).
 
 ### describe_stack_summary
 
 Type annotations for `boto3.client("opsworks").describe_stack_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary]
+Boto3 documentation:
+[OpsWorks.Client.describe_stack_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
 
-```python
-def describe_stack_summary(
-    self,
-    StackId: str
-) -> DescribeStackSummaryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+
+Returns
+[DescribeStackSummaryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describestacksummaryresulttypedef).
 
 ### describe_stacks
 
 Type annotations for `boto3.client("opsworks").describe_stacks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks]
+Boto3 documentation:
+[OpsWorks.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
 
-```python
-def describe_stacks(
-    self,
-    StackIds: List[str] = None
-) -> DescribeStacksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackIds`: `List`\[`str`\]
+
+Returns
+[DescribeStacksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describestacksresulttypedef).
 
 ### describe_time_based_auto_scaling
 
-Type annotations for `boto3.client("opsworks").describe_time_based_auto_scaling` method.
+Type annotations for
+`boto3.client("opsworks").describe_time_based_auto_scaling` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling]
+Boto3 documentation:
+[OpsWorks.Client.describe_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
 
-```python
-def describe_time_based_auto_scaling(
-    self,
-    InstanceIds: List[str]
-) -> DescribeTimeBasedAutoScalingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceIds`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeTimeBasedAutoScalingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describetimebasedautoscalingresulttypedef).
 
 ### describe_user_profiles
 
 Type annotations for `boto3.client("opsworks").describe_user_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles]
+Boto3 documentation:
+[OpsWorks.Client.describe_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
 
-```python
-def describe_user_profiles(
-    self,
-    IamUserArns: List[str] = None
-) -> DescribeUserProfilesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `IamUserArns`: `List`\[`str`\]
+
+Returns
+[DescribeUserProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeuserprofilesresulttypedef).
 
 ### describe_volumes
 
 Type annotations for `boto3.client("opsworks").describe_volumes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_volumes]
+Boto3 documentation:
+[OpsWorks.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_volumes)
 
-```python
-def describe_volumes(
-    self,
-    InstanceId: str = None,
-    StackId: str = None,
-    RaidArrayId: str = None,
-    VolumeIds: List[str] = None
-) -> DescribeVolumesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str`
+- `StackId`: `str`
+- `RaidArrayId`: `str`
+- `VolumeIds`: `List`\[`str`\]
+
+Returns
+[DescribeVolumesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describevolumesresulttypedef).
 
 ### detach_elastic_load_balancer
 
-Type annotations for `boto3.client("opsworks").detach_elastic_load_balancer` method.
+Type annotations for `boto3.client("opsworks").detach_elastic_load_balancer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer]
+Boto3 documentation:
+[OpsWorks.Client.detach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
 
-```python
-def detach_elastic_load_balancer(
-    self,
-    ElasticLoadBalancerName: str,
-    LayerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticLoadBalancerName`: `str` *(required)*
+- `LayerId`: `str` *(required)*
 
 ### disassociate_elastic_ip
 
 Type annotations for `boto3.client("opsworks").disassociate_elastic_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip]
+Boto3 documentation:
+[OpsWorks.Client.disassociate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
 
-```python
-def disassociate_elastic_ip(
-    self,
-    ElasticIp: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticIp`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("opsworks").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url]
+Boto3 documentation:
+[OpsWorks.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_hostname_suggestion
 
 Type annotations for `boto3.client("opsworks").get_hostname_suggestion` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion]
+Boto3 documentation:
+[OpsWorks.Client.get_hostname_suggestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
 
-```python
-def get_hostname_suggestion(
-    self,
-    LayerId: str
-) -> GetHostnameSuggestionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerId`: `str` *(required)*
+
+Returns
+[GetHostnameSuggestionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#gethostnamesuggestionresulttypedef).
 
 ### grant_access
 
 Type annotations for `boto3.client("opsworks").grant_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access]
+Boto3 documentation:
+[OpsWorks.Client.grant_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access)
 
-```python
-def grant_access(
-    self,
-    InstanceId: str,
-    ValidForInMinutes: int = None
-) -> GrantAccessResultTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `ValidForInMinutes`: `int`
+
+Returns
+[GrantAccessResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#grantaccessresulttypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("opsworks").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.list_tags]
+Boto3 documentation:
+[OpsWorks.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTagsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#listtagsresulttypedef).
 
 ### reboot_instance
 
 Type annotations for `boto3.client("opsworks").reboot_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance]
+Boto3 documentation:
+[OpsWorks.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
 
-```python
-def reboot_instance(
-    self,
-    InstanceId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
 
 ### register_ecs_cluster
 
 Type annotations for `boto3.client("opsworks").register_ecs_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster]
+Boto3 documentation:
+[OpsWorks.Client.register_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
 
-```python
-def register_ecs_cluster(
-    self,
-    EcsClusterArn: str,
-    StackId: str
-) -> RegisterEcsClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EcsClusterArn`: `str` *(required)*
+- `StackId`: `str` *(required)*
+
+Returns
+[RegisterEcsClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#registerecsclusterresulttypedef).
 
 ### register_elastic_ip
 
 Type annotations for `boto3.client("opsworks").register_elastic_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip]
+Boto3 documentation:
+[OpsWorks.Client.register_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
 
-```python
-def register_elastic_ip(
-    self,
-    ElasticIp: str,
-    StackId: str
-) -> RegisterElasticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ElasticIp`: `str` *(required)*
+- `StackId`: `str` *(required)*
+
+Returns
+[RegisterElasticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#registerelasticipresulttypedef).
 
 ### register_instance
 
 Type annotations for `boto3.client("opsworks").register_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_instance]
+Boto3 documentation:
+[OpsWorks.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_instance)
 
-```python
-def register_instance(
-    self,
-    StackId: str,
-    Hostname: str = None,
-    PublicIp: str = None,
-    PrivateIp: str = None,
-    RsaPublicKey: str = None,
-    RsaPublicKeyFingerprint: str = None,
-    InstanceIdentity: InstanceIdentityTypeDef = None
-) -> RegisterInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Hostname`: `str`
+- `PublicIp`: `str`
+- `PrivateIp`: `str`
+- `RsaPublicKey`: `str`
+- `RsaPublicKeyFingerprint`: `str`
+- `InstanceIdentity`:
+  [InstanceIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#instanceidentitytypedef)
+
+Returns
+[RegisterInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#registerinstanceresulttypedef).
 
 ### register_rds_db_instance
 
-Type annotations for `boto3.client("opsworks").register_rds_db_instance` method.
+Type annotations for `boto3.client("opsworks").register_rds_db_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance]
+Boto3 documentation:
+[OpsWorks.Client.register_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance)
 
-```python
-def register_rds_db_instance(
-    self,
-    StackId: str,
-    RdsDbInstanceArn: str,
-    DbUser: str,
-    DbPassword: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `RdsDbInstanceArn`: `str` *(required)*
+- `DbUser`: `str` *(required)*
+- `DbPassword`: `str` *(required)*
 
 ### register_volume
 
 Type annotations for `boto3.client("opsworks").register_volume` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume]
+Boto3 documentation:
+[OpsWorks.Client.register_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume)
 
-```python
-def register_volume(
-    self,
-    StackId: str,
-    Ec2VolumeId: str = None
-) -> RegisterVolumeResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Ec2VolumeId`: `str`
+
+Returns
+[RegisterVolumeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#registervolumeresulttypedef).
 
 ### set_load_based_auto_scaling
 
-Type annotations for `boto3.client("opsworks").set_load_based_auto_scaling` method.
+Type annotations for `boto3.client("opsworks").set_load_based_auto_scaling`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling]
+Boto3 documentation:
+[OpsWorks.Client.set_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling)
 
-```python
-def set_load_based_auto_scaling(
-    self,
-    LayerId: str,
-    Enable: bool = None,
-    UpScaling: "AutoScalingThresholdsTypeDef" = None,
-    DownScaling: "AutoScalingThresholdsTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `LayerId`: `str` *(required)*
+- `Enable`: `bool`
+- `UpScaling`:
+  [AutoScalingThresholdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#autoscalingthresholdstypedef)
+- `DownScaling`:
+  [AutoScalingThresholdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#autoscalingthresholdstypedef)
 
 ### set_permission
 
 Type annotations for `boto3.client("opsworks").set_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_permission]
+Boto3 documentation:
+[OpsWorks.Client.set_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_permission)
 
-```python
-def set_permission(
-    self,
-    StackId: str,
-    IamUserArn: str,
-    AllowSsh: bool = None,
-    AllowSudo: bool = None,
-    Level: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `IamUserArn`: `str` *(required)*
+- `AllowSsh`: `bool`
+- `AllowSudo`: `bool`
+- `Level`: `str`
 
 ### set_time_based_auto_scaling
 
-Type annotations for `boto3.client("opsworks").set_time_based_auto_scaling` method.
+Type annotations for `boto3.client("opsworks").set_time_based_auto_scaling`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling]
+Boto3 documentation:
+[OpsWorks.Client.set_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
 
-```python
-def set_time_based_auto_scaling(
-    self,
-    InstanceId: str,
-    AutoScalingSchedule: "WeeklyAutoScalingScheduleTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `AutoScalingSchedule`:
+  [WeeklyAutoScalingScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#weeklyautoscalingscheduletypedef)
 
 ### start_instance
 
 Type annotations for `boto3.client("opsworks").start_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance]
+Boto3 documentation:
+[OpsWorks.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance)
 
-```python
-def start_instance(
-    self,
-    InstanceId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
 
 ### start_stack
 
 Type annotations for `boto3.client("opsworks").start_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack]
+Boto3 documentation:
+[OpsWorks.Client.start_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack)
 
-```python
-def start_stack(
-    self,
-    StackId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
 
 ### stop_instance
 
 Type annotations for `boto3.client("opsworks").stop_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance]
+Boto3 documentation:
+[OpsWorks.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
 
-```python
-def stop_instance(
-    self,
-    InstanceId: str,
-    Force: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Force`: `bool`
 
 ### stop_stack
 
 Type annotations for `boto3.client("opsworks").stop_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack]
+Boto3 documentation:
+[OpsWorks.Client.stop_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
 
-```python
-def stop_stack(
-    self,
-    StackId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("opsworks").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource]
+Boto3 documentation:
+[OpsWorks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### unassign_instance
 
 Type annotations for `boto3.client("opsworks").unassign_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance]
+Boto3 documentation:
+[OpsWorks.Client.unassign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
 
-```python
-def unassign_instance(
-    self,
-    InstanceId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
 
 ### unassign_volume
 
 Type annotations for `boto3.client("opsworks").unassign_volume` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume]
+Boto3 documentation:
+[OpsWorks.Client.unassign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
 
-```python
-def unassign_volume(
-    self,
-    VolumeId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VolumeId`: `str` *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("opsworks").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource]
+Boto3 documentation:
+[OpsWorks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_app
 
 Type annotations for `boto3.client("opsworks").update_app` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_app]
+Boto3 documentation:
+[OpsWorks.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_app)
 
-```python
-def update_app(
-    self,
-    AppId: str,
-    Name: str = None,
-    Description: str = None,
-    DataSources: List["DataSourceTypeDef"] = None,
-    Type: AppType = None,
-    AppSource: "SourceTypeDef" = None,
-    Domains: List[str] = None,
-    EnableSsl: bool = None,
-    SslConfiguration: "SslConfigurationTypeDef" = None,
-    Attributes: Dict[AppAttributesKeys, str] = None,
-    Environment: List["EnvironmentVariableTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `DataSources`:
+  `List`\[[DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#datasourcetypedef)\]
+- `Type`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#apptype)
+- `AppSource`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `Domains`: `List`\[`str`\]
+- `EnableSsl`: `bool`
+- `SslConfiguration`:
+  [SslConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sslconfigurationtypedef)
+- `Attributes`:
+  `Dict`\[[AppAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#appattributeskeys),
+  `str`\]
+- `Environment`:
+  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#environmentvariabletypedef)\]
 
 ### update_elastic_ip
 
 Type annotations for `boto3.client("opsworks").update_elastic_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip]
+Boto3 documentation:
+[OpsWorks.Client.update_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
 
-```python
-def update_elastic_ip(
-    self,
-    ElasticIp: str,
-    Name: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ElasticIp`: `str` *(required)*
+- `Name`: `str`
 
 ### update_instance
 
 Type annotations for `boto3.client("opsworks").update_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_instance]
+Boto3 documentation:
+[OpsWorks.Client.update_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_instance)
 
-```python
-def update_instance(
-    self,
-    InstanceId: str,
-    LayerIds: List[str] = None,
-    InstanceType: str = None,
-    AutoScalingType: AutoScalingType = None,
-    Hostname: str = None,
-    Os: str = None,
-    AmiId: str = None,
-    SshKeyName: str = None,
-    Architecture: Architecture = None,
-    InstallUpdatesOnBoot: bool = None,
-    EbsOptimized: bool = None,
-    AgentVersion: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LayerIds`: `List`\[`str`\]
+- `InstanceType`: `str`
+- `AutoScalingType`:
+  [AutoScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#autoscalingtype)
+- `Hostname`: `str`
+- `Os`: `str`
+- `AmiId`: `str`
+- `SshKeyName`: `str`
+- `Architecture`:
+  [Architecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#architecture)
+- `InstallUpdatesOnBoot`: `bool`
+- `EbsOptimized`: `bool`
+- `AgentVersion`: `str`
 
 ### update_layer
 
 Type annotations for `boto3.client("opsworks").update_layer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_layer]
+Boto3 documentation:
+[OpsWorks.Client.update_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_layer)
 
-```python
-def update_layer(
-    self,
-    LayerId: str,
-    Name: str = None,
-    Shortname: str = None,
-    Attributes: Dict[LayerAttributesKeys, str] = None,
-    CloudWatchLogsConfiguration: "CloudWatchLogsConfigurationTypeDef" = None,
-    CustomInstanceProfileArn: str = None,
-    CustomJson: str = None,
-    CustomSecurityGroupIds: List[str] = None,
-    Packages: List[str] = None,
-    VolumeConfigurations: List["VolumeConfigurationTypeDef"] = None,
-    EnableAutoHealing: bool = None,
-    AutoAssignElasticIps: bool = None,
-    AutoAssignPublicIps: bool = None,
-    CustomRecipes: "RecipesTypeDef" = None,
-    InstallUpdatesOnBoot: bool = None,
-    UseEbsOptimizedInstances: bool = None,
-    LifecycleEventConfiguration: "LifecycleEventConfigurationTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `LayerId`: `str` *(required)*
+- `Name`: `str`
+- `Shortname`: `str`
+- `Attributes`:
+  `Dict`\[[LayerAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layerattributeskeys),
+  `str`\]
+- `CloudWatchLogsConfiguration`:
+  [CloudWatchLogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#cloudwatchlogsconfigurationtypedef)
+- `CustomInstanceProfileArn`: `str`
+- `CustomJson`: `str`
+- `CustomSecurityGroupIds`: `List`\[`str`\]
+- `Packages`: `List`\[`str`\]
+- `VolumeConfigurations`:
+  `List`\[[VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#volumeconfigurationtypedef)\]
+- `EnableAutoHealing`: `bool`
+- `AutoAssignElasticIps`: `bool`
+- `AutoAssignPublicIps`: `bool`
+- `CustomRecipes`:
+  [RecipesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#recipestypedef)
+- `InstallUpdatesOnBoot`: `bool`
+- `UseEbsOptimizedInstances`: `bool`
+- `LifecycleEventConfiguration`:
+  [LifecycleEventConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#lifecycleeventconfigurationtypedef)
 
 ### update_my_user_profile
 
 Type annotations for `boto3.client("opsworks").update_my_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile]
+Boto3 documentation:
+[OpsWorks.Client.update_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
 
-```python
-def update_my_user_profile(
-    self,
-    SshPublicKey: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `SshPublicKey`: `str`
 
 ### update_rds_db_instance
 
 Type annotations for `boto3.client("opsworks").update_rds_db_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance]
+Boto3 documentation:
+[OpsWorks.Client.update_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance)
 
-```python
-def update_rds_db_instance(
-    self,
-    RdsDbInstanceArn: str,
-    DbUser: str = None,
-    DbPassword: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `RdsDbInstanceArn`: `str` *(required)*
+- `DbUser`: `str`
+- `DbPassword`: `str`
 
 ### update_stack
 
 Type annotations for `boto3.client("opsworks").update_stack` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_stack]
+Boto3 documentation:
+[OpsWorks.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_stack)
 
-```python
-def update_stack(
-    self,
-    StackId: str,
-    Name: str = None,
-    Attributes: Dict[Literal['Color'], str] = None,
-    ServiceRoleArn: str = None,
-    DefaultInstanceProfileArn: str = None,
-    DefaultOs: str = None,
-    HostnameTheme: str = None,
-    DefaultAvailabilityZone: str = None,
-    DefaultSubnetId: str = None,
-    CustomJson: str = None,
-    ConfigurationManager: "StackConfigurationManagerTypeDef" = None,
-    ChefConfiguration: "ChefConfigurationTypeDef" = None,
-    UseCustomCookbooks: bool = None,
-    CustomCookbooksSource: "SourceTypeDef" = None,
-    DefaultSshKeyName: str = None,
-    DefaultRootDeviceType: RootDeviceType = None,
-    UseOpsworksSecurityGroups: bool = None,
-    AgentVersion: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `StackId`: `str` *(required)*
+- `Name`: `str`
+- `Attributes`: `Dict`\[`Literal['Color']`, `str`\]
+- `ServiceRoleArn`: `str`
+- `DefaultInstanceProfileArn`: `str`
+- `DefaultOs`: `str`
+- `HostnameTheme`: `str`
+- `DefaultAvailabilityZone`: `str`
+- `DefaultSubnetId`: `str`
+- `CustomJson`: `str`
+- `ConfigurationManager`:
+  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+- `ChefConfiguration`:
+  [ChefConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#chefconfigurationtypedef)
+- `UseCustomCookbooks`: `bool`
+- `CustomCookbooksSource`:
+  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `DefaultSshKeyName`: `str`
+- `DefaultRootDeviceType`:
+  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `UseOpsworksSecurityGroups`: `bool`
+- `AgentVersion`: `str`
 
 ### update_user_profile
 
 Type annotations for `boto3.client("opsworks").update_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_user_profile]
+Boto3 documentation:
+[OpsWorks.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_user_profile)
 
-```python
-def update_user_profile(
-    self,
-    IamUserArn: str,
-    SshUsername: str = None,
-    SshPublicKey: str = None,
-    AllowSelfManagement: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `IamUserArn`: `str` *(required)*
+- `SshUsername`: `str`
+- `SshPublicKey`: `str`
+- `AllowSelfManagement`: `bool`
 
 ### update_volume
 
 Type annotations for `boto3.client("opsworks").update_volume` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_volume]
+Boto3 documentation:
+[OpsWorks.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_volume)
 
-```python
-def update_volume(
-    self,
-    VolumeId: str,
-    Name: str = None,
-    MountPoint: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `VolumeId`: `str` *(required)*
+- `Name`: `str`
+- `MountPoint`: `str`
 
 ### get_paginator
 
-Type annotations for `boto3.client("opsworks").get_paginator` method with overloads.
+Type annotations for `boto3.client("opsworks").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_ecs_clusters")` -> [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
-
-
-
+- `client.get_paginator("describe_ecs_clusters")` ->
+  [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("opsworks").get_waiter` method with overloads.
+Type annotations for `boto3.client("opsworks").get_waiter` method with
+overloads.
 
-- `client.get_waiter("app_exists")` -> [AppExistsWaiter](./waiters.md#appexistswaiter)
-- `client.get_waiter("deployment_successful")` -> [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
-- `client.get_waiter("instance_online")` -> [InstanceOnlineWaiter](./waiters.md#instanceonlinewaiter)
-- `client.get_waiter("instance_registered")` -> [InstanceRegisteredWaiter](./waiters.md#instanceregisteredwaiter)
-- `client.get_waiter("instance_stopped")` -> [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
-- `client.get_waiter("instance_terminated")` -> [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
+- `client.get_waiter("app_exists")` ->
+  [AppExistsWaiter](./waiters.md#appexistswaiter)
+- `client.get_waiter("deployment_successful")` ->
+  [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
+- `client.get_waiter("instance_online")` ->
+  [InstanceOnlineWaiter](./waiters.md#instanceonlinewaiter)
+- `client.get_waiter("instance_registered")` ->
+  [InstanceRegisteredWaiter](./waiters.md#instanceregisteredwaiter)
+- `client.get_waiter("instance_stopped")` ->
+  [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
+- `client.get_waiter("instance_terminated")` ->
+  [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)

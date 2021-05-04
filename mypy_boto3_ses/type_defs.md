@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SES](./README.md) > Structures
 
-Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+Auto-generated documentation for
+[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+type annotations stubs module
+[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Typed dictionaries for boto3 SES module](#typed-dictionaries-for-boto3-ses-module)
   - [AddHeaderActionTypeDef](#addheaderactiontypedef)
@@ -87,13 +89,10 @@ type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-bot
 from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef
 ```
 
-
 Required fields:
+
 - `HeaderName`: `str`
 - `HeaderValue`: `str`
-
-
-
 
 ## BodyTypeDef
 
@@ -101,13 +100,12 @@ Required fields:
 from mypy_boto3_ses.type_defs import BodyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Text`: `"ContentTypeDef"`
-- `Html`: `"ContentTypeDef"`
 
+- `Text`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#contenttypedef)
+- `Html`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#contenttypedef)
 
 ## BounceActionTypeDef
 
@@ -115,18 +113,16 @@ Optional fields:
 from mypy_boto3_ses.type_defs import BounceActionTypeDef
 ```
 
-
 Required fields:
+
 - `SmtpReplyCode`: `str`
 - `Message`: `str`
 - `Sender`: `str`
 
-
-
 Optional fields:
+
 - `TopicArn`: `str`
 - `StatusCode`: `str`
-
 
 ## BouncedRecipientInfoTypeDef
 
@@ -134,17 +130,17 @@ Optional fields:
 from mypy_boto3_ses.type_defs import BouncedRecipientInfoTypeDef
 ```
 
-
 Required fields:
+
 - `Recipient`: `str`
 
-
-
 Optional fields:
-- `RecipientArn`: `str`
-- `BounceType`: `BounceType`
-- `RecipientDsnFields`: `"RecipientDsnFieldsTypeDef"`
 
+- `RecipientArn`: `str`
+- `BounceType`:
+  [BounceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#bouncetype)
+- `RecipientDsnFields`:
+  [RecipientDsnFieldsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#recipientdsnfieldstypedef)
 
 ## BulkEmailDestinationStatusTypeDef
 
@@ -152,14 +148,12 @@ Optional fields:
 from mypy_boto3_ses.type_defs import BulkEmailDestinationStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `BulkEmailStatus`
+
+- `Status`:
+  [BulkEmailStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#bulkemailstatus)
 - `Error`: `str`
 - `MessageId`: `str`
-
 
 ## BulkEmailDestinationTypeDef
 
@@ -167,16 +161,16 @@ Optional fields:
 from mypy_boto3_ses.type_defs import BulkEmailDestinationTypeDef
 ```
 
-
 Required fields:
-- `Destination`: `"DestinationTypeDef"`
 
-
+- `Destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#destinationtypedef)
 
 Optional fields:
-- `ReplacementTags`: `List["MessageTagTypeDef"]`
-- `ReplacementTemplateData`: `str`
 
+- `ReplacementTags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetagtypedef)\]
+- `ReplacementTemplateData`: `str`
 
 ## CloudWatchDestinationTypeDef
 
@@ -184,12 +178,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import CloudWatchDestinationTypeDef
 ```
 
-
 Required fields:
-- `DimensionConfigurations`: `List["CloudWatchDimensionConfigurationTypeDef"]`
 
-
-
+- `DimensionConfigurations`:
+  `List`\[[CloudWatchDimensionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#cloudwatchdimensionconfigurationtypedef)\]
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -197,14 +189,12 @@ Required fields:
 from mypy_boto3_ses.type_defs import CloudWatchDimensionConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `DimensionName`: `str`
-- `DimensionValueSource`: `DimensionValueSource`
+- `DimensionValueSource`:
+  [DimensionValueSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#dimensionvaluesource)
 - `DefaultDimensionValue`: `str`
-
-
-
 
 ## ConfigurationSetTypeDef
 
@@ -212,12 +202,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import ConfigurationSetTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## ContentTypeDef
 
@@ -225,15 +212,13 @@ Required fields:
 from mypy_boto3_ses.type_defs import ContentTypeDef
 ```
 
-
 Required fields:
+
 - `Data`: `str`
 
-
-
 Optional fields:
-- `Charset`: `str`
 
+- `Charset`: `str`
 
 ## CustomVerificationEmailTemplateTypeDef
 
@@ -241,16 +226,13 @@ Optional fields:
 from mypy_boto3_ses.type_defs import CustomVerificationEmailTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TemplateName`: `str`
 - `FromEmailAddress`: `str`
 - `TemplateSubject`: `str`
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
-
 
 ## DeliveryOptionsTypeDef
 
@@ -258,12 +240,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DeliveryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TlsPolicy`: `TlsPolicy`
 
+- `TlsPolicy`:
+  [TlsPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#tlspolicy)
 
 ## DescribeActiveReceiptRuleSetResponseTypeDef
 
@@ -271,13 +251,12 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DescribeActiveReceiptRuleSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metadata`: `"ReceiptRuleSetMetadataTypeDef"`
-- `Rules`: `List["ReceiptRuleTypeDef"]`
 
+- `Metadata`:
+  [ReceiptRuleSetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptrulesetmetadatatypedef)
+- `Rules`:
+  `List`\[[ReceiptRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptruletypedef)\]
 
 ## DescribeConfigurationSetResponseTypeDef
 
@@ -285,16 +264,18 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DescribeConfigurationSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationSet`: `"ConfigurationSetTypeDef"`
-- `EventDestinations`: `List["EventDestinationTypeDef"]`
-- `TrackingOptions`: `"TrackingOptionsTypeDef"`
-- `DeliveryOptions`: `"DeliveryOptionsTypeDef"`
-- `ReputationOptions`: `"ReputationOptionsTypeDef"`
 
+- `ConfigurationSet`:
+  [ConfigurationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#configurationsettypedef)
+- `EventDestinations`:
+  `List`\[[EventDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#eventdestinationtypedef)\]
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#trackingoptionstypedef)
+- `DeliveryOptions`:
+  [DeliveryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#deliveryoptionstypedef)
+- `ReputationOptions`:
+  [ReputationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#reputationoptionstypedef)
 
 ## DescribeReceiptRuleResponseTypeDef
 
@@ -302,12 +283,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DescribeReceiptRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Rule`: `"ReceiptRuleTypeDef"`
 
+- `Rule`:
+  [ReceiptRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptruletypedef)
 
 ## DescribeReceiptRuleSetResponseTypeDef
 
@@ -315,13 +294,12 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metadata`: `"ReceiptRuleSetMetadataTypeDef"`
-- `Rules`: `List["ReceiptRuleTypeDef"]`
 
+- `Metadata`:
+  [ReceiptRuleSetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptrulesetmetadatatypedef)
+- `Rules`:
+  `List`\[[ReceiptRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptruletypedef)\]
 
 ## DestinationTypeDef
 
@@ -329,14 +307,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import DestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ToAddresses`: `List[str]`
-- `CcAddresses`: `List[str]`
-- `BccAddresses`: `List[str]`
 
+- `ToAddresses`: `List`\[`str`\]
+- `CcAddresses`: `List`\[`str`\]
+- `BccAddresses`: `List`\[`str`\]
 
 ## EventDestinationTypeDef
 
@@ -344,19 +319,21 @@ Optional fields:
 from mypy_boto3_ses.type_defs import EventDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `MatchingEventTypes`: `List[EventType]`
-
-
+- `MatchingEventTypes`:
+  `List`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#eventtype)\]
 
 Optional fields:
-- `Enabled`: `bool`
-- `KinesisFirehoseDestination`: `"KinesisFirehoseDestinationTypeDef"`
-- `CloudWatchDestination`: `"CloudWatchDestinationTypeDef"`
-- `SNSDestination`: `"SNSDestinationTypeDef"`
 
+- `Enabled`: `bool`
+- `KinesisFirehoseDestination`:
+  [KinesisFirehoseDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#kinesisfirehosedestinationtypedef)
+- `CloudWatchDestination`:
+  [CloudWatchDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#cloudwatchdestinationtypedef)
+- `SNSDestination`:
+  [SNSDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#snsdestinationtypedef)
 
 ## ExtensionFieldTypeDef
 
@@ -364,13 +341,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ExtensionFieldTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## GetAccountSendingEnabledResponseTypeDef
 
@@ -378,12 +352,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetAccountSendingEnabledResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## GetCustomVerificationEmailTemplateResponseTypeDef
 
@@ -391,10 +362,8 @@ Optional fields:
 from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TemplateName`: `str`
 - `FromEmailAddress`: `str`
 - `TemplateSubject`: `str`
@@ -402,19 +371,16 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
-
 ## GetIdentityDkimAttributesResponseTypeDef
 
 ```python
 from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesResponseTypeDef
 ```
 
-
 Required fields:
-- `DkimAttributes`: `Dict[str, "IdentityDkimAttributesTypeDef"]`
 
-
-
+- `DkimAttributes`: `Dict`\[`str`,
+  [IdentityDkimAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#identitydkimattributestypedef)\]
 
 ## GetIdentityMailFromDomainAttributesResponseTypeDef
 
@@ -422,12 +388,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesResponseTypeDef
 ```
 
-
 Required fields:
-- `MailFromDomainAttributes`: `Dict[str, "IdentityMailFromDomainAttributesTypeDef"]`
 
-
-
+- `MailFromDomainAttributes`: `Dict`\[`str`,
+  [IdentityMailFromDomainAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#identitymailfromdomainattributestypedef)\]
 
 ## GetIdentityNotificationAttributesResponseTypeDef
 
@@ -435,12 +399,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesResponseTypeDef
 ```
 
-
 Required fields:
-- `NotificationAttributes`: `Dict[str, "IdentityNotificationAttributesTypeDef"]`
 
-
-
+- `NotificationAttributes`: `Dict`\[`str`,
+  [IdentityNotificationAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#identitynotificationattributestypedef)\]
 
 ## GetIdentityPoliciesResponseTypeDef
 
@@ -448,12 +410,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetIdentityPoliciesResponseTypeDef
 ```
 
-
 Required fields:
-- `Policies`: `Dict[str, str]`
 
-
-
+- `Policies`: `Dict`\[`str`, `str`\]
 
 ## GetIdentityVerificationAttributesResponseTypeDef
 
@@ -461,12 +420,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesResponseTypeDef
 ```
 
-
 Required fields:
-- `VerificationAttributes`: `Dict[str, "IdentityVerificationAttributesTypeDef"]`
 
-
-
+- `VerificationAttributes`: `Dict`\[`str`,
+  [IdentityVerificationAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#identityverificationattributestypedef)\]
 
 ## GetSendQuotaResponseTypeDef
 
@@ -474,14 +431,11 @@ Required fields:
 from mypy_boto3_ses.type_defs import GetSendQuotaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Max24HourSend`: `float`
 - `MaxSendRate`: `float`
 - `SentLast24Hours`: `float`
-
 
 ## GetSendStatisticsResponseTypeDef
 
@@ -489,12 +443,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import GetSendStatisticsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SendDataPoints`: `List["SendDataPointTypeDef"]`
 
+- `SendDataPoints`:
+  `List`\[[SendDataPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#senddatapointtypedef)\]
 
 ## GetTemplateResponseTypeDef
 
@@ -502,12 +454,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import GetTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Template`: `"TemplateTypeDef"`
 
+- `Template`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#templatetypedef)
 
 ## IdentityDkimAttributesTypeDef
 
@@ -515,16 +465,15 @@ Optional fields:
 from mypy_boto3_ses.type_defs import IdentityDkimAttributesTypeDef
 ```
 
-
 Required fields:
+
 - `DkimEnabled`: `bool`
-- `DkimVerificationStatus`: `VerificationStatus`
-
-
+- `DkimVerificationStatus`:
+  [VerificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#verificationstatus)
 
 Optional fields:
-- `DkimTokens`: `List[str]`
 
+- `DkimTokens`: `List`\[`str`\]
 
 ## IdentityMailFromDomainAttributesTypeDef
 
@@ -532,14 +481,13 @@ Optional fields:
 from mypy_boto3_ses.type_defs import IdentityMailFromDomainAttributesTypeDef
 ```
 
-
 Required fields:
+
 - `MailFromDomain`: `str`
-- `MailFromDomainStatus`: `CustomMailFromStatus`
-- `BehaviorOnMXFailure`: `BehaviorOnMXFailure`
-
-
-
+- `MailFromDomainStatus`:
+  [CustomMailFromStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#custommailfromstatus)
+- `BehaviorOnMXFailure`:
+  [BehaviorOnMXFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#behavioronmxfailure)
 
 ## IdentityNotificationAttributesTypeDef
 
@@ -547,20 +495,18 @@ Required fields:
 from mypy_boto3_ses.type_defs import IdentityNotificationAttributesTypeDef
 ```
 
-
 Required fields:
+
 - `BounceTopic`: `str`
 - `ComplaintTopic`: `str`
 - `DeliveryTopic`: `str`
 - `ForwardingEnabled`: `bool`
 
-
-
 Optional fields:
+
 - `HeadersInBounceNotificationsEnabled`: `bool`
 - `HeadersInComplaintNotificationsEnabled`: `bool`
 - `HeadersInDeliveryNotificationsEnabled`: `bool`
-
 
 ## IdentityVerificationAttributesTypeDef
 
@@ -568,15 +514,14 @@ Optional fields:
 from mypy_boto3_ses.type_defs import IdentityVerificationAttributesTypeDef
 ```
 
-
 Required fields:
-- `VerificationStatus`: `VerificationStatus`
 
-
+- `VerificationStatus`:
+  [VerificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#verificationstatus)
 
 Optional fields:
-- `VerificationToken`: `str`
 
+- `VerificationToken`: `str`
 
 ## KinesisFirehoseDestinationTypeDef
 
@@ -584,13 +529,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import KinesisFirehoseDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `IAMRoleARN`: `str`
 - `DeliveryStreamARN`: `str`
-
-
-
 
 ## LambdaActionTypeDef
 
@@ -598,16 +540,15 @@ Required fields:
 from mypy_boto3_ses.type_defs import LambdaActionTypeDef
 ```
 
-
 Required fields:
+
 - `FunctionArn`: `str`
 
-
-
 Optional fields:
-- `TopicArn`: `str`
-- `InvocationType`: `InvocationType`
 
+- `TopicArn`: `str`
+- `InvocationType`:
+  [InvocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#invocationtype)
 
 ## ListConfigurationSetsResponseTypeDef
 
@@ -615,13 +556,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListConfigurationSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationSets`: `List["ConfigurationSetTypeDef"]`
-- `NextToken`: `str`
 
+- `ConfigurationSets`:
+  `List`\[[ConfigurationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#configurationsettypedef)\]
+- `NextToken`: `str`
 
 ## ListCustomVerificationEmailTemplatesResponseTypeDef
 
@@ -629,13 +568,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListCustomVerificationEmailTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CustomVerificationEmailTemplates`: `List["CustomVerificationEmailTemplateTypeDef"]`
-- `NextToken`: `str`
 
+- `CustomVerificationEmailTemplates`:
+  `List`\[[CustomVerificationEmailTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#customverificationemailtemplatetypedef)\]
+- `NextToken`: `str`
 
 ## ListIdentitiesResponseTypeDef
 
@@ -643,15 +580,13 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListIdentitiesResponseTypeDef
 ```
 
-
 Required fields:
-- `Identities`: `List[str]`
 
-
+- `Identities`: `List`\[`str`\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListIdentityPoliciesResponseTypeDef
 
@@ -659,12 +594,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListIdentityPoliciesResponseTypeDef
 ```
 
-
 Required fields:
-- `PolicyNames`: `List[str]`
 
-
-
+- `PolicyNames`: `List`\[`str`\]
 
 ## ListReceiptFiltersResponseTypeDef
 
@@ -672,12 +604,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import ListReceiptFiltersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Filters`: `List["ReceiptFilterTypeDef"]`
 
+- `Filters`:
+  `List`\[[ReceiptFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptfiltertypedef)\]
 
 ## ListReceiptRuleSetsResponseTypeDef
 
@@ -685,13 +615,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListReceiptRuleSetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RuleSets`: `List["ReceiptRuleSetMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `RuleSets`:
+  `List`\[[ReceiptRuleSetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptrulesetmetadatatypedef)\]
+- `NextToken`: `str`
 
 ## ListTemplatesResponseTypeDef
 
@@ -699,13 +627,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TemplatesMetadata`: `List["TemplateMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `TemplatesMetadata`:
+  `List`\[[TemplateMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#templatemetadatatypedef)\]
+- `NextToken`: `str`
 
 ## ListVerifiedEmailAddressesResponseTypeDef
 
@@ -713,12 +639,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ListVerifiedEmailAddressesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VerifiedEmailAddresses`: `List[str]`
 
+- `VerifiedEmailAddresses`: `List`\[`str`\]
 
 ## MessageDsnTypeDef
 
@@ -726,16 +649,15 @@ Optional fields:
 from mypy_boto3_ses.type_defs import MessageDsnTypeDef
 ```
 
-
 Required fields:
+
 - `ReportingMta`: `str`
 
-
-
 Optional fields:
-- `ArrivalDate`: `datetime`
-- `ExtensionFields`: `List["ExtensionFieldTypeDef"]`
 
+- `ArrivalDate`: `datetime`
+- `ExtensionFields`:
+  `List`\[[ExtensionFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#extensionfieldtypedef)\]
 
 ## MessageTagTypeDef
 
@@ -743,13 +665,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import MessageTagTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## MessageTypeDef
 
@@ -757,13 +676,12 @@ Required fields:
 from mypy_boto3_ses.type_defs import MessageTypeDef
 ```
 
-
 Required fields:
-- `Subject`: `"ContentTypeDef"`
-- `Body`: `"BodyTypeDef"`
 
-
-
+- `Subject`:
+  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#contenttypedef)
+- `Body`:
+  [BodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#bodytypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -771,14 +689,11 @@ Required fields:
 from mypy_boto3_ses.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RawMessageTypeDef
 
@@ -786,12 +701,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import RawMessageTypeDef
 ```
 
-
 Required fields:
-- `Data`: `Union[bytes, IO[bytes]]`
 
-
-
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## ReceiptActionTypeDef
 
@@ -799,18 +711,22 @@ Required fields:
 from mypy_boto3_ses.type_defs import ReceiptActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Action`: `"S3ActionTypeDef"`
-- `BounceAction`: `"BounceActionTypeDef"`
-- `WorkmailAction`: `"WorkmailActionTypeDef"`
-- `LambdaAction`: `"LambdaActionTypeDef"`
-- `StopAction`: `"StopActionTypeDef"`
-- `AddHeaderAction`: `"AddHeaderActionTypeDef"`
-- `SNSAction`: `"SNSActionTypeDef"`
 
+- `S3Action`:
+  [S3ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#s3actiontypedef)
+- `BounceAction`:
+  [BounceActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#bounceactiontypedef)
+- `WorkmailAction`:
+  [WorkmailActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#workmailactiontypedef)
+- `LambdaAction`:
+  [LambdaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#lambdaactiontypedef)
+- `StopAction`:
+  [StopActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#stopactiontypedef)
+- `AddHeaderAction`:
+  [AddHeaderActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#addheaderactiontypedef)
+- `SNSAction`:
+  [SNSActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#snsactiontypedef)
 
 ## ReceiptFilterTypeDef
 
@@ -818,13 +734,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ReceiptFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `IpFilter`: `"ReceiptIpFilterTypeDef"`
-
-
-
+- `IpFilter`:
+  [ReceiptIpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptipfiltertypedef)
 
 ## ReceiptIpFilterTypeDef
 
@@ -832,13 +746,11 @@ Required fields:
 from mypy_boto3_ses.type_defs import ReceiptIpFilterTypeDef
 ```
 
-
 Required fields:
-- `Policy`: `ReceiptFilterPolicy`
+
+- `Policy`:
+  [ReceiptFilterPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#receiptfilterpolicy)
 - `Cidr`: `str`
-
-
-
 
 ## ReceiptRuleSetMetadataTypeDef
 
@@ -846,13 +758,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import ReceiptRuleSetMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `CreatedTimestamp`: `datetime`
-
 
 ## ReceiptRuleTypeDef
 
@@ -860,19 +769,19 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ReceiptRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Enabled`: `bool`
-- `TlsPolicy`: `TlsPolicy`
-- `Recipients`: `List[str]`
-- `Actions`: `List["ReceiptActionTypeDef"]`
-- `ScanEnabled`: `bool`
 
+- `Enabled`: `bool`
+- `TlsPolicy`:
+  [TlsPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#tlspolicy)
+- `Recipients`: `List`\[`str`\]
+- `Actions`:
+  `List`\[[ReceiptActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptactiontypedef)\]
+- `ScanEnabled`: `bool`
 
 ## RecipientDsnFieldsTypeDef
 
@@ -880,20 +789,20 @@ Optional fields:
 from mypy_boto3_ses.type_defs import RecipientDsnFieldsTypeDef
 ```
 
-
 Required fields:
-- `Action`: `DsnAction`
+
+- `Action`:
+  [DsnAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#dsnaction)
 - `Status`: `str`
 
-
-
 Optional fields:
+
 - `FinalRecipient`: `str`
 - `RemoteMta`: `str`
 - `DiagnosticCode`: `str`
 - `LastAttemptDate`: `datetime`
-- `ExtensionFields`: `List["ExtensionFieldTypeDef"]`
-
+- `ExtensionFields`:
+  `List`\[[ExtensionFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#extensionfieldtypedef)\]
 
 ## ReputationOptionsTypeDef
 
@@ -901,14 +810,11 @@ Optional fields:
 from mypy_boto3_ses.type_defs import ReputationOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SendingEnabled`: `bool`
 - `ReputationMetricsEnabled`: `bool`
 - `LastFreshStart`: `datetime`
-
 
 ## S3ActionTypeDef
 
@@ -916,17 +822,15 @@ Optional fields:
 from mypy_boto3_ses.type_defs import S3ActionTypeDef
 ```
 
-
 Required fields:
+
 - `BucketName`: `str`
 
-
-
 Optional fields:
+
 - `TopicArn`: `str`
 - `ObjectKeyPrefix`: `str`
 - `KmsKeyArn`: `str`
-
 
 ## SNSActionTypeDef
 
@@ -934,15 +838,14 @@ Optional fields:
 from mypy_boto3_ses.type_defs import SNSActionTypeDef
 ```
 
-
 Required fields:
+
 - `TopicArn`: `str`
 
-
-
 Optional fields:
-- `Encoding`: `SNSActionEncoding`
 
+- `Encoding`:
+  [SNSActionEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#snsactionencoding)
 
 ## SNSDestinationTypeDef
 
@@ -950,12 +853,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import SNSDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `TopicARN`: `str`
-
-
-
 
 ## SendBounceResponseTypeDef
 
@@ -963,12 +863,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import SendBounceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageId`: `str`
 
+- `MessageId`: `str`
 
 ## SendBulkTemplatedEmailResponseTypeDef
 
@@ -976,12 +873,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import SendBulkTemplatedEmailResponseTypeDef
 ```
 
-
 Required fields:
-- `Status`: `List["BulkEmailDestinationStatusTypeDef"]`
 
-
-
+- `Status`:
+  `List`\[[BulkEmailDestinationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#bulkemaildestinationstatustypedef)\]
 
 ## SendCustomVerificationEmailResponseTypeDef
 
@@ -989,12 +884,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import SendCustomVerificationEmailResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MessageId`: `str`
 
+- `MessageId`: `str`
 
 ## SendDataPointTypeDef
 
@@ -1002,16 +894,13 @@ Optional fields:
 from mypy_boto3_ses.type_defs import SendDataPointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Timestamp`: `datetime`
 - `DeliveryAttempts`: `int`
 - `Bounces`: `int`
 - `Complaints`: `int`
 - `Rejects`: `int`
-
 
 ## SendEmailResponseTypeDef
 
@@ -1019,12 +908,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import SendEmailResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MessageId`: `str`
-
-
-
 
 ## SendRawEmailResponseTypeDef
 
@@ -1032,12 +918,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import SendRawEmailResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MessageId`: `str`
-
-
-
 
 ## SendTemplatedEmailResponseTypeDef
 
@@ -1045,12 +928,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import SendTemplatedEmailResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MessageId`: `str`
-
-
-
 
 ## StopActionTypeDef
 
@@ -1058,15 +938,13 @@ Required fields:
 from mypy_boto3_ses.type_defs import StopActionTypeDef
 ```
 
-
 Required fields:
+
 - `Scope`: `Literal['RuleSet']`
 
-
-
 Optional fields:
-- `TopicArn`: `str`
 
+- `TopicArn`: `str`
 
 ## TemplateMetadataTypeDef
 
@@ -1074,13 +952,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import TemplateMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `CreatedTimestamp`: `datetime`
-
 
 ## TemplateTypeDef
 
@@ -1088,17 +963,15 @@ Optional fields:
 from mypy_boto3_ses.type_defs import TemplateTypeDef
 ```
 
-
 Required fields:
+
 - `TemplateName`: `str`
 
-
-
 Optional fields:
+
 - `SubjectPart`: `str`
 - `TextPart`: `str`
 - `HtmlPart`: `str`
-
 
 ## TestRenderTemplateResponseTypeDef
 
@@ -1106,12 +979,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import TestRenderTemplateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RenderedTemplate`: `str`
 
+- `RenderedTemplate`: `str`
 
 ## TrackingOptionsTypeDef
 
@@ -1119,12 +989,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import TrackingOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CustomRedirectDomain`: `str`
 
+- `CustomRedirectDomain`: `str`
 
 ## VerifyDomainDkimResponseTypeDef
 
@@ -1132,12 +999,9 @@ Optional fields:
 from mypy_boto3_ses.type_defs import VerifyDomainDkimResponseTypeDef
 ```
 
-
 Required fields:
-- `DkimTokens`: `List[str]`
 
-
-
+- `DkimTokens`: `List`\[`str`\]
 
 ## VerifyDomainIdentityResponseTypeDef
 
@@ -1145,12 +1009,9 @@ Required fields:
 from mypy_boto3_ses.type_defs import VerifyDomainIdentityResponseTypeDef
 ```
 
-
 Required fields:
+
 - `VerificationToken`: `str`
-
-
-
 
 ## WaiterConfigTypeDef
 
@@ -1158,13 +1019,10 @@ Required fields:
 from mypy_boto3_ses.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-
 
 ## WorkmailActionTypeDef
 
@@ -1172,12 +1030,10 @@ Optional fields:
 from mypy_boto3_ses.type_defs import WorkmailActionTypeDef
 ```
 
-
 Required fields:
+
 - `OrganizationArn`: `str`
 
-
-
 Optional fields:
-- `TopicArn`: `str`
 
+- `TopicArn`: `str`

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SecurityHub](./README.md) > Literals
 
-Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+Auto-generated documentation for
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+type annotations stubs module
+[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [Literals for boto3 SecurityHub module](#literals-for-boto3-securityhub-module)
   - [AdminStatus](#adminstatus)

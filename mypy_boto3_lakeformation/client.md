@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LakeFormation](./README.md) > LakeFormationClient
 
-Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
-type annotations stubs module [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+Auto-generated documentation for
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+type annotations stubs module
+[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [LakeFormationClient for boto3 LakeFormation module](#lakeformationclient-for-boto3-lakeformation-module)
   - [LakeFormationClient](#lakeformationclient)
@@ -38,12 +40,13 @@ def get_lakeformation_client() -> LakeFormationClient:
     return boto3.client("lakeformation")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
+Boto3 documentation:
+[LakeFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lakeformation.client import Exceptions
@@ -51,7 +54,6 @@ from mypy_boto3_lakeformation.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -63,246 +65,264 @@ Exceptions:
 - `Exceptions.InvalidInputException`
 - `Exceptions.OperationTimeoutException`
 
-
 ## Methods
-
 
 ### batch_grant_permissions
 
-Type annotations for `boto3.client("lakeformation").batch_grant_permissions` method.
+Type annotations for `boto3.client("lakeformation").batch_grant_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions]
+Boto3 documentation:
+[LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
 
-```python
-def batch_grant_permissions(
-    self,
-    Entries: List["BatchPermissionsRequestEntryTypeDef"],
-    CatalogId: str = None
-) -> BatchGrantPermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Entries`:
+  `List`\[[BatchPermissionsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsrequestentrytypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchGrantPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchgrantpermissionsresponsetypedef).
 
 ### batch_revoke_permissions
 
-Type annotations for `boto3.client("lakeformation").batch_revoke_permissions` method.
+Type annotations for `boto3.client("lakeformation").batch_revoke_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions]
+Boto3 documentation:
+[LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
 
-```python
-def batch_revoke_permissions(
-    self,
-    Entries: List["BatchPermissionsRequestEntryTypeDef"],
-    CatalogId: str = None
-) -> BatchRevokePermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Entries`:
+  `List`\[[BatchPermissionsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsrequestentrytypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchRevokePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchrevokepermissionsresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("lakeformation").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate]
+Boto3 documentation:
+[LakeFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### deregister_resource
 
-Type annotations for `boto3.client("lakeformation").deregister_resource` method.
+Type annotations for `boto3.client("lakeformation").deregister_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource]
+Boto3 documentation:
+[LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
 
-```python
-def deregister_resource(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_resource
 
 Type annotations for `boto3.client("lakeformation").describe_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource]
+Boto3 documentation:
+[LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
 
-```python
-def describe_resource(
-    self,
-    ResourceArn: str
-) -> DescribeResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[DescribeResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#describeresourceresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lakeformation").generate_presigned_url` method.
+Type annotations for `boto3.client("lakeformation").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url]
+Boto3 documentation:
+[LakeFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_data_lake_settings
 
-Type annotations for `boto3.client("lakeformation").get_data_lake_settings` method.
+Type annotations for `boto3.client("lakeformation").get_data_lake_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings]
+Boto3 documentation:
+[LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
 
-```python
-def get_data_lake_settings(
-    self,
-    CatalogId: str = None
-) -> GetDataLakeSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+
+Returns
+[GetDataLakeSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getdatalakesettingsresponsetypedef).
 
 ### get_effective_permissions_for_path
 
-Type annotations for `boto3.client("lakeformation").get_effective_permissions_for_path` method.
+Type annotations for
+`boto3.client("lakeformation").get_effective_permissions_for_path` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path]
+Boto3 documentation:
+[LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
 
-```python
-def get_effective_permissions_for_path(
-    self,
-    ResourceArn: str,
-    CatalogId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetEffectivePermissionsForPathResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `CatalogId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetEffectivePermissionsForPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#geteffectivepermissionsforpathresponsetypedef).
 
 ### grant_permissions
 
 Type annotations for `boto3.client("lakeformation").grant_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions]
+Boto3 documentation:
+[LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
 
-```python
-def grant_permissions(
-    self,
-    Principal: "DataLakePrincipalTypeDef",
-    Resource: "ResourceTypeDef",
-    Permissions: List[Permission],
-    CatalogId: str = None,
-    PermissionsWithGrantOption: List[Permission] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Principal`:
+  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
+  *(required)*
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  *(required)*
+- `Permissions`:
+  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+  *(required)*
+- `CatalogId`: `str`
+- `PermissionsWithGrantOption`:
+  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### list_permissions
 
 Type annotations for `boto3.client("lakeformation").list_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions]
+Boto3 documentation:
+[LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
 
-```python
-def list_permissions(
-    self,
-    CatalogId: str = None,
-    Principal: "DataLakePrincipalTypeDef" = None,
-    ResourceType: DataLakeResourceType = None,
-    Resource: "ResourceTypeDef" = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+- `Principal`:
+  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
+- `ResourceType`:
+  [DataLakeResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#datalakeresourcetype)
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listpermissionsresponsetypedef).
 
 ### list_resources
 
 Type annotations for `boto3.client("lakeformation").list_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources]
+Boto3 documentation:
+[LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
 
-```python
-def list_resources(
-    self,
-    FilterConditionList: List[FilterConditionTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FilterConditionList`:
+  `List`\[[FilterConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#filterconditiontypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listresourcesresponsetypedef).
 
 ### put_data_lake_settings
 
-Type annotations for `boto3.client("lakeformation").put_data_lake_settings` method.
+Type annotations for `boto3.client("lakeformation").put_data_lake_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings]
+Boto3 documentation:
+[LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
 
-```python
-def put_data_lake_settings(
-    self,
-    DataLakeSettings: "DataLakeSettingsTypeDef",
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DataLakeSettings`:
+  [DataLakeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakesettingstypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### register_resource
 
 Type annotations for `boto3.client("lakeformation").register_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource]
+Boto3 documentation:
+[LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
 
-```python
-def register_resource(
-    self,
-    ResourceArn: str,
-    UseServiceLinkedRole: bool = None,
-    RoleArn: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `UseServiceLinkedRole`: `bool`
+- `RoleArn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### revoke_permissions
 
 Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions]
+Boto3 documentation:
+[LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
 
-```python
-def revoke_permissions(
-    self,
-    Principal: "DataLakePrincipalTypeDef",
-    Resource: "ResourceTypeDef",
-    Permissions: List[Permission],
-    CatalogId: str = None,
-    PermissionsWithGrantOption: List[Permission] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Principal`:
+  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
+  *(required)*
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  *(required)*
+- `Permissions`:
+  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+  *(required)*
+- `CatalogId`: `str`
+- `PermissionsWithGrantOption`:
+  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource
 
 Type annotations for `boto3.client("lakeformation").update_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource]
+Boto3 documentation:
+[LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
 
-```python
-def update_resource(
-    self,
-    RoleArn: str,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `RoleArn`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
 
-
+Returns `Dict`\[`str`, `Any`\].

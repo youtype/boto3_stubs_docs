@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > FSx
 
-Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
-type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+Auto-generated documentation for
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+type annotations stubs module
+[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 ```bash
 pip install mypy-boto3-fsx
@@ -19,7 +21,7 @@ pip install mypy-boto3-fsx
 
 ## FSxClient
 
-Type annotations for  `boto3.client("fsx")` as [FSxClient](./client.md)
+Type annotations for `boto3.client("fsx")` as [FSxClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_fsx.client import FSxClient
 ```
 
-
 FSxClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_file_system_aliases](./client.md#associate-file-system-aliases)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_data_repository_task](./client.md#cancel-data-repository-task)
@@ -55,10 +55,8 @@ FSxClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_file_system](./client.md#update-file-system)
 
-
-
-
 ### Exceptions
+
 - [ActiveDirectoryError](./client.md#activedirectoryerror)
 - [BackupBeingCopied](./client.md#backupbeingcopied)
 - [BackupInProgress](./client.md#backupinprogress)
@@ -88,14 +86,10 @@ FSxClient [exceptions](./client.md#exceptions)
 - [SourceBackupUnavailable](./client.md#sourcebackupunavailable)
 - [UnsupportedOperation](./client.md#unsupportedoperation)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("fsx").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("fsx").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,11 +100,6 @@ from mypy_boto3_fsx.paginators import DescribeBackupsPaginator, ...
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -146,13 +135,10 @@ from mypy_boto3_fsx.literals import AdministrativeActionType, ...
 - [StorageType](./literals.md#storagetype)
 - [WindowsDeploymentType](./literals.md#windowsdeploymenttype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

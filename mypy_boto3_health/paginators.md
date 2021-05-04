@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Health](./README.md) > Paginators
 
-Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+Auto-generated documentation for
+[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+type annotations stubs module
+[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
 - [Paginators for boto3 Health module](#paginators-for-boto3-health-module)
   - [DescribeAffectedAccountsForOrganizationPaginator](#describeaffectedaccountsfororganizationpaginator)
@@ -16,7 +18,8 @@ type annotations stubs module [mypy_boto3_health](https://pypi.org/project/mypy-
 
 ## DescribeAffectedAccountsForOrganizationPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_affected_accounts_for_organization")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_affected_accounts_for_organization")`.
 
 Can be used directly:
 
@@ -27,20 +30,23 @@ def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffec
     return boto3.client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
+Boto3 documentation:
+[Health.Paginator.DescribeAffectedAccountsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
-```python
-class DescribeAffectedAccountsForOrganizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        eventArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAffectedAccountsForOrganizationResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAffectedAccountsForOrganizationPaginator.paginate`
+method:
+
+- `eventArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAffectedAccountsForOrganizationPaginator.paginate` returns
+`Iterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedaccountsfororganizationresponsetypedef)\].
+
 ## DescribeAffectedEntitiesPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_affected_entities")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_affected_entities")`.
 
 Can be used directly:
 
@@ -51,21 +57,25 @@ def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPagina
     return boto3.client("health").get_paginator("describe_affected_entities")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
+Boto3 documentation:
+[Health.Paginator.DescribeAffectedEntities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
-```python
-class DescribeAffectedEntitiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filter: EntityFilterTypeDef,
-        locale: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAffectedEntitiesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
+
+- `filter`:
+  [EntityFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#entityfiltertypedef)
+  *(required)*
+- `locale`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAffectedEntitiesPaginator.paginate` returns
+`Iterator`\[[DescribeAffectedEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesresponsetypedef)\].
+
 ## DescribeAffectedEntitiesForOrganizationPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_affected_entities_for_organization")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_affected_entities_for_organization")`.
 
 Can be used directly:
 
@@ -76,21 +86,26 @@ def get_describe_affected_entities_for_organization_paginator() -> DescribeAffec
     return boto3.client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
+Boto3 documentation:
+[Health.Paginator.DescribeAffectedEntitiesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
-```python
-class DescribeAffectedEntitiesForOrganizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        organizationEntityFilters: List[EventAccountFilterTypeDef],
-        locale: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAffectedEntitiesForOrganizationResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeAffectedEntitiesForOrganizationPaginator.paginate`
+method:
+
+- `organizationEntityFilters`:
+  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  *(required)*
+- `locale`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAffectedEntitiesForOrganizationPaginator.paginate` returns
+`Iterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesfororganizationresponsetypedef)\].
+
 ## DescribeEventAggregatesPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_event_aggregates")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_event_aggregates")`.
 
 Can be used directly:
 
@@ -101,21 +116,24 @@ def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginato
     return boto3.client("health").get_paginator("describe_event_aggregates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
+Boto3 documentation:
+[Health.Paginator.DescribeEventAggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
-```python
-class DescribeEventAggregatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        aggregateField: Literal['eventTypeCategory'],
-        filter: EventFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventAggregatesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventAggregatesPaginator.paginate` method:
+
+- `aggregateField`: `Literal['eventTypeCategory']` *(required)*
+- `filter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventAggregatesPaginator.paginate` returns
+`Iterator`\[[DescribeEventAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventaggregatesresponsetypedef)\].
+
 ## DescribeEventTypesPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_event_types")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_event_types")`.
 
 Can be used directly:
 
@@ -126,18 +144,20 @@ def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
     return boto3.client("health").get_paginator("describe_event_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
+Boto3 documentation:
+[Health.Paginator.DescribeEventTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
-```python
-class DescribeEventTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filter: EventTypeFilterTypeDef = None,
-        locale: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventTypesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventTypesPaginator.paginate` method:
+
+- `filter`:
+  [EventTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypefiltertypedef)
+- `locale`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventTypesPaginator.paginate` returns
+`Iterator`\[[DescribeEventTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventtypesresponsetypedef)\].
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("health").get_paginator("describe_events")`.
@@ -151,21 +171,24 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("health").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
+Boto3 documentation:
+[Health.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filter: EventFilterTypeDef = None,
-        locale: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `filter`:
+  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `locale`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsresponsetypedef)\].
+
 ## DescribeEventsForOrganizationPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_events_for_organization")`.
+Type annotations for
+`boto3.client("health").get_paginator("describe_events_for_organization")`.
 
 Can be used directly:
 
@@ -176,15 +199,16 @@ def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganiz
     return boto3.client("health").get_paginator("describe_events_for_organization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
+Boto3 documentation:
+[Health.Paginator.DescribeEventsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
-```python
-class DescribeEventsForOrganizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filter: OrganizationEventFilterTypeDef = None,
-        locale: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEventsForOrganizationResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsForOrganizationPaginator.paginate` method:
+
+- `filter`:
+  [OrganizationEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventfiltertypedef)
+- `locale`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsForOrganizationPaginator.paginate` returns
+`Iterator`\[[DescribeEventsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsfororganizationresponsetypedef)\].

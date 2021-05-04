@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SMS
 
-Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+Auto-generated documentation for
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+type annotations stubs module
+[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ```bash
 pip install mypy-boto3-sms
@@ -19,7 +21,7 @@ pip install mypy-boto3-sms
 
 ## SMSClient
 
-Type annotations for  `boto3.client("sms")` as [SMSClient](./client.md)
+Type annotations for `boto3.client("sms")` as [SMSClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_sms.client import SMSClient
 ```
 
-
 SMSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_app](./client.md#create-app)
 - [create_replication_job](./client.md#create-replication-job)
@@ -72,10 +72,8 @@ SMSClient [exceptions](./client.md#exceptions)
 - [update_app](./client.md#update-app)
 - [update_replication_job](./client.md#update-replication-job)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DryRunOperationException](./client.md#dryrunoperationexception)
 - [InternalError](./client.md#internalerror)
@@ -90,14 +88,10 @@ SMSClient [exceptions](./client.md#exceptions)
 - [TemporarilyUnavailableException](./client.md#temporarilyunavailableexception)
 - [UnauthorizedOperationException](./client.md#unauthorizedoperationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sms").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sms").get_paginator("...")`.
 
 Can be used directly:
 
@@ -110,11 +104,6 @@ from mypy_boto3_sms.paginators import GetConnectorsPaginator, ...
 - [GetReplicationRunsPaginator](./paginators.md#getreplicationrunspaginator)
 - [GetServersPaginator](./paginators.md#getserverspaginator)
 - [ListAppsPaginator](./paginators.md#listappspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -151,13 +140,10 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatus, ...
 - [ValidationStatus](./literals.md#validationstatus)
 - [VmManagerType](./literals.md#vmmanagertype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

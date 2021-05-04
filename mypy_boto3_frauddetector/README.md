@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > FraudDetector
 
-Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
-type annotations stubs module [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+Auto-generated documentation for
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+type annotations stubs module
+[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 ```bash
 pip install mypy-boto3-frauddetector
@@ -18,7 +20,8 @@ pip install mypy-boto3-frauddetector
 
 ## FraudDetectorClient
 
-Type annotations for  `boto3.client("frauddetector")` as [FraudDetectorClient](./client.md)
+Type annotations for `boto3.client("frauddetector")` as
+[FraudDetectorClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_frauddetector.client import FraudDetectorClient
 ```
 
-
 FraudDetectorClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_create_variable](./client.md#batch-create-variable)
 - [batch_get_variable](./client.md#batch-get-variable)
 - [can_paginate](./client.md#can-paginate)
@@ -92,10 +93,8 @@ FraudDetectorClient [exceptions](./client.md#exceptions)
 - [update_rule_version](./client.md#update-rule-version)
 - [update_variable](./client.md#update-variable)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -103,15 +102,6 @@ FraudDetectorClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -137,13 +127,10 @@ from mypy_boto3_frauddetector.literals import AsyncJobStatus, ...
 - [RuleExecutionMode](./literals.md#ruleexecutionmode)
 - [TrainingDataSourceEnum](./literals.md#trainingdatasourceenum)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

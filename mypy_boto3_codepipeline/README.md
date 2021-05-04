@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodePipeline
 
-Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+Auto-generated documentation for
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+type annotations stubs module
+[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 ```bash
 pip install mypy-boto3-codepipeline
@@ -19,7 +21,8 @@ pip install mypy-boto3-codepipeline
 
 ## CodePipelineClient
 
-Type annotations for  `boto3.client("codepipeline")` as [CodePipelineClient](./client.md)
+Type annotations for `boto3.client("codepipeline")` as
+[CodePipelineClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codepipeline.client import CodePipelineClient
 ```
 
-
 CodePipelineClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [acknowledge_job](./client.md#acknowledge-job)
 - [acknowledge_third_party_job](./client.md#acknowledge-third-party-job)
 - [can_paginate](./client.md#can-paginate)
@@ -76,10 +77,8 @@ CodePipelineClient [exceptions](./client.md#exceptions)
 - [update_action_type](./client.md#update-action-type)
 - [update_pipeline](./client.md#update-pipeline)
 
-
-
-
 ### Exceptions
+
 - [ActionNotFoundException](./client.md#actionnotfoundexception)
 - [ActionTypeAlreadyExistsException](./client.md#actiontypealreadyexistsexception)
 - [ActionTypeNotFoundException](./client.md#actiontypenotfoundexception)
@@ -119,14 +118,10 @@ CodePipelineClient [exceptions](./client.md#exceptions)
 - [ValidationException](./client.md#validationexception)
 - [WebhookNotFoundException](./client.md#webhooknotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codepipeline").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codepipeline").get_paginator("...")`.
 
 Can be used directly:
 
@@ -140,11 +135,6 @@ from mypy_boto3_codepipeline.paginators import ListActionExecutionsPaginator, ..
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -181,13 +171,10 @@ from mypy_boto3_codepipeline.literals import ActionCategory, ...
 - [TriggerType](./literals.md#triggertype)
 - [WebhookAuthenticationType](./literals.md#webhookauthenticationtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

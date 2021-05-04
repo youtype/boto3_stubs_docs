@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GroundStation](./README.md) > Literals
 
-Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+Auto-generated documentation for
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+type annotations stubs module
+[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Literals for boto3 GroundStation module](#literals-for-boto3-groundstation-module)
   - [AngleUnits](#angleunits)

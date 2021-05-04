@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CostandUsageReportService
 
-Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
+Auto-generated documentation for
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+type annotations stubs module
+[mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
 ```bash
 pip install mypy-boto3-cur
@@ -19,7 +21,8 @@ pip install mypy-boto3-cur
 
 ## CostandUsageReportServiceClient
 
-Type annotations for  `boto3.client("cur")` as [CostandUsageReportServiceClient](./client.md)
+Type annotations for `boto3.client("cur")` as
+[CostandUsageReportServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
 ```
 
-
 CostandUsageReportServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_report_definition](./client.md#delete-report-definition)
 - [describe_report_definitions](./client.md#describe-report-definitions)
@@ -41,24 +42,18 @@ CostandUsageReportServiceClient [exceptions](./client.md#exceptions)
 - [modify_report_definition](./client.md#modify-report-definition)
 - [put_report_definition](./client.md#put-report-definition)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DuplicateReportNameException](./client.md#duplicatereportnameexception)
 - [InternalErrorException](./client.md#internalerrorexception)
 - [ReportLimitReachedException](./client.md#reportlimitreachedexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cur").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cur").get_paginator("...")`.
 
 Can be used directly:
 
@@ -67,11 +62,6 @@ from mypy_boto3_cur.paginators import DescribeReportDefinitionsPaginator, ...
 ```
 
 - [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -92,13 +82,10 @@ from mypy_boto3_cur.literals import AWSRegion, ...
 - [SchemaElement](./literals.md#schemaelement)
 - [TimeUnit](./literals.md#timeunit)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

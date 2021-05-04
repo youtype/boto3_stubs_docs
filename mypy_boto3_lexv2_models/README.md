@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LexModelsV2
 
-Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+Auto-generated documentation for
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+type annotations stubs module
+[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ```bash
 pip install mypy-boto3-lexv2-models
@@ -18,7 +20,8 @@ pip install mypy-boto3-lexv2-models
 
 ## LexModelsV2Client
 
-Type annotations for  `boto3.client("lexv2-models")` as [LexModelsV2Client](./client.md)
+Type annotations for `boto3.client("lexv2-models")` as
+[LexModelsV2Client](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 ```
 
-
 LexModelsV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [build_bot_locale](./client.md#build-bot-locale)
 - [can_paginate](./client.md#can-paginate)
 - [create_bot](./client.md#create-bot)
@@ -75,10 +76,8 @@ LexModelsV2Client [exceptions](./client.md#exceptions)
 - [update_slot](./client.md#update-slot)
 - [update_slot_type](./client.md#update-slot-type)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
@@ -87,15 +86,6 @@ LexModelsV2Client [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +123,10 @@ from mypy_boto3_lexv2_models.literals import BotAliasStatus, ...
 - [SlotValueResolutionStrategy](./literals.md#slotvalueresolutionstrategy)
 - [SortOrder](./literals.md#sortorder)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

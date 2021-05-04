@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppMesh](./README.md) > AppMeshClient
 
-Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+Auto-generated documentation for
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+type annotations stubs module
+[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [AppMeshClient for boto3 AppMesh module](#appmeshclient-for-boto3-appmesh-module)
   - [AppMeshClient](#appmeshclient)
@@ -64,12 +66,13 @@ def get_appmesh_client() -> AppMeshClient:
     return boto3.client("appmesh")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
+Boto3 documentation:
+[AppMesh.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_appmesh.client import Exceptions
@@ -77,7 +80,6 @@ from mypy_boto3_appmesh.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -93,703 +95,737 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("appmesh").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate]
+Boto3 documentation:
+[AppMesh.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_gateway_route
 
 Type annotations for `boto3.client("appmesh").create_gateway_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route]
+Boto3 documentation:
+[AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
 
-```python
-def create_gateway_route(
-    self,
-    gatewayRouteName: str,
-    meshName: str,
-    spec: "GatewayRouteSpecTypeDef",
-    virtualGatewayName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateGatewayRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `gatewayRouteName`: `str` *(required)*
+- `meshName`: `str` *(required)*
+- `spec`:
+  [GatewayRouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutespectypedef)
+  *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#creategatewayrouteoutputtypedef).
 
 ### create_mesh
 
 Type annotations for `boto3.client("appmesh").create_mesh` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh]
+Boto3 documentation:
+[AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
 
-```python
-def create_mesh(
-    self,
-    meshName: str,
-    clientToken: str = None,
-    spec: "MeshSpecTypeDef" = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateMeshOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `clientToken`: `str`
+- `spec`:
+  [MeshSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshspectypedef)
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createmeshoutputtypedef).
 
 ### create_route
 
 Type annotations for `boto3.client("appmesh").create_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route]
+Boto3 documentation:
+[AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
 
-```python
-def create_route(
-    self,
-    meshName: str,
-    routeName: str,
-    spec: "RouteSpecTypeDef",
-    virtualRouterName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `routeName`: `str` *(required)*
+- `spec`:
+  [RouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routespectypedef)
+  *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createrouteoutputtypedef).
 
 ### create_virtual_gateway
 
 Type annotations for `boto3.client("appmesh").create_virtual_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway]
+Boto3 documentation:
+[AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
 
-```python
-def create_virtual_gateway(
-    self,
-    meshName: str,
-    spec: "VirtualGatewaySpecTypeDef",
-    virtualGatewayName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateVirtualGatewayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualGatewaySpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayspectypedef)
+  *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualgatewayoutputtypedef).
 
 ### create_virtual_node
 
 Type annotations for `boto3.client("appmesh").create_virtual_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node]
+Boto3 documentation:
+[AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
 
-```python
-def create_virtual_node(
-    self,
-    meshName: str,
-    spec: "VirtualNodeSpecTypeDef",
-    virtualNodeName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateVirtualNodeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualNodeSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodespectypedef)
+  *(required)*
+- `virtualNodeName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualnodeoutputtypedef).
 
 ### create_virtual_router
 
 Type annotations for `boto3.client("appmesh").create_virtual_router` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router]
+Boto3 documentation:
+[AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
 
-```python
-def create_virtual_router(
-    self,
-    meshName: str,
-    spec: "VirtualRouterSpecTypeDef",
-    virtualRouterName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateVirtualRouterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualRouterSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterspectypedef)
+  *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualrouteroutputtypedef).
 
 ### create_virtual_service
 
 Type annotations for `boto3.client("appmesh").create_virtual_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service]
+Boto3 documentation:
+[AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
 
-```python
-def create_virtual_service(
-    self,
-    meshName: str,
-    spec: "VirtualServiceSpecTypeDef",
-    virtualServiceName: str,
-    clientToken: str = None,
-    meshOwner: str = None,
-    tags: List["TagRefTypeDef"] = None
-) -> CreateVirtualServiceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualServiceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicespectypedef)
+  *(required)*
+- `virtualServiceName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+
+Returns
+[CreateVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualserviceoutputtypedef).
 
 ### delete_gateway_route
 
 Type annotations for `boto3.client("appmesh").delete_gateway_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route]
+Boto3 documentation:
+[AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
 
-```python
-def delete_gateway_route(
-    self,
-    gatewayRouteName: str,
-    meshName: str,
-    virtualGatewayName: str,
-    meshOwner: str = None
-) -> DeleteGatewayRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `gatewayRouteName`: `str` *(required)*
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletegatewayrouteoutputtypedef).
 
 ### delete_mesh
 
 Type annotations for `boto3.client("appmesh").delete_mesh` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh]
+Boto3 documentation:
+[AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
 
-```python
-def delete_mesh(
-    self,
-    meshName: str
-) -> DeleteMeshOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+
+Returns
+[DeleteMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletemeshoutputtypedef).
 
 ### delete_route
 
 Type annotations for `boto3.client("appmesh").delete_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route]
+Boto3 documentation:
+[AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
 
-```python
-def delete_route(
-    self,
-    meshName: str,
-    routeName: str,
-    virtualRouterName: str,
-    meshOwner: str = None
-) -> DeleteRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `routeName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deleterouteoutputtypedef).
 
 ### delete_virtual_gateway
 
 Type annotations for `boto3.client("appmesh").delete_virtual_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway]
+Boto3 documentation:
+[AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
 
-```python
-def delete_virtual_gateway(
-    self,
-    meshName: str,
-    virtualGatewayName: str,
-    meshOwner: str = None
-) -> DeleteVirtualGatewayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualgatewayoutputtypedef).
 
 ### delete_virtual_node
 
 Type annotations for `boto3.client("appmesh").delete_virtual_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node]
+Boto3 documentation:
+[AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
 
-```python
-def delete_virtual_node(
-    self,
-    meshName: str,
-    virtualNodeName: str,
-    meshOwner: str = None
-) -> DeleteVirtualNodeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualNodeName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualnodeoutputtypedef).
 
 ### delete_virtual_router
 
 Type annotations for `boto3.client("appmesh").delete_virtual_router` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router]
+Boto3 documentation:
+[AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
 
-```python
-def delete_virtual_router(
-    self,
-    meshName: str,
-    virtualRouterName: str,
-    meshOwner: str = None
-) -> DeleteVirtualRouterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualrouteroutputtypedef).
 
 ### delete_virtual_service
 
 Type annotations for `boto3.client("appmesh").delete_virtual_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service]
+Boto3 documentation:
+[AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
 
-```python
-def delete_virtual_service(
-    self,
-    meshName: str,
-    virtualServiceName: str,
-    meshOwner: str = None
-) -> DeleteVirtualServiceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualServiceName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DeleteVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualserviceoutputtypedef).
 
 ### describe_gateway_route
 
 Type annotations for `boto3.client("appmesh").describe_gateway_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route]
+Boto3 documentation:
+[AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
 
-```python
-def describe_gateway_route(
-    self,
-    gatewayRouteName: str,
-    meshName: str,
-    virtualGatewayName: str,
-    meshOwner: str = None
-) -> DescribeGatewayRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `gatewayRouteName`: `str` *(required)*
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describegatewayrouteoutputtypedef).
 
 ### describe_mesh
 
 Type annotations for `boto3.client("appmesh").describe_mesh` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh]
+Boto3 documentation:
+[AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
 
-```python
-def describe_mesh(
-    self,
-    meshName: str,
-    meshOwner: str = None
-) -> DescribeMeshOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describemeshoutputtypedef).
 
 ### describe_route
 
 Type annotations for `boto3.client("appmesh").describe_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route]
+Boto3 documentation:
+[AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
 
-```python
-def describe_route(
-    self,
-    meshName: str,
-    routeName: str,
-    virtualRouterName: str,
-    meshOwner: str = None
-) -> DescribeRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `routeName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describerouteoutputtypedef).
 
 ### describe_virtual_gateway
 
 Type annotations for `boto3.client("appmesh").describe_virtual_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway]
+Boto3 documentation:
+[AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
 
-```python
-def describe_virtual_gateway(
-    self,
-    meshName: str,
-    virtualGatewayName: str,
-    meshOwner: str = None
-) -> DescribeVirtualGatewayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualgatewayoutputtypedef).
 
 ### describe_virtual_node
 
 Type annotations for `boto3.client("appmesh").describe_virtual_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node]
+Boto3 documentation:
+[AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
 
-```python
-def describe_virtual_node(
-    self,
-    meshName: str,
-    virtualNodeName: str,
-    meshOwner: str = None
-) -> DescribeVirtualNodeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualNodeName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualnodeoutputtypedef).
 
 ### describe_virtual_router
 
 Type annotations for `boto3.client("appmesh").describe_virtual_router` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router]
+Boto3 documentation:
+[AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
 
-```python
-def describe_virtual_router(
-    self,
-    meshName: str,
-    virtualRouterName: str,
-    meshOwner: str = None
-) -> DescribeVirtualRouterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualrouteroutputtypedef).
 
 ### describe_virtual_service
 
 Type annotations for `boto3.client("appmesh").describe_virtual_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service]
+Boto3 documentation:
+[AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
 
-```python
-def describe_virtual_service(
-    self,
-    meshName: str,
-    virtualServiceName: str,
-    meshOwner: str = None
-) -> DescribeVirtualServiceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualServiceName`: `str` *(required)*
+- `meshOwner`: `str`
+
+Returns
+[DescribeVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualserviceoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("appmesh").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url]
+Boto3 documentation:
+[AppMesh.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_gateway_routes
 
 Type annotations for `boto3.client("appmesh").list_gateway_routes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes]
+Boto3 documentation:
+[AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
 
-```python
-def list_gateway_routes(
-    self,
-    meshName: str,
-    virtualGatewayName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListGatewayRoutesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListGatewayRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listgatewayroutesoutputtypedef).
 
 ### list_meshes
 
 Type annotations for `boto3.client("appmesh").list_meshes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes]
+Boto3 documentation:
+[AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
 
-```python
-def list_meshes(
-    self,
-    limit: int = None,
-    nextToken: str = None
-) -> ListMeshesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `limit`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListMeshesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listmeshesoutputtypedef).
 
 ### list_routes
 
 Type annotations for `boto3.client("appmesh").list_routes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes]
+Boto3 documentation:
+[AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
 
-```python
-def list_routes(
-    self,
-    meshName: str,
-    virtualRouterName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListRoutesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listroutesoutputtypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("appmesh").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource]
+Boto3 documentation:
+[AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str,
-    limit: int = None,
-    nextToken: str = None
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `limit`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### list_virtual_gateways
 
 Type annotations for `boto3.client("appmesh").list_virtual_gateways` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways]
+Boto3 documentation:
+[AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
 
-```python
-def list_virtual_gateways(
-    self,
-    meshName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListVirtualGatewaysOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListVirtualGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualgatewaysoutputtypedef).
 
 ### list_virtual_nodes
 
 Type annotations for `boto3.client("appmesh").list_virtual_nodes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes]
+Boto3 documentation:
+[AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
 
-```python
-def list_virtual_nodes(
-    self,
-    meshName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListVirtualNodesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListVirtualNodesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualnodesoutputtypedef).
 
 ### list_virtual_routers
 
 Type annotations for `boto3.client("appmesh").list_virtual_routers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers]
+Boto3 documentation:
+[AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
 
-```python
-def list_virtual_routers(
-    self,
-    meshName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListVirtualRoutersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListVirtualRoutersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualroutersoutputtypedef).
 
 ### list_virtual_services
 
 Type annotations for `boto3.client("appmesh").list_virtual_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services]
+Boto3 documentation:
+[AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
 
-```python
-def list_virtual_services(
-    self,
-    meshName: str,
-    limit: int = None,
-    meshOwner: str = None,
-    nextToken: str = None
-) -> ListVirtualServicesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `limit`: `int`
+- `meshOwner`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListVirtualServicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualservicesoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("appmesh").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource]
+Boto3 documentation:
+[AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagRefTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("appmesh").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource]
+Boto3 documentation:
+[AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_gateway_route
 
 Type annotations for `boto3.client("appmesh").update_gateway_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route]
+Boto3 documentation:
+[AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
 
-```python
-def update_gateway_route(
-    self,
-    gatewayRouteName: str,
-    meshName: str,
-    spec: "GatewayRouteSpecTypeDef",
-    virtualGatewayName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateGatewayRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `gatewayRouteName`: `str` *(required)*
+- `meshName`: `str` *(required)*
+- `spec`:
+  [GatewayRouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutespectypedef)
+  *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+
+Returns
+[UpdateGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updategatewayrouteoutputtypedef).
 
 ### update_mesh
 
 Type annotations for `boto3.client("appmesh").update_mesh` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh]
+Boto3 documentation:
+[AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
 
-```python
-def update_mesh(
-    self,
-    meshName: str,
-    clientToken: str = None,
-    spec: "MeshSpecTypeDef" = None
-) -> UpdateMeshOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `clientToken`: `str`
+- `spec`:
+  [MeshSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshspectypedef)
+
+Returns
+[UpdateMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatemeshoutputtypedef).
 
 ### update_route
 
 Type annotations for `boto3.client("appmesh").update_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route]
+Boto3 documentation:
+[AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
 
-```python
-def update_route(
-    self,
-    meshName: str,
-    routeName: str,
-    spec: "RouteSpecTypeDef",
-    virtualRouterName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateRouteOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `routeName`: `str` *(required)*
+- `spec`:
+  [RouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routespectypedef)
+  *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+
+Returns
+[UpdateRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updaterouteoutputtypedef).
 
 ### update_virtual_gateway
 
 Type annotations for `boto3.client("appmesh").update_virtual_gateway` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway]
+Boto3 documentation:
+[AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
 
-```python
-def update_virtual_gateway(
-    self,
-    meshName: str,
-    spec: "VirtualGatewaySpecTypeDef",
-    virtualGatewayName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateVirtualGatewayOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualGatewaySpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayspectypedef)
+  *(required)*
+- `virtualGatewayName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+
+Returns
+[UpdateVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualgatewayoutputtypedef).
 
 ### update_virtual_node
 
 Type annotations for `boto3.client("appmesh").update_virtual_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node]
+Boto3 documentation:
+[AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
 
-```python
-def update_virtual_node(
-    self,
-    meshName: str,
-    spec: "VirtualNodeSpecTypeDef",
-    virtualNodeName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateVirtualNodeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualNodeSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodespectypedef)
+  *(required)*
+- `virtualNodeName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+
+Returns
+[UpdateVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualnodeoutputtypedef).
 
 ### update_virtual_router
 
 Type annotations for `boto3.client("appmesh").update_virtual_router` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router]
+Boto3 documentation:
+[AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
 
-```python
-def update_virtual_router(
-    self,
-    meshName: str,
-    spec: "VirtualRouterSpecTypeDef",
-    virtualRouterName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateVirtualRouterOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualRouterSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterspectypedef)
+  *(required)*
+- `virtualRouterName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
+
+Returns
+[UpdateVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualrouteroutputtypedef).
 
 ### update_virtual_service
 
 Type annotations for `boto3.client("appmesh").update_virtual_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service]
+Boto3 documentation:
+[AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
 
-```python
-def update_virtual_service(
-    self,
-    meshName: str,
-    spec: "VirtualServiceSpecTypeDef",
-    virtualServiceName: str,
-    clientToken: str = None,
-    meshOwner: str = None
-) -> UpdateVirtualServiceOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `meshName`: `str` *(required)*
+- `spec`:
+  [VirtualServiceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicespectypedef)
+  *(required)*
+- `virtualServiceName`: `str` *(required)*
+- `clientToken`: `str`
+- `meshOwner`: `str`
 
+Returns
+[UpdateVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualserviceoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("appmesh").get_paginator` method with overloads.
+Type annotations for `boto3.client("appmesh").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_gateway_routes")` -> [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
-- `client.get_paginator("list_meshes")` -> [ListMeshesPaginator](./paginators.md#listmeshespaginator)
-- `client.get_paginator("list_routes")` -> [ListRoutesPaginator](./paginators.md#listroutespaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_virtual_gateways")` -> [ListVirtualGatewaysPaginator](./paginators.md#listvirtualgatewayspaginator)
-- `client.get_paginator("list_virtual_nodes")` -> [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
-- `client.get_paginator("list_virtual_routers")` -> [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
-- `client.get_paginator("list_virtual_services")` -> [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
-
-
+- `client.get_paginator("list_gateway_routes")` ->
+  [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
+- `client.get_paginator("list_meshes")` ->
+  [ListMeshesPaginator](./paginators.md#listmeshespaginator)
+- `client.get_paginator("list_routes")` ->
+  [ListRoutesPaginator](./paginators.md#listroutespaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_virtual_gateways")` ->
+  [ListVirtualGatewaysPaginator](./paginators.md#listvirtualgatewayspaginator)
+- `client.get_paginator("list_virtual_nodes")` ->
+  [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
+- `client.get_paginator("list_virtual_routers")` ->
+  [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
+- `client.get_paginator("list_virtual_services")` ->
+  [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)

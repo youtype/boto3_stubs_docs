@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Structures
 
-Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+Auto-generated documentation for
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+type annotations stubs module
+[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Typed dictionaries for boto3 Route53Resolver module](#typed-dictionaries-for-boto3-route53resolver-module)
   - [AssociateFirewallRuleGroupResponseTypeDef](#associatefirewallrulegroupresponsetypedef)
@@ -92,12 +94,10 @@ type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/proj
 from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroupAssociation`: `"FirewallRuleGroupAssociationTypeDef"`
 
+- `FirewallRuleGroupAssociation`:
+  [FirewallRuleGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupassociationtypedef)
 
 ## AssociateResolverEndpointIpAddressResponseTypeDef
 
@@ -105,12 +105,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## AssociateResolverQueryLogConfigResponseTypeDef
 
@@ -118,12 +116,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfigAssociation`: `"ResolverQueryLogConfigAssociationTypeDef"`
 
+- `ResolverQueryLogConfigAssociation`:
+  [ResolverQueryLogConfigAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigassociationtypedef)
 
 ## AssociateResolverRuleResponseTypeDef
 
@@ -131,12 +127,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRuleAssociation`: `"ResolverRuleAssociationTypeDef"`
 
+- `ResolverRuleAssociation`:
+  [ResolverRuleAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruleassociationtypedef)
 
 ## CreateFirewallDomainListResponseTypeDef
 
@@ -144,12 +138,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallDomainList`: `"FirewallDomainListTypeDef"`
 
+- `FirewallDomainList`:
+  [FirewallDomainListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewalldomainlisttypedef)
 
 ## CreateFirewallRuleGroupResponseTypeDef
 
@@ -157,12 +149,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroup`: `"FirewallRuleGroupTypeDef"`
 
+- `FirewallRuleGroup`:
+  [FirewallRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegrouptypedef)
 
 ## CreateFirewallRuleResponseTypeDef
 
@@ -170,12 +160,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRule`: `"FirewallRuleTypeDef"`
 
+- `FirewallRule`:
+  [FirewallRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallruletypedef)
 
 ## CreateResolverEndpointResponseTypeDef
 
@@ -183,12 +171,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## CreateResolverQueryLogConfigResponseTypeDef
 
@@ -196,12 +182,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfig`: `"ResolverQueryLogConfigTypeDef"`
 
+- `ResolverQueryLogConfig`:
+  [ResolverQueryLogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigtypedef)
 
 ## CreateResolverRuleResponseTypeDef
 
@@ -209,12 +193,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import CreateResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRule`: `"ResolverRuleTypeDef"`
 
+- `ResolverRule`:
+  [ResolverRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruletypedef)
 
 ## DeleteFirewallDomainListResponseTypeDef
 
@@ -222,12 +204,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallDomainList`: `"FirewallDomainListTypeDef"`
 
+- `FirewallDomainList`:
+  [FirewallDomainListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewalldomainlisttypedef)
 
 ## DeleteFirewallRuleGroupResponseTypeDef
 
@@ -235,12 +215,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroup`: `"FirewallRuleGroupTypeDef"`
 
+- `FirewallRuleGroup`:
+  [FirewallRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegrouptypedef)
 
 ## DeleteFirewallRuleResponseTypeDef
 
@@ -248,12 +226,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRule`: `"FirewallRuleTypeDef"`
 
+- `FirewallRule`:
+  [FirewallRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallruletypedef)
 
 ## DeleteResolverEndpointResponseTypeDef
 
@@ -261,12 +237,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## DeleteResolverQueryLogConfigResponseTypeDef
 
@@ -274,12 +248,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfig`: `"ResolverQueryLogConfigTypeDef"`
 
+- `ResolverQueryLogConfig`:
+  [ResolverQueryLogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigtypedef)
 
 ## DeleteResolverRuleResponseTypeDef
 
@@ -287,12 +259,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRule`: `"ResolverRuleTypeDef"`
 
+- `ResolverRule`:
+  [ResolverRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruletypedef)
 
 ## DisassociateFirewallRuleGroupResponseTypeDef
 
@@ -300,12 +270,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroupAssociation`: `"FirewallRuleGroupAssociationTypeDef"`
 
+- `FirewallRuleGroupAssociation`:
+  [FirewallRuleGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupassociationtypedef)
 
 ## DisassociateResolverEndpointIpAddressResponseTypeDef
 
@@ -313,12 +281,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## DisassociateResolverQueryLogConfigResponseTypeDef
 
@@ -326,12 +292,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfigAssociation`: `"ResolverQueryLogConfigAssociationTypeDef"`
 
+- `ResolverQueryLogConfigAssociation`:
+  [ResolverQueryLogConfigAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigassociationtypedef)
 
 ## DisassociateResolverRuleResponseTypeDef
 
@@ -339,12 +303,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRuleAssociation`: `"ResolverRuleAssociationTypeDef"`
 
+- `ResolverRuleAssociation`:
+  [ResolverRuleAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruleassociationtypedef)
 
 ## FilterTypeDef
 
@@ -352,13 +314,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Values`: `List[str]`
 
+- `Name`: `str`
+- `Values`: `List`\[`str`\]
 
 ## FirewallConfigTypeDef
 
@@ -366,15 +325,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ResourceId`: `str`
 - `OwnerId`: `str`
-- `FirewallFailOpen`: `FirewallFailOpenStatus`
-
+- `FirewallFailOpen`:
+  [FirewallFailOpenStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallfailopenstatus)
 
 ## FirewallDomainListMetadataTypeDef
 
@@ -382,16 +339,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallDomainListMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
 - `CreatorRequestId`: `str`
 - `ManagedOwnerName`: `str`
-
 
 ## FirewallDomainListTypeDef
 
@@ -399,21 +353,19 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallDomainListTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
 - `DomainCount`: `int`
-- `Status`: `FirewallDomainListStatus`
+- `Status`:
+  [FirewallDomainListStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewalldomainliststatus)
 - `StatusMessage`: `str`
 - `ManagedOwnerName`: `str`
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## FirewallRuleGroupAssociationTypeDef
 
@@ -421,24 +373,23 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `FirewallRuleGroupId`: `str`
 - `VpcId`: `str`
 - `Name`: `str`
 - `Priority`: `int`
-- `MutationProtection`: `MutationProtectionStatus`
+- `MutationProtection`:
+  [MutationProtectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#mutationprotectionstatus)
 - `ManagedOwnerName`: `str`
-- `Status`: `FirewallRuleGroupAssociationStatus`
+- `Status`:
+  [FirewallRuleGroupAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallrulegroupassociationstatus)
 - `StatusMessage`: `str`
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## FirewallRuleGroupMetadataTypeDef
 
@@ -446,17 +397,15 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
 - `OwnerId`: `str`
 - `CreatorRequestId`: `str`
-- `ShareStatus`: `ShareStatus`
-
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sharestatus)
 
 ## FirewallRuleGroupTypeDef
 
@@ -464,22 +413,21 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallRuleGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
 - `RuleCount`: `int`
-- `Status`: `FirewallRuleGroupStatus`
+- `Status`:
+  [FirewallRuleGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewallrulegroupstatus)
 - `StatusMessage`: `str`
 - `OwnerId`: `str`
 - `CreatorRequestId`: `str`
-- `ShareStatus`: `ShareStatus`
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sharestatus)
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## FirewallRuleTypeDef
 
@@ -487,16 +435,16 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import FirewallRuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FirewallRuleGroupId`: `str`
 - `FirewallDomainListId`: `str`
 - `Name`: `str`
 - `Priority`: `int`
-- `Action`: `Action`
-- `BlockResponse`: `BlockResponse`
+- `Action`:
+  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#action)
+- `BlockResponse`:
+  [BlockResponse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#blockresponse)
 - `BlockOverrideDomain`: `str`
 - `BlockOverrideDnsType`: `Literal['CNAME']`
 - `BlockOverrideTtl`: `int`
@@ -504,19 +452,16 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
-
 ## GetFirewallConfigResponseTypeDef
 
 ```python
 from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallConfig`: `"FirewallConfigTypeDef"`
 
+- `FirewallConfig`:
+  [FirewallConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallconfigtypedef)
 
 ## GetFirewallDomainListResponseTypeDef
 
@@ -524,12 +469,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallDomainList`: `"FirewallDomainListTypeDef"`
 
+- `FirewallDomainList`:
+  [FirewallDomainListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewalldomainlisttypedef)
 
 ## GetFirewallRuleGroupAssociationResponseTypeDef
 
@@ -537,12 +480,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroupAssociation`: `"FirewallRuleGroupAssociationTypeDef"`
 
+- `FirewallRuleGroupAssociation`:
+  [FirewallRuleGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupassociationtypedef)
 
 ## GetFirewallRuleGroupPolicyResponseTypeDef
 
@@ -550,12 +491,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroupPolicy`: `str`
 
+- `FirewallRuleGroupPolicy`: `str`
 
 ## GetFirewallRuleGroupResponseTypeDef
 
@@ -563,12 +501,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroup`: `"FirewallRuleGroupTypeDef"`
 
+- `FirewallRuleGroup`:
+  [FirewallRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegrouptypedef)
 
 ## GetResolverDnssecConfigResponseTypeDef
 
@@ -576,12 +512,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverDNSSECConfig`: `"ResolverDnssecConfigTypeDef"`
 
+- `ResolverDNSSECConfig`:
+  [ResolverDnssecConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverdnssecconfigtypedef)
 
 ## GetResolverEndpointResponseTypeDef
 
@@ -589,12 +523,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## GetResolverQueryLogConfigAssociationResponseTypeDef
 
@@ -602,12 +534,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfigAssociation`: `"ResolverQueryLogConfigAssociationTypeDef"`
 
+- `ResolverQueryLogConfigAssociation`:
+  [ResolverQueryLogConfigAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigassociationtypedef)
 
 ## GetResolverQueryLogConfigPolicyResponseTypeDef
 
@@ -615,12 +545,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfigPolicy`: `str`
 
+- `ResolverQueryLogConfigPolicy`: `str`
 
 ## GetResolverQueryLogConfigResponseTypeDef
 
@@ -628,12 +555,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverQueryLogConfig`: `"ResolverQueryLogConfigTypeDef"`
 
+- `ResolverQueryLogConfig`:
+  [ResolverQueryLogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigtypedef)
 
 ## GetResolverRuleAssociationResponseTypeDef
 
@@ -641,12 +566,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRuleAssociation`: `"ResolverRuleAssociationTypeDef"`
 
+- `ResolverRuleAssociation`:
+  [ResolverRuleAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruleassociationtypedef)
 
 ## GetResolverRulePolicyResponseTypeDef
 
@@ -654,12 +577,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRulePolicy`: `str`
 
+- `ResolverRulePolicy`: `str`
 
 ## GetResolverRuleResponseTypeDef
 
@@ -667,12 +587,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import GetResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRule`: `"ResolverRuleTypeDef"`
 
+- `ResolverRule`:
+  [ResolverRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruletypedef)
 
 ## ImportFirewallDomainsResponseTypeDef
 
@@ -680,15 +598,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ImportFirewallDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `FirewallDomainListStatus`
+- `Status`:
+  [FirewallDomainListStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewalldomainliststatus)
 - `StatusMessage`: `str`
-
 
 ## IpAddressRequestTypeDef
 
@@ -696,15 +612,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import IpAddressRequestTypeDef
 ```
 
-
 Required fields:
+
 - `SubnetId`: `str`
 
-
-
 Optional fields:
-- `Ip`: `str`
 
+- `Ip`: `str`
 
 ## IpAddressResponseTypeDef
 
@@ -712,18 +626,16 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import IpAddressResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IpId`: `str`
 - `SubnetId`: `str`
 - `Ip`: `str`
-- `Status`: `IpAddressStatus`
+- `Status`:
+  [IpAddressStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#ipaddressstatus)
 - `StatusMessage`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## IpAddressUpdateTypeDef
 
@@ -731,14 +643,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import IpAddressUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IpId`: `str`
 - `SubnetId`: `str`
 - `Ip`: `str`
-
 
 ## ListFirewallConfigsResponseTypeDef
 
@@ -746,13 +655,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `FirewallConfigs`: `List["FirewallConfigTypeDef"]`
 
+- `NextToken`: `str`
+- `FirewallConfigs`:
+  `List`\[[FirewallConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallconfigtypedef)\]
 
 ## ListFirewallDomainListsResponseTypeDef
 
@@ -760,13 +667,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `FirewallDomainLists`: `List["FirewallDomainListMetadataTypeDef"]`
 
+- `NextToken`: `str`
+- `FirewallDomainLists`:
+  `List`\[[FirewallDomainListMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewalldomainlistmetadatatypedef)\]
 
 ## ListFirewallDomainsResponseTypeDef
 
@@ -774,13 +679,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Domains`: `List[str]`
 
+- `NextToken`: `str`
+- `Domains`: `List`\[`str`\]
 
 ## ListFirewallRuleGroupAssociationsResponseTypeDef
 
@@ -788,13 +690,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `FirewallRuleGroupAssociations`: `List["FirewallRuleGroupAssociationTypeDef"]`
 
+- `NextToken`: `str`
+- `FirewallRuleGroupAssociations`:
+  `List`\[[FirewallRuleGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupassociationtypedef)\]
 
 ## ListFirewallRuleGroupsResponseTypeDef
 
@@ -802,13 +702,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `FirewallRuleGroups`: `List["FirewallRuleGroupMetadataTypeDef"]`
 
+- `NextToken`: `str`
+- `FirewallRuleGroups`:
+  `List`\[[FirewallRuleGroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupmetadatatypedef)\]
 
 ## ListFirewallRulesResponseTypeDef
 
@@ -816,13 +714,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListFirewallRulesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `FirewallRules`: `List["FirewallRuleTypeDef"]`
 
+- `NextToken`: `str`
+- `FirewallRules`:
+  `List`\[[FirewallRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallruletypedef)\]
 
 ## ListResolverDnssecConfigsResponseTypeDef
 
@@ -830,13 +726,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `ResolverDnssecConfigs`: `List["ResolverDnssecConfigTypeDef"]`
 
+- `NextToken`: `str`
+- `ResolverDnssecConfigs`:
+  `List`\[[ResolverDnssecConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverdnssecconfigtypedef)\]
 
 ## ListResolverEndpointIpAddressesResponseTypeDef
 
@@ -844,14 +738,12 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `IpAddresses`: `List["IpAddressResponseTypeDef"]`
-
+- `IpAddresses`:
+  `List`\[[IpAddressResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#ipaddressresponsetypedef)\]
 
 ## ListResolverEndpointsResponseTypeDef
 
@@ -859,14 +751,12 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ResolverEndpoints`: `List["ResolverEndpointTypeDef"]`
-
+- `ResolverEndpoints`:
+  `List`\[[ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)\]
 
 ## ListResolverQueryLogConfigAssociationsResponseTypeDef
 
@@ -874,15 +764,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `TotalCount`: `int`
 - `TotalFilteredCount`: `int`
-- `ResolverQueryLogConfigAssociations`: `List["ResolverQueryLogConfigAssociationTypeDef"]`
-
+- `ResolverQueryLogConfigAssociations`:
+  `List`\[[ResolverQueryLogConfigAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigassociationtypedef)\]
 
 ## ListResolverQueryLogConfigsResponseTypeDef
 
@@ -890,15 +778,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `TotalCount`: `int`
 - `TotalFilteredCount`: `int`
-- `ResolverQueryLogConfigs`: `List["ResolverQueryLogConfigTypeDef"]`
-
+- `ResolverQueryLogConfigs`:
+  `List`\[[ResolverQueryLogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverquerylogconfigtypedef)\]
 
 ## ListResolverRuleAssociationsResponseTypeDef
 
@@ -906,14 +792,12 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ResolverRuleAssociations`: `List["ResolverRuleAssociationTypeDef"]`
-
+- `ResolverRuleAssociations`:
+  `List`\[[ResolverRuleAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruleassociationtypedef)\]
 
 ## ListResolverRulesResponseTypeDef
 
@@ -921,14 +805,12 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListResolverRulesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ResolverRules`: `List["ResolverRuleTypeDef"]`
-
+- `ResolverRules`:
+  `List`\[[ResolverRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruletypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -936,13 +818,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#tagtypedef)\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -950,14 +830,11 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutFirewallRuleGroupPolicyResponseTypeDef
 
@@ -965,12 +842,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReturnValue`: `bool`
 
+- `ReturnValue`: `bool`
 
 ## PutResolverQueryLogConfigPolicyResponseTypeDef
 
@@ -978,12 +852,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReturnValue`: `bool`
 
+- `ReturnValue`: `bool`
 
 ## PutResolverRulePolicyResponseTypeDef
 
@@ -991,12 +862,9 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReturnValue`: `bool`
 
+- `ReturnValue`: `bool`
 
 ## ResolverDnssecConfigTypeDef
 
@@ -1004,15 +872,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverDnssecConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `OwnerId`: `str`
 - `ResourceId`: `str`
-- `ValidationStatus`: `ResolverDNSSECValidationStatus`
-
+- `ValidationStatus`:
+  [ResolverDNSSECValidationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverdnssecvalidationstatus)
 
 ## ResolverEndpointTypeDef
 
@@ -1020,23 +886,22 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverEndpointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `CreatorRequestId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `SecurityGroupIds`: `List[str]`
-- `Direction`: `ResolverEndpointDirection`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Direction`:
+  [ResolverEndpointDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverendpointdirection)
 - `IpAddressCount`: `int`
 - `HostVPCId`: `str`
-- `Status`: `ResolverEndpointStatus`
+- `Status`:
+  [ResolverEndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverendpointstatus)
 - `StatusMessage`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## ResolverQueryLogConfigAssociationTypeDef
 
@@ -1044,18 +909,17 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ResolverQueryLogConfigId`: `str`
 - `ResourceId`: `str`
-- `Status`: `ResolverQueryLogConfigAssociationStatus`
-- `Error`: `ResolverQueryLogConfigAssociationError`
+- `Status`:
+  [ResolverQueryLogConfigAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverquerylogconfigassociationstatus)
+- `Error`:
+  [ResolverQueryLogConfigAssociationError](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverquerylogconfigassociationerror)
 - `ErrorMessage`: `str`
 - `CreationTime`: `str`
-
 
 ## ResolverQueryLogConfigTypeDef
 
@@ -1063,14 +927,14 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverQueryLogConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `OwnerId`: `str`
-- `Status`: `ResolverQueryLogConfigStatus`
-- `ShareStatus`: `ShareStatus`
+- `Status`:
+  [ResolverQueryLogConfigStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverquerylogconfigstatus)
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sharestatus)
 - `AssociationCount`: `int`
 - `Arn`: `str`
 - `Name`: `str`
@@ -1078,24 +942,21 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
 
-
 ## ResolverRuleAssociationTypeDef
 
 ```python
 from mypy_boto3_route53resolver.type_defs import ResolverRuleAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ResolverRuleId`: `str`
 - `Name`: `str`
 - `VPCId`: `str`
-- `Status`: `ResolverRuleAssociationStatus`
+- `Status`:
+  [ResolverRuleAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverruleassociationstatus)
 - `StatusMessage`: `str`
-
 
 ## ResolverRuleConfigTypeDef
 
@@ -1103,14 +964,12 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverRuleConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `TargetIps`: `List["TargetAddressTypeDef"]`
-- `ResolverEndpointId`: `str`
 
+- `Name`: `str`
+- `TargetIps`:
+  `List`\[[TargetAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#targetaddresstypedef)\]
+- `ResolverEndpointId`: `str`
 
 ## ResolverRuleTypeDef
 
@@ -1118,25 +977,26 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import ResolverRuleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `CreatorRequestId`: `str`
 - `Arn`: `str`
 - `DomainName`: `str`
-- `Status`: `ResolverRuleStatus`
+- `Status`:
+  [ResolverRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#resolverrulestatus)
 - `StatusMessage`: `str`
-- `RuleType`: `RuleTypeOption`
+- `RuleType`:
+  [RuleTypeOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#ruletypeoption)
 - `Name`: `str`
-- `TargetIps`: `List["TargetAddressTypeDef"]`
+- `TargetIps`:
+  `List`\[[TargetAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
 - `OwnerId`: `str`
-- `ShareStatus`: `ShareStatus`
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#sharestatus)
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
-
 
 ## TagTypeDef
 
@@ -1144,13 +1004,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TargetAddressTypeDef
 
@@ -1158,15 +1015,13 @@ Required fields:
 from mypy_boto3_route53resolver.type_defs import TargetAddressTypeDef
 ```
 
-
 Required fields:
+
 - `Ip`: `str`
 
-
-
 Optional fields:
-- `Port`: `int`
 
+- `Port`: `int`
 
 ## UpdateFirewallConfigResponseTypeDef
 
@@ -1174,12 +1029,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallConfig`: `"FirewallConfigTypeDef"`
 
+- `FirewallConfig`:
+  [FirewallConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallconfigtypedef)
 
 ## UpdateFirewallDomainsResponseTypeDef
 
@@ -1187,15 +1040,13 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `FirewallDomainListStatus`
+- `Status`:
+  [FirewallDomainListStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/literals.html#firewalldomainliststatus)
 - `StatusMessage`: `str`
-
 
 ## UpdateFirewallRuleGroupAssociationResponseTypeDef
 
@@ -1203,12 +1054,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRuleGroupAssociation`: `"FirewallRuleGroupAssociationTypeDef"`
 
+- `FirewallRuleGroupAssociation`:
+  [FirewallRuleGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallrulegroupassociationtypedef)
 
 ## UpdateFirewallRuleResponseTypeDef
 
@@ -1216,12 +1065,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FirewallRule`: `"FirewallRuleTypeDef"`
 
+- `FirewallRule`:
+  [FirewallRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#firewallruletypedef)
 
 ## UpdateResolverDnssecConfigResponseTypeDef
 
@@ -1229,12 +1076,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverDNSSECConfig`: `"ResolverDnssecConfigTypeDef"`
 
+- `ResolverDNSSECConfig`:
+  [ResolverDnssecConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverdnssecconfigtypedef)
 
 ## UpdateResolverEndpointResponseTypeDef
 
@@ -1242,12 +1087,10 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverEndpoint`: `"ResolverEndpointTypeDef"`
 
+- `ResolverEndpoint`:
+  [ResolverEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverendpointtypedef)
 
 ## UpdateResolverRuleResponseTypeDef
 
@@ -1255,9 +1098,7 @@ Optional fields:
 from mypy_boto3_route53resolver.type_defs import UpdateResolverRuleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResolverRule`: `"ResolverRuleTypeDef"`
 
+- `ResolverRule`:
+  [ResolverRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53resolver/type_defs.html#resolverruletypedef)

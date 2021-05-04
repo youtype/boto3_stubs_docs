@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Rekognition
 
-Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+Auto-generated documentation for
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+type annotations stubs module
+[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ```bash
 pip install mypy-boto3-rekognition
@@ -20,7 +22,8 @@ pip install mypy-boto3-rekognition
 
 ## RekognitionClient
 
-Type annotations for  `boto3.client("rekognition")` as [RekognitionClient](./client.md)
+Type annotations for `boto3.client("rekognition")` as
+[RekognitionClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_rekognition.client import RekognitionClient
 ```
 
-
 RekognitionClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [compare_faces](./client.md#compare-faces)
 - [create_collection](./client.md#create-collection)
@@ -90,10 +91,8 @@ RekognitionClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [HumanLoopQuotaExceededException](./client.md#humanloopquotaexceededexception)
@@ -114,14 +113,10 @@ RekognitionClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [VideoTooLargeException](./client.md#videotoolargeexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("rekognition").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("rekognition").get_paginator("...")`.
 
 Can be used directly:
 
@@ -135,12 +130,10 @@ from mypy_boto3_rekognition.paginators import DescribeProjectVersionsPaginator, 
 - [ListFacesPaginator](./paginators.md#listfacespaginator)
 - [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("rekognition").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("rekognition").get_waiter("...")`.
 
 Can be used directly:
 
@@ -150,9 +143,6 @@ from mypy_boto3_rekognition.waiters import ProjectVersionRunningWaiter, ...
 
 - [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
 - [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
-
-
-
 
 ## Literals
 
@@ -195,13 +185,10 @@ from mypy_boto3_rekognition.literals import Attribute, ...
 - [TextTypes](./literals.md#texttypes)
 - [VideoJobStatus](./literals.md#videojobstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

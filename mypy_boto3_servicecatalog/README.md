@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ServiceCatalog
 
-Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+Auto-generated documentation for
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+type annotations stubs module
+[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ```bash
 pip install mypy-boto3-servicecatalog
@@ -19,7 +21,8 @@ pip install mypy-boto3-servicecatalog
 
 ## ServiceCatalogClient
 
-Type annotations for  `boto3.client("servicecatalog")` as [ServiceCatalogClient](./client.md)
+Type annotations for `boto3.client("servicecatalog")` as
+[ServiceCatalogClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 ```
 
-
 ServiceCatalogClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_portfolio_share](./client.md#accept-portfolio-share)
 - [associate_budget_with_resource](./client.md#associate-budget-with-resource)
 - [associate_principal_with_portfolio](./client.md#associate-principal-with-portfolio)
@@ -124,10 +125,8 @@ ServiceCatalogClient [exceptions](./client.md#exceptions)
 - [update_service_action](./client.md#update-service-action)
 - [update_tag_option](./client.md#update-tag-option)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DuplicateResourceException](./client.md#duplicateresourceexception)
 - [InvalidParametersException](./client.md#invalidparametersexception)
@@ -138,14 +137,10 @@ ServiceCatalogClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TagOptionNotMigratedException](./client.md#tagoptionnotmigratedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("servicecatalog").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("servicecatalog").get_paginator("...")`.
 
 Can be used directly:
 
@@ -169,11 +164,6 @@ from mypy_boto3_servicecatalog.paginators import ListAcceptedPortfolioSharesPagi
 - [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
 - [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
 - [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -236,13 +226,10 @@ from mypy_boto3_servicecatalog.literals import AccessLevelFilterKey, ...
 - [StackSetOperationType](./literals.md#stacksetoperationtype)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

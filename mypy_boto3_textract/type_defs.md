@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Textract](./README.md) > Structures
 
-Auto-generated documentation for [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
-type annotations stubs module [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+Auto-generated documentation for
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+type annotations stubs module
+[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [Typed dictionaries for boto3 Textract module](#typed-dictionaries-for-boto3-textract-module)
   - [AnalyzeDocumentResponseTypeDef](#analyzedocumentresponsetypedef)
@@ -35,15 +37,15 @@ type annotations stubs module [mypy_boto3_textract](https://pypi.org/project/myp
 from mypy_boto3_textract.type_defs import AnalyzeDocumentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentMetadata`: `"DocumentMetadataTypeDef"`
-- `Blocks`: `List["BlockTypeDef"]`
-- `HumanLoopActivationOutput`: `"HumanLoopActivationOutputTypeDef"`
-- `AnalyzeDocumentModelVersion`: `str`
 
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentmetadatatypedef)
+- `Blocks`:
+  `List`\[[BlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#blocktypedef)\]
+- `HumanLoopActivationOutput`:
+  [HumanLoopActivationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#humanloopactivationoutputtypedef)
+- `AnalyzeDocumentModelVersion`: `str`
 
 ## BlockTypeDef
 
@@ -51,25 +53,28 @@ Optional fields:
 from mypy_boto3_textract.type_defs import BlockTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BlockType`: `BlockType`
+
+- `BlockType`:
+  [BlockType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#blocktype)
 - `Confidence`: `float`
 - `Text`: `str`
-- `TextType`: `TextType`
+- `TextType`:
+  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#texttype)
 - `RowIndex`: `int`
 - `ColumnIndex`: `int`
 - `RowSpan`: `int`
 - `ColumnSpan`: `int`
-- `Geometry`: `"GeometryTypeDef"`
+- `Geometry`:
+  [GeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#geometrytypedef)
 - `Id`: `str`
-- `Relationships`: `List["RelationshipTypeDef"]`
-- `EntityTypes`: `List[EntityType]`
-- `SelectionStatus`: `SelectionStatus`
+- `Relationships`:
+  `List`\[[RelationshipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#relationshiptypedef)\]
+- `EntityTypes`:
+  `List`\[[EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#entitytype)\]
+- `SelectionStatus`:
+  [SelectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#selectionstatus)
 - `Page`: `int`
-
 
 ## BoundingBoxTypeDef
 
@@ -77,15 +82,12 @@ Optional fields:
 from mypy_boto3_textract.type_defs import BoundingBoxTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Width`: `float`
 - `Height`: `float`
 - `Left`: `float`
 - `Top`: `float`
-
 
 ## DetectDocumentTextResponseTypeDef
 
@@ -93,14 +95,13 @@ Optional fields:
 from mypy_boto3_textract.type_defs import DetectDocumentTextResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentMetadata`: `"DocumentMetadataTypeDef"`
-- `Blocks`: `List["BlockTypeDef"]`
-- `DetectDocumentTextModelVersion`: `str`
 
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentmetadatatypedef)
+- `Blocks`:
+  `List`\[[BlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#blocktypedef)\]
+- `DetectDocumentTextModelVersion`: `str`
 
 ## DocumentLocationTypeDef
 
@@ -108,12 +109,10 @@ Optional fields:
 from mypy_boto3_textract.type_defs import DocumentLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Object`: `"S3ObjectTypeDef"`
 
+- `S3Object`:
+  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#s3objecttypedef)
 
 ## DocumentMetadataTypeDef
 
@@ -121,12 +120,9 @@ Optional fields:
 from mypy_boto3_textract.type_defs import DocumentMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Pages`: `int`
 
+- `Pages`: `int`
 
 ## DocumentTypeDef
 
@@ -134,13 +130,11 @@ Optional fields:
 from mypy_boto3_textract.type_defs import DocumentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Bytes`: `Union[bytes, IO[bytes]]`
-- `S3Object`: `"S3ObjectTypeDef"`
 
+- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `S3Object`:
+  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#s3objecttypedef)
 
 ## GeometryTypeDef
 
@@ -148,13 +142,12 @@ Optional fields:
 from mypy_boto3_textract.type_defs import GeometryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BoundingBox`: `"BoundingBoxTypeDef"`
-- `Polygon`: `List["PointTypeDef"]`
 
+- `BoundingBox`:
+  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#boundingboxtypedef)
+- `Polygon`:
+  `List`\[[PointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#pointtypedef)\]
 
 ## GetDocumentAnalysisResponseTypeDef
 
@@ -162,18 +155,19 @@ Optional fields:
 from mypy_boto3_textract.type_defs import GetDocumentAnalysisResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentMetadata`: `"DocumentMetadataTypeDef"`
-- `JobStatus`: `JobStatus`
+
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentmetadatatypedef)
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#jobstatus)
 - `NextToken`: `str`
-- `Blocks`: `List["BlockTypeDef"]`
-- `Warnings`: `List["WarningTypeDef"]`
+- `Blocks`:
+  `List`\[[BlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#blocktypedef)\]
+- `Warnings`:
+  `List`\[[WarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#warningtypedef)\]
 - `StatusMessage`: `str`
 - `AnalyzeDocumentModelVersion`: `str`
-
 
 ## GetDocumentTextDetectionResponseTypeDef
 
@@ -181,18 +175,19 @@ Optional fields:
 from mypy_boto3_textract.type_defs import GetDocumentTextDetectionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentMetadata`: `"DocumentMetadataTypeDef"`
-- `JobStatus`: `JobStatus`
+
+- `DocumentMetadata`:
+  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentmetadatatypedef)
+- `JobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#jobstatus)
 - `NextToken`: `str`
-- `Blocks`: `List["BlockTypeDef"]`
-- `Warnings`: `List["WarningTypeDef"]`
+- `Blocks`:
+  `List`\[[BlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#blocktypedef)\]
+- `Warnings`:
+  `List`\[[WarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#warningtypedef)\]
 - `StatusMessage`: `str`
 - `DetectDocumentTextModelVersion`: `str`
-
 
 ## HumanLoopActivationOutputTypeDef
 
@@ -200,15 +195,13 @@ Optional fields:
 from mypy_boto3_textract.type_defs import HumanLoopActivationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `HumanLoopArn`: `str`
-- `HumanLoopActivationReasons`: `List[str]`
+- `HumanLoopActivationReasons`: `List`\[`str`\]
 - `HumanLoopActivationConditionsEvaluationResults`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#responsemetadata)
 
 ## HumanLoopConfigTypeDef
 
@@ -216,16 +209,15 @@ Required fields:
 from mypy_boto3_textract.type_defs import HumanLoopConfigTypeDef
 ```
 
-
 Required fields:
+
 - `HumanLoopName`: `str`
 - `FlowDefinitionArn`: `str`
 
-
-
 Optional fields:
-- `DataAttributes`: `"HumanLoopDataAttributesTypeDef"`
 
+- `DataAttributes`:
+  [HumanLoopDataAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#humanloopdataattributestypedef)
 
 ## HumanLoopDataAttributesTypeDef
 
@@ -233,12 +225,10 @@ Optional fields:
 from mypy_boto3_textract.type_defs import HumanLoopDataAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentClassifiers`: `List[ContentClassifier]`
 
+- `ContentClassifiers`:
+  `List`\[[ContentClassifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#contentclassifier)\]
 
 ## NotificationChannelTypeDef
 
@@ -246,13 +236,10 @@ Optional fields:
 from mypy_boto3_textract.type_defs import NotificationChannelTypeDef
 ```
 
-
 Required fields:
+
 - `SNSTopicArn`: `str`
 - `RoleArn`: `str`
-
-
-
 
 ## OutputConfigTypeDef
 
@@ -260,15 +247,13 @@ Required fields:
 from mypy_boto3_textract.type_defs import OutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Bucket`: `str`
 
-
-
 Optional fields:
-- `S3Prefix`: `str`
 
+- `S3Prefix`: `str`
 
 ## PointTypeDef
 
@@ -276,13 +261,10 @@ Optional fields:
 from mypy_boto3_textract.type_defs import PointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `X`: `float`
 - `Y`: `float`
-
 
 ## RelationshipTypeDef
 
@@ -290,13 +272,11 @@ Optional fields:
 from mypy_boto3_textract.type_defs import RelationshipTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `RelationshipType`
-- `Ids`: `List[str]`
 
+- `Type`:
+  [RelationshipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#relationshiptype)
+- `Ids`: `List`\[`str`\]
 
 ## ResponseMetadata
 
@@ -304,16 +284,13 @@ Optional fields:
 from mypy_boto3_textract.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3ObjectTypeDef
 
@@ -321,14 +298,11 @@ Required fields:
 from mypy_boto3_textract.type_defs import S3ObjectTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Bucket`: `str`
 - `Name`: `str`
 - `Version`: `str`
-
 
 ## StartDocumentAnalysisResponseTypeDef
 
@@ -336,12 +310,9 @@ Optional fields:
 from mypy_boto3_textract.type_defs import StartDocumentAnalysisResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
 
+- `JobId`: `str`
 
 ## StartDocumentTextDetectionResponseTypeDef
 
@@ -349,12 +320,9 @@ Optional fields:
 from mypy_boto3_textract.type_defs import StartDocumentTextDetectionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
 
+- `JobId`: `str`
 
 ## WarningTypeDef
 
@@ -362,10 +330,7 @@ Optional fields:
 from mypy_boto3_textract.type_defs import WarningTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ErrorCode`: `str`
-- `Pages`: `List[int]`
 
+- `ErrorCode`: `str`
+- `Pages`: `List`\[`int`\]

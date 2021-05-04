@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > Structures
 
-Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+Auto-generated documentation for
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+type annotations stubs module
+[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [Typed dictionaries for boto3 CodeDeploy module](#typed-dictionaries-for-boto3-codedeploy-module)
   - [AlarmConfigurationTypeDef](#alarmconfigurationtypedef)
@@ -104,14 +106,12 @@ type annotations stubs module [mypy_boto3_codedeploy](https://pypi.org/project/m
 from mypy_boto3_codedeploy.type_defs import AlarmConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `enabled`: `bool`
 - `ignorePollAlarmFailure`: `bool`
-- `alarms`: `List["AlarmTypeDef"]`
-
+- `alarms`:
+  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#alarmtypedef)\]
 
 ## AlarmTypeDef
 
@@ -119,12 +119,9 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import AlarmTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## AppSpecContentTypeDef
 
@@ -132,13 +129,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import AppSpecContentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `content`: `str`
 - `sha256`: `str`
-
 
 ## ApplicationInfoTypeDef
 
@@ -146,17 +140,15 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ApplicationInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationId`: `str`
 - `applicationName`: `str`
 - `createTime`: `datetime`
 - `linkedToGitHub`: `bool`
 - `gitHubAccountName`: `str`
-- `computePlatform`: `ComputePlatform`
-
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
 
 ## AutoRollbackConfigurationTypeDef
 
@@ -164,13 +156,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import AutoRollbackConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `enabled`: `bool`
-- `events`: `List[AutoRollbackEvent]`
 
+- `enabled`: `bool`
+- `events`:
+  `List`\[[AutoRollbackEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#autorollbackevent)\]
 
 ## AutoScalingGroupTypeDef
 
@@ -178,13 +168,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import AutoScalingGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `hook`: `str`
-
 
 ## BatchGetApplicationRevisionsOutputTypeDef
 
@@ -192,15 +179,14 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `applicationName`: `str`
 - `errorMessage`: `str`
-- `revisions`: `List["RevisionInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `revisions`:
+  `List`\[[RevisionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisioninfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetApplicationsOutputTypeDef
 
@@ -208,13 +194,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsOutputTypeDef
 ```
 
-
 Required fields:
-- `applicationsInfo`: `List["ApplicationInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `applicationsInfo`:
+  `List`\[[ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#applicationinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetDeploymentGroupsOutputTypeDef
 
@@ -222,14 +207,13 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentGroupsInfo`: `List["DeploymentGroupInfoTypeDef"]`
+
+- `deploymentGroupsInfo`:
+  `List`\[[DeploymentGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentgroupinfotypedef)\]
 - `errorMessage`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetDeploymentInstancesOutputTypeDef
 
@@ -237,14 +221,13 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesOutputTypeDef
 ```
 
-
 Required fields:
-- `instancesSummary`: `List["InstanceSummaryTypeDef"]`
+
+- `instancesSummary`:
+  `List`\[[InstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#instancesummarytypedef)\]
 - `errorMessage`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetDeploymentTargetsOutputTypeDef
 
@@ -252,13 +235,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentTargets`: `List["DeploymentTargetTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentTargets`:
+  `List`\[[DeploymentTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymenttargettypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetDeploymentsOutputTypeDef
 
@@ -266,13 +248,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentsInfo`: `List["DeploymentInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentsInfo`:
+  `List`\[[DeploymentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BatchGetOnPremisesInstancesOutputTypeDef
 
@@ -280,13 +261,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesOutputTypeDef
 ```
 
-
 Required fields:
-- `instanceInfos`: `List["InstanceInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `instanceInfos`:
+  `List`\[[InstanceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#instanceinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## BlueGreenDeploymentConfigurationTypeDef
 
@@ -294,14 +274,14 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import BlueGreenDeploymentConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `terminateBlueInstancesOnDeploymentSuccess`: `"BlueInstanceTerminationOptionTypeDef"`
-- `deploymentReadyOption`: `"DeploymentReadyOptionTypeDef"`
-- `greenFleetProvisioningOption`: `"GreenFleetProvisioningOptionTypeDef"`
 
+- `terminateBlueInstancesOnDeploymentSuccess`:
+  [BlueInstanceTerminationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#blueinstanceterminationoptiontypedef)
+- `deploymentReadyOption`:
+  [DeploymentReadyOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentreadyoptiontypedef)
+- `greenFleetProvisioningOption`:
+  [GreenFleetProvisioningOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#greenfleetprovisioningoptiontypedef)
 
 ## BlueInstanceTerminationOptionTypeDef
 
@@ -309,13 +289,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import BlueInstanceTerminationOptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `InstanceAction`
-- `terminationWaitTimeInMinutes`: `int`
 
+- `action`:
+  [InstanceAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instanceaction)
+- `terminationWaitTimeInMinutes`: `int`
 
 ## CloudFormationTargetTypeDef
 
@@ -323,18 +301,17 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import CloudFormationTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`: `List["LifecycleEventTypeDef"]`
-- `status`: `TargetStatus`
+- `lifecycleEvents`:
+  `List`\[[LifecycleEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lifecycleeventtypedef)\]
+- `status`:
+  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetstatus)
 - `resourceType`: `str`
 - `targetVersionWeight`: `float`
-
 
 ## CreateApplicationOutputTypeDef
 
@@ -342,13 +319,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import CreateApplicationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `applicationId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## CreateDeploymentConfigOutputTypeDef
 
@@ -356,13 +331,11 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `deploymentConfigId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## CreateDeploymentGroupOutputTypeDef
 
@@ -370,13 +343,11 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupOutputTypeDef
 ```
 
-
 Required fields:
+
 - `deploymentGroupId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## CreateDeploymentOutputTypeDef
 
@@ -384,13 +355,11 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentOutputTypeDef
 ```
 
-
 Required fields:
+
 - `deploymentId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## DeleteDeploymentGroupOutputTypeDef
 
@@ -398,13 +367,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `hooksNotCleanedUp`: `List["AutoScalingGroupTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `hooksNotCleanedUp`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autoscalinggrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## DeleteGitHubAccountTokenOutputTypeDef
 
@@ -412,13 +380,11 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenOutputTypeDef
 ```
 
-
 Required fields:
+
 - `tokenName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## DeploymentConfigInfoTypeDef
 
@@ -426,17 +392,17 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentConfigInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentConfigId`: `str`
 - `deploymentConfigName`: `str`
-- `minimumHealthyHosts`: `"MinimumHealthyHostsTypeDef"`
+- `minimumHealthyHosts`:
+  [MinimumHealthyHostsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#minimumhealthyhoststypedef)
 - `createTime`: `datetime`
-- `computePlatform`: `ComputePlatform`
-- `trafficRoutingConfig`: `"TrafficRoutingConfigTypeDef"`
-
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
+- `trafficRoutingConfig`:
+  [TrafficRoutingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#trafficroutingconfigtypedef)
 
 ## DeploymentGroupInfoTypeDef
 
@@ -444,33 +410,47 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentGroupInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationName`: `str`
 - `deploymentGroupId`: `str`
 - `deploymentGroupName`: `str`
 - `deploymentConfigName`: `str`
-- `ec2TagFilters`: `List["EC2TagFilterTypeDef"]`
-- `onPremisesInstanceTagFilters`: `List["TagFilterTypeDef"]`
-- `autoScalingGroups`: `List["AutoScalingGroupTypeDef"]`
+- `ec2TagFilters`:
+  `List`\[[EC2TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagfiltertypedef)\]
+- `onPremisesInstanceTagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]
+- `autoScalingGroups`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autoscalinggrouptypedef)\]
 - `serviceRoleArn`: `str`
-- `targetRevision`: `"RevisionLocationTypeDef"`
-- `triggerConfigurations`: `List["TriggerConfigTypeDef"]`
-- `alarmConfiguration`: `"AlarmConfigurationTypeDef"`
-- `autoRollbackConfiguration`: `"AutoRollbackConfigurationTypeDef"`
-- `deploymentStyle`: `"DeploymentStyleTypeDef"`
-- `outdatedInstancesStrategy`: `OutdatedInstancesStrategy`
-- `blueGreenDeploymentConfiguration`: `"BlueGreenDeploymentConfigurationTypeDef"`
-- `loadBalancerInfo`: `"LoadBalancerInfoTypeDef"`
-- `lastSuccessfulDeployment`: `"LastDeploymentInfoTypeDef"`
-- `lastAttemptedDeployment`: `"LastDeploymentInfoTypeDef"`
-- `ec2TagSet`: `"EC2TagSetTypeDef"`
-- `onPremisesTagSet`: `"OnPremisesTagSetTypeDef"`
-- `computePlatform`: `ComputePlatform`
-- `ecsServices`: `List["ECSServiceTypeDef"]`
-
+- `targetRevision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `triggerConfigurations`:
+  `List`\[[TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#triggerconfigtypedef)\]
+- `alarmConfiguration`:
+  [AlarmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#alarmconfigurationtypedef)
+- `autoRollbackConfiguration`:
+  [AutoRollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autorollbackconfigurationtypedef)
+- `deploymentStyle`:
+  [DeploymentStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentstyletypedef)
+- `outdatedInstancesStrategy`:
+  [OutdatedInstancesStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#outdatedinstancesstrategy)
+- `blueGreenDeploymentConfiguration`:
+  [BlueGreenDeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#bluegreendeploymentconfigurationtypedef)
+- `loadBalancerInfo`:
+  [LoadBalancerInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#loadbalancerinfotypedef)
+- `lastSuccessfulDeployment`:
+  [LastDeploymentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lastdeploymentinfotypedef)
+- `lastAttemptedDeployment`:
+  [LastDeploymentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lastdeploymentinfotypedef)
+- `ec2TagSet`:
+  [EC2TagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagsettypedef)
+- `onPremisesTagSet`:
+  [OnPremisesTagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#onpremisestagsettypedef)
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ecsservicetypedef)\]
 
 ## DeploymentInfoTypeDef
 
@@ -478,40 +458,52 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationName`: `str`
 - `deploymentGroupName`: `str`
 - `deploymentConfigName`: `str`
 - `deploymentId`: `str`
-- `previousRevision`: `"RevisionLocationTypeDef"`
-- `revision`: `"RevisionLocationTypeDef"`
-- `status`: `DeploymentStatus`
-- `errorInformation`: `"ErrorInformationTypeDef"`
+- `previousRevision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `revision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `status`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentstatus)
+- `errorInformation`:
+  [ErrorInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#errorinformationtypedef)
 - `createTime`: `datetime`
 - `startTime`: `datetime`
 - `completeTime`: `datetime`
-- `deploymentOverview`: `"DeploymentOverviewTypeDef"`
+- `deploymentOverview`:
+  [DeploymentOverviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentoverviewtypedef)
 - `description`: `str`
-- `creator`: `DeploymentCreator`
+- `creator`:
+  [DeploymentCreator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentcreator)
 - `ignoreApplicationStopFailures`: `bool`
-- `autoRollbackConfiguration`: `"AutoRollbackConfigurationTypeDef"`
+- `autoRollbackConfiguration`:
+  [AutoRollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autorollbackconfigurationtypedef)
 - `updateOutdatedInstancesOnly`: `bool`
-- `rollbackInfo`: `"RollbackInfoTypeDef"`
-- `deploymentStyle`: `"DeploymentStyleTypeDef"`
-- `targetInstances`: `"TargetInstancesTypeDef"`
+- `rollbackInfo`:
+  [RollbackInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#rollbackinfotypedef)
+- `deploymentStyle`:
+  [DeploymentStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentstyletypedef)
+- `targetInstances`:
+  [TargetInstancesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetinstancestypedef)
 - `instanceTerminationWaitTimeStarted`: `bool`
-- `blueGreenDeploymentConfiguration`: `"BlueGreenDeploymentConfigurationTypeDef"`
-- `loadBalancerInfo`: `"LoadBalancerInfoTypeDef"`
+- `blueGreenDeploymentConfiguration`:
+  [BlueGreenDeploymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#bluegreendeploymentconfigurationtypedef)
+- `loadBalancerInfo`:
+  [LoadBalancerInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#loadbalancerinfotypedef)
 - `additionalDeploymentStatusInfo`: `str`
-- `fileExistsBehavior`: `FileExistsBehavior`
-- `deploymentStatusMessages`: `List[str]`
-- `computePlatform`: `ComputePlatform`
+- `fileExistsBehavior`:
+  [FileExistsBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#fileexistsbehavior)
+- `deploymentStatusMessages`: `List`\[`str`\]
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#computeplatform)
 - `externalId`: `str`
-- `relatedDeployments`: `"RelatedDeploymentsTypeDef"`
-
+- `relatedDeployments`:
+  [RelatedDeploymentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#relateddeploymentstypedef)
 
 ## DeploymentOverviewTypeDef
 
@@ -519,10 +511,8 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentOverviewTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Pending`: `int`
 - `InProgress`: `int`
 - `Succeeded`: `int`
@@ -530,20 +520,17 @@ Optional fields:
 - `Skipped`: `int`
 - `Ready`: `int`
 
-
 ## DeploymentReadyOptionTypeDef
 
 ```python
 from mypy_boto3_codedeploy.type_defs import DeploymentReadyOptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionOnTimeout`: `DeploymentReadyAction`
-- `waitTimeInMinutes`: `int`
 
+- `actionOnTimeout`:
+  [DeploymentReadyAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentreadyaction)
+- `waitTimeInMinutes`: `int`
 
 ## DeploymentStyleTypeDef
 
@@ -551,13 +538,12 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentStyleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deploymentType`: `DeploymentType`
-- `deploymentOption`: `DeploymentOption`
 
+- `deploymentType`:
+  [DeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymenttype)
+- `deploymentOption`:
+  [DeploymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentoption)
 
 ## DeploymentTargetTypeDef
 
@@ -565,16 +551,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DeploymentTargetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deploymentTargetType`: `DeploymentTargetType`
-- `instanceTarget`: `"InstanceTargetTypeDef"`
-- `lambdaTarget`: `"LambdaTargetTypeDef"`
-- `ecsTarget`: `"ECSTargetTypeDef"`
-- `cloudFormationTarget`: `"CloudFormationTargetTypeDef"`
 
+- `deploymentTargetType`:
+  [DeploymentTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymenttargettype)
+- `instanceTarget`:
+  [InstanceTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#instancetargettypedef)
+- `lambdaTarget`:
+  [LambdaTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lambdatargettypedef)
+- `ecsTarget`:
+  [ECSTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ecstargettypedef)
+- `cloudFormationTarget`:
+  [CloudFormationTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#cloudformationtargettypedef)
 
 ## DiagnosticsTypeDef
 
@@ -582,15 +570,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import DiagnosticsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errorCode`: `LifecycleErrorCode`
+
+- `errorCode`:
+  [LifecycleErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#lifecycleerrorcode)
 - `scriptName`: `str`
 - `message`: `str`
 - `logTail`: `str`
-
 
 ## EC2TagFilterTypeDef
 
@@ -598,14 +584,12 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import EC2TagFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-- `Type`: `EC2TagFilterType`
-
+- `Type`:
+  [EC2TagFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#ec2tagfiltertype)
 
 ## EC2TagSetTypeDef
 
@@ -613,12 +597,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import EC2TagSetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ec2TagSetList`: `List[List["EC2TagFilterTypeDef"]]`
 
+- `ec2TagSetList`:
+  `List`\[`List`\[[EC2TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagfiltertypedef)\]\]
 
 ## ECSServiceTypeDef
 
@@ -626,13 +608,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ECSServiceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `serviceName`: `str`
 - `clusterName`: `str`
-
 
 ## ECSTargetTypeDef
 
@@ -640,18 +619,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ECSTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `targetArn`: `str`
 - `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`: `List["LifecycleEventTypeDef"]`
-- `status`: `TargetStatus`
-- `taskSetsInfo`: `List["ECSTaskSetTypeDef"]`
-
+- `lifecycleEvents`:
+  `List`\[[LifecycleEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lifecycleeventtypedef)\]
+- `status`:
+  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetstatus)
+- `taskSetsInfo`:
+  `List`\[[ECSTaskSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ecstasksettypedef)\]
 
 ## ECSTaskSetTypeDef
 
@@ -659,19 +638,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ECSTaskSetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `identifer`: `str`
 - `desiredCount`: `int`
 - `pendingCount`: `int`
 - `runningCount`: `int`
 - `status`: `str`
 - `trafficWeight`: `float`
-- `targetGroup`: `"TargetGroupInfoTypeDef"`
-- `taskSetLabel`: `TargetLabel`
-
+- `targetGroup`:
+  [TargetGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetgroupinfotypedef)
+- `taskSetLabel`:
+  [TargetLabel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetlabel)
 
 ## ELBInfoTypeDef
 
@@ -679,12 +657,9 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ELBInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## ErrorInformationTypeDef
 
@@ -692,13 +667,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ErrorInformationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `ErrorCode`
-- `message`: `str`
 
+- `code`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#errorcode)
+- `message`: `str`
 
 ## GenericRevisionInfoTypeDef
 
@@ -706,16 +679,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import GenericRevisionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `description`: `str`
-- `deploymentGroups`: `List[str]`
+- `deploymentGroups`: `List`\[`str`\]
 - `firstUsedTime`: `datetime`
 - `lastUsedTime`: `datetime`
 - `registerTime`: `datetime`
-
 
 ## GetApplicationOutputTypeDef
 
@@ -723,13 +693,12 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import GetApplicationOutputTypeDef
 ```
 
-
 Required fields:
-- `application`: `"ApplicationInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `application`:
+  [ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#applicationinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetApplicationRevisionOutputTypeDef
 
@@ -737,15 +706,15 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `applicationName`: `str`
-- `revision`: `"RevisionLocationTypeDef"`
-- `revisionInfo`: `"GenericRevisionInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `revision`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `revisionInfo`:
+  [GenericRevisionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#genericrevisioninfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetDeploymentConfigOutputTypeDef
 
@@ -753,13 +722,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentConfigInfo`: `"DeploymentConfigInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentConfigInfo`:
+  [DeploymentConfigInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentconfiginfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetDeploymentGroupOutputTypeDef
 
@@ -767,13 +735,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentGroupInfo`: `"DeploymentGroupInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentGroupInfo`:
+  [DeploymentGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentgroupinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetDeploymentInstanceOutputTypeDef
 
@@ -781,13 +748,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceOutputTypeDef
 ```
 
-
 Required fields:
-- `instanceSummary`: `"InstanceSummaryTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `instanceSummary`:
+  [InstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#instancesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetDeploymentOutputTypeDef
 
@@ -795,13 +761,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentInfo`: `"DeploymentInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentInfo`:
+  [DeploymentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymentinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetDeploymentTargetOutputTypeDef
 
@@ -809,13 +774,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentTarget`: `"DeploymentTargetTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `deploymentTarget`:
+  [DeploymentTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#deploymenttargettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GetOnPremisesInstanceOutputTypeDef
 
@@ -823,13 +787,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceOutputTypeDef
 ```
 
-
 Required fields:
-- `instanceInfo`: `"InstanceInfoTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `instanceInfo`:
+  [InstanceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#instanceinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## GitHubLocationTypeDef
 
@@ -837,13 +800,10 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import GitHubLocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repository`: `str`
 - `commitId`: `str`
-
 
 ## GreenFleetProvisioningOptionTypeDef
 
@@ -851,12 +811,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import GreenFleetProvisioningOptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `action`: `GreenFleetProvisioningAction`
 
+- `action`:
+  [GreenFleetProvisioningAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#greenfleetprovisioningaction)
 
 ## InstanceInfoTypeDef
 
@@ -864,18 +822,16 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import InstanceInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `instanceName`: `str`
 - `iamSessionArn`: `str`
 - `iamUserArn`: `str`
 - `instanceArn`: `str`
 - `registerTime`: `datetime`
 - `deregisterTime`: `datetime`
-- `tags`: `List["TagTypeDef"]`
-
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
 
 ## InstanceSummaryTypeDef
 
@@ -883,17 +839,17 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import InstanceSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `instanceId`: `str`
-- `status`: `InstanceStatus`
+- `status`:
+  [InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancestatus)
 - `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`: `List["LifecycleEventTypeDef"]`
-- `instanceType`: `InstanceType`
-
+- `lifecycleEvents`:
+  `List`\[[LifecycleEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lifecycleeventtypedef)\]
+- `instanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancetype)
 
 ## InstanceTargetTypeDef
 
@@ -901,18 +857,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import InstanceTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `targetArn`: `str`
-- `status`: `TargetStatus`
+- `status`:
+  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetstatus)
 - `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`: `List["LifecycleEventTypeDef"]`
-- `instanceLabel`: `TargetLabel`
-
+- `lifecycleEvents`:
+  `List`\[[LifecycleEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lifecycleeventtypedef)\]
+- `instanceLabel`:
+  [TargetLabel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetlabel)
 
 ## LambdaFunctionInfoTypeDef
 
@@ -920,16 +876,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import LambdaFunctionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `functionName`: `str`
 - `functionAlias`: `str`
 - `currentVersion`: `str`
 - `targetVersion`: `str`
 - `targetVersionWeight`: `float`
-
 
 ## LambdaTargetTypeDef
 
@@ -937,18 +890,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import LambdaTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `targetArn`: `str`
-- `status`: `TargetStatus`
+- `status`:
+  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetstatus)
 - `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`: `List["LifecycleEventTypeDef"]`
-- `lambdaFunctionInfo`: `"LambdaFunctionInfoTypeDef"`
-
+- `lifecycleEvents`:
+  `List`\[[LifecycleEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lifecycleeventtypedef)\]
+- `lambdaFunctionInfo`:
+  [LambdaFunctionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#lambdafunctioninfotypedef)
 
 ## LastDeploymentInfoTypeDef
 
@@ -956,15 +909,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import LastDeploymentInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deploymentId`: `str`
-- `status`: `DeploymentStatus`
+- `status`:
+  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentstatus)
 - `endTime`: `datetime`
 - `createTime`: `datetime`
-
 
 ## LifecycleEventTypeDef
 
@@ -972,16 +923,15 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import LifecycleEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `lifecycleEventName`: `str`
-- `diagnostics`: `"DiagnosticsTypeDef"`
+- `diagnostics`:
+  [DiagnosticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#diagnosticstypedef)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
-- `status`: `LifecycleEventStatus`
-
+- `status`:
+  [LifecycleEventStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#lifecycleeventstatus)
 
 ## ListApplicationRevisionsOutputTypeDef
 
@@ -989,14 +939,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDef
 ```
 
-
 Required fields:
-- `revisions`: `List["RevisionLocationTypeDef"]`
+
+- `revisions`:
+  `List`\[[RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListApplicationsOutputTypeDef
 
@@ -1004,14 +953,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListApplicationsOutputTypeDef
 ```
 
-
 Required fields:
-- `applications`: `List[str]`
+
+- `applications`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListDeploymentConfigsOutputTypeDef
 
@@ -1019,14 +966,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsOutputTypeDef
 ```
 
-
 Required fields:
-- `deploymentConfigsList`: `List[str]`
+
+- `deploymentConfigsList`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListDeploymentGroupsOutputTypeDef
 
@@ -1034,15 +979,13 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `applicationName`: `str`
-- `deploymentGroups`: `List[str]`
+- `deploymentGroups`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListDeploymentInstancesOutputTypeDef
 
@@ -1050,14 +993,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesOutputTypeDef
 ```
 
-
 Required fields:
-- `instancesList`: `List[str]`
+
+- `instancesList`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListDeploymentTargetsOutputTypeDef
 
@@ -1065,14 +1006,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsOutputTypeDef
 ```
 
-
 Required fields:
-- `targetIds`: `List[str]`
+
+- `targetIds`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListDeploymentsOutputTypeDef
 
@@ -1080,14 +1019,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListDeploymentsOutputTypeDef
 ```
 
-
 Required fields:
-- `deployments`: `List[str]`
+
+- `deployments`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListGitHubAccountTokenNamesOutputTypeDef
 
@@ -1095,14 +1032,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesOutputTypeDef
 ```
 
-
 Required fields:
-- `tokenNameList`: `List[str]`
+
+- `tokenNameList`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListOnPremisesInstancesOutputTypeDef
 
@@ -1110,14 +1045,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesOutputTypeDef
 ```
 
-
 Required fields:
-- `instanceNames`: `List[str]`
+
+- `instanceNames`: `List`\[`str`\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1125,14 +1058,13 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## LoadBalancerInfoTypeDef
 
@@ -1140,14 +1072,14 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import LoadBalancerInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `elbInfoList`: `List["ELBInfoTypeDef"]`
-- `targetGroupInfoList`: `List["TargetGroupInfoTypeDef"]`
-- `targetGroupPairInfoList`: `List["TargetGroupPairInfoTypeDef"]`
 
+- `elbInfoList`:
+  `List`\[[ELBInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#elbinfotypedef)\]
+- `targetGroupInfoList`:
+  `List`\[[TargetGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetgroupinfotypedef)\]
+- `targetGroupPairInfoList`:
+  `List`\[[TargetGroupPairInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetgrouppairinfotypedef)\]
 
 ## MinimumHealthyHostsTypeDef
 
@@ -1155,13 +1087,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import MinimumHealthyHostsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `MinimumHealthyHostsType`
-- `value`: `int`
 
+- `type`:
+  [MinimumHealthyHostsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#minimumhealthyhoststype)
+- `value`: `int`
 
 ## OnPremisesTagSetTypeDef
 
@@ -1169,12 +1099,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import OnPremisesTagSetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `onPremisesTagSetList`: `List[List["TagFilterTypeDef"]]`
 
+- `onPremisesTagSetList`:
+  `List`\[`List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]\]
 
 ## PaginatorConfigTypeDef
 
@@ -1182,14 +1110,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutLifecycleEventHookExecutionStatusOutputTypeDef
 
@@ -1197,13 +1122,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusOutputTypeDef
 ```
 
-
 Required fields:
+
 - `lifecycleEventHookExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## RawStringTypeDef
 
@@ -1211,13 +1134,10 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import RawStringTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `content`: `str`
 - `sha256`: `str`
-
 
 ## RelatedDeploymentsTypeDef
 
@@ -1225,13 +1145,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import RelatedDeploymentsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `autoUpdateOutdatedInstancesRootDeploymentId`: `str`
-- `autoUpdateOutdatedInstancesDeploymentIds`: `List[str]`
 
+- `autoUpdateOutdatedInstancesRootDeploymentId`: `str`
+- `autoUpdateOutdatedInstancesDeploymentIds`: `List`\[`str`\]
 
 ## ResponseMetadata
 
@@ -1239,16 +1156,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RevisionInfoTypeDef
 
@@ -1256,13 +1170,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import RevisionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `revisionLocation`: `"RevisionLocationTypeDef"`
-- `genericRevisionInfo`: `"GenericRevisionInfoTypeDef"`
 
+- `revisionLocation`:
+  [RevisionLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#revisionlocationtypedef)
+- `genericRevisionInfo`:
+  [GenericRevisionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#genericrevisioninfotypedef)
 
 ## RevisionLocationTypeDef
 
@@ -1270,16 +1183,18 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import RevisionLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `revisionType`: `RevisionLocationType`
-- `s3Location`: `"S3LocationTypeDef"`
-- `gitHubLocation`: `"GitHubLocationTypeDef"`
-- `string`: `"RawStringTypeDef"`
-- `appSpecContent`: `"AppSpecContentTypeDef"`
 
+- `revisionType`:
+  [RevisionLocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#revisionlocationtype)
+- `s3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#s3locationtypedef)
+- `gitHubLocation`:
+  [GitHubLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#githublocationtypedef)
+- `string`:
+  [RawStringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#rawstringtypedef)
+- `appSpecContent`:
+  [AppSpecContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#appspeccontenttypedef)
 
 ## RollbackInfoTypeDef
 
@@ -1287,14 +1202,11 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import RollbackInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `rollbackDeploymentId`: `str`
 - `rollbackTriggeringDeploymentId`: `str`
 - `rollbackMessage`: `str`
-
 
 ## S3LocationTypeDef
 
@@ -1302,16 +1214,14 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucket`: `str`
 - `key`: `str`
-- `bundleType`: `BundleType`
+- `bundleType`:
+  [BundleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#bundletype)
 - `version`: `str`
 - `eTag`: `str`
-
 
 ## StopDeploymentOutputTypeDef
 
@@ -1319,14 +1229,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputTypeDef
 ```
 
-
 Required fields:
-- `status`: `StopStatus`
+
+- `status`:
+  [StopStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#stopstatus)
 - `statusMessage`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## TagFilterTypeDef
 
@@ -1334,14 +1243,12 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import TagFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-- `Type`: `TagFilterType`
-
+- `Type`:
+  [TagFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#tagfiltertype)
 
 ## TagTypeDef
 
@@ -1349,13 +1256,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## TargetGroupInfoTypeDef
 
@@ -1363,12 +1267,9 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TargetGroupInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## TargetGroupPairInfoTypeDef
 
@@ -1376,14 +1277,14 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TargetGroupPairInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `targetGroups`: `List["TargetGroupInfoTypeDef"]`
-- `prodTrafficRoute`: `"TrafficRouteTypeDef"`
-- `testTrafficRoute`: `"TrafficRouteTypeDef"`
 
+- `targetGroups`:
+  `List`\[[TargetGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#targetgroupinfotypedef)\]
+- `prodTrafficRoute`:
+  [TrafficRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#trafficroutetypedef)
+- `testTrafficRoute`:
+  [TrafficRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#trafficroutetypedef)
 
 ## TargetInstancesTypeDef
 
@@ -1391,14 +1292,13 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TargetInstancesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tagFilters`: `List["EC2TagFilterTypeDef"]`
-- `autoScalingGroups`: `List[str]`
-- `ec2TagSet`: `"EC2TagSetTypeDef"`
 
+- `tagFilters`:
+  `List`\[[EC2TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagfiltertypedef)\]
+- `autoScalingGroups`: `List`\[`str`\]
+- `ec2TagSet`:
+  [EC2TagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#ec2tagsettypedef)
 
 ## TimeBasedCanaryTypeDef
 
@@ -1406,13 +1306,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TimeBasedCanaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `canaryPercentage`: `int`
 - `canaryInterval`: `int`
-
 
 ## TimeBasedLinearTypeDef
 
@@ -1420,13 +1317,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TimeBasedLinearTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `linearPercentage`: `int`
 - `linearInterval`: `int`
-
 
 ## TimeRangeTypeDef
 
@@ -1434,13 +1328,10 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TimeRangeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `start`: `datetime`
 - `end`: `datetime`
-
 
 ## TrafficRouteTypeDef
 
@@ -1448,12 +1339,9 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TrafficRouteTypeDef
 ```
 
-
-
-
 Optional fields:
-- `listenerArns`: `List[str]`
 
+- `listenerArns`: `List`\[`str`\]
 
 ## TrafficRoutingConfigTypeDef
 
@@ -1461,14 +1349,14 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TrafficRoutingConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `TrafficRoutingType`
-- `timeBasedCanary`: `"TimeBasedCanaryTypeDef"`
-- `timeBasedLinear`: `"TimeBasedLinearTypeDef"`
 
+- `type`:
+  [TrafficRoutingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#trafficroutingtype)
+- `timeBasedCanary`:
+  [TimeBasedCanaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#timebasedcanarytypedef)
+- `timeBasedLinear`:
+  [TimeBasedLinearTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#timebasedlineartypedef)
 
 ## TriggerConfigTypeDef
 
@@ -1476,14 +1364,12 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import TriggerConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `triggerName`: `str`
 - `triggerTargetArn`: `str`
-- `triggerEvents`: `List[TriggerEventType]`
-
+- `triggerEvents`:
+  `List`\[[TriggerEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#triggereventtype)\]
 
 ## UpdateDeploymentGroupOutputTypeDef
 
@@ -1491,13 +1377,12 @@ Optional fields:
 from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `hooksNotCleanedUp`: `List["AutoScalingGroupTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `hooksNotCleanedUp`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#autoscalinggrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#responsemetadata)
 
 ## WaiterConfigTypeDef
 
@@ -1505,10 +1390,7 @@ Required fields:
 from mypy_boto3_codedeploy.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

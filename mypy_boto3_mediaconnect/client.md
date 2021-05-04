@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaConnect](./README.md) > MediaConnectClient
 
-Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
-type annotations stubs module [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+Auto-generated documentation for
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+type annotations stubs module
+[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [MediaConnectClient for boto3 MediaConnect module](#mediaconnectclient-for-boto3-mediaconnect-module)
   - [MediaConnectClient](#mediaconnectclient)
@@ -54,12 +56,13 @@ def get_mediaconnect_client() -> MediaConnectClient:
     return boto3.client("mediaconnect")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
+Boto3 documentation:
+[MediaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mediaconnect.client import Exceptions
@@ -67,7 +70,6 @@ from mypy_boto3_mediaconnect.client import Exceptions
 def handle_error(exc: Exceptions.AddFlowOutputs420Exception) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -82,491 +84,515 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### add_flow_outputs
 
 Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs]
+Boto3 documentation:
+[MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
 
-```python
-def add_flow_outputs(
-    self,
-    FlowArn: str,
-    Outputs: List[AddOutputRequestTypeDef]
-) -> AddFlowOutputsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `Outputs`:
+  `List`\[[AddOutputRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addoutputrequesttypedef)\]
+  *(required)*
+
+Returns
+[AddFlowOutputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowoutputsresponsetypedef).
 
 ### add_flow_sources
 
 Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources]
+Boto3 documentation:
+[MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
 
-```python
-def add_flow_sources(
-    self,
-    FlowArn: str,
-    Sources: List[SetSourceRequestTypeDef]
-) -> AddFlowSourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `Sources`:
+  `List`\[[SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)\]
+  *(required)*
+
+Returns
+[AddFlowSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowsourcesresponsetypedef).
 
 ### add_flow_vpc_interfaces
 
-Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces` method.
+Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces]
+Boto3 documentation:
+[MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
 
-```python
-def add_flow_vpc_interfaces(
-    self,
-    FlowArn: str,
-    VpcInterfaces: List[VpcInterfaceRequestTypeDef]
-) -> AddFlowVpcInterfacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `VpcInterfaces`:
+  `List`\[[VpcInterfaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfacerequesttypedef)\]
+  *(required)*
+
+Returns
+[AddFlowVpcInterfacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowvpcinterfacesresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("mediaconnect").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate]
+Boto3 documentation:
+[MediaConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_flow
 
 Type annotations for `boto3.client("mediaconnect").create_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow]
+Boto3 documentation:
+[MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
 
-```python
-def create_flow(
-    self,
-    Name: str,
-    AvailabilityZone: str = None,
-    Entitlements: List[GrantEntitlementRequestTypeDef] = None,
-    Outputs: List[AddOutputRequestTypeDef] = None,
-    Source: SetSourceRequestTypeDef = None,
-    SourceFailoverConfig: "FailoverConfigTypeDef" = None,
-    Sources: List[SetSourceRequestTypeDef] = None,
-    VpcInterfaces: List[VpcInterfaceRequestTypeDef] = None
-) -> CreateFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `AvailabilityZone`: `str`
+- `Entitlements`:
+  `List`\[[GrantEntitlementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantentitlementrequesttypedef)\]
+- `Outputs`:
+  `List`\[[AddOutputRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addoutputrequesttypedef)\]
+- `Source`:
+  [SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)
+- `SourceFailoverConfig`:
+  [FailoverConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#failoverconfigtypedef)
+- `Sources`:
+  `List`\[[SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)\]
+- `VpcInterfaces`:
+  `List`\[[VpcInterfaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfacerequesttypedef)\]
+
+Returns
+[CreateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#createflowresponsetypedef).
 
 ### delete_flow
 
 Type annotations for `boto3.client("mediaconnect").delete_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow]
+Boto3 documentation:
+[MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
-```python
-def delete_flow(
-    self,
-    FlowArn: str
-) -> DeleteFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+
+Returns
+[DeleteFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#deleteflowresponsetypedef).
 
 ### describe_flow
 
 Type annotations for `boto3.client("mediaconnect").describe_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow]
+Boto3 documentation:
+[MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
-```python
-def describe_flow(
-    self,
-    FlowArn: str
-) -> DescribeFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+
+Returns
+[DescribeFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describeflowresponsetypedef).
 
 ### describe_offering
 
 Type annotations for `boto3.client("mediaconnect").describe_offering` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering]
+Boto3 documentation:
+[MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
-```python
-def describe_offering(
-    self,
-    OfferingArn: str
-) -> DescribeOfferingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OfferingArn`: `str` *(required)*
+
+Returns
+[DescribeOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describeofferingresponsetypedef).
 
 ### describe_reservation
 
-Type annotations for `boto3.client("mediaconnect").describe_reservation` method.
+Type annotations for `boto3.client("mediaconnect").describe_reservation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation]
+Boto3 documentation:
+[MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
-```python
-def describe_reservation(
-    self,
-    ReservationArn: str
-) -> DescribeReservationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservationArn`: `str` *(required)*
+
+Returns
+[DescribeReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describereservationresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("mediaconnect").generate_presigned_url` method.
+Type annotations for `boto3.client("mediaconnect").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url]
+Boto3 documentation:
+[MediaConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### grant_flow_entitlements
 
-Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements` method.
+Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements]
+Boto3 documentation:
+[MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
 
-```python
-def grant_flow_entitlements(
-    self,
-    Entitlements: List[GrantEntitlementRequestTypeDef],
-    FlowArn: str
-) -> GrantFlowEntitlementsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Entitlements`:
+  `List`\[[GrantEntitlementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantentitlementrequesttypedef)\]
+  *(required)*
+- `FlowArn`: `str` *(required)*
+
+Returns
+[GrantFlowEntitlementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantflowentitlementsresponsetypedef).
 
 ### list_entitlements
 
 Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements]
+Boto3 documentation:
+[MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
-```python
-def list_entitlements(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListEntitlementsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListEntitlementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listentitlementsresponsetypedef).
 
 ### list_flows
 
 Type annotations for `boto3.client("mediaconnect").list_flows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows]
+Boto3 documentation:
+[MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
-```python
-def list_flows(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFlowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFlowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listflowsresponsetypedef).
 
 ### list_offerings
 
 Type annotations for `boto3.client("mediaconnect").list_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings]
+Boto3 documentation:
+[MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
-```python
-def list_offerings(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListOfferingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listofferingsresponsetypedef).
 
 ### list_reservations
 
 Type annotations for `boto3.client("mediaconnect").list_reservations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations]
+Boto3 documentation:
+[MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
-```python
-def list_reservations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListReservationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("mediaconnect").list_tags_for_resource` method.
+Type annotations for `boto3.client("mediaconnect").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource]
+Boto3 documentation:
+[MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
 Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering]
+Boto3 documentation:
+[MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
 
-```python
-def purchase_offering(
-    self,
-    OfferingArn: str,
-    ReservationName: str,
-    Start: str
-) -> PurchaseOfferingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OfferingArn`: `str` *(required)*
+- `ReservationName`: `str` *(required)*
+- `Start`: `str` *(required)*
+
+Returns
+[PurchaseOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#purchaseofferingresponsetypedef).
 
 ### remove_flow_output
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output]
+Boto3 documentation:
+[MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
 
-```python
-def remove_flow_output(
-    self,
-    FlowArn: str,
-    OutputArn: str
-) -> RemoveFlowOutputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `OutputArn`: `str` *(required)*
+
+Returns
+[RemoveFlowOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowoutputresponsetypedef).
 
 ### remove_flow_source
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source]
+Boto3 documentation:
+[MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
 
-```python
-def remove_flow_source(
-    self,
-    FlowArn: str,
-    SourceArn: str
-) -> RemoveFlowSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `SourceArn`: `str` *(required)*
+
+Returns
+[RemoveFlowSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowsourceresponsetypedef).
 
 ### remove_flow_vpc_interface
 
-Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface` method.
+Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface]
+Boto3 documentation:
+[MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
-```python
-def remove_flow_vpc_interface(
-    self,
-    FlowArn: str,
-    VpcInterfaceName: str
-) -> RemoveFlowVpcInterfaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `VpcInterfaceName`: `str` *(required)*
+
+Returns
+[RemoveFlowVpcInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowvpcinterfaceresponsetypedef).
 
 ### revoke_flow_entitlement
 
-Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement` method.
+Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement]
+Boto3 documentation:
+[MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
-```python
-def revoke_flow_entitlement(
-    self,
-    EntitlementArn: str,
-    FlowArn: str
-) -> RevokeFlowEntitlementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EntitlementArn`: `str` *(required)*
+- `FlowArn`: `str` *(required)*
+
+Returns
+[RevokeFlowEntitlementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#revokeflowentitlementresponsetypedef).
 
 ### start_flow
 
 Type annotations for `boto3.client("mediaconnect").start_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow]
+Boto3 documentation:
+[MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
-```python
-def start_flow(
-    self,
-    FlowArn: str
-) -> StartFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+
+Returns
+[StartFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#startflowresponsetypedef).
 
 ### stop_flow
 
 Type annotations for `boto3.client("mediaconnect").stop_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow]
+Boto3 documentation:
+[MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
-```python
-def stop_flow(
-    self,
-    FlowArn: str
-) -> StopFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+
+Returns
+[StopFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#stopflowresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("mediaconnect").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource]
+Boto3 documentation:
+[MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("mediaconnect").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource]
+Boto3 documentation:
+[MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_flow
 
 Type annotations for `boto3.client("mediaconnect").update_flow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow]
+Boto3 documentation:
+[MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
 
-```python
-def update_flow(
-    self,
-    FlowArn: str,
-    SourceFailoverConfig: UpdateFailoverConfigTypeDef = None
-) -> UpdateFlowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `SourceFailoverConfig`:
+  [UpdateFailoverConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updatefailoverconfigtypedef)
+
+Returns
+[UpdateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowresponsetypedef).
 
 ### update_flow_entitlement
 
-Type annotations for `boto3.client("mediaconnect").update_flow_entitlement` method.
+Type annotations for `boto3.client("mediaconnect").update_flow_entitlement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement]
+Boto3 documentation:
+[MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
 
-```python
-def update_flow_entitlement(
-    self,
-    EntitlementArn: str,
-    FlowArn: str,
-    Description: str = None,
-    Encryption: UpdateEncryptionTypeDef = None,
-    EntitlementStatus: EntitlementStatus = None,
-    Subscribers: List[str] = None
-) -> UpdateFlowEntitlementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EntitlementArn`: `str` *(required)*
+- `FlowArn`: `str` *(required)*
+- `Description`: `str`
+- `Encryption`:
+  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
+- `EntitlementStatus`:
+  [EntitlementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#entitlementstatus)
+- `Subscribers`: `List`\[`str`\]
+
+Returns
+[UpdateFlowEntitlementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowentitlementresponsetypedef).
 
 ### update_flow_output
 
 Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output]
+Boto3 documentation:
+[MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
 
-```python
-def update_flow_output(
-    self,
-    FlowArn: str,
-    OutputArn: str,
-    CidrAllowList: List[str] = None,
-    Description: str = None,
-    Destination: str = None,
-    Encryption: UpdateEncryptionTypeDef = None,
-    MaxLatency: int = None,
-    MinLatency: int = None,
-    Port: int = None,
-    Protocol: ProtocolType = None,
-    RemoteId: str = None,
-    SmoothingLatency: int = None,
-    StreamId: str = None,
-    VpcInterfaceAttachment: "VpcInterfaceAttachmentTypeDef" = None
-) -> UpdateFlowOutputResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowArn`: `str` *(required)*
+- `OutputArn`: `str` *(required)*
+- `CidrAllowList`: `List`\[`str`\]
+- `Description`: `str`
+- `Destination`: `str`
+- `Encryption`:
+  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
+- `MaxLatency`: `int`
+- `MinLatency`: `int`
+- `Port`: `int`
+- `Protocol`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#protocoltype)
+- `RemoteId`: `str`
+- `SmoothingLatency`: `int`
+- `StreamId`: `str`
+- `VpcInterfaceAttachment`:
+  [VpcInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfaceattachmenttypedef)
+
+Returns
+[UpdateFlowOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowoutputresponsetypedef).
 
 ### update_flow_source
 
 Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source]
+Boto3 documentation:
+[MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
 
-```python
-def update_flow_source(
-    self,
-    FlowArn: str,
-    SourceArn: str,
-    Decryption: UpdateEncryptionTypeDef = None,
-    Description: str = None,
-    EntitlementArn: str = None,
-    IngestPort: int = None,
-    MaxBitrate: int = None,
-    MaxLatency: int = None,
-    MinLatency: int = None,
-    Protocol: ProtocolType = None,
-    StreamId: str = None,
-    VpcInterfaceName: str = None,
-    WhitelistCidr: str = None
-) -> UpdateFlowSourceResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `FlowArn`: `str` *(required)*
+- `SourceArn`: `str` *(required)*
+- `Decryption`:
+  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
+- `Description`: `str`
+- `EntitlementArn`: `str`
+- `IngestPort`: `int`
+- `MaxBitrate`: `int`
+- `MaxLatency`: `int`
+- `MinLatency`: `int`
+- `Protocol`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#protocoltype)
+- `StreamId`: `str`
+- `VpcInterfaceName`: `str`
+- `WhitelistCidr`: `str`
 
+Returns
+[UpdateFlowSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowsourceresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediaconnect").get_paginator` method with overloads.
+Type annotations for `boto3.client("mediaconnect").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_entitlements")` -> [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
-- `client.get_paginator("list_flows")` -> [ListFlowsPaginator](./paginators.md#listflowspaginator)
-- `client.get_paginator("list_offerings")` -> [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
-- `client.get_paginator("list_reservations")` -> [ListReservationsPaginator](./paginators.md#listreservationspaginator)
-
-
-
+- `client.get_paginator("list_entitlements")` ->
+  [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
+- `client.get_paginator("list_flows")` ->
+  [ListFlowsPaginator](./paginators.md#listflowspaginator)
+- `client.get_paginator("list_offerings")` ->
+  [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+- `client.get_paginator("list_reservations")` ->
+  [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("mediaconnect").get_waiter` method with overloads.
+Type annotations for `boto3.client("mediaconnect").get_waiter` method with
+overloads.
 
-- `client.get_waiter("flow_active")` -> [FlowActiveWaiter](./waiters.md#flowactivewaiter)
-- `client.get_waiter("flow_deleted")` -> [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
-- `client.get_waiter("flow_standby")` -> [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)
+- `client.get_waiter("flow_active")` ->
+  [FlowActiveWaiter](./waiters.md#flowactivewaiter)
+- `client.get_waiter("flow_deleted")` ->
+  [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
+- `client.get_waiter("flow_standby")` ->
+  [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)

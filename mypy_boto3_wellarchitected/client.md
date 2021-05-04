@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WellArchitected](./README.md) > WellArchitectedClient
 
-Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+Auto-generated documentation for
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+type annotations stubs module
+[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [WellArchitectedClient for boto3 WellArchitected module](#wellarchitectedclient-for-boto3-wellarchitected-module)
   - [WellArchitectedClient](#wellarchitectedclient)
@@ -56,12 +58,13 @@ def get_wellarchitected_client() -> WellArchitectedClient:
     return boto3.client("wellarchitected")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
+Boto3 documentation:
+[WellArchitected.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_wellarchitected.client import Exceptions
@@ -69,7 +72,6 @@ from mypy_boto3_wellarchitected.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -82,562 +84,564 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_lenses
 
 Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses]
+Boto3 documentation:
+[WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
 
-```python
-def associate_lenses(
-    self,
-    WorkloadId: str,
-    LensAliases: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAliases`: `List`\[`str`\] *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("wellarchitected").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate]
+Boto3 documentation:
+[WellArchitected.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_milestone
 
 Type annotations for `boto3.client("wellarchitected").create_milestone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone]
+Boto3 documentation:
+[WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
 
-```python
-def create_milestone(
-    self,
-    WorkloadId: str,
-    MilestoneName: str,
-    ClientRequestToken: str
-) -> CreateMilestoneOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `MilestoneName`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[CreateMilestoneOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createmilestoneoutputtypedef).
 
 ### create_workload
 
 Type annotations for `boto3.client("wellarchitected").create_workload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload]
+Boto3 documentation:
+[WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
 
-```python
-def create_workload(
-    self,
-    WorkloadName: str,
-    Description: str,
-    Environment: WorkloadEnvironment,
-    ReviewOwner: str,
-    Lenses: List[str],
-    ClientRequestToken: str,
-    AccountIds: List[str] = None,
-    AwsRegions: List[str] = None,
-    NonAwsRegions: List[str] = None,
-    PillarPriorities: List[str] = None,
-    ArchitecturalDesign: str = None,
-    IndustryType: str = None,
-    Industry: str = None,
-    Notes: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateWorkloadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadName`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Environment`:
+  [WorkloadEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadenvironment)
+  *(required)*
+- `ReviewOwner`: `str` *(required)*
+- `Lenses`: `List`\[`str`\] *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `AccountIds`: `List`\[`str`\]
+- `AwsRegions`: `List`\[`str`\]
+- `NonAwsRegions`: `List`\[`str`\]
+- `PillarPriorities`: `List`\[`str`\]
+- `ArchitecturalDesign`: `str`
+- `IndustryType`: `str`
+- `Industry`: `str`
+- `Notes`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createworkloadoutputtypedef).
 
 ### create_workload_share
 
-Type annotations for `boto3.client("wellarchitected").create_workload_share` method.
+Type annotations for `boto3.client("wellarchitected").create_workload_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share]
+Boto3 documentation:
+[WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
 
-```python
-def create_workload_share(
-    self,
-    WorkloadId: str,
-    SharedWith: str,
-    PermissionType: PermissionType,
-    ClientRequestToken: str
-) -> CreateWorkloadShareOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `SharedWith`: `str` *(required)*
+- `PermissionType`:
+  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
+  *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[CreateWorkloadShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createworkloadshareoutputtypedef).
 
 ### delete_workload
 
 Type annotations for `boto3.client("wellarchitected").delete_workload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload]
+Boto3 documentation:
+[WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
 
-```python
-def delete_workload(
-    self,
-    WorkloadId: str,
-    ClientRequestToken: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
 
 ### delete_workload_share
 
-Type annotations for `boto3.client("wellarchitected").delete_workload_share` method.
+Type annotations for `boto3.client("wellarchitected").delete_workload_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share]
+Boto3 documentation:
+[WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
 
-```python
-def delete_workload_share(
-    self,
-    ShareId: str,
-    WorkloadId: str,
-    ClientRequestToken: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ShareId`: `str` *(required)*
+- `WorkloadId`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
 
 ### disassociate_lenses
 
-Type annotations for `boto3.client("wellarchitected").disassociate_lenses` method.
+Type annotations for `boto3.client("wellarchitected").disassociate_lenses`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses]
+Boto3 documentation:
+[WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
 
-```python
-def disassociate_lenses(
-    self,
-    WorkloadId: str,
-    LensAliases: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAliases`: `List`\[`str`\] *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("wellarchitected").generate_presigned_url` method.
+Type annotations for `boto3.client("wellarchitected").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url]
+Boto3 documentation:
+[WellArchitected.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_answer
 
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer]
+Boto3 documentation:
+[WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
 
-```python
-def get_answer(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    QuestionId: str,
-    MilestoneNumber: int = None
-) -> GetAnswerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `QuestionId`: `str` *(required)*
+- `MilestoneNumber`: `int`
+
+Returns
+[GetAnswerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getansweroutputtypedef).
 
 ### get_lens_review
 
 Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review]
+Boto3 documentation:
+[WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
 
-```python
-def get_lens_review(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    MilestoneNumber: int = None
-) -> GetLensReviewOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `MilestoneNumber`: `int`
+
+Returns
+[GetLensReviewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensreviewoutputtypedef).
 
 ### get_lens_review_report
 
-Type annotations for `boto3.client("wellarchitected").get_lens_review_report` method.
+Type annotations for `boto3.client("wellarchitected").get_lens_review_report`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report]
+Boto3 documentation:
+[WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
 
-```python
-def get_lens_review_report(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    MilestoneNumber: int = None
-) -> GetLensReviewReportOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `MilestoneNumber`: `int`
+
+Returns
+[GetLensReviewReportOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensreviewreportoutputtypedef).
 
 ### get_lens_version_difference
 
-Type annotations for `boto3.client("wellarchitected").get_lens_version_difference` method.
+Type annotations for
+`boto3.client("wellarchitected").get_lens_version_difference` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference]
+Boto3 documentation:
+[WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
 
-```python
-def get_lens_version_difference(
-    self,
-    LensAlias: str,
-    BaseLensVersion: str
-) -> GetLensVersionDifferenceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `LensAlias`: `str` *(required)*
+- `BaseLensVersion`: `str` *(required)*
+
+Returns
+[GetLensVersionDifferenceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensversiondifferenceoutputtypedef).
 
 ### get_milestone
 
 Type annotations for `boto3.client("wellarchitected").get_milestone` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone]
+Boto3 documentation:
+[WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
 
-```python
-def get_milestone(
-    self,
-    WorkloadId: str,
-    MilestoneNumber: int
-) -> GetMilestoneOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `MilestoneNumber`: `int` *(required)*
+
+Returns
+[GetMilestoneOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getmilestoneoutputtypedef).
 
 ### get_workload
 
 Type annotations for `boto3.client("wellarchitected").get_workload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload]
+Boto3 documentation:
+[WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
 
-```python
-def get_workload(
-    self,
-    WorkloadId: str
-) -> GetWorkloadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+
+Returns
+[GetWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getworkloadoutputtypedef).
 
 ### list_answers
 
 Type annotations for `boto3.client("wellarchitected").list_answers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers]
+Boto3 documentation:
+[WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
 
-```python
-def list_answers(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    PillarId: str = None,
-    MilestoneNumber: int = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAnswersOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `PillarId`: `str`
+- `MilestoneNumber`: `int`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAnswersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listanswersoutputtypedef).
 
 ### list_lens_review_improvements
 
-Type annotations for `boto3.client("wellarchitected").list_lens_review_improvements` method.
+Type annotations for
+`boto3.client("wellarchitected").list_lens_review_improvements` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements]
+Boto3 documentation:
+[WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
 
-```python
-def list_lens_review_improvements(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    PillarId: str = None,
-    MilestoneNumber: int = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLensReviewImprovementsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `PillarId`: `str`
+- `MilestoneNumber`: `int`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLensReviewImprovementsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensreviewimprovementsoutputtypedef).
 
 ### list_lens_reviews
 
-Type annotations for `boto3.client("wellarchitected").list_lens_reviews` method.
+Type annotations for `boto3.client("wellarchitected").list_lens_reviews`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews]
+Boto3 documentation:
+[WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
 
-```python
-def list_lens_reviews(
-    self,
-    WorkloadId: str,
-    MilestoneNumber: int = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLensReviewsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `MilestoneNumber`: `int`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLensReviewsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensreviewsoutputtypedef).
 
 ### list_lenses
 
 Type annotations for `boto3.client("wellarchitected").list_lenses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses]
+Boto3 documentation:
+[WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
 
-```python
-def list_lenses(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLensesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLensesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensesoutputtypedef).
 
 ### list_milestones
 
 Type annotations for `boto3.client("wellarchitected").list_milestones` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones]
+Boto3 documentation:
+[WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
 
-```python
-def list_milestones(
-    self,
-    WorkloadId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMilestonesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMilestonesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listmilestonesoutputtypedef).
 
 ### list_notifications
 
-Type annotations for `boto3.client("wellarchitected").list_notifications` method.
+Type annotations for `boto3.client("wellarchitected").list_notifications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications]
+Boto3 documentation:
+[WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
 
-```python
-def list_notifications(
-    self,
-    WorkloadId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListNotificationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListNotificationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listnotificationsoutputtypedef).
 
 ### list_share_invitations
 
-Type annotations for `boto3.client("wellarchitected").list_share_invitations` method.
+Type annotations for `boto3.client("wellarchitected").list_share_invitations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations]
+Boto3 documentation:
+[WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
 
-```python
-def list_share_invitations(
-    self,
-    WorkloadNamePrefix: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListShareInvitationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadNamePrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListShareInvitationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listshareinvitationsoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("wellarchitected").list_tags_for_resource` method.
+Type annotations for `boto3.client("wellarchitected").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource]
+Boto3 documentation:
+[WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    WorkloadArn: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### list_workload_shares
 
-Type annotations for `boto3.client("wellarchitected").list_workload_shares` method.
+Type annotations for `boto3.client("wellarchitected").list_workload_shares`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares]
+Boto3 documentation:
+[WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
 
-```python
-def list_workload_shares(
-    self,
-    WorkloadId: str,
-    SharedWithPrefix: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkloadSharesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `SharedWithPrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkloadSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listworkloadsharesoutputtypedef).
 
 ### list_workloads
 
 Type annotations for `boto3.client("wellarchitected").list_workloads` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads]
+Boto3 documentation:
+[WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
 
-```python
-def list_workloads(
-    self,
-    WorkloadNamePrefix: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkloadsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadNamePrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkloadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listworkloadsoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("wellarchitected").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource]
+Boto3 documentation:
+[WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    WorkloadArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkloadArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("wellarchitected").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource]
+Boto3 documentation:
+[WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    WorkloadArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkloadArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_answer
 
 Type annotations for `boto3.client("wellarchitected").update_answer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer]
+Boto3 documentation:
+[WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
 
-```python
-def update_answer(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    QuestionId: str,
-    SelectedChoices: List[str] = None,
-    Notes: str = None,
-    IsApplicable: bool = None
-) -> UpdateAnswerOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `QuestionId`: `str` *(required)*
+- `SelectedChoices`: `List`\[`str`\]
+- `Notes`: `str`
+- `IsApplicable`: `bool`
+
+Returns
+[UpdateAnswerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateansweroutputtypedef).
 
 ### update_lens_review
 
-Type annotations for `boto3.client("wellarchitected").update_lens_review` method.
+Type annotations for `boto3.client("wellarchitected").update_lens_review`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review]
+Boto3 documentation:
+[WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
 
-```python
-def update_lens_review(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    LensNotes: str = None,
-    PillarNotes: Dict[str, str] = None
-) -> UpdateLensReviewOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `LensNotes`: `str`
+- `PillarNotes`: `Dict`\[`str`, `str`\]
+
+Returns
+[UpdateLensReviewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updatelensreviewoutputtypedef).
 
 ### update_share_invitation
 
-Type annotations for `boto3.client("wellarchitected").update_share_invitation` method.
+Type annotations for `boto3.client("wellarchitected").update_share_invitation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation]
+Boto3 documentation:
+[WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
 
-```python
-def update_share_invitation(
-    self,
-    ShareInvitationId: str,
-    ShareInvitationAction: ShareInvitationAction
-) -> UpdateShareInvitationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ShareInvitationId`: `str` *(required)*
+- `ShareInvitationAction`:
+  [ShareInvitationAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#shareinvitationaction)
+  *(required)*
+
+Returns
+[UpdateShareInvitationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateshareinvitationoutputtypedef).
 
 ### update_workload
 
 Type annotations for `boto3.client("wellarchitected").update_workload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload]
+Boto3 documentation:
+[WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
 
-```python
-def update_workload(
-    self,
-    WorkloadId: str,
-    WorkloadName: str = None,
-    Description: str = None,
-    Environment: WorkloadEnvironment = None,
-    AccountIds: List[str] = None,
-    AwsRegions: List[str] = None,
-    NonAwsRegions: List[str] = None,
-    PillarPriorities: List[str] = None,
-    ArchitecturalDesign: str = None,
-    ReviewOwner: str = None,
-    IsReviewOwnerUpdateAcknowledged: bool = None,
-    IndustryType: str = None,
-    Industry: str = None,
-    Notes: str = None,
-    ImprovementStatus: WorkloadImprovementStatus = None
-) -> UpdateWorkloadOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkloadId`: `str` *(required)*
+- `WorkloadName`: `str`
+- `Description`: `str`
+- `Environment`:
+  [WorkloadEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadenvironment)
+- `AccountIds`: `List`\[`str`\]
+- `AwsRegions`: `List`\[`str`\]
+- `NonAwsRegions`: `List`\[`str`\]
+- `PillarPriorities`: `List`\[`str`\]
+- `ArchitecturalDesign`: `str`
+- `ReviewOwner`: `str`
+- `IsReviewOwnerUpdateAcknowledged`: `bool`
+- `IndustryType`: `str`
+- `Industry`: `str`
+- `Notes`: `str`
+- `ImprovementStatus`:
+  [WorkloadImprovementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadimprovementstatus)
+
+Returns
+[UpdateWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateworkloadoutputtypedef).
 
 ### update_workload_share
 
-Type annotations for `boto3.client("wellarchitected").update_workload_share` method.
+Type annotations for `boto3.client("wellarchitected").update_workload_share`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share]
+Boto3 documentation:
+[WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
 
-```python
-def update_workload_share(
-    self,
-    ShareId: str,
-    WorkloadId: str,
-    PermissionType: PermissionType
-) -> UpdateWorkloadShareOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ShareId`: `str` *(required)*
+- `WorkloadId`: `str` *(required)*
+- `PermissionType`:
+  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
+  *(required)*
+
+Returns
+[UpdateWorkloadShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateworkloadshareoutputtypedef).
 
 ### upgrade_lens_review
 
-Type annotations for `boto3.client("wellarchitected").upgrade_lens_review` method.
+Type annotations for `boto3.client("wellarchitected").upgrade_lens_review`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review]
+Boto3 documentation:
+[WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
 
-```python
-def upgrade_lens_review(
-    self,
-    WorkloadId: str,
-    LensAlias: str,
-    MilestoneName: str,
-    ClientRequestToken: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `WorkloadId`: `str` *(required)*
+- `LensAlias`: `str` *(required)*
+- `MilestoneName`: `str` *(required)*
+- `ClientRequestToken`: `str`

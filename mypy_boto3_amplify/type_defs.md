@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Amplify](./README.md) > Structures
 
-Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+Auto-generated documentation for
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+type annotations stubs module
+[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Typed dictionaries for boto3 Amplify module](#typed-dictionaries-for-boto3-amplify-module)
   - [AppTypeDef](#apptypedef)
@@ -63,8 +65,8 @@ type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy
 from mypy_boto3_amplify.type_defs import AppTypeDef
 ```
 
-
 Required fields:
+
 - `appId`: `str`
 - `appArn`: `str`
 - `name`: `str`
@@ -73,26 +75,27 @@ Required fields:
 - `platform`: `Literal['WEB']`
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
-- `environmentVariables`: `Dict[str, str]`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
 - `defaultDomain`: `str`
 - `enableBranchAutoBuild`: `bool`
 - `enableBasicAuth`: `bool`
 
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
+
+- `tags`: `Dict`\[`str`, `str`\]
 - `iamServiceRoleArn`: `str`
 - `enableBranchAutoDeletion`: `bool`
 - `basicAuthCredentials`: `str`
-- `customRules`: `List["CustomRuleTypeDef"]`
-- `productionBranch`: `"ProductionBranchTypeDef"`
+- `customRules`:
+  `List`\[[CustomRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#customruletypedef)\]
+- `productionBranch`:
+  [ProductionBranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#productionbranchtypedef)
 - `buildSpec`: `str`
 - `customHeaders`: `str`
 - `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List[str]`
-- `autoBranchCreationConfig`: `"AutoBranchCreationConfigTypeDef"`
-
+- `autoBranchCreationPatterns`: `List`\[`str`\]
+- `autoBranchCreationConfig`:
+  [AutoBranchCreationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#autobranchcreationconfigtypedef)
 
 ## ArtifactTypeDef
 
@@ -100,13 +103,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ArtifactTypeDef
 ```
 
-
 Required fields:
+
 - `artifactFileName`: `str`
 - `artifactId`: `str`
-
-
-
 
 ## AutoBranchCreationConfigTypeDef
 
@@ -114,21 +114,19 @@ Required fields:
 from mypy_boto3_amplify.type_defs import AutoBranchCreationConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `stage`: `Stage`
+
+- `stage`:
+  [Stage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#stage)
 - `framework`: `str`
 - `enableAutoBuild`: `bool`
-- `environmentVariables`: `Dict[str, str]`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
 - `basicAuthCredentials`: `str`
 - `enableBasicAuth`: `bool`
 - `enablePerformanceMode`: `bool`
 - `buildSpec`: `str`
 - `enablePullRequestPreview`: `bool`
 - `pullRequestEnvironmentName`: `str`
-
 
 ## BackendEnvironmentTypeDef
 
@@ -136,19 +134,17 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import BackendEnvironmentTypeDef
 ```
 
-
 Required fields:
+
 - `backendEnvironmentArn`: `str`
 - `environmentName`: `str`
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
 
-
-
 Optional fields:
+
 - `stackName`: `str`
 - `deploymentArtifacts`: `str`
-
 
 ## BranchTypeDef
 
@@ -156,19 +152,20 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import BranchTypeDef
 ```
 
-
 Required fields:
+
 - `branchArn`: `str`
 - `branchName`: `str`
 - `description`: `str`
-- `stage`: `Stage`
+- `stage`:
+  [Stage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#stage)
 - `displayName`: `str`
 - `enableNotification`: `bool`
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
-- `environmentVariables`: `Dict[str, str]`
+- `environmentVariables`: `Dict`\[`str`, `str`\]
 - `enableAutoBuild`: `bool`
-- `customDomains`: `List[str]`
+- `customDomains`: `List`\[`str`\]
 - `framework`: `str`
 - `activeJobId`: `str`
 - `totalNumberOfJobs`: `str`
@@ -176,20 +173,18 @@ Required fields:
 - `ttl`: `str`
 - `enablePullRequestPreview`: `bool`
 
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
+
+- `tags`: `Dict`\[`str`, `str`\]
 - `enablePerformanceMode`: `bool`
 - `thumbnailUrl`: `str`
 - `basicAuthCredentials`: `str`
 - `buildSpec`: `str`
-- `associatedResources`: `List[str]`
+- `associatedResources`: `List`\[`str`\]
 - `pullRequestEnvironmentName`: `str`
 - `destinationBranch`: `str`
 - `sourceBranch`: `str`
 - `backendEnvironmentArn`: `str`
-
 
 ## CreateAppResultTypeDef
 
@@ -197,12 +192,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import CreateAppResultTypeDef
 ```
 
-
 Required fields:
-- `app`: `"AppTypeDef"`
 
-
-
+- `app`:
+  [AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#apptypedef)
 
 ## CreateBackendEnvironmentResultTypeDef
 
@@ -210,12 +203,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import CreateBackendEnvironmentResultTypeDef
 ```
 
-
 Required fields:
-- `backendEnvironment`: `"BackendEnvironmentTypeDef"`
 
-
-
+- `backendEnvironment`:
+  [BackendEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#backendenvironmenttypedef)
 
 ## CreateBranchResultTypeDef
 
@@ -223,12 +214,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import CreateBranchResultTypeDef
 ```
 
-
 Required fields:
-- `branch`: `"BranchTypeDef"`
 
-
-
+- `branch`:
+  [BranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#branchtypedef)
 
 ## CreateDeploymentResultTypeDef
 
@@ -236,16 +225,14 @@ Required fields:
 from mypy_boto3_amplify.type_defs import CreateDeploymentResultTypeDef
 ```
 
-
 Required fields:
-- `fileUploadUrls`: `Dict[str, str]`
+
+- `fileUploadUrls`: `Dict`\[`str`, `str`\]
 - `zipUploadUrl`: `str`
 
-
-
 Optional fields:
-- `jobId`: `str`
 
+- `jobId`: `str`
 
 ## CreateDomainAssociationResultTypeDef
 
@@ -253,12 +240,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import CreateDomainAssociationResultTypeDef
 ```
 
-
 Required fields:
-- `domainAssociation`: `"DomainAssociationTypeDef"`
 
-
-
+- `domainAssociation`:
+  [DomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#domainassociationtypedef)
 
 ## CreateWebhookResultTypeDef
 
@@ -266,12 +251,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import CreateWebhookResultTypeDef
 ```
 
-
 Required fields:
-- `webhook`: `"WebhookTypeDef"`
 
-
-
+- `webhook`:
+  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#webhooktypedef)
 
 ## CustomRuleTypeDef
 
@@ -279,17 +262,15 @@ Required fields:
 from mypy_boto3_amplify.type_defs import CustomRuleTypeDef
 ```
 
-
 Required fields:
+
 - `source`: `str`
 - `target`: `str`
 
-
-
 Optional fields:
+
 - `status`: `str`
 - `condition`: `str`
-
 
 ## DeleteAppResultTypeDef
 
@@ -297,12 +278,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import DeleteAppResultTypeDef
 ```
 
-
 Required fields:
-- `app`: `"AppTypeDef"`
 
-
-
+- `app`:
+  [AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#apptypedef)
 
 ## DeleteBackendEnvironmentResultTypeDef
 
@@ -310,12 +289,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DeleteBackendEnvironmentResultTypeDef
 ```
 
-
 Required fields:
-- `backendEnvironment`: `"BackendEnvironmentTypeDef"`
 
-
-
+- `backendEnvironment`:
+  [BackendEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#backendenvironmenttypedef)
 
 ## DeleteBranchResultTypeDef
 
@@ -323,12 +300,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DeleteBranchResultTypeDef
 ```
 
-
 Required fields:
-- `branch`: `"BranchTypeDef"`
 
-
-
+- `branch`:
+  [BranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#branchtypedef)
 
 ## DeleteDomainAssociationResultTypeDef
 
@@ -336,12 +311,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DeleteDomainAssociationResultTypeDef
 ```
 
-
 Required fields:
-- `domainAssociation`: `"DomainAssociationTypeDef"`
 
-
-
+- `domainAssociation`:
+  [DomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#domainassociationtypedef)
 
 ## DeleteJobResultTypeDef
 
@@ -349,12 +322,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DeleteJobResultTypeDef
 ```
 
-
 Required fields:
-- `jobSummary`: `"JobSummaryTypeDef"`
 
-
-
+- `jobSummary`:
+  [JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)
 
 ## DeleteWebhookResultTypeDef
 
@@ -362,12 +333,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DeleteWebhookResultTypeDef
 ```
 
-
 Required fields:
-- `webhook`: `"WebhookTypeDef"`
 
-
-
+- `webhook`:
+  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#webhooktypedef)
 
 ## DomainAssociationTypeDef
 
@@ -375,22 +344,22 @@ Required fields:
 from mypy_boto3_amplify.type_defs import DomainAssociationTypeDef
 ```
 
-
 Required fields:
+
 - `domainAssociationArn`: `str`
 - `domainName`: `str`
 - `enableAutoSubDomain`: `bool`
-- `domainStatus`: `DomainStatus`
+- `domainStatus`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#domainstatus)
 - `statusReason`: `str`
-- `subDomains`: `List["SubDomainTypeDef"]`
-
-
+- `subDomains`:
+  `List`\[[SubDomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#subdomaintypedef)\]
 
 Optional fields:
-- `autoSubDomainCreationPatterns`: `List[str]`
+
+- `autoSubDomainCreationPatterns`: `List`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 - `certificateVerificationDNSRecord`: `str`
-
 
 ## GenerateAccessLogsResultTypeDef
 
@@ -398,12 +367,9 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import GenerateAccessLogsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logUrl`: `str`
 
+- `logUrl`: `str`
 
 ## GetAppResultTypeDef
 
@@ -411,12 +377,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import GetAppResultTypeDef
 ```
 
-
 Required fields:
-- `app`: `"AppTypeDef"`
 
-
-
+- `app`:
+  [AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#apptypedef)
 
 ## GetArtifactUrlResultTypeDef
 
@@ -424,13 +388,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetArtifactUrlResultTypeDef
 ```
 
-
 Required fields:
+
 - `artifactId`: `str`
 - `artifactUrl`: `str`
-
-
-
 
 ## GetBackendEnvironmentResultTypeDef
 
@@ -438,12 +399,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetBackendEnvironmentResultTypeDef
 ```
 
-
 Required fields:
-- `backendEnvironment`: `"BackendEnvironmentTypeDef"`
 
-
-
+- `backendEnvironment`:
+  [BackendEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#backendenvironmenttypedef)
 
 ## GetBranchResultTypeDef
 
@@ -451,12 +410,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetBranchResultTypeDef
 ```
 
-
 Required fields:
-- `branch`: `"BranchTypeDef"`
 
-
-
+- `branch`:
+  [BranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#branchtypedef)
 
 ## GetDomainAssociationResultTypeDef
 
@@ -464,12 +421,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetDomainAssociationResultTypeDef
 ```
 
-
 Required fields:
-- `domainAssociation`: `"DomainAssociationTypeDef"`
 
-
-
+- `domainAssociation`:
+  [DomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#domainassociationtypedef)
 
 ## GetJobResultTypeDef
 
@@ -477,12 +432,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetJobResultTypeDef
 ```
 
-
 Required fields:
-- `job`: `"JobTypeDef"`
 
-
-
+- `job`:
+  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobtypedef)
 
 ## GetWebhookResultTypeDef
 
@@ -490,12 +443,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import GetWebhookResultTypeDef
 ```
 
-
 Required fields:
-- `webhook`: `"WebhookTypeDef"`
 
-
-
+- `webhook`:
+  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#webhooktypedef)
 
 ## JobSummaryTypeDef
 
@@ -503,22 +454,22 @@ Required fields:
 from mypy_boto3_amplify.type_defs import JobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `jobArn`: `str`
 - `jobId`: `str`
 - `commitId`: `str`
 - `commitMessage`: `str`
 - `commitTime`: `datetime`
 - `startTime`: `datetime`
-- `status`: `JobStatus`
-- `jobType`: `JobType`
-
-
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#jobstatus)
+- `jobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#jobtype)
 
 Optional fields:
-- `endTime`: `datetime`
 
+- `endTime`: `datetime`
 
 ## JobTypeDef
 
@@ -526,13 +477,12 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import JobTypeDef
 ```
 
-
 Required fields:
-- `summary`: `"JobSummaryTypeDef"`
-- `steps`: `List["StepTypeDef"]`
 
-
-
+- `summary`:
+  [JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)
+- `steps`:
+  `List`\[[StepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#steptypedef)\]
 
 ## ListAppsResultTypeDef
 
@@ -540,15 +490,14 @@ Required fields:
 from mypy_boto3_amplify.type_defs import ListAppsResultTypeDef
 ```
 
-
 Required fields:
-- `apps`: `List["AppTypeDef"]`
 
-
+- `apps`:
+  `List`\[[AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#apptypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListArtifactsResultTypeDef
 
@@ -556,15 +505,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListArtifactsResultTypeDef
 ```
 
-
 Required fields:
-- `artifacts`: `List["ArtifactTypeDef"]`
 
-
+- `artifacts`:
+  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#artifacttypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListBackendEnvironmentsResultTypeDef
 
@@ -572,15 +520,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListBackendEnvironmentsResultTypeDef
 ```
 
-
 Required fields:
-- `backendEnvironments`: `List["BackendEnvironmentTypeDef"]`
 
-
+- `backendEnvironments`:
+  `List`\[[BackendEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#backendenvironmenttypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListBranchesResultTypeDef
 
@@ -588,15 +535,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListBranchesResultTypeDef
 ```
 
-
 Required fields:
-- `branches`: `List["BranchTypeDef"]`
 
-
+- `branches`:
+  `List`\[[BranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#branchtypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListDomainAssociationsResultTypeDef
 
@@ -604,15 +550,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListDomainAssociationsResultTypeDef
 ```
 
-
 Required fields:
-- `domainAssociations`: `List["DomainAssociationTypeDef"]`
 
-
+- `domainAssociations`:
+  `List`\[[DomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#domainassociationtypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListJobsResultTypeDef
 
@@ -620,15 +565,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListJobsResultTypeDef
 ```
 
-
 Required fields:
-- `jobSummaries`: `List["JobSummaryTypeDef"]`
 
-
+- `jobSummaries`:
+  `List`\[[JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -636,12 +580,9 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ListWebhooksResultTypeDef
 
@@ -649,15 +590,14 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ListWebhooksResultTypeDef
 ```
 
-
 Required fields:
-- `webhooks`: `List["WebhookTypeDef"]`
 
-
+- `webhooks`:
+  `List`\[[WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#webhooktypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -665,14 +605,11 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ProductionBranchTypeDef
 
@@ -680,15 +617,12 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import ProductionBranchTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `lastDeployTime`: `datetime`
 - `status`: `str`
 - `thumbnailUrl`: `str`
 - `branchName`: `str`
-
 
 ## StartDeploymentResultTypeDef
 
@@ -696,12 +630,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import StartDeploymentResultTypeDef
 ```
 
-
 Required fields:
-- `jobSummary`: `"JobSummaryTypeDef"`
 
-
-
+- `jobSummary`:
+  [JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)
 
 ## StartJobResultTypeDef
 
@@ -709,12 +641,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import StartJobResultTypeDef
 ```
 
-
 Required fields:
-- `jobSummary`: `"JobSummaryTypeDef"`
 
-
-
+- `jobSummary`:
+  [JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)
 
 ## StepTypeDef
 
@@ -722,24 +652,23 @@ Required fields:
 from mypy_boto3_amplify.type_defs import StepTypeDef
 ```
 
-
 Required fields:
+
 - `stepName`: `str`
 - `startTime`: `datetime`
-- `status`: `JobStatus`
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/literals.html#jobstatus)
 - `endTime`: `datetime`
 
-
-
 Optional fields:
+
 - `logUrl`: `str`
 - `artifactsUrl`: `str`
 - `testArtifactsUrl`: `str`
 - `testConfigUrl`: `str`
-- `screenshots`: `Dict[str, str]`
+- `screenshots`: `Dict`\[`str`, `str`\]
 - `statusReason`: `str`
 - `context`: `str`
-
 
 ## StopJobResultTypeDef
 
@@ -747,12 +676,10 @@ Optional fields:
 from mypy_boto3_amplify.type_defs import StopJobResultTypeDef
 ```
 
-
 Required fields:
-- `jobSummary`: `"JobSummaryTypeDef"`
 
-
-
+- `jobSummary`:
+  [JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#jobsummarytypedef)
 
 ## SubDomainSettingTypeDef
 
@@ -760,13 +687,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import SubDomainSettingTypeDef
 ```
 
-
 Required fields:
+
 - `prefix`: `str`
 - `branchName`: `str`
-
-
-
 
 ## SubDomainTypeDef
 
@@ -774,14 +698,12 @@ Required fields:
 from mypy_boto3_amplify.type_defs import SubDomainTypeDef
 ```
 
-
 Required fields:
-- `subDomainSetting`: `"SubDomainSettingTypeDef"`
+
+- `subDomainSetting`:
+  [SubDomainSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#subdomainsettingtypedef)
 - `verified`: `bool`
 - `dnsRecord`: `str`
-
-
-
 
 ## UpdateAppResultTypeDef
 
@@ -789,12 +711,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import UpdateAppResultTypeDef
 ```
 
-
 Required fields:
-- `app`: `"AppTypeDef"`
 
-
-
+- `app`:
+  [AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#apptypedef)
 
 ## UpdateBranchResultTypeDef
 
@@ -802,12 +722,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import UpdateBranchResultTypeDef
 ```
 
-
 Required fields:
-- `branch`: `"BranchTypeDef"`
 
-
-
+- `branch`:
+  [BranchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#branchtypedef)
 
 ## UpdateDomainAssociationResultTypeDef
 
@@ -815,12 +733,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import UpdateDomainAssociationResultTypeDef
 ```
 
-
 Required fields:
-- `domainAssociation`: `"DomainAssociationTypeDef"`
 
-
-
+- `domainAssociation`:
+  [DomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#domainassociationtypedef)
 
 ## UpdateWebhookResultTypeDef
 
@@ -828,12 +744,10 @@ Required fields:
 from mypy_boto3_amplify.type_defs import UpdateWebhookResultTypeDef
 ```
 
-
 Required fields:
-- `webhook`: `"WebhookTypeDef"`
 
-
-
+- `webhook`:
+  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#webhooktypedef)
 
 ## WebhookTypeDef
 
@@ -841,8 +755,8 @@ Required fields:
 from mypy_boto3_amplify.type_defs import WebhookTypeDef
 ```
 
-
 Required fields:
+
 - `webhookArn`: `str`
 - `webhookId`: `str`
 - `webhookUrl`: `str`
@@ -850,6 +764,3 @@ Required fields:
 - `description`: `str`
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
-
-
-

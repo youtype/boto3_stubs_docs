@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EC2](./README.md) > Paginators
 
-Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+Auto-generated documentation for
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+type annotations stubs module
+[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Paginators for boto3 EC2 module](#paginators-for-boto3-ec2-module)
   - [DescribeAddressesAttributePaginator](#describeaddressesattributepaginator)
@@ -109,7 +111,8 @@ type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-bot
 
 ## DescribeAddressesAttributePaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_addresses_attribute")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_addresses_attribute")`.
 
 Can be used directly:
 
@@ -120,22 +123,24 @@ def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePa
     return boto3.client("ec2").get_paginator("describe_addresses_attribute")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
+Boto3 documentation:
+[EC2.Paginator.DescribeAddressesAttribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
 
-```python
-class DescribeAddressesAttributePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AllocationIds: List[str] = None,
-        Attribute: Literal['domain-name'] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeAddressesAttributeResultTypeDef]:
-        pass
-```
+Arguments for `DescribeAddressesAttributePaginator.paginate` method:
+
+- `AllocationIds`: `List`\[`str`\]
+- `Attribute`: `Literal['domain-name']`
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeAddressesAttributePaginator.paginate` returns
+`Iterator`\[[DescribeAddressesAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeaddressesattributeresulttypedef)\].
+
 ## DescribeByoipCidrsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_byoip_cidrs")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_byoip_cidrs")`.
 
 Can be used directly:
 
@@ -146,20 +151,22 @@ def get_describe_byoip_cidrs_paginator() -> DescribeByoipCidrsPaginator:
     return boto3.client("ec2").get_paginator("describe_byoip_cidrs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
+Boto3 documentation:
+[EC2.Paginator.DescribeByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
 
-```python
-class DescribeByoipCidrsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeByoipCidrsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeByoipCidrsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeByoipCidrsPaginator.paginate` returns
+`Iterator`\[[DescribeByoipCidrsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describebyoipcidrsresulttypedef)\].
+
 ## DescribeCapacityReservationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_capacity_reservations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_capacity_reservations")`.
 
 Can be used directly:
 
@@ -170,22 +177,25 @@ def get_describe_capacity_reservations_paginator() -> DescribeCapacityReservatio
     return boto3.client("ec2").get_paginator("describe_capacity_reservations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
+Boto3 documentation:
+[EC2.Paginator.DescribeCapacityReservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
 
-```python
-class DescribeCapacityReservationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CapacityReservationIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCapacityReservationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
+
+- `CapacityReservationIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCapacityReservationsPaginator.paginate` returns
+`Iterator`\[[DescribeCapacityReservationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecapacityreservationsresulttypedef)\].
+
 ## DescribeCarrierGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_carrier_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_carrier_gateways")`.
 
 Can be used directly:
 
@@ -196,22 +206,25 @@ def get_describe_carrier_gateways_paginator() -> DescribeCarrierGatewaysPaginato
     return boto3.client("ec2").get_paginator("describe_carrier_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeCarrierGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
 
-```python
-class DescribeCarrierGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CarrierGatewayIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCarrierGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
+
+- `CarrierGatewayIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCarrierGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeCarrierGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecarriergatewaysresulttypedef)\].
+
 ## DescribeClassicLinkInstancesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_classic_link_instances")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_classic_link_instances")`.
 
 Can be used directly:
 
@@ -222,22 +235,25 @@ def get_describe_classic_link_instances_paginator() -> DescribeClassicLinkInstan
     return boto3.client("ec2").get_paginator("describe_classic_link_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
+Boto3 documentation:
+[EC2.Paginator.DescribeClassicLinkInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
 
-```python
-class DescribeClassicLinkInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        InstanceIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClassicLinkInstancesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `InstanceIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClassicLinkInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeClassicLinkInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclassiclinkinstancesresulttypedef)\].
+
 ## DescribeClientVpnAuthorizationRulesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")`.
 
 Can be used directly:
 
@@ -248,22 +264,25 @@ def get_describe_client_vpn_authorization_rules_paginator() -> DescribeClientVpn
     return boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
+Boto3 documentation:
+[EC2.Paginator.DescribeClientVpnAuthorizationRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
 
-```python
-class DescribeClientVpnAuthorizationRulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClientVpnEndpointId: str,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClientVpnAuthorizationRulesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
+
+- `ClientVpnEndpointId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
+`Iterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnauthorizationrulesresulttypedef)\].
+
 ## DescribeClientVpnConnectionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_connections")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_client_vpn_connections")`.
 
 Can be used directly:
 
@@ -274,22 +293,25 @@ def get_describe_client_vpn_connections_paginator() -> DescribeClientVpnConnecti
     return boto3.client("ec2").get_paginator("describe_client_vpn_connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
+Boto3 documentation:
+[EC2.Paginator.DescribeClientVpnConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
 
-```python
-class DescribeClientVpnConnectionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClientVpnEndpointId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClientVpnConnectionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
+
+- `ClientVpnEndpointId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClientVpnConnectionsPaginator.paginate` returns
+`Iterator`\[[DescribeClientVpnConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnconnectionsresulttypedef)\].
+
 ## DescribeClientVpnEndpointsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")`.
 
 Can be used directly:
 
@@ -300,22 +322,25 @@ def get_describe_client_vpn_endpoints_paginator() -> DescribeClientVpnEndpointsP
     return boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
+Boto3 documentation:
+[EC2.Paginator.DescribeClientVpnEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
 
-```python
-class DescribeClientVpnEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClientVpnEndpointIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClientVpnEndpointsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
+
+- `ClientVpnEndpointIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClientVpnEndpointsPaginator.paginate` returns
+`Iterator`\[[DescribeClientVpnEndpointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnendpointsresulttypedef)\].
+
 ## DescribeClientVpnRoutesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_routes")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_client_vpn_routes")`.
 
 Can be used directly:
 
@@ -326,22 +351,25 @@ def get_describe_client_vpn_routes_paginator() -> DescribeClientVpnRoutesPaginat
     return boto3.client("ec2").get_paginator("describe_client_vpn_routes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
+Boto3 documentation:
+[EC2.Paginator.DescribeClientVpnRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
 
-```python
-class DescribeClientVpnRoutesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClientVpnEndpointId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClientVpnRoutesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
+
+- `ClientVpnEndpointId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClientVpnRoutesPaginator.paginate` returns
+`Iterator`\[[DescribeClientVpnRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnroutesresulttypedef)\].
+
 ## DescribeClientVpnTargetNetworksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")`.
 
 Can be used directly:
 
@@ -352,23 +380,26 @@ def get_describe_client_vpn_target_networks_paginator() -> DescribeClientVpnTarg
     return boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
+Boto3 documentation:
+[EC2.Paginator.DescribeClientVpnTargetNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
 
-```python
-class DescribeClientVpnTargetNetworksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClientVpnEndpointId: str,
-        AssociationIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeClientVpnTargetNetworksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
+
+- `ClientVpnEndpointId`: `str` *(required)*
+- `AssociationIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClientVpnTargetNetworksPaginator.paginate` returns
+`Iterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpntargetnetworksresulttypedef)\].
+
 ## DescribeCoipPoolsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_coip_pools")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_coip_pools")`.
 
 Can be used directly:
 
@@ -379,22 +410,25 @@ def get_describe_coip_pools_paginator() -> DescribeCoipPoolsPaginator:
     return boto3.client("ec2").get_paginator("describe_coip_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
+Boto3 documentation:
+[EC2.Paginator.DescribeCoipPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
 
-```python
-class DescribeCoipPoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCoipPoolsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeCoipPoolsPaginator.paginate` method:
+
+- `PoolIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCoipPoolsPaginator.paginate` returns
+`Iterator`\[[DescribeCoipPoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecoippoolsresulttypedef)\].
+
 ## DescribeDhcpOptionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_dhcp_options")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_dhcp_options")`.
 
 Can be used directly:
 
@@ -405,22 +439,25 @@ def get_describe_dhcp_options_paginator() -> DescribeDhcpOptionsPaginator:
     return boto3.client("ec2").get_paginator("describe_dhcp_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
+Boto3 documentation:
+[EC2.Paginator.DescribeDhcpOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
 
-```python
-class DescribeDhcpOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DhcpOptionsIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDhcpOptionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
+
+- `DhcpOptionsIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDhcpOptionsPaginator.paginate` returns
+`Iterator`\[[DescribeDhcpOptionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describedhcpoptionsresulttypedef)\].
+
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")`.
 
 Can be used directly:
 
@@ -431,22 +468,25 @@ def get_describe_egress_only_internet_gateways_paginator() -> DescribeEgressOnly
     return boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeEgressOnlyInternetGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
 
-```python
-class DescribeEgressOnlyInternetGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        EgressOnlyInternetGatewayIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEgressOnlyInternetGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeegressonlyinternetgatewaysresulttypedef)\].
+
 ## DescribeExportImageTasksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_export_image_tasks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_export_image_tasks")`.
 
 Can be used directly:
 
@@ -457,22 +497,25 @@ def get_describe_export_image_tasks_paginator() -> DescribeExportImageTasksPagin
     return boto3.client("ec2").get_paginator("describe_export_image_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
+Boto3 documentation:
+[EC2.Paginator.DescribeExportImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
 
-```python
-class DescribeExportImageTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        ExportImageTaskIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeExportImageTasksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeExportImageTasksPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ExportImageTaskIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeExportImageTasksPaginator.paginate` returns
+`Iterator`\[[DescribeExportImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeexportimagetasksresulttypedef)\].
+
 ## DescribeFastSnapshotRestoresPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")`.
 
 Can be used directly:
 
@@ -483,18 +526,20 @@ def get_describe_fast_snapshot_restores_paginator() -> DescribeFastSnapshotResto
     return boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
+Boto3 documentation:
+[EC2.Paginator.DescribeFastSnapshotRestores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
 
-```python
-class DescribeFastSnapshotRestoresPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFastSnapshotRestoresResultTypeDef]:
-        pass
-```
+Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFastSnapshotRestoresPaginator.paginate` returns
+`Iterator`\[[DescribeFastSnapshotRestoresResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefastsnapshotrestoresresulttypedef)\].
+
 ## DescribeFleetsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_fleets")`.
@@ -508,19 +553,21 @@ def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return boto3.client("ec2").get_paginator("describe_fleets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
+Boto3 documentation:
+[EC2.Paginator.DescribeFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
 
-```python
-class DescribeFleetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        FleetIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFleetsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeFleetsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `FleetIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFleetsPaginator.paginate` returns
+`Iterator`\[[DescribeFleetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefleetsresulttypedef)\].
+
 ## DescribeFlowLogsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_flow_logs")`.
@@ -534,22 +581,25 @@ def get_describe_flow_logs_paginator() -> DescribeFlowLogsPaginator:
     return boto3.client("ec2").get_paginator("describe_flow_logs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
+Boto3 documentation:
+[EC2.Paginator.DescribeFlowLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
 
-```python
-class DescribeFlowLogsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        FlowLogIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFlowLogsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeFlowLogsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `FlowLogIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFlowLogsPaginator.paginate` returns
+`Iterator`\[[DescribeFlowLogsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeflowlogsresulttypedef)\].
+
 ## DescribeFpgaImagesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_fpga_images")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_fpga_images")`.
 
 Can be used directly:
 
@@ -560,23 +610,26 @@ def get_describe_fpga_images_paginator() -> DescribeFpgaImagesPaginator:
     return boto3.client("ec2").get_paginator("describe_fpga_images")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
+Boto3 documentation:
+[EC2.Paginator.DescribeFpgaImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
 
-```python
-class DescribeFpgaImagesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        FpgaImageIds: List[str] = None,
-        Owners: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFpgaImagesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeFpgaImagesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `FpgaImageIds`: `List`\[`str`\]
+- `Owners`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFpgaImagesPaginator.paginate` returns
+`Iterator`\[[DescribeFpgaImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefpgaimagesresulttypedef)\].
+
 ## DescribeHostReservationOfferingsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_host_reservation_offerings")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_host_reservation_offerings")`.
 
 Can be used directly:
 
@@ -587,23 +640,26 @@ def get_describe_host_reservation_offerings_paginator() -> DescribeHostReservati
     return boto3.client("ec2").get_paginator("describe_host_reservation_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
+Boto3 documentation:
+[EC2.Paginator.DescribeHostReservationOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
 
-```python
-class DescribeHostReservationOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        MaxDuration: int = None,
-        MinDuration: int = None,
-        OfferingId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeHostReservationOfferingsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `MaxDuration`: `int`
+- `MinDuration`: `int`
+- `OfferingId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeHostReservationOfferingsPaginator.paginate` returns
+`Iterator`\[[DescribeHostReservationOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostreservationofferingsresulttypedef)\].
+
 ## DescribeHostReservationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_host_reservations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_host_reservations")`.
 
 Can be used directly:
 
@@ -614,18 +670,20 @@ def get_describe_host_reservations_paginator() -> DescribeHostReservationsPagina
     return boto3.client("ec2").get_paginator("describe_host_reservations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
+Boto3 documentation:
+[EC2.Paginator.DescribeHostReservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
 
-```python
-class DescribeHostReservationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        HostReservationIdSet: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeHostReservationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeHostReservationsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `HostReservationIdSet`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeHostReservationsPaginator.paginate` returns
+`Iterator`\[[DescribeHostReservationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostreservationsresulttypedef)\].
+
 ## DescribeHostsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_hosts")`.
@@ -639,21 +697,24 @@ def get_describe_hosts_paginator() -> DescribeHostsPaginator:
     return boto3.client("ec2").get_paginator("describe_hosts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
+Boto3 documentation:
+[EC2.Paginator.DescribeHosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
 
-```python
-class DescribeHostsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        HostIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeHostsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeHostsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `HostIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeHostsPaginator.paginate` returns
+`Iterator`\[[DescribeHostsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostsresulttypedef)\].
+
 ## DescribeIamInstanceProfileAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")`.
 
 Can be used directly:
 
@@ -664,21 +725,25 @@ def get_describe_iam_instance_profile_associations_paginator() -> DescribeIamIns
     return boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
+Boto3 documentation:
+[EC2.Paginator.DescribeIamInstanceProfileAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
 
-```python
-class DescribeIamInstanceProfileAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AssociationIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeIamInstanceProfileAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeIamInstanceProfileAssociationsPaginator.paginate`
+method:
+
+- `AssociationIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
+`Iterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeiaminstanceprofileassociationsresulttypedef)\].
+
 ## DescribeImportImageTasksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_import_image_tasks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_import_image_tasks")`.
 
 Can be used directly:
 
@@ -689,22 +754,25 @@ def get_describe_import_image_tasks_paginator() -> DescribeImportImageTasksPagin
     return boto3.client("ec2").get_paginator("describe_import_image_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
+Boto3 documentation:
+[EC2.Paginator.DescribeImportImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
 
-```python
-class DescribeImportImageTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        ImportTaskIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeImportImageTasksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeImportImageTasksPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ImportTaskIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeImportImageTasksPaginator.paginate` returns
+`Iterator`\[[DescribeImportImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeimportimagetasksresulttypedef)\].
+
 ## DescribeImportSnapshotTasksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")`.
 
 Can be used directly:
 
@@ -715,22 +783,25 @@ def get_describe_import_snapshot_tasks_paginator() -> DescribeImportSnapshotTask
     return boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
+Boto3 documentation:
+[EC2.Paginator.DescribeImportSnapshotTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
 
-```python
-class DescribeImportSnapshotTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        ImportTaskIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeImportSnapshotTasksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ImportTaskIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeImportSnapshotTasksPaginator.paginate` returns
+`Iterator`\[[DescribeImportSnapshotTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeimportsnapshottasksresulttypedef)\].
+
 ## DescribeInstanceCreditSpecificationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_instance_credit_specifications")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_credit_specifications")`.
 
 Can be used directly:
 
@@ -741,22 +812,25 @@ def get_describe_instance_credit_specifications_paginator() -> DescribeInstanceC
     return boto3.client("ec2").get_paginator("describe_instance_credit_specifications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceCreditSpecifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
 
-```python
-class DescribeInstanceCreditSpecificationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstanceCreditSpecificationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstanceCreditSpecificationsPaginator.paginate` returns
+`Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancecreditspecificationsresulttypedef)\].
+
 ## DescribeInstanceStatusPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_instance_status")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_status")`.
 
 Can be used directly:
 
@@ -767,23 +841,26 @@ def get_describe_instance_status_paginator() -> DescribeInstanceStatusPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
 
-```python
-class DescribeInstanceStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        IncludeAllInstances: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstanceStatusResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInstanceStatusPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `IncludeAllInstances`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstanceStatusPaginator.paginate` returns
+`Iterator`\[[DescribeInstanceStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancestatusresulttypedef)\].
+
 ## DescribeInstanceTypeOfferingsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_instance_type_offerings")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_type_offerings")`.
 
 Can be used directly:
 
@@ -794,22 +871,26 @@ def get_describe_instance_type_offerings_paginator() -> DescribeInstanceTypeOffe
     return boto3.client("ec2").get_paginator("describe_instance_type_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceTypeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
 
-```python
-class DescribeInstanceTypeOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        LocationType: LocationType = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstanceTypeOfferingsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `LocationType`:
+  [LocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#locationtype)
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstanceTypeOfferingsPaginator.paginate` returns
+`Iterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancetypeofferingsresulttypedef)\].
+
 ## DescribeInstanceTypesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_instance_types")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_types")`.
 
 Can be used directly:
 
@@ -820,19 +901,22 @@ def get_describe_instance_types_paginator() -> DescribeInstanceTypesPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
 
-```python
-class DescribeInstanceTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        InstanceTypes: List[InstanceType] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstanceTypesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInstanceTypesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `InstanceTypes`:
+  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstanceTypesPaginator.paginate` returns
+`Iterator`\[[DescribeInstanceTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancetypesresulttypedef)\].
+
 ## DescribeInstancesPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_instances")`.
@@ -846,22 +930,25 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return boto3.client("ec2").get_paginator("describe_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
+Boto3 documentation:
+[EC2.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
 
-```python
-class DescribeInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInstancesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInstancesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancesresulttypedef)\].
+
 ## DescribeInternetGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_internet_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_internet_gateways")`.
 
 Can be used directly:
 
@@ -872,22 +959,25 @@ def get_describe_internet_gateways_paginator() -> DescribeInternetGatewaysPagina
     return boto3.client("ec2").get_paginator("describe_internet_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeInternetGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
 
-```python
-class DescribeInternetGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        InternetGatewayIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeInternetGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `InternetGatewayIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInternetGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeInternetGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinternetgatewaysresulttypedef)\].
+
 ## DescribeIpv6PoolsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_ipv6_pools")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_ipv6_pools")`.
 
 Can be used directly:
 
@@ -898,22 +988,25 @@ def get_describe_ipv6_pools_paginator() -> DescribeIpv6PoolsPaginator:
     return boto3.client("ec2").get_paginator("describe_ipv6_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
+Boto3 documentation:
+[EC2.Paginator.DescribeIpv6Pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
 
-```python
-class DescribeIpv6PoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolIds: List[str] = None,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeIpv6PoolsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
+
+- `PoolIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeIpv6PoolsPaginator.paginate` returns
+`Iterator`\[[DescribeIpv6PoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeipv6poolsresulttypedef)\].
+
 ## DescribeLaunchTemplateVersionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_launch_template_versions")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_launch_template_versions")`.
 
 Can be used directly:
 
@@ -924,26 +1017,29 @@ def get_describe_launch_template_versions_paginator() -> DescribeLaunchTemplateV
     return boto3.client("ec2").get_paginator("describe_launch_template_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
+Boto3 documentation:
+[EC2.Paginator.DescribeLaunchTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
 
-```python
-class DescribeLaunchTemplateVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        LaunchTemplateId: str = None,
-        LaunchTemplateName: str = None,
-        Versions: List[str] = None,
-        MinVersion: str = None,
-        MaxVersion: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLaunchTemplateVersionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `Versions`: `List`\[`str`\]
+- `MinVersion`: `str`
+- `MaxVersion`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLaunchTemplateVersionsPaginator.paginate` returns
+`Iterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelaunchtemplateversionsresulttypedef)\].
+
 ## DescribeLaunchTemplatesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_launch_templates")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_launch_templates")`.
 
 Can be used directly:
 
@@ -954,23 +1050,26 @@ def get_describe_launch_templates_paginator() -> DescribeLaunchTemplatesPaginato
     return boto3.client("ec2").get_paginator("describe_launch_templates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
+Boto3 documentation:
+[EC2.Paginator.DescribeLaunchTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
 
-```python
-class DescribeLaunchTemplatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        LaunchTemplateIds: List[str] = None,
-        LaunchTemplateNames: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLaunchTemplatesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `LaunchTemplateIds`: `List`\[`str`\]
+- `LaunchTemplateNames`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLaunchTemplatesPaginator.paginate` returns
+`Iterator`\[[DescribeLaunchTemplatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelaunchtemplatesresulttypedef)\].
+
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")`.
 
 Can be used directly:
 
@@ -981,22 +1080,28 @@ def get_describe_local_gateway_route_table_virtual_interface_group_associations_
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
 
-```python
-class DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef]:
-        pass
-```
+Arguments for
+`DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
+method:
+
+- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
+returns
+`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
+
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")`.
 
 Can be used directly:
 
@@ -1007,22 +1112,26 @@ def get_describe_local_gateway_route_table_vpc_associations_paginator() -> Descr
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
 
-```python
-class DescribeLocalGatewayRouteTableVpcAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayRouteTableVpcAssociationIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate`
+method:
+
+- `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
+`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
+
 ## DescribeLocalGatewayRouteTablesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")`.
 
 Can be used directly:
 
@@ -1033,22 +1142,25 @@ def get_describe_local_gateway_route_tables_paginator() -> DescribeLocalGatewayR
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGatewayRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
 
-```python
-class DescribeLocalGatewayRouteTablesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayRouteTableIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewayRouteTablesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
+
+- `LocalGatewayRouteTableIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewayRouteTablesPaginator.paginate` returns
+`Iterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablesresulttypedef)\].
+
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")`.
 
 Can be used directly:
 
@@ -1059,22 +1171,26 @@ def get_describe_local_gateway_virtual_interface_groups_paginator() -> DescribeL
     return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
 
-```python
-class DescribeLocalGatewayVirtualInterfaceGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayVirtualInterfaceGroupIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate`
+method:
+
+- `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
+
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")`.
 
 Can be used directly:
 
@@ -1085,22 +1201,25 @@ def get_describe_local_gateway_virtual_interfaces_paginator() -> DescribeLocalGa
     return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGatewayVirtualInterfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
 
-```python
-class DescribeLocalGatewayVirtualInterfacesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayVirtualInterfaceIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewayVirtualInterfacesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
+
+- `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
+`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayvirtualinterfacesresulttypedef)\].
+
 ## DescribeLocalGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_local_gateways")`.
 
 Can be used directly:
 
@@ -1111,22 +1230,25 @@ def get_describe_local_gateways_paginator() -> DescribeLocalGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeLocalGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
 
-```python
-class DescribeLocalGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeLocalGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
+
+- `LocalGatewayIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeLocalGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeLocalGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewaysresulttypedef)\].
+
 ## DescribeManagedPrefixListsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_managed_prefix_lists")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_managed_prefix_lists")`.
 
 Can be used directly:
 
@@ -1137,22 +1259,25 @@ def get_describe_managed_prefix_lists_paginator() -> DescribeManagedPrefixListsP
     return boto3.client("ec2").get_paginator("describe_managed_prefix_lists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
+Boto3 documentation:
+[EC2.Paginator.DescribeManagedPrefixLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
 
-```python
-class DescribeManagedPrefixListsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PrefixListIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeManagedPrefixListsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PrefixListIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeManagedPrefixListsPaginator.paginate` returns
+`Iterator`\[[DescribeManagedPrefixListsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describemanagedprefixlistsresulttypedef)\].
+
 ## DescribeMovingAddressesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_moving_addresses")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_moving_addresses")`.
 
 Can be used directly:
 
@@ -1163,22 +1288,25 @@ def get_describe_moving_addresses_paginator() -> DescribeMovingAddressesPaginato
     return boto3.client("ec2").get_paginator("describe_moving_addresses")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
+Boto3 documentation:
+[EC2.Paginator.DescribeMovingAddresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
 
-```python
-class DescribeMovingAddressesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PublicIps: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeMovingAddressesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeMovingAddressesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PublicIps`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeMovingAddressesPaginator.paginate` returns
+`Iterator`\[[DescribeMovingAddressesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describemovingaddressesresulttypedef)\].
+
 ## DescribeNatGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_nat_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_nat_gateways")`.
 
 Can be used directly:
 
@@ -1189,22 +1317,25 @@ def get_describe_nat_gateways_paginator() -> DescribeNatGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_nat_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeNatGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
 
-```python
-class DescribeNatGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        NatGatewayIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNatGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNatGatewaysPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `NatGatewayIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNatGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeNatGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenatgatewaysresulttypedef)\].
+
 ## DescribeNetworkAclsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_network_acls")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_acls")`.
 
 Can be used directly:
 
@@ -1215,22 +1346,25 @@ def get_describe_network_acls_paginator() -> DescribeNetworkAclsPaginator:
     return boto3.client("ec2").get_paginator("describe_network_acls")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkAcls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
 
-```python
-class DescribeNetworkAclsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkAclIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNetworkAclsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNetworkAclsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `NetworkAclIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNetworkAclsPaginator.paginate` returns
+`Iterator`\[[DescribeNetworkAclsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkaclsresulttypedef)\].
+
 ## DescribeNetworkInsightsAnalysesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_network_insights_analyses")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_insights_analyses")`.
 
 Can be used directly:
 
@@ -1241,25 +1375,28 @@ def get_describe_network_insights_analyses_paginator() -> DescribeNetworkInsight
     return boto3.client("ec2").get_paginator("describe_network_insights_analyses")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInsightsAnalyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
 
-```python
-class DescribeNetworkInsightsAnalysesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        NetworkInsightsAnalysisIds: List[str] = None,
-        NetworkInsightsPathId: str = None,
-        AnalysisStartTime: datetime = None,
-        AnalysisEndTime: datetime = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNetworkInsightsAnalysesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
+
+- `NetworkInsightsAnalysisIds`: `List`\[`str`\]
+- `NetworkInsightsPathId`: `str`
+- `AnalysisStartTime`: `datetime`
+- `AnalysisEndTime`: `datetime`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNetworkInsightsAnalysesPaginator.paginate` returns
+`Iterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinsightsanalysesresulttypedef)\].
+
 ## DescribeNetworkInsightsPathsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_network_insights_paths")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_insights_paths")`.
 
 Can be used directly:
 
@@ -1270,22 +1407,25 @@ def get_describe_network_insights_paths_paginator() -> DescribeNetworkInsightsPa
     return boto3.client("ec2").get_paginator("describe_network_insights_paths")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInsightsPaths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
 
-```python
-class DescribeNetworkInsightsPathsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        NetworkInsightsPathIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNetworkInsightsPathsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
+
+- `NetworkInsightsPathIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNetworkInsightsPathsPaginator.paginate` returns
+`Iterator`\[[DescribeNetworkInsightsPathsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinsightspathsresulttypedef)\].
+
 ## DescribeNetworkInterfacePermissionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_network_interface_permissions")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_interface_permissions")`.
 
 Can be used directly:
 
@@ -1296,21 +1436,24 @@ def get_describe_network_interface_permissions_paginator() -> DescribeNetworkInt
     return boto3.client("ec2").get_paginator("describe_network_interface_permissions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInterfacePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
 
-```python
-class DescribeNetworkInterfacePermissionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        NetworkInterfacePermissionIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNetworkInterfacePermissionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
+
+- `NetworkInterfacePermissionIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNetworkInterfacePermissionsPaginator.paginate` returns
+`Iterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinterfacepermissionsresulttypedef)\].
+
 ## DescribeNetworkInterfacesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_network_interfaces")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_network_interfaces")`.
 
 Can be used directly:
 
@@ -1321,22 +1464,25 @@ def get_describe_network_interfaces_paginator() -> DescribeNetworkInterfacesPagi
     return boto3.client("ec2").get_paginator("describe_network_interfaces")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
+Boto3 documentation:
+[EC2.Paginator.DescribeNetworkInterfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
 
-```python
-class DescribeNetworkInterfacesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkInterfaceIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNetworkInterfacesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNetworkInterfacesPaginator.paginate` returns
+`Iterator`\[[DescribeNetworkInterfacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinterfacesresulttypedef)\].
+
 ## DescribePrefixListsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_prefix_lists")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_prefix_lists")`.
 
 Can be used directly:
 
@@ -1347,22 +1493,25 @@ def get_describe_prefix_lists_paginator() -> DescribePrefixListsPaginator:
     return boto3.client("ec2").get_paginator("describe_prefix_lists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
+Boto3 documentation:
+[EC2.Paginator.DescribePrefixLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
 
-```python
-class DescribePrefixListsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PrefixListIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePrefixListsResultTypeDef]:
-        pass
-```
+Arguments for `DescribePrefixListsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PrefixListIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribePrefixListsPaginator.paginate` returns
+`Iterator`\[[DescribePrefixListsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeprefixlistsresulttypedef)\].
+
 ## DescribePrincipalIdFormatPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_principal_id_format")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_principal_id_format")`.
 
 Can be used directly:
 
@@ -1373,21 +1522,23 @@ def get_describe_principal_id_format_paginator() -> DescribePrincipalIdFormatPag
     return boto3.client("ec2").get_paginator("describe_principal_id_format")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
+Boto3 documentation:
+[EC2.Paginator.DescribePrincipalIdFormat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
 
-```python
-class DescribePrincipalIdFormatPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Resources: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePrincipalIdFormatResultTypeDef]:
-        pass
-```
+Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Resources`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribePrincipalIdFormatPaginator.paginate` returns
+`Iterator`\[[DescribePrincipalIdFormatResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeprincipalidformatresulttypedef)\].
+
 ## DescribePublicIpv4PoolsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_public_ipv4_pools")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_public_ipv4_pools")`.
 
 Can be used directly:
 
@@ -1398,21 +1549,24 @@ def get_describe_public_ipv4_pools_paginator() -> DescribePublicIpv4PoolsPaginat
     return boto3.client("ec2").get_paginator("describe_public_ipv4_pools")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
+Boto3 documentation:
+[EC2.Paginator.DescribePublicIpv4Pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
 
-```python
-class DescribePublicIpv4PoolsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePublicIpv4PoolsResultTypeDef]:
-        pass
-```
+Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
+
+- `PoolIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribePublicIpv4PoolsPaginator.paginate` returns
+`Iterator`\[[DescribePublicIpv4PoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describepublicipv4poolsresulttypedef)\].
+
 ## DescribeReplaceRootVolumeTasksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")`.
 
 Can be used directly:
 
@@ -1423,22 +1577,25 @@ def get_describe_replace_root_volume_tasks_paginator() -> DescribeReplaceRootVol
     return boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
+Boto3 documentation:
+[EC2.Paginator.DescribeReplaceRootVolumeTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
 
-```python
-class DescribeReplaceRootVolumeTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReplaceRootVolumeTaskIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReplaceRootVolumeTasksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
+
+- `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplaceRootVolumeTasksPaginator.paginate` returns
+`Iterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereplacerootvolumetasksresulttypedef)\].
+
 ## DescribeReservedInstancesModificationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")`.
 
 Can be used directly:
 
@@ -1449,21 +1606,25 @@ def get_describe_reserved_instances_modifications_paginator() -> DescribeReserve
     return boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
+Boto3 documentation:
+[EC2.Paginator.DescribeReservedInstancesModifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
 
-```python
-class DescribeReservedInstancesModificationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        ReservedInstancesModificationIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReservedInstancesModificationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedInstancesModificationsPaginator.paginate`
+method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ReservedInstancesModificationIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedInstancesModificationsPaginator.paginate` returns
+`Iterator`\[[DescribeReservedInstancesModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereservedinstancesmodificationsresulttypedef)\].
+
 ## DescribeReservedInstancesOfferingsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")`.
 
 Can be used directly:
 
@@ -1474,32 +1635,40 @@ def get_describe_reserved_instances_offerings_paginator() -> DescribeReservedIns
     return boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
+Boto3 documentation:
+[EC2.Paginator.DescribeReservedInstancesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
 
-```python
-class DescribeReservedInstancesOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AvailabilityZone: str = None,
-        Filters: List[FilterTypeDef] = None,
-        IncludeMarketplace: bool = None,
-        InstanceType: InstanceType = None,
-        MaxDuration: int = None,
-        MaxInstanceCount: int = None,
-        MinDuration: int = None,
-        OfferingClass: OfferingClassType = None,
-        ProductDescription: RIProductDescription = None,
-        ReservedInstancesOfferingIds: List[str] = None,
-        DryRun: bool = None,
-        InstanceTenancy: Tenancy = None,
-        OfferingType: OfferingTypeValues = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeReservedInstancesOfferingsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
+
+- `AvailabilityZone`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `IncludeMarketplace`: `bool`
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `MaxDuration`: `int`
+- `MaxInstanceCount`: `int`
+- `MinDuration`: `int`
+- `OfferingClass`:
+  [OfferingClassType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringclasstype)
+- `ProductDescription`:
+  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+- `ReservedInstancesOfferingIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `InstanceTenancy`:
+  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `OfferingType`:
+  [OfferingTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringtypevalues)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedInstancesOfferingsPaginator.paginate` returns
+`Iterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereservedinstancesofferingsresulttypedef)\].
+
 ## DescribeRouteTablesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_route_tables")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_route_tables")`.
 
 Can be used directly:
 
@@ -1510,22 +1679,25 @@ def get_describe_route_tables_paginator() -> DescribeRouteTablesPaginator:
     return boto3.client("ec2").get_paginator("describe_route_tables")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
+Boto3 documentation:
+[EC2.Paginator.DescribeRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
 
-```python
-class DescribeRouteTablesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        RouteTableIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRouteTablesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeRouteTablesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `RouteTableIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRouteTablesPaginator.paginate` returns
+`Iterator`\[[DescribeRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeroutetablesresulttypedef)\].
+
 ## DescribeScheduledInstanceAvailabilityPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")`.
 
 Can be used directly:
 
@@ -1536,25 +1708,32 @@ def get_describe_scheduled_instance_availability_paginator() -> DescribeSchedule
     return boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
+Boto3 documentation:
+[EC2.Paginator.DescribeScheduledInstanceAvailability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
 
-```python
-class DescribeScheduledInstanceAvailabilityPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FirstSlotStartTimeRange: SlotDateTimeRangeRequestTypeDef,
-        Recurrence: ScheduledInstanceRecurrenceRequestTypeDef,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        MaxSlotDurationInHours: int = None,
-        MinSlotDurationInHours: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeScheduledInstanceAvailabilityResultTypeDef]:
-        pass
-```
+Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
+
+- `FirstSlotStartTimeRange`:
+  [SlotDateTimeRangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#slotdatetimerangerequesttypedef)
+  *(required)*
+- `Recurrence`:
+  [ScheduledInstanceRecurrenceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancerecurrencerequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `MaxSlotDurationInHours`: `int`
+- `MinSlotDurationInHours`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
+`Iterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describescheduledinstanceavailabilityresulttypedef)\].
+
 ## DescribeScheduledInstancesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_scheduled_instances")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_scheduled_instances")`.
 
 Can be used directly:
 
@@ -1565,23 +1744,27 @@ def get_describe_scheduled_instances_paginator() -> DescribeScheduledInstancesPa
     return boto3.client("ec2").get_paginator("describe_scheduled_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
+Boto3 documentation:
+[EC2.Paginator.DescribeScheduledInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
 
-```python
-class DescribeScheduledInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        ScheduledInstanceIds: List[str] = None,
-        SlotStartTimeRange: SlotStartTimeRangeRequestTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeScheduledInstancesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `ScheduledInstanceIds`: `List`\[`str`\]
+- `SlotStartTimeRange`:
+  [SlotStartTimeRangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#slotstarttimerangerequesttypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScheduledInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeScheduledInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describescheduledinstancesresulttypedef)\].
+
 ## DescribeSecurityGroupsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_security_groups")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_security_groups")`.
 
 Can be used directly:
 
@@ -1592,20 +1775,22 @@ def get_describe_security_groups_paginator() -> DescribeSecurityGroupsPaginator:
     return boto3.client("ec2").get_paginator("describe_security_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
+Boto3 documentation:
+[EC2.Paginator.DescribeSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
 
-```python
-class DescribeSecurityGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        GroupIds: List[str] = None,
-        GroupNames: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSecurityGroupsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `GroupIds`: `List`\[`str`\]
+- `GroupNames`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSecurityGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeSecurityGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesecuritygroupsresulttypedef)\].
+
 ## DescribeSnapshotsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
@@ -1619,24 +1804,27 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return boto3.client("ec2").get_paginator("describe_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
+Boto3 documentation:
+[EC2.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
 
-```python
-class DescribeSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        OwnerIds: List[str] = None,
-        RestorableByUserIds: List[str] = None,
-        SnapshotIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSnapshotsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeSnapshotsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `OwnerIds`: `List`\[`str`\]
+- `RestorableByUserIds`: `List`\[`str`\]
+- `SnapshotIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSnapshotsPaginator.paginate` returns
+`Iterator`\[[DescribeSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesnapshotsresulttypedef)\].
+
 ## DescribeSpotFleetInstancesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_spot_fleet_instances")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_spot_fleet_instances")`.
 
 Can be used directly:
 
@@ -1647,21 +1835,23 @@ def get_describe_spot_fleet_instances_paginator() -> DescribeSpotFleetInstancesP
     return boto3.client("ec2").get_paginator("describe_spot_fleet_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
+Boto3 documentation:
+[EC2.Paginator.DescribeSpotFleetInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
 
-```python
-class DescribeSpotFleetInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SpotFleetRequestId: str,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSpotFleetInstancesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
+
+- `SpotFleetRequestId`: `str` *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSpotFleetInstancesPaginator.paginate` returns
+`Iterator`\[[DescribeSpotFleetInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotfleetinstancesresponsetypedef)\].
+
 ## DescribeSpotFleetRequestsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_spot_fleet_requests")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_spot_fleet_requests")`.
 
 Can be used directly:
 
@@ -1672,21 +1862,23 @@ def get_describe_spot_fleet_requests_paginator() -> DescribeSpotFleetRequestsPag
     return boto3.client("ec2").get_paginator("describe_spot_fleet_requests")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
+Boto3 documentation:
+[EC2.Paginator.DescribeSpotFleetRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
 
-```python
-class DescribeSpotFleetRequestsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        SpotFleetRequestIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSpotFleetRequestsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `SpotFleetRequestIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSpotFleetRequestsPaginator.paginate` returns
+`Iterator`\[[DescribeSpotFleetRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotfleetrequestsresponsetypedef)\].
+
 ## DescribeSpotInstanceRequestsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_spot_instance_requests")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_spot_instance_requests")`.
 
 Can be used directly:
 
@@ -1697,22 +1889,25 @@ def get_describe_spot_instance_requests_paginator() -> DescribeSpotInstanceReque
     return boto3.client("ec2").get_paginator("describe_spot_instance_requests")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
+Boto3 documentation:
+[EC2.Paginator.DescribeSpotInstanceRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
 
-```python
-class DescribeSpotInstanceRequestsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        SpotInstanceRequestIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSpotInstanceRequestsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSpotInstanceRequestsPaginator.paginate` returns
+`Iterator`\[[DescribeSpotInstanceRequestsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotinstancerequestsresulttypedef)\].
+
 ## DescribeSpotPriceHistoryPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_spot_price_history")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_spot_price_history")`.
 
 Can be used directly:
 
@@ -1723,26 +1918,30 @@ def get_describe_spot_price_history_paginator() -> DescribeSpotPriceHistoryPagin
     return boto3.client("ec2").get_paginator("describe_spot_price_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
+Boto3 documentation:
+[EC2.Paginator.DescribeSpotPriceHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
 
-```python
-class DescribeSpotPriceHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        AvailabilityZone: str = None,
-        DryRun: bool = None,
-        EndTime: datetime = None,
-        InstanceTypes: List[InstanceType] = None,
-        ProductDescriptions: List[str] = None,
-        StartTime: datetime = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSpotPriceHistoryResultTypeDef]:
-        pass
-```
+Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `AvailabilityZone`: `str`
+- `DryRun`: `bool`
+- `EndTime`: `datetime`
+- `InstanceTypes`:
+  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)\]
+- `ProductDescriptions`: `List`\[`str`\]
+- `StartTime`: `datetime`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSpotPriceHistoryPaginator.paginate` returns
+`Iterator`\[[DescribeSpotPriceHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotpricehistoryresulttypedef)\].
+
 ## DescribeStaleSecurityGroupsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_stale_security_groups")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_stale_security_groups")`.
 
 Can be used directly:
 
@@ -1753,21 +1952,23 @@ def get_describe_stale_security_groups_paginator() -> DescribeStaleSecurityGroup
     return boto3.client("ec2").get_paginator("describe_stale_security_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
+Boto3 documentation:
+[EC2.Paginator.DescribeStaleSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
 
-```python
-class DescribeStaleSecurityGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        VpcId: str,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeStaleSecurityGroupsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
+
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeStaleSecurityGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeStaleSecurityGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describestalesecuritygroupsresulttypedef)\].
+
 ## DescribeStoreImageTasksPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_store_image_tasks")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_store_image_tasks")`.
 
 Can be used directly:
 
@@ -1778,19 +1979,21 @@ def get_describe_store_image_tasks_paginator() -> DescribeStoreImageTasksPaginat
     return boto3.client("ec2").get_paginator("describe_store_image_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
+Boto3 documentation:
+[EC2.Paginator.DescribeStoreImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
 
-```python
-class DescribeStoreImageTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ImageIds: List[str] = None,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeStoreImageTasksResultTypeDef]:
-        pass
-```
+Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
+
+- `ImageIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeStoreImageTasksPaginator.paginate` returns
+`Iterator`\[[DescribeStoreImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describestoreimagetasksresulttypedef)\].
+
 ## DescribeSubnetsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_subnets")`.
@@ -1804,19 +2007,21 @@ def get_describe_subnets_paginator() -> DescribeSubnetsPaginator:
     return boto3.client("ec2").get_paginator("describe_subnets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
+Boto3 documentation:
+[EC2.Paginator.DescribeSubnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
 
-```python
-class DescribeSubnetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SubnetIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSubnetsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeSubnetsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSubnetsPaginator.paginate` returns
+`Iterator`\[[DescribeSubnetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesubnetsresulttypedef)\].
+
 ## DescribeTagsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_tags")`.
@@ -1830,21 +2035,24 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("ec2").get_paginator("describe_tags")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
+Boto3 documentation:
+[EC2.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
 
-```python
-class DescribeTagsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTagsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTagsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTagsPaginator.paginate` returns
+`Iterator`\[[DescribeTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetagsresulttypedef)\].
+
 ## DescribeTrafficMirrorFiltersPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")`.
 
 Can be used directly:
 
@@ -1855,22 +2063,25 @@ def get_describe_traffic_mirror_filters_paginator() -> DescribeTrafficMirrorFilt
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
+Boto3 documentation:
+[EC2.Paginator.DescribeTrafficMirrorFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
 
-```python
-class DescribeTrafficMirrorFiltersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TrafficMirrorFilterIds: List[str] = None,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTrafficMirrorFiltersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
+
+- `TrafficMirrorFilterIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTrafficMirrorFiltersPaginator.paginate` returns
+`Iterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrorfiltersresulttypedef)\].
+
 ## DescribeTrafficMirrorSessionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")`.
 
 Can be used directly:
 
@@ -1881,22 +2092,25 @@ def get_describe_traffic_mirror_sessions_paginator() -> DescribeTrafficMirrorSes
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
+Boto3 documentation:
+[EC2.Paginator.DescribeTrafficMirrorSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
 
-```python
-class DescribeTrafficMirrorSessionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TrafficMirrorSessionIds: List[str] = None,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTrafficMirrorSessionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
+
+- `TrafficMirrorSessionIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTrafficMirrorSessionsPaginator.paginate` returns
+`Iterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrorsessionsresulttypedef)\].
+
 ## DescribeTrafficMirrorTargetsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")`.
 
 Can be used directly:
 
@@ -1907,22 +2121,25 @@ def get_describe_traffic_mirror_targets_paginator() -> DescribeTrafficMirrorTarg
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
+Boto3 documentation:
+[EC2.Paginator.DescribeTrafficMirrorTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
 
-```python
-class DescribeTrafficMirrorTargetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TrafficMirrorTargetIds: List[str] = None,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTrafficMirrorTargetsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
+
+- `TrafficMirrorTargetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTrafficMirrorTargetsPaginator.paginate` returns
+`Iterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrortargetsresulttypedef)\].
+
 ## DescribeTransitGatewayAttachmentsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")`.
 
 Can be used directly:
 
@@ -1933,22 +2150,25 @@ def get_describe_transit_gateway_attachments_paginator() -> DescribeTransitGatew
     return boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
 
-```python
-class DescribeTransitGatewayAttachmentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayAttachmentIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayAttachmentsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayAttachmentsPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayattachmentsresulttypedef)\].
+
 ## DescribeTransitGatewayConnectPeersPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")`.
 
 Can be used directly:
 
@@ -1959,22 +2179,25 @@ def get_describe_transit_gateway_connect_peers_paginator() -> DescribeTransitGat
     return boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayConnectPeers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
 
-```python
-class DescribeTransitGatewayConnectPeersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayConnectPeerIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayConnectPeersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
+
+- `TransitGatewayConnectPeerIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayConnectPeersPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayconnectpeersresulttypedef)\].
+
 ## DescribeTransitGatewayConnectsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_connects")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_connects")`.
 
 Can be used directly:
 
@@ -1985,22 +2208,25 @@ def get_describe_transit_gateway_connects_paginator() -> DescribeTransitGatewayC
     return boto3.client("ec2").get_paginator("describe_transit_gateway_connects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayConnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
 
-```python
-class DescribeTransitGatewayConnectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayAttachmentIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayConnectsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayConnectsPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayConnectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayconnectsresulttypedef)\].
+
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")`.
 
 Can be used directly:
 
@@ -2011,22 +2237,26 @@ def get_describe_transit_gateway_multicast_domains_paginator() -> DescribeTransi
     return boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayMulticastDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
 
-```python
-class DescribeTransitGatewayMulticastDomainsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayMulticastDomainIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayMulticastDomainsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayMulticastDomainsPaginator.paginate`
+method:
+
+- `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaymulticastdomainsresulttypedef)\].
+
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")`.
 
 Can be used directly:
 
@@ -2037,22 +2267,26 @@ def get_describe_transit_gateway_peering_attachments_paginator() -> DescribeTran
     return boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayPeeringAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
 
-```python
-class DescribeTransitGatewayPeeringAttachmentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayAttachmentIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayPeeringAttachmentsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate`
+method:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaypeeringattachmentsresulttypedef)\].
+
 ## DescribeTransitGatewayRouteTablesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")`.
 
 Can be used directly:
 
@@ -2063,22 +2297,25 @@ def get_describe_transit_gateway_route_tables_paginator() -> DescribeTransitGate
     return boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
 
-```python
-class DescribeTransitGatewayRouteTablesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayRouteTableIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayRouteTablesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
+
+- `TransitGatewayRouteTableIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayRouteTablesPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayroutetablesresulttypedef)\].
+
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")`.
 
 Can be used directly:
 
@@ -2089,22 +2326,25 @@ def get_describe_transit_gateway_vpc_attachments_paginator() -> DescribeTransitG
     return boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGatewayVpcAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
 
-```python
-class DescribeTransitGatewayVpcAttachmentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayAttachmentIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewayVpcAttachmentsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayvpcattachmentsresulttypedef)\].
+
 ## DescribeTransitGatewaysPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gateways")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_transit_gateways")`.
 
 Can be used directly:
 
@@ -2115,22 +2355,25 @@ def get_describe_transit_gateways_paginator() -> DescribeTransitGatewaysPaginato
     return boto3.client("ec2").get_paginator("describe_transit_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
+Boto3 documentation:
+[EC2.Paginator.DescribeTransitGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
 
-```python
-class DescribeTransitGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeTransitGatewaysResultTypeDef]:
-        pass
-```
+Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
+
+- `TransitGatewayIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTransitGatewaysPaginator.paginate` returns
+`Iterator`\[[DescribeTransitGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaysresulttypedef)\].
+
 ## DescribeVolumeStatusPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_volume_status")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_volume_status")`.
 
 Can be used directly:
 
@@ -2141,19 +2384,21 @@ def get_describe_volume_status_paginator() -> DescribeVolumeStatusPaginator:
     return boto3.client("ec2").get_paginator("describe_volume_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
+Boto3 documentation:
+[EC2.Paginator.DescribeVolumeStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
 
-```python
-class DescribeVolumeStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VolumeIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVolumeStatusResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVolumeStatusPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVolumeStatusPaginator.paginate` returns
+`Iterator`\[[DescribeVolumeStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumestatusresulttypedef)\].
+
 ## DescribeVolumesPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_volumes")`.
@@ -2167,22 +2412,25 @@ def get_describe_volumes_paginator() -> DescribeVolumesPaginator:
     return boto3.client("ec2").get_paginator("describe_volumes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
+Boto3 documentation:
+[EC2.Paginator.DescribeVolumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
 
-```python
-class DescribeVolumesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VolumeIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVolumesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVolumesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVolumesPaginator.paginate` returns
+`Iterator`\[[DescribeVolumesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumesresulttypedef)\].
+
 ## DescribeVolumesModificationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_volumes_modifications")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_volumes_modifications")`.
 
 Can be used directly:
 
@@ -2193,22 +2441,25 @@ def get_describe_volumes_modifications_paginator() -> DescribeVolumesModificatio
     return boto3.client("ec2").get_paginator("describe_volumes_modifications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
+Boto3 documentation:
+[EC2.Paginator.DescribeVolumesModifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
 
-```python
-class DescribeVolumesModificationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        VolumeIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVolumesModificationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `VolumeIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVolumesModificationsPaginator.paginate` returns
+`Iterator`\[[DescribeVolumesModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumesmodificationsresulttypedef)\].
+
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")`.
 
 Can be used directly:
 
@@ -2219,20 +2470,22 @@ def get_describe_vpc_classic_link_dns_support_paginator() -> DescribeVpcClassicL
     return boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcClassicLinkDnsSupport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
 
-```python
-class DescribeVpcClassicLinkDnsSupportPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        VpcIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcClassicLinkDnsSupportResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
+
+- `VpcIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
+`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcclassiclinkdnssupportresulttypedef)\].
+
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")`.
 
 Can be used directly:
 
@@ -2243,22 +2496,26 @@ def get_describe_vpc_endpoint_connection_notifications_paginator() -> DescribeVp
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpointConnectionNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
 
-```python
-class DescribeVpcEndpointConnectionNotificationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        ConnectionNotificationId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointConnectionNotificationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointConnectionNotificationsPaginator.paginate`
+method:
+
+- `DryRun`: `bool`
+- `ConnectionNotificationId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointconnectionnotificationsresulttypedef)\].
+
 ## DescribeVpcEndpointConnectionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")`.
 
 Can be used directly:
 
@@ -2269,21 +2526,24 @@ def get_describe_vpc_endpoint_connections_paginator() -> DescribeVpcEndpointConn
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpointConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
 
-```python
-class DescribeVpcEndpointConnectionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointConnectionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointConnectionsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointconnectionsresulttypedef)\].
+
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")`.
 
 Can be used directly:
 
@@ -2294,22 +2554,26 @@ def get_describe_vpc_endpoint_service_configurations_paginator() -> DescribeVpcE
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpointServiceConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
 
-```python
-class DescribeVpcEndpointServiceConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        ServiceIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointServiceConfigurationsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointServiceConfigurationsPaginator.paginate`
+method:
+
+- `DryRun`: `bool`
+- `ServiceIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointserviceconfigurationsresulttypedef)\].
+
 ## DescribeVpcEndpointServicePermissionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")`.
 
 Can be used directly:
 
@@ -2320,22 +2584,25 @@ def get_describe_vpc_endpoint_service_permissions_paginator() -> DescribeVpcEndp
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpointServicePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
 
-```python
-class DescribeVpcEndpointServicePermissionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ServiceId: str,
-        DryRun: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointServicePermissionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
+
+- `ServiceId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointservicepermissionsresulttypedef)\].
+
 ## DescribeVpcEndpointServicesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")`.
 
 Can be used directly:
 
@@ -2346,22 +2613,25 @@ def get_describe_vpc_endpoint_services_paginator() -> DescribeVpcEndpointService
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpointServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
 
-```python
-class DescribeVpcEndpointServicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        ServiceNames: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointServicesResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `ServiceNames`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointServicesPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointServicesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointservicesresulttypedef)\].
+
 ## DescribeVpcEndpointsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoints")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_endpoints")`.
 
 Can be used directly:
 
@@ -2372,22 +2642,25 @@ def get_describe_vpc_endpoints_paginator() -> DescribeVpcEndpointsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
 
-```python
-class DescribeVpcEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DryRun: bool = None,
-        VpcEndpointIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcEndpointsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `VpcEndpointIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcEndpointsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcEndpointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointsresulttypedef)\].
+
 ## DescribeVpcPeeringConnectionsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_peering_connections")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_vpc_peering_connections")`.
 
 Can be used directly:
 
@@ -2398,19 +2671,21 @@ def get_describe_vpc_peering_connections_paginator() -> DescribeVpcPeeringConnec
     return boto3.client("ec2").get_paginator("describe_vpc_peering_connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcPeeringConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
 
-```python
-class DescribeVpcPeeringConnectionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        VpcPeeringConnectionIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcPeeringConnectionsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcPeeringConnectionsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcpeeringconnectionsresulttypedef)\].
+
 ## DescribeVpcsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_vpcs")`.
@@ -2424,22 +2699,25 @@ def get_describe_vpcs_paginator() -> DescribeVpcsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpcs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
+Boto3 documentation:
+[EC2.Paginator.DescribeVpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
 
-```python
-class DescribeVpcsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VpcIds: List[str] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeVpcsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeVpcsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `VpcIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeVpcsPaginator.paginate` returns
+`Iterator`\[[DescribeVpcsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcsresulttypedef)\].
+
 ## GetAssociatedIpv6PoolCidrsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")`.
 
 Can be used directly:
 
@@ -2450,21 +2728,23 @@ def get_get_associated_ipv6_pool_cidrs_paginator() -> GetAssociatedIpv6PoolCidrs
     return boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
+Boto3 documentation:
+[EC2.Paginator.GetAssociatedIpv6PoolCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
 
-```python
-class GetAssociatedIpv6PoolCidrsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PoolId: str,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetAssociatedIpv6PoolCidrsResultTypeDef]:
-        pass
-```
+Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
+
+- `PoolId`: `str` *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
+`Iterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getassociatedipv6poolcidrsresulttypedef)\].
+
 ## GetGroupsForCapacityReservationPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")`.
 
 Can be used directly:
 
@@ -2475,21 +2755,23 @@ def get_get_groups_for_capacity_reservation_paginator() -> GetGroupsForCapacityR
     return boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
+Boto3 documentation:
+[EC2.Paginator.GetGroupsForCapacityReservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
 
-```python
-class GetGroupsForCapacityReservationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CapacityReservationId: str,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetGroupsForCapacityReservationResultTypeDef]:
-        pass
-```
+Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
+
+- `CapacityReservationId`: `str` *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetGroupsForCapacityReservationPaginator.paginate` returns
+`Iterator`\[[GetGroupsForCapacityReservationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getgroupsforcapacityreservationresulttypedef)\].
+
 ## GetManagedPrefixListAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")`.
 
 Can be used directly:
 
@@ -2500,21 +2782,23 @@ def get_get_managed_prefix_list_associations_paginator() -> GetManagedPrefixList
     return boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
+Boto3 documentation:
+[EC2.Paginator.GetManagedPrefixListAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
 
-```python
-class GetManagedPrefixListAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PrefixListId: str,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetManagedPrefixListAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
+
+- `PrefixListId`: `str` *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetManagedPrefixListAssociationsPaginator.paginate` returns
+`Iterator`\[[GetManagedPrefixListAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getmanagedprefixlistassociationsresulttypedef)\].
+
 ## GetManagedPrefixListEntriesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")`.
 
 Can be used directly:
 
@@ -2525,22 +2809,24 @@ def get_get_managed_prefix_list_entries_paginator() -> GetManagedPrefixListEntri
     return boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
+Boto3 documentation:
+[EC2.Paginator.GetManagedPrefixListEntries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
 
-```python
-class GetManagedPrefixListEntriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PrefixListId: str,
-        DryRun: bool = None,
-        TargetVersion: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetManagedPrefixListEntriesResultTypeDef]:
-        pass
-```
+Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
+
+- `PrefixListId`: `str` *(required)*
+- `DryRun`: `bool`
+- `TargetVersion`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetManagedPrefixListEntriesPaginator.paginate` returns
+`Iterator`\[[GetManagedPrefixListEntriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getmanagedprefixlistentriesresulttypedef)\].
+
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")`.
 
 Can be used directly:
 
@@ -2551,22 +2837,26 @@ def get_get_transit_gateway_attachment_propagations_paginator() -> GetTransitGat
     return boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
+Boto3 documentation:
+[EC2.Paginator.GetTransitGatewayAttachmentPropagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
 
-```python
-class GetTransitGatewayAttachmentPropagationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayAttachmentId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayAttachmentPropagationsResultTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayAttachmentPropagationsPaginator.paginate`
+method:
+
+- `TransitGatewayAttachmentId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayattachmentpropagationsresulttypedef)\].
+
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")`.
 
 Can be used directly:
 
@@ -2577,22 +2867,26 @@ def get_get_transit_gateway_multicast_domain_associations_paginator() -> GetTran
     return boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
+Boto3 documentation:
+[EC2.Paginator.GetTransitGatewayMulticastDomainAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
 
-```python
-class GetTransitGatewayMulticastDomainAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayMulticastDomainId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayMulticastDomainAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate`
+method:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
+
 ## GetTransitGatewayPrefixListReferencesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")`.
 
 Can be used directly:
 
@@ -2603,22 +2897,25 @@ def get_get_transit_gateway_prefix_list_references_paginator() -> GetTransitGate
     return boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
+Boto3 documentation:
+[EC2.Paginator.GetTransitGatewayPrefixListReferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
 
-```python
-class GetTransitGatewayPrefixListReferencesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayRouteTableId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayPrefixListReferencesResultTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
+
+- `TransitGatewayRouteTableId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayprefixlistreferencesresulttypedef)\].
+
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")`.
 
 Can be used directly:
 
@@ -2629,22 +2926,26 @@ def get_get_transit_gateway_route_table_associations_paginator() -> GetTransitGa
     return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
+Boto3 documentation:
+[EC2.Paginator.GetTransitGatewayRouteTableAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
 
-```python
-class GetTransitGatewayRouteTableAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayRouteTableId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayRouteTableAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayRouteTableAssociationsPaginator.paginate`
+method:
+
+- `TransitGatewayRouteTableId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayroutetableassociationsresulttypedef)\].
+
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")`.
 
 Can be used directly:
 
@@ -2655,22 +2956,26 @@ def get_get_transit_gateway_route_table_propagations_paginator() -> GetTransitGa
     return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
+Boto3 documentation:
+[EC2.Paginator.GetTransitGatewayRouteTablePropagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
 
-```python
-class GetTransitGatewayRouteTablePropagationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayRouteTableId: str,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayRouteTablePropagationsResultTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayRouteTablePropagationsPaginator.paginate`
+method:
+
+- `TransitGatewayRouteTableId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayroutetablepropagationsresulttypedef)\].
+
 ## SearchLocalGatewayRoutesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("search_local_gateway_routes")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("search_local_gateway_routes")`.
 
 Can be used directly:
 
@@ -2681,22 +2986,26 @@ def get_search_local_gateway_routes_paginator() -> SearchLocalGatewayRoutesPagin
     return boto3.client("ec2").get_paginator("search_local_gateway_routes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
+Boto3 documentation:
+[EC2.Paginator.SearchLocalGatewayRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
 
-```python
-class SearchLocalGatewayRoutesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LocalGatewayRouteTableId: str,
-        Filters: List[FilterTypeDef],
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchLocalGatewayRoutesResultTypeDef]:
-        pass
-```
+Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
+
+- `LocalGatewayRouteTableId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+  *(required)*
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`SearchLocalGatewayRoutesPaginator.paginate` returns
+`Iterator`\[[SearchLocalGatewayRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#searchlocalgatewayroutesresulttypedef)\].
+
 ## SearchTransitGatewayMulticastGroupsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")`.
+Type annotations for
+`boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")`.
 
 Can be used directly:
 
@@ -2707,16 +3016,17 @@ def get_search_transit_gateway_multicast_groups_paginator() -> SearchTransitGate
     return boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
+Boto3 documentation:
+[EC2.Paginator.SearchTransitGatewayMulticastGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
 
-```python
-class SearchTransitGatewayMulticastGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TransitGatewayMulticastDomainId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchTransitGatewayMulticastGroupsResultTypeDef]:
-        pass
-```
+Arguments for `SearchTransitGatewayMulticastGroupsPaginator.paginate` method:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+
+`SearchTransitGatewayMulticastGroupsPaginator.paginate` returns
+`Iterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#searchtransitgatewaymulticastgroupsresulttypedef)\].

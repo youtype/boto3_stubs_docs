@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SES](./README.md) > SESClient
 
-Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+Auto-generated documentation for
+[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+type annotations stubs module
+[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [SESClient for boto3 SES module](#sesclient-for-boto3-ses-module)
   - [SESClient](#sesclient)
@@ -98,12 +100,13 @@ def get_ses_client() -> SESClient:
     return boto3.client("ses")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
+Boto3 documentation:
+[SES.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ses.client import Exceptions
@@ -111,7 +114,6 @@ from mypy_boto3_ses.client import Exceptions
 def handle_error(exc: Exceptions.AccountSendingPausedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -151,1134 +153,1129 @@ Exceptions:
 - `Exceptions.TrackingOptionsAlreadyExistsException`
 - `Exceptions.TrackingOptionsDoesNotExistException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("ses").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.can_paginate]
+Boto3 documentation:
+[SES.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### clone_receipt_rule_set
 
 Type annotations for `boto3.client("ses").clone_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.clone_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set)
 
-```python
-def clone_receipt_rule_set(
-    self,
-    RuleSetName: str,
-    OriginalRuleSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `OriginalRuleSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set
 
 Type annotations for `boto3.client("ses").create_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set]
+Boto3 documentation:
+[SES.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set)
 
-```python
-def create_configuration_set(
-    self,
-    ConfigurationSet: "ConfigurationSetTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSet`:
+  [ConfigurationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#configurationsettypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
-Type annotations for `boto3.client("ses").create_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("ses").create_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination]
+Boto3 documentation:
+[SES.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination)
 
-```python
-def create_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestination: "EventDestinationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#eventdestinationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_tracking_options
 
-Type annotations for `boto3.client("ses").create_configuration_set_tracking_options` method.
+Type annotations for
+`boto3.client("ses").create_configuration_set_tracking_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options]
+Boto3 documentation:
+[SES.Client.create_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options)
 
-```python
-def create_configuration_set_tracking_options(
-    self,
-    ConfigurationSetName: str,
-    TrackingOptions: "TrackingOptionsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#trackingoptionstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_custom_verification_email_template
 
-Type annotations for `boto3.client("ses").create_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("ses").create_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template]
+Boto3 documentation:
+[SES.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
 
-```python
-def create_custom_verification_email_template(
-    self,
-    TemplateName: str,
-    FromEmailAddress: str,
-    TemplateSubject: str,
-    TemplateContent: str,
-    SuccessRedirectionURL: str,
-    FailureRedirectionURL: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `FromEmailAddress`: `str` *(required)*
+- `TemplateSubject`: `str` *(required)*
+- `TemplateContent`: `str` *(required)*
+- `SuccessRedirectionURL`: `str` *(required)*
+- `FailureRedirectionURL`: `str` *(required)*
 
 ### create_receipt_filter
 
 Type annotations for `boto3.client("ses").create_receipt_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter]
+Boto3 documentation:
+[SES.Client.create_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter)
 
-```python
-def create_receipt_filter(
-    self,
-    Filter: "ReceiptFilterTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [ReceiptFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptfiltertypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_receipt_rule
 
 Type annotations for `boto3.client("ses").create_receipt_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule]
+Boto3 documentation:
+[SES.Client.create_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule)
 
-```python
-def create_receipt_rule(
-    self,
-    RuleSetName: str,
-    Rule: "ReceiptRuleTypeDef",
-    After: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `Rule`:
+  [ReceiptRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptruletypedef)
+  *(required)*
+- `After`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_receipt_rule_set
 
 Type annotations for `boto3.client("ses").create_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.create_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set)
 
-```python
-def create_receipt_rule_set(
-    self,
-    RuleSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_template
 
 Type annotations for `boto3.client("ses").create_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template]
+Boto3 documentation:
+[SES.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template)
 
-```python
-def create_template(
-    self,
-    Template: "TemplateTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Template`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#templatetypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set
 
 Type annotations for `boto3.client("ses").delete_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set]
+Boto3 documentation:
+[SES.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set)
 
-```python
-def delete_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
-Type annotations for `boto3.client("ses").delete_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("ses").delete_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination]
+Boto3 documentation:
+[SES.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination)
 
-```python
-def delete_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_tracking_options
 
-Type annotations for `boto3.client("ses").delete_configuration_set_tracking_options` method.
+Type annotations for
+`boto3.client("ses").delete_configuration_set_tracking_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options]
+Boto3 documentation:
+[SES.Client.delete_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options)
 
-```python
-def delete_configuration_set_tracking_options(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_custom_verification_email_template
 
-Type annotations for `boto3.client("ses").delete_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("ses").delete_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template]
+Boto3 documentation:
+[SES.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template)
 
-```python
-def delete_custom_verification_email_template(
-    self,
-    TemplateName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
 
 ### delete_identity
 
 Type annotations for `boto3.client("ses").delete_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity]
+Boto3 documentation:
+[SES.Client.delete_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity)
 
-```python
-def delete_identity(
-    self,
-    Identity: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_identity_policy
 
 Type annotations for `boto3.client("ses").delete_identity_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy]
+Boto3 documentation:
+[SES.Client.delete_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy)
 
-```python
-def delete_identity_policy(
-    self,
-    Identity: str,
-    PolicyName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_receipt_filter
 
 Type annotations for `boto3.client("ses").delete_receipt_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter]
+Boto3 documentation:
+[SES.Client.delete_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter)
 
-```python
-def delete_receipt_filter(
-    self,
-    FilterName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `FilterName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_receipt_rule
 
 Type annotations for `boto3.client("ses").delete_receipt_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule]
+Boto3 documentation:
+[SES.Client.delete_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule)
 
-```python
-def delete_receipt_rule(
-    self,
-    RuleSetName: str,
-    RuleName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `RuleName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_receipt_rule_set
 
 Type annotations for `boto3.client("ses").delete_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.delete_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set)
 
-```python
-def delete_receipt_rule_set(
-    self,
-    RuleSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_template
 
 Type annotations for `boto3.client("ses").delete_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template]
+Boto3 documentation:
+[SES.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template)
 
-```python
-def delete_template(
-    self,
-    TemplateName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_verified_email_address
 
-Type annotations for `boto3.client("ses").delete_verified_email_address` method.
+Type annotations for `boto3.client("ses").delete_verified_email_address`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address]
+Boto3 documentation:
+[SES.Client.delete_verified_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address)
 
-```python
-def delete_verified_email_address(
-    self,
-    EmailAddress: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
 
 ### describe_active_receipt_rule_set
 
-Type annotations for `boto3.client("ses").describe_active_receipt_rule_set` method.
+Type annotations for `boto3.client("ses").describe_active_receipt_rule_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.describe_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set)
 
-```python
-def describe_active_receipt_rule_set(
-    self
-) -> DescribeActiveReceiptRuleSetResponseTypeDef:
-    pass
-```
+Returns
+[DescribeActiveReceiptRuleSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#describeactivereceiptrulesetresponsetypedef).
 
 ### describe_configuration_set
 
 Type annotations for `boto3.client("ses").describe_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set]
+Boto3 documentation:
+[SES.Client.describe_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set)
 
-```python
-def describe_configuration_set(
-    self,
-    ConfigurationSetName: str,
-    ConfigurationSetAttributeNames: List[ConfigurationSetAttribute] = None
-) -> DescribeConfigurationSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `ConfigurationSetAttributeNames`:
+  `List`\[[ConfigurationSetAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#configurationsetattribute)\]
+
+Returns
+[DescribeConfigurationSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#describeconfigurationsetresponsetypedef).
 
 ### describe_receipt_rule
 
 Type annotations for `boto3.client("ses").describe_receipt_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule]
+Boto3 documentation:
+[SES.Client.describe_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule)
 
-```python
-def describe_receipt_rule(
-    self,
-    RuleSetName: str,
-    RuleName: str
-) -> DescribeReceiptRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `RuleName`: `str` *(required)*
+
+Returns
+[DescribeReceiptRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#describereceiptruleresponsetypedef).
 
 ### describe_receipt_rule_set
 
 Type annotations for `boto3.client("ses").describe_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.describe_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set)
 
-```python
-def describe_receipt_rule_set(
-    self,
-    RuleSetName: str
-) -> DescribeReceiptRuleSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+
+Returns
+[DescribeReceiptRuleSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#describereceiptrulesetresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ses").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.generate_presigned_url]
+Boto3 documentation:
+[SES.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_sending_enabled
 
 Type annotations for `boto3.client("ses").get_account_sending_enabled` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled]
+Boto3 documentation:
+[SES.Client.get_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled)
 
-```python
-def get_account_sending_enabled(
-    self
-) -> GetAccountSendingEnabledResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountSendingEnabledResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getaccountsendingenabledresponsetypedef).
 
 ### get_custom_verification_email_template
 
-Type annotations for `boto3.client("ses").get_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("ses").get_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template]
+Boto3 documentation:
+[SES.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template)
 
-```python
-def get_custom_verification_email_template(
-    self,
-    TemplateName: str
-) -> GetCustomVerificationEmailTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns
+[GetCustomVerificationEmailTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getcustomverificationemailtemplateresponsetypedef).
 
 ### get_identity_dkim_attributes
 
 Type annotations for `boto3.client("ses").get_identity_dkim_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes]
+Boto3 documentation:
+[SES.Client.get_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes)
 
-```python
-def get_identity_dkim_attributes(
-    self,
-    Identities: List[str]
-) -> GetIdentityDkimAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identities`: `List`\[`str`\] *(required)*
+
+Returns
+[GetIdentityDkimAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getidentitydkimattributesresponsetypedef).
 
 ### get_identity_mail_from_domain_attributes
 
-Type annotations for `boto3.client("ses").get_identity_mail_from_domain_attributes` method.
+Type annotations for
+`boto3.client("ses").get_identity_mail_from_domain_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes]
+Boto3 documentation:
+[SES.Client.get_identity_mail_from_domain_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes)
 
-```python
-def get_identity_mail_from_domain_attributes(
-    self,
-    Identities: List[str]
-) -> GetIdentityMailFromDomainAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identities`: `List`\[`str`\] *(required)*
+
+Returns
+[GetIdentityMailFromDomainAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getidentitymailfromdomainattributesresponsetypedef).
 
 ### get_identity_notification_attributes
 
-Type annotations for `boto3.client("ses").get_identity_notification_attributes` method.
+Type annotations for `boto3.client("ses").get_identity_notification_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes]
+Boto3 documentation:
+[SES.Client.get_identity_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes)
 
-```python
-def get_identity_notification_attributes(
-    self,
-    Identities: List[str]
-) -> GetIdentityNotificationAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identities`: `List`\[`str`\] *(required)*
+
+Returns
+[GetIdentityNotificationAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getidentitynotificationattributesresponsetypedef).
 
 ### get_identity_policies
 
 Type annotations for `boto3.client("ses").get_identity_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies]
+Boto3 documentation:
+[SES.Client.get_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies)
 
-```python
-def get_identity_policies(
-    self,
-    Identity: str,
-    PolicyNames: List[str]
-) -> GetIdentityPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `PolicyNames`: `List`\[`str`\] *(required)*
+
+Returns
+[GetIdentityPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getidentitypoliciesresponsetypedef).
 
 ### get_identity_verification_attributes
 
-Type annotations for `boto3.client("ses").get_identity_verification_attributes` method.
+Type annotations for `boto3.client("ses").get_identity_verification_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes]
+Boto3 documentation:
+[SES.Client.get_identity_verification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes)
 
-```python
-def get_identity_verification_attributes(
-    self,
-    Identities: List[str]
-) -> GetIdentityVerificationAttributesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identities`: `List`\[`str`\] *(required)*
+
+Returns
+[GetIdentityVerificationAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getidentityverificationattributesresponsetypedef).
 
 ### get_send_quota
 
 Type annotations for `boto3.client("ses").get_send_quota` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota]
+Boto3 documentation:
+[SES.Client.get_send_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota)
 
-```python
-def get_send_quota(
-    self
-) -> GetSendQuotaResponseTypeDef:
-    pass
-```
+Returns
+[GetSendQuotaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getsendquotaresponsetypedef).
 
 ### get_send_statistics
 
 Type annotations for `boto3.client("ses").get_send_statistics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics]
+Boto3 documentation:
+[SES.Client.get_send_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics)
 
-```python
-def get_send_statistics(
-    self
-) -> GetSendStatisticsResponseTypeDef:
-    pass
-```
+Returns
+[GetSendStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#getsendstatisticsresponsetypedef).
 
 ### get_template
 
 Type annotations for `boto3.client("ses").get_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template]
+Boto3 documentation:
+[SES.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template)
 
-```python
-def get_template(
-    self,
-    TemplateName: str
-) -> GetTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+
+Returns
+[GetTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#gettemplateresponsetypedef).
 
 ### list_configuration_sets
 
 Type annotations for `boto3.client("ses").list_configuration_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets]
+Boto3 documentation:
+[SES.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets)
 
-```python
-def list_configuration_sets(
-    self,
-    NextToken: str = None,
-    MaxItems: int = None
-) -> ListConfigurationSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listconfigurationsetsresponsetypedef).
 
 ### list_custom_verification_email_templates
 
-Type annotations for `boto3.client("ses").list_custom_verification_email_templates` method.
+Type annotations for
+`boto3.client("ses").list_custom_verification_email_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates]
+Boto3 documentation:
+[SES.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates)
 
-```python
-def list_custom_verification_email_templates(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListCustomVerificationEmailTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCustomVerificationEmailTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listcustomverificationemailtemplatesresponsetypedef).
 
 ### list_identities
 
 Type annotations for `boto3.client("ses").list_identities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities]
+Boto3 documentation:
+[SES.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities)
 
-```python
-def list_identities(
-    self,
-    IdentityType: IdentityType = None,
-    NextToken: str = None,
-    MaxItems: int = None
-) -> ListIdentitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#identitytype)
+- `NextToken`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listidentitiesresponsetypedef).
 
 ### list_identity_policies
 
 Type annotations for `boto3.client("ses").list_identity_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies]
+Boto3 documentation:
+[SES.Client.list_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies)
 
-```python
-def list_identity_policies(
-    self,
-    Identity: str
-) -> ListIdentityPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+
+Returns
+[ListIdentityPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listidentitypoliciesresponsetypedef).
 
 ### list_receipt_filters
 
 Type annotations for `boto3.client("ses").list_receipt_filters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters]
+Boto3 documentation:
+[SES.Client.list_receipt_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters)
 
-```python
-def list_receipt_filters(
-    self
-) -> ListReceiptFiltersResponseTypeDef:
-    pass
-```
+Returns
+[ListReceiptFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listreceiptfiltersresponsetypedef).
 
 ### list_receipt_rule_sets
 
 Type annotations for `boto3.client("ses").list_receipt_rule_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets]
+Boto3 documentation:
+[SES.Client.list_receipt_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets)
 
-```python
-def list_receipt_rule_sets(
-    self,
-    NextToken: str = None
-) -> ListReceiptRuleSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListReceiptRuleSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listreceiptrulesetsresponsetypedef).
 
 ### list_templates
 
 Type annotations for `boto3.client("ses").list_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates]
+Boto3 documentation:
+[SES.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates)
 
-```python
-def list_templates(
-    self,
-    NextToken: str = None,
-    MaxItems: int = None
-) -> ListTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listtemplatesresponsetypedef).
 
 ### list_verified_email_addresses
 
-Type annotations for `boto3.client("ses").list_verified_email_addresses` method.
+Type annotations for `boto3.client("ses").list_verified_email_addresses`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses]
+Boto3 documentation:
+[SES.Client.list_verified_email_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses)
 
-```python
-def list_verified_email_addresses(
-    self
-) -> ListVerifiedEmailAddressesResponseTypeDef:
-    pass
-```
+Returns
+[ListVerifiedEmailAddressesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listverifiedemailaddressesresponsetypedef).
 
 ### put_configuration_set_delivery_options
 
-Type annotations for `boto3.client("ses").put_configuration_set_delivery_options` method.
+Type annotations for
+`boto3.client("ses").put_configuration_set_delivery_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options]
+Boto3 documentation:
+[SES.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options)
 
-```python
-def put_configuration_set_delivery_options(
-    self,
-    ConfigurationSetName: str,
-    DeliveryOptions: "DeliveryOptionsTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `DeliveryOptions`:
+  [DeliveryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#deliveryoptionstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_identity_policy
 
 Type annotations for `boto3.client("ses").put_identity_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy]
+Boto3 documentation:
+[SES.Client.put_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy)
 
-```python
-def put_identity_policy(
-    self,
-    Identity: str,
-    PolicyName: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `PolicyName`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reorder_receipt_rule_set
 
 Type annotations for `boto3.client("ses").reorder_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.reorder_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set)
 
-```python
-def reorder_receipt_rule_set(
-    self,
-    RuleSetName: str,
-    RuleNames: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `RuleNames`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### send_bounce
 
 Type annotations for `boto3.client("ses").send_bounce` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce]
+Boto3 documentation:
+[SES.Client.send_bounce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce)
 
-```python
-def send_bounce(
-    self,
-    OriginalMessageId: str,
-    BounceSender: str,
-    BouncedRecipientInfoList: List[BouncedRecipientInfoTypeDef],
-    Explanation: str = None,
-    MessageDsn: MessageDsnTypeDef = None,
-    BounceSenderArn: str = None
-) -> SendBounceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OriginalMessageId`: `str` *(required)*
+- `BounceSender`: `str` *(required)*
+- `BouncedRecipientInfoList`:
+  `List`\[[BouncedRecipientInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#bouncedrecipientinfotypedef)\]
+  *(required)*
+- `Explanation`: `str`
+- `MessageDsn`:
+  [MessageDsnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagedsntypedef)
+- `BounceSenderArn`: `str`
+
+Returns
+[SendBounceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendbounceresponsetypedef).
 
 ### send_bulk_templated_email
 
 Type annotations for `boto3.client("ses").send_bulk_templated_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email]
+Boto3 documentation:
+[SES.Client.send_bulk_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email)
 
-```python
-def send_bulk_templated_email(
-    self,
-    Source: str,
-    Template: str,
-    Destinations: List[BulkEmailDestinationTypeDef],
-    SourceArn: str = None,
-    ReplyToAddresses: List[str] = None,
-    ReturnPath: str = None,
-    ReturnPathArn: str = None,
-    ConfigurationSetName: str = None,
-    DefaultTags: List["MessageTagTypeDef"] = None,
-    TemplateArn: str = None,
-    DefaultTemplateData: str = None
-) -> SendBulkTemplatedEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Source`: `str` *(required)*
+- `Template`: `str` *(required)*
+- `Destinations`:
+  `List`\[[BulkEmailDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#bulkemaildestinationtypedef)\]
+  *(required)*
+- `SourceArn`: `str`
+- `ReplyToAddresses`: `List`\[`str`\]
+- `ReturnPath`: `str`
+- `ReturnPathArn`: `str`
+- `ConfigurationSetName`: `str`
+- `DefaultTags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetagtypedef)\]
+- `TemplateArn`: `str`
+- `DefaultTemplateData`: `str`
+
+Returns
+[SendBulkTemplatedEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendbulktemplatedemailresponsetypedef).
 
 ### send_custom_verification_email
 
-Type annotations for `boto3.client("ses").send_custom_verification_email` method.
+Type annotations for `boto3.client("ses").send_custom_verification_email`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email]
+Boto3 documentation:
+[SES.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email)
 
-```python
-def send_custom_verification_email(
-    self,
-    EmailAddress: str,
-    TemplateName: str,
-    ConfigurationSetName: str = None
-) -> SendCustomVerificationEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
+- `TemplateName`: `str` *(required)*
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendCustomVerificationEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendcustomverificationemailresponsetypedef).
 
 ### send_email
 
 Type annotations for `boto3.client("ses").send_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email]
+Boto3 documentation:
+[SES.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email)
 
-```python
-def send_email(
-    self,
-    Source: str,
-    Destination: "DestinationTypeDef",
-    Message: MessageTypeDef,
-    ReplyToAddresses: List[str] = None,
-    ReturnPath: str = None,
-    SourceArn: str = None,
-    ReturnPathArn: str = None,
-    Tags: List["MessageTagTypeDef"] = None,
-    ConfigurationSetName: str = None
-) -> SendEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Source`: `str` *(required)*
+- `Destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#destinationtypedef)
+  *(required)*
+- `Message`:
+  [MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetypedef)
+  *(required)*
+- `ReplyToAddresses`: `List`\[`str`\]
+- `ReturnPath`: `str`
+- `SourceArn`: `str`
+- `ReturnPathArn`: `str`
+- `Tags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendemailresponsetypedef).
 
 ### send_raw_email
 
 Type annotations for `boto3.client("ses").send_raw_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email]
+Boto3 documentation:
+[SES.Client.send_raw_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email)
 
-```python
-def send_raw_email(
-    self,
-    RawMessage: RawMessageTypeDef,
-    Source: str = None,
-    Destinations: List[str] = None,
-    FromArn: str = None,
-    SourceArn: str = None,
-    ReturnPathArn: str = None,
-    Tags: List["MessageTagTypeDef"] = None,
-    ConfigurationSetName: str = None
-) -> SendRawEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RawMessage`:
+  [RawMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#rawmessagetypedef)
+  *(required)*
+- `Source`: `str`
+- `Destinations`: `List`\[`str`\]
+- `FromArn`: `str`
+- `SourceArn`: `str`
+- `ReturnPathArn`: `str`
+- `Tags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+
+Returns
+[SendRawEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendrawemailresponsetypedef).
 
 ### send_templated_email
 
 Type annotations for `boto3.client("ses").send_templated_email` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email]
+Boto3 documentation:
+[SES.Client.send_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email)
 
-```python
-def send_templated_email(
-    self,
-    Source: str,
-    Destination: "DestinationTypeDef",
-    Template: str,
-    TemplateData: str,
-    ReplyToAddresses: List[str] = None,
-    ReturnPath: str = None,
-    SourceArn: str = None,
-    ReturnPathArn: str = None,
-    Tags: List["MessageTagTypeDef"] = None,
-    ConfigurationSetName: str = None,
-    TemplateArn: str = None
-) -> SendTemplatedEmailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Source`: `str` *(required)*
+- `Destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#destinationtypedef)
+  *(required)*
+- `Template`: `str` *(required)*
+- `TemplateData`: `str` *(required)*
+- `ReplyToAddresses`: `List`\[`str`\]
+- `ReturnPath`: `str`
+- `SourceArn`: `str`
+- `ReturnPathArn`: `str`
+- `Tags`:
+  `List`\[[MessageTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#messagetagtypedef)\]
+- `ConfigurationSetName`: `str`
+- `TemplateArn`: `str`
+
+Returns
+[SendTemplatedEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#sendtemplatedemailresponsetypedef).
 
 ### set_active_receipt_rule_set
 
 Type annotations for `boto3.client("ses").set_active_receipt_rule_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set]
+Boto3 documentation:
+[SES.Client.set_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set)
 
-```python
-def set_active_receipt_rule_set(
-    self,
-    RuleSetName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_identity_dkim_enabled
 
 Type annotations for `boto3.client("ses").set_identity_dkim_enabled` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled]
+Boto3 documentation:
+[SES.Client.set_identity_dkim_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled)
 
-```python
-def set_identity_dkim_enabled(
-    self,
-    Identity: str,
-    DkimEnabled: bool
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `DkimEnabled`: `bool` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_identity_feedback_forwarding_enabled
 
-Type annotations for `boto3.client("ses").set_identity_feedback_forwarding_enabled` method.
+Type annotations for
+`boto3.client("ses").set_identity_feedback_forwarding_enabled` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled]
+Boto3 documentation:
+[SES.Client.set_identity_feedback_forwarding_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled)
 
-```python
-def set_identity_feedback_forwarding_enabled(
-    self,
-    Identity: str,
-    ForwardingEnabled: bool
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `ForwardingEnabled`: `bool` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_identity_headers_in_notifications_enabled
 
-Type annotations for `boto3.client("ses").set_identity_headers_in_notifications_enabled` method.
+Type annotations for
+`boto3.client("ses").set_identity_headers_in_notifications_enabled` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled]
+Boto3 documentation:
+[SES.Client.set_identity_headers_in_notifications_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
 
-```python
-def set_identity_headers_in_notifications_enabled(
-    self,
-    Identity: str,
-    NotificationType: NotificationType,
-    Enabled: bool
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `NotificationType`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#notificationtype)
+  *(required)*
+- `Enabled`: `bool` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_identity_mail_from_domain
 
-Type annotations for `boto3.client("ses").set_identity_mail_from_domain` method.
+Type annotations for `boto3.client("ses").set_identity_mail_from_domain`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain]
+Boto3 documentation:
+[SES.Client.set_identity_mail_from_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
 
-```python
-def set_identity_mail_from_domain(
-    self,
-    Identity: str,
-    MailFromDomain: str = None,
-    BehaviorOnMXFailure: BehaviorOnMXFailure = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `MailFromDomain`: `str`
+- `BehaviorOnMXFailure`:
+  [BehaviorOnMXFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#behavioronmxfailure)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_identity_notification_topic
 
-Type annotations for `boto3.client("ses").set_identity_notification_topic` method.
+Type annotations for `boto3.client("ses").set_identity_notification_topic`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic]
+Boto3 documentation:
+[SES.Client.set_identity_notification_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic)
 
-```python
-def set_identity_notification_topic(
-    self,
-    Identity: str,
-    NotificationType: NotificationType,
-    SnsTopic: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Identity`: `str` *(required)*
+- `NotificationType`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#notificationtype)
+  *(required)*
+- `SnsTopic`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### set_receipt_rule_position
 
 Type annotations for `boto3.client("ses").set_receipt_rule_position` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position]
+Boto3 documentation:
+[SES.Client.set_receipt_rule_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position)
 
-```python
-def set_receipt_rule_position(
-    self,
-    RuleSetName: str,
-    RuleName: str,
-    After: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `RuleName`: `str` *(required)*
+- `After`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### test_render_template
 
 Type annotations for `boto3.client("ses").test_render_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template]
+Boto3 documentation:
+[SES.Client.test_render_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template)
 
-```python
-def test_render_template(
-    self,
-    TemplateName: str,
-    TemplateData: str
-) -> TestRenderTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `TemplateData`: `str` *(required)*
+
+Returns
+[TestRenderTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#testrendertemplateresponsetypedef).
 
 ### update_account_sending_enabled
 
-Type annotations for `boto3.client("ses").update_account_sending_enabled` method.
+Type annotations for `boto3.client("ses").update_account_sending_enabled`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled]
+Boto3 documentation:
+[SES.Client.update_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled)
 
-```python
-def update_account_sending_enabled(
-    self,
-    Enabled: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Enabled`: `bool`
 
 ### update_configuration_set_event_destination
 
-Type annotations for `boto3.client("ses").update_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("ses").update_configuration_set_event_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination]
+Boto3 documentation:
+[SES.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination)
 
-```python
-def update_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestination: "EventDestinationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#eventdestinationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_configuration_set_reputation_metrics_enabled
 
-Type annotations for `boto3.client("ses").update_configuration_set_reputation_metrics_enabled` method.
+Type annotations for
+`boto3.client("ses").update_configuration_set_reputation_metrics_enabled`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled]
+Boto3 documentation:
+[SES.Client.update_configuration_set_reputation_metrics_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled)
 
-```python
-def update_configuration_set_reputation_metrics_enabled(
-    self,
-    ConfigurationSetName: str,
-    Enabled: bool
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `Enabled`: `bool` *(required)*
 
 ### update_configuration_set_sending_enabled
 
-Type annotations for `boto3.client("ses").update_configuration_set_sending_enabled` method.
+Type annotations for
+`boto3.client("ses").update_configuration_set_sending_enabled` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled]
+Boto3 documentation:
+[SES.Client.update_configuration_set_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled)
 
-```python
-def update_configuration_set_sending_enabled(
-    self,
-    ConfigurationSetName: str,
-    Enabled: bool
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `Enabled`: `bool` *(required)*
 
 ### update_configuration_set_tracking_options
 
-Type annotations for `boto3.client("ses").update_configuration_set_tracking_options` method.
+Type annotations for
+`boto3.client("ses").update_configuration_set_tracking_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options]
+Boto3 documentation:
+[SES.Client.update_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options)
 
-```python
-def update_configuration_set_tracking_options(
-    self,
-    ConfigurationSetName: str,
-    TrackingOptions: "TrackingOptionsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `TrackingOptions`:
+  [TrackingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#trackingoptionstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_custom_verification_email_template
 
-Type annotations for `boto3.client("ses").update_custom_verification_email_template` method.
+Type annotations for
+`boto3.client("ses").update_custom_verification_email_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template]
+Boto3 documentation:
+[SES.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
 
-```python
-def update_custom_verification_email_template(
-    self,
-    TemplateName: str,
-    FromEmailAddress: str = None,
-    TemplateSubject: str = None,
-    TemplateContent: str = None,
-    SuccessRedirectionURL: str = None,
-    FailureRedirectionURL: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `TemplateName`: `str` *(required)*
+- `FromEmailAddress`: `str`
+- `TemplateSubject`: `str`
+- `TemplateContent`: `str`
+- `SuccessRedirectionURL`: `str`
+- `FailureRedirectionURL`: `str`
 
 ### update_receipt_rule
 
 Type annotations for `boto3.client("ses").update_receipt_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule]
+Boto3 documentation:
+[SES.Client.update_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule)
 
-```python
-def update_receipt_rule(
-    self,
-    RuleSetName: str,
-    Rule: "ReceiptRuleTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `RuleSetName`: `str` *(required)*
+- `Rule`:
+  [ReceiptRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#receiptruletypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_template
 
 Type annotations for `boto3.client("ses").update_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template]
+Boto3 documentation:
+[SES.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template)
 
-```python
-def update_template(
-    self,
-    Template: "TemplateTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Template`:
+  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#templatetypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### verify_domain_dkim
 
 Type annotations for `boto3.client("ses").verify_domain_dkim` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim]
+Boto3 documentation:
+[SES.Client.verify_domain_dkim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim)
 
-```python
-def verify_domain_dkim(
-    self,
-    Domain: str
-) -> VerifyDomainDkimResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Domain`: `str` *(required)*
+
+Returns
+[VerifyDomainDkimResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#verifydomaindkimresponsetypedef).
 
 ### verify_domain_identity
 
 Type annotations for `boto3.client("ses").verify_domain_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity]
+Boto3 documentation:
+[SES.Client.verify_domain_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity)
 
-```python
-def verify_domain_identity(
-    self,
-    Domain: str
-) -> VerifyDomainIdentityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Domain`: `str` *(required)*
+
+Returns
+[VerifyDomainIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#verifydomainidentityresponsetypedef).
 
 ### verify_email_address
 
 Type annotations for `boto3.client("ses").verify_email_address` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address]
+Boto3 documentation:
+[SES.Client.verify_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address)
 
-```python
-def verify_email_address(
-    self,
-    EmailAddress: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `EmailAddress`: `str` *(required)*
 
 ### verify_email_identity
 
 Type annotations for `boto3.client("ses").verify_email_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity]
+Boto3 documentation:
+[SES.Client.verify_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity)
 
-```python
-def verify_email_identity(
-    self,
-    EmailAddress: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `EmailAddress`: `str` *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("ses").get_paginator` method with overloads.
 
-- `client.get_paginator("list_configuration_sets")` -> [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
-- `client.get_paginator("list_custom_verification_email_templates")` -> [ListCustomVerificationEmailTemplatesPaginator](./paginators.md#listcustomverificationemailtemplatespaginator)
-- `client.get_paginator("list_identities")` -> [ListIdentitiesPaginator](./paginators.md#listidentitiespaginator)
-- `client.get_paginator("list_receipt_rule_sets")` -> [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
-- `client.get_paginator("list_templates")` -> [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
-
-
-
+- `client.get_paginator("list_configuration_sets")` ->
+  [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
+- `client.get_paginator("list_custom_verification_email_templates")` ->
+  [ListCustomVerificationEmailTemplatesPaginator](./paginators.md#listcustomverificationemailtemplatespaginator)
+- `client.get_paginator("list_identities")` ->
+  [ListIdentitiesPaginator](./paginators.md#listidentitiespaginator)
+- `client.get_paginator("list_receipt_rule_sets")` ->
+  [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
+- `client.get_paginator("list_templates")` ->
+  [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("ses").get_waiter` method with overloads.
 
-- `client.get_waiter("identity_exists")` -> [IdentityExistsWaiter](./waiters.md#identityexistswaiter)
+- `client.get_waiter("identity_exists")` ->
+  [IdentityExistsWaiter](./waiters.md#identityexistswaiter)

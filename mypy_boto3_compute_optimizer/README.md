@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ComputeOptimizer
 
-Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
-type annotations stubs module [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+Auto-generated documentation for
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+type annotations stubs module
+[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 ```bash
 pip install mypy-boto3-compute-optimizer
@@ -18,7 +20,8 @@ pip install mypy-boto3-compute-optimizer
 
 ## ComputeOptimizerClient
 
-Type annotations for  `boto3.client("compute-optimizer")` as [ComputeOptimizerClient](./client.md)
+Type annotations for `boto3.client("compute-optimizer")` as
+[ComputeOptimizerClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 ```
 
-
 ComputeOptimizerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_recommendation_export_jobs](./client.md#describe-recommendation-export-jobs)
 - [export_auto_scaling_group_recommendations](./client.md#export-auto-scaling-group-recommendations)
@@ -46,10 +47,8 @@ ComputeOptimizerClient [exceptions](./client.md#exceptions)
 - [get_recommendation_summaries](./client.md#get-recommendation-summaries)
 - [update_enrollment_status](./client.md#update-enrollment-status)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
@@ -60,15 +59,6 @@ ComputeOptimizerClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -104,13 +94,10 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterName, ...
 - [ResourceType](./literals.md#resourcetype)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

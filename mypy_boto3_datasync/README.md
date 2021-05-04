@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DataSync
 
-Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+Auto-generated documentation for
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+type annotations stubs module
+[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 ```bash
 pip install mypy-boto3-datasync
@@ -19,7 +21,8 @@ pip install mypy-boto3-datasync
 
 ## DataSyncClient
 
-Type annotations for  `boto3.client("datasync")` as [DataSyncClient](./client.md)
+Type annotations for `boto3.client("datasync")` as
+[DataSyncClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_datasync.client import DataSyncClient
 ```
 
-
 DataSyncClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_task_execution](./client.md#cancel-task-execution)
 - [create_agent](./client.md#create-agent)
@@ -72,22 +73,16 @@ DataSyncClient [exceptions](./client.md#exceptions)
 - [update_task](./client.md#update-task)
 - [update_task_execution](./client.md#update-task-execution)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalException](./client.md#internalexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("datasync").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("datasync").get_paginator("...")`.
 
 Can be used directly:
 
@@ -100,11 +95,6 @@ from mypy_boto3_datasync.paginators import ListAgentsPaginator, ...
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
 - [ListTasksPaginator](./paginators.md#listtaskspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -147,13 +137,10 @@ from mypy_boto3_datasync.literals import AgentStatus, ...
 - [Uid](./literals.md#uid)
 - [VerifyMode](./literals.md#verifymode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

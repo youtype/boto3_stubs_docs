@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RAM](./README.md) > Literals
 
-Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+Auto-generated documentation for
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+type annotations stubs module
+[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [Literals for boto3 RAM module](#literals-for-boto3-ram-module)
   - [GetResourcePoliciesPaginatorName](#getresourcepoliciespaginatorname)

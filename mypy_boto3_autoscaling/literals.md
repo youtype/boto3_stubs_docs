@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AutoScaling](./README.md) > Literals
 
-Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+Auto-generated documentation for
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+type annotations stubs module
+[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Literals for boto3 AutoScaling module](#literals-for-boto3-autoscaling-module)
   - [DescribeAutoScalingGroupsPaginatorName](#describeautoscalinggroupspaginatorname)

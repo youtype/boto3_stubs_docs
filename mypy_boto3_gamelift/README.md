@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > GameLift
 
-Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+Auto-generated documentation for
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+type annotations stubs module
+[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ```bash
 pip install mypy-boto3-gamelift
@@ -19,7 +21,8 @@ pip install mypy-boto3-gamelift
 
 ## GameLiftClient
 
-Type annotations for  `boto3.client("gamelift")` as [GameLiftClient](./client.md)
+Type annotations for `boto3.client("gamelift")` as
+[GameLiftClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_gamelift.client import GameLiftClient
 ```
 
-
 GameLiftClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_match](./client.md#accept-match)
 - [can_paginate](./client.md#can-paginate)
 - [claim_game_server](./client.md#claim-game-server)
@@ -132,10 +133,8 @@ GameLiftClient [exceptions](./client.md#exceptions)
 - [update_script](./client.md#update-script)
 - [validate_matchmaking_rule_set](./client.md#validate-matchmaking-rule-set)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [FleetCapacityExceededException](./client.md#fleetcapacityexceededexception)
@@ -153,14 +152,10 @@ GameLiftClient [exceptions](./client.md#exceptions)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 - [UnsupportedRegionException](./client.md#unsupportedregionexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("gamelift").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("gamelift").get_paginator("...")`.
 
 Can be used directly:
 
@@ -188,11 +183,6 @@ from mypy_boto3_gamelift.paginators import DescribeFleetAttributesPaginator, ...
 - [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
 - [ListScriptsPaginator](./paginators.md#listscriptspaginator)
 - [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -264,13 +254,10 @@ from mypy_boto3_gamelift.literals import AcceptanceType, ...
 - [SearchGameSessionsPaginatorName](./literals.md#searchgamesessionspaginatorname)
 - [SortOrder](./literals.md#sortorder)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

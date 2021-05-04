@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > TimestreamWrite
 
-Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
-type annotations stubs module [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+Auto-generated documentation for
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+type annotations stubs module
+[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 ```bash
 pip install mypy-boto3-timestream-write
@@ -18,7 +20,8 @@ pip install mypy-boto3-timestream-write
 
 ## TimestreamWriteClient
 
-Type annotations for  `boto3.client("timestream-write")` as [TimestreamWriteClient](./client.md)
+Type annotations for `boto3.client("timestream-write")` as
+[TimestreamWriteClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 ```
 
-
 TimestreamWriteClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_database](./client.md#create-database)
 - [create_table](./client.md#create-table)
@@ -50,10 +51,8 @@ TimestreamWriteClient [exceptions](./client.md#exceptions)
 - [update_table](./client.md#update-table)
 - [write_records](./client.md#write-records)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -64,15 +63,6 @@ TimestreamWriteClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -89,13 +79,10 @@ from mypy_boto3_timestream_write.literals import DimensionValueType, ...
 - [TableStatus](./literals.md#tablestatus)
 - [TimeUnit](./literals.md#timeunit)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

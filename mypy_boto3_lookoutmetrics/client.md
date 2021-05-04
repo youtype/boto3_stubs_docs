@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > LookoutMetricsClient
 
-Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+Auto-generated documentation for
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+type annotations stubs module
+[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [LookoutMetricsClient for boto3 LookoutMetrics module](#lookoutmetricsclient-for-boto3-lookoutmetrics-module)
   - [LookoutMetricsClient](#lookoutmetricsclient)
@@ -50,12 +52,13 @@ def get_lookoutmetrics_client() -> LookoutMetricsClient:
     return boto3.client("lookoutmetrics")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
+Boto3 documentation:
+[LookoutMetrics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lookoutmetrics.client import Exceptions
@@ -63,7 +66,6 @@ from mypy_boto3_lookoutmetrics.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -76,441 +78,460 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### activate_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").activate_anomaly_detector` method.
+Type annotations for `boto3.client("lookoutmetrics").activate_anomaly_detector`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
 
-```python
-def activate_anomaly_detector(
-    self,
-    AnomalyDetectorArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### back_test_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
+Type annotations for
+`boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
 
-```python
-def back_test_anomaly_detector(
-    self,
-    AnomalyDetectorArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("lookoutmetrics").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate]
+Boto3 documentation:
+[LookoutMetrics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_alert
 
 Type annotations for `boto3.client("lookoutmetrics").create_alert` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert]
+Boto3 documentation:
+[LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
 
-```python
-def create_alert(
-    self,
-    AlertName: str,
-    AlertSensitivityThreshold: int,
-    AnomalyDetectorArn: str,
-    Action: "ActionTypeDef",
-    AlertDescription: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateAlertResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AlertName`: `str` *(required)*
+- `AlertSensitivityThreshold`: `int` *(required)*
+- `AnomalyDetectorArn`: `str` *(required)*
+- `Action`:
+  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#actiontypedef)
+  *(required)*
+- `AlertDescription`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAlertResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createalertresponsetypedef).
 
 ### create_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").create_anomaly_detector` method.
+Type annotations for `boto3.client("lookoutmetrics").create_anomaly_detector`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
 
-```python
-def create_anomaly_detector(
-    self,
-    AnomalyDetectorName: str,
-    AnomalyDetectorConfig: AnomalyDetectorConfigTypeDef,
-    AnomalyDetectorDescription: str = None,
-    KmsKeyArn: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateAnomalyDetectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorName`: `str` *(required)*
+- `AnomalyDetectorConfig`:
+  [AnomalyDetectorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorconfigtypedef)
+  *(required)*
+- `AnomalyDetectorDescription`: `str`
+- `KmsKeyArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createanomalydetectorresponsetypedef).
 
 ### create_metric_set
 
 Type annotations for `boto3.client("lookoutmetrics").create_metric_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set]
+Boto3 documentation:
+[LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
 
-```python
-def create_metric_set(
-    self,
-    AnomalyDetectorArn: str,
-    MetricSetName: str,
-    MetricList: List["MetricTypeDef"],
-    MetricSource: "MetricSourceTypeDef",
-    MetricSetDescription: str = None,
-    Offset: int = None,
-    TimestampColumn: "TimestampColumnTypeDef" = None,
-    DimensionList: List[str] = None,
-    MetricSetFrequency: Frequency = None,
-    Timezone: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateMetricSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `MetricSetName`: `str` *(required)*
+- `MetricList`:
+  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metrictypedef)\]
+  *(required)*
+- `MetricSource`:
+  [MetricSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsourcetypedef)
+  *(required)*
+- `MetricSetDescription`: `str`
+- `Offset`: `int`
+- `TimestampColumn`:
+  [TimestampColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timestampcolumntypedef)
+- `DimensionList`: `List`\[`str`\]
+- `MetricSetFrequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
+- `Timezone`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createmetricsetresponsetypedef).
 
 ### delete_alert
 
 Type annotations for `boto3.client("lookoutmetrics").delete_alert` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert]
+Boto3 documentation:
+[LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
 
-```python
-def delete_alert(
-    self,
-    AlertArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AlertArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").delete_anomaly_detector` method.
+Type annotations for `boto3.client("lookoutmetrics").delete_anomaly_detector`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
 
-```python
-def delete_anomaly_detector(
-    self,
-    AnomalyDetectorArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_alert
 
 Type annotations for `boto3.client("lookoutmetrics").describe_alert` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert]
+Boto3 documentation:
+[LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
 
-```python
-def describe_alert(
-    self,
-    AlertArn: str
-) -> DescribeAlertResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AlertArn`: `str` *(required)*
+
+Returns
+[DescribeAlertResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describealertresponsetypedef).
 
 ### describe_anomaly_detection_executions
 
-Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
+Type annotations for
+`boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions]
+Boto3 documentation:
+[LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
 
-```python
-def describe_anomaly_detection_executions(
-    self,
-    AnomalyDetectorArn: str,
-    Timestamp: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAnomalyDetectionExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `Timestamp`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAnomalyDetectionExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describeanomalydetectionexecutionsresponsetypedef).
 
 ### describe_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detector` method.
+Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detector`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
 
-```python
-def describe_anomaly_detector(
-    self,
-    AnomalyDetectorArn: str
-) -> DescribeAnomalyDetectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns
+[DescribeAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describeanomalydetectorresponsetypedef).
 
 ### describe_metric_set
 
-Type annotations for `boto3.client("lookoutmetrics").describe_metric_set` method.
+Type annotations for `boto3.client("lookoutmetrics").describe_metric_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set]
+Boto3 documentation:
+[LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
 
-```python
-def describe_metric_set(
-    self,
-    MetricSetArn: str
-) -> DescribeMetricSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MetricSetArn`: `str` *(required)*
+
+Returns
+[DescribeMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describemetricsetresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("lookoutmetrics").generate_presigned_url` method.
+Type annotations for `boto3.client("lookoutmetrics").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url]
+Boto3 documentation:
+[LookoutMetrics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_anomaly_group
 
 Type annotations for `boto3.client("lookoutmetrics").get_anomaly_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group]
+Boto3 documentation:
+[LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
 
-```python
-def get_anomaly_group(
-    self,
-    AnomalyGroupId: str,
-    AnomalyDetectorArn: str
-) -> GetAnomalyGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyGroupId`: `str` *(required)*
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns
+[GetAnomalyGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getanomalygroupresponsetypedef).
 
 ### get_feedback
 
 Type annotations for `boto3.client("lookoutmetrics").get_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback]
+Boto3 documentation:
+[LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
 
-```python
-def get_feedback(
-    self,
-    AnomalyDetectorArn: str,
-    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesTypeDef,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetFeedbackResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `AnomalyGroupTimeSeriesFeedback`:
+  [AnomalyGroupTimeSeriesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygrouptimeseriestypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getfeedbackresponsetypedef).
 
 ### get_sample_data
 
 Type annotations for `boto3.client("lookoutmetrics").get_sample_data` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data]
+Boto3 documentation:
+[LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
 
-```python
-def get_sample_data(
-    self,
-    S3SourceConfig: SampleDataS3SourceConfigTypeDef = None
-) -> GetSampleDataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `S3SourceConfig`:
+  [SampleDataS3SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#sampledatas3sourceconfigtypedef)
+
+Returns
+[GetSampleDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getsampledataresponsetypedef).
 
 ### list_alerts
 
 Type annotations for `boto3.client("lookoutmetrics").list_alerts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts]
+Boto3 documentation:
+[LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
 
-```python
-def list_alerts(
-    self,
-    AnomalyDetectorArn: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAlertsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAlertsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listalertsresponsetypedef).
 
 ### list_anomaly_detectors
 
-Type annotations for `boto3.client("lookoutmetrics").list_anomaly_detectors` method.
+Type annotations for `boto3.client("lookoutmetrics").list_anomaly_detectors`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors]
+Boto3 documentation:
+[LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
 
-```python
-def list_anomaly_detectors(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAnomalyDetectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAnomalyDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalydetectorsresponsetypedef).
 
 ### list_anomaly_group_summaries
 
-Type annotations for `boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
+Type annotations for
+`boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries]
+Boto3 documentation:
+[LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
 
-```python
-def list_anomaly_group_summaries(
-    self,
-    AnomalyDetectorArn: str,
-    SensitivityThreshold: int,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAnomalyGroupSummariesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `SensitivityThreshold`: `int` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAnomalyGroupSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalygroupsummariesresponsetypedef).
 
 ### list_anomaly_group_time_series
 
-Type annotations for `boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
+Type annotations for
+`boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series]
+Boto3 documentation:
+[LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
 
-```python
-def list_anomaly_group_time_series(
-    self,
-    AnomalyDetectorArn: str,
-    AnomalyGroupId: str,
-    MetricName: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAnomalyGroupTimeSeriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `AnomalyGroupId`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAnomalyGroupTimeSeriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalygrouptimeseriesresponsetypedef).
 
 ### list_metric_sets
 
 Type annotations for `boto3.client("lookoutmetrics").list_metric_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets]
+Boto3 documentation:
+[LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
 
-```python
-def list_metric_sets(
-    self,
-    AnomalyDetectorArn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListMetricSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMetricSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listmetricsetsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource` method.
+Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource]
+Boto3 documentation:
+[LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_feedback
 
 Type annotations for `boto3.client("lookoutmetrics").put_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback]
+Boto3 documentation:
+[LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
 
-```python
-def put_feedback(
-    self,
-    AnomalyDetectorArn: str,
-    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesFeedbackTypeDef
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `AnomalyGroupTimeSeriesFeedback`:
+  [AnomalyGroupTimeSeriesFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygrouptimeseriesfeedbacktypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource]
+Boto3 documentation:
+[LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource]
+Boto3 documentation:
+[LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_anomaly_detector
 
-Type annotations for `boto3.client("lookoutmetrics").update_anomaly_detector` method.
+Type annotations for `boto3.client("lookoutmetrics").update_anomaly_detector`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector]
+Boto3 documentation:
+[LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
 
-```python
-def update_anomaly_detector(
-    self,
-    AnomalyDetectorArn: str,
-    KmsKeyArn: str = None,
-    AnomalyDetectorDescription: str = None,
-    AnomalyDetectorConfig: AnomalyDetectorConfigTypeDef = None
-) -> UpdateAnomalyDetectorResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+- `KmsKeyArn`: `str`
+- `AnomalyDetectorDescription`: `str`
+- `AnomalyDetectorConfig`:
+  [AnomalyDetectorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorconfigtypedef)
+
+Returns
+[UpdateAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#updateanomalydetectorresponsetypedef).
 
 ### update_metric_set
 
 Type annotations for `boto3.client("lookoutmetrics").update_metric_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set]
+Boto3 documentation:
+[LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
 
-```python
-def update_metric_set(
-    self,
-    MetricSetArn: str,
-    MetricSetDescription: str = None,
-    MetricList: List["MetricTypeDef"] = None,
-    Offset: int = None,
-    TimestampColumn: "TimestampColumnTypeDef" = None,
-    DimensionList: List[str] = None,
-    MetricSetFrequency: Frequency = None,
-    MetricSource: "MetricSourceTypeDef" = None
-) -> UpdateMetricSetResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `MetricSetArn`: `str` *(required)*
+- `MetricSetDescription`: `str`
+- `MetricList`:
+  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metrictypedef)\]
+- `Offset`: `int`
+- `TimestampColumn`:
+  [TimestampColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timestampcolumntypedef)
+- `DimensionList`: `List`\[`str`\]
+- `MetricSetFrequency`:
+  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
+- `MetricSource`:
+  [MetricSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsourcetypedef)
 
-
+Returns
+[UpdateMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#updatemetricsetresponsetypedef).

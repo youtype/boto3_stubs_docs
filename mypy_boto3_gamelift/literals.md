@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GameLift](./README.md) > Literals
 
-Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+Auto-generated documentation for
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+type annotations stubs module
+[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Literals for boto3 GameLift module](#literals-for-boto3-gamelift-module)
   - [AcceptanceType](#acceptancetype)

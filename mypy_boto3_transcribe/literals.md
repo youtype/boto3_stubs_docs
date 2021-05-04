@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [TranscribeService](./README.md) > Literals
 
-Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+Auto-generated documentation for
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+type annotations stubs module
+[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [Literals for boto3 TranscribeService module](#literals-for-boto3-transcribeservice-module)
   - [BaseModelName](#basemodelname)

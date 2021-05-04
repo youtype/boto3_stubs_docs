@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeBuild](./README.md) > Literals
 
-Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
-type annotations stubs module [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+Auto-generated documentation for
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+type annotations stubs module
+[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Literals for boto3 CodeBuild module](#literals-for-boto3-codebuild-module)
   - [ArtifactNamespace](#artifactnamespace)

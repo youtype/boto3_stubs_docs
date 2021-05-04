@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Budgets](./README.md) > Paginators
 
-Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+Auto-generated documentation for
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+type annotations stubs module
+[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [Paginators for boto3 Budgets module](#paginators-for-boto3-budgets-module)
   - [DescribeBudgetActionHistoriesPaginator](#describebudgetactionhistoriespaginator)
@@ -16,7 +18,8 @@ type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy
 
 ## DescribeBudgetActionHistoriesPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_budget_action_histories")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_budget_action_histories")`.
 
 Can be used directly:
 
@@ -27,23 +30,26 @@ def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHist
     return boto3.client("budgets").get_paginator("describe_budget_action_histories")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
+Boto3 documentation:
+[Budgets.Paginator.DescribeBudgetActionHistories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
 
-```python
-class DescribeBudgetActionHistoriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        BudgetName: str,
-        ActionId: str,
-        TimePeriod: "TimePeriodTypeDef" = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBudgetActionHistoriesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `ActionId`: `str` *(required)*
+- `TimePeriod`:
+  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBudgetActionHistoriesPaginator.paginate` returns
+`Iterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionhistoriesresponsetypedef)\].
+
 ## DescribeBudgetActionsForAccountPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_budget_actions_for_account")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_budget_actions_for_account")`.
 
 Can be used directly:
 
@@ -54,20 +60,22 @@ def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActions
     return boto3.client("budgets").get_paginator("describe_budget_actions_for_account")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
+Boto3 documentation:
+[Budgets.Paginator.DescribeBudgetActionsForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
 
-```python
-class DescribeBudgetActionsForAccountPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBudgetActionsForAccountResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBudgetActionsForAccountPaginator.paginate` returns
+`Iterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforaccountresponsetypedef)\].
+
 ## DescribeBudgetActionsForBudgetPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")`.
 
 Can be used directly:
 
@@ -78,21 +86,23 @@ def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsF
     return boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
+Boto3 documentation:
+[Budgets.Paginator.DescribeBudgetActionsForBudget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
 
-```python
-class DescribeBudgetActionsForBudgetPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        BudgetName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBudgetActionsForBudgetResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBudgetActionsForBudgetPaginator.paginate` returns
+`Iterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforbudgetresponsetypedef)\].
+
 ## DescribeBudgetPerformanceHistoryPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_budget_performance_history")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_budget_performance_history")`.
 
 Can be used directly:
 
@@ -103,22 +113,25 @@ def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerform
     return boto3.client("budgets").get_paginator("describe_budget_performance_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
+Boto3 documentation:
+[Budgets.Paginator.DescribeBudgetPerformanceHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
 
-```python
-class DescribeBudgetPerformanceHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        BudgetName: str,
-        TimePeriod: "TimePeriodTypeDef" = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBudgetPerformanceHistoryResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `TimePeriod`:
+  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBudgetPerformanceHistoryPaginator.paginate` returns
+`Iterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetperformancehistoryresponsetypedef)\].
+
 ## DescribeBudgetsPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_budgets")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_budgets")`.
 
 Can be used directly:
 
@@ -129,20 +142,22 @@ def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
     return boto3.client("budgets").get_paginator("describe_budgets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
+Boto3 documentation:
+[Budgets.Paginator.DescribeBudgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
 
-```python
-class DescribeBudgetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBudgetsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBudgetsPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBudgetsPaginator.paginate` returns
+`Iterator`\[[DescribeBudgetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetsresponsetypedef)\].
+
 ## DescribeNotificationsForBudgetPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_notifications_for_budget")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_notifications_for_budget")`.
 
 Can be used directly:
 
@@ -153,21 +168,23 @@ def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsFo
     return boto3.client("budgets").get_paginator("describe_notifications_for_budget")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
+Boto3 documentation:
+[Budgets.Paginator.DescribeNotificationsForBudget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
 
-```python
-class DescribeNotificationsForBudgetPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        BudgetName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNotificationsForBudgetResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNotificationsForBudgetPaginator.paginate` returns
+`Iterator`\[[DescribeNotificationsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describenotificationsforbudgetresponsetypedef)\].
+
 ## DescribeSubscribersForNotificationPaginator
 
-Type annotations for `boto3.client("budgets").get_paginator("describe_subscribers_for_notification")`.
+Type annotations for
+`boto3.client("budgets").get_paginator("describe_subscribers_for_notification")`.
 
 Can be used directly:
 
@@ -178,16 +195,18 @@ def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribers
     return boto3.client("budgets").get_paginator("describe_subscribers_for_notification")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
+Boto3 documentation:
+[Budgets.Paginator.DescribeSubscribersForNotification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
 
-```python
-class DescribeSubscribersForNotificationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        BudgetName: str,
-        Notification: "NotificationTypeDef",
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSubscribersForNotificationResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeSubscribersForNotificationPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `BudgetName`: `str` *(required)*
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSubscribersForNotificationPaginator.paginate` returns
+`Iterator`\[[DescribeSubscribersForNotificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describesubscribersfornotificationresponsetypedef)\].

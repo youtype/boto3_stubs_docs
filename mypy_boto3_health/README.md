@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Health
 
-Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+Auto-generated documentation for
+[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+type annotations stubs module
+[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
 ```bash
 pip install mypy-boto3-health
@@ -19,7 +21,7 @@ pip install mypy-boto3-health
 
 ## HealthClient
 
-Type annotations for  `boto3.client("health")` as [HealthClient](./client.md)
+Type annotations for `boto3.client("health")` as [HealthClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_health.client import HealthClient
 ```
 
-
 HealthClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_affected_accounts_for_organization](./client.md#describe-affected-accounts-for-organization)
 - [describe_affected_entities](./client.md#describe-affected-entities)
@@ -50,23 +50,17 @@ HealthClient [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [get_paginator](./client.md#get-paginator)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [InvalidPaginationToken](./client.md#invalidpaginationtoken)
 - [UnsupportedLocale](./client.md#unsupportedlocale)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("health").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("health").get_paginator("...")`.
 
 Can be used directly:
 
@@ -81,11 +75,6 @@ from mypy_boto3_health.paginators import DescribeAffectedAccountsForOrganization
 - [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +99,10 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [eventStatusCode](./literals.md#eventstatuscode)
 - [eventTypeCategory](./literals.md#eventtypecategory)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

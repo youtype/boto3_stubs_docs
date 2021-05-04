@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > OpsWorks
 
-Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+Auto-generated documentation for
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+type annotations stubs module
+[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 ```bash
 pip install mypy-boto3-opsworks
@@ -23,7 +25,8 @@ pip install mypy-boto3-opsworks
 
 ## OpsWorksClient
 
-Type annotations for  `boto3.client("opsworks")` as [OpsWorksClient](./client.md)
+Type annotations for `boto3.client("opsworks")` as
+[OpsWorksClient](./client.md)
 
 Can be used directly:
 
@@ -31,12 +34,10 @@ Can be used directly:
 from mypy_boto3_opsworks.client import OpsWorksClient
 ```
 
-
 OpsWorksClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [assign_instance](./client.md#assign-instance)
 - [assign_volume](./client.md#assign-volume)
 - [associate_elastic_ip](./client.md#associate-elastic-ip)
@@ -116,27 +117,22 @@ OpsWorksClient [exceptions](./client.md#exceptions)
 - [update_user_profile](./client.md#update-user-profile)
 - [update_volume](./client.md#update-volume)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
 ## OpsWorksServiceResource
 
-Type annotations for  `boto3.resource("opsworks")` as [OpsWorksServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("opsworks")` as
+[OpsWorksServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
 ```
-
 
 ### Collections
 
@@ -149,9 +145,6 @@ from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection
 ```
 
 - [ServiceResourceStacksCollection](./service_resource.md#opsworksserviceresource.stacks)
-
-
-
 
 ### Resources
 
@@ -167,13 +160,10 @@ from mypy_boto3_opsworks.service_resource import Layer, ...
 - [Stack](./service_resource.md#stack)
 - [StackSummary](./service_resource.md#stacksummary)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("opsworks").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("opsworks").get_paginator("...")`.
 
 Can be used directly:
 
@@ -183,12 +173,10 @@ from mypy_boto3_opsworks.paginators import DescribeEcsClustersPaginator, ...
 
 - [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("opsworks").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("opsworks").get_waiter("...")`.
 
 Can be used directly:
 
@@ -202,9 +190,6 @@ from mypy_boto3_opsworks.waiters import AppExistsWaiter, ...
 - [InstanceRegisteredWaiter](./waiters.md#instanceregisteredwaiter)
 - [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
 - [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
-
-
-
 
 ## Literals
 
@@ -239,13 +224,10 @@ from mypy_boto3_opsworks.literals import AppAttributesKeys, ...
 - [VirtualizationType](./literals.md#virtualizationtype)
 - [VolumeType](./literals.md#volumetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

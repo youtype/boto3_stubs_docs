@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MQ
 
-Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
-type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+Auto-generated documentation for
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+type annotations stubs module
+[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
 ```bash
 pip install mypy-boto3-mq
@@ -19,7 +21,7 @@ pip install mypy-boto3-mq
 
 ## MQClient
 
-Type annotations for  `boto3.client("mq")` as [MQClient](./client.md)
+Type annotations for `boto3.client("mq")` as [MQClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mq.client import MQClient
 ```
 
-
 MQClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_broker](./client.md#create-broker)
 - [create_configuration](./client.md#create-configuration)
@@ -59,10 +59,8 @@ MQClient [exceptions](./client.md#exceptions)
 - [update_configuration](./client.md#update-configuration)
 - [update_user](./client.md#update-user)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -71,14 +69,10 @@ MQClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mq").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mq").get_paginator("...")`.
 
 Can be used directly:
 
@@ -87,11 +81,6 @@ from mypy_boto3_mq.paginators import ListBrokersPaginator, ...
 ```
 
 - [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -113,13 +102,10 @@ from mypy_boto3_mq.literals import AuthenticationStrategy, ...
 - [ListBrokersPaginatorName](./literals.md#listbrokerspaginatorname)
 - [SanitizationWarningReason](./literals.md#sanitizationwarningreason)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

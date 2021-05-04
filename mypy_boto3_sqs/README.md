@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SQS
 
-Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
-type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
+Auto-generated documentation for
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+type annotations stubs module
+[mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 ```bash
 pip install mypy-boto3-sqs
@@ -22,7 +24,7 @@ pip install mypy-boto3-sqs
 
 ## SQSClient
 
-Type annotations for  `boto3.client("sqs")` as [SQSClient](./client.md)
+Type annotations for `boto3.client("sqs")` as [SQSClient](./client.md)
 
 Can be used directly:
 
@@ -30,12 +32,10 @@ Can be used directly:
 from mypy_boto3_sqs.client import SQSClient
 ```
 
-
 SQSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_permission](./client.md#add-permission)
 - [can_paginate](./client.md#can-paginate)
 - [change_message_visibility](./client.md#change-message-visibility)
@@ -60,10 +60,8 @@ SQSClient [exceptions](./client.md#exceptions)
 - [tag_queue](./client.md#tag-queue)
 - [untag_queue](./client.md#untag-queue)
 
-
-
-
 ### Exceptions
+
 - [BatchEntryIdsNotDistinct](./client.md#batchentryidsnotdistinct)
 - [BatchRequestTooLong](./client.md#batchrequesttoolong)
 - [ClientError](./client.md#clienterror)
@@ -82,19 +80,16 @@ SQSClient [exceptions](./client.md#exceptions)
 - [TooManyEntriesInBatchRequest](./client.md#toomanyentriesinbatchrequest)
 - [UnsupportedOperation](./client.md#unsupportedoperation)
 
-
-
-
 ## SQSServiceResource
 
-Type annotations for  `boto3.resource("sqs")` as [SQSServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("sqs")` as
+[SQSServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_sqs.service_resource import SQSServiceResource
 ```
-
 
 ### Collections
 
@@ -107,9 +102,6 @@ from mypy_boto3_sqs.service_resource import ServiceResourceQueuesCollection, ...
 ```
 
 - [ServiceResourceQueuesCollection](./service_resource.md#sqsserviceresource.queues)
-
-
-
 
 ### Resources
 
@@ -124,13 +116,10 @@ from mypy_boto3_sqs.service_resource import Message, ...
 - [Message](./service_resource.md#message)
 - [Queue](./service_resource.md#queue)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sqs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sqs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -140,11 +129,6 @@ from mypy_boto3_sqs.paginators import ListDeadLetterSourceQueuesPaginator, ...
 
 - [ListDeadLetterSourceQueuesPaginator](./paginators.md#listdeadlettersourcequeuespaginator)
 - [ListQueuesPaginator](./paginators.md#listqueuespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -162,13 +146,10 @@ from mypy_boto3_sqs.literals import ListDeadLetterSourceQueuesPaginatorName, ...
 - [MessageSystemAttributeNameForSends](./literals.md#messagesystemattributenameforsends)
 - [QueueAttributeName](./literals.md#queueattributename)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

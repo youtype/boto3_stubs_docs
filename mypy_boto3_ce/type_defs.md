@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CostExplorer](./README.md) > Structures
 
-Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+Auto-generated documentation for
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+type annotations stubs module
+[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [Typed dictionaries for boto3 CostExplorer module](#typed-dictionaries-for-boto3-costexplorer-module)
   - [AnomalyDateIntervalTypeDef](#anomalydateintervaltypedef)
@@ -114,15 +116,13 @@ type annotations stubs module [mypy_boto3_ce](https://pypi.org/project/mypy-boto
 from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef
 ```
 
-
 Required fields:
+
 - `StartDate`: `str`
 
-
-
 Optional fields:
-- `EndDate`: `str`
 
+- `EndDate`: `str`
 
 ## AnomalyMonitorTypeDef
 
@@ -130,22 +130,22 @@ Optional fields:
 from mypy_boto3_ce.type_defs import AnomalyMonitorTypeDef
 ```
 
-
 Required fields:
+
 - `MonitorName`: `str`
-- `MonitorType`: `MonitorType`
-
-
+- `MonitorType`:
+  [MonitorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#monitortype)
 
 Optional fields:
+
 - `MonitorArn`: `str`
 - `CreationDate`: `str`
 - `LastUpdatedDate`: `str`
 - `LastEvaluatedDate`: `str`
 - `MonitorDimension`: `Literal['SERVICE']`
-- `MonitorSpecification`: `"ExpressionTypeDef"`
+- `MonitorSpecification`:
+  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#expressiontypedef)
 - `DimensionalValueCount`: `int`
-
 
 ## AnomalyScoreTypeDef
 
@@ -153,13 +153,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import AnomalyScoreTypeDef
 ```
 
-
 Required fields:
+
 - `MaxScore`: `float`
 - `CurrentScore`: `float`
-
-
-
 
 ## AnomalySubscriptionTypeDef
 
@@ -167,20 +164,20 @@ Required fields:
 from mypy_boto3_ce.type_defs import AnomalySubscriptionTypeDef
 ```
 
-
 Required fields:
-- `MonitorArnList`: `List[str]`
-- `Subscribers`: `List["SubscriberTypeDef"]`
+
+- `MonitorArnList`: `List`\[`str`\]
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#subscribertypedef)\]
 - `Threshold`: `float`
-- `Frequency`: `AnomalySubscriptionFrequency`
+- `Frequency`:
+  [AnomalySubscriptionFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#anomalysubscriptionfrequency)
 - `SubscriptionName`: `str`
 
-
-
 Optional fields:
+
 - `SubscriptionArn`: `str`
 - `AccountId`: `str`
-
 
 ## AnomalyTypeDef
 
@@ -188,22 +185,24 @@ Optional fields:
 from mypy_boto3_ce.type_defs import AnomalyTypeDef
 ```
 
-
 Required fields:
+
 - `AnomalyId`: `str`
-- `AnomalyScore`: `"AnomalyScoreTypeDef"`
-- `Impact`: `"ImpactTypeDef"`
+- `AnomalyScore`:
+  [AnomalyScoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#anomalyscoretypedef)
+- `Impact`:
+  [ImpactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#impacttypedef)
 - `MonitorArn`: `str`
 
-
-
 Optional fields:
+
 - `AnomalyStartDate`: `str`
 - `AnomalyEndDate`: `str`
 - `DimensionValue`: `str`
-- `RootCauses`: `List["RootCauseTypeDef"]`
-- `Feedback`: `AnomalyFeedbackType`
-
+- `RootCauses`:
+  `List`\[[RootCauseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rootcausetypedef)\]
+- `Feedback`:
+  [AnomalyFeedbackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#anomalyfeedbacktype)
 
 ## CostCategoryInheritedValueDimensionTypeDef
 
@@ -211,13 +210,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryInheritedValueDimensionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DimensionName`: `CostCategoryInheritedValueDimensionName`
-- `DimensionKey`: `str`
 
+- `DimensionName`:
+  [CostCategoryInheritedValueDimensionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#costcategoryinheritedvaluedimensionname)
+- `DimensionKey`: `str`
 
 ## CostCategoryProcessingStatusTypeDef
 
@@ -225,13 +222,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryProcessingStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Component`: `Literal['COST_EXPLORER']`
-- `Status`: `CostCategoryStatus`
 
+- `Component`: `Literal['COST_EXPLORER']`
+- `Status`:
+  [CostCategoryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#costcategorystatus)
 
 ## CostCategoryReferenceTypeDef
 
@@ -239,19 +234,17 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryReferenceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CostCategoryArn`: `str`
 - `Name`: `str`
 - `EffectiveStart`: `str`
 - `EffectiveEnd`: `str`
 - `NumberOfRules`: `int`
-- `ProcessingStatus`: `List["CostCategoryProcessingStatusTypeDef"]`
-- `Values`: `List[str]`
+- `ProcessingStatus`:
+  `List`\[[CostCategoryProcessingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryprocessingstatustypedef)\]
+- `Values`: `List`\[`str`\]
 - `DefaultValue`: `str`
-
 
 ## CostCategoryRuleTypeDef
 
@@ -259,15 +252,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryRuleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
-- `Rule`: `"ExpressionTypeDef"`
-- `InheritedValue`: `"CostCategoryInheritedValueDimensionTypeDef"`
-- `Type`: `CostCategoryRuleType`
 
+- `Value`: `str`
+- `Rule`:
+  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#expressiontypedef)
+- `InheritedValue`:
+  [CostCategoryInheritedValueDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryinheritedvaluedimensiontypedef)
+- `Type`:
+  [CostCategoryRuleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#costcategoryruletype)
 
 ## CostCategoryTypeDef
 
@@ -275,21 +268,21 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryTypeDef
 ```
 
-
 Required fields:
+
 - `CostCategoryArn`: `str`
 - `EffectiveStart`: `str`
 - `Name`: `str`
 - `RuleVersion`: `Literal['CostCategoryExpression.v1']`
-- `Rules`: `List["CostCategoryRuleTypeDef"]`
-
-
+- `Rules`:
+  `List`\[[CostCategoryRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryruletypedef)\]
 
 Optional fields:
-- `EffectiveEnd`: `str`
-- `ProcessingStatus`: `List["CostCategoryProcessingStatusTypeDef"]`
-- `DefaultValue`: `str`
 
+- `EffectiveEnd`: `str`
+- `ProcessingStatus`:
+  `List`\[[CostCategoryProcessingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryprocessingstatustypedef)\]
+- `DefaultValue`: `str`
 
 ## CostCategoryValuesTypeDef
 
@@ -297,14 +290,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CostCategoryValuesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
-- `MatchOptions`: `List[MatchOption]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
+- `MatchOptions`:
+  `List`\[[MatchOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#matchoption)\]
 
 ## CoverageByTimeTypeDef
 
@@ -312,14 +303,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CoverageByTimeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimePeriod`: `"DateIntervalTypeDef"`
-- `Groups`: `List["ReservationCoverageGroupTypeDef"]`
-- `Total`: `"CoverageTypeDef"`
 
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
+- `Groups`:
+  `List`\[[ReservationCoverageGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationcoveragegrouptypedef)\]
+- `Total`:
+  [CoverageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragetypedef)
 
 ## CoverageCostTypeDef
 
@@ -327,12 +318,9 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CoverageCostTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OnDemandCost`: `str`
 
+- `OnDemandCost`: `str`
 
 ## CoverageHoursTypeDef
 
@@ -340,15 +328,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CoverageHoursTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OnDemandHours`: `str`
 - `ReservedHours`: `str`
 - `TotalRunningHours`: `str`
 - `CoverageHoursPercentage`: `str`
-
 
 ## CoverageNormalizedUnitsTypeDef
 
@@ -356,15 +341,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CoverageNormalizedUnitsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OnDemandNormalizedUnits`: `str`
 - `ReservedNormalizedUnits`: `str`
 - `TotalRunningNormalizedUnits`: `str`
 - `CoverageNormalizedUnitsPercentage`: `str`
-
 
 ## CoverageTypeDef
 
@@ -372,14 +354,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CoverageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CoverageHours`: `"CoverageHoursTypeDef"`
-- `CoverageNormalizedUnits`: `"CoverageNormalizedUnitsTypeDef"`
-- `CoverageCost`: `"CoverageCostTypeDef"`
 
+- `CoverageHours`:
+  [CoverageHoursTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragehourstypedef)
+- `CoverageNormalizedUnits`:
+  [CoverageNormalizedUnitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragenormalizedunitstypedef)
+- `CoverageCost`:
+  [CoverageCostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragecosttypedef)
 
 ## CreateAnomalyMonitorResponseTypeDef
 
@@ -387,12 +369,9 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CreateAnomalyMonitorResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MonitorArn`: `str`
-
-
-
 
 ## CreateAnomalySubscriptionResponseTypeDef
 
@@ -400,12 +379,9 @@ Required fields:
 from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `SubscriptionArn`: `str`
-
-
-
 
 ## CreateCostCategoryDefinitionResponseTypeDef
 
@@ -413,13 +389,10 @@ Required fields:
 from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CostCategoryArn`: `str`
 - `EffectiveStart`: `str`
-
 
 ## CurrentInstanceTypeDef
 
@@ -427,15 +400,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import CurrentInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceId`: `str`
 - `InstanceName`: `str`
-- `Tags`: `List["TagValuesTypeDef"]`
-- `ResourceDetails`: `"ResourceDetailsTypeDef"`
-- `ResourceUtilization`: `"ResourceUtilizationTypeDef"`
+- `Tags`:
+  `List`\[[TagValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#tagvaluestypedef)\]
+- `ResourceDetails`:
+  [ResourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resourcedetailstypedef)
+- `ResourceUtilization`:
+  [ResourceUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resourceutilizationtypedef)
 - `ReservationCoveredHoursInLookbackPeriod`: `str`
 - `SavingsPlansCoveredHoursInLookbackPeriod`: `str`
 - `OnDemandHoursInLookbackPeriod`: `str`
@@ -443,20 +417,16 @@ Optional fields:
 - `MonthlyCost`: `str`
 - `CurrencyCode`: `str`
 
-
 ## DateIntervalTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import DateIntervalTypeDef
 ```
 
-
 Required fields:
+
 - `Start`: `str`
 - `End`: `str`
-
-
-
 
 ## DeleteCostCategoryDefinitionResponseTypeDef
 
@@ -464,13 +434,10 @@ Required fields:
 from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CostCategoryArn`: `str`
 - `EffectiveEnd`: `str`
-
 
 ## DescribeCostCategoryDefinitionResponseTypeDef
 
@@ -478,12 +445,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CostCategory`: `"CostCategoryTypeDef"`
 
+- `CostCategory`:
+  [CostCategoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategorytypedef)
 
 ## DimensionValuesTypeDef
 
@@ -491,14 +456,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import DimensionValuesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `Dimension`
-- `Values`: `List[str]`
-- `MatchOptions`: `List[MatchOption]`
 
+- `Key`:
+  [Dimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#dimension)
+- `Values`: `List`\[`str`\]
+- `MatchOptions`:
+  `List`\[[MatchOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#matchoption)\]
 
 ## DimensionValuesWithAttributesTypeDef
 
@@ -506,13 +470,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import DimensionValuesWithAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
-- `Attributes`: `Dict[str, str]`
 
+- `Value`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## EBSResourceUtilizationTypeDef
 
@@ -520,15 +481,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import EBSResourceUtilizationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EbsReadOpsPerSecond`: `str`
 - `EbsWriteOpsPerSecond`: `str`
 - `EbsReadBytesPerSecond`: `str`
 - `EbsWriteBytesPerSecond`: `str`
-
 
 ## EC2InstanceDetailsTypeDef
 
@@ -536,10 +494,8 @@ Optional fields:
 from mypy_boto3_ce.type_defs import EC2InstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Family`: `str`
 - `InstanceType`: `str`
 - `Region`: `str`
@@ -549,17 +505,14 @@ Optional fields:
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
 
-
 ## EC2ResourceDetailsTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import EC2ResourceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HourlyOnDemandRate`: `str`
 - `InstanceType`: `str`
 - `Platform`: `str`
@@ -570,22 +523,19 @@ Optional fields:
 - `Storage`: `str`
 - `Vcpu`: `str`
 
-
 ## EC2ResourceUtilizationTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import EC2ResourceUtilizationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxCpuUtilizationPercentage`: `str`
 - `MaxMemoryUtilizationPercentage`: `str`
 - `MaxStorageUtilizationPercentage`: `str`
-- `EBSResourceUtilization`: `"EBSResourceUtilizationTypeDef"`
-
+- `EBSResourceUtilization`:
+  [EBSResourceUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#ebsresourceutilizationtypedef)
 
 ## EC2SpecificationTypeDef
 
@@ -593,12 +543,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import EC2SpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OfferingClass`: `OfferingClass`
 
+- `OfferingClass`:
+  [OfferingClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#offeringclass)
 
 ## ESInstanceDetailsTypeDef
 
@@ -606,16 +554,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ESInstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceClass`: `str`
 - `InstanceSize`: `str`
 - `Region`: `str`
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
-
 
 ## ElastiCacheInstanceDetailsTypeDef
 
@@ -623,10 +568,8 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ElastiCacheInstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Family`: `str`
 - `NodeType`: `str`
 - `Region`: `str`
@@ -634,24 +577,26 @@ Optional fields:
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
 
-
 ## ExpressionTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import ExpressionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Or`: `List["ExpressionTypeDef"]`
-- `And`: `List["ExpressionTypeDef"]`
-- `Not`: `"ExpressionTypeDef"`
-- `Dimensions`: `"DimensionValuesTypeDef"`
-- `Tags`: `"TagValuesTypeDef"`
-- `CostCategories`: `"CostCategoryValuesTypeDef"`
 
+- `Or`:
+  `List`\[[ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#expressiontypedef)\]
+- `And`:
+  `List`\[[ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#expressiontypedef)\]
+- `Not`:
+  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#expressiontypedef)
+- `Dimensions`:
+  [DimensionValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dimensionvaluestypedef)
+- `Tags`:
+  [TagValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#tagvaluestypedef)
+- `CostCategories`:
+  [CostCategoryValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryvaluestypedef)
 
 ## ForecastResultTypeDef
 
@@ -659,15 +604,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ForecastResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimePeriod`: `"DateIntervalTypeDef"`
+
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
 - `MeanValue`: `str`
 - `PredictionIntervalLowerBound`: `str`
 - `PredictionIntervalUpperBound`: `str`
-
 
 ## GetAnomaliesResponseTypeDef
 
@@ -675,15 +618,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetAnomaliesResponseTypeDef
 ```
 
-
 Required fields:
-- `Anomalies`: `List["AnomalyTypeDef"]`
 
-
+- `Anomalies`:
+  `List`\[[AnomalyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#anomalytypedef)\]
 
 Optional fields:
-- `NextPageToken`: `str`
 
+- `NextPageToken`: `str`
 
 ## GetAnomalyMonitorsResponseTypeDef
 
@@ -691,15 +633,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetAnomalyMonitorsResponseTypeDef
 ```
 
-
 Required fields:
-- `AnomalyMonitors`: `List["AnomalyMonitorTypeDef"]`
 
-
+- `AnomalyMonitors`:
+  `List`\[[AnomalyMonitorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#anomalymonitortypedef)\]
 
 Optional fields:
-- `NextPageToken`: `str`
 
+- `NextPageToken`: `str`
 
 ## GetAnomalySubscriptionsResponseTypeDef
 
@@ -707,15 +648,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsResponseTypeDef
 ```
 
-
 Required fields:
-- `AnomalySubscriptions`: `List["AnomalySubscriptionTypeDef"]`
 
-
+- `AnomalySubscriptions`:
+  `List`\[[AnomalySubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#anomalysubscriptiontypedef)\]
 
 Optional fields:
-- `NextPageToken`: `str`
 
+- `NextPageToken`: `str`
 
 ## GetCostAndUsageResponseTypeDef
 
@@ -723,15 +663,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetCostAndUsageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextPageToken`: `str`
-- `GroupDefinitions`: `List["GroupDefinitionTypeDef"]`
-- `ResultsByTime`: `List["ResultByTimeTypeDef"]`
-- `DimensionValueAttributes`: `List["DimensionValuesWithAttributesTypeDef"]`
 
+- `NextPageToken`: `str`
+- `GroupDefinitions`:
+  `List`\[[GroupDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#groupdefinitiontypedef)\]
+- `ResultsByTime`:
+  `List`\[[ResultByTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resultbytimetypedef)\]
+- `DimensionValueAttributes`:
+  `List`\[[DimensionValuesWithAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dimensionvalueswithattributestypedef)\]
 
 ## GetCostAndUsageWithResourcesResponseTypeDef
 
@@ -739,15 +679,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextPageToken`: `str`
-- `GroupDefinitions`: `List["GroupDefinitionTypeDef"]`
-- `ResultsByTime`: `List["ResultByTimeTypeDef"]`
-- `DimensionValueAttributes`: `List["DimensionValuesWithAttributesTypeDef"]`
 
+- `NextPageToken`: `str`
+- `GroupDefinitions`:
+  `List`\[[GroupDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#groupdefinitiontypedef)\]
+- `ResultsByTime`:
+  `List`\[[ResultByTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resultbytimetypedef)\]
+- `DimensionValueAttributes`:
+  `List`\[[DimensionValuesWithAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dimensionvalueswithattributestypedef)\]
 
 ## GetCostCategoriesResponseTypeDef
 
@@ -755,18 +695,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetCostCategoriesResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ReturnSize`: `int`
 - `TotalSize`: `int`
 
-
-
 Optional fields:
-- `NextPageToken`: `str`
-- `CostCategoryNames`: `List[str]`
-- `CostCategoryValues`: `List[str]`
 
+- `NextPageToken`: `str`
+- `CostCategoryNames`: `List`\[`str`\]
+- `CostCategoryValues`: `List`\[`str`\]
 
 ## GetCostForecastResponseTypeDef
 
@@ -774,13 +712,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetCostForecastResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Total`: `"MetricValueTypeDef"`
-- `ForecastResultsByTime`: `List["ForecastResultTypeDef"]`
 
+- `Total`:
+  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#metricvaluetypedef)
+- `ForecastResultsByTime`:
+  `List`\[[ForecastResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#forecastresulttypedef)\]
 
 ## GetDimensionValuesResponseTypeDef
 
@@ -788,17 +725,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetDimensionValuesResponseTypeDef
 ```
 
-
 Required fields:
-- `DimensionValues`: `List["DimensionValuesWithAttributesTypeDef"]`
+
+- `DimensionValues`:
+  `List`\[[DimensionValuesWithAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dimensionvalueswithattributestypedef)\]
 - `ReturnSize`: `int`
 - `TotalSize`: `int`
 
-
-
 Optional fields:
-- `NextPageToken`: `str`
 
+- `NextPageToken`: `str`
 
 ## GetReservationCoverageResponseTypeDef
 
@@ -806,16 +742,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetReservationCoverageResponseTypeDef
 ```
 
-
 Required fields:
-- `CoveragesByTime`: `List["CoverageByTimeTypeDef"]`
 
-
+- `CoveragesByTime`:
+  `List`\[[CoverageByTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragebytimetypedef)\]
 
 Optional fields:
-- `Total`: `"CoverageTypeDef"`
-- `NextPageToken`: `str`
 
+- `Total`:
+  [CoverageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragetypedef)
+- `NextPageToken`: `str`
 
 ## GetReservationPurchaseRecommendationResponseTypeDef
 
@@ -823,14 +759,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metadata`: `"ReservationPurchaseRecommendationMetadataTypeDef"`
-- `Recommendations`: `List["ReservationPurchaseRecommendationTypeDef"]`
-- `NextPageToken`: `str`
 
+- `Metadata`:
+  [ReservationPurchaseRecommendationMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationpurchaserecommendationmetadatatypedef)
+- `Recommendations`:
+  `List`\[[ReservationPurchaseRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationpurchaserecommendationtypedef)\]
+- `NextPageToken`: `str`
 
 ## GetReservationUtilizationResponseTypeDef
 
@@ -838,16 +773,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetReservationUtilizationResponseTypeDef
 ```
 
-
 Required fields:
-- `UtilizationsByTime`: `List["UtilizationByTimeTypeDef"]`
 
-
+- `UtilizationsByTime`:
+  `List`\[[UtilizationByTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#utilizationbytimetypedef)\]
 
 Optional fields:
-- `Total`: `"ReservationAggregatesTypeDef"`
-- `NextPageToken`: `str`
 
+- `Total`:
+  [ReservationAggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationaggregatestypedef)
+- `NextPageToken`: `str`
 
 ## GetRightsizingRecommendationResponseTypeDef
 
@@ -855,16 +790,17 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetRightsizingRecommendationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metadata`: `"RightsizingRecommendationMetadataTypeDef"`
-- `Summary`: `"RightsizingRecommendationSummaryTypeDef"`
-- `RightsizingRecommendations`: `List["RightsizingRecommendationTypeDef"]`
-- `NextPageToken`: `str`
-- `Configuration`: `"RightsizingRecommendationConfigurationTypeDef"`
 
+- `Metadata`:
+  [RightsizingRecommendationMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rightsizingrecommendationmetadatatypedef)
+- `Summary`:
+  [RightsizingRecommendationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rightsizingrecommendationsummarytypedef)
+- `RightsizingRecommendations`:
+  `List`\[[RightsizingRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rightsizingrecommendationtypedef)\]
+- `NextPageToken`: `str`
+- `Configuration`:
+  [RightsizingRecommendationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rightsizingrecommendationconfigurationtypedef)
 
 ## GetSavingsPlansCoverageResponseTypeDef
 
@@ -872,15 +808,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageResponseTypeDef
 ```
 
-
 Required fields:
-- `SavingsPlansCoverages`: `List["SavingsPlansCoverageTypeDef"]`
 
-
+- `SavingsPlansCoverages`:
+  `List`\[[SavingsPlansCoverageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanscoveragetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## GetSavingsPlansPurchaseRecommendationResponseTypeDef
 
@@ -888,14 +823,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metadata`: `"SavingsPlansPurchaseRecommendationMetadataTypeDef"`
-- `SavingsPlansPurchaseRecommendation`: `"SavingsPlansPurchaseRecommendationTypeDef"`
-- `NextPageToken`: `str`
 
+- `Metadata`:
+  [SavingsPlansPurchaseRecommendationMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanspurchaserecommendationmetadatatypedef)
+- `SavingsPlansPurchaseRecommendation`:
+  [SavingsPlansPurchaseRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanspurchaserecommendationtypedef)
+- `NextPageToken`: `str`
 
 ## GetSavingsPlansUtilizationDetailsResponseTypeDef
 
@@ -903,17 +837,18 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsResponseTypeDef
 ```
 
-
 Required fields:
-- `SavingsPlansUtilizationDetails`: `List["SavingsPlansUtilizationDetailTypeDef"]`
-- `TimePeriod`: `"DateIntervalTypeDef"`
 
-
+- `SavingsPlansUtilizationDetails`:
+  `List`\[[SavingsPlansUtilizationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationdetailtypedef)\]
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
 
 Optional fields:
-- `Total`: `"SavingsPlansUtilizationAggregatesTypeDef"`
-- `NextToken`: `str`
 
+- `Total`:
+  [SavingsPlansUtilizationAggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationaggregatestypedef)
+- `NextToken`: `str`
 
 ## GetSavingsPlansUtilizationResponseTypeDef
 
@@ -921,15 +856,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationResponseTypeDef
 ```
 
-
 Required fields:
-- `Total`: `"SavingsPlansUtilizationAggregatesTypeDef"`
 
-
+- `Total`:
+  [SavingsPlansUtilizationAggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationaggregatestypedef)
 
 Optional fields:
-- `SavingsPlansUtilizationsByTime`: `List["SavingsPlansUtilizationByTimeTypeDef"]`
 
+- `SavingsPlansUtilizationsByTime`:
+  `List`\[[SavingsPlansUtilizationByTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationbytimetypedef)\]
 
 ## GetTagsResponseTypeDef
 
@@ -937,17 +872,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetTagsResponseTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List[str]`
+
+- `Tags`: `List`\[`str`\]
 - `ReturnSize`: `int`
 - `TotalSize`: `int`
 
-
-
 Optional fields:
-- `NextPageToken`: `str`
 
+- `NextPageToken`: `str`
 
 ## GetUsageForecastResponseTypeDef
 
@@ -955,13 +888,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GetUsageForecastResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Total`: `"MetricValueTypeDef"`
-- `ForecastResultsByTime`: `List["ForecastResultTypeDef"]`
 
+- `Total`:
+  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#metricvaluetypedef)
+- `ForecastResultsByTime`:
+  `List`\[[ForecastResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#forecastresulttypedef)\]
 
 ## GroupDefinitionTypeDef
 
@@ -969,13 +901,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GroupDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `GroupDefinitionType`
-- `Key`: `str`
 
+- `Type`:
+  [GroupDefinitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#groupdefinitiontype)
+- `Key`: `str`
 
 ## GroupTypeDef
 
@@ -983,13 +913,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import GroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Keys`: `List[str]`
-- `Metrics`: `Dict[str, "MetricValueTypeDef"]`
 
+- `Keys`: `List`\[`str`\]
+- `Metrics`: `Dict`\[`str`,
+  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#metricvaluetypedef)\]
 
 ## ImpactTypeDef
 
@@ -997,15 +925,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ImpactTypeDef
 ```
 
-
 Required fields:
+
 - `MaxImpact`: `float`
 
-
-
 Optional fields:
-- `TotalImpact`: `float`
 
+- `TotalImpact`: `float`
 
 ## InstanceDetailsTypeDef
 
@@ -1013,16 +939,18 @@ Optional fields:
 from mypy_boto3_ce.type_defs import InstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EC2InstanceDetails`: `"EC2InstanceDetailsTypeDef"`
-- `RDSInstanceDetails`: `"RDSInstanceDetailsTypeDef"`
-- `RedshiftInstanceDetails`: `"RedshiftInstanceDetailsTypeDef"`
-- `ElastiCacheInstanceDetails`: `"ElastiCacheInstanceDetailsTypeDef"`
-- `ESInstanceDetails`: `"ESInstanceDetailsTypeDef"`
 
+- `EC2InstanceDetails`:
+  [EC2InstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#ec2instancedetailstypedef)
+- `RDSInstanceDetails`:
+  [RDSInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#rdsinstancedetailstypedef)
+- `RedshiftInstanceDetails`:
+  [RedshiftInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#redshiftinstancedetailstypedef)
+- `ElastiCacheInstanceDetails`:
+  [ElastiCacheInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#elasticacheinstancedetailstypedef)
+- `ESInstanceDetails`:
+  [ESInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#esinstancedetailstypedef)
 
 ## ListCostCategoryDefinitionsResponseTypeDef
 
@@ -1030,13 +958,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CostCategoryReferences`: `List["CostCategoryReferenceTypeDef"]`
-- `NextToken`: `str`
 
+- `CostCategoryReferences`:
+  `List`\[[CostCategoryReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#costcategoryreferencetypedef)\]
+- `NextToken`: `str`
 
 ## MetricValueTypeDef
 
@@ -1044,13 +970,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import MetricValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Amount`: `str`
 - `Unit`: `str`
-
 
 ## ModifyRecommendationDetailTypeDef
 
@@ -1058,12 +981,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ModifyRecommendationDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TargetInstances`: `List["TargetInstanceTypeDef"]`
 
+- `TargetInstances`:
+  `List`\[[TargetInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#targetinstancetypedef)\]
 
 ## ProvideAnomalyFeedbackResponseTypeDef
 
@@ -1071,12 +992,9 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackResponseTypeDef
 ```
 
-
 Required fields:
+
 - `AnomalyId`: `str`
-
-
-
 
 ## RDSInstanceDetailsTypeDef
 
@@ -1084,10 +1002,8 @@ Required fields:
 from mypy_boto3_ce.type_defs import RDSInstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Family`: `str`
 - `InstanceType`: `str`
 - `Region`: `str`
@@ -1098,23 +1014,19 @@ Optional fields:
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
 
-
 ## RedshiftInstanceDetailsTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import RedshiftInstanceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Family`: `str`
 - `NodeType`: `str`
 - `Region`: `str`
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
-
 
 ## ReservationAggregatesTypeDef
 
@@ -1122,10 +1034,8 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ReservationAggregatesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UtilizationPercentage`: `str`
 - `UtilizationPercentageInUnits`: `str`
 - `PurchasedHours`: `str`
@@ -1144,20 +1054,17 @@ Optional fields:
 - `RealizedSavings`: `str`
 - `UnrealizedSavings`: `str`
 
-
 ## ReservationCoverageGroupTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import ReservationCoverageGroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
-- `Coverage`: `"CoverageTypeDef"`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Coverage`:
+  [CoverageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#coveragetypedef)
 
 ## ReservationPurchaseRecommendationDetailTypeDef
 
@@ -1165,12 +1072,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AccountId`: `str`
-- `InstanceDetails`: `"InstanceDetailsTypeDef"`
+- `InstanceDetails`:
+  [InstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#instancedetailstypedef)
 - `RecommendedNumberOfInstancesToPurchase`: `str`
 - `RecommendedNormalizedUnitsToPurchase`: `str`
 - `MinimumNumberOfInstancesUsedPerHour`: `str`
@@ -1189,20 +1095,16 @@ Optional fields:
 - `UpfrontCost`: `str`
 - `RecurringStandardMonthlyCost`: `str`
 
-
 ## ReservationPurchaseRecommendationMetadataTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
-
 
 ## ReservationPurchaseRecommendationSummaryTypeDef
 
@@ -1210,14 +1112,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalEstimatedMonthlySavingsAmount`: `str`
 - `TotalEstimatedMonthlySavingsPercentage`: `str`
 - `CurrencyCode`: `str`
-
 
 ## ReservationPurchaseRecommendationTypeDef
 
@@ -1225,18 +1124,22 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccountScope`: `AccountScope`
-- `LookbackPeriodInDays`: `LookbackPeriodInDays`
-- `TermInYears`: `TermInYears`
-- `PaymentOption`: `PaymentOption`
-- `ServiceSpecification`: `"ServiceSpecificationTypeDef"`
-- `RecommendationDetails`: `List["ReservationPurchaseRecommendationDetailTypeDef"]`
-- `RecommendationSummary`: `"ReservationPurchaseRecommendationSummaryTypeDef"`
 
+- `AccountScope`:
+  [AccountScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#accountscope)
+- `LookbackPeriodInDays`:
+  [LookbackPeriodInDays](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#lookbackperiodindays)
+- `TermInYears`:
+  [TermInYears](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#terminyears)
+- `PaymentOption`:
+  [PaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#paymentoption)
+- `ServiceSpecification`:
+  [ServiceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#servicespecificationtypedef)
+- `RecommendationDetails`:
+  `List`\[[ReservationPurchaseRecommendationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationpurchaserecommendationdetailtypedef)\]
+- `RecommendationSummary`:
+  [ReservationPurchaseRecommendationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationpurchaserecommendationsummarytypedef)
 
 ## ReservationUtilizationGroupTypeDef
 
@@ -1244,15 +1147,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ReservationUtilizationGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-- `Attributes`: `Dict[str, str]`
-- `Utilization`: `"ReservationAggregatesTypeDef"`
-
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Utilization`:
+  [ReservationAggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationaggregatestypedef)
 
 ## ResourceDetailsTypeDef
 
@@ -1260,12 +1161,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ResourceDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EC2ResourceDetails`: `"EC2ResourceDetailsTypeDef"`
 
+- `EC2ResourceDetails`:
+  [EC2ResourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#ec2resourcedetailstypedef)
 
 ## ResourceUtilizationTypeDef
 
@@ -1273,12 +1172,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ResourceUtilizationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EC2ResourceUtilization`: `"EC2ResourceUtilizationTypeDef"`
 
+- `EC2ResourceUtilization`:
+  [EC2ResourceUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#ec2resourceutilizationtypedef)
 
 ## ResultByTimeTypeDef
 
@@ -1286,15 +1183,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ResultByTimeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimePeriod`: `"DateIntervalTypeDef"`
-- `Total`: `Dict[str, "MetricValueTypeDef"]`
-- `Groups`: `List["GroupTypeDef"]`
-- `Estimated`: `bool`
 
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
+- `Total`: `Dict`\[`str`,
+  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#metricvaluetypedef)\]
+- `Groups`:
+  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#grouptypedef)\]
+- `Estimated`: `bool`
 
 ## RightsizingRecommendationConfigurationTypeDef
 
@@ -1302,13 +1199,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import RightsizingRecommendationConfigurationTypeDef
 ```
 
-
 Required fields:
-- `RecommendationTarget`: `RecommendationTarget`
+
+- `RecommendationTarget`:
+  [RecommendationTarget](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#recommendationtarget)
 - `BenefitsConsidered`: `bool`
-
-
-
 
 ## RightsizingRecommendationMetadataTypeDef
 
@@ -1316,15 +1211,13 @@ Required fields:
 from mypy_boto3_ce.type_defs import RightsizingRecommendationMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
-- `LookbackPeriodInDays`: `LookbackPeriodInDays`
+- `LookbackPeriodInDays`:
+  [LookbackPeriodInDays](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#lookbackperiodindays)
 - `AdditionalMetadata`: `str`
-
 
 ## RightsizingRecommendationSummaryTypeDef
 
@@ -1332,15 +1225,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import RightsizingRecommendationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalRecommendationCount`: `str`
 - `EstimatedTotalMonthlySavingsAmount`: `str`
 - `SavingsCurrencyCode`: `str`
 - `SavingsPercentage`: `str`
-
 
 ## RightsizingRecommendationTypeDef
 
@@ -1348,16 +1238,17 @@ Optional fields:
 from mypy_boto3_ce.type_defs import RightsizingRecommendationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccountId`: `str`
-- `CurrentInstance`: `"CurrentInstanceTypeDef"`
-- `RightsizingType`: `RightsizingType`
-- `ModifyRecommendationDetail`: `"ModifyRecommendationDetailTypeDef"`
-- `TerminateRecommendationDetail`: `"TerminateRecommendationDetailTypeDef"`
 
+- `AccountId`: `str`
+- `CurrentInstance`:
+  [CurrentInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#currentinstancetypedef)
+- `RightsizingType`:
+  [RightsizingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#rightsizingtype)
+- `ModifyRecommendationDetail`:
+  [ModifyRecommendationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#modifyrecommendationdetailtypedef)
+- `TerminateRecommendationDetail`:
+  [TerminateRecommendationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#terminaterecommendationdetailtypedef)
 
 ## RootCauseTypeDef
 
@@ -1365,15 +1256,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import RootCauseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Service`: `str`
 - `Region`: `str`
 - `LinkedAccount`: `str`
 - `UsageType`: `str`
-
 
 ## SavingsPlansAmortizedCommitmentTypeDef
 
@@ -1381,14 +1269,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansAmortizedCommitmentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AmortizedRecurringCommitment`: `str`
 - `AmortizedUpfrontCommitment`: `str`
 - `TotalAmortizedCommitment`: `str`
-
 
 ## SavingsPlansCoverageDataTypeDef
 
@@ -1396,15 +1281,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansCoverageDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SpendCoveredBySavingsPlans`: `str`
 - `OnDemandCost`: `str`
 - `TotalCost`: `str`
 - `CoveragePercentage`: `str`
-
 
 ## SavingsPlansCoverageTypeDef
 
@@ -1412,14 +1294,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansCoverageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
-- `Coverage`: `"SavingsPlansCoverageDataTypeDef"`
-- `TimePeriod`: `"DateIntervalTypeDef"`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Coverage`:
+  [SavingsPlansCoverageDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanscoveragedatatypedef)
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
 
 ## SavingsPlansDetailsTypeDef
 
@@ -1427,14 +1308,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Region`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
-
 
 ## SavingsPlansPurchaseRecommendationDetailTypeDef
 
@@ -1442,11 +1320,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SavingsPlansDetails`: `"SavingsPlansDetailsTypeDef"`
+
+- `SavingsPlansDetails`:
+  [SavingsPlansDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansdetailstypedef)
 - `AccountId`: `str`
 - `UpfrontCost`: `str`
 - `EstimatedROI`: `str`
@@ -1463,21 +1340,17 @@ Optional fields:
 - `CurrentMaximumHourlyOnDemandSpend`: `str`
 - `CurrentAverageHourlyOnDemandSpend`: `str`
 
-
 ## SavingsPlansPurchaseRecommendationMetadataTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
 - `AdditionalMetadata`: `str`
-
 
 ## SavingsPlansPurchaseRecommendationSummaryTypeDef
 
@@ -1485,10 +1358,8 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EstimatedROI`: `str`
 - `CurrencyCode`: `str`
 - `EstimatedTotalCost`: `str`
@@ -1501,25 +1372,28 @@ Optional fields:
 - `EstimatedMonthlySavingsAmount`: `str`
 - `EstimatedOnDemandCostWithCurrentCommitment`: `str`
 
-
 ## SavingsPlansPurchaseRecommendationTypeDef
 
 ```python
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccountScope`: `AccountScope`
-- `SavingsPlansType`: `SupportedSavingsPlansType`
-- `TermInYears`: `TermInYears`
-- `PaymentOption`: `PaymentOption`
-- `LookbackPeriodInDays`: `LookbackPeriodInDays`
-- `SavingsPlansPurchaseRecommendationDetails`: `List["SavingsPlansPurchaseRecommendationDetailTypeDef"]`
-- `SavingsPlansPurchaseRecommendationSummary`: `"SavingsPlansPurchaseRecommendationSummaryTypeDef"`
 
+- `AccountScope`:
+  [AccountScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#accountscope)
+- `SavingsPlansType`:
+  [SupportedSavingsPlansType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#supportedsavingsplanstype)
+- `TermInYears`:
+  [TermInYears](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#terminyears)
+- `PaymentOption`:
+  [PaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#paymentoption)
+- `LookbackPeriodInDays`:
+  [LookbackPeriodInDays](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#lookbackperiodindays)
+- `SavingsPlansPurchaseRecommendationDetails`:
+  `List`\[[SavingsPlansPurchaseRecommendationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanspurchaserecommendationdetailtypedef)\]
+- `SavingsPlansPurchaseRecommendationSummary`:
+  [SavingsPlansPurchaseRecommendationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanspurchaserecommendationsummarytypedef)
 
 ## SavingsPlansSavingsTypeDef
 
@@ -1527,13 +1401,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansSavingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NetSavings`: `str`
 - `OnDemandCostEquivalent`: `str`
-
 
 ## SavingsPlansUtilizationAggregatesTypeDef
 
@@ -1541,16 +1412,17 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationAggregatesTypeDef
 ```
 
-
 Required fields:
-- `Utilization`: `"SavingsPlansUtilizationTypeDef"`
 
-
+- `Utilization`:
+  [SavingsPlansUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationtypedef)
 
 Optional fields:
-- `Savings`: `"SavingsPlansSavingsTypeDef"`
-- `AmortizedCommitment`: `"SavingsPlansAmortizedCommitmentTypeDef"`
 
+- `Savings`:
+  [SavingsPlansSavingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanssavingstypedef)
+- `AmortizedCommitment`:
+  [SavingsPlansAmortizedCommitmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansamortizedcommitmenttypedef)
 
 ## SavingsPlansUtilizationByTimeTypeDef
 
@@ -1558,17 +1430,19 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationByTimeTypeDef
 ```
 
-
 Required fields:
-- `TimePeriod`: `"DateIntervalTypeDef"`
-- `Utilization`: `"SavingsPlansUtilizationTypeDef"`
 
-
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
+- `Utilization`:
+  [SavingsPlansUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationtypedef)
 
 Optional fields:
-- `Savings`: `"SavingsPlansSavingsTypeDef"`
-- `AmortizedCommitment`: `"SavingsPlansAmortizedCommitmentTypeDef"`
 
+- `Savings`:
+  [SavingsPlansSavingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanssavingstypedef)
+- `AmortizedCommitment`:
+  [SavingsPlansAmortizedCommitmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansamortizedcommitmenttypedef)
 
 ## SavingsPlansUtilizationDetailTypeDef
 
@@ -1576,16 +1450,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SavingsPlanArn`: `str`
-- `Attributes`: `Dict[str, str]`
-- `Utilization`: `"SavingsPlansUtilizationTypeDef"`
-- `Savings`: `"SavingsPlansSavingsTypeDef"`
-- `AmortizedCommitment`: `"SavingsPlansAmortizedCommitmentTypeDef"`
 
+- `SavingsPlanArn`: `str`
+- `Attributes`: `Dict`\[`str`, `str`\]
+- `Utilization`:
+  [SavingsPlansUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansutilizationtypedef)
+- `Savings`:
+  [SavingsPlansSavingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplanssavingstypedef)
+- `AmortizedCommitment`:
+  [SavingsPlansAmortizedCommitmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#savingsplansamortizedcommitmenttypedef)
 
 ## SavingsPlansUtilizationTypeDef
 
@@ -1593,15 +1467,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalCommitment`: `str`
 - `UsedCommitment`: `str`
 - `UnusedCommitment`: `str`
 - `UtilizationPercentage`: `str`
-
 
 ## ServiceSpecificationTypeDef
 
@@ -1609,12 +1480,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import ServiceSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EC2Specification`: `"EC2SpecificationTypeDef"`
 
+- `EC2Specification`:
+  [EC2SpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#ec2specificationtypedef)
 
 ## SortDefinitionTypeDef
 
@@ -1622,15 +1491,14 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SortDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `SortOrder`: `SortOrder`
 
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#sortorder)
 
 ## SubscriberTypeDef
 
@@ -1638,14 +1506,13 @@ Optional fields:
 from mypy_boto3_ce.type_defs import SubscriberTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Address`: `str`
-- `Type`: `SubscriberType`
-- `Status`: `SubscriberStatus`
 
+- `Address`: `str`
+- `Type`:
+  [SubscriberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#subscribertype)
+- `Status`:
+  [SubscriberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#subscriberstatus)
 
 ## TagValuesTypeDef
 
@@ -1653,14 +1520,12 @@ Optional fields:
 from mypy_boto3_ce.type_defs import TagValuesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
-- `MatchOptions`: `List[MatchOption]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
+- `MatchOptions`:
+  `List`\[[MatchOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#matchoption)\]
 
 ## TargetInstanceTypeDef
 
@@ -1668,17 +1533,16 @@ Optional fields:
 from mypy_boto3_ce.type_defs import TargetInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EstimatedMonthlyCost`: `str`
 - `EstimatedMonthlySavings`: `str`
 - `CurrencyCode`: `str`
 - `DefaultTargetInstance`: `bool`
-- `ResourceDetails`: `"ResourceDetailsTypeDef"`
-- `ExpectedResourceUtilization`: `"ResourceUtilizationTypeDef"`
-
+- `ResourceDetails`:
+  [ResourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resourcedetailstypedef)
+- `ExpectedResourceUtilization`:
+  [ResourceUtilizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#resourceutilizationtypedef)
 
 ## TerminateRecommendationDetailTypeDef
 
@@ -1686,13 +1550,10 @@ Optional fields:
 from mypy_boto3_ce.type_defs import TerminateRecommendationDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EstimatedMonthlySavings`: `str`
 - `CurrencyCode`: `str`
-
 
 ## TotalImpactFilterTypeDef
 
@@ -1700,16 +1561,15 @@ Optional fields:
 from mypy_boto3_ce.type_defs import TotalImpactFilterTypeDef
 ```
 
-
 Required fields:
-- `NumericOperator`: `NumericOperator`
+
+- `NumericOperator`:
+  [NumericOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/literals.html#numericoperator)
 - `StartValue`: `float`
 
-
-
 Optional fields:
-- `EndValue`: `float`
 
+- `EndValue`: `float`
 
 ## UpdateAnomalyMonitorResponseTypeDef
 
@@ -1717,12 +1577,9 @@ Optional fields:
 from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MonitorArn`: `str`
-
-
-
 
 ## UpdateAnomalySubscriptionResponseTypeDef
 
@@ -1730,12 +1587,9 @@ Required fields:
 from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `SubscriptionArn`: `str`
-
-
-
 
 ## UpdateCostCategoryDefinitionResponseTypeDef
 
@@ -1743,13 +1597,10 @@ Required fields:
 from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CostCategoryArn`: `str`
 - `EffectiveStart`: `str`
-
 
 ## UtilizationByTimeTypeDef
 
@@ -1757,11 +1608,11 @@ Optional fields:
 from mypy_boto3_ce.type_defs import UtilizationByTimeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimePeriod`: `"DateIntervalTypeDef"`
-- `Groups`: `List["ReservationUtilizationGroupTypeDef"]`
-- `Total`: `"ReservationAggregatesTypeDef"`
 
+- `TimePeriod`:
+  [DateIntervalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#dateintervaltypedef)
+- `Groups`:
+  `List`\[[ReservationUtilizationGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationutilizationgrouptypedef)\]
+- `Total`:
+  [ReservationAggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ce/type_defs.html#reservationaggregatestypedef)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SageMaker](./README.md) > Structures
 
-Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
-type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+Auto-generated documentation for
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+type annotations stubs module
+[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [Typed dictionaries for boto3 SageMaker module](#typed-dictionaries-for-boto3-sagemaker-module)
   - [ActionSourceTypeDef](#actionsourcetypedef)
@@ -516,16 +518,14 @@ type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/my
 from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceUri`: `str`
 
-
-
 Optional fields:
+
 - `SourceType`: `str`
 - `SourceId`: `str`
-
 
 ## ActionSummaryTypeDef
 
@@ -533,18 +533,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ActionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionArn`: `str`
 - `ActionName`: `str`
-- `Source`: `"ActionSourceTypeDef"`
+- `Source`:
+  [ActionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#actionsourcetypedef)
 - `ActionType`: `str`
-- `Status`: `ActionStatus`
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## AddAssociationResponseTypeDef
 
@@ -552,13 +551,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AddAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceArn`: `str`
 - `DestinationArn`: `str`
-
 
 ## AddTagsOutputTypeDef
 
@@ -566,13 +562,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AddTagsOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## AgentVersionTypeDef
 
@@ -580,13 +575,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AgentVersionTypeDef
 ```
 
-
 Required fields:
+
 - `Version`: `str`
 - `AgentCount`: `int`
-
-
-
 
 ## AlarmTypeDef
 
@@ -594,12 +586,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AlarmTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AlarmName`: `str`
 
+- `AlarmName`: `str`
 
 ## AlgorithmSpecificationTypeDef
 
@@ -607,18 +596,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmSpecificationTypeDef
 ```
 
-
 Required fields:
-- `TrainingInputMode`: `TrainingInputMode`
 
-
+- `TrainingInputMode`:
+  [TrainingInputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginputmode)
 
 Optional fields:
+
 - `TrainingImage`: `str`
 - `AlgorithmName`: `str`
-- `MetricDefinitions`: `List["MetricDefinitionTypeDef"]`
+- `MetricDefinitions`:
+  `List`\[[MetricDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricdefinitiontypedef)\]
 - `EnableSageMakerMetricsTimeSeries`: `bool`
-
 
 ## AlgorithmStatusDetailsTypeDef
 
@@ -626,13 +615,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmStatusDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ValidationStatuses`: `List["AlgorithmStatusItemTypeDef"]`
-- `ImageScanStatuses`: `List["AlgorithmStatusItemTypeDef"]`
 
+- `ValidationStatuses`:
+  `List`\[[AlgorithmStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmstatusitemtypedef)\]
+- `ImageScanStatuses`:
+  `List`\[[AlgorithmStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmstatusitemtypedef)\]
 
 ## AlgorithmStatusItemTypeDef
 
@@ -640,16 +628,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmStatusItemTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Status`: `DetailedAlgorithmStatus`
-
-
+- `Status`:
+  [DetailedAlgorithmStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#detailedalgorithmstatus)
 
 Optional fields:
-- `FailureReason`: `str`
 
+- `FailureReason`: `str`
 
 ## AlgorithmSummaryTypeDef
 
@@ -657,18 +644,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `AlgorithmName`: `str`
 - `AlgorithmArn`: `str`
 - `CreationTime`: `datetime`
-- `AlgorithmStatus`: `AlgorithmStatus`
-
-
+- `AlgorithmStatus`:
+  [AlgorithmStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#algorithmstatus)
 
 Optional fields:
-- `AlgorithmDescription`: `str`
 
+- `AlgorithmDescription`: `str`
 
 ## AlgorithmValidationProfileTypeDef
 
@@ -676,16 +662,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmValidationProfileTypeDef
 ```
 
-
 Required fields:
+
 - `ProfileName`: `str`
-- `TrainingJobDefinition`: `"TrainingJobDefinitionTypeDef"`
-
-
+- `TrainingJobDefinition`:
+  [TrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobdefinitiontypedef)
 
 Optional fields:
-- `TransformJobDefinition`: `"TransformJobDefinitionTypeDef"`
 
+- `TransformJobDefinition`:
+  [TransformJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformjobdefinitiontypedef)
 
 ## AlgorithmValidationSpecificationTypeDef
 
@@ -693,13 +679,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AlgorithmValidationSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ValidationRole`: `str`
-- `ValidationProfiles`: `List["AlgorithmValidationProfileTypeDef"]`
-
-
-
+- `ValidationProfiles`:
+  `List`\[[AlgorithmValidationProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmvalidationprofiletypedef)\]
 
 ## AnnotationConsolidationConfigTypeDef
 
@@ -707,12 +691,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AnnotationConsolidationConfigTypeDef
 ```
 
-
 Required fields:
+
 - `AnnotationConsolidationLambdaArn`: `str`
-
-
-
 
 ## AppDetailsTypeDef
 
@@ -720,17 +701,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AppDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `AppType`: `AppType`
+- `AppType`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
 - `AppName`: `str`
-- `Status`: `AppStatus`
+- `Status`:
+  [AppStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appstatus)
 - `CreationTime`: `datetime`
-
 
 ## AppImageConfigDetailsTypeDef
 
@@ -738,16 +718,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AppImageConfigDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppImageConfigArn`: `str`
 - `AppImageConfigName`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `KernelGatewayImageConfig`: `"KernelGatewayImageConfigTypeDef"`
-
+- `KernelGatewayImageConfig`:
+  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
 
 ## AppSpecificationTypeDef
 
@@ -755,16 +733,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 
-
-
 Optional fields:
-- `ContainerEntrypoint`: `List[str]`
-- `ContainerArguments`: `List[str]`
 
+- `ContainerEntrypoint`: `List`\[`str`\]
+- `ContainerArguments`: `List`\[`str`\]
 
 ## ArtifactSourceTypeDef
 
@@ -772,15 +748,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ArtifactSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceUri`: `str`
 
-
-
 Optional fields:
-- `SourceTypes`: `List["ArtifactSourceTypeTypeDef"]`
 
+- `SourceTypes`:
+  `List`\[[ArtifactSourceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypetypedef)\]
 
 ## ArtifactSourceTypeTypeDef
 
@@ -788,13 +763,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ArtifactSourceTypeTypeDef
 ```
 
-
 Required fields:
-- `SourceIdType`: `ArtifactSourceIdType`
+
+- `SourceIdType`:
+  [ArtifactSourceIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#artifactsourceidtype)
 - `Value`: `str`
-
-
-
 
 ## ArtifactSummaryTypeDef
 
@@ -802,17 +775,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ArtifactSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ArtifactArn`: `str`
 - `ArtifactName`: `str`
-- `Source`: `"ArtifactSourceTypeDef"`
+- `Source`:
+  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
 - `ArtifactType`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## AssociateTrialComponentResponseTypeDef
 
@@ -820,13 +791,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AssociateTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentArn`: `str`
 - `TrialArn`: `str`
-
 
 ## AssociationSummaryTypeDef
 
@@ -834,20 +802,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AssociationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceArn`: `str`
 - `DestinationArn`: `str`
 - `SourceType`: `str`
 - `DestinationType`: `str`
-- `AssociationType`: `AssociationEdgeType`
+- `AssociationType`:
+  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
 - `SourceName`: `str`
 - `DestinationName`: `str`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## AthenaDatasetDefinitionTypeDef
 
@@ -855,21 +822,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AthenaDatasetDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Catalog`: `str`
 - `Database`: `str`
 - `QueryString`: `str`
 - `OutputS3Uri`: `str`
-- `OutputFormat`: `AthenaResultFormat`
-
-
+- `OutputFormat`:
+  [AthenaResultFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#athenaresultformat)
 
 Optional fields:
+
 - `WorkGroup`: `str`
 - `KmsKeyId`: `str`
-- `OutputCompression`: `AthenaResultCompressionType`
-
+- `OutputCompression`:
+  [AthenaResultCompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#athenaresultcompressiontype)
 
 ## AutoMLCandidateStepTypeDef
 
@@ -877,14 +844,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLCandidateStepTypeDef
 ```
 
-
 Required fields:
-- `CandidateStepType`: `CandidateStepType`
+
+- `CandidateStepType`:
+  [CandidateStepType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatesteptype)
 - `CandidateStepArn`: `str`
 - `CandidateStepName`: `str`
-
-
-
 
 ## AutoMLCandidateTypeDef
 
@@ -892,24 +857,28 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLCandidateTypeDef
 ```
 
-
 Required fields:
+
 - `CandidateName`: `str`
-- `ObjectiveStatus`: `ObjectiveStatus`
-- `CandidateSteps`: `List["AutoMLCandidateStepTypeDef"]`
-- `CandidateStatus`: `CandidateStatus`
+- `ObjectiveStatus`:
+  [ObjectiveStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#objectivestatus)
+- `CandidateSteps`:
+  `List`\[[AutoMLCandidateStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlcandidatesteptypedef)\]
+- `CandidateStatus`:
+  [CandidateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatestatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
-- `FinalAutoMLJobObjectiveMetric`: `"FinalAutoMLJobObjectiveMetricTypeDef"`
-- `InferenceContainers`: `List["AutoMLContainerDefinitionTypeDef"]`
+
+- `FinalAutoMLJobObjectiveMetric`:
+  [FinalAutoMLJobObjectiveMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#finalautomljobobjectivemetrictypedef)
+- `InferenceContainers`:
+  `List`\[[AutoMLContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlcontainerdefinitiontypedef)\]
 - `EndTime`: `datetime`
 - `FailureReason`: `str`
-- `CandidateProperties`: `"CandidatePropertiesTypeDef"`
-
+- `CandidateProperties`:
+  [CandidatePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#candidatepropertiestypedef)
 
 ## AutoMLChannelTypeDef
 
@@ -917,16 +886,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLChannelTypeDef
 ```
 
-
 Required fields:
-- `DataSource`: `"AutoMLDataSourceTypeDef"`
+
+- `DataSource`:
+  [AutoMLDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automldatasourcetypedef)
 - `TargetAttributeName`: `str`
 
-
-
 Optional fields:
-- `CompressionType`: `CompressionType`
 
+- `CompressionType`:
+  [CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compressiontype)
 
 ## AutoMLContainerDefinitionTypeDef
 
@@ -934,16 +903,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLContainerDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Image`: `str`
 - `ModelDataUrl`: `str`
 
-
-
 Optional fields:
-- `Environment`: `Dict[str, str]`
 
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## AutoMLDataSourceTypeDef
 
@@ -951,12 +918,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLDataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3DataSource`: `"AutoMLS3DataSourceTypeDef"`
 
-
-
+- `S3DataSource`:
+  [AutoMLS3DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automls3datasourcetypedef)
 
 ## AutoMLJobArtifactsTypeDef
 
@@ -964,13 +929,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLJobArtifactsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CandidateDefinitionNotebookLocation`: `str`
 - `DataExplorationNotebookLocation`: `str`
-
 
 ## AutoMLJobCompletionCriteriaTypeDef
 
@@ -978,14 +940,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLJobCompletionCriteriaTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxCandidates`: `int`
 - `MaxRuntimePerTrainingJobInSeconds`: `int`
 - `MaxAutoMLJobRuntimeInSeconds`: `int`
-
 
 ## AutoMLJobConfigTypeDef
 
@@ -993,13 +952,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLJobConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CompletionCriteria`: `"AutoMLJobCompletionCriteriaTypeDef"`
-- `SecurityConfig`: `"AutoMLSecurityConfigTypeDef"`
 
+- `CompletionCriteria`:
+  [AutoMLJobCompletionCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobcompletioncriteriatypedef)
+- `SecurityConfig`:
+  [AutoMLSecurityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlsecurityconfigtypedef)
 
 ## AutoMLJobObjectiveTypeDef
 
@@ -1007,12 +965,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLJobObjectiveTypeDef
 ```
 
-
 Required fields:
-- `MetricName`: `AutoMLMetricEnum`
 
-
-
+- `MetricName`:
+  [AutoMLMetricEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlmetricenum)
 
 ## AutoMLJobSummaryTypeDef
 
@@ -1020,22 +976,23 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `AutoMLJobName`: `str`
 - `AutoMLJobArn`: `str`
-- `AutoMLJobStatus`: `AutoMLJobStatus`
-- `AutoMLJobSecondaryStatus`: `AutoMLJobSecondaryStatus`
+- `AutoMLJobStatus`:
+  [AutoMLJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobstatus)
+- `AutoMLJobSecondaryStatus`:
+  [AutoMLJobSecondaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobsecondarystatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
+
 - `EndTime`: `datetime`
 - `FailureReason`: `str`
-- `PartialFailureReasons`: `List["AutoMLPartialFailureReasonTypeDef"]`
-
+- `PartialFailureReasons`:
+  `List`\[[AutoMLPartialFailureReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlpartialfailurereasontypedef)\]
 
 ## AutoMLOutputDataConfigTypeDef
 
@@ -1043,15 +1000,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLOutputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## AutoMLPartialFailureReasonTypeDef
 
@@ -1059,12 +1014,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLPartialFailureReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PartialFailureMessage`: `str`
 
+- `PartialFailureMessage`: `str`
 
 ## AutoMLS3DataSourceTypeDef
 
@@ -1072,13 +1024,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLS3DataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3DataType`: `AutoMLS3DataType`
+
+- `S3DataType`:
+  [AutoMLS3DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automls3datatype)
 - `S3Uri`: `str`
-
-
-
 
 ## AutoMLSecurityConfigTypeDef
 
@@ -1086,14 +1036,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import AutoMLSecurityConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VolumeKmsKeyId`: `str`
 - `EnableInterContainerTrafficEncryption`: `bool`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 
 ## AutoRollbackConfigTypeDef
 
@@ -1101,12 +1049,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import AutoRollbackConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Alarms`: `List["AlarmTypeDef"]`
 
+- `Alarms`:
+  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#alarmtypedef)\]
 
 ## BiasTypeDef
 
@@ -1114,12 +1060,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import BiasTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Report`: `"MetricsSourceTypeDef"`
 
+- `Report`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
 
 ## BlueGreenUpdatePolicyTypeDef
 
@@ -1127,16 +1071,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import BlueGreenUpdatePolicyTypeDef
 ```
 
-
 Required fields:
-- `TrafficRoutingConfiguration`: `"TrafficRoutingConfigTypeDef"`
 
-
+- `TrafficRoutingConfiguration`:
+  [TrafficRoutingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trafficroutingconfigtypedef)
 
 Optional fields:
+
 - `TerminationWaitInSeconds`: `int`
 - `MaximumExecutionTimeoutInSeconds`: `int`
-
 
 ## CacheHitResultTypeDef
 
@@ -1144,12 +1087,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CacheHitResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SourcePipelineExecutionArn`: `str`
 
+- `SourcePipelineExecutionArn`: `str`
 
 ## CandidateArtifactLocationsTypeDef
 
@@ -1157,12 +1097,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CandidateArtifactLocationsTypeDef
 ```
 
-
 Required fields:
+
 - `Explainability`: `str`
-
-
-
 
 ## CandidatePropertiesTypeDef
 
@@ -1170,12 +1107,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CandidatePropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CandidateArtifactLocations`: `"CandidateArtifactLocationsTypeDef"`
 
+- `CandidateArtifactLocations`:
+  [CandidateArtifactLocationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#candidateartifactlocationstypedef)
 
 ## CapacitySizeTypeDef
 
@@ -1183,13 +1118,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CapacitySizeTypeDef
 ```
 
-
 Required fields:
-- `Type`: `CapacitySizeType`
+
+- `Type`:
+  [CapacitySizeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#capacitysizetype)
 - `Value`: `int`
-
-
-
 
 ## CaptureContentTypeHeaderTypeDef
 
@@ -1197,13 +1130,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CaptureContentTypeHeaderTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CsvContentTypes`: `List[str]`
-- `JsonContentTypes`: `List[str]`
 
+- `CsvContentTypes`: `List`\[`str`\]
+- `JsonContentTypes`: `List`\[`str`\]
 
 ## CaptureOptionTypeDef
 
@@ -1211,12 +1141,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CaptureOptionTypeDef
 ```
 
-
 Required fields:
-- `CaptureMode`: `CaptureMode`
 
-
-
+- `CaptureMode`:
+  [CaptureMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#capturemode)
 
 ## CategoricalParameterRangeSpecificationTypeDef
 
@@ -1224,12 +1152,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CategoricalParameterRangeSpecificationTypeDef
 ```
 
-
 Required fields:
-- `Values`: `List[str]`
 
-
-
+- `Values`: `List`\[`str`\]
 
 ## CategoricalParameterRangeTypeDef
 
@@ -1237,13 +1162,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CategoricalParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## ChannelSpecificationTypeDef
 
@@ -1251,19 +1173,19 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ChannelSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `SupportedContentTypes`: `List[str]`
-- `SupportedInputModes`: `List[TrainingInputMode]`
-
-
+- `SupportedContentTypes`: `List`\[`str`\]
+- `SupportedInputModes`:
+  `List`\[[TrainingInputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginputmode)\]
 
 Optional fields:
+
 - `Description`: `str`
 - `IsRequired`: `bool`
-- `SupportedCompressionTypes`: `List[CompressionType]`
-
+- `SupportedCompressionTypes`:
+  `List`\[[CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compressiontype)\]
 
 ## ChannelTypeDef
 
@@ -1271,20 +1193,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ChannelTypeDef
 ```
 
-
 Required fields:
+
 - `ChannelName`: `str`
-- `DataSource`: `"DataSourceTypeDef"`
-
-
+- `DataSource`:
+  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datasourcetypedef)
 
 Optional fields:
-- `ContentType`: `str`
-- `CompressionType`: `CompressionType`
-- `RecordWrapperType`: `RecordWrapper`
-- `InputMode`: `TrainingInputMode`
-- `ShuffleConfig`: `"ShuffleConfigTypeDef"`
 
+- `ContentType`: `str`
+- `CompressionType`:
+  [CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compressiontype)
+- `RecordWrapperType`:
+  [RecordWrapper](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#recordwrapper)
+- `InputMode`:
+  [TrainingInputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginputmode)
+- `ShuffleConfig`:
+  [ShuffleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#shuffleconfigtypedef)
 
 ## CheckpointConfigTypeDef
 
@@ -1292,15 +1217,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CheckpointConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `LocalPath`: `str`
 
+- `LocalPath`: `str`
 
 ## CodeRepositorySummaryTypeDef
 
@@ -1308,18 +1231,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CodeRepositorySummaryTypeDef
 ```
 
-
 Required fields:
+
 - `CodeRepositoryName`: `str`
 - `CodeRepositoryArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
-- `GitConfig`: `"GitConfigTypeDef"`
 
+- `GitConfig`:
+  [GitConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigtypedef)
 
 ## CognitoConfigTypeDef
 
@@ -1327,13 +1249,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CognitoConfigTypeDef
 ```
 
-
 Required fields:
+
 - `UserPool`: `str`
 - `ClientId`: `str`
-
-
-
 
 ## CognitoMemberDefinitionTypeDef
 
@@ -1341,14 +1260,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CognitoMemberDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `UserPool`: `str`
 - `UserGroup`: `str`
 - `ClientId`: `str`
-
-
-
 
 ## CollectionConfigurationTypeDef
 
@@ -1356,13 +1272,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CollectionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CollectionName`: `str`
-- `CollectionParameters`: `Dict[str, str]`
 
+- `CollectionName`: `str`
+- `CollectionParameters`: `Dict`\[`str`, `str`\]
 
 ## CompilationJobSummaryTypeDef
 
@@ -1370,24 +1283,27 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CompilationJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `CompilationJobName`: `str`
 - `CompilationJobArn`: `str`
 - `CreationTime`: `datetime`
-- `CompilationJobStatus`: `CompilationJobStatus`
-
-
+- `CompilationJobStatus`:
+  [CompilationJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compilationjobstatus)
 
 Optional fields:
+
 - `CompilationStartTime`: `datetime`
 - `CompilationEndTime`: `datetime`
-- `CompilationTargetDevice`: `TargetDevice`
-- `CompilationTargetPlatformOs`: `TargetPlatformOs`
-- `CompilationTargetPlatformArch`: `TargetPlatformArch`
-- `CompilationTargetPlatformAccelerator`: `TargetPlatformAccelerator`
+- `CompilationTargetDevice`:
+  [TargetDevice](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetdevice)
+- `CompilationTargetPlatformOs`:
+  [TargetPlatformOs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformos)
+- `CompilationTargetPlatformArch`:
+  [TargetPlatformArch](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformarch)
+- `CompilationTargetPlatformAccelerator`:
+  [TargetPlatformAccelerator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformaccelerator)
 - `LastModifiedTime`: `datetime`
-
 
 ## ConditionStepMetadataTypeDef
 
@@ -1395,12 +1311,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ConditionStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Outcome`: `ConditionOutcome`
 
+- `Outcome`:
+  [ConditionOutcome](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#conditionoutcome)
 
 ## ContainerDefinitionTypeDef
 
@@ -1408,19 +1322,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ContainerDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContainerHostname`: `str`
 - `Image`: `str`
-- `ImageConfig`: `"ImageConfigTypeDef"`
-- `Mode`: `ContainerMode`
+- `ImageConfig`:
+  [ImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#imageconfigtypedef)
+- `Mode`:
+  [ContainerMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#containermode)
 - `ModelDataUrl`: `str`
-- `Environment`: `Dict[str, str]`
+- `Environment`: `Dict`\[`str`, `str`\]
 - `ModelPackageName`: `str`
-- `MultiModelConfig`: `"MultiModelConfigTypeDef"`
-
+- `MultiModelConfig`:
+  [MultiModelConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#multimodelconfigtypedef)
 
 ## ContextSourceTypeDef
 
@@ -1428,16 +1342,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ContextSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceUri`: `str`
 
-
-
 Optional fields:
+
 - `SourceType`: `str`
 - `SourceId`: `str`
-
 
 ## ContextSummaryTypeDef
 
@@ -1445,17 +1357,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ContextSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContextArn`: `str`
 - `ContextName`: `str`
-- `Source`: `"ContextSourceTypeDef"`
+- `Source`:
+  [ContextSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#contextsourcetypedef)
 - `ContextType`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## ContinuousParameterRangeSpecificationTypeDef
 
@@ -1463,13 +1373,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ContinuousParameterRangeSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `MinValue`: `str`
 - `MaxValue`: `str`
-
-
-
 
 ## ContinuousParameterRangeTypeDef
 
@@ -1477,17 +1384,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ContinuousParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `MinValue`: `str`
 - `MaxValue`: `str`
 
-
-
 Optional fields:
-- `ScalingType`: `HyperParameterScalingType`
 
+- `ScalingType`:
+  [HyperParameterScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparameterscalingtype)
 
 ## CreateActionResponseTypeDef
 
@@ -1495,12 +1401,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateActionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActionArn`: `str`
 
+- `ActionArn`: `str`
 
 ## CreateAlgorithmOutputTypeDef
 
@@ -1508,13 +1411,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateAlgorithmOutputTypeDef
 ```
 
-
 Required fields:
+
 - `AlgorithmArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateAppImageConfigResponseTypeDef
 
@@ -1522,12 +1423,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateAppImageConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppImageConfigArn`: `str`
 
+- `AppImageConfigArn`: `str`
 
 ## CreateAppResponseTypeDef
 
@@ -1535,12 +1433,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateAppResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppArn`: `str`
 
+- `AppArn`: `str`
 
 ## CreateArtifactResponseTypeDef
 
@@ -1548,12 +1443,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateArtifactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ArtifactArn`: `str`
 
+- `ArtifactArn`: `str`
 
 ## CreateAutoMLJobResponseTypeDef
 
@@ -1561,12 +1453,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateAutoMLJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `AutoMLJobArn`: `str`
-
-
-
 
 ## CreateCodeRepositoryOutputTypeDef
 
@@ -1574,13 +1463,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateCodeRepositoryOutputTypeDef
 ```
 
-
 Required fields:
+
 - `CodeRepositoryArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateCompilationJobResponseTypeDef
 
@@ -1588,12 +1475,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateCompilationJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CompilationJobArn`: `str`
-
-
-
 
 ## CreateContextResponseTypeDef
 
@@ -1601,12 +1485,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateContextResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContextArn`: `str`
 
+- `ContextArn`: `str`
 
 ## CreateDataQualityJobDefinitionResponseTypeDef
 
@@ -1614,12 +1495,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateDataQualityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
-
-
-
 
 ## CreateDomainResponseTypeDef
 
@@ -1627,13 +1505,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateDomainResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainArn`: `str`
 - `Url`: `str`
-
 
 ## CreateEndpointConfigOutputTypeDef
 
@@ -1641,13 +1516,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateEndpointConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointConfigArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateEndpointOutputTypeDef
 
@@ -1655,13 +1528,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateEndpointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateExperimentResponseTypeDef
 
@@ -1669,12 +1540,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExperimentArn`: `str`
 
+- `ExperimentArn`: `str`
 
 ## CreateFeatureGroupResponseTypeDef
 
@@ -1682,12 +1550,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateFeatureGroupResponseTypeDef
 ```
 
-
 Required fields:
+
 - `FeatureGroupArn`: `str`
-
-
-
 
 ## CreateFlowDefinitionResponseTypeDef
 
@@ -1695,12 +1560,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateFlowDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `FlowDefinitionArn`: `str`
-
-
-
 
 ## CreateHumanTaskUiResponseTypeDef
 
@@ -1708,12 +1570,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateHumanTaskUiResponseTypeDef
 ```
 
-
 Required fields:
+
 - `HumanTaskUiArn`: `str`
-
-
-
 
 ## CreateHyperParameterTuningJobResponseTypeDef
 
@@ -1721,12 +1580,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateHyperParameterTuningJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `HyperParameterTuningJobArn`: `str`
-
-
-
 
 ## CreateImageResponseTypeDef
 
@@ -1734,12 +1590,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageArn`: `str`
 
+- `ImageArn`: `str`
 
 ## CreateImageVersionResponseTypeDef
 
@@ -1747,12 +1600,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateImageVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageVersionArn`: `str`
 
+- `ImageVersionArn`: `str`
 
 ## CreateLabelingJobResponseTypeDef
 
@@ -1760,12 +1610,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateLabelingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `LabelingJobArn`: `str`
-
-
-
 
 ## CreateModelBiasJobDefinitionResponseTypeDef
 
@@ -1773,12 +1620,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelBiasJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
-
-
-
 
 ## CreateModelExplainabilityJobDefinitionResponseTypeDef
 
@@ -1786,12 +1630,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelExplainabilityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
-
-
-
 
 ## CreateModelOutputTypeDef
 
@@ -1799,13 +1640,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateModelPackageGroupOutputTypeDef
 
@@ -1813,13 +1652,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelPackageGroupOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageGroupArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateModelPackageOutputTypeDef
 
@@ -1827,13 +1664,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelPackageOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateModelQualityJobDefinitionResponseTypeDef
 
@@ -1841,12 +1676,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateModelQualityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
-
-
-
 
 ## CreateMonitoringScheduleResponseTypeDef
 
@@ -1854,12 +1686,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateMonitoringScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringScheduleArn`: `str`
-
-
-
 
 ## CreateNotebookInstanceLifecycleConfigOutputTypeDef
 
@@ -1867,13 +1696,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceLifecycleConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceLifecycleConfigArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateNotebookInstanceOutputTypeDef
 
@@ -1881,13 +1708,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreatePipelineResponseTypeDef
 
@@ -1895,12 +1720,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreatePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineArn`: `str`
 
+- `PipelineArn`: `str`
 
 ## CreatePresignedDomainUrlResponseTypeDef
 
@@ -1908,12 +1730,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreatePresignedDomainUrlResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuthorizedUrl`: `str`
 
+- `AuthorizedUrl`: `str`
 
 ## CreatePresignedNotebookInstanceUrlOutputTypeDef
 
@@ -1921,13 +1740,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreatePresignedNotebookInstanceUrlOutputTypeDef
 ```
 
-
 Required fields:
+
 - `AuthorizedUrl`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateProcessingJobResponseTypeDef
 
@@ -1935,12 +1752,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateProcessingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ProcessingJobArn`: `str`
-
-
-
 
 ## CreateProjectOutputTypeDef
 
@@ -1948,14 +1762,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateProjectOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ProjectArn`: `str`
 - `ProjectId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## CreateTrainingJobResponseTypeDef
 
@@ -1963,12 +1775,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateTrainingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingJobArn`: `str`
-
-
-
 
 ## CreateTransformJobResponseTypeDef
 
@@ -1976,12 +1785,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateTransformJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `TransformJobArn`: `str`
-
-
-
 
 ## CreateTrialComponentResponseTypeDef
 
@@ -1989,12 +1795,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialComponentArn`: `str`
 
+- `TrialComponentArn`: `str`
 
 ## CreateTrialResponseTypeDef
 
@@ -2002,12 +1805,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateTrialResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialArn`: `str`
 
+- `TrialArn`: `str`
 
 ## CreateUserProfileResponseTypeDef
 
@@ -2015,12 +1815,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateUserProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserProfileArn`: `str`
 
+- `UserProfileArn`: `str`
 
 ## CreateWorkforceResponseTypeDef
 
@@ -2028,12 +1825,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CreateWorkforceResponseTypeDef
 ```
 
-
 Required fields:
+
 - `WorkforceArn`: `str`
-
-
-
 
 ## CreateWorkteamResponseTypeDef
 
@@ -2041,12 +1835,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import CreateWorkteamResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WorkteamArn`: `str`
 
+- `WorkteamArn`: `str`
 
 ## CustomImageTypeDef
 
@@ -2054,16 +1845,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import CustomImageTypeDef
 ```
 
-
 Required fields:
+
 - `ImageName`: `str`
 - `AppImageConfigName`: `str`
 
-
-
 Optional fields:
-- `ImageVersionNumber`: `int`
 
+- `ImageVersionNumber`: `int`
 
 ## DataCaptureConfigSummaryTypeDef
 
@@ -2071,16 +1860,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DataCaptureConfigSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `EnableCapture`: `bool`
-- `CaptureStatus`: `CaptureStatus`
+- `CaptureStatus`:
+  [CaptureStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#capturestatus)
 - `CurrentSamplingPercentage`: `int`
 - `DestinationS3Uri`: `str`
 - `KmsKeyId`: `str`
-
-
-
 
 ## DataCaptureConfigTypeDef
 
@@ -2088,19 +1875,19 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DataCaptureConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InitialSamplingPercentage`: `int`
 - `DestinationS3Uri`: `str`
-- `CaptureOptions`: `List["CaptureOptionTypeDef"]`
-
-
+- `CaptureOptions`:
+  `List`\[[CaptureOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#captureoptiontypedef)\]
 
 Optional fields:
+
 - `EnableCapture`: `bool`
 - `KmsKeyId`: `str`
-- `CaptureContentTypeHeader`: `"CaptureContentTypeHeaderTypeDef"`
-
+- `CaptureContentTypeHeader`:
+  [CaptureContentTypeHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#capturecontenttypeheadertypedef)
 
 ## DataCatalogConfigTypeDef
 
@@ -2108,14 +1895,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DataCatalogConfigTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
 - `Catalog`: `str`
 - `Database`: `str`
-
-
-
 
 ## DataProcessingTypeDef
 
@@ -2123,14 +1907,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DataProcessingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InputFilter`: `str`
 - `OutputFilter`: `str`
-- `JoinSource`: `JoinSource`
-
+- `JoinSource`:
+  [JoinSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#joinsource)
 
 ## DataQualityAppSpecificationTypeDef
 
@@ -2138,19 +1920,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DataQualityAppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 
-
-
 Optional fields:
-- `ContainerEntrypoint`: `List[str]`
-- `ContainerArguments`: `List[str]`
+
+- `ContainerEntrypoint`: `List`\[`str`\]
+- `ContainerArguments`: `List`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
-- `Environment`: `Dict[str, str]`
-
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## DataQualityBaselineConfigTypeDef
 
@@ -2158,14 +1938,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DataQualityBaselineConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseliningJobName`: `str`
-- `ConstraintsResource`: `"MonitoringConstraintsResourceTypeDef"`
-- `StatisticsResource`: `"MonitoringStatisticsResourceTypeDef"`
 
+- `BaseliningJobName`: `str`
+- `ConstraintsResource`:
+  [MonitoringConstraintsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringconstraintsresourcetypedef)
+- `StatisticsResource`:
+  [MonitoringStatisticsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstatisticsresourcetypedef)
 
 ## DataQualityJobInputTypeDef
 
@@ -2173,12 +1952,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DataQualityJobInputTypeDef
 ```
 
-
 Required fields:
-- `EndpointInput`: `"EndpointInputTypeDef"`
 
-
-
+- `EndpointInput`:
+  [EndpointInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointinputtypedef)
 
 ## DataSourceTypeDef
 
@@ -2186,13 +1963,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DataSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3DataSource`: `"S3DataSourceTypeDef"`
-- `FileSystemDataSource`: `"FileSystemDataSourceTypeDef"`
 
+- `S3DataSource`:
+  [S3DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#s3datasourcetypedef)
+- `FileSystemDataSource`:
+  [FileSystemDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#filesystemdatasourcetypedef)
 
 ## DatasetDefinitionTypeDef
 
@@ -2200,16 +1976,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DatasetDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AthenaDatasetDefinition`: `"AthenaDatasetDefinitionTypeDef"`
-- `RedshiftDatasetDefinition`: `"RedshiftDatasetDefinitionTypeDef"`
-- `LocalPath`: `str`
-- `DataDistributionType`: `DataDistributionType`
-- `InputMode`: `InputMode`
 
+- `AthenaDatasetDefinition`:
+  [AthenaDatasetDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#athenadatasetdefinitiontypedef)
+- `RedshiftDatasetDefinition`:
+  [RedshiftDatasetDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#redshiftdatasetdefinitiontypedef)
+- `LocalPath`: `str`
+- `DataDistributionType`:
+  [DataDistributionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#datadistributiontype)
+- `InputMode`:
+  [InputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#inputmode)
 
 ## DebugHookConfigTypeDef
 
@@ -2217,17 +1994,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DebugHookConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `LocalPath`: `str`
-- `HookParameters`: `Dict[str, str]`
-- `CollectionConfigurations`: `List["CollectionConfigurationTypeDef"]`
 
+- `LocalPath`: `str`
+- `HookParameters`: `Dict`\[`str`, `str`\]
+- `CollectionConfigurations`:
+  `List`\[[CollectionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#collectionconfigurationtypedef)\]
 
 ## DebugRuleConfigurationTypeDef
 
@@ -2235,20 +2011,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DebugRuleConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RuleConfigurationName`: `str`
 - `RuleEvaluatorImage`: `str`
 
-
-
 Optional fields:
+
 - `LocalPath`: `str`
 - `S3OutputPath`: `str`
-- `InstanceType`: `ProcessingInstanceType`
+- `InstanceType`:
+  [ProcessingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processinginstancetype)
 - `VolumeSizeInGB`: `int`
-- `RuleParameters`: `Dict[str, str]`
-
+- `RuleParameters`: `Dict`\[`str`, `str`\]
 
 ## DebugRuleEvaluationStatusTypeDef
 
@@ -2256,16 +2031,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DebugRuleEvaluationStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleConfigurationName`: `str`
 - `RuleEvaluationJobArn`: `str`
-- `RuleEvaluationStatus`: `RuleEvaluationStatus`
+- `RuleEvaluationStatus`:
+  [RuleEvaluationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#ruleevaluationstatus)
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
-
 
 ## DeleteActionResponseTypeDef
 
@@ -2273,12 +2046,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteActionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActionArn`: `str`
 
+- `ActionArn`: `str`
 
 ## DeleteArtifactResponseTypeDef
 
@@ -2286,12 +2056,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteArtifactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ArtifactArn`: `str`
 
+- `ArtifactArn`: `str`
 
 ## DeleteAssociationResponseTypeDef
 
@@ -2299,13 +2066,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceArn`: `str`
 - `DestinationArn`: `str`
-
 
 ## DeleteContextResponseTypeDef
 
@@ -2313,12 +2077,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteContextResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContextArn`: `str`
 
+- `ContextArn`: `str`
 
 ## DeleteExperimentResponseTypeDef
 
@@ -2326,12 +2087,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExperimentArn`: `str`
 
+- `ExperimentArn`: `str`
 
 ## DeletePipelineResponseTypeDef
 
@@ -2339,12 +2097,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeletePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineArn`: `str`
 
+- `PipelineArn`: `str`
 
 ## DeleteTrialComponentResponseTypeDef
 
@@ -2352,12 +2107,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialComponentArn`: `str`
 
+- `TrialComponentArn`: `str`
 
 ## DeleteTrialResponseTypeDef
 
@@ -2365,12 +2117,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteTrialResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialArn`: `str`
 
+- `TrialArn`: `str`
 
 ## DeleteWorkteamResponseTypeDef
 
@@ -2378,12 +2127,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeleteWorkteamResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Success`: `bool`
-
-
-
 
 ## DeployedImageTypeDef
 
@@ -2391,14 +2137,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DeployedImageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SpecifiedImage`: `str`
 - `ResolvedImage`: `str`
 - `ResolutionTime`: `datetime`
-
 
 ## DeploymentConfigTypeDef
 
@@ -2406,15 +2149,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeploymentConfigTypeDef
 ```
 
-
 Required fields:
-- `BlueGreenUpdatePolicy`: `"BlueGreenUpdatePolicyTypeDef"`
 
-
+- `BlueGreenUpdatePolicy`:
+  [BlueGreenUpdatePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#bluegreenupdatepolicytypedef)
 
 Optional fields:
-- `AutoRollbackConfiguration`: `"AutoRollbackConfigTypeDef"`
 
+- `AutoRollbackConfiguration`:
+  [AutoRollbackConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#autorollbackconfigtypedef)
 
 ## DescribeActionResponseTypeDef
 
@@ -2422,23 +2165,25 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeActionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActionName`: `str`
 - `ActionArn`: `str`
-- `Source`: `"ActionSourceTypeDef"`
+- `Source`:
+  [ActionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#actionsourcetypedef)
 - `ActionType`: `str`
 - `Description`: `str`
-- `Status`: `ActionStatus`
-- `Properties`: `Dict[str, str]`
+- `Status`:
+  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
+- `Properties`: `Dict`\[`str`, `str`\]
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
 
 ## DescribeAlgorithmOutputTypeDef
 
@@ -2446,23 +2191,26 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeAlgorithmOutputTypeDef
 ```
 
-
 Required fields:
+
 - `AlgorithmName`: `str`
 - `AlgorithmArn`: `str`
 - `AlgorithmDescription`: `str`
 - `CreationTime`: `datetime`
-- `TrainingSpecification`: `"TrainingSpecificationTypeDef"`
-- `InferenceSpecification`: `"InferenceSpecificationTypeDef"`
-- `ValidationSpecification`: `"AlgorithmValidationSpecificationTypeDef"`
-- `AlgorithmStatus`: `AlgorithmStatus`
-- `AlgorithmStatusDetails`: `"AlgorithmStatusDetailsTypeDef"`
+- `TrainingSpecification`:
+  [TrainingSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingspecificationtypedef)
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+- `ValidationSpecification`:
+  [AlgorithmValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmvalidationspecificationtypedef)
+- `AlgorithmStatus`:
+  [AlgorithmStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#algorithmstatus)
+- `AlgorithmStatusDetails`:
+  [AlgorithmStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmstatusdetailstypedef)
 - `ProductId`: `str`
 - `CertifyForMarketplace`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeAppImageConfigResponseTypeDef
 
@@ -2470,16 +2218,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeAppImageConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppImageConfigArn`: `str`
 - `AppImageConfigName`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `KernelGatewayImageConfig`: `"KernelGatewayImageConfigTypeDef"`
-
+- `KernelGatewayImageConfig`:
+  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
 
 ## DescribeAppResponseTypeDef
 
@@ -2487,22 +2233,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeAppResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppArn`: `str`
-- `AppType`: `AppType`
+- `AppType`:
+  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
 - `AppName`: `str`
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `Status`: `AppStatus`
+- `Status`:
+  [AppStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appstatus)
 - `LastHealthCheckTimestamp`: `datetime`
 - `LastUserActivityTimestamp`: `datetime`
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
-- `ResourceSpec`: `"ResourceSpecTypeDef"`
-
+- `ResourceSpec`:
+  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
 
 ## DescribeArtifactResponseTypeDef
 
@@ -2510,21 +2256,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeArtifactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ArtifactName`: `str`
 - `ArtifactArn`: `str`
-- `Source`: `"ArtifactSourceTypeDef"`
+- `Source`:
+  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
 - `ArtifactType`: `str`
-- `Properties`: `Dict[str, str]`
+- `Properties`: `Dict`\[`str`, `str`\]
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
 
 ## DescribeAutoMLJobResponseTypeDef
 
@@ -2532,32 +2279,41 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeAutoMLJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `AutoMLJobName`: `str`
 - `AutoMLJobArn`: `str`
-- `InputDataConfig`: `List["AutoMLChannelTypeDef"]`
-- `OutputDataConfig`: `"AutoMLOutputDataConfigTypeDef"`
+- `InputDataConfig`:
+  `List`\[[AutoMLChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlchanneltypedef)\]
+- `OutputDataConfig`:
+  [AutoMLOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automloutputdataconfigtypedef)
 - `RoleArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `AutoMLJobStatus`: `AutoMLJobStatus`
-- `AutoMLJobSecondaryStatus`: `AutoMLJobSecondaryStatus`
-
-
+- `AutoMLJobStatus`:
+  [AutoMLJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobstatus)
+- `AutoMLJobSecondaryStatus`:
+  [AutoMLJobSecondaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobsecondarystatus)
 
 Optional fields:
-- `AutoMLJobObjective`: `"AutoMLJobObjectiveTypeDef"`
-- `ProblemType`: `ProblemType`
-- `AutoMLJobConfig`: `"AutoMLJobConfigTypeDef"`
+
+- `AutoMLJobObjective`:
+  [AutoMLJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobobjectivetypedef)
+- `ProblemType`:
+  [ProblemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#problemtype)
+- `AutoMLJobConfig`:
+  [AutoMLJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobconfigtypedef)
 - `EndTime`: `datetime`
 - `FailureReason`: `str`
-- `PartialFailureReasons`: `List["AutoMLPartialFailureReasonTypeDef"]`
-- `BestCandidate`: `"AutoMLCandidateTypeDef"`
+- `PartialFailureReasons`:
+  `List`\[[AutoMLPartialFailureReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlpartialfailurereasontypedef)\]
+- `BestCandidate`:
+  [AutoMLCandidateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlcandidatetypedef)
 - `GenerateCandidateDefinitionsOnly`: `bool`
-- `AutoMLJobArtifacts`: `"AutoMLJobArtifactsTypeDef"`
-- `ResolvedAttributes`: `"ResolvedAttributesTypeDef"`
-
+- `AutoMLJobArtifacts`:
+  [AutoMLJobArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobartifactstypedef)
+- `ResolvedAttributes`:
+  [ResolvedAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resolvedattributestypedef)
 
 ## DescribeCodeRepositoryOutputTypeDef
 
@@ -2565,17 +2321,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeCodeRepositoryOutputTypeDef
 ```
 
-
 Required fields:
+
 - `CodeRepositoryName`: `str`
 - `CodeRepositoryArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `GitConfig`: `"GitConfigTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `GitConfig`:
+  [GitConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeCompilationJobResponseTypeDef
 
@@ -2583,27 +2338,31 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeCompilationJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `CompilationJobName`: `str`
 - `CompilationJobArn`: `str`
-- `CompilationJobStatus`: `CompilationJobStatus`
-- `StoppingCondition`: `"StoppingConditionTypeDef"`
+- `CompilationJobStatus`:
+  [CompilationJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compilationjobstatus)
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
-- `ModelArtifacts`: `"ModelArtifactsTypeDef"`
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelartifactstypedef)
 - `RoleArn`: `str`
-- `InputConfig`: `"InputConfigTypeDef"`
-- `OutputConfig`: `"OutputConfigTypeDef"`
-
-
+- `InputConfig`:
+  [InputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inputconfigtypedef)
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputconfigtypedef)
 
 Optional fields:
+
 - `CompilationStartTime`: `datetime`
 - `CompilationEndTime`: `datetime`
-- `ModelDigests`: `"ModelDigestsTypeDef"`
-
+- `ModelDigests`:
+  [ModelDigestsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldigeststypedef)
 
 ## DescribeContextResponseTypeDef
 
@@ -2611,21 +2370,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeContextResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContextName`: `str`
 - `ContextArn`: `str`
-- `Source`: `"ContextSourceTypeDef"`
+- `Source`:
+  [ContextSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#contextsourcetypedef)
 - `ContextType`: `str`
 - `Description`: `str`
-- `Properties`: `Dict[str, str]`
+- `Properties`: `Dict`\[`str`, `str`\]
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## DescribeDataQualityJobDefinitionResponseTypeDef
 
@@ -2633,24 +2392,29 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeDataQualityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
 - `JobDefinitionName`: `str`
 - `CreationTime`: `datetime`
-- `DataQualityAppSpecification`: `"DataQualityAppSpecificationTypeDef"`
-- `DataQualityJobInput`: `"DataQualityJobInputTypeDef"`
-- `DataQualityJobOutputConfig`: `"MonitoringOutputConfigTypeDef"`
-- `JobResources`: `"MonitoringResourcesTypeDef"`
+- `DataQualityAppSpecification`:
+  [DataQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityappspecificationtypedef)
+- `DataQualityJobInput`:
+  [DataQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityjobinputtypedef)
+- `DataQualityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `DataQualityBaselineConfig`: `"DataQualityBaselineConfigTypeDef"`
-- `NetworkConfig`: `"MonitoringNetworkConfigTypeDef"`
-- `StoppingCondition`: `"MonitoringStoppingConditionTypeDef"`
 
+- `DataQualityBaselineConfig`:
+  [DataQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
 
 ## DescribeDeviceFleetResponseTypeDef
 
@@ -2658,21 +2422,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeDeviceFleetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceFleetName`: `str`
 - `DeviceFleetArn`: `str`
-- `OutputConfig`: `"EdgeOutputConfigTypeDef"`
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
+
 - `Description`: `str`
 - `RoleArn`: `str`
 - `IotRoleAlias`: `str`
-
 
 ## DescribeDeviceResponseTypeDef
 
@@ -2680,23 +2443,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeDeviceResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceName`: `str`
 - `DeviceFleetName`: `str`
 - `RegistrationTime`: `datetime`
 
-
-
 Optional fields:
+
 - `DeviceArn`: `str`
 - `Description`: `str`
 - `IotThingName`: `str`
 - `LatestHeartbeat`: `datetime`
-- `Models`: `List["EdgeModelTypeDef"]`
+- `Models`:
+  `List`\[[EdgeModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgemodeltypedef)\]
 - `MaxModels`: `int`
 - `NextToken`: `str`
-
 
 ## DescribeDomainResponseTypeDef
 
@@ -2704,28 +2466,29 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeDomainResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainArn`: `str`
 - `DomainId`: `str`
 - `DomainName`: `str`
 - `HomeEfsFileSystemId`: `str`
 - `SingleSignOnManagedApplicationInstanceId`: `str`
-- `Status`: `DomainStatus`
+- `Status`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#domainstatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
-- `AuthMode`: `AuthMode`
-- `DefaultUserSettings`: `"UserSettingsTypeDef"`
-- `AppNetworkAccessType`: `AppNetworkAccessType`
+- `AuthMode`:
+  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#authmode)
+- `DefaultUserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+- `AppNetworkAccessType`:
+  [AppNetworkAccessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appnetworkaccesstype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
-- `SubnetIds`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
 - `Url`: `str`
 - `VpcId`: `str`
 - `KmsKeyId`: `str`
-
 
 ## DescribeEdgePackagingJobResponseTypeDef
 
@@ -2733,20 +2496,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeEdgePackagingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `EdgePackagingJobArn`: `str`
 - `EdgePackagingJobName`: `str`
-- `EdgePackagingJobStatus`: `EdgePackagingJobStatus`
-
-
+- `EdgePackagingJobStatus`:
+  [EdgePackagingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#edgepackagingjobstatus)
 
 Optional fields:
+
 - `CompilationJobName`: `str`
 - `ModelName`: `str`
 - `ModelVersion`: `str`
 - `RoleArn`: `str`
-- `OutputConfig`: `"EdgeOutputConfigTypeDef"`
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
 - `ResourceKey`: `str`
 - `EdgePackagingJobStatusMessage`: `str`
 - `CreationTime`: `datetime`
@@ -2754,25 +2518,24 @@ Optional fields:
 - `ModelArtifact`: `str`
 - `ModelSignature`: `str`
 
-
 ## DescribeEndpointConfigOutputTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import DescribeEndpointConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointConfigName`: `str`
 - `EndpointConfigArn`: `str`
-- `ProductionVariants`: `List["ProductionVariantTypeDef"]`
-- `DataCaptureConfig`: `"DataCaptureConfigTypeDef"`
+- `ProductionVariants`:
+  `List`\[[ProductionVariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvarianttypedef)\]
+- `DataCaptureConfig`:
+  [DataCaptureConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacaptureconfigtypedef)
 - `KmsKeyId`: `str`
 - `CreationTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeEndpointOutputTypeDef
 
@@ -2780,22 +2543,24 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeEndpointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointName`: `str`
 - `EndpointArn`: `str`
 - `EndpointConfigName`: `str`
-- `ProductionVariants`: `List["ProductionVariantSummaryTypeDef"]`
-- `DataCaptureConfig`: `"DataCaptureConfigSummaryTypeDef"`
-- `EndpointStatus`: `EndpointStatus`
+- `ProductionVariants`:
+  `List`\[[ProductionVariantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvariantsummarytypedef)\]
+- `DataCaptureConfig`:
+  [DataCaptureConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacaptureconfigsummarytypedef)
+- `EndpointStatus`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
 - `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `LastDeploymentConfig`: `"DeploymentConfigTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LastDeploymentConfig`:
+  [DeploymentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deploymentconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeExperimentResponseTypeDef
 
@@ -2803,20 +2568,20 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExperimentName`: `str`
 - `ExperimentArn`: `str`
 - `DisplayName`: `str`
-- `Source`: `"ExperimentSourceTypeDef"`
+- `Source`:
+  [ExperimentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentsourcetypedef)
 - `Description`: `str`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## DescribeFeatureGroupResponseTypeDef
 
@@ -2824,27 +2589,30 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeFeatureGroupResponseTypeDef
 ```
 
-
 Required fields:
+
 - `FeatureGroupArn`: `str`
 - `FeatureGroupName`: `str`
 - `RecordIdentifierFeatureName`: `str`
 - `EventTimeFeatureName`: `str`
-- `FeatureDefinitions`: `List["FeatureDefinitionTypeDef"]`
+- `FeatureDefinitions`:
+  `List`\[[FeatureDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuredefinitiontypedef)\]
 - `CreationTime`: `datetime`
 - `NextToken`: `str`
 
-
-
 Optional fields:
-- `OnlineStoreConfig`: `"OnlineStoreConfigTypeDef"`
-- `OfflineStoreConfig`: `"OfflineStoreConfigTypeDef"`
+
+- `OnlineStoreConfig`:
+  [OnlineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#onlinestoreconfigtypedef)
+- `OfflineStoreConfig`:
+  [OfflineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
-- `FeatureGroupStatus`: `FeatureGroupStatus`
-- `OfflineStoreStatus`: `"OfflineStoreStatusTypeDef"`
+- `FeatureGroupStatus`:
+  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+- `OfflineStoreStatus`:
+  [OfflineStoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestorestatustypedef)
 - `FailureReason`: `str`
 - `Description`: `str`
-
 
 ## DescribeFlowDefinitionResponseTypeDef
 
@@ -2852,23 +2620,26 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeFlowDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `FlowDefinitionArn`: `str`
 - `FlowDefinitionName`: `str`
-- `FlowDefinitionStatus`: `FlowDefinitionStatus`
+- `FlowDefinitionStatus`:
+  [FlowDefinitionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#flowdefinitionstatus)
 - `CreationTime`: `datetime`
-- `HumanLoopConfig`: `"HumanLoopConfigTypeDef"`
-- `OutputConfig`: `"FlowDefinitionOutputConfigTypeDef"`
+- `HumanLoopConfig`:
+  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopconfigtypedef)
+- `OutputConfig`:
+  [FlowDefinitionOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#flowdefinitionoutputconfigtypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `HumanLoopRequestSource`: `"HumanLoopRequestSourceTypeDef"`
-- `HumanLoopActivationConfig`: `"HumanLoopActivationConfigTypeDef"`
-- `FailureReason`: `str`
 
+- `HumanLoopRequestSource`:
+  [HumanLoopRequestSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanlooprequestsourcetypedef)
+- `HumanLoopActivationConfig`:
+  [HumanLoopActivationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopactivationconfigtypedef)
+- `FailureReason`: `str`
 
 ## DescribeHumanTaskUiResponseTypeDef
 
@@ -2876,18 +2647,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeHumanTaskUiResponseTypeDef
 ```
 
-
 Required fields:
+
 - `HumanTaskUiArn`: `str`
 - `HumanTaskUiName`: `str`
 - `CreationTime`: `datetime`
-- `UiTemplate`: `"UiTemplateInfoTypeDef"`
-
-
+- `UiTemplate`:
+  [UiTemplateInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uitemplateinfotypedef)
 
 Optional fields:
-- `HumanTaskUiStatus`: `HumanTaskUiStatus`
 
+- `HumanTaskUiStatus`:
+  [HumanTaskUiStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#humantaskuistatus)
 
 ## DescribeHyperParameterTuningJobResponseTypeDef
 
@@ -2895,28 +2666,35 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeHyperParameterTuningJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `HyperParameterTuningJobName`: `str`
 - `HyperParameterTuningJobArn`: `str`
-- `HyperParameterTuningJobConfig`: `"HyperParameterTuningJobConfigTypeDef"`
-- `HyperParameterTuningJobStatus`: `HyperParameterTuningJobStatus`
+- `HyperParameterTuningJobConfig`:
+  [HyperParameterTuningJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobconfigtypedef)
+- `HyperParameterTuningJobStatus`:
+  [HyperParameterTuningJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstatus)
 - `CreationTime`: `datetime`
-- `TrainingJobStatusCounters`: `"TrainingJobStatusCountersTypeDef"`
-- `ObjectiveStatusCounters`: `"ObjectiveStatusCountersTypeDef"`
-
-
+- `TrainingJobStatusCounters`:
+  [TrainingJobStatusCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobstatuscounterstypedef)
+- `ObjectiveStatusCounters`:
+  [ObjectiveStatusCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#objectivestatuscounterstypedef)
 
 Optional fields:
-- `TrainingJobDefinition`: `"HyperParameterTrainingJobDefinitionTypeDef"`
-- `TrainingJobDefinitions`: `List["HyperParameterTrainingJobDefinitionTypeDef"]`
+
+- `TrainingJobDefinition`:
+  [HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)
+- `TrainingJobDefinitions`:
+  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)\]
 - `HyperParameterTuningEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `BestTrainingJob`: `"HyperParameterTrainingJobSummaryTypeDef"`
-- `OverallBestTrainingJob`: `"HyperParameterTrainingJobSummaryTypeDef"`
-- `WarmStartConfig`: `"HyperParameterTuningJobWarmStartConfigTypeDef"`
+- `BestTrainingJob`:
+  [HyperParameterTrainingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobsummarytypedef)
+- `OverallBestTrainingJob`:
+  [HyperParameterTrainingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobsummarytypedef)
+- `WarmStartConfig`:
+  [HyperParameterTuningJobWarmStartConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobwarmstartconfigtypedef)
 - `FailureReason`: `str`
-
 
 ## DescribeImageResponseTypeDef
 
@@ -2924,20 +2702,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationTime`: `datetime`
 - `Description`: `str`
 - `DisplayName`: `str`
 - `FailureReason`: `str`
 - `ImageArn`: `str`
 - `ImageName`: `str`
-- `ImageStatus`: `ImageStatus`
+- `ImageStatus`:
+  [ImageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagestatus)
 - `LastModifiedTime`: `datetime`
 - `RoleArn`: `str`
-
 
 ## DescribeImageVersionResponseTypeDef
 
@@ -2945,20 +2721,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeImageVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaseImage`: `str`
 - `ContainerImage`: `str`
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
 - `ImageArn`: `str`
 - `ImageVersionArn`: `str`
-- `ImageVersionStatus`: `ImageVersionStatus`
+- `ImageVersionStatus`:
+  [ImageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionstatus)
 - `LastModifiedTime`: `datetime`
 - `Version`: `int`
-
 
 ## DescribeLabelingJobResponseTypeDef
 
@@ -2966,31 +2740,38 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeLabelingJobResponseTypeDef
 ```
 
-
 Required fields:
-- `LabelingJobStatus`: `LabelingJobStatus`
-- `LabelCounters`: `"LabelCountersTypeDef"`
+
+- `LabelingJobStatus`:
+  [LabelingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#labelingjobstatus)
+- `LabelCounters`:
+  [LabelCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelcounterstypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `JobReferenceCode`: `str`
 - `LabelingJobName`: `str`
 - `LabelingJobArn`: `str`
-- `InputConfig`: `"LabelingJobInputConfigTypeDef"`
-- `OutputConfig`: `"LabelingJobOutputConfigTypeDef"`
+- `InputConfig`:
+  [LabelingJobInputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobinputconfigtypedef)
+- `OutputConfig`:
+  [LabelingJobOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjoboutputconfigtypedef)
 - `RoleArn`: `str`
-- `HumanTaskConfig`: `"HumanTaskConfigTypeDef"`
-
-
+- `HumanTaskConfig`:
+  [HumanTaskConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humantaskconfigtypedef)
 
 Optional fields:
+
 - `FailureReason`: `str`
 - `LabelAttributeName`: `str`
 - `LabelCategoryConfigS3Uri`: `str`
-- `StoppingConditions`: `"LabelingJobStoppingConditionsTypeDef"`
-- `LabelingJobAlgorithmsConfig`: `"LabelingJobAlgorithmsConfigTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `LabelingJobOutput`: `"LabelingJobOutputTypeDef"`
-
+- `StoppingConditions`:
+  [LabelingJobStoppingConditionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobstoppingconditionstypedef)
+- `LabelingJobAlgorithmsConfig`:
+  [LabelingJobAlgorithmsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobalgorithmsconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `LabelingJobOutput`:
+  [LabelingJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjoboutputtypedef)
 
 ## DescribeModelBiasJobDefinitionResponseTypeDef
 
@@ -2998,24 +2779,29 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelBiasJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
 - `JobDefinitionName`: `str`
 - `CreationTime`: `datetime`
-- `ModelBiasAppSpecification`: `"ModelBiasAppSpecificationTypeDef"`
-- `ModelBiasJobInput`: `"ModelBiasJobInputTypeDef"`
-- `ModelBiasJobOutputConfig`: `"MonitoringOutputConfigTypeDef"`
-- `JobResources`: `"MonitoringResourcesTypeDef"`
+- `ModelBiasAppSpecification`:
+  [ModelBiasAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasappspecificationtypedef)
+- `ModelBiasJobInput`:
+  [ModelBiasJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasjobinputtypedef)
+- `ModelBiasJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `ModelBiasBaselineConfig`: `"ModelBiasBaselineConfigTypeDef"`
-- `NetworkConfig`: `"MonitoringNetworkConfigTypeDef"`
-- `StoppingCondition`: `"MonitoringStoppingConditionTypeDef"`
 
+- `ModelBiasBaselineConfig`:
+  [ModelBiasBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasbaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
 
 ## DescribeModelExplainabilityJobDefinitionResponseTypeDef
 
@@ -3023,24 +2809,29 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelExplainabilityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
 - `JobDefinitionName`: `str`
 - `CreationTime`: `datetime`
-- `ModelExplainabilityAppSpecification`: `"ModelExplainabilityAppSpecificationTypeDef"`
-- `ModelExplainabilityJobInput`: `"ModelExplainabilityJobInputTypeDef"`
-- `ModelExplainabilityJobOutputConfig`: `"MonitoringOutputConfigTypeDef"`
-- `JobResources`: `"MonitoringResourcesTypeDef"`
+- `ModelExplainabilityAppSpecification`:
+  [ModelExplainabilityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityappspecificationtypedef)
+- `ModelExplainabilityJobInput`:
+  [ModelExplainabilityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityjobinputtypedef)
+- `ModelExplainabilityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `ModelExplainabilityBaselineConfig`: `"ModelExplainabilityBaselineConfigTypeDef"`
-- `NetworkConfig`: `"MonitoringNetworkConfigTypeDef"`
-- `StoppingCondition`: `"MonitoringStoppingConditionTypeDef"`
 
+- `ModelExplainabilityBaselineConfig`:
+  [ModelExplainabilityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
 
 ## DescribeModelOutputTypeDef
 
@@ -3048,21 +2839,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelName`: `str`
-- `PrimaryContainer`: `"ContainerDefinitionTypeDef"`
-- `Containers`: `List["ContainerDefinitionTypeDef"]`
-- `InferenceExecutionConfig`: `"InferenceExecutionConfigTypeDef"`
+- `PrimaryContainer`:
+  [ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)
+- `Containers`:
+  `List`\[[ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)\]
+- `InferenceExecutionConfig`:
+  [InferenceExecutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferenceexecutionconfigtypedef)
 - `ExecutionRoleArn`: `str`
-- `VpcConfig`: `"VpcConfigTypeDef"`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 - `CreationTime`: `datetime`
 - `ModelArn`: `str`
 - `EnableNetworkIsolation`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeModelPackageGroupOutputTypeDef
 
@@ -3070,18 +2863,18 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelPackageGroupOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageGroupName`: `str`
 - `ModelPackageGroupArn`: `str`
 - `ModelPackageGroupDescription`: `str`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `ModelPackageGroupStatus`: `ModelPackageGroupStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `ModelPackageGroupStatus`:
+  [ModelPackageGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeModelPackageOutputTypeDef
 
@@ -3089,31 +2882,39 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelPackageOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageName`: `str`
 - `ModelPackageGroupName`: `str`
 - `ModelPackageVersion`: `int`
 - `ModelPackageArn`: `str`
 - `ModelPackageDescription`: `str`
 - `CreationTime`: `datetime`
-- `InferenceSpecification`: `"InferenceSpecificationTypeDef"`
-- `SourceAlgorithmSpecification`: `"SourceAlgorithmSpecificationTypeDef"`
-- `ValidationSpecification`: `"ModelPackageValidationSpecificationTypeDef"`
-- `ModelPackageStatus`: `ModelPackageStatus`
-- `ModelPackageStatusDetails`: `"ModelPackageStatusDetailsTypeDef"`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+- `SourceAlgorithmSpecification`:
+  [SourceAlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourcealgorithmspecificationtypedef)
+- `ValidationSpecification`:
+  [ModelPackageValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagevalidationspecificationtypedef)
+- `ModelPackageStatus`:
+  [ModelPackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagestatus)
+- `ModelPackageStatusDetails`:
+  [ModelPackageStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagestatusdetailstypedef)
 - `CertifyForMarketplace`: `bool`
-- `ModelApprovalStatus`: `ModelApprovalStatus`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-- `ModelMetrics`: `"ModelMetricsTypeDef"`
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `ModelMetrics`:
+  [ModelMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelmetricstypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `ApprovalDescription`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeModelQualityJobDefinitionResponseTypeDef
 
@@ -3121,24 +2922,29 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeModelQualityJobDefinitionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobDefinitionArn`: `str`
 - `JobDefinitionName`: `str`
 - `CreationTime`: `datetime`
-- `ModelQualityAppSpecification`: `"ModelQualityAppSpecificationTypeDef"`
-- `ModelQualityJobInput`: `"ModelQualityJobInputTypeDef"`
-- `ModelQualityJobOutputConfig`: `"MonitoringOutputConfigTypeDef"`
-- `JobResources`: `"MonitoringResourcesTypeDef"`
+- `ModelQualityAppSpecification`:
+  [ModelQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityappspecificationtypedef)
+- `ModelQualityJobInput`:
+  [ModelQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityjobinputtypedef)
+- `ModelQualityJobOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+- `JobResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `ModelQualityBaselineConfig`: `"ModelQualityBaselineConfigTypeDef"`
-- `NetworkConfig`: `"MonitoringNetworkConfigTypeDef"`
-- `StoppingCondition`: `"MonitoringStoppingConditionTypeDef"`
 
+- `ModelQualityBaselineConfig`:
+  [ModelQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualitybaselineconfigtypedef)
+- `NetworkConfig`:
+  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
 
 ## DescribeMonitoringScheduleResponseTypeDef
 
@@ -3146,23 +2952,25 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeMonitoringScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringScheduleArn`: `str`
 - `MonitoringScheduleName`: `str`
-- `MonitoringScheduleStatus`: `ScheduleStatus`
+- `MonitoringScheduleStatus`:
+  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringScheduleConfig`: `"MonitoringScheduleConfigTypeDef"`
-
-
+- `MonitoringScheduleConfig`:
+  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
 
 Optional fields:
-- `MonitoringType`: `MonitoringType`
+
+- `MonitoringType`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
 - `FailureReason`: `str`
 - `EndpointName`: `str`
-- `LastMonitoringExecutionSummary`: `"MonitoringExecutionSummaryTypeDef"`
-
+- `LastMonitoringExecutionSummary`:
+  [MonitoringExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringexecutionsummarytypedef)
 
 ## DescribeNotebookInstanceLifecycleConfigOutputTypeDef
 
@@ -3170,18 +2978,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceLifecycleConfigOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceLifecycleConfigArn`: `str`
 - `NotebookInstanceLifecycleConfigName`: `str`
-- `OnCreate`: `List["NotebookInstanceLifecycleHookTypeDef"]`
-- `OnStart`: `List["NotebookInstanceLifecycleHookTypeDef"]`
+- `OnCreate`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+- `OnStart`:
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
 - `LastModifiedTime`: `datetime`
 - `CreationTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeNotebookInstanceOutputTypeDef
 
@@ -3189,32 +2997,35 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceArn`: `str`
 - `NotebookInstanceName`: `str`
-- `NotebookInstanceStatus`: `NotebookInstanceStatus`
+- `NotebookInstanceStatus`:
+  [NotebookInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancestatus)
 - `FailureReason`: `str`
 - `Url`: `str`
-- `InstanceType`: `InstanceType`
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
 - `SubnetId`: `str`
-- `SecurityGroups`: `List[str]`
+- `SecurityGroups`: `List`\[`str`\]
 - `RoleArn`: `str`
 - `KmsKeyId`: `str`
 - `NetworkInterfaceId`: `str`
 - `LastModifiedTime`: `datetime`
 - `CreationTime`: `datetime`
 - `NotebookInstanceLifecycleConfigName`: `str`
-- `DirectInternetAccess`: `DirectInternetAccess`
+- `DirectInternetAccess`:
+  [DirectInternetAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#directinternetaccess)
 - `VolumeSizeInGB`: `int`
-- `AcceleratorTypes`: `List[NotebookInstanceAcceleratorType]`
+- `AcceleratorTypes`:
+  `List`\[[NotebookInstanceAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstanceacceleratortype)\]
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List[str]`
-- `RootAccess`: `RootAccess`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `RootAccess`:
+  [RootAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#rootaccess)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribePipelineDefinitionForExecutionResponseTypeDef
 
@@ -3222,13 +3033,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribePipelineDefinitionForExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineDefinition`: `str`
 - `CreationTime`: `datetime`
-
 
 ## DescribePipelineExecutionResponseTypeDef
 
@@ -3236,20 +3044,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribePipelineExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineArn`: `str`
 - `PipelineExecutionArn`: `str`
 - `PipelineExecutionDisplayName`: `str`
-- `PipelineExecutionStatus`: `PipelineExecutionStatus`
+- `PipelineExecutionStatus`:
+  [PipelineExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#pipelineexecutionstatus)
 - `PipelineExecutionDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## DescribePipelineResponseTypeDef
 
@@ -3257,10 +3065,8 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineArn`: `str`
 - `PipelineName`: `str`
 - `PipelineDisplayName`: `str`
@@ -3271,9 +3077,10 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastRunTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## DescribeProcessingJobResponseTypeDef
 
@@ -3281,25 +3088,32 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeProcessingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `ProcessingJobName`: `str`
-- `ProcessingResources`: `"ProcessingResourcesTypeDef"`
-- `AppSpecification`: `"AppSpecificationTypeDef"`
+- `ProcessingResources`:
+  [ProcessingResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingresourcestypedef)
+- `AppSpecification`:
+  [AppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appspecificationtypedef)
 - `ProcessingJobArn`: `str`
-- `ProcessingJobStatus`: `ProcessingJobStatus`
+- `ProcessingJobStatus`:
+  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
-- `ProcessingInputs`: `List["ProcessingInputTypeDef"]`
-- `ProcessingOutputConfig`: `"ProcessingOutputConfigTypeDef"`
-- `StoppingCondition`: `"ProcessingStoppingConditionTypeDef"`
-- `Environment`: `Dict[str, str]`
-- `NetworkConfig`: `"NetworkConfigTypeDef"`
+
+- `ProcessingInputs`:
+  `List`\[[ProcessingInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processinginputtypedef)\]
+- `ProcessingOutputConfig`:
+  [ProcessingOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingoutputconfigtypedef)
+- `StoppingCondition`:
+  [ProcessingStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingstoppingconditiontypedef)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `NetworkConfig`:
+  [NetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#networkconfigtypedef)
 - `RoleArn`: `str`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
 - `ExitMessage`: `str`
 - `FailureReason`: `str`
 - `ProcessingEndTime`: `datetime`
@@ -3309,28 +3123,29 @@ Optional fields:
 - `AutoMLJobArn`: `str`
 - `TrainingJobArn`: `str`
 
-
 ## DescribeProjectOutputTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import DescribeProjectOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ProjectArn`: `str`
 - `ProjectName`: `str`
 - `ProjectId`: `str`
 - `ProjectDescription`: `str`
-- `ServiceCatalogProvisioningDetails`: `"ServiceCatalogProvisioningDetailsTypeDef"`
-- `ServiceCatalogProvisionedProductDetails`: `"ServiceCatalogProvisionedProductDetailsTypeDef"`
-- `ProjectStatus`: `ProjectStatus`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `ServiceCatalogProvisioningDetails`:
+  [ServiceCatalogProvisioningDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#servicecatalogprovisioningdetailstypedef)
+- `ServiceCatalogProvisionedProductDetails`:
+  [ServiceCatalogProvisionedProductDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#servicecatalogprovisionedproductdetailstypedef)
+- `ProjectStatus`:
+  [ProjectStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectstatus)
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `CreationTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## DescribeSubscribedWorkteamResponseTypeDef
 
@@ -3338,12 +3153,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeSubscribedWorkteamResponseTypeDef
 ```
 
-
 Required fields:
-- `SubscribedWorkteam`: `"SubscribedWorkteamTypeDef"`
 
-
-
+- `SubscribedWorkteam`:
+  [SubscribedWorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#subscribedworkteamtypedef)
 
 ## DescribeTrainingJobResponseTypeDef
 
@@ -3351,52 +3164,71 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeTrainingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
-- `ModelArtifacts`: `"ModelArtifactsTypeDef"`
-- `TrainingJobStatus`: `TrainingJobStatus`
-- `SecondaryStatus`: `SecondaryStatus`
-- `AlgorithmSpecification`: `"AlgorithmSpecificationTypeDef"`
-- `ResourceConfig`: `"ResourceConfigTypeDef"`
-- `StoppingCondition`: `"StoppingConditionTypeDef"`
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelartifactstypedef)
+- `TrainingJobStatus`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
+- `SecondaryStatus`:
+  [SecondaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#secondarystatus)
+- `AlgorithmSpecification`:
+  [AlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmspecificationtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
+
 - `TuningJobArn`: `str`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
 - `FailureReason`: `str`
-- `HyperParameters`: `Dict[str, str]`
+- `HyperParameters`: `Dict`\[`str`, `str`\]
 - `RoleArn`: `str`
-- `InputDataConfig`: `List["ChannelTypeDef"]`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `VpcConfig`: `"VpcConfigTypeDef"`
+- `InputDataConfig`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 - `TrainingStartTime`: `datetime`
 - `TrainingEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `SecondaryStatusTransitions`: `List["SecondaryStatusTransitionTypeDef"]`
-- `FinalMetricDataList`: `List["MetricDataTypeDef"]`
+- `SecondaryStatusTransitions`:
+  `List`\[[SecondaryStatusTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#secondarystatustransitiontypedef)\]
+- `FinalMetricDataList`:
+  `List`\[[MetricDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricdatatypedef)\]
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
-- `CheckpointConfig`: `"CheckpointConfigTypeDef"`
+- `CheckpointConfig`:
+  [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
 - `TrainingTimeInSeconds`: `int`
 - `BillableTimeInSeconds`: `int`
-- `DebugHookConfig`: `"DebugHookConfigTypeDef"`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
-- `DebugRuleConfigurations`: `List["DebugRuleConfigurationTypeDef"]`
-- `TensorBoardOutputConfig`: `"TensorBoardOutputConfigTypeDef"`
-- `DebugRuleEvaluationStatuses`: `List["DebugRuleEvaluationStatusTypeDef"]`
-- `ProfilerConfig`: `"ProfilerConfigTypeDef"`
-- `ProfilerRuleConfigurations`: `List["ProfilerRuleConfigurationTypeDef"]`
-- `ProfilerRuleEvaluationStatuses`: `List["ProfilerRuleEvaluationStatusTypeDef"]`
-- `ProfilingStatus`: `ProfilingStatus`
-- `Environment`: `Dict[str, str]`
-
+- `DebugHookConfig`:
+  [DebugHookConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debughookconfigtypedef)
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+- `DebugRuleConfigurations`:
+  `List`\[[DebugRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleconfigurationtypedef)\]
+- `TensorBoardOutputConfig`:
+  [TensorBoardOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tensorboardoutputconfigtypedef)
+- `DebugRuleEvaluationStatuses`:
+  `List`\[[DebugRuleEvaluationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleevaluationstatustypedef)\]
+- `ProfilerConfig`:
+  [ProfilerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerconfigtypedef)
+- `ProfilerRuleConfigurations`:
+  `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
+- `ProfilerRuleEvaluationStatuses`:
+  `List`\[[ProfilerRuleEvaluationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleevaluationstatustypedef)\]
+- `ProfilingStatus`:
+  [ProfilingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#profilingstatus)
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## DescribeTransformJobResponseTypeDef
 
@@ -3404,33 +3236,39 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeTransformJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
-- `TransformJobStatus`: `TransformJobStatus`
+- `TransformJobStatus`:
+  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
 - `ModelName`: `str`
-- `TransformInput`: `"TransformInputTypeDef"`
-- `TransformResources`: `"TransformResourcesTypeDef"`
+- `TransformInput`:
+  [TransformInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforminputtypedef)
+- `TransformResources`:
+  [TransformResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformresourcestypedef)
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
+
 - `FailureReason`: `str`
 - `MaxConcurrentTransforms`: `int`
-- `ModelClientConfig`: `"ModelClientConfigTypeDef"`
+- `ModelClientConfig`:
+  [ModelClientConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: `BatchStrategy`
-- `Environment`: `Dict[str, str]`
-- `TransformOutput`: `"TransformOutputTypeDef"`
+- `BatchStrategy`:
+  [BatchStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#batchstrategy)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `TransformOutput`:
+  [TransformOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformoutputtypedef)
 - `TransformStartTime`: `datetime`
 - `TransformEndTime`: `datetime`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `DataProcessing`: `"DataProcessingTypeDef"`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
-
+- `DataProcessing`:
+  [DataProcessingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataprocessingtypedef)
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
 
 ## DescribeTrialComponentResponseTypeDef
 
@@ -3438,27 +3276,33 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentName`: `str`
 - `TrialComponentArn`: `str`
 - `DisplayName`: `str`
-- `Source`: `"TrialComponentSourceTypeDef"`
-- `Status`: `"TrialComponentStatusTypeDef"`
+- `Source`:
+  [TrialComponentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsourcetypedef)
+- `Status`:
+  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `Parameters`: `Dict[str, "TrialComponentParameterValueTypeDef"]`
-- `InputArtifacts`: `Dict[str, "TrialComponentArtifactTypeDef"]`
-- `OutputArtifacts`: `Dict[str, "TrialComponentArtifactTypeDef"]`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-- `Metrics`: `List["TrialComponentMetricSummaryTypeDef"]`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `Parameters`: `Dict`\[`str`,
+  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+- `InputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `OutputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Metrics`:
+  `List`\[[TrialComponentMetricSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentmetricsummarytypedef)\]
 
 ## DescribeTrialResponseTypeDef
 
@@ -3466,21 +3310,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeTrialResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialName`: `str`
 - `TrialArn`: `str`
 - `DisplayName`: `str`
 - `ExperimentName`: `str`
-- `Source`: `"TrialSourceTypeDef"`
+- `Source`:
+  [TrialSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialsourcetypedef)
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
 
 ## DescribeUserProfileResponseTypeDef
 
@@ -3488,22 +3333,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeUserProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainId`: `str`
 - `UserProfileArn`: `str`
 - `UserProfileName`: `str`
 - `HomeEfsFileSystemUid`: `str`
-- `Status`: `UserProfileStatus`
+- `Status`:
+  [UserProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#userprofilestatus)
 - `LastModifiedTime`: `datetime`
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
 - `SingleSignOnUserIdentifier`: `str`
 - `SingleSignOnUserValue`: `str`
-- `UserSettings`: `"UserSettingsTypeDef"`
-
+- `UserSettings`:
+  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
 
 ## DescribeWorkforceResponseTypeDef
 
@@ -3511,12 +3355,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DescribeWorkforceResponseTypeDef
 ```
 
-
 Required fields:
-- `Workforce`: `"WorkforceTypeDef"`
 
-
-
+- `Workforce`:
+  [WorkforceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workforcetypedef)
 
 ## DescribeWorkteamResponseTypeDef
 
@@ -3524,12 +3366,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DescribeWorkteamResponseTypeDef
 ```
 
-
 Required fields:
-- `Workteam`: `"WorkteamTypeDef"`
 
-
-
+- `Workteam`:
+  [WorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workteamtypedef)
 
 ## DesiredWeightAndCapacityTypeDef
 
@@ -3537,16 +3377,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DesiredWeightAndCapacityTypeDef
 ```
 
-
 Required fields:
+
 - `VariantName`: `str`
 
-
-
 Optional fields:
+
 - `DesiredWeight`: `float`
 - `DesiredInstanceCount`: `int`
-
 
 ## DeviceFleetSummaryTypeDef
 
@@ -3554,17 +3392,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeviceFleetSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceFleetArn`: `str`
 - `DeviceFleetName`: `str`
 
-
-
 Optional fields:
+
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## DeviceStatsTypeDef
 
@@ -3572,13 +3408,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeviceStatsTypeDef
 ```
 
-
 Required fields:
+
 - `ConnectedDeviceCount`: `int`
 - `RegisteredDeviceCount`: `int`
-
-
-
 
 ## DeviceSummaryTypeDef
 
@@ -3586,21 +3419,20 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import DeviceSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceName`: `str`
 - `DeviceArn`: `str`
 
-
-
 Optional fields:
+
 - `Description`: `str`
 - `DeviceFleetName`: `str`
 - `IotThingName`: `str`
 - `RegistrationTime`: `datetime`
 - `LatestHeartbeat`: `datetime`
-- `Models`: `List["EdgeModelSummaryTypeDef"]`
-
+- `Models`:
+  `List`\[[EdgeModelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgemodelsummarytypedef)\]
 
 ## DeviceTypeDef
 
@@ -3608,16 +3440,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DeviceTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceName`: `str`
 
-
-
 Optional fields:
+
 - `Description`: `str`
 - `IotThingName`: `str`
-
 
 ## DisassociateTrialComponentResponseTypeDef
 
@@ -3625,13 +3455,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DisassociateTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentArn`: `str`
 - `TrialArn`: `str`
-
 
 ## DomainDetailsTypeDef
 
@@ -3639,18 +3466,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import DomainDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainArn`: `str`
 - `DomainId`: `str`
 - `DomainName`: `str`
-- `Status`: `DomainStatus`
+- `Status`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#domainstatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Url`: `str`
-
 
 ## EdgeModelStatTypeDef
 
@@ -3658,8 +3483,8 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import EdgeModelStatTypeDef
 ```
 
-
 Required fields:
+
 - `ModelName`: `str`
 - `ModelVersion`: `str`
 - `OfflineDeviceCount`: `int`
@@ -3667,22 +3492,16 @@ Required fields:
 - `ActiveDeviceCount`: `int`
 - `SamplingDeviceCount`: `int`
 
-
-
-
 ## EdgeModelSummaryTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import EdgeModelSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ModelName`: `str`
 - `ModelVersion`: `str`
-
-
-
 
 ## EdgeModelTypeDef
 
@@ -3690,17 +3509,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import EdgeModelTypeDef
 ```
 
-
 Required fields:
+
 - `ModelName`: `str`
 - `ModelVersion`: `str`
 
-
-
 Optional fields:
+
 - `LatestSampleTime`: `datetime`
 - `LatestInference`: `datetime`
-
 
 ## EdgeOutputConfigTypeDef
 
@@ -3708,15 +3525,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import EdgeOutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputLocation`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## EdgePackagingJobSummaryTypeDef
 
@@ -3724,21 +3539,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import EdgePackagingJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `EdgePackagingJobArn`: `str`
 - `EdgePackagingJobName`: `str`
-- `EdgePackagingJobStatus`: `EdgePackagingJobStatus`
-
-
+- `EdgePackagingJobStatus`:
+  [EdgePackagingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#edgepackagingjobstatus)
 
 Optional fields:
+
 - `CompilationJobName`: `str`
 - `ModelName`: `str`
 - `ModelVersion`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## EndpointConfigSummaryTypeDef
 
@@ -3746,14 +3560,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import EndpointConfigSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointConfigName`: `str`
 - `EndpointConfigArn`: `str`
 - `CreationTime`: `datetime`
-
-
-
 
 ## EndpointInputTypeDef
 
@@ -3761,16 +3572,17 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import EndpointInputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointName`: `str`
 - `LocalPath`: `str`
 
-
-
 Optional fields:
-- `S3InputMode`: `ProcessingS3InputMode`
-- `S3DataDistributionType`: `ProcessingS3DataDistributionType`
+
+- `S3InputMode`:
+  [ProcessingS3InputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3inputmode)
+- `S3DataDistributionType`:
+  [ProcessingS3DataDistributionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3datadistributiontype)
 - `FeaturesAttribute`: `str`
 - `InferenceAttribute`: `str`
 - `ProbabilityAttribute`: `str`
@@ -3778,23 +3590,20 @@ Optional fields:
 - `StartTimeOffset`: `str`
 - `EndTimeOffset`: `str`
 
-
 ## EndpointSummaryTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import EndpointSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointName`: `str`
 - `EndpointArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `EndpointStatus`: `EndpointStatus`
-
-
-
+- `EndpointStatus`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
 
 ## EndpointTypeDef
 
@@ -3802,24 +3611,27 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import EndpointTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointName`: `str`
 - `EndpointArn`: `str`
 - `EndpointConfigName`: `str`
-- `EndpointStatus`: `EndpointStatus`
+- `EndpointStatus`:
+  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
-- `ProductionVariants`: `List["ProductionVariantSummaryTypeDef"]`
-- `DataCaptureConfig`: `"DataCaptureConfigSummaryTypeDef"`
-- `FailureReason`: `str`
-- `MonitoringSchedules`: `List["MonitoringScheduleTypeDef"]`
-- `Tags`: `List["TagTypeDef"]`
 
+- `ProductionVariants`:
+  `List`\[[ProductionVariantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvariantsummarytypedef)\]
+- `DataCaptureConfig`:
+  [DataCaptureConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacaptureconfigsummarytypedef)
+- `FailureReason`: `str`
+- `MonitoringSchedules`:
+  `List`\[[MonitoringScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduletypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ExperimentConfigTypeDef
 
@@ -3827,14 +3639,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ExperimentConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExperimentName`: `str`
 - `TrialName`: `str`
 - `TrialComponentDisplayName`: `str`
-
 
 ## ExperimentSourceTypeDef
 
@@ -3842,15 +3651,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ExperimentSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceArn`: `str`
 
-
-
 Optional fields:
-- `SourceType`: `str`
 
+- `SourceType`: `str`
 
 ## ExperimentSummaryTypeDef
 
@@ -3858,17 +3665,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ExperimentSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExperimentArn`: `str`
 - `ExperimentName`: `str`
 - `DisplayName`: `str`
-- `ExperimentSource`: `"ExperimentSourceTypeDef"`
+- `ExperimentSource`:
+  [ExperimentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentsourcetypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## ExperimentTypeDef
 
@@ -3876,21 +3681,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ExperimentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExperimentName`: `str`
 - `ExperimentArn`: `str`
 - `DisplayName`: `str`
-- `Source`: `"ExperimentSourceTypeDef"`
+- `Source`:
+  [ExperimentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentsourcetypedef)
 - `Description`: `str`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ExplainabilityTypeDef
 
@@ -3898,12 +3704,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ExplainabilityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Report`: `"MetricsSourceTypeDef"`
 
+- `Report`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
 
 ## FeatureDefinitionTypeDef
 
@@ -3911,13 +3715,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FeatureDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FeatureName`: `str`
-- `FeatureType`: `FeatureType`
 
+- `FeatureName`: `str`
+- `FeatureType`:
+  [FeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuretype)
 
 ## FeatureGroupSummaryTypeDef
 
@@ -3925,18 +3727,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FeatureGroupSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `FeatureGroupName`: `str`
 - `FeatureGroupArn`: `str`
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
-- `FeatureGroupStatus`: `FeatureGroupStatus`
-- `OfflineStoreStatus`: `"OfflineStoreStatusTypeDef"`
 
+- `FeatureGroupStatus`:
+  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+- `OfflineStoreStatus`:
+  [OfflineStoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestorestatustypedef)
 
 ## FeatureGroupTypeDef
 
@@ -3944,25 +3746,28 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FeatureGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FeatureGroupArn`: `str`
 - `FeatureGroupName`: `str`
 - `RecordIdentifierFeatureName`: `str`
 - `EventTimeFeatureName`: `str`
-- `FeatureDefinitions`: `List["FeatureDefinitionTypeDef"]`
+- `FeatureDefinitions`:
+  `List`\[[FeatureDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuredefinitiontypedef)\]
 - `CreationTime`: `datetime`
-- `OnlineStoreConfig`: `"OnlineStoreConfigTypeDef"`
-- `OfflineStoreConfig`: `"OfflineStoreConfigTypeDef"`
+- `OnlineStoreConfig`:
+  [OnlineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#onlinestoreconfigtypedef)
+- `OfflineStoreConfig`:
+  [OfflineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
-- `FeatureGroupStatus`: `FeatureGroupStatus`
-- `OfflineStoreStatus`: `"OfflineStoreStatusTypeDef"`
+- `FeatureGroupStatus`:
+  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+- `OfflineStoreStatus`:
+  [OfflineStoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestorestatustypedef)
 - `FailureReason`: `str`
 - `Description`: `str`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## FileSystemConfigTypeDef
 
@@ -3970,14 +3775,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FileSystemConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MountPath`: `str`
 - `DefaultUid`: `int`
 - `DefaultGid`: `int`
-
 
 ## FileSystemDataSourceTypeDef
 
@@ -3985,15 +3787,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FileSystemDataSourceTypeDef
 ```
 
-
 Required fields:
+
 - `FileSystemId`: `str`
-- `FileSystemAccessMode`: `FileSystemAccessMode`
-- `FileSystemType`: `FileSystemType`
+- `FileSystemAccessMode`:
+  [FileSystemAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#filesystemaccessmode)
+- `FileSystemType`:
+  [FileSystemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#filesystemtype)
 - `DirectoryPath`: `str`
-
-
-
 
 ## FilterTypeDef
 
@@ -4001,16 +3802,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Operator`: `Operator`
-- `Value`: `str`
 
+- `Operator`:
+  [Operator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#operator)
+- `Value`: `str`
 
 ## FinalAutoMLJobObjectiveMetricTypeDef
 
@@ -4018,16 +3818,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FinalAutoMLJobObjectiveMetricTypeDef
 ```
 
-
 Required fields:
-- `MetricName`: `AutoMLMetricEnum`
+
+- `MetricName`:
+  [AutoMLMetricEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlmetricenum)
 - `Value`: `float`
 
-
-
 Optional fields:
-- `Type`: `AutoMLJobObjectiveType`
 
+- `Type`:
+  [AutoMLJobObjectiveType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobobjectivetype)
 
 ## FinalHyperParameterTuningJobObjectiveMetricTypeDef
 
@@ -4035,16 +3835,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FinalHyperParameterTuningJobObjectiveMetricTypeDef
 ```
 
-
 Required fields:
+
 - `MetricName`: `str`
 - `Value`: `float`
 
-
-
 Optional fields:
-- `Type`: `HyperParameterTuningJobObjectiveType`
 
+- `Type`:
+  [HyperParameterTuningJobObjectiveType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobobjectivetype)
 
 ## FlowDefinitionOutputConfigTypeDef
 
@@ -4052,15 +3851,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FlowDefinitionOutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## FlowDefinitionSummaryTypeDef
 
@@ -4068,18 +3865,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import FlowDefinitionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `FlowDefinitionName`: `str`
 - `FlowDefinitionArn`: `str`
-- `FlowDefinitionStatus`: `FlowDefinitionStatus`
+- `FlowDefinitionStatus`:
+  [FlowDefinitionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#flowdefinitionstatus)
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
-- `FailureReason`: `str`
 
+- `FailureReason`: `str`
 
 ## GetDeviceFleetReportResponseTypeDef
 
@@ -4087,21 +3883,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import GetDeviceFleetReportResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceFleetArn`: `str`
 - `DeviceFleetName`: `str`
 
-
-
 Optional fields:
-- `OutputConfig`: `"EdgeOutputConfigTypeDef"`
+
+- `OutputConfig`:
+  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
 - `Description`: `str`
 - `ReportGenerated`: `datetime`
-- `DeviceStats`: `"DeviceStatsTypeDef"`
-- `AgentVersions`: `List["AgentVersionTypeDef"]`
-- `ModelStats`: `List["EdgeModelStatTypeDef"]`
-
+- `DeviceStats`:
+  [DeviceStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicestatstypedef)
+- `AgentVersions`:
+  `List`\[[AgentVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#agentversiontypedef)\]
+- `ModelStats`:
+  `List`\[[EdgeModelStatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgemodelstattypedef)\]
 
 ## GetModelPackageGroupPolicyOutputTypeDef
 
@@ -4109,13 +3907,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import GetModelPackageGroupPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourcePolicy`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## GetSagemakerServicecatalogPortfolioStatusOutputTypeDef
 
@@ -4123,13 +3919,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import GetSagemakerServicecatalogPortfolioStatusOutputTypeDef
 ```
 
-
 Required fields:
-- `Status`: `SagemakerServicecatalogStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Status`:
+  [SagemakerServicecatalogStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sagemakerservicecatalogstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## GetSearchSuggestionsResponseTypeDef
 
@@ -4137,12 +3932,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import GetSearchSuggestionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PropertyNameSuggestions`: `List["PropertyNameSuggestionTypeDef"]`
 
+- `PropertyNameSuggestions`:
+  `List`\[[PropertyNameSuggestionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#propertynamesuggestiontypedef)\]
 
 ## GitConfigForUpdateTypeDef
 
@@ -4150,12 +3943,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import GitConfigForUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SecretArn`: `str`
 
+- `SecretArn`: `str`
 
 ## GitConfigTypeDef
 
@@ -4163,16 +3953,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import GitConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RepositoryUrl`: `str`
 
-
-
 Optional fields:
+
 - `Branch`: `str`
 - `SecretArn`: `str`
-
 
 ## HumanLoopActivationConditionsConfigTypeDef
 
@@ -4180,12 +3968,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HumanLoopActivationConditionsConfigTypeDef
 ```
 
-
 Required fields:
+
 - `HumanLoopActivationConditions`: `str`
-
-
-
 
 ## HumanLoopActivationConfigTypeDef
 
@@ -4193,12 +3978,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import HumanLoopActivationConfigTypeDef
 ```
 
-
 Required fields:
-- `HumanLoopActivationConditionsConfig`: `"HumanLoopActivationConditionsConfigTypeDef"`
 
-
-
+- `HumanLoopActivationConditionsConfig`:
+  [HumanLoopActivationConditionsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopactivationconditionsconfigtypedef)
 
 ## HumanLoopConfigTypeDef
 
@@ -4206,22 +3989,21 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import HumanLoopConfigTypeDef
 ```
 
-
 Required fields:
+
 - `WorkteamArn`: `str`
 - `HumanTaskUiArn`: `str`
 - `TaskTitle`: `str`
 - `TaskDescription`: `str`
 - `TaskCount`: `int`
 
-
-
 Optional fields:
+
 - `TaskAvailabilityLifetimeInSeconds`: `int`
 - `TaskTimeLimitInSeconds`: `int`
-- `TaskKeywords`: `List[str]`
-- `PublicWorkforceTaskPrice`: `"PublicWorkforceTaskPriceTypeDef"`
-
+- `TaskKeywords`: `List`\[`str`\]
+- `PublicWorkforceTaskPrice`:
+  [PublicWorkforceTaskPriceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#publicworkforcetaskpricetypedef)
 
 ## HumanLoopRequestSourceTypeDef
 
@@ -4229,12 +4011,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HumanLoopRequestSourceTypeDef
 ```
 
-
 Required fields:
-- `AwsManagedHumanLoopRequestSource`: `AwsManagedHumanLoopRequestSource`
 
-
-
+- `AwsManagedHumanLoopRequestSource`:
+  [AwsManagedHumanLoopRequestSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#awsmanagedhumanlooprequestsource)
 
 ## HumanTaskConfigTypeDef
 
@@ -4242,25 +4022,26 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import HumanTaskConfigTypeDef
 ```
 
-
 Required fields:
+
 - `WorkteamArn`: `str`
-- `UiConfig`: `"UiConfigTypeDef"`
+- `UiConfig`:
+  [UiConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uiconfigtypedef)
 - `PreHumanTaskLambdaArn`: `str`
 - `TaskTitle`: `str`
 - `TaskDescription`: `str`
 - `NumberOfHumanWorkersPerDataObject`: `int`
 - `TaskTimeLimitInSeconds`: `int`
-- `AnnotationConsolidationConfig`: `"AnnotationConsolidationConfigTypeDef"`
-
-
+- `AnnotationConsolidationConfig`:
+  [AnnotationConsolidationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#annotationconsolidationconfigtypedef)
 
 Optional fields:
-- `TaskKeywords`: `List[str]`
+
+- `TaskKeywords`: `List`\[`str`\]
 - `TaskAvailabilityLifetimeInSeconds`: `int`
 - `MaxConcurrentTaskCount`: `int`
-- `PublicWorkforceTaskPrice`: `"PublicWorkforceTaskPriceTypeDef"`
-
+- `PublicWorkforceTaskPrice`:
+  [PublicWorkforceTaskPriceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#publicworkforcetaskpricetypedef)
 
 ## HumanTaskUiSummaryTypeDef
 
@@ -4268,14 +4049,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HumanTaskUiSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `HumanTaskUiName`: `str`
 - `HumanTaskUiArn`: `str`
 - `CreationTime`: `datetime`
-
-
-
 
 ## HyperParameterAlgorithmSpecificationTypeDef
 
@@ -4283,17 +4061,17 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterAlgorithmSpecificationTypeDef
 ```
 
-
 Required fields:
-- `TrainingInputMode`: `TrainingInputMode`
 
-
+- `TrainingInputMode`:
+  [TrainingInputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginputmode)
 
 Optional fields:
+
 - `TrainingImage`: `str`
 - `AlgorithmName`: `str`
-- `MetricDefinitions`: `List["MetricDefinitionTypeDef"]`
-
+- `MetricDefinitions`:
+  `List`\[[MetricDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricdefinitiontypedef)\]
 
 ## HyperParameterSpecificationTypeDef
 
@@ -4301,20 +4079,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Type`: `ParameterType`
-
-
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#parametertype)
 
 Optional fields:
+
 - `Description`: `str`
-- `Range`: `"ParameterRangeTypeDef"`
+- `Range`:
+  [ParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parameterrangetypedef)
 - `IsTunable`: `bool`
 - `IsRequired`: `bool`
 - `DefaultValue`: `str`
-
 
 ## HyperParameterTrainingJobDefinitionTypeDef
 
@@ -4322,28 +4100,35 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTrainingJobDefinitionTypeDef
 ```
 
-
 Required fields:
-- `AlgorithmSpecification`: `"HyperParameterAlgorithmSpecificationTypeDef"`
+
+- `AlgorithmSpecification`:
+  [HyperParameterAlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparameteralgorithmspecificationtypedef)
 - `RoleArn`: `str`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `ResourceConfig`: `"ResourceConfigTypeDef"`
-- `StoppingCondition`: `"StoppingConditionTypeDef"`
-
-
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
 
 Optional fields:
+
 - `DefinitionName`: `str`
-- `TuningObjective`: `"HyperParameterTuningJobObjectiveTypeDef"`
-- `HyperParameterRanges`: `"ParameterRangesTypeDef"`
-- `StaticHyperParameters`: `Dict[str, str]`
-- `InputDataConfig`: `List["ChannelTypeDef"]`
-- `VpcConfig`: `"VpcConfigTypeDef"`
+- `TuningObjective`:
+  [HyperParameterTuningJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobobjectivetypedef)
+- `HyperParameterRanges`:
+  [ParameterRangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parameterrangestypedef)
+- `StaticHyperParameters`: `Dict`\[`str`, `str`\]
+- `InputDataConfig`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
-- `CheckpointConfig`: `"CheckpointConfigTypeDef"`
-
+- `CheckpointConfig`:
+  [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
 
 ## HyperParameterTrainingJobSummaryTypeDef
 
@@ -4351,25 +4136,26 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTrainingJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TrainingJobStatus`: `TrainingJobStatus`
-- `TunedHyperParameters`: `Dict[str, str]`
-
-
+- `TrainingJobStatus`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
+- `TunedHyperParameters`: `Dict`\[`str`, `str`\]
 
 Optional fields:
+
 - `TrainingJobDefinitionName`: `str`
 - `TuningJobName`: `str`
 - `TrainingStartTime`: `datetime`
 - `TrainingEndTime`: `datetime`
 - `FailureReason`: `str`
-- `FinalHyperParameterTuningJobObjectiveMetric`: `"FinalHyperParameterTuningJobObjectiveMetricTypeDef"`
-- `ObjectiveStatus`: `ObjectiveStatus`
-
+- `FinalHyperParameterTuningJobObjectiveMetric`:
+  [FinalHyperParameterTuningJobObjectiveMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#finalhyperparametertuningjobobjectivemetrictypedef)
+- `ObjectiveStatus`:
+  [ObjectiveStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#objectivestatus)
 
 ## HyperParameterTuningJobConfigTypeDef
 
@@ -4377,19 +4163,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobConfigTypeDef
 ```
 
-
 Required fields:
-- `Strategy`: `HyperParameterTuningJobStrategyType`
-- `ResourceLimits`: `"ResourceLimitsTypeDef"`
 
-
+- `Strategy`:
+  [HyperParameterTuningJobStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstrategytype)
+- `ResourceLimits`:
+  [ResourceLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcelimitstypedef)
 
 Optional fields:
-- `HyperParameterTuningJobObjective`: `"HyperParameterTuningJobObjectiveTypeDef"`
-- `ParameterRanges`: `"ParameterRangesTypeDef"`
-- `TrainingJobEarlyStoppingType`: `TrainingJobEarlyStoppingType`
-- `TuningJobCompletionCriteria`: `"TuningJobCompletionCriteriaTypeDef"`
 
+- `HyperParameterTuningJobObjective`:
+  [HyperParameterTuningJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobobjectivetypedef)
+- `ParameterRanges`:
+  [ParameterRangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parameterrangestypedef)
+- `TrainingJobEarlyStoppingType`:
+  [TrainingJobEarlyStoppingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobearlystoppingtype)
+- `TuningJobCompletionCriteria`:
+  [TuningJobCompletionCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tuningjobcompletioncriteriatypedef)
 
 ## HyperParameterTuningJobObjectiveTypeDef
 
@@ -4397,13 +4187,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobObjectiveTypeDef
 ```
 
-
 Required fields:
-- `Type`: `HyperParameterTuningJobObjectiveType`
+
+- `Type`:
+  [HyperParameterTuningJobObjectiveType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobobjectivetype)
 - `MetricName`: `str`
-
-
-
 
 ## HyperParameterTuningJobSummaryTypeDef
 
@@ -4411,23 +4199,26 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `HyperParameterTuningJobName`: `str`
 - `HyperParameterTuningJobArn`: `str`
-- `HyperParameterTuningJobStatus`: `HyperParameterTuningJobStatus`
-- `Strategy`: `HyperParameterTuningJobStrategyType`
+- `HyperParameterTuningJobStatus`:
+  [HyperParameterTuningJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstatus)
+- `Strategy`:
+  [HyperParameterTuningJobStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstrategytype)
 - `CreationTime`: `datetime`
-- `TrainingJobStatusCounters`: `"TrainingJobStatusCountersTypeDef"`
-- `ObjectiveStatusCounters`: `"ObjectiveStatusCountersTypeDef"`
-
-
+- `TrainingJobStatusCounters`:
+  [TrainingJobStatusCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobstatuscounterstypedef)
+- `ObjectiveStatusCounters`:
+  [ObjectiveStatusCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#objectivestatuscounterstypedef)
 
 Optional fields:
+
 - `HyperParameterTuningEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `ResourceLimits`: `"ResourceLimitsTypeDef"`
-
+- `ResourceLimits`:
+  [ResourceLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcelimitstypedef)
 
 ## HyperParameterTuningJobWarmStartConfigTypeDef
 
@@ -4435,13 +4226,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobWarmStartConfigTypeDef
 ```
 
-
 Required fields:
-- `ParentHyperParameterTuningJobs`: `List["ParentHyperParameterTuningJobTypeDef"]`
-- `WarmStartType`: `HyperParameterTuningJobWarmStartType`
 
-
-
+- `ParentHyperParameterTuningJobs`:
+  `List`\[[ParentHyperParameterTuningJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parenthyperparametertuningjobtypedef)\]
+- `WarmStartType`:
+  [HyperParameterTuningJobWarmStartType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobwarmstarttype)
 
 ## ImageConfigTypeDef
 
@@ -4449,15 +4239,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ImageConfigTypeDef
 ```
 
-
 Required fields:
-- `RepositoryAccessMode`: `RepositoryAccessMode`
 
-
+- `RepositoryAccessMode`:
+  [RepositoryAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#repositoryaccessmode)
 
 Optional fields:
-- `RepositoryAuthConfig`: `"RepositoryAuthConfigTypeDef"`
 
+- `RepositoryAuthConfig`:
+  [RepositoryAuthConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#repositoryauthconfigtypedef)
 
 ## ImageTypeDef
 
@@ -4465,21 +4255,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ImageTypeDef
 ```
 
-
 Required fields:
+
 - `CreationTime`: `datetime`
 - `ImageArn`: `str`
 - `ImageName`: `str`
-- `ImageStatus`: `ImageStatus`
+- `ImageStatus`:
+  [ImageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagestatus)
 - `LastModifiedTime`: `datetime`
 
-
-
 Optional fields:
+
 - `Description`: `str`
 - `DisplayName`: `str`
 - `FailureReason`: `str`
-
 
 ## ImageVersionTypeDef
 
@@ -4487,20 +4276,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ImageVersionTypeDef
 ```
 
-
 Required fields:
+
 - `CreationTime`: `datetime`
 - `ImageArn`: `str`
 - `ImageVersionArn`: `str`
-- `ImageVersionStatus`: `ImageVersionStatus`
+- `ImageVersionStatus`:
+  [ImageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionstatus)
 - `LastModifiedTime`: `datetime`
 - `Version`: `int`
 
-
-
 Optional fields:
-- `FailureReason`: `str`
 
+- `FailureReason`: `str`
 
 ## InferenceExecutionConfigTypeDef
 
@@ -4508,12 +4296,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import InferenceExecutionConfigTypeDef
 ```
 
-
 Required fields:
-- `Mode`: `InferenceExecutionMode`
 
-
-
+- `Mode`:
+  [InferenceExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#inferenceexecutionmode)
 
 ## InferenceSpecificationTypeDef
 
@@ -4521,18 +4307,19 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import InferenceSpecificationTypeDef
 ```
 
-
 Required fields:
-- `Containers`: `List["ModelPackageContainerDefinitionTypeDef"]`
-- `SupportedContentTypes`: `List[str]`
-- `SupportedResponseMIMETypes`: `List[str]`
 
-
+- `Containers`:
+  `List`\[[ModelPackageContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagecontainerdefinitiontypedef)\]
+- `SupportedContentTypes`: `List`\[`str`\]
+- `SupportedResponseMIMETypes`: `List`\[`str`\]
 
 Optional fields:
-- `SupportedTransformInstanceTypes`: `List[TransformInstanceType]`
-- `SupportedRealtimeInferenceInstanceTypes`: `List[ProductionVariantInstanceType]`
 
+- `SupportedTransformInstanceTypes`:
+  `List`\[[TransformInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transforminstancetype)\]
+- `SupportedRealtimeInferenceInstanceTypes`:
+  `List`\[[ProductionVariantInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#productionvariantinstancetype)\]
 
 ## InputConfigTypeDef
 
@@ -4540,17 +4327,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import InputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 - `DataInputConfig`: `str`
-- `Framework`: `Framework`
-
-
+- `Framework`:
+  [Framework](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#framework)
 
 Optional fields:
-- `FrameworkVersion`: `str`
 
+- `FrameworkVersion`: `str`
 
 ## IntegerParameterRangeSpecificationTypeDef
 
@@ -4558,13 +4344,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import IntegerParameterRangeSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `MinValue`: `str`
 - `MaxValue`: `str`
-
-
-
 
 ## IntegerParameterRangeTypeDef
 
@@ -4572,17 +4355,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import IntegerParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `MinValue`: `str`
 - `MaxValue`: `str`
 
-
-
 Optional fields:
-- `ScalingType`: `HyperParameterScalingType`
 
+- `ScalingType`:
+  [HyperParameterScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparameterscalingtype)
 
 ## JupyterServerAppSettingsTypeDef
 
@@ -4590,12 +4372,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import JupyterServerAppSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DefaultResourceSpec`: `"ResourceSpecTypeDef"`
 
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
 
 ## KernelGatewayAppSettingsTypeDef
 
@@ -4603,13 +4383,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import KernelGatewayAppSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DefaultResourceSpec`: `"ResourceSpecTypeDef"`
-- `CustomImages`: `List["CustomImageTypeDef"]`
 
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
+- `CustomImages`:
+  `List`\[[CustomImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#customimagetypedef)\]
 
 ## KernelGatewayImageConfigTypeDef
 
@@ -4617,15 +4396,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import KernelGatewayImageConfigTypeDef
 ```
 
-
 Required fields:
-- `KernelSpecs`: `List["KernelSpecTypeDef"]`
 
-
+- `KernelSpecs`:
+  `List`\[[KernelSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelspectypedef)\]
 
 Optional fields:
-- `FileSystemConfig`: `"FileSystemConfigTypeDef"`
 
+- `FileSystemConfig`:
+  [FileSystemConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#filesystemconfigtypedef)
 
 ## KernelSpecTypeDef
 
@@ -4633,15 +4412,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import KernelSpecTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `DisplayName`: `str`
 
+- `DisplayName`: `str`
 
 ## LabelCountersForWorkteamTypeDef
 
@@ -4649,14 +4426,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelCountersForWorkteamTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HumanLabeled`: `int`
 - `PendingHuman`: `int`
 - `Total`: `int`
-
 
 ## LabelCountersTypeDef
 
@@ -4664,16 +4438,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelCountersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalLabeled`: `int`
 - `HumanLabeled`: `int`
 - `MachineLabeled`: `int`
 - `FailedNonRetryableError`: `int`
 - `Unlabeled`: `int`
-
 
 ## LabelingJobAlgorithmsConfigTypeDef
 
@@ -4681,16 +4452,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobAlgorithmsConfigTypeDef
 ```
 
-
 Required fields:
+
 - `LabelingJobAlgorithmSpecificationArn`: `str`
 
-
-
 Optional fields:
-- `InitialActiveLearningModelArn`: `str`
-- `LabelingJobResourceConfig`: `"LabelingJobResourceConfigTypeDef"`
 
+- `InitialActiveLearningModelArn`: `str`
+- `LabelingJobResourceConfig`:
+  [LabelingJobResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobresourceconfigtypedef)
 
 ## LabelingJobDataAttributesTypeDef
 
@@ -4698,12 +4468,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobDataAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentClassifiers`: `List[ContentClassifier]`
 
+- `ContentClassifiers`:
+  `List`\[[ContentClassifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#contentclassifier)\]
 
 ## LabelingJobDataSourceTypeDef
 
@@ -4711,13 +4479,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobDataSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3DataSource`: `"LabelingJobS3DataSourceTypeDef"`
-- `SnsDataSource`: `"LabelingJobSnsDataSourceTypeDef"`
 
+- `S3DataSource`:
+  [LabelingJobS3DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobs3datasourcetypedef)
+- `SnsDataSource`:
+  [LabelingJobSnsDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobsnsdatasourcetypedef)
 
 ## LabelingJobForWorkteamSummaryTypeDef
 
@@ -4725,19 +4492,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobForWorkteamSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `JobReferenceCode`: `str`
 - `WorkRequesterAccountId`: `str`
 - `CreationTime`: `datetime`
 
-
-
 Optional fields:
-- `LabelingJobName`: `str`
-- `LabelCounters`: `"LabelCountersForWorkteamTypeDef"`
-- `NumberOfHumanWorkersPerDataObject`: `int`
 
+- `LabelingJobName`: `str`
+- `LabelCounters`:
+  [LabelCountersForWorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelcountersforworkteamtypedef)
+- `NumberOfHumanWorkersPerDataObject`: `int`
 
 ## LabelingJobInputConfigTypeDef
 
@@ -4745,15 +4511,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobInputConfigTypeDef
 ```
 
-
 Required fields:
-- `DataSource`: `"LabelingJobDataSourceTypeDef"`
 
-
+- `DataSource`:
+  [LabelingJobDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobdatasourcetypedef)
 
 Optional fields:
-- `DataAttributes`: `"LabelingJobDataAttributesTypeDef"`
 
+- `DataAttributes`:
+  [LabelingJobDataAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobdataattributestypedef)
 
 ## LabelingJobOutputConfigTypeDef
 
@@ -4761,16 +4527,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobOutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
+
 - `KmsKeyId`: `str`
 - `SnsTopicArn`: `str`
-
 
 ## LabelingJobOutputTypeDef
 
@@ -4778,14 +4542,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobOutputTypeDef
 ```
 
-
 Required fields:
+
 - `OutputDatasetS3Uri`: `str`
 - `FinalActiveLearningModelArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## LabelingJobResourceConfigTypeDef
 
@@ -4793,12 +4555,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobResourceConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VolumeKmsKeyId`: `str`
 
+- `VolumeKmsKeyId`: `str`
 
 ## LabelingJobS3DataSourceTypeDef
 
@@ -4806,12 +4565,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobS3DataSourceTypeDef
 ```
 
-
 Required fields:
+
 - `ManifestS3Uri`: `str`
-
-
-
 
 ## LabelingJobSnsDataSourceTypeDef
 
@@ -4819,12 +4575,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobSnsDataSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SnsTopicArn`: `str`
-
-
-
 
 ## LabelingJobStoppingConditionsTypeDef
 
@@ -4832,13 +4585,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobStoppingConditionsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxHumanLabeledObjectCount`: `int`
 - `MaxPercentageOfInputDatasetLabeled`: `int`
-
 
 ## LabelingJobSummaryTypeDef
 
@@ -4846,25 +4596,27 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import LabelingJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `LabelingJobName`: `str`
 - `LabelingJobArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `LabelingJobStatus`: `LabelingJobStatus`
-- `LabelCounters`: `"LabelCountersTypeDef"`
+- `LabelingJobStatus`:
+  [LabelingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#labelingjobstatus)
+- `LabelCounters`:
+  [LabelCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelcounterstypedef)
 - `WorkteamArn`: `str`
 - `PreHumanTaskLambdaArn`: `str`
 
-
-
 Optional fields:
+
 - `AnnotationConsolidationLambdaArn`: `str`
 - `FailureReason`: `str`
-- `LabelingJobOutput`: `"LabelingJobOutputTypeDef"`
-- `InputConfig`: `"LabelingJobInputConfigTypeDef"`
-
+- `LabelingJobOutput`:
+  [LabelingJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjoboutputtypedef)
+- `InputConfig`:
+  [LabelingJobInputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobinputconfigtypedef)
 
 ## ListActionsResponseTypeDef
 
@@ -4872,13 +4624,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListActionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActionSummaries`: `List["ActionSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ActionSummaries`:
+  `List`\[[ActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#actionsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListAlgorithmsOutputTypeDef
 
@@ -4886,14 +4636,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListAlgorithmsOutputTypeDef
 ```
 
-
 Required fields:
-- `AlgorithmSummaryList`: `List["AlgorithmSummaryTypeDef"]`
+
+- `AlgorithmSummaryList`:
+  `List`\[[AlgorithmSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListAppImageConfigsResponseTypeDef
 
@@ -4901,13 +4650,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListAppImageConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `AppImageConfigs`: `List["AppImageConfigDetailsTypeDef"]`
 
+- `NextToken`: `str`
+- `AppImageConfigs`:
+  `List`\[[AppImageConfigDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appimageconfigdetailstypedef)\]
 
 ## ListAppsResponseTypeDef
 
@@ -4915,13 +4662,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListAppsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Apps`: `List["AppDetailsTypeDef"]`
-- `NextToken`: `str`
 
+- `Apps`:
+  `List`\[[AppDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appdetailstypedef)\]
+- `NextToken`: `str`
 
 ## ListArtifactsResponseTypeDef
 
@@ -4929,13 +4674,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListArtifactsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ArtifactSummaries`: `List["ArtifactSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ArtifactSummaries`:
+  `List`\[[ArtifactSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListAssociationsResponseTypeDef
 
@@ -4943,13 +4686,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationSummaries`: `List["AssociationSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `AssociationSummaries`:
+  `List`\[[AssociationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#associationsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListAutoMLJobsResponseTypeDef
 
@@ -4957,15 +4698,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListAutoMLJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `AutoMLJobSummaries`: `List["AutoMLJobSummaryTypeDef"]`
 
-
+- `AutoMLJobSummaries`:
+  `List`\[[AutoMLJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListCandidatesForAutoMLJobResponseTypeDef
 
@@ -4973,15 +4713,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListCandidatesForAutoMLJobResponseTypeDef
 ```
 
-
 Required fields:
-- `Candidates`: `List["AutoMLCandidateTypeDef"]`
 
-
+- `Candidates`:
+  `List`\[[AutoMLCandidateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlcandidatetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListCodeRepositoriesOutputTypeDef
 
@@ -4989,14 +4728,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListCodeRepositoriesOutputTypeDef
 ```
 
-
 Required fields:
-- `CodeRepositorySummaryList`: `List["CodeRepositorySummaryTypeDef"]`
+
+- `CodeRepositorySummaryList`:
+  `List`\[[CodeRepositorySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#coderepositorysummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListCompilationJobsResponseTypeDef
 
@@ -5004,15 +4742,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListCompilationJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `CompilationJobSummaries`: `List["CompilationJobSummaryTypeDef"]`
 
-
+- `CompilationJobSummaries`:
+  `List`\[[CompilationJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#compilationjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListContextsResponseTypeDef
 
@@ -5020,13 +4757,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListContextsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContextSummaries`: `List["ContextSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ContextSummaries`:
+  `List`\[[ContextSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#contextsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListDataQualityJobDefinitionsResponseTypeDef
 
@@ -5034,15 +4769,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListDataQualityJobDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
-- `JobDefinitionSummaries`: `List["MonitoringJobDefinitionSummaryTypeDef"]`
 
-
+- `JobDefinitionSummaries`:
+  `List`\[[MonitoringJobDefinitionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringjobdefinitionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListDeviceFleetsResponseTypeDef
 
@@ -5050,15 +4784,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListDeviceFleetsResponseTypeDef
 ```
 
-
 Required fields:
-- `DeviceFleetSummaries`: `List["DeviceFleetSummaryTypeDef"]`
 
-
+- `DeviceFleetSummaries`:
+  `List`\[[DeviceFleetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicefleetsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListDevicesResponseTypeDef
 
@@ -5066,15 +4799,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListDevicesResponseTypeDef
 ```
 
-
 Required fields:
-- `DeviceSummaries`: `List["DeviceSummaryTypeDef"]`
 
-
+- `DeviceSummaries`:
+  `List`\[[DeviceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicesummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListDomainsResponseTypeDef
 
@@ -5082,13 +4814,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListDomainsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Domains`: `List["DomainDetailsTypeDef"]`
-- `NextToken`: `str`
 
+- `Domains`:
+  `List`\[[DomainDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#domaindetailstypedef)\]
+- `NextToken`: `str`
 
 ## ListEdgePackagingJobsResponseTypeDef
 
@@ -5096,15 +4826,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListEdgePackagingJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `EdgePackagingJobSummaries`: `List["EdgePackagingJobSummaryTypeDef"]`
 
-
+- `EdgePackagingJobSummaries`:
+  `List`\[[EdgePackagingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgepackagingjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListEndpointConfigsOutputTypeDef
 
@@ -5112,14 +4841,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListEndpointConfigsOutputTypeDef
 ```
 
-
 Required fields:
-- `EndpointConfigs`: `List["EndpointConfigSummaryTypeDef"]`
+
+- `EndpointConfigs`:
+  `List`\[[EndpointConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointconfigsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListEndpointsOutputTypeDef
 
@@ -5127,14 +4855,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListEndpointsOutputTypeDef
 ```
 
-
 Required fields:
-- `Endpoints`: `List["EndpointSummaryTypeDef"]`
+
+- `Endpoints`:
+  `List`\[[EndpointSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListExperimentsResponseTypeDef
 
@@ -5142,13 +4869,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListExperimentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExperimentSummaries`: `List["ExperimentSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ExperimentSummaries`:
+  `List`\[[ExperimentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListFeatureGroupsResponseTypeDef
 
@@ -5156,13 +4881,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListFeatureGroupsResponseTypeDef
 ```
 
-
 Required fields:
-- `FeatureGroupSummaries`: `List["FeatureGroupSummaryTypeDef"]`
+
+- `FeatureGroupSummaries`:
+  `List`\[[FeatureGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuregroupsummarytypedef)\]
 - `NextToken`: `str`
-
-
-
 
 ## ListFlowDefinitionsResponseTypeDef
 
@@ -5170,15 +4893,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListFlowDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
-- `FlowDefinitionSummaries`: `List["FlowDefinitionSummaryTypeDef"]`
 
-
+- `FlowDefinitionSummaries`:
+  `List`\[[FlowDefinitionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#flowdefinitionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListHumanTaskUisResponseTypeDef
 
@@ -5186,15 +4908,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListHumanTaskUisResponseTypeDef
 ```
 
-
 Required fields:
-- `HumanTaskUiSummaries`: `List["HumanTaskUiSummaryTypeDef"]`
 
-
+- `HumanTaskUiSummaries`:
+  `List`\[[HumanTaskUiSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humantaskuisummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListHyperParameterTuningJobsResponseTypeDef
 
@@ -5202,15 +4923,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListHyperParameterTuningJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `HyperParameterTuningJobSummaries`: `List["HyperParameterTuningJobSummaryTypeDef"]`
 
-
+- `HyperParameterTuningJobSummaries`:
+  `List`\[[HyperParameterTuningJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListImageVersionsResponseTypeDef
 
@@ -5218,13 +4938,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListImageVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageVersions`: `List["ImageVersionTypeDef"]`
-- `NextToken`: `str`
 
+- `ImageVersions`:
+  `List`\[[ImageVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#imageversiontypedef)\]
+- `NextToken`: `str`
 
 ## ListImagesResponseTypeDef
 
@@ -5232,13 +4950,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListImagesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Images`: `List["ImageTypeDef"]`
-- `NextToken`: `str`
 
+- `Images`:
+  `List`\[[ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#imagetypedef)\]
+- `NextToken`: `str`
 
 ## ListLabelingJobsForWorkteamResponseTypeDef
 
@@ -5246,15 +4962,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListLabelingJobsForWorkteamResponseTypeDef
 ```
 
-
 Required fields:
-- `LabelingJobSummaryList`: `List["LabelingJobForWorkteamSummaryTypeDef"]`
 
-
+- `LabelingJobSummaryList`:
+  `List`\[[LabelingJobForWorkteamSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobforworkteamsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListLabelingJobsResponseTypeDef
 
@@ -5262,13 +4977,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListLabelingJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LabelingJobSummaryList`: `List["LabelingJobSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `LabelingJobSummaryList`:
+  `List`\[[LabelingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListModelBiasJobDefinitionsResponseTypeDef
 
@@ -5276,15 +4989,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListModelBiasJobDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
-- `JobDefinitionSummaries`: `List["MonitoringJobDefinitionSummaryTypeDef"]`
 
-
+- `JobDefinitionSummaries`:
+  `List`\[[MonitoringJobDefinitionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringjobdefinitionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListModelExplainabilityJobDefinitionsResponseTypeDef
 
@@ -5292,15 +5004,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListModelExplainabilityJobDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
-- `JobDefinitionSummaries`: `List["MonitoringJobDefinitionSummaryTypeDef"]`
 
-
+- `JobDefinitionSummaries`:
+  `List`\[[MonitoringJobDefinitionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringjobdefinitionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListModelPackageGroupsOutputTypeDef
 
@@ -5308,14 +5019,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListModelPackageGroupsOutputTypeDef
 ```
 
-
 Required fields:
-- `ModelPackageGroupSummaryList`: `List["ModelPackageGroupSummaryTypeDef"]`
+
+- `ModelPackageGroupSummaryList`:
+  `List`\[[ModelPackageGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagegroupsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListModelPackagesOutputTypeDef
 
@@ -5323,14 +5033,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListModelPackagesOutputTypeDef
 ```
 
-
 Required fields:
-- `ModelPackageSummaryList`: `List["ModelPackageSummaryTypeDef"]`
+
+- `ModelPackageSummaryList`:
+  `List`\[[ModelPackageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagesummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListModelQualityJobDefinitionsResponseTypeDef
 
@@ -5338,15 +5047,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListModelQualityJobDefinitionsResponseTypeDef
 ```
 
-
 Required fields:
-- `JobDefinitionSummaries`: `List["MonitoringJobDefinitionSummaryTypeDef"]`
 
-
+- `JobDefinitionSummaries`:
+  `List`\[[MonitoringJobDefinitionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringjobdefinitionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListModelsOutputTypeDef
 
@@ -5354,14 +5062,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListModelsOutputTypeDef
 ```
 
-
 Required fields:
-- `Models`: `List["ModelSummaryTypeDef"]`
+
+- `Models`:
+  `List`\[[ModelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListMonitoringExecutionsResponseTypeDef
 
@@ -5369,15 +5076,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListMonitoringExecutionsResponseTypeDef
 ```
 
-
 Required fields:
-- `MonitoringExecutionSummaries`: `List["MonitoringExecutionSummaryTypeDef"]`
 
-
+- `MonitoringExecutionSummaries`:
+  `List`\[[MonitoringExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringexecutionsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListMonitoringSchedulesResponseTypeDef
 
@@ -5385,15 +5091,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListMonitoringSchedulesResponseTypeDef
 ```
 
-
 Required fields:
-- `MonitoringScheduleSummaries`: `List["MonitoringScheduleSummaryTypeDef"]`
 
-
+- `MonitoringScheduleSummaries`:
+  `List`\[[MonitoringScheduleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringschedulesummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListNotebookInstanceLifecycleConfigsOutputTypeDef
 
@@ -5401,14 +5106,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListNotebookInstanceLifecycleConfigsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NextToken`: `str`
-- `NotebookInstanceLifecycleConfigs`: `List["NotebookInstanceLifecycleConfigSummaryTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `NotebookInstanceLifecycleConfigs`:
+  `List`\[[NotebookInstanceLifecycleConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecycleconfigsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListNotebookInstancesOutputTypeDef
 
@@ -5416,14 +5120,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListNotebookInstancesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NextToken`: `str`
-- `NotebookInstances`: `List["NotebookInstanceSummaryTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `NotebookInstances`:
+  `List`\[[NotebookInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancesummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListPipelineExecutionStepsResponseTypeDef
 
@@ -5431,13 +5134,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListPipelineExecutionStepsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineExecutionSteps`: `List["PipelineExecutionStepTypeDef"]`
-- `NextToken`: `str`
 
+- `PipelineExecutionSteps`:
+  `List`\[[PipelineExecutionStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelineexecutionsteptypedef)\]
+- `NextToken`: `str`
 
 ## ListPipelineExecutionsResponseTypeDef
 
@@ -5445,13 +5146,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListPipelineExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineExecutionSummaries`: `List["PipelineExecutionSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PipelineExecutionSummaries`:
+  `List`\[[PipelineExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelineexecutionsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListPipelineParametersForExecutionResponseTypeDef
 
@@ -5459,13 +5158,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListPipelineParametersForExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineParameters`: `List["ParameterTypeDef"]`
-- `NextToken`: `str`
 
+- `PipelineParameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parametertypedef)\]
+- `NextToken`: `str`
 
 ## ListPipelinesResponseTypeDef
 
@@ -5473,13 +5170,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListPipelinesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineSummaries`: `List["PipelineSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PipelineSummaries`:
+  `List`\[[PipelineSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelinesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListProcessingJobsResponseTypeDef
 
@@ -5487,15 +5182,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListProcessingJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `ProcessingJobSummaries`: `List["ProcessingJobSummaryTypeDef"]`
 
-
+- `ProcessingJobSummaries`:
+  `List`\[[ProcessingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListProjectsOutputTypeDef
 
@@ -5503,14 +5197,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListProjectsOutputTypeDef
 ```
 
-
 Required fields:
-- `ProjectSummaryList`: `List["ProjectSummaryTypeDef"]`
+
+- `ProjectSummaryList`:
+  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#projectsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListSubscribedWorkteamsResponseTypeDef
 
@@ -5518,15 +5211,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListSubscribedWorkteamsResponseTypeDef
 ```
 
-
 Required fields:
-- `SubscribedWorkteams`: `List["SubscribedWorkteamTypeDef"]`
 
-
+- `SubscribedWorkteams`:
+  `List`\[[SubscribedWorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#subscribedworkteamtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTagsOutputTypeDef
 
@@ -5534,14 +5226,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListTagsOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ListTrainingJobsForHyperParameterTuningJobResponseTypeDef
 
@@ -5549,15 +5240,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ListTrainingJobsForHyperParameterTuningJobResponseTypeDef
 ```
 
-
 Required fields:
-- `TrainingJobSummaries`: `List["HyperParameterTrainingJobSummaryTypeDef"]`
 
-
+- `TrainingJobSummaries`:
+  `List`\[[HyperParameterTrainingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTrainingJobsResponseTypeDef
 
@@ -5565,15 +5255,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListTrainingJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `TrainingJobSummaries`: `List["TrainingJobSummaryTypeDef"]`
 
-
+- `TrainingJobSummaries`:
+  `List`\[[TrainingJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTransformJobsResponseTypeDef
 
@@ -5581,15 +5270,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListTransformJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `TransformJobSummaries`: `List["TransformJobSummaryTypeDef"]`
 
-
+- `TransformJobSummaries`:
+  `List`\[[TransformJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformjobsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTrialComponentsResponseTypeDef
 
@@ -5597,13 +5285,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListTrialComponentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialComponentSummaries`: `List["TrialComponentSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `TrialComponentSummaries`:
+  `List`\[[TrialComponentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTrialsResponseTypeDef
 
@@ -5611,13 +5297,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListTrialsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialSummaries`: `List["TrialSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `TrialSummaries`:
+  `List`\[[TrialSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListUserProfilesResponseTypeDef
 
@@ -5625,13 +5309,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListUserProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserProfiles`: `List["UserProfileDetailsTypeDef"]`
-- `NextToken`: `str`
 
+- `UserProfiles`:
+  `List`\[[UserProfileDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#userprofiledetailstypedef)\]
+- `NextToken`: `str`
 
 ## ListWorkforcesResponseTypeDef
 
@@ -5639,15 +5321,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListWorkforcesResponseTypeDef
 ```
 
-
 Required fields:
-- `Workforces`: `List["WorkforceTypeDef"]`
 
-
+- `Workforces`:
+  `List`\[[WorkforceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workforcetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListWorkteamsResponseTypeDef
 
@@ -5655,15 +5336,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ListWorkteamsResponseTypeDef
 ```
 
-
 Required fields:
-- `Workteams`: `List["WorkteamTypeDef"]`
 
-
+- `Workteams`:
+  `List`\[[WorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workteamtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## MemberDefinitionTypeDef
 
@@ -5671,13 +5351,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MemberDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CognitoMemberDefinition`: `"CognitoMemberDefinitionTypeDef"`
-- `OidcMemberDefinition`: `"OidcMemberDefinitionTypeDef"`
 
+- `CognitoMemberDefinition`:
+  [CognitoMemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#cognitomemberdefinitiontypedef)
+- `OidcMemberDefinition`:
+  [OidcMemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcmemberdefinitiontypedef)
 
 ## MetadataPropertiesTypeDef
 
@@ -5685,15 +5364,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MetadataPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CommitId`: `str`
 - `Repository`: `str`
 - `GeneratedBy`: `str`
 - `ProjectId`: `str`
-
 
 ## MetricDataTypeDef
 
@@ -5701,14 +5377,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MetricDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricName`: `str`
 - `Value`: `float`
 - `Timestamp`: `datetime`
-
 
 ## MetricDefinitionTypeDef
 
@@ -5716,13 +5389,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MetricDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Regex`: `str`
-
-
-
 
 ## MetricsSourceTypeDef
 
@@ -5730,16 +5400,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MetricsSourceTypeDef
 ```
 
-
 Required fields:
+
 - `ContentType`: `str`
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `ContentDigest`: `str`
 
+- `ContentDigest`: `str`
 
 ## ModelArtifactsTypeDef
 
@@ -5747,12 +5415,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelArtifactsTypeDef
 ```
 
-
 Required fields:
+
 - `S3ModelArtifacts`: `str`
-
-
-
 
 ## ModelBiasAppSpecificationTypeDef
 
@@ -5760,16 +5425,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelBiasAppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 - `ConfigUri`: `str`
 
-
-
 Optional fields:
-- `Environment`: `Dict[str, str]`
 
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelBiasBaselineConfigTypeDef
 
@@ -5777,13 +5440,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelBiasBaselineConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseliningJobName`: `str`
-- `ConstraintsResource`: `"MonitoringConstraintsResourceTypeDef"`
 
+- `BaseliningJobName`: `str`
+- `ConstraintsResource`:
+  [MonitoringConstraintsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringconstraintsresourcetypedef)
 
 ## ModelBiasJobInputTypeDef
 
@@ -5791,13 +5452,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelBiasJobInputTypeDef
 ```
 
-
 Required fields:
-- `EndpointInput`: `"EndpointInputTypeDef"`
-- `GroundTruthS3Input`: `"MonitoringGroundTruthS3InputTypeDef"`
 
-
-
+- `EndpointInput`:
+  [EndpointInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointinputtypedef)
+- `GroundTruthS3Input`:
+  [MonitoringGroundTruthS3InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringgroundtruths3inputtypedef)
 
 ## ModelClientConfigTypeDef
 
@@ -5805,13 +5465,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelClientConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InvocationsTimeoutInSeconds`: `int`
 - `InvocationsMaxRetries`: `int`
-
 
 ## ModelDataQualityTypeDef
 
@@ -5819,13 +5476,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelDataQualityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Statistics`: `"MetricsSourceTypeDef"`
-- `Constraints`: `"MetricsSourceTypeDef"`
 
+- `Statistics`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
+- `Constraints`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
 
 ## ModelDigestsTypeDef
 
@@ -5833,12 +5489,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelDigestsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ArtifactDigest`: `str`
 
+- `ArtifactDigest`: `str`
 
 ## ModelExplainabilityAppSpecificationTypeDef
 
@@ -5846,16 +5499,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelExplainabilityAppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 - `ConfigUri`: `str`
 
-
-
 Optional fields:
-- `Environment`: `Dict[str, str]`
 
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelExplainabilityBaselineConfigTypeDef
 
@@ -5863,13 +5514,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelExplainabilityBaselineConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseliningJobName`: `str`
-- `ConstraintsResource`: `"MonitoringConstraintsResourceTypeDef"`
 
+- `BaseliningJobName`: `str`
+- `ConstraintsResource`:
+  [MonitoringConstraintsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringconstraintsresourcetypedef)
 
 ## ModelExplainabilityJobInputTypeDef
 
@@ -5877,12 +5526,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelExplainabilityJobInputTypeDef
 ```
 
-
 Required fields:
-- `EndpointInput`: `"EndpointInputTypeDef"`
 
-
-
+- `EndpointInput`:
+  [EndpointInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointinputtypedef)
 
 ## ModelMetricsTypeDef
 
@@ -5890,15 +5537,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelQuality`: `"ModelQualityTypeDef"`
-- `ModelDataQuality`: `"ModelDataQualityTypeDef"`
-- `Bias`: `"BiasTypeDef"`
-- `Explainability`: `"ExplainabilityTypeDef"`
 
+- `ModelQuality`:
+  [ModelQualityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualitytypedef)
+- `ModelDataQuality`:
+  [ModelDataQualityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldataqualitytypedef)
+- `Bias`:
+  [BiasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#biastypedef)
+- `Explainability`:
+  [ExplainabilityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#explainabilitytypedef)
 
 ## ModelPackageContainerDefinitionTypeDef
 
@@ -5906,18 +5554,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageContainerDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Image`: `str`
 
-
-
 Optional fields:
+
 - `ContainerHostname`: `str`
 - `ImageDigest`: `str`
 - `ModelDataUrl`: `str`
 - `ProductId`: `str`
-
 
 ## ModelPackageGroupSummaryTypeDef
 
@@ -5925,18 +5571,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageGroupSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageGroupName`: `str`
 - `ModelPackageGroupArn`: `str`
 - `CreationTime`: `datetime`
-- `ModelPackageGroupStatus`: `ModelPackageGroupStatus`
-
-
+- `ModelPackageGroupStatus`:
+  [ModelPackageGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupstatus)
 
 Optional fields:
-- `ModelPackageGroupDescription`: `str`
 
+- `ModelPackageGroupDescription`: `str`
 
 ## ModelPackageGroupTypeDef
 
@@ -5944,18 +5589,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelPackageGroupName`: `str`
 - `ModelPackageGroupArn`: `str`
 - `ModelPackageGroupDescription`: `str`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `ModelPackageGroupStatus`: `ModelPackageGroupStatus`
-- `Tags`: `List["TagTypeDef"]`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `ModelPackageGroupStatus`:
+  [ModelPackageGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupstatus)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ModelPackageStatusDetailsTypeDef
 
@@ -5963,15 +5608,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageStatusDetailsTypeDef
 ```
 
-
 Required fields:
-- `ValidationStatuses`: `List["ModelPackageStatusItemTypeDef"]`
 
-
+- `ValidationStatuses`:
+  `List`\[[ModelPackageStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagestatusitemtypedef)\]
 
 Optional fields:
-- `ImageScanStatuses`: `List["ModelPackageStatusItemTypeDef"]`
 
+- `ImageScanStatuses`:
+  `List`\[[ModelPackageStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagestatusitemtypedef)\]
 
 ## ModelPackageStatusItemTypeDef
 
@@ -5979,16 +5624,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageStatusItemTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Status`: `DetailedModelPackageStatus`
-
-
+- `Status`:
+  [DetailedModelPackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#detailedmodelpackagestatus)
 
 Optional fields:
-- `FailureReason`: `str`
 
+- `FailureReason`: `str`
 
 ## ModelPackageSummaryTypeDef
 
@@ -5996,21 +5640,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageName`: `str`
 - `ModelPackageArn`: `str`
 - `CreationTime`: `datetime`
-- `ModelPackageStatus`: `ModelPackageStatus`
-
-
+- `ModelPackageStatus`:
+  [ModelPackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagestatus)
 
 Optional fields:
+
 - `ModelPackageGroupName`: `str`
 - `ModelPackageVersion`: `int`
 - `ModelPackageDescription`: `str`
-- `ModelApprovalStatus`: `ModelApprovalStatus`
-
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
 
 ## ModelPackageTypeDef
 
@@ -6018,31 +5662,39 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelPackageName`: `str`
 - `ModelPackageGroupName`: `str`
 - `ModelPackageVersion`: `int`
 - `ModelPackageArn`: `str`
 - `ModelPackageDescription`: `str`
 - `CreationTime`: `datetime`
-- `InferenceSpecification`: `"InferenceSpecificationTypeDef"`
-- `SourceAlgorithmSpecification`: `"SourceAlgorithmSpecificationTypeDef"`
-- `ValidationSpecification`: `"ModelPackageValidationSpecificationTypeDef"`
-- `ModelPackageStatus`: `ModelPackageStatus`
-- `ModelPackageStatusDetails`: `"ModelPackageStatusDetailsTypeDef"`
+- `InferenceSpecification`:
+  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+- `SourceAlgorithmSpecification`:
+  [SourceAlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourcealgorithmspecificationtypedef)
+- `ValidationSpecification`:
+  [ModelPackageValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagevalidationspecificationtypedef)
+- `ModelPackageStatus`:
+  [ModelPackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagestatus)
+- `ModelPackageStatusDetails`:
+  [ModelPackageStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagestatusdetailstypedef)
 - `CertifyForMarketplace`: `bool`
-- `ModelApprovalStatus`: `ModelApprovalStatus`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-- `ModelMetrics`: `"ModelMetricsTypeDef"`
+- `ModelApprovalStatus`:
+  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `ModelMetrics`:
+  [ModelMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelmetricstypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `ApprovalDescription`: `str`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ModelPackageValidationProfileTypeDef
 
@@ -6050,13 +5702,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageValidationProfileTypeDef
 ```
 
-
 Required fields:
+
 - `ProfileName`: `str`
-- `TransformJobDefinition`: `"TransformJobDefinitionTypeDef"`
-
-
-
+- `TransformJobDefinition`:
+  [TransformJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformjobdefinitiontypedef)
 
 ## ModelPackageValidationSpecificationTypeDef
 
@@ -6064,13 +5714,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelPackageValidationSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ValidationRole`: `str`
-- `ValidationProfiles`: `List["ModelPackageValidationProfileTypeDef"]`
-
-
-
+- `ValidationProfiles`:
+  `List`\[[ModelPackageValidationProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagevalidationprofiletypedef)\]
 
 ## ModelQualityAppSpecificationTypeDef
 
@@ -6078,20 +5726,19 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelQualityAppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 
-
-
 Optional fields:
-- `ContainerEntrypoint`: `List[str]`
-- `ContainerArguments`: `List[str]`
+
+- `ContainerEntrypoint`: `List`\[`str`\]
+- `ContainerArguments`: `List`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
-- `ProblemType`: `MonitoringProblemType`
-- `Environment`: `Dict[str, str]`
-
+- `ProblemType`:
+  [MonitoringProblemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringproblemtype)
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelQualityBaselineConfigTypeDef
 
@@ -6099,13 +5746,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelQualityBaselineConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseliningJobName`: `str`
-- `ConstraintsResource`: `"MonitoringConstraintsResourceTypeDef"`
 
+- `BaseliningJobName`: `str`
+- `ConstraintsResource`:
+  [MonitoringConstraintsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringconstraintsresourcetypedef)
 
 ## ModelQualityJobInputTypeDef
 
@@ -6113,13 +5758,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelQualityJobInputTypeDef
 ```
 
-
 Required fields:
-- `EndpointInput`: `"EndpointInputTypeDef"`
-- `GroundTruthS3Input`: `"MonitoringGroundTruthS3InputTypeDef"`
 
-
-
+- `EndpointInput`:
+  [EndpointInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointinputtypedef)
+- `GroundTruthS3Input`:
+  [MonitoringGroundTruthS3InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringgroundtruths3inputtypedef)
 
 ## ModelQualityTypeDef
 
@@ -6127,13 +5771,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ModelQualityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Statistics`: `"MetricsSourceTypeDef"`
-- `Constraints`: `"MetricsSourceTypeDef"`
 
+- `Statistics`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
+- `Constraints`:
+  [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
 
 ## ModelStepMetadataTypeDef
 
@@ -6141,12 +5784,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## ModelSummaryTypeDef
 
@@ -6154,14 +5794,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ModelSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `CreationTime`: `datetime`
-
-
-
 
 ## MonitoringAppSpecificationTypeDef
 
@@ -6169,18 +5806,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringAppSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `ImageUri`: `str`
 
-
-
 Optional fields:
-- `ContainerEntrypoint`: `List[str]`
-- `ContainerArguments`: `List[str]`
+
+- `ContainerEntrypoint`: `List`\[`str`\]
+- `ContainerArguments`: `List`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
-
 
 ## MonitoringBaselineConfigTypeDef
 
@@ -6188,14 +5823,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringBaselineConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaseliningJobName`: `str`
-- `ConstraintsResource`: `"MonitoringConstraintsResourceTypeDef"`
-- `StatisticsResource`: `"MonitoringStatisticsResourceTypeDef"`
 
+- `BaseliningJobName`: `str`
+- `ConstraintsResource`:
+  [MonitoringConstraintsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringconstraintsresourcetypedef)
+- `StatisticsResource`:
+  [MonitoringStatisticsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstatisticsresourcetypedef)
 
 ## MonitoringClusterConfigTypeDef
 
@@ -6203,17 +5837,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringClusterConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceCount`: `int`
-- `InstanceType`: `ProcessingInstanceType`
+- `InstanceType`:
+  [ProcessingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processinginstancetype)
 - `VolumeSizeInGB`: `int`
 
-
-
 Optional fields:
-- `VolumeKmsKeyId`: `str`
 
+- `VolumeKmsKeyId`: `str`
 
 ## MonitoringConstraintsResourceTypeDef
 
@@ -6221,12 +5854,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringConstraintsResourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Uri`: `str`
 
+- `S3Uri`: `str`
 
 ## MonitoringExecutionSummaryTypeDef
 
@@ -6234,23 +5864,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringExecutionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringScheduleName`: `str`
 - `ScheduledTime`: `datetime`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringExecutionStatus`: `ExecutionStatus`
-
-
+- `MonitoringExecutionStatus`:
+  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#executionstatus)
 
 Optional fields:
+
 - `ProcessingJobArn`: `str`
 - `EndpointName`: `str`
 - `FailureReason`: `str`
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: `MonitoringType`
-
+- `MonitoringType`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
 
 ## MonitoringGroundTruthS3InputTypeDef
 
@@ -6258,12 +5888,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringGroundTruthS3InputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Uri`: `str`
 
+- `S3Uri`: `str`
 
 ## MonitoringInputTypeDef
 
@@ -6271,12 +5898,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringInputTypeDef
 ```
 
-
 Required fields:
-- `EndpointInput`: `"EndpointInputTypeDef"`
 
-
-
+- `EndpointInput`:
+  [EndpointInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointinputtypedef)
 
 ## MonitoringJobDefinitionSummaryTypeDef
 
@@ -6284,15 +5909,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringJobDefinitionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringJobDefinitionArn`: `str`
 - `CreationTime`: `datetime`
 - `EndpointName`: `str`
-
-
-
 
 ## MonitoringJobDefinitionTypeDef
 
@@ -6300,22 +5922,27 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringJobDefinitionTypeDef
 ```
 
-
 Required fields:
-- `MonitoringInputs`: `List["MonitoringInputTypeDef"]`
-- `MonitoringOutputConfig`: `"MonitoringOutputConfigTypeDef"`
-- `MonitoringResources`: `"MonitoringResourcesTypeDef"`
-- `MonitoringAppSpecification`: `"MonitoringAppSpecificationTypeDef"`
+
+- `MonitoringInputs`:
+  `List`\[[MonitoringInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringinputtypedef)\]
+- `MonitoringOutputConfig`:
+  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+- `MonitoringResources`:
+  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+- `MonitoringAppSpecification`:
+  [MonitoringAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringappspecificationtypedef)
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `BaselineConfig`: `"MonitoringBaselineConfigTypeDef"`
-- `StoppingCondition`: `"MonitoringStoppingConditionTypeDef"`
-- `Environment`: `Dict[str, str]`
-- `NetworkConfig`: `"NetworkConfigTypeDef"`
 
+- `BaselineConfig`:
+  [MonitoringBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringbaselineconfigtypedef)
+- `StoppingCondition`:
+  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `NetworkConfig`:
+  [NetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#networkconfigtypedef)
 
 ## MonitoringNetworkConfigTypeDef
 
@@ -6323,14 +5950,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringNetworkConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableNetworkIsolation`: `bool`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 
 ## MonitoringOutputConfigTypeDef
 
@@ -6338,15 +5963,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringOutputConfigTypeDef
 ```
 
-
 Required fields:
-- `MonitoringOutputs`: `List["MonitoringOutputTypeDef"]`
 
-
+- `MonitoringOutputs`:
+  `List`\[[MonitoringOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputtypedef)\]
 
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## MonitoringOutputTypeDef
 
@@ -6354,13 +5978,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringOutputTypeDef
 ```
 
-
 Required fields:
-- `S3Output`: `"MonitoringS3OutputTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `S3Output`:
+  [MonitoringS3OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitorings3outputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## MonitoringResourcesTypeDef
 
@@ -6368,12 +5991,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringResourcesTypeDef
 ```
 
-
 Required fields:
-- `ClusterConfig`: `"MonitoringClusterConfigTypeDef"`
 
-
-
+- `ClusterConfig`:
+  [MonitoringClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringclusterconfigtypedef)
 
 ## MonitoringS3OutputTypeDef
 
@@ -6381,15 +6002,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringS3OutputTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 - `LocalPath`: `str`
-- `S3UploadMode`: `ProcessingS3UploadMode`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `S3UploadMode`:
+  [ProcessingS3UploadMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3uploadmode)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## MonitoringScheduleConfigTypeDef
 
@@ -6397,15 +6017,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringScheduleConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ScheduleConfig`: `"ScheduleConfigTypeDef"`
-- `MonitoringJobDefinition`: `"MonitoringJobDefinitionTypeDef"`
-- `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: `MonitoringType`
 
+- `ScheduleConfig`:
+  [ScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#scheduleconfigtypedef)
+- `MonitoringJobDefinition`:
+  [MonitoringJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringjobdefinitiontypedef)
+- `MonitoringJobDefinitionName`: `str`
+- `MonitoringType`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
 
 ## MonitoringScheduleSummaryTypeDef
 
@@ -6413,21 +6033,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringScheduleSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringScheduleName`: `str`
 - `MonitoringScheduleArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringScheduleStatus`: `ScheduleStatus`
-
-
+- `MonitoringScheduleStatus`:
+  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
 
 Optional fields:
+
 - `EndpointName`: `str`
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: `MonitoringType`
-
+- `MonitoringType`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
 
 ## MonitoringScheduleTypeDef
 
@@ -6435,22 +6055,24 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringScheduleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MonitoringScheduleArn`: `str`
 - `MonitoringScheduleName`: `str`
-- `MonitoringScheduleStatus`: `ScheduleStatus`
-- `MonitoringType`: `MonitoringType`
+- `MonitoringScheduleStatus`:
+  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
+- `MonitoringType`:
+  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
 - `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringScheduleConfig`: `"MonitoringScheduleConfigTypeDef"`
+- `MonitoringScheduleConfig`:
+  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
 - `EndpointName`: `str`
-- `LastMonitoringExecutionSummary`: `"MonitoringExecutionSummaryTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `LastMonitoringExecutionSummary`:
+  [MonitoringExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringexecutionsummarytypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## MonitoringStatisticsResourceTypeDef
 
@@ -6458,12 +6080,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringStatisticsResourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Uri`: `str`
 
+- `S3Uri`: `str`
 
 ## MonitoringStoppingConditionTypeDef
 
@@ -6471,12 +6090,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import MonitoringStoppingConditionTypeDef
 ```
 
-
 Required fields:
+
 - `MaxRuntimeInSeconds`: `int`
-
-
-
 
 ## MultiModelConfigTypeDef
 
@@ -6484,12 +6100,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import MultiModelConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelCacheSetting`: `ModelCacheSetting`
 
+- `ModelCacheSetting`:
+  [ModelCacheSetting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelcachesetting)
 
 ## NestedFiltersTypeDef
 
@@ -6497,13 +6111,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import NestedFiltersTypeDef
 ```
 
-
 Required fields:
+
 - `NestedPropertyName`: `str`
-- `Filters`: `List["FilterTypeDef"]`
-
-
-
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#filtertypedef)\]
 
 ## NetworkConfigTypeDef
 
@@ -6511,14 +6123,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import NetworkConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableNetworkIsolation`: `bool`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
 
 ## NotebookInstanceLifecycleConfigSummaryTypeDef
 
@@ -6526,17 +6136,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import NotebookInstanceLifecycleConfigSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceLifecycleConfigName`: `str`
 - `NotebookInstanceLifecycleConfigArn`: `str`
 
-
-
 Optional fields:
+
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## NotebookInstanceLifecycleHookTypeDef
 
@@ -6544,12 +6152,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import NotebookInstanceLifecycleHookTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Content`: `str`
 
+- `Content`: `str`
 
 ## NotebookInstanceSummaryTypeDef
 
@@ -6557,23 +6162,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import NotebookInstanceSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookInstanceName`: `str`
 - `NotebookInstanceArn`: `str`
 
-
-
 Optional fields:
-- `NotebookInstanceStatus`: `NotebookInstanceStatus`
+
+- `NotebookInstanceStatus`:
+  [NotebookInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancestatus)
 - `Url`: `str`
-- `InstanceType`: `InstanceType`
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `NotebookInstanceLifecycleConfigName`: `str`
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List[str]`
-
+- `AdditionalCodeRepositories`: `List`\[`str`\]
 
 ## NotificationConfigurationTypeDef
 
@@ -6581,12 +6186,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import NotificationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NotificationTopicArn`: `str`
 
+- `NotificationTopicArn`: `str`
 
 ## ObjectiveStatusCountersTypeDef
 
@@ -6594,14 +6196,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ObjectiveStatusCountersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Succeeded`: `int`
 - `Pending`: `int`
 - `Failed`: `int`
-
 
 ## OfflineStoreConfigTypeDef
 
@@ -6609,16 +6208,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OfflineStoreConfigTypeDef
 ```
 
-
 Required fields:
-- `S3StorageConfig`: `"S3StorageConfigTypeDef"`
 
-
+- `S3StorageConfig`:
+  [S3StorageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#s3storageconfigtypedef)
 
 Optional fields:
-- `DisableGlueTableCreation`: `bool`
-- `DataCatalogConfig`: `"DataCatalogConfigTypeDef"`
 
+- `DisableGlueTableCreation`: `bool`
+- `DataCatalogConfig`:
+  [DataCatalogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacatalogconfigtypedef)
 
 ## OfflineStoreStatusTypeDef
 
@@ -6626,15 +6225,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OfflineStoreStatusTypeDef
 ```
 
-
 Required fields:
-- `Status`: `OfflineStoreStatusValue`
 
-
+- `Status`:
+  [OfflineStoreStatusValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#offlinestorestatusvalue)
 
 Optional fields:
-- `BlockedReason`: `str`
 
+- `BlockedReason`: `str`
 
 ## OidcConfigForResponseTypeDef
 
@@ -6642,10 +6240,8 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OidcConfigForResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientId`: `str`
 - `Issuer`: `str`
 - `AuthorizationEndpoint`: `str`
@@ -6654,15 +6250,14 @@ Optional fields:
 - `LogoutEndpoint`: `str`
 - `JwksUri`: `str`
 
-
 ## OidcConfigTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import OidcConfigTypeDef
 ```
 
-
 Required fields:
+
 - `ClientId`: `str`
 - `ClientSecret`: `str`
 - `Issuer`: `str`
@@ -6672,21 +6267,15 @@ Required fields:
 - `LogoutEndpoint`: `str`
 - `JwksUri`: `str`
 
-
-
-
 ## OidcMemberDefinitionTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import OidcMemberDefinitionTypeDef
 ```
 
-
 Required fields:
-- `Groups`: `List[str]`
 
-
-
+- `Groups`: `List`\[`str`\]
 
 ## OnlineStoreConfigTypeDef
 
@@ -6694,13 +6283,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import OnlineStoreConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SecurityConfig`: `"OnlineStoreSecurityConfigTypeDef"`
-- `EnableOnlineStore`: `bool`
 
+- `SecurityConfig`:
+  [OnlineStoreSecurityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#onlinestoresecurityconfigtypedef)
+- `EnableOnlineStore`: `bool`
 
 ## OnlineStoreSecurityConfigTypeDef
 
@@ -6708,12 +6295,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OnlineStoreSecurityConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## OutputConfigTypeDef
 
@@ -6721,18 +6305,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputLocation`: `str`
 
-
-
 Optional fields:
-- `TargetDevice`: `TargetDevice`
-- `TargetPlatform`: `"TargetPlatformTypeDef"`
+
+- `TargetDevice`:
+  [TargetDevice](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetdevice)
+- `TargetPlatform`:
+  [TargetPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#targetplatformtypedef)
 - `CompilerOptions`: `str`
 - `KmsKeyId`: `str`
-
 
 ## OutputDataConfigTypeDef
 
@@ -6740,15 +6324,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import OutputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -6756,14 +6338,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterRangeTypeDef
 
@@ -6771,14 +6350,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ParameterRangeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IntegerParameterRangeSpecification`: `"IntegerParameterRangeSpecificationTypeDef"`
-- `ContinuousParameterRangeSpecification`: `"ContinuousParameterRangeSpecificationTypeDef"`
-- `CategoricalParameterRangeSpecification`: `"CategoricalParameterRangeSpecificationTypeDef"`
 
+- `IntegerParameterRangeSpecification`:
+  [IntegerParameterRangeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#integerparameterrangespecificationtypedef)
+- `ContinuousParameterRangeSpecification`:
+  [ContinuousParameterRangeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#continuousparameterrangespecificationtypedef)
+- `CategoricalParameterRangeSpecification`:
+  [CategoricalParameterRangeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#categoricalparameterrangespecificationtypedef)
 
 ## ParameterRangesTypeDef
 
@@ -6786,14 +6365,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ParameterRangesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IntegerParameterRanges`: `List["IntegerParameterRangeTypeDef"]`
-- `ContinuousParameterRanges`: `List["ContinuousParameterRangeTypeDef"]`
-- `CategoricalParameterRanges`: `List["CategoricalParameterRangeTypeDef"]`
 
+- `IntegerParameterRanges`:
+  `List`\[[IntegerParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#integerparameterrangetypedef)\]
+- `ContinuousParameterRanges`:
+  `List`\[[ContinuousParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#continuousparameterrangetypedef)\]
+- `CategoricalParameterRanges`:
+  `List`\[[CategoricalParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#categoricalparameterrangetypedef)\]
 
 ## ParameterTypeDef
 
@@ -6801,13 +6380,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ParameterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## ParentHyperParameterTuningJobTypeDef
 
@@ -6815,12 +6391,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ParentHyperParameterTuningJobTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HyperParameterTuningJobName`: `str`
 
+- `HyperParameterTuningJobName`: `str`
 
 ## ParentTypeDef
 
@@ -6828,13 +6401,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ParentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialName`: `str`
 - `ExperimentName`: `str`
-
 
 ## PipelineExecutionStepMetadataTypeDef
 
@@ -6842,17 +6412,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PipelineExecutionStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrainingJob`: `"TrainingJobStepMetadataTypeDef"`
-- `ProcessingJob`: `"ProcessingJobStepMetadataTypeDef"`
-- `TransformJob`: `"TransformJobStepMetadataTypeDef"`
-- `Model`: `"ModelStepMetadataTypeDef"`
-- `RegisterModel`: `"RegisterModelStepMetadataTypeDef"`
-- `Condition`: `"ConditionStepMetadataTypeDef"`
 
+- `TrainingJob`:
+  [TrainingJobStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobstepmetadatatypedef)
+- `ProcessingJob`:
+  [ProcessingJobStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingjobstepmetadatatypedef)
+- `TransformJob`:
+  [TransformJobStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformjobstepmetadatatypedef)
+- `Model`:
+  [ModelStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelstepmetadatatypedef)
+- `RegisterModel`:
+  [RegisterModelStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#registermodelstepmetadatatypedef)
+- `Condition`:
+  [ConditionStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#conditionstepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
@@ -6860,18 +6433,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PipelineExecutionStepTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StepName`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `StepStatus`: `StepStatus`
-- `CacheHitResult`: `"CacheHitResultTypeDef"`
+- `StepStatus`:
+  [StepStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#stepstatus)
+- `CacheHitResult`:
+  [CacheHitResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#cachehitresulttypedef)
 - `FailureReason`: `str`
-- `Metadata`: `"PipelineExecutionStepMetadataTypeDef"`
-
+- `Metadata`:
+  [PipelineExecutionStepMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelineexecutionstepmetadatatypedef)
 
 ## PipelineExecutionSummaryTypeDef
 
@@ -6879,16 +6452,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PipelineExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineExecutionArn`: `str`
 - `StartTime`: `datetime`
-- `PipelineExecutionStatus`: `PipelineExecutionStatus`
+- `PipelineExecutionStatus`:
+  [PipelineExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#pipelineexecutionstatus)
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
-
 
 ## PipelineExecutionTypeDef
 
@@ -6896,21 +6467,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PipelineExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineArn`: `str`
 - `PipelineExecutionArn`: `str`
 - `PipelineExecutionDisplayName`: `str`
-- `PipelineExecutionStatus`: `PipelineExecutionStatus`
+- `PipelineExecutionStatus`:
+  [PipelineExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#pipelineexecutionstatus)
 - `PipelineExecutionDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `PipelineParameters`: `List["ParameterTypeDef"]`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `PipelineParameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parametertypedef)\]
 
 ## PipelineSummaryTypeDef
 
@@ -6918,10 +6490,8 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PipelineSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineArn`: `str`
 - `PipelineName`: `str`
 - `PipelineDisplayName`: `str`
@@ -6931,17 +6501,14 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `LastExecutionTime`: `datetime`
 
-
 ## PipelineTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import PipelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PipelineArn`: `str`
 - `PipelineName`: `str`
 - `PipelineDisplayName`: `str`
@@ -6951,10 +6518,12 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastRunTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ProcessingClusterConfigTypeDef
 
@@ -6962,17 +6531,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingClusterConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceCount`: `int`
-- `InstanceType`: `ProcessingInstanceType`
+- `InstanceType`:
+  [ProcessingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processinginstancetype)
 - `VolumeSizeInGB`: `int`
 
-
-
 Optional fields:
-- `VolumeKmsKeyId`: `str`
 
+- `VolumeKmsKeyId`: `str`
 
 ## ProcessingFeatureStoreOutputTypeDef
 
@@ -6980,13 +6548,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingFeatureStoreOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FeatureGroupName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ProcessingInputTypeDef
 
@@ -6994,17 +6560,17 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingInputTypeDef
 ```
 
-
 Required fields:
+
 - `InputName`: `str`
 
-
-
 Optional fields:
-- `AppManaged`: `bool`
-- `S3Input`: `"ProcessingS3InputTypeDef"`
-- `DatasetDefinition`: `"DatasetDefinitionTypeDef"`
 
+- `AppManaged`: `bool`
+- `S3Input`:
+  [ProcessingS3InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processings3inputtypedef)
+- `DatasetDefinition`:
+  [DatasetDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datasetdefinitiontypedef)
 
 ## ProcessingJobStepMetadataTypeDef
 
@@ -7012,12 +6578,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingJobStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## ProcessingJobSummaryTypeDef
 
@@ -7025,21 +6588,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ProcessingJobName`: `str`
 - `ProcessingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `ProcessingJobStatus`: `ProcessingJobStatus`
-
-
+- `ProcessingJobStatus`:
+  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
 
 Optional fields:
+
 - `ProcessingEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `ExitMessage`: `str`
-
 
 ## ProcessingJobTypeDef
 
@@ -7047,22 +6609,28 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingJobTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProcessingInputs`: `List["ProcessingInputTypeDef"]`
-- `ProcessingOutputConfig`: `"ProcessingOutputConfigTypeDef"`
+
+- `ProcessingInputs`:
+  `List`\[[ProcessingInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processinginputtypedef)\]
+- `ProcessingOutputConfig`:
+  [ProcessingOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingoutputconfigtypedef)
 - `ProcessingJobName`: `str`
-- `ProcessingResources`: `"ProcessingResourcesTypeDef"`
-- `StoppingCondition`: `"ProcessingStoppingConditionTypeDef"`
-- `AppSpecification`: `"AppSpecificationTypeDef"`
-- `Environment`: `Dict[str, str]`
-- `NetworkConfig`: `"NetworkConfigTypeDef"`
+- `ProcessingResources`:
+  [ProcessingResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingresourcestypedef)
+- `StoppingCondition`:
+  [ProcessingStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingstoppingconditiontypedef)
+- `AppSpecification`:
+  [AppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appspecificationtypedef)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `NetworkConfig`:
+  [NetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#networkconfigtypedef)
 - `RoleArn`: `str`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
 - `ProcessingJobArn`: `str`
-- `ProcessingJobStatus`: `ProcessingJobStatus`
+- `ProcessingJobStatus`:
+  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
 - `ExitMessage`: `str`
 - `FailureReason`: `str`
 - `ProcessingEndTime`: `datetime`
@@ -7072,8 +6640,8 @@ Optional fields:
 - `MonitoringScheduleArn`: `str`
 - `AutoMLJobArn`: `str`
 - `TrainingJobArn`: `str`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## ProcessingOutputConfigTypeDef
 
@@ -7081,15 +6649,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingOutputConfigTypeDef
 ```
 
-
 Required fields:
-- `Outputs`: `List["ProcessingOutputTypeDef"]`
 
-
+- `Outputs`:
+  `List`\[[ProcessingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingoutputtypedef)\]
 
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## ProcessingOutputTypeDef
 
@@ -7097,16 +6664,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingOutputTypeDef
 ```
 
-
 Required fields:
+
 - `OutputName`: `str`
-- `S3Output`: `"ProcessingS3OutputTypeDef"`
-- `FeatureStoreOutput`: `"ProcessingFeatureStoreOutputTypeDef"`
+- `S3Output`:
+  [ProcessingS3OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processings3outputtypedef)
+- `FeatureStoreOutput`:
+  [ProcessingFeatureStoreOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingfeaturestoreoutputtypedef)
 - `AppManaged`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ProcessingResourcesTypeDef
 
@@ -7114,12 +6681,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingResourcesTypeDef
 ```
 
-
 Required fields:
-- `ClusterConfig`: `"ProcessingClusterConfigTypeDef"`
 
-
-
+- `ClusterConfig`:
+  [ProcessingClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingclusterconfigtypedef)
 
 ## ProcessingS3InputTypeDef
 
@@ -7127,19 +6692,21 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingS3InputTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
-- `S3DataType`: `ProcessingS3DataType`
-
-
+- `S3DataType`:
+  [ProcessingS3DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3datatype)
 
 Optional fields:
-- `LocalPath`: `str`
-- `S3InputMode`: `ProcessingS3InputMode`
-- `S3DataDistributionType`: `ProcessingS3DataDistributionType`
-- `S3CompressionType`: `ProcessingS3CompressionType`
 
+- `LocalPath`: `str`
+- `S3InputMode`:
+  [ProcessingS3InputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3inputmode)
+- `S3DataDistributionType`:
+  [ProcessingS3DataDistributionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3datadistributiontype)
+- `S3CompressionType`:
+  [ProcessingS3CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3compressiontype)
 
 ## ProcessingS3OutputTypeDef
 
@@ -7147,15 +6714,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingS3OutputTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 - `LocalPath`: `str`
-- `S3UploadMode`: `ProcessingS3UploadMode`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `S3UploadMode`:
+  [ProcessingS3UploadMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processings3uploadmode)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## ProcessingStoppingConditionTypeDef
 
@@ -7163,12 +6729,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ProcessingStoppingConditionTypeDef
 ```
 
-
 Required fields:
+
 - `MaxRuntimeInSeconds`: `int`
-
-
-
 
 ## ProductionVariantCoreDumpConfigTypeDef
 
@@ -7176,15 +6739,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ProductionVariantCoreDumpConfigTypeDef
 ```
 
-
 Required fields:
+
 - `DestinationS3Uri`: `str`
 
-
-
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## ProductionVariantSummaryTypeDef
 
@@ -7192,19 +6753,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProductionVariantSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `VariantName`: `str`
 
-
-
 Optional fields:
-- `DeployedImages`: `List["DeployedImageTypeDef"]`
+
+- `DeployedImages`:
+  `List`\[[DeployedImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deployedimagetypedef)\]
 - `CurrentWeight`: `float`
 - `DesiredWeight`: `float`
 - `CurrentInstanceCount`: `int`
 - `DesiredInstanceCount`: `int`
-
 
 ## ProductionVariantTypeDef
 
@@ -7212,20 +6772,21 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProductionVariantTypeDef
 ```
 
-
 Required fields:
+
 - `VariantName`: `str`
 - `ModelName`: `str`
 - `InitialInstanceCount`: `int`
-- `InstanceType`: `ProductionVariantInstanceType`
-
-
+- `InstanceType`:
+  [ProductionVariantInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#productionvariantinstancetype)
 
 Optional fields:
-- `InitialVariantWeight`: `float`
-- `AcceleratorType`: `ProductionVariantAcceleratorType`
-- `CoreDumpConfig`: `"ProductionVariantCoreDumpConfigTypeDef"`
 
+- `InitialVariantWeight`: `float`
+- `AcceleratorType`:
+  [ProductionVariantAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#productionvariantacceleratortype)
+- `CoreDumpConfig`:
+  [ProductionVariantCoreDumpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvariantcoredumpconfigtypedef)
 
 ## ProfilerConfigForUpdateTypeDef
 
@@ -7233,15 +6794,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProfilerConfigForUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `S3OutputPath`: `str`
 - `ProfilingIntervalInMilliseconds`: `int`
-- `ProfilingParameters`: `Dict[str, str]`
+- `ProfilingParameters`: `Dict`\[`str`, `str`\]
 - `DisableProfiler`: `bool`
-
 
 ## ProfilerConfigTypeDef
 
@@ -7249,16 +6807,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProfilerConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `ProfilingIntervalInMilliseconds`: `int`
-- `ProfilingParameters`: `Dict[str, str]`
 
+- `ProfilingIntervalInMilliseconds`: `int`
+- `ProfilingParameters`: `Dict`\[`str`, `str`\]
 
 ## ProfilerRuleConfigurationTypeDef
 
@@ -7266,20 +6822,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProfilerRuleConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RuleConfigurationName`: `str`
 - `RuleEvaluatorImage`: `str`
 
-
-
 Optional fields:
+
 - `LocalPath`: `str`
 - `S3OutputPath`: `str`
-- `InstanceType`: `ProcessingInstanceType`
+- `InstanceType`:
+  [ProcessingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processinginstancetype)
 - `VolumeSizeInGB`: `int`
-- `RuleParameters`: `Dict[str, str]`
-
+- `RuleParameters`: `Dict`\[`str`, `str`\]
 
 ## ProfilerRuleEvaluationStatusTypeDef
 
@@ -7287,16 +6842,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProfilerRuleEvaluationStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RuleConfigurationName`: `str`
 - `RuleEvaluationJobArn`: `str`
-- `RuleEvaluationStatus`: `RuleEvaluationStatus`
+- `RuleEvaluationStatus`:
+  [RuleEvaluationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#ruleevaluationstatus)
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
-
 
 ## ProjectSummaryTypeDef
 
@@ -7304,19 +6857,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProjectSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ProjectName`: `str`
 - `ProjectArn`: `str`
 - `ProjectId`: `str`
 - `CreationTime`: `datetime`
-- `ProjectStatus`: `ProjectStatus`
-
-
+- `ProjectStatus`:
+  [ProjectStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectstatus)
 
 Optional fields:
-- `ProjectDescription`: `str`
 
+- `ProjectDescription`: `str`
 
 ## PropertyNameQueryTypeDef
 
@@ -7324,12 +6876,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PropertyNameQueryTypeDef
 ```
 
-
 Required fields:
+
 - `PropertyNameHint`: `str`
-
-
-
 
 ## PropertyNameSuggestionTypeDef
 
@@ -7337,12 +6886,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import PropertyNameSuggestionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PropertyName`: `str`
 
+- `PropertyName`: `str`
 
 ## ProvisioningParameterTypeDef
 
@@ -7350,13 +6896,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ProvisioningParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## PublicWorkforceTaskPriceTypeDef
 
@@ -7364,12 +6907,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PublicWorkforceTaskPriceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AmountInUsd`: `"USDTypeDef"`
 
+- `AmountInUsd`:
+  [USDTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usdtypedef)
 
 ## PutModelPackageGroupPolicyOutputTypeDef
 
@@ -7377,13 +6918,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import PutModelPackageGroupPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageGroupArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## RedshiftDatasetDefinitionTypeDef
 
@@ -7391,22 +6930,22 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import RedshiftDatasetDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `ClusterId`: `str`
 - `Database`: `str`
 - `DbUser`: `str`
 - `QueryString`: `str`
 - `ClusterRoleArn`: `str`
 - `OutputS3Uri`: `str`
-- `OutputFormat`: `RedshiftResultFormat`
-
-
+- `OutputFormat`:
+  [RedshiftResultFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#redshiftresultformat)
 
 Optional fields:
-- `KmsKeyId`: `str`
-- `OutputCompression`: `RedshiftResultCompressionType`
 
+- `KmsKeyId`: `str`
+- `OutputCompression`:
+  [RedshiftResultCompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#redshiftresultcompressiontype)
 
 ## RegisterModelStepMetadataTypeDef
 
@@ -7414,12 +6953,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import RegisterModelStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## RenderUiTemplateResponseTypeDef
 
@@ -7427,13 +6963,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import RenderUiTemplateResponseTypeDef
 ```
 
-
 Required fields:
+
 - `RenderedContent`: `str`
-- `Errors`: `List["RenderingErrorTypeDef"]`
-
-
-
+- `Errors`:
+  `List`\[[RenderingErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#renderingerrortypedef)\]
 
 ## RenderableTaskTypeDef
 
@@ -7441,12 +6975,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import RenderableTaskTypeDef
 ```
 
-
 Required fields:
+
 - `Input`: `str`
-
-
-
 
 ## RenderingErrorTypeDef
 
@@ -7454,13 +6985,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import RenderingErrorTypeDef
 ```
 
-
 Required fields:
+
 - `Code`: `str`
 - `Message`: `str`
-
-
-
 
 ## RepositoryAuthConfigTypeDef
 
@@ -7468,12 +6996,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import RepositoryAuthConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RepositoryCredentialsProviderArn`: `str`
-
-
-
 
 ## ResolvedAttributesTypeDef
 
@@ -7481,14 +7006,14 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ResolvedAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutoMLJobObjective`: `"AutoMLJobObjectiveTypeDef"`
-- `ProblemType`: `ProblemType`
-- `CompletionCriteria`: `"AutoMLJobCompletionCriteriaTypeDef"`
 
+- `AutoMLJobObjective`:
+  [AutoMLJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobobjectivetypedef)
+- `ProblemType`:
+  [ProblemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#problemtype)
+- `CompletionCriteria`:
+  [AutoMLJobCompletionCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobcompletioncriteriatypedef)
 
 ## ResourceConfigTypeDef
 
@@ -7496,17 +7021,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ResourceConfigTypeDef
 ```
 
-
 Required fields:
-- `InstanceType`: `TrainingInstanceType`
+
+- `InstanceType`:
+  [TrainingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginstancetype)
 - `InstanceCount`: `int`
 - `VolumeSizeInGB`: `int`
 
-
-
 Optional fields:
-- `VolumeKmsKeyId`: `str`
 
+- `VolumeKmsKeyId`: `str`
 
 ## ResourceLimitsTypeDef
 
@@ -7514,13 +7038,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ResourceLimitsTypeDef
 ```
 
-
 Required fields:
+
 - `MaxNumberOfTrainingJobs`: `int`
 - `MaxParallelTrainingJobs`: `int`
-
-
-
 
 ## ResourceSpecTypeDef
 
@@ -7528,14 +7049,12 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import ResourceSpecTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SageMakerImageArn`: `str`
 - `SageMakerImageVersionArn`: `str`
-- `InstanceType`: `AppInstanceType`
-
+- `InstanceType`:
+  [AppInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appinstancetype)
 
 ## ResponseMetadata
 
@@ -7543,16 +7062,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RetentionPolicyTypeDef
 
@@ -7560,12 +7076,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import RetentionPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HomeEfsFileSystem`: `RetentionType`
 
+- `HomeEfsFileSystem`:
+  [RetentionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#retentiontype)
 
 ## S3DataSourceTypeDef
 
@@ -7573,17 +7087,17 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import S3DataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3DataType`: `S3DataType`
+
+- `S3DataType`:
+  [S3DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#s3datatype)
 - `S3Uri`: `str`
 
-
-
 Optional fields:
-- `S3DataDistributionType`: `S3DataDistribution`
-- `AttributeNames`: `List[str]`
 
+- `S3DataDistributionType`:
+  [S3DataDistribution](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#s3datadistribution)
+- `AttributeNames`: `List`\[`str`\]
 
 ## S3StorageConfigTypeDef
 
@@ -7591,16 +7105,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import S3StorageConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3Uri`: `str`
 
-
-
 Optional fields:
+
 - `KmsKeyId`: `str`
 - `ResolvedOutputS3Uri`: `str`
-
 
 ## ScheduleConfigTypeDef
 
@@ -7608,12 +7120,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ScheduleConfigTypeDef
 ```
 
-
 Required fields:
+
 - `ScheduleExpression`: `str`
-
-
-
 
 ## SearchExpressionTypeDef
 
@@ -7621,15 +7130,16 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import SearchExpressionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Filters`: `List["FilterTypeDef"]`
-- `NestedFilters`: `List["NestedFiltersTypeDef"]`
-- `SubExpressions`: `List["SearchExpressionTypeDef"]`
-- `Operator`: `BooleanOperator`
 
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#filtertypedef)\]
+- `NestedFilters`:
+  `List`\[[NestedFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#nestedfilterstypedef)\]
+- `SubExpressions`:
+  `List`\[[SearchExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchexpressiontypedef)\]
+- `Operator`:
+  [BooleanOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#booleanoperator)
 
 ## SearchRecordTypeDef
 
@@ -7637,21 +7147,28 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SearchRecordTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrainingJob`: `"TrainingJobTypeDef"`
-- `Experiment`: `"ExperimentTypeDef"`
-- `Trial`: `"TrialTypeDef"`
-- `TrialComponent`: `"TrialComponentTypeDef"`
-- `Endpoint`: `"EndpointTypeDef"`
-- `ModelPackage`: `"ModelPackageTypeDef"`
-- `ModelPackageGroup`: `"ModelPackageGroupTypeDef"`
-- `Pipeline`: `"PipelineTypeDef"`
-- `PipelineExecution`: `"PipelineExecutionTypeDef"`
-- `FeatureGroup`: `"FeatureGroupTypeDef"`
 
+- `TrainingJob`:
+  [TrainingJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobtypedef)
+- `Experiment`:
+  [ExperimentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimenttypedef)
+- `Trial`:
+  [TrialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialtypedef)
+- `TrialComponent`:
+  [TrialComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponenttypedef)
+- `Endpoint`:
+  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#endpointtypedef)
+- `ModelPackage`:
+  [ModelPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagetypedef)
+- `ModelPackageGroup`:
+  [ModelPackageGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagegrouptypedef)
+- `Pipeline`:
+  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelinetypedef)
+- `PipelineExecution`:
+  [PipelineExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#pipelineexecutiontypedef)
+- `FeatureGroup`:
+  [FeatureGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuregrouptypedef)
 
 ## SearchResponseTypeDef
 
@@ -7659,13 +7176,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SearchResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Results`: `List["SearchRecordTypeDef"]`
-- `NextToken`: `str`
 
+- `Results`:
+  `List`\[[SearchRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchrecordtypedef)\]
+- `NextToken`: `str`
 
 ## SecondaryStatusTransitionTypeDef
 
@@ -7673,17 +7188,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SecondaryStatusTransitionTypeDef
 ```
 
-
 Required fields:
-- `Status`: `SecondaryStatus`
+
+- `Status`:
+  [SecondaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#secondarystatus)
 - `StartTime`: `datetime`
 
-
-
 Optional fields:
+
 - `EndTime`: `datetime`
 - `StatusMessage`: `str`
-
 
 ## ServiceCatalogProvisionedProductDetailsTypeDef
 
@@ -7691,13 +7205,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisionedProductDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductStatusMessage`: `str`
-
 
 ## ServiceCatalogProvisioningDetailsTypeDef
 
@@ -7705,17 +7216,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisioningDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `ProductId`: `str`
 - `ProvisioningArtifactId`: `str`
 
-
-
 Optional fields:
-- `PathId`: `str`
-- `ProvisioningParameters`: `List["ProvisioningParameterTypeDef"]`
 
+- `PathId`: `str`
+- `ProvisioningParameters`:
+  `List`\[[ProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#provisioningparametertypedef)\]
 
 ## SharingSettingsTypeDef
 
@@ -7723,14 +7233,12 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SharingSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NotebookOutputOption`: `NotebookOutputOption`
+
+- `NotebookOutputOption`:
+  [NotebookOutputOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookoutputoption)
 - `S3OutputPath`: `str`
 - `S3KmsKeyId`: `str`
-
 
 ## ShuffleConfigTypeDef
 
@@ -7738,12 +7246,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import ShuffleConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Seed`: `int`
-
-
-
 
 ## SourceAlgorithmSpecificationTypeDef
 
@@ -7751,12 +7256,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import SourceAlgorithmSpecificationTypeDef
 ```
 
-
 Required fields:
-- `SourceAlgorithms`: `List["SourceAlgorithmTypeDef"]`
 
-
-
+- `SourceAlgorithms`:
+  `List`\[[SourceAlgorithmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourcealgorithmtypedef)\]
 
 ## SourceAlgorithmTypeDef
 
@@ -7764,15 +7267,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import SourceAlgorithmTypeDef
 ```
 
-
 Required fields:
+
 - `AlgorithmName`: `str`
 
-
-
 Optional fields:
-- `ModelDataUrl`: `str`
 
+- `ModelDataUrl`: `str`
 
 ## SourceIpConfigTypeDef
 
@@ -7780,12 +7281,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SourceIpConfigTypeDef
 ```
 
-
 Required fields:
-- `Cidrs`: `List[str]`
 
-
-
+- `Cidrs`: `List`\[`str`\]
 
 ## StartPipelineExecutionResponseTypeDef
 
@@ -7793,12 +7291,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import StartPipelineExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineExecutionArn`: `str`
 
+- `PipelineExecutionArn`: `str`
 
 ## StopPipelineExecutionResponseTypeDef
 
@@ -7806,12 +7301,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import StopPipelineExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineExecutionArn`: `str`
 
+- `PipelineExecutionArn`: `str`
 
 ## StoppingConditionTypeDef
 
@@ -7819,13 +7311,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import StoppingConditionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxRuntimeInSeconds`: `int`
 - `MaxWaitTimeInSeconds`: `int`
-
 
 ## SubscribedWorkteamTypeDef
 
@@ -7833,18 +7322,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SubscribedWorkteamTypeDef
 ```
 
-
 Required fields:
+
 - `WorkteamArn`: `str`
 
-
-
 Optional fields:
+
 - `MarketplaceTitle`: `str`
 - `SellerName`: `str`
 - `MarketplaceDescription`: `str`
 - `ListingId`: `str`
-
 
 ## SuggestionQueryTypeDef
 
@@ -7852,12 +7339,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import SuggestionQueryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PropertyNameQuery`: `"PropertyNameQueryTypeDef"`
 
+- `PropertyNameQuery`:
+  [PropertyNameQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#propertynamequerytypedef)
 
 ## TagTypeDef
 
@@ -7865,13 +7350,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TargetPlatformTypeDef
 
@@ -7879,16 +7361,17 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import TargetPlatformTypeDef
 ```
 
-
 Required fields:
-- `Os`: `TargetPlatformOs`
-- `Arch`: `TargetPlatformArch`
 
-
+- `Os`:
+  [TargetPlatformOs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformos)
+- `Arch`:
+  [TargetPlatformArch](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformarch)
 
 Optional fields:
-- `Accelerator`: `TargetPlatformAccelerator`
 
+- `Accelerator`:
+  [TargetPlatformAccelerator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#targetplatformaccelerator)
 
 ## TensorBoardAppSettingsTypeDef
 
@@ -7896,12 +7379,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TensorBoardAppSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DefaultResourceSpec`: `"ResourceSpecTypeDef"`
 
+- `DefaultResourceSpec`:
+  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
 
 ## TensorBoardOutputConfigTypeDef
 
@@ -7909,15 +7390,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TensorBoardOutputConfigTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 
-
-
 Optional fields:
-- `LocalPath`: `str`
 
+- `LocalPath`: `str`
 
 ## TrafficRoutingConfigTypeDef
 
@@ -7925,16 +7404,16 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrafficRoutingConfigTypeDef
 ```
 
-
 Required fields:
-- `Type`: `TrafficRoutingConfigType`
+
+- `Type`:
+  [TrafficRoutingConfigType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trafficroutingconfigtype)
 - `WaitIntervalInSeconds`: `int`
 
-
-
 Optional fields:
-- `CanarySize`: `"CapacitySizeTypeDef"`
 
+- `CanarySize`:
+  [CapacitySizeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#capacitysizetypedef)
 
 ## TrainingJobDefinitionTypeDef
 
@@ -7942,19 +7421,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingJobDefinitionTypeDef
 ```
 
-
 Required fields:
-- `TrainingInputMode`: `TrainingInputMode`
-- `InputDataConfig`: `List["ChannelTypeDef"]`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `ResourceConfig`: `"ResourceConfigTypeDef"`
-- `StoppingCondition`: `"StoppingConditionTypeDef"`
 
-
+- `TrainingInputMode`:
+  [TrainingInputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginputmode)
+- `InputDataConfig`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
 
 Optional fields:
-- `HyperParameters`: `Dict[str, str]`
 
+- `HyperParameters`: `Dict`\[`str`, `str`\]
 
 ## TrainingJobStatusCountersTypeDef
 
@@ -7962,16 +7444,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingJobStatusCountersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Completed`: `int`
 - `InProgress`: `int`
 - `RetryableError`: `int`
 - `NonRetryableError`: `int`
 - `Stopped`: `int`
-
 
 ## TrainingJobStepMetadataTypeDef
 
@@ -7979,12 +7458,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingJobStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## TrainingJobSummaryTypeDef
 
@@ -7992,19 +7468,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TrainingJobStatus`: `TrainingJobStatus`
-
-
+- `TrainingJobStatus`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
 
 Optional fields:
+
 - `TrainingEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## TrainingJobTypeDef
 
@@ -8012,47 +7487,62 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingJobTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
 - `TuningJobArn`: `str`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `ModelArtifacts`: `"ModelArtifactsTypeDef"`
-- `TrainingJobStatus`: `TrainingJobStatus`
-- `SecondaryStatus`: `SecondaryStatus`
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelartifactstypedef)
+- `TrainingJobStatus`:
+  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
+- `SecondaryStatus`:
+  [SecondaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#secondarystatus)
 - `FailureReason`: `str`
-- `HyperParameters`: `Dict[str, str]`
-- `AlgorithmSpecification`: `"AlgorithmSpecificationTypeDef"`
+- `HyperParameters`: `Dict`\[`str`, `str`\]
+- `AlgorithmSpecification`:
+  [AlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmspecificationtypedef)
 - `RoleArn`: `str`
-- `InputDataConfig`: `List["ChannelTypeDef"]`
-- `OutputDataConfig`: `"OutputDataConfigTypeDef"`
-- `ResourceConfig`: `"ResourceConfigTypeDef"`
-- `VpcConfig`: `"VpcConfigTypeDef"`
-- `StoppingCondition`: `"StoppingConditionTypeDef"`
+- `InputDataConfig`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
+- `StoppingCondition`:
+  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
 - `CreationTime`: `datetime`
 - `TrainingStartTime`: `datetime`
 - `TrainingEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `SecondaryStatusTransitions`: `List["SecondaryStatusTransitionTypeDef"]`
-- `FinalMetricDataList`: `List["MetricDataTypeDef"]`
+- `SecondaryStatusTransitions`:
+  `List`\[[SecondaryStatusTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#secondarystatustransitiontypedef)\]
+- `FinalMetricDataList`:
+  `List`\[[MetricDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricdatatypedef)\]
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
-- `CheckpointConfig`: `"CheckpointConfigTypeDef"`
+- `CheckpointConfig`:
+  [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
 - `TrainingTimeInSeconds`: `int`
 - `BillableTimeInSeconds`: `int`
-- `DebugHookConfig`: `"DebugHookConfigTypeDef"`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
-- `DebugRuleConfigurations`: `List["DebugRuleConfigurationTypeDef"]`
-- `TensorBoardOutputConfig`: `"TensorBoardOutputConfigTypeDef"`
-- `DebugRuleEvaluationStatuses`: `List["DebugRuleEvaluationStatusTypeDef"]`
-- `Environment`: `Dict[str, str]`
-- `Tags`: `List["TagTypeDef"]`
-
+- `DebugHookConfig`:
+  [DebugHookConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debughookconfigtypedef)
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+- `DebugRuleConfigurations`:
+  `List`\[[DebugRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleconfigurationtypedef)\]
+- `TensorBoardOutputConfig`:
+  [TensorBoardOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tensorboardoutputconfigtypedef)
+- `DebugRuleEvaluationStatuses`:
+  `List`\[[DebugRuleEvaluationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleevaluationstatustypedef)\]
+- `Environment`: `Dict`\[`str`, `str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## TrainingSpecificationTypeDef
 
@@ -8060,21 +7550,24 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrainingSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingImage`: `str`
-- `SupportedTrainingInstanceTypes`: `List[TrainingInstanceType]`
-- `TrainingChannels`: `List["ChannelSpecificationTypeDef"]`
-
-
+- `SupportedTrainingInstanceTypes`:
+  `List`\[[TrainingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#traininginstancetype)\]
+- `TrainingChannels`:
+  `List`\[[ChannelSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channelspecificationtypedef)\]
 
 Optional fields:
-- `TrainingImageDigest`: `str`
-- `SupportedHyperParameters`: `List["HyperParameterSpecificationTypeDef"]`
-- `SupportsDistributedTraining`: `bool`
-- `MetricDefinitions`: `List["MetricDefinitionTypeDef"]`
-- `SupportedTuningJobObjectiveMetrics`: `List["HyperParameterTuningJobObjectiveTypeDef"]`
 
+- `TrainingImageDigest`: `str`
+- `SupportedHyperParameters`:
+  `List`\[[HyperParameterSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparameterspecificationtypedef)\]
+- `SupportsDistributedTraining`: `bool`
+- `MetricDefinitions`:
+  `List`\[[MetricDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricdefinitiontypedef)\]
+- `SupportedTuningJobObjectiveMetrics`:
+  `List`\[[HyperParameterTuningJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobobjectivetypedef)\]
 
 ## TransformDataSourceTypeDef
 
@@ -8082,12 +7575,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformDataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3DataSource`: `"TransformS3DataSourceTypeDef"`
 
-
-
+- `S3DataSource`:
+  [TransformS3DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforms3datasourcetypedef)
 
 ## TransformInputTypeDef
 
@@ -8095,17 +7586,18 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import TransformInputTypeDef
 ```
 
-
 Required fields:
-- `DataSource`: `"TransformDataSourceTypeDef"`
 
-
+- `DataSource`:
+  [TransformDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformdatasourcetypedef)
 
 Optional fields:
-- `ContentType`: `str`
-- `CompressionType`: `CompressionType`
-- `SplitType`: `SplitType`
 
+- `ContentType`: `str`
+- `CompressionType`:
+  [CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compressiontype)
+- `SplitType`:
+  [SplitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#splittype)
 
 ## TransformJobDefinitionTypeDef
 
@@ -8113,20 +7605,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformJobDefinitionTypeDef
 ```
 
-
 Required fields:
-- `TransformInput`: `"TransformInputTypeDef"`
-- `TransformOutput`: `"TransformOutputTypeDef"`
-- `TransformResources`: `"TransformResourcesTypeDef"`
 
-
+- `TransformInput`:
+  [TransformInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforminputtypedef)
+- `TransformOutput`:
+  [TransformOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformoutputtypedef)
+- `TransformResources`:
+  [TransformResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformresourcestypedef)
 
 Optional fields:
+
 - `MaxConcurrentTransforms`: `int`
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: `BatchStrategy`
-- `Environment`: `Dict[str, str]`
-
+- `BatchStrategy`:
+  [BatchStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#batchstrategy)
+- `Environment`: `Dict`\[`str`, `str`\]
 
 ## TransformJobStepMetadataTypeDef
 
@@ -8134,12 +7628,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformJobStepMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## TransformJobSummaryTypeDef
 
@@ -8147,20 +7638,19 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformJobSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TransformJobStatus`: `TransformJobStatus`
-
-
+- `TransformJobStatus`:
+  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
 
 Optional fields:
+
 - `TransformEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
-
 
 ## TransformJobTypeDef
 
@@ -8168,32 +7658,38 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformJobTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
-- `TransformJobStatus`: `TransformJobStatus`
+- `TransformJobStatus`:
+  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
 - `FailureReason`: `str`
 - `ModelName`: `str`
 - `MaxConcurrentTransforms`: `int`
-- `ModelClientConfig`: `"ModelClientConfigTypeDef"`
+- `ModelClientConfig`:
+  [ModelClientConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: `BatchStrategy`
-- `Environment`: `Dict[str, str]`
-- `TransformInput`: `"TransformInputTypeDef"`
-- `TransformOutput`: `"TransformOutputTypeDef"`
-- `TransformResources`: `"TransformResourcesTypeDef"`
+- `BatchStrategy`:
+  [BatchStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#batchstrategy)
+- `Environment`: `Dict`\[`str`, `str`\]
+- `TransformInput`:
+  [TransformInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforminputtypedef)
+- `TransformOutput`:
+  [TransformOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformoutputtypedef)
+- `TransformResources`:
+  [TransformResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformresourcestypedef)
 - `CreationTime`: `datetime`
 - `TransformStartTime`: `datetime`
 - `TransformEndTime`: `datetime`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `DataProcessing`: `"DataProcessingTypeDef"`
-- `ExperimentConfig`: `"ExperimentConfigTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-
+- `DataProcessing`:
+  [DataProcessingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataprocessingtypedef)
+- `ExperimentConfig`:
+  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 
 ## TransformOutputTypeDef
 
@@ -8201,16 +7697,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformOutputTypeDef
 ```
 
-
 Required fields:
+
 - `S3OutputPath`: `str`
 - `Accept`: `str`
-- `AssembleWith`: `AssemblyType`
+- `AssembleWith`:
+  [AssemblyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#assemblytype)
 - `KmsKeyId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## TransformResourcesTypeDef
 
@@ -8218,16 +7713,15 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import TransformResourcesTypeDef
 ```
 
-
 Required fields:
-- `InstanceType`: `TransformInstanceType`
+
+- `InstanceType`:
+  [TransformInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transforminstancetype)
 - `InstanceCount`: `int`
 
-
-
 Optional fields:
-- `VolumeKmsKeyId`: `str`
 
+- `VolumeKmsKeyId`: `str`
 
 ## TransformS3DataSourceTypeDef
 
@@ -8235,13 +7729,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TransformS3DataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3DataType`: `S3DataType`
+
+- `S3DataType`:
+  [S3DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#s3datatype)
 - `S3Uri`: `str`
-
-
-
 
 ## TrialComponentArtifactTypeDef
 
@@ -8249,15 +7741,13 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentArtifactTypeDef
 ```
 
-
 Required fields:
+
 - `Value`: `str`
 
-
-
 Optional fields:
-- `MediaType`: `str`
 
+- `MediaType`: `str`
 
 ## TrialComponentMetricSummaryTypeDef
 
@@ -8265,10 +7755,8 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentMetricSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MetricName`: `str`
 - `SourceArn`: `str`
 - `TimeStamp`: `datetime`
@@ -8279,20 +7767,16 @@ Optional fields:
 - `Avg`: `float`
 - `StdDev`: `float`
 
-
 ## TrialComponentParameterValueTypeDef
 
 ```python
 from mypy_boto3_sagemaker.type_defs import TrialComponentParameterValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StringValue`: `str`
 - `NumberValue`: `float`
-
 
 ## TrialComponentSimpleSummaryTypeDef
 
@@ -8300,16 +7784,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentSimpleSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentName`: `str`
 - `TrialComponentArn`: `str`
-- `TrialComponentSource`: `"TrialComponentSourceTypeDef"`
+- `TrialComponentSource`:
+  [TrialComponentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsourcetypedef)
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
-
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## TrialComponentSourceDetailTypeDef
 
@@ -8317,15 +7800,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentSourceDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SourceArn`: `str`
-- `TrainingJob`: `"TrainingJobTypeDef"`
-- `ProcessingJob`: `"ProcessingJobTypeDef"`
-- `TransformJob`: `"TransformJobTypeDef"`
 
+- `SourceArn`: `str`
+- `TrainingJob`:
+  [TrainingJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingjobtypedef)
+- `ProcessingJob`:
+  [ProcessingJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingjobtypedef)
+- `TransformJob`:
+  [TransformJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformjobtypedef)
 
 ## TrialComponentSourceTypeDef
 
@@ -8333,15 +7816,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceArn`: `str`
 
-
-
 Optional fields:
-- `SourceType`: `str`
 
+- `SourceType`: `str`
 
 ## TrialComponentStatusTypeDef
 
@@ -8349,13 +7830,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PrimaryStatus`: `TrialComponentPrimaryStatus`
-- `Message`: `str`
 
+- `PrimaryStatus`:
+  [TrialComponentPrimaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trialcomponentprimarystatus)
+- `Message`: `str`
 
 ## TrialComponentSummaryTypeDef
 
@@ -8363,22 +7842,23 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentName`: `str`
 - `TrialComponentArn`: `str`
 - `DisplayName`: `str`
-- `TrialComponentSource`: `"TrialComponentSourceTypeDef"`
-- `Status`: `"TrialComponentStatusTypeDef"`
+- `TrialComponentSource`:
+  [TrialComponentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsourcetypedef)
+- `Status`:
+  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 
 ## TrialComponentTypeDef
 
@@ -8386,30 +7866,39 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialComponentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialComponentName`: `str`
 - `DisplayName`: `str`
 - `TrialComponentArn`: `str`
-- `Source`: `"TrialComponentSourceTypeDef"`
-- `Status`: `"TrialComponentStatusTypeDef"`
+- `Source`:
+  [TrialComponentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsourcetypedef)
+- `Status`:
+  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `Parameters`: `Dict[str, "TrialComponentParameterValueTypeDef"]`
-- `InputArtifacts`: `Dict[str, "TrialComponentArtifactTypeDef"]`
-- `OutputArtifacts`: `Dict[str, "TrialComponentArtifactTypeDef"]`
-- `Metrics`: `List["TrialComponentMetricSummaryTypeDef"]`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-- `SourceDetail`: `"TrialComponentSourceDetailTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `Parents`: `List["ParentTypeDef"]`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `Parameters`: `Dict`\[`str`,
+  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+- `InputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `OutputArtifacts`: `Dict`\[`str`,
+  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+- `Metrics`:
+  `List`\[[TrialComponentMetricSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentmetricsummarytypedef)\]
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `SourceDetail`:
+  [TrialComponentSourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsourcedetailtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Parents`:
+  `List`\[[ParentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parenttypedef)\]
 
 ## TrialSourceTypeDef
 
@@ -8417,15 +7906,13 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceArn`: `str`
 
-
-
 Optional fields:
-- `SourceType`: `str`
 
+- `SourceType`: `str`
 
 ## TrialSummaryTypeDef
 
@@ -8433,17 +7920,15 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialArn`: `str`
 - `TrialName`: `str`
 - `DisplayName`: `str`
-- `TrialSource`: `"TrialSourceTypeDef"`
+- `TrialSource`:
+  [TrialSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialsourcetypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## TrialTypeDef
 
@@ -8451,23 +7936,26 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TrialTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TrialName`: `str`
 - `TrialArn`: `str`
 - `DisplayName`: `str`
 - `ExperimentName`: `str`
-- `Source`: `"TrialSourceTypeDef"`
+- `Source`:
+  [TrialSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialsourcetypedef)
 - `CreationTime`: `datetime`
-- `CreatedBy`: `"UserContextTypeDef"`
+- `CreatedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
-- `LastModifiedBy`: `"UserContextTypeDef"`
-- `MetadataProperties`: `"MetadataPropertiesTypeDef"`
-- `Tags`: `List["TagTypeDef"]`
-- `TrialComponentSummaries`: `List["TrialComponentSimpleSummaryTypeDef"]`
-
+- `LastModifiedBy`:
+  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usercontexttypedef)
+- `MetadataProperties`:
+  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `TrialComponentSummaries`:
+  `List`\[[TrialComponentSimpleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentsimplesummarytypedef)\]
 
 ## TuningJobCompletionCriteriaTypeDef
 
@@ -8475,12 +7963,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import TuningJobCompletionCriteriaTypeDef
 ```
 
-
 Required fields:
+
 - `TargetObjectiveMetricValue`: `float`
-
-
-
 
 ## USDTypeDef
 
@@ -8488,14 +7973,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import USDTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Dollars`: `int`
 - `Cents`: `int`
 - `TenthFractionsOfACent`: `int`
-
 
 ## UiConfigTypeDef
 
@@ -8503,13 +7985,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UiConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UiTemplateS3Uri`: `str`
 - `HumanTaskUiArn`: `str`
-
 
 ## UiTemplateInfoTypeDef
 
@@ -8517,13 +7996,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UiTemplateInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Url`: `str`
 - `ContentSha256`: `str`
-
 
 ## UiTemplateTypeDef
 
@@ -8531,12 +8007,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UiTemplateTypeDef
 ```
 
-
 Required fields:
+
 - `Content`: `str`
-
-
-
 
 ## UpdateActionResponseTypeDef
 
@@ -8544,12 +8017,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateActionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActionArn`: `str`
 
+- `ActionArn`: `str`
 
 ## UpdateAppImageConfigResponseTypeDef
 
@@ -8557,12 +8027,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateAppImageConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppImageConfigArn`: `str`
 
+- `AppImageConfigArn`: `str`
 
 ## UpdateArtifactResponseTypeDef
 
@@ -8570,12 +8037,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateArtifactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ArtifactArn`: `str`
 
+- `ArtifactArn`: `str`
 
 ## UpdateCodeRepositoryOutputTypeDef
 
@@ -8583,13 +8047,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateCodeRepositoryOutputTypeDef
 ```
 
-
 Required fields:
+
 - `CodeRepositoryArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## UpdateContextResponseTypeDef
 
@@ -8597,12 +8059,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateContextResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContextArn`: `str`
 
+- `ContextArn`: `str`
 
 ## UpdateDomainResponseTypeDef
 
@@ -8610,12 +8069,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateDomainResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DomainArn`: `str`
 
+- `DomainArn`: `str`
 
 ## UpdateEndpointOutputTypeDef
 
@@ -8623,13 +8079,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateEndpointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## UpdateEndpointWeightsAndCapacitiesOutputTypeDef
 
@@ -8637,13 +8091,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateEndpointWeightsAndCapacitiesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `EndpointArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## UpdateExperimentResponseTypeDef
 
@@ -8651,12 +8103,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateExperimentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExperimentArn`: `str`
 
+- `ExperimentArn`: `str`
 
 ## UpdateImageResponseTypeDef
 
@@ -8664,12 +8113,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ImageArn`: `str`
 
+- `ImageArn`: `str`
 
 ## UpdateModelPackageOutputTypeDef
 
@@ -8677,13 +8123,11 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateModelPackageOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ModelPackageArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#responsemetadata)
 
 ## UpdateMonitoringScheduleResponseTypeDef
 
@@ -8691,12 +8135,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateMonitoringScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `MonitoringScheduleArn`: `str`
-
-
-
 
 ## UpdatePipelineExecutionResponseTypeDef
 
@@ -8704,12 +8145,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdatePipelineExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineExecutionArn`: `str`
 
+- `PipelineExecutionArn`: `str`
 
 ## UpdatePipelineResponseTypeDef
 
@@ -8717,12 +8155,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdatePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PipelineArn`: `str`
 
+- `PipelineArn`: `str`
 
 ## UpdateTrainingJobResponseTypeDef
 
@@ -8730,12 +8165,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateTrainingJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `TrainingJobArn`: `str`
-
-
-
 
 ## UpdateTrialComponentResponseTypeDef
 
@@ -8743,12 +8175,9 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateTrialComponentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialComponentArn`: `str`
 
+- `TrialComponentArn`: `str`
 
 ## UpdateTrialResponseTypeDef
 
@@ -8756,12 +8185,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateTrialResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrialArn`: `str`
 
+- `TrialArn`: `str`
 
 ## UpdateUserProfileResponseTypeDef
 
@@ -8769,12 +8195,9 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateUserProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserProfileArn`: `str`
 
+- `UserProfileArn`: `str`
 
 ## UpdateWorkforceResponseTypeDef
 
@@ -8782,12 +8205,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UpdateWorkforceResponseTypeDef
 ```
 
-
 Required fields:
-- `Workforce`: `"WorkforceTypeDef"`
 
-
-
+- `Workforce`:
+  [WorkforceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workforcetypedef)
 
 ## UpdateWorkteamResponseTypeDef
 
@@ -8795,12 +8216,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UpdateWorkteamResponseTypeDef
 ```
 
-
 Required fields:
-- `Workteam`: `"WorkteamTypeDef"`
 
-
-
+- `Workteam`:
+  [WorkteamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#workteamtypedef)
 
 ## UserContextTypeDef
 
@@ -8808,14 +8227,11 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import UserContextTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UserProfileArn`: `str`
 - `UserProfileName`: `str`
 - `DomainId`: `str`
-
 
 ## UserProfileDetailsTypeDef
 
@@ -8823,16 +8239,14 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UserProfileDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `Status`: `UserProfileStatus`
+- `Status`:
+  [UserProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#userprofilestatus)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## UserSettingsTypeDef
 
@@ -8840,17 +8254,18 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import UserSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExecutionRole`: `str`
-- `SecurityGroups`: `List[str]`
-- `SharingSettings`: `"SharingSettingsTypeDef"`
-- `JupyterServerAppSettings`: `"JupyterServerAppSettingsTypeDef"`
-- `KernelGatewayAppSettings`: `"KernelGatewayAppSettingsTypeDef"`
-- `TensorBoardAppSettings`: `"TensorBoardAppSettingsTypeDef"`
 
+- `ExecutionRole`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+- `SharingSettings`:
+  [SharingSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sharingsettingstypedef)
+- `JupyterServerAppSettings`:
+  [JupyterServerAppSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#jupyterserverappsettingstypedef)
+- `KernelGatewayAppSettings`:
+  [KernelGatewayAppSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayappsettingstypedef)
+- `TensorBoardAppSettings`:
+  [TensorBoardAppSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tensorboardappsettingstypedef)
 
 ## VariantPropertyTypeDef
 
@@ -8858,12 +8273,10 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import VariantPropertyTypeDef
 ```
 
-
 Required fields:
-- `VariantPropertyType`: `VariantPropertyType`
 
-
-
+- `VariantPropertyType`:
+  [VariantPropertyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#variantpropertytype)
 
 ## VpcConfigTypeDef
 
@@ -8871,13 +8284,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import VpcConfigTypeDef
 ```
 
-
 Required fields:
-- `SecurityGroupIds`: `List[str]`
-- `Subnets`: `List[str]`
 
-
-
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Subnets`: `List`\[`str`\]
 
 ## WaiterConfigTypeDef
 
@@ -8885,13 +8295,10 @@ Required fields:
 from mypy_boto3_sagemaker.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-
 
 ## WorkforceTypeDef
 
@@ -8899,21 +8306,22 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import WorkforceTypeDef
 ```
 
-
 Required fields:
+
 - `WorkforceName`: `str`
 - `WorkforceArn`: `str`
 
-
-
 Optional fields:
-- `LastUpdatedDate`: `datetime`
-- `SourceIpConfig`: `"SourceIpConfigTypeDef"`
-- `SubDomain`: `str`
-- `CognitoConfig`: `"CognitoConfigTypeDef"`
-- `OidcConfig`: `"OidcConfigForResponseTypeDef"`
-- `CreateDate`: `datetime`
 
+- `LastUpdatedDate`: `datetime`
+- `SourceIpConfig`:
+  [SourceIpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourceipconfigtypedef)
+- `SubDomain`: `str`
+- `CognitoConfig`:
+  [CognitoConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#cognitoconfigtypedef)
+- `OidcConfig`:
+  [OidcConfigForResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcconfigforresponsetypedef)
+- `CreateDate`: `datetime`
 
 ## WorkteamTypeDef
 
@@ -8921,20 +8329,20 @@ Optional fields:
 from mypy_boto3_sagemaker.type_defs import WorkteamTypeDef
 ```
 
-
 Required fields:
+
 - `WorkteamName`: `str`
-- `MemberDefinitions`: `List["MemberDefinitionTypeDef"]`
+- `MemberDefinitions`:
+  `List`\[[MemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#memberdefinitiontypedef)\]
 - `WorkteamArn`: `str`
 - `Description`: `str`
 
-
-
 Optional fields:
+
 - `WorkforceArn`: `str`
-- `ProductListingIds`: `List[str]`
+- `ProductListingIds`: `List`\[`str`\]
 - `SubDomain`: `str`
 - `CreateDate`: `datetime`
 - `LastUpdatedDate`: `datetime`
-- `NotificationConfiguration`: `"NotificationConfigurationTypeDef"`
-
+- `NotificationConfiguration`:
+  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notificationconfigurationtypedef)

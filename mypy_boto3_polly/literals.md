@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Polly](./README.md) > Literals
 
-Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
-type annotations stubs module [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+Auto-generated documentation for
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+type annotations stubs module
+[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [Literals for boto3 Polly module](#literals-for-boto3-polly-module)
   - [DescribeVoicesPaginatorName](#describevoicespaginatorname)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > HealthLake
 
-Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+Auto-generated documentation for
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+type annotations stubs module
+[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 ```bash
 pip install mypy-boto3-healthlake
@@ -18,7 +20,8 @@ pip install mypy-boto3-healthlake
 
 ## HealthLakeClient
 
-Type annotations for  `boto3.client("healthlake")` as [HealthLakeClient](./client.md)
+Type annotations for `boto3.client("healthlake")` as
+[HealthLakeClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_healthlake.client import HealthLakeClient
 ```
 
-
 HealthLakeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_fhir_datastore](./client.md#create-fhir-datastore)
 - [delete_fhir_datastore](./client.md#delete-fhir-datastore)
@@ -43,10 +44,8 @@ HealthLakeClient [exceptions](./client.md#exceptions)
 - [start_fhir_export_job](./client.md#start-fhir-export-job)
 - [start_fhir_import_job](./client.md#start-fhir-import-job)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -54,15 +53,6 @@ HealthLakeClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -79,13 +69,10 @@ from mypy_boto3_healthlake.literals import DatastoreStatus, ...
 - [JobStatus](./literals.md#jobstatus)
 - [PreloadDataType](./literals.md#preloaddatatype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

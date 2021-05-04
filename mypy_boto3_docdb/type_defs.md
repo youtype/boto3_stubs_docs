@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DocDB](./README.md) > Structures
 
-Auto-generated documentation for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
-type annotations stubs module [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+Auto-generated documentation for
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+type annotations stubs module
+[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 - [Typed dictionaries for boto3 DocDB module](#typed-dictionaries-for-boto3-docdb-module)
   - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
@@ -88,12 +90,10 @@ type annotations stubs module [mypy_boto3_docdb](https://pypi.org/project/mypy-b
 from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventSubscription`: `"EventSubscriptionTypeDef"`
 
+- `EventSubscription`:
+  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)
 
 ## ApplyPendingMaintenanceActionResultTypeDef
 
@@ -101,12 +101,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ApplyPendingMaintenanceActionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourcePendingMaintenanceActions`: `"ResourcePendingMaintenanceActionsTypeDef"`
 
+- `ResourcePendingMaintenanceActions`:
+  [ResourcePendingMaintenanceActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#resourcependingmaintenanceactionstypedef)
 
 ## AvailabilityZoneTypeDef
 
@@ -114,12 +112,9 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import AvailabilityZoneTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## CertificateMessageTypeDef
 
@@ -127,13 +122,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CertificateMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Certificates`: `List["CertificateTypeDef"]`
-- `Marker`: `str`
 
+- `Certificates`:
+  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#certificatetypedef)\]
+- `Marker`: `str`
 
 ## CertificateTypeDef
 
@@ -141,10 +134,8 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CertificateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CertificateIdentifier`: `str`
 - `CertificateType`: `str`
 - `Thumbprint`: `str`
@@ -152,20 +143,16 @@ Optional fields:
 - `ValidTill`: `datetime`
 - `CertificateArn`: `str`
 
-
 ## CloudwatchLogsExportConfigurationTypeDef
 
 ```python
 from mypy_boto3_docdb.type_defs import CloudwatchLogsExportConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EnableLogTypes`: `List[str]`
-- `DisableLogTypes`: `List[str]`
 
+- `EnableLogTypes`: `List`\[`str`\]
+- `DisableLogTypes`: `List`\[`str`\]
 
 ## CopyDBClusterParameterGroupResultTypeDef
 
@@ -173,12 +160,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CopyDBClusterParameterGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterParameterGroup`: `"DBClusterParameterGroupTypeDef"`
 
+- `DBClusterParameterGroup`:
+  [DBClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclusterparametergrouptypedef)
 
 ## CopyDBClusterSnapshotResultTypeDef
 
@@ -186,12 +171,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CopyDBClusterSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshot`: `"DBClusterSnapshotTypeDef"`
 
+- `DBClusterSnapshot`:
+  [DBClusterSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshottypedef)
 
 ## CreateDBClusterParameterGroupResultTypeDef
 
@@ -199,12 +182,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateDBClusterParameterGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterParameterGroup`: `"DBClusterParameterGroupTypeDef"`
 
+- `DBClusterParameterGroup`:
+  [DBClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclusterparametergrouptypedef)
 
 ## CreateDBClusterResultTypeDef
 
@@ -212,12 +193,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## CreateDBClusterSnapshotResultTypeDef
 
@@ -225,12 +204,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateDBClusterSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshot`: `"DBClusterSnapshotTypeDef"`
 
+- `DBClusterSnapshot`:
+  [DBClusterSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshottypedef)
 
 ## CreateDBInstanceResultTypeDef
 
@@ -238,12 +215,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateDBInstanceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBInstance`: `"DBInstanceTypeDef"`
 
+- `DBInstance`:
+  [DBInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancetypedef)
 
 ## CreateDBSubnetGroupResultTypeDef
 
@@ -251,12 +226,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateDBSubnetGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBSubnetGroup`: `"DBSubnetGroupTypeDef"`
 
+- `DBSubnetGroup`:
+  [DBSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbsubnetgrouptypedef)
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -264,12 +237,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import CreateEventSubscriptionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventSubscription`: `"EventSubscriptionTypeDef"`
 
+- `EventSubscription`:
+  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)
 
 ## DBClusterMemberTypeDef
 
@@ -277,15 +248,12 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterMemberTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBInstanceIdentifier`: `str`
 - `IsClusterWriter`: `bool`
 - `DBClusterParameterGroupStatus`: `str`
 - `PromotionTier`: `int`
-
 
 ## DBClusterMessageTypeDef
 
@@ -293,13 +261,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBClusters`: `List["DBClusterTypeDef"]`
 
+- `Marker`: `str`
+- `DBClusters`:
+  `List`\[[DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)\]
 
 ## DBClusterParameterGroupDetailsTypeDef
 
@@ -307,13 +273,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameters`: `List["ParameterTypeDef"]`
-- `Marker`: `str`
 
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#parametertypedef)\]
+- `Marker`: `str`
 
 ## DBClusterParameterGroupNameMessageTypeDef
 
@@ -321,12 +285,9 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupNameMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterParameterGroupName`: `str`
 
+- `DBClusterParameterGroupName`: `str`
 
 ## DBClusterParameterGroupTypeDef
 
@@ -334,15 +295,12 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBClusterParameterGroupName`: `str`
 - `DBParameterGroupFamily`: `str`
 - `Description`: `str`
 - `DBClusterParameterGroupArn`: `str`
-
 
 ## DBClusterParameterGroupsMessageTypeDef
 
@@ -350,13 +308,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBClusterParameterGroups`: `List["DBClusterParameterGroupTypeDef"]`
 
+- `Marker`: `str`
+- `DBClusterParameterGroups`:
+  `List`\[[DBClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclusterparametergrouptypedef)\]
 
 ## DBClusterRoleTypeDef
 
@@ -364,13 +320,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterRoleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleArn`: `str`
 - `Status`: `str`
-
 
 ## DBClusterSnapshotAttributeTypeDef
 
@@ -378,13 +331,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotAttributeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeName`: `str`
-- `AttributeValues`: `List[str]`
 
+- `AttributeName`: `str`
+- `AttributeValues`: `List`\[`str`\]
 
 ## DBClusterSnapshotAttributesResultTypeDef
 
@@ -392,13 +342,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotAttributesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshotIdentifier`: `str`
-- `DBClusterSnapshotAttributes`: `List["DBClusterSnapshotAttributeTypeDef"]`
 
+- `DBClusterSnapshotIdentifier`: `str`
+- `DBClusterSnapshotAttributes`:
+  `List`\[[DBClusterSnapshotAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshotattributetypedef)\]
 
 ## DBClusterSnapshotMessageTypeDef
 
@@ -406,13 +354,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBClusterSnapshots`: `List["DBClusterSnapshotTypeDef"]`
 
+- `Marker`: `str`
+- `DBClusterSnapshots`:
+  `List`\[[DBClusterSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshottypedef)\]
 
 ## DBClusterSnapshotTypeDef
 
@@ -420,11 +366,9 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AvailabilityZones`: `List[str]`
+
+- `AvailabilityZones`: `List`\[`str`\]
 - `DBClusterSnapshotIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `SnapshotCreateTime`: `datetime`
@@ -442,18 +386,15 @@ Optional fields:
 - `DBClusterSnapshotArn`: `str`
 - `SourceDBClusterSnapshotArn`: `str`
 
-
 ## DBClusterTypeDef
 
 ```python
 from mypy_boto3_docdb.type_defs import DBClusterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AvailabilityZones`: `List[str]`
+
+- `AvailabilityZones`: `List`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `DBClusterIdentifier`: `str`
 - `DBClusterParameterGroup`: `str`
@@ -471,18 +412,20 @@ Optional fields:
 - `MasterUsername`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
-- `DBClusterMembers`: `List["DBClusterMemberTypeDef"]`
-- `VpcSecurityGroups`: `List["VpcSecurityGroupMembershipTypeDef"]`
+- `DBClusterMembers`:
+  `List`\[[DBClusterMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustermembertypedef)\]
+- `VpcSecurityGroups`:
+  `List`\[[VpcSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#vpcsecuritygroupmembershiptypedef)\]
 - `HostedZoneId`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `DbClusterResourceId`: `str`
 - `DBClusterArn`: `str`
-- `AssociatedRoles`: `List["DBClusterRoleTypeDef"]`
+- `AssociatedRoles`:
+  `List`\[[DBClusterRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclusterroletypedef)\]
 - `ClusterCreateTime`: `datetime`
-- `EnabledCloudwatchLogsExports`: `List[str]`
+- `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
-
 
 ## DBEngineVersionMessageTypeDef
 
@@ -490,13 +433,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBEngineVersionMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBEngineVersions`: `List["DBEngineVersionTypeDef"]`
 
+- `Marker`: `str`
+- `DBEngineVersions`:
+  `List`\[[DBEngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbengineversiontypedef)\]
 
 ## DBEngineVersionTypeDef
 
@@ -504,19 +445,17 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBEngineVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
 - `DBEngineDescription`: `str`
 - `DBEngineVersionDescription`: `str`
-- `ValidUpgradeTarget`: `List["UpgradeTargetTypeDef"]`
-- `ExportableLogTypes`: `List[str]`
+- `ValidUpgradeTarget`:
+  `List`\[[UpgradeTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#upgradetargettypedef)\]
+- `ExportableLogTypes`: `List`\[`str`\]
 - `SupportsLogExportsToCloudwatchLogs`: `bool`
-
 
 ## DBInstanceMessageTypeDef
 
@@ -524,13 +463,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBInstanceMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBInstances`: `List["DBInstanceTypeDef"]`
 
+- `Marker`: `str`
+- `DBInstances`:
+  `List`\[[DBInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancetypedef)\]
 
 ## DBInstanceStatusInfoTypeDef
 
@@ -538,15 +475,12 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBInstanceStatusInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StatusType`: `str`
 - `Normal`: `bool`
 - `Status`: `str`
 - `Message`: `str`
-
 
 ## DBInstanceTypeDef
 
@@ -554,28 +488,31 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBInstanceIdentifier`: `str`
 - `DBInstanceClass`: `str`
 - `Engine`: `str`
 - `DBInstanceStatus`: `str`
-- `Endpoint`: `"EndpointTypeDef"`
+- `Endpoint`:
+  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#endpointtypedef)
 - `InstanceCreateTime`: `datetime`
 - `PreferredBackupWindow`: `str`
 - `BackupRetentionPeriod`: `int`
-- `VpcSecurityGroups`: `List["VpcSecurityGroupMembershipTypeDef"]`
+- `VpcSecurityGroups`:
+  `List`\[[VpcSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#vpcsecuritygroupmembershiptypedef)\]
 - `AvailabilityZone`: `str`
-- `DBSubnetGroup`: `"DBSubnetGroupTypeDef"`
+- `DBSubnetGroup`:
+  [DBSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbsubnetgrouptypedef)
 - `PreferredMaintenanceWindow`: `str`
-- `PendingModifiedValues`: `"PendingModifiedValuesTypeDef"`
+- `PendingModifiedValues`:
+  [PendingModifiedValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#pendingmodifiedvaluestypedef)
 - `LatestRestorableTime`: `datetime`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
 - `PubliclyAccessible`: `bool`
-- `StatusInfos`: `List["DBInstanceStatusInfoTypeDef"]`
+- `StatusInfos`:
+  `List`\[[DBInstanceStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancestatusinfotypedef)\]
 - `DBClusterIdentifier`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
@@ -583,8 +520,7 @@ Optional fields:
 - `CACertificateIdentifier`: `str`
 - `PromotionTier`: `int`
 - `DBInstanceArn`: `str`
-- `EnabledCloudwatchLogsExports`: `List[str]`
-
+- `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 
 ## DBSubnetGroupMessageTypeDef
 
@@ -592,13 +528,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBSubnetGroupMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `DBSubnetGroups`: `List["DBSubnetGroupTypeDef"]`
 
+- `Marker`: `str`
+- `DBSubnetGroups`:
+  `List`\[[DBSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbsubnetgrouptypedef)\]
 
 ## DBSubnetGroupTypeDef
 
@@ -606,17 +540,15 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DBSubnetGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBSubnetGroupName`: `str`
 - `DBSubnetGroupDescription`: `str`
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
-- `Subnets`: `List["SubnetTypeDef"]`
+- `Subnets`:
+  `List`\[[SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#subnettypedef)\]
 - `DBSubnetGroupArn`: `str`
-
 
 ## DeleteDBClusterResultTypeDef
 
@@ -624,12 +556,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DeleteDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## DeleteDBClusterSnapshotResultTypeDef
 
@@ -637,12 +567,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DeleteDBClusterSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshot`: `"DBClusterSnapshotTypeDef"`
 
+- `DBClusterSnapshot`:
+  [DBClusterSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshottypedef)
 
 ## DeleteDBInstanceResultTypeDef
 
@@ -650,12 +578,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DeleteDBInstanceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBInstance`: `"DBInstanceTypeDef"`
 
+- `DBInstance`:
+  [DBInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancetypedef)
 
 ## DeleteEventSubscriptionResultTypeDef
 
@@ -663,12 +589,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DeleteEventSubscriptionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventSubscription`: `"EventSubscriptionTypeDef"`
 
+- `EventSubscription`:
+  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)
 
 ## DescribeDBClusterSnapshotAttributesResultTypeDef
 
@@ -676,12 +600,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotAttributesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshotAttributesResult`: `"DBClusterSnapshotAttributesResultTypeDef"`
 
+- `DBClusterSnapshotAttributesResult`:
+  [DBClusterSnapshotAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshotattributesresulttypedef)
 
 ## DescribeEngineDefaultClusterParametersResultTypeDef
 
@@ -689,12 +611,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import DescribeEngineDefaultClusterParametersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EngineDefaults`: `"EngineDefaultsTypeDef"`
 
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#enginedefaultstypedef)
 
 ## EndpointTypeDef
 
@@ -702,14 +622,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EndpointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Address`: `str`
 - `Port`: `int`
 - `HostedZoneId`: `str`
-
 
 ## EngineDefaultsTypeDef
 
@@ -717,14 +634,12 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EngineDefaultsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBParameterGroupFamily`: `str`
 - `Marker`: `str`
-- `Parameters`: `List["ParameterTypeDef"]`
-
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#parametertypedef)\]
 
 ## EventCategoriesMapTypeDef
 
@@ -732,13 +647,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventCategoriesMapTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SourceType`: `str`
-- `EventCategories`: `List[str]`
 
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
 
 ## EventCategoriesMessageTypeDef
 
@@ -746,12 +658,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventCategoriesMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventCategoriesMapList`: `List["EventCategoriesMapTypeDef"]`
 
+- `EventCategoriesMapList`:
+  `List`\[[EventCategoriesMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventcategoriesmaptypedef)\]
 
 ## EventSubscriptionTypeDef
 
@@ -759,21 +669,18 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventSubscriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CustomerAwsId`: `str`
 - `CustSubscriptionId`: `str`
 - `SnsTopicArn`: `str`
 - `Status`: `str`
 - `SubscriptionCreationTime`: `str`
 - `SourceType`: `str`
-- `SourceIdsList`: `List[str]`
-- `EventCategoriesList`: `List[str]`
+- `SourceIdsList`: `List`\[`str`\]
+- `EventCategoriesList`: `List`\[`str`\]
 - `Enabled`: `bool`
 - `EventSubscriptionArn`: `str`
-
 
 ## EventSubscriptionsMessageTypeDef
 
@@ -781,13 +688,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventSubscriptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `EventSubscriptionsList`: `List["EventSubscriptionTypeDef"]`
 
+- `Marker`: `str`
+- `EventSubscriptionsList`:
+  `List`\[[EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)\]
 
 ## EventTypeDef
 
@@ -795,17 +700,15 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceIdentifier`: `str`
-- `SourceType`: `SourceType`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/literals.html#sourcetype)
 - `Message`: `str`
-- `EventCategories`: `List[str]`
+- `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
 - `SourceArn`: `str`
-
 
 ## EventsMessageTypeDef
 
@@ -813,13 +716,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import EventsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Marker`: `str`
-- `Events`: `List["EventTypeDef"]`
 
+- `Marker`: `str`
+- `Events`:
+  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventtypedef)\]
 
 ## FailoverDBClusterResultTypeDef
 
@@ -827,12 +728,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import FailoverDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## FilterTypeDef
 
@@ -840,13 +739,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## ModifyDBClusterResultTypeDef
 
@@ -854,12 +750,10 @@ Required fields:
 from mypy_boto3_docdb.type_defs import ModifyDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
@@ -867,12 +761,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ModifyDBClusterSnapshotAttributeResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBClusterSnapshotAttributesResult`: `"DBClusterSnapshotAttributesResultTypeDef"`
 
+- `DBClusterSnapshotAttributesResult`:
+  [DBClusterSnapshotAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustersnapshotattributesresulttypedef)
 
 ## ModifyDBInstanceResultTypeDef
 
@@ -880,12 +772,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ModifyDBInstanceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBInstance`: `"DBInstanceTypeDef"`
 
+- `DBInstance`:
+  [DBInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancetypedef)
 
 ## ModifyDBSubnetGroupResultTypeDef
 
@@ -893,12 +783,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ModifyDBSubnetGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBSubnetGroup`: `"DBSubnetGroupTypeDef"`
 
+- `DBSubnetGroup`:
+  [DBSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbsubnetgrouptypedef)
 
 ## ModifyEventSubscriptionResultTypeDef
 
@@ -906,12 +794,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ModifyEventSubscriptionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventSubscription`: `"EventSubscriptionTypeDef"`
 
+- `EventSubscription`:
+  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)
 
 ## OrderableDBInstanceOptionTypeDef
 
@@ -919,17 +805,15 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import OrderableDBInstanceOptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBInstanceClass`: `str`
 - `LicenseModel`: `str`
-- `AvailabilityZones`: `List["AvailabilityZoneTypeDef"]`
+- `AvailabilityZones`:
+  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#availabilityzonetypedef)\]
 - `Vpc`: `bool`
-
 
 ## OrderableDBInstanceOptionsMessageTypeDef
 
@@ -937,13 +821,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import OrderableDBInstanceOptionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OrderableDBInstanceOptions`: `List["OrderableDBInstanceOptionTypeDef"]`
-- `Marker`: `str`
 
+- `OrderableDBInstanceOptions`:
+  `List`\[[OrderableDBInstanceOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#orderabledbinstanceoptiontypedef)\]
+- `Marker`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -951,14 +833,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterTypeDef
 
@@ -966,10 +845,8 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
 - `Description`: `str`
@@ -979,8 +856,8 @@ Optional fields:
 - `AllowedValues`: `str`
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
-- `ApplyMethod`: `ApplyMethod`
-
+- `ApplyMethod`:
+  [ApplyMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/literals.html#applymethod)
 
 ## PendingCloudwatchLogsExportsTypeDef
 
@@ -988,13 +865,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import PendingCloudwatchLogsExportsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LogTypesToEnable`: `List[str]`
-- `LogTypesToDisable`: `List[str]`
 
+- `LogTypesToEnable`: `List`\[`str`\]
+- `LogTypesToDisable`: `List`\[`str`\]
 
 ## PendingMaintenanceActionTypeDef
 
@@ -1002,10 +876,8 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import PendingMaintenanceActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Action`: `str`
 - `AutoAppliedAfterDate`: `datetime`
 - `ForcedApplyDate`: `datetime`
@@ -1013,20 +885,17 @@ Optional fields:
 - `CurrentApplyDate`: `datetime`
 - `Description`: `str`
 
-
 ## PendingMaintenanceActionsMessageTypeDef
 
 ```python
 from mypy_boto3_docdb.type_defs import PendingMaintenanceActionsMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PendingMaintenanceActions`: `List["ResourcePendingMaintenanceActionsTypeDef"]`
-- `Marker`: `str`
 
+- `PendingMaintenanceActions`:
+  `List`\[[ResourcePendingMaintenanceActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#resourcependingmaintenanceactionstypedef)\]
+- `Marker`: `str`
 
 ## PendingModifiedValuesTypeDef
 
@@ -1034,10 +903,8 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import PendingModifiedValuesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DBInstanceClass`: `str`
 - `AllocatedStorage`: `int`
 - `MasterUserPassword`: `str`
@@ -1051,8 +918,8 @@ Optional fields:
 - `StorageType`: `str`
 - `CACertificateIdentifier`: `str`
 - `DBSubnetGroupName`: `str`
-- `PendingCloudwatchLogsExports`: `"PendingCloudwatchLogsExportsTypeDef"`
-
+- `PendingCloudwatchLogsExports`:
+  [PendingCloudwatchLogsExportsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#pendingcloudwatchlogsexportstypedef)
 
 ## RebootDBInstanceResultTypeDef
 
@@ -1060,12 +927,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import RebootDBInstanceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBInstance`: `"DBInstanceTypeDef"`
 
+- `DBInstance`:
+  [DBInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbinstancetypedef)
 
 ## RemoveSourceIdentifierFromSubscriptionResultTypeDef
 
@@ -1073,12 +938,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import RemoveSourceIdentifierFromSubscriptionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventSubscription`: `"EventSubscriptionTypeDef"`
 
+- `EventSubscription`:
+  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#eventsubscriptiontypedef)
 
 ## ResourcePendingMaintenanceActionsTypeDef
 
@@ -1086,13 +949,11 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import ResourcePendingMaintenanceActionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceIdentifier`: `str`
-- `PendingMaintenanceActionDetails`: `List["PendingMaintenanceActionTypeDef"]`
 
+- `ResourceIdentifier`: `str`
+- `PendingMaintenanceActionDetails`:
+  `List`\[[PendingMaintenanceActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#pendingmaintenanceactiontypedef)\]
 
 ## RestoreDBClusterFromSnapshotResultTypeDef
 
@@ -1100,12 +961,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import RestoreDBClusterFromSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## RestoreDBClusterToPointInTimeResultTypeDef
 
@@ -1113,12 +972,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import RestoreDBClusterToPointInTimeResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## StartDBClusterResultTypeDef
 
@@ -1126,12 +983,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import StartDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## StopDBClusterResultTypeDef
 
@@ -1139,12 +994,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import StopDBClusterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DBCluster`: `"DBClusterTypeDef"`
 
+- `DBCluster`:
+  [DBClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#dbclustertypedef)
 
 ## SubnetTypeDef
 
@@ -1152,14 +1005,12 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import SubnetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SubnetIdentifier`: `str`
-- `SubnetAvailabilityZone`: `"AvailabilityZoneTypeDef"`
-- `SubnetStatus`: `str`
 
+- `SubnetIdentifier`: `str`
+- `SubnetAvailabilityZone`:
+  [AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#availabilityzonetypedef)
+- `SubnetStatus`: `str`
 
 ## TagListMessageTypeDef
 
@@ -1167,12 +1018,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import TagListMessageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TagList`: `List["TagTypeDef"]`
 
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1180,13 +1029,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## UpgradeTargetTypeDef
 
@@ -1194,16 +1040,13 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import UpgradeTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `Description`: `str`
 - `AutoUpgrade`: `bool`
 - `IsMajorVersionUpgrade`: `bool`
-
 
 ## VpcSecurityGroupMembershipTypeDef
 
@@ -1211,13 +1054,10 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import VpcSecurityGroupMembershipTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VpcSecurityGroupId`: `str`
 - `Status`: `str`
-
 
 ## WaiterConfigTypeDef
 
@@ -1225,10 +1065,7 @@ Optional fields:
 from mypy_boto3_docdb.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

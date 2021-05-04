@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Batch](./README.md) > Paginators
 
-Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+Auto-generated documentation for
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+type annotations stubs module
+[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Paginators for boto3 Batch module](#paginators-for-boto3-batch-module)
   - [DescribeComputeEnvironmentsPaginator](#describecomputeenvironmentspaginator)
@@ -13,7 +15,8 @@ type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-b
 
 ## DescribeComputeEnvironmentsPaginator
 
-Type annotations for `boto3.client("batch").get_paginator("describe_compute_environments")`.
+Type annotations for
+`boto3.client("batch").get_paginator("describe_compute_environments")`.
 
 Can be used directly:
 
@@ -24,20 +27,22 @@ def get_describe_compute_environments_paginator() -> DescribeComputeEnvironments
     return boto3.client("batch").get_paginator("describe_compute_environments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
+Boto3 documentation:
+[Batch.Paginator.DescribeComputeEnvironments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
 
-```python
-class DescribeComputeEnvironmentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        computeEnvironments: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeComputeEnvironmentsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
+
+- `computeEnvironments`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+
+`DescribeComputeEnvironmentsPaginator.paginate` returns
+`Iterator`\[[DescribeComputeEnvironmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describecomputeenvironmentsresponsetypedef)\].
+
 ## DescribeJobDefinitionsPaginator
 
-Type annotations for `boto3.client("batch").get_paginator("describe_job_definitions")`.
+Type annotations for
+`boto3.client("batch").get_paginator("describe_job_definitions")`.
 
 Can be used directly:
 
@@ -48,22 +53,24 @@ def get_describe_job_definitions_paginator() -> DescribeJobDefinitionsPaginator:
     return boto3.client("batch").get_paginator("describe_job_definitions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
+Boto3 documentation:
+[Batch.Paginator.DescribeJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
 
-```python
-class DescribeJobDefinitionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        jobDefinitions: List[str] = None,
-        jobDefinitionName: str = None,
-        status: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeJobDefinitionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
+
+- `jobDefinitions`: `List`\[`str`\]
+- `jobDefinitionName`: `str`
+- `status`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+
+`DescribeJobDefinitionsPaginator.paginate` returns
+`Iterator`\[[DescribeJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobdefinitionsresponsetypedef)\].
+
 ## DescribeJobQueuesPaginator
 
-Type annotations for `boto3.client("batch").get_paginator("describe_job_queues")`.
+Type annotations for
+`boto3.client("batch").get_paginator("describe_job_queues")`.
 
 Can be used directly:
 
@@ -74,17 +81,18 @@ def get_describe_job_queues_paginator() -> DescribeJobQueuesPaginator:
     return boto3.client("batch").get_paginator("describe_job_queues")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
+Boto3 documentation:
+[Batch.Paginator.DescribeJobQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
 
-```python
-class DescribeJobQueuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        jobQueues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeJobQueuesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeJobQueuesPaginator.paginate` method:
+
+- `jobQueues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+
+`DescribeJobQueuesPaginator.paginate` returns
+`Iterator`\[[DescribeJobQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobqueuesresponsetypedef)\].
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("batch").get_paginator("list_jobs")`.
@@ -98,17 +106,18 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("batch").get_paginator("list_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.ListJobs)
+Boto3 documentation:
+[Batch.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.ListJobs)
 
-```python
-class ListJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        jobQueue: str = None,
-        arrayJobId: str = None,
-        multiNodeJobId: str = None,
-        jobStatus: JobStatus = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListJobsPaginator.paginate` method:
+
+- `jobQueue`: `str`
+- `arrayJobId`: `str`
+- `multiNodeJobId`: `str`
+- `jobStatus`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsPaginator.paginate` returns
+`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listjobsresponsetypedef)\].

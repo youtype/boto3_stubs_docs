@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > KinesisVideoSignalingChannels
 
-Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
-type annotations stubs module [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
+Auto-generated documentation for
+[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+type annotations stubs module
+[mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 ```bash
 pip install mypy-boto3-kinesis-video-signaling
@@ -18,7 +20,8 @@ pip install mypy-boto3-kinesis-video-signaling
 
 ## KinesisVideoSignalingChannelsClient
 
-Type annotations for  `boto3.client("kinesis-video-signaling")` as [KinesisVideoSignalingChannelsClient](./client.md)
+Type annotations for `boto3.client("kinesis-video-signaling")` as
+[KinesisVideoSignalingChannelsClient](./client.md)
 
 Can be used directly:
 
@@ -26,21 +29,17 @@ Can be used directly:
 from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
 ```
 
-
 KinesisVideoSignalingChannelsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [get_ice_server_config](./client.md#get-ice-server-config)
 - [send_alexa_offer_to_master](./client.md#send-alexa-offer-to-master)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ClientLimitExceededException](./client.md#clientlimitexceededexception)
 - [InvalidArgumentException](./client.md#invalidargumentexception)
@@ -48,15 +47,6 @@ KinesisVideoSignalingChannelsClient [exceptions](./client.md#exceptions)
 - [NotAuthorizedException](./client.md#notauthorizedexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [SessionExpiredException](./client.md#sessionexpiredexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -70,13 +60,10 @@ from mypy_boto3_kinesis_video_signaling.literals import Service, ...
 
 - [Service](./literals.md#service)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

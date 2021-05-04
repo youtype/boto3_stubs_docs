@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppRegistry](./README.md) > Structures
 
-Auto-generated documentation for [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
-type annotations stubs module [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+Auto-generated documentation for
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+type annotations stubs module
+[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 - [Typed dictionaries for boto3 AppRegistry module](#typed-dictionaries-for-boto3-appregistry-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
@@ -37,17 +39,14 @@ type annotations stubs module [mypy_boto3_servicecatalog_appregistry](https://py
 from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## ApplicationTypeDef
 
@@ -55,18 +54,15 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## AssociateAttributeGroupResponseTypeDef
 
@@ -74,13 +70,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationArn`: `str`
 - `attributeGroupArn`: `str`
-
 
 ## AssociateResourceResponseTypeDef
 
@@ -88,13 +81,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationArn`: `str`
 - `resourceArn`: `str`
-
 
 ## AttributeGroupSummaryTypeDef
 
@@ -102,17 +92,14 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import AttributeGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## AttributeGroupTypeDef
 
@@ -120,18 +107,15 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import AttributeGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -139,12 +123,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `application`: `"ApplicationTypeDef"`
 
+- `application`:
+  [ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationtypedef)
 
 ## CreateAttributeGroupResponseTypeDef
 
@@ -152,12 +134,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeGroup`: `"AttributeGroupTypeDef"`
 
+- `attributeGroup`:
+  [AttributeGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegrouptypedef)
 
 ## DeleteApplicationResponseTypeDef
 
@@ -165,12 +145,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `application`: `"ApplicationSummaryTypeDef"`
 
+- `application`:
+  [ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationsummarytypedef)
 
 ## DeleteAttributeGroupResponseTypeDef
 
@@ -178,12 +156,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeGroup`: `"AttributeGroupSummaryTypeDef"`
 
+- `attributeGroup`:
+  [AttributeGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegroupsummarytypedef)
 
 ## DisassociateAttributeGroupResponseTypeDef
 
@@ -191,13 +167,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationArn`: `str`
 - `attributeGroupArn`: `str`
-
 
 ## DisassociateResourceResponseTypeDef
 
@@ -205,13 +178,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationArn`: `str`
 - `resourceArn`: `str`
-
 
 ## GetApplicationResponseTypeDef
 
@@ -219,10 +189,8 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
@@ -230,8 +198,7 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `associatedResourceCount`: `int`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetAttributeGroupResponseTypeDef
 
@@ -239,10 +206,8 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
@@ -250,8 +215,7 @@ Optional fields:
 - `attributes`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ListApplicationsResponseTypeDef
 
@@ -259,13 +223,11 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `applications`: `List["ApplicationSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `applications`:
+  `List`\[[ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListAssociatedAttributeGroupsResponseTypeDef
 
@@ -273,13 +235,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedAttributeGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeGroups`: `List[str]`
-- `nextToken`: `str`
 
+- `attributeGroups`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListAssociatedResourcesResponseTypeDef
 
@@ -287,13 +246,11 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResourcesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resources`: `List["ResourceInfoTypeDef"]`
-- `nextToken`: `str`
 
+- `resources`:
+  `List`\[[ResourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#resourceinfotypedef)\]
+- `nextToken`: `str`
 
 ## ListAttributeGroupsResponseTypeDef
 
@@ -301,13 +258,11 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeGroups`: `List["AttributeGroupSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `attributeGroups`:
+  `List`\[[AttributeGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegroupsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -315,12 +270,9 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## PaginatorConfigTypeDef
 
@@ -328,14 +280,11 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ResourceInfoTypeDef
 
@@ -343,13 +292,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import ResourceInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `arn`: `str`
-
 
 ## SyncResourceResponseTypeDef
 
@@ -357,14 +303,12 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import SyncResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `applicationArn`: `str`
 - `resourceArn`: `str`
-- `actionTaken`: `SyncAction`
-
+- `actionTaken`:
+  [SyncAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/literals.html#syncaction)
 
 ## UpdateApplicationResponseTypeDef
 
@@ -372,12 +316,10 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `application`: `"ApplicationTypeDef"`
 
+- `application`:
+  [ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationtypedef)
 
 ## UpdateAttributeGroupResponseTypeDef
 
@@ -385,9 +327,7 @@ Optional fields:
 from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attributeGroup`: `"AttributeGroupTypeDef"`
 
+- `attributeGroup`:
+  [AttributeGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegrouptypedef)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeStarconnections
 
-Auto-generated documentation for [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
-type annotations stubs module [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+Auto-generated documentation for
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+type annotations stubs module
+[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 ```bash
 pip install mypy-boto3-codestar-connections
@@ -18,7 +20,8 @@ pip install mypy-boto3-codestar-connections
 
 ## CodeStarconnectionsClient
 
-Type annotations for  `boto3.client("codestar-connections")` as [CodeStarconnectionsClient](./client.md)
+Type annotations for `boto3.client("codestar-connections")` as
+[CodeStarconnectionsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 ```
 
-
 CodeStarconnectionsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_connection](./client.md#create-connection)
 - [create_host](./client.md#create-host)
@@ -47,25 +48,14 @@ CodeStarconnectionsClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_host](./client.md#update-host)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ResourceUnavailableException](./client.md#resourceunavailableexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -80,13 +70,10 @@ from mypy_boto3_codestar_connections.literals import ConnectionStatus, ...
 - [ConnectionStatus](./literals.md#connectionstatus)
 - [ProviderType](./literals.md#providertype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

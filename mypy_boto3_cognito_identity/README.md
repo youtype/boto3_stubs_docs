@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CognitoIdentity
 
-Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
-type annotations stubs module [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+Auto-generated documentation for
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+type annotations stubs module
+[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 ```bash
 pip install mypy-boto3-cognito-identity
@@ -19,7 +21,8 @@ pip install mypy-boto3-cognito-identity
 
 ## CognitoIdentityClient
 
-Type annotations for  `boto3.client("cognito-identity")` as [CognitoIdentityClient](./client.md)
+Type annotations for `boto3.client("cognito-identity")` as
+[CognitoIdentityClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 ```
 
-
 CognitoIdentityClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_identity_pool](./client.md#create-identity-pool)
 - [delete_identities](./client.md#delete-identities)
@@ -60,10 +61,8 @@ CognitoIdentityClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_identity_pool](./client.md#update-identity-pool)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [DeveloperUserAlreadyRegisteredException](./client.md#developeruseralreadyregisteredexception)
@@ -77,14 +76,10 @@ CognitoIdentityClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cognito-identity").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cognito-identity").get_paginator("...")`.
 
 Can be used directly:
 
@@ -93,11 +88,6 @@ from mypy_boto3_cognito_identity.paginators import ListIdentityPoolsPaginator, .
 ```
 
 - [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -115,13 +105,10 @@ from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionType, ..
 - [MappingRuleMatchType](./literals.md#mappingrulematchtype)
 - [RoleMappingType](./literals.md#rolemappingtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

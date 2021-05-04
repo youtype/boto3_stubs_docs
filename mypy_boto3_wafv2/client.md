@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WAFV2](./README.md) > WAFV2Client
 
-Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+Auto-generated documentation for
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+type annotations stubs module
+[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [WAFV2Client for boto3 WAFV2 module](#wafv2client-for-boto3-wafv2-module)
   - [WAFV2Client](#wafv2client)
@@ -65,12 +67,13 @@ def get_wafv2_client() -> WAFV2Client:
     return boto3.client("wafv2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
+Boto3 documentation:
+[WAFV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_wafv2.client import Exceptions
@@ -78,7 +81,6 @@ from mypy_boto3_wafv2.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -99,698 +101,776 @@ Exceptions:
 - `Exceptions.WAFTagOperationInternalErrorException`
 - `Exceptions.WAFUnavailableEntityException`
 
-
 ## Methods
-
 
 ### associate_web_acl
 
 Type annotations for `boto3.client("wafv2").associate_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl]
+Boto3 documentation:
+[WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
 
-```python
-def associate_web_acl(
-    self,
-    WebACLArn: str,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WebACLArn`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("wafv2").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate]
+Boto3 documentation:
+[WAFV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### check_capacity
 
 Type annotations for `boto3.client("wafv2").check_capacity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity]
+Boto3 documentation:
+[WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
 
-```python
-def check_capacity(
-    self,
-    Scope: Scope,
-    Rules: List["RuleTypeDef"]
-) -> CheckCapacityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+  *(required)*
+
+Returns
+[CheckCapacityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#checkcapacityresponsetypedef).
 
 ### create_ip_set
 
 Type annotations for `boto3.client("wafv2").create_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set]
+Boto3 documentation:
+[WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
 
-```python
-def create_ip_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    IPAddressVersion: IPAddressVersion,
-    Addresses: List[str],
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `IPAddressVersion`:
+  [IPAddressVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#ipaddressversion)
+  *(required)*
+- `Addresses`: `List`\[`str`\] *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createipsetresponsetypedef).
 
 ### create_regex_pattern_set
 
 Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set]
+Boto3 documentation:
+[WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
 
-```python
-def create_regex_pattern_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    RegularExpressionList: List["RegexTypeDef"],
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regextypedef)\]
+  *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createregexpatternsetresponsetypedef).
 
 ### create_rule_group
 
 Type annotations for `boto3.client("wafv2").create_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group]
+Boto3 documentation:
+[WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
 
-```python
-def create_rule_group(
-    self,
-    Name: str,
-    Scope: Scope,
-    Capacity: int,
-    VisibilityConfig: "VisibilityConfigTypeDef",
-    Description: str = None,
-    Rules: List["RuleTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None,
-    CustomResponseBodies: Dict[str, "CustomResponseBodyTypeDef"] = None
-) -> CreateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Capacity`: `int` *(required)*
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
+  *(required)*
+- `Description`: `str`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+
+Returns
+[CreateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createrulegroupresponsetypedef).
 
 ### create_web_acl
 
 Type annotations for `boto3.client("wafv2").create_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl]
+Boto3 documentation:
+[WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
 
-```python
-def create_web_acl(
-    self,
-    Name: str,
-    Scope: Scope,
-    DefaultAction: "DefaultActionTypeDef",
-    VisibilityConfig: "VisibilityConfigTypeDef",
-    Description: str = None,
-    Rules: List["RuleTypeDef"] = None,
-    Tags: List["TagTypeDef"] = None,
-    CustomResponseBodies: Dict[str, "CustomResponseBodyTypeDef"] = None
-) -> CreateWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `DefaultAction`:
+  [DefaultActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#defaultactiontypedef)
+  *(required)*
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
+  *(required)*
+- `Description`: `str`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+
+Returns
+[CreateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createwebaclresponsetypedef).
 
 ### delete_firewall_manager_rule_groups
 
-Type annotations for `boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
+Type annotations for
+`boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups]
+Boto3 documentation:
+[WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
 
-```python
-def delete_firewall_manager_rule_groups(
-    self,
-    WebACLArn: str,
-    WebACLLockToken: str
-) -> DeleteFirewallManagerRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLArn`: `str` *(required)*
+- `WebACLLockToken`: `str` *(required)*
+
+Returns
+[DeleteFirewallManagerRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#deletefirewallmanagerrulegroupsresponsetypedef).
 
 ### delete_ip_set
 
 Type annotations for `boto3.client("wafv2").delete_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set]
+Boto3 documentation:
+[WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
 
-```python
-def delete_ip_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    LockToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_logging_configuration
 
-Type annotations for `boto3.client("wafv2").delete_logging_configuration` method.
+Type annotations for `boto3.client("wafv2").delete_logging_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration]
+Boto3 documentation:
+[WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
 
-```python
-def delete_logging_configuration(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_permission_policy
 
 Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy]
+Boto3 documentation:
+[WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
 
-```python
-def delete_permission_policy(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_regex_pattern_set
 
 Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set]
+Boto3 documentation:
+[WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
 
-```python
-def delete_regex_pattern_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    LockToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_rule_group
 
 Type annotations for `boto3.client("wafv2").delete_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group]
+Boto3 documentation:
+[WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
 
-```python
-def delete_rule_group(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    LockToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_web_acl
 
 Type annotations for `boto3.client("wafv2").delete_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl]
+Boto3 documentation:
+[WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
 
-```python
-def delete_web_acl(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    LockToken: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_managed_rule_group
 
-Type annotations for `boto3.client("wafv2").describe_managed_rule_group` method.
+Type annotations for `boto3.client("wafv2").describe_managed_rule_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group]
+Boto3 documentation:
+[WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
 
-```python
-def describe_managed_rule_group(
-    self,
-    VendorName: str,
-    Name: str,
-    Scope: Scope
-) -> DescribeManagedRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VendorName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+
+Returns
+[DescribeManagedRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#describemanagedrulegroupresponsetypedef).
 
 ### disassociate_web_acl
 
 Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl]
+Boto3 documentation:
+[WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
 
-```python
-def disassociate_web_acl(
-    self,
-    ResourceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("wafv2").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url]
+Boto3 documentation:
+[WAFV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_ip_set
 
 Type annotations for `boto3.client("wafv2").get_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set]
+Boto3 documentation:
+[WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
 
-```python
-def get_ip_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str
-) -> GetIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getipsetresponsetypedef).
 
 ### get_logging_configuration
 
 Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration]
+Boto3 documentation:
+[WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
 
-```python
-def get_logging_configuration(
-    self,
-    ResourceArn: str
-) -> GetLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getloggingconfigurationresponsetypedef).
 
 ### get_permission_policy
 
 Type annotations for `boto3.client("wafv2").get_permission_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy]
+Boto3 documentation:
+[WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
 
-```python
-def get_permission_policy(
-    self,
-    ResourceArn: str
-) -> GetPermissionPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetPermissionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getpermissionpolicyresponsetypedef).
 
 ### get_rate_based_statement_managed_keys
 
-Type annotations for `boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
+Type annotations for
+`boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys]
+Boto3 documentation:
+[WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
 
-```python
-def get_rate_based_statement_managed_keys(
-    self,
-    Scope: Scope,
-    WebACLName: str,
-    WebACLId: str,
-    RuleName: str
-) -> GetRateBasedStatementManagedKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `WebACLName`: `str` *(required)*
+- `WebACLId`: `str` *(required)*
+- `RuleName`: `str` *(required)*
+
+Returns
+[GetRateBasedStatementManagedKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getratebasedstatementmanagedkeysresponsetypedef).
 
 ### get_regex_pattern_set
 
 Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set]
+Boto3 documentation:
+[WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
 
-```python
-def get_regex_pattern_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str
-) -> GetRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getregexpatternsetresponsetypedef).
 
 ### get_rule_group
 
 Type annotations for `boto3.client("wafv2").get_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group]
+Boto3 documentation:
+[WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
 
-```python
-def get_rule_group(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str
-) -> GetRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getrulegroupresponsetypedef).
 
 ### get_sampled_requests
 
 Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests]
+Boto3 documentation:
+[WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
 
-```python
-def get_sampled_requests(
-    self,
-    WebAclArn: str,
-    RuleMetricName: str,
-    Scope: Scope,
-    TimeWindow: "TimeWindowTypeDef",
-    MaxItems: int
-) -> GetSampledRequestsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebAclArn`: `str` *(required)*
+- `RuleMetricName`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `TimeWindow`:
+  [TimeWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#timewindowtypedef)
+  *(required)*
+- `MaxItems`: `int` *(required)*
+
+Returns
+[GetSampledRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getsampledrequestsresponsetypedef).
 
 ### get_web_acl
 
 Type annotations for `boto3.client("wafv2").get_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl]
+Boto3 documentation:
+[WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
 
-```python
-def get_web_acl(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str
-) -> GetWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getwebaclresponsetypedef).
 
 ### get_web_acl_for_resource
 
 Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource]
+Boto3 documentation:
+[WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
 
-```python
-def get_web_acl_for_resource(
-    self,
-    ResourceArn: str
-) -> GetWebACLForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetWebACLForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getwebaclforresourceresponsetypedef).
 
 ### list_available_managed_rule_groups
 
-Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups` method.
+Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups]
+Boto3 documentation:
+[WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
 
-```python
-def list_available_managed_rule_groups(
-    self,
-    Scope: Scope,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListAvailableManagedRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListAvailableManagedRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listavailablemanagedrulegroupsresponsetypedef).
 
 ### list_ip_sets
 
 Type annotations for `boto3.client("wafv2").list_ip_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets]
+Boto3 documentation:
+[WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
 
-```python
-def list_ip_sets(
-    self,
-    Scope: Scope,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListIPSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listipsetsresponsetypedef).
 
 ### list_logging_configurations
 
-Type annotations for `boto3.client("wafv2").list_logging_configurations` method.
+Type annotations for `boto3.client("wafv2").list_logging_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations]
+Boto3 documentation:
+[WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
 
-```python
-def list_logging_configurations(
-    self,
-    Scope: Scope = None,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListLoggingConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListLoggingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listloggingconfigurationsresponsetypedef).
 
 ### list_regex_pattern_sets
 
 Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets]
+Boto3 documentation:
+[WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
 
-```python
-def list_regex_pattern_sets(
-    self,
-    Scope: Scope,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRegexPatternSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRegexPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listregexpatternsetsresponsetypedef).
 
 ### list_resources_for_web_acl
 
 Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl]
+Boto3 documentation:
+[WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
 
-```python
-def list_resources_for_web_acl(
-    self,
-    WebACLArn: str,
-    ResourceType: ResourceType = None
-) -> ListResourcesForWebACLResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLArn`: `str` *(required)*
+- `ResourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#resourcetype)
+
+Returns
+[ListResourcesForWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listresourcesforwebaclresponsetypedef).
 
 ### list_rule_groups
 
 Type annotations for `boto3.client("wafv2").list_rule_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups]
+Boto3 documentation:
+[WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
 
-```python
-def list_rule_groups(
-    self,
-    Scope: Scope,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListRuleGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource]
+Boto3 documentation:
+[WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_web_acls
 
 Type annotations for `boto3.client("wafv2").list_web_acls` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls]
+Boto3 documentation:
+[WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
 
-```python
-def list_web_acls(
-    self,
-    Scope: Scope,
-    NextMarker: str = None,
-    Limit: int = None
-) -> ListWebACLsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListWebACLsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listwebaclsresponsetypedef).
 
 ### put_logging_configuration
 
 Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration]
+Boto3 documentation:
+[WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
 
-```python
-def put_logging_configuration(
-    self,
-    LoggingConfiguration: "LoggingConfigurationTypeDef"
-) -> PutLoggingConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingconfigurationtypedef)
+  *(required)*
+
+Returns
+[PutLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#putloggingconfigurationresponsetypedef).
 
 ### put_permission_policy
 
 Type annotations for `boto3.client("wafv2").put_permission_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy]
+Boto3 documentation:
+[WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
 
-```python
-def put_permission_policy(
-    self,
-    ResourceArn: str,
-    Policy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Policy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("wafv2").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource]
+Boto3 documentation:
+[WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("wafv2").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource]
+Boto3 documentation:
+[WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_ip_set
 
 Type annotations for `boto3.client("wafv2").update_ip_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set]
+Boto3 documentation:
+[WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
 
-```python
-def update_ip_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    Addresses: List[str],
-    LockToken: str,
-    Description: str = None
-) -> UpdateIPSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `Addresses`: `List`\[`str`\] *(required)*
+- `LockToken`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updateipsetresponsetypedef).
 
 ### update_regex_pattern_set
 
 Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set]
+Boto3 documentation:
+[WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
 
-```python
-def update_regex_pattern_set(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    RegularExpressionList: List["RegexTypeDef"],
-    LockToken: str,
-    Description: str = None
-) -> UpdateRegexPatternSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regextypedef)\]
+  *(required)*
+- `LockToken`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updateregexpatternsetresponsetypedef).
 
 ### update_rule_group
 
 Type annotations for `boto3.client("wafv2").update_rule_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group]
+Boto3 documentation:
+[WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
 
-```python
-def update_rule_group(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    VisibilityConfig: "VisibilityConfigTypeDef",
-    LockToken: str,
-    Description: str = None,
-    Rules: List["RuleTypeDef"] = None,
-    CustomResponseBodies: Dict[str, "CustomResponseBodyTypeDef"] = None
-) -> UpdateRuleGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
+  *(required)*
+- `LockToken`: `str` *(required)*
+- `Description`: `str`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+
+Returns
+[UpdateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updaterulegroupresponsetypedef).
 
 ### update_web_acl
 
 Type annotations for `boto3.client("wafv2").update_web_acl` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl]
+Boto3 documentation:
+[WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
 
-```python
-def update_web_acl(
-    self,
-    Name: str,
-    Scope: Scope,
-    Id: str,
-    DefaultAction: "DefaultActionTypeDef",
-    VisibilityConfig: "VisibilityConfigTypeDef",
-    LockToken: str,
-    Description: str = None,
-    Rules: List["RuleTypeDef"] = None,
-    CustomResponseBodies: Dict[str, "CustomResponseBodyTypeDef"] = None
-) -> UpdateWebACLResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `Scope`:
+  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+  *(required)*
+- `Id`: `str` *(required)*
+- `DefaultAction`:
+  [DefaultActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#defaultactiontypedef)
+  *(required)*
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
+  *(required)*
+- `LockToken`: `str` *(required)*
+- `Description`: `str`
+- `Rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
 
-
+Returns
+[UpdateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updatewebaclresponsetypedef).

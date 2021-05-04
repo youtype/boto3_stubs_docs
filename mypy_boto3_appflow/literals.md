@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Appflow](./README.md) > Literals
 
-Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+Auto-generated documentation for
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+type annotations stubs module
+[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
   - [AggregationType](#aggregationtype)

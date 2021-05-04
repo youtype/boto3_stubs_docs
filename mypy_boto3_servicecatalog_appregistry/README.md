@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AppRegistry
 
-Auto-generated documentation for [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
-type annotations stubs module [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+Auto-generated documentation for
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+type annotations stubs module
+[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 ```bash
 pip install mypy-boto3-servicecatalog-appregistry
@@ -19,7 +21,8 @@ pip install mypy-boto3-servicecatalog-appregistry
 
 ## AppRegistryClient
 
-Type annotations for  `boto3.client("servicecatalog-appregistry")` as [AppRegistryClient](./client.md)
+Type annotations for `boto3.client("servicecatalog-appregistry")` as
+[AppRegistryClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 ```
 
-
 AppRegistryClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_attribute_group](./client.md#associate-attribute-group)
 - [associate_resource](./client.md#associate-resource)
 - [can_paginate](./client.md#can-paginate)
@@ -57,10 +58,8 @@ AppRegistryClient [exceptions](./client.md#exceptions)
 - [update_application](./client.md#update-application)
 - [update_attribute_group](./client.md#update-attribute-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
@@ -68,14 +67,10 @@ AppRegistryClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("servicecatalog-appregistry").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("servicecatalog-appregistry").get_paginator("...")`.
 
 Can be used directly:
 
@@ -87,11 +82,6 @@ from mypy_boto3_servicecatalog_appregistry.paginators import ListApplicationsPag
 - [ListAssociatedAttributeGroupsPaginator](./paginators.md#listassociatedattributegroupspaginator)
 - [ListAssociatedResourcesPaginator](./paginators.md#listassociatedresourcespaginator)
 - [ListAttributeGroupsPaginator](./paginators.md#listattributegroupspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [ResourceType](./literals.md#resourcetype)
 - [SyncAction](./literals.md#syncaction)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EMR](./README.md) > Structures
 
-Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+Auto-generated documentation for
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+type annotations stubs module
+[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Typed dictionaries for boto3 EMR module](#typed-dictionaries-for-boto3-emr-module)
   - [AddInstanceFleetOutputTypeDef](#addinstancefleetoutputtypedef)
@@ -133,15 +135,13 @@ type annotations stubs module [mypy_boto3_emr](https://pypi.org/project/mypy-bot
 from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ClusterId`: `str`
 - `InstanceFleetId`: `str`
 - `ClusterArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## AddInstanceGroupsOutputTypeDef
 
@@ -149,15 +149,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import AddInstanceGroupsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `JobFlowId`: `str`
-- `InstanceGroupIds`: `List[str]`
+- `InstanceGroupIds`: `List`\[`str`\]
 - `ClusterArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## AddJobFlowStepsOutputTypeDef
 
@@ -165,13 +163,11 @@ Required fields:
 from mypy_boto3_emr.type_defs import AddJobFlowStepsOutputTypeDef
 ```
 
-
 Required fields:
-- `StepIds`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `StepIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ApplicationTypeDef
 
@@ -179,15 +175,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import ApplicationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Version`: `str`
-- `Args`: `List[str]`
-- `AdditionalInfo`: `Dict[str, str]`
-
+- `Args`: `List`\[`str`\]
+- `AdditionalInfo`: `Dict`\[`str`, `str`\]
 
 ## AutoScalingPolicyDescriptionTypeDef
 
@@ -195,14 +188,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import AutoScalingPolicyDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `"AutoScalingPolicyStatusTypeDef"`
-- `Constraints`: `"ScalingConstraintsTypeDef"`
-- `Rules`: `List["ScalingRuleTypeDef"]`
 
+- `Status`:
+  [AutoScalingPolicyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicystatustypedef)
+- `Constraints`:
+  [ScalingConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingconstraintstypedef)
+- `Rules`:
+  `List`\[[ScalingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingruletypedef)\]
 
 ## AutoScalingPolicyStateChangeReasonTypeDef
 
@@ -210,13 +203,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import AutoScalingPolicyStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `AutoScalingPolicyStateChangeReasonCode`
-- `Message`: `str`
 
+- `Code`:
+  [AutoScalingPolicyStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#autoscalingpolicystatechangereasoncode)
+- `Message`: `str`
 
 ## AutoScalingPolicyStatusTypeDef
 
@@ -224,13 +215,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import AutoScalingPolicyStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `AutoScalingPolicyState`
-- `StateChangeReason`: `"AutoScalingPolicyStateChangeReasonTypeDef"`
 
+- `State`:
+  [AutoScalingPolicyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#autoscalingpolicystate)
+- `StateChangeReason`:
+  [AutoScalingPolicyStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicystatechangereasontypedef)
 
 ## AutoScalingPolicyTypeDef
 
@@ -238,13 +228,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import AutoScalingPolicyTypeDef
 ```
 
-
 Required fields:
-- `Constraints`: `"ScalingConstraintsTypeDef"`
-- `Rules`: `List["ScalingRuleTypeDef"]`
 
-
-
+- `Constraints`:
+  [ScalingConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingconstraintstypedef)
+- `Rules`:
+  `List`\[[ScalingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingruletypedef)\]
 
 ## BlockPublicAccessConfigurationMetadataTypeDef
 
@@ -252,13 +241,10 @@ Required fields:
 from mypy_boto3_emr.type_defs import BlockPublicAccessConfigurationMetadataTypeDef
 ```
 
-
 Required fields:
+
 - `CreationDateTime`: `datetime`
 - `CreatedByArn`: `str`
-
-
-
 
 ## BlockPublicAccessConfigurationTypeDef
 
@@ -266,15 +252,14 @@ Required fields:
 from mypy_boto3_emr.type_defs import BlockPublicAccessConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `BlockPublicSecurityGroupRules`: `bool`
 
-
-
 Optional fields:
-- `PermittedPublicSecurityGroupRuleRanges`: `List["PortRangeTypeDef"]`
 
+- `PermittedPublicSecurityGroupRuleRanges`:
+  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#portrangetypedef)\]
 
 ## BootstrapActionConfigTypeDef
 
@@ -282,13 +267,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import BootstrapActionConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `ScriptBootstrapAction`: `"ScriptBootstrapActionConfigTypeDef"`
-
-
-
+- `ScriptBootstrapAction`:
+  [ScriptBootstrapActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scriptbootstrapactionconfigtypedef)
 
 ## BootstrapActionDetailTypeDef
 
@@ -296,12 +279,10 @@ Required fields:
 from mypy_boto3_emr.type_defs import BootstrapActionDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BootstrapActionConfig`: `"BootstrapActionConfigTypeDef"`
 
+- `BootstrapActionConfig`:
+  [BootstrapActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#bootstrapactionconfigtypedef)
 
 ## CancelStepsInfoTypeDef
 
@@ -309,14 +290,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import CancelStepsInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StepId`: `str`
-- `Status`: `CancelStepsRequestStatus`
-- `Reason`: `str`
 
+- `StepId`: `str`
+- `Status`:
+  [CancelStepsRequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#cancelstepsrequeststatus)
+- `Reason`: `str`
 
 ## CancelStepsOutputTypeDef
 
@@ -324,13 +303,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import CancelStepsOutputTypeDef
 ```
 
-
 Required fields:
-- `CancelStepsInfoList`: `List["CancelStepsInfoTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `CancelStepsInfoList`:
+  `List`\[[CancelStepsInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#cancelstepsinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## CloudWatchAlarmDefinitionTypeDef
 
@@ -338,22 +316,24 @@ Required fields:
 from mypy_boto3_emr.type_defs import CloudWatchAlarmDefinitionTypeDef
 ```
 
-
 Required fields:
-- `ComparisonOperator`: `ComparisonOperator`
+
+- `ComparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#comparisonoperator)
 - `MetricName`: `str`
 - `Period`: `int`
 - `Threshold`: `float`
 
-
-
 Optional fields:
+
 - `EvaluationPeriods`: `int`
 - `Namespace`: `str`
-- `Statistic`: `Statistic`
-- `Unit`: `Unit`
-- `Dimensions`: `List["MetricDimensionTypeDef"]`
-
+- `Statistic`:
+  [Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#statistic)
+- `Unit`:
+  [Unit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#unit)
+- `Dimensions`:
+  `List`\[[MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#metricdimensiontypedef)\]
 
 ## ClusterStateChangeReasonTypeDef
 
@@ -361,13 +341,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ClusterStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `ClusterStateChangeReasonCode`
-- `Message`: `str`
 
+- `Code`:
+  [ClusterStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#clusterstatechangereasoncode)
+- `Message`: `str`
 
 ## ClusterStatusTypeDef
 
@@ -375,14 +353,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ClusterStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `ClusterState`
-- `StateChangeReason`: `"ClusterStateChangeReasonTypeDef"`
-- `Timeline`: `"ClusterTimelineTypeDef"`
 
+- `State`:
+  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#clusterstate)
+- `StateChangeReason`:
+  [ClusterStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clusterstatechangereasontypedef)
+- `Timeline`:
+  [ClusterTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clustertimelinetypedef)
 
 ## ClusterSummaryTypeDef
 
@@ -390,17 +368,15 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ClusterSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `"ClusterStatusTypeDef"`
+- `Status`:
+  [ClusterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clusterstatustypedef)
 - `NormalizedInstanceHours`: `int`
 - `ClusterArn`: `str`
 - `OutpostArn`: `str`
-
 
 ## ClusterTimelineTypeDef
 
@@ -408,14 +384,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ClusterTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## ClusterTypeDef
 
@@ -423,15 +396,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ClusterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `"ClusterStatusTypeDef"`
-- `Ec2InstanceAttributes`: `"Ec2InstanceAttributesTypeDef"`
-- `InstanceCollectionType`: `InstanceCollectionType`
+- `Status`:
+  [ClusterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clusterstatustypedef)
+- `Ec2InstanceAttributes`:
+  [Ec2InstanceAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ec2instanceattributestypedef)
+- `InstanceCollectionType`:
+  [InstanceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancecollectiontype)
 - `LogUri`: `str`
 - `LogEncryptionKmsKeyId`: `str`
 - `RequestedAmiVersion`: `str`
@@ -440,24 +414,30 @@ Optional fields:
 - `AutoTerminate`: `bool`
 - `TerminationProtected`: `bool`
 - `VisibleToAllUsers`: `bool`
-- `Applications`: `List["ApplicationTypeDef"]`
-- `Tags`: `List["TagTypeDef"]`
+- `Applications`:
+  `List`\[[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#applicationtypedef)\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
 - `ServiceRole`: `str`
 - `NormalizedInstanceHours`: `int`
 - `MasterPublicDnsName`: `str`
-- `Configurations`: `List["ConfigurationTypeDef"]`
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
-- `ScaleDownBehavior`: `ScaleDownBehavior`
+- `ScaleDownBehavior`:
+  [ScaleDownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#scaledownbehavior)
 - `CustomAmiId`: `str`
 - `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`: `RepoUpgradeOnBoot`
-- `KerberosAttributes`: `"KerberosAttributesTypeDef"`
+- `RepoUpgradeOnBoot`:
+  [RepoUpgradeOnBoot](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#repoupgradeonboot)
+- `KerberosAttributes`:
+  [KerberosAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#kerberosattributestypedef)
 - `ClusterArn`: `str`
 - `OutpostArn`: `str`
 - `StepConcurrencyLevel`: `int`
-- `PlacementGroups`: `List["PlacementGroupConfigTypeDef"]`
-
+- `PlacementGroups`:
+  `List`\[[PlacementGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#placementgroupconfigtypedef)\]
 
 ## CommandTypeDef
 
@@ -465,14 +445,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import CommandTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `ScriptPath`: `str`
-- `Args`: `List[str]`
-
+- `Args`: `List`\[`str`\]
 
 ## ComputeLimitsTypeDef
 
@@ -480,18 +457,17 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ComputeLimitsTypeDef
 ```
 
-
 Required fields:
-- `UnitType`: `ComputeLimitsUnitType`
+
+- `UnitType`:
+  [ComputeLimitsUnitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#computelimitsunittype)
 - `MinimumCapacityUnits`: `int`
 - `MaximumCapacityUnits`: `int`
 
-
-
 Optional fields:
+
 - `MaximumOnDemandCapacityUnits`: `int`
 - `MaximumCoreCapacityUnits`: `int`
-
 
 ## ConfigurationTypeDef
 
@@ -499,14 +475,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Classification`: `str`
-- `Configurations`: `List["ConfigurationTypeDef"]`
-- `Properties`: `Dict[str, str]`
 
+- `Classification`: `str`
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
+- `Properties`: `Dict`\[`str`, `str`\]
 
 ## CreateSecurityConfigurationOutputTypeDef
 
@@ -514,14 +488,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import CreateSecurityConfigurationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `CreationDateTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## CreateStudioOutputTypeDef
 
@@ -529,14 +501,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import CreateStudioOutputTypeDef
 ```
 
-
 Required fields:
+
 - `StudioId`: `str`
 - `Url`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeClusterOutputTypeDef
 
@@ -544,13 +514,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeClusterOutputTypeDef
 ```
 
-
 Required fields:
-- `Cluster`: `"ClusterTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeJobFlowsOutputTypeDef
 
@@ -558,13 +527,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeJobFlowsOutputTypeDef
 ```
 
-
 Required fields:
-- `JobFlows`: `List["JobFlowDetailTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `JobFlows`:
+  `List`\[[JobFlowDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#jobflowdetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeNotebookExecutionOutputTypeDef
 
@@ -572,13 +540,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeNotebookExecutionOutputTypeDef
 ```
 
-
 Required fields:
-- `NotebookExecution`: `"NotebookExecutionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `NotebookExecution`:
+  [NotebookExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#notebookexecutiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeSecurityConfigurationOutputTypeDef
 
@@ -586,15 +553,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `SecurityConfiguration`: `str`
 - `CreationDateTime`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeStepOutputTypeDef
 
@@ -602,13 +567,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeStepOutputTypeDef
 ```
 
-
 Required fields:
-- `Step`: `"StepTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Step`:
+  [StepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#steptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## DescribeStudioOutputTypeDef
 
@@ -616,13 +580,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import DescribeStudioOutputTypeDef
 ```
 
-
 Required fields:
-- `Studio`: `"StudioTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Studio`:
+  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#studiotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## EbsBlockDeviceConfigTypeDef
 
@@ -630,15 +593,14 @@ Required fields:
 from mypy_boto3_emr.type_defs import EbsBlockDeviceConfigTypeDef
 ```
 
-
 Required fields:
-- `VolumeSpecification`: `"VolumeSpecificationTypeDef"`
 
-
+- `VolumeSpecification`:
+  [VolumeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#volumespecificationtypedef)
 
 Optional fields:
-- `VolumesPerInstance`: `int`
 
+- `VolumesPerInstance`: `int`
 
 ## EbsBlockDeviceTypeDef
 
@@ -646,13 +608,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import EbsBlockDeviceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VolumeSpecification`: `"VolumeSpecificationTypeDef"`
-- `Device`: `str`
 
+- `VolumeSpecification`:
+  [VolumeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#volumespecificationtypedef)
+- `Device`: `str`
 
 ## EbsConfigurationTypeDef
 
@@ -660,13 +620,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import EbsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EbsBlockDeviceConfigs`: `List["EbsBlockDeviceConfigTypeDef"]`
-- `EbsOptimized`: `bool`
 
+- `EbsBlockDeviceConfigs`:
+  `List`\[[EbsBlockDeviceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsblockdeviceconfigtypedef)\]
+- `EbsOptimized`: `bool`
 
 ## EbsVolumeTypeDef
 
@@ -674,13 +632,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import EbsVolumeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Device`: `str`
 - `VolumeId`: `str`
-
 
 ## Ec2InstanceAttributesTypeDef
 
@@ -688,22 +643,19 @@ Optional fields:
 from mypy_boto3_emr.type_defs import Ec2InstanceAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Ec2KeyName`: `str`
 - `Ec2SubnetId`: `str`
-- `RequestedEc2SubnetIds`: `List[str]`
+- `RequestedEc2SubnetIds`: `List`\[`str`\]
 - `Ec2AvailabilityZone`: `str`
-- `RequestedEc2AvailabilityZones`: `List[str]`
+- `RequestedEc2AvailabilityZones`: `List`\[`str`\]
 - `IamInstanceProfile`: `str`
 - `EmrManagedMasterSecurityGroup`: `str`
 - `EmrManagedSlaveSecurityGroup`: `str`
 - `ServiceAccessSecurityGroup`: `str`
-- `AdditionalMasterSecurityGroups`: `List[str]`
-- `AdditionalSlaveSecurityGroups`: `List[str]`
-
+- `AdditionalMasterSecurityGroups`: `List`\[`str`\]
+- `AdditionalSlaveSecurityGroups`: `List`\[`str`\]
 
 ## ExecutionEngineConfigTypeDef
 
@@ -711,16 +663,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ExecutionEngineConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 
-
-
 Optional fields:
+
 - `Type`: `Literal['EMR']`
 - `MasterInstanceSecurityGroupId`: `str`
-
 
 ## FailureDetailsTypeDef
 
@@ -728,14 +678,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import FailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Reason`: `str`
 - `Message`: `str`
 - `LogFile`: `str`
-
 
 ## GetBlockPublicAccessConfigurationOutputTypeDef
 
@@ -743,14 +690,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import GetBlockPublicAccessConfigurationOutputTypeDef
 ```
 
-
 Required fields:
-- `BlockPublicAccessConfiguration`: `"BlockPublicAccessConfigurationTypeDef"`
-- `BlockPublicAccessConfigurationMetadata`: `"BlockPublicAccessConfigurationMetadataTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `BlockPublicAccessConfiguration`:
+  [BlockPublicAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#blockpublicaccessconfigurationtypedef)
+- `BlockPublicAccessConfigurationMetadata`:
+  [BlockPublicAccessConfigurationMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#blockpublicaccessconfigurationmetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## GetManagedScalingPolicyOutputTypeDef
 
@@ -758,13 +705,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import GetManagedScalingPolicyOutputTypeDef
 ```
 
-
 Required fields:
-- `ManagedScalingPolicy`: `"ManagedScalingPolicyTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ManagedScalingPolicy`:
+  [ManagedScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#managedscalingpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## GetStudioSessionMappingOutputTypeDef
 
@@ -772,13 +718,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import GetStudioSessionMappingOutputTypeDef
 ```
 
-
 Required fields:
-- `SessionMapping`: `"SessionMappingDetailTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `SessionMapping`:
+  [SessionMappingDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#sessionmappingdetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## HadoopJarStepConfigTypeDef
 
@@ -786,17 +731,16 @@ Required fields:
 from mypy_boto3_emr.type_defs import HadoopJarStepConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Jar`: `str`
 
-
-
 Optional fields:
-- `Properties`: `List["KeyValueTypeDef"]`
-- `MainClass`: `str`
-- `Args`: `List[str]`
 
+- `Properties`:
+  `List`\[[KeyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#keyvaluetypedef)\]
+- `MainClass`: `str`
+- `Args`: `List`\[`str`\]
 
 ## HadoopStepConfigTypeDef
 
@@ -804,15 +748,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import HadoopStepConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Jar`: `str`
-- `Properties`: `Dict[str, str]`
-- `MainClass`: `str`
-- `Args`: `List[str]`
 
+- `Jar`: `str`
+- `Properties`: `Dict`\[`str`, `str`\]
+- `MainClass`: `str`
+- `Args`: `List`\[`str`\]
 
 ## InstanceFleetConfigTypeDef
 
@@ -820,19 +761,20 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetConfigTypeDef
 ```
 
-
 Required fields:
-- `InstanceFleetType`: `InstanceFleetType`
 
-
+- `InstanceFleetType`:
+  [InstanceFleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleettype)
 
 Optional fields:
+
 - `Name`: `str`
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
-- `InstanceTypeConfigs`: `List["InstanceTypeConfigTypeDef"]`
-- `LaunchSpecifications`: `"InstanceFleetProvisioningSpecificationsTypeDef"`
-
+- `InstanceTypeConfigs`:
+  `List`\[[InstanceTypeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancetypeconfigtypedef)\]
+- `LaunchSpecifications`:
+  [InstanceFleetProvisioningSpecificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetprovisioningspecificationstypedef)
 
 ## InstanceFleetModifyConfigTypeDef
 
@@ -840,16 +782,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetModifyConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceFleetId`: `str`
 
-
-
 Optional fields:
+
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
-
 
 ## InstanceFleetProvisioningSpecificationsTypeDef
 
@@ -857,13 +797,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetProvisioningSpecificationsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SpotSpecification`: `"SpotProvisioningSpecificationTypeDef"`
-- `OnDemandSpecification`: `"OnDemandProvisioningSpecificationTypeDef"`
 
+- `SpotSpecification`:
+  [SpotProvisioningSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#spotprovisioningspecificationtypedef)
+- `OnDemandSpecification`:
+  [OnDemandProvisioningSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ondemandprovisioningspecificationtypedef)
 
 ## InstanceFleetStateChangeReasonTypeDef
 
@@ -871,13 +810,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `InstanceFleetStateChangeReasonCode`
-- `Message`: `str`
 
+- `Code`:
+  [InstanceFleetStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleetstatechangereasoncode)
+- `Message`: `str`
 
 ## InstanceFleetStatusTypeDef
 
@@ -885,14 +822,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `InstanceFleetState`
-- `StateChangeReason`: `"InstanceFleetStateChangeReasonTypeDef"`
-- `Timeline`: `"InstanceFleetTimelineTypeDef"`
 
+- `State`:
+  [InstanceFleetState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleetstate)
+- `StateChangeReason`:
+  [InstanceFleetStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetstatechangereasontypedef)
+- `Timeline`:
+  [InstanceFleetTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleettimelinetypedef)
 
 ## InstanceFleetTimelineTypeDef
 
@@ -900,14 +837,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## InstanceFleetTypeDef
 
@@ -915,21 +849,22 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceFleetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: `"InstanceFleetStatusTypeDef"`
-- `InstanceFleetType`: `InstanceFleetType`
+- `Status`:
+  [InstanceFleetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetstatustypedef)
+- `InstanceFleetType`:
+  [InstanceFleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleettype)
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
 - `ProvisionedOnDemandCapacity`: `int`
 - `ProvisionedSpotCapacity`: `int`
-- `InstanceTypeSpecifications`: `List["InstanceTypeSpecificationTypeDef"]`
-- `LaunchSpecifications`: `"InstanceFleetProvisioningSpecificationsTypeDef"`
-
+- `InstanceTypeSpecifications`:
+  `List`\[[InstanceTypeSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancetypespecificationtypedef)\]
+- `LaunchSpecifications`:
+  [InstanceFleetProvisioningSpecificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetprovisioningspecificationstypedef)
 
 ## InstanceGroupConfigTypeDef
 
@@ -937,22 +872,25 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupConfigTypeDef
 ```
 
-
 Required fields:
-- `InstanceRole`: `InstanceRoleType`
+
+- `InstanceRole`:
+  [InstanceRoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instanceroletype)
 - `InstanceType`: `str`
 - `InstanceCount`: `int`
 
-
-
 Optional fields:
-- `Name`: `str`
-- `Market`: `MarketType`
-- `BidPrice`: `str`
-- `Configurations`: `List["ConfigurationTypeDef"]`
-- `EbsConfiguration`: `"EbsConfigurationTypeDef"`
-- `AutoScalingPolicy`: `"AutoScalingPolicyTypeDef"`
 
+- `Name`: `str`
+- `Market`:
+  [MarketType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#markettype)
+- `BidPrice`: `str`
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
+- `EbsConfiguration`:
+  [EbsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsconfigurationtypedef)
+- `AutoScalingPolicy`:
+  [AutoScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicytypedef)
 
 ## InstanceGroupDetailTypeDef
 
@@ -960,19 +898,21 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupDetailTypeDef
 ```
 
-
 Required fields:
-- `Market`: `MarketType`
-- `InstanceRole`: `InstanceRoleType`
+
+- `Market`:
+  [MarketType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#markettype)
+- `InstanceRole`:
+  [InstanceRoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instanceroletype)
 - `InstanceType`: `str`
 - `InstanceRequestCount`: `int`
 - `InstanceRunningCount`: `int`
-- `State`: `InstanceGroupState`
+- `State`:
+  [InstanceGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegroupstate)
 - `CreationDateTime`: `datetime`
 
-
-
 Optional fields:
+
 - `InstanceGroupId`: `str`
 - `Name`: `str`
 - `BidPrice`: `str`
@@ -980,7 +920,6 @@ Optional fields:
 - `StartDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## InstanceGroupModifyConfigTypeDef
 
@@ -988,18 +927,18 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupModifyConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceGroupId`: `str`
 
-
-
 Optional fields:
-- `InstanceCount`: `int`
-- `EC2InstanceIdsToTerminate`: `List[str]`
-- `ShrinkPolicy`: `"ShrinkPolicyTypeDef"`
-- `Configurations`: `List["ConfigurationTypeDef"]`
 
+- `InstanceCount`: `int`
+- `EC2InstanceIdsToTerminate`: `List`\[`str`\]
+- `ShrinkPolicy`:
+  [ShrinkPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#shrinkpolicytypedef)
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
 
 ## InstanceGroupStateChangeReasonTypeDef
 
@@ -1007,13 +946,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `InstanceGroupStateChangeReasonCode`
-- `Message`: `str`
 
+- `Code`:
+  [InstanceGroupStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegroupstatechangereasoncode)
+- `Message`: `str`
 
 ## InstanceGroupStatusTypeDef
 
@@ -1021,14 +958,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `InstanceGroupState`
-- `StateChangeReason`: `"InstanceGroupStateChangeReasonTypeDef"`
-- `Timeline`: `"InstanceGroupTimelineTypeDef"`
 
+- `State`:
+  [InstanceGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegroupstate)
+- `StateChangeReason`:
+  [InstanceGroupStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupstatechangereasontypedef)
+- `Timeline`:
+  [InstanceGroupTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegrouptimelinetypedef)
 
 ## InstanceGroupTimelineTypeDef
 
@@ -1036,14 +973,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## InstanceGroupTypeDef
 
@@ -1051,28 +985,33 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Market`: `MarketType`
-- `InstanceGroupType`: `InstanceGroupType`
+- `Market`:
+  [MarketType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#markettype)
+- `InstanceGroupType`:
+  [InstanceGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegrouptype)
 - `BidPrice`: `str`
 - `InstanceType`: `str`
 - `RequestedInstanceCount`: `int`
 - `RunningInstanceCount`: `int`
-- `Status`: `"InstanceGroupStatusTypeDef"`
-- `Configurations`: `List["ConfigurationTypeDef"]`
+- `Status`:
+  [InstanceGroupStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupstatustypedef)
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
 - `ConfigurationsVersion`: `int`
-- `LastSuccessfullyAppliedConfigurations`: `List["ConfigurationTypeDef"]`
+- `LastSuccessfullyAppliedConfigurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
 - `LastSuccessfullyAppliedConfigurationsVersion`: `int`
-- `EbsBlockDevices`: `List["EbsBlockDeviceTypeDef"]`
+- `EbsBlockDevices`:
+  `List`\[[EbsBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsblockdevicetypedef)\]
 - `EbsOptimized`: `bool`
-- `ShrinkPolicy`: `"ShrinkPolicyTypeDef"`
-- `AutoScalingPolicy`: `"AutoScalingPolicyDescriptionTypeDef"`
-
+- `ShrinkPolicy`:
+  [ShrinkPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#shrinkpolicytypedef)
+- `AutoScalingPolicy`:
+  [AutoScalingPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicydescriptiontypedef)
 
 ## InstanceResizePolicyTypeDef
 
@@ -1080,14 +1019,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceResizePolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstancesToTerminate`: `List[str]`
-- `InstancesToProtect`: `List[str]`
-- `InstanceTerminationTimeout`: `int`
 
+- `InstancesToTerminate`: `List`\[`str`\]
+- `InstancesToProtect`: `List`\[`str`\]
+- `InstanceTerminationTimeout`: `int`
 
 ## InstanceStateChangeReasonTypeDef
 
@@ -1095,13 +1031,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `InstanceStateChangeReasonCode`
-- `Message`: `str`
 
+- `Code`:
+  [InstanceStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancestatechangereasoncode)
+- `Message`: `str`
 
 ## InstanceStatusTypeDef
 
@@ -1109,14 +1043,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `InstanceState`
-- `StateChangeReason`: `"InstanceStateChangeReasonTypeDef"`
-- `Timeline`: `"InstanceTimelineTypeDef"`
 
+- `State`:
+  [InstanceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancestate)
+- `StateChangeReason`:
+  [InstanceStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancestatechangereasontypedef)
+- `Timeline`:
+  [InstanceTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancetimelinetypedef)
 
 ## InstanceTimelineTypeDef
 
@@ -1124,14 +1058,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## InstanceTypeConfigTypeDef
 
@@ -1139,19 +1070,19 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceTypeConfigTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceType`: `str`
 
-
-
 Optional fields:
+
 - `WeightedCapacity`: `int`
 - `BidPrice`: `str`
 - `BidPriceAsPercentageOfOnDemandPrice`: `float`
-- `EbsConfiguration`: `"EbsConfigurationTypeDef"`
-- `Configurations`: `List["ConfigurationTypeDef"]`
-
+- `EbsConfiguration`:
+  [EbsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsconfigurationtypedef)
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
 
 ## InstanceTypeDef
 
@@ -1159,23 +1090,23 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Ec2InstanceId`: `str`
 - `PublicDnsName`: `str`
 - `PublicIpAddress`: `str`
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
-- `Status`: `"InstanceStatusTypeDef"`
+- `Status`:
+  [InstanceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancestatustypedef)
 - `InstanceGroupId`: `str`
 - `InstanceFleetId`: `str`
-- `Market`: `MarketType`
+- `Market`:
+  [MarketType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#markettype)
 - `InstanceType`: `str`
-- `EbsVolumes`: `List["EbsVolumeTypeDef"]`
-
+- `EbsVolumes`:
+  `List`\[[EbsVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsvolumetypedef)\]
 
 ## InstanceTypeSpecificationTypeDef
 
@@ -1183,18 +1114,17 @@ Optional fields:
 from mypy_boto3_emr.type_defs import InstanceTypeSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceType`: `str`
 - `WeightedCapacity`: `int`
 - `BidPrice`: `str`
 - `BidPriceAsPercentageOfOnDemandPrice`: `float`
-- `Configurations`: `List["ConfigurationTypeDef"]`
-- `EbsBlockDevices`: `List["EbsBlockDeviceTypeDef"]`
+- `Configurations`:
+  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
+- `EbsBlockDevices`:
+  `List`\[[EbsBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ebsblockdevicetypedef)\]
 - `EbsOptimized`: `bool`
-
 
 ## JobFlowDetailTypeDef
 
@@ -1202,28 +1132,31 @@ Optional fields:
 from mypy_boto3_emr.type_defs import JobFlowDetailTypeDef
 ```
 
-
 Required fields:
+
 - `JobFlowId`: `str`
 - `Name`: `str`
-- `ExecutionStatusDetail`: `"JobFlowExecutionStatusDetailTypeDef"`
-- `Instances`: `"JobFlowInstancesDetailTypeDef"`
-
-
+- `ExecutionStatusDetail`:
+  [JobFlowExecutionStatusDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#jobflowexecutionstatusdetailtypedef)
+- `Instances`:
+  [JobFlowInstancesDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#jobflowinstancesdetailtypedef)
 
 Optional fields:
+
 - `LogUri`: `str`
 - `LogEncryptionKmsKeyId`: `str`
 - `AmiVersion`: `str`
-- `Steps`: `List["StepDetailTypeDef"]`
-- `BootstrapActions`: `List["BootstrapActionDetailTypeDef"]`
-- `SupportedProducts`: `List[str]`
+- `Steps`:
+  `List`\[[StepDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepdetailtypedef)\]
+- `BootstrapActions`:
+  `List`\[[BootstrapActionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#bootstrapactiondetailtypedef)\]
+- `SupportedProducts`: `List`\[`str`\]
 - `VisibleToAllUsers`: `bool`
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
 - `AutoScalingRole`: `str`
-- `ScaleDownBehavior`: `ScaleDownBehavior`
-
+- `ScaleDownBehavior`:
+  [ScaleDownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#scaledownbehavior)
 
 ## JobFlowExecutionStatusDetailTypeDef
 
@@ -1231,19 +1164,18 @@ Optional fields:
 from mypy_boto3_emr.type_defs import JobFlowExecutionStatusDetailTypeDef
 ```
 
-
 Required fields:
-- `State`: `JobFlowExecutionState`
+
+- `State`:
+  [JobFlowExecutionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#jobflowexecutionstate)
 - `CreationDateTime`: `datetime`
 
-
-
 Optional fields:
+
 - `StartDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
 - `LastStateChangeReason`: `str`
-
 
 ## JobFlowInstancesConfigTypeDef
 
@@ -1251,28 +1183,28 @@ Optional fields:
 from mypy_boto3_emr.type_defs import JobFlowInstancesConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MasterInstanceType`: `str`
 - `SlaveInstanceType`: `str`
 - `InstanceCount`: `int`
-- `InstanceGroups`: `List["InstanceGroupConfigTypeDef"]`
-- `InstanceFleets`: `List["InstanceFleetConfigTypeDef"]`
+- `InstanceGroups`:
+  `List`\[[InstanceGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupconfigtypedef)\]
+- `InstanceFleets`:
+  `List`\[[InstanceFleetConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetconfigtypedef)\]
 - `Ec2KeyName`: `str`
-- `Placement`: `"PlacementTypeTypeDef"`
+- `Placement`:
+  [PlacementTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#placementtypetypedef)
 - `KeepJobFlowAliveWhenNoSteps`: `bool`
 - `TerminationProtected`: `bool`
 - `HadoopVersion`: `str`
 - `Ec2SubnetId`: `str`
-- `Ec2SubnetIds`: `List[str]`
+- `Ec2SubnetIds`: `List`\[`str`\]
 - `EmrManagedMasterSecurityGroup`: `str`
 - `EmrManagedSlaveSecurityGroup`: `str`
 - `ServiceAccessSecurityGroup`: `str`
-- `AdditionalMasterSecurityGroups`: `List[str]`
-- `AdditionalSlaveSecurityGroups`: `List[str]`
-
+- `AdditionalMasterSecurityGroups`: `List`\[`str`\]
+- `AdditionalSlaveSecurityGroups`: `List`\[`str`\]
 
 ## JobFlowInstancesDetailTypeDef
 
@@ -1280,26 +1212,26 @@ Optional fields:
 from mypy_boto3_emr.type_defs import JobFlowInstancesDetailTypeDef
 ```
 
-
 Required fields:
+
 - `MasterInstanceType`: `str`
 - `SlaveInstanceType`: `str`
 - `InstanceCount`: `int`
 
-
-
 Optional fields:
+
 - `MasterPublicDnsName`: `str`
 - `MasterInstanceId`: `str`
-- `InstanceGroups`: `List["InstanceGroupDetailTypeDef"]`
+- `InstanceGroups`:
+  `List`\[[InstanceGroupDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupdetailtypedef)\]
 - `NormalizedInstanceHours`: `int`
 - `Ec2KeyName`: `str`
 - `Ec2SubnetId`: `str`
-- `Placement`: `"PlacementTypeTypeDef"`
+- `Placement`:
+  [PlacementTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#placementtypetypedef)
 - `KeepJobFlowAliveWhenNoSteps`: `bool`
 - `TerminationProtected`: `bool`
 - `HadoopVersion`: `str`
-
 
 ## KerberosAttributesTypeDef
 
@@ -1307,18 +1239,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import KerberosAttributesTypeDef
 ```
 
-
 Required fields:
+
 - `Realm`: `str`
 - `KdcAdminPassword`: `str`
 
-
-
 Optional fields:
+
 - `CrossRealmTrustPrincipalPassword`: `str`
 - `ADDomainJoinUser`: `str`
 - `ADDomainJoinPassword`: `str`
-
 
 ## KeyValueTypeDef
 
@@ -1326,13 +1256,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import KeyValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## ListBootstrapActionsOutputTypeDef
 
@@ -1340,14 +1267,13 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
 ```
 
-
 Required fields:
-- `BootstrapActions`: `List["CommandTypeDef"]`
+
+- `BootstrapActions`:
+  `List`\[[CommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#commandtypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListClustersOutputTypeDef
 
@@ -1355,14 +1281,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListClustersOutputTypeDef
 ```
 
-
 Required fields:
-- `Clusters`: `List["ClusterSummaryTypeDef"]`
+
+- `Clusters`:
+  `List`\[[ClusterSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#clustersummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListInstanceFleetsOutputTypeDef
 
@@ -1370,14 +1295,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListInstanceFleetsOutputTypeDef
 ```
 
-
 Required fields:
-- `InstanceFleets`: `List["InstanceFleetTypeDef"]`
+
+- `InstanceFleets`:
+  `List`\[[InstanceFleetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleettypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListInstanceGroupsOutputTypeDef
 
@@ -1385,14 +1309,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListInstanceGroupsOutputTypeDef
 ```
 
-
 Required fields:
-- `InstanceGroups`: `List["InstanceGroupTypeDef"]`
+
+- `InstanceGroups`:
+  `List`\[[InstanceGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegrouptypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListInstancesOutputTypeDef
 
@@ -1400,14 +1323,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListInstancesOutputTypeDef
 ```
 
-
 Required fields:
-- `Instances`: `List["InstanceTypeDef"]`
+
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancetypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListNotebookExecutionsOutputTypeDef
 
@@ -1415,14 +1337,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListNotebookExecutionsOutputTypeDef
 ```
 
-
 Required fields:
-- `NotebookExecutions`: `List["NotebookExecutionSummaryTypeDef"]`
+
+- `NotebookExecutions`:
+  `List`\[[NotebookExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#notebookexecutionsummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListSecurityConfigurationsOutputTypeDef
 
@@ -1430,14 +1351,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListSecurityConfigurationsOutputTypeDef
 ```
 
-
 Required fields:
-- `SecurityConfigurations`: `List["SecurityConfigurationSummaryTypeDef"]`
+
+- `SecurityConfigurations`:
+  `List`\[[SecurityConfigurationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#securityconfigurationsummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListStepsOutputTypeDef
 
@@ -1445,14 +1365,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListStepsOutputTypeDef
 ```
 
-
 Required fields:
-- `Steps`: `List["StepSummaryTypeDef"]`
+
+- `Steps`:
+  `List`\[[StepSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepsummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListStudioSessionMappingsOutputTypeDef
 
@@ -1460,14 +1379,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListStudioSessionMappingsOutputTypeDef
 ```
 
-
 Required fields:
-- `SessionMappings`: `List["SessionMappingSummaryTypeDef"]`
+
+- `SessionMappings`:
+  `List`\[[SessionMappingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#sessionmappingsummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ListStudiosOutputTypeDef
 
@@ -1475,14 +1393,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ListStudiosOutputTypeDef
 ```
 
-
 Required fields:
-- `Studios`: `List["StudioSummaryTypeDef"]`
+
+- `Studios`:
+  `List`\[[StudioSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#studiosummarytypedef)\]
 - `Marker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ManagedScalingPolicyTypeDef
 
@@ -1490,12 +1407,10 @@ Required fields:
 from mypy_boto3_emr.type_defs import ManagedScalingPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ComputeLimits`: `"ComputeLimitsTypeDef"`
 
+- `ComputeLimits`:
+  [ComputeLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#computelimitstypedef)
 
 ## MetricDimensionTypeDef
 
@@ -1503,13 +1418,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import MetricDimensionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## ModifyClusterOutputTypeDef
 
@@ -1517,13 +1429,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ModifyClusterOutputTypeDef
 ```
 
-
 Required fields:
+
 - `StepConcurrencyLevel`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## NotebookExecutionSummaryTypeDef
 
@@ -1531,17 +1441,15 @@ Required fields:
 from mypy_boto3_emr.type_defs import NotebookExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NotebookExecutionId`: `str`
 - `EditorId`: `str`
 - `NotebookExecutionName`: `str`
-- `Status`: `NotebookExecutionStatus`
+- `Status`:
+  [NotebookExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#notebookexecutionstatus)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
 
 ## NotebookExecutionTypeDef
 
@@ -1549,24 +1457,24 @@ Optional fields:
 from mypy_boto3_emr.type_defs import NotebookExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NotebookExecutionId`: `str`
 - `EditorId`: `str`
-- `ExecutionEngine`: `"ExecutionEngineConfigTypeDef"`
+- `ExecutionEngine`:
+  [ExecutionEngineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#executionengineconfigtypedef)
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
-- `Status`: `NotebookExecutionStatus`
+- `Status`:
+  [NotebookExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#notebookexecutionstatus)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Arn`: `str`
 - `OutputNotebookURI`: `str`
 - `LastStateChangeReason`: `str`
 - `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
 
 ## OnDemandCapacityReservationOptionsTypeDef
 
@@ -1574,14 +1482,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import OnDemandCapacityReservationOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UsageStrategy`: `Literal['use-capacity-reservations-first']`
-- `CapacityReservationPreference`: `OnDemandCapacityReservationPreference`
-- `CapacityReservationResourceGroupArn`: `str`
 
+- `UsageStrategy`: `Literal['use-capacity-reservations-first']`
+- `CapacityReservationPreference`:
+  [OnDemandCapacityReservationPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#ondemandcapacityreservationpreference)
+- `CapacityReservationResourceGroupArn`: `str`
 
 ## OnDemandProvisioningSpecificationTypeDef
 
@@ -1589,15 +1495,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import OnDemandProvisioningSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `AllocationStrategy`: `Literal['lowest-price']`
 
-
-
 Optional fields:
-- `CapacityReservationOptions`: `"OnDemandCapacityReservationOptionsTypeDef"`
 
+- `CapacityReservationOptions`:
+  [OnDemandCapacityReservationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#ondemandcapacityreservationoptionstypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -1605,14 +1510,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PlacementGroupConfigTypeDef
 
@@ -1620,15 +1522,15 @@ Optional fields:
 from mypy_boto3_emr.type_defs import PlacementGroupConfigTypeDef
 ```
 
-
 Required fields:
-- `InstanceRole`: `InstanceRoleType`
 
-
+- `InstanceRole`:
+  [InstanceRoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instanceroletype)
 
 Optional fields:
-- `PlacementStrategy`: `PlacementGroupStrategy`
 
+- `PlacementStrategy`:
+  [PlacementGroupStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#placementgroupstrategy)
 
 ## PlacementTypeTypeDef
 
@@ -1636,13 +1538,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import PlacementTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AvailabilityZone`: `str`
-- `AvailabilityZones`: `List[str]`
 
+- `AvailabilityZone`: `str`
+- `AvailabilityZones`: `List`\[`str`\]
 
 ## PortRangeTypeDef
 
@@ -1650,15 +1549,13 @@ Optional fields:
 from mypy_boto3_emr.type_defs import PortRangeTypeDef
 ```
 
-
 Required fields:
+
 - `MinRange`: `int`
 
-
-
 Optional fields:
-- `MaxRange`: `int`
 
+- `MaxRange`: `int`
 
 ## PutAutoScalingPolicyOutputTypeDef
 
@@ -1666,16 +1563,15 @@ Optional fields:
 from mypy_boto3_emr.type_defs import PutAutoScalingPolicyOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ClusterId`: `str`
 - `InstanceGroupId`: `str`
-- `AutoScalingPolicy`: `"AutoScalingPolicyDescriptionTypeDef"`
+- `AutoScalingPolicy`:
+  [AutoScalingPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicydescriptiontypedef)
 - `ClusterArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -1683,16 +1579,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RunJobFlowOutputTypeDef
 
@@ -1700,14 +1593,12 @@ Required fields:
 from mypy_boto3_emr.type_defs import RunJobFlowOutputTypeDef
 ```
 
-
 Required fields:
+
 - `JobFlowId`: `str`
 - `ClusterArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## ScalingActionTypeDef
 
@@ -1715,15 +1606,15 @@ Required fields:
 from mypy_boto3_emr.type_defs import ScalingActionTypeDef
 ```
 
-
 Required fields:
-- `SimpleScalingPolicyConfiguration`: `"SimpleScalingPolicyConfigurationTypeDef"`
 
-
+- `SimpleScalingPolicyConfiguration`:
+  [SimpleScalingPolicyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#simplescalingpolicyconfigurationtypedef)
 
 Optional fields:
-- `Market`: `MarketType`
 
+- `Market`:
+  [MarketType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#markettype)
 
 ## ScalingConstraintsTypeDef
 
@@ -1731,13 +1622,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ScalingConstraintsTypeDef
 ```
 
-
 Required fields:
+
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
-
-
-
 
 ## ScalingRuleTypeDef
 
@@ -1745,17 +1633,17 @@ Required fields:
 from mypy_boto3_emr.type_defs import ScalingRuleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Action`: `"ScalingActionTypeDef"`
-- `Trigger`: `"ScalingTriggerTypeDef"`
-
-
+- `Action`:
+  [ScalingActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingactiontypedef)
+- `Trigger`:
+  [ScalingTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#scalingtriggertypedef)
 
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## ScalingTriggerTypeDef
 
@@ -1763,12 +1651,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ScalingTriggerTypeDef
 ```
 
-
 Required fields:
-- `CloudWatchAlarmDefinition`: `"CloudWatchAlarmDefinitionTypeDef"`
 
-
-
+- `CloudWatchAlarmDefinition`:
+  [CloudWatchAlarmDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#cloudwatchalarmdefinitiontypedef)
 
 ## ScriptBootstrapActionConfigTypeDef
 
@@ -1776,15 +1662,13 @@ Required fields:
 from mypy_boto3_emr.type_defs import ScriptBootstrapActionConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Path`: `str`
 
-
-
 Optional fields:
-- `Args`: `List[str]`
 
+- `Args`: `List`\[`str`\]
 
 ## SecurityConfigurationSummaryTypeDef
 
@@ -1792,13 +1676,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SecurityConfigurationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `CreationDateTime`: `datetime`
-
 
 ## SessionMappingDetailTypeDef
 
@@ -1806,18 +1687,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SessionMappingDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StudioId`: `str`
 - `IdentityId`: `str`
 - `IdentityName`: `str`
-- `IdentityType`: `IdentityType`
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
 
 ## SessionMappingSummaryTypeDef
 
@@ -1825,17 +1704,15 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SessionMappingSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StudioId`: `str`
 - `IdentityId`: `str`
 - `IdentityName`: `str`
-- `IdentityType`: `IdentityType`
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
-
 
 ## ShrinkPolicyTypeDef
 
@@ -1843,13 +1720,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import ShrinkPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DecommissionTimeout`: `int`
-- `InstanceResizePolicy`: `"InstanceResizePolicyTypeDef"`
 
+- `DecommissionTimeout`: `int`
+- `InstanceResizePolicy`:
+  [InstanceResizePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instanceresizepolicytypedef)
 
 ## SimpleScalingPolicyConfigurationTypeDef
 
@@ -1857,16 +1732,15 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SimpleScalingPolicyConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `ScalingAdjustment`: `int`
 
-
-
 Optional fields:
-- `AdjustmentType`: `AdjustmentType`
-- `CoolDown`: `int`
 
+- `AdjustmentType`:
+  [AdjustmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#adjustmenttype)
+- `CoolDown`: `int`
 
 ## SpotProvisioningSpecificationTypeDef
 
@@ -1874,17 +1748,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SpotProvisioningSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `TimeoutDurationMinutes`: `int`
-- `TimeoutAction`: `SpotProvisioningTimeoutAction`
-
-
+- `TimeoutAction`:
+  [SpotProvisioningTimeoutAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#spotprovisioningtimeoutaction)
 
 Optional fields:
+
 - `BlockDurationMinutes`: `int`
 - `AllocationStrategy`: `Literal['capacity-optimized']`
-
 
 ## StartNotebookExecutionOutputTypeDef
 
@@ -1892,13 +1765,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StartNotebookExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `NotebookExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#responsemetadata)
 
 ## StepConfigTypeDef
 
@@ -1906,16 +1777,16 @@ Required fields:
 from mypy_boto3_emr.type_defs import StepConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `HadoopJarStep`: `"HadoopJarStepConfigTypeDef"`
-
-
+- `HadoopJarStep`:
+  [HadoopJarStepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#hadoopjarstepconfigtypedef)
 
 Optional fields:
-- `ActionOnFailure`: `ActionOnFailure`
 
+- `ActionOnFailure`:
+  [ActionOnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#actiononfailure)
 
 ## StepDetailTypeDef
 
@@ -1923,13 +1794,12 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepDetailTypeDef
 ```
 
-
 Required fields:
-- `StepConfig`: `"StepConfigTypeDef"`
-- `ExecutionStatusDetail`: `"StepExecutionStatusDetailTypeDef"`
 
-
-
+- `StepConfig`:
+  [StepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepconfigtypedef)
+- `ExecutionStatusDetail`:
+  [StepExecutionStatusDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepexecutionstatusdetailtypedef)
 
 ## StepExecutionStatusDetailTypeDef
 
@@ -1937,18 +1807,17 @@ Required fields:
 from mypy_boto3_emr.type_defs import StepExecutionStatusDetailTypeDef
 ```
 
-
 Required fields:
-- `State`: `StepExecutionState`
+
+- `State`:
+  [StepExecutionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepexecutionstate)
 - `CreationDateTime`: `datetime`
 
-
-
 Optional fields:
+
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
 - `LastStateChangeReason`: `str`
-
 
 ## StepStateChangeReasonTypeDef
 
@@ -1956,13 +1825,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepStateChangeReasonTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Code`: `Literal['NONE']`
 - `Message`: `str`
-
 
 ## StepStatusTypeDef
 
@@ -1970,15 +1836,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `StepState`
-- `StateChangeReason`: `"StepStateChangeReasonTypeDef"`
-- `FailureDetails`: `"FailureDetailsTypeDef"`
-- `Timeline`: `"StepTimelineTypeDef"`
 
+- `State`:
+  [StepState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepstate)
+- `StateChangeReason`:
+  [StepStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepstatechangereasontypedef)
+- `FailureDetails`:
+  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#failuredetailstypedef)
+- `Timeline`:
+  [StepTimelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#steptimelinetypedef)
 
 ## StepSummaryTypeDef
 
@@ -1986,16 +1853,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Config`: `"HadoopStepConfigTypeDef"`
-- `ActionOnFailure`: `ActionOnFailure`
-- `Status`: `"StepStatusTypeDef"`
-
+- `Config`:
+  [HadoopStepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#hadoopstepconfigtypedef)
+- `ActionOnFailure`:
+  [ActionOnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#actiononfailure)
+- `Status`:
+  [StepStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepstatustypedef)
 
 ## StepTimelineTypeDef
 
@@ -2003,14 +1870,11 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepTimelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationDateTime`: `datetime`
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## StepTypeDef
 
@@ -2018,16 +1882,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StepTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `Config`: `"HadoopStepConfigTypeDef"`
-- `ActionOnFailure`: `ActionOnFailure`
-- `Status`: `"StepStatusTypeDef"`
-
+- `Config`:
+  [HadoopStepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#hadoopstepconfigtypedef)
+- `ActionOnFailure`:
+  [ActionOnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#actiononfailure)
+- `Status`:
+  [StepStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepstatustypedef)
 
 ## StudioSummaryTypeDef
 
@@ -2035,17 +1899,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StudioSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StudioId`: `str`
 - `Name`: `str`
 - `VpcId`: `str`
 - `Description`: `str`
 - `Url`: `str`
 - `CreationTime`: `datetime`
-
 
 ## StudioTypeDef
 
@@ -2053,17 +1914,16 @@ Optional fields:
 from mypy_boto3_emr.type_defs import StudioTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StudioId`: `str`
 - `StudioArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `AuthMode`: `AuthMode`
+- `AuthMode`:
+  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#authmode)
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
 - `ServiceRole`: `str`
 - `UserRole`: `str`
 - `WorkspaceSecurityGroupId`: `str`
@@ -2071,8 +1931,8 @@ Optional fields:
 - `Url`: `str`
 - `CreationTime`: `datetime`
 - `DefaultS3Location`: `str`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
 
 ## SupportedProductConfigTypeDef
 
@@ -2080,13 +1940,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import SupportedProductConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Args`: `List[str]`
 
+- `Name`: `str`
+- `Args`: `List`\[`str`\]
 
 ## TagTypeDef
 
@@ -2094,13 +1951,10 @@ Optional fields:
 from mypy_boto3_emr.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## VolumeSpecificationTypeDef
 
@@ -2108,16 +1962,14 @@ Optional fields:
 from mypy_boto3_emr.type_defs import VolumeSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `VolumeType`: `str`
 - `SizeInGB`: `int`
 
-
-
 Optional fields:
-- `Iops`: `int`
 
+- `Iops`: `int`
 
 ## WaiterConfigTypeDef
 
@@ -2125,10 +1977,7 @@ Optional fields:
 from mypy_boto3_emr.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

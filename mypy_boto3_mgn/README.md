@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > mgn
 
-Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
-type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+Auto-generated documentation for
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+type annotations stubs module
+[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 ```bash
 pip install mypy-boto3-mgn
@@ -19,7 +21,7 @@ pip install mypy-boto3-mgn
 
 ## mgnClient
 
-Type annotations for  `boto3.client("mgn")` as [mgnClient](./client.md)
+Type annotations for `boto3.client("mgn")` as [mgnClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mgn.client import mgnClient
 ```
 
-
 mgnClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [change_server_life_cycle_state](./client.md#change-server-life-cycle-state)
 - [create_replication_configuration_template](./client.md#create-replication-configuration-template)
@@ -62,10 +62,8 @@ mgnClient [exceptions](./client.md#exceptions)
 - [update_replication_configuration](./client.md#update-replication-configuration)
 - [update_replication_configuration_template](./client.md#update-replication-configuration-template)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -75,14 +73,10 @@ mgnClient [exceptions](./client.md#exceptions)
 - [UninitializedAccountException](./client.md#uninitializedaccountexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mgn").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mgn").get_paginator("...")`.
 
 Can be used directly:
 
@@ -94,11 +88,6 @@ from mypy_boto3_mgn.paginators import DescribeJobLogItemsPaginator, ...
 - [DescribeJobsPaginator](./paginators.md#describejobspaginator)
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +122,10 @@ from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecy
 - [ReplicationConfigurationReplicatedDiskStagingDiskType](./literals.md#replicationconfigurationreplicateddiskstagingdisktype)
 - [TargetInstanceTypeRightSizingMethod](./literals.md#targetinstancetyperightsizingmethod)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

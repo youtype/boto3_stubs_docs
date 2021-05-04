@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DocDB
 
-Auto-generated documentation for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
-type annotations stubs module [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+Auto-generated documentation for
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+type annotations stubs module
+[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 ```bash
 pip install mypy-boto3-docdb
@@ -20,7 +22,7 @@ pip install mypy-boto3-docdb
 
 ## DocDBClient
 
-Type annotations for  `boto3.client("docdb")` as [DocDBClient](./client.md)
+Type annotations for `boto3.client("docdb")` as [DocDBClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_docdb.client import DocDBClient
 ```
 
-
 DocDBClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_source_identifier_to_subscription](./client.md#add-source-identifier-to-subscription)
 - [add_tags_to_resource](./client.md#add-tags-to-resource)
 - [apply_pending_maintenance_action](./client.md#apply-pending-maintenance-action)
@@ -87,10 +87,8 @@ DocDBClient [exceptions](./client.md#exceptions)
 - [start_db_cluster](./client.md#start-db-cluster)
 - [stop_db_cluster](./client.md#stop-db-cluster)
 
-
-
-
 ### Exceptions
+
 - [AuthorizationNotFoundFault](./client.md#authorizationnotfoundfault)
 - [CertificateNotFoundFault](./client.md#certificatenotfoundfault)
 - [ClientError](./client.md#clienterror)
@@ -146,14 +144,10 @@ DocDBClient [exceptions](./client.md#exceptions)
 - [SubscriptionCategoryNotFoundFault](./client.md#subscriptioncategorynotfoundfault)
 - [SubscriptionNotFoundFault](./client.md#subscriptionnotfoundfault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("docdb").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("docdb").get_paginator("...")`.
 
 Can be used directly:
 
@@ -174,12 +168,10 @@ from mypy_boto3_docdb.paginators import DescribeCertificatesPaginator, ...
 - [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("docdb").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("docdb").get_waiter("...")`.
 
 Can be used directly:
 
@@ -189,9 +181,6 @@ from mypy_boto3_docdb.waiters import DBInstanceAvailableWaiter, ...
 
 - [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 - [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -220,13 +209,10 @@ from mypy_boto3_docdb.literals import ApplyMethod, ...
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
 - [SourceType](./literals.md#sourcetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Amplify](./README.md) > Paginators
 
-Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+Auto-generated documentation for
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+type annotations stubs module
+[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Paginators for boto3 Amplify module](#paginators-for-boto3-amplify-module)
   - [ListAppsPaginator](#listappspaginator)
@@ -24,16 +26,17 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("amplify").get_paginator("list_apps")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
+Boto3 documentation:
+[Amplify.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
 
-```python
-class ListAppsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAppsResultTypeDef]:
-        pass
-```
+Arguments for `ListAppsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+
+`ListAppsPaginator.paginate` returns
+`Iterator`\[[ListAppsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listappsresulttypedef)\].
+
 ## ListBranchesPaginator
 
 Type annotations for `boto3.client("amplify").get_paginator("list_branches")`.
@@ -47,20 +50,22 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
     return boto3.client("amplify").get_paginator("list_branches")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
+Boto3 documentation:
+[Amplify.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
 
-```python
-class ListBranchesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        appId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBranchesResultTypeDef]:
-        pass
-```
+Arguments for `ListBranchesPaginator.paginate` method:
+
+- `appId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+
+`ListBranchesPaginator.paginate` returns
+`Iterator`\[[ListBranchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listbranchesresulttypedef)\].
+
 ## ListDomainAssociationsPaginator
 
-Type annotations for `boto3.client("amplify").get_paginator("list_domain_associations")`.
+Type annotations for
+`boto3.client("amplify").get_paginator("list_domain_associations")`.
 
 Can be used directly:
 
@@ -71,17 +76,18 @@ def get_list_domain_associations_paginator() -> ListDomainAssociationsPaginator:
     return boto3.client("amplify").get_paginator("list_domain_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
+Boto3 documentation:
+[Amplify.Paginator.ListDomainAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
 
-```python
-class ListDomainAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        appId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDomainAssociationsResultTypeDef]:
-        pass
-```
+Arguments for `ListDomainAssociationsPaginator.paginate` method:
+
+- `appId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+
+`ListDomainAssociationsPaginator.paginate` returns
+`Iterator`\[[ListDomainAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listdomainassociationsresulttypedef)\].
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("amplify").get_paginator("list_jobs")`.
@@ -95,15 +101,15 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("amplify").get_paginator("list_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
+Boto3 documentation:
+[Amplify.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
 
-```python
-class ListJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        appId: str,
-        branchName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListJobsResultTypeDef]:
-        pass
-```
+Arguments for `ListJobsPaginator.paginate` method:
+
+- `appId`: `str` *(required)*
+- `branchName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+
+`ListJobsPaginator.paginate` returns
+`Iterator`\[[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listjobsresulttypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DLM
 
-Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
-type annotations stubs module [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+Auto-generated documentation for
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+type annotations stubs module
+[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ```bash
 pip install mypy-boto3-dlm
@@ -18,7 +20,7 @@ pip install mypy-boto3-dlm
 
 ## DLMClient
 
-Type annotations for  `boto3.client("dlm")` as [DLMClient](./client.md)
+Type annotations for `boto3.client("dlm")` as [DLMClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_dlm.client import DLMClient
 ```
 
-
 DLMClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_lifecycle_policy](./client.md#create-lifecycle-policy)
 - [delete_lifecycle_policy](./client.md#delete-lifecycle-policy)
@@ -43,24 +43,13 @@ DLMClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_lifecycle_policy](./client.md#update-lifecycle-policy)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -83,13 +72,10 @@ from mypy_boto3_dlm.literals import EventSourceValues, ...
 - [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
 - [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

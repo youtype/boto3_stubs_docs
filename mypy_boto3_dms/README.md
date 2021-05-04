@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DatabaseMigrationService
 
-Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+Auto-generated documentation for
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+type annotations stubs module
+[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ```bash
 pip install mypy-boto3-dms
@@ -20,7 +22,8 @@ pip install mypy-boto3-dms
 
 ## DatabaseMigrationServiceClient
 
-Type annotations for  `boto3.client("dms")` as [DatabaseMigrationServiceClient](./client.md)
+Type annotations for `boto3.client("dms")` as
+[DatabaseMigrationServiceClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 ```
 
-
 DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags_to_resource](./client.md#add-tags-to-resource)
 - [apply_pending_maintenance_action](./client.md#apply-pending-maintenance-action)
 - [can_paginate](./client.md#can-paginate)
@@ -94,10 +95,8 @@ DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
 - [stop_replication_task](./client.md#stop-replication-task)
 - [test_connection](./client.md#test-connection)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedFault](./client.md#accessdeniedfault)
 - [ClientError](./client.md#clienterror)
 - [InsufficientResourceCapacityFault](./client.md#insufficientresourcecapacityfault)
@@ -123,14 +122,10 @@ DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
 - [SubnetAlreadyInUse](./client.md#subnetalreadyinuse)
 - [UpgradeDependencyFailureFault](./client.md#upgradedependencyfailurefault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("dms").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("dms").get_paginator("...")`.
 
 Can be used directly:
 
@@ -152,12 +147,10 @@ from mypy_boto3_dms.paginators import DescribeCertificatesPaginator, ...
 - [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
 - [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("dms").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("dms").get_waiter("...")`.
 
 Can be used directly:
 
@@ -173,9 +166,6 @@ from mypy_boto3_dms.waiters import EndpointDeletedWaiter, ...
 - [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
 - [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
 - [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
-
-
-
 
 ## Literals
 
@@ -233,13 +223,10 @@ from mypy_boto3_dms.literals import AuthMechanismValue, ...
 - [TargetDbType](./literals.md#targetdbtype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie](./README.md) > Literals
 
-Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+Auto-generated documentation for
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+type annotations stubs module
+[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [Literals for boto3 Macie module](#literals-for-boto3-macie-module)
   - [ListMemberAccountsPaginatorName](#listmemberaccountspaginatorname)

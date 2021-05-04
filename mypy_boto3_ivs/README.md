@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IVS
 
-Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+Auto-generated documentation for
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+type annotations stubs module
+[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 ```bash
 pip install mypy-boto3-ivs
@@ -19,7 +21,7 @@ pip install mypy-boto3-ivs
 
 ## IVSClient
 
-Type annotations for  `boto3.client("ivs")` as [IVSClient](./client.md)
+Type annotations for `boto3.client("ivs")` as [IVSClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_ivs.client import IVSClient
 ```
 
-
 IVSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_get_channel](./client.md#batch-get-channel)
 - [batch_get_stream_key](./client.md#batch-get-stream-key)
 - [can_paginate](./client.md#can-paginate)
@@ -63,10 +63,8 @@ IVSClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_channel](./client.md#update-channel)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ChannelNotBroadcasting](./client.md#channelnotbroadcasting)
 - [ClientError](./client.md#clienterror)
@@ -79,14 +77,10 @@ IVSClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ivs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ivs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -99,11 +93,6 @@ from mypy_boto3_ivs.paginators import ListChannelsPaginator, ...
 - [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
 - [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -126,13 +115,10 @@ from mypy_boto3_ivs.literals import ChannelLatencyMode, ...
 - [StreamHealth](./literals.md#streamhealth)
 - [StreamState](./literals.md#streamstate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

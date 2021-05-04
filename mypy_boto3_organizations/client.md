@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Organizations](./README.md) > OrganizationsClient
 
-Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+Auto-generated documentation for
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+type annotations stubs module
+[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [OrganizationsClient for boto3 Organizations module](#organizationsclient-for-boto3-organizations-module)
   - [OrganizationsClient](#organizationsclient)
@@ -77,12 +79,13 @@ def get_organizations_client() -> OrganizationsClient:
     return boto3.client("organizations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
+Boto3 documentation:
+[Organizations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_organizations.client import Exceptions
@@ -90,7 +93,6 @@ from mypy_boto3_organizations.client import Exceptions
 def handle_error(exc: Exceptions.AWSOrganizationsNotInUseException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -140,833 +142,848 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnsupportedAPIEndpointException`
 
-
 ## Methods
-
 
 ### accept_handshake
 
 Type annotations for `boto3.client("organizations").accept_handshake` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake]
+Boto3 documentation:
+[Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
 
-```python
-def accept_handshake(
-    self,
-    HandshakeId: str
-) -> AcceptHandshakeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HandshakeId`: `str` *(required)*
+
+Returns
+[AcceptHandshakeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#accepthandshakeresponsetypedef).
 
 ### attach_policy
 
 Type annotations for `boto3.client("organizations").attach_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy]
+Boto3 documentation:
+[Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
 
-```python
-def attach_policy(
-    self,
-    PolicyId: str,
-    TargetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `TargetId`: `str` *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("organizations").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate]
+Boto3 documentation:
+[Organizations.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_handshake
 
 Type annotations for `boto3.client("organizations").cancel_handshake` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake]
+Boto3 documentation:
+[Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
 
-```python
-def cancel_handshake(
-    self,
-    HandshakeId: str
-) -> CancelHandshakeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HandshakeId`: `str` *(required)*
+
+Returns
+[CancelHandshakeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#cancelhandshakeresponsetypedef).
 
 ### create_account
 
 Type annotations for `boto3.client("organizations").create_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account]
+Boto3 documentation:
+[Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
 
-```python
-def create_account(
-    self,
-    Email: str,
-    AccountName: str,
-    RoleName: str = None,
-    IamUserAccessToBilling: IAMUserAccessToBilling = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Email`: `str` *(required)*
+- `AccountName`: `str` *(required)*
+- `RoleName`: `str`
+- `IamUserAccessToBilling`:
+  [IAMUserAccessToBilling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#iamuseraccesstobilling)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createaccountresponsetypedef).
 
 ### create_gov_cloud_account
 
-Type annotations for `boto3.client("organizations").create_gov_cloud_account` method.
+Type annotations for `boto3.client("organizations").create_gov_cloud_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account]
+Boto3 documentation:
+[Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
-```python
-def create_gov_cloud_account(
-    self,
-    Email: str,
-    AccountName: str,
-    RoleName: str = None,
-    IamUserAccessToBilling: IAMUserAccessToBilling = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateGovCloudAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Email`: `str` *(required)*
+- `AccountName`: `str` *(required)*
+- `RoleName`: `str`
+- `IamUserAccessToBilling`:
+  [IAMUserAccessToBilling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#iamuseraccesstobilling)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateGovCloudAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#creategovcloudaccountresponsetypedef).
 
 ### create_organization
 
-Type annotations for `boto3.client("organizations").create_organization` method.
+Type annotations for `boto3.client("organizations").create_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization]
+Boto3 documentation:
+[Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
 
-```python
-def create_organization(
-    self,
-    FeatureSet: OrganizationFeatureSet = None
-) -> CreateOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FeatureSet`:
+  [OrganizationFeatureSet](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#organizationfeatureset)
+
+Returns
+[CreateOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createorganizationresponsetypedef).
 
 ### create_organizational_unit
 
-Type annotations for `boto3.client("organizations").create_organizational_unit` method.
+Type annotations for `boto3.client("organizations").create_organizational_unit`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit]
+Boto3 documentation:
+[Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
 
-```python
-def create_organizational_unit(
-    self,
-    ParentId: str,
-    Name: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateOrganizationalUnitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateOrganizationalUnitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createorganizationalunitresponsetypedef).
 
 ### create_policy
 
 Type annotations for `boto3.client("organizations").create_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy]
+Boto3 documentation:
+[Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
 
-```python
-def create_policy(
-    self,
-    Content: str,
-    Description: str,
-    Name: str,
-    Type: PolicyType,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Content`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Type`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createpolicyresponsetypedef).
 
 ### decline_handshake
 
 Type annotations for `boto3.client("organizations").decline_handshake` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake]
+Boto3 documentation:
+[Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
-```python
-def decline_handshake(
-    self,
-    HandshakeId: str
-) -> DeclineHandshakeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HandshakeId`: `str` *(required)*
+
+Returns
+[DeclineHandshakeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#declinehandshakeresponsetypedef).
 
 ### delete_organization
 
-Type annotations for `boto3.client("organizations").delete_organization` method.
+Type annotations for `boto3.client("organizations").delete_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization]
-
-```python
-def delete_organization(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[Organizations.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
 
 ### delete_organizational_unit
 
-Type annotations for `boto3.client("organizations").delete_organizational_unit` method.
+Type annotations for `boto3.client("organizations").delete_organizational_unit`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit]
+Boto3 documentation:
+[Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
 
-```python
-def delete_organizational_unit(
-    self,
-    OrganizationalUnitId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `OrganizationalUnitId`: `str` *(required)*
 
 ### delete_policy
 
 Type annotations for `boto3.client("organizations").delete_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy]
+Boto3 documentation:
+[Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
 
-```python
-def delete_policy(
-    self,
-    PolicyId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
 
 ### deregister_delegated_administrator
 
-Type annotations for `boto3.client("organizations").deregister_delegated_administrator` method.
+Type annotations for
+`boto3.client("organizations").deregister_delegated_administrator` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator]
+Boto3 documentation:
+[Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
 
-```python
-def deregister_delegated_administrator(
-    self,
-    AccountId: str,
-    ServicePrincipal: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ServicePrincipal`: `str` *(required)*
 
 ### describe_account
 
 Type annotations for `boto3.client("organizations").describe_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account]
+Boto3 documentation:
+[Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
 
-```python
-def describe_account(
-    self,
-    AccountId: str
-) -> DescribeAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[DescribeAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describeaccountresponsetypedef).
 
 ### describe_create_account_status
 
-Type annotations for `boto3.client("organizations").describe_create_account_status` method.
+Type annotations for
+`boto3.client("organizations").describe_create_account_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status]
+Boto3 documentation:
+[Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
-```python
-def describe_create_account_status(
-    self,
-    CreateAccountRequestId: str
-) -> DescribeCreateAccountStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CreateAccountRequestId`: `str` *(required)*
+
+Returns
+[DescribeCreateAccountStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describecreateaccountstatusresponsetypedef).
 
 ### describe_effective_policy
 
-Type annotations for `boto3.client("organizations").describe_effective_policy` method.
+Type annotations for `boto3.client("organizations").describe_effective_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy]
+Boto3 documentation:
+[Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
 
-```python
-def describe_effective_policy(
-    self,
-    PolicyType: EffectivePolicyType,
-    TargetId: str = None
-) -> DescribeEffectivePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyType`:
+  [EffectivePolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#effectivepolicytype)
+  *(required)*
+- `TargetId`: `str`
+
+Returns
+[DescribeEffectivePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describeeffectivepolicyresponsetypedef).
 
 ### describe_handshake
 
 Type annotations for `boto3.client("organizations").describe_handshake` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake]
+Boto3 documentation:
+[Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
-```python
-def describe_handshake(
-    self,
-    HandshakeId: str
-) -> DescribeHandshakeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HandshakeId`: `str` *(required)*
+
+Returns
+[DescribeHandshakeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describehandshakeresponsetypedef).
 
 ### describe_organization
 
-Type annotations for `boto3.client("organizations").describe_organization` method.
+Type annotations for `boto3.client("organizations").describe_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization]
+Boto3 documentation:
+[Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
 
-```python
-def describe_organization(
-    self
-) -> DescribeOrganizationResponseTypeDef:
-    pass
-```
+Returns
+[DescribeOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describeorganizationresponsetypedef).
 
 ### describe_organizational_unit
 
-Type annotations for `boto3.client("organizations").describe_organizational_unit` method.
+Type annotations for
+`boto3.client("organizations").describe_organizational_unit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit]
+Boto3 documentation:
+[Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
-```python
-def describe_organizational_unit(
-    self,
-    OrganizationalUnitId: str
-) -> DescribeOrganizationalUnitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationalUnitId`: `str` *(required)*
+
+Returns
+[DescribeOrganizationalUnitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describeorganizationalunitresponsetypedef).
 
 ### describe_policy
 
 Type annotations for `boto3.client("organizations").describe_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy]
+Boto3 documentation:
+[Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
 
-```python
-def describe_policy(
-    self,
-    PolicyId: str
-) -> DescribePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+
+Returns
+[DescribePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#describepolicyresponsetypedef).
 
 ### detach_policy
 
 Type annotations for `boto3.client("organizations").detach_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy]
+Boto3 documentation:
+[Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
 
-```python
-def detach_policy(
-    self,
-    PolicyId: str,
-    TargetId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `TargetId`: `str` *(required)*
 
 ### disable_aws_service_access
 
-Type annotations for `boto3.client("organizations").disable_aws_service_access` method.
+Type annotations for `boto3.client("organizations").disable_aws_service_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access]
+Boto3 documentation:
+[Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
 
-```python
-def disable_aws_service_access(
-    self,
-    ServicePrincipal: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServicePrincipal`: `str` *(required)*
 
 ### disable_policy_type
 
-Type annotations for `boto3.client("organizations").disable_policy_type` method.
+Type annotations for `boto3.client("organizations").disable_policy_type`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type]
+Boto3 documentation:
+[Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
 
-```python
-def disable_policy_type(
-    self,
-    RootId: str,
-    PolicyType: PolicyType
-) -> DisablePolicyTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RootId`: `str` *(required)*
+- `PolicyType`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+
+Returns
+[DisablePolicyTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#disablepolicytyperesponsetypedef).
 
 ### enable_all_features
 
-Type annotations for `boto3.client("organizations").enable_all_features` method.
+Type annotations for `boto3.client("organizations").enable_all_features`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features]
+Boto3 documentation:
+[Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
 
-```python
-def enable_all_features(
-    self
-) -> EnableAllFeaturesResponseTypeDef:
-    pass
-```
+Returns
+[EnableAllFeaturesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#enableallfeaturesresponsetypedef).
 
 ### enable_aws_service_access
 
-Type annotations for `boto3.client("organizations").enable_aws_service_access` method.
+Type annotations for `boto3.client("organizations").enable_aws_service_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access]
+Boto3 documentation:
+[Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
-```python
-def enable_aws_service_access(
-    self,
-    ServicePrincipal: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServicePrincipal`: `str` *(required)*
 
 ### enable_policy_type
 
 Type annotations for `boto3.client("organizations").enable_policy_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type]
+Boto3 documentation:
+[Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
 
-```python
-def enable_policy_type(
-    self,
-    RootId: str,
-    PolicyType: PolicyType
-) -> EnablePolicyTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RootId`: `str` *(required)*
+- `PolicyType`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+
+Returns
+[EnablePolicyTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#enablepolicytyperesponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("organizations").generate_presigned_url` method.
+Type annotations for `boto3.client("organizations").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url]
+Boto3 documentation:
+[Organizations.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### invite_account_to_organization
 
-Type annotations for `boto3.client("organizations").invite_account_to_organization` method.
+Type annotations for
+`boto3.client("organizations").invite_account_to_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization]
+Boto3 documentation:
+[Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
 
-```python
-def invite_account_to_organization(
-    self,
-    Target: "HandshakePartyTypeDef",
-    Notes: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> InviteAccountToOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Target`:
+  [HandshakePartyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakepartytypedef)
+  *(required)*
+- `Notes`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+
+Returns
+[InviteAccountToOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#inviteaccounttoorganizationresponsetypedef).
 
 ### leave_organization
 
 Type annotations for `boto3.client("organizations").leave_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization]
-
-```python
-def leave_organization(
-    self
-) -> None:
-    pass
-```
+Boto3 documentation:
+[Organizations.Client.leave_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
 
 ### list_accounts
 
 Type annotations for `boto3.client("organizations").list_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts]
+Boto3 documentation:
+[Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
 
-```python
-def list_accounts(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listaccountsresponsetypedef).
 
 ### list_accounts_for_parent
 
-Type annotations for `boto3.client("organizations").list_accounts_for_parent` method.
+Type annotations for `boto3.client("organizations").list_accounts_for_parent`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent]
+Boto3 documentation:
+[Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
 
-```python
-def list_accounts_for_parent(
-    self,
-    ParentId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAccountsForParentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAccountsForParentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listaccountsforparentresponsetypedef).
 
 ### list_aws_service_access_for_organization
 
-Type annotations for `boto3.client("organizations").list_aws_service_access_for_organization` method.
+Type annotations for
+`boto3.client("organizations").list_aws_service_access_for_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization]
+Boto3 documentation:
+[Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
-```python
-def list_aws_service_access_for_organization(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListAWSServiceAccessForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAWSServiceAccessForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listawsserviceaccessfororganizationresponsetypedef).
 
 ### list_children
 
 Type annotations for `boto3.client("organizations").list_children` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children]
+Boto3 documentation:
+[Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
 
-```python
-def list_children(
-    self,
-    ParentId: str,
-    ChildType: ChildType,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListChildrenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentId`: `str` *(required)*
+- `ChildType`:
+  [ChildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#childtype)
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListChildrenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listchildrenresponsetypedef).
 
 ### list_create_account_status
 
-Type annotations for `boto3.client("organizations").list_create_account_status` method.
+Type annotations for `boto3.client("organizations").list_create_account_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status]
+Boto3 documentation:
+[Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
 
-```python
-def list_create_account_status(
-    self,
-    States: List[CreateAccountState] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListCreateAccountStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `States`:
+  `List`\[[CreateAccountState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#createaccountstate)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCreateAccountStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listcreateaccountstatusresponsetypedef).
 
 ### list_delegated_administrators
 
-Type annotations for `boto3.client("organizations").list_delegated_administrators` method.
+Type annotations for
+`boto3.client("organizations").list_delegated_administrators` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators]
+Boto3 documentation:
+[Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
 
-```python
-def list_delegated_administrators(
-    self,
-    ServicePrincipal: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDelegatedAdministratorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServicePrincipal`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDelegatedAdministratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listdelegatedadministratorsresponsetypedef).
 
 ### list_delegated_services_for_account
 
-Type annotations for `boto3.client("organizations").list_delegated_services_for_account` method.
+Type annotations for
+`boto3.client("organizations").list_delegated_services_for_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account]
+Boto3 documentation:
+[Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
 
-```python
-def list_delegated_services_for_account(
-    self,
-    AccountId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDelegatedServicesForAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDelegatedServicesForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listdelegatedservicesforaccountresponsetypedef).
 
 ### list_handshakes_for_account
 
-Type annotations for `boto3.client("organizations").list_handshakes_for_account` method.
+Type annotations for
+`boto3.client("organizations").list_handshakes_for_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account]
+Boto3 documentation:
+[Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
-```python
-def list_handshakes_for_account(
-    self,
-    Filter: HandshakeFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHandshakesForAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [HandshakeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakefiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHandshakesForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listhandshakesforaccountresponsetypedef).
 
 ### list_handshakes_for_organization
 
-Type annotations for `boto3.client("organizations").list_handshakes_for_organization` method.
+Type annotations for
+`boto3.client("organizations").list_handshakes_for_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization]
+Boto3 documentation:
+[Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
-```python
-def list_handshakes_for_organization(
-    self,
-    Filter: HandshakeFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHandshakesForOrganizationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [HandshakeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakefiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHandshakesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listhandshakesfororganizationresponsetypedef).
 
 ### list_organizational_units_for_parent
 
-Type annotations for `boto3.client("organizations").list_organizational_units_for_parent` method.
+Type annotations for
+`boto3.client("organizations").list_organizational_units_for_parent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent]
+Boto3 documentation:
+[Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
 
-```python
-def list_organizational_units_for_parent(
-    self,
-    ParentId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListOrganizationalUnitsForParentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListOrganizationalUnitsForParentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listorganizationalunitsforparentresponsetypedef).
 
 ### list_parents
 
 Type annotations for `boto3.client("organizations").list_parents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents]
+Boto3 documentation:
+[Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
 
-```python
-def list_parents(
-    self,
-    ChildId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListParentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChildId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListParentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listparentsresponsetypedef).
 
 ### list_policies
 
 Type annotations for `boto3.client("organizations").list_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies]
+Boto3 documentation:
+[Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
 
-```python
-def list_policies(
-    self,
-    Filter: PolicyType,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listpoliciesresponsetypedef).
 
 ### list_policies_for_target
 
-Type annotations for `boto3.client("organizations").list_policies_for_target` method.
+Type annotations for `boto3.client("organizations").list_policies_for_target`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target]
+Boto3 documentation:
+[Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
 
-```python
-def list_policies_for_target(
-    self,
-    TargetId: str,
-    Filter: PolicyType,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPoliciesForTargetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TargetId`: `str` *(required)*
+- `Filter`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPoliciesForTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listpoliciesfortargetresponsetypedef).
 
 ### list_roots
 
 Type annotations for `boto3.client("organizations").list_roots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots]
+Boto3 documentation:
+[Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
 
-```python
-def list_roots(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListRootsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListRootsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listrootsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("organizations").list_tags_for_resource` method.
+Type annotations for `boto3.client("organizations").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource]
+Boto3 documentation:
+[Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceId: str,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_targets_for_policy
 
-Type annotations for `boto3.client("organizations").list_targets_for_policy` method.
+Type annotations for `boto3.client("organizations").list_targets_for_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy]
+Boto3 documentation:
+[Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
 
-```python
-def list_targets_for_policy(
-    self,
-    PolicyId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTargetsForPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTargetsForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listtargetsforpolicyresponsetypedef).
 
 ### move_account
 
 Type annotations for `boto3.client("organizations").move_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account]
+Boto3 documentation:
+[Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
 
-```python
-def move_account(
-    self,
-    AccountId: str,
-    SourceParentId: str,
-    DestinationParentId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `SourceParentId`: `str` *(required)*
+- `DestinationParentId`: `str` *(required)*
 
 ### register_delegated_administrator
 
-Type annotations for `boto3.client("organizations").register_delegated_administrator` method.
+Type annotations for
+`boto3.client("organizations").register_delegated_administrator` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator]
+Boto3 documentation:
+[Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
 
-```python
-def register_delegated_administrator(
-    self,
-    AccountId: str,
-    ServicePrincipal: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ServicePrincipal`: `str` *(required)*
 
 ### remove_account_from_organization
 
-Type annotations for `boto3.client("organizations").remove_account_from_organization` method.
+Type annotations for
+`boto3.client("organizations").remove_account_from_organization` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization]
+Boto3 documentation:
+[Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
 
-```python
-def remove_account_from_organization(
-    self,
-    AccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("organizations").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource]
+Boto3 documentation:
+[Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("organizations").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource]
+Boto3 documentation:
+[Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_organizational_unit
 
-Type annotations for `boto3.client("organizations").update_organizational_unit` method.
+Type annotations for `boto3.client("organizations").update_organizational_unit`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit]
+Boto3 documentation:
+[Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
 
-```python
-def update_organizational_unit(
-    self,
-    OrganizationalUnitId: str,
-    Name: str = None
-) -> UpdateOrganizationalUnitResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationalUnitId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[UpdateOrganizationalUnitResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#updateorganizationalunitresponsetypedef).
 
 ### update_policy
 
 Type annotations for `boto3.client("organizations").update_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy]
+Boto3 documentation:
+[Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
 
-```python
-def update_policy(
-    self,
-    PolicyId: str,
-    Name: str = None,
-    Description: str = None,
-    Content: str = None
-) -> UpdatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `PolicyId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `Content`: `str`
 
+Returns
+[UpdatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#updatepolicyresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("organizations").get_paginator` method with overloads.
+Type annotations for `boto3.client("organizations").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_aws_service_access_for_organization")` -> [ListAWSServiceAccessForOrganizationPaginator](./paginators.md#listawsserviceaccessfororganizationpaginator)
-- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-- `client.get_paginator("list_accounts_for_parent")` -> [ListAccountsForParentPaginator](./paginators.md#listaccountsforparentpaginator)
-- `client.get_paginator("list_children")` -> [ListChildrenPaginator](./paginators.md#listchildrenpaginator)
-- `client.get_paginator("list_create_account_status")` -> [ListCreateAccountStatusPaginator](./paginators.md#listcreateaccountstatuspaginator)
-- `client.get_paginator("list_delegated_administrators")` -> [ListDelegatedAdministratorsPaginator](./paginators.md#listdelegatedadministratorspaginator)
-- `client.get_paginator("list_delegated_services_for_account")` -> [ListDelegatedServicesForAccountPaginator](./paginators.md#listdelegatedservicesforaccountpaginator)
-- `client.get_paginator("list_handshakes_for_account")` -> [ListHandshakesForAccountPaginator](./paginators.md#listhandshakesforaccountpaginator)
-- `client.get_paginator("list_handshakes_for_organization")` -> [ListHandshakesForOrganizationPaginator](./paginators.md#listhandshakesfororganizationpaginator)
-- `client.get_paginator("list_organizational_units_for_parent")` -> [ListOrganizationalUnitsForParentPaginator](./paginators.md#listorganizationalunitsforparentpaginator)
-- `client.get_paginator("list_parents")` -> [ListParentsPaginator](./paginators.md#listparentspaginator)
-- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_policies_for_target")` -> [ListPoliciesForTargetPaginator](./paginators.md#listpoliciesfortargetpaginator)
-- `client.get_paginator("list_roots")` -> [ListRootsPaginator](./paginators.md#listrootspaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_targets_for_policy")` -> [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
-
-
+- `client.get_paginator("list_aws_service_access_for_organization")` ->
+  [ListAWSServiceAccessForOrganizationPaginator](./paginators.md#listawsserviceaccessfororganizationpaginator)
+- `client.get_paginator("list_accounts")` ->
+  [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+- `client.get_paginator("list_accounts_for_parent")` ->
+  [ListAccountsForParentPaginator](./paginators.md#listaccountsforparentpaginator)
+- `client.get_paginator("list_children")` ->
+  [ListChildrenPaginator](./paginators.md#listchildrenpaginator)
+- `client.get_paginator("list_create_account_status")` ->
+  [ListCreateAccountStatusPaginator](./paginators.md#listcreateaccountstatuspaginator)
+- `client.get_paginator("list_delegated_administrators")` ->
+  [ListDelegatedAdministratorsPaginator](./paginators.md#listdelegatedadministratorspaginator)
+- `client.get_paginator("list_delegated_services_for_account")` ->
+  [ListDelegatedServicesForAccountPaginator](./paginators.md#listdelegatedservicesforaccountpaginator)
+- `client.get_paginator("list_handshakes_for_account")` ->
+  [ListHandshakesForAccountPaginator](./paginators.md#listhandshakesforaccountpaginator)
+- `client.get_paginator("list_handshakes_for_organization")` ->
+  [ListHandshakesForOrganizationPaginator](./paginators.md#listhandshakesfororganizationpaginator)
+- `client.get_paginator("list_organizational_units_for_parent")` ->
+  [ListOrganizationalUnitsForParentPaginator](./paginators.md#listorganizationalunitsforparentpaginator)
+- `client.get_paginator("list_parents")` ->
+  [ListParentsPaginator](./paginators.md#listparentspaginator)
+- `client.get_paginator("list_policies")` ->
+  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_policies_for_target")` ->
+  [ListPoliciesForTargetPaginator](./paginators.md#listpoliciesfortargetpaginator)
+- `client.get_paginator("list_roots")` ->
+  [ListRootsPaginator](./paginators.md#listrootspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_targets_for_policy")` ->
+  [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)

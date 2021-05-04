@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElastiCache](./README.md) > Paginators
 
-Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+Auto-generated documentation for
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+type annotations stubs module
+[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [Paginators for boto3 ElastiCache module](#paginators-for-boto3-elasticache-module)
   - [DescribeCacheClustersPaginator](#describecacheclusterspaginator)
@@ -26,7 +28,8 @@ type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/
 
 ## DescribeCacheClustersPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_clusters")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_clusters")`.
 
 Can be used directly:
 
@@ -37,22 +40,24 @@ def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
     return boto3.client("elasticache").get_paginator("describe_cache_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
 
-```python
-class DescribeCacheClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheClusterId: str = None,
-        ShowCacheNodeInfo: bool = None,
-        ShowCacheClustersNotInReplicationGroups: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheClusterMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheClustersPaginator.paginate` method:
+
+- `CacheClusterId`: `str`
+- `ShowCacheNodeInfo`: `bool`
+- `ShowCacheClustersNotInReplicationGroups`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheClustersPaginator.paginate` returns
+`Iterator`\[[CacheClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheclustermessagetypedef)\].
+
 ## DescribeCacheEngineVersionsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_engine_versions")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_engine_versions")`.
 
 Can be used directly:
 
@@ -63,23 +68,25 @@ def get_describe_cache_engine_versions_paginator() -> DescribeCacheEngineVersion
     return boto3.client("elasticache").get_paginator("describe_cache_engine_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
 
-```python
-class DescribeCacheEngineVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Engine: str = None,
-        EngineVersion: str = None,
-        CacheParameterGroupFamily: str = None,
-        DefaultOnly: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheEngineVersionMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `CacheParameterGroupFamily`: `str`
+- `DefaultOnly`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheEngineVersionsPaginator.paginate` returns
+`Iterator`\[[CacheEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheengineversionmessagetypedef)\].
+
 ## DescribeCacheParameterGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")`.
 
 Can be used directly:
 
@@ -90,20 +97,22 @@ def get_describe_cache_parameter_groups_paginator() -> DescribeCacheParameterGro
     return boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
 
-```python
-class DescribeCacheParameterGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheParameterGroupName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheParameterGroupsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
+
+- `CacheParameterGroupName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheParameterGroupsPaginator.paginate` returns
+`Iterator`\[[CacheParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupsmessagetypedef)\].
+
 ## DescribeCacheParametersPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_parameters")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_parameters")`.
 
 Can be used directly:
 
@@ -114,21 +123,23 @@ def get_describe_cache_parameters_paginator() -> DescribeCacheParametersPaginato
     return boto3.client("elasticache").get_paginator("describe_cache_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
 
-```python
-class DescribeCacheParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheParameterGroupName: str,
-        Source: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheParameterGroupDetailsTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheParametersPaginator.paginate` method:
+
+- `CacheParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheParametersPaginator.paginate` returns
+`Iterator`\[[CacheParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupdetailstypedef)\].
+
 ## DescribeCacheSecurityGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_security_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_security_groups")`.
 
 Can be used directly:
 
@@ -139,20 +150,22 @@ def get_describe_cache_security_groups_paginator() -> DescribeCacheSecurityGroup
     return boto3.client("elasticache").get_paginator("describe_cache_security_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
 
-```python
-class DescribeCacheSecurityGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheSecurityGroupName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheSecurityGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
+
+- `CacheSecurityGroupName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheSecurityGroupsPaginator.paginate` returns
+`Iterator`\[[CacheSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesecuritygroupmessagetypedef)\].
+
 ## DescribeCacheSubnetGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")`.
 
 Can be used directly:
 
@@ -163,20 +176,22 @@ def get_describe_cache_subnet_groups_paginator() -> DescribeCacheSubnetGroupsPag
     return boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeCacheSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
 
-```python
-class DescribeCacheSubnetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheSubnetGroupName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CacheSubnetGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
+
+- `CacheSubnetGroupName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCacheSubnetGroupsPaginator.paginate` returns
+`Iterator`\[[CacheSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesubnetgroupmessagetypedef)\].
+
 ## DescribeEngineDefaultParametersPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_engine_default_parameters")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_engine_default_parameters")`.
 
 Can be used directly:
 
@@ -187,20 +202,22 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
     return boto3.client("elasticache").get_paginator("describe_engine_default_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
 
-```python
-class DescribeEngineDefaultParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CacheParameterGroupFamily: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEngineDefaultParametersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
+
+- `CacheParameterGroupFamily`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEngineDefaultParametersPaginator.paginate` returns
+`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeenginedefaultparametersresulttypedef)\].
+
 ## DescribeEventsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_events")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_events")`.
 
 Can be used directly:
 
@@ -211,24 +228,27 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("elasticache").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SourceIdentifier: str = None,
-        SourceType: SourceType = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Duration: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EventsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `SourceIdentifier`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#eventsmessagetypedef)\].
+
 ## DescribeGlobalReplicationGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_global_replication_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_global_replication_groups")`.
 
 Can be used directly:
 
@@ -239,21 +259,23 @@ def get_describe_global_replication_groups_paginator() -> DescribeGlobalReplicat
     return boto3.client("elasticache").get_paginator("describe_global_replication_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeGlobalReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
 
-```python
-class DescribeGlobalReplicationGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalReplicationGroupId: str = None,
-        ShowMemberInfo: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGlobalReplicationGroupsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
+
+- `GlobalReplicationGroupId`: `str`
+- `ShowMemberInfo`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGlobalReplicationGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeglobalreplicationgroupsresulttypedef)\].
+
 ## DescribeReplicationGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_replication_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_replication_groups")`.
 
 Can be used directly:
 
@@ -264,20 +286,22 @@ def get_describe_replication_groups_paginator() -> DescribeReplicationGroupsPagi
     return boto3.client("elasticache").get_paginator("describe_replication_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
 
-```python
-class DescribeReplicationGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReplicationGroupId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReplicationGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
+
+- `ReplicationGroupId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReplicationGroupsPaginator.paginate` returns
+`Iterator`\[[ReplicationGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#replicationgroupmessagetypedef)\].
+
 ## DescribeReservedCacheNodesPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")`.
 
 Can be used directly:
 
@@ -288,25 +312,27 @@ def get_describe_reserved_cache_nodes_paginator() -> DescribeReservedCacheNodesP
     return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeReservedCacheNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
 
-```python
-class DescribeReservedCacheNodesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedCacheNodeId: str = None,
-        ReservedCacheNodesOfferingId: str = None,
-        CacheNodeType: str = None,
-        Duration: str = None,
-        ProductDescription: str = None,
-        OfferingType: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedCacheNodeMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
+
+- `ReservedCacheNodeId`: `str`
+- `ReservedCacheNodesOfferingId`: `str`
+- `CacheNodeType`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedCacheNodesPaginator.paginate` returns
+`Iterator`\[[ReservedCacheNodeMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodemessagetypedef)\].
+
 ## DescribeReservedCacheNodesOfferingsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")`.
 
 Can be used directly:
 
@@ -317,24 +343,26 @@ def get_describe_reserved_cache_nodes_offerings_paginator() -> DescribeReservedC
     return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeReservedCacheNodesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
 
-```python
-class DescribeReservedCacheNodesOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedCacheNodesOfferingId: str = None,
-        CacheNodeType: str = None,
-        Duration: str = None,
-        ProductDescription: str = None,
-        OfferingType: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedCacheNodesOfferingMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
+
+- `ReservedCacheNodesOfferingId`: `str`
+- `CacheNodeType`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedCacheNodesOfferingsPaginator.paginate` returns
+`Iterator`\[[ReservedCacheNodesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodesofferingmessagetypedef)\].
+
 ## DescribeServiceUpdatesPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_service_updates")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_service_updates")`.
 
 Can be used directly:
 
@@ -345,21 +373,24 @@ def get_describe_service_updates_paginator() -> DescribeServiceUpdatesPaginator:
     return boto3.client("elasticache").get_paginator("describe_service_updates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeServiceUpdates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
 
-```python
-class DescribeServiceUpdatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ServiceUpdateName: str = None,
-        ServiceUpdateStatus: List[ServiceUpdateStatus] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ServiceUpdatesMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
+
+- `ServiceUpdateName`: `str`
+- `ServiceUpdateStatus`:
+  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeServiceUpdatesPaginator.paginate` returns
+`Iterator`\[[ServiceUpdatesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#serviceupdatesmessagetypedef)\].
+
 ## DescribeSnapshotsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_snapshots")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_snapshots")`.
 
 Can be used directly:
 
@@ -370,24 +401,26 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return boto3.client("elasticache").get_paginator("describe_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
 
-```python
-class DescribeSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReplicationGroupId: str = None,
-        CacheClusterId: str = None,
-        SnapshotName: str = None,
-        SnapshotSource: str = None,
-        ShowNodeGroupConfig: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSnapshotsListMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeSnapshotsPaginator.paginate` method:
+
+- `ReplicationGroupId`: `str`
+- `CacheClusterId`: `str`
+- `SnapshotName`: `str`
+- `SnapshotSource`: `str`
+- `ShowNodeGroupConfig`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSnapshotsPaginator.paginate` returns
+`Iterator`\[[DescribeSnapshotsListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describesnapshotslistmessagetypedef)\].
+
 ## DescribeUpdateActionsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_update_actions")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_update_actions")`.
 
 Can be used directly:
 
@@ -398,27 +431,32 @@ def get_describe_update_actions_paginator() -> DescribeUpdateActionsPaginator:
     return boto3.client("elasticache").get_paginator("describe_update_actions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeUpdateActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
 
-```python
-class DescribeUpdateActionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ServiceUpdateName: str = None,
-        ReplicationGroupIds: List[str] = None,
-        CacheClusterIds: List[str] = None,
-        Engine: str = None,
-        ServiceUpdateStatus: List[ServiceUpdateStatus] = None,
-        ServiceUpdateTimeRange: TimeRangeFilterTypeDef = None,
-        UpdateActionStatus: List[UpdateActionStatus] = None,
-        ShowNodeLevelUpdateStatus: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[UpdateActionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeUpdateActionsPaginator.paginate` method:
+
+- `ServiceUpdateName`: `str`
+- `ReplicationGroupIds`: `List`\[`str`\]
+- `CacheClusterIds`: `List`\[`str`\]
+- `Engine`: `str`
+- `ServiceUpdateStatus`:
+  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+- `ServiceUpdateTimeRange`:
+  [TimeRangeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#timerangefiltertypedef)
+- `UpdateActionStatus`:
+  `List`\[[UpdateActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#updateactionstatus)\]
+- `ShowNodeLevelUpdateStatus`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeUpdateActionsPaginator.paginate` returns
+`Iterator`\[[UpdateActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionsmessagetypedef)\].
+
 ## DescribeUserGroupsPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_user_groups")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_user_groups")`.
 
 Can be used directly:
 
@@ -429,20 +467,22 @@ def get_describe_user_groups_paginator() -> DescribeUserGroupsPaginator:
     return boto3.client("elasticache").get_paginator("describe_user_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeUserGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
 
-```python
-class DescribeUserGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UserGroupId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeUserGroupsResultTypeDef]:
-        pass
-```
+Arguments for `DescribeUserGroupsPaginator.paginate` method:
+
+- `UserGroupId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeUserGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeUserGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusergroupsresulttypedef)\].
+
 ## DescribeUsersPaginator
 
-Type annotations for `boto3.client("elasticache").get_paginator("describe_users")`.
+Type annotations for
+`boto3.client("elasticache").get_paginator("describe_users")`.
 
 Can be used directly:
 
@@ -453,16 +493,17 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return boto3.client("elasticache").get_paginator("describe_users")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
+Boto3 documentation:
+[ElastiCache.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
 
-```python
-class DescribeUsersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Engine: str = None,
-        UserId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeUsersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeUsersPaginator.paginate` method:
+
+- `Engine`: `str`
+- `UserId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+
+`DescribeUsersPaginator.paginate` returns
+`Iterator`\[[DescribeUsersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusersresulttypedef)\].

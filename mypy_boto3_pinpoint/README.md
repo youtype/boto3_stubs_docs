@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Pinpoint
 
-Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+Auto-generated documentation for
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+type annotations stubs module
+[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 ```bash
 pip install mypy-boto3-pinpoint
@@ -18,7 +20,8 @@ pip install mypy-boto3-pinpoint
 
 ## PinpointClient
 
-Type annotations for  `boto3.client("pinpoint")` as [PinpointClient](./client.md)
+Type annotations for `boto3.client("pinpoint")` as
+[PinpointClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_pinpoint.client import PinpointClient
 ```
 
-
 PinpointClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_app](./client.md#create-app)
 - [create_campaign](./client.md#create-campaign)
@@ -147,10 +148,8 @@ PinpointClient [exceptions](./client.md#exceptions)
 - [update_voice_channel](./client.md#update-voice-channel)
 - [update_voice_template](./client.md#update-voice-template)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -160,15 +159,6 @@ PinpointClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [PayloadTooLargeException](./client.md#payloadtoolargeexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -201,15 +191,12 @@ from mypy_boto3_pinpoint.literals import Action, ...
 - [State](./literals.md#state)
 - [TemplateType](./literals.md#templatetype)
 - [TypeType](./literals.md#typetype)
-- [__EndpointTypesElement](./literals.md#--endpointtypeselement)
-
-
-
+- [\_\_EndpointTypesElement](./literals.md#--endpointtypeselement)
 
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

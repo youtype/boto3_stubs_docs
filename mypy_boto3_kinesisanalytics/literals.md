@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KinesisAnalytics](./README.md) > Literals
 
-Auto-generated documentation for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
-type annotations stubs module [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+Auto-generated documentation for
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+type annotations stubs module
+[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 - [Literals for boto3 KinesisAnalytics module](#literals-for-boto3-kinesisanalytics-module)
   - [ApplicationStatus](#applicationstatus)

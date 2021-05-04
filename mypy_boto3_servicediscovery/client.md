@@ -1,9 +1,12 @@
 # ServiceDiscoveryClient for boto3 ServiceDiscovery module
 
-> [Index](../README.md) > [ServiceDiscovery](./README.md) > ServiceDiscoveryClient
+> [Index](../README.md) > [ServiceDiscovery](./README.md) >
+> ServiceDiscoveryClient
 
-Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+Auto-generated documentation for
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+type annotations stubs module
+[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [ServiceDiscoveryClient for boto3 ServiceDiscovery module](#servicediscoveryclient-for-boto3-servicediscovery-module)
   - [ServiceDiscoveryClient](#servicediscoveryclient)
@@ -49,12 +52,13 @@ def get_servicediscovery_client() -> ServiceDiscoveryClient:
     return boto3.client("servicediscovery")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
+Boto3 documentation:
+[ServiceDiscovery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_servicediscovery.client import Exceptions
@@ -62,7 +66,6 @@ from mypy_boto3_servicediscovery.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -82,416 +85,435 @@ Exceptions:
 - `Exceptions.ServiceNotFound`
 - `Exceptions.TooManyTagsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("servicediscovery").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate]
+Boto3 documentation:
+[ServiceDiscovery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_http_namespace
 
-Type annotations for `boto3.client("servicediscovery").create_http_namespace` method.
+Type annotations for `boto3.client("servicediscovery").create_http_namespace`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace]
+Boto3 documentation:
+[ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
 
-```python
-def create_http_namespace(
-    self,
-    Name: str,
-    CreatorRequestId: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHttpNamespaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CreatorRequestId`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHttpNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createhttpnamespaceresponsetypedef).
 
 ### create_private_dns_namespace
 
-Type annotations for `boto3.client("servicediscovery").create_private_dns_namespace` method.
+Type annotations for
+`boto3.client("servicediscovery").create_private_dns_namespace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace]
+Boto3 documentation:
+[ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
 
-```python
-def create_private_dns_namespace(
-    self,
-    Name: str,
-    Vpc: str,
-    CreatorRequestId: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePrivateDnsNamespaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Vpc`: `str` *(required)*
+- `CreatorRequestId`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePrivateDnsNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createprivatednsnamespaceresponsetypedef).
 
 ### create_public_dns_namespace
 
-Type annotations for `boto3.client("servicediscovery").create_public_dns_namespace` method.
+Type annotations for
+`boto3.client("servicediscovery").create_public_dns_namespace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace]
+Boto3 documentation:
+[ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
 
-```python
-def create_public_dns_namespace(
-    self,
-    Name: str,
-    CreatorRequestId: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePublicDnsNamespaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CreatorRequestId`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePublicDnsNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createpublicdnsnamespaceresponsetypedef).
 
 ### create_service
 
 Type annotations for `boto3.client("servicediscovery").create_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service]
+Boto3 documentation:
+[ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
 
-```python
-def create_service(
-    self,
-    Name: str,
-    NamespaceId: str = None,
-    CreatorRequestId: str = None,
-    Description: str = None,
-    DnsConfig: "DnsConfigTypeDef" = None,
-    HealthCheckConfig: "HealthCheckConfigTypeDef" = None,
-    HealthCheckCustomConfig: "HealthCheckCustomConfigTypeDef" = None,
-    Tags: List["TagTypeDef"] = None,
-    Type: Literal['HTTP'] = None
-) -> CreateServiceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `NamespaceId`: `str`
+- `CreatorRequestId`: `str`
+- `Description`: `str`
+- `DnsConfig`:
+  [DnsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsconfigtypedef)
+- `HealthCheckConfig`:
+  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckconfigtypedef)
+- `HealthCheckCustomConfig`:
+  [HealthCheckCustomConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckcustomconfigtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+- `Type`: `Literal['HTTP']`
+
+Returns
+[CreateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createserviceresponsetypedef).
 
 ### delete_namespace
 
-Type annotations for `boto3.client("servicediscovery").delete_namespace` method.
+Type annotations for `boto3.client("servicediscovery").delete_namespace`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace]
+Boto3 documentation:
+[ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
 
-```python
-def delete_namespace(
-    self,
-    Id: str
-) -> DeleteNamespaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DeleteNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#deletenamespaceresponsetypedef).
 
 ### delete_service
 
 Type annotations for `boto3.client("servicediscovery").delete_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service]
+Boto3 documentation:
+[ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
 
-```python
-def delete_service(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_instance
 
-Type annotations for `boto3.client("servicediscovery").deregister_instance` method.
+Type annotations for `boto3.client("servicediscovery").deregister_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance]
+Boto3 documentation:
+[ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
 
-```python
-def deregister_instance(
-    self,
-    ServiceId: str,
-    InstanceId: str
-) -> DeregisterInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+
+Returns
+[DeregisterInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#deregisterinstanceresponsetypedef).
 
 ### discover_instances
 
-Type annotations for `boto3.client("servicediscovery").discover_instances` method.
+Type annotations for `boto3.client("servicediscovery").discover_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances]
+Boto3 documentation:
+[ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
 
-```python
-def discover_instances(
-    self,
-    NamespaceName: str,
-    ServiceName: str,
-    MaxResults: int = None,
-    QueryParameters: Dict[str, str] = None,
-    OptionalParameters: Dict[str, str] = None,
-    HealthStatus: HealthStatusFilter = None
-) -> DiscoverInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NamespaceName`: `str` *(required)*
+- `ServiceName`: `str` *(required)*
+- `MaxResults`: `int`
+- `QueryParameters`: `Dict`\[`str`, `str`\]
+- `OptionalParameters`: `Dict`\[`str`, `str`\]
+- `HealthStatus`:
+  [HealthStatusFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#healthstatusfilter)
+
+Returns
+[DiscoverInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#discoverinstancesresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("servicediscovery").generate_presigned_url` method.
+Type annotations for `boto3.client("servicediscovery").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url]
+Boto3 documentation:
+[ServiceDiscovery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_instance
 
 Type annotations for `boto3.client("servicediscovery").get_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance]
+Boto3 documentation:
+[ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
 
-```python
-def get_instance(
-    self,
-    ServiceId: str,
-    InstanceId: str
-) -> GetInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+
+Returns
+[GetInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getinstanceresponsetypedef).
 
 ### get_instances_health_status
 
-Type annotations for `boto3.client("servicediscovery").get_instances_health_status` method.
+Type annotations for
+`boto3.client("servicediscovery").get_instances_health_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status]
+Boto3 documentation:
+[ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
 
-```python
-def get_instances_health_status(
-    self,
-    ServiceId: str,
-    Instances: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetInstancesHealthStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `Instances`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetInstancesHealthStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getinstanceshealthstatusresponsetypedef).
 
 ### get_namespace
 
 Type annotations for `boto3.client("servicediscovery").get_namespace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace]
+Boto3 documentation:
+[ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
 
-```python
-def get_namespace(
-    self,
-    Id: str
-) -> GetNamespaceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getnamespaceresponsetypedef).
 
 ### get_operation
 
 Type annotations for `boto3.client("servicediscovery").get_operation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation]
+Boto3 documentation:
+[ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
 
-```python
-def get_operation(
-    self,
-    OperationId: str
-) -> GetOperationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OperationId`: `str` *(required)*
+
+Returns
+[GetOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getoperationresponsetypedef).
 
 ### get_service
 
 Type annotations for `boto3.client("servicediscovery").get_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service]
+Boto3 documentation:
+[ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
 
-```python
-def get_service(
-    self,
-    Id: str
-) -> GetServiceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getserviceresponsetypedef).
 
 ### list_instances
 
 Type annotations for `boto3.client("servicediscovery").list_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances]
+Boto3 documentation:
+[ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
 
-```python
-def list_instances(
-    self,
-    ServiceId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listinstancesresponsetypedef).
 
 ### list_namespaces
 
 Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces]
+Boto3 documentation:
+[ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
 
-```python
-def list_namespaces(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filters: List[NamespaceFilterTypeDef] = None
-) -> ListNamespacesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[NamespaceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacefiltertypedef)\]
+
+Returns
+[ListNamespacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listnamespacesresponsetypedef).
 
 ### list_operations
 
 Type annotations for `boto3.client("servicediscovery").list_operations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations]
+Boto3 documentation:
+[ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
 
-```python
-def list_operations(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filters: List[OperationFilterTypeDef] = None
-) -> ListOperationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[OperationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#operationfiltertypedef)\]
+
+Returns
+[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listoperationsresponsetypedef).
 
 ### list_services
 
 Type annotations for `boto3.client("servicediscovery").list_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services]
+Boto3 documentation:
+[ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
 
-```python
-def list_services(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filters: List[ServiceFilterTypeDef] = None
-) -> ListServicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[ServiceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicefiltertypedef)\]
+
+Returns
+[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("servicediscovery").list_tags_for_resource` method.
+Type annotations for `boto3.client("servicediscovery").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource]
+Boto3 documentation:
+[ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### register_instance
 
-Type annotations for `boto3.client("servicediscovery").register_instance` method.
+Type annotations for `boto3.client("servicediscovery").register_instance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance]
+Boto3 documentation:
+[ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
 
-```python
-def register_instance(
-    self,
-    ServiceId: str,
-    InstanceId: str,
-    Attributes: Dict[str, str],
-    CreatorRequestId: str = None
-) -> RegisterInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `CreatorRequestId`: `str`
+
+Returns
+[RegisterInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#registerinstanceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("servicediscovery").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource]
+Boto3 documentation:
+[ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("servicediscovery").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource]
+Boto3 documentation:
+[ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_instance_custom_health_status
 
-Type annotations for `boto3.client("servicediscovery").update_instance_custom_health_status` method.
+Type annotations for
+`boto3.client("servicediscovery").update_instance_custom_health_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status]
+Boto3 documentation:
+[ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
 
-```python
-def update_instance_custom_health_status(
-    self,
-    ServiceId: str,
-    InstanceId: str,
-    Status: CustomHealthStatus
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServiceId`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `Status`:
+  [CustomHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#customhealthstatus)
+  *(required)*
 
 ### update_service
 
 Type annotations for `boto3.client("servicediscovery").update_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service]
+Boto3 documentation:
+[ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
 
-```python
-def update_service(
-    self,
-    Id: str,
-    Service: ServiceChangeTypeDef
-) -> UpdateServiceResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `Service`:
+  [ServiceChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicechangetypedef)
+  *(required)*
 
+Returns
+[UpdateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#updateserviceresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("servicediscovery").get_paginator` method with overloads.
+Type annotations for `boto3.client("servicediscovery").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_namespaces")` -> [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
-- `client.get_paginator("list_operations")` -> [ListOperationsPaginator](./paginators.md#listoperationspaginator)
-- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
-
-
+- `client.get_paginator("list_instances")` ->
+  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_namespaces")` ->
+  [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+- `client.get_paginator("list_operations")` ->
+  [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+- `client.get_paginator("list_services")` ->
+  [ListServicesPaginator](./paginators.md#listservicespaginator)

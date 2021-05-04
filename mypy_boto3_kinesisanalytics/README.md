@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > KinesisAnalytics
 
-Auto-generated documentation for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
-type annotations stubs module [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+Auto-generated documentation for
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+type annotations stubs module
+[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 ```bash
 pip install mypy-boto3-kinesisanalytics
@@ -18,7 +20,8 @@ pip install mypy-boto3-kinesisanalytics
 
 ## KinesisAnalyticsClient
 
-Type annotations for  `boto3.client("kinesisanalytics")` as [KinesisAnalyticsClient](./client.md)
+Type annotations for `boto3.client("kinesisanalytics")` as
+[KinesisAnalyticsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 ```
 
-
 KinesisAnalyticsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_application_cloud_watch_logging_option](./client.md#add-application-cloud-watch-logging-option)
 - [add_application_input](./client.md#add-application-input)
 - [add_application_input_processing_configuration](./client.md#add-application-input-processing-configuration)
@@ -55,10 +56,8 @@ KinesisAnalyticsClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_application](./client.md#update-application)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CodeValidationException](./client.md#codevalidationexception)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -72,15 +71,6 @@ KinesisAnalyticsClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [UnableToDetectSchemaException](./client.md#unabletodetectschemaexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -96,13 +86,10 @@ from mypy_boto3_kinesisanalytics.literals import ApplicationStatus, ...
 - [InputStartingPosition](./literals.md#inputstartingposition)
 - [RecordFormatType](./literals.md#recordformattype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

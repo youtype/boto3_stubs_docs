@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppMesh](./README.md) > Literals
 
-Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+Auto-generated documentation for
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+type annotations stubs module
+[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Literals for boto3 AppMesh module](#literals-for-boto3-appmesh-module)
   - [DurationUnit](#durationunit)

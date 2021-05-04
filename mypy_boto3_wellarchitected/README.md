@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WellArchitected
 
-Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+Auto-generated documentation for
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+type annotations stubs module
+[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ```bash
 pip install mypy-boto3-wellarchitected
@@ -18,7 +20,8 @@ pip install mypy-boto3-wellarchitected
 
 ## WellArchitectedClient
 
-Type annotations for  `boto3.client("wellarchitected")` as [WellArchitectedClient](./client.md)
+Type annotations for `boto3.client("wellarchitected")` as
+[WellArchitectedClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
 ```
 
-
 WellArchitectedClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_lenses](./client.md#associate-lenses)
 - [can_paginate](./client.md#can-paginate)
 - [create_milestone](./client.md#create-milestone)
@@ -66,10 +67,8 @@ WellArchitectedClient [exceptions](./client.md#exceptions)
 - [update_workload_share](./client.md#update-workload-share)
 - [upgrade_lens_review](./client.md#upgrade-lens-review)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -78,15 +77,6 @@ WellArchitectedClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -108,13 +98,10 @@ from mypy_boto3_wellarchitected.literals import DifferenceStatus, ...
 - [WorkloadEnvironment](./literals.md#workloadenvironment)
 - [WorkloadImprovementStatus](./literals.md#workloadimprovementstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

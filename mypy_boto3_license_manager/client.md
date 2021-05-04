@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LicenseManager](./README.md) > LicenseManagerClient
 
-Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
-type annotations stubs module [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+Auto-generated documentation for
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+type annotations stubs module
+[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [LicenseManagerClient for boto3 LicenseManager module](#licensemanagerclient-for-boto3-licensemanager-module)
   - [LicenseManagerClient](#licensemanagerclient)
@@ -66,12 +68,13 @@ def get_license-manager_client() -> LicenseManagerClient:
     return boto3.client("license-manager")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
+Boto3 documentation:
+[LicenseManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_license_manager.client import Exceptions
@@ -79,7 +82,6 @@ from mypy_boto3_license_manager.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -102,717 +104,780 @@ Exceptions:
 - `Exceptions.UnsupportedDigitalSignatureMethodException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### accept_grant
 
 Type annotations for `boto3.client("license-manager").accept_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant]
+Boto3 documentation:
+[LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
 
-```python
-def accept_grant(
-    self,
-    GrantArn: str
-) -> AcceptGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArn`: `str` *(required)*
+
+Returns
+[AcceptGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#acceptgrantresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("license-manager").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate]
+Boto3 documentation:
+[LicenseManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### check_in_license
 
 Type annotations for `boto3.client("license-manager").check_in_license` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license]
+Boto3 documentation:
+[LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
 
-```python
-def check_in_license(
-    self,
-    LicenseConsumptionToken: str,
-    Beneficiary: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LicenseConsumptionToken`: `str` *(required)*
+- `Beneficiary`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### checkout_borrow_license
 
-Type annotations for `boto3.client("license-manager").checkout_borrow_license` method.
+Type annotations for `boto3.client("license-manager").checkout_borrow_license`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license]
+Boto3 documentation:
+[LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
 
-```python
-def checkout_borrow_license(
-    self,
-    LicenseArn: str,
-    Entitlements: List["EntitlementDataTypeDef"],
-    DigitalSignatureMethod: Literal['JWT_PS384'],
-    ClientToken: str,
-    NodeId: str = None,
-    CheckoutMetadata: List["MetadataTypeDef"] = None
-) -> CheckoutBorrowLicenseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `Entitlements`:
+  `List`\[[EntitlementDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementdatatypedef)\]
+  *(required)*
+- `DigitalSignatureMethod`: `Literal['JWT_PS384']` *(required)*
+- `ClientToken`: `str` *(required)*
+- `NodeId`: `str`
+- `CheckoutMetadata`:
+  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+
+Returns
+[CheckoutBorrowLicenseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#checkoutborrowlicenseresponsetypedef).
 
 ### checkout_license
 
 Type annotations for `boto3.client("license-manager").checkout_license` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license]
+Boto3 documentation:
+[LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
 
-```python
-def checkout_license(
-    self,
-    ProductSKU: str,
-    CheckoutType: Literal['PROVISIONAL'],
-    KeyFingerprint: str,
-    Entitlements: List["EntitlementDataTypeDef"],
-    ClientToken: str,
-    Beneficiary: str = None,
-    NodeId: str = None
-) -> CheckoutLicenseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductSKU`: `str` *(required)*
+- `CheckoutType`: `Literal['PROVISIONAL']` *(required)*
+- `KeyFingerprint`: `str` *(required)*
+- `Entitlements`:
+  `List`\[[EntitlementDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementdatatypedef)\]
+  *(required)*
+- `ClientToken`: `str` *(required)*
+- `Beneficiary`: `str`
+- `NodeId`: `str`
+
+Returns
+[CheckoutLicenseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#checkoutlicenseresponsetypedef).
 
 ### create_grant
 
 Type annotations for `boto3.client("license-manager").create_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant]
+Boto3 documentation:
+[LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
 
-```python
-def create_grant(
-    self,
-    ClientToken: str,
-    GrantName: str,
-    LicenseArn: str,
-    Principals: List[str],
-    HomeRegion: str,
-    AllowedOperations: List[AllowedOperation]
-) -> CreateGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientToken`: `str` *(required)*
+- `GrantName`: `str` *(required)*
+- `LicenseArn`: `str` *(required)*
+- `Principals`: `List`\[`str`\] *(required)*
+- `HomeRegion`: `str` *(required)*
+- `AllowedOperations`:
+  `List`\[[AllowedOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#allowedoperation)\]
+  *(required)*
+
+Returns
+[CreateGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#creategrantresponsetypedef).
 
 ### create_grant_version
 
-Type annotations for `boto3.client("license-manager").create_grant_version` method.
+Type annotations for `boto3.client("license-manager").create_grant_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version]
+Boto3 documentation:
+[LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
 
-```python
-def create_grant_version(
-    self,
-    ClientToken: str,
-    GrantArn: str,
-    GrantName: str = None,
-    AllowedOperations: List[AllowedOperation] = None,
-    Status: GrantStatus = None,
-    SourceVersion: str = None
-) -> CreateGrantVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientToken`: `str` *(required)*
+- `GrantArn`: `str` *(required)*
+- `GrantName`: `str`
+- `AllowedOperations`:
+  `List`\[[AllowedOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#allowedoperation)\]
+- `Status`:
+  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `SourceVersion`: `str`
+
+Returns
+[CreateGrantVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#creategrantversionresponsetypedef).
 
 ### create_license
 
 Type annotations for `boto3.client("license-manager").create_license` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license]
+Boto3 documentation:
+[LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
 
-```python
-def create_license(
-    self,
-    LicenseName: str,
-    ProductName: str,
-    ProductSKU: str,
-    Issuer: IssuerTypeDef,
-    HomeRegion: str,
-    Validity: "DatetimeRangeTypeDef",
-    Entitlements: List["EntitlementTypeDef"],
-    Beneficiary: str,
-    ConsumptionConfiguration: "ConsumptionConfigurationTypeDef",
-    ClientToken: str,
-    LicenseMetadata: List["MetadataTypeDef"] = None
-) -> CreateLicenseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseName`: `str` *(required)*
+- `ProductName`: `str` *(required)*
+- `ProductSKU`: `str` *(required)*
+- `Issuer`:
+  [IssuerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#issuertypedef)
+  *(required)*
+- `HomeRegion`: `str` *(required)*
+- `Validity`:
+  [DatetimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#datetimerangetypedef)
+  *(required)*
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementtypedef)\]
+  *(required)*
+- `Beneficiary`: `str` *(required)*
+- `ConsumptionConfiguration`:
+  [ConsumptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumptionconfigurationtypedef)
+  *(required)*
+- `ClientToken`: `str` *(required)*
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+
+Returns
+[CreateLicenseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#createlicenseresponsetypedef).
 
 ### create_license_configuration
 
-Type annotations for `boto3.client("license-manager").create_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").create_license_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
 
-```python
-def create_license_configuration(
-    self,
-    Name: str,
-    LicenseCountingType: LicenseCountingType,
-    Description: str = None,
-    LicenseCount: int = None,
-    LicenseCountHardLimit: bool = None,
-    LicenseRules: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    DisassociateWhenNotFound: bool = None,
-    ProductInformationList: List["ProductInformationTypeDef"] = None
-) -> CreateLicenseConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `LicenseCountingType`:
+  [LicenseCountingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensecountingtype)
+  *(required)*
+- `Description`: `str`
+- `LicenseCount`: `int`
+- `LicenseCountHardLimit`: `bool`
+- `LicenseRules`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#tagtypedef)\]
+- `DisassociateWhenNotFound`: `bool`
+- `ProductInformationList`:
+  `List`\[[ProductInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#productinformationtypedef)\]
+
+Returns
+[CreateLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#createlicenseconfigurationresponsetypedef).
 
 ### create_license_version
 
-Type annotations for `boto3.client("license-manager").create_license_version` method.
+Type annotations for `boto3.client("license-manager").create_license_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version]
+Boto3 documentation:
+[LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
 
-```python
-def create_license_version(
-    self,
-    LicenseArn: str,
-    LicenseName: str,
-    ProductName: str,
-    Issuer: IssuerTypeDef,
-    HomeRegion: str,
-    Validity: "DatetimeRangeTypeDef",
-    Entitlements: List["EntitlementTypeDef"],
-    ConsumptionConfiguration: "ConsumptionConfigurationTypeDef",
-    Status: LicenseStatus,
-    ClientToken: str,
-    LicenseMetadata: List["MetadataTypeDef"] = None,
-    SourceVersion: str = None
-) -> CreateLicenseVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `LicenseName`: `str` *(required)*
+- `ProductName`: `str` *(required)*
+- `Issuer`:
+  [IssuerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#issuertypedef)
+  *(required)*
+- `HomeRegion`: `str` *(required)*
+- `Validity`:
+  [DatetimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#datetimerangetypedef)
+  *(required)*
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementtypedef)\]
+  *(required)*
+- `ConsumptionConfiguration`:
+  [ConsumptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumptionconfigurationtypedef)
+  *(required)*
+- `Status`:
+  [LicenseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensestatus)
+  *(required)*
+- `ClientToken`: `str` *(required)*
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+- `SourceVersion`: `str`
+
+Returns
+[CreateLicenseVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#createlicenseversionresponsetypedef).
 
 ### create_token
 
 Type annotations for `boto3.client("license-manager").create_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token]
+Boto3 documentation:
+[LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
 
-```python
-def create_token(
-    self,
-    LicenseArn: str,
-    ClientToken: str,
-    RoleArns: List[str] = None,
-    ExpirationInDays: int = None,
-    TokenProperties: List[str] = None
-) -> CreateTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `RoleArns`: `List`\[`str`\]
+- `ExpirationInDays`: `int`
+- `TokenProperties`: `List`\[`str`\]
+
+Returns
+[CreateTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#createtokenresponsetypedef).
 
 ### delete_grant
 
 Type annotations for `boto3.client("license-manager").delete_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant]
+Boto3 documentation:
+[LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
 
-```python
-def delete_grant(
-    self,
-    GrantArn: str,
-    Version: str
-) -> DeleteGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArn`: `str` *(required)*
+- `Version`: `str` *(required)*
+
+Returns
+[DeleteGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#deletegrantresponsetypedef).
 
 ### delete_license
 
 Type annotations for `boto3.client("license-manager").delete_license` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license]
+Boto3 documentation:
+[LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
 
-```python
-def delete_license(
-    self,
-    LicenseArn: str,
-    SourceVersion: str
-) -> DeleteLicenseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `SourceVersion`: `str` *(required)*
+
+Returns
+[DeleteLicenseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#deletelicenseresponsetypedef).
 
 ### delete_license_configuration
 
-Type annotations for `boto3.client("license-manager").delete_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").delete_license_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
 
-```python
-def delete_license_configuration(
-    self,
-    LicenseConfigurationArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_token
 
 Type annotations for `boto3.client("license-manager").delete_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token]
+Boto3 documentation:
+[LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
 
-```python
-def delete_token(
-    self,
-    TokenId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TokenId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### extend_license_consumption
 
-Type annotations for `boto3.client("license-manager").extend_license_consumption` method.
+Type annotations for
+`boto3.client("license-manager").extend_license_consumption` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption]
+Boto3 documentation:
+[LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
 
-```python
-def extend_license_consumption(
-    self,
-    LicenseConsumptionToken: str,
-    DryRun: bool = None
-) -> ExtendLicenseConsumptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConsumptionToken`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ExtendLicenseConsumptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#extendlicenseconsumptionresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("license-manager").generate_presigned_url` method.
+Type annotations for `boto3.client("license-manager").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url]
+Boto3 documentation:
+[LicenseManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_access_token
 
 Type annotations for `boto3.client("license-manager").get_access_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token]
+Boto3 documentation:
+[LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
 
-```python
-def get_access_token(
-    self,
-    Token: str,
-    TokenProperties: List[str] = None
-) -> GetAccessTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Token`: `str` *(required)*
+- `TokenProperties`: `List`\[`str`\]
+
+Returns
+[GetAccessTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getaccesstokenresponsetypedef).
 
 ### get_grant
 
 Type annotations for `boto3.client("license-manager").get_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant]
+Boto3 documentation:
+[LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
 
-```python
-def get_grant(
-    self,
-    GrantArn: str,
-    Version: str = None
-) -> GetGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArn`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getgrantresponsetypedef).
 
 ### get_license
 
 Type annotations for `boto3.client("license-manager").get_license` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license]
+Boto3 documentation:
+[LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
 
-```python
-def get_license(
-    self,
-    LicenseArn: str,
-    Version: str = None
-) -> GetLicenseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `Version`: `str`
+
+Returns
+[GetLicenseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getlicenseresponsetypedef).
 
 ### get_license_configuration
 
-Type annotations for `boto3.client("license-manager").get_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").get_license_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
 
-```python
-def get_license_configuration(
-    self,
-    LicenseConfigurationArn: str
-) -> GetLicenseConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+
+Returns
+[GetLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getlicenseconfigurationresponsetypedef).
 
 ### get_license_usage
 
-Type annotations for `boto3.client("license-manager").get_license_usage` method.
+Type annotations for `boto3.client("license-manager").get_license_usage`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage]
+Boto3 documentation:
+[LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
 
-```python
-def get_license_usage(
-    self,
-    LicenseArn: str
-) -> GetLicenseUsageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+
+Returns
+[GetLicenseUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getlicenseusageresponsetypedef).
 
 ### get_service_settings
 
-Type annotations for `boto3.client("license-manager").get_service_settings` method.
+Type annotations for `boto3.client("license-manager").get_service_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings]
+Boto3 documentation:
+[LicenseManager.Client.get_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
 
-```python
-def get_service_settings(
-    self
-) -> GetServiceSettingsResponseTypeDef:
-    pass
-```
+Returns
+[GetServiceSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#getservicesettingsresponsetypedef).
 
 ### list_associations_for_license_configuration
 
-Type annotations for `boto3.client("license-manager").list_associations_for_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").list_associations_for_license_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
 
-```python
-def list_associations_for_license_configuration(
-    self,
-    LicenseConfigurationArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAssociationsForLicenseConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAssociationsForLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listassociationsforlicenseconfigurationresponsetypedef).
 
 ### list_distributed_grants
 
-Type annotations for `boto3.client("license-manager").list_distributed_grants` method.
+Type annotations for `boto3.client("license-manager").list_distributed_grants`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants]
+Boto3 documentation:
+[LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
 
-```python
-def list_distributed_grants(
-    self,
-    GrantArns: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDistributedGrantsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArns`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDistributedGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listdistributedgrantsresponsetypedef).
 
 ### list_failures_for_license_configuration_operations
 
-Type annotations for `boto3.client("license-manager").list_failures_for_license_configuration_operations` method.
+Type annotations for
+`boto3.client("license-manager").list_failures_for_license_configuration_operations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations]
+Boto3 documentation:
+[LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
 
-```python
-def list_failures_for_license_configuration_operations(
-    self,
-    LicenseConfigurationArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListFailuresForLicenseConfigurationOperationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFailuresForLicenseConfigurationOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listfailuresforlicenseconfigurationoperationsresponsetypedef).
 
 ### list_license_configurations
 
-Type annotations for `boto3.client("license-manager").list_license_configurations` method.
+Type annotations for
+`boto3.client("license-manager").list_license_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations]
+Boto3 documentation:
+[LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
 
-```python
-def list_license_configurations(
-    self,
-    LicenseConfigurationArns: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListLicenseConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArns`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+
+Returns
+[ListLicenseConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicenseconfigurationsresponsetypedef).
 
 ### list_license_specifications_for_resource
 
-Type annotations for `boto3.client("license-manager").list_license_specifications_for_resource` method.
+Type annotations for
+`boto3.client("license-manager").list_license_specifications_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource]
+Boto3 documentation:
+[LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
 
-```python
-def list_license_specifications_for_resource(
-    self,
-    ResourceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListLicenseSpecificationsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListLicenseSpecificationsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicensespecificationsforresourceresponsetypedef).
 
 ### list_license_versions
 
-Type annotations for `boto3.client("license-manager").list_license_versions` method.
+Type annotations for `boto3.client("license-manager").list_license_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions]
+Boto3 documentation:
+[LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
 
-```python
-def list_license_versions(
-    self,
-    LicenseArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLicenseVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLicenseVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicenseversionsresponsetypedef).
 
 ### list_licenses
 
 Type annotations for `boto3.client("license-manager").list_licenses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses]
+Boto3 documentation:
+[LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
 
-```python
-def list_licenses(
-    self,
-    LicenseArns: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLicensesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArns`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLicensesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicensesresponsetypedef).
 
 ### list_received_grants
 
-Type annotations for `boto3.client("license-manager").list_received_grants` method.
+Type annotations for `boto3.client("license-manager").list_received_grants`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants]
+Boto3 documentation:
+[LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
 
-```python
-def list_received_grants(
-    self,
-    GrantArns: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListReceivedGrantsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArns`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReceivedGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listreceivedgrantsresponsetypedef).
 
 ### list_received_licenses
 
-Type annotations for `boto3.client("license-manager").list_received_licenses` method.
+Type annotations for `boto3.client("license-manager").list_received_licenses`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses]
+Boto3 documentation:
+[LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
 
-```python
-def list_received_licenses(
-    self,
-    LicenseArns: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListReceivedLicensesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseArns`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReceivedLicensesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listreceivedlicensesresponsetypedef).
 
 ### list_resource_inventory
 
-Type annotations for `boto3.client("license-manager").list_resource_inventory` method.
+Type annotations for `boto3.client("license-manager").list_resource_inventory`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory]
+Boto3 documentation:
+[LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
 
-```python
-def list_resource_inventory(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[InventoryFilterTypeDef] = None
-) -> ListResourceInventoryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#inventoryfiltertypedef)\]
+
+Returns
+[ListResourceInventoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listresourceinventoryresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("license-manager").list_tags_for_resource` method.
+Type annotations for `boto3.client("license-manager").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource]
+Boto3 documentation:
+[LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_tokens
 
 Type annotations for `boto3.client("license-manager").list_tokens` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens]
+Boto3 documentation:
+[LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
 
-```python
-def list_tokens(
-    self,
-    TokenIds: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTokensResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TokenIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTokensResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listtokensresponsetypedef).
 
 ### list_usage_for_license_configuration
 
-Type annotations for `boto3.client("license-manager").list_usage_for_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").list_usage_for_license_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
 
-```python
-def list_usage_for_license_configuration(
-    self,
-    LicenseConfigurationArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> ListUsageForLicenseConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+
+Returns
+[ListUsageForLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listusageforlicenseconfigurationresponsetypedef).
 
 ### reject_grant
 
 Type annotations for `boto3.client("license-manager").reject_grant` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant]
+Boto3 documentation:
+[LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
 
-```python
-def reject_grant(
-    self,
-    GrantArn: str
-) -> RejectGrantResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `GrantArn`: `str` *(required)*
+
+Returns
+[RejectGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#rejectgrantresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("license-manager").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource]
+Boto3 documentation:
+[LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("license-manager").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource]
+Boto3 documentation:
+[LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_license_configuration
 
-Type annotations for `boto3.client("license-manager").update_license_configuration` method.
+Type annotations for
+`boto3.client("license-manager").update_license_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration]
+Boto3 documentation:
+[LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
 
-```python
-def update_license_configuration(
-    self,
-    LicenseConfigurationArn: str,
-    LicenseConfigurationStatus: LicenseConfigurationStatus = None,
-    LicenseRules: List[str] = None,
-    LicenseCount: int = None,
-    LicenseCountHardLimit: bool = None,
-    Name: str = None,
-    Description: str = None,
-    ProductInformationList: List["ProductInformationTypeDef"] = None,
-    DisassociateWhenNotFound: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `LicenseConfigurationStatus`:
+  [LicenseConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licenseconfigurationstatus)
+- `LicenseRules`: `List`\[`str`\]
+- `LicenseCount`: `int`
+- `LicenseCountHardLimit`: `bool`
+- `Name`: `str`
+- `Description`: `str`
+- `ProductInformationList`:
+  `List`\[[ProductInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#productinformationtypedef)\]
+- `DisassociateWhenNotFound`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_license_specifications_for_resource
 
-Type annotations for `boto3.client("license-manager").update_license_specifications_for_resource` method.
+Type annotations for
+`boto3.client("license-manager").update_license_specifications_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource]
+Boto3 documentation:
+[LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
 
-```python
-def update_license_specifications_for_resource(
-    self,
-    ResourceArn: str,
-    AddLicenseSpecifications: List["LicenseSpecificationTypeDef"] = None,
-    RemoveLicenseSpecifications: List["LicenseSpecificationTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `AddLicenseSpecifications`:
+  `List`\[[LicenseSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensespecificationtypedef)\]
+- `RemoveLicenseSpecifications`:
+  `List`\[[LicenseSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensespecificationtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_service_settings
 
-Type annotations for `boto3.client("license-manager").update_service_settings` method.
+Type annotations for `boto3.client("license-manager").update_service_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings]
+Boto3 documentation:
+[LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
 
-```python
-def update_service_settings(
-    self,
-    S3BucketArn: str = None,
-    SnsTopicArn: str = None,
-    OrganizationConfiguration: "OrganizationConfigurationTypeDef" = None,
-    EnableCrossAccountsDiscovery: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `S3BucketArn`: `str`
+- `SnsTopicArn`: `str`
+- `OrganizationConfiguration`:
+  [OrganizationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#organizationconfigurationtypedef)
+- `EnableCrossAccountsDiscovery`: `bool`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("license-manager").get_paginator` method with overloads.
+Type annotations for `boto3.client("license-manager").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_associations_for_license_configuration")` -> [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
-- `client.get_paginator("list_license_configurations")` -> [ListLicenseConfigurationsPaginator](./paginators.md#listlicenseconfigurationspaginator)
-- `client.get_paginator("list_license_specifications_for_resource")` -> [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
-- `client.get_paginator("list_resource_inventory")` -> [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
-- `client.get_paginator("list_usage_for_license_configuration")` -> [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
-
-
+- `client.get_paginator("list_associations_for_license_configuration")` ->
+  [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
+- `client.get_paginator("list_license_configurations")` ->
+  [ListLicenseConfigurationsPaginator](./paginators.md#listlicenseconfigurationspaginator)
+- `client.get_paginator("list_license_specifications_for_resource")` ->
+  [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
+- `client.get_paginator("list_resource_inventory")` ->
+  [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
+- `client.get_paginator("list_usage_for_license_configuration")` ->
+  [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)

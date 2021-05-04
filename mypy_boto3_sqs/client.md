@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SQS](./README.md) > SQSClient
 
-Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
-type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
+Auto-generated documentation for
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+type annotations stubs module
+[mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 - [SQSClient for boto3 SQS module](#sqsclient-for-boto3-sqs-module)
   - [SQSClient](#sqsclient)
@@ -46,12 +48,13 @@ def get_sqs_client() -> SQSClient:
     return boto3.client("sqs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client)
+Boto3 documentation:
+[SQS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sqs.client import Exceptions
@@ -59,7 +62,6 @@ from mypy_boto3_sqs.client import Exceptions
 def handle_error(exc: Exceptions.BatchEntryIdsNotDistinct) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -81,361 +83,344 @@ Exceptions:
 - `Exceptions.TooManyEntriesInBatchRequest`
 - `Exceptions.UnsupportedOperation`
 
-
 ## Methods
-
 
 ### add_permission
 
 Type annotations for `boto3.client("sqs").add_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission]
+Boto3 documentation:
+[SQS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission)
 
-```python
-def add_permission(
-    self,
-    QueueUrl: str,
-    Label: str,
-    AWSAccountIds: List[str],
-    Actions: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Label`: `str` *(required)*
+- `AWSAccountIds`: `List`\[`str`\] *(required)*
+- `Actions`: `List`\[`str`\] *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("sqs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.can_paginate]
+Boto3 documentation:
+[SQS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### change_message_visibility
 
 Type annotations for `boto3.client("sqs").change_message_visibility` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility]
+Boto3 documentation:
+[SQS.Client.change_message_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility)
 
-```python
-def change_message_visibility(
-    self,
-    QueueUrl: str,
-    ReceiptHandle: str,
-    VisibilityTimeout: int
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `ReceiptHandle`: `str` *(required)*
+- `VisibilityTimeout`: `int` *(required)*
 
 ### change_message_visibility_batch
 
-Type annotations for `boto3.client("sqs").change_message_visibility_batch` method.
+Type annotations for `boto3.client("sqs").change_message_visibility_batch`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch]
+Boto3 documentation:
+[SQS.Client.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch)
 
-```python
-def change_message_visibility_batch(
-    self,
-    QueueUrl: str,
-    Entries: List[ChangeMessageVisibilityBatchRequestEntryTypeDef]
-) -> ChangeMessageVisibilityBatchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Entries`:
+  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#changemessagevisibilitybatchrequestentrytypedef)\]
+  *(required)*
+
+Returns
+[ChangeMessageVisibilityBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#changemessagevisibilitybatchresulttypedef).
 
 ### create_queue
 
 Type annotations for `boto3.client("sqs").create_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue]
+Boto3 documentation:
+[SQS.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue)
 
-```python
-def create_queue(
-    self,
-    QueueName: str,
-    Attributes: Dict[QueueAttributeName, str] = None,
-    tags: Dict[str, str] = None
-) -> CreateQueueResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueName`: `str` *(required)*
+- `Attributes`:
+  `Dict`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename),
+  `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateQueueResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#createqueueresulttypedef).
 
 ### delete_message
 
 Type annotations for `boto3.client("sqs").delete_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message]
+Boto3 documentation:
+[SQS.Client.delete_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message)
 
-```python
-def delete_message(
-    self,
-    QueueUrl: str,
-    ReceiptHandle: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `ReceiptHandle`: `str` *(required)*
 
 ### delete_message_batch
 
 Type annotations for `boto3.client("sqs").delete_message_batch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch]
+Boto3 documentation:
+[SQS.Client.delete_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch)
 
-```python
-def delete_message_batch(
-    self,
-    QueueUrl: str,
-    Entries: List[DeleteMessageBatchRequestEntryTypeDef]
-) -> DeleteMessageBatchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Entries`:
+  `List`\[[DeleteMessageBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#deletemessagebatchrequestentrytypedef)\]
+  *(required)*
+
+Returns
+[DeleteMessageBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#deletemessagebatchresulttypedef).
 
 ### delete_queue
 
 Type annotations for `boto3.client("sqs").delete_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue]
+Boto3 documentation:
+[SQS.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue)
 
-```python
-def delete_queue(
-    self,
-    QueueUrl: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sqs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.generate_presigned_url]
+Boto3 documentation:
+[SQS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_queue_attributes
 
 Type annotations for `boto3.client("sqs").get_queue_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes]
+Boto3 documentation:
+[SQS.Client.get_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes)
 
-```python
-def get_queue_attributes(
-    self,
-    QueueUrl: str,
-    AttributeNames: List[QueueAttributeName] = None
-) -> GetQueueAttributesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `AttributeNames`:
+  `List`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename)\]
+
+Returns
+[GetQueueAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#getqueueattributesresulttypedef).
 
 ### get_queue_url
 
 Type annotations for `boto3.client("sqs").get_queue_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url]
+Boto3 documentation:
+[SQS.Client.get_queue_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url)
 
-```python
-def get_queue_url(
-    self,
-    QueueName: str,
-    QueueOwnerAWSAccountId: str = None
-) -> GetQueueUrlResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueName`: `str` *(required)*
+- `QueueOwnerAWSAccountId`: `str`
+
+Returns
+[GetQueueUrlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#getqueueurlresulttypedef).
 
 ### list_dead_letter_source_queues
 
-Type annotations for `boto3.client("sqs").list_dead_letter_source_queues` method.
+Type annotations for `boto3.client("sqs").list_dead_letter_source_queues`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues]
+Boto3 documentation:
+[SQS.Client.list_dead_letter_source_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues)
 
-```python
-def list_dead_letter_source_queues(
-    self,
-    QueueUrl: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDeadLetterSourceQueuesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDeadLetterSourceQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listdeadlettersourcequeuesresulttypedef).
 
 ### list_queue_tags
 
 Type annotations for `boto3.client("sqs").list_queue_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags]
+Boto3 documentation:
+[SQS.Client.list_queue_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags)
 
-```python
-def list_queue_tags(
-    self,
-    QueueUrl: str
-) -> ListQueueTagsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+
+Returns
+[ListQueueTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuetagsresulttypedef).
 
 ### list_queues
 
 Type annotations for `boto3.client("sqs").list_queues` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues]
+Boto3 documentation:
+[SQS.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues)
 
-```python
-def list_queues(
-    self,
-    QueueNamePrefix: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListQueuesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueNamePrefix`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuesresulttypedef).
 
 ### purge_queue
 
 Type annotations for `boto3.client("sqs").purge_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue]
+Boto3 documentation:
+[SQS.Client.purge_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue)
 
-```python
-def purge_queue(
-    self,
-    QueueUrl: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
 
 ### receive_message
 
 Type annotations for `boto3.client("sqs").receive_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message]
+Boto3 documentation:
+[SQS.Client.receive_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message)
 
-```python
-def receive_message(
-    self,
-    QueueUrl: str,
-    AttributeNames: List[QueueAttributeName] = None,
-    MessageAttributeNames: List[str] = None,
-    MaxNumberOfMessages: int = None,
-    VisibilityTimeout: int = None,
-    WaitTimeSeconds: int = None,
-    ReceiveRequestAttemptId: str = None
-) -> ReceiveMessageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `AttributeNames`:
+  `List`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename)\]
+- `MessageAttributeNames`: `List`\[`str`\]
+- `MaxNumberOfMessages`: `int`
+- `VisibilityTimeout`: `int`
+- `WaitTimeSeconds`: `int`
+- `ReceiveRequestAttemptId`: `str`
+
+Returns
+[ReceiveMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#receivemessageresulttypedef).
 
 ### remove_permission
 
 Type annotations for `boto3.client("sqs").remove_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission]
+Boto3 documentation:
+[SQS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission)
 
-```python
-def remove_permission(
-    self,
-    QueueUrl: str,
-    Label: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Label`: `str` *(required)*
 
 ### send_message
 
 Type annotations for `boto3.client("sqs").send_message` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message]
+Boto3 documentation:
+[SQS.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message)
 
-```python
-def send_message(
-    self,
-    QueueUrl: str,
-    MessageBody: str,
-    DelaySeconds: int = None,
-    MessageAttributes: Dict[str, "MessageAttributeValueTypeDef"] = None,
-    MessageSystemAttributes: Dict[Literal['AWSTraceHeader'], "MessageSystemAttributeValueTypeDef"] = None,
-    MessageDeduplicationId: str = None,
-    MessageGroupId: str = None
-) -> SendMessageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `MessageBody`: `str` *(required)*
+- `DelaySeconds`: `int`
+- `MessageAttributes`: `Dict`\[`str`,
+  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messageattributevaluetypedef)\]
+- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']`,
+  [MessageSystemAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messagesystemattributevaluetypedef)\]
+- `MessageDeduplicationId`: `str`
+- `MessageGroupId`: `str`
+
+Returns
+[SendMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessageresulttypedef).
 
 ### send_message_batch
 
 Type annotations for `boto3.client("sqs").send_message_batch` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch]
+Boto3 documentation:
+[SQS.Client.send_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch)
 
-```python
-def send_message_batch(
-    self,
-    QueueUrl: str,
-    Entries: List[SendMessageBatchRequestEntryTypeDef]
-) -> SendMessageBatchResultTypeDef:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Entries`:
+  `List`\[[SendMessageBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessagebatchrequestentrytypedef)\]
+  *(required)*
+
+Returns
+[SendMessageBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessagebatchresulttypedef).
 
 ### set_queue_attributes
 
 Type annotations for `boto3.client("sqs").set_queue_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes]
+Boto3 documentation:
+[SQS.Client.set_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes)
 
-```python
-def set_queue_attributes(
-    self,
-    QueueUrl: str,
-    Attributes: Dict[QueueAttributeName, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Attributes`:
+  `Dict`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename),
+  `str`\] *(required)*
 
 ### tag_queue
 
 Type annotations for `boto3.client("sqs").tag_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue]
+Boto3 documentation:
+[SQS.Client.tag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue)
 
-```python
-def tag_queue(
-    self,
-    QueueUrl: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `QueueUrl`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_queue
 
 Type annotations for `boto3.client("sqs").untag_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue]
+Boto3 documentation:
+[SQS.Client.untag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue)
 
-```python
-def untag_queue(
-    self,
-    QueueUrl: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `QueueUrl`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### get_paginator
 
 Type annotations for `boto3.client("sqs").get_paginator` method with overloads.
 
-- `client.get_paginator("list_dead_letter_source_queues")` -> [ListDeadLetterSourceQueuesPaginator](./paginators.md#listdeadlettersourcequeuespaginator)
-- `client.get_paginator("list_queues")` -> [ListQueuesPaginator](./paginators.md#listqueuespaginator)
-
-
+- `client.get_paginator("list_dead_letter_source_queues")` ->
+  [ListDeadLetterSourceQueuesPaginator](./paginators.md#listdeadlettersourcequeuespaginator)
+- `client.get_paginator("list_queues")` ->
+  [ListQueuesPaginator](./paginators.md#listqueuespaginator)

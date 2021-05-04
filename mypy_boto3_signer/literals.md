@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Signer](./README.md) > Literals
 
-Auto-generated documentation for [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
-type annotations stubs module [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+Auto-generated documentation for
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
+type annotations stubs module
+[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [Literals for boto3 Signer module](#literals-for-boto3-signer-module)
   - [Category](#category)

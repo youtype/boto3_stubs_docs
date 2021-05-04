@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppSync](./README.md) > AppSyncClient
 
-Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
-type annotations stubs module [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+Auto-generated documentation for
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+type annotations stubs module
+[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [AppSyncClient for boto3 AppSync module](#appsyncclient-for-boto3-appsync-module)
   - [AppSyncClient](#appsyncclient)
@@ -67,12 +69,13 @@ def get_appsync_client() -> AppSyncClient:
     return boto3.client("appsync")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
+Boto3 documentation:
+[AppSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_appsync.client import Exceptions
@@ -80,7 +83,6 @@ from mypy_boto3_appsync.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -97,743 +99,788 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("appsync").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate]
+Boto3 documentation:
+[AppSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_api_cache
 
 Type annotations for `boto3.client("appsync").create_api_cache` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache]
+Boto3 documentation:
+[AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
 
-```python
-def create_api_cache(
-    self,
-    apiId: str,
-    ttl: int,
-    apiCachingBehavior: ApiCachingBehavior,
-    type: ApiCacheType,
-    transitEncryptionEnabled: bool = None,
-    atRestEncryptionEnabled: bool = None
-) -> CreateApiCacheResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `ttl`: `int` *(required)*
+- `apiCachingBehavior`:
+  [ApiCachingBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachingbehavior)
+  *(required)*
+- `type`:
+  [ApiCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachetype)
+  *(required)*
+- `transitEncryptionEnabled`: `bool`
+- `atRestEncryptionEnabled`: `bool`
+
+Returns
+[CreateApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createapicacheresponsetypedef).
 
 ### create_api_key
 
 Type annotations for `boto3.client("appsync").create_api_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key]
+Boto3 documentation:
+[AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
 
-```python
-def create_api_key(
-    self,
-    apiId: str,
-    description: str = None,
-    expires: int = None
-) -> CreateApiKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `description`: `str`
+- `expires`: `int`
+
+Returns
+[CreateApiKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createapikeyresponsetypedef).
 
 ### create_data_source
 
 Type annotations for `boto3.client("appsync").create_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source]
+Boto3 documentation:
+[AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
 
-```python
-def create_data_source(
-    self,
-    apiId: str,
-    name: str,
-    type: DataSourceType,
-    description: str = None,
-    serviceRoleArn: str = None,
-    dynamodbConfig: "DynamodbDataSourceConfigTypeDef" = None,
-    lambdaConfig: "LambdaDataSourceConfigTypeDef" = None,
-    elasticsearchConfig: "ElasticsearchDataSourceConfigTypeDef" = None,
-    httpConfig: "HttpDataSourceConfigTypeDef" = None,
-    relationalDatabaseConfig: "RelationalDatabaseDataSourceConfigTypeDef" = None
-) -> CreateDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `type`:
+  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#datasourcetype)
+  *(required)*
+- `description`: `str`
+- `serviceRoleArn`: `str`
+- `dynamodbConfig`:
+  [DynamodbDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#dynamodbdatasourceconfigtypedef)
+- `lambdaConfig`:
+  [LambdaDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#lambdadatasourceconfigtypedef)
+- `elasticsearchConfig`:
+  [ElasticsearchDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#elasticsearchdatasourceconfigtypedef)
+- `httpConfig`:
+  [HttpDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#httpdatasourceconfigtypedef)
+- `relationalDatabaseConfig`:
+  [RelationalDatabaseDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#relationaldatabasedatasourceconfigtypedef)
+
+Returns
+[CreateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createdatasourceresponsetypedef).
 
 ### create_function
 
 Type annotations for `boto3.client("appsync").create_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function]
+Boto3 documentation:
+[AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
 
-```python
-def create_function(
-    self,
-    apiId: str,
-    name: str,
-    dataSourceName: str,
-    functionVersion: str,
-    description: str = None,
-    requestMappingTemplate: str = None,
-    responseMappingTemplate: str = None,
-    syncConfig: "SyncConfigTypeDef" = None
-) -> CreateFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `dataSourceName`: `str` *(required)*
+- `functionVersion`: `str` *(required)*
+- `description`: `str`
+- `requestMappingTemplate`: `str`
+- `responseMappingTemplate`: `str`
+- `syncConfig`:
+  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+
+Returns
+[CreateFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createfunctionresponsetypedef).
 
 ### create_graphql_api
 
 Type annotations for `boto3.client("appsync").create_graphql_api` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api]
+Boto3 documentation:
+[AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
 
-```python
-def create_graphql_api(
-    self,
-    name: str,
-    authenticationType: AuthenticationType,
-    logConfig: "LogConfigTypeDef" = None,
-    userPoolConfig: "UserPoolConfigTypeDef" = None,
-    openIDConnectConfig: "OpenIDConnectConfigTypeDef" = None,
-    tags: Dict[str, str] = None,
-    additionalAuthenticationProviders: List["AdditionalAuthenticationProviderTypeDef"] = None,
-    xrayEnabled: bool = None
-) -> CreateGraphqlApiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `authenticationType`:
+  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#authenticationtype)
+  *(required)*
+- `logConfig`:
+  [LogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#logconfigtypedef)
+- `userPoolConfig`:
+  [UserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#userpoolconfigtypedef)
+- `openIDConnectConfig`:
+  [OpenIDConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#openidconnectconfigtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `additionalAuthenticationProviders`:
+  `List`\[[AdditionalAuthenticationProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#additionalauthenticationprovidertypedef)\]
+- `xrayEnabled`: `bool`
+
+Returns
+[CreateGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#creategraphqlapiresponsetypedef).
 
 ### create_resolver
 
 Type annotations for `boto3.client("appsync").create_resolver` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver]
+Boto3 documentation:
+[AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
 
-```python
-def create_resolver(
-    self,
-    apiId: str,
-    typeName: str,
-    fieldName: str,
-    dataSourceName: str = None,
-    requestMappingTemplate: str = None,
-    responseMappingTemplate: str = None,
-    kind: ResolverKind = None,
-    pipelineConfig: "PipelineConfigTypeDef" = None,
-    syncConfig: "SyncConfigTypeDef" = None,
-    cachingConfig: "CachingConfigTypeDef" = None
-) -> CreateResolverResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `fieldName`: `str` *(required)*
+- `dataSourceName`: `str`
+- `requestMappingTemplate`: `str`
+- `responseMappingTemplate`: `str`
+- `kind`:
+  [ResolverKind](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#resolverkind)
+- `pipelineConfig`:
+  [PipelineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#pipelineconfigtypedef)
+- `syncConfig`:
+  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+- `cachingConfig`:
+  [CachingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#cachingconfigtypedef)
+
+Returns
+[CreateResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createresolverresponsetypedef).
 
 ### create_type
 
 Type annotations for `boto3.client("appsync").create_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type]
+Boto3 documentation:
+[AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
 
-```python
-def create_type(
-    self,
-    apiId: str,
-    definition: str,
-    format: TypeDefinitionFormat
-) -> CreateTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `definition`: `str` *(required)*
+- `format`:
+  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+  *(required)*
+
+Returns
+[CreateTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createtyperesponsetypedef).
 
 ### delete_api_cache
 
 Type annotations for `boto3.client("appsync").delete_api_cache` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache]
+Boto3 documentation:
+[AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
 
-```python
-def delete_api_cache(
-    self,
-    apiId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_api_key
 
 Type annotations for `boto3.client("appsync").delete_api_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key]
+Boto3 documentation:
+[AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
 
-```python
-def delete_api_key(
-    self,
-    apiId: str,
-    id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_data_source
 
 Type annotations for `boto3.client("appsync").delete_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source]
+Boto3 documentation:
+[AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
 
-```python
-def delete_data_source(
-    self,
-    apiId: str,
-    name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_function
 
 Type annotations for `boto3.client("appsync").delete_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function]
+Boto3 documentation:
+[AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
 
-```python
-def delete_function(
-    self,
-    apiId: str,
-    functionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `functionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_graphql_api
 
 Type annotations for `boto3.client("appsync").delete_graphql_api` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api]
+Boto3 documentation:
+[AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
 
-```python
-def delete_graphql_api(
-    self,
-    apiId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_resolver
 
 Type annotations for `boto3.client("appsync").delete_resolver` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver]
+Boto3 documentation:
+[AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
 
-```python
-def delete_resolver(
-    self,
-    apiId: str,
-    typeName: str,
-    fieldName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `fieldName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_type
 
 Type annotations for `boto3.client("appsync").delete_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type]
+Boto3 documentation:
+[AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
 
-```python
-def delete_type(
-    self,
-    apiId: str,
-    typeName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### flush_api_cache
 
 Type annotations for `boto3.client("appsync").flush_api_cache` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache]
+Boto3 documentation:
+[AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
 
-```python
-def flush_api_cache(
-    self,
-    apiId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("appsync").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url]
+Boto3 documentation:
+[AppSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_api_cache
 
 Type annotations for `boto3.client("appsync").get_api_cache` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache]
+Boto3 documentation:
+[AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
 
-```python
-def get_api_cache(
-    self,
-    apiId: str
-) -> GetApiCacheResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns
+[GetApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getapicacheresponsetypedef).
 
 ### get_data_source
 
 Type annotations for `boto3.client("appsync").get_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source]
+Boto3 documentation:
+[AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
 
-```python
-def get_data_source(
-    self,
-    apiId: str,
-    name: str
-) -> GetDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+
+Returns
+[GetDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getdatasourceresponsetypedef).
 
 ### get_function
 
 Type annotations for `boto3.client("appsync").get_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function]
+Boto3 documentation:
+[AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
 
-```python
-def get_function(
-    self,
-    apiId: str,
-    functionId: str
-) -> GetFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `functionId`: `str` *(required)*
+
+Returns
+[GetFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getfunctionresponsetypedef).
 
 ### get_graphql_api
 
 Type annotations for `boto3.client("appsync").get_graphql_api` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api]
+Boto3 documentation:
+[AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
 
-```python
-def get_graphql_api(
-    self,
-    apiId: str
-) -> GetGraphqlApiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns
+[GetGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getgraphqlapiresponsetypedef).
 
 ### get_introspection_schema
 
 Type annotations for `boto3.client("appsync").get_introspection_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema]
+Boto3 documentation:
+[AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
 
-```python
-def get_introspection_schema(
-    self,
-    apiId: str,
-    format: OutputType,
-    includeDirectives: bool = None
-) -> GetIntrospectionSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `format`:
+  [OutputType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#outputtype)
+  *(required)*
+- `includeDirectives`: `bool`
+
+Returns
+[GetIntrospectionSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getintrospectionschemaresponsetypedef).
 
 ### get_resolver
 
 Type annotations for `boto3.client("appsync").get_resolver` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver]
+Boto3 documentation:
+[AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
 
-```python
-def get_resolver(
-    self,
-    apiId: str,
-    typeName: str,
-    fieldName: str
-) -> GetResolverResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `fieldName`: `str` *(required)*
+
+Returns
+[GetResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getresolverresponsetypedef).
 
 ### get_schema_creation_status
 
-Type annotations for `boto3.client("appsync").get_schema_creation_status` method.
+Type annotations for `boto3.client("appsync").get_schema_creation_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status]
+Boto3 documentation:
+[AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
 
-```python
-def get_schema_creation_status(
-    self,
-    apiId: str
-) -> GetSchemaCreationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+
+Returns
+[GetSchemaCreationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getschemacreationstatusresponsetypedef).
 
 ### get_type
 
 Type annotations for `boto3.client("appsync").get_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type]
+Boto3 documentation:
+[AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
 
-```python
-def get_type(
-    self,
-    apiId: str,
-    typeName: str,
-    format: TypeDefinitionFormat
-) -> GetTypeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `format`:
+  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+  *(required)*
+
+Returns
+[GetTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#gettyperesponsetypedef).
 
 ### list_api_keys
 
 Type annotations for `boto3.client("appsync").list_api_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys]
+Boto3 documentation:
+[AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
 
-```python
-def list_api_keys(
-    self,
-    apiId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListApiKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListApiKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listapikeysresponsetypedef).
 
 ### list_data_sources
 
 Type annotations for `boto3.client("appsync").list_data_sources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources]
+Boto3 documentation:
+[AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
 
-```python
-def list_data_sources(
-    self,
-    apiId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListDataSourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDataSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listdatasourcesresponsetypedef).
 
 ### list_functions
 
 Type annotations for `boto3.client("appsync").list_functions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions]
+Boto3 documentation:
+[AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
 
-```python
-def list_functions(
-    self,
-    apiId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListFunctionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listfunctionsresponsetypedef).
 
 ### list_graphql_apis
 
 Type annotations for `boto3.client("appsync").list_graphql_apis` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis]
+Boto3 documentation:
+[AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
 
-```python
-def list_graphql_apis(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListGraphqlApisResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListGraphqlApisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listgraphqlapisresponsetypedef).
 
 ### list_resolvers
 
 Type annotations for `boto3.client("appsync").list_resolvers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers]
+Boto3 documentation:
+[AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
 
-```python
-def list_resolvers(
-    self,
-    apiId: str,
-    typeName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResolversResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResolversResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversresponsetypedef).
 
 ### list_resolvers_by_function
 
-Type annotations for `boto3.client("appsync").list_resolvers_by_function` method.
+Type annotations for `boto3.client("appsync").list_resolvers_by_function`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function]
+Boto3 documentation:
+[AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
 
-```python
-def list_resolvers_by_function(
-    self,
-    apiId: str,
-    functionId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResolversByFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `functionId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResolversByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversbyfunctionresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("appsync").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource]
+Boto3 documentation:
+[AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_types
 
 Type annotations for `boto3.client("appsync").list_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types]
+Boto3 documentation:
+[AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
 
-```python
-def list_types(
-    self,
-    apiId: str,
-    format: TypeDefinitionFormat,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `format`:
+  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+  *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listtypesresponsetypedef).
 
 ### start_schema_creation
 
 Type annotations for `boto3.client("appsync").start_schema_creation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation]
+Boto3 documentation:
+[AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
 
-```python
-def start_schema_creation(
-    self,
-    apiId: str,
-    definition: Union[bytes, IO[bytes]]
-) -> StartSchemaCreationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `definition`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+
+Returns
+[StartSchemaCreationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#startschemacreationresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("appsync").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource]
+Boto3 documentation:
+[AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("appsync").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource]
+Boto3 documentation:
+[AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_api_cache
 
 Type annotations for `boto3.client("appsync").update_api_cache` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache]
+Boto3 documentation:
+[AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
 
-```python
-def update_api_cache(
-    self,
-    apiId: str,
-    ttl: int,
-    apiCachingBehavior: ApiCachingBehavior,
-    type: ApiCacheType
-) -> UpdateApiCacheResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `ttl`: `int` *(required)*
+- `apiCachingBehavior`:
+  [ApiCachingBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachingbehavior)
+  *(required)*
+- `type`:
+  [ApiCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachetype)
+  *(required)*
+
+Returns
+[UpdateApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateapicacheresponsetypedef).
 
 ### update_api_key
 
 Type annotations for `boto3.client("appsync").update_api_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key]
+Boto3 documentation:
+[AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
 
-```python
-def update_api_key(
-    self,
-    apiId: str,
-    id: str,
-    description: str = None,
-    expires: int = None
-) -> UpdateApiKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `id`: `str` *(required)*
+- `description`: `str`
+- `expires`: `int`
+
+Returns
+[UpdateApiKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateapikeyresponsetypedef).
 
 ### update_data_source
 
 Type annotations for `boto3.client("appsync").update_data_source` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source]
+Boto3 documentation:
+[AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
 
-```python
-def update_data_source(
-    self,
-    apiId: str,
-    name: str,
-    type: DataSourceType,
-    description: str = None,
-    serviceRoleArn: str = None,
-    dynamodbConfig: "DynamodbDataSourceConfigTypeDef" = None,
-    lambdaConfig: "LambdaDataSourceConfigTypeDef" = None,
-    elasticsearchConfig: "ElasticsearchDataSourceConfigTypeDef" = None,
-    httpConfig: "HttpDataSourceConfigTypeDef" = None,
-    relationalDatabaseConfig: "RelationalDatabaseDataSourceConfigTypeDef" = None
-) -> UpdateDataSourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `type`:
+  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#datasourcetype)
+  *(required)*
+- `description`: `str`
+- `serviceRoleArn`: `str`
+- `dynamodbConfig`:
+  [DynamodbDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#dynamodbdatasourceconfigtypedef)
+- `lambdaConfig`:
+  [LambdaDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#lambdadatasourceconfigtypedef)
+- `elasticsearchConfig`:
+  [ElasticsearchDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#elasticsearchdatasourceconfigtypedef)
+- `httpConfig`:
+  [HttpDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#httpdatasourceconfigtypedef)
+- `relationalDatabaseConfig`:
+  [RelationalDatabaseDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#relationaldatabasedatasourceconfigtypedef)
+
+Returns
+[UpdateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatedatasourceresponsetypedef).
 
 ### update_function
 
 Type annotations for `boto3.client("appsync").update_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function]
+Boto3 documentation:
+[AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
 
-```python
-def update_function(
-    self,
-    apiId: str,
-    name: str,
-    functionId: str,
-    dataSourceName: str,
-    functionVersion: str,
-    description: str = None,
-    requestMappingTemplate: str = None,
-    responseMappingTemplate: str = None,
-    syncConfig: "SyncConfigTypeDef" = None
-) -> UpdateFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `functionId`: `str` *(required)*
+- `dataSourceName`: `str` *(required)*
+- `functionVersion`: `str` *(required)*
+- `description`: `str`
+- `requestMappingTemplate`: `str`
+- `responseMappingTemplate`: `str`
+- `syncConfig`:
+  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+
+Returns
+[UpdateFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatefunctionresponsetypedef).
 
 ### update_graphql_api
 
 Type annotations for `boto3.client("appsync").update_graphql_api` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api]
+Boto3 documentation:
+[AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
 
-```python
-def update_graphql_api(
-    self,
-    apiId: str,
-    name: str,
-    logConfig: "LogConfigTypeDef" = None,
-    authenticationType: AuthenticationType = None,
-    userPoolConfig: "UserPoolConfigTypeDef" = None,
-    openIDConnectConfig: "OpenIDConnectConfigTypeDef" = None,
-    additionalAuthenticationProviders: List["AdditionalAuthenticationProviderTypeDef"] = None,
-    xrayEnabled: bool = None
-) -> UpdateGraphqlApiResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `logConfig`:
+  [LogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#logconfigtypedef)
+- `authenticationType`:
+  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#authenticationtype)
+- `userPoolConfig`:
+  [UserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#userpoolconfigtypedef)
+- `openIDConnectConfig`:
+  [OpenIDConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#openidconnectconfigtypedef)
+- `additionalAuthenticationProviders`:
+  `List`\[[AdditionalAuthenticationProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#additionalauthenticationprovidertypedef)\]
+- `xrayEnabled`: `bool`
+
+Returns
+[UpdateGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updategraphqlapiresponsetypedef).
 
 ### update_resolver
 
 Type annotations for `boto3.client("appsync").update_resolver` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver]
+Boto3 documentation:
+[AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
 
-```python
-def update_resolver(
-    self,
-    apiId: str,
-    typeName: str,
-    fieldName: str,
-    dataSourceName: str = None,
-    requestMappingTemplate: str = None,
-    responseMappingTemplate: str = None,
-    kind: ResolverKind = None,
-    pipelineConfig: "PipelineConfigTypeDef" = None,
-    syncConfig: "SyncConfigTypeDef" = None,
-    cachingConfig: "CachingConfigTypeDef" = None
-) -> UpdateResolverResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `fieldName`: `str` *(required)*
+- `dataSourceName`: `str`
+- `requestMappingTemplate`: `str`
+- `responseMappingTemplate`: `str`
+- `kind`:
+  [ResolverKind](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#resolverkind)
+- `pipelineConfig`:
+  [PipelineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#pipelineconfigtypedef)
+- `syncConfig`:
+  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+- `cachingConfig`:
+  [CachingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#cachingconfigtypedef)
+
+Returns
+[UpdateResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateresolverresponsetypedef).
 
 ### update_type
 
 Type annotations for `boto3.client("appsync").update_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type]
+Boto3 documentation:
+[AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
 
-```python
-def update_type(
-    self,
-    apiId: str,
-    typeName: str,
-    format: TypeDefinitionFormat,
-    definition: str = None
-) -> UpdateTypeResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `apiId`: `str` *(required)*
+- `typeName`: `str` *(required)*
+- `format`:
+  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+  *(required)*
+- `definition`: `str`
 
+Returns
+[UpdateTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatetyperesponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("appsync").get_paginator` method with overloads.
+Type annotations for `boto3.client("appsync").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_api_keys")` -> [ListApiKeysPaginator](./paginators.md#listapikeyspaginator)
-- `client.get_paginator("list_data_sources")` -> [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
-- `client.get_paginator("list_functions")` -> [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
-- `client.get_paginator("list_graphql_apis")` -> [ListGraphqlApisPaginator](./paginators.md#listgraphqlapispaginator)
-- `client.get_paginator("list_resolvers")` -> [ListResolversPaginator](./paginators.md#listresolverspaginator)
-- `client.get_paginator("list_resolvers_by_function")` -> [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
-- `client.get_paginator("list_types")` -> [ListTypesPaginator](./paginators.md#listtypespaginator)
-
-
+- `client.get_paginator("list_api_keys")` ->
+  [ListApiKeysPaginator](./paginators.md#listapikeyspaginator)
+- `client.get_paginator("list_data_sources")` ->
+  [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
+- `client.get_paginator("list_functions")` ->
+  [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+- `client.get_paginator("list_graphql_apis")` ->
+  [ListGraphqlApisPaginator](./paginators.md#listgraphqlapispaginator)
+- `client.get_paginator("list_resolvers")` ->
+  [ListResolversPaginator](./paginators.md#listresolverspaginator)
+- `client.get_paginator("list_resolvers_by_function")` ->
+  [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
+- `client.get_paginator("list_types")` ->
+  [ListTypesPaginator](./paginators.md#listtypespaginator)

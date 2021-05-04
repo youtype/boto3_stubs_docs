@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaStoreData](./README.md) > Structures
 
-Auto-generated documentation for [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
-type annotations stubs module [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+Auto-generated documentation for
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+type annotations stubs module
+[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Typed dictionaries for boto3 MediaStoreData module](#typed-dictionaries-for-boto3-mediastoredata-module)
   - [DescribeObjectResponseTypeDef](#describeobjectresponsetypedef)
@@ -19,16 +21,13 @@ type annotations stubs module [mypy_boto3_mediastore_data](https://pypi.org/proj
 from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ETag`: `str`
 - `ContentType`: `str`
 - `ContentLength`: `int`
 - `CacheControl`: `str`
 - `LastModified`: `datetime`
-
 
 ## GetObjectResponseTypeDef
 
@@ -36,13 +35,12 @@ Optional fields:
 from mypy_boto3_mediastore_data.type_defs import GetObjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `StatusCode`: `int`
 
-
-
 Optional fields:
+
 - `Body`: `StreamingBody`
 - `CacheControl`: `str`
 - `ContentRange`: `str`
@@ -51,24 +49,21 @@ Optional fields:
 - `ETag`: `str`
 - `LastModified`: `datetime`
 
-
 ## ItemTypeDef
 
 ```python
 from mypy_boto3_mediastore_data.type_defs import ItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Type`: `ItemType`
+- `Type`:
+  [ItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/literals.html#itemtype)
 - `ETag`: `str`
 - `LastModified`: `datetime`
 - `ContentType`: `str`
 - `ContentLength`: `int`
-
 
 ## ListItemsResponseTypeDef
 
@@ -76,13 +71,11 @@ Optional fields:
 from mypy_boto3_mediastore_data.type_defs import ListItemsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Items`: `List["ItemTypeDef"]`
-- `NextToken`: `str`
 
+- `Items`:
+  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#itemtypedef)\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -90,14 +83,11 @@ Optional fields:
 from mypy_boto3_mediastore_data.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutObjectResponseTypeDef
 
@@ -105,11 +95,8 @@ Optional fields:
 from mypy_boto3_mediastore_data.type_defs import PutObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContentSHA256`: `str`
 - `ETag`: `str`
 - `StorageClass`: `Literal['TEMPORAL']`
-

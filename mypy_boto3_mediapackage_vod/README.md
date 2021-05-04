@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaPackageVod
 
-Auto-generated documentation for [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
-type annotations stubs module [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+Auto-generated documentation for
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+type annotations stubs module
+[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 ```bash
 pip install mypy-boto3-mediapackage-vod
@@ -19,7 +21,8 @@ pip install mypy-boto3-mediapackage-vod
 
 ## MediaPackageVodClient
 
-Type annotations for  `boto3.client("mediapackage-vod")` as [MediaPackageVodClient](./client.md)
+Type annotations for `boto3.client("mediapackage-vod")` as
+[MediaPackageVodClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 ```
 
-
 MediaPackageVodClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [configure_logs](./client.md#configure-logs)
 - [create_asset](./client.md#create-asset)
@@ -54,10 +55,8 @@ MediaPackageVodClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_packaging_group](./client.md#update-packaging-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ForbiddenException](./client.md#forbiddenexception)
 - [InternalServerErrorException](./client.md#internalservererrorexception)
@@ -66,14 +65,10 @@ MediaPackageVodClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnprocessableEntityException](./client.md#unprocessableentityexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediapackage-vod").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediapackage-vod").get_paginator("...")`.
 
 Can be used directly:
 
@@ -84,11 +79,6 @@ from mypy_boto3_mediapackage_vod.paginators import ListAssetsPaginator, ...
 - [ListAssetsPaginator](./paginators.md#listassetspaginator)
 - [ListPackagingConfigurationsPaginator](./paginators.md#listpackagingconfigurationspaginator)
 - [ListPackagingGroupsPaginator](./paginators.md#listpackaginggroupspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -109,15 +99,12 @@ from mypy_boto3_mediapackage_vod.literals import AdMarkers, ...
 - [Profile](./literals.md#profile)
 - [SegmentTemplateFormat](./literals.md#segmenttemplateformat)
 - [StreamOrder](./literals.md#streamorder)
-- [__PeriodTriggersElement](./literals.md#--periodtriggerselement)
-
-
-
+- [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement)
 
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

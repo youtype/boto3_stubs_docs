@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > Literals
 
-Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+Auto-generated documentation for
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+type annotations stubs module
+[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [Literals for boto3 LookoutMetrics module](#literals-for-boto3-lookoutmetrics-module)
   - [AggregationFunction](#aggregationfunction)

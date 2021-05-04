@@ -1,9 +1,12 @@
 # TranscribeServiceClient for boto3 TranscribeService module
 
-> [Index](../README.md) > [TranscribeService](./README.md) > TranscribeServiceClient
+> [Index](../README.md) > [TranscribeService](./README.md) >
+> TranscribeServiceClient
 
-Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+Auto-generated documentation for
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+type annotations stubs module
+[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [TranscribeServiceClient for boto3 TranscribeService module](#transcribeserviceclient-for-boto3-transcribeservice-module)
   - [TranscribeServiceClient](#transcribeserviceclient)
@@ -52,12 +55,13 @@ def get_transcribe_client() -> TranscribeServiceClient:
     return boto3.client("transcribe")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
+Boto3 documentation:
+[TranscribeService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_transcribe.client import Exceptions
@@ -65,7 +69,6 @@ from mypy_boto3_transcribe.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -76,476 +79,507 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.NotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("transcribe").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate]
+Boto3 documentation:
+[TranscribeService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_language_model
 
 Type annotations for `boto3.client("transcribe").create_language_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model]
+Boto3 documentation:
+[TranscribeService.Client.create_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
 
-```python
-def create_language_model(
-    self,
-    LanguageCode: CLMLanguageCode,
-    BaseModelName: BaseModelName,
-    ModelName: str,
-    InputDataConfig: "InputDataConfigTypeDef"
-) -> CreateLanguageModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LanguageCode`:
+  [CLMLanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#clmlanguagecode)
+  *(required)*
+- `BaseModelName`:
+  [BaseModelName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#basemodelname)
+  *(required)*
+- `ModelName`: `str` *(required)*
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+
+Returns
+[CreateLanguageModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createlanguagemodelresponsetypedef).
 
 ### create_medical_vocabulary
 
-Type annotations for `boto3.client("transcribe").create_medical_vocabulary` method.
+Type annotations for `boto3.client("transcribe").create_medical_vocabulary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.create_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
 
-```python
-def create_medical_vocabulary(
-    self,
-    VocabularyName: str,
-    LanguageCode: LanguageCode,
-    VocabularyFileUri: str
-) -> CreateMedicalVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `VocabularyFileUri`: `str` *(required)*
+
+Returns
+[CreateMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createmedicalvocabularyresponsetypedef).
 
 ### create_vocabulary
 
 Type annotations for `boto3.client("transcribe").create_vocabulary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
 
-```python
-def create_vocabulary(
-    self,
-    VocabularyName: str,
-    LanguageCode: LanguageCode,
-    Phrases: List[str] = None,
-    VocabularyFileUri: str = None
-) -> CreateVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `Phrases`: `List`\[`str`\]
+- `VocabularyFileUri`: `str`
+
+Returns
+[CreateVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createvocabularyresponsetypedef).
 
 ### create_vocabulary_filter
 
-Type annotations for `boto3.client("transcribe").create_vocabulary_filter` method.
+Type annotations for `boto3.client("transcribe").create_vocabulary_filter`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter]
+Boto3 documentation:
+[TranscribeService.Client.create_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
 
-```python
-def create_vocabulary_filter(
-    self,
-    VocabularyFilterName: str,
-    LanguageCode: LanguageCode,
-    Words: List[str] = None,
-    VocabularyFilterFileUri: str = None
-) -> CreateVocabularyFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyFilterName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `Words`: `List`\[`str`\]
+- `VocabularyFilterFileUri`: `str`
+
+Returns
+[CreateVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createvocabularyfilterresponsetypedef).
 
 ### delete_language_model
 
 Type annotations for `boto3.client("transcribe").delete_language_model` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model]
+Boto3 documentation:
+[TranscribeService.Client.delete_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
 
-```python
-def delete_language_model(
-    self,
-    ModelName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
 
 ### delete_medical_transcription_job
 
-Type annotations for `boto3.client("transcribe").delete_medical_transcription_job` method.
+Type annotations for
+`boto3.client("transcribe").delete_medical_transcription_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.delete_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
 
-```python
-def delete_medical_transcription_job(
-    self,
-    MedicalTranscriptionJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `MedicalTranscriptionJobName`: `str` *(required)*
 
 ### delete_medical_vocabulary
 
-Type annotations for `boto3.client("transcribe").delete_medical_vocabulary` method.
+Type annotations for `boto3.client("transcribe").delete_medical_vocabulary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.delete_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
 
-```python
-def delete_medical_vocabulary(
-    self,
-    VocabularyName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
 
 ### delete_transcription_job
 
-Type annotations for `boto3.client("transcribe").delete_transcription_job` method.
+Type annotations for `boto3.client("transcribe").delete_transcription_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.delete_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
 
-```python
-def delete_transcription_job(
-    self,
-    TranscriptionJobName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `TranscriptionJobName`: `str` *(required)*
 
 ### delete_vocabulary
 
 Type annotations for `boto3.client("transcribe").delete_vocabulary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
 
-```python
-def delete_vocabulary(
-    self,
-    VocabularyName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
 
 ### delete_vocabulary_filter
 
-Type annotations for `boto3.client("transcribe").delete_vocabulary_filter` method.
+Type annotations for `boto3.client("transcribe").delete_vocabulary_filter`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter]
+Boto3 documentation:
+[TranscribeService.Client.delete_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
 
-```python
-def delete_vocabulary_filter(
-    self,
-    VocabularyFilterName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `VocabularyFilterName`: `str` *(required)*
 
 ### describe_language_model
 
-Type annotations for `boto3.client("transcribe").describe_language_model` method.
+Type annotations for `boto3.client("transcribe").describe_language_model`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model]
+Boto3 documentation:
+[TranscribeService.Client.describe_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
 
-```python
-def describe_language_model(
-    self,
-    ModelName: str
-) -> DescribeLanguageModelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ModelName`: `str` *(required)*
+
+Returns
+[DescribeLanguageModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#describelanguagemodelresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("transcribe").generate_presigned_url` method.
+Type annotations for `boto3.client("transcribe").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url]
+Boto3 documentation:
+[TranscribeService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_medical_transcription_job
 
-Type annotations for `boto3.client("transcribe").get_medical_transcription_job` method.
+Type annotations for `boto3.client("transcribe").get_medical_transcription_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.get_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
 
-```python
-def get_medical_transcription_job(
-    self,
-    MedicalTranscriptionJobName: str
-) -> GetMedicalTranscriptionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MedicalTranscriptionJobName`: `str` *(required)*
+
+Returns
+[GetMedicalTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getmedicaltranscriptionjobresponsetypedef).
 
 ### get_medical_vocabulary
 
-Type annotations for `boto3.client("transcribe").get_medical_vocabulary` method.
+Type annotations for `boto3.client("transcribe").get_medical_vocabulary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.get_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
 
-```python
-def get_medical_vocabulary(
-    self,
-    VocabularyName: str
-) -> GetMedicalVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+
+Returns
+[GetMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getmedicalvocabularyresponsetypedef).
 
 ### get_transcription_job
 
 Type annotations for `boto3.client("transcribe").get_transcription_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.get_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
 
-```python
-def get_transcription_job(
-    self,
-    TranscriptionJobName: str
-) -> GetTranscriptionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TranscriptionJobName`: `str` *(required)*
+
+Returns
+[GetTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#gettranscriptionjobresponsetypedef).
 
 ### get_vocabulary
 
 Type annotations for `boto3.client("transcribe").get_vocabulary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.get_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
 
-```python
-def get_vocabulary(
-    self,
-    VocabularyName: str
-) -> GetVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+
+Returns
+[GetVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getvocabularyresponsetypedef).
 
 ### get_vocabulary_filter
 
 Type annotations for `boto3.client("transcribe").get_vocabulary_filter` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter]
+Boto3 documentation:
+[TranscribeService.Client.get_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
 
-```python
-def get_vocabulary_filter(
-    self,
-    VocabularyFilterName: str
-) -> GetVocabularyFilterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyFilterName`: `str` *(required)*
+
+Returns
+[GetVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getvocabularyfilterresponsetypedef).
 
 ### list_language_models
 
 Type annotations for `boto3.client("transcribe").list_language_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models]
+Boto3 documentation:
+[TranscribeService.Client.list_language_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
 
-```python
-def list_language_models(
-    self,
-    StatusEquals: ModelStatus = None,
-    NameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListLanguageModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StatusEquals`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#modelstatus)
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListLanguageModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listlanguagemodelsresponsetypedef).
 
 ### list_medical_transcription_jobs
 
-Type annotations for `boto3.client("transcribe").list_medical_transcription_jobs` method.
+Type annotations for
+`boto3.client("transcribe").list_medical_transcription_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs]
+Boto3 documentation:
+[TranscribeService.Client.list_medical_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
 
-```python
-def list_medical_transcription_jobs(
-    self,
-    Status: TranscriptionJobStatus = None,
-    JobNameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListMedicalTranscriptionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Status`:
+  [TranscriptionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#transcriptionjobstatus)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMedicalTranscriptionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listmedicaltranscriptionjobsresponsetypedef).
 
 ### list_medical_vocabularies
 
-Type annotations for `boto3.client("transcribe").list_medical_vocabularies` method.
+Type annotations for `boto3.client("transcribe").list_medical_vocabularies`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies]
+Boto3 documentation:
+[TranscribeService.Client.list_medical_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
 
-```python
-def list_medical_vocabularies(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StateEquals: VocabularyState = None,
-    NameContains: str = None
-) -> ListMedicalVocabulariesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StateEquals`:
+  [VocabularyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#vocabularystate)
+- `NameContains`: `str`
+
+Returns
+[ListMedicalVocabulariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listmedicalvocabulariesresponsetypedef).
 
 ### list_transcription_jobs
 
-Type annotations for `boto3.client("transcribe").list_transcription_jobs` method.
+Type annotations for `boto3.client("transcribe").list_transcription_jobs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs]
+Boto3 documentation:
+[TranscribeService.Client.list_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
 
-```python
-def list_transcription_jobs(
-    self,
-    Status: TranscriptionJobStatus = None,
-    JobNameContains: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTranscriptionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Status`:
+  [TranscriptionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#transcriptionjobstatus)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTranscriptionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listtranscriptionjobsresponsetypedef).
 
 ### list_vocabularies
 
 Type annotations for `boto3.client("transcribe").list_vocabularies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies]
+Boto3 documentation:
+[TranscribeService.Client.list_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
 
-```python
-def list_vocabularies(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    StateEquals: VocabularyState = None,
-    NameContains: str = None
-) -> ListVocabulariesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StateEquals`:
+  [VocabularyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#vocabularystate)
+- `NameContains`: `str`
+
+Returns
+[ListVocabulariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listvocabulariesresponsetypedef).
 
 ### list_vocabulary_filters
 
-Type annotations for `boto3.client("transcribe").list_vocabulary_filters` method.
+Type annotations for `boto3.client("transcribe").list_vocabulary_filters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters]
+Boto3 documentation:
+[TranscribeService.Client.list_vocabulary_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
 
-```python
-def list_vocabulary_filters(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    NameContains: str = None
-) -> ListVocabularyFiltersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+
+Returns
+[ListVocabularyFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listvocabularyfiltersresponsetypedef).
 
 ### start_medical_transcription_job
 
-Type annotations for `boto3.client("transcribe").start_medical_transcription_job` method.
+Type annotations for
+`boto3.client("transcribe").start_medical_transcription_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.start_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
 
-```python
-def start_medical_transcription_job(
-    self,
-    MedicalTranscriptionJobName: str,
-    LanguageCode: LanguageCode,
-    Media: "MediaTypeDef",
-    OutputBucketName: str,
-    Specialty: Literal['PRIMARYCARE'],
-    Type: TypeType,
-    MediaSampleRateHertz: int = None,
-    MediaFormat: MediaFormat = None,
-    OutputKey: str = None,
-    OutputEncryptionKMSKeyId: str = None,
-    Settings: "MedicalTranscriptionSettingTypeDef" = None
-) -> StartMedicalTranscriptionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MedicalTranscriptionJobName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `Media`:
+  [MediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#mediatypedef)
+  *(required)*
+- `OutputBucketName`: `str` *(required)*
+- `Specialty`: `Literal['PRIMARYCARE']` *(required)*
+- `Type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#typetype)
+  *(required)*
+- `MediaSampleRateHertz`: `int`
+- `MediaFormat`:
+  [MediaFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#mediaformat)
+- `OutputKey`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`:
+  [MedicalTranscriptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#medicaltranscriptionsettingtypedef)
+
+Returns
+[StartMedicalTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#startmedicaltranscriptionjobresponsetypedef).
 
 ### start_transcription_job
 
-Type annotations for `boto3.client("transcribe").start_transcription_job` method.
+Type annotations for `boto3.client("transcribe").start_transcription_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job]
+Boto3 documentation:
+[TranscribeService.Client.start_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
 
-```python
-def start_transcription_job(
-    self,
-    TranscriptionJobName: str,
-    Media: "MediaTypeDef",
-    LanguageCode: LanguageCode = None,
-    MediaSampleRateHertz: int = None,
-    MediaFormat: MediaFormat = None,
-    OutputBucketName: str = None,
-    OutputKey: str = None,
-    OutputEncryptionKMSKeyId: str = None,
-    Settings: "SettingsTypeDef" = None,
-    ModelSettings: "ModelSettingsTypeDef" = None,
-    JobExecutionSettings: "JobExecutionSettingsTypeDef" = None,
-    ContentRedaction: "ContentRedactionTypeDef" = None,
-    IdentifyLanguage: bool = None,
-    LanguageOptions: List[LanguageCode] = None
-) -> StartTranscriptionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TranscriptionJobName`: `str` *(required)*
+- `Media`:
+  [MediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#mediatypedef)
+  *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+- `MediaSampleRateHertz`: `int`
+- `MediaFormat`:
+  [MediaFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#mediaformat)
+- `OutputBucketName`: `str`
+- `OutputKey`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`:
+  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#settingstypedef)
+- `ModelSettings`:
+  [ModelSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#modelsettingstypedef)
+- `JobExecutionSettings`:
+  [JobExecutionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#jobexecutionsettingstypedef)
+- `ContentRedaction`:
+  [ContentRedactionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#contentredactiontypedef)
+- `IdentifyLanguage`: `bool`
+- `LanguageOptions`:
+  `List`\[[LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)\]
+
+Returns
+[StartTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#starttranscriptionjobresponsetypedef).
 
 ### update_medical_vocabulary
 
-Type annotations for `boto3.client("transcribe").update_medical_vocabulary` method.
+Type annotations for `boto3.client("transcribe").update_medical_vocabulary`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.update_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
 
-```python
-def update_medical_vocabulary(
-    self,
-    VocabularyName: str,
-    LanguageCode: LanguageCode,
-    VocabularyFileUri: str = None
-) -> UpdateMedicalVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `VocabularyFileUri`: `str`
+
+Returns
+[UpdateMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatemedicalvocabularyresponsetypedef).
 
 ### update_vocabulary
 
 Type annotations for `boto3.client("transcribe").update_vocabulary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary]
+Boto3 documentation:
+[TranscribeService.Client.update_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
 
-```python
-def update_vocabulary(
-    self,
-    VocabularyName: str,
-    LanguageCode: LanguageCode,
-    Phrases: List[str] = None,
-    VocabularyFileUri: str = None
-) -> UpdateVocabularyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `VocabularyName`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+  *(required)*
+- `Phrases`: `List`\[`str`\]
+- `VocabularyFileUri`: `str`
+
+Returns
+[UpdateVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatevocabularyresponsetypedef).
 
 ### update_vocabulary_filter
 
-Type annotations for `boto3.client("transcribe").update_vocabulary_filter` method.
+Type annotations for `boto3.client("transcribe").update_vocabulary_filter`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter]
+Boto3 documentation:
+[TranscribeService.Client.update_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
 
-```python
-def update_vocabulary_filter(
-    self,
-    VocabularyFilterName: str,
-    Words: List[str] = None,
-    VocabularyFilterFileUri: str = None
-) -> UpdateVocabularyFilterResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `VocabularyFilterName`: `str` *(required)*
+- `Words`: `List`\[`str`\]
+- `VocabularyFilterFileUri`: `str`
 
-
+Returns
+[UpdateVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatevocabularyfilterresponsetypedef).

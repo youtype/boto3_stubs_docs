@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AutoScaling](./README.md) > Structures
 
-Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+Auto-generated documentation for
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+type annotations stubs module
+[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Typed dictionaries for boto3 AutoScaling module](#typed-dictionaries-for-boto3-autoscaling-module)
   - [ActivitiesTypeTypeDef](#activitiestypetypedef)
@@ -87,15 +89,14 @@ type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/
 from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef
 ```
 
-
 Required fields:
-- `Activities`: `List["ActivityTypeDef"]`
 
-
+- `Activities`:
+  `List`\[[ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ActivityTypeDef
 
@@ -103,17 +104,17 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ActivityTypeDef
 ```
 
-
 Required fields:
+
 - `ActivityId`: `str`
 - `AutoScalingGroupName`: `str`
 - `Cause`: `str`
 - `StartTime`: `datetime`
-- `StatusCode`: `ScalingActivityStatusCode`
-
-
+- `StatusCode`:
+  [ScalingActivityStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#scalingactivitystatuscode)
 
 Optional fields:
+
 - `Description`: `str`
 - `EndTime`: `datetime`
 - `StatusMessage`: `str`
@@ -122,19 +123,16 @@ Optional fields:
 - `AutoScalingGroupState`: `str`
 - `AutoScalingGroupARN`: `str`
 
-
 ## ActivityTypeTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import ActivityTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Activity`: `"ActivityTypeDef"`
 
+- `Activity`:
+  [ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypedef)
 
 ## AdjustmentTypeTypeDef
 
@@ -142,12 +140,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AdjustmentTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdjustmentType`: `str`
 
+- `AdjustmentType`: `str`
 
 ## AlarmTypeDef
 
@@ -155,13 +150,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AlarmTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlarmName`: `str`
 - `AlarmARN`: `str`
-
 
 ## AutoScalingGroupTypeDef
 
@@ -169,42 +161,47 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AutoScalingGroupTypeDef
 ```
 
-
 Required fields:
+
 - `AutoScalingGroupName`: `str`
 - `MinSize`: `int`
 - `MaxSize`: `int`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
-- `AvailabilityZones`: `List[str]`
+- `AvailabilityZones`: `List`\[`str`\]
 - `HealthCheckType`: `str`
 - `CreatedTime`: `datetime`
 
-
-
 Optional fields:
+
 - `AutoScalingGroupARN`: `str`
 - `LaunchConfigurationName`: `str`
-- `LaunchTemplate`: `"LaunchTemplateSpecificationTypeDef"`
-- `MixedInstancesPolicy`: `"MixedInstancesPolicyTypeDef"`
-- `LoadBalancerNames`: `List[str]`
-- `TargetGroupARNs`: `List[str]`
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+- `MixedInstancesPolicy`:
+  [MixedInstancesPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#mixedinstancespolicytypedef)
+- `LoadBalancerNames`: `List`\[`str`\]
+- `TargetGroupARNs`: `List`\[`str`\]
 - `HealthCheckGracePeriod`: `int`
-- `Instances`: `List["InstanceTypeDef"]`
-- `SuspendedProcesses`: `List["SuspendedProcessTypeDef"]`
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancetypedef)\]
+- `SuspendedProcesses`:
+  `List`\[[SuspendedProcessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#suspendedprocesstypedef)\]
 - `PlacementGroup`: `str`
 - `VPCZoneIdentifier`: `str`
-- `EnabledMetrics`: `List["EnabledMetricTypeDef"]`
+- `EnabledMetrics`:
+  `List`\[[EnabledMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#enabledmetrictypedef)\]
 - `Status`: `str`
-- `Tags`: `List["TagDescriptionTypeDef"]`
-- `TerminationPolicies`: `List[str]`
+- `Tags`:
+  `List`\[[TagDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagdescriptiontypedef)\]
+- `TerminationPolicies`: `List`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `CapacityRebalance`: `bool`
-- `WarmPoolConfiguration`: `"WarmPoolConfigurationTypeDef"`
+- `WarmPoolConfiguration`:
+  [WarmPoolConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#warmpoolconfigurationtypedef)
 - `WarmPoolSize`: `int`
-
 
 ## AutoScalingGroupsTypeTypeDef
 
@@ -212,15 +209,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
 ```
 
-
 Required fields:
-- `AutoScalingGroups`: `List["AutoScalingGroupTypeDef"]`
 
-
+- `AutoScalingGroups`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinggrouptypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## AutoScalingInstanceDetailsTypeDef
 
@@ -228,8 +224,8 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AutoScalingInstanceDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceId`: `str`
 - `AutoScalingGroupName`: `str`
 - `AvailabilityZone`: `str`
@@ -237,14 +233,13 @@ Required fields:
 - `HealthStatus`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
-
-
 Optional fields:
+
 - `InstanceType`: `str`
 - `LaunchConfigurationName`: `str`
-- `LaunchTemplate`: `"LaunchTemplateSpecificationTypeDef"`
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
 - `WeightedCapacity`: `str`
-
 
 ## AutoScalingInstancesTypeTypeDef
 
@@ -252,13 +247,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import AutoScalingInstancesTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutoScalingInstances`: `List["AutoScalingInstanceDetailsTypeDef"]`
-- `NextToken`: `str`
 
+- `AutoScalingInstances`:
+  `List`\[[AutoScalingInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinginstancedetailstypedef)\]
+- `NextToken`: `str`
 
 ## BatchDeleteScheduledActionAnswerTypeDef
 
@@ -266,12 +259,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedScheduledActions`: `List["FailedScheduledUpdateGroupActionRequestTypeDef"]`
 
+- `FailedScheduledActions`:
+  `List`\[[FailedScheduledUpdateGroupActionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#failedscheduledupdategroupactionrequesttypedef)\]
 
 ## BatchPutScheduledUpdateGroupActionAnswerTypeDef
 
@@ -279,12 +270,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FailedScheduledUpdateGroupActions`: `List["FailedScheduledUpdateGroupActionRequestTypeDef"]`
 
+- `FailedScheduledUpdateGroupActions`:
+  `List`\[[FailedScheduledUpdateGroupActionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#failedscheduledupdategroupactionrequesttypedef)\]
 
 ## BlockDeviceMappingTypeDef
 
@@ -292,17 +281,16 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import BlockDeviceMappingTypeDef
 ```
 
-
 Required fields:
+
 - `DeviceName`: `str`
 
-
-
 Optional fields:
-- `VirtualName`: `str`
-- `Ebs`: `"EbsTypeDef"`
-- `NoDevice`: `bool`
 
+- `VirtualName`: `str`
+- `Ebs`:
+  [EbsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#ebstypedef)
+- `NoDevice`: `bool`
 
 ## CancelInstanceRefreshAnswerTypeDef
 
@@ -310,12 +298,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceRefreshId`: `str`
 
+- `InstanceRefreshId`: `str`
 
 ## CustomizedMetricSpecificationTypeDef
 
@@ -323,18 +308,18 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: `MetricStatistic`
-
-
+- `Statistic`:
+  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#metricstatistic)
 
 Optional fields:
-- `Dimensions`: `List["MetricDimensionTypeDef"]`
-- `Unit`: `str`
 
+- `Dimensions`:
+  `List`\[[MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#metricdimensiontypedef)\]
+- `Unit`: `str`
 
 ## DescribeAccountLimitsAnswerTypeDef
 
@@ -342,15 +327,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeAccountLimitsAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxNumberOfAutoScalingGroups`: `int`
 - `MaxNumberOfLaunchConfigurations`: `int`
 - `NumberOfAutoScalingGroups`: `int`
 - `NumberOfLaunchConfigurations`: `int`
-
 
 ## DescribeAdjustmentTypesAnswerTypeDef
 
@@ -358,12 +340,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeAdjustmentTypesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdjustmentTypes`: `List["AdjustmentTypeTypeDef"]`
 
+- `AdjustmentTypes`:
+  `List`\[[AdjustmentTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#adjustmenttypetypedef)\]
 
 ## DescribeAutoScalingNotificationTypesAnswerTypeDef
 
@@ -371,12 +351,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingNotificationTypesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutoScalingNotificationTypes`: `List[str]`
 
+- `AutoScalingNotificationTypes`: `List`\[`str`\]
 
 ## DescribeInstanceRefreshesAnswerTypeDef
 
@@ -384,13 +361,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceRefreshes`: `List["InstanceRefreshTypeDef"]`
-- `NextToken`: `str`
 
+- `InstanceRefreshes`:
+  `List`\[[InstanceRefreshTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancerefreshtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeLifecycleHookTypesAnswerTypeDef
 
@@ -398,12 +373,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHookTypesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LifecycleHookTypes`: `List[str]`
 
+- `LifecycleHookTypes`: `List`\[`str`\]
 
 ## DescribeLifecycleHooksAnswerTypeDef
 
@@ -411,12 +383,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LifecycleHooks`: `List["LifecycleHookTypeDef"]`
 
+- `LifecycleHooks`:
+  `List`\[[LifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#lifecyclehooktypedef)\]
 
 ## DescribeLoadBalancerTargetGroupsResponseTypeDef
 
@@ -424,13 +394,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoadBalancerTargetGroups`: `List["LoadBalancerTargetGroupStateTypeDef"]`
-- `NextToken`: `str`
 
+- `LoadBalancerTargetGroups`:
+  `List`\[[LoadBalancerTargetGroupStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#loadbalancertargetgroupstatetypedef)\]
+- `NextToken`: `str`
 
 ## DescribeLoadBalancersResponseTypeDef
 
@@ -438,13 +406,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoadBalancers`: `List["LoadBalancerStateTypeDef"]`
-- `NextToken`: `str`
 
+- `LoadBalancers`:
+  `List`\[[LoadBalancerStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#loadbalancerstatetypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMetricCollectionTypesAnswerTypeDef
 
@@ -452,13 +418,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeMetricCollectionTypesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metrics`: `List["MetricCollectionTypeTypeDef"]`
-- `Granularities`: `List["MetricGranularityTypeTypeDef"]`
 
+- `Metrics`:
+  `List`\[[MetricCollectionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#metriccollectiontypetypedef)\]
+- `Granularities`:
+  `List`\[[MetricGranularityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#metricgranularitytypetypedef)\]
 
 ## DescribeNotificationConfigurationsAnswerTypeDef
 
@@ -466,15 +431,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsAnswerTypeDef
 ```
 
-
 Required fields:
-- `NotificationConfigurations`: `List["NotificationConfigurationTypeDef"]`
 
-
+- `NotificationConfigurations`:
+  `List`\[[NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#notificationconfigurationtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## DescribeTerminationPolicyTypesAnswerTypeDef
 
@@ -482,12 +446,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeTerminationPolicyTypesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TerminationPolicyTypes`: `List[str]`
 
+- `TerminationPolicyTypes`: `List`\[`str`\]
 
 ## DescribeWarmPoolAnswerTypeDef
 
@@ -495,14 +456,13 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WarmPoolConfiguration`: `"WarmPoolConfigurationTypeDef"`
-- `Instances`: `List["InstanceTypeDef"]`
-- `NextToken`: `str`
 
+- `WarmPoolConfiguration`:
+  [WarmPoolConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#warmpoolconfigurationtypedef)
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancetypedef)\]
+- `NextToken`: `str`
 
 ## DetachInstancesAnswerTypeDef
 
@@ -510,12 +470,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import DetachInstancesAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Activities`: `List["ActivityTypeDef"]`
 
+- `Activities`:
+  `List`\[[ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypedef)\]
 
 ## EbsTypeDef
 
@@ -523,10 +481,8 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import EbsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
 - `VolumeType`: `str`
@@ -534,20 +490,16 @@ Optional fields:
 - `Iops`: `int`
 - `Encrypted`: `bool`
 
-
 ## EnabledMetricTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import EnabledMetricTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Metric`: `str`
 - `Granularity`: `str`
-
 
 ## EnterStandbyAnswerTypeDef
 
@@ -555,12 +507,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import EnterStandbyAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Activities`: `List["ActivityTypeDef"]`
 
+- `Activities`:
+  `List`\[[ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypedef)\]
 
 ## ExitStandbyAnswerTypeDef
 
@@ -568,12 +518,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ExitStandbyAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Activities`: `List["ActivityTypeDef"]`
 
+- `Activities`:
+  `List`\[[ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypedef)\]
 
 ## FailedScheduledUpdateGroupActionRequestTypeDef
 
@@ -581,16 +529,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import FailedScheduledUpdateGroupActionRequestTypeDef
 ```
 
-
 Required fields:
+
 - `ScheduledActionName`: `str`
 
-
-
 Optional fields:
+
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## FilterTypeDef
 
@@ -598,13 +544,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import FilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Values`: `List[str]`
 
+- `Name`: `str`
+- `Values`: `List`\[`str`\]
 
 ## InstanceMetadataOptionsTypeDef
 
@@ -612,14 +555,13 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceMetadataOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HttpTokens`: `InstanceMetadataHttpTokensState`
-- `HttpPutResponseHopLimit`: `int`
-- `HttpEndpoint`: `InstanceMetadataEndpointState`
 
+- `HttpTokens`:
+  [InstanceMetadataHttpTokensState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#instancemetadatahttptokensstate)
+- `HttpPutResponseHopLimit`: `int`
+- `HttpEndpoint`:
+  [InstanceMetadataEndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#instancemetadataendpointstate)
 
 ## InstanceMonitoringTypeDef
 
@@ -627,12 +569,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceMonitoringTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
 
+- `Enabled`: `bool`
 
 ## InstanceRefreshLivePoolProgressTypeDef
 
@@ -640,13 +579,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceRefreshLivePoolProgressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
-
 
 ## InstanceRefreshProgressDetailsTypeDef
 
@@ -654,13 +590,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceRefreshProgressDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LivePoolProgress`: `"InstanceRefreshLivePoolProgressTypeDef"`
-- `WarmPoolProgress`: `"InstanceRefreshWarmPoolProgressTypeDef"`
 
+- `LivePoolProgress`:
+  [InstanceRefreshLivePoolProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancerefreshlivepoolprogresstypedef)
+- `WarmPoolProgress`:
+  [InstanceRefreshWarmPoolProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancerefreshwarmpoolprogresstypedef)
 
 ## InstanceRefreshTypeDef
 
@@ -668,20 +603,19 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceRefreshTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceRefreshId`: `str`
 - `AutoScalingGroupName`: `str`
-- `Status`: `InstanceRefreshStatus`
+- `Status`:
+  [InstanceRefreshStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#instancerefreshstatus)
 - `StatusReason`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
-- `ProgressDetails`: `"InstanceRefreshProgressDetailsTypeDef"`
-
+- `ProgressDetails`:
+  [InstanceRefreshProgressDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancerefreshprogressdetailstypedef)
 
 ## InstanceRefreshWarmPoolProgressTypeDef
 
@@ -689,13 +623,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceRefreshWarmPoolProgressTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
-
 
 ## InstanceTypeDef
 
@@ -703,22 +634,22 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstanceTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceId`: `str`
 - `AvailabilityZone`: `str`
-- `LifecycleState`: `LifecycleState`
+- `LifecycleState`:
+  [LifecycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#lifecyclestate)
 - `HealthStatus`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
-
-
 Optional fields:
+
 - `InstanceType`: `str`
 - `LaunchConfigurationName`: `str`
-- `LaunchTemplate`: `"LaunchTemplateSpecificationTypeDef"`
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
 - `WeightedCapacity`: `str`
-
 
 ## InstancesDistributionTypeDef
 
@@ -726,10 +657,8 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import InstancesDistributionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OnDemandAllocationStrategy`: `str`
 - `OnDemandBaseCapacity`: `int`
 - `OnDemandPercentageAboveBaseCapacity`: `int`
@@ -737,40 +666,40 @@ Optional fields:
 - `SpotInstancePools`: `int`
 - `SpotMaxPrice`: `str`
 
-
 ## LaunchConfigurationTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import LaunchConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `LaunchConfigurationName`: `str`
 - `ImageId`: `str`
 - `InstanceType`: `str`
 - `CreatedTime`: `datetime`
 
-
-
 Optional fields:
+
 - `LaunchConfigurationARN`: `str`
 - `KeyName`: `str`
-- `SecurityGroups`: `List[str]`
+- `SecurityGroups`: `List`\[`str`\]
 - `ClassicLinkVPCId`: `str`
-- `ClassicLinkVPCSecurityGroups`: `List[str]`
+- `ClassicLinkVPCSecurityGroups`: `List`\[`str`\]
 - `UserData`: `str`
 - `KernelId`: `str`
 - `RamdiskId`: `str`
-- `BlockDeviceMappings`: `List["BlockDeviceMappingTypeDef"]`
-- `InstanceMonitoring`: `"InstanceMonitoringTypeDef"`
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#blockdevicemappingtypedef)\]
+- `InstanceMonitoring`:
+  [InstanceMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemonitoringtypedef)
 - `SpotPrice`: `str`
 - `IamInstanceProfile`: `str`
 - `EbsOptimized`: `bool`
 - `AssociatePublicIpAddress`: `bool`
 - `PlacementTenancy`: `str`
-- `MetadataOptions`: `"InstanceMetadataOptionsTypeDef"`
-
+- `MetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemetadataoptionstypedef)
 
 ## LaunchConfigurationsTypeTypeDef
 
@@ -778,15 +707,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LaunchConfigurationsTypeTypeDef
 ```
 
-
 Required fields:
-- `LaunchConfigurations`: `List["LaunchConfigurationTypeDef"]`
 
-
+- `LaunchConfigurations`:
+  `List`\[[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchconfigurationtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## LaunchTemplateOverridesTypeDef
 
@@ -794,14 +722,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LaunchTemplateOverridesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceType`: `str`
 - `WeightedCapacity`: `str`
-- `LaunchTemplateSpecification`: `"LaunchTemplateSpecificationTypeDef"`
-
+- `LaunchTemplateSpecification`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -809,14 +735,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LaunchTemplateSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
 - `Version`: `str`
-
 
 ## LaunchTemplateTypeDef
 
@@ -824,13 +747,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LaunchTemplateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LaunchTemplateSpecification`: `"LaunchTemplateSpecificationTypeDef"`
-- `Overrides`: `List["LaunchTemplateOverridesTypeDef"]`
 
+- `LaunchTemplateSpecification`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+- `Overrides`:
+  `List`\[[LaunchTemplateOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplateoverridestypedef)\]
 
 ## LifecycleHookSpecificationTypeDef
 
@@ -838,20 +760,18 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LifecycleHookSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `LifecycleHookName`: `str`
 - `LifecycleTransition`: `str`
 
-
-
 Optional fields:
+
 - `NotificationMetadata`: `str`
 - `HeartbeatTimeout`: `int`
 - `DefaultResult`: `str`
 - `NotificationTargetARN`: `str`
 - `RoleARN`: `str`
-
 
 ## LifecycleHookTypeDef
 
@@ -859,10 +779,8 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LifecycleHookTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LifecycleHookName`: `str`
 - `AutoScalingGroupName`: `str`
 - `LifecycleTransition`: `str`
@@ -873,20 +791,16 @@ Optional fields:
 - `GlobalTimeout`: `int`
 - `DefaultResult`: `str`
 
-
 ## LoadBalancerStateTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import LoadBalancerStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LoadBalancerName`: `str`
 - `State`: `str`
-
 
 ## LoadBalancerTargetGroupStateTypeDef
 
@@ -894,13 +808,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import LoadBalancerTargetGroupStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LoadBalancerTargetGroupARN`: `str`
 - `State`: `str`
-
 
 ## MetricCollectionTypeTypeDef
 
@@ -908,12 +819,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import MetricCollectionTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metric`: `str`
 
+- `Metric`: `str`
 
 ## MetricDimensionTypeDef
 
@@ -921,13 +829,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import MetricDimensionTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## MetricGranularityTypeTypeDef
 
@@ -935,12 +840,9 @@ Required fields:
 from mypy_boto3_autoscaling.type_defs import MetricGranularityTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Granularity`: `str`
 
+- `Granularity`: `str`
 
 ## MixedInstancesPolicyTypeDef
 
@@ -948,13 +850,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import MixedInstancesPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LaunchTemplate`: `"LaunchTemplateTypeDef"`
-- `InstancesDistribution`: `"InstancesDistributionTypeDef"`
 
+- `LaunchTemplate`:
+  [LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatetypedef)
+- `InstancesDistribution`:
+  [InstancesDistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancesdistributiontypedef)
 
 ## NotificationConfigurationTypeDef
 
@@ -962,14 +863,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import NotificationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoScalingGroupName`: `str`
 - `TopicARN`: `str`
 - `NotificationType`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -977,14 +875,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PoliciesTypeTypeDef
 
@@ -992,13 +887,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import PoliciesTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ScalingPolicies`: `List["ScalingPolicyTypeDef"]`
-- `NextToken`: `str`
 
+- `ScalingPolicies`:
+  `List`\[[ScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scalingpolicytypedef)\]
+- `NextToken`: `str`
 
 ## PolicyARNTypeTypeDef
 
@@ -1006,13 +899,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import PolicyARNTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyARN`: `str`
-- `Alarms`: `List["AlarmTypeDef"]`
 
+- `PolicyARN`: `str`
+- `Alarms`:
+  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#alarmtypedef)\]
 
 ## PredefinedMetricSpecificationTypeDef
 
@@ -1020,15 +911,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import PredefinedMetricSpecificationTypeDef
 ```
 
-
 Required fields:
-- `PredefinedMetricType`: `MetricType`
 
-
+- `PredefinedMetricType`:
+  [MetricType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#metrictype)
 
 Optional fields:
-- `ResourceLabel`: `str`
 
+- `ResourceLabel`: `str`
 
 ## ProcessTypeTypeDef
 
@@ -1036,12 +926,9 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ProcessTypeTypeDef
 ```
 
-
 Required fields:
+
 - `ProcessName`: `str`
-
-
-
 
 ## ProcessesTypeTypeDef
 
@@ -1049,12 +936,10 @@ Required fields:
 from mypy_boto3_autoscaling.type_defs import ProcessesTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Processes`: `List["ProcessTypeTypeDef"]`
 
+- `Processes`:
+  `List`\[[ProcessTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#processtypetypedef)\]
 
 ## RefreshPreferencesTypeDef
 
@@ -1062,15 +947,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import RefreshPreferencesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MinHealthyPercentage`: `int`
 - `InstanceWarmup`: `int`
-- `CheckpointPercentages`: `List[int]`
+- `CheckpointPercentages`: `List`\[`int`\]
 - `CheckpointDelay`: `int`
-
 
 ## ScalingPolicyTypeDef
 
@@ -1078,10 +960,8 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ScalingPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoScalingGroupName`: `str`
 - `PolicyName`: `str`
 - `PolicyARN`: `str`
@@ -1091,13 +971,15 @@ Optional fields:
 - `MinAdjustmentMagnitude`: `int`
 - `ScalingAdjustment`: `int`
 - `Cooldown`: `int`
-- `StepAdjustments`: `List["StepAdjustmentTypeDef"]`
+- `StepAdjustments`:
+  `List`\[[StepAdjustmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#stepadjustmenttypedef)\]
 - `MetricAggregationType`: `str`
 - `EstimatedInstanceWarmup`: `int`
-- `Alarms`: `List["AlarmTypeDef"]`
-- `TargetTrackingConfiguration`: `"TargetTrackingConfigurationTypeDef"`
+- `Alarms`:
+  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#alarmtypedef)\]
+- `TargetTrackingConfiguration`:
+  [TargetTrackingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#targettrackingconfigurationtypedef)
 - `Enabled`: `bool`
-
 
 ## ScheduledActionsTypeTypeDef
 
@@ -1105,13 +987,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ScheduledActionsTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ScheduledUpdateGroupActions`: `List["ScheduledUpdateGroupActionTypeDef"]`
-- `NextToken`: `str`
 
+- `ScheduledUpdateGroupActions`:
+  `List`\[[ScheduledUpdateGroupActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledupdategroupactiontypedef)\]
+- `NextToken`: `str`
 
 ## ScheduledUpdateGroupActionRequestTypeDef
 
@@ -1119,13 +999,12 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import ScheduledUpdateGroupActionRequestTypeDef
 ```
 
-
 Required fields:
+
 - `ScheduledActionName`: `str`
 
-
-
 Optional fields:
+
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Recurrence`: `str`
@@ -1134,17 +1013,14 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
-
 ## ScheduledUpdateGroupActionTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import ScheduledUpdateGroupActionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionName`: `str`
 - `ScheduledActionARN`: `str`
@@ -1157,19 +1033,15 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
-
 ## StartInstanceRefreshAnswerTypeDef
 
 ```python
 from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshAnswerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceRefreshId`: `str`
 
+- `InstanceRefreshId`: `str`
 
 ## StepAdjustmentTypeDef
 
@@ -1177,16 +1049,14 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import StepAdjustmentTypeDef
 ```
 
-
 Required fields:
+
 - `ScalingAdjustment`: `int`
 
-
-
 Optional fields:
+
 - `MetricIntervalLowerBound`: `float`
 - `MetricIntervalUpperBound`: `float`
-
 
 ## SuspendedProcessTypeDef
 
@@ -1194,13 +1064,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import SuspendedProcessTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProcessName`: `str`
 - `SuspensionReason`: `str`
-
 
 ## TagDescriptionTypeDef
 
@@ -1208,16 +1075,13 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import TagDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceId`: `str`
 - `ResourceType`: `str`
 - `Key`: `str`
 - `Value`: `str`
 - `PropagateAtLaunch`: `bool`
-
 
 ## TagTypeDef
 
@@ -1225,18 +1089,16 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
+
 - `ResourceId`: `str`
 - `ResourceType`: `str`
 - `Value`: `str`
 - `PropagateAtLaunch`: `bool`
-
 
 ## TagsTypeTypeDef
 
@@ -1244,13 +1106,11 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import TagsTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagdescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## TargetTrackingConfigurationTypeDef
 
@@ -1258,17 +1118,17 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import TargetTrackingConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `TargetValue`: `float`
 
-
-
 Optional fields:
-- `PredefinedMetricSpecification`: `"PredefinedMetricSpecificationTypeDef"`
-- `CustomizedMetricSpecification`: `"CustomizedMetricSpecificationTypeDef"`
-- `DisableScaleIn`: `bool`
 
+- `PredefinedMetricSpecification`:
+  [PredefinedMetricSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#predefinedmetricspecificationtypedef)
+- `CustomizedMetricSpecification`:
+  [CustomizedMetricSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#customizedmetricspecificationtypedef)
+- `DisableScaleIn`: `bool`
 
 ## WarmPoolConfigurationTypeDef
 
@@ -1276,12 +1136,10 @@ Optional fields:
 from mypy_boto3_autoscaling.type_defs import WarmPoolConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
-- `PoolState`: `WarmPoolState`
+- `PoolState`:
+  [WarmPoolState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#warmpoolstate)
 - `Status`: `Literal['PendingDelete']`
-

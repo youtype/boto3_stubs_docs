@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudWatchLogs
 
-Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+Auto-generated documentation for
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+type annotations stubs module
+[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ```bash
 pip install mypy-boto3-logs
@@ -19,7 +21,8 @@ pip install mypy-boto3-logs
 
 ## CloudWatchLogsClient
 
-Type annotations for  `boto3.client("logs")` as [CloudWatchLogsClient](./client.md)
+Type annotations for `boto3.client("logs")` as
+[CloudWatchLogsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_logs.client import CloudWatchLogsClient
 ```
 
-
 CloudWatchLogsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_kms_key](./client.md#associate-kms-key)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_export_task](./client.md#cancel-export-task)
@@ -79,10 +80,8 @@ CloudWatchLogsClient [exceptions](./client.md#exceptions)
 - [test_metric_filter](./client.md#test-metric-filter)
 - [untag_log_group](./client.md#untag-log-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DataAlreadyAcceptedException](./client.md#dataalreadyacceptedexception)
 - [InvalidOperationException](./client.md#invalidoperationexception)
@@ -96,14 +95,10 @@ CloudWatchLogsClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [UnrecognizedClientException](./client.md#unrecognizedclientexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("logs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("logs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -120,11 +115,6 @@ from mypy_boto3_logs.paginators import DescribeDestinationsPaginator, ...
 - [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
 - [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
 - [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -150,13 +140,10 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [OrderBy](./literals.md#orderby)
 - [QueryStatus](./literals.md#querystatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

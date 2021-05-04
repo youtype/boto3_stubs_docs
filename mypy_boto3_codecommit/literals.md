@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeCommit](./README.md) > Literals
 
-Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
-type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+Auto-generated documentation for
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+type annotations stubs module
+[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Literals for boto3 CodeCommit module](#literals-for-boto3-codecommit-module)
   - [ApprovalState](#approvalstate)

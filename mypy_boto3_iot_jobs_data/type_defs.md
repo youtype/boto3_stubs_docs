@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Structures
 
-Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+Auto-generated documentation for
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+type annotations stubs module
+[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [Typed dictionaries for boto3 IoTJobsDataPlane module](#typed-dictionaries-for-boto3-iotjobsdataplane-module)
   - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
@@ -20,12 +22,10 @@ type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/projec
 from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `execution`: `"JobExecutionTypeDef"`
 
+- `execution`:
+  [JobExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutiontypedef)
 
 ## GetPendingJobExecutionsResponseTypeDef
 
@@ -33,13 +33,12 @@ Optional fields:
 from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inProgressJobs`: `List["JobExecutionSummaryTypeDef"]`
-- `queuedJobs`: `List["JobExecutionSummaryTypeDef"]`
 
+- `inProgressJobs`:
+  `List`\[[JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionsummarytypedef)\]
+- `queuedJobs`:
+  `List`\[[JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionsummarytypedef)\]
 
 ## JobExecutionStateTypeDef
 
@@ -47,14 +46,12 @@ Optional fields:
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `JobExecutionStatus`
-- `statusDetails`: `Dict[str, str]`
-- `versionNumber`: `int`
 
+- `status`:
+  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
+- `statusDetails`: `Dict`\[`str`, `str`\]
+- `versionNumber`: `int`
 
 ## JobExecutionSummaryTypeDef
 
@@ -62,10 +59,8 @@ Optional fields:
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jobId`: `str`
 - `queuedAt`: `int`
 - `startedAt`: `int`
@@ -73,21 +68,19 @@ Optional fields:
 - `versionNumber`: `int`
 - `executionNumber`: `int`
 
-
 ## JobExecutionTypeDef
 
 ```python
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jobId`: `str`
 - `thingName`: `str`
-- `status`: `JobExecutionStatus`
-- `statusDetails`: `Dict[str, str]`
+- `status`:
+  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
+- `statusDetails`: `Dict`\[`str`, `str`\]
 - `queuedAt`: `int`
 - `startedAt`: `int`
 - `lastUpdatedAt`: `int`
@@ -96,19 +89,16 @@ Optional fields:
 - `executionNumber`: `int`
 - `jobDocument`: `str`
 
-
 ## StartNextPendingJobExecutionResponseTypeDef
 
 ```python
 from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `execution`: `"JobExecutionTypeDef"`
 
+- `execution`:
+  [JobExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutiontypedef)
 
 ## UpdateJobExecutionResponseTypeDef
 
@@ -116,10 +106,8 @@ Optional fields:
 from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `executionState`: `"JobExecutionStateTypeDef"`
-- `jobDocument`: `str`
 
+- `executionState`:
+  [JobExecutionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionstatetypedef)
+- `jobDocument`: `str`

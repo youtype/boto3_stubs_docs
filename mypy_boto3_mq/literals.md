@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MQ](./README.md) > Literals
 
-Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
-type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+Auto-generated documentation for
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+type annotations stubs module
+[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [Literals for boto3 MQ module](#literals-for-boto3-mq-module)
   - [AuthenticationStrategy](#authenticationstrategy)

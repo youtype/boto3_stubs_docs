@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Redshift](./README.md) > Paginators
 
-Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+Auto-generated documentation for
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+type annotations stubs module
+[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Paginators for boto3 Redshift module](#paginators-for-boto3-redshift-module)
   - [DescribeClusterDbRevisionsPaginator](#describeclusterdbrevisionspaginator)
@@ -36,7 +38,8 @@ type annotations stubs module [mypy_boto3_redshift](https://pypi.org/project/myp
 
 ## DescribeClusterDbRevisionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_db_revisions")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_db_revisions")`.
 
 Can be used directly:
 
@@ -47,20 +50,22 @@ def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsP
     return boto3.client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterDbRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
-```python
-class DescribeClusterDbRevisionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterDbRevisionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterDbRevisionsPaginator.paginate` returns
+`Iterator`\[[ClusterDbRevisionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterdbrevisionsmessagetypedef)\].
+
 ## DescribeClusterParameterGroupsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")`.
 
 Can be used directly:
 
@@ -71,22 +76,24 @@ def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParamete
     return boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
-```python
-class DescribeClusterParameterGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParameterGroupName: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterParameterGroupsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
+
+- `ParameterGroupName`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterParameterGroupsPaginator.paginate` returns
+`Iterator`\[[ClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupsmessagetypedef)\].
+
 ## DescribeClusterParametersPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_parameters")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_parameters")`.
 
 Can be used directly:
 
@@ -97,21 +104,23 @@ def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPagi
     return boto3.client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
-```python
-class DescribeClusterParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParameterGroupName: str,
-        Source: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterParameterGroupDetailsTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterParametersPaginator.paginate` method:
+
+- `ParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterParametersPaginator.paginate` returns
+`Iterator`\[[ClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupdetailstypedef)\].
+
 ## DescribeClusterSecurityGroupsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_security_groups")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_security_groups")`.
 
 Can be used directly:
 
@@ -122,22 +131,24 @@ def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityG
     return boto3.client("redshift").get_paginator("describe_cluster_security_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
-```python
-class DescribeClusterSecurityGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterSecurityGroupName: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterSecurityGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
+
+- `ClusterSecurityGroupName`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterSecurityGroupsPaginator.paginate` returns
+`Iterator`\[[ClusterSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygroupmessagetypedef)\].
+
 ## DescribeClusterSnapshotsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_snapshots")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_snapshots")`.
 
 Can be used directly:
 
@@ -148,29 +159,32 @@ def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPagina
     return boto3.client("redshift").get_paginator("describe_cluster_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
-```python
-class DescribeClusterSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        SnapshotIdentifier: str = None,
-        SnapshotType: str = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        OwnerAccount: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        ClusterExists: bool = None,
-        SortingEntities: List[SnapshotSortingEntityTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SnapshotMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `OwnerAccount`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `ClusterExists`: `bool`
+- `SortingEntities`:
+  `List`\[[SnapshotSortingEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotsortingentitytypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterSnapshotsPaginator.paginate` returns
+`Iterator`\[[SnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotmessagetypedef)\].
+
 ## DescribeClusterSubnetGroupsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")`.
 
 Can be used directly:
 
@@ -181,22 +195,24 @@ def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroup
     return boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
-```python
-class DescribeClusterSubnetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterSubnetGroupName: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterSubnetGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
+
+- `ClusterSubnetGroupName`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterSubnetGroupsPaginator.paginate` returns
+`Iterator`\[[ClusterSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgroupmessagetypedef)\].
+
 ## DescribeClusterTracksPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_tracks")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_tracks")`.
 
 Can be used directly:
 
@@ -207,20 +223,22 @@ def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterTracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
-```python
-class DescribeClusterTracksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        MaintenanceTrackName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[TrackListMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterTracksPaginator.paginate` method:
+
+- `MaintenanceTrackName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterTracksPaginator.paginate` returns
+`Iterator`\[[TrackListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tracklistmessagetypedef)\].
+
 ## DescribeClusterVersionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_versions")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_cluster_versions")`.
 
 Can be used directly:
 
@@ -231,21 +249,23 @@ def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginato
     return boto3.client("redshift").get_paginator("describe_cluster_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusterVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
-```python
-class DescribeClusterVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterVersion: str = None,
-        ClusterParameterGroupFamily: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClusterVersionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClusterVersionsPaginator.paginate` method:
+
+- `ClusterVersion`: `str`
+- `ClusterParameterGroupFamily`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClusterVersionsPaginator.paginate` returns
+`Iterator`\[[ClusterVersionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterversionsmessagetypedef)\].
+
 ## DescribeClustersPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_clusters")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_clusters")`.
 
 Can be used directly:
 
@@ -256,22 +276,24 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("redshift").get_paginator("describe_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
+Boto3 documentation:
+[Redshift.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
-```python
-class DescribeClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClustersMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeClustersPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeClustersPaginator.paginate` returns
+`Iterator`\[[ClustersMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersmessagetypedef)\].
+
 ## DescribeDefaultClusterParametersPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_default_cluster_parameters")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_default_cluster_parameters")`.
 
 Can be used directly:
 
@@ -282,20 +304,22 @@ def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultCluste
     return boto3.client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
+Boto3 documentation:
+[Redshift.Paginator.DescribeDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
-```python
-class DescribeDefaultClusterParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParameterGroupFamily: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDefaultClusterParametersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
+
+- `ParameterGroupFamily`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDefaultClusterParametersPaginator.paginate` returns
+`Iterator`\[[DescribeDefaultClusterParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describedefaultclusterparametersresulttypedef)\].
+
 ## DescribeEndpointAccessPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_endpoint_access")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_endpoint_access")`.
 
 Can be used directly:
 
@@ -306,23 +330,25 @@ def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
     return boto3.client("redshift").get_paginator("describe_endpoint_access")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
+Boto3 documentation:
+[Redshift.Paginator.DescribeEndpointAccess](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
-```python
-class DescribeEndpointAccessPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        ResourceOwner: str = None,
-        EndpointName: str = None,
-        VpcId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EndpointAccessListTypeDef]:
-        pass
-```
+Arguments for `DescribeEndpointAccessPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `ResourceOwner`: `str`
+- `EndpointName`: `str`
+- `VpcId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEndpointAccessPaginator.paginate` returns
+`Iterator`\[[EndpointAccessListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesslisttypedef)\].
+
 ## DescribeEndpointAuthorizationPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_endpoint_authorization")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_endpoint_authorization")`.
 
 Can be used directly:
 
@@ -333,22 +359,24 @@ def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthoriza
     return boto3.client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
+Boto3 documentation:
+[Redshift.Paginator.DescribeEndpointAuthorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
-```python
-class DescribeEndpointAuthorizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        Account: str = None,
-        Grantee: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EndpointAuthorizationListTypeDef]:
-        pass
-```
+Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `Account`: `str`
+- `Grantee`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEndpointAuthorizationPaginator.paginate` returns
+`Iterator`\[[EndpointAuthorizationListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationlisttypedef)\].
+
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_event_subscriptions")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_event_subscriptions")`.
 
 Can be used directly:
 
@@ -359,22 +387,24 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
-```python
-class DescribeEventSubscriptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SubscriptionName: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EventSubscriptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+
+- `SubscriptionName`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventSubscriptionsPaginator.paginate` returns
+`Iterator`\[[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptionsmessagetypedef)\].
+
 ## DescribeEventsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_events")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_events")`.
 
 Can be used directly:
 
@@ -385,24 +415,27 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("redshift").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
+Boto3 documentation:
+[Redshift.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SourceIdentifier: str = None,
-        SourceType: SourceType = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Duration: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EventsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `SourceIdentifier`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsmessagetypedef)\].
+
 ## DescribeHsmClientCertificatesPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_hsm_client_certificates")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_hsm_client_certificates")`.
 
 Can be used directly:
 
@@ -413,22 +446,24 @@ def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertifi
     return boto3.client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
+Boto3 documentation:
+[Redshift.Paginator.DescribeHsmClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
-```python
-class DescribeHsmClientCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        HsmClientCertificateIdentifier: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[HsmClientCertificateMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
+
+- `HsmClientCertificateIdentifier`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeHsmClientCertificatesPaginator.paginate` returns
+`Iterator`\[[HsmClientCertificateMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmclientcertificatemessagetypedef)\].
+
 ## DescribeHsmConfigurationsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_hsm_configurations")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_hsm_configurations")`.
 
 Can be used directly:
 
@@ -439,22 +474,24 @@ def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPagi
     return boto3.client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
+Boto3 documentation:
+[Redshift.Paginator.DescribeHsmConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
-```python
-class DescribeHsmConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        HsmConfigurationIdentifier: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[HsmConfigurationMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
+
+- `HsmConfigurationIdentifier`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeHsmConfigurationsPaginator.paginate` returns
+`Iterator`\[[HsmConfigurationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmconfigurationmessagetypedef)\].
+
 ## DescribeNodeConfigurationOptionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_node_configuration_options")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_node_configuration_options")`.
 
 Can be used directly:
 
@@ -465,24 +502,29 @@ def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigura
     return boto3.client("redshift").get_paginator("describe_node_configuration_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeNodeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
-```python
-class DescribeNodeConfigurationOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ActionType: ActionType,
-        ClusterIdentifier: str = None,
-        SnapshotIdentifier: str = None,
-        OwnerAccount: str = None,
-        Filters: List[NodeConfigurationOptionsFilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[NodeConfigurationOptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
+
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#actiontype)
+  *(required)*
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `OwnerAccount`: `str`
+- `Filters`:
+  `List`\[[NodeConfigurationOptionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNodeConfigurationOptionsPaginator.paginate` returns
+`Iterator`\[[NodeConfigurationOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsmessagetypedef)\].
+
 ## DescribeOrderableClusterOptionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_orderable_cluster_options")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_orderable_cluster_options")`.
 
 Can be used directly:
 
@@ -493,21 +535,23 @@ def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClust
     return boto3.client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeOrderableClusterOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
-```python
-class DescribeOrderableClusterOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterVersion: str = None,
-        NodeType: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[OrderableClusterOptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
+
+- `ClusterVersion`: `str`
+- `NodeType`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeOrderableClusterOptionsPaginator.paginate` returns
+`Iterator`\[[OrderableClusterOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#orderableclusteroptionsmessagetypedef)\].
+
 ## DescribeReservedNodeOfferingsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_reserved_node_offerings")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_reserved_node_offerings")`.
 
 Can be used directly:
 
@@ -518,20 +562,22 @@ def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOffe
     return boto3.client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
+Boto3 documentation:
+[Redshift.Paginator.DescribeReservedNodeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
-```python
-class DescribeReservedNodeOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedNodeOfferingId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedNodeOfferingsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
+
+- `ReservedNodeOfferingId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedNodeOfferingsPaginator.paginate` returns
+`Iterator`\[[ReservedNodeOfferingsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodeofferingsmessagetypedef)\].
+
 ## DescribeReservedNodesPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_reserved_nodes")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_reserved_nodes")`.
 
 Can be used directly:
 
@@ -542,20 +588,22 @@ def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
     return boto3.client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
+Boto3 documentation:
+[Redshift.Paginator.DescribeReservedNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
-```python
-class DescribeReservedNodesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedNodeId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedNodesMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedNodesPaginator.paginate` method:
+
+- `ReservedNodeId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedNodesPaginator.paginate` returns
+`Iterator`\[[ReservedNodesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodesmessagetypedef)\].
+
 ## DescribeScheduledActionsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_scheduled_actions")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_scheduled_actions")`.
 
 Can be used directly:
 
@@ -566,25 +614,29 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
     return boto3.client("redshift").get_paginator("describe_scheduled_actions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
+Boto3 documentation:
+[Redshift.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
-```python
-class DescribeScheduledActionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ScheduledActionName: str = None,
-        TargetActionType: ScheduledActionTypeValues = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Active: bool = None,
-        Filters: List[ScheduledActionFilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ScheduledActionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeScheduledActionsPaginator.paginate` method:
+
+- `ScheduledActionName`: `str`
+- `TargetActionType`:
+  [ScheduledActionTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#scheduledactiontypevalues)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Active`: `bool`
+- `Filters`:
+  `List`\[[ScheduledActionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScheduledActionsPaginator.paginate` returns
+`Iterator`\[[ScheduledActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionsmessagetypedef)\].
+
 ## DescribeSnapshotCopyGrantsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")`.
 
 Can be used directly:
 
@@ -595,22 +647,24 @@ def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsP
     return boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
+Boto3 documentation:
+[Redshift.Paginator.DescribeSnapshotCopyGrants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
-```python
-class DescribeSnapshotCopyGrantsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SnapshotCopyGrantName: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SnapshotCopyGrantMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
+
+- `SnapshotCopyGrantName`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSnapshotCopyGrantsPaginator.paginate` returns
+`Iterator`\[[SnapshotCopyGrantMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotcopygrantmessagetypedef)\].
+
 ## DescribeSnapshotSchedulesPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_snapshot_schedules")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_snapshot_schedules")`.
 
 Can be used directly:
 
@@ -621,23 +675,25 @@ def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPagi
     return boto3.client("redshift").get_paginator("describe_snapshot_schedules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
+Boto3 documentation:
+[Redshift.Paginator.DescribeSnapshotSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
-```python
-class DescribeSnapshotSchedulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        ScheduleIdentifier: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeSnapshotSchedulesOutputMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `ScheduleIdentifier`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSnapshotSchedulesPaginator.paginate` returns
+`Iterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describesnapshotschedulesoutputmessagetypedef)\].
+
 ## DescribeTableRestoreStatusPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_table_restore_status")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_table_restore_status")`.
 
 Can be used directly:
 
@@ -648,18 +704,19 @@ def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusP
     return boto3.client("redshift").get_paginator("describe_table_restore_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
+Boto3 documentation:
+[Redshift.Paginator.DescribeTableRestoreStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
-```python
-class DescribeTableRestoreStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ClusterIdentifier: str = None,
-        TableRestoreRequestId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[TableRestoreStatusMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
+
+- `ClusterIdentifier`: `str`
+- `TableRestoreRequestId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTableRestoreStatusPaginator.paginate` returns
+`Iterator`\[[TableRestoreStatusMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tablerestorestatusmessagetypedef)\].
+
 ## DescribeTagsPaginator
 
 Type annotations for `boto3.client("redshift").get_paginator("describe_tags")`.
@@ -673,23 +730,25 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("redshift").get_paginator("describe_tags")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
+Boto3 documentation:
+[Redshift.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
-```python
-class DescribeTagsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceName: str = None,
-        ResourceType: str = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[TaggedResourceListMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeTagsPaginator.paginate` method:
+
+- `ResourceName`: `str`
+- `ResourceType`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeTagsPaginator.paginate` returns
+`Iterator`\[[TaggedResourceListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#taggedresourcelistmessagetypedef)\].
+
 ## DescribeUsageLimitsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_usage_limits")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("describe_usage_limits")`.
 
 Can be used directly:
 
@@ -700,24 +759,27 @@ def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
     return boto3.client("redshift").get_paginator("describe_usage_limits")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
+Boto3 documentation:
+[Redshift.Paginator.DescribeUsageLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
-```python
-class DescribeUsageLimitsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        UsageLimitId: str = None,
-        ClusterIdentifier: str = None,
-        FeatureType: UsageLimitFeatureType = None,
-        TagKeys: List[str] = None,
-        TagValues: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[UsageLimitListTypeDef]:
-        pass
-```
+Arguments for `DescribeUsageLimitsPaginator.paginate` method:
+
+- `UsageLimitId`: `str`
+- `ClusterIdentifier`: `str`
+- `FeatureType`:
+  [UsageLimitFeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitfeaturetype)
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`DescribeUsageLimitsPaginator.paginate` returns
+`Iterator`\[[UsageLimitListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimitlisttypedef)\].
+
 ## GetReservedNodeExchangeOfferingsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")`.
+Type annotations for
+`boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")`.
 
 Can be used directly:
 
@@ -728,14 +790,14 @@ def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExcha
     return boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
+Boto3 documentation:
+[Redshift.Paginator.GetReservedNodeExchangeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
-```python
-class GetReservedNodeExchangeOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedNodeId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetReservedNodeExchangeOfferingsOutputMessageTypeDef]:
-        pass
-```
+Arguments for `GetReservedNodeExchangeOfferingsPaginator.paginate` method:
+
+- `ReservedNodeId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+
+`GetReservedNodeExchangeOfferingsPaginator.paginate` returns
+`Iterator`\[[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#getreservednodeexchangeofferingsoutputmessagetypedef)\].

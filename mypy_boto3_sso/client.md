@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSO](./README.md) > SSOClient
 
-Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+Auto-generated documentation for
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+type annotations stubs module
+[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [SSOClient for boto3 SSO module](#ssoclient-for-boto3-sso-module)
   - [SSOClient](#ssoclient)
@@ -30,12 +32,13 @@ def get_sso_client() -> SSOClient:
     return boto3.client("sso")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
+Boto3 documentation:
+[SSO.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sso.client import Exceptions
@@ -43,7 +46,6 @@ from mypy_boto3_sso.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -53,111 +55,102 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("sso").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate]
+Boto3 documentation:
+[SSO.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sso").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url]
+Boto3 documentation:
+[SSO.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_role_credentials
 
 Type annotations for `boto3.client("sso").get_role_credentials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials]
+Boto3 documentation:
+[SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
 
-```python
-def get_role_credentials(
-    self,
-    roleName: str,
-    accountId: str,
-    accessToken: str
-) -> GetRoleCredentialsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `roleName`: `str` *(required)*
+- `accountId`: `str` *(required)*
+- `accessToken`: `str` *(required)*
+
+Returns
+[GetRoleCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#getrolecredentialsresponsetypedef).
 
 ### list_account_roles
 
 Type annotations for `boto3.client("sso").list_account_roles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles]
+Boto3 documentation:
+[SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
 
-```python
-def list_account_roles(
-    self,
-    accessToken: str,
-    accountId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAccountRolesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accessToken`: `str` *(required)*
+- `accountId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAccountRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountrolesresponsetypedef).
 
 ### list_accounts
 
 Type annotations for `boto3.client("sso").list_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts]
+Boto3 documentation:
+[SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
 
-```python
-def list_accounts(
-    self,
-    accessToken: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAccountsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accessToken`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountsresponsetypedef).
 
 ### logout
 
 Type annotations for `boto3.client("sso").logout` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout]
+Boto3 documentation:
+[SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
 
-```python
-def logout(
-    self,
-    accessToken: str
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `accessToken`: `str` *(required)*
 
 ### get_paginator
 
 Type annotations for `boto3.client("sso").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_roles")` -> [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
-- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-
-
+- `client.get_paginator("list_account_roles")` ->
+  [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
+- `client.get_paginator("list_accounts")` ->
+  [ListAccountsPaginator](./paginators.md#listaccountspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SES
 
-Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+Auto-generated documentation for
+[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+type annotations stubs module
+[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 ```bash
 pip install mypy-boto3-ses
@@ -20,7 +22,7 @@ pip install mypy-boto3-ses
 
 ## SESClient
 
-Type annotations for  `boto3.client("ses")` as [SESClient](./client.md)
+Type annotations for `boto3.client("ses")` as [SESClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +30,10 @@ Can be used directly:
 from mypy_boto3_ses.client import SESClient
 ```
 
-
 SESClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [clone_receipt_rule_set](./client.md#clone-receipt-rule-set)
 - [create_configuration_set](./client.md#create-configuration-set)
@@ -110,10 +110,8 @@ SESClient [exceptions](./client.md#exceptions)
 - [verify_email_address](./client.md#verify-email-address)
 - [verify_email_identity](./client.md#verify-email-identity)
 
-
-
-
 ### Exceptions
+
 - [AccountSendingPausedException](./client.md#accountsendingpausedexception)
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [CannotDeleteException](./client.md#cannotdeleteexception)
@@ -150,14 +148,10 @@ SESClient [exceptions](./client.md#exceptions)
 - [TrackingOptionsAlreadyExistsException](./client.md#trackingoptionsalreadyexistsexception)
 - [TrackingOptionsDoesNotExistException](./client.md#trackingoptionsdoesnotexistexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ses").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ses").get_paginator("...")`.
 
 Can be used directly:
 
@@ -171,12 +165,10 @@ from mypy_boto3_ses.paginators import ListConfigurationSetsPaginator, ...
 - [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
 - [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("ses").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("ses").get_waiter("...")`.
 
 Can be used directly:
 
@@ -185,9 +177,6 @@ from mypy_boto3_ses.waiters import IdentityExistsWaiter, ...
 ```
 
 - [IdentityExistsWaiter](./waiters.md#identityexistswaiter)
-
-
-
 
 ## Literals
 
@@ -222,13 +211,10 @@ from mypy_boto3_ses.literals import BehaviorOnMXFailure, ...
 - [TlsPolicy](./literals.md#tlspolicy)
 - [VerificationStatus](./literals.md#verificationstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

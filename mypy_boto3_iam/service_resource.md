@@ -2,55 +2,58 @@
 
 > [Index](../README.md) > [IAM](./README.md) > IAMServiceResource
 
-Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+Auto-generated documentation for
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+type annotations stubs module
+[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [IAMServiceResource for boto3 IAM module](#iamserviceresource-for-boto3-iam-module)
   - [IAMServiceResource](#iamserviceresource)
-  - [Methods](#methods)
-    - [IAMServiceResource.AccessKey](#iamserviceresourceaccesskey)
-    - [IAMServiceResource.AccessKeyPair](#iamserviceresourceaccesskeypair)
-    - [IAMServiceResource.AccountPasswordPolicy](#iamserviceresourceaccountpasswordpolicy)
-    - [IAMServiceResource.AccountSummary](#iamserviceresourceaccountsummary)
-    - [IAMServiceResource.AssumeRolePolicy](#iamserviceresourceassumerolepolicy)
-    - [IAMServiceResource.CurrentUser](#iamserviceresourcecurrentuser)
-    - [IAMServiceResource.Group](#iamserviceresourcegroup)
-    - [IAMServiceResource.GroupPolicy](#iamserviceresourcegrouppolicy)
-    - [IAMServiceResource.InstanceProfile](#iamserviceresourceinstanceprofile)
-    - [IAMServiceResource.LoginProfile](#iamserviceresourceloginprofile)
-    - [IAMServiceResource.MfaDevice](#iamserviceresourcemfadevice)
-    - [IAMServiceResource.Policy](#iamserviceresourcepolicy)
-    - [IAMServiceResource.PolicyVersion](#iamserviceresourcepolicyversion)
-    - [IAMServiceResource.Role](#iamserviceresourcerole)
-    - [IAMServiceResource.RolePolicy](#iamserviceresourcerolepolicy)
-    - [IAMServiceResource.SamlProvider](#iamserviceresourcesamlprovider)
-    - [IAMServiceResource.ServerCertificate](#iamserviceresourceservercertificate)
-    - [IAMServiceResource.SigningCertificate](#iamserviceresourcesigningcertificate)
-    - [IAMServiceResource.User](#iamserviceresourceuser)
-    - [IAMServiceResource.UserPolicy](#iamserviceresourceuserpolicy)
-    - [IAMServiceResource.VirtualMfaDevice](#iamserviceresourcevirtualmfadevice)
-    - [IAMServiceResource.change_password](#iamserviceresourcechange_password)
-    - [IAMServiceResource.create_account_alias](#iamserviceresourcecreate_account_alias)
-    - [IAMServiceResource.create_account_password_policy](#iamserviceresourcecreate_account_password_policy)
-    - [IAMServiceResource.create_group](#iamserviceresourcecreate_group)
-    - [IAMServiceResource.create_instance_profile](#iamserviceresourcecreate_instance_profile)
-    - [IAMServiceResource.create_policy](#iamserviceresourcecreate_policy)
-    - [IAMServiceResource.create_role](#iamserviceresourcecreate_role)
-    - [IAMServiceResource.create_saml_provider](#iamserviceresourcecreate_saml_provider)
-    - [IAMServiceResource.create_server_certificate](#iamserviceresourcecreate_server_certificate)
-    - [IAMServiceResource.create_signing_certificate](#iamserviceresourcecreate_signing_certificate)
-    - [IAMServiceResource.create_user](#iamserviceresourcecreate_user)
-    - [IAMServiceResource.create_virtual_mfa_device](#iamserviceresourcecreate_virtual_mfa_device)
-    - [IAMServiceResource.get_available_subresources](#iamserviceresourceget_available_subresources)
+  - [Attributes](#attributes)
   - [Collections](#collections)
-    - [IAMServiceResource.groups](#iamserviceresourcegroups)
-    - [IAMServiceResource.instance_profiles](#iamserviceresourceinstance_profiles)
-    - [IAMServiceResource.policies](#iamserviceresourcepolicies)
-    - [IAMServiceResource.roles](#iamserviceresourceroles)
-    - [IAMServiceResource.saml_providers](#iamserviceresourcesaml_providers)
-    - [IAMServiceResource.server_certificates](#iamserviceresourceserver_certificates)
-    - [IAMServiceResource.users](#iamserviceresourceusers)
-    - [IAMServiceResource.virtual_mfa_devices](#iamserviceresourcevirtual_mfa_devices)
+    - [ServiceResourceGroupsCollection](#serviceresourcegroupscollection)
+    - [ServiceResourceInstanceProfilesCollection](#serviceresourceinstanceprofilescollection)
+    - [ServiceResourcePoliciesCollection](#serviceresourcepoliciescollection)
+    - [ServiceResourceRolesCollection](#serviceresourcerolescollection)
+    - [ServiceResourceSamlProvidersCollection](#serviceresourcesamlproviderscollection)
+    - [ServiceResourceServerCertificatesCollection](#serviceresourceservercertificatescollection)
+    - [ServiceResourceUsersCollection](#serviceresourceuserscollection)
+    - [ServiceResourceVirtualMfaDevicesCollection](#serviceresourcevirtualmfadevicescollection)
+  - [Methods](#methods)
+    - [IAMServiceResource.AccessKey method](#iamserviceresourceaccesskey-method)
+    - [IAMServiceResource.AccessKeyPair method](#iamserviceresourceaccesskeypair-method)
+    - [IAMServiceResource.AccountPasswordPolicy method](#iamserviceresourceaccountpasswordpolicy-method)
+    - [IAMServiceResource.AccountSummary method](#iamserviceresourceaccountsummary-method)
+    - [IAMServiceResource.AssumeRolePolicy method](#iamserviceresourceassumerolepolicy-method)
+    - [IAMServiceResource.CurrentUser method](#iamserviceresourcecurrentuser-method)
+    - [IAMServiceResource.Group method](#iamserviceresourcegroup-method)
+    - [IAMServiceResource.GroupPolicy method](#iamserviceresourcegrouppolicy-method)
+    - [IAMServiceResource.InstanceProfile method](#iamserviceresourceinstanceprofile-method)
+    - [IAMServiceResource.LoginProfile method](#iamserviceresourceloginprofile-method)
+    - [IAMServiceResource.MfaDevice method](#iamserviceresourcemfadevice-method)
+    - [IAMServiceResource.Policy method](#iamserviceresourcepolicy-method)
+    - [IAMServiceResource.PolicyVersion method](#iamserviceresourcepolicyversion-method)
+    - [IAMServiceResource.Role method](#iamserviceresourcerole-method)
+    - [IAMServiceResource.RolePolicy method](#iamserviceresourcerolepolicy-method)
+    - [IAMServiceResource.SamlProvider method](#iamserviceresourcesamlprovider-method)
+    - [IAMServiceResource.ServerCertificate method](#iamserviceresourceservercertificate-method)
+    - [IAMServiceResource.SigningCertificate method](#iamserviceresourcesigningcertificate-method)
+    - [IAMServiceResource.User method](#iamserviceresourceuser-method)
+    - [IAMServiceResource.UserPolicy method](#iamserviceresourceuserpolicy-method)
+    - [IAMServiceResource.VirtualMfaDevice method](#iamserviceresourcevirtualmfadevice-method)
+    - [IAMServiceResource.change_password method](#iamserviceresourcechange_password-method)
+    - [IAMServiceResource.create_account_alias method](#iamserviceresourcecreate_account_alias-method)
+    - [IAMServiceResource.create_account_password_policy method](#iamserviceresourcecreate_account_password_policy-method)
+    - [IAMServiceResource.create_group method](#iamserviceresourcecreate_group-method)
+    - [IAMServiceResource.create_instance_profile method](#iamserviceresourcecreate_instance_profile-method)
+    - [IAMServiceResource.create_policy method](#iamserviceresourcecreate_policy-method)
+    - [IAMServiceResource.create_role method](#iamserviceresourcecreate_role-method)
+    - [IAMServiceResource.create_saml_provider method](#iamserviceresourcecreate_saml_provider-method)
+    - [IAMServiceResource.create_server_certificate method](#iamserviceresourcecreate_server_certificate-method)
+    - [IAMServiceResource.create_signing_certificate method](#iamserviceresourcecreate_signing_certificate-method)
+    - [IAMServiceResource.create_user method](#iamserviceresourcecreate_user-method)
+    - [IAMServiceResource.create_virtual_mfa_device method](#iamserviceresourcecreate_virtual_mfa_device-method)
+    - [IAMServiceResource.get_available_subresources method](#iamserviceresourceget_available_subresources-method)
   - [AccessKey](#accesskey)
     - [AccessKey attributes](#accesskey-attributes)
     - [AccessKey methods](#accesskey-methods)
@@ -68,12 +71,12 @@ type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-bot
     - [AssumeRolePolicy methods](#assumerolepolicy-methods)
   - [CurrentUser](#currentuser)
     - [CurrentUser attributes](#currentuser-attributes)
-    - [CurrentUser methods](#currentuser-methods)
     - [CurrentUser collections](#currentuser-collections)
+    - [CurrentUser methods](#currentuser-methods)
   - [Group](#group)
     - [Group attributes](#group-attributes)
-    - [Group methods](#group-methods)
     - [Group collections](#group-collections)
+    - [Group methods](#group-methods)
   - [GroupPolicy](#grouppolicy)
     - [GroupPolicy attributes](#grouppolicy-attributes)
     - [GroupPolicy methods](#grouppolicy-methods)
@@ -88,15 +91,15 @@ type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-bot
     - [MfaDevice methods](#mfadevice-methods)
   - [Policy](#policy)
     - [Policy attributes](#policy-attributes)
-    - [Policy methods](#policy-methods)
     - [Policy collections](#policy-collections)
+    - [Policy methods](#policy-methods)
   - [PolicyVersion](#policyversion)
     - [PolicyVersion attributes](#policyversion-attributes)
     - [PolicyVersion methods](#policyversion-methods)
   - [Role](#role)
     - [Role attributes](#role-attributes)
-    - [Role methods](#role-methods)
     - [Role collections](#role-collections)
+    - [Role methods](#role-methods)
   - [RolePolicy](#rolepolicy)
     - [RolePolicy attributes](#rolepolicy-attributes)
     - [RolePolicy methods](#rolepolicy-methods)
@@ -111,8 +114,8 @@ type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-bot
     - [SigningCertificate methods](#signingcertificate-methods)
   - [User](#user)
     - [User attributes](#user-attributes)
-    - [User methods](#user-methods)
     - [User collections](#user-collections)
+    - [User methods](#user-methods)
   - [UserPolicy](#userpolicy)
     - [UserPolicy attributes](#userpolicy-attributes)
     - [UserPolicy methods](#userpolicy-methods)
@@ -122,7 +125,8 @@ type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-bot
 
 ## IAMServiceResource
 
-Type annotations for `boto3.resource("iam")`, included resources and collections.
+Type annotations for `boto3.resource("iam")`, included resources and
+collections.
 
 Can be used directly:
 
@@ -133,601 +137,35 @@ def get_iam_resource() -> IAMServiceResource:
     return boto3.resource("iam")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource)
+Boto3 documentation:
+[IAM.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource)
 
+## Attributes
 
-## Methods
+- `groups`: [ServiceResourceGroupsCollection](#serviceresourcegroupscollection)
 
-### IAMServiceResource.AccessKey
+- `instance_profiles`:
+  [ServiceResourceInstanceProfilesCollection](#serviceresourceinstanceprofilescollection)
 
-Type annotations for `boto3.resource("iam").AccessKey` method.
+- `policies`:
+  [ServiceResourcePoliciesCollection](#serviceresourcepoliciescollection)
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccessKey]
+- `roles`: [ServiceResourceRolesCollection](#serviceresourcerolescollection)
 
-Definition:
+- `saml_providers`:
+  [ServiceResourceSamlProvidersCollection](#serviceresourcesamlproviderscollection)
 
-```python
-def AccessKey(
-    self,
-    user_name: str,
-    id: str
-) -> _AccessKey:
-    pass
-```
+- `server_certificates`:
+  [ServiceResourceServerCertificatesCollection](#serviceresourceservercertificatescollection)
 
-### IAMServiceResource.AccessKeyPair
+- `users`: [ServiceResourceUsersCollection](#serviceresourceuserscollection)
 
-Type annotations for `boto3.resource("iam").AccessKeyPair` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccessKeyPair]
-
-Definition:
-
-```python
-def AccessKeyPair(
-    self,
-    user_name: str,
-    id: str,
-    secret: str
-) -> _AccessKeyPair:
-    pass
-```
-
-### IAMServiceResource.AccountPasswordPolicy
-
-Type annotations for `boto3.resource("iam").AccountPasswordPolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccountPasswordPolicy]
-
-Definition:
-
-```python
-def AccountPasswordPolicy(
-    self
-) -> _AccountPasswordPolicy:
-    pass
-```
-
-### IAMServiceResource.AccountSummary
-
-Type annotations for `boto3.resource("iam").AccountSummary` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccountSummary]
-
-Definition:
-
-```python
-def AccountSummary(
-    self
-) -> _AccountSummary:
-    pass
-```
-
-### IAMServiceResource.AssumeRolePolicy
-
-Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AssumeRolePolicy]
-
-Definition:
-
-```python
-def AssumeRolePolicy(
-    self,
-    role_name: str
-) -> _AssumeRolePolicy:
-    pass
-```
-
-### IAMServiceResource.CurrentUser
-
-Type annotations for `boto3.resource("iam").CurrentUser` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.CurrentUser]
-
-Definition:
-
-```python
-def CurrentUser(
-    self
-) -> _CurrentUser:
-    pass
-```
-
-### IAMServiceResource.Group
-
-Type annotations for `boto3.resource("iam").Group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Group]
-
-Definition:
-
-```python
-def Group(
-    self,
-    name: str
-) -> _Group:
-    pass
-```
-
-### IAMServiceResource.GroupPolicy
-
-Type annotations for `boto3.resource("iam").GroupPolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.GroupPolicy]
-
-Definition:
-
-```python
-def GroupPolicy(
-    self,
-    group_name: str,
-    name: str
-) -> _GroupPolicy:
-    pass
-```
-
-### IAMServiceResource.InstanceProfile
-
-Type annotations for `boto3.resource("iam").InstanceProfile` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.InstanceProfile]
-
-Definition:
-
-```python
-def InstanceProfile(
-    self,
-    name: str
-) -> _InstanceProfile:
-    pass
-```
-
-### IAMServiceResource.LoginProfile
-
-Type annotations for `boto3.resource("iam").LoginProfile` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.LoginProfile]
-
-Definition:
-
-```python
-def LoginProfile(
-    self,
-    user_name: str
-) -> _LoginProfile:
-    pass
-```
-
-### IAMServiceResource.MfaDevice
-
-Type annotations for `boto3.resource("iam").MfaDevice` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.MfaDevice]
-
-Definition:
-
-```python
-def MfaDevice(
-    self,
-    user_name: str,
-    serial_number: str
-) -> _MfaDevice:
-    pass
-```
-
-### IAMServiceResource.Policy
-
-Type annotations for `boto3.resource("iam").Policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Policy]
-
-Definition:
-
-```python
-def Policy(
-    self,
-    policy_arn: str
-) -> _Policy:
-    pass
-```
-
-### IAMServiceResource.PolicyVersion
-
-Type annotations for `boto3.resource("iam").PolicyVersion` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.PolicyVersion]
-
-Definition:
-
-```python
-def PolicyVersion(
-    self,
-    arn: str,
-    version_id: str
-) -> _PolicyVersion:
-    pass
-```
-
-### IAMServiceResource.Role
-
-Type annotations for `boto3.resource("iam").Role` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Role]
-
-Definition:
-
-```python
-def Role(
-    self,
-    name: str
-) -> _Role:
-    pass
-```
-
-### IAMServiceResource.RolePolicy
-
-Type annotations for `boto3.resource("iam").RolePolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.RolePolicy]
-
-Definition:
-
-```python
-def RolePolicy(
-    self,
-    role_name: str,
-    name: str
-) -> _RolePolicy:
-    pass
-```
-
-### IAMServiceResource.SamlProvider
-
-Type annotations for `boto3.resource("iam").SamlProvider` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.SamlProvider]
-
-Definition:
-
-```python
-def SamlProvider(
-    self,
-    arn: str
-) -> _SamlProvider:
-    pass
-```
-
-### IAMServiceResource.ServerCertificate
-
-Type annotations for `boto3.resource("iam").ServerCertificate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.ServerCertificate]
-
-Definition:
-
-```python
-def ServerCertificate(
-    self,
-    name: str
-) -> _ServerCertificate:
-    pass
-```
-
-### IAMServiceResource.SigningCertificate
-
-Type annotations for `boto3.resource("iam").SigningCertificate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.SigningCertificate]
-
-Definition:
-
-```python
-def SigningCertificate(
-    self,
-    user_name: str,
-    id: str
-) -> _SigningCertificate:
-    pass
-```
-
-### IAMServiceResource.User
-
-Type annotations for `boto3.resource("iam").User` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.User]
-
-Definition:
-
-```python
-def User(
-    self,
-    name: str
-) -> _User:
-    pass
-```
-
-### IAMServiceResource.UserPolicy
-
-Type annotations for `boto3.resource("iam").UserPolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.UserPolicy]
-
-Definition:
-
-```python
-def UserPolicy(
-    self,
-    user_name: str,
-    name: str
-) -> _UserPolicy:
-    pass
-```
-
-### IAMServiceResource.VirtualMfaDevice
-
-Type annotations for `boto3.resource("iam").VirtualMfaDevice` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.VirtualMfaDevice]
-
-Definition:
-
-```python
-def VirtualMfaDevice(
-    self,
-    serial_number: str
-) -> _VirtualMfaDevice:
-    pass
-```
-
-### IAMServiceResource.change_password
-
-Type annotations for `boto3.resource("iam").change_password` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.change_password]
-
-Definition:
-
-```python
-def change_password(
-    self,
-    OldPassword: str,
-    NewPassword: str
-) -> None:
-    pass
-```
-
-### IAMServiceResource.create_account_alias
-
-Type annotations for `boto3.resource("iam").create_account_alias` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_account_alias]
-
-Definition:
-
-```python
-def create_account_alias(
-    self,
-    AccountAlias: str
-) -> None:
-    pass
-```
-
-### IAMServiceResource.create_account_password_policy
-
-Type annotations for `boto3.resource("iam").create_account_password_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_account_password_policy]
-
-Definition:
-
-```python
-def create_account_password_policy(
-    self,
-    MinimumPasswordLength: int = None,
-    RequireSymbols: bool = None,
-    RequireNumbers: bool = None,
-    RequireUppercaseCharacters: bool = None,
-    RequireLowercaseCharacters: bool = None,
-    AllowUsersToChangePassword: bool = None,
-    MaxPasswordAge: int = None,
-    PasswordReusePrevention: int = None,
-    HardExpiry: bool = None
-) -> _AccountPasswordPolicy:
-    pass
-```
-
-### IAMServiceResource.create_group
-
-Type annotations for `boto3.resource("iam").create_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_group]
-
-Definition:
-
-```python
-def create_group(
-    self,
-    GroupName: str,
-    Path: str = None
-) -> _Group:
-    pass
-```
-
-### IAMServiceResource.create_instance_profile
-
-Type annotations for `boto3.resource("iam").create_instance_profile` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_instance_profile]
-
-Definition:
-
-```python
-def create_instance_profile(
-    self,
-    InstanceProfileName: str,
-    Path: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _InstanceProfile:
-    pass
-```
-
-### IAMServiceResource.create_policy
-
-Type annotations for `boto3.resource("iam").create_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_policy]
-
-Definition:
-
-```python
-def create_policy(
-    self,
-    PolicyName: str,
-    PolicyDocument: str,
-    Path: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _Policy:
-    pass
-```
-
-### IAMServiceResource.create_role
-
-Type annotations for `boto3.resource("iam").create_role` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_role]
-
-Definition:
-
-```python
-def create_role(
-    self,
-    RoleName: str,
-    AssumeRolePolicyDocument: str,
-    Path: str = None,
-    Description: str = None,
-    MaxSessionDuration: int = None,
-    PermissionsBoundary: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _Role:
-    pass
-```
-
-### IAMServiceResource.create_saml_provider
-
-Type annotations for `boto3.resource("iam").create_saml_provider` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_saml_provider]
-
-Definition:
-
-```python
-def create_saml_provider(
-    self,
-    SAMLMetadataDocument: str,
-    Name: str,
-    Tags: List["TagTypeDef"] = None
-) -> _SamlProvider:
-    pass
-```
-
-### IAMServiceResource.create_server_certificate
-
-Type annotations for `boto3.resource("iam").create_server_certificate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_server_certificate]
-
-Definition:
-
-```python
-def create_server_certificate(
-    self,
-    ServerCertificateName: str,
-    CertificateBody: str,
-    PrivateKey: str,
-    Path: str = None,
-    CertificateChain: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _ServerCertificate:
-    pass
-```
-
-### IAMServiceResource.create_signing_certificate
-
-Type annotations for `boto3.resource("iam").create_signing_certificate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_signing_certificate]
-
-Definition:
-
-```python
-def create_signing_certificate(
-    self,
-    CertificateBody: str,
-    UserName: str = None
-) -> _SigningCertificate:
-    pass
-```
-
-### IAMServiceResource.create_user
-
-Type annotations for `boto3.resource("iam").create_user` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_user]
-
-Definition:
-
-```python
-def create_user(
-    self,
-    UserName: str,
-    Path: str = None,
-    PermissionsBoundary: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _User:
-    pass
-```
-
-### IAMServiceResource.create_virtual_mfa_device
-
-Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_virtual_mfa_device]
-
-Definition:
-
-```python
-def create_virtual_mfa_device(
-    self,
-    VirtualMFADeviceName: str,
-    Path: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _VirtualMfaDevice:
-    pass
-```
-
-### IAMServiceResource.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.get_available_subresources]
-
-Definition:
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
+- `virtual_mfa_devices`:
+  [ServiceResourceVirtualMfaDevicesCollection](#serviceresourcevirtualmfadevicescollection)
 
 ## Collections
 
-### IAMServiceResource.groups
+### ServiceResourceGroupsCollection
 
 Type annotations for `boto3.resource("iam").groups` collection.
 
@@ -737,54 +175,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection,
 
 def get_collection() -> ServiceResourceGroupsCollection:
-    return boto3.resource("iam").groups(
-        ...
-    )
+    return boto3.resource("iam").groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceGroupsCollection)
+Provides access to [Group](#group) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.groups)
 
-```python
-class ServiceResourceGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Group"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Group"]:
-        pass
-```
-
-### IAMServiceResource.instance_profiles
+### ServiceResourceInstanceProfilesCollection
 
 Type annotations for `boto3.resource("iam").instance_profiles` collection.
 
@@ -794,54 +193,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceInstanceProfilesCollection,
 
 def get_collection() -> ServiceResourceInstanceProfilesCollection:
-    return boto3.resource("iam").instance_profiles(
-        ...
-    )
+    return boto3.resource("iam").instance_profiles
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceInstanceProfilesCollection)
+Provides access to [InstanceProfile](#instanceprofile) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.instance_profiles)
 
-```python
-class ServiceResourceInstanceProfilesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceInstanceProfilesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceInstanceProfilesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceInstanceProfilesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceInstanceProfilesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["InstanceProfile"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["InstanceProfile"]:
-        pass
-```
-
-### IAMServiceResource.policies
+### ServiceResourcePoliciesCollection
 
 Type annotations for `boto3.resource("iam").policies` collection.
 
@@ -851,57 +211,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourcePoliciesCollection,
 
 def get_collection() -> ServiceResourcePoliciesCollection:
-    return boto3.resource("iam").policies(
-        ...
-    )
+    return boto3.resource("iam").policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourcePoliciesCollection)
+Provides access to [Policy](#policy) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.policies)
 
-```python
-class ServiceResourcePoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourcePoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Scope: policyScopeType = None,
-        OnlyAttached: bool = None,
-        PathPrefix: str = None,
-        PolicyUsageFilter: PolicyUsageType = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourcePoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourcePoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourcePoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Policy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Policy"]:
-        pass
-```
-
-### IAMServiceResource.roles
+### ServiceResourceRolesCollection
 
 Type annotations for `boto3.resource("iam").roles` collection.
 
@@ -911,54 +229,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceRolesCollection,
 
 def get_collection() -> ServiceResourceRolesCollection:
-    return boto3.resource("iam").roles(
-        ...
-    )
+    return boto3.resource("iam").roles
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceRolesCollection)
+Provides access to [Role](#role) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.roles)
 
-```python
-class ServiceResourceRolesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceRolesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceRolesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceRolesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceRolesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Role"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Role"]:
-        pass
-```
-
-### IAMServiceResource.saml_providers
+### ServiceResourceSamlProvidersCollection
 
 Type annotations for `boto3.resource("iam").saml_providers` collection.
 
@@ -968,51 +247,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceSamlProvidersCollection,
 
 def get_collection() -> ServiceResourceSamlProvidersCollection:
-    return boto3.resource("iam").saml_providers(
-        ...
-    )
+    return boto3.resource("iam").saml_providers
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceSamlProvidersCollection)
+Provides access to [SamlProvider](#samlprovider) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.saml_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.saml_providers)
 
-```python
-class ServiceResourceSamlProvidersCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceSamlProvidersCollection":
-        pass
-
-    def filter(  # type: ignore
-        self
-    ) -> "ServiceResourceSamlProvidersCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceSamlProvidersCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceSamlProvidersCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["SamlProvider"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["SamlProvider"]:
-        pass
-```
-
-### IAMServiceResource.server_certificates
+### ServiceResourceServerCertificatesCollection
 
 Type annotations for `boto3.resource("iam").server_certificates` collection.
 
@@ -1022,54 +265,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceServerCertificatesCollection,
 
 def get_collection() -> ServiceResourceServerCertificatesCollection:
-    return boto3.resource("iam").server_certificates(
-        ...
-    )
+    return boto3.resource("iam").server_certificates
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceServerCertificatesCollection)
+Provides access to [ServerCertificate](#servercertificate) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.server_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.server_certificates)
 
-```python
-class ServiceResourceServerCertificatesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceServerCertificatesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceServerCertificatesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceServerCertificatesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceServerCertificatesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["ServerCertificate"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["ServerCertificate"]:
-        pass
-```
-
-### IAMServiceResource.users
+### ServiceResourceUsersCollection
 
 Type annotations for `boto3.resource("iam").users` collection.
 
@@ -1079,54 +283,15 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceUsersCollection,
 
 def get_collection() -> ServiceResourceUsersCollection:
-    return boto3.resource("iam").users(
-        ...
-    )
+    return boto3.resource("iam").users
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceUsersCollection)
+Provides access to [User](#user) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.users)
 
-```python
-class ServiceResourceUsersCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceUsersCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceUsersCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceUsersCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceUsersCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["User"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["User"]:
-        pass
-```
-
-### IAMServiceResource.virtual_mfa_devices
+### ServiceResourceVirtualMfaDevicesCollection
 
 Type annotations for `boto3.resource("iam").virtual_mfa_devices` collection.
 
@@ -1136,55 +301,489 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceVirtualMfaDevicesCollection,
 
 def get_collection() -> ServiceResourceVirtualMfaDevicesCollection:
-    return boto3.resource("iam").virtual_mfa_devices(
-        ...
-    )
+    return boto3.resource("iam").virtual_mfa_devices
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceVirtualMfaDevicesCollection)
+Provides access to [VirtualMfaDevice](#virtualmfadevice) resource.
 
-Definition:
+Boto3 documentation:
+[IAM.ServiceResource.virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.virtual_mfa_devices)
 
-```python
-class ServiceResourceVirtualMfaDevicesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceVirtualMfaDevicesCollection":
-        pass
+## Methods
 
-    def filter(  # type: ignore
-        self,
-        AssignmentStatus: assignmentStatusType = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "ServiceResourceVirtualMfaDevicesCollection":
-        pass
+### IAMServiceResource.AccessKey method
 
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceVirtualMfaDevicesCollection":
-        pass
+Type annotations for `boto3.resource("iam").AccessKey` method.
 
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceVirtualMfaDevicesCollection":
-        pass
+Boto3 documentation:
+[IAM.ServiceResource.AccessKey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
 
-    def pages(
-        self
-    ) -> Iterator[List["VirtualMfaDevice"]]:
-        pass
+Arguments:
 
-    def __iter__(
-        self
-    ) -> Iterator["VirtualMfaDevice"]:
-        pass
-```
+- `user_name`: `str` *(required)*
+- `id`: `str` *(required)*
 
+Returns [AccessKey](#accesskey).
 
+### IAMServiceResource.AccessKeyPair method
 
+Type annotations for `boto3.resource("iam").AccessKeyPair` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.AccessKeyPair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
+
+Arguments:
+
+- `user_name`: `str` *(required)*
+- `id`: `str` *(required)*
+- `secret`: `str` *(required)*
+
+Returns [AccessKeyPair](#accesskeypair).
+
+### IAMServiceResource.AccountPasswordPolicy method
+
+Type annotations for `boto3.resource("iam").AccountPasswordPolicy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.AccountPasswordPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
+
+Returns [AccountPasswordPolicy](#accountpasswordpolicy).
+
+### IAMServiceResource.AccountSummary method
+
+Type annotations for `boto3.resource("iam").AccountSummary` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.AccountSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
+
+Returns [AccountSummary](#accountsummary).
+
+### IAMServiceResource.AssumeRolePolicy method
+
+Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.AssumeRolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
+
+Arguments:
+
+- `role_name`: `str` *(required)*
+
+Returns [AssumeRolePolicy](#assumerolepolicy).
+
+### IAMServiceResource.CurrentUser method
+
+Type annotations for `boto3.resource("iam").CurrentUser` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.CurrentUser](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
+
+Returns [CurrentUser](#currentuser).
+
+### IAMServiceResource.Group method
+
+Type annotations for `boto3.resource("iam").Group` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.Group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [Group](#group).
+
+### IAMServiceResource.GroupPolicy method
+
+Type annotations for `boto3.resource("iam").GroupPolicy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.GroupPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
+
+Arguments:
+
+- `group_name`: `str` *(required)*
+- `name`: `str` *(required)*
+
+Returns [GroupPolicy](#grouppolicy).
+
+### IAMServiceResource.InstanceProfile method
+
+Type annotations for `boto3.resource("iam").InstanceProfile` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.InstanceProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [InstanceProfile](#instanceprofile).
+
+### IAMServiceResource.LoginProfile method
+
+Type annotations for `boto3.resource("iam").LoginProfile` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.LoginProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
+
+Arguments:
+
+- `user_name`: `str` *(required)*
+
+Returns [LoginProfile](#loginprofile).
+
+### IAMServiceResource.MfaDevice method
+
+Type annotations for `boto3.resource("iam").MfaDevice` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.MfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
+
+Arguments:
+
+- `user_name`: `str` *(required)*
+- `serial_number`: `str` *(required)*
+
+Returns [MfaDevice](#mfadevice).
+
+### IAMServiceResource.Policy method
+
+Type annotations for `boto3.resource("iam").Policy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
+
+Arguments:
+
+- `policy_arn`: `str` *(required)*
+
+Returns [Policy](#policy).
+
+### IAMServiceResource.PolicyVersion method
+
+Type annotations for `boto3.resource("iam").PolicyVersion` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.PolicyVersion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
+
+Arguments:
+
+- `arn`: `str` *(required)*
+- `version_id`: `str` *(required)*
+
+Returns [PolicyVersion](#policyversion).
+
+### IAMServiceResource.Role method
+
+Type annotations for `boto3.resource("iam").Role` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.Role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [Role](#role).
+
+### IAMServiceResource.RolePolicy method
+
+Type annotations for `boto3.resource("iam").RolePolicy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.RolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
+
+Arguments:
+
+- `role_name`: `str` *(required)*
+- `name`: `str` *(required)*
+
+Returns [RolePolicy](#rolepolicy).
+
+### IAMServiceResource.SamlProvider method
+
+Type annotations for `boto3.resource("iam").SamlProvider` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.SamlProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
+
+Arguments:
+
+- `arn`: `str` *(required)*
+
+Returns [SamlProvider](#samlprovider).
+
+### IAMServiceResource.ServerCertificate method
+
+Type annotations for `boto3.resource("iam").ServerCertificate` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.ServerCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [ServerCertificate](#servercertificate).
+
+### IAMServiceResource.SigningCertificate method
+
+Type annotations for `boto3.resource("iam").SigningCertificate` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.SigningCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
+
+Arguments:
+
+- `user_name`: `str` *(required)*
+- `id`: `str` *(required)*
+
+Returns [SigningCertificate](#signingcertificate).
+
+### IAMServiceResource.User method
+
+Type annotations for `boto3.resource("iam").User` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [User](#user).
+
+### IAMServiceResource.UserPolicy method
+
+Type annotations for `boto3.resource("iam").UserPolicy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.UserPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
+
+Arguments:
+
+- `user_name`: `str` *(required)*
+- `name`: `str` *(required)*
+
+Returns [UserPolicy](#userpolicy).
+
+### IAMServiceResource.VirtualMfaDevice method
+
+Type annotations for `boto3.resource("iam").VirtualMfaDevice` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.VirtualMfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
+
+Arguments:
+
+- `serial_number`: `str` *(required)*
+
+Returns [VirtualMfaDevice](#virtualmfadevice).
+
+### IAMServiceResource.change_password method
+
+Type annotations for `boto3.resource("iam").change_password` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.change_password)
+
+Arguments:
+
+- `OldPassword`: `str` *(required)*
+- `NewPassword`: `str` *(required)*
+
+### IAMServiceResource.create_account_alias method
+
+Type annotations for `boto3.resource("iam").create_account_alias` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_alias)
+
+Arguments:
+
+- `AccountAlias`: `str` *(required)*
+
+### IAMServiceResource.create_account_password_policy method
+
+Type annotations for `boto3.resource("iam").create_account_password_policy`
+method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_password_policy)
+
+Arguments:
+
+- `MinimumPasswordLength`: `int`
+- `RequireSymbols`: `bool`
+- `RequireNumbers`: `bool`
+- `RequireUppercaseCharacters`: `bool`
+- `RequireLowercaseCharacters`: `bool`
+- `AllowUsersToChangePassword`: `bool`
+- `MaxPasswordAge`: `int`
+- `PasswordReusePrevention`: `int`
+- `HardExpiry`: `bool`
+
+Returns [AccountPasswordPolicy](#accountpasswordpolicy).
+
+### IAMServiceResource.create_group method
+
+Type annotations for `boto3.resource("iam").create_group` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_group)
+
+Arguments:
+
+- `GroupName`: `str` *(required)*
+- `Path`: `str`
+
+Returns [Group](#group).
+
+### IAMServiceResource.create_instance_profile method
+
+Type annotations for `boto3.resource("iam").create_instance_profile` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_instance_profile)
+
+Arguments:
+
+- `InstanceProfileName`: `str` *(required)*
+- `Path`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [InstanceProfile](#instanceprofile).
+
+### IAMServiceResource.create_policy method
+
+Type annotations for `boto3.resource("iam").create_policy` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_policy)
+
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+- `Path`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [Policy](#policy).
+
+### IAMServiceResource.create_role method
+
+Type annotations for `boto3.resource("iam").create_role` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_role)
+
+Arguments:
+
+- `RoleName`: `str` *(required)*
+- `AssumeRolePolicyDocument`: `str` *(required)*
+- `Path`: `str`
+- `Description`: `str`
+- `MaxSessionDuration`: `int`
+- `PermissionsBoundary`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [Role](#role).
+
+### IAMServiceResource.create_saml_provider method
+
+Type annotations for `boto3.resource("iam").create_saml_provider` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_saml_provider)
+
+Arguments:
+
+- `SAMLMetadataDocument`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [SamlProvider](#samlprovider).
+
+### IAMServiceResource.create_server_certificate method
+
+Type annotations for `boto3.resource("iam").create_server_certificate` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_server_certificate)
+
+Arguments:
+
+- `ServerCertificateName`: `str` *(required)*
+- `CertificateBody`: `str` *(required)*
+- `PrivateKey`: `str` *(required)*
+- `Path`: `str`
+- `CertificateChain`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [ServerCertificate](#servercertificate).
+
+### IAMServiceResource.create_signing_certificate method
+
+Type annotations for `boto3.resource("iam").create_signing_certificate` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_signing_certificate)
+
+Arguments:
+
+- `CertificateBody`: `str` *(required)*
+- `UserName`: `str`
+
+Returns [SigningCertificate](#signingcertificate).
+
+### IAMServiceResource.create_user method
+
+Type annotations for `boto3.resource("iam").create_user` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_user)
+
+Arguments:
+
+- `UserName`: `str` *(required)*
+- `Path`: `str`
+- `PermissionsBoundary`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [User](#user).
+
+### IAMServiceResource.create_virtual_mfa_device method
+
+Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_virtual_mfa_device)
+
+Arguments:
+
+- `VirtualMFADeviceName`: `str` *(required)*
+- `Path`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [VirtualMfaDevice](#virtualmfadevice).
+
+### IAMServiceResource.get_available_subresources method
+
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
+
+Boto3 documentation:
+[IAM.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.get_available_subresources)
+
+Returns `List`\[`str`\].
 
 ## AccessKey
 
@@ -1199,99 +798,69 @@ def get_resource() -> AccessKey:
     return boto3.resource("iam").AccessKey(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
-
+Boto3 documentation:
+[IAM.AccessKey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
 
 ### AccessKey attributes
 
-
 - `access_key_id`: `str`
-
 - `status`: `str`
-
 - `create_date`: `datetime`
-
 - `user_name`: `str`
-
 - `id`: `str`
-
-
-
 
 ### AccessKey methods
 
-
-#### AccessKey.User
+#### AccessKey.User method
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.User]
+Boto3 documentation:
+[IAM.AccessKey.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.User)
 
-```python
-def User(
-    self
-) -> _User:
-    pass
-```
+Returns [User](#user).
 
-#### AccessKey.activate
+#### AccessKey.activate method
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate]
+Boto3 documentation:
+[IAM.AccessKey.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate)
 
-```python
-def activate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### AccessKey.deactivate
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### AccessKey.deactivate method
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate]
+Boto3 documentation:
+[IAM.AccessKey.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate)
 
-```python
-def deactivate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### AccessKey.delete
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### AccessKey.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete]
+Boto3 documentation:
+[IAM.AccessKey.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### AccessKey.get_available_subresources
+#### AccessKey.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.get_available_subresources]
+Boto3 documentation:
+[IAM.AccessKey.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
-
-
+Returns `List`\[`str`\].
 
 ## AccessKeyPair
 
@@ -1306,90 +875,62 @@ def get_resource() -> AccessKeyPair:
     return boto3.resource("iam").AccessKeyPair(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
-
+Boto3 documentation:
+[IAM.AccessKeyPair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
 
 ### AccessKeyPair attributes
 
-
 - `access_key_id`: `str`
-
 - `status`: `str`
-
 - `secret_access_key`: `str`
-
 - `create_date`: `datetime`
-
 - `user_name`: `str`
-
 - `id`: `str`
-
 - `secret`: `str`
-
-
-
 
 ### AccessKeyPair methods
 
-
-#### AccessKeyPair.activate
+#### AccessKeyPair.activate method
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate]
+Boto3 documentation:
+[IAM.AccessKeyPair.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate)
 
-```python
-def activate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### AccessKeyPair.deactivate
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### AccessKeyPair.deactivate method
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate]
+Boto3 documentation:
+[IAM.AccessKeyPair.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate)
 
-```python
-def deactivate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### AccessKeyPair.delete
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### AccessKeyPair.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete]
+Boto3 documentation:
+[IAM.AccessKeyPair.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### AccessKeyPair.get_available_subresources
+#### AccessKeyPair.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.get_available_subresources]
+Boto3 documentation:
+[IAM.AccessKeyPair.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
-
-
+Returns `List`\[`str`\].
 
 ## AccountPasswordPolicy
 
@@ -1404,116 +945,72 @@ def get_resource() -> AccountPasswordPolicy:
     return boto3.resource("iam").AccountPasswordPolicy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
-
+Boto3 documentation:
+[IAM.AccountPasswordPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
 
 ### AccountPasswordPolicy attributes
 
-
 - `minimum_password_length`: `int`
-
 - `require_symbols`: `bool`
-
 - `require_numbers`: `bool`
-
 - `require_uppercase_characters`: `bool`
-
 - `require_lowercase_characters`: `bool`
-
 - `allow_users_to_change_password`: `bool`
-
 - `expire_passwords`: `bool`
-
 - `max_password_age`: `int`
-
 - `password_reuse_prevention`: `int`
-
 - `hard_expiry`: `bool`
-
-
-
 
 ### AccountPasswordPolicy methods
 
-
-#### AccountPasswordPolicy.delete
+#### AccountPasswordPolicy.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete]
+Boto3 documentation:
+[IAM.AccountPasswordPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### AccountPasswordPolicy.get_available_subresources
+#### AccountPasswordPolicy.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.get_available_subresources]
+Boto3 documentation:
+[IAM.AccountPasswordPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### AccountPasswordPolicy.load
+#### AccountPasswordPolicy.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.load]
+Boto3 documentation:
+[IAM.AccountPasswordPolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### AccountPasswordPolicy.reload
+#### AccountPasswordPolicy.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.reload]
+Boto3 documentation:
+[IAM.AccountPasswordPolicy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### AccountPasswordPolicy.update
+#### AccountPasswordPolicy.update method
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update]
+Boto3 documentation:
+[IAM.AccountPasswordPolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update)
 
-```python
-def update(
-    self,
-    MinimumPasswordLength: int = None,
-    RequireSymbols: bool = None,
-    RequireNumbers: bool = None,
-    RequireUppercaseCharacters: bool = None,
-    RequireLowercaseCharacters: bool = None,
-    AllowUsersToChangePassword: bool = None,
-    MaxPasswordAge: int = None,
-    PasswordReusePrevention: int = None,
-    HardExpiry: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `MinimumPasswordLength`: `int`
+- `RequireSymbols`: `bool`
+- `RequireNumbers`: `bool`
+- `RequireUppercaseCharacters`: `bool`
+- `RequireLowercaseCharacters`: `bool`
+- `AllowUsersToChangePassword`: `bool`
+- `MaxPasswordAge`: `int`
+- `PasswordReusePrevention`: `int`
+- `HardExpiry`: `bool`
 
 ## AccountSummary
 
@@ -1528,63 +1025,37 @@ def get_resource() -> AccountSummary:
     return boto3.resource("iam").AccountSummary(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
-
+Boto3 documentation:
+[IAM.AccountSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
 
 ### AccountSummary attributes
 
-
-- `summary_map`: `Dict[str, Any]`
-
-
-
+- `summary_map`: `Dict`\[`str`, `Any`\]
 
 ### AccountSummary methods
 
-
-#### AccountSummary.get_available_subresources
+#### AccountSummary.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.get_available_subresources]
+Boto3 documentation:
+[IAM.AccountSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### AccountSummary.load
+#### AccountSummary.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.load]
+Boto3 documentation:
+[IAM.AccountSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### AccountSummary.reload
+#### AccountSummary.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[IAM.AccountSummary.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.reload)
 
 ## AssumeRolePolicy
 
@@ -1599,64 +1070,43 @@ def get_resource() -> AssumeRolePolicy:
     return boto3.resource("iam").AssumeRolePolicy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
-
+Boto3 documentation:
+[IAM.AssumeRolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
 
 ### AssumeRolePolicy attributes
 
-
 - `role_name`: `str`
-
-
-
 
 ### AssumeRolePolicy methods
 
-
-#### AssumeRolePolicy.Role
+#### AssumeRolePolicy.Role method
 
 Type annotations for `boto3.resource("iam").Role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.Role]
+Boto3 documentation:
+[IAM.AssumeRolePolicy.Role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.Role)
 
-```python
-def Role(
-    self
-) -> _Role:
-    pass
-```
+Returns [Role](#role).
 
-#### AssumeRolePolicy.get_available_subresources
+#### AssumeRolePolicy.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.get_available_subresources]
+Boto3 documentation:
+[IAM.AssumeRolePolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### AssumeRolePolicy.update
+#### AssumeRolePolicy.update method
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update]
+Boto3 documentation:
+[IAM.AssumeRolePolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update)
 
-```python
-def update(
-    self,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `PolicyDocument`: `str` *(required)*
 
 ## CurrentUser
 
@@ -1671,90 +1121,33 @@ def get_resource() -> CurrentUser:
     return boto3.resource("iam").CurrentUser(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
-
+Boto3 documentation:
+[IAM.CurrentUser](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
 
 ### CurrentUser attributes
 
-
 - `path`: `str`
-
 - `user_name`: `str`
-
 - `user_id`: `str`
-
 - `arn`: `str`
-
 - `create_date`: `datetime`
-
 - `password_last_used`: `datetime`
-
-- `permissions_boundary`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
-- `user`: `"User"`
-
-- `access_keys`: `CurrentUserAccessKeysCollection`
-
-- `mfa_devices`: `CurrentUserMfaDevicesCollection`
-
-- `signing_certificates`: `CurrentUserSigningCertificatesCollection`
-
-
-
-
-### CurrentUser methods
-
-
-#### CurrentUser.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### CurrentUser.load
-
-Type annotations for `boto3.resource("iam").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### CurrentUser.reload
-
-Type annotations for `boto3.resource("iam").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `permissions_boundary`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
+- `user`: [User](#user)
+- `access_keys`:
+  [CurrentUserAccessKeysCollection](#currentuseraccesskeyscollection)
+- `mfa_devices`:
+  [CurrentUserMfaDevicesCollection](#currentusermfadevicescollection)
+- `signing_certificates`:
+  [CurrentUserSigningCertificatesCollection](#currentusersigningcertificatescollection)
 
 ### CurrentUser collections
 
-
 #### CurrentUser.access_keys
 
-Type annotations for `boto3.resource("iam").CurrentUser(...).access_keys` collection.
+Type annotations for `boto3.resource("iam").CurrentUser(...).access_keys`
+collection.
 
 Can be used directly:
 
@@ -1766,49 +1159,15 @@ def get_collection() -> CurrentUserAccessKeysCollection:
     return resource.access_keys
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserAccessKeysCollection)
+Provides access to [AccessKey](#accesskey) resource.
 
-```python
-class CurrentUserAccessKeysCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "CurrentUserAccessKeysCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "CurrentUserAccessKeysCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "CurrentUserAccessKeysCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "CurrentUserAccessKeysCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["AccessKey"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["AccessKey"]:
-        pass
-```
+Boto3 documentation:
+[IAM.CurrentUser.CurrentUserAccessKeysCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.access_keys)
 
 #### CurrentUser.mfa_devices
 
-Type annotations for `boto3.resource("iam").CurrentUser(...).mfa_devices` collection.
+Type annotations for `boto3.resource("iam").CurrentUser(...).mfa_devices`
+collection.
 
 Can be used directly:
 
@@ -1820,49 +1179,15 @@ def get_collection() -> CurrentUserMfaDevicesCollection:
     return resource.mfa_devices
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserMfaDevicesCollection)
+Provides access to [MfaDevice](#mfadevice) resource.
 
-```python
-class CurrentUserMfaDevicesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "CurrentUserMfaDevicesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "CurrentUserMfaDevicesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "CurrentUserMfaDevicesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "CurrentUserMfaDevicesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["MfaDevice"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["MfaDevice"]:
-        pass
-```
+Boto3 documentation:
+[IAM.CurrentUser.CurrentUserMfaDevicesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.mfa_devices)
 
 #### CurrentUser.signing_certificates
 
-Type annotations for `boto3.resource("iam").CurrentUser(...).signing_certificates` collection.
+Type annotations for
+`boto3.resource("iam").CurrentUser(...).signing_certificates` collection.
 
 Can be used directly:
 
@@ -1874,48 +1199,35 @@ def get_collection() -> CurrentUserSigningCertificatesCollection:
     return resource.signing_certificates
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserSigningCertificatesCollection)
+Provides access to [SigningCertificate](#signingcertificate) resource.
 
-```python
-class CurrentUserSigningCertificatesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "CurrentUserSigningCertificatesCollection":
-        pass
+Boto3 documentation:
+[IAM.CurrentUser.CurrentUserSigningCertificatesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.signing_certificates)
 
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "CurrentUserSigningCertificatesCollection":
-        pass
+### CurrentUser methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "CurrentUserSigningCertificatesCollection":
-        pass
+#### CurrentUser.get_available_subresources method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "CurrentUserSigningCertificatesCollection":
-        pass
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["SigningCertificate"]]:
-        pass
+Boto3 documentation:
+[IAM.CurrentUser.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.get_available_subresources)
 
-    def __iter__(
-        self
-    ) -> Iterator["SigningCertificate"]:
-        pass
-```
+Returns `List`\[`str`\].
 
+#### CurrentUser.load method
 
+Type annotations for `boto3.resource("iam").load` method.
 
+Boto3 documentation:
+[IAM.CurrentUser.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.load)
+
+#### CurrentUser.reload method
+
+Type annotations for `boto3.resource("iam").reload` method.
+
+Boto3 documentation:
+[IAM.CurrentUser.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.reload)
 
 ## Group
 
@@ -1930,211 +1242,28 @@ def get_resource() -> Group:
     return boto3.resource("iam").Group(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
-
+Boto3 documentation:
+[IAM.Group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
 
 ### Group attributes
 
-
 - `path`: `str`
-
 - `group_name`: `str`
-
 - `group_id`: `str`
-
 - `arn`: `str`
-
 - `create_date`: `datetime`
-
 - `name`: `str`
-
-- `attached_policies`: `GroupAttachedPoliciesCollection`
-
-- `policies`: `GroupPoliciesCollection`
-
-- `users`: `GroupUsersCollection`
-
-
-
-
-### Group methods
-
-
-#### Group.Policy
-
-Type annotations for `boto3.resource("iam").Policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.Policy]
-
-```python
-def Policy(
-    self,
-    name: str
-) -> _GroupPolicy:
-    pass
-```
-
-#### Group.add_user
-
-Type annotations for `boto3.resource("iam").add_user` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user]
-
-```python
-def add_user(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
-
-#### Group.attach_policy
-
-Type annotations for `boto3.resource("iam").attach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy]
-
-```python
-def attach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### Group.create
-
-Type annotations for `boto3.resource("iam").create` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create]
-
-```python
-def create(
-    self,
-    Path: str = None
-) -> _Group:
-    pass
-```
-
-#### Group.create_policy
-
-Type annotations for `boto3.resource("iam").create_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy]
-
-```python
-def create_policy(
-    self,
-    PolicyName: str,
-    PolicyDocument: str
-) -> _GroupPolicy:
-    pass
-```
-
-#### Group.delete
-
-Type annotations for `boto3.resource("iam").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### Group.detach_policy
-
-Type annotations for `boto3.resource("iam").detach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy]
-
-```python
-def detach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### Group.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Group.load
-
-Type annotations for `boto3.resource("iam").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Group.reload
-
-Type annotations for `boto3.resource("iam").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Group.remove_user
-
-Type annotations for `boto3.resource("iam").remove_user` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user]
-
-```python
-def remove_user(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
-
-#### Group.update
-
-Type annotations for `boto3.resource("iam").update` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update]
-
-```python
-def update(
-    self,
-    NewPath: str = None,
-    NewGroupName: str = None
-) -> _Group:
-    pass
-```
-
-
-
+- `attached_policies`:
+  [GroupAttachedPoliciesCollection](#groupattachedpoliciescollection)
+- `policies`: [GroupPoliciesCollection](#grouppoliciescollection)
+- `users`: [GroupUsersCollection](#groupuserscollection)
 
 ### Group collections
 
-
 #### Group.attached_policies
 
-Type annotations for `boto3.resource("iam").Group(...).attached_policies` collection.
+Type annotations for `boto3.resource("iam").Group(...).attached_policies`
+collection.
 
 Can be used directly:
 
@@ -2146,45 +1275,10 @@ def get_collection() -> GroupAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupAttachedPoliciesCollection)
+Provides access to [Policy](#policy) resource.
 
-```python
-class GroupAttachedPoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "GroupAttachedPoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "GroupAttachedPoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "GroupAttachedPoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "GroupAttachedPoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Policy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Policy"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Group.GroupAttachedPoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attached_policies)
 
 #### Group.policies
 
@@ -2200,44 +1294,10 @@ def get_collection() -> GroupPoliciesCollection:
     return resource.policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupPoliciesCollection)
+Provides access to [GroupPolicy](#grouppolicy) resource.
 
-```python
-class GroupPoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "GroupPoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "GroupPoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "GroupPoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "GroupPoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["GroupPolicy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["GroupPolicy"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Group.GroupPoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.policies)
 
 #### Group.users
 
@@ -2253,47 +1313,140 @@ def get_collection() -> GroupUsersCollection:
     return resource.users
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupUsersCollection)
+Provides access to [User](#user) resource.
 
-```python
-class GroupUsersCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "GroupUsersCollection":
-        pass
+Boto3 documentation:
+[IAM.Group.GroupUsersCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.users)
 
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "GroupUsersCollection":
-        pass
+### Group methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "GroupUsersCollection":
-        pass
+#### Group.Policy method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "GroupUsersCollection":
-        pass
+Type annotations for `boto3.resource("iam").Policy` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["User"]]:
-        pass
+Boto3 documentation:
+[IAM.Group.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.Policy)
 
-    def __iter__(
-        self
-    ) -> Iterator["User"]:
-        pass
-```
+Arguments:
 
+- `name`: `str` *(required)*
 
+Returns [GroupPolicy](#grouppolicy).
 
+#### Group.add_user method
+
+Type annotations for `boto3.resource("iam").add_user` method.
+
+Boto3 documentation:
+[IAM.Group.add_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user)
+
+Arguments:
+
+- `UserName`: `str` *(required)*
+
+#### Group.attach_policy method
+
+Type annotations for `boto3.resource("iam").attach_policy` method.
+
+Boto3 documentation:
+[IAM.Group.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### Group.create method
+
+Type annotations for `boto3.resource("iam").create` method.
+
+Boto3 documentation:
+[IAM.Group.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create)
+
+Arguments:
+
+- `Path`: `str`
+
+Returns [Group](#group).
+
+#### Group.create_policy method
+
+Type annotations for `boto3.resource("iam").create_policy` method.
+
+Boto3 documentation:
+[IAM.Group.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy)
+
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+
+Returns [GroupPolicy](#grouppolicy).
+
+#### Group.delete method
+
+Type annotations for `boto3.resource("iam").delete` method.
+
+Boto3 documentation:
+[IAM.Group.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.delete)
+
+#### Group.detach_policy method
+
+Type annotations for `boto3.resource("iam").detach_policy` method.
+
+Boto3 documentation:
+[IAM.Group.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### Group.get_available_subresources method
+
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
+
+Boto3 documentation:
+[IAM.Group.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Group.load method
+
+Type annotations for `boto3.resource("iam").load` method.
+
+Boto3 documentation:
+[IAM.Group.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.load)
+
+#### Group.reload method
+
+Type annotations for `boto3.resource("iam").reload` method.
+
+Boto3 documentation:
+[IAM.Group.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.reload)
+
+#### Group.remove_user method
+
+Type annotations for `boto3.resource("iam").remove_user` method.
+
+Boto3 documentation:
+[IAM.Group.remove_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user)
+
+Arguments:
+
+- `UserName`: `str` *(required)*
+
+#### Group.update method
+
+Type annotations for `boto3.resource("iam").update` method.
+
+Boto3 documentation:
+[IAM.Group.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update)
+
+Arguments:
+
+- `NewPath`: `str`
+- `NewGroupName`: `str`
+
+Returns [Group](#group).
 
 ## GroupPolicy
 
@@ -2308,109 +1461,67 @@ def get_resource() -> GroupPolicy:
     return boto3.resource("iam").GroupPolicy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
-
+Boto3 documentation:
+[IAM.GroupPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
 
 ### GroupPolicy attributes
 
-
 - `policy_name`: `str`
-
 - `policy_document`: `str`
-
 - `group_name`: `str`
-
 - `name`: `str`
-
-
-
 
 ### GroupPolicy methods
 
-
-#### GroupPolicy.Group
+#### GroupPolicy.Group method
 
 Type annotations for `boto3.resource("iam").Group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.Group]
+Boto3 documentation:
+[IAM.GroupPolicy.Group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.Group)
 
-```python
-def Group(
-    self
-) -> _Group:
-    pass
-```
+Returns [Group](#group).
 
-#### GroupPolicy.delete
+#### GroupPolicy.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete]
+Boto3 documentation:
+[IAM.GroupPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### GroupPolicy.get_available_subresources
+#### GroupPolicy.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.get_available_subresources]
+Boto3 documentation:
+[IAM.GroupPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### GroupPolicy.load
+#### GroupPolicy.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.load]
+Boto3 documentation:
+[IAM.GroupPolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### GroupPolicy.put
+#### GroupPolicy.put method
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put]
+Boto3 documentation:
+[IAM.GroupPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put)
 
-```python
-def put(
-    self,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
 
-#### GroupPolicy.reload
+- `PolicyDocument`: `str` *(required)*
+
+#### GroupPolicy.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[IAM.GroupPolicy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.reload)
 
 ## InstanceProfile
 
@@ -2425,120 +1536,74 @@ def get_resource() -> InstanceProfile:
     return boto3.resource("iam").InstanceProfile(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
-
+Boto3 documentation:
+[IAM.InstanceProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
 
 ### InstanceProfile attributes
 
-
 - `path`: `str`
-
 - `instance_profile_name`: `str`
-
 - `instance_profile_id`: `str`
-
 - `arn`: `str`
-
 - `create_date`: `datetime`
-
-- `roles_attribute`: `List[Any]`
-
-- `tags`: `List[Any]`
-
+- `roles_attribute`: `List`\[`Any`\]
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-- `roles`: `"Role"`
-
-
-
+- `roles`: [Role](#role)
 
 ### InstanceProfile methods
 
-
-#### InstanceProfile.add_role
+#### InstanceProfile.add_role method
 
 Type annotations for `boto3.resource("iam").add_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role]
+Boto3 documentation:
+[IAM.InstanceProfile.add_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role)
 
-```python
-def add_role(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
 
-#### InstanceProfile.delete
+- `RoleName`: `str` *(required)*
+
+#### InstanceProfile.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete]
+Boto3 documentation:
+[IAM.InstanceProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### InstanceProfile.get_available_subresources
+#### InstanceProfile.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.get_available_subresources]
+Boto3 documentation:
+[IAM.InstanceProfile.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### InstanceProfile.load
+#### InstanceProfile.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.load]
+Boto3 documentation:
+[IAM.InstanceProfile.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### InstanceProfile.reload
+#### InstanceProfile.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.reload]
+Boto3 documentation:
+[IAM.InstanceProfile.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### InstanceProfile.remove_role
+#### InstanceProfile.remove_role method
 
 Type annotations for `boto3.resource("iam").remove_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role]
+Boto3 documentation:
+[IAM.InstanceProfile.remove_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role)
 
-```python
-def remove_role(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `RoleName`: `str` *(required)*
 
 ## LoginProfile
 
@@ -2553,123 +1618,81 @@ def get_resource() -> LoginProfile:
     return boto3.resource("iam").LoginProfile(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
-
+Boto3 documentation:
+[IAM.LoginProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
 
 ### LoginProfile attributes
 
-
 - `create_date`: `datetime`
-
 - `password_reset_required`: `bool`
-
 - `user_name`: `str`
-
-
-
 
 ### LoginProfile methods
 
-
-#### LoginProfile.User
+#### LoginProfile.User method
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.User]
+Boto3 documentation:
+[IAM.LoginProfile.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.User)
 
-```python
-def User(
-    self
-) -> _User:
-    pass
-```
+Returns [User](#user).
 
-#### LoginProfile.create
+#### LoginProfile.create method
 
 Type annotations for `boto3.resource("iam").create` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create]
+Boto3 documentation:
+[IAM.LoginProfile.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create)
 
-```python
-def create(
-    self,
-    Password: str,
-    PasswordResetRequired: bool = None
-) -> _LoginProfile:
-    pass
-```
+Arguments:
 
-#### LoginProfile.delete
+- `Password`: `str` *(required)*
+- `PasswordResetRequired`: `bool`
+
+Returns [LoginProfile](#loginprofile).
+
+#### LoginProfile.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete]
+Boto3 documentation:
+[IAM.LoginProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### LoginProfile.get_available_subresources
+#### LoginProfile.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.get_available_subresources]
+Boto3 documentation:
+[IAM.LoginProfile.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### LoginProfile.load
+#### LoginProfile.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.load]
+Boto3 documentation:
+[IAM.LoginProfile.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### LoginProfile.reload
+#### LoginProfile.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.reload]
+Boto3 documentation:
+[IAM.LoginProfile.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### LoginProfile.update
+#### LoginProfile.update method
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update]
+Boto3 documentation:
+[IAM.LoginProfile.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update)
 
-```python
-def update(
-    self,
-    Password: str = None,
-    PasswordResetRequired: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `Password`: `str`
+- `PasswordResetRequired`: `bool`
 
 ## MfaDevice
 
@@ -2684,97 +1707,65 @@ def get_resource() -> MfaDevice:
     return boto3.resource("iam").MfaDevice(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
-
+Boto3 documentation:
+[IAM.MfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
 
 ### MfaDevice attributes
 
-
 - `enable_date`: `datetime`
-
 - `user_name`: `str`
-
 - `serial_number`: `str`
-
-
-
 
 ### MfaDevice methods
 
-
-#### MfaDevice.User
+#### MfaDevice.User method
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.User]
+Boto3 documentation:
+[IAM.MfaDevice.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.User)
 
-```python
-def User(
-    self
-) -> _User:
-    pass
-```
+Returns [User](#user).
 
-#### MfaDevice.associate
+#### MfaDevice.associate method
 
 Type annotations for `boto3.resource("iam").associate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate]
+Boto3 documentation:
+[IAM.MfaDevice.associate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate)
 
-```python
-def associate(
-    self,
-    AuthenticationCode1: str,
-    AuthenticationCode2: str
-) -> None:
-    pass
-```
+Arguments:
 
-#### MfaDevice.disassociate
+- `AuthenticationCode1`: `str` *(required)*
+- `AuthenticationCode2`: `str` *(required)*
+
+#### MfaDevice.disassociate method
 
 Type annotations for `boto3.resource("iam").disassociate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate]
+Boto3 documentation:
+[IAM.MfaDevice.disassociate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate)
 
-```python
-def disassociate(
-    self
-) -> None:
-    pass
-```
-
-#### MfaDevice.get_available_subresources
+#### MfaDevice.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.get_available_subresources]
+Boto3 documentation:
+[IAM.MfaDevice.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### MfaDevice.resync
+#### MfaDevice.resync method
 
 Type annotations for `boto3.resource("iam").resync` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync]
+Boto3 documentation:
+[IAM.MfaDevice.resync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync)
 
-```python
-def resync(
-    self,
-    AuthenticationCode1: str,
-    AuthenticationCode2: str
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `AuthenticationCode1`: `str` *(required)*
+- `AuthenticationCode2`: `str` *(required)*
 
 ## Policy
 
@@ -2789,212 +1780,38 @@ def get_resource() -> Policy:
     return boto3.resource("iam").Policy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
-
+Boto3 documentation:
+[IAM.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
 
 ### Policy attributes
 
-
 - `policy_name`: `str`
-
 - `policy_id`: `str`
-
 - `path`: `str`
-
 - `default_version_id`: `str`
-
 - `attachment_count`: `int`
-
 - `permissions_boundary_usage_count`: `int`
-
 - `is_attachable`: `bool`
-
 - `description`: `str`
-
 - `create_date`: `datetime`
-
 - `update_date`: `datetime`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `arn`: `str`
-
-- `default_version`: `"PolicyVersion"`
-
-- `attached_groups`: `PolicyAttachedGroupsCollection`
-
-- `attached_roles`: `PolicyAttachedRolesCollection`
-
-- `attached_users`: `PolicyAttachedUsersCollection`
-
-- `versions`: `PolicyVersionsCollection`
-
-
-
-
-### Policy methods
-
-
-#### Policy.attach_group
-
-Type annotations for `boto3.resource("iam").attach_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group]
-
-```python
-def attach_group(
-    self,
-    GroupName: str
-) -> None:
-    pass
-```
-
-#### Policy.attach_role
-
-Type annotations for `boto3.resource("iam").attach_role` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role]
-
-```python
-def attach_role(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
-
-#### Policy.attach_user
-
-Type annotations for `boto3.resource("iam").attach_user` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user]
-
-```python
-def attach_user(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
-
-#### Policy.create_version
-
-Type annotations for `boto3.resource("iam").create_version` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version]
-
-```python
-def create_version(
-    self,
-    PolicyDocument: str,
-    SetAsDefault: bool = None
-) -> _PolicyVersion:
-    pass
-```
-
-#### Policy.delete
-
-Type annotations for `boto3.resource("iam").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### Policy.detach_group
-
-Type annotations for `boto3.resource("iam").detach_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group]
-
-```python
-def detach_group(
-    self,
-    GroupName: str
-) -> None:
-    pass
-```
-
-#### Policy.detach_role
-
-Type annotations for `boto3.resource("iam").detach_role` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role]
-
-```python
-def detach_role(
-    self,
-    RoleName: str
-) -> None:
-    pass
-```
-
-#### Policy.detach_user
-
-Type annotations for `boto3.resource("iam").detach_user` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user]
-
-```python
-def detach_user(
-    self,
-    UserName: str
-) -> None:
-    pass
-```
-
-#### Policy.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Policy.load
-
-Type annotations for `boto3.resource("iam").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Policy.reload
-
-Type annotations for `boto3.resource("iam").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `default_version`: [PolicyVersion](#policyversion)
+- `attached_groups`:
+  [PolicyAttachedGroupsCollection](#policyattachedgroupscollection)
+- `attached_roles`:
+  [PolicyAttachedRolesCollection](#policyattachedrolescollection)
+- `attached_users`:
+  [PolicyAttachedUsersCollection](#policyattacheduserscollection)
+- `versions`: [PolicyVersionsCollection](#policyversionscollection)
 
 ### Policy collections
 
-
 #### Policy.attached_groups
 
-Type annotations for `boto3.resource("iam").Policy(...).attached_groups` collection.
+Type annotations for `boto3.resource("iam").Policy(...).attached_groups`
+collection.
 
 Can be used directly:
 
@@ -3006,51 +1823,15 @@ def get_collection() -> PolicyAttachedGroupsCollection:
     return resource.attached_groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedGroupsCollection)
+Provides access to [Group](#group) resource.
 
-```python
-class PolicyAttachedGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PolicyAttachedGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        EntityFilter: EntityType = None,
-        PathPrefix: str = None,
-        PolicyUsageFilter: PolicyUsageType = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "PolicyAttachedGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "PolicyAttachedGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "PolicyAttachedGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Group"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Group"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Policy.PolicyAttachedGroupsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_groups)
 
 #### Policy.attached_roles
 
-Type annotations for `boto3.resource("iam").Policy(...).attached_roles` collection.
+Type annotations for `boto3.resource("iam").Policy(...).attached_roles`
+collection.
 
 Can be used directly:
 
@@ -3062,51 +1843,15 @@ def get_collection() -> PolicyAttachedRolesCollection:
     return resource.attached_roles
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedRolesCollection)
+Provides access to [Role](#role) resource.
 
-```python
-class PolicyAttachedRolesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PolicyAttachedRolesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        EntityFilter: EntityType = None,
-        PathPrefix: str = None,
-        PolicyUsageFilter: PolicyUsageType = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "PolicyAttachedRolesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "PolicyAttachedRolesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "PolicyAttachedRolesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Role"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Role"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Policy.PolicyAttachedRolesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_roles)
 
 #### Policy.attached_users
 
-Type annotations for `boto3.resource("iam").Policy(...).attached_users` collection.
+Type annotations for `boto3.resource("iam").Policy(...).attached_users`
+collection.
 
 Can be used directly:
 
@@ -3118,47 +1863,10 @@ def get_collection() -> PolicyAttachedUsersCollection:
     return resource.attached_users
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedUsersCollection)
+Provides access to [User](#user) resource.
 
-```python
-class PolicyAttachedUsersCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PolicyAttachedUsersCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        EntityFilter: EntityType = None,
-        PathPrefix: str = None,
-        PolicyUsageFilter: PolicyUsageType = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "PolicyAttachedUsersCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "PolicyAttachedUsersCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "PolicyAttachedUsersCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["User"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["User"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Policy.PolicyAttachedUsersCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_users)
 
 #### Policy.versions
 
@@ -3174,47 +1882,122 @@ def get_collection() -> PolicyVersionsCollection:
     return resource.versions
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyVersionsCollection)
+Provides access to [PolicyVersion](#policyversion) resource.
 
-```python
-class PolicyVersionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PolicyVersionsCollection":
-        pass
+Boto3 documentation:
+[IAM.Policy.PolicyVersionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.versions)
 
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "PolicyVersionsCollection":
-        pass
+### Policy methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "PolicyVersionsCollection":
-        pass
+#### Policy.attach_group method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "PolicyVersionsCollection":
-        pass
+Type annotations for `boto3.resource("iam").attach_group` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["PolicyVersion"]]:
-        pass
+Boto3 documentation:
+[IAM.Policy.attach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group)
 
-    def __iter__(
-        self
-    ) -> Iterator["PolicyVersion"]:
-        pass
-```
+Arguments:
 
+- `GroupName`: `str` *(required)*
 
+#### Policy.attach_role method
 
+Type annotations for `boto3.resource("iam").attach_role` method.
+
+Boto3 documentation:
+[IAM.Policy.attach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role)
+
+Arguments:
+
+- `RoleName`: `str` *(required)*
+
+#### Policy.attach_user method
+
+Type annotations for `boto3.resource("iam").attach_user` method.
+
+Boto3 documentation:
+[IAM.Policy.attach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user)
+
+Arguments:
+
+- `UserName`: `str` *(required)*
+
+#### Policy.create_version method
+
+Type annotations for `boto3.resource("iam").create_version` method.
+
+Boto3 documentation:
+[IAM.Policy.create_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version)
+
+Arguments:
+
+- `PolicyDocument`: `str` *(required)*
+- `SetAsDefault`: `bool`
+
+Returns [PolicyVersion](#policyversion).
+
+#### Policy.delete method
+
+Type annotations for `boto3.resource("iam").delete` method.
+
+Boto3 documentation:
+[IAM.Policy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.delete)
+
+#### Policy.detach_group method
+
+Type annotations for `boto3.resource("iam").detach_group` method.
+
+Boto3 documentation:
+[IAM.Policy.detach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group)
+
+Arguments:
+
+- `GroupName`: `str` *(required)*
+
+#### Policy.detach_role method
+
+Type annotations for `boto3.resource("iam").detach_role` method.
+
+Boto3 documentation:
+[IAM.Policy.detach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role)
+
+Arguments:
+
+- `RoleName`: `str` *(required)*
+
+#### Policy.detach_user method
+
+Type annotations for `boto3.resource("iam").detach_user` method.
+
+Boto3 documentation:
+[IAM.Policy.detach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user)
+
+Arguments:
+
+- `UserName`: `str` *(required)*
+
+#### Policy.get_available_subresources method
+
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
+
+Boto3 documentation:
+[IAM.Policy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Policy.load method
+
+Type annotations for `boto3.resource("iam").load` method.
+
+Boto3 documentation:
+[IAM.Policy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.load)
+
+#### Policy.reload method
+
+Type annotations for `boto3.resource("iam").reload` method.
+
+Boto3 documentation:
+[IAM.Policy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.reload)
 
 ## PolicyVersion
 
@@ -3229,97 +2012,55 @@ def get_resource() -> PolicyVersion:
     return boto3.resource("iam").PolicyVersion(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
-
+Boto3 documentation:
+[IAM.PolicyVersion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
 
 ### PolicyVersion attributes
 
-
 - `document`: `str`
-
 - `is_default_version`: `bool`
-
 - `create_date`: `datetime`
-
 - `arn`: `str`
-
 - `version_id`: `str`
-
-
-
 
 ### PolicyVersion methods
 
-
-#### PolicyVersion.delete
+#### PolicyVersion.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete]
+Boto3 documentation:
+[IAM.PolicyVersion.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### PolicyVersion.get_available_subresources
+#### PolicyVersion.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.get_available_subresources]
+Boto3 documentation:
+[IAM.PolicyVersion.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### PolicyVersion.load
+#### PolicyVersion.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.load]
+Boto3 documentation:
+[IAM.PolicyVersion.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### PolicyVersion.reload
+#### PolicyVersion.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload]
+Boto3 documentation:
+[IAM.PolicyVersion.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### PolicyVersion.set_as_default
+#### PolicyVersion.set_as_default method
 
 Type annotations for `boto3.resource("iam").set_as_default` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.set_as_default]
-
-```python
-def set_as_default(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[IAM.PolicyVersion.set_as_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.set_as_default)
 
 ## Role
 
@@ -3334,164 +2075,35 @@ def get_resource() -> Role:
     return boto3.resource("iam").Role(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
-
+Boto3 documentation:
+[IAM.Role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
 
 ### Role attributes
 
-
 - `path`: `str`
-
 - `role_name`: `str`
-
 - `role_id`: `str`
-
 - `arn`: `str`
-
 - `create_date`: `datetime`
-
 - `assume_role_policy_document`: `str`
-
 - `description`: `str`
-
 - `max_session_duration`: `int`
-
-- `permissions_boundary`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
-- `role_last_used`: `Dict[str, Any]`
-
+- `permissions_boundary`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
+- `role_last_used`: `Dict`\[`str`, `Any`\]
 - `name`: `str`
-
-- `attached_policies`: `RoleAttachedPoliciesCollection`
-
-- `instance_profiles`: `RoleInstanceProfilesCollection`
-
-- `policies`: `RolePoliciesCollection`
-
-
-
-
-### Role methods
-
-
-#### Role.AssumeRolePolicy
-
-Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.AssumeRolePolicy]
-
-```python
-def AssumeRolePolicy(
-    self
-) -> _AssumeRolePolicy:
-    pass
-```
-
-#### Role.Policy
-
-Type annotations for `boto3.resource("iam").Policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.Policy]
-
-```python
-def Policy(
-    self,
-    name: str
-) -> _RolePolicy:
-    pass
-```
-
-#### Role.attach_policy
-
-Type annotations for `boto3.resource("iam").attach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy]
-
-```python
-def attach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### Role.delete
-
-Type annotations for `boto3.resource("iam").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### Role.detach_policy
-
-Type annotations for `boto3.resource("iam").detach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy]
-
-```python
-def detach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### Role.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Role.load
-
-Type annotations for `boto3.resource("iam").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Role.reload
-
-Type annotations for `boto3.resource("iam").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `attached_policies`:
+  [RoleAttachedPoliciesCollection](#roleattachedpoliciescollection)
+- `instance_profiles`:
+  [RoleInstanceProfilesCollection](#roleinstanceprofilescollection)
+- `policies`: [RolePoliciesCollection](#rolepoliciescollection)
 
 ### Role collections
 
-
 #### Role.attached_policies
 
-Type annotations for `boto3.resource("iam").Role(...).attached_policies` collection.
+Type annotations for `boto3.resource("iam").Role(...).attached_policies`
+collection.
 
 Can be used directly:
 
@@ -3503,49 +2115,15 @@ def get_collection() -> RoleAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RoleAttachedPoliciesCollection)
+Provides access to [Policy](#policy) resource.
 
-```python
-class RoleAttachedPoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "RoleAttachedPoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "RoleAttachedPoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "RoleAttachedPoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "RoleAttachedPoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Policy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Policy"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Role.RoleAttachedPoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attached_policies)
 
 #### Role.instance_profiles
 
-Type annotations for `boto3.resource("iam").Role(...).instance_profiles` collection.
+Type annotations for `boto3.resource("iam").Role(...).instance_profiles`
+collection.
 
 Can be used directly:
 
@@ -3557,44 +2135,10 @@ def get_collection() -> RoleInstanceProfilesCollection:
     return resource.instance_profiles
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RoleInstanceProfilesCollection)
+Provides access to [InstanceProfile](#instanceprofile) resource.
 
-```python
-class RoleInstanceProfilesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "RoleInstanceProfilesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "RoleInstanceProfilesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "RoleInstanceProfilesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "RoleInstanceProfilesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["InstanceProfile"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["InstanceProfile"]:
-        pass
-```
+Boto3 documentation:
+[IAM.Role.RoleInstanceProfilesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.instance_profiles)
 
 #### Role.policies
 
@@ -3610,47 +2154,86 @@ def get_collection() -> RolePoliciesCollection:
     return resource.policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RolePoliciesCollection)
+Provides access to [RolePolicy](#rolepolicy) resource.
 
-```python
-class RolePoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "RolePoliciesCollection":
-        pass
+Boto3 documentation:
+[IAM.Role.RolePoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.policies)
 
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "RolePoliciesCollection":
-        pass
+### Role methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "RolePoliciesCollection":
-        pass
+#### Role.AssumeRolePolicy method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "RolePoliciesCollection":
-        pass
+Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["RolePolicy"]]:
-        pass
+Boto3 documentation:
+[IAM.Role.AssumeRolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.AssumeRolePolicy)
 
-    def __iter__(
-        self
-    ) -> Iterator["RolePolicy"]:
-        pass
-```
+Returns [AssumeRolePolicy](#assumerolepolicy).
 
+#### Role.Policy method
 
+Type annotations for `boto3.resource("iam").Policy` method.
 
+Boto3 documentation:
+[IAM.Role.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.Policy)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [RolePolicy](#rolepolicy).
+
+#### Role.attach_policy method
+
+Type annotations for `boto3.resource("iam").attach_policy` method.
+
+Boto3 documentation:
+[IAM.Role.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### Role.delete method
+
+Type annotations for `boto3.resource("iam").delete` method.
+
+Boto3 documentation:
+[IAM.Role.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.delete)
+
+#### Role.detach_policy method
+
+Type annotations for `boto3.resource("iam").detach_policy` method.
+
+Boto3 documentation:
+[IAM.Role.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### Role.get_available_subresources method
+
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
+
+Boto3 documentation:
+[IAM.Role.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Role.load method
+
+Type annotations for `boto3.resource("iam").load` method.
+
+Boto3 documentation:
+[IAM.Role.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.load)
+
+#### Role.reload method
+
+Type annotations for `boto3.resource("iam").reload` method.
+
+Boto3 documentation:
+[IAM.Role.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.reload)
 
 ## RolePolicy
 
@@ -3665,109 +2248,67 @@ def get_resource() -> RolePolicy:
     return boto3.resource("iam").RolePolicy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
-
+Boto3 documentation:
+[IAM.RolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
 
 ### RolePolicy attributes
 
-
 - `policy_name`: `str`
-
 - `policy_document`: `str`
-
 - `role_name`: `str`
-
 - `name`: `str`
-
-
-
 
 ### RolePolicy methods
 
-
-#### RolePolicy.Role
+#### RolePolicy.Role method
 
 Type annotations for `boto3.resource("iam").Role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.Role]
+Boto3 documentation:
+[IAM.RolePolicy.Role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.Role)
 
-```python
-def Role(
-    self
-) -> _Role:
-    pass
-```
+Returns [Role](#role).
 
-#### RolePolicy.delete
+#### RolePolicy.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete]
+Boto3 documentation:
+[IAM.RolePolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### RolePolicy.get_available_subresources
+#### RolePolicy.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.get_available_subresources]
+Boto3 documentation:
+[IAM.RolePolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### RolePolicy.load
+#### RolePolicy.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.load]
+Boto3 documentation:
+[IAM.RolePolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### RolePolicy.put
+#### RolePolicy.put method
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put]
+Boto3 documentation:
+[IAM.RolePolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put)
 
-```python
-def put(
-    self,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
 
-#### RolePolicy.reload
+- `PolicyDocument`: `str` *(required)*
+
+#### RolePolicy.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[IAM.RolePolicy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.reload)
 
 ## SamlProvider
 
@@ -3782,98 +2323,62 @@ def get_resource() -> SamlProvider:
     return boto3.resource("iam").SamlProvider(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
-
+Boto3 documentation:
+[IAM.SamlProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
 
 ### SamlProvider attributes
 
-
 - `saml_metadata_document`: `str`
-
 - `create_date`: `datetime`
-
 - `valid_until`: `datetime`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `arn`: `str`
-
-
-
 
 ### SamlProvider methods
 
-
-#### SamlProvider.delete
+#### SamlProvider.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete]
+Boto3 documentation:
+[IAM.SamlProvider.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### SamlProvider.get_available_subresources
+#### SamlProvider.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.get_available_subresources]
+Boto3 documentation:
+[IAM.SamlProvider.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### SamlProvider.load
+#### SamlProvider.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.load]
+Boto3 documentation:
+[IAM.SamlProvider.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### SamlProvider.reload
+#### SamlProvider.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.reload]
+Boto3 documentation:
+[IAM.SamlProvider.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### SamlProvider.update
+#### SamlProvider.update method
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update]
+Boto3 documentation:
+[IAM.SamlProvider.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update)
 
-```python
-def update(
-    self,
-    SAMLMetadataDocument: str
-) -> UpdateSAMLProviderResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `SAMLMetadataDocument`: `str` *(required)*
 
-
-
-
+Returns
+[UpdateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updatesamlproviderresponsetypedef).
 
 ## ServerCertificate
 
@@ -3888,99 +2393,62 @@ def get_resource() -> ServerCertificate:
     return boto3.resource("iam").ServerCertificate(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
-
+Boto3 documentation:
+[IAM.ServerCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
 
 ### ServerCertificate attributes
 
-
-- `server_certificate_metadata`: `Dict[str, Any]`
-
+- `server_certificate_metadata`: `Dict`\[`str`, `Any`\]
 - `certificate_body`: `str`
-
 - `certificate_chain`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-
-
 
 ### ServerCertificate methods
 
-
-#### ServerCertificate.delete
+#### ServerCertificate.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete]
+Boto3 documentation:
+[IAM.ServerCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### ServerCertificate.get_available_subresources
+#### ServerCertificate.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.get_available_subresources]
+Boto3 documentation:
+[IAM.ServerCertificate.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### ServerCertificate.load
+#### ServerCertificate.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.load]
+Boto3 documentation:
+[IAM.ServerCertificate.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### ServerCertificate.reload
+#### ServerCertificate.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.reload]
+Boto3 documentation:
+[IAM.ServerCertificate.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### ServerCertificate.update
+#### ServerCertificate.update method
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update]
+Boto3 documentation:
+[IAM.ServerCertificate.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update)
 
-```python
-def update(
-    self,
-    NewPath: str = None,
-    NewServerCertificateName: str = None
-) -> _ServerCertificate:
-    pass
-```
+Arguments:
 
+- `NewPath`: `str`
+- `NewServerCertificateName`: `str`
 
-
-
-
+Returns [ServerCertificate](#servercertificate).
 
 ## SigningCertificate
 
@@ -3995,101 +2463,70 @@ def get_resource() -> SigningCertificate:
     return boto3.resource("iam").SigningCertificate(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
-
+Boto3 documentation:
+[IAM.SigningCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
 
 ### SigningCertificate attributes
 
-
 - `certificate_id`: `str`
-
 - `certificate_body`: `str`
-
 - `status`: `str`
-
 - `upload_date`: `datetime`
-
 - `user_name`: `str`
-
 - `id`: `str`
-
-
-
 
 ### SigningCertificate methods
 
-
-#### SigningCertificate.User
+#### SigningCertificate.User method
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.User]
+Boto3 documentation:
+[IAM.SigningCertificate.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.User)
 
-```python
-def User(
-    self
-) -> _User:
-    pass
-```
+Returns [User](#user).
 
-#### SigningCertificate.activate
+#### SigningCertificate.activate method
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate]
+Boto3 documentation:
+[IAM.SigningCertificate.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate)
 
-```python
-def activate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### SigningCertificate.deactivate
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### SigningCertificate.deactivate method
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate]
+Boto3 documentation:
+[IAM.SigningCertificate.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate)
 
-```python
-def deactivate(
-    self,
-    Status: statusType
-) -> None:
-    pass
-```
+Arguments:
 
-#### SigningCertificate.delete
+- `Status`:
+  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+  *(required)*
+
+#### SigningCertificate.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete]
+Boto3 documentation:
+[IAM.SigningCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### SigningCertificate.get_available_subresources
+#### SigningCertificate.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.get_available_subresources]
+Boto3 documentation:
+[IAM.SigningCertificate.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
-
-
+Returns `List`\[`str`\].
 
 ## User
 
@@ -4104,320 +2541,30 @@ def get_resource() -> User:
     return boto3.resource("iam").User(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
-
+Boto3 documentation:
+[IAM.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
 
 ### User attributes
 
-
 - `path`: `str`
-
 - `user_name`: `str`
-
 - `user_id`: `str`
-
 - `arn`: `str`
-
 - `create_date`: `datetime`
-
 - `password_last_used`: `datetime`
-
-- `permissions_boundary`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
+- `permissions_boundary`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-- `access_keys`: `UserAccessKeysCollection`
-
-- `attached_policies`: `UserAttachedPoliciesCollection`
-
-- `groups`: `UserGroupsCollection`
-
-- `mfa_devices`: `UserMfaDevicesCollection`
-
-- `policies`: `UserPoliciesCollection`
-
-- `signing_certificates`: `UserSigningCertificatesCollection`
-
-
-
-
-### User methods
-
-
-#### User.AccessKey
-
-Type annotations for `boto3.resource("iam").AccessKey` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.AccessKey]
-
-```python
-def AccessKey(
-    self,
-    id: str
-) -> _AccessKey:
-    pass
-```
-
-#### User.LoginProfile
-
-Type annotations for `boto3.resource("iam").LoginProfile` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.LoginProfile]
-
-```python
-def LoginProfile(
-    self
-) -> _LoginProfile:
-    pass
-```
-
-#### User.MfaDevice
-
-Type annotations for `boto3.resource("iam").MfaDevice` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.MfaDevice]
-
-```python
-def MfaDevice(
-    self,
-    serial_number: str
-) -> _MfaDevice:
-    pass
-```
-
-#### User.Policy
-
-Type annotations for `boto3.resource("iam").Policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.Policy]
-
-```python
-def Policy(
-    self,
-    name: str
-) -> _UserPolicy:
-    pass
-```
-
-#### User.SigningCertificate
-
-Type annotations for `boto3.resource("iam").SigningCertificate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.SigningCertificate]
-
-```python
-def SigningCertificate(
-    self,
-    id: str
-) -> _SigningCertificate:
-    pass
-```
-
-#### User.add_group
-
-Type annotations for `boto3.resource("iam").add_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group]
-
-```python
-def add_group(
-    self,
-    GroupName: str
-) -> None:
-    pass
-```
-
-#### User.attach_policy
-
-Type annotations for `boto3.resource("iam").attach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy]
-
-```python
-def attach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### User.create
-
-Type annotations for `boto3.resource("iam").create` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create]
-
-```python
-def create(
-    self,
-    Path: str = None,
-    PermissionsBoundary: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> _User:
-    pass
-```
-
-#### User.create_access_key_pair
-
-Type annotations for `boto3.resource("iam").create_access_key_pair` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_access_key_pair]
-
-```python
-def create_access_key_pair(
-    self
-) -> _AccessKeyPair:
-    pass
-```
-
-#### User.create_login_profile
-
-Type annotations for `boto3.resource("iam").create_login_profile` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile]
-
-```python
-def create_login_profile(
-    self,
-    Password: str,
-    PasswordResetRequired: bool = None
-) -> _LoginProfile:
-    pass
-```
-
-#### User.create_policy
-
-Type annotations for `boto3.resource("iam").create_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy]
-
-```python
-def create_policy(
-    self,
-    PolicyName: str,
-    PolicyDocument: str
-) -> _UserPolicy:
-    pass
-```
-
-#### User.delete
-
-Type annotations for `boto3.resource("iam").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.delete]
-
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### User.detach_policy
-
-Type annotations for `boto3.resource("iam").detach_policy` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy]
-
-```python
-def detach_policy(
-    self,
-    PolicyArn: str
-) -> None:
-    pass
-```
-
-#### User.enable_mfa
-
-Type annotations for `boto3.resource("iam").enable_mfa` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa]
-
-```python
-def enable_mfa(
-    self,
-    SerialNumber: str,
-    AuthenticationCode1: str,
-    AuthenticationCode2: str
-) -> _MfaDevice:
-    pass
-```
-
-#### User.get_available_subresources
-
-Type annotations for `boto3.resource("iam").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### User.load
-
-Type annotations for `boto3.resource("iam").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### User.reload
-
-Type annotations for `boto3.resource("iam").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### User.remove_group
-
-Type annotations for `boto3.resource("iam").remove_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group]
-
-```python
-def remove_group(
-    self,
-    GroupName: str
-) -> None:
-    pass
-```
-
-#### User.update
-
-Type annotations for `boto3.resource("iam").update` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update]
-
-```python
-def update(
-    self,
-    NewPath: str = None,
-    NewUserName: str = None
-) -> _User:
-    pass
-```
-
-
-
+- `access_keys`: [UserAccessKeysCollection](#useraccesskeyscollection)
+- `attached_policies`:
+  [UserAttachedPoliciesCollection](#userattachedpoliciescollection)
+- `groups`: [UserGroupsCollection](#usergroupscollection)
+- `mfa_devices`: [UserMfaDevicesCollection](#usermfadevicescollection)
+- `policies`: [UserPoliciesCollection](#userpoliciescollection)
+- `signing_certificates`:
+  [UserSigningCertificatesCollection](#usersigningcertificatescollection)
 
 ### User collections
-
 
 #### User.access_keys
 
@@ -4433,49 +2580,15 @@ def get_collection() -> UserAccessKeysCollection:
     return resource.access_keys
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserAccessKeysCollection)
+Provides access to [AccessKey](#accesskey) resource.
 
-```python
-class UserAccessKeysCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserAccessKeysCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserAccessKeysCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "UserAccessKeysCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "UserAccessKeysCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["AccessKey"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["AccessKey"]:
-        pass
-```
+Boto3 documentation:
+[IAM.User.UserAccessKeysCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.access_keys)
 
 #### User.attached_policies
 
-Type annotations for `boto3.resource("iam").User(...).attached_policies` collection.
+Type annotations for `boto3.resource("iam").User(...).attached_policies`
+collection.
 
 Can be used directly:
 
@@ -4487,45 +2600,10 @@ def get_collection() -> UserAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserAttachedPoliciesCollection)
+Provides access to [Policy](#policy) resource.
 
-```python
-class UserAttachedPoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserAttachedPoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        PathPrefix: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserAttachedPoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "UserAttachedPoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "UserAttachedPoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Policy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Policy"]:
-        pass
-```
+Boto3 documentation:
+[IAM.User.UserAttachedPoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attached_policies)
 
 #### User.groups
 
@@ -4541,44 +2619,10 @@ def get_collection() -> UserGroupsCollection:
     return resource.groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserGroupsCollection)
+Provides access to [Group](#group) resource.
 
-```python
-class UserGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "UserGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "UserGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Group"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Group"]:
-        pass
-```
+Boto3 documentation:
+[IAM.User.UserGroupsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.groups)
 
 #### User.mfa_devices
 
@@ -4594,45 +2638,10 @@ def get_collection() -> UserMfaDevicesCollection:
     return resource.mfa_devices
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserMfaDevicesCollection)
+Provides access to [MfaDevice](#mfadevice) resource.
 
-```python
-class UserMfaDevicesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserMfaDevicesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserMfaDevicesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "UserMfaDevicesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "UserMfaDevicesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["MfaDevice"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["MfaDevice"]:
-        pass
-```
+Boto3 documentation:
+[IAM.User.UserMfaDevicesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.mfa_devices)
 
 #### User.policies
 
@@ -4648,48 +2657,15 @@ def get_collection() -> UserPoliciesCollection:
     return resource.policies
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserPoliciesCollection)
+Provides access to [UserPolicy](#userpolicy) resource.
 
-```python
-class UserPoliciesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserPoliciesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserPoliciesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "UserPoliciesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "UserPoliciesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["UserPolicy"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["UserPolicy"]:
-        pass
-```
+Boto3 documentation:
+[IAM.User.UserPoliciesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.policies)
 
 #### User.signing_certificates
 
-Type annotations for `boto3.resource("iam").User(...).signing_certificates` collection.
+Type annotations for `boto3.resource("iam").User(...).signing_certificates`
+collection.
 
 Can be used directly:
 
@@ -4701,48 +2677,229 @@ def get_collection() -> UserSigningCertificatesCollection:
     return resource.signing_certificates
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserSigningCertificatesCollection)
+Provides access to [SigningCertificate](#signingcertificate) resource.
 
-```python
-class UserSigningCertificatesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "UserSigningCertificatesCollection":
-        pass
+Boto3 documentation:
+[IAM.User.UserSigningCertificatesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.signing_certificates)
 
-    def filter(  # type: ignore
-        self,
-        UserName: str = None,
-        Marker: str = None,
-        MaxItems: int = None
-    ) -> "UserSigningCertificatesCollection":
-        pass
+### User methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "UserSigningCertificatesCollection":
-        pass
+#### User.AccessKey method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "UserSigningCertificatesCollection":
-        pass
+Type annotations for `boto3.resource("iam").AccessKey` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["SigningCertificate"]]:
-        pass
+Boto3 documentation:
+[IAM.User.AccessKey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.AccessKey)
 
-    def __iter__(
-        self
-    ) -> Iterator["SigningCertificate"]:
-        pass
-```
+Arguments:
 
+- `id`: `str` *(required)*
 
+Returns [AccessKey](#accesskey).
 
+#### User.LoginProfile method
+
+Type annotations for `boto3.resource("iam").LoginProfile` method.
+
+Boto3 documentation:
+[IAM.User.LoginProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.LoginProfile)
+
+Returns [LoginProfile](#loginprofile).
+
+#### User.MfaDevice method
+
+Type annotations for `boto3.resource("iam").MfaDevice` method.
+
+Boto3 documentation:
+[IAM.User.MfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.MfaDevice)
+
+Arguments:
+
+- `serial_number`: `str` *(required)*
+
+Returns [MfaDevice](#mfadevice).
+
+#### User.Policy method
+
+Type annotations for `boto3.resource("iam").Policy` method.
+
+Boto3 documentation:
+[IAM.User.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.Policy)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [UserPolicy](#userpolicy).
+
+#### User.SigningCertificate method
+
+Type annotations for `boto3.resource("iam").SigningCertificate` method.
+
+Boto3 documentation:
+[IAM.User.SigningCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.SigningCertificate)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [SigningCertificate](#signingcertificate).
+
+#### User.add_group method
+
+Type annotations for `boto3.resource("iam").add_group` method.
+
+Boto3 documentation:
+[IAM.User.add_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group)
+
+Arguments:
+
+- `GroupName`: `str` *(required)*
+
+#### User.attach_policy method
+
+Type annotations for `boto3.resource("iam").attach_policy` method.
+
+Boto3 documentation:
+[IAM.User.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### User.create method
+
+Type annotations for `boto3.resource("iam").create` method.
+
+Boto3 documentation:
+[IAM.User.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create)
+
+Arguments:
+
+- `Path`: `str`
+- `PermissionsBoundary`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+
+Returns [User](#user).
+
+#### User.create_access_key_pair method
+
+Type annotations for `boto3.resource("iam").create_access_key_pair` method.
+
+Boto3 documentation:
+[IAM.User.create_access_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_access_key_pair)
+
+Returns [AccessKeyPair](#accesskeypair).
+
+#### User.create_login_profile method
+
+Type annotations for `boto3.resource("iam").create_login_profile` method.
+
+Boto3 documentation:
+[IAM.User.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile)
+
+Arguments:
+
+- `Password`: `str` *(required)*
+- `PasswordResetRequired`: `bool`
+
+Returns [LoginProfile](#loginprofile).
+
+#### User.create_policy method
+
+Type annotations for `boto3.resource("iam").create_policy` method.
+
+Boto3 documentation:
+[IAM.User.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy)
+
+Arguments:
+
+- `PolicyName`: `str` *(required)*
+- `PolicyDocument`: `str` *(required)*
+
+Returns [UserPolicy](#userpolicy).
+
+#### User.delete method
+
+Type annotations for `boto3.resource("iam").delete` method.
+
+Boto3 documentation:
+[IAM.User.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.delete)
+
+#### User.detach_policy method
+
+Type annotations for `boto3.resource("iam").detach_policy` method.
+
+Boto3 documentation:
+[IAM.User.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy)
+
+Arguments:
+
+- `PolicyArn`: `str` *(required)*
+
+#### User.enable_mfa method
+
+Type annotations for `boto3.resource("iam").enable_mfa` method.
+
+Boto3 documentation:
+[IAM.User.enable_mfa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa)
+
+Arguments:
+
+- `SerialNumber`: `str` *(required)*
+- `AuthenticationCode1`: `str` *(required)*
+- `AuthenticationCode2`: `str` *(required)*
+
+Returns [MfaDevice](#mfadevice).
+
+#### User.get_available_subresources method
+
+Type annotations for `boto3.resource("iam").get_available_subresources` method.
+
+Boto3 documentation:
+[IAM.User.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### User.load method
+
+Type annotations for `boto3.resource("iam").load` method.
+
+Boto3 documentation:
+[IAM.User.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.load)
+
+#### User.reload method
+
+Type annotations for `boto3.resource("iam").reload` method.
+
+Boto3 documentation:
+[IAM.User.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.reload)
+
+#### User.remove_group method
+
+Type annotations for `boto3.resource("iam").remove_group` method.
+
+Boto3 documentation:
+[IAM.User.remove_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group)
+
+Arguments:
+
+- `GroupName`: `str` *(required)*
+
+#### User.update method
+
+Type annotations for `boto3.resource("iam").update` method.
+
+Boto3 documentation:
+[IAM.User.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update)
+
+Arguments:
+
+- `NewPath`: `str`
+- `NewUserName`: `str`
+
+Returns [User](#user).
 
 ## UserPolicy
 
@@ -4757,109 +2914,67 @@ def get_resource() -> UserPolicy:
     return boto3.resource("iam").UserPolicy(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
-
+Boto3 documentation:
+[IAM.UserPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
 
 ### UserPolicy attributes
 
-
 - `policy_name`: `str`
-
 - `policy_document`: `str`
-
 - `user_name`: `str`
-
 - `name`: `str`
-
-
-
 
 ### UserPolicy methods
 
-
-#### UserPolicy.User
+#### UserPolicy.User method
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.User]
+Boto3 documentation:
+[IAM.UserPolicy.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.User)
 
-```python
-def User(
-    self
-) -> _User:
-    pass
-```
+Returns [User](#user).
 
-#### UserPolicy.delete
+#### UserPolicy.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete]
+Boto3 documentation:
+[IAM.UserPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### UserPolicy.get_available_subresources
+#### UserPolicy.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.get_available_subresources]
+Boto3 documentation:
+[IAM.UserPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### UserPolicy.load
+#### UserPolicy.load method
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.load]
+Boto3 documentation:
+[IAM.UserPolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### UserPolicy.put
+#### UserPolicy.put method
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put]
+Boto3 documentation:
+[IAM.UserPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put)
 
-```python
-def put(
-    self,
-    PolicyDocument: str
-) -> None:
-    pass
-```
+Arguments:
 
-#### UserPolicy.reload
+- `PolicyDocument`: `str` *(required)*
+
+#### UserPolicy.reload method
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[IAM.UserPolicy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.reload)
 
 ## VirtualMfaDevice
 
@@ -4874,58 +2989,33 @@ def get_resource() -> VirtualMfaDevice:
     return boto3.resource("iam").VirtualMfaDevice(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
-
+Boto3 documentation:
+[IAM.VirtualMfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
 
 ### VirtualMfaDevice attributes
 
-
 - `base32_string_seed`: `bytes`
-
 - `qr_code_png`: `bytes`
-
-- `user_attribute`: `Dict[str, Any]`
-
+- `user_attribute`: `Dict`\[`str`, `Any`\]
 - `enable_date`: `datetime`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `serial_number`: `str`
-
-- `user`: `"User"`
-
-
-
+- `user`: [User](#user)
 
 ### VirtualMfaDevice methods
 
-
-#### VirtualMfaDevice.delete
+#### VirtualMfaDevice.delete method
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete]
+Boto3 documentation:
+[IAM.VirtualMfaDevice.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete)
 
-```python
-def delete(
-    self
-) -> None:
-    pass
-```
-
-#### VirtualMfaDevice.get_available_subresources
+#### VirtualMfaDevice.get_available_subresources method
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.get_available_subresources]
+Boto3 documentation:
+[IAM.VirtualMfaDevice.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
-
+Returns `List`\[`str`\].

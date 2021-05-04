@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutforVision](./README.md) > Structures
 
-Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+Auto-generated documentation for
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+type annotations stubs module
+[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Typed dictionaries for boto3 LookoutforVision module](#typed-dictionaries-for-boto3-lookoutforvision-module)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
@@ -47,12 +49,10 @@ type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/projec
 from mypy_boto3_lookoutvision.type_defs import CreateDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetMetadata`: `"DatasetMetadataTypeDef"`
 
+- `DatasetMetadata`:
+  [DatasetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetmetadatatypedef)
 
 ## CreateModelResponseTypeDef
 
@@ -60,12 +60,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import CreateModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelMetadata`: `"ModelMetadataTypeDef"`
 
+- `ModelMetadata`:
+  [ModelMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#modelmetadatatypedef)
 
 ## CreateProjectResponseTypeDef
 
@@ -73,12 +71,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import CreateProjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProjectMetadata`: `"ProjectMetadataTypeDef"`
 
+- `ProjectMetadata`:
+  [ProjectMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#projectmetadatatypedef)
 
 ## DatasetDescriptionTypeDef
 
@@ -86,18 +82,17 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DatasetDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProjectName`: `str`
 - `DatasetType`: `str`
 - `CreationTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
-- `Status`: `DatasetStatus`
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#datasetstatus)
 - `StatusMessage`: `str`
-- `ImageStats`: `"DatasetImageStatsTypeDef"`
-
+- `ImageStats`:
+  [DatasetImageStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetimagestatstypedef)
 
 ## DatasetGroundTruthManifestTypeDef
 
@@ -105,12 +100,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DatasetGroundTruthManifestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Object`: `"InputS3ObjectTypeDef"`
 
+- `S3Object`:
+  [InputS3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#inputs3objecttypedef)
 
 ## DatasetImageStatsTypeDef
 
@@ -118,15 +111,12 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DatasetImageStatsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Total`: `int`
 - `Labeled`: `int`
 - `Normal`: `int`
 - `Anomaly`: `int`
-
 
 ## DatasetMetadataTypeDef
 
@@ -134,15 +124,13 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DatasetMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetType`: `str`
 - `CreationTimestamp`: `datetime`
-- `Status`: `DatasetStatus`
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#datasetstatus)
 - `StatusMessage`: `str`
-
 
 ## DatasetSourceTypeDef
 
@@ -150,12 +138,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DatasetSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GroundTruthManifest`: `"DatasetGroundTruthManifestTypeDef"`
 
+- `GroundTruthManifest`:
+  [DatasetGroundTruthManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetgroundtruthmanifesttypedef)
 
 ## DeleteModelResponseTypeDef
 
@@ -163,12 +149,9 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DeleteModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelArn`: `str`
 
+- `ModelArn`: `str`
 
 ## DeleteProjectResponseTypeDef
 
@@ -176,12 +159,9 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DeleteProjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProjectArn`: `str`
 
+- `ProjectArn`: `str`
 
 ## DescribeDatasetResponseTypeDef
 
@@ -189,12 +169,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetDescription`: `"DatasetDescriptionTypeDef"`
 
+- `DatasetDescription`:
+  [DatasetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetdescriptiontypedef)
 
 ## DescribeModelResponseTypeDef
 
@@ -202,12 +180,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DescribeModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelDescription`: `"ModelDescriptionTypeDef"`
 
+- `ModelDescription`:
+  [ModelDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#modeldescriptiontypedef)
 
 ## DescribeProjectResponseTypeDef
 
@@ -215,12 +191,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DescribeProjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProjectDescription`: `"ProjectDescriptionTypeDef"`
 
+- `ProjectDescription`:
+  [ProjectDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#projectdescriptiontypedef)
 
 ## DetectAnomaliesResponseTypeDef
 
@@ -228,12 +202,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DetectAnomalyResult`: `"DetectAnomalyResultTypeDef"`
 
+- `DetectAnomalyResult`:
+  [DetectAnomalyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#detectanomalyresulttypedef)
 
 ## DetectAnomalyResultTypeDef
 
@@ -241,14 +213,12 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import DetectAnomalyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Source`: `"ImageSourceTypeDef"`
+
+- `Source`:
+  [ImageSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#imagesourcetypedef)
 - `IsAnomalous`: `bool`
 - `Confidence`: `float`
-
 
 ## ImageSourceTypeDef
 
@@ -256,12 +226,9 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ImageSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `str`
 
+- `Type`: `str`
 
 ## InputS3ObjectTypeDef
 
@@ -269,16 +236,14 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import InputS3ObjectTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 - `Key`: `str`
 
-
-
 Optional fields:
-- `VersionId`: `str`
 
+- `VersionId`: `str`
 
 ## ListDatasetEntriesResponseTypeDef
 
@@ -286,13 +251,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetEntries`: `List[str]`
-- `NextToken`: `str`
 
+- `DatasetEntries`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListModelsResponseTypeDef
 
@@ -300,13 +262,11 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ListModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Models`: `List["ModelMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `Models`:
+  `List`\[[ModelMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#modelmetadatatypedef)\]
+- `NextToken`: `str`
 
 ## ListProjectsResponseTypeDef
 
@@ -314,13 +274,11 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ListProjectsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Projects`: `List["ProjectMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `Projects`:
+  `List`\[[ProjectMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#projectmetadatatypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -328,12 +286,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#tagtypedef)\]
 
 ## ModelDescriptionTypeDef
 
@@ -341,23 +297,25 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ModelDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelVersion`: `str`
 - `ModelArn`: `str`
 - `CreationTimestamp`: `datetime`
 - `Description`: `str`
-- `Status`: `ModelStatus`
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#modelstatus)
 - `StatusMessage`: `str`
-- `Performance`: `"ModelPerformanceTypeDef"`
-- `OutputConfig`: `"OutputConfigTypeDef"`
-- `EvaluationManifest`: `"OutputS3ObjectTypeDef"`
-- `EvaluationResult`: `"OutputS3ObjectTypeDef"`
+- `Performance`:
+  [ModelPerformanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#modelperformancetypedef)
+- `OutputConfig`:
+  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#outputconfigtypedef)
+- `EvaluationManifest`:
+  [OutputS3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#outputs3objecttypedef)
+- `EvaluationResult`:
+  [OutputS3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#outputs3objecttypedef)
 - `EvaluationEndTimestamp`: `datetime`
 - `KmsKeyId`: `str`
-
 
 ## ModelMetadataTypeDef
 
@@ -365,18 +323,17 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ModelMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreationTimestamp`: `datetime`
 - `ModelVersion`: `str`
 - `ModelArn`: `str`
 - `Description`: `str`
-- `Status`: `ModelStatus`
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#modelstatus)
 - `StatusMessage`: `str`
-- `Performance`: `"ModelPerformanceTypeDef"`
-
+- `Performance`:
+  [ModelPerformanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#modelperformancetypedef)
 
 ## ModelPerformanceTypeDef
 
@@ -384,14 +341,11 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ModelPerformanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `F1Score`: `float`
 - `Recall`: `float`
 - `Precision`: `float`
-
 
 ## OutputConfigTypeDef
 
@@ -399,12 +353,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import OutputConfigTypeDef
 ```
 
-
 Required fields:
-- `S3Location`: `"S3LocationTypeDef"`
 
-
-
+- `S3Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#s3locationtypedef)
 
 ## OutputS3ObjectTypeDef
 
@@ -412,13 +364,10 @@ Required fields:
 from mypy_boto3_lookoutvision.type_defs import OutputS3ObjectTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 - `Key`: `str`
-
-
-
 
 ## PaginatorConfigTypeDef
 
@@ -426,14 +375,11 @@ Required fields:
 from mypy_boto3_lookoutvision.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ProjectDescriptionTypeDef
 
@@ -441,15 +387,13 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ProjectDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProjectArn`: `str`
 - `ProjectName`: `str`
 - `CreationTimestamp`: `datetime`
-- `Datasets`: `List["DatasetMetadataTypeDef"]`
-
+- `Datasets`:
+  `List`\[[DatasetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetmetadatatypedef)\]
 
 ## ProjectMetadataTypeDef
 
@@ -457,14 +401,11 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import ProjectMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProjectArn`: `str`
 - `ProjectName`: `str`
 - `CreationTimestamp`: `datetime`
-
 
 ## S3LocationTypeDef
 
@@ -472,15 +413,13 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import S3LocationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
 
+- `Prefix`: `str`
 
 ## StartModelResponseTypeDef
 
@@ -488,12 +427,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import StartModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `ModelHostingStatus`
 
+- `Status`:
+  [ModelHostingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#modelhostingstatus)
 
 ## StopModelResponseTypeDef
 
@@ -501,12 +438,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import StopModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `ModelHostingStatus`
 
+- `Status`:
+  [ModelHostingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#modelhostingstatus)
 
 ## TagTypeDef
 
@@ -514,13 +449,10 @@ Optional fields:
 from mypy_boto3_lookoutvision.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## UpdateDatasetEntriesResponseTypeDef
 
@@ -528,9 +460,7 @@ Required fields:
 from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `DatasetStatus`
 
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/literals.html#datasetstatus)

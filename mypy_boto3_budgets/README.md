@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Budgets
 
-Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+Auto-generated documentation for
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+type annotations stubs module
+[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ```bash
 pip install mypy-boto3-budgets
@@ -19,7 +21,7 @@ pip install mypy-boto3-budgets
 
 ## BudgetsClient
 
-Type annotations for  `boto3.client("budgets")` as [BudgetsClient](./client.md)
+Type annotations for `boto3.client("budgets")` as [BudgetsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_budgets.client import BudgetsClient
 ```
 
-
 BudgetsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_budget](./client.md#create-budget)
 - [create_budget_action](./client.md#create-budget-action)
@@ -59,10 +59,8 @@ BudgetsClient [exceptions](./client.md#exceptions)
 - [update_notification](./client.md#update-notification)
 - [update_subscriber](./client.md#update-subscriber)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [CreationLimitExceededException](./client.md#creationlimitexceededexception)
@@ -74,14 +72,10 @@ BudgetsClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [ResourceLockedException](./client.md#resourcelockedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("budgets").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("budgets").get_paginator("...")`.
 
 Can be used directly:
 
@@ -96,11 +90,6 @@ from mypy_boto3_budgets.paginators import DescribeBudgetActionHistoriesPaginator
 - [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
 - [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
 - [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +122,10 @@ from mypy_boto3_budgets.literals import ActionStatus, ...
 - [ThresholdType](./literals.md#thresholdtype)
 - [TimeUnit](./literals.md#timeunit)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

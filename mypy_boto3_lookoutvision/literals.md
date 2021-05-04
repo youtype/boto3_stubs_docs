@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutforVision](./README.md) > Literals
 
-Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+Auto-generated documentation for
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+type annotations stubs module
+[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Literals for boto3 LookoutforVision module](#literals-for-boto3-lookoutforvision-module)
   - [DatasetStatus](#datasetstatus)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [HealthLake](./README.md) > HealthLakeClient
 
-Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+Auto-generated documentation for
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+type annotations stubs module
+[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [HealthLakeClient for boto3 HealthLake module](#healthlakeclient-for-boto3-healthlake-module)
   - [HealthLakeClient](#healthlakeclient)
@@ -33,12 +35,13 @@ def get_healthlake_client() -> HealthLakeClient:
     return boto3.client("healthlake")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
+Boto3 documentation:
+[HealthLake.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_healthlake.client import Exceptions
@@ -46,7 +49,6 @@ from mypy_boto3_healthlake.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -58,167 +60,170 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("healthlake").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate]
+Boto3 documentation:
+[HealthLake.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_fhir_datastore
 
 Type annotations for `boto3.client("healthlake").create_fhir_datastore` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore]
+Boto3 documentation:
+[HealthLake.Client.create_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
 
-```python
-def create_fhir_datastore(
-    self,
-    DatastoreTypeVersion: Literal['R4'],
-    DatastoreName: str = None,
-    PreloadDataConfig: "PreloadDataConfigTypeDef" = None,
-    ClientToken: str = None
-) -> CreateFHIRDatastoreResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatastoreTypeVersion`: `Literal['R4']` *(required)*
+- `DatastoreName`: `str`
+- `PreloadDataConfig`:
+  [PreloadDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#preloaddataconfigtypedef)
+- `ClientToken`: `str`
+
+Returns
+[CreateFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#createfhirdatastoreresponsetypedef).
 
 ### delete_fhir_datastore
 
 Type annotations for `boto3.client("healthlake").delete_fhir_datastore` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore]
+Boto3 documentation:
+[HealthLake.Client.delete_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
 
-```python
-def delete_fhir_datastore(
-    self,
-    DatastoreId: str = None
-) -> DeleteFHIRDatastoreResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatastoreId`: `str`
+
+Returns
+[DeleteFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#deletefhirdatastoreresponsetypedef).
 
 ### describe_fhir_datastore
 
-Type annotations for `boto3.client("healthlake").describe_fhir_datastore` method.
+Type annotations for `boto3.client("healthlake").describe_fhir_datastore`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore]
+Boto3 documentation:
+[HealthLake.Client.describe_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
 
-```python
-def describe_fhir_datastore(
-    self,
-    DatastoreId: str = None
-) -> DescribeFHIRDatastoreResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatastoreId`: `str`
+
+Returns
+[DescribeFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirdatastoreresponsetypedef).
 
 ### describe_fhir_export_job
 
-Type annotations for `boto3.client("healthlake").describe_fhir_export_job` method.
+Type annotations for `boto3.client("healthlake").describe_fhir_export_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job]
+Boto3 documentation:
+[HealthLake.Client.describe_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
 
-```python
-def describe_fhir_export_job(
-    self,
-    DatastoreId: str,
-    JobId: str
-) -> DescribeFHIRExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatastoreId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeFHIRExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirexportjobresponsetypedef).
 
 ### describe_fhir_import_job
 
-Type annotations for `boto3.client("healthlake").describe_fhir_import_job` method.
+Type annotations for `boto3.client("healthlake").describe_fhir_import_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job]
+Boto3 documentation:
+[HealthLake.Client.describe_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
 
-```python
-def describe_fhir_import_job(
-    self,
-    DatastoreId: str,
-    JobId: str
-) -> DescribeFHIRImportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatastoreId`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeFHIRImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirimportjobresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("healthlake").generate_presigned_url` method.
+Type annotations for `boto3.client("healthlake").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url]
+Boto3 documentation:
+[HealthLake.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_fhir_datastores
 
 Type annotations for `boto3.client("healthlake").list_fhir_datastores` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores]
+Boto3 documentation:
+[HealthLake.Client.list_fhir_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
 
-```python
-def list_fhir_datastores(
-    self,
-    Filter: DatastoreFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListFHIRDatastoresResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [DatastoreFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#datastorefiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFHIRDatastoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#listfhirdatastoresresponsetypedef).
 
 ### start_fhir_export_job
 
 Type annotations for `boto3.client("healthlake").start_fhir_export_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job]
+Boto3 documentation:
+[HealthLake.Client.start_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
 
-```python
-def start_fhir_export_job(
-    self,
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DatastoreId: str,
-    DataAccessRoleArn: str,
-    ClientToken: str,
-    JobName: str = None
-) -> StartFHIRExportJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DatastoreId`: `str` *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `JobName`: `str`
+
+Returns
+[StartFHIRExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#startfhirexportjobresponsetypedef).
 
 ### start_fhir_import_job
 
 Type annotations for `boto3.client("healthlake").start_fhir_import_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job]
+Boto3 documentation:
+[HealthLake.Client.start_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
 
-```python
-def start_fhir_import_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    DatastoreId: str,
-    DataAccessRoleArn: str,
-    ClientToken: str,
-    JobName: str = None
-) -> StartFHIRImportJobResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `DatastoreId`: `str` *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `JobName`: `str`
 
-
+Returns
+[StartFHIRImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#startfhirimportjobresponsetypedef).

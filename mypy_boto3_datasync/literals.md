@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataSync](./README.md) > Literals
 
-Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+Auto-generated documentation for
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+type annotations stubs module
+[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Literals for boto3 DataSync module](#literals-for-boto3-datasync-module)
   - [AgentStatus](#agentstatus)

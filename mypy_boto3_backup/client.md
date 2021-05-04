@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Backup](./README.md) > BackupClient
 
-Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
-type annotations stubs module [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+Auto-generated documentation for
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+type annotations stubs module
+[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
 - [BackupClient for boto3 Backup module](#backupclient-for-boto3-backup-module)
   - [BackupClient](#backupclient)
@@ -76,12 +78,13 @@ def get_backup_client() -> BackupClient:
     return boto3.client("backup")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
+Boto3 documentation:
+[Backup.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_backup.client import Exceptions
@@ -89,7 +92,6 @@ from mypy_boto3_backup.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -104,831 +106,806 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("backup").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate]
+Boto3 documentation:
+[Backup.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_backup_plan
 
 Type annotations for `boto3.client("backup").create_backup_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan]
+Boto3 documentation:
+[Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
 
-```python
-def create_backup_plan(
-    self,
-    BackupPlan: BackupPlanInputTypeDef,
-    BackupPlanTags: Dict[str, str] = None,
-    CreatorRequestId: str = None
-) -> CreateBackupPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlan`:
+  [BackupPlanInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplaninputtypedef)
+  *(required)*
+- `BackupPlanTags`: `Dict`\[`str`, `str`\]
+- `CreatorRequestId`: `str`
+
+Returns
+[CreateBackupPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#createbackupplanoutputtypedef).
 
 ### create_backup_selection
 
 Type annotations for `boto3.client("backup").create_backup_selection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection]
+Boto3 documentation:
+[Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
 
-```python
-def create_backup_selection(
-    self,
-    BackupPlanId: str,
-    BackupSelection: "BackupSelectionTypeDef",
-    CreatorRequestId: str = None
-) -> CreateBackupSelectionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `BackupSelection`:
+  [BackupSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupselectiontypedef)
+  *(required)*
+- `CreatorRequestId`: `str`
+
+Returns
+[CreateBackupSelectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#createbackupselectionoutputtypedef).
 
 ### create_backup_vault
 
 Type annotations for `boto3.client("backup").create_backup_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault]
+Boto3 documentation:
+[Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
 
-```python
-def create_backup_vault(
-    self,
-    BackupVaultName: str,
-    BackupVaultTags: Dict[str, str] = None,
-    EncryptionKeyArn: str = None,
-    CreatorRequestId: str = None
-) -> CreateBackupVaultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `BackupVaultTags`: `Dict`\[`str`, `str`\]
+- `EncryptionKeyArn`: `str`
+- `CreatorRequestId`: `str`
+
+Returns
+[CreateBackupVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#createbackupvaultoutputtypedef).
 
 ### delete_backup_plan
 
 Type annotations for `boto3.client("backup").delete_backup_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan]
+Boto3 documentation:
+[Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
-```python
-def delete_backup_plan(
-    self,
-    BackupPlanId: str
-) -> DeleteBackupPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+
+Returns
+[DeleteBackupPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#deletebackupplanoutputtypedef).
 
 ### delete_backup_selection
 
 Type annotations for `boto3.client("backup").delete_backup_selection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection]
+Boto3 documentation:
+[Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
 
-```python
-def delete_backup_selection(
-    self,
-    BackupPlanId: str,
-    SelectionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `SelectionId`: `str` *(required)*
 
 ### delete_backup_vault
 
 Type annotations for `boto3.client("backup").delete_backup_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault]
+Boto3 documentation:
+[Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
 
-```python
-def delete_backup_vault(
-    self,
-    BackupVaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
 
 ### delete_backup_vault_access_policy
 
-Type annotations for `boto3.client("backup").delete_backup_vault_access_policy` method.
+Type annotations for `boto3.client("backup").delete_backup_vault_access_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy]
+Boto3 documentation:
+[Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
 
-```python
-def delete_backup_vault_access_policy(
-    self,
-    BackupVaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
 
 ### delete_backup_vault_notifications
 
-Type annotations for `boto3.client("backup").delete_backup_vault_notifications` method.
+Type annotations for `boto3.client("backup").delete_backup_vault_notifications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications]
+Boto3 documentation:
+[Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
 
-```python
-def delete_backup_vault_notifications(
-    self,
-    BackupVaultName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
 
 ### delete_recovery_point
 
 Type annotations for `boto3.client("backup").delete_recovery_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point]
+Boto3 documentation:
+[Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
 
-```python
-def delete_recovery_point(
-    self,
-    BackupVaultName: str,
-    RecoveryPointArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `RecoveryPointArn`: `str` *(required)*
 
 ### describe_backup_job
 
 Type annotations for `boto3.client("backup").describe_backup_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job]
+Boto3 documentation:
+[Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
 
-```python
-def describe_backup_job(
-    self,
-    BackupJobId: str
-) -> DescribeBackupJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupJobId`: `str` *(required)*
+
+Returns
+[DescribeBackupJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describebackupjoboutputtypedef).
 
 ### describe_backup_vault
 
 Type annotations for `boto3.client("backup").describe_backup_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault]
+Boto3 documentation:
+[Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
-```python
-def describe_backup_vault(
-    self,
-    BackupVaultName: str
-) -> DescribeBackupVaultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+
+Returns
+[DescribeBackupVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describebackupvaultoutputtypedef).
 
 ### describe_copy_job
 
 Type annotations for `boto3.client("backup").describe_copy_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job]
+Boto3 documentation:
+[Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
 
-```python
-def describe_copy_job(
-    self,
-    CopyJobId: str
-) -> DescribeCopyJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CopyJobId`: `str` *(required)*
+
+Returns
+[DescribeCopyJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describecopyjoboutputtypedef).
 
 ### describe_global_settings
 
 Type annotations for `boto3.client("backup").describe_global_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings]
+Boto3 documentation:
+[Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings)
 
-```python
-def describe_global_settings(
-    self
-) -> DescribeGlobalSettingsOutputTypeDef:
-    pass
-```
+Returns
+[DescribeGlobalSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describeglobalsettingsoutputtypedef).
 
 ### describe_protected_resource
 
-Type annotations for `boto3.client("backup").describe_protected_resource` method.
+Type annotations for `boto3.client("backup").describe_protected_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource]
+Boto3 documentation:
+[Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
-```python
-def describe_protected_resource(
-    self,
-    ResourceArn: str
-) -> DescribeProtectedResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[DescribeProtectedResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describeprotectedresourceoutputtypedef).
 
 ### describe_recovery_point
 
 Type annotations for `boto3.client("backup").describe_recovery_point` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point]
+Boto3 documentation:
+[Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
 
-```python
-def describe_recovery_point(
-    self,
-    BackupVaultName: str,
-    RecoveryPointArn: str
-) -> DescribeRecoveryPointOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `RecoveryPointArn`: `str` *(required)*
+
+Returns
+[DescribeRecoveryPointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describerecoverypointoutputtypedef).
 
 ### describe_region_settings
 
 Type annotations for `boto3.client("backup").describe_region_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings]
+Boto3 documentation:
+[Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings)
 
-```python
-def describe_region_settings(
-    self
-) -> DescribeRegionSettingsOutputTypeDef:
-    pass
-```
+Returns
+[DescribeRegionSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describeregionsettingsoutputtypedef).
 
 ### describe_restore_job
 
 Type annotations for `boto3.client("backup").describe_restore_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job]
+Boto3 documentation:
+[Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
 
-```python
-def describe_restore_job(
-    self,
-    RestoreJobId: str
-) -> DescribeRestoreJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RestoreJobId`: `str` *(required)*
+
+Returns
+[DescribeRestoreJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#describerestorejoboutputtypedef).
 
 ### disassociate_recovery_point
 
-Type annotations for `boto3.client("backup").disassociate_recovery_point` method.
+Type annotations for `boto3.client("backup").disassociate_recovery_point`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point]
+Boto3 documentation:
+[Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
 
-```python
-def disassociate_recovery_point(
-    self,
-    BackupVaultName: str,
-    RecoveryPointArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `RecoveryPointArn`: `str` *(required)*
 
 ### export_backup_plan_template
 
-Type annotations for `boto3.client("backup").export_backup_plan_template` method.
+Type annotations for `boto3.client("backup").export_backup_plan_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template]
+Boto3 documentation:
+[Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
-```python
-def export_backup_plan_template(
-    self,
-    BackupPlanId: str
-) -> ExportBackupPlanTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+
+Returns
+[ExportBackupPlanTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#exportbackupplantemplateoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("backup").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url]
+Boto3 documentation:
+[Backup.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_backup_plan
 
 Type annotations for `boto3.client("backup").get_backup_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan]
+Boto3 documentation:
+[Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
 
-```python
-def get_backup_plan(
-    self,
-    BackupPlanId: str,
-    VersionId: str = None
-) -> GetBackupPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `VersionId`: `str`
+
+Returns
+[GetBackupPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupplanoutputtypedef).
 
 ### get_backup_plan_from_json
 
 Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json]
+Boto3 documentation:
+[Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
-```python
-def get_backup_plan_from_json(
-    self,
-    BackupPlanTemplateJson: str
-) -> GetBackupPlanFromJSONOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanTemplateJson`: `str` *(required)*
+
+Returns
+[GetBackupPlanFromJSONOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupplanfromjsonoutputtypedef).
 
 ### get_backup_plan_from_template
 
-Type annotations for `boto3.client("backup").get_backup_plan_from_template` method.
+Type annotations for `boto3.client("backup").get_backup_plan_from_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template]
+Boto3 documentation:
+[Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
-```python
-def get_backup_plan_from_template(
-    self,
-    BackupPlanTemplateId: str
-) -> GetBackupPlanFromTemplateOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanTemplateId`: `str` *(required)*
+
+Returns
+[GetBackupPlanFromTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupplanfromtemplateoutputtypedef).
 
 ### get_backup_selection
 
 Type annotations for `boto3.client("backup").get_backup_selection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection]
+Boto3 documentation:
+[Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
 
-```python
-def get_backup_selection(
-    self,
-    BackupPlanId: str,
-    SelectionId: str
-) -> GetBackupSelectionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `SelectionId`: `str` *(required)*
+
+Returns
+[GetBackupSelectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupselectionoutputtypedef).
 
 ### get_backup_vault_access_policy
 
-Type annotations for `boto3.client("backup").get_backup_vault_access_policy` method.
+Type annotations for `boto3.client("backup").get_backup_vault_access_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy]
+Boto3 documentation:
+[Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
-```python
-def get_backup_vault_access_policy(
-    self,
-    BackupVaultName: str
-) -> GetBackupVaultAccessPolicyOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+
+Returns
+[GetBackupVaultAccessPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupvaultaccesspolicyoutputtypedef).
 
 ### get_backup_vault_notifications
 
-Type annotations for `boto3.client("backup").get_backup_vault_notifications` method.
+Type annotations for `boto3.client("backup").get_backup_vault_notifications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications]
+Boto3 documentation:
+[Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
-```python
-def get_backup_vault_notifications(
-    self,
-    BackupVaultName: str
-) -> GetBackupVaultNotificationsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+
+Returns
+[GetBackupVaultNotificationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getbackupvaultnotificationsoutputtypedef).
 
 ### get_recovery_point_restore_metadata
 
-Type annotations for `boto3.client("backup").get_recovery_point_restore_metadata` method.
+Type annotations for
+`boto3.client("backup").get_recovery_point_restore_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata]
+Boto3 documentation:
+[Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
-```python
-def get_recovery_point_restore_metadata(
-    self,
-    BackupVaultName: str,
-    RecoveryPointArn: str
-) -> GetRecoveryPointRestoreMetadataOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `RecoveryPointArn`: `str` *(required)*
+
+Returns
+[GetRecoveryPointRestoreMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getrecoverypointrestoremetadataoutputtypedef).
 
 ### get_supported_resource_types
 
-Type annotations for `boto3.client("backup").get_supported_resource_types` method.
+Type annotations for `boto3.client("backup").get_supported_resource_types`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types]
+Boto3 documentation:
+[Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types)
 
-```python
-def get_supported_resource_types(
-    self
-) -> GetSupportedResourceTypesOutputTypeDef:
-    pass
-```
+Returns
+[GetSupportedResourceTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#getsupportedresourcetypesoutputtypedef).
 
 ### list_backup_jobs
 
 Type annotations for `boto3.client("backup").list_backup_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs]
+Boto3 documentation:
+[Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
 
-```python
-def list_backup_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ByResourceArn: str = None,
-    ByState: BackupJobState = None,
-    ByBackupVaultName: str = None,
-    ByCreatedBefore: datetime = None,
-    ByCreatedAfter: datetime = None,
-    ByResourceType: str = None,
-    ByAccountId: str = None
-) -> ListBackupJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ByResourceArn`: `str`
+- `ByState`:
+  [BackupJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#backupjobstate)
+- `ByBackupVaultName`: `str`
+- `ByCreatedBefore`: `datetime`
+- `ByCreatedAfter`: `datetime`
+- `ByResourceType`: `str`
+- `ByAccountId`: `str`
+
+Returns
+[ListBackupJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupjobsoutputtypedef).
 
 ### list_backup_plan_templates
 
-Type annotations for `boto3.client("backup").list_backup_plan_templates` method.
+Type annotations for `boto3.client("backup").list_backup_plan_templates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates]
+Boto3 documentation:
+[Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
-```python
-def list_backup_plan_templates(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListBackupPlanTemplatesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListBackupPlanTemplatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupplantemplatesoutputtypedef).
 
 ### list_backup_plan_versions
 
 Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions]
+Boto3 documentation:
+[Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
 
-```python
-def list_backup_plan_versions(
-    self,
-    BackupPlanId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListBackupPlanVersionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListBackupPlanVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupplanversionsoutputtypedef).
 
 ### list_backup_plans
 
 Type annotations for `boto3.client("backup").list_backup_plans` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans]
+Boto3 documentation:
+[Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
 
-```python
-def list_backup_plans(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    IncludeDeleted: bool = None
-) -> ListBackupPlansOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `IncludeDeleted`: `bool`
+
+Returns
+[ListBackupPlansOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupplansoutputtypedef).
 
 ### list_backup_selections
 
 Type annotations for `boto3.client("backup").list_backup_selections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections]
+Boto3 documentation:
+[Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
 
-```python
-def list_backup_selections(
-    self,
-    BackupPlanId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListBackupSelectionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListBackupSelectionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupselectionsoutputtypedef).
 
 ### list_backup_vaults
 
 Type annotations for `boto3.client("backup").list_backup_vaults` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults]
+Boto3 documentation:
+[Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
 
-```python
-def list_backup_vaults(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListBackupVaultsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListBackupVaultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listbackupvaultsoutputtypedef).
 
 ### list_copy_jobs
 
 Type annotations for `boto3.client("backup").list_copy_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs]
+Boto3 documentation:
+[Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
 
-```python
-def list_copy_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ByResourceArn: str = None,
-    ByState: CopyJobState = None,
-    ByCreatedBefore: datetime = None,
-    ByCreatedAfter: datetime = None,
-    ByResourceType: str = None,
-    ByDestinationVaultArn: str = None,
-    ByAccountId: str = None
-) -> ListCopyJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ByResourceArn`: `str`
+- `ByState`:
+  [CopyJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#copyjobstate)
+- `ByCreatedBefore`: `datetime`
+- `ByCreatedAfter`: `datetime`
+- `ByResourceType`: `str`
+- `ByDestinationVaultArn`: `str`
+- `ByAccountId`: `str`
+
+Returns
+[ListCopyJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listcopyjobsoutputtypedef).
 
 ### list_protected_resources
 
 Type annotations for `boto3.client("backup").list_protected_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources]
+Boto3 documentation:
+[Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
 
-```python
-def list_protected_resources(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListProtectedResourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListProtectedResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listprotectedresourcesoutputtypedef).
 
 ### list_recovery_points_by_backup_vault
 
-Type annotations for `boto3.client("backup").list_recovery_points_by_backup_vault` method.
+Type annotations for
+`boto3.client("backup").list_recovery_points_by_backup_vault` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault]
+Boto3 documentation:
+[Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
 
-```python
-def list_recovery_points_by_backup_vault(
-    self,
-    BackupVaultName: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ByResourceArn: str = None,
-    ByResourceType: str = None,
-    ByBackupPlanId: str = None,
-    ByCreatedBefore: datetime = None,
-    ByCreatedAfter: datetime = None
-) -> ListRecoveryPointsByBackupVaultOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ByResourceArn`: `str`
+- `ByResourceType`: `str`
+- `ByBackupPlanId`: `str`
+- `ByCreatedBefore`: `datetime`
+- `ByCreatedAfter`: `datetime`
+
+Returns
+[ListRecoveryPointsByBackupVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listrecoverypointsbybackupvaultoutputtypedef).
 
 ### list_recovery_points_by_resource
 
-Type annotations for `boto3.client("backup").list_recovery_points_by_resource` method.
+Type annotations for `boto3.client("backup").list_recovery_points_by_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource]
+Boto3 documentation:
+[Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
-```python
-def list_recovery_points_by_resource(
-    self,
-    ResourceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListRecoveryPointsByResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListRecoveryPointsByResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listrecoverypointsbyresourceoutputtypedef).
 
 ### list_restore_jobs
 
 Type annotations for `boto3.client("backup").list_restore_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs]
+Boto3 documentation:
+[Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
-```python
-def list_restore_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ByAccountId: str = None,
-    ByCreatedBefore: datetime = None,
-    ByCreatedAfter: datetime = None,
-    ByStatus: RestoreJobStatus = None
-) -> ListRestoreJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ByAccountId`: `str`
+- `ByCreatedBefore`: `datetime`
+- `ByCreatedAfter`: `datetime`
+- `ByStatus`:
+  [RestoreJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#restorejobstatus)
+
+Returns
+[ListRestoreJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listrestorejobsoutputtypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("backup").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags]
+Boto3 documentation:
+[Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#listtagsoutputtypedef).
 
 ### put_backup_vault_access_policy
 
-Type annotations for `boto3.client("backup").put_backup_vault_access_policy` method.
+Type annotations for `boto3.client("backup").put_backup_vault_access_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy]
+Boto3 documentation:
+[Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
 
-```python
-def put_backup_vault_access_policy(
-    self,
-    BackupVaultName: str,
-    Policy: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `Policy`: `str`
 
 ### put_backup_vault_notifications
 
-Type annotations for `boto3.client("backup").put_backup_vault_notifications` method.
+Type annotations for `boto3.client("backup").put_backup_vault_notifications`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications]
+Boto3 documentation:
+[Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
 
-```python
-def put_backup_vault_notifications(
-    self,
-    BackupVaultName: str,
-    SNSTopicArn: str,
-    BackupVaultEvents: List[BackupVaultEvent]
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `SNSTopicArn`: `str` *(required)*
+- `BackupVaultEvents`:
+  `List`\[[BackupVaultEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#backupvaultevent)\]
+  *(required)*
 
 ### start_backup_job
 
 Type annotations for `boto3.client("backup").start_backup_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job]
+Boto3 documentation:
+[Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
 
-```python
-def start_backup_job(
-    self,
-    BackupVaultName: str,
-    ResourceArn: str,
-    IamRoleArn: str,
-    IdempotencyToken: str = None,
-    StartWindowMinutes: int = None,
-    CompleteWindowMinutes: int = None,
-    Lifecycle: "LifecycleTypeDef" = None,
-    RecoveryPointTags: Dict[str, str] = None,
-    BackupOptions: Dict[str, str] = None
-) -> StartBackupJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `IamRoleArn`: `str` *(required)*
+- `IdempotencyToken`: `str`
+- `StartWindowMinutes`: `int`
+- `CompleteWindowMinutes`: `int`
+- `Lifecycle`:
+  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+- `RecoveryPointTags`: `Dict`\[`str`, `str`\]
+- `BackupOptions`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartBackupJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#startbackupjoboutputtypedef).
 
 ### start_copy_job
 
 Type annotations for `boto3.client("backup").start_copy_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job]
+Boto3 documentation:
+[Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
 
-```python
-def start_copy_job(
-    self,
-    RecoveryPointArn: str,
-    SourceBackupVaultName: str,
-    DestinationBackupVaultArn: str,
-    IamRoleArn: str,
-    IdempotencyToken: str = None,
-    Lifecycle: "LifecycleTypeDef" = None
-) -> StartCopyJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RecoveryPointArn`: `str` *(required)*
+- `SourceBackupVaultName`: `str` *(required)*
+- `DestinationBackupVaultArn`: `str` *(required)*
+- `IamRoleArn`: `str` *(required)*
+- `IdempotencyToken`: `str`
+- `Lifecycle`:
+  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+
+Returns
+[StartCopyJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#startcopyjoboutputtypedef).
 
 ### start_restore_job
 
 Type annotations for `boto3.client("backup").start_restore_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job]
+Boto3 documentation:
+[Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
 
-```python
-def start_restore_job(
-    self,
-    RecoveryPointArn: str,
-    Metadata: Dict[str, str],
-    IamRoleArn: str,
-    IdempotencyToken: str = None,
-    ResourceType: str = None
-) -> StartRestoreJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RecoveryPointArn`: `str` *(required)*
+- `Metadata`: `Dict`\[`str`, `str`\] *(required)*
+- `IamRoleArn`: `str` *(required)*
+- `IdempotencyToken`: `str`
+- `ResourceType`: `str`
+
+Returns
+[StartRestoreJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#startrestorejoboutputtypedef).
 
 ### stop_backup_job
 
 Type annotations for `boto3.client("backup").stop_backup_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job]
+Boto3 documentation:
+[Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
 
-```python
-def stop_backup_job(
-    self,
-    BackupJobId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `BackupJobId`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("backup").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource]
+Boto3 documentation:
+[Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("backup").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource]
+Boto3 documentation:
+[Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeyList: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeyList`: `List`\[`str`\] *(required)*
 
 ### update_backup_plan
 
 Type annotations for `boto3.client("backup").update_backup_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan]
+Boto3 documentation:
+[Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
 
-```python
-def update_backup_plan(
-    self,
-    BackupPlanId: str,
-    BackupPlan: BackupPlanInputTypeDef
-) -> UpdateBackupPlanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupPlanId`: `str` *(required)*
+- `BackupPlan`:
+  [BackupPlanInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplaninputtypedef)
+  *(required)*
+
+Returns
+[UpdateBackupPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#updatebackupplanoutputtypedef).
 
 ### update_global_settings
 
 Type annotations for `boto3.client("backup").update_global_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings]
+Boto3 documentation:
+[Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
 
-```python
-def update_global_settings(
-    self,
-    GlobalSettings: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `GlobalSettings`: `Dict`\[`str`, `str`\]
 
 ### update_recovery_point_lifecycle
 
-Type annotations for `boto3.client("backup").update_recovery_point_lifecycle` method.
+Type annotations for `boto3.client("backup").update_recovery_point_lifecycle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle]
+Boto3 documentation:
+[Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
 
-```python
-def update_recovery_point_lifecycle(
-    self,
-    BackupVaultName: str,
-    RecoveryPointArn: str,
-    Lifecycle: "LifecycleTypeDef" = None
-) -> UpdateRecoveryPointLifecycleOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `RecoveryPointArn`: `str` *(required)*
+- `Lifecycle`:
+  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+
+Returns
+[UpdateRecoveryPointLifecycleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#updaterecoverypointlifecycleoutputtypedef).
 
 ### update_region_settings
 
 Type annotations for `boto3.client("backup").update_region_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings]
+Boto3 documentation:
+[Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
 
-```python
-def update_region_settings(
-    self,
-    ResourceTypeOptInPreference: Dict[str, bool] = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Glue](./README.md) > GlueClient
 
-Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+Auto-generated documentation for
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+type annotations stubs module
+[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [GlueClient for boto3 Glue module](#glueclient-for-boto3-glue-module)
   - [GlueClient](#glueclient)
@@ -183,12 +185,13 @@ def get_glue_client() -> GlueClient:
     return boto3.client("glue")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
+Boto3 documentation:
+[Glue.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_glue.client import Exceptions
@@ -196,7 +199,6 @@ from mypy_boto3_glue.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -226,2623 +228,2769 @@ Exceptions:
 - `Exceptions.ValidationException`
 - `Exceptions.VersionMismatchException`
 
-
 ## Methods
-
 
 ### batch_create_partition
 
 Type annotations for `boto3.client("glue").batch_create_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition]
+Boto3 documentation:
+[Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition)
 
-```python
-def batch_create_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionInputList: List["PartitionInputTypeDef"],
-    CatalogId: str = None
-) -> BatchCreatePartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionInputList`:
+  `List`\[[PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchCreatePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchcreatepartitionresponsetypedef).
 
 ### batch_delete_connection
 
 Type annotations for `boto3.client("glue").batch_delete_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection]
+Boto3 documentation:
+[Glue.Client.batch_delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection)
 
-```python
-def batch_delete_connection(
-    self,
-    ConnectionNameList: List[str],
-    CatalogId: str = None
-) -> BatchDeleteConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionNameList`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchDeleteConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeleteconnectionresponsetypedef).
 
 ### batch_delete_partition
 
 Type annotations for `boto3.client("glue").batch_delete_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition]
+Boto3 documentation:
+[Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition)
 
-```python
-def batch_delete_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionsToDelete: List["PartitionValueListTypeDef"],
-    CatalogId: str = None
-) -> BatchDeletePartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionsToDelete`:
+  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchDeletePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletepartitionresponsetypedef).
 
 ### batch_delete_table
 
 Type annotations for `boto3.client("glue").batch_delete_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table]
+Boto3 documentation:
+[Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table)
 
-```python
-def batch_delete_table(
-    self,
-    DatabaseName: str,
-    TablesToDelete: List[str],
-    CatalogId: str = None
-) -> BatchDeleteTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TablesToDelete`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchDeleteTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletetableresponsetypedef).
 
 ### batch_delete_table_version
 
 Type annotations for `boto3.client("glue").batch_delete_table_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version]
+Boto3 documentation:
+[Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version)
 
-```python
-def batch_delete_table_version(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    VersionIds: List[str],
-    CatalogId: str = None
-) -> BatchDeleteTableVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `VersionIds`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchDeleteTableVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletetableversionresponsetypedef).
 
 ### batch_get_crawlers
 
 Type annotations for `boto3.client("glue").batch_get_crawlers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers]
+Boto3 documentation:
+[Glue.Client.batch_get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers)
 
-```python
-def batch_get_crawlers(
-    self,
-    CrawlerNames: List[str]
-) -> BatchGetCrawlersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CrawlerNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetcrawlersresponsetypedef).
 
 ### batch_get_dev_endpoints
 
 Type annotations for `boto3.client("glue").batch_get_dev_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints]
+Boto3 documentation:
+[Glue.Client.batch_get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
 
-```python
-def batch_get_dev_endpoints(
-    self,
-    DevEndpointNames: List[str]
-) -> BatchGetDevEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DevEndpointNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetdevendpointsresponsetypedef).
 
 ### batch_get_jobs
 
 Type annotations for `boto3.client("glue").batch_get_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs]
+Boto3 documentation:
+[Glue.Client.batch_get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs)
 
-```python
-def batch_get_jobs(
-    self,
-    JobNames: List[str]
-) -> BatchGetJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetjobsresponsetypedef).
 
 ### batch_get_partition
 
 Type annotations for `boto3.client("glue").batch_get_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition]
+Boto3 documentation:
+[Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition)
 
-```python
-def batch_get_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionsToGet: List["PartitionValueListTypeDef"],
-    CatalogId: str = None
-) -> BatchGetPartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionsToGet`:
+  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchGetPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetpartitionresponsetypedef).
 
 ### batch_get_triggers
 
 Type annotations for `boto3.client("glue").batch_get_triggers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers]
+Boto3 documentation:
+[Glue.Client.batch_get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers)
 
-```python
-def batch_get_triggers(
-    self,
-    TriggerNames: List[str]
-) -> BatchGetTriggersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TriggerNames`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgettriggersresponsetypedef).
 
 ### batch_get_workflows
 
 Type annotations for `boto3.client("glue").batch_get_workflows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows]
+Boto3 documentation:
+[Glue.Client.batch_get_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows)
 
-```python
-def batch_get_workflows(
-    self,
-    Names: List[str],
-    IncludeGraph: bool = None
-) -> BatchGetWorkflowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Names`: `List`\[`str`\] *(required)*
+- `IncludeGraph`: `bool`
+
+Returns
+[BatchGetWorkflowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetworkflowsresponsetypedef).
 
 ### batch_stop_job_run
 
 Type annotations for `boto3.client("glue").batch_stop_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run]
+Boto3 documentation:
+[Glue.Client.batch_stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run)
 
-```python
-def batch_stop_job_run(
-    self,
-    JobName: str,
-    JobRunIds: List[str]
-) -> BatchStopJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `JobRunIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchStopJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchstopjobrunresponsetypedef).
 
 ### batch_update_partition
 
 Type annotations for `boto3.client("glue").batch_update_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition]
+Boto3 documentation:
+[Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition)
 
-```python
-def batch_update_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    Entries: List[BatchUpdatePartitionRequestEntryTypeDef],
-    CatalogId: str = None
-) -> BatchUpdatePartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `Entries`:
+  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchupdatepartitionrequestentrytypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[BatchUpdatePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchupdatepartitionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("glue").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate]
+Boto3 documentation:
+[Glue.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_ml_task_run
 
 Type annotations for `boto3.client("glue").cancel_ml_task_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run]
+Boto3 documentation:
+[Glue.Client.cancel_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
 
-```python
-def cancel_ml_task_run(
-    self,
-    TransformId: str,
-    TaskRunId: str
-) -> CancelMLTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `TaskRunId`: `str` *(required)*
+
+Returns
+[CancelMLTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#cancelmltaskrunresponsetypedef).
 
 ### check_schema_version_validity
 
-Type annotations for `boto3.client("glue").check_schema_version_validity` method.
+Type annotations for `boto3.client("glue").check_schema_version_validity`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity]
+Boto3 documentation:
+[Glue.Client.check_schema_version_validity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity)
 
-```python
-def check_schema_version_validity(
-    self,
-    DataFormat: Literal['AVRO'],
-    SchemaDefinition: str
-) -> CheckSchemaVersionValidityResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DataFormat`: `Literal['AVRO']` *(required)*
+- `SchemaDefinition`: `str` *(required)*
+
+Returns
+[CheckSchemaVersionValidityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#checkschemaversionvalidityresponsetypedef).
 
 ### create_classifier
 
 Type annotations for `boto3.client("glue").create_classifier` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier]
+Boto3 documentation:
+[Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier)
 
-```python
-def create_classifier(
-    self,
-    GrokClassifier: CreateGrokClassifierRequestTypeDef = None,
-    XMLClassifier: CreateXMLClassifierRequestTypeDef = None,
-    JsonClassifier: CreateJsonClassifierRequestTypeDef = None,
-    CsvClassifier: CreateCsvClassifierRequestTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GrokClassifier`:
+  [CreateGrokClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#creategrokclassifierrequesttypedef)
+- `XMLClassifier`:
+  [CreateXMLClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createxmlclassifierrequesttypedef)
+- `JsonClassifier`:
+  [CreateJsonClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createjsonclassifierrequesttypedef)
+- `CsvClassifier`:
+  [CreateCsvClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createcsvclassifierrequesttypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_connection
 
 Type annotations for `boto3.client("glue").create_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection]
+Boto3 documentation:
+[Glue.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection)
 
-```python
-def create_connection(
-    self,
-    ConnectionInput: ConnectionInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConnectionInput`:
+  [ConnectionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_crawler
 
 Type annotations for `boto3.client("glue").create_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler]
+Boto3 documentation:
+[Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler)
 
-```python
-def create_crawler(
-    self,
-    Name: str,
-    Role: str,
-    Targets: "CrawlerTargetsTypeDef",
-    DatabaseName: str = None,
-    Description: str = None,
-    Schedule: str = None,
-    Classifiers: List[str] = None,
-    TablePrefix: str = None,
-    SchemaChangePolicy: "SchemaChangePolicyTypeDef" = None,
-    RecrawlPolicy: "RecrawlPolicyTypeDef" = None,
-    LineageConfiguration: "LineageConfigurationTypeDef" = None,
-    Configuration: str = None,
-    CrawlerSecurityConfiguration: str = None,
-    Tags: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Role`: `str` *(required)*
+- `Targets`:
+  [CrawlerTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertargetstypedef)
+  *(required)*
+- `DatabaseName`: `str`
+- `Description`: `str`
+- `Schedule`: `str`
+- `Classifiers`: `List`\[`str`\]
+- `TablePrefix`: `str`
+- `SchemaChangePolicy`:
+  [SchemaChangePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemachangepolicytypedef)
+- `RecrawlPolicy`:
+  [RecrawlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#recrawlpolicytypedef)
+- `LineageConfiguration`:
+  [LineageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lineageconfigurationtypedef)
+- `Configuration`: `str`
+- `CrawlerSecurityConfiguration`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_database
 
 Type annotations for `boto3.client("glue").create_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database]
+Boto3 documentation:
+[Glue.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database)
 
-```python
-def create_database(
-    self,
-    DatabaseInput: DatabaseInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseInput`:
+  [DatabaseInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseinputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_dev_endpoint
 
 Type annotations for `boto3.client("glue").create_dev_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint]
+Boto3 documentation:
+[Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint)
 
-```python
-def create_dev_endpoint(
-    self,
-    EndpointName: str,
-    RoleArn: str,
-    SecurityGroupIds: List[str] = None,
-    SubnetId: str = None,
-    PublicKey: str = None,
-    PublicKeys: List[str] = None,
-    NumberOfNodes: int = None,
-    WorkerType: WorkerType = None,
-    GlueVersion: str = None,
-    NumberOfWorkers: int = None,
-    ExtraPythonLibsS3Path: str = None,
-    ExtraJarsS3Path: str = None,
-    SecurityConfiguration: str = None,
-    Tags: Dict[str, str] = None,
-    Arguments: Dict[str, str] = None
-) -> CreateDevEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetId`: `str`
+- `PublicKey`: `str`
+- `PublicKeys`: `List`\[`str`\]
+- `NumberOfNodes`: `int`
+- `WorkerType`:
+  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `GlueVersion`: `str`
+- `NumberOfWorkers`: `int`
+- `ExtraPythonLibsS3Path`: `str`
+- `ExtraJarsS3Path`: `str`
+- `SecurityConfiguration`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Arguments`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDevEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createdevendpointresponsetypedef).
 
 ### create_job
 
 Type annotations for `boto3.client("glue").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job]
+Boto3 documentation:
+[Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job)
 
-```python
-def create_job(
-    self,
-    Name: str,
-    Role: str,
-    Command: "JobCommandTypeDef",
-    Description: str = None,
-    LogUri: str = None,
-    ExecutionProperty: "ExecutionPropertyTypeDef" = None,
-    DefaultArguments: Dict[str, str] = None,
-    NonOverridableArguments: Dict[str, str] = None,
-    Connections: "ConnectionsListTypeDef" = None,
-    MaxRetries: int = None,
-    AllocatedCapacity: int = None,
-    Timeout: int = None,
-    MaxCapacity: float = None,
-    SecurityConfiguration: str = None,
-    Tags: Dict[str, str] = None,
-    NotificationProperty: "NotificationPropertyTypeDef" = None,
-    GlueVersion: str = None,
-    NumberOfWorkers: int = None,
-    WorkerType: WorkerType = None
-) -> CreateJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Role`: `str` *(required)*
+- `Command`:
+  [JobCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobcommandtypedef)
+  *(required)*
+- `Description`: `str`
+- `LogUri`: `str`
+- `ExecutionProperty`:
+  [ExecutionPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#executionpropertytypedef)
+- `DefaultArguments`: `Dict`\[`str`, `str`\]
+- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
+- `Connections`:
+  [ConnectionsListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectionslisttypedef)
+- `MaxRetries`: `int`
+- `AllocatedCapacity`: `int`
+- `Timeout`: `int`
+- `MaxCapacity`: `float`
+- `SecurityConfiguration`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `NotificationProperty`:
+  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+- `GlueVersion`: `str`
+- `NumberOfWorkers`: `int`
+- `WorkerType`:
+  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+
+Returns
+[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createjobresponsetypedef).
 
 ### create_ml_transform
 
 Type annotations for `boto3.client("glue").create_ml_transform` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform]
+Boto3 documentation:
+[Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform)
 
-```python
-def create_ml_transform(
-    self,
-    Name: str,
-    InputRecordTables: List["GlueTableTypeDef"],
-    Parameters: "TransformParametersTypeDef",
-    Role: str,
-    Description: str = None,
-    GlueVersion: str = None,
-    MaxCapacity: float = None,
-    WorkerType: WorkerType = None,
-    NumberOfWorkers: int = None,
-    Timeout: int = None,
-    MaxRetries: int = None,
-    Tags: Dict[str, str] = None,
-    TransformEncryption: "TransformEncryptionTypeDef" = None
-) -> CreateMLTransformResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `InputRecordTables`:
+  `List`\[[GlueTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gluetabletypedef)\]
+  *(required)*
+- `Parameters`:
+  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+  *(required)*
+- `Role`: `str` *(required)*
+- `Description`: `str`
+- `GlueVersion`: `str`
+- `MaxCapacity`: `float`
+- `WorkerType`:
+  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `NumberOfWorkers`: `int`
+- `Timeout`: `int`
+- `MaxRetries`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `TransformEncryption`:
+  [TransformEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformencryptiontypedef)
+
+Returns
+[CreateMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createmltransformresponsetypedef).
 
 ### create_partition
 
 Type annotations for `boto3.client("glue").create_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition]
+Boto3 documentation:
+[Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition)
 
-```python
-def create_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionInput: "PartitionInputTypeDef",
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionInput`:
+  [PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_partition_index
 
 Type annotations for `boto3.client("glue").create_partition_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index]
+Boto3 documentation:
+[Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index)
 
-```python
-def create_partition_index(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionIndex: PartitionIndexTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionIndex`:
+  [PartitionIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionindextypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_registry
 
 Type annotations for `boto3.client("glue").create_registry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry]
+Boto3 documentation:
+[Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry)
 
-```python
-def create_registry(
-    self,
-    RegistryName: str,
-    Description: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateRegistryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistryName`: `str` *(required)*
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createregistryresponsetypedef).
 
 ### create_schema
 
 Type annotations for `boto3.client("glue").create_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema]
+Boto3 documentation:
+[Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema)
 
-```python
-def create_schema(
-    self,
-    SchemaName: str,
-    DataFormat: Literal['AVRO'],
-    RegistryId: RegistryIdTypeDef = None,
-    Compatibility: Compatibility = None,
-    Description: str = None,
-    Tags: Dict[str, str] = None,
-    SchemaDefinition: str = None
-) -> CreateSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaName`: `str` *(required)*
+- `DataFormat`: `Literal['AVRO']` *(required)*
+- `RegistryId`:
+  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `Compatibility`:
+  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `SchemaDefinition`: `str`
+
+Returns
+[CreateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createschemaresponsetypedef).
 
 ### create_script
 
 Type annotations for `boto3.client("glue").create_script` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script]
+Boto3 documentation:
+[Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script)
 
-```python
-def create_script(
-    self,
-    DagNodes: List["CodeGenNodeTypeDef"] = None,
-    DagEdges: List["CodeGenEdgeTypeDef"] = None,
-    Language: Language = None
-) -> CreateScriptResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DagNodes`:
+  `List`\[[CodeGenNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodetypedef)\]
+- `DagEdges`:
+  `List`\[[CodeGenEdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegenedgetypedef)\]
+- `Language`:
+  [Language](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#language)
+
+Returns
+[CreateScriptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createscriptresponsetypedef).
 
 ### create_security_configuration
 
-Type annotations for `boto3.client("glue").create_security_configuration` method.
+Type annotations for `boto3.client("glue").create_security_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration]
+Boto3 documentation:
+[Glue.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration)
 
-```python
-def create_security_configuration(
-    self,
-    Name: str,
-    EncryptionConfiguration: "EncryptionConfigurationTypeDef"
-) -> CreateSecurityConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#encryptionconfigurationtypedef)
+  *(required)*
+
+Returns
+[CreateSecurityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createsecurityconfigurationresponsetypedef).
 
 ### create_table
 
 Type annotations for `boto3.client("glue").create_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table]
+Boto3 documentation:
+[Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table)
 
-```python
-def create_table(
-    self,
-    DatabaseName: str,
-    TableInput: TableInputTypeDef,
-    CatalogId: str = None,
-    PartitionIndexes: List[PartitionIndexTypeDef] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableInput`:
+  [TableInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableinputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+- `PartitionIndexes`:
+  `List`\[[PartitionIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionindextypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_trigger
 
 Type annotations for `boto3.client("glue").create_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger]
+Boto3 documentation:
+[Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger)
 
-```python
-def create_trigger(
-    self,
-    Name: str,
-    Type: TriggerType,
-    Actions: List["ActionTypeDef"],
-    WorkflowName: str = None,
-    Schedule: str = None,
-    Predicate: "PredicateTypeDef" = None,
-    Description: str = None,
-    StartOnCreation: bool = None,
-    Tags: Dict[str, str] = None
-) -> CreateTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Type`:
+  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#triggertype)
+  *(required)*
+- `Actions`:
+  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#actiontypedef)\]
+  *(required)*
+- `WorkflowName`: `str`
+- `Schedule`: `str`
+- `Predicate`:
+  [PredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#predicatetypedef)
+- `Description`: `str`
+- `StartOnCreation`: `bool`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createtriggerresponsetypedef).
 
 ### create_user_defined_function
 
-Type annotations for `boto3.client("glue").create_user_defined_function` method.
+Type annotations for `boto3.client("glue").create_user_defined_function`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function]
+Boto3 documentation:
+[Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function)
 
-```python
-def create_user_defined_function(
-    self,
-    DatabaseName: str,
-    FunctionInput: UserDefinedFunctionInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `FunctionInput`:
+  [UserDefinedFunctionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_workflow
 
 Type annotations for `boto3.client("glue").create_workflow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow]
+Boto3 documentation:
+[Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow)
 
-```python
-def create_workflow(
-    self,
-    Name: str,
-    Description: str = None,
-    DefaultRunProperties: Dict[str, str] = None,
-    Tags: Dict[str, str] = None,
-    MaxConcurrentRuns: int = None
-) -> CreateWorkflowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
+- `MaxConcurrentRuns`: `int`
+
+Returns
+[CreateWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createworkflowresponsetypedef).
 
 ### delete_classifier
 
 Type annotations for `boto3.client("glue").delete_classifier` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier]
+Boto3 documentation:
+[Glue.Client.delete_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier)
 
-```python
-def delete_classifier(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_column_statistics_for_partition
 
-Type annotations for `boto3.client("glue").delete_column_statistics_for_partition` method.
+Type annotations for
+`boto3.client("glue").delete_column_statistics_for_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition]
+Boto3 documentation:
+[Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
 
-```python
-def delete_column_statistics_for_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValues: List[str],
-    ColumnName: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `List`\[`str`\] *(required)*
+- `ColumnName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_column_statistics_for_table
 
-Type annotations for `boto3.client("glue").delete_column_statistics_for_table` method.
+Type annotations for `boto3.client("glue").delete_column_statistics_for_table`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table]
+Boto3 documentation:
+[Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
 
-```python
-def delete_column_statistics_for_table(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    ColumnName: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `ColumnName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_connection
 
 Type annotations for `boto3.client("glue").delete_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection]
+Boto3 documentation:
+[Glue.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection)
 
-```python
-def delete_connection(
-    self,
-    ConnectionName: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConnectionName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_crawler
 
 Type annotations for `boto3.client("glue").delete_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler]
+Boto3 documentation:
+[Glue.Client.delete_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler)
 
-```python
-def delete_crawler(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_database
 
 Type annotations for `boto3.client("glue").delete_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database]
+Boto3 documentation:
+[Glue.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database)
 
-```python
-def delete_database(
-    self,
-    Name: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dev_endpoint
 
 Type annotations for `boto3.client("glue").delete_dev_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint]
+Boto3 documentation:
+[Glue.Client.delete_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
 
-```python
-def delete_dev_endpoint(
-    self,
-    EndpointName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_job
 
 Type annotations for `boto3.client("glue").delete_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job]
+Boto3 documentation:
+[Glue.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job)
 
-```python
-def delete_job(
-    self,
-    JobName: str
-) -> DeleteJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+
+Returns
+[DeleteJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletejobresponsetypedef).
 
 ### delete_ml_transform
 
 Type annotations for `boto3.client("glue").delete_ml_transform` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform]
+Boto3 documentation:
+[Glue.Client.delete_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform)
 
-```python
-def delete_ml_transform(
-    self,
-    TransformId: str
-) -> DeleteMLTransformResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+
+Returns
+[DeleteMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletemltransformresponsetypedef).
 
 ### delete_partition
 
 Type annotations for `boto3.client("glue").delete_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition]
+Boto3 documentation:
+[Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition)
 
-```python
-def delete_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValues: List[str],
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_partition_index
 
 Type annotations for `boto3.client("glue").delete_partition_index` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index]
+Boto3 documentation:
+[Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index)
 
-```python
-def delete_partition_index(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    IndexName: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `IndexName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_registry
 
 Type annotations for `boto3.client("glue").delete_registry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry]
+Boto3 documentation:
+[Glue.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry)
 
-```python
-def delete_registry(
-    self,
-    RegistryId: RegistryIdTypeDef
-) -> DeleteRegistryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistryId`:
+  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+  *(required)*
+
+Returns
+[DeleteRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteregistryresponsetypedef).
 
 ### delete_resource_policy
 
 Type annotations for `boto3.client("glue").delete_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy]
+Boto3 documentation:
+[Glue.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy)
 
-```python
-def delete_resource_policy(
-    self,
-    PolicyHashCondition: str = None,
-    ResourceArn: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `PolicyHashCondition`: `str`
+- `ResourceArn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_schema
 
 Type annotations for `boto3.client("glue").delete_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema]
+Boto3 documentation:
+[Glue.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema)
 
-```python
-def delete_schema(
-    self,
-    SchemaId: "SchemaIdTypeDef"
-) -> DeleteSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+
+Returns
+[DeleteSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteschemaresponsetypedef).
 
 ### delete_schema_versions
 
 Type annotations for `boto3.client("glue").delete_schema_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions]
+Boto3 documentation:
+[Glue.Client.delete_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions)
 
-```python
-def delete_schema_versions(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    Versions: str
-) -> DeleteSchemaVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `Versions`: `str` *(required)*
+
+Returns
+[DeleteSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteschemaversionsresponsetypedef).
 
 ### delete_security_configuration
 
-Type annotations for `boto3.client("glue").delete_security_configuration` method.
+Type annotations for `boto3.client("glue").delete_security_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration]
+Boto3 documentation:
+[Glue.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration)
 
-```python
-def delete_security_configuration(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_table
 
 Type annotations for `boto3.client("glue").delete_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table]
+Boto3 documentation:
+[Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table)
 
-```python
-def delete_table(
-    self,
-    DatabaseName: str,
-    Name: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_table_version
 
 Type annotations for `boto3.client("glue").delete_table_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version]
+Boto3 documentation:
+[Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version)
 
-```python
-def delete_table_version(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    VersionId: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_trigger
 
 Type annotations for `boto3.client("glue").delete_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger]
+Boto3 documentation:
+[Glue.Client.delete_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger)
 
-```python
-def delete_trigger(
-    self,
-    Name: str
-) -> DeleteTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletetriggerresponsetypedef).
 
 ### delete_user_defined_function
 
-Type annotations for `boto3.client("glue").delete_user_defined_function` method.
+Type annotations for `boto3.client("glue").delete_user_defined_function`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function]
+Boto3 documentation:
+[Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function)
 
-```python
-def delete_user_defined_function(
-    self,
-    DatabaseName: str,
-    FunctionName: str,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `FunctionName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workflow
 
 Type annotations for `boto3.client("glue").delete_workflow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow]
+Boto3 documentation:
+[Glue.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow)
 
-```python
-def delete_workflow(
-    self,
-    Name: str
-) -> DeleteWorkflowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteworkflowresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("glue").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url]
+Boto3 documentation:
+[Glue.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_catalog_import_status
 
 Type annotations for `boto3.client("glue").get_catalog_import_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status]
+Boto3 documentation:
+[Glue.Client.get_catalog_import_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status)
 
-```python
-def get_catalog_import_status(
-    self,
-    CatalogId: str = None
-) -> GetCatalogImportStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+
+Returns
+[GetCatalogImportStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcatalogimportstatusresponsetypedef).
 
 ### get_classifier
 
 Type annotations for `boto3.client("glue").get_classifier` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier]
+Boto3 documentation:
+[Glue.Client.get_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier)
 
-```python
-def get_classifier(
-    self,
-    Name: str
-) -> GetClassifierResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetClassifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getclassifierresponsetypedef).
 
 ### get_classifiers
 
 Type annotations for `boto3.client("glue").get_classifiers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers]
+Boto3 documentation:
+[Glue.Client.get_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers)
 
-```python
-def get_classifiers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetClassifiersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetClassifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getclassifiersresponsetypedef).
 
 ### get_column_statistics_for_partition
 
-Type annotations for `boto3.client("glue").get_column_statistics_for_partition` method.
+Type annotations for `boto3.client("glue").get_column_statistics_for_partition`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition]
+Boto3 documentation:
+[Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
 
-```python
-def get_column_statistics_for_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValues: List[str],
-    ColumnNames: List[str],
-    CatalogId: str = None
-) -> GetColumnStatisticsForPartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `List`\[`str`\] *(required)*
+- `ColumnNames`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetColumnStatisticsForPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcolumnstatisticsforpartitionresponsetypedef).
 
 ### get_column_statistics_for_table
 
-Type annotations for `boto3.client("glue").get_column_statistics_for_table` method.
+Type annotations for `boto3.client("glue").get_column_statistics_for_table`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table]
+Boto3 documentation:
+[Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
 
-```python
-def get_column_statistics_for_table(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    ColumnNames: List[str],
-    CatalogId: str = None
-) -> GetColumnStatisticsForTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `ColumnNames`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetColumnStatisticsForTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcolumnstatisticsfortableresponsetypedef).
 
 ### get_connection
 
 Type annotations for `boto3.client("glue").get_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection]
+Boto3 documentation:
+[Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection)
 
-```python
-def get_connection(
-    self,
-    Name: str,
-    CatalogId: str = None,
-    HidePassword: bool = None
-) -> GetConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CatalogId`: `str`
+- `HidePassword`: `bool`
+
+Returns
+[GetConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionresponsetypedef).
 
 ### get_connections
 
 Type annotations for `boto3.client("glue").get_connections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections]
+Boto3 documentation:
+[Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections)
 
-```python
-def get_connections(
-    self,
-    CatalogId: str = None,
-    Filter: GetConnectionsFilterTypeDef = None,
-    HidePassword: bool = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetConnectionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+- `Filter`:
+  [GetConnectionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsfiltertypedef)
+- `HidePassword`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsresponsetypedef).
 
 ### get_crawler
 
 Type annotations for `boto3.client("glue").get_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler]
+Boto3 documentation:
+[Glue.Client.get_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler)
 
-```python
-def get_crawler(
-    self,
-    Name: str
-) -> GetCrawlerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetCrawlerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlerresponsetypedef).
 
 ### get_crawler_metrics
 
 Type annotations for `boto3.client("glue").get_crawler_metrics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics]
+Boto3 documentation:
+[Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics)
 
-```python
-def get_crawler_metrics(
-    self,
-    CrawlerNameList: List[str] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetCrawlerMetricsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CrawlerNameList`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetCrawlerMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlermetricsresponsetypedef).
 
 ### get_crawlers
 
 Type annotations for `boto3.client("glue").get_crawlers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers]
+Boto3 documentation:
+[Glue.Client.get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers)
 
-```python
-def get_crawlers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetCrawlersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlersresponsetypedef).
 
 ### get_data_catalog_encryption_settings
 
-Type annotations for `boto3.client("glue").get_data_catalog_encryption_settings` method.
+Type annotations for
+`boto3.client("glue").get_data_catalog_encryption_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings]
+Boto3 documentation:
+[Glue.Client.get_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
 
-```python
-def get_data_catalog_encryption_settings(
-    self,
-    CatalogId: str = None
-) -> GetDataCatalogEncryptionSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+
+Returns
+[GetDataCatalogEncryptionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatacatalogencryptionsettingsresponsetypedef).
 
 ### get_database
 
 Type annotations for `boto3.client("glue").get_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database]
+Boto3 documentation:
+[Glue.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database)
 
-```python
-def get_database(
-    self,
-    Name: str,
-    CatalogId: str = None
-) -> GetDatabaseResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatabaseresponsetypedef).
 
 ### get_databases
 
 Type annotations for `boto3.client("glue").get_databases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases]
+Boto3 documentation:
+[Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases)
 
-```python
-def get_databases(
-    self,
-    CatalogId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None,
-    ResourceShareType: ResourceShareType = None
-) -> GetDatabasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ResourceShareType`:
+  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcesharetype)
+
+Returns
+[GetDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatabasesresponsetypedef).
 
 ### get_dataflow_graph
 
 Type annotations for `boto3.client("glue").get_dataflow_graph` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph]
+Boto3 documentation:
+[Glue.Client.get_dataflow_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph)
 
-```python
-def get_dataflow_graph(
-    self,
-    PythonScript: str = None
-) -> GetDataflowGraphResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PythonScript`: `str`
+
+Returns
+[GetDataflowGraphResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdataflowgraphresponsetypedef).
 
 ### get_dev_endpoint
 
 Type annotations for `boto3.client("glue").get_dev_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint]
+Boto3 documentation:
+[Glue.Client.get_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint)
 
-```python
-def get_dev_endpoint(
-    self,
-    EndpointName: str
-) -> GetDevEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+
+Returns
+[GetDevEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdevendpointresponsetypedef).
 
 ### get_dev_endpoints
 
 Type annotations for `boto3.client("glue").get_dev_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints]
+Boto3 documentation:
+[Glue.Client.get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints)
 
-```python
-def get_dev_endpoints(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetDevEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdevendpointsresponsetypedef).
 
 ### get_job
 
 Type annotations for `boto3.client("glue").get_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job]
+Boto3 documentation:
+[Glue.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job)
 
-```python
-def get_job(
-    self,
-    JobName: str
-) -> GetJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+
+Returns
+[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobresponsetypedef).
 
 ### get_job_bookmark
 
 Type annotations for `boto3.client("glue").get_job_bookmark` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark]
+Boto3 documentation:
+[Glue.Client.get_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark)
 
-```python
-def get_job_bookmark(
-    self,
-    JobName: str,
-    RunId: str = None
-) -> GetJobBookmarkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `RunId`: `str`
+
+Returns
+[GetJobBookmarkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobbookmarkresponsetypedef).
 
 ### get_job_run
 
 Type annotations for `boto3.client("glue").get_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run]
+Boto3 documentation:
+[Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run)
 
-```python
-def get_job_run(
-    self,
-    JobName: str,
-    RunId: str,
-    PredecessorsIncluded: bool = None
-) -> GetJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `RunId`: `str` *(required)*
+- `PredecessorsIncluded`: `bool`
+
+Returns
+[GetJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobrunresponsetypedef).
 
 ### get_job_runs
 
 Type annotations for `boto3.client("glue").get_job_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs]
+Boto3 documentation:
+[Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs)
 
-```python
-def get_job_runs(
-    self,
-    JobName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetJobRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobrunsresponsetypedef).
 
 ### get_jobs
 
 Type annotations for `boto3.client("glue").get_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs]
+Boto3 documentation:
+[Glue.Client.get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs)
 
-```python
-def get_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobsresponsetypedef).
 
 ### get_mapping
 
 Type annotations for `boto3.client("glue").get_mapping` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping]
+Boto3 documentation:
+[Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping)
 
-```python
-def get_mapping(
-    self,
-    Source: CatalogEntryTypeDef,
-    Sinks: List[CatalogEntryTypeDef] = None,
-    Location: LocationTypeDef = None
-) -> GetMappingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Source`:
+  [CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)
+  *(required)*
+- `Sinks`:
+  `List`\[[CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)\]
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#locationtypedef)
+
+Returns
+[GetMappingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmappingresponsetypedef).
 
 ### get_ml_task_run
 
 Type annotations for `boto3.client("glue").get_ml_task_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run]
+Boto3 documentation:
+[Glue.Client.get_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run)
 
-```python
-def get_ml_task_run(
-    self,
-    TransformId: str,
-    TaskRunId: str
-) -> GetMLTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `TaskRunId`: `str` *(required)*
+
+Returns
+[GetMLTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltaskrunresponsetypedef).
 
 ### get_ml_task_runs
 
 Type annotations for `boto3.client("glue").get_ml_task_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs]
+Boto3 documentation:
+[Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs)
 
-```python
-def get_ml_task_runs(
-    self,
-    TransformId: str,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filter: TaskRunFilterCriteriaTypeDef = None,
-    Sort: TaskRunSortCriteriaTypeDef = None
-) -> GetMLTaskRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filter`:
+  [TaskRunFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunfiltercriteriatypedef)
+- `Sort`:
+  [TaskRunSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunsortcriteriatypedef)
+
+Returns
+[GetMLTaskRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltaskrunsresponsetypedef).
 
 ### get_ml_transform
 
 Type annotations for `boto3.client("glue").get_ml_transform` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform]
+Boto3 documentation:
+[Glue.Client.get_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform)
 
-```python
-def get_ml_transform(
-    self,
-    TransformId: str
-) -> GetMLTransformResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+
+Returns
+[GetMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltransformresponsetypedef).
 
 ### get_ml_transforms
 
 Type annotations for `boto3.client("glue").get_ml_transforms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms]
+Boto3 documentation:
+[Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms)
 
-```python
-def get_ml_transforms(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filter: TransformFilterCriteriaTypeDef = None,
-    Sort: TransformSortCriteriaTypeDef = None
-) -> GetMLTransformsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filter`:
+  [TransformFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformfiltercriteriatypedef)
+- `Sort`:
+  [TransformSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformsortcriteriatypedef)
+
+Returns
+[GetMLTransformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltransformsresponsetypedef).
 
 ### get_partition
 
 Type annotations for `boto3.client("glue").get_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition]
+Boto3 documentation:
+[Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition)
 
-```python
-def get_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValues: List[str],
-    CatalogId: str = None
-) -> GetPartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionresponsetypedef).
 
 ### get_partition_indexes
 
 Type annotations for `boto3.client("glue").get_partition_indexes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes]
+Boto3 documentation:
+[Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes)
 
-```python
-def get_partition_indexes(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    CatalogId: str = None,
-    NextToken: str = None
-) -> GetPartitionIndexesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `CatalogId`: `str`
+- `NextToken`: `str`
+
+Returns
+[GetPartitionIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionindexesresponsetypedef).
 
 ### get_partitions
 
 Type annotations for `boto3.client("glue").get_partitions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions]
+Boto3 documentation:
+[Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions)
 
-```python
-def get_partitions(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    CatalogId: str = None,
-    Expression: str = None,
-    NextToken: str = None,
-    Segment: SegmentTypeDef = None,
-    MaxResults: int = None,
-    ExcludeColumnSchema: bool = None
-) -> GetPartitionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `CatalogId`: `str`
+- `Expression`: `str`
+- `NextToken`: `str`
+- `Segment`:
+  [SegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#segmenttypedef)
+- `MaxResults`: `int`
+- `ExcludeColumnSchema`: `bool`
+
+Returns
+[GetPartitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionsresponsetypedef).
 
 ### get_plan
 
 Type annotations for `boto3.client("glue").get_plan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan]
+Boto3 documentation:
+[Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan)
 
-```python
-def get_plan(
-    self,
-    Mapping: List["MappingEntryTypeDef"],
-    Source: CatalogEntryTypeDef,
-    Sinks: List[CatalogEntryTypeDef] = None,
-    Location: LocationTypeDef = None,
-    Language: Language = None,
-    AdditionalPlanOptionsMap: Dict[str, str] = None
-) -> GetPlanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Mapping`:
+  `List`\[[MappingEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mappingentrytypedef)\]
+  *(required)*
+- `Source`:
+  [CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)
+  *(required)*
+- `Sinks`:
+  `List`\[[CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)\]
+- `Location`:
+  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#locationtypedef)
+- `Language`:
+  [Language](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#language)
+- `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
+
+Returns
+[GetPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getplanresponsetypedef).
 
 ### get_registry
 
 Type annotations for `boto3.client("glue").get_registry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry]
+Boto3 documentation:
+[Glue.Client.get_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry)
 
-```python
-def get_registry(
-    self,
-    RegistryId: RegistryIdTypeDef
-) -> GetRegistryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistryId`:
+  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+  *(required)*
+
+Returns
+[GetRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getregistryresponsetypedef).
 
 ### get_resource_policies
 
 Type annotations for `boto3.client("glue").get_resource_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies]
+Boto3 documentation:
+[Glue.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies)
 
-```python
-def get_resource_policies(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetResourcePoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getresourcepoliciesresponsetypedef).
 
 ### get_resource_policy
 
 Type annotations for `boto3.client("glue").get_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy]
+Boto3 documentation:
+[Glue.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy)
 
-```python
-def get_resource_policy(
-    self,
-    ResourceArn: str = None
-) -> GetResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str`
+
+Returns
+[GetResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getresourcepolicyresponsetypedef).
 
 ### get_schema
 
 Type annotations for `boto3.client("glue").get_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema]
+Boto3 documentation:
+[Glue.Client.get_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema)
 
-```python
-def get_schema(
-    self,
-    SchemaId: "SchemaIdTypeDef"
-) -> GetSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+
+Returns
+[GetSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaresponsetypedef).
 
 ### get_schema_by_definition
 
 Type annotations for `boto3.client("glue").get_schema_by_definition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition]
+Boto3 documentation:
+[Glue.Client.get_schema_by_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition)
 
-```python
-def get_schema_by_definition(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    SchemaDefinition: str
-) -> GetSchemaByDefinitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `SchemaDefinition`: `str` *(required)*
+
+Returns
+[GetSchemaByDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemabydefinitionresponsetypedef).
 
 ### get_schema_version
 
 Type annotations for `boto3.client("glue").get_schema_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version]
+Boto3 documentation:
+[Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version)
 
-```python
-def get_schema_version(
-    self,
-    SchemaId: "SchemaIdTypeDef" = None,
-    SchemaVersionId: str = None,
-    SchemaVersionNumber: SchemaVersionNumberTypeDef = None
-) -> GetSchemaVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaVersionId`: `str`
+- `SchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+
+Returns
+[GetSchemaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaversionresponsetypedef).
 
 ### get_schema_versions_diff
 
 Type annotations for `boto3.client("glue").get_schema_versions_diff` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff]
+Boto3 documentation:
+[Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
 
-```python
-def get_schema_versions_diff(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    FirstSchemaVersionNumber: SchemaVersionNumberTypeDef,
-    SecondSchemaVersionNumber: SchemaVersionNumberTypeDef,
-    SchemaDiffType: Literal['SYNTAX_DIFF']
-) -> GetSchemaVersionsDiffResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `FirstSchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  *(required)*
+- `SecondSchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  *(required)*
+- `SchemaDiffType`: `Literal['SYNTAX_DIFF']` *(required)*
+
+Returns
+[GetSchemaVersionsDiffResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaversionsdiffresponsetypedef).
 
 ### get_security_configuration
 
 Type annotations for `boto3.client("glue").get_security_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration]
+Boto3 documentation:
+[Glue.Client.get_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration)
 
-```python
-def get_security_configuration(
-    self,
-    Name: str
-) -> GetSecurityConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetSecurityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getsecurityconfigurationresponsetypedef).
 
 ### get_security_configurations
 
 Type annotations for `boto3.client("glue").get_security_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations]
+Boto3 documentation:
+[Glue.Client.get_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations)
 
-```python
-def get_security_configurations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> GetSecurityConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[GetSecurityConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getsecurityconfigurationsresponsetypedef).
 
 ### get_table
 
 Type annotations for `boto3.client("glue").get_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table]
+Boto3 documentation:
+[Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table)
 
-```python
-def get_table(
-    self,
-    DatabaseName: str,
-    Name: str,
-    CatalogId: str = None
-) -> GetTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableresponsetypedef).
 
 ### get_table_version
 
 Type annotations for `boto3.client("glue").get_table_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version]
+Boto3 documentation:
+[Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version)
 
-```python
-def get_table_version(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    CatalogId: str = None,
-    VersionId: str = None
-) -> GetTableVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `CatalogId`: `str`
+- `VersionId`: `str`
+
+Returns
+[GetTableVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableversionresponsetypedef).
 
 ### get_table_versions
 
 Type annotations for `boto3.client("glue").get_table_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions]
+Boto3 documentation:
+[Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions)
 
-```python
-def get_table_versions(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    CatalogId: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetTableVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `CatalogId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetTableVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableversionsresponsetypedef).
 
 ### get_tables
 
 Type annotations for `boto3.client("glue").get_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables]
+Boto3 documentation:
+[Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables)
 
-```python
-def get_tables(
-    self,
-    DatabaseName: str,
-    CatalogId: str = None,
-    Expression: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetTablesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `CatalogId`: `str`
+- `Expression`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettablesresponsetypedef).
 
 ### get_tags
 
 Type annotations for `boto3.client("glue").get_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags]
+Boto3 documentation:
+[Glue.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags)
 
-```python
-def get_tags(
-    self,
-    ResourceArn: str
-) -> GetTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[GetTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettagsresponsetypedef).
 
 ### get_trigger
 
 Type annotations for `boto3.client("glue").get_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger]
+Boto3 documentation:
+[Glue.Client.get_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger)
 
-```python
-def get_trigger(
-    self,
-    Name: str
-) -> GetTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettriggerresponsetypedef).
 
 ### get_triggers
 
 Type annotations for `boto3.client("glue").get_triggers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers]
+Boto3 documentation:
+[Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers)
 
-```python
-def get_triggers(
-    self,
-    NextToken: str = None,
-    DependentJobName: str = None,
-    MaxResults: int = None
-) -> GetTriggersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `DependentJobName`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettriggersresponsetypedef).
 
 ### get_user_defined_function
 
 Type annotations for `boto3.client("glue").get_user_defined_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function]
+Boto3 documentation:
+[Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function)
 
-```python
-def get_user_defined_function(
-    self,
-    DatabaseName: str,
-    FunctionName: str,
-    CatalogId: str = None
-) -> GetUserDefinedFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `FunctionName`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetUserDefinedFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getuserdefinedfunctionresponsetypedef).
 
 ### get_user_defined_functions
 
 Type annotations for `boto3.client("glue").get_user_defined_functions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions]
+Boto3 documentation:
+[Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions)
 
-```python
-def get_user_defined_functions(
-    self,
-    Pattern: str,
-    CatalogId: str = None,
-    DatabaseName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetUserDefinedFunctionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Pattern`: `str` *(required)*
+- `CatalogId`: `str`
+- `DatabaseName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetUserDefinedFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getuserdefinedfunctionsresponsetypedef).
 
 ### get_workflow
 
 Type annotations for `boto3.client("glue").get_workflow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow]
+Boto3 documentation:
+[Glue.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow)
 
-```python
-def get_workflow(
-    self,
-    Name: str,
-    IncludeGraph: bool = None
-) -> GetWorkflowResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IncludeGraph`: `bool`
+
+Returns
+[GetWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowresponsetypedef).
 
 ### get_workflow_run
 
 Type annotations for `boto3.client("glue").get_workflow_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run]
+Boto3 documentation:
+[Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run)
 
-```python
-def get_workflow_run(
-    self,
-    Name: str,
-    RunId: str,
-    IncludeGraph: bool = None
-) -> GetWorkflowRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RunId`: `str` *(required)*
+- `IncludeGraph`: `bool`
+
+Returns
+[GetWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunresponsetypedef).
 
 ### get_workflow_run_properties
 
 Type annotations for `boto3.client("glue").get_workflow_run_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties]
+Boto3 documentation:
+[Glue.Client.get_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
 
-```python
-def get_workflow_run_properties(
-    self,
-    Name: str,
-    RunId: str
-) -> GetWorkflowRunPropertiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RunId`: `str` *(required)*
+
+Returns
+[GetWorkflowRunPropertiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunpropertiesresponsetypedef).
 
 ### get_workflow_runs
 
 Type annotations for `boto3.client("glue").get_workflow_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs]
+Boto3 documentation:
+[Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs)
 
-```python
-def get_workflow_runs(
-    self,
-    Name: str,
-    IncludeGraph: bool = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetWorkflowRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IncludeGraph`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetWorkflowRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunsresponsetypedef).
 
 ### import_catalog_to_glue
 
 Type annotations for `boto3.client("glue").import_catalog_to_glue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue]
+Boto3 documentation:
+[Glue.Client.import_catalog_to_glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
 
-```python
-def import_catalog_to_glue(
-    self,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### list_crawlers
 
 Type annotations for `boto3.client("glue").list_crawlers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers]
+Boto3 documentation:
+[Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers)
 
-```python
-def list_crawlers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Tags: Dict[str, str] = None
-) -> ListCrawlersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listcrawlersresponsetypedef).
 
 ### list_dev_endpoints
 
 Type annotations for `boto3.client("glue").list_dev_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints]
+Boto3 documentation:
+[Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints)
 
-```python
-def list_dev_endpoints(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Tags: Dict[str, str] = None
-) -> ListDevEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listdevendpointsresponsetypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("glue").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs]
+Boto3 documentation:
+[Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Tags: Dict[str, str] = None
-) -> ListJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listjobsresponsetypedef).
 
 ### list_ml_transforms
 
 Type annotations for `boto3.client("glue").list_ml_transforms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms]
+Boto3 documentation:
+[Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms)
 
-```python
-def list_ml_transforms(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    Filter: TransformFilterCriteriaTypeDef = None,
-    Sort: TransformSortCriteriaTypeDef = None,
-    Tags: Dict[str, str] = None
-) -> ListMLTransformsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filter`:
+  [TransformFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformfiltercriteriatypedef)
+- `Sort`:
+  [TransformSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformsortcriteriatypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListMLTransformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listmltransformsresponsetypedef).
 
 ### list_registries
 
 Type annotations for `boto3.client("glue").list_registries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries]
+Boto3 documentation:
+[Glue.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries)
 
-```python
-def list_registries(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListRegistriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listregistriesresponsetypedef).
 
 ### list_schema_versions
 
 Type annotations for `boto3.client("glue").list_schema_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions]
+Boto3 documentation:
+[Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions)
 
-```python
-def list_schema_versions(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListSchemaVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemaversionsresponsetypedef).
 
 ### list_schemas
 
 Type annotations for `boto3.client("glue").list_schemas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas]
+Boto3 documentation:
+[Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas)
 
-```python
-def list_schemas(
-    self,
-    RegistryId: RegistryIdTypeDef = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListSchemasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistryId`:
+  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemasresponsetypedef).
 
 ### list_triggers
 
 Type annotations for `boto3.client("glue").list_triggers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers]
+Boto3 documentation:
+[Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers)
 
-```python
-def list_triggers(
-    self,
-    NextToken: str = None,
-    DependentJobName: str = None,
-    MaxResults: int = None,
-    Tags: Dict[str, str] = None
-) -> ListTriggersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `DependentJobName`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listtriggersresponsetypedef).
 
 ### list_workflows
 
 Type annotations for `boto3.client("glue").list_workflows` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows]
+Boto3 documentation:
+[Glue.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows)
 
-```python
-def list_workflows(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkflowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkflowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listworkflowsresponsetypedef).
 
 ### put_data_catalog_encryption_settings
 
-Type annotations for `boto3.client("glue").put_data_catalog_encryption_settings` method.
+Type annotations for
+`boto3.client("glue").put_data_catalog_encryption_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings]
+Boto3 documentation:
+[Glue.Client.put_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
 
-```python
-def put_data_catalog_encryption_settings(
-    self,
-    DataCatalogEncryptionSettings: "DataCatalogEncryptionSettingsTypeDef",
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DataCatalogEncryptionSettings`:
+  [DataCatalogEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#datacatalogencryptionsettingstypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_resource_policy
 
 Type annotations for `boto3.client("glue").put_resource_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy]
+Boto3 documentation:
+[Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy)
 
-```python
-def put_resource_policy(
-    self,
-    PolicyInJson: str,
-    ResourceArn: str = None,
-    PolicyHashCondition: str = None,
-    PolicyExistsCondition: ExistCondition = None,
-    EnableHybrid: EnableHybridValues = None
-) -> PutResourcePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PolicyInJson`: `str` *(required)*
+- `ResourceArn`: `str`
+- `PolicyHashCondition`: `str`
+- `PolicyExistsCondition`:
+  [ExistCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#existcondition)
+- `EnableHybrid`:
+  [EnableHybridValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#enablehybridvalues)
+
+Returns
+[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#putresourcepolicyresponsetypedef).
 
 ### put_schema_version_metadata
 
 Type annotations for `boto3.client("glue").put_schema_version_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata]
+Boto3 documentation:
+[Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
 
-```python
-def put_schema_version_metadata(
-    self,
-    MetadataKeyValue: MetadataKeyValuePairTypeDef,
-    SchemaId: "SchemaIdTypeDef" = None,
-    SchemaVersionNumber: SchemaVersionNumberTypeDef = None,
-    SchemaVersionId: str = None
-) -> PutSchemaVersionMetadataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MetadataKeyValue`:
+  [MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)
+  *(required)*
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+- `SchemaVersionId`: `str`
+
+Returns
+[PutSchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#putschemaversionmetadataresponsetypedef).
 
 ### put_workflow_run_properties
 
 Type annotations for `boto3.client("glue").put_workflow_run_properties` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties]
+Boto3 documentation:
+[Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
 
-```python
-def put_workflow_run_properties(
-    self,
-    Name: str,
-    RunId: str,
-    RunProperties: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RunId`: `str` *(required)*
+- `RunProperties`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### query_schema_version_metadata
 
-Type annotations for `boto3.client("glue").query_schema_version_metadata` method.
+Type annotations for `boto3.client("glue").query_schema_version_metadata`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata]
+Boto3 documentation:
+[Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
 
-```python
-def query_schema_version_metadata(
-    self,
-    SchemaId: "SchemaIdTypeDef" = None,
-    SchemaVersionNumber: SchemaVersionNumberTypeDef = None,
-    SchemaVersionId: str = None,
-    MetadataList: List[MetadataKeyValuePairTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> QuerySchemaVersionMetadataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+- `SchemaVersionId`: `str`
+- `MetadataList`:
+  `List`\[[MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[QuerySchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#queryschemaversionmetadataresponsetypedef).
 
 ### register_schema_version
 
 Type annotations for `boto3.client("glue").register_schema_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version]
+Boto3 documentation:
+[Glue.Client.register_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version)
 
-```python
-def register_schema_version(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    SchemaDefinition: str
-) -> RegisterSchemaVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `SchemaDefinition`: `str` *(required)*
+
+Returns
+[RegisterSchemaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registerschemaversionresponsetypedef).
 
 ### remove_schema_version_metadata
 
-Type annotations for `boto3.client("glue").remove_schema_version_metadata` method.
+Type annotations for `boto3.client("glue").remove_schema_version_metadata`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata]
+Boto3 documentation:
+[Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
 
-```python
-def remove_schema_version_metadata(
-    self,
-    MetadataKeyValue: MetadataKeyValuePairTypeDef,
-    SchemaId: "SchemaIdTypeDef" = None,
-    SchemaVersionNumber: SchemaVersionNumberTypeDef = None,
-    SchemaVersionId: str = None
-) -> RemoveSchemaVersionMetadataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MetadataKeyValue`:
+  [MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)
+  *(required)*
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+- `SchemaVersionId`: `str`
+
+Returns
+[RemoveSchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#removeschemaversionmetadataresponsetypedef).
 
 ### reset_job_bookmark
 
 Type annotations for `boto3.client("glue").reset_job_bookmark` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark]
+Boto3 documentation:
+[Glue.Client.reset_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark)
 
-```python
-def reset_job_bookmark(
-    self,
-    JobName: str,
-    RunId: str = None
-) -> ResetJobBookmarkResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `RunId`: `str`
+
+Returns
+[ResetJobBookmarkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resetjobbookmarkresponsetypedef).
 
 ### resume_workflow_run
 
 Type annotations for `boto3.client("glue").resume_workflow_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run]
+Boto3 documentation:
+[Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run)
 
-```python
-def resume_workflow_run(
-    self,
-    Name: str,
-    RunId: str,
-    NodeIds: List[str]
-) -> ResumeWorkflowRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RunId`: `str` *(required)*
+- `NodeIds`: `List`\[`str`\] *(required)*
+
+Returns
+[ResumeWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resumeworkflowrunresponsetypedef).
 
 ### search_tables
 
 Type annotations for `boto3.client("glue").search_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables]
+Boto3 documentation:
+[Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables)
 
-```python
-def search_tables(
-    self,
-    CatalogId: str = None,
-    NextToken: str = None,
-    Filters: List[PropertyPredicateTypeDef] = None,
-    SearchText: str = None,
-    SortCriteria: List[SortCriterionTypeDef] = None,
-    MaxResults: int = None,
-    ResourceShareType: ResourceShareType = None
-) -> SearchTablesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogId`: `str`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[PropertyPredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#propertypredicatetypedef)\]
+- `SearchText`: `str`
+- `SortCriteria`:
+  `List`\[[SortCriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#sortcriteriontypedef)\]
+- `MaxResults`: `int`
+- `ResourceShareType`:
+  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcesharetype)
+
+Returns
+[SearchTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#searchtablesresponsetypedef).
 
 ### start_crawler
 
 Type annotations for `boto3.client("glue").start_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler]
+Boto3 documentation:
+[Glue.Client.start_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler)
 
-```python
-def start_crawler(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_crawler_schedule
 
 Type annotations for `boto3.client("glue").start_crawler_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule]
+Boto3 documentation:
+[Glue.Client.start_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule)
 
-```python
-def start_crawler_schedule(
-    self,
-    CrawlerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CrawlerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_export_labels_task_run
 
-Type annotations for `boto3.client("glue").start_export_labels_task_run` method.
+Type annotations for `boto3.client("glue").start_export_labels_task_run`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run]
+Boto3 documentation:
+[Glue.Client.start_export_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
 
-```python
-def start_export_labels_task_run(
-    self,
-    TransformId: str,
-    OutputS3Path: str
-) -> StartExportLabelsTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `OutputS3Path`: `str` *(required)*
+
+Returns
+[StartExportLabelsTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startexportlabelstaskrunresponsetypedef).
 
 ### start_import_labels_task_run
 
-Type annotations for `boto3.client("glue").start_import_labels_task_run` method.
+Type annotations for `boto3.client("glue").start_import_labels_task_run`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run]
+Boto3 documentation:
+[Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
 
-```python
-def start_import_labels_task_run(
-    self,
-    TransformId: str,
-    InputS3Path: str,
-    ReplaceAllLabels: bool = None
-) -> StartImportLabelsTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `InputS3Path`: `str` *(required)*
+- `ReplaceAllLabels`: `bool`
+
+Returns
+[StartImportLabelsTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startimportlabelstaskrunresponsetypedef).
 
 ### start_job_run
 
 Type annotations for `boto3.client("glue").start_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run]
+Boto3 documentation:
+[Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run)
 
-```python
-def start_job_run(
-    self,
-    JobName: str,
-    JobRunId: str = None,
-    Arguments: Dict[str, str] = None,
-    AllocatedCapacity: int = None,
-    Timeout: int = None,
-    MaxCapacity: float = None,
-    SecurityConfiguration: str = None,
-    NotificationProperty: "NotificationPropertyTypeDef" = None,
-    WorkerType: WorkerType = None,
-    NumberOfWorkers: int = None
-) -> StartJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `JobRunId`: `str`
+- `Arguments`: `Dict`\[`str`, `str`\]
+- `AllocatedCapacity`: `int`
+- `Timeout`: `int`
+- `MaxCapacity`: `float`
+- `SecurityConfiguration`: `str`
+- `NotificationProperty`:
+  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+- `WorkerType`:
+  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `NumberOfWorkers`: `int`
+
+Returns
+[StartJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startjobrunresponsetypedef).
 
 ### start_ml_evaluation_task_run
 
-Type annotations for `boto3.client("glue").start_ml_evaluation_task_run` method.
+Type annotations for `boto3.client("glue").start_ml_evaluation_task_run`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run]
+Boto3 documentation:
+[Glue.Client.start_ml_evaluation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
 
-```python
-def start_ml_evaluation_task_run(
-    self,
-    TransformId: str
-) -> StartMLEvaluationTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+
+Returns
+[StartMLEvaluationTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startmlevaluationtaskrunresponsetypedef).
 
 ### start_ml_labeling_set_generation_task_run
 
-Type annotations for `boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
+Type annotations for
+`boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run]
+Boto3 documentation:
+[Glue.Client.start_ml_labeling_set_generation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
 
-```python
-def start_ml_labeling_set_generation_task_run(
-    self,
-    TransformId: str,
-    OutputS3Path: str
-) -> StartMLLabelingSetGenerationTaskRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `OutputS3Path`: `str` *(required)*
+
+Returns
+[StartMLLabelingSetGenerationTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startmllabelingsetgenerationtaskrunresponsetypedef).
 
 ### start_trigger
 
 Type annotations for `boto3.client("glue").start_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger]
+Boto3 documentation:
+[Glue.Client.start_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger)
 
-```python
-def start_trigger(
-    self,
-    Name: str
-) -> StartTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[StartTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#starttriggerresponsetypedef).
 
 ### start_workflow_run
 
 Type annotations for `boto3.client("glue").start_workflow_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run]
+Boto3 documentation:
+[Glue.Client.start_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run)
 
-```python
-def start_workflow_run(
-    self,
-    Name: str
-) -> StartWorkflowRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[StartWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startworkflowrunresponsetypedef).
 
 ### stop_crawler
 
 Type annotations for `boto3.client("glue").stop_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler]
+Boto3 documentation:
+[Glue.Client.stop_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler)
 
-```python
-def stop_crawler(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_crawler_schedule
 
 Type annotations for `boto3.client("glue").stop_crawler_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule]
+Boto3 documentation:
+[Glue.Client.stop_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
 
-```python
-def stop_crawler_schedule(
-    self,
-    CrawlerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CrawlerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_trigger
 
 Type annotations for `boto3.client("glue").stop_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger]
+Boto3 documentation:
+[Glue.Client.stop_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger)
 
-```python
-def stop_trigger(
-    self,
-    Name: str
-) -> StopTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[StopTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#stoptriggerresponsetypedef).
 
 ### stop_workflow_run
 
 Type annotations for `boto3.client("glue").stop_workflow_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run]
+Boto3 documentation:
+[Glue.Client.stop_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run)
 
-```python
-def stop_workflow_run(
-    self,
-    Name: str,
-    RunId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `RunId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("glue").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource]
+Boto3 documentation:
+[Glue.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    TagsToAdd: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagsToAdd`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("glue").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource]
+Boto3 documentation:
+[Glue.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagsToRemove: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagsToRemove`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_classifier
 
 Type annotations for `boto3.client("glue").update_classifier` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier]
+Boto3 documentation:
+[Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier)
 
-```python
-def update_classifier(
-    self,
-    GrokClassifier: UpdateGrokClassifierRequestTypeDef = None,
-    XMLClassifier: UpdateXMLClassifierRequestTypeDef = None,
-    JsonClassifier: UpdateJsonClassifierRequestTypeDef = None,
-    CsvClassifier: UpdateCsvClassifierRequestTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `GrokClassifier`:
+  [UpdateGrokClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updategrokclassifierrequesttypedef)
+- `XMLClassifier`:
+  [UpdateXMLClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatexmlclassifierrequesttypedef)
+- `JsonClassifier`:
+  [UpdateJsonClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatejsonclassifierrequesttypedef)
+- `CsvClassifier`:
+  [UpdateCsvClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecsvclassifierrequesttypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_column_statistics_for_partition
 
-Type annotations for `boto3.client("glue").update_column_statistics_for_partition` method.
+Type annotations for
+`boto3.client("glue").update_column_statistics_for_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition]
+Boto3 documentation:
+[Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
 
-```python
-def update_column_statistics_for_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValues: List[str],
-    ColumnStatisticsList: List["ColumnStatisticsTypeDef"],
-    CatalogId: str = None
-) -> UpdateColumnStatisticsForPartitionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `List`\[`str`\] *(required)*
+- `ColumnStatisticsList`:
+  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[UpdateColumnStatisticsForPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecolumnstatisticsforpartitionresponsetypedef).
 
 ### update_column_statistics_for_table
 
-Type annotations for `boto3.client("glue").update_column_statistics_for_table` method.
+Type annotations for `boto3.client("glue").update_column_statistics_for_table`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table]
+Boto3 documentation:
+[Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
 
-```python
-def update_column_statistics_for_table(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    ColumnStatisticsList: List["ColumnStatisticsTypeDef"],
-    CatalogId: str = None
-) -> UpdateColumnStatisticsForTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `ColumnStatisticsList`:
+  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[UpdateColumnStatisticsForTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecolumnstatisticsfortableresponsetypedef).
 
 ### update_connection
 
 Type annotations for `boto3.client("glue").update_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection]
+Boto3 documentation:
+[Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection)
 
-```python
-def update_connection(
-    self,
-    Name: str,
-    ConnectionInput: ConnectionInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ConnectionInput`:
+  [ConnectionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_crawler
 
 Type annotations for `boto3.client("glue").update_crawler` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler]
+Boto3 documentation:
+[Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler)
 
-```python
-def update_crawler(
-    self,
-    Name: str,
-    Role: str = None,
-    DatabaseName: str = None,
-    Description: str = None,
-    Targets: "CrawlerTargetsTypeDef" = None,
-    Schedule: str = None,
-    Classifiers: List[str] = None,
-    TablePrefix: str = None,
-    SchemaChangePolicy: "SchemaChangePolicyTypeDef" = None,
-    RecrawlPolicy: "RecrawlPolicyTypeDef" = None,
-    LineageConfiguration: "LineageConfigurationTypeDef" = None,
-    Configuration: str = None,
-    CrawlerSecurityConfiguration: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Role`: `str`
+- `DatabaseName`: `str`
+- `Description`: `str`
+- `Targets`:
+  [CrawlerTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertargetstypedef)
+- `Schedule`: `str`
+- `Classifiers`: `List`\[`str`\]
+- `TablePrefix`: `str`
+- `SchemaChangePolicy`:
+  [SchemaChangePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemachangepolicytypedef)
+- `RecrawlPolicy`:
+  [RecrawlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#recrawlpolicytypedef)
+- `LineageConfiguration`:
+  [LineageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lineageconfigurationtypedef)
+- `Configuration`: `str`
+- `CrawlerSecurityConfiguration`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_crawler_schedule
 
 Type annotations for `boto3.client("glue").update_crawler_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule]
+Boto3 documentation:
+[Glue.Client.update_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule)
 
-```python
-def update_crawler_schedule(
-    self,
-    CrawlerName: str,
-    Schedule: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CrawlerName`: `str` *(required)*
+- `Schedule`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_database
 
 Type annotations for `boto3.client("glue").update_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database]
+Boto3 documentation:
+[Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database)
 
-```python
-def update_database(
-    self,
-    Name: str,
-    DatabaseInput: DatabaseInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `DatabaseInput`:
+  [DatabaseInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseinputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_dev_endpoint
 
 Type annotations for `boto3.client("glue").update_dev_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint]
+Boto3 documentation:
+[Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint)
 
-```python
-def update_dev_endpoint(
-    self,
-    EndpointName: str,
-    PublicKey: str = None,
-    AddPublicKeys: List[str] = None,
-    DeletePublicKeys: List[str] = None,
-    CustomLibraries: DevEndpointCustomLibrariesTypeDef = None,
-    UpdateEtlLibraries: bool = None,
-    DeleteArguments: List[str] = None,
-    AddArguments: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `PublicKey`: `str`
+- `AddPublicKeys`: `List`\[`str`\]
+- `DeletePublicKeys`: `List`\[`str`\]
+- `CustomLibraries`:
+  [DevEndpointCustomLibrariesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#devendpointcustomlibrariestypedef)
+- `UpdateEtlLibraries`: `bool`
+- `DeleteArguments`: `List`\[`str`\]
+- `AddArguments`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_job
 
 Type annotations for `boto3.client("glue").update_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job]
+Boto3 documentation:
+[Glue.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job)
 
-```python
-def update_job(
-    self,
-    JobName: str,
-    JobUpdate: JobUpdateTypeDef
-) -> UpdateJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobName`: `str` *(required)*
+- `JobUpdate`:
+  [JobUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobupdatetypedef)
+  *(required)*
+
+Returns
+[UpdateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatejobresponsetypedef).
 
 ### update_ml_transform
 
 Type annotations for `boto3.client("glue").update_ml_transform` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform]
+Boto3 documentation:
+[Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform)
 
-```python
-def update_ml_transform(
-    self,
-    TransformId: str,
-    Name: str = None,
-    Description: str = None,
-    Parameters: "TransformParametersTypeDef" = None,
-    Role: str = None,
-    GlueVersion: str = None,
-    MaxCapacity: float = None,
-    WorkerType: WorkerType = None,
-    NumberOfWorkers: int = None,
-    Timeout: int = None,
-    MaxRetries: int = None
-) -> UpdateMLTransformResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TransformId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `Parameters`:
+  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+- `Role`: `str`
+- `GlueVersion`: `str`
+- `MaxCapacity`: `float`
+- `WorkerType`:
+  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `NumberOfWorkers`: `int`
+- `Timeout`: `int`
+- `MaxRetries`: `int`
+
+Returns
+[UpdateMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatemltransformresponsetypedef).
 
 ### update_partition
 
 Type annotations for `boto3.client("glue").update_partition` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition]
+Boto3 documentation:
+[Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition)
 
-```python
-def update_partition(
-    self,
-    DatabaseName: str,
-    TableName: str,
-    PartitionValueList: List[str],
-    PartitionInput: "PartitionInputTypeDef",
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValueList`: `List`\[`str`\] *(required)*
+- `PartitionInput`:
+  [PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_registry
 
 Type annotations for `boto3.client("glue").update_registry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry]
+Boto3 documentation:
+[Glue.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry)
 
-```python
-def update_registry(
-    self,
-    RegistryId: RegistryIdTypeDef,
-    Description: str
-) -> UpdateRegistryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `RegistryId`:
+  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+  *(required)*
+- `Description`: `str` *(required)*
+
+Returns
+[UpdateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateregistryresponsetypedef).
 
 ### update_schema
 
 Type annotations for `boto3.client("glue").update_schema` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema]
+Boto3 documentation:
+[Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema)
 
-```python
-def update_schema(
-    self,
-    SchemaId: "SchemaIdTypeDef",
-    SchemaVersionNumber: SchemaVersionNumberTypeDef = None,
-    Compatibility: Compatibility = None,
-    Description: str = None
-) -> UpdateSchemaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SchemaId`:
+  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+  *(required)*
+- `SchemaVersionNumber`:
+  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+- `Compatibility`:
+  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+- `Description`: `str`
+
+Returns
+[UpdateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateschemaresponsetypedef).
 
 ### update_table
 
 Type annotations for `boto3.client("glue").update_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table]
+Boto3 documentation:
+[Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table)
 
-```python
-def update_table(
-    self,
-    DatabaseName: str,
-    TableInput: TableInputTypeDef,
-    CatalogId: str = None,
-    SkipArchive: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `TableInput`:
+  [TableInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableinputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+- `SkipArchive`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_trigger
 
 Type annotations for `boto3.client("glue").update_trigger` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger]
+Boto3 documentation:
+[Glue.Client.update_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger)
 
-```python
-def update_trigger(
-    self,
-    Name: str,
-    TriggerUpdate: TriggerUpdateTypeDef
-) -> UpdateTriggerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `TriggerUpdate`:
+  [TriggerUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggerupdatetypedef)
+  *(required)*
+
+Returns
+[UpdateTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatetriggerresponsetypedef).
 
 ### update_user_defined_function
 
-Type annotations for `boto3.client("glue").update_user_defined_function` method.
+Type annotations for `boto3.client("glue").update_user_defined_function`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function]
+Boto3 documentation:
+[Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function)
 
-```python
-def update_user_defined_function(
-    self,
-    DatabaseName: str,
-    FunctionName: str,
-    FunctionInput: UserDefinedFunctionInputTypeDef,
-    CatalogId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DatabaseName`: `str` *(required)*
+- `FunctionName`: `str` *(required)*
+- `FunctionInput`:
+  [UserDefinedFunctionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctioninputtypedef)
+  *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_workflow
 
 Type annotations for `boto3.client("glue").update_workflow` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow]
+Boto3 documentation:
+[Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow)
 
-```python
-def update_workflow(
-    self,
-    Name: str,
-    Description: str = None,
-    DefaultRunProperties: Dict[str, str] = None,
-    MaxConcurrentRuns: int = None
-) -> UpdateWorkflowResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
+- `MaxConcurrentRuns`: `int`
 
+Returns
+[UpdateWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateworkflowresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("glue").get_paginator` method with overloads.
+Type annotations for `boto3.client("glue").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_classifiers")` -> [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
-- `client.get_paginator("get_connections")` -> [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
-- `client.get_paginator("get_crawler_metrics")` -> [GetCrawlerMetricsPaginator](./paginators.md#getcrawlermetricspaginator)
-- `client.get_paginator("get_crawlers")` -> [GetCrawlersPaginator](./paginators.md#getcrawlerspaginator)
-- `client.get_paginator("get_databases")` -> [GetDatabasesPaginator](./paginators.md#getdatabasespaginator)
-- `client.get_paginator("get_dev_endpoints")` -> [GetDevEndpointsPaginator](./paginators.md#getdevendpointspaginator)
-- `client.get_paginator("get_job_runs")` -> [GetJobRunsPaginator](./paginators.md#getjobrunspaginator)
-- `client.get_paginator("get_jobs")` -> [GetJobsPaginator](./paginators.md#getjobspaginator)
-- `client.get_paginator("get_partition_indexes")` -> [GetPartitionIndexesPaginator](./paginators.md#getpartitionindexespaginator)
-- `client.get_paginator("get_partitions")` -> [GetPartitionsPaginator](./paginators.md#getpartitionspaginator)
-- `client.get_paginator("get_resource_policies")` -> [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
-- `client.get_paginator("get_security_configurations")` -> [GetSecurityConfigurationsPaginator](./paginators.md#getsecurityconfigurationspaginator)
-- `client.get_paginator("get_table_versions")` -> [GetTableVersionsPaginator](./paginators.md#gettableversionspaginator)
-- `client.get_paginator("get_tables")` -> [GetTablesPaginator](./paginators.md#gettablespaginator)
-- `client.get_paginator("get_triggers")` -> [GetTriggersPaginator](./paginators.md#gettriggerspaginator)
-- `client.get_paginator("get_user_defined_functions")` -> [GetUserDefinedFunctionsPaginator](./paginators.md#getuserdefinedfunctionspaginator)
-- `client.get_paginator("list_registries")` -> [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
-- `client.get_paginator("list_schema_versions")` -> [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
-- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-
-
+- `client.get_paginator("get_classifiers")` ->
+  [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
+- `client.get_paginator("get_connections")` ->
+  [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_crawler_metrics")` ->
+  [GetCrawlerMetricsPaginator](./paginators.md#getcrawlermetricspaginator)
+- `client.get_paginator("get_crawlers")` ->
+  [GetCrawlersPaginator](./paginators.md#getcrawlerspaginator)
+- `client.get_paginator("get_databases")` ->
+  [GetDatabasesPaginator](./paginators.md#getdatabasespaginator)
+- `client.get_paginator("get_dev_endpoints")` ->
+  [GetDevEndpointsPaginator](./paginators.md#getdevendpointspaginator)
+- `client.get_paginator("get_job_runs")` ->
+  [GetJobRunsPaginator](./paginators.md#getjobrunspaginator)
+- `client.get_paginator("get_jobs")` ->
+  [GetJobsPaginator](./paginators.md#getjobspaginator)
+- `client.get_paginator("get_partition_indexes")` ->
+  [GetPartitionIndexesPaginator](./paginators.md#getpartitionindexespaginator)
+- `client.get_paginator("get_partitions")` ->
+  [GetPartitionsPaginator](./paginators.md#getpartitionspaginator)
+- `client.get_paginator("get_resource_policies")` ->
+  [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+- `client.get_paginator("get_security_configurations")` ->
+  [GetSecurityConfigurationsPaginator](./paginators.md#getsecurityconfigurationspaginator)
+- `client.get_paginator("get_table_versions")` ->
+  [GetTableVersionsPaginator](./paginators.md#gettableversionspaginator)
+- `client.get_paginator("get_tables")` ->
+  [GetTablesPaginator](./paginators.md#gettablespaginator)
+- `client.get_paginator("get_triggers")` ->
+  [GetTriggersPaginator](./paginators.md#gettriggerspaginator)
+- `client.get_paginator("get_user_defined_functions")` ->
+  [GetUserDefinedFunctionsPaginator](./paginators.md#getuserdefinedfunctionspaginator)
+- `client.get_paginator("list_registries")` ->
+  [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
+- `client.get_paginator("list_schema_versions")` ->
+  [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
+- `client.get_paginator("list_schemas")` ->
+  [ListSchemasPaginator](./paginators.md#listschemaspaginator)

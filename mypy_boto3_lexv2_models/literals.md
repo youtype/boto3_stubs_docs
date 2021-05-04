@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > Literals
 
-Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+Auto-generated documentation for
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+type annotations stubs module
+[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Literals for boto3 LexModelsV2 module](#literals-for-boto3-lexmodelsv2-module)
   - [BotAliasStatus](#botaliasstatus)

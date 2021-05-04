@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeStar
 
-Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+Auto-generated documentation for
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+type annotations stubs module
+[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 ```bash
 pip install mypy-boto3-codestar
@@ -19,7 +21,8 @@ pip install mypy-boto3-codestar
 
 ## CodeStarClient
 
-Type annotations for  `boto3.client("codestar")` as [CodeStarClient](./client.md)
+Type annotations for `boto3.client("codestar")` as
+[CodeStarClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codestar.client import CodeStarClient
 ```
 
-
 CodeStarClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_team_member](./client.md#associate-team-member)
 - [can_paginate](./client.md#can-paginate)
 - [create_project](./client.md#create-project)
@@ -55,10 +56,8 @@ CodeStarClient [exceptions](./client.md#exceptions)
 - [update_team_member](./client.md#update-team-member)
 - [update_user_profile](./client.md#update-user-profile)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [InvalidNextTokenException](./client.md#invalidnexttokenexception)
@@ -74,14 +73,10 @@ CodeStarClient [exceptions](./client.md#exceptions)
 - [UserProfileNotFoundException](./client.md#userprofilenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codestar").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codestar").get_paginator("...")`.
 
 Can be used directly:
 
@@ -93,11 +88,6 @@ from mypy_boto3_codestar.paginators import ListProjectsPaginator, ...
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 - [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
 - [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -114,13 +104,10 @@ from mypy_boto3_codestar.literals import ListProjectsPaginatorName, ...
 - [ListTeamMembersPaginatorName](./literals.md#listteammemberspaginatorname)
 - [ListUserProfilesPaginatorName](./literals.md#listuserprofilespaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

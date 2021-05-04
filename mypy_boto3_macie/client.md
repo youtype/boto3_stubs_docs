@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie](./README.md) > MacieClient
 
-Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+Auto-generated documentation for
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+type annotations stubs module
+[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [MacieClient for boto3 Macie module](#macieclient-for-boto3-macie-module)
   - [MacieClient](#macieclient)
@@ -33,12 +35,13 @@ def get_macie_client() -> MacieClient:
     return boto3.client("macie")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client)
+Boto3 documentation:
+[Macie.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_macie.client import Exceptions
@@ -46,7 +49,6 @@ from mypy_boto3_macie.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -56,152 +58,148 @@ Exceptions:
 - `Exceptions.InvalidInputException`
 - `Exceptions.LimitExceededException`
 
-
 ## Methods
-
 
 ### associate_member_account
 
 Type annotations for `boto3.client("macie").associate_member_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account]
+Boto3 documentation:
+[Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
 
-```python
-def associate_member_account(
-    self,
-    memberAccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `memberAccountId`: `str` *(required)*
 
 ### associate_s3_resources
 
 Type annotations for `boto3.client("macie").associate_s3_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources]
+Boto3 documentation:
+[Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
 
-```python
-def associate_s3_resources(
-    self,
-    s3Resources: List["S3ResourceClassificationTypeDef"],
-    memberAccountId: str = None
-) -> AssociateS3ResourcesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `s3Resources`:
+  `List`\[[S3ResourceClassificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourceclassificationtypedef)\]
+  *(required)*
+- `memberAccountId`: `str`
+
+Returns
+[AssociateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#associates3resourcesresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("macie").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.can_paginate]
+Boto3 documentation:
+[Macie.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### disassociate_member_account
 
-Type annotations for `boto3.client("macie").disassociate_member_account` method.
+Type annotations for `boto3.client("macie").disassociate_member_account`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account]
+Boto3 documentation:
+[Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
 
-```python
-def disassociate_member_account(
-    self,
-    memberAccountId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `memberAccountId`: `str` *(required)*
 
 ### disassociate_s3_resources
 
 Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources]
+Boto3 documentation:
+[Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
 
-```python
-def disassociate_s3_resources(
-    self,
-    associatedS3Resources: List["S3ResourceTypeDef"],
-    memberAccountId: str = None
-) -> DisassociateS3ResourcesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `associatedS3Resources`:
+  `List`\[[S3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourcetypedef)\]
+  *(required)*
+- `memberAccountId`: `str`
+
+Returns
+[DisassociateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#disassociates3resourcesresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("macie").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.generate_presigned_url]
+Boto3 documentation:
+[Macie.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_member_accounts
 
 Type annotations for `boto3.client("macie").list_member_accounts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts]
+Boto3 documentation:
+[Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
 
-```python
-def list_member_accounts(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListMemberAccountsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListMemberAccountsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#listmemberaccountsresulttypedef).
 
 ### list_s3_resources
 
 Type annotations for `boto3.client("macie").list_s3_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources]
+Boto3 documentation:
+[Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
 
-```python
-def list_s3_resources(
-    self,
-    memberAccountId: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListS3ResourcesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `memberAccountId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#lists3resourcesresulttypedef).
 
 ### update_s3_resources
 
 Type annotations for `boto3.client("macie").update_s3_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources]
+Boto3 documentation:
+[Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
 
-```python
-def update_s3_resources(
-    self,
-    s3ResourcesUpdate: List[S3ResourceClassificationUpdateTypeDef],
-    memberAccountId: str = None
-) -> UpdateS3ResourcesResultTypeDef:
-    pass
-```
+Arguments:
 
+- `s3ResourcesUpdate`:
+  `List`\[[S3ResourceClassificationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourceclassificationupdatetypedef)\]
+  *(required)*
+- `memberAccountId`: `str`
 
+Returns
+[UpdateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#updates3resourcesresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("macie").get_paginator` method with overloads.
+Type annotations for `boto3.client("macie").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_member_accounts")` -> [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
-- `client.get_paginator("list_s3_resources")` -> [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)
-
-
+- `client.get_paginator("list_member_accounts")` ->
+  [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+- `client.get_paginator("list_s3_resources")` ->
+  [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)

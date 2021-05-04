@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Organizations](./README.md) > Paginators
 
-Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+Auto-generated documentation for
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+type annotations stubs module
+[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Paginators for boto3 Organizations module](#paginators-for-boto3-organizations-module)
   - [ListAWSServiceAccessForOrganizationPaginator](#listawsserviceaccessfororganizationpaginator)
@@ -25,7 +27,8 @@ type annotations stubs module [mypy_boto3_organizations](https://pypi.org/projec
 
 ## ListAWSServiceAccessForOrganizationPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")`.
 
 Can be used directly:
 
@@ -36,19 +39,21 @@ def get_list_aws_service_access_for_organization_paginator() -> ListAWSServiceAc
     return boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
+Boto3 documentation:
+[Organizations.Paginator.ListAWSServiceAccessForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
 
-```python
-class ListAWSServiceAccessForOrganizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAWSServiceAccessForOrganizationResponseTypeDef]:
-        pass
-```
+Arguments for `ListAWSServiceAccessForOrganizationPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListAWSServiceAccessForOrganizationPaginator.paginate` returns
+`Iterator`\[[ListAWSServiceAccessForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listawsserviceaccessfororganizationresponsetypedef)\].
+
 ## ListAccountsPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_accounts")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_accounts")`.
 
 Can be used directly:
 
@@ -59,19 +64,21 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("organizations").get_paginator("list_accounts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
+Boto3 documentation:
+[Organizations.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
 
-```python
-class ListAccountsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAccountsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAccountsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListAccountsPaginator.paginate` returns
+`Iterator`\[[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listaccountsresponsetypedef)\].
+
 ## ListAccountsForParentPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_accounts_for_parent")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_accounts_for_parent")`.
 
 Can be used directly:
 
@@ -82,20 +89,22 @@ def get_list_accounts_for_parent_paginator() -> ListAccountsForParentPaginator:
     return boto3.client("organizations").get_paginator("list_accounts_for_parent")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
+Boto3 documentation:
+[Organizations.Paginator.ListAccountsForParent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
 
-```python
-class ListAccountsForParentPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParentId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAccountsForParentResponseTypeDef]:
-        pass
-```
+Arguments for `ListAccountsForParentPaginator.paginate` method:
+
+- `ParentId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListAccountsForParentPaginator.paginate` returns
+`Iterator`\[[ListAccountsForParentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listaccountsforparentresponsetypedef)\].
+
 ## ListChildrenPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_children")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_children")`.
 
 Can be used directly:
 
@@ -106,21 +115,25 @@ def get_list_children_paginator() -> ListChildrenPaginator:
     return boto3.client("organizations").get_paginator("list_children")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
+Boto3 documentation:
+[Organizations.Paginator.ListChildren](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
 
-```python
-class ListChildrenPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParentId: str,
-        ChildType: ChildType,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListChildrenResponseTypeDef]:
-        pass
-```
+Arguments for `ListChildrenPaginator.paginate` method:
+
+- `ParentId`: `str` *(required)*
+- `ChildType`:
+  [ChildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#childtype)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListChildrenPaginator.paginate` returns
+`Iterator`\[[ListChildrenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listchildrenresponsetypedef)\].
+
 ## ListCreateAccountStatusPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_create_account_status")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_create_account_status")`.
 
 Can be used directly:
 
@@ -131,20 +144,23 @@ def get_list_create_account_status_paginator() -> ListCreateAccountStatusPaginat
     return boto3.client("organizations").get_paginator("list_create_account_status")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
+Boto3 documentation:
+[Organizations.Paginator.ListCreateAccountStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
 
-```python
-class ListCreateAccountStatusPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        States: List[CreateAccountState] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCreateAccountStatusResponseTypeDef]:
-        pass
-```
+Arguments for `ListCreateAccountStatusPaginator.paginate` method:
+
+- `States`:
+  `List`\[[CreateAccountState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#createaccountstate)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListCreateAccountStatusPaginator.paginate` returns
+`Iterator`\[[ListCreateAccountStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listcreateaccountstatusresponsetypedef)\].
+
 ## ListDelegatedAdministratorsPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_delegated_administrators")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_delegated_administrators")`.
 
 Can be used directly:
 
@@ -155,20 +171,22 @@ def get_list_delegated_administrators_paginator() -> ListDelegatedAdministrators
     return boto3.client("organizations").get_paginator("list_delegated_administrators")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
+Boto3 documentation:
+[Organizations.Paginator.ListDelegatedAdministrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
 
-```python
-class ListDelegatedAdministratorsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ServicePrincipal: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDelegatedAdministratorsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDelegatedAdministratorsPaginator.paginate` method:
+
+- `ServicePrincipal`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListDelegatedAdministratorsPaginator.paginate` returns
+`Iterator`\[[ListDelegatedAdministratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listdelegatedadministratorsresponsetypedef)\].
+
 ## ListDelegatedServicesForAccountPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_delegated_services_for_account")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_delegated_services_for_account")`.
 
 Can be used directly:
 
@@ -179,20 +197,22 @@ def get_list_delegated_services_for_account_paginator() -> ListDelegatedServices
     return boto3.client("organizations").get_paginator("list_delegated_services_for_account")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
+Boto3 documentation:
+[Organizations.Paginator.ListDelegatedServicesForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
 
-```python
-class ListDelegatedServicesForAccountPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AccountId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDelegatedServicesForAccountResponseTypeDef]:
-        pass
-```
+Arguments for `ListDelegatedServicesForAccountPaginator.paginate` method:
+
+- `AccountId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListDelegatedServicesForAccountPaginator.paginate` returns
+`Iterator`\[[ListDelegatedServicesForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listdelegatedservicesforaccountresponsetypedef)\].
+
 ## ListHandshakesForAccountPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_handshakes_for_account")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_handshakes_for_account")`.
 
 Can be used directly:
 
@@ -203,20 +223,23 @@ def get_list_handshakes_for_account_paginator() -> ListHandshakesForAccountPagin
     return boto3.client("organizations").get_paginator("list_handshakes_for_account")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
+Boto3 documentation:
+[Organizations.Paginator.ListHandshakesForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
 
-```python
-class ListHandshakesForAccountPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filter: HandshakeFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListHandshakesForAccountResponseTypeDef]:
-        pass
-```
+Arguments for `ListHandshakesForAccountPaginator.paginate` method:
+
+- `Filter`:
+  [HandshakeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakefiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListHandshakesForAccountPaginator.paginate` returns
+`Iterator`\[[ListHandshakesForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listhandshakesforaccountresponsetypedef)\].
+
 ## ListHandshakesForOrganizationPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_handshakes_for_organization")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_handshakes_for_organization")`.
 
 Can be used directly:
 
@@ -227,20 +250,23 @@ def get_list_handshakes_for_organization_paginator() -> ListHandshakesForOrganiz
     return boto3.client("organizations").get_paginator("list_handshakes_for_organization")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
+Boto3 documentation:
+[Organizations.Paginator.ListHandshakesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
 
-```python
-class ListHandshakesForOrganizationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filter: HandshakeFilterTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListHandshakesForOrganizationResponseTypeDef]:
-        pass
-```
+Arguments for `ListHandshakesForOrganizationPaginator.paginate` method:
+
+- `Filter`:
+  [HandshakeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakefiltertypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListHandshakesForOrganizationPaginator.paginate` returns
+`Iterator`\[[ListHandshakesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listhandshakesfororganizationresponsetypedef)\].
+
 ## ListOrganizationalUnitsForParentPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_organizational_units_for_parent")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_organizational_units_for_parent")`.
 
 Can be used directly:
 
@@ -251,20 +277,22 @@ def get_list_organizational_units_for_parent_paginator() -> ListOrganizationalUn
     return boto3.client("organizations").get_paginator("list_organizational_units_for_parent")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
+Boto3 documentation:
+[Organizations.Paginator.ListOrganizationalUnitsForParent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
 
-```python
-class ListOrganizationalUnitsForParentPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ParentId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListOrganizationalUnitsForParentResponseTypeDef]:
-        pass
-```
+Arguments for `ListOrganizationalUnitsForParentPaginator.paginate` method:
+
+- `ParentId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListOrganizationalUnitsForParentPaginator.paginate` returns
+`Iterator`\[[ListOrganizationalUnitsForParentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listorganizationalunitsforparentresponsetypedef)\].
+
 ## ListParentsPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_parents")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_parents")`.
 
 Can be used directly:
 
@@ -275,20 +303,22 @@ def get_list_parents_paginator() -> ListParentsPaginator:
     return boto3.client("organizations").get_paginator("list_parents")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
+Boto3 documentation:
+[Organizations.Paginator.ListParents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
 
-```python
-class ListParentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ChildId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListParentsResponseTypeDef]:
-        pass
-```
+Arguments for `ListParentsPaginator.paginate` method:
+
+- `ChildId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListParentsPaginator.paginate` returns
+`Iterator`\[[ListParentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listparentsresponsetypedef)\].
+
 ## ListPoliciesPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_policies")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_policies")`.
 
 Can be used directly:
 
@@ -299,20 +329,24 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("organizations").get_paginator("list_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
+Boto3 documentation:
+[Organizations.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
 
-```python
-class ListPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filter: PolicyType,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListPoliciesPaginator.paginate` method:
+
+- `Filter`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListPoliciesPaginator.paginate` returns
+`Iterator`\[[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listpoliciesresponsetypedef)\].
+
 ## ListPoliciesForTargetPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_policies_for_target")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_policies_for_target")`.
 
 Can be used directly:
 
@@ -323,21 +357,25 @@ def get_list_policies_for_target_paginator() -> ListPoliciesForTargetPaginator:
     return boto3.client("organizations").get_paginator("list_policies_for_target")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
+Boto3 documentation:
+[Organizations.Paginator.ListPoliciesForTarget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
 
-```python
-class ListPoliciesForTargetPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        TargetId: str,
-        Filter: PolicyType,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPoliciesForTargetResponseTypeDef]:
-        pass
-```
+Arguments for `ListPoliciesForTargetPaginator.paginate` method:
+
+- `TargetId`: `str` *(required)*
+- `Filter`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListPoliciesForTargetPaginator.paginate` returns
+`Iterator`\[[ListPoliciesForTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listpoliciesfortargetresponsetypedef)\].
+
 ## ListRootsPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_roots")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_roots")`.
 
 Can be used directly:
 
@@ -348,19 +386,21 @@ def get_list_roots_paginator() -> ListRootsPaginator:
     return boto3.client("organizations").get_paginator("list_roots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
+Boto3 documentation:
+[Organizations.Paginator.ListRoots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
 
-```python
-class ListRootsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRootsResponseTypeDef]:
-        pass
-```
+Arguments for `ListRootsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListRootsPaginator.paginate` returns
+`Iterator`\[[ListRootsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listrootsresponsetypedef)\].
+
 ## ListTagsForResourcePaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_tags_for_resource")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_tags_for_resource")`.
 
 Can be used directly:
 
@@ -371,20 +411,22 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("organizations").get_paginator("list_tags_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
+Boto3 documentation:
+[Organizations.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
 
-```python
-class ListTagsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsForResourcePaginator.paginate` method:
+
+- `ResourceId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsForResourcePaginator.paginate` returns
+`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listtagsforresourceresponsetypedef)\].
+
 ## ListTargetsForPolicyPaginator
 
-Type annotations for `boto3.client("organizations").get_paginator("list_targets_for_policy")`.
+Type annotations for
+`boto3.client("organizations").get_paginator("list_targets_for_policy")`.
 
 Can be used directly:
 
@@ -395,14 +437,14 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return boto3.client("organizations").get_paginator("list_targets_for_policy")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
+Boto3 documentation:
+[Organizations.Paginator.ListTargetsForPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
 
-```python
-class ListTargetsForPolicyPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PolicyId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTargetsForPolicyResponseTypeDef]:
-        pass
-```
+Arguments for `ListTargetsForPolicyPaginator.paginate` method:
+
+- `PolicyId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#paginatorconfigtypedef)
+
+`ListTargetsForPolicyPaginator.paginate` returns
+`Iterator`\[[ListTargetsForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#listtargetsforpolicyresponsetypedef)\].

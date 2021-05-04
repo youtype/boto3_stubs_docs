@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > KinesisVideoMedia
 
-Auto-generated documentation for [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
-type annotations stubs module [mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+Auto-generated documentation for
+[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+type annotations stubs module
+[mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 ```bash
 pip install mypy-boto3-kinesis-video-media
@@ -18,7 +20,8 @@ pip install mypy-boto3-kinesis-video-media
 
 ## KinesisVideoMediaClient
 
-Type annotations for  `boto3.client("kinesis-video-media")` as [KinesisVideoMediaClient](./client.md)
+Type annotations for `boto3.client("kinesis-video-media")` as
+[KinesisVideoMediaClient](./client.md)
 
 Can be used directly:
 
@@ -26,20 +29,16 @@ Can be used directly:
 from mypy_boto3_kinesis_video_media.client import KinesisVideoMediaClient
 ```
 
-
 KinesisVideoMediaClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [get_media](./client.md#get-media)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ClientLimitExceededException](./client.md#clientlimitexceededexception)
 - [ConnectionLimitExceededException](./client.md#connectionlimitexceededexception)
@@ -47,15 +46,6 @@ KinesisVideoMediaClient [exceptions](./client.md#exceptions)
 - [InvalidEndpointException](./client.md#invalidendpointexception)
 - [NotAuthorizedException](./client.md#notauthorizedexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -69,13 +59,10 @@ from mypy_boto3_kinesis_video_media.literals import StartSelectorType, ...
 
 - [StartSelectorType](./literals.md#startselectortype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

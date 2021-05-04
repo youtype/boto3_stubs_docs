@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LicenseManager](./README.md) > Paginators
 
-Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
-type annotations stubs module [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+Auto-generated documentation for
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+type annotations stubs module
+[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [Paginators for boto3 LicenseManager module](#paginators-for-boto3-licensemanager-module)
   - [ListAssociationsForLicenseConfigurationPaginator](#listassociationsforlicenseconfigurationpaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_license_manager](https://pypi.org/proj
 
 ## ListAssociationsForLicenseConfigurationPaginator
 
-Type annotations for `boto3.client("license-manager").get_paginator("list_associations_for_license_configuration")`.
+Type annotations for
+`boto3.client("license-manager").get_paginator("list_associations_for_license_configuration")`.
 
 Can be used directly:
 
@@ -25,20 +28,23 @@ def get_list_associations_for_license_configuration_paginator() -> ListAssociati
     return boto3.client("license-manager").get_paginator("list_associations_for_license_configuration")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
+Boto3 documentation:
+[LicenseManager.Paginator.ListAssociationsForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
 
-```python
-class ListAssociationsForLicenseConfigurationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LicenseConfigurationArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssociationsForLicenseConfigurationResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssociationsForLicenseConfigurationPaginator.paginate`
+method:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#paginatorconfigtypedef)
+
+`ListAssociationsForLicenseConfigurationPaginator.paginate` returns
+`Iterator`\[[ListAssociationsForLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listassociationsforlicenseconfigurationresponsetypedef)\].
+
 ## ListLicenseConfigurationsPaginator
 
-Type annotations for `boto3.client("license-manager").get_paginator("list_license_configurations")`.
+Type annotations for
+`boto3.client("license-manager").get_paginator("list_license_configurations")`.
 
 Can be used directly:
 
@@ -49,21 +55,24 @@ def get_list_license_configurations_paginator() -> ListLicenseConfigurationsPagi
     return boto3.client("license-manager").get_paginator("list_license_configurations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
+Boto3 documentation:
+[LicenseManager.Paginator.ListLicenseConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
 
-```python
-class ListLicenseConfigurationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LicenseConfigurationArns: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListLicenseConfigurationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListLicenseConfigurationsPaginator.paginate` method:
+
+- `LicenseConfigurationArns`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#paginatorconfigtypedef)
+
+`ListLicenseConfigurationsPaginator.paginate` returns
+`Iterator`\[[ListLicenseConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicenseconfigurationsresponsetypedef)\].
+
 ## ListLicenseSpecificationsForResourcePaginator
 
-Type annotations for `boto3.client("license-manager").get_paginator("list_license_specifications_for_resource")`.
+Type annotations for
+`boto3.client("license-manager").get_paginator("list_license_specifications_for_resource")`.
 
 Can be used directly:
 
@@ -74,20 +83,22 @@ def get_list_license_specifications_for_resource_paginator() -> ListLicenseSpeci
     return boto3.client("license-manager").get_paginator("list_license_specifications_for_resource")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
+Boto3 documentation:
+[LicenseManager.Paginator.ListLicenseSpecificationsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
 
-```python
-class ListLicenseSpecificationsForResourcePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListLicenseSpecificationsForResourceResponseTypeDef]:
-        pass
-```
+Arguments for `ListLicenseSpecificationsForResourcePaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#paginatorconfigtypedef)
+
+`ListLicenseSpecificationsForResourcePaginator.paginate` returns
+`Iterator`\[[ListLicenseSpecificationsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listlicensespecificationsforresourceresponsetypedef)\].
+
 ## ListResourceInventoryPaginator
 
-Type annotations for `boto3.client("license-manager").get_paginator("list_resource_inventory")`.
+Type annotations for
+`boto3.client("license-manager").get_paginator("list_resource_inventory")`.
 
 Can be used directly:
 
@@ -98,20 +109,23 @@ def get_list_resource_inventory_paginator() -> ListResourceInventoryPaginator:
     return boto3.client("license-manager").get_paginator("list_resource_inventory")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
+Boto3 documentation:
+[LicenseManager.Paginator.ListResourceInventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
 
-```python
-class ListResourceInventoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[InventoryFilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListResourceInventoryResponseTypeDef]:
-        pass
-```
+Arguments for `ListResourceInventoryPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#inventoryfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#paginatorconfigtypedef)
+
+`ListResourceInventoryPaginator.paginate` returns
+`Iterator`\[[ListResourceInventoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listresourceinventoryresponsetypedef)\].
+
 ## ListUsageForLicenseConfigurationPaginator
 
-Type annotations for `boto3.client("license-manager").get_paginator("list_usage_for_license_configuration")`.
+Type annotations for
+`boto3.client("license-manager").get_paginator("list_usage_for_license_configuration")`.
 
 Can be used directly:
 
@@ -122,15 +136,16 @@ def get_list_usage_for_license_configuration_paginator() -> ListUsageForLicenseC
     return boto3.client("license-manager").get_paginator("list_usage_for_license_configuration")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
+Boto3 documentation:
+[LicenseManager.Paginator.ListUsageForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
 
-```python
-class ListUsageForLicenseConfigurationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        LicenseConfigurationArn: str,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListUsageForLicenseConfigurationResponseTypeDef]:
-        pass
-```
+Arguments for `ListUsageForLicenseConfigurationPaginator.paginate` method:
+
+- `LicenseConfigurationArn`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#paginatorconfigtypedef)
+
+`ListUsageForLicenseConfigurationPaginator.paginate` returns
+`Iterator`\[[ListUsageForLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#listusageforlicenseconfigurationresponsetypedef)\].

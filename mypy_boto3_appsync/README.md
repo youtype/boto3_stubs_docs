@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AppSync
 
-Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
-type annotations stubs module [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+Auto-generated documentation for
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+type annotations stubs module
+[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 ```bash
 pip install mypy-boto3-appsync
@@ -19,7 +21,7 @@ pip install mypy-boto3-appsync
 
 ## AppSyncClient
 
-Type annotations for  `boto3.client("appsync")` as [AppSyncClient](./client.md)
+Type annotations for `boto3.client("appsync")` as [AppSyncClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_appsync.client import AppSyncClient
 ```
 
-
 AppSyncClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_api_cache](./client.md#create-api-cache)
 - [create_api_key](./client.md#create-api-key)
@@ -78,10 +78,8 @@ AppSyncClient [exceptions](./client.md#exceptions)
 - [update_resolver](./client.md#update-resolver)
 - [update_type](./client.md#update-type)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ApiKeyLimitExceededException](./client.md#apikeylimitexceededexception)
 - [ApiKeyValidityOutOfBoundsException](./client.md#apikeyvalidityoutofboundsexception)
@@ -95,14 +93,10 @@ AppSyncClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("appsync").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("appsync").get_paginator("...")`.
 
 Can be used directly:
 
@@ -117,11 +111,6 @@ from mypy_boto3_appsync.paginators import ListApiKeysPaginator, ...
 - [ListResolversPaginator](./paginators.md#listresolverspaginator)
 - [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
 - [ListTypesPaginator](./paginators.md#listtypespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -156,13 +145,10 @@ from mypy_boto3_appsync.literals import ApiCacheStatus, ...
 - [SchemaStatus](./literals.md#schemastatus)
 - [TypeDefinitionFormat](./literals.md#typedefinitionformat)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

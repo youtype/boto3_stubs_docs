@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoT](./README.md) > Literals
 
-Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
-type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+Auto-generated documentation for
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+type annotations stubs module
+[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
 - [Literals for boto3 IoT module](#literals-for-boto3-iot-module)
   - [AbortAction](#abortaction)

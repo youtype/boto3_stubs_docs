@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Personalize](./README.md) > Paginators
 
-Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+Auto-generated documentation for
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+type annotations stubs module
+[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Paginators for boto3 Personalize module](#paginators-for-boto3-personalize-module)
   - [ListBatchInferenceJobsPaginator](#listbatchinferencejobspaginator)
@@ -21,7 +23,8 @@ type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/
 
 ## ListBatchInferenceJobsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_batch_inference_jobs")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_batch_inference_jobs")`.
 
 Can be used directly:
 
@@ -32,20 +35,22 @@ def get_list_batch_inference_jobs_paginator() -> ListBatchInferenceJobsPaginator
     return boto3.client("personalize").get_paginator("list_batch_inference_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
+Boto3 documentation:
+[Personalize.Paginator.ListBatchInferenceJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
 
-```python
-class ListBatchInferenceJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        solutionVersionArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBatchInferenceJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListBatchInferenceJobsPaginator.paginate` method:
+
+- `solutionVersionArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListBatchInferenceJobsPaginator.paginate` returns
+`Iterator`\[[ListBatchInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listbatchinferencejobsresponsetypedef)\].
+
 ## ListCampaignsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_campaigns")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_campaigns")`.
 
 Can be used directly:
 
@@ -56,20 +61,22 @@ def get_list_campaigns_paginator() -> ListCampaignsPaginator:
     return boto3.client("personalize").get_paginator("list_campaigns")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
+Boto3 documentation:
+[Personalize.Paginator.ListCampaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
 
-```python
-class ListCampaignsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        solutionArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCampaignsResponseTypeDef]:
-        pass
-```
+Arguments for `ListCampaignsPaginator.paginate` method:
+
+- `solutionArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListCampaignsPaginator.paginate` returns
+`Iterator`\[[ListCampaignsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listcampaignsresponsetypedef)\].
+
 ## ListDatasetExportJobsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_dataset_export_jobs")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_dataset_export_jobs")`.
 
 Can be used directly:
 
@@ -80,20 +87,22 @@ def get_list_dataset_export_jobs_paginator() -> ListDatasetExportJobsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_export_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
+Boto3 documentation:
+[Personalize.Paginator.ListDatasetExportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
 
-```python
-class ListDatasetExportJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDatasetExportJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDatasetExportJobsPaginator.paginate` method:
+
+- `datasetArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListDatasetExportJobsPaginator.paginate` returns
+`Iterator`\[[ListDatasetExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetexportjobsresponsetypedef)\].
+
 ## ListDatasetGroupsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_dataset_groups")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_dataset_groups")`.
 
 Can be used directly:
 
@@ -104,19 +113,21 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
+Boto3 documentation:
+[Personalize.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
 
-```python
-class ListDatasetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDatasetGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDatasetGroupsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListDatasetGroupsPaginator.paginate` returns
+`Iterator`\[[ListDatasetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetgroupsresponsetypedef)\].
+
 ## ListDatasetImportJobsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_dataset_import_jobs")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_dataset_import_jobs")`.
 
 Can be used directly:
 
@@ -127,20 +138,22 @@ def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_import_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
+Boto3 documentation:
+[Personalize.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
 
-```python
-class ListDatasetImportJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDatasetImportJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDatasetImportJobsPaginator.paginate` method:
+
+- `datasetArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListDatasetImportJobsPaginator.paginate` returns
+`Iterator`\[[ListDatasetImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetimportjobsresponsetypedef)\].
+
 ## ListDatasetsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_datasets")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_datasets")`.
 
 Can be used directly:
 
@@ -151,20 +164,22 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("personalize").get_paginator("list_datasets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
+Boto3 documentation:
+[Personalize.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
 
-```python
-class ListDatasetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetGroupArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDatasetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDatasetsPaginator.paginate` method:
+
+- `datasetGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListDatasetsPaginator.paginate` returns
+`Iterator`\[[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listdatasetsresponsetypedef)\].
+
 ## ListEventTrackersPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_event_trackers")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_event_trackers")`.
 
 Can be used directly:
 
@@ -175,20 +190,22 @@ def get_list_event_trackers_paginator() -> ListEventTrackersPaginator:
     return boto3.client("personalize").get_paginator("list_event_trackers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
+Boto3 documentation:
+[Personalize.Paginator.ListEventTrackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
 
-```python
-class ListEventTrackersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetGroupArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListEventTrackersResponseTypeDef]:
-        pass
-```
+Arguments for `ListEventTrackersPaginator.paginate` method:
+
+- `datasetGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListEventTrackersPaginator.paginate` returns
+`Iterator`\[[ListEventTrackersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listeventtrackersresponsetypedef)\].
+
 ## ListFiltersPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_filters")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_filters")`.
 
 Can be used directly:
 
@@ -199,20 +216,22 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
     return boto3.client("personalize").get_paginator("list_filters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListFilters)
+Boto3 documentation:
+[Personalize.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListFilters)
 
-```python
-class ListFiltersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetGroupArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFiltersResponseTypeDef]:
-        pass
-```
+Arguments for `ListFiltersPaginator.paginate` method:
+
+- `datasetGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListFiltersPaginator.paginate` returns
+`Iterator`\[[ListFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listfiltersresponsetypedef)\].
+
 ## ListRecipesPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_recipes")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_recipes")`.
 
 Can be used directly:
 
@@ -223,20 +242,22 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
     return boto3.client("personalize").get_paginator("list_recipes")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
+Boto3 documentation:
+[Personalize.Paginator.ListRecipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
 
-```python
-class ListRecipesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        recipeProvider: Literal['SERVICE'] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRecipesResponseTypeDef]:
-        pass
-```
+Arguments for `ListRecipesPaginator.paginate` method:
+
+- `recipeProvider`: `Literal['SERVICE']`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListRecipesPaginator.paginate` returns
+`Iterator`\[[ListRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listrecipesresponsetypedef)\].
+
 ## ListSchemasPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_schemas")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_schemas")`.
 
 Can be used directly:
 
@@ -247,19 +268,21 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("personalize").get_paginator("list_schemas")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
+Boto3 documentation:
+[Personalize.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
 
-```python
-class ListSchemasPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSchemasResponseTypeDef]:
-        pass
-```
+Arguments for `ListSchemasPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListSchemasPaginator.paginate` returns
+`Iterator`\[[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listschemasresponsetypedef)\].
+
 ## ListSolutionVersionsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_solution_versions")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_solution_versions")`.
 
 Can be used directly:
 
@@ -270,20 +293,22 @@ def get_list_solution_versions_paginator() -> ListSolutionVersionsPaginator:
     return boto3.client("personalize").get_paginator("list_solution_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
+Boto3 documentation:
+[Personalize.Paginator.ListSolutionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
 
-```python
-class ListSolutionVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        solutionArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSolutionVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListSolutionVersionsPaginator.paginate` method:
+
+- `solutionArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListSolutionVersionsPaginator.paginate` returns
+`Iterator`\[[ListSolutionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listsolutionversionsresponsetypedef)\].
+
 ## ListSolutionsPaginator
 
-Type annotations for `boto3.client("personalize").get_paginator("list_solutions")`.
+Type annotations for
+`boto3.client("personalize").get_paginator("list_solutions")`.
 
 Can be used directly:
 
@@ -294,14 +319,14 @@ def get_list_solutions_paginator() -> ListSolutionsPaginator:
     return boto3.client("personalize").get_paginator("list_solutions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
+Boto3 documentation:
+[Personalize.Paginator.ListSolutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
 
-```python
-class ListSolutionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        datasetGroupArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSolutionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListSolutionsPaginator.paginate` method:
+
+- `datasetGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#paginatorconfigtypedef)
+
+`ListSolutionsPaginator.paginate` returns
+`Iterator`\[[ListSolutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#listsolutionsresponsetypedef)\].

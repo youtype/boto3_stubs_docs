@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Macie2](./README.md) > Paginators
 
-Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+Auto-generated documentation for
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+type annotations stubs module
+[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Paginators for boto3 Macie2 module](#paginators-for-boto3-macie2-module)
   - [DescribeBucketsPaginator](#describebucketspaginator)
@@ -18,7 +20,8 @@ type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-
 
 ## DescribeBucketsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("describe_buckets")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("describe_buckets")`.
 
 Can be used directly:
 
@@ -29,21 +32,25 @@ def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
     return boto3.client("macie2").get_paginator("describe_buckets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
+Boto3 documentation:
+[Macie2.Paginator.DescribeBuckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
 
-```python
-class DescribeBucketsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        criteria: Dict[str, BucketCriteriaAdditionalPropertiesTypeDef] = None,
-        sortCriteria: BucketSortCriteriaTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeBucketsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeBucketsPaginator.paginate` method:
+
+- `criteria`: `Dict`\[`str`,
+  [BucketCriteriaAdditionalPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcriteriaadditionalpropertiestypedef)\]
+- `sortCriteria`:
+  [BucketSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketsortcriteriatypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`DescribeBucketsPaginator.paginate` returns
+`Iterator`\[[DescribeBucketsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#describebucketsresponsetypedef)\].
+
 ## GetUsageStatisticsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("get_usage_statistics")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("get_usage_statistics")`.
 
 Can be used directly:
 
@@ -54,22 +61,27 @@ def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
     return boto3.client("macie2").get_paginator("get_usage_statistics")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
+Boto3 documentation:
+[Macie2.Paginator.GetUsageStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
 
-```python
-class GetUsageStatisticsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filterBy: List[UsageStatisticsFilterTypeDef] = None,
-        sortBy: UsageStatisticsSortByTypeDef = None,
-        timeRange: TimeRange = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetUsageStatisticsResponseTypeDef]:
-        pass
-```
+Arguments for `GetUsageStatisticsPaginator.paginate` method:
+
+- `filterBy`:
+  `List`\[[UsageStatisticsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticsfiltertypedef)\]
+- `sortBy`:
+  [UsageStatisticsSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticssortbytypedef)
+- `timeRange`:
+  [TimeRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#timerange)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`GetUsageStatisticsPaginator.paginate` returns
+`Iterator`\[[GetUsageStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getusagestatisticsresponsetypedef)\].
+
 ## ListClassificationJobsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_classification_jobs")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("list_classification_jobs")`.
 
 Can be used directly:
 
@@ -80,21 +92,25 @@ def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
     return boto3.client("macie2").get_paginator("list_classification_jobs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
+Boto3 documentation:
+[Macie2.Paginator.ListClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
 
-```python
-class ListClassificationJobsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filterCriteria: ListJobsFilterCriteriaTypeDef = None,
-        sortCriteria: ListJobsSortCriteriaTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListClassificationJobsResponseTypeDef]:
-        pass
-```
+Arguments for `ListClassificationJobsPaginator.paginate` method:
+
+- `filterCriteria`:
+  [ListJobsFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobsfiltercriteriatypedef)
+- `sortCriteria`:
+  [ListJobsSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobssortcriteriatypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListClassificationJobsPaginator.paginate` returns
+`Iterator`\[[ListClassificationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listclassificationjobsresponsetypedef)\].
+
 ## ListCustomDataIdentifiersPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_custom_data_identifiers")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("list_custom_data_identifiers")`.
 
 Can be used directly:
 
@@ -105,16 +121,17 @@ def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPag
     return boto3.client("macie2").get_paginator("list_custom_data_identifiers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
+Boto3 documentation:
+[Macie2.Paginator.ListCustomDataIdentifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
 
-```python
-class ListCustomDataIdentifiersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomDataIdentifiersResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomDataIdentifiersPaginator.paginate` returns
+`Iterator`\[[ListCustomDataIdentifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listcustomdataidentifiersresponsetypedef)\].
+
 ## ListFindingsPaginator
 
 Type annotations for `boto3.client("macie2").get_paginator("list_findings")`.
@@ -128,21 +145,25 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("macie2").get_paginator("list_findings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
+Boto3 documentation:
+[Macie2.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
 
-```python
-class ListFindingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        findingCriteria: "FindingCriteriaTypeDef" = None,
-        sortCriteria: SortCriteriaTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFindingsResponseTypeDef]:
-        pass
-```
+Arguments for `ListFindingsPaginator.paginate` method:
+
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
+- `sortCriteria`:
+  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sortcriteriatypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListFindingsPaginator.paginate` returns
+`Iterator`\[[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsresponsetypedef)\].
+
 ## ListFindingsFiltersPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_findings_filters")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("list_findings_filters")`.
 
 Can be used directly:
 
@@ -153,19 +174,21 @@ def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
     return boto3.client("macie2").get_paginator("list_findings_filters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
+Boto3 documentation:
+[Macie2.Paginator.ListFindingsFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
 
-```python
-class ListFindingsFiltersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFindingsFiltersResponseTypeDef]:
-        pass
-```
+Arguments for `ListFindingsFiltersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListFindingsFiltersPaginator.paginate` returns
+`Iterator`\[[ListFindingsFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsfiltersresponsetypedef)\].
+
 ## ListInvitationsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_invitations")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("list_invitations")`.
 
 Can be used directly:
 
@@ -176,16 +199,17 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return boto3.client("macie2").get_paginator("list_invitations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
+Boto3 documentation:
+[Macie2.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
 
-```python
-class ListInvitationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListInvitationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListInvitationsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListInvitationsPaginator.paginate` returns
+`Iterator`\[[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listinvitationsresponsetypedef)\].
+
 ## ListMembersPaginator
 
 Type annotations for `boto3.client("macie2").get_paginator("list_members")`.
@@ -199,20 +223,22 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return boto3.client("macie2").get_paginator("list_members")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
+Boto3 documentation:
+[Macie2.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
 
-```python
-class ListMembersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        onlyAssociated: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMembersResponseTypeDef]:
-        pass
-```
+Arguments for `ListMembersPaginator.paginate` method:
+
+- `onlyAssociated`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListMembersPaginator.paginate` returns
+`Iterator`\[[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listmembersresponsetypedef)\].
+
 ## ListOrganizationAdminAccountsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_organization_admin_accounts")`.
+Type annotations for
+`boto3.client("macie2").get_paginator("list_organization_admin_accounts")`.
 
 Can be used directly:
 
@@ -223,13 +249,13 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return boto3.client("macie2").get_paginator("list_organization_admin_accounts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
+Boto3 documentation:
+[Macie2.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
 
-```python
-class ListOrganizationAdminAccountsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListOrganizationAdminAccountsResponseTypeDef]:
-        pass
-```
+Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+
+`ListOrganizationAdminAccountsPaginator.paginate` returns
+`Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listorganizationadminaccountsresponsetypedef)\].

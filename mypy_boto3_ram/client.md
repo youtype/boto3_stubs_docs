@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RAM](./README.md) > RAMClient
 
-Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+Auto-generated documentation for
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+type annotations stubs module
+[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [RAMClient for boto3 RAM module](#ramclient-for-boto3-ram-module)
   - [RAMClient](#ramclient)
@@ -50,12 +52,13 @@ def get_ram_client() -> RAMClient:
     return boto3.client("ram")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
+Boto3 documentation:
+[RAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ram.client import Exceptions
@@ -63,7 +66,6 @@ from mypy_boto3_ram.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -90,450 +92,467 @@ Exceptions:
 - `Exceptions.TagPolicyViolationException`
 - `Exceptions.UnknownResourceException`
 
-
 ## Methods
-
 
 ### accept_resource_share_invitation
 
-Type annotations for `boto3.client("ram").accept_resource_share_invitation` method.
+Type annotations for `boto3.client("ram").accept_resource_share_invitation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation]
+Boto3 documentation:
+[RAM.Client.accept_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
 
-```python
-def accept_resource_share_invitation(
-    self,
-    resourceShareInvitationArn: str,
-    clientToken: str = None
-) -> AcceptResourceShareInvitationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareInvitationArn`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[AcceptResourceShareInvitationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#acceptresourceshareinvitationresponsetypedef).
 
 ### associate_resource_share
 
 Type annotations for `boto3.client("ram").associate_resource_share` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share]
+Boto3 documentation:
+[RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
 
-```python
-def associate_resource_share(
-    self,
-    resourceShareArn: str,
-    resourceArns: List[str] = None,
-    principals: List[str] = None,
-    clientToken: str = None
-) -> AssociateResourceShareResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `resourceArns`: `List`\[`str`\]
+- `principals`: `List`\[`str`\]
+- `clientToken`: `str`
+
+Returns
+[AssociateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#associateresourceshareresponsetypedef).
 
 ### associate_resource_share_permission
 
-Type annotations for `boto3.client("ram").associate_resource_share_permission` method.
+Type annotations for `boto3.client("ram").associate_resource_share_permission`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission]
+Boto3 documentation:
+[RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
 
-```python
-def associate_resource_share_permission(
-    self,
-    resourceShareArn: str,
-    permissionArn: str,
-    replace: bool = None,
-    clientToken: str = None
-) -> AssociateResourceSharePermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `permissionArn`: `str` *(required)*
+- `replace`: `bool`
+- `clientToken`: `str`
+
+Returns
+[AssociateResourceSharePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#associateresourcesharepermissionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("ram").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.can_paginate]
+Boto3 documentation:
+[RAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_resource_share
 
 Type annotations for `boto3.client("ram").create_resource_share` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share]
+Boto3 documentation:
+[RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
 
-```python
-def create_resource_share(
-    self,
-    name: str,
-    resourceArns: List[str] = None,
-    principals: List[str] = None,
-    tags: List["TagTypeDef"] = None,
-    allowExternalPrincipals: bool = None,
-    clientToken: str = None,
-    permissionArns: List[str] = None
-) -> CreateResourceShareResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `resourceArns`: `List`\[`str`\]
+- `principals`: `List`\[`str`\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagtypedef)\]
+- `allowExternalPrincipals`: `bool`
+- `clientToken`: `str`
+- `permissionArns`: `List`\[`str`\]
+
+Returns
+[CreateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#createresourceshareresponsetypedef).
 
 ### delete_resource_share
 
 Type annotations for `boto3.client("ram").delete_resource_share` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share]
+Boto3 documentation:
+[RAM.Client.delete_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share)
 
-```python
-def delete_resource_share(
-    self,
-    resourceShareArn: str,
-    clientToken: str = None
-) -> DeleteResourceShareResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#deleteresourceshareresponsetypedef).
 
 ### disassociate_resource_share
 
 Type annotations for `boto3.client("ram").disassociate_resource_share` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share]
+Boto3 documentation:
+[RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
 
-```python
-def disassociate_resource_share(
-    self,
-    resourceShareArn: str,
-    resourceArns: List[str] = None,
-    principals: List[str] = None,
-    clientToken: str = None
-) -> DisassociateResourceShareResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `resourceArns`: `List`\[`str`\]
+- `principals`: `List`\[`str`\]
+- `clientToken`: `str`
+
+Returns
+[DisassociateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#disassociateresourceshareresponsetypedef).
 
 ### disassociate_resource_share_permission
 
-Type annotations for `boto3.client("ram").disassociate_resource_share_permission` method.
+Type annotations for
+`boto3.client("ram").disassociate_resource_share_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission]
+Boto3 documentation:
+[RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
 
-```python
-def disassociate_resource_share_permission(
-    self,
-    resourceShareArn: str,
-    permissionArn: str,
-    clientToken: str = None
-) -> DisassociateResourceSharePermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `permissionArn`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DisassociateResourceSharePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#disassociateresourcesharepermissionresponsetypedef).
 
 ### enable_sharing_with_aws_organization
 
-Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization` method.
+Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization]
+Boto3 documentation:
+[RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
 
-```python
-def enable_sharing_with_aws_organization(
-    self
-) -> EnableSharingWithAwsOrganizationResponseTypeDef:
-    pass
-```
+Returns
+[EnableSharingWithAwsOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#enablesharingwithawsorganizationresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ram").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.generate_presigned_url]
+Boto3 documentation:
+[RAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_permission
 
 Type annotations for `boto3.client("ram").get_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission]
+Boto3 documentation:
+[RAM.Client.get_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission)
 
-```python
-def get_permission(
-    self,
-    permissionArn: str,
-    permissionVersion: int = None
-) -> GetPermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `permissionArn`: `str` *(required)*
+- `permissionVersion`: `int`
+
+Returns
+[GetPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getpermissionresponsetypedef).
 
 ### get_resource_policies
 
 Type annotations for `boto3.client("ram").get_resource_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies]
+Boto3 documentation:
+[RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
 
-```python
-def get_resource_policies(
-    self,
-    resourceArns: List[str],
-    principal: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetResourcePoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArns`: `List`\[`str`\] *(required)*
+- `principal`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcepoliciesresponsetypedef).
 
 ### get_resource_share_associations
 
-Type annotations for `boto3.client("ram").get_resource_share_associations` method.
+Type annotations for `boto3.client("ram").get_resource_share_associations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations]
+Boto3 documentation:
+[RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
 
-```python
-def get_resource_share_associations(
-    self,
-    associationType: ResourceShareAssociationType,
-    resourceShareArns: List[str] = None,
-    resourceArn: str = None,
-    principal: str = None,
-    associationStatus: ResourceShareAssociationStatus = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetResourceShareAssociationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `associationType`:
+  [ResourceShareAssociationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationtype)
+  *(required)*
+- `resourceShareArns`: `List`\[`str`\]
+- `resourceArn`: `str`
+- `principal`: `str`
+- `associationStatus`:
+  [ResourceShareAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationstatus)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetResourceShareAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareassociationsresponsetypedef).
 
 ### get_resource_share_invitations
 
-Type annotations for `boto3.client("ram").get_resource_share_invitations` method.
+Type annotations for `boto3.client("ram").get_resource_share_invitations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations]
+Boto3 documentation:
+[RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
 
-```python
-def get_resource_share_invitations(
-    self,
-    resourceShareInvitationArns: List[str] = None,
-    resourceShareArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetResourceShareInvitationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareInvitationArns`: `List`\[`str`\]
+- `resourceShareArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetResourceShareInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareinvitationsresponsetypedef).
 
 ### get_resource_shares
 
 Type annotations for `boto3.client("ram").get_resource_shares` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares]
+Boto3 documentation:
+[RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
 
-```python
-def get_resource_shares(
-    self,
-    resourceOwner: ResourceOwner,
-    resourceShareArns: List[str] = None,
-    resourceShareStatus: ResourceShareStatus = None,
-    name: str = None,
-    tagFilters: List[TagFilterTypeDef] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> GetResourceSharesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceOwner`:
+  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
+  *(required)*
+- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareStatus`:
+  [ResourceShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcesharestatus)
+- `name`: `str`
+- `tagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetResourceSharesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcesharesresponsetypedef).
 
 ### list_pending_invitation_resources
 
-Type annotations for `boto3.client("ram").list_pending_invitation_resources` method.
+Type annotations for `boto3.client("ram").list_pending_invitation_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources]
+Boto3 documentation:
+[RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
 
-```python
-def list_pending_invitation_resources(
-    self,
-    resourceShareInvitationArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPendingInvitationResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareInvitationArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPendingInvitationResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listpendinginvitationresourcesresponsetypedef).
 
 ### list_permissions
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions]
+Boto3 documentation:
+[RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
 
-```python
-def list_permissions(
-    self,
-    resourceType: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceType`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listpermissionsresponsetypedef).
 
 ### list_principals
 
 Type annotations for `boto3.client("ram").list_principals` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals]
+Boto3 documentation:
+[RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
 
-```python
-def list_principals(
-    self,
-    resourceOwner: ResourceOwner,
-    resourceArn: str = None,
-    principals: List[str] = None,
-    resourceType: str = None,
-    resourceShareArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPrincipalsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceOwner`:
+  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
+  *(required)*
+- `resourceArn`: `str`
+- `principals`: `List`\[`str`\]
+- `resourceType`: `str`
+- `resourceShareArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listprincipalsresponsetypedef).
 
 ### list_resource_share_permissions
 
-Type annotations for `boto3.client("ram").list_resource_share_permissions` method.
+Type annotations for `boto3.client("ram").list_resource_share_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions]
+Boto3 documentation:
+[RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
 
-```python
-def list_resource_share_permissions(
-    self,
-    resourceShareArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResourceSharePermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResourceSharePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcesharepermissionsresponsetypedef).
 
 ### list_resource_types
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types]
+Boto3 documentation:
+[RAM.Client.list_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types)
 
-```python
-def list_resource_types(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResourceTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResourceTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcetypesresponsetypedef).
 
 ### list_resources
 
 Type annotations for `boto3.client("ram").list_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources]
+Boto3 documentation:
+[RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
 
-```python
-def list_resources(
-    self,
-    resourceOwner: ResourceOwner,
-    principal: str = None,
-    resourceType: str = None,
-    resourceArns: List[str] = None,
-    resourceShareArns: List[str] = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceOwner`:
+  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
+  *(required)*
+- `principal`: `str`
+- `resourceType`: `str`
+- `resourceArns`: `List`\[`str`\]
+- `resourceShareArns`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcesresponsetypedef).
 
 ### promote_resource_share_created_from_policy
 
-Type annotations for `boto3.client("ram").promote_resource_share_created_from_policy` method.
+Type annotations for
+`boto3.client("ram").promote_resource_share_created_from_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy]
+Boto3 documentation:
+[RAM.Client.promote_resource_share_created_from_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
 
-```python
-def promote_resource_share_created_from_policy(
-    self,
-    resourceShareArn: str
-) -> PromoteResourceShareCreatedFromPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+
+Returns
+[PromoteResourceShareCreatedFromPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#promoteresourcesharecreatedfrompolicyresponsetypedef).
 
 ### reject_resource_share_invitation
 
-Type annotations for `boto3.client("ram").reject_resource_share_invitation` method.
+Type annotations for `boto3.client("ram").reject_resource_share_invitation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation]
+Boto3 documentation:
+[RAM.Client.reject_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
 
-```python
-def reject_resource_share_invitation(
-    self,
-    resourceShareInvitationArn: str,
-    clientToken: str = None
-) -> RejectResourceShareInvitationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceShareInvitationArn`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[RejectResourceShareInvitationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#rejectresourceshareinvitationresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("ram").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource]
+Boto3 documentation:
+[RAM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceShareArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("ram").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource]
+Boto3 documentation:
+[RAM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceShareArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceShareArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource_share
 
 Type annotations for `boto3.client("ram").update_resource_share` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share]
+Boto3 documentation:
+[RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
 
-```python
-def update_resource_share(
-    self,
-    resourceShareArn: str,
-    name: str = None,
-    allowExternalPrincipals: bool = None,
-    clientToken: str = None
-) -> UpdateResourceShareResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `resourceShareArn`: `str` *(required)*
+- `name`: `str`
+- `allowExternalPrincipals`: `bool`
+- `clientToken`: `str`
 
+Returns
+[UpdateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#updateresourceshareresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("ram").get_paginator` method with overloads.
 
-- `client.get_paginator("get_resource_policies")` -> [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
-- `client.get_paginator("get_resource_share_associations")` -> [GetResourceShareAssociationsPaginator](./paginators.md#getresourceshareassociationspaginator)
-- `client.get_paginator("get_resource_share_invitations")` -> [GetResourceShareInvitationsPaginator](./paginators.md#getresourceshareinvitationspaginator)
-- `client.get_paginator("get_resource_shares")` -> [GetResourceSharesPaginator](./paginators.md#getresourcesharespaginator)
-- `client.get_paginator("list_principals")` -> [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
-- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-
-
+- `client.get_paginator("get_resource_policies")` ->
+  [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+- `client.get_paginator("get_resource_share_associations")` ->
+  [GetResourceShareAssociationsPaginator](./paginators.md#getresourceshareassociationspaginator)
+- `client.get_paginator("get_resource_share_invitations")` ->
+  [GetResourceShareInvitationsPaginator](./paginators.md#getresourceshareinvitationspaginator)
+- `client.get_paginator("get_resource_shares")` ->
+  [GetResourceSharesPaginator](./paginators.md#getresourcesharespaginator)
+- `client.get_paginator("list_principals")` ->
+  [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
+- `client.get_paginator("list_resources")` ->
+  [ListResourcesPaginator](./paginators.md#listresourcespaginator)

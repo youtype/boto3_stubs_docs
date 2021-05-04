@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Braket](./README.md) > Paginators
 
-Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
-type annotations stubs module [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+Auto-generated documentation for
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+type annotations stubs module
+[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Paginators for boto3 Braket module](#paginators-for-boto3-braket-module)
   - [SearchDevicesPaginator](#searchdevicespaginator)
@@ -22,20 +24,24 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
     return boto3.client("braket").get_paginator("search_devices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
+Boto3 documentation:
+[Braket.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
-```python
-class SearchDevicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filters: List[SearchDevicesFilterTypeDef],
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchDevicesResponseTypeDef]:
-        pass
-```
+Arguments for `SearchDevicesPaginator.paginate` method:
+
+- `filters`:
+  `List`\[[SearchDevicesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesfiltertypedef)\]
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#paginatorconfigtypedef)
+
+`SearchDevicesPaginator.paginate` returns
+`Iterator`\[[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesresponsetypedef)\].
+
 ## SearchQuantumTasksPaginator
 
-Type annotations for `boto3.client("braket").get_paginator("search_quantum_tasks")`.
+Type annotations for
+`boto3.client("braket").get_paginator("search_quantum_tasks")`.
 
 Can be used directly:
 
@@ -46,14 +52,16 @@ def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
     return boto3.client("braket").get_paginator("search_quantum_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
+Boto3 documentation:
+[Braket.Paginator.SearchQuantumTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
-```python
-class SearchQuantumTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        filters: List[SearchQuantumTasksFilterTypeDef],
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchQuantumTasksResponseTypeDef]:
-        pass
-```
+Arguments for `SearchQuantumTasksPaginator.paginate` method:
+
+- `filters`:
+  `List`\[[SearchQuantumTasksFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksfiltertypedef)\]
+  *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#paginatorconfigtypedef)
+
+`SearchQuantumTasksPaginator.paginate` returns
+`Iterator`\[[SearchQuantumTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksresponsetypedef)\].

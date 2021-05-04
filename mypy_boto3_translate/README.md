@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Translate
 
-Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
-type annotations stubs module [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
+Auto-generated documentation for
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+type annotations stubs module
+[mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
 ```bash
 pip install mypy-boto3-translate
@@ -19,7 +21,8 @@ pip install mypy-boto3-translate
 
 ## TranslateClient
 
-Type annotations for  `boto3.client("translate")` as [TranslateClient](./client.md)
+Type annotations for `boto3.client("translate")` as
+[TranslateClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_translate.client import TranslateClient
 ```
 
-
 TranslateClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_parallel_data](./client.md#create-parallel-data)
 - [delete_parallel_data](./client.md#delete-parallel-data)
@@ -51,10 +52,8 @@ TranslateClient [exceptions](./client.md#exceptions)
 - [translate_text](./client.md#translate-text)
 - [update_parallel_data](./client.md#update-parallel-data)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
 - [ConflictException](./client.md#conflictexception)
@@ -70,14 +69,10 @@ TranslateClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnsupportedLanguagePairException](./client.md#unsupportedlanguagepairexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("translate").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("translate").get_paginator("...")`.
 
 Can be used directly:
 
@@ -86,11 +81,6 @@ from mypy_boto3_translate.paginators import ListTerminologiesPaginator, ...
 ```
 
 - [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_translate.literals import EncryptionKeyType, ...
 - [ParallelDataStatus](./literals.md#paralleldatastatus)
 - [TerminologyDataFormat](./literals.md#terminologydataformat)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

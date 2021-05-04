@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > FIS
 
-Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+Auto-generated documentation for
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+type annotations stubs module
+[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
 ```bash
 pip install mypy-boto3-fis
@@ -18,7 +20,7 @@ pip install mypy-boto3-fis
 
 ## FISClient
 
-Type annotations for  `boto3.client("fis")` as [FISClient](./client.md)
+Type annotations for `boto3.client("fis")` as [FISClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_fis.client import FISClient
 ```
 
-
 FISClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_experiment_template](./client.md#create-experiment-template)
 - [delete_experiment_template](./client.md#delete-experiment-template)
@@ -49,24 +49,13 @@ FISClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_experiment_template](./client.md#update-experiment-template)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -81,13 +70,10 @@ from mypy_boto3_fis.literals import ExperimentActionStatus, ...
 - [ExperimentActionStatus](./literals.md#experimentactionstatus)
 - [ExperimentStatus](./literals.md#experimentstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

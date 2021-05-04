@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Literals
 
-Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+Auto-generated documentation for
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+type annotations stubs module
+[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [Literals for boto3 ApplicationAutoScaling module](#literals-for-boto3-applicationautoscaling-module)
   - [AdjustmentType](#adjustmenttype)

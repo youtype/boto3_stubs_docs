@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTEventsData
 
-Auto-generated documentation for [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
-type annotations stubs module [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+Auto-generated documentation for
+[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+type annotations stubs module
+[mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 ```bash
 pip install mypy-boto3-iotevents-data
@@ -18,7 +20,8 @@ pip install mypy-boto3-iotevents-data
 
 ## IoTEventsDataClient
 
-Type annotations for  `boto3.client("iotevents-data")` as [IoTEventsDataClient](./client.md)
+Type annotations for `boto3.client("iotevents-data")` as
+[IoTEventsDataClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 ```
 
-
 IoTEventsDataClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_put_message](./client.md#batch-put-message)
 - [batch_update_detector](./client.md#batch-update-detector)
 - [can_paginate](./client.md#can-paginate)
@@ -39,25 +40,14 @@ IoTEventsDataClient [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [list_detectors](./client.md#list-detectors)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -71,13 +61,10 @@ from mypy_boto3_iotevents_data.literals import ErrorCode, ...
 
 - [ErrorCode](./literals.md#errorcode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

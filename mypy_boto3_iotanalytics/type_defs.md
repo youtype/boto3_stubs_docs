@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTAnalytics](./README.md) > Structures
 
-Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
-type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+Auto-generated documentation for
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+type annotations stubs module
+[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Typed dictionaries for boto3 IoTAnalytics module](#typed-dictionaries-for-boto3-iotanalytics-module)
   - [AddAttributesActivityTypeDef](#addattributesactivitytypedef)
@@ -101,16 +103,14 @@ type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project
 from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `attributes`: `Dict[str, str]`
-
-
+- `attributes`: `Dict`\[`str`, `str`\]
 
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## BatchPutMessageErrorEntryTypeDef
 
@@ -118,14 +118,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import BatchPutMessageErrorEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `messageId`: `str`
 - `errorCode`: `str`
 - `errorMessage`: `str`
-
 
 ## BatchPutMessageResponseTypeDef
 
@@ -133,12 +130,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `batchPutMessageErrorEntries`: `List["BatchPutMessageErrorEntryTypeDef"]`
 
+- `batchPutMessageErrorEntries`:
+  `List`\[[BatchPutMessageErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#batchputmessageerrorentrytypedef)\]
 
 ## ChannelActivityTypeDef
 
@@ -146,16 +141,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `channelName`: `str`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## ChannelMessagesTypeDef
 
@@ -163,12 +156,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelMessagesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `s3Paths`: `List[str]`
 
+- `s3Paths`: `List`\[`str`\]
 
 ## ChannelStatisticsTypeDef
 
@@ -176,12 +166,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `size`: `"EstimatedResourceSizeTypeDef"`
 
+- `size`:
+  [EstimatedResourceSizeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#estimatedresourcesizetypedef)
 
 ## ChannelStorageSummaryTypeDef
 
@@ -189,13 +177,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelStorageSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceManagedS3`: `Dict[str, Any]`
-- `customerManagedS3`: `"CustomerManagedChannelS3StorageSummaryTypeDef"`
 
+- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `customerManagedS3`:
+  [CustomerManagedChannelS3StorageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#customermanagedchannels3storagesummarytypedef)
 
 ## ChannelStorageTypeDef
 
@@ -203,13 +189,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelStorageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceManagedS3`: `Dict[str, Any]`
-- `customerManagedS3`: `"CustomerManagedChannelS3StorageTypeDef"`
 
+- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `customerManagedS3`:
+  [CustomerManagedChannelS3StorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#customermanagedchannels3storagetypedef)
 
 ## ChannelSummaryTypeDef
 
@@ -217,17 +201,16 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `channelName`: `str`
-- `channelStorage`: `"ChannelStorageSummaryTypeDef"`
-- `status`: `ChannelStatus`
+- `channelStorage`:
+  [ChannelStorageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelstoragesummarytypedef)
+- `status`:
+  [ChannelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#channelstatus)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
-
 
 ## ChannelTypeDef
 
@@ -235,19 +218,19 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ChannelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
-- `storage`: `"ChannelStorageTypeDef"`
+- `storage`:
+  [ChannelStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelstoragetypedef)
 - `arn`: `str`
-- `status`: `ChannelStatus`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
+- `status`:
+  [ChannelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#channelstatus)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
-
 
 ## ColumnTypeDef
 
@@ -255,13 +238,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ColumnTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
-
-
-
 
 ## ContainerDatasetActionTypeDef
 
@@ -269,17 +249,17 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import ContainerDatasetActionTypeDef
 ```
 
-
 Required fields:
+
 - `image`: `str`
 - `executionRoleArn`: `str`
-- `resourceConfiguration`: `"ResourceConfigurationTypeDef"`
-
-
+- `resourceConfiguration`:
+  [ResourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#resourceconfigurationtypedef)
 
 Optional fields:
-- `variables`: `List["VariableTypeDef"]`
 
+- `variables`:
+  `List`\[[VariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#variabletypedef)\]
 
 ## CreateChannelResponseTypeDef
 
@@ -287,14 +267,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CreateChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `channelName`: `str`
 - `channelArn`: `str`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
-
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
 
 ## CreateDatasetContentResponseTypeDef
 
@@ -302,12 +280,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `versionId`: `str`
 
+- `versionId`: `str`
 
 ## CreateDatasetResponseTypeDef
 
@@ -315,14 +290,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CreateDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `datasetName`: `str`
 - `datasetArn`: `str`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
-
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
 
 ## CreateDatastoreResponseTypeDef
 
@@ -330,14 +303,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CreateDatastoreResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `datastoreName`: `str`
 - `datastoreArn`: `str`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
-
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
 
 ## CreatePipelineResponseTypeDef
 
@@ -345,13 +316,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CreatePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineName`: `str`
 - `pipelineArn`: `str`
-
 
 ## CustomerManagedChannelS3StorageSummaryTypeDef
 
@@ -359,14 +327,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CustomerManagedChannelS3StorageSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucket`: `str`
 - `keyPrefix`: `str`
 - `roleArn`: `str`
-
 
 ## CustomerManagedChannelS3StorageTypeDef
 
@@ -374,16 +339,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CustomerManagedChannelS3StorageTypeDef
 ```
 
-
 Required fields:
+
 - `bucket`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `keyPrefix`: `str`
 
+- `keyPrefix`: `str`
 
 ## CustomerManagedDatastoreS3StorageSummaryTypeDef
 
@@ -391,14 +354,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CustomerManagedDatastoreS3StorageSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucket`: `str`
 - `keyPrefix`: `str`
 - `roleArn`: `str`
-
 
 ## CustomerManagedDatastoreS3StorageTypeDef
 
@@ -406,16 +366,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import CustomerManagedDatastoreS3StorageTypeDef
 ```
 
-
 Required fields:
+
 - `bucket`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `keyPrefix`: `str`
 
+- `keyPrefix`: `str`
 
 ## DatasetActionSummaryTypeDef
 
@@ -423,13 +381,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetActionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionName`: `str`
-- `actionType`: `DatasetActionType`
 
+- `actionName`: `str`
+- `actionType`:
+  [DatasetActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datasetactiontype)
 
 ## DatasetActionTypeDef
 
@@ -437,14 +393,13 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionName`: `str`
-- `queryAction`: `"SqlQueryDatasetActionTypeDef"`
-- `containerAction`: `"ContainerDatasetActionTypeDef"`
 
+- `actionName`: `str`
+- `queryAction`:
+  [SqlQueryDatasetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#sqlquerydatasetactiontypedef)
+- `containerAction`:
+  [ContainerDatasetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#containerdatasetactiontypedef)
 
 ## DatasetContentDeliveryDestinationTypeDef
 
@@ -452,13 +407,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryDestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `iotEventsDestinationConfiguration`: `"IotEventsDestinationConfigurationTypeDef"`
-- `s3DestinationConfiguration`: `"S3DestinationConfigurationTypeDef"`
 
+- `iotEventsDestinationConfiguration`:
+  [IotEventsDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#ioteventsdestinationconfigurationtypedef)
+- `s3DestinationConfiguration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#s3destinationconfigurationtypedef)
 
 ## DatasetContentDeliveryRuleTypeDef
 
@@ -466,15 +420,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetContentDeliveryRuleTypeDef
 ```
 
-
 Required fields:
-- `destination`: `"DatasetContentDeliveryDestinationTypeDef"`
 
-
+- `destination`:
+  [DatasetContentDeliveryDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentdeliverydestinationtypedef)
 
 Optional fields:
-- `entryName`: `str`
 
+- `entryName`: `str`
 
 ## DatasetContentStatusTypeDef
 
@@ -482,13 +435,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetContentStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `state`: `DatasetContentState`
-- `reason`: `str`
 
+- `state`:
+  [DatasetContentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datasetcontentstate)
+- `reason`: `str`
 
 ## DatasetContentSummaryTypeDef
 
@@ -496,16 +447,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetContentSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `version`: `str`
-- `status`: `"DatasetContentStatusTypeDef"`
+- `status`:
+  [DatasetContentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentstatustypedef)
 - `creationTime`: `datetime`
 - `scheduleTime`: `datetime`
 - `completionTime`: `datetime`
-
 
 ## DatasetContentVersionValueTypeDef
 
@@ -513,12 +462,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetContentVersionValueTypeDef
 ```
 
-
 Required fields:
+
 - `datasetName`: `str`
-
-
-
 
 ## DatasetEntryTypeDef
 
@@ -526,13 +472,10 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `entryName`: `str`
 - `dataURI`: `str`
-
 
 ## DatasetSummaryTypeDef
 
@@ -540,17 +483,17 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `datasetName`: `str`
-- `status`: `DatasetStatus`
+- `status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datasetstatus)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `triggers`: `List["DatasetTriggerTypeDef"]`
-- `actions`: `List["DatasetActionSummaryTypeDef"]`
-
+- `triggers`:
+  `List`\[[DatasetTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasettriggertypedef)\]
+- `actions`:
+  `List`\[[DatasetActionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetactionsummarytypedef)\]
 
 ## DatasetTriggerTypeDef
 
@@ -558,13 +501,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetTriggerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `schedule`: `"ScheduleTypeDef"`
-- `dataset`: `"TriggeringDatasetTypeDef"`
 
+- `schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#scheduletypedef)
+- `dataset`:
+  [TriggeringDatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#triggeringdatasettypedef)
 
 ## DatasetTypeDef
 
@@ -572,22 +514,26 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatasetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `arn`: `str`
-- `actions`: `List["DatasetActionTypeDef"]`
-- `triggers`: `List["DatasetTriggerTypeDef"]`
-- `contentDeliveryRules`: `List["DatasetContentDeliveryRuleTypeDef"]`
-- `status`: `DatasetStatus`
+- `actions`:
+  `List`\[[DatasetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetactiontypedef)\]
+- `triggers`:
+  `List`\[[DatasetTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasettriggertypedef)\]
+- `contentDeliveryRules`:
+  `List`\[[DatasetContentDeliveryRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentdeliveryruletypedef)\]
+- `status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datasetstatus)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
-- `versioningConfiguration`: `"VersioningConfigurationTypeDef"`
-- `lateDataRules`: `List["LateDataRuleTypeDef"]`
-
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
+- `versioningConfiguration`:
+  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#versioningconfigurationtypedef)
+- `lateDataRules`:
+  `List`\[[LateDataRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#latedataruletypedef)\]
 
 ## DatastoreActivityTypeDef
 
@@ -595,13 +541,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `datastoreName`: `str`
-
-
-
 
 ## DatastoreStatisticsTypeDef
 
@@ -609,12 +552,10 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `size`: `"EstimatedResourceSizeTypeDef"`
 
+- `size`:
+  [EstimatedResourceSizeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#estimatedresourcesizetypedef)
 
 ## DatastoreStorageSummaryTypeDef
 
@@ -622,13 +563,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreStorageSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceManagedS3`: `Dict[str, Any]`
-- `customerManagedS3`: `"CustomerManagedDatastoreS3StorageSummaryTypeDef"`
 
+- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `customerManagedS3`:
+  [CustomerManagedDatastoreS3StorageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#customermanageddatastores3storagesummarytypedef)
 
 ## DatastoreStorageTypeDef
 
@@ -636,13 +575,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreStorageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceManagedS3`: `Dict[str, Any]`
-- `customerManagedS3`: `"CustomerManagedDatastoreS3StorageTypeDef"`
 
+- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `customerManagedS3`:
+  [CustomerManagedDatastoreS3StorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#customermanageddatastores3storagetypedef)
 
 ## DatastoreSummaryTypeDef
 
@@ -650,18 +587,18 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `datastoreName`: `str`
-- `datastoreStorage`: `"DatastoreStorageSummaryTypeDef"`
-- `status`: `DatastoreStatus`
+- `datastoreStorage`:
+  [DatastoreStorageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastorestoragesummarytypedef)
+- `status`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datastorestatus)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
-- `fileFormatType`: `FileFormatType`
-
+- `fileFormatType`:
+  [FileFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#fileformattype)
 
 ## DatastoreTypeDef
 
@@ -669,20 +606,21 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DatastoreTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
-- `storage`: `"DatastoreStorageTypeDef"`
+- `storage`:
+  [DatastoreStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastorestoragetypedef)
 - `arn`: `str`
-- `status`: `DatastoreStatus`
-- `retentionPeriod`: `"RetentionPeriodTypeDef"`
+- `status`:
+  [DatastoreStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#datastorestatus)
+- `retentionPeriod`:
+  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
-- `fileFormatConfiguration`: `"FileFormatConfigurationTypeDef"`
-
+- `fileFormatConfiguration`:
+  [FileFormatConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#fileformatconfigurationtypedef)
 
 ## DeltaTimeSessionWindowConfigurationTypeDef
 
@@ -690,12 +628,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DeltaTimeSessionWindowConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `timeoutInMinutes`: `int`
-
-
-
 
 ## DeltaTimeTypeDef
 
@@ -703,13 +638,10 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import DeltaTimeTypeDef
 ```
 
-
 Required fields:
+
 - `offsetSeconds`: `int`
 - `timeExpression`: `str`
-
-
-
 
 ## DescribeChannelResponseTypeDef
 
@@ -717,13 +649,12 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import DescribeChannelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channel`: `"ChannelTypeDef"`
-- `statistics`: `"ChannelStatisticsTypeDef"`
 
+- `channel`:
+  [ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channeltypedef)
+- `statistics`:
+  [ChannelStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelstatisticstypedef)
 
 ## DescribeDatasetResponseTypeDef
 
@@ -731,12 +662,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dataset`: `"DatasetTypeDef"`
 
+- `dataset`:
+  [DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasettypedef)
 
 ## DescribeDatastoreResponseTypeDef
 
@@ -744,13 +673,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `datastore`: `"DatastoreTypeDef"`
-- `statistics`: `"DatastoreStatisticsTypeDef"`
 
+- `datastore`:
+  [DatastoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastoretypedef)
+- `statistics`:
+  [DatastoreStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastorestatisticstypedef)
 
 ## DescribeLoggingOptionsResponseTypeDef
 
@@ -758,12 +686,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `loggingOptions`: `"LoggingOptionsTypeDef"`
 
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#loggingoptionstypedef)
 
 ## DescribePipelineResponseTypeDef
 
@@ -771,12 +697,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DescribePipelineResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `pipeline`: `"PipelineTypeDef"`
 
+- `pipeline`:
+  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelinetypedef)
 
 ## DeviceRegistryEnrichActivityTypeDef
 
@@ -784,18 +708,16 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DeviceRegistryEnrichActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `attribute`: `str`
 - `thingName`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## DeviceShadowEnrichActivityTypeDef
 
@@ -803,18 +725,16 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import DeviceShadowEnrichActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `attribute`: `str`
 - `thingName`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## EstimatedResourceSizeTypeDef
 
@@ -822,13 +742,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import EstimatedResourceSizeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `estimatedSizeInBytes`: `float`
 - `estimatedOn`: `datetime`
-
 
 ## FileFormatConfigurationTypeDef
 
@@ -836,13 +753,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import FileFormatConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `jsonConfiguration`: `Dict[str, Any]`
-- `parquetConfiguration`: `"ParquetConfigurationTypeDef"`
 
+- `jsonConfiguration`: `Dict`\[`str`, `Any`\]
+- `parquetConfiguration`:
+  [ParquetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#parquetconfigurationtypedef)
 
 ## FilterActivityTypeDef
 
@@ -850,16 +765,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import FilterActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `filter`: `str`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## GetDatasetContentResponseTypeDef
 
@@ -867,14 +780,13 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import GetDatasetContentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `entries`: `List["DatasetEntryTypeDef"]`
-- `timestamp`: `datetime`
-- `status`: `"DatasetContentStatusTypeDef"`
 
+- `entries`:
+  `List`\[[DatasetEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetentrytypedef)\]
+- `timestamp`: `datetime`
+- `status`:
+  [DatasetContentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentstatustypedef)
 
 ## GlueConfigurationTypeDef
 
@@ -882,13 +794,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import GlueConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `tableName`: `str`
 - `databaseName`: `str`
-
-
-
 
 ## IotEventsDestinationConfigurationTypeDef
 
@@ -896,13 +805,10 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import IotEventsDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `inputName`: `str`
 - `roleArn`: `str`
-
-
-
 
 ## LambdaActivityTypeDef
 
@@ -910,17 +816,15 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import LambdaActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `lambdaName`: `str`
 - `batchSize`: `int`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## LateDataRuleConfigurationTypeDef
 
@@ -928,12 +832,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import LateDataRuleConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deltaTimeSessionWindowConfiguration`: `"DeltaTimeSessionWindowConfigurationTypeDef"`
 
+- `deltaTimeSessionWindowConfiguration`:
+  [DeltaTimeSessionWindowConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#deltatimesessionwindowconfigurationtypedef)
 
 ## LateDataRuleTypeDef
 
@@ -941,15 +843,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import LateDataRuleTypeDef
 ```
 
-
 Required fields:
-- `ruleConfiguration`: `"LateDataRuleConfigurationTypeDef"`
 
-
+- `ruleConfiguration`:
+  [LateDataRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#latedataruleconfigurationtypedef)
 
 Optional fields:
-- `ruleName`: `str`
 
+- `ruleName`: `str`
 
 ## ListChannelsResponseTypeDef
 
@@ -957,13 +858,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channelSummaries`: `List["ChannelSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `channelSummaries`:
+  `List`\[[ChannelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListDatasetContentsResponseTypeDef
 
@@ -971,13 +870,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `datasetContentSummaries`: `List["DatasetContentSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `datasetContentSummaries`:
+  `List`\[[DatasetContentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListDatasetsResponseTypeDef
 
@@ -985,13 +882,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListDatasetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `datasetSummaries`: `List["DatasetSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `datasetSummaries`:
+  `List`\[[DatasetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListDatastoresResponseTypeDef
 
@@ -999,13 +894,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListDatastoresResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `datastoreSummaries`: `List["DatastoreSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `datastoreSummaries`:
+  `List`\[[DatastoreSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastoresummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListPipelinesResponseTypeDef
 
@@ -1013,13 +906,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListPipelinesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `pipelineSummaries`: `List["PipelineSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `pipelineSummaries`:
+  `List`\[[PipelineSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelinesummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1027,12 +918,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
 
 ## LoggingOptionsTypeDef
 
@@ -1040,14 +929,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import LoggingOptionsTypeDef
 ```
 
-
 Required fields:
+
 - `roleArn`: `str`
 - `level`: `Literal['ERROR']`
 - `enabled`: `bool`
-
-
-
 
 ## MathActivityTypeDef
 
@@ -1055,17 +941,15 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import MathActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `attribute`: `str`
 - `math`: `str`
 
-
-
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## MessageTypeDef
 
@@ -1073,13 +957,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import MessageTypeDef
 ```
 
-
 Required fields:
+
 - `messageId`: `str`
-- `payload`: `Union[bytes, IO[bytes]]`
-
-
-
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## OutputFileUriValueTypeDef
 
@@ -1087,12 +968,9 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import OutputFileUriValueTypeDef
 ```
 
-
 Required fields:
+
 - `fileName`: `str`
-
-
-
 
 ## PaginatorConfigTypeDef
 
@@ -1100,14 +978,11 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParquetConfigurationTypeDef
 
@@ -1115,12 +990,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ParquetConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `schemaDefinition`: `"SchemaDefinitionTypeDef"`
 
+- `schemaDefinition`:
+  [SchemaDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#schemadefinitiontypedef)
 
 ## PipelineActivityTypeDef
 
@@ -1128,21 +1001,28 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import PipelineActivityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `channel`: `"ChannelActivityTypeDef"`
-- `lambda`: `"LambdaActivityTypeDef"`
-- `datastore`: `"DatastoreActivityTypeDef"`
-- `addAttributes`: `"AddAttributesActivityTypeDef"`
-- `removeAttributes`: `"RemoveAttributesActivityTypeDef"`
-- `selectAttributes`: `"SelectAttributesActivityTypeDef"`
-- `filter`: `"FilterActivityTypeDef"`
-- `math`: `"MathActivityTypeDef"`
-- `deviceRegistryEnrich`: `"DeviceRegistryEnrichActivityTypeDef"`
-- `deviceShadowEnrich`: `"DeviceShadowEnrichActivityTypeDef"`
 
+- `channel`:
+  [ChannelActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelactivitytypedef)
+- `lambda`:
+  [LambdaActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#lambdaactivitytypedef)
+- `datastore`:
+  [DatastoreActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastoreactivitytypedef)
+- `addAttributes`:
+  [AddAttributesActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#addattributesactivitytypedef)
+- `removeAttributes`:
+  [RemoveAttributesActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#removeattributesactivitytypedef)
+- `selectAttributes`:
+  [SelectAttributesActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#selectattributesactivitytypedef)
+- `filter`:
+  [FilterActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#filteractivitytypedef)
+- `math`:
+  [MathActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#mathactivitytypedef)
+- `deviceRegistryEnrich`:
+  [DeviceRegistryEnrichActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#deviceregistryenrichactivitytypedef)
+- `deviceShadowEnrich`:
+  [DeviceShadowEnrichActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#deviceshadowenrichactivitytypedef)
 
 ## PipelineSummaryTypeDef
 
@@ -1150,15 +1030,13 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import PipelineSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineName`: `str`
-- `reprocessingSummaries`: `List["ReprocessingSummaryTypeDef"]`
+- `reprocessingSummaries`:
+  `List`\[[ReprocessingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#reprocessingsummarytypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## PipelineTypeDef
 
@@ -1166,17 +1044,16 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import PipelineTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `arn`: `str`
-- `activities`: `List["PipelineActivityTypeDef"]`
-- `reprocessingSummaries`: `List["ReprocessingSummaryTypeDef"]`
+- `activities`:
+  `List`\[[PipelineActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelineactivitytypedef)\]
+- `reprocessingSummaries`:
+  `List`\[[ReprocessingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#reprocessingsummarytypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## QueryFilterTypeDef
 
@@ -1184,12 +1061,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import QueryFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `deltaTime`: `"DeltaTimeTypeDef"`
 
+- `deltaTime`:
+  [DeltaTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#deltatimetypedef)
 
 ## RemoveAttributesActivityTypeDef
 
@@ -1197,16 +1072,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import RemoveAttributesActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `attributes`: `List[str]`
-
-
+- `attributes`: `List`\[`str`\]
 
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## ReprocessingSummaryTypeDef
 
@@ -1214,14 +1087,12 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ReprocessingSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `id`: `str`
-- `status`: `ReprocessingStatus`
-- `creationTime`: `datetime`
 
+- `id`: `str`
+- `status`:
+  [ReprocessingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#reprocessingstatus)
+- `creationTime`: `datetime`
 
 ## ResourceConfigurationTypeDef
 
@@ -1229,13 +1100,11 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ResourceConfigurationTypeDef
 ```
 
-
 Required fields:
-- `computeType`: `ComputeType`
+
+- `computeType`:
+  [ComputeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/literals.html#computetype)
 - `volumeSizeInGB`: `int`
-
-
-
 
 ## RetentionPeriodTypeDef
 
@@ -1243,13 +1112,10 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import RetentionPeriodTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `unlimited`: `bool`
 - `numberOfDays`: `int`
-
 
 ## RunPipelineActivityResponseTypeDef
 
@@ -1257,13 +1123,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `payloads`: `List[Union[bytes, IO[bytes]]]`
-- `logResult`: `str`
 
+- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `logResult`: `str`
 
 ## S3DestinationConfigurationTypeDef
 
@@ -1271,17 +1134,16 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import S3DestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `bucket`: `str`
 - `key`: `str`
 - `roleArn`: `str`
 
-
-
 Optional fields:
-- `glueConfiguration`: `"GlueConfigurationTypeDef"`
 
+- `glueConfiguration`:
+  [GlueConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#glueconfigurationtypedef)
 
 ## SampleChannelDataResponseTypeDef
 
@@ -1289,12 +1151,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `payloads`: `List[Union[bytes, IO[bytes]]]`
 
+- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
 
 ## ScheduleTypeDef
 
@@ -1302,12 +1161,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import ScheduleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `expression`: `str`
 
+- `expression`: `str`
 
 ## SchemaDefinitionTypeDef
 
@@ -1315,12 +1171,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import SchemaDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `columns`: `List["ColumnTypeDef"]`
 
+- `columns`:
+  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#columntypedef)\]
 
 ## SelectAttributesActivityTypeDef
 
@@ -1328,16 +1182,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import SelectAttributesActivityTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `attributes`: `List[str]`
-
-
+- `attributes`: `List`\[`str`\]
 
 Optional fields:
-- `next`: `str`
 
+- `next`: `str`
 
 ## SqlQueryDatasetActionTypeDef
 
@@ -1345,15 +1197,14 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import SqlQueryDatasetActionTypeDef
 ```
 
-
 Required fields:
+
 - `sqlQuery`: `str`
 
-
-
 Optional fields:
-- `filters`: `List["QueryFilterTypeDef"]`
 
+- `filters`:
+  `List`\[[QueryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#queryfiltertypedef)\]
 
 ## StartPipelineReprocessingResponseTypeDef
 
@@ -1361,12 +1212,9 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `reprocessingId`: `str`
 
+- `reprocessingId`: `str`
 
 ## TagTypeDef
 
@@ -1374,13 +1222,10 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## TriggeringDatasetTypeDef
 
@@ -1388,12 +1233,9 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import TriggeringDatasetTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-
-
-
 
 ## VariableTypeDef
 
@@ -1401,18 +1243,18 @@ Required fields:
 from mypy_boto3_iotanalytics.type_defs import VariableTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
+
 - `stringValue`: `str`
 - `doubleValue`: `float`
-- `datasetContentVersionValue`: `"DatasetContentVersionValueTypeDef"`
-- `outputFileUriValue`: `"OutputFileUriValueTypeDef"`
-
+- `datasetContentVersionValue`:
+  [DatasetContentVersionValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentversionvaluetypedef)
+- `outputFileUriValue`:
+  [OutputFileUriValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#outputfileurivaluetypedef)
 
 ## VersioningConfigurationTypeDef
 
@@ -1420,10 +1262,7 @@ Optional fields:
 from mypy_boto3_iotanalytics.type_defs import VersioningConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `unlimited`: `bool`
 - `maxVersions`: `int`
-

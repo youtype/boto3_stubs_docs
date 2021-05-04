@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GlueDataBrew](./README.md) > Structures
 
-Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+Auto-generated documentation for
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+type annotations stubs module
+[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
   - [BatchDeleteRecipeVersionResponseTypeDef](#batchdeleterecipeversionresponsetypedef)
@@ -82,15 +84,14 @@ type annotations stubs module [mypy_boto3_databrew](https://pypi.org/project/myp
 from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Errors`: `List["RecipeVersionErrorDetailTypeDef"]`
 
+- `Errors`:
+  `List`\[[RecipeVersionErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipeversionerrordetailtypedef)\]
 
 ## ConditionExpressionTypeDef
 
@@ -98,16 +99,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ConditionExpressionTypeDef
 ```
 
-
 Required fields:
+
 - `Condition`: `str`
 - `TargetColumn`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## CreateDatasetResponseTypeDef
 
@@ -115,12 +114,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import CreateDatasetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CreateProfileJobResponseTypeDef
 
@@ -128,12 +124,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CreateProfileJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CreateProjectResponseTypeDef
 
@@ -141,12 +134,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CreateProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CreateRecipeJobResponseTypeDef
 
@@ -154,12 +144,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CreateRecipeJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CreateRecipeResponseTypeDef
 
@@ -167,12 +154,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CreateRecipeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CreateScheduleResponseTypeDef
 
@@ -180,12 +164,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CreateScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## CsvOptionsTypeDef
 
@@ -193,13 +174,10 @@ Required fields:
 from mypy_boto3_databrew.type_defs import CsvOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delimiter`: `str`
 - `HeaderRow`: `bool`
-
 
 ## CsvOutputOptionsTypeDef
 
@@ -207,12 +185,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import CsvOutputOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Delimiter`: `str`
 
+- `Delimiter`: `str`
 
 ## DataCatalogInputDefinitionTypeDef
 
@@ -220,17 +195,16 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DataCatalogInputDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `DatabaseName`: `str`
 - `TableName`: `str`
 
-
-
 Optional fields:
-- `CatalogId`: `str`
-- `TempDirectory`: `"S3LocationTypeDef"`
 
+- `CatalogId`: `str`
+- `TempDirectory`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
 
 ## DatabaseInputDefinitionTypeDef
 
@@ -238,16 +212,15 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DatabaseInputDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `GlueConnectionName`: `str`
 - `DatabaseTableName`: `str`
 
-
-
 Optional fields:
-- `TempDirectory`: `"S3LocationTypeDef"`
 
+- `TempDirectory`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
 
 ## DatasetParameterTypeDef
 
@@ -255,18 +228,19 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DatasetParameterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Type`: `ParameterType`
-
-
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#parametertype)
 
 Optional fields:
-- `DatetimeOptions`: `"DatetimeOptionsTypeDef"`
-- `CreateColumn`: `bool`
-- `Filter`: `"FilterExpressionTypeDef"`
 
+- `DatetimeOptions`:
+  [DatetimeOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#datetimeoptionstypedef)
+- `CreateColumn`: `bool`
+- `Filter`:
+  [FilterExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#filterexpressiontypedef)
 
 ## DatasetTypeDef
 
@@ -274,26 +248,29 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DatasetTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Input`: `"InputTypeDef"`
-
-
+- `Input`:
+  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#inputtypedef)
 
 Optional fields:
+
 - `AccountId`: `str`
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
-- `Format`: `InputFormat`
-- `FormatOptions`: `"FormatOptionsTypeDef"`
+- `Format`:
+  [InputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#inputformat)
+- `FormatOptions`:
+  [FormatOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#formatoptionstypedef)
 - `LastModifiedDate`: `datetime`
 - `LastModifiedBy`: `str`
-- `Source`: `Source`
-- `PathOptions`: `"PathOptionsTypeDef"`
-- `Tags`: `Dict[str, str]`
+- `Source`:
+  [Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#source)
+- `PathOptions`:
+  [PathOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#pathoptionstypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
-
 
 ## DatetimeOptionsTypeDef
 
@@ -301,16 +278,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DatetimeOptionsTypeDef
 ```
 
-
 Required fields:
+
 - `Format`: `str`
 
-
-
 Optional fields:
+
 - `TimezoneOffset`: `str`
 - `LocaleCode`: `str`
-
 
 ## DeleteDatasetResponseTypeDef
 
@@ -318,12 +293,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DeleteDatasetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## DeleteJobResponseTypeDef
 
@@ -331,12 +303,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import DeleteJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## DeleteProjectResponseTypeDef
 
@@ -344,12 +313,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import DeleteProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## DeleteRecipeVersionResponseTypeDef
 
@@ -357,13 +323,10 @@ Required fields:
 from mypy_boto3_databrew.type_defs import DeleteRecipeVersionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `RecipeVersion`: `str`
-
-
-
 
 ## DeleteScheduleResponseTypeDef
 
@@ -371,12 +334,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import DeleteScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## DescribeDatasetResponseTypeDef
 
@@ -384,25 +344,28 @@ Required fields:
 from mypy_boto3_databrew.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Input`: `"InputTypeDef"`
-
-
+- `Input`:
+  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#inputtypedef)
 
 Optional fields:
+
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
-- `Format`: `InputFormat`
-- `FormatOptions`: `"FormatOptionsTypeDef"`
+- `Format`:
+  [InputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#inputformat)
+- `FormatOptions`:
+  [FormatOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#formatoptionstypedef)
 - `LastModifiedDate`: `datetime`
 - `LastModifiedBy`: `str`
-- `Source`: `Source`
-- `PathOptions`: `"PathOptionsTypeDef"`
-- `Tags`: `Dict[str, str]`
+- `Source`:
+  [Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#source)
+- `PathOptions`:
+  [PathOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#pathoptionstypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
-
 
 ## DescribeJobResponseTypeDef
 
@@ -410,33 +373,37 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DescribeJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `CreateDate`: `datetime`
 - `CreatedBy`: `str`
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`: `EncryptionMode`
-- `Type`: `JobType`
+- `EncryptionMode`:
+  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
+- `Type`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#jobtype)
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
-- `LogSubscription`: `LogSubscription`
+- `LogSubscription`:
+  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List["OutputTypeDef"]`
+- `Outputs`:
+  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
 - `ProjectName`: `str`
-- `RecipeReference`: `"RecipeReferenceTypeDef"`
+- `RecipeReference`:
+  [RecipeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipereferencetypedef)
 - `ResourceArn`: `str`
 - `RoleArn`: `str`
-- `Tags`: `Dict[str, str]`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
-- `JobSample`: `"JobSampleTypeDef"`
-
+- `JobSample`:
+  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
 
 ## DescribeJobRunResponseTypeDef
 
@@ -444,28 +411,31 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DescribeJobRunResponseTypeDef
 ```
 
-
 Required fields:
+
 - `JobName`: `str`
 
-
-
 Optional fields:
+
 - `Attempt`: `int`
 - `CompletedOn`: `datetime`
 - `DatasetName`: `str`
 - `ErrorMessage`: `str`
 - `ExecutionTime`: `int`
 - `RunId`: `str`
-- `State`: `JobRunState`
-- `LogSubscription`: `LogSubscription`
+- `State`:
+  [JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#jobrunstate)
+- `LogSubscription`:
+  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
 - `LogGroupName`: `str`
-- `Outputs`: `List["OutputTypeDef"]`
-- `RecipeReference`: `"RecipeReferenceTypeDef"`
+- `Outputs`:
+  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
+- `RecipeReference`:
+  [RecipeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipereferencetypedef)
 - `StartedBy`: `str`
 - `StartedOn`: `datetime`
-- `JobSample`: `"JobSampleTypeDef"`
-
+- `JobSample`:
+  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
 
 ## DescribeProjectResponseTypeDef
 
@@ -473,13 +443,12 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DescribeProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `CreateDate`: `datetime`
 - `CreatedBy`: `str`
 - `DatasetName`: `str`
@@ -487,13 +456,14 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `RecipeName`: `str`
 - `ResourceArn`: `str`
-- `Sample`: `"SampleTypeDef"`
+- `Sample`:
+  [SampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#sampletypedef)
 - `RoleArn`: `str`
-- `Tags`: `Dict[str, str]`
-- `SessionStatus`: `SessionStatus`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `SessionStatus`:
+  [SessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#sessionstatus)
 - `OpenedBy`: `str`
 - `OpenDate`: `datetime`
-
 
 ## DescribeRecipeResponseTypeDef
 
@@ -501,13 +471,12 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DescribeRecipeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
 - `LastModifiedBy`: `str`
@@ -516,11 +485,11 @@ Optional fields:
 - `PublishedBy`: `str`
 - `PublishedDate`: `datetime`
 - `Description`: `str`
-- `Steps`: `List["RecipeStepTypeDef"]`
-- `Tags`: `Dict[str, str]`
+- `Steps`:
+  `List`\[[RecipeStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipesteptypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
 - `RecipeVersion`: `str`
-
 
 ## DescribeScheduleResponseTypeDef
 
@@ -528,22 +497,20 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import DescribeScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `CreateDate`: `datetime`
 - `CreatedBy`: `str`
-- `JobNames`: `List[str]`
+- `JobNames`: `List`\[`str`\]
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
 - `ResourceArn`: `str`
 - `CronExpression`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ExcelOptionsTypeDef
 
@@ -551,14 +518,11 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ExcelOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SheetNames`: `List[str]`
-- `SheetIndexes`: `List[int]`
-- `HeaderRow`: `bool`
 
+- `SheetNames`: `List`\[`str`\]
+- `SheetIndexes`: `List`\[`int`\]
+- `HeaderRow`: `bool`
 
 ## FilesLimitTypeDef
 
@@ -566,16 +530,15 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import FilesLimitTypeDef
 ```
 
-
 Required fields:
+
 - `MaxFiles`: `int`
 
-
-
 Optional fields:
-- `OrderedBy`: `Literal['LAST_MODIFIED_DATE']`
-- `Order`: `Order`
 
+- `OrderedBy`: `Literal['LAST_MODIFIED_DATE']`
+- `Order`:
+  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#order)
 
 ## FilterExpressionTypeDef
 
@@ -583,13 +546,10 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import FilterExpressionTypeDef
 ```
 
-
 Required fields:
+
 - `Expression`: `str`
-- `ValuesMap`: `Dict[str, str]`
-
-
-
+- `ValuesMap`: `Dict`\[`str`, `str`\]
 
 ## FormatOptionsTypeDef
 
@@ -597,14 +557,14 @@ Required fields:
 from mypy_boto3_databrew.type_defs import FormatOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Json`: `"JsonOptionsTypeDef"`
-- `Excel`: `"ExcelOptionsTypeDef"`
-- `Csv`: `"CsvOptionsTypeDef"`
 
+- `Json`:
+  [JsonOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jsonoptionstypedef)
+- `Excel`:
+  [ExcelOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#exceloptionstypedef)
+- `Csv`:
+  [CsvOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#csvoptionstypedef)
 
 ## InputTypeDef
 
@@ -612,14 +572,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import InputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3InputDefinition`: `"S3LocationTypeDef"`
-- `DataCatalogInputDefinition`: `"DataCatalogInputDefinitionTypeDef"`
-- `DatabaseInputDefinition`: `"DatabaseInputDefinitionTypeDef"`
 
+- `S3InputDefinition`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
+- `DataCatalogInputDefinition`:
+  [DataCatalogInputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#datacataloginputdefinitiontypedef)
+- `DatabaseInputDefinition`:
+  [DatabaseInputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#databaseinputdefinitiontypedef)
 
 ## JobRunTypeDef
 
@@ -627,10 +587,8 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import JobRunTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Attempt`: `int`
 - `CompletedOn`: `datetime`
 - `DatasetName`: `str`
@@ -638,15 +596,19 @@ Optional fields:
 - `ExecutionTime`: `int`
 - `JobName`: `str`
 - `RunId`: `str`
-- `State`: `JobRunState`
-- `LogSubscription`: `LogSubscription`
+- `State`:
+  [JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#jobrunstate)
+- `LogSubscription`:
+  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
 - `LogGroupName`: `str`
-- `Outputs`: `List["OutputTypeDef"]`
-- `RecipeReference`: `"RecipeReferenceTypeDef"`
+- `Outputs`:
+  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
+- `RecipeReference`:
+  [RecipeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipereferencetypedef)
 - `StartedBy`: `str`
 - `StartedOn`: `datetime`
-- `JobSample`: `"JobSampleTypeDef"`
-
+- `JobSample`:
+  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
 
 ## JobSampleTypeDef
 
@@ -654,13 +616,11 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import JobSampleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Mode`: `SampleMode`
-- `Size`: `int`
 
+- `Mode`:
+  [SampleMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#samplemode)
+- `Size`: `int`
 
 ## JobTypeDef
 
@@ -668,34 +628,38 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import JobTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `AccountId`: `str`
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`: `EncryptionMode`
-- `Type`: `JobType`
+- `EncryptionMode`:
+  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
+- `Type`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#jobtype)
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
-- `LogSubscription`: `LogSubscription`
+- `LogSubscription`:
+  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List["OutputTypeDef"]`
+- `Outputs`:
+  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
 - `ProjectName`: `str`
-- `RecipeReference`: `"RecipeReferenceTypeDef"`
+- `RecipeReference`:
+  [RecipeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipereferencetypedef)
 - `ResourceArn`: `str`
 - `RoleArn`: `str`
 - `Timeout`: `int`
-- `Tags`: `Dict[str, str]`
-- `JobSample`: `"JobSampleTypeDef"`
-
+- `Tags`: `Dict`\[`str`, `str`\]
+- `JobSample`:
+  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
 
 ## JsonOptionsTypeDef
 
@@ -703,12 +667,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import JsonOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MultiLine`: `bool`
 
+- `MultiLine`: `bool`
 
 ## ListDatasetsResponseTypeDef
 
@@ -716,15 +677,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListDatasetsResponseTypeDef
 ```
 
-
 Required fields:
-- `Datasets`: `List["DatasetTypeDef"]`
 
-
+- `Datasets`:
+  `List`\[[DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#datasettypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListJobRunsResponseTypeDef
 
@@ -732,15 +692,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListJobRunsResponseTypeDef
 ```
 
-
 Required fields:
-- `JobRuns`: `List["JobRunTypeDef"]`
 
-
+- `JobRuns`:
+  `List`\[[JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobruntypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListJobsResponseTypeDef
 
@@ -748,15 +707,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListJobsResponseTypeDef
 ```
 
-
 Required fields:
-- `Jobs`: `List["JobTypeDef"]`
 
-
+- `Jobs`:
+  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobtypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListProjectsResponseTypeDef
 
@@ -764,15 +722,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListProjectsResponseTypeDef
 ```
 
-
 Required fields:
-- `Projects`: `List["ProjectTypeDef"]`
 
-
+- `Projects`:
+  `List`\[[ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#projecttypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListRecipeVersionsResponseTypeDef
 
@@ -780,15 +737,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListRecipeVersionsResponseTypeDef
 ```
 
-
 Required fields:
-- `Recipes`: `List["RecipeTypeDef"]`
 
-
+- `Recipes`:
+  `List`\[[RecipeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListRecipesResponseTypeDef
 
@@ -796,15 +752,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListRecipesResponseTypeDef
 ```
 
-
 Required fields:
-- `Recipes`: `List["RecipeTypeDef"]`
 
-
+- `Recipes`:
+  `List`\[[RecipeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipetypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListSchedulesResponseTypeDef
 
@@ -812,15 +767,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListSchedulesResponseTypeDef
 ```
 
-
 Required fields:
-- `Schedules`: `List["ScheduleTypeDef"]`
 
-
+- `Schedules`:
+  `List`\[[ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#scheduletypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -828,12 +782,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## OutputFormatOptionsTypeDef
 
@@ -841,12 +792,10 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import OutputFormatOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Csv`: `"CsvOutputOptionsTypeDef"`
 
+- `Csv`:
+  [CsvOutputOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#csvoutputoptionstypedef)
 
 ## OutputTypeDef
 
@@ -854,18 +803,20 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import OutputTypeDef
 ```
 
-
 Required fields:
-- `CompressionFormat`: `CompressionFormat`
-- `Format`: `OutputFormat`
-- `PartitionColumns`: `List[str]`
-- `Location`: `"S3LocationTypeDef"`
+
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#compressionformat)
+- `Format`:
+  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#outputformat)
+- `PartitionColumns`: `List`\[`str`\]
+- `Location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
 - `Overwrite`: `bool`
-- `FormatOptions`: `"OutputFormatOptionsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `FormatOptions`:
+  [OutputFormatOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputformatoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#responsemetadata)
 
 ## PaginatorConfigTypeDef
 
@@ -873,14 +824,11 @@ Required fields:
 from mypy_boto3_databrew.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PathOptionsTypeDef
 
@@ -888,14 +836,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import PathOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LastModifiedDateCondition`: `"FilterExpressionTypeDef"`
-- `FilesLimit`: `"FilesLimitTypeDef"`
-- `Parameters`: `Dict[str, "DatasetParameterTypeDef"]`
 
+- `LastModifiedDateCondition`:
+  [FilterExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#filterexpressiontypedef)
+- `FilesLimit`:
+  [FilesLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#fileslimittypedef)
+- `Parameters`: `Dict`\[`str`,
+  [DatasetParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#datasetparametertypedef)\]
 
 ## ProjectTypeDef
 
@@ -903,14 +851,13 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ProjectTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `RecipeName`: `str`
 
-
-
 Optional fields:
+
 - `AccountId`: `str`
 - `CreateDate`: `datetime`
 - `CreatedBy`: `str`
@@ -918,12 +865,12 @@ Optional fields:
 - `LastModifiedDate`: `datetime`
 - `LastModifiedBy`: `str`
 - `ResourceArn`: `str`
-- `Sample`: `"SampleTypeDef"`
-- `Tags`: `Dict[str, str]`
+- `Sample`:
+  [SampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#sampletypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 - `RoleArn`: `str`
 - `OpenedBy`: `str`
 - `OpenDate`: `datetime`
-
 
 ## PublishRecipeResponseTypeDef
 
@@ -931,12 +878,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import PublishRecipeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## RecipeActionTypeDef
 
@@ -944,15 +888,13 @@ Required fields:
 from mypy_boto3_databrew.type_defs import RecipeActionTypeDef
 ```
 
-
 Required fields:
+
 - `Operation`: `str`
 
-
-
 Optional fields:
-- `Parameters`: `Dict[str, str]`
 
+- `Parameters`: `Dict`\[`str`, `str`\]
 
 ## RecipeReferenceTypeDef
 
@@ -960,15 +902,13 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import RecipeReferenceTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `RecipeVersion`: `str`
 
+- `RecipeVersion`: `str`
 
 ## RecipeStepTypeDef
 
@@ -976,15 +916,15 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import RecipeStepTypeDef
 ```
 
-
 Required fields:
-- `Action`: `"RecipeActionTypeDef"`
 
-
+- `Action`:
+  [RecipeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipeactiontypedef)
 
 Optional fields:
-- `ConditionExpressions`: `List["ConditionExpressionTypeDef"]`
 
+- `ConditionExpressions`:
+  `List`\[[ConditionExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#conditionexpressiontypedef)\]
 
 ## RecipeTypeDef
 
@@ -992,13 +932,12 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import RecipeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
 - `LastModifiedBy`: `str`
@@ -1008,10 +947,10 @@ Optional fields:
 - `PublishedDate`: `datetime`
 - `Description`: `str`
 - `ResourceArn`: `str`
-- `Steps`: `List["RecipeStepTypeDef"]`
-- `Tags`: `Dict[str, str]`
+- `Steps`:
+  `List`\[[RecipeStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipesteptypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
 - `RecipeVersion`: `str`
-
 
 ## RecipeVersionErrorDetailTypeDef
 
@@ -1019,14 +958,11 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import RecipeVersionErrorDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `RecipeVersion`: `str`
-
 
 ## ResponseMetadata
 
@@ -1034,16 +970,13 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3LocationTypeDef
 
@@ -1051,15 +984,13 @@ Required fields:
 from mypy_boto3_databrew.type_defs import S3LocationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Key`: `str`
 
+- `Key`: `str`
 
 ## SampleTypeDef
 
@@ -1067,15 +998,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import SampleTypeDef
 ```
 
-
 Required fields:
-- `Type`: `SampleType`
 
-
+- `Type`:
+  [SampleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#sampletype)
 
 Optional fields:
-- `Size`: `int`
 
+- `Size`: `int`
 
 ## ScheduleTypeDef
 
@@ -1083,23 +1013,21 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import ScheduleTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `AccountId`: `str`
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
-- `JobNames`: `List[str]`
+- `JobNames`: `List`\[`str`\]
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
 - `ResourceArn`: `str`
 - `CronExpression`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## SendProjectSessionActionResponseTypeDef
 
@@ -1107,16 +1035,14 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import SendProjectSessionActionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `Result`: `str`
 - `ActionId`: `int`
-
 
 ## StartJobRunResponseTypeDef
 
@@ -1124,12 +1050,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import StartJobRunResponseTypeDef
 ```
 
-
 Required fields:
+
 - `RunId`: `str`
-
-
-
 
 ## StartProjectSessionResponseTypeDef
 
@@ -1137,15 +1060,13 @@ Required fields:
 from mypy_boto3_databrew.type_defs import StartProjectSessionResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `ClientSessionId`: `str`
 
+- `ClientSessionId`: `str`
 
 ## StopJobRunResponseTypeDef
 
@@ -1153,12 +1074,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import StopJobRunResponseTypeDef
 ```
 
-
 Required fields:
+
 - `RunId`: `str`
-
-
-
 
 ## UpdateDatasetResponseTypeDef
 
@@ -1166,12 +1084,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import UpdateDatasetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## UpdateProfileJobResponseTypeDef
 
@@ -1179,12 +1094,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import UpdateProfileJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## UpdateProjectResponseTypeDef
 
@@ -1192,15 +1104,13 @@ Required fields:
 from mypy_boto3_databrew.type_defs import UpdateProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `LastModifiedDate`: `datetime`
 
+- `LastModifiedDate`: `datetime`
 
 ## UpdateRecipeJobResponseTypeDef
 
@@ -1208,12 +1118,9 @@ Optional fields:
 from mypy_boto3_databrew.type_defs import UpdateRecipeJobResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## UpdateRecipeResponseTypeDef
 
@@ -1221,12 +1128,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import UpdateRecipeResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## UpdateScheduleResponseTypeDef
 
@@ -1234,12 +1138,9 @@ Required fields:
 from mypy_boto3_databrew.type_defs import UpdateScheduleResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## ViewFrameTypeDef
 
@@ -1247,13 +1148,11 @@ Required fields:
 from mypy_boto3_databrew.type_defs import ViewFrameTypeDef
 ```
 
-
 Required fields:
+
 - `StartColumnIndex`: `int`
 
-
-
 Optional fields:
-- `ColumnRange`: `int`
-- `HiddenColumns`: `List[str]`
 
+- `ColumnRange`: `int`
+- `HiddenColumns`: `List`\[`str`\]

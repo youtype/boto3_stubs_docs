@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [OpsWorks](./README.md) > Waiters
 
-Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+Auto-generated documentation for
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+type annotations stubs module
+[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [Waiters for boto3 OpsWorks module](#waiters-for-boto3-opsworks-module)
   - [AppExistsWaiter](#appexistswaiter)
@@ -26,17 +28,20 @@ def get_app_exists_waiter() -> AppExistsWaiter:
     return boto3.client("opsworks").get_waiter("app_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.app_exists)
+Boto3 documentation:
+[OpsWorks.Waiter.app_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.app_exists)
 
 Arguments for `AppExistsWaiter.wait` method:
 
 - `StackId`: `str`
-- `AppIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `AppIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
 
 ## DeploymentSuccessfulWaiter
 
-Type annotations for `boto3.client("opsworks").get_waiter("deployment_successful")`.
+Type annotations for
+`boto3.client("opsworks").get_waiter("deployment_successful")`.
 
 Can be used directly:
 
@@ -47,14 +52,16 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
     return boto3.client("opsworks").get_waiter("deployment_successful")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.deployment_successful)
+Boto3 documentation:
+[OpsWorks.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.deployment_successful)
 
 Arguments for `DeploymentSuccessfulWaiter.wait` method:
 
 - `StackId`: `str`
 - `AppId`: `str`
-- `DeploymentIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `DeploymentIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
 
 ## InstanceOnlineWaiter
 
@@ -69,18 +76,21 @@ def get_instance_online_waiter() -> InstanceOnlineWaiter:
     return boto3.client("opsworks").get_waiter("instance_online")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_online)
+Boto3 documentation:
+[OpsWorks.Waiter.instance_online](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_online)
 
 Arguments for `InstanceOnlineWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `InstanceIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
 
 ## InstanceRegisteredWaiter
 
-Type annotations for `boto3.client("opsworks").get_waiter("instance_registered")`.
+Type annotations for
+`boto3.client("opsworks").get_waiter("instance_registered")`.
 
 Can be used directly:
 
@@ -91,14 +101,16 @@ def get_instance_registered_waiter() -> InstanceRegisteredWaiter:
     return boto3.client("opsworks").get_waiter("instance_registered")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_registered)
+Boto3 documentation:
+[OpsWorks.Waiter.instance_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_registered)
 
 Arguments for `InstanceRegisteredWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `InstanceIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
 
 ## InstanceStoppedWaiter
 
@@ -113,18 +125,21 @@ def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
     return boto3.client("opsworks").get_waiter("instance_stopped")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_stopped)
+Boto3 documentation:
+[OpsWorks.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_stopped)
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `InstanceIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
 
 ## InstanceTerminatedWaiter
 
-Type annotations for `boto3.client("opsworks").get_waiter("instance_terminated")`.
+Type annotations for
+`boto3.client("opsworks").get_waiter("instance_terminated")`.
 
 Can be used directly:
 
@@ -135,11 +150,13 @@ def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
     return boto3.client("opsworks").get_waiter("instance_terminated")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_terminated)
+Boto3 documentation:
+[OpsWorks.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_terminated)
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List[str]`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `InstanceIds`: `List`\[`str`\]
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)

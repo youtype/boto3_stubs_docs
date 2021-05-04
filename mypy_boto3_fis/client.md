@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FIS](./README.md) > FISClient
 
-Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+Auto-generated documentation for
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+type annotations stubs module
+[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
 - [FISClient for boto3 FIS module](#fisclient-for-boto3-fis-module)
   - [FISClient](#fisclient)
@@ -39,12 +41,13 @@ def get_fis_client() -> FISClient:
     return boto3.client("fis")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
+Boto3 documentation:
+[FIS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_fis.client import Exceptions
@@ -52,7 +55,6 @@ from mypy_boto3_fis.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -62,254 +64,253 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("fis").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.can_paginate]
+Boto3 documentation:
+[FIS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_experiment_template
 
 Type annotations for `boto3.client("fis").create_experiment_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template]
+Boto3 documentation:
+[FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
 
-```python
-def create_experiment_template(
-    self,
-    clientToken: str,
-    description: str,
-    stopConditions: List[CreateExperimentTemplateStopConditionInputTypeDef],
-    actions: Dict[str, CreateExperimentTemplateActionInputTypeDef],
-    roleArn: str,
-    targets: Dict[str, CreateExperimentTemplateTargetInputTypeDef] = None,
-    tags: Dict[str, str] = None
-) -> CreateExperimentTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientToken`: `str` *(required)*
+- `description`: `str` *(required)*
+- `stopConditions`:
+  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplatestopconditioninputtypedef)\]
+  *(required)*
+- `actions`: `Dict`\[`str`,
+  [CreateExperimentTemplateActionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplateactioninputtypedef)\]
+  *(required)*
+- `roleArn`: `str` *(required)*
+- `targets`: `Dict`\[`str`,
+  [CreateExperimentTemplateTargetInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplatetargetinputtypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplateresponsetypedef).
 
 ### delete_experiment_template
 
 Type annotations for `boto3.client("fis").delete_experiment_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template]
+Boto3 documentation:
+[FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
-```python
-def delete_experiment_template(
-    self,
-    id: str
-) -> DeleteExperimentTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[DeleteExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#deleteexperimenttemplateresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("fis").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.generate_presigned_url]
+Boto3 documentation:
+[FIS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_action
 
 Type annotations for `boto3.client("fis").get_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action]
+Boto3 documentation:
+[FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
 
-```python
-def get_action(
-    self,
-    id: str
-) -> GetActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[GetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getactionresponsetypedef).
 
 ### get_experiment
 
 Type annotations for `boto3.client("fis").get_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment]
+Boto3 documentation:
+[FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
 
-```python
-def get_experiment(
-    self,
-    id: str
-) -> GetExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[GetExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getexperimentresponsetypedef).
 
 ### get_experiment_template
 
 Type annotations for `boto3.client("fis").get_experiment_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template]
+Boto3 documentation:
+[FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
 
-```python
-def get_experiment_template(
-    self,
-    id: str
-) -> GetExperimentTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[GetExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getexperimenttemplateresponsetypedef).
 
 ### list_actions
 
 Type annotations for `boto3.client("fis").list_actions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions]
+Boto3 documentation:
+[FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
 
-```python
-def list_actions(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListActionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listactionsresponsetypedef).
 
 ### list_experiment_templates
 
 Type annotations for `boto3.client("fis").list_experiment_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates]
+Boto3 documentation:
+[FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
-```python
-def list_experiment_templates(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListExperimentTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListExperimentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listexperimenttemplatesresponsetypedef).
 
 ### list_experiments
 
 Type annotations for `boto3.client("fis").list_experiments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments]
+Boto3 documentation:
+[FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
 
-```python
-def list_experiments(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListExperimentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListExperimentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listexperimentsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("fis").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource]
+Boto3 documentation:
+[FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_experiment
 
 Type annotations for `boto3.client("fis").start_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment]
+Boto3 documentation:
+[FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
 
-```python
-def start_experiment(
-    self,
-    clientToken: str,
-    experimentTemplateId: str,
-    tags: Dict[str, str] = None
-) -> StartExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientToken`: `str` *(required)*
+- `experimentTemplateId`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#startexperimentresponsetypedef).
 
 ### stop_experiment
 
 Type annotations for `boto3.client("fis").stop_experiment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment]
+Boto3 documentation:
+[FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
 
-```python
-def stop_experiment(
-    self,
-    id: str
-) -> StopExperimentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[StopExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#stopexperimentresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("fis").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource]
+Boto3 documentation:
+[FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("fis").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource]
+Boto3 documentation:
+[FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_experiment_template
 
 Type annotations for `boto3.client("fis").update_experiment_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template]
+Boto3 documentation:
+[FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
 
-```python
-def update_experiment_template(
-    self,
-    id: str,
-    description: str = None,
-    stopConditions: List[UpdateExperimentTemplateStopConditionInputTypeDef] = None,
-    targets: Dict[str, UpdateExperimentTemplateTargetInputTypeDef] = None,
-    actions: Dict[str, UpdateExperimentTemplateActionInputItemTypeDef] = None,
-    roleArn: str = None
-) -> UpdateExperimentTemplateResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `id`: `str` *(required)*
+- `description`: `str`
+- `stopConditions`:
+  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplatestopconditioninputtypedef)\]
+- `targets`: `Dict`\[`str`,
+  [UpdateExperimentTemplateTargetInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplatetargetinputtypedef)\]
+- `actions`: `Dict`\[`str`,
+  [UpdateExperimentTemplateActionInputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplateactioninputitemtypedef)\]
+- `roleArn`: `str`
 
-
+Returns
+[UpdateExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplateresponsetypedef).

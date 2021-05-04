@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaConvert](./README.md) > MediaConvertClient
 
-Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+Auto-generated documentation for
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+type annotations stubs module
+[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 - [MediaConvertClient for boto3 MediaConvert module](#mediaconvertclient-for-boto3-mediaconvert-module)
   - [MediaConvertClient](#mediaconvertclient)
@@ -51,12 +53,13 @@ def get_mediaconvert_client() -> MediaConvertClient:
     return boto3.client("mediaconvert")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
+Boto3 documentation:
+[MediaConvert.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mediaconvert.client import Exceptions
@@ -64,7 +67,6 @@ from mypy_boto3_mediaconvert.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -76,464 +78,491 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### associate_certificate
 
-Type annotations for `boto3.client("mediaconvert").associate_certificate` method.
+Type annotations for `boto3.client("mediaconvert").associate_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate]
+Boto3 documentation:
+[MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
 
-```python
-def associate_certificate(
-    self,
-    Arn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("mediaconvert").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate]
+Boto3 documentation:
+[MediaConvert.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job
 
 Type annotations for `boto3.client("mediaconvert").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job]
+Boto3 documentation:
+[MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_job
 
 Type annotations for `boto3.client("mediaconvert").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job]
+Boto3 documentation:
+[MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
 
-```python
-def create_job(
-    self,
-    Role: str,
-    Settings: "JobSettingsTypeDef",
-    AccelerationSettings: "AccelerationSettingsTypeDef" = None,
-    BillingTagsSource: BillingTagsSource = None,
-    ClientRequestToken: str = None,
-    HopDestinations: List["HopDestinationTypeDef"] = None,
-    JobTemplate: str = None,
-    Priority: int = None,
-    Queue: str = None,
-    SimulateReservedQueue: SimulateReservedQueue = None,
-    StatusUpdateInterval: StatusUpdateInterval = None,
-    Tags: Dict[str, str] = None,
-    UserMetadata: Dict[str, str] = None
-) -> CreateJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Role`: `str` *(required)*
+- `Settings`:
+  [JobSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobsettingstypedef)
+  *(required)*
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+- `BillingTagsSource`:
+  [BillingTagsSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#billingtagssource)
+- `ClientRequestToken`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+- `JobTemplate`: `str`
+- `Priority`: `int`
+- `Queue`: `str`
+- `SimulateReservedQueue`:
+  [SimulateReservedQueue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#simulatereservedqueue)
+- `StatusUpdateInterval`:
+  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `UserMetadata`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createjobresponsetypedef).
 
 ### create_job_template
 
 Type annotations for `boto3.client("mediaconvert").create_job_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template]
+Boto3 documentation:
+[MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
 
-```python
-def create_job_template(
-    self,
-    Name: str,
-    Settings: "JobTemplateSettingsTypeDef",
-    AccelerationSettings: "AccelerationSettingsTypeDef" = None,
-    Category: str = None,
-    Description: str = None,
-    HopDestinations: List["HopDestinationTypeDef"] = None,
-    Priority: int = None,
-    Queue: str = None,
-    StatusUpdateInterval: StatusUpdateInterval = None,
-    Tags: Dict[str, str] = None
-) -> CreateJobTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Settings`:
+  [JobTemplateSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatesettingstypedef)
+  *(required)*
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+- `Category`: `str`
+- `Description`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+- `Priority`: `int`
+- `Queue`: `str`
+- `StatusUpdateInterval`:
+  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createjobtemplateresponsetypedef).
 
 ### create_preset
 
 Type annotations for `boto3.client("mediaconvert").create_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset]
+Boto3 documentation:
+[MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
 
-```python
-def create_preset(
-    self,
-    Name: str,
-    Settings: "PresetSettingsTypeDef",
-    Category: str = None,
-    Description: str = None,
-    Tags: Dict[str, str] = None
-) -> CreatePresetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Settings`:
+  [PresetSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presetsettingstypedef)
+  *(required)*
+- `Category`: `str`
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createpresetresponsetypedef).
 
 ### create_queue
 
 Type annotations for `boto3.client("mediaconvert").create_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue]
+Boto3 documentation:
+[MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
 
-```python
-def create_queue(
-    self,
-    Name: str,
-    Description: str = None,
-    PricingPlan: PricingPlan = None,
-    ReservationPlanSettings: ReservationPlanSettingsTypeDef = None,
-    Status: QueueStatus = None,
-    Tags: Dict[str, str] = None
-) -> CreateQueueResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlan`:
+  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#pricingplan)
+- `ReservationPlanSettings`:
+  [ReservationPlanSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#reservationplansettingstypedef)
+- `Status`:
+  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuestatus)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createqueueresponsetypedef).
 
 ### delete_job_template
 
 Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template]
+Boto3 documentation:
+[MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
 
-```python
-def delete_job_template(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_preset
 
 Type annotations for `boto3.client("mediaconvert").delete_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset]
+Boto3 documentation:
+[MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
 
-```python
-def delete_preset(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_queue
 
 Type annotations for `boto3.client("mediaconvert").delete_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue]
+Boto3 documentation:
+[MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
 
-```python
-def delete_queue(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_endpoints
 
 Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints]
+Boto3 documentation:
+[MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
 
-```python
-def describe_endpoints(
-    self,
-    MaxResults: int = None,
-    Mode: DescribeEndpointsMode = None,
-    NextToken: str = None
-) -> DescribeEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `Mode`:
+  [DescribeEndpointsMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#describeendpointsmode)
+- `NextToken`: `str`
+
+Returns
+[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#describeendpointsresponsetypedef).
 
 ### disassociate_certificate
 
-Type annotations for `boto3.client("mediaconvert").disassociate_certificate` method.
+Type annotations for `boto3.client("mediaconvert").disassociate_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate]
+Boto3 documentation:
+[MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
 
-```python
-def disassociate_certificate(
-    self,
-    Arn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("mediaconvert").generate_presigned_url` method.
+Type annotations for `boto3.client("mediaconvert").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url]
+Boto3 documentation:
+[MediaConvert.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_job
 
 Type annotations for `boto3.client("mediaconvert").get_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job]
+Boto3 documentation:
+[MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
 
-```python
-def get_job(
-    self,
-    Id: str
-) -> GetJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getjobresponsetypedef).
 
 ### get_job_template
 
 Type annotations for `boto3.client("mediaconvert").get_job_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template]
+Boto3 documentation:
+[MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
 
-```python
-def get_job_template(
-    self,
-    Name: str
-) -> GetJobTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getjobtemplateresponsetypedef).
 
 ### get_preset
 
 Type annotations for `boto3.client("mediaconvert").get_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset]
+Boto3 documentation:
+[MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
 
-```python
-def get_preset(
-    self,
-    Name: str
-) -> GetPresetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetPresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getpresetresponsetypedef).
 
 ### get_queue
 
 Type annotations for `boto3.client("mediaconvert").get_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue]
+Boto3 documentation:
+[MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
 
-```python
-def get_queue(
-    self,
-    Name: str
-) -> GetQueueResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getqueueresponsetypedef).
 
 ### list_job_templates
 
 Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates]
+Boto3 documentation:
+[MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
 
-```python
-def list_job_templates(
-    self,
-    Category: str = None,
-    ListBy: JobTemplateListBy = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Order: Order = None
-) -> ListJobTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Category`: `str`
+- `ListBy`:
+  [JobTemplateListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobtemplatelistby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`:
+  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+
+Returns
+[ListJobTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobtemplatesresponsetypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("mediaconvert").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs]
+Boto3 documentation:
+[MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Order: Order = None,
-    Queue: str = None,
-    Status: JobStatus = None
-) -> ListJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`:
+  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Queue`: `str`
+- `Status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobstatus)
+
+Returns
+[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobsresponsetypedef).
 
 ### list_presets
 
 Type annotations for `boto3.client("mediaconvert").list_presets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets]
+Boto3 documentation:
+[MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
 
-```python
-def list_presets(
-    self,
-    Category: str = None,
-    ListBy: PresetListBy = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Order: Order = None
-) -> ListPresetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Category`: `str`
+- `ListBy`:
+  [PresetListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#presetlistby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`:
+  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+
+Returns
+[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listpresetsresponsetypedef).
 
 ### list_queues
 
 Type annotations for `boto3.client("mediaconvert").list_queues` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues]
+Boto3 documentation:
+[MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
 
-```python
-def list_queues(
-    self,
-    ListBy: QueueListBy = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Order: Order = None
-) -> ListQueuesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ListBy`:
+  [QueueListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuelistby)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`:
+  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+
+Returns
+[ListQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listqueuesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("mediaconvert").list_tags_for_resource` method.
+Type annotations for `boto3.client("mediaconvert").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource]
+Boto3 documentation:
+[MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    Arn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("mediaconvert").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource]
+Boto3 documentation:
+[MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    Arn: str,
-    Tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("mediaconvert").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource]
+Boto3 documentation:
+[MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    Arn: str,
-    TagKeys: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_job_template
 
 Type annotations for `boto3.client("mediaconvert").update_job_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template]
+Boto3 documentation:
+[MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
 
-```python
-def update_job_template(
-    self,
-    Name: str,
-    AccelerationSettings: "AccelerationSettingsTypeDef" = None,
-    Category: str = None,
-    Description: str = None,
-    HopDestinations: List["HopDestinationTypeDef"] = None,
-    Priority: int = None,
-    Queue: str = None,
-    Settings: "JobTemplateSettingsTypeDef" = None,
-    StatusUpdateInterval: StatusUpdateInterval = None
-) -> UpdateJobTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+- `Category`: `str`
+- `Description`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+- `Priority`: `int`
+- `Queue`: `str`
+- `Settings`:
+  [JobTemplateSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatesettingstypedef)
+- `StatusUpdateInterval`:
+  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+
+Returns
+[UpdateJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatejobtemplateresponsetypedef).
 
 ### update_preset
 
 Type annotations for `boto3.client("mediaconvert").update_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset]
+Boto3 documentation:
+[MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
 
-```python
-def update_preset(
-    self,
-    Name: str,
-    Category: str = None,
-    Description: str = None,
-    Settings: "PresetSettingsTypeDef" = None
-) -> UpdatePresetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Category`: `str`
+- `Description`: `str`
+- `Settings`:
+  [PresetSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presetsettingstypedef)
+
+Returns
+[UpdatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatepresetresponsetypedef).
 
 ### update_queue
 
 Type annotations for `boto3.client("mediaconvert").update_queue` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue]
+Boto3 documentation:
+[MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
 
-```python
-def update_queue(
-    self,
-    Name: str,
-    Description: str = None,
-    ReservationPlanSettings: ReservationPlanSettingsTypeDef = None,
-    Status: QueueStatus = None
-) -> UpdateQueueResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `Description`: `str`
+- `ReservationPlanSettings`:
+  [ReservationPlanSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#reservationplansettingstypedef)
+- `Status`:
+  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuestatus)
 
+Returns
+[UpdateQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatequeueresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediaconvert").get_paginator` method with overloads.
+Type annotations for `boto3.client("mediaconvert").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_endpoints")` -> [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
-- `client.get_paginator("list_job_templates")` -> [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_presets")` -> [ListPresetsPaginator](./paginators.md#listpresetspaginator)
-- `client.get_paginator("list_queues")` -> [ListQueuesPaginator](./paginators.md#listqueuespaginator)
-
-
+- `client.get_paginator("describe_endpoints")` ->
+  [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+- `client.get_paginator("list_job_templates")` ->
+  [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_presets")` ->
+  [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+- `client.get_paginator("list_queues")` ->
+  [ListQueuesPaginator](./paginators.md#listqueuespaginator)

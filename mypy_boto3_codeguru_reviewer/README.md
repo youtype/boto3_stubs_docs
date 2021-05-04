@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeGuruReviewer
 
-Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+Auto-generated documentation for
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+type annotations stubs module
+[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 ```bash
 pip install mypy-boto3-codeguru-reviewer
@@ -19,7 +21,8 @@ pip install mypy-boto3-codeguru-reviewer
 
 ## CodeGuruReviewerClient
 
-Type annotations for  `boto3.client("codeguru-reviewer")` as [CodeGuruReviewerClient](./client.md)
+Type annotations for `boto3.client("codeguru-reviewer")` as
+[CodeGuruReviewerClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 ```
 
-
 CodeGuruReviewerClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_repository](./client.md#associate-repository)
 - [can_paginate](./client.md#can-paginate)
 - [create_code_review](./client.md#create-code-review)
@@ -51,10 +52,8 @@ CodeGuruReviewerClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -64,14 +63,10 @@ CodeGuruReviewerClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codeguru-reviewer").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codeguru-reviewer").get_paginator("...")`.
 
 Can be used directly:
 
@@ -80,11 +75,6 @@ from mypy_boto3_codeguru_reviewer.paginators import ListRepositoryAssociationsPa
 ```
 
 - [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -104,13 +94,10 @@ from mypy_boto3_codeguru_reviewer.literals import EncryptionOption, ...
 - [RepositoryAssociationState](./literals.md#repositoryassociationstate)
 - [TypeType](./literals.md#typetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

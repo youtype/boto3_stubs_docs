@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTAnalytics](./README.md) > Literals
 
-Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
-type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+Auto-generated documentation for
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+type annotations stubs module
+[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Literals for boto3 IoTAnalytics module](#literals-for-boto3-iotanalytics-module)
   - [ChannelStatus](#channelstatus)

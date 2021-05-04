@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [TimestreamWrite](./README.md) > Literals
 
-Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
-type annotations stubs module [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+Auto-generated documentation for
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+type annotations stubs module
+[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [Literals for boto3 TimestreamWrite module](#literals-for-boto3-timestreamwrite-module)
   - [DimensionValueType](#dimensionvaluetype)

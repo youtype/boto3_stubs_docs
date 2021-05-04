@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodePipeline](./README.md) > Structures
 
-Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+Auto-generated documentation for
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+type annotations stubs module
+[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [Typed dictionaries for boto3 CodePipeline module](#typed-dictionaries-for-boto3-codepipeline-module)
   - [AWSSessionCredentialsTypeDef](#awssessioncredentialstypedef)
@@ -108,14 +110,11 @@ type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project
 from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `accessKeyId`: `str`
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
-
-
-
 
 ## AcknowledgeJobOutputTypeDef
 
@@ -123,13 +122,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import AcknowledgeJobOutputTypeDef
 ```
 
-
 Required fields:
-- `status`: `JobStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#jobstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## AcknowledgeThirdPartyJobOutputTypeDef
 
@@ -137,13 +135,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import AcknowledgeThirdPartyJobOutputTypeDef
 ```
 
-
 Required fields:
-- `status`: `JobStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#jobstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ActionConfigurationPropertyTypeDef
 
@@ -151,20 +148,19 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionConfigurationPropertyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `required`: `bool`
 - `key`: `bool`
 - `secret`: `bool`
 
-
-
 Optional fields:
+
 - `queryable`: `bool`
 - `description`: `str`
-- `type`: `ActionConfigurationPropertyType`
-
+- `type`:
+  [ActionConfigurationPropertyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionconfigurationpropertytype)
 
 ## ActionConfigurationTypeDef
 
@@ -172,12 +168,9 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `configuration`: `Dict[str, str]`
 
+- `configuration`: `Dict`\[`str`, `str`\]
 
 ## ActionContextTypeDef
 
@@ -185,13 +178,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionContextTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `actionExecutionId`: `str`
-
 
 ## ActionDeclarationTypeDef
 
@@ -199,22 +189,23 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionDeclarationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `actionTypeId`: `"ActionTypeIdTypeDef"`
-
-
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
 
 Optional fields:
+
 - `runOrder`: `int`
-- `configuration`: `Dict[str, str]`
-- `outputArtifacts`: `List["OutputArtifactTypeDef"]`
-- `inputArtifacts`: `List["InputArtifactTypeDef"]`
+- `configuration`: `Dict`\[`str`, `str`\]
+- `outputArtifacts`:
+  `List`\[[OutputArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#outputartifacttypedef)\]
+- `inputArtifacts`:
+  `List`\[[InputArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#inputartifacttypedef)\]
 - `roleArn`: `str`
 - `region`: `str`
 - `namespace`: `str`
-
 
 ## ActionExecutionDetailTypeDef
 
@@ -222,10 +213,8 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineExecutionId`: `str`
 - `actionExecutionId`: `str`
 - `pipelineVersion`: `int`
@@ -233,10 +222,12 @@ Optional fields:
 - `actionName`: `str`
 - `startTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: `ActionExecutionStatus`
-- `input`: `"ActionExecutionInputTypeDef"`
-- `output`: `"ActionExecutionOutputTypeDef"`
-
+- `status`:
+  [ActionExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionexecutionstatus)
+- `input`:
+  [ActionExecutionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutioninputtypedef)
+- `output`:
+  [ActionExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutionoutputtypedef)
 
 ## ActionExecutionFilterTypeDef
 
@@ -244,12 +235,9 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `pipelineExecutionId`: `str`
 
+- `pipelineExecutionId`: `str`
 
 ## ActionExecutionInputTypeDef
 
@@ -257,18 +245,17 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionInputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionTypeId`: `"ActionTypeIdTypeDef"`
-- `configuration`: `Dict[str, str]`
-- `resolvedConfiguration`: `Dict[str, str]`
+
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `configuration`: `Dict`\[`str`, `str`\]
+- `resolvedConfiguration`: `Dict`\[`str`, `str`\]
 - `roleArn`: `str`
 - `region`: `str`
-- `inputArtifacts`: `List["ArtifactDetailTypeDef"]`
+- `inputArtifacts`:
+  `List`\[[ArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailtypedef)\]
 - `namespace`: `str`
-
 
 ## ActionExecutionOutputTypeDef
 
@@ -276,15 +263,15 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionOutputTypeDef
 ```
 
-
 Required fields:
-- `outputArtifacts`: `List["ArtifactDetailTypeDef"]`
-- `executionResult`: `"ActionExecutionResultTypeDef"`
-- `outputVariables`: `Dict[str, str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `outputArtifacts`:
+  `List`\[[ArtifactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailtypedef)\]
+- `executionResult`:
+  [ActionExecutionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutionresulttypedef)
+- `outputVariables`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ActionExecutionResultTypeDef
 
@@ -292,14 +279,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `externalExecutionId`: `str`
 - `externalExecutionSummary`: `str`
 - `externalExecutionUrl`: `str`
-
 
 ## ActionExecutionTypeDef
 
@@ -307,12 +291,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `actionExecutionId`: `str`
-- `status`: `ActionExecutionStatus`
+- `status`:
+  [ActionExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionexecutionstatus)
 - `summary`: `str`
 - `lastStatusChange`: `datetime`
 - `token`: `str`
@@ -320,8 +303,8 @@ Optional fields:
 - `externalExecutionId`: `str`
 - `externalExecutionUrl`: `str`
 - `percentComplete`: `int`
-- `errorDetails`: `"ErrorDetailsTypeDef"`
-
+- `errorDetails`:
+  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#errordetailstypedef)
 
 ## ActionRevisionTypeDef
 
@@ -329,14 +312,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionRevisionTypeDef
 ```
 
-
 Required fields:
+
 - `revisionId`: `str`
 - `revisionChangeId`: `str`
 - `created`: `datetime`
-
-
-
 
 ## ActionStateTypeDef
 
@@ -344,16 +324,15 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `actionName`: `str`
-- `currentRevision`: `"ActionRevisionTypeDef"`
-- `latestExecution`: `"ActionExecutionTypeDef"`
+- `currentRevision`:
+  [ActionRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionrevisiontypedef)
+- `latestExecution`:
+  [ActionExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutiontypedef)
 - `entityUrl`: `str`
 - `revisionUrl`: `str`
-
 
 ## ActionTypeArtifactDetailsTypeDef
 
@@ -361,13 +340,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeArtifactDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `minimumCount`: `int`
 - `maximumCount`: `int`
-
-
-
 
 ## ActionTypeDeclarationTypeDef
 
@@ -375,21 +351,26 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeDeclarationTypeDef
 ```
 
-
 Required fields:
-- `executor`: `"ActionTypeExecutorTypeDef"`
-- `id`: `"ActionTypeIdentifierTypeDef"`
-- `inputArtifactDetails`: `"ActionTypeArtifactDetailsTypeDef"`
-- `outputArtifactDetails`: `"ActionTypeArtifactDetailsTypeDef"`
 
-
+- `executor`:
+  [ActionTypeExecutorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeexecutortypedef)
+- `id`:
+  [ActionTypeIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidentifiertypedef)
+- `inputArtifactDetails`:
+  [ActionTypeArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeartifactdetailstypedef)
+- `outputArtifactDetails`:
+  [ActionTypeArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeartifactdetailstypedef)
 
 Optional fields:
-- `description`: `str`
-- `permissions`: `"ActionTypePermissionsTypeDef"`
-- `properties`: `List["ActionTypePropertyTypeDef"]`
-- `urls`: `"ActionTypeUrlsTypeDef"`
 
+- `description`: `str`
+- `permissions`:
+  [ActionTypePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypepermissionstypedef)
+- `properties`:
+  `List`\[[ActionTypePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypepropertytypedef)\]
+- `urls`:
+  [ActionTypeUrlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeurlstypedef)
 
 ## ActionTypeExecutorTypeDef
 
@@ -397,17 +378,17 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeExecutorTypeDef
 ```
 
-
 Required fields:
-- `configuration`: `"ExecutorConfigurationTypeDef"`
-- `type`: `ExecutorType`
 
-
+- `configuration`:
+  [ExecutorConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executorconfigurationtypedef)
+- `type`:
+  [ExecutorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#executortype)
 
 Optional fields:
+
 - `policyStatementsTemplate`: `str`
 - `jobTimeout`: `int`
-
 
 ## ActionTypeIdTypeDef
 
@@ -415,15 +396,14 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeIdTypeDef
 ```
 
-
 Required fields:
-- `category`: `ActionCategory`
-- `owner`: `ActionOwner`
+
+- `category`:
+  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
+- `owner`:
+  [ActionOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionowner)
 - `provider`: `str`
 - `version`: `str`
-
-
-
 
 ## ActionTypeIdentifierTypeDef
 
@@ -431,15 +411,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeIdentifierTypeDef
 ```
 
-
 Required fields:
-- `category`: `ActionCategory`
+
+- `category`:
+  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
 - `owner`: `str`
 - `provider`: `str`
 - `version`: `str`
-
-
-
 
 ## ActionTypePermissionsTypeDef
 
@@ -447,12 +425,9 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypePermissionsTypeDef
 ```
 
-
 Required fields:
-- `allowedAccounts`: `List[str]`
 
-
-
+- `allowedAccounts`: `List`\[`str`\]
 
 ## ActionTypePropertyTypeDef
 
@@ -460,19 +435,17 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypePropertyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `optional`: `bool`
 - `key`: `bool`
 - `noEcho`: `bool`
 
-
-
 Optional fields:
+
 - `queryable`: `bool`
 - `description`: `str`
-
 
 ## ActionTypeSettingsTypeDef
 
@@ -480,15 +453,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `thirdPartyConfigurationUrl`: `str`
 - `entityUrlTemplate`: `str`
 - `executionUrlTemplate`: `str`
 - `revisionUrlTemplate`: `str`
-
 
 ## ActionTypeTypeDef
 
@@ -496,18 +466,21 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeTypeDef
 ```
 
-
 Required fields:
-- `id`: `"ActionTypeIdTypeDef"`
-- `inputArtifactDetails`: `"ArtifactDetailsTypeDef"`
-- `outputArtifactDetails`: `"ArtifactDetailsTypeDef"`
 
-
+- `id`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `inputArtifactDetails`:
+  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
+- `outputArtifactDetails`:
+  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
 
 Optional fields:
-- `settings`: `"ActionTypeSettingsTypeDef"`
-- `actionConfigurationProperties`: `List["ActionConfigurationPropertyTypeDef"]`
 
+- `settings`:
+  [ActionTypeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypesettingstypedef)
+- `actionConfigurationProperties`:
+  `List`\[[ActionConfigurationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionconfigurationpropertytypedef)\]
 
 ## ActionTypeUrlsTypeDef
 
@@ -515,15 +488,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ActionTypeUrlsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `configurationUrl`: `str`
 - `entityUrlTemplate`: `str`
 - `executionUrlTemplate`: `str`
 - `revisionUrlTemplate`: `str`
-
 
 ## ApprovalResultTypeDef
 
@@ -531,13 +501,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ApprovalResultTypeDef
 ```
 
-
 Required fields:
+
 - `summary`: `str`
-- `status`: `ApprovalStatus`
-
-
-
+- `status`:
+  [ApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#approvalstatus)
 
 ## ArtifactDetailTypeDef
 
@@ -545,13 +513,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ArtifactDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `s3location`: `"S3LocationTypeDef"`
 
+- `name`: `str`
+- `s3location`:
+  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#s3locationtypedef)
 
 ## ArtifactDetailsTypeDef
 
@@ -559,13 +525,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ArtifactDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `minimumCount`: `int`
 - `maximumCount`: `int`
-
-
-
 
 ## ArtifactLocationTypeDef
 
@@ -573,13 +536,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ArtifactLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `Literal['S3']`
-- `s3Location`: `"S3ArtifactLocationTypeDef"`
 
+- `type`: `Literal['S3']`
+- `s3Location`:
+  [S3ArtifactLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#s3artifactlocationtypedef)
 
 ## ArtifactRevisionTypeDef
 
@@ -587,10 +548,8 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ArtifactRevisionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `revisionId`: `str`
 - `revisionChangeIdentifier`: `str`
@@ -598,23 +557,21 @@ Optional fields:
 - `created`: `datetime`
 - `revisionUrl`: `str`
 
-
 ## ArtifactStoreTypeDef
 
 ```python
 from mypy_boto3_codepipeline.type_defs import ArtifactStoreTypeDef
 ```
 
-
 Required fields:
+
 - `type`: `Literal['S3']`
 - `location`: `str`
 
-
-
 Optional fields:
-- `encryptionKey`: `"EncryptionKeyTypeDef"`
 
+- `encryptionKey`:
+  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#encryptionkeytypedef)
 
 ## ArtifactTypeDef
 
@@ -622,14 +579,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ArtifactTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `revision`: `str`
-- `location`: `"ArtifactLocationTypeDef"`
-
+- `location`:
+  [ArtifactLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactlocationtypedef)
 
 ## BlockerDeclarationTypeDef
 
@@ -637,13 +592,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import BlockerDeclarationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `Literal['Schedule']`
-
-
-
 
 ## CreateCustomActionTypeOutputTypeDef
 
@@ -651,14 +603,14 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import CreateCustomActionTypeOutputTypeDef
 ```
 
-
 Required fields:
-- `actionType`: `"ActionTypeTypeDef"`
-- `tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `actionType`:
+  [ActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypetypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## CreatePipelineOutputTypeDef
 
@@ -666,14 +618,14 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import CreatePipelineOutputTypeDef
 ```
 
-
 Required fields:
-- `pipeline`: `"PipelineDeclarationTypeDef"`
-- `tags`: `List["TagTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pipeline`:
+  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## CurrentRevisionTypeDef
 
@@ -681,17 +633,15 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import CurrentRevisionTypeDef
 ```
 
-
 Required fields:
+
 - `revision`: `str`
 - `changeIdentifier`: `str`
 
-
-
 Optional fields:
+
 - `created`: `datetime`
 - `revisionSummary`: `str`
-
 
 ## EncryptionKeyTypeDef
 
@@ -699,13 +649,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import EncryptionKeyTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `type`: `Literal['KMS']`
-
-
-
 
 ## ErrorDetailsTypeDef
 
@@ -713,13 +660,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ErrorDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `code`: `str`
 - `message`: `str`
-
 
 ## ExecutionDetailsTypeDef
 
@@ -727,14 +671,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ExecutionDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `summary`: `str`
 - `externalExecutionId`: `str`
 - `percentComplete`: `int`
-
 
 ## ExecutionTriggerTypeDef
 
@@ -742,13 +683,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ExecutionTriggerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `triggerType`: `TriggerType`
-- `triggerDetail`: `str`
 
+- `triggerType`:
+  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#triggertype)
+- `triggerDetail`: `str`
 
 ## ExecutorConfigurationTypeDef
 
@@ -756,13 +695,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ExecutorConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `lambdaExecutorConfiguration`: `"LambdaExecutorConfigurationTypeDef"`
-- `jobWorkerExecutorConfiguration`: `"JobWorkerExecutorConfigurationTypeDef"`
 
+- `lambdaExecutorConfiguration`:
+  [LambdaExecutorConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#lambdaexecutorconfigurationtypedef)
+- `jobWorkerExecutorConfiguration`:
+  [JobWorkerExecutorConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#jobworkerexecutorconfigurationtypedef)
 
 ## FailureDetailsTypeDef
 
@@ -770,16 +708,15 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import FailureDetailsTypeDef
 ```
 
-
 Required fields:
-- `type`: `FailureType`
+
+- `type`:
+  [FailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#failuretype)
 - `message`: `str`
 
-
-
 Optional fields:
-- `externalExecutionId`: `str`
 
+- `externalExecutionId`: `str`
 
 ## GetActionTypeOutputTypeDef
 
@@ -787,13 +724,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import GetActionTypeOutputTypeDef
 ```
 
-
 Required fields:
-- `actionType`: `"ActionTypeDeclarationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `actionType`:
+  [ActionTypeDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypedeclarationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## GetJobDetailsOutputTypeDef
 
@@ -801,13 +737,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import GetJobDetailsOutputTypeDef
 ```
 
-
 Required fields:
-- `jobDetails`: `"JobDetailsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `jobDetails`:
+  [JobDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#jobdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## GetPipelineExecutionOutputTypeDef
 
@@ -815,13 +750,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import GetPipelineExecutionOutputTypeDef
 ```
 
-
 Required fields:
-- `pipelineExecution`: `"PipelineExecutionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pipelineExecution`:
+  [PipelineExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelineexecutiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## GetPipelineOutputTypeDef
 
@@ -829,14 +763,14 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import GetPipelineOutputTypeDef
 ```
 
-
 Required fields:
-- `pipeline`: `"PipelineDeclarationTypeDef"`
-- `metadata`: `"PipelineMetadataTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pipeline`:
+  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+- `metadata`:
+  [PipelineMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinemetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## GetPipelineStateOutputTypeDef
 
@@ -844,17 +778,16 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import GetPipelineStateOutputTypeDef
 ```
 
-
 Required fields:
+
 - `pipelineName`: `str`
 - `pipelineVersion`: `int`
-- `stageStates`: `List["StageStateTypeDef"]`
+- `stageStates`:
+  `List`\[[StageStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stagestatetypedef)\]
 - `created`: `datetime`
 - `updated`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## GetThirdPartyJobDetailsOutputTypeDef
 
@@ -862,13 +795,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import GetThirdPartyJobDetailsOutputTypeDef
 ```
 
-
 Required fields:
-- `jobDetails`: `"ThirdPartyJobDetailsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `jobDetails`:
+  [ThirdPartyJobDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#thirdpartyjobdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## InputArtifactTypeDef
 
@@ -876,12 +808,9 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import InputArtifactTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-
-
-
 
 ## JobDataTypeDef
 
@@ -889,19 +818,23 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import JobDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionTypeId`: `"ActionTypeIdTypeDef"`
-- `actionConfiguration`: `"ActionConfigurationTypeDef"`
-- `pipelineContext`: `"PipelineContextTypeDef"`
-- `inputArtifacts`: `List["ArtifactTypeDef"]`
-- `outputArtifacts`: `List["ArtifactTypeDef"]`
-- `artifactCredentials`: `"AWSSessionCredentialsTypeDef"`
-- `continuationToken`: `str`
-- `encryptionKey`: `"EncryptionKeyTypeDef"`
 
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `actionConfiguration`:
+  [ActionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionconfigurationtypedef)
+- `pipelineContext`:
+  [PipelineContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinecontexttypedef)
+- `inputArtifacts`:
+  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifacttypedef)\]
+- `outputArtifacts`:
+  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifacttypedef)\]
+- `artifactCredentials`:
+  [AWSSessionCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#awssessioncredentialstypedef)
+- `continuationToken`: `str`
+- `encryptionKey`:
+  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#encryptionkeytypedef)
 
 ## JobDetailsTypeDef
 
@@ -909,14 +842,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import JobDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `id`: `str`
-- `data`: `"JobDataTypeDef"`
-- `accountId`: `str`
 
+- `id`: `str`
+- `data`:
+  [JobDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#jobdatatypedef)
+- `accountId`: `str`
 
 ## JobTypeDef
 
@@ -924,15 +855,13 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import JobTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `id`: `str`
-- `data`: `"JobDataTypeDef"`
+- `data`:
+  [JobDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#jobdatatypedef)
 - `nonce`: `str`
 - `accountId`: `str`
-
 
 ## JobWorkerExecutorConfigurationTypeDef
 
@@ -940,13 +869,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import JobWorkerExecutorConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `pollingAccounts`: `List[str]`
-- `pollingServicePrincipals`: `List[str]`
 
+- `pollingAccounts`: `List`\[`str`\]
+- `pollingServicePrincipals`: `List`\[`str`\]
 
 ## LambdaExecutorConfigurationTypeDef
 
@@ -954,12 +880,9 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import LambdaExecutorConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `lambdaFunctionArn`: `str`
-
-
-
 
 ## ListActionExecutionsOutputTypeDef
 
@@ -967,14 +890,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListActionExecutionsOutputTypeDef
 ```
 
-
 Required fields:
-- `actionExecutionDetails`: `List["ActionExecutionDetailTypeDef"]`
+
+- `actionExecutionDetails`:
+  `List`\[[ActionExecutionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutiondetailtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ListActionTypesOutputTypeDef
 
@@ -982,14 +904,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListActionTypesOutputTypeDef
 ```
 
-
 Required fields:
-- `actionTypes`: `List["ActionTypeTypeDef"]`
+
+- `actionTypes`:
+  `List`\[[ActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypetypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ListPipelineExecutionsOutputTypeDef
 
@@ -997,14 +918,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListPipelineExecutionsOutputTypeDef
 ```
 
-
 Required fields:
-- `pipelineExecutionSummaries`: `List["PipelineExecutionSummaryTypeDef"]`
+
+- `pipelineExecutionSummaries`:
+  `List`\[[PipelineExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelineexecutionsummarytypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ListPipelinesOutputTypeDef
 
@@ -1012,14 +932,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListPipelinesOutputTypeDef
 ```
 
-
 Required fields:
-- `pipelines`: `List["PipelineSummaryTypeDef"]`
+
+- `pipelines`:
+  `List`\[[PipelineSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinesummarytypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1027,14 +946,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `tags`: `List["TagTypeDef"]`
+
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
 - `nextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ListWebhookItemTypeDef
 
@@ -1042,20 +960,20 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ListWebhookItemTypeDef
 ```
 
-
 Required fields:
-- `definition`: `"WebhookDefinitionTypeDef"`
+
+- `definition`:
+  [WebhookDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#webhookdefinitiontypedef)
 - `url`: `str`
 
-
-
 Optional fields:
+
 - `errorMessage`: `str`
 - `errorCode`: `str`
 - `lastTriggered`: `datetime`
 - `arn`: `str`
-- `tags`: `List["TagTypeDef"]`
-
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
 
 ## ListWebhooksOutputTypeDef
 
@@ -1063,14 +981,13 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ListWebhooksOutputTypeDef
 ```
 
-
 Required fields:
-- `webhooks`: `List["ListWebhookItemTypeDef"]`
+
+- `webhooks`:
+  `List`\[[ListWebhookItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listwebhookitemtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## OutputArtifactTypeDef
 
@@ -1078,12 +995,9 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import OutputArtifactTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-
-
-
 
 ## PaginatorConfigTypeDef
 
@@ -1091,14 +1005,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PipelineContextTypeDef
 
@@ -1106,16 +1017,15 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineContextTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineName`: `str`
-- `stage`: `"StageContextTypeDef"`
-- `action`: `"ActionContextTypeDef"`
+- `stage`:
+  [StageContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stagecontexttypedef)
+- `action`:
+  [ActionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actioncontexttypedef)
 - `pipelineArn`: `str`
 - `pipelineExecutionId`: `str`
-
 
 ## PipelineDeclarationTypeDef
 
@@ -1123,19 +1033,20 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineDeclarationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `roleArn`: `str`
-- `stages`: `List["StageDeclarationTypeDef"]`
-
-
+- `stages`:
+  `List`\[[StageDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stagedeclarationtypedef)\]
 
 Optional fields:
-- `artifactStore`: `"ArtifactStoreTypeDef"`
-- `artifactStores`: `Dict[str, "ArtifactStoreTypeDef"]`
-- `version`: `int`
 
+- `artifactStore`:
+  [ArtifactStoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactstoretypedef)
+- `artifactStores`: `Dict`\[`str`,
+  [ArtifactStoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactstoretypedef)\]
+- `version`: `int`
 
 ## PipelineExecutionSummaryTypeDef
 
@@ -1143,18 +1054,19 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineExecutionId`: `str`
-- `status`: `PipelineExecutionStatus`
+- `status`:
+  [PipelineExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#pipelineexecutionstatus)
 - `startTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `sourceRevisions`: `List["SourceRevisionTypeDef"]`
-- `trigger`: `"ExecutionTriggerTypeDef"`
-- `stopTrigger`: `"StopExecutionTriggerTypeDef"`
-
+- `sourceRevisions`:
+  `List`\[[SourceRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#sourcerevisiontypedef)\]
+- `trigger`:
+  [ExecutionTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executiontriggertypedef)
+- `stopTrigger`:
+  [StopExecutionTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stopexecutiontriggertypedef)
 
 ## PipelineExecutionTypeDef
 
@@ -1162,17 +1074,16 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineName`: `str`
 - `pipelineVersion`: `int`
 - `pipelineExecutionId`: `str`
-- `status`: `PipelineExecutionStatus`
+- `status`:
+  [PipelineExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#pipelineexecutionstatus)
 - `statusSummary`: `str`
-- `artifactRevisions`: `List["ArtifactRevisionTypeDef"]`
-
+- `artifactRevisions`:
+  `List`\[[ArtifactRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactrevisiontypedef)\]
 
 ## PipelineMetadataTypeDef
 
@@ -1180,14 +1091,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `pipelineArn`: `str`
 - `created`: `datetime`
 - `updated`: `datetime`
-
 
 ## PipelineSummaryTypeDef
 
@@ -1195,15 +1103,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PipelineSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `version`: `int`
 - `created`: `datetime`
 - `updated`: `datetime`
-
 
 ## PollForJobsOutputTypeDef
 
@@ -1211,13 +1116,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import PollForJobsOutputTypeDef
 ```
 
-
 Required fields:
-- `jobs`: `List["JobTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `jobs`:
+  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#jobtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## PollForThirdPartyJobsOutputTypeDef
 
@@ -1225,13 +1129,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import PollForThirdPartyJobsOutputTypeDef
 ```
 
-
 Required fields:
-- `jobs`: `List["ThirdPartyJobTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `jobs`:
+  `List`\[[ThirdPartyJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#thirdpartyjobtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## PutActionRevisionOutputTypeDef
 
@@ -1239,14 +1142,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import PutActionRevisionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `newRevision`: `bool`
 - `pipelineExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## PutApprovalResultOutputTypeDef
 
@@ -1254,13 +1155,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import PutApprovalResultOutputTypeDef
 ```
 
-
 Required fields:
+
 - `approvedAt`: `datetime`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## PutWebhookOutputTypeDef
 
@@ -1268,13 +1167,12 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import PutWebhookOutputTypeDef
 ```
 
-
 Required fields:
-- `webhook`: `"ListWebhookItemTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `webhook`:
+  [ListWebhookItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listwebhookitemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -1282,16 +1180,13 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RetryStageExecutionOutputTypeDef
 
@@ -1299,13 +1194,11 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import RetryStageExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `pipelineExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## S3ArtifactLocationTypeDef
 
@@ -1313,13 +1206,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import S3ArtifactLocationTypeDef
 ```
 
-
 Required fields:
+
 - `bucketName`: `str`
 - `objectKey`: `str`
-
-
-
 
 ## S3LocationTypeDef
 
@@ -1327,13 +1217,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import S3LocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bucket`: `str`
 - `key`: `str`
-
 
 ## SourceRevisionTypeDef
 
@@ -1341,17 +1228,15 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import SourceRevisionTypeDef
 ```
 
-
 Required fields:
+
 - `actionName`: `str`
 
-
-
 Optional fields:
+
 - `revisionId`: `str`
 - `revisionSummary`: `str`
 - `revisionUrl`: `str`
-
 
 ## StageContextTypeDef
 
@@ -1359,12 +1244,9 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import StageContextTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## StageDeclarationTypeDef
 
@@ -1372,16 +1254,16 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import StageDeclarationTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `actions`: `List["ActionDeclarationTypeDef"]`
-
-
+- `actions`:
+  `List`\[[ActionDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiondeclarationtypedef)\]
 
 Optional fields:
-- `blockers`: `List["BlockerDeclarationTypeDef"]`
 
+- `blockers`:
+  `List`\[[BlockerDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#blockerdeclarationtypedef)\]
 
 ## StageExecutionTypeDef
 
@@ -1389,13 +1271,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import StageExecutionTypeDef
 ```
 
-
 Required fields:
+
 - `pipelineExecutionId`: `str`
-- `status`: `StageExecutionStatus`
-
-
-
+- `status`:
+  [StageExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#stageexecutionstatus)
 
 ## StageStateTypeDef
 
@@ -1403,16 +1283,17 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import StageStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `stageName`: `str`
-- `inboundExecution`: `"StageExecutionTypeDef"`
-- `inboundTransitionState`: `"TransitionStateTypeDef"`
-- `actionStates`: `List["ActionStateTypeDef"]`
-- `latestExecution`: `"StageExecutionTypeDef"`
 
+- `stageName`: `str`
+- `inboundExecution`:
+  [StageExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stageexecutiontypedef)
+- `inboundTransitionState`:
+  [TransitionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#transitionstatetypedef)
+- `actionStates`:
+  `List`\[[ActionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionstatetypedef)\]
+- `latestExecution`:
+  [StageExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stageexecutiontypedef)
 
 ## StartPipelineExecutionOutputTypeDef
 
@@ -1420,13 +1301,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import StartPipelineExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `pipelineExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## StopExecutionTriggerTypeDef
 
@@ -1434,12 +1313,9 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import StopExecutionTriggerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `reason`: `str`
 
+- `reason`: `str`
 
 ## StopPipelineExecutionOutputTypeDef
 
@@ -1447,13 +1323,11 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import StopPipelineExecutionOutputTypeDef
 ```
 
-
 Required fields:
+
 - `pipelineExecutionId`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## TagTypeDef
 
@@ -1461,13 +1335,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## ThirdPartyJobDataTypeDef
 
@@ -1475,19 +1346,23 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `actionTypeId`: `"ActionTypeIdTypeDef"`
-- `actionConfiguration`: `"ActionConfigurationTypeDef"`
-- `pipelineContext`: `"PipelineContextTypeDef"`
-- `inputArtifacts`: `List["ArtifactTypeDef"]`
-- `outputArtifacts`: `List["ArtifactTypeDef"]`
-- `artifactCredentials`: `"AWSSessionCredentialsTypeDef"`
-- `continuationToken`: `str`
-- `encryptionKey`: `"EncryptionKeyTypeDef"`
 
+- `actionTypeId`:
+  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `actionConfiguration`:
+  [ActionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionconfigurationtypedef)
+- `pipelineContext`:
+  [PipelineContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinecontexttypedef)
+- `inputArtifacts`:
+  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifacttypedef)\]
+- `outputArtifacts`:
+  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifacttypedef)\]
+- `artifactCredentials`:
+  [AWSSessionCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#awssessioncredentialstypedef)
+- `continuationToken`: `str`
+- `encryptionKey`:
+  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#encryptionkeytypedef)
 
 ## ThirdPartyJobDetailsTypeDef
 
@@ -1495,14 +1370,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `id`: `str`
-- `data`: `"ThirdPartyJobDataTypeDef"`
-- `nonce`: `str`
 
+- `id`: `str`
+- `data`:
+  [ThirdPartyJobDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#thirdpartyjobdatatypedef)
+- `nonce`: `str`
 
 ## ThirdPartyJobTypeDef
 
@@ -1510,13 +1383,10 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `clientId`: `str`
 - `jobId`: `str`
-
 
 ## TransitionStateTypeDef
 
@@ -1524,15 +1394,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import TransitionStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `enabled`: `bool`
 - `lastChangedBy`: `str`
 - `lastChangedAt`: `datetime`
 - `disabledReason`: `str`
-
 
 ## UpdatePipelineOutputTypeDef
 
@@ -1540,13 +1407,12 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import UpdatePipelineOutputTypeDef
 ```
 
-
 Required fields:
-- `pipeline`: `"PipelineDeclarationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `pipeline`:
+  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#responsemetadata)
 
 ## WebhookAuthConfigurationTypeDef
 
@@ -1554,13 +1420,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import WebhookAuthConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AllowedIPRange`: `str`
 - `SecretToken`: `str`
-
 
 ## WebhookDefinitionTypeDef
 
@@ -1568,17 +1431,17 @@ Optional fields:
 from mypy_boto3_codepipeline.type_defs import WebhookDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `targetPipeline`: `str`
 - `targetAction`: `str`
-- `filters`: `List["WebhookFilterRuleTypeDef"]`
-- `authentication`: `WebhookAuthenticationType`
-- `authenticationConfiguration`: `"WebhookAuthConfigurationTypeDef"`
-
-
-
+- `filters`:
+  `List`\[[WebhookFilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#webhookfilterruletypedef)\]
+- `authentication`:
+  [WebhookAuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#webhookauthenticationtype)
+- `authenticationConfiguration`:
+  [WebhookAuthConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#webhookauthconfigurationtypedef)
 
 ## WebhookFilterRuleTypeDef
 
@@ -1586,12 +1449,10 @@ Required fields:
 from mypy_boto3_codepipeline.type_defs import WebhookFilterRuleTypeDef
 ```
 
-
 Required fields:
+
 - `jsonPath`: `str`
 
-
-
 Optional fields:
-- `matchEquals`: `str`
 
+- `matchEquals`: `str`

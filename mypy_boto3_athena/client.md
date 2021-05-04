@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Athena](./README.md) > AthenaClient
 
-Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
-type annotations stubs module [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+Auto-generated documentation for
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+type annotations stubs module
+[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [AthenaClient for boto3 Athena module](#athenaclient-for-boto3-athena-module)
   - [AthenaClient](#athenaclient)
@@ -60,12 +62,13 @@ def get_athena_client() -> AthenaClient:
     return boto3.client("athena")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
+Boto3 documentation:
+[Athena.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_athena.client import Exceptions
@@ -73,7 +76,6 @@ from mypy_boto3_athena.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -84,584 +86,584 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### batch_get_named_query
 
 Type annotations for `boto3.client("athena").batch_get_named_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query]
+Boto3 documentation:
+[Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
 
-```python
-def batch_get_named_query(
-    self,
-    NamedQueryIds: List[str]
-) -> BatchGetNamedQueryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NamedQueryIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#batchgetnamedqueryoutputtypedef).
 
 ### batch_get_query_execution
 
 Type annotations for `boto3.client("athena").batch_get_query_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution]
+Boto3 documentation:
+[Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
 
-```python
-def batch_get_query_execution(
-    self,
-    QueryExecutionIds: List[str]
-) -> BatchGetQueryExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryExecutionIds`: `List`\[`str`\] *(required)*
+
+Returns
+[BatchGetQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#batchgetqueryexecutionoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("athena").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate]
+Boto3 documentation:
+[Athena.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_data_catalog
 
 Type annotations for `boto3.client("athena").create_data_catalog` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog]
+Boto3 documentation:
+[Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
 
-```python
-def create_data_catalog(
-    self,
-    Name: str,
-    Type: DataCatalogType,
-    Description: str = None,
-    Parameters: Dict[str, str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Type`:
+  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
+  *(required)*
+- `Description`: `str`
+- `Parameters`: `Dict`\[`str`, `str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_named_query
 
 Type annotations for `boto3.client("athena").create_named_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query]
+Boto3 documentation:
+[Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
 
-```python
-def create_named_query(
-    self,
-    Name: str,
-    Database: str,
-    QueryString: str,
-    Description: str = None,
-    ClientRequestToken: str = None,
-    WorkGroup: str = None
-) -> CreateNamedQueryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Database`: `str` *(required)*
+- `QueryString`: `str` *(required)*
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `WorkGroup`: `str`
+
+Returns
+[CreateNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#createnamedqueryoutputtypedef).
 
 ### create_prepared_statement
 
 Type annotations for `boto3.client("athena").create_prepared_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement]
+Boto3 documentation:
+[Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
 
-```python
-def create_prepared_statement(
-    self,
-    StatementName: str,
-    WorkGroup: str,
-    QueryStatement: str,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StatementName`: `str` *(required)*
+- `WorkGroup`: `str` *(required)*
+- `QueryStatement`: `str` *(required)*
+- `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_work_group
 
 Type annotations for `boto3.client("athena").create_work_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group]
+Boto3 documentation:
+[Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
 
-```python
-def create_work_group(
-    self,
-    Name: str,
-    Configuration: "WorkGroupConfigurationTypeDef" = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Configuration`:
+  [WorkGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupconfigurationtypedef)
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_data_catalog
 
 Type annotations for `boto3.client("athena").delete_data_catalog` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog]
+Boto3 documentation:
+[Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
 
-```python
-def delete_data_catalog(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_named_query
 
 Type annotations for `boto3.client("athena").delete_named_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query]
+Boto3 documentation:
+[Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
 
-```python
-def delete_named_query(
-    self,
-    NamedQueryId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `NamedQueryId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_prepared_statement
 
 Type annotations for `boto3.client("athena").delete_prepared_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement]
+Boto3 documentation:
+[Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
 
-```python
-def delete_prepared_statement(
-    self,
-    StatementName: str,
-    WorkGroup: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StatementName`: `str` *(required)*
+- `WorkGroup`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_work_group
 
 Type annotations for `boto3.client("athena").delete_work_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group]
+Boto3 documentation:
+[Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
 
-```python
-def delete_work_group(
-    self,
-    WorkGroup: str,
-    RecursiveDeleteOption: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `WorkGroup`: `str` *(required)*
+- `RecursiveDeleteOption`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("athena").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url]
+Boto3 documentation:
+[Athena.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_data_catalog
 
 Type annotations for `boto3.client("athena").get_data_catalog` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog]
+Boto3 documentation:
+[Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
 
-```python
-def get_data_catalog(
-    self,
-    Name: str
-) -> GetDataCatalogOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetDataCatalogOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getdatacatalogoutputtypedef).
 
 ### get_database
 
 Type annotations for `boto3.client("athena").get_database` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database]
+Boto3 documentation:
+[Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
 
-```python
-def get_database(
-    self,
-    CatalogName: str,
-    DatabaseName: str
-) -> GetDatabaseOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogName`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+
+Returns
+[GetDatabaseOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getdatabaseoutputtypedef).
 
 ### get_named_query
 
 Type annotations for `boto3.client("athena").get_named_query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query]
+Boto3 documentation:
+[Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
 
-```python
-def get_named_query(
-    self,
-    NamedQueryId: str
-) -> GetNamedQueryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NamedQueryId`: `str` *(required)*
+
+Returns
+[GetNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getnamedqueryoutputtypedef).
 
 ### get_prepared_statement
 
 Type annotations for `boto3.client("athena").get_prepared_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement]
+Boto3 documentation:
+[Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
 
-```python
-def get_prepared_statement(
-    self,
-    StatementName: str,
-    WorkGroup: str
-) -> GetPreparedStatementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StatementName`: `str` *(required)*
+- `WorkGroup`: `str` *(required)*
+
+Returns
+[GetPreparedStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getpreparedstatementoutputtypedef).
 
 ### get_query_execution
 
 Type annotations for `boto3.client("athena").get_query_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution]
+Boto3 documentation:
+[Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
 
-```python
-def get_query_execution(
-    self,
-    QueryExecutionId: str
-) -> GetQueryExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryExecutionId`: `str` *(required)*
+
+Returns
+[GetQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getqueryexecutionoutputtypedef).
 
 ### get_query_results
 
 Type annotations for `boto3.client("athena").get_query_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results]
+Boto3 documentation:
+[Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
 
-```python
-def get_query_results(
-    self,
-    QueryExecutionId: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetQueryResultsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryExecutionId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetQueryResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getqueryresultsoutputtypedef).
 
 ### get_table_metadata
 
 Type annotations for `boto3.client("athena").get_table_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata]
+Boto3 documentation:
+[Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
 
-```python
-def get_table_metadata(
-    self,
-    CatalogName: str,
-    DatabaseName: str,
-    TableName: str
-) -> GetTableMetadataOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogName`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+
+Returns
+[GetTableMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#gettablemetadataoutputtypedef).
 
 ### get_work_group
 
 Type annotations for `boto3.client("athena").get_work_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group]
+Boto3 documentation:
+[Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
 
-```python
-def get_work_group(
-    self,
-    WorkGroup: str
-) -> GetWorkGroupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkGroup`: `str` *(required)*
+
+Returns
+[GetWorkGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getworkgroupoutputtypedef).
 
 ### list_data_catalogs
 
 Type annotations for `boto3.client("athena").list_data_catalogs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs]
+Boto3 documentation:
+[Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
 
-```python
-def list_data_catalogs(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDataCatalogsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDataCatalogsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatacatalogsoutputtypedef).
 
 ### list_databases
 
 Type annotations for `boto3.client("athena").list_databases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases]
+Boto3 documentation:
+[Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
 
-```python
-def list_databases(
-    self,
-    CatalogName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListDatabasesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDatabasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatabasesoutputtypedef).
 
 ### list_engine_versions
 
 Type annotations for `boto3.client("athena").list_engine_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions]
+Boto3 documentation:
+[Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
 
-```python
-def list_engine_versions(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEngineVersionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEngineVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listengineversionsoutputtypedef).
 
 ### list_named_queries
 
 Type annotations for `boto3.client("athena").list_named_queries` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries]
+Boto3 documentation:
+[Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
 
-```python
-def list_named_queries(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    WorkGroup: str = None
-) -> ListNamedQueriesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `WorkGroup`: `str`
+
+Returns
+[ListNamedQueriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listnamedqueriesoutputtypedef).
 
 ### list_prepared_statements
 
 Type annotations for `boto3.client("athena").list_prepared_statements` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements]
+Boto3 documentation:
+[Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
 
-```python
-def list_prepared_statements(
-    self,
-    WorkGroup: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPreparedStatementsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `WorkGroup`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPreparedStatementsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listpreparedstatementsoutputtypedef).
 
 ### list_query_executions
 
 Type annotations for `boto3.client("athena").list_query_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions]
+Boto3 documentation:
+[Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
 
-```python
-def list_query_executions(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None,
-    WorkGroup: str = None
-) -> ListQueryExecutionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `WorkGroup`: `str`
+
+Returns
+[ListQueryExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listqueryexecutionsoutputtypedef).
 
 ### list_table_metadata
 
 Type annotations for `boto3.client("athena").list_table_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata]
+Boto3 documentation:
+[Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
 
-```python
-def list_table_metadata(
-    self,
-    CatalogName: str,
-    DatabaseName: str,
-    Expression: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTableMetadataOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `CatalogName`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `Expression`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTableMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtablemetadataoutputtypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("athena").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource]
+Boto3 documentation:
+[Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceARN: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### list_work_groups
 
 Type annotations for `boto3.client("athena").list_work_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups]
+Boto3 documentation:
+[Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
 
-```python
-def list_work_groups(
-    self,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListWorkGroupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListWorkGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listworkgroupsoutputtypedef).
 
 ### start_query_execution
 
 Type annotations for `boto3.client("athena").start_query_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution]
+Boto3 documentation:
+[Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
 
-```python
-def start_query_execution(
-    self,
-    QueryString: str,
-    ClientRequestToken: str = None,
-    QueryExecutionContext: "QueryExecutionContextTypeDef" = None,
-    ResultConfiguration: "ResultConfigurationTypeDef" = None,
-    WorkGroup: str = None
-) -> StartQueryExecutionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `QueryString`: `str` *(required)*
+- `ClientRequestToken`: `str`
+- `QueryExecutionContext`:
+  [QueryExecutionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutioncontexttypedef)
+- `ResultConfiguration`:
+  [ResultConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultconfigurationtypedef)
+- `WorkGroup`: `str`
+
+Returns
+[StartQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#startqueryexecutionoutputtypedef).
 
 ### stop_query_execution
 
 Type annotations for `boto3.client("athena").stop_query_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution]
+Boto3 documentation:
+[Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
 
-```python
-def stop_query_execution(
-    self,
-    QueryExecutionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `QueryExecutionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("athena").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource]
+Boto3 documentation:
+[Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceARN: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("athena").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource]
+Boto3 documentation:
+[Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceARN: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_data_catalog
 
 Type annotations for `boto3.client("athena").update_data_catalog` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog]
+Boto3 documentation:
+[Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
 
-```python
-def update_data_catalog(
-    self,
-    Name: str,
-    Type: DataCatalogType,
-    Description: str = None,
-    Parameters: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Type`:
+  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
+  *(required)*
+- `Description`: `str`
+- `Parameters`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_prepared_statement
 
 Type annotations for `boto3.client("athena").update_prepared_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement]
+Boto3 documentation:
+[Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
 
-```python
-def update_prepared_statement(
-    self,
-    StatementName: str,
-    WorkGroup: str,
-    QueryStatement: str,
-    Description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `StatementName`: `str` *(required)*
+- `WorkGroup`: `str` *(required)*
+- `QueryStatement`: `str` *(required)*
+- `Description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_work_group
 
 Type annotations for `boto3.client("athena").update_work_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group]
+Boto3 documentation:
+[Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
 
-```python
-def update_work_group(
-    self,
-    WorkGroup: str,
-    Description: str = None,
-    ConfigurationUpdates: WorkGroupConfigurationUpdatesTypeDef = None,
-    State: WorkGroupState = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `WorkGroup`: `str` *(required)*
+- `Description`: `str`
+- `ConfigurationUpdates`:
+  [WorkGroupConfigurationUpdatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupconfigurationupdatestypedef)
+- `State`:
+  [WorkGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#workgroupstate)
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("athena").get_paginator` method with overloads.
+Type annotations for `boto3.client("athena").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_query_results")` -> [GetQueryResultsPaginator](./paginators.md#getqueryresultspaginator)
-- `client.get_paginator("list_data_catalogs")` -> [ListDataCatalogsPaginator](./paginators.md#listdatacatalogspaginator)
-- `client.get_paginator("list_databases")` -> [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
-- `client.get_paginator("list_named_queries")` -> [ListNamedQueriesPaginator](./paginators.md#listnamedqueriespaginator)
-- `client.get_paginator("list_query_executions")` -> [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
-- `client.get_paginator("list_table_metadata")` -> [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
+- `client.get_paginator("get_query_results")` ->
+  [GetQueryResultsPaginator](./paginators.md#getqueryresultspaginator)
+- `client.get_paginator("list_data_catalogs")` ->
+  [ListDataCatalogsPaginator](./paginators.md#listdatacatalogspaginator)
+- `client.get_paginator("list_databases")` ->
+  [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- `client.get_paginator("list_named_queries")` ->
+  [ListNamedQueriesPaginator](./paginators.md#listnamedqueriespaginator)
+- `client.get_paginator("list_query_executions")` ->
+  [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
+- `client.get_paginator("list_table_metadata")` ->
+  [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

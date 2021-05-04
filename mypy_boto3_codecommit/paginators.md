@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeCommit](./README.md) > Paginators
 
-Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
-type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+Auto-generated documentation for
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+type annotations stubs module
+[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Paginators for boto3 CodeCommit module](#paginators-for-boto3-codecommit-module)
   - [DescribePullRequestEventsPaginator](#describepullrequesteventspaginator)
@@ -16,7 +18,8 @@ type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/m
 
 ## DescribePullRequestEventsPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("describe_pull_request_events")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("describe_pull_request_events")`.
 
 Can be used directly:
 
@@ -27,22 +30,25 @@ def get_describe_pull_request_events_paginator() -> DescribePullRequestEventsPag
     return boto3.client("codecommit").get_paginator("describe_pull_request_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
+Boto3 documentation:
+[CodeCommit.Paginator.DescribePullRequestEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
 
-```python
-class DescribePullRequestEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        pullRequestId: str,
-        pullRequestEventType: PullRequestEventType = None,
-        actorArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribePullRequestEventsOutputTypeDef]:
-        pass
-```
+Arguments for `DescribePullRequestEventsPaginator.paginate` method:
+
+- `pullRequestId`: `str` *(required)*
+- `pullRequestEventType`:
+  [PullRequestEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequesteventtype)
+- `actorArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`DescribePullRequestEventsPaginator.paginate` returns
+`Iterator`\[[DescribePullRequestEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describepullrequesteventsoutputtypedef)\].
+
 ## GetCommentsForComparedCommitPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("get_comments_for_compared_commit")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("get_comments_for_compared_commit")`.
 
 Can be used directly:
 
@@ -53,22 +59,24 @@ def get_get_comments_for_compared_commit_paginator() -> GetCommentsForComparedCo
     return boto3.client("codecommit").get_paginator("get_comments_for_compared_commit")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
+Boto3 documentation:
+[CodeCommit.Paginator.GetCommentsForComparedCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
 
-```python
-class GetCommentsForComparedCommitPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        afterCommitId: str,
-        beforeCommitId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetCommentsForComparedCommitOutputTypeDef]:
-        pass
-```
+Arguments for `GetCommentsForComparedCommitPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `afterCommitId`: `str` *(required)*
+- `beforeCommitId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`GetCommentsForComparedCommitPaginator.paginate` returns
+`Iterator`\[[GetCommentsForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforcomparedcommitoutputtypedef)\].
+
 ## GetCommentsForPullRequestPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("get_comments_for_pull_request")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("get_comments_for_pull_request")`.
 
 Can be used directly:
 
@@ -79,23 +87,25 @@ def get_get_comments_for_pull_request_paginator() -> GetCommentsForPullRequestPa
     return boto3.client("codecommit").get_paginator("get_comments_for_pull_request")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
+Boto3 documentation:
+[CodeCommit.Paginator.GetCommentsForPullRequest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
 
-```python
-class GetCommentsForPullRequestPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        pullRequestId: str,
-        repositoryName: str = None,
-        beforeCommitId: str = None,
-        afterCommitId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetCommentsForPullRequestOutputTypeDef]:
-        pass
-```
+Arguments for `GetCommentsForPullRequestPaginator.paginate` method:
+
+- `pullRequestId`: `str` *(required)*
+- `repositoryName`: `str`
+- `beforeCommitId`: `str`
+- `afterCommitId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`GetCommentsForPullRequestPaginator.paginate` returns
+`Iterator`\[[GetCommentsForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforpullrequestoutputtypedef)\].
+
 ## GetDifferencesPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("get_differences")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("get_differences")`.
 
 Can be used directly:
 
@@ -106,24 +116,26 @@ def get_get_differences_paginator() -> GetDifferencesPaginator:
     return boto3.client("codecommit").get_paginator("get_differences")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
+Boto3 documentation:
+[CodeCommit.Paginator.GetDifferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
 
-```python
-class GetDifferencesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        afterCommitSpecifier: str,
-        beforeCommitSpecifier: str = None,
-        beforePath: str = None,
-        afterPath: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetDifferencesOutputTypeDef]:
-        pass
-```
+Arguments for `GetDifferencesPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `afterCommitSpecifier`: `str` *(required)*
+- `beforeCommitSpecifier`: `str`
+- `beforePath`: `str`
+- `afterPath`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`GetDifferencesPaginator.paginate` returns
+`Iterator`\[[GetDifferencesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getdifferencesoutputtypedef)\].
+
 ## ListBranchesPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("list_branches")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("list_branches")`.
 
 Can be used directly:
 
@@ -134,20 +146,22 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
     return boto3.client("codecommit").get_paginator("list_branches")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
+Boto3 documentation:
+[CodeCommit.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
 
-```python
-class ListBranchesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBranchesOutputTypeDef]:
-        pass
-```
+Arguments for `ListBranchesPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`ListBranchesPaginator.paginate` returns
+`Iterator`\[[ListBranchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listbranchesoutputtypedef)\].
+
 ## ListPullRequestsPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("list_pull_requests")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("list_pull_requests")`.
 
 Can be used directly:
 
@@ -158,22 +172,25 @@ def get_list_pull_requests_paginator() -> ListPullRequestsPaginator:
     return boto3.client("codecommit").get_paginator("list_pull_requests")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
+Boto3 documentation:
+[CodeCommit.Paginator.ListPullRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
 
-```python
-class ListPullRequestsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        repositoryName: str,
-        authorArn: str = None,
-        pullRequestStatus: PullRequestStatusEnum = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPullRequestsOutputTypeDef]:
-        pass
-```
+Arguments for `ListPullRequestsPaginator.paginate` method:
+
+- `repositoryName`: `str` *(required)*
+- `authorArn`: `str`
+- `pullRequestStatus`:
+  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`ListPullRequestsPaginator.paginate` returns
+`Iterator`\[[ListPullRequestsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listpullrequestsoutputtypedef)\].
+
 ## ListRepositoriesPaginator
 
-Type annotations for `boto3.client("codecommit").get_paginator("list_repositories")`.
+Type annotations for
+`boto3.client("codecommit").get_paginator("list_repositories")`.
 
 Can be used directly:
 
@@ -184,15 +201,17 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return boto3.client("codecommit").get_paginator("list_repositories")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
+Boto3 documentation:
+[CodeCommit.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
 
-```python
-class ListRepositoriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        sortBy: SortByEnum = None,
-        order: OrderEnum = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRepositoriesOutputTypeDef]:
-        pass
-```
+Arguments for `ListRepositoriesPaginator.paginate` method:
+
+- `sortBy`:
+  [SortByEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#sortbyenum)
+- `order`:
+  [OrderEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#orderenum)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+
+`ListRepositoriesPaginator.paginate` returns
+`Iterator`\[[ListRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesoutputtypedef)\].

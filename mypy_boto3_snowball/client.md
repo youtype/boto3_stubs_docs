@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Snowball](./README.md) > SnowballClient
 
-Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+Auto-generated documentation for
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+type annotations stubs module
+[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [SnowballClient for boto3 Snowball module](#snowballclient-for-boto3-snowball-module)
   - [SnowballClient](#snowballclient)
@@ -48,12 +50,13 @@ def get_snowball_client() -> SnowballClient:
     return boto3.client("snowball")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
+Boto3 documentation:
+[Snowball.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_snowball.client import Exceptions
@@ -61,7 +64,6 @@ from mypy_boto3_snowball.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -78,404 +80,426 @@ Exceptions:
 - `Exceptions.ReturnShippingLabelAlreadyExistsException`
 - `Exceptions.UnsupportedAddressException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("snowball").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate]
+Boto3 documentation:
+[Snowball.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_cluster
 
 Type annotations for `boto3.client("snowball").cancel_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster]
+Boto3 documentation:
+[Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
 
-```python
-def cancel_cluster(
-    self,
-    ClusterId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_job
 
 Type annotations for `boto3.client("snowball").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job]
+Boto3 documentation:
+[Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    JobId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_address
 
 Type annotations for `boto3.client("snowball").create_address` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address]
+Boto3 documentation:
+[Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
 
-```python
-def create_address(
-    self,
-    Address: "AddressTypeDef"
-) -> CreateAddressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Address`:
+  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#addresstypedef)
+  *(required)*
+
+Returns
+[CreateAddressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createaddressresulttypedef).
 
 ### create_cluster
 
 Type annotations for `boto3.client("snowball").create_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster]
+Boto3 documentation:
+[Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
 
-```python
-def create_cluster(
-    self,
-    JobType: JobType,
-    Resources: "JobResourceTypeDef",
-    AddressId: str,
-    RoleARN: str,
-    ShippingOption: ShippingOption,
-    Description: str = None,
-    KmsKeyARN: str = None,
-    SnowballType: SnowballType = None,
-    Notification: "NotificationTypeDef" = None,
-    ForwardingAddressId: str = None,
-    TaxDocuments: "TaxDocumentsTypeDef" = None
-) -> CreateClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobtype)
+  *(required)*
+- `Resources`:
+  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+  *(required)*
+- `AddressId`: `str` *(required)*
+- `RoleARN`: `str` *(required)*
+- `ShippingOption`:
+  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
+  *(required)*
+- `Description`: `str`
+- `KmsKeyARN`: `str`
+- `SnowballType`:
+  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+- `ForwardingAddressId`: `str`
+- `TaxDocuments`:
+  [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
+
+Returns
+[CreateClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createclusterresulttypedef).
 
 ### create_job
 
 Type annotations for `boto3.client("snowball").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job]
+Boto3 documentation:
+[Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
 
-```python
-def create_job(
-    self,
-    JobType: JobType = None,
-    Resources: "JobResourceTypeDef" = None,
-    Description: str = None,
-    AddressId: str = None,
-    KmsKeyARN: str = None,
-    RoleARN: str = None,
-    SnowballCapacityPreference: SnowballCapacity = None,
-    ShippingOption: ShippingOption = None,
-    Notification: "NotificationTypeDef" = None,
-    ClusterId: str = None,
-    SnowballType: SnowballType = None,
-    ForwardingAddressId: str = None,
-    TaxDocuments: "TaxDocumentsTypeDef" = None,
-    DeviceConfiguration: "DeviceConfigurationTypeDef" = None
-) -> CreateJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobtype)
+- `Resources`:
+  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+- `Description`: `str`
+- `AddressId`: `str`
+- `KmsKeyARN`: `str`
+- `RoleARN`: `str`
+- `SnowballCapacityPreference`:
+  [SnowballCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballcapacity)
+- `ShippingOption`:
+  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+- `ClusterId`: `str`
+- `SnowballType`:
+  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `ForwardingAddressId`: `str`
+- `TaxDocuments`:
+  [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
+- `DeviceConfiguration`:
+  [DeviceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#deviceconfigurationtypedef)
+
+Returns
+[CreateJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createjobresulttypedef).
 
 ### create_return_shipping_label
 
-Type annotations for `boto3.client("snowball").create_return_shipping_label` method.
+Type annotations for `boto3.client("snowball").create_return_shipping_label`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label]
+Boto3 documentation:
+[Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
 
-```python
-def create_return_shipping_label(
-    self,
-    JobId: str,
-    ShippingOption: ShippingOption = None
-) -> CreateReturnShippingLabelResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `ShippingOption`:
+  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
+
+Returns
+[CreateReturnShippingLabelResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createreturnshippinglabelresulttypedef).
 
 ### describe_address
 
 Type annotations for `boto3.client("snowball").describe_address` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address]
+Boto3 documentation:
+[Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
 
-```python
-def describe_address(
-    self,
-    AddressId: str
-) -> DescribeAddressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `AddressId`: `str` *(required)*
+
+Returns
+[DescribeAddressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describeaddressresulttypedef).
 
 ### describe_addresses
 
 Type annotations for `boto3.client("snowball").describe_addresses` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses]
+Boto3 documentation:
+[Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
 
-```python
-def describe_addresses(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeAddressesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeAddressesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describeaddressesresulttypedef).
 
 ### describe_cluster
 
 Type annotations for `boto3.client("snowball").describe_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster]
+Boto3 documentation:
+[Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
 
-```python
-def describe_cluster(
-    self,
-    ClusterId: str
-) -> DescribeClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[DescribeClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describeclusterresulttypedef).
 
 ### describe_job
 
 Type annotations for `boto3.client("snowball").describe_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job]
+Boto3 documentation:
+[Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
 
-```python
-def describe_job(
-    self,
-    JobId: str
-) -> DescribeJobResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describejobresulttypedef).
 
 ### describe_return_shipping_label
 
-Type annotations for `boto3.client("snowball").describe_return_shipping_label` method.
+Type annotations for `boto3.client("snowball").describe_return_shipping_label`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label]
+Boto3 documentation:
+[Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
 
-```python
-def describe_return_shipping_label(
-    self,
-    JobId: str = None
-) -> DescribeReturnShippingLabelResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str`
+
+Returns
+[DescribeReturnShippingLabelResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describereturnshippinglabelresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("snowball").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url]
+Boto3 documentation:
+[Snowball.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_job_manifest
 
 Type annotations for `boto3.client("snowball").get_job_manifest` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest]
+Boto3 documentation:
+[Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
 
-```python
-def get_job_manifest(
-    self,
-    JobId: str
-) -> GetJobManifestResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[GetJobManifestResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#getjobmanifestresulttypedef).
 
 ### get_job_unlock_code
 
 Type annotations for `boto3.client("snowball").get_job_unlock_code` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code]
+Boto3 documentation:
+[Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
 
-```python
-def get_job_unlock_code(
-    self,
-    JobId: str
-) -> GetJobUnlockCodeResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[GetJobUnlockCodeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#getjobunlockcoderesulttypedef).
 
 ### get_snowball_usage
 
 Type annotations for `boto3.client("snowball").get_snowball_usage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage]
+Boto3 documentation:
+[Snowball.Client.get_snowball_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
 
-```python
-def get_snowball_usage(
-    self
-) -> GetSnowballUsageResultTypeDef:
-    pass
-```
+Returns
+[GetSnowballUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#getsnowballusageresulttypedef).
 
 ### get_software_updates
 
 Type annotations for `boto3.client("snowball").get_software_updates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates]
+Boto3 documentation:
+[Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
 
-```python
-def get_software_updates(
-    self,
-    JobId: str
-) -> GetSoftwareUpdatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[GetSoftwareUpdatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#getsoftwareupdatesresulttypedef).
 
 ### list_cluster_jobs
 
 Type annotations for `boto3.client("snowball").list_cluster_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs]
+Boto3 documentation:
+[Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
 
-```python
-def list_cluster_jobs(
-    self,
-    ClusterId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListClusterJobsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListClusterJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listclusterjobsresulttypedef).
 
 ### list_clusters
 
 Type annotations for `boto3.client("snowball").list_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters]
+Boto3 documentation:
+[Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
 
-```python
-def list_clusters(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListClustersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListClustersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listclustersresulttypedef).
 
 ### list_compatible_images
 
 Type annotations for `boto3.client("snowball").list_compatible_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images]
+Boto3 documentation:
+[Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
 
-```python
-def list_compatible_images(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListCompatibleImagesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListCompatibleImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listcompatibleimagesresulttypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("snowball").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs]
+Boto3 documentation:
+[Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListJobsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listjobsresulttypedef).
 
 ### update_cluster
 
 Type annotations for `boto3.client("snowball").update_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster]
+Boto3 documentation:
+[Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
 
-```python
-def update_cluster(
-    self,
-    ClusterId: str,
-    RoleARN: str = None,
-    Description: str = None,
-    Resources: "JobResourceTypeDef" = None,
-    AddressId: str = None,
-    ShippingOption: ShippingOption = None,
-    Notification: "NotificationTypeDef" = None,
-    ForwardingAddressId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ClusterId`: `str` *(required)*
+- `RoleARN`: `str`
+- `Description`: `str`
+- `Resources`:
+  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+- `AddressId`: `str`
+- `ShippingOption`:
+  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+- `ForwardingAddressId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_job
 
 Type annotations for `boto3.client("snowball").update_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job]
+Boto3 documentation:
+[Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
 
-```python
-def update_job(
-    self,
-    JobId: str,
-    RoleARN: str = None,
-    Notification: "NotificationTypeDef" = None,
-    Resources: "JobResourceTypeDef" = None,
-    AddressId: str = None,
-    ShippingOption: ShippingOption = None,
-    Description: str = None,
-    SnowballCapacityPreference: SnowballCapacity = None,
-    ForwardingAddressId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `RoleARN`: `str`
+- `Notification`:
+  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+- `Resources`:
+  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+- `AddressId`: `str`
+- `ShippingOption`:
+  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
+- `Description`: `str`
+- `SnowballCapacityPreference`:
+  [SnowballCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballcapacity)
+- `ForwardingAddressId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_job_shipment_state
 
-Type annotations for `boto3.client("snowball").update_job_shipment_state` method.
+Type annotations for `boto3.client("snowball").update_job_shipment_state`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state]
+Boto3 documentation:
+[Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
 
-```python
-def update_job_shipment_state(
-    self,
-    JobId: str,
-    ShipmentState: ShipmentState
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `JobId`: `str` *(required)*
+- `ShipmentState`:
+  [ShipmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shipmentstate)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("snowball").get_paginator` method with overloads.
+Type annotations for `boto3.client("snowball").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_addresses")` -> [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
-- `client.get_paginator("list_cluster_jobs")` -> [ListClusterJobsPaginator](./paginators.md#listclusterjobspaginator)
-- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_compatible_images")` -> [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
+- `client.get_paginator("describe_addresses")` ->
+  [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
+- `client.get_paginator("list_cluster_jobs")` ->
+  [ListClusterJobsPaginator](./paginators.md#listclusterjobspaginator)
+- `client.get_paginator("list_clusters")` ->
+  [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_compatible_images")` ->
+  [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)

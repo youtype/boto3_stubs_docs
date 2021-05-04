@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Literals
 
-Auto-generated documentation for [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
-type annotations stubs module [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+Auto-generated documentation for
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+type annotations stubs module
+[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [Literals for boto3 MarketplaceEntitlementService module](#literals-for-boto3-marketplaceentitlementservice-module)
   - [GetEntitlementFilterName](#getentitlementfiltername)

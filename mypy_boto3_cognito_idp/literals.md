@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Literals
 
-Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+Auto-generated documentation for
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+type annotations stubs module
+[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 - [Literals for boto3 CognitoIdentityProvider module](#literals-for-boto3-cognitoidentityprovider-module)
   - [AccountTakeoverEventActionType](#accounttakeovereventactiontype)

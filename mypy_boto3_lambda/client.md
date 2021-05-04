@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Lambda](./README.md) > LambdaClient
 
-Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
-type annotations stubs module [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+Auto-generated documentation for
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+type annotations stubs module
+[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [LambdaClient for boto3 Lambda module](#lambdaclient-for-boto3-lambda-module)
   - [LambdaClient](#lambdaclient)
@@ -85,12 +87,13 @@ def get_lambda_client() -> LambdaClient:
     return boto3.client("lambda")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
+Boto3 documentation:
+[Lambda.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lambda.client import Exceptions
@@ -98,7 +101,6 @@ from mypy_boto3_lambda.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -138,1044 +140,1076 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnsupportedMediaTypeException`
 
-
 ## Methods
-
 
 ### add_layer_version_permission
 
-Type annotations for `boto3.client("lambda").add_layer_version_permission` method.
+Type annotations for `boto3.client("lambda").add_layer_version_permission`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission]
+Boto3 documentation:
+[Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
 
-```python
-def add_layer_version_permission(
-    self,
-    LayerName: str,
-    VersionNumber: int,
-    StatementId: str,
-    Action: str,
-    Principal: str,
-    OrganizationId: str = None,
-    RevisionId: str = None
-) -> AddLayerVersionPermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `VersionNumber`: `int` *(required)*
+- `StatementId`: `str` *(required)*
+- `Action`: `str` *(required)*
+- `Principal`: `str` *(required)*
+- `OrganizationId`: `str`
+- `RevisionId`: `str`
+
+Returns
+[AddLayerVersionPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#addlayerversionpermissionresponsetypedef).
 
 ### add_permission
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission]
+Boto3 documentation:
+[Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
 
-```python
-def add_permission(
-    self,
-    FunctionName: str,
-    StatementId: str,
-    Action: str,
-    Principal: str,
-    SourceArn: str = None,
-    SourceAccount: str = None,
-    EventSourceToken: str = None,
-    Qualifier: str = None,
-    RevisionId: str = None
-) -> AddPermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `StatementId`: `str` *(required)*
+- `Action`: `str` *(required)*
+- `Principal`: `str` *(required)*
+- `SourceArn`: `str`
+- `SourceAccount`: `str`
+- `EventSourceToken`: `str`
+- `Qualifier`: `str`
+- `RevisionId`: `str`
+
+Returns
+[AddPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#addpermissionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("lambda").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate]
+Boto3 documentation:
+[Lambda.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_alias
 
 Type annotations for `boto3.client("lambda").create_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias]
+Boto3 documentation:
+[Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
 
-```python
-def create_alias(
-    self,
-    FunctionName: str,
-    Name: str,
-    FunctionVersion: str,
-    Description: str = None,
-    RoutingConfig: "AliasRoutingConfigurationTypeDef" = None
-) -> "AliasConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `FunctionVersion`: `str` *(required)*
+- `Description`: `str`
+- `RoutingConfig`:
+  [AliasRoutingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasroutingconfigurationtypedef)
+
+Returns
+[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
 
 ### create_code_signing_config
 
-Type annotations for `boto3.client("lambda").create_code_signing_config` method.
+Type annotations for `boto3.client("lambda").create_code_signing_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
 
-```python
-def create_code_signing_config(
-    self,
-    AllowedPublishers: "AllowedPublishersTypeDef",
-    Description: str = None,
-    CodeSigningPolicies: "CodeSigningPoliciesTypeDef" = None
-) -> CreateCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AllowedPublishers`:
+  [AllowedPublishersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#allowedpublisherstypedef)
+  *(required)*
+- `Description`: `str`
+- `CodeSigningPolicies`:
+  [CodeSigningPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#codesigningpoliciestypedef)
+
+Returns
+[CreateCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#createcodesigningconfigresponsetypedef).
 
 ### create_event_source_mapping
 
-Type annotations for `boto3.client("lambda").create_event_source_mapping` method.
+Type annotations for `boto3.client("lambda").create_event_source_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping]
+Boto3 documentation:
+[Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
 
-```python
-def create_event_source_mapping(
-    self,
-    FunctionName: str,
-    EventSourceArn: str = None,
-    Enabled: bool = None,
-    BatchSize: int = None,
-    MaximumBatchingWindowInSeconds: int = None,
-    ParallelizationFactor: int = None,
-    StartingPosition: EventSourcePosition = None,
-    StartingPositionTimestamp: datetime = None,
-    DestinationConfig: "DestinationConfigTypeDef" = None,
-    MaximumRecordAgeInSeconds: int = None,
-    BisectBatchOnFunctionError: bool = None,
-    MaximumRetryAttempts: int = None,
-    TumblingWindowInSeconds: int = None,
-    Topics: List[str] = None,
-    Queues: List[str] = None,
-    SourceAccessConfigurations: List["SourceAccessConfigurationTypeDef"] = None,
-    SelfManagedEventSource: "SelfManagedEventSourceTypeDef" = None,
-    FunctionResponseTypes: List[Literal['ReportBatchItemFailures']] = None
-) -> "EventSourceMappingConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `EventSourceArn`: `str`
+- `Enabled`: `bool`
+- `BatchSize`: `int`
+- `MaximumBatchingWindowInSeconds`: `int`
+- `ParallelizationFactor`: `int`
+- `StartingPosition`:
+  [EventSourcePosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#eventsourceposition)
+- `StartingPositionTimestamp`: `datetime`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+- `MaximumRecordAgeInSeconds`: `int`
+- `BisectBatchOnFunctionError`: `bool`
+- `MaximumRetryAttempts`: `int`
+- `TumblingWindowInSeconds`: `int`
+- `Topics`: `List`\[`str`\]
+- `Queues`: `List`\[`str`\]
+- `SourceAccessConfigurations`:
+  `List`\[[SourceAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#sourceaccessconfigurationtypedef)\]
+- `SelfManagedEventSource`:
+  [SelfManagedEventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#selfmanagedeventsourcetypedef)
+- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']`\]
+
+Returns
+[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
 
 ### create_function
 
 Type annotations for `boto3.client("lambda").create_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function]
+Boto3 documentation:
+[Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
 
-```python
-def create_function(
-    self,
-    FunctionName: str,
-    Role: str,
-    Code: FunctionCodeTypeDef,
-    Runtime: Runtime = None,
-    Handler: str = None,
-    Description: str = None,
-    Timeout: int = None,
-    MemorySize: int = None,
-    Publish: bool = None,
-    VpcConfig: VpcConfigTypeDef = None,
-    PackageType: PackageType = None,
-    DeadLetterConfig: "DeadLetterConfigTypeDef" = None,
-    Environment: EnvironmentTypeDef = None,
-    KMSKeyArn: str = None,
-    TracingConfig: TracingConfigTypeDef = None,
-    Tags: Dict[str, str] = None,
-    Layers: List[str] = None,
-    FileSystemConfigs: List["FileSystemConfigTypeDef"] = None,
-    ImageConfig: "ImageConfigTypeDef" = None,
-    CodeSigningConfigArn: str = None
-) -> "FunctionConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Role`: `str` *(required)*
+- `Code`:
+  [FunctionCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioncodetypedef)
+  *(required)*
+- `Runtime`:
+  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `Handler`: `str`
+- `Description`: `str`
+- `Timeout`: `int`
+- `MemorySize`: `int`
+- `Publish`: `bool`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#vpcconfigtypedef)
+- `PackageType`:
+  [PackageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#packagetype)
+- `DeadLetterConfig`:
+  [DeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#deadletterconfigtypedef)
+- `Environment`:
+  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#environmenttypedef)
+- `KMSKeyArn`: `str`
+- `TracingConfig`:
+  [TracingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#tracingconfigtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Layers`: `List`\[`str`\]
+- `FileSystemConfigs`:
+  `List`\[[FileSystemConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#filesystemconfigtypedef)\]
+- `ImageConfig`:
+  [ImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#imageconfigtypedef)
+- `CodeSigningConfigArn`: `str`
+
+Returns
+[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
 
 ### delete_alias
 
 Type annotations for `boto3.client("lambda").delete_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias]
+Boto3 documentation:
+[Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
 
-```python
-def delete_alias(
-    self,
-    FunctionName: str,
-    Name: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Name`: `str` *(required)*
 
 ### delete_code_signing_config
 
-Type annotations for `boto3.client("lambda").delete_code_signing_config` method.
+Type annotations for `boto3.client("lambda").delete_code_signing_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
 
-```python
-def delete_code_signing_config(
-    self,
-    CodeSigningConfigArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `CodeSigningConfigArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_event_source_mapping
 
-Type annotations for `boto3.client("lambda").delete_event_source_mapping` method.
+Type annotations for `boto3.client("lambda").delete_event_source_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping]
+Boto3 documentation:
+[Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
 
-```python
-def delete_event_source_mapping(
-    self,
-    UUID: str
-) -> "EventSourceMappingConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `UUID`: `str` *(required)*
+
+Returns
+[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
 
 ### delete_function
 
 Type annotations for `boto3.client("lambda").delete_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function]
+Boto3 documentation:
+[Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
 
-```python
-def delete_function(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
 
 ### delete_function_code_signing_config
 
-Type annotations for `boto3.client("lambda").delete_function_code_signing_config` method.
+Type annotations for
+`boto3.client("lambda").delete_function_code_signing_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
 
-```python
-def delete_function_code_signing_config(
-    self,
-    FunctionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
 
 ### delete_function_concurrency
 
-Type annotations for `boto3.client("lambda").delete_function_concurrency` method.
+Type annotations for `boto3.client("lambda").delete_function_concurrency`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency]
+Boto3 documentation:
+[Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
 
-```python
-def delete_function_concurrency(
-    self,
-    FunctionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
 
 ### delete_function_event_invoke_config
 
-Type annotations for `boto3.client("lambda").delete_function_event_invoke_config` method.
+Type annotations for
+`boto3.client("lambda").delete_function_event_invoke_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config]
+Boto3 documentation:
+[Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
 
-```python
-def delete_function_event_invoke_config(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
 
 ### delete_layer_version
 
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version]
+Boto3 documentation:
+[Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
 
-```python
-def delete_layer_version(
-    self,
-    LayerName: str,
-    VersionNumber: int
-) -> None:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `VersionNumber`: `int` *(required)*
 
 ### delete_provisioned_concurrency_config
 
-Type annotations for `boto3.client("lambda").delete_provisioned_concurrency_config` method.
+Type annotations for
+`boto3.client("lambda").delete_provisioned_concurrency_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config]
+Boto3 documentation:
+[Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
 
-```python
-def delete_provisioned_concurrency_config(
-    self,
-    FunctionName: str,
-    Qualifier: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str` *(required)*
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("lambda").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url]
+Boto3 documentation:
+[Lambda.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_account_settings
 
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings]
+Boto3 documentation:
+[Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
 
-```python
-def get_account_settings(
-    self
-) -> GetAccountSettingsResponseTypeDef:
-    pass
-```
+Returns
+[GetAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getaccountsettingsresponsetypedef).
 
 ### get_alias
 
 Type annotations for `boto3.client("lambda").get_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias]
+Boto3 documentation:
+[Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
 
-```python
-def get_alias(
-    self,
-    FunctionName: str,
-    Name: str
-) -> "AliasConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
 
 ### get_code_signing_config
 
 Type annotations for `boto3.client("lambda").get_code_signing_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
 
-```python
-def get_code_signing_config(
-    self,
-    CodeSigningConfigArn: str
-) -> GetCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeSigningConfigArn`: `str` *(required)*
+
+Returns
+[GetCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getcodesigningconfigresponsetypedef).
 
 ### get_event_source_mapping
 
 Type annotations for `boto3.client("lambda").get_event_source_mapping` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping]
+Boto3 documentation:
+[Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
 
-```python
-def get_event_source_mapping(
-    self,
-    UUID: str
-) -> "EventSourceMappingConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `UUID`: `str` *(required)*
+
+Returns
+[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
 
 ### get_function
 
 Type annotations for `boto3.client("lambda").get_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function]
+Boto3 documentation:
+[Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
 
-```python
-def get_function(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> GetFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+
+Returns
+[GetFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctionresponsetypedef).
 
 ### get_function_code_signing_config
 
-Type annotations for `boto3.client("lambda").get_function_code_signing_config` method.
+Type annotations for `boto3.client("lambda").get_function_code_signing_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
 
-```python
-def get_function_code_signing_config(
-    self,
-    FunctionName: str
-) -> GetFunctionCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+
+Returns
+[GetFunctionCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctioncodesigningconfigresponsetypedef).
 
 ### get_function_concurrency
 
 Type annotations for `boto3.client("lambda").get_function_concurrency` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency]
+Boto3 documentation:
+[Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
 
-```python
-def get_function_concurrency(
-    self,
-    FunctionName: str
-) -> GetFunctionConcurrencyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+
+Returns
+[GetFunctionConcurrencyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctionconcurrencyresponsetypedef).
 
 ### get_function_configuration
 
-Type annotations for `boto3.client("lambda").get_function_configuration` method.
+Type annotations for `boto3.client("lambda").get_function_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration]
+Boto3 documentation:
+[Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
 
-```python
-def get_function_configuration(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> "FunctionConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+
+Returns
+[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
 
 ### get_function_event_invoke_config
 
-Type annotations for `boto3.client("lambda").get_function_event_invoke_config` method.
+Type annotations for `boto3.client("lambda").get_function_event_invoke_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config]
+Boto3 documentation:
+[Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
 
-```python
-def get_function_event_invoke_config(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> "FunctionEventInvokeConfigTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+
+Returns
+[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
 
 ### get_layer_version
 
 Type annotations for `boto3.client("lambda").get_layer_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version]
+Boto3 documentation:
+[Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
 
-```python
-def get_layer_version(
-    self,
-    LayerName: str,
-    VersionNumber: int
-) -> GetLayerVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `VersionNumber`: `int` *(required)*
+
+Returns
+[GetLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionresponsetypedef).
 
 ### get_layer_version_by_arn
 
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn]
+Boto3 documentation:
+[Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
 
-```python
-def get_layer_version_by_arn(
-    self,
-    Arn: str
-) -> GetLayerVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+
+Returns
+[GetLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionresponsetypedef).
 
 ### get_layer_version_policy
 
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy]
+Boto3 documentation:
+[Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
 
-```python
-def get_layer_version_policy(
-    self,
-    LayerName: str,
-    VersionNumber: int
-) -> GetLayerVersionPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `VersionNumber`: `int` *(required)*
+
+Returns
+[GetLayerVersionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionpolicyresponsetypedef).
 
 ### get_policy
 
 Type annotations for `boto3.client("lambda").get_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy]
+Boto3 documentation:
+[Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
 
-```python
-def get_policy(
-    self,
-    FunctionName: str,
-    Qualifier: str = None
-) -> GetPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+
+Returns
+[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getpolicyresponsetypedef).
 
 ### get_provisioned_concurrency_config
 
-Type annotations for `boto3.client("lambda").get_provisioned_concurrency_config` method.
+Type annotations for
+`boto3.client("lambda").get_provisioned_concurrency_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config]
+Boto3 documentation:
+[Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
 
-```python
-def get_provisioned_concurrency_config(
-    self,
-    FunctionName: str,
-    Qualifier: str
-) -> GetProvisionedConcurrencyConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str` *(required)*
+
+Returns
+[GetProvisionedConcurrencyConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getprovisionedconcurrencyconfigresponsetypedef).
 
 ### invoke
 
 Type annotations for `boto3.client("lambda").invoke` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke]
+Boto3 documentation:
+[Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
 
-```python
-def invoke(
-    self,
-    FunctionName: str,
-    InvocationType: InvocationType = None,
-    LogType: LogType = None,
-    ClientContext: str = None,
-    Payload: Union[bytes, IO[bytes]] = None,
-    Qualifier: str = None
-) -> InvocationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `InvocationType`:
+  [InvocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#invocationtype)
+- `LogType`:
+  [LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#logtype)
+- `ClientContext`: `str`
+- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Qualifier`: `str`
+
+Returns
+[InvocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#invocationresponsetypedef).
 
 ### invoke_async
 
 Type annotations for `boto3.client("lambda").invoke_async` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async]
+Boto3 documentation:
+[Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
 
-```python
-def invoke_async(
-    self,
-    FunctionName: str,
-    InvokeArgs: Union[bytes, IO[bytes]]
-) -> InvokeAsyncResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+
+Returns
+[InvokeAsyncResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#invokeasyncresponsetypedef).
 
 ### list_aliases
 
 Type annotations for `boto3.client("lambda").list_aliases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases]
+Boto3 documentation:
+[Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
 
-```python
-def list_aliases(
-    self,
-    FunctionName: str,
-    FunctionVersion: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListAliasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `FunctionVersion`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listaliasesresponsetypedef).
 
 ### list_code_signing_configs
 
 Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs]
+Boto3 documentation:
+[Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
 
-```python
-def list_code_signing_configs(
-    self,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListCodeSigningConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListCodeSigningConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listcodesigningconfigsresponsetypedef).
 
 ### list_event_source_mappings
 
-Type annotations for `boto3.client("lambda").list_event_source_mappings` method.
+Type annotations for `boto3.client("lambda").list_event_source_mappings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings]
+Boto3 documentation:
+[Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
 
-```python
-def list_event_source_mappings(
-    self,
-    EventSourceArn: str = None,
-    FunctionName: str = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListEventSourceMappingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EventSourceArn`: `str`
+- `FunctionName`: `str`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListEventSourceMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listeventsourcemappingsresponsetypedef).
 
 ### list_function_event_invoke_configs
 
-Type annotations for `boto3.client("lambda").list_function_event_invoke_configs` method.
+Type annotations for
+`boto3.client("lambda").list_function_event_invoke_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs]
+Boto3 documentation:
+[Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
 
-```python
-def list_function_event_invoke_configs(
-    self,
-    FunctionName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListFunctionEventInvokeConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListFunctionEventInvokeConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctioneventinvokeconfigsresponsetypedef).
 
 ### list_functions
 
 Type annotations for `boto3.client("lambda").list_functions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions]
+Boto3 documentation:
+[Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
 
-```python
-def list_functions(
-    self,
-    MasterRegion: str = None,
-    FunctionVersion: Literal['ALL'] = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListFunctionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MasterRegion`: `str`
+- `FunctionVersion`: `Literal['ALL']`
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsresponsetypedef).
 
 ### list_functions_by_code_signing_config
 
-Type annotations for `boto3.client("lambda").list_functions_by_code_signing_config` method.
+Type annotations for
+`boto3.client("lambda").list_functions_by_code_signing_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
 
-```python
-def list_functions_by_code_signing_config(
-    self,
-    CodeSigningConfigArn: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListFunctionsByCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeSigningConfigArn`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListFunctionsByCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsbycodesigningconfigresponsetypedef).
 
 ### list_layer_versions
 
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions]
+Boto3 documentation:
+[Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
 
-```python
-def list_layer_versions(
-    self,
-    LayerName: str,
-    CompatibleRuntime: Runtime = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListLayerVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `CompatibleRuntime`:
+  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListLayerVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayerversionsresponsetypedef).
 
 ### list_layers
 
 Type annotations for `boto3.client("lambda").list_layers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers]
+Boto3 documentation:
+[Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
 
-```python
-def list_layers(
-    self,
-    CompatibleRuntime: Runtime = None,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListLayersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CompatibleRuntime`:
+  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListLayersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayersresponsetypedef).
 
 ### list_provisioned_concurrency_configs
 
-Type annotations for `boto3.client("lambda").list_provisioned_concurrency_configs` method.
+Type annotations for
+`boto3.client("lambda").list_provisioned_concurrency_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs]
+Boto3 documentation:
+[Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
 
-```python
-def list_provisioned_concurrency_configs(
-    self,
-    FunctionName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListProvisionedConcurrencyConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListProvisionedConcurrencyConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listprovisionedconcurrencyconfigsresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("lambda").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags]
+Boto3 documentation:
+[Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    Resource: str
-) -> ListTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+
+Returns
+[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listtagsresponsetypedef).
 
 ### list_versions_by_function
 
 Type annotations for `boto3.client("lambda").list_versions_by_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function]
+Boto3 documentation:
+[Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
 
-```python
-def list_versions_by_function(
-    self,
-    FunctionName: str,
-    Marker: str = None,
-    MaxItems: int = None
-) -> ListVersionsByFunctionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+Returns
+[ListVersionsByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listversionsbyfunctionresponsetypedef).
 
 ### publish_layer_version
 
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version]
+Boto3 documentation:
+[Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
 
-```python
-def publish_layer_version(
-    self,
-    LayerName: str,
-    Content: LayerVersionContentInputTypeDef,
-    Description: str = None,
-    CompatibleRuntimes: List[Runtime] = None,
-    LicenseInfo: str = None
-) -> PublishLayerVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `Content`:
+  [LayerVersionContentInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#layerversioncontentinputtypedef)
+  *(required)*
+- `Description`: `str`
+- `CompatibleRuntimes`:
+  `List`\[[Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)\]
+- `LicenseInfo`: `str`
+
+Returns
+[PublishLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#publishlayerversionresponsetypedef).
 
 ### publish_version
 
 Type annotations for `boto3.client("lambda").publish_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version]
+Boto3 documentation:
+[Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
 
-```python
-def publish_version(
-    self,
-    FunctionName: str,
-    CodeSha256: str = None,
-    Description: str = None,
-    RevisionId: str = None
-) -> "FunctionConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `CodeSha256`: `str`
+- `Description`: `str`
+- `RevisionId`: `str`
+
+Returns
+[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
 
 ### put_function_code_signing_config
 
-Type annotations for `boto3.client("lambda").put_function_code_signing_config` method.
+Type annotations for `boto3.client("lambda").put_function_code_signing_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
 
-```python
-def put_function_code_signing_config(
-    self,
-    CodeSigningConfigArn: str,
-    FunctionName: str
-) -> PutFunctionCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeSigningConfigArn`: `str` *(required)*
+- `FunctionName`: `str` *(required)*
+
+Returns
+[PutFunctionCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#putfunctioncodesigningconfigresponsetypedef).
 
 ### put_function_concurrency
 
 Type annotations for `boto3.client("lambda").put_function_concurrency` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency]
+Boto3 documentation:
+[Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
 
-```python
-def put_function_concurrency(
-    self,
-    FunctionName: str,
-    ReservedConcurrentExecutions: int
-) -> "ConcurrencyTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `ReservedConcurrentExecutions`: `int` *(required)*
+
+Returns
+[ConcurrencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#concurrencytypedef).
 
 ### put_function_event_invoke_config
 
-Type annotations for `boto3.client("lambda").put_function_event_invoke_config` method.
+Type annotations for `boto3.client("lambda").put_function_event_invoke_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config]
+Boto3 documentation:
+[Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
 
-```python
-def put_function_event_invoke_config(
-    self,
-    FunctionName: str,
-    Qualifier: str = None,
-    MaximumRetryAttempts: int = None,
-    MaximumEventAgeInSeconds: int = None,
-    DestinationConfig: "DestinationConfigTypeDef" = None
-) -> "FunctionEventInvokeConfigTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `MaximumRetryAttempts`: `int`
+- `MaximumEventAgeInSeconds`: `int`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+
+Returns
+[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
 
 ### put_provisioned_concurrency_config
 
-Type annotations for `boto3.client("lambda").put_provisioned_concurrency_config` method.
+Type annotations for
+`boto3.client("lambda").put_provisioned_concurrency_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config]
+Boto3 documentation:
+[Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
 
-```python
-def put_provisioned_concurrency_config(
-    self,
-    FunctionName: str,
-    Qualifier: str,
-    ProvisionedConcurrentExecutions: int
-) -> PutProvisionedConcurrencyConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str` *(required)*
+- `ProvisionedConcurrentExecutions`: `int` *(required)*
+
+Returns
+[PutProvisionedConcurrencyConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#putprovisionedconcurrencyconfigresponsetypedef).
 
 ### remove_layer_version_permission
 
-Type annotations for `boto3.client("lambda").remove_layer_version_permission` method.
+Type annotations for `boto3.client("lambda").remove_layer_version_permission`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission]
+Boto3 documentation:
+[Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
 
-```python
-def remove_layer_version_permission(
-    self,
-    LayerName: str,
-    VersionNumber: int,
-    StatementId: str,
-    RevisionId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `LayerName`: `str` *(required)*
+- `VersionNumber`: `int` *(required)*
+- `StatementId`: `str` *(required)*
+- `RevisionId`: `str`
 
 ### remove_permission
 
 Type annotations for `boto3.client("lambda").remove_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission]
+Boto3 documentation:
+[Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
 
-```python
-def remove_permission(
-    self,
-    FunctionName: str,
-    StatementId: str,
-    Qualifier: str = None,
-    RevisionId: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `StatementId`: `str` *(required)*
+- `Qualifier`: `str`
+- `RevisionId`: `str`
 
 ### tag_resource
 
 Type annotations for `boto3.client("lambda").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource]
+Boto3 documentation:
+[Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    Resource: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
 Type annotations for `boto3.client("lambda").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource]
+Boto3 documentation:
+[Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    Resource: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_alias
 
 Type annotations for `boto3.client("lambda").update_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias]
+Boto3 documentation:
+[Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
 
-```python
-def update_alias(
-    self,
-    FunctionName: str,
-    Name: str,
-    FunctionVersion: str = None,
-    Description: str = None,
-    RoutingConfig: "AliasRoutingConfigurationTypeDef" = None,
-    RevisionId: str = None
-) -> "AliasConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `FunctionVersion`: `str`
+- `Description`: `str`
+- `RoutingConfig`:
+  [AliasRoutingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasroutingconfigurationtypedef)
+- `RevisionId`: `str`
+
+Returns
+[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
 
 ### update_code_signing_config
 
-Type annotations for `boto3.client("lambda").update_code_signing_config` method.
+Type annotations for `boto3.client("lambda").update_code_signing_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config]
+Boto3 documentation:
+[Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
 
-```python
-def update_code_signing_config(
-    self,
-    CodeSigningConfigArn: str,
-    Description: str = None,
-    AllowedPublishers: "AllowedPublishersTypeDef" = None,
-    CodeSigningPolicies: "CodeSigningPoliciesTypeDef" = None
-) -> UpdateCodeSigningConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CodeSigningConfigArn`: `str` *(required)*
+- `Description`: `str`
+- `AllowedPublishers`:
+  [AllowedPublishersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#allowedpublisherstypedef)
+- `CodeSigningPolicies`:
+  [CodeSigningPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#codesigningpoliciestypedef)
+
+Returns
+[UpdateCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#updatecodesigningconfigresponsetypedef).
 
 ### update_event_source_mapping
 
-Type annotations for `boto3.client("lambda").update_event_source_mapping` method.
+Type annotations for `boto3.client("lambda").update_event_source_mapping`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping]
+Boto3 documentation:
+[Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
 
-```python
-def update_event_source_mapping(
-    self,
-    UUID: str,
-    FunctionName: str = None,
-    Enabled: bool = None,
-    BatchSize: int = None,
-    MaximumBatchingWindowInSeconds: int = None,
-    DestinationConfig: "DestinationConfigTypeDef" = None,
-    MaximumRecordAgeInSeconds: int = None,
-    BisectBatchOnFunctionError: bool = None,
-    MaximumRetryAttempts: int = None,
-    ParallelizationFactor: int = None,
-    SourceAccessConfigurations: List["SourceAccessConfigurationTypeDef"] = None,
-    TumblingWindowInSeconds: int = None,
-    FunctionResponseTypes: List[Literal['ReportBatchItemFailures']] = None
-) -> "EventSourceMappingConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `UUID`: `str` *(required)*
+- `FunctionName`: `str`
+- `Enabled`: `bool`
+- `BatchSize`: `int`
+- `MaximumBatchingWindowInSeconds`: `int`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+- `MaximumRecordAgeInSeconds`: `int`
+- `BisectBatchOnFunctionError`: `bool`
+- `MaximumRetryAttempts`: `int`
+- `ParallelizationFactor`: `int`
+- `SourceAccessConfigurations`:
+  `List`\[[SourceAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#sourceaccessconfigurationtypedef)\]
+- `TumblingWindowInSeconds`: `int`
+- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']`\]
+
+Returns
+[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
 
 ### update_function_code
 
 Type annotations for `boto3.client("lambda").update_function_code` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code]
+Boto3 documentation:
+[Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
 
-```python
-def update_function_code(
-    self,
-    FunctionName: str,
-    ZipFile: Union[bytes, IO[bytes]] = None,
-    S3Bucket: str = None,
-    S3Key: str = None,
-    S3ObjectVersion: str = None,
-    ImageUri: str = None,
-    Publish: bool = None,
-    DryRun: bool = None,
-    RevisionId: str = None
-) -> "FunctionConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `S3Bucket`: `str`
+- `S3Key`: `str`
+- `S3ObjectVersion`: `str`
+- `ImageUri`: `str`
+- `Publish`: `bool`
+- `DryRun`: `bool`
+- `RevisionId`: `str`
+
+Returns
+[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
 
 ### update_function_configuration
 
-Type annotations for `boto3.client("lambda").update_function_configuration` method.
+Type annotations for `boto3.client("lambda").update_function_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration]
+Boto3 documentation:
+[Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
 
-```python
-def update_function_configuration(
-    self,
-    FunctionName: str,
-    Role: str = None,
-    Handler: str = None,
-    Description: str = None,
-    Timeout: int = None,
-    MemorySize: int = None,
-    VpcConfig: VpcConfigTypeDef = None,
-    Environment: EnvironmentTypeDef = None,
-    Runtime: Runtime = None,
-    DeadLetterConfig: "DeadLetterConfigTypeDef" = None,
-    KMSKeyArn: str = None,
-    TracingConfig: TracingConfigTypeDef = None,
-    RevisionId: str = None,
-    Layers: List[str] = None,
-    FileSystemConfigs: List["FileSystemConfigTypeDef"] = None,
-    ImageConfig: "ImageConfigTypeDef" = None
-) -> "FunctionConfigurationTypeDef":
-    pass
-```
+Arguments:
+
+- `FunctionName`: `str` *(required)*
+- `Role`: `str`
+- `Handler`: `str`
+- `Description`: `str`
+- `Timeout`: `int`
+- `MemorySize`: `int`
+- `VpcConfig`:
+  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#vpcconfigtypedef)
+- `Environment`:
+  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#environmenttypedef)
+- `Runtime`:
+  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `DeadLetterConfig`:
+  [DeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#deadletterconfigtypedef)
+- `KMSKeyArn`: `str`
+- `TracingConfig`:
+  [TracingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#tracingconfigtypedef)
+- `RevisionId`: `str`
+- `Layers`: `List`\[`str`\]
+- `FileSystemConfigs`:
+  `List`\[[FileSystemConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#filesystemconfigtypedef)\]
+- `ImageConfig`:
+  [ImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#imageconfigtypedef)
+
+Returns
+[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
 
 ### update_function_event_invoke_config
 
-Type annotations for `boto3.client("lambda").update_function_event_invoke_config` method.
+Type annotations for
+`boto3.client("lambda").update_function_event_invoke_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config]
+Boto3 documentation:
+[Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
 
-```python
-def update_function_event_invoke_config(
-    self,
-    FunctionName: str,
-    Qualifier: str = None,
-    MaximumRetryAttempts: int = None,
-    MaximumEventAgeInSeconds: int = None,
-    DestinationConfig: "DestinationConfigTypeDef" = None
-) -> "FunctionEventInvokeConfigTypeDef":
-    pass
-```
+Arguments:
 
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `MaximumRetryAttempts`: `int`
+- `MaximumEventAgeInSeconds`: `int`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
 
+Returns
+[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("lambda").get_paginator` method with overloads.
+Type annotations for `boto3.client("lambda").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_code_signing_configs")` -> [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
-- `client.get_paginator("list_event_source_mappings")` -> [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
-- `client.get_paginator("list_function_event_invoke_configs")` -> [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
-- `client.get_paginator("list_functions")` -> [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
-- `client.get_paginator("list_functions_by_code_signing_config")` -> [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
-- `client.get_paginator("list_layer_versions")` -> [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)
-- `client.get_paginator("list_layers")` -> [ListLayersPaginator](./paginators.md#listlayerspaginator)
-- `client.get_paginator("list_provisioned_concurrency_configs")` -> [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
-- `client.get_paginator("list_versions_by_function")` -> [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
-
-
-
+- `client.get_paginator("list_aliases")` ->
+  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_code_signing_configs")` ->
+  [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
+- `client.get_paginator("list_event_source_mappings")` ->
+  [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
+- `client.get_paginator("list_function_event_invoke_configs")` ->
+  [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
+- `client.get_paginator("list_functions")` ->
+  [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+- `client.get_paginator("list_functions_by_code_signing_config")` ->
+  [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
+- `client.get_paginator("list_layer_versions")` ->
+  [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)
+- `client.get_paginator("list_layers")` ->
+  [ListLayersPaginator](./paginators.md#listlayerspaginator)
+- `client.get_paginator("list_provisioned_concurrency_configs")` ->
+  [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
+- `client.get_paginator("list_versions_by_function")` ->
+  [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("lambda").get_waiter` method with overloads.
 
-- `client.get_waiter("function_active")` -> [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
-- `client.get_waiter("function_exists")` -> [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
-- `client.get_waiter("function_updated")` -> [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
+- `client.get_waiter("function_active")` ->
+  [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
+- `client.get_waiter("function_exists")` ->
+  [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
+- `client.get_waiter("function_updated")` ->
+  [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)

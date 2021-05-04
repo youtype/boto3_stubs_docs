@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Synthetics
 
-Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
-type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+Auto-generated documentation for
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+type annotations stubs module
+[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 ```bash
 pip install mypy-boto3-synthetics
@@ -18,7 +20,8 @@ pip install mypy-boto3-synthetics
 
 ## SyntheticsClient
 
-Type annotations for  `boto3.client("synthetics")` as [SyntheticsClient](./client.md)
+Type annotations for `boto3.client("synthetics")` as
+[SyntheticsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_synthetics.client import SyntheticsClient
 ```
 
-
 SyntheticsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_canary](./client.md#create-canary)
 - [delete_canary](./client.md#delete-canary)
@@ -48,24 +49,13 @@ SyntheticsClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_canary](./client.md#update-canary)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -82,13 +72,10 @@ from mypy_boto3_synthetics.literals import CanaryRunState, ...
 - [CanaryState](./literals.md#canarystate)
 - [CanaryStateReasonCode](./literals.md#canarystatereasoncode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

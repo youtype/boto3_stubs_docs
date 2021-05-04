@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > TimestreamQuery
 
-Auto-generated documentation for [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
-type annotations stubs module [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+Auto-generated documentation for
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+type annotations stubs module
+[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 ```bash
 pip install mypy-boto3-timestream-query
@@ -19,7 +21,8 @@ pip install mypy-boto3-timestream-query
 
 ## TimestreamQueryClient
 
-Type annotations for  `boto3.client("timestream-query")` as [TimestreamQueryClient](./client.md)
+Type annotations for `boto3.client("timestream-query")` as
+[TimestreamQueryClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 ```
 
-
 TimestreamQueryClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_query](./client.md#cancel-query)
 - [describe_endpoints](./client.md#describe-endpoints)
@@ -40,10 +41,8 @@ TimestreamQueryClient [exceptions](./client.md#exceptions)
 - [get_paginator](./client.md#get-paginator)
 - [query](./client.md#query)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -53,14 +52,10 @@ TimestreamQueryClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("timestream-query").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("timestream-query").get_paginator("...")`.
 
 Can be used directly:
 
@@ -69,11 +64,6 @@ from mypy_boto3_timestream_query.paginators import QueryPaginator, ...
 ```
 
 - [QueryPaginator](./paginators.md#querypaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -88,13 +78,10 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName, ...
 - [QueryPaginatorName](./literals.md#querypaginatorname)
 - [ScalarType](./literals.md#scalartype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

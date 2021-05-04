@@ -1,9 +1,12 @@
 # ElasticTranscoderClient for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) > ElasticTranscoderClient
+> [Index](../README.md) > [ElasticTranscoder](./README.md) >
+> ElasticTranscoderClient
 
-Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+Auto-generated documentation for
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+type annotations stubs module
+[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [ElasticTranscoderClient for boto3 ElasticTranscoder module](#elastictranscoderclient-for-boto3-elastictranscoder-module)
   - [ElasticTranscoderClient](#elastictranscoderclient)
@@ -44,12 +47,13 @@ def get_elastictranscoder_client() -> ElasticTranscoderClient:
     return boto3.client("elastictranscoder")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
+Boto3 documentation:
+[ElasticTranscoder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_elastictranscoder.client import Exceptions
@@ -57,7 +61,6 @@ from mypy_boto3_elastictranscoder.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -70,332 +73,351 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("elastictranscoder").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate]
+Boto3 documentation:
+[ElasticTranscoder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job
 
 Type annotations for `boto3.client("elastictranscoder").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job]
+Boto3 documentation:
+[ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_job
 
 Type annotations for `boto3.client("elastictranscoder").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job]
+Boto3 documentation:
+[ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
 
-```python
-def create_job(
-    self,
-    PipelineId: str,
-    Input: "JobInputTypeDef" = None,
-    Inputs: List["JobInputTypeDef"] = None,
-    Output: CreateJobOutputTypeDef = None,
-    Outputs: List[CreateJobOutputTypeDef] = None,
-    OutputKeyPrefix: str = None,
-    Playlists: List[CreateJobPlaylistTypeDef] = None,
-    UserMetadata: Dict[str, str] = None
-) -> CreateJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineId`: `str` *(required)*
+- `Input`:
+  [JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)
+- `Inputs`:
+  `List`\[[JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)\]
+- `Output`:
+  [CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjoboutputtypedef)
+- `Outputs`:
+  `List`\[[CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjoboutputtypedef)\]
+- `OutputKeyPrefix`: `str`
+- `Playlists`:
+  `List`\[[CreateJobPlaylistTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjobplaylisttypedef)\]
+- `UserMetadata`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjobresponsetypedef).
 
 ### create_pipeline
 
-Type annotations for `boto3.client("elastictranscoder").create_pipeline` method.
+Type annotations for `boto3.client("elastictranscoder").create_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline]
+Boto3 documentation:
+[ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
 
-```python
-def create_pipeline(
-    self,
-    Name: str,
-    InputBucket: str,
-    Role: str,
-    OutputBucket: str = None,
-    AwsKmsKeyArn: str = None,
-    Notifications: "NotificationsTypeDef" = None,
-    ContentConfig: "PipelineOutputConfigTypeDef" = None,
-    ThumbnailConfig: "PipelineOutputConfigTypeDef" = None
-) -> CreatePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `InputBucket`: `str` *(required)*
+- `Role`: `str` *(required)*
+- `OutputBucket`: `str`
+- `AwsKmsKeyArn`: `str`
+- `Notifications`:
+  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `ContentConfig`:
+  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+- `ThumbnailConfig`:
+  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+
+Returns
+[CreatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createpipelineresponsetypedef).
 
 ### create_preset
 
 Type annotations for `boto3.client("elastictranscoder").create_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset]
+Boto3 documentation:
+[ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
 
-```python
-def create_preset(
-    self,
-    Name: str,
-    Container: str,
-    Description: str = None,
-    Video: "VideoParametersTypeDef" = None,
-    Audio: "AudioParametersTypeDef" = None,
-    Thumbnails: "ThumbnailsTypeDef" = None
-) -> CreatePresetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Container`: `str` *(required)*
+- `Description`: `str`
+- `Video`:
+  [VideoParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#videoparameterstypedef)
+- `Audio`:
+  [AudioParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#audioparameterstypedef)
+- `Thumbnails`:
+  [ThumbnailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#thumbnailstypedef)
+
+Returns
+[CreatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createpresetresponsetypedef).
 
 ### delete_pipeline
 
-Type annotations for `boto3.client("elastictranscoder").delete_pipeline` method.
+Type annotations for `boto3.client("elastictranscoder").delete_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline]
+Boto3 documentation:
+[ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
 
-```python
-def delete_pipeline(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_preset
 
 Type annotations for `boto3.client("elastictranscoder").delete_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset]
+Boto3 documentation:
+[ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
 
-```python
-def delete_preset(
-    self,
-    Id: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("elastictranscoder").generate_presigned_url` method.
+Type annotations for `boto3.client("elastictranscoder").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url]
+Boto3 documentation:
+[ElasticTranscoder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_jobs_by_pipeline
 
-Type annotations for `boto3.client("elastictranscoder").list_jobs_by_pipeline` method.
+Type annotations for `boto3.client("elastictranscoder").list_jobs_by_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline]
+Boto3 documentation:
+[ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
 
-```python
-def list_jobs_by_pipeline(
-    self,
-    PipelineId: str,
-    Ascending: str = None,
-    PageToken: str = None
-) -> ListJobsByPipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `PipelineId`: `str` *(required)*
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+Returns
+[ListJobsByPipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbypipelineresponsetypedef).
 
 ### list_jobs_by_status
 
-Type annotations for `boto3.client("elastictranscoder").list_jobs_by_status` method.
+Type annotations for `boto3.client("elastictranscoder").list_jobs_by_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status]
+Boto3 documentation:
+[ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
 
-```python
-def list_jobs_by_status(
-    self,
-    Status: str,
-    Ascending: str = None,
-    PageToken: str = None
-) -> ListJobsByStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Status`: `str` *(required)*
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+Returns
+[ListJobsByStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbystatusresponsetypedef).
 
 ### list_pipelines
 
 Type annotations for `boto3.client("elastictranscoder").list_pipelines` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines]
+Boto3 documentation:
+[ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
 
-```python
-def list_pipelines(
-    self,
-    Ascending: str = None,
-    PageToken: str = None
-) -> ListPipelinesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+Returns
+[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpipelinesresponsetypedef).
 
 ### list_presets
 
 Type annotations for `boto3.client("elastictranscoder").list_presets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets]
+Boto3 documentation:
+[ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
 
-```python
-def list_presets(
-    self,
-    Ascending: str = None,
-    PageToken: str = None
-) -> ListPresetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+Returns
+[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpresetsresponsetypedef).
 
 ### read_job
 
 Type annotations for `boto3.client("elastictranscoder").read_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job]
+Boto3 documentation:
+[ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
 
-```python
-def read_job(
-    self,
-    Id: str
-) -> ReadJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[ReadJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readjobresponsetypedef).
 
 ### read_pipeline
 
 Type annotations for `boto3.client("elastictranscoder").read_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline]
+Boto3 documentation:
+[ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
 
-```python
-def read_pipeline(
-    self,
-    Id: str
-) -> ReadPipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[ReadPipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readpipelineresponsetypedef).
 
 ### read_preset
 
 Type annotations for `boto3.client("elastictranscoder").read_preset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset]
+Boto3 documentation:
+[ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
 
-```python
-def read_preset(
-    self,
-    Id: str
-) -> ReadPresetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[ReadPresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readpresetresponsetypedef).
 
 ### test_role
 
 Type annotations for `boto3.client("elastictranscoder").test_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role]
+Boto3 documentation:
+[ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
 
-```python
-def test_role(
-    self,
-    Role: str,
-    InputBucket: str,
-    OutputBucket: str,
-    Topics: List[str]
-) -> TestRoleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Role`: `str` *(required)*
+- `InputBucket`: `str` *(required)*
+- `OutputBucket`: `str` *(required)*
+- `Topics`: `List`\[`str`\] *(required)*
+
+Returns
+[TestRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#testroleresponsetypedef).
 
 ### update_pipeline
 
-Type annotations for `boto3.client("elastictranscoder").update_pipeline` method.
+Type annotations for `boto3.client("elastictranscoder").update_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline]
+Boto3 documentation:
+[ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
 
-```python
-def update_pipeline(
-    self,
-    Id: str,
-    Name: str = None,
-    InputBucket: str = None,
-    Role: str = None,
-    AwsKmsKeyArn: str = None,
-    Notifications: "NotificationsTypeDef" = None,
-    ContentConfig: "PipelineOutputConfigTypeDef" = None,
-    ThumbnailConfig: "PipelineOutputConfigTypeDef" = None
-) -> UpdatePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `InputBucket`: `str`
+- `Role`: `str`
+- `AwsKmsKeyArn`: `str`
+- `Notifications`:
+  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `ContentConfig`:
+  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+- `ThumbnailConfig`:
+  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+
+Returns
+[UpdatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelineresponsetypedef).
 
 ### update_pipeline_notifications
 
-Type annotations for `boto3.client("elastictranscoder").update_pipeline_notifications` method.
+Type annotations for
+`boto3.client("elastictranscoder").update_pipeline_notifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications]
+Boto3 documentation:
+[ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
 
-```python
-def update_pipeline_notifications(
-    self,
-    Id: str,
-    Notifications: "NotificationsTypeDef"
-) -> UpdatePipelineNotificationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `Notifications`:
+  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+  *(required)*
+
+Returns
+[UpdatePipelineNotificationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelinenotificationsresponsetypedef).
 
 ### update_pipeline_status
 
-Type annotations for `boto3.client("elastictranscoder").update_pipeline_status` method.
+Type annotations for `boto3.client("elastictranscoder").update_pipeline_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status]
+Boto3 documentation:
+[ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
 
-```python
-def update_pipeline_status(
-    self,
-    Id: str,
-    Status: str
-) -> UpdatePipelineStatusResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Id`: `str` *(required)*
+- `Status`: `str` *(required)*
 
+Returns
+[UpdatePipelineStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelinestatusresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator` method with overloads.
+Type annotations for `boto3.client("elastictranscoder").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_jobs_by_pipeline")` -> [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
-- `client.get_paginator("list_jobs_by_status")` -> [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
-- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("list_presets")` -> [ListPresetsPaginator](./paginators.md#listpresetspaginator)
-
-
-
+- `client.get_paginator("list_jobs_by_pipeline")` ->
+  [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
+- `client.get_paginator("list_jobs_by_status")` ->
+  [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
+- `client.get_paginator("list_pipelines")` ->
+  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("list_presets")` ->
+  [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("elastictranscoder").get_waiter` method with overloads.
+Type annotations for `boto3.client("elastictranscoder").get_waiter` method with
+overloads.
 
-- `client.get_waiter("job_complete")` -> [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
+- `client.get_waiter("job_complete")` ->
+  [JobCompleteWaiter](./waiters.md#jobcompletewaiter)

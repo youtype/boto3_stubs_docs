@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SNS
 
-Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+Auto-generated documentation for
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+type annotations stubs module
+[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ```bash
 pip install mypy-boto3-sns
@@ -22,7 +24,7 @@ pip install mypy-boto3-sns
 
 ## SNSClient
 
-Type annotations for  `boto3.client("sns")` as [SNSClient](./client.md)
+Type annotations for `boto3.client("sns")` as [SNSClient](./client.md)
 
 Can be used directly:
 
@@ -30,12 +32,10 @@ Can be used directly:
 from mypy_boto3_sns.client import SNSClient
 ```
 
-
 SNSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_permission](./client.md#add-permission)
 - [can_paginate](./client.md#can-paginate)
 - [check_if_phone_number_is_opted_out](./client.md#check-if-phone-number-is-opted-out)
@@ -73,10 +73,8 @@ SNSClient [exceptions](./client.md#exceptions)
 - [unsubscribe](./client.md#unsubscribe)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AuthorizationErrorException](./client.md#authorizationerrorexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentAccessException](./client.md#concurrentaccessexception)
@@ -102,19 +100,16 @@ SNSClient [exceptions](./client.md#exceptions)
 - [ThrottledException](./client.md#throttledexception)
 - [TopicLimitExceededException](./client.md#topiclimitexceededexception)
 
-
-
-
 ## SNSServiceResource
 
-Type annotations for  `boto3.resource("sns")` as [SNSServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("sns")` as
+[SNSServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_sns.service_resource import SNSServiceResource
 ```
-
 
 ### Collections
 
@@ -129,9 +124,6 @@ from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsC
 - [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresource.platform-applications)
 - [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresource.subscriptions)
 - [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresource.topics)
-
-
-
 
 ### Resources
 
@@ -148,13 +140,10 @@ from mypy_boto3_sns.service_resource import PlatformApplication, ...
 - [Subscription](./service_resource.md#subscription)
 - [Topic](./service_resource.md#topic)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sns").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sns").get_paginator("...")`.
 
 Can be used directly:
 
@@ -168,11 +157,6 @@ from mypy_boto3_sns.paginators import ListEndpointsByPlatformApplicationPaginato
 - [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
 - [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
 - [ListTopicsPaginator](./paginators.md#listtopicspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -191,13 +175,10 @@ from mypy_boto3_sns.literals import ListEndpointsByPlatformApplicationPaginatorN
 - [ListSubscriptionsPaginatorName](./literals.md#listsubscriptionspaginatorname)
 - [ListTopicsPaginatorName](./literals.md#listtopicspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

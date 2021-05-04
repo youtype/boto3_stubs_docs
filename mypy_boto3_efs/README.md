@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EFS
 
-Auto-generated documentation for [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
-type annotations stubs module [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+Auto-generated documentation for
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+type annotations stubs module
+[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
 ```bash
 pip install mypy-boto3-efs
@@ -19,7 +21,7 @@ pip install mypy-boto3-efs
 
 ## EFSClient
 
-Type annotations for  `boto3.client("efs")` as [EFSClient](./client.md)
+Type annotations for `boto3.client("efs")` as [EFSClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_efs.client import EFSClient
 ```
 
-
 EFSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_access_point](./client.md#create-access-point)
 - [create_file_system](./client.md#create-file-system)
@@ -62,10 +62,8 @@ EFSClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_file_system](./client.md#update-file-system)
 
-
-
-
 ### Exceptions
+
 - [AccessPointAlreadyExists](./client.md#accesspointalreadyexists)
 - [AccessPointLimitExceeded](./client.md#accesspointlimitexceeded)
 - [AccessPointNotFound](./client.md#accesspointnotfound)
@@ -96,14 +94,10 @@ EFSClient [exceptions](./client.md#exceptions)
 - [UnsupportedAvailabilityZone](./client.md#unsupportedavailabilityzone)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("efs").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("efs").get_paginator("...")`.
 
 Can be used directly:
 
@@ -114,11 +108,6 @@ from mypy_boto3_efs.paginators import DescribeFileSystemsPaginator, ...
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
 - [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -139,13 +128,10 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName, ...
 - [ThroughputMode](./literals.md#throughputmode)
 - [TransitionToIARules](./literals.md#transitiontoiarules)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FraudDetector](./README.md) > Structures
 
-Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
-type annotations stubs module [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+Auto-generated documentation for
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+type annotations stubs module
+[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [Typed dictionaries for boto3 FraudDetector module](#typed-dictionaries-for-boto3-frauddetector-module)
   - [BatchCreateVariableErrorTypeDef](#batchcreatevariableerrortypedef)
@@ -71,14 +73,11 @@ type annotations stubs module [mypy_boto3_frauddetector](https://pypi.org/projec
 from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `code`: `int`
 - `message`: `str`
-
 
 ## BatchCreateVariableResultTypeDef
 
@@ -86,12 +85,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errors`: `List["BatchCreateVariableErrorTypeDef"]`
 
+- `errors`:
+  `List`\[[BatchCreateVariableErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#batchcreatevariableerrortypedef)\]
 
 ## BatchGetVariableErrorTypeDef
 
@@ -99,14 +96,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import BatchGetVariableErrorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `code`: `int`
 - `message`: `str`
-
 
 ## BatchGetVariableResultTypeDef
 
@@ -114,13 +108,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import BatchGetVariableResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `variables`: `List["VariableTypeDef"]`
-- `errors`: `List["BatchGetVariableErrorTypeDef"]`
 
+- `variables`:
+  `List`\[[VariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#variabletypedef)\]
+- `errors`:
+  `List`\[[BatchGetVariableErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#batchgetvariableerrortypedef)\]
 
 ## BatchPredictionTypeDef
 
@@ -128,12 +121,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import BatchPredictionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `jobId`: `str`
-- `status`: `AsyncJobStatus`
+- `status`:
+  [AsyncJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#asyncjobstatus)
 - `failureReason`: `str`
 - `startTime`: `str`
 - `completionTime`: `str`
@@ -148,21 +140,18 @@ Optional fields:
 - `processedRecordsCount`: `int`
 - `totalRecordsCount`: `int`
 
-
 ## CreateDetectorVersionResultTypeDef
 
 ```python
 from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
-- `status`: `DetectorVersionStatus`
-
+- `status`:
+  [DetectorVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#detectorversionstatus)
 
 ## CreateModelVersionResultTypeDef
 
@@ -170,15 +159,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `modelVersionNumber`: `str`
 - `status`: `str`
-
 
 ## CreateRuleResultTypeDef
 
@@ -186,12 +172,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import CreateRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `rule`: `"RuleTypeDef"`
 
+- `rule`:
+  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)
 
 ## DataValidationMetricsTypeDef
 
@@ -199,13 +183,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import DataValidationMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fileLevelMessages`: `List["FileValidationMessageTypeDef"]`
-- `fieldLevelMessages`: `List["FieldValidationMessageTypeDef"]`
 
+- `fileLevelMessages`:
+  `List`\[[FileValidationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#filevalidationmessagetypedef)\]
+- `fieldLevelMessages`:
+  `List`\[[FieldValidationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#fieldvalidationmessagetypedef)\]
 
 ## DescribeDetectorResultTypeDef
 
@@ -213,15 +196,13 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import DescribeDetectorResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorId`: `str`
-- `detectorVersionSummaries`: `List["DetectorVersionSummaryTypeDef"]`
+- `detectorVersionSummaries`:
+  `List`\[[DetectorVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#detectorversionsummarytypedef)\]
 - `nextToken`: `str`
 - `arn`: `str`
-
 
 ## DescribeModelVersionsResultTypeDef
 
@@ -229,13 +210,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `modelVersionDetails`: `List["ModelVersionDetailTypeDef"]`
-- `nextToken`: `str`
 
+- `modelVersionDetails`:
+  `List`\[[ModelVersionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelversiondetailtypedef)\]
+- `nextToken`: `str`
 
 ## DetectorTypeDef
 
@@ -243,17 +222,14 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import DetectorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorId`: `str`
 - `description`: `str`
 - `eventTypeName`: `str`
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## DetectorVersionSummaryTypeDef
 
@@ -261,15 +237,13 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import DetectorVersionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorVersionId`: `str`
-- `status`: `DetectorVersionStatus`
+- `status`:
+  [DetectorVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#detectorversionstatus)
 - `description`: `str`
 - `lastUpdatedTime`: `str`
-
 
 ## EntityTypeDef
 
@@ -277,13 +251,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import EntityTypeDef
 ```
 
-
 Required fields:
+
 - `entityType`: `str`
 - `entityId`: `str`
-
-
-
 
 ## EntityTypeTypeDef
 
@@ -291,16 +262,13 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import EntityTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `description`: `str`
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## EventTypeTypeDef
 
@@ -308,19 +276,16 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import EventTypeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `description`: `str`
-- `eventVariables`: `List[str]`
-- `labels`: `List[str]`
-- `entityTypes`: `List[str]`
+- `eventVariables`: `List`\[`str`\]
+- `labels`: `List`\[`str`\]
+- `entityTypes`: `List`\[`str`\]
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## ExternalEventsDetailTypeDef
 
@@ -328,13 +293,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ExternalEventsDetailTypeDef
 ```
 
-
 Required fields:
+
 - `dataLocation`: `str`
 - `dataAccessRoleArn`: `str`
-
-
-
 
 ## ExternalModelTypeDef
 
@@ -342,20 +304,20 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import ExternalModelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelEndpoint`: `str`
 - `modelSource`: `Literal['SAGEMAKER']`
 - `invokeModelEndpointRoleArn`: `str`
-- `inputConfiguration`: `"ModelInputConfigurationTypeDef"`
-- `outputConfiguration`: `"ModelOutputConfigurationTypeDef"`
-- `modelEndpointStatus`: `ModelEndpointStatus`
+- `inputConfiguration`:
+  [ModelInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelinputconfigurationtypedef)
+- `outputConfiguration`:
+  [ModelOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modeloutputconfigurationtypedef)
+- `modelEndpointStatus`:
+  [ModelEndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#modelendpointstatus)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## FieldValidationMessageTypeDef
 
@@ -363,16 +325,13 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import FieldValidationMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `fieldName`: `str`
 - `identifier`: `str`
 - `title`: `str`
 - `content`: `str`
 - `type`: `str`
-
 
 ## FileValidationMessageTypeDef
 
@@ -380,14 +339,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import FileValidationMessageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `title`: `str`
 - `content`: `str`
 - `type`: `str`
-
 
 ## GetBatchPredictionJobsResultTypeDef
 
@@ -395,13 +351,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `batchPredictions`: `List["BatchPredictionTypeDef"]`
-- `nextToken`: `str`
 
+- `batchPredictions`:
+  `List`\[[BatchPredictionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#batchpredictiontypedef)\]
+- `nextToken`: `str`
 
 ## GetDetectorVersionResultTypeDef
 
@@ -409,22 +363,23 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetDetectorVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 - `description`: `str`
-- `externalModelEndpoints`: `List[str]`
-- `modelVersions`: `List["ModelVersionTypeDef"]`
-- `rules`: `List["RuleTypeDef"]`
-- `status`: `DetectorVersionStatus`
+- `externalModelEndpoints`: `List`\[`str`\]
+- `modelVersions`:
+  `List`\[[ModelVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelversiontypedef)\]
+- `rules`:
+  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)\]
+- `status`:
+  [DetectorVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#detectorversionstatus)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
-- `ruleExecutionMode`: `RuleExecutionMode`
+- `ruleExecutionMode`:
+  [RuleExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#ruleexecutionmode)
 - `arn`: `str`
-
 
 ## GetDetectorsResultTypeDef
 
@@ -432,13 +387,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetDetectorsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectors`: `List["DetectorTypeDef"]`
-- `nextToken`: `str`
 
+- `detectors`:
+  `List`\[[DetectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#detectortypedef)\]
+- `nextToken`: `str`
 
 ## GetEntityTypesResultTypeDef
 
@@ -446,13 +399,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `entityTypes`: `List["EntityTypeTypeDef"]`
-- `nextToken`: `str`
 
+- `entityTypes`:
+  `List`\[[EntityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#entitytypetypedef)\]
+- `nextToken`: `str`
 
 ## GetEventPredictionResultTypeDef
 
@@ -460,13 +411,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetEventPredictionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `modelScores`: `List["ModelScoresTypeDef"]`
-- `ruleResults`: `List["RuleResultTypeDef"]`
 
+- `modelScores`:
+  `List`\[[ModelScoresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelscorestypedef)\]
+- `ruleResults`:
+  `List`\[[RuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruleresulttypedef)\]
 
 ## GetEventTypesResultTypeDef
 
@@ -474,13 +424,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetEventTypesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `eventTypes`: `List["EventTypeTypeDef"]`
-- `nextToken`: `str`
 
+- `eventTypes`:
+  `List`\[[EventTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#eventtypetypedef)\]
+- `nextToken`: `str`
 
 ## GetExternalModelsResultTypeDef
 
@@ -488,13 +436,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetExternalModelsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `externalModels`: `List["ExternalModelTypeDef"]`
-- `nextToken`: `str`
 
+- `externalModels`:
+  `List`\[[ExternalModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#externalmodeltypedef)\]
+- `nextToken`: `str`
 
 ## GetKMSEncryptionKeyResultTypeDef
 
@@ -502,12 +448,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetKMSEncryptionKeyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `kmsKey`: `"KMSKeyTypeDef"`
 
+- `kmsKey`:
+  [KMSKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#kmskeytypedef)
 
 ## GetLabelsResultTypeDef
 
@@ -515,13 +459,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetLabelsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `labels`: `List["LabelTypeDef"]`
-- `nextToken`: `str`
 
+- `labels`:
+  `List`\[[LabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#labeltypedef)\]
+- `nextToken`: `str`
 
 ## GetModelVersionResultTypeDef
 
@@ -529,19 +471,18 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetModelVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `modelVersionNumber`: `str`
 - `trainingDataSource`: `Literal['EXTERNAL_EVENTS']`
-- `trainingDataSchema`: `"TrainingDataSchemaTypeDef"`
-- `externalEventsDetail`: `"ExternalEventsDetailTypeDef"`
+- `trainingDataSchema`:
+  [TrainingDataSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#trainingdataschematypedef)
+- `externalEventsDetail`:
+  [ExternalEventsDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#externaleventsdetailtypedef)
 - `status`: `str`
 - `arn`: `str`
-
 
 ## GetModelsResultTypeDef
 
@@ -549,13 +490,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetModelsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextToken`: `str`
-- `models`: `List["ModelTypeDef"]`
 
+- `nextToken`: `str`
+- `models`:
+  `List`\[[ModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modeltypedef)\]
 
 ## GetOutcomesResultTypeDef
 
@@ -563,13 +502,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetOutcomesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `outcomes`: `List["OutcomeTypeDef"]`
-- `nextToken`: `str`
 
+- `outcomes`:
+  `List`\[[OutcomeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#outcometypedef)\]
+- `nextToken`: `str`
 
 ## GetRulesResultTypeDef
 
@@ -577,13 +514,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetRulesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ruleDetails`: `List["RuleDetailTypeDef"]`
-- `nextToken`: `str`
 
+- `ruleDetails`:
+  `List`\[[RuleDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruledetailtypedef)\]
+- `nextToken`: `str`
 
 ## GetVariablesResultTypeDef
 
@@ -591,13 +526,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import GetVariablesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `variables`: `List["VariableTypeDef"]`
-- `nextToken`: `str`
 
+- `variables`:
+  `List`\[[VariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#variabletypedef)\]
+- `nextToken`: `str`
 
 ## KMSKeyTypeDef
 
@@ -605,12 +538,9 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import KMSKeyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `kmsEncryptionKeyArn`: `str`
 
+- `kmsEncryptionKeyArn`: `str`
 
 ## LabelSchemaTypeDef
 
@@ -618,12 +548,9 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import LabelSchemaTypeDef
 ```
 
-
 Required fields:
-- `labelMapper`: `Dict[str, List[str]]`
 
-
-
+- `labelMapper`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## LabelTypeDef
 
@@ -631,16 +558,13 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import LabelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `description`: `str`
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## ListTagsForResourceResultTypeDef
 
@@ -648,13 +572,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
-- `nextToken`: `str`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `nextToken`: `str`
 
 ## MetricDataPointTypeDef
 
@@ -662,15 +584,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import MetricDataPointTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `fpr`: `float`
 - `precision`: `float`
 - `tpr`: `float`
 - `threshold`: `float`
-
 
 ## ModelEndpointDataBlobTypeDef
 
@@ -678,13 +597,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelEndpointDataBlobTypeDef
 ```
 
-
-
-
 Optional fields:
-- `byteBuffer`: `Union[bytes, IO[bytes]]`
-- `contentType`: `str`
 
+- `byteBuffer`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `contentType`: `str`
 
 ## ModelInputConfigurationTypeDef
 
@@ -692,18 +608,17 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelInputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `useEventVariables`: `bool`
 
-
-
 Optional fields:
+
 - `eventTypeName`: `str`
-- `format`: `ModelInputDataFormat`
+- `format`:
+  [ModelInputDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#modelinputdataformat)
 - `jsonInputTemplate`: `str`
 - `csvInputTemplate`: `str`
-
 
 ## ModelOutputConfigurationTypeDef
 
@@ -711,16 +626,15 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelOutputConfigurationTypeDef
 ```
 
-
 Required fields:
-- `format`: `ModelOutputDataFormat`
 
-
+- `format`:
+  [ModelOutputDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#modeloutputdataformat)
 
 Optional fields:
-- `jsonKeyToVariableMap`: `Dict[str, str]`
-- `csvIndexToVariableMap`: `Dict[str, str]`
 
+- `jsonKeyToVariableMap`: `Dict`\[`str`, `str`\]
+- `csvIndexToVariableMap`: `Dict`\[`str`, `str`\]
 
 ## ModelScoresTypeDef
 
@@ -728,13 +642,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelScoresTypeDef
 ```
 
-
-
-
 Optional fields:
-- `modelVersion`: `"ModelVersionTypeDef"`
-- `scores`: `Dict[str, float]`
 
+- `modelVersion`:
+  [ModelVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelversiontypedef)
+- `scores`: `Dict`\[`str`, `float`\]
 
 ## ModelTypeDef
 
@@ -742,10 +654,8 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `description`: `str`
@@ -754,29 +664,28 @@ Optional fields:
 - `lastUpdatedTime`: `str`
 - `arn`: `str`
 
-
 ## ModelVersionDetailTypeDef
 
 ```python
 from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `modelVersionNumber`: `str`
 - `status`: `str`
 - `trainingDataSource`: `Literal['EXTERNAL_EVENTS']`
-- `trainingDataSchema`: `"TrainingDataSchemaTypeDef"`
-- `externalEventsDetail`: `"ExternalEventsDetailTypeDef"`
-- `trainingResult`: `"TrainingResultTypeDef"`
+- `trainingDataSchema`:
+  [TrainingDataSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#trainingdataschematypedef)
+- `externalEventsDetail`:
+  [ExternalEventsDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#externaleventsdetailtypedef)
+- `trainingResult`:
+  [TrainingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#trainingresulttypedef)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## ModelVersionTypeDef
 
@@ -784,17 +693,15 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import ModelVersionTypeDef
 ```
 
-
 Required fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `modelVersionNumber`: `str`
 
-
-
 Optional fields:
-- `arn`: `str`
 
+- `arn`: `str`
 
 ## OutcomeTypeDef
 
@@ -802,16 +709,13 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import OutcomeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `description`: `str`
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## RuleDetailTypeDef
 
@@ -819,21 +723,18 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import RuleDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ruleId`: `str`
 - `description`: `str`
 - `detectorId`: `str`
 - `ruleVersion`: `str`
 - `expression`: `str`
 - `language`: `Literal['DETECTORPL']`
-- `outcomes`: `List[str]`
+- `outcomes`: `List`\[`str`\]
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-
 
 ## RuleResultTypeDef
 
@@ -841,13 +742,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import RuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ruleId`: `str`
-- `outcomes`: `List[str]`
 
+- `ruleId`: `str`
+- `outcomes`: `List`\[`str`\]
 
 ## RuleTypeDef
 
@@ -855,14 +753,11 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import RuleTypeDef
 ```
 
-
 Required fields:
+
 - `detectorId`: `str`
 - `ruleId`: `str`
 - `ruleVersion`: `str`
-
-
-
 
 ## TagTypeDef
 
@@ -870,13 +765,10 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## TrainingDataSchemaTypeDef
 
@@ -884,13 +776,11 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import TrainingDataSchemaTypeDef
 ```
 
-
 Required fields:
-- `modelVariables`: `List[str]`
-- `labelSchema`: `"LabelSchemaTypeDef"`
 
-
-
+- `modelVariables`: `List`\[`str`\]
+- `labelSchema`:
+  [LabelSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#labelschematypedef)
 
 ## TrainingMetricsTypeDef
 
@@ -898,13 +788,11 @@ Required fields:
 from mypy_boto3_frauddetector.type_defs import TrainingMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `auc`: `float`
-- `metricDataPoints`: `List["MetricDataPointTypeDef"]`
 
+- `auc`: `float`
+- `metricDataPoints`:
+  `List`\[[MetricDataPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#metricdatapointtypedef)\]
 
 ## TrainingResultTypeDef
 
@@ -912,13 +800,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import TrainingResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dataValidationMetrics`: `"DataValidationMetricsTypeDef"`
-- `trainingMetrics`: `"TrainingMetricsTypeDef"`
 
+- `dataValidationMetrics`:
+  [DataValidationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#datavalidationmetricstypedef)
+- `trainingMetrics`:
+  [TrainingMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#trainingmetricstypedef)
 
 ## UpdateModelVersionResultTypeDef
 
@@ -926,15 +813,12 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
 - `modelVersionNumber`: `str`
 - `status`: `str`
-
 
 ## UpdateRuleVersionResultTypeDef
 
@@ -942,12 +826,10 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import UpdateRuleVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `rule`: `"RuleTypeDef"`
 
+- `rule`:
+  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)
 
 ## VariableEntryTypeDef
 
@@ -955,10 +837,8 @@ Optional fields:
 from mypy_boto3_frauddetector.type_defs import VariableEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `dataType`: `str`
 - `dataSource`: `str`
@@ -966,24 +846,22 @@ Optional fields:
 - `description`: `str`
 - `variableType`: `str`
 
-
 ## VariableTypeDef
 
 ```python
 from mypy_boto3_frauddetector.type_defs import VariableTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
-- `dataType`: `DataType`
-- `dataSource`: `DataSource`
+- `dataType`:
+  [DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#datatype)
+- `dataSource`:
+  [DataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#datasource)
 - `defaultValue`: `str`
 - `description`: `str`
 - `variableType`: `str`
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
-

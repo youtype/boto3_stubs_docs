@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > Literals
 
-Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+Auto-generated documentation for
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+type annotations stubs module
+[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Literals for boto3 CloudWatchLogs module](#literals-for-boto3-cloudwatchlogs-module)
   - [DescribeDestinationsPaginatorName](#describedestinationspaginatorname)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Comprehend
 
-Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
-type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+Auto-generated documentation for
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+type annotations stubs module
+[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 ```bash
 pip install mypy-boto3-comprehend
@@ -19,7 +21,8 @@ pip install mypy-boto3-comprehend
 
 ## ComprehendClient
 
-Type annotations for  `boto3.client("comprehend")` as [ComprehendClient](./client.md)
+Type annotations for `boto3.client("comprehend")` as
+[ComprehendClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_comprehend.client import ComprehendClient
 ```
 
-
 ComprehendClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_detect_dominant_language](./client.md#batch-detect-dominant-language)
 - [batch_detect_entities](./client.md#batch-detect-entities)
 - [batch_detect_key_phrases](./client.md#batch-detect-key-phrases)
@@ -98,10 +99,8 @@ ComprehendClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_endpoint](./client.md#update-endpoint)
 
-
-
-
 ### Exceptions
+
 - [BatchSizeLimitExceededException](./client.md#batchsizelimitexceededexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -120,14 +119,10 @@ ComprehendClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [UnsupportedLanguageException](./client.md#unsupportedlanguageexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("comprehend").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("comprehend").get_paginator("...")`.
 
 Can be used directly:
 
@@ -143,11 +138,6 @@ from mypy_boto3_comprehend.paginators import ListDocumentClassificationJobsPagin
 - [ListKeyPhrasesDetectionJobsPaginator](./paginators.md#listkeyphrasesdetectionjobspaginator)
 - [ListSentimentDetectionJobsPaginator](./paginators.md#listsentimentdetectionjobspaginator)
 - [ListTopicsDetectionJobsPaginator](./paginators.md#listtopicsdetectionjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -183,13 +173,10 @@ from mypy_boto3_comprehend.literals import DocumentClassifierDataFormat, ...
 - [SentimentType](./literals.md#sentimenttype)
 - [SyntaxLanguageCode](./literals.md#syntaxlanguagecode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

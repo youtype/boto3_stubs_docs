@@ -1,9 +1,12 @@
 # KinesisVideoMediaClient for boto3 KinesisVideoMedia module
 
-> [Index](../README.md) > [KinesisVideoMedia](./README.md) > KinesisVideoMediaClient
+> [Index](../README.md) > [KinesisVideoMedia](./README.md) >
+> KinesisVideoMediaClient
 
-Auto-generated documentation for [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
-type annotations stubs module [mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+Auto-generated documentation for
+[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+type annotations stubs module
+[mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 - [KinesisVideoMediaClient for boto3 KinesisVideoMedia module](#kinesisvideomediaclient-for-boto3-kinesisvideomedia-module)
   - [KinesisVideoMediaClient](#kinesisvideomediaclient)
@@ -26,12 +29,13 @@ def get_kinesis-video-media_client() -> KinesisVideoMediaClient:
     return boto3.client("kinesis-video-media")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
+Boto3 documentation:
+[KinesisVideoMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kinesis_video_media.client import Exceptions
@@ -39,7 +43,6 @@ from mypy_boto3_kinesis_video_media.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -51,56 +54,52 @@ Exceptions:
 - `Exceptions.NotAuthorizedException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("kinesis-video-media").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate]
+Boto3 documentation:
+[KinesisVideoMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("kinesis-video-media").generate_presigned_url` method.
+Type annotations for
+`boto3.client("kinesis-video-media").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url]
+Boto3 documentation:
+[KinesisVideoMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_media
 
 Type annotations for `boto3.client("kinesis-video-media").get_media` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media]
+Boto3 documentation:
+[KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
 
-```python
-def get_media(
-    self,
-    StartSelector: StartSelectorTypeDef,
-    StreamName: str = None,
-    StreamARN: str = None
-) -> GetMediaOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `StartSelector`:
+  [StartSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/type_defs.html#startselectortypedef)
+  *(required)*
+- `StreamName`: `str`
+- `StreamARN`: `str`
 
-
+Returns
+[GetMediaOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/type_defs.html#getmediaoutputtypedef).

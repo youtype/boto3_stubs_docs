@@ -1,9 +1,12 @@
 # KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > KinesisVideoSignalingChannelsClient
+> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) >
+> KinesisVideoSignalingChannelsClient
 
-Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
-type annotations stubs module [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
+Auto-generated documentation for
+[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+type annotations stubs module
+[mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module](#kinesisvideosignalingchannelsclient-for-boto3-kinesisvideosignalingchannels-module)
   - [KinesisVideoSignalingChannelsClient](#kinesisvideosignalingchannelsclient)
@@ -27,12 +30,13 @@ def get_kinesis-video-signaling_client() -> KinesisVideoSignalingChannelsClient:
     return boto3.client("kinesis-video-signaling")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_kinesis_video_signaling.client import Exceptions
@@ -40,7 +44,6 @@ from mypy_boto3_kinesis_video_signaling.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -52,73 +55,70 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.SessionExpiredException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("kinesis-video-signaling").can_paginate` method.
+Type annotations for `boto3.client("kinesis-video-signaling").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate]
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("kinesis-video-signaling").generate_presigned_url` method.
+Type annotations for
+`boto3.client("kinesis-video-signaling").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url]
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_ice_server_config
 
-Type annotations for `boto3.client("kinesis-video-signaling").get_ice_server_config` method.
+Type annotations for
+`boto3.client("kinesis-video-signaling").get_ice_server_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config]
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
 
-```python
-def get_ice_server_config(
-    self,
-    ChannelARN: str,
-    ClientId: str = None,
-    Service: Literal['TURN'] = None,
-    Username: str = None
-) -> GetIceServerConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ChannelARN`: `str` *(required)*
+- `ClientId`: `str`
+- `Service`: `Literal['TURN']`
+- `Username`: `str`
+
+Returns
+[GetIceServerConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#geticeserverconfigresponsetypedef).
 
 ### send_alexa_offer_to_master
 
-Type annotations for `boto3.client("kinesis-video-signaling").send_alexa_offer_to_master` method.
+Type annotations for
+`boto3.client("kinesis-video-signaling").send_alexa_offer_to_master` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master]
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
 
-```python
-def send_alexa_offer_to_master(
-    self,
-    ChannelARN: str,
-    SenderClientId: str,
-    MessagePayload: str
-) -> SendAlexaOfferToMasterResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ChannelARN`: `str` *(required)*
+- `SenderClientId`: `str` *(required)*
+- `MessagePayload`: `str` *(required)*
 
-
+Returns
+[SendAlexaOfferToMasterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#sendalexaoffertomasterresponsetypedef).

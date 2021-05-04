@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > CodeArtifactClient
 
-Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
-type annotations stubs module [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+Auto-generated documentation for
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+type annotations stubs module
+[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [CodeArtifactClient for boto3 CodeArtifact module](#codeartifactclient-for-boto3-codeartifact-module)
   - [CodeArtifactClient](#codeartifactclient)
@@ -60,12 +62,13 @@ def get_codeartifact_client() -> CodeArtifactClient:
     return boto3.client("codeartifact")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
+Boto3 documentation:
+[CodeArtifact.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codeartifact.client import Exceptions
@@ -73,7 +76,6 @@ from mypy_boto3_codeartifact.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -86,666 +88,721 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_external_connection
 
-Type annotations for `boto3.client("codeartifact").associate_external_connection` method.
+Type annotations for
+`boto3.client("codeartifact").associate_external_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection]
+Boto3 documentation:
+[CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
 
-```python
-def associate_external_connection(
-    self,
-    domain: str,
-    repository: str,
-    externalConnection: str,
-    domainOwner: str = None
-) -> AssociateExternalConnectionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `externalConnection`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[AssociateExternalConnectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#associateexternalconnectionresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codeartifact").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate]
+Boto3 documentation:
+[CodeArtifact.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### copy_package_versions
 
-Type annotations for `boto3.client("codeartifact").copy_package_versions` method.
+Type annotations for `boto3.client("codeartifact").copy_package_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions]
+Boto3 documentation:
+[CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
 
-```python
-def copy_package_versions(
-    self,
-    domain: str,
-    sourceRepository: str,
-    destinationRepository: str,
-    format: PackageFormat,
-    package: str,
-    domainOwner: str = None,
-    namespace: str = None,
-    versions: List[str] = None,
-    versionRevisions: Dict[str, str] = None,
-    allowOverwrite: bool = None,
-    includeFromUpstream: bool = None
-) -> CopyPackageVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `sourceRepository`: `str` *(required)*
+- `destinationRepository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `versions`: `List`\[`str`\]
+- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `allowOverwrite`: `bool`
+- `includeFromUpstream`: `bool`
+
+Returns
+[CopyPackageVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#copypackageversionsresulttypedef).
 
 ### create_domain
 
 Type annotations for `boto3.client("codeartifact").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain]
+Boto3 documentation:
+[CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    domain: str,
-    encryptionKey: str = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `encryptionKey`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#createdomainresulttypedef).
 
 ### create_repository
 
 Type annotations for `boto3.client("codeartifact").create_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository]
+Boto3 documentation:
+[CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
 
-```python
-def create_repository(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None,
-    description: str = None,
-    upstreams: List[UpstreamRepositoryTypeDef] = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateRepositoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+- `description`: `str`
+- `upstreams`:
+  `List`\[[UpstreamRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#upstreamrepositorytypedef)\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRepositoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#createrepositoryresulttypedef).
 
 ### delete_domain
 
 Type annotations for `boto3.client("codeartifact").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain]
+Boto3 documentation:
+[CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    domain: str,
-    domainOwner: str = None
-) -> DeleteDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[DeleteDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#deletedomainresulttypedef).
 
 ### delete_domain_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").delete_domain_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").delete_domain_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
 
-```python
-def delete_domain_permissions_policy(
-    self,
-    domain: str,
-    domainOwner: str = None,
-    policyRevision: str = None
-) -> DeleteDomainPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+- `policyRevision`: `str`
+
+Returns
+[DeleteDomainPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#deletedomainpermissionspolicyresulttypedef).
 
 ### delete_package_versions
 
-Type annotations for `boto3.client("codeartifact").delete_package_versions` method.
+Type annotations for `boto3.client("codeartifact").delete_package_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions]
+Boto3 documentation:
+[CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
 
-```python
-def delete_package_versions(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    versions: List[str],
-    domainOwner: str = None,
-    namespace: str = None,
-    expectedStatus: PackageVersionStatus = None
-) -> DeletePackageVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `versions`: `List`\[`str`\] *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `expectedStatus`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
+
+Returns
+[DeletePackageVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#deletepackageversionsresulttypedef).
 
 ### delete_repository
 
 Type annotations for `boto3.client("codeartifact").delete_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository]
+Boto3 documentation:
+[CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
 
-```python
-def delete_repository(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None
-) -> DeleteRepositoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[DeleteRepositoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#deleterepositoryresulttypedef).
 
 ### delete_repository_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").delete_repository_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").delete_repository_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
 
-```python
-def delete_repository_permissions_policy(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None,
-    policyRevision: str = None
-) -> DeleteRepositoryPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+- `policyRevision`: `str`
+
+Returns
+[DeleteRepositoryPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#deleterepositorypermissionspolicyresulttypedef).
 
 ### describe_domain
 
 Type annotations for `boto3.client("codeartifact").describe_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain]
+Boto3 documentation:
+[CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
 
-```python
-def describe_domain(
-    self,
-    domain: str,
-    domainOwner: str = None
-) -> DescribeDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[DescribeDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#describedomainresulttypedef).
 
 ### describe_package_version
 
-Type annotations for `boto3.client("codeartifact").describe_package_version` method.
+Type annotations for `boto3.client("codeartifact").describe_package_version`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version]
+Boto3 documentation:
+[CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
 
-```python
-def describe_package_version(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    packageVersion: str,
-    domainOwner: str = None,
-    namespace: str = None
-) -> DescribePackageVersionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `packageVersion`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+
+Returns
+[DescribePackageVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#describepackageversionresulttypedef).
 
 ### describe_repository
 
 Type annotations for `boto3.client("codeartifact").describe_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository]
+Boto3 documentation:
+[CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
 
-```python
-def describe_repository(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None
-) -> DescribeRepositoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[DescribeRepositoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#describerepositoryresulttypedef).
 
 ### disassociate_external_connection
 
-Type annotations for `boto3.client("codeartifact").disassociate_external_connection` method.
+Type annotations for
+`boto3.client("codeartifact").disassociate_external_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection]
+Boto3 documentation:
+[CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
 
-```python
-def disassociate_external_connection(
-    self,
-    domain: str,
-    repository: str,
-    externalConnection: str,
-    domainOwner: str = None
-) -> DisassociateExternalConnectionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `externalConnection`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[DisassociateExternalConnectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#disassociateexternalconnectionresulttypedef).
 
 ### dispose_package_versions
 
-Type annotations for `boto3.client("codeartifact").dispose_package_versions` method.
+Type annotations for `boto3.client("codeartifact").dispose_package_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions]
+Boto3 documentation:
+[CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
 
-```python
-def dispose_package_versions(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    versions: List[str],
-    domainOwner: str = None,
-    namespace: str = None,
-    versionRevisions: Dict[str, str] = None,
-    expectedStatus: PackageVersionStatus = None
-) -> DisposePackageVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `versions`: `List`\[`str`\] *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `expectedStatus`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
+
+Returns
+[DisposePackageVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#disposepackageversionsresulttypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codeartifact").generate_presigned_url` method.
+Type annotations for `boto3.client("codeartifact").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeArtifact.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_authorization_token
 
-Type annotations for `boto3.client("codeartifact").get_authorization_token` method.
+Type annotations for `boto3.client("codeartifact").get_authorization_token`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token]
+Boto3 documentation:
+[CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
 
-```python
-def get_authorization_token(
-    self,
-    domain: str,
-    domainOwner: str = None,
-    durationSeconds: int = None
-) -> GetAuthorizationTokenResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+- `durationSeconds`: `int`
+
+Returns
+[GetAuthorizationTokenResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getauthorizationtokenresulttypedef).
 
 ### get_domain_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").get_domain_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").get_domain_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
 
-```python
-def get_domain_permissions_policy(
-    self,
-    domain: str,
-    domainOwner: str = None
-) -> GetDomainPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[GetDomainPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getdomainpermissionspolicyresulttypedef).
 
 ### get_package_version_asset
 
-Type annotations for `boto3.client("codeartifact").get_package_version_asset` method.
+Type annotations for `boto3.client("codeartifact").get_package_version_asset`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset]
+Boto3 documentation:
+[CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
 
-```python
-def get_package_version_asset(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    packageVersion: str,
-    asset: str,
-    domainOwner: str = None,
-    namespace: str = None,
-    packageVersionRevision: str = None
-) -> GetPackageVersionAssetResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `packageVersion`: `str` *(required)*
+- `asset`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `packageVersionRevision`: `str`
+
+Returns
+[GetPackageVersionAssetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getpackageversionassetresulttypedef).
 
 ### get_package_version_readme
 
-Type annotations for `boto3.client("codeartifact").get_package_version_readme` method.
+Type annotations for `boto3.client("codeartifact").get_package_version_readme`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme]
+Boto3 documentation:
+[CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
 
-```python
-def get_package_version_readme(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    packageVersion: str,
-    domainOwner: str = None,
-    namespace: str = None
-) -> GetPackageVersionReadmeResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `packageVersion`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+
+Returns
+[GetPackageVersionReadmeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getpackageversionreadmeresulttypedef).
 
 ### get_repository_endpoint
 
-Type annotations for `boto3.client("codeartifact").get_repository_endpoint` method.
+Type annotations for `boto3.client("codeartifact").get_repository_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint]
+Boto3 documentation:
+[CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
 
-```python
-def get_repository_endpoint(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    domainOwner: str = None
-) -> GetRepositoryEndpointResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `domainOwner`: `str`
+
+Returns
+[GetRepositoryEndpointResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getrepositoryendpointresulttypedef).
 
 ### get_repository_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").get_repository_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").get_repository_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
 
-```python
-def get_repository_permissions_policy(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None
-) -> GetRepositoryPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+
+Returns
+[GetRepositoryPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#getrepositorypermissionspolicyresulttypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("codeartifact").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains]
+Boto3 documentation:
+[CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListDomainsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listdomainsresulttypedef).
 
 ### list_package_version_assets
 
-Type annotations for `boto3.client("codeartifact").list_package_version_assets` method.
+Type annotations for `boto3.client("codeartifact").list_package_version_assets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets]
+Boto3 documentation:
+[CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
 
-```python
-def list_package_version_assets(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    packageVersion: str,
-    domainOwner: str = None,
-    namespace: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListPackageVersionAssetsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `packageVersion`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListPackageVersionAssetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackageversionassetsresulttypedef).
 
 ### list_package_version_dependencies
 
-Type annotations for `boto3.client("codeartifact").list_package_version_dependencies` method.
+Type annotations for
+`boto3.client("codeartifact").list_package_version_dependencies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies]
+Boto3 documentation:
+[CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
 
-```python
-def list_package_version_dependencies(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    packageVersion: str,
-    domainOwner: str = None,
-    namespace: str = None,
-    nextToken: str = None
-) -> ListPackageVersionDependenciesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `packageVersion`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `nextToken`: `str`
+
+Returns
+[ListPackageVersionDependenciesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackageversiondependenciesresulttypedef).
 
 ### list_package_versions
 
-Type annotations for `boto3.client("codeartifact").list_package_versions` method.
+Type annotations for `boto3.client("codeartifact").list_package_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions]
+Boto3 documentation:
+[CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
 
-```python
-def list_package_versions(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    domainOwner: str = None,
-    namespace: str = None,
-    status: PackageVersionStatus = None,
-    sortBy: Literal['PUBLISHED_TIME'] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListPackageVersionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `status`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
+- `sortBy`: `Literal['PUBLISHED_TIME']`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListPackageVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackageversionsresulttypedef).
 
 ### list_packages
 
 Type annotations for `boto3.client("codeartifact").list_packages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages]
+Boto3 documentation:
+[CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
 
-```python
-def list_packages(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None,
-    format: PackageFormat = None,
-    namespace: str = None,
-    packagePrefix: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListPackagesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+- `namespace`: `str`
+- `packagePrefix`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListPackagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackagesresulttypedef).
 
 ### list_repositories
 
 Type annotations for `boto3.client("codeartifact").list_repositories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories]
+Boto3 documentation:
+[CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
 
-```python
-def list_repositories(
-    self,
-    repositoryPrefix: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListRepositoriesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `repositoryPrefix`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListRepositoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listrepositoriesresulttypedef).
 
 ### list_repositories_in_domain
 
-Type annotations for `boto3.client("codeartifact").list_repositories_in_domain` method.
+Type annotations for `boto3.client("codeartifact").list_repositories_in_domain`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain]
+Boto3 documentation:
+[CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
 
-```python
-def list_repositories_in_domain(
-    self,
-    domain: str,
-    domainOwner: str = None,
-    administratorAccount: str = None,
-    repositoryPrefix: str = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListRepositoriesInDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `domainOwner`: `str`
+- `administratorAccount`: `str`
+- `repositoryPrefix`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListRepositoriesInDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listrepositoriesindomainresulttypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codeartifact").list_tags_for_resource` method.
+Type annotations for `boto3.client("codeartifact").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listtagsforresourceresulttypedef).
 
 ### put_domain_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").put_domain_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").put_domain_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
 
-```python
-def put_domain_permissions_policy(
-    self,
-    domain: str,
-    policyDocument: str,
-    domainOwner: str = None,
-    policyRevision: str = None
-) -> PutDomainPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `policyDocument`: `str` *(required)*
+- `domainOwner`: `str`
+- `policyRevision`: `str`
+
+Returns
+[PutDomainPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#putdomainpermissionspolicyresulttypedef).
 
 ### put_repository_permissions_policy
 
-Type annotations for `boto3.client("codeartifact").put_repository_permissions_policy` method.
+Type annotations for
+`boto3.client("codeartifact").put_repository_permissions_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy]
+Boto3 documentation:
+[CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
 
-```python
-def put_repository_permissions_policy(
-    self,
-    domain: str,
-    repository: str,
-    policyDocument: str,
-    domainOwner: str = None,
-    policyRevision: str = None
-) -> PutRepositoryPermissionsPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `policyDocument`: `str` *(required)*
+- `domainOwner`: `str`
+- `policyRevision`: `str`
+
+Returns
+[PutRepositoryPermissionsPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#putrepositorypermissionspolicyresulttypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("codeartifact").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource]
+Boto3 documentation:
+[CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("codeartifact").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource]
+Boto3 documentation:
+[CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_package_versions_status
 
-Type annotations for `boto3.client("codeartifact").update_package_versions_status` method.
+Type annotations for
+`boto3.client("codeartifact").update_package_versions_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status]
+Boto3 documentation:
+[CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
 
-```python
-def update_package_versions_status(
-    self,
-    domain: str,
-    repository: str,
-    format: PackageFormat,
-    package: str,
-    versions: List[str],
-    targetStatus: PackageVersionStatus,
-    domainOwner: str = None,
-    namespace: str = None,
-    versionRevisions: Dict[str, str] = None,
-    expectedStatus: PackageVersionStatus = None
-) -> UpdatePackageVersionsStatusResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+  *(required)*
+- `package`: `str` *(required)*
+- `versions`: `List`\[`str`\] *(required)*
+- `targetStatus`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
+  *(required)*
+- `domainOwner`: `str`
+- `namespace`: `str`
+- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `expectedStatus`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
+
+Returns
+[UpdatePackageVersionsStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#updatepackageversionsstatusresulttypedef).
 
 ### update_repository
 
 Type annotations for `boto3.client("codeartifact").update_repository` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository]
+Boto3 documentation:
+[CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
 
-```python
-def update_repository(
-    self,
-    domain: str,
-    repository: str,
-    domainOwner: str = None,
-    description: str = None,
-    upstreams: List[UpstreamRepositoryTypeDef] = None
-) -> UpdateRepositoryResultTypeDef:
-    pass
-```
+Arguments:
 
+- `domain`: `str` *(required)*
+- `repository`: `str` *(required)*
+- `domainOwner`: `str`
+- `description`: `str`
+- `upstreams`:
+  `List`\[[UpstreamRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#upstreamrepositorytypedef)\]
 
+Returns
+[UpdateRepositoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#updaterepositoryresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("codeartifact").get_paginator` method with overloads.
+Type annotations for `boto3.client("codeartifact").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("list_package_version_assets")` -> [ListPackageVersionAssetsPaginator](./paginators.md#listpackageversionassetspaginator)
-- `client.get_paginator("list_package_versions")` -> [ListPackageVersionsPaginator](./paginators.md#listpackageversionspaginator)
-- `client.get_paginator("list_packages")` -> [ListPackagesPaginator](./paginators.md#listpackagespaginator)
-- `client.get_paginator("list_repositories")` -> [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
-- `client.get_paginator("list_repositories_in_domain")` -> [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
-
-
+- `client.get_paginator("list_domains")` ->
+  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_package_version_assets")` ->
+  [ListPackageVersionAssetsPaginator](./paginators.md#listpackageversionassetspaginator)
+- `client.get_paginator("list_package_versions")` ->
+  [ListPackageVersionsPaginator](./paginators.md#listpackageversionspaginator)
+- `client.get_paginator("list_packages")` ->
+  [ListPackagesPaginator](./paginators.md#listpackagespaginator)
+- `client.get_paginator("list_repositories")` ->
+  [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+- `client.get_paginator("list_repositories_in_domain")` ->
+  [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Cloud9
 
-Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+Auto-generated documentation for
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+type annotations stubs module
+[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ```bash
 pip install mypy-boto3-cloud9
@@ -19,7 +21,7 @@ pip install mypy-boto3-cloud9
 
 ## Cloud9Client
 
-Type annotations for  `boto3.client("cloud9")` as [Cloud9Client](./client.md)
+Type annotations for `boto3.client("cloud9")` as [Cloud9Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_cloud9.client import Cloud9Client
 ```
 
-
 Cloud9Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_environment_ec2](./client.md#create-environment-ec2)
 - [create_environment_membership](./client.md#create-environment-membership)
@@ -50,10 +50,8 @@ Cloud9Client [exceptions](./client.md#exceptions)
 - [update_environment](./client.md#update-environment)
 - [update_environment_membership](./client.md#update-environment-membership)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentAccessException](./client.md#concurrentaccessexception)
@@ -64,14 +62,10 @@ Cloud9Client [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloud9").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloud9").get_paginator("...")`.
 
 Can be used directly:
 
@@ -81,11 +75,6 @@ from mypy_boto3_cloud9.paginators import DescribeEnvironmentMembershipsPaginator
 
 - [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -107,13 +96,10 @@ from mypy_boto3_cloud9.literals import ConnectionType, ...
 - [MemberPermissions](./literals.md#memberpermissions)
 - [Permissions](./literals.md#permissions)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

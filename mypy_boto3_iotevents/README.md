@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTEvents
 
-Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
-type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+Auto-generated documentation for
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+type annotations stubs module
+[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 ```bash
 pip install mypy-boto3-iotevents
@@ -18,7 +20,8 @@ pip install mypy-boto3-iotevents
 
 ## IoTEventsClient
 
-Type annotations for  `boto3.client("iotevents")` as [IoTEventsClient](./client.md)
+Type annotations for `boto3.client("iotevents")` as
+[IoTEventsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iotevents.client import IoTEventsClient
 ```
 
-
 IoTEventsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_detector_model](./client.md#create-detector-model)
 - [create_input](./client.md#create-input)
@@ -54,10 +55,8 @@ IoTEventsClient [exceptions](./client.md#exceptions)
 - [update_detector_model](./client.md#update-detector-model)
 - [update_input](./client.md#update-input)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalFailureException](./client.md#internalfailureexception)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -68,15 +67,6 @@ IoTEventsClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -96,13 +86,10 @@ from mypy_boto3_iotevents.literals import AnalysisResultLevel, ...
 - [LoggingLevel](./literals.md#logginglevel)
 - [PayloadType](./literals.md#payloadtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

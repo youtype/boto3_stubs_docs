@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkManager](./README.md) > Paginators
 
-Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+Auto-generated documentation for
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+type annotations stubs module
+[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Paginators for boto3 NetworkManager module](#paginators-for-boto3-networkmanager-module)
   - [DescribeGlobalNetworksPaginator](#describeglobalnetworkspaginator)
@@ -18,7 +20,8 @@ type annotations stubs module [mypy_boto3_networkmanager](https://pypi.org/proje
 
 ## DescribeGlobalNetworksPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("describe_global_networks")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("describe_global_networks")`.
 
 Can be used directly:
 
@@ -29,20 +32,22 @@ def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
     return boto3.client("networkmanager").get_paginator("describe_global_networks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
+Boto3 documentation:
+[NetworkManager.Paginator.DescribeGlobalNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
 
-```python
-class DescribeGlobalNetworksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGlobalNetworksResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
+
+- `GlobalNetworkIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGlobalNetworksPaginator.paginate` returns
+`Iterator`\[[DescribeGlobalNetworksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#describeglobalnetworksresponsetypedef)\].
+
 ## GetConnectionsPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_connections")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_connections")`.
 
 Can be used directly:
 
@@ -53,22 +58,24 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
     return boto3.client("networkmanager").get_paginator("get_connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
+Boto3 documentation:
+[NetworkManager.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
 
-```python
-class GetConnectionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        ConnectionIds: List[str] = None,
-        DeviceId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetConnectionsResponseTypeDef]:
-        pass
-```
+Arguments for `GetConnectionsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `ConnectionIds`: `List`\[`str`\]
+- `DeviceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetConnectionsPaginator.paginate` returns
+`Iterator`\[[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getconnectionsresponsetypedef)\].
+
 ## GetCustomerGatewayAssociationsPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")`.
 
 Can be used directly:
 
@@ -79,21 +86,23 @@ def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssoc
     return boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
+Boto3 documentation:
+[NetworkManager.Paginator.GetCustomerGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
 
-```python
-class GetCustomerGatewayAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        CustomerGatewayArns: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetCustomerGatewayAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `CustomerGatewayArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetCustomerGatewayAssociationsPaginator.paginate` returns
+`Iterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getcustomergatewayassociationsresponsetypedef)\].
+
 ## GetDevicesPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_devices")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_devices")`.
 
 Can be used directly:
 
@@ -104,22 +113,24 @@ def get_get_devices_paginator() -> GetDevicesPaginator:
     return boto3.client("networkmanager").get_paginator("get_devices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
+Boto3 documentation:
+[NetworkManager.Paginator.GetDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
 
-```python
-class GetDevicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        DeviceIds: List[str] = None,
-        SiteId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetDevicesResponseTypeDef]:
-        pass
-```
+Arguments for `GetDevicesPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceIds`: `List`\[`str`\]
+- `SiteId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetDevicesPaginator.paginate` returns
+`Iterator`\[[GetDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getdevicesresponsetypedef)\].
+
 ## GetLinkAssociationsPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_link_associations")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_link_associations")`.
 
 Can be used directly:
 
@@ -130,22 +141,24 @@ def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
     return boto3.client("networkmanager").get_paginator("get_link_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
+Boto3 documentation:
+[NetworkManager.Paginator.GetLinkAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
 
-```python
-class GetLinkAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        DeviceId: str = None,
-        LinkId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetLinkAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `GetLinkAssociationsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `DeviceId`: `str`
+- `LinkId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetLinkAssociationsPaginator.paginate` returns
+`Iterator`\[[GetLinkAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinkassociationsresponsetypedef)\].
+
 ## GetLinksPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_links")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_links")`.
 
 Can be used directly:
 
@@ -156,24 +169,26 @@ def get_get_links_paginator() -> GetLinksPaginator:
     return boto3.client("networkmanager").get_paginator("get_links")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
+Boto3 documentation:
+[NetworkManager.Paginator.GetLinks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
 
-```python
-class GetLinksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        LinkIds: List[str] = None,
-        SiteId: str = None,
-        Type: str = None,
-        Provider: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetLinksResponseTypeDef]:
-        pass
-```
+Arguments for `GetLinksPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `LinkIds`: `List`\[`str`\]
+- `SiteId`: `str`
+- `Type`: `str`
+- `Provider`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetLinksPaginator.paginate` returns
+`Iterator`\[[GetLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinksresponsetypedef)\].
+
 ## GetSitesPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_sites")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_sites")`.
 
 Can be used directly:
 
@@ -184,21 +199,23 @@ def get_get_sites_paginator() -> GetSitesPaginator:
     return boto3.client("networkmanager").get_paginator("get_sites")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
+Boto3 documentation:
+[NetworkManager.Paginator.GetSites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
 
-```python
-class GetSitesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        SiteIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetSitesResponseTypeDef]:
-        pass
-```
+Arguments for `GetSitesPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `SiteIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetSitesPaginator.paginate` returns
+`Iterator`\[[GetSitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getsitesresponsetypedef)\].
+
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")`.
 
 Can be used directly:
 
@@ -209,21 +226,24 @@ def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitG
     return boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
+Boto3 documentation:
+[NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
 
-```python
-class GetTransitGatewayConnectPeerAssociationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        TransitGatewayConnectPeerArns: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayConnectPeerAssociationsResponseTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayConnectPeerAssociationsPaginator.paginate`
+method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayConnectPeerArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
+
 ## GetTransitGatewayRegistrationsPaginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")`.
+Type annotations for
+`boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")`.
 
 Can be used directly:
 
@@ -234,15 +254,15 @@ def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegist
     return boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
+Boto3 documentation:
+[NetworkManager.Paginator.GetTransitGatewayRegistrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
 
-```python
-class GetTransitGatewayRegistrationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalNetworkId: str,
-        TransitGatewayArns: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetTransitGatewayRegistrationsResponseTypeDef]:
-        pass
-```
+Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
+
+- `GlobalNetworkId`: `str` *(required)*
+- `TransitGatewayArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+
+`GetTransitGatewayRegistrationsPaginator.paginate` returns
+`Iterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayregistrationsresponsetypedef)\].

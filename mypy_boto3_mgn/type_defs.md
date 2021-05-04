@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [mgn](./README.md) > Structures
 
-Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
-type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+Auto-generated documentation for
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+type annotations stubs module
+[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [Typed dictionaries for boto3 mgn module](#typed-dictionaries-for-boto3-mgn-module)
   - [CPUTypeDef](#cputypedef)
@@ -56,13 +58,10 @@ type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-bot
 from mypy_boto3_mgn.type_defs import CPUTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `cores`: `int`
 - `modelName`: `str`
-
 
 ## ChangeServerLifeCycleStateSourceServerLifecycleTypeDef
 
@@ -70,12 +69,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateSourceServerLifecycleTypeDef
 ```
 
-
 Required fields:
-- `state`: `ChangeServerLifeCycleStateSourceServerLifecycleState`
 
-
-
+- `state`:
+  [ChangeServerLifeCycleStateSourceServerLifecycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#changeserverlifecyclestatesourceserverlifecyclestate)
 
 ## DataReplicationErrorTypeDef
 
@@ -83,13 +80,11 @@ Required fields:
 from mypy_boto3_mgn.type_defs import DataReplicationErrorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `error`: `DataReplicationErrorString`
-- `rawError`: `str`
 
+- `error`:
+  [DataReplicationErrorString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#datareplicationerrorstring)
+- `rawError`: `str`
 
 ## DataReplicationInfoReplicatedDiskTypeDef
 
@@ -97,16 +92,13 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DataReplicationInfoReplicatedDiskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `backloggedStorageBytes`: `int`
 - `deviceName`: `str`
 - `replicatedStorageBytes`: `int`
 - `rescannedStorageBytes`: `int`
 - `totalStorageBytes`: `int`
-
 
 ## DataReplicationInfoTypeDef
 
@@ -114,17 +106,18 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DataReplicationInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `dataReplicationError`: `"DataReplicationErrorTypeDef"`
-- `dataReplicationInitiation`: `"DataReplicationInitiationTypeDef"`
-- `dataReplicationState`: `DataReplicationState`
+
+- `dataReplicationError`:
+  [DataReplicationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#datareplicationerrortypedef)
+- `dataReplicationInitiation`:
+  [DataReplicationInitiationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#datareplicationinitiationtypedef)
+- `dataReplicationState`:
+  [DataReplicationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#datareplicationstate)
 - `etaDateTime`: `str`
 - `lagDuration`: `str`
-- `replicatedDisks`: `List["DataReplicationInfoReplicatedDiskTypeDef"]`
-
+- `replicatedDisks`:
+  `List`\[[DataReplicationInfoReplicatedDiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#datareplicationinforeplicateddisktypedef)\]
 
 ## DataReplicationInitiationStepTypeDef
 
@@ -132,13 +125,12 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DataReplicationInitiationStepTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `DataReplicationInitiationStepName`
-- `status`: `DataReplicationInitiationStepStatus`
 
+- `name`:
+  [DataReplicationInitiationStepName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#datareplicationinitiationstepname)
+- `status`:
+  [DataReplicationInitiationStepStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#datareplicationinitiationstepstatus)
 
 ## DataReplicationInitiationTypeDef
 
@@ -146,14 +138,12 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DataReplicationInitiationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `nextAttemptDateTime`: `str`
 - `startDateTime`: `str`
-- `steps`: `List["DataReplicationInitiationStepTypeDef"]`
-
+- `steps`:
+  `List`\[[DataReplicationInitiationStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#datareplicationinitiationsteptypedef)\]
 
 ## DescribeJobLogItemsResponseTypeDef
 
@@ -161,13 +151,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["JobLogTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[JobLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#joblogtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeJobsRequestFiltersTypeDef
 
@@ -175,14 +163,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeJobsRequestFiltersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fromDate`: `str`
-- `jobIDs`: `List[str]`
-- `toDate`: `str`
 
+- `fromDate`: `str`
+- `jobIDs`: `List`\[`str`\]
+- `toDate`: `str`
 
 ## DescribeJobsResponseTypeDef
 
@@ -190,13 +175,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["JobTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#jobtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeReplicationConfigurationTemplatesResponseTypeDef
 
@@ -204,13 +187,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["ReplicationConfigurationTemplateTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[ReplicationConfigurationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtemplatetypedef)\]
+- `nextToken`: `str`
 
 ## DescribeSourceServersRequestFiltersTypeDef
 
@@ -218,13 +199,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestFiltersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `isArchived`: `bool`
-- `sourceServerIDs`: `List[str]`
 
+- `isArchived`: `bool`
+- `sourceServerIDs`: `List`\[`str`\]
 
 ## DescribeSourceServersResponseTypeDef
 
@@ -232,13 +210,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DescribeSourceServersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `items`: `List["SourceServerTypeDef"]`
-- `nextToken`: `str`
 
+- `items`:
+  `List`\[[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef)\]
+- `nextToken`: `str`
 
 ## DiskTypeDef
 
@@ -246,13 +222,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import DiskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `bytes`: `int`
 - `deviceName`: `str`
-
 
 ## IdentificationHintsTypeDef
 
@@ -260,15 +233,12 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import IdentificationHintsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `awsInstanceID`: `str`
 - `fqdn`: `str`
 - `hostname`: `str`
 - `vmWareUuid`: `str`
-
 
 ## JobLogEventDataTypeDef
 
@@ -276,15 +246,12 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import JobLogEventDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `conversionServerID`: `str`
 - `rawError`: `str`
 - `sourceServerID`: `str`
 - `targetInstanceID`: `str`
-
 
 ## JobLogTypeDef
 
@@ -292,14 +259,13 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import JobLogTypeDef
 ```
 
-
-
-
 Optional fields:
-- `event`: `JobLogEvent`
-- `eventData`: `"JobLogEventDataTypeDef"`
-- `logDateTime`: `str`
 
+- `event`:
+  [JobLogEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#joblogevent)
+- `eventData`:
+  [JobLogEventDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#joblogeventdatatypedef)
+- `logDateTime`: `str`
 
 ## JobTypeDef
 
@@ -307,22 +273,24 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import JobTypeDef
 ```
 
-
 Required fields:
+
 - `jobID`: `str`
 
-
-
 Optional fields:
+
 - `arn`: `str`
 - `creationDateTime`: `str`
 - `endDateTime`: `str`
-- `initiatedBy`: `InitiatedBy`
-- `participatingServers`: `List["ParticipatingServerTypeDef"]`
-- `status`: `JobStatus`
-- `tags`: `Dict[str, str]`
-- `type`: `JobType`
-
+- `initiatedBy`:
+  [InitiatedBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#initiatedby)
+- `participatingServers`:
+  `List`\[[ParticipatingServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#participatingservertypedef)\]
+- `status`:
+  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#jobstatus)
+- `tags`: `Dict`\[`str`, `str`\]
+- `type`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#jobtype)
 
 ## LaunchConfigurationTypeDef
 
@@ -330,19 +298,19 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LaunchConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
 - `ec2LaunchTemplateID`: `str`
-- `launchDisposition`: `LaunchDisposition`
-- `licensing`: `"LicensingTypeDef"`
+- `launchDisposition`:
+  [LaunchDisposition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#launchdisposition)
+- `licensing`:
+  [LicensingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#licensingtypedef)
 - `name`: `str`
 - `sourceServerID`: `str`
-- `targetInstanceTypeRightSizingMethod`: `TargetInstanceTypeRightSizingMethod`
-
+- `targetInstanceTypeRightSizingMethod`:
+  [TargetInstanceTypeRightSizingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#targetinstancetyperightsizingmethod)
 
 ## LaunchedInstanceTypeDef
 
@@ -350,14 +318,12 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LaunchedInstanceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ec2InstanceID`: `str`
-- `firstBoot`: `FirstBoot`
-- `jobID`: `str`
 
+- `ec2InstanceID`: `str`
+- `firstBoot`:
+  [FirstBoot](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#firstboot)
+- `jobID`: `str`
 
 ## LicensingTypeDef
 
@@ -365,12 +331,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LicensingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `osByol`: `bool`
 
+- `osByol`: `bool`
 
 ## LifeCycleLastCutoverFinalizedTypeDef
 
@@ -378,12 +341,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverFinalizedTypeDef
 ```
 
-
-
-
 Optional fields:
-- `apiCallDateTime`: `str`
 
+- `apiCallDateTime`: `str`
 
 ## LifeCycleLastCutoverInitiatedTypeDef
 
@@ -391,13 +351,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverInitiatedTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `apiCallDateTime`: `str`
 - `jobID`: `str`
-
 
 ## LifeCycleLastCutoverRevertedTypeDef
 
@@ -405,12 +362,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverRevertedTypeDef
 ```
 
-
-
-
 Optional fields:
-- `apiCallDateTime`: `str`
 
+- `apiCallDateTime`: `str`
 
 ## LifeCycleLastCutoverTypeDef
 
@@ -418,14 +372,14 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverTypeDef
 ```
 
-
-
-
 Optional fields:
-- `finalized`: `"LifeCycleLastCutoverFinalizedTypeDef"`
-- `initiated`: `"LifeCycleLastCutoverInitiatedTypeDef"`
-- `reverted`: `"LifeCycleLastCutoverRevertedTypeDef"`
 
+- `finalized`:
+  [LifeCycleLastCutoverFinalizedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelastcutoverfinalizedtypedef)
+- `initiated`:
+  [LifeCycleLastCutoverInitiatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelastcutoverinitiatedtypedef)
+- `reverted`:
+  [LifeCycleLastCutoverRevertedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelastcutoverrevertedtypedef)
 
 ## LifeCycleLastTestFinalizedTypeDef
 
@@ -433,12 +387,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastTestFinalizedTypeDef
 ```
 
-
-
-
 Optional fields:
-- `apiCallDateTime`: `str`
 
+- `apiCallDateTime`: `str`
 
 ## LifeCycleLastTestInitiatedTypeDef
 
@@ -446,13 +397,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastTestInitiatedTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `apiCallDateTime`: `str`
 - `jobID`: `str`
-
 
 ## LifeCycleLastTestRevertedTypeDef
 
@@ -460,12 +408,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastTestRevertedTypeDef
 ```
 
-
-
-
 Optional fields:
-- `apiCallDateTime`: `str`
 
+- `apiCallDateTime`: `str`
 
 ## LifeCycleLastTestTypeDef
 
@@ -473,14 +418,14 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleLastTestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `finalized`: `"LifeCycleLastTestFinalizedTypeDef"`
-- `initiated`: `"LifeCycleLastTestInitiatedTypeDef"`
-- `reverted`: `"LifeCycleLastTestRevertedTypeDef"`
 
+- `finalized`:
+  [LifeCycleLastTestFinalizedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelasttestfinalizedtypedef)
+- `initiated`:
+  [LifeCycleLastTestInitiatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelasttestinitiatedtypedef)
+- `reverted`:
+  [LifeCycleLastTestRevertedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelasttestrevertedtypedef)
 
 ## LifeCycleTypeDef
 
@@ -488,18 +433,18 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import LifeCycleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `addedToServiceDateTime`: `str`
 - `elapsedReplicationDuration`: `str`
 - `firstByteDateTime`: `str`
-- `lastCutover`: `"LifeCycleLastCutoverTypeDef"`
+- `lastCutover`:
+  [LifeCycleLastCutoverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelastcutovertypedef)
 - `lastSeenByServiceDateTime`: `str`
-- `lastTest`: `"LifeCycleLastTestTypeDef"`
-- `state`: `LifeCycleState`
-
+- `lastTest`:
+  [LifeCycleLastTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecyclelasttesttypedef)
+- `state`:
+  [LifeCycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#lifecyclestate)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -507,12 +452,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## NetworkInterfaceTypeDef
 
@@ -520,14 +462,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import NetworkInterfaceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ips`: `List[str]`
+
+- `ips`: `List`\[`str`\]
 - `isPrimary`: `bool`
 - `macAddress`: `str`
-
 
 ## OSTypeDef
 
@@ -535,12 +474,9 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import OSTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fullString`: `str`
 
+- `fullString`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -548,14 +484,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParticipatingServerTypeDef
 
@@ -563,13 +496,11 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ParticipatingServerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `launchStatus`: `LaunchStatus`
-- `sourceServerID`: `str`
 
+- `launchStatus`:
+  [LaunchStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#launchstatus)
+- `sourceServerID`: `str`
 
 ## ReplicationConfigurationReplicatedDiskTypeDef
 
@@ -577,15 +508,13 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ReplicationConfigurationReplicatedDiskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `deviceName`: `str`
 - `iops`: `int`
 - `isBootDisk`: `bool`
-- `stagingDiskType`: `ReplicationConfigurationReplicatedDiskStagingDiskType`
-
+- `stagingDiskType`:
+  [ReplicationConfigurationReplicatedDiskStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationreplicateddiskstagingdisktype)
 
 ## ReplicationConfigurationTemplateTypeDef
 
@@ -593,28 +522,29 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateTypeDef
 ```
 
-
 Required fields:
+
 - `replicationConfigurationTemplateID`: `str`
 
-
-
 Optional fields:
+
 - `arn`: `str`
 - `associateDefaultSecurityGroup`: `bool`
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
-- `dataPlaneRouting`: `ReplicationConfigurationDataPlaneRouting`
-- `defaultLargeStagingDiskType`: `ReplicationConfigurationDefaultLargeStagingDiskType`
-- `ebsEncryption`: `ReplicationConfigurationEbsEncryption`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
 - `ebsEncryptionKeyArn`: `str`
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List[str]`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict[str, str]`
-- `tags`: `Dict[str, str]`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
-
 
 ## ReplicationConfigurationTypeDef
 
@@ -622,26 +552,27 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import ReplicationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `associateDefaultSecurityGroup`: `bool`
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
-- `dataPlaneRouting`: `ReplicationConfigurationDataPlaneRouting`
-- `defaultLargeStagingDiskType`: `ReplicationConfigurationDefaultLargeStagingDiskType`
-- `ebsEncryption`: `ReplicationConfigurationEbsEncryption`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
 - `ebsEncryptionKeyArn`: `str`
 - `name`: `str`
-- `replicatedDisks`: `List["ReplicationConfigurationReplicatedDiskTypeDef"]`
+- `replicatedDisks`:
+  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationreplicateddisktypedef)\]
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List[str]`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
 - `sourceServerID`: `str`
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict[str, str]`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
-
 
 ## SourcePropertiesTypeDef
 
@@ -649,19 +580,21 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import SourcePropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cpus`: `List["CPUTypeDef"]`
-- `disks`: `List["DiskTypeDef"]`
-- `identificationHints`: `"IdentificationHintsTypeDef"`
+
+- `cpus`:
+  `List`\[[CPUTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#cputypedef)\]
+- `disks`:
+  `List`\[[DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#disktypedef)\]
+- `identificationHints`:
+  [IdentificationHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#identificationhintstypedef)
 - `lastUpdatedDateTime`: `str`
-- `networkInterfaces`: `List["NetworkInterfaceTypeDef"]`
-- `os`: `"OSTypeDef"`
+- `networkInterfaces`:
+  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#networkinterfacetypedef)\]
+- `os`:
+  [OSTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#ostypedef)
 - `ramBytes`: `int`
 - `recommendedInstanceType`: `str`
-
 
 ## SourceServerTypeDef
 
@@ -669,19 +602,20 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import SourceServerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arn`: `str`
-- `dataReplicationInfo`: `"DataReplicationInfoTypeDef"`
-- `isArchived`: `bool`
-- `launchedInstance`: `"LaunchedInstanceTypeDef"`
-- `lifeCycle`: `"LifeCycleTypeDef"`
-- `sourceProperties`: `"SourcePropertiesTypeDef"`
-- `sourceServerID`: `str`
-- `tags`: `Dict[str, str]`
 
+- `arn`: `str`
+- `dataReplicationInfo`:
+  [DataReplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#datareplicationinfotypedef)
+- `isArchived`: `bool`
+- `launchedInstance`:
+  [LaunchedInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#launchedinstancetypedef)
+- `lifeCycle`:
+  [LifeCycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#lifecycletypedef)
+- `sourceProperties`:
+  [SourcePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourcepropertiestypedef)
+- `sourceServerID`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## StartCutoverResponseTypeDef
 
@@ -689,12 +623,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import StartCutoverResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `job`: `"JobTypeDef"`
 
+- `job`:
+  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#jobtypedef)
 
 ## StartTestResponseTypeDef
 
@@ -702,12 +634,10 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import StartTestResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `job`: `"JobTypeDef"`
 
+- `job`:
+  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#jobtypedef)
 
 ## TerminateTargetInstancesResponseTypeDef
 
@@ -715,9 +645,7 @@ Optional fields:
 from mypy_boto3_mgn.type_defs import TerminateTargetInstancesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `job`: `"JobTypeDef"`
 
+- `job`:
+  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#jobtypedef)

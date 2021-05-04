@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DynamoDBStreams](./README.md) > DynamoDBStreamsClient
 
-Auto-generated documentation for [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
-type annotations stubs module [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+Auto-generated documentation for
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+type annotations stubs module
+[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 - [DynamoDBStreamsClient for boto3 DynamoDBStreams module](#dynamodbstreamsclient-for-boto3-dynamodbstreams-module)
   - [DynamoDBStreamsClient](#dynamodbstreamsclient)
@@ -29,12 +31,13 @@ def get_dynamodbstreams_client() -> DynamoDBStreamsClient:
     return boto3.client("dynamodbstreams")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
+Boto3 documentation:
+[DynamoDBStreams.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_dynamodbstreams.client import Exceptions
@@ -42,7 +45,6 @@ from mypy_boto3_dynamodbstreams.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -53,104 +55,101 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TrimmedDataAccessException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("dynamodbstreams").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate]
+Boto3 documentation:
+[DynamoDBStreams.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_stream
 
 Type annotations for `boto3.client("dynamodbstreams").describe_stream` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream]
+Boto3 documentation:
+[DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
 
-```python
-def describe_stream(
-    self,
-    StreamArn: str,
-    Limit: int = None,
-    ExclusiveStartShardId: str = None
-) -> DescribeStreamOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StreamArn`: `str` *(required)*
+- `Limit`: `int`
+- `ExclusiveStartShardId`: `str`
+
+Returns
+[DescribeStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#describestreamoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("dynamodbstreams").generate_presigned_url` method.
+Type annotations for `boto3.client("dynamodbstreams").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url]
+Boto3 documentation:
+[DynamoDBStreams.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_records
 
 Type annotations for `boto3.client("dynamodbstreams").get_records` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records]
+Boto3 documentation:
+[DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
 
-```python
-def get_records(
-    self,
-    ShardIterator: str,
-    Limit: int = None
-) -> GetRecordsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ShardIterator`: `str` *(required)*
+- `Limit`: `int`
+
+Returns
+[GetRecordsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#getrecordsoutputtypedef).
 
 ### get_shard_iterator
 
-Type annotations for `boto3.client("dynamodbstreams").get_shard_iterator` method.
+Type annotations for `boto3.client("dynamodbstreams").get_shard_iterator`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator]
+Boto3 documentation:
+[DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
 
-```python
-def get_shard_iterator(
-    self,
-    StreamArn: str,
-    ShardId: str,
-    ShardIteratorType: ShardIteratorType,
-    SequenceNumber: str = None
-) -> GetShardIteratorOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `StreamArn`: `str` *(required)*
+- `ShardId`: `str` *(required)*
+- `ShardIteratorType`:
+  [ShardIteratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#sharditeratortype)
+  *(required)*
+- `SequenceNumber`: `str`
+
+Returns
+[GetShardIteratorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#getsharditeratoroutputtypedef).
 
 ### list_streams
 
 Type annotations for `boto3.client("dynamodbstreams").list_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams]
+Boto3 documentation:
+[DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
 
-```python
-def list_streams(
-    self,
-    TableName: str = None,
-    Limit: int = None,
-    ExclusiveStartStreamArn: str = None
-) -> ListStreamsOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `TableName`: `str`
+- `Limit`: `int`
+- `ExclusiveStartStreamArn`: `str`
 
-
+Returns
+[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#liststreamsoutputtypedef).

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeArtifact
 
-Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
-type annotations stubs module [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+Auto-generated documentation for
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+type annotations stubs module
+[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 ```bash
 pip install mypy-boto3-codeartifact
@@ -19,7 +21,8 @@ pip install mypy-boto3-codeartifact
 
 ## CodeArtifactClient
 
-Type annotations for  `boto3.client("codeartifact")` as [CodeArtifactClient](./client.md)
+Type annotations for `boto3.client("codeartifact")` as
+[CodeArtifactClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 ```
 
-
 CodeArtifactClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_external_connection](./client.md#associate-external-connection)
 - [can_paginate](./client.md#can-paginate)
 - [copy_package_versions](./client.md#copy-package-versions)
@@ -71,10 +72,8 @@ CodeArtifactClient [exceptions](./client.md#exceptions)
 - [update_package_versions_status](./client.md#update-package-versions-status)
 - [update_repository](./client.md#update-repository)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -84,14 +83,10 @@ CodeArtifactClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codeartifact").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codeartifact").get_paginator("...")`.
 
 Can be used directly:
 
@@ -105,11 +100,6 @@ from mypy_boto3_codeartifact.paginators import ListDomainsPaginator, ...
 - [ListPackagesPaginator](./paginators.md#listpackagespaginator)
 - [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
 - [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -135,13 +125,10 @@ from mypy_boto3_codeartifact.literals import DomainStatus, ...
 - [PackageVersionSortType](./literals.md#packageversionsorttype)
 - [PackageVersionStatus](./literals.md#packageversionstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

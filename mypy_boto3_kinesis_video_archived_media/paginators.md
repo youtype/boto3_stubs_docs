@@ -2,15 +2,18 @@
 
 > [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Paginators
 
-Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
-type annotations stubs module [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+Auto-generated documentation for
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+type annotations stubs module
+[mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 - [Paginators for boto3 KinesisVideoArchivedMedia module](#paginators-for-boto3-kinesisvideoarchivedmedia-module)
   - [ListFragmentsPaginator](#listfragmentspaginator)
 
 ## ListFragmentsPaginator
 
-Type annotations for `boto3.client("kinesis-video-archived-media").get_paginator("list_fragments")`.
+Type annotations for
+`boto3.client("kinesis-video-archived-media").get_paginator("list_fragments")`.
 
 Can be used directly:
 
@@ -21,16 +24,17 @@ def get_list_fragments_paginator() -> ListFragmentsPaginator:
     return boto3.client("kinesis-video-archived-media").get_paginator("list_fragments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Paginator.ListFragments)
+Boto3 documentation:
+[KinesisVideoArchivedMedia.Paginator.ListFragments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Paginator.ListFragments)
 
-```python
-class ListFragmentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        StreamName: str = None,
-        StreamARN: str = None,
-        FragmentSelector: FragmentSelectorTypeDef = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListFragmentsOutputTypeDef]:
-        pass
-```
+Arguments for `ListFragmentsPaginator.paginate` method:
+
+- `StreamName`: `str`
+- `StreamARN`: `str`
+- `FragmentSelector`:
+  [FragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#fragmentselectortypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#paginatorconfigtypedef)
+
+`ListFragmentsPaginator.paginate` returns
+`Iterator`\[[ListFragmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#listfragmentsoutputtypedef)\].

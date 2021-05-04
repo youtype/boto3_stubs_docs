@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SWF
 
-Auto-generated documentation for [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
-type annotations stubs module [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+Auto-generated documentation for
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
+type annotations stubs module
+[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
 ```bash
 pip install mypy-boto3-swf
@@ -19,7 +21,7 @@ pip install mypy-boto3-swf
 
 ## SWFClient
 
-Type annotations for  `boto3.client("swf")` as [SWFClient](./client.md)
+Type annotations for `boto3.client("swf")` as [SWFClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_swf.client import SWFClient
 ```
 
-
 SWFClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [count_closed_workflow_executions](./client.md#count-closed-workflow-executions)
 - [count_open_workflow_executions](./client.md#count-open-workflow-executions)
@@ -74,10 +74,8 @@ SWFClient [exceptions](./client.md#exceptions)
 - [undeprecate_workflow_type](./client.md#undeprecate-workflow-type)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DefaultUndefinedFault](./client.md#defaultundefinedfault)
 - [DomainAlreadyExistsFault](./client.md#domainalreadyexistsfault)
@@ -90,14 +88,10 @@ SWFClient [exceptions](./client.md#exceptions)
 - [UnknownResourceFault](./client.md#unknownresourcefault)
 - [WorkflowExecutionAlreadyStartedFault](./client.md#workflowexecutionalreadystartedfault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("swf").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("swf").get_paginator("...")`.
 
 Can be used directly:
 
@@ -112,11 +106,6 @@ from mypy_boto3_swf.paginators import GetWorkflowExecutionHistoryPaginator, ...
 - [ListOpenWorkflowExecutionsPaginator](./paginators.md#listopenworkflowexecutionspaginator)
 - [ListWorkflowTypesPaginator](./paginators.md#listworkflowtypespaginator)
 - [PollForDecisionTaskPaginator](./paginators.md#pollfordecisiontaskpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -162,13 +151,10 @@ from mypy_boto3_swf.literals import ActivityTaskTimeoutType, ...
 - [WorkflowExecutionTerminatedCause](./literals.md#workflowexecutionterminatedcause)
 - [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

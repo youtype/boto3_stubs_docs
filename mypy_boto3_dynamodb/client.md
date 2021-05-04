@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DynamoDB](./README.md) > DynamoDBClient
 
-Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+Auto-generated documentation for
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+type annotations stubs module
+[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [DynamoDBClient for boto3 DynamoDB module](#dynamodbclient-for-boto3-dynamodb-module)
   - [DynamoDBClient](#dynamodbclient)
@@ -77,12 +79,13 @@ def get_dynamodb_client() -> DynamoDBClient:
     return boto3.client("dynamodb")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
+Boto3 documentation:
+[DynamoDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_dynamodb.client import Exceptions
@@ -90,7 +93,6 @@ from mypy_boto3_dynamodb.client import Exceptions
 def handle_error(exc: Exceptions.BackupInUseException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -125,906 +127,1038 @@ Exceptions:
 - `Exceptions.TransactionConflictException`
 - `Exceptions.TransactionInProgressException`
 
-
 ## Methods
-
 
 ### batch_execute_statement
 
 Type annotations for `boto3.client("dynamodb").batch_execute_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement]
+Boto3 documentation:
+[DynamoDB.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement)
 
-```python
-def batch_execute_statement(
-    self,
-    Statements: List[BatchStatementRequestTypeDef]
-) -> BatchExecuteStatementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Statements`:
+  `List`\[[BatchStatementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchstatementrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchExecuteStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchexecutestatementoutputtypedef).
 
 ### batch_get_item
 
 Type annotations for `boto3.client("dynamodb").batch_get_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item]
+Boto3 documentation:
+[DynamoDB.Client.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item)
 
-```python
-def batch_get_item(
-    self,
-    RequestItems: Dict[str, "KeysAndAttributesTypeDef"],
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None
-) -> BatchGetItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RequestItems`: `Dict`\[`str`,
+  [KeysAndAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keysandattributestypedef)\]
+  *(required)*
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+
+Returns
+[BatchGetItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchgetitemoutputtypedef).
 
 ### batch_write_item
 
 Type annotations for `boto3.client("dynamodb").batch_write_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item]
+Boto3 documentation:
+[DynamoDB.Client.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item)
 
-```python
-def batch_write_item(
-    self,
-    RequestItems: Dict[str, List["WriteRequestTypeDef"]],
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = None
-) -> BatchWriteItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `RequestItems`: `Dict`\[`str`,
+  `List`\[[WriteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#writerequesttypedef)\]\]
+  *(required)*
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+
+Returns
+[BatchWriteItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchwriteitemoutputtypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("dynamodb").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.can_paginate]
+Boto3 documentation:
+[DynamoDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_backup
 
 Type annotations for `boto3.client("dynamodb").create_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup]
+Boto3 documentation:
+[DynamoDB.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup)
 
-```python
-def create_backup(
-    self,
-    TableName: str,
-    BackupName: str
-) -> CreateBackupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `BackupName`: `str` *(required)*
+
+Returns
+[CreateBackupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createbackupoutputtypedef).
 
 ### create_global_table
 
 Type annotations for `boto3.client("dynamodb").create_global_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table]
+Boto3 documentation:
+[DynamoDB.Client.create_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table)
 
-```python
-def create_global_table(
-    self,
-    GlobalTableName: str,
-    ReplicationGroup: List["ReplicaTypeDef"]
-) -> CreateGlobalTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalTableName`: `str` *(required)*
+- `ReplicationGroup`:
+  `List`\[[ReplicaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicatypedef)\]
+  *(required)*
+
+Returns
+[CreateGlobalTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createglobaltableoutputtypedef).
 
 ### create_table
 
 Type annotations for `boto3.client("dynamodb").create_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table]
+Boto3 documentation:
+[DynamoDB.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table)
 
-```python
-def create_table(
-    self,
-    AttributeDefinitions: List["AttributeDefinitionTypeDef"],
-    TableName: str,
-    KeySchema: List["KeySchemaElementTypeDef"],
-    LocalSecondaryIndexes: List[LocalSecondaryIndexTypeDef] = None,
-    GlobalSecondaryIndexes: List[GlobalSecondaryIndexTypeDef] = None,
-    BillingMode: BillingMode = None,
-    ProvisionedThroughput: "ProvisionedThroughputTypeDef" = None,
-    StreamSpecification: "StreamSpecificationTypeDef" = None,
-    SSESpecification: SSESpecificationTypeDef = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributedefinitiontypedef)\]
+  *(required)*
+- `TableName`: `str` *(required)*
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+  *(required)*
+- `LocalSecondaryIndexes`:
+  `List`\[[LocalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindextypedef)\]
+- `GlobalSecondaryIndexes`:
+  `List`\[[GlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindextypedef)\]
+- `BillingMode`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createtableoutputtypedef).
 
 ### delete_backup
 
 Type annotations for `boto3.client("dynamodb").delete_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup]
+Boto3 documentation:
+[DynamoDB.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup)
 
-```python
-def delete_backup(
-    self,
-    BackupArn: str
-) -> DeleteBackupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupArn`: `str` *(required)*
+
+Returns
+[DeleteBackupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletebackupoutputtypedef).
 
 ### delete_item
 
 Type annotations for `boto3.client("dynamodb").delete_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item]
+Boto3 documentation:
+[DynamoDB.Client.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item)
 
-```python
-def delete_item(
-    self,
-    TableName: str,
-    Key: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]],
-    Expected: Dict[str, ExpectedAttributeValueTypeDef] = None,
-    ConditionalOperator: ConditionalOperator = None,
-    ReturnValues: ReturnValue = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = None,
-    ConditionExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None,
-    ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None
-) -> DeleteItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+  *(required)*
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ReturnValues`:
+  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+Returns
+[DeleteItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deleteitemoutputtypedef).
 
 ### delete_table
 
 Type annotations for `boto3.client("dynamodb").delete_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table]
+Boto3 documentation:
+[DynamoDB.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table)
 
-```python
-def delete_table(
-    self,
-    TableName: str
-) -> DeleteTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DeleteTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletetableoutputtypedef).
 
 ### describe_backup
 
 Type annotations for `boto3.client("dynamodb").describe_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup]
+Boto3 documentation:
+[DynamoDB.Client.describe_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup)
 
-```python
-def describe_backup(
-    self,
-    BackupArn: str
-) -> DescribeBackupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupArn`: `str` *(required)*
+
+Returns
+[DescribeBackupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describebackupoutputtypedef).
 
 ### describe_continuous_backups
 
-Type annotations for `boto3.client("dynamodb").describe_continuous_backups` method.
+Type annotations for `boto3.client("dynamodb").describe_continuous_backups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups]
+Boto3 documentation:
+[DynamoDB.Client.describe_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups)
 
-```python
-def describe_continuous_backups(
-    self,
-    TableName: str
-) -> DescribeContinuousBackupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeContinuousBackupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describecontinuousbackupsoutputtypedef).
 
 ### describe_contributor_insights
 
-Type annotations for `boto3.client("dynamodb").describe_contributor_insights` method.
+Type annotations for `boto3.client("dynamodb").describe_contributor_insights`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights]
+Boto3 documentation:
+[DynamoDB.Client.describe_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights)
 
-```python
-def describe_contributor_insights(
-    self,
-    TableName: str,
-    IndexName: str = None
-) -> DescribeContributorInsightsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `IndexName`: `str`
+
+Returns
+[DescribeContributorInsightsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describecontributorinsightsoutputtypedef).
 
 ### describe_endpoints
 
 Type annotations for `boto3.client("dynamodb").describe_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints]
+Boto3 documentation:
+[DynamoDB.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints)
 
-```python
-def describe_endpoints(
-    self
-) -> DescribeEndpointsResponseTypeDef:
-    pass
-```
+Returns
+[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describeendpointsresponsetypedef).
 
 ### describe_export
 
 Type annotations for `boto3.client("dynamodb").describe_export` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export]
+Boto3 documentation:
+[DynamoDB.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export)
 
-```python
-def describe_export(
-    self,
-    ExportArn: str
-) -> DescribeExportOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ExportArn`: `str` *(required)*
+
+Returns
+[DescribeExportOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describeexportoutputtypedef).
 
 ### describe_global_table
 
 Type annotations for `boto3.client("dynamodb").describe_global_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table]
+Boto3 documentation:
+[DynamoDB.Client.describe_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table)
 
-```python
-def describe_global_table(
-    self,
-    GlobalTableName: str
-) -> DescribeGlobalTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalTableName`: `str` *(required)*
+
+Returns
+[DescribeGlobalTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describeglobaltableoutputtypedef).
 
 ### describe_global_table_settings
 
-Type annotations for `boto3.client("dynamodb").describe_global_table_settings` method.
+Type annotations for `boto3.client("dynamodb").describe_global_table_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings]
+Boto3 documentation:
+[DynamoDB.Client.describe_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings)
 
-```python
-def describe_global_table_settings(
-    self,
-    GlobalTableName: str
-) -> DescribeGlobalTableSettingsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalTableName`: `str` *(required)*
+
+Returns
+[DescribeGlobalTableSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describeglobaltablesettingsoutputtypedef).
 
 ### describe_kinesis_streaming_destination
 
-Type annotations for `boto3.client("dynamodb").describe_kinesis_streaming_destination` method.
+Type annotations for
+`boto3.client("dynamodb").describe_kinesis_streaming_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination]
+Boto3 documentation:
+[DynamoDB.Client.describe_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination)
 
-```python
-def describe_kinesis_streaming_destination(
-    self,
-    TableName: str
-) -> DescribeKinesisStreamingDestinationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeKinesisStreamingDestinationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describekinesisstreamingdestinationoutputtypedef).
 
 ### describe_limits
 
 Type annotations for `boto3.client("dynamodb").describe_limits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits]
+Boto3 documentation:
+[DynamoDB.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits)
 
-```python
-def describe_limits(
-    self
-) -> DescribeLimitsOutputTypeDef:
-    pass
-```
+Returns
+[DescribeLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describelimitsoutputtypedef).
 
 ### describe_table
 
 Type annotations for `boto3.client("dynamodb").describe_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table]
+Boto3 documentation:
+[DynamoDB.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table)
 
-```python
-def describe_table(
-    self,
-    TableName: str
-) -> DescribeTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describetableoutputtypedef).
 
 ### describe_table_replica_auto_scaling
 
-Type annotations for `boto3.client("dynamodb").describe_table_replica_auto_scaling` method.
+Type annotations for
+`boto3.client("dynamodb").describe_table_replica_auto_scaling` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling]
+Boto3 documentation:
+[DynamoDB.Client.describe_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling)
 
-```python
-def describe_table_replica_auto_scaling(
-    self,
-    TableName: str
-) -> DescribeTableReplicaAutoScalingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeTableReplicaAutoScalingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describetablereplicaautoscalingoutputtypedef).
 
 ### describe_time_to_live
 
 Type annotations for `boto3.client("dynamodb").describe_time_to_live` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live]
+Boto3 documentation:
+[DynamoDB.Client.describe_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live)
 
-```python
-def describe_time_to_live(
-    self,
-    TableName: str
-) -> DescribeTimeToLiveOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+
+Returns
+[DescribeTimeToLiveOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#describetimetoliveoutputtypedef).
 
 ### disable_kinesis_streaming_destination
 
-Type annotations for `boto3.client("dynamodb").disable_kinesis_streaming_destination` method.
+Type annotations for
+`boto3.client("dynamodb").disable_kinesis_streaming_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination]
+Boto3 documentation:
+[DynamoDB.Client.disable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination)
 
-```python
-def disable_kinesis_streaming_destination(
-    self,
-    TableName: str,
-    StreamArn: str
-) -> KinesisStreamingDestinationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `StreamArn`: `str` *(required)*
+
+Returns
+[KinesisStreamingDestinationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#kinesisstreamingdestinationoutputtypedef).
 
 ### enable_kinesis_streaming_destination
 
-Type annotations for `boto3.client("dynamodb").enable_kinesis_streaming_destination` method.
+Type annotations for
+`boto3.client("dynamodb").enable_kinesis_streaming_destination` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination]
+Boto3 documentation:
+[DynamoDB.Client.enable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination)
 
-```python
-def enable_kinesis_streaming_destination(
-    self,
-    TableName: str,
-    StreamArn: str
-) -> KinesisStreamingDestinationOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `StreamArn`: `str` *(required)*
+
+Returns
+[KinesisStreamingDestinationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#kinesisstreamingdestinationoutputtypedef).
 
 ### execute_statement
 
 Type annotations for `boto3.client("dynamodb").execute_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement]
+Boto3 documentation:
+[DynamoDB.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement)
 
-```python
-def execute_statement(
-    self,
-    Statement: str,
-    Parameters: List[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-    ConsistentRead: bool = None,
-    NextToken: str = None
-) -> ExecuteStatementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Statement`: `str` *(required)*
+- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+- `NextToken`: `str`
+
+Returns
+[ExecuteStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#executestatementoutputtypedef).
 
 ### execute_transaction
 
 Type annotations for `boto3.client("dynamodb").execute_transaction` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction]
+Boto3 documentation:
+[DynamoDB.Client.execute_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction)
 
-```python
-def execute_transaction(
-    self,
-    TransactStatements: List[ParameterizedStatementTypeDef],
-    ClientRequestToken: str = None
-) -> ExecuteTransactionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TransactStatements`:
+  `List`\[[ParameterizedStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#parameterizedstatementtypedef)\]
+  *(required)*
+- `ClientRequestToken`: `str`
+
+Returns
+[ExecuteTransactionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#executetransactionoutputtypedef).
 
 ### export_table_to_point_in_time
 
-Type annotations for `boto3.client("dynamodb").export_table_to_point_in_time` method.
+Type annotations for `boto3.client("dynamodb").export_table_to_point_in_time`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time]
+Boto3 documentation:
+[DynamoDB.Client.export_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time)
 
-```python
-def export_table_to_point_in_time(
-    self,
-    TableArn: str,
-    S3Bucket: str,
-    ExportTime: datetime = None,
-    ClientToken: str = None,
-    S3BucketOwner: str = None,
-    S3Prefix: str = None,
-    S3SseAlgorithm: S3SseAlgorithm = None,
-    S3SseKmsKeyId: str = None,
-    ExportFormat: ExportFormat = None
-) -> ExportTableToPointInTimeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableArn`: `str` *(required)*
+- `S3Bucket`: `str` *(required)*
+- `ExportTime`: `datetime`
+- `ClientToken`: `str`
+- `S3BucketOwner`: `str`
+- `S3Prefix`: `str`
+- `S3SseAlgorithm`:
+  [S3SseAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#s3ssealgorithm)
+- `S3SseKmsKeyId`: `str`
+- `ExportFormat`:
+  [ExportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#exportformat)
+
+Returns
+[ExportTableToPointInTimeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#exporttabletopointintimeoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("dynamodb").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url]
+Boto3 documentation:
+[DynamoDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_item
 
 Type annotations for `boto3.client("dynamodb").get_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item]
+Boto3 documentation:
+[DynamoDB.Client.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item)
 
-```python
-def get_item(
-    self,
-    TableName: str,
-    Key: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]],
-    AttributesToGet: List[str] = None,
-    ConsistentRead: bool = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ProjectionExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None
-) -> GetItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+  *(required)*
+- `AttributesToGet`: `List`\[`str`\]
+- `ConsistentRead`: `bool`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ProjectionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+
+Returns
+[GetItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#getitemoutputtypedef).
 
 ### list_backups
 
 Type annotations for `boto3.client("dynamodb").list_backups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups]
+Boto3 documentation:
+[DynamoDB.Client.list_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups)
 
-```python
-def list_backups(
-    self,
-    TableName: str = None,
-    Limit: int = None,
-    TimeRangeLowerBound: datetime = None,
-    TimeRangeUpperBound: datetime = None,
-    ExclusiveStartBackupArn: str = None,
-    BackupType: BackupTypeFilter = None
-) -> ListBackupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str`
+- `Limit`: `int`
+- `TimeRangeLowerBound`: `datetime`
+- `TimeRangeUpperBound`: `datetime`
+- `ExclusiveStartBackupArn`: `str`
+- `BackupType`:
+  [BackupTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backuptypefilter)
+
+Returns
+[ListBackupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listbackupsoutputtypedef).
 
 ### list_contributor_insights
 
-Type annotations for `boto3.client("dynamodb").list_contributor_insights` method.
+Type annotations for `boto3.client("dynamodb").list_contributor_insights`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights]
+Boto3 documentation:
+[DynamoDB.Client.list_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights)
 
-```python
-def list_contributor_insights(
-    self,
-    TableName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListContributorInsightsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListContributorInsightsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listcontributorinsightsoutputtypedef).
 
 ### list_exports
 
 Type annotations for `boto3.client("dynamodb").list_exports` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports]
+Boto3 documentation:
+[DynamoDB.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports)
 
-```python
-def list_exports(
-    self,
-    TableArn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListExportsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListExportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listexportsoutputtypedef).
 
 ### list_global_tables
 
 Type annotations for `boto3.client("dynamodb").list_global_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables]
+Boto3 documentation:
+[DynamoDB.Client.list_global_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables)
 
-```python
-def list_global_tables(
-    self,
-    ExclusiveStartGlobalTableName: str = None,
-    Limit: int = None,
-    RegionName: str = None
-) -> ListGlobalTablesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ExclusiveStartGlobalTableName`: `str`
+- `Limit`: `int`
+- `RegionName`: `str`
+
+Returns
+[ListGlobalTablesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listglobaltablesoutputtypedef).
 
 ### list_tables
 
 Type annotations for `boto3.client("dynamodb").list_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables]
+Boto3 documentation:
+[DynamoDB.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables)
 
-```python
-def list_tables(
-    self,
-    ExclusiveStartTableName: str = None,
-    Limit: int = None
-) -> ListTablesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ExclusiveStartTableName`: `str`
+- `Limit`: `int`
+
+Returns
+[ListTablesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listtablesoutputtypedef).
 
 ### list_tags_of_resource
 
 Type annotations for `boto3.client("dynamodb").list_tags_of_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource]
+Boto3 documentation:
+[DynamoDB.Client.list_tags_of_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource)
 
-```python
-def list_tags_of_resource(
-    self,
-    ResourceArn: str,
-    NextToken: str = None
-) -> ListTagsOfResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListTagsOfResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#listtagsofresourceoutputtypedef).
 
 ### put_item
 
 Type annotations for `boto3.client("dynamodb").put_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item]
+Boto3 documentation:
+[DynamoDB.Client.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item)
 
-```python
-def put_item(
-    self,
-    TableName: str,
-    Item: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]],
-    Expected: Dict[str, ExpectedAttributeValueTypeDef] = None,
-    ReturnValues: ReturnValue = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = None,
-    ConditionalOperator: ConditionalOperator = None,
-    ConditionExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None,
-    ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None
-) -> PutItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+  *(required)*
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
+- `ReturnValues`:
+  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+Returns
+[PutItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#putitemoutputtypedef).
 
 ### query
 
 Type annotations for `boto3.client("dynamodb").query` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query]
+Boto3 documentation:
+[DynamoDB.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query)
 
-```python
-def query(
-    self,
-    TableName: str,
-    IndexName: str = None,
-    Select: Select = None,
-    AttributesToGet: List[str] = None,
-    Limit: int = None,
-    ConsistentRead: bool = None,
-    KeyConditions: Dict[str, ConditionTypeDef] = None,
-    QueryFilter: Dict[str, ConditionTypeDef] = None,
-    ConditionalOperator: ConditionalOperator = None,
-    ScanIndexForward: bool = None,
-    ExclusiveStartKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ProjectionExpression: str = None,
-    FilterExpression: str = None,
-    KeyConditionExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None,
-    ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None
-) -> QueryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `IndexName`: `str`
+- `Select`:
+  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `ConsistentRead`: `bool`
+- `KeyConditions`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `QueryFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ScanIndexForward`: `bool`
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `KeyConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+Returns
+[QueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#queryoutputtypedef).
 
 ### restore_table_from_backup
 
-Type annotations for `boto3.client("dynamodb").restore_table_from_backup` method.
+Type annotations for `boto3.client("dynamodb").restore_table_from_backup`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup]
+Boto3 documentation:
+[DynamoDB.Client.restore_table_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup)
 
-```python
-def restore_table_from_backup(
-    self,
-    TargetTableName: str,
-    BackupArn: str,
-    BillingModeOverride: BillingMode = None,
-    GlobalSecondaryIndexOverride: List[GlobalSecondaryIndexTypeDef] = None,
-    LocalSecondaryIndexOverride: List[LocalSecondaryIndexTypeDef] = None,
-    ProvisionedThroughputOverride: "ProvisionedThroughputTypeDef" = None,
-    SSESpecificationOverride: SSESpecificationTypeDef = None
-) -> RestoreTableFromBackupOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TargetTableName`: `str` *(required)*
+- `BackupArn`: `str` *(required)*
+- `BillingModeOverride`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `GlobalSecondaryIndexOverride`:
+  `List`\[[GlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindextypedef)\]
+- `LocalSecondaryIndexOverride`:
+  `List`\[[LocalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindextypedef)\]
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+- `SSESpecificationOverride`:
+  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
+
+Returns
+[RestoreTableFromBackupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#restoretablefrombackupoutputtypedef).
 
 ### restore_table_to_point_in_time
 
-Type annotations for `boto3.client("dynamodb").restore_table_to_point_in_time` method.
+Type annotations for `boto3.client("dynamodb").restore_table_to_point_in_time`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time]
+Boto3 documentation:
+[DynamoDB.Client.restore_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time)
 
-```python
-def restore_table_to_point_in_time(
-    self,
-    TargetTableName: str,
-    SourceTableArn: str = None,
-    SourceTableName: str = None,
-    UseLatestRestorableTime: bool = None,
-    RestoreDateTime: datetime = None,
-    BillingModeOverride: BillingMode = None,
-    GlobalSecondaryIndexOverride: List[GlobalSecondaryIndexTypeDef] = None,
-    LocalSecondaryIndexOverride: List[LocalSecondaryIndexTypeDef] = None,
-    ProvisionedThroughputOverride: "ProvisionedThroughputTypeDef" = None,
-    SSESpecificationOverride: SSESpecificationTypeDef = None
-) -> RestoreTableToPointInTimeOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TargetTableName`: `str` *(required)*
+- `SourceTableArn`: `str`
+- `SourceTableName`: `str`
+- `UseLatestRestorableTime`: `bool`
+- `RestoreDateTime`: `datetime`
+- `BillingModeOverride`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `GlobalSecondaryIndexOverride`:
+  `List`\[[GlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindextypedef)\]
+- `LocalSecondaryIndexOverride`:
+  `List`\[[LocalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindextypedef)\]
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+- `SSESpecificationOverride`:
+  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
+
+Returns
+[RestoreTableToPointInTimeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#restoretabletopointintimeoutputtypedef).
 
 ### scan
 
 Type annotations for `boto3.client("dynamodb").scan` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan]
+Boto3 documentation:
+[DynamoDB.Client.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan)
 
-```python
-def scan(
-    self,
-    TableName: str,
-    IndexName: str = None,
-    AttributesToGet: List[str] = None,
-    Limit: int = None,
-    Select: Select = None,
-    ScanFilter: Dict[str, ConditionTypeDef] = None,
-    ConditionalOperator: ConditionalOperator = None,
-    ExclusiveStartKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    TotalSegments: int = None,
-    Segment: int = None,
-    ProjectionExpression: str = None,
-    FilterExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None,
-    ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None,
-    ConsistentRead: bool = None
-) -> ScanOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `IndexName`: `str`
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `Select`:
+  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `ScanFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `TotalSegments`: `int`
+- `Segment`: `int`
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+
+Returns
+[ScanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#scanoutputtypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("dynamodb").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource]
+Boto3 documentation:
+[DynamoDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### transact_get_items
 
 Type annotations for `boto3.client("dynamodb").transact_get_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items]
+Boto3 documentation:
+[DynamoDB.Client.transact_get_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items)
 
-```python
-def transact_get_items(
-    self,
-    TransactItems: List[TransactGetItemTypeDef],
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None
-) -> TransactGetItemsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TransactItems`:
+  `List`\[[TransactGetItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#transactgetitemtypedef)\]
+  *(required)*
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+
+Returns
+[TransactGetItemsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#transactgetitemsoutputtypedef).
 
 ### transact_write_items
 
 Type annotations for `boto3.client("dynamodb").transact_write_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items]
+Boto3 documentation:
+[DynamoDB.Client.transact_write_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items)
 
-```python
-def transact_write_items(
-    self,
-    TransactItems: List[TransactWriteItemTypeDef],
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = None,
-    ClientRequestToken: str = None
-) -> TransactWriteItemsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TransactItems`:
+  `List`\[[TransactWriteItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#transactwriteitemtypedef)\]
+  *(required)*
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+- `ClientRequestToken`: `str`
+
+Returns
+[TransactWriteItemsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#transactwriteitemsoutputtypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("dynamodb").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource]
+Boto3 documentation:
+[DynamoDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_continuous_backups
 
-Type annotations for `boto3.client("dynamodb").update_continuous_backups` method.
+Type annotations for `boto3.client("dynamodb").update_continuous_backups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups]
+Boto3 documentation:
+[DynamoDB.Client.update_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups)
 
-```python
-def update_continuous_backups(
-    self,
-    TableName: str,
-    PointInTimeRecoverySpecification: PointInTimeRecoverySpecificationTypeDef
-) -> UpdateContinuousBackupsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `PointInTimeRecoverySpecification`:
+  [PointInTimeRecoverySpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#pointintimerecoveryspecificationtypedef)
+  *(required)*
+
+Returns
+[UpdateContinuousBackupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatecontinuousbackupsoutputtypedef).
 
 ### update_contributor_insights
 
-Type annotations for `boto3.client("dynamodb").update_contributor_insights` method.
+Type annotations for `boto3.client("dynamodb").update_contributor_insights`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights]
+Boto3 documentation:
+[DynamoDB.Client.update_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights)
 
-```python
-def update_contributor_insights(
-    self,
-    TableName: str,
-    ContributorInsightsAction: ContributorInsightsAction,
-    IndexName: str = None
-) -> UpdateContributorInsightsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `ContributorInsightsAction`:
+  [ContributorInsightsAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#contributorinsightsaction)
+  *(required)*
+- `IndexName`: `str`
+
+Returns
+[UpdateContributorInsightsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatecontributorinsightsoutputtypedef).
 
 ### update_global_table
 
 Type annotations for `boto3.client("dynamodb").update_global_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table]
+Boto3 documentation:
+[DynamoDB.Client.update_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table)
 
-```python
-def update_global_table(
-    self,
-    GlobalTableName: str,
-    ReplicaUpdates: List[ReplicaUpdateTypeDef]
-) -> UpdateGlobalTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalTableName`: `str` *(required)*
+- `ReplicaUpdates`:
+  `List`\[[ReplicaUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaupdatetypedef)\]
+  *(required)*
+
+Returns
+[UpdateGlobalTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updateglobaltableoutputtypedef).
 
 ### update_global_table_settings
 
-Type annotations for `boto3.client("dynamodb").update_global_table_settings` method.
+Type annotations for `boto3.client("dynamodb").update_global_table_settings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings]
+Boto3 documentation:
+[DynamoDB.Client.update_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings)
 
-```python
-def update_global_table_settings(
-    self,
-    GlobalTableName: str,
-    GlobalTableBillingMode: BillingMode = None,
-    GlobalTableProvisionedWriteCapacityUnits: int = None,
-    GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate: "AutoScalingSettingsUpdateTypeDef" = None,
-    GlobalTableGlobalSecondaryIndexSettingsUpdate: List[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef] = None,
-    ReplicaSettingsUpdate: List[ReplicaSettingsUpdateTypeDef] = None
-) -> UpdateGlobalTableSettingsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalTableName`: `str` *(required)*
+- `GlobalTableBillingMode`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `GlobalTableProvisionedWriteCapacityUnits`: `int`
+- `GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
+- `GlobalTableGlobalSecondaryIndexSettingsUpdate`:
+  `List`\[[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globaltableglobalsecondaryindexsettingsupdatetypedef)\]
+- `ReplicaSettingsUpdate`:
+  `List`\[[ReplicaSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicasettingsupdatetypedef)\]
+
+Returns
+[UpdateGlobalTableSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updateglobaltablesettingsoutputtypedef).
 
 ### update_item
 
 Type annotations for `boto3.client("dynamodb").update_item` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item]
+Boto3 documentation:
+[DynamoDB.Client.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item)
 
-```python
-def update_item(
-    self,
-    TableName: str,
-    Key: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]],
-    AttributeUpdates: Dict[str, AttributeValueUpdateTypeDef] = None,
-    Expected: Dict[str, ExpectedAttributeValueTypeDef] = None,
-    ConditionalOperator: ConditionalOperator = None,
-    ReturnValues: ReturnValue = None,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = None,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = None,
-    UpdateExpression: str = None,
-    ConditionExpression: str = None,
-    ExpressionAttributeNames: Dict[str, str] = None,
-    ExpressionAttributeValues: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]] = None
-) -> UpdateItemOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+  *(required)*
+- `AttributeUpdates`: `Dict`\[`str`,
+  [AttributeValueUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributevalueupdatetypedef)\]
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+- `ReturnValues`:
+  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+- `UpdateExpression`: `str`
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+Returns
+[UpdateItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updateitemoutputtypedef).
 
 ### update_table
 
 Type annotations for `boto3.client("dynamodb").update_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table]
+Boto3 documentation:
+[DynamoDB.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table)
 
-```python
-def update_table(
-    self,
-    TableName: str,
-    AttributeDefinitions: List["AttributeDefinitionTypeDef"] = None,
-    BillingMode: BillingMode = None,
-    ProvisionedThroughput: "ProvisionedThroughputTypeDef" = None,
-    GlobalSecondaryIndexUpdates: List[GlobalSecondaryIndexUpdateTypeDef] = None,
-    StreamSpecification: "StreamSpecificationTypeDef" = None,
-    SSESpecification: SSESpecificationTypeDef = None,
-    ReplicaUpdates: List[ReplicationGroupUpdateTypeDef] = None
-) -> UpdateTableOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributedefinitiontypedef)\]
+- `BillingMode`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+- `GlobalSecondaryIndexUpdates`:
+  `List`\[[GlobalSecondaryIndexUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindexupdatetypedef)\]
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
+- `ReplicaUpdates`:
+  `List`\[[ReplicationGroupUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicationgroupupdatetypedef)\]
+
+Returns
+[UpdateTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatetableoutputtypedef).
 
 ### update_table_replica_auto_scaling
 
-Type annotations for `boto3.client("dynamodb").update_table_replica_auto_scaling` method.
+Type annotations for
+`boto3.client("dynamodb").update_table_replica_auto_scaling` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling]
+Boto3 documentation:
+[DynamoDB.Client.update_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling)
 
-```python
-def update_table_replica_auto_scaling(
-    self,
-    TableName: str,
-    GlobalSecondaryIndexUpdates: List[GlobalSecondaryIndexAutoScalingUpdateTypeDef] = None,
-    ProvisionedWriteCapacityAutoScalingUpdate: "AutoScalingSettingsUpdateTypeDef" = None,
-    ReplicaUpdates: List[ReplicaAutoScalingUpdateTypeDef] = None
-) -> UpdateTableReplicaAutoScalingOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TableName`: `str` *(required)*
+- `GlobalSecondaryIndexUpdates`:
+  `List`\[[GlobalSecondaryIndexAutoScalingUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindexautoscalingupdatetypedef)\]
+- `ProvisionedWriteCapacityAutoScalingUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
+- `ReplicaUpdates`:
+  `List`\[[ReplicaAutoScalingUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaautoscalingupdatetypedef)\]
+
+Returns
+[UpdateTableReplicaAutoScalingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatetablereplicaautoscalingoutputtypedef).
 
 ### update_time_to_live
 
 Type annotations for `boto3.client("dynamodb").update_time_to_live` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live]
+Boto3 documentation:
+[DynamoDB.Client.update_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live)
 
-```python
-def update_time_to_live(
-    self,
-    TableName: str,
-    TimeToLiveSpecification: "TimeToLiveSpecificationTypeDef"
-) -> UpdateTimeToLiveOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `TableName`: `str` *(required)*
+- `TimeToLiveSpecification`:
+  [TimeToLiveSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#timetolivespecificationtypedef)
+  *(required)*
 
+Returns
+[UpdateTimeToLiveOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatetimetoliveoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("dynamodb").get_paginator` method with overloads.
+Type annotations for `boto3.client("dynamodb").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_backups")` -> [ListBackupsPaginator](./paginators.md#listbackupspaginator)
-- `client.get_paginator("list_tables")` -> [ListTablesPaginator](./paginators.md#listtablespaginator)
-- `client.get_paginator("list_tags_of_resource")` -> [ListTagsOfResourcePaginator](./paginators.md#listtagsofresourcepaginator)
-- `client.get_paginator("query")` -> [QueryPaginator](./paginators.md#querypaginator)
-- `client.get_paginator("scan")` -> [ScanPaginator](./paginators.md#scanpaginator)
-
-
-
+- `client.get_paginator("list_backups")` ->
+  [ListBackupsPaginator](./paginators.md#listbackupspaginator)
+- `client.get_paginator("list_tables")` ->
+  [ListTablesPaginator](./paginators.md#listtablespaginator)
+- `client.get_paginator("list_tags_of_resource")` ->
+  [ListTagsOfResourcePaginator](./paginators.md#listtagsofresourcepaginator)
+- `client.get_paginator("query")` ->
+  [QueryPaginator](./paginators.md#querypaginator)
+- `client.get_paginator("scan")` ->
+  [ScanPaginator](./paginators.md#scanpaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("dynamodb").get_waiter` method with overloads.
+Type annotations for `boto3.client("dynamodb").get_waiter` method with
+overloads.
 
-- `client.get_waiter("table_exists")` -> [TableExistsWaiter](./waiters.md#tableexistswaiter)
-- `client.get_waiter("table_not_exists")` -> [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)
+- `client.get_waiter("table_exists")` ->
+  [TableExistsWaiter](./waiters.md#tableexistswaiter)
+- `client.get_waiter("table_not_exists")` ->
+  [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)

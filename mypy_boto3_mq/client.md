@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MQ](./README.md) > MQClient
 
-Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
-type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+Auto-generated documentation for
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+type annotations stubs module
+[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [MQClient for boto3 MQ module](#mqclient-for-boto3-mq-module)
   - [MQClient](#mqclient)
@@ -48,12 +50,13 @@ def get_mq_client() -> MQClient:
     return boto3.client("mq")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
+Boto3 documentation:
+[MQ.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mq.client import Exceptions
@@ -61,7 +64,6 @@ from mypy_boto3_mq.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -73,412 +75,413 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mq").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate]
+Boto3 documentation:
+[MQ.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_broker
 
 Type annotations for `boto3.client("mq").create_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker]
+Boto3 documentation:
+[MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
 
-```python
-def create_broker(
-    self,
-    AuthenticationStrategy: AuthenticationStrategy = None,
-    AutoMinorVersionUpgrade: bool = None,
-    BrokerName: str = None,
-    Configuration: "ConfigurationIdTypeDef" = None,
-    CreatorRequestId: str = None,
-    DeploymentMode: DeploymentMode = None,
-    EncryptionOptions: "EncryptionOptionsTypeDef" = None,
-    EngineType: EngineType = None,
-    EngineVersion: str = None,
-    HostInstanceType: str = None,
-    LdapServerMetadata: LdapServerMetadataInputTypeDef = None,
-    Logs: "LogsTypeDef" = None,
-    MaintenanceWindowStartTime: "WeeklyStartTimeTypeDef" = None,
-    PubliclyAccessible: bool = None,
-    SecurityGroups: List[str] = None,
-    StorageType: BrokerStorageType = None,
-    SubnetIds: List[str] = None,
-    Tags: Dict[str, str] = None,
-    Users: List[UserTypeDef] = None
-) -> CreateBrokerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
+- `AutoMinorVersionUpgrade`: `bool`
+- `BrokerName`: `str`
+- `Configuration`:
+  [ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)
+- `CreatorRequestId`: `str`
+- `DeploymentMode`:
+  [DeploymentMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#deploymentmode)
+- `EncryptionOptions`:
+  [EncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#encryptionoptionstypedef)
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
+- `EngineVersion`: `str`
+- `HostInstanceType`: `str`
+- `LdapServerMetadata`:
+  [LdapServerMetadataInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#ldapservermetadatainputtypedef)
+- `Logs`:
+  [LogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#weeklystarttimetypedef)
+- `PubliclyAccessible`: `bool`
+- `SecurityGroups`: `List`\[`str`\]
+- `StorageType`:
+  [BrokerStorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#brokerstoragetype)
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Users`:
+  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#usertypedef)\]
+
+Returns
+[CreateBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#createbrokerresponsetypedef).
 
 ### create_configuration
 
 Type annotations for `boto3.client("mq").create_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration]
+Boto3 documentation:
+[MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
 
-```python
-def create_configuration(
-    self,
-    AuthenticationStrategy: AuthenticationStrategy = None,
-    EngineType: EngineType = None,
-    EngineVersion: str = None,
-    Name: str = None,
-    Tags: Dict[str, str] = None
-) -> CreateConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
+- `EngineType`:
+  [EngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#enginetype)
+- `EngineVersion`: `str`
+- `Name`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#createconfigurationresponsetypedef).
 
 ### create_tags
 
 Type annotations for `boto3.client("mq").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags]
+Boto3 documentation:
+[MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
 
-```python
-def create_tags(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ### create_user
 
 Type annotations for `boto3.client("mq").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user]
+Boto3 documentation:
+[MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
 
-```python
-def create_user(
-    self,
-    BrokerId: str,
-    Username: str,
-    ConsoleAccess: bool = None,
-    Groups: List[str] = None,
-    Password: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+- `Username`: `str` *(required)*
+- `ConsoleAccess`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Password`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_broker
 
 Type annotations for `boto3.client("mq").delete_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker]
+Boto3 documentation:
+[MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
 
-```python
-def delete_broker(
-    self,
-    BrokerId: str
-) -> DeleteBrokerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+
+Returns
+[DeleteBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#deletebrokerresponsetypedef).
 
 ### delete_tags
 
 Type annotations for `boto3.client("mq").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags]
+Boto3 documentation:
+[MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### delete_user
 
 Type annotations for `boto3.client("mq").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user]
+Boto3 documentation:
+[MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    BrokerId: str,
-    Username: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+- `Username`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_broker
 
 Type annotations for `boto3.client("mq").describe_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker]
+Boto3 documentation:
+[MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
 
-```python
-def describe_broker(
-    self,
-    BrokerId: str
-) -> DescribeBrokerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+
+Returns
+[DescribeBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describebrokerresponsetypedef).
 
 ### describe_broker_engine_types
 
 Type annotations for `boto3.client("mq").describe_broker_engine_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types]
+Boto3 documentation:
+[MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
 
-```python
-def describe_broker_engine_types(
-    self,
-    EngineType: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeBrokerEngineTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EngineType`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeBrokerEngineTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describebrokerenginetypesresponsetypedef).
 
 ### describe_broker_instance_options
 
-Type annotations for `boto3.client("mq").describe_broker_instance_options` method.
+Type annotations for `boto3.client("mq").describe_broker_instance_options`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options]
+Boto3 documentation:
+[MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
 
-```python
-def describe_broker_instance_options(
-    self,
-    EngineType: str = None,
-    HostInstanceType: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    StorageType: str = None
-) -> DescribeBrokerInstanceOptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EngineType`: `str`
+- `HostInstanceType`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `StorageType`: `str`
+
+Returns
+[DescribeBrokerInstanceOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describebrokerinstanceoptionsresponsetypedef).
 
 ### describe_configuration
 
 Type annotations for `boto3.client("mq").describe_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration]
+Boto3 documentation:
+[MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
 
-```python
-def describe_configuration(
-    self,
-    ConfigurationId: str
-) -> DescribeConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationId`: `str` *(required)*
+
+Returns
+[DescribeConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describeconfigurationresponsetypedef).
 
 ### describe_configuration_revision
 
-Type annotations for `boto3.client("mq").describe_configuration_revision` method.
+Type annotations for `boto3.client("mq").describe_configuration_revision`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision]
+Boto3 documentation:
+[MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
 
-```python
-def describe_configuration_revision(
-    self,
-    ConfigurationId: str,
-    ConfigurationRevision: str
-) -> DescribeConfigurationRevisionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationId`: `str` *(required)*
+- `ConfigurationRevision`: `str` *(required)*
+
+Returns
+[DescribeConfigurationRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describeconfigurationrevisionresponsetypedef).
 
 ### describe_user
 
 Type annotations for `boto3.client("mq").describe_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user]
+Boto3 documentation:
+[MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
 
-```python
-def describe_user(
-    self,
-    BrokerId: str,
-    Username: str
-) -> DescribeUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+- `Username`: `str` *(required)*
+
+Returns
+[DescribeUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mq").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url]
+Boto3 documentation:
+[MQ.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_brokers
 
 Type annotations for `boto3.client("mq").list_brokers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers]
+Boto3 documentation:
+[MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
 
-```python
-def list_brokers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListBrokersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListBrokersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listbrokersresponsetypedef).
 
 ### list_configuration_revisions
 
 Type annotations for `boto3.client("mq").list_configuration_revisions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions]
+Boto3 documentation:
+[MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
 
-```python
-def list_configuration_revisions(
-    self,
-    ConfigurationId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConfigurationRevisionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConfigurationRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listconfigurationrevisionsresponsetypedef).
 
 ### list_configurations
 
 Type annotations for `boto3.client("mq").list_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations]
+Boto3 documentation:
+[MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
 
-```python
-def list_configurations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listconfigurationsresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("mq").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags]
+Boto3 documentation:
+[MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceArn: str
-) -> ListTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listtagsresponsetypedef).
 
 ### list_users
 
 Type annotations for `boto3.client("mq").list_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users]
+Boto3 documentation:
+[MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
 
-```python
-def list_users(
-    self,
-    BrokerId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listusersresponsetypedef).
 
 ### reboot_broker
 
 Type annotations for `boto3.client("mq").reboot_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker]
+Boto3 documentation:
+[MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
 
-```python
-def reboot_broker(
-    self,
-    BrokerId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_broker
 
 Type annotations for `boto3.client("mq").update_broker` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker]
+Boto3 documentation:
+[MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
 
-```python
-def update_broker(
-    self,
-    BrokerId: str,
-    AuthenticationStrategy: AuthenticationStrategy = None,
-    AutoMinorVersionUpgrade: bool = None,
-    Configuration: "ConfigurationIdTypeDef" = None,
-    EngineVersion: str = None,
-    HostInstanceType: str = None,
-    LdapServerMetadata: LdapServerMetadataInputTypeDef = None,
-    Logs: "LogsTypeDef" = None,
-    SecurityGroups: List[str] = None
-) -> UpdateBrokerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BrokerId`: `str` *(required)*
+- `AuthenticationStrategy`:
+  [AuthenticationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/literals.html#authenticationstrategy)
+- `AutoMinorVersionUpgrade`: `bool`
+- `Configuration`:
+  [ConfigurationIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#configurationidtypedef)
+- `EngineVersion`: `str`
+- `HostInstanceType`: `str`
+- `LdapServerMetadata`:
+  [LdapServerMetadataInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#ldapservermetadatainputtypedef)
+- `Logs`:
+  [LogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#logstypedef)
+- `SecurityGroups`: `List`\[`str`\]
+
+Returns
+[UpdateBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#updatebrokerresponsetypedef).
 
 ### update_configuration
 
 Type annotations for `boto3.client("mq").update_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration]
+Boto3 documentation:
+[MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
 
-```python
-def update_configuration(
-    self,
-    ConfigurationId: str,
-    Data: str = None,
-    Description: str = None
-) -> UpdateConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationId`: `str` *(required)*
+- `Data`: `str`
+- `Description`: `str`
+
+Returns
+[UpdateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#updateconfigurationresponsetypedef).
 
 ### update_user
 
 Type annotations for `boto3.client("mq").update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user]
+Boto3 documentation:
+[MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
 
-```python
-def update_user(
-    self,
-    BrokerId: str,
-    Username: str,
-    ConsoleAccess: bool = None,
-    Groups: List[str] = None,
-    Password: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `BrokerId`: `str` *(required)*
+- `Username`: `str` *(required)*
+- `ConsoleAccess`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Password`: `str`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
 Type annotations for `boto3.client("mq").get_paginator` method with overloads.
 
-- `client.get_paginator("list_brokers")` -> [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
-
-
+- `client.get_paginator("list_brokers")` ->
+  [ListBrokersPaginator](./paginators.md#listbrokerspaginator)

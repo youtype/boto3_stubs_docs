@@ -1,9 +1,12 @@
 # IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > IoT1ClickDevicesServiceClient
+> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) >
+> IoT1ClickDevicesServiceClient
 
-Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+Auto-generated documentation for
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+type annotations stubs module
+[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module](#iot1clickdevicesserviceclient-for-boto3-iot1clickdevicesservice-module)
   - [IoT1ClickDevicesServiceClient](#iot1clickdevicesserviceclient)
@@ -39,12 +42,13 @@ def get_iot1click-devices_client() -> IoT1ClickDevicesServiceClient:
     return boto3.client("iot1click-devices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
+Boto3 documentation:
+[IoT1ClickDevicesService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iot1click_devices.client import Exceptions
@@ -52,7 +56,6 @@ from mypy_boto3_iot1click_devices.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -65,242 +68,241 @@ Exceptions:
 - `Exceptions.ResourceConflictException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("iot1click-devices").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### claim_devices_by_claim_code
 
-Type annotations for `boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
+Type annotations for
+`boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
-```python
-def claim_devices_by_claim_code(
-    self,
-    ClaimCode: str
-) -> ClaimDevicesByClaimCodeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClaimCode`: `str` *(required)*
+
+Returns
+[ClaimDevicesByClaimCodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#claimdevicesbyclaimcoderesponsetypedef).
 
 ### describe_device
 
-Type annotations for `boto3.client("iot1click-devices").describe_device` method.
+Type annotations for `boto3.client("iot1click-devices").describe_device`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
-```python
-def describe_device(
-    self,
-    DeviceId: str
-) -> DescribeDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+
+Returns
+[DescribeDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#describedeviceresponsetypedef).
 
 ### finalize_device_claim
 
-Type annotations for `boto3.client("iot1click-devices").finalize_device_claim` method.
+Type annotations for `boto3.client("iot1click-devices").finalize_device_claim`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
-```python
-def finalize_device_claim(
-    self,
-    DeviceId: str,
-    Tags: Dict[str, str] = None
-) -> FinalizeDeviceClaimResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[FinalizeDeviceClaimResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#finalizedeviceclaimresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iot1click-devices").generate_presigned_url` method.
+Type annotations for `boto3.client("iot1click-devices").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_device_methods
 
-Type annotations for `boto3.client("iot1click-devices").get_device_methods` method.
+Type annotations for `boto3.client("iot1click-devices").get_device_methods`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
-```python
-def get_device_methods(
-    self,
-    DeviceId: str
-) -> GetDeviceMethodsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+
+Returns
+[GetDeviceMethodsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#getdevicemethodsresponsetypedef).
 
 ### initiate_device_claim
 
-Type annotations for `boto3.client("iot1click-devices").initiate_device_claim` method.
+Type annotations for `boto3.client("iot1click-devices").initiate_device_claim`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
-```python
-def initiate_device_claim(
-    self,
-    DeviceId: str
-) -> InitiateDeviceClaimResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+
+Returns
+[InitiateDeviceClaimResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#initiatedeviceclaimresponsetypedef).
 
 ### invoke_device_method
 
-Type annotations for `boto3.client("iot1click-devices").invoke_device_method` method.
+Type annotations for `boto3.client("iot1click-devices").invoke_device_method`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
 
-```python
-def invoke_device_method(
-    self,
-    DeviceId: str,
-    DeviceMethod: "DeviceMethodTypeDef" = None,
-    DeviceMethodParameters: str = None
-) -> InvokeDeviceMethodResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+- `DeviceMethod`:
+  [DeviceMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicemethodtypedef)
+- `DeviceMethodParameters`: `str`
+
+Returns
+[InvokeDeviceMethodResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#invokedevicemethodresponsetypedef).
 
 ### list_device_events
 
-Type annotations for `boto3.client("iot1click-devices").list_device_events` method.
+Type annotations for `boto3.client("iot1click-devices").list_device_events`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
-```python
-def list_device_events(
-    self,
-    DeviceId: str,
-    FromTimeStamp: datetime,
-    ToTimeStamp: datetime,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDeviceEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+- `FromTimeStamp`: `datetime` *(required)*
+- `ToTimeStamp`: `datetime` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdeviceeventsresponsetypedef).
 
 ### list_devices
 
 Type annotations for `boto3.client("iot1click-devices").list_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
 
-```python
-def list_devices(
-    self,
-    DeviceType: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceType`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdevicesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource` method.
+Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### unclaim_device
 
 Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
 
-```python
-def unclaim_device(
-    self,
-    DeviceId: str
-) -> UnclaimDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DeviceId`: `str` *(required)*
+
+Returns
+[UnclaimDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#unclaimdeviceresponsetypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_device_state
 
-Type annotations for `boto3.client("iot1click-devices").update_device_state` method.
+Type annotations for `boto3.client("iot1click-devices").update_device_state`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state]
+Boto3 documentation:
+[IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
 
-```python
-def update_device_state(
-    self,
-    DeviceId: str,
-    Enabled: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `DeviceId`: `str` *(required)*
+- `Enabled`: `bool`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("iot1click-devices").get_paginator` method with overloads.
+Type annotations for `boto3.client("iot1click-devices").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_device_events")` -> [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
-- `client.get_paginator("list_devices")` -> [ListDevicesPaginator](./paginators.md#listdevicespaginator)
-
-
+- `client.get_paginator("list_device_events")` ->
+  [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+- `client.get_paginator("list_devices")` ->
+  [ListDevicesPaginator](./paginators.md#listdevicespaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Support
 
-Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+Auto-generated documentation for
+[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+type annotations stubs module
+[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 ```bash
 pip install mypy-boto3-support
@@ -19,7 +21,7 @@ pip install mypy-boto3-support
 
 ## SupportClient
 
-Type annotations for  `boto3.client("support")` as [SupportClient](./client.md)
+Type annotations for `boto3.client("support")` as [SupportClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_support.client import SupportClient
 ```
 
-
 SupportClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_attachments_to_set](./client.md#add-attachments-to-set)
 - [add_communication_to_case](./client.md#add-communication-to-case)
 - [can_paginate](./client.md#can-paginate)
@@ -51,10 +51,8 @@ SupportClient [exceptions](./client.md#exceptions)
 - [refresh_trusted_advisor_check](./client.md#refresh-trusted-advisor-check)
 - [resolve_case](./client.md#resolve-case)
 
-
-
-
 ### Exceptions
+
 - [AttachmentIdNotFound](./client.md#attachmentidnotfound)
 - [AttachmentLimitExceeded](./client.md#attachmentlimitexceeded)
 - [AttachmentSetExpired](./client.md#attachmentsetexpired)
@@ -66,14 +64,10 @@ SupportClient [exceptions](./client.md#exceptions)
 - [DescribeAttachmentLimitExceeded](./client.md#describeattachmentlimitexceeded)
 - [InternalServerError](./client.md#internalservererror)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("support").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("support").get_paginator("...")`.
 
 Can be used directly:
 
@@ -83,11 +77,6 @@ from mypy_boto3_support.paginators import DescribeCasesPaginator, ...
 
 - [DescribeCasesPaginator](./paginators.md#describecasespaginator)
 - [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -102,13 +91,10 @@ from mypy_boto3_support.literals import DescribeCasesPaginatorName, ...
 - [DescribeCasesPaginatorName](./literals.md#describecasespaginatorname)
 - [DescribeCommunicationsPaginatorName](./literals.md#describecommunicationspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

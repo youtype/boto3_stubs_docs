@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [HealthLake](./README.md) > Literals
 
-Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+Auto-generated documentation for
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+type annotations stubs module
+[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Literals for boto3 HealthLake module](#literals-for-boto3-healthlake-module)
   - [DatastoreStatus](#datastorestatus)

@@ -1,9 +1,12 @@
 # AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > AugmentedAIRuntimeClient
+> [Index](../README.md) > [AugmentedAIRuntime](./README.md) >
+> AugmentedAIRuntimeClient
 
-Auto-generated documentation for [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
-type annotations stubs module [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+Auto-generated documentation for
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+type annotations stubs module
+[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 - [AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module](#augmentedairuntimeclient-for-boto3-augmentedairuntime-module)
   - [AugmentedAIRuntimeClient](#augmentedairuntimeclient)
@@ -31,12 +34,13 @@ def get_sagemaker-a2i-runtime_client() -> AugmentedAIRuntimeClient:
     return boto3.client("sagemaker-a2i-runtime")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
+Boto3 documentation:
+[AugmentedAIRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sagemaker_a2i_runtime.client import Exceptions
@@ -44,7 +48,6 @@ from mypy_boto3_sagemaker_a2i_runtime.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -56,125 +59,128 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate` method.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_human_loop
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop` method.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
 
-```python
-def delete_human_loop(
-    self,
-    HumanLoopName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HumanLoopName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_human_loop
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
+Type annotations for
+`boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
-```python
-def describe_human_loop(
-    self,
-    HumanLoopName: str
-) -> DescribeHumanLoopResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HumanLoopName`: `str` *(required)*
+
+Returns
+[DescribeHumanLoopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#describehumanloopresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
+Type annotations for
+`boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_human_loops
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops` method.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
-```python
-def list_human_loops(
-    self,
-    FlowDefinitionArn: str,
-    CreationTimeAfter: datetime = None,
-    CreationTimeBefore: datetime = None,
-    SortOrder: SortOrder = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListHumanLoopsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FlowDefinitionArn`: `str` *(required)*
+- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `datetime`
+- `SortOrder`:
+  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#sortorder)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListHumanLoopsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#listhumanloopsresponsetypedef).
 
 ### start_human_loop
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop` method.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
 
-```python
-def start_human_loop(
-    self,
-    HumanLoopName: str,
-    FlowDefinitionArn: str,
-    HumanLoopInput: HumanLoopInputTypeDef,
-    DataAttributes: HumanLoopDataAttributesTypeDef = None
-) -> StartHumanLoopResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HumanLoopName`: `str` *(required)*
+- `FlowDefinitionArn`: `str` *(required)*
+- `HumanLoopInput`:
+  [HumanLoopInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopinputtypedef)
+  *(required)*
+- `DataAttributes`:
+  [HumanLoopDataAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopdataattributestypedef)
+
+Returns
+[StartHumanLoopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#starthumanloopresponsetypedef).
 
 ### stop_human_loop
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop` method.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop]
+Boto3 documentation:
+[AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
 
-```python
-def stop_human_loop(
-    self,
-    HumanLoopName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `HumanLoopName`: `str` *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").get_paginator` method with overloads.
+Type annotations for `boto3.client("sagemaker-a2i-runtime").get_paginator`
+method with overloads.
 
-- `client.get_paginator("list_human_loops")` -> [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
-
-
+- `client.get_paginator("list_human_loops")` ->
+  [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)

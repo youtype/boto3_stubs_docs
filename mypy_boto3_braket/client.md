@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Braket](./README.md) > BraketClient
 
-Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
-type annotations stubs module [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+Auto-generated documentation for
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+type annotations stubs module
+[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [BraketClient for boto3 Braket module](#braketclient-for-boto3-braket-module)
   - [BraketClient](#braketclient)
@@ -35,12 +37,13 @@ def get_braket_client() -> BraketClient:
     return boto3.client("braket")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client)
+Boto3 documentation:
+[Braket.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_braket.client import Exceptions
@@ -48,7 +51,6 @@ from mypy_boto3_braket.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -62,188 +64,185 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("braket").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.can_paginate]
+Boto3 documentation:
+[Braket.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_quantum_task
 
 Type annotations for `boto3.client("braket").cancel_quantum_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_quantum_task]
+Boto3 documentation:
+[Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_quantum_task)
 
-```python
-def cancel_quantum_task(
-    self,
-    clientToken: str,
-    quantumTaskArn: str
-) -> CancelQuantumTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientToken`: `str` *(required)*
+- `quantumTaskArn`: `str` *(required)*
+
+Returns
+[CancelQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#cancelquantumtaskresponsetypedef).
 
 ### create_quantum_task
 
 Type annotations for `boto3.client("braket").create_quantum_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_quantum_task]
+Boto3 documentation:
+[Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_quantum_task)
 
-```python
-def create_quantum_task(
-    self,
-    action: str,
-    clientToken: str,
-    deviceArn: str,
-    outputS3Bucket: str,
-    outputS3KeyPrefix: str,
-    shots: int,
-    deviceParameters: str = None,
-    tags: Dict[str, str] = None
-) -> CreateQuantumTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `action`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `deviceArn`: `str` *(required)*
+- `outputS3Bucket`: `str` *(required)*
+- `outputS3KeyPrefix`: `str` *(required)*
+- `shots`: `int` *(required)*
+- `deviceParameters`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#createquantumtaskresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("braket").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.generate_presigned_url]
+Boto3 documentation:
+[Braket.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_device
 
 Type annotations for `boto3.client("braket").get_device` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_device]
+Boto3 documentation:
+[Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_device)
 
-```python
-def get_device(
-    self,
-    deviceArn: str
-) -> GetDeviceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `deviceArn`: `str` *(required)*
+
+Returns
+[GetDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#getdeviceresponsetypedef).
 
 ### get_quantum_task
 
 Type annotations for `boto3.client("braket").get_quantum_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_quantum_task]
+Boto3 documentation:
+[Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_quantum_task)
 
-```python
-def get_quantum_task(
-    self,
-    quantumTaskArn: str
-) -> GetQuantumTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `quantumTaskArn`: `str` *(required)*
+
+Returns
+[GetQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#getquantumtaskresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("braket").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.list_tags_for_resource]
+Boto3 documentation:
+[Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### search_devices
 
 Type annotations for `boto3.client("braket").search_devices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_devices]
+Boto3 documentation:
+[Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_devices)
 
-```python
-def search_devices(
-    self,
-    filters: List[SearchDevicesFilterTypeDef],
-    maxResults: int = None,
-    nextToken: str = None
-) -> SearchDevicesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[SearchDevicesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesfiltertypedef)\]
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesresponsetypedef).
 
 ### search_quantum_tasks
 
 Type annotations for `boto3.client("braket").search_quantum_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_quantum_tasks]
+Boto3 documentation:
+[Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_quantum_tasks)
 
-```python
-def search_quantum_tasks(
-    self,
-    filters: List[SearchQuantumTasksFilterTypeDef],
-    maxResults: int = None,
-    nextToken: str = None
-) -> SearchQuantumTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[SearchQuantumTasksFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksfiltertypedef)\]
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[SearchQuantumTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("braket").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.tag_resource]
+Boto3 documentation:
+[Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("braket").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.untag_resource]
+Boto3 documentation:
+[Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("braket").get_paginator` method with overloads.
+Type annotations for `boto3.client("braket").get_paginator` method with
+overloads.
 
-- `client.get_paginator("search_devices")` -> [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
-- `client.get_paginator("search_quantum_tasks")` -> [SearchQuantumTasksPaginator](./paginators.md#searchquantumtaskspaginator)
-
-
+- `client.get_paginator("search_devices")` ->
+  [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
+- `client.get_paginator("search_quantum_tasks")` ->
+  [SearchQuantumTasksPaginator](./paginators.md#searchquantumtaskspaginator)

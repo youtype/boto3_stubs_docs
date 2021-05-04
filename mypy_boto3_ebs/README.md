@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EBS
 
-Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+Auto-generated documentation for
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+type annotations stubs module
+[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 ```bash
 pip install mypy-boto3-ebs
@@ -18,7 +20,7 @@ pip install mypy-boto3-ebs
 
 ## EBSClient
 
-Type annotations for  `boto3.client("ebs")` as [EBSClient](./client.md)
+Type annotations for `boto3.client("ebs")` as [EBSClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_ebs.client import EBSClient
 ```
 
-
 EBSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [complete_snapshot](./client.md#complete-snapshot)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -41,10 +41,8 @@ EBSClient [exceptions](./client.md#exceptions)
 - [put_snapshot_block](./client.md#put-snapshot-block)
 - [start_snapshot](./client.md#start-snapshot)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentLimitExceededException](./client.md#concurrentlimitexceededexception)
@@ -54,15 +52,6 @@ EBSClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -78,13 +67,10 @@ from mypy_boto3_ebs.literals import ChecksumAggregationMethod, ...
 - [ChecksumAlgorithm](./literals.md#checksumalgorithm)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

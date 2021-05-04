@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaStoreData](./README.md) > Literals
 
-Auto-generated documentation for [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
-type annotations stubs module [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+Auto-generated documentation for
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+type annotations stubs module
+[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Literals for boto3 MediaStoreData module](#literals-for-boto3-mediastoredata-module)
   - [ItemType](#itemtype)

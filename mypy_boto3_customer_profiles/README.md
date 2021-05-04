@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CustomerProfiles
 
-Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
-type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+Auto-generated documentation for
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+type annotations stubs module
+[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 ```bash
 pip install mypy-boto3-customer-profiles
@@ -18,7 +20,8 @@ pip install mypy-boto3-customer-profiles
 
 ## CustomerProfilesClient
 
-Type annotations for  `boto3.client("customer-profiles")` as [CustomerProfilesClient](./client.md)
+Type annotations for `boto3.client("customer-profiles")` as
+[CustomerProfilesClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_customer_profiles.client import CustomerProfilesClient
 ```
 
-
 CustomerProfilesClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_profile_key](./client.md#add-profile-key)
 - [can_paginate](./client.md#can-paginate)
 - [create_domain](./client.md#create-domain)
@@ -65,25 +66,14 @@ CustomerProfilesClient [exceptions](./client.md#exceptions)
 - [update_domain](./client.md#update-domain)
 - [update_profile](./client.md#update-profile)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ThrottlingException](./client.md#throttlingexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_customer_profiles.literals import DataPullMode, ...
 - [TriggerType](./literals.md#triggertype)
 - [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

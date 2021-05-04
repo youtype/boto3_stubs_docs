@@ -1,9 +1,12 @@
 # RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > RedshiftDataAPIServiceClient
+> [Index](../README.md) > [RedshiftDataAPIService](./README.md) >
+> RedshiftDataAPIServiceClient
 
-Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
-type annotations stubs module [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+Auto-generated documentation for
+[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+type annotations stubs module
+[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module](#redshiftdataapiserviceclient-for-boto3-redshiftdataapiservice-module)
   - [RedshiftDataAPIServiceClient](#redshiftdataapiserviceclient)
@@ -35,12 +38,13 @@ def get_redshift-data_client() -> RedshiftDataAPIServiceClient:
     return boto3.client("redshift-data")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
+Boto3 documentation:
+[RedshiftDataAPIService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_redshift_data.client import Exceptions
@@ -48,7 +52,6 @@ from mypy_boto3_redshift_data.client import Exceptions
 def handle_error(exc: Exceptions.ActiveStatementsExceededException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -59,217 +62,219 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("redshift-data").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_statement
 
 Type annotations for `boto3.client("redshift-data").cancel_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
 
-```python
-def cancel_statement(
-    self,
-    Id: str
-) -> CancelStatementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[CancelStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#cancelstatementresponsetypedef).
 
 ### describe_statement
 
 Type annotations for `boto3.client("redshift-data").describe_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
 
-```python
-def describe_statement(
-    self,
-    Id: str
-) -> DescribeStatementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#describestatementresponsetypedef).
 
 ### describe_table
 
 Type annotations for `boto3.client("redshift-data").describe_table` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
 
-```python
-def describe_table(
-    self,
-    ClusterIdentifier: str,
-    Database: str,
-    ConnectedDatabase: str = None,
-    DbUser: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Schema: str = None,
-    SecretArn: str = None,
-    Table: str = None
-) -> DescribeTableResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str` *(required)*
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Schema`: `str`
+- `SecretArn`: `str`
+- `Table`: `str`
+
+Returns
+[DescribeTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#describetableresponsetypedef).
 
 ### execute_statement
 
 Type annotations for `boto3.client("redshift-data").execute_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
 
-```python
-def execute_statement(
-    self,
-    ClusterIdentifier: str,
-    Sql: str,
-    Database: str = None,
-    DbUser: str = None,
-    SecretArn: str = None,
-    StatementName: str = None,
-    WithEvent: bool = None
-) -> ExecuteStatementOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `Sql`: `str` *(required)*
+- `Database`: `str`
+- `DbUser`: `str`
+- `SecretArn`: `str`
+- `StatementName`: `str`
+- `WithEvent`: `bool`
+
+Returns
+[ExecuteStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#executestatementoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("redshift-data").generate_presigned_url` method.
+Type annotations for `boto3.client("redshift-data").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_statement_result
 
-Type annotations for `boto3.client("redshift-data").get_statement_result` method.
+Type annotations for `boto3.client("redshift-data").get_statement_result`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
 
-```python
-def get_statement_result(
-    self,
-    Id: str,
-    NextToken: str = None
-) -> GetStatementResultResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[GetStatementResultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#getstatementresultresponsetypedef).
 
 ### list_databases
 
 Type annotations for `boto3.client("redshift-data").list_databases` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
 
-```python
-def list_databases(
-    self,
-    ClusterIdentifier: str,
-    Database: str = None,
-    DbUser: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SecretArn: str = None
-) -> ListDatabasesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SecretArn`: `str`
+
+Returns
+[ListDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listdatabasesresponsetypedef).
 
 ### list_schemas
 
 Type annotations for `boto3.client("redshift-data").list_schemas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
 
-```python
-def list_schemas(
-    self,
-    ClusterIdentifier: str,
-    Database: str,
-    ConnectedDatabase: str = None,
-    DbUser: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SchemaPattern: str = None,
-    SecretArn: str = None
-) -> ListSchemasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str` *(required)*
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SchemaPattern`: `str`
+- `SecretArn`: `str`
+
+Returns
+[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listschemasresponsetypedef).
 
 ### list_statements
 
 Type annotations for `boto3.client("redshift-data").list_statements` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
 
-```python
-def list_statements(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    RoleLevel: bool = None,
-    StatementName: str = None,
-    Status: StatusString = None
-) -> ListStatementsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `RoleLevel`: `bool`
+- `StatementName`: `str`
+- `Status`:
+  [StatusString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/literals.html#statusstring)
+
+Returns
+[ListStatementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#liststatementsresponsetypedef).
 
 ### list_tables
 
 Type annotations for `boto3.client("redshift-data").list_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables]
+Boto3 documentation:
+[RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
 
-```python
-def list_tables(
-    self,
-    ClusterIdentifier: str,
-    Database: str,
-    ConnectedDatabase: str = None,
-    DbUser: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    SchemaPattern: str = None,
-    SecretArn: str = None,
-    TablePattern: str = None
-) -> ListTablesResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ClusterIdentifier`: `str` *(required)*
+- `Database`: `str` *(required)*
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SchemaPattern`: `str`
+- `SecretArn`: `str`
+- `TablePattern`: `str`
 
+Returns
+[ListTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listtablesresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("redshift-data").get_paginator` method with overloads.
+Type annotations for `boto3.client("redshift-data").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_table")` -> [DescribeTablePaginator](./paginators.md#describetablepaginator)
-- `client.get_paginator("get_statement_result")` -> [GetStatementResultPaginator](./paginators.md#getstatementresultpaginator)
-- `client.get_paginator("list_databases")` -> [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
-- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-- `client.get_paginator("list_statements")` -> [ListStatementsPaginator](./paginators.md#liststatementspaginator)
-- `client.get_paginator("list_tables")` -> [ListTablesPaginator](./paginators.md#listtablespaginator)
-
-
+- `client.get_paginator("describe_table")` ->
+  [DescribeTablePaginator](./paginators.md#describetablepaginator)
+- `client.get_paginator("get_statement_result")` ->
+  [GetStatementResultPaginator](./paginators.md#getstatementresultpaginator)
+- `client.get_paginator("list_databases")` ->
+  [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- `client.get_paginator("list_schemas")` ->
+  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("list_statements")` ->
+  [ListStatementsPaginator](./paginators.md#liststatementspaginator)
+- `client.get_paginator("list_tables")` ->
+  [ListTablesPaginator](./paginators.md#listtablespaginator)

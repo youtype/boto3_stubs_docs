@@ -1,9 +1,12 @@
 # CodeGuruProfilerClient for boto3 CodeGuruProfiler module
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) > CodeGuruProfilerClient
+> [Index](../README.md) > [CodeGuruProfiler](./README.md) >
+> CodeGuruProfilerClient
 
-Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
-type annotations stubs module [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+Auto-generated documentation for
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+type annotations stubs module
+[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [CodeGuruProfilerClient for boto3 CodeGuruProfiler module](#codeguruprofilerclient-for-boto3-codeguruprofiler-module)
   - [CodeGuruProfilerClient](#codeguruprofilerclient)
@@ -49,12 +52,13 @@ def get_codeguruprofiler_client() -> CodeGuruProfilerClient:
     return boto3.client("codeguruprofiler")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
+Boto3 documentation:
+[CodeGuruProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codeguruprofiler.client import Exceptions
@@ -62,7 +66,6 @@ from mypy_boto3_codeguruprofiler.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -74,419 +77,440 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### add_notification_channels
 
-Type annotations for `boto3.client("codeguruprofiler").add_notification_channels` method.
+Type annotations for
+`boto3.client("codeguruprofiler").add_notification_channels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels]
+Boto3 documentation:
+[CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
 
-```python
-def add_notification_channels(
-    self,
-    channels: List["ChannelTypeDef"],
-    profilingGroupName: str
-) -> AddNotificationChannelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `channels`:
+  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#channeltypedef)\]
+  *(required)*
+- `profilingGroupName`: `str` *(required)*
+
+Returns
+[AddNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#addnotificationchannelsresponsetypedef).
 
 ### batch_get_frame_metric_data
 
-Type annotations for `boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
+Type annotations for
+`boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data]
+Boto3 documentation:
+[CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
 
-```python
-def batch_get_frame_metric_data(
-    self,
-    profilingGroupName: str,
-    endTime: datetime = None,
-    frameMetrics: List["FrameMetricTypeDef"] = None,
-    period: str = None,
-    startTime: datetime = None,
-    targetResolution: AggregationPeriod = None
-) -> BatchGetFrameMetricDataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+- `endTime`: `datetime`
+- `frameMetrics`:
+  `List`\[[FrameMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#framemetrictypedef)\]
+- `period`: `str`
+- `startTime`: `datetime`
+- `targetResolution`:
+  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
+
+Returns
+[BatchGetFrameMetricDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#batchgetframemetricdataresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codeguruprofiler").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate]
+Boto3 documentation:
+[CodeGuruProfiler.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### configure_agent
 
 Type annotations for `boto3.client("codeguruprofiler").configure_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent]
+Boto3 documentation:
+[CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
 
-```python
-def configure_agent(
-    self,
-    profilingGroupName: str,
-    fleetInstanceId: str = None,
-    metadata: Dict[MetadataField, str] = None
-) -> ConfigureAgentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+- `fleetInstanceId`: `str`
+- `metadata`:
+  `Dict`\[[MetadataField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#metadatafield),
+  `str`\]
+
+Returns
+[ConfigureAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#configureagentresponsetypedef).
 
 ### create_profiling_group
 
-Type annotations for `boto3.client("codeguruprofiler").create_profiling_group` method.
+Type annotations for `boto3.client("codeguruprofiler").create_profiling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group]
+Boto3 documentation:
+[CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
 
-```python
-def create_profiling_group(
-    self,
-    clientToken: str,
-    profilingGroupName: str,
-    agentOrchestrationConfig: "AgentOrchestrationConfigTypeDef" = None,
-    computePlatform: ComputePlatform = None,
-    tags: Dict[str, str] = None
-) -> CreateProfilingGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `clientToken`: `str` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `agentOrchestrationConfig`:
+  [AgentOrchestrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentorchestrationconfigtypedef)
+- `computePlatform`:
+  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#computeplatform)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#createprofilinggroupresponsetypedef).
 
 ### delete_profiling_group
 
-Type annotations for `boto3.client("codeguruprofiler").delete_profiling_group` method.
+Type annotations for `boto3.client("codeguruprofiler").delete_profiling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group]
+Boto3 documentation:
+[CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
 
-```python
-def delete_profiling_group(
-    self,
-    profilingGroupName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_profiling_group
 
-Type annotations for `boto3.client("codeguruprofiler").describe_profiling_group` method.
+Type annotations for
+`boto3.client("codeguruprofiler").describe_profiling_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group]
+Boto3 documentation:
+[CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
 
-```python
-def describe_profiling_group(
-    self,
-    profilingGroupName: str
-) -> DescribeProfilingGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+
+Returns
+[DescribeProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#describeprofilinggroupresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codeguruprofiler").generate_presigned_url` method.
+Type annotations for `boto3.client("codeguruprofiler").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeGuruProfiler.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_findings_report_account_summary
 
-Type annotations for `boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
+Type annotations for
+`boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary]
+Boto3 documentation:
+[CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
 
-```python
-def get_findings_report_account_summary(
-    self,
-    dailyReportsOnly: bool = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> GetFindingsReportAccountSummaryResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `dailyReportsOnly`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetFindingsReportAccountSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getfindingsreportaccountsummaryresponsetypedef).
 
 ### get_notification_configuration
 
-Type annotations for `boto3.client("codeguruprofiler").get_notification_configuration` method.
+Type annotations for
+`boto3.client("codeguruprofiler").get_notification_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration]
+Boto3 documentation:
+[CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
 
-```python
-def get_notification_configuration(
-    self,
-    profilingGroupName: str
-) -> GetNotificationConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+
+Returns
+[GetNotificationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getnotificationconfigurationresponsetypedef).
 
 ### get_policy
 
 Type annotations for `boto3.client("codeguruprofiler").get_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy]
+Boto3 documentation:
+[CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
 
-```python
-def get_policy(
-    self,
-    profilingGroupName: str
-) -> GetPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+
+Returns
+[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getpolicyresponsetypedef).
 
 ### get_profile
 
 Type annotations for `boto3.client("codeguruprofiler").get_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile]
+Boto3 documentation:
+[CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
 
-```python
-def get_profile(
-    self,
-    profilingGroupName: str,
-    accept: str = None,
-    endTime: datetime = None,
-    maxDepth: int = None,
-    period: str = None,
-    startTime: datetime = None
-) -> GetProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `profilingGroupName`: `str` *(required)*
+- `accept`: `str`
+- `endTime`: `datetime`
+- `maxDepth`: `int`
+- `period`: `str`
+- `startTime`: `datetime`
+
+Returns
+[GetProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getprofileresponsetypedef).
 
 ### get_recommendations
 
-Type annotations for `boto3.client("codeguruprofiler").get_recommendations` method.
+Type annotations for `boto3.client("codeguruprofiler").get_recommendations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations]
+Boto3 documentation:
+[CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
 
-```python
-def get_recommendations(
-    self,
-    endTime: datetime,
-    profilingGroupName: str,
-    startTime: datetime,
-    locale: str = None
-) -> GetRecommendationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endTime`: `datetime` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `startTime`: `datetime` *(required)*
+- `locale`: `str`
+
+Returns
+[GetRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getrecommendationsresponsetypedef).
 
 ### list_findings_reports
 
-Type annotations for `boto3.client("codeguruprofiler").list_findings_reports` method.
+Type annotations for `boto3.client("codeguruprofiler").list_findings_reports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports]
+Boto3 documentation:
+[CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
 
-```python
-def list_findings_reports(
-    self,
-    endTime: datetime,
-    profilingGroupName: str,
-    startTime: datetime,
-    dailyReportsOnly: bool = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListFindingsReportsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endTime`: `datetime` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `startTime`: `datetime` *(required)*
+- `dailyReportsOnly`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListFindingsReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listfindingsreportsresponsetypedef).
 
 ### list_profile_times
 
-Type annotations for `boto3.client("codeguruprofiler").list_profile_times` method.
+Type annotations for `boto3.client("codeguruprofiler").list_profile_times`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times]
+Boto3 documentation:
+[CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
 
-```python
-def list_profile_times(
-    self,
-    endTime: datetime,
-    period: AggregationPeriod,
-    profilingGroupName: str,
-    startTime: datetime,
-    maxResults: int = None,
-    nextToken: str = None,
-    orderBy: OrderBy = None
-) -> ListProfileTimesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endTime`: `datetime` *(required)*
+- `period`:
+  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
+  *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `startTime`: `datetime` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `orderBy`:
+  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#orderby)
+
+Returns
+[ListProfileTimesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listprofiletimesresponsetypedef).
 
 ### list_profiling_groups
 
-Type annotations for `boto3.client("codeguruprofiler").list_profiling_groups` method.
+Type annotations for `boto3.client("codeguruprofiler").list_profiling_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups]
+Boto3 documentation:
+[CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
 
-```python
-def list_profiling_groups(
-    self,
-    includeDescription: bool = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListProfilingGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `includeDescription`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListProfilingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listprofilinggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codeguruprofiler").list_tags_for_resource` method.
+Type annotations for `boto3.client("codeguruprofiler").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### post_agent_profile
 
-Type annotations for `boto3.client("codeguruprofiler").post_agent_profile` method.
+Type annotations for `boto3.client("codeguruprofiler").post_agent_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile]
+Boto3 documentation:
+[CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
 
-```python
-def post_agent_profile(
-    self,
-    agentProfile: Union[bytes, IO[bytes]],
-    contentType: str,
-    profilingGroupName: str,
-    profileToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `agentProfile`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `contentType`: `str` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `profileToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_permission
 
 Type annotations for `boto3.client("codeguruprofiler").put_permission` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission]
+Boto3 documentation:
+[CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
 
-```python
-def put_permission(
-    self,
-    actionGroup: Literal['agentPermissions'],
-    principals: List[str],
-    profilingGroupName: str,
-    revisionId: str = None
-) -> PutPermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `actionGroup`: `Literal['agentPermissions']` *(required)*
+- `principals`: `List`\[`str`\] *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `revisionId`: `str`
+
+Returns
+[PutPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#putpermissionresponsetypedef).
 
 ### remove_notification_channel
 
-Type annotations for `boto3.client("codeguruprofiler").remove_notification_channel` method.
+Type annotations for
+`boto3.client("codeguruprofiler").remove_notification_channel` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel]
+Boto3 documentation:
+[CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
 
-```python
-def remove_notification_channel(
-    self,
-    channelId: str,
-    profilingGroupName: str
-) -> RemoveNotificationChannelResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `channelId`: `str` *(required)*
+- `profilingGroupName`: `str` *(required)*
+
+Returns
+[RemoveNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#removenotificationchannelresponsetypedef).
 
 ### remove_permission
 
-Type annotations for `boto3.client("codeguruprofiler").remove_permission` method.
+Type annotations for `boto3.client("codeguruprofiler").remove_permission`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission]
+Boto3 documentation:
+[CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
 
-```python
-def remove_permission(
-    self,
-    actionGroup: Literal['agentPermissions'],
-    profilingGroupName: str,
-    revisionId: str
-) -> RemovePermissionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `actionGroup`: `Literal['agentPermissions']` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `revisionId`: `str` *(required)*
+
+Returns
+[RemovePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#removepermissionresponsetypedef).
 
 ### submit_feedback
 
 Type annotations for `boto3.client("codeguruprofiler").submit_feedback` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback]
+Boto3 documentation:
+[CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
 
-```python
-def submit_feedback(
-    self,
-    anomalyInstanceId: str,
-    profilingGroupName: str,
-    type: FeedbackType,
-    comment: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `anomalyInstanceId`: `str` *(required)*
+- `profilingGroupName`: `str` *(required)*
+- `type`:
+  [FeedbackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#feedbacktype)
+  *(required)*
+- `comment`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("codeguruprofiler").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource]
+Boto3 documentation:
+[CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("codeguruprofiler").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource]
+Boto3 documentation:
+[CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_profiling_group
 
-Type annotations for `boto3.client("codeguruprofiler").update_profiling_group` method.
+Type annotations for `boto3.client("codeguruprofiler").update_profiling_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group]
+Boto3 documentation:
+[CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
 
-```python
-def update_profiling_group(
-    self,
-    agentOrchestrationConfig: "AgentOrchestrationConfigTypeDef",
-    profilingGroupName: str
-) -> UpdateProfilingGroupResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `agentOrchestrationConfig`:
+  [AgentOrchestrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentorchestrationconfigtypedef)
+  *(required)*
+- `profilingGroupName`: `str` *(required)*
 
+Returns
+[UpdateProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#updateprofilinggroupresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("codeguruprofiler").get_paginator` method with overloads.
+Type annotations for `boto3.client("codeguruprofiler").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_profile_times")` -> [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
-
-
+- `client.get_paginator("list_profile_times")` ->
+  [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)

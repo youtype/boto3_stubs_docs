@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SSO
 
-Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+Auto-generated documentation for
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+type annotations stubs module
+[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
 ```bash
 pip install mypy-boto3-sso
@@ -19,7 +21,7 @@ pip install mypy-boto3-sso
 
 ## SSOClient
 
-Type annotations for  `boto3.client("sso")` as [SSOClient](./client.md)
+Type annotations for `boto3.client("sso")` as [SSOClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_sso.client import SSOClient
 ```
 
-
 SSOClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [get_paginator](./client.md#get-paginator)
@@ -41,24 +41,18 @@ SSOClient [exceptions](./client.md#exceptions)
 - [list_accounts](./client.md#list-accounts)
 - [logout](./client.md#logout)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sso").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sso").get_paginator("...")`.
 
 Can be used directly:
 
@@ -68,11 +62,6 @@ from mypy_boto3_sso.paginators import ListAccountRolesPaginator, ...
 
 - [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
 - [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -87,13 +76,10 @@ from mypy_boto3_sso.literals import ListAccountRolesPaginatorName, ...
 - [ListAccountRolesPaginatorName](./literals.md#listaccountrolespaginatorname)
 - [ListAccountsPaginatorName](./literals.md#listaccountspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

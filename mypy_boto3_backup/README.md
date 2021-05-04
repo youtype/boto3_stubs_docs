@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Backup
 
-Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
-type annotations stubs module [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+Auto-generated documentation for
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+type annotations stubs module
+[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ```bash
 pip install mypy-boto3-backup
@@ -18,7 +20,7 @@ pip install mypy-boto3-backup
 
 ## BackupClient
 
-Type annotations for  `boto3.client("backup")` as [BackupClient](./client.md)
+Type annotations for `boto3.client("backup")` as [BackupClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_backup.client import BackupClient
 ```
 
-
 BackupClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_backup_plan](./client.md#create-backup-plan)
 - [create_backup_selection](./client.md#create-backup-selection)
@@ -86,10 +86,8 @@ BackupClient [exceptions](./client.md#exceptions)
 - [update_recovery_point_lifecycle](./client.md#update-recovery-point-lifecycle)
 - [update_region_settings](./client.md#update-region-settings)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [ClientError](./client.md#clienterror)
 - [DependencyFailureException](./client.md#dependencyfailureexception)
@@ -100,15 +98,6 @@ BackupClient [exceptions](./client.md#exceptions)
 - [MissingParameterValueException](./client.md#missingparametervalueexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -128,13 +117,10 @@ from mypy_boto3_backup.literals import BackupJobState, ...
 - [RestoreJobStatus](./literals.md#restorejobstatus)
 - [StorageClass](./literals.md#storageclass)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

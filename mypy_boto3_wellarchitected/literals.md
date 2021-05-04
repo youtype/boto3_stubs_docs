@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WellArchitected](./README.md) > Literals
 
-Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+Auto-generated documentation for
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+type annotations stubs module
+[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Literals for boto3 WellArchitected module](#literals-for-boto3-wellarchitected-module)
   - [DifferenceStatus](#differencestatus)

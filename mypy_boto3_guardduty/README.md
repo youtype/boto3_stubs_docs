@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > GuardDuty
 
-Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
-type annotations stubs module [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+Auto-generated documentation for
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+type annotations stubs module
+[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 ```bash
 pip install mypy-boto3-guardduty
@@ -19,7 +21,8 @@ pip install mypy-boto3-guardduty
 
 ## GuardDutyClient
 
-Type annotations for  `boto3.client("guardduty")` as [GuardDutyClient](./client.md)
+Type annotations for `boto3.client("guardduty")` as
+[GuardDutyClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_guardduty.client import GuardDutyClient
 ```
 
-
 GuardDutyClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_invitation](./client.md#accept-invitation)
 - [archive_findings](./client.md#archive-findings)
 - [can_paginate](./client.md#can-paginate)
@@ -95,22 +96,16 @@ GuardDutyClient [exceptions](./client.md#exceptions)
 - [update_publishing_destination](./client.md#update-publishing-destination)
 - [update_threat_intel_set](./client.md#update-threat-intel-set)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerErrorException](./client.md#internalservererrorexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("guardduty").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("guardduty").get_paginator("...")`.
 
 Can be used directly:
 
@@ -126,11 +121,6 @@ from mypy_boto3_guardduty.paginators import ListDetectorsPaginator, ...
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
 - [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -167,13 +157,10 @@ from mypy_boto3_guardduty.literals import AdminStatus, ...
 - [ThreatIntelSetStatus](./literals.md#threatintelsetstatus)
 - [UsageStatisticType](./literals.md#usagestatistictype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

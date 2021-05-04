@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > NimbleStudioClient
 
-Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+Auto-generated documentation for
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+type annotations stubs module
+[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [NimbleStudioClient for boto3 NimbleStudio module](#nimblestudioclient-for-boto3-nimblestudio-module)
   - [NimbleStudioClient](#nimblestudioclient)
@@ -71,12 +73,13 @@ def get_nimble_client() -> NimbleStudioClient:
     return boto3.client("nimble")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
+Boto3 documentation:
+[NimbleStudio.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_nimble.client import Exceptions
@@ -84,7 +87,6 @@ from mypy_boto3_nimble.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -97,812 +99,837 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### accept_eulas
 
 Type annotations for `boto3.client("nimble").accept_eulas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas]
+Boto3 documentation:
+[NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
 
-```python
-def accept_eulas(
-    self,
-    studioId: str,
-    clientToken: str = None,
-    eulaIds: List[str] = None
-) -> AcceptEulasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `eulaIds`: `List`\[`str`\]
+
+Returns
+[AcceptEulasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#accepteulasresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("nimble").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate]
+Boto3 documentation:
+[NimbleStudio.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_launch_profile
 
 Type annotations for `boto3.client("nimble").create_launch_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile]
+Boto3 documentation:
+[NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
 
-```python
-def create_launch_profile(
-    self,
-    ec2SubnetIds: List[str],
-    launchProfileProtocolVersions: List[str],
-    name: str,
-    streamConfiguration: StreamConfigurationCreateTypeDef,
-    studioComponentIds: List[str],
-    studioId: str,
-    clientToken: str = None,
-    description: str = None,
-    tags: Dict[str, str] = None
-) -> CreateLaunchProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ec2SubnetIds`: `List`\[`str`\] *(required)*
+- `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
+- `name`: `str` *(required)*
+- `streamConfiguration`:
+  [StreamConfigurationCreateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamconfigurationcreatetypedef)
+  *(required)*
+- `studioComponentIds`: `List`\[`str`\] *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `description`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateLaunchProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createlaunchprofileresponsetypedef).
 
 ### create_streaming_image
 
 Type annotations for `boto3.client("nimble").create_streaming_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image]
+Boto3 documentation:
+[NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
 
-```python
-def create_streaming_image(
-    self,
-    ec2ImageId: str,
-    name: str,
-    studioId: str,
-    clientToken: str = None,
-    description: str = None,
-    tags: Dict[str, str] = None
-) -> CreateStreamingImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ec2ImageId`: `str` *(required)*
+- `name`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `description`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStreamingImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createstreamingimageresponsetypedef).
 
 ### create_streaming_session
 
 Type annotations for `boto3.client("nimble").create_streaming_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session]
+Boto3 documentation:
+[NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
 
-```python
-def create_streaming_session(
-    self,
-    studioId: str,
-    clientToken: str = None,
-    ec2InstanceType: StreamingInstanceType = None,
-    launchProfileId: str = None,
-    streamingImageId: str = None,
-    tags: Dict[str, str] = None
-) -> CreateStreamingSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `ec2InstanceType`:
+  [StreamingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streaminginstancetype)
+- `launchProfileId`: `str`
+- `streamingImageId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStreamingSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createstreamingsessionresponsetypedef).
 
 ### create_streaming_session_stream
 
-Type annotations for `boto3.client("nimble").create_streaming_session_stream` method.
+Type annotations for `boto3.client("nimble").create_streaming_session_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream]
+Boto3 documentation:
+[NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
 
-```python
-def create_streaming_session_stream(
-    self,
-    sessionId: str,
-    studioId: str,
-    clientToken: str = None,
-    expirationInSeconds: int = None
-) -> CreateStreamingSessionStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sessionId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `expirationInSeconds`: `int`
+
+Returns
+[CreateStreamingSessionStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createstreamingsessionstreamresponsetypedef).
 
 ### create_studio
 
 Type annotations for `boto3.client("nimble").create_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio]
+Boto3 documentation:
+[NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
 
-```python
-def create_studio(
-    self,
-    adminRoleArn: str,
-    displayName: str,
-    studioName: str,
-    userRoleArn: str,
-    clientToken: str = None,
-    studioEncryptionConfiguration: "StudioEncryptionConfigurationTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateStudioResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `adminRoleArn`: `str` *(required)*
+- `displayName`: `str` *(required)*
+- `studioName`: `str` *(required)*
+- `userRoleArn`: `str` *(required)*
+- `clientToken`: `str`
+- `studioEncryptionConfiguration`:
+  [StudioEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studioencryptionconfigurationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStudioResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createstudioresponsetypedef).
 
 ### create_studio_component
 
 Type annotations for `boto3.client("nimble").create_studio_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component]
+Boto3 documentation:
+[NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
 
-```python
-def create_studio_component(
-    self,
-    name: str,
-    studioId: str,
-    type: StudioComponentType,
-    clientToken: str = None,
-    configuration: "StudioComponentConfigurationTypeDef" = None,
-    description: str = None,
-    ec2SecurityGroupIds: List[str] = None,
-    initializationScripts: List["StudioComponentInitializationScriptTypeDef"] = None,
-    scriptParameters: List["ScriptParameterKeyValueTypeDef"] = None,
-    subtype: StudioComponentSubtype = None,
-    tags: Dict[str, str] = None
-) -> CreateStudioComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `type`:
+  [StudioComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponenttype)
+  *(required)*
+- `clientToken`: `str`
+- `configuration`:
+  [StudioComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentconfigurationtypedef)
+- `description`: `str`
+- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `initializationScripts`:
+  `List`\[[StudioComponentInitializationScriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentinitializationscripttypedef)\]
+- `scriptParameters`:
+  `List`\[[ScriptParameterKeyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#scriptparameterkeyvaluetypedef)\]
+- `subtype`:
+  [StudioComponentSubtype](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentsubtype)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateStudioComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#createstudiocomponentresponsetypedef).
 
 ### delete_launch_profile
 
 Type annotations for `boto3.client("nimble").delete_launch_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile]
+Boto3 documentation:
+[NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
 
-```python
-def delete_launch_profile(
-    self,
-    launchProfileId: str,
-    studioId: str,
-    clientToken: str = None
-) -> DeleteLaunchProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteLaunchProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#deletelaunchprofileresponsetypedef).
 
 ### delete_launch_profile_member
 
-Type annotations for `boto3.client("nimble").delete_launch_profile_member` method.
+Type annotations for `boto3.client("nimble").delete_launch_profile_member`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member]
+Boto3 documentation:
+[NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
 
-```python
-def delete_launch_profile_member(
-    self,
-    launchProfileId: str,
-    principalId: str,
-    studioId: str,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `principalId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_streaming_image
 
 Type annotations for `boto3.client("nimble").delete_streaming_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image]
+Boto3 documentation:
+[NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
 
-```python
-def delete_streaming_image(
-    self,
-    streamingImageId: str,
-    studioId: str,
-    clientToken: str = None
-) -> DeleteStreamingImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `streamingImageId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteStreamingImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#deletestreamingimageresponsetypedef).
 
 ### delete_streaming_session
 
 Type annotations for `boto3.client("nimble").delete_streaming_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session]
+Boto3 documentation:
+[NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
 
-```python
-def delete_streaming_session(
-    self,
-    sessionId: str,
-    studioId: str,
-    clientToken: str = None
-) -> DeleteStreamingSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sessionId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteStreamingSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#deletestreamingsessionresponsetypedef).
 
 ### delete_studio
 
 Type annotations for `boto3.client("nimble").delete_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio]
+Boto3 documentation:
+[NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
 
-```python
-def delete_studio(
-    self,
-    studioId: str,
-    clientToken: str = None
-) -> DeleteStudioResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteStudioResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#deletestudioresponsetypedef).
 
 ### delete_studio_component
 
 Type annotations for `boto3.client("nimble").delete_studio_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component]
+Boto3 documentation:
+[NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
 
-```python
-def delete_studio_component(
-    self,
-    studioComponentId: str,
-    studioId: str,
-    clientToken: str = None
-) -> DeleteStudioComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioComponentId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[DeleteStudioComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#deletestudiocomponentresponsetypedef).
 
 ### delete_studio_member
 
 Type annotations for `boto3.client("nimble").delete_studio_member` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member]
+Boto3 documentation:
+[NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
 
-```python
-def delete_studio_member(
-    self,
-    principalId: str,
-    studioId: str,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `principalId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("nimble").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url]
+Boto3 documentation:
+[NimbleStudio.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_eula
 
 Type annotations for `boto3.client("nimble").get_eula` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula]
+Boto3 documentation:
+[NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
-```python
-def get_eula(
-    self,
-    eulaId: str
-) -> GetEulaResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eulaId`: `str` *(required)*
+
+Returns
+[GetEulaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#geteularesponsetypedef).
 
 ### get_launch_profile
 
 Type annotations for `boto3.client("nimble").get_launch_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile]
+Boto3 documentation:
+[NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
 
-```python
-def get_launch_profile(
-    self,
-    launchProfileId: str,
-    studioId: str
-) -> GetLaunchProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetLaunchProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getlaunchprofileresponsetypedef).
 
 ### get_launch_profile_details
 
-Type annotations for `boto3.client("nimble").get_launch_profile_details` method.
+Type annotations for `boto3.client("nimble").get_launch_profile_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details]
+Boto3 documentation:
+[NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
-```python
-def get_launch_profile_details(
-    self,
-    launchProfileId: str,
-    studioId: str
-) -> GetLaunchProfileDetailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetLaunchProfileDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getlaunchprofiledetailsresponsetypedef).
 
 ### get_launch_profile_initialization
 
-Type annotations for `boto3.client("nimble").get_launch_profile_initialization` method.
+Type annotations for `boto3.client("nimble").get_launch_profile_initialization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization]
+Boto3 documentation:
+[NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
 
-```python
-def get_launch_profile_initialization(
-    self,
-    launchProfileId: str,
-    launchProfileProtocolVersions: List[str],
-    launchPurpose: str,
-    platform: str,
-    studioId: str
-) -> GetLaunchProfileInitializationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
+- `launchPurpose`: `str` *(required)*
+- `platform`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetLaunchProfileInitializationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getlaunchprofileinitializationresponsetypedef).
 
 ### get_launch_profile_member
 
 Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member]
+Boto3 documentation:
+[NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
 
-```python
-def get_launch_profile_member(
-    self,
-    launchProfileId: str,
-    principalId: str,
-    studioId: str
-) -> GetLaunchProfileMemberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `principalId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetLaunchProfileMemberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getlaunchprofilememberresponsetypedef).
 
 ### get_streaming_image
 
 Type annotations for `boto3.client("nimble").get_streaming_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image]
+Boto3 documentation:
+[NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
 
-```python
-def get_streaming_image(
-    self,
-    streamingImageId: str,
-    studioId: str
-) -> GetStreamingImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `streamingImageId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStreamingImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstreamingimageresponsetypedef).
 
 ### get_streaming_session
 
 Type annotations for `boto3.client("nimble").get_streaming_session` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session]
+Boto3 documentation:
+[NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
 
-```python
-def get_streaming_session(
-    self,
-    sessionId: str,
-    studioId: str
-) -> GetStreamingSessionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sessionId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStreamingSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstreamingsessionresponsetypedef).
 
 ### get_streaming_session_stream
 
-Type annotations for `boto3.client("nimble").get_streaming_session_stream` method.
+Type annotations for `boto3.client("nimble").get_streaming_session_stream`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream]
+Boto3 documentation:
+[NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
 
-```python
-def get_streaming_session_stream(
-    self,
-    sessionId: str,
-    streamId: str,
-    studioId: str
-) -> GetStreamingSessionStreamResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sessionId`: `str` *(required)*
+- `streamId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStreamingSessionStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstreamingsessionstreamresponsetypedef).
 
 ### get_studio
 
 Type annotations for `boto3.client("nimble").get_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio]
+Boto3 documentation:
+[NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
-```python
-def get_studio(
-    self,
-    studioId: str
-) -> GetStudioResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStudioResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstudioresponsetypedef).
 
 ### get_studio_component
 
 Type annotations for `boto3.client("nimble").get_studio_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component]
+Boto3 documentation:
+[NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
 
-```python
-def get_studio_component(
-    self,
-    studioComponentId: str,
-    studioId: str
-) -> GetStudioComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioComponentId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStudioComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstudiocomponentresponsetypedef).
 
 ### get_studio_member
 
 Type annotations for `boto3.client("nimble").get_studio_member` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member]
+Boto3 documentation:
+[NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
 
-```python
-def get_studio_member(
-    self,
-    principalId: str,
-    studioId: str
-) -> GetStudioMemberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `principalId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+
+Returns
+[GetStudioMemberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#getstudiomemberresponsetypedef).
 
 ### list_eula_acceptances
 
 Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances]
+Boto3 documentation:
+[NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
 
-```python
-def list_eula_acceptances(
-    self,
-    studioId: str,
-    eulaIds: List[str] = None,
-    nextToken: str = None
-) -> ListEulaAcceptancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `eulaIds`: `List`\[`str`\]
+- `nextToken`: `str`
+
+Returns
+[ListEulaAcceptancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listeulaacceptancesresponsetypedef).
 
 ### list_eulas
 
 Type annotations for `boto3.client("nimble").list_eulas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas]
+Boto3 documentation:
+[NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
-```python
-def list_eulas(
-    self,
-    eulaIds: List[str] = None,
-    nextToken: str = None
-) -> ListEulasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `eulaIds`: `List`\[`str`\]
+- `nextToken`: `str`
+
+Returns
+[ListEulasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listeulasresponsetypedef).
 
 ### list_launch_profile_members
 
-Type annotations for `boto3.client("nimble").list_launch_profile_members` method.
+Type annotations for `boto3.client("nimble").list_launch_profile_members`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members]
+Boto3 documentation:
+[NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
 
-```python
-def list_launch_profile_members(
-    self,
-    launchProfileId: str,
-    studioId: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListLaunchProfileMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListLaunchProfileMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listlaunchprofilemembersresponsetypedef).
 
 ### list_launch_profiles
 
 Type annotations for `boto3.client("nimble").list_launch_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles]
+Boto3 documentation:
+[NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
 
-```python
-def list_launch_profiles(
-    self,
-    studioId: str,
-    maxResults: int = None,
-    nextToken: str = None,
-    principalId: str = None,
-    states: List[str] = None
-) -> ListLaunchProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `principalId`: `str`
+- `states`: `List`\[`str`\]
+
+Returns
+[ListLaunchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listlaunchprofilesresponsetypedef).
 
 ### list_streaming_images
 
 Type annotations for `boto3.client("nimble").list_streaming_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images]
+Boto3 documentation:
+[NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
 
-```python
-def list_streaming_images(
-    self,
-    studioId: str,
-    nextToken: str = None,
-    owner: str = None
-) -> ListStreamingImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `nextToken`: `str`
+- `owner`: `str`
+
+Returns
+[ListStreamingImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststreamingimagesresponsetypedef).
 
 ### list_streaming_sessions
 
 Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions]
+Boto3 documentation:
+[NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
 
-```python
-def list_streaming_sessions(
-    self,
-    studioId: str,
-    createdBy: str = None,
-    nextToken: str = None,
-    sessionIds: str = None
-) -> ListStreamingSessionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `createdBy`: `str`
+- `nextToken`: `str`
+- `sessionIds`: `str`
+
+Returns
+[ListStreamingSessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststreamingsessionsresponsetypedef).
 
 ### list_studio_components
 
 Type annotations for `boto3.client("nimble").list_studio_components` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components]
+Boto3 documentation:
+[NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
 
-```python
-def list_studio_components(
-    self,
-    studioId: str,
-    maxResults: int = None,
-    nextToken: str = None,
-    states: List[str] = None,
-    types: List[str] = None
-) -> ListStudioComponentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `states`: `List`\[`str`\]
+- `types`: `List`\[`str`\]
+
+Returns
+[ListStudioComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiocomponentsresponsetypedef).
 
 ### list_studio_members
 
 Type annotations for `boto3.client("nimble").list_studio_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members]
+Boto3 documentation:
+[NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
 
-```python
-def list_studio_members(
-    self,
-    studioId: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListStudioMembersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListStudioMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiomembersresponsetypedef).
 
 ### list_studios
 
 Type annotations for `boto3.client("nimble").list_studios` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios]
+Boto3 documentation:
+[NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
-```python
-def list_studios(
-    self,
-    nextToken: str = None
-) -> ListStudiosResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListStudiosResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiosresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource]
+Boto3 documentation:
+[NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_launch_profile_members
 
-Type annotations for `boto3.client("nimble").put_launch_profile_members` method.
+Type annotations for `boto3.client("nimble").put_launch_profile_members`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members]
+Boto3 documentation:
+[NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
 
-```python
-def put_launch_profile_members(
-    self,
-    identityStoreId: str,
-    launchProfileId: str,
-    members: List[NewLaunchProfileMemberTypeDef],
-    studioId: str,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `identityStoreId`: `str` *(required)*
+- `launchProfileId`: `str` *(required)*
+- `members`:
+  `List`\[[NewLaunchProfileMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#newlaunchprofilemembertypedef)\]
+  *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### put_studio_members
 
 Type annotations for `boto3.client("nimble").put_studio_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members]
+Boto3 documentation:
+[NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
 
-```python
-def put_studio_members(
-    self,
-    identityStoreId: str,
-    members: List[NewStudioMemberTypeDef],
-    studioId: str,
-    clientToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `identityStoreId`: `str` *(required)*
+- `members`:
+  `List`\[[NewStudioMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#newstudiomembertypedef)\]
+  *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_studio_sso_configuration_repair
 
-Type annotations for `boto3.client("nimble").start_studio_sso_configuration_repair` method.
+Type annotations for
+`boto3.client("nimble").start_studio_sso_configuration_repair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair]
+Boto3 documentation:
+[NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
 
-```python
-def start_studio_sso_configuration_repair(
-    self,
-    studioId: str,
-    clientToken: str = None
-) -> StartStudioSSOConfigurationRepairResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[StartStudioSSOConfigurationRepairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#startstudiossoconfigurationrepairresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("nimble").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource]
+Boto3 documentation:
+[NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("nimble").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource]
+Boto3 documentation:
+[NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_launch_profile
 
 Type annotations for `boto3.client("nimble").update_launch_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile]
+Boto3 documentation:
+[NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
 
-```python
-def update_launch_profile(
-    self,
-    launchProfileId: str,
-    studioId: str,
-    clientToken: str = None,
-    description: str = None,
-    launchProfileProtocolVersions: List[str] = None,
-    name: str = None,
-    streamConfiguration: StreamConfigurationCreateTypeDef = None,
-    studioComponentIds: List[str] = None
-) -> UpdateLaunchProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `description`: `str`
+- `launchProfileProtocolVersions`: `List`\[`str`\]
+- `name`: `str`
+- `streamConfiguration`:
+  [StreamConfigurationCreateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamconfigurationcreatetypedef)
+- `studioComponentIds`: `List`\[`str`\]
+
+Returns
+[UpdateLaunchProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#updatelaunchprofileresponsetypedef).
 
 ### update_launch_profile_member
 
-Type annotations for `boto3.client("nimble").update_launch_profile_member` method.
+Type annotations for `boto3.client("nimble").update_launch_profile_member`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member]
+Boto3 documentation:
+[NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
 
-```python
-def update_launch_profile_member(
-    self,
-    launchProfileId: str,
-    persona: Literal['USER'],
-    principalId: str,
-    studioId: str,
-    clientToken: str = None
-) -> UpdateLaunchProfileMemberResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `launchProfileId`: `str` *(required)*
+- `persona`: `Literal['USER']` *(required)*
+- `principalId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+
+Returns
+[UpdateLaunchProfileMemberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#updatelaunchprofilememberresponsetypedef).
 
 ### update_streaming_image
 
 Type annotations for `boto3.client("nimble").update_streaming_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image]
+Boto3 documentation:
+[NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
 
-```python
-def update_streaming_image(
-    self,
-    streamingImageId: str,
-    studioId: str,
-    clientToken: str = None,
-    description: str = None,
-    name: str = None
-) -> UpdateStreamingImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `streamingImageId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `description`: `str`
+- `name`: `str`
+
+Returns
+[UpdateStreamingImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#updatestreamingimageresponsetypedef).
 
 ### update_studio
 
 Type annotations for `boto3.client("nimble").update_studio` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio]
+Boto3 documentation:
+[NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
 
-```python
-def update_studio(
-    self,
-    studioId: str,
-    adminRoleArn: str = None,
-    clientToken: str = None,
-    displayName: str = None,
-    userRoleArn: str = None
-) -> UpdateStudioResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `studioId`: `str` *(required)*
+- `adminRoleArn`: `str`
+- `clientToken`: `str`
+- `displayName`: `str`
+- `userRoleArn`: `str`
+
+Returns
+[UpdateStudioResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#updatestudioresponsetypedef).
 
 ### update_studio_component
 
 Type annotations for `boto3.client("nimble").update_studio_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component]
+Boto3 documentation:
+[NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
 
-```python
-def update_studio_component(
-    self,
-    studioComponentId: str,
-    studioId: str,
-    clientToken: str = None,
-    configuration: "StudioComponentConfigurationTypeDef" = None,
-    description: str = None,
-    ec2SecurityGroupIds: List[str] = None,
-    initializationScripts: List["StudioComponentInitializationScriptTypeDef"] = None,
-    name: str = None,
-    scriptParameters: List["ScriptParameterKeyValueTypeDef"] = None,
-    subtype: StudioComponentSubtype = None,
-    type: StudioComponentType = None
-) -> UpdateStudioComponentResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `studioComponentId`: `str` *(required)*
+- `studioId`: `str` *(required)*
+- `clientToken`: `str`
+- `configuration`:
+  [StudioComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentconfigurationtypedef)
+- `description`: `str`
+- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `initializationScripts`:
+  `List`\[[StudioComponentInitializationScriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentinitializationscripttypedef)\]
+- `name`: `str`
+- `scriptParameters`:
+  `List`\[[ScriptParameterKeyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#scriptparameterkeyvaluetypedef)\]
+- `subtype`:
+  [StudioComponentSubtype](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentsubtype)
+- `type`:
+  [StudioComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponenttype)
 
+Returns
+[UpdateStudioComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#updatestudiocomponentresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("nimble").get_paginator` method with overloads.
+Type annotations for `boto3.client("nimble").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_eula_acceptances")` -> [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
-- `client.get_paginator("list_eulas")` -> [ListEulasPaginator](./paginators.md#listeulaspaginator)
-- `client.get_paginator("list_launch_profile_members")` -> [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
-- `client.get_paginator("list_launch_profiles")` -> [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
-- `client.get_paginator("list_streaming_images")` -> [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
-- `client.get_paginator("list_streaming_sessions")` -> [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
-- `client.get_paginator("list_studio_components")` -> [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
-- `client.get_paginator("list_studio_members")` -> [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
-- `client.get_paginator("list_studios")` -> [ListStudiosPaginator](./paginators.md#liststudiospaginator)
-
-
+- `client.get_paginator("list_eula_acceptances")` ->
+  [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
+- `client.get_paginator("list_eulas")` ->
+  [ListEulasPaginator](./paginators.md#listeulaspaginator)
+- `client.get_paginator("list_launch_profile_members")` ->
+  [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
+- `client.get_paginator("list_launch_profiles")` ->
+  [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
+- `client.get_paginator("list_streaming_images")` ->
+  [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
+- `client.get_paginator("list_streaming_sessions")` ->
+  [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
+- `client.get_paginator("list_studio_components")` ->
+  [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
+- `client.get_paginator("list_studio_members")` ->
+  [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
+- `client.get_paginator("list_studios")` ->
+  [ListStudiosPaginator](./paginators.md#liststudiospaginator)

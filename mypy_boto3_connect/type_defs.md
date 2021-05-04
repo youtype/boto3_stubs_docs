@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Connect](./README.md) > Structures
 
-Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+Auto-generated documentation for
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+type annotations stubs module
+[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
   - [AssociateInstanceStorageConfigResponseTypeDef](#associateinstancestorageconfigresponsetypedef)
@@ -129,12 +131,9 @@ type annotations stubs module [mypy_boto3_connect](https://pypi.org/project/mypy
 from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationId`: `str`
 
+- `AssociationId`: `str`
 
 ## AssociateSecurityKeyResponseTypeDef
 
@@ -142,12 +141,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import AssociateSecurityKeyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationId`: `str`
 
+- `AssociationId`: `str`
 
 ## AttributeTypeDef
 
@@ -155,13 +151,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import AttributeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeType`: `InstanceAttributeType`
-- `Value`: `str`
 
+- `AttributeType`:
+  [InstanceAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#instanceattributetype)
+- `Value`: `str`
 
 ## ChatMessageTypeDef
 
@@ -169,13 +163,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ChatMessageTypeDef
 ```
 
-
 Required fields:
+
 - `ContentType`: `str`
 - `Content`: `str`
-
-
-
 
 ## ContactFlowSummaryTypeDef
 
@@ -183,15 +174,13 @@ Required fields:
 from mypy_boto3_connect.type_defs import ContactFlowSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `ContactFlowType`: `ContactFlowType`
-
+- `ContactFlowType`:
+  [ContactFlowType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#contactflowtype)
 
 ## ContactFlowTypeDef
 
@@ -199,18 +188,16 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ContactFlowTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Type`: `ContactFlowType`
+- `Type`:
+  [ContactFlowType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#contactflowtype)
 - `Description`: `str`
 - `Content`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateContactFlowResponseTypeDef
 
@@ -218,13 +205,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateContactFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContactFlowId`: `str`
 - `ContactFlowArn`: `str`
-
 
 ## CreateInstanceResponseTypeDef
 
@@ -232,13 +216,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateInstanceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
-
 
 ## CreateIntegrationAssociationResponseTypeDef
 
@@ -246,13 +227,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateIntegrationAssociationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IntegrationAssociationId`: `str`
 - `IntegrationAssociationArn`: `str`
-
 
 ## CreateQueueResponseTypeDef
 
@@ -260,13 +238,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateQueueResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QueueArn`: `str`
 - `QueueId`: `str`
-
 
 ## CreateQuickConnectResponseTypeDef
 
@@ -274,13 +249,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateQuickConnectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuickConnectARN`: `str`
 - `QuickConnectId`: `str`
-
 
 ## CreateRoutingProfileResponseTypeDef
 
@@ -288,13 +260,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateRoutingProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoutingProfileArn`: `str`
 - `RoutingProfileId`: `str`
-
 
 ## CreateUseCaseResponseTypeDef
 
@@ -302,13 +271,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateUseCaseResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UseCaseId`: `str`
 - `UseCaseArn`: `str`
-
 
 ## CreateUserHierarchyGroupResponseTypeDef
 
@@ -316,13 +282,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HierarchyGroupId`: `str`
 - `HierarchyGroupArn`: `str`
-
 
 ## CreateUserResponseTypeDef
 
@@ -330,13 +293,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CreateUserResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UserId`: `str`
 - `UserArn`: `str`
-
 
 ## CredentialsTypeDef
 
@@ -344,15 +304,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CredentialsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AccessToken`: `str`
 - `AccessTokenExpiration`: `datetime`
 - `RefreshToken`: `str`
 - `RefreshTokenExpiration`: `datetime`
-
 
 ## CurrentMetricDataTypeDef
 
@@ -360,13 +317,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CurrentMetricDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metric`: `"CurrentMetricTypeDef"`
-- `Value`: `float`
 
+- `Metric`:
+  [CurrentMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#currentmetrictypedef)
+- `Value`: `float`
 
 ## CurrentMetricResultTypeDef
 
@@ -374,13 +329,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CurrentMetricResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `"DimensionsTypeDef"`
-- `Collections`: `List["CurrentMetricDataTypeDef"]`
 
+- `Dimensions`:
+  [DimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#dimensionstypedef)
+- `Collections`:
+  `List`\[[CurrentMetricDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#currentmetricdatatypedef)\]
 
 ## CurrentMetricTypeDef
 
@@ -388,13 +342,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import CurrentMetricTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `CurrentMetricName`
-- `Unit`: `Unit`
 
+- `Name`:
+  [CurrentMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#currentmetricname)
+- `Unit`:
+  [Unit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#unit)
 
 ## DescribeContactFlowResponseTypeDef
 
@@ -402,12 +355,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeContactFlowResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContactFlow`: `"ContactFlowTypeDef"`
 
+- `ContactFlow`:
+  [ContactFlowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#contactflowtypedef)
 
 ## DescribeHoursOfOperationResponseTypeDef
 
@@ -415,12 +366,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeHoursOfOperationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HoursOfOperation`: `"HoursOfOperationTypeDef"`
 
+- `HoursOfOperation`:
+  [HoursOfOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hoursofoperationtypedef)
 
 ## DescribeInstanceAttributeResponseTypeDef
 
@@ -428,12 +377,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeInstanceAttributeResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attribute`: `"AttributeTypeDef"`
 
+- `Attribute`:
+  [AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#attributetypedef)
 
 ## DescribeInstanceResponseTypeDef
 
@@ -441,12 +388,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeInstanceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Instance`: `"InstanceTypeDef"`
 
+- `Instance`:
+  [InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#instancetypedef)
 
 ## DescribeInstanceStorageConfigResponseTypeDef
 
@@ -454,12 +399,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StorageConfig`: `"InstanceStorageConfigTypeDef"`
 
+- `StorageConfig`:
+  [InstanceStorageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#instancestorageconfigtypedef)
 
 ## DescribeQueueResponseTypeDef
 
@@ -467,12 +410,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeQueueResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Queue`: `"QueueTypeDef"`
 
+- `Queue`:
+  [QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#queuetypedef)
 
 ## DescribeQuickConnectResponseTypeDef
 
@@ -480,12 +421,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeQuickConnectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `QuickConnect`: `"QuickConnectTypeDef"`
 
+- `QuickConnect`:
+  [QuickConnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#quickconnecttypedef)
 
 ## DescribeRoutingProfileResponseTypeDef
 
@@ -493,12 +432,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeRoutingProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RoutingProfile`: `"RoutingProfileTypeDef"`
 
+- `RoutingProfile`:
+  [RoutingProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#routingprofiletypedef)
 
 ## DescribeUserHierarchyGroupResponseTypeDef
 
@@ -506,12 +443,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HierarchyGroup`: `"HierarchyGroupTypeDef"`
 
+- `HierarchyGroup`:
+  [HierarchyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygrouptypedef)
 
 ## DescribeUserHierarchyStructureResponseTypeDef
 
@@ -519,12 +454,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HierarchyStructure`: `"HierarchyStructureTypeDef"`
 
+- `HierarchyStructure`:
+  [HierarchyStructureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchystructuretypedef)
 
 ## DescribeUserResponseTypeDef
 
@@ -532,12 +465,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DescribeUserResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `User`: `"UserTypeDef"`
 
+- `User`:
+  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#usertypedef)
 
 ## DimensionsTypeDef
 
@@ -545,13 +476,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import DimensionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Queue`: `"QueueReferenceTypeDef"`
-- `Channel`: `Channel`
 
+- `Queue`:
+  [QueueReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#queuereferencetypedef)
+- `Channel`:
+  [Channel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#channel)
 
 ## EncryptionConfigTypeDef
 
@@ -559,13 +489,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import EncryptionConfigTypeDef
 ```
 
-
 Required fields:
+
 - `EncryptionType`: `Literal['KMS']`
 - `KeyId`: `str`
-
-
-
 
 ## FiltersTypeDef
 
@@ -573,13 +500,11 @@ Required fields:
 from mypy_boto3_connect.type_defs import FiltersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Queues`: `List[str]`
-- `Channels`: `List[Channel]`
 
+- `Queues`: `List`\[`str`\]
+- `Channels`:
+  `List`\[[Channel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#channel)\]
 
 ## GetContactAttributesResponseTypeDef
 
@@ -587,12 +512,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import GetContactAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `Dict[str, str]`
 
+- `Attributes`: `Dict`\[`str`, `str`\]
 
 ## GetCurrentMetricDataResponseTypeDef
 
@@ -600,14 +522,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import GetCurrentMetricDataResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `MetricResults`: `List["CurrentMetricResultTypeDef"]`
-- `DataSnapshotTime`: `datetime`
 
+- `NextToken`: `str`
+- `MetricResults`:
+  `List`\[[CurrentMetricResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#currentmetricresulttypedef)\]
+- `DataSnapshotTime`: `datetime`
 
 ## GetFederationTokenResponseTypeDef
 
@@ -615,12 +535,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import GetFederationTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
 
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#credentialstypedef)
 
 ## GetMetricDataResponseTypeDef
 
@@ -628,13 +546,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import GetMetricDataResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `MetricResults`: `List["HistoricalMetricResultTypeDef"]`
 
+- `NextToken`: `str`
+- `MetricResults`:
+  `List`\[[HistoricalMetricResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#historicalmetricresulttypedef)\]
 
 ## HierarchyGroupSummaryTypeDef
 
@@ -642,14 +558,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## HierarchyGroupTypeDef
 
@@ -657,16 +570,14 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
 - `LevelId`: `str`
-- `HierarchyPath`: `"HierarchyPathTypeDef"`
-
+- `HierarchyPath`:
+  [HierarchyPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchypathtypedef)
 
 ## HierarchyLevelTypeDef
 
@@ -674,14 +585,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyLevelTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## HierarchyLevelUpdateTypeDef
 
@@ -689,12 +597,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyLevelUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-
-
-
 
 ## HierarchyPathTypeDef
 
@@ -702,16 +607,18 @@ Required fields:
 from mypy_boto3_connect.type_defs import HierarchyPathTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LevelOne`: `"HierarchyGroupSummaryTypeDef"`
-- `LevelTwo`: `"HierarchyGroupSummaryTypeDef"`
-- `LevelThree`: `"HierarchyGroupSummaryTypeDef"`
-- `LevelFour`: `"HierarchyGroupSummaryTypeDef"`
-- `LevelFive`: `"HierarchyGroupSummaryTypeDef"`
 
+- `LevelOne`:
+  [HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)
+- `LevelTwo`:
+  [HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)
+- `LevelThree`:
+  [HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)
+- `LevelFour`:
+  [HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)
+- `LevelFive`:
+  [HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)
 
 ## HierarchyStructureTypeDef
 
@@ -719,16 +626,18 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyStructureTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LevelOne`: `"HierarchyLevelTypeDef"`
-- `LevelTwo`: `"HierarchyLevelTypeDef"`
-- `LevelThree`: `"HierarchyLevelTypeDef"`
-- `LevelFour`: `"HierarchyLevelTypeDef"`
-- `LevelFive`: `"HierarchyLevelTypeDef"`
 
+- `LevelOne`:
+  [HierarchyLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchyleveltypedef)
+- `LevelTwo`:
+  [HierarchyLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchyleveltypedef)
+- `LevelThree`:
+  [HierarchyLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchyleveltypedef)
+- `LevelFour`:
+  [HierarchyLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchyleveltypedef)
+- `LevelFive`:
+  [HierarchyLevelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchyleveltypedef)
 
 ## HierarchyStructureUpdateTypeDef
 
@@ -736,16 +645,18 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HierarchyStructureUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LevelOne`: `"HierarchyLevelUpdateTypeDef"`
-- `LevelTwo`: `"HierarchyLevelUpdateTypeDef"`
-- `LevelThree`: `"HierarchyLevelUpdateTypeDef"`
-- `LevelFour`: `"HierarchyLevelUpdateTypeDef"`
-- `LevelFive`: `"HierarchyLevelUpdateTypeDef"`
 
+- `LevelOne`:
+  [HierarchyLevelUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchylevelupdatetypedef)
+- `LevelTwo`:
+  [HierarchyLevelUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchylevelupdatetypedef)
+- `LevelThree`:
+  [HierarchyLevelUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchylevelupdatetypedef)
+- `LevelFour`:
+  [HierarchyLevelUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchylevelupdatetypedef)
+- `LevelFive`:
+  [HierarchyLevelUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchylevelupdatetypedef)
 
 ## HistoricalMetricDataTypeDef
 
@@ -753,13 +664,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HistoricalMetricDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Metric`: `"HistoricalMetricTypeDef"`
-- `Value`: `float`
 
+- `Metric`:
+  [HistoricalMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#historicalmetrictypedef)
+- `Value`: `float`
 
 ## HistoricalMetricResultTypeDef
 
@@ -767,13 +676,12 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HistoricalMetricResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `"DimensionsTypeDef"`
-- `Collections`: `List["HistoricalMetricDataTypeDef"]`
 
+- `Dimensions`:
+  [DimensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#dimensionstypedef)
+- `Collections`:
+  `List`\[[HistoricalMetricDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#historicalmetricdatatypedef)\]
 
 ## HistoricalMetricTypeDef
 
@@ -781,15 +689,16 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HistoricalMetricTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `HistoricalMetricName`
-- `Threshold`: `"ThresholdTypeDef"`
-- `Statistic`: `Statistic`
-- `Unit`: `Unit`
 
+- `Name`:
+  [HistoricalMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#historicalmetricname)
+- `Threshold`:
+  [ThresholdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#thresholdtypedef)
+- `Statistic`:
+  [Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#statistic)
+- `Unit`:
+  [Unit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#unit)
 
 ## HoursOfOperationConfigTypeDef
 
@@ -797,14 +706,14 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Day`: `HoursOfOperationDays`
-- `StartTime`: `"HoursOfOperationTimeSliceTypeDef"`
-- `EndTime`: `"HoursOfOperationTimeSliceTypeDef"`
 
+- `Day`:
+  [HoursOfOperationDays](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#hoursofoperationdays)
+- `StartTime`:
+  [HoursOfOperationTimeSliceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hoursofoperationtimeslicetypedef)
+- `EndTime`:
+  [HoursOfOperationTimeSliceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hoursofoperationtimeslicetypedef)
 
 ## HoursOfOperationSummaryTypeDef
 
@@ -812,14 +721,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## HoursOfOperationTimeSliceTypeDef
 
@@ -827,13 +733,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationTimeSliceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Hours`: `int`
 - `Minutes`: `int`
-
 
 ## HoursOfOperationTypeDef
 
@@ -841,18 +744,16 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HoursOfOperationId`: `str`
 - `HoursOfOperationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `TimeZone`: `str`
-- `Config`: `List["HoursOfOperationConfigTypeDef"]`
-- `Tags`: `Dict[str, str]`
-
+- `Config`:
+  `List`\[[HoursOfOperationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hoursofoperationconfigtypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## InstanceStatusReasonTypeDef
 
@@ -860,12 +761,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import InstanceStatusReasonTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## InstanceStorageConfigTypeDef
 
@@ -873,19 +771,22 @@ Optional fields:
 from mypy_boto3_connect.type_defs import InstanceStorageConfigTypeDef
 ```
 
-
 Required fields:
-- `StorageType`: `StorageType`
 
-
+- `StorageType`:
+  [StorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#storagetype)
 
 Optional fields:
-- `AssociationId`: `str`
-- `S3Config`: `"S3ConfigTypeDef"`
-- `KinesisVideoStreamConfig`: `"KinesisVideoStreamConfigTypeDef"`
-- `KinesisStreamConfig`: `"KinesisStreamConfigTypeDef"`
-- `KinesisFirehoseConfig`: `"KinesisFirehoseConfigTypeDef"`
 
+- `AssociationId`: `str`
+- `S3Config`:
+  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#s3configtypedef)
+- `KinesisVideoStreamConfig`:
+  [KinesisVideoStreamConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#kinesisvideostreamconfigtypedef)
+- `KinesisStreamConfig`:
+  [KinesisStreamConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#kinesisstreamconfigtypedef)
+- `KinesisFirehoseConfig`:
+  [KinesisFirehoseConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#kinesisfirehoseconfigtypedef)
 
 ## InstanceSummaryTypeDef
 
@@ -893,20 +794,19 @@ Optional fields:
 from mypy_boto3_connect.type_defs import InstanceSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
-- `IdentityManagementType`: `DirectoryType`
+- `IdentityManagementType`:
+  [DirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#directorytype)
 - `InstanceAlias`: `str`
 - `CreatedTime`: `datetime`
 - `ServiceRole`: `str`
-- `InstanceStatus`: `InstanceStatus`
+- `InstanceStatus`:
+  [InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#instancestatus)
 - `InboundCallsEnabled`: `bool`
 - `OutboundCallsEnabled`: `bool`
-
 
 ## InstanceTypeDef
 
@@ -914,21 +814,21 @@ Optional fields:
 from mypy_boto3_connect.type_defs import InstanceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
-- `IdentityManagementType`: `DirectoryType`
+- `IdentityManagementType`:
+  [DirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#directorytype)
 - `InstanceAlias`: `str`
 - `CreatedTime`: `datetime`
 - `ServiceRole`: `str`
-- `InstanceStatus`: `InstanceStatus`
-- `StatusReason`: `"InstanceStatusReasonTypeDef"`
+- `InstanceStatus`:
+  [InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#instancestatus)
+- `StatusReason`:
+  [InstanceStatusReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#instancestatusreasontypedef)
 - `InboundCallsEnabled`: `bool`
 - `OutboundCallsEnabled`: `bool`
-
 
 ## IntegrationAssociationSummaryTypeDef
 
@@ -936,10 +836,8 @@ Optional fields:
 from mypy_boto3_connect.type_defs import IntegrationAssociationSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IntegrationAssociationId`: `str`
 - `IntegrationAssociationArn`: `str`
 - `InstanceId`: `str`
@@ -947,8 +845,8 @@ Optional fields:
 - `IntegrationArn`: `str`
 - `SourceApplicationUrl`: `str`
 - `SourceApplicationName`: `str`
-- `SourceType`: `SourceType`
-
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#sourcetype)
 
 ## KinesisFirehoseConfigTypeDef
 
@@ -956,12 +854,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import KinesisFirehoseConfigTypeDef
 ```
 
-
 Required fields:
+
 - `FirehoseArn`: `str`
-
-
-
 
 ## KinesisStreamConfigTypeDef
 
@@ -969,12 +864,9 @@ Required fields:
 from mypy_boto3_connect.type_defs import KinesisStreamConfigTypeDef
 ```
 
-
 Required fields:
+
 - `StreamArn`: `str`
-
-
-
 
 ## KinesisVideoStreamConfigTypeDef
 
@@ -982,14 +874,12 @@ Required fields:
 from mypy_boto3_connect.type_defs import KinesisVideoStreamConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Prefix`: `str`
 - `RetentionPeriodHours`: `int`
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
-
-
-
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#encryptionconfigtypedef)
 
 ## LexBotTypeDef
 
@@ -997,13 +887,10 @@ Required fields:
 from mypy_boto3_connect.type_defs import LexBotTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `LexRegion`: `str`
-
 
 ## ListApprovedOriginsResponseTypeDef
 
@@ -1011,13 +898,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListApprovedOriginsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Origins`: `List[str]`
-- `NextToken`: `str`
 
+- `Origins`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListContactFlowsResponseTypeDef
 
@@ -1025,13 +909,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListContactFlowsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContactFlowSummaryList`: `List["ContactFlowSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ContactFlowSummaryList`:
+  `List`\[[ContactFlowSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#contactflowsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListHoursOfOperationsResponseTypeDef
 
@@ -1039,13 +921,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListHoursOfOperationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HoursOfOperationSummaryList`: `List["HoursOfOperationSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `HoursOfOperationSummaryList`:
+  `List`\[[HoursOfOperationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hoursofoperationsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListInstanceAttributesResponseTypeDef
 
@@ -1053,13 +933,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListInstanceAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeTypeDef"]`
-- `NextToken`: `str`
 
+- `Attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#attributetypedef)\]
+- `NextToken`: `str`
 
 ## ListInstanceStorageConfigsResponseTypeDef
 
@@ -1067,13 +945,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StorageConfigs`: `List["InstanceStorageConfigTypeDef"]`
-- `NextToken`: `str`
 
+- `StorageConfigs`:
+  `List`\[[InstanceStorageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#instancestorageconfigtypedef)\]
+- `NextToken`: `str`
 
 ## ListInstancesResponseTypeDef
 
@@ -1081,13 +957,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListInstancesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceSummaryList`: `List["InstanceSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `InstanceSummaryList`:
+  `List`\[[InstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#instancesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListIntegrationAssociationsResponseTypeDef
 
@@ -1095,13 +969,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListIntegrationAssociationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IntegrationAssociationSummaryList`: `List["IntegrationAssociationSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `IntegrationAssociationSummaryList`:
+  `List`\[[IntegrationAssociationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#integrationassociationsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListLambdaFunctionsResponseTypeDef
 
@@ -1109,13 +981,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListLambdaFunctionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LambdaFunctions`: `List[str]`
-- `NextToken`: `str`
 
+- `LambdaFunctions`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListLexBotsResponseTypeDef
 
@@ -1123,13 +992,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListLexBotsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LexBots`: `List["LexBotTypeDef"]`
-- `NextToken`: `str`
 
+- `LexBots`:
+  `List`\[[LexBotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#lexbottypedef)\]
+- `NextToken`: `str`
 
 ## ListPhoneNumbersResponseTypeDef
 
@@ -1137,13 +1004,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListPhoneNumbersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PhoneNumberSummaryList`: `List["PhoneNumberSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PhoneNumberSummaryList`:
+  `List`\[[PhoneNumberSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#phonenumbersummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListPromptsResponseTypeDef
 
@@ -1151,13 +1016,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListPromptsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PromptSummaryList`: `List["PromptSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PromptSummaryList`:
+  `List`\[[PromptSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#promptsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListQueueQuickConnectsResponseTypeDef
 
@@ -1165,13 +1028,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListQueueQuickConnectsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `QuickConnectSummaryList`: `List["QuickConnectSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `QuickConnectSummaryList`:
+  `List`\[[QuickConnectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#quickconnectsummarytypedef)\]
 
 ## ListQueuesResponseTypeDef
 
@@ -1179,13 +1040,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListQueuesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `QueueSummaryList`: `List["QueueSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `QueueSummaryList`:
+  `List`\[[QueueSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#queuesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListQuickConnectsResponseTypeDef
 
@@ -1193,13 +1052,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListQuickConnectsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `QuickConnectSummaryList`: `List["QuickConnectSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `QuickConnectSummaryList`:
+  `List`\[[QuickConnectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#quickconnectsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListRoutingProfileQueuesResponseTypeDef
 
@@ -1207,13 +1064,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `RoutingProfileQueueConfigSummaryList`: `List["RoutingProfileQueueConfigSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `RoutingProfileQueueConfigSummaryList`:
+  `List`\[[RoutingProfileQueueConfigSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#routingprofilequeueconfigsummarytypedef)\]
 
 ## ListRoutingProfilesResponseTypeDef
 
@@ -1221,13 +1076,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListRoutingProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RoutingProfileSummaryList`: `List["RoutingProfileSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `RoutingProfileSummaryList`:
+  `List`\[[RoutingProfileSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#routingprofilesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListSecurityKeysResponseTypeDef
 
@@ -1235,13 +1088,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListSecurityKeysResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SecurityKeys`: `List["SecurityKeyTypeDef"]`
-- `NextToken`: `str`
 
+- `SecurityKeys`:
+  `List`\[[SecurityKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#securitykeytypedef)\]
+- `NextToken`: `str`
 
 ## ListSecurityProfilesResponseTypeDef
 
@@ -1249,13 +1100,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListSecurityProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SecurityProfileSummaryList`: `List["SecurityProfileSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `SecurityProfileSummaryList`:
+  `List`\[[SecurityProfileSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#securityprofilesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1263,12 +1112,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ListUseCasesResponseTypeDef
 
@@ -1276,13 +1122,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListUseCasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UseCaseSummaryList`: `List["UseCaseTypeDef"]`
-- `NextToken`: `str`
 
+- `UseCaseSummaryList`:
+  `List`\[[UseCaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#usecasetypedef)\]
+- `NextToken`: `str`
 
 ## ListUserHierarchyGroupsResponseTypeDef
 
@@ -1290,13 +1134,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserHierarchyGroupSummaryList`: `List["HierarchyGroupSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `UserHierarchyGroupSummaryList`:
+  `List`\[[HierarchyGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#hierarchygroupsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListUsersResponseTypeDef
 
@@ -1304,13 +1146,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ListUsersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UserSummaryList`: `List["UserSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `UserSummaryList`:
+  `List`\[[UserSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#usersummarytypedef)\]
+- `NextToken`: `str`
 
 ## MediaConcurrencyTypeDef
 
@@ -1318,13 +1158,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import MediaConcurrencyTypeDef
 ```
 
-
 Required fields:
-- `Channel`: `Channel`
+
+- `Channel`:
+  [Channel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#channel)
 - `Concurrency`: `int`
-
-
-
 
 ## OutboundCallerConfigTypeDef
 
@@ -1332,14 +1170,11 @@ Required fields:
 from mypy_boto3_connect.type_defs import OutboundCallerConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OutboundCallerIdName`: `str`
 - `OutboundCallerIdNumberId`: `str`
 - `OutboundFlowId`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -1347,14 +1182,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParticipantDetailsTypeDef
 
@@ -1362,12 +1194,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ParticipantDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `DisplayName`: `str`
-
-
-
 
 ## PhoneNumberQuickConnectConfigTypeDef
 
@@ -1375,12 +1204,9 @@ Required fields:
 from mypy_boto3_connect.type_defs import PhoneNumberQuickConnectConfigTypeDef
 ```
 
-
 Required fields:
+
 - `PhoneNumber`: `str`
-
-
-
 
 ## PhoneNumberSummaryTypeDef
 
@@ -1388,16 +1214,15 @@ Required fields:
 from mypy_boto3_connect.type_defs import PhoneNumberSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `PhoneNumber`: `str`
-- `PhoneNumberType`: `PhoneNumberType`
-- `PhoneNumberCountryCode`: `PhoneNumberCountryCode`
-
+- `PhoneNumberType`:
+  [PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#phonenumbertype)
+- `PhoneNumberCountryCode`:
+  [PhoneNumberCountryCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#phonenumbercountrycode)
 
 ## PromptSummaryTypeDef
 
@@ -1405,14 +1230,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import PromptSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## QueueQuickConnectConfigTypeDef
 
@@ -1420,13 +1242,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QueueQuickConnectConfigTypeDef
 ```
 
-
 Required fields:
+
 - `QueueId`: `str`
 - `ContactFlowId`: `str`
-
-
-
 
 ## QueueReferenceTypeDef
 
@@ -1434,13 +1253,10 @@ Required fields:
 from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
-
 
 ## QueueSummaryTypeDef
 
@@ -1448,15 +1264,13 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QueueSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `QueueType`: `QueueType`
-
+- `QueueType`:
+  [QueueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#queuetype)
 
 ## QueueTypeDef
 
@@ -1464,20 +1278,19 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QueueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `QueueArn`: `str`
 - `QueueId`: `str`
 - `Description`: `str`
-- `OutboundCallerConfig`: `"OutboundCallerConfigTypeDef"`
+- `OutboundCallerConfig`:
+  [OutboundCallerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#outboundcallerconfigtypedef)
 - `HoursOfOperationId`: `str`
 - `MaxContacts`: `int`
-- `Status`: `QueueStatus`
-- `Tags`: `Dict[str, str]`
-
+- `Status`:
+  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#queuestatus)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## QuickConnectConfigTypeDef
 
@@ -1485,17 +1298,19 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QuickConnectConfigTypeDef
 ```
 
-
 Required fields:
-- `QuickConnectType`: `QuickConnectType`
 
-
+- `QuickConnectType`:
+  [QuickConnectType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#quickconnecttype)
 
 Optional fields:
-- `UserConfig`: `"UserQuickConnectConfigTypeDef"`
-- `QueueConfig`: `"QueueQuickConnectConfigTypeDef"`
-- `PhoneConfig`: `"PhoneNumberQuickConnectConfigTypeDef"`
 
+- `UserConfig`:
+  [UserQuickConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#userquickconnectconfigtypedef)
+- `QueueConfig`:
+  [QueueQuickConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#queuequickconnectconfigtypedef)
+- `PhoneConfig`:
+  [PhoneNumberQuickConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#phonenumberquickconnectconfigtypedef)
 
 ## QuickConnectSummaryTypeDef
 
@@ -1503,15 +1318,13 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QuickConnectSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `QuickConnectType`: `QuickConnectType`
-
+- `QuickConnectType`:
+  [QuickConnectType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#quickconnecttype)
 
 ## QuickConnectTypeDef
 
@@ -1519,17 +1332,15 @@ Optional fields:
 from mypy_boto3_connect.type_defs import QuickConnectTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `QuickConnectARN`: `str`
 - `QuickConnectId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `QuickConnectConfig`: `"QuickConnectConfigTypeDef"`
-- `Tags`: `Dict[str, str]`
-
+- `QuickConnectConfig`:
+  [QuickConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#quickconnectconfigtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ReferenceTypeDef
 
@@ -1537,13 +1348,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ReferenceTypeDef
 ```
 
-
 Required fields:
+
 - `Value`: `str`
 - `Type`: `Literal['URL']`
-
-
-
 
 ## RoutingProfileQueueConfigSummaryTypeDef
 
@@ -1551,17 +1359,15 @@ Required fields:
 from mypy_boto3_connect.type_defs import RoutingProfileQueueConfigSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `QueueId`: `str`
 - `QueueArn`: `str`
 - `QueueName`: `str`
 - `Priority`: `int`
 - `Delay`: `int`
-- `Channel`: `Channel`
-
-
-
+- `Channel`:
+  [Channel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#channel)
 
 ## RoutingProfileQueueConfigTypeDef
 
@@ -1569,14 +1375,12 @@ Required fields:
 from mypy_boto3_connect.type_defs import RoutingProfileQueueConfigTypeDef
 ```
 
-
 Required fields:
-- `QueueReference`: `"RoutingProfileQueueReferenceTypeDef"`
+
+- `QueueReference`:
+  [RoutingProfileQueueReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#routingprofilequeuereferencetypedef)
 - `Priority`: `int`
 - `Delay`: `int`
-
-
-
 
 ## RoutingProfileQueueReferenceTypeDef
 
@@ -1584,13 +1388,11 @@ Required fields:
 from mypy_boto3_connect.type_defs import RoutingProfileQueueReferenceTypeDef
 ```
 
-
 Required fields:
+
 - `QueueId`: `str`
-- `Channel`: `Channel`
-
-
-
+- `Channel`:
+  [Channel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#channel)
 
 ## RoutingProfileSummaryTypeDef
 
@@ -1598,14 +1400,11 @@ Required fields:
 from mypy_boto3_connect.type_defs import RoutingProfileSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## RoutingProfileTypeDef
 
@@ -1613,19 +1412,17 @@ Optional fields:
 from mypy_boto3_connect.type_defs import RoutingProfileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceId`: `str`
 - `Name`: `str`
 - `RoutingProfileArn`: `str`
 - `RoutingProfileId`: `str`
 - `Description`: `str`
-- `MediaConcurrencies`: `List["MediaConcurrencyTypeDef"]`
+- `MediaConcurrencies`:
+  `List`\[[MediaConcurrencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#mediaconcurrencytypedef)\]
 - `DefaultOutboundQueueId`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## S3ConfigTypeDef
 
@@ -1633,16 +1430,15 @@ Optional fields:
 from mypy_boto3_connect.type_defs import S3ConfigTypeDef
 ```
 
-
 Required fields:
+
 - `BucketName`: `str`
 - `BucketPrefix`: `str`
 
-
-
 Optional fields:
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
 
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#encryptionconfigtypedef)
 
 ## SecurityKeyTypeDef
 
@@ -1650,14 +1446,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import SecurityKeyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `Key`: `str`
 - `CreationTime`: `datetime`
-
 
 ## SecurityProfileSummaryTypeDef
 
@@ -1665,14 +1458,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import SecurityProfileSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-
 
 ## StartChatContactResponseTypeDef
 
@@ -1680,14 +1470,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import StartChatContactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ContactId`: `str`
 - `ParticipantId`: `str`
 - `ParticipantToken`: `str`
-
 
 ## StartOutboundVoiceContactResponseTypeDef
 
@@ -1695,12 +1482,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import StartOutboundVoiceContactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContactId`: `str`
 
+- `ContactId`: `str`
 
 ## StartTaskContactResponseTypeDef
 
@@ -1708,12 +1492,9 @@ Optional fields:
 from mypy_boto3_connect.type_defs import StartTaskContactResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContactId`: `str`
 
+- `ContactId`: `str`
 
 ## ThresholdTypeDef
 
@@ -1721,13 +1502,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import ThresholdTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Comparison`: `Literal['LT']`
 - `ThresholdValue`: `float`
-
 
 ## UseCaseTypeDef
 
@@ -1735,14 +1513,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import UseCaseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UseCaseId`: `str`
 - `UseCaseArn`: `str`
 - `UseCaseType`: `Literal['RULES_EVALUATION']`
-
 
 ## UserIdentityInfoTypeDef
 
@@ -1750,14 +1525,11 @@ Optional fields:
 from mypy_boto3_connect.type_defs import UserIdentityInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FirstName`: `str`
 - `LastName`: `str`
 - `Email`: `str`
-
 
 ## UserPhoneConfigTypeDef
 
@@ -1765,17 +1537,16 @@ Optional fields:
 from mypy_boto3_connect.type_defs import UserPhoneConfigTypeDef
 ```
 
-
 Required fields:
-- `PhoneType`: `PhoneType`
 
-
+- `PhoneType`:
+  [PhoneType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#phonetype)
 
 Optional fields:
+
 - `AutoAccept`: `bool`
 - `AfterContactWorkTimeLimit`: `int`
 - `DeskPhoneNumber`: `str`
-
 
 ## UserQuickConnectConfigTypeDef
 
@@ -1783,13 +1554,10 @@ Optional fields:
 from mypy_boto3_connect.type_defs import UserQuickConnectConfigTypeDef
 ```
 
-
 Required fields:
+
 - `UserId`: `str`
 - `ContactFlowId`: `str`
-
-
-
 
 ## UserSummaryTypeDef
 
@@ -1797,14 +1565,11 @@ Required fields:
 from mypy_boto3_connect.type_defs import UserSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Username`: `str`
-
 
 ## UserTypeDef
 
@@ -1812,21 +1577,20 @@ Optional fields:
 from mypy_boto3_connect.type_defs import UserTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
 - `Username`: `str`
-- `IdentityInfo`: `"UserIdentityInfoTypeDef"`
-- `PhoneConfig`: `"UserPhoneConfigTypeDef"`
+- `IdentityInfo`:
+  [UserIdentityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#useridentityinfotypedef)
+- `PhoneConfig`:
+  [UserPhoneConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#userphoneconfigtypedef)
 - `DirectoryUserId`: `str`
-- `SecurityProfileIds`: `List[str]`
+- `SecurityProfileIds`: `List`\[`str`\]
 - `RoutingProfileId`: `str`
 - `HierarchyGroupId`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## VoiceRecordingConfigurationTypeDef
 
@@ -1834,9 +1598,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import VoiceRecordingConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VoiceRecordingTrack`: `VoiceRecordingTrack`
 
+- `VoiceRecordingTrack`:
+  [VoiceRecordingTrack](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#voicerecordingtrack)

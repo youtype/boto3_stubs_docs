@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [OpsWorksCM](./README.md) > OpsWorksCMClient
 
-Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+Auto-generated documentation for
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+type annotations stubs module
+[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [OpsWorksCMClient for boto3 OpsWorksCM module](#opsworkscmclient-for-boto3-opsworkscm-module)
   - [OpsWorksCMClient](#opsworkscmclient)
@@ -46,12 +48,13 @@ def get_opsworkscm_client() -> OpsWorksCMClient:
     return boto3.client("opsworkscm")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
+Boto3 documentation:
+[OpsWorksCM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_opsworkscm.client import Exceptions
@@ -59,7 +62,6 @@ from mypy_boto3_opsworkscm.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -71,372 +73,378 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_node
 
 Type annotations for `boto3.client("opsworkscm").associate_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node]
+Boto3 documentation:
+[OpsWorksCM.Client.associate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node)
 
-```python
-def associate_node(
-    self,
-    ServerName: str,
-    NodeName: str,
-    EngineAttributes: List["EngineAttributeTypeDef"]
-) -> AssociateNodeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `NodeName`: `str` *(required)*
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  *(required)*
+
+Returns
+[AssociateNodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#associatenoderesponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("opsworkscm").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate]
+Boto3 documentation:
+[OpsWorksCM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_backup
 
 Type annotations for `boto3.client("opsworkscm").create_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup]
+Boto3 documentation:
+[OpsWorksCM.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup)
 
-```python
-def create_backup(
-    self,
-    ServerName: str,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateBackupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#createbackupresponsetypedef).
 
 ### create_server
 
 Type annotations for `boto3.client("opsworkscm").create_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server]
+Boto3 documentation:
+[OpsWorksCM.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server)
 
-```python
-def create_server(
-    self,
-    Engine: str,
-    ServerName: str,
-    InstanceProfileArn: str,
-    InstanceType: str,
-    ServiceRoleArn: str,
-    AssociatePublicIpAddress: bool = None,
-    CustomDomain: str = None,
-    CustomCertificate: str = None,
-    CustomPrivateKey: str = None,
-    DisableAutomatedBackup: bool = None,
-    EngineModel: str = None,
-    EngineVersion: str = None,
-    EngineAttributes: List["EngineAttributeTypeDef"] = None,
-    BackupRetentionCount: int = None,
-    KeyPair: str = None,
-    PreferredMaintenanceWindow: str = None,
-    PreferredBackupWindow: str = None,
-    SecurityGroupIds: List[str] = None,
-    SubnetIds: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    BackupId: str = None
-) -> CreateServerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Engine`: `str` *(required)*
+- `ServerName`: `str` *(required)*
+- `InstanceProfileArn`: `str` *(required)*
+- `InstanceType`: `str` *(required)*
+- `ServiceRoleArn`: `str` *(required)*
+- `AssociatePublicIpAddress`: `bool`
+- `CustomDomain`: `str`
+- `CustomCertificate`: `str`
+- `CustomPrivateKey`: `str`
+- `DisableAutomatedBackup`: `bool`
+- `EngineModel`: `str`
+- `EngineVersion`: `str`
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+- `BackupRetentionCount`: `int`
+- `KeyPair`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `PreferredBackupWindow`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+- `BackupId`: `str`
+
+Returns
+[CreateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#createserverresponsetypedef).
 
 ### delete_backup
 
 Type annotations for `boto3.client("opsworkscm").delete_backup` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup]
+Boto3 documentation:
+[OpsWorksCM.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup)
 
-```python
-def delete_backup(
-    self,
-    BackupId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_server
 
 Type annotations for `boto3.client("opsworkscm").delete_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server]
+Boto3 documentation:
+[OpsWorksCM.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server)
 
-```python
-def delete_server(
-    self,
-    ServerName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_attributes
 
-Type annotations for `boto3.client("opsworkscm").describe_account_attributes` method.
+Type annotations for `boto3.client("opsworkscm").describe_account_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes]
+Boto3 documentation:
+[OpsWorksCM.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes)
 
-```python
-def describe_account_attributes(
-    self
-) -> DescribeAccountAttributesResponseTypeDef:
-    pass
-```
+Returns
+[DescribeAccountAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeaccountattributesresponsetypedef).
 
 ### describe_backups
 
 Type annotations for `boto3.client("opsworkscm").describe_backups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups]
+Boto3 documentation:
+[OpsWorksCM.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups)
 
-```python
-def describe_backups(
-    self,
-    BackupId: str = None,
-    ServerName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeBackupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str`
+- `ServerName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describebackupsresponsetypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("opsworkscm").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events]
+Boto3 documentation:
+[OpsWorksCM.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    ServerName: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeeventsresponsetypedef).
 
 ### describe_node_association_status
 
-Type annotations for `boto3.client("opsworkscm").describe_node_association_status` method.
+Type annotations for
+`boto3.client("opsworkscm").describe_node_association_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status]
+Boto3 documentation:
+[OpsWorksCM.Client.describe_node_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status)
 
-```python
-def describe_node_association_status(
-    self,
-    NodeAssociationStatusToken: str,
-    ServerName: str
-) -> DescribeNodeAssociationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NodeAssociationStatusToken`: `str` *(required)*
+- `ServerName`: `str` *(required)*
+
+Returns
+[DescribeNodeAssociationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describenodeassociationstatusresponsetypedef).
 
 ### describe_servers
 
 Type annotations for `boto3.client("opsworkscm").describe_servers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers]
+Boto3 documentation:
+[OpsWorksCM.Client.describe_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers)
 
-```python
-def describe_servers(
-    self,
-    ServerName: str = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> DescribeServersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeserversresponsetypedef).
 
 ### disassociate_node
 
 Type annotations for `boto3.client("opsworkscm").disassociate_node` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node]
+Boto3 documentation:
+[OpsWorksCM.Client.disassociate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node)
 
-```python
-def disassociate_node(
-    self,
-    ServerName: str,
-    NodeName: str,
-    EngineAttributes: List["EngineAttributeTypeDef"] = None
-) -> DisassociateNodeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `NodeName`: `str` *(required)*
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+
+Returns
+[DisassociateNodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#disassociatenoderesponsetypedef).
 
 ### export_server_engine_attribute
 
-Type annotations for `boto3.client("opsworkscm").export_server_engine_attribute` method.
+Type annotations for
+`boto3.client("opsworkscm").export_server_engine_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute]
+Boto3 documentation:
+[OpsWorksCM.Client.export_server_engine_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute)
 
-```python
-def export_server_engine_attribute(
-    self,
-    ExportAttributeName: str,
-    ServerName: str,
-    InputAttributes: List["EngineAttributeTypeDef"] = None
-) -> ExportServerEngineAttributeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ExportAttributeName`: `str` *(required)*
+- `ServerName`: `str` *(required)*
+- `InputAttributes`:
+  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+
+Returns
+[ExportServerEngineAttributeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#exportserverengineattributeresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("opsworkscm").generate_presigned_url` method.
+Type annotations for `boto3.client("opsworkscm").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url]
+Boto3 documentation:
+[OpsWorksCM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("opsworkscm").list_tags_for_resource` method.
+Type annotations for `boto3.client("opsworkscm").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource]
+Boto3 documentation:
+[OpsWorksCM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### restore_server
 
 Type annotations for `boto3.client("opsworkscm").restore_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server]
+Boto3 documentation:
+[OpsWorksCM.Client.restore_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server)
 
-```python
-def restore_server(
-    self,
-    BackupId: str,
-    ServerName: str,
-    InstanceType: str = None,
-    KeyPair: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `BackupId`: `str` *(required)*
+- `ServerName`: `str` *(required)*
+- `InstanceType`: `str`
+- `KeyPair`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_maintenance
 
 Type annotations for `boto3.client("opsworkscm").start_maintenance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance]
+Boto3 documentation:
+[OpsWorksCM.Client.start_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance)
 
-```python
-def start_maintenance(
-    self,
-    ServerName: str,
-    EngineAttributes: List["EngineAttributeTypeDef"] = None
-) -> StartMaintenanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+
+Returns
+[StartMaintenanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#startmaintenanceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("opsworkscm").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource]
+Boto3 documentation:
+[OpsWorksCM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("opsworkscm").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource]
+Boto3 documentation:
+[OpsWorksCM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_server
 
 Type annotations for `boto3.client("opsworkscm").update_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server]
+Boto3 documentation:
+[OpsWorksCM.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server)
 
-```python
-def update_server(
-    self,
-    ServerName: str,
-    DisableAutomatedBackup: bool = None,
-    BackupRetentionCount: int = None,
-    PreferredMaintenanceWindow: str = None,
-    PreferredBackupWindow: str = None
-) -> UpdateServerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerName`: `str` *(required)*
+- `DisableAutomatedBackup`: `bool`
+- `BackupRetentionCount`: `int`
+- `PreferredMaintenanceWindow`: `str`
+- `PreferredBackupWindow`: `str`
+
+Returns
+[UpdateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#updateserverresponsetypedef).
 
 ### update_server_engine_attributes
 
-Type annotations for `boto3.client("opsworkscm").update_server_engine_attributes` method.
+Type annotations for
+`boto3.client("opsworkscm").update_server_engine_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes]
+Boto3 documentation:
+[OpsWorksCM.Client.update_server_engine_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes)
 
-```python
-def update_server_engine_attributes(
-    self,
-    ServerName: str,
-    AttributeName: str,
-    AttributeValue: str = None
-) -> UpdateServerEngineAttributesResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ServerName`: `str` *(required)*
+- `AttributeName`: `str` *(required)*
+- `AttributeValue`: `str`
 
+Returns
+[UpdateServerEngineAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#updateserverengineattributesresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("opsworkscm").get_paginator` method with overloads.
+Type annotations for `boto3.client("opsworkscm").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_backups")` -> [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_servers")` -> [DescribeServersPaginator](./paginators.md#describeserverspaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
-
+- `client.get_paginator("describe_backups")` ->
+  [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_servers")` ->
+  [DescribeServersPaginator](./paginators.md#describeserverspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("opsworkscm").get_waiter` method with overloads.
+Type annotations for `boto3.client("opsworkscm").get_waiter` method with
+overloads.
 
-- `client.get_waiter("node_associated")` -> [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)
+- `client.get_waiter("node_associated")` ->
+  [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DynamoDB](./README.md) > Structures
 
-Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+Auto-generated documentation for
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+type annotations stubs module
+[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Typed dictionaries for boto3 DynamoDB module](#typed-dictionaries-for-boto3-dynamodb-module)
   - [ArchivalSummaryTypeDef](#archivalsummarytypedef)
@@ -155,14 +157,11 @@ type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/myp
 from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ArchivalDateTime`: `datetime`
 - `ArchivalReason`: `str`
 - `ArchivalBackupArn`: `str`
-
 
 ## AttributeDefinitionTypeDef
 
@@ -170,13 +169,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AttributeDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `AttributeName`: `str`
-- `AttributeType`: `ScalarAttributeType`
-
-
-
+- `AttributeType`:
+  [ScalarAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#scalarattributetype)
 
 ## AttributeValueUpdateTypeDef
 
@@ -184,13 +181,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import AttributeValueUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]`
-- `Action`: `AttributeAction`
 
+- `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
+  `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
+- `Action`:
+  [AttributeAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#attributeaction)
 
 ## AutoScalingPolicyDescriptionTypeDef
 
@@ -198,13 +195,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingPolicyDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyName`: `str`
-- `TargetTrackingScalingPolicyConfiguration`: `"AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef"`
 
+- `PolicyName`: `str`
+- `TargetTrackingScalingPolicyConfiguration`:
+  [AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef)
 
 ## AutoScalingPolicyUpdateTypeDef
 
@@ -212,15 +207,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingPolicyUpdateTypeDef
 ```
 
-
 Required fields:
-- `TargetTrackingScalingPolicyConfiguration`: `"AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef"`
 
-
+- `TargetTrackingScalingPolicyConfiguration`:
+  [AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef)
 
 Optional fields:
-- `PolicyName`: `str`
 
+- `PolicyName`: `str`
 
 ## AutoScalingSettingsDescriptionTypeDef
 
@@ -228,16 +222,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingSettingsDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MinimumUnits`: `int`
 - `MaximumUnits`: `int`
 - `AutoScalingDisabled`: `bool`
 - `AutoScalingRoleArn`: `str`
-- `ScalingPolicies`: `List["AutoScalingPolicyDescriptionTypeDef"]`
-
+- `ScalingPolicies`:
+  `List`\[[AutoScalingPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingpolicydescriptiontypedef)\]
 
 ## AutoScalingSettingsUpdateTypeDef
 
@@ -245,16 +237,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingSettingsUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MinimumUnits`: `int`
 - `MaximumUnits`: `int`
 - `AutoScalingDisabled`: `bool`
 - `AutoScalingRoleArn`: `str`
-- `ScalingPolicyUpdate`: `"AutoScalingPolicyUpdateTypeDef"`
-
+- `ScalingPolicyUpdate`:
+  [AutoScalingPolicyUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingpolicyupdatetypedef)
 
 ## AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef
 
@@ -262,17 +252,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `TargetValue`: `float`
 
-
-
 Optional fields:
+
 - `DisableScaleIn`: `bool`
 - `ScaleInCooldown`: `int`
 - `ScaleOutCooldown`: `int`
-
 
 ## AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef
 
@@ -280,17 +268,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `TargetValue`: `float`
 
-
-
 Optional fields:
+
 - `DisableScaleIn`: `bool`
 - `ScaleInCooldown`: `int`
 - `ScaleOutCooldown`: `int`
-
 
 ## BackupDescriptionTypeDef
 
@@ -298,14 +284,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BackupDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BackupDetails`: `"BackupDetailsTypeDef"`
-- `SourceTableDetails`: `"SourceTableDetailsTypeDef"`
-- `SourceTableFeatureDetails`: `"SourceTableFeatureDetailsTypeDef"`
 
+- `BackupDetails`:
+  [BackupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#backupdetailstypedef)
+- `SourceTableDetails`:
+  [SourceTableDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#sourcetabledetailstypedef)
+- `SourceTableFeatureDetails`:
+  [SourceTableFeatureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#sourcetablefeaturedetailstypedef)
 
 ## BackupDetailsTypeDef
 
@@ -313,20 +299,20 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BackupDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `BackupArn`: `str`
 - `BackupName`: `str`
-- `BackupStatus`: `BackupStatus`
-- `BackupType`: `BackupType`
+- `BackupStatus`:
+  [BackupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backupstatus)
+- `BackupType`:
+  [BackupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backuptype)
 - `BackupCreationDateTime`: `datetime`
 
-
-
 Optional fields:
+
 - `BackupSizeBytes`: `int`
 - `BackupExpiryDateTime`: `datetime`
-
 
 ## BackupSummaryTypeDef
 
@@ -334,10 +320,8 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BackupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TableName`: `str`
 - `TableId`: `str`
 - `TableArn`: `str`
@@ -345,10 +329,11 @@ Optional fields:
 - `BackupName`: `str`
 - `BackupCreationDateTime`: `datetime`
 - `BackupExpiryDateTime`: `datetime`
-- `BackupStatus`: `BackupStatus`
-- `BackupType`: `BackupType`
+- `BackupStatus`:
+  [BackupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backupstatus)
+- `BackupType`:
+  [BackupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#backuptype)
 - `BackupSizeBytes`: `int`
-
 
 ## BatchExecuteStatementOutputTypeDef
 
@@ -356,13 +341,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementOutputTypeDef
 ```
 
-
 Required fields:
-- `Responses`: `List["BatchStatementResponseTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Responses`:
+  `List`\[[BatchStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchstatementresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## BatchGetItemOutputTypeDef
 
@@ -370,15 +354,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputTypeDef
 ```
 
-
 Required fields:
-- `Responses`: `Dict[str, List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]]`
-- `UnprocessedKeys`: `Dict[str, "KeysAndAttributesTypeDef"]`
-- `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Responses`: `Dict`\[`str`, `List`\[`Dict`\[`str`, `Union`\[`bytes`,
+  `bytearray`, `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\],
+  `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\],
+  `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]\]\]
+- `UnprocessedKeys`: `Dict`\[`str`,
+  [KeysAndAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keysandattributestypedef)\]
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## BatchStatementErrorTypeDef
 
@@ -386,13 +373,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import BatchStatementErrorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Code`: `BatchStatementErrorCodeEnum`
-- `Message`: `str`
 
+- `Code`:
+  [BatchStatementErrorCodeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#batchstatementerrorcodeenum)
+- `Message`: `str`
 
 ## BatchStatementRequestTypeDef
 
@@ -400,16 +385,16 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BatchStatementRequestTypeDef
 ```
 
-
 Required fields:
+
 - `Statement`: `str`
 
-
-
 Optional fields:
-- `Parameters`: `List[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsistentRead`: `bool`
 
+- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
 
 ## BatchStatementResponseTypeDef
 
@@ -417,14 +402,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BatchStatementResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Error`: `"BatchStatementErrorTypeDef"`
-- `TableName`: `str`
-- `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
+- `Error`:
+  [BatchStatementErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchstatementerrortypedef)
+- `TableName`: `str`
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
 ## BatchWriteItemOutputTypeDef
 
@@ -432,15 +417,16 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputTypeDef
 ```
 
-
 Required fields:
-- `UnprocessedItems`: `Dict[str, List["WriteRequestTypeDef"]]`
-- `ItemCollectionMetrics`: `Dict[str, List["ItemCollectionMetricsTypeDef"]]`
-- `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `UnprocessedItems`: `Dict`\[`str`,
+  `List`\[[WriteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#writerequesttypedef)\]\]
+- `ItemCollectionMetrics`: `Dict`\[`str`,
+  `List`\[[ItemCollectionMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemcollectionmetricstypedef)\]\]
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## BillingModeSummaryTypeDef
 
@@ -448,13 +434,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import BillingModeSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BillingMode`: `BillingMode`
-- `LastUpdateToPayPerRequestDateTime`: `datetime`
 
+- `BillingMode`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+- `LastUpdateToPayPerRequestDateTime`: `datetime`
 
 ## CapacityTypeDef
 
@@ -462,14 +446,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import CapacityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ReadCapacityUnits`: `float`
 - `WriteCapacityUnits`: `float`
 - `CapacityUnits`: `float`
-
 
 ## ConditionCheckTypeDef
 
@@ -477,19 +458,23 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ConditionCheckTypeDef
 ```
 
-
 Required fields:
-- `Key`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 - `ConditionExpression`: `str`
 
-
-
 Optional fields:
-- `ExpressionAttributeNames`: `Dict[str, str]`
-- `ExpressionAttributeValues`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ReturnValuesOnConditionCheckFailure`: `ReturnValuesOnConditionCheckFailure`
 
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ReturnValuesOnConditionCheckFailure`:
+  [ReturnValuesOnConditionCheckFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvaluesonconditioncheckfailure)
 
 ## ConditionTypeDef
 
@@ -497,15 +482,17 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ConditionTypeDef
 ```
 
-
 Required fields:
-- `ComparisonOperator`: `ComparisonOperator`
 
-
+- `ComparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#comparisonoperator)
 
 Optional fields:
-- `AttributeValueList`: `List[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
+- `AttributeValueList`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 
 ## ConsumedCapacityTypeDef
 
@@ -513,18 +500,18 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ConsumedCapacityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TableName`: `str`
 - `CapacityUnits`: `float`
 - `ReadCapacityUnits`: `float`
 - `WriteCapacityUnits`: `float`
-- `Table`: `"CapacityTypeDef"`
-- `LocalSecondaryIndexes`: `Dict[str, "CapacityTypeDef"]`
-- `GlobalSecondaryIndexes`: `Dict[str, "CapacityTypeDef"]`
-
+- `Table`:
+  [CapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#capacitytypedef)
+- `LocalSecondaryIndexes`: `Dict`\[`str`,
+  [CapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#capacitytypedef)\]
+- `GlobalSecondaryIndexes`: `Dict`\[`str`,
+  [CapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#capacitytypedef)\]
 
 ## ContinuousBackupsDescriptionTypeDef
 
@@ -532,15 +519,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ContinuousBackupsDescriptionTypeDef
 ```
 
-
 Required fields:
-- `ContinuousBackupsStatus`: `ContinuousBackupsStatus`
 
-
+- `ContinuousBackupsStatus`:
+  [ContinuousBackupsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#continuousbackupsstatus)
 
 Optional fields:
-- `PointInTimeRecoveryDescription`: `"PointInTimeRecoveryDescriptionTypeDef"`
 
+- `PointInTimeRecoveryDescription`:
+  [PointInTimeRecoveryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#pointintimerecoverydescriptiontypedef)
 
 ## ContributorInsightsSummaryTypeDef
 
@@ -548,14 +535,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ContributorInsightsSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TableName`: `str`
 - `IndexName`: `str`
-- `ContributorInsightsStatus`: `ContributorInsightsStatus`
-
+- `ContributorInsightsStatus`:
+  [ContributorInsightsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#contributorinsightsstatus)
 
 ## CreateBackupOutputTypeDef
 
@@ -563,13 +548,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import CreateBackupOutputTypeDef
 ```
 
-
 Required fields:
-- `BackupDetails`: `"BackupDetailsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `BackupDetails`:
+  [BackupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#backupdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## CreateGlobalSecondaryIndexActionTypeDef
 
@@ -577,17 +561,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import CreateGlobalSecondaryIndexActionTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
-
-
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
 
 Optional fields:
-- `ProvisionedThroughput`: `"ProvisionedThroughputTypeDef"`
 
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
 
 ## CreateGlobalTableOutputTypeDef
 
@@ -595,13 +580,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import CreateGlobalTableOutputTypeDef
 ```
 
-
 Required fields:
-- `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GlobalTableDescription`:
+  [GlobalTableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globaltabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## CreateReplicaActionTypeDef
 
@@ -609,12 +593,9 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import CreateReplicaActionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
-
-
-
 
 ## CreateReplicationGroupMemberActionTypeDef
 
@@ -622,17 +603,17 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import CreateReplicationGroupMemberActionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
 
-
-
 Optional fields:
-- `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`: `"ProvisionedThroughputOverrideTypeDef"`
-- `GlobalSecondaryIndexes`: `List["ReplicaGlobalSecondaryIndexTypeDef"]`
 
+- `KMSMasterKeyId`: `str`
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputoverridetypedef)
+- `GlobalSecondaryIndexes`:
+  `List`\[[ReplicaGlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindextypedef)\]
 
 ## CreateTableOutputTypeDef
 
@@ -640,13 +621,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import CreateTableOutputTypeDef
 ```
 
-
 Required fields:
-- `TableDescription`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableDescription`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DeleteBackupOutputTypeDef
 
@@ -654,13 +634,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteBackupOutputTypeDef
 ```
 
-
 Required fields:
-- `BackupDescription`: `"BackupDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `BackupDescription`:
+  [BackupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#backupdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DeleteGlobalSecondaryIndexActionTypeDef
 
@@ -668,12 +647,9 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteGlobalSecondaryIndexActionTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
-
-
-
 
 ## DeleteItemOutputTypeDef
 
@@ -681,15 +657,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteItemOutputTypeDef
 ```
 
-
 Required fields:
-- `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ItemCollectionMetrics`:
+  [ItemCollectionMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemcollectionmetricstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DeleteReplicaActionTypeDef
 
@@ -697,12 +676,9 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteReplicaActionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
-
-
-
 
 ## DeleteReplicationGroupMemberActionTypeDef
 
@@ -710,12 +686,9 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteReplicationGroupMemberActionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
-
-
-
 
 ## DeleteRequestTypeDef
 
@@ -723,12 +696,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteRequestTypeDef
 ```
 
-
 Required fields:
-- `Key`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
-
-
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
 ## DeleteTableOutputTypeDef
 
@@ -736,13 +708,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteTableOutputTypeDef
 ```
 
-
 Required fields:
-- `TableDescription`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableDescription`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DeleteTypeDef
 
@@ -750,19 +721,23 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DeleteTypeDef
 ```
 
-
 Required fields:
-- `Key`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
-
-
 Optional fields:
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict[str, str]`
-- `ExpressionAttributeValues`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ReturnValuesOnConditionCheckFailure`: `ReturnValuesOnConditionCheckFailure`
 
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ReturnValuesOnConditionCheckFailure`:
+  [ReturnValuesOnConditionCheckFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvaluesonconditioncheckfailure)
 
 ## DescribeBackupOutputTypeDef
 
@@ -770,13 +745,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import DescribeBackupOutputTypeDef
 ```
 
-
 Required fields:
-- `BackupDescription`: `"BackupDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `BackupDescription`:
+  [BackupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#backupdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeContinuousBackupsOutputTypeDef
 
@@ -784,13 +758,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsOutputTypeDef
 ```
 
-
 Required fields:
-- `ContinuousBackupsDescription`: `"ContinuousBackupsDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ContinuousBackupsDescription`:
+  [ContinuousBackupsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#continuousbackupsdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeContributorInsightsOutputTypeDef
 
@@ -798,18 +771,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
 - `IndexName`: `str`
-- `ContributorInsightsRuleList`: `List[str]`
-- `ContributorInsightsStatus`: `ContributorInsightsStatus`
+- `ContributorInsightsRuleList`: `List`\[`str`\]
+- `ContributorInsightsStatus`:
+  [ContributorInsightsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#contributorinsightsstatus)
 - `LastUpdateDateTime`: `datetime`
-- `FailureException`: `"FailureExceptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `FailureException`:
+  [FailureExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#failureexceptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -817,12 +790,10 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeEndpointsResponseTypeDef
 ```
 
-
 Required fields:
-- `Endpoints`: `List["EndpointTypeDef"]`
 
-
-
+- `Endpoints`:
+  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#endpointtypedef)\]
 
 ## DescribeExportOutputTypeDef
 
@@ -830,13 +801,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeExportOutputTypeDef
 ```
 
-
 Required fields:
-- `ExportDescription`: `"ExportDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ExportDescription`:
+  [ExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#exportdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeGlobalTableOutputTypeDef
 
@@ -844,13 +814,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableOutputTypeDef
 ```
 
-
 Required fields:
-- `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GlobalTableDescription`:
+  [GlobalTableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globaltabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeGlobalTableSettingsOutputTypeDef
 
@@ -858,14 +827,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GlobalTableName`: `str`
-- `ReplicaSettings`: `List["ReplicaSettingsDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ReplicaSettings`:
+  `List`\[[ReplicaSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicasettingsdescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeKinesisStreamingDestinationOutputTypeDef
 
@@ -873,14 +841,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
-- `KinesisDataStreamDestinations`: `List["KinesisDataStreamDestinationTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `KinesisDataStreamDestinations`:
+  `List`\[[KinesisDataStreamDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#kinesisdatastreamdestinationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeLimitsOutputTypeDef
 
@@ -888,16 +855,14 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeLimitsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `AccountMaxReadCapacityUnits`: `int`
 - `AccountMaxWriteCapacityUnits`: `int`
 - `TableMaxReadCapacityUnits`: `int`
 - `TableMaxWriteCapacityUnits`: `int`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeTableOutputTypeDef
 
@@ -905,13 +870,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeTableOutputTypeDef
 ```
 
-
 Required fields:
-- `Table`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Table`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeTableReplicaAutoScalingOutputTypeDef
 
@@ -919,13 +883,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingOutputTypeDef
 ```
 
-
 Required fields:
-- `TableAutoScalingDescription`: `"TableAutoScalingDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableAutoScalingDescription`:
+  [TableAutoScalingDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tableautoscalingdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## DescribeTimeToLiveOutputTypeDef
 
@@ -933,13 +896,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveOutputTypeDef
 ```
 
-
 Required fields:
-- `TimeToLiveDescription`: `"TimeToLiveDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TimeToLiveDescription`:
+  [TimeToLiveDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#timetolivedescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## EndpointTypeDef
 
@@ -947,13 +909,10 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import EndpointTypeDef
 ```
 
-
 Required fields:
+
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
-
-
-
 
 ## ExecuteStatementOutputTypeDef
 
@@ -961,14 +920,15 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ExecuteStatementOutputTypeDef
 ```
 
-
 Required fields:
-- `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
+
+- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ExecuteTransactionOutputTypeDef
 
@@ -976,13 +936,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ExecuteTransactionOutputTypeDef
 ```
 
-
 Required fields:
-- `Responses`: `List["ItemResponseTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Responses`:
+  `List`\[[ItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ExpectedAttributeValueTypeDef
 
@@ -990,15 +949,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ExpectedAttributeValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]`
-- `Exists`: `bool`
-- `ComparisonOperator`: `ComparisonOperator`
-- `AttributeValueList`: `List[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
+- `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
+  `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
+- `Exists`: `bool`
+- `ComparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#comparisonoperator)
+- `AttributeValueList`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 
 ## ExportDescriptionTypeDef
 
@@ -1006,12 +968,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ExportDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExportArn`: `str`
-- `ExportStatus`: `ExportStatus`
+- `ExportStatus`:
+  [ExportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#exportstatus)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ExportManifest`: `str`
@@ -1022,14 +983,15 @@ Optional fields:
 - `S3Bucket`: `str`
 - `S3BucketOwner`: `str`
 - `S3Prefix`: `str`
-- `S3SseAlgorithm`: `S3SseAlgorithm`
+- `S3SseAlgorithm`:
+  [S3SseAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#s3ssealgorithm)
 - `S3SseKmsKeyId`: `str`
 - `FailureCode`: `str`
 - `FailureMessage`: `str`
-- `ExportFormat`: `ExportFormat`
+- `ExportFormat`:
+  [ExportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#exportformat)
 - `BilledSizeBytes`: `int`
 - `ItemCount`: `int`
-
 
 ## ExportSummaryTypeDef
 
@@ -1037,13 +999,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ExportSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ExportArn`: `str`
-- `ExportStatus`: `ExportStatus`
 
+- `ExportArn`: `str`
+- `ExportStatus`:
+  [ExportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#exportstatus)
 
 ## ExportTableToPointInTimeOutputTypeDef
 
@@ -1051,13 +1011,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeOutputTypeDef
 ```
 
-
 Required fields:
-- `ExportDescription`: `"ExportDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ExportDescription`:
+  [ExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#exportdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## FailureExceptionTypeDef
 
@@ -1065,13 +1024,10 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import FailureExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ExceptionName`: `str`
 - `ExceptionDescription`: `str`
-
 
 ## GetItemOutputTypeDef
 
@@ -1079,14 +1035,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GetItemOutputTypeDef
 ```
 
-
 Required fields:
-- `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## GetTypeDef
 
@@ -1094,17 +1051,17 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import GetTypeDef
 ```
 
-
 Required fields:
-- `Key`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
-
-
 Optional fields:
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict[str, str]`
 
+- `ProjectionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
 ## GlobalSecondaryIndexAutoScalingUpdateTypeDef
 
@@ -1112,13 +1069,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexAutoScalingUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `ProvisionedWriteCapacityAutoScalingUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
 
+- `IndexName`: `str`
+- `ProvisionedWriteCapacityAutoScalingUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
 
 ## GlobalSecondaryIndexDescriptionTypeDef
 
@@ -1126,20 +1081,21 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
-- `IndexStatus`: `IndexStatus`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
+- `IndexStatus`:
+  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#indexstatus)
 - `Backfilling`: `bool`
-- `ProvisionedThroughput`: `"ProvisionedThroughputDescriptionTypeDef"`
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputdescriptiontypedef)
 - `IndexSizeBytes`: `int`
 - `ItemCount`: `int`
 - `IndexArn`: `str`
-
 
 ## GlobalSecondaryIndexInfoTypeDef
 
@@ -1147,15 +1103,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
-- `ProvisionedThroughput`: `"ProvisionedThroughputTypeDef"`
 
+- `IndexName`: `str`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
 
 ## GlobalSecondaryIndexTypeDef
 
@@ -1163,17 +1119,18 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
-
-
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
 
 Optional fields:
-- `ProvisionedThroughput`: `"ProvisionedThroughputTypeDef"`
 
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
 
 ## GlobalSecondaryIndexUpdateTypeDef
 
@@ -1181,14 +1138,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Update`: `"UpdateGlobalSecondaryIndexActionTypeDef"`
-- `Create`: `"CreateGlobalSecondaryIndexActionTypeDef"`
-- `Delete`: `"DeleteGlobalSecondaryIndexActionTypeDef"`
 
+- `Update`:
+  [UpdateGlobalSecondaryIndexActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updateglobalsecondaryindexactiontypedef)
+- `Create`:
+  [CreateGlobalSecondaryIndexActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createglobalsecondaryindexactiontypedef)
+- `Delete`:
+  [DeleteGlobalSecondaryIndexActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deleteglobalsecondaryindexactiontypedef)
 
 ## GlobalTableDescriptionTypeDef
 
@@ -1196,16 +1153,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalTableDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReplicationGroup`: `List["ReplicaDescriptionTypeDef"]`
+
+- `ReplicationGroup`:
+  `List`\[[ReplicaDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicadescriptiontypedef)\]
 - `GlobalTableArn`: `str`
 - `CreationDateTime`: `datetime`
-- `GlobalTableStatus`: `GlobalTableStatus`
+- `GlobalTableStatus`:
+  [GlobalTableStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#globaltablestatus)
 - `GlobalTableName`: `str`
-
 
 ## GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
 
@@ -1213,16 +1169,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
 
-
-
 Optional fields:
-- `ProvisionedWriteCapacityUnits`: `int`
-- `ProvisionedWriteCapacityAutoScalingSettingsUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
 
+- `ProvisionedWriteCapacityUnits`: `int`
+- `ProvisionedWriteCapacityAutoScalingSettingsUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
 
 ## GlobalTableTypeDef
 
@@ -1230,13 +1185,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import GlobalTableTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GlobalTableName`: `str`
-- `ReplicationGroup`: `List["ReplicaTypeDef"]`
 
+- `GlobalTableName`: `str`
+- `ReplicationGroup`:
+  `List`\[[ReplicaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicatypedef)\]
 
 ## ItemCollectionMetricsTypeDef
 
@@ -1244,13 +1197,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ItemCollectionMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ItemCollectionKey`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `SizeEstimateRangeGB`: `List[float]`
 
+- `ItemCollectionKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `SizeEstimateRangeGB`: `List`\[`float`\]
 
 ## ItemResponseTypeDef
 
@@ -1258,12 +1211,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
 ## KeySchemaElementTypeDef
 
@@ -1271,13 +1223,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import KeySchemaElementTypeDef
 ```
 
-
 Required fields:
+
 - `AttributeName`: `str`
-- `KeyType`: `KeyType`
-
-
-
+- `KeyType`:
+  [KeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#keytype)
 
 ## KeysAndAttributesTypeDef
 
@@ -1285,18 +1235,19 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import KeysAndAttributesTypeDef
 ```
 
-
 Required fields:
-- `Keys`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
 
-
+- `Keys`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]\]
 
 Optional fields:
-- `AttributesToGet`: `List[str]`
+
+- `AttributesToGet`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict[str, str]`
-
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
 ## KinesisDataStreamDestinationTypeDef
 
@@ -1304,14 +1255,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import KinesisDataStreamDestinationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StreamArn`: `str`
-- `DestinationStatus`: `DestinationStatus`
-- `DestinationStatusDescription`: `str`
 
+- `StreamArn`: `str`
+- `DestinationStatus`:
+  [DestinationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#destinationstatus)
+- `DestinationStatusDescription`: `str`
 
 ## KinesisStreamingDestinationOutputTypeDef
 
@@ -1319,15 +1268,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
 - `StreamArn`: `str`
-- `DestinationStatus`: `DestinationStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `DestinationStatus`:
+  [DestinationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#destinationstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListBackupsOutputTypeDef
 
@@ -1335,14 +1283,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListBackupsOutputTypeDef
 ```
 
-
 Required fields:
-- `BackupSummaries`: `List["BackupSummaryTypeDef"]`
+
+- `BackupSummaries`:
+  `List`\[[BackupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#backupsummarytypedef)\]
 - `LastEvaluatedBackupArn`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListContributorInsightsOutputTypeDef
 
@@ -1350,14 +1297,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListContributorInsightsOutputTypeDef
 ```
 
-
 Required fields:
-- `ContributorInsightsSummaries`: `List["ContributorInsightsSummaryTypeDef"]`
+
+- `ContributorInsightsSummaries`:
+  `List`\[[ContributorInsightsSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#contributorinsightssummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListExportsOutputTypeDef
 
@@ -1365,14 +1311,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListExportsOutputTypeDef
 ```
 
-
 Required fields:
-- `ExportSummaries`: `List["ExportSummaryTypeDef"]`
+
+- `ExportSummaries`:
+  `List`\[[ExportSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#exportsummarytypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListGlobalTablesOutputTypeDef
 
@@ -1380,14 +1325,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListGlobalTablesOutputTypeDef
 ```
 
-
 Required fields:
-- `GlobalTables`: `List["GlobalTableTypeDef"]`
+
+- `GlobalTables`:
+  `List`\[[GlobalTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globaltabletypedef)\]
 - `LastEvaluatedGlobalTableName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListTablesOutputTypeDef
 
@@ -1395,14 +1339,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListTablesOutputTypeDef
 ```
 
-
 Required fields:
-- `TableNames`: `List[str]`
+
+- `TableNames`: `List`\[`str`\]
 - `LastEvaluatedTableName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ListTagsOfResourceOutputTypeDef
 
@@ -1410,14 +1352,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tagtypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## LocalSecondaryIndexDescriptionTypeDef
 
@@ -1425,17 +1366,16 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
 - `IndexSizeBytes`: `int`
 - `ItemCount`: `int`
 - `IndexArn`: `str`
-
 
 ## LocalSecondaryIndexInfoTypeDef
 
@@ -1443,14 +1383,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
 
+- `IndexName`: `str`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
 
 ## LocalSecondaryIndexTypeDef
 
@@ -1458,14 +1397,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `Projection`: `"ProjectionTypeDef"`
-
-
-
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `Projection`:
+  [ProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#projectiontypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -1473,14 +1411,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterizedStatementTypeDef
 
@@ -1488,15 +1423,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ParameterizedStatementTypeDef
 ```
 
-
 Required fields:
+
 - `Statement`: `str`
 
-
-
 Optional fields:
-- `Parameters`: `List[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
+- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
 ## PointInTimeRecoveryDescriptionTypeDef
 
@@ -1504,14 +1439,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import PointInTimeRecoveryDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PointInTimeRecoveryStatus`: `PointInTimeRecoveryStatus`
+
+- `PointInTimeRecoveryStatus`:
+  [PointInTimeRecoveryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#pointintimerecoverystatus)
 - `EarliestRestorableDateTime`: `datetime`
 - `LatestRestorableDateTime`: `datetime`
-
 
 ## PointInTimeRecoverySpecificationTypeDef
 
@@ -1519,12 +1452,9 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import PointInTimeRecoverySpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `PointInTimeRecoveryEnabled`: `bool`
-
-
-
 
 ## ProjectionTypeDef
 
@@ -1532,13 +1462,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ProjectionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProjectionType`: `ProjectionType`
-- `NonKeyAttributes`: `List[str]`
 
+- `ProjectionType`:
+  [ProjectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#projectiontype)
+- `NonKeyAttributes`: `List`\[`str`\]
 
 ## ProvisionedThroughputDescriptionTypeDef
 
@@ -1546,16 +1474,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LastIncreaseDateTime`: `datetime`
 - `LastDecreaseDateTime`: `datetime`
 - `NumberOfDecreasesToday`: `int`
 - `ReadCapacityUnits`: `int`
 - `WriteCapacityUnits`: `int`
-
 
 ## ProvisionedThroughputOverrideTypeDef
 
@@ -1563,12 +1488,9 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputOverrideTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReadCapacityUnits`: `int`
 
+- `ReadCapacityUnits`: `int`
 
 ## ProvisionedThroughputTypeDef
 
@@ -1576,13 +1498,10 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputTypeDef
 ```
 
-
 Required fields:
+
 - `ReadCapacityUnits`: `int`
 - `WriteCapacityUnits`: `int`
-
-
-
 
 ## PutItemOutputTypeDef
 
@@ -1590,15 +1509,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import PutItemOutputTypeDef
 ```
 
-
 Required fields:
-- `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ItemCollectionMetrics`:
+  [ItemCollectionMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemcollectionmetricstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## PutRequestTypeDef
 
@@ -1606,12 +1528,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import PutRequestTypeDef
 ```
 
-
 Required fields:
-- `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 
-
-
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
 ## PutTypeDef
 
@@ -1619,19 +1540,23 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import PutTypeDef
 ```
 
-
 Required fields:
-- `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
+
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
-
-
 Optional fields:
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict[str, str]`
-- `ExpressionAttributeValues`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ReturnValuesOnConditionCheckFailure`: `ReturnValuesOnConditionCheckFailure`
 
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ReturnValuesOnConditionCheckFailure`:
+  [ReturnValuesOnConditionCheckFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvaluesonconditioncheckfailure)
 
 ## QueryOutputTypeDef
 
@@ -1639,17 +1564,22 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import QueryOutputTypeDef
 ```
 
-
 Required fields:
-- `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
+
+- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## ReplicaAutoScalingDescriptionTypeDef
 
@@ -1657,16 +1587,17 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaAutoScalingDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegionName`: `str`
-- `GlobalSecondaryIndexes`: `List["ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef"]`
-- `ReplicaProvisionedReadCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ReplicaProvisionedWriteCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ReplicaStatus`: `ReplicaStatus`
 
+- `RegionName`: `str`
+- `GlobalSecondaryIndexes`:
+  `List`\[[ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindexautoscalingdescriptiontypedef)\]
+- `ReplicaProvisionedReadCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ReplicaProvisionedWriteCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ReplicaStatus`:
+  [ReplicaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#replicastatus)
 
 ## ReplicaAutoScalingUpdateTypeDef
 
@@ -1674,16 +1605,16 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaAutoScalingUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
 
-
-
 Optional fields:
-- `ReplicaGlobalSecondaryIndexUpdates`: `List["ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef"]`
-- `ReplicaProvisionedReadCapacityAutoScalingUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
 
+- `ReplicaGlobalSecondaryIndexUpdates`:
+  `List`\[[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindexautoscalingupdatetypedef)\]
+- `ReplicaProvisionedReadCapacityAutoScalingUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
 
 ## ReplicaDescriptionTypeDef
 
@@ -1691,19 +1622,19 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RegionName`: `str`
-- `ReplicaStatus`: `ReplicaStatus`
+- `ReplicaStatus`:
+  [ReplicaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#replicastatus)
 - `ReplicaStatusDescription`: `str`
 - `ReplicaStatusPercentProgress`: `str`
 - `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`: `"ProvisionedThroughputOverrideTypeDef"`
-- `GlobalSecondaryIndexes`: `List["ReplicaGlobalSecondaryIndexDescriptionTypeDef"]`
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputoverridetypedef)
+- `GlobalSecondaryIndexes`:
+  `List`\[[ReplicaGlobalSecondaryIndexDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindexdescriptiontypedef)\]
 - `ReplicaInaccessibleDateTime`: `datetime`
-
 
 ## ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
 
@@ -1711,15 +1642,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `IndexStatus`: `IndexStatus`
-- `ProvisionedReadCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ProvisionedWriteCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
 
+- `IndexName`: `str`
+- `IndexStatus`:
+  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#indexstatus)
+- `ProvisionedReadCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ProvisionedWriteCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
 
 ## ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef
 
@@ -1727,13 +1658,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `ProvisionedReadCapacityAutoScalingUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
 
+- `IndexName`: `str`
+- `ProvisionedReadCapacityAutoScalingUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
 
 ## ReplicaGlobalSecondaryIndexDescriptionTypeDef
 
@@ -1741,13 +1670,11 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexName`: `str`
-- `ProvisionedThroughputOverride`: `"ProvisionedThroughputOverrideTypeDef"`
 
+- `IndexName`: `str`
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputoverridetypedef)
 
 ## ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef
 
@@ -1755,19 +1682,20 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
 
-
-
 Optional fields:
-- `IndexStatus`: `IndexStatus`
-- `ProvisionedReadCapacityUnits`: `int`
-- `ProvisionedReadCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ProvisionedWriteCapacityUnits`: `int`
-- `ProvisionedWriteCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
 
+- `IndexStatus`:
+  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#indexstatus)
+- `ProvisionedReadCapacityUnits`: `int`
+- `ProvisionedReadCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ProvisionedWriteCapacityUnits`: `int`
+- `ProvisionedWriteCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
 
 ## ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef
 
@@ -1775,16 +1703,15 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
 
-
-
 Optional fields:
-- `ProvisionedReadCapacityUnits`: `int`
-- `ProvisionedReadCapacityAutoScalingSettingsUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
 
+- `ProvisionedReadCapacityUnits`: `int`
+- `ProvisionedReadCapacityAutoScalingSettingsUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
 
 ## ReplicaGlobalSecondaryIndexTypeDef
 
@@ -1792,15 +1719,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
 
-
-
 Optional fields:
-- `ProvisionedThroughputOverride`: `"ProvisionedThroughputOverrideTypeDef"`
 
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputoverridetypedef)
 
 ## ReplicaSettingsDescriptionTypeDef
 
@@ -1808,21 +1734,24 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaSettingsDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
 
-
-
 Optional fields:
-- `ReplicaStatus`: `ReplicaStatus`
-- `ReplicaBillingModeSummary`: `"BillingModeSummaryTypeDef"`
-- `ReplicaProvisionedReadCapacityUnits`: `int`
-- `ReplicaProvisionedReadCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ReplicaProvisionedWriteCapacityUnits`: `int`
-- `ReplicaProvisionedWriteCapacityAutoScalingSettings`: `"AutoScalingSettingsDescriptionTypeDef"`
-- `ReplicaGlobalSecondaryIndexSettings`: `List["ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef"]`
 
+- `ReplicaStatus`:
+  [ReplicaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#replicastatus)
+- `ReplicaBillingModeSummary`:
+  [BillingModeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#billingmodesummarytypedef)
+- `ReplicaProvisionedReadCapacityUnits`: `int`
+- `ReplicaProvisionedReadCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ReplicaProvisionedWriteCapacityUnits`: `int`
+- `ReplicaProvisionedWriteCapacityAutoScalingSettings`:
+  [AutoScalingSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsdescriptiontypedef)
+- `ReplicaGlobalSecondaryIndexSettings`:
+  `List`\[[ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindexsettingsdescriptiontypedef)\]
 
 ## ReplicaSettingsUpdateTypeDef
 
@@ -1830,17 +1759,17 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaSettingsUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
 
-
-
 Optional fields:
-- `ReplicaProvisionedReadCapacityUnits`: `int`
-- `ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate`: `"AutoScalingSettingsUpdateTypeDef"`
-- `ReplicaGlobalSecondaryIndexSettingsUpdate`: `List["ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef"]`
 
+- `ReplicaProvisionedReadCapacityUnits`: `int`
+- `ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#autoscalingsettingsupdatetypedef)
+- `ReplicaGlobalSecondaryIndexSettingsUpdate`:
+  `List`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindexsettingsupdatetypedef)\]
 
 ## ReplicaTypeDef
 
@@ -1848,12 +1777,9 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegionName`: `str`
 
+- `RegionName`: `str`
 
 ## ReplicaUpdateTypeDef
 
@@ -1861,13 +1787,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicaUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Create`: `"CreateReplicaActionTypeDef"`
-- `Delete`: `"DeleteReplicaActionTypeDef"`
 
+- `Create`:
+  [CreateReplicaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createreplicaactiontypedef)
+- `Delete`:
+  [DeleteReplicaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletereplicaactiontypedef)
 
 ## ReplicationGroupUpdateTypeDef
 
@@ -1875,14 +1800,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ReplicationGroupUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Create`: `"CreateReplicationGroupMemberActionTypeDef"`
-- `Update`: `"UpdateReplicationGroupMemberActionTypeDef"`
-- `Delete`: `"DeleteReplicationGroupMemberActionTypeDef"`
 
+- `Create`:
+  [CreateReplicationGroupMemberActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#createreplicationgroupmemberactiontypedef)
+- `Update`:
+  [UpdateReplicationGroupMemberActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatereplicationgroupmemberactiontypedef)
+- `Delete`:
+  [DeleteReplicationGroupMemberActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletereplicationgroupmemberactiontypedef)
 
 ## ResponseMetadata
 
@@ -1890,16 +1815,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RestoreSummaryTypeDef
 
@@ -1907,17 +1829,15 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import RestoreSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `RestoreDateTime`: `datetime`
 - `RestoreInProgress`: `bool`
 
-
-
 Optional fields:
+
 - `SourceBackupArn`: `str`
 - `SourceTableArn`: `str`
-
 
 ## RestoreTableFromBackupOutputTypeDef
 
@@ -1925,13 +1845,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupOutputTypeDef
 ```
 
-
 Required fields:
-- `TableDescription`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableDescription`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## RestoreTableToPointInTimeOutputTypeDef
 
@@ -1939,13 +1858,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeOutputTypeDef
 ```
 
-
 Required fields:
-- `TableDescription`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableDescription`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## SSEDescriptionTypeDef
 
@@ -1953,15 +1871,14 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import SSEDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Status`: `SSEStatus`
-- `SSEType`: `SSEType`
+
+- `Status`:
+  [SSEStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#ssestatus)
+- `SSEType`:
+  [SSEType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#ssetype)
 - `KMSMasterKeyArn`: `str`
 - `InaccessibleEncryptionDateTime`: `datetime`
-
 
 ## SSESpecificationTypeDef
 
@@ -1969,14 +1886,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import SSESpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
-- `SSEType`: `SSEType`
-- `KMSMasterKeyId`: `str`
 
+- `Enabled`: `bool`
+- `SSEType`:
+  [SSEType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#ssetype)
+- `KMSMasterKeyId`: `str`
 
 ## ScanOutputTypeDef
 
@@ -1984,17 +1899,22 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import ScanOutputTypeDef
 ```
 
-
 Required fields:
-- `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
+
+- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## SourceTableDetailsTypeDef
 
@@ -2002,22 +1922,23 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import SourceTableDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
 - `TableId`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
 - `TableCreationDateTime`: `datetime`
-- `ProvisionedThroughput`: `"ProvisionedThroughputTypeDef"`
-
-
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
 
 Optional fields:
+
 - `TableArn`: `str`
 - `TableSizeBytes`: `int`
 - `ItemCount`: `int`
-- `BillingMode`: `BillingMode`
-
+- `BillingMode`:
+  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
 
 ## SourceTableFeatureDetailsTypeDef
 
@@ -2025,16 +1946,18 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import SourceTableFeatureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocalSecondaryIndexes`: `List["LocalSecondaryIndexInfoTypeDef"]`
-- `GlobalSecondaryIndexes`: `List["GlobalSecondaryIndexInfoTypeDef"]`
-- `StreamDescription`: `"StreamSpecificationTypeDef"`
-- `TimeToLiveDescription`: `"TimeToLiveDescriptionTypeDef"`
-- `SSEDescription`: `"SSEDescriptionTypeDef"`
 
+- `LocalSecondaryIndexes`:
+  `List`\[[LocalSecondaryIndexInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindexinfotypedef)\]
+- `GlobalSecondaryIndexes`:
+  `List`\[[GlobalSecondaryIndexInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindexinfotypedef)\]
+- `StreamDescription`:
+  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
+- `TimeToLiveDescription`:
+  [TimeToLiveDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#timetolivedescriptiontypedef)
+- `SSEDescription`:
+  [SSEDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssedescriptiontypedef)
 
 ## StreamSpecificationTypeDef
 
@@ -2042,15 +1965,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import StreamSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `StreamEnabled`: `bool`
 
-
-
 Optional fields:
-- `StreamViewType`: `StreamViewType`
 
+- `StreamViewType`:
+  [StreamViewType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#streamviewtype)
 
 ## TableAutoScalingDescriptionTypeDef
 
@@ -2058,14 +1980,13 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import TableAutoScalingDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TableName`: `str`
-- `TableStatus`: `TableStatus`
-- `Replicas`: `List["ReplicaAutoScalingDescriptionTypeDef"]`
 
+- `TableName`: `str`
+- `TableStatus`:
+  [TableStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#tablestatus)
+- `Replicas`:
+  `List`\[[ReplicaAutoScalingDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaautoscalingdescriptiontypedef)\]
 
 ## TableDescriptionTypeDef
 
@@ -2073,32 +1994,41 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import TableDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeDefinitions`: `List["AttributeDefinitionTypeDef"]`
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributedefinitiontypedef)\]
 - `TableName`: `str`
-- `KeySchema`: `List["KeySchemaElementTypeDef"]`
-- `TableStatus`: `TableStatus`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+- `TableStatus`:
+  [TableStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#tablestatus)
 - `CreationDateTime`: `datetime`
-- `ProvisionedThroughput`: `"ProvisionedThroughputDescriptionTypeDef"`
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputdescriptiontypedef)
 - `TableSizeBytes`: `int`
 - `ItemCount`: `int`
 - `TableArn`: `str`
 - `TableId`: `str`
-- `BillingModeSummary`: `"BillingModeSummaryTypeDef"`
-- `LocalSecondaryIndexes`: `List["LocalSecondaryIndexDescriptionTypeDef"]`
-- `GlobalSecondaryIndexes`: `List["GlobalSecondaryIndexDescriptionTypeDef"]`
-- `StreamSpecification`: `"StreamSpecificationTypeDef"`
+- `BillingModeSummary`:
+  [BillingModeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#billingmodesummarytypedef)
+- `LocalSecondaryIndexes`:
+  `List`\[[LocalSecondaryIndexDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindexdescriptiontypedef)\]
+- `GlobalSecondaryIndexes`:
+  `List`\[[GlobalSecondaryIndexDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindexdescriptiontypedef)\]
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
 - `LatestStreamLabel`: `str`
 - `LatestStreamArn`: `str`
 - `GlobalTableVersion`: `str`
-- `Replicas`: `List["ReplicaDescriptionTypeDef"]`
-- `RestoreSummary`: `"RestoreSummaryTypeDef"`
-- `SSEDescription`: `"SSEDescriptionTypeDef"`
-- `ArchivalSummary`: `"ArchivalSummaryTypeDef"`
-
+- `Replicas`:
+  `List`\[[ReplicaDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicadescriptiontypedef)\]
+- `RestoreSummary`:
+  [RestoreSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#restoresummarytypedef)
+- `SSEDescription`:
+  [SSEDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssedescriptiontypedef)
+- `ArchivalSummary`:
+  [ArchivalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#archivalsummarytypedef)
 
 ## TagTypeDef
 
@@ -2106,13 +2036,10 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TimeToLiveDescriptionTypeDef
 
@@ -2120,13 +2047,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import TimeToLiveDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimeToLiveStatus`: `TimeToLiveStatus`
-- `AttributeName`: `str`
 
+- `TimeToLiveStatus`:
+  [TimeToLiveStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#timetolivestatus)
+- `AttributeName`: `str`
 
 ## TimeToLiveSpecificationTypeDef
 
@@ -2134,13 +2059,10 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import TimeToLiveSpecificationTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 - `AttributeName`: `str`
-
-
-
 
 ## TransactGetItemTypeDef
 
@@ -2148,12 +2070,10 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import TransactGetItemTypeDef
 ```
 
-
 Required fields:
-- `Get`: `"GetTypeDef"`
 
-
-
+- `Get`:
+  [GetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#gettypedef)
 
 ## TransactGetItemsOutputTypeDef
 
@@ -2161,14 +2081,14 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import TransactGetItemsOutputTypeDef
 ```
 
-
 Required fields:
-- `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
-- `Responses`: `List["ItemResponseTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)\]
+- `Responses`:
+  `List`\[[ItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## TransactWriteItemTypeDef
 
@@ -2176,15 +2096,16 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import TransactWriteItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConditionCheck`: `"ConditionCheckTypeDef"`
-- `Put`: `"PutTypeDef"`
-- `Delete`: `"DeleteTypeDef"`
-- `Update`: `"UpdateTypeDef"`
 
+- `ConditionCheck`:
+  [ConditionCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditionchecktypedef)
+- `Put`:
+  [PutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#puttypedef)
+- `Delete`:
+  [DeleteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletetypedef)
+- `Update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updatetypedef)
 
 ## TransactWriteItemsOutputTypeDef
 
@@ -2192,14 +2113,14 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import TransactWriteItemsOutputTypeDef
 ```
 
-
 Required fields:
-- `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
-- `ItemCollectionMetrics`: `Dict[str, List["ItemCollectionMetricsTypeDef"]]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ConsumedCapacity`:
+  `List`\[[ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)\]
+- `ItemCollectionMetrics`: `Dict`\[`str`,
+  `List`\[[ItemCollectionMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemcollectionmetricstypedef)\]\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateContinuousBackupsOutputTypeDef
 
@@ -2207,13 +2128,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsOutputTypeDef
 ```
 
-
 Required fields:
-- `ContinuousBackupsDescription`: `"ContinuousBackupsDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `ContinuousBackupsDescription`:
+  [ContinuousBackupsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#continuousbackupsdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateContributorInsightsOutputTypeDef
 
@@ -2221,15 +2141,14 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
 - `IndexName`: `str`
-- `ContributorInsightsStatus`: `ContributorInsightsStatus`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ContributorInsightsStatus`:
+  [ContributorInsightsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#contributorinsightsstatus)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateGlobalSecondaryIndexActionTypeDef
 
@@ -2237,13 +2156,11 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalSecondaryIndexActionTypeDef
 ```
 
-
 Required fields:
+
 - `IndexName`: `str`
-- `ProvisionedThroughput`: `"ProvisionedThroughputTypeDef"`
-
-
-
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
 
 ## UpdateGlobalTableOutputTypeDef
 
@@ -2251,13 +2168,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableOutputTypeDef
 ```
 
-
 Required fields:
-- `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GlobalTableDescription`:
+  [GlobalTableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globaltabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateGlobalTableSettingsOutputTypeDef
 
@@ -2265,14 +2181,13 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `GlobalTableName`: `str`
-- `ReplicaSettings`: `List["ReplicaSettingsDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ReplicaSettings`:
+  `List`\[[ReplicaSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicasettingsdescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateItemOutputTypeDef
 
@@ -2280,15 +2195,18 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateItemOutputTypeDef
 ```
 
-
 Required fields:
-- `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
-- `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ConsumedCapacity`:
+  [ConsumedCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#consumedcapacitytypedef)
+- `ItemCollectionMetrics`:
+  [ItemCollectionMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#itemcollectionmetricstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateReplicationGroupMemberActionTypeDef
 
@@ -2296,17 +2214,17 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateReplicationGroupMemberActionTypeDef
 ```
 
-
 Required fields:
+
 - `RegionName`: `str`
 
-
-
 Optional fields:
-- `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`: `"ProvisionedThroughputOverrideTypeDef"`
-- `GlobalSecondaryIndexes`: `List["ReplicaGlobalSecondaryIndexTypeDef"]`
 
+- `KMSMasterKeyId`: `str`
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputoverridetypedef)
+- `GlobalSecondaryIndexes`:
+  `List`\[[ReplicaGlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicaglobalsecondaryindextypedef)\]
 
 ## UpdateTableOutputTypeDef
 
@@ -2314,13 +2232,12 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import UpdateTableOutputTypeDef
 ```
 
-
 Required fields:
-- `TableDescription`: `"TableDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableDescription`:
+  [TableDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tabledescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateTableReplicaAutoScalingOutputTypeDef
 
@@ -2328,13 +2245,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingOutputTypeDef
 ```
 
-
 Required fields:
-- `TableAutoScalingDescription`: `"TableAutoScalingDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TableAutoScalingDescription`:
+  [TableAutoScalingDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tableautoscalingdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateTimeToLiveOutputTypeDef
 
@@ -2342,13 +2258,12 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveOutputTypeDef
 ```
 
-
 Required fields:
-- `TimeToLiveSpecification`: `"TimeToLiveSpecificationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TimeToLiveSpecification`:
+  [TimeToLiveSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#timetolivespecificationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#responsemetadata)
 
 ## UpdateTypeDef
 
@@ -2356,20 +2271,24 @@ Required fields:
 from mypy_boto3_dynamodb.type_defs import UpdateTypeDef
 ```
 
-
 Required fields:
-- `Key`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 - `UpdateExpression`: `str`
 - `TableName`: `str`
 
-
-
 Optional fields:
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict[str, str]`
-- `ExpressionAttributeValues`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
-- `ReturnValuesOnConditionCheckFailure`: `ReturnValuesOnConditionCheckFailure`
 
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ReturnValuesOnConditionCheckFailure`:
+  [ReturnValuesOnConditionCheckFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvaluesonconditioncheckfailure)
 
 ## WaiterConfigTypeDef
 
@@ -2377,13 +2296,10 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-
 
 ## WriteRequestTypeDef
 
@@ -2391,10 +2307,9 @@ Optional fields:
 from mypy_boto3_dynamodb.type_defs import WriteRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PutRequest`: `"PutRequestTypeDef"`
-- `DeleteRequest`: `"DeleteRequestTypeDef"`
 
+- `PutRequest`:
+  [PutRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#putrequesttypedef)
+- `DeleteRequest`:
+  [DeleteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deleterequesttypedef)

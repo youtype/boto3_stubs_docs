@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GroundStation](./README.md) > GroundStationClient
 
-Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+Auto-generated documentation for
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+type annotations stubs module
+[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [GroundStationClient for boto3 GroundStation module](#groundstationclient-for-boto3-groundstation-module)
   - [GroundStationClient](#groundstationclient)
@@ -51,12 +53,13 @@ def get_groundstation_client() -> GroundStationClient:
     return boto3.client("groundstation")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
+Boto3 documentation:
+[GroundStation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_groundstation.client import Exceptions
@@ -64,7 +67,6 @@ from mypy_boto3_groundstation.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -74,443 +76,466 @@ Exceptions:
 - `Exceptions.ResourceLimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("groundstation").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate]
+Boto3 documentation:
+[GroundStation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_contact
 
 Type annotations for `boto3.client("groundstation").cancel_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact]
+Boto3 documentation:
+[GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
 
-```python
-def cancel_contact(
-    self,
-    contactId: str
-) -> ContactIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `contactId`: `str` *(required)*
+
+Returns
+[ContactIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#contactidresponsetypedef).
 
 ### create_config
 
 Type annotations for `boto3.client("groundstation").create_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config]
+Boto3 documentation:
+[GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
 
-```python
-def create_config(
-    self,
-    configData: "ConfigTypeDataTypeDef",
-    name: str,
-    tags: Dict[str, str] = None
-) -> ConfigIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `configData`:
+  [ConfigTypeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configtypedatatypedef)
+  *(required)*
+- `name`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
 
 ### create_dataflow_endpoint_group
 
-Type annotations for `boto3.client("groundstation").create_dataflow_endpoint_group` method.
+Type annotations for
+`boto3.client("groundstation").create_dataflow_endpoint_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group]
+Boto3 documentation:
+[GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
 
-```python
-def create_dataflow_endpoint_group(
-    self,
-    endpointDetails: List["EndpointDetailsTypeDef"],
-    tags: Dict[str, str] = None
-) -> DataflowEndpointGroupIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endpointDetails`:
+  `List`\[[EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#endpointdetailstypedef)\]
+  *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[DataflowEndpointGroupIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointgroupidresponsetypedef).
 
 ### create_mission_profile
 
-Type annotations for `boto3.client("groundstation").create_mission_profile` method.
+Type annotations for `boto3.client("groundstation").create_mission_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile]
+Boto3 documentation:
+[GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
 
-```python
-def create_mission_profile(
-    self,
-    dataflowEdges: List[List[str]],
-    minimumViableContactDurationSeconds: int,
-    name: str,
-    trackingConfigArn: str,
-    contactPostPassDurationSeconds: int = None,
-    contactPrePassDurationSeconds: int = None,
-    tags: Dict[str, str] = None
-) -> MissionProfileIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `dataflowEdges`: `List`\[`List`\[`str`\]\] *(required)*
+- `minimumViableContactDurationSeconds`: `int` *(required)*
+- `name`: `str` *(required)*
+- `trackingConfigArn`: `str` *(required)*
+- `contactPostPassDurationSeconds`: `int`
+- `contactPrePassDurationSeconds`: `int`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
 
 ### delete_config
 
 Type annotations for `boto3.client("groundstation").delete_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config]
+Boto3 documentation:
+[GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
 
-```python
-def delete_config(
-    self,
-    configId: str,
-    configType: ConfigCapabilityType
-) -> ConfigIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `configId`: `str` *(required)*
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+  *(required)*
+
+Returns
+[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
 
 ### delete_dataflow_endpoint_group
 
-Type annotations for `boto3.client("groundstation").delete_dataflow_endpoint_group` method.
+Type annotations for
+`boto3.client("groundstation").delete_dataflow_endpoint_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group]
+Boto3 documentation:
+[GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
 
-```python
-def delete_dataflow_endpoint_group(
-    self,
-    dataflowEndpointGroupId: str
-) -> DataflowEndpointGroupIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `dataflowEndpointGroupId`: `str` *(required)*
+
+Returns
+[DataflowEndpointGroupIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointgroupidresponsetypedef).
 
 ### delete_mission_profile
 
-Type annotations for `boto3.client("groundstation").delete_mission_profile` method.
+Type annotations for `boto3.client("groundstation").delete_mission_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile]
+Boto3 documentation:
+[GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
 
-```python
-def delete_mission_profile(
-    self,
-    missionProfileId: str
-) -> MissionProfileIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `missionProfileId`: `str` *(required)*
+
+Returns
+[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
 
 ### describe_contact
 
 Type annotations for `boto3.client("groundstation").describe_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact]
+Boto3 documentation:
+[GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
 
-```python
-def describe_contact(
-    self,
-    contactId: str
-) -> DescribeContactResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `contactId`: `str` *(required)*
+
+Returns
+[DescribeContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#describecontactresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("groundstation").generate_presigned_url` method.
+Type annotations for `boto3.client("groundstation").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url]
+Boto3 documentation:
+[GroundStation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_config
 
 Type annotations for `boto3.client("groundstation").get_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config]
+Boto3 documentation:
+[GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
 
-```python
-def get_config(
-    self,
-    configId: str,
-    configType: ConfigCapabilityType
-) -> GetConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `configId`: `str` *(required)*
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+  *(required)*
+
+Returns
+[GetConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getconfigresponsetypedef).
 
 ### get_dataflow_endpoint_group
 
-Type annotations for `boto3.client("groundstation").get_dataflow_endpoint_group` method.
+Type annotations for
+`boto3.client("groundstation").get_dataflow_endpoint_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group]
+Boto3 documentation:
+[GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
 
-```python
-def get_dataflow_endpoint_group(
-    self,
-    dataflowEndpointGroupId: str
-) -> GetDataflowEndpointGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `dataflowEndpointGroupId`: `str` *(required)*
+
+Returns
+[GetDataflowEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getdataflowendpointgroupresponsetypedef).
 
 ### get_minute_usage
 
 Type annotations for `boto3.client("groundstation").get_minute_usage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage]
+Boto3 documentation:
+[GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
 
-```python
-def get_minute_usage(
-    self,
-    month: int,
-    year: int
-) -> GetMinuteUsageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `month`: `int` *(required)*
+- `year`: `int` *(required)*
+
+Returns
+[GetMinuteUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getminuteusageresponsetypedef).
 
 ### get_mission_profile
 
-Type annotations for `boto3.client("groundstation").get_mission_profile` method.
+Type annotations for `boto3.client("groundstation").get_mission_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile]
+Boto3 documentation:
+[GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
 
-```python
-def get_mission_profile(
-    self,
-    missionProfileId: str
-) -> GetMissionProfileResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `missionProfileId`: `str` *(required)*
+
+Returns
+[GetMissionProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getmissionprofileresponsetypedef).
 
 ### get_satellite
 
 Type annotations for `boto3.client("groundstation").get_satellite` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite]
+Boto3 documentation:
+[GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
 
-```python
-def get_satellite(
-    self,
-    satelliteId: str
-) -> GetSatelliteResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `satelliteId`: `str` *(required)*
+
+Returns
+[GetSatelliteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getsatelliteresponsetypedef).
 
 ### list_configs
 
 Type annotations for `boto3.client("groundstation").list_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs]
+Boto3 documentation:
+[GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
 
-```python
-def list_configs(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListConfigsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listconfigsresponsetypedef).
 
 ### list_contacts
 
 Type annotations for `boto3.client("groundstation").list_contacts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts]
+Boto3 documentation:
+[GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
 
-```python
-def list_contacts(
-    self,
-    endTime: datetime,
-    startTime: datetime,
-    statusList: List[ContactStatus],
-    groundStation: str = None,
-    maxResults: int = None,
-    missionProfileArn: str = None,
-    nextToken: str = None,
-    satelliteArn: str = None
-) -> ListContactsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endTime`: `datetime` *(required)*
+- `startTime`: `datetime` *(required)*
+- `statusList`:
+  `List`\[[ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)\]
+  *(required)*
+- `groundStation`: `str`
+- `maxResults`: `int`
+- `missionProfileArn`: `str`
+- `nextToken`: `str`
+- `satelliteArn`: `str`
+
+Returns
+[ListContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listcontactsresponsetypedef).
 
 ### list_dataflow_endpoint_groups
 
-Type annotations for `boto3.client("groundstation").list_dataflow_endpoint_groups` method.
+Type annotations for
+`boto3.client("groundstation").list_dataflow_endpoint_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups]
+Boto3 documentation:
+[GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
 
-```python
-def list_dataflow_endpoint_groups(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListDataflowEndpointGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListDataflowEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listdataflowendpointgroupsresponsetypedef).
 
 ### list_ground_stations
 
-Type annotations for `boto3.client("groundstation").list_ground_stations` method.
+Type annotations for `boto3.client("groundstation").list_ground_stations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations]
+Boto3 documentation:
+[GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
 
-```python
-def list_ground_stations(
-    self,
-    maxResults: int = None,
-    nextToken: str = None,
-    satelliteId: str = None
-) -> ListGroundStationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `satelliteId`: `str`
+
+Returns
+[ListGroundStationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listgroundstationsresponsetypedef).
 
 ### list_mission_profiles
 
-Type annotations for `boto3.client("groundstation").list_mission_profiles` method.
+Type annotations for `boto3.client("groundstation").list_mission_profiles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles]
+Boto3 documentation:
+[GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
 
-```python
-def list_mission_profiles(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListMissionProfilesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListMissionProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listmissionprofilesresponsetypedef).
 
 ### list_satellites
 
 Type annotations for `boto3.client("groundstation").list_satellites` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites]
+Boto3 documentation:
+[GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
 
-```python
-def list_satellites(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListSatellitesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListSatellitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listsatellitesresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("groundstation").list_tags_for_resource` method.
+Type annotations for `boto3.client("groundstation").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource]
+Boto3 documentation:
+[GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### reserve_contact
 
 Type annotations for `boto3.client("groundstation").reserve_contact` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact]
+Boto3 documentation:
+[GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
 
-```python
-def reserve_contact(
-    self,
-    endTime: datetime,
-    groundStation: str,
-    missionProfileArn: str,
-    satelliteArn: str,
-    startTime: datetime,
-    tags: Dict[str, str] = None
-) -> ContactIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `endTime`: `datetime` *(required)*
+- `groundStation`: `str` *(required)*
+- `missionProfileArn`: `str` *(required)*
+- `satelliteArn`: `str` *(required)*
+- `startTime`: `datetime` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ContactIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#contactidresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("groundstation").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource]
+Boto3 documentation:
+[GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("groundstation").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource]
+Boto3 documentation:
+[GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_config
 
 Type annotations for `boto3.client("groundstation").update_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config]
+Boto3 documentation:
+[GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
 
-```python
-def update_config(
-    self,
-    configData: "ConfigTypeDataTypeDef",
-    configId: str,
-    configType: ConfigCapabilityType,
-    name: str
-) -> ConfigIdResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `configData`:
+  [ConfigTypeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configtypedatatypedef)
+  *(required)*
+- `configId`: `str` *(required)*
+- `configType`:
+  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+  *(required)*
+- `name`: `str` *(required)*
+
+Returns
+[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
 
 ### update_mission_profile
 
-Type annotations for `boto3.client("groundstation").update_mission_profile` method.
+Type annotations for `boto3.client("groundstation").update_mission_profile`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile]
+Boto3 documentation:
+[GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
 
-```python
-def update_mission_profile(
-    self,
-    missionProfileId: str,
-    contactPostPassDurationSeconds: int = None,
-    contactPrePassDurationSeconds: int = None,
-    dataflowEdges: List[List[str]] = None,
-    minimumViableContactDurationSeconds: int = None,
-    name: str = None,
-    trackingConfigArn: str = None
-) -> MissionProfileIdResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `missionProfileId`: `str` *(required)*
+- `contactPostPassDurationSeconds`: `int`
+- `contactPrePassDurationSeconds`: `int`
+- `dataflowEdges`: `List`\[`List`\[`str`\]\]
+- `minimumViableContactDurationSeconds`: `int`
+- `name`: `str`
+- `trackingConfigArn`: `str`
 
+Returns
+[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("groundstation").get_paginator` method with overloads.
+Type annotations for `boto3.client("groundstation").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_configs")` -> [ListConfigsPaginator](./paginators.md#listconfigspaginator)
-- `client.get_paginator("list_contacts")` -> [ListContactsPaginator](./paginators.md#listcontactspaginator)
-- `client.get_paginator("list_dataflow_endpoint_groups")` -> [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
-- `client.get_paginator("list_ground_stations")` -> [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
-- `client.get_paginator("list_mission_profiles")` -> [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
-- `client.get_paginator("list_satellites")` -> [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
-
-
+- `client.get_paginator("list_configs")` ->
+  [ListConfigsPaginator](./paginators.md#listconfigspaginator)
+- `client.get_paginator("list_contacts")` ->
+  [ListContactsPaginator](./paginators.md#listcontactspaginator)
+- `client.get_paginator("list_dataflow_endpoint_groups")` ->
+  [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
+- `client.get_paginator("list_ground_stations")` ->
+  [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
+- `client.get_paginator("list_mission_profiles")` ->
+  [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
+- `client.get_paginator("list_satellites")` ->
+  [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)

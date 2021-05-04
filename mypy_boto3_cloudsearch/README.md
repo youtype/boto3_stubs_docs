@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudSearch
 
-Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+Auto-generated documentation for
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+type annotations stubs module
+[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 ```bash
 pip install mypy-boto3-cloudsearch
@@ -18,7 +20,8 @@ pip install mypy-boto3-cloudsearch
 
 ## CloudSearchClient
 
-Type annotations for  `boto3.client("cloudsearch")` as [CloudSearchClient](./client.md)
+Type annotations for `boto3.client("cloudsearch")` as
+[CloudSearchClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_cloudsearch.client import CloudSearchClient
 ```
 
-
 CloudSearchClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [build_suggesters](./client.md#build-suggesters)
 - [can_paginate](./client.md#can-paginate)
 - [create_domain](./client.md#create-domain)
@@ -61,10 +62,8 @@ CloudSearchClient [exceptions](./client.md#exceptions)
 - [update_scaling_parameters](./client.md#update-scaling-parameters)
 - [update_service_access_policies](./client.md#update-service-access-policies)
 
-
-
-
 ### Exceptions
+
 - [BaseException](./client.md#baseexception)
 - [ClientError](./client.md#clienterror)
 - [DisabledOperationException](./client.md#disabledoperationexception)
@@ -73,15 +72,6 @@ CloudSearchClient [exceptions](./client.md#exceptions)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -101,13 +91,10 @@ from mypy_boto3_cloudsearch.literals import AlgorithmicStemming, ...
 - [SuggesterFuzzyMatching](./literals.md#suggesterfuzzymatching)
 - [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

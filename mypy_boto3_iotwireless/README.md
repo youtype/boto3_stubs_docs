@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTWireless
 
-Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
-type annotations stubs module [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+Auto-generated documentation for
+[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+type annotations stubs module
+[mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ```bash
 pip install mypy-boto3-iotwireless
@@ -18,7 +20,8 @@ pip install mypy-boto3-iotwireless
 
 ## IoTWirelessClient
 
-Type annotations for  `boto3.client("iotwireless")` as [IoTWirelessClient](./client.md)
+Type annotations for `boto3.client("iotwireless")` as
+[IoTWirelessClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iotwireless.client import IoTWirelessClient
 ```
 
-
 IoTWirelessClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_aws_account_with_partner_account](./client.md#associate-aws-account-with-partner-account)
 - [associate_wireless_device_with_thing](./client.md#associate-wireless-device-with-thing)
 - [associate_wireless_gateway_with_certificate](./client.md#associate-wireless-gateway-with-certificate)
@@ -86,10 +87,8 @@ IoTWirelessClient [exceptions](./client.md#exceptions)
 - [update_wireless_device](./client.md#update-wireless-device)
 - [update_wireless_gateway](./client.md#update-wireless-gateway)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -98,15 +97,6 @@ IoTWirelessClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +123,10 @@ from mypy_boto3_iotwireless.literals import BatteryLevel, ...
 - [WirelessGatewayTaskDefinitionType](./literals.md#wirelessgatewaytaskdefinitiontype)
 - [WirelessGatewayTaskStatus](./literals.md#wirelessgatewaytaskstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

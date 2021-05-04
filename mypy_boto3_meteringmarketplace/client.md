@@ -1,9 +1,12 @@
 # MarketplaceMeteringClient for boto3 MarketplaceMetering module
 
-> [Index](../README.md) > [MarketplaceMetering](./README.md) > MarketplaceMeteringClient
+> [Index](../README.md) > [MarketplaceMetering](./README.md) >
+> MarketplaceMeteringClient
 
-Auto-generated documentation for [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
-type annotations stubs module [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
+Auto-generated documentation for
+[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+type annotations stubs module
+[mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [MarketplaceMeteringClient for boto3 MarketplaceMetering module](#marketplacemeteringclient-for-boto3-marketplacemetering-module)
   - [MarketplaceMeteringClient](#marketplacemeteringclient)
@@ -29,12 +32,13 @@ def get_meteringmarketplace_client() -> MarketplaceMeteringClient:
     return boto3.client("meteringmarketplace")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
+Boto3 documentation:
+[MarketplaceMetering.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_meteringmarketplace.client import Exceptions
@@ -42,7 +46,6 @@ from mypy_boto3_meteringmarketplace.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -65,104 +68,104 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.TimestampOutOfBoundsException`
 
-
 ## Methods
-
 
 ### batch_meter_usage
 
-Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage` method.
+Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage]
+Boto3 documentation:
+[MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
 
-```python
-def batch_meter_usage(
-    self,
-    UsageRecords: List["UsageRecordTypeDef"],
-    ProductCode: str
-) -> BatchMeterUsageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `UsageRecords`:
+  `List`\[[UsageRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usagerecordtypedef)\]
+  *(required)*
+- `ProductCode`: `str` *(required)*
+
+Returns
+[BatchMeterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#batchmeterusageresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("meteringmarketplace").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate]
+Boto3 documentation:
+[MarketplaceMetering.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("meteringmarketplace").generate_presigned_url` method.
+Type annotations for
+`boto3.client("meteringmarketplace").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url]
+Boto3 documentation:
+[MarketplaceMetering.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### meter_usage
 
 Type annotations for `boto3.client("meteringmarketplace").meter_usage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage]
+Boto3 documentation:
+[MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
 
-```python
-def meter_usage(
-    self,
-    ProductCode: str,
-    Timestamp: datetime,
-    UsageDimension: str,
-    UsageQuantity: int = None,
-    DryRun: bool = None,
-    UsageAllocations: List["UsageAllocationTypeDef"] = None
-) -> MeterUsageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductCode`: `str` *(required)*
+- `Timestamp`: `datetime` *(required)*
+- `UsageDimension`: `str` *(required)*
+- `UsageQuantity`: `int`
+- `DryRun`: `bool`
+- `UsageAllocations`:
+  `List`\[[UsageAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usageallocationtypedef)\]
+
+Returns
+[MeterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#meterusageresulttypedef).
 
 ### register_usage
 
-Type annotations for `boto3.client("meteringmarketplace").register_usage` method.
+Type annotations for `boto3.client("meteringmarketplace").register_usage`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage]
+Boto3 documentation:
+[MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
 
-```python
-def register_usage(
-    self,
-    ProductCode: str,
-    PublicKeyVersion: int,
-    Nonce: str = None
-) -> RegisterUsageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ProductCode`: `str` *(required)*
+- `PublicKeyVersion`: `int` *(required)*
+- `Nonce`: `str`
+
+Returns
+[RegisterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#registerusageresulttypedef).
 
 ### resolve_customer
 
-Type annotations for `boto3.client("meteringmarketplace").resolve_customer` method.
+Type annotations for `boto3.client("meteringmarketplace").resolve_customer`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer]
+Boto3 documentation:
+[MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
 
-```python
-def resolve_customer(
-    self,
-    RegistrationToken: str
-) -> ResolveCustomerResultTypeDef:
-    pass
-```
+Arguments:
 
+- `RegistrationToken`: `str` *(required)*
 
-
+Returns
+[ResolveCustomerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#resolvecustomerresulttypedef).

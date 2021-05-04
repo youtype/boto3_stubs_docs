@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ConfigService](./README.md) > Literals
 
-Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+Auto-generated documentation for
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+type annotations stubs module
+[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Literals for boto3 ConfigService module](#literals-for-boto3-configservice-module)
   - [AggregateConformancePackComplianceSummaryGroupKey](#aggregateconformancepackcompliancesummarygroupkey)

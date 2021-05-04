@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EMRContainers](./README.md) > Literals
 
-Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+Auto-generated documentation for
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+type annotations stubs module
+[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Literals for boto3 EMRContainers module](#literals-for-boto3-emrcontainers-module)
   - [ContainerProviderType](#containerprovidertype)

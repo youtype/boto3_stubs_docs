@@ -1,9 +1,12 @@
 # ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > ResourceGroupsTaggingAPIClient
+> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) >
+> ResourceGroupsTaggingAPIClient
 
-Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
-type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+Auto-generated documentation for
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+type annotations stubs module
+[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module](#resourcegroupstaggingapiclient-for-boto3-resourcegroupstaggingapi-module)
   - [ResourceGroupsTaggingAPIClient](#resourcegroupstaggingapiclient)
@@ -34,12 +37,13 @@ def get_resourcegroupstaggingapi_client() -> ResourceGroupsTaggingAPIClient:
     return boto3.client("resourcegroupstaggingapi")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_resourcegroupstaggingapi.client import Exceptions
@@ -47,7 +51,6 @@ from mypy_boto3_resourcegroupstaggingapi.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -59,177 +62,182 @@ Exceptions:
 - `Exceptions.PaginationTokenExpiredException`
 - `Exceptions.ThrottledException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_report_creation
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
-```python
-def describe_report_creation(
-    self
-) -> DescribeReportCreationOutputTypeDef:
-    pass
-```
+Returns
+[DescribeReportCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#describereportcreationoutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_compliance_summary
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
 
-```python
-def get_compliance_summary(
-    self,
-    TargetIdFilters: List[str] = None,
-    RegionFilters: List[str] = None,
-    ResourceTypeFilters: List[str] = None,
-    TagKeyFilters: List[str] = None,
-    GroupBy: List[GroupByAttribute] = None,
-    MaxResults: int = None,
-    PaginationToken: str = None
-) -> GetComplianceSummaryOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TargetIdFilters`: `List`\[`str`\]
+- `RegionFilters`: `List`\[`str`\]
+- `ResourceTypeFilters`: `List`\[`str`\]
+- `TagKeyFilters`: `List`\[`str`\]
+- `GroupBy`:
+  `List`\[[GroupByAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#groupbyattribute)\]
+- `MaxResults`: `int`
+- `PaginationToken`: `str`
+
+Returns
+[GetComplianceSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getcompliancesummaryoutputtypedef).
 
 ### get_resources
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
 
-```python
-def get_resources(
-    self,
-    PaginationToken: str = None,
-    TagFilters: List[TagFilterTypeDef] = None,
-    ResourcesPerPage: int = None,
-    TagsPerPage: int = None,
-    ResourceTypeFilters: List[str] = None,
-    IncludeComplianceDetails: bool = None,
-    ExcludeCompliantResources: bool = None,
-    ResourceARNList: List[str] = None
-) -> GetResourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PaginationToken`: `str`
+- `TagFilters`:
+  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagfiltertypedef)\]
+- `ResourcesPerPage`: `int`
+- `TagsPerPage`: `int`
+- `ResourceTypeFilters`: `List`\[`str`\]
+- `IncludeComplianceDetails`: `bool`
+- `ExcludeCompliantResources`: `bool`
+- `ResourceARNList`: `List`\[`str`\]
+
+Returns
+[GetResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getresourcesoutputtypedef).
 
 ### get_tag_keys
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
-```python
-def get_tag_keys(
-    self,
-    PaginationToken: str = None
-) -> GetTagKeysOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `PaginationToken`: `str`
+
+Returns
+[GetTagKeysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagkeysoutputtypedef).
 
 ### get_tag_values
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
-```python
-def get_tag_values(
-    self,
-    Key: str,
-    PaginationToken: str = None
-) -> GetTagValuesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Key`: `str` *(required)*
+- `PaginationToken`: `str`
+
+Returns
+[GetTagValuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagvaluesoutputtypedef).
 
 ### start_report_creation
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").start_report_creation` method.
+Type annotations for
+`boto3.client("resourcegroupstaggingapi").start_report_creation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
 
-```python
-def start_report_creation(
-    self,
-    S3Bucket: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `S3Bucket`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resources
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
-```python
-def tag_resources(
-    self,
-    ResourceARNList: List[str],
-    Tags: Dict[str, str]
-) -> TagResourcesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceARNList`: `List`\[`str`\] *(required)*
+- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns
+[TagResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagresourcesoutputtypedef).
 
 ### untag_resources
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources` method.
+Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources]
+Boto3 documentation:
+[ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
 
-```python
-def untag_resources(
-    self,
-    ResourceARNList: List[str],
-    TagKeys: List[str]
-) -> UntagResourcesOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `ResourceARNList`: `List`\[`str`\] *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
+Returns
+[UntagResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#untagresourcesoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator` method with overloads.
+Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator`
+method with overloads.
 
-- `client.get_paginator("get_compliance_summary")` -> [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
-- `client.get_paginator("get_resources")` -> [GetResourcesPaginator](./paginators.md#getresourcespaginator)
-- `client.get_paginator("get_tag_keys")` -> [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
-- `client.get_paginator("get_tag_values")` -> [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
-
-
+- `client.get_paginator("get_compliance_summary")` ->
+  [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
+- `client.get_paginator("get_resources")` ->
+  [GetResourcesPaginator](./paginators.md#getresourcespaginator)
+- `client.get_paginator("get_tag_keys")` ->
+  [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
+- `client.get_paginator("get_tag_values")` ->
+  [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MediaPackage](./README.md) > Literals
 
-Auto-generated documentation for [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
-type annotations stubs module [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+Auto-generated documentation for
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+type annotations stubs module
+[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 - [Literals for boto3 MediaPackage module](#literals-for-boto3-mediapackage-module)
   - [AdMarkers](#admarkers)
@@ -22,8 +24,8 @@ type annotations stubs module [mypy_boto3_mediapackage](https://pypi.org/project
   - [Status](#status)
   - [StreamOrder](#streamorder)
   - [UtcTiming](#utctiming)
-  - [__AdTriggersElement](#__adtriggerselement)
-  - [__PeriodTriggersElement](#__periodtriggerselement)
+  - [\_\_AdTriggersElement](#__adtriggerselement)
+  - [\_\_PeriodTriggersElement](#__periodtriggerselement)
 
 ## AdMarkers
 
@@ -205,7 +207,7 @@ Values:
 - `HTTP-ISO`
 - `NONE`
 
-## __AdTriggersElement
+## \_\_AdTriggersElement
 
 ```python
 from mypy_boto3_mediapackage.literals import __AdTriggersElement
@@ -222,7 +224,7 @@ Values:
 - `PROVIDER_PLACEMENT_OPPORTUNITY`
 - `SPLICE_INSERT`
 
-## __PeriodTriggersElement
+## \_\_PeriodTriggersElement
 
 ```python
 from mypy_boto3_mediapackage.literals import __PeriodTriggersElement

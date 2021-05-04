@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LookoutEquipment](./README.md) > Structures
 
-Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
-type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+Auto-generated documentation for
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+type annotations stubs module
+[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [Typed dictionaries for boto3 LookoutEquipment module](#typed-dictionaries-for-boto3-lookoutequipment-module)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
@@ -47,14 +49,12 @@ type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/pro
 from mypy_boto3_lookoutequipment.type_defs import CreateDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: `DatasetStatus`
-
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datasetstatus)
 
 ## CreateInferenceSchedulerResponseTypeDef
 
@@ -62,14 +62,12 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InferenceSchedulerArn`: `str`
 - `InferenceSchedulerName`: `str`
-- `Status`: `InferenceSchedulerStatus`
-
+- `Status`:
+  [InferenceSchedulerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceschedulerstatus)
 
 ## CreateModelResponseTypeDef
 
@@ -77,13 +75,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import CreateModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ModelArn`: `str`
-- `Status`: `ModelStatus`
 
+- `ModelArn`: `str`
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#modelstatus)
 
 ## DataIngestionJobSummaryTypeDef
 
@@ -91,16 +87,15 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DataIngestionJobSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `IngestionInputConfiguration`: `"IngestionInputConfigurationTypeDef"`
-- `Status`: `IngestionJobStatus`
-
+- `IngestionInputConfiguration`:
+  [IngestionInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestioninputconfigurationtypedef)
+- `Status`:
+  [IngestionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#ingestionjobstatus)
 
 ## DataPreProcessingConfigurationTypeDef
 
@@ -108,12 +103,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DataPreProcessingConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TargetSamplingRate`: `TargetSamplingRate`
 
+- `TargetSamplingRate`:
+  [TargetSamplingRate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#targetsamplingrate)
 
 ## DatasetSchemaTypeDef
 
@@ -121,12 +114,9 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DatasetSchemaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InlineDataSchema`: `str`
 
+- `InlineDataSchema`: `str`
 
 ## DatasetSummaryTypeDef
 
@@ -134,15 +124,13 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DatasetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: `DatasetStatus`
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datasetstatus)
 - `CreatedAt`: `datetime`
-
 
 ## DescribeDataIngestionJobResponseTypeDef
 
@@ -150,18 +138,17 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `JobId`: `str`
 - `DatasetArn`: `str`
-- `IngestionInputConfiguration`: `"IngestionInputConfigurationTypeDef"`
+- `IngestionInputConfiguration`:
+  [IngestionInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestioninputconfigurationtypedef)
 - `RoleArn`: `str`
 - `CreatedAt`: `datetime`
-- `Status`: `IngestionJobStatus`
+- `Status`:
+  [IngestionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#ingestionjobstatus)
 - `FailedReason`: `str`
-
 
 ## DescribeDatasetResponseTypeDef
 
@@ -169,19 +156,18 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
-- `Status`: `DatasetStatus`
+- `Status`:
+  [DatasetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datasetstatus)
 - `Schema`: `str`
 - `ServerSideKmsKeyId`: `str`
-- `IngestionInputConfiguration`: `"IngestionInputConfigurationTypeDef"`
-
+- `IngestionInputConfiguration`:
+  [IngestionInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestioninputconfigurationtypedef)
 
 ## DescribeInferenceSchedulerResponseTypeDef
 
@@ -189,24 +175,25 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelArn`: `str`
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: `InferenceSchedulerStatus`
+- `Status`:
+  [InferenceSchedulerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceschedulerstatus)
 - `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`: `DataUploadFrequency`
+- `DataUploadFrequency`:
+  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `DataInputConfiguration`: `"InferenceInputConfigurationTypeDef"`
-- `DataOutputConfiguration`: `"InferenceOutputConfigurationTypeDef"`
+- `DataInputConfiguration`:
+  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+- `DataOutputConfiguration`:
+  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
 - `RoleArn`: `str`
 - `ServerSideKmsKeyId`: `str`
-
 
 ## DescribeModelResponseTypeDef
 
@@ -214,23 +201,24 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import DescribeModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
 - `Schema`: `str`
-- `LabelsInputConfiguration`: `"LabelsInputConfigurationTypeDef"`
+- `LabelsInputConfiguration`:
+  [LabelsInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#labelsinputconfigurationtypedef)
 - `TrainingDataStartTime`: `datetime`
 - `TrainingDataEndTime`: `datetime`
 - `EvaluationDataStartTime`: `datetime`
 - `EvaluationDataEndTime`: `datetime`
 - `RoleArn`: `str`
-- `DataPreProcessingConfiguration`: `"DataPreProcessingConfigurationTypeDef"`
-- `Status`: `ModelStatus`
+- `DataPreProcessingConfiguration`:
+  [DataPreProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datapreprocessingconfigurationtypedef)
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#modelstatus)
 - `TrainingExecutionStartTime`: `datetime`
 - `TrainingExecutionEndTime`: `datetime`
 - `FailedReason`: `str`
@@ -239,17 +227,14 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `ServerSideKmsKeyId`: `str`
 
-
 ## InferenceExecutionSummaryTypeDef
 
 ```python
 from mypy_boto3_lookoutequipment.type_defs import InferenceExecutionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `InferenceSchedulerName`: `str`
@@ -257,12 +242,15 @@ Optional fields:
 - `ScheduledStartTime`: `datetime`
 - `DataStartTime`: `datetime`
 - `DataEndTime`: `datetime`
-- `DataInputConfiguration`: `"InferenceInputConfigurationTypeDef"`
-- `DataOutputConfiguration`: `"InferenceOutputConfigurationTypeDef"`
-- `CustomerResultObject`: `"S3ObjectTypeDef"`
-- `Status`: `InferenceExecutionStatus`
+- `DataInputConfiguration`:
+  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+- `DataOutputConfiguration`:
+  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
+- `CustomerResultObject`:
+  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#s3objecttypedef)
+- `Status`:
+  [InferenceExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceexecutionstatus)
 - `FailedReason`: `str`
-
 
 ## InferenceInputConfigurationTypeDef
 
@@ -270,14 +258,13 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceInputConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3InputConfiguration`: `"InferenceS3InputConfigurationTypeDef"`
-- `InputTimeZoneOffset`: `str`
-- `InferenceInputNameConfiguration`: `"InferenceInputNameConfigurationTypeDef"`
 
+- `S3InputConfiguration`:
+  [InferenceS3InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferences3inputconfigurationtypedef)
+- `InputTimeZoneOffset`: `str`
+- `InferenceInputNameConfiguration`:
+  [InferenceInputNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputnameconfigurationtypedef)
 
 ## InferenceInputNameConfigurationTypeDef
 
@@ -285,13 +272,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceInputNameConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TimestampFormat`: `str`
 - `ComponentTimestampDelimiter`: `str`
-
 
 ## InferenceOutputConfigurationTypeDef
 
@@ -299,15 +283,14 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceOutputConfigurationTypeDef
 ```
 
-
 Required fields:
-- `S3OutputConfiguration`: `"InferenceS3OutputConfigurationTypeDef"`
 
-
+- `S3OutputConfiguration`:
+  [InferenceS3OutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferences3outputconfigurationtypedef)
 
 Optional fields:
-- `KmsKeyId`: `str`
 
+- `KmsKeyId`: `str`
 
 ## InferenceS3InputConfigurationTypeDef
 
@@ -315,15 +298,13 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceS3InputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
 
+- `Prefix`: `str`
 
 ## InferenceS3OutputConfigurationTypeDef
 
@@ -331,15 +312,13 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceS3OutputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
 
+- `Prefix`: `str`
 
 ## InferenceSchedulerSummaryTypeDef
 
@@ -347,18 +326,17 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import InferenceSchedulerSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: `InferenceSchedulerStatus`
+- `Status`:
+  [InferenceSchedulerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceschedulerstatus)
 - `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`: `DataUploadFrequency`
-
+- `DataUploadFrequency`:
+  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
 
 ## IngestionInputConfigurationTypeDef
 
@@ -366,12 +344,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import IngestionInputConfigurationTypeDef
 ```
 
-
 Required fields:
-- `S3InputConfiguration`: `"IngestionS3InputConfigurationTypeDef"`
 
-
-
+- `S3InputConfiguration`:
+  [IngestionS3InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestions3inputconfigurationtypedef)
 
 ## IngestionS3InputConfigurationTypeDef
 
@@ -379,15 +355,13 @@ Required fields:
 from mypy_boto3_lookoutequipment.type_defs import IngestionS3InputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
 
+- `Prefix`: `str`
 
 ## LabelsInputConfigurationTypeDef
 
@@ -395,12 +369,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import LabelsInputConfigurationTypeDef
 ```
 
-
 Required fields:
-- `S3InputConfiguration`: `"LabelsS3InputConfigurationTypeDef"`
 
-
-
+- `S3InputConfiguration`:
+  [LabelsS3InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#labelss3inputconfigurationtypedef)
 
 ## LabelsS3InputConfigurationTypeDef
 
@@ -408,15 +380,13 @@ Required fields:
 from mypy_boto3_lookoutequipment.type_defs import LabelsS3InputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 
-
-
 Optional fields:
-- `Prefix`: `str`
 
+- `Prefix`: `str`
 
 ## ListDataIngestionJobsResponseTypeDef
 
@@ -424,13 +394,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `DataIngestionJobSummaries`: `List["DataIngestionJobSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `DataIngestionJobSummaries`:
+  `List`\[[DataIngestionJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#dataingestionjobsummarytypedef)\]
 
 ## ListDatasetsResponseTypeDef
 
@@ -438,13 +406,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListDatasetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `DatasetSummaries`: `List["DatasetSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `DatasetSummaries`:
+  `List`\[[DatasetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datasetsummarytypedef)\]
 
 ## ListInferenceExecutionsResponseTypeDef
 
@@ -452,13 +418,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `InferenceExecutionSummaries`: `List["InferenceExecutionSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `InferenceExecutionSummaries`:
+  `List`\[[InferenceExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceexecutionsummarytypedef)\]
 
 ## ListInferenceSchedulersResponseTypeDef
 
@@ -466,13 +430,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `InferenceSchedulerSummaries`: `List["InferenceSchedulerSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `InferenceSchedulerSummaries`:
+  `List`\[[InferenceSchedulerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceschedulersummarytypedef)\]
 
 ## ListModelsResponseTypeDef
 
@@ -480,13 +442,11 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `ModelSummaries`: `List["ModelSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `ModelSummaries`:
+  `List`\[[ModelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#modelsummarytypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -494,12 +454,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
 
 ## ModelSummaryTypeDef
 
@@ -507,17 +465,15 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import ModelSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: `ModelStatus`
+- `Status`:
+  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#modelstatus)
 - `CreatedAt`: `datetime`
-
 
 ## S3ObjectTypeDef
 
@@ -525,13 +481,10 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import S3ObjectTypeDef
 ```
 
-
 Required fields:
+
 - `Bucket`: `str`
 - `Key`: `str`
-
-
-
 
 ## StartDataIngestionJobResponseTypeDef
 
@@ -539,13 +492,11 @@ Required fields:
 from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JobId`: `str`
-- `Status`: `IngestionJobStatus`
 
+- `JobId`: `str`
+- `Status`:
+  [IngestionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#ingestionjobstatus)
 
 ## StartInferenceSchedulerResponseTypeDef
 
@@ -553,16 +504,14 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelArn`: `str`
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: `InferenceSchedulerStatus`
-
+- `Status`:
+  [InferenceSchedulerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceschedulerstatus)
 
 ## StopInferenceSchedulerResponseTypeDef
 
@@ -570,16 +519,14 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ModelArn`: `str`
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: `InferenceSchedulerStatus`
-
+- `Status`:
+  [InferenceSchedulerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceschedulerstatus)
 
 ## TagTypeDef
 
@@ -587,10 +534,7 @@ Optional fields:
 from mypy_boto3_lookoutequipment.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-

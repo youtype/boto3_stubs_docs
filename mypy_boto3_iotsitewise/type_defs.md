@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Structures
 
-Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+Auto-generated documentation for
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+type annotations stubs module
+[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Typed dictionaries for boto3 IoTSiteWise module](#typed-dictionaries-for-boto3-iotsitewise-module)
   - [AccessPolicySummaryTypeDef](#accesspolicysummarytypedef)
@@ -121,19 +123,20 @@ type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/
 from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-- `identity`: `"IdentityTypeDef"`
-- `resource`: `"ResourceTypeDef"`
-- `permission`: `Permission`
-
-
+- `identity`:
+  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#identitytypedef)
+- `resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#resourcetypedef)
+- `permission`:
+  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#permission)
 
 Optional fields:
+
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-
 
 ## AggregatedValueTypeDef
 
@@ -141,16 +144,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AggregatedValueTypeDef
 ```
 
-
 Required fields:
+
 - `timestamp`: `datetime`
-- `value`: `"AggregatesTypeDef"`
-
-
+- `value`:
+  [AggregatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#aggregatestypedef)
 
 Optional fields:
-- `quality`: `Quality`
 
+- `quality`:
+  [Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)
 
 ## AggregatesTypeDef
 
@@ -158,10 +161,8 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AggregatesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `average`: `float`
 - `count`: `float`
 - `maximum`: `float`
@@ -169,24 +170,22 @@ Optional fields:
 - `sum`: `float`
 - `standardDeviation`: `float`
 
-
 ## AssetCompositeModelTypeDef
 
 ```python
 from mypy_boto3_iotsitewise.type_defs import AssetCompositeModelTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
-- `properties`: `List["AssetPropertyTypeDef"]`
-
-
+- `properties`:
+  `List`\[[AssetPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetpropertytypedef)\]
 
 Optional fields:
-- `description`: `str`
 
+- `description`: `str`
 
 ## AssetErrorDetailsTypeDef
 
@@ -194,14 +193,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetErrorDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `assetId`: `str`
 - `code`: `Literal['INTERNAL_FAILURE']`
 - `message`: `str`
-
-
-
 
 ## AssetHierarchyInfoTypeDef
 
@@ -209,13 +205,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import AssetHierarchyInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `parentAssetId`: `str`
 - `childAssetId`: `str`
-
 
 ## AssetHierarchyTypeDef
 
@@ -223,15 +216,13 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetHierarchyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
-- `id`: `str`
 
+- `id`: `str`
 
 ## AssetModelCompositeModelDefinitionTypeDef
 
@@ -239,17 +230,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelCompositeModelDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
 
-
-
 Optional fields:
-- `description`: `str`
-- `properties`: `List["AssetModelPropertyDefinitionTypeDef"]`
 
+- `description`: `str`
+- `properties`:
+  `List`\[[AssetModelPropertyDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelpropertydefinitiontypedef)\]
 
 ## AssetModelCompositeModelTypeDef
 
@@ -257,17 +247,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelCompositeModelTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
 
-
-
 Optional fields:
-- `description`: `str`
-- `properties`: `List["AssetModelPropertyTypeDef"]`
 
+- `description`: `str`
+- `properties`:
+  `List`\[[AssetModelPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelpropertytypedef)\]
 
 ## AssetModelHierarchyDefinitionTypeDef
 
@@ -275,13 +264,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelHierarchyDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `childAssetModelId`: `str`
-
-
-
 
 ## AssetModelHierarchyTypeDef
 
@@ -289,16 +275,14 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelHierarchyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `childAssetModelId`: `str`
 
-
-
 Optional fields:
-- `id`: `str`
 
+- `id`: `str`
 
 ## AssetModelPropertyDefinitionTypeDef
 
@@ -306,18 +290,18 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `dataType`: `PropertyDataType`
-- `type`: `"PropertyTypeTypeDef"`
-
-
+- `dataType`:
+  [PropertyDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertydatatype)
+- `type`:
+  [PropertyTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertytypetypedef)
 
 Optional fields:
+
 - `dataTypeSpec`: `str`
 - `unit`: `str`
-
 
 ## AssetModelPropertyTypeDef
 
@@ -325,19 +309,19 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `dataType`: `PropertyDataType`
-- `type`: `"PropertyTypeTypeDef"`
-
-
+- `dataType`:
+  [PropertyDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertydatatype)
+- `type`:
+  [PropertyTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertytypetypedef)
 
 Optional fields:
+
 - `id`: `str`
 - `dataTypeSpec`: `str`
 - `unit`: `str`
-
 
 ## AssetModelStatusTypeDef
 
@@ -345,15 +329,15 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelStatusTypeDef
 ```
 
-
 Required fields:
-- `state`: `AssetModelState`
 
-
+- `state`:
+  [AssetModelState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#assetmodelstate)
 
 Optional fields:
-- `error`: `"ErrorDetailsTypeDef"`
 
+- `error`:
+  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#errordetailstypedef)
 
 ## AssetModelSummaryTypeDef
 
@@ -361,18 +345,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetModelSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-- `status`: `"AssetModelStatusTypeDef"`
-
-
-
+- `status`:
+  [AssetModelStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelstatustypedef)
 
 ## AssetPropertyTypeDef
 
@@ -380,20 +362,20 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import AssetPropertyTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
-- `dataType`: `PropertyDataType`
-
-
+- `dataType`:
+  [PropertyDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertydatatype)
 
 Optional fields:
+
 - `alias`: `str`
-- `notification`: `"PropertyNotificationTypeDef"`
+- `notification`:
+  [PropertyNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertynotificationtypedef)
 - `dataTypeSpec`: `str`
 - `unit`: `str`
-
 
 ## AssetPropertyValueTypeDef
 
@@ -401,16 +383,17 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetPropertyValueTypeDef
 ```
 
-
 Required fields:
-- `value`: `"VariantTypeDef"`
-- `timestamp`: `"TimeInNanosTypeDef"`
 
-
+- `value`:
+  [VariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#varianttypedef)
+- `timestamp`:
+  [TimeInNanosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#timeinnanostypedef)
 
 Optional fields:
-- `quality`: `Quality`
 
+- `quality`:
+  [Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)
 
 ## AssetRelationshipSummaryTypeDef
 
@@ -418,15 +401,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetRelationshipSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `relationshipType`: `Literal['HIERARCHY']`
 
-
-
 Optional fields:
-- `hierarchyInfo`: `"AssetHierarchyInfoTypeDef"`
 
+- `hierarchyInfo`:
+  [AssetHierarchyInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assethierarchyinfotypedef)
 
 ## AssetStatusTypeDef
 
@@ -434,15 +416,15 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetStatusTypeDef
 ```
 
-
 Required fields:
-- `state`: `AssetState`
 
-
+- `state`:
+  [AssetState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#assetstate)
 
 Optional fields:
-- `error`: `"ErrorDetailsTypeDef"`
 
+- `error`:
+  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#errordetailstypedef)
 
 ## AssetSummaryTypeDef
 
@@ -450,19 +432,18 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import AssetSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `assetModelId`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-- `status`: `"AssetStatusTypeDef"`
-- `hierarchies`: `List["AssetHierarchyTypeDef"]`
-
-
-
+- `status`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
+- `hierarchies`:
+  `List`\[[AssetHierarchyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assethierarchytypedef)\]
 
 ## AssociatedAssetsSummaryTypeDef
 
@@ -470,19 +451,18 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import AssociatedAssetsSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `arn`: `str`
 - `name`: `str`
 - `assetModelId`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-- `status`: `"AssetStatusTypeDef"`
-- `hierarchies`: `List["AssetHierarchyTypeDef"]`
-
-
-
+- `status`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
+- `hierarchies`:
+  `List`\[[AssetHierarchyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assethierarchytypedef)\]
 
 ## AttributeTypeDef
 
@@ -490,12 +470,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import AttributeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `defaultValue`: `str`
 
+- `defaultValue`: `str`
 
 ## BatchAssociateProjectAssetsResponseTypeDef
 
@@ -503,12 +480,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errors`: `List["AssetErrorDetailsTypeDef"]`
 
+- `errors`:
+  `List`\[[AssetErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#asseterrordetailstypedef)\]
 
 ## BatchDisassociateProjectAssetsResponseTypeDef
 
@@ -516,12 +491,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errors`: `List["AssetErrorDetailsTypeDef"]`
 
+- `errors`:
+  `List`\[[AssetErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#asseterrordetailstypedef)\]
 
 ## BatchPutAssetPropertyErrorEntryTypeDef
 
@@ -529,13 +502,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyErrorEntryTypeDef
 ```
 
-
 Required fields:
+
 - `entryId`: `str`
-- `errors`: `List["BatchPutAssetPropertyErrorTypeDef"]`
-
-
-
+- `errors`:
+  `List`\[[BatchPutAssetPropertyErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#batchputassetpropertyerrortypedef)\]
 
 ## BatchPutAssetPropertyErrorTypeDef
 
@@ -543,14 +514,13 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyErrorTypeDef
 ```
 
-
 Required fields:
-- `errorCode`: `BatchPutAssetPropertyValueErrorCode`
+
+- `errorCode`:
+  [BatchPutAssetPropertyValueErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#batchputassetpropertyvalueerrorcode)
 - `errorMessage`: `str`
-- `timestamps`: `List["TimeInNanosTypeDef"]`
-
-
-
+- `timestamps`:
+  `List`\[[TimeInNanosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#timeinnanostypedef)\]
 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
@@ -558,12 +528,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueResponseTypeDef
 ```
 
-
 Required fields:
-- `errorEntries`: `List["BatchPutAssetPropertyErrorEntryTypeDef"]`
 
-
-
+- `errorEntries`:
+  `List`\[[BatchPutAssetPropertyErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#batchputassetpropertyerrorentrytypedef)\]
 
 ## CompositeModelPropertyTypeDef
 
@@ -571,14 +539,12 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CompositeModelPropertyTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `type`: `str`
-- `assetProperty`: `"PropertyTypeDef"`
-
-
-
+- `assetProperty`:
+  [PropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertytypedef)
 
 ## ConfigurationErrorDetailsTypeDef
 
@@ -586,13 +552,11 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ConfigurationErrorDetailsTypeDef
 ```
 
-
 Required fields:
-- `code`: `ErrorCode`
+
+- `code`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#errorcode)
 - `message`: `str`
-
-
-
 
 ## ConfigurationStatusTypeDef
 
@@ -600,15 +564,15 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ConfigurationStatusTypeDef
 ```
 
-
 Required fields:
-- `state`: `ConfigurationState`
 
-
+- `state`:
+  [ConfigurationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#configurationstate)
 
 Optional fields:
-- `error`: `"ConfigurationErrorDetailsTypeDef"`
 
+- `error`:
+  [ConfigurationErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#configurationerrordetailstypedef)
 
 ## CreateAccessPolicyResponseTypeDef
 
@@ -616,13 +580,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyResponseTypeDef
 ```
 
-
 Required fields:
+
 - `accessPolicyId`: `str`
 - `accessPolicyArn`: `str`
-
-
-
 
 ## CreateAssetModelResponseTypeDef
 
@@ -630,14 +591,12 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreateAssetModelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `assetModelId`: `str`
 - `assetModelArn`: `str`
-- `assetModelStatus`: `"AssetModelStatusTypeDef"`
-
-
-
+- `assetModelStatus`:
+  [AssetModelStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelstatustypedef)
 
 ## CreateAssetResponseTypeDef
 
@@ -645,14 +604,12 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreateAssetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `assetId`: `str`
 - `assetArn`: `str`
-- `assetStatus`: `"AssetStatusTypeDef"`
-
-
-
+- `assetStatus`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
 
 ## CreateDashboardResponseTypeDef
 
@@ -660,13 +617,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreateDashboardResponseTypeDef
 ```
 
-
 Required fields:
+
 - `dashboardId`: `str`
 - `dashboardArn`: `str`
-
-
-
 
 ## CreateGatewayResponseTypeDef
 
@@ -674,13 +628,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreateGatewayResponseTypeDef
 ```
 
-
 Required fields:
+
 - `gatewayId`: `str`
 - `gatewayArn`: `str`
-
-
-
 
 ## CreatePortalResponseTypeDef
 
@@ -688,16 +639,14 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreatePortalResponseTypeDef
 ```
 
-
 Required fields:
+
 - `portalId`: `str`
 - `portalArn`: `str`
 - `portalStartUrl`: `str`
-- `portalStatus`: `"PortalStatusTypeDef"`
+- `portalStatus`:
+  [PortalStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalstatustypedef)
 - `ssoApplicationId`: `str`
-
-
-
 
 ## CreateProjectResponseTypeDef
 
@@ -705,13 +654,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import CreateProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `projectId`: `str`
 - `projectArn`: `str`
-
-
-
 
 ## DashboardSummaryTypeDef
 
@@ -719,18 +665,16 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DashboardSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
 
-
-
 Optional fields:
+
 - `description`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-
 
 ## DeleteAssetModelResponseTypeDef
 
@@ -738,12 +682,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelResponseTypeDef
 ```
 
-
 Required fields:
-- `assetModelStatus`: `"AssetModelStatusTypeDef"`
 
-
-
+- `assetModelStatus`:
+  [AssetModelStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelstatustypedef)
 
 ## DeleteAssetResponseTypeDef
 
@@ -751,12 +693,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetResponseTypeDef
 ```
 
-
 Required fields:
-- `assetStatus`: `"AssetStatusTypeDef"`
 
-
-
+- `assetStatus`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
 
 ## DeletePortalResponseTypeDef
 
@@ -764,12 +704,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DeletePortalResponseTypeDef
 ```
 
-
 Required fields:
-- `portalStatus`: `"PortalStatusTypeDef"`
 
-
-
+- `portalStatus`:
+  [PortalStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalstatustypedef)
 
 ## DescribeAccessPolicyResponseTypeDef
 
@@ -777,18 +715,18 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyResponseTypeDef
 ```
 
-
 Required fields:
+
 - `accessPolicyId`: `str`
 - `accessPolicyArn`: `str`
-- `accessPolicyIdentity`: `"IdentityTypeDef"`
-- `accessPolicyResource`: `"ResourceTypeDef"`
-- `accessPolicyPermission`: `Permission`
+- `accessPolicyIdentity`:
+  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#identitytypedef)
+- `accessPolicyResource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#resourcetypedef)
+- `accessPolicyPermission`:
+  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#permission)
 - `accessPolicyCreationDate`: `datetime`
 - `accessPolicyLastUpdateDate`: `datetime`
-
-
-
 
 ## DescribeAssetModelResponseTypeDef
 
@@ -796,23 +734,25 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelResponseTypeDef
 ```
 
-
 Required fields:
+
 - `assetModelId`: `str`
 - `assetModelArn`: `str`
 - `assetModelName`: `str`
 - `assetModelDescription`: `str`
-- `assetModelProperties`: `List["AssetModelPropertyTypeDef"]`
-- `assetModelHierarchies`: `List["AssetModelHierarchyTypeDef"]`
+- `assetModelProperties`:
+  `List`\[[AssetModelPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelpropertytypedef)\]
+- `assetModelHierarchies`:
+  `List`\[[AssetModelHierarchyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelhierarchytypedef)\]
 - `assetModelCreationDate`: `datetime`
 - `assetModelLastUpdateDate`: `datetime`
-- `assetModelStatus`: `"AssetModelStatusTypeDef"`
-
-
+- `assetModelStatus`:
+  [AssetModelStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelstatustypedef)
 
 Optional fields:
-- `assetModelCompositeModels`: `List["AssetModelCompositeModelTypeDef"]`
 
+- `assetModelCompositeModels`:
+  `List`\[[AssetModelCompositeModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelcompositemodeltypedef)\]
 
 ## DescribeAssetPropertyResponseTypeDef
 
@@ -820,18 +760,18 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyResponseTypeDef
 ```
 
-
 Required fields:
+
 - `assetId`: `str`
 - `assetName`: `str`
 - `assetModelId`: `str`
 
-
-
 Optional fields:
-- `assetProperty`: `"PropertyTypeDef"`
-- `compositeModel`: `"CompositeModelPropertyTypeDef"`
 
+- `assetProperty`:
+  [PropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertytypedef)
+- `compositeModel`:
+  [CompositeModelPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#compositemodelpropertytypedef)
 
 ## DescribeAssetResponseTypeDef
 
@@ -839,23 +779,25 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetResponseTypeDef
 ```
 
-
 Required fields:
+
 - `assetId`: `str`
 - `assetArn`: `str`
 - `assetName`: `str`
 - `assetModelId`: `str`
-- `assetProperties`: `List["AssetPropertyTypeDef"]`
-- `assetHierarchies`: `List["AssetHierarchyTypeDef"]`
+- `assetProperties`:
+  `List`\[[AssetPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetpropertytypedef)\]
+- `assetHierarchies`:
+  `List`\[[AssetHierarchyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assethierarchytypedef)\]
 - `assetCreationDate`: `datetime`
 - `assetLastUpdateDate`: `datetime`
-- `assetStatus`: `"AssetStatusTypeDef"`
-
-
+- `assetStatus`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
 
 Optional fields:
-- `assetCompositeModels`: `List["AssetCompositeModelTypeDef"]`
 
+- `assetCompositeModels`:
+  `List`\[[AssetCompositeModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetcompositemodeltypedef)\]
 
 ## DescribeDashboardResponseTypeDef
 
@@ -863,8 +805,8 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeDashboardResponseTypeDef
 ```
 
-
 Required fields:
+
 - `dashboardId`: `str`
 - `dashboardArn`: `str`
 - `dashboardName`: `str`
@@ -873,11 +815,9 @@ Required fields:
 - `dashboardCreationDate`: `datetime`
 - `dashboardLastUpdateDate`: `datetime`
 
-
-
 Optional fields:
-- `dashboardDescription`: `str`
 
+- `dashboardDescription`: `str`
 
 ## DescribeDefaultEncryptionConfigurationResponseTypeDef
 
@@ -885,16 +825,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeDefaultEncryptionConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `encryptionType`: `EncryptionType`
-- `configurationStatus`: `"ConfigurationStatusTypeDef"`
 
-
+- `encryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#encryptiontype)
+- `configurationStatus`:
+  [ConfigurationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#configurationstatustypedef)
 
 Optional fields:
-- `kmsKeyArn`: `str`
 
+- `kmsKeyArn`: `str`
 
 ## DescribeGatewayCapabilityConfigurationResponseTypeDef
 
@@ -902,15 +842,13 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `gatewayId`: `str`
 - `capabilityNamespace`: `str`
 - `capabilityConfiguration`: `str`
-- `capabilitySyncStatus`: `CapabilitySyncStatus`
-
-
-
+- `capabilitySyncStatus`:
+  [CapabilitySyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#capabilitysyncstatus)
 
 ## DescribeGatewayResponseTypeDef
 
@@ -918,20 +856,20 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayResponseTypeDef
 ```
 
-
 Required fields:
+
 - `gatewayId`: `str`
 - `gatewayName`: `str`
 - `gatewayArn`: `str`
-- `gatewayCapabilitySummaries`: `List["GatewayCapabilitySummaryTypeDef"]`
+- `gatewayCapabilitySummaries`:
+  `List`\[[GatewayCapabilitySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#gatewaycapabilitysummarytypedef)\]
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
-
-
 Optional fields:
-- `gatewayPlatform`: `"GatewayPlatformTypeDef"`
 
+- `gatewayPlatform`:
+  [GatewayPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#gatewayplatformtypedef)
 
 ## DescribeLoggingOptionsResponseTypeDef
 
@@ -939,12 +877,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeLoggingOptionsResponseTypeDef
 ```
 
-
 Required fields:
-- `loggingOptions`: `"LoggingOptionsTypeDef"`
 
-
-
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#loggingoptionstypedef)
 
 ## DescribePortalResponseTypeDef
 
@@ -952,26 +888,27 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import DescribePortalResponseTypeDef
 ```
 
-
 Required fields:
+
 - `portalId`: `str`
 - `portalArn`: `str`
 - `portalName`: `str`
 - `portalClientId`: `str`
 - `portalStartUrl`: `str`
 - `portalContactEmail`: `str`
-- `portalStatus`: `"PortalStatusTypeDef"`
+- `portalStatus`:
+  [PortalStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalstatustypedef)
 - `portalCreationDate`: `datetime`
 - `portalLastUpdateDate`: `datetime`
 
-
-
 Optional fields:
-- `portalDescription`: `str`
-- `portalLogoImageLocation`: `"ImageLocationTypeDef"`
-- `roleArn`: `str`
-- `portalAuthMode`: `AuthMode`
 
+- `portalDescription`: `str`
+- `portalLogoImageLocation`:
+  [ImageLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#imagelocationtypedef)
+- `roleArn`: `str`
+- `portalAuthMode`:
+  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#authmode)
 
 ## DescribeProjectResponseTypeDef
 
@@ -979,8 +916,8 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import DescribeProjectResponseTypeDef
 ```
 
-
 Required fields:
+
 - `projectId`: `str`
 - `projectArn`: `str`
 - `projectName`: `str`
@@ -988,11 +925,9 @@ Required fields:
 - `projectCreationDate`: `datetime`
 - `projectLastUpdateDate`: `datetime`
 
-
-
 Optional fields:
-- `projectDescription`: `str`
 
+- `projectDescription`: `str`
 
 ## ErrorDetailsTypeDef
 
@@ -1000,13 +935,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ErrorDetailsTypeDef
 ```
 
-
 Required fields:
-- `code`: `ErrorCode`
+
+- `code`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#errorcode)
 - `message`: `str`
-
-
-
 
 ## ExpressionVariableTypeDef
 
@@ -1014,13 +947,11 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ExpressionVariableTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
-- `value`: `"VariableValueTypeDef"`
-
-
-
+- `value`:
+  [VariableValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#variablevaluetypedef)
 
 ## GatewayCapabilitySummaryTypeDef
 
@@ -1028,13 +959,11 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GatewayCapabilitySummaryTypeDef
 ```
 
-
 Required fields:
+
 - `capabilityNamespace`: `str`
-- `capabilitySyncStatus`: `CapabilitySyncStatus`
-
-
-
+- `capabilitySyncStatus`:
+  [CapabilitySyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#capabilitysyncstatus)
 
 ## GatewayPlatformTypeDef
 
@@ -1042,12 +971,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GatewayPlatformTypeDef
 ```
 
-
 Required fields:
-- `greengrass`: `"GreengrassTypeDef"`
 
-
-
+- `greengrass`:
+  [GreengrassTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#greengrasstypedef)
 
 ## GatewaySummaryTypeDef
 
@@ -1055,18 +982,17 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GatewaySummaryTypeDef
 ```
 
-
 Required fields:
+
 - `gatewayId`: `str`
 - `gatewayName`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
-
-
 Optional fields:
-- `gatewayCapabilitySummaries`: `List["GatewayCapabilitySummaryTypeDef"]`
 
+- `gatewayCapabilitySummaries`:
+  `List`\[[GatewayCapabilitySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#gatewaycapabilitysummarytypedef)\]
 
 ## GetAssetPropertyAggregatesResponseTypeDef
 
@@ -1074,15 +1000,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesResponseTypeDef
 ```
 
-
 Required fields:
-- `aggregatedValues`: `List["AggregatedValueTypeDef"]`
 
-
+- `aggregatedValues`:
+  `List`\[[AggregatedValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#aggregatedvaluetypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## GetAssetPropertyValueHistoryResponseTypeDef
 
@@ -1090,15 +1015,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryResponseTypeDef
 ```
 
-
 Required fields:
-- `assetPropertyValueHistory`: `List["AssetPropertyValueTypeDef"]`
 
-
+- `assetPropertyValueHistory`:
+  `List`\[[AssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetpropertyvaluetypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## GetAssetPropertyValueResponseTypeDef
 
@@ -1106,12 +1030,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `propertyValue`: `"AssetPropertyValueTypeDef"`
 
+- `propertyValue`:
+  [AssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetpropertyvaluetypedef)
 
 ## GetInterpolatedAssetPropertyValuesResponseTypeDef
 
@@ -1119,15 +1041,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesResponseTypeDef
 ```
 
-
 Required fields:
-- `interpolatedAssetPropertyValues`: `List["InterpolatedAssetPropertyValueTypeDef"]`
 
-
+- `interpolatedAssetPropertyValues`:
+  `List`\[[InterpolatedAssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#interpolatedassetpropertyvaluetypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## GreengrassTypeDef
 
@@ -1135,12 +1056,9 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import GreengrassTypeDef
 ```
 
-
 Required fields:
+
 - `groupArn`: `str`
-
-
-
 
 ## GroupIdentityTypeDef
 
@@ -1148,12 +1066,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GroupIdentityTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-
-
-
 
 ## IAMRoleIdentityTypeDef
 
@@ -1161,12 +1076,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import IAMRoleIdentityTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
-
-
-
 
 ## IAMUserIdentityTypeDef
 
@@ -1174,12 +1086,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import IAMUserIdentityTypeDef
 ```
 
-
 Required fields:
+
 - `arn`: `str`
-
-
-
 
 ## IdentityTypeDef
 
@@ -1187,15 +1096,16 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import IdentityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `user`: `"UserIdentityTypeDef"`
-- `group`: `"GroupIdentityTypeDef"`
-- `iamUser`: `"IAMUserIdentityTypeDef"`
-- `iamRole`: `"IAMRoleIdentityTypeDef"`
 
+- `user`:
+  [UserIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#useridentitytypedef)
+- `group`:
+  [GroupIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#groupidentitytypedef)
+- `iamUser`:
+  [IAMUserIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#iamuseridentitytypedef)
+- `iamRole`:
+  [IAMRoleIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#iamroleidentitytypedef)
 
 ## ImageFileTypeDef
 
@@ -1203,13 +1113,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ImageFileTypeDef
 ```
 
-
 Required fields:
-- `data`: `Union[bytes, IO[bytes]]`
+
+- `data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `type`: `Literal['PNG']`
-
-
-
 
 ## ImageLocationTypeDef
 
@@ -1217,13 +1124,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ImageLocationTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `url`: `str`
-
-
-
 
 ## ImageTypeDef
 
@@ -1231,13 +1135,11 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ImageTypeDef
 ```
 
-
-
-
 Optional fields:
-- `id`: `str`
-- `file`: `"ImageFileTypeDef"`
 
+- `id`: `str`
+- `file`:
+  [ImageFileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#imagefiletypedef)
 
 ## InterpolatedAssetPropertyValueTypeDef
 
@@ -1245,13 +1147,12 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import InterpolatedAssetPropertyValueTypeDef
 ```
 
-
 Required fields:
-- `timestamp`: `"TimeInNanosTypeDef"`
-- `value`: `"VariantTypeDef"`
 
-
-
+- `timestamp`:
+  [TimeInNanosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#timeinnanostypedef)
+- `value`:
+  [VariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#varianttypedef)
 
 ## ListAccessPoliciesResponseTypeDef
 
@@ -1259,15 +1160,14 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesResponseTypeDef
 ```
 
-
 Required fields:
-- `accessPolicySummaries`: `List["AccessPolicySummaryTypeDef"]`
 
-
+- `accessPolicySummaries`:
+  `List`\[[AccessPolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#accesspolicysummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListAssetModelsResponseTypeDef
 
@@ -1275,15 +1175,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListAssetModelsResponseTypeDef
 ```
 
-
 Required fields:
-- `assetModelSummaries`: `List["AssetModelSummaryTypeDef"]`
 
-
+- `assetModelSummaries`:
+  `List`\[[AssetModelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListAssetRelationshipsResponseTypeDef
 
@@ -1291,15 +1190,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsResponseTypeDef
 ```
 
-
 Required fields:
-- `assetRelationshipSummaries`: `List["AssetRelationshipSummaryTypeDef"]`
 
-
+- `assetRelationshipSummaries`:
+  `List`\[[AssetRelationshipSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetrelationshipsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListAssetsResponseTypeDef
 
@@ -1307,15 +1205,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListAssetsResponseTypeDef
 ```
 
-
 Required fields:
-- `assetSummaries`: `List["AssetSummaryTypeDef"]`
 
-
+- `assetSummaries`:
+  `List`\[[AssetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListAssociatedAssetsResponseTypeDef
 
@@ -1323,15 +1220,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsResponseTypeDef
 ```
 
-
 Required fields:
-- `assetSummaries`: `List["AssociatedAssetsSummaryTypeDef"]`
 
-
+- `assetSummaries`:
+  `List`\[[AssociatedAssetsSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#associatedassetssummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListDashboardsResponseTypeDef
 
@@ -1339,15 +1235,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListDashboardsResponseTypeDef
 ```
 
-
 Required fields:
-- `dashboardSummaries`: `List["DashboardSummaryTypeDef"]`
 
-
+- `dashboardSummaries`:
+  `List`\[[DashboardSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#dashboardsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListGatewaysResponseTypeDef
 
@@ -1355,15 +1250,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListGatewaysResponseTypeDef
 ```
 
-
 Required fields:
-- `gatewaySummaries`: `List["GatewaySummaryTypeDef"]`
 
-
+- `gatewaySummaries`:
+  `List`\[[GatewaySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#gatewaysummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListPortalsResponseTypeDef
 
@@ -1371,13 +1265,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListPortalsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `portalSummaries`: `List["PortalSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `portalSummaries`:
+  `List`\[[PortalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListProjectAssetsResponseTypeDef
 
@@ -1385,15 +1277,13 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsResponseTypeDef
 ```
 
-
 Required fields:
-- `assetIds`: `List[str]`
 
-
+- `assetIds`: `List`\[`str`\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListProjectsResponseTypeDef
 
@@ -1401,15 +1291,14 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListProjectsResponseTypeDef
 ```
 
-
 Required fields:
-- `projectSummaries`: `List["ProjectSummaryTypeDef"]`
 
-
+- `projectSummaries`:
+  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#projectsummarytypedef)\]
 
 Optional fields:
-- `nextToken`: `str`
 
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1417,12 +1306,9 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## LoggingOptionsTypeDef
 
@@ -1430,12 +1316,10 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import LoggingOptionsTypeDef
 ```
 
-
 Required fields:
-- `level`: `LoggingLevel`
 
-
-
+- `level`:
+  [LoggingLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#logginglevel)
 
 ## MetricTypeDef
 
@@ -1443,14 +1327,13 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import MetricTypeDef
 ```
 
-
 Required fields:
+
 - `expression`: `str`
-- `variables`: `List["ExpressionVariableTypeDef"]`
-- `window`: `"MetricWindowTypeDef"`
-
-
-
+- `variables`:
+  `List`\[[ExpressionVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#expressionvariabletypedef)\]
+- `window`:
+  [MetricWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#metricwindowtypedef)
 
 ## MetricWindowTypeDef
 
@@ -1458,12 +1341,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import MetricWindowTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tumbling`: `"TumblingWindowTypeDef"`
 
+- `tumbling`:
+  [TumblingWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#tumblingwindowtypedef)
 
 ## MonitorErrorDetailsTypeDef
 
@@ -1471,13 +1352,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import MonitorErrorDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `MonitorErrorCode`
-- `message`: `str`
 
+- `code`:
+  [MonitorErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#monitorerrorcode)
+- `message`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -1485,14 +1364,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PortalResourceTypeDef
 
@@ -1500,12 +1376,9 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PortalResourceTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-
-
-
 
 ## PortalStatusTypeDef
 
@@ -1513,15 +1386,15 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import PortalStatusTypeDef
 ```
 
-
 Required fields:
-- `state`: `PortalState`
 
-
+- `state`:
+  [PortalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#portalstate)
 
 Optional fields:
-- `error`: `"MonitorErrorDetailsTypeDef"`
 
+- `error`:
+  [MonitorErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#monitorerrordetailstypedef)
 
 ## PortalSummaryTypeDef
 
@@ -1529,21 +1402,20 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PortalSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
 - `startUrl`: `str`
-- `status`: `"PortalStatusTypeDef"`
-
-
+- `status`:
+  [PortalStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalstatustypedef)
 
 Optional fields:
+
 - `description`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 - `roleArn`: `str`
-
 
 ## ProjectResourceTypeDef
 
@@ -1551,12 +1423,9 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ProjectResourceTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-
-
-
 
 ## ProjectSummaryTypeDef
 
@@ -1564,18 +1433,16 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import ProjectSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
 
-
-
 Optional fields:
+
 - `description`: `str`
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
-
 
 ## PropertyNotificationTypeDef
 
@@ -1583,13 +1450,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PropertyNotificationTypeDef
 ```
 
-
 Required fields:
+
 - `topic`: `str`
-- `state`: `PropertyNotificationState`
-
-
-
+- `state`:
+  [PropertyNotificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertynotificationstate)
 
 ## PropertyTypeDef
 
@@ -1597,20 +1462,21 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import PropertyTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
 - `name`: `str`
-- `dataType`: `PropertyDataType`
-
-
+- `dataType`:
+  [PropertyDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertydatatype)
 
 Optional fields:
-- `alias`: `str`
-- `notification`: `"PropertyNotificationTypeDef"`
-- `unit`: `str`
-- `type`: `"PropertyTypeTypeDef"`
 
+- `alias`: `str`
+- `notification`:
+  [PropertyNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertynotificationtypedef)
+- `unit`: `str`
+- `type`:
+  [PropertyTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#propertytypetypedef)
 
 ## PropertyTypeTypeDef
 
@@ -1618,15 +1484,15 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PropertyTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attribute`: `"AttributeTypeDef"`
-- `measurement`: `Dict[str, Any]`
-- `transform`: `"TransformTypeDef"`
-- `metric`: `"MetricTypeDef"`
 
+- `attribute`:
+  [AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#attributetypedef)
+- `measurement`: `Dict`\[`str`, `Any`\]
+- `transform`:
+  [TransformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#transformtypedef)
+- `metric`:
+  [MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#metrictypedef)
 
 ## PutAssetPropertyValueEntryTypeDef
 
@@ -1634,18 +1500,17 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PutAssetPropertyValueEntryTypeDef
 ```
 
-
 Required fields:
+
 - `entryId`: `str`
-- `propertyValues`: `List["AssetPropertyValueTypeDef"]`
-
-
+- `propertyValues`:
+  `List`\[[AssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetpropertyvaluetypedef)\]
 
 Optional fields:
+
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-
 
 ## PutDefaultEncryptionConfigurationResponseTypeDef
 
@@ -1653,16 +1518,16 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationResponseTypeDef
 ```
 
-
 Required fields:
-- `encryptionType`: `EncryptionType`
-- `configurationStatus`: `"ConfigurationStatusTypeDef"`
 
-
+- `encryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#encryptiontype)
+- `configurationStatus`:
+  [ConfigurationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#configurationstatustypedef)
 
 Optional fields:
-- `kmsKeyArn`: `str`
 
+- `kmsKeyArn`: `str`
 
 ## ResourceTypeDef
 
@@ -1670,13 +1535,12 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import ResourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `portal`: `"PortalResourceTypeDef"`
-- `project`: `"ProjectResourceTypeDef"`
 
+- `portal`:
+  [PortalResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalresourcetypedef)
+- `project`:
+  [ProjectResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#projectresourcetypedef)
 
 ## TimeInNanosTypeDef
 
@@ -1684,15 +1548,13 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import TimeInNanosTypeDef
 ```
 
-
 Required fields:
+
 - `timeInSeconds`: `int`
 
-
-
 Optional fields:
-- `offsetInNanos`: `int`
 
+- `offsetInNanos`: `int`
 
 ## TransformTypeDef
 
@@ -1700,13 +1562,11 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import TransformTypeDef
 ```
 
-
 Required fields:
+
 - `expression`: `str`
-- `variables`: `List["ExpressionVariableTypeDef"]`
-
-
-
+- `variables`:
+  `List`\[[ExpressionVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#expressionvariabletypedef)\]
 
 ## TumblingWindowTypeDef
 
@@ -1714,12 +1574,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import TumblingWindowTypeDef
 ```
 
-
 Required fields:
+
 - `interval`: `str`
-
-
-
 
 ## UpdateAssetModelResponseTypeDef
 
@@ -1727,12 +1584,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelResponseTypeDef
 ```
 
-
 Required fields:
-- `assetModelStatus`: `"AssetModelStatusTypeDef"`
 
-
-
+- `assetModelStatus`:
+  [AssetModelStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelstatustypedef)
 
 ## UpdateAssetResponseTypeDef
 
@@ -1740,12 +1595,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetResponseTypeDef
 ```
 
-
 Required fields:
-- `assetStatus`: `"AssetStatusTypeDef"`
 
-
-
+- `assetStatus`:
+  [AssetStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetstatustypedef)
 
 ## UpdateGatewayCapabilityConfigurationResponseTypeDef
 
@@ -1753,13 +1606,11 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationResponseTypeDef
 ```
 
-
 Required fields:
+
 - `capabilityNamespace`: `str`
-- `capabilitySyncStatus`: `CapabilitySyncStatus`
-
-
-
+- `capabilitySyncStatus`:
+  [CapabilitySyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#capabilitysyncstatus)
 
 ## UpdatePortalResponseTypeDef
 
@@ -1767,12 +1618,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import UpdatePortalResponseTypeDef
 ```
 
-
 Required fields:
-- `portalStatus`: `"PortalStatusTypeDef"`
 
-
-
+- `portalStatus`:
+  [PortalStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#portalstatustypedef)
 
 ## UserIdentityTypeDef
 
@@ -1780,12 +1629,9 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import UserIdentityTypeDef
 ```
 
-
 Required fields:
+
 - `id`: `str`
-
-
-
 
 ## VariableValueTypeDef
 
@@ -1793,15 +1639,13 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import VariableValueTypeDef
 ```
 
-
 Required fields:
+
 - `propertyId`: `str`
 
-
-
 Optional fields:
-- `hierarchyId`: `str`
 
+- `hierarchyId`: `str`
 
 ## VariantTypeDef
 
@@ -1809,15 +1653,12 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import VariantTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `stringValue`: `str`
 - `integerValue`: `int`
 - `doubleValue`: `float`
 - `booleanValue`: `bool`
-
 
 ## WaiterConfigTypeDef
 
@@ -1825,10 +1666,7 @@ Optional fields:
 from mypy_boto3_iotsitewise.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

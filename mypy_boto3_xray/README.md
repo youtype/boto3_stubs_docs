@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > XRay
 
-Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
+Auto-generated documentation for
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+type annotations stubs module
+[mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
 ```bash
 pip install mypy-boto3-xray
@@ -19,7 +21,7 @@ pip install mypy-boto3-xray
 
 ## XRayClient
 
-Type annotations for  `boto3.client("xray")` as [XRayClient](./client.md)
+Type annotations for `boto3.client("xray")` as [XRayClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_xray.client import XRayClient
 ```
 
-
 XRayClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_get_traces](./client.md#batch-get-traces)
 - [can_paginate](./client.md#can-paginate)
 - [create_group](./client.md#create-group)
@@ -64,10 +64,8 @@ XRayClient [exceptions](./client.md#exceptions)
 - [update_group](./client.md#update-group)
 - [update_sampling_rule](./client.md#update-sampling-rule)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InvalidRequestException](./client.md#invalidrequestexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
@@ -75,14 +73,10 @@ XRayClient [exceptions](./client.md#exceptions)
 - [ThrottledException](./client.md#throttledexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("xray").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("xray").get_paginator("...")`.
 
 Can be used directly:
 
@@ -98,11 +92,6 @@ from mypy_boto3_xray.paginators import BatchGetTracesPaginator, ...
 - [GetTimeSeriesServiceStatisticsPaginator](./paginators.md#gettimeseriesservicestatisticspaginator)
 - [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
 - [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -129,13 +118,10 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
 - [SamplingStrategyName](./literals.md#samplingstrategyname)
 - [TimeRangeType](./literals.md#timerangetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

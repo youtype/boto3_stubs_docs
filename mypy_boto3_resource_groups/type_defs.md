@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ResourceGroups](./README.md) > Structures
 
-Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
-type annotations stubs module [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+Auto-generated documentation for
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+type annotations stubs module
+[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Typed dictionaries for boto3 ResourceGroups module](#typed-dictionaries-for-boto3-resourcegroups-module)
   - [CreateGroupOutputTypeDef](#creategroupoutputtypedef)
@@ -45,16 +47,17 @@ type annotations stubs module [mypy_boto3_resource_groups](https://pypi.org/proj
 from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `Group`: `"GroupTypeDef"`
-- `ResourceQuery`: `"ResourceQueryTypeDef"`
-- `Tags`: `Dict[str, str]`
-- `GroupConfiguration`: `"GroupConfigurationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#grouptypedef)
+- `ResourceQuery`:
+  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `GroupConfiguration`:
+  [GroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## DeleteGroupOutputTypeDef
 
@@ -62,13 +65,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import DeleteGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `Group`: `"GroupTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## FailedResourceTypeDef
 
@@ -76,14 +78,11 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import FailedResourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceArn`: `str`
 - `ErrorMessage`: `str`
 - `ErrorCode`: `str`
-
 
 ## GetGroupConfigurationOutputTypeDef
 
@@ -91,13 +90,12 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationOutputTypeDef
 ```
 
-
 Required fields:
-- `GroupConfiguration`: `"GroupConfigurationTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GroupConfiguration`:
+  [GroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## GetGroupOutputTypeDef
 
@@ -105,13 +103,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GetGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `Group`: `"GroupTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## GetGroupQueryOutputTypeDef
 
@@ -119,13 +116,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GetGroupQueryOutputTypeDef
 ```
 
-
 Required fields:
-- `GroupQuery`: `"GroupQueryTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GroupQuery`:
+  [GroupQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupquerytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## GetTagsOutputTypeDef
 
@@ -133,14 +129,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GetTagsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `Tags`: `Dict[str, str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## GroupConfigurationItemTypeDef
 
@@ -148,15 +142,14 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationItemTypeDef
 ```
 
-
 Required fields:
+
 - `Type`: `str`
 
-
-
 Optional fields:
-- `Parameters`: `List["GroupConfigurationParameterTypeDef"]`
 
+- `Parameters`:
+  `List`\[[GroupConfigurationParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationparametertypedef)\]
 
 ## GroupConfigurationParameterTypeDef
 
@@ -164,15 +157,13 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationParameterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Values`: `List[str]`
 
+- `Values`: `List`\[`str`\]
 
 ## GroupConfigurationTypeDef
 
@@ -180,15 +171,15 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Configuration`: `List["GroupConfigurationItemTypeDef"]`
-- `ProposedConfiguration`: `List["GroupConfigurationItemTypeDef"]`
-- `Status`: `GroupConfigurationStatus`
-- `FailureReason`: `str`
 
+- `Configuration`:
+  `List`\[[GroupConfigurationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationitemtypedef)\]
+- `ProposedConfiguration`:
+  `List`\[[GroupConfigurationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationitemtypedef)\]
+- `Status`:
+  [GroupConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/literals.html#groupconfigurationstatus)
+- `FailureReason`: `str`
 
 ## GroupFilterTypeDef
 
@@ -196,13 +187,11 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import GroupFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `GroupFilterName`
-- `Values`: `List[str]`
 
-
-
+- `Name`:
+  [GroupFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/literals.html#groupfiltername)
+- `Values`: `List`\[`str`\]
 
 ## GroupIdentifierTypeDef
 
@@ -210,13 +199,10 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GroupIdentifierTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GroupName`: `str`
 - `GroupArn`: `str`
-
 
 ## GroupQueryTypeDef
 
@@ -224,13 +210,11 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import GroupQueryTypeDef
 ```
 
-
 Required fields:
+
 - `GroupName`: `str`
-- `ResourceQuery`: `"ResourceQueryTypeDef"`
-
-
-
+- `ResourceQuery`:
+  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
 
 ## GroupResourcesOutputTypeDef
 
@@ -238,15 +222,15 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GroupResourcesOutputTypeDef
 ```
 
-
 Required fields:
-- `Succeeded`: `List[str]`
-- `Failed`: `List["FailedResourceTypeDef"]`
-- `Pending`: `List["PendingResourceTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Succeeded`: `List`\[`str`\]
+- `Failed`:
+  `List`\[[FailedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#failedresourcetypedef)\]
+- `Pending`:
+  `List`\[[PendingResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#pendingresourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## GroupTypeDef
 
@@ -254,16 +238,14 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import GroupTypeDef
 ```
 
-
 Required fields:
+
 - `GroupArn`: `str`
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## ListGroupResourcesItemTypeDef
 
@@ -271,13 +253,12 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import ListGroupResourcesItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Identifier`: `"ResourceIdentifierTypeDef"`
-- `Status`: `"ResourceStatusTypeDef"`
 
+- `Identifier`:
+  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourceidentifiertypedef)
+- `Status`:
+  [ResourceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcestatustypedef)
 
 ## ListGroupResourcesOutputTypeDef
 
@@ -285,16 +266,17 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
 ```
 
-
 Required fields:
-- `Resources`: `List["ListGroupResourcesItemTypeDef"]`
-- `ResourceIdentifiers`: `List["ResourceIdentifierTypeDef"]`
+
+- `Resources`:
+  `List`\[[ListGroupResourcesItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#listgroupresourcesitemtypedef)\]
+- `ResourceIdentifiers`:
+  `List`\[[ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourceidentifiertypedef)\]
 - `NextToken`: `str`
-- `QueryErrors`: `List["QueryErrorTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `QueryErrors`:
+  `List`\[[QueryErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#queryerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## ListGroupsOutputTypeDef
 
@@ -302,15 +284,15 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import ListGroupsOutputTypeDef
 ```
 
-
 Required fields:
-- `GroupIdentifiers`: `List["GroupIdentifierTypeDef"]`
-- `Groups`: `List["GroupTypeDef"]`
+
+- `GroupIdentifiers`:
+  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupidentifiertypedef)\]
+- `Groups`:
+  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#grouptypedef)\]
 - `NextToken`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## PaginatorConfigTypeDef
 
@@ -318,14 +300,11 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PendingResourceTypeDef
 
@@ -333,12 +312,9 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import PendingResourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceArn`: `str`
 
+- `ResourceArn`: `str`
 
 ## QueryErrorTypeDef
 
@@ -346,13 +322,11 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import QueryErrorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ErrorCode`: `QueryErrorCode`
-- `Message`: `str`
 
+- `ErrorCode`:
+  [QueryErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/literals.html#queryerrorcode)
+- `Message`: `str`
 
 ## ResourceFilterTypeDef
 
@@ -360,13 +334,10 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import ResourceFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `Literal['resource-type']`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## ResourceIdentifierTypeDef
 
@@ -374,13 +345,10 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import ResourceIdentifierTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
-
 
 ## ResourceQueryTypeDef
 
@@ -388,13 +356,11 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import ResourceQueryTypeDef
 ```
 
-
 Required fields:
-- `Type`: `QueryType`
+
+- `Type`:
+  [QueryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/literals.html#querytype)
 - `Query`: `str`
-
-
-
 
 ## ResourceStatusTypeDef
 
@@ -402,12 +368,9 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import ResourceStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `Literal['PENDING']`
 
+- `Name`: `Literal['PENDING']`
 
 ## ResponseMetadata
 
@@ -415,16 +378,13 @@ Optional fields:
 from mypy_boto3_resource_groups.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SearchResourcesOutputTypeDef
 
@@ -432,15 +392,15 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import SearchResourcesOutputTypeDef
 ```
 
-
 Required fields:
-- `ResourceIdentifiers`: `List["ResourceIdentifierTypeDef"]`
+
+- `ResourceIdentifiers`:
+  `List`\[[ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourceidentifiertypedef)\]
 - `NextToken`: `str`
-- `QueryErrors`: `List["QueryErrorTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `QueryErrors`:
+  `List`\[[QueryErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#queryerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## TagOutputTypeDef
 
@@ -448,14 +408,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import TagOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `Tags`: `Dict[str, str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## UngroupResourcesOutputTypeDef
 
@@ -463,15 +421,15 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import UngroupResourcesOutputTypeDef
 ```
 
-
 Required fields:
-- `Succeeded`: `List[str]`
-- `Failed`: `List["FailedResourceTypeDef"]`
-- `Pending`: `List["PendingResourceTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Succeeded`: `List`\[`str`\]
+- `Failed`:
+  `List`\[[FailedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#failedresourcetypedef)\]
+- `Pending`:
+  `List`\[[PendingResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#pendingresourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## UntagOutputTypeDef
 
@@ -479,14 +437,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import UntagOutputTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-- `Keys`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `Keys`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## UpdateGroupOutputTypeDef
 
@@ -494,13 +450,12 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import UpdateGroupOutputTypeDef
 ```
 
-
 Required fields:
-- `Group`: `"GroupTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Group`:
+  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)
 
 ## UpdateGroupQueryOutputTypeDef
 
@@ -508,10 +463,9 @@ Required fields:
 from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryOutputTypeDef
 ```
 
-
 Required fields:
-- `GroupQuery`: `"GroupQueryTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `GroupQuery`:
+  [GroupQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupquerytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#responsemetadata)

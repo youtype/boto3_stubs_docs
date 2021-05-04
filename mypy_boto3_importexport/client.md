@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ImportExport](./README.md) > ImportExportClient
 
-Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
-type annotations stubs module [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
+Auto-generated documentation for
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+type annotations stubs module
+[mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 - [ImportExportClient for boto3 ImportExport module](#importexportclient-for-boto3-importexport-module)
   - [ImportExportClient](#importexportclient)
@@ -32,12 +34,13 @@ def get_importexport_client() -> ImportExportClient:
     return boto3.client("importexport")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
+Boto3 documentation:
+[ImportExport.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_importexport.client import Exceptions
@@ -45,7 +48,6 @@ from mypy_boto3_importexport.client import Exceptions
 def handle_error(exc: Exceptions.BucketPermissionException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -71,154 +73,153 @@ Exceptions:
 - `Exceptions.UnableToCancelJobIdException`
 - `Exceptions.UnableToUpdateJobIdException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("importexport").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate]
+Boto3 documentation:
+[ImportExport.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job
 
 Type annotations for `boto3.client("importexport").cancel_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job]
+Boto3 documentation:
+[ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job)
 
-```python
-def cancel_job(
-    self,
-    JobId: str,
-    APIVersion: str = None
-) -> CancelJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `APIVersion`: `str`
+
+Returns
+[CancelJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#canceljoboutputtypedef).
 
 ### create_job
 
 Type annotations for `boto3.client("importexport").create_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job]
+Boto3 documentation:
+[ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job)
 
-```python
-def create_job(
-    self,
-    JobType: JobType,
-    Manifest: str,
-    ValidateOnly: bool,
-    ManifestAddendum: str = None,
-    APIVersion: str = None
-) -> CreateJobOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `JobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
+  *(required)*
+- `Manifest`: `str` *(required)*
+- `ValidateOnly`: `bool` *(required)*
+- `ManifestAddendum`: `str`
+- `APIVersion`: `str`
+
+Returns
+[CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#createjoboutputtypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("importexport").generate_presigned_url` method.
+Type annotations for `boto3.client("importexport").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url]
+Boto3 documentation:
+[ImportExport.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_shipping_label
 
 Type annotations for `boto3.client("importexport").get_shipping_label` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label]
+Boto3 documentation:
+[ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
 
-```python
-def get_shipping_label(
-    self,
-    jobIds: List[str],
-    name: str = None,
-    company: str = None,
-    phoneNumber: str = None,
-    country: str = None,
-    stateOrProvince: str = None,
-    city: str = None,
-    postalCode: str = None,
-    street1: str = None,
-    street2: str = None,
-    street3: str = None,
-    APIVersion: str = None
-) -> GetShippingLabelOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `jobIds`: `List`\[`str`\] *(required)*
+- `name`: `str`
+- `company`: `str`
+- `phoneNumber`: `str`
+- `country`: `str`
+- `stateOrProvince`: `str`
+- `city`: `str`
+- `postalCode`: `str`
+- `street1`: `str`
+- `street2`: `str`
+- `street3`: `str`
+- `APIVersion`: `str`
+
+Returns
+[GetShippingLabelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#getshippinglabeloutputtypedef).
 
 ### get_status
 
 Type annotations for `boto3.client("importexport").get_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status]
+Boto3 documentation:
+[ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status)
 
-```python
-def get_status(
-    self,
-    JobId: str,
-    APIVersion: str = None
-) -> GetStatusOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+- `APIVersion`: `str`
+
+Returns
+[GetStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#getstatusoutputtypedef).
 
 ### list_jobs
 
 Type annotations for `boto3.client("importexport").list_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs]
+Boto3 documentation:
+[ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs)
 
-```python
-def list_jobs(
-    self,
-    MaxJobs: int = None,
-    Marker: str = None,
-    APIVersion: str = None
-) -> ListJobsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxJobs`: `int`
+- `Marker`: `str`
+- `APIVersion`: `str`
+
+Returns
+[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#listjobsoutputtypedef).
 
 ### update_job
 
 Type annotations for `boto3.client("importexport").update_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job]
+Boto3 documentation:
+[ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job)
 
-```python
-def update_job(
-    self,
-    JobId: str,
-    Manifest: str,
-    JobType: JobType,
-    ValidateOnly: bool,
-    APIVersion: str = None
-) -> UpdateJobOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `JobId`: `str` *(required)*
+- `Manifest`: `str` *(required)*
+- `JobType`:
+  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
+  *(required)*
+- `ValidateOnly`: `bool` *(required)*
+- `APIVersion`: `str`
 
+Returns
+[UpdateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#updatejoboutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("importexport").get_paginator` method with overloads.
+Type annotations for `boto3.client("importexport").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
+- `client.get_paginator("list_jobs")` ->
+  [ListJobsPaginator](./paginators.md#listjobspaginator)

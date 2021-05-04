@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ForecastService](./README.md) > Structures
 
-Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+Auto-generated documentation for
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+type annotations stubs module
+[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Typed dictionaries for boto3 ForecastService module](#typed-dictionaries-for-boto3-forecastservice-module)
   - [CategoricalParameterRangeTypeDef](#categoricalparameterrangetypedef)
@@ -72,13 +74,10 @@ type annotations stubs module [mypy_boto3_forecast](https://pypi.org/project/myp
 from mypy_boto3_forecast.type_defs import CategoricalParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## ContinuousParameterRangeTypeDef
 
@@ -86,17 +85,16 @@ Required fields:
 from mypy_boto3_forecast.type_defs import ContinuousParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `MaxValue`: `float`
 - `MinValue`: `float`
 
-
-
 Optional fields:
-- `ScalingType`: `ScalingType`
 
+- `ScalingType`:
+  [ScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#scalingtype)
 
 ## CreateDatasetGroupResponseTypeDef
 
@@ -104,12 +102,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreateDatasetGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetGroupArn`: `str`
 
+- `DatasetGroupArn`: `str`
 
 ## CreateDatasetImportJobResponseTypeDef
 
@@ -117,12 +112,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreateDatasetImportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetImportJobArn`: `str`
 
+- `DatasetImportJobArn`: `str`
 
 ## CreateDatasetResponseTypeDef
 
@@ -130,12 +122,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreateDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetArn`: `str`
 
+- `DatasetArn`: `str`
 
 ## CreateForecastExportJobResponseTypeDef
 
@@ -143,12 +132,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreateForecastExportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ForecastExportJobArn`: `str`
 
+- `ForecastExportJobArn`: `str`
 
 ## CreateForecastResponseTypeDef
 
@@ -156,12 +142,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreateForecastResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ForecastArn`: `str`
 
+- `ForecastArn`: `str`
 
 ## CreatePredictorBacktestExportJobResponseTypeDef
 
@@ -169,12 +152,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PredictorBacktestExportJobArn`: `str`
 
+- `PredictorBacktestExportJobArn`: `str`
 
 ## CreatePredictorResponseTypeDef
 
@@ -182,12 +162,9 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import CreatePredictorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PredictorArn`: `str`
 
+- `PredictorArn`: `str`
 
 ## DataDestinationTypeDef
 
@@ -195,12 +172,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DataDestinationTypeDef
 ```
 
-
 Required fields:
-- `S3Config`: `"S3ConfigTypeDef"`
 
-
-
+- `S3Config`:
+  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#s3configtypedef)
 
 ## DataSourceTypeDef
 
@@ -208,12 +183,10 @@ Required fields:
 from mypy_boto3_forecast.type_defs import DataSourceTypeDef
 ```
 
-
 Required fields:
-- `S3Config`: `"S3ConfigTypeDef"`
 
-
-
+- `S3Config`:
+  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#s3configtypedef)
 
 ## DatasetGroupSummaryTypeDef
 
@@ -221,15 +194,12 @@ Required fields:
 from mypy_boto3_forecast.type_defs import DatasetGroupSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetGroupArn`: `str`
 - `DatasetGroupName`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DatasetImportJobSummaryTypeDef
 
@@ -237,18 +207,16 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DatasetImportJobSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetImportJobArn`: `str`
 - `DatasetImportJobName`: `str`
-- `DataSource`: `"DataSourceTypeDef"`
+- `DataSource`:
+  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasourcetypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DatasetSummaryTypeDef
 
@@ -256,17 +224,16 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DatasetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetArn`: `str`
 - `DatasetName`: `str`
-- `DatasetType`: `DatasetType`
-- `Domain`: `Domain`
+- `DatasetType`:
+  [DatasetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#datasettype)
+- `Domain`:
+  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#domain)
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribeDatasetGroupResponseTypeDef
 
@@ -274,18 +241,16 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribeDatasetGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetGroupName`: `str`
 - `DatasetGroupArn`: `str`
-- `DatasetArns`: `List[str]`
-- `Domain`: `Domain`
+- `DatasetArns`: `List`\[`str`\]
+- `Domain`:
+  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#domain)
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribeDatasetImportJobResponseTypeDef
 
@@ -293,10 +258,8 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetImportJobName`: `str`
 - `DatasetImportJobArn`: `str`
 - `DatasetArn`: `str`
@@ -304,15 +267,16 @@ Optional fields:
 - `TimeZone`: `str`
 - `UseGeolocationForTimeZone`: `bool`
 - `GeolocationFormat`: `str`
-- `DataSource`: `"DataSourceTypeDef"`
+- `DataSource`:
+  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasourcetypedef)
 - `EstimatedTimeRemainingInMinutes`: `int`
-- `FieldStatistics`: `Dict[str, "StatisticsTypeDef"]`
+- `FieldStatistics`: `Dict`\[`str`,
+  [StatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#statisticstypedef)\]
 - `DataSize`: `float`
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribeDatasetResponseTypeDef
 
@@ -320,21 +284,22 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DatasetArn`: `str`
 - `DatasetName`: `str`
-- `Domain`: `Domain`
-- `DatasetType`: `DatasetType`
+- `Domain`:
+  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#domain)
+- `DatasetType`:
+  [DatasetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#datasettype)
 - `DataFrequency`: `str`
-- `Schema`: `"SchemaTypeDef"`
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
+- `Schema`:
+  [SchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#schematypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#encryptionconfigtypedef)
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribeForecastExportJobResponseTypeDef
 
@@ -342,19 +307,17 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribeForecastExportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ForecastExportJobArn`: `str`
 - `ForecastExportJobName`: `str`
 - `ForecastArn`: `str`
-- `Destination`: `"DataDestinationTypeDef"`
+- `Destination`:
+  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
 - `Message`: `str`
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribeForecastResponseTypeDef
 
@@ -362,13 +325,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribeForecastResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ForecastArn`: `str`
 - `ForecastName`: `str`
-- `ForecastTypes`: `List[str]`
+- `ForecastTypes`: `List`\[`str`\]
 - `PredictorArn`: `str`
 - `DatasetGroupArn`: `str`
 - `EstimatedTimeRemainingInMinutes`: `int`
@@ -376,7 +337,6 @@ Optional fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribePredictorBacktestExportJobResponseTypeDef
 
@@ -384,19 +344,17 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PredictorBacktestExportJobArn`: `str`
 - `PredictorBacktestExportJobName`: `str`
 - `PredictorArn`: `str`
-- `Destination`: `"DataDestinationTypeDef"`
+- `Destination`:
+  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
 - `Message`: `str`
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## DescribePredictorResponseTypeDef
 
@@ -404,32 +362,35 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import DescribePredictorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PredictorArn`: `str`
 - `PredictorName`: `str`
 - `AlgorithmArn`: `str`
 - `ForecastHorizon`: `int`
-- `ForecastTypes`: `List[str]`
+- `ForecastTypes`: `List`\[`str`\]
 - `PerformAutoML`: `bool`
 - `PerformHPO`: `bool`
-- `TrainingParameters`: `Dict[str, str]`
-- `EvaluationParameters`: `"EvaluationParametersTypeDef"`
-- `HPOConfig`: `"HyperParameterTuningJobConfigTypeDef"`
-- `InputDataConfig`: `"InputDataConfigTypeDef"`
-- `FeaturizationConfig`: `"FeaturizationConfigTypeDef"`
-- `EncryptionConfig`: `"EncryptionConfigTypeDef"`
-- `PredictorExecutionDetails`: `"PredictorExecutionDetailsTypeDef"`
+- `TrainingParameters`: `Dict`\[`str`, `str`\]
+- `EvaluationParameters`:
+  [EvaluationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#evaluationparameterstypedef)
+- `HPOConfig`:
+  [HyperParameterTuningJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#hyperparametertuningjobconfigtypedef)
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#inputdataconfigtypedef)
+- `FeaturizationConfig`:
+  [FeaturizationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#featurizationconfigtypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#encryptionconfigtypedef)
+- `PredictorExecutionDetails`:
+  [PredictorExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#predictorexecutiondetailstypedef)
 - `EstimatedTimeRemainingInMinutes`: `int`
-- `DatasetImportJobArns`: `List[str]`
-- `AutoMLAlgorithmArns`: `List[str]`
+- `DatasetImportJobArns`: `List`\[`str`\]
+- `AutoMLAlgorithmArns`: `List`\[`str`\]
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## EncryptionConfigTypeDef
 
@@ -437,13 +398,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import EncryptionConfigTypeDef
 ```
 
-
 Required fields:
+
 - `RoleArn`: `str`
 - `KMSKeyArn`: `str`
-
-
-
 
 ## ErrorMetricTypeDef
 
@@ -451,14 +409,11 @@ Required fields:
 from mypy_boto3_forecast.type_defs import ErrorMetricTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ForecastType`: `str`
 - `WAPE`: `float`
 - `RMSE`: `float`
-
 
 ## EvaluationParametersTypeDef
 
@@ -466,13 +421,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import EvaluationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `NumberOfBacktestWindows`: `int`
 - `BackTestWindowOffset`: `int`
-
 
 ## EvaluationResultTypeDef
 
@@ -480,13 +432,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import EvaluationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AlgorithmArn`: `str`
-- `TestWindows`: `List["WindowSummaryTypeDef"]`
 
+- `AlgorithmArn`: `str`
+- `TestWindows`:
+  `List`\[[WindowSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#windowsummarytypedef)\]
 
 ## FeaturizationConfigTypeDef
 
@@ -494,16 +444,15 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import FeaturizationConfigTypeDef
 ```
 
-
 Required fields:
+
 - `ForecastFrequency`: `str`
 
-
-
 Optional fields:
-- `ForecastDimensions`: `List[str]`
-- `Featurizations`: `List["FeaturizationTypeDef"]`
 
+- `ForecastDimensions`: `List`\[`str`\]
+- `Featurizations`:
+  `List`\[[FeaturizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#featurizationtypedef)\]
 
 ## FeaturizationMethodTypeDef
 
@@ -511,15 +460,13 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import FeaturizationMethodTypeDef
 ```
 
-
 Required fields:
+
 - `FeaturizationMethodName`: `Literal['filling']`
 
-
-
 Optional fields:
-- `FeaturizationMethodParameters`: `Dict[str, str]`
 
+- `FeaturizationMethodParameters`: `Dict`\[`str`, `str`\]
 
 ## FeaturizationTypeDef
 
@@ -527,15 +474,14 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import FeaturizationTypeDef
 ```
 
-
 Required fields:
+
 - `AttributeName`: `str`
 
-
-
 Optional fields:
-- `FeaturizationPipeline`: `List["FeaturizationMethodTypeDef"]`
 
+- `FeaturizationPipeline`:
+  `List`\[[FeaturizationMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#featurizationmethodtypedef)\]
 
 ## FilterTypeDef
 
@@ -543,14 +489,12 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-- `Condition`: `FilterConditionString`
-
-
-
+- `Condition`:
+  [FilterConditionString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#filterconditionstring)
 
 ## ForecastExportJobSummaryTypeDef
 
@@ -558,18 +502,16 @@ Required fields:
 from mypy_boto3_forecast.type_defs import ForecastExportJobSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ForecastExportJobArn`: `str`
 - `ForecastExportJobName`: `str`
-- `Destination`: `"DataDestinationTypeDef"`
+- `Destination`:
+  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## ForecastSummaryTypeDef
 
@@ -577,10 +519,8 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ForecastSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ForecastArn`: `str`
 - `ForecastName`: `str`
 - `PredictorArn`: `str`
@@ -590,19 +530,16 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
-
 ## GetAccuracyMetricsResponseTypeDef
 
 ```python
 from mypy_boto3_forecast.type_defs import GetAccuracyMetricsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PredictorEvaluationResults`: `List["EvaluationResultTypeDef"]`
 
+- `PredictorEvaluationResults`:
+  `List`\[[EvaluationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#evaluationresulttypedef)\]
 
 ## HyperParameterTuningJobConfigTypeDef
 
@@ -610,12 +547,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import HyperParameterTuningJobConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ParameterRanges`: `"ParameterRangesTypeDef"`
 
+- `ParameterRanges`:
+  [ParameterRangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#parameterrangestypedef)
 
 ## InputDataConfigTypeDef
 
@@ -623,15 +558,14 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import InputDataConfigTypeDef
 ```
 
-
 Required fields:
+
 - `DatasetGroupArn`: `str`
 
-
-
 Optional fields:
-- `SupplementaryFeatures`: `List["SupplementaryFeatureTypeDef"]`
 
+- `SupplementaryFeatures`:
+  `List`\[[SupplementaryFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#supplementaryfeaturetypedef)\]
 
 ## IntegerParameterRangeTypeDef
 
@@ -639,17 +573,16 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import IntegerParameterRangeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `MaxValue`: `int`
 - `MinValue`: `int`
 
-
-
 Optional fields:
-- `ScalingType`: `ScalingType`
 
+- `ScalingType`:
+  [ScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#scalingtype)
 
 ## ListDatasetGroupsResponseTypeDef
 
@@ -657,13 +590,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListDatasetGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetGroups`: `List["DatasetGroupSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `DatasetGroups`:
+  `List`\[[DatasetGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasetgroupsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListDatasetImportJobsResponseTypeDef
 
@@ -671,13 +602,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListDatasetImportJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DatasetImportJobs`: `List["DatasetImportJobSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `DatasetImportJobs`:
+  `List`\[[DatasetImportJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasetimportjobsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListDatasetsResponseTypeDef
 
@@ -685,13 +614,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListDatasetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Datasets`: `List["DatasetSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Datasets`:
+  `List`\[[DatasetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasetsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListForecastExportJobsResponseTypeDef
 
@@ -699,13 +626,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListForecastExportJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ForecastExportJobs`: `List["ForecastExportJobSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ForecastExportJobs`:
+  `List`\[[ForecastExportJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#forecastexportjobsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListForecastsResponseTypeDef
 
@@ -713,13 +638,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListForecastsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Forecasts`: `List["ForecastSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Forecasts`:
+  `List`\[[ForecastSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#forecastsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListPredictorBacktestExportJobsResponseTypeDef
 
@@ -727,13 +650,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PredictorBacktestExportJobs`: `List["PredictorBacktestExportJobSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `PredictorBacktestExportJobs`:
+  `List`\[[PredictorBacktestExportJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#predictorbacktestexportjobsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListPredictorsResponseTypeDef
 
@@ -741,13 +662,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListPredictorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Predictors`: `List["PredictorSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Predictors`:
+  `List`\[[PredictorSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#predictorsummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -755,12 +674,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
 
 ## MetricsTypeDef
 
@@ -768,14 +685,13 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import MetricsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RMSE`: `float`
-- `WeightedQuantileLosses`: `List["WeightedQuantileLossTypeDef"]`
-- `ErrorMetrics`: `List["ErrorMetricTypeDef"]`
 
+- `RMSE`: `float`
+- `WeightedQuantileLosses`:
+  `List`\[[WeightedQuantileLossTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#weightedquantilelosstypedef)\]
+- `ErrorMetrics`:
+  `List`\[[ErrorMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#errormetrictypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -783,14 +699,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterRangesTypeDef
 
@@ -798,14 +711,14 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import ParameterRangesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CategoricalParameterRanges`: `List["CategoricalParameterRangeTypeDef"]`
-- `ContinuousParameterRanges`: `List["ContinuousParameterRangeTypeDef"]`
-- `IntegerParameterRanges`: `List["IntegerParameterRangeTypeDef"]`
 
+- `CategoricalParameterRanges`:
+  `List`\[[CategoricalParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#categoricalparameterrangetypedef)\]
+- `ContinuousParameterRanges`:
+  `List`\[[ContinuousParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#continuousparameterrangetypedef)\]
+- `IntegerParameterRanges`:
+  `List`\[[IntegerParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#integerparameterrangetypedef)\]
 
 ## PredictorBacktestExportJobSummaryTypeDef
 
@@ -813,18 +726,16 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import PredictorBacktestExportJobSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PredictorBacktestExportJobArn`: `str`
 - `PredictorBacktestExportJobName`: `str`
-- `Destination`: `"DataDestinationTypeDef"`
+- `Destination`:
+  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-
 
 ## PredictorExecutionDetailsTypeDef
 
@@ -832,12 +743,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import PredictorExecutionDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PredictorExecutions`: `List["PredictorExecutionTypeDef"]`
 
+- `PredictorExecutions`:
+  `List`\[[PredictorExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#predictorexecutiontypedef)\]
 
 ## PredictorExecutionTypeDef
 
@@ -845,13 +754,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import PredictorExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AlgorithmArn`: `str`
-- `TestWindows`: `List["TestWindowSummaryTypeDef"]`
 
+- `AlgorithmArn`: `str`
+- `TestWindows`:
+  `List`\[[TestWindowSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#testwindowsummarytypedef)\]
 
 ## PredictorSummaryTypeDef
 
@@ -859,10 +766,8 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import PredictorSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PredictorArn`: `str`
 - `PredictorName`: `str`
 - `DatasetGroupArn`: `str`
@@ -871,23 +776,20 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
-
 ## S3ConfigTypeDef
 
 ```python
 from mypy_boto3_forecast.type_defs import S3ConfigTypeDef
 ```
 
-
 Required fields:
+
 - `Path`: `str`
 - `RoleArn`: `str`
 
-
-
 Optional fields:
-- `KMSKeyArn`: `str`
 
+- `KMSKeyArn`: `str`
 
 ## SchemaAttributeTypeDef
 
@@ -895,13 +797,11 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import SchemaAttributeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeName`: `str`
-- `AttributeType`: `AttributeType`
 
+- `AttributeName`: `str`
+- `AttributeType`:
+  [AttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#attributetype)
 
 ## SchemaTypeDef
 
@@ -909,12 +809,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import SchemaTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["SchemaAttributeTypeDef"]`
 
+- `Attributes`:
+  `List`\[[SchemaAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#schemaattributetypedef)\]
 
 ## StatisticsTypeDef
 
@@ -922,10 +820,8 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import StatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Count`: `int`
 - `CountDistinct`: `int`
 - `CountNull`: `int`
@@ -935,20 +831,16 @@ Optional fields:
 - `Avg`: `float`
 - `Stddev`: `float`
 
-
 ## SupplementaryFeatureTypeDef
 
 ```python
 from mypy_boto3_forecast.type_defs import SupplementaryFeatureTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
-
-
 
 ## TagTypeDef
 
@@ -956,13 +848,10 @@ Required fields:
 from mypy_boto3_forecast.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TestWindowSummaryTypeDef
 
@@ -970,15 +859,12 @@ Required fields:
 from mypy_boto3_forecast.type_defs import TestWindowSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TestWindowStart`: `datetime`
 - `TestWindowEnd`: `datetime`
 - `Status`: `str`
 - `Message`: `str`
-
 
 ## WeightedQuantileLossTypeDef
 
@@ -986,13 +872,10 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import WeightedQuantileLossTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Quantile`: `float`
 - `LossValue`: `float`
-
 
 ## WindowSummaryTypeDef
 
@@ -1000,13 +883,12 @@ Optional fields:
 from mypy_boto3_forecast.type_defs import WindowSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TestWindowStart`: `datetime`
 - `TestWindowEnd`: `datetime`
 - `ItemCount`: `int`
-- `EvaluationType`: `EvaluationType`
-- `Metrics`: `"MetricsTypeDef"`
-
+- `EvaluationType`:
+  [EvaluationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#evaluationtype)
+- `Metrics`:
+  [MetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#metricstypedef)

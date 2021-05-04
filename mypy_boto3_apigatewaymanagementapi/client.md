@@ -1,9 +1,12 @@
 # ApiGatewayManagementApiClient for boto3 ApiGatewayManagementApi module
 
-> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) > ApiGatewayManagementApiClient
+> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) >
+> ApiGatewayManagementApiClient
 
-Auto-generated documentation for [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
-type annotations stubs module [mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+Auto-generated documentation for
+[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+type annotations stubs module
+[mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [ApiGatewayManagementApiClient for boto3 ApiGatewayManagementApi module](#apigatewaymanagementapiclient-for-boto3-apigatewaymanagementapi-module)
   - [ApiGatewayManagementApiClient](#apigatewaymanagementapiclient)
@@ -28,12 +31,13 @@ def get_apigatewaymanagementapi_client() -> ApiGatewayManagementApiClient:
     return boto3.client("apigatewaymanagementapi")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
+Boto3 documentation:
+[ApiGatewayManagementApi.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_apigatewaymanagementapi.client import Exceptions
@@ -41,7 +45,6 @@ from mypy_boto3_apigatewaymanagementapi.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -51,83 +54,75 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.PayloadTooLargeException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("apigatewaymanagementapi").can_paginate` method.
+Type annotations for `boto3.client("apigatewaymanagementapi").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate]
+Boto3 documentation:
+[ApiGatewayManagementApi.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_connection
 
-Type annotations for `boto3.client("apigatewaymanagementapi").delete_connection` method.
+Type annotations for
+`boto3.client("apigatewaymanagementapi").delete_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection]
+Boto3 documentation:
+[ApiGatewayManagementApi.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
 
-```python
-def delete_connection(
-    self,
-    ConnectionId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ConnectionId`: `str` *(required)*
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("apigatewaymanagementapi").generate_presigned_url` method.
+Type annotations for
+`boto3.client("apigatewaymanagementapi").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url]
+Boto3 documentation:
+[ApiGatewayManagementApi.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_connection
 
-Type annotations for `boto3.client("apigatewaymanagementapi").get_connection` method.
+Type annotations for `boto3.client("apigatewaymanagementapi").get_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection]
+Boto3 documentation:
+[ApiGatewayManagementApi.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
 
-```python
-def get_connection(
-    self,
-    ConnectionId: str
-) -> GetConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionId`: `str` *(required)*
+
+Returns
+[GetConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewaymanagementapi/type_defs.html#getconnectionresponsetypedef).
 
 ### post_to_connection
 
-Type annotations for `boto3.client("apigatewaymanagementapi").post_to_connection` method.
+Type annotations for
+`boto3.client("apigatewaymanagementapi").post_to_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection]
+Boto3 documentation:
+[ApiGatewayManagementApi.Client.post_to_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
 
-```python
-def post_to_connection(
-    self,
-    Data: Union[bytes, IO[bytes]],
-    ConnectionId: str
-) -> None:
-    pass
-```
+Arguments:
 
-
-
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ConnectionId`: `str` *(required)*

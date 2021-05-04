@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EMRContainers](./README.md) > EMRContainersClient
 
-Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+Auto-generated documentation for
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+type annotations stubs module
+[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [EMRContainersClient for boto3 EMRContainers module](#emrcontainersclient-for-boto3-emrcontainers-module)
   - [EMRContainersClient](#emrcontainersclient)
@@ -41,12 +43,13 @@ def get_emr-containers_client() -> EMRContainersClient:
     return boto3.client("emr-containers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
+Boto3 documentation:
+[EMRContainers.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_emr_containers.client import Exceptions
@@ -55,7 +58,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -63,301 +65,314 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("emr-containers").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate]
+Boto3 documentation:
+[EMRContainers.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_job_run
 
 Type annotations for `boto3.client("emr-containers").cancel_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run]
+Boto3 documentation:
+[EMRContainers.Client.cancel_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
 
-```python
-def cancel_job_run(
-    self,
-    id: str,
-    virtualClusterId: str
-) -> CancelJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `virtualClusterId`: `str` *(required)*
+
+Returns
+[CancelJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#canceljobrunresponsetypedef).
 
 ### create_managed_endpoint
 
-Type annotations for `boto3.client("emr-containers").create_managed_endpoint` method.
+Type annotations for `boto3.client("emr-containers").create_managed_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint]
+Boto3 documentation:
+[EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
 
-```python
-def create_managed_endpoint(
-    self,
-    name: str,
-    virtualClusterId: str,
-    type: str,
-    releaseLabel: str,
-    executionRoleArn: str,
-    certificateArn: str,
-    clientToken: str,
-    configurationOverrides: "ConfigurationOverridesTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> CreateManagedEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `virtualClusterId`: `str` *(required)*
+- `type`: `str` *(required)*
+- `releaseLabel`: `str` *(required)*
+- `executionRoleArn`: `str` *(required)*
+- `certificateArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `configurationOverrides`:
+  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#createmanagedendpointresponsetypedef).
 
 ### create_virtual_cluster
 
-Type annotations for `boto3.client("emr-containers").create_virtual_cluster` method.
+Type annotations for `boto3.client("emr-containers").create_virtual_cluster`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster]
+Boto3 documentation:
+[EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
 
-```python
-def create_virtual_cluster(
-    self,
-    name: str,
-    containerProvider: "ContainerProviderTypeDef",
-    clientToken: str,
-    tags: Dict[str, str] = None
-) -> CreateVirtualClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `containerProvider`:
+  [ContainerProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#containerprovidertypedef)
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#createvirtualclusterresponsetypedef).
 
 ### delete_managed_endpoint
 
-Type annotations for `boto3.client("emr-containers").delete_managed_endpoint` method.
+Type annotations for `boto3.client("emr-containers").delete_managed_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint]
+Boto3 documentation:
+[EMRContainers.Client.delete_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
 
-```python
-def delete_managed_endpoint(
-    self,
-    id: str,
-    virtualClusterId: str
-) -> DeleteManagedEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `virtualClusterId`: `str` *(required)*
+
+Returns
+[DeleteManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#deletemanagedendpointresponsetypedef).
 
 ### delete_virtual_cluster
 
-Type annotations for `boto3.client("emr-containers").delete_virtual_cluster` method.
+Type annotations for `boto3.client("emr-containers").delete_virtual_cluster`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster]
+Boto3 documentation:
+[EMRContainers.Client.delete_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
 
-```python
-def delete_virtual_cluster(
-    self,
-    id: str
-) -> DeleteVirtualClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[DeleteVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#deletevirtualclusterresponsetypedef).
 
 ### describe_job_run
 
 Type annotations for `boto3.client("emr-containers").describe_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run]
+Boto3 documentation:
+[EMRContainers.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
 
-```python
-def describe_job_run(
-    self,
-    id: str,
-    virtualClusterId: str
-) -> DescribeJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `virtualClusterId`: `str` *(required)*
+
+Returns
+[DescribeJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describejobrunresponsetypedef).
 
 ### describe_managed_endpoint
 
-Type annotations for `boto3.client("emr-containers").describe_managed_endpoint` method.
+Type annotations for `boto3.client("emr-containers").describe_managed_endpoint`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint]
+Boto3 documentation:
+[EMRContainers.Client.describe_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
 
-```python
-def describe_managed_endpoint(
-    self,
-    id: str,
-    virtualClusterId: str
-) -> DescribeManagedEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `virtualClusterId`: `str` *(required)*
+
+Returns
+[DescribeManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describemanagedendpointresponsetypedef).
 
 ### describe_virtual_cluster
 
-Type annotations for `boto3.client("emr-containers").describe_virtual_cluster` method.
+Type annotations for `boto3.client("emr-containers").describe_virtual_cluster`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster]
+Boto3 documentation:
+[EMRContainers.Client.describe_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
 
-```python
-def describe_virtual_cluster(
-    self,
-    id: str
-) -> DescribeVirtualClusterResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[DescribeVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describevirtualclusterresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("emr-containers").generate_presigned_url` method.
+Type annotations for `boto3.client("emr-containers").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url]
+Boto3 documentation:
+[EMRContainers.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_job_runs
 
 Type annotations for `boto3.client("emr-containers").list_job_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs]
+Boto3 documentation:
+[EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
 
-```python
-def list_job_runs(
-    self,
-    virtualClusterId: str,
-    createdBefore: datetime = None,
-    createdAfter: datetime = None,
-    name: str = None,
-    states: List[JobRunState] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListJobRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `virtualClusterId`: `str` *(required)*
+- `createdBefore`: `datetime`
+- `createdAfter`: `datetime`
+- `name`: `str`
+- `states`:
+  `List`\[[JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#jobrunstate)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listjobrunsresponsetypedef).
 
 ### list_managed_endpoints
 
-Type annotations for `boto3.client("emr-containers").list_managed_endpoints` method.
+Type annotations for `boto3.client("emr-containers").list_managed_endpoints`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints]
+Boto3 documentation:
+[EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
 
-```python
-def list_managed_endpoints(
-    self,
-    virtualClusterId: str,
-    createdBefore: datetime = None,
-    createdAfter: datetime = None,
-    types: List[str] = None,
-    states: List[EndpointState] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListManagedEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `virtualClusterId`: `str` *(required)*
+- `createdBefore`: `datetime`
+- `createdAfter`: `datetime`
+- `types`: `List`\[`str`\]
+- `states`:
+  `List`\[[EndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#endpointstate)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListManagedEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listmanagedendpointsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("emr-containers").list_tags_for_resource` method.
+Type annotations for `boto3.client("emr-containers").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource]
+Boto3 documentation:
+[EMRContainers.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_virtual_clusters
 
-Type annotations for `boto3.client("emr-containers").list_virtual_clusters` method.
+Type annotations for `boto3.client("emr-containers").list_virtual_clusters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters]
+Boto3 documentation:
+[EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
 
-```python
-def list_virtual_clusters(
-    self,
-    containerProviderId: str = None,
-    containerProviderType: Literal['EKS'] = None,
-    createdAfter: datetime = None,
-    createdBefore: datetime = None,
-    states: List[VirtualClusterState] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListVirtualClustersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerProviderId`: `str`
+- `containerProviderType`: `Literal['EKS']`
+- `createdAfter`: `datetime`
+- `createdBefore`: `datetime`
+- `states`:
+  `List`\[[VirtualClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#virtualclusterstate)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListVirtualClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listvirtualclustersresponsetypedef).
 
 ### start_job_run
 
 Type annotations for `boto3.client("emr-containers").start_job_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run]
+Boto3 documentation:
+[EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
 
-```python
-def start_job_run(
-    self,
-    virtualClusterId: str,
-    clientToken: str,
-    executionRoleArn: str,
-    releaseLabel: str,
-    jobDriver: "JobDriverTypeDef",
-    name: str = None,
-    configurationOverrides: "ConfigurationOverridesTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> StartJobRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `virtualClusterId`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `executionRoleArn`: `str` *(required)*
+- `releaseLabel`: `str` *(required)*
+- `jobDriver`:
+  [JobDriverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#jobdrivertypedef)
+  *(required)*
+- `name`: `str`
+- `configurationOverrides`:
+  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#startjobrunresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("emr-containers").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource]
+Boto3 documentation:
+[EMRContainers.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("emr-containers").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource]
+Boto3 documentation:
+[EMRContainers.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("emr-containers").get_paginator` method with overloads.
+Type annotations for `boto3.client("emr-containers").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_job_runs")` -> [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
-- `client.get_paginator("list_managed_endpoints")` -> [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
-- `client.get_paginator("list_virtual_clusters")` -> [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
-
-
+- `client.get_paginator("list_job_runs")` ->
+  [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+- `client.get_paginator("list_managed_endpoints")` ->
+  [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
+- `client.get_paginator("list_virtual_clusters")` ->
+  [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)

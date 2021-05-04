@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Appflow
 
-Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+Auto-generated documentation for
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+type annotations stubs module
+[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ```bash
 pip install mypy-boto3-appflow
@@ -18,7 +20,7 @@ pip install mypy-boto3-appflow
 
 ## AppflowClient
 
-Type annotations for  `boto3.client("appflow")` as [AppflowClient](./client.md)
+Type annotations for `boto3.client("appflow")` as [AppflowClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_appflow.client import AppflowClient
 ```
 
-
 AppflowClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_connector_profile](./client.md#create-connector-profile)
 - [create_flow](./client.md#create-flow)
@@ -53,10 +53,8 @@ AppflowClient [exceptions](./client.md#exceptions)
 - [update_connector_profile](./client.md#update-connector-profile)
 - [update_flow](./client.md#update-flow)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [ConnectorAuthenticationException](./client.md#connectorauthenticationexception)
@@ -66,15 +64,6 @@ AppflowClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -116,13 +105,10 @@ from mypy_boto3_appflow.literals import AggregationType, ...
 - [WriteOperationType](./literals.md#writeoperationtype)
 - [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

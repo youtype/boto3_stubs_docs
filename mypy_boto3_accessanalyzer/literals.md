@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AccessAnalyzer](./README.md) > Literals
 
-Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+Auto-generated documentation for
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+type annotations stubs module
+[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [Literals for boto3 AccessAnalyzer module](#literals-for-boto3-accessanalyzer-module)
   - [AccessPreviewStatus](#accesspreviewstatus)

@@ -1,9 +1,12 @@
 # DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module
 
-> [Index](../README.md) > [DatabaseMigrationService](./README.md) > DatabaseMigrationServiceClient
+> [Index](../README.md) > [DatabaseMigrationService](./README.md) >
+> DatabaseMigrationServiceClient
 
-Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+Auto-generated documentation for
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+type annotations stubs module
+[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module](#databasemigrationserviceclient-for-boto3-databasemigrationservice-module)
   - [DatabaseMigrationServiceClient](#databasemigrationserviceclient)
@@ -82,12 +85,13 @@ def get_dms_client() -> DatabaseMigrationServiceClient:
     return boto3.client("dms")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
+Boto3 documentation:
+[DatabaseMigrationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_dms.client import Exceptions
@@ -95,7 +99,6 @@ from mypy_boto3_dms.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedFault) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -124,1039 +127,1131 @@ Exceptions:
 - `Exceptions.SubnetAlreadyInUse`
 - `Exceptions.UpgradeDependencyFailureFault`
 
-
 ## Methods
-
 
 ### add_tags_to_resource
 
 Type annotations for `boto3.client("dms").add_tags_to_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource]
+Boto3 documentation:
+[DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
 
-```python
-def add_tags_to_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### apply_pending_maintenance_action
 
-Type annotations for `boto3.client("dms").apply_pending_maintenance_action` method.
+Type annotations for `boto3.client("dms").apply_pending_maintenance_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action]
+Boto3 documentation:
+[DatabaseMigrationService.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
 
-```python
-def apply_pending_maintenance_action(
-    self,
-    ReplicationInstanceArn: str,
-    ApplyAction: str,
-    OptInType: str
-) -> ApplyPendingMaintenanceActionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str` *(required)*
+- `ApplyAction`: `str` *(required)*
+- `OptInType`: `str` *(required)*
+
+Returns
+[ApplyPendingMaintenanceActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#applypendingmaintenanceactionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("dms").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate]
+Boto3 documentation:
+[DatabaseMigrationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_replication_task_assessment_run
 
-Type annotations for `boto3.client("dms").cancel_replication_task_assessment_run` method.
+Type annotations for
+`boto3.client("dms").cancel_replication_task_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run]
+Boto3 documentation:
+[DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
 
-```python
-def cancel_replication_task_assessment_run(
-    self,
-    ReplicationTaskAssessmentRunArn: str
-) -> CancelReplicationTaskAssessmentRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskAssessmentRunArn`: `str` *(required)*
+
+Returns
+[CancelReplicationTaskAssessmentRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#cancelreplicationtaskassessmentrunresponsetypedef).
 
 ### create_endpoint
 
 Type annotations for `boto3.client("dms").create_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint]
+Boto3 documentation:
+[DatabaseMigrationService.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
 
-```python
-def create_endpoint(
-    self,
-    EndpointIdentifier: str,
-    EndpointType: ReplicationEndpointTypeValue,
-    EngineName: str,
-    Username: str = None,
-    Password: str = None,
-    ServerName: str = None,
-    Port: int = None,
-    DatabaseName: str = None,
-    ExtraConnectionAttributes: str = None,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None,
-    CertificateArn: str = None,
-    SslMode: DmsSslModeValue = None,
-    ServiceAccessRoleArn: str = None,
-    ExternalTableDefinition: str = None,
-    DynamoDbSettings: "DynamoDbSettingsTypeDef" = None,
-    S3Settings: "S3SettingsTypeDef" = None,
-    DmsTransferSettings: "DmsTransferSettingsTypeDef" = None,
-    MongoDbSettings: "MongoDbSettingsTypeDef" = None,
-    KinesisSettings: "KinesisSettingsTypeDef" = None,
-    KafkaSettings: "KafkaSettingsTypeDef" = None,
-    ElasticsearchSettings: "ElasticsearchSettingsTypeDef" = None,
-    NeptuneSettings: "NeptuneSettingsTypeDef" = None,
-    RedshiftSettings: "RedshiftSettingsTypeDef" = None,
-    PostgreSQLSettings: "PostgreSQLSettingsTypeDef" = None,
-    MySQLSettings: "MySQLSettingsTypeDef" = None,
-    OracleSettings: "OracleSettingsTypeDef" = None,
-    SybaseSettings: "SybaseSettingsTypeDef" = None,
-    MicrosoftSQLServerSettings: "MicrosoftSQLServerSettingsTypeDef" = None,
-    IBMDb2Settings: "IBMDb2SettingsTypeDef" = None,
-    ResourceIdentifier: str = None,
-    DocDbSettings: "DocDbSettingsTypeDef" = None
-) -> CreateEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointIdentifier`: `str` *(required)*
+- `EndpointType`:
+  [ReplicationEndpointTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#replicationendpointtypevalue)
+  *(required)*
+- `EngineName`: `str` *(required)*
+- `Username`: `str`
+- `Password`: `str`
+- `ServerName`: `str`
+- `Port`: `int`
+- `DatabaseName`: `str`
+- `ExtraConnectionAttributes`: `str`
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+- `CertificateArn`: `str`
+- `SslMode`:
+  [DmsSslModeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#dmssslmodevalue)
+- `ServiceAccessRoleArn`: `str`
+- `ExternalTableDefinition`: `str`
+- `DynamoDbSettings`:
+  [DynamoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dynamodbsettingstypedef)
+- `S3Settings`:
+  [S3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#s3settingstypedef)
+- `DmsTransferSettings`:
+  [DmsTransferSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dmstransfersettingstypedef)
+- `MongoDbSettings`:
+  [MongoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mongodbsettingstypedef)
+- `KinesisSettings`:
+  [KinesisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kinesissettingstypedef)
+- `KafkaSettings`:
+  [KafkaSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kafkasettingstypedef)
+- `ElasticsearchSettings`:
+  [ElasticsearchSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#elasticsearchsettingstypedef)
+- `NeptuneSettings`:
+  [NeptuneSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#neptunesettingstypedef)
+- `RedshiftSettings`:
+  [RedshiftSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#redshiftsettingstypedef)
+- `PostgreSQLSettings`:
+  [PostgreSQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#postgresqlsettingstypedef)
+- `MySQLSettings`:
+  [MySQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mysqlsettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#sybasesettingstypedef)
+- `MicrosoftSQLServerSettings`:
+  [MicrosoftSQLServerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#microsoftsqlserversettingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#ibmdb2settingstypedef)
+- `ResourceIdentifier`: `str`
+- `DocDbSettings`:
+  [DocDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#docdbsettingstypedef)
+
+Returns
+[CreateEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#createendpointresponsetypedef).
 
 ### create_event_subscription
 
 Type annotations for `boto3.client("dms").create_event_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription]
+Boto3 documentation:
+[DatabaseMigrationService.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
 
-```python
-def create_event_subscription(
-    self,
-    SubscriptionName: str,
-    SnsTopicArn: str,
-    SourceType: str = None,
-    EventCategories: List[str] = None,
-    SourceIds: List[str] = None,
-    Enabled: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateEventSubscriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
+- `SnsTopicArn`: `str` *(required)*
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `List`\[`str`\]
+- `Enabled`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateEventSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#createeventsubscriptionresponsetypedef).
 
 ### create_replication_instance
 
 Type annotations for `boto3.client("dms").create_replication_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance]
+Boto3 documentation:
+[DatabaseMigrationService.Client.create_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
 
-```python
-def create_replication_instance(
-    self,
-    ReplicationInstanceIdentifier: str,
-    ReplicationInstanceClass: str,
-    AllocatedStorage: int = None,
-    VpcSecurityGroupIds: List[str] = None,
-    AvailabilityZone: str = None,
-    ReplicationSubnetGroupIdentifier: str = None,
-    PreferredMaintenanceWindow: str = None,
-    MultiAZ: bool = None,
-    EngineVersion: str = None,
-    AutoMinorVersionUpgrade: bool = None,
-    Tags: List["TagTypeDef"] = None,
-    KmsKeyId: str = None,
-    PubliclyAccessible: bool = None,
-    DnsNameServers: str = None,
-    ResourceIdentifier: str = None
-) -> CreateReplicationInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceIdentifier`: `str` *(required)*
+- `ReplicationInstanceClass`: `str` *(required)*
+- `AllocatedStorage`: `int`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `AvailabilityZone`: `str`
+- `ReplicationSubnetGroupIdentifier`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `PubliclyAccessible`: `bool`
+- `DnsNameServers`: `str`
+- `ResourceIdentifier`: `str`
+
+Returns
+[CreateReplicationInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#createreplicationinstanceresponsetypedef).
 
 ### create_replication_subnet_group
 
-Type annotations for `boto3.client("dms").create_replication_subnet_group` method.
+Type annotations for `boto3.client("dms").create_replication_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group]
+Boto3 documentation:
+[DatabaseMigrationService.Client.create_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
 
-```python
-def create_replication_subnet_group(
-    self,
-    ReplicationSubnetGroupIdentifier: str,
-    ReplicationSubnetGroupDescription: str,
-    SubnetIds: List[str],
-    Tags: List["TagTypeDef"] = None
-) -> CreateReplicationSubnetGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
+- `ReplicationSubnetGroupDescription`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateReplicationSubnetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#createreplicationsubnetgroupresponsetypedef).
 
 ### create_replication_task
 
 Type annotations for `boto3.client("dms").create_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.create_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
 
-```python
-def create_replication_task(
-    self,
-    ReplicationTaskIdentifier: str,
-    SourceEndpointArn: str,
-    TargetEndpointArn: str,
-    ReplicationInstanceArn: str,
-    MigrationType: MigrationTypeValue,
-    TableMappings: str,
-    ReplicationTaskSettings: str = None,
-    CdcStartTime: datetime = None,
-    CdcStartPosition: str = None,
-    CdcStopPosition: str = None,
-    Tags: List["TagTypeDef"] = None,
-    TaskData: str = None,
-    ResourceIdentifier: str = None
-) -> CreateReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskIdentifier`: `str` *(required)*
+- `SourceEndpointArn`: `str` *(required)*
+- `TargetEndpointArn`: `str` *(required)*
+- `ReplicationInstanceArn`: `str` *(required)*
+- `MigrationType`:
+  [MigrationTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#migrationtypevalue)
+  *(required)*
+- `TableMappings`: `str` *(required)*
+- `ReplicationTaskSettings`: `str`
+- `CdcStartTime`: `datetime`
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+- `TaskData`: `str`
+- `ResourceIdentifier`: `str`
+
+Returns
+[CreateReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#createreplicationtaskresponsetypedef).
 
 ### delete_certificate
 
 Type annotations for `boto3.client("dms").delete_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
 
-```python
-def delete_certificate(
-    self,
-    CertificateArn: str
-) -> DeleteCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateArn`: `str` *(required)*
+
+Returns
+[DeleteCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deletecertificateresponsetypedef).
 
 ### delete_connection
 
 Type annotations for `boto3.client("dms").delete_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
 
-```python
-def delete_connection(
-    self,
-    EndpointArn: str,
-    ReplicationInstanceArn: str
-) -> DeleteConnectionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+- `ReplicationInstanceArn`: `str` *(required)*
+
+Returns
+[DeleteConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deleteconnectionresponsetypedef).
 
 ### delete_endpoint
 
 Type annotations for `boto3.client("dms").delete_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
 
-```python
-def delete_endpoint(
-    self,
-    EndpointArn: str
-) -> DeleteEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+
+Returns
+[DeleteEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deleteendpointresponsetypedef).
 
 ### delete_event_subscription
 
 Type annotations for `boto3.client("dms").delete_event_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
 
-```python
-def delete_event_subscription(
-    self,
-    SubscriptionName: str
-) -> DeleteEventSubscriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
+
+Returns
+[DeleteEventSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deleteeventsubscriptionresponsetypedef).
 
 ### delete_replication_instance
 
 Type annotations for `boto3.client("dms").delete_replication_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
 
-```python
-def delete_replication_instance(
-    self,
-    ReplicationInstanceArn: str
-) -> DeleteReplicationInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str` *(required)*
+
+Returns
+[DeleteReplicationInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deletereplicationinstanceresponsetypedef).
 
 ### delete_replication_subnet_group
 
-Type annotations for `boto3.client("dms").delete_replication_subnet_group` method.
+Type annotations for `boto3.client("dms").delete_replication_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
 
-```python
-def delete_replication_subnet_group(
-    self,
-    ReplicationSubnetGroupIdentifier: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_replication_task
 
 Type annotations for `boto3.client("dms").delete_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
 
-```python
-def delete_replication_task(
-    self,
-    ReplicationTaskArn: str
-) -> DeleteReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+
+Returns
+[DeleteReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deletereplicationtaskresponsetypedef).
 
 ### delete_replication_task_assessment_run
 
-Type annotations for `boto3.client("dms").delete_replication_task_assessment_run` method.
+Type annotations for
+`boto3.client("dms").delete_replication_task_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run]
+Boto3 documentation:
+[DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
 
-```python
-def delete_replication_task_assessment_run(
-    self,
-    ReplicationTaskAssessmentRunArn: str
-) -> DeleteReplicationTaskAssessmentRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskAssessmentRunArn`: `str` *(required)*
+
+Returns
+[DeleteReplicationTaskAssessmentRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#deletereplicationtaskassessmentrunresponsetypedef).
 
 ### describe_account_attributes
 
 Type annotations for `boto3.client("dms").describe_account_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
 
-```python
-def describe_account_attributes(
-    self
-) -> DescribeAccountAttributesResponseTypeDef:
-    pass
-```
+Returns
+[DescribeAccountAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeaccountattributesresponsetypedef).
 
 ### describe_applicable_individual_assessments
 
-Type annotations for `boto3.client("dms").describe_applicable_individual_assessments` method.
+Type annotations for
+`boto3.client("dms").describe_applicable_individual_assessments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_applicable_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
 
-```python
-def describe_applicable_individual_assessments(
-    self,
-    ReplicationTaskArn: str = None,
-    ReplicationInstanceArn: str = None,
-    SourceEngineName: str = None,
-    TargetEngineName: str = None,
-    MigrationType: MigrationTypeValue = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeApplicableIndividualAssessmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str`
+- `ReplicationInstanceArn`: `str`
+- `SourceEngineName`: `str`
+- `TargetEngineName`: `str`
+- `MigrationType`:
+  [MigrationTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#migrationtypevalue)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeApplicableIndividualAssessmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeapplicableindividualassessmentsresponsetypedef).
 
 ### describe_certificates
 
 Type annotations for `boto3.client("dms").describe_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
 
-```python
-def describe_certificates(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeCertificatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describecertificatesresponsetypedef).
 
 ### describe_connections
 
 Type annotations for `boto3.client("dms").describe_connections` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
 
-```python
-def describe_connections(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeConnectionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeconnectionsresponsetypedef).
 
 ### describe_endpoint_settings
 
 Type annotations for `boto3.client("dms").describe_endpoint_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_endpoint_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
 
-```python
-def describe_endpoint_settings(
-    self,
-    EngineName: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEndpointSettingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EngineName`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEndpointSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeendpointsettingsresponsetypedef).
 
 ### describe_endpoint_types
 
 Type annotations for `boto3.client("dms").describe_endpoint_types` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_endpoint_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
 
-```python
-def describe_endpoint_types(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEndpointTypesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEndpointTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeendpointtypesresponsetypedef).
 
 ### describe_endpoints
 
 Type annotations for `boto3.client("dms").describe_endpoints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
 
-```python
-def describe_endpoints(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEndpointsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeendpointsresponsetypedef).
 
 ### describe_event_categories
 
 Type annotations for `boto3.client("dms").describe_event_categories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
 
-```python
-def describe_event_categories(
-    self,
-    SourceType: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> DescribeEventCategoriesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceType`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+
+Returns
+[DescribeEventCategoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeeventcategoriesresponsetypedef).
 
 ### describe_event_subscriptions
 
 Type annotations for `boto3.client("dms").describe_event_subscriptions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
 
-```python
-def describe_event_subscriptions(
-    self,
-    SubscriptionName: str = None,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEventSubscriptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEventSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeeventsubscriptionsresponsetypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("dms").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    SourceIdentifier: str = None,
-    SourceType: Literal['replication-instance'] = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Duration: int = None,
-    EventCategories: List[str] = None,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceIdentifier`: `str`
+- `SourceType`: `Literal['replication-instance']`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `EventCategories`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeeventsresponsetypedef).
 
 ### describe_orderable_replication_instances
 
-Type annotations for `boto3.client("dms").describe_orderable_replication_instances` method.
+Type annotations for
+`boto3.client("dms").describe_orderable_replication_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
 
-```python
-def describe_orderable_replication_instances(
-    self,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeOrderableReplicationInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeOrderableReplicationInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeorderablereplicationinstancesresponsetypedef).
 
 ### describe_pending_maintenance_actions
 
-Type annotations for `boto3.client("dms").describe_pending_maintenance_actions` method.
+Type annotations for `boto3.client("dms").describe_pending_maintenance_actions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
 
-```python
-def describe_pending_maintenance_actions(
-    self,
-    ReplicationInstanceArn: str = None,
-    Filters: List[FilterTypeDef] = None,
-    Marker: str = None,
-    MaxRecords: int = None
-) -> DescribePendingMaintenanceActionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribePendingMaintenanceActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describependingmaintenanceactionsresponsetypedef).
 
 ### describe_refresh_schemas_status
 
-Type annotations for `boto3.client("dms").describe_refresh_schemas_status` method.
+Type annotations for `boto3.client("dms").describe_refresh_schemas_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
 
-```python
-def describe_refresh_schemas_status(
-    self,
-    EndpointArn: str
-) -> DescribeRefreshSchemasStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+
+Returns
+[DescribeRefreshSchemasStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describerefreshschemasstatusresponsetypedef).
 
 ### describe_replication_instance_task_logs
 
-Type annotations for `boto3.client("dms").describe_replication_instance_task_logs` method.
+Type annotations for
+`boto3.client("dms").describe_replication_instance_task_logs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_instance_task_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
 
-```python
-def describe_replication_instance_task_logs(
-    self,
-    ReplicationInstanceArn: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationInstanceTaskLogsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationInstanceTaskLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationinstancetasklogsresponsetypedef).
 
 ### describe_replication_instances
 
-Type annotations for `boto3.client("dms").describe_replication_instances` method.
+Type annotations for `boto3.client("dms").describe_replication_instances`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
 
-```python
-def describe_replication_instances(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationinstancesresponsetypedef).
 
 ### describe_replication_subnet_groups
 
-Type annotations for `boto3.client("dms").describe_replication_subnet_groups` method.
+Type annotations for `boto3.client("dms").describe_replication_subnet_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
 
-```python
-def describe_replication_subnet_groups(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationSubnetGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationSubnetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationsubnetgroupsresponsetypedef).
 
 ### describe_replication_task_assessment_results
 
-Type annotations for `boto3.client("dms").describe_replication_task_assessment_results` method.
+Type annotations for
+`boto3.client("dms").describe_replication_task_assessment_results` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_task_assessment_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
 
-```python
-def describe_replication_task_assessment_results(
-    self,
-    ReplicationTaskArn: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationTaskAssessmentResultsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationTaskAssessmentResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtaskassessmentresultsresponsetypedef).
 
 ### describe_replication_task_assessment_runs
 
-Type annotations for `boto3.client("dms").describe_replication_task_assessment_runs` method.
+Type annotations for
+`boto3.client("dms").describe_replication_task_assessment_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_task_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
 
-```python
-def describe_replication_task_assessment_runs(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationTaskAssessmentRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationTaskAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtaskassessmentrunsresponsetypedef).
 
 ### describe_replication_task_individual_assessments
 
-Type annotations for `boto3.client("dms").describe_replication_task_individual_assessments` method.
+Type annotations for
+`boto3.client("dms").describe_replication_task_individual_assessments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_task_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
 
-```python
-def describe_replication_task_individual_assessments(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeReplicationTaskIndividualAssessmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtaskindividualassessmentsresponsetypedef).
 
 ### describe_replication_tasks
 
 Type annotations for `boto3.client("dms").describe_replication_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_replication_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
 
-```python
-def describe_replication_tasks(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    WithoutSettings: bool = None
-) -> DescribeReplicationTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WithoutSettings`: `bool`
+
+Returns
+[DescribeReplicationTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describereplicationtasksresponsetypedef).
 
 ### describe_schemas
 
 Type annotations for `boto3.client("dms").describe_schemas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
 
-```python
-def describe_schemas(
-    self,
-    EndpointArn: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeSchemasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describeschemasresponsetypedef).
 
 ### describe_table_statistics
 
 Type annotations for `boto3.client("dms").describe_table_statistics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics]
+Boto3 documentation:
+[DatabaseMigrationService.Client.describe_table_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
 
-```python
-def describe_table_statistics(
-    self,
-    ReplicationTaskArn: str,
-    MaxRecords: int = None,
-    Marker: str = None,
-    Filters: List[FilterTypeDef] = None
-) -> DescribeTableStatisticsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#filtertypedef)\]
+
+Returns
+[DescribeTableStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#describetablestatisticsresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("dms").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url]
+Boto3 documentation:
+[DatabaseMigrationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### import_certificate
 
 Type annotations for `boto3.client("dms").import_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate]
+Boto3 documentation:
+[DatabaseMigrationService.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
 
-```python
-def import_certificate(
-    self,
-    CertificateIdentifier: str,
-    CertificatePem: str = None,
-    CertificateWallet: Union[bytes, IO[bytes]] = None,
-    Tags: List["TagTypeDef"] = None
-) -> ImportCertificateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CertificateIdentifier`: `str` *(required)*
+- `CertificatePem`: `str`
+- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+
+Returns
+[ImportCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#importcertificateresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("dms").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource]
+Boto3 documentation:
+[DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### modify_endpoint
 
 Type annotations for `boto3.client("dms").modify_endpoint` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint]
+Boto3 documentation:
+[DatabaseMigrationService.Client.modify_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
 
-```python
-def modify_endpoint(
-    self,
-    EndpointArn: str,
-    EndpointIdentifier: str = None,
-    EndpointType: ReplicationEndpointTypeValue = None,
-    EngineName: str = None,
-    Username: str = None,
-    Password: str = None,
-    ServerName: str = None,
-    Port: int = None,
-    DatabaseName: str = None,
-    ExtraConnectionAttributes: str = None,
-    CertificateArn: str = None,
-    SslMode: DmsSslModeValue = None,
-    ServiceAccessRoleArn: str = None,
-    ExternalTableDefinition: str = None,
-    DynamoDbSettings: "DynamoDbSettingsTypeDef" = None,
-    S3Settings: "S3SettingsTypeDef" = None,
-    DmsTransferSettings: "DmsTransferSettingsTypeDef" = None,
-    MongoDbSettings: "MongoDbSettingsTypeDef" = None,
-    KinesisSettings: "KinesisSettingsTypeDef" = None,
-    KafkaSettings: "KafkaSettingsTypeDef" = None,
-    ElasticsearchSettings: "ElasticsearchSettingsTypeDef" = None,
-    NeptuneSettings: "NeptuneSettingsTypeDef" = None,
-    RedshiftSettings: "RedshiftSettingsTypeDef" = None,
-    PostgreSQLSettings: "PostgreSQLSettingsTypeDef" = None,
-    MySQLSettings: "MySQLSettingsTypeDef" = None,
-    OracleSettings: "OracleSettingsTypeDef" = None,
-    SybaseSettings: "SybaseSettingsTypeDef" = None,
-    MicrosoftSQLServerSettings: "MicrosoftSQLServerSettingsTypeDef" = None,
-    IBMDb2Settings: "IBMDb2SettingsTypeDef" = None,
-    DocDbSettings: "DocDbSettingsTypeDef" = None
-) -> ModifyEndpointResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+- `EndpointIdentifier`: `str`
+- `EndpointType`:
+  [ReplicationEndpointTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#replicationendpointtypevalue)
+- `EngineName`: `str`
+- `Username`: `str`
+- `Password`: `str`
+- `ServerName`: `str`
+- `Port`: `int`
+- `DatabaseName`: `str`
+- `ExtraConnectionAttributes`: `str`
+- `CertificateArn`: `str`
+- `SslMode`:
+  [DmsSslModeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#dmssslmodevalue)
+- `ServiceAccessRoleArn`: `str`
+- `ExternalTableDefinition`: `str`
+- `DynamoDbSettings`:
+  [DynamoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dynamodbsettingstypedef)
+- `S3Settings`:
+  [S3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#s3settingstypedef)
+- `DmsTransferSettings`:
+  [DmsTransferSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dmstransfersettingstypedef)
+- `MongoDbSettings`:
+  [MongoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mongodbsettingstypedef)
+- `KinesisSettings`:
+  [KinesisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kinesissettingstypedef)
+- `KafkaSettings`:
+  [KafkaSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kafkasettingstypedef)
+- `ElasticsearchSettings`:
+  [ElasticsearchSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#elasticsearchsettingstypedef)
+- `NeptuneSettings`:
+  [NeptuneSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#neptunesettingstypedef)
+- `RedshiftSettings`:
+  [RedshiftSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#redshiftsettingstypedef)
+- `PostgreSQLSettings`:
+  [PostgreSQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#postgresqlsettingstypedef)
+- `MySQLSettings`:
+  [MySQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mysqlsettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#sybasesettingstypedef)
+- `MicrosoftSQLServerSettings`:
+  [MicrosoftSQLServerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#microsoftsqlserversettingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#ibmdb2settingstypedef)
+- `DocDbSettings`:
+  [DocDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#docdbsettingstypedef)
+
+Returns
+[ModifyEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#modifyendpointresponsetypedef).
 
 ### modify_event_subscription
 
 Type annotations for `boto3.client("dms").modify_event_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription]
+Boto3 documentation:
+[DatabaseMigrationService.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
 
-```python
-def modify_event_subscription(
-    self,
-    SubscriptionName: str,
-    SnsTopicArn: str = None,
-    SourceType: str = None,
-    EventCategories: List[str] = None,
-    Enabled: bool = None
-) -> ModifyEventSubscriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
+- `SnsTopicArn`: `str`
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `Enabled`: `bool`
+
+Returns
+[ModifyEventSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#modifyeventsubscriptionresponsetypedef).
 
 ### modify_replication_instance
 
 Type annotations for `boto3.client("dms").modify_replication_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance]
+Boto3 documentation:
+[DatabaseMigrationService.Client.modify_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
 
-```python
-def modify_replication_instance(
-    self,
-    ReplicationInstanceArn: str,
-    AllocatedStorage: int = None,
-    ApplyImmediately: bool = None,
-    ReplicationInstanceClass: str = None,
-    VpcSecurityGroupIds: List[str] = None,
-    PreferredMaintenanceWindow: str = None,
-    MultiAZ: bool = None,
-    EngineVersion: str = None,
-    AllowMajorVersionUpgrade: bool = None,
-    AutoMinorVersionUpgrade: bool = None,
-    ReplicationInstanceIdentifier: str = None
-) -> ModifyReplicationInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str` *(required)*
+- `AllocatedStorage`: `int`
+- `ApplyImmediately`: `bool`
+- `ReplicationInstanceClass`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `ReplicationInstanceIdentifier`: `str`
+
+Returns
+[ModifyReplicationInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#modifyreplicationinstanceresponsetypedef).
 
 ### modify_replication_subnet_group
 
-Type annotations for `boto3.client("dms").modify_replication_subnet_group` method.
+Type annotations for `boto3.client("dms").modify_replication_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group]
+Boto3 documentation:
+[DatabaseMigrationService.Client.modify_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
 
-```python
-def modify_replication_subnet_group(
-    self,
-    ReplicationSubnetGroupIdentifier: str,
-    SubnetIds: List[str],
-    ReplicationSubnetGroupDescription: str = None
-) -> ModifyReplicationSubnetGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `ReplicationSubnetGroupDescription`: `str`
+
+Returns
+[ModifyReplicationSubnetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#modifyreplicationsubnetgroupresponsetypedef).
 
 ### modify_replication_task
 
 Type annotations for `boto3.client("dms").modify_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.modify_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
 
-```python
-def modify_replication_task(
-    self,
-    ReplicationTaskArn: str,
-    ReplicationTaskIdentifier: str = None,
-    MigrationType: MigrationTypeValue = None,
-    TableMappings: str = None,
-    ReplicationTaskSettings: str = None,
-    CdcStartTime: datetime = None,
-    CdcStartPosition: str = None,
-    CdcStopPosition: str = None,
-    TaskData: str = None
-) -> ModifyReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `ReplicationTaskIdentifier`: `str`
+- `MigrationType`:
+  [MigrationTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#migrationtypevalue)
+- `TableMappings`: `str`
+- `ReplicationTaskSettings`: `str`
+- `CdcStartTime`: `datetime`
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
+- `TaskData`: `str`
+
+Returns
+[ModifyReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#modifyreplicationtaskresponsetypedef).
 
 ### move_replication_task
 
 Type annotations for `boto3.client("dms").move_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
 
-```python
-def move_replication_task(
-    self,
-    ReplicationTaskArn: str,
-    TargetReplicationInstanceArn: str
-) -> MoveReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `TargetReplicationInstanceArn`: `str` *(required)*
+
+Returns
+[MoveReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#movereplicationtaskresponsetypedef).
 
 ### reboot_replication_instance
 
 Type annotations for `boto3.client("dms").reboot_replication_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance]
+Boto3 documentation:
+[DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
 
-```python
-def reboot_replication_instance(
-    self,
-    ReplicationInstanceArn: str,
-    ForceFailover: bool = None
-) -> RebootReplicationInstanceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationInstanceArn`: `str` *(required)*
+- `ForceFailover`: `bool`
+
+Returns
+[RebootReplicationInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#rebootreplicationinstanceresponsetypedef).
 
 ### refresh_schemas
 
 Type annotations for `boto3.client("dms").refresh_schemas` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas]
+Boto3 documentation:
+[DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
 
-```python
-def refresh_schemas(
-    self,
-    EndpointArn: str,
-    ReplicationInstanceArn: str
-) -> RefreshSchemasResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EndpointArn`: `str` *(required)*
+- `ReplicationInstanceArn`: `str` *(required)*
+
+Returns
+[RefreshSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#refreshschemasresponsetypedef).
 
 ### reload_tables
 
 Type annotations for `boto3.client("dms").reload_tables` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables]
+Boto3 documentation:
+[DatabaseMigrationService.Client.reload_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
 
-```python
-def reload_tables(
-    self,
-    ReplicationTaskArn: str,
-    TablesToReload: List[TableToReloadTypeDef],
-    ReloadOption: ReloadOptionValue = None
-) -> ReloadTablesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `TablesToReload`:
+  `List`\[[TableToReloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tabletoreloadtypedef)\]
+  *(required)*
+- `ReloadOption`:
+  [ReloadOptionValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#reloadoptionvalue)
+
+Returns
+[ReloadTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#reloadtablesresponsetypedef).
 
 ### remove_tags_from_resource
 
 Type annotations for `boto3.client("dms").remove_tags_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource]
+Boto3 documentation:
+[DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
 
-```python
-def remove_tags_from_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_replication_task
 
 Type annotations for `boto3.client("dms").start_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.start_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
 
-```python
-def start_replication_task(
-    self,
-    ReplicationTaskArn: str,
-    StartReplicationTaskType: StartReplicationTaskTypeValue,
-    CdcStartTime: datetime = None,
-    CdcStartPosition: str = None,
-    CdcStopPosition: str = None
-) -> StartReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `StartReplicationTaskType`:
+  [StartReplicationTaskTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#startreplicationtasktypevalue)
+  *(required)*
+- `CdcStartTime`: `datetime`
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
+
+Returns
+[StartReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#startreplicationtaskresponsetypedef).
 
 ### start_replication_task_assessment
 
-Type annotations for `boto3.client("dms").start_replication_task_assessment` method.
+Type annotations for `boto3.client("dms").start_replication_task_assessment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment]
+Boto3 documentation:
+[DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
 
-```python
-def start_replication_task_assessment(
-    self,
-    ReplicationTaskArn: str
-) -> StartReplicationTaskAssessmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+
+Returns
+[StartReplicationTaskAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#startreplicationtaskassessmentresponsetypedef).
 
 ### start_replication_task_assessment_run
 
-Type annotations for `boto3.client("dms").start_replication_task_assessment_run` method.
+Type annotations for
+`boto3.client("dms").start_replication_task_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run]
+Boto3 documentation:
+[DatabaseMigrationService.Client.start_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
 
-```python
-def start_replication_task_assessment_run(
-    self,
-    ReplicationTaskArn: str,
-    ServiceAccessRoleArn: str,
-    ResultLocationBucket: str,
-    AssessmentRunName: str,
-    ResultLocationFolder: str = None,
-    ResultEncryptionMode: str = None,
-    ResultKmsKeyArn: str = None,
-    IncludeOnly: List[str] = None,
-    Exclude: List[str] = None
-) -> StartReplicationTaskAssessmentRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+- `ServiceAccessRoleArn`: `str` *(required)*
+- `ResultLocationBucket`: `str` *(required)*
+- `AssessmentRunName`: `str` *(required)*
+- `ResultLocationFolder`: `str`
+- `ResultEncryptionMode`: `str`
+- `ResultKmsKeyArn`: `str`
+- `IncludeOnly`: `List`\[`str`\]
+- `Exclude`: `List`\[`str`\]
+
+Returns
+[StartReplicationTaskAssessmentRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#startreplicationtaskassessmentrunresponsetypedef).
 
 ### stop_replication_task
 
 Type annotations for `boto3.client("dms").stop_replication_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task]
+Boto3 documentation:
+[DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
 
-```python
-def stop_replication_task(
-    self,
-    ReplicationTaskArn: str
-) -> StopReplicationTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationTaskArn`: `str` *(required)*
+
+Returns
+[StopReplicationTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#stopreplicationtaskresponsetypedef).
 
 ### test_connection
 
 Type annotations for `boto3.client("dms").test_connection` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection]
+Boto3 documentation:
+[DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
 
-```python
-def test_connection(
-    self,
-    ReplicationInstanceArn: str,
-    EndpointArn: str
-) -> TestConnectionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ReplicationInstanceArn`: `str` *(required)*
+- `EndpointArn`: `str` *(required)*
 
+Returns
+[TestConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#testconnectionresponsetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("dms").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_certificates")` -> [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
-- `client.get_paginator("describe_connections")` -> [DescribeConnectionsPaginator](./paginators.md#describeconnectionspaginator)
-- `client.get_paginator("describe_endpoint_types")` -> [DescribeEndpointTypesPaginator](./paginators.md#describeendpointtypespaginator)
-- `client.get_paginator("describe_endpoints")` -> [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
-- `client.get_paginator("describe_event_subscriptions")` -> [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_orderable_replication_instances")` -> [DescribeOrderableReplicationInstancesPaginator](./paginators.md#describeorderablereplicationinstancespaginator)
-- `client.get_paginator("describe_replication_instances")` -> [DescribeReplicationInstancesPaginator](./paginators.md#describereplicationinstancespaginator)
-- `client.get_paginator("describe_replication_subnet_groups")` -> [DescribeReplicationSubnetGroupsPaginator](./paginators.md#describereplicationsubnetgroupspaginator)
-- `client.get_paginator("describe_replication_task_assessment_results")` -> [DescribeReplicationTaskAssessmentResultsPaginator](./paginators.md#describereplicationtaskassessmentresultspaginator)
-- `client.get_paginator("describe_replication_tasks")` -> [DescribeReplicationTasksPaginator](./paginators.md#describereplicationtaskspaginator)
-- `client.get_paginator("describe_schemas")` -> [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
-- `client.get_paginator("describe_table_statistics")` -> [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
-
-
-
+- `client.get_paginator("describe_certificates")` ->
+  [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+- `client.get_paginator("describe_connections")` ->
+  [DescribeConnectionsPaginator](./paginators.md#describeconnectionspaginator)
+- `client.get_paginator("describe_endpoint_types")` ->
+  [DescribeEndpointTypesPaginator](./paginators.md#describeendpointtypespaginator)
+- `client.get_paginator("describe_endpoints")` ->
+  [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+- `client.get_paginator("describe_event_subscriptions")` ->
+  [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_orderable_replication_instances")` ->
+  [DescribeOrderableReplicationInstancesPaginator](./paginators.md#describeorderablereplicationinstancespaginator)
+- `client.get_paginator("describe_replication_instances")` ->
+  [DescribeReplicationInstancesPaginator](./paginators.md#describereplicationinstancespaginator)
+- `client.get_paginator("describe_replication_subnet_groups")` ->
+  [DescribeReplicationSubnetGroupsPaginator](./paginators.md#describereplicationsubnetgroupspaginator)
+- `client.get_paginator("describe_replication_task_assessment_results")` ->
+  [DescribeReplicationTaskAssessmentResultsPaginator](./paginators.md#describereplicationtaskassessmentresultspaginator)
+- `client.get_paginator("describe_replication_tasks")` ->
+  [DescribeReplicationTasksPaginator](./paginators.md#describereplicationtaskspaginator)
+- `client.get_paginator("describe_schemas")` ->
+  [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
+- `client.get_paginator("describe_table_statistics")` ->
+  [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
 
 ### get_waiter
 
 Type annotations for `boto3.client("dms").get_waiter` method with overloads.
 
-- `client.get_waiter("endpoint_deleted")` -> [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
-- `client.get_waiter("replication_instance_available")` -> [ReplicationInstanceAvailableWaiter](./waiters.md#replicationinstanceavailablewaiter)
-- `client.get_waiter("replication_instance_deleted")` -> [ReplicationInstanceDeletedWaiter](./waiters.md#replicationinstancedeletedwaiter)
-- `client.get_waiter("replication_task_deleted")` -> [ReplicationTaskDeletedWaiter](./waiters.md#replicationtaskdeletedwaiter)
-- `client.get_waiter("replication_task_ready")` -> [ReplicationTaskReadyWaiter](./waiters.md#replicationtaskreadywaiter)
-- `client.get_waiter("replication_task_running")` -> [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
-- `client.get_waiter("replication_task_stopped")` -> [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
-- `client.get_waiter("test_connection_succeeds")` -> [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
+- `client.get_waiter("endpoint_deleted")` ->
+  [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
+- `client.get_waiter("replication_instance_available")` ->
+  [ReplicationInstanceAvailableWaiter](./waiters.md#replicationinstanceavailablewaiter)
+- `client.get_waiter("replication_instance_deleted")` ->
+  [ReplicationInstanceDeletedWaiter](./waiters.md#replicationinstancedeletedwaiter)
+- `client.get_waiter("replication_task_deleted")` ->
+  [ReplicationTaskDeletedWaiter](./waiters.md#replicationtaskdeletedwaiter)
+- `client.get_waiter("replication_task_ready")` ->
+  [ReplicationTaskReadyWaiter](./waiters.md#replicationtaskreadywaiter)
+- `client.get_waiter("replication_task_running")` ->
+  [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
+- `client.get_waiter("replication_task_stopped")` ->
+  [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
+- `client.get_waiter("test_connection_succeeds")` ->
+  [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)

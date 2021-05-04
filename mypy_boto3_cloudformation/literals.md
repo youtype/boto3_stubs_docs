@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudFormation](./README.md) > Literals
 
-Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+Auto-generated documentation for
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+type annotations stubs module
+[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Literals for boto3 CloudFormation module](#literals-for-boto3-cloudformation-module)
   - [AccountGateStatus](#accountgatestatus)

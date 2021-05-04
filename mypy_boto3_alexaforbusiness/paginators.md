@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AlexaForBusiness](./README.md) > Paginators
 
-Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
-type annotations stubs module [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+Auto-generated documentation for
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+type annotations stubs module
+[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [Paginators for boto3 AlexaForBusiness module](#paginators-for-boto3-alexaforbusiness-module)
   - [ListBusinessReportSchedulesPaginator](#listbusinessreportschedulespaginator)
@@ -22,7 +24,8 @@ type annotations stubs module [mypy_boto3_alexaforbusiness](https://pypi.org/pro
 
 ## ListBusinessReportSchedulesPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_business_report_schedules")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_business_report_schedules")`.
 
 Can be used directly:
 
@@ -33,19 +36,21 @@ def get_list_business_report_schedules_paginator() -> ListBusinessReportSchedule
     return boto3.client("alexaforbusiness").get_paginator("list_business_report_schedules")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListBusinessReportSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
 
-```python
-class ListBusinessReportSchedulesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListBusinessReportSchedulesResponseTypeDef]:
-        pass
-```
+Arguments for `ListBusinessReportSchedulesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListBusinessReportSchedulesPaginator.paginate` returns
+`Iterator`\[[ListBusinessReportSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listbusinessreportschedulesresponsetypedef)\].
+
 ## ListConferenceProvidersPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_conference_providers")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_conference_providers")`.
 
 Can be used directly:
 
@@ -56,19 +61,21 @@ def get_list_conference_providers_paginator() -> ListConferenceProvidersPaginato
     return boto3.client("alexaforbusiness").get_paginator("list_conference_providers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListConferenceProviders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
 
-```python
-class ListConferenceProvidersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListConferenceProvidersResponseTypeDef]:
-        pass
-```
+Arguments for `ListConferenceProvidersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListConferenceProvidersPaginator.paginate` returns
+`Iterator`\[[ListConferenceProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listconferenceprovidersresponsetypedef)\].
+
 ## ListDeviceEventsPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_device_events")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_device_events")`.
 
 Can be used directly:
 
@@ -79,21 +86,24 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_device_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
 
-```python
-class ListDeviceEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DeviceArn: str,
-        EventType: DeviceEventType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDeviceEventsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDeviceEventsPaginator.paginate` method:
+
+- `DeviceArn`: `str` *(required)*
+- `EventType`:
+  [DeviceEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#deviceeventtype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListDeviceEventsPaginator.paginate` returns
+`Iterator`\[[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listdeviceeventsresponsetypedef)\].
+
 ## ListSkillsPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skills")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_skills")`.
 
 Can be used directly:
 
@@ -104,22 +114,26 @@ def get_list_skills_paginator() -> ListSkillsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_skills")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListSkills](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
 
-```python
-class ListSkillsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SkillGroupArn: str = None,
-        EnablementType: EnablementTypeFilter = None,
-        SkillType: SkillTypeFilter = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSkillsResponseTypeDef]:
-        pass
-```
+Arguments for `ListSkillsPaginator.paginate` method:
+
+- `SkillGroupArn`: `str`
+- `EnablementType`:
+  [EnablementTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#enablementtypefilter)
+- `SkillType`:
+  [SkillTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#skilltypefilter)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListSkillsPaginator.paginate` returns
+`Iterator`\[[ListSkillsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsresponsetypedef)\].
+
 ## ListSkillsStoreCategoriesPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skills_store_categories")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_skills_store_categories")`.
 
 Can be used directly:
 
@@ -130,19 +144,21 @@ def get_list_skills_store_categories_paginator() -> ListSkillsStoreCategoriesPag
     return boto3.client("alexaforbusiness").get_paginator("list_skills_store_categories")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListSkillsStoreCategories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
 
-```python
-class ListSkillsStoreCategoriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSkillsStoreCategoriesResponseTypeDef]:
-        pass
-```
+Arguments for `ListSkillsStoreCategoriesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListSkillsStoreCategoriesPaginator.paginate` returns
+`Iterator`\[[ListSkillsStoreCategoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstorecategoriesresponsetypedef)\].
+
 ## ListSkillsStoreSkillsByCategoryPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")`.
 
 Can be used directly:
 
@@ -153,20 +169,22 @@ def get_list_skills_store_skills_by_category_paginator() -> ListSkillsStoreSkill
     return boto3.client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
 
-```python
-class ListSkillsStoreSkillsByCategoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CategoryId: int,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSkillsStoreSkillsByCategoryResponseTypeDef]:
-        pass
-```
+Arguments for `ListSkillsStoreSkillsByCategoryPaginator.paginate` method:
+
+- `CategoryId`: `int` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListSkillsStoreSkillsByCategoryPaginator.paginate` returns
+`Iterator`\[[ListSkillsStoreSkillsByCategoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstoreskillsbycategoryresponsetypedef)\].
+
 ## ListSmartHomeAppliancesPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_smart_home_appliances")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_smart_home_appliances")`.
 
 Can be used directly:
 
@@ -177,20 +195,22 @@ def get_list_smart_home_appliances_paginator() -> ListSmartHomeAppliancesPaginat
     return boto3.client("alexaforbusiness").get_paginator("list_smart_home_appliances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListSmartHomeAppliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
 
-```python
-class ListSmartHomeAppliancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RoomArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSmartHomeAppliancesResponseTypeDef]:
-        pass
-```
+Arguments for `ListSmartHomeAppliancesPaginator.paginate` method:
+
+- `RoomArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListSmartHomeAppliancesPaginator.paginate` returns
+`Iterator`\[[ListSmartHomeAppliancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listsmarthomeappliancesresponsetypedef)\].
+
 ## ListTagsPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_tags")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("list_tags")`.
 
 Can be used directly:
 
@@ -201,20 +221,22 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_tags")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
 
-```python
-class ListTagsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Arn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTagsResponseTypeDef]:
-        pass
-```
+Arguments for `ListTagsPaginator.paginate` method:
+
+- `Arn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`ListTagsPaginator.paginate` returns
+`Iterator`\[[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listtagsresponsetypedef)\].
+
 ## SearchDevicesPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_devices")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("search_devices")`.
 
 Can be used directly:
 
@@ -225,21 +247,25 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_devices")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
 
-```python
-class SearchDevicesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortCriteria: List[SortTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchDevicesResponseTypeDef]:
-        pass
-```
+Arguments for `SearchDevicesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `SortCriteria`:
+  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`SearchDevicesPaginator.paginate` returns
+`Iterator`\[[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchdevicesresponsetypedef)\].
+
 ## SearchProfilesPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_profiles")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("search_profiles")`.
 
 Can be used directly:
 
@@ -250,21 +276,25 @@ def get_search_profiles_paginator() -> SearchProfilesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_profiles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.SearchProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
 
-```python
-class SearchProfilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortCriteria: List[SortTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchProfilesResponseTypeDef]:
-        pass
-```
+Arguments for `SearchProfilesPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `SortCriteria`:
+  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`SearchProfilesPaginator.paginate` returns
+`Iterator`\[[SearchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchprofilesresponsetypedef)\].
+
 ## SearchRoomsPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_rooms")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("search_rooms")`.
 
 Can be used directly:
 
@@ -275,21 +305,25 @@ def get_search_rooms_paginator() -> SearchRoomsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_rooms")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.SearchRooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
 
-```python
-class SearchRoomsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortCriteria: List[SortTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchRoomsResponseTypeDef]:
-        pass
-```
+Arguments for `SearchRoomsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `SortCriteria`:
+  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`SearchRoomsPaginator.paginate` returns
+`Iterator`\[[SearchRoomsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchroomsresponsetypedef)\].
+
 ## SearchSkillGroupsPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_skill_groups")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("search_skill_groups")`.
 
 Can be used directly:
 
@@ -300,21 +334,25 @@ def get_search_skill_groups_paginator() -> SearchSkillGroupsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_skill_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.SearchSkillGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
 
-```python
-class SearchSkillGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortCriteria: List[SortTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchSkillGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `SearchSkillGroupsPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `SortCriteria`:
+  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`SearchSkillGroupsPaginator.paginate` returns
+`Iterator`\[[SearchSkillGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchskillgroupsresponsetypedef)\].
+
 ## SearchUsersPaginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_users")`.
+Type annotations for
+`boto3.client("alexaforbusiness").get_paginator("search_users")`.
 
 Can be used directly:
 
@@ -325,15 +363,17 @@ def get_search_users_paginator() -> SearchUsersPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_users")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
+Boto3 documentation:
+[AlexaForBusiness.Paginator.SearchUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
 
-```python
-class SearchUsersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SortCriteria: List[SortTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchUsersResponseTypeDef]:
-        pass
-```
+Arguments for `SearchUsersPaginator.paginate` method:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `SortCriteria`:
+  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+
+`SearchUsersPaginator.paginate` returns
+`Iterator`\[[SearchUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchusersresponsetypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Glue
 
-Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+Auto-generated documentation for
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+type annotations stubs module
+[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ```bash
 pip install mypy-boto3-glue
@@ -19,7 +21,7 @@ pip install mypy-boto3-glue
 
 ## GlueClient
 
-Type annotations for  `boto3.client("glue")` as [GlueClient](./client.md)
+Type annotations for `boto3.client("glue")` as [GlueClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_glue.client import GlueClient
 ```
 
-
 GlueClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_create_partition](./client.md#batch-create-partition)
 - [batch_delete_connection](./client.md#batch-delete-connection)
 - [batch_delete_partition](./client.md#batch-delete-partition)
@@ -194,10 +194,8 @@ GlueClient [exceptions](./client.md#exceptions)
 - [update_user_defined_function](./client.md#update-user-defined-function)
 - [update_workflow](./client.md#update-workflow)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [ClientError](./client.md#clienterror)
@@ -224,14 +222,10 @@ GlueClient [exceptions](./client.md#exceptions)
 - [ValidationException](./client.md#validationexception)
 - [VersionMismatchException](./client.md#versionmismatchexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("glue").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("glue").get_paginator("...")`.
 
 Can be used directly:
 
@@ -258,11 +252,6 @@ from mypy_boto3_glue.paginators import GetClassifiersPaginator, ...
 - [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
 - [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -343,13 +332,10 @@ from mypy_boto3_glue.literals import BackfillErrorCode, ...
 - [WorkerType](./literals.md#workertype)
 - [WorkflowRunStatus](./literals.md#workflowrunstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ServerlessApplicationRepository
 
-Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+Auto-generated documentation for
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+type annotations stubs module
+[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ```bash
 pip install mypy-boto3-serverlessrepo
@@ -19,7 +21,8 @@ pip install mypy-boto3-serverlessrepo
 
 ## ServerlessApplicationRepositoryClient
 
-Type annotations for  `boto3.client("serverlessrepo")` as [ServerlessApplicationRepositoryClient](./client.md)
+Type annotations for `boto3.client("serverlessrepo")` as
+[ServerlessApplicationRepositoryClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 ```
 
-
 ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_application](./client.md#create-application)
 - [create_application_version](./client.md#create-application-version)
@@ -51,10 +52,8 @@ ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
 - [unshare_application](./client.md#unshare-application)
 - [update_application](./client.md#update-application)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -63,14 +62,10 @@ ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("serverlessrepo").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("serverlessrepo").get_paginator("...")`.
 
 Can be used directly:
 
@@ -81,11 +76,6 @@ from mypy_boto3_serverlessrepo.paginators import ListApplicationDependenciesPagi
 - [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
 - [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -103,13 +93,10 @@ from mypy_boto3_serverlessrepo.literals import Capability, ...
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

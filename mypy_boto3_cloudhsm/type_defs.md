@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudHSM](./README.md) > Structures
 
-Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
-type annotations stubs module [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+Auto-generated documentation for
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+type annotations stubs module
+[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Typed dictionaries for boto3 CloudHSM module](#typed-dictionaries-for-boto3-cloudhsm-module)
   - [AddTagsToResourceResponseTypeDef](#addtagstoresourceresponsetypedef)
@@ -35,12 +37,9 @@ type annotations stubs module [mypy_boto3_cloudhsm](https://pypi.org/project/myp
 from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Status`: `str`
-
-
-
 
 ## CreateHapgResponseTypeDef
 
@@ -48,12 +47,9 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import CreateHapgResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HapgArn`: `str`
 
+- `HapgArn`: `str`
 
 ## CreateHsmResponseTypeDef
 
@@ -61,12 +57,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import CreateHsmResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HsmArn`: `str`
 
+- `HsmArn`: `str`
 
 ## CreateLunaClientResponseTypeDef
 
@@ -74,12 +67,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import CreateLunaClientResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClientArn`: `str`
 
+- `ClientArn`: `str`
 
 ## DeleteHapgResponseTypeDef
 
@@ -87,12 +77,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import DeleteHapgResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Status`: `str`
-
-
-
 
 ## DeleteHsmResponseTypeDef
 
@@ -100,12 +87,9 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import DeleteHsmResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Status`: `str`
-
-
-
 
 ## DeleteLunaClientResponseTypeDef
 
@@ -113,12 +97,9 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Status`: `str`
-
-
-
 
 ## DescribeHapgResponseTypeDef
 
@@ -126,20 +107,18 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import DescribeHapgResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HapgArn`: `str`
 - `HapgSerial`: `str`
-- `HsmsLastActionFailed`: `List[str]`
-- `HsmsPendingDeletion`: `List[str]`
-- `HsmsPendingRegistration`: `List[str]`
+- `HsmsLastActionFailed`: `List`\[`str`\]
+- `HsmsPendingDeletion`: `List`\[`str`\]
+- `HsmsPendingRegistration`: `List`\[`str`\]
 - `Label`: `str`
 - `LastModifiedTimestamp`: `str`
-- `PartitionSerialList`: `List[str]`
-- `State`: `CloudHsmObjectState`
-
+- `PartitionSerialList`: `List`\[`str`\]
+- `State`:
+  [CloudHsmObjectState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#cloudhsmobjectstate)
 
 ## DescribeHsmResponseTypeDef
 
@@ -147,12 +126,11 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HsmArn`: `str`
-- `Status`: `HsmStatus`
+- `Status`:
+  [HsmStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#hsmstatus)
 - `StatusDetails`: `str`
 - `AvailabilityZone`: `str`
 - `EniId`: `str`
@@ -171,8 +149,7 @@ Optional fields:
 - `SshKeyLastUpdated`: `str`
 - `ServerCertUri`: `str`
 - `ServerCertLastUpdated`: `str`
-- `Partitions`: `List[str]`
-
+- `Partitions`: `List`\[`str`\]
 
 ## DescribeLunaClientResponseTypeDef
 
@@ -180,16 +157,13 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientArn`: `str`
 - `Certificate`: `str`
 - `CertificateFingerprint`: `str`
 - `LastModifiedTimestamp`: `str`
 - `Label`: `str`
-
 
 ## GetConfigResponseTypeDef
 
@@ -197,14 +171,11 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import GetConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConfigType`: `str`
 - `ConfigFile`: `str`
 - `ConfigCred`: `str`
-
 
 ## ListAvailableZonesResponseTypeDef
 
@@ -212,12 +183,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ListAvailableZonesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AZList`: `List[str]`
 
+- `AZList`: `List`\[`str`\]
 
 ## ListHapgsResponseTypeDef
 
@@ -225,15 +193,13 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ListHapgsResponseTypeDef
 ```
 
-
 Required fields:
-- `HapgList`: `List[str]`
 
-
+- `HapgList`: `List`\[`str`\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListHsmsResponseTypeDef
 
@@ -241,13 +207,10 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ListHsmsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HsmList`: `List[str]`
-- `NextToken`: `str`
 
+- `HsmList`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListLunaClientsResponseTypeDef
 
@@ -255,15 +218,13 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ListLunaClientsResponseTypeDef
 ```
 
-
 Required fields:
-- `ClientList`: `List[str]`
 
-
+- `ClientList`: `List`\[`str`\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -271,12 +232,10 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
 Required fields:
-- `TagList`: `List["TagTypeDef"]`
 
-
-
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#tagtypedef)\]
 
 ## ModifyHapgResponseTypeDef
 
@@ -284,12 +243,9 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import ModifyHapgResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HapgArn`: `str`
 
+- `HapgArn`: `str`
 
 ## ModifyHsmResponseTypeDef
 
@@ -297,12 +253,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ModifyHsmResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `HsmArn`: `str`
 
+- `HsmArn`: `str`
 
 ## ModifyLunaClientResponseTypeDef
 
@@ -310,12 +263,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ClientArn`: `str`
 
+- `ClientArn`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -323,14 +273,11 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RemoveTagsFromResourceResponseTypeDef
 
@@ -338,12 +285,9 @@ Optional fields:
 from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceResponseTypeDef
 ```
 
-
 Required fields:
+
 - `Status`: `str`
-
-
-
 
 ## TagTypeDef
 
@@ -351,10 +295,7 @@ Required fields:
 from mypy_boto3_cloudhsm.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-

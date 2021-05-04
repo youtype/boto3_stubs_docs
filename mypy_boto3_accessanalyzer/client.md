@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AccessAnalyzer](./README.md) > AccessAnalyzerClient
 
-Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+Auto-generated documentation for
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+type annotations stubs module
+[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [AccessAnalyzerClient for boto3 AccessAnalyzer module](#accessanalyzerclient-for-boto3-accessanalyzer-module)
   - [AccessAnalyzerClient](#accessanalyzerclient)
@@ -54,12 +56,13 @@ def get_accessanalyzer_client() -> AccessAnalyzerClient:
     return boto3.client("accessanalyzer")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
+Boto3 documentation:
+[AccessAnalyzer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_accessanalyzer.client import Exceptions
@@ -67,7 +70,6 @@ from mypy_boto3_accessanalyzer.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -80,501 +82,518 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### apply_archive_rule
 
-Type annotations for `boto3.client("accessanalyzer").apply_archive_rule` method.
+Type annotations for `boto3.client("accessanalyzer").apply_archive_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule]
+Boto3 documentation:
+[AccessAnalyzer.Client.apply_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule)
 
-```python
-def apply_archive_rule(
-    self,
-    analyzerArn: str,
-    ruleName: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `ruleName`: `str` *(required)*
+- `clientToken`: `str`
 
 ### can_paginate
 
 Type annotations for `boto3.client("accessanalyzer").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate]
+Boto3 documentation:
+[AccessAnalyzer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_policy_generation
 
-Type annotations for `boto3.client("accessanalyzer").cancel_policy_generation` method.
+Type annotations for `boto3.client("accessanalyzer").cancel_policy_generation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation]
+Boto3 documentation:
+[AccessAnalyzer.Client.cancel_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation)
 
-```python
-def cancel_policy_generation(
-    self,
-    jobId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_access_preview
 
-Type annotations for `boto3.client("accessanalyzer").create_access_preview` method.
+Type annotations for `boto3.client("accessanalyzer").create_access_preview`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview]
+Boto3 documentation:
+[AccessAnalyzer.Client.create_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview)
 
-```python
-def create_access_preview(
-    self,
-    analyzerArn: str,
-    configurations: Dict[str, "ConfigurationTypeDef"],
-    clientToken: str = None
-) -> CreateAccessPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `configurations`: `Dict`\[`str`,
+  [ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#configurationtypedef)\]
+  *(required)*
+- `clientToken`: `str`
+
+Returns
+[CreateAccessPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#createaccesspreviewresponsetypedef).
 
 ### create_analyzer
 
 Type annotations for `boto3.client("accessanalyzer").create_analyzer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer]
+Boto3 documentation:
+[AccessAnalyzer.Client.create_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer)
 
-```python
-def create_analyzer(
-    self,
-    analyzerName: str,
-    type: TypeType,
-    archiveRules: List[InlineArchiveRuleTypeDef] = None,
-    clientToken: str = None,
-    tags: Dict[str, str] = None
-) -> CreateAnalyzerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
+  *(required)*
+- `archiveRules`:
+  `List`\[[InlineArchiveRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#inlinearchiveruletypedef)\]
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAnalyzerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#createanalyzerresponsetypedef).
 
 ### create_archive_rule
 
-Type annotations for `boto3.client("accessanalyzer").create_archive_rule` method.
+Type annotations for `boto3.client("accessanalyzer").create_archive_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule]
+Boto3 documentation:
+[AccessAnalyzer.Client.create_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule)
 
-```python
-def create_archive_rule(
-    self,
-    analyzerName: str,
-    filter: Dict[str, "CriterionTypeDef"],
-    ruleName: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+  *(required)*
+- `ruleName`: `str` *(required)*
+- `clientToken`: `str`
 
 ### delete_analyzer
 
 Type annotations for `boto3.client("accessanalyzer").delete_analyzer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer]
+Boto3 documentation:
+[AccessAnalyzer.Client.delete_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer)
 
-```python
-def delete_analyzer(
-    self,
-    analyzerName: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `clientToken`: `str`
 
 ### delete_archive_rule
 
-Type annotations for `boto3.client("accessanalyzer").delete_archive_rule` method.
+Type annotations for `boto3.client("accessanalyzer").delete_archive_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule]
+Boto3 documentation:
+[AccessAnalyzer.Client.delete_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule)
 
-```python
-def delete_archive_rule(
-    self,
-    analyzerName: str,
-    ruleName: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `ruleName`: `str` *(required)*
+- `clientToken`: `str`
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("accessanalyzer").generate_presigned_url` method.
+Type annotations for `boto3.client("accessanalyzer").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url]
+Boto3 documentation:
+[AccessAnalyzer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_access_preview
 
-Type annotations for `boto3.client("accessanalyzer").get_access_preview` method.
+Type annotations for `boto3.client("accessanalyzer").get_access_preview`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview)
 
-```python
-def get_access_preview(
-    self,
-    accessPreviewId: str,
-    analyzerArn: str
-) -> GetAccessPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accessPreviewId`: `str` *(required)*
+- `analyzerArn`: `str` *(required)*
+
+Returns
+[GetAccessPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getaccesspreviewresponsetypedef).
 
 ### get_analyzed_resource
 
-Type annotations for `boto3.client("accessanalyzer").get_analyzed_resource` method.
+Type annotations for `boto3.client("accessanalyzer").get_analyzed_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_analyzed_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource)
 
-```python
-def get_analyzed_resource(
-    self,
-    analyzerArn: str,
-    resourceArn: str
-) -> GetAnalyzedResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `resourceArn`: `str` *(required)*
+
+Returns
+[GetAnalyzedResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getanalyzedresourceresponsetypedef).
 
 ### get_analyzer
 
 Type annotations for `boto3.client("accessanalyzer").get_analyzer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer)
 
-```python
-def get_analyzer(
-    self,
-    analyzerName: str
-) -> GetAnalyzerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+
+Returns
+[GetAnalyzerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getanalyzerresponsetypedef).
 
 ### get_archive_rule
 
 Type annotations for `boto3.client("accessanalyzer").get_archive_rule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule)
 
-```python
-def get_archive_rule(
-    self,
-    analyzerName: str,
-    ruleName: str
-) -> GetArchiveRuleResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `ruleName`: `str` *(required)*
+
+Returns
+[GetArchiveRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getarchiveruleresponsetypedef).
 
 ### get_finding
 
 Type annotations for `boto3.client("accessanalyzer").get_finding` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding)
 
-```python
-def get_finding(
-    self,
-    analyzerArn: str,
-    id: str
-) -> GetFindingResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `id`: `str` *(required)*
+
+Returns
+[GetFindingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getfindingresponsetypedef).
 
 ### get_generated_policy
 
-Type annotations for `boto3.client("accessanalyzer").get_generated_policy` method.
+Type annotations for `boto3.client("accessanalyzer").get_generated_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy]
+Boto3 documentation:
+[AccessAnalyzer.Client.get_generated_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy)
 
-```python
-def get_generated_policy(
-    self,
-    jobId: str,
-    includeResourcePlaceholders: bool = None,
-    includeServiceLevelTemplate: bool = None
-) -> GetGeneratedPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobId`: `str` *(required)*
+- `includeResourcePlaceholders`: `bool`
+- `includeServiceLevelTemplate`: `bool`
+
+Returns
+[GetGeneratedPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getgeneratedpolicyresponsetypedef).
 
 ### list_access_preview_findings
 
-Type annotations for `boto3.client("accessanalyzer").list_access_preview_findings` method.
+Type annotations for
+`boto3.client("accessanalyzer").list_access_preview_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_access_preview_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings)
 
-```python
-def list_access_preview_findings(
-    self,
-    accessPreviewId: str,
-    analyzerArn: str,
-    filter: Dict[str, "CriterionTypeDef"] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListAccessPreviewFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `accessPreviewId`: `str` *(required)*
+- `analyzerArn`: `str` *(required)*
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListAccessPreviewFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewfindingsresponsetypedef).
 
 ### list_access_previews
 
-Type annotations for `boto3.client("accessanalyzer").list_access_previews` method.
+Type annotations for `boto3.client("accessanalyzer").list_access_previews`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_access_previews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews)
 
-```python
-def list_access_previews(
-    self,
-    analyzerArn: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListAccessPreviewsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListAccessPreviewsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewsresponsetypedef).
 
 ### list_analyzed_resources
 
-Type annotations for `boto3.client("accessanalyzer").list_analyzed_resources` method.
+Type annotations for `boto3.client("accessanalyzer").list_analyzed_resources`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_analyzed_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources)
 
-```python
-def list_analyzed_resources(
-    self,
-    analyzerArn: str,
-    maxResults: int = None,
-    nextToken: str = None,
-    resourceType: ResourceType = None
-) -> ListAnalyzedResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
+
+Returns
+[ListAnalyzedResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzedresourcesresponsetypedef).
 
 ### list_analyzers
 
 Type annotations for `boto3.client("accessanalyzer").list_analyzers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_analyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers)
 
-```python
-def list_analyzers(
-    self,
-    maxResults: int = None,
-    nextToken: str = None,
-    type: TypeType = None
-) -> ListAnalyzersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `type`:
+  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
+
+Returns
+[ListAnalyzersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzersresponsetypedef).
 
 ### list_archive_rules
 
-Type annotations for `boto3.client("accessanalyzer").list_archive_rules` method.
+Type annotations for `boto3.client("accessanalyzer").list_archive_rules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_archive_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules)
 
-```python
-def list_archive_rules(
-    self,
-    analyzerName: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListArchiveRulesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListArchiveRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listarchiverulesresponsetypedef).
 
 ### list_findings
 
 Type annotations for `boto3.client("accessanalyzer").list_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings)
 
-```python
-def list_findings(
-    self,
-    analyzerArn: str,
-    filter: Dict[str, "CriterionTypeDef"] = None,
-    maxResults: int = None,
-    nextToken: str = None,
-    sort: SortCriteriaTypeDef = None
-) -> ListFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sort`:
+  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#sortcriteriatypedef)
+
+Returns
+[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listfindingsresponsetypedef).
 
 ### list_policy_generations
 
-Type annotations for `boto3.client("accessanalyzer").list_policy_generations` method.
+Type annotations for `boto3.client("accessanalyzer").list_policy_generations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_policy_generations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations)
 
-```python
-def list_policy_generations(
-    self,
-    maxResults: int = None,
-    nextToken: str = None,
-    principalArn: str = None
-) -> ListPolicyGenerationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `principalArn`: `str`
+
+Returns
+[ListPolicyGenerationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listpolicygenerationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("accessanalyzer").list_tags_for_resource` method.
+Type annotations for `boto3.client("accessanalyzer").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource]
+Boto3 documentation:
+[AccessAnalyzer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### start_policy_generation
 
-Type annotations for `boto3.client("accessanalyzer").start_policy_generation` method.
+Type annotations for `boto3.client("accessanalyzer").start_policy_generation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation]
+Boto3 documentation:
+[AccessAnalyzer.Client.start_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation)
 
-```python
-def start_policy_generation(
-    self,
-    policyGenerationDetails: PolicyGenerationDetailsTypeDef,
-    clientToken: str = None,
-    cloudTrailDetails: CloudTrailDetailsTypeDef = None
-) -> StartPolicyGenerationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `policyGenerationDetails`:
+  [PolicyGenerationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#policygenerationdetailstypedef)
+  *(required)*
+- `clientToken`: `str`
+- `cloudTrailDetails`:
+  [CloudTrailDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#cloudtraildetailstypedef)
+
+Returns
+[StartPolicyGenerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#startpolicygenerationresponsetypedef).
 
 ### start_resource_scan
 
-Type annotations for `boto3.client("accessanalyzer").start_resource_scan` method.
+Type annotations for `boto3.client("accessanalyzer").start_resource_scan`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan]
+Boto3 documentation:
+[AccessAnalyzer.Client.start_resource_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan)
 
-```python
-def start_resource_scan(
-    self,
-    analyzerArn: str,
-    resourceArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `resourceArn`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("accessanalyzer").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource]
+Boto3 documentation:
+[AccessAnalyzer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("accessanalyzer").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource]
+Boto3 documentation:
+[AccessAnalyzer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_archive_rule
 
-Type annotations for `boto3.client("accessanalyzer").update_archive_rule` method.
+Type annotations for `boto3.client("accessanalyzer").update_archive_rule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule]
+Boto3 documentation:
+[AccessAnalyzer.Client.update_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule)
 
-```python
-def update_archive_rule(
-    self,
-    analyzerName: str,
-    filter: Dict[str, "CriterionTypeDef"],
-    ruleName: str,
-    clientToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerName`: `str` *(required)*
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+  *(required)*
+- `ruleName`: `str` *(required)*
+- `clientToken`: `str`
 
 ### update_findings
 
 Type annotations for `boto3.client("accessanalyzer").update_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings]
+Boto3 documentation:
+[AccessAnalyzer.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings)
 
-```python
-def update_findings(
-    self,
-    analyzerArn: str,
-    status: FindingStatusUpdate,
-    clientToken: str = None,
-    ids: List[str] = None,
-    resourceArn: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `analyzerArn`: `str` *(required)*
+- `status`:
+  [FindingStatusUpdate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatusupdate)
+  *(required)*
+- `clientToken`: `str`
+- `ids`: `List`\[`str`\]
+- `resourceArn`: `str`
 
 ### validate_policy
 
 Type annotations for `boto3.client("accessanalyzer").validate_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy]
+Boto3 documentation:
+[AccessAnalyzer.Client.validate_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy)
 
-```python
-def validate_policy(
-    self,
-    policyDocument: str,
-    policyType: PolicyType,
-    locale: Locale = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ValidatePolicyResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `policyDocument`: `str` *(required)*
+- `policyType`:
+  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#policytype)
+  *(required)*
+- `locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#locale)
+- `maxResults`: `int`
+- `nextToken`: `str`
 
+Returns
+[ValidatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#validatepolicyresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("accessanalyzer").get_paginator` method with overloads.
+Type annotations for `boto3.client("accessanalyzer").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_access_preview_findings")` -> [ListAccessPreviewFindingsPaginator](./paginators.md#listaccesspreviewfindingspaginator)
-- `client.get_paginator("list_access_previews")` -> [ListAccessPreviewsPaginator](./paginators.md#listaccesspreviewspaginator)
-- `client.get_paginator("list_analyzed_resources")` -> [ListAnalyzedResourcesPaginator](./paginators.md#listanalyzedresourcespaginator)
-- `client.get_paginator("list_analyzers")` -> [ListAnalyzersPaginator](./paginators.md#listanalyzerspaginator)
-- `client.get_paginator("list_archive_rules")` -> [ListArchiveRulesPaginator](./paginators.md#listarchiverulespaginator)
-- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_policy_generations")` -> [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
-- `client.get_paginator("validate_policy")` -> [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)
-
-
+- `client.get_paginator("list_access_preview_findings")` ->
+  [ListAccessPreviewFindingsPaginator](./paginators.md#listaccesspreviewfindingspaginator)
+- `client.get_paginator("list_access_previews")` ->
+  [ListAccessPreviewsPaginator](./paginators.md#listaccesspreviewspaginator)
+- `client.get_paginator("list_analyzed_resources")` ->
+  [ListAnalyzedResourcesPaginator](./paginators.md#listanalyzedresourcespaginator)
+- `client.get_paginator("list_analyzers")` ->
+  [ListAnalyzersPaginator](./paginators.md#listanalyzerspaginator)
+- `client.get_paginator("list_archive_rules")` ->
+  [ListArchiveRulesPaginator](./paginators.md#listarchiverulespaginator)
+- `client.get_paginator("list_findings")` ->
+  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_policy_generations")` ->
+  [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
+- `client.get_paginator("validate_policy")` ->
+  [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)

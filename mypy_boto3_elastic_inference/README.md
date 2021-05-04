@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticInference
 
-Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
-type annotations stubs module [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+Auto-generated documentation for
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+type annotations stubs module
+[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 ```bash
 pip install mypy-boto3-elastic-inference
@@ -19,7 +21,8 @@ pip install mypy-boto3-elastic-inference
 
 ## ElasticInferenceClient
 
-Type annotations for  `boto3.client("elastic-inference")` as [ElasticInferenceClient](./client.md)
+Type annotations for `boto3.client("elastic-inference")` as
+[ElasticInferenceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
 ```
 
-
 ElasticInferenceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_accelerator_offerings](./client.md#describe-accelerator-offerings)
 - [describe_accelerator_types](./client.md#describe-accelerator-types)
@@ -43,23 +44,17 @@ ElasticInferenceClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elastic-inference").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elastic-inference").get_paginator("...")`.
 
 Can be used directly:
 
@@ -68,11 +63,6 @@ from mypy_boto3_elastic_inference.paginators import DescribeAcceleratorsPaginato
 ```
 
 - [DescribeAcceleratorsPaginator](./paginators.md#describeacceleratorspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -87,13 +77,10 @@ from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorN
 - [DescribeAcceleratorsPaginatorName](./literals.md#describeacceleratorspaginatorname)
 - [LocationType](./literals.md#locationtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

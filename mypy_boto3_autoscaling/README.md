@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AutoScaling
 
-Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+Auto-generated documentation for
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+type annotations stubs module
+[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ```bash
 pip install mypy-boto3-autoscaling
@@ -19,7 +21,8 @@ pip install mypy-boto3-autoscaling
 
 ## AutoScalingClient
 
-Type annotations for  `boto3.client("autoscaling")` as [AutoScalingClient](./client.md)
+Type annotations for `boto3.client("autoscaling")` as
+[AutoScalingClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_autoscaling.client import AutoScalingClient
 ```
 
-
 AutoScalingClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [attach_instances](./client.md#attach-instances)
 - [attach_load_balancer_target_groups](./client.md#attach-load-balancer-target-groups)
 - [attach_load_balancers](./client.md#attach-load-balancers)
@@ -97,10 +98,8 @@ AutoScalingClient [exceptions](./client.md#exceptions)
 - [terminate_instance_in_auto_scaling_group](./client.md#terminate-instance-in-auto-scaling-group)
 - [update_auto_scaling_group](./client.md#update-auto-scaling-group)
 
-
-
-
 ### Exceptions
+
 - [ActiveInstanceRefreshNotFoundFault](./client.md#activeinstancerefreshnotfoundfault)
 - [AlreadyExistsFault](./client.md#alreadyexistsfault)
 - [ClientError](./client.md#clienterror)
@@ -112,14 +111,10 @@ AutoScalingClient [exceptions](./client.md#exceptions)
 - [ScalingActivityInProgressFault](./client.md#scalingactivityinprogressfault)
 - [ServiceLinkedRoleFailure](./client.md#servicelinkedrolefailure)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("autoscaling").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("autoscaling").get_paginator("...")`.
 
 Can be used directly:
 
@@ -137,11 +132,6 @@ from mypy_boto3_autoscaling.paginators import DescribeAutoScalingGroupsPaginator
 - [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -174,13 +164,10 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 - [WarmPoolState](./literals.md#warmpoolstate)
 - [WarmPoolStatus](./literals.md#warmpoolstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

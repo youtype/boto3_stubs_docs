@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ApplicationDiscoveryService
 
-Auto-generated documentation for [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
-type annotations stubs module [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+Auto-generated documentation for
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+type annotations stubs module
+[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 ```bash
 pip install mypy-boto3-discovery
@@ -19,7 +21,8 @@ pip install mypy-boto3-discovery
 
 ## ApplicationDiscoveryServiceClient
 
-Type annotations for  `boto3.client("discovery")` as [ApplicationDiscoveryServiceClient](./client.md)
+Type annotations for `boto3.client("discovery")` as
+[ApplicationDiscoveryServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 ```
 
-
 ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_configuration_items_to_application](./client.md#associate-configuration-items-to-application)
 - [batch_delete_import_data](./client.md#batch-delete-import-data)
 - [can_paginate](./client.md#can-paginate)
@@ -62,10 +63,8 @@ ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
 - [stop_data_collection_by_agent_ids](./client.md#stop-data-collection-by-agent-ids)
 - [update_application](./client.md#update-application)
 
-
-
-
 ### Exceptions
+
 - [AuthorizationErrorException](./client.md#authorizationerrorexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictErrorException](./client.md#conflicterrorexception)
@@ -77,14 +76,10 @@ ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServerInternalErrorException](./client.md#serverinternalerrorexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("discovery").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("discovery").get_paginator("...")`.
 
 Can be used directly:
 
@@ -98,11 +93,6 @@ from mypy_boto3_discovery.paginators import DescribeAgentsPaginator, ...
 - [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
 - [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -131,13 +121,10 @@ from mypy_boto3_discovery.literals import AgentStatus, ...
 - [ListConfigurationsPaginatorName](./literals.md#listconfigurationspaginatorname)
 - [orderString](./literals.md#orderstring)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

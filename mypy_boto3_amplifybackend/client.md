@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AmplifyBackend](./README.md) > AmplifyBackendClient
 
-Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
-type annotations stubs module [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+Auto-generated documentation for
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+type annotations stubs module
+[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [AmplifyBackendClient for boto3 AmplifyBackend module](#amplifybackendclient-for-boto3-amplifybackend-module)
   - [AmplifyBackendClient](#amplifybackendclient)
@@ -50,12 +52,13 @@ def get_amplifybackend_client() -> AmplifyBackendClient:
     return boto3.client("amplifybackend")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
+Boto3 documentation:
+[AmplifyBackend.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_amplifybackend.client import Exceptions
@@ -63,7 +66,6 @@ from mypy_boto3_amplifybackend.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -73,434 +75,452 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("amplifybackend").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate]
+Boto3 documentation:
+[AmplifyBackend.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### clone_backend
 
 Type annotations for `boto3.client("amplifybackend").clone_backend` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend]
+Boto3 documentation:
+[AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
 
-```python
-def clone_backend(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    TargetEnvironmentName: str
-) -> CloneBackendResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `TargetEnvironmentName`: `str` *(required)*
+
+Returns
+[CloneBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#clonebackendresponsetypedef).
 
 ### create_backend
 
 Type annotations for `boto3.client("amplifybackend").create_backend` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend]
+Boto3 documentation:
+[AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
 
-```python
-def create_backend(
-    self,
-    AppId: str,
-    AppName: str,
-    BackendEnvironmentName: str,
-    ResourceConfig: Dict[str, Any] = None,
-    ResourceName: str = None
-) -> CreateBackendResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `AppName`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`: `Dict`\[`str`, `Any`\]
+- `ResourceName`: `str`
+
+Returns
+[CreateBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendresponsetypedef).
 
 ### create_backend_api
 
-Type annotations for `boto3.client("amplifybackend").create_backend_api` method.
+Type annotations for `boto3.client("amplifybackend").create_backend_api`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api]
+Boto3 documentation:
+[AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
 
-```python
-def create_backend_api(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceConfig: "BackendAPIResourceConfigTypeDef",
-    ResourceName: str
-) -> CreateBackendAPIResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+  *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[CreateBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendapiresponsetypedef).
 
 ### create_backend_auth
 
-Type annotations for `boto3.client("amplifybackend").create_backend_auth` method.
+Type annotations for `boto3.client("amplifybackend").create_backend_auth`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth]
+Boto3 documentation:
+[AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
 
-```python
-def create_backend_auth(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceConfig: "CreateBackendAuthResourceConfigTypeDef",
-    ResourceName: str
-) -> CreateBackendAuthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`:
+  [CreateBackendAuthResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthresourceconfigtypedef)
+  *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[CreateBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthresponsetypedef).
 
 ### create_backend_config
 
-Type annotations for `boto3.client("amplifybackend").create_backend_config` method.
+Type annotations for `boto3.client("amplifybackend").create_backend_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config]
+Boto3 documentation:
+[AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
 
-```python
-def create_backend_config(
-    self,
-    AppId: str,
-    BackendManagerAppId: str = None
-) -> CreateBackendConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendManagerAppId`: `str`
+
+Returns
+[CreateBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendconfigresponsetypedef).
 
 ### create_token
 
 Type annotations for `boto3.client("amplifybackend").create_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token]
+Boto3 documentation:
+[AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
 
-```python
-def create_token(
-    self,
-    AppId: str
-) -> CreateTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+
+Returns
+[CreateTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createtokenresponsetypedef).
 
 ### delete_backend
 
 Type annotations for `boto3.client("amplifybackend").delete_backend` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend]
+Boto3 documentation:
+[AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
 
-```python
-def delete_backend(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str
-) -> DeleteBackendResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+
+Returns
+[DeleteBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendresponsetypedef).
 
 ### delete_backend_api
 
-Type annotations for `boto3.client("amplifybackend").delete_backend_api` method.
+Type annotations for `boto3.client("amplifybackend").delete_backend_api`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api]
+Boto3 documentation:
+[AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
 
-```python
-def delete_backend_api(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str,
-    ResourceConfig: "BackendAPIResourceConfigTypeDef" = None
-) -> DeleteBackendAPIResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+
+Returns
+[DeleteBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendapiresponsetypedef).
 
 ### delete_backend_auth
 
-Type annotations for `boto3.client("amplifybackend").delete_backend_auth` method.
+Type annotations for `boto3.client("amplifybackend").delete_backend_auth`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth]
+Boto3 documentation:
+[AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
 
-```python
-def delete_backend_auth(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str
-) -> DeleteBackendAuthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[DeleteBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendauthresponsetypedef).
 
 ### delete_token
 
 Type annotations for `boto3.client("amplifybackend").delete_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token]
+Boto3 documentation:
+[AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
 
-```python
-def delete_token(
-    self,
-    AppId: str,
-    SessionId: str
-) -> DeleteTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `SessionId`: `str` *(required)*
+
+Returns
+[DeleteTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletetokenresponsetypedef).
 
 ### generate_backend_api_models
 
-Type annotations for `boto3.client("amplifybackend").generate_backend_api_models` method.
+Type annotations for
+`boto3.client("amplifybackend").generate_backend_api_models` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models]
+Boto3 documentation:
+[AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
 
-```python
-def generate_backend_api_models(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str
-) -> GenerateBackendAPIModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[GenerateBackendAPIModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#generatebackendapimodelsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("amplifybackend").generate_presigned_url` method.
+Type annotations for `boto3.client("amplifybackend").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url]
+Boto3 documentation:
+[AmplifyBackend.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_backend
 
 Type annotations for `boto3.client("amplifybackend").get_backend` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend]
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
 
-```python
-def get_backend(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str = None
-) -> GetBackendResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str`
+
+Returns
+[GetBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendresponsetypedef).
 
 ### get_backend_api
 
 Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api]
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
 
-```python
-def get_backend_api(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str,
-    ResourceConfig: "BackendAPIResourceConfigTypeDef" = None
-) -> GetBackendAPIResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+
+Returns
+[GetBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendapiresponsetypedef).
 
 ### get_backend_api_models
 
-Type annotations for `boto3.client("amplifybackend").get_backend_api_models` method.
+Type annotations for `boto3.client("amplifybackend").get_backend_api_models`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models]
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
 
-```python
-def get_backend_api_models(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str
-) -> GetBackendAPIModelsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[GetBackendAPIModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendapimodelsresponsetypedef).
 
 ### get_backend_auth
 
 Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth]
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
 
-```python
-def get_backend_auth(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str
-) -> GetBackendAuthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[GetBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendauthresponsetypedef).
 
 ### get_backend_job
 
 Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job]
+Boto3 documentation:
+[AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
 
-```python
-def get_backend_job(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    JobId: str
-) -> GetBackendJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `JobId`: `str` *(required)*
+
+Returns
+[GetBackendJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendjobresponsetypedef).
 
 ### get_token
 
 Type annotations for `boto3.client("amplifybackend").get_token` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token]
+Boto3 documentation:
+[AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
 
-```python
-def get_token(
-    self,
-    AppId: str,
-    SessionId: str
-) -> GetTokenResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `SessionId`: `str` *(required)*
+
+Returns
+[GetTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#gettokenresponsetypedef).
 
 ### list_backend_jobs
 
 Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs]
+Boto3 documentation:
+[AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
 
-```python
-def list_backend_jobs(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    JobId: str = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Operation: str = None,
-    Status: str = None
-) -> ListBackendJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `JobId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Operation`: `str`
+- `Status`: `str`
+
+Returns
+[ListBackendJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#listbackendjobsresponsetypedef).
 
 ### remove_all_backends
 
-Type annotations for `boto3.client("amplifybackend").remove_all_backends` method.
+Type annotations for `boto3.client("amplifybackend").remove_all_backends`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends]
+Boto3 documentation:
+[AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
 
-```python
-def remove_all_backends(
-    self,
-    AppId: str,
-    CleanAmplifyApp: bool = None
-) -> RemoveAllBackendsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `CleanAmplifyApp`: `bool`
+
+Returns
+[RemoveAllBackendsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#removeallbackendsresponsetypedef).
 
 ### remove_backend_config
 
-Type annotations for `boto3.client("amplifybackend").remove_backend_config` method.
+Type annotations for `boto3.client("amplifybackend").remove_backend_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config]
+Boto3 documentation:
+[AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
 
-```python
-def remove_backend_config(
-    self,
-    AppId: str
-) -> RemoveBackendConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+
+Returns
+[RemoveBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#removebackendconfigresponsetypedef).
 
 ### update_backend_api
 
-Type annotations for `boto3.client("amplifybackend").update_backend_api` method.
+Type annotations for `boto3.client("amplifybackend").update_backend_api`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api]
+Boto3 documentation:
+[AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
 
-```python
-def update_backend_api(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceName: str,
-    ResourceConfig: "BackendAPIResourceConfigTypeDef" = None
-) -> UpdateBackendAPIResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceName`: `str` *(required)*
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+
+Returns
+[UpdateBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendapiresponsetypedef).
 
 ### update_backend_auth
 
-Type annotations for `boto3.client("amplifybackend").update_backend_auth` method.
+Type annotations for `boto3.client("amplifybackend").update_backend_auth`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth]
+Boto3 documentation:
+[AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
 
-```python
-def update_backend_auth(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    ResourceConfig: UpdateBackendAuthResourceConfigTypeDef,
-    ResourceName: str
-) -> UpdateBackendAuthResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `ResourceConfig`:
+  [UpdateBackendAuthResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthresourceconfigtypedef)
+  *(required)*
+- `ResourceName`: `str` *(required)*
+
+Returns
+[UpdateBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthresponsetypedef).
 
 ### update_backend_config
 
-Type annotations for `boto3.client("amplifybackend").update_backend_config` method.
+Type annotations for `boto3.client("amplifybackend").update_backend_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config]
+Boto3 documentation:
+[AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
 
-```python
-def update_backend_config(
-    self,
-    AppId: str,
-    LoginAuthConfig: "LoginAuthConfigReqObjTypeDef" = None
-) -> UpdateBackendConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AppId`: `str` *(required)*
+- `LoginAuthConfig`:
+  [LoginAuthConfigReqObjTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#loginauthconfigreqobjtypedef)
+
+Returns
+[UpdateBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendconfigresponsetypedef).
 
 ### update_backend_job
 
-Type annotations for `boto3.client("amplifybackend").update_backend_job` method.
+Type annotations for `boto3.client("amplifybackend").update_backend_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job]
+Boto3 documentation:
+[AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
 
-```python
-def update_backend_job(
-    self,
-    AppId: str,
-    BackendEnvironmentName: str,
-    JobId: str,
-    Operation: str = None,
-    Status: str = None
-) -> UpdateBackendJobResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `JobId`: `str` *(required)*
+- `Operation`: `str`
+- `Status`: `str`
 
+Returns
+[UpdateBackendJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendjobresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("amplifybackend").get_paginator` method with overloads.
+Type annotations for `boto3.client("amplifybackend").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_backend_jobs")` -> [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
-
-
+- `client.get_paginator("list_backend_jobs")` ->
+  [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)

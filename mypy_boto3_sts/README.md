@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > STS
 
-Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+Auto-generated documentation for
+[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+type annotations stubs module
+[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
 ```bash
 pip install mypy-boto3-sts
@@ -17,7 +19,7 @@ pip install mypy-boto3-sts
 
 ## STSClient
 
-Type annotations for  `boto3.client("sts")` as [STSClient](./client.md)
+Type annotations for `boto3.client("sts")` as [STSClient](./client.md)
 
 Can be used directly:
 
@@ -25,12 +27,10 @@ Can be used directly:
 from mypy_boto3_sts.client import STSClient
 ```
 
-
 STSClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [assume_role](./client.md#assume-role)
 - [assume_role_with_saml](./client.md#assume-role-with-saml)
 - [assume_role_with_web_identity](./client.md#assume-role-with-web-identity)
@@ -42,10 +42,8 @@ STSClient [exceptions](./client.md#exceptions)
 - [get_federation_token](./client.md#get-federation-token)
 - [get_session_token](./client.md#get-session-token)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ExpiredTokenException](./client.md#expiredtokenexception)
 - [IDPCommunicationErrorException](./client.md#idpcommunicationerrorexception)
@@ -56,21 +54,10 @@ STSClient [exceptions](./client.md#exceptions)
 - [PackedPolicyTooLargeException](./client.md#packedpolicytoolargeexception)
 - [RegionDisabledException](./client.md#regiondisabledexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

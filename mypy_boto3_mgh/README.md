@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MigrationHub
 
-Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+Auto-generated documentation for
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+type annotations stubs module
+[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ```bash
 pip install mypy-boto3-mgh
@@ -19,7 +21,7 @@ pip install mypy-boto3-mgh
 
 ## MigrationHubClient
 
-Type annotations for  `boto3.client("mgh")` as [MigrationHubClient](./client.md)
+Type annotations for `boto3.client("mgh")` as [MigrationHubClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mgh.client import MigrationHubClient
 ```
 
-
 MigrationHubClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_created_artifact](./client.md#associate-created-artifact)
 - [associate_discovered_resource](./client.md#associate-discovered-resource)
 - [can_paginate](./client.md#can-paginate)
@@ -54,10 +54,8 @@ MigrationHubClient [exceptions](./client.md#exceptions)
 - [notify_migration_task_state](./client.md#notify-migration-task-state)
 - [put_resource_attributes](./client.md#put-resource-attributes)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [DryRunOperation](./client.md#dryrunoperation)
@@ -70,14 +68,10 @@ MigrationHubClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [UnauthorizedOperation](./client.md#unauthorizedoperation)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mgh").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mgh").get_paginator("...")`.
 
 Can be used directly:
 
@@ -90,11 +84,6 @@ from mypy_boto3_mgh.paginators import ListApplicationStatesPaginator, ...
 - [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
 - [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
 - [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -115,13 +104,10 @@ from mypy_boto3_mgh.literals import ApplicationStatus, ...
 - [ResourceAttributeType](./literals.md#resourceattributetype)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSO](./README.md) > Paginators
 
-Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+Auto-generated documentation for
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+type annotations stubs module
+[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [Paginators for boto3 SSO module](#paginators-for-boto3-sso-module)
   - [ListAccountRolesPaginator](#listaccountrolespaginator)
@@ -22,18 +24,19 @@ def get_list_account_roles_paginator() -> ListAccountRolesPaginator:
     return boto3.client("sso").get_paginator("list_account_roles")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
+Boto3 documentation:
+[SSO.Paginator.ListAccountRoles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
 
-```python
-class ListAccountRolesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accessToken: str,
-        accountId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAccountRolesResponseTypeDef]:
-        pass
-```
+Arguments for `ListAccountRolesPaginator.paginate` method:
+
+- `accessToken`: `str` *(required)*
+- `accountId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#paginatorconfigtypedef)
+
+`ListAccountRolesPaginator.paginate` returns
+`Iterator`\[[ListAccountRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountrolesresponsetypedef)\].
+
 ## ListAccountsPaginator
 
 Type annotations for `boto3.client("sso").get_paginator("list_accounts")`.
@@ -47,14 +50,14 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("sso").get_paginator("list_accounts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
+Boto3 documentation:
+[SSO.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
 
-```python
-class ListAccountsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        accessToken: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAccountsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAccountsPaginator.paginate` method:
+
+- `accessToken`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#paginatorconfigtypedef)
+
+`ListAccountsPaginator.paginate` returns
+`Iterator`\[[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountsresponsetypedef)\].

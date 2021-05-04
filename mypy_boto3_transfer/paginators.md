@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Transfer](./README.md) > Paginators
 
-Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+Auto-generated documentation for
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+type annotations stubs module
+[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Paginators for boto3 Transfer module](#paginators-for-boto3-transfer-module)
   - [ListServersPaginator](#listserverspaginator)
@@ -21,13 +23,13 @@ def get_list_servers_paginator() -> ListServersPaginator:
     return boto3.client("transfer").get_paginator("list_servers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
+Boto3 documentation:
+[Transfer.Paginator.ListServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
 
-```python
-class ListServersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListServersResponseTypeDef]:
-        pass
-```
+Arguments for `ListServersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#paginatorconfigtypedef)
+
+`ListServersPaginator.paginate` returns
+`Iterator`\[[ListServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listserversresponsetypedef)\].

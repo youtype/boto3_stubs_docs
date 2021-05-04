@@ -1,9 +1,12 @@
 # IoT1ClickProjectsClient for boto3 IoT1ClickProjects module
 
-> [Index](../README.md) > [IoT1ClickProjects](./README.md) > IoT1ClickProjectsClient
+> [Index](../README.md) > [IoT1ClickProjects](./README.md) >
+> IoT1ClickProjectsClient
 
-Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+Auto-generated documentation for
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+type annotations stubs module
+[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [IoT1ClickProjectsClient for boto3 IoT1ClickProjects module](#iot1clickprojectsclient-for-boto3-iot1clickprojects-module)
   - [IoT1ClickProjectsClient](#iot1clickprojectsclient)
@@ -42,12 +45,13 @@ def get_iot1click-projects_client() -> IoT1ClickProjectsClient:
     return boto3.client("iot1click-projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
+Boto3 documentation:
+[IoT1ClickProjects.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_iot1click_projects.client import Exceptions
@@ -55,7 +59,6 @@ from mypy_boto3_iot1click_projects.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -66,294 +69,296 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### associate_device_with_placement
 
-Type annotations for `boto3.client("iot1click-projects").associate_device_with_placement` method.
+Type annotations for
+`boto3.client("iot1click-projects").associate_device_with_placement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.associate_device_with_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement)
 
-```python
-def associate_device_with_placement(
-    self,
-    projectName: str,
-    placementName: str,
-    deviceId: str,
-    deviceTemplateName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+- `placementName`: `str` *(required)*
+- `deviceId`: `str` *(required)*
+- `deviceTemplateName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("iot1click-projects").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate]
+Boto3 documentation:
+[IoT1ClickProjects.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_placement
 
-Type annotations for `boto3.client("iot1click-projects").create_placement` method.
+Type annotations for `boto3.client("iot1click-projects").create_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.create_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement)
 
-```python
-def create_placement(
-    self,
-    placementName: str,
-    projectName: str,
-    attributes: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `placementName`: `str` *(required)*
+- `projectName`: `str` *(required)*
+- `attributes`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_project
 
-Type annotations for `boto3.client("iot1click-projects").create_project` method.
+Type annotations for `boto3.client("iot1click-projects").create_project`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project]
+Boto3 documentation:
+[IoT1ClickProjects.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project)
 
-```python
-def create_project(
-    self,
-    projectName: str,
-    description: str = None,
-    placementTemplate: "PlacementTemplateTypeDef" = None,
-    tags: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+- `description`: `str`
+- `placementTemplate`:
+  [PlacementTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementtemplatetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_placement
 
-Type annotations for `boto3.client("iot1click-projects").delete_placement` method.
+Type annotations for `boto3.client("iot1click-projects").delete_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.delete_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement)
 
-```python
-def delete_placement(
-    self,
-    placementName: str,
-    projectName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `placementName`: `str` *(required)*
+- `projectName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_project
 
-Type annotations for `boto3.client("iot1click-projects").delete_project` method.
+Type annotations for `boto3.client("iot1click-projects").delete_project`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project]
+Boto3 documentation:
+[IoT1ClickProjects.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    projectName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_placement
 
-Type annotations for `boto3.client("iot1click-projects").describe_placement` method.
+Type annotations for `boto3.client("iot1click-projects").describe_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.describe_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement)
 
-```python
-def describe_placement(
-    self,
-    placementName: str,
-    projectName: str
-) -> DescribePlacementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `placementName`: `str` *(required)*
+- `projectName`: `str` *(required)*
+
+Returns
+[DescribePlacementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#describeplacementresponsetypedef).
 
 ### describe_project
 
-Type annotations for `boto3.client("iot1click-projects").describe_project` method.
+Type annotations for `boto3.client("iot1click-projects").describe_project`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project]
+Boto3 documentation:
+[IoT1ClickProjects.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project)
 
-```python
-def describe_project(
-    self,
-    projectName: str
-) -> DescribeProjectResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+
+Returns
+[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#describeprojectresponsetypedef).
 
 ### disassociate_device_from_placement
 
-Type annotations for `boto3.client("iot1click-projects").disassociate_device_from_placement` method.
+Type annotations for
+`boto3.client("iot1click-projects").disassociate_device_from_placement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.disassociate_device_from_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement)
 
-```python
-def disassociate_device_from_placement(
-    self,
-    projectName: str,
-    placementName: str,
-    deviceTemplateName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+- `placementName`: `str` *(required)*
+- `deviceTemplateName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("iot1click-projects").generate_presigned_url` method.
+Type annotations for
+`boto3.client("iot1click-projects").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url]
+Boto3 documentation:
+[IoT1ClickProjects.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_devices_in_placement
 
-Type annotations for `boto3.client("iot1click-projects").get_devices_in_placement` method.
+Type annotations for
+`boto3.client("iot1click-projects").get_devices_in_placement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.get_devices_in_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement)
 
-```python
-def get_devices_in_placement(
-    self,
-    projectName: str,
-    placementName: str
-) -> GetDevicesInPlacementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+- `placementName`: `str` *(required)*
+
+Returns
+[GetDevicesInPlacementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#getdevicesinplacementresponsetypedef).
 
 ### list_placements
 
-Type annotations for `boto3.client("iot1click-projects").list_placements` method.
+Type annotations for `boto3.client("iot1click-projects").list_placements`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements]
+Boto3 documentation:
+[IoT1ClickProjects.Client.list_placements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements)
 
-```python
-def list_placements(
-    self,
-    projectName: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListPlacementsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `projectName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListPlacementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listplacementsresponsetypedef).
 
 ### list_projects
 
 Type annotations for `boto3.client("iot1click-projects").list_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects]
+Boto3 documentation:
+[IoT1ClickProjects.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects)
 
-```python
-def list_projects(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListProjectsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("iot1click-projects").list_tags_for_resource` method.
+Type annotations for
+`boto3.client("iot1click-projects").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource]
+Boto3 documentation:
+[IoT1ClickProjects.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("iot1click-projects").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource]
+Boto3 documentation:
+[IoT1ClickProjects.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Type annotations for `boto3.client("iot1click-projects").untag_resource` method.
+Type annotations for `boto3.client("iot1click-projects").untag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource]
+Boto3 documentation:
+[IoT1ClickProjects.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_placement
 
-Type annotations for `boto3.client("iot1click-projects").update_placement` method.
+Type annotations for `boto3.client("iot1click-projects").update_placement`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement]
+Boto3 documentation:
+[IoT1ClickProjects.Client.update_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement)
 
-```python
-def update_placement(
-    self,
-    placementName: str,
-    projectName: str,
-    attributes: Dict[str, str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `placementName`: `str` *(required)*
+- `projectName`: `str` *(required)*
+- `attributes`: `Dict`\[`str`, `str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_project
 
-Type annotations for `boto3.client("iot1click-projects").update_project` method.
+Type annotations for `boto3.client("iot1click-projects").update_project`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project]
+Boto3 documentation:
+[IoT1ClickProjects.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project)
 
-```python
-def update_project(
-    self,
-    projectName: str,
-    description: str = None,
-    placementTemplate: "PlacementTemplateTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `projectName`: `str` *(required)*
+- `description`: `str`
+- `placementTemplate`:
+  [PlacementTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementtemplatetypedef)
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("iot1click-projects").get_paginator` method with overloads.
+Type annotations for `boto3.client("iot1click-projects").get_paginator` method
+with overloads.
 
-- `client.get_paginator("list_placements")` -> [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
-- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
+- `client.get_paginator("list_placements")` ->
+  [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
+- `client.get_paginator("list_projects")` ->
+  [ListProjectsPaginator](./paginators.md#listprojectspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DevopsGuru](./README.md) > Literals
 
-Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
-type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+Auto-generated documentation for
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+type annotations stubs module
+[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Literals for boto3 DevopsGuru module](#literals-for-boto3-devopsguru-module)
   - [AnomalySeverity](#anomalyseverity)

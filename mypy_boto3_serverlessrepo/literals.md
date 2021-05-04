@@ -1,9 +1,12 @@
 # Literals for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > Literals
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
+> Literals
 
-Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+Auto-generated documentation for
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+type annotations stubs module
+[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [Literals for boto3 ServerlessApplicationRepository module](#literals-for-boto3-serverlessapplicationrepository-module)
   - [Capability](#capability)

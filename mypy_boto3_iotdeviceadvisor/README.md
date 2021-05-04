@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoTDeviceAdvisor
 
-Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+Auto-generated documentation for
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+type annotations stubs module
+[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 ```bash
 pip install mypy-boto3-iotdeviceadvisor
@@ -18,7 +20,8 @@ pip install mypy-boto3-iotdeviceadvisor
 
 ## IoTDeviceAdvisorClient
 
-Type annotations for  `boto3.client("iotdeviceadvisor")` as [IoTDeviceAdvisorClient](./client.md)
+Type annotations for `boto3.client("iotdeviceadvisor")` as
+[IoTDeviceAdvisorClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 ```
 
-
 IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_suite_definition](./client.md#create-suite-definition)
 - [delete_suite_definition](./client.md#delete-suite-definition)
@@ -48,24 +49,13 @@ IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_suite_definition](./client.md#update-suite-definition)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -80,13 +70,10 @@ from mypy_boto3_iotdeviceadvisor.literals import Status, ...
 - [Status](./literals.md#status)
 - [SuiteRunStatus](./literals.md#suiterunstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

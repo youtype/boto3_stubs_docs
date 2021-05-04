@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeStarNotifications
 
-Auto-generated documentation for [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
-type annotations stubs module [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+Auto-generated documentation for
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+type annotations stubs module
+[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 ```bash
 pip install mypy-boto3-codestar-notifications
@@ -19,7 +21,8 @@ pip install mypy-boto3-codestar-notifications
 
 ## CodeStarNotificationsClient
 
-Type annotations for  `boto3.client("codestar-notifications")` as [CodeStarNotificationsClient](./client.md)
+Type annotations for `boto3.client("codestar-notifications")` as
+[CodeStarNotificationsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 ```
 
-
 CodeStarNotificationsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_notification_rule](./client.md#create-notification-rule)
 - [delete_notification_rule](./client.md#delete-notification-rule)
@@ -50,10 +51,8 @@ CodeStarNotificationsClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_notification_rule](./client.md#update-notification-rule)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConcurrentModificationException](./client.md#concurrentmodificationexception)
@@ -64,14 +63,10 @@ CodeStarNotificationsClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codestar-notifications").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codestar-notifications").get_paginator("...")`.
 
 Can be used directly:
 
@@ -82,11 +77,6 @@ from mypy_boto3_codestar_notifications.paginators import ListEventTypesPaginator
 - [ListEventTypesPaginator](./paginators.md#listeventtypespaginator)
 - [ListNotificationRulesPaginator](./paginators.md#listnotificationrulespaginator)
 - [ListTargetsPaginator](./paginators.md#listtargetspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -108,13 +98,10 @@ from mypy_boto3_codestar_notifications.literals import DetailType, ...
 - [NotificationRuleStatus](./literals.md#notificationrulestatus)
 - [TargetStatus](./literals.md#targetstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

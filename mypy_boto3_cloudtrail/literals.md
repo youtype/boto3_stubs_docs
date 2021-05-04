@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudTrail](./README.md) > Literals
 
-Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+Auto-generated documentation for
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+type annotations stubs module
+[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Literals for boto3 CloudTrail module](#literals-for-boto3-cloudtrail-module)
   - [EventCategory](#eventcategory)

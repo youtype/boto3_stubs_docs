@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Pricing
 
-Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+Auto-generated documentation for
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+type annotations stubs module
+[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 ```bash
 pip install mypy-boto3-pricing
@@ -19,7 +21,7 @@ pip install mypy-boto3-pricing
 
 ## PricingClient
 
-Type annotations for  `boto3.client("pricing")` as [PricingClient](./client.md)
+Type annotations for `boto3.client("pricing")` as [PricingClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_pricing.client import PricingClient
 ```
 
-
 PricingClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_services](./client.md#describe-services)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -40,10 +40,8 @@ PricingClient [exceptions](./client.md#exceptions)
 - [get_paginator](./client.md#get-paginator)
 - [get_products](./client.md#get-products)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ExpiredNextTokenException](./client.md#expirednexttokenexception)
 - [InternalErrorException](./client.md#internalerrorexception)
@@ -51,14 +49,10 @@ PricingClient [exceptions](./client.md#exceptions)
 - [InvalidParameterException](./client.md#invalidparameterexception)
 - [NotFoundException](./client.md#notfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("pricing").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("pricing").get_paginator("...")`.
 
 Can be used directly:
 
@@ -69,11 +63,6 @@ from mypy_boto3_pricing.paginators import DescribeServicesPaginator, ...
 - [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
 - [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
 - [GetProductsPaginator](./paginators.md#getproductspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -90,13 +79,10 @@ from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
 - [GetAttributeValuesPaginatorName](./literals.md#getattributevaluespaginatorname)
 - [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

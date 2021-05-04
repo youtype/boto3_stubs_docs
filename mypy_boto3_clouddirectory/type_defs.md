@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudDirectory](./README.md) > Structures
 
-Auto-generated documentation for [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
-type annotations stubs module [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+Auto-generated documentation for
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+type annotations stubs module
+[mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 - [Typed dictionaries for boto3 CloudDirectory module](#typed-dictionaries-for-boto3-clouddirectory-module)
   - [ApplySchemaResponseTypeDef](#applyschemaresponsetypedef)
@@ -153,13 +155,10 @@ type annotations stubs module [mypy_boto3_clouddirectory](https://pypi.org/proje
 from mypy_boto3_clouddirectory.type_defs import ApplySchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AppliedSchemaArn`: `str`
 - `DirectoryArn`: `str`
-
 
 ## AttachObjectResponseTypeDef
 
@@ -167,12 +166,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import AttachObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttachedObjectIdentifier`: `str`
 
+- `AttachedObjectIdentifier`: `str`
 
 ## AttachToIndexResponseTypeDef
 
@@ -180,12 +176,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import AttachToIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttachedObjectIdentifier`: `str`
 
+- `AttachedObjectIdentifier`: `str`
 
 ## AttachTypedLinkResponseTypeDef
 
@@ -193,12 +186,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import AttachTypedLinkResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TypedLinkSpecifier`: `"TypedLinkSpecifierTypeDef"`
 
+- `TypedLinkSpecifier`:
+  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
 
 ## AttributeKeyAndValueTypeDef
 
@@ -206,13 +197,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import AttributeKeyAndValueTypeDef
 ```
 
-
 Required fields:
-- `Key`: `"AttributeKeyTypeDef"`
-- `Value`: `"TypedAttributeValueTypeDef"`
 
-
-
+- `Key`:
+  [AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)
+- `Value`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
 
 ## AttributeKeyTypeDef
 
@@ -220,14 +210,11 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import AttributeKeyTypeDef
 ```
 
-
 Required fields:
+
 - `SchemaArn`: `str`
 - `FacetName`: `str`
 - `Name`: `str`
-
-
-
 
 ## AttributeNameAndValueTypeDef
 
@@ -235,13 +222,11 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import AttributeNameAndValueTypeDef
 ```
 
-
 Required fields:
+
 - `AttributeName`: `str`
-- `Value`: `"TypedAttributeValueTypeDef"`
-
-
-
+- `Value`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
 
 ## BatchAddFacetToObjectTypeDef
 
@@ -249,14 +234,14 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAddFacetToObjectTypeDef
 ```
 
-
 Required fields:
-- `SchemaFacet`: `"SchemaFacetTypeDef"`
-- `ObjectAttributeList`: `List["AttributeKeyAndValueTypeDef"]`
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `SchemaFacet`:
+  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `ObjectAttributeList`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchAttachObjectResponseTypeDef
 
@@ -264,12 +249,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `attachedObjectIdentifier`: `str`
 
+- `attachedObjectIdentifier`: `str`
 
 ## BatchAttachObjectTypeDef
 
@@ -277,14 +259,13 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachObjectTypeDef
 ```
 
-
 Required fields:
-- `ParentReference`: `"ObjectReferenceTypeDef"`
-- `ChildReference`: `"ObjectReferenceTypeDef"`
+
+- `ParentReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `ChildReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 - `LinkName`: `str`
-
-
-
 
 ## BatchAttachPolicyTypeDef
 
@@ -292,13 +273,12 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachPolicyTypeDef
 ```
 
-
 Required fields:
-- `PolicyReference`: `"ObjectReferenceTypeDef"`
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `PolicyReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchAttachToIndexResponseTypeDef
 
@@ -306,12 +286,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachToIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttachedObjectIdentifier`: `str`
 
+- `AttachedObjectIdentifier`: `str`
 
 ## BatchAttachToIndexTypeDef
 
@@ -319,13 +296,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachToIndexTypeDef
 ```
 
-
 Required fields:
-- `IndexReference`: `"ObjectReferenceTypeDef"`
-- `TargetReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `IndexReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `TargetReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchAttachTypedLinkResponseTypeDef
 
@@ -333,12 +309,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachTypedLinkResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TypedLinkSpecifier`: `"TypedLinkSpecifierTypeDef"`
 
+- `TypedLinkSpecifier`:
+  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
 
 ## BatchAttachTypedLinkTypeDef
 
@@ -346,15 +320,16 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchAttachTypedLinkTypeDef
 ```
 
-
 Required fields:
-- `SourceObjectReference`: `"ObjectReferenceTypeDef"`
-- `TargetObjectReference`: `"ObjectReferenceTypeDef"`
-- `TypedLinkFacet`: `"TypedLinkSchemaAndFacetNameTypeDef"`
-- `Attributes`: `List["AttributeNameAndValueTypeDef"]`
 
-
-
+- `SourceObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `TargetObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `TypedLinkFacet`:
+  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
+- `Attributes`:
+  `List`\[[AttributeNameAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributenameandvaluetypedef)\]
 
 ## BatchCreateIndexResponseTypeDef
 
@@ -362,12 +337,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchCreateIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## BatchCreateIndexTypeDef
 
@@ -375,18 +347,18 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchCreateIndexTypeDef
 ```
 
-
 Required fields:
-- `OrderedIndexedAttributeList`: `List["AttributeKeyTypeDef"]`
+
+- `OrderedIndexedAttributeList`:
+  `List`\[[AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)\]
 - `IsUnique`: `bool`
 
-
-
 Optional fields:
-- `ParentReference`: `"ObjectReferenceTypeDef"`
+
+- `ParentReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 - `LinkName`: `str`
 - `BatchReferenceName`: `str`
-
 
 ## BatchCreateObjectResponseTypeDef
 
@@ -394,12 +366,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchCreateObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## BatchCreateObjectTypeDef
 
@@ -407,18 +376,19 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchCreateObjectTypeDef
 ```
 
-
 Required fields:
-- `SchemaFacet`: `List["SchemaFacetTypeDef"]`
-- `ObjectAttributeList`: `List["AttributeKeyAndValueTypeDef"]`
 
-
+- `SchemaFacet`:
+  `List`\[[SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)\]
+- `ObjectAttributeList`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
 
 Optional fields:
-- `ParentReference`: `"ObjectReferenceTypeDef"`
+
+- `ParentReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 - `LinkName`: `str`
 - `BatchReferenceName`: `str`
-
 
 ## BatchDeleteObjectTypeDef
 
@@ -426,12 +396,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDeleteObjectTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchDetachFromIndexResponseTypeDef
 
@@ -439,12 +407,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachFromIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DetachedObjectIdentifier`: `str`
 
+- `DetachedObjectIdentifier`: `str`
 
 ## BatchDetachFromIndexTypeDef
 
@@ -452,13 +417,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachFromIndexTypeDef
 ```
 
-
 Required fields:
-- `IndexReference`: `"ObjectReferenceTypeDef"`
-- `TargetReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `IndexReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `TargetReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchDetachObjectResponseTypeDef
 
@@ -466,12 +430,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detachedObjectIdentifier`: `str`
 
+- `detachedObjectIdentifier`: `str`
 
 ## BatchDetachObjectTypeDef
 
@@ -479,16 +440,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachObjectTypeDef
 ```
 
-
 Required fields:
-- `ParentReference`: `"ObjectReferenceTypeDef"`
+
+- `ParentReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 - `LinkName`: `str`
 
-
-
 Optional fields:
-- `BatchReferenceName`: `str`
 
+- `BatchReferenceName`: `str`
 
 ## BatchDetachPolicyTypeDef
 
@@ -496,13 +456,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachPolicyTypeDef
 ```
 
-
 Required fields:
-- `PolicyReference`: `"ObjectReferenceTypeDef"`
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `PolicyReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchDetachTypedLinkTypeDef
 
@@ -510,12 +469,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchDetachTypedLinkTypeDef
 ```
 
-
 Required fields:
-- `TypedLinkSpecifier`: `"TypedLinkSpecifierTypeDef"`
 
-
-
+- `TypedLinkSpecifier`:
+  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
 
 ## BatchGetLinkAttributesResponseTypeDef
 
@@ -523,12 +480,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetLinkAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
 
 ## BatchGetLinkAttributesTypeDef
 
@@ -536,13 +491,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetLinkAttributesTypeDef
 ```
 
-
 Required fields:
-- `TypedLinkSpecifier`: `"TypedLinkSpecifierTypeDef"`
-- `AttributeNames`: `List[str]`
 
-
-
+- `TypedLinkSpecifier`:
+  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
+- `AttributeNames`: `List`\[`str`\]
 
 ## BatchGetObjectAttributesResponseTypeDef
 
@@ -550,12 +503,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
 
 ## BatchGetObjectAttributesTypeDef
 
@@ -563,14 +514,13 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetObjectAttributesTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
-- `SchemaFacet`: `"SchemaFacetTypeDef"`
-- `AttributeNames`: `List[str]`
 
-
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `SchemaFacet`:
+  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `AttributeNames`: `List`\[`str`\]
 
 ## BatchGetObjectInformationResponseTypeDef
 
@@ -578,13 +528,11 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetObjectInformationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaFacets`: `List["SchemaFacetTypeDef"]`
-- `ObjectIdentifier`: `str`
 
+- `SchemaFacets`:
+  `List`\[[SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)\]
+- `ObjectIdentifier`: `str`
 
 ## BatchGetObjectInformationTypeDef
 
@@ -592,12 +540,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchGetObjectInformationTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchListAttachedIndicesResponseTypeDef
 
@@ -605,13 +551,11 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListAttachedIndicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexAttachments`: `List["IndexAttachmentTypeDef"]`
-- `NextToken`: `str`
 
+- `IndexAttachments`:
+  `List`\[[IndexAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#indexattachmenttypedef)\]
+- `NextToken`: `str`
 
 ## BatchListAttachedIndicesTypeDef
 
@@ -619,16 +563,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListAttachedIndicesTypeDef
 ```
 
-
 Required fields:
-- `TargetReference`: `"ObjectReferenceTypeDef"`
 
-
+- `TargetReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListIncomingTypedLinksResponseTypeDef
 
@@ -636,13 +579,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListIncomingTypedLinksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LinkSpecifiers`: `List["TypedLinkSpecifierTypeDef"]`
-- `NextToken`: `str`
 
+- `LinkSpecifiers`:
+  `List`\[[TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)\]
+- `NextToken`: `str`
 
 ## BatchListIncomingTypedLinksTypeDef
 
@@ -650,18 +591,19 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListIncomingTypedLinksTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
-- `FilterAttributeRanges`: `List["TypedLinkAttributeRangeTypeDef"]`
-- `FilterTypedLink`: `"TypedLinkSchemaAndFacetNameTypeDef"`
+
+- `FilterAttributeRanges`:
+  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+- `FilterTypedLink`:
+  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListIndexResponseTypeDef
 
@@ -669,13 +611,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexAttachments`: `List["IndexAttachmentTypeDef"]`
-- `NextToken`: `str`
 
+- `IndexAttachments`:
+  `List`\[[IndexAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#indexattachmenttypedef)\]
+- `NextToken`: `str`
 
 ## BatchListIndexTypeDef
 
@@ -683,17 +623,17 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListIndexTypeDef
 ```
 
-
 Required fields:
-- `IndexReference`: `"ObjectReferenceTypeDef"`
 
-
+- `IndexReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
-- `RangesOnIndexedValues`: `List["ObjectAttributeRangeTypeDef"]`
+
+- `RangesOnIndexedValues`:
+  `List`\[[ObjectAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributerangetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-
 
 ## BatchListObjectAttributesResponseTypeDef
 
@@ -701,13 +641,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
-- `NextToken`: `str`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+- `NextToken`: `str`
 
 ## BatchListObjectAttributesTypeDef
 
@@ -715,17 +653,17 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectAttributesTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `FacetFilter`: `"SchemaFacetTypeDef"`
-
+- `FacetFilter`:
+  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
 
 ## BatchListObjectChildrenResponseTypeDef
 
@@ -733,13 +671,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectChildrenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Children`: `Dict[str, str]`
-- `NextToken`: `str`
 
+- `Children`: `Dict`\[`str`, `str`\]
+- `NextToken`: `str`
 
 ## BatchListObjectChildrenTypeDef
 
@@ -747,16 +682,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectChildrenTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListObjectParentPathsResponseTypeDef
 
@@ -764,13 +698,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectParentPathsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PathToObjectIdentifiersList`: `List["PathToObjectIdentifiersTypeDef"]`
-- `NextToken`: `str`
 
+- `PathToObjectIdentifiersList`:
+  `List`\[[PathToObjectIdentifiersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#pathtoobjectidentifierstypedef)\]
+- `NextToken`: `str`
 
 ## BatchListObjectParentPathsTypeDef
 
@@ -778,16 +710,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectParentPathsTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListObjectParentsResponseTypeDef
 
@@ -795,13 +726,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectParentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ParentLinks`: `List["ObjectIdentifierAndLinkNameTupleTypeDef"]`
-- `NextToken`: `str`
 
+- `ParentLinks`:
+  `List`\[[ObjectIdentifierAndLinkNameTupleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectidentifierandlinknametupletypedef)\]
+- `NextToken`: `str`
 
 ## BatchListObjectParentsTypeDef
 
@@ -809,16 +738,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectParentsTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListObjectPoliciesResponseTypeDef
 
@@ -826,13 +754,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectPoliciesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttachedPolicyIds`: `List[str]`
-- `NextToken`: `str`
 
+- `AttachedPolicyIds`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## BatchListObjectPoliciesTypeDef
 
@@ -840,16 +765,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListObjectPoliciesTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListOutgoingTypedLinksResponseTypeDef
 
@@ -857,13 +781,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListOutgoingTypedLinksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TypedLinkSpecifiers`: `List["TypedLinkSpecifierTypeDef"]`
-- `NextToken`: `str`
 
+- `TypedLinkSpecifiers`:
+  `List`\[[TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)\]
+- `NextToken`: `str`
 
 ## BatchListOutgoingTypedLinksTypeDef
 
@@ -871,18 +793,19 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListOutgoingTypedLinksTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
-- `FilterAttributeRanges`: `List["TypedLinkAttributeRangeTypeDef"]`
-- `FilterTypedLink`: `"TypedLinkSchemaAndFacetNameTypeDef"`
+
+- `FilterAttributeRanges`:
+  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+- `FilterTypedLink`:
+  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchListPolicyAttachmentsResponseTypeDef
 
@@ -890,13 +813,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListPolicyAttachmentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifiers`: `List[str]`
-- `NextToken`: `str`
 
+- `ObjectIdentifiers`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## BatchListPolicyAttachmentsTypeDef
 
@@ -904,16 +824,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchListPolicyAttachmentsTypeDef
 ```
 
-
 Required fields:
-- `PolicyReference`: `"ObjectReferenceTypeDef"`
 
-
+- `PolicyReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchLookupPolicyResponseTypeDef
 
@@ -921,13 +840,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchLookupPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyToPathList`: `List["PolicyToPathTypeDef"]`
-- `NextToken`: `str`
 
+- `PolicyToPathList`:
+  `List`\[[PolicyToPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#policytopathtypedef)\]
+- `NextToken`: `str`
 
 ## BatchLookupPolicyTypeDef
 
@@ -935,16 +852,15 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchLookupPolicyTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 Optional fields:
+
 - `NextToken`: `str`
 - `MaxResults`: `int`
-
 
 ## BatchReadExceptionTypeDef
 
@@ -952,13 +868,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchReadExceptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `BatchReadExceptionType`
-- `Message`: `str`
 
+- `Type`:
+  [BatchReadExceptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#batchreadexceptiontype)
+- `Message`: `str`
 
 ## BatchReadOperationResponseTypeDef
 
@@ -966,13 +880,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchReadOperationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SuccessfulResponse`: `"BatchReadSuccessfulResponseTypeDef"`
-- `ExceptionResponse`: `"BatchReadExceptionTypeDef"`
 
+- `SuccessfulResponse`:
+  [BatchReadSuccessfulResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchreadsuccessfulresponsetypedef)
+- `ExceptionResponse`:
+  [BatchReadExceptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchreadexceptiontypedef)
 
 ## BatchReadOperationTypeDef
 
@@ -980,25 +893,36 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchReadOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ListObjectAttributes`: `"BatchListObjectAttributesTypeDef"`
-- `ListObjectChildren`: `"BatchListObjectChildrenTypeDef"`
-- `ListAttachedIndices`: `"BatchListAttachedIndicesTypeDef"`
-- `ListObjectParentPaths`: `"BatchListObjectParentPathsTypeDef"`
-- `GetObjectInformation`: `"BatchGetObjectInformationTypeDef"`
-- `GetObjectAttributes`: `"BatchGetObjectAttributesTypeDef"`
-- `ListObjectParents`: `"BatchListObjectParentsTypeDef"`
-- `ListObjectPolicies`: `"BatchListObjectPoliciesTypeDef"`
-- `ListPolicyAttachments`: `"BatchListPolicyAttachmentsTypeDef"`
-- `LookupPolicy`: `"BatchLookupPolicyTypeDef"`
-- `ListIndex`: `"BatchListIndexTypeDef"`
-- `ListOutgoingTypedLinks`: `"BatchListOutgoingTypedLinksTypeDef"`
-- `ListIncomingTypedLinks`: `"BatchListIncomingTypedLinksTypeDef"`
-- `GetLinkAttributes`: `"BatchGetLinkAttributesTypeDef"`
 
+- `ListObjectAttributes`:
+  [BatchListObjectAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectattributestypedef)
+- `ListObjectChildren`:
+  [BatchListObjectChildrenTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectchildrentypedef)
+- `ListAttachedIndices`:
+  [BatchListAttachedIndicesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistattachedindicestypedef)
+- `ListObjectParentPaths`:
+  [BatchListObjectParentPathsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectparentpathstypedef)
+- `GetObjectInformation`:
+  [BatchGetObjectInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetobjectinformationtypedef)
+- `GetObjectAttributes`:
+  [BatchGetObjectAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetobjectattributestypedef)
+- `ListObjectParents`:
+  [BatchListObjectParentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectparentstypedef)
+- `ListObjectPolicies`:
+  [BatchListObjectPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectpoliciestypedef)
+- `ListPolicyAttachments`:
+  [BatchListPolicyAttachmentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistpolicyattachmentstypedef)
+- `LookupPolicy`:
+  [BatchLookupPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlookuppolicytypedef)
+- `ListIndex`:
+  [BatchListIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistindextypedef)
+- `ListOutgoingTypedLinks`:
+  [BatchListOutgoingTypedLinksTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistoutgoingtypedlinkstypedef)
+- `ListIncomingTypedLinks`:
+  [BatchListIncomingTypedLinksTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistincomingtypedlinkstypedef)
+- `GetLinkAttributes`:
+  [BatchGetLinkAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetlinkattributestypedef)
 
 ## BatchReadResponseTypeDef
 
@@ -1006,12 +930,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchReadResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Responses`: `List["BatchReadOperationResponseTypeDef"]`
 
+- `Responses`:
+  `List`\[[BatchReadOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchreadoperationresponsetypedef)\]
 
 ## BatchReadSuccessfulResponseTypeDef
 
@@ -1019,25 +941,36 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchReadSuccessfulResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ListObjectAttributes`: `"BatchListObjectAttributesResponseTypeDef"`
-- `ListObjectChildren`: `"BatchListObjectChildrenResponseTypeDef"`
-- `GetObjectInformation`: `"BatchGetObjectInformationResponseTypeDef"`
-- `GetObjectAttributes`: `"BatchGetObjectAttributesResponseTypeDef"`
-- `ListAttachedIndices`: `"BatchListAttachedIndicesResponseTypeDef"`
-- `ListObjectParentPaths`: `"BatchListObjectParentPathsResponseTypeDef"`
-- `ListObjectPolicies`: `"BatchListObjectPoliciesResponseTypeDef"`
-- `ListPolicyAttachments`: `"BatchListPolicyAttachmentsResponseTypeDef"`
-- `LookupPolicy`: `"BatchLookupPolicyResponseTypeDef"`
-- `ListIndex`: `"BatchListIndexResponseTypeDef"`
-- `ListOutgoingTypedLinks`: `"BatchListOutgoingTypedLinksResponseTypeDef"`
-- `ListIncomingTypedLinks`: `"BatchListIncomingTypedLinksResponseTypeDef"`
-- `GetLinkAttributes`: `"BatchGetLinkAttributesResponseTypeDef"`
-- `ListObjectParents`: `"BatchListObjectParentsResponseTypeDef"`
 
+- `ListObjectAttributes`:
+  [BatchListObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectattributesresponsetypedef)
+- `ListObjectChildren`:
+  [BatchListObjectChildrenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectchildrenresponsetypedef)
+- `GetObjectInformation`:
+  [BatchGetObjectInformationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetobjectinformationresponsetypedef)
+- `GetObjectAttributes`:
+  [BatchGetObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetobjectattributesresponsetypedef)
+- `ListAttachedIndices`:
+  [BatchListAttachedIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistattachedindicesresponsetypedef)
+- `ListObjectParentPaths`:
+  [BatchListObjectParentPathsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectparentpathsresponsetypedef)
+- `ListObjectPolicies`:
+  [BatchListObjectPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectpoliciesresponsetypedef)
+- `ListPolicyAttachments`:
+  [BatchListPolicyAttachmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistpolicyattachmentsresponsetypedef)
+- `LookupPolicy`:
+  [BatchLookupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlookuppolicyresponsetypedef)
+- `ListIndex`:
+  [BatchListIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistindexresponsetypedef)
+- `ListOutgoingTypedLinks`:
+  [BatchListOutgoingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistoutgoingtypedlinksresponsetypedef)
+- `ListIncomingTypedLinks`:
+  [BatchListIncomingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistincomingtypedlinksresponsetypedef)
+- `GetLinkAttributes`:
+  [BatchGetLinkAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchgetlinkattributesresponsetypedef)
+- `ListObjectParents`:
+  [BatchListObjectParentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchlistobjectparentsresponsetypedef)
 
 ## BatchRemoveFacetFromObjectTypeDef
 
@@ -1045,13 +978,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchRemoveFacetFromObjectTypeDef
 ```
 
-
 Required fields:
-- `SchemaFacet`: `"SchemaFacetTypeDef"`
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
 
-
-
+- `SchemaFacet`:
+  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
 
 ## BatchUpdateLinkAttributesTypeDef
 
@@ -1059,13 +991,12 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchUpdateLinkAttributesTypeDef
 ```
 
-
 Required fields:
-- `TypedLinkSpecifier`: `"TypedLinkSpecifierTypeDef"`
-- `AttributeUpdates`: `List["LinkAttributeUpdateTypeDef"]`
 
-
-
+- `TypedLinkSpecifier`:
+  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
+- `AttributeUpdates`:
+  `List`\[[LinkAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#linkattributeupdatetypedef)\]
 
 ## BatchUpdateObjectAttributesResponseTypeDef
 
@@ -1073,12 +1004,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchUpdateObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## BatchUpdateObjectAttributesTypeDef
 
@@ -1086,13 +1014,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchUpdateObjectAttributesTypeDef
 ```
 
-
 Required fields:
-- `ObjectReference`: `"ObjectReferenceTypeDef"`
-- `AttributeUpdates`: `List["ObjectAttributeUpdateTypeDef"]`
 
-
-
+- `ObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `AttributeUpdates`:
+  `List`\[[ObjectAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributeupdatetypedef)\]
 
 ## BatchWriteOperationResponseTypeDef
 
@@ -1100,26 +1027,31 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import BatchWriteOperationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CreateObject`: `"BatchCreateObjectResponseTypeDef"`
-- `AttachObject`: `"BatchAttachObjectResponseTypeDef"`
-- `DetachObject`: `"BatchDetachObjectResponseTypeDef"`
-- `UpdateObjectAttributes`: `"BatchUpdateObjectAttributesResponseTypeDef"`
-- `DeleteObject`: `Dict[str, Any]`
-- `AddFacetToObject`: `Dict[str, Any]`
-- `RemoveFacetFromObject`: `Dict[str, Any]`
-- `AttachPolicy`: `Dict[str, Any]`
-- `DetachPolicy`: `Dict[str, Any]`
-- `CreateIndex`: `"BatchCreateIndexResponseTypeDef"`
-- `AttachToIndex`: `"BatchAttachToIndexResponseTypeDef"`
-- `DetachFromIndex`: `"BatchDetachFromIndexResponseTypeDef"`
-- `AttachTypedLink`: `"BatchAttachTypedLinkResponseTypeDef"`
-- `DetachTypedLink`: `Dict[str, Any]`
-- `UpdateLinkAttributes`: `Dict[str, Any]`
 
+- `CreateObject`:
+  [BatchCreateObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchcreateobjectresponsetypedef)
+- `AttachObject`:
+  [BatchAttachObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachobjectresponsetypedef)
+- `DetachObject`:
+  [BatchDetachObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachobjectresponsetypedef)
+- `UpdateObjectAttributes`:
+  [BatchUpdateObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchupdateobjectattributesresponsetypedef)
+- `DeleteObject`: `Dict`\[`str`, `Any`\]
+- `AddFacetToObject`: `Dict`\[`str`, `Any`\]
+- `RemoveFacetFromObject`: `Dict`\[`str`, `Any`\]
+- `AttachPolicy`: `Dict`\[`str`, `Any`\]
+- `DetachPolicy`: `Dict`\[`str`, `Any`\]
+- `CreateIndex`:
+  [BatchCreateIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchcreateindexresponsetypedef)
+- `AttachToIndex`:
+  [BatchAttachToIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachtoindexresponsetypedef)
+- `DetachFromIndex`:
+  [BatchDetachFromIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachfromindexresponsetypedef)
+- `AttachTypedLink`:
+  [BatchAttachTypedLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachtypedlinkresponsetypedef)
+- `DetachTypedLink`: `Dict`\[`str`, `Any`\]
+- `UpdateLinkAttributes`: `Dict`\[`str`, `Any`\]
 
 ## BatchWriteOperationTypeDef
 
@@ -1127,26 +1059,38 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchWriteOperationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CreateObject`: `"BatchCreateObjectTypeDef"`
-- `AttachObject`: `"BatchAttachObjectTypeDef"`
-- `DetachObject`: `"BatchDetachObjectTypeDef"`
-- `UpdateObjectAttributes`: `"BatchUpdateObjectAttributesTypeDef"`
-- `DeleteObject`: `"BatchDeleteObjectTypeDef"`
-- `AddFacetToObject`: `"BatchAddFacetToObjectTypeDef"`
-- `RemoveFacetFromObject`: `"BatchRemoveFacetFromObjectTypeDef"`
-- `AttachPolicy`: `"BatchAttachPolicyTypeDef"`
-- `DetachPolicy`: `"BatchDetachPolicyTypeDef"`
-- `CreateIndex`: `"BatchCreateIndexTypeDef"`
-- `AttachToIndex`: `"BatchAttachToIndexTypeDef"`
-- `DetachFromIndex`: `"BatchDetachFromIndexTypeDef"`
-- `AttachTypedLink`: `"BatchAttachTypedLinkTypeDef"`
-- `DetachTypedLink`: `"BatchDetachTypedLinkTypeDef"`
-- `UpdateLinkAttributes`: `"BatchUpdateLinkAttributesTypeDef"`
 
+- `CreateObject`:
+  [BatchCreateObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchcreateobjecttypedef)
+- `AttachObject`:
+  [BatchAttachObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachobjecttypedef)
+- `DetachObject`:
+  [BatchDetachObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachobjecttypedef)
+- `UpdateObjectAttributes`:
+  [BatchUpdateObjectAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchupdateobjectattributestypedef)
+- `DeleteObject`:
+  [BatchDeleteObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdeleteobjecttypedef)
+- `AddFacetToObject`:
+  [BatchAddFacetToObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchaddfacettoobjecttypedef)
+- `RemoveFacetFromObject`:
+  [BatchRemoveFacetFromObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchremovefacetfromobjecttypedef)
+- `AttachPolicy`:
+  [BatchAttachPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachpolicytypedef)
+- `DetachPolicy`:
+  [BatchDetachPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachpolicytypedef)
+- `CreateIndex`:
+  [BatchCreateIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchcreateindextypedef)
+- `AttachToIndex`:
+  [BatchAttachToIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachtoindextypedef)
+- `DetachFromIndex`:
+  [BatchDetachFromIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachfromindextypedef)
+- `AttachTypedLink`:
+  [BatchAttachTypedLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchattachtypedlinktypedef)
+- `DetachTypedLink`:
+  [BatchDetachTypedLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchdetachtypedlinktypedef)
+- `UpdateLinkAttributes`:
+  [BatchUpdateLinkAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchupdatelinkattributestypedef)
 
 ## BatchWriteResponseTypeDef
 
@@ -1154,12 +1098,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import BatchWriteResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Responses`: `List["BatchWriteOperationResponseTypeDef"]`
 
+- `Responses`:
+  `List`\[[BatchWriteOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchwriteoperationresponsetypedef)\]
 
 ## CreateDirectoryResponseTypeDef
 
@@ -1167,15 +1109,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import CreateDirectoryResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DirectoryArn`: `str`
 - `Name`: `str`
 - `ObjectIdentifier`: `str`
 - `AppliedSchemaArn`: `str`
-
-
-
 
 ## CreateIndexResponseTypeDef
 
@@ -1183,12 +1122,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import CreateIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## CreateObjectResponseTypeDef
 
@@ -1196,12 +1132,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import CreateObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## CreateSchemaResponseTypeDef
 
@@ -1209,12 +1142,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import CreateSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArn`: `str`
 
+- `SchemaArn`: `str`
 
 ## DeleteDirectoryResponseTypeDef
 
@@ -1222,12 +1152,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import DeleteDirectoryResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DirectoryArn`: `str`
-
-
-
 
 ## DeleteSchemaResponseTypeDef
 
@@ -1235,12 +1162,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import DeleteSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArn`: `str`
 
+- `SchemaArn`: `str`
 
 ## DetachFromIndexResponseTypeDef
 
@@ -1248,12 +1172,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import DetachFromIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DetachedObjectIdentifier`: `str`
 
+- `DetachedObjectIdentifier`: `str`
 
 ## DetachObjectResponseTypeDef
 
@@ -1261,12 +1182,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import DetachObjectResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DetachedObjectIdentifier`: `str`
 
+- `DetachedObjectIdentifier`: `str`
 
 ## DirectoryTypeDef
 
@@ -1274,15 +1192,13 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import DirectoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `DirectoryArn`: `str`
-- `State`: `DirectoryState`
+- `State`:
+  [DirectoryState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#directorystate)
 - `CreationDateTime`: `datetime`
-
 
 ## DisableDirectoryResponseTypeDef
 
@@ -1290,12 +1206,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import DisableDirectoryResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DirectoryArn`: `str`
-
-
-
 
 ## EnableDirectoryResponseTypeDef
 
@@ -1303,12 +1216,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import EnableDirectoryResponseTypeDef
 ```
 
-
 Required fields:
+
 - `DirectoryArn`: `str`
-
-
-
 
 ## FacetAttributeDefinitionTypeDef
 
@@ -1316,17 +1226,18 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import FacetAttributeDefinitionTypeDef
 ```
 
-
 Required fields:
-- `Type`: `FacetAttributeType`
 
-
+- `Type`:
+  [FacetAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#facetattributetype)
 
 Optional fields:
-- `DefaultValue`: `"TypedAttributeValueTypeDef"`
-- `IsImmutable`: `bool`
-- `Rules`: `Dict[str, "RuleTypeDef"]`
 
+- `DefaultValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
+- `IsImmutable`: `bool`
+- `Rules`: `Dict`\[`str`,
+  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#ruletypedef)\]
 
 ## FacetAttributeReferenceTypeDef
 
@@ -1334,13 +1245,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import FacetAttributeReferenceTypeDef
 ```
 
-
 Required fields:
+
 - `TargetFacetName`: `str`
 - `TargetAttributeName`: `str`
-
-
-
 
 ## FacetAttributeTypeDef
 
@@ -1348,17 +1256,18 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import FacetAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `AttributeDefinition`: `"FacetAttributeDefinitionTypeDef"`
-- `AttributeReference`: `"FacetAttributeReferenceTypeDef"`
-- `RequiredBehavior`: `RequiredAttributeBehavior`
 
+- `AttributeDefinition`:
+  [FacetAttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributedefinitiontypedef)
+- `AttributeReference`:
+  [FacetAttributeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributereferencetypedef)
+- `RequiredBehavior`:
+  [RequiredAttributeBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#requiredattributebehavior)
 
 ## FacetAttributeUpdateTypeDef
 
@@ -1366,13 +1275,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import FacetAttributeUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attribute`: `"FacetAttributeTypeDef"`
-- `Action`: `UpdateActionType`
 
+- `Attribute`:
+  [FacetAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributetypedef)
+- `Action`:
+  [UpdateActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#updateactiontype)
 
 ## FacetTypeDef
 
@@ -1380,14 +1288,13 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import FacetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `ObjectType`: `ObjectType`
-- `FacetStyle`: `FacetStyle`
 
+- `Name`: `str`
+- `ObjectType`:
+  [ObjectType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#objecttype)
+- `FacetStyle`:
+  [FacetStyle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#facetstyle)
 
 ## GetAppliedSchemaVersionResponseTypeDef
 
@@ -1395,12 +1302,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetAppliedSchemaVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppliedSchemaArn`: `str`
 
+- `AppliedSchemaArn`: `str`
 
 ## GetDirectoryResponseTypeDef
 
@@ -1408,12 +1312,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetDirectoryResponseTypeDef
 ```
 
-
 Required fields:
-- `Directory`: `"DirectoryTypeDef"`
 
-
-
+- `Directory`:
+  [DirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#directorytypedef)
 
 ## GetFacetResponseTypeDef
 
@@ -1421,12 +1323,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import GetFacetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Facet`: `"FacetTypeDef"`
 
+- `Facet`:
+  [FacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facettypedef)
 
 ## GetLinkAttributesResponseTypeDef
 
@@ -1434,12 +1334,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetLinkAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
 
 ## GetObjectAttributesResponseTypeDef
 
@@ -1447,12 +1345,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
 
 ## GetObjectInformationResponseTypeDef
 
@@ -1460,13 +1356,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetObjectInformationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaFacets`: `List["SchemaFacetTypeDef"]`
-- `ObjectIdentifier`: `str`
 
+- `SchemaFacets`:
+  `List`\[[SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)\]
+- `ObjectIdentifier`: `str`
 
 ## GetSchemaAsJsonResponseTypeDef
 
@@ -1474,13 +1368,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetSchemaAsJsonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Document`: `str`
-
 
 ## GetTypedLinkFacetInformationResponseTypeDef
 
@@ -1488,12 +1379,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import GetTypedLinkFacetInformationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityAttributeOrder`: `List[str]`
 
+- `IdentityAttributeOrder`: `List`\[`str`\]
 
 ## IndexAttachmentTypeDef
 
@@ -1501,13 +1389,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import IndexAttachmentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexedAttributes`: `List["AttributeKeyAndValueTypeDef"]`
-- `ObjectIdentifier`: `str`
 
+- `IndexedAttributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+- `ObjectIdentifier`: `str`
 
 ## LinkAttributeActionTypeDef
 
@@ -1515,13 +1401,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import LinkAttributeActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeActionType`: `UpdateActionType`
-- `AttributeUpdateValue`: `"TypedAttributeValueTypeDef"`
 
+- `AttributeActionType`:
+  [UpdateActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#updateactiontype)
+- `AttributeUpdateValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
 
 ## LinkAttributeUpdateTypeDef
 
@@ -1529,13 +1414,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import LinkAttributeUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeKey`: `"AttributeKeyTypeDef"`
-- `AttributeAction`: `"LinkAttributeActionTypeDef"`
 
+- `AttributeKey`:
+  [AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)
+- `AttributeAction`:
+  [LinkAttributeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#linkattributeactiontypedef)
 
 ## ListAppliedSchemaArnsResponseTypeDef
 
@@ -1543,13 +1427,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListAppliedSchemaArnsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArns`: `List[str]`
-- `NextToken`: `str`
 
+- `SchemaArns`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListAttachedIndicesResponseTypeDef
 
@@ -1557,13 +1438,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListAttachedIndicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexAttachments`: `List["IndexAttachmentTypeDef"]`
-- `NextToken`: `str`
 
+- `IndexAttachments`:
+  `List`\[[IndexAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#indexattachmenttypedef)\]
+- `NextToken`: `str`
 
 ## ListDevelopmentSchemaArnsResponseTypeDef
 
@@ -1571,13 +1450,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListDevelopmentSchemaArnsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArns`: `List[str]`
-- `NextToken`: `str`
 
+- `SchemaArns`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListDirectoriesResponseTypeDef
 
@@ -1585,15 +1461,14 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListDirectoriesResponseTypeDef
 ```
 
-
 Required fields:
-- `Directories`: `List["DirectoryTypeDef"]`
 
-
+- `Directories`:
+  `List`\[[DirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#directorytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListFacetAttributesResponseTypeDef
 
@@ -1601,13 +1476,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListFacetAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["FacetAttributeTypeDef"]`
-- `NextToken`: `str`
 
+- `Attributes`:
+  `List`\[[FacetAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributetypedef)\]
+- `NextToken`: `str`
 
 ## ListFacetNamesResponseTypeDef
 
@@ -1615,13 +1488,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListFacetNamesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FacetNames`: `List[str]`
-- `NextToken`: `str`
 
+- `FacetNames`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListIncomingTypedLinksResponseTypeDef
 
@@ -1629,13 +1499,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListIncomingTypedLinksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LinkSpecifiers`: `List["TypedLinkSpecifierTypeDef"]`
-- `NextToken`: `str`
 
+- `LinkSpecifiers`:
+  `List`\[[TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)\]
+- `NextToken`: `str`
 
 ## ListIndexResponseTypeDef
 
@@ -1643,13 +1511,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListIndexResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IndexAttachments`: `List["IndexAttachmentTypeDef"]`
-- `NextToken`: `str`
 
+- `IndexAttachments`:
+  `List`\[[IndexAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#indexattachmenttypedef)\]
+- `NextToken`: `str`
 
 ## ListManagedSchemaArnsResponseTypeDef
 
@@ -1657,13 +1523,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListManagedSchemaArnsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArns`: `List[str]`
-- `NextToken`: `str`
 
+- `SchemaArns`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListObjectAttributesResponseTypeDef
 
@@ -1671,13 +1534,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["AttributeKeyAndValueTypeDef"]`
-- `NextToken`: `str`
 
+- `Attributes`:
+  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+- `NextToken`: `str`
 
 ## ListObjectChildrenResponseTypeDef
 
@@ -1685,13 +1546,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListObjectChildrenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Children`: `Dict[str, str]`
-- `NextToken`: `str`
 
+- `Children`: `Dict`\[`str`, `str`\]
+- `NextToken`: `str`
 
 ## ListObjectParentPathsResponseTypeDef
 
@@ -1699,13 +1557,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListObjectParentPathsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PathToObjectIdentifiersList`: `List["PathToObjectIdentifiersTypeDef"]`
-- `NextToken`: `str`
 
+- `PathToObjectIdentifiersList`:
+  `List`\[[PathToObjectIdentifiersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#pathtoobjectidentifierstypedef)\]
+- `NextToken`: `str`
 
 ## ListObjectParentsResponseTypeDef
 
@@ -1713,14 +1569,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListObjectParentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parents`: `Dict[str, str]`
-- `NextToken`: `str`
-- `ParentLinks`: `List["ObjectIdentifierAndLinkNameTupleTypeDef"]`
 
+- `Parents`: `Dict`\[`str`, `str`\]
+- `NextToken`: `str`
+- `ParentLinks`:
+  `List`\[[ObjectIdentifierAndLinkNameTupleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectidentifierandlinknametupletypedef)\]
 
 ## ListObjectPoliciesResponseTypeDef
 
@@ -1728,13 +1582,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListObjectPoliciesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttachedPolicyIds`: `List[str]`
-- `NextToken`: `str`
 
+- `AttachedPolicyIds`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListOutgoingTypedLinksResponseTypeDef
 
@@ -1742,13 +1593,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListOutgoingTypedLinksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TypedLinkSpecifiers`: `List["TypedLinkSpecifierTypeDef"]`
-- `NextToken`: `str`
 
+- `TypedLinkSpecifiers`:
+  `List`\[[TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)\]
+- `NextToken`: `str`
 
 ## ListPolicyAttachmentsResponseTypeDef
 
@@ -1756,13 +1605,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListPolicyAttachmentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifiers`: `List[str]`
-- `NextToken`: `str`
 
+- `ObjectIdentifiers`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListPublishedSchemaArnsResponseTypeDef
 
@@ -1770,13 +1616,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListPublishedSchemaArnsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArns`: `List[str]`
-- `NextToken`: `str`
 
+- `SchemaArns`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1784,13 +1627,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#tagtypedef)\]
+- `NextToken`: `str`
 
 ## ListTypedLinkFacetAttributesResponseTypeDef
 
@@ -1798,13 +1639,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListTypedLinkFacetAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Attributes`: `List["TypedLinkAttributeDefinitionTypeDef"]`
-- `NextToken`: `str`
 
+- `Attributes`:
+  `List`\[[TypedLinkAttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributedefinitiontypedef)\]
+- `NextToken`: `str`
 
 ## ListTypedLinkFacetNamesResponseTypeDef
 
@@ -1812,13 +1651,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ListTypedLinkFacetNamesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FacetNames`: `List[str]`
-- `NextToken`: `str`
 
+- `FacetNames`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## LookupPolicyResponseTypeDef
 
@@ -1826,13 +1662,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import LookupPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PolicyToPathList`: `List["PolicyToPathTypeDef"]`
-- `NextToken`: `str`
 
+- `PolicyToPathList`:
+  `List`\[[PolicyToPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#policytopathtypedef)\]
+- `NextToken`: `str`
 
 ## ObjectAttributeActionTypeDef
 
@@ -1840,13 +1674,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ObjectAttributeActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectAttributeActionType`: `UpdateActionType`
-- `ObjectAttributeUpdateValue`: `"TypedAttributeValueTypeDef"`
 
+- `ObjectAttributeActionType`:
+  [UpdateActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#updateactiontype)
+- `ObjectAttributeUpdateValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
 
 ## ObjectAttributeRangeTypeDef
 
@@ -1854,13 +1687,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ObjectAttributeRangeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeKey`: `"AttributeKeyTypeDef"`
-- `Range`: `"TypedAttributeValueRangeTypeDef"`
 
+- `AttributeKey`:
+  [AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)
+- `Range`:
+  [TypedAttributeValueRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluerangetypedef)
 
 ## ObjectAttributeUpdateTypeDef
 
@@ -1868,13 +1700,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ObjectAttributeUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectAttributeKey`: `"AttributeKeyTypeDef"`
-- `ObjectAttributeAction`: `"ObjectAttributeActionTypeDef"`
 
+- `ObjectAttributeKey`:
+  [AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)
+- `ObjectAttributeAction`:
+  [ObjectAttributeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributeactiontypedef)
 
 ## ObjectIdentifierAndLinkNameTupleTypeDef
 
@@ -1882,13 +1713,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ObjectIdentifierAndLinkNameTupleTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ObjectIdentifier`: `str`
 - `LinkName`: `str`
-
 
 ## ObjectReferenceTypeDef
 
@@ -1896,12 +1724,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import ObjectReferenceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Selector`: `str`
 
+- `Selector`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -1909,14 +1734,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PathToObjectIdentifiersTypeDef
 
@@ -1924,13 +1746,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PathToObjectIdentifiersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Path`: `str`
-- `ObjectIdentifiers`: `List[str]`
 
+- `Path`: `str`
+- `ObjectIdentifiers`: `List`\[`str`\]
 
 ## PolicyAttachmentTypeDef
 
@@ -1938,14 +1757,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PolicyAttachmentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyId`: `str`
 - `ObjectIdentifier`: `str`
 - `PolicyType`: `str`
-
 
 ## PolicyToPathTypeDef
 
@@ -1953,13 +1769,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PolicyToPathTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Path`: `str`
-- `Policies`: `List["PolicyAttachmentTypeDef"]`
 
+- `Path`: `str`
+- `Policies`:
+  `List`\[[PolicyAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#policyattachmenttypedef)\]
 
 ## PublishSchemaResponseTypeDef
 
@@ -1967,12 +1781,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PublishSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PublishedSchemaArn`: `str`
 
+- `PublishedSchemaArn`: `str`
 
 ## PutSchemaFromJsonResponseTypeDef
 
@@ -1980,12 +1791,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import PutSchemaFromJsonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## RuleTypeDef
 
@@ -1993,13 +1801,11 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import RuleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Type`: `RuleType`
-- `Parameters`: `Dict[str, str]`
 
+- `Type`:
+  [RuleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#ruletype)
+- `Parameters`: `Dict`\[`str`, `str`\]
 
 ## SchemaFacetTypeDef
 
@@ -2007,13 +1813,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import SchemaFacetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SchemaArn`: `str`
 - `FacetName`: `str`
-
 
 ## TagTypeDef
 
@@ -2021,13 +1824,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## TypedAttributeValueRangeTypeDef
 
@@ -2035,17 +1835,19 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TypedAttributeValueRangeTypeDef
 ```
 
-
 Required fields:
-- `StartMode`: `RangeMode`
-- `EndMode`: `RangeMode`
 
-
+- `StartMode`:
+  [RangeMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#rangemode)
+- `EndMode`:
+  [RangeMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#rangemode)
 
 Optional fields:
-- `StartValue`: `"TypedAttributeValueTypeDef"`
-- `EndValue`: `"TypedAttributeValueTypeDef"`
 
+- `StartValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
+- `EndValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
 
 ## TypedAttributeValueTypeDef
 
@@ -2053,16 +1855,13 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TypedAttributeValueTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StringValue`: `str`
-- `BinaryValue`: `Union[bytes, IO[bytes]]`
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `BooleanValue`: `bool`
 - `NumberValue`: `str`
 - `DatetimeValue`: `datetime`
-
 
 ## TypedLinkAttributeDefinitionTypeDef
 
@@ -2070,19 +1869,21 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkAttributeDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Type`: `FacetAttributeType`
-- `RequiredBehavior`: `RequiredAttributeBehavior`
-
-
+- `Type`:
+  [FacetAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#facetattributetype)
+- `RequiredBehavior`:
+  [RequiredAttributeBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#requiredattributebehavior)
 
 Optional fields:
-- `DefaultValue`: `"TypedAttributeValueTypeDef"`
-- `IsImmutable`: `bool`
-- `Rules`: `Dict[str, "RuleTypeDef"]`
 
+- `DefaultValue`:
+  [TypedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluetypedef)
+- `IsImmutable`: `bool`
+- `Rules`: `Dict`\[`str`,
+  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#ruletypedef)\]
 
 ## TypedLinkAttributeRangeTypeDef
 
@@ -2090,15 +1891,14 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkAttributeRangeTypeDef
 ```
 
-
 Required fields:
-- `Range`: `"TypedAttributeValueRangeTypeDef"`
 
-
+- `Range`:
+  [TypedAttributeValueRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedattributevaluerangetypedef)
 
 Optional fields:
-- `AttributeName`: `str`
 
+- `AttributeName`: `str`
 
 ## TypedLinkFacetAttributeUpdateTypeDef
 
@@ -2106,13 +1906,12 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkFacetAttributeUpdateTypeDef
 ```
 
-
 Required fields:
-- `Attribute`: `"TypedLinkAttributeDefinitionTypeDef"`
-- `Action`: `UpdateActionType`
 
-
-
+- `Attribute`:
+  [TypedLinkAttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributedefinitiontypedef)
+- `Action`:
+  [UpdateActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#updateactiontype)
 
 ## TypedLinkFacetTypeDef
 
@@ -2120,14 +1919,12 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkFacetTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Attributes`: `List["TypedLinkAttributeDefinitionTypeDef"]`
-- `IdentityAttributeOrder`: `List[str]`
-
-
-
+- `Attributes`:
+  `List`\[[TypedLinkAttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributedefinitiontypedef)\]
+- `IdentityAttributeOrder`: `List`\[`str`\]
 
 ## TypedLinkSchemaAndFacetNameTypeDef
 
@@ -2135,13 +1932,10 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkSchemaAndFacetNameTypeDef
 ```
 
-
 Required fields:
+
 - `SchemaArn`: `str`
 - `TypedLinkName`: `str`
-
-
-
 
 ## TypedLinkSpecifierTypeDef
 
@@ -2149,15 +1943,16 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import TypedLinkSpecifierTypeDef
 ```
 
-
 Required fields:
-- `TypedLinkFacet`: `"TypedLinkSchemaAndFacetNameTypeDef"`
-- `SourceObjectReference`: `"ObjectReferenceTypeDef"`
-- `TargetObjectReference`: `"ObjectReferenceTypeDef"`
-- `IdentityAttributeValues`: `List["AttributeNameAndValueTypeDef"]`
 
-
-
+- `TypedLinkFacet`:
+  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
+- `SourceObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `TargetObjectReference`:
+  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+- `IdentityAttributeValues`:
+  `List`\[[AttributeNameAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributenameandvaluetypedef)\]
 
 ## UpdateObjectAttributesResponseTypeDef
 
@@ -2165,12 +1960,9 @@ Required fields:
 from mypy_boto3_clouddirectory.type_defs import UpdateObjectAttributesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ObjectIdentifier`: `str`
 
+- `ObjectIdentifier`: `str`
 
 ## UpdateSchemaResponseTypeDef
 
@@ -2178,12 +1970,9 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import UpdateSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaArn`: `str`
 
+- `SchemaArn`: `str`
 
 ## UpgradeAppliedSchemaResponseTypeDef
 
@@ -2191,13 +1980,10 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import UpgradeAppliedSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UpgradedSchemaArn`: `str`
 - `DirectoryArn`: `str`
-
 
 ## UpgradePublishedSchemaResponseTypeDef
 
@@ -2205,9 +1991,6 @@ Optional fields:
 from mypy_boto3_clouddirectory.type_defs import UpgradePublishedSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `UpgradedSchemaArn`: `str`
 
+- `UpgradedSchemaArn`: `str`

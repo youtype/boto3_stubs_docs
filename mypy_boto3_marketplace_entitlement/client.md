@@ -1,9 +1,12 @@
 # MarketplaceEntitlementServiceClient for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > MarketplaceEntitlementServiceClient
+> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) >
+> MarketplaceEntitlementServiceClient
 
-Auto-generated documentation for [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
-type annotations stubs module [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+Auto-generated documentation for
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+type annotations stubs module
+[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [MarketplaceEntitlementServiceClient for boto3 MarketplaceEntitlementService module](#marketplaceentitlementserviceclient-for-boto3-marketplaceentitlementservice-module)
   - [MarketplaceEntitlementServiceClient](#marketplaceentitlementserviceclient)
@@ -27,12 +30,13 @@ def get_marketplace-entitlement_client() -> MarketplaceEntitlementServiceClient:
     return boto3.client("marketplace-entitlement")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client)
+Boto3 documentation:
+[MarketplaceEntitlementService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_marketplace_entitlement.client import Exceptions
@@ -41,7 +45,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -49,64 +52,63 @@ Exceptions:
 - `Exceptions.InvalidParameterException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("marketplace-entitlement").can_paginate` method.
+Type annotations for `boto3.client("marketplace-entitlement").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.can_paginate]
+Boto3 documentation:
+[MarketplaceEntitlementService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("marketplace-entitlement").generate_presigned_url` method.
+Type annotations for
+`boto3.client("marketplace-entitlement").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.generate_presigned_url]
+Boto3 documentation:
+[MarketplaceEntitlementService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_entitlements
 
-Type annotations for `boto3.client("marketplace-entitlement").get_entitlements` method.
+Type annotations for `boto3.client("marketplace-entitlement").get_entitlements`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements]
+Boto3 documentation:
+[MarketplaceEntitlementService.Client.get_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements)
 
-```python
-def get_entitlements(
-    self,
-    ProductCode: str,
-    Filter: Dict[GetEntitlementFilterName, List[str]] = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> GetEntitlementsResultTypeDef:
-    pass
-```
+Arguments:
 
+- `ProductCode`: `str` *(required)*
+- `Filter`:
+  `Dict`\[[GetEntitlementFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/literals.html#getentitlementfiltername),
+  `List`\[`str`\]\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
 
+Returns
+[GetEntitlementsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#getentitlementsresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("marketplace-entitlement").get_paginator` method with overloads.
+Type annotations for `boto3.client("marketplace-entitlement").get_paginator`
+method with overloads.
 
-- `client.get_paginator("get_entitlements")` -> [GetEntitlementsPaginator](./paginators.md#getentitlementspaginator)
-
-
+- `client.get_paginator("get_entitlements")` ->
+  [GetEntitlementsPaginator](./paginators.md#getentitlementspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DirectoryService](./README.md) > Structures
 
-Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+Auto-generated documentation for
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+type annotations stubs module
+[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Typed dictionaries for boto3 DirectoryService module](#typed-dictionaries-for-boto3-directoryservice-module)
   - [AcceptSharedDirectoryResultTypeDef](#acceptshareddirectoryresulttypedef)
@@ -79,12 +81,10 @@ type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto
 from mypy_boto3_ds.type_defs import AcceptSharedDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedDirectory`: `"SharedDirectoryTypeDef"`
 
+- `SharedDirectory`:
+  [SharedDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#shareddirectorytypedef)
 
 ## AttributeTypeDef
 
@@ -92,13 +92,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import AttributeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Value`: `str`
-
 
 ## CertificateInfoTypeDef
 
@@ -106,16 +103,15 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CertificateInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CertificateId`: `str`
 - `CommonName`: `str`
-- `State`: `CertificateState`
+- `State`:
+  [CertificateState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatestate)
 - `ExpiryDateTime`: `datetime`
-- `Type`: `CertificateType`
-
+- `Type`:
+  [CertificateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatetype)
 
 ## CertificateTypeDef
 
@@ -123,19 +119,19 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CertificateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CertificateId`: `str`
-- `State`: `CertificateState`
+- `State`:
+  [CertificateState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatestate)
 - `StateReason`: `str`
 - `CommonName`: `str`
 - `RegisteredDateTime`: `datetime`
 - `ExpiryDateTime`: `datetime`
-- `Type`: `CertificateType`
-- `ClientCertAuthSettings`: `"ClientCertAuthSettingsTypeDef"`
-
+- `Type`:
+  [CertificateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatetype)
+- `ClientCertAuthSettings`:
+  [ClientCertAuthSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#clientcertauthsettingstypedef)
 
 ## ClientCertAuthSettingsTypeDef
 
@@ -143,12 +139,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ClientCertAuthSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OCSPUrl`: `str`
 
+- `OCSPUrl`: `str`
 
 ## ComputerTypeDef
 
@@ -156,14 +149,12 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ComputerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ComputerId`: `str`
 - `ComputerName`: `str`
-- `ComputerAttributes`: `List["AttributeTypeDef"]`
-
+- `ComputerAttributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#attributetypedef)\]
 
 ## ConditionalForwarderTypeDef
 
@@ -171,14 +162,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ConditionalForwarderTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RemoteDomainName`: `str`
-- `DnsIpAddrs`: `List[str]`
-- `ReplicationScope`: `Literal['Domain']`
 
+- `RemoteDomainName`: `str`
+- `DnsIpAddrs`: `List`\[`str`\]
+- `ReplicationScope`: `Literal['Domain']`
 
 ## ConnectDirectoryResultTypeDef
 
@@ -186,12 +174,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ConnectDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryId`: `str`
 
+- `DirectoryId`: `str`
 
 ## CreateAliasResultTypeDef
 
@@ -199,13 +184,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateAliasResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `Alias`: `str`
-
 
 ## CreateComputerResultTypeDef
 
@@ -213,12 +195,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateComputerResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Computer`: `"ComputerTypeDef"`
 
+- `Computer`:
+  [ComputerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#computertypedef)
 
 ## CreateDirectoryResultTypeDef
 
@@ -226,12 +206,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryId`: `str`
 
+- `DirectoryId`: `str`
 
 ## CreateMicrosoftADResultTypeDef
 
@@ -239,12 +216,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateMicrosoftADResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryId`: `str`
 
+- `DirectoryId`: `str`
 
 ## CreateSnapshotResultTypeDef
 
@@ -252,12 +226,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SnapshotId`: `str`
 
+- `SnapshotId`: `str`
 
 ## CreateTrustResultTypeDef
 
@@ -265,12 +236,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import CreateTrustResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrustId`: `str`
 
+- `TrustId`: `str`
 
 ## DeleteDirectoryResultTypeDef
 
@@ -278,12 +246,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DeleteDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryId`: `str`
 
+- `DirectoryId`: `str`
 
 ## DeleteSnapshotResultTypeDef
 
@@ -291,12 +256,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DeleteSnapshotResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SnapshotId`: `str`
 
+- `SnapshotId`: `str`
 
 ## DeleteTrustResultTypeDef
 
@@ -304,12 +266,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DeleteTrustResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrustId`: `str`
 
+- `TrustId`: `str`
 
 ## DescribeCertificateResultTypeDef
 
@@ -317,12 +276,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeCertificateResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Certificate`: `"CertificateTypeDef"`
 
+- `Certificate`:
+  [CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#certificatetypedef)
 
 ## DescribeConditionalForwardersResultTypeDef
 
@@ -330,12 +287,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeConditionalForwardersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConditionalForwarders`: `List["ConditionalForwarderTypeDef"]`
 
+- `ConditionalForwarders`:
+  `List`\[[ConditionalForwarderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#conditionalforwardertypedef)\]
 
 ## DescribeDirectoriesResultTypeDef
 
@@ -343,13 +298,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeDirectoriesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryDescriptions`: `List["DirectoryDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `DirectoryDescriptions`:
+  `List`\[[DirectoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directorydescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeDomainControllersResultTypeDef
 
@@ -357,13 +310,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeDomainControllersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DomainControllers`: `List["DomainControllerTypeDef"]`
-- `NextToken`: `str`
 
+- `DomainControllers`:
+  `List`\[[DomainControllerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#domaincontrollertypedef)\]
+- `NextToken`: `str`
 
 ## DescribeEventTopicsResultTypeDef
 
@@ -371,12 +322,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeEventTopicsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventTopics`: `List["EventTopicTypeDef"]`
 
+- `EventTopics`:
+  `List`\[[EventTopicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#eventtopictypedef)\]
 
 ## DescribeLDAPSSettingsResultTypeDef
 
@@ -384,13 +333,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LDAPSSettingsInfo`: `List["LDAPSSettingInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `LDAPSSettingsInfo`:
+  `List`\[[LDAPSSettingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#ldapssettinginfotypedef)\]
+- `NextToken`: `str`
 
 ## DescribeRegionsResultTypeDef
 
@@ -398,13 +345,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeRegionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RegionsDescription`: `List["RegionDescriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `RegionsDescription`:
+  `List`\[[RegionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#regiondescriptiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeSharedDirectoriesResultTypeDef
 
@@ -412,13 +357,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedDirectories`: `List["SharedDirectoryTypeDef"]`
-- `NextToken`: `str`
 
+- `SharedDirectories`:
+  `List`\[[SharedDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#shareddirectorytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeSnapshotsResultTypeDef
 
@@ -426,13 +369,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeSnapshotsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Snapshots`: `List["SnapshotTypeDef"]`
-- `NextToken`: `str`
 
+- `Snapshots`:
+  `List`\[[SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#snapshottypedef)\]
+- `NextToken`: `str`
 
 ## DescribeTrustsResultTypeDef
 
@@ -440,13 +381,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DescribeTrustsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Trusts`: `List["TrustTypeDef"]`
-- `NextToken`: `str`
 
+- `Trusts`:
+  `List`\[[TrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#trusttypedef)\]
+- `NextToken`: `str`
 
 ## DirectoryConnectSettingsDescriptionTypeDef
 
@@ -454,17 +393,14 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DirectoryConnectSettingsDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
 - `CustomerUserName`: `str`
 - `SecurityGroupId`: `str`
-- `AvailabilityZones`: `List[str]`
-- `ConnectIps`: `List[str]`
-
+- `AvailabilityZones`: `List`\[`str`\]
+- `ConnectIps`: `List`\[`str`\]
 
 ## DirectoryConnectSettingsTypeDef
 
@@ -472,15 +408,12 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DirectoryConnectSettingsTypeDef
 ```
 
-
 Required fields:
+
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `CustomerDnsIps`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
+- `CustomerDnsIps`: `List`\[`str`\]
 - `CustomerUserName`: `str`
-
-
-
 
 ## DirectoryDescriptionTypeDef
 
@@ -488,36 +421,45 @@ Required fields:
 from mypy_boto3_ds.type_defs import DirectoryDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `Name`: `str`
 - `ShortName`: `str`
-- `Size`: `DirectorySize`
-- `Edition`: `DirectoryEdition`
+- `Size`:
+  [DirectorySize](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorysize)
+- `Edition`:
+  [DirectoryEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directoryedition)
 - `Alias`: `str`
 - `AccessUrl`: `str`
 - `Description`: `str`
-- `DnsIpAddrs`: `List[str]`
-- `Stage`: `DirectoryStage`
-- `ShareStatus`: `ShareStatus`
-- `ShareMethod`: `ShareMethod`
+- `DnsIpAddrs`: `List`\[`str`\]
+- `Stage`:
+  [DirectoryStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorystage)
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharestatus)
+- `ShareMethod`:
+  [ShareMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharemethod)
 - `ShareNotes`: `str`
 - `LaunchTime`: `datetime`
 - `StageLastUpdatedDateTime`: `datetime`
-- `Type`: `DirectoryType`
-- `VpcSettings`: `"DirectoryVpcSettingsDescriptionTypeDef"`
-- `ConnectSettings`: `"DirectoryConnectSettingsDescriptionTypeDef"`
-- `RadiusSettings`: `"RadiusSettingsTypeDef"`
-- `RadiusStatus`: `RadiusStatus`
+- `Type`:
+  [DirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorytype)
+- `VpcSettings`:
+  [DirectoryVpcSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingsdescriptiontypedef)
+- `ConnectSettings`:
+  [DirectoryConnectSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryconnectsettingsdescriptiontypedef)
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+- `RadiusStatus`:
+  [RadiusStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#radiusstatus)
 - `StageReason`: `str`
 - `SsoEnabled`: `bool`
 - `DesiredNumberOfDomainControllers`: `int`
-- `OwnerDirectoryDescription`: `"OwnerDirectoryDescriptionTypeDef"`
-- `RegionsInfo`: `"RegionsInfoTypeDef"`
-
+- `OwnerDirectoryDescription`:
+  [OwnerDirectoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#ownerdirectorydescriptiontypedef)
+- `RegionsInfo`:
+  [RegionsInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#regionsinfotypedef)
 
 ## DirectoryLimitsTypeDef
 
@@ -525,10 +467,8 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DirectoryLimitsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CloudOnlyDirectoriesLimit`: `int`
 - `CloudOnlyDirectoriesCurrentCount`: `int`
 - `CloudOnlyDirectoriesLimitReached`: `bool`
@@ -539,22 +479,18 @@ Optional fields:
 - `ConnectedDirectoriesCurrentCount`: `int`
 - `ConnectedDirectoriesLimitReached`: `bool`
 
-
 ## DirectoryVpcSettingsDescriptionTypeDef
 
 ```python
 from mypy_boto3_ds.type_defs import DirectoryVpcSettingsDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `SecurityGroupId`: `str`
-- `AvailabilityZones`: `List[str]`
 
+- `VpcId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupId`: `str`
+- `AvailabilityZones`: `List`\[`str`\]
 
 ## DirectoryVpcSettingsTypeDef
 
@@ -562,13 +498,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import DirectoryVpcSettingsTypeDef
 ```
 
-
 Required fields:
+
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-
-
-
+- `SubnetIds`: `List`\[`str`\]
 
 ## DomainControllerTypeDef
 
@@ -576,21 +509,19 @@ Required fields:
 from mypy_boto3_ds.type_defs import DomainControllerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `DomainControllerId`: `str`
 - `DnsIpAddr`: `str`
 - `VpcId`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
-- `Status`: `DomainControllerStatus`
+- `Status`:
+  [DomainControllerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#domaincontrollerstatus)
 - `StatusReason`: `str`
 - `LaunchTime`: `datetime`
 - `StatusLastUpdatedDateTime`: `datetime`
-
 
 ## EventTopicTypeDef
 
@@ -598,16 +529,14 @@ Optional fields:
 from mypy_boto3_ds.type_defs import EventTopicTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `TopicName`: `str`
 - `TopicArn`: `str`
 - `CreatedDateTime`: `datetime`
-- `Status`: `TopicStatus`
-
+- `Status`:
+  [TopicStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#topicstatus)
 
 ## GetDirectoryLimitsResultTypeDef
 
@@ -615,12 +544,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import GetDirectoryLimitsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DirectoryLimits`: `"DirectoryLimitsTypeDef"`
 
+- `DirectoryLimits`:
+  [DirectoryLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directorylimitstypedef)
 
 ## GetSnapshotLimitsResultTypeDef
 
@@ -628,12 +555,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SnapshotLimits`: `"SnapshotLimitsTypeDef"`
 
+- `SnapshotLimits`:
+  [SnapshotLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#snapshotlimitstypedef)
 
 ## IpRouteInfoTypeDef
 
@@ -641,17 +566,15 @@ Optional fields:
 from mypy_boto3_ds.type_defs import IpRouteInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `CidrIp`: `str`
-- `IpRouteStatusMsg`: `IpRouteStatusMsg`
+- `IpRouteStatusMsg`:
+  [IpRouteStatusMsg](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#iproutestatusmsg)
 - `AddedDateTime`: `datetime`
 - `IpRouteStatusReason`: `str`
 - `Description`: `str`
-
 
 ## IpRouteTypeDef
 
@@ -659,13 +582,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import IpRouteTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CidrIp`: `str`
 - `Description`: `str`
-
 
 ## LDAPSSettingInfoTypeDef
 
@@ -673,14 +593,12 @@ Optional fields:
 from mypy_boto3_ds.type_defs import LDAPSSettingInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LDAPSStatus`: `LDAPSStatus`
+
+- `LDAPSStatus`:
+  [LDAPSStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#ldapsstatus)
 - `LDAPSStatusReason`: `str`
 - `LastUpdatedDateTime`: `datetime`
-
 
 ## ListCertificatesResultTypeDef
 
@@ -688,13 +606,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ListCertificatesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `CertificatesInfo`: `List["CertificateInfoTypeDef"]`
 
+- `NextToken`: `str`
+- `CertificatesInfo`:
+  `List`\[[CertificateInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#certificateinfotypedef)\]
 
 ## ListIpRoutesResultTypeDef
 
@@ -702,13 +618,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ListIpRoutesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IpRoutesInfo`: `List["IpRouteInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `IpRoutesInfo`:
+  `List`\[[IpRouteInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#iprouteinfotypedef)\]
+- `NextToken`: `str`
 
 ## ListLogSubscriptionsResultTypeDef
 
@@ -716,13 +630,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ListLogSubscriptionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LogSubscriptions`: `List["LogSubscriptionTypeDef"]`
-- `NextToken`: `str`
 
+- `LogSubscriptions`:
+  `List`\[[LogSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#logsubscriptiontypedef)\]
+- `NextToken`: `str`
 
 ## ListSchemaExtensionsResultTypeDef
 
@@ -730,13 +642,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ListSchemaExtensionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaExtensionsInfo`: `List["SchemaExtensionInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `SchemaExtensionsInfo`:
+  `List`\[[SchemaExtensionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#schemaextensioninfotypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResultTypeDef
 
@@ -744,13 +654,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+- `NextToken`: `str`
 
 ## LogSubscriptionTypeDef
 
@@ -758,14 +666,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import LogSubscriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `LogGroupName`: `str`
 - `SubscriptionCreatedDateTime`: `datetime`
-
 
 ## OwnerDirectoryDescriptionTypeDef
 
@@ -773,17 +678,17 @@ Optional fields:
 from mypy_boto3_ds.type_defs import OwnerDirectoryDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `AccountId`: `str`
-- `DnsIpAddrs`: `List[str]`
-- `VpcSettings`: `"DirectoryVpcSettingsDescriptionTypeDef"`
-- `RadiusSettings`: `"RadiusSettingsTypeDef"`
-- `RadiusStatus`: `RadiusStatus`
-
+- `DnsIpAddrs`: `List`\[`str`\]
+- `VpcSettings`:
+  [DirectoryVpcSettingsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingsdescriptiontypedef)
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+- `RadiusStatus`:
+  [RadiusStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#radiusstatus)
 
 ## PaginatorConfigTypeDef
 
@@ -791,14 +696,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## RadiusSettingsTypeDef
 
@@ -806,19 +708,17 @@ Optional fields:
 from mypy_boto3_ds.type_defs import RadiusSettingsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RadiusServers`: `List[str]`
+
+- `RadiusServers`: `List`\[`str`\]
 - `RadiusPort`: `int`
 - `RadiusTimeout`: `int`
 - `RadiusRetries`: `int`
 - `SharedSecret`: `str`
-- `AuthenticationProtocol`: `RadiusAuthenticationProtocol`
+- `AuthenticationProtocol`:
+  [RadiusAuthenticationProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#radiusauthenticationprotocol)
 - `DisplayLabel`: `str`
 - `UseSameUsername`: `bool`
-
 
 ## RegionDescriptionTypeDef
 
@@ -826,20 +726,20 @@ Optional fields:
 from mypy_boto3_ds.type_defs import RegionDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `RegionName`: `str`
-- `RegionType`: `RegionType`
-- `Status`: `DirectoryStage`
-- `VpcSettings`: `"DirectoryVpcSettingsTypeDef"`
+- `RegionType`:
+  [RegionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#regiontype)
+- `Status`:
+  [DirectoryStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorystage)
+- `VpcSettings`:
+  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
 - `DesiredNumberOfDomainControllers`: `int`
 - `LaunchTime`: `datetime`
 - `StatusLastUpdatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
-
 
 ## RegionsInfoTypeDef
 
@@ -847,13 +747,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import RegionsInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PrimaryRegion`: `str`
-- `AdditionalRegions`: `List[str]`
 
+- `PrimaryRegion`: `str`
+- `AdditionalRegions`: `List`\[`str`\]
 
 ## RegisterCertificateResultTypeDef
 
@@ -861,12 +758,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import RegisterCertificateResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CertificateId`: `str`
 
+- `CertificateId`: `str`
 
 ## RejectSharedDirectoryResultTypeDef
 
@@ -874,12 +768,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import RejectSharedDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedDirectoryId`: `str`
 
+- `SharedDirectoryId`: `str`
 
 ## SchemaExtensionInfoTypeDef
 
@@ -887,18 +778,16 @@ Optional fields:
 from mypy_boto3_ds.type_defs import SchemaExtensionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `SchemaExtensionId`: `str`
 - `Description`: `str`
-- `SchemaExtensionStatus`: `SchemaExtensionStatus`
+- `SchemaExtensionStatus`:
+  [SchemaExtensionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#schemaextensionstatus)
 - `SchemaExtensionStatusReason`: `str`
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
-
 
 ## ShareDirectoryResultTypeDef
 
@@ -906,12 +795,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ShareDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedDirectoryId`: `str`
 
+- `SharedDirectoryId`: `str`
 
 ## ShareTargetTypeDef
 
@@ -919,13 +805,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import ShareTargetTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `Type`: `Literal['ACCOUNT']`
-
-
-
 
 ## SharedDirectoryTypeDef
 
@@ -933,20 +816,19 @@ Required fields:
 from mypy_boto3_ds.type_defs import SharedDirectoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OwnerAccountId`: `str`
 - `OwnerDirectoryId`: `str`
-- `ShareMethod`: `ShareMethod`
+- `ShareMethod`:
+  [ShareMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharemethod)
 - `SharedAccountId`: `str`
 - `SharedDirectoryId`: `str`
-- `ShareStatus`: `ShareStatus`
+- `ShareStatus`:
+  [ShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharestatus)
 - `ShareNotes`: `str`
 - `CreatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
-
 
 ## SnapshotLimitsTypeDef
 
@@ -954,14 +836,11 @@ Optional fields:
 from mypy_boto3_ds.type_defs import SnapshotLimitsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ManualSnapshotsLimit`: `int`
 - `ManualSnapshotsCurrentCount`: `int`
 - `ManualSnapshotsLimitReached`: `bool`
-
 
 ## SnapshotTypeDef
 
@@ -969,17 +848,16 @@ Optional fields:
 from mypy_boto3_ds.type_defs import SnapshotTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `SnapshotId`: `str`
-- `Type`: `SnapshotType`
+- `Type`:
+  [SnapshotType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#snapshottype)
 - `Name`: `str`
-- `Status`: `SnapshotStatus`
+- `Status`:
+  [SnapshotStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#snapshotstatus)
 - `StartTime`: `datetime`
-
 
 ## StartSchemaExtensionResultTypeDef
 
@@ -987,12 +865,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import StartSchemaExtensionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaExtensionId`: `str`
 
+- `SchemaExtensionId`: `str`
 
 ## TagTypeDef
 
@@ -1000,13 +875,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TrustTypeDef
 
@@ -1014,22 +886,23 @@ Required fields:
 from mypy_boto3_ds.type_defs import TrustTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DirectoryId`: `str`
 - `TrustId`: `str`
 - `RemoteDomainName`: `str`
-- `TrustType`: `TrustType`
-- `TrustDirection`: `TrustDirection`
-- `TrustState`: `TrustState`
+- `TrustType`:
+  [TrustType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trusttype)
+- `TrustDirection`:
+  [TrustDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trustdirection)
+- `TrustState`:
+  [TrustState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#truststate)
 - `CreatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
 - `StateLastUpdatedDateTime`: `datetime`
 - `TrustStateReason`: `str`
-- `SelectiveAuth`: `SelectiveAuth`
-
+- `SelectiveAuth`:
+  [SelectiveAuth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#selectiveauth)
 
 ## UnshareDirectoryResultTypeDef
 
@@ -1037,12 +910,9 @@ Optional fields:
 from mypy_boto3_ds.type_defs import UnshareDirectoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SharedDirectoryId`: `str`
 
+- `SharedDirectoryId`: `str`
 
 ## UnshareTargetTypeDef
 
@@ -1050,13 +920,10 @@ Optional fields:
 from mypy_boto3_ds.type_defs import UnshareTargetTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `Type`: `Literal['ACCOUNT']`
-
-
-
 
 ## UpdateTrustResultTypeDef
 
@@ -1064,13 +931,10 @@ Required fields:
 from mypy_boto3_ds.type_defs import UpdateTrustResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RequestId`: `str`
 - `TrustId`: `str`
-
 
 ## VerifyTrustResultTypeDef
 
@@ -1078,9 +942,6 @@ Optional fields:
 from mypy_boto3_ds.type_defs import VerifyTrustResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TrustId`: `str`
 
+- `TrustId`: `str`

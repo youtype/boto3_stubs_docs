@@ -1,9 +1,12 @@
 # Typed dictionaries for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > Structures
+> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) >
+> Structures
 
-Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
-type annotations stubs module [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
+Auto-generated documentation for
+[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+type annotations stubs module
+[mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [Typed dictionaries for boto3 KinesisVideoSignalingChannels module](#typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module)
   - [GetIceServerConfigResponseTypeDef](#geticeserverconfigresponsetypedef)
@@ -16,12 +19,10 @@ type annotations stubs module [mypy_boto3_kinesis_video_signaling](https://pypi.
 from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IceServerList`: `List["IceServerTypeDef"]`
 
+- `IceServerList`:
+  `List`\[[IceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#iceservertypedef)\]
 
 ## IceServerTypeDef
 
@@ -29,15 +30,12 @@ Optional fields:
 from mypy_boto3_kinesis_video_signaling.type_defs import IceServerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Uris`: `List[str]`
+
+- `Uris`: `List`\[`str`\]
 - `Username`: `str`
 - `Password`: `str`
 - `Ttl`: `int`
-
 
 ## SendAlexaOfferToMasterResponseTypeDef
 
@@ -45,9 +43,6 @@ Optional fields:
 from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Answer`: `str`
 
+- `Answer`: `str`

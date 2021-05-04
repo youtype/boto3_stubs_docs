@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pricing](./README.md) > Structures
 
-Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+Auto-generated documentation for
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+type annotations stubs module
+[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Typed dictionaries for boto3 Pricing module](#typed-dictionaries-for-boto3-pricing-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
@@ -20,12 +22,9 @@ type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy
 from mypy_boto3_pricing.type_defs import AttributeValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## DescribeServicesResponseTypeDef
 
@@ -33,14 +32,12 @@ Optional fields:
 from mypy_boto3_pricing.type_defs import DescribeServicesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Services`: `List["ServiceTypeDef"]`
+
+- `Services`:
+  `List`\[[ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#servicetypedef)\]
 - `FormatVersion`: `str`
 - `NextToken`: `str`
-
 
 ## FilterTypeDef
 
@@ -48,14 +45,11 @@ Optional fields:
 from mypy_boto3_pricing.type_defs import FilterTypeDef
 ```
 
-
 Required fields:
+
 - `Type`: `Literal['TERM_MATCH']`
 - `Field`: `str`
 - `Value`: `str`
-
-
-
 
 ## GetAttributeValuesResponseTypeDef
 
@@ -63,13 +57,11 @@ Required fields:
 from mypy_boto3_pricing.type_defs import GetAttributeValuesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AttributeValues`: `List["AttributeValueTypeDef"]`
-- `NextToken`: `str`
 
+- `AttributeValues`:
+  `List`\[[AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#attributevaluetypedef)\]
+- `NextToken`: `str`
 
 ## GetProductsResponseTypeDef
 
@@ -77,14 +69,11 @@ Optional fields:
 from mypy_boto3_pricing.type_defs import GetProductsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FormatVersion`: `str`
-- `PriceList`: `List[str]`
-- `NextToken`: `str`
 
+- `FormatVersion`: `str`
+- `PriceList`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -92,14 +81,11 @@ Optional fields:
 from mypy_boto3_pricing.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ServiceTypeDef
 
@@ -107,10 +93,7 @@ Optional fields:
 from mypy_boto3_pricing.type_defs import ServiceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceCode`: `str`
-- `AttributeNames`: `List[str]`
 
+- `ServiceCode`: `str`
+- `AttributeNames`: `List`\[`str`\]

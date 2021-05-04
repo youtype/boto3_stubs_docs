@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CognitoIdentityProvider
 
-Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+Auto-generated documentation for
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+type annotations stubs module
+[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ```bash
 pip install mypy-boto3-cognito-idp
@@ -19,7 +21,8 @@ pip install mypy-boto3-cognito-idp
 
 ## CognitoIdentityProviderClient
 
-Type annotations for  `boto3.client("cognito-idp")` as [CognitoIdentityProviderClient](./client.md)
+Type annotations for `boto3.client("cognito-idp")` as
+[CognitoIdentityProviderClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 ```
 
-
 CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_custom_attributes](./client.md#add-custom-attributes)
 - [admin_add_user_to_group](./client.md#admin-add-user-to-group)
 - [admin_confirm_sign_up](./client.md#admin-confirm-sign-up)
@@ -137,10 +138,8 @@ CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
 - [verify_software_token](./client.md#verify-software-token)
 - [verify_user_attribute](./client.md#verify-user-attribute)
 
-
-
-
 ### Exceptions
+
 - [AliasExistsException](./client.md#aliasexistsexception)
 - [ClientError](./client.md#clienterror)
 - [CodeDeliveryFailureException](./client.md#codedeliveryfailureexception)
@@ -180,14 +179,10 @@ CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
 - [UserPoolTaggingException](./client.md#userpooltaggingexception)
 - [UsernameExistsException](./client.md#usernameexistsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cognito-idp").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cognito-idp").get_paginator("...")`.
 
 Can be used directly:
 
@@ -204,11 +199,6 @@ from mypy_boto3_cognito_idp.paginators import AdminListGroupsForUserPaginator, .
 - [ListUserPoolsPaginator](./paginators.md#listuserpoolspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -266,13 +256,10 @@ from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionType, ...
 - [VerifiedAttributeType](./literals.md#verifiedattributetype)
 - [VerifySoftwareTokenResponseType](./literals.md#verifysoftwaretokenresponsetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

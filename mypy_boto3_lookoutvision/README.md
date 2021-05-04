@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LookoutforVision
 
-Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+Auto-generated documentation for
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+type annotations stubs module
+[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ```bash
 pip install mypy-boto3-lookoutvision
@@ -19,7 +21,8 @@ pip install mypy-boto3-lookoutvision
 
 ## LookoutforVisionClient
 
-Type annotations for  `boto3.client("lookoutvision")` as [LookoutforVisionClient](./client.md)
+Type annotations for `boto3.client("lookoutvision")` as
+[LookoutforVisionClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 ```
 
-
 LookoutforVisionClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_dataset](./client.md#create-dataset)
 - [create_model](./client.md#create-model)
@@ -56,10 +57,8 @@ LookoutforVisionClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_dataset_entries](./client.md#update-dataset-entries)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -69,14 +68,10 @@ LookoutforVisionClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("lookoutvision").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("lookoutvision").get_paginator("...")`.
 
 Can be used directly:
 
@@ -87,11 +82,6 @@ from mypy_boto3_lookoutvision.paginators import ListDatasetEntriesPaginator, ...
 - [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
 - [ListModelsPaginator](./paginators.md#listmodelspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_lookoutvision.literals import DatasetStatus, ...
 - [ModelHostingStatus](./literals.md#modelhostingstatus)
 - [ModelStatus](./literals.md#modelstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

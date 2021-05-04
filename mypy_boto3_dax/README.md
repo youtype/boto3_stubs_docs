@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DAX
 
-Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+Auto-generated documentation for
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+type annotations stubs module
+[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ```bash
 pip install mypy-boto3-dax
@@ -19,7 +21,7 @@ pip install mypy-boto3-dax
 
 ## DAXClient
 
-Type annotations for  `boto3.client("dax")` as [DAXClient](./client.md)
+Type annotations for `boto3.client("dax")` as [DAXClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_dax.client import DAXClient
 ```
 
-
 DAXClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_cluster](./client.md#create-cluster)
 - [create_parameter_group](./client.md#create-parameter-group)
@@ -58,10 +58,8 @@ DAXClient [exceptions](./client.md#exceptions)
 - [update_parameter_group](./client.md#update-parameter-group)
 - [update_subnet_group](./client.md#update-subnet-group)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ClusterAlreadyExistsFault](./client.md#clusteralreadyexistsfault)
 - [ClusterNotFoundFault](./client.md#clusternotfoundfault)
@@ -90,14 +88,10 @@ DAXClient [exceptions](./client.md#exceptions)
 - [TagNotFoundFault](./client.md#tagnotfoundfault)
 - [TagQuotaPerResourceExceeded](./client.md#tagquotaperresourceexceeded)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("dax").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("dax").get_paginator("...")`.
 
 Can be used directly:
 
@@ -112,11 +106,6 @@ from mypy_boto3_dax.paginators import DescribeClustersPaginator, ...
 - [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
 - [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -141,13 +130,10 @@ from mypy_boto3_dax.literals import ChangeType, ...
 - [SSEStatus](./literals.md#ssestatus)
 - [SourceType](./literals.md#sourcetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

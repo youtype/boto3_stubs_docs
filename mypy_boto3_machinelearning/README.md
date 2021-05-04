@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MachineLearning
 
-Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+Auto-generated documentation for
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+type annotations stubs module
+[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ```bash
 pip install mypy-boto3-machinelearning
@@ -20,7 +22,8 @@ pip install mypy-boto3-machinelearning
 
 ## MachineLearningClient
 
-Type annotations for  `boto3.client("machinelearning")` as [MachineLearningClient](./client.md)
+Type annotations for `boto3.client("machinelearning")` as
+[MachineLearningClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_machinelearning.client import MachineLearningClient
 ```
 
-
 MachineLearningClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags](./client.md#add-tags)
 - [can_paginate](./client.md#can-paginate)
 - [create_batch_prediction](./client.md#create-batch-prediction)
@@ -67,10 +68,8 @@ MachineLearningClient [exceptions](./client.md#exceptions)
 - [update_evaluation](./client.md#update-evaluation)
 - [update_ml_model](./client.md#update-ml-model)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
 - [InternalServerException](./client.md#internalserverexception)
@@ -81,14 +80,10 @@ MachineLearningClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TagLimitExceededException](./client.md#taglimitexceededexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("machinelearning").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("machinelearning").get_paginator("...")`.
 
 Can be used directly:
 
@@ -101,12 +96,10 @@ from mypy_boto3_machinelearning.paginators import DescribeBatchPredictionsPagina
 - [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
 - [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("machinelearning").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("machinelearning").get_waiter("...")`.
 
 Can be used directly:
 
@@ -118,9 +111,6 @@ from mypy_boto3_machinelearning.waiters import BatchPredictionAvailableWaiter, .
 - [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
 - [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
 - [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
-
-
-
 
 ## Literals
 
@@ -152,13 +142,10 @@ from mypy_boto3_machinelearning.literals import Algorithm, ...
 - [SortOrder](./literals.md#sortorder)
 - [TaggableResourceType](./literals.md#taggableresourcetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

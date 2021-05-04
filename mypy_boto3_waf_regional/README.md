@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WAFRegional
 
-Auto-generated documentation for [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
-type annotations stubs module [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
+Auto-generated documentation for
+[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
+type annotations stubs module
+[mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 ```bash
 pip install mypy-boto3-waf-regional
@@ -18,7 +20,8 @@ pip install mypy-boto3-waf-regional
 
 ## WAFRegionalClient
 
-Type annotations for  `boto3.client("waf-regional")` as [WAFRegionalClient](./client.md)
+Type annotations for `boto3.client("waf-regional")` as
+[WAFRegionalClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_waf_regional.client import WAFRegionalClient
 ```
 
-
 WAFRegionalClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_web_acl](./client.md#associate-web-acl)
 - [can_paginate](./client.md#can-paginate)
 - [create_byte_match_set](./client.md#create-byte-match-set)
@@ -116,10 +117,8 @@ WAFRegionalClient [exceptions](./client.md#exceptions)
 - [update_web_acl](./client.md#update-web-acl)
 - [update_xss_match_set](./client.md#update-xss-match-set)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [WAFBadRequestException](./client.md#wafbadrequestexception)
 - [WAFDisallowedNameException](./client.md#wafdisallowednameexception)
@@ -141,15 +140,6 @@ WAFRegionalClient [exceptions](./client.md#exceptions)
 - [WAFTagOperationException](./client.md#waftagoperationexception)
 - [WAFTagOperationInternalErrorException](./client.md#waftagoperationinternalerrorexception)
 - [WAFUnavailableEntityException](./client.md#wafunavailableentityexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -177,13 +167,10 @@ from mypy_boto3_waf_regional.literals import ChangeAction, ...
 - [WafOverrideActionType](./literals.md#wafoverrideactiontype)
 - [WafRuleType](./literals.md#wafruletype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

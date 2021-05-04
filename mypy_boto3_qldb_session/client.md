@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [QLDBSession](./README.md) > QLDBSessionClient
 
-Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
-type annotations stubs module [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+Auto-generated documentation for
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+type annotations stubs module
+[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 - [QLDBSessionClient for boto3 QLDBSession module](#qldbsessionclient-for-boto3-qldbsession-module)
   - [QLDBSessionClient](#qldbsessionclient)
@@ -26,12 +28,13 @@ def get_qldb-session_client() -> QLDBSessionClient:
     return boto3.client("qldb-session")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
+Boto3 documentation:
+[QLDBSession.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_qldb_session.client import Exceptions
@@ -39,7 +42,6 @@ from mypy_boto3_qldb_session.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -51,61 +53,59 @@ Exceptions:
 - `Exceptions.OccConflictException`
 - `Exceptions.RateExceededException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("qldb-session").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.can_paginate]
+Boto3 documentation:
+[QLDBSession.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("qldb-session").generate_presigned_url` method.
+Type annotations for `boto3.client("qldb-session").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url]
+Boto3 documentation:
+[QLDBSession.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### send_command
 
 Type annotations for `boto3.client("qldb-session").send_command` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command]
+Boto3 documentation:
+[QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
 
-```python
-def send_command(
-    self,
-    SessionToken: str = None,
-    StartSession: StartSessionRequestTypeDef = None,
-    StartTransaction: Dict[str, Any] = None,
-    EndSession: Dict[str, Any] = None,
-    CommitTransaction: CommitTransactionRequestTypeDef = None,
-    AbortTransaction: Dict[str, Any] = None,
-    ExecuteStatement: ExecuteStatementRequestTypeDef = None,
-    FetchPage: FetchPageRequestTypeDef = None
-) -> SendCommandResultTypeDef:
-    pass
-```
+Arguments:
 
+- `SessionToken`: `str`
+- `StartSession`:
+  [StartSessionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#startsessionrequesttypedef)
+- `StartTransaction`: `Dict`\[`str`, `Any`\]
+- `EndSession`: `Dict`\[`str`, `Any`\]
+- `CommitTransaction`:
+  [CommitTransactionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#committransactionrequesttypedef)
+- `AbortTransaction`: `Dict`\[`str`, `Any`\]
+- `ExecuteStatement`:
+  [ExecuteStatementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#executestatementrequesttypedef)
+- `FetchPage`:
+  [FetchPageRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#fetchpagerequesttypedef)
 
-
+Returns
+[SendCommandResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#sendcommandresulttypedef).

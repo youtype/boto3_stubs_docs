@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SES](./README.md) > Paginators
 
-Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+Auto-generated documentation for
+[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+type annotations stubs module
+[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Paginators for boto3 SES module](#paginators-for-boto3-ses-module)
   - [ListConfigurationSetsPaginator](#listconfigurationsetspaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-bot
 
 ## ListConfigurationSetsPaginator
 
-Type annotations for `boto3.client("ses").get_paginator("list_configuration_sets")`.
+Type annotations for
+`boto3.client("ses").get_paginator("list_configuration_sets")`.
 
 Can be used directly:
 
@@ -25,19 +28,21 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return boto3.client("ses").get_paginator("list_configuration_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
+Boto3 documentation:
+[SES.Paginator.ListConfigurationSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
 
-```python
-class ListConfigurationSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListConfigurationSetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListConfigurationSetsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+
+`ListConfigurationSetsPaginator.paginate` returns
+`Iterator`\[[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listconfigurationsetsresponsetypedef)\].
+
 ## ListCustomVerificationEmailTemplatesPaginator
 
-Type annotations for `boto3.client("ses").get_paginator("list_custom_verification_email_templates")`.
+Type annotations for
+`boto3.client("ses").get_paginator("list_custom_verification_email_templates")`.
 
 Can be used directly:
 
@@ -48,16 +53,17 @@ def get_list_custom_verification_email_templates_paginator() -> ListCustomVerifi
     return boto3.client("ses").get_paginator("list_custom_verification_email_templates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
+Boto3 documentation:
+[SES.Paginator.ListCustomVerificationEmailTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
 
-```python
-class ListCustomVerificationEmailTemplatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomVerificationEmailTemplatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomVerificationEmailTemplatesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomVerificationEmailTemplatesPaginator.paginate` returns
+`Iterator`\[[ListCustomVerificationEmailTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listcustomverificationemailtemplatesresponsetypedef)\].
+
 ## ListIdentitiesPaginator
 
 Type annotations for `boto3.client("ses").get_paginator("list_identities")`.
@@ -71,20 +77,23 @@ def get_list_identities_paginator() -> ListIdentitiesPaginator:
     return boto3.client("ses").get_paginator("list_identities")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
+Boto3 documentation:
+[SES.Paginator.ListIdentities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
 
-```python
-class ListIdentitiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        IdentityType: IdentityType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListIdentitiesResponseTypeDef]:
-        pass
-```
+Arguments for `ListIdentitiesPaginator.paginate` method:
+
+- `IdentityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#identitytype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+
+`ListIdentitiesPaginator.paginate` returns
+`Iterator`\[[ListIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listidentitiesresponsetypedef)\].
+
 ## ListReceiptRuleSetsPaginator
 
-Type annotations for `boto3.client("ses").get_paginator("list_receipt_rule_sets")`.
+Type annotations for
+`boto3.client("ses").get_paginator("list_receipt_rule_sets")`.
 
 Can be used directly:
 
@@ -95,16 +104,17 @@ def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
     return boto3.client("ses").get_paginator("list_receipt_rule_sets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
+Boto3 documentation:
+[SES.Paginator.ListReceiptRuleSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
 
-```python
-class ListReceiptRuleSetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListReceiptRuleSetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListReceiptRuleSetsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+
+`ListReceiptRuleSetsPaginator.paginate` returns
+`Iterator`\[[ListReceiptRuleSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listreceiptrulesetsresponsetypedef)\].
+
 ## ListTemplatesPaginator
 
 Type annotations for `boto3.client("ses").get_paginator("list_templates")`.
@@ -118,13 +128,13 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
     return boto3.client("ses").get_paginator("list_templates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
+Boto3 documentation:
+[SES.Paginator.ListTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
 
-```python
-class ListTemplatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListTemplatesResponseTypeDef]:
-        pass
-```
+Arguments for `ListTemplatesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+
+`ListTemplatesPaginator.paginate` returns
+`Iterator`\[[ListTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listtemplatesresponsetypedef)\].

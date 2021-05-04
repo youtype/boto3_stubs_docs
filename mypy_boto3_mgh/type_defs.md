@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MigrationHub](./README.md) > Structures
 
-Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+Auto-generated documentation for
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+type annotations stubs module
+[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Typed dictionaries for boto3 MigrationHub module](#typed-dictionaries-for-boto3-migrationhub-module)
   - [ApplicationStateTypeDef](#applicationstatetypedef)
@@ -29,14 +31,12 @@ type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-bot
 from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationId`: `str`
-- `ApplicationStatus`: `ApplicationStatus`
-- `LastUpdatedTime`: `datetime`
 
+- `ApplicationId`: `str`
+- `ApplicationStatus`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#applicationstatus)
+- `LastUpdatedTime`: `datetime`
 
 ## CreatedArtifactTypeDef
 
@@ -44,15 +44,13 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import CreatedArtifactTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## DescribeApplicationStateResultTypeDef
 
@@ -60,13 +58,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import DescribeApplicationStateResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationStatus`: `ApplicationStatus`
-- `LastUpdatedTime`: `datetime`
 
+- `ApplicationStatus`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#applicationstatus)
+- `LastUpdatedTime`: `datetime`
 
 ## DescribeMigrationTaskResultTypeDef
 
@@ -74,12 +70,10 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import DescribeMigrationTaskResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `MigrationTask`: `"MigrationTaskTypeDef"`
 
+- `MigrationTask`:
+  [MigrationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#migrationtasktypedef)
 
 ## DiscoveredResourceTypeDef
 
@@ -87,15 +81,13 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import DiscoveredResourceTypeDef
 ```
 
-
 Required fields:
+
 - `ConfigurationId`: `str`
 
-
-
 Optional fields:
-- `Description`: `str`
 
+- `Description`: `str`
 
 ## ListApplicationStatesResultTypeDef
 
@@ -103,13 +95,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ListApplicationStatesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationStateList`: `List["ApplicationStateTypeDef"]`
-- `NextToken`: `str`
 
+- `ApplicationStateList`:
+  `List`\[[ApplicationStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#applicationstatetypedef)\]
+- `NextToken`: `str`
 
 ## ListCreatedArtifactsResultTypeDef
 
@@ -117,13 +107,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ListCreatedArtifactsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `CreatedArtifactList`: `List["CreatedArtifactTypeDef"]`
 
+- `NextToken`: `str`
+- `CreatedArtifactList`:
+  `List`\[[CreatedArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#createdartifacttypedef)\]
 
 ## ListDiscoveredResourcesResultTypeDef
 
@@ -131,13 +119,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `DiscoveredResourceList`: `List["DiscoveredResourceTypeDef"]`
 
+- `NextToken`: `str`
+- `DiscoveredResourceList`:
+  `List`\[[DiscoveredResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#discoveredresourcetypedef)\]
 
 ## ListMigrationTasksResultTypeDef
 
@@ -145,13 +131,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ListMigrationTasksResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `MigrationTaskSummaryList`: `List["MigrationTaskSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `MigrationTaskSummaryList`:
+  `List`\[[MigrationTaskSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#migrationtasksummarytypedef)\]
 
 ## ListProgressUpdateStreamsResultTypeDef
 
@@ -159,13 +143,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProgressUpdateStreamSummaryList`: `List["ProgressUpdateStreamSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `ProgressUpdateStreamSummaryList`:
+  `List`\[[ProgressUpdateStreamSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#progressupdatestreamsummarytypedef)\]
+- `NextToken`: `str`
 
 ## MigrationTaskSummaryTypeDef
 
@@ -173,17 +155,15 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import MigrationTaskSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProgressUpdateStream`: `str`
 - `MigrationTaskName`: `str`
-- `Status`: `Status`
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#status)
 - `ProgressPercent`: `int`
 - `StatusDetail`: `str`
 - `UpdateDateTime`: `datetime`
-
 
 ## MigrationTaskTypeDef
 
@@ -191,16 +171,15 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import MigrationTaskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ProgressUpdateStream`: `str`
 - `MigrationTaskName`: `str`
-- `Task`: `"TaskTypeDef"`
+- `Task`:
+  [TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#tasktypedef)
 - `UpdateDateTime`: `datetime`
-- `ResourceAttributeList`: `List["ResourceAttributeTypeDef"]`
-
+- `ResourceAttributeList`:
+  `List`\[[ResourceAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#resourceattributetypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -208,14 +187,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ProgressUpdateStreamSummaryTypeDef
 
@@ -223,12 +199,9 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ProgressUpdateStreamSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ProgressUpdateStreamName`: `str`
 
+- `ProgressUpdateStreamName`: `str`
 
 ## ResourceAttributeTypeDef
 
@@ -236,13 +209,11 @@ Optional fields:
 from mypy_boto3_mgh.type_defs import ResourceAttributeTypeDef
 ```
 
-
 Required fields:
-- `Type`: `ResourceAttributeType`
+
+- `Type`:
+  [ResourceAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#resourceattributetype)
 - `Value`: `str`
-
-
-
 
 ## TaskTypeDef
 
@@ -250,13 +221,12 @@ Required fields:
 from mypy_boto3_mgh.type_defs import TaskTypeDef
 ```
 
-
 Required fields:
-- `Status`: `Status`
 
-
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#status)
 
 Optional fields:
+
 - `StatusDetail`: `str`
 - `ProgressPercent`: `int`
-

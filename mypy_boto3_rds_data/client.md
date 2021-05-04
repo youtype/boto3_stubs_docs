@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RDSDataService](./README.md) > RDSDataServiceClient
 
-Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
-type annotations stubs module [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+Auto-generated documentation for
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+type annotations stubs module
+[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 - [RDSDataServiceClient for boto3 RDSDataService module](#rdsdataserviceclient-for-boto3-rdsdataservice-module)
   - [RDSDataServiceClient](#rdsdataserviceclient)
@@ -31,12 +33,13 @@ def get_rds-data_client() -> RDSDataServiceClient:
     return boto3.client("rds-data")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
+Boto3 documentation:
+[RDSDataService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_rds_data.client import Exceptions
@@ -44,7 +47,6 @@ from mypy_boto3_rds_data.client import Exceptions
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -56,150 +58,146 @@ Exceptions:
 - `Exceptions.ServiceUnavailableError`
 - `Exceptions.StatementTimeoutException`
 
-
 ## Methods
-
 
 ### batch_execute_statement
 
 Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement]
+Boto3 documentation:
+[RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
 
-```python
-def batch_execute_statement(
-    self,
-    resourceArn: str,
-    secretArn: str,
-    sql: str,
-    database: str = None,
-    parameterSets: List[List[SqlParameterTypeDef]] = None,
-    schema: str = None,
-    transactionId: str = None
-) -> BatchExecuteStatementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `secretArn`: `str` *(required)*
+- `sql`: `str` *(required)*
+- `database`: `str`
+- `parameterSets`:
+  `List`\[`List`\[[SqlParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#sqlparametertypedef)\]\]
+- `schema`: `str`
+- `transactionId`: `str`
+
+Returns
+[BatchExecuteStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#batchexecutestatementresponsetypedef).
 
 ### begin_transaction
 
 Type annotations for `boto3.client("rds-data").begin_transaction` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction]
+Boto3 documentation:
+[RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
 
-```python
-def begin_transaction(
-    self,
-    resourceArn: str,
-    secretArn: str,
-    database: str = None,
-    schema: str = None
-) -> BeginTransactionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `secretArn`: `str` *(required)*
+- `database`: `str`
+- `schema`: `str`
+
+Returns
+[BeginTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#begintransactionresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("rds-data").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate]
+Boto3 documentation:
+[RDSDataService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### commit_transaction
 
 Type annotations for `boto3.client("rds-data").commit_transaction` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction]
+Boto3 documentation:
+[RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
 
-```python
-def commit_transaction(
-    self,
-    resourceArn: str,
-    secretArn: str,
-    transactionId: str
-) -> CommitTransactionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `secretArn`: `str` *(required)*
+- `transactionId`: `str` *(required)*
+
+Returns
+[CommitTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#committransactionresponsetypedef).
 
 ### execute_sql
 
 Type annotations for `boto3.client("rds-data").execute_sql` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql]
+Boto3 documentation:
+[RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
 
-```python
-def execute_sql(
-    self,
-    awsSecretStoreArn: str,
-    dbClusterOrInstanceArn: str,
-    sqlStatements: str,
-    database: str = None,
-    schema: str = None
-) -> ExecuteSqlResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `awsSecretStoreArn`: `str` *(required)*
+- `dbClusterOrInstanceArn`: `str` *(required)*
+- `sqlStatements`: `str` *(required)*
+- `database`: `str`
+- `schema`: `str`
+
+Returns
+[ExecuteSqlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#executesqlresponsetypedef).
 
 ### execute_statement
 
 Type annotations for `boto3.client("rds-data").execute_statement` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement]
+Boto3 documentation:
+[RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
 
-```python
-def execute_statement(
-    self,
-    resourceArn: str,
-    secretArn: str,
-    sql: str,
-    continueAfterTimeout: bool = None,
-    database: str = None,
-    includeResultMetadata: bool = None,
-    parameters: List[SqlParameterTypeDef] = None,
-    resultSetOptions: ResultSetOptionsTypeDef = None,
-    schema: str = None,
-    transactionId: str = None
-) -> ExecuteStatementResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `secretArn`: `str` *(required)*
+- `sql`: `str` *(required)*
+- `continueAfterTimeout`: `bool`
+- `database`: `str`
+- `includeResultMetadata`: `bool`
+- `parameters`:
+  `List`\[[SqlParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#sqlparametertypedef)\]
+- `resultSetOptions`:
+  [ResultSetOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#resultsetoptionstypedef)
+- `schema`: `str`
+- `transactionId`: `str`
+
+Returns
+[ExecuteStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#executestatementresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("rds-data").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url]
+Boto3 documentation:
+[RDSDataService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### rollback_transaction
 
 Type annotations for `boto3.client("rds-data").rollback_transaction` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction]
+Boto3 documentation:
+[RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
 
-```python
-def rollback_transaction(
-    self,
-    resourceArn: str,
-    secretArn: str,
-    transactionId: str
-) -> RollbackTransactionResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `resourceArn`: `str` *(required)*
+- `secretArn`: `str` *(required)*
+- `transactionId`: `str` *(required)*
 
-
+Returns
+[RollbackTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#rollbacktransactionresponsetypedef).

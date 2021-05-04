@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [EKS](./README.md) > Structures
 
-Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+Auto-generated documentation for
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+type annotations stubs module
+[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [Typed dictionaries for boto3 EKS module](#typed-dictionaries-for-boto3-eks-module)
   - [AddonHealthTypeDef](#addonhealthtypedef)
@@ -81,12 +83,10 @@ type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-bot
 from mypy_boto3_eks.type_defs import AddonHealthTypeDef
 ```
 
-
-
-
 Optional fields:
-- `issues`: `List["AddonIssueTypeDef"]`
 
+- `issues`:
+  `List`\[[AddonIssueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addonissuetypedef)\]
 
 ## AddonInfoTypeDef
 
@@ -94,14 +94,12 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AddonInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `addonName`: `str`
 - `type`: `str`
-- `addonVersions`: `List["AddonVersionInfoTypeDef"]`
-
+- `addonVersions`:
+  `List`\[[AddonVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addonversioninfotypedef)\]
 
 ## AddonIssueTypeDef
 
@@ -109,14 +107,12 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AddonIssueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `AddonIssueCode`
-- `message`: `str`
-- `resourceIds`: `List[str]`
 
+- `code`:
+  [AddonIssueCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#addonissuecode)
+- `message`: `str`
+- `resourceIds`: `List`\[`str`\]
 
 ## AddonTypeDef
 
@@ -124,21 +120,20 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AddonTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `addonName`: `str`
 - `clusterName`: `str`
-- `status`: `AddonStatus`
+- `status`:
+  [AddonStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#addonstatus)
 - `addonVersion`: `str`
-- `health`: `"AddonHealthTypeDef"`
+- `health`:
+  [AddonHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addonhealthtypedef)
 - `addonArn`: `str`
 - `createdAt`: `datetime`
 - `modifiedAt`: `datetime`
 - `serviceAccountRoleArn`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## AddonVersionInfoTypeDef
 
@@ -146,14 +141,12 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AddonVersionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addonVersion`: `str`
-- `architecture`: `List[str]`
-- `compatibilities`: `List["CompatibilityTypeDef"]`
 
+- `addonVersion`: `str`
+- `architecture`: `List`\[`str`\]
+- `compatibilities`:
+  `List`\[[CompatibilityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#compatibilitytypedef)\]
 
 ## AssociateEncryptionConfigResponseTypeDef
 
@@ -161,12 +154,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AssociateEncryptionConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## AssociateIdentityProviderConfigResponseTypeDef
 
@@ -174,13 +165,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
-- `tags`: `Dict[str, str]`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## AutoScalingGroupTypeDef
 
@@ -188,12 +177,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import AutoScalingGroupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
 
+- `name`: `str`
 
 ## CertificateTypeDef
 
@@ -201,12 +187,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CertificateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `data`: `str`
 
+- `data`: `str`
 
 ## ClusterTypeDef
 
@@ -214,27 +197,31 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ClusterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `version`: `str`
 - `endpoint`: `str`
 - `roleArn`: `str`
-- `resourcesVpcConfig`: `"VpcConfigResponseTypeDef"`
-- `kubernetesNetworkConfig`: `"KubernetesNetworkConfigResponseTypeDef"`
-- `logging`: `"LoggingTypeDef"`
-- `identity`: `"IdentityTypeDef"`
-- `status`: `ClusterStatus`
-- `certificateAuthority`: `"CertificateTypeDef"`
+- `resourcesVpcConfig`:
+  [VpcConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#vpcconfigresponsetypedef)
+- `kubernetesNetworkConfig`:
+  [KubernetesNetworkConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#kubernetesnetworkconfigresponsetypedef)
+- `logging`:
+  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#loggingtypedef)
+- `identity`:
+  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#identitytypedef)
+- `status`:
+  [ClusterStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#clusterstatus)
+- `certificateAuthority`:
+  [CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#certificatetypedef)
 - `clientRequestToken`: `str`
 - `platformVersion`: `str`
-- `tags`: `Dict[str, str]`
-- `encryptionConfig`: `List["EncryptionConfigTypeDef"]`
-
+- `tags`: `Dict`\[`str`, `str`\]
+- `encryptionConfig`:
+  `List`\[[EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#encryptionconfigtypedef)\]
 
 ## CompatibilityTypeDef
 
@@ -242,14 +229,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CompatibilityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `clusterVersion`: `str`
-- `platformVersions`: `List[str]`
-- `defaultVersion`: `bool`
 
+- `clusterVersion`: `str`
+- `platformVersions`: `List`\[`str`\]
+- `defaultVersion`: `bool`
 
 ## CreateAddonResponseTypeDef
 
@@ -257,12 +241,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CreateAddonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addon`: `"AddonTypeDef"`
 
+- `addon`:
+  [AddonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addontypedef)
 
 ## CreateClusterResponseTypeDef
 
@@ -270,12 +252,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CreateClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cluster`: `"ClusterTypeDef"`
 
+- `cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#clustertypedef)
 
 ## CreateFargateProfileResponseTypeDef
 
@@ -283,12 +263,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CreateFargateProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fargateProfile`: `"FargateProfileTypeDef"`
 
+- `fargateProfile`:
+  [FargateProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#fargateprofiletypedef)
 
 ## CreateNodegroupResponseTypeDef
 
@@ -296,12 +274,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import CreateNodegroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nodegroup`: `"NodegroupTypeDef"`
 
+- `nodegroup`:
+  [NodegroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegrouptypedef)
 
 ## DeleteAddonResponseTypeDef
 
@@ -309,12 +285,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DeleteAddonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addon`: `"AddonTypeDef"`
 
+- `addon`:
+  [AddonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addontypedef)
 
 ## DeleteClusterResponseTypeDef
 
@@ -322,12 +296,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DeleteClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cluster`: `"ClusterTypeDef"`
 
+- `cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#clustertypedef)
 
 ## DeleteFargateProfileResponseTypeDef
 
@@ -335,12 +307,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DeleteFargateProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fargateProfile`: `"FargateProfileTypeDef"`
 
+- `fargateProfile`:
+  [FargateProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#fargateprofiletypedef)
 
 ## DeleteNodegroupResponseTypeDef
 
@@ -348,12 +318,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DeleteNodegroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nodegroup`: `"NodegroupTypeDef"`
 
+- `nodegroup`:
+  [NodegroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegrouptypedef)
 
 ## DescribeAddonResponseTypeDef
 
@@ -361,12 +329,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeAddonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addon`: `"AddonTypeDef"`
 
+- `addon`:
+  [AddonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addontypedef)
 
 ## DescribeAddonVersionsResponseTypeDef
 
@@ -374,13 +340,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeAddonVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addons`: `List["AddonInfoTypeDef"]`
-- `nextToken`: `str`
 
+- `addons`:
+  `List`\[[AddonInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#addoninfotypedef)\]
+- `nextToken`: `str`
 
 ## DescribeClusterResponseTypeDef
 
@@ -388,12 +352,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeClusterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `cluster`: `"ClusterTypeDef"`
 
+- `cluster`:
+  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#clustertypedef)
 
 ## DescribeFargateProfileResponseTypeDef
 
@@ -401,12 +363,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeFargateProfileResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fargateProfile`: `"FargateProfileTypeDef"`
 
+- `fargateProfile`:
+  [FargateProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#fargateprofiletypedef)
 
 ## DescribeIdentityProviderConfigResponseTypeDef
 
@@ -414,12 +374,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `identityProviderConfig`: `"IdentityProviderConfigResponseTypeDef"`
 
+- `identityProviderConfig`:
+  [IdentityProviderConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#identityproviderconfigresponsetypedef)
 
 ## DescribeNodegroupResponseTypeDef
 
@@ -427,12 +385,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeNodegroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nodegroup`: `"NodegroupTypeDef"`
 
+- `nodegroup`:
+  [NodegroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegrouptypedef)
 
 ## DescribeUpdateResponseTypeDef
 
@@ -440,12 +396,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DescribeUpdateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## DisassociateIdentityProviderConfigResponseTypeDef
 
@@ -453,12 +407,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## EncryptionConfigTypeDef
 
@@ -466,13 +418,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import EncryptionConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resources`: `List[str]`
-- `provider`: `"ProviderTypeDef"`
 
+- `resources`: `List`\[`str`\]
+- `provider`:
+  [ProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#providertypedef)
 
 ## ErrorDetailTypeDef
 
@@ -480,14 +430,12 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ErrorDetailTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errorCode`: `ErrorCode`
-- `errorMessage`: `str`
-- `resourceIds`: `List[str]`
 
+- `errorCode`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#errorcode)
+- `errorMessage`: `str`
+- `resourceIds`: `List`\[`str`\]
 
 ## FargateProfileSelectorTypeDef
 
@@ -495,13 +443,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import FargateProfileSelectorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `namespace`: `str`
-- `labels`: `Dict[str, str]`
 
+- `namespace`: `str`
+- `labels`: `Dict`\[`str`, `str`\]
 
 ## FargateProfileTypeDef
 
@@ -509,20 +454,19 @@ Optional fields:
 from mypy_boto3_eks.type_defs import FargateProfileTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `fargateProfileName`: `str`
 - `fargateProfileArn`: `str`
 - `clusterName`: `str`
 - `createdAt`: `datetime`
 - `podExecutionRoleArn`: `str`
-- `subnets`: `List[str]`
-- `selectors`: `List["FargateProfileSelectorTypeDef"]`
-- `status`: `FargateProfileStatus`
-- `tags`: `Dict[str, str]`
-
+- `subnets`: `List`\[`str`\]
+- `selectors`:
+  `List`\[[FargateProfileSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#fargateprofileselectortypedef)\]
+- `status`:
+  [FargateProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#fargateprofilestatus)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## IdentityProviderConfigResponseTypeDef
 
@@ -530,12 +474,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import IdentityProviderConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oidc`: `"OidcIdentityProviderConfigTypeDef"`
 
+- `oidc`:
+  [OidcIdentityProviderConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#oidcidentityproviderconfigtypedef)
 
 ## IdentityProviderConfigTypeDef
 
@@ -543,13 +485,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import IdentityProviderConfigTypeDef
 ```
 
-
 Required fields:
+
 - `type`: `str`
 - `name`: `str`
-
-
-
 
 ## IdentityTypeDef
 
@@ -557,12 +496,10 @@ Required fields:
 from mypy_boto3_eks.type_defs import IdentityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `oidc`: `"OIDCTypeDef"`
 
+- `oidc`:
+  [OIDCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#oidctypedef)
 
 ## IssueTypeDef
 
@@ -570,14 +507,12 @@ Optional fields:
 from mypy_boto3_eks.type_defs import IssueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `NodegroupIssueCode`
-- `message`: `str`
-- `resourceIds`: `List[str]`
 
+- `code`:
+  [NodegroupIssueCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#nodegroupissuecode)
+- `message`: `str`
+- `resourceIds`: `List`\[`str`\]
 
 ## KubernetesNetworkConfigRequestTypeDef
 
@@ -585,12 +520,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import KubernetesNetworkConfigRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceIpv4Cidr`: `str`
 
+- `serviceIpv4Cidr`: `str`
 
 ## KubernetesNetworkConfigResponseTypeDef
 
@@ -598,12 +530,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import KubernetesNetworkConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `serviceIpv4Cidr`: `str`
 
+- `serviceIpv4Cidr`: `str`
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -611,14 +540,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import LaunchTemplateSpecificationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `version`: `str`
 - `id`: `str`
-
 
 ## ListAddonsResponseTypeDef
 
@@ -626,13 +552,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListAddonsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addons`: `List[str]`
-- `nextToken`: `str`
 
+- `addons`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListClustersResponseTypeDef
 
@@ -640,13 +563,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListClustersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `clusters`: `List[str]`
-- `nextToken`: `str`
 
+- `clusters`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListFargateProfilesResponseTypeDef
 
@@ -654,13 +574,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListFargateProfilesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `fargateProfileNames`: `List[str]`
-- `nextToken`: `str`
 
+- `fargateProfileNames`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListIdentityProviderConfigsResponseTypeDef
 
@@ -668,13 +585,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `identityProviderConfigs`: `List["IdentityProviderConfigTypeDef"]`
-- `nextToken`: `str`
 
+- `identityProviderConfigs`:
+  `List`\[[IdentityProviderConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#identityproviderconfigtypedef)\]
+- `nextToken`: `str`
 
 ## ListNodegroupsResponseTypeDef
 
@@ -682,13 +597,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListNodegroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nodegroups`: `List[str]`
-- `nextToken`: `str`
 
+- `nodegroups`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -696,12 +608,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## ListUpdatesResponseTypeDef
 
@@ -709,13 +618,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ListUpdatesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `updateIds`: `List[str]`
-- `nextToken`: `str`
 
+- `updateIds`: `List`\[`str`\]
+- `nextToken`: `str`
 
 ## LogSetupTypeDef
 
@@ -723,13 +629,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import LogSetupTypeDef
 ```
 
-
-
-
 Optional fields:
-- `types`: `List[LogType]`
-- `enabled`: `bool`
 
+- `types`:
+  `List`\[[LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#logtype)\]
+- `enabled`: `bool`
 
 ## LoggingTypeDef
 
@@ -737,12 +641,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import LoggingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `clusterLogging`: `List["LogSetupTypeDef"]`
 
+- `clusterLogging`:
+  `List`\[[LogSetupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#logsetuptypedef)\]
 
 ## NodegroupHealthTypeDef
 
@@ -750,12 +652,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import NodegroupHealthTypeDef
 ```
 
-
-
-
 Optional fields:
-- `issues`: `List["IssueTypeDef"]`
 
+- `issues`:
+  `List`\[[IssueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#issuetypedef)\]
 
 ## NodegroupResourcesTypeDef
 
@@ -763,13 +663,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import NodegroupResourcesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `autoScalingGroups`: `List["AutoScalingGroupTypeDef"]`
-- `remoteAccessSecurityGroup`: `str`
 
+- `autoScalingGroups`:
+  `List`\[[AutoScalingGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#autoscalinggrouptypedef)\]
+- `remoteAccessSecurityGroup`: `str`
 
 ## NodegroupScalingConfigTypeDef
 
@@ -777,14 +675,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import NodegroupScalingConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `minSize`: `int`
 - `maxSize`: `int`
 - `desiredSize`: `int`
-
 
 ## NodegroupTypeDef
 
@@ -792,10 +687,8 @@ Optional fields:
 from mypy_boto3_eks.type_defs import NodegroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `nodegroupName`: `str`
 - `nodegroupArn`: `str`
 - `clusterName`: `str`
@@ -803,21 +696,28 @@ Optional fields:
 - `releaseVersion`: `str`
 - `createdAt`: `datetime`
 - `modifiedAt`: `datetime`
-- `status`: `NodegroupStatus`
-- `capacityType`: `CapacityTypes`
-- `scalingConfig`: `"NodegroupScalingConfigTypeDef"`
-- `instanceTypes`: `List[str]`
-- `subnets`: `List[str]`
-- `remoteAccess`: `"RemoteAccessConfigTypeDef"`
-- `amiType`: `AMITypes`
+- `status`:
+  [NodegroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#nodegroupstatus)
+- `capacityType`:
+  [CapacityTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#capacitytypes)
+- `scalingConfig`:
+  [NodegroupScalingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegroupscalingconfigtypedef)
+- `instanceTypes`: `List`\[`str`\]
+- `subnets`: `List`\[`str`\]
+- `remoteAccess`:
+  [RemoteAccessConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#remoteaccessconfigtypedef)
+- `amiType`:
+  [AMITypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#amitypes)
 - `nodeRole`: `str`
-- `labels`: `Dict[str, str]`
-- `resources`: `"NodegroupResourcesTypeDef"`
+- `labels`: `Dict`\[`str`, `str`\]
+- `resources`:
+  [NodegroupResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegroupresourcestypedef)
 - `diskSize`: `int`
-- `health`: `"NodegroupHealthTypeDef"`
-- `launchTemplate`: `"LaunchTemplateSpecificationTypeDef"`
-- `tags`: `Dict[str, str]`
-
+- `health`:
+  [NodegroupHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegrouphealthtypedef)
+- `launchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#launchtemplatespecificationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## OIDCTypeDef
 
@@ -825,12 +725,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import OIDCTypeDef
 ```
 
-
-
-
 Optional fields:
-- `issuer`: `str`
 
+- `issuer`: `str`
 
 ## OidcIdentityProviderConfigRequestTypeDef
 
@@ -838,21 +735,19 @@ Optional fields:
 from mypy_boto3_eks.type_defs import OidcIdentityProviderConfigRequestTypeDef
 ```
 
-
 Required fields:
+
 - `identityProviderConfigName`: `str`
 - `issuerUrl`: `str`
 - `clientId`: `str`
 
-
-
 Optional fields:
+
 - `usernameClaim`: `str`
 - `usernamePrefix`: `str`
 - `groupsClaim`: `str`
 - `groupsPrefix`: `str`
-- `requiredClaims`: `Dict[str, str]`
-
+- `requiredClaims`: `Dict`\[`str`, `str`\]
 
 ## OidcIdentityProviderConfigTypeDef
 
@@ -860,10 +755,8 @@ Optional fields:
 from mypy_boto3_eks.type_defs import OidcIdentityProviderConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `identityProviderConfigName`: `str`
 - `identityProviderConfigArn`: `str`
 - `clusterName`: `str`
@@ -873,10 +766,10 @@ Optional fields:
 - `usernamePrefix`: `str`
 - `groupsClaim`: `str`
 - `groupsPrefix`: `str`
-- `requiredClaims`: `Dict[str, str]`
-- `tags`: `Dict[str, str]`
-- `status`: `configStatus`
-
+- `requiredClaims`: `Dict`\[`str`, `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `status`:
+  [configStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#configstatus)
 
 ## PaginatorConfigTypeDef
 
@@ -884,14 +777,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ProviderTypeDef
 
@@ -899,12 +789,9 @@ Optional fields:
 from mypy_boto3_eks.type_defs import ProviderTypeDef
 ```
 
-
-
-
 Optional fields:
-- `keyArn`: `str`
 
+- `keyArn`: `str`
 
 ## RemoteAccessConfigTypeDef
 
@@ -912,13 +799,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import RemoteAccessConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ec2SshKey`: `str`
-- `sourceSecurityGroups`: `List[str]`
 
+- `ec2SshKey`: `str`
+- `sourceSecurityGroups`: `List`\[`str`\]
 
 ## UpdateAddonResponseTypeDef
 
@@ -926,12 +810,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateAddonResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## UpdateClusterConfigResponseTypeDef
 
@@ -939,12 +821,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateClusterConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## UpdateClusterVersionResponseTypeDef
 
@@ -952,12 +832,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateClusterVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## UpdateLabelsPayloadTypeDef
 
@@ -965,13 +843,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateLabelsPayloadTypeDef
 ```
 
-
-
-
 Optional fields:
-- `addOrUpdateLabels`: `Dict[str, str]`
-- `removeLabels`: `List[str]`
 
+- `addOrUpdateLabels`: `Dict`\[`str`, `str`\]
+- `removeLabels`: `List`\[`str`\]
 
 ## UpdateNodegroupConfigResponseTypeDef
 
@@ -979,12 +854,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateNodegroupConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## UpdateNodegroupVersionResponseTypeDef
 
@@ -992,12 +865,10 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateNodegroupVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `update`: `"UpdateTypeDef"`
 
+- `update`:
+  [UpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetypedef)
 
 ## UpdateParamTypeDef
 
@@ -1005,13 +876,11 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateParamTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `UpdateParamType`
-- `value`: `str`
 
+- `type`:
+  [UpdateParamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#updateparamtype)
+- `value`: `str`
 
 ## UpdateTypeDef
 
@@ -1019,17 +888,18 @@ Optional fields:
 from mypy_boto3_eks.type_defs import UpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `id`: `str`
-- `status`: `UpdateStatus`
-- `type`: `UpdateType`
-- `params`: `List["UpdateParamTypeDef"]`
-- `createdAt`: `datetime`
-- `errors`: `List["ErrorDetailTypeDef"]`
 
+- `id`: `str`
+- `status`:
+  [UpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#updatestatus)
+- `type`:
+  [UpdateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#updatetype)
+- `params`:
+  `List`\[[UpdateParamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updateparamtypedef)\]
+- `createdAt`: `datetime`
+- `errors`:
+  `List`\[[ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#errordetailtypedef)\]
 
 ## VpcConfigRequestTypeDef
 
@@ -1037,16 +907,13 @@ Optional fields:
 from mypy_boto3_eks.type_defs import VpcConfigRequestTypeDef
 ```
 
-
-
-
 Optional fields:
-- `subnetIds`: `List[str]`
-- `securityGroupIds`: `List[str]`
+
+- `subnetIds`: `List`\[`str`\]
+- `securityGroupIds`: `List`\[`str`\]
 - `endpointPublicAccess`: `bool`
 - `endpointPrivateAccess`: `bool`
-- `publicAccessCidrs`: `List[str]`
-
+- `publicAccessCidrs`: `List`\[`str`\]
 
 ## VpcConfigResponseTypeDef
 
@@ -1054,18 +921,15 @@ Optional fields:
 from mypy_boto3_eks.type_defs import VpcConfigResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `subnetIds`: `List[str]`
-- `securityGroupIds`: `List[str]`
+
+- `subnetIds`: `List`\[`str`\]
+- `securityGroupIds`: `List`\[`str`\]
 - `clusterSecurityGroupId`: `str`
 - `vpcId`: `str`
 - `endpointPublicAccess`: `bool`
 - `endpointPrivateAccess`: `bool`
-- `publicAccessCidrs`: `List[str]`
-
+- `publicAccessCidrs`: `List`\[`str`\]
 
 ## WaiterConfigTypeDef
 
@@ -1073,10 +937,7 @@ Optional fields:
 from mypy_boto3_eks.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

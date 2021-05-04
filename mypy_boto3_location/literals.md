@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LocationService](./README.md) > Literals
 
-Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+Auto-generated documentation for
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+type annotations stubs module
+[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Literals for boto3 LocationService module](#literals-for-boto3-locationservice-module)
   - [BatchItemErrorCode](#batchitemerrorcode)

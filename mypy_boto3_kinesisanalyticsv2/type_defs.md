@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Structures
 
-Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+Auto-generated documentation for
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+type annotations stubs module
+[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Typed dictionaries for boto3 KinesisAnalyticsV2 module](#typed-dictionaries-for-boto3-kinesisanalyticsv2-module)
   - [AddApplicationCloudWatchLoggingOptionResponseTypeDef](#addapplicationcloudwatchloggingoptionresponsetypedef)
@@ -133,14 +135,12 @@ type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/p
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `CloudWatchLoggingOptionDescriptions`: `List["CloudWatchLoggingOptionDescriptionTypeDef"]`
-
+- `CloudWatchLoggingOptionDescriptions`:
+  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiondescriptiontypedef)\]
 
 ## AddApplicationInputProcessingConfigurationResponseTypeDef
 
@@ -148,15 +148,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
 - `InputId`: `str`
-- `InputProcessingConfigurationDescription`: `"InputProcessingConfigurationDescriptionTypeDef"`
-
+- `InputProcessingConfigurationDescription`:
+  [InputProcessingConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationdescriptiontypedef)
 
 ## AddApplicationInputResponseTypeDef
 
@@ -164,14 +162,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `InputDescriptions`: `List["InputDescriptionTypeDef"]`
-
+- `InputDescriptions`:
+  `List`\[[InputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputdescriptiontypedef)\]
 
 ## AddApplicationOutputResponseTypeDef
 
@@ -179,14 +175,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `OutputDescriptions`: `List["OutputDescriptionTypeDef"]`
-
+- `OutputDescriptions`:
+  `List`\[[OutputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#outputdescriptiontypedef)\]
 
 ## AddApplicationReferenceDataSourceResponseTypeDef
 
@@ -194,14 +188,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `ReferenceDataSourceDescriptions`: `List["ReferenceDataSourceDescriptionTypeDef"]`
-
+- `ReferenceDataSourceDescriptions`:
+  `List`\[[ReferenceDataSourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#referencedatasourcedescriptiontypedef)\]
 
 ## AddApplicationVpcConfigurationResponseTypeDef
 
@@ -209,14 +201,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `VpcConfigurationDescription`: `"VpcConfigurationDescriptionTypeDef"`
-
+- `VpcConfigurationDescription`:
+  [VpcConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationdescriptiontypedef)
 
 ## ApplicationCodeConfigurationDescriptionTypeDef
 
@@ -224,15 +214,15 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
-- `CodeContentType`: `CodeContentType`
 
-
+- `CodeContentType`:
+  [CodeContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#codecontenttype)
 
 Optional fields:
-- `CodeContentDescription`: `"CodeContentDescriptionTypeDef"`
 
+- `CodeContentDescription`:
+  [CodeContentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#codecontentdescriptiontypedef)
 
 ## ApplicationCodeConfigurationTypeDef
 
@@ -240,15 +230,15 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationTypeDef
 ```
 
-
 Required fields:
-- `CodeContentType`: `CodeContentType`
 
-
+- `CodeContentType`:
+  [CodeContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#codecontenttype)
 
 Optional fields:
-- `CodeContent`: `"CodeContentTypeDef"`
 
+- `CodeContent`:
+  [CodeContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#codecontenttypedef)
 
 ## ApplicationCodeConfigurationUpdateTypeDef
 
@@ -256,13 +246,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CodeContentTypeUpdate`: `CodeContentType`
-- `CodeContentUpdate`: `"CodeContentUpdateTypeDef"`
 
+- `CodeContentTypeUpdate`:
+  [CodeContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#codecontenttype)
+- `CodeContentUpdate`:
+  [CodeContentUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#codecontentupdatetypedef)
 
 ## ApplicationConfigurationDescriptionTypeDef
 
@@ -270,18 +259,22 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SqlApplicationConfigurationDescription`: `"SqlApplicationConfigurationDescriptionTypeDef"`
-- `ApplicationCodeConfigurationDescription`: `"ApplicationCodeConfigurationDescriptionTypeDef"`
-- `RunConfigurationDescription`: `"RunConfigurationDescriptionTypeDef"`
-- `FlinkApplicationConfigurationDescription`: `"FlinkApplicationConfigurationDescriptionTypeDef"`
-- `EnvironmentPropertyDescriptions`: `"EnvironmentPropertyDescriptionsTypeDef"`
-- `ApplicationSnapshotConfigurationDescription`: `"ApplicationSnapshotConfigurationDescriptionTypeDef"`
-- `VpcConfigurationDescriptions`: `List["VpcConfigurationDescriptionTypeDef"]`
 
+- `SqlApplicationConfigurationDescription`:
+  [SqlApplicationConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sqlapplicationconfigurationdescriptiontypedef)
+- `ApplicationCodeConfigurationDescription`:
+  [ApplicationCodeConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationcodeconfigurationdescriptiontypedef)
+- `RunConfigurationDescription`:
+  [RunConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#runconfigurationdescriptiontypedef)
+- `FlinkApplicationConfigurationDescription`:
+  [FlinkApplicationConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkapplicationconfigurationdescriptiontypedef)
+- `EnvironmentPropertyDescriptions`:
+  [EnvironmentPropertyDescriptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#environmentpropertydescriptionstypedef)
+- `ApplicationSnapshotConfigurationDescription`:
+  [ApplicationSnapshotConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationsnapshotconfigurationdescriptiontypedef)
+- `VpcConfigurationDescriptions`:
+  `List`\[[VpcConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationdescriptiontypedef)\]
 
 ## ApplicationConfigurationTypeDef
 
@@ -289,19 +282,23 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationTypeDef
 ```
 
-
 Required fields:
-- `ApplicationCodeConfiguration`: `"ApplicationCodeConfigurationTypeDef"`
 
-
+- `ApplicationCodeConfiguration`:
+  [ApplicationCodeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationcodeconfigurationtypedef)
 
 Optional fields:
-- `SqlApplicationConfiguration`: `"SqlApplicationConfigurationTypeDef"`
-- `FlinkApplicationConfiguration`: `"FlinkApplicationConfigurationTypeDef"`
-- `EnvironmentProperties`: `"EnvironmentPropertiesTypeDef"`
-- `ApplicationSnapshotConfiguration`: `"ApplicationSnapshotConfigurationTypeDef"`
-- `VpcConfigurations`: `List["VpcConfigurationTypeDef"]`
 
+- `SqlApplicationConfiguration`:
+  [SqlApplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sqlapplicationconfigurationtypedef)
+- `FlinkApplicationConfiguration`:
+  [FlinkApplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkapplicationconfigurationtypedef)
+- `EnvironmentProperties`:
+  [EnvironmentPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#environmentpropertiestypedef)
+- `ApplicationSnapshotConfiguration`:
+  [ApplicationSnapshotConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationsnapshotconfigurationtypedef)
+- `VpcConfigurations`:
+  `List`\[[VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationtypedef)\]
 
 ## ApplicationConfigurationUpdateTypeDef
 
@@ -309,17 +306,20 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SqlApplicationConfigurationUpdate`: `"SqlApplicationConfigurationUpdateTypeDef"`
-- `ApplicationCodeConfigurationUpdate`: `"ApplicationCodeConfigurationUpdateTypeDef"`
-- `FlinkApplicationConfigurationUpdate`: `"FlinkApplicationConfigurationUpdateTypeDef"`
-- `EnvironmentPropertyUpdates`: `"EnvironmentPropertyUpdatesTypeDef"`
-- `ApplicationSnapshotConfigurationUpdate`: `"ApplicationSnapshotConfigurationUpdateTypeDef"`
-- `VpcConfigurationUpdates`: `List["VpcConfigurationUpdateTypeDef"]`
 
+- `SqlApplicationConfigurationUpdate`:
+  [SqlApplicationConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sqlapplicationconfigurationupdatetypedef)
+- `ApplicationCodeConfigurationUpdate`:
+  [ApplicationCodeConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationcodeconfigurationupdatetypedef)
+- `FlinkApplicationConfigurationUpdate`:
+  [FlinkApplicationConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkapplicationconfigurationupdatetypedef)
+- `EnvironmentPropertyUpdates`:
+  [EnvironmentPropertyUpdatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#environmentpropertyupdatestypedef)
+- `ApplicationSnapshotConfigurationUpdate`:
+  [ApplicationSnapshotConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationsnapshotconfigurationupdatetypedef)
+- `VpcConfigurationUpdates`:
+  `List`\[[VpcConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationupdatetypedef)\]
 
 ## ApplicationDetailTypeDef
 
@@ -327,25 +327,28 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationDetailTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationName`: `str`
-- `RuntimeEnvironment`: `RuntimeEnvironment`
-- `ApplicationStatus`: `ApplicationStatus`
+- `RuntimeEnvironment`:
+  [RuntimeEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#runtimeenvironment)
+- `ApplicationStatus`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#applicationstatus)
 - `ApplicationVersionId`: `int`
 
-
-
 Optional fields:
+
 - `ApplicationDescription`: `str`
 - `ServiceExecutionRole`: `str`
 - `CreateTimestamp`: `datetime`
 - `LastUpdateTimestamp`: `datetime`
-- `ApplicationConfigurationDescription`: `"ApplicationConfigurationDescriptionTypeDef"`
-- `CloudWatchLoggingOptionDescriptions`: `List["CloudWatchLoggingOptionDescriptionTypeDef"]`
-- `ApplicationMaintenanceConfigurationDescription`: `"ApplicationMaintenanceConfigurationDescriptionTypeDef"`
-
+- `ApplicationConfigurationDescription`:
+  [ApplicationConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationconfigurationdescriptiontypedef)
+- `CloudWatchLoggingOptionDescriptions`:
+  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiondescriptiontypedef)\]
+- `ApplicationMaintenanceConfigurationDescription`:
+  [ApplicationMaintenanceConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationmaintenanceconfigurationdescriptiontypedef)
 
 ## ApplicationMaintenanceConfigurationDescriptionTypeDef
 
@@ -353,13 +356,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationMaintenanceConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationMaintenanceWindowStartTime`: `str`
 - `ApplicationMaintenanceWindowEndTime`: `str`
-
-
-
 
 ## ApplicationMaintenanceConfigurationUpdateTypeDef
 
@@ -367,12 +367,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationMaintenanceConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationMaintenanceWindowStartTimeUpdate`: `str`
-
-
-
 
 ## ApplicationRestoreConfigurationTypeDef
 
@@ -380,15 +377,14 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationRestoreConfigurationTypeDef
 ```
 
-
 Required fields:
-- `ApplicationRestoreType`: `ApplicationRestoreType`
 
-
+- `ApplicationRestoreType`:
+  [ApplicationRestoreType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#applicationrestoretype)
 
 Optional fields:
-- `SnapshotName`: `str`
 
+- `SnapshotName`: `str`
 
 ## ApplicationSnapshotConfigurationDescriptionTypeDef
 
@@ -396,12 +392,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `SnapshotsEnabled`: `bool`
-
-
-
 
 ## ApplicationSnapshotConfigurationTypeDef
 
@@ -409,12 +402,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `SnapshotsEnabled`: `bool`
-
-
-
 
 ## ApplicationSnapshotConfigurationUpdateTypeDef
 
@@ -422,12 +412,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `SnapshotsEnabledUpdate`: `bool`
-
-
-
 
 ## ApplicationSummaryTypeDef
 
@@ -435,16 +422,15 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ApplicationName`: `str`
 - `ApplicationARN`: `str`
-- `ApplicationStatus`: `ApplicationStatus`
+- `ApplicationStatus`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#applicationstatus)
 - `ApplicationVersionId`: `int`
-- `RuntimeEnvironment`: `RuntimeEnvironment`
-
-
-
+- `RuntimeEnvironment`:
+  [RuntimeEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#runtimeenvironment)
 
 ## CSVMappingParametersTypeDef
 
@@ -452,13 +438,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CSVMappingParametersTypeDef
 ```
 
-
 Required fields:
+
 - `RecordRowDelimiter`: `str`
 - `RecordColumnDelimiter`: `str`
-
-
-
 
 ## CheckpointConfigurationDescriptionTypeDef
 
@@ -466,15 +449,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationType`: `ConfigurationType`
+
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 - `CheckpointingEnabled`: `bool`
 - `CheckpointInterval`: `int`
 - `MinPauseBetweenCheckpoints`: `int`
-
 
 ## CheckpointConfigurationTypeDef
 
@@ -482,17 +463,16 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationTypeDef
 ```
 
-
 Required fields:
-- `ConfigurationType`: `ConfigurationType`
 
-
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 
 Optional fields:
+
 - `CheckpointingEnabled`: `bool`
 - `CheckpointInterval`: `int`
 - `MinPauseBetweenCheckpoints`: `int`
-
 
 ## CheckpointConfigurationUpdateTypeDef
 
@@ -500,15 +480,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationTypeUpdate`: `ConfigurationType`
+
+- `ConfigurationTypeUpdate`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 - `CheckpointingEnabledUpdate`: `bool`
 - `CheckpointIntervalUpdate`: `int`
 - `MinPauseBetweenCheckpointsUpdate`: `int`
-
 
 ## CloudWatchLoggingOptionDescriptionTypeDef
 
@@ -516,16 +494,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `LogStreamARN`: `str`
 
-
-
 Optional fields:
+
 - `CloudWatchLoggingOptionId`: `str`
 - `RoleARN`: `str`
-
 
 ## CloudWatchLoggingOptionTypeDef
 
@@ -533,12 +509,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionTypeDef
 ```
 
-
 Required fields:
+
 - `LogStreamARN`: `str`
-
-
-
 
 ## CloudWatchLoggingOptionUpdateTypeDef
 
@@ -546,15 +519,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `CloudWatchLoggingOptionId`: `str`
 
-
-
 Optional fields:
-- `LogStreamARNUpdate`: `str`
 
+- `LogStreamARNUpdate`: `str`
 
 ## CodeContentDescriptionTypeDef
 
@@ -562,15 +533,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TextContent`: `str`
 - `CodeMD5`: `str`
 - `CodeSize`: `int`
-- `S3ApplicationCodeLocationDescription`: `"S3ApplicationCodeLocationDescriptionTypeDef"`
-
+- `S3ApplicationCodeLocationDescription`:
+  [S3ApplicationCodeLocationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3applicationcodelocationdescriptiontypedef)
 
 ## CodeContentTypeDef
 
@@ -578,14 +547,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TextContent`: `str`
-- `ZipFileContent`: `Union[bytes, IO[bytes]]`
-- `S3ContentLocation`: `"S3ContentLocationTypeDef"`
 
+- `TextContent`: `str`
+- `ZipFileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `S3ContentLocation`:
+  [S3ContentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3contentlocationtypedef)
 
 ## CodeContentUpdateTypeDef
 
@@ -593,14 +560,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TextContentUpdate`: `str`
-- `ZipFileContentUpdate`: `Union[bytes, IO[bytes]]`
-- `S3ContentLocationUpdate`: `"S3ContentLocationUpdateTypeDef"`
 
+- `TextContentUpdate`: `str`
+- `ZipFileContentUpdate`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `S3ContentLocationUpdate`:
+  [S3ContentLocationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3contentlocationupdatetypedef)
 
 ## CreateApplicationPresignedUrlResponseTypeDef
 
@@ -608,12 +573,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AuthorizedUrl`: `str`
 
+- `AuthorizedUrl`: `str`
 
 ## CreateApplicationResponseTypeDef
 
@@ -621,12 +583,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationDetail`: `"ApplicationDetailTypeDef"`
 
-
-
+- `ApplicationDetail`:
+  [ApplicationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationdetailtypedef)
 
 ## DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 
@@ -634,14 +594,12 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-- `CloudWatchLoggingOptionDescriptions`: `List["CloudWatchLoggingOptionDescriptionTypeDef"]`
-
+- `CloudWatchLoggingOptionDescriptions`:
+  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiondescriptiontypedef)\]
 
 ## DeleteApplicationInputProcessingConfigurationResponseTypeDef
 
@@ -649,13 +607,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-
 
 ## DeleteApplicationOutputResponseTypeDef
 
@@ -663,13 +618,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-
 
 ## DeleteApplicationReferenceDataSourceResponseTypeDef
 
@@ -677,13 +629,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-
 
 ## DeleteApplicationVpcConfigurationResponseTypeDef
 
@@ -691,13 +640,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
-
 
 ## DescribeApplicationResponseTypeDef
 
@@ -705,12 +651,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationDetail`: `"ApplicationDetailTypeDef"`
 
-
-
+- `ApplicationDetail`:
+  [ApplicationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationdetailtypedef)
 
 ## DescribeApplicationSnapshotResponseTypeDef
 
@@ -718,12 +662,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotResponseTypeDef
 ```
 
-
 Required fields:
-- `SnapshotDetails`: `"SnapshotDetailsTypeDef"`
 
-
-
+- `SnapshotDetails`:
+  [SnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#snapshotdetailstypedef)
 
 ## DestinationSchemaTypeDef
 
@@ -731,12 +673,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DestinationSchemaTypeDef
 ```
 
-
 Required fields:
-- `RecordFormatType`: `RecordFormatType`
 
-
-
+- `RecordFormatType`:
+  [RecordFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#recordformattype)
 
 ## DiscoverInputSchemaResponseTypeDef
 
@@ -744,15 +684,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputSchema`: `"SourceSchemaTypeDef"`
-- `ParsedInputRecords`: `List[List[str]]`
-- `ProcessedInputRecords`: `List[str]`
-- `RawInputRecords`: `List[str]`
 
+- `InputSchema`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
+- `ParsedInputRecords`: `List`\[`List`\[`str`\]\]
+- `ProcessedInputRecords`: `List`\[`str`\]
+- `RawInputRecords`: `List`\[`str`\]
 
 ## EnvironmentPropertiesTypeDef
 
@@ -760,12 +698,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertiesTypeDef
 ```
 
-
 Required fields:
-- `PropertyGroups`: `List["PropertyGroupTypeDef"]`
 
-
-
+- `PropertyGroups`:
+  `List`\[[PropertyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#propertygrouptypedef)\]
 
 ## EnvironmentPropertyDescriptionsTypeDef
 
@@ -773,12 +709,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertyDescriptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PropertyGroupDescriptions`: `List["PropertyGroupTypeDef"]`
 
+- `PropertyGroupDescriptions`:
+  `List`\[[PropertyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#propertygrouptypedef)\]
 
 ## EnvironmentPropertyUpdatesTypeDef
 
@@ -786,12 +720,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertyUpdatesTypeDef
 ```
 
-
 Required fields:
-- `PropertyGroups`: `List["PropertyGroupTypeDef"]`
 
-
-
+- `PropertyGroups`:
+  `List`\[[PropertyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#propertygrouptypedef)\]
 
 ## FlinkApplicationConfigurationDescriptionTypeDef
 
@@ -799,15 +731,15 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CheckpointConfigurationDescription`: `"CheckpointConfigurationDescriptionTypeDef"`
-- `MonitoringConfigurationDescription`: `"MonitoringConfigurationDescriptionTypeDef"`
-- `ParallelismConfigurationDescription`: `"ParallelismConfigurationDescriptionTypeDef"`
-- `JobPlanDescription`: `str`
 
+- `CheckpointConfigurationDescription`:
+  [CheckpointConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#checkpointconfigurationdescriptiontypedef)
+- `MonitoringConfigurationDescription`:
+  [MonitoringConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#monitoringconfigurationdescriptiontypedef)
+- `ParallelismConfigurationDescription`:
+  [ParallelismConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#parallelismconfigurationdescriptiontypedef)
+- `JobPlanDescription`: `str`
 
 ## FlinkApplicationConfigurationTypeDef
 
@@ -815,14 +747,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CheckpointConfiguration`: `"CheckpointConfigurationTypeDef"`
-- `MonitoringConfiguration`: `"MonitoringConfigurationTypeDef"`
-- `ParallelismConfiguration`: `"ParallelismConfigurationTypeDef"`
 
+- `CheckpointConfiguration`:
+  [CheckpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#checkpointconfigurationtypedef)
+- `MonitoringConfiguration`:
+  [MonitoringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#monitoringconfigurationtypedef)
+- `ParallelismConfiguration`:
+  [ParallelismConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#parallelismconfigurationtypedef)
 
 ## FlinkApplicationConfigurationUpdateTypeDef
 
@@ -830,14 +762,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CheckpointConfigurationUpdate`: `"CheckpointConfigurationUpdateTypeDef"`
-- `MonitoringConfigurationUpdate`: `"MonitoringConfigurationUpdateTypeDef"`
-- `ParallelismConfigurationUpdate`: `"ParallelismConfigurationUpdateTypeDef"`
 
+- `CheckpointConfigurationUpdate`:
+  [CheckpointConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#checkpointconfigurationupdatetypedef)
+- `MonitoringConfigurationUpdate`:
+  [MonitoringConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#monitoringconfigurationupdatetypedef)
+- `ParallelismConfigurationUpdate`:
+  [ParallelismConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#parallelismconfigurationupdatetypedef)
 
 ## FlinkRunConfigurationTypeDef
 
@@ -845,12 +777,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkRunConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AllowNonRestoredState`: `bool`
 
+- `AllowNonRestoredState`: `bool`
 
 ## InputDescriptionTypeDef
 
@@ -858,20 +787,23 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InputId`: `str`
 - `NamePrefix`: `str`
-- `InAppStreamNames`: `List[str]`
-- `InputProcessingConfigurationDescription`: `"InputProcessingConfigurationDescriptionTypeDef"`
-- `KinesisStreamsInputDescription`: `"KinesisStreamsInputDescriptionTypeDef"`
-- `KinesisFirehoseInputDescription`: `"KinesisFirehoseInputDescriptionTypeDef"`
-- `InputSchema`: `"SourceSchemaTypeDef"`
-- `InputParallelism`: `"InputParallelismTypeDef"`
-- `InputStartingPositionConfiguration`: `"InputStartingPositionConfigurationTypeDef"`
-
+- `InAppStreamNames`: `List`\[`str`\]
+- `InputProcessingConfigurationDescription`:
+  [InputProcessingConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationdescriptiontypedef)
+- `KinesisStreamsInputDescription`:
+  [KinesisStreamsInputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsinputdescriptiontypedef)
+- `KinesisFirehoseInputDescription`:
+  [KinesisFirehoseInputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseinputdescriptiontypedef)
+- `InputSchema`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
+- `InputParallelism`:
+  [InputParallelismTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputparallelismtypedef)
+- `InputStartingPositionConfiguration`:
+  [InputStartingPositionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputstartingpositionconfigurationtypedef)
 
 ## InputLambdaProcessorDescriptionTypeDef
 
@@ -879,15 +811,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## InputLambdaProcessorTypeDef
 
@@ -895,12 +825,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-
-
-
 
 ## InputLambdaProcessorUpdateTypeDef
 
@@ -908,12 +835,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## InputParallelismTypeDef
 
@@ -921,12 +845,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputParallelismTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Count`: `int`
 
+- `Count`: `int`
 
 ## InputParallelismUpdateTypeDef
 
@@ -934,12 +855,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputParallelismUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `CountUpdate`: `int`
-
-
-
 
 ## InputProcessingConfigurationDescriptionTypeDef
 
@@ -947,12 +865,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputLambdaProcessorDescription`: `"InputLambdaProcessorDescriptionTypeDef"`
 
+- `InputLambdaProcessorDescription`:
+  [InputLambdaProcessorDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputlambdaprocessordescriptiontypedef)
 
 ## InputProcessingConfigurationTypeDef
 
@@ -960,12 +876,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationTypeDef
 ```
 
-
 Required fields:
-- `InputLambdaProcessor`: `"InputLambdaProcessorTypeDef"`
 
-
-
+- `InputLambdaProcessor`:
+  [InputLambdaProcessorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputlambdaprocessortypedef)
 
 ## InputProcessingConfigurationUpdateTypeDef
 
@@ -973,12 +887,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
-- `InputLambdaProcessorUpdate`: `"InputLambdaProcessorUpdateTypeDef"`
 
-
-
+- `InputLambdaProcessorUpdate`:
+  [InputLambdaProcessorUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputlambdaprocessorupdatetypedef)
 
 ## InputSchemaUpdateTypeDef
 
@@ -986,14 +898,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputSchemaUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RecordFormatUpdate`: `"RecordFormatTypeDef"`
-- `RecordEncodingUpdate`: `str`
-- `RecordColumnUpdates`: `List["RecordColumnTypeDef"]`
 
+- `RecordFormatUpdate`:
+  [RecordFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#recordformattypedef)
+- `RecordEncodingUpdate`: `str`
+- `RecordColumnUpdates`:
+  `List`\[[RecordColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#recordcolumntypedef)\]
 
 ## InputStartingPositionConfigurationTypeDef
 
@@ -1001,12 +912,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputStartingPositionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputStartingPosition`: `InputStartingPosition`
 
+- `InputStartingPosition`:
+  [InputStartingPosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#inputstartingposition)
 
 ## InputTypeDef
 
@@ -1014,19 +923,22 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputTypeDef
 ```
 
-
 Required fields:
+
 - `NamePrefix`: `str`
-- `InputSchema`: `"SourceSchemaTypeDef"`
-
-
+- `InputSchema`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
 
 Optional fields:
-- `InputProcessingConfiguration`: `"InputProcessingConfigurationTypeDef"`
-- `KinesisStreamsInput`: `"KinesisStreamsInputTypeDef"`
-- `KinesisFirehoseInput`: `"KinesisFirehoseInputTypeDef"`
-- `InputParallelism`: `"InputParallelismTypeDef"`
 
+- `InputProcessingConfiguration`:
+  [InputProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationtypedef)
+- `KinesisStreamsInput`:
+  [KinesisStreamsInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsinputtypedef)
+- `KinesisFirehoseInput`:
+  [KinesisFirehoseInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseinputtypedef)
+- `InputParallelism`:
+  [InputParallelismTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputparallelismtypedef)
 
 ## InputUpdateTypeDef
 
@@ -1034,20 +946,23 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `InputId`: `str`
 
-
-
 Optional fields:
-- `NamePrefixUpdate`: `str`
-- `InputProcessingConfigurationUpdate`: `"InputProcessingConfigurationUpdateTypeDef"`
-- `KinesisStreamsInputUpdate`: `"KinesisStreamsInputUpdateTypeDef"`
-- `KinesisFirehoseInputUpdate`: `"KinesisFirehoseInputUpdateTypeDef"`
-- `InputSchemaUpdate`: `"InputSchemaUpdateTypeDef"`
-- `InputParallelismUpdate`: `"InputParallelismUpdateTypeDef"`
 
+- `NamePrefixUpdate`: `str`
+- `InputProcessingConfigurationUpdate`:
+  [InputProcessingConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputprocessingconfigurationupdatetypedef)
+- `KinesisStreamsInputUpdate`:
+  [KinesisStreamsInputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsinputupdatetypedef)
+- `KinesisFirehoseInputUpdate`:
+  [KinesisFirehoseInputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseinputupdatetypedef)
+- `InputSchemaUpdate`:
+  [InputSchemaUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputschemaupdatetypedef)
+- `InputParallelismUpdate`:
+  [InputParallelismUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputparallelismupdatetypedef)
 
 ## JSONMappingParametersTypeDef
 
@@ -1055,12 +970,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import JSONMappingParametersTypeDef
 ```
 
-
 Required fields:
+
 - `RecordRowPath`: `str`
-
-
-
 
 ## KinesisFirehoseInputDescriptionTypeDef
 
@@ -1068,15 +980,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## KinesisFirehoseInputTypeDef
 
@@ -1084,12 +994,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-
-
-
 
 ## KinesisFirehoseInputUpdateTypeDef
 
@@ -1097,12 +1004,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## KinesisFirehoseOutputDescriptionTypeDef
 
@@ -1110,15 +1014,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## KinesisFirehoseOutputTypeDef
 
@@ -1126,13 +1028,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#responsemetadata)
 
 ## KinesisFirehoseOutputUpdateTypeDef
 
@@ -1140,12 +1040,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## KinesisStreamsInputDescriptionTypeDef
 
@@ -1153,15 +1050,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## KinesisStreamsInputTypeDef
 
@@ -1169,12 +1064,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-
-
-
 
 ## KinesisStreamsInputUpdateTypeDef
 
@@ -1182,12 +1074,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## KinesisStreamsOutputDescriptionTypeDef
 
@@ -1195,15 +1084,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## KinesisStreamsOutputTypeDef
 
@@ -1211,13 +1098,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#responsemetadata)
 
 ## KinesisStreamsOutputUpdateTypeDef
 
@@ -1225,12 +1110,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## LambdaOutputDescriptionTypeDef
 
@@ -1238,15 +1120,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
 
-
-
 Optional fields:
-- `RoleARN`: `str`
 
+- `RoleARN`: `str`
 
 ## LambdaOutputTypeDef
 
@@ -1254,13 +1134,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#responsemetadata)
 
 ## LambdaOutputUpdateTypeDef
 
@@ -1268,12 +1146,9 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceARNUpdate`: `str`
-
-
-
 
 ## ListApplicationSnapshotsResponseTypeDef
 
@@ -1281,13 +1156,11 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SnapshotSummaries`: `List["SnapshotDetailsTypeDef"]`
-- `NextToken`: `str`
 
+- `SnapshotSummaries`:
+  `List`\[[SnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#snapshotdetailstypedef)\]
+- `NextToken`: `str`
 
 ## ListApplicationsResponseTypeDef
 
@@ -1295,15 +1168,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationSummaries`: `List["ApplicationSummaryTypeDef"]`
 
-
+- `ApplicationSummaries`:
+  `List`\[[ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationsummarytypedef)\]
 
 Optional fields:
-- `NextToken`: `str`
 
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1311,12 +1183,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#tagtypedef)\]
 
 ## MappingParametersTypeDef
 
@@ -1324,13 +1194,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import MappingParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `JSONMappingParameters`: `"JSONMappingParametersTypeDef"`
-- `CSVMappingParameters`: `"CSVMappingParametersTypeDef"`
 
+- `JSONMappingParameters`:
+  [JSONMappingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#jsonmappingparameterstypedef)
+- `CSVMappingParameters`:
+  [CSVMappingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#csvmappingparameterstypedef)
 
 ## MonitoringConfigurationDescriptionTypeDef
 
@@ -1338,14 +1207,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationType`: `ConfigurationType`
-- `MetricsLevel`: `MetricsLevel`
-- `LogLevel`: `LogLevel`
 
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
+- `MetricsLevel`:
+  [MetricsLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#metricslevel)
+- `LogLevel`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#loglevel)
 
 ## MonitoringConfigurationTypeDef
 
@@ -1353,16 +1222,17 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationTypeDef
 ```
 
-
 Required fields:
-- `ConfigurationType`: `ConfigurationType`
 
-
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 
 Optional fields:
-- `MetricsLevel`: `MetricsLevel`
-- `LogLevel`: `LogLevel`
 
+- `MetricsLevel`:
+  [MetricsLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#metricslevel)
+- `LogLevel`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#loglevel)
 
 ## MonitoringConfigurationUpdateTypeDef
 
@@ -1370,14 +1240,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationTypeUpdate`: `ConfigurationType`
-- `MetricsLevelUpdate`: `MetricsLevel`
-- `LogLevelUpdate`: `LogLevel`
 
+- `ConfigurationTypeUpdate`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
+- `MetricsLevelUpdate`:
+  [MetricsLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#metricslevel)
+- `LogLevelUpdate`:
+  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#loglevel)
 
 ## OutputDescriptionTypeDef
 
@@ -1385,17 +1255,18 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OutputId`: `str`
 - `Name`: `str`
-- `KinesisStreamsOutputDescription`: `"KinesisStreamsOutputDescriptionTypeDef"`
-- `KinesisFirehoseOutputDescription`: `"KinesisFirehoseOutputDescriptionTypeDef"`
-- `LambdaOutputDescription`: `"LambdaOutputDescriptionTypeDef"`
-- `DestinationSchema`: `"DestinationSchemaTypeDef"`
-
+- `KinesisStreamsOutputDescription`:
+  [KinesisStreamsOutputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsoutputdescriptiontypedef)
+- `KinesisFirehoseOutputDescription`:
+  [KinesisFirehoseOutputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseoutputdescriptiontypedef)
+- `LambdaOutputDescription`:
+  [LambdaOutputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#lambdaoutputdescriptiontypedef)
+- `DestinationSchema`:
+  [DestinationSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#destinationschematypedef)
 
 ## OutputTypeDef
 
@@ -1403,17 +1274,19 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `KinesisStreamsOutput`: `"KinesisStreamsOutputTypeDef"`
-- `KinesisFirehoseOutput`: `"KinesisFirehoseOutputTypeDef"`
-- `LambdaOutput`: `"LambdaOutputTypeDef"`
-- `DestinationSchema`: `"DestinationSchemaTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `KinesisStreamsOutput`:
+  [KinesisStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsoutputtypedef)
+- `KinesisFirehoseOutput`:
+  [KinesisFirehoseOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseoutputtypedef)
+- `LambdaOutput`:
+  [LambdaOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#lambdaoutputtypedef)
+- `DestinationSchema`:
+  [DestinationSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#destinationschematypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#responsemetadata)
 
 ## OutputUpdateTypeDef
 
@@ -1421,19 +1294,21 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `OutputId`: `str`
 
-
-
 Optional fields:
-- `NameUpdate`: `str`
-- `KinesisStreamsOutputUpdate`: `"KinesisStreamsOutputUpdateTypeDef"`
-- `KinesisFirehoseOutputUpdate`: `"KinesisFirehoseOutputUpdateTypeDef"`
-- `LambdaOutputUpdate`: `"LambdaOutputUpdateTypeDef"`
-- `DestinationSchemaUpdate`: `"DestinationSchemaTypeDef"`
 
+- `NameUpdate`: `str`
+- `KinesisStreamsOutputUpdate`:
+  [KinesisStreamsOutputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisstreamsoutputupdatetypedef)
+- `KinesisFirehoseOutputUpdate`:
+  [KinesisFirehoseOutputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#kinesisfirehoseoutputupdatetypedef)
+- `LambdaOutputUpdate`:
+  [LambdaOutputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#lambdaoutputupdatetypedef)
+- `DestinationSchemaUpdate`:
+  [DestinationSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#destinationschematypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -1441,14 +1316,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParallelismConfigurationDescriptionTypeDef
 
@@ -1456,16 +1328,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationType`: `ConfigurationType`
+
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 - `Parallelism`: `int`
 - `ParallelismPerKPU`: `int`
 - `CurrentParallelism`: `int`
 - `AutoScalingEnabled`: `bool`
-
 
 ## ParallelismConfigurationTypeDef
 
@@ -1473,17 +1343,16 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationTypeDef
 ```
 
-
 Required fields:
-- `ConfigurationType`: `ConfigurationType`
 
-
+- `ConfigurationType`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 
 Optional fields:
+
 - `Parallelism`: `int`
 - `ParallelismPerKPU`: `int`
 - `AutoScalingEnabled`: `bool`
-
 
 ## ParallelismConfigurationUpdateTypeDef
 
@@ -1491,15 +1360,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConfigurationTypeUpdate`: `ConfigurationType`
+
+- `ConfigurationTypeUpdate`:
+  [ConfigurationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#configurationtype)
 - `ParallelismUpdate`: `int`
 - `ParallelismPerKPUUpdate`: `int`
 - `AutoScalingEnabledUpdate`: `bool`
-
 
 ## PropertyGroupTypeDef
 
@@ -1507,13 +1374,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import PropertyGroupTypeDef
 ```
 
-
 Required fields:
+
 - `PropertyGroupId`: `str`
-- `PropertyMap`: `Dict[str, str]`
-
-
-
+- `PropertyMap`: `Dict`\[`str`, `str`\]
 
 ## RecordColumnTypeDef
 
@@ -1521,16 +1385,14 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import RecordColumnTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 - `SqlType`: `str`
 
-
-
 Optional fields:
-- `Mapping`: `str`
 
+- `Mapping`: `str`
 
 ## RecordFormatTypeDef
 
@@ -1538,15 +1400,15 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import RecordFormatTypeDef
 ```
 
-
 Required fields:
-- `RecordFormatType`: `RecordFormatType`
 
-
+- `RecordFormatType`:
+  [RecordFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#recordformattype)
 
 Optional fields:
-- `MappingParameters`: `"MappingParametersTypeDef"`
 
+- `MappingParameters`:
+  [MappingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#mappingparameterstypedef)
 
 ## ReferenceDataSourceDescriptionTypeDef
 
@@ -1554,17 +1416,17 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `ReferenceId`: `str`
 - `TableName`: `str`
-- `S3ReferenceDataSourceDescription`: `"S3ReferenceDataSourceDescriptionTypeDef"`
-
-
+- `S3ReferenceDataSourceDescription`:
+  [S3ReferenceDataSourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3referencedatasourcedescriptiontypedef)
 
 Optional fields:
-- `ReferenceSchema`: `"SourceSchemaTypeDef"`
 
+- `ReferenceSchema`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
 
 ## ReferenceDataSourceTypeDef
 
@@ -1572,16 +1434,16 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceTypeDef
 ```
 
-
 Required fields:
+
 - `TableName`: `str`
-- `ReferenceSchema`: `"SourceSchemaTypeDef"`
-
-
+- `ReferenceSchema`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
 
 Optional fields:
-- `S3ReferenceDataSource`: `"S3ReferenceDataSourceTypeDef"`
 
+- `S3ReferenceDataSource`:
+  [S3ReferenceDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3referencedatasourcetypedef)
 
 ## ReferenceDataSourceUpdateTypeDef
 
@@ -1589,17 +1451,17 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `ReferenceId`: `str`
 
-
-
 Optional fields:
-- `TableNameUpdate`: `str`
-- `S3ReferenceDataSourceUpdate`: `"S3ReferenceDataSourceUpdateTypeDef"`
-- `ReferenceSchemaUpdate`: `"SourceSchemaTypeDef"`
 
+- `TableNameUpdate`: `str`
+- `S3ReferenceDataSourceUpdate`:
+  [S3ReferenceDataSourceUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#s3referencedatasourceupdatetypedef)
+- `ReferenceSchemaUpdate`:
+  [SourceSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sourceschematypedef)
 
 ## ResponseMetadata
 
@@ -1607,16 +1469,13 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## RunConfigurationDescriptionTypeDef
 
@@ -1624,13 +1483,12 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationRestoreConfigurationDescription`: `"ApplicationRestoreConfigurationTypeDef"`
-- `FlinkRunConfigurationDescription`: `"FlinkRunConfigurationTypeDef"`
 
+- `ApplicationRestoreConfigurationDescription`:
+  [ApplicationRestoreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationrestoreconfigurationtypedef)
+- `FlinkRunConfigurationDescription`:
+  [FlinkRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkrunconfigurationtypedef)
 
 ## RunConfigurationTypeDef
 
@@ -1638,14 +1496,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FlinkRunConfiguration`: `"FlinkRunConfigurationTypeDef"`
-- `SqlRunConfigurations`: `List["SqlRunConfigurationTypeDef"]`
-- `ApplicationRestoreConfiguration`: `"ApplicationRestoreConfigurationTypeDef"`
 
+- `FlinkRunConfiguration`:
+  [FlinkRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkrunconfigurationtypedef)
+- `SqlRunConfigurations`:
+  `List`\[[SqlRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#sqlrunconfigurationtypedef)\]
+- `ApplicationRestoreConfiguration`:
+  [ApplicationRestoreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationrestoreconfigurationtypedef)
 
 ## RunConfigurationUpdateTypeDef
 
@@ -1653,13 +1511,12 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FlinkRunConfiguration`: `"FlinkRunConfigurationTypeDef"`
-- `ApplicationRestoreConfiguration`: `"ApplicationRestoreConfigurationTypeDef"`
 
+- `FlinkRunConfiguration`:
+  [FlinkRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#flinkrunconfigurationtypedef)
+- `ApplicationRestoreConfiguration`:
+  [ApplicationRestoreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationrestoreconfigurationtypedef)
 
 ## S3ApplicationCodeLocationDescriptionTypeDef
 
@@ -1667,16 +1524,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ApplicationCodeLocationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `BucketARN`: `str`
 - `FileKey`: `str`
 
-
-
 Optional fields:
-- `ObjectVersion`: `str`
 
+- `ObjectVersion`: `str`
 
 ## S3ConfigurationTypeDef
 
@@ -1684,13 +1539,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `BucketARN`: `str`
 - `FileKey`: `str`
-
-
-
 
 ## S3ContentLocationTypeDef
 
@@ -1698,16 +1550,14 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentLocationTypeDef
 ```
 
-
 Required fields:
+
 - `BucketARN`: `str`
 - `FileKey`: `str`
 
-
-
 Optional fields:
-- `ObjectVersion`: `str`
 
+- `ObjectVersion`: `str`
 
 ## S3ContentLocationUpdateTypeDef
 
@@ -1715,14 +1565,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentLocationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BucketARNUpdate`: `str`
 - `FileKeyUpdate`: `str`
 - `ObjectVersionUpdate`: `str`
-
 
 ## S3ReferenceDataSourceDescriptionTypeDef
 
@@ -1730,16 +1577,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `BucketARN`: `str`
 - `FileKey`: `str`
 
-
-
 Optional fields:
-- `ReferenceRoleARN`: `str`
 
+- `ReferenceRoleARN`: `str`
 
 ## S3ReferenceDataSourceTypeDef
 
@@ -1747,13 +1592,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BucketARN`: `str`
 - `FileKey`: `str`
-
 
 ## S3ReferenceDataSourceUpdateTypeDef
 
@@ -1761,13 +1603,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BucketARNUpdate`: `str`
 - `FileKeyUpdate`: `str`
-
 
 ## SnapshotDetailsTypeDef
 
@@ -1775,17 +1614,16 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SnapshotDetailsTypeDef
 ```
 
-
 Required fields:
+
 - `SnapshotName`: `str`
-- `SnapshotStatus`: `SnapshotStatus`
+- `SnapshotStatus`:
+  [SnapshotStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#snapshotstatus)
 - `ApplicationVersionId`: `int`
 
-
-
 Optional fields:
-- `SnapshotCreationTimestamp`: `datetime`
 
+- `SnapshotCreationTimestamp`: `datetime`
 
 ## SourceSchemaTypeDef
 
@@ -1793,16 +1631,16 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SourceSchemaTypeDef
 ```
 
-
 Required fields:
-- `RecordFormat`: `"RecordFormatTypeDef"`
-- `RecordColumns`: `List["RecordColumnTypeDef"]`
 
-
+- `RecordFormat`:
+  [RecordFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#recordformattypedef)
+- `RecordColumns`:
+  `List`\[[RecordColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#recordcolumntypedef)\]
 
 Optional fields:
-- `RecordEncoding`: `str`
 
+- `RecordEncoding`: `str`
 
 ## SqlApplicationConfigurationDescriptionTypeDef
 
@@ -1810,14 +1648,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputDescriptions`: `List["InputDescriptionTypeDef"]`
-- `OutputDescriptions`: `List["OutputDescriptionTypeDef"]`
-- `ReferenceDataSourceDescriptions`: `List["ReferenceDataSourceDescriptionTypeDef"]`
 
+- `InputDescriptions`:
+  `List`\[[InputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputdescriptiontypedef)\]
+- `OutputDescriptions`:
+  `List`\[[OutputDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#outputdescriptiontypedef)\]
+- `ReferenceDataSourceDescriptions`:
+  `List`\[[ReferenceDataSourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#referencedatasourcedescriptiontypedef)\]
 
 ## SqlApplicationConfigurationTypeDef
 
@@ -1825,14 +1663,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Inputs`: `List["InputTypeDef"]`
-- `Outputs`: `List["OutputTypeDef"]`
-- `ReferenceDataSources`: `List["ReferenceDataSourceTypeDef"]`
 
+- `Inputs`:
+  `List`\[[InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputtypedef)\]
+- `Outputs`:
+  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#outputtypedef)\]
+- `ReferenceDataSources`:
+  `List`\[[ReferenceDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#referencedatasourcetypedef)\]
 
 ## SqlApplicationConfigurationUpdateTypeDef
 
@@ -1840,14 +1678,14 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InputUpdates`: `List["InputUpdateTypeDef"]`
-- `OutputUpdates`: `List["OutputUpdateTypeDef"]`
-- `ReferenceDataSourceUpdates`: `List["ReferenceDataSourceUpdateTypeDef"]`
 
+- `InputUpdates`:
+  `List`\[[InputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputupdatetypedef)\]
+- `OutputUpdates`:
+  `List`\[[OutputUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#outputupdatetypedef)\]
+- `ReferenceDataSourceUpdates`:
+  `List`\[[ReferenceDataSourceUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#referencedatasourceupdatetypedef)\]
 
 ## SqlRunConfigurationTypeDef
 
@@ -1855,13 +1693,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlRunConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `InputId`: `str`
-- `InputStartingPositionConfiguration`: `"InputStartingPositionConfigurationTypeDef"`
-
-
-
+- `InputStartingPositionConfiguration`:
+  [InputStartingPositionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#inputstartingpositionconfigurationtypedef)
 
 ## TagTypeDef
 
@@ -1869,15 +1705,13 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## UpdateApplicationMaintenanceConfigurationResponseTypeDef
 
@@ -1885,13 +1719,11 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationARN`: `str`
-- `ApplicationMaintenanceConfigurationDescription`: `"ApplicationMaintenanceConfigurationDescriptionTypeDef"`
 
+- `ApplicationARN`: `str`
+- `ApplicationMaintenanceConfigurationDescription`:
+  [ApplicationMaintenanceConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationmaintenanceconfigurationdescriptiontypedef)
 
 ## UpdateApplicationResponseTypeDef
 
@@ -1899,12 +1731,10 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationResponseTypeDef
 ```
 
-
 Required fields:
-- `ApplicationDetail`: `"ApplicationDetailTypeDef"`
 
-
-
+- `ApplicationDetail`:
+  [ApplicationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationdetailtypedef)
 
 ## VpcConfigurationDescriptionTypeDef
 
@@ -1912,15 +1742,12 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `VpcConfigurationId`: `str`
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `SecurityGroupIds`: `List[str]`
-
-
-
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
 
 ## VpcConfigurationTypeDef
 
@@ -1928,13 +1755,10 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationTypeDef
 ```
 
-
 Required fields:
-- `SubnetIds`: `List[str]`
-- `SecurityGroupIds`: `List[str]`
 
-
-
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
 
 ## VpcConfigurationUpdateTypeDef
 
@@ -1942,13 +1766,11 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
+
 - `VpcConfigurationId`: `str`
 
-
-
 Optional fields:
-- `SubnetIdUpdates`: `List[str]`
-- `SecurityGroupIdUpdates`: `List[str]`
 
+- `SubnetIdUpdates`: `List`\[`str`\]
+- `SecurityGroupIdUpdates`: `List`\[`str`\]

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [FSx](./README.md) > Structures
 
-Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
-type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+Auto-generated documentation for
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+type annotations stubs module
+[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Typed dictionaries for boto3 FSx module](#typed-dictionaries-for-boto3-fsx-module)
   - [ActiveDirectoryBackupAttributesTypeDef](#activedirectorybackupattributestypedef)
@@ -60,14 +62,11 @@ type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-bot
 from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainName`: `str`
 - `ActiveDirectoryId`: `str`
 - `ResourceARN`: `str`
-
 
 ## AdministrativeActionFailureDetailsTypeDef
 
@@ -75,12 +74,9 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import AdministrativeActionFailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## AdministrativeActionTypeDef
 
@@ -88,17 +84,18 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import AdministrativeActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AdministrativeActionType`: `AdministrativeActionType`
+
+- `AdministrativeActionType`:
+  [AdministrativeActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#administrativeactiontype)
 - `ProgressPercent`: `int`
 - `RequestTime`: `datetime`
-- `Status`: `Status`
-- `TargetFileSystemValues`: `"FileSystemTypeDef"`
-- `FailureDetails`: `"AdministrativeActionFailureDetailsTypeDef"`
-
+- `Status`:
+  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#status)
+- `TargetFileSystemValues`:
+  [FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)
+- `FailureDetails`:
+  [AdministrativeActionFailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#administrativeactionfailuredetailstypedef)
 
 ## AliasTypeDef
 
@@ -106,13 +103,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import AliasTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
-- `Lifecycle`: `AliasLifecycle`
 
+- `Name`: `str`
+- `Lifecycle`:
+  [AliasLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#aliaslifecycle)
 
 ## AssociateFileSystemAliasesResponseTypeDef
 
@@ -120,12 +115,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import AssociateFileSystemAliasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Aliases`: `List["AliasTypeDef"]`
 
+- `Aliases`:
+  `List`\[[AliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#aliastypedef)\]
 
 ## BackupFailureDetailsTypeDef
 
@@ -133,12 +126,9 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import BackupFailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## BackupTypeDef
 
@@ -146,27 +136,31 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import BackupTypeDef
 ```
 
-
 Required fields:
+
 - `BackupId`: `str`
-- `Lifecycle`: `BackupLifecycle`
-- `Type`: `BackupType`
+- `Lifecycle`:
+  [BackupLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#backuplifecycle)
+- `Type`:
+  [BackupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#backuptype)
 - `CreationTime`: `datetime`
-- `FileSystem`: `"FileSystemTypeDef"`
-
-
+- `FileSystem`:
+  [FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)
 
 Optional fields:
-- `FailureDetails`: `"BackupFailureDetailsTypeDef"`
+
+- `FailureDetails`:
+  [BackupFailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#backupfailuredetailstypedef)
 - `ProgressPercent`: `int`
 - `KmsKeyId`: `str`
 - `ResourceARN`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `DirectoryInformation`: `"ActiveDirectoryBackupAttributesTypeDef"`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `DirectoryInformation`:
+  [ActiveDirectoryBackupAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#activedirectorybackupattributestypedef)
 - `OwnerId`: `str`
 - `SourceBackupId`: `str`
 - `SourceBackupRegion`: `str`
-
 
 ## CancelDataRepositoryTaskResponseTypeDef
 
@@ -174,13 +168,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CancelDataRepositoryTaskResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Lifecycle`: `DataRepositoryTaskLifecycle`
-- `TaskId`: `str`
 
+- `Lifecycle`:
+  [DataRepositoryTaskLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#datarepositorytasklifecycle)
+- `TaskId`: `str`
 
 ## CompletionReportTypeDef
 
@@ -188,17 +180,15 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CompletionReportTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `Path`: `str`
 - `Format`: `Literal['REPORT_CSV_20191124']`
 - `Scope`: `Literal['FAILED_FILES_ONLY']`
-
 
 ## CopyBackupResponseTypeDef
 
@@ -206,12 +196,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CopyBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backup`: `"BackupTypeDef"`
 
+- `Backup`:
+  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#backuptypedef)
 
 ## CreateBackupResponseTypeDef
 
@@ -219,12 +207,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backup`: `"BackupTypeDef"`
 
+- `Backup`:
+  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#backuptypedef)
 
 ## CreateDataRepositoryTaskResponseTypeDef
 
@@ -232,12 +218,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateDataRepositoryTaskResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DataRepositoryTask`: `"DataRepositoryTaskTypeDef"`
 
+- `DataRepositoryTask`:
+  [DataRepositoryTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositorytasktypedef)
 
 ## CreateFileSystemFromBackupResponseTypeDef
 
@@ -245,12 +229,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileSystem`: `"FileSystemTypeDef"`
 
+- `FileSystem`:
+  [FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)
 
 ## CreateFileSystemLustreConfigurationTypeDef
 
@@ -258,22 +240,22 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateFileSystemLustreConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WeeklyMaintenanceStartTime`: `str`
 - `ImportPath`: `str`
 - `ExportPath`: `str`
 - `ImportedFileChunkSize`: `int`
-- `DeploymentType`: `LustreDeploymentType`
-- `AutoImportPolicy`: `AutoImportPolicyType`
+- `DeploymentType`:
+  [LustreDeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#lustredeploymenttype)
+- `AutoImportPolicy`:
+  [AutoImportPolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#autoimportpolicytype)
 - `PerUnitStorageThroughput`: `int`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `DriveCacheType`: `DriveCacheType`
-
+- `DriveCacheType`:
+  [DriveCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#drivecachetype)
 
 ## CreateFileSystemResponseTypeDef
 
@@ -281,12 +263,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateFileSystemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileSystem`: `"FileSystemTypeDef"`
 
+- `FileSystem`:
+  [FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)
 
 ## CreateFileSystemWindowsConfigurationTypeDef
 
@@ -294,23 +274,23 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import CreateFileSystemWindowsConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `ThroughputCapacity`: `int`
 
-
-
 Optional fields:
+
 - `ActiveDirectoryId`: `str`
-- `SelfManagedActiveDirectoryConfiguration`: `"SelfManagedActiveDirectoryConfigurationTypeDef"`
-- `DeploymentType`: `WindowsDeploymentType`
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#selfmanagedactivedirectoryconfigurationtypedef)
+- `DeploymentType`:
+  [WindowsDeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#windowsdeploymenttype)
 - `PreferredSubnetId`: `str`
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `Aliases`: `List[str]`
-
+- `Aliases`: `List`\[`str`\]
 
 ## DataRepositoryConfigurationTypeDef
 
@@ -318,17 +298,17 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Lifecycle`: `DataRepositoryLifecycle`
+
+- `Lifecycle`:
+  [DataRepositoryLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#datarepositorylifecycle)
 - `ImportPath`: `str`
 - `ExportPath`: `str`
 - `ImportedFileChunkSize`: `int`
-- `AutoImportPolicy`: `AutoImportPolicyType`
-- `FailureDetails`: `"DataRepositoryFailureDetailsTypeDef"`
-
+- `AutoImportPolicy`:
+  [AutoImportPolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#autoimportpolicytype)
+- `FailureDetails`:
+  [DataRepositoryFailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositoryfailuredetailstypedef)
 
 ## DataRepositoryFailureDetailsTypeDef
 
@@ -336,12 +316,9 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryFailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## DataRepositoryTaskFailureDetailsTypeDef
 
@@ -349,12 +326,9 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryTaskFailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## DataRepositoryTaskFilterTypeDef
 
@@ -362,13 +336,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryTaskFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `DataRepositoryTaskFilterName`
-- `Values`: `List[str]`
 
+- `Name`:
+  [DataRepositoryTaskFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#datarepositorytaskfiltername)
+- `Values`: `List`\[`str`\]
 
 ## DataRepositoryTaskStatusTypeDef
 
@@ -376,15 +348,12 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryTaskStatusTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalCount`: `int`
 - `SucceededCount`: `int`
 - `FailedCount`: `int`
 - `LastUpdatedTime`: `datetime`
-
 
 ## DataRepositoryTaskTypeDef
 
@@ -392,26 +361,29 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DataRepositoryTaskTypeDef
 ```
 
-
 Required fields:
+
 - `TaskId`: `str`
-- `Lifecycle`: `DataRepositoryTaskLifecycle`
+- `Lifecycle`:
+  [DataRepositoryTaskLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#datarepositorytasklifecycle)
 - `Type`: `Literal['EXPORT_TO_REPOSITORY']`
 - `CreationTime`: `datetime`
 - `FileSystemId`: `str`
 
-
-
 Optional fields:
+
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ResourceARN`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `Paths`: `List[str]`
-- `FailureDetails`: `"DataRepositoryTaskFailureDetailsTypeDef"`
-- `Status`: `"DataRepositoryTaskStatusTypeDef"`
-- `Report`: `"CompletionReportTypeDef"`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Paths`: `List`\[`str`\]
+- `FailureDetails`:
+  [DataRepositoryTaskFailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositorytaskfailuredetailstypedef)
+- `Status`:
+  [DataRepositoryTaskStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositorytaskstatustypedef)
+- `Report`:
+  [CompletionReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#completionreporttypedef)
 
 ## DeleteBackupResponseTypeDef
 
@@ -419,13 +391,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteBackupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BackupId`: `str`
-- `Lifecycle`: `BackupLifecycle`
 
+- `BackupId`: `str`
+- `Lifecycle`:
+  [BackupLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#backuplifecycle)
 
 ## DeleteFileSystemLustreConfigurationTypeDef
 
@@ -433,13 +403,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteFileSystemLustreConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SkipFinalBackup`: `bool`
-- `FinalBackupTags`: `List["TagTypeDef"]`
 
+- `SkipFinalBackup`: `bool`
+- `FinalBackupTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
 
 ## DeleteFileSystemLustreResponseTypeDef
 
@@ -447,13 +415,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteFileSystemLustreResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FinalBackupId`: `str`
-- `FinalBackupTags`: `List["TagTypeDef"]`
 
+- `FinalBackupId`: `str`
+- `FinalBackupTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
 
 ## DeleteFileSystemResponseTypeDef
 
@@ -461,15 +427,15 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteFileSystemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileSystemId`: `str`
-- `Lifecycle`: `FileSystemLifecycle`
-- `WindowsResponse`: `"DeleteFileSystemWindowsResponseTypeDef"`
-- `LustreResponse`: `"DeleteFileSystemLustreResponseTypeDef"`
 
+- `FileSystemId`: `str`
+- `Lifecycle`:
+  [FileSystemLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filesystemlifecycle)
+- `WindowsResponse`:
+  [DeleteFileSystemWindowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletefilesystemwindowsresponsetypedef)
+- `LustreResponse`:
+  [DeleteFileSystemLustreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletefilesystemlustreresponsetypedef)
 
 ## DeleteFileSystemWindowsConfigurationTypeDef
 
@@ -477,13 +443,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteFileSystemWindowsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SkipFinalBackup`: `bool`
-- `FinalBackupTags`: `List["TagTypeDef"]`
 
+- `SkipFinalBackup`: `bool`
+- `FinalBackupTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
 
 ## DeleteFileSystemWindowsResponseTypeDef
 
@@ -491,13 +455,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DeleteFileSystemWindowsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FinalBackupId`: `str`
-- `FinalBackupTags`: `List["TagTypeDef"]`
 
+- `FinalBackupId`: `str`
+- `FinalBackupTags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
 
 ## DescribeBackupsResponseTypeDef
 
@@ -505,13 +467,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DescribeBackupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Backups`: `List["BackupTypeDef"]`
-- `NextToken`: `str`
 
+- `Backups`:
+  `List`\[[BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#backuptypedef)\]
+- `NextToken`: `str`
 
 ## DescribeDataRepositoryTasksResponseTypeDef
 
@@ -519,13 +479,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DescribeDataRepositoryTasksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DataRepositoryTasks`: `List["DataRepositoryTaskTypeDef"]`
-- `NextToken`: `str`
 
+- `DataRepositoryTasks`:
+  `List`\[[DataRepositoryTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositorytasktypedef)\]
+- `NextToken`: `str`
 
 ## DescribeFileSystemAliasesResponseTypeDef
 
@@ -533,13 +491,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DescribeFileSystemAliasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Aliases`: `List["AliasTypeDef"]`
-- `NextToken`: `str`
 
+- `Aliases`:
+  `List`\[[AliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#aliastypedef)\]
+- `NextToken`: `str`
 
 ## DescribeFileSystemsResponseTypeDef
 
@@ -547,13 +503,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DescribeFileSystemsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileSystems`: `List["FileSystemTypeDef"]`
-- `NextToken`: `str`
 
+- `FileSystems`:
+  `List`\[[FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)\]
+- `NextToken`: `str`
 
 ## DisassociateFileSystemAliasesResponseTypeDef
 
@@ -561,12 +515,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import DisassociateFileSystemAliasesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Aliases`: `List["AliasTypeDef"]`
 
+- `Aliases`:
+  `List`\[[AliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#aliastypedef)\]
 
 ## FileSystemFailureDetailsTypeDef
 
@@ -574,12 +526,9 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import FileSystemFailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## FileSystemTypeDef
 
@@ -587,29 +536,34 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import FileSystemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OwnerId`: `str`
 - `CreationTime`: `datetime`
 - `FileSystemId`: `str`
-- `FileSystemType`: `FileSystemType`
-- `Lifecycle`: `FileSystemLifecycle`
-- `FailureDetails`: `"FileSystemFailureDetailsTypeDef"`
+- `FileSystemType`:
+  [FileSystemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filesystemtype)
+- `Lifecycle`:
+  [FileSystemLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filesystemlifecycle)
+- `FailureDetails`:
+  [FileSystemFailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemfailuredetailstypedef)
 - `StorageCapacity`: `int`
-- `StorageType`: `StorageType`
+- `StorageType`:
+  [StorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#storagetype)
 - `VpcId`: `str`
-- `SubnetIds`: `List[str]`
-- `NetworkInterfaceIds`: `List[str]`
+- `SubnetIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `List`\[`str`\]
 - `DNSName`: `str`
 - `KmsKeyId`: `str`
 - `ResourceARN`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `WindowsConfiguration`: `"WindowsFileSystemConfigurationTypeDef"`
-- `LustreConfiguration`: `"LustreFileSystemConfigurationTypeDef"`
-- `AdministrativeActions`: `List["AdministrativeActionTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `WindowsConfiguration`:
+  [WindowsFileSystemConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#windowsfilesystemconfigurationtypedef)
+- `LustreConfiguration`:
+  [LustreFileSystemConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#lustrefilesystemconfigurationtypedef)
+- `AdministrativeActions`:
+  `List`\[[AdministrativeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#administrativeactiontypedef)\]
 
 ## FilterTypeDef
 
@@ -617,13 +571,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import FilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `FilterName`
-- `Values`: `List[str]`
 
+- `Name`:
+  [FilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filtername)
+- `Values`: `List`\[`str`\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -631,13 +583,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `List["TagTypeDef"]`
-- `NextToken`: `str`
 
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `NextToken`: `str`
 
 ## LustreFileSystemConfigurationTypeDef
 
@@ -645,20 +595,20 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import LustreFileSystemConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WeeklyMaintenanceStartTime`: `str`
-- `DataRepositoryConfiguration`: `"DataRepositoryConfigurationTypeDef"`
-- `DeploymentType`: `LustreDeploymentType`
+- `DataRepositoryConfiguration`:
+  [DataRepositoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositoryconfigurationtypedef)
+- `DeploymentType`:
+  [LustreDeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#lustredeploymenttype)
 - `PerUnitStorageThroughput`: `int`
 - `MountName`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `DriveCacheType`: `DriveCacheType`
-
+- `DriveCacheType`:
+  [DriveCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#drivecachetype)
 
 ## PaginatorConfigTypeDef
 
@@ -666,14 +616,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## SelfManagedActiveDirectoryAttributesTypeDef
 
@@ -681,16 +628,13 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import SelfManagedActiveDirectoryAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DomainName`: `str`
 - `OrganizationalUnitDistinguishedName`: `str`
 - `FileSystemAdministratorsGroup`: `str`
 - `UserName`: `str`
-- `DnsIps`: `List[str]`
-
+- `DnsIps`: `List`\[`str`\]
 
 ## SelfManagedActiveDirectoryConfigurationTypeDef
 
@@ -698,19 +642,17 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import SelfManagedActiveDirectoryConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `DomainName`: `str`
 - `UserName`: `str`
 - `Password`: `str`
-- `DnsIps`: `List[str]`
-
-
+- `DnsIps`: `List`\[`str`\]
 
 Optional fields:
+
 - `OrganizationalUnitDistinguishedName`: `str`
 - `FileSystemAdministratorsGroup`: `str`
-
 
 ## SelfManagedActiveDirectoryConfigurationUpdatesTypeDef
 
@@ -718,14 +660,11 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import SelfManagedActiveDirectoryConfigurationUpdatesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UserName`: `str`
 - `Password`: `str`
-- `DnsIps`: `List[str]`
-
+- `DnsIps`: `List`\[`str`\]
 
 ## TagTypeDef
 
@@ -733,13 +672,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## UpdateFileSystemLustreConfigurationTypeDef
 
@@ -747,15 +683,13 @@ Required fields:
 from mypy_boto3_fsx.type_defs import UpdateFileSystemLustreConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
-- `AutoImportPolicy`: `AutoImportPolicyType`
-
+- `AutoImportPolicy`:
+  [AutoImportPolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#autoimportpolicytype)
 
 ## UpdateFileSystemResponseTypeDef
 
@@ -763,12 +697,10 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import UpdateFileSystemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FileSystem`: `"FileSystemTypeDef"`
 
+- `FileSystem`:
+  [FileSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filesystemtypedef)
 
 ## UpdateFileSystemWindowsConfigurationTypeDef
 
@@ -776,16 +708,14 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import UpdateFileSystemWindowsConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `ThroughputCapacity`: `int`
-- `SelfManagedActiveDirectoryConfiguration`: `"SelfManagedActiveDirectoryConfigurationUpdatesTypeDef"`
-
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#selfmanagedactivedirectoryconfigurationupdatestypedef)
 
 ## WindowsFileSystemConfigurationTypeDef
 
@@ -793,21 +723,22 @@ Optional fields:
 from mypy_boto3_fsx.type_defs import WindowsFileSystemConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActiveDirectoryId`: `str`
-- `SelfManagedActiveDirectoryConfiguration`: `"SelfManagedActiveDirectoryAttributesTypeDef"`
-- `DeploymentType`: `WindowsDeploymentType`
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#selfmanagedactivedirectoryattributestypedef)
+- `DeploymentType`:
+  [WindowsDeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#windowsdeploymenttype)
 - `RemoteAdministrationEndpoint`: `str`
 - `PreferredSubnetId`: `str`
 - `PreferredFileServerIp`: `str`
 - `ThroughputCapacity`: `int`
-- `MaintenanceOperationsInProgress`: `List[FileSystemMaintenanceOperation]`
+- `MaintenanceOperationsInProgress`:
+  `List`\[[FileSystemMaintenanceOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filesystemmaintenanceoperation)\]
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `Aliases`: `List["AliasTypeDef"]`
-
+- `Aliases`:
+  `List`\[[AliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#aliastypedef)\]

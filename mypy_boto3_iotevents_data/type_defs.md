@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTEventsData](./README.md) > Structures
 
-Auto-generated documentation for [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
-type annotations stubs module [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+Auto-generated documentation for
+[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+type annotations stubs module
+[mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 - [Typed dictionaries for boto3 IoTEventsData module](#typed-dictionaries-for-boto3-ioteventsdata-module)
   - [BatchPutMessageErrorEntryTypeDef](#batchputmessageerrorentrytypedef)
@@ -30,14 +32,12 @@ type annotations stubs module [mypy_boto3_iotevents_data](https://pypi.org/proje
 from mypy_boto3_iotevents_data.type_defs import BatchPutMessageErrorEntryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `messageId`: `str`
-- `errorCode`: `ErrorCode`
-- `errorMessage`: `str`
 
+- `messageId`: `str`
+- `errorCode`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/literals.html#errorcode)
+- `errorMessage`: `str`
 
 ## BatchPutMessageResponseTypeDef
 
@@ -45,12 +45,10 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import BatchPutMessageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BatchPutMessageErrorEntries`: `List["BatchPutMessageErrorEntryTypeDef"]`
 
+- `BatchPutMessageErrorEntries`:
+  `List`\[[BatchPutMessageErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#batchputmessageerrorentrytypedef)\]
 
 ## BatchUpdateDetectorErrorEntryTypeDef
 
@@ -58,14 +56,12 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorErrorEntryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `messageId`: `str`
-- `errorCode`: `ErrorCode`
-- `errorMessage`: `str`
 
+- `messageId`: `str`
+- `errorCode`:
+  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/literals.html#errorcode)
+- `errorMessage`: `str`
 
 ## BatchUpdateDetectorResponseTypeDef
 
@@ -73,12 +69,10 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `batchUpdateDetectorErrorEntries`: `List["BatchUpdateDetectorErrorEntryTypeDef"]`
 
+- `batchUpdateDetectorErrorEntries`:
+  `List`\[[BatchUpdateDetectorErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#batchupdatedetectorerrorentrytypedef)\]
 
 ## DescribeDetectorResponseTypeDef
 
@@ -86,12 +80,10 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import DescribeDetectorResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detector`: `"DetectorTypeDef"`
 
+- `detector`:
+  [DetectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#detectortypedef)
 
 ## DetectorStateDefinitionTypeDef
 
@@ -99,14 +91,13 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import DetectorStateDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `stateName`: `str`
-- `variables`: `List["VariableDefinitionTypeDef"]`
-- `timers`: `List["TimerDefinitionTypeDef"]`
-
-
-
+- `variables`:
+  `List`\[[VariableDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#variabledefinitiontypedef)\]
+- `timers`:
+  `List`\[[TimerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#timerdefinitiontypedef)\]
 
 ## DetectorStateSummaryTypeDef
 
@@ -114,12 +105,9 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import DetectorStateSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `stateName`: `str`
 
+- `stateName`: `str`
 
 ## DetectorStateTypeDef
 
@@ -127,14 +115,13 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import DetectorStateTypeDef
 ```
 
-
 Required fields:
+
 - `stateName`: `str`
-- `variables`: `List["VariableTypeDef"]`
-- `timers`: `List["TimerTypeDef"]`
-
-
-
+- `variables`:
+  `List`\[[VariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#variabletypedef)\]
+- `timers`:
+  `List`\[[TimerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#timertypedef)\]
 
 ## DetectorSummaryTypeDef
 
@@ -142,17 +129,15 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import DetectorSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorModelName`: `str`
 - `keyValue`: `str`
 - `detectorModelVersion`: `str`
-- `state`: `"DetectorStateSummaryTypeDef"`
+- `state`:
+  [DetectorStateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#detectorstatesummarytypedef)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## DetectorTypeDef
 
@@ -160,17 +145,15 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import DetectorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorModelName`: `str`
 - `keyValue`: `str`
 - `detectorModelVersion`: `str`
-- `state`: `"DetectorStateTypeDef"`
+- `state`:
+  [DetectorStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#detectorstatetypedef)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-
 
 ## ListDetectorsResponseTypeDef
 
@@ -178,13 +161,11 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import ListDetectorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorSummaries`: `List["DetectorSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `detectorSummaries`:
+  `List`\[[DetectorSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#detectorsummarytypedef)\]
+- `nextToken`: `str`
 
 ## MessageTypeDef
 
@@ -192,14 +173,11 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import MessageTypeDef
 ```
 
-
 Required fields:
+
 - `messageId`: `str`
 - `inputName`: `str`
-- `payload`: `Union[bytes, IO[bytes]]`
-
-
-
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## TimerDefinitionTypeDef
 
@@ -207,13 +185,10 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import TimerDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `seconds`: `int`
-
-
-
 
 ## TimerTypeDef
 
@@ -221,13 +196,10 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import TimerTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `timestamp`: `datetime`
-
-
-
 
 ## UpdateDetectorRequestTypeDef
 
@@ -235,17 +207,16 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import UpdateDetectorRequestTypeDef
 ```
 
-
 Required fields:
+
 - `messageId`: `str`
 - `detectorModelName`: `str`
-- `state`: `"DetectorStateDefinitionTypeDef"`
-
-
+- `state`:
+  [DetectorStateDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#detectorstatedefinitiontypedef)
 
 Optional fields:
-- `keyValue`: `str`
 
+- `keyValue`: `str`
 
 ## VariableDefinitionTypeDef
 
@@ -253,13 +224,10 @@ Optional fields:
 from mypy_boto3_iotevents_data.type_defs import VariableDefinitionTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `value`: `str`
-
-
-
 
 ## VariableTypeDef
 
@@ -267,10 +235,7 @@ Required fields:
 from mypy_boto3_iotevents_data.type_defs import VariableTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 - `value`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EC2
 
-Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+Auto-generated documentation for
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+type annotations stubs module
+[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ```bash
 pip install mypy-boto3-ec2
@@ -23,7 +25,7 @@ pip install mypy-boto3-ec2
 
 ## EC2Client
 
-Type annotations for  `boto3.client("ec2")` as [EC2Client](./client.md)
+Type annotations for `boto3.client("ec2")` as [EC2Client](./client.md)
 
 Can be used directly:
 
@@ -31,12 +33,10 @@ Can be used directly:
 from mypy_boto3_ec2.client import EC2Client
 ```
 
-
 EC2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_reserved_instances_exchange_quote](./client.md#accept-reserved-instances-exchange-quote)
 - [accept_transit_gateway_multicast_domain_associations](./client.md#accept-transit-gateway-multicast-domain-associations)
 - [accept_transit_gateway_peering_attachment](./client.md#accept-transit-gateway-peering-attachment)
@@ -491,25 +491,20 @@ EC2Client [exceptions](./client.md#exceptions)
 - [update_security_group_rule_descriptions_ingress](./client.md#update-security-group-rule-descriptions-ingress)
 - [withdraw_byoip_cidr](./client.md#withdraw-byoip-cidr)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
-
-
-
 
 ## EC2ServiceResource
 
-Type annotations for  `boto3.resource("ec2")` as [EC2ServiceResource](./service_resource.md)
+Type annotations for `boto3.resource("ec2")` as
+[EC2ServiceResource](./service_resource.md)
 
 Can be used directly:
 
 ```python
 from mypy_boto3_ec2.service_resource import EC2ServiceResource
 ```
-
 
 ### Collections
 
@@ -538,9 +533,6 @@ from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesColle
 - [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresource.vpc-addresses)
 - [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresource.vpc-peering-connections)
 - [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresource.vpcs)
-
-
-
 
 ### Resources
 
@@ -575,13 +567,10 @@ from mypy_boto3_ec2.service_resource import ClassicAddress, ...
 - [VpcPeeringConnection](./service_resource.md#vpcpeeringconnection)
 - [VpcAddress](./service_resource.md#vpcaddress)
 
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ec2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ec2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -690,12 +679,10 @@ from mypy_boto3_ec2.paginators import DescribeAddressesAttributePaginator, ...
 - [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - [SearchTransitGatewayMulticastGroupsPaginator](./paginators.md#searchtransitgatewaymulticastgroupspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("ec2").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("ec2").get_waiter("...")`.
 
 Can be used directly:
 
@@ -735,9 +722,6 @@ from mypy_boto3_ec2.waiters import BundleTaskCompleteWaiter, ...
 - [VpcPeeringConnectionExistsWaiter](./waiters.md#vpcpeeringconnectionexistswaiter)
 - [VpnConnectionAvailableWaiter](./waiters.md#vpnconnectionavailablewaiter)
 - [VpnConnectionDeletedWaiter](./waiters.md#vpnconnectiondeletedwaiter)
-
-
-
 
 ## Literals
 
@@ -1104,13 +1088,10 @@ from mypy_boto3_ec2.literals import AccountAttributeName, ...
 - [VpnStaticRouteSource](./literals.md#vpnstaticroutesource)
 - [scope](./literals.md#scope)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Support](./README.md) > Paginators
 
-Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+Auto-generated documentation for
+[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+type annotations stubs module
+[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Paginators for boto3 Support module](#paginators-for-boto3-support-module)
   - [DescribeCasesPaginator](#describecasespaginator)
@@ -22,26 +24,28 @@ def get_describe_cases_paginator() -> DescribeCasesPaginator:
     return boto3.client("support").get_paginator("describe_cases")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
+Boto3 documentation:
+[Support.Paginator.DescribeCases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
 
-```python
-class DescribeCasesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        caseIdList: List[str] = None,
-        displayId: str = None,
-        afterTime: str = None,
-        beforeTime: str = None,
-        includeResolvedCases: bool = None,
-        language: str = None,
-        includeCommunications: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCasesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeCasesPaginator.paginate` method:
+
+- `caseIdList`: `List`\[`str`\]
+- `displayId`: `str`
+- `afterTime`: `str`
+- `beforeTime`: `str`
+- `includeResolvedCases`: `bool`
+- `language`: `str`
+- `includeCommunications`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCasesPaginator.paginate` returns
+`Iterator`\[[DescribeCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecasesresponsetypedef)\].
+
 ## DescribeCommunicationsPaginator
 
-Type annotations for `boto3.client("support").get_paginator("describe_communications")`.
+Type annotations for
+`boto3.client("support").get_paginator("describe_communications")`.
 
 Can be used directly:
 
@@ -52,16 +56,16 @@ def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
     return boto3.client("support").get_paginator("describe_communications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
+Boto3 documentation:
+[Support.Paginator.DescribeCommunications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
-```python
-class DescribeCommunicationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        caseId: str,
-        beforeTime: str = None,
-        afterTime: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCommunicationsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeCommunicationsPaginator.paginate` method:
+
+- `caseId`: `str` *(required)*
+- `beforeTime`: `str`
+- `afterTime`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCommunicationsPaginator.paginate` returns
+`Iterator`\[[DescribeCommunicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecommunicationsresponsetypedef)\].

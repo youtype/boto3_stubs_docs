@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeGuruProfiler](./README.md) > Literals
 
-Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
-type annotations stubs module [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+Auto-generated documentation for
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+type annotations stubs module
+[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Literals for boto3 CodeGuruProfiler module](#literals-for-boto3-codeguruprofiler-module)
   - [ActionGroup](#actiongroup)

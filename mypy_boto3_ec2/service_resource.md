@@ -2,70 +2,73 @@
 
 > [Index](../README.md) > [EC2](./README.md) > EC2ServiceResource
 
-Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+Auto-generated documentation for
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+type annotations stubs module
+[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [EC2ServiceResource for boto3 EC2 module](#ec2serviceresource-for-boto3-ec2-module)
   - [EC2ServiceResource](#ec2serviceresource)
-  - [Methods](#methods)
-    - [EC2ServiceResource.ClassicAddress](#ec2serviceresourceclassicaddress)
-    - [EC2ServiceResource.DhcpOptions](#ec2serviceresourcedhcpoptions)
-    - [EC2ServiceResource.Image](#ec2serviceresourceimage)
-    - [EC2ServiceResource.Instance](#ec2serviceresourceinstance)
-    - [EC2ServiceResource.InternetGateway](#ec2serviceresourceinternetgateway)
-    - [EC2ServiceResource.KeyPair](#ec2serviceresourcekeypair)
-    - [EC2ServiceResource.NetworkAcl](#ec2serviceresourcenetworkacl)
-    - [EC2ServiceResource.NetworkInterface](#ec2serviceresourcenetworkinterface)
-    - [EC2ServiceResource.NetworkInterfaceAssociation](#ec2serviceresourcenetworkinterfaceassociation)
-    - [EC2ServiceResource.PlacementGroup](#ec2serviceresourceplacementgroup)
-    - [EC2ServiceResource.Route](#ec2serviceresourceroute)
-    - [EC2ServiceResource.RouteTable](#ec2serviceresourceroutetable)
-    - [EC2ServiceResource.RouteTableAssociation](#ec2serviceresourceroutetableassociation)
-    - [EC2ServiceResource.SecurityGroup](#ec2serviceresourcesecuritygroup)
-    - [EC2ServiceResource.Snapshot](#ec2serviceresourcesnapshot)
-    - [EC2ServiceResource.Subnet](#ec2serviceresourcesubnet)
-    - [EC2ServiceResource.Tag](#ec2serviceresourcetag)
-    - [EC2ServiceResource.Volume](#ec2serviceresourcevolume)
-    - [EC2ServiceResource.Vpc](#ec2serviceresourcevpc)
-    - [EC2ServiceResource.VpcAddress](#ec2serviceresourcevpcaddress)
-    - [EC2ServiceResource.VpcPeeringConnection](#ec2serviceresourcevpcpeeringconnection)
-    - [EC2ServiceResource.create_dhcp_options](#ec2serviceresourcecreate_dhcp_options)
-    - [EC2ServiceResource.create_instances](#ec2serviceresourcecreate_instances)
-    - [EC2ServiceResource.create_internet_gateway](#ec2serviceresourcecreate_internet_gateway)
-    - [EC2ServiceResource.create_key_pair](#ec2serviceresourcecreate_key_pair)
-    - [EC2ServiceResource.create_network_acl](#ec2serviceresourcecreate_network_acl)
-    - [EC2ServiceResource.create_network_interface](#ec2serviceresourcecreate_network_interface)
-    - [EC2ServiceResource.create_placement_group](#ec2serviceresourcecreate_placement_group)
-    - [EC2ServiceResource.create_route_table](#ec2serviceresourcecreate_route_table)
-    - [EC2ServiceResource.create_security_group](#ec2serviceresourcecreate_security_group)
-    - [EC2ServiceResource.create_snapshot](#ec2serviceresourcecreate_snapshot)
-    - [EC2ServiceResource.create_subnet](#ec2serviceresourcecreate_subnet)
-    - [EC2ServiceResource.create_tags](#ec2serviceresourcecreate_tags)
-    - [EC2ServiceResource.create_volume](#ec2serviceresourcecreate_volume)
-    - [EC2ServiceResource.create_vpc](#ec2serviceresourcecreate_vpc)
-    - [EC2ServiceResource.create_vpc_peering_connection](#ec2serviceresourcecreate_vpc_peering_connection)
-    - [EC2ServiceResource.disassociate_route_table](#ec2serviceresourcedisassociate_route_table)
-    - [EC2ServiceResource.get_available_subresources](#ec2serviceresourceget_available_subresources)
-    - [EC2ServiceResource.import_key_pair](#ec2serviceresourceimport_key_pair)
-    - [EC2ServiceResource.register_image](#ec2serviceresourceregister_image)
+  - [Attributes](#attributes)
   - [Collections](#collections)
-    - [EC2ServiceResource.classic_addresses](#ec2serviceresourceclassic_addresses)
-    - [EC2ServiceResource.dhcp_options_sets](#ec2serviceresourcedhcp_options_sets)
-    - [EC2ServiceResource.images](#ec2serviceresourceimages)
-    - [EC2ServiceResource.instances](#ec2serviceresourceinstances)
-    - [EC2ServiceResource.internet_gateways](#ec2serviceresourceinternet_gateways)
-    - [EC2ServiceResource.key_pairs](#ec2serviceresourcekey_pairs)
-    - [EC2ServiceResource.network_acls](#ec2serviceresourcenetwork_acls)
-    - [EC2ServiceResource.network_interfaces](#ec2serviceresourcenetwork_interfaces)
-    - [EC2ServiceResource.placement_groups](#ec2serviceresourceplacement_groups)
-    - [EC2ServiceResource.route_tables](#ec2serviceresourceroute_tables)
-    - [EC2ServiceResource.security_groups](#ec2serviceresourcesecurity_groups)
-    - [EC2ServiceResource.snapshots](#ec2serviceresourcesnapshots)
-    - [EC2ServiceResource.subnets](#ec2serviceresourcesubnets)
-    - [EC2ServiceResource.volumes](#ec2serviceresourcevolumes)
-    - [EC2ServiceResource.vpc_addresses](#ec2serviceresourcevpc_addresses)
-    - [EC2ServiceResource.vpc_peering_connections](#ec2serviceresourcevpc_peering_connections)
-    - [EC2ServiceResource.vpcs](#ec2serviceresourcevpcs)
+    - [ServiceResourceClassicAddressesCollection](#serviceresourceclassicaddressescollection)
+    - [ServiceResourceDhcpOptionsSetsCollection](#serviceresourcedhcpoptionssetscollection)
+    - [ServiceResourceImagesCollection](#serviceresourceimagescollection)
+    - [ServiceResourceInstancesCollection](#serviceresourceinstancescollection)
+    - [ServiceResourceInternetGatewaysCollection](#serviceresourceinternetgatewayscollection)
+    - [ServiceResourceKeyPairsCollection](#serviceresourcekeypairscollection)
+    - [ServiceResourceNetworkAclsCollection](#serviceresourcenetworkaclscollection)
+    - [ServiceResourceNetworkInterfacesCollection](#serviceresourcenetworkinterfacescollection)
+    - [ServiceResourcePlacementGroupsCollection](#serviceresourceplacementgroupscollection)
+    - [ServiceResourceRouteTablesCollection](#serviceresourceroutetablescollection)
+    - [ServiceResourceSecurityGroupsCollection](#serviceresourcesecuritygroupscollection)
+    - [ServiceResourceSnapshotsCollection](#serviceresourcesnapshotscollection)
+    - [ServiceResourceSubnetsCollection](#serviceresourcesubnetscollection)
+    - [ServiceResourceVolumesCollection](#serviceresourcevolumescollection)
+    - [ServiceResourceVpcAddressesCollection](#serviceresourcevpcaddressescollection)
+    - [ServiceResourceVpcPeeringConnectionsCollection](#serviceresourcevpcpeeringconnectionscollection)
+    - [ServiceResourceVpcsCollection](#serviceresourcevpcscollection)
+  - [Methods](#methods)
+    - [EC2ServiceResource.ClassicAddress method](#ec2serviceresourceclassicaddress-method)
+    - [EC2ServiceResource.DhcpOptions method](#ec2serviceresourcedhcpoptions-method)
+    - [EC2ServiceResource.Image method](#ec2serviceresourceimage-method)
+    - [EC2ServiceResource.Instance method](#ec2serviceresourceinstance-method)
+    - [EC2ServiceResource.InternetGateway method](#ec2serviceresourceinternetgateway-method)
+    - [EC2ServiceResource.KeyPair method](#ec2serviceresourcekeypair-method)
+    - [EC2ServiceResource.NetworkAcl method](#ec2serviceresourcenetworkacl-method)
+    - [EC2ServiceResource.NetworkInterface method](#ec2serviceresourcenetworkinterface-method)
+    - [EC2ServiceResource.NetworkInterfaceAssociation method](#ec2serviceresourcenetworkinterfaceassociation-method)
+    - [EC2ServiceResource.PlacementGroup method](#ec2serviceresourceplacementgroup-method)
+    - [EC2ServiceResource.Route method](#ec2serviceresourceroute-method)
+    - [EC2ServiceResource.RouteTable method](#ec2serviceresourceroutetable-method)
+    - [EC2ServiceResource.RouteTableAssociation method](#ec2serviceresourceroutetableassociation-method)
+    - [EC2ServiceResource.SecurityGroup method](#ec2serviceresourcesecuritygroup-method)
+    - [EC2ServiceResource.Snapshot method](#ec2serviceresourcesnapshot-method)
+    - [EC2ServiceResource.Subnet method](#ec2serviceresourcesubnet-method)
+    - [EC2ServiceResource.Tag method](#ec2serviceresourcetag-method)
+    - [EC2ServiceResource.Volume method](#ec2serviceresourcevolume-method)
+    - [EC2ServiceResource.Vpc method](#ec2serviceresourcevpc-method)
+    - [EC2ServiceResource.VpcAddress method](#ec2serviceresourcevpcaddress-method)
+    - [EC2ServiceResource.VpcPeeringConnection method](#ec2serviceresourcevpcpeeringconnection-method)
+    - [EC2ServiceResource.create_dhcp_options method](#ec2serviceresourcecreate_dhcp_options-method)
+    - [EC2ServiceResource.create_instances method](#ec2serviceresourcecreate_instances-method)
+    - [EC2ServiceResource.create_internet_gateway method](#ec2serviceresourcecreate_internet_gateway-method)
+    - [EC2ServiceResource.create_key_pair method](#ec2serviceresourcecreate_key_pair-method)
+    - [EC2ServiceResource.create_network_acl method](#ec2serviceresourcecreate_network_acl-method)
+    - [EC2ServiceResource.create_network_interface method](#ec2serviceresourcecreate_network_interface-method)
+    - [EC2ServiceResource.create_placement_group method](#ec2serviceresourcecreate_placement_group-method)
+    - [EC2ServiceResource.create_route_table method](#ec2serviceresourcecreate_route_table-method)
+    - [EC2ServiceResource.create_security_group method](#ec2serviceresourcecreate_security_group-method)
+    - [EC2ServiceResource.create_snapshot method](#ec2serviceresourcecreate_snapshot-method)
+    - [EC2ServiceResource.create_subnet method](#ec2serviceresourcecreate_subnet-method)
+    - [EC2ServiceResource.create_tags method](#ec2serviceresourcecreate_tags-method)
+    - [EC2ServiceResource.create_volume method](#ec2serviceresourcecreate_volume-method)
+    - [EC2ServiceResource.create_vpc method](#ec2serviceresourcecreate_vpc-method)
+    - [EC2ServiceResource.create_vpc_peering_connection method](#ec2serviceresourcecreate_vpc_peering_connection-method)
+    - [EC2ServiceResource.disassociate_route_table method](#ec2serviceresourcedisassociate_route_table-method)
+    - [EC2ServiceResource.get_available_subresources method](#ec2serviceresourceget_available_subresources-method)
+    - [EC2ServiceResource.import_key_pair method](#ec2serviceresourceimport_key_pair-method)
+    - [EC2ServiceResource.register_image method](#ec2serviceresourceregister_image-method)
   - [ClassicAddress](#classicaddress)
     - [ClassicAddress attributes](#classicaddress-attributes)
     - [ClassicAddress methods](#classicaddress-methods)
@@ -77,8 +80,8 @@ type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-bot
     - [Image methods](#image-methods)
   - [Instance](#instance)
     - [Instance attributes](#instance-attributes)
-    - [Instance methods](#instance-methods)
     - [Instance collections](#instance-collections)
+    - [Instance methods](#instance-methods)
   - [InternetGateway](#internetgateway)
     - [InternetGateway attributes](#internetgateway-attributes)
     - [InternetGateway methods](#internetgateway-methods)
@@ -99,8 +102,8 @@ type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-bot
     - [NetworkInterfaceAssociation methods](#networkinterfaceassociation-methods)
   - [PlacementGroup](#placementgroup)
     - [PlacementGroup attributes](#placementgroup-attributes)
-    - [PlacementGroup methods](#placementgroup-methods)
     - [PlacementGroup collections](#placementgroup-collections)
+    - [PlacementGroup methods](#placementgroup-methods)
   - [Route](#route)
     - [Route attributes](#route-attributes)
     - [Route methods](#route-methods)
@@ -118,19 +121,19 @@ type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-bot
     - [Snapshot methods](#snapshot-methods)
   - [Subnet](#subnet)
     - [Subnet attributes](#subnet-attributes)
-    - [Subnet methods](#subnet-methods)
     - [Subnet collections](#subnet-collections)
+    - [Subnet methods](#subnet-methods)
   - [Tag](#tag)
     - [Tag attributes](#tag-attributes)
     - [Tag methods](#tag-methods)
   - [Volume](#volume)
     - [Volume attributes](#volume-attributes)
-    - [Volume methods](#volume-methods)
     - [Volume collections](#volume-collections)
+    - [Volume methods](#volume-methods)
   - [Vpc](#vpc)
     - [Vpc attributes](#vpc-attributes)
-    - [Vpc methods](#vpc-methods)
     - [Vpc collections](#vpc-collections)
+    - [Vpc methods](#vpc-methods)
   - [VpcPeeringConnection](#vpcpeeringconnection)
     - [VpcPeeringConnection attributes](#vpcpeeringconnection-attributes)
     - [VpcPeeringConnection methods](#vpcpeeringconnection-methods)
@@ -140,7 +143,8 @@ type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-bot
 
 ## EC2ServiceResource
 
-Type annotations for `boto3.resource("ec2")`, included resources and collections.
+Type annotations for `boto3.resource("ec2")`, included resources and
+collections.
 
 Can be used directly:
 
@@ -151,775 +155,63 @@ def get_ec2_resource() -> EC2ServiceResource:
     return boto3.resource("ec2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource)
+Boto3 documentation:
+[EC2.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource)
 
+## Attributes
 
-## Methods
+- `classic_addresses`:
+  [ServiceResourceClassicAddressesCollection](#serviceresourceclassicaddressescollection)
 
-### EC2ServiceResource.ClassicAddress
+- `dhcp_options_sets`:
+  [ServiceResourceDhcpOptionsSetsCollection](#serviceresourcedhcpoptionssetscollection)
 
-Type annotations for `boto3.resource("ec2").ClassicAddress` method.
+- `images`: [ServiceResourceImagesCollection](#serviceresourceimagescollection)
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.ClassicAddress]
+- `instances`:
+  [ServiceResourceInstancesCollection](#serviceresourceinstancescollection)
 
-Definition:
+- `internet_gateways`:
+  [ServiceResourceInternetGatewaysCollection](#serviceresourceinternetgatewayscollection)
 
-```python
-def ClassicAddress(
-    self,
-    public_ip: str
-) -> _ClassicAddress:
-    pass
-```
+- `key_pairs`:
+  [ServiceResourceKeyPairsCollection](#serviceresourcekeypairscollection)
 
-### EC2ServiceResource.DhcpOptions
+- `network_acls`:
+  [ServiceResourceNetworkAclsCollection](#serviceresourcenetworkaclscollection)
 
-Type annotations for `boto3.resource("ec2").DhcpOptions` method.
+- `network_interfaces`:
+  [ServiceResourceNetworkInterfacesCollection](#serviceresourcenetworkinterfacescollection)
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.DhcpOptions]
+- `placement_groups`:
+  [ServiceResourcePlacementGroupsCollection](#serviceresourceplacementgroupscollection)
 
-Definition:
+- `route_tables`:
+  [ServiceResourceRouteTablesCollection](#serviceresourceroutetablescollection)
 
-```python
-def DhcpOptions(
-    self,
-    id: str
-) -> _DhcpOptions:
-    pass
-```
+- `security_groups`:
+  [ServiceResourceSecurityGroupsCollection](#serviceresourcesecuritygroupscollection)
 
-### EC2ServiceResource.Image
+- `snapshots`:
+  [ServiceResourceSnapshotsCollection](#serviceresourcesnapshotscollection)
 
-Type annotations for `boto3.resource("ec2").Image` method.
+- `subnets`:
+  [ServiceResourceSubnetsCollection](#serviceresourcesubnetscollection)
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Image]
+- `volumes`:
+  [ServiceResourceVolumesCollection](#serviceresourcevolumescollection)
 
-Definition:
+- `vpc_addresses`:
+  [ServiceResourceVpcAddressesCollection](#serviceresourcevpcaddressescollection)
 
-```python
-def Image(
-    self,
-    id: str
-) -> _Image:
-    pass
-```
+- `vpc_peering_connections`:
+  [ServiceResourceVpcPeeringConnectionsCollection](#serviceresourcevpcpeeringconnectionscollection)
 
-### EC2ServiceResource.Instance
-
-Type annotations for `boto3.resource("ec2").Instance` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Instance]
-
-Definition:
-
-```python
-def Instance(
-    self,
-    id: str
-) -> _Instance:
-    pass
-```
-
-### EC2ServiceResource.InternetGateway
-
-Type annotations for `boto3.resource("ec2").InternetGateway` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.InternetGateway]
-
-Definition:
-
-```python
-def InternetGateway(
-    self,
-    id: str
-) -> _InternetGateway:
-    pass
-```
-
-### EC2ServiceResource.KeyPair
-
-Type annotations for `boto3.resource("ec2").KeyPair` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.KeyPair]
-
-Definition:
-
-```python
-def KeyPair(
-    self,
-    name: str
-) -> _KeyPairInfo:
-    pass
-```
-
-### EC2ServiceResource.NetworkAcl
-
-Type annotations for `boto3.resource("ec2").NetworkAcl` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkAcl]
-
-Definition:
-
-```python
-def NetworkAcl(
-    self,
-    id: str
-) -> _NetworkAcl:
-    pass
-```
-
-### EC2ServiceResource.NetworkInterface
-
-Type annotations for `boto3.resource("ec2").NetworkInterface` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkInterface]
-
-Definition:
-
-```python
-def NetworkInterface(
-    self,
-    id: str
-) -> _NetworkInterface:
-    pass
-```
-
-### EC2ServiceResource.NetworkInterfaceAssociation
-
-Type annotations for `boto3.resource("ec2").NetworkInterfaceAssociation` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkInterfaceAssociation]
-
-Definition:
-
-```python
-def NetworkInterfaceAssociation(
-    self,
-    id: str
-) -> _NetworkInterfaceAssociation:
-    pass
-```
-
-### EC2ServiceResource.PlacementGroup
-
-Type annotations for `boto3.resource("ec2").PlacementGroup` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.PlacementGroup]
-
-Definition:
-
-```python
-def PlacementGroup(
-    self,
-    name: str
-) -> _PlacementGroup:
-    pass
-```
-
-### EC2ServiceResource.Route
-
-Type annotations for `boto3.resource("ec2").Route` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Route]
-
-Definition:
-
-```python
-def Route(
-    self,
-    route_table_id: str,
-    destination_cidr_block: str
-) -> _Route:
-    pass
-```
-
-### EC2ServiceResource.RouteTable
-
-Type annotations for `boto3.resource("ec2").RouteTable` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.RouteTable]
-
-Definition:
-
-```python
-def RouteTable(
-    self,
-    id: str
-) -> _RouteTable:
-    pass
-```
-
-### EC2ServiceResource.RouteTableAssociation
-
-Type annotations for `boto3.resource("ec2").RouteTableAssociation` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.RouteTableAssociation]
-
-Definition:
-
-```python
-def RouteTableAssociation(
-    self,
-    id: str
-) -> _RouteTableAssociation:
-    pass
-```
-
-### EC2ServiceResource.SecurityGroup
-
-Type annotations for `boto3.resource("ec2").SecurityGroup` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.SecurityGroup]
-
-Definition:
-
-```python
-def SecurityGroup(
-    self,
-    id: str
-) -> _SecurityGroup:
-    pass
-```
-
-### EC2ServiceResource.Snapshot
-
-Type annotations for `boto3.resource("ec2").Snapshot` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Snapshot]
-
-Definition:
-
-```python
-def Snapshot(
-    self,
-    id: str
-) -> _Snapshot:
-    pass
-```
-
-### EC2ServiceResource.Subnet
-
-Type annotations for `boto3.resource("ec2").Subnet` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Subnet]
-
-Definition:
-
-```python
-def Subnet(
-    self,
-    id: str
-) -> _Subnet:
-    pass
-```
-
-### EC2ServiceResource.Tag
-
-Type annotations for `boto3.resource("ec2").Tag` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Tag]
-
-Definition:
-
-```python
-def Tag(
-    self,
-    resource_id: str,
-    key: str,
-    value: str
-) -> _Tag:
-    pass
-```
-
-### EC2ServiceResource.Volume
-
-Type annotations for `boto3.resource("ec2").Volume` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Volume]
-
-Definition:
-
-```python
-def Volume(
-    self,
-    id: str
-) -> _Volume:
-    pass
-```
-
-### EC2ServiceResource.Vpc
-
-Type annotations for `boto3.resource("ec2").Vpc` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Vpc]
-
-Definition:
-
-```python
-def Vpc(
-    self,
-    id: str
-) -> _Vpc:
-    pass
-```
-
-### EC2ServiceResource.VpcAddress
-
-Type annotations for `boto3.resource("ec2").VpcAddress` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.VpcAddress]
-
-Definition:
-
-```python
-def VpcAddress(
-    self,
-    allocation_id: str
-) -> _VpcAddress:
-    pass
-```
-
-### EC2ServiceResource.VpcPeeringConnection
-
-Type annotations for `boto3.resource("ec2").VpcPeeringConnection` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.VpcPeeringConnection]
-
-Definition:
-
-```python
-def VpcPeeringConnection(
-    self,
-    id: str
-) -> _VpcPeeringConnection:
-    pass
-```
-
-### EC2ServiceResource.create_dhcp_options
-
-Type annotations for `boto3.resource("ec2").create_dhcp_options` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_dhcp_options]
-
-Definition:
-
-```python
-def create_dhcp_options(
-    self,
-    DhcpConfigurations: List[NewDhcpConfigurationTypeDef],
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _DhcpOptions:
-    pass
-```
-
-### EC2ServiceResource.create_instances
-
-Type annotations for `boto3.resource("ec2").create_instances` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_instances]
-
-Definition:
-
-```python
-def create_instances(
-    self,
-    MaxCount: int,
-    MinCount: int,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    ImageId: str = None,
-    InstanceType: InstanceType = None,
-    Ipv6AddressCount: int = None,
-    Ipv6Addresses: List["InstanceIpv6AddressTypeDef"] = None,
-    KernelId: str = None,
-    KeyName: str = None,
-    Monitoring: "RunInstancesMonitoringEnabledTypeDef" = None,
-    Placement: "PlacementTypeDef" = None,
-    RamdiskId: str = None,
-    SecurityGroupIds: List[str] = None,
-    SecurityGroups: List[str] = None,
-    SubnetId: str = None,
-    UserData: str = None,
-    AdditionalInfo: str = None,
-    ClientToken: str = None,
-    DisableApiTermination: bool = None,
-    DryRun: bool = None,
-    EbsOptimized: bool = None,
-    IamInstanceProfile: "IamInstanceProfileSpecificationTypeDef" = None,
-    InstanceInitiatedShutdownBehavior: ShutdownBehavior = None,
-    NetworkInterfaces: List["InstanceNetworkInterfaceSpecificationTypeDef"] = None,
-    PrivateIpAddress: str = None,
-    ElasticGpuSpecification: List["ElasticGpuSpecificationTypeDef"] = None,
-    ElasticInferenceAccelerators: List[ElasticInferenceAcceleratorTypeDef] = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    LaunchTemplate: LaunchTemplateSpecificationTypeDef = None,
-    InstanceMarketOptions: InstanceMarketOptionsRequestTypeDef = None,
-    CreditSpecification: "CreditSpecificationRequestTypeDef" = None,
-    CpuOptions: CpuOptionsRequestTypeDef = None,
-    CapacityReservationSpecification: CapacityReservationSpecificationTypeDef = None,
-    HibernationOptions: HibernationOptionsRequestTypeDef = None,
-    LicenseSpecifications: List[LicenseConfigurationRequestTypeDef] = None,
-    MetadataOptions: InstanceMetadataOptionsRequestTypeDef = None,
-    EnclaveOptions: EnclaveOptionsRequestTypeDef = None
-) -> List[_Instance]:
-    pass
-```
-
-### EC2ServiceResource.create_internet_gateway
-
-Type annotations for `boto3.resource("ec2").create_internet_gateway` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_internet_gateway]
-
-Definition:
-
-```python
-def create_internet_gateway(
-    self,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _InternetGateway:
-    pass
-```
-
-### EC2ServiceResource.create_key_pair
-
-Type annotations for `boto3.resource("ec2").create_key_pair` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_key_pair]
-
-Definition:
-
-```python
-def create_key_pair(
-    self,
-    KeyName: str,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _KeyPair:
-    pass
-```
-
-### EC2ServiceResource.create_network_acl
-
-Type annotations for `boto3.resource("ec2").create_network_acl` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_network_acl]
-
-Definition:
-
-```python
-def create_network_acl(
-    self,
-    VpcId: str,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _NetworkAcl:
-    pass
-```
-
-### EC2ServiceResource.create_network_interface
-
-Type annotations for `boto3.resource("ec2").create_network_interface` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_network_interface]
-
-Definition:
-
-```python
-def create_network_interface(
-    self,
-    SubnetId: str,
-    Description: str = None,
-    DryRun: bool = None,
-    Groups: List[str] = None,
-    Ipv6AddressCount: int = None,
-    Ipv6Addresses: List["InstanceIpv6AddressTypeDef"] = None,
-    PrivateIpAddress: str = None,
-    PrivateIpAddresses: List["PrivateIpAddressSpecificationTypeDef"] = None,
-    SecondaryPrivateIpAddressCount: int = None,
-    InterfaceType: Literal['efa'] = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _NetworkInterface:
-    pass
-```
-
-### EC2ServiceResource.create_placement_group
-
-Type annotations for `boto3.resource("ec2").create_placement_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_placement_group]
-
-Definition:
-
-```python
-def create_placement_group(
-    self,
-    DryRun: bool = None,
-    GroupName: str = None,
-    Strategy: PlacementStrategy = None,
-    PartitionCount: int = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _PlacementGroup:
-    pass
-```
-
-### EC2ServiceResource.create_route_table
-
-Type annotations for `boto3.resource("ec2").create_route_table` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_route_table]
-
-Definition:
-
-```python
-def create_route_table(
-    self,
-    VpcId: str,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _RouteTable:
-    pass
-```
-
-### EC2ServiceResource.create_security_group
-
-Type annotations for `boto3.resource("ec2").create_security_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_security_group]
-
-Definition:
-
-```python
-def create_security_group(
-    self,
-    Description: str,
-    GroupName: str,
-    VpcId: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _SecurityGroup:
-    pass
-```
-
-### EC2ServiceResource.create_snapshot
-
-Type annotations for `boto3.resource("ec2").create_snapshot` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_snapshot]
-
-Definition:
-
-```python
-def create_snapshot(
-    self,
-    VolumeId: str,
-    Description: str = None,
-    OutpostArn: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _Snapshot:
-    pass
-```
-
-### EC2ServiceResource.create_subnet
-
-Type annotations for `boto3.resource("ec2").create_subnet` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_subnet]
-
-Definition:
-
-```python
-def create_subnet(
-    self,
-    VpcId: str,
-    CidrBlock: str,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    AvailabilityZone: str = None,
-    AvailabilityZoneId: str = None,
-    Ipv6CidrBlock: str = None,
-    OutpostArn: str = None,
-    DryRun: bool = None
-) -> _Subnet:
-    pass
-```
-
-### EC2ServiceResource.create_tags
-
-Type annotations for `boto3.resource("ec2").create_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_tags]
-
-Definition:
-
-```python
-def create_tags(
-    self,
-    Resources: List[str],
-    Tags: List["TagTypeDef"],
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-### EC2ServiceResource.create_volume
-
-Type annotations for `boto3.resource("ec2").create_volume` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_volume]
-
-Definition:
-
-```python
-def create_volume(
-    self,
-    AvailabilityZone: str,
-    Encrypted: bool = None,
-    Iops: int = None,
-    KmsKeyId: str = None,
-    OutpostArn: str = None,
-    Size: int = None,
-    SnapshotId: str = None,
-    VolumeType: VolumeType = None,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    MultiAttachEnabled: bool = None,
-    Throughput: int = None
-) -> _Volume:
-    pass
-```
-
-### EC2ServiceResource.create_vpc
-
-Type annotations for `boto3.resource("ec2").create_vpc` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_vpc]
-
-Definition:
-
-```python
-def create_vpc(
-    self,
-    CidrBlock: str,
-    AmazonProvidedIpv6CidrBlock: bool = None,
-    Ipv6Pool: str = None,
-    Ipv6CidrBlock: str = None,
-    DryRun: bool = None,
-    InstanceTenancy: Tenancy = None,
-    Ipv6CidrBlockNetworkBorderGroup: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _Vpc:
-    pass
-```
-
-### EC2ServiceResource.create_vpc_peering_connection
-
-Type annotations for `boto3.resource("ec2").create_vpc_peering_connection` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_vpc_peering_connection]
-
-Definition:
-
-```python
-def create_vpc_peering_connection(
-    self,
-    DryRun: bool = None,
-    PeerOwnerId: str = None,
-    PeerVpcId: str = None,
-    VpcId: str = None,
-    PeerRegion: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _VpcPeeringConnection:
-    pass
-```
-
-### EC2ServiceResource.disassociate_route_table
-
-Type annotations for `boto3.resource("ec2").disassociate_route_table` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.disassociate_route_table]
-
-Definition:
-
-```python
-def disassociate_route_table(
-    self,
-    AssociationId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-### EC2ServiceResource.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.get_available_subresources]
-
-Definition:
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-### EC2ServiceResource.import_key_pair
-
-Type annotations for `boto3.resource("ec2").import_key_pair` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.import_key_pair]
-
-Definition:
-
-```python
-def import_key_pair(
-    self,
-    KeyName: str,
-    PublicKeyMaterial: Union[bytes, IO[bytes]],
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _KeyPairInfo:
-    pass
-```
-
-### EC2ServiceResource.register_image
-
-Type annotations for `boto3.resource("ec2").register_image` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.register_image]
-
-Definition:
-
-```python
-def register_image(
-    self,
-    Name: str,
-    ImageLocation: str = None,
-    Architecture: ArchitectureValues = None,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    Description: str = None,
-    DryRun: bool = None,
-    EnaSupport: bool = None,
-    KernelId: str = None,
-    BillingProducts: List[str] = None,
-    RamdiskId: str = None,
-    RootDeviceName: str = None,
-    SriovNetSupport: str = None,
-    VirtualizationType: str = None,
-    BootMode: BootModeValues = None
-) -> _Image:
-    pass
-```
-
-
-
+- `vpcs`: [ServiceResourceVpcsCollection](#serviceresourcevpcscollection)
 
 ## Collections
 
-### EC2ServiceResource.classic_addresses
+### ServiceResourceClassicAddressesCollection
 
 Type annotations for `boto3.resource("ec2").classic_addresses` collection.
 
@@ -929,55 +221,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesCollection,
 
 def get_collection() -> ServiceResourceClassicAddressesCollection:
-    return boto3.resource("ec2").classic_addresses(
-        ...
-    )
+    return boto3.resource("ec2").classic_addresses
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceClassicAddressesCollection)
+Provides access to [ClassicAddress](#classicaddress) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.classic_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.classic_addresses)
 
-```python
-class ServiceResourceClassicAddressesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceClassicAddressesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PublicIps: List[str] = None,
-        AllocationIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "ServiceResourceClassicAddressesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceClassicAddressesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceClassicAddressesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["ClassicAddress"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["ClassicAddress"]:
-        pass
-```
-
-### EC2ServiceResource.dhcp_options_sets
+### ServiceResourceDhcpOptionsSetsCollection
 
 Type annotations for `boto3.resource("ec2").dhcp_options_sets` collection.
 
@@ -987,56 +239,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceDhcpOptionsSetsCollection,
 
 def get_collection() -> ServiceResourceDhcpOptionsSetsCollection:
-    return boto3.resource("ec2").dhcp_options_sets(
-        ...
-    )
+    return boto3.resource("ec2").dhcp_options_sets
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceDhcpOptionsSetsCollection)
+Provides access to [DhcpOptions](#dhcpoptions) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.dhcp_options_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.dhcp_options_sets)
 
-```python
-class ServiceResourceDhcpOptionsSetsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceDhcpOptionsSetsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        DhcpOptionsIds: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceDhcpOptionsSetsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceDhcpOptionsSetsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceDhcpOptionsSetsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["DhcpOptions"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["DhcpOptions"]:
-        pass
-```
-
-### EC2ServiceResource.images
+### ServiceResourceImagesCollection
 
 Type annotations for `boto3.resource("ec2").images` collection.
 
@@ -1046,56 +257,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceImagesCollection,
 
 def get_collection() -> ServiceResourceImagesCollection:
-    return boto3.resource("ec2").images(
-        ...
-    )
+    return boto3.resource("ec2").images
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceImagesCollection)
+Provides access to [Image](#image) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.images)
 
-```python
-class ServiceResourceImagesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceImagesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        ExecutableUsers: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        ImageIds: List[str] = None,
-        Owners: List[str] = None,
-        DryRun: bool = None
-    ) -> "ServiceResourceImagesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceImagesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceImagesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Image"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Image"]:
-        pass
-```
-
-### EC2ServiceResource.instances
+### ServiceResourceInstancesCollection
 
 Type annotations for `boto3.resource("ec2").instances` collection.
 
@@ -1105,101 +275,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceInstancesCollection,
 
 def get_collection() -> ServiceResourceInstancesCollection:
-    return boto3.resource("ec2").instances(
-        ...
-    )
+    return boto3.resource("ec2").instances
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceInstancesCollection)
+Provides access to [Instance](#instance) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.instances)
 
-```python
-class ServiceResourceInstancesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceInstancesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "ServiceResourceInstancesCollection":
-        pass
-
-    def create_tags(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def monitor(
-        self,
-        DryRun: bool = None
-    ) -> MonitorInstancesResultTypeDef:
-        pass
-
-    def reboot(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def start(
-        self,
-        AdditionalInfo: str = None,
-        DryRun: bool = None
-    ) -> StartInstancesResultTypeDef:
-        pass
-
-    def stop(
-        self,
-        Hibernate: bool = None,
-        DryRun: bool = None,
-        Force: bool = None
-    ) -> StopInstancesResultTypeDef:
-        pass
-
-    def terminate(
-        self,
-        DryRun: bool = None
-    ) -> TerminateInstancesResultTypeDef:
-        pass
-
-    def unmonitor(
-        self,
-        DryRun: bool = None
-    ) -> UnmonitorInstancesResultTypeDef:
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceInstancesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceInstancesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Instance"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Instance"]:
-        pass
-```
-
-### EC2ServiceResource.internet_gateways
+### ServiceResourceInternetGatewaysCollection
 
 Type annotations for `boto3.resource("ec2").internet_gateways` collection.
 
@@ -1209,56 +293,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceInternetGatewaysCollection,
 
 def get_collection() -> ServiceResourceInternetGatewaysCollection:
-    return boto3.resource("ec2").internet_gateways(
-        ...
-    )
+    return boto3.resource("ec2").internet_gateways
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceInternetGatewaysCollection)
+Provides access to [InternetGateway](#internetgateway) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.internet_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.internet_gateways)
 
-```python
-class ServiceResourceInternetGatewaysCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceInternetGatewaysCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        InternetGatewayIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceInternetGatewaysCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceInternetGatewaysCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceInternetGatewaysCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["InternetGateway"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["InternetGateway"]:
-        pass
-```
-
-### EC2ServiceResource.key_pairs
+### ServiceResourceKeyPairsCollection
 
 Type annotations for `boto3.resource("ec2").key_pairs` collection.
 
@@ -1268,55 +311,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceKeyPairsCollection,
 
 def get_collection() -> ServiceResourceKeyPairsCollection:
-    return boto3.resource("ec2").key_pairs(
-        ...
-    )
+    return boto3.resource("ec2").key_pairs
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceKeyPairsCollection)
+Provides access to [KeyPairInfo](#keypairinfo) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.key_pairs)
 
-```python
-class ServiceResourceKeyPairsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceKeyPairsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        KeyNames: List[str] = None,
-        KeyPairIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "ServiceResourceKeyPairsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceKeyPairsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceKeyPairsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["KeyPairInfo"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["KeyPairInfo"]:
-        pass
-```
-
-### EC2ServiceResource.network_acls
+### ServiceResourceNetworkAclsCollection
 
 Type annotations for `boto3.resource("ec2").network_acls` collection.
 
@@ -1326,56 +329,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceNetworkAclsCollection,
 
 def get_collection() -> ServiceResourceNetworkAclsCollection:
-    return boto3.resource("ec2").network_acls(
-        ...
-    )
+    return boto3.resource("ec2").network_acls
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceNetworkAclsCollection)
+Provides access to [NetworkAcl](#networkacl) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.network_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.network_acls)
 
-```python
-class ServiceResourceNetworkAclsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceNetworkAclsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkAclIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceNetworkAclsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceNetworkAclsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceNetworkAclsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["NetworkAcl"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["NetworkAcl"]:
-        pass
-```
-
-### EC2ServiceResource.network_interfaces
+### ServiceResourceNetworkInterfacesCollection
 
 Type annotations for `boto3.resource("ec2").network_interfaces` collection.
 
@@ -1385,56 +347,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceNetworkInterfacesCollection,
 
 def get_collection() -> ServiceResourceNetworkInterfacesCollection:
-    return boto3.resource("ec2").network_interfaces(
-        ...
-    )
+    return boto3.resource("ec2").network_interfaces
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceNetworkInterfacesCollection)
+Provides access to [NetworkInterface](#networkinterface) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.network_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.network_interfaces)
 
-```python
-class ServiceResourceNetworkInterfacesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceNetworkInterfacesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkInterfaceIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceNetworkInterfacesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceNetworkInterfacesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceNetworkInterfacesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["NetworkInterface"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["NetworkInterface"]:
-        pass
-```
-
-### EC2ServiceResource.placement_groups
+### ServiceResourcePlacementGroupsCollection
 
 Type annotations for `boto3.resource("ec2").placement_groups` collection.
 
@@ -1444,55 +365,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourcePlacementGroupsCollection,
 
 def get_collection() -> ServiceResourcePlacementGroupsCollection:
-    return boto3.resource("ec2").placement_groups(
-        ...
-    )
+    return boto3.resource("ec2").placement_groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourcePlacementGroupsCollection)
+Provides access to [PlacementGroup](#placementgroup) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.placement_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.placement_groups)
 
-```python
-class ServiceResourcePlacementGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourcePlacementGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        GroupNames: List[str] = None,
-        GroupIds: List[str] = None
-    ) -> "ServiceResourcePlacementGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourcePlacementGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourcePlacementGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["PlacementGroup"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["PlacementGroup"]:
-        pass
-```
-
-### EC2ServiceResource.route_tables
+### ServiceResourceRouteTablesCollection
 
 Type annotations for `boto3.resource("ec2").route_tables` collection.
 
@@ -1502,56 +383,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceRouteTablesCollection,
 
 def get_collection() -> ServiceResourceRouteTablesCollection:
-    return boto3.resource("ec2").route_tables(
-        ...
-    )
+    return boto3.resource("ec2").route_tables
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceRouteTablesCollection)
+Provides access to [RouteTable](#routetable) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.route_tables)
 
-```python
-class ServiceResourceRouteTablesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceRouteTablesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        RouteTableIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceRouteTablesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceRouteTablesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceRouteTablesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["RouteTable"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["RouteTable"]:
-        pass
-```
-
-### EC2ServiceResource.security_groups
+### ServiceResourceSecurityGroupsCollection
 
 Type annotations for `boto3.resource("ec2").security_groups` collection.
 
@@ -1561,57 +401,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceSecurityGroupsCollection,
 
 def get_collection() -> ServiceResourceSecurityGroupsCollection:
-    return boto3.resource("ec2").security_groups(
-        ...
-    )
+    return boto3.resource("ec2").security_groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSecurityGroupsCollection)
+Provides access to [SecurityGroup](#securitygroup) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.security_groups)
 
-```python
-class ServiceResourceSecurityGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceSecurityGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        GroupIds: List[str] = None,
-        GroupNames: List[str] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceSecurityGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceSecurityGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceSecurityGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["SecurityGroup"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["SecurityGroup"]:
-        pass
-```
-
-### EC2ServiceResource.snapshots
+### ServiceResourceSnapshotsCollection
 
 Type annotations for `boto3.resource("ec2").snapshots` collection.
 
@@ -1621,58 +419,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceSnapshotsCollection,
 
 def get_collection() -> ServiceResourceSnapshotsCollection:
-    return boto3.resource("ec2").snapshots(
-        ...
-    )
+    return boto3.resource("ec2").snapshots
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSnapshotsCollection)
+Provides access to [Snapshot](#snapshot) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.snapshots)
 
-```python
-class ServiceResourceSnapshotsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceSnapshotsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        MaxResults: int = None,
-        NextToken: str = None,
-        OwnerIds: List[str] = None,
-        RestorableByUserIds: List[str] = None,
-        SnapshotIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "ServiceResourceSnapshotsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceSnapshotsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceSnapshotsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Snapshot"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Snapshot"]:
-        pass
-```
-
-### EC2ServiceResource.subnets
+### ServiceResourceSubnetsCollection
 
 Type annotations for `boto3.resource("ec2").subnets` collection.
 
@@ -1682,56 +437,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceSubnetsCollection,
 
 def get_collection() -> ServiceResourceSubnetsCollection:
-    return boto3.resource("ec2").subnets(
-        ...
-    )
+    return boto3.resource("ec2").subnets
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSubnetsCollection)
+Provides access to [Subnet](#subnet) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.subnets)
 
-```python
-class ServiceResourceSubnetsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceSubnetsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SubnetIds: List[str] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceSubnetsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceSubnetsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceSubnetsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Subnet"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Subnet"]:
-        pass
-```
-
-### EC2ServiceResource.volumes
+### ServiceResourceVolumesCollection
 
 Type annotations for `boto3.resource("ec2").volumes` collection.
 
@@ -1741,56 +455,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceVolumesCollection,
 
 def get_collection() -> ServiceResourceVolumesCollection:
-    return boto3.resource("ec2").volumes(
-        ...
-    )
+    return boto3.resource("ec2").volumes
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVolumesCollection)
+Provides access to [Volume](#volume) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.volumes)
 
-```python
-class ServiceResourceVolumesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceVolumesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VolumeIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "ServiceResourceVolumesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceVolumesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceVolumesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Volume"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Volume"]:
-        pass
-```
-
-### EC2ServiceResource.vpc_addresses
+### ServiceResourceVpcAddressesCollection
 
 Type annotations for `boto3.resource("ec2").vpc_addresses` collection.
 
@@ -1800,57 +473,18 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceVpcAddressesCollection,
 
 def get_collection() -> ServiceResourceVpcAddressesCollection:
-    return boto3.resource("ec2").vpc_addresses(
-        ...
-    )
+    return boto3.resource("ec2").vpc_addresses
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcAddressesCollection)
+Provides access to [VpcAddress](#vpcaddress) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.vpc_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpc_addresses)
 
-```python
-class ServiceResourceVpcAddressesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceVpcAddressesCollection":
-        pass
+### ServiceResourceVpcPeeringConnectionsCollection
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PublicIps: List[str] = None,
-        AllocationIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "ServiceResourceVpcAddressesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcAddressesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcAddressesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["VpcAddress"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["VpcAddress"]:
-        pass
-```
-
-### EC2ServiceResource.vpc_peering_connections
-
-Type annotations for `boto3.resource("ec2").vpc_peering_connections` collection.
+Type annotations for `boto3.resource("ec2").vpc_peering_connections`
+collection.
 
 Can be used directly:
 
@@ -1858,56 +492,15 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceVpcPeeringConnectionsCollection,
 
 def get_collection() -> ServiceResourceVpcPeeringConnectionsCollection:
-    return boto3.resource("ec2").vpc_peering_connections(
-        ...
-    )
+    return boto3.resource("ec2").vpc_peering_connections
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcPeeringConnectionsCollection)
+Provides access to [VpcPeeringConnection](#vpcpeeringconnection) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpc_peering_connections)
 
-```python
-class ServiceResourceVpcPeeringConnectionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceVpcPeeringConnectionsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        VpcPeeringConnectionIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceVpcPeeringConnectionsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcPeeringConnectionsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcPeeringConnectionsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["VpcPeeringConnection"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["VpcPeeringConnection"]:
-        pass
-```
-
-### EC2ServiceResource.vpcs
+### ServiceResourceVpcsCollection
 
 Type annotations for `boto3.resource("ec2").vpcs` collection.
 
@@ -1917,57 +510,694 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceVpcsCollection,
 
 def get_collection() -> ServiceResourceVpcsCollection:
-    return boto3.resource("ec2").vpcs(
-        ...
-    )
+    return boto3.resource("ec2").vpcs
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcsCollection)
+Provides access to [Vpc](#vpc) resource.
 
-Definition:
+Boto3 documentation:
+[EC2.ServiceResource.vpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpcs)
 
-```python
-class ServiceResourceVpcsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "ServiceResourceVpcsCollection":
-        pass
+## Methods
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VpcIds: List[str] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "ServiceResourceVpcsCollection":
-        pass
+### EC2ServiceResource.ClassicAddress method
 
-    def limit(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcsCollection":
-        pass
+Type annotations for `boto3.resource("ec2").ClassicAddress` method.
 
-    def page_size(
-        self,
-        count: int
-    ) -> "ServiceResourceVpcsCollection":
-        pass
+Boto3 documentation:
+[EC2.ServiceResource.ClassicAddress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
 
-    def pages(
-        self
-    ) -> Iterator[List["Vpc"]]:
-        pass
+Arguments:
 
-    def __iter__(
-        self
-    ) -> Iterator["Vpc"]:
-        pass
-```
+- `public_ip`: `str` *(required)*
 
+Returns [ClassicAddress](#classicaddress).
 
+### EC2ServiceResource.DhcpOptions method
 
+Type annotations for `boto3.resource("ec2").DhcpOptions` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.DhcpOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [DhcpOptions](#dhcpoptions).
+
+### EC2ServiceResource.Image method
+
+Type annotations for `boto3.resource("ec2").Image` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Image](#image).
+
+### EC2ServiceResource.Instance method
+
+Type annotations for `boto3.resource("ec2").Instance` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Instance](#instance).
+
+### EC2ServiceResource.InternetGateway method
+
+Type annotations for `boto3.resource("ec2").InternetGateway` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.InternetGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [InternetGateway](#internetgateway).
+
+### EC2ServiceResource.KeyPair method
+
+Type annotations for `boto3.resource("ec2").KeyPair` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.KeyPair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [KeyPairInfo](#keypairinfo).
+
+### EC2ServiceResource.NetworkAcl method
+
+Type annotations for `boto3.resource("ec2").NetworkAcl` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.NetworkAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [NetworkAcl](#networkacl).
+
+### EC2ServiceResource.NetworkInterface method
+
+Type annotations for `boto3.resource("ec2").NetworkInterface` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.NetworkInterface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [NetworkInterface](#networkinterface).
+
+### EC2ServiceResource.NetworkInterfaceAssociation method
+
+Type annotations for `boto3.resource("ec2").NetworkInterfaceAssociation`
+method.
+
+Boto3 documentation:
+[EC2.ServiceResource.NetworkInterfaceAssociation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [NetworkInterfaceAssociation](#networkinterfaceassociation).
+
+### EC2ServiceResource.PlacementGroup method
+
+Type annotations for `boto3.resource("ec2").PlacementGroup` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.PlacementGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
+
+Arguments:
+
+- `name`: `str` *(required)*
+
+Returns [PlacementGroup](#placementgroup).
+
+### EC2ServiceResource.Route method
+
+Type annotations for `boto3.resource("ec2").Route` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
+
+Arguments:
+
+- `route_table_id`: `str` *(required)*
+- `destination_cidr_block`: `str` *(required)*
+
+Returns [Route](#route).
+
+### EC2ServiceResource.RouteTable method
+
+Type annotations for `boto3.resource("ec2").RouteTable` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.RouteTable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [RouteTable](#routetable).
+
+### EC2ServiceResource.RouteTableAssociation method
+
+Type annotations for `boto3.resource("ec2").RouteTableAssociation` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.RouteTableAssociation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [RouteTableAssociation](#routetableassociation).
+
+### EC2ServiceResource.SecurityGroup method
+
+Type annotations for `boto3.resource("ec2").SecurityGroup` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.SecurityGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [SecurityGroup](#securitygroup).
+
+### EC2ServiceResource.Snapshot method
+
+Type annotations for `boto3.resource("ec2").Snapshot` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Snapshot](#snapshot).
+
+### EC2ServiceResource.Subnet method
+
+Type annotations for `boto3.resource("ec2").Subnet` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Subnet](#subnet).
+
+### EC2ServiceResource.Tag method
+
+Type annotations for `boto3.resource("ec2").Tag` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
+
+Arguments:
+
+- `resource_id`: `str` *(required)*
+- `key`: `str` *(required)*
+- `value`: `str` *(required)*
+
+Returns [Tag](#tag).
+
+### EC2ServiceResource.Volume method
+
+Type annotations for `boto3.resource("ec2").Volume` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Volume](#volume).
+
+### EC2ServiceResource.Vpc method
+
+Type annotations for `boto3.resource("ec2").Vpc` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.Vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [Vpc](#vpc).
+
+### EC2ServiceResource.VpcAddress method
+
+Type annotations for `boto3.resource("ec2").VpcAddress` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.VpcAddress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
+
+Arguments:
+
+- `allocation_id`: `str` *(required)*
+
+Returns [VpcAddress](#vpcaddress).
+
+### EC2ServiceResource.VpcPeeringConnection method
+
+Type annotations for `boto3.resource("ec2").VpcPeeringConnection` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.VpcPeeringConnection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
+
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns [VpcPeeringConnection](#vpcpeeringconnection).
+
+### EC2ServiceResource.create_dhcp_options method
+
+Type annotations for `boto3.resource("ec2").create_dhcp_options` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_dhcp_options)
+
+Arguments:
+
+- `DhcpConfigurations`:
+  `List`\[[NewDhcpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#newdhcpconfigurationtypedef)\]
+  *(required)*
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [DhcpOptions](#dhcpoptions).
+
+### EC2ServiceResource.create_instances method
+
+Type annotations for `boto3.resource("ec2").create_instances` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_instances)
+
+Arguments:
+
+- `MaxCount`: `int` *(required)*
+- `MinCount`: `int` *(required)*
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+- `ImageId`: `str`
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `Monitoring`:
+  [RunInstancesMonitoringEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#runinstancesmonitoringenabledtypedef)
+- `Placement`:
+  [PlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementtypedef)
+- `RamdiskId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `SubnetId`: `str`
+- `UserData`: `str`
+- `AdditionalInfo`: `str`
+- `ClientToken`: `str`
+- `DisableApiTermination`: `bool`
+- `DryRun`: `bool`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofilespecificationtypedef)
+- `InstanceInitiatedShutdownBehavior`:
+  [ShutdownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#shutdownbehavior)
+- `NetworkInterfaces`:
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacespecificationtypedef)\]
+- `PrivateIpAddress`: `str`
+- `ElasticGpuSpecification`:
+  `List`\[[ElasticGpuSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuspecificationtypedef)\]
+- `ElasticInferenceAccelerators`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticinferenceacceleratortypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatespecificationtypedef)
+- `InstanceMarketOptions`:
+  [InstanceMarketOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemarketoptionsrequesttypedef)
+- `CreditSpecification`:
+  [CreditSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#creditspecificationrequesttypedef)
+- `CpuOptions`:
+  [CpuOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cpuoptionsrequesttypedef)
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationspecificationtypedef)
+- `HibernationOptions`:
+  [HibernationOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hibernationoptionsrequesttypedef)
+- `LicenseSpecifications`:
+  `List`\[[LicenseConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#licenseconfigurationrequesttypedef)\]
+- `MetadataOptions`:
+  [InstanceMetadataOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemetadataoptionsrequesttypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enclaveoptionsrequesttypedef)
+
+Returns `List`\[[Instance](#instance)\].
+
+### EC2ServiceResource.create_internet_gateway method
+
+Type annotations for `boto3.resource("ec2").create_internet_gateway` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_internet_gateway)
+
+Arguments:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [InternetGateway](#internetgateway).
+
+### EC2ServiceResource.create_key_pair method
+
+Type annotations for `boto3.resource("ec2").create_key_pair` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_key_pair)
+
+Arguments:
+
+- `KeyName`: `str` *(required)*
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [KeyPair](#keypair).
+
+### EC2ServiceResource.create_network_acl method
+
+Type annotations for `boto3.resource("ec2").create_network_acl` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_network_acl)
+
+Arguments:
+
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [NetworkAcl](#networkacl).
+
+### EC2ServiceResource.create_network_interface method
+
+Type annotations for `boto3.resource("ec2").create_network_interface` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_network_interface)
+
+Arguments:
+
+- `SubnetId`: `str` *(required)*
+- `Description`: `str`
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+- `PrivateIpAddress`: `str`
+- `PrivateIpAddresses`:
+  `List`\[[PrivateIpAddressSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privateipaddressspecificationtypedef)\]
+- `SecondaryPrivateIpAddressCount`: `int`
+- `InterfaceType`: `Literal['efa']`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [NetworkInterface](#networkinterface).
+
+### EC2ServiceResource.create_placement_group method
+
+Type annotations for `boto3.resource("ec2").create_placement_group` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_placement_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_placement_group)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `GroupName`: `str`
+- `Strategy`:
+  [PlacementStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#placementstrategy)
+- `PartitionCount`: `int`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [PlacementGroup](#placementgroup).
+
+### EC2ServiceResource.create_route_table method
+
+Type annotations for `boto3.resource("ec2").create_route_table` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_route_table)
+
+Arguments:
+
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [RouteTable](#routetable).
+
+### EC2ServiceResource.create_security_group method
+
+Type annotations for `boto3.resource("ec2").create_security_group` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_security_group)
+
+Arguments:
+
+- `Description`: `str` *(required)*
+- `GroupName`: `str` *(required)*
+- `VpcId`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [SecurityGroup](#securitygroup).
+
+### EC2ServiceResource.create_snapshot method
+
+Type annotations for `boto3.resource("ec2").create_snapshot` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_snapshot)
+
+Arguments:
+
+- `VolumeId`: `str` *(required)*
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [Snapshot](#snapshot).
+
+### EC2ServiceResource.create_subnet method
+
+Type annotations for `boto3.resource("ec2").create_subnet` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_subnet)
+
+Arguments:
+
+- `VpcId`: `str` *(required)*
+- `CidrBlock`: `str` *(required)*
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Ipv6CidrBlock`: `str`
+- `OutpostArn`: `str`
+- `DryRun`: `bool`
+
+Returns [Subnet](#subnet).
+
+### EC2ServiceResource.create_tags method
+
+Type annotations for `boto3.resource("ec2").create_tags` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_tags)
+
+Arguments:
+
+- `Resources`: `List`\[`str`\] *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  *(required)*
+- `DryRun`: `bool`
+
+### EC2ServiceResource.create_volume method
+
+Type annotations for `boto3.resource("ec2").create_volume` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_volume)
+
+Arguments:
+
+- `AvailabilityZone`: `str` *(required)*
+- `Encrypted`: `bool`
+- `Iops`: `int`
+- `KmsKeyId`: `str`
+- `OutpostArn`: `str`
+- `Size`: `int`
+- `SnapshotId`: `str`
+- `VolumeType`:
+  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `MultiAttachEnabled`: `bool`
+- `Throughput`: `int`
+
+Returns [Volume](#volume).
+
+### EC2ServiceResource.create_vpc method
+
+Type annotations for `boto3.resource("ec2").create_vpc` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_vpc)
+
+Arguments:
+
+- `CidrBlock`: `str` *(required)*
+- `AmazonProvidedIpv6CidrBlock`: `bool`
+- `Ipv6Pool`: `str`
+- `Ipv6CidrBlock`: `str`
+- `DryRun`: `bool`
+- `InstanceTenancy`:
+  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `Ipv6CidrBlockNetworkBorderGroup`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [Vpc](#vpc).
+
+### EC2ServiceResource.create_vpc_peering_connection method
+
+Type annotations for `boto3.resource("ec2").create_vpc_peering_connection`
+method.
+
+Boto3 documentation:
+[EC2.ServiceResource.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_vpc_peering_connection)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `PeerOwnerId`: `str`
+- `PeerVpcId`: `str`
+- `VpcId`: `str`
+- `PeerRegion`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [VpcPeeringConnection](#vpcpeeringconnection).
+
+### EC2ServiceResource.disassociate_route_table method
+
+Type annotations for `boto3.resource("ec2").disassociate_route_table` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.disassociate_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.disassociate_route_table)
+
+Arguments:
+
+- `AssociationId`: `str` *(required)*
+- `DryRun`: `bool`
+
+### EC2ServiceResource.get_available_subresources method
+
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+### EC2ServiceResource.import_key_pair method
+
+Type annotations for `boto3.resource("ec2").import_key_pair` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.import_key_pair)
+
+Arguments:
+
+- `KeyName`: `str` *(required)*
+- `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [KeyPairInfo](#keypairinfo).
+
+### EC2ServiceResource.register_image method
+
+Type annotations for `boto3.resource("ec2").register_image` method.
+
+Boto3 documentation:
+[EC2.ServiceResource.register_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.register_image)
+
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ImageLocation`: `str`
+- `Architecture`:
+  [ArchitectureValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#architecturevalues)
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EnaSupport`: `bool`
+- `KernelId`: `str`
+- `BillingProducts`: `List`\[`str`\]
+- `RamdiskId`: `str`
+- `RootDeviceName`: `str`
+- `SriovNetSupport`: `str`
+- `VirtualizationType`: `str`
+- `BootMode`:
+  [BootModeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bootmodevalues)
+
+Returns [Image](#image).
 
 ## ClassicAddress
 
@@ -1982,141 +1212,96 @@ def get_resource() -> ClassicAddress:
     return boto3.resource("ec2").ClassicAddress(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
-
+Boto3 documentation:
+[EC2.ClassicAddress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
 
 ### ClassicAddress attributes
 
-
 - `instance_id`: `str`
-
 - `allocation_id`: `str`
-
 - `association_id`: `str`
-
 - `domain`: `str`
-
 - `network_interface_id`: `str`
-
 - `network_interface_owner_id`: `str`
-
 - `private_ip_address`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `public_ipv4_pool`: `str`
-
 - `network_border_group`: `str`
-
 - `customer_owned_ip`: `str`
-
 - `customer_owned_ipv4_pool`: `str`
-
 - `carrier_ip`: `str`
-
 - `public_ip`: `str`
-
-
-
 
 ### ClassicAddress methods
 
-
-#### ClassicAddress.associate
+#### ClassicAddress.associate method
 
 Type annotations for `boto3.resource("ec2").associate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.associate]
+Boto3 documentation:
+[EC2.ClassicAddress.associate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.associate)
 
-```python
-def associate(
-    self,
-    AllocationId: str = None,
-    InstanceId: str = None,
-    AllowReassociation: bool = None,
-    DryRun: bool = None,
-    NetworkInterfaceId: str = None,
-    PrivateIpAddress: str = None
-) -> AssociateAddressResultTypeDef:
-    pass
-```
+Arguments:
 
-#### ClassicAddress.disassociate
+- `AllocationId`: `str`
+- `InstanceId`: `str`
+- `AllowReassociation`: `bool`
+- `DryRun`: `bool`
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddress`: `str`
+
+Returns
+[AssociateAddressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associateaddressresulttypedef).
+
+#### ClassicAddress.disassociate method
 
 Type annotations for `boto3.resource("ec2").disassociate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.disassociate]
+Boto3 documentation:
+[EC2.ClassicAddress.disassociate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.disassociate)
 
-```python
-def disassociate(
-    self,
-    AssociationId: str = None,
-    PublicIp: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### ClassicAddress.get_available_subresources
+- `AssociationId`: `str`
+- `PublicIp`: `str`
+- `DryRun`: `bool`
+
+#### ClassicAddress.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.get_available_subresources]
+Boto3 documentation:
+[EC2.ClassicAddress.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### ClassicAddress.load
+#### ClassicAddress.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.load]
+Boto3 documentation:
+[EC2.ClassicAddress.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### ClassicAddress.release
+#### ClassicAddress.release method
 
 Type annotations for `boto3.resource("ec2").release` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.release]
+Boto3 documentation:
+[EC2.ClassicAddress.release](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.release)
 
-```python
-def release(
-    self,
-    AllocationId: str = None,
-    PublicIp: str = None,
-    NetworkBorderGroup: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### ClassicAddress.reload
+- `AllocationId`: `str`
+- `PublicIp`: `str`
+- `NetworkBorderGroup`: `str`
+- `DryRun`: `bool`
+
+#### ClassicAddress.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.ClassicAddress.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.reload)
 
 ## DhcpOptions
 
@@ -2131,115 +1316,80 @@ def get_resource() -> DhcpOptions:
     return boto3.resource("ec2").DhcpOptions(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
-
+Boto3 documentation:
+[EC2.DhcpOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
 
 ### DhcpOptions attributes
 
-
-- `dhcp_configurations`: `List[Any]`
-
+- `dhcp_configurations`: `List`\[`Any`\]
 - `dhcp_options_id`: `str`
-
 - `owner_id`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `id`: `str`
-
-
-
 
 ### DhcpOptions methods
 
-
-#### DhcpOptions.associate_with_vpc
+#### DhcpOptions.associate_with_vpc method
 
 Type annotations for `boto3.resource("ec2").associate_with_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.associate_with_vpc]
+Boto3 documentation:
+[EC2.DhcpOptions.associate_with_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.associate_with_vpc)
 
-```python
-def associate_with_vpc(
-    self,
-    VpcId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### DhcpOptions.create_tags
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+
+#### DhcpOptions.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.create_tags]
+Boto3 documentation:
+[EC2.DhcpOptions.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### DhcpOptions.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### DhcpOptions.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.delete]
+Boto3 documentation:
+[EC2.DhcpOptions.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### DhcpOptions.get_available_subresources
+- `DryRun`: `bool`
+
+#### DhcpOptions.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.get_available_subresources]
+Boto3 documentation:
+[EC2.DhcpOptions.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### DhcpOptions.load
+#### DhcpOptions.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.load]
+Boto3 documentation:
+[EC2.DhcpOptions.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### DhcpOptions.reload
+#### DhcpOptions.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.DhcpOptions.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.reload)
 
 ## Image
 
@@ -2254,211 +1404,149 @@ def get_resource() -> Image:
     return boto3.resource("ec2").Image(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
-
+Boto3 documentation:
+[EC2.Image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
 
 ### Image attributes
 
-
 - `architecture`: `str`
-
 - `creation_date`: `str`
-
 - `image_id`: `str`
-
 - `image_location`: `str`
-
 - `image_type`: `str`
-
 - `public`: `bool`
-
 - `kernel_id`: `str`
-
 - `owner_id`: `str`
-
 - `platform`: `str`
-
 - `platform_details`: `str`
-
 - `usage_operation`: `str`
-
-- `product_codes`: `List[Any]`
-
+- `product_codes`: `List`\[`Any`\]
 - `ramdisk_id`: `str`
-
 - `state`: `str`
-
-- `block_device_mappings`: `List[Any]`
-
+- `block_device_mappings`: `List`\[`Any`\]
 - `description`: `str`
-
 - `ena_support`: `bool`
-
 - `hypervisor`: `str`
-
 - `image_owner_alias`: `str`
-
 - `name`: `str`
-
 - `root_device_name`: `str`
-
 - `root_device_type`: `str`
-
 - `sriov_net_support`: `str`
-
-- `state_reason`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
+- `state_reason`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
 - `virtualization_type`: `str`
-
 - `boot_mode`: `str`
-
 - `id`: `str`
-
-
-
 
 ### Image methods
 
-
-#### Image.create_tags
+#### Image.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.create_tags]
+Boto3 documentation:
+[EC2.Image.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### Image.deregister
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Image.deregister method
 
 Type annotations for `boto3.resource("ec2").deregister` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.deregister]
+Boto3 documentation:
+[EC2.Image.deregister](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.deregister)
 
-```python
-def deregister(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Image.describe_attribute
+- `DryRun`: `bool`
+
+#### Image.describe_attribute method
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.describe_attribute]
+Boto3 documentation:
+[EC2.Image.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.describe_attribute)
 
-```python
-def describe_attribute(
-    self,
-    Attribute: ImageAttributeName,
-    DryRun: bool = None
-) -> ImageAttributeTypeDef:
-    pass
-```
+Arguments:
 
-#### Image.get_available_subresources
+- `Attribute`:
+  [ImageAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#imageattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ImageAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#imageattributetypedef).
+
+#### Image.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.get_available_subresources]
+Boto3 documentation:
+[EC2.Image.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### Image.load
+#### Image.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.load]
+Boto3 documentation:
+[EC2.Image.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Image.modify_attribute
+#### Image.modify_attribute method
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.modify_attribute]
+Boto3 documentation:
+[EC2.Image.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.modify_attribute)
 
-```python
-def modify_attribute(
-    self,
-    Attribute: str = None,
-    Description: "AttributeValueTypeDef" = None,
-    LaunchPermission: LaunchPermissionModificationsTypeDef = None,
-    OperationType: OperationType = None,
-    ProductCodes: List[str] = None,
-    UserGroups: List[str] = None,
-    UserIds: List[str] = None,
-    Value: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Image.reload
+- `Attribute`: `str`
+- `Description`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `LaunchPermission`:
+  [LaunchPermissionModificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchpermissionmodificationstypedef)
+- `OperationType`:
+  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#operationtype)
+- `ProductCodes`: `List`\[`str`\]
+- `UserGroups`: `List`\[`str`\]
+- `UserIds`: `List`\[`str`\]
+- `Value`: `str`
+- `DryRun`: `bool`
+
+#### Image.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reload]
+Boto3 documentation:
+[EC2.Image.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Image.reset_attribute
+#### Image.reset_attribute method
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reset_attribute]
+Boto3 documentation:
+[EC2.Image.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reset_attribute)
 
-```python
-def reset_attribute(
-    self,
-    Attribute: Literal['launchPermission'],
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Image.wait_until_exists
+- `Attribute`: `Literal['launchPermission']` *(required)*
+- `DryRun`: `bool`
+
+#### Image.wait_until_exists method
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.wait_until_exists]
-
-```python
-def wait_until_exists(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.Image.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.wait_until_exists)
 
 ## Instance
 
@@ -2473,583 +1561,73 @@ def get_resource() -> Instance:
     return boto3.resource("ec2").Instance(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
-
+Boto3 documentation:
+[EC2.Instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
 
 ### Instance attributes
 
-
 - `ami_launch_index`: `int`
-
 - `image_id`: `str`
-
 - `instance_id`: `str`
-
 - `instance_type`: `str`
-
 - `kernel_id`: `str`
-
 - `key_name`: `str`
-
 - `launch_time`: `datetime`
-
-- `monitoring`: `Dict[str, Any]`
-
-- `placement`: `Dict[str, Any]`
-
+- `monitoring`: `Dict`\[`str`, `Any`\]
+- `placement`: `Dict`\[`str`, `Any`\]
 - `platform`: `str`
-
 - `private_dns_name`: `str`
-
 - `private_ip_address`: `str`
-
-- `product_codes`: `List[Any]`
-
+- `product_codes`: `List`\[`Any`\]
 - `public_dns_name`: `str`
-
 - `public_ip_address`: `str`
-
 - `ramdisk_id`: `str`
-
-- `state`: `Dict[str, Any]`
-
+- `state`: `Dict`\[`str`, `Any`\]
 - `state_transition_reason`: `str`
-
 - `subnet_id`: `str`
-
 - `vpc_id`: `str`
-
 - `architecture`: `str`
-
-- `block_device_mappings`: `List[Any]`
-
+- `block_device_mappings`: `List`\[`Any`\]
 - `client_token`: `str`
-
 - `ebs_optimized`: `bool`
-
 - `ena_support`: `bool`
-
 - `hypervisor`: `str`
-
-- `iam_instance_profile`: `Dict[str, Any]`
-
+- `iam_instance_profile`: `Dict`\[`str`, `Any`\]
 - `instance_lifecycle`: `str`
-
-- `elastic_gpu_associations`: `List[Any]`
-
-- `elastic_inference_accelerator_associations`: `List[Any]`
-
-- `network_interfaces_attribute`: `List[Any]`
-
+- `elastic_gpu_associations`: `List`\[`Any`\]
+- `elastic_inference_accelerator_associations`: `List`\[`Any`\]
+- `network_interfaces_attribute`: `List`\[`Any`\]
 - `outpost_arn`: `str`
-
 - `root_device_name`: `str`
-
 - `root_device_type`: `str`
-
-- `security_groups`: `List[Any]`
-
+- `security_groups`: `List`\[`Any`\]
 - `source_dest_check`: `bool`
-
 - `spot_instance_request_id`: `str`
-
 - `sriov_net_support`: `str`
-
-- `state_reason`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
+- `state_reason`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
 - `virtualization_type`: `str`
-
-- `cpu_options`: `Dict[str, Any]`
-
+- `cpu_options`: `Dict`\[`str`, `Any`\]
 - `capacity_reservation_id`: `str`
-
-- `capacity_reservation_specification`: `Dict[str, Any]`
-
-- `hibernation_options`: `Dict[str, Any]`
-
-- `licenses`: `List[Any]`
-
-- `metadata_options`: `Dict[str, Any]`
-
-- `enclave_options`: `Dict[str, Any]`
-
+- `capacity_reservation_specification`: `Dict`\[`str`, `Any`\]
+- `hibernation_options`: `Dict`\[`str`, `Any`\]
+- `licenses`: `List`\[`Any`\]
+- `metadata_options`: `Dict`\[`str`, `Any`\]
+- `enclave_options`: `Dict`\[`str`, `Any`\]
 - `boot_mode`: `str`
-
 - `id`: `str`
-
-- `classic_address`: `"ClassicAddress"`
-
-- `image`: `"Image"`
-
-- `key_pair`: `"KeyPairInfo"`
-
-- `network_interfaces`: `"NetworkInterface"`
-
-- `placement_group`: `"PlacementGroup"`
-
-- `subnet`: `"Subnet"`
-
-- `vpc`: `"Vpc"`
-
-- `volumes`: `InstanceVolumesCollection`
-
-- `vpc_addresses`: `InstanceVpcAddressesCollection`
-
-
-
-
-### Instance methods
-
-
-#### Instance.attach_classic_link_vpc
-
-Type annotations for `boto3.resource("ec2").attach_classic_link_vpc` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_classic_link_vpc]
-
-```python
-def attach_classic_link_vpc(
-    self,
-    Groups: List[str],
-    VpcId: str,
-    DryRun: bool = None
-) -> AttachClassicLinkVpcResultTypeDef:
-    pass
-```
-
-#### Instance.attach_volume
-
-Type annotations for `boto3.resource("ec2").attach_volume` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_volume]
-
-```python
-def attach_volume(
-    self,
-    Device: str,
-    VolumeId: str,
-    DryRun: bool = None
-) -> "VolumeAttachmentTypeDef":
-    pass
-```
-
-#### Instance.console_output
-
-Type annotations for `boto3.resource("ec2").console_output` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.console_output]
-
-```python
-def console_output(
-    self,
-    DryRun: bool = None,
-    Latest: bool = None
-) -> GetConsoleOutputResultTypeDef:
-    pass
-```
-
-#### Instance.create_image
-
-Type annotations for `boto3.resource("ec2").create_image` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_image]
-
-```python
-def create_image(
-    self,
-    Name: str,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    Description: str = None,
-    DryRun: bool = None,
-    NoReboot: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _Image:
-    pass
-```
-
-#### Instance.create_tags
-
-Type annotations for `boto3.resource("ec2").create_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_tags]
-
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
-
-#### Instance.delete_tags
-
-Type annotations for `boto3.resource("ec2").delete_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.delete_tags]
-
-```python
-def delete_tags(
-    self,
-    Tags: List[TagTypeDef] = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.describe_attribute
-
-Type annotations for `boto3.resource("ec2").describe_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.describe_attribute]
-
-```python
-def describe_attribute(
-    self,
-    Attribute: InstanceAttributeName,
-    DryRun: bool = None
-) -> InstanceAttributeTypeDef:
-    pass
-```
-
-#### Instance.detach_classic_link_vpc
-
-Type annotations for `boto3.resource("ec2").detach_classic_link_vpc` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc]
-
-```python
-def detach_classic_link_vpc(
-    self,
-    VpcId: str,
-    DryRun: bool = None
-) -> DetachClassicLinkVpcResultTypeDef:
-    pass
-```
-
-#### Instance.detach_volume
-
-Type annotations for `boto3.resource("ec2").detach_volume` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_volume]
-
-```python
-def detach_volume(
-    self,
-    VolumeId: str,
-    Device: str = None,
-    Force: bool = None,
-    DryRun: bool = None
-) -> "VolumeAttachmentTypeDef":
-    pass
-```
-
-#### Instance.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Instance.load
-
-Type annotations for `boto3.resource("ec2").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Instance.modify_attribute
-
-Type annotations for `boto3.resource("ec2").modify_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.modify_attribute]
-
-```python
-def modify_attribute(
-    self,
-    SourceDestCheck: "AttributeBooleanValueTypeDef" = None,
-    Attribute: InstanceAttributeName = None,
-    BlockDeviceMappings: List[InstanceBlockDeviceMappingSpecificationTypeDef] = None,
-    DisableApiTermination: "AttributeBooleanValueTypeDef" = None,
-    DryRun: bool = None,
-    EbsOptimized: "AttributeBooleanValueTypeDef" = None,
-    EnaSupport: "AttributeBooleanValueTypeDef" = None,
-    Groups: List[str] = None,
-    InstanceInitiatedShutdownBehavior: "AttributeValueTypeDef" = None,
-    InstanceType: "AttributeValueTypeDef" = None,
-    Kernel: "AttributeValueTypeDef" = None,
-    Ramdisk: "AttributeValueTypeDef" = None,
-    SriovNetSupport: "AttributeValueTypeDef" = None,
-    UserData: BlobAttributeValueTypeDef = None,
-    Value: str = None
-) -> None:
-    pass
-```
-
-#### Instance.monitor
-
-Type annotations for `boto3.resource("ec2").monitor` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.monitor]
-
-```python
-def monitor(
-    self,
-    DryRun: bool = None
-) -> MonitorInstancesResultTypeDef:
-    pass
-```
-
-#### Instance.password_data
-
-Type annotations for `boto3.resource("ec2").password_data` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.password_data]
-
-```python
-def password_data(
-    self,
-    DryRun: bool = None
-) -> GetPasswordDataResultTypeDef:
-    pass
-```
-
-#### Instance.reboot
-
-Type annotations for `boto3.resource("ec2").reboot` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reboot]
-
-```python
-def reboot(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.reload
-
-Type annotations for `boto3.resource("ec2").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Instance.report_status
-
-Type annotations for `boto3.resource("ec2").report_status` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.report_status]
-
-```python
-def report_status(
-    self,
-    ReasonCodes: List[ReportInstanceReasonCodes],
-    Status: ReportStatusType,
-    Description: str = None,
-    DryRun: bool = None,
-    EndTime: datetime = None,
-    StartTime: datetime = None
-) -> None:
-    pass
-```
-
-#### Instance.reset_attribute
-
-Type annotations for `boto3.resource("ec2").reset_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_attribute]
-
-```python
-def reset_attribute(
-    self,
-    Attribute: InstanceAttributeName,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.reset_kernel
-
-Type annotations for `boto3.resource("ec2").reset_kernel` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_kernel]
-
-```python
-def reset_kernel(
-    self,
-    Attribute: InstanceAttributeName,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.reset_ramdisk
-
-Type annotations for `boto3.resource("ec2").reset_ramdisk` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_ramdisk]
-
-```python
-def reset_ramdisk(
-    self,
-    Attribute: InstanceAttributeName,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.reset_source_dest_check
-
-Type annotations for `boto3.resource("ec2").reset_source_dest_check` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_source_dest_check]
-
-```python
-def reset_source_dest_check(
-    self,
-    Attribute: InstanceAttributeName,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Instance.start
-
-Type annotations for `boto3.resource("ec2").start` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.start]
-
-```python
-def start(
-    self,
-    AdditionalInfo: str = None,
-    DryRun: bool = None
-) -> StartInstancesResultTypeDef:
-    pass
-```
-
-#### Instance.stop
-
-Type annotations for `boto3.resource("ec2").stop` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.stop]
-
-```python
-def stop(
-    self,
-    Hibernate: bool = None,
-    DryRun: bool = None,
-    Force: bool = None
-) -> StopInstancesResultTypeDef:
-    pass
-```
-
-#### Instance.terminate
-
-Type annotations for `boto3.resource("ec2").terminate` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.terminate]
-
-```python
-def terminate(
-    self,
-    DryRun: bool = None
-) -> TerminateInstancesResultTypeDef:
-    pass
-```
-
-#### Instance.unmonitor
-
-Type annotations for `boto3.resource("ec2").unmonitor` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.unmonitor]
-
-```python
-def unmonitor(
-    self,
-    DryRun: bool = None
-) -> UnmonitorInstancesResultTypeDef:
-    pass
-```
-
-#### Instance.wait_until_exists
-
-Type annotations for `boto3.resource("ec2").wait_until_exists` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_exists]
-
-```python
-def wait_until_exists(
-    self
-) -> None:
-    pass
-```
-
-#### Instance.wait_until_running
-
-Type annotations for `boto3.resource("ec2").wait_until_running` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_running]
-
-```python
-def wait_until_running(
-    self
-) -> None:
-    pass
-```
-
-#### Instance.wait_until_stopped
-
-Type annotations for `boto3.resource("ec2").wait_until_stopped` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_stopped]
-
-```python
-def wait_until_stopped(
-    self
-) -> None:
-    pass
-```
-
-#### Instance.wait_until_terminated
-
-Type annotations for `boto3.resource("ec2").wait_until_terminated` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_terminated]
-
-```python
-def wait_until_terminated(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `classic_address`: [ClassicAddress](#classicaddress)
+- `image`: [Image](#image)
+- `key_pair`: [KeyPairInfo](#keypairinfo)
+- `network_interfaces`: [NetworkInterface](#networkinterface)
+- `placement_group`: [PlacementGroup](#placementgroup)
+- `subnet`: [Subnet](#subnet)
+- `vpc`: [Vpc](#vpc)
+- `volumes`: [InstanceVolumesCollection](#instancevolumescollection)
+- `vpc_addresses`:
+  [InstanceVpcAddressesCollection](#instancevpcaddressescollection)
 
 ### Instance collections
-
 
 #### Instance.volumes
 
@@ -3065,51 +1643,15 @@ def get_collection() -> InstanceVolumesCollection:
     return resource.volumes
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.InstanceVolumesCollection)
+Provides access to [Volume](#volume) resource.
 
-```python
-class InstanceVolumesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "InstanceVolumesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        VolumeIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "InstanceVolumesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "InstanceVolumesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "InstanceVolumesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Volume"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Volume"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Instance.InstanceVolumesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.volumes)
 
 #### Instance.vpc_addresses
 
-Type annotations for `boto3.resource("ec2").Instance(...).vpc_addresses` collection.
+Type annotations for `boto3.resource("ec2").Instance(...).vpc_addresses`
+collection.
 
 Can be used directly:
 
@@ -3121,49 +1663,419 @@ def get_collection() -> InstanceVpcAddressesCollection:
     return resource.vpc_addresses
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.InstanceVpcAddressesCollection)
+Provides access to [VpcAddress](#vpcaddress) resource.
 
-```python
-class InstanceVpcAddressesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "InstanceVpcAddressesCollection":
-        pass
+Boto3 documentation:
+[EC2.Instance.InstanceVpcAddressesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.vpc_addresses)
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        PublicIps: List[str] = None,
-        AllocationIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "InstanceVpcAddressesCollection":
-        pass
+### Instance methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "InstanceVpcAddressesCollection":
-        pass
+#### Instance.attach_classic_link_vpc method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "InstanceVpcAddressesCollection":
-        pass
+Type annotations for `boto3.resource("ec2").attach_classic_link_vpc` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["VpcAddress"]]:
-        pass
+Boto3 documentation:
+[EC2.Instance.attach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_classic_link_vpc)
 
-    def __iter__(
-        self
-    ) -> Iterator["VpcAddress"]:
-        pass
-```
+Arguments:
 
+- `Groups`: `List`\[`str`\] *(required)*
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
 
+Returns
+[AttachClassicLinkVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attachclassiclinkvpcresulttypedef).
 
+#### Instance.attach_volume method
+
+Type annotations for `boto3.resource("ec2").attach_volume` method.
+
+Boto3 documentation:
+[EC2.Instance.attach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_volume)
+
+Arguments:
+
+- `Device`: `str` *(required)*
+- `VolumeId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumeattachmenttypedef).
+
+#### Instance.console_output method
+
+Type annotations for `boto3.resource("ec2").console_output` method.
+
+Boto3 documentation:
+[EC2.Instance.console_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.console_output)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `Latest`: `bool`
+
+Returns
+[GetConsoleOutputResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getconsoleoutputresulttypedef).
+
+#### Instance.create_image method
+
+Type annotations for `boto3.resource("ec2").create_image` method.
+
+Boto3 documentation:
+[EC2.Instance.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_image)
+
+Arguments:
+
+- `Name`: `str` *(required)*
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `NoReboot`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [Image](#image).
+
+#### Instance.create_tags method
+
+Type annotations for `boto3.resource("ec2").create_tags` method.
+
+Boto3 documentation:
+[EC2.Instance.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_tags)
+
+Arguments:
+
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Instance.delete_tags method
+
+Type annotations for `boto3.resource("ec2").delete_tags` method.
+
+Boto3 documentation:
+[EC2.Instance.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.delete_tags)
+
+Arguments:
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `DryRun`: `bool`
+
+#### Instance.describe_attribute method
+
+Type annotations for `boto3.resource("ec2").describe_attribute` method.
+
+Boto3 documentation:
+[EC2.Instance.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.describe_attribute)
+
+Arguments:
+
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[InstanceAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceattributetypedef).
+
+#### Instance.detach_classic_link_vpc method
+
+Type annotations for `boto3.resource("ec2").detach_classic_link_vpc` method.
+
+Boto3 documentation:
+[EC2.Instance.detach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc)
+
+Arguments:
+
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DetachClassicLinkVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#detachclassiclinkvpcresulttypedef).
+
+#### Instance.detach_volume method
+
+Type annotations for `boto3.resource("ec2").detach_volume` method.
+
+Boto3 documentation:
+[EC2.Instance.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_volume)
+
+Arguments:
+
+- `VolumeId`: `str` *(required)*
+- `Device`: `str`
+- `Force`: `bool`
+- `DryRun`: `bool`
+
+Returns
+[VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumeattachmenttypedef).
+
+#### Instance.get_available_subresources method
+
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
+
+Boto3 documentation:
+[EC2.Instance.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Instance.load method
+
+Type annotations for `boto3.resource("ec2").load` method.
+
+Boto3 documentation:
+[EC2.Instance.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.load)
+
+#### Instance.modify_attribute method
+
+Type annotations for `boto3.resource("ec2").modify_attribute` method.
+
+Boto3 documentation:
+[EC2.Instance.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.modify_attribute)
+
+Arguments:
+
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+- `BlockDeviceMappings`:
+  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceblockdevicemappingspecificationtypedef)\]
+- `DisableApiTermination`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+- `EbsOptimized`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `EnaSupport`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `Groups`: `List`\[`str`\]
+- `InstanceInitiatedShutdownBehavior`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `InstanceType`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `Kernel`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `Ramdisk`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `SriovNetSupport`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `UserData`:
+  [BlobAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blobattributevaluetypedef)
+- `Value`: `str`
+
+#### Instance.monitor method
+
+Type annotations for `boto3.resource("ec2").monitor` method.
+
+Boto3 documentation:
+[EC2.Instance.monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.monitor)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[MonitorInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#monitorinstancesresulttypedef).
+
+#### Instance.password_data method
+
+Type annotations for `boto3.resource("ec2").password_data` method.
+
+Boto3 documentation:
+[EC2.Instance.password_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.password_data)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[GetPasswordDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getpassworddataresulttypedef).
+
+#### Instance.reboot method
+
+Type annotations for `boto3.resource("ec2").reboot` method.
+
+Boto3 documentation:
+[EC2.Instance.reboot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reboot)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+#### Instance.reload method
+
+Type annotations for `boto3.resource("ec2").reload` method.
+
+Boto3 documentation:
+[EC2.Instance.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reload)
+
+#### Instance.report_status method
+
+Type annotations for `boto3.resource("ec2").report_status` method.
+
+Boto3 documentation:
+[EC2.Instance.report_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.report_status)
+
+Arguments:
+
+- `ReasonCodes`:
+  `List`\[[ReportInstanceReasonCodes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#reportinstancereasoncodes)\]
+  *(required)*
+- `Status`:
+  [ReportStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#reportstatustype)
+  *(required)*
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EndTime`: `datetime`
+- `StartTime`: `datetime`
+
+#### Instance.reset_attribute method
+
+Type annotations for `boto3.resource("ec2").reset_attribute` method.
+
+Boto3 documentation:
+[EC2.Instance.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_attribute)
+
+Arguments:
+
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+#### Instance.reset_kernel method
+
+Type annotations for `boto3.resource("ec2").reset_kernel` method.
+
+Boto3 documentation:
+[EC2.Instance.reset_kernel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_kernel)
+
+Arguments:
+
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+#### Instance.reset_ramdisk method
+
+Type annotations for `boto3.resource("ec2").reset_ramdisk` method.
+
+Boto3 documentation:
+[EC2.Instance.reset_ramdisk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_ramdisk)
+
+Arguments:
+
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+#### Instance.reset_source_dest_check method
+
+Type annotations for `boto3.resource("ec2").reset_source_dest_check` method.
+
+Boto3 documentation:
+[EC2.Instance.reset_source_dest_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_source_dest_check)
+
+Arguments:
+
+- `Attribute`:
+  [InstanceAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+#### Instance.start method
+
+Type annotations for `boto3.resource("ec2").start` method.
+
+Boto3 documentation:
+[EC2.Instance.start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.start)
+
+Arguments:
+
+- `AdditionalInfo`: `str`
+- `DryRun`: `bool`
+
+Returns
+[StartInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#startinstancesresulttypedef).
+
+#### Instance.stop method
+
+Type annotations for `boto3.resource("ec2").stop` method.
+
+Boto3 documentation:
+[EC2.Instance.stop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.stop)
+
+Arguments:
+
+- `Hibernate`: `bool`
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+Returns
+[StopInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#stopinstancesresulttypedef).
+
+#### Instance.terminate method
+
+Type annotations for `boto3.resource("ec2").terminate` method.
+
+Boto3 documentation:
+[EC2.Instance.terminate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.terminate)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[TerminateInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#terminateinstancesresulttypedef).
+
+#### Instance.unmonitor method
+
+Type annotations for `boto3.resource("ec2").unmonitor` method.
+
+Boto3 documentation:
+[EC2.Instance.unmonitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.unmonitor)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[UnmonitorInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unmonitorinstancesresulttypedef).
+
+#### Instance.wait_until_exists method
+
+Type annotations for `boto3.resource("ec2").wait_until_exists` method.
+
+Boto3 documentation:
+[EC2.Instance.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_exists)
+
+#### Instance.wait_until_running method
+
+Type annotations for `boto3.resource("ec2").wait_until_running` method.
+
+Boto3 documentation:
+[EC2.Instance.wait_until_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_running)
+
+#### Instance.wait_until_stopped method
+
+Type annotations for `boto3.resource("ec2").wait_until_stopped` method.
+
+Boto3 documentation:
+[EC2.Instance.wait_until_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_stopped)
+
+#### Instance.wait_until_terminated method
+
+Type annotations for `boto3.resource("ec2").wait_until_terminated` method.
+
+Boto3 documentation:
+[EC2.Instance.wait_until_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_terminated)
 
 ## InternetGateway
 
@@ -3178,130 +2090,92 @@ def get_resource() -> InternetGateway:
     return boto3.resource("ec2").InternetGateway(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
-
+Boto3 documentation:
+[EC2.InternetGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
 
 ### InternetGateway attributes
 
-
-- `attachments`: `List[Any]`
-
+- `attachments`: `List`\[`Any`\]
 - `internet_gateway_id`: `str`
-
 - `owner_id`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `id`: `str`
-
-
-
 
 ### InternetGateway methods
 
-
-#### InternetGateway.attach_to_vpc
+#### InternetGateway.attach_to_vpc method
 
 Type annotations for `boto3.resource("ec2").attach_to_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.attach_to_vpc]
+Boto3 documentation:
+[EC2.InternetGateway.attach_to_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.attach_to_vpc)
 
-```python
-def attach_to_vpc(
-    self,
-    VpcId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### InternetGateway.create_tags
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+
+#### InternetGateway.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.create_tags]
+Boto3 documentation:
+[EC2.InternetGateway.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### InternetGateway.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### InternetGateway.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.delete]
+Boto3 documentation:
+[EC2.InternetGateway.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### InternetGateway.detach_from_vpc
+- `DryRun`: `bool`
+
+#### InternetGateway.detach_from_vpc method
 
 Type annotations for `boto3.resource("ec2").detach_from_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.detach_from_vpc]
+Boto3 documentation:
+[EC2.InternetGateway.detach_from_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.detach_from_vpc)
 
-```python
-def detach_from_vpc(
-    self,
-    VpcId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### InternetGateway.get_available_subresources
+- `VpcId`: `str` *(required)*
+- `DryRun`: `bool`
+
+#### InternetGateway.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.get_available_subresources]
+Boto3 documentation:
+[EC2.InternetGateway.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### InternetGateway.load
+#### InternetGateway.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.load]
+Boto3 documentation:
+[EC2.InternetGateway.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### InternetGateway.reload
+#### InternetGateway.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.InternetGateway.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.reload)
 
 ## KeyPair
 
@@ -3316,62 +2190,40 @@ def get_resource() -> KeyPair:
     return boto3.resource("ec2").KeyPair(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
-
+Boto3 documentation:
+[EC2.KeyPair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
 
 ### KeyPair attributes
 
-
 - `key_fingerprint`: `str`
-
 - `key_material`: `str`
-
 - `key_name`: `str`
-
 - `key_pair_id`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-
-
 
 ### KeyPair methods
 
-
-#### KeyPair.delete
+#### KeyPair.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.delete]
+Boto3 documentation:
+[EC2.KeyPair.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.delete)
 
-```python
-def delete(
-    self,
-    KeyPairId: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### KeyPair.get_available_subresources
+- `KeyPairId`: `str`
+- `DryRun`: `bool`
+
+#### KeyPair.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.get_available_subresources]
+Boto3 documentation:
+[EC2.KeyPair.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-
-
-
-
+Returns `List`\[`str`\].
 
 ## KeyPairInfo
 
@@ -3386,86 +2238,53 @@ def get_resource() -> KeyPairInfo:
     return boto3.resource("ec2").KeyPairInfo(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPairInfo)
-
+Boto3 documentation:
+[EC2.KeyPairInfo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPairInfo)
 
 ### KeyPairInfo attributes
 
-
 - `key_pair_id`: `str`
-
 - `key_fingerprint`: `str`
-
 - `key_name`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-
-
 
 ### KeyPairInfo methods
 
-
-#### KeyPairInfo.delete
+#### KeyPairInfo.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.delete]
+Boto3 documentation:
+[EC2.KeyPairInfo.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.delete)
 
-```python
-def delete(
-    self,
-    KeyPairId: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### KeyPairInfo.get_available_subresources
+- `KeyPairId`: `str`
+- `DryRun`: `bool`
+
+#### KeyPairInfo.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.get_available_subresources]
+Boto3 documentation:
+[EC2.KeyPairInfo.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### KeyPairInfo.load
+#### KeyPairInfo.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.load]
+Boto3 documentation:
+[EC2.KeyPairInfo.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### KeyPairInfo.reload
+#### KeyPairInfo.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.KeyPairInfo.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.reload)
 
 ## NetworkAcl
 
@@ -3480,183 +2299,146 @@ def get_resource() -> NetworkAcl:
     return boto3.resource("ec2").NetworkAcl(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
-
+Boto3 documentation:
+[EC2.NetworkAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
 
 ### NetworkAcl attributes
 
-
-- `associations`: `List[Any]`
-
-- `entries`: `List[Any]`
-
+- `associations`: `List`\[`Any`\]
+- `entries`: `List`\[`Any`\]
 - `is_default`: `bool`
-
 - `network_acl_id`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `vpc_id`: `str`
-
 - `owner_id`: `str`
-
 - `id`: `str`
-
-- `vpc`: `"Vpc"`
-
-
-
+- `vpc`: [Vpc](#vpc)
 
 ### NetworkAcl methods
 
-
-#### NetworkAcl.create_entry
+#### NetworkAcl.create_entry method
 
 Type annotations for `boto3.resource("ec2").create_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_entry]
+Boto3 documentation:
+[EC2.NetworkAcl.create_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_entry)
 
-```python
-def create_entry(
-    self,
-    Egress: bool,
-    Protocol: str,
-    RuleAction: RuleAction,
-    RuleNumber: int,
-    CidrBlock: str = None,
-    DryRun: bool = None,
-    IcmpTypeCode: "IcmpTypeCodeTypeDef" = None,
-    Ipv6CidrBlock: str = None,
-    PortRange: "PortRangeTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkAcl.create_tags
+- `Egress`: `bool` *(required)*
+- `Protocol`: `str` *(required)*
+- `RuleAction`:
+  [RuleAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ruleaction)
+  *(required)*
+- `RuleNumber`: `int` *(required)*
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`:
+  [IcmpTypeCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`:
+  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)
+
+#### NetworkAcl.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_tags]
+Boto3 documentation:
+[EC2.NetworkAcl.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### NetworkAcl.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### NetworkAcl.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete]
+Boto3 documentation:
+[EC2.NetworkAcl.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkAcl.delete_entry
+- `DryRun`: `bool`
+
+#### NetworkAcl.delete_entry method
 
 Type annotations for `boto3.resource("ec2").delete_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete_entry]
+Boto3 documentation:
+[EC2.NetworkAcl.delete_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete_entry)
 
-```python
-def delete_entry(
-    self,
-    Egress: bool,
-    RuleNumber: int,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkAcl.get_available_subresources
+- `Egress`: `bool` *(required)*
+- `RuleNumber`: `int` *(required)*
+- `DryRun`: `bool`
+
+#### NetworkAcl.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.get_available_subresources]
+Boto3 documentation:
+[EC2.NetworkAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### NetworkAcl.load
+#### NetworkAcl.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.load]
+Boto3 documentation:
+[EC2.NetworkAcl.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### NetworkAcl.reload
+#### NetworkAcl.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.reload]
+Boto3 documentation:
+[EC2.NetworkAcl.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### NetworkAcl.replace_association
+#### NetworkAcl.replace_association method
 
 Type annotations for `boto3.resource("ec2").replace_association` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_association]
+Boto3 documentation:
+[EC2.NetworkAcl.replace_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_association)
 
-```python
-def replace_association(
-    self,
-    AssociationId: str,
-    DryRun: bool = None
-) -> ReplaceNetworkAclAssociationResultTypeDef:
-    pass
-```
+Arguments:
 
-#### NetworkAcl.replace_entry
+- `AssociationId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[ReplaceNetworkAclAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#replacenetworkaclassociationresulttypedef).
+
+#### NetworkAcl.replace_entry method
 
 Type annotations for `boto3.resource("ec2").replace_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_entry]
+Boto3 documentation:
+[EC2.NetworkAcl.replace_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_entry)
 
-```python
-def replace_entry(
-    self,
-    Egress: bool,
-    Protocol: str,
-    RuleAction: RuleAction,
-    RuleNumber: int,
-    CidrBlock: str = None,
-    DryRun: bool = None,
-    IcmpTypeCode: "IcmpTypeCodeTypeDef" = None,
-    Ipv6CidrBlock: str = None,
-    PortRange: "PortRangeTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `Egress`: `bool` *(required)*
+- `Protocol`: `str` *(required)*
+- `RuleAction`:
+  [RuleAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ruleaction)
+  *(required)*
+- `RuleNumber`: `int` *(required)*
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`:
+  [IcmpTypeCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`:
+  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)
 
 ## NetworkInterface
 
@@ -3671,251 +2453,193 @@ def get_resource() -> NetworkInterface:
     return boto3.resource("ec2").NetworkInterface(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
-
+Boto3 documentation:
+[EC2.NetworkInterface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
 
 ### NetworkInterface attributes
 
-
-- `association_attribute`: `Dict[str, Any]`
-
-- `attachment`: `Dict[str, Any]`
-
+- `association_attribute`: `Dict`\[`str`, `Any`\]
+- `attachment`: `Dict`\[`str`, `Any`\]
 - `availability_zone`: `str`
-
 - `description`: `str`
-
-- `groups`: `List[Any]`
-
+- `groups`: `List`\[`Any`\]
 - `interface_type`: `str`
-
-- `ipv6_addresses`: `List[Any]`
-
+- `ipv6_addresses`: `List`\[`Any`\]
 - `mac_address`: `str`
-
 - `network_interface_id`: `str`
-
 - `outpost_arn`: `str`
-
 - `owner_id`: `str`
-
 - `private_dns_name`: `str`
-
 - `private_ip_address`: `str`
-
-- `private_ip_addresses`: `List[Any]`
-
+- `private_ip_addresses`: `List`\[`Any`\]
 - `requester_id`: `str`
-
 - `requester_managed`: `bool`
-
 - `source_dest_check`: `bool`
-
 - `status`: `str`
-
 - `subnet_id`: `str`
-
-- `tag_set`: `List[Any]`
-
+- `tag_set`: `List`\[`Any`\]
 - `vpc_id`: `str`
-
 - `id`: `str`
-
-- `association`: `"NetworkInterfaceAssociation"`
-
-- `subnet`: `"Subnet"`
-
-- `vpc`: `"Vpc"`
-
-
-
+- `association`: [NetworkInterfaceAssociation](#networkinterfaceassociation)
+- `subnet`: [Subnet](#subnet)
+- `vpc`: [Vpc](#vpc)
 
 ### NetworkInterface methods
 
+#### NetworkInterface.assign_private_ip_addresses method
 
-#### NetworkInterface.assign_private_ip_addresses
+Type annotations for `boto3.resource("ec2").assign_private_ip_addresses`
+method.
 
-Type annotations for `boto3.resource("ec2").assign_private_ip_addresses` method.
+Boto3 documentation:
+[EC2.NetworkInterface.assign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.assign_private_ip_addresses)
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.assign_private_ip_addresses]
+Arguments:
 
-```python
-def assign_private_ip_addresses(
-    self,
-    AllowReassignment: bool = None,
-    PrivateIpAddresses: List[str] = None,
-    SecondaryPrivateIpAddressCount: int = None
-) -> AssignPrivateIpAddressesResultTypeDef:
-    pass
-```
+- `AllowReassignment`: `bool`
+- `PrivateIpAddresses`: `List`\[`str`\]
+- `SecondaryPrivateIpAddressCount`: `int`
 
-#### NetworkInterface.attach
+Returns
+[AssignPrivateIpAddressesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#assignprivateipaddressesresulttypedef).
+
+#### NetworkInterface.attach method
 
 Type annotations for `boto3.resource("ec2").attach` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.attach]
+Boto3 documentation:
+[EC2.NetworkInterface.attach](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.attach)
 
-```python
-def attach(
-    self,
-    DeviceIndex: int,
-    InstanceId: str,
-    DryRun: bool = None,
-    NetworkCardIndex: int = None
-) -> AttachNetworkInterfaceResultTypeDef:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.create_tags
+- `DeviceIndex`: `int` *(required)*
+- `InstanceId`: `str` *(required)*
+- `DryRun`: `bool`
+- `NetworkCardIndex`: `int`
+
+Returns
+[AttachNetworkInterfaceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attachnetworkinterfaceresulttypedef).
+
+#### NetworkInterface.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.create_tags]
+Boto3 documentation:
+[EC2.NetworkInterface.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### NetworkInterface.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.delete]
+Boto3 documentation:
+[EC2.NetworkInterface.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.describe_attribute
+- `DryRun`: `bool`
+
+#### NetworkInterface.describe_attribute method
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.describe_attribute]
+Boto3 documentation:
+[EC2.NetworkInterface.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.describe_attribute)
 
-```python
-def describe_attribute(
-    self,
-    Attribute: NetworkInterfaceAttribute = None,
-    DryRun: bool = None
-) -> DescribeNetworkInterfaceAttributeResultTypeDef:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.detach
+- `Attribute`:
+  [NetworkInterfaceAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#networkinterfaceattribute)
+- `DryRun`: `bool`
+
+Returns
+[DescribeNetworkInterfaceAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinterfaceattributeresulttypedef).
+
+#### NetworkInterface.detach method
 
 Type annotations for `boto3.resource("ec2").detach` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.detach]
+Boto3 documentation:
+[EC2.NetworkInterface.detach](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.detach)
 
-```python
-def detach(
-    self,
-    AttachmentId: str,
-    DryRun: bool = None,
-    Force: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.get_available_subresources
+- `AttachmentId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+#### NetworkInterface.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.get_available_subresources]
+Boto3 documentation:
+[EC2.NetworkInterface.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### NetworkInterface.load
+#### NetworkInterface.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.load]
+Boto3 documentation:
+[EC2.NetworkInterface.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### NetworkInterface.modify_attribute
+#### NetworkInterface.modify_attribute method
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.modify_attribute]
+Boto3 documentation:
+[EC2.NetworkInterface.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.modify_attribute)
 
-```python
-def modify_attribute(
-    self,
-    Attachment: NetworkInterfaceAttachmentChangesTypeDef = None,
-    Description: "AttributeValueTypeDef" = None,
-    DryRun: bool = None,
-    Groups: List[str] = None,
-    SourceDestCheck: "AttributeBooleanValueTypeDef" = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.reload
+- `Attachment`:
+  [NetworkInterfaceAttachmentChangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceattachmentchangestypedef)
+- `Description`:
+  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+
+#### NetworkInterface.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reload]
+Boto3 documentation:
+[EC2.NetworkInterface.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### NetworkInterface.reset_attribute
+#### NetworkInterface.reset_attribute method
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reset_attribute]
+Boto3 documentation:
+[EC2.NetworkInterface.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reset_attribute)
 
-```python
-def reset_attribute(
-    self,
-    DryRun: bool = None,
-    SourceDestCheck: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkInterface.unassign_private_ip_addresses
+- `DryRun`: `bool`
+- `SourceDestCheck`: `str`
 
-Type annotations for `boto3.resource("ec2").unassign_private_ip_addresses` method.
+#### NetworkInterface.unassign_private_ip_addresses method
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.unassign_private_ip_addresses]
+Type annotations for `boto3.resource("ec2").unassign_private_ip_addresses`
+method.
 
-```python
-def unassign_private_ip_addresses(
-    self,
-    PrivateIpAddresses: List[str]
-) -> None:
-    pass
-```
+Boto3 documentation:
+[EC2.NetworkInterface.unassign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.unassign_private_ip_addresses)
 
+Arguments:
 
-
-
-
+- `PrivateIpAddresses`: `List`\[`str`\] *(required)*
 
 ## NetworkInterfaceAssociation
 
@@ -3930,88 +2654,54 @@ def get_resource() -> NetworkInterfaceAssociation:
     return boto3.resource("ec2").NetworkInterfaceAssociation(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
-
+Boto3 documentation:
+[EC2.NetworkInterfaceAssociation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
 
 ### NetworkInterfaceAssociation attributes
 
-
 - `carrier_ip`: `str`
-
 - `ip_owner_id`: `str`
-
 - `public_dns_name`: `str`
-
 - `public_ip`: `str`
-
 - `id`: `str`
-
-- `address`: `"VpcAddress"`
-
-
-
+- `address`: [VpcAddress](#vpcaddress)
 
 ### NetworkInterfaceAssociation methods
 
-
-#### NetworkInterfaceAssociation.delete
+#### NetworkInterfaceAssociation.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.delete]
+Boto3 documentation:
+[EC2.NetworkInterfaceAssociation.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.delete)
 
-```python
-def delete(
-    self,
-    PublicIp: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### NetworkInterfaceAssociation.get_available_subresources
+- `PublicIp`: `str`
+- `DryRun`: `bool`
+
+#### NetworkInterfaceAssociation.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.get_available_subresources]
+Boto3 documentation:
+[EC2.NetworkInterfaceAssociation.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### NetworkInterfaceAssociation.load
+#### NetworkInterfaceAssociation.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.load]
+Boto3 documentation:
+[EC2.NetworkInterfaceAssociation.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### NetworkInterfaceAssociation.reload
+#### NetworkInterfaceAssociation.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.NetworkInterfaceAssociation.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.reload)
 
 ## PlacementGroup
 
@@ -4026,96 +2716,27 @@ def get_resource() -> PlacementGroup:
     return boto3.resource("ec2").PlacementGroup(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
-
+Boto3 documentation:
+[EC2.PlacementGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
 
 ### PlacementGroup attributes
 
-
 - `group_name`: `str`
-
 - `state`: `str`
-
 - `strategy`: `str`
-
 - `partition_count`: `int`
-
 - `group_id`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `name`: `str`
-
-- `instances`: `PlacementGroupInstancesCollection`
-
-
-
-
-### PlacementGroup methods
-
-
-#### PlacementGroup.delete
-
-Type annotations for `boto3.resource("ec2").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.delete]
-
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### PlacementGroup.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### PlacementGroup.load
-
-Type annotations for `boto3.resource("ec2").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### PlacementGroup.reload
-
-Type annotations for `boto3.resource("ec2").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `instances`:
+  [PlacementGroupInstancesCollection](#placementgroupinstancescollection)
 
 ### PlacementGroup collections
 
-
 #### PlacementGroup.instances
 
-Type annotations for `boto3.resource("ec2").PlacementGroup(...).instances` collection.
+Type annotations for `boto3.resource("ec2").PlacementGroup(...).instances`
+collection.
 
 Can be used directly:
 
@@ -4127,95 +2748,46 @@ def get_collection() -> PlacementGroupInstancesCollection:
     return resource.instances
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.PlacementGroupInstancesCollection)
+Provides access to [Instance](#instance) resource.
 
-```python
-class PlacementGroupInstancesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "PlacementGroupInstancesCollection":
-        pass
+Boto3 documentation:
+[EC2.PlacementGroup.PlacementGroupInstancesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.instances)
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "PlacementGroupInstancesCollection":
-        pass
+### PlacementGroup methods
 
-    def create_tags(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
+#### PlacementGroup.delete method
 
-    def monitor(
-        self,
-        DryRun: bool = None
-    ) -> MonitorInstancesResultTypeDef:
-        pass
+Type annotations for `boto3.resource("ec2").delete` method.
 
-    def reboot(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
+Boto3 documentation:
+[EC2.PlacementGroup.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.delete)
 
-    def start(
-        self,
-        AdditionalInfo: str = None,
-        DryRun: bool = None
-    ) -> StartInstancesResultTypeDef:
-        pass
+Arguments:
 
-    def stop(
-        self,
-        Hibernate: bool = None,
-        DryRun: bool = None,
-        Force: bool = None
-    ) -> StopInstancesResultTypeDef:
-        pass
+- `DryRun`: `bool`
 
-    def terminate(
-        self,
-        DryRun: bool = None
-    ) -> TerminateInstancesResultTypeDef:
-        pass
+#### PlacementGroup.get_available_subresources method
 
-    def unmonitor(
-        self,
-        DryRun: bool = None
-    ) -> UnmonitorInstancesResultTypeDef:
-        pass
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-    def limit(
-        self,
-        count: int
-    ) -> "PlacementGroupInstancesCollection":
-        pass
+Boto3 documentation:
+[EC2.PlacementGroup.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.get_available_subresources)
 
-    def page_size(
-        self,
-        count: int
-    ) -> "PlacementGroupInstancesCollection":
-        pass
+Returns `List`\[`str`\].
 
-    def pages(
-        self
-    ) -> Iterator[List["Instance"]]:
-        pass
+#### PlacementGroup.load method
 
-    def __iter__(
-        self
-    ) -> Iterator["Instance"]:
-        pass
-```
+Type annotations for `boto3.resource("ec2").load` method.
 
+Boto3 documentation:
+[EC2.PlacementGroup.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.load)
 
+#### PlacementGroup.reload method
 
+Type annotations for `boto3.resource("ec2").reload` method.
+
+Boto3 documentation:
+[EC2.PlacementGroup.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.reload)
 
 ## Route
 
@@ -4230,123 +2802,84 @@ def get_resource() -> Route:
     return boto3.resource("ec2").Route(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
-
+Boto3 documentation:
+[EC2.Route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
 
 ### Route attributes
 
-
 - `destination_ipv6_cidr_block`: `str`
-
 - `destination_prefix_list_id`: `str`
-
 - `egress_only_internet_gateway_id`: `str`
-
 - `gateway_id`: `str`
-
 - `instance_id`: `str`
-
 - `instance_owner_id`: `str`
-
 - `nat_gateway_id`: `str`
-
 - `transit_gateway_id`: `str`
-
 - `local_gateway_id`: `str`
-
 - `carrier_gateway_id`: `str`
-
 - `network_interface_id`: `str`
-
 - `origin`: `str`
-
 - `state`: `str`
-
 - `vpc_peering_connection_id`: `str`
-
 - `route_table_id`: `str`
-
 - `destination_cidr_block`: `str`
-
-
-
 
 ### Route methods
 
-
-#### Route.RouteTable
+#### Route.RouteTable method
 
 Type annotations for `boto3.resource("ec2").RouteTable` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.RouteTable]
+Boto3 documentation:
+[EC2.Route.RouteTable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.RouteTable)
 
-```python
-def RouteTable(
-    self
-) -> _RouteTable:
-    pass
-```
+Returns [RouteTable](#routetable).
 
-#### Route.delete
+#### Route.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.delete]
+Boto3 documentation:
+[EC2.Route.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.delete)
 
-```python
-def delete(
-    self,
-    DestinationIpv6CidrBlock: str = None,
-    DestinationPrefixListId: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Route.get_available_subresources
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+
+#### Route.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.get_available_subresources]
+Boto3 documentation:
+[EC2.Route.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### Route.replace
+#### Route.replace method
 
 Type annotations for `boto3.resource("ec2").replace` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.replace]
+Boto3 documentation:
+[EC2.Route.replace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.replace)
 
-```python
-def replace(
-    self,
-    DestinationIpv6CidrBlock: str = None,
-    DestinationPrefixListId: str = None,
-    DryRun: bool = None,
-    VpcEndpointId: str = None,
-    EgressOnlyInternetGatewayId: str = None,
-    GatewayId: str = None,
-    InstanceId: str = None,
-    LocalTarget: bool = None,
-    NatGatewayId: str = None,
-    TransitGatewayId: str = None,
-    LocalGatewayId: str = None,
-    CarrierGatewayId: str = None,
-    NetworkInterfaceId: str = None,
-    VpcPeeringConnectionId: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
-
-
-
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `LocalTarget`: `bool`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
 
 ## RouteTable
 
@@ -4361,155 +2894,115 @@ def get_resource() -> RouteTable:
     return boto3.resource("ec2").RouteTable(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
-
+Boto3 documentation:
+[EC2.RouteTable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
 
 ### RouteTable attributes
 
-
-- `associations_attribute`: `List[Any]`
-
-- `propagating_vgws`: `List[Any]`
-
+- `associations_attribute`: `List`\[`Any`\]
+- `propagating_vgws`: `List`\[`Any`\]
 - `route_table_id`: `str`
-
-- `routes_attribute`: `List[Any]`
-
-- `tags`: `List[Any]`
-
+- `routes_attribute`: `List`\[`Any`\]
+- `tags`: `List`\[`Any`\]
 - `vpc_id`: `str`
-
 - `owner_id`: `str`
-
 - `id`: `str`
-
-- `associations`: `"RouteTableAssociation"`
-
-- `routes`: `"Route"`
-
-- `vpc`: `"Vpc"`
-
-
-
+- `associations`: [RouteTableAssociation](#routetableassociation)
+- `routes`: [Route](#route)
+- `vpc`: [Vpc](#vpc)
 
 ### RouteTable methods
 
-
-#### RouteTable.associate_with_subnet
+#### RouteTable.associate_with_subnet method
 
 Type annotations for `boto3.resource("ec2").associate_with_subnet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.associate_with_subnet]
+Boto3 documentation:
+[EC2.RouteTable.associate_with_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.associate_with_subnet)
 
-```python
-def associate_with_subnet(
-    self,
-    DryRun: bool = None,
-    SubnetId: str = None,
-    GatewayId: str = None
-) -> _RouteTableAssociation:
-    pass
-```
+Arguments:
 
-#### RouteTable.create_route
+- `DryRun`: `bool`
+- `SubnetId`: `str`
+- `GatewayId`: `str`
+
+Returns [RouteTableAssociation](#routetableassociation).
+
+#### RouteTable.create_route method
 
 Type annotations for `boto3.resource("ec2").create_route` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_route]
+Boto3 documentation:
+[EC2.RouteTable.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_route)
 
-```python
-def create_route(
-    self,
-    DestinationCidrBlock: str = None,
-    DestinationIpv6CidrBlock: str = None,
-    DestinationPrefixListId: str = None,
-    DryRun: bool = None,
-    VpcEndpointId: str = None,
-    EgressOnlyInternetGatewayId: str = None,
-    GatewayId: str = None,
-    InstanceId: str = None,
-    NatGatewayId: str = None,
-    TransitGatewayId: str = None,
-    LocalGatewayId: str = None,
-    CarrierGatewayId: str = None,
-    NetworkInterfaceId: str = None,
-    VpcPeeringConnectionId: str = None
-) -> _Route:
-    pass
-```
+Arguments:
 
-#### RouteTable.create_tags
+- `DestinationCidrBlock`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
+Returns [Route](#route).
+
+#### RouteTable.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_tags]
+Boto3 documentation:
+[EC2.RouteTable.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### RouteTable.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### RouteTable.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.delete]
+Boto3 documentation:
+[EC2.RouteTable.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### RouteTable.get_available_subresources
+- `DryRun`: `bool`
+
+#### RouteTable.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.get_available_subresources]
+Boto3 documentation:
+[EC2.RouteTable.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### RouteTable.load
+#### RouteTable.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.load]
+Boto3 documentation:
+[EC2.RouteTable.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### RouteTable.reload
+#### RouteTable.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.RouteTable.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.reload)
 
 ## RouteTableAssociation
 
@@ -4524,82 +3017,56 @@ def get_resource() -> RouteTableAssociation:
     return boto3.resource("ec2").RouteTableAssociation(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
-
+Boto3 documentation:
+[EC2.RouteTableAssociation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
 
 ### RouteTableAssociation attributes
 
-
 - `main`: `bool`
-
 - `route_table_association_id`: `str`
-
 - `route_table_id`: `str`
-
 - `subnet_id`: `str`
-
 - `gateway_id`: `str`
-
-- `association_state`: `Dict[str, Any]`
-
+- `association_state`: `Dict`\[`str`, `Any`\]
 - `id`: `str`
-
-- `route_table`: `"RouteTable"`
-
-- `subnet`: `"Subnet"`
-
-
-
+- `route_table`: [RouteTable](#routetable)
+- `subnet`: [Subnet](#subnet)
 
 ### RouteTableAssociation methods
 
-
-#### RouteTableAssociation.delete
+#### RouteTableAssociation.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.delete]
+Boto3 documentation:
+[EC2.RouteTableAssociation.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### RouteTableAssociation.get_available_subresources
+- `DryRun`: `bool`
+
+#### RouteTableAssociation.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.get_available_subresources]
+Boto3 documentation:
+[EC2.RouteTableAssociation.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### RouteTableAssociation.replace_subnet
+#### RouteTableAssociation.replace_subnet method
 
 Type annotations for `boto3.resource("ec2").replace_subnet` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.replace_subnet]
+Boto3 documentation:
+[EC2.RouteTableAssociation.replace_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.replace_subnet)
 
-```python
-def replace_subnet(
-    self,
-    RouteTableId: str,
-    DryRun: bool = None
-) -> _RouteTableAssociation:
-    pass
-```
+Arguments:
 
+- `RouteTableId`: `str` *(required)*
+- `DryRun`: `bool`
 
-
-
-
+Returns [RouteTableAssociation](#routetableassociation).
 
 ## SecurityGroup
 
@@ -4614,195 +3081,157 @@ def get_resource() -> SecurityGroup:
     return boto3.resource("ec2").SecurityGroup(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
-
+Boto3 documentation:
+[EC2.SecurityGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
 
 ### SecurityGroup attributes
 
-
 - `description`: `str`
-
 - `group_name`: `str`
-
-- `ip_permissions`: `List[Any]`
-
+- `ip_permissions`: `List`\[`Any`\]
 - `owner_id`: `str`
-
 - `group_id`: `str`
-
-- `ip_permissions_egress`: `List[Any]`
-
-- `tags`: `List[Any]`
-
+- `ip_permissions_egress`: `List`\[`Any`\]
+- `tags`: `List`\[`Any`\]
 - `vpc_id`: `str`
-
 - `id`: `str`
-
-
-
 
 ### SecurityGroup methods
 
-
-#### SecurityGroup.authorize_egress
+#### SecurityGroup.authorize_egress method
 
 Type annotations for `boto3.resource("ec2").authorize_egress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_egress]
+Boto3 documentation:
+[EC2.SecurityGroup.authorize_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_egress)
 
-```python
-def authorize_egress(
-    self,
-    DryRun: bool = None,
-    IpPermissions: List["IpPermissionTypeDef"] = None,
-    CidrIp: str = None,
-    FromPort: int = None,
-    IpProtocol: str = None,
-    ToPort: int = None,
-    SourceSecurityGroupName: str = None,
-    SourceSecurityGroupOwnerId: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### SecurityGroup.authorize_ingress
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+#### SecurityGroup.authorize_ingress method
 
 Type annotations for `boto3.resource("ec2").authorize_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_ingress]
+Boto3 documentation:
+[EC2.SecurityGroup.authorize_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_ingress)
 
-```python
-def authorize_ingress(
-    self,
-    CidrIp: str = None,
-    FromPort: int = None,
-    GroupName: str = None,
-    IpPermissions: List["IpPermissionTypeDef"] = None,
-    IpProtocol: str = None,
-    SourceSecurityGroupName: str = None,
-    SourceSecurityGroupOwnerId: str = None,
-    ToPort: int = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### SecurityGroup.create_tags
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
+
+#### SecurityGroup.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.create_tags]
+Boto3 documentation:
+[EC2.SecurityGroup.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### SecurityGroup.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### SecurityGroup.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.delete]
+Boto3 documentation:
+[EC2.SecurityGroup.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.delete)
 
-```python
-def delete(
-    self,
-    GroupName: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### SecurityGroup.get_available_subresources
+- `GroupName`: `str`
+- `DryRun`: `bool`
+
+#### SecurityGroup.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.get_available_subresources]
+Boto3 documentation:
+[EC2.SecurityGroup.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### SecurityGroup.load
+#### SecurityGroup.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.load]
+Boto3 documentation:
+[EC2.SecurityGroup.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### SecurityGroup.reload
+#### SecurityGroup.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.reload]
+Boto3 documentation:
+[EC2.SecurityGroup.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### SecurityGroup.revoke_egress
+#### SecurityGroup.revoke_egress method
 
 Type annotations for `boto3.resource("ec2").revoke_egress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_egress]
+Boto3 documentation:
+[EC2.SecurityGroup.revoke_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_egress)
 
-```python
-def revoke_egress(
-    self,
-    DryRun: bool = None,
-    IpPermissions: List["IpPermissionTypeDef"] = None,
-    CidrIp: str = None,
-    FromPort: int = None,
-    IpProtocol: str = None,
-    ToPort: int = None,
-    SourceSecurityGroupName: str = None,
-    SourceSecurityGroupOwnerId: str = None
-) -> RevokeSecurityGroupEgressResultTypeDef:
-    pass
-```
+Arguments:
 
-#### SecurityGroup.revoke_ingress
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+Returns
+[RevokeSecurityGroupEgressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#revokesecuritygroupegressresulttypedef).
+
+#### SecurityGroup.revoke_ingress method
 
 Type annotations for `boto3.resource("ec2").revoke_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_ingress]
+Boto3 documentation:
+[EC2.SecurityGroup.revoke_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_ingress)
 
-```python
-def revoke_ingress(
-    self,
-    CidrIp: str = None,
-    FromPort: int = None,
-    GroupName: str = None,
-    IpPermissions: List["IpPermissionTypeDef"] = None,
-    IpProtocol: str = None,
-    SourceSecurityGroupName: str = None,
-    SourceSecurityGroupOwnerId: str = None,
-    ToPort: int = None,
-    DryRun: bool = None
-) -> RevokeSecurityGroupIngressResultTypeDef:
-    pass
-```
+Arguments:
 
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
 
-
-
-
+Returns
+[RevokeSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#revokesecuritygroupingressresulttypedef).
 
 ## Snapshot
 
@@ -4817,208 +3246,160 @@ def get_resource() -> Snapshot:
     return boto3.resource("ec2").Snapshot(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
-
+Boto3 documentation:
+[EC2.Snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
 
 ### Snapshot attributes
 
-
 - `data_encryption_key_id`: `str`
-
 - `description`: `str`
-
 - `encrypted`: `bool`
-
 - `kms_key_id`: `str`
-
 - `owner_id`: `str`
-
 - `progress`: `str`
-
 - `snapshot_id`: `str`
-
 - `start_time`: `datetime`
-
 - `state`: `str`
-
 - `state_message`: `str`
-
 - `volume_id`: `str`
-
 - `volume_size`: `int`
-
 - `owner_alias`: `str`
-
 - `outpost_arn`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `id`: `str`
-
-- `volume`: `"Volume"`
-
-
-
+- `volume`: [Volume](#volume)
 
 ### Snapshot methods
 
-
-#### Snapshot.copy
+#### Snapshot.copy method
 
 Type annotations for `boto3.resource("ec2").copy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.copy]
+Boto3 documentation:
+[EC2.Snapshot.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.copy)
 
-```python
-def copy(
-    self,
-    SourceRegion: str,
-    Description: str = None,
-    DestinationOutpostArn: str = None,
-    DestinationRegion: str = None,
-    Encrypted: bool = None,
-    KmsKeyId: str = None,
-    PresignedUrl: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> CopySnapshotResultTypeDef:
-    pass
-```
+Arguments:
 
-#### Snapshot.create_tags
+- `SourceRegion`: `str` *(required)*
+- `Description`: `str`
+- `DestinationOutpostArn`: `str`
+- `DestinationRegion`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `PresignedUrl`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CopySnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#copysnapshotresulttypedef).
+
+#### Snapshot.create_tags method
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.create_tags]
+Boto3 documentation:
+[EC2.Snapshot.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.create_tags)
 
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
+Arguments:
 
-#### Snapshot.delete
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Snapshot.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.delete]
+Boto3 documentation:
+[EC2.Snapshot.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Snapshot.describe_attribute
+- `DryRun`: `bool`
+
+#### Snapshot.describe_attribute method
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.describe_attribute]
+Boto3 documentation:
+[EC2.Snapshot.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.describe_attribute)
 
-```python
-def describe_attribute(
-    self,
-    Attribute: SnapshotAttributeName,
-    DryRun: bool = None
-) -> DescribeSnapshotAttributeResultTypeDef:
-    pass
-```
+Arguments:
 
-#### Snapshot.get_available_subresources
+- `Attribute`:
+  [SnapshotAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#snapshotattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DescribeSnapshotAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesnapshotattributeresulttypedef).
+
+#### Snapshot.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.get_available_subresources]
+Boto3 documentation:
+[EC2.Snapshot.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### Snapshot.load
+#### Snapshot.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.load]
+Boto3 documentation:
+[EC2.Snapshot.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Snapshot.modify_attribute
+#### Snapshot.modify_attribute method
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.modify_attribute]
+Boto3 documentation:
+[EC2.Snapshot.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.modify_attribute)
 
-```python
-def modify_attribute(
-    self,
-    Attribute: SnapshotAttributeName = None,
-    CreateVolumePermission: CreateVolumePermissionModificationsTypeDef = None,
-    GroupNames: List[str] = None,
-    OperationType: OperationType = None,
-    UserIds: List[str] = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Snapshot.reload
+- `Attribute`:
+  [SnapshotAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#snapshotattributename)
+- `CreateVolumePermission`:
+  [CreateVolumePermissionModificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createvolumepermissionmodificationstypedef)
+- `GroupNames`: `List`\[`str`\]
+- `OperationType`:
+  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#operationtype)
+- `UserIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+#### Snapshot.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reload]
+Boto3 documentation:
+[EC2.Snapshot.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Snapshot.reset_attribute
+#### Snapshot.reset_attribute method
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reset_attribute]
+Boto3 documentation:
+[EC2.Snapshot.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reset_attribute)
 
-```python
-def reset_attribute(
-    self,
-    Attribute: SnapshotAttributeName,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Snapshot.wait_until_completed
+- `Attribute`:
+  [SnapshotAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#snapshotattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+#### Snapshot.wait_until_completed method
 
 Type annotations for `boto3.resource("ec2").wait_until_completed` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.wait_until_completed]
-
-```python
-def wait_until_completed(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.Snapshot.wait_until_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.wait_until_completed)
 
 ## Subnet
 
@@ -5033,205 +3414,35 @@ def get_resource() -> Subnet:
     return boto3.resource("ec2").Subnet(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
-
+Boto3 documentation:
+[EC2.Subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
 
 ### Subnet attributes
 
-
 - `availability_zone`: `str`
-
 - `availability_zone_id`: `str`
-
 - `available_ip_address_count`: `int`
-
 - `cidr_block`: `str`
-
 - `default_for_az`: `bool`
-
 - `map_public_ip_on_launch`: `bool`
-
 - `map_customer_owned_ip_on_launch`: `bool`
-
 - `customer_owned_ipv4_pool`: `str`
-
 - `state`: `str`
-
 - `subnet_id`: `str`
-
 - `vpc_id`: `str`
-
 - `owner_id`: `str`
-
 - `assign_ipv6_address_on_creation`: `bool`
-
-- `ipv6_cidr_block_association_set`: `List[Any]`
-
-- `tags`: `List[Any]`
-
+- `ipv6_cidr_block_association_set`: `List`\[`Any`\]
+- `tags`: `List`\[`Any`\]
 - `subnet_arn`: `str`
-
 - `outpost_arn`: `str`
-
 - `id`: `str`
-
-- `vpc`: `"Vpc"`
-
-- `instances`: `SubnetInstancesCollection`
-
-- `network_interfaces`: `SubnetNetworkInterfacesCollection`
-
-
-
-
-### Subnet methods
-
-
-#### Subnet.create_instances
-
-Type annotations for `boto3.resource("ec2").create_instances` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_instances]
-
-```python
-def create_instances(
-    self,
-    MaxCount: int,
-    MinCount: int,
-    BlockDeviceMappings: List["BlockDeviceMappingTypeDef"] = None,
-    ImageId: str = None,
-    InstanceType: InstanceType = None,
-    Ipv6AddressCount: int = None,
-    Ipv6Addresses: List["InstanceIpv6AddressTypeDef"] = None,
-    KernelId: str = None,
-    KeyName: str = None,
-    Monitoring: "RunInstancesMonitoringEnabledTypeDef" = None,
-    Placement: "PlacementTypeDef" = None,
-    RamdiskId: str = None,
-    SecurityGroupIds: List[str] = None,
-    SecurityGroups: List[str] = None,
-    UserData: str = None,
-    AdditionalInfo: str = None,
-    ClientToken: str = None,
-    DisableApiTermination: bool = None,
-    DryRun: bool = None,
-    EbsOptimized: bool = None,
-    IamInstanceProfile: "IamInstanceProfileSpecificationTypeDef" = None,
-    InstanceInitiatedShutdownBehavior: ShutdownBehavior = None,
-    NetworkInterfaces: List["InstanceNetworkInterfaceSpecificationTypeDef"] = None,
-    PrivateIpAddress: str = None,
-    ElasticGpuSpecification: List["ElasticGpuSpecificationTypeDef"] = None,
-    ElasticInferenceAccelerators: List[ElasticInferenceAcceleratorTypeDef] = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    LaunchTemplate: LaunchTemplateSpecificationTypeDef = None,
-    InstanceMarketOptions: InstanceMarketOptionsRequestTypeDef = None,
-    CreditSpecification: "CreditSpecificationRequestTypeDef" = None,
-    CpuOptions: CpuOptionsRequestTypeDef = None,
-    CapacityReservationSpecification: CapacityReservationSpecificationTypeDef = None,
-    HibernationOptions: HibernationOptionsRequestTypeDef = None,
-    LicenseSpecifications: List[LicenseConfigurationRequestTypeDef] = None,
-    MetadataOptions: InstanceMetadataOptionsRequestTypeDef = None,
-    EnclaveOptions: EnclaveOptionsRequestTypeDef = None
-) -> List[_Instance]:
-    pass
-```
-
-#### Subnet.create_network_interface
-
-Type annotations for `boto3.resource("ec2").create_network_interface` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_network_interface]
-
-```python
-def create_network_interface(
-    self,
-    Description: str = None,
-    DryRun: bool = None,
-    Groups: List[str] = None,
-    Ipv6AddressCount: int = None,
-    Ipv6Addresses: List["InstanceIpv6AddressTypeDef"] = None,
-    PrivateIpAddress: str = None,
-    PrivateIpAddresses: List["PrivateIpAddressSpecificationTypeDef"] = None,
-    SecondaryPrivateIpAddressCount: int = None,
-    InterfaceType: Literal['efa'] = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _NetworkInterface:
-    pass
-```
-
-#### Subnet.create_tags
-
-Type annotations for `boto3.resource("ec2").create_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_tags]
-
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
-
-#### Subnet.delete
-
-Type annotations for `boto3.resource("ec2").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.delete]
-
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Subnet.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Subnet.load
-
-Type annotations for `boto3.resource("ec2").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Subnet.reload
-
-Type annotations for `boto3.resource("ec2").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `vpc`: [Vpc](#vpc)
+- `instances`: [SubnetInstancesCollection](#subnetinstancescollection)
+- `network_interfaces`:
+  [SubnetNetworkInterfacesCollection](#subnetnetworkinterfacescollection)
 
 ### Subnet collections
-
 
 #### Subnet.instances
 
@@ -5247,96 +3458,15 @@ def get_collection() -> SubnetInstancesCollection:
     return resource.instances
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.SubnetInstancesCollection)
+Provides access to [Instance](#instance) resource.
 
-```python
-class SubnetInstancesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "SubnetInstancesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "SubnetInstancesCollection":
-        pass
-
-    def create_tags(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def monitor(
-        self,
-        DryRun: bool = None
-    ) -> MonitorInstancesResultTypeDef:
-        pass
-
-    def reboot(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def start(
-        self,
-        AdditionalInfo: str = None,
-        DryRun: bool = None
-    ) -> StartInstancesResultTypeDef:
-        pass
-
-    def stop(
-        self,
-        Hibernate: bool = None,
-        DryRun: bool = None,
-        Force: bool = None
-    ) -> StopInstancesResultTypeDef:
-        pass
-
-    def terminate(
-        self,
-        DryRun: bool = None
-    ) -> TerminateInstancesResultTypeDef:
-        pass
-
-    def unmonitor(
-        self,
-        DryRun: bool = None
-    ) -> UnmonitorInstancesResultTypeDef:
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "SubnetInstancesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "SubnetInstancesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Instance"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Instance"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Subnet.SubnetInstancesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.instances)
 
 #### Subnet.network_interfaces
 
-Type annotations for `boto3.resource("ec2").Subnet(...).network_interfaces` collection.
+Type annotations for `boto3.resource("ec2").Subnet(...).network_interfaces`
+collection.
 
 Can be used directly:
 
@@ -5348,50 +3478,155 @@ def get_collection() -> SubnetNetworkInterfacesCollection:
     return resource.network_interfaces
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.SubnetNetworkInterfacesCollection)
+Provides access to [NetworkInterface](#networkinterface) resource.
 
-```python
-class SubnetNetworkInterfacesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "SubnetNetworkInterfacesCollection":
-        pass
+Boto3 documentation:
+[EC2.Subnet.SubnetNetworkInterfacesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.network_interfaces)
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkInterfaceIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "SubnetNetworkInterfacesCollection":
-        pass
+### Subnet methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "SubnetNetworkInterfacesCollection":
-        pass
+#### Subnet.create_instances method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "SubnetNetworkInterfacesCollection":
-        pass
+Type annotations for `boto3.resource("ec2").create_instances` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["NetworkInterface"]]:
-        pass
+Boto3 documentation:
+[EC2.Subnet.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_instances)
 
-    def __iter__(
-        self
-    ) -> Iterator["NetworkInterface"]:
-        pass
-```
+Arguments:
 
+- `MaxCount`: `int` *(required)*
+- `MinCount`: `int` *(required)*
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+- `ImageId`: `str`
+- `InstanceType`:
+  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `Monitoring`:
+  [RunInstancesMonitoringEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#runinstancesmonitoringenabledtypedef)
+- `Placement`:
+  [PlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementtypedef)
+- `RamdiskId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `UserData`: `str`
+- `AdditionalInfo`: `str`
+- `ClientToken`: `str`
+- `DisableApiTermination`: `bool`
+- `DryRun`: `bool`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofilespecificationtypedef)
+- `InstanceInitiatedShutdownBehavior`:
+  [ShutdownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#shutdownbehavior)
+- `NetworkInterfaces`:
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacespecificationtypedef)\]
+- `PrivateIpAddress`: `str`
+- `ElasticGpuSpecification`:
+  `List`\[[ElasticGpuSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuspecificationtypedef)\]
+- `ElasticInferenceAccelerators`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticinferenceacceleratortypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatespecificationtypedef)
+- `InstanceMarketOptions`:
+  [InstanceMarketOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemarketoptionsrequesttypedef)
+- `CreditSpecification`:
+  [CreditSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#creditspecificationrequesttypedef)
+- `CpuOptions`:
+  [CpuOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cpuoptionsrequesttypedef)
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationspecificationtypedef)
+- `HibernationOptions`:
+  [HibernationOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hibernationoptionsrequesttypedef)
+- `LicenseSpecifications`:
+  `List`\[[LicenseConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#licenseconfigurationrequesttypedef)\]
+- `MetadataOptions`:
+  [InstanceMetadataOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemetadataoptionsrequesttypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enclaveoptionsrequesttypedef)
 
+Returns `List`\[[Instance](#instance)\].
 
+#### Subnet.create_network_interface method
+
+Type annotations for `boto3.resource("ec2").create_network_interface` method.
+
+Boto3 documentation:
+[EC2.Subnet.create_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_network_interface)
+
+Arguments:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+- `PrivateIpAddress`: `str`
+- `PrivateIpAddresses`:
+  `List`\[[PrivateIpAddressSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privateipaddressspecificationtypedef)\]
+- `SecondaryPrivateIpAddressCount`: `int`
+- `InterfaceType`: `Literal['efa']`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [NetworkInterface](#networkinterface).
+
+#### Subnet.create_tags method
+
+Type annotations for `boto3.resource("ec2").create_tags` method.
+
+Boto3 documentation:
+[EC2.Subnet.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_tags)
+
+Arguments:
+
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Subnet.delete method
+
+Type annotations for `boto3.resource("ec2").delete` method.
+
+Boto3 documentation:
+[EC2.Subnet.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.delete)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+#### Subnet.get_available_subresources method
+
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
+
+Boto3 documentation:
+[EC2.Subnet.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Subnet.load method
+
+Type annotations for `boto3.resource("ec2").load` method.
+
+Boto3 documentation:
+[EC2.Subnet.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.load)
+
+#### Subnet.reload method
+
+Type annotations for `boto3.resource("ec2").reload` method.
+
+Boto3 documentation:
+[EC2.Subnet.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.reload)
 
 ## Tag
 
@@ -5406,83 +3641,51 @@ def get_resource() -> Tag:
     return boto3.resource("ec2").Tag(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
-
+Boto3 documentation:
+[EC2.Tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
 
 ### Tag attributes
 
-
 - `resource_type`: `str`
-
 - `resource_id`: `str`
-
 - `key`: `str`
-
 - `value`: `str`
-
-
-
 
 ### Tag methods
 
-
-#### Tag.delete
+#### Tag.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.delete]
+Boto3 documentation:
+[EC2.Tag.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### Tag.get_available_subresources
+- `DryRun`: `bool`
+
+#### Tag.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.get_available_subresources]
+Boto3 documentation:
+[EC2.Tag.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### Tag.load
+#### Tag.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.load]
+Boto3 documentation:
+[EC2.Tag.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Tag.reload
+#### Tag.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.Tag.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.reload)
 
 ## Volume
 
@@ -5497,238 +3700,31 @@ def get_resource() -> Volume:
     return boto3.resource("ec2").Volume(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
-
+Boto3 documentation:
+[EC2.Volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
 
 ### Volume attributes
 
-
-- `attachments`: `List[Any]`
-
+- `attachments`: `List`\[`Any`\]
 - `availability_zone`: `str`
-
 - `create_time`: `datetime`
-
 - `encrypted`: `bool`
-
 - `kms_key_id`: `str`
-
 - `outpost_arn`: `str`
-
 - `size`: `int`
-
 - `snapshot_id`: `str`
-
 - `state`: `str`
-
 - `volume_id`: `str`
-
 - `iops`: `int`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `volume_type`: `str`
-
 - `fast_restored`: `bool`
-
 - `multi_attach_enabled`: `bool`
-
 - `throughput`: `int`
-
 - `id`: `str`
-
-- `snapshots`: `VolumeSnapshotsCollection`
-
-
-
-
-### Volume methods
-
-
-#### Volume.attach_to_instance
-
-Type annotations for `boto3.resource("ec2").attach_to_instance` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.attach_to_instance]
-
-```python
-def attach_to_instance(
-    self,
-    Device: str,
-    InstanceId: str,
-    DryRun: bool = None
-) -> "VolumeAttachmentTypeDef":
-    pass
-```
-
-#### Volume.create_snapshot
-
-Type annotations for `boto3.resource("ec2").create_snapshot` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_snapshot]
-
-```python
-def create_snapshot(
-    self,
-    Description: str = None,
-    OutpostArn: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _Snapshot:
-    pass
-```
-
-#### Volume.create_tags
-
-Type annotations for `boto3.resource("ec2").create_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_tags]
-
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
-
-#### Volume.delete
-
-Type annotations for `boto3.resource("ec2").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.delete]
-
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Volume.describe_attribute
-
-Type annotations for `boto3.resource("ec2").describe_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_attribute]
-
-```python
-def describe_attribute(
-    self,
-    Attribute: VolumeAttributeName,
-    DryRun: bool = None
-) -> DescribeVolumeAttributeResultTypeDef:
-    pass
-```
-
-#### Volume.describe_status
-
-Type annotations for `boto3.resource("ec2").describe_status` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_status]
-
-```python
-def describe_status(
-    self,
-    Filters: List[FilterTypeDef] = None,
-    MaxResults: int = None,
-    NextToken: str = None,
-    DryRun: bool = None
-) -> DescribeVolumeStatusResultTypeDef:
-    pass
-```
-
-#### Volume.detach_from_instance
-
-Type annotations for `boto3.resource("ec2").detach_from_instance` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.detach_from_instance]
-
-```python
-def detach_from_instance(
-    self,
-    Device: str = None,
-    Force: bool = None,
-    InstanceId: str = None,
-    DryRun: bool = None
-) -> "VolumeAttachmentTypeDef":
-    pass
-```
-
-#### Volume.enable_io
-
-Type annotations for `boto3.resource("ec2").enable_io` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.enable_io]
-
-```python
-def enable_io(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Volume.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Volume.load
-
-Type annotations for `boto3.resource("ec2").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Volume.modify_attribute
-
-Type annotations for `boto3.resource("ec2").modify_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.modify_attribute]
-
-```python
-def modify_attribute(
-    self,
-    AutoEnableIO: "AttributeBooleanValueTypeDef" = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Volume.reload
-
-Type annotations for `boto3.resource("ec2").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `snapshots`: [VolumeSnapshotsCollection](#volumesnapshotscollection)
 
 ### Volume collections
-
 
 #### Volume.snapshots
 
@@ -5744,52 +3740,171 @@ def get_collection() -> VolumeSnapshotsCollection:
     return resource.snapshots
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.VolumeSnapshotsCollection)
+Provides access to [Snapshot](#snapshot) resource.
 
-```python
-class VolumeSnapshotsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VolumeSnapshotsCollection":
-        pass
+Boto3 documentation:
+[EC2.Volume.VolumeSnapshotsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.snapshots)
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        MaxResults: int = None,
-        NextToken: str = None,
-        OwnerIds: List[str] = None,
-        RestorableByUserIds: List[str] = None,
-        SnapshotIds: List[str] = None,
-        DryRun: bool = None
-    ) -> "VolumeSnapshotsCollection":
-        pass
+### Volume methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "VolumeSnapshotsCollection":
-        pass
+#### Volume.attach_to_instance method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "VolumeSnapshotsCollection":
-        pass
+Type annotations for `boto3.resource("ec2").attach_to_instance` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["Snapshot"]]:
-        pass
+Boto3 documentation:
+[EC2.Volume.attach_to_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.attach_to_instance)
 
-    def __iter__(
-        self
-    ) -> Iterator["Snapshot"]:
-        pass
-```
+Arguments:
 
+- `Device`: `str` *(required)*
+- `InstanceId`: `str` *(required)*
+- `DryRun`: `bool`
 
+Returns
+[VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumeattachmenttypedef).
 
+#### Volume.create_snapshot method
+
+Type annotations for `boto3.resource("ec2").create_snapshot` method.
+
+Boto3 documentation:
+[EC2.Volume.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_snapshot)
+
+Arguments:
+
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [Snapshot](#snapshot).
+
+#### Volume.create_tags method
+
+Type annotations for `boto3.resource("ec2").create_tags` method.
+
+Boto3 documentation:
+[EC2.Volume.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_tags)
+
+Arguments:
+
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Volume.delete method
+
+Type annotations for `boto3.resource("ec2").delete` method.
+
+Boto3 documentation:
+[EC2.Volume.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.delete)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+#### Volume.describe_attribute method
+
+Type annotations for `boto3.resource("ec2").describe_attribute` method.
+
+Boto3 documentation:
+[EC2.Volume.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_attribute)
+
+Arguments:
+
+- `Attribute`:
+  [VolumeAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumeattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DescribeVolumeAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumeattributeresulttypedef).
+
+#### Volume.describe_status method
+
+Type annotations for `boto3.resource("ec2").describe_status` method.
+
+Boto3 documentation:
+[EC2.Volume.describe_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_status)
+
+Arguments:
+
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[DescribeVolumeStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumestatusresulttypedef).
+
+#### Volume.detach_from_instance method
+
+Type annotations for `boto3.resource("ec2").detach_from_instance` method.
+
+Boto3 documentation:
+[EC2.Volume.detach_from_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.detach_from_instance)
+
+Arguments:
+
+- `Device`: `str`
+- `Force`: `bool`
+- `InstanceId`: `str`
+- `DryRun`: `bool`
+
+Returns
+[VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumeattachmenttypedef).
+
+#### Volume.enable_io method
+
+Type annotations for `boto3.resource("ec2").enable_io` method.
+
+Boto3 documentation:
+[EC2.Volume.enable_io](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.enable_io)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+#### Volume.get_available_subresources method
+
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
+
+Boto3 documentation:
+[EC2.Volume.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Volume.load method
+
+Type annotations for `boto3.resource("ec2").load` method.
+
+Boto3 documentation:
+[EC2.Volume.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.load)
+
+#### Volume.modify_attribute method
+
+Type annotations for `boto3.resource("ec2").modify_attribute` method.
+
+Boto3 documentation:
+[EC2.Volume.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.modify_attribute)
+
+Arguments:
+
+- `AutoEnableIO`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+
+#### Volume.reload method
+
+Type annotations for `boto3.resource("ec2").reload` method.
+
+Boto3 documentation:
+[EC2.Volume.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.reload)
 
 ## Vpc
 
@@ -5804,382 +3919,43 @@ def get_resource() -> Vpc:
     return boto3.resource("ec2").Vpc(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
-
+Boto3 documentation:
+[EC2.Vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
 
 ### Vpc attributes
 
-
 - `cidr_block`: `str`
-
 - `dhcp_options_id`: `str`
-
 - `state`: `str`
-
 - `vpc_id`: `str`
-
 - `owner_id`: `str`
-
 - `instance_tenancy`: `str`
-
-- `ipv6_cidr_block_association_set`: `List[Any]`
-
-- `cidr_block_association_set`: `List[Any]`
-
+- `ipv6_cidr_block_association_set`: `List`\[`Any`\]
+- `cidr_block_association_set`: `List`\[`Any`\]
 - `is_default`: `bool`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `id`: `str`
-
-- `dhcp_options`: `"DhcpOptions"`
-
-- `accepted_vpc_peering_connections`: `VpcAcceptedVpcPeeringConnectionsCollection`
-
-- `instances`: `VpcInstancesCollection`
-
-- `internet_gateways`: `VpcInternetGatewaysCollection`
-
-- `network_acls`: `VpcNetworkAclsCollection`
-
-- `network_interfaces`: `VpcNetworkInterfacesCollection`
-
-- `requested_vpc_peering_connections`: `VpcRequestedVpcPeeringConnectionsCollection`
-
-- `route_tables`: `VpcRouteTablesCollection`
-
-- `security_groups`: `VpcSecurityGroupsCollection`
-
-- `subnets`: `VpcSubnetsCollection`
-
-
-
-
-### Vpc methods
-
-
-#### Vpc.associate_dhcp_options
-
-Type annotations for `boto3.resource("ec2").associate_dhcp_options` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.associate_dhcp_options]
-
-```python
-def associate_dhcp_options(
-    self,
-    DhcpOptionsId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Vpc.attach_classic_link_instance
-
-Type annotations for `boto3.resource("ec2").attach_classic_link_instance` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_classic_link_instance]
-
-```python
-def attach_classic_link_instance(
-    self,
-    Groups: List[str],
-    InstanceId: str,
-    DryRun: bool = None
-) -> AttachClassicLinkVpcResultTypeDef:
-    pass
-```
-
-#### Vpc.attach_internet_gateway
-
-Type annotations for `boto3.resource("ec2").attach_internet_gateway` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_internet_gateway]
-
-```python
-def attach_internet_gateway(
-    self,
-    InternetGatewayId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Vpc.create_network_acl
-
-Type annotations for `boto3.resource("ec2").create_network_acl` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_network_acl]
-
-```python
-def create_network_acl(
-    self,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _NetworkAcl:
-    pass
-```
-
-#### Vpc.create_route_table
-
-Type annotations for `boto3.resource("ec2").create_route_table` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_route_table]
-
-```python
-def create_route_table(
-    self,
-    DryRun: bool = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _RouteTable:
-    pass
-```
-
-#### Vpc.create_security_group
-
-Type annotations for `boto3.resource("ec2").create_security_group` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_security_group]
-
-```python
-def create_security_group(
-    self,
-    Description: str,
-    GroupName: str,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    DryRun: bool = None
-) -> _SecurityGroup:
-    pass
-```
-
-#### Vpc.create_subnet
-
-Type annotations for `boto3.resource("ec2").create_subnet` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_subnet]
-
-```python
-def create_subnet(
-    self,
-    CidrBlock: str,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None,
-    AvailabilityZone: str = None,
-    AvailabilityZoneId: str = None,
-    Ipv6CidrBlock: str = None,
-    OutpostArn: str = None,
-    DryRun: bool = None
-) -> _Subnet:
-    pass
-```
-
-#### Vpc.create_tags
-
-Type annotations for `boto3.resource("ec2").create_tags` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_tags]
-
-```python
-def create_tags(
-    self,
-    Tags: Optional[List[TagTypeDef]],
-    DryRun: bool = None
-) -> _Tag:
-    pass
-```
-
-#### Vpc.delete
-
-Type annotations for `boto3.resource("ec2").delete` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.delete]
-
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Vpc.describe_attribute
-
-Type annotations for `boto3.resource("ec2").describe_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.describe_attribute]
-
-```python
-def describe_attribute(
-    self,
-    Attribute: VpcAttributeName,
-    DryRun: bool = None
-) -> DescribeVpcAttributeResultTypeDef:
-    pass
-```
-
-#### Vpc.detach_classic_link_instance
-
-Type annotations for `boto3.resource("ec2").detach_classic_link_instance` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance]
-
-```python
-def detach_classic_link_instance(
-    self,
-    InstanceId: str,
-    DryRun: bool = None
-) -> DetachClassicLinkVpcResultTypeDef:
-    pass
-```
-
-#### Vpc.detach_internet_gateway
-
-Type annotations for `boto3.resource("ec2").detach_internet_gateway` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_internet_gateway]
-
-```python
-def detach_internet_gateway(
-    self,
-    InternetGatewayId: str,
-    DryRun: bool = None
-) -> None:
-    pass
-```
-
-#### Vpc.disable_classic_link
-
-Type annotations for `boto3.resource("ec2").disable_classic_link` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.disable_classic_link]
-
-```python
-def disable_classic_link(
-    self,
-    DryRun: bool = None
-) -> DisableVpcClassicLinkResultTypeDef:
-    pass
-```
-
-#### Vpc.enable_classic_link
-
-Type annotations for `boto3.resource("ec2").enable_classic_link` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link]
-
-```python
-def enable_classic_link(
-    self,
-    DryRun: bool = None
-) -> EnableVpcClassicLinkResultTypeDef:
-    pass
-```
-
-#### Vpc.get_available_subresources
-
-Type annotations for `boto3.resource("ec2").get_available_subresources` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.get_available_subresources]
-
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
-
-#### Vpc.load
-
-Type annotations for `boto3.resource("ec2").load` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.load]
-
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### Vpc.modify_attribute
-
-Type annotations for `boto3.resource("ec2").modify_attribute` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.modify_attribute]
-
-```python
-def modify_attribute(
-    self,
-    EnableDnsHostnames: "AttributeBooleanValueTypeDef" = None,
-    EnableDnsSupport: "AttributeBooleanValueTypeDef" = None
-) -> None:
-    pass
-```
-
-#### Vpc.reload
-
-Type annotations for `boto3.resource("ec2").reload` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### Vpc.request_vpc_peering_connection
-
-Type annotations for `boto3.resource("ec2").request_vpc_peering_connection` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.request_vpc_peering_connection]
-
-```python
-def request_vpc_peering_connection(
-    self,
-    DryRun: bool = None,
-    PeerOwnerId: str = None,
-    PeerVpcId: str = None,
-    PeerRegion: str = None,
-    TagSpecifications: List["TagSpecificationTypeDef"] = None
-) -> _VpcPeeringConnection:
-    pass
-```
-
-#### Vpc.wait_until_available
-
-Type annotations for `boto3.resource("ec2").wait_until_available` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_available]
-
-```python
-def wait_until_available(
-    self
-) -> None:
-    pass
-```
-
-#### Vpc.wait_until_exists
-
-Type annotations for `boto3.resource("ec2").wait_until_exists` method.
-
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_exists]
-
-```python
-def wait_until_exists(
-    self
-) -> None:
-    pass
-```
-
-
-
+- `dhcp_options`: [DhcpOptions](#dhcpoptions)
+- `accepted_vpc_peering_connections`:
+  [VpcAcceptedVpcPeeringConnectionsCollection](#vpcacceptedvpcpeeringconnectionscollection)
+- `instances`: [VpcInstancesCollection](#vpcinstancescollection)
+- `internet_gateways`:
+  [VpcInternetGatewaysCollection](#vpcinternetgatewayscollection)
+- `network_acls`: [VpcNetworkAclsCollection](#vpcnetworkaclscollection)
+- `network_interfaces`:
+  [VpcNetworkInterfacesCollection](#vpcnetworkinterfacescollection)
+- `requested_vpc_peering_connections`:
+  [VpcRequestedVpcPeeringConnectionsCollection](#vpcrequestedvpcpeeringconnectionscollection)
+- `route_tables`: [VpcRouteTablesCollection](#vpcroutetablescollection)
+- `security_groups`: [VpcSecurityGroupsCollection](#vpcsecuritygroupscollection)
+- `subnets`: [VpcSubnetsCollection](#vpcsubnetscollection)
 
 ### Vpc collections
 
-
 #### Vpc.accepted_vpc_peering_connections
 
-Type annotations for `boto3.resource("ec2").Vpc(...).accepted_vpc_peering_connections` collection.
+Type annotations for
+`boto3.resource("ec2").Vpc(...).accepted_vpc_peering_connections` collection.
 
 Can be used directly:
 
@@ -6191,47 +3967,10 @@ def get_collection() -> VpcAcceptedVpcPeeringConnectionsCollection:
     return resource.accepted_vpc_peering_connections
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcAcceptedVpcPeeringConnectionsCollection)
+Provides access to [VpcPeeringConnection](#vpcpeeringconnection) resource.
 
-```python
-class VpcAcceptedVpcPeeringConnectionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcAcceptedVpcPeeringConnectionsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        VpcPeeringConnectionIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcAcceptedVpcPeeringConnectionsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcAcceptedVpcPeeringConnectionsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcAcceptedVpcPeeringConnectionsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["VpcPeeringConnection"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["VpcPeeringConnection"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcAcceptedVpcPeeringConnectionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.accepted_vpc_peering_connections)
 
 #### Vpc.instances
 
@@ -6247,96 +3986,15 @@ def get_collection() -> VpcInstancesCollection:
     return resource.instances
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcInstancesCollection)
+Provides access to [Instance](#instance) resource.
 
-```python
-class VpcInstancesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcInstancesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        InstanceIds: List[str] = None,
-        DryRun: bool = None,
-        MaxResults: int = None,
-        NextToken: str = None
-    ) -> "VpcInstancesCollection":
-        pass
-
-    def create_tags(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def monitor(
-        self,
-        DryRun: bool = None
-    ) -> MonitorInstancesResultTypeDef:
-        pass
-
-    def reboot(
-        self,
-        DryRun: bool = None
-    ) -> None:
-        pass
-
-    def start(
-        self,
-        AdditionalInfo: str = None,
-        DryRun: bool = None
-    ) -> StartInstancesResultTypeDef:
-        pass
-
-    def stop(
-        self,
-        Hibernate: bool = None,
-        DryRun: bool = None,
-        Force: bool = None
-    ) -> StopInstancesResultTypeDef:
-        pass
-
-    def terminate(
-        self,
-        DryRun: bool = None
-    ) -> TerminateInstancesResultTypeDef:
-        pass
-
-    def unmonitor(
-        self,
-        DryRun: bool = None
-    ) -> UnmonitorInstancesResultTypeDef:
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcInstancesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcInstancesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["Instance"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["Instance"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcInstancesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.instances)
 
 #### Vpc.internet_gateways
 
-Type annotations for `boto3.resource("ec2").Vpc(...).internet_gateways` collection.
+Type annotations for `boto3.resource("ec2").Vpc(...).internet_gateways`
+collection.
 
 Can be used directly:
 
@@ -6348,47 +4006,10 @@ def get_collection() -> VpcInternetGatewaysCollection:
     return resource.internet_gateways
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcInternetGatewaysCollection)
+Provides access to [InternetGateway](#internetgateway) resource.
 
-```python
-class VpcInternetGatewaysCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcInternetGatewaysCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        InternetGatewayIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcInternetGatewaysCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcInternetGatewaysCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcInternetGatewaysCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["InternetGateway"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["InternetGateway"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcInternetGatewaysCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.internet_gateways)
 
 #### Vpc.network_acls
 
@@ -6404,51 +4025,15 @@ def get_collection() -> VpcNetworkAclsCollection:
     return resource.network_acls
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcNetworkAclsCollection)
+Provides access to [NetworkAcl](#networkacl) resource.
 
-```python
-class VpcNetworkAclsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcNetworkAclsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkAclIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcNetworkAclsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcNetworkAclsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcNetworkAclsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["NetworkAcl"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["NetworkAcl"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcNetworkAclsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.network_acls)
 
 #### Vpc.network_interfaces
 
-Type annotations for `boto3.resource("ec2").Vpc(...).network_interfaces` collection.
+Type annotations for `boto3.resource("ec2").Vpc(...).network_interfaces`
+collection.
 
 Can be used directly:
 
@@ -6460,51 +4045,15 @@ def get_collection() -> VpcNetworkInterfacesCollection:
     return resource.network_interfaces
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcNetworkInterfacesCollection)
+Provides access to [NetworkInterface](#networkinterface) resource.
 
-```python
-class VpcNetworkInterfacesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcNetworkInterfacesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        NetworkInterfaceIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcNetworkInterfacesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcNetworkInterfacesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcNetworkInterfacesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["NetworkInterface"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["NetworkInterface"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcNetworkInterfacesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.network_interfaces)
 
 #### Vpc.requested_vpc_peering_connections
 
-Type annotations for `boto3.resource("ec2").Vpc(...).requested_vpc_peering_connections` collection.
+Type annotations for
+`boto3.resource("ec2").Vpc(...).requested_vpc_peering_connections` collection.
 
 Can be used directly:
 
@@ -6516,47 +4065,10 @@ def get_collection() -> VpcRequestedVpcPeeringConnectionsCollection:
     return resource.requested_vpc_peering_connections
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcRequestedVpcPeeringConnectionsCollection)
+Provides access to [VpcPeeringConnection](#vpcpeeringconnection) resource.
 
-```python
-class VpcRequestedVpcPeeringConnectionsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcRequestedVpcPeeringConnectionsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        VpcPeeringConnectionIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcRequestedVpcPeeringConnectionsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcRequestedVpcPeeringConnectionsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcRequestedVpcPeeringConnectionsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["VpcPeeringConnection"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["VpcPeeringConnection"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcRequestedVpcPeeringConnectionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.requested_vpc_peering_connections)
 
 #### Vpc.route_tables
 
@@ -6572,51 +4084,15 @@ def get_collection() -> VpcRouteTablesCollection:
     return resource.route_tables
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcRouteTablesCollection)
+Provides access to [RouteTable](#routetable) resource.
 
-```python
-class VpcRouteTablesCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcRouteTablesCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        DryRun: bool = None,
-        RouteTableIds: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcRouteTablesCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcRouteTablesCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcRouteTablesCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["RouteTable"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["RouteTable"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcRouteTablesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.route_tables)
 
 #### Vpc.security_groups
 
-Type annotations for `boto3.resource("ec2").Vpc(...).security_groups` collection.
+Type annotations for `boto3.resource("ec2").Vpc(...).security_groups`
+collection.
 
 Can be used directly:
 
@@ -6628,48 +4104,10 @@ def get_collection() -> VpcSecurityGroupsCollection:
     return resource.security_groups
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcSecurityGroupsCollection)
+Provides access to [SecurityGroup](#securitygroup) resource.
 
-```python
-class VpcSecurityGroupsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcSecurityGroupsCollection":
-        pass
-
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        GroupIds: List[str] = None,
-        GroupNames: List[str] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcSecurityGroupsCollection":
-        pass
-
-    def limit(
-        self,
-        count: int
-    ) -> "VpcSecurityGroupsCollection":
-        pass
-
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcSecurityGroupsCollection":
-        pass
-
-    def pages(
-        self
-    ) -> Iterator[List["SecurityGroup"]]:
-        pass
-
-    def __iter__(
-        self
-    ) -> Iterator["SecurityGroup"]:
-        pass
-```
+Boto3 documentation:
+[EC2.Vpc.VpcSecurityGroupsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.security_groups)
 
 #### Vpc.subnets
 
@@ -6685,50 +4123,290 @@ def get_collection() -> VpcSubnetsCollection:
     return resource.subnets
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcSubnetsCollection)
+Provides access to [Subnet](#subnet) resource.
 
-```python
-class VpcSubnetsCollection(ResourceCollection):
-    def all(
-        self
-    ) -> "VpcSubnetsCollection":
-        pass
+Boto3 documentation:
+[EC2.Vpc.VpcSubnetsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.subnets)
 
-    def filter(  # type: ignore
-        self,
-        Filters: List[FilterTypeDef] = None,
-        SubnetIds: List[str] = None,
-        DryRun: bool = None,
-        NextToken: str = None,
-        MaxResults: int = None
-    ) -> "VpcSubnetsCollection":
-        pass
+### Vpc methods
 
-    def limit(
-        self,
-        count: int
-    ) -> "VpcSubnetsCollection":
-        pass
+#### Vpc.associate_dhcp_options method
 
-    def page_size(
-        self,
-        count: int
-    ) -> "VpcSubnetsCollection":
-        pass
+Type annotations for `boto3.resource("ec2").associate_dhcp_options` method.
 
-    def pages(
-        self
-    ) -> Iterator[List["Subnet"]]:
-        pass
+Boto3 documentation:
+[EC2.Vpc.associate_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.associate_dhcp_options)
 
-    def __iter__(
-        self
-    ) -> Iterator["Subnet"]:
-        pass
-```
+Arguments:
 
+- `DhcpOptionsId`: `str` *(required)*
+- `DryRun`: `bool`
 
+#### Vpc.attach_classic_link_instance method
 
+Type annotations for `boto3.resource("ec2").attach_classic_link_instance`
+method.
+
+Boto3 documentation:
+[EC2.Vpc.attach_classic_link_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_classic_link_instance)
+
+Arguments:
+
+- `Groups`: `List`\[`str`\] *(required)*
+- `InstanceId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[AttachClassicLinkVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attachclassiclinkvpcresulttypedef).
+
+#### Vpc.attach_internet_gateway method
+
+Type annotations for `boto3.resource("ec2").attach_internet_gateway` method.
+
+Boto3 documentation:
+[EC2.Vpc.attach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_internet_gateway)
+
+Arguments:
+
+- `InternetGatewayId`: `str` *(required)*
+- `DryRun`: `bool`
+
+#### Vpc.create_network_acl method
+
+Type annotations for `boto3.resource("ec2").create_network_acl` method.
+
+Boto3 documentation:
+[EC2.Vpc.create_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_network_acl)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [NetworkAcl](#networkacl).
+
+#### Vpc.create_route_table method
+
+Type annotations for `boto3.resource("ec2").create_route_table` method.
+
+Boto3 documentation:
+[EC2.Vpc.create_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_route_table)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [RouteTable](#routetable).
+
+#### Vpc.create_security_group method
+
+Type annotations for `boto3.resource("ec2").create_security_group` method.
+
+Boto3 documentation:
+[EC2.Vpc.create_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_security_group)
+
+Arguments:
+
+- `Description`: `str` *(required)*
+- `GroupName`: `str` *(required)*
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns [SecurityGroup](#securitygroup).
+
+#### Vpc.create_subnet method
+
+Type annotations for `boto3.resource("ec2").create_subnet` method.
+
+Boto3 documentation:
+[EC2.Vpc.create_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_subnet)
+
+Arguments:
+
+- `CidrBlock`: `str` *(required)*
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Ipv6CidrBlock`: `str`
+- `OutpostArn`: `str`
+- `DryRun`: `bool`
+
+Returns [Subnet](#subnet).
+
+#### Vpc.create_tags method
+
+Type annotations for `boto3.resource("ec2").create_tags` method.
+
+Boto3 documentation:
+[EC2.Vpc.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_tags)
+
+Arguments:
+
+- `Tags`:
+  `Optional`\[`List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]\]
+  *(required)*
+- `DryRun`: `bool`
+
+Returns [Tag](#tag).
+
+#### Vpc.delete method
+
+Type annotations for `boto3.resource("ec2").delete` method.
+
+Boto3 documentation:
+[EC2.Vpc.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.delete)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+#### Vpc.describe_attribute method
+
+Type annotations for `boto3.resource("ec2").describe_attribute` method.
+
+Boto3 documentation:
+[EC2.Vpc.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.describe_attribute)
+
+Arguments:
+
+- `Attribute`:
+  [VpcAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpcattributename)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DescribeVpcAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcattributeresulttypedef).
+
+#### Vpc.detach_classic_link_instance method
+
+Type annotations for `boto3.resource("ec2").detach_classic_link_instance`
+method.
+
+Boto3 documentation:
+[EC2.Vpc.detach_classic_link_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance)
+
+Arguments:
+
+- `InstanceId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DetachClassicLinkVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#detachclassiclinkvpcresulttypedef).
+
+#### Vpc.detach_internet_gateway method
+
+Type annotations for `boto3.resource("ec2").detach_internet_gateway` method.
+
+Boto3 documentation:
+[EC2.Vpc.detach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_internet_gateway)
+
+Arguments:
+
+- `InternetGatewayId`: `str` *(required)*
+- `DryRun`: `bool`
+
+#### Vpc.disable_classic_link method
+
+Type annotations for `boto3.resource("ec2").disable_classic_link` method.
+
+Boto3 documentation:
+[EC2.Vpc.disable_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.disable_classic_link)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[DisableVpcClassicLinkResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#disablevpcclassiclinkresulttypedef).
+
+#### Vpc.enable_classic_link method
+
+Type annotations for `boto3.resource("ec2").enable_classic_link` method.
+
+Boto3 documentation:
+[EC2.Vpc.enable_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link)
+
+Arguments:
+
+- `DryRun`: `bool`
+
+Returns
+[EnableVpcClassicLinkResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enablevpcclassiclinkresulttypedef).
+
+#### Vpc.get_available_subresources method
+
+Type annotations for `boto3.resource("ec2").get_available_subresources` method.
+
+Boto3 documentation:
+[EC2.Vpc.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.get_available_subresources)
+
+Returns `List`\[`str`\].
+
+#### Vpc.load method
+
+Type annotations for `boto3.resource("ec2").load` method.
+
+Boto3 documentation:
+[EC2.Vpc.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.load)
+
+#### Vpc.modify_attribute method
+
+Type annotations for `boto3.resource("ec2").modify_attribute` method.
+
+Boto3 documentation:
+[EC2.Vpc.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.modify_attribute)
+
+Arguments:
+
+- `EnableDnsHostnames`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+- `EnableDnsSupport`:
+  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+
+#### Vpc.reload method
+
+Type annotations for `boto3.resource("ec2").reload` method.
+
+Boto3 documentation:
+[EC2.Vpc.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.reload)
+
+#### Vpc.request_vpc_peering_connection method
+
+Type annotations for `boto3.resource("ec2").request_vpc_peering_connection`
+method.
+
+Boto3 documentation:
+[EC2.Vpc.request_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.request_vpc_peering_connection)
+
+Arguments:
+
+- `DryRun`: `bool`
+- `PeerOwnerId`: `str`
+- `PeerVpcId`: `str`
+- `PeerRegion`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+
+Returns [VpcPeeringConnection](#vpcpeeringconnection).
+
+#### Vpc.wait_until_available method
+
+Type annotations for `boto3.resource("ec2").wait_until_available` method.
+
+Boto3 documentation:
+[EC2.Vpc.wait_until_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_available)
+
+#### Vpc.wait_until_exists method
+
+Type annotations for `boto3.resource("ec2").wait_until_exists` method.
+
+Boto3 documentation:
+[EC2.Vpc.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_exists)
 
 ## VpcPeeringConnection
 
@@ -6743,134 +4421,94 @@ def get_resource() -> VpcPeeringConnection:
     return boto3.resource("ec2").VpcPeeringConnection(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
-
+Boto3 documentation:
+[EC2.VpcPeeringConnection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
 
 ### VpcPeeringConnection attributes
 
-
-- `accepter_vpc_info`: `Dict[str, Any]`
-
+- `accepter_vpc_info`: `Dict`\[`str`, `Any`\]
 - `expiration_time`: `datetime`
-
-- `requester_vpc_info`: `Dict[str, Any]`
-
-- `status`: `Dict[str, Any]`
-
-- `tags`: `List[Any]`
-
+- `requester_vpc_info`: `Dict`\[`str`, `Any`\]
+- `status`: `Dict`\[`str`, `Any`\]
+- `tags`: `List`\[`Any`\]
 - `vpc_peering_connection_id`: `str`
-
 - `id`: `str`
-
-- `accepter_vpc`: `"Vpc"`
-
-- `requester_vpc`: `"Vpc"`
-
-
-
+- `accepter_vpc`: [Vpc](#vpc)
+- `requester_vpc`: [Vpc](#vpc)
 
 ### VpcPeeringConnection methods
 
-
-#### VpcPeeringConnection.accept
+#### VpcPeeringConnection.accept method
 
 Type annotations for `boto3.resource("ec2").accept` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.accept]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.accept](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.accept)
 
-```python
-def accept(
-    self,
-    DryRun: bool = None
-) -> AcceptVpcPeeringConnectionResultTypeDef:
-    pass
-```
+Arguments:
 
-#### VpcPeeringConnection.delete
+- `DryRun`: `bool`
+
+Returns
+[AcceptVpcPeeringConnectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#acceptvpcpeeringconnectionresulttypedef).
+
+#### VpcPeeringConnection.delete method
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.delete]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.delete)
 
-```python
-def delete(
-    self,
-    DryRun: bool = None
-) -> DeleteVpcPeeringConnectionResultTypeDef:
-    pass
-```
+Arguments:
 
-#### VpcPeeringConnection.get_available_subresources
+- `DryRun`: `bool`
+
+Returns
+[DeleteVpcPeeringConnectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletevpcpeeringconnectionresulttypedef).
+
+#### VpcPeeringConnection.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.get_available_subresources]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### VpcPeeringConnection.load
+#### VpcPeeringConnection.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.load]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### VpcPeeringConnection.reject
+#### VpcPeeringConnection.reject method
 
 Type annotations for `boto3.resource("ec2").reject` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reject]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.reject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reject)
 
-```python
-def reject(
-    self,
-    DryRun: bool = None
-) -> RejectVpcPeeringConnectionResultTypeDef:
-    pass
-```
+Arguments:
 
-#### VpcPeeringConnection.reload
+- `DryRun`: `bool`
+
+Returns
+[RejectVpcPeeringConnectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#rejectvpcpeeringconnectionresulttypedef).
+
+#### VpcPeeringConnection.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reload]
+Boto3 documentation:
+[EC2.VpcPeeringConnection.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reload)
 
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-#### VpcPeeringConnection.wait_until_exists
+#### VpcPeeringConnection.wait_until_exists method
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.wait_until_exists]
-
-```python
-def wait_until_exists(
-    self
-) -> None:
-    pass
-```
-
-
-
-
-
+Boto3 documentation:
+[EC2.VpcPeeringConnection.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.wait_until_exists)
 
 ## VpcAddress
 
@@ -6885,123 +4523,81 @@ def get_resource() -> VpcAddress:
     return boto3.resource("ec2").VpcAddress(...)
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
-
+Boto3 documentation:
+[EC2.VpcAddress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
 
 ### VpcAddress attributes
 
-
 - `instance_id`: `str`
-
 - `public_ip`: `str`
-
 - `association_id`: `str`
-
 - `domain`: `str`
-
 - `network_interface_id`: `str`
-
 - `network_interface_owner_id`: `str`
-
 - `private_ip_address`: `str`
-
-- `tags`: `List[Any]`
-
+- `tags`: `List`\[`Any`\]
 - `public_ipv4_pool`: `str`
-
 - `network_border_group`: `str`
-
 - `customer_owned_ip`: `str`
-
 - `customer_owned_ipv4_pool`: `str`
-
 - `carrier_ip`: `str`
-
 - `allocation_id`: `str`
-
-- `association`: `"NetworkInterfaceAssociation"`
-
-
-
+- `association`: [NetworkInterfaceAssociation](#networkinterfaceassociation)
 
 ### VpcAddress methods
 
-
-#### VpcAddress.associate
+#### VpcAddress.associate method
 
 Type annotations for `boto3.resource("ec2").associate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.associate]
+Boto3 documentation:
+[EC2.VpcAddress.associate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.associate)
 
-```python
-def associate(
-    self,
-    InstanceId: str = None,
-    PublicIp: str = None,
-    AllowReassociation: bool = None,
-    DryRun: bool = None,
-    NetworkInterfaceId: str = None,
-    PrivateIpAddress: str = None
-) -> AssociateAddressResultTypeDef:
-    pass
-```
+Arguments:
 
-#### VpcAddress.get_available_subresources
+- `InstanceId`: `str`
+- `PublicIp`: `str`
+- `AllowReassociation`: `bool`
+- `DryRun`: `bool`
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddress`: `str`
+
+Returns
+[AssociateAddressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associateaddressresulttypedef).
+
+#### VpcAddress.get_available_subresources method
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.get_available_subresources]
+Boto3 documentation:
+[EC2.VpcAddress.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.get_available_subresources)
 
-```python
-def get_available_subresources(
-    self
-) -> List[str]:
-    pass
-```
+Returns `List`\[`str`\].
 
-#### VpcAddress.load
+#### VpcAddress.load method
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.load]
+Boto3 documentation:
+[EC2.VpcAddress.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.load)
 
-```python
-def load(
-    self
-) -> None:
-    pass
-```
-
-#### VpcAddress.release
+#### VpcAddress.release method
 
 Type annotations for `boto3.resource("ec2").release` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.release]
+Boto3 documentation:
+[EC2.VpcAddress.release](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.release)
 
-```python
-def release(
-    self,
-    AllocationId: str = None,
-    PublicIp: str = None,
-    NetworkBorderGroup: str = None,
-    DryRun: bool = None
-) -> None:
-    pass
-```
+Arguments:
 
-#### VpcAddress.reload
+- `AllocationId`: `str`
+- `PublicIp`: `str`
+- `NetworkBorderGroup`: `str`
+- `DryRun`: `bool`
+
+#### VpcAddress.reload method
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.reload]
-
-```python
-def reload(
-    self
-) -> None:
-    pass
-```
-
-
-
-
+Boto3 documentation:
+[EC2.VpcAddress.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.reload)

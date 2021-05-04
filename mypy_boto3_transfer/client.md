@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Transfer](./README.md) > TransferClient
 
-Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+Auto-generated documentation for
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+type annotations stubs module
+[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [TransferClient for boto3 Transfer module](#transferclient-for-boto3-transfer-module)
   - [TransferClient](#transferclient)
@@ -46,12 +48,13 @@ def get_transfer_client() -> TransferClient:
     return boto3.client("transfer")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
+Boto3 documentation:
+[Transfer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_transfer.client import Exceptions
@@ -59,7 +62,6 @@ from mypy_boto3_transfer.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -74,379 +76,374 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("transfer").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate]
+Boto3 documentation:
+[Transfer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_server
 
 Type annotations for `boto3.client("transfer").create_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server]
+Boto3 documentation:
+[Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
 
-```python
-def create_server(
-    self,
-    Certificate: str = None,
-    Domain: Domain = None,
-    EndpointDetails: "EndpointDetailsTypeDef" = None,
-    EndpointType: EndpointType = None,
-    HostKey: str = None,
-    IdentityProviderDetails: "IdentityProviderDetailsTypeDef" = None,
-    IdentityProviderType: IdentityProviderType = None,
-    LoggingRole: str = None,
-    Protocols: List[ProtocolType] = None,
-    SecurityPolicyName: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateServerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Certificate`: `str`
+- `Domain`:
+  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#domain)
+- `EndpointDetails`:
+  [EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#endpointdetailstypedef)
+- `EndpointType`:
+  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#endpointtype)
+- `HostKey`: `str`
+- `IdentityProviderDetails`:
+  [IdentityProviderDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#identityproviderdetailstypedef)
+- `IdentityProviderType`:
+  [IdentityProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#identityprovidertype)
+- `LoggingRole`: `str`
+- `Protocols`:
+  `List`\[[ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#protocoltype)\]
+- `SecurityPolicyName`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#createserverresponsetypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("transfer").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user]
+Boto3 documentation:
+[Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
 
-```python
-def create_user(
-    self,
-    Role: str,
-    ServerId: str,
-    UserName: str,
-    HomeDirectory: str = None,
-    HomeDirectoryType: HomeDirectoryType = None,
-    HomeDirectoryMappings: List["HomeDirectoryMapEntryTypeDef"] = None,
-    Policy: str = None,
-    PosixProfile: "PosixProfileTypeDef" = None,
-    SshPublicKeyBody: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Role`: `str` *(required)*
+- `ServerId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+- `HomeDirectory`: `str`
+- `HomeDirectoryType`:
+  [HomeDirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#homedirectorytype)
+- `HomeDirectoryMappings`:
+  `List`\[[HomeDirectoryMapEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#homedirectorymapentrytypedef)\]
+- `Policy`: `str`
+- `PosixProfile`:
+  [PosixProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#posixprofiletypedef)
+- `SshPublicKeyBody`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#createuserresponsetypedef).
 
 ### delete_server
 
 Type annotations for `boto3.client("transfer").delete_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server]
+Boto3 documentation:
+[Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
 
-```python
-def delete_server(
-    self,
-    ServerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
 
 ### delete_ssh_public_key
 
 Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key]
+Boto3 documentation:
+[Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
 
-```python
-def delete_ssh_public_key(
-    self,
-    ServerId: str,
-    SshPublicKeyId: str,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `SshPublicKeyId`: `str` *(required)*
+- `UserName`: `str` *(required)*
 
 ### delete_user
 
 Type annotations for `boto3.client("transfer").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user]
+Boto3 documentation:
+[Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    ServerId: str,
-    UserName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `UserName`: `str` *(required)*
 
 ### describe_security_policy
 
-Type annotations for `boto3.client("transfer").describe_security_policy` method.
+Type annotations for `boto3.client("transfer").describe_security_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy]
+Boto3 documentation:
+[Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
-```python
-def describe_security_policy(
-    self,
-    SecurityPolicyName: str
-) -> DescribeSecurityPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SecurityPolicyName`: `str` *(required)*
+
+Returns
+[DescribeSecurityPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describesecuritypolicyresponsetypedef).
 
 ### describe_server
 
 Type annotations for `boto3.client("transfer").describe_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server]
+Boto3 documentation:
+[Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
 
-```python
-def describe_server(
-    self,
-    ServerId: str
-) -> DescribeServerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+
+Returns
+[DescribeServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describeserverresponsetypedef).
 
 ### describe_user
 
 Type annotations for `boto3.client("transfer").describe_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user]
+Boto3 documentation:
+[Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
 
-```python
-def describe_user(
-    self,
-    ServerId: str,
-    UserName: str
-) -> DescribeUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+
+Returns
+[DescribeUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("transfer").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url]
+Boto3 documentation:
+[Transfer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### import_ssh_public_key
 
 Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key]
+Boto3 documentation:
+[Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
 
-```python
-def import_ssh_public_key(
-    self,
-    ServerId: str,
-    SshPublicKeyBody: str,
-    UserName: str
-) -> ImportSshPublicKeyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `SshPublicKeyBody`: `str` *(required)*
+- `UserName`: `str` *(required)*
+
+Returns
+[ImportSshPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#importsshpublickeyresponsetypedef).
 
 ### list_security_policies
 
 Type annotations for `boto3.client("transfer").list_security_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies]
+Boto3 documentation:
+[Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
-```python
-def list_security_policies(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListSecurityPoliciesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListSecurityPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listsecuritypoliciesresponsetypedef).
 
 ### list_servers
 
 Type annotations for `boto3.client("transfer").list_servers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers]
+Boto3 documentation:
+[Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
 
-```python
-def list_servers(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListServersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listserversresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource]
+Boto3 documentation:
+[Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    Arn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_users
 
 Type annotations for `boto3.client("transfer").list_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users]
+Boto3 documentation:
+[Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
 
-```python
-def list_users(
-    self,
-    ServerId: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listusersresponsetypedef).
 
 ### start_server
 
 Type annotations for `boto3.client("transfer").start_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server]
+Boto3 documentation:
+[Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
 
-```python
-def start_server(
-    self,
-    ServerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
 
 ### stop_server
 
 Type annotations for `boto3.client("transfer").stop_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server]
+Boto3 documentation:
+[Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
 
-```python
-def stop_server(
-    self,
-    ServerId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
 
 ### tag_resource
 
 Type annotations for `boto3.client("transfer").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource]
+Boto3 documentation:
+[Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    Arn: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### test_identity_provider
 
 Type annotations for `boto3.client("transfer").test_identity_provider` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider]
+Boto3 documentation:
+[Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
 
-```python
-def test_identity_provider(
-    self,
-    ServerId: str,
-    UserName: str,
-    ServerProtocol: ProtocolType = None,
-    SourceIp: str = None,
-    UserPassword: str = None
-) -> TestIdentityProviderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+- `ServerProtocol`:
+  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#protocoltype)
+- `SourceIp`: `str`
+- `UserPassword`: `str`
+
+Returns
+[TestIdentityProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#testidentityproviderresponsetypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("transfer").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource]
+Boto3 documentation:
+[Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    Arn: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `Arn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### update_server
 
 Type annotations for `boto3.client("transfer").update_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server]
+Boto3 documentation:
+[Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
 
-```python
-def update_server(
-    self,
-    ServerId: str,
-    Certificate: str = None,
-    EndpointDetails: "EndpointDetailsTypeDef" = None,
-    EndpointType: EndpointType = None,
-    HostKey: str = None,
-    IdentityProviderDetails: "IdentityProviderDetailsTypeDef" = None,
-    LoggingRole: str = None,
-    Protocols: List[ProtocolType] = None,
-    SecurityPolicyName: str = None
-) -> UpdateServerResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `Certificate`: `str`
+- `EndpointDetails`:
+  [EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#endpointdetailstypedef)
+- `EndpointType`:
+  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#endpointtype)
+- `HostKey`: `str`
+- `IdentityProviderDetails`:
+  [IdentityProviderDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#identityproviderdetailstypedef)
+- `LoggingRole`: `str`
+- `Protocols`:
+  `List`\[[ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#protocoltype)\]
+- `SecurityPolicyName`: `str`
+
+Returns
+[UpdateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#updateserverresponsetypedef).
 
 ### update_user
 
 Type annotations for `boto3.client("transfer").update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user]
+Boto3 documentation:
+[Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
 
-```python
-def update_user(
-    self,
-    ServerId: str,
-    UserName: str,
-    HomeDirectory: str = None,
-    HomeDirectoryType: HomeDirectoryType = None,
-    HomeDirectoryMappings: List["HomeDirectoryMapEntryTypeDef"] = None,
-    Policy: str = None,
-    PosixProfile: "PosixProfileTypeDef" = None,
-    Role: str = None
-) -> UpdateUserResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ServerId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+- `HomeDirectory`: `str`
+- `HomeDirectoryType`:
+  [HomeDirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#homedirectorytype)
+- `HomeDirectoryMappings`:
+  `List`\[[HomeDirectoryMapEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#homedirectorymapentrytypedef)\]
+- `Policy`: `str`
+- `PosixProfile`:
+  [PosixProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#posixprofiletypedef)
+- `Role`: `str`
 
+Returns
+[UpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#updateuserresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("transfer").get_paginator` method with overloads.
+Type annotations for `boto3.client("transfer").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_servers")` -> [ListServersPaginator](./paginators.md#listserverspaginator)
-
-
+- `client.get_paginator("list_servers")` ->
+  [ListServersPaginator](./paginators.md#listserverspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECR](./README.md) > Structures
 
-Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+Auto-generated documentation for
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+type annotations stubs module
+[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Typed dictionaries for boto3 ECR module](#typed-dictionaries-for-boto3-ecr-module)
   - [AttributeTypeDef](#attributetypedef)
@@ -72,15 +74,13 @@ type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-bot
 from mypy_boto3_ecr.type_defs import AttributeTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 
-
-
 Optional fields:
-- `value`: `str`
 
+- `value`: `str`
 
 ## AuthorizationDataTypeDef
 
@@ -88,14 +88,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import AuthorizationDataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `authorizationToken`: `str`
 - `expiresAt`: `datetime`
 - `proxyEndpoint`: `str`
-
 
 ## BatchCheckLayerAvailabilityResponseTypeDef
 
@@ -103,13 +100,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `layers`: `List["LayerTypeDef"]`
-- `failures`: `List["LayerFailureTypeDef"]`
 
+- `layers`:
+  `List`\[[LayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#layertypedef)\]
+- `failures`:
+  `List`\[[LayerFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#layerfailuretypedef)\]
 
 ## BatchDeleteImageResponseTypeDef
 
@@ -117,13 +113,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import BatchDeleteImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `imageIds`: `List["ImageIdentifierTypeDef"]`
-- `failures`: `List["ImageFailureTypeDef"]`
 
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `failures`:
+  `List`\[[ImageFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagefailuretypedef)\]
 
 ## BatchGetImageResponseTypeDef
 
@@ -131,13 +126,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import BatchGetImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `images`: `List["ImageTypeDef"]`
-- `failures`: `List["ImageFailureTypeDef"]`
 
+- `images`:
+  `List`\[[ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagetypedef)\]
+- `failures`:
+  `List`\[[ImageFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagefailuretypedef)\]
 
 ## CompleteLayerUploadResponseTypeDef
 
@@ -145,15 +139,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import CompleteLayerUploadResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `uploadId`: `str`
 - `layerDigest`: `str`
-
 
 ## CreateRepositoryResponseTypeDef
 
@@ -161,12 +152,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import CreateRepositoryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryTypeDef"`
 
+- `repository`:
+  [RepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#repositorytypedef)
 
 ## DeleteLifecyclePolicyResponseTypeDef
 
@@ -174,15 +163,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DeleteLifecyclePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
 - `lastEvaluatedAt`: `datetime`
-
 
 ## DeleteRegistryPolicyResponseTypeDef
 
@@ -190,13 +176,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DeleteRegistryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `policyText`: `str`
-
 
 ## DeleteRepositoryPolicyResponseTypeDef
 
@@ -204,14 +187,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DeleteRepositoryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
-
 
 ## DeleteRepositoryResponseTypeDef
 
@@ -219,12 +199,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DeleteRepositoryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryTypeDef"`
 
+- `repository`:
+  [RepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#repositorytypedef)
 
 ## DescribeImageScanFindingsResponseTypeDef
 
@@ -232,17 +210,17 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DescribeImageScanFindingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageId`: `"ImageIdentifierTypeDef"`
-- `imageScanStatus`: `"ImageScanStatusTypeDef"`
-- `imageScanFindings`: `"ImageScanFindingsTypeDef"`
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `imageScanStatus`:
+  [ImageScanStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanstatustypedef)
+- `imageScanFindings`:
+  [ImageScanFindingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanfindingstypedef)
 - `nextToken`: `str`
-
 
 ## DescribeImagesFilterTypeDef
 
@@ -250,12 +228,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DescribeImagesFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tagStatus`: `TagStatus`
 
+- `tagStatus`:
+  [TagStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#tagstatus)
 
 ## DescribeImagesResponseTypeDef
 
@@ -263,13 +239,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DescribeImagesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `imageDetails`: `List["ImageDetailTypeDef"]`
-- `nextToken`: `str`
 
+- `imageDetails`:
+  `List`\[[ImageDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagedetailtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeRegistryResponseTypeDef
 
@@ -277,13 +251,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DescribeRegistryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `registryId`: `str`
-- `replicationConfiguration`: `"ReplicationConfigurationTypeDef"`
 
+- `registryId`: `str`
+- `replicationConfiguration`:
+  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationconfigurationtypedef)
 
 ## DescribeRepositoriesResponseTypeDef
 
@@ -291,13 +263,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import DescribeRepositoriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repositories`: `List["RepositoryTypeDef"]`
-- `nextToken`: `str`
 
+- `repositories`:
+  `List`\[[RepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#repositorytypedef)\]
+- `nextToken`: `str`
 
 ## EncryptionConfigurationTypeDef
 
@@ -305,15 +275,14 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import EncryptionConfigurationTypeDef
 ```
 
-
 Required fields:
-- `encryptionType`: `EncryptionType`
 
-
+- `encryptionType`:
+  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#encryptiontype)
 
 Optional fields:
-- `kmsKey`: `str`
 
+- `kmsKey`: `str`
 
 ## GetAuthorizationTokenResponseTypeDef
 
@@ -321,12 +290,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetAuthorizationTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `authorizationData`: `List["AuthorizationDataTypeDef"]`
 
+- `authorizationData`:
+  `List`\[[AuthorizationDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#authorizationdatatypedef)\]
 
 ## GetDownloadUrlForLayerResponseTypeDef
 
@@ -334,13 +301,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetDownloadUrlForLayerResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `downloadUrl`: `str`
 - `layerDigest`: `str`
-
 
 ## GetLifecyclePolicyPreviewResponseTypeDef
 
@@ -348,18 +312,18 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetLifecyclePolicyPreviewResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
-- `status`: `LifecyclePolicyPreviewStatus`
+- `status`:
+  [LifecyclePolicyPreviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#lifecyclepolicypreviewstatus)
 - `nextToken`: `str`
-- `previewResults`: `List["LifecyclePolicyPreviewResultTypeDef"]`
-- `summary`: `"LifecyclePolicyPreviewSummaryTypeDef"`
-
+- `previewResults`:
+  `List`\[[LifecyclePolicyPreviewResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewresulttypedef)\]
+- `summary`:
+  [LifecyclePolicyPreviewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewsummarytypedef)
 
 ## GetLifecyclePolicyResponseTypeDef
 
@@ -367,15 +331,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetLifecyclePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
 - `lastEvaluatedAt`: `datetime`
-
 
 ## GetRegistryPolicyResponseTypeDef
 
@@ -383,13 +344,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetRegistryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `policyText`: `str`
-
 
 ## GetRepositoryPolicyResponseTypeDef
 
@@ -397,14 +355,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import GetRepositoryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
-
 
 ## ImageDetailTypeDef
 
@@ -412,21 +367,20 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `imageDigest`: `str`
-- `imageTags`: `List[str]`
+- `imageTags`: `List`\[`str`\]
 - `imageSizeInBytes`: `int`
 - `imagePushedAt`: `datetime`
-- `imageScanStatus`: `"ImageScanStatusTypeDef"`
-- `imageScanFindingsSummary`: `"ImageScanFindingsSummaryTypeDef"`
+- `imageScanStatus`:
+  [ImageScanStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanstatustypedef)
+- `imageScanFindingsSummary`:
+  [ImageScanFindingsSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanfindingssummarytypedef)
 - `imageManifestMediaType`: `str`
 - `artifactMediaType`: `str`
-
 
 ## ImageFailureTypeDef
 
@@ -434,14 +388,13 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageFailureTypeDef
 ```
 
-
-
-
 Optional fields:
-- `imageId`: `"ImageIdentifierTypeDef"`
-- `failureCode`: `ImageFailureCode`
-- `failureReason`: `str`
 
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `failureCode`:
+  [ImageFailureCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagefailurecode)
+- `failureReason`: `str`
 
 ## ImageIdentifierTypeDef
 
@@ -449,13 +402,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageIdentifierTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `imageDigest`: `str`
 - `imageTag`: `str`
-
 
 ## ImageScanFindingTypeDef
 
@@ -463,16 +413,15 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageScanFindingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `description`: `str`
 - `uri`: `str`
-- `severity`: `FindingSeverity`
-- `attributes`: `List["AttributeTypeDef"]`
-
+- `severity`:
+  [FindingSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#findingseverity)
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#attributetypedef)\]
 
 ## ImageScanFindingsSummaryTypeDef
 
@@ -480,14 +429,13 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageScanFindingsSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `imageScanCompletedAt`: `datetime`
 - `vulnerabilitySourceUpdatedAt`: `datetime`
-- `findingSeverityCounts`: `Dict[FindingSeverity, int]`
-
+- `findingSeverityCounts`:
+  `Dict`\[[FindingSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#findingseverity),
+  `int`\]
 
 ## ImageScanFindingsTypeDef
 
@@ -495,15 +443,15 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageScanFindingsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `imageScanCompletedAt`: `datetime`
 - `vulnerabilitySourceUpdatedAt`: `datetime`
-- `findings`: `List["ImageScanFindingTypeDef"]`
-- `findingSeverityCounts`: `Dict[FindingSeverity, int]`
-
+- `findings`:
+  `List`\[[ImageScanFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanfindingtypedef)\]
+- `findingSeverityCounts`:
+  `Dict`\[[FindingSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#findingseverity),
+  `int`\]
 
 ## ImageScanStatusTypeDef
 
@@ -511,13 +459,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageScanStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `ScanStatus`
-- `description`: `str`
 
+- `status`:
+  [ScanStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#scanstatus)
+- `description`: `str`
 
 ## ImageScanningConfigurationTypeDef
 
@@ -525,12 +471,9 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageScanningConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `scanOnPush`: `bool`
 
+- `scanOnPush`: `bool`
 
 ## ImageTypeDef
 
@@ -538,16 +481,14 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ImageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageId`: `"ImageIdentifierTypeDef"`
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
 - `imageManifest`: `str`
 - `imageManifestMediaType`: `str`
-
 
 ## InitiateLayerUploadResponseTypeDef
 
@@ -555,13 +496,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import InitiateLayerUploadResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `uploadId`: `str`
 - `partSize`: `int`
-
 
 ## LayerFailureTypeDef
 
@@ -569,14 +507,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LayerFailureTypeDef
 ```
 
-
-
-
 Optional fields:
-- `layerDigest`: `str`
-- `failureCode`: `LayerFailureCode`
-- `failureReason`: `str`
 
+- `layerDigest`: `str`
+- `failureCode`:
+  [LayerFailureCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#layerfailurecode)
+- `failureReason`: `str`
 
 ## LayerTypeDef
 
@@ -584,15 +520,13 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LayerTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `layerDigest`: `str`
-- `layerAvailability`: `LayerAvailability`
+- `layerAvailability`:
+  [LayerAvailability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#layeravailability)
 - `layerSize`: `int`
 - `mediaType`: `str`
-
 
 ## LifecyclePolicyPreviewFilterTypeDef
 
@@ -600,12 +534,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tagStatus`: `TagStatus`
 
+- `tagStatus`:
+  [TagStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#tagstatus)
 
 ## LifecyclePolicyPreviewResultTypeDef
 
@@ -613,16 +545,14 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `imageTags`: `List[str]`
+
+- `imageTags`: `List`\[`str`\]
 - `imageDigest`: `str`
 - `imagePushedAt`: `datetime`
-- `action`: `"LifecyclePolicyRuleActionTypeDef"`
+- `action`:
+  [LifecyclePolicyRuleActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicyruleactiontypedef)
 - `appliedRulePriority`: `int`
-
 
 ## LifecyclePolicyPreviewSummaryTypeDef
 
@@ -630,12 +560,9 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `expiringImageTotalCount`: `int`
 
+- `expiringImageTotalCount`: `int`
 
 ## LifecyclePolicyRuleActionTypeDef
 
@@ -643,12 +570,9 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import LifecyclePolicyRuleActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `Literal['EXPIRE']`
 
+- `type`: `Literal['EXPIRE']`
 
 ## ListImagesFilterTypeDef
 
@@ -656,12 +580,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ListImagesFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tagStatus`: `TagStatus`
 
+- `tagStatus`:
+  [TagStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#tagstatus)
 
 ## ListImagesResponseTypeDef
 
@@ -669,13 +591,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ListImagesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `imageIds`: `List["ImageIdentifierTypeDef"]`
-- `nextToken`: `str`
 
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -683,12 +603,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -696,14 +614,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutImageResponseTypeDef
 
@@ -711,12 +626,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutImageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `image`: `"ImageTypeDef"`
 
+- `image`:
+  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagetypedef)
 
 ## PutImageScanningConfigurationResponseTypeDef
 
@@ -724,14 +637,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutImageScanningConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageScanningConfiguration`: `"ImageScanningConfigurationTypeDef"`
-
+- `imageScanningConfiguration`:
+  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
 
 ## PutImageTagMutabilityResponseTypeDef
 
@@ -739,14 +650,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutImageTagMutabilityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageTagMutability`: `ImageTagMutability`
-
+- `imageTagMutability`:
+  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
 
 ## PutLifecyclePolicyResponseTypeDef
 
@@ -754,14 +663,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutLifecyclePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
-
 
 ## PutRegistryPolicyResponseTypeDef
 
@@ -769,13 +675,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutRegistryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `policyText`: `str`
-
 
 ## PutReplicationConfigurationResponseTypeDef
 
@@ -783,12 +686,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import PutReplicationConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `replicationConfiguration`: `"ReplicationConfigurationTypeDef"`
 
+- `replicationConfiguration`:
+  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationconfigurationtypedef)
 
 ## ReplicationConfigurationTypeDef
 
@@ -796,12 +697,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import ReplicationConfigurationTypeDef
 ```
 
-
 Required fields:
-- `rules`: `List["ReplicationRuleTypeDef"]`
 
-
-
+- `rules`:
+  `List`\[[ReplicationRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationruletypedef)\]
 
 ## ReplicationDestinationTypeDef
 
@@ -809,13 +708,10 @@ Required fields:
 from mypy_boto3_ecr.type_defs import ReplicationDestinationTypeDef
 ```
 
-
 Required fields:
+
 - `region`: `str`
 - `registryId`: `str`
-
-
-
 
 ## ReplicationRuleTypeDef
 
@@ -823,12 +719,10 @@ Required fields:
 from mypy_boto3_ecr.type_defs import ReplicationRuleTypeDef
 ```
 
-
 Required fields:
-- `destinations`: `List["ReplicationDestinationTypeDef"]`
 
-
-
+- `destinations`:
+  `List`\[[ReplicationDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationdestinationtypedef)\]
 
 ## RepositoryTypeDef
 
@@ -836,19 +730,19 @@ Required fields:
 from mypy_boto3_ecr.type_defs import RepositoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `repositoryArn`: `str`
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `repositoryUri`: `str`
 - `createdAt`: `datetime`
-- `imageTagMutability`: `ImageTagMutability`
-- `imageScanningConfiguration`: `"ImageScanningConfigurationTypeDef"`
-- `encryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-
+- `imageTagMutability`:
+  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
+- `imageScanningConfiguration`:
+  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
+- `encryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#encryptionconfigurationtypedef)
 
 ## SetRepositoryPolicyResponseTypeDef
 
@@ -856,14 +750,11 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import SetRepositoryPolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
-
 
 ## StartImageScanResponseTypeDef
 
@@ -871,15 +762,14 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import StartImageScanResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageId`: `"ImageIdentifierTypeDef"`
-- `imageScanStatus`: `"ImageScanStatusTypeDef"`
-
+- `imageId`:
+  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `imageScanStatus`:
+  [ImageScanStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanstatustypedef)
 
 ## StartLifecyclePolicyPreviewResponseTypeDef
 
@@ -887,15 +777,13 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import StartLifecyclePolicyPreviewResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
-- `status`: `LifecyclePolicyPreviewStatus`
-
+- `status`:
+  [LifecyclePolicyPreviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#lifecyclepolicypreviewstatus)
 
 ## TagTypeDef
 
@@ -903,13 +791,10 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import TagTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## UploadLayerPartResponseTypeDef
 
@@ -917,15 +802,12 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import UploadLayerPartResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `uploadId`: `str`
 - `lastByteReceived`: `int`
-
 
 ## WaiterConfigTypeDef
 
@@ -933,10 +815,7 @@ Optional fields:
 from mypy_boto3_ecr.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

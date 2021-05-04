@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [QuickSight](./README.md) > Literals
 
-Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
-type annotations stubs module [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+Auto-generated documentation for
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+type annotations stubs module
+[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 - [Literals for boto3 QuickSight module](#literals-for-boto3-quicksight-module)
   - [AnalysisErrorType](#analysiserrortype)

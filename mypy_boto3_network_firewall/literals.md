@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [NetworkFirewall](./README.md) > Literals
 
-Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+Auto-generated documentation for
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+type annotations stubs module
+[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Literals for boto3 NetworkFirewall module](#literals-for-boto3-networkfirewall-module)
   - [AttachmentStatus](#attachmentstatus)

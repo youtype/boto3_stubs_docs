@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkDocs](./README.md) > Paginators
 
-Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+Auto-generated documentation for
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+type annotations stubs module
+[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Paginators for boto3 WorkDocs module](#paginators-for-boto3-workdocs-module)
   - [DescribeActivitiesPaginator](#describeactivitiespaginator)
@@ -18,7 +20,8 @@ type annotations stubs module [mypy_boto3_workdocs](https://pypi.org/project/myp
 
 ## DescribeActivitiesPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_activities")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_activities")`.
 
 Can be used directly:
 
@@ -29,27 +32,29 @@ def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
     return boto3.client("workdocs").get_paginator("describe_activities")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
 
-```python
-class DescribeActivitiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AuthenticationToken: str = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        OrganizationId: str = None,
-        ActivityTypes: str = None,
-        ResourceId: str = None,
-        UserId: str = None,
-        IncludeIndirectActivities: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeActivitiesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeActivitiesPaginator.paginate` method:
+
+- `AuthenticationToken`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `OrganizationId`: `str`
+- `ActivityTypes`: `str`
+- `ResourceId`: `str`
+- `UserId`: `str`
+- `IncludeIndirectActivities`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeActivitiesPaginator.paginate` returns
+`Iterator`\[[DescribeActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeactivitiesresponsetypedef)\].
+
 ## DescribeCommentsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_comments")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_comments")`.
 
 Can be used directly:
 
@@ -60,22 +65,24 @@ def get_describe_comments_paginator() -> DescribeCommentsPaginator:
     return boto3.client("workdocs").get_paginator("describe_comments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeComments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
 
-```python
-class DescribeCommentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DocumentId: str,
-        VersionId: str,
-        AuthenticationToken: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeCommentsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeCommentsPaginator.paginate` method:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCommentsPaginator.paginate` returns
+`Iterator`\[[DescribeCommentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describecommentsresponsetypedef)\].
+
 ## DescribeDocumentVersionsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_document_versions")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_document_versions")`.
 
 Can be used directly:
 
@@ -86,23 +93,25 @@ def get_describe_document_versions_paginator() -> DescribeDocumentVersionsPagina
     return boto3.client("workdocs").get_paginator("describe_document_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
 
-```python
-class DescribeDocumentVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DocumentId: str,
-        AuthenticationToken: str = None,
-        Include: str = None,
-        Fields: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDocumentVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Include`: `str`
+- `Fields`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDocumentVersionsPaginator.paginate` returns
+`Iterator`\[[DescribeDocumentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describedocumentversionsresponsetypedef)\].
+
 ## DescribeFolderContentsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_folder_contents")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_folder_contents")`.
 
 Can be used directly:
 
@@ -113,25 +122,30 @@ def get_describe_folder_contents_paginator() -> DescribeFolderContentsPaginator:
     return boto3.client("workdocs").get_paginator("describe_folder_contents")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeFolderContents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
 
-```python
-class DescribeFolderContentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        FolderId: str,
-        AuthenticationToken: str = None,
-        Sort: ResourceSortType = None,
-        Order: OrderType = None,
-        Type: FolderContentType = None,
-        Include: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeFolderContentsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeFolderContentsPaginator.paginate` method:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Sort`:
+  [ResourceSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcesorttype)
+- `Order`:
+  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
+- `Type`:
+  [FolderContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#foldercontenttype)
+- `Include`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeFolderContentsPaginator.paginate` returns
+`Iterator`\[[DescribeFolderContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describefoldercontentsresponsetypedef)\].
+
 ## DescribeGroupsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_groups")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_groups")`.
 
 Can be used directly:
 
@@ -142,22 +156,24 @@ def get_describe_groups_paginator() -> DescribeGroupsPaginator:
     return boto3.client("workdocs").get_paginator("describe_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
 
-```python
-class DescribeGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SearchQuery: str,
-        AuthenticationToken: str = None,
-        OrganizationId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeGroupsPaginator.paginate` method:
+
+- `SearchQuery`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `OrganizationId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describegroupsresponsetypedef)\].
+
 ## DescribeNotificationSubscriptionsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_notification_subscriptions")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_notification_subscriptions")`.
 
 Can be used directly:
 
@@ -168,20 +184,22 @@ def get_describe_notification_subscriptions_paginator() -> DescribeNotificationS
     return boto3.client("workdocs").get_paginator("describe_notification_subscriptions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeNotificationSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
 
-```python
-class DescribeNotificationSubscriptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        OrganizationId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeNotificationSubscriptionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
+
+- `OrganizationId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeNotificationSubscriptionsPaginator.paginate` returns
+`Iterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describenotificationsubscriptionsresponsetypedef)\].
+
 ## DescribeResourcePermissionsPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_resource_permissions")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_resource_permissions")`.
 
 Can be used directly:
 
@@ -192,22 +210,24 @@ def get_describe_resource_permissions_paginator() -> DescribeResourcePermissions
     return boto3.client("workdocs").get_paginator("describe_resource_permissions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeResourcePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
 
-```python
-class DescribeResourcePermissionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceId: str,
-        AuthenticationToken: str = None,
-        PrincipalId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeResourcePermissionsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
+
+- `ResourceId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `PrincipalId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeResourcePermissionsPaginator.paginate` returns
+`Iterator`\[[DescribeResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeresourcepermissionsresponsetypedef)\].
+
 ## DescribeRootFoldersPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_root_folders")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_root_folders")`.
 
 Can be used directly:
 
@@ -218,20 +238,22 @@ def get_describe_root_folders_paginator() -> DescribeRootFoldersPaginator:
     return boto3.client("workdocs").get_paginator("describe_root_folders")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeRootFolders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
 
-```python
-class DescribeRootFoldersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AuthenticationToken: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeRootFoldersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeRootFoldersPaginator.paginate` method:
+
+- `AuthenticationToken`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeRootFoldersPaginator.paginate` returns
+`Iterator`\[[DescribeRootFoldersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describerootfoldersresponsetypedef)\].
+
 ## DescribeUsersPaginator
 
-Type annotations for `boto3.client("workdocs").get_paginator("describe_users")`.
+Type annotations for
+`boto3.client("workdocs").get_paginator("describe_users")`.
 
 Can be used directly:
 
@@ -242,21 +264,24 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return boto3.client("workdocs").get_paginator("describe_users")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
+Boto3 documentation:
+[WorkDocs.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
 
-```python
-class DescribeUsersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AuthenticationToken: str = None,
-        OrganizationId: str = None,
-        UserIds: str = None,
-        Query: str = None,
-        Include: UserFilterType = None,
-        Order: OrderType = None,
-        Sort: UserSortType = None,
-        Fields: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeUsersResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeUsersPaginator.paginate` method:
+
+- `AuthenticationToken`: `str`
+- `OrganizationId`: `str`
+- `UserIds`: `str`
+- `Query`: `str`
+- `Include`:
+  [UserFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#userfiltertype)
+- `Order`:
+  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
+- `Sort`:
+  [UserSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usersorttype)
+- `Fields`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+
+`DescribeUsersPaginator.paginate` returns
+`Iterator`\[[DescribeUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeusersresponsetypedef)\].

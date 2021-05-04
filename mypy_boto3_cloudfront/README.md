@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudFront
 
-Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+Auto-generated documentation for
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+type annotations stubs module
+[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ```bash
 pip install mypy-boto3-cloudfront
@@ -20,7 +22,8 @@ pip install mypy-boto3-cloudfront
 
 ## CloudFrontClient
 
-Type annotations for  `boto3.client("cloudfront")` as [CloudFrontClient](./client.md)
+Type annotations for `boto3.client("cloudfront")` as
+[CloudFrontClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_cloudfront.client import CloudFrontClient
 ```
 
-
 CloudFrontClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_cache_policy](./client.md#create-cache-policy)
 - [create_cloud_front_origin_access_identity](./client.md#create-cloud-front-origin-access-identity)
@@ -122,10 +123,8 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - [update_realtime_log_config](./client.md#update-realtime-log-config)
 - [update_streaming_distribution](./client.md#update-streaming-distribution)
 
-
-
-
 ### Exceptions
+
 - [AccessDenied](./client.md#accessdenied)
 - [BatchTooLarge](./client.md#batchtoolarge)
 - [CNAMEAlreadyExists](./client.md#cnamealreadyexists)
@@ -249,14 +248,10 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - [TrustedSignerDoesNotExist](./client.md#trustedsignerdoesnotexist)
 - [UnsupportedOperation](./client.md#unsupportedoperation)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloudfront").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloudfront").get_paginator("...")`.
 
 Can be used directly:
 
@@ -269,12 +264,10 @@ from mypy_boto3_cloudfront.paginators import ListCloudFrontOriginAccessIdentitie
 - [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
 - [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("cloudfront").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("cloudfront").get_waiter("...")`.
 
 Can be used directly:
 
@@ -285,9 +278,6 @@ from mypy_boto3_cloudfront.waiters import DistributionDeployedWaiter, ...
 - [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
 - [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
 - [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
-
-
-
 
 ## Literals
 
@@ -332,13 +322,10 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehavior, ...
 - [StreamingDistributionDeployedWaiterName](./literals.md#streamingdistributiondeployedwaitername)
 - [ViewerProtocolPolicy](./literals.md#viewerprotocolpolicy)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

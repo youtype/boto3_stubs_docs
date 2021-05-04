@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SavingsPlans
 
-Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+Auto-generated documentation for
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+type annotations stubs module
+[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 ```bash
 pip install mypy-boto3-savingsplans
@@ -18,7 +20,8 @@ pip install mypy-boto3-savingsplans
 
 ## SavingsPlansClient
 
-Type annotations for  `boto3.client("savingsplans")` as [SavingsPlansClient](./client.md)
+Type annotations for `boto3.client("savingsplans")` as
+[SavingsPlansClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 ```
 
-
 SavingsPlansClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_savings_plan](./client.md#create-savings-plan)
 - [delete_queued_savings_plan](./client.md#delete-queued-savings-plan)
@@ -44,24 +45,13 @@ SavingsPlansClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -87,13 +77,10 @@ from mypy_boto3_savingsplans.literals import CurrencyCode, ...
 - [SavingsPlanType](./literals.md#savingsplantype)
 - [SavingsPlansFilterName](./literals.md#savingsplansfiltername)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

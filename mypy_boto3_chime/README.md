@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Chime
 
-Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+Auto-generated documentation for
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+type annotations stubs module
+[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ```bash
 pip install mypy-boto3-chime
@@ -19,7 +21,7 @@ pip install mypy-boto3-chime
 
 ## ChimeClient
 
-Type annotations for  `boto3.client("chime")` as [ChimeClient](./client.md)
+Type annotations for `boto3.client("chime")` as [ChimeClient](./client.md)
 
 Can be used directly:
 
@@ -27,17 +29,16 @@ Can be used directly:
 from mypy_boto3_chime.client import ChimeClient
 ```
 
-
 ChimeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_phone_number_with_user](./client.md#associate-phone-number-with-user)
 - [associate_phone_numbers_with_voice_connector](./client.md#associate-phone-numbers-with-voice-connector)
 - [associate_phone_numbers_with_voice_connector_group](./client.md#associate-phone-numbers-with-voice-connector-group)
 - [associate_signin_delegate_groups_with_account](./client.md#associate-signin-delegate-groups-with-account)
 - [batch_create_attendee](./client.md#batch-create-attendee)
+- [batch_create_channel_membership](./client.md#batch-create-channel-membership)
 - [batch_create_room_membership](./client.md#batch-create-room-membership)
 - [batch_delete_phone_number](./client.md#batch-delete-phone-number)
 - [batch_suspend_user](./client.md#batch-suspend-user)
@@ -218,10 +219,8 @@ ChimeClient [exceptions](./client.md#exceptions)
 - [update_voice_connector](./client.md#update-voice-connector)
 - [update_voice_connector_group](./client.md#update-voice-connector-group)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -235,14 +234,10 @@ ChimeClient [exceptions](./client.md#exceptions)
 - [UnauthorizedClientException](./client.md#unauthorizedclientexception)
 - [UnprocessableEntityException](./client.md#unprocessableentityexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("chime").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("chime").get_paginator("...")`.
 
 Can be used directly:
 
@@ -252,11 +247,6 @@ from mypy_boto3_chime.paginators import ListAccountsPaginator, ...
 
 - [ListAccountsPaginator](./paginators.md#listaccountspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -303,13 +293,10 @@ from mypy_boto3_chime.literals import AccountType, ...
 - [UserType](./literals.md#usertype)
 - [VoiceConnectorAwsRegion](./literals.md#voiceconnectorawsregion)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 
@@ -332,7 +319,10 @@ from mypy_boto3_chime.type_defs import AccountSettingsTypeDef, ...
 - [AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef)
 - [AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef)
 - [AttendeeTypeDef](./type_defs.md#attendeetypedef)
+- [BatchChannelMembershipsTypeDef](./type_defs.md#batchchannelmembershipstypedef)
 - [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef)
+- [BatchCreateChannelMembershipErrorTypeDef](./type_defs.md#batchcreatechannelmembershiperrortypedef)
+- [BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef)
 - [BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef)
 - [BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef)
 - [BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef)

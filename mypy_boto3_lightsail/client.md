@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Lightsail](./README.md) > LightsailClient
 
-Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
-type annotations stubs module [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+Auto-generated documentation for
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+type annotations stubs module
+[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [LightsailClient for boto3 Lightsail module](#lightsailclient-for-boto3-lightsail-module)
   - [LightsailClient](#lightsailclient)
@@ -168,12 +170,13 @@ def get_lightsail_client() -> LightsailClient:
     return boto3.client("lightsail")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
+Boto3 documentation:
+[Lightsail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_lightsail.client import Exceptions
@@ -181,7 +184,6 @@ from mypy_boto3_lightsail.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -194,2260 +196,2425 @@ Exceptions:
 - `Exceptions.ServiceException`
 - `Exceptions.UnauthenticatedException`
 
-
 ## Methods
-
 
 ### allocate_static_ip
 
 Type annotations for `boto3.client("lightsail").allocate_static_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip]
+Boto3 documentation:
+[Lightsail.Client.allocate_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip)
 
-```python
-def allocate_static_ip(
-    self,
-    staticIpName: str
-) -> AllocateStaticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `staticIpName`: `str` *(required)*
+
+Returns
+[AllocateStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#allocatestaticipresulttypedef).
 
 ### attach_certificate_to_distribution
 
-Type annotations for `boto3.client("lightsail").attach_certificate_to_distribution` method.
+Type annotations for
+`boto3.client("lightsail").attach_certificate_to_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution]
+Boto3 documentation:
+[Lightsail.Client.attach_certificate_to_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution)
 
-```python
-def attach_certificate_to_distribution(
-    self,
-    distributionName: str,
-    certificateName: str
-) -> AttachCertificateToDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str` *(required)*
+- `certificateName`: `str` *(required)*
+
+Returns
+[AttachCertificateToDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachcertificatetodistributionresulttypedef).
 
 ### attach_disk
 
 Type annotations for `boto3.client("lightsail").attach_disk` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk]
+Boto3 documentation:
+[Lightsail.Client.attach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk)
 
-```python
-def attach_disk(
-    self,
-    diskName: str,
-    instanceName: str,
-    diskPath: str
-) -> AttachDiskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+- `instanceName`: `str` *(required)*
+- `diskPath`: `str` *(required)*
+
+Returns
+[AttachDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachdiskresulttypedef).
 
 ### attach_instances_to_load_balancer
 
-Type annotations for `boto3.client("lightsail").attach_instances_to_load_balancer` method.
+Type annotations for
+`boto3.client("lightsail").attach_instances_to_load_balancer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer]
+Boto3 documentation:
+[Lightsail.Client.attach_instances_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer)
 
-```python
-def attach_instances_to_load_balancer(
-    self,
-    loadBalancerName: str,
-    instanceNames: List[str]
-) -> AttachInstancesToLoadBalancerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `instanceNames`: `List`\[`str`\] *(required)*
+
+Returns
+[AttachInstancesToLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachinstancestoloadbalancerresulttypedef).
 
 ### attach_load_balancer_tls_certificate
 
-Type annotations for `boto3.client("lightsail").attach_load_balancer_tls_certificate` method.
+Type annotations for
+`boto3.client("lightsail").attach_load_balancer_tls_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate]
+Boto3 documentation:
+[Lightsail.Client.attach_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate)
 
-```python
-def attach_load_balancer_tls_certificate(
-    self,
-    loadBalancerName: str,
-    certificateName: str
-) -> AttachLoadBalancerTlsCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `certificateName`: `str` *(required)*
+
+Returns
+[AttachLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachloadbalancertlscertificateresulttypedef).
 
 ### attach_static_ip
 
 Type annotations for `boto3.client("lightsail").attach_static_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip]
+Boto3 documentation:
+[Lightsail.Client.attach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip)
 
-```python
-def attach_static_ip(
-    self,
-    staticIpName: str,
-    instanceName: str
-) -> AttachStaticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `staticIpName`: `str` *(required)*
+- `instanceName`: `str` *(required)*
+
+Returns
+[AttachStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachstaticipresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("lightsail").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.can_paginate]
+Boto3 documentation:
+[Lightsail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### close_instance_public_ports
 
-Type annotations for `boto3.client("lightsail").close_instance_public_ports` method.
+Type annotations for `boto3.client("lightsail").close_instance_public_ports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports]
+Boto3 documentation:
+[Lightsail.Client.close_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports)
 
-```python
-def close_instance_public_ports(
-    self,
-    portInfo: PortInfoTypeDef,
-    instanceName: str
-) -> CloseInstancePublicPortsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `portInfo`:
+  [PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)
+  *(required)*
+- `instanceName`: `str` *(required)*
+
+Returns
+[CloseInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#closeinstancepublicportsresulttypedef).
 
 ### copy_snapshot
 
 Type annotations for `boto3.client("lightsail").copy_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot]
+Boto3 documentation:
+[Lightsail.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot)
 
-```python
-def copy_snapshot(
-    self,
-    targetSnapshotName: str,
-    sourceRegion: RegionName,
-    sourceSnapshotName: str = None,
-    sourceResourceName: str = None,
-    restoreDate: str = None,
-    useLatestRestorableAutoSnapshot: bool = None
-) -> CopySnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `targetSnapshotName`: `str` *(required)*
+- `sourceRegion`:
+  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
+  *(required)*
+- `sourceSnapshotName`: `str`
+- `sourceResourceName`: `str`
+- `restoreDate`: `str`
+- `useLatestRestorableAutoSnapshot`: `bool`
+
+Returns
+[CopySnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#copysnapshotresulttypedef).
 
 ### create_certificate
 
 Type annotations for `boto3.client("lightsail").create_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate]
+Boto3 documentation:
+[Lightsail.Client.create_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate)
 
-```python
-def create_certificate(
-    self,
-    certificateName: str,
-    domainName: str,
-    subjectAlternativeNames: List[str] = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `certificateName`: `str` *(required)*
+- `domainName`: `str` *(required)*
+- `subjectAlternativeNames`: `List`\[`str`\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcertificateresulttypedef).
 
 ### create_cloud_formation_stack
 
-Type annotations for `boto3.client("lightsail").create_cloud_formation_stack` method.
+Type annotations for `boto3.client("lightsail").create_cloud_formation_stack`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack]
+Boto3 documentation:
+[Lightsail.Client.create_cloud_formation_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack)
 
-```python
-def create_cloud_formation_stack(
-    self,
-    instances: List[InstanceEntryTypeDef]
-) -> CreateCloudFormationStackResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instances`:
+  `List`\[[InstanceEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instanceentrytypedef)\]
+  *(required)*
+
+Returns
+[CreateCloudFormationStackResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcloudformationstackresulttypedef).
 
 ### create_contact_method
 
 Type annotations for `boto3.client("lightsail").create_contact_method` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method]
+Boto3 documentation:
+[Lightsail.Client.create_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method)
 
-```python
-def create_contact_method(
-    self,
-    protocol: ContactProtocol,
-    contactEndpoint: str
-) -> CreateContactMethodResultTypeDef:
-    pass
-```
+Arguments:
+
+- `protocol`:
+  [ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)
+  *(required)*
+- `contactEndpoint`: `str` *(required)*
+
+Returns
+[CreateContactMethodResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontactmethodresulttypedef).
 
 ### create_container_service
 
-Type annotations for `boto3.client("lightsail").create_container_service` method.
+Type annotations for `boto3.client("lightsail").create_container_service`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service]
+Boto3 documentation:
+[Lightsail.Client.create_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service)
 
-```python
-def create_container_service(
-    self,
-    serviceName: str,
-    power: ContainerServicePowerName,
-    scale: int,
-    tags: List["TagTypeDef"] = None,
-    publicDomainNames: Dict[str, List[str]] = None,
-    deployment: ContainerServiceDeploymentRequestTypeDef = None
-) -> CreateContainerServiceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `power`:
+  [ContainerServicePowerName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicepowername)
+  *(required)*
+- `scale`: `int` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `deployment`:
+  [ContainerServiceDeploymentRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicedeploymentrequesttypedef)
+
+Returns
+[CreateContainerServiceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerserviceresulttypedef).
 
 ### create_container_service_deployment
 
-Type annotations for `boto3.client("lightsail").create_container_service_deployment` method.
+Type annotations for
+`boto3.client("lightsail").create_container_service_deployment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment]
+Boto3 documentation:
+[Lightsail.Client.create_container_service_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment)
 
-```python
-def create_container_service_deployment(
-    self,
-    serviceName: str,
-    containers: Dict[str, "ContainerTypeDef"] = None,
-    publicEndpoint: "EndpointRequestTypeDef" = None
-) -> CreateContainerServiceDeploymentResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `containers`: `Dict`\[`str`,
+  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containertypedef)\]
+- `publicEndpoint`:
+  [EndpointRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#endpointrequesttypedef)
+
+Returns
+[CreateContainerServiceDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerservicedeploymentresulttypedef).
 
 ### create_container_service_registry_login
 
-Type annotations for `boto3.client("lightsail").create_container_service_registry_login` method.
+Type annotations for
+`boto3.client("lightsail").create_container_service_registry_login` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login]
+Boto3 documentation:
+[Lightsail.Client.create_container_service_registry_login](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login)
 
-```python
-def create_container_service_registry_login(
-    self
-) -> CreateContainerServiceRegistryLoginResultTypeDef:
-    pass
-```
+Returns
+[CreateContainerServiceRegistryLoginResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerserviceregistryloginresulttypedef).
 
 ### create_disk
 
 Type annotations for `boto3.client("lightsail").create_disk` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk]
+Boto3 documentation:
+[Lightsail.Client.create_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk)
 
-```python
-def create_disk(
-    self,
-    diskName: str,
-    availabilityZone: str,
-    sizeInGb: int,
-    tags: List["TagTypeDef"] = None,
-    addOns: List[AddOnRequestTypeDef] = None
-) -> CreateDiskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+- `availabilityZone`: `str` *(required)*
+- `sizeInGb`: `int` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `addOns`:
+  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+
+Returns
+[CreateDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#creatediskresulttypedef).
 
 ### create_disk_from_snapshot
 
-Type annotations for `boto3.client("lightsail").create_disk_from_snapshot` method.
+Type annotations for `boto3.client("lightsail").create_disk_from_snapshot`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_disk_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot)
 
-```python
-def create_disk_from_snapshot(
-    self,
-    diskName: str,
-    availabilityZone: str,
-    sizeInGb: int,
-    diskSnapshotName: str = None,
-    tags: List["TagTypeDef"] = None,
-    addOns: List[AddOnRequestTypeDef] = None,
-    sourceDiskName: str = None,
-    restoreDate: str = None,
-    useLatestRestorableAutoSnapshot: bool = None
-) -> CreateDiskFromSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+- `availabilityZone`: `str` *(required)*
+- `sizeInGb`: `int` *(required)*
+- `diskSnapshotName`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `addOns`:
+  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+- `sourceDiskName`: `str`
+- `restoreDate`: `str`
+- `useLatestRestorableAutoSnapshot`: `bool`
+
+Returns
+[CreateDiskFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#creatediskfromsnapshotresulttypedef).
 
 ### create_disk_snapshot
 
 Type annotations for `boto3.client("lightsail").create_disk_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot)
 
-```python
-def create_disk_snapshot(
-    self,
-    diskSnapshotName: str,
-    diskName: str = None,
-    instanceName: str = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateDiskSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskSnapshotName`: `str` *(required)*
+- `diskName`: `str`
+- `instanceName`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdisksnapshotresulttypedef).
 
 ### create_distribution
 
 Type annotations for `boto3.client("lightsail").create_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution]
+Boto3 documentation:
+[Lightsail.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution)
 
-```python
-def create_distribution(
-    self,
-    distributionName: str,
-    origin: InputOriginTypeDef,
-    defaultCacheBehavior: "CacheBehaviorTypeDef",
-    bundleId: str,
-    cacheBehaviorSettings: "CacheSettingsTypeDef" = None,
-    cacheBehaviors: List["CacheBehaviorPerPathTypeDef"] = None,
-    ipAddressType: IpAddressType = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str` *(required)*
+- `origin`:
+  [InputOriginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#inputorigintypedef)
+  *(required)*
+- `defaultCacheBehavior`:
+  [CacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviortypedef)
+  *(required)*
+- `bundleId`: `str` *(required)*
+- `cacheBehaviorSettings`:
+  [CacheSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachesettingstypedef)
+- `cacheBehaviors`:
+  `List`\[[CacheBehaviorPerPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviorperpathtypedef)\]
+- `ipAddressType`:
+  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdistributionresulttypedef).
 
 ### create_domain
 
 Type annotations for `boto3.client("lightsail").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain]
+Boto3 documentation:
+[Lightsail.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    domainName: str,
-    tags: List["TagTypeDef"] = None
-) -> CreateDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdomainresulttypedef).
 
 ### create_domain_entry
 
 Type annotations for `boto3.client("lightsail").create_domain_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry]
+Boto3 documentation:
+[Lightsail.Client.create_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry)
 
-```python
-def create_domain_entry(
-    self,
-    domainName: str,
-    domainEntry: "DomainEntryTypeDef"
-) -> CreateDomainEntryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+- `domainEntry`:
+  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+  *(required)*
+
+Returns
+[CreateDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdomainentryresulttypedef).
 
 ### create_instance_snapshot
 
-Type annotations for `boto3.client("lightsail").create_instance_snapshot` method.
+Type annotations for `boto3.client("lightsail").create_instance_snapshot`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot)
 
-```python
-def create_instance_snapshot(
-    self,
-    instanceSnapshotName: str,
-    instanceName: str,
-    tags: List["TagTypeDef"] = None
-) -> CreateInstanceSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceSnapshotName`: `str` *(required)*
+- `instanceName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesnapshotresulttypedef).
 
 ### create_instances
 
 Type annotations for `boto3.client("lightsail").create_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances]
+Boto3 documentation:
+[Lightsail.Client.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances)
 
-```python
-def create_instances(
-    self,
-    instanceNames: List[str],
-    availabilityZone: str,
-    blueprintId: str,
-    bundleId: str,
-    customImageName: str = None,
-    userData: str = None,
-    keyPairName: str = None,
-    tags: List["TagTypeDef"] = None,
-    addOns: List[AddOnRequestTypeDef] = None,
-    ipAddressType: IpAddressType = None
-) -> CreateInstancesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceNames`: `List`\[`str`\] *(required)*
+- `availabilityZone`: `str` *(required)*
+- `blueprintId`: `str` *(required)*
+- `bundleId`: `str` *(required)*
+- `customImageName`: `str`
+- `userData`: `str`
+- `keyPairName`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `addOns`:
+  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+- `ipAddressType`:
+  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+
+Returns
+[CreateInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesresulttypedef).
 
 ### create_instances_from_snapshot
 
-Type annotations for `boto3.client("lightsail").create_instances_from_snapshot` method.
+Type annotations for `boto3.client("lightsail").create_instances_from_snapshot`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_instances_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot)
 
-```python
-def create_instances_from_snapshot(
-    self,
-    instanceNames: List[str],
-    availabilityZone: str,
-    bundleId: str,
-    attachedDiskMapping: Dict[str, List[DiskMapTypeDef]] = None,
-    instanceSnapshotName: str = None,
-    userData: str = None,
-    keyPairName: str = None,
-    tags: List["TagTypeDef"] = None,
-    addOns: List[AddOnRequestTypeDef] = None,
-    ipAddressType: IpAddressType = None,
-    sourceInstanceName: str = None,
-    restoreDate: str = None,
-    useLatestRestorableAutoSnapshot: bool = None
-) -> CreateInstancesFromSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceNames`: `List`\[`str`\] *(required)*
+- `availabilityZone`: `str` *(required)*
+- `bundleId`: `str` *(required)*
+- `attachedDiskMapping`: `Dict`\[`str`,
+  `List`\[[DiskMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#diskmaptypedef)\]\]
+- `instanceSnapshotName`: `str`
+- `userData`: `str`
+- `keyPairName`: `str`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `addOns`:
+  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+- `ipAddressType`:
+  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `sourceInstanceName`: `str`
+- `restoreDate`: `str`
+- `useLatestRestorableAutoSnapshot`: `bool`
+
+Returns
+[CreateInstancesFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesfromsnapshotresulttypedef).
 
 ### create_key_pair
 
 Type annotations for `boto3.client("lightsail").create_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair]
+Boto3 documentation:
+[Lightsail.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair)
 
-```python
-def create_key_pair(
-    self,
-    keyPairName: str,
-    tags: List["TagTypeDef"] = None
-) -> CreateKeyPairResultTypeDef:
-    pass
-```
+Arguments:
+
+- `keyPairName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createkeypairresulttypedef).
 
 ### create_load_balancer
 
 Type annotations for `boto3.client("lightsail").create_load_balancer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer]
+Boto3 documentation:
+[Lightsail.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer)
 
-```python
-def create_load_balancer(
-    self,
-    loadBalancerName: str,
-    instancePort: int,
-    healthCheckPath: str = None,
-    certificateName: str = None,
-    certificateDomainName: str = None,
-    certificateAlternativeNames: List[str] = None,
-    tags: List["TagTypeDef"] = None,
-    ipAddressType: IpAddressType = None
-) -> CreateLoadBalancerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `instancePort`: `int` *(required)*
+- `healthCheckPath`: `str`
+- `certificateName`: `str`
+- `certificateDomainName`: `str`
+- `certificateAlternativeNames`: `List`\[`str`\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `ipAddressType`:
+  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+
+Returns
+[CreateLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createloadbalancerresulttypedef).
 
 ### create_load_balancer_tls_certificate
 
-Type annotations for `boto3.client("lightsail").create_load_balancer_tls_certificate` method.
+Type annotations for
+`boto3.client("lightsail").create_load_balancer_tls_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate]
+Boto3 documentation:
+[Lightsail.Client.create_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate)
 
-```python
-def create_load_balancer_tls_certificate(
-    self,
-    loadBalancerName: str,
-    certificateName: str,
-    certificateDomainName: str,
-    certificateAlternativeNames: List[str] = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateLoadBalancerTlsCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `certificateName`: `str` *(required)*
+- `certificateDomainName`: `str` *(required)*
+- `certificateAlternativeNames`: `List`\[`str`\]
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createloadbalancertlscertificateresulttypedef).
 
 ### create_relational_database
 
-Type annotations for `boto3.client("lightsail").create_relational_database` method.
+Type annotations for `boto3.client("lightsail").create_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database]
+Boto3 documentation:
+[Lightsail.Client.create_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database)
 
-```python
-def create_relational_database(
-    self,
-    relationalDatabaseName: str,
-    relationalDatabaseBlueprintId: str,
-    relationalDatabaseBundleId: str,
-    masterDatabaseName: str,
-    masterUsername: str,
-    availabilityZone: str = None,
-    masterUserPassword: str = None,
-    preferredBackupWindow: str = None,
-    preferredMaintenanceWindow: str = None,
-    publiclyAccessible: bool = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `relationalDatabaseBlueprintId`: `str` *(required)*
+- `relationalDatabaseBundleId`: `str` *(required)*
+- `masterDatabaseName`: `str` *(required)*
+- `masterUsername`: `str` *(required)*
+- `availabilityZone`: `str`
+- `masterUserPassword`: `str`
+- `preferredBackupWindow`: `str`
+- `preferredMaintenanceWindow`: `str`
+- `publiclyAccessible`: `bool`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabaseresulttypedef).
 
 ### create_relational_database_from_snapshot
 
-Type annotations for `boto3.client("lightsail").create_relational_database_from_snapshot` method.
+Type annotations for
+`boto3.client("lightsail").create_relational_database_from_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_relational_database_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot)
 
-```python
-def create_relational_database_from_snapshot(
-    self,
-    relationalDatabaseName: str,
-    availabilityZone: str = None,
-    publiclyAccessible: bool = None,
-    relationalDatabaseSnapshotName: str = None,
-    relationalDatabaseBundleId: str = None,
-    sourceRelationalDatabaseName: str = None,
-    restoreTime: datetime = None,
-    useLatestRestorableTime: bool = None,
-    tags: List["TagTypeDef"] = None
-) -> CreateRelationalDatabaseFromSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `availabilityZone`: `str`
+- `publiclyAccessible`: `bool`
+- `relationalDatabaseSnapshotName`: `str`
+- `relationalDatabaseBundleId`: `str`
+- `sourceRelationalDatabaseName`: `str`
+- `restoreTime`: `datetime`
+- `useLatestRestorableTime`: `bool`
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRelationalDatabaseFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabasefromsnapshotresulttypedef).
 
 ### create_relational_database_snapshot
 
-Type annotations for `boto3.client("lightsail").create_relational_database_snapshot` method.
+Type annotations for
+`boto3.client("lightsail").create_relational_database_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot]
+Boto3 documentation:
+[Lightsail.Client.create_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot)
 
-```python
-def create_relational_database_snapshot(
-    self,
-    relationalDatabaseName: str,
-    relationalDatabaseSnapshotName: str,
-    tags: List["TagTypeDef"] = None
-) -> CreateRelationalDatabaseSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `relationalDatabaseSnapshotName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabasesnapshotresulttypedef).
 
 ### delete_alarm
 
 Type annotations for `boto3.client("lightsail").delete_alarm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm]
+Boto3 documentation:
+[Lightsail.Client.delete_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm)
 
-```python
-def delete_alarm(
-    self,
-    alarmName: str
-) -> DeleteAlarmResultTypeDef:
-    pass
-```
+Arguments:
+
+- `alarmName`: `str` *(required)*
+
+Returns
+[DeleteAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletealarmresulttypedef).
 
 ### delete_auto_snapshot
 
 Type annotations for `boto3.client("lightsail").delete_auto_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot]
+Boto3 documentation:
+[Lightsail.Client.delete_auto_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot)
 
-```python
-def delete_auto_snapshot(
-    self,
-    resourceName: str,
-    date: str
-) -> DeleteAutoSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+- `date`: `str` *(required)*
+
+Returns
+[DeleteAutoSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteautosnapshotresulttypedef).
 
 ### delete_certificate
 
 Type annotations for `boto3.client("lightsail").delete_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate]
+Boto3 documentation:
+[Lightsail.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate)
 
-```python
-def delete_certificate(
-    self,
-    certificateName: str
-) -> DeleteCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `certificateName`: `str` *(required)*
+
+Returns
+[DeleteCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletecertificateresulttypedef).
 
 ### delete_contact_method
 
 Type annotations for `boto3.client("lightsail").delete_contact_method` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method]
+Boto3 documentation:
+[Lightsail.Client.delete_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method)
 
-```python
-def delete_contact_method(
-    self,
-    protocol: ContactProtocol
-) -> DeleteContactMethodResultTypeDef:
-    pass
-```
+Arguments:
+
+- `protocol`:
+  [ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)
+  *(required)*
+
+Returns
+[DeleteContactMethodResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletecontactmethodresulttypedef).
 
 ### delete_container_image
 
 Type annotations for `boto3.client("lightsail").delete_container_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image]
+Boto3 documentation:
+[Lightsail.Client.delete_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image)
 
-```python
-def delete_container_image(
-    self,
-    serviceName: str,
-    image: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `image`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_container_service
 
-Type annotations for `boto3.client("lightsail").delete_container_service` method.
+Type annotations for `boto3.client("lightsail").delete_container_service`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service]
+Boto3 documentation:
+[Lightsail.Client.delete_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service)
 
-```python
-def delete_container_service(
-    self,
-    serviceName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_disk
 
 Type annotations for `boto3.client("lightsail").delete_disk` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk]
+Boto3 documentation:
+[Lightsail.Client.delete_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk)
 
-```python
-def delete_disk(
-    self,
-    diskName: str,
-    forceDeleteAddOns: bool = None
-) -> DeleteDiskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+- `forceDeleteAddOns`: `bool`
+
+Returns
+[DeleteDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletediskresulttypedef).
 
 ### delete_disk_snapshot
 
 Type annotations for `boto3.client("lightsail").delete_disk_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot]
+Boto3 documentation:
+[Lightsail.Client.delete_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot)
 
-```python
-def delete_disk_snapshot(
-    self,
-    diskSnapshotName: str
-) -> DeleteDiskSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskSnapshotName`: `str` *(required)*
+
+Returns
+[DeleteDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedisksnapshotresulttypedef).
 
 ### delete_distribution
 
 Type annotations for `boto3.client("lightsail").delete_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution]
+Boto3 documentation:
+[Lightsail.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution)
 
-```python
-def delete_distribution(
-    self,
-    distributionName: str = None
-) -> DeleteDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str`
+
+Returns
+[DeleteDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedistributionresulttypedef).
 
 ### delete_domain
 
 Type annotations for `boto3.client("lightsail").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain]
+Boto3 documentation:
+[Lightsail.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    domainName: str
-) -> DeleteDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns
+[DeleteDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedomainresulttypedef).
 
 ### delete_domain_entry
 
 Type annotations for `boto3.client("lightsail").delete_domain_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry]
+Boto3 documentation:
+[Lightsail.Client.delete_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry)
 
-```python
-def delete_domain_entry(
-    self,
-    domainName: str,
-    domainEntry: "DomainEntryTypeDef"
-) -> DeleteDomainEntryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+- `domainEntry`:
+  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+  *(required)*
+
+Returns
+[DeleteDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedomainentryresulttypedef).
 
 ### delete_instance
 
 Type annotations for `boto3.client("lightsail").delete_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance]
+Boto3 documentation:
+[Lightsail.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance)
 
-```python
-def delete_instance(
-    self,
-    instanceName: str,
-    forceDeleteAddOns: bool = None
-) -> DeleteInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+- `forceDeleteAddOns`: `bool`
+
+Returns
+[DeleteInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteinstanceresulttypedef).
 
 ### delete_instance_snapshot
 
-Type annotations for `boto3.client("lightsail").delete_instance_snapshot` method.
+Type annotations for `boto3.client("lightsail").delete_instance_snapshot`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot]
+Boto3 documentation:
+[Lightsail.Client.delete_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot)
 
-```python
-def delete_instance_snapshot(
-    self,
-    instanceSnapshotName: str
-) -> DeleteInstanceSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceSnapshotName`: `str` *(required)*
+
+Returns
+[DeleteInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteinstancesnapshotresulttypedef).
 
 ### delete_key_pair
 
 Type annotations for `boto3.client("lightsail").delete_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair]
+Boto3 documentation:
+[Lightsail.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair)
 
-```python
-def delete_key_pair(
-    self,
-    keyPairName: str
-) -> DeleteKeyPairResultTypeDef:
-    pass
-```
+Arguments:
+
+- `keyPairName`: `str` *(required)*
+
+Returns
+[DeleteKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletekeypairresulttypedef).
 
 ### delete_known_host_keys
 
 Type annotations for `boto3.client("lightsail").delete_known_host_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys]
+Boto3 documentation:
+[Lightsail.Client.delete_known_host_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys)
 
-```python
-def delete_known_host_keys(
-    self,
-    instanceName: str
-) -> DeleteKnownHostKeysResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[DeleteKnownHostKeysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteknownhostkeysresulttypedef).
 
 ### delete_load_balancer
 
 Type annotations for `boto3.client("lightsail").delete_load_balancer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer]
+Boto3 documentation:
+[Lightsail.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer)
 
-```python
-def delete_load_balancer(
-    self,
-    loadBalancerName: str
-) -> DeleteLoadBalancerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+
+Returns
+[DeleteLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteloadbalancerresulttypedef).
 
 ### delete_load_balancer_tls_certificate
 
-Type annotations for `boto3.client("lightsail").delete_load_balancer_tls_certificate` method.
+Type annotations for
+`boto3.client("lightsail").delete_load_balancer_tls_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate]
+Boto3 documentation:
+[Lightsail.Client.delete_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate)
 
-```python
-def delete_load_balancer_tls_certificate(
-    self,
-    loadBalancerName: str,
-    certificateName: str,
-    force: bool = None
-) -> DeleteLoadBalancerTlsCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `certificateName`: `str` *(required)*
+- `force`: `bool`
+
+Returns
+[DeleteLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteloadbalancertlscertificateresulttypedef).
 
 ### delete_relational_database
 
-Type annotations for `boto3.client("lightsail").delete_relational_database` method.
+Type annotations for `boto3.client("lightsail").delete_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database]
+Boto3 documentation:
+[Lightsail.Client.delete_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database)
 
-```python
-def delete_relational_database(
-    self,
-    relationalDatabaseName: str,
-    skipFinalSnapshot: bool = None,
-    finalRelationalDatabaseSnapshotName: str = None
-) -> DeleteRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `skipFinalSnapshot`: `bool`
+- `finalRelationalDatabaseSnapshotName`: `str`
+
+Returns
+[DeleteRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleterelationaldatabaseresulttypedef).
 
 ### delete_relational_database_snapshot
 
-Type annotations for `boto3.client("lightsail").delete_relational_database_snapshot` method.
+Type annotations for
+`boto3.client("lightsail").delete_relational_database_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot]
+Boto3 documentation:
+[Lightsail.Client.delete_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot)
 
-```python
-def delete_relational_database_snapshot(
-    self,
-    relationalDatabaseSnapshotName: str
-) -> DeleteRelationalDatabaseSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseSnapshotName`: `str` *(required)*
+
+Returns
+[DeleteRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleterelationaldatabasesnapshotresulttypedef).
 
 ### detach_certificate_from_distribution
 
-Type annotations for `boto3.client("lightsail").detach_certificate_from_distribution` method.
+Type annotations for
+`boto3.client("lightsail").detach_certificate_from_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution]
+Boto3 documentation:
+[Lightsail.Client.detach_certificate_from_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution)
 
-```python
-def detach_certificate_from_distribution(
-    self,
-    distributionName: str
-) -> DetachCertificateFromDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str` *(required)*
+
+Returns
+[DetachCertificateFromDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachcertificatefromdistributionresulttypedef).
 
 ### detach_disk
 
 Type annotations for `boto3.client("lightsail").detach_disk` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk]
+Boto3 documentation:
+[Lightsail.Client.detach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk)
 
-```python
-def detach_disk(
-    self,
-    diskName: str
-) -> DetachDiskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+
+Returns
+[DetachDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachdiskresulttypedef).
 
 ### detach_instances_from_load_balancer
 
-Type annotations for `boto3.client("lightsail").detach_instances_from_load_balancer` method.
+Type annotations for
+`boto3.client("lightsail").detach_instances_from_load_balancer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer]
+Boto3 documentation:
+[Lightsail.Client.detach_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer)
 
-```python
-def detach_instances_from_load_balancer(
-    self,
-    loadBalancerName: str,
-    instanceNames: List[str]
-) -> DetachInstancesFromLoadBalancerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `instanceNames`: `List`\[`str`\] *(required)*
+
+Returns
+[DetachInstancesFromLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachinstancesfromloadbalancerresulttypedef).
 
 ### detach_static_ip
 
 Type annotations for `boto3.client("lightsail").detach_static_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip]
+Boto3 documentation:
+[Lightsail.Client.detach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip)
 
-```python
-def detach_static_ip(
-    self,
-    staticIpName: str
-) -> DetachStaticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `staticIpName`: `str` *(required)*
+
+Returns
+[DetachStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachstaticipresulttypedef).
 
 ### disable_add_on
 
 Type annotations for `boto3.client("lightsail").disable_add_on` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on]
+Boto3 documentation:
+[Lightsail.Client.disable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on)
 
-```python
-def disable_add_on(
-    self,
-    addOnType: Literal['AutoSnapshot'],
-    resourceName: str
-) -> DisableAddOnResultTypeDef:
-    pass
-```
+Arguments:
+
+- `addOnType`: `Literal['AutoSnapshot']` *(required)*
+- `resourceName`: `str` *(required)*
+
+Returns
+[DisableAddOnResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disableaddonresulttypedef).
 
 ### download_default_key_pair
 
-Type annotations for `boto3.client("lightsail").download_default_key_pair` method.
+Type annotations for `boto3.client("lightsail").download_default_key_pair`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair]
+Boto3 documentation:
+[Lightsail.Client.download_default_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair)
 
-```python
-def download_default_key_pair(
-    self
-) -> DownloadDefaultKeyPairResultTypeDef:
-    pass
-```
+Returns
+[DownloadDefaultKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#downloaddefaultkeypairresulttypedef).
 
 ### enable_add_on
 
 Type annotations for `boto3.client("lightsail").enable_add_on` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on]
+Boto3 documentation:
+[Lightsail.Client.enable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on)
 
-```python
-def enable_add_on(
-    self,
-    resourceName: str,
-    addOnRequest: AddOnRequestTypeDef
-) -> EnableAddOnResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+- `addOnRequest`:
+  [AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)
+  *(required)*
+
+Returns
+[EnableAddOnResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#enableaddonresulttypedef).
 
 ### export_snapshot
 
 Type annotations for `boto3.client("lightsail").export_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot]
+Boto3 documentation:
+[Lightsail.Client.export_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot)
 
-```python
-def export_snapshot(
-    self,
-    sourceSnapshotName: str
-) -> ExportSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceSnapshotName`: `str` *(required)*
+
+Returns
+[ExportSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#exportsnapshotresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("lightsail").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url]
+Boto3 documentation:
+[Lightsail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_active_names
 
 Type annotations for `boto3.client("lightsail").get_active_names` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names]
+Boto3 documentation:
+[Lightsail.Client.get_active_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names)
 
-```python
-def get_active_names(
-    self,
-    pageToken: str = None
-) -> GetActiveNamesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetActiveNamesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getactivenamesresulttypedef).
 
 ### get_alarms
 
 Type annotations for `boto3.client("lightsail").get_alarms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms]
+Boto3 documentation:
+[Lightsail.Client.get_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms)
 
-```python
-def get_alarms(
-    self,
-    alarmName: str = None,
-    pageToken: str = None,
-    monitoredResourceName: str = None
-) -> GetAlarmsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `alarmName`: `str`
+- `pageToken`: `str`
+- `monitoredResourceName`: `str`
+
+Returns
+[GetAlarmsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getalarmsresulttypedef).
 
 ### get_auto_snapshots
 
 Type annotations for `boto3.client("lightsail").get_auto_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots]
+Boto3 documentation:
+[Lightsail.Client.get_auto_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots)
 
-```python
-def get_auto_snapshots(
-    self,
-    resourceName: str
-) -> GetAutoSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+
+Returns
+[GetAutoSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getautosnapshotsresulttypedef).
 
 ### get_blueprints
 
 Type annotations for `boto3.client("lightsail").get_blueprints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints]
+Boto3 documentation:
+[Lightsail.Client.get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints)
 
-```python
-def get_blueprints(
-    self,
-    includeInactive: bool = None,
-    pageToken: str = None
-) -> GetBlueprintsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `includeInactive`: `bool`
+- `pageToken`: `str`
+
+Returns
+[GetBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getblueprintsresulttypedef).
 
 ### get_bundles
 
 Type annotations for `boto3.client("lightsail").get_bundles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles]
+Boto3 documentation:
+[Lightsail.Client.get_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles)
 
-```python
-def get_bundles(
-    self,
-    includeInactive: bool = None,
-    pageToken: str = None
-) -> GetBundlesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `includeInactive`: `bool`
+- `pageToken`: `str`
+
+Returns
+[GetBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getbundlesresulttypedef).
 
 ### get_certificates
 
 Type annotations for `boto3.client("lightsail").get_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates]
+Boto3 documentation:
+[Lightsail.Client.get_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates)
 
-```python
-def get_certificates(
-    self,
-    certificateStatuses: List[CertificateStatus] = None,
-    includeCertificateDetails: bool = None,
-    certificateName: str = None
-) -> GetCertificatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `certificateStatuses`:
+  `List`\[[CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#certificatestatus)\]
+- `includeCertificateDetails`: `bool`
+- `certificateName`: `str`
+
+Returns
+[GetCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcertificatesresulttypedef).
 
 ### get_cloud_formation_stack_records
 
-Type annotations for `boto3.client("lightsail").get_cloud_formation_stack_records` method.
+Type annotations for
+`boto3.client("lightsail").get_cloud_formation_stack_records` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records]
+Boto3 documentation:
+[Lightsail.Client.get_cloud_formation_stack_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records)
 
-```python
-def get_cloud_formation_stack_records(
-    self,
-    pageToken: str = None
-) -> GetCloudFormationStackRecordsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetCloudFormationStackRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcloudformationstackrecordsresulttypedef).
 
 ### get_contact_methods
 
 Type annotations for `boto3.client("lightsail").get_contact_methods` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods]
+Boto3 documentation:
+[Lightsail.Client.get_contact_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods)
 
-```python
-def get_contact_methods(
-    self,
-    protocols: List[ContactProtocol] = None
-) -> GetContactMethodsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `protocols`:
+  `List`\[[ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)\]
+
+Returns
+[GetContactMethodsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontactmethodsresulttypedef).
 
 ### get_container_api_metadata
 
-Type annotations for `boto3.client("lightsail").get_container_api_metadata` method.
+Type annotations for `boto3.client("lightsail").get_container_api_metadata`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata]
+Boto3 documentation:
+[Lightsail.Client.get_container_api_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata)
 
-```python
-def get_container_api_metadata(
-    self
-) -> GetContainerAPIMetadataResultTypeDef:
-    pass
-```
+Returns
+[GetContainerAPIMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerapimetadataresulttypedef).
 
 ### get_container_images
 
 Type annotations for `boto3.client("lightsail").get_container_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images]
+Boto3 documentation:
+[Lightsail.Client.get_container_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images)
 
-```python
-def get_container_images(
-    self,
-    serviceName: str
-) -> GetContainerImagesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+
+Returns
+[GetContainerImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerimagesresulttypedef).
 
 ### get_container_log
 
 Type annotations for `boto3.client("lightsail").get_container_log` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log]
+Boto3 documentation:
+[Lightsail.Client.get_container_log](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log)
 
-```python
-def get_container_log(
-    self,
-    serviceName: str,
-    containerName: str,
-    startTime: datetime = None,
-    endTime: datetime = None,
-    filterPattern: str = None,
-    pageToken: str = None
-) -> GetContainerLogResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `containerName`: `str` *(required)*
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+- `filterPattern`: `str`
+- `pageToken`: `str`
+
+Returns
+[GetContainerLogResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerlogresulttypedef).
 
 ### get_container_service_deployments
 
-Type annotations for `boto3.client("lightsail").get_container_service_deployments` method.
+Type annotations for
+`boto3.client("lightsail").get_container_service_deployments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments]
+Boto3 documentation:
+[Lightsail.Client.get_container_service_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments)
 
-```python
-def get_container_service_deployments(
-    self,
-    serviceName: str
-) -> GetContainerServiceDeploymentsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+
+Returns
+[GetContainerServiceDeploymentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicedeploymentsresulttypedef).
 
 ### get_container_service_metric_data
 
-Type annotations for `boto3.client("lightsail").get_container_service_metric_data` method.
+Type annotations for
+`boto3.client("lightsail").get_container_service_metric_data` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data]
+Boto3 documentation:
+[Lightsail.Client.get_container_service_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data)
 
-```python
-def get_container_service_metric_data(
-    self,
-    serviceName: str,
-    metricName: ContainerServiceMetricName,
-    startTime: datetime,
-    endTime: datetime,
-    period: int,
-    statistics: List[MetricStatistic]
-) -> GetContainerServiceMetricDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `metricName`:
+  [ContainerServiceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicemetricname)
+  *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `period`: `int` *(required)*
+- `statistics`:
+  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+  *(required)*
+
+Returns
+[GetContainerServiceMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicemetricdataresulttypedef).
 
 ### get_container_service_powers
 
-Type annotations for `boto3.client("lightsail").get_container_service_powers` method.
+Type annotations for `boto3.client("lightsail").get_container_service_powers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers]
+Boto3 documentation:
+[Lightsail.Client.get_container_service_powers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers)
 
-```python
-def get_container_service_powers(
-    self
-) -> GetContainerServicePowersResultTypeDef:
-    pass
-```
+Returns
+[GetContainerServicePowersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicepowersresulttypedef).
 
 ### get_container_services
 
 Type annotations for `boto3.client("lightsail").get_container_services` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services]
+Boto3 documentation:
+[Lightsail.Client.get_container_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services)
 
-```python
-def get_container_services(
-    self,
-    serviceName: str = None
-) -> ContainerServicesListResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str`
+
+Returns
+[ContainerServicesListResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerserviceslistresulttypedef).
 
 ### get_disk
 
 Type annotations for `boto3.client("lightsail").get_disk` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk]
+Boto3 documentation:
+[Lightsail.Client.get_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk)
 
-```python
-def get_disk(
-    self,
-    diskName: str
-) -> GetDiskResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskName`: `str` *(required)*
+
+Returns
+[GetDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdiskresulttypedef).
 
 ### get_disk_snapshot
 
 Type annotations for `boto3.client("lightsail").get_disk_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot]
+Boto3 documentation:
+[Lightsail.Client.get_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot)
 
-```python
-def get_disk_snapshot(
-    self,
-    diskSnapshotName: str
-) -> GetDiskSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `diskSnapshotName`: `str` *(required)*
+
+Returns
+[GetDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksnapshotresulttypedef).
 
 ### get_disk_snapshots
 
 Type annotations for `boto3.client("lightsail").get_disk_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots]
+Boto3 documentation:
+[Lightsail.Client.get_disk_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots)
 
-```python
-def get_disk_snapshots(
-    self,
-    pageToken: str = None
-) -> GetDiskSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetDiskSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksnapshotsresulttypedef).
 
 ### get_disks
 
 Type annotations for `boto3.client("lightsail").get_disks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks]
+Boto3 documentation:
+[Lightsail.Client.get_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks)
 
-```python
-def get_disks(
-    self,
-    pageToken: str = None
-) -> GetDisksResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetDisksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksresulttypedef).
 
 ### get_distribution_bundles
 
-Type annotations for `boto3.client("lightsail").get_distribution_bundles` method.
+Type annotations for `boto3.client("lightsail").get_distribution_bundles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles]
+Boto3 documentation:
+[Lightsail.Client.get_distribution_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles)
 
-```python
-def get_distribution_bundles(
-    self
-) -> GetDistributionBundlesResultTypeDef:
-    pass
-```
+Returns
+[GetDistributionBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionbundlesresulttypedef).
 
 ### get_distribution_latest_cache_reset
 
-Type annotations for `boto3.client("lightsail").get_distribution_latest_cache_reset` method.
+Type annotations for
+`boto3.client("lightsail").get_distribution_latest_cache_reset` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset]
+Boto3 documentation:
+[Lightsail.Client.get_distribution_latest_cache_reset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset)
 
-```python
-def get_distribution_latest_cache_reset(
-    self,
-    distributionName: str = None
-) -> GetDistributionLatestCacheResetResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str`
+
+Returns
+[GetDistributionLatestCacheResetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionlatestcacheresetresulttypedef).
 
 ### get_distribution_metric_data
 
-Type annotations for `boto3.client("lightsail").get_distribution_metric_data` method.
+Type annotations for `boto3.client("lightsail").get_distribution_metric_data`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data]
+Boto3 documentation:
+[Lightsail.Client.get_distribution_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data)
 
-```python
-def get_distribution_metric_data(
-    self,
-    distributionName: str,
-    metricName: DistributionMetricName,
-    startTime: datetime,
-    endTime: datetime,
-    period: int,
-    unit: MetricUnit,
-    statistics: List[MetricStatistic]
-) -> GetDistributionMetricDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str` *(required)*
+- `metricName`:
+  [DistributionMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#distributionmetricname)
+  *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `period`: `int` *(required)*
+- `unit`:
+  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
+  *(required)*
+- `statistics`:
+  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+  *(required)*
+
+Returns
+[GetDistributionMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionmetricdataresulttypedef).
 
 ### get_distributions
 
 Type annotations for `boto3.client("lightsail").get_distributions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions]
+Boto3 documentation:
+[Lightsail.Client.get_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions)
 
-```python
-def get_distributions(
-    self,
-    distributionName: str = None,
-    pageToken: str = None
-) -> GetDistributionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str`
+- `pageToken`: `str`
+
+Returns
+[GetDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionsresulttypedef).
 
 ### get_domain
 
 Type annotations for `boto3.client("lightsail").get_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain]
+Boto3 documentation:
+[Lightsail.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain)
 
-```python
-def get_domain(
-    self,
-    domainName: str
-) -> GetDomainResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+
+Returns
+[GetDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdomainresulttypedef).
 
 ### get_domains
 
 Type annotations for `boto3.client("lightsail").get_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains]
+Boto3 documentation:
+[Lightsail.Client.get_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains)
 
-```python
-def get_domains(
-    self,
-    pageToken: str = None
-) -> GetDomainsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdomainsresulttypedef).
 
 ### get_export_snapshot_records
 
-Type annotations for `boto3.client("lightsail").get_export_snapshot_records` method.
+Type annotations for `boto3.client("lightsail").get_export_snapshot_records`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records]
+Boto3 documentation:
+[Lightsail.Client.get_export_snapshot_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records)
 
-```python
-def get_export_snapshot_records(
-    self,
-    pageToken: str = None
-) -> GetExportSnapshotRecordsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetExportSnapshotRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getexportsnapshotrecordsresulttypedef).
 
 ### get_instance
 
 Type annotations for `boto3.client("lightsail").get_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance]
+Boto3 documentation:
+[Lightsail.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance)
 
-```python
-def get_instance(
-    self,
-    instanceName: str
-) -> GetInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[GetInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceresulttypedef).
 
 ### get_instance_access_details
 
-Type annotations for `boto3.client("lightsail").get_instance_access_details` method.
+Type annotations for `boto3.client("lightsail").get_instance_access_details`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details]
+Boto3 documentation:
+[Lightsail.Client.get_instance_access_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details)
 
-```python
-def get_instance_access_details(
-    self,
-    instanceName: str,
-    protocol: InstanceAccessProtocol = None
-) -> GetInstanceAccessDetailsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+- `protocol`:
+  [InstanceAccessProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instanceaccessprotocol)
+
+Returns
+[GetInstanceAccessDetailsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceaccessdetailsresulttypedef).
 
 ### get_instance_metric_data
 
-Type annotations for `boto3.client("lightsail").get_instance_metric_data` method.
+Type annotations for `boto3.client("lightsail").get_instance_metric_data`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data]
+Boto3 documentation:
+[Lightsail.Client.get_instance_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data)
 
-```python
-def get_instance_metric_data(
-    self,
-    instanceName: str,
-    metricName: InstanceMetricName,
-    period: int,
-    startTime: datetime,
-    endTime: datetime,
-    unit: MetricUnit,
-    statistics: List[MetricStatistic]
-) -> GetInstanceMetricDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+- `metricName`:
+  [InstanceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancemetricname)
+  *(required)*
+- `period`: `int` *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `unit`:
+  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
+  *(required)*
+- `statistics`:
+  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+  *(required)*
+
+Returns
+[GetInstanceMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancemetricdataresulttypedef).
 
 ### get_instance_port_states
 
-Type annotations for `boto3.client("lightsail").get_instance_port_states` method.
+Type annotations for `boto3.client("lightsail").get_instance_port_states`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states]
+Boto3 documentation:
+[Lightsail.Client.get_instance_port_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states)
 
-```python
-def get_instance_port_states(
-    self,
-    instanceName: str
-) -> GetInstancePortStatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[GetInstancePortStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceportstatesresulttypedef).
 
 ### get_instance_snapshot
 
 Type annotations for `boto3.client("lightsail").get_instance_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot]
+Boto3 documentation:
+[Lightsail.Client.get_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot)
 
-```python
-def get_instance_snapshot(
-    self,
-    instanceSnapshotName: str
-) -> GetInstanceSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceSnapshotName`: `str` *(required)*
+
+Returns
+[GetInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesnapshotresulttypedef).
 
 ### get_instance_snapshots
 
 Type annotations for `boto3.client("lightsail").get_instance_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots]
+Boto3 documentation:
+[Lightsail.Client.get_instance_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots)
 
-```python
-def get_instance_snapshots(
-    self,
-    pageToken: str = None
-) -> GetInstanceSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetInstanceSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesnapshotsresulttypedef).
 
 ### get_instance_state
 
 Type annotations for `boto3.client("lightsail").get_instance_state` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state]
+Boto3 documentation:
+[Lightsail.Client.get_instance_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state)
 
-```python
-def get_instance_state(
-    self,
-    instanceName: str
-) -> GetInstanceStateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[GetInstanceStateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancestateresulttypedef).
 
 ### get_instances
 
 Type annotations for `boto3.client("lightsail").get_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances]
+Boto3 documentation:
+[Lightsail.Client.get_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances)
 
-```python
-def get_instances(
-    self,
-    pageToken: str = None
-) -> GetInstancesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesresulttypedef).
 
 ### get_key_pair
 
 Type annotations for `boto3.client("lightsail").get_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair]
+Boto3 documentation:
+[Lightsail.Client.get_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair)
 
-```python
-def get_key_pair(
-    self,
-    keyPairName: str
-) -> GetKeyPairResultTypeDef:
-    pass
-```
+Arguments:
+
+- `keyPairName`: `str` *(required)*
+
+Returns
+[GetKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getkeypairresulttypedef).
 
 ### get_key_pairs
 
 Type annotations for `boto3.client("lightsail").get_key_pairs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs]
+Boto3 documentation:
+[Lightsail.Client.get_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs)
 
-```python
-def get_key_pairs(
-    self,
-    pageToken: str = None
-) -> GetKeyPairsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetKeyPairsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getkeypairsresulttypedef).
 
 ### get_load_balancer
 
 Type annotations for `boto3.client("lightsail").get_load_balancer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer]
+Boto3 documentation:
+[Lightsail.Client.get_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer)
 
-```python
-def get_load_balancer(
-    self,
-    loadBalancerName: str
-) -> GetLoadBalancerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+
+Returns
+[GetLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancerresulttypedef).
 
 ### get_load_balancer_metric_data
 
-Type annotations for `boto3.client("lightsail").get_load_balancer_metric_data` method.
+Type annotations for `boto3.client("lightsail").get_load_balancer_metric_data`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data]
+Boto3 documentation:
+[Lightsail.Client.get_load_balancer_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data)
 
-```python
-def get_load_balancer_metric_data(
-    self,
-    loadBalancerName: str,
-    metricName: LoadBalancerMetricName,
-    period: int,
-    startTime: datetime,
-    endTime: datetime,
-    unit: MetricUnit,
-    statistics: List[MetricStatistic]
-) -> GetLoadBalancerMetricDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `metricName`:
+  [LoadBalancerMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancermetricname)
+  *(required)*
+- `period`: `int` *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `unit`:
+  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
+  *(required)*
+- `statistics`:
+  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+  *(required)*
+
+Returns
+[GetLoadBalancerMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancermetricdataresulttypedef).
 
 ### get_load_balancer_tls_certificates
 
-Type annotations for `boto3.client("lightsail").get_load_balancer_tls_certificates` method.
+Type annotations for
+`boto3.client("lightsail").get_load_balancer_tls_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates]
+Boto3 documentation:
+[Lightsail.Client.get_load_balancer_tls_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates)
 
-```python
-def get_load_balancer_tls_certificates(
-    self,
-    loadBalancerName: str
-) -> GetLoadBalancerTlsCertificatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+
+Returns
+[GetLoadBalancerTlsCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancertlscertificatesresulttypedef).
 
 ### get_load_balancers
 
 Type annotations for `boto3.client("lightsail").get_load_balancers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers]
+Boto3 documentation:
+[Lightsail.Client.get_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers)
 
-```python
-def get_load_balancers(
-    self,
-    pageToken: str = None
-) -> GetLoadBalancersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetLoadBalancersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancersresulttypedef).
 
 ### get_operation
 
 Type annotations for `boto3.client("lightsail").get_operation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation]
+Boto3 documentation:
+[Lightsail.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation)
 
-```python
-def get_operation(
-    self,
-    operationId: str
-) -> GetOperationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `operationId`: `str` *(required)*
+
+Returns
+[GetOperationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationresulttypedef).
 
 ### get_operations
 
 Type annotations for `boto3.client("lightsail").get_operations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations]
+Boto3 documentation:
+[Lightsail.Client.get_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations)
 
-```python
-def get_operations(
-    self,
-    pageToken: str = None
-) -> GetOperationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetOperationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationsresulttypedef).
 
 ### get_operations_for_resource
 
-Type annotations for `boto3.client("lightsail").get_operations_for_resource` method.
+Type annotations for `boto3.client("lightsail").get_operations_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource]
+Boto3 documentation:
+[Lightsail.Client.get_operations_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource)
 
-```python
-def get_operations_for_resource(
-    self,
-    resourceName: str,
-    pageToken: str = None
-) -> GetOperationsForResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+- `pageToken`: `str`
+
+Returns
+[GetOperationsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationsforresourceresulttypedef).
 
 ### get_regions
 
 Type annotations for `boto3.client("lightsail").get_regions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions]
+Boto3 documentation:
+[Lightsail.Client.get_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions)
 
-```python
-def get_regions(
-    self,
-    includeAvailabilityZones: bool = None,
-    includeRelationalDatabaseAvailabilityZones: bool = None
-) -> GetRegionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `includeAvailabilityZones`: `bool`
+- `includeRelationalDatabaseAvailabilityZones`: `bool`
+
+Returns
+[GetRegionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getregionsresulttypedef).
 
 ### get_relational_database
 
-Type annotations for `boto3.client("lightsail").get_relational_database` method.
+Type annotations for `boto3.client("lightsail").get_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database)
 
-```python
-def get_relational_database(
-    self,
-    relationalDatabaseName: str
-) -> GetRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+
+Returns
+[GetRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseresulttypedef).
 
 ### get_relational_database_blueprints
 
-Type annotations for `boto3.client("lightsail").get_relational_database_blueprints` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_blueprints` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints)
 
-```python
-def get_relational_database_blueprints(
-    self,
-    pageToken: str = None
-) -> GetRelationalDatabaseBlueprintsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseblueprintsresulttypedef).
 
 ### get_relational_database_bundles
 
-Type annotations for `boto3.client("lightsail").get_relational_database_bundles` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_bundles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles)
 
-```python
-def get_relational_database_bundles(
-    self,
-    pageToken: str = None
-) -> GetRelationalDatabaseBundlesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasebundlesresulttypedef).
 
 ### get_relational_database_events
 
-Type annotations for `boto3.client("lightsail").get_relational_database_events` method.
+Type annotations for `boto3.client("lightsail").get_relational_database_events`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events)
 
-```python
-def get_relational_database_events(
-    self,
-    relationalDatabaseName: str,
-    durationInMinutes: int = None,
-    pageToken: str = None
-) -> GetRelationalDatabaseEventsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `durationInMinutes`: `int`
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseeventsresulttypedef).
 
 ### get_relational_database_log_events
 
-Type annotations for `boto3.client("lightsail").get_relational_database_log_events` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_log_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events)
 
-```python
-def get_relational_database_log_events(
-    self,
-    relationalDatabaseName: str,
-    logStreamName: str,
-    startTime: datetime = None,
-    endTime: datetime = None,
-    startFromHead: bool = None,
-    pageToken: str = None
-) -> GetRelationalDatabaseLogEventsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `logStreamName`: `str` *(required)*
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+- `startFromHead`: `bool`
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseLogEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaselogeventsresulttypedef).
 
 ### get_relational_database_log_streams
 
-Type annotations for `boto3.client("lightsail").get_relational_database_log_streams` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_log_streams` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams)
 
-```python
-def get_relational_database_log_streams(
-    self,
-    relationalDatabaseName: str
-) -> GetRelationalDatabaseLogStreamsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+
+Returns
+[GetRelationalDatabaseLogStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaselogstreamsresulttypedef).
 
 ### get_relational_database_master_user_password
 
-Type annotations for `boto3.client("lightsail").get_relational_database_master_user_password` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_master_user_password`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_master_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password)
 
-```python
-def get_relational_database_master_user_password(
-    self,
-    relationalDatabaseName: str,
-    passwordVersion: RelationalDatabasePasswordVersion = None
-) -> GetRelationalDatabaseMasterUserPasswordResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `passwordVersion`:
+  [RelationalDatabasePasswordVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#relationaldatabasepasswordversion)
+
+Returns
+[GetRelationalDatabaseMasterUserPasswordResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasemasteruserpasswordresulttypedef).
 
 ### get_relational_database_metric_data
 
-Type annotations for `boto3.client("lightsail").get_relational_database_metric_data` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_metric_data` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data)
 
-```python
-def get_relational_database_metric_data(
-    self,
-    relationalDatabaseName: str,
-    metricName: RelationalDatabaseMetricName,
-    period: int,
-    startTime: datetime,
-    endTime: datetime,
-    unit: MetricUnit,
-    statistics: List[MetricStatistic]
-) -> GetRelationalDatabaseMetricDataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `metricName`:
+  [RelationalDatabaseMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#relationaldatabasemetricname)
+  *(required)*
+- `period`: `int` *(required)*
+- `startTime`: `datetime` *(required)*
+- `endTime`: `datetime` *(required)*
+- `unit`:
+  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
+  *(required)*
+- `statistics`:
+  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+  *(required)*
+
+Returns
+[GetRelationalDatabaseMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasemetricdataresulttypedef).
 
 ### get_relational_database_parameters
 
-Type annotations for `boto3.client("lightsail").get_relational_database_parameters` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters)
 
-```python
-def get_relational_database_parameters(
-    self,
-    relationalDatabaseName: str,
-    pageToken: str = None
-) -> GetRelationalDatabaseParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseparametersresulttypedef).
 
 ### get_relational_database_snapshot
 
-Type annotations for `boto3.client("lightsail").get_relational_database_snapshot` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot)
 
-```python
-def get_relational_database_snapshot(
-    self,
-    relationalDatabaseSnapshotName: str
-) -> GetRelationalDatabaseSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseSnapshotName`: `str` *(required)*
+
+Returns
+[GetRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesnapshotresulttypedef).
 
 ### get_relational_database_snapshots
 
-Type annotations for `boto3.client("lightsail").get_relational_database_snapshots` method.
+Type annotations for
+`boto3.client("lightsail").get_relational_database_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots]
+Boto3 documentation:
+[Lightsail.Client.get_relational_database_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots)
 
-```python
-def get_relational_database_snapshots(
-    self,
-    pageToken: str = None
-) -> GetRelationalDatabaseSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabaseSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesnapshotsresulttypedef).
 
 ### get_relational_databases
 
-Type annotations for `boto3.client("lightsail").get_relational_databases` method.
+Type annotations for `boto3.client("lightsail").get_relational_databases`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases]
+Boto3 documentation:
+[Lightsail.Client.get_relational_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases)
 
-```python
-def get_relational_databases(
-    self,
-    pageToken: str = None
-) -> GetRelationalDatabasesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetRelationalDatabasesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesresulttypedef).
 
 ### get_static_ip
 
 Type annotations for `boto3.client("lightsail").get_static_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip]
+Boto3 documentation:
+[Lightsail.Client.get_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip)
 
-```python
-def get_static_ip(
-    self,
-    staticIpName: str
-) -> GetStaticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `staticIpName`: `str` *(required)*
+
+Returns
+[GetStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getstaticipresulttypedef).
 
 ### get_static_ips
 
 Type annotations for `boto3.client("lightsail").get_static_ips` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips]
+Boto3 documentation:
+[Lightsail.Client.get_static_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips)
 
-```python
-def get_static_ips(
-    self,
-    pageToken: str = None
-) -> GetStaticIpsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `pageToken`: `str`
+
+Returns
+[GetStaticIpsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getstaticipsresulttypedef).
 
 ### import_key_pair
 
 Type annotations for `boto3.client("lightsail").import_key_pair` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair]
+Boto3 documentation:
+[Lightsail.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair)
 
-```python
-def import_key_pair(
-    self,
-    keyPairName: str,
-    publicKeyBase64: str
-) -> ImportKeyPairResultTypeDef:
-    pass
-```
+Arguments:
+
+- `keyPairName`: `str` *(required)*
+- `publicKeyBase64`: `str` *(required)*
+
+Returns
+[ImportKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#importkeypairresulttypedef).
 
 ### is_vpc_peered
 
 Type annotations for `boto3.client("lightsail").is_vpc_peered` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered]
+Boto3 documentation:
+[Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
 
-```python
-def is_vpc_peered(
-    self
-) -> IsVpcPeeredResultTypeDef:
-    pass
-```
+Returns
+[IsVpcPeeredResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#isvpcpeeredresulttypedef).
 
 ### open_instance_public_ports
 
-Type annotations for `boto3.client("lightsail").open_instance_public_ports` method.
+Type annotations for `boto3.client("lightsail").open_instance_public_ports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports]
+Boto3 documentation:
+[Lightsail.Client.open_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports)
 
-```python
-def open_instance_public_ports(
-    self,
-    portInfo: PortInfoTypeDef,
-    instanceName: str
-) -> OpenInstancePublicPortsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `portInfo`:
+  [PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)
+  *(required)*
+- `instanceName`: `str` *(required)*
+
+Returns
+[OpenInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#openinstancepublicportsresulttypedef).
 
 ### peer_vpc
 
 Type annotations for `boto3.client("lightsail").peer_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc]
+Boto3 documentation:
+[Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
 
-```python
-def peer_vpc(
-    self
-) -> PeerVpcResultTypeDef:
-    pass
-```
+Returns
+[PeerVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#peervpcresulttypedef).
 
 ### put_alarm
 
 Type annotations for `boto3.client("lightsail").put_alarm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm]
+Boto3 documentation:
+[Lightsail.Client.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm)
 
-```python
-def put_alarm(
-    self,
-    alarmName: str,
-    metricName: MetricName,
-    monitoredResourceName: str,
-    comparisonOperator: ComparisonOperator,
-    threshold: float,
-    evaluationPeriods: int,
-    datapointsToAlarm: int = None,
-    treatMissingData: TreatMissingData = None,
-    contactProtocols: List[ContactProtocol] = None,
-    notificationTriggers: List[AlarmState] = None,
-    notificationEnabled: bool = None
-) -> PutAlarmResultTypeDef:
-    pass
-```
+Arguments:
+
+- `alarmName`: `str` *(required)*
+- `metricName`:
+  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricname)
+  *(required)*
+- `monitoredResourceName`: `str` *(required)*
+- `comparisonOperator`:
+  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#comparisonoperator)
+  *(required)*
+- `threshold`: `float` *(required)*
+- `evaluationPeriods`: `int` *(required)*
+- `datapointsToAlarm`: `int`
+- `treatMissingData`:
+  [TreatMissingData](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#treatmissingdata)
+- `contactProtocols`:
+  `List`\[[ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)\]
+- `notificationTriggers`:
+  `List`\[[AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)\]
+- `notificationEnabled`: `bool`
+
+Returns
+[PutAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#putalarmresulttypedef).
 
 ### put_instance_public_ports
 
-Type annotations for `boto3.client("lightsail").put_instance_public_ports` method.
+Type annotations for `boto3.client("lightsail").put_instance_public_ports`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports]
+Boto3 documentation:
+[Lightsail.Client.put_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports)
 
-```python
-def put_instance_public_ports(
-    self,
-    portInfos: List[PortInfoTypeDef],
-    instanceName: str
-) -> PutInstancePublicPortsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `portInfos`:
+  `List`\[[PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)\]
+  *(required)*
+- `instanceName`: `str` *(required)*
+
+Returns
+[PutInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#putinstancepublicportsresulttypedef).
 
 ### reboot_instance
 
 Type annotations for `boto3.client("lightsail").reboot_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance]
+Boto3 documentation:
+[Lightsail.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance)
 
-```python
-def reboot_instance(
-    self,
-    instanceName: str
-) -> RebootInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[RebootInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#rebootinstanceresulttypedef).
 
 ### reboot_relational_database
 
-Type annotations for `boto3.client("lightsail").reboot_relational_database` method.
+Type annotations for `boto3.client("lightsail").reboot_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database]
+Boto3 documentation:
+[Lightsail.Client.reboot_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database)
 
-```python
-def reboot_relational_database(
-    self,
-    relationalDatabaseName: str
-) -> RebootRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+
+Returns
+[RebootRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#rebootrelationaldatabaseresulttypedef).
 
 ### register_container_image
 
-Type annotations for `boto3.client("lightsail").register_container_image` method.
+Type annotations for `boto3.client("lightsail").register_container_image`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image]
+Boto3 documentation:
+[Lightsail.Client.register_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image)
 
-```python
-def register_container_image(
-    self,
-    serviceName: str,
-    label: str,
-    digest: str
-) -> RegisterContainerImageResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `label`: `str` *(required)*
+- `digest`: `str` *(required)*
+
+Returns
+[RegisterContainerImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#registercontainerimageresulttypedef).
 
 ### release_static_ip
 
 Type annotations for `boto3.client("lightsail").release_static_ip` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip]
+Boto3 documentation:
+[Lightsail.Client.release_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip)
 
-```python
-def release_static_ip(
-    self,
-    staticIpName: str
-) -> ReleaseStaticIpResultTypeDef:
-    pass
-```
+Arguments:
+
+- `staticIpName`: `str` *(required)*
+
+Returns
+[ReleaseStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#releasestaticipresulttypedef).
 
 ### reset_distribution_cache
 
-Type annotations for `boto3.client("lightsail").reset_distribution_cache` method.
+Type annotations for `boto3.client("lightsail").reset_distribution_cache`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache]
+Boto3 documentation:
+[Lightsail.Client.reset_distribution_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache)
 
-```python
-def reset_distribution_cache(
-    self,
-    distributionName: str = None
-) -> ResetDistributionCacheResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str`
+
+Returns
+[ResetDistributionCacheResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resetdistributioncacheresulttypedef).
 
 ### send_contact_method_verification
 
-Type annotations for `boto3.client("lightsail").send_contact_method_verification` method.
+Type annotations for
+`boto3.client("lightsail").send_contact_method_verification` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification]
+Boto3 documentation:
+[Lightsail.Client.send_contact_method_verification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification)
 
-```python
-def send_contact_method_verification(
-    self,
-    protocol: Literal['Email']
-) -> SendContactMethodVerificationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `protocol`: `Literal['Email']` *(required)*
+
+Returns
+[SendContactMethodVerificationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#sendcontactmethodverificationresulttypedef).
 
 ### set_ip_address_type
 
 Type annotations for `boto3.client("lightsail").set_ip_address_type` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type]
+Boto3 documentation:
+[Lightsail.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type)
 
-```python
-def set_ip_address_type(
-    self,
-    resourceType: ResourceType,
-    resourceName: str,
-    ipAddressType: IpAddressType
-) -> SetIpAddressTypeResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+  *(required)*
+- `resourceName`: `str` *(required)*
+- `ipAddressType`:
+  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+  *(required)*
+
+Returns
+[SetIpAddressTypeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#setipaddresstyperesulttypedef).
 
 ### start_instance
 
 Type annotations for `boto3.client("lightsail").start_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance]
+Boto3 documentation:
+[Lightsail.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance)
 
-```python
-def start_instance(
-    self,
-    instanceName: str
-) -> StartInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+
+Returns
+[StartInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#startinstanceresulttypedef).
 
 ### start_relational_database
 
-Type annotations for `boto3.client("lightsail").start_relational_database` method.
+Type annotations for `boto3.client("lightsail").start_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database]
+Boto3 documentation:
+[Lightsail.Client.start_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database)
 
-```python
-def start_relational_database(
-    self,
-    relationalDatabaseName: str
-) -> StartRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+
+Returns
+[StartRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#startrelationaldatabaseresulttypedef).
 
 ### stop_instance
 
 Type annotations for `boto3.client("lightsail").stop_instance` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance]
+Boto3 documentation:
+[Lightsail.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance)
 
-```python
-def stop_instance(
-    self,
-    instanceName: str,
-    force: bool = None
-) -> StopInstanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `instanceName`: `str` *(required)*
+- `force`: `bool`
+
+Returns
+[StopInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#stopinstanceresulttypedef).
 
 ### stop_relational_database
 
-Type annotations for `boto3.client("lightsail").stop_relational_database` method.
+Type annotations for `boto3.client("lightsail").stop_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database]
+Boto3 documentation:
+[Lightsail.Client.stop_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database)
 
-```python
-def stop_relational_database(
-    self,
-    relationalDatabaseName: str,
-    relationalDatabaseSnapshotName: str = None
-) -> StopRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `relationalDatabaseSnapshotName`: `str`
+
+Returns
+[StopRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#stoprelationaldatabaseresulttypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("lightsail").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource]
+Boto3 documentation:
+[Lightsail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceName: str,
-    tags: List["TagTypeDef"],
-    resourceArn: str = None
-) -> TagResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+  *(required)*
+- `resourceArn`: `str`
+
+Returns
+[TagResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagresourceresulttypedef).
 
 ### test_alarm
 
 Type annotations for `boto3.client("lightsail").test_alarm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm]
+Boto3 documentation:
+[Lightsail.Client.test_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm)
 
-```python
-def test_alarm(
-    self,
-    alarmName: str,
-    state: AlarmState
-) -> TestAlarmResultTypeDef:
-    pass
-```
+Arguments:
+
+- `alarmName`: `str` *(required)*
+- `state`:
+  [AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)
+  *(required)*
+
+Returns
+[TestAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#testalarmresulttypedef).
 
 ### unpeer_vpc
 
 Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc]
+Boto3 documentation:
+[Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
 
-```python
-def unpeer_vpc(
-    self
-) -> UnpeerVpcResultTypeDef:
-    pass
-```
+Returns
+[UnpeerVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#unpeervpcresulttypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("lightsail").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource]
+Boto3 documentation:
+[Lightsail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceName: str,
-    tagKeys: List[str],
-    resourceArn: str = None
-) -> UntagResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceName`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+- `resourceArn`: `str`
+
+Returns
+[UntagResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#untagresourceresulttypedef).
 
 ### update_container_service
 
-Type annotations for `boto3.client("lightsail").update_container_service` method.
+Type annotations for `boto3.client("lightsail").update_container_service`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service]
+Boto3 documentation:
+[Lightsail.Client.update_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service)
 
-```python
-def update_container_service(
-    self,
-    serviceName: str,
-    power: ContainerServicePowerName = None,
-    scale: int = None,
-    isDisabled: bool = None,
-    publicDomainNames: Dict[str, List[str]] = None
-) -> UpdateContainerServiceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `serviceName`: `str` *(required)*
+- `power`:
+  [ContainerServicePowerName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicepowername)
+- `scale`: `int`
+- `isDisabled`: `bool`
+- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+
+Returns
+[UpdateContainerServiceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatecontainerserviceresulttypedef).
 
 ### update_distribution
 
 Type annotations for `boto3.client("lightsail").update_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution]
+Boto3 documentation:
+[Lightsail.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution)
 
-```python
-def update_distribution(
-    self,
-    distributionName: str,
-    origin: InputOriginTypeDef = None,
-    defaultCacheBehavior: "CacheBehaviorTypeDef" = None,
-    cacheBehaviorSettings: "CacheSettingsTypeDef" = None,
-    cacheBehaviors: List["CacheBehaviorPerPathTypeDef"] = None,
-    isEnabled: bool = None
-) -> UpdateDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str` *(required)*
+- `origin`:
+  [InputOriginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#inputorigintypedef)
+- `defaultCacheBehavior`:
+  [CacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviortypedef)
+- `cacheBehaviorSettings`:
+  [CacheSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachesettingstypedef)
+- `cacheBehaviors`:
+  `List`\[[CacheBehaviorPerPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviorperpathtypedef)\]
+- `isEnabled`: `bool`
+
+Returns
+[UpdateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedistributionresulttypedef).
 
 ### update_distribution_bundle
 
-Type annotations for `boto3.client("lightsail").update_distribution_bundle` method.
+Type annotations for `boto3.client("lightsail").update_distribution_bundle`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle]
+Boto3 documentation:
+[Lightsail.Client.update_distribution_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle)
 
-```python
-def update_distribution_bundle(
-    self,
-    distributionName: str = None,
-    bundleId: str = None
-) -> UpdateDistributionBundleResultTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionName`: `str`
+- `bundleId`: `str`
+
+Returns
+[UpdateDistributionBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedistributionbundleresulttypedef).
 
 ### update_domain_entry
 
 Type annotations for `boto3.client("lightsail").update_domain_entry` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry]
+Boto3 documentation:
+[Lightsail.Client.update_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry)
 
-```python
-def update_domain_entry(
-    self,
-    domainName: str,
-    domainEntry: "DomainEntryTypeDef"
-) -> UpdateDomainEntryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `domainName`: `str` *(required)*
+- `domainEntry`:
+  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+  *(required)*
+
+Returns
+[UpdateDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedomainentryresulttypedef).
 
 ### update_load_balancer_attribute
 
-Type annotations for `boto3.client("lightsail").update_load_balancer_attribute` method.
+Type annotations for `boto3.client("lightsail").update_load_balancer_attribute`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute]
+Boto3 documentation:
+[Lightsail.Client.update_load_balancer_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute)
 
-```python
-def update_load_balancer_attribute(
-    self,
-    loadBalancerName: str,
-    attributeName: LoadBalancerAttributeName,
-    attributeValue: str
-) -> UpdateLoadBalancerAttributeResultTypeDef:
-    pass
-```
+Arguments:
+
+- `loadBalancerName`: `str` *(required)*
+- `attributeName`:
+  [LoadBalancerAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancerattributename)
+  *(required)*
+- `attributeValue`: `str` *(required)*
+
+Returns
+[UpdateLoadBalancerAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updateloadbalancerattributeresulttypedef).
 
 ### update_relational_database
 
-Type annotations for `boto3.client("lightsail").update_relational_database` method.
+Type annotations for `boto3.client("lightsail").update_relational_database`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database]
+Boto3 documentation:
+[Lightsail.Client.update_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database)
 
-```python
-def update_relational_database(
-    self,
-    relationalDatabaseName: str,
-    masterUserPassword: str = None,
-    rotateMasterUserPassword: bool = None,
-    preferredBackupWindow: str = None,
-    preferredMaintenanceWindow: str = None,
-    enableBackupRetention: bool = None,
-    disableBackupRetention: bool = None,
-    publiclyAccessible: bool = None,
-    applyImmediately: bool = None,
-    caCertificateIdentifier: str = None
-) -> UpdateRelationalDatabaseResultTypeDef:
-    pass
-```
+Arguments:
+
+- `relationalDatabaseName`: `str` *(required)*
+- `masterUserPassword`: `str`
+- `rotateMasterUserPassword`: `bool`
+- `preferredBackupWindow`: `str`
+- `preferredMaintenanceWindow`: `str`
+- `enableBackupRetention`: `bool`
+- `disableBackupRetention`: `bool`
+- `publiclyAccessible`: `bool`
+- `applyImmediately`: `bool`
+- `caCertificateIdentifier`: `str`
+
+Returns
+[UpdateRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updaterelationaldatabaseresulttypedef).
 
 ### update_relational_database_parameters
 
-Type annotations for `boto3.client("lightsail").update_relational_database_parameters` method.
+Type annotations for
+`boto3.client("lightsail").update_relational_database_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters]
+Boto3 documentation:
+[Lightsail.Client.update_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters)
 
-```python
-def update_relational_database_parameters(
-    self,
-    relationalDatabaseName: str,
-    parameters: List["RelationalDatabaseParameterTypeDef"]
-) -> UpdateRelationalDatabaseParametersResultTypeDef:
-    pass
-```
+Arguments:
 
+- `relationalDatabaseName`: `str` *(required)*
+- `parameters`:
+  `List`\[[RelationalDatabaseParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseparametertypedef)\]
+  *(required)*
 
+Returns
+[UpdateRelationalDatabaseParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updaterelationaldatabaseparametersresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("lightsail").get_paginator` method with overloads.
+Type annotations for `boto3.client("lightsail").get_paginator` method with
+overloads.
 
-- `client.get_paginator("get_active_names")` -> [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
-- `client.get_paginator("get_blueprints")` -> [GetBlueprintsPaginator](./paginators.md#getblueprintspaginator)
-- `client.get_paginator("get_bundles")` -> [GetBundlesPaginator](./paginators.md#getbundlespaginator)
-- `client.get_paginator("get_cloud_formation_stack_records")` -> [GetCloudFormationStackRecordsPaginator](./paginators.md#getcloudformationstackrecordspaginator)
-- `client.get_paginator("get_disk_snapshots")` -> [GetDiskSnapshotsPaginator](./paginators.md#getdisksnapshotspaginator)
-- `client.get_paginator("get_disks")` -> [GetDisksPaginator](./paginators.md#getdiskspaginator)
-- `client.get_paginator("get_domains")` -> [GetDomainsPaginator](./paginators.md#getdomainspaginator)
-- `client.get_paginator("get_export_snapshot_records")` -> [GetExportSnapshotRecordsPaginator](./paginators.md#getexportsnapshotrecordspaginator)
-- `client.get_paginator("get_instance_snapshots")` -> [GetInstanceSnapshotsPaginator](./paginators.md#getinstancesnapshotspaginator)
-- `client.get_paginator("get_instances")` -> [GetInstancesPaginator](./paginators.md#getinstancespaginator)
-- `client.get_paginator("get_key_pairs")` -> [GetKeyPairsPaginator](./paginators.md#getkeypairspaginator)
-- `client.get_paginator("get_load_balancers")` -> [GetLoadBalancersPaginator](./paginators.md#getloadbalancerspaginator)
-- `client.get_paginator("get_operations")` -> [GetOperationsPaginator](./paginators.md#getoperationspaginator)
-- `client.get_paginator("get_relational_database_blueprints")` -> [GetRelationalDatabaseBlueprintsPaginator](./paginators.md#getrelationaldatabaseblueprintspaginator)
-- `client.get_paginator("get_relational_database_bundles")` -> [GetRelationalDatabaseBundlesPaginator](./paginators.md#getrelationaldatabasebundlespaginator)
-- `client.get_paginator("get_relational_database_events")` -> [GetRelationalDatabaseEventsPaginator](./paginators.md#getrelationaldatabaseeventspaginator)
-- `client.get_paginator("get_relational_database_parameters")` -> [GetRelationalDatabaseParametersPaginator](./paginators.md#getrelationaldatabaseparameterspaginator)
-- `client.get_paginator("get_relational_database_snapshots")` -> [GetRelationalDatabaseSnapshotsPaginator](./paginators.md#getrelationaldatabasesnapshotspaginator)
-- `client.get_paginator("get_relational_databases")` -> [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
-- `client.get_paginator("get_static_ips")` -> [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)
-
-
+- `client.get_paginator("get_active_names")` ->
+  [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
+- `client.get_paginator("get_blueprints")` ->
+  [GetBlueprintsPaginator](./paginators.md#getblueprintspaginator)
+- `client.get_paginator("get_bundles")` ->
+  [GetBundlesPaginator](./paginators.md#getbundlespaginator)
+- `client.get_paginator("get_cloud_formation_stack_records")` ->
+  [GetCloudFormationStackRecordsPaginator](./paginators.md#getcloudformationstackrecordspaginator)
+- `client.get_paginator("get_disk_snapshots")` ->
+  [GetDiskSnapshotsPaginator](./paginators.md#getdisksnapshotspaginator)
+- `client.get_paginator("get_disks")` ->
+  [GetDisksPaginator](./paginators.md#getdiskspaginator)
+- `client.get_paginator("get_domains")` ->
+  [GetDomainsPaginator](./paginators.md#getdomainspaginator)
+- `client.get_paginator("get_export_snapshot_records")` ->
+  [GetExportSnapshotRecordsPaginator](./paginators.md#getexportsnapshotrecordspaginator)
+- `client.get_paginator("get_instance_snapshots")` ->
+  [GetInstanceSnapshotsPaginator](./paginators.md#getinstancesnapshotspaginator)
+- `client.get_paginator("get_instances")` ->
+  [GetInstancesPaginator](./paginators.md#getinstancespaginator)
+- `client.get_paginator("get_key_pairs")` ->
+  [GetKeyPairsPaginator](./paginators.md#getkeypairspaginator)
+- `client.get_paginator("get_load_balancers")` ->
+  [GetLoadBalancersPaginator](./paginators.md#getloadbalancerspaginator)
+- `client.get_paginator("get_operations")` ->
+  [GetOperationsPaginator](./paginators.md#getoperationspaginator)
+- `client.get_paginator("get_relational_database_blueprints")` ->
+  [GetRelationalDatabaseBlueprintsPaginator](./paginators.md#getrelationaldatabaseblueprintspaginator)
+- `client.get_paginator("get_relational_database_bundles")` ->
+  [GetRelationalDatabaseBundlesPaginator](./paginators.md#getrelationaldatabasebundlespaginator)
+- `client.get_paginator("get_relational_database_events")` ->
+  [GetRelationalDatabaseEventsPaginator](./paginators.md#getrelationaldatabaseeventspaginator)
+- `client.get_paginator("get_relational_database_parameters")` ->
+  [GetRelationalDatabaseParametersPaginator](./paginators.md#getrelationaldatabaseparameterspaginator)
+- `client.get_paginator("get_relational_database_snapshots")` ->
+  [GetRelationalDatabaseSnapshotsPaginator](./paginators.md#getrelationaldatabasesnapshotspaginator)
+- `client.get_paginator("get_relational_databases")` ->
+  [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
+- `client.get_paginator("get_static_ips")` ->
+  [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)

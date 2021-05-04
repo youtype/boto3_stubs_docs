@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticInference](./README.md) > Structures
 
-Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
-type annotations stubs module [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+Auto-generated documentation for
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+type annotations stubs module
+[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 - [Typed dictionaries for boto3 ElasticInference module](#typed-dictionaries-for-boto3-elasticinference-module)
   - [AcceleratorTypeOfferingTypeDef](#acceleratortypeofferingtypedef)
@@ -25,14 +27,12 @@ type annotations stubs module [mypy_boto3_elastic_inference](https://pypi.org/pr
 from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorType`: `str`
-- `locationType`: `LocationType`
-- `location`: `str`
 
+- `acceleratorType`: `str`
+- `locationType`:
+  [LocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/literals.html#locationtype)
+- `location`: `str`
 
 ## AcceleratorTypeTypeDef
 
@@ -40,14 +40,13 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorTypeName`: `str`
-- `memoryInfo`: `"MemoryInfoTypeDef"`
-- `throughputInfo`: `List["KeyValuePairTypeDef"]`
 
+- `acceleratorTypeName`: `str`
+- `memoryInfo`:
+  [MemoryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#memoryinfotypedef)
+- `throughputInfo`:
+  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#keyvaluepairtypedef)\]
 
 ## DescribeAcceleratorOfferingsResponseTypeDef
 
@@ -55,12 +54,10 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorTypeOfferings`: `List["AcceleratorTypeOfferingTypeDef"]`
 
+- `acceleratorTypeOfferings`:
+  `List`\[[AcceleratorTypeOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#acceleratortypeofferingtypedef)\]
 
 ## DescribeAcceleratorTypesResponseTypeDef
 
@@ -68,12 +65,10 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorTypesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorTypes`: `List["AcceleratorTypeTypeDef"]`
 
+- `acceleratorTypes`:
+  `List`\[[AcceleratorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#acceleratortypetypedef)\]
 
 ## DescribeAcceleratorsResponseTypeDef
 
@@ -81,13 +76,11 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorSet`: `List["ElasticInferenceAcceleratorTypeDef"]`
-- `nextToken`: `str`
 
+- `acceleratorSet`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#elasticinferenceacceleratortypedef)\]
+- `nextToken`: `str`
 
 ## ElasticInferenceAcceleratorHealthTypeDef
 
@@ -95,12 +88,9 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorHealthTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `str`
 
+- `status`: `str`
 
 ## ElasticInferenceAcceleratorTypeDef
 
@@ -108,16 +98,14 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `acceleratorHealth`: `"ElasticInferenceAcceleratorHealthTypeDef"`
+
+- `acceleratorHealth`:
+  [ElasticInferenceAcceleratorHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#elasticinferenceacceleratorhealthtypedef)
 - `acceleratorType`: `str`
 - `acceleratorId`: `str`
 - `availabilityZone`: `str`
 - `attachedResource`: `str`
-
 
 ## FilterTypeDef
 
@@ -125,13 +113,10 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import FilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `name`: `str`
-- `values`: `List[str]`
 
+- `name`: `str`
+- `values`: `List`\[`str`\]
 
 ## KeyValuePairTypeDef
 
@@ -139,13 +124,10 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import KeyValuePairTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `key`: `str`
 - `value`: `int`
-
 
 ## ListTagsForResourceResultTypeDef
 
@@ -153,12 +135,9 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## MemoryInfoTypeDef
 
@@ -166,12 +145,9 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import MemoryInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `sizeInMiB`: `int`
 
+- `sizeInMiB`: `int`
 
 ## PaginatorConfigTypeDef
 
@@ -179,11 +155,8 @@ Optional fields:
 from mypy_boto3_elastic_inference.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-

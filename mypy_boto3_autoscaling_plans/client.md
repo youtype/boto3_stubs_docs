@@ -1,9 +1,12 @@
 # AutoScalingPlansClient for boto3 AutoScalingPlans module
 
-> [Index](../README.md) > [AutoScalingPlans](./README.md) > AutoScalingPlansClient
+> [Index](../README.md) > [AutoScalingPlans](./README.md) >
+> AutoScalingPlansClient
 
-Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
-type annotations stubs module [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+Auto-generated documentation for
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+type annotations stubs module
+[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [AutoScalingPlansClient for boto3 AutoScalingPlans module](#autoscalingplansclient-for-boto3-autoscalingplans-module)
   - [AutoScalingPlansClient](#autoscalingplansclient)
@@ -32,12 +35,13 @@ def get_autoscaling-plans_client() -> AutoScalingPlansClient:
     return boto3.client("autoscaling-plans")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
+Boto3 documentation:
+[AutoScalingPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_autoscaling_plans.client import Exceptions
@@ -45,7 +49,6 @@ from mypy_boto3_autoscaling_plans.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -57,152 +60,166 @@ Exceptions:
 - `Exceptions.ObjectNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("autoscaling-plans").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate]
+Boto3 documentation:
+[AutoScalingPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_scaling_plan
 
-Type annotations for `boto3.client("autoscaling-plans").create_scaling_plan` method.
+Type annotations for `boto3.client("autoscaling-plans").create_scaling_plan`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan]
+Boto3 documentation:
+[AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
 
-```python
-def create_scaling_plan(
-    self,
-    ScalingPlanName: str,
-    ApplicationSource: "ApplicationSourceTypeDef",
-    ScalingInstructions: List["ScalingInstructionTypeDef"]
-) -> CreateScalingPlanResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ScalingPlanName`: `str` *(required)*
+- `ApplicationSource`:
+  [ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)
+  *(required)*
+- `ScalingInstructions`:
+  `List`\[[ScalingInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#scalinginstructiontypedef)\]
+  *(required)*
+
+Returns
+[CreateScalingPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#createscalingplanresponsetypedef).
 
 ### delete_scaling_plan
 
-Type annotations for `boto3.client("autoscaling-plans").delete_scaling_plan` method.
+Type annotations for `boto3.client("autoscaling-plans").delete_scaling_plan`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan]
+Boto3 documentation:
+[AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
 
-```python
-def delete_scaling_plan(
-    self,
-    ScalingPlanName: str,
-    ScalingPlanVersion: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ScalingPlanName`: `str` *(required)*
+- `ScalingPlanVersion`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_scaling_plan_resources
 
-Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
+Type annotations for
+`boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources]
+Boto3 documentation:
+[AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
 
-```python
-def describe_scaling_plan_resources(
-    self,
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeScalingPlanResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ScalingPlanName`: `str` *(required)*
+- `ScalingPlanVersion`: `int` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeScalingPlanResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplanresourcesresponsetypedef).
 
 ### describe_scaling_plans
 
-Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plans` method.
+Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plans`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans]
+Boto3 documentation:
+[AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
 
-```python
-def describe_scaling_plans(
-    self,
-    ScalingPlanNames: List[str] = None,
-    ScalingPlanVersion: int = None,
-    ApplicationSources: List["ApplicationSourceTypeDef"] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> DescribeScalingPlansResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ScalingPlanNames`: `List`\[`str`\]
+- `ScalingPlanVersion`: `int`
+- `ApplicationSources`:
+  `List`\[[ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeScalingPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplansresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("autoscaling-plans").generate_presigned_url` method.
+Type annotations for `boto3.client("autoscaling-plans").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url]
+Boto3 documentation:
+[AutoScalingPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_scaling_plan_resource_forecast_data
 
-Type annotations for `boto3.client("autoscaling-plans").get_scaling_plan_resource_forecast_data` method.
+Type annotations for
+`boto3.client("autoscaling-plans").get_scaling_plan_resource_forecast_data`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data]
+Boto3 documentation:
+[AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
 
-```python
-def get_scaling_plan_resource_forecast_data(
-    self,
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    ServiceNamespace: ServiceNamespace,
-    ResourceId: str,
-    ScalableDimension: ScalableDimension,
-    ForecastDataType: ForecastDataType,
-    StartTime: datetime,
-    EndTime: datetime
-) -> GetScalingPlanResourceForecastDataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ScalingPlanName`: `str` *(required)*
+- `ScalingPlanVersion`: `int` *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#servicenamespace)
+  *(required)*
+- `ResourceId`: `str` *(required)*
+- `ScalableDimension`:
+  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#scalabledimension)
+  *(required)*
+- `ForecastDataType`:
+  [ForecastDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#forecastdatatype)
+  *(required)*
+- `StartTime`: `datetime` *(required)*
+- `EndTime`: `datetime` *(required)*
+
+Returns
+[GetScalingPlanResourceForecastDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#getscalingplanresourceforecastdataresponsetypedef).
 
 ### update_scaling_plan
 
-Type annotations for `boto3.client("autoscaling-plans").update_scaling_plan` method.
+Type annotations for `boto3.client("autoscaling-plans").update_scaling_plan`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan]
+Boto3 documentation:
+[AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
 
-```python
-def update_scaling_plan(
-    self,
-    ScalingPlanName: str,
-    ScalingPlanVersion: int,
-    ApplicationSource: "ApplicationSourceTypeDef" = None,
-    ScalingInstructions: List["ScalingInstructionTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ScalingPlanName`: `str` *(required)*
+- `ScalingPlanVersion`: `int` *(required)*
+- `ApplicationSource`:
+  [ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)
+- `ScalingInstructions`:
+  `List`\[[ScalingInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#scalinginstructiontypedef)\]
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("autoscaling-plans").get_paginator` method with overloads.
+Type annotations for `boto3.client("autoscaling-plans").get_paginator` method
+with overloads.
 
-- `client.get_paginator("describe_scaling_plan_resources")` -> [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
-- `client.get_paginator("describe_scaling_plans")` -> [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
-
-
+- `client.get_paginator("describe_scaling_plan_resources")` ->
+  [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
+- `client.get_paginator("describe_scaling_plans")` ->
+  [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)

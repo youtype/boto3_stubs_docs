@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > NimbleStudio
 
-Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+Auto-generated documentation for
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+type annotations stubs module
+[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ```bash
 pip install mypy-boto3-nimble
@@ -19,7 +21,8 @@ pip install mypy-boto3-nimble
 
 ## NimbleStudioClient
 
-Type annotations for  `boto3.client("nimble")` as [NimbleStudioClient](./client.md)
+Type annotations for `boto3.client("nimble")` as
+[NimbleStudioClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_nimble.client import NimbleStudioClient
 ```
 
-
 NimbleStudioClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_eulas](./client.md#accept-eulas)
 - [can_paginate](./client.md#can-paginate)
 - [create_launch_profile](./client.md#create-launch-profile)
@@ -82,10 +83,8 @@ NimbleStudioClient [exceptions](./client.md#exceptions)
 - [update_studio](./client.md#update-studio)
 - [update_studio_component](./client.md#update-studio-component)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -95,14 +94,10 @@ NimbleStudioClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("nimble").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("nimble").get_paginator("...")`.
 
 Can be used directly:
 
@@ -119,11 +114,6 @@ from mypy_boto3_nimble.paginators import ListEulaAcceptancesPaginator, ...
 - [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
 - [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -167,13 +157,10 @@ from mypy_boto3_nimble.literals import LaunchProfilePersona, ...
 - [StudioState](./literals.md#studiostate)
 - [StudioStatusCode](./literals.md#studiostatuscode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

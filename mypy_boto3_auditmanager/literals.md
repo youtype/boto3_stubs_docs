@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AuditManager](./README.md) > Literals
 
-Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+Auto-generated documentation for
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+type annotations stubs module
+[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [Literals for boto3 AuditManager module](#literals-for-boto3-auditmanager-module)
   - [AccountStatus](#accountstatus)

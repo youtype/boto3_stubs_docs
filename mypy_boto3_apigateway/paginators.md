@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [APIGateway](./README.md) > Paginators
 
-Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
-type annotations stubs module [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+Auto-generated documentation for
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+type annotations stubs module
+[mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [Paginators for boto3 APIGateway module](#paginators-for-boto3-apigateway-module)
   - [GetApiKeysPaginator](#getapikeyspaginator)
@@ -27,7 +29,8 @@ type annotations stubs module [mypy_boto3_apigateway](https://pypi.org/project/m
 
 ## GetApiKeysPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_api_keys")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_api_keys")`.
 
 Can be used directly:
 
@@ -38,22 +41,24 @@ def get_get_api_keys_paginator() -> GetApiKeysPaginator:
     return boto3.client("apigateway").get_paginator("get_api_keys")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetApiKeys)
+Boto3 documentation:
+[APIGateway.Paginator.GetApiKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetApiKeys)
 
-```python
-class GetApiKeysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        nameQuery: str = None,
-        customerId: str = None,
-        includeValues: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ApiKeysTypeDef]:
-        pass
-```
+Arguments for `GetApiKeysPaginator.paginate` method:
+
+- `nameQuery`: `str`
+- `customerId`: `str`
+- `includeValues`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetApiKeysPaginator.paginate` returns
+`Iterator`\[[ApiKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#apikeystypedef)\].
+
 ## GetAuthorizersPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_authorizers")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_authorizers")`.
 
 Can be used directly:
 
@@ -64,20 +69,22 @@ def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
     return boto3.client("apigateway").get_paginator("get_authorizers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetAuthorizers)
+Boto3 documentation:
+[APIGateway.Paginator.GetAuthorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetAuthorizers)
 
-```python
-class GetAuthorizersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[AuthorizersTypeDef]:
-        pass
-```
+Arguments for `GetAuthorizersPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetAuthorizersPaginator.paginate` returns
+`Iterator`\[[AuthorizersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#authorizerstypedef)\].
+
 ## GetBasePathMappingsPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_base_path_mappings")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_base_path_mappings")`.
 
 Can be used directly:
 
@@ -88,20 +95,22 @@ def get_get_base_path_mappings_paginator() -> GetBasePathMappingsPaginator:
     return boto3.client("apigateway").get_paginator("get_base_path_mappings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetBasePathMappings)
+Boto3 documentation:
+[APIGateway.Paginator.GetBasePathMappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetBasePathMappings)
 
-```python
-class GetBasePathMappingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        domainName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[BasePathMappingsTypeDef]:
-        pass
-```
+Arguments for `GetBasePathMappingsPaginator.paginate` method:
+
+- `domainName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetBasePathMappingsPaginator.paginate` returns
+`Iterator`\[[BasePathMappingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#basepathmappingstypedef)\].
+
 ## GetClientCertificatesPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_client_certificates")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_client_certificates")`.
 
 Can be used directly:
 
@@ -112,19 +121,21 @@ def get_get_client_certificates_paginator() -> GetClientCertificatesPaginator:
     return boto3.client("apigateway").get_paginator("get_client_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetClientCertificates)
+Boto3 documentation:
+[APIGateway.Paginator.GetClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetClientCertificates)
 
-```python
-class GetClientCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ClientCertificatesTypeDef]:
-        pass
-```
+Arguments for `GetClientCertificatesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetClientCertificatesPaginator.paginate` returns
+`Iterator`\[[ClientCertificatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#clientcertificatestypedef)\].
+
 ## GetDeploymentsPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_deployments")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_deployments")`.
 
 Can be used directly:
 
@@ -135,20 +146,22 @@ def get_get_deployments_paginator() -> GetDeploymentsPaginator:
     return boto3.client("apigateway").get_paginator("get_deployments")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDeployments)
+Boto3 documentation:
+[APIGateway.Paginator.GetDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDeployments)
 
-```python
-class GetDeploymentsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DeploymentsTypeDef]:
-        pass
-```
+Arguments for `GetDeploymentsPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetDeploymentsPaginator.paginate` returns
+`Iterator`\[[DeploymentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#deploymentstypedef)\].
+
 ## GetDocumentationPartsPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_documentation_parts")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_documentation_parts")`.
 
 Can be used directly:
 
@@ -159,24 +172,28 @@ def get_get_documentation_parts_paginator() -> GetDocumentationPartsPaginator:
     return boto3.client("apigateway").get_paginator("get_documentation_parts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationParts)
+Boto3 documentation:
+[APIGateway.Paginator.GetDocumentationParts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationParts)
 
-```python
-class GetDocumentationPartsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        type: DocumentationPartType = None,
-        nameQuery: str = None,
-        path: str = None,
-        locationStatus: LocationStatusType = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DocumentationPartsTypeDef]:
-        pass
-```
+Arguments for `GetDocumentationPartsPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `type`:
+  [DocumentationPartType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/literals.html#documentationparttype)
+- `nameQuery`: `str`
+- `path`: `str`
+- `locationStatus`:
+  [LocationStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/literals.html#locationstatustype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetDocumentationPartsPaginator.paginate` returns
+`Iterator`\[[DocumentationPartsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#documentationpartstypedef)\].
+
 ## GetDocumentationVersionsPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_documentation_versions")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_documentation_versions")`.
 
 Can be used directly:
 
@@ -187,20 +204,22 @@ def get_get_documentation_versions_paginator() -> GetDocumentationVersionsPagina
     return boto3.client("apigateway").get_paginator("get_documentation_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationVersions)
+Boto3 documentation:
+[APIGateway.Paginator.GetDocumentationVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationVersions)
 
-```python
-class GetDocumentationVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DocumentationVersionsTypeDef]:
-        pass
-```
+Arguments for `GetDocumentationVersionsPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetDocumentationVersionsPaginator.paginate` returns
+`Iterator`\[[DocumentationVersionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#documentationversionstypedef)\].
+
 ## GetDomainNamesPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_domain_names")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_domain_names")`.
 
 Can be used directly:
 
@@ -211,19 +230,21 @@ def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
     return boto3.client("apigateway").get_paginator("get_domain_names")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDomainNames)
+Boto3 documentation:
+[APIGateway.Paginator.GetDomainNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetDomainNames)
 
-```python
-class GetDomainNamesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DomainNamesTypeDef]:
-        pass
-```
+Arguments for `GetDomainNamesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetDomainNamesPaginator.paginate` returns
+`Iterator`\[[DomainNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#domainnamestypedef)\].
+
 ## GetGatewayResponsesPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_gateway_responses")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_gateway_responses")`.
 
 Can be used directly:
 
@@ -234,17 +255,18 @@ def get_get_gateway_responses_paginator() -> GetGatewayResponsesPaginator:
     return boto3.client("apigateway").get_paginator("get_gateway_responses")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetGatewayResponses)
+Boto3 documentation:
+[APIGateway.Paginator.GetGatewayResponses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetGatewayResponses)
 
-```python
-class GetGatewayResponsesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GatewayResponsesTypeDef]:
-        pass
-```
+Arguments for `GetGatewayResponsesPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetGatewayResponsesPaginator.paginate` returns
+`Iterator`\[[GatewayResponsesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#gatewayresponsestypedef)\].
+
 ## GetModelsPaginator
 
 Type annotations for `boto3.client("apigateway").get_paginator("get_models")`.
@@ -258,20 +280,22 @@ def get_get_models_paginator() -> GetModelsPaginator:
     return boto3.client("apigateway").get_paginator("get_models")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetModels)
+Boto3 documentation:
+[APIGateway.Paginator.GetModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetModels)
 
-```python
-class GetModelsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ModelsTypeDef]:
-        pass
-```
+Arguments for `GetModelsPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetModelsPaginator.paginate` returns
+`Iterator`\[[ModelsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#modelstypedef)\].
+
 ## GetRequestValidatorsPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_request_validators")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_request_validators")`.
 
 Can be used directly:
 
@@ -282,20 +306,22 @@ def get_get_request_validators_paginator() -> GetRequestValidatorsPaginator:
     return boto3.client("apigateway").get_paginator("get_request_validators")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetRequestValidators)
+Boto3 documentation:
+[APIGateway.Paginator.GetRequestValidators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetRequestValidators)
 
-```python
-class GetRequestValidatorsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[RequestValidatorsTypeDef]:
-        pass
-```
+Arguments for `GetRequestValidatorsPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetRequestValidatorsPaginator.paginate` returns
+`Iterator`\[[RequestValidatorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#requestvalidatorstypedef)\].
+
 ## GetResourcesPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_resources")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_resources")`.
 
 Can be used directly:
 
@@ -306,21 +332,23 @@ def get_get_resources_paginator() -> GetResourcesPaginator:
     return boto3.client("apigateway").get_paginator("get_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetResources)
+Boto3 documentation:
+[APIGateway.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetResources)
 
-```python
-class GetResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        restApiId: str,
-        embed: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ResourcesTypeDef]:
-        pass
-```
+Arguments for `GetResourcesPaginator.paginate` method:
+
+- `restApiId`: `str` *(required)*
+- `embed`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetResourcesPaginator.paginate` returns
+`Iterator`\[[ResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#resourcestypedef)\].
+
 ## GetRestApisPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_rest_apis")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_rest_apis")`.
 
 Can be used directly:
 
@@ -331,19 +359,21 @@ def get_get_rest_apis_paginator() -> GetRestApisPaginator:
     return boto3.client("apigateway").get_paginator("get_rest_apis")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetRestApis)
+Boto3 documentation:
+[APIGateway.Paginator.GetRestApis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetRestApis)
 
-```python
-class GetRestApisPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[RestApisTypeDef]:
-        pass
-```
+Arguments for `GetRestApisPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetRestApisPaginator.paginate` returns
+`Iterator`\[[RestApisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#restapistypedef)\].
+
 ## GetSdkTypesPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_sdk_types")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_sdk_types")`.
 
 Can be used directly:
 
@@ -354,16 +384,17 @@ def get_get_sdk_types_paginator() -> GetSdkTypesPaginator:
     return boto3.client("apigateway").get_paginator("get_sdk_types")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetSdkTypes)
+Boto3 documentation:
+[APIGateway.Paginator.GetSdkTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetSdkTypes)
 
-```python
-class GetSdkTypesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SdkTypesTypeDef]:
-        pass
-```
+Arguments for `GetSdkTypesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetSdkTypesPaginator.paginate` returns
+`Iterator`\[[SdkTypesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#sdktypestypedef)\].
+
 ## GetUsagePaginator
 
 Type annotations for `boto3.client("apigateway").get_paginator("get_usage")`.
@@ -377,23 +408,25 @@ def get_get_usage_paginator() -> GetUsagePaginator:
     return boto3.client("apigateway").get_paginator("get_usage")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsage)
+Boto3 documentation:
+[APIGateway.Paginator.GetUsage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsage)
 
-```python
-class GetUsagePaginator(Boto3Paginator):
-    def paginate(
-        self,
-        usagePlanId: str,
-        startDate: str,
-        endDate: str,
-        keyId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[UsageTypeDef]:
-        pass
-```
+Arguments for `GetUsagePaginator.paginate` method:
+
+- `usagePlanId`: `str` *(required)*
+- `startDate`: `str` *(required)*
+- `endDate`: `str` *(required)*
+- `keyId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetUsagePaginator.paginate` returns
+`Iterator`\[[UsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usagetypedef)\].
+
 ## GetUsagePlanKeysPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_usage_plan_keys")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_usage_plan_keys")`.
 
 Can be used directly:
 
@@ -404,21 +437,23 @@ def get_get_usage_plan_keys_paginator() -> GetUsagePlanKeysPaginator:
     return boto3.client("apigateway").get_paginator("get_usage_plan_keys")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlanKeys)
+Boto3 documentation:
+[APIGateway.Paginator.GetUsagePlanKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlanKeys)
 
-```python
-class GetUsagePlanKeysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        usagePlanId: str,
-        nameQuery: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[UsagePlanKeysTypeDef]:
-        pass
-```
+Arguments for `GetUsagePlanKeysPaginator.paginate` method:
+
+- `usagePlanId`: `str` *(required)*
+- `nameQuery`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetUsagePlanKeysPaginator.paginate` returns
+`Iterator`\[[UsagePlanKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usageplankeystypedef)\].
+
 ## GetUsagePlansPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_usage_plans")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_usage_plans")`.
 
 Can be used directly:
 
@@ -429,20 +464,22 @@ def get_get_usage_plans_paginator() -> GetUsagePlansPaginator:
     return boto3.client("apigateway").get_paginator("get_usage_plans")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlans)
+Boto3 documentation:
+[APIGateway.Paginator.GetUsagePlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlans)
 
-```python
-class GetUsagePlansPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        keyId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[UsagePlansTypeDef]:
-        pass
-```
+Arguments for `GetUsagePlansPaginator.paginate` method:
+
+- `keyId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetUsagePlansPaginator.paginate` returns
+`Iterator`\[[UsagePlansTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usageplanstypedef)\].
+
 ## GetVpcLinksPaginator
 
-Type annotations for `boto3.client("apigateway").get_paginator("get_vpc_links")`.
+Type annotations for
+`boto3.client("apigateway").get_paginator("get_vpc_links")`.
 
 Can be used directly:
 
@@ -453,13 +490,13 @@ def get_get_vpc_links_paginator() -> GetVpcLinksPaginator:
     return boto3.client("apigateway").get_paginator("get_vpc_links")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetVpcLinks)
+Boto3 documentation:
+[APIGateway.Paginator.GetVpcLinks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Paginator.GetVpcLinks)
 
-```python
-class GetVpcLinksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[VpcLinksTypeDef]:
-        pass
-```
+Arguments for `GetVpcLinksPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+
+`GetVpcLinksPaginator.paginate` returns
+`Iterator`\[[VpcLinksTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#vpclinkstypedef)\].

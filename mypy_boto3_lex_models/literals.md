@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [LexModelBuildingService](./README.md) > Literals
 
-Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
+Auto-generated documentation for
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+type annotations stubs module
+[mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 - [Literals for boto3 LexModelBuildingService module](#literals-for-boto3-lexmodelbuildingservice-module)
   - [ChannelStatus](#channelstatus)

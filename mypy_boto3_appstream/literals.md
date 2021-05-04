@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AppStream](./README.md) > Literals
 
-Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
-type annotations stubs module [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+Auto-generated documentation for
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+type annotations stubs module
+[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [Literals for boto3 AppStream module](#literals-for-boto3-appstream-module)
   - [AccessEndpointType](#accessendpointtype)

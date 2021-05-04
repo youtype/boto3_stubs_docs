@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticTranscoder
 
-Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+Auto-generated documentation for
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+type annotations stubs module
+[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ```bash
 pip install mypy-boto3-elastictranscoder
@@ -20,7 +22,8 @@ pip install mypy-boto3-elastictranscoder
 
 ## ElasticTranscoderClient
 
-Type annotations for  `boto3.client("elastictranscoder")` as [ElasticTranscoderClient](./client.md)
+Type annotations for `boto3.client("elastictranscoder")` as
+[ElasticTranscoderClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 ```
 
-
 ElasticTranscoderClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job](./client.md#cancel-job)
 - [create_job](./client.md#create-job)
@@ -56,10 +57,8 @@ ElasticTranscoderClient [exceptions](./client.md#exceptions)
 - [update_pipeline_notifications](./client.md#update-pipeline-notifications)
 - [update_pipeline_status](./client.md#update-pipeline-status)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [IncompatibleVersionException](./client.md#incompatibleversionexception)
@@ -69,14 +68,10 @@ ElasticTranscoderClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elastictranscoder").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elastictranscoder").get_paginator("...")`.
 
 Can be used directly:
 
@@ -89,12 +84,10 @@ from mypy_boto3_elastictranscoder.paginators import ListJobsByPipelinePaginator,
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("elastictranscoder").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("elastictranscoder").get_waiter("...")`.
 
 Can be used directly:
 
@@ -103,9 +96,6 @@ from mypy_boto3_elastictranscoder.waiters import JobCompleteWaiter, ...
 ```
 
 - [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
-
-
-
 
 ## Literals
 
@@ -123,13 +113,10 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [ListPresetsPaginatorName](./literals.md#listpresetspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

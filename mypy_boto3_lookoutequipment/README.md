@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LookoutEquipment
 
-Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
-type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+Auto-generated documentation for
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+type annotations stubs module
+[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 ```bash
 pip install mypy-boto3-lookoutequipment
@@ -18,7 +20,8 @@ pip install mypy-boto3-lookoutequipment
 
 ## LookoutEquipmentClient
 
-Type annotations for  `boto3.client("lookoutequipment")` as [LookoutEquipmentClient](./client.md)
+Type annotations for `boto3.client("lookoutequipment")` as
+[LookoutEquipmentClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 ```
 
-
 LookoutEquipmentClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_dataset](./client.md#create-dataset)
 - [create_inference_scheduler](./client.md#create-inference-scheduler)
@@ -57,10 +58,8 @@ LookoutEquipmentClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_inference_scheduler](./client.md#update-inference-scheduler)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -69,15 +68,6 @@ LookoutEquipmentClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -97,13 +87,10 @@ from mypy_boto3_lookoutequipment.literals import DataUploadFrequency, ...
 - [ModelStatus](./literals.md#modelstatus)
 - [TargetSamplingRate](./literals.md#targetsamplingrate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

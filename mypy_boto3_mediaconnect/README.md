@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaConnect
 
-Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
-type annotations stubs module [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+Auto-generated documentation for
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+type annotations stubs module
+[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 ```bash
 pip install mypy-boto3-mediaconnect
@@ -20,7 +22,8 @@ pip install mypy-boto3-mediaconnect
 
 ## MediaConnectClient
 
-Type annotations for  `boto3.client("mediaconnect")` as [MediaConnectClient](./client.md)
+Type annotations for `boto3.client("mediaconnect")` as
+[MediaConnectClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 ```
 
-
 MediaConnectClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_flow_outputs](./client.md#add-flow-outputs)
 - [add_flow_sources](./client.md#add-flow-sources)
 - [add_flow_vpc_interfaces](./client.md#add-flow-vpc-interfaces)
@@ -66,10 +67,8 @@ MediaConnectClient [exceptions](./client.md#exceptions)
 - [update_flow_output](./client.md#update-flow-output)
 - [update_flow_source](./client.md#update-flow-source)
 
-
-
-
 ### Exceptions
+
 - [AddFlowOutputs420Exception](./client.md#addflowoutputs420exception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -81,14 +80,10 @@ MediaConnectClient [exceptions](./client.md#exceptions)
 - [ServiceUnavailableException](./client.md#serviceunavailableexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediaconnect").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediaconnect").get_paginator("...")`.
 
 Can be used directly:
 
@@ -101,12 +96,10 @@ from mypy_boto3_mediaconnect.paginators import ListEntitlementsPaginator, ...
 - [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("mediaconnect").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("mediaconnect").get_waiter("...")`.
 
 Can be used directly:
 
@@ -117,9 +110,6 @@ from mypy_boto3_mediaconnect.waiters import FlowActiveWaiter, ...
 - [FlowActiveWaiter](./waiters.md#flowactivewaiter)
 - [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
 - [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)
-
-
-
 
 ## Literals
 
@@ -150,13 +140,10 @@ from mypy_boto3_mediaconnect.literals import Algorithm, ...
 - [State](./literals.md#state)
 - [Status](./literals.md#status)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > IoT
 
-Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
-type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+Auto-generated documentation for
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+type annotations stubs module
+[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
 ```bash
 pip install mypy-boto3-iot
@@ -19,7 +21,7 @@ pip install mypy-boto3-iot
 
 ## IoTClient
 
-Type annotations for  `boto3.client("iot")` as [IoTClient](./client.md)
+Type annotations for `boto3.client("iot")` as [IoTClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_iot.client import IoTClient
 ```
 
-
 IoTClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_certificate_transfer](./client.md#accept-certificate-transfer)
 - [add_thing_to_billing_group](./client.md#add-thing-to-billing-group)
 - [add_thing_to_thing_group](./client.md#add-thing-to-thing-group)
@@ -260,10 +260,8 @@ IoTClient [exceptions](./client.md#exceptions)
 - [update_topic_rule_destination](./client.md#update-topic-rule-destination)
 - [validate_security_profile_behaviors](./client.md#validate-security-profile-behaviors)
 
-
-
-
 ### Exceptions
+
 - [CertificateConflictException](./client.md#certificateconflictexception)
 - [CertificateStateException](./client.md#certificatestateexception)
 - [CertificateValidationException](./client.md#certificatevalidationexception)
@@ -295,14 +293,10 @@ IoTClient [exceptions](./client.md#exceptions)
 - [VersionConflictException](./client.md#versionconflictexception)
 - [VersionsLimitExceededException](./client.md#versionslimitexceededexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("iot").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("iot").get_paginator("...")`.
 
 Can be used directly:
 
@@ -362,11 +356,6 @@ from mypy_boto3_iot.paginators import GetBehaviorModelTrainingSummariesPaginator
 - [ListTopicRulesPaginator](./paginators.md#listtopicrulespaginator)
 - [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
 - [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -491,13 +480,10 @@ from mypy_boto3_iot.literals import AbortAction, ...
 - [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
 - [ViolationEventType](./literals.md#violationeventtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

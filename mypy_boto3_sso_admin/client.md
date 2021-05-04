@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSOAdmin](./README.md) > SSOAdminClient
 
-Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
-type annotations stubs module [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+Auto-generated documentation for
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+type annotations stubs module
+[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [SSOAdminClient for boto3 SSOAdmin module](#ssoadminclient-for-boto3-ssoadmin-module)
   - [SSOAdminClient](#ssoadminclient)
@@ -57,12 +59,13 @@ def get_sso-admin_client() -> SSOAdminClient:
     return boto3.client("sso-admin")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
+Boto3 documentation:
+[SSOAdmin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sso_admin.client import Exceptions
@@ -70,7 +73,6 @@ from mypy_boto3_sso_admin.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -83,560 +85,598 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### attach_managed_policy_to_permission_set
 
-Type annotations for `boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
 
-```python
-def attach_managed_policy_to_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    ManagedPolicyArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `ManagedPolicyArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("sso-admin").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate]
+Boto3 documentation:
+[SSOAdmin.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_account_assignment
 
-Type annotations for `boto3.client("sso-admin").create_account_assignment` method.
+Type annotations for `boto3.client("sso-admin").create_account_assignment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment]
+Boto3 documentation:
+[SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
 
-```python
-def create_account_assignment(
-    self,
-    InstanceArn: str,
-    TargetId: str,
-    TargetType: Literal['AWS_ACCOUNT'],
-    PermissionSetArn: str,
-    PrincipalType: PrincipalType,
-    PrincipalId: str
-) -> CreateAccountAssignmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `TargetId`: `str` *(required)*
+- `TargetType`: `Literal['AWS_ACCOUNT']` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `PrincipalType`:
+  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#principaltype)
+  *(required)*
+- `PrincipalId`: `str` *(required)*
+
+Returns
+[CreateAccountAssignmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#createaccountassignmentresponsetypedef).
 
 ### create_instance_access_control_attribute_configuration
 
-Type annotations for `boto3.client("sso-admin").create_instance_access_control_attribute_configuration` method.
+Type annotations for
+`boto3.client("sso-admin").create_instance_access_control_attribute_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration]
+Boto3 documentation:
+[SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
 
-```python
-def create_instance_access_control_attribute_configuration(
-    self,
-    InstanceArn: str,
-    InstanceAccessControlAttributeConfiguration: "InstanceAccessControlAttributeConfigurationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `InstanceAccessControlAttributeConfiguration`:
+  [InstanceAccessControlAttributeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#instanceaccesscontrolattributeconfigurationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_permission_set
 
 Type annotations for `boto3.client("sso-admin").create_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
 
-```python
-def create_permission_set(
-    self,
-    Name: str,
-    InstanceArn: str,
-    Description: str = None,
-    SessionDuration: str = None,
-    RelayState: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreatePermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `InstanceArn`: `str` *(required)*
+- `Description`: `str`
+- `SessionDuration`: `str`
+- `RelayState`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#tagtypedef)\]
+
+Returns
+[CreatePermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#createpermissionsetresponsetypedef).
 
 ### delete_account_assignment
 
-Type annotations for `boto3.client("sso-admin").delete_account_assignment` method.
+Type annotations for `boto3.client("sso-admin").delete_account_assignment`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment]
+Boto3 documentation:
+[SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
 
-```python
-def delete_account_assignment(
-    self,
-    InstanceArn: str,
-    TargetId: str,
-    TargetType: Literal['AWS_ACCOUNT'],
-    PermissionSetArn: str,
-    PrincipalType: PrincipalType,
-    PrincipalId: str
-) -> DeleteAccountAssignmentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `TargetId`: `str` *(required)*
+- `TargetType`: `Literal['AWS_ACCOUNT']` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `PrincipalType`:
+  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#principaltype)
+  *(required)*
+- `PrincipalId`: `str` *(required)*
+
+Returns
+[DeleteAccountAssignmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#deleteaccountassignmentresponsetypedef).
 
 ### delete_inline_policy_from_permission_set
 
-Type annotations for `boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
 
-```python
-def delete_inline_policy_from_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_instance_access_control_attribute_configuration
 
-Type annotations for `boto3.client("sso-admin").delete_instance_access_control_attribute_configuration` method.
+Type annotations for
+`boto3.client("sso-admin").delete_instance_access_control_attribute_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration]
+Boto3 documentation:
+[SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
 
-```python
-def delete_instance_access_control_attribute_configuration(
-    self,
-    InstanceArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_permission_set
 
 Type annotations for `boto3.client("sso-admin").delete_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
 
-```python
-def delete_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_assignment_creation_status
 
-Type annotations for `boto3.client("sso-admin").describe_account_assignment_creation_status` method.
+Type annotations for
+`boto3.client("sso-admin").describe_account_assignment_creation_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status]
+Boto3 documentation:
+[SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
 
-```python
-def describe_account_assignment_creation_status(
-    self,
-    InstanceArn: str,
-    AccountAssignmentCreationRequestId: str
-) -> DescribeAccountAssignmentCreationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `AccountAssignmentCreationRequestId`: `str` *(required)*
+
+Returns
+[DescribeAccountAssignmentCreationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#describeaccountassignmentcreationstatusresponsetypedef).
 
 ### describe_account_assignment_deletion_status
 
-Type annotations for `boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
+Type annotations for
+`boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status]
+Boto3 documentation:
+[SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
 
-```python
-def describe_account_assignment_deletion_status(
-    self,
-    InstanceArn: str,
-    AccountAssignmentDeletionRequestId: str
-) -> DescribeAccountAssignmentDeletionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `AccountAssignmentDeletionRequestId`: `str` *(required)*
+
+Returns
+[DescribeAccountAssignmentDeletionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#describeaccountassignmentdeletionstatusresponsetypedef).
 
 ### describe_instance_access_control_attribute_configuration
 
-Type annotations for `boto3.client("sso-admin").describe_instance_access_control_attribute_configuration` method.
+Type annotations for
+`boto3.client("sso-admin").describe_instance_access_control_attribute_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration]
+Boto3 documentation:
+[SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
 
-```python
-def describe_instance_access_control_attribute_configuration(
-    self,
-    InstanceArn: str
-) -> DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+
+Returns
+[DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#describeinstanceaccesscontrolattributeconfigurationresponsetypedef).
 
 ### describe_permission_set
 
-Type annotations for `boto3.client("sso-admin").describe_permission_set` method.
+Type annotations for `boto3.client("sso-admin").describe_permission_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
 
-```python
-def describe_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str
-) -> DescribePermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+
+Returns
+[DescribePermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#describepermissionsetresponsetypedef).
 
 ### describe_permission_set_provisioning_status
 
-Type annotations for `boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
+Type annotations for
+`boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status]
+Boto3 documentation:
+[SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
 
-```python
-def describe_permission_set_provisioning_status(
-    self,
-    InstanceArn: str,
-    ProvisionPermissionSetRequestId: str
-) -> DescribePermissionSetProvisioningStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `ProvisionPermissionSetRequestId`: `str` *(required)*
+
+Returns
+[DescribePermissionSetProvisioningStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#describepermissionsetprovisioningstatusresponsetypedef).
 
 ### detach_managed_policy_from_permission_set
 
-Type annotations for `boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
 
-```python
-def detach_managed_policy_from_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    ManagedPolicyArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `ManagedPolicyArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sso-admin").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url]
+Boto3 documentation:
+[SSOAdmin.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_inline_policy_for_permission_set
 
-Type annotations for `boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
 
-```python
-def get_inline_policy_for_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str
-) -> GetInlinePolicyForPermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+
+Returns
+[GetInlinePolicyForPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#getinlinepolicyforpermissionsetresponsetypedef).
 
 ### list_account_assignment_creation_status
 
-Type annotations for `boto3.client("sso-admin").list_account_assignment_creation_status` method.
+Type annotations for
+`boto3.client("sso-admin").list_account_assignment_creation_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status]
+Boto3 documentation:
+[SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
 
-```python
-def list_account_assignment_creation_status(
-    self,
-    InstanceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filter: OperationStatusFilterTypeDef = None
-) -> ListAccountAssignmentCreationStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filter`:
+  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+
+Returns
+[ListAccountAssignmentCreationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentcreationstatusresponsetypedef).
 
 ### list_account_assignment_deletion_status
 
-Type annotations for `boto3.client("sso-admin").list_account_assignment_deletion_status` method.
+Type annotations for
+`boto3.client("sso-admin").list_account_assignment_deletion_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status]
+Boto3 documentation:
+[SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
 
-```python
-def list_account_assignment_deletion_status(
-    self,
-    InstanceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filter: OperationStatusFilterTypeDef = None
-) -> ListAccountAssignmentDeletionStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filter`:
+  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+
+Returns
+[ListAccountAssignmentDeletionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentdeletionstatusresponsetypedef).
 
 ### list_account_assignments
 
-Type annotations for `boto3.client("sso-admin").list_account_assignments` method.
+Type annotations for `boto3.client("sso-admin").list_account_assignments`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments]
+Boto3 documentation:
+[SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
 
-```python
-def list_account_assignments(
-    self,
-    InstanceArn: str,
-    AccountId: str,
-    PermissionSetArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAccountAssignmentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAccountAssignmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentsresponsetypedef).
 
 ### list_accounts_for_provisioned_permission_set
 
-Type annotations for `boto3.client("sso-admin").list_accounts_for_provisioned_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").list_accounts_for_provisioned_permission_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
 
-```python
-def list_accounts_for_provisioned_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    ProvisioningStatus: ProvisioningStatus = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAccountsForProvisionedPermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `ProvisioningStatus`:
+  [ProvisioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#provisioningstatus)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAccountsForProvisionedPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountsforprovisionedpermissionsetresponsetypedef).
 
 ### list_instances
 
 Type annotations for `boto3.client("sso-admin").list_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances]
+Boto3 documentation:
+[SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
 
-```python
-def list_instances(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listinstancesresponsetypedef).
 
 ### list_managed_policies_in_permission_set
 
-Type annotations for `boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
 
-```python
-def list_managed_policies_in_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListManagedPoliciesInPermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListManagedPoliciesInPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listmanagedpoliciesinpermissionsetresponsetypedef).
 
 ### list_permission_set_provisioning_status
 
-Type annotations for `boto3.client("sso-admin").list_permission_set_provisioning_status` method.
+Type annotations for
+`boto3.client("sso-admin").list_permission_set_provisioning_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status]
+Boto3 documentation:
+[SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
 
-```python
-def list_permission_set_provisioning_status(
-    self,
-    InstanceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filter: OperationStatusFilterTypeDef = None
-) -> ListPermissionSetProvisioningStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filter`:
+  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+
+Returns
+[ListPermissionSetProvisioningStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetprovisioningstatusresponsetypedef).
 
 ### list_permission_sets
 
 Type annotations for `boto3.client("sso-admin").list_permission_sets` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets]
+Boto3 documentation:
+[SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
 
-```python
-def list_permission_sets(
-    self,
-    InstanceArn: str,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPermissionSetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPermissionSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetsresponsetypedef).
 
 ### list_permission_sets_provisioned_to_account
 
-Type annotations for `boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
+Type annotations for
+`boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account]
+Boto3 documentation:
+[SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
 
-```python
-def list_permission_sets_provisioned_to_account(
-    self,
-    InstanceArn: str,
-    AccountId: str,
-    ProvisioningStatus: ProvisioningStatus = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListPermissionSetsProvisionedToAccountResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `AccountId`: `str` *(required)*
+- `ProvisioningStatus`:
+  [ProvisioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#provisioningstatus)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListPermissionSetsProvisionedToAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetsprovisionedtoaccountresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("sso-admin").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource]
+Boto3 documentation:
+[SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    InstanceArn: str,
-    ResourceArn: str,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### provision_permission_set
 
-Type annotations for `boto3.client("sso-admin").provision_permission_set` method.
+Type annotations for `boto3.client("sso-admin").provision_permission_set`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
 
-```python
-def provision_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    TargetType: ProvisionTargetType,
-    TargetId: str = None
-) -> ProvisionPermissionSetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `TargetType`:
+  [ProvisionTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#provisiontargettype)
+  *(required)*
+- `TargetId`: `str`
+
+Returns
+[ProvisionPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#provisionpermissionsetresponsetypedef).
 
 ### put_inline_policy_to_permission_set
 
-Type annotations for `boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
+Type annotations for
+`boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
 
-```python
-def put_inline_policy_to_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    InlinePolicy: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `InlinePolicy`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
 Type annotations for `boto3.client("sso-admin").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource]
+Boto3 documentation:
+[SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    InstanceArn: str,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("sso-admin").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource]
+Boto3 documentation:
+[SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    InstanceArn: str,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_instance_access_control_attribute_configuration
 
-Type annotations for `boto3.client("sso-admin").update_instance_access_control_attribute_configuration` method.
+Type annotations for
+`boto3.client("sso-admin").update_instance_access_control_attribute_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration]
+Boto3 documentation:
+[SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
 
-```python
-def update_instance_access_control_attribute_configuration(
-    self,
-    InstanceArn: str,
-    InstanceAccessControlAttributeConfiguration: "InstanceAccessControlAttributeConfigurationTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `InstanceArn`: `str` *(required)*
+- `InstanceAccessControlAttributeConfiguration`:
+  [InstanceAccessControlAttributeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#instanceaccesscontrolattributeconfigurationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_permission_set
 
 Type annotations for `boto3.client("sso-admin").update_permission_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set]
+Boto3 documentation:
+[SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
 
-```python
-def update_permission_set(
-    self,
-    InstanceArn: str,
-    PermissionSetArn: str,
-    Description: str = None,
-    SessionDuration: str = None,
-    RelayState: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `InstanceArn`: `str` *(required)*
+- `PermissionSetArn`: `str` *(required)*
+- `Description`: `str`
+- `SessionDuration`: `str`
+- `RelayState`: `str`
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("sso-admin").get_paginator` method with overloads.
+Type annotations for `boto3.client("sso-admin").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_account_assignment_creation_status")` -> [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
-- `client.get_paginator("list_account_assignment_deletion_status")` -> [ListAccountAssignmentDeletionStatusPaginator](./paginators.md#listaccountassignmentdeletionstatuspaginator)
-- `client.get_paginator("list_account_assignments")` -> [ListAccountAssignmentsPaginator](./paginators.md#listaccountassignmentspaginator)
-- `client.get_paginator("list_accounts_for_provisioned_permission_set")` -> [ListAccountsForProvisionedPermissionSetPaginator](./paginators.md#listaccountsforprovisionedpermissionsetpaginator)
-- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_managed_policies_in_permission_set")` -> [ListManagedPoliciesInPermissionSetPaginator](./paginators.md#listmanagedpoliciesinpermissionsetpaginator)
-- `client.get_paginator("list_permission_set_provisioning_status")` -> [ListPermissionSetProvisioningStatusPaginator](./paginators.md#listpermissionsetprovisioningstatuspaginator)
-- `client.get_paginator("list_permission_sets")` -> [ListPermissionSetsPaginator](./paginators.md#listpermissionsetspaginator)
-- `client.get_paginator("list_permission_sets_provisioned_to_account")` -> [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
+- `client.get_paginator("list_account_assignment_creation_status")` ->
+  [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
+- `client.get_paginator("list_account_assignment_deletion_status")` ->
+  [ListAccountAssignmentDeletionStatusPaginator](./paginators.md#listaccountassignmentdeletionstatuspaginator)
+- `client.get_paginator("list_account_assignments")` ->
+  [ListAccountAssignmentsPaginator](./paginators.md#listaccountassignmentspaginator)
+- `client.get_paginator("list_accounts_for_provisioned_permission_set")` ->
+  [ListAccountsForProvisionedPermissionSetPaginator](./paginators.md#listaccountsforprovisionedpermissionsetpaginator)
+- `client.get_paginator("list_instances")` ->
+  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_managed_policies_in_permission_set")` ->
+  [ListManagedPoliciesInPermissionSetPaginator](./paginators.md#listmanagedpoliciesinpermissionsetpaginator)
+- `client.get_paginator("list_permission_set_provisioning_status")` ->
+  [ListPermissionSetProvisioningStatusPaginator](./paginators.md#listpermissionsetprovisioningstatuspaginator)
+- `client.get_paginator("list_permission_sets")` ->
+  [ListPermissionSetsPaginator](./paginators.md#listpermissionsetspaginator)
+- `client.get_paginator("list_permission_sets_provisioned_to_account")` ->
+  [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DataPipeline
 
-Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
-type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+Auto-generated documentation for
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+type annotations stubs module
+[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 ```bash
 pip install mypy-boto3-datapipeline
@@ -19,7 +21,8 @@ pip install mypy-boto3-datapipeline
 
 ## DataPipelineClient
 
-Type annotations for  `boto3.client("datapipeline")` as [DataPipelineClient](./client.md)
+Type annotations for `boto3.client("datapipeline")` as
+[DataPipelineClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_datapipeline.client import DataPipelineClient
 ```
 
-
 DataPipelineClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [activate_pipeline](./client.md#activate-pipeline)
 - [add_tags](./client.md#add-tags)
 - [can_paginate](./client.md#can-paginate)
@@ -56,10 +57,8 @@ DataPipelineClient [exceptions](./client.md#exceptions)
 - [set_task_status](./client.md#set-task-status)
 - [validate_pipeline_definition](./client.md#validate-pipeline-definition)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServiceError](./client.md#internalserviceerror)
 - [InvalidRequestException](./client.md#invalidrequestexception)
@@ -67,14 +66,10 @@ DataPipelineClient [exceptions](./client.md#exceptions)
 - [PipelineNotFoundException](./client.md#pipelinenotfoundexception)
 - [TaskNotFoundException](./client.md#tasknotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("datapipeline").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("datapipeline").get_paginator("...")`.
 
 Can be used directly:
 
@@ -85,11 +80,6 @@ from mypy_boto3_datapipeline.paginators import DescribeObjectsPaginator, ...
 - [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -107,13 +97,10 @@ from mypy_boto3_datapipeline.literals import DescribeObjectsPaginatorName, ...
 - [QueryObjectsPaginatorName](./literals.md#queryobjectspaginatorname)
 - [TaskStatus](./literals.md#taskstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

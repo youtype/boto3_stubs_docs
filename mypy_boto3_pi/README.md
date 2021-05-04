@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > PI
 
-Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+Auto-generated documentation for
+[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+type annotations stubs module
+[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
 ```bash
 pip install mypy-boto3-pi
@@ -18,7 +20,7 @@ pip install mypy-boto3-pi
 
 ## PIClient
 
-Type annotations for  `boto3.client("pi")` as [PIClient](./client.md)
+Type annotations for `boto3.client("pi")` as [PIClient](./client.md)
 
 Can be used directly:
 
@@ -26,34 +28,21 @@ Can be used directly:
 from mypy_boto3_pi.client import PIClient
 ```
 
-
 PIClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_dimension_keys](./client.md#describe-dimension-keys)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [get_resource_metrics](./client.md#get-resource-metrics)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServiceError](./client.md#internalserviceerror)
 - [InvalidArgumentException](./client.md#invalidargumentexception)
 - [NotAuthorizedException](./client.md#notauthorizedexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -67,13 +56,10 @@ from mypy_boto3_pi.literals import ServiceType, ...
 
 - [ServiceType](./literals.md#servicetype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -1,9 +1,12 @@
 # CodeStarconnectionsClient for boto3 CodeStarconnections module
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) > CodeStarconnectionsClient
+> [Index](../README.md) > [CodeStarconnections](./README.md) >
+> CodeStarconnectionsClient
 
-Auto-generated documentation for [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
-type annotations stubs module [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+Auto-generated documentation for
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+type annotations stubs module
+[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 - [CodeStarconnectionsClient for boto3 CodeStarconnections module](#codestarconnectionsclient-for-boto3-codestarconnections-module)
   - [CodeStarconnectionsClient](#codestarconnectionsclient)
@@ -37,12 +40,13 @@ def get_codestar-connections_client() -> CodeStarconnectionsClient:
     return boto3.client("codestar-connections")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
+Boto3 documentation:
+[CodeStarconnections.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codestar_connections.client import Exceptions
@@ -50,7 +54,6 @@ from mypy_boto3_codestar_connections.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -61,223 +64,230 @@ Exceptions:
 - `Exceptions.ResourceUnavailableException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
-Type annotations for `boto3.client("codestar-connections").can_paginate` method.
+Type annotations for `boto3.client("codestar-connections").can_paginate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate]
+Boto3 documentation:
+[CodeStarconnections.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_connection
 
-Type annotations for `boto3.client("codestar-connections").create_connection` method.
+Type annotations for `boto3.client("codestar-connections").create_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection]
+Boto3 documentation:
+[CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
 
-```python
-def create_connection(
-    self,
-    ConnectionName: str,
-    ProviderType: ProviderType = None,
-    Tags: List["TagTypeDef"] = None,
-    HostArn: str = None
-) -> CreateConnectionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionName`: `str` *(required)*
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+- `HostArn`: `str`
+
+Returns
+[CreateConnectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#createconnectionoutputtypedef).
 
 ### create_host
 
 Type annotations for `boto3.client("codestar-connections").create_host` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host]
+Boto3 documentation:
+[CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
 
-```python
-def create_host(
-    self,
-    Name: str,
-    ProviderType: ProviderType,
-    ProviderEndpoint: str,
-    VpcConfiguration: "VpcConfigurationTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHostOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `ProviderType`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+  *(required)*
+- `ProviderEndpoint`: `str` *(required)*
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#createhostoutputtypedef).
 
 ### delete_connection
 
-Type annotations for `boto3.client("codestar-connections").delete_connection` method.
+Type annotations for `boto3.client("codestar-connections").delete_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection]
+Boto3 documentation:
+[CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
 
-```python
-def delete_connection(
-    self,
-    ConnectionArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConnectionArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_host
 
 Type annotations for `boto3.client("codestar-connections").delete_host` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host]
+Boto3 documentation:
+[CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
 
-```python
-def delete_host(
-    self,
-    HostArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `HostArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("codestar-connections").generate_presigned_url` method.
+Type annotations for
+`boto3.client("codestar-connections").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeStarconnections.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_connection
 
-Type annotations for `boto3.client("codestar-connections").get_connection` method.
+Type annotations for `boto3.client("codestar-connections").get_connection`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection]
+Boto3 documentation:
+[CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
-```python
-def get_connection(
-    self,
-    ConnectionArn: str
-) -> GetConnectionOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ConnectionArn`: `str` *(required)*
+
+Returns
+[GetConnectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#getconnectionoutputtypedef).
 
 ### get_host
 
 Type annotations for `boto3.client("codestar-connections").get_host` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host]
+Boto3 documentation:
+[CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
-```python
-def get_host(
-    self,
-    HostArn: str
-) -> GetHostOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `HostArn`: `str` *(required)*
+
+Returns
+[GetHostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#gethostoutputtypedef).
 
 ### list_connections
 
-Type annotations for `boto3.client("codestar-connections").list_connections` method.
+Type annotations for `boto3.client("codestar-connections").list_connections`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections]
+Boto3 documentation:
+[CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
 
-```python
-def list_connections(
-    self,
-    ProviderTypeFilter: ProviderType = None,
-    HostArnFilter: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListConnectionsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ProviderTypeFilter`:
+  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `HostArnFilter`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListConnectionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listconnectionsoutputtypedef).
 
 ### list_hosts
 
 Type annotations for `boto3.client("codestar-connections").list_hosts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts]
+Boto3 documentation:
+[CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
-```python
-def list_hosts(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListHostsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListHostsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listhostsoutputtypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("codestar-connections").list_tags_for_resource` method.
+Type annotations for
+`boto3.client("codestar-connections").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource]
+Boto3 documentation:
+[CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listtagsforresourceoutputtypedef).
 
 ### tag_resource
 
-Type annotations for `boto3.client("codestar-connections").tag_resource` method.
+Type annotations for `boto3.client("codestar-connections").tag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource]
+Boto3 documentation:
+[CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Type annotations for `boto3.client("codestar-connections").untag_resource` method.
+Type annotations for `boto3.client("codestar-connections").untag_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource]
+Boto3 documentation:
+[CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_host
 
 Type annotations for `boto3.client("codestar-connections").update_host` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host]
+Boto3 documentation:
+[CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
 
-```python
-def update_host(
-    self,
-    HostArn: str,
-    ProviderEndpoint: str = None,
-    VpcConfiguration: "VpcConfigurationTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `HostArn`: `str` *(required)*
+- `ProviderEndpoint`: `str`
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
 
-
+Returns `Dict`\[`str`, `Any`\].

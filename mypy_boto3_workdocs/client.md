@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [WorkDocs](./README.md) > WorkDocsClient
 
-Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+Auto-generated documentation for
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+type annotations stubs module
+[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [WorkDocsClient for boto3 WorkDocs module](#workdocsclient-for-boto3-workdocs-module)
   - [WorkDocsClient](#workdocsclient)
@@ -67,12 +69,13 @@ def get_workdocs_client() -> WorkDocsClient:
     return boto3.client("workdocs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
+Boto3 documentation:
+[WorkDocs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_workdocs.client import Exceptions
@@ -80,7 +83,6 @@ from mypy_boto3_workdocs.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -111,772 +113,760 @@ Exceptions:
 - `Exceptions.UnauthorizedOperationException`
 - `Exceptions.UnauthorizedResourceAccessException`
 
-
 ## Methods
-
 
 ### abort_document_version_upload
 
-Type annotations for `boto3.client("workdocs").abort_document_version_upload` method.
+Type annotations for `boto3.client("workdocs").abort_document_version_upload`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload]
+Boto3 documentation:
+[WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
 
-```python
-def abort_document_version_upload(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### activate_user
 
 Type annotations for `boto3.client("workdocs").activate_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user]
+Boto3 documentation:
+[WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
 
-```python
-def activate_user(
-    self,
-    UserId: str,
-    AuthenticationToken: str = None
-) -> ActivateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+
+Returns
+[ActivateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#activateuserresponsetypedef).
 
 ### add_resource_permissions
 
-Type annotations for `boto3.client("workdocs").add_resource_permissions` method.
+Type annotations for `boto3.client("workdocs").add_resource_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions]
+Boto3 documentation:
+[WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
 
-```python
-def add_resource_permissions(
-    self,
-    ResourceId: str,
-    Principals: List[SharePrincipalTypeDef],
-    AuthenticationToken: str = None,
-    NotificationOptions: NotificationOptionsTypeDef = None
-) -> AddResourcePermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Principals`:
+  `List`\[[SharePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#shareprincipaltypedef)\]
+  *(required)*
+- `AuthenticationToken`: `str`
+- `NotificationOptions`:
+  [NotificationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#notificationoptionstypedef)
+
+Returns
+[AddResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#addresourcepermissionsresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("workdocs").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate]
+Boto3 documentation:
+[WorkDocs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_comment
 
 Type annotations for `boto3.client("workdocs").create_comment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment]
+Boto3 documentation:
+[WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
 
-```python
-def create_comment(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    Text: str,
-    AuthenticationToken: str = None,
-    ParentId: str = None,
-    ThreadId: str = None,
-    Visibility: CommentVisibilityType = None,
-    NotifyCollaborators: bool = None
-) -> CreateCommentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `Text`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `ParentId`: `str`
+- `ThreadId`: `str`
+- `Visibility`:
+  [CommentVisibilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#commentvisibilitytype)
+- `NotifyCollaborators`: `bool`
+
+Returns
+[CreateCommentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createcommentresponsetypedef).
 
 ### create_custom_metadata
 
 Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata]
+Boto3 documentation:
+[WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
 
-```python
-def create_custom_metadata(
-    self,
-    ResourceId: str,
-    CustomMetadata: Dict[str, str],
-    AuthenticationToken: str = None,
-    VersionId: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `CustomMetadata`: `Dict`\[`str`, `str`\] *(required)*
+- `AuthenticationToken`: `str`
+- `VersionId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_folder
 
 Type annotations for `boto3.client("workdocs").create_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder]
+Boto3 documentation:
+[WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
 
-```python
-def create_folder(
-    self,
-    ParentFolderId: str,
-    AuthenticationToken: str = None,
-    Name: str = None
-) -> CreateFolderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentFolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Name`: `str`
+
+Returns
+[CreateFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createfolderresponsetypedef).
 
 ### create_labels
 
 Type annotations for `boto3.client("workdocs").create_labels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels]
+Boto3 documentation:
+[WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
 
-```python
-def create_labels(
-    self,
-    ResourceId: str,
-    Labels: List[str],
-    AuthenticationToken: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Labels`: `List`\[`str`\] *(required)*
+- `AuthenticationToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_notification_subscription
 
-Type annotations for `boto3.client("workdocs").create_notification_subscription` method.
+Type annotations for
+`boto3.client("workdocs").create_notification_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription]
+Boto3 documentation:
+[WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
 
-```python
-def create_notification_subscription(
-    self,
-    OrganizationId: str,
-    Endpoint: str,
-    Protocol: Literal['HTTPS'],
-    SubscriptionType: Literal['ALL']
-) -> CreateNotificationSubscriptionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Endpoint`: `str` *(required)*
+- `Protocol`: `Literal['HTTPS']` *(required)*
+- `SubscriptionType`: `Literal['ALL']` *(required)*
+
+Returns
+[CreateNotificationSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createnotificationsubscriptionresponsetypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("workdocs").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user]
+Boto3 documentation:
+[WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
 
-```python
-def create_user(
-    self,
-    Username: str,
-    GivenName: str,
-    Surname: str,
-    Password: str,
-    OrganizationId: str = None,
-    EmailAddress: str = None,
-    TimeZoneId: str = None,
-    StorageRule: "StorageRuleTypeTypeDef" = None,
-    AuthenticationToken: str = None
-) -> CreateUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Username`: `str` *(required)*
+- `GivenName`: `str` *(required)*
+- `Surname`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `OrganizationId`: `str`
+- `EmailAddress`: `str`
+- `TimeZoneId`: `str`
+- `StorageRule`:
+  [StorageRuleTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#storageruletypetypedef)
+- `AuthenticationToken`: `str`
+
+Returns
+[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createuserresponsetypedef).
 
 ### deactivate_user
 
 Type annotations for `boto3.client("workdocs").deactivate_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user]
+Boto3 documentation:
+[WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
 
-```python
-def deactivate_user(
-    self,
-    UserId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### delete_comment
 
 Type annotations for `boto3.client("workdocs").delete_comment` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment]
+Boto3 documentation:
+[WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
 
-```python
-def delete_comment(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    CommentId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `CommentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### delete_custom_metadata
 
 Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata]
+Boto3 documentation:
+[WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
 
-```python
-def delete_custom_metadata(
-    self,
-    ResourceId: str,
-    AuthenticationToken: str = None,
-    VersionId: str = None,
-    Keys: List[str] = None,
-    DeleteAll: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `VersionId`: `str`
+- `Keys`: `List`\[`str`\]
+- `DeleteAll`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_document
 
 Type annotations for `boto3.client("workdocs").delete_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document]
+Boto3 documentation:
+[WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
 
-```python
-def delete_document(
-    self,
-    DocumentId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### delete_folder
 
 Type annotations for `boto3.client("workdocs").delete_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder]
+Boto3 documentation:
+[WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
 
-```python
-def delete_folder(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### delete_folder_contents
 
 Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents]
+Boto3 documentation:
+[WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
 
-```python
-def delete_folder_contents(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### delete_labels
 
 Type annotations for `boto3.client("workdocs").delete_labels` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels]
+Boto3 documentation:
+[WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
 
-```python
-def delete_labels(
-    self,
-    ResourceId: str,
-    AuthenticationToken: str = None,
-    Labels: List[str] = None,
-    DeleteAll: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Labels`: `List`\[`str`\]
+- `DeleteAll`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_notification_subscription
 
-Type annotations for `boto3.client("workdocs").delete_notification_subscription` method.
+Type annotations for
+`boto3.client("workdocs").delete_notification_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription]
+Boto3 documentation:
+[WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
 
-```python
-def delete_notification_subscription(
-    self,
-    SubscriptionId: str,
-    OrganizationId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SubscriptionId`: `str` *(required)*
+- `OrganizationId`: `str` *(required)*
 
 ### delete_user
 
 Type annotations for `boto3.client("workdocs").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user]
+Boto3 documentation:
+[WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    UserId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### describe_activities
 
 Type annotations for `boto3.client("workdocs").describe_activities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities]
+Boto3 documentation:
+[WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
 
-```python
-def describe_activities(
-    self,
-    AuthenticationToken: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    OrganizationId: str = None,
-    ActivityTypes: str = None,
-    ResourceId: str = None,
-    UserId: str = None,
-    IncludeIndirectActivities: bool = None,
-    Limit: int = None,
-    Marker: str = None
-) -> DescribeActivitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationToken`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `OrganizationId`: `str`
+- `ActivityTypes`: `str`
+- `ResourceId`: `str`
+- `UserId`: `str`
+- `IncludeIndirectActivities`: `bool`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeactivitiesresponsetypedef).
 
 ### describe_comments
 
 Type annotations for `boto3.client("workdocs").describe_comments` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments]
+Boto3 documentation:
+[WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
 
-```python
-def describe_comments(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    AuthenticationToken: str = None,
-    Limit: int = None,
-    Marker: str = None
-) -> DescribeCommentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeCommentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describecommentsresponsetypedef).
 
 ### describe_document_versions
 
-Type annotations for `boto3.client("workdocs").describe_document_versions` method.
+Type annotations for `boto3.client("workdocs").describe_document_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions]
+Boto3 documentation:
+[WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
 
-```python
-def describe_document_versions(
-    self,
-    DocumentId: str,
-    AuthenticationToken: str = None,
-    Marker: str = None,
-    Limit: int = None,
-    Include: str = None,
-    Fields: str = None
-) -> DescribeDocumentVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Marker`: `str`
+- `Limit`: `int`
+- `Include`: `str`
+- `Fields`: `str`
+
+Returns
+[DescribeDocumentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describedocumentversionsresponsetypedef).
 
 ### describe_folder_contents
 
-Type annotations for `boto3.client("workdocs").describe_folder_contents` method.
+Type annotations for `boto3.client("workdocs").describe_folder_contents`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents]
+Boto3 documentation:
+[WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
 
-```python
-def describe_folder_contents(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None,
-    Sort: ResourceSortType = None,
-    Order: OrderType = None,
-    Limit: int = None,
-    Marker: str = None,
-    Type: FolderContentType = None,
-    Include: str = None
-) -> DescribeFolderContentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Sort`:
+  [ResourceSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcesorttype)
+- `Order`:
+  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
+- `Limit`: `int`
+- `Marker`: `str`
+- `Type`:
+  [FolderContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#foldercontenttype)
+- `Include`: `str`
+
+Returns
+[DescribeFolderContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describefoldercontentsresponsetypedef).
 
 ### describe_groups
 
 Type annotations for `boto3.client("workdocs").describe_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups]
+Boto3 documentation:
+[WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
 
-```python
-def describe_groups(
-    self,
-    SearchQuery: str,
-    AuthenticationToken: str = None,
-    OrganizationId: str = None,
-    Marker: str = None,
-    Limit: int = None
-) -> DescribeGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SearchQuery`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `OrganizationId`: `str`
+- `Marker`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describegroupsresponsetypedef).
 
 ### describe_notification_subscriptions
 
-Type annotations for `boto3.client("workdocs").describe_notification_subscriptions` method.
+Type annotations for
+`boto3.client("workdocs").describe_notification_subscriptions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions]
+Boto3 documentation:
+[WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
 
-```python
-def describe_notification_subscriptions(
-    self,
-    OrganizationId: str,
-    Marker: str = None,
-    Limit: int = None
-) -> DescribeNotificationSubscriptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Marker`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeNotificationSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describenotificationsubscriptionsresponsetypedef).
 
 ### describe_resource_permissions
 
-Type annotations for `boto3.client("workdocs").describe_resource_permissions` method.
+Type annotations for `boto3.client("workdocs").describe_resource_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions]
+Boto3 documentation:
+[WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
 
-```python
-def describe_resource_permissions(
-    self,
-    ResourceId: str,
-    AuthenticationToken: str = None,
-    PrincipalId: str = None,
-    Limit: int = None,
-    Marker: str = None
-) -> DescribeResourcePermissionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `PrincipalId`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeresourcepermissionsresponsetypedef).
 
 ### describe_root_folders
 
 Type annotations for `boto3.client("workdocs").describe_root_folders` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders]
+Boto3 documentation:
+[WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
 
-```python
-def describe_root_folders(
-    self,
-    AuthenticationToken: str,
-    Limit: int = None,
-    Marker: str = None
-) -> DescribeRootFoldersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationToken`: `str` *(required)*
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeRootFoldersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describerootfoldersresponsetypedef).
 
 ### describe_users
 
 Type annotations for `boto3.client("workdocs").describe_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users]
+Boto3 documentation:
+[WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
 
-```python
-def describe_users(
-    self,
-    AuthenticationToken: str = None,
-    OrganizationId: str = None,
-    UserIds: str = None,
-    Query: str = None,
-    Include: UserFilterType = None,
-    Order: OrderType = None,
-    Sort: UserSortType = None,
-    Marker: str = None,
-    Limit: int = None,
-    Fields: str = None
-) -> DescribeUsersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationToken`: `str`
+- `OrganizationId`: `str`
+- `UserIds`: `str`
+- `Query`: `str`
+- `Include`:
+  [UserFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#userfiltertype)
+- `Order`:
+  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
+- `Sort`:
+  [UserSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usersorttype)
+- `Marker`: `str`
+- `Limit`: `int`
+- `Fields`: `str`
+
+Returns
+[DescribeUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeusersresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("workdocs").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url]
+Boto3 documentation:
+[WorkDocs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_current_user
 
 Type annotations for `boto3.client("workdocs").get_current_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user]
+Boto3 documentation:
+[WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
 
-```python
-def get_current_user(
-    self,
-    AuthenticationToken: str
-) -> GetCurrentUserResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationToken`: `str` *(required)*
+
+Returns
+[GetCurrentUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getcurrentuserresponsetypedef).
 
 ### get_document
 
 Type annotations for `boto3.client("workdocs").get_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document]
+Boto3 documentation:
+[WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
 
-```python
-def get_document(
-    self,
-    DocumentId: str,
-    AuthenticationToken: str = None,
-    IncludeCustomMetadata: bool = None
-) -> GetDocumentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `IncludeCustomMetadata`: `bool`
+
+Returns
+[GetDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentresponsetypedef).
 
 ### get_document_path
 
 Type annotations for `boto3.client("workdocs").get_document_path` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path]
+Boto3 documentation:
+[WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
 
-```python
-def get_document_path(
-    self,
-    DocumentId: str,
-    AuthenticationToken: str = None,
-    Limit: int = None,
-    Fields: str = None,
-    Marker: str = None
-) -> GetDocumentPathResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Limit`: `int`
+- `Fields`: `str`
+- `Marker`: `str`
+
+Returns
+[GetDocumentPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentpathresponsetypedef).
 
 ### get_document_version
 
 Type annotations for `boto3.client("workdocs").get_document_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version]
+Boto3 documentation:
+[WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
 
-```python
-def get_document_version(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    AuthenticationToken: str = None,
-    Fields: str = None,
-    IncludeCustomMetadata: bool = None
-) -> GetDocumentVersionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Fields`: `str`
+- `IncludeCustomMetadata`: `bool`
+
+Returns
+[GetDocumentVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentversionresponsetypedef).
 
 ### get_folder
 
 Type annotations for `boto3.client("workdocs").get_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder]
+Boto3 documentation:
+[WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
 
-```python
-def get_folder(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None,
-    IncludeCustomMetadata: bool = None
-) -> GetFolderResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `IncludeCustomMetadata`: `bool`
+
+Returns
+[GetFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getfolderresponsetypedef).
 
 ### get_folder_path
 
 Type annotations for `boto3.client("workdocs").get_folder_path` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path]
+Boto3 documentation:
+[WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
 
-```python
-def get_folder_path(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None,
-    Limit: int = None,
-    Fields: str = None,
-    Marker: str = None
-) -> GetFolderPathResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Limit`: `int`
+- `Fields`: `str`
+- `Marker`: `str`
+
+Returns
+[GetFolderPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getfolderpathresponsetypedef).
 
 ### get_resources
 
 Type annotations for `boto3.client("workdocs").get_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources]
+Boto3 documentation:
+[WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
 
-```python
-def get_resources(
-    self,
-    AuthenticationToken: str = None,
-    UserId: str = None,
-    CollectionType: Literal['SHARED_WITH_ME'] = None,
-    Limit: int = None,
-    Marker: str = None
-) -> GetResourcesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AuthenticationToken`: `str`
+- `UserId`: `str`
+- `CollectionType`: `Literal['SHARED_WITH_ME']`
+- `Limit`: `int`
+- `Marker`: `str`
+
+Returns
+[GetResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getresourcesresponsetypedef).
 
 ### initiate_document_version_upload
 
-Type annotations for `boto3.client("workdocs").initiate_document_version_upload` method.
+Type annotations for
+`boto3.client("workdocs").initiate_document_version_upload` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload]
+Boto3 documentation:
+[WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
 
-```python
-def initiate_document_version_upload(
-    self,
-    ParentFolderId: str,
-    AuthenticationToken: str = None,
-    Id: str = None,
-    Name: str = None,
-    ContentCreatedTimestamp: datetime = None,
-    ContentModifiedTimestamp: datetime = None,
-    ContentType: str = None,
-    DocumentSizeInBytes: int = None
-) -> InitiateDocumentVersionUploadResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ParentFolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `ContentCreatedTimestamp`: `datetime`
+- `ContentModifiedTimestamp`: `datetime`
+- `ContentType`: `str`
+- `DocumentSizeInBytes`: `int`
+
+Returns
+[InitiateDocumentVersionUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#initiatedocumentversionuploadresponsetypedef).
 
 ### remove_all_resource_permissions
 
-Type annotations for `boto3.client("workdocs").remove_all_resource_permissions` method.
+Type annotations for `boto3.client("workdocs").remove_all_resource_permissions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions]
+Boto3 documentation:
+[WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
 
-```python
-def remove_all_resource_permissions(
-    self,
-    ResourceId: str,
-    AuthenticationToken: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `AuthenticationToken`: `str`
 
 ### remove_resource_permission
 
-Type annotations for `boto3.client("workdocs").remove_resource_permission` method.
+Type annotations for `boto3.client("workdocs").remove_resource_permission`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission]
+Boto3 documentation:
+[WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
 
-```python
-def remove_resource_permission(
-    self,
-    ResourceId: str,
-    PrincipalId: str,
-    AuthenticationToken: str = None,
-    PrincipalType: PrincipalType = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `PrincipalId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `PrincipalType`:
+  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#principaltype)
 
 ### update_document
 
 Type annotations for `boto3.client("workdocs").update_document` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document]
+Boto3 documentation:
+[WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
 
-```python
-def update_document(
-    self,
-    DocumentId: str,
-    AuthenticationToken: str = None,
-    Name: str = None,
-    ParentFolderId: str = None,
-    ResourceState: ResourceStateType = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Name`: `str`
+- `ParentFolderId`: `str`
+- `ResourceState`:
+  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
 
 ### update_document_version
 
 Type annotations for `boto3.client("workdocs").update_document_version` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version]
+Boto3 documentation:
+[WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
 
-```python
-def update_document_version(
-    self,
-    DocumentId: str,
-    VersionId: str,
-    AuthenticationToken: str = None,
-    VersionStatus: Literal['ACTIVE'] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DocumentId`: `str` *(required)*
+- `VersionId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `VersionStatus`: `Literal['ACTIVE']`
 
 ### update_folder
 
 Type annotations for `boto3.client("workdocs").update_folder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder]
+Boto3 documentation:
+[WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
 
-```python
-def update_folder(
-    self,
-    FolderId: str,
-    AuthenticationToken: str = None,
-    Name: str = None,
-    ParentFolderId: str = None,
-    ResourceState: ResourceStateType = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `FolderId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `Name`: `str`
+- `ParentFolderId`: `str`
+- `ResourceState`:
+  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
 
 ### update_user
 
 Type annotations for `boto3.client("workdocs").update_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user]
+Boto3 documentation:
+[WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
 
-```python
-def update_user(
-    self,
-    UserId: str,
-    AuthenticationToken: str = None,
-    GivenName: str = None,
-    Surname: str = None,
-    Type: UserType = None,
-    StorageRule: "StorageRuleTypeTypeDef" = None,
-    TimeZoneId: str = None,
-    Locale: LocaleType = None,
-    GrantPoweruserPrivileges: BooleanEnumType = None
-) -> UpdateUserResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `UserId`: `str` *(required)*
+- `AuthenticationToken`: `str`
+- `GivenName`: `str`
+- `Surname`: `str`
+- `Type`:
+  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usertype)
+- `StorageRule`:
+  [StorageRuleTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#storageruletypetypedef)
+- `TimeZoneId`: `str`
+- `Locale`:
+  [LocaleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#localetype)
+- `GrantPoweruserPrivileges`:
+  [BooleanEnumType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#booleanenumtype)
 
+Returns
+[UpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#updateuserresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("workdocs").get_paginator` method with overloads.
+Type annotations for `boto3.client("workdocs").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_activities")` -> [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
-- `client.get_paginator("describe_comments")` -> [DescribeCommentsPaginator](./paginators.md#describecommentspaginator)
-- `client.get_paginator("describe_document_versions")` -> [DescribeDocumentVersionsPaginator](./paginators.md#describedocumentversionspaginator)
-- `client.get_paginator("describe_folder_contents")` -> [DescribeFolderContentsPaginator](./paginators.md#describefoldercontentspaginator)
-- `client.get_paginator("describe_groups")` -> [DescribeGroupsPaginator](./paginators.md#describegroupspaginator)
-- `client.get_paginator("describe_notification_subscriptions")` -> [DescribeNotificationSubscriptionsPaginator](./paginators.md#describenotificationsubscriptionspaginator)
-- `client.get_paginator("describe_resource_permissions")` -> [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
-- `client.get_paginator("describe_root_folders")` -> [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
-- `client.get_paginator("describe_users")` -> [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
-
-
+- `client.get_paginator("describe_activities")` ->
+  [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
+- `client.get_paginator("describe_comments")` ->
+  [DescribeCommentsPaginator](./paginators.md#describecommentspaginator)
+- `client.get_paginator("describe_document_versions")` ->
+  [DescribeDocumentVersionsPaginator](./paginators.md#describedocumentversionspaginator)
+- `client.get_paginator("describe_folder_contents")` ->
+  [DescribeFolderContentsPaginator](./paginators.md#describefoldercontentspaginator)
+- `client.get_paginator("describe_groups")` ->
+  [DescribeGroupsPaginator](./paginators.md#describegroupspaginator)
+- `client.get_paginator("describe_notification_subscriptions")` ->
+  [DescribeNotificationSubscriptionsPaginator](./paginators.md#describenotificationsubscriptionspaginator)
+- `client.get_paginator("describe_resource_permissions")` ->
+  [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
+- `client.get_paginator("describe_root_folders")` ->
+  [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
+- `client.get_paginator("describe_users")` ->
+  [DescribeUsersPaginator](./paginators.md#describeuserspaginator)

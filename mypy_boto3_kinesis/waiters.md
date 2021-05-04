@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Kinesis](./README.md) > Waiters
 
-Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
-type annotations stubs module [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+Auto-generated documentation for
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+type annotations stubs module
+[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Waiters for boto3 Kinesis module](#waiters-for-boto3-kinesis-module)
   - [StreamExistsWaiter](#streamexistswaiter)
@@ -22,14 +24,16 @@ def get_stream_exists_waiter() -> StreamExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
+Boto3 documentation:
+[Kinesis.Waiter.stream_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
 
 Arguments for `StreamExistsWaiter.wait` method:
 
 - `StreamName`: `str` *(required)*
 - `Limit`: `int`
 - `ExclusiveStartShardId`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
 
 ## StreamNotExistsWaiter
 
@@ -44,11 +48,13 @@ def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_not_exists")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
+Boto3 documentation:
+[Kinesis.Waiter.stream_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
 
 Arguments for `StreamNotExistsWaiter.wait` method:
 
 - `StreamName`: `str` *(required)*
 - `Limit`: `int`
 - `ExclusiveStartShardId`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`:
+  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > Structures
 
-Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+Auto-generated documentation for
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+type annotations stubs module
+[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Typed dictionaries for boto3 CloudWatchLogs module](#typed-dictionaries-for-boto3-cloudwatchlogs-module)
   - [CreateExportTaskResponseTypeDef](#createexporttaskresponsetypedef)
@@ -59,12 +61,9 @@ type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-bo
 from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `taskId`: `str`
 
+- `taskId`: `str`
 
 ## DeleteQueryDefinitionResponseTypeDef
 
@@ -72,12 +71,9 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DeleteQueryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `success`: `bool`
 
+- `success`: `bool`
 
 ## DescribeDestinationsResponseTypeDef
 
@@ -85,13 +81,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `destinations`: `List["DestinationTypeDef"]`
-- `nextToken`: `str`
 
+- `destinations`:
+  `List`\[[DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#destinationtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeExportTasksResponseTypeDef
 
@@ -99,13 +93,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeExportTasksResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `exportTasks`: `List["ExportTaskTypeDef"]`
-- `nextToken`: `str`
 
+- `exportTasks`:
+  `List`\[[ExportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#exporttasktypedef)\]
+- `nextToken`: `str`
 
 ## DescribeLogGroupsResponseTypeDef
 
@@ -113,13 +105,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeLogGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logGroups`: `List["LogGroupTypeDef"]`
-- `nextToken`: `str`
 
+- `logGroups`:
+  `List`\[[LogGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#loggrouptypedef)\]
+- `nextToken`: `str`
 
 ## DescribeLogStreamsResponseTypeDef
 
@@ -127,13 +117,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeLogStreamsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logStreams`: `List["LogStreamTypeDef"]`
-- `nextToken`: `str`
 
+- `logStreams`:
+  `List`\[[LogStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#logstreamtypedef)\]
+- `nextToken`: `str`
 
 ## DescribeMetricFiltersResponseTypeDef
 
@@ -141,13 +129,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeMetricFiltersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `metricFilters`: `List["MetricFilterTypeDef"]`
-- `nextToken`: `str`
 
+- `metricFilters`:
+  `List`\[[MetricFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#metricfiltertypedef)\]
+- `nextToken`: `str`
 
 ## DescribeQueriesResponseTypeDef
 
@@ -155,13 +141,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeQueriesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `queries`: `List["QueryInfoTypeDef"]`
-- `nextToken`: `str`
 
+- `queries`:
+  `List`\[[QueryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#queryinfotypedef)\]
+- `nextToken`: `str`
 
 ## DescribeQueryDefinitionsResponseTypeDef
 
@@ -169,13 +153,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `queryDefinitions`: `List["QueryDefinitionTypeDef"]`
-- `nextToken`: `str`
 
+- `queryDefinitions`:
+  `List`\[[QueryDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#querydefinitiontypedef)\]
+- `nextToken`: `str`
 
 ## DescribeResourcePoliciesResponseTypeDef
 
@@ -183,13 +165,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeResourcePoliciesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resourcePolicies`: `List["ResourcePolicyTypeDef"]`
-- `nextToken`: `str`
 
+- `resourcePolicies`:
+  `List`\[[ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#resourcepolicytypedef)\]
+- `nextToken`: `str`
 
 ## DescribeSubscriptionFiltersResponseTypeDef
 
@@ -197,13 +177,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `subscriptionFilters`: `List["SubscriptionFilterTypeDef"]`
-- `nextToken`: `str`
 
+- `subscriptionFilters`:
+  `List`\[[SubscriptionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#subscriptionfiltertypedef)\]
+- `nextToken`: `str`
 
 ## DestinationTypeDef
 
@@ -211,10 +189,8 @@ Optional fields:
 from mypy_boto3_logs.type_defs import DestinationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `destinationName`: `str`
 - `targetArn`: `str`
 - `roleArn`: `str`
@@ -222,20 +198,16 @@ Optional fields:
 - `arn`: `str`
 - `creationTime`: `int`
 
-
 ## ExportTaskExecutionInfoTypeDef
 
 ```python
 from mypy_boto3_logs.type_defs import ExportTaskExecutionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `creationTime`: `int`
 - `completionTime`: `int`
-
 
 ## ExportTaskStatusTypeDef
 
@@ -243,13 +215,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import ExportTaskStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `code`: `ExportTaskStatusCode`
-- `message`: `str`
 
+- `code`:
+  [ExportTaskStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#exporttaskstatuscode)
+- `message`: `str`
 
 ## ExportTaskTypeDef
 
@@ -257,10 +227,8 @@ Optional fields:
 from mypy_boto3_logs.type_defs import ExportTaskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `taskId`: `str`
 - `taskName`: `str`
 - `logGroupName`: `str`
@@ -268,9 +236,10 @@ Optional fields:
 - `to`: `int`
 - `destination`: `str`
 - `destinationPrefix`: `str`
-- `status`: `"ExportTaskStatusTypeDef"`
-- `executionInfo`: `"ExportTaskExecutionInfoTypeDef"`
-
+- `status`:
+  [ExportTaskStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#exporttaskstatustypedef)
+- `executionInfo`:
+  [ExportTaskExecutionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#exporttaskexecutioninfotypedef)
 
 ## FilterLogEventsResponseTypeDef
 
@@ -278,14 +247,13 @@ Optional fields:
 from mypy_boto3_logs.type_defs import FilterLogEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `events`: `List["FilteredLogEventTypeDef"]`
-- `searchedLogStreams`: `List["SearchedLogStreamTypeDef"]`
-- `nextToken`: `str`
 
+- `events`:
+  `List`\[[FilteredLogEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#filteredlogeventtypedef)\]
+- `searchedLogStreams`:
+  `List`\[[SearchedLogStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#searchedlogstreamtypedef)\]
+- `nextToken`: `str`
 
 ## FilteredLogEventTypeDef
 
@@ -293,16 +261,13 @@ Optional fields:
 from mypy_boto3_logs.type_defs import FilteredLogEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `logStreamName`: `str`
 - `timestamp`: `int`
 - `message`: `str`
 - `ingestionTime`: `int`
 - `eventId`: `str`
-
 
 ## GetLogEventsResponseTypeDef
 
@@ -310,14 +275,12 @@ Optional fields:
 from mypy_boto3_logs.type_defs import GetLogEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `events`: `List["OutputLogEventTypeDef"]`
+
+- `events`:
+  `List`\[[OutputLogEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#outputlogeventtypedef)\]
 - `nextForwardToken`: `str`
 - `nextBackwardToken`: `str`
-
 
 ## GetLogGroupFieldsResponseTypeDef
 
@@ -325,12 +288,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import GetLogGroupFieldsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logGroupFields`: `List["LogGroupFieldTypeDef"]`
 
+- `logGroupFields`:
+  `List`\[[LogGroupFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#loggroupfieldtypedef)\]
 
 ## GetLogRecordResponseTypeDef
 
@@ -338,12 +299,9 @@ Optional fields:
 from mypy_boto3_logs.type_defs import GetLogRecordResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `logRecord`: `Dict[str, str]`
 
+- `logRecord`: `Dict`\[`str`, `str`\]
 
 ## GetQueryResultsResponseTypeDef
 
@@ -351,14 +309,14 @@ Optional fields:
 from mypy_boto3_logs.type_defs import GetQueryResultsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `results`: `List[List["ResultFieldTypeDef"]]`
-- `statistics`: `"QueryStatisticsTypeDef"`
-- `status`: `QueryStatus`
 
+- `results`:
+  `List`\[`List`\[[ResultFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#resultfieldtypedef)\]\]
+- `statistics`:
+  [QueryStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#querystatisticstypedef)
+- `status`:
+  [QueryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#querystatus)
 
 ## InputLogEventTypeDef
 
@@ -366,13 +324,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import InputLogEventTypeDef
 ```
 
-
 Required fields:
+
 - `timestamp`: `int`
 - `message`: `str`
-
-
-
 
 ## ListTagsLogGroupResponseTypeDef
 
@@ -380,12 +335,9 @@ Required fields:
 from mypy_boto3_logs.type_defs import ListTagsLogGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## LogGroupFieldTypeDef
 
@@ -393,13 +345,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import LogGroupFieldTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `percent`: `int`
-
 
 ## LogGroupTypeDef
 
@@ -407,10 +356,8 @@ Optional fields:
 from mypy_boto3_logs.type_defs import LogGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `logGroupName`: `str`
 - `creationTime`: `int`
 - `retentionInDays`: `int`
@@ -419,17 +366,14 @@ Optional fields:
 - `storedBytes`: `int`
 - `kmsKeyId`: `str`
 
-
 ## LogStreamTypeDef
 
 ```python
 from mypy_boto3_logs.type_defs import LogStreamTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `logStreamName`: `str`
 - `creationTime`: `int`
 - `firstEventTimestamp`: `int`
@@ -439,21 +383,17 @@ Optional fields:
 - `arn`: `str`
 - `storedBytes`: `int`
 
-
 ## MetricFilterMatchRecordTypeDef
 
 ```python
 from mypy_boto3_logs.type_defs import MetricFilterMatchRecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `eventNumber`: `int`
 - `eventMessage`: `str`
-- `extractedValues`: `Dict[str, str]`
-
+- `extractedValues`: `Dict`\[`str`, `str`\]
 
 ## MetricFilterTypeDef
 
@@ -461,16 +401,14 @@ Optional fields:
 from mypy_boto3_logs.type_defs import MetricFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `filterName`: `str`
 - `filterPattern`: `str`
-- `metricTransformations`: `List["MetricTransformationTypeDef"]`
+- `metricTransformations`:
+  `List`\[[MetricTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#metrictransformationtypedef)\]
 - `creationTime`: `int`
 - `logGroupName`: `str`
-
 
 ## MetricTransformationTypeDef
 
@@ -478,17 +416,15 @@ Optional fields:
 from mypy_boto3_logs.type_defs import MetricTransformationTypeDef
 ```
 
-
 Required fields:
+
 - `metricName`: `str`
 - `metricNamespace`: `str`
 - `metricValue`: `str`
 
-
-
 Optional fields:
-- `defaultValue`: `float`
 
+- `defaultValue`: `float`
 
 ## OutputLogEventTypeDef
 
@@ -496,14 +432,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import OutputLogEventTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `timestamp`: `int`
 - `message`: `str`
 - `ingestionTime`: `int`
-
 
 ## PaginatorConfigTypeDef
 
@@ -511,14 +444,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutDestinationResponseTypeDef
 
@@ -526,12 +456,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import PutDestinationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `destination`: `"DestinationTypeDef"`
 
+- `destination`:
+  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#destinationtypedef)
 
 ## PutLogEventsResponseTypeDef
 
@@ -539,13 +467,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import PutLogEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `nextSequenceToken`: `str`
-- `rejectedLogEventsInfo`: `"RejectedLogEventsInfoTypeDef"`
 
+- `nextSequenceToken`: `str`
+- `rejectedLogEventsInfo`:
+  [RejectedLogEventsInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#rejectedlogeventsinfotypedef)
 
 ## PutQueryDefinitionResponseTypeDef
 
@@ -553,12 +479,9 @@ Optional fields:
 from mypy_boto3_logs.type_defs import PutQueryDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `queryDefinitionId`: `str`
 
+- `queryDefinitionId`: `str`
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -566,12 +489,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `resourcePolicy`: `"ResourcePolicyTypeDef"`
 
+- `resourcePolicy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#resourcepolicytypedef)
 
 ## QueryDefinitionTypeDef
 
@@ -579,16 +500,13 @@ Optional fields:
 from mypy_boto3_logs.type_defs import QueryDefinitionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `queryDefinitionId`: `str`
 - `name`: `str`
 - `queryString`: `str`
 - `lastModified`: `int`
-- `logGroupNames`: `List[str]`
-
+- `logGroupNames`: `List`\[`str`\]
 
 ## QueryInfoTypeDef
 
@@ -596,16 +514,14 @@ Optional fields:
 from mypy_boto3_logs.type_defs import QueryInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `queryId`: `str`
 - `queryString`: `str`
-- `status`: `QueryStatus`
+- `status`:
+  [QueryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#querystatus)
 - `createTime`: `int`
 - `logGroupName`: `str`
-
 
 ## QueryStatisticsTypeDef
 
@@ -613,14 +529,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import QueryStatisticsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `recordsMatched`: `float`
 - `recordsScanned`: `float`
 - `bytesScanned`: `float`
-
 
 ## RejectedLogEventsInfoTypeDef
 
@@ -628,14 +541,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import RejectedLogEventsInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `tooNewLogEventStartIndex`: `int`
 - `tooOldLogEventEndIndex`: `int`
 - `expiredLogEventEndIndex`: `int`
-
 
 ## ResourcePolicyTypeDef
 
@@ -643,14 +553,11 @@ Optional fields:
 from mypy_boto3_logs.type_defs import ResourcePolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `policyName`: `str`
 - `policyDocument`: `str`
 - `lastUpdatedTime`: `int`
-
 
 ## ResultFieldTypeDef
 
@@ -658,13 +565,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import ResultFieldTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `field`: `str`
 - `value`: `str`
-
 
 ## SearchedLogStreamTypeDef
 
@@ -672,13 +576,10 @@ Optional fields:
 from mypy_boto3_logs.type_defs import SearchedLogStreamTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `logStreamName`: `str`
 - `searchedCompletely`: `bool`
-
 
 ## StartQueryResponseTypeDef
 
@@ -686,12 +587,9 @@ Optional fields:
 from mypy_boto3_logs.type_defs import StartQueryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `queryId`: `str`
 
+- `queryId`: `str`
 
 ## StopQueryResponseTypeDef
 
@@ -699,12 +597,9 @@ Optional fields:
 from mypy_boto3_logs.type_defs import StopQueryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `success`: `bool`
 
+- `success`: `bool`
 
 ## SubscriptionFilterTypeDef
 
@@ -712,18 +607,16 @@ Optional fields:
 from mypy_boto3_logs.type_defs import SubscriptionFilterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `filterName`: `str`
 - `logGroupName`: `str`
 - `filterPattern`: `str`
 - `destinationArn`: `str`
 - `roleArn`: `str`
-- `distribution`: `Distribution`
+- `distribution`:
+  [Distribution](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#distribution)
 - `creationTime`: `int`
-
 
 ## TestMetricFilterResponseTypeDef
 
@@ -731,9 +624,7 @@ Optional fields:
 from mypy_boto3_logs.type_defs import TestMetricFilterResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `matches`: `List["MetricFilterMatchRecordTypeDef"]`
 
+- `matches`:
+  `List`\[[MetricFilterMatchRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#metricfiltermatchrecordtypedef)\]

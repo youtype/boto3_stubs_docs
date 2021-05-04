@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Pricing](./README.md) > Literals
 
-Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+Auto-generated documentation for
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+type annotations stubs module
+[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Literals for boto3 Pricing module](#literals-for-boto3-pricing-module)
   - [DescribeServicesPaginatorName](#describeservicespaginatorname)

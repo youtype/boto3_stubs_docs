@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeStarNotifications](./README.md) > Structures
 
-Auto-generated documentation for [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
-type annotations stubs module [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+Auto-generated documentation for
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+type annotations stubs module
+[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [Typed dictionaries for boto3 CodeStarNotifications module](#typed-dictionaries-for-boto3-codestarnotifications-module)
   - [CreateNotificationRuleResultTypeDef](#createnotificationruleresulttypedef)
@@ -31,12 +33,9 @@ type annotations stubs module [mypy_boto3_codestar_notifications](https://pypi.o
 from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## DeleteNotificationRuleResultTypeDef
 
@@ -44,12 +43,9 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## DescribeNotificationRuleResultTypeDef
 
@@ -57,24 +53,26 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleResultTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
 
-
-
 Optional fields:
+
 - `Name`: `str`
-- `EventTypes`: `List["EventTypeSummaryTypeDef"]`
+- `EventTypes`:
+  `List`\[[EventTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#eventtypesummarytypedef)\]
 - `Resource`: `str`
-- `Targets`: `List["TargetSummaryTypeDef"]`
-- `DetailType`: `DetailType`
+- `Targets`:
+  `List`\[[TargetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targetsummarytypedef)\]
+- `DetailType`:
+  [DetailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#detailtype)
 - `CreatedBy`: `str`
-- `Status`: `NotificationRuleStatus`
+- `Status`:
+  [NotificationRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#notificationrulestatus)
 - `CreatedTimestamp`: `datetime`
 - `LastModifiedTimestamp`: `datetime`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## EventTypeSummaryTypeDef
 
@@ -82,15 +80,12 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import EventTypeSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `EventTypeId`: `str`
 - `ServiceName`: `str`
 - `EventTypeName`: `str`
 - `ResourceType`: `str`
-
 
 ## ListEventTypesFilterTypeDef
 
@@ -98,13 +93,11 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import ListEventTypesFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `ListEventTypesFilterName`
+
+- `Name`:
+  [ListEventTypesFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listeventtypesfiltername)
 - `Value`: `str`
-
-
-
 
 ## ListEventTypesResultTypeDef
 
@@ -112,13 +105,11 @@ Required fields:
 from mypy_boto3_codestar_notifications.type_defs import ListEventTypesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EventTypes`: `List["EventTypeSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `EventTypes`:
+  `List`\[[EventTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#eventtypesummarytypedef)\]
+- `NextToken`: `str`
 
 ## ListNotificationRulesFilterTypeDef
 
@@ -126,13 +117,11 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `ListNotificationRulesFilterName`
+
+- `Name`:
+  [ListNotificationRulesFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listnotificationrulesfiltername)
 - `Value`: `str`
-
-
-
 
 ## ListNotificationRulesResultTypeDef
 
@@ -140,13 +129,11 @@ Required fields:
 from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `NotificationRules`: `List["NotificationRuleSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `NotificationRules`:
+  `List`\[[NotificationRuleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#notificationrulesummarytypedef)\]
 
 ## ListTagsForResourceResultTypeDef
 
@@ -154,12 +141,9 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListTargetsFilterTypeDef
 
@@ -167,13 +151,11 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import ListTargetsFilterTypeDef
 ```
 
-
 Required fields:
-- `Name`: `ListTargetsFilterName`
+
+- `Name`:
+  [ListTargetsFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listtargetsfiltername)
 - `Value`: `str`
-
-
-
 
 ## ListTargetsResultTypeDef
 
@@ -181,13 +163,11 @@ Required fields:
 from mypy_boto3_codestar_notifications.type_defs import ListTargetsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Targets`: `List["TargetSummaryTypeDef"]`
-- `NextToken`: `str`
 
+- `Targets`:
+  `List`\[[TargetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targetsummarytypedef)\]
+- `NextToken`: `str`
 
 ## NotificationRuleSummaryTypeDef
 
@@ -195,13 +175,10 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import NotificationRuleSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `Arn`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -209,14 +186,11 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## SubscribeResultTypeDef
 
@@ -224,12 +198,9 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import SubscribeResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## TagResourceResultTypeDef
 
@@ -237,12 +208,9 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import TagResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tags`: `Dict[str, str]`
 
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## TargetSummaryTypeDef
 
@@ -250,14 +218,12 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import TargetSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetAddress`: `str`
 - `TargetType`: `str`
-- `TargetStatus`: `TargetStatus`
-
+- `TargetStatus`:
+  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#targetstatus)
 
 ## TargetTypeDef
 
@@ -265,13 +231,10 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import TargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TargetType`: `str`
 - `TargetAddress`: `str`
-
 
 ## UnsubscribeResultTypeDef
 
@@ -279,9 +242,6 @@ Optional fields:
 from mypy_boto3_codestar_notifications.type_defs import UnsubscribeResultTypeDef
 ```
 
-
 Required fields:
+
 - `Arn`: `str`
-
-
-

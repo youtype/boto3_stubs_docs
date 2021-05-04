@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DeviceFarm
 
-Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
-type annotations stubs module [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+Auto-generated documentation for
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+type annotations stubs module
+[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ```bash
 pip install mypy-boto3-devicefarm
@@ -19,7 +21,8 @@ pip install mypy-boto3-devicefarm
 
 ## DeviceFarmClient
 
-Type annotations for  `boto3.client("devicefarm")` as [DeviceFarmClient](./client.md)
+Type annotations for `boto3.client("devicefarm")` as
+[DeviceFarmClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_devicefarm.client import DeviceFarmClient
 ```
 
-
 DeviceFarmClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_device_pool](./client.md#create-device-pool)
 - [create_instance_profile](./client.md#create-instance-profile)
@@ -114,10 +115,8 @@ DeviceFarmClient [exceptions](./client.md#exceptions)
 - [update_upload](./client.md#update-upload)
 - [update_vpce_configuration](./client.md#update-vpce-configuration)
 
-
-
-
 ### Exceptions
+
 - [ArgumentException](./client.md#argumentexception)
 - [CannotDeleteException](./client.md#cannotdeleteexception)
 - [ClientError](./client.md#clienterror)
@@ -132,14 +131,10 @@ DeviceFarmClient [exceptions](./client.md#exceptions)
 - [TagPolicyException](./client.md#tagpolicyexception)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("devicefarm").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("devicefarm").get_paginator("...")`.
 
 Can be used directly:
 
@@ -167,11 +162,6 @@ from mypy_boto3_devicefarm.paginators import GetOfferingStatusPaginator, ...
 - [ListUniqueProblemsPaginator](./paginators.md#listuniqueproblemspaginator)
 - [ListUploadsPaginator](./paginators.md#listuploadspaginator)
 - [ListVPCEConfigurationsPaginator](./paginators.md#listvpceconfigurationspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -232,13 +222,10 @@ from mypy_boto3_devicefarm.literals import ArtifactCategory, ...
 - [UploadStatus](./literals.md#uploadstatus)
 - [UploadType](./literals.md#uploadtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

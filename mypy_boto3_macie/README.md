@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Macie
 
-Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+Auto-generated documentation for
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+type annotations stubs module
+[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
 ```bash
 pip install mypy-boto3-macie
@@ -19,7 +21,7 @@ pip install mypy-boto3-macie
 
 ## MacieClient
 
-Type annotations for  `boto3.client("macie")` as [MacieClient](./client.md)
+Type annotations for `boto3.client("macie")` as [MacieClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_macie.client import MacieClient
 ```
 
-
 MacieClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_member_account](./client.md#associate-member-account)
 - [associate_s3_resources](./client.md#associate-s3-resources)
 - [can_paginate](./client.md#can-paginate)
@@ -44,24 +44,18 @@ MacieClient [exceptions](./client.md#exceptions)
 - [list_s3_resources](./client.md#list-s3-resources)
 - [update_s3_resources](./client.md#update-s3-resources)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalException](./client.md#internalexception)
 - [InvalidInputException](./client.md#invalidinputexception)
 - [LimitExceededException](./client.md#limitexceededexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("macie").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("macie").get_paginator("...")`.
 
 Can be used directly:
 
@@ -71,11 +65,6 @@ from mypy_boto3_macie.paginators import ListMemberAccountsPaginator, ...
 
 - [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
 - [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -92,13 +81,10 @@ from mypy_boto3_macie.literals import ListMemberAccountsPaginatorName, ...
 - [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype)
 - [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

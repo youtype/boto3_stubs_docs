@@ -1,9 +1,12 @@
 # PinpointSMSVoiceClient for boto3 PinpointSMSVoice module
 
-> [Index](../README.md) > [PinpointSMSVoice](./README.md) > PinpointSMSVoiceClient
+> [Index](../README.md) > [PinpointSMSVoice](./README.md) >
+> PinpointSMSVoiceClient
 
-Auto-generated documentation for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
-type annotations stubs module [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
+Auto-generated documentation for
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+type annotations stubs module
+[mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
 - [PinpointSMSVoiceClient for boto3 PinpointSMSVoice module](#pinpointsmsvoiceclient-for-boto3-pinpointsmsvoice-module)
   - [PinpointSMSVoiceClient](#pinpointsmsvoiceclient)
@@ -32,12 +35,13 @@ def get_pinpoint-sms-voice_client() -> PinpointSMSVoiceClient:
     return boto3.client("pinpoint-sms-voice")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client)
+Boto3 documentation:
+[PinpointSMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_pinpoint_sms_voice.client import Exceptions
@@ -45,7 +49,6 @@ from mypy_boto3_pinpoint_sms_voice.client import Exceptions
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -57,147 +60,150 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("pinpoint-sms-voice").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.can_paginate]
+Boto3 documentation:
+[PinpointSMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_configuration_set
 
-Type annotations for `boto3.client("pinpoint-sms-voice").create_configuration_set` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").create_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set]
+Boto3 documentation:
+[PinpointSMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
 
-```python
-def create_configuration_set(
-    self,
-    ConfigurationSetName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-sms-voice").create_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").create_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
 
-```python
-def create_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestination: EventDestinationDefinitionTypeDef = None,
-    EventDestinationName: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
+- `EventDestinationName`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set
 
-Type annotations for `boto3.client("pinpoint-sms-voice").delete_configuration_set` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").delete_configuration_set` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set]
+Boto3 documentation:
+[PinpointSMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
 
-```python
-def delete_configuration_set(
-    self,
-    ConfigurationSetName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-sms-voice").delete_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").delete_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointSMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
 
-```python
-def delete_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("pinpoint-sms-voice").generate_presigned_url` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url]
+Boto3 documentation:
+[PinpointSMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_configuration_set_event_destinations
 
-Type annotations for `boto3.client("pinpoint-sms-voice").get_configuration_set_event_destinations` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").get_configuration_set_event_destinations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations]
+Boto3 documentation:
+[PinpointSMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
 
-```python
-def get_configuration_set_event_destinations(
-    self,
-    ConfigurationSetName: str
-) -> GetConfigurationSetEventDestinationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ConfigurationSetName`: `str` *(required)*
+
+Returns
+[GetConfigurationSetEventDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#getconfigurationseteventdestinationsresponsetypedef).
 
 ### send_voice_message
 
-Type annotations for `boto3.client("pinpoint-sms-voice").send_voice_message` method.
+Type annotations for `boto3.client("pinpoint-sms-voice").send_voice_message`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.send_voice_message]
+Boto3 documentation:
+[PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
 
-```python
-def send_voice_message(
-    self,
-    CallerId: str = None,
-    ConfigurationSetName: str = None,
-    Content: VoiceMessageContentTypeDef = None,
-    DestinationPhoneNumber: str = None,
-    OriginationPhoneNumber: str = None
-) -> SendVoiceMessageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `CallerId`: `str`
+- `ConfigurationSetName`: `str`
+- `Content`:
+  [VoiceMessageContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#voicemessagecontenttypedef)
+- `DestinationPhoneNumber`: `str`
+- `OriginationPhoneNumber`: `str`
+
+Returns
+[SendVoiceMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#sendvoicemessageresponsetypedef).
 
 ### update_configuration_set_event_destination
 
-Type annotations for `boto3.client("pinpoint-sms-voice").update_configuration_set_event_destination` method.
+Type annotations for
+`boto3.client("pinpoint-sms-voice").update_configuration_set_event_destination`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination]
+Boto3 documentation:
+[PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
 
-```python
-def update_configuration_set_event_destination(
-    self,
-    ConfigurationSetName: str,
-    EventDestinationName: str,
-    EventDestination: EventDestinationDefinitionTypeDef = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `ConfigurationSetName`: `str` *(required)*
+- `EventDestinationName`: `str` *(required)*
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
 
-
+Returns `Dict`\[`str`, `Any`\].

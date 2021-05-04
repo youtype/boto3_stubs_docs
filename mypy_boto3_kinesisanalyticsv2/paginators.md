@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Paginators
 
-Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+Auto-generated documentation for
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+type annotations stubs module
+[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Paginators for boto3 KinesisAnalyticsV2 module](#paginators-for-boto3-kinesisanalyticsv2-module)
   - [ListApplicationSnapshotsPaginator](#listapplicationsnapshotspaginator)
@@ -11,7 +13,8 @@ type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/p
 
 ## ListApplicationSnapshotsPaginator
 
-Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")`.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")`.
 
 Can be used directly:
 
@@ -22,20 +25,22 @@ def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPagina
     return boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
+Boto3 documentation:
+[KinesisAnalyticsV2.Paginator.ListApplicationSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
 
-```python
-class ListApplicationSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ApplicationName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListApplicationSnapshotsResponseTypeDef]:
-        pass
-```
+Arguments for `ListApplicationSnapshotsPaginator.paginate` method:
+
+- `ApplicationName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#paginatorconfigtypedef)
+
+`ListApplicationSnapshotsPaginator.paginate` returns
+`Iterator`\[[ListApplicationSnapshotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationsnapshotsresponsetypedef)\].
+
 ## ListApplicationsPaginator
 
-Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator("list_applications")`.
+Type annotations for
+`boto3.client("kinesisanalyticsv2").get_paginator("list_applications")`.
 
 Can be used directly:
 
@@ -46,13 +51,13 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("kinesisanalyticsv2").get_paginator("list_applications")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
+Boto3 documentation:
+[KinesisAnalyticsV2.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
 
-```python
-class ListApplicationsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListApplicationsResponseTypeDef]:
-        pass
-```
+Arguments for `ListApplicationsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#paginatorconfigtypedef)
+
+`ListApplicationsPaginator.paginate` returns
+`Iterator`\[[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationsresponsetypedef)\].

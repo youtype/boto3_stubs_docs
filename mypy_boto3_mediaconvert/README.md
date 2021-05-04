@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaConvert
 
-Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+Auto-generated documentation for
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+type annotations stubs module
+[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ```bash
 pip install mypy-boto3-mediaconvert
@@ -19,7 +21,8 @@ pip install mypy-boto3-mediaconvert
 
 ## MediaConvertClient
 
-Type annotations for  `boto3.client("mediaconvert")` as [MediaConvertClient](./client.md)
+Type annotations for `boto3.client("mediaconvert")` as
+[MediaConvertClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_mediaconvert.client import MediaConvertClient
 ```
 
-
 MediaConvertClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_certificate](./client.md#associate-certificate)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job](./client.md#cancel-job)
@@ -62,10 +63,8 @@ MediaConvertClient [exceptions](./client.md#exceptions)
 - [update_preset](./client.md#update-preset)
 - [update_queue](./client.md#update-queue)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -74,14 +73,10 @@ MediaConvertClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediaconvert").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediaconvert").get_paginator("...")`.
 
 Can be used directly:
 
@@ -94,11 +89,6 @@ from mypy_boto3_mediaconvert.paginators import DescribeEndpointsPaginator, ...
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 - [ListQueuesPaginator](./paginators.md#listqueuespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -439,13 +429,10 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMix, 
 - [WavFormat](./literals.md#wavformat)
 - [WebvttStylePassthrough](./literals.md#webvttstylepassthrough)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

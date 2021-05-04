@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Paginators
 
-Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+Auto-generated documentation for
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+type annotations stubs module
+[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Paginators for boto3 IoTSiteWise module](#paginators-for-boto3-iotsitewise-module)
   - [GetAssetPropertyAggregatesPaginator](#getassetpropertyaggregatespaginator)
@@ -22,7 +24,8 @@ type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/
 
 ## GetAssetPropertyAggregatesPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")`.
 
 Can be used directly:
 
@@ -33,28 +36,34 @@ def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesP
     return boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
+Boto3 documentation:
+[IoTSiteWise.Paginator.GetAssetPropertyAggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
 
-```python
-class GetAssetPropertyAggregatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        aggregateTypes: List[AggregateType],
-        resolution: str,
-        startDate: datetime,
-        endDate: datetime,
-        assetId: str = None,
-        propertyId: str = None,
-        propertyAlias: str = None,
-        qualities: List[Quality] = None,
-        timeOrdering: TimeOrdering = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetAssetPropertyAggregatesResponseTypeDef]:
-        pass
-```
+Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
+
+- `aggregateTypes`:
+  `List`\[[AggregateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#aggregatetype)\]
+  *(required)*
+- `resolution`: `str` *(required)*
+- `startDate`: `datetime` *(required)*
+- `endDate`: `datetime` *(required)*
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `qualities`:
+  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
+- `timeOrdering`:
+  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`GetAssetPropertyAggregatesPaginator.paginate` returns
+`Iterator`\[[GetAssetPropertyAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyaggregatesresponsetypedef)\].
+
 ## GetAssetPropertyValueHistoryPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")`.
 
 Can be used directly:
 
@@ -65,26 +74,30 @@ def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHis
     return boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
+Boto3 documentation:
+[IoTSiteWise.Paginator.GetAssetPropertyValueHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
 
-```python
-class GetAssetPropertyValueHistoryPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        assetId: str = None,
-        propertyId: str = None,
-        propertyAlias: str = None,
-        startDate: datetime = None,
-        endDate: datetime = None,
-        qualities: List[Quality] = None,
-        timeOrdering: TimeOrdering = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetAssetPropertyValueHistoryResponseTypeDef]:
-        pass
-```
+Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `startDate`: `datetime`
+- `endDate`: `datetime`
+- `qualities`:
+  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
+- `timeOrdering`:
+  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`GetAssetPropertyValueHistoryPaginator.paginate` returns
+`Iterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyvaluehistoryresponsetypedef)\].
+
 ## GetInterpolatedAssetPropertyValuesPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")`.
 
 Can be used directly:
 
@@ -95,29 +108,33 @@ def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAss
     return boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
+Boto3 documentation:
+[IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
 
-```python
-class GetInterpolatedAssetPropertyValuesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        startTimeInSeconds: int,
-        endTimeInSeconds: int,
-        quality: Quality,
-        intervalInSeconds: int,
-        type: str,
-        assetId: str = None,
-        propertyId: str = None,
-        propertyAlias: str = None,
-        startTimeOffsetInNanos: int = None,
-        endTimeOffsetInNanos: int = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GetInterpolatedAssetPropertyValuesResponseTypeDef]:
-        pass
-```
+Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
+
+- `startTimeInSeconds`: `int` *(required)*
+- `endTimeInSeconds`: `int` *(required)*
+- `quality`:
+  [Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)
+  *(required)*
+- `intervalInSeconds`: `int` *(required)*
+- `type`: `str` *(required)*
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `startTimeOffsetInNanos`: `int`
+- `endTimeOffsetInNanos`: `int`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`GetInterpolatedAssetPropertyValuesPaginator.paginate` returns
+`Iterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getinterpolatedassetpropertyvaluesresponsetypedef)\].
+
 ## ListAccessPoliciesPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_access_policies")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_access_policies")`.
 
 Can be used directly:
 
@@ -128,24 +145,28 @@ def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
     return boto3.client("iotsitewise").get_paginator("list_access_policies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListAccessPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
 
-```python
-class ListAccessPoliciesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        identityType: IdentityType = None,
-        identityId: str = None,
-        resourceType: ResourceType = None,
-        resourceId: str = None,
-        iamArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAccessPoliciesResponseTypeDef]:
-        pass
-```
+Arguments for `ListAccessPoliciesPaginator.paginate` method:
+
+- `identityType`:
+  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#identitytype)
+- `identityId`: `str`
+- `resourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#resourcetype)
+- `resourceId`: `str`
+- `iamArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListAccessPoliciesPaginator.paginate` returns
+`Iterator`\[[ListAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listaccesspoliciesresponsetypedef)\].
+
 ## ListAssetModelsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_asset_models")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_asset_models")`.
 
 Can be used directly:
 
@@ -156,19 +177,21 @@ def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_models")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListAssetModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
 
-```python
-class ListAssetModelsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssetModelsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssetModelsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListAssetModelsPaginator.paginate` returns
+`Iterator`\[[ListAssetModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetmodelsresponsetypedef)\].
+
 ## ListAssetRelationshipsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_asset_relationships")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_asset_relationships")`.
 
 Can be used directly:
 
@@ -179,21 +202,23 @@ def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_relationships")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListAssetRelationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
 
-```python
-class ListAssetRelationshipsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        assetId: str,
-        traversalType: Literal['PATH_TO_ROOT'],
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssetRelationshipsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssetRelationshipsPaginator.paginate` method:
+
+- `assetId`: `str` *(required)*
+- `traversalType`: `Literal['PATH_TO_ROOT']` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListAssetRelationshipsPaginator.paginate` returns
+`Iterator`\[[ListAssetRelationshipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetrelationshipsresponsetypedef)\].
+
 ## ListAssetsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_assets")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_assets")`.
 
 Can be used directly:
 
@@ -204,21 +229,24 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_assets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
 
-```python
-class ListAssetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        assetModelId: str = None,
-        filter: ListAssetsFilter = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssetsPaginator.paginate` method:
+
+- `assetModelId`: `str`
+- `filter`:
+  [ListAssetsFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#listassetsfilter)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListAssetsPaginator.paginate` returns
+`Iterator`\[[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetsresponsetypedef)\].
+
 ## ListAssociatedAssetsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_associated_assets")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_associated_assets")`.
 
 Can be used directly:
 
@@ -229,22 +257,25 @@ def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_associated_assets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListAssociatedAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
 
-```python
-class ListAssociatedAssetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        assetId: str,
-        hierarchyId: str = None,
-        traversalDirection: TraversalDirection = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAssociatedAssetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAssociatedAssetsPaginator.paginate` method:
+
+- `assetId`: `str` *(required)*
+- `hierarchyId`: `str`
+- `traversalDirection`:
+  [TraversalDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#traversaldirection)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListAssociatedAssetsPaginator.paginate` returns
+`Iterator`\[[ListAssociatedAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassociatedassetsresponsetypedef)\].
+
 ## ListDashboardsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_dashboards")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_dashboards")`.
 
 Can be used directly:
 
@@ -255,20 +286,22 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_dashboards")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
 
-```python
-class ListDashboardsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        projectId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDashboardsResponseTypeDef]:
-        pass
-```
+Arguments for `ListDashboardsPaginator.paginate` method:
+
+- `projectId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListDashboardsPaginator.paginate` returns
+`Iterator`\[[ListDashboardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listdashboardsresponsetypedef)\].
+
 ## ListGatewaysPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_gateways")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_gateways")`.
 
 Can be used directly:
 
@@ -279,19 +312,21 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("iotsitewise").get_paginator("list_gateways")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
 
-```python
-class ListGatewaysPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListGatewaysResponseTypeDef]:
-        pass
-```
+Arguments for `ListGatewaysPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListGatewaysPaginator.paginate` returns
+`Iterator`\[[ListGatewaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listgatewaysresponsetypedef)\].
+
 ## ListPortalsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_portals")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_portals")`.
 
 Can be used directly:
 
@@ -302,19 +337,21 @@ def get_list_portals_paginator() -> ListPortalsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_portals")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListPortals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
 
-```python
-class ListPortalsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPortalsResponseTypeDef]:
-        pass
-```
+Arguments for `ListPortalsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListPortalsPaginator.paginate` returns
+`Iterator`\[[ListPortalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listportalsresponsetypedef)\].
+
 ## ListProjectAssetsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_project_assets")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_project_assets")`.
 
 Can be used directly:
 
@@ -325,20 +362,22 @@ def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_project_assets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListProjectAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
 
-```python
-class ListProjectAssetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        projectId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectAssetsResponseTypeDef]:
-        pass
-```
+Arguments for `ListProjectAssetsPaginator.paginate` method:
+
+- `projectId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectAssetsPaginator.paginate` returns
+`Iterator`\[[ListProjectAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectassetsresponsetypedef)\].
+
 ## ListProjectsPaginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator("list_projects")`.
+Type annotations for
+`boto3.client("iotsitewise").get_paginator("list_projects")`.
 
 Can be used directly:
 
@@ -349,14 +388,14 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_projects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
+Boto3 documentation:
+[IoTSiteWise.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
 
-```python
-class ListProjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        portalId: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProjectsResponseTypeDef]:
-        pass
-```
+Arguments for `ListProjectsPaginator.paginate` method:
+
+- `portalId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+
+`ListProjectsPaginator.paginate` returns
+`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectsresponsetypedef)\].

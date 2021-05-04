@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Greengrass](./README.md) > Structures
 
-Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
-type annotations stubs module [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+Auto-generated documentation for
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+type annotations stubs module
+[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Typed dictionaries for boto3 Greengrass module](#typed-dictionaries-for-boto3-greengrass-module)
   - [AssociateRoleToGroupResponseTypeDef](#associateroletogroupresponsetypedef)
@@ -129,12 +131,9 @@ type annotations stubs module [mypy_boto3_greengrass](https://pypi.org/project/m
 from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociatedAt`: `str`
 
+- `AssociatedAt`: `str`
 
 ## AssociateServiceRoleToAccountResponseTypeDef
 
@@ -142,12 +141,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import AssociateServiceRoleToAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociatedAt`: `str`
 
+- `AssociatedAt`: `str`
 
 ## BulkDeploymentMetricsTypeDef
 
@@ -155,14 +151,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import BulkDeploymentMetricsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InvalidInputRecords`: `int`
 - `RecordsProcessed`: `int`
 - `RetryAttempts`: `int`
-
 
 ## BulkDeploymentResultTypeDef
 
@@ -170,19 +163,18 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import BulkDeploymentResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedAt`: `str`
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
 - `DeploymentStatus`: `str`
-- `DeploymentType`: `DeploymentType`
-- `ErrorDetails`: `List["ErrorDetailTypeDef"]`
+- `DeploymentType`:
+  [DeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#deploymenttype)
+- `ErrorDetails`:
+  `List`\[[ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#errordetailtypedef)\]
 - `ErrorMessage`: `str`
 - `GroupArn`: `str`
-
 
 ## BulkDeploymentTypeDef
 
@@ -190,14 +182,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import BulkDeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BulkDeploymentArn`: `str`
 - `BulkDeploymentId`: `str`
 - `CreatedAt`: `str`
-
 
 ## ConnectivityInfoTypeDef
 
@@ -205,15 +194,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ConnectivityInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HostAddress`: `str`
 - `Id`: `str`
 - `Metadata`: `str`
 - `PortNumber`: `int`
-
 
 ## ConnectorDefinitionVersionTypeDef
 
@@ -221,12 +207,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ConnectorDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Connectors`: `List["ConnectorTypeDef"]`
 
+- `Connectors`:
+  `List`\[[ConnectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectortypedef)\]
 
 ## ConnectorTypeDef
 
@@ -234,16 +218,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ConnectorTypeDef
 ```
 
-
 Required fields:
+
 - `ConnectorArn`: `str`
 - `Id`: `str`
 
-
-
 Optional fields:
-- `Parameters`: `Dict[str, str]`
 
+- `Parameters`: `Dict`\[`str`, `str`\]
 
 ## CoreDefinitionVersionTypeDef
 
@@ -251,12 +233,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CoreDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Cores`: `List["CoreTypeDef"]`
 
+- `Cores`:
+  `List`\[[CoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#coretypedef)\]
 
 ## CoreTypeDef
 
@@ -264,17 +244,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CoreTypeDef
 ```
 
-
 Required fields:
+
 - `CertificateArn`: `str`
 - `Id`: `str`
 - `ThingArn`: `str`
 
-
-
 Optional fields:
-- `SyncShadow`: `bool`
 
+- `SyncShadow`: `bool`
 
 ## CreateConnectorDefinitionResponseTypeDef
 
@@ -282,10 +260,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -293,7 +269,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateConnectorDefinitionVersionResponseTypeDef
 
@@ -301,15 +276,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateCoreDefinitionResponseTypeDef
 
@@ -317,10 +289,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -328,7 +298,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateCoreDefinitionVersionResponseTypeDef
 
@@ -336,15 +305,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateDeploymentResponseTypeDef
 
@@ -352,13 +318,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
-
 
 ## CreateDeviceDefinitionResponseTypeDef
 
@@ -366,10 +329,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -377,7 +338,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateDeviceDefinitionVersionResponseTypeDef
 
@@ -385,15 +345,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateFunctionDefinitionResponseTypeDef
 
@@ -401,10 +358,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -412,7 +367,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateFunctionDefinitionVersionResponseTypeDef
 
@@ -420,15 +374,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateGroupCertificateAuthorityResponseTypeDef
 
@@ -436,12 +387,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateGroupCertificateAuthorityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GroupCertificateAuthorityArn`: `str`
 
+- `GroupCertificateAuthorityArn`: `str`
 
 ## CreateGroupResponseTypeDef
 
@@ -449,10 +397,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -460,7 +406,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateGroupVersionResponseTypeDef
 
@@ -468,15 +413,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateGroupVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateLoggerDefinitionResponseTypeDef
 
@@ -484,10 +426,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -495,7 +435,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateLoggerDefinitionVersionResponseTypeDef
 
@@ -503,15 +442,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateResourceDefinitionResponseTypeDef
 
@@ -519,10 +455,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -530,7 +464,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateResourceDefinitionVersionResponseTypeDef
 
@@ -538,15 +471,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## CreateSoftwareUpdateJobResponseTypeDef
 
@@ -554,14 +484,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateSoftwareUpdateJobResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IotJobArn`: `str`
 - `IotJobId`: `str`
 - `PlatformSoftwareVersion`: `str`
-
 
 ## CreateSubscriptionDefinitionResponseTypeDef
 
@@ -569,10 +496,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -580,7 +505,6 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-
 
 ## CreateSubscriptionDefinitionVersionResponseTypeDef
 
@@ -588,15 +512,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## DefinitionInformationTypeDef
 
@@ -604,10 +525,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DefinitionInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -615,8 +534,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `Tags`: `Dict[str, str]`
-
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DeploymentTypeDef
 
@@ -624,16 +542,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DeploymentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedAt`: `str`
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
-- `DeploymentType`: `DeploymentType`
+- `DeploymentType`:
+  [DeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#deploymenttype)
 - `GroupArn`: `str`
-
 
 ## DeviceDefinitionVersionTypeDef
 
@@ -641,12 +557,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DeviceDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Devices`: `List["DeviceTypeDef"]`
 
+- `Devices`:
+  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#devicetypedef)\]
 
 ## DeviceTypeDef
 
@@ -654,17 +568,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DeviceTypeDef
 ```
 
-
 Required fields:
+
 - `CertificateArn`: `str`
 - `Id`: `str`
 - `ThingArn`: `str`
 
-
-
 Optional fields:
-- `SyncShadow`: `bool`
 
+- `SyncShadow`: `bool`
 
 ## DisassociateRoleFromGroupResponseTypeDef
 
@@ -672,12 +584,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DisassociateRoleFromGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DisassociatedAt`: `str`
 
+- `DisassociatedAt`: `str`
 
 ## DisassociateServiceRoleFromAccountResponseTypeDef
 
@@ -685,12 +594,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import DisassociateServiceRoleFromAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DisassociatedAt`: `str`
 
+- `DisassociatedAt`: `str`
 
 ## ErrorDetailTypeDef
 
@@ -698,13 +604,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ErrorDetailTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DetailedErrorCode`: `str`
 - `DetailedErrorMessage`: `str`
-
 
 ## FunctionConfigurationEnvironmentTypeDef
 
@@ -712,15 +615,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionConfigurationEnvironmentTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccessSysfs`: `bool`
-- `Execution`: `"FunctionExecutionConfigTypeDef"`
-- `ResourceAccessPolicies`: `List["ResourceAccessPolicyTypeDef"]`
-- `Variables`: `Dict[str, str]`
 
+- `AccessSysfs`: `bool`
+- `Execution`:
+  [FunctionExecutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functionexecutionconfigtypedef)
+- `ResourceAccessPolicies`:
+  `List`\[[ResourceAccessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourceaccesspolicytypedef)\]
+- `Variables`: `Dict`\[`str`, `str`\]
 
 ## FunctionConfigurationTypeDef
 
@@ -728,18 +630,17 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EncodingType`: `EncodingType`
-- `Environment`: `"FunctionConfigurationEnvironmentTypeDef"`
+
+- `EncodingType`:
+  [EncodingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#encodingtype)
+- `Environment`:
+  [FunctionConfigurationEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functionconfigurationenvironmenttypedef)
 - `ExecArgs`: `str`
 - `Executable`: `str`
 - `MemorySize`: `int`
 - `Pinned`: `bool`
 - `Timeout`: `int`
-
 
 ## FunctionDefaultConfigTypeDef
 
@@ -747,12 +648,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionDefaultConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Execution`: `"FunctionDefaultExecutionConfigTypeDef"`
 
+- `Execution`:
+  [FunctionDefaultExecutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiondefaultexecutionconfigtypedef)
 
 ## FunctionDefaultExecutionConfigTypeDef
 
@@ -760,13 +659,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionDefaultExecutionConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsolationMode`: `FunctionIsolationMode`
-- `RunAs`: `"FunctionRunAsConfigTypeDef"`
 
+- `IsolationMode`:
+  [FunctionIsolationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#functionisolationmode)
+- `RunAs`:
+  [FunctionRunAsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functionrunasconfigtypedef)
 
 ## FunctionDefinitionVersionTypeDef
 
@@ -774,13 +672,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DefaultConfig`: `"FunctionDefaultConfigTypeDef"`
-- `Functions`: `List["FunctionTypeDef"]`
 
+- `DefaultConfig`:
+  [FunctionDefaultConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiondefaultconfigtypedef)
+- `Functions`:
+  `List`\[[FunctionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiontypedef)\]
 
 ## FunctionExecutionConfigTypeDef
 
@@ -788,13 +685,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionExecutionConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IsolationMode`: `FunctionIsolationMode`
-- `RunAs`: `"FunctionRunAsConfigTypeDef"`
 
+- `IsolationMode`:
+  [FunctionIsolationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#functionisolationmode)
+- `RunAs`:
+  [FunctionRunAsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functionrunasconfigtypedef)
 
 ## FunctionRunAsConfigTypeDef
 
@@ -802,13 +698,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionRunAsConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Gid`: `int`
 - `Uid`: `int`
-
 
 ## FunctionTypeDef
 
@@ -816,16 +709,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import FunctionTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 
-
-
 Optional fields:
-- `FunctionArn`: `str`
-- `FunctionConfiguration`: `"FunctionConfigurationTypeDef"`
 
+- `FunctionArn`: `str`
+- `FunctionConfiguration`:
+  [FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functionconfigurationtypedef)
 
 ## GetAssociatedRoleResponseTypeDef
 
@@ -833,13 +725,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetAssociatedRoleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociatedAt`: `str`
 - `RoleArn`: `str`
-
 
 ## GetBulkDeploymentStatusResponseTypeDef
 
@@ -847,17 +736,17 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetBulkDeploymentStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BulkDeploymentMetrics`: `"BulkDeploymentMetricsTypeDef"`
-- `BulkDeploymentStatus`: `BulkDeploymentStatus`
-- `CreatedAt`: `str`
-- `ErrorDetails`: `List["ErrorDetailTypeDef"]`
-- `ErrorMessage`: `str`
-- `tags`: `Dict[str, str]`
 
+- `BulkDeploymentMetrics`:
+  [BulkDeploymentMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#bulkdeploymentmetricstypedef)
+- `BulkDeploymentStatus`:
+  [BulkDeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#bulkdeploymentstatus)
+- `CreatedAt`: `str`
+- `ErrorDetails`:
+  `List`\[[ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#errordetailtypedef)\]
+- `ErrorMessage`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetConnectivityInfoResponseTypeDef
 
@@ -865,13 +754,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetConnectivityInfoResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ConnectivityInfo`: `List["ConnectivityInfoTypeDef"]`
-- `Message`: `str`
 
+- `ConnectivityInfo`:
+  `List`\[[ConnectivityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectivityinfotypedef)\]
+- `Message`: `str`
 
 ## GetConnectorDefinitionResponseTypeDef
 
@@ -879,10 +766,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -890,8 +775,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetConnectorDefinitionVersionResponseTypeDef
 
@@ -899,17 +783,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"ConnectorDefinitionVersionTypeDef"`
+- `Definition`:
+  [ConnectorDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectordefinitionversiontypedef)
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
-
 
 ## GetCoreDefinitionResponseTypeDef
 
@@ -917,10 +799,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetCoreDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -928,8 +808,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetCoreDefinitionVersionResponseTypeDef
 
@@ -937,17 +816,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetCoreDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"CoreDefinitionVersionTypeDef"`
+- `Definition`:
+  [CoreDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#coredefinitionversiontypedef)
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
-
 
 ## GetDeploymentStatusResponseTypeDef
 
@@ -955,16 +832,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetDeploymentStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeploymentStatus`: `str`
-- `DeploymentType`: `DeploymentType`
-- `ErrorDetails`: `List["ErrorDetailTypeDef"]`
+- `DeploymentType`:
+  [DeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#deploymenttype)
+- `ErrorDetails`:
+  `List`\[[ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#errordetailtypedef)\]
 - `ErrorMessage`: `str`
 - `UpdatedAt`: `str`
-
 
 ## GetDeviceDefinitionResponseTypeDef
 
@@ -972,10 +848,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -983,8 +857,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetDeviceDefinitionVersionResponseTypeDef
 
@@ -992,17 +865,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"DeviceDefinitionVersionTypeDef"`
+- `Definition`:
+  [DeviceDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#devicedefinitionversiontypedef)
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
-
 
 ## GetFunctionDefinitionResponseTypeDef
 
@@ -1010,10 +881,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1021,8 +890,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetFunctionDefinitionVersionResponseTypeDef
 
@@ -1030,17 +898,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"FunctionDefinitionVersionTypeDef"`
+- `Definition`:
+  [FunctionDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiondefinitionversiontypedef)
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
-
 
 ## GetGroupCertificateAuthorityResponseTypeDef
 
@@ -1048,14 +914,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetGroupCertificateAuthorityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GroupCertificateAuthorityArn`: `str`
 - `GroupCertificateAuthorityId`: `str`
 - `PemEncodedCertificate`: `str`
-
 
 ## GetGroupCertificateConfigurationResponseTypeDef
 
@@ -1063,14 +926,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetGroupCertificateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CertificateAuthorityExpiryInMilliseconds`: `str`
 - `CertificateExpiryInMilliseconds`: `str`
 - `GroupId`: `str`
-
 
 ## GetGroupResponseTypeDef
 
@@ -1078,10 +938,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetGroupResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1089,8 +947,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetGroupVersionResponseTypeDef
 
@@ -1098,16 +955,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetGroupVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"GroupVersionTypeDef"`
+- `Definition`:
+  [GroupVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## GetLoggerDefinitionResponseTypeDef
 
@@ -1115,10 +970,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1126,8 +979,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetLoggerDefinitionVersionResponseTypeDef
 
@@ -1135,16 +987,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"LoggerDefinitionVersionTypeDef"`
+- `Definition`:
+  [LoggerDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#loggerdefinitionversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## GetResourceDefinitionResponseTypeDef
 
@@ -1152,10 +1002,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetResourceDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1163,8 +1011,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetResourceDefinitionVersionResponseTypeDef
 
@@ -1172,16 +1019,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetResourceDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"ResourceDefinitionVersionTypeDef"`
+- `Definition`:
+  [ResourceDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcedefinitionversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
-
 
 ## GetServiceRoleForAccountResponseTypeDef
 
@@ -1189,13 +1034,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetServiceRoleForAccountResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociatedAt`: `str`
 - `RoleArn`: `str`
-
 
 ## GetSubscriptionDefinitionResponseTypeDef
 
@@ -1203,10 +1045,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1214,8 +1054,7 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
-- `tags`: `Dict[str, str]`
-
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## GetSubscriptionDefinitionVersionResponseTypeDef
 
@@ -1223,17 +1062,15 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionVersionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
-- `Definition`: `"SubscriptionDefinitionVersionTypeDef"`
+- `Definition`:
+  [SubscriptionDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#subscriptiondefinitionversiontypedef)
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
-
 
 ## GetThingRuntimeConfigurationResponseTypeDef
 
@@ -1241,12 +1078,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GetThingRuntimeConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RuntimeConfiguration`: `"RuntimeConfigurationTypeDef"`
 
+- `RuntimeConfiguration`:
+  [RuntimeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#runtimeconfigurationtypedef)
 
 ## GroupCertificateAuthorityPropertiesTypeDef
 
@@ -1254,13 +1089,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GroupCertificateAuthorityPropertiesTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `GroupCertificateAuthorityArn`: `str`
 - `GroupCertificateAuthorityId`: `str`
-
 
 ## GroupInformationTypeDef
 
@@ -1268,10 +1100,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GroupInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
@@ -1280,20 +1110,16 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 
-
 ## GroupOwnerSettingTypeDef
 
 ```python
 from mypy_boto3_greengrass.type_defs import GroupOwnerSettingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutoAddGroupOwner`: `bool`
 - `GroupOwner`: `str`
-
 
 ## GroupVersionTypeDef
 
@@ -1301,10 +1127,8 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import GroupVersionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConnectorDefinitionVersionArn`: `str`
 - `CoreDefinitionVersionArn`: `str`
 - `DeviceDefinitionVersionArn`: `str`
@@ -1313,20 +1137,17 @@ Optional fields:
 - `ResourceDefinitionVersionArn`: `str`
 - `SubscriptionDefinitionVersionArn`: `str`
 
-
 ## ListBulkDeploymentDetailedReportsResponseTypeDef
 
 ```python
 from mypy_boto3_greengrass.type_defs import ListBulkDeploymentDetailedReportsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Deployments`: `List["BulkDeploymentResultTypeDef"]`
-- `NextToken`: `str`
 
+- `Deployments`:
+  `List`\[[BulkDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#bulkdeploymentresulttypedef)\]
+- `NextToken`: `str`
 
 ## ListBulkDeploymentsResponseTypeDef
 
@@ -1334,13 +1155,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListBulkDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BulkDeployments`: `List["BulkDeploymentTypeDef"]`
-- `NextToken`: `str`
 
+- `BulkDeployments`:
+  `List`\[[BulkDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#bulkdeploymenttypedef)\]
+- `NextToken`: `str`
 
 ## ListConnectorDefinitionVersionsResponseTypeDef
 
@@ -1348,13 +1167,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListConnectorDefinitionsResponseTypeDef
 
@@ -1362,13 +1179,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListCoreDefinitionVersionsResponseTypeDef
 
@@ -1376,13 +1191,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListCoreDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListCoreDefinitionsResponseTypeDef
 
@@ -1390,13 +1203,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListCoreDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListDeploymentsResponseTypeDef
 
@@ -1404,13 +1215,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Deployments`: `List["DeploymentTypeDef"]`
-- `NextToken`: `str`
 
+- `Deployments`:
+  `List`\[[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#deploymenttypedef)\]
+- `NextToken`: `str`
 
 ## ListDeviceDefinitionVersionsResponseTypeDef
 
@@ -1418,13 +1227,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListDeviceDefinitionsResponseTypeDef
 
@@ -1432,13 +1239,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListFunctionDefinitionVersionsResponseTypeDef
 
@@ -1446,13 +1251,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListFunctionDefinitionsResponseTypeDef
 
@@ -1460,13 +1263,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListGroupCertificateAuthoritiesResponseTypeDef
 
@@ -1474,12 +1275,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListGroupCertificateAuthoritiesResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GroupCertificateAuthorities`: `List["GroupCertificateAuthorityPropertiesTypeDef"]`
 
+- `GroupCertificateAuthorities`:
+  `List`\[[GroupCertificateAuthorityPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupcertificateauthoritypropertiestypedef)\]
 
 ## ListGroupVersionsResponseTypeDef
 
@@ -1487,13 +1286,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListGroupVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListGroupsResponseTypeDef
 
@@ -1501,13 +1298,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListGroupsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Groups`: `List["GroupInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Groups`:
+  `List`\[[GroupInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupinformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListLoggerDefinitionVersionsResponseTypeDef
 
@@ -1515,13 +1310,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListLoggerDefinitionsResponseTypeDef
 
@@ -1529,13 +1322,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListResourceDefinitionVersionsResponseTypeDef
 
@@ -1543,13 +1334,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListResourceDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListResourceDefinitionsResponseTypeDef
 
@@ -1557,13 +1346,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListResourceDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListSubscriptionDefinitionVersionsResponseTypeDef
 
@@ -1571,13 +1358,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Versions`: `List["VersionInformationTypeDef"]`
 
+- `NextToken`: `str`
+- `Versions`:
+  `List`\[[VersionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#versioninformationtypedef)\]
 
 ## ListSubscriptionDefinitionsResponseTypeDef
 
@@ -1585,13 +1370,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Definitions`: `List["DefinitionInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `Definitions`:
+  `List`\[[DefinitionInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#definitioninformationtypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1599,12 +1382,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `Dict[str, str]`
 
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## LocalDeviceResourceDataTypeDef
 
@@ -1612,13 +1392,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import LocalDeviceResourceDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `GroupOwnerSetting`: `"GroupOwnerSettingTypeDef"`
-- `SourcePath`: `str`
 
+- `GroupOwnerSetting`:
+  [GroupOwnerSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupownersettingtypedef)
+- `SourcePath`: `str`
 
 ## LocalVolumeResourceDataTypeDef
 
@@ -1626,14 +1404,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import LocalVolumeResourceDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationPath`: `str`
-- `GroupOwnerSetting`: `"GroupOwnerSettingTypeDef"`
-- `SourcePath`: `str`
 
+- `DestinationPath`: `str`
+- `GroupOwnerSetting`:
+  [GroupOwnerSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupownersettingtypedef)
+- `SourcePath`: `str`
 
 ## LoggerDefinitionVersionTypeDef
 
@@ -1641,12 +1417,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import LoggerDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Loggers`: `List["LoggerTypeDef"]`
 
+- `Loggers`:
+  `List`\[[LoggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#loggertypedef)\]
 
 ## LoggerTypeDef
 
@@ -1654,18 +1428,19 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import LoggerTypeDef
 ```
 
-
 Required fields:
-- `Component`: `LoggerComponent`
+
+- `Component`:
+  [LoggerComponent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#loggercomponent)
 - `Id`: `str`
-- `Level`: `LoggerLevel`
-- `Type`: `LoggerType`
-
-
+- `Level`:
+  [LoggerLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#loggerlevel)
+- `Type`:
+  [LoggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#loggertype)
 
 Optional fields:
-- `Space`: `int`
 
+- `Space`: `int`
 
 ## PaginatorConfigTypeDef
 
@@ -1673,14 +1448,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ResetDeploymentsResponseTypeDef
 
@@ -1688,13 +1460,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ResetDeploymentsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
-
 
 ## ResourceAccessPolicyTypeDef
 
@@ -1702,15 +1471,14 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ResourceAccessPolicyTypeDef
 ```
 
-
 Required fields:
+
 - `ResourceId`: `str`
 
-
-
 Optional fields:
-- `Permission`: `Permission`
 
+- `Permission`:
+  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#permission)
 
 ## ResourceDataContainerTypeDef
 
@@ -1718,16 +1486,18 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ResourceDataContainerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LocalDeviceResourceData`: `"LocalDeviceResourceDataTypeDef"`
-- `LocalVolumeResourceData`: `"LocalVolumeResourceDataTypeDef"`
-- `S3MachineLearningModelResourceData`: `"S3MachineLearningModelResourceDataTypeDef"`
-- `SageMakerMachineLearningModelResourceData`: `"SageMakerMachineLearningModelResourceDataTypeDef"`
-- `SecretsManagerSecretResourceData`: `"SecretsManagerSecretResourceDataTypeDef"`
 
+- `LocalDeviceResourceData`:
+  [LocalDeviceResourceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#localdeviceresourcedatatypedef)
+- `LocalVolumeResourceData`:
+  [LocalVolumeResourceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#localvolumeresourcedatatypedef)
+- `S3MachineLearningModelResourceData`:
+  [S3MachineLearningModelResourceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#s3machinelearningmodelresourcedatatypedef)
+- `SageMakerMachineLearningModelResourceData`:
+  [SageMakerMachineLearningModelResourceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#sagemakermachinelearningmodelresourcedatatypedef)
+- `SecretsManagerSecretResourceData`:
+  [SecretsManagerSecretResourceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#secretsmanagersecretresourcedatatypedef)
 
 ## ResourceDefinitionVersionTypeDef
 
@@ -1735,12 +1505,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ResourceDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Resources`: `List["ResourceTypeDef"]`
 
+- `Resources`:
+  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcetypedef)\]
 
 ## ResourceDownloadOwnerSettingTypeDef
 
@@ -1748,13 +1516,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import ResourceDownloadOwnerSettingTypeDef
 ```
 
-
 Required fields:
+
 - `GroupOwner`: `str`
-- `GroupPermission`: `Permission`
-
-
-
+- `GroupPermission`:
+  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#permission)
 
 ## ResourceTypeDef
 
@@ -1762,14 +1528,12 @@ Required fields:
 from mypy_boto3_greengrass.type_defs import ResourceTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `Name`: `str`
-- `ResourceDataContainer`: `"ResourceDataContainerTypeDef"`
-
-
-
+- `ResourceDataContainer`:
+  [ResourceDataContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcedatacontainertypedef)
 
 ## RuntimeConfigurationTypeDef
 
@@ -1777,12 +1541,10 @@ Required fields:
 from mypy_boto3_greengrass.type_defs import RuntimeConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TelemetryConfiguration`: `"TelemetryConfigurationTypeDef"`
 
+- `TelemetryConfiguration`:
+  [TelemetryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#telemetryconfigurationtypedef)
 
 ## S3MachineLearningModelResourceDataTypeDef
 
@@ -1790,14 +1552,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import S3MachineLearningModelResourceDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationPath`: `str`
-- `OwnerSetting`: `"ResourceDownloadOwnerSettingTypeDef"`
-- `S3Uri`: `str`
 
+- `DestinationPath`: `str`
+- `OwnerSetting`:
+  [ResourceDownloadOwnerSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcedownloadownersettingtypedef)
+- `S3Uri`: `str`
 
 ## SageMakerMachineLearningModelResourceDataTypeDef
 
@@ -1805,14 +1565,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import SageMakerMachineLearningModelResourceDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationPath`: `str`
-- `OwnerSetting`: `"ResourceDownloadOwnerSettingTypeDef"`
-- `SageMakerJobArn`: `str`
 
+- `DestinationPath`: `str`
+- `OwnerSetting`:
+  [ResourceDownloadOwnerSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcedownloadownersettingtypedef)
+- `SageMakerJobArn`: `str`
 
 ## SecretsManagerSecretResourceDataTypeDef
 
@@ -1820,13 +1578,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import SecretsManagerSecretResourceDataTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ARN`: `str`
-- `AdditionalStagingLabelsToDownload`: `List[str]`
 
+- `ARN`: `str`
+- `AdditionalStagingLabelsToDownload`: `List`\[`str`\]
 
 ## StartBulkDeploymentResponseTypeDef
 
@@ -1834,13 +1589,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import StartBulkDeploymentResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BulkDeploymentArn`: `str`
 - `BulkDeploymentId`: `str`
-
 
 ## SubscriptionDefinitionVersionTypeDef
 
@@ -1848,12 +1600,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import SubscriptionDefinitionVersionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Subscriptions`: `List["SubscriptionTypeDef"]`
 
+- `Subscriptions`:
+  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#subscriptiontypedef)\]
 
 ## SubscriptionTypeDef
 
@@ -1861,15 +1611,12 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import SubscriptionTypeDef
 ```
 
-
 Required fields:
+
 - `Id`: `str`
 - `Source`: `str`
 - `Subject`: `str`
 - `Target`: `str`
-
-
-
 
 ## TelemetryConfigurationTypeDef
 
@@ -1877,15 +1624,15 @@ Required fields:
 from mypy_boto3_greengrass.type_defs import TelemetryConfigurationTypeDef
 ```
 
-
 Required fields:
-- `Telemetry`: `Telemetry`
 
-
+- `Telemetry`:
+  [Telemetry](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#telemetry)
 
 Optional fields:
-- `ConfigurationSyncStatus`: `ConfigurationSyncStatus`
 
+- `ConfigurationSyncStatus`:
+  [ConfigurationSyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#configurationsyncstatus)
 
 ## TelemetryConfigurationUpdateTypeDef
 
@@ -1893,12 +1640,10 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import TelemetryConfigurationUpdateTypeDef
 ```
 
-
 Required fields:
-- `Telemetry`: `Telemetry`
 
-
-
+- `Telemetry`:
+  [Telemetry](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#telemetry)
 
 ## UpdateConnectivityInfoResponseTypeDef
 
@@ -1906,13 +1651,10 @@ Required fields:
 from mypy_boto3_greengrass.type_defs import UpdateConnectivityInfoResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Message`: `str`
 - `Version`: `str`
-
 
 ## UpdateGroupCertificateConfigurationResponseTypeDef
 
@@ -1920,14 +1662,11 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import UpdateGroupCertificateConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CertificateAuthorityExpiryInMilliseconds`: `str`
 - `CertificateExpiryInMilliseconds`: `str`
 - `GroupId`: `str`
-
 
 ## VersionInformationTypeDef
 
@@ -1935,12 +1674,9 @@ Optional fields:
 from mypy_boto3_greengrass.type_defs import VersionInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Support](./README.md) > Literals
 
-Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+Auto-generated documentation for
+[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+type annotations stubs module
+[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Literals for boto3 Support module](#literals-for-boto3-support-module)
   - [DescribeCasesPaginatorName](#describecasespaginatorname)

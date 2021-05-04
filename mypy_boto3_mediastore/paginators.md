@@ -2,15 +2,18 @@
 
 > [Index](../README.md) > [MediaStore](./README.md) > Paginators
 
-Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
-type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+Auto-generated documentation for
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+type annotations stubs module
+[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [Paginators for boto3 MediaStore module](#paginators-for-boto3-mediastore-module)
   - [ListContainersPaginator](#listcontainerspaginator)
 
 ## ListContainersPaginator
 
-Type annotations for `boto3.client("mediastore").get_paginator("list_containers")`.
+Type annotations for
+`boto3.client("mediastore").get_paginator("list_containers")`.
 
 Can be used directly:
 
@@ -21,13 +24,13 @@ def get_list_containers_paginator() -> ListContainersPaginator:
     return boto3.client("mediastore").get_paginator("list_containers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
+Boto3 documentation:
+[MediaStore.Paginator.ListContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
 
-```python
-class ListContainersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListContainersOutputTypeDef]:
-        pass
-```
+Arguments for `ListContainersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#paginatorconfigtypedef)
+
+`ListContainersPaginator.paginate` returns
+`Iterator`\[[ListContainersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listcontainersoutputtypedef)\].

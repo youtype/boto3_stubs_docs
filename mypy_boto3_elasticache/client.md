@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElastiCache](./README.md) > ElastiCacheClient
 
-Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+Auto-generated documentation for
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+type annotations stubs module
+[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [ElastiCacheClient for boto3 ElastiCache module](#elasticacheclient-for-boto3-elasticache-module)
   - [ElastiCacheClient](#elasticacheclient)
@@ -92,12 +94,13 @@ def get_elasticache_client() -> ElastiCacheClient:
     return boto3.client("elasticache")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client)
+Boto3 documentation:
+[ElastiCache.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_elasticache.client import Exceptions
@@ -105,7 +108,6 @@ from mypy_boto3_elasticache.client import Exceptions
 def handle_error(exc: Exceptions.APICallRateForCustomerExceededFault) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -178,1242 +180,1333 @@ Exceptions:
 - `Exceptions.UserNotFoundFault`
 - `Exceptions.UserQuotaExceededFault`
 
-
 ## Methods
-
 
 ### add_tags_to_resource
 
 Type annotations for `boto3.client("elasticache").add_tags_to_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource]
+Boto3 documentation:
+[ElastiCache.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource)
 
-```python
-def add_tags_to_resource(
-    self,
-    ResourceName: str,
-    Tags: List["TagTypeDef"]
-) -> TagListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns
+[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
 
 ### authorize_cache_security_group_ingress
 
-Type annotations for `boto3.client("elasticache").authorize_cache_security_group_ingress` method.
+Type annotations for
+`boto3.client("elasticache").authorize_cache_security_group_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.authorize_cache_security_group_ingress]
+Boto3 documentation:
+[ElastiCache.Client.authorize_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.authorize_cache_security_group_ingress)
 
-```python
-def authorize_cache_security_group_ingress(
-    self,
-    CacheSecurityGroupName: str,
-    EC2SecurityGroupName: str,
-    EC2SecurityGroupOwnerId: str
-) -> AuthorizeCacheSecurityGroupIngressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSecurityGroupName`: `str` *(required)*
+- `EC2SecurityGroupName`: `str` *(required)*
+- `EC2SecurityGroupOwnerId`: `str` *(required)*
+
+Returns
+[AuthorizeCacheSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#authorizecachesecuritygroupingressresulttypedef).
 
 ### batch_apply_update_action
 
-Type annotations for `boto3.client("elasticache").batch_apply_update_action` method.
+Type annotations for `boto3.client("elasticache").batch_apply_update_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_apply_update_action]
+Boto3 documentation:
+[ElastiCache.Client.batch_apply_update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_apply_update_action)
 
-```python
-def batch_apply_update_action(
-    self,
-    ServiceUpdateName: str,
-    ReplicationGroupIds: List[str] = None,
-    CacheClusterIds: List[str] = None
-) -> UpdateActionResultsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceUpdateName`: `str` *(required)*
+- `ReplicationGroupIds`: `List`\[`str`\]
+- `CacheClusterIds`: `List`\[`str`\]
+
+Returns
+[UpdateActionResultsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionresultsmessagetypedef).
 
 ### batch_stop_update_action
 
-Type annotations for `boto3.client("elasticache").batch_stop_update_action` method.
+Type annotations for `boto3.client("elasticache").batch_stop_update_action`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_stop_update_action]
+Boto3 documentation:
+[ElastiCache.Client.batch_stop_update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_stop_update_action)
 
-```python
-def batch_stop_update_action(
-    self,
-    ServiceUpdateName: str,
-    ReplicationGroupIds: List[str] = None,
-    CacheClusterIds: List[str] = None
-) -> UpdateActionResultsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceUpdateName`: `str` *(required)*
+- `ReplicationGroupIds`: `List`\[`str`\]
+- `CacheClusterIds`: `List`\[`str`\]
+
+Returns
+[UpdateActionResultsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionresultsmessagetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("elasticache").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.can_paginate]
+Boto3 documentation:
+[ElastiCache.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### complete_migration
 
 Type annotations for `boto3.client("elasticache").complete_migration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.complete_migration]
+Boto3 documentation:
+[ElastiCache.Client.complete_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.complete_migration)
 
-```python
-def complete_migration(
-    self,
-    ReplicationGroupId: str,
-    Force: bool = None
-) -> CompleteMigrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `Force`: `bool`
+
+Returns
+[CompleteMigrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#completemigrationresponsetypedef).
 
 ### copy_snapshot
 
 Type annotations for `boto3.client("elasticache").copy_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.copy_snapshot]
+Boto3 documentation:
+[ElastiCache.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.copy_snapshot)
 
-```python
-def copy_snapshot(
-    self,
-    SourceSnapshotName: str,
-    TargetSnapshotName: str,
-    TargetBucket: str = None,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CopySnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceSnapshotName`: `str` *(required)*
+- `TargetSnapshotName`: `str` *(required)*
+- `TargetBucket`: `str`
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[CopySnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#copysnapshotresulttypedef).
 
 ### create_cache_cluster
 
 Type annotations for `boto3.client("elasticache").create_cache_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_cluster]
+Boto3 documentation:
+[ElastiCache.Client.create_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_cluster)
 
-```python
-def create_cache_cluster(
-    self,
-    CacheClusterId: str,
-    ReplicationGroupId: str = None,
-    AZMode: AZMode = None,
-    PreferredAvailabilityZone: str = None,
-    PreferredAvailabilityZones: List[str] = None,
-    NumCacheNodes: int = None,
-    CacheNodeType: str = None,
-    Engine: str = None,
-    EngineVersion: str = None,
-    CacheParameterGroupName: str = None,
-    CacheSubnetGroupName: str = None,
-    CacheSecurityGroupNames: List[str] = None,
-    SecurityGroupIds: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    SnapshotArns: List[str] = None,
-    SnapshotName: str = None,
-    PreferredMaintenanceWindow: str = None,
-    Port: int = None,
-    NotificationTopicArn: str = None,
-    AutoMinorVersionUpgrade: bool = None,
-    SnapshotRetentionLimit: int = None,
-    SnapshotWindow: str = None,
-    AuthToken: str = None,
-    OutpostMode: OutpostMode = None,
-    PreferredOutpostArn: str = None,
-    PreferredOutpostArns: List[str] = None,
-    LogDeliveryConfigurations: List[LogDeliveryConfigurationRequestTypeDef] = None
-) -> CreateCacheClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str` *(required)*
+- `ReplicationGroupId`: `str`
+- `AZMode`:
+  [AZMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#azmode)
+- `PreferredAvailabilityZone`: `str`
+- `PreferredAvailabilityZones`: `List`\[`str`\]
+- `NumCacheNodes`: `int`
+- `CacheNodeType`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `CacheParameterGroupName`: `str`
+- `CacheSubnetGroupName`: `str`
+- `CacheSecurityGroupNames`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `SnapshotArns`: `List`\[`str`\]
+- `SnapshotName`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `Port`: `int`
+- `NotificationTopicArn`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `SnapshotRetentionLimit`: `int`
+- `SnapshotWindow`: `str`
+- `AuthToken`: `str`
+- `OutpostMode`:
+  [OutpostMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#outpostmode)
+- `PreferredOutpostArn`: `str`
+- `PreferredOutpostArns`: `List`\[`str`\]
+- `LogDeliveryConfigurations`:
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+
+Returns
+[CreateCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcacheclusterresulttypedef).
 
 ### create_cache_parameter_group
 
-Type annotations for `boto3.client("elasticache").create_cache_parameter_group` method.
+Type annotations for `boto3.client("elasticache").create_cache_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_parameter_group]
+Boto3 documentation:
+[ElastiCache.Client.create_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_parameter_group)
 
-```python
-def create_cache_parameter_group(
-    self,
-    CacheParameterGroupName: str,
-    CacheParameterGroupFamily: str,
-    Description: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateCacheParameterGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str` *(required)*
+- `CacheParameterGroupFamily`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCacheParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcacheparametergroupresulttypedef).
 
 ### create_cache_security_group
 
-Type annotations for `boto3.client("elasticache").create_cache_security_group` method.
+Type annotations for `boto3.client("elasticache").create_cache_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_security_group]
+Boto3 documentation:
+[ElastiCache.Client.create_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_security_group)
 
-```python
-def create_cache_security_group(
-    self,
-    CacheSecurityGroupName: str,
-    Description: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateCacheSecurityGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSecurityGroupName`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCacheSecurityGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcachesecuritygroupresulttypedef).
 
 ### create_cache_subnet_group
 
-Type annotations for `boto3.client("elasticache").create_cache_subnet_group` method.
+Type annotations for `boto3.client("elasticache").create_cache_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_subnet_group]
+Boto3 documentation:
+[ElastiCache.Client.create_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_subnet_group)
 
-```python
-def create_cache_subnet_group(
-    self,
-    CacheSubnetGroupName: str,
-    CacheSubnetGroupDescription: str,
-    SubnetIds: List[str],
-    Tags: List["TagTypeDef"] = None
-) -> CreateCacheSubnetGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSubnetGroupName`: `str` *(required)*
+- `CacheSubnetGroupDescription`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateCacheSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcachesubnetgroupresulttypedef).
 
 ### create_global_replication_group
 
-Type annotations for `boto3.client("elasticache").create_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").create_global_replication_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.create_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_global_replication_group)
 
-```python
-def create_global_replication_group(
-    self,
-    GlobalReplicationGroupIdSuffix: str,
-    PrimaryReplicationGroupId: str,
-    GlobalReplicationGroupDescription: str = None
-) -> CreateGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupIdSuffix`: `str` *(required)*
+- `PrimaryReplicationGroupId`: `str` *(required)*
+- `GlobalReplicationGroupDescription`: `str`
+
+Returns
+[CreateGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createglobalreplicationgroupresulttypedef).
 
 ### create_replication_group
 
-Type annotations for `boto3.client("elasticache").create_replication_group` method.
+Type annotations for `boto3.client("elasticache").create_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.create_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_replication_group)
 
-```python
-def create_replication_group(
-    self,
-    ReplicationGroupId: str,
-    ReplicationGroupDescription: str,
-    GlobalReplicationGroupId: str = None,
-    PrimaryClusterId: str = None,
-    AutomaticFailoverEnabled: bool = None,
-    MultiAZEnabled: bool = None,
-    NumCacheClusters: int = None,
-    PreferredCacheClusterAZs: List[str] = None,
-    NumNodeGroups: int = None,
-    ReplicasPerNodeGroup: int = None,
-    NodeGroupConfiguration: List["NodeGroupConfigurationTypeDef"] = None,
-    CacheNodeType: str = None,
-    Engine: str = None,
-    EngineVersion: str = None,
-    CacheParameterGroupName: str = None,
-    CacheSubnetGroupName: str = None,
-    CacheSecurityGroupNames: List[str] = None,
-    SecurityGroupIds: List[str] = None,
-    Tags: List["TagTypeDef"] = None,
-    SnapshotArns: List[str] = None,
-    SnapshotName: str = None,
-    PreferredMaintenanceWindow: str = None,
-    Port: int = None,
-    NotificationTopicArn: str = None,
-    AutoMinorVersionUpgrade: bool = None,
-    SnapshotRetentionLimit: int = None,
-    SnapshotWindow: str = None,
-    AuthToken: str = None,
-    TransitEncryptionEnabled: bool = None,
-    AtRestEncryptionEnabled: bool = None,
-    KmsKeyId: str = None,
-    UserGroupIds: List[str] = None,
-    LogDeliveryConfigurations: List[LogDeliveryConfigurationRequestTypeDef] = None
-) -> CreateReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `ReplicationGroupDescription`: `str` *(required)*
+- `GlobalReplicationGroupId`: `str`
+- `PrimaryClusterId`: `str`
+- `AutomaticFailoverEnabled`: `bool`
+- `MultiAZEnabled`: `bool`
+- `NumCacheClusters`: `int`
+- `PreferredCacheClusterAZs`: `List`\[`str`\]
+- `NumNodeGroups`: `int`
+- `ReplicasPerNodeGroup`: `int`
+- `NodeGroupConfiguration`:
+  `List`\[[NodeGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#nodegroupconfigurationtypedef)\]
+- `CacheNodeType`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `CacheParameterGroupName`: `str`
+- `CacheSubnetGroupName`: `str`
+- `CacheSecurityGroupNames`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `SnapshotArns`: `List`\[`str`\]
+- `SnapshotName`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `Port`: `int`
+- `NotificationTopicArn`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `SnapshotRetentionLimit`: `int`
+- `SnapshotWindow`: `str`
+- `AuthToken`: `str`
+- `TransitEncryptionEnabled`: `bool`
+- `AtRestEncryptionEnabled`: `bool`
+- `KmsKeyId`: `str`
+- `UserGroupIds`: `List`\[`str`\]
+- `LogDeliveryConfigurations`:
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+
+Returns
+[CreateReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createreplicationgroupresulttypedef).
 
 ### create_snapshot
 
 Type annotations for `boto3.client("elasticache").create_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_snapshot]
+Boto3 documentation:
+[ElastiCache.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_snapshot)
 
-```python
-def create_snapshot(
-    self,
-    SnapshotName: str,
-    ReplicationGroupId: str = None,
-    CacheClusterId: str = None,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotName`: `str` *(required)*
+- `ReplicationGroupId`: `str`
+- `CacheClusterId`: `str`
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createsnapshotresulttypedef).
 
 ### create_user
 
 Type annotations for `boto3.client("elasticache").create_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user]
+Boto3 documentation:
+[ElastiCache.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user)
 
-```python
-def create_user(
-    self,
-    UserId: str,
-    UserName: str,
-    Engine: str,
-    AccessString: str,
-    Passwords: List[str] = None,
-    NoPasswordRequired: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> "UserTypeDef":
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+- `Engine`: `str` *(required)*
+- `AccessString`: `str` *(required)*
+- `Passwords`: `List`\[`str`\]
+- `NoPasswordRequired`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
 
 ### create_user_group
 
 Type annotations for `boto3.client("elasticache").create_user_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user_group]
+Boto3 documentation:
+[ElastiCache.Client.create_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user_group)
 
-```python
-def create_user_group(
-    self,
-    UserGroupId: str,
-    Engine: str,
-    UserIds: List[str] = None,
-    Tags: List["TagTypeDef"] = None
-) -> "UserGroupTypeDef":
-    pass
-```
+Arguments:
+
+- `UserGroupId`: `str` *(required)*
+- `Engine`: `str` *(required)*
+- `UserIds`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
 
 ### decrease_node_groups_in_global_replication_group
 
-Type annotations for `boto3.client("elasticache").decrease_node_groups_in_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").decrease_node_groups_in_global_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_node_groups_in_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.decrease_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_node_groups_in_global_replication_group)
 
-```python
-def decrease_node_groups_in_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    NodeGroupCount: int,
-    ApplyImmediately: bool,
-    GlobalNodeGroupsToRemove: List[str] = None,
-    GlobalNodeGroupsToRetain: List[str] = None
-) -> DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `NodeGroupCount`: `int` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `GlobalNodeGroupsToRemove`: `List`\[`str`\]
+- `GlobalNodeGroupsToRetain`: `List`\[`str`\]
+
+Returns
+[DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#decreasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### decrease_replica_count
 
-Type annotations for `boto3.client("elasticache").decrease_replica_count` method.
+Type annotations for `boto3.client("elasticache").decrease_replica_count`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_replica_count]
+Boto3 documentation:
+[ElastiCache.Client.decrease_replica_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_replica_count)
 
-```python
-def decrease_replica_count(
-    self,
-    ReplicationGroupId: str,
-    ApplyImmediately: bool,
-    NewReplicaCount: int = None,
-    ReplicaConfiguration: List[ConfigureShardTypeDef] = None,
-    ReplicasToRemove: List[str] = None
-) -> DecreaseReplicaCountResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `NewReplicaCount`: `int`
+- `ReplicaConfiguration`:
+  `List`\[[ConfigureShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#configureshardtypedef)\]
+- `ReplicasToRemove`: `List`\[`str`\]
+
+Returns
+[DecreaseReplicaCountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#decreasereplicacountresulttypedef).
 
 ### delete_cache_cluster
 
 Type annotations for `boto3.client("elasticache").delete_cache_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster]
+Boto3 documentation:
+[ElastiCache.Client.delete_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster)
 
-```python
-def delete_cache_cluster(
-    self,
-    CacheClusterId: str,
-    FinalSnapshotIdentifier: str = None
-) -> DeleteCacheClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str` *(required)*
+- `FinalSnapshotIdentifier`: `str`
+
+Returns
+[DeleteCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletecacheclusterresulttypedef).
 
 ### delete_cache_parameter_group
 
-Type annotations for `boto3.client("elasticache").delete_cache_parameter_group` method.
+Type annotations for `boto3.client("elasticache").delete_cache_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group)
 
-```python
-def delete_cache_parameter_group(
-    self,
-    CacheParameterGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str` *(required)*
 
 ### delete_cache_security_group
 
-Type annotations for `boto3.client("elasticache").delete_cache_security_group` method.
+Type annotations for `boto3.client("elasticache").delete_cache_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group)
 
-```python
-def delete_cache_security_group(
-    self,
-    CacheSecurityGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CacheSecurityGroupName`: `str` *(required)*
 
 ### delete_cache_subnet_group
 
-Type annotations for `boto3.client("elasticache").delete_cache_subnet_group` method.
+Type annotations for `boto3.client("elasticache").delete_cache_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group)
 
-```python
-def delete_cache_subnet_group(
-    self,
-    CacheSubnetGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `CacheSubnetGroupName`: `str` *(required)*
 
 ### delete_global_replication_group
 
-Type annotations for `boto3.client("elasticache").delete_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").delete_global_replication_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group)
 
-```python
-def delete_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    RetainPrimaryReplicationGroup: bool
-) -> DeleteGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `RetainPrimaryReplicationGroup`: `bool` *(required)*
+
+Returns
+[DeleteGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deleteglobalreplicationgroupresulttypedef).
 
 ### delete_replication_group
 
-Type annotations for `boto3.client("elasticache").delete_replication_group` method.
+Type annotations for `boto3.client("elasticache").delete_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_replication_group)
 
-```python
-def delete_replication_group(
-    self,
-    ReplicationGroupId: str,
-    RetainPrimaryCluster: bool = None,
-    FinalSnapshotIdentifier: str = None
-) -> DeleteReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `RetainPrimaryCluster`: `bool`
+- `FinalSnapshotIdentifier`: `str`
+
+Returns
+[DeleteReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletereplicationgroupresulttypedef).
 
 ### delete_snapshot
 
 Type annotations for `boto3.client("elasticache").delete_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot]
+Boto3 documentation:
+[ElastiCache.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot)
 
-```python
-def delete_snapshot(
-    self,
-    SnapshotName: str
-) -> DeleteSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotName`: `str` *(required)*
+
+Returns
+[DeleteSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletesnapshotresulttypedef).
 
 ### delete_user
 
 Type annotations for `boto3.client("elasticache").delete_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user]
+Boto3 documentation:
+[ElastiCache.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user)
 
-```python
-def delete_user(
-    self,
-    UserId: str
-) -> "UserTypeDef":
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+
+Returns
+[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
 
 ### delete_user_group
 
 Type annotations for `boto3.client("elasticache").delete_user_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user_group]
+Boto3 documentation:
+[ElastiCache.Client.delete_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user_group)
 
-```python
-def delete_user_group(
-    self,
-    UserGroupId: str
-) -> "UserGroupTypeDef":
-    pass
-```
+Arguments:
+
+- `UserGroupId`: `str` *(required)*
+
+Returns
+[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
 
 ### describe_cache_clusters
 
-Type annotations for `boto3.client("elasticache").describe_cache_clusters` method.
+Type annotations for `boto3.client("elasticache").describe_cache_clusters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_clusters]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_clusters)
 
-```python
-def describe_cache_clusters(
-    self,
-    CacheClusterId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    ShowCacheNodeInfo: bool = None,
-    ShowCacheClustersNotInReplicationGroups: bool = None
-) -> CacheClusterMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `ShowCacheNodeInfo`: `bool`
+- `ShowCacheClustersNotInReplicationGroups`: `bool`
+
+Returns
+[CacheClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheclustermessagetypedef).
 
 ### describe_cache_engine_versions
 
-Type annotations for `boto3.client("elasticache").describe_cache_engine_versions` method.
+Type annotations for
+`boto3.client("elasticache").describe_cache_engine_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_engine_versions]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_engine_versions)
 
-```python
-def describe_cache_engine_versions(
-    self,
-    Engine: str = None,
-    EngineVersion: str = None,
-    CacheParameterGroupFamily: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    DefaultOnly: bool = None
-) -> CacheEngineVersionMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `CacheParameterGroupFamily`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `DefaultOnly`: `bool`
+
+Returns
+[CacheEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheengineversionmessagetypedef).
 
 ### describe_cache_parameter_groups
 
-Type annotations for `boto3.client("elasticache").describe_cache_parameter_groups` method.
+Type annotations for
+`boto3.client("elasticache").describe_cache_parameter_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameter_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameter_groups)
 
-```python
-def describe_cache_parameter_groups(
-    self,
-    CacheParameterGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> CacheParameterGroupsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[CacheParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupsmessagetypedef).
 
 ### describe_cache_parameters
 
-Type annotations for `boto3.client("elasticache").describe_cache_parameters` method.
+Type annotations for `boto3.client("elasticache").describe_cache_parameters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameters]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameters)
 
-```python
-def describe_cache_parameters(
-    self,
-    CacheParameterGroupName: str,
-    Source: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> CacheParameterGroupDetailsTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[CacheParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupdetailstypedef).
 
 ### describe_cache_security_groups
 
-Type annotations for `boto3.client("elasticache").describe_cache_security_groups` method.
+Type annotations for
+`boto3.client("elasticache").describe_cache_security_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_security_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_security_groups)
 
-```python
-def describe_cache_security_groups(
-    self,
-    CacheSecurityGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> CacheSecurityGroupMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSecurityGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[CacheSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesecuritygroupmessagetypedef).
 
 ### describe_cache_subnet_groups
 
-Type annotations for `boto3.client("elasticache").describe_cache_subnet_groups` method.
+Type annotations for `boto3.client("elasticache").describe_cache_subnet_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_subnet_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_cache_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_subnet_groups)
 
-```python
-def describe_cache_subnet_groups(
-    self,
-    CacheSubnetGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> CacheSubnetGroupMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSubnetGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[CacheSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesubnetgroupmessagetypedef).
 
 ### describe_engine_default_parameters
 
-Type annotations for `boto3.client("elasticache").describe_engine_default_parameters` method.
+Type annotations for
+`boto3.client("elasticache").describe_engine_default_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_engine_default_parameters]
+Boto3 documentation:
+[ElastiCache.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_engine_default_parameters)
 
-```python
-def describe_engine_default_parameters(
-    self,
-    CacheParameterGroupFamily: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeEngineDefaultParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupFamily`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeenginedefaultparametersresulttypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("elasticache").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_events]
+Boto3 documentation:
+[ElastiCache.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    SourceIdentifier: str = None,
-    SourceType: SourceType = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Duration: int = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> EventsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceIdentifier`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#eventsmessagetypedef).
 
 ### describe_global_replication_groups
 
-Type annotations for `boto3.client("elasticache").describe_global_replication_groups` method.
+Type annotations for
+`boto3.client("elasticache").describe_global_replication_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_global_replication_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_global_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_global_replication_groups)
 
-```python
-def describe_global_replication_groups(
-    self,
-    GlobalReplicationGroupId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    ShowMemberInfo: bool = None
-) -> DescribeGlobalReplicationGroupsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `ShowMemberInfo`: `bool`
+
+Returns
+[DescribeGlobalReplicationGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeglobalreplicationgroupsresulttypedef).
 
 ### describe_replication_groups
 
-Type annotations for `boto3.client("elasticache").describe_replication_groups` method.
+Type annotations for `boto3.client("elasticache").describe_replication_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_replication_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_replication_groups)
 
-```python
-def describe_replication_groups(
-    self,
-    ReplicationGroupId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ReplicationGroupMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ReplicationGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#replicationgroupmessagetypedef).
 
 ### describe_reserved_cache_nodes
 
-Type annotations for `boto3.client("elasticache").describe_reserved_cache_nodes` method.
+Type annotations for
+`boto3.client("elasticache").describe_reserved_cache_nodes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes]
+Boto3 documentation:
+[ElastiCache.Client.describe_reserved_cache_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes)
 
-```python
-def describe_reserved_cache_nodes(
-    self,
-    ReservedCacheNodeId: str = None,
-    ReservedCacheNodesOfferingId: str = None,
-    CacheNodeType: str = None,
-    Duration: str = None,
-    ProductDescription: str = None,
-    OfferingType: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ReservedCacheNodeMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedCacheNodeId`: `str`
+- `ReservedCacheNodesOfferingId`: `str`
+- `CacheNodeType`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ReservedCacheNodeMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodemessagetypedef).
 
 ### describe_reserved_cache_nodes_offerings
 
-Type annotations for `boto3.client("elasticache").describe_reserved_cache_nodes_offerings` method.
+Type annotations for
+`boto3.client("elasticache").describe_reserved_cache_nodes_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes_offerings]
+Boto3 documentation:
+[ElastiCache.Client.describe_reserved_cache_nodes_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes_offerings)
 
-```python
-def describe_reserved_cache_nodes_offerings(
-    self,
-    ReservedCacheNodesOfferingId: str = None,
-    CacheNodeType: str = None,
-    Duration: str = None,
-    ProductDescription: str = None,
-    OfferingType: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ReservedCacheNodesOfferingMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedCacheNodesOfferingId`: `str`
+- `CacheNodeType`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ReservedCacheNodesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodesofferingmessagetypedef).
 
 ### describe_service_updates
 
-Type annotations for `boto3.client("elasticache").describe_service_updates` method.
+Type annotations for `boto3.client("elasticache").describe_service_updates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_service_updates]
+Boto3 documentation:
+[ElastiCache.Client.describe_service_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_service_updates)
 
-```python
-def describe_service_updates(
-    self,
-    ServiceUpdateName: str = None,
-    ServiceUpdateStatus: List[ServiceUpdateStatus] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ServiceUpdatesMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceUpdateName`: `str`
+- `ServiceUpdateStatus`:
+  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ServiceUpdatesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#serviceupdatesmessagetypedef).
 
 ### describe_snapshots
 
 Type annotations for `boto3.client("elasticache").describe_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_snapshots]
+Boto3 documentation:
+[ElastiCache.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_snapshots)
 
-```python
-def describe_snapshots(
-    self,
-    ReplicationGroupId: str = None,
-    CacheClusterId: str = None,
-    SnapshotName: str = None,
-    SnapshotSource: str = None,
-    Marker: str = None,
-    MaxRecords: int = None,
-    ShowNodeGroupConfig: bool = None
-) -> DescribeSnapshotsListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str`
+- `CacheClusterId`: `str`
+- `SnapshotName`: `str`
+- `SnapshotSource`: `str`
+- `Marker`: `str`
+- `MaxRecords`: `int`
+- `ShowNodeGroupConfig`: `bool`
+
+Returns
+[DescribeSnapshotsListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describesnapshotslistmessagetypedef).
 
 ### describe_update_actions
 
-Type annotations for `boto3.client("elasticache").describe_update_actions` method.
+Type annotations for `boto3.client("elasticache").describe_update_actions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_update_actions]
+Boto3 documentation:
+[ElastiCache.Client.describe_update_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_update_actions)
 
-```python
-def describe_update_actions(
-    self,
-    ServiceUpdateName: str = None,
-    ReplicationGroupIds: List[str] = None,
-    CacheClusterIds: List[str] = None,
-    Engine: str = None,
-    ServiceUpdateStatus: List[ServiceUpdateStatus] = None,
-    ServiceUpdateTimeRange: TimeRangeFilterTypeDef = None,
-    UpdateActionStatus: List[UpdateActionStatus] = None,
-    ShowNodeLevelUpdateStatus: bool = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> UpdateActionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ServiceUpdateName`: `str`
+- `ReplicationGroupIds`: `List`\[`str`\]
+- `CacheClusterIds`: `List`\[`str`\]
+- `Engine`: `str`
+- `ServiceUpdateStatus`:
+  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+- `ServiceUpdateTimeRange`:
+  [TimeRangeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#timerangefiltertypedef)
+- `UpdateActionStatus`:
+  `List`\[[UpdateActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#updateactionstatus)\]
+- `ShowNodeLevelUpdateStatus`: `bool`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[UpdateActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionsmessagetypedef).
 
 ### describe_user_groups
 
 Type annotations for `boto3.client("elasticache").describe_user_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_user_groups]
+Boto3 documentation:
+[ElastiCache.Client.describe_user_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_user_groups)
 
-```python
-def describe_user_groups(
-    self,
-    UserGroupId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeUserGroupsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `UserGroupId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeUserGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusergroupsresulttypedef).
 
 ### describe_users
 
 Type annotations for `boto3.client("elasticache").describe_users` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_users]
+Boto3 documentation:
+[ElastiCache.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_users)
 
-```python
-def describe_users(
-    self,
-    Engine: str = None,
-    UserId: str = None,
-    Filters: List[FilterTypeDef] = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeUsersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Engine`: `str`
+- `UserId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeUsersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusersresulttypedef).
 
 ### disassociate_global_replication_group
 
-Type annotations for `boto3.client("elasticache").disassociate_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").disassociate_global_replication_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.disassociate_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.disassociate_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.disassociate_global_replication_group)
 
-```python
-def disassociate_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    ReplicationGroupId: str,
-    ReplicationGroupRegion: str
-) -> DisassociateGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `ReplicationGroupId`: `str` *(required)*
+- `ReplicationGroupRegion`: `str` *(required)*
+
+Returns
+[DisassociateGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#disassociateglobalreplicationgroupresulttypedef).
 
 ### failover_global_replication_group
 
-Type annotations for `boto3.client("elasticache").failover_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").failover_global_replication_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.failover_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group)
 
-```python
-def failover_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    PrimaryRegion: str,
-    PrimaryReplicationGroupId: str
-) -> FailoverGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `PrimaryRegion`: `str` *(required)*
+- `PrimaryReplicationGroupId`: `str` *(required)*
+
+Returns
+[FailoverGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#failoverglobalreplicationgroupresulttypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("elasticache").generate_presigned_url` method.
+Type annotations for `boto3.client("elasticache").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.generate_presigned_url]
+Boto3 documentation:
+[ElastiCache.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### increase_node_groups_in_global_replication_group
 
-Type annotations for `boto3.client("elasticache").increase_node_groups_in_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").increase_node_groups_in_global_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_node_groups_in_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.increase_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_node_groups_in_global_replication_group)
 
-```python
-def increase_node_groups_in_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    NodeGroupCount: int,
-    ApplyImmediately: bool,
-    RegionalConfigurations: List[RegionalConfigurationTypeDef] = None
-) -> IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `NodeGroupCount`: `int` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `RegionalConfigurations`:
+  `List`\[[RegionalConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#regionalconfigurationtypedef)\]
+
+Returns
+[IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#increasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### increase_replica_count
 
-Type annotations for `boto3.client("elasticache").increase_replica_count` method.
+Type annotations for `boto3.client("elasticache").increase_replica_count`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_replica_count]
+Boto3 documentation:
+[ElastiCache.Client.increase_replica_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_replica_count)
 
-```python
-def increase_replica_count(
-    self,
-    ReplicationGroupId: str,
-    ApplyImmediately: bool,
-    NewReplicaCount: int = None,
-    ReplicaConfiguration: List[ConfigureShardTypeDef] = None
-) -> IncreaseReplicaCountResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `NewReplicaCount`: `int`
+- `ReplicaConfiguration`:
+  `List`\[[ConfigureShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#configureshardtypedef)\]
+
+Returns
+[IncreaseReplicaCountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#increasereplicacountresulttypedef).
 
 ### list_allowed_node_type_modifications
 
-Type annotations for `boto3.client("elasticache").list_allowed_node_type_modifications` method.
+Type annotations for
+`boto3.client("elasticache").list_allowed_node_type_modifications` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications]
+Boto3 documentation:
+[ElastiCache.Client.list_allowed_node_type_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications)
 
-```python
-def list_allowed_node_type_modifications(
-    self,
-    CacheClusterId: str = None,
-    ReplicationGroupId: str = None
-) -> AllowedNodeTypeModificationsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str`
+- `ReplicationGroupId`: `str`
+
+Returns
+[AllowedNodeTypeModificationsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#allowednodetypemodificationsmessagetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("elasticache").list_tags_for_resource` method.
+Type annotations for `boto3.client("elasticache").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource]
+Boto3 documentation:
+[ElastiCache.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceName: str
-) -> TagListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str` *(required)*
+
+Returns
+[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
 
 ### modify_cache_cluster
 
 Type annotations for `boto3.client("elasticache").modify_cache_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_cluster]
+Boto3 documentation:
+[ElastiCache.Client.modify_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_cluster)
 
-```python
-def modify_cache_cluster(
-    self,
-    CacheClusterId: str,
-    NumCacheNodes: int = None,
-    CacheNodeIdsToRemove: List[str] = None,
-    AZMode: AZMode = None,
-    NewAvailabilityZones: List[str] = None,
-    CacheSecurityGroupNames: List[str] = None,
-    SecurityGroupIds: List[str] = None,
-    PreferredMaintenanceWindow: str = None,
-    NotificationTopicArn: str = None,
-    CacheParameterGroupName: str = None,
-    NotificationTopicStatus: str = None,
-    ApplyImmediately: bool = None,
-    EngineVersion: str = None,
-    AutoMinorVersionUpgrade: bool = None,
-    SnapshotRetentionLimit: int = None,
-    SnapshotWindow: str = None,
-    CacheNodeType: str = None,
-    AuthToken: str = None,
-    AuthTokenUpdateStrategy: AuthTokenUpdateStrategyType = None,
-    LogDeliveryConfigurations: List[LogDeliveryConfigurationRequestTypeDef] = None
-) -> ModifyCacheClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str` *(required)*
+- `NumCacheNodes`: `int`
+- `CacheNodeIdsToRemove`: `List`\[`str`\]
+- `AZMode`:
+  [AZMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#azmode)
+- `NewAvailabilityZones`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `NotificationTopicArn`: `str`
+- `CacheParameterGroupName`: `str`
+- `NotificationTopicStatus`: `str`
+- `ApplyImmediately`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `SnapshotRetentionLimit`: `int`
+- `SnapshotWindow`: `str`
+- `CacheNodeType`: `str`
+- `AuthToken`: `str`
+- `AuthTokenUpdateStrategy`:
+  [AuthTokenUpdateStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#authtokenupdatestrategytype)
+- `LogDeliveryConfigurations`:
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+
+Returns
+[ModifyCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifycacheclusterresulttypedef).
 
 ### modify_cache_parameter_group
 
-Type annotations for `boto3.client("elasticache").modify_cache_parameter_group` method.
+Type annotations for `boto3.client("elasticache").modify_cache_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group]
+Boto3 documentation:
+[ElastiCache.Client.modify_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group)
 
-```python
-def modify_cache_parameter_group(
-    self,
-    CacheParameterGroupName: str,
-    ParameterNameValues: List[ParameterNameValueTypeDef]
-) -> CacheParameterGroupNameMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str` *(required)*
+- `ParameterNameValues`:
+  `List`\[[ParameterNameValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#parameternamevaluetypedef)\]
+  *(required)*
+
+Returns
+[CacheParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupnamemessagetypedef).
 
 ### modify_cache_subnet_group
 
-Type annotations for `boto3.client("elasticache").modify_cache_subnet_group` method.
+Type annotations for `boto3.client("elasticache").modify_cache_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_subnet_group]
+Boto3 documentation:
+[ElastiCache.Client.modify_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_subnet_group)
 
-```python
-def modify_cache_subnet_group(
-    self,
-    CacheSubnetGroupName: str,
-    CacheSubnetGroupDescription: str = None,
-    SubnetIds: List[str] = None
-) -> ModifyCacheSubnetGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSubnetGroupName`: `str` *(required)*
+- `CacheSubnetGroupDescription`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
+Returns
+[ModifyCacheSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifycachesubnetgroupresulttypedef).
 
 ### modify_global_replication_group
 
-Type annotations for `boto3.client("elasticache").modify_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").modify_global_replication_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.modify_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_global_replication_group)
 
-```python
-def modify_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    ApplyImmediately: bool,
-    CacheNodeType: str = None,
-    EngineVersion: str = None,
-    CacheParameterGroupName: str = None,
-    GlobalReplicationGroupDescription: str = None,
-    AutomaticFailoverEnabled: bool = None
-) -> ModifyGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `CacheNodeType`: `str`
+- `EngineVersion`: `str`
+- `CacheParameterGroupName`: `str`
+- `GlobalReplicationGroupDescription`: `str`
+- `AutomaticFailoverEnabled`: `bool`
+
+Returns
+[ModifyGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyglobalreplicationgroupresulttypedef).
 
 ### modify_replication_group
 
-Type annotations for `boto3.client("elasticache").modify_replication_group` method.
+Type annotations for `boto3.client("elasticache").modify_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.modify_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group)
 
-```python
-def modify_replication_group(
-    self,
-    ReplicationGroupId: str,
-    ReplicationGroupDescription: str = None,
-    PrimaryClusterId: str = None,
-    SnapshottingClusterId: str = None,
-    AutomaticFailoverEnabled: bool = None,
-    MultiAZEnabled: bool = None,
-    NodeGroupId: str = None,
-    CacheSecurityGroupNames: List[str] = None,
-    SecurityGroupIds: List[str] = None,
-    PreferredMaintenanceWindow: str = None,
-    NotificationTopicArn: str = None,
-    CacheParameterGroupName: str = None,
-    NotificationTopicStatus: str = None,
-    ApplyImmediately: bool = None,
-    EngineVersion: str = None,
-    AutoMinorVersionUpgrade: bool = None,
-    SnapshotRetentionLimit: int = None,
-    SnapshotWindow: str = None,
-    CacheNodeType: str = None,
-    AuthToken: str = None,
-    AuthTokenUpdateStrategy: AuthTokenUpdateStrategyType = None,
-    UserGroupIdsToAdd: List[str] = None,
-    UserGroupIdsToRemove: List[str] = None,
-    RemoveUserGroups: bool = None,
-    LogDeliveryConfigurations: List[LogDeliveryConfigurationRequestTypeDef] = None
-) -> ModifyReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `ReplicationGroupDescription`: `str`
+- `PrimaryClusterId`: `str`
+- `SnapshottingClusterId`: `str`
+- `AutomaticFailoverEnabled`: `bool`
+- `MultiAZEnabled`: `bool`
+- `NodeGroupId`: `str`
+- `CacheSecurityGroupNames`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `NotificationTopicArn`: `str`
+- `CacheParameterGroupName`: `str`
+- `NotificationTopicStatus`: `str`
+- `ApplyImmediately`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `SnapshotRetentionLimit`: `int`
+- `SnapshotWindow`: `str`
+- `CacheNodeType`: `str`
+- `AuthToken`: `str`
+- `AuthTokenUpdateStrategy`:
+  [AuthTokenUpdateStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#authtokenupdatestrategytype)
+- `UserGroupIdsToAdd`: `List`\[`str`\]
+- `UserGroupIdsToRemove`: `List`\[`str`\]
+- `RemoveUserGroups`: `bool`
+- `LogDeliveryConfigurations`:
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+
+Returns
+[ModifyReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyreplicationgroupresulttypedef).
 
 ### modify_replication_group_shard_configuration
 
-Type annotations for `boto3.client("elasticache").modify_replication_group_shard_configuration` method.
+Type annotations for
+`boto3.client("elasticache").modify_replication_group_shard_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group_shard_configuration]
+Boto3 documentation:
+[ElastiCache.Client.modify_replication_group_shard_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group_shard_configuration)
 
-```python
-def modify_replication_group_shard_configuration(
-    self,
-    ReplicationGroupId: str,
-    NodeGroupCount: int,
-    ApplyImmediately: bool,
-    ReshardingConfiguration: List["ReshardingConfigurationTypeDef"] = None,
-    NodeGroupsToRemove: List[str] = None,
-    NodeGroupsToRetain: List[str] = None
-) -> ModifyReplicationGroupShardConfigurationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `NodeGroupCount`: `int` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+- `ReshardingConfiguration`:
+  `List`\[[ReshardingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reshardingconfigurationtypedef)\]
+- `NodeGroupsToRemove`: `List`\[`str`\]
+- `NodeGroupsToRetain`: `List`\[`str`\]
+
+Returns
+[ModifyReplicationGroupShardConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyreplicationgroupshardconfigurationresulttypedef).
 
 ### modify_user
 
 Type annotations for `boto3.client("elasticache").modify_user` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user]
+Boto3 documentation:
+[ElastiCache.Client.modify_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user)
 
-```python
-def modify_user(
-    self,
-    UserId: str,
-    AccessString: str = None,
-    AppendAccessString: str = None,
-    Passwords: List[str] = None,
-    NoPasswordRequired: bool = None
-) -> "UserTypeDef":
-    pass
-```
+Arguments:
+
+- `UserId`: `str` *(required)*
+- `AccessString`: `str`
+- `AppendAccessString`: `str`
+- `Passwords`: `List`\[`str`\]
+- `NoPasswordRequired`: `bool`
+
+Returns
+[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
 
 ### modify_user_group
 
 Type annotations for `boto3.client("elasticache").modify_user_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user_group]
+Boto3 documentation:
+[ElastiCache.Client.modify_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user_group)
 
-```python
-def modify_user_group(
-    self,
-    UserGroupId: str,
-    UserIdsToAdd: List[str] = None,
-    UserIdsToRemove: List[str] = None
-) -> "UserGroupTypeDef":
-    pass
-```
+Arguments:
+
+- `UserGroupId`: `str` *(required)*
+- `UserIdsToAdd`: `List`\[`str`\]
+- `UserIdsToRemove`: `List`\[`str`\]
+
+Returns
+[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
 
 ### purchase_reserved_cache_nodes_offering
 
-Type annotations for `boto3.client("elasticache").purchase_reserved_cache_nodes_offering` method.
+Type annotations for
+`boto3.client("elasticache").purchase_reserved_cache_nodes_offering` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.purchase_reserved_cache_nodes_offering]
+Boto3 documentation:
+[ElastiCache.Client.purchase_reserved_cache_nodes_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.purchase_reserved_cache_nodes_offering)
 
-```python
-def purchase_reserved_cache_nodes_offering(
-    self,
-    ReservedCacheNodesOfferingId: str,
-    ReservedCacheNodeId: str = None,
-    CacheNodeCount: int = None,
-    Tags: List["TagTypeDef"] = None
-) -> PurchaseReservedCacheNodesOfferingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedCacheNodesOfferingId`: `str` *(required)*
+- `ReservedCacheNodeId`: `str`
+- `CacheNodeCount`: `int`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+
+Returns
+[PurchaseReservedCacheNodesOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#purchasereservedcachenodesofferingresulttypedef).
 
 ### rebalance_slots_in_global_replication_group
 
-Type annotations for `boto3.client("elasticache").rebalance_slots_in_global_replication_group` method.
+Type annotations for
+`boto3.client("elasticache").rebalance_slots_in_global_replication_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group]
+Boto3 documentation:
+[ElastiCache.Client.rebalance_slots_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group)
 
-```python
-def rebalance_slots_in_global_replication_group(
-    self,
-    GlobalReplicationGroupId: str,
-    ApplyImmediately: bool
-) -> RebalanceSlotsInGlobalReplicationGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `GlobalReplicationGroupId`: `str` *(required)*
+- `ApplyImmediately`: `bool` *(required)*
+
+Returns
+[RebalanceSlotsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#rebalanceslotsinglobalreplicationgroupresulttypedef).
 
 ### reboot_cache_cluster
 
 Type annotations for `boto3.client("elasticache").reboot_cache_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster]
+Boto3 documentation:
+[ElastiCache.Client.reboot_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster)
 
-```python
-def reboot_cache_cluster(
-    self,
-    CacheClusterId: str,
-    CacheNodeIdsToReboot: List[str]
-) -> RebootCacheClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheClusterId`: `str` *(required)*
+- `CacheNodeIdsToReboot`: `List`\[`str`\] *(required)*
+
+Returns
+[RebootCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#rebootcacheclusterresulttypedef).
 
 ### remove_tags_from_resource
 
-Type annotations for `boto3.client("elasticache").remove_tags_from_resource` method.
+Type annotations for `boto3.client("elasticache").remove_tags_from_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource]
+Boto3 documentation:
+[ElastiCache.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource)
 
-```python
-def remove_tags_from_resource(
-    self,
-    ResourceName: str,
-    TagKeys: List[str]
-) -> TagListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns
+[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
 
 ### reset_cache_parameter_group
 
-Type annotations for `boto3.client("elasticache").reset_cache_parameter_group` method.
+Type annotations for `boto3.client("elasticache").reset_cache_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reset_cache_parameter_group]
+Boto3 documentation:
+[ElastiCache.Client.reset_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reset_cache_parameter_group)
 
-```python
-def reset_cache_parameter_group(
-    self,
-    CacheParameterGroupName: str,
-    ResetAllParameters: bool = None,
-    ParameterNameValues: List[ParameterNameValueTypeDef] = None
-) -> CacheParameterGroupNameMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheParameterGroupName`: `str` *(required)*
+- `ResetAllParameters`: `bool`
+- `ParameterNameValues`:
+  `List`\[[ParameterNameValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#parameternamevaluetypedef)\]
+
+Returns
+[CacheParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupnamemessagetypedef).
 
 ### revoke_cache_security_group_ingress
 
-Type annotations for `boto3.client("elasticache").revoke_cache_security_group_ingress` method.
+Type annotations for
+`boto3.client("elasticache").revoke_cache_security_group_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.revoke_cache_security_group_ingress]
+Boto3 documentation:
+[ElastiCache.Client.revoke_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.revoke_cache_security_group_ingress)
 
-```python
-def revoke_cache_security_group_ingress(
-    self,
-    CacheSecurityGroupName: str,
-    EC2SecurityGroupName: str,
-    EC2SecurityGroupOwnerId: str
-) -> RevokeCacheSecurityGroupIngressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CacheSecurityGroupName`: `str` *(required)*
+- `EC2SecurityGroupName`: `str` *(required)*
+- `EC2SecurityGroupOwnerId`: `str` *(required)*
+
+Returns
+[RevokeCacheSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#revokecachesecuritygroupingressresulttypedef).
 
 ### start_migration
 
 Type annotations for `boto3.client("elasticache").start_migration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.start_migration]
+Boto3 documentation:
+[ElastiCache.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.start_migration)
 
-```python
-def start_migration(
-    self,
-    ReplicationGroupId: str,
-    CustomerNodeEndpointList: List[CustomerNodeEndpointTypeDef]
-) -> StartMigrationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ReplicationGroupId`: `str` *(required)*
+- `CustomerNodeEndpointList`:
+  `List`\[[CustomerNodeEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#customernodeendpointtypedef)\]
+  *(required)*
+
+Returns
+[StartMigrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#startmigrationresponsetypedef).
 
 ### test_failover
 
 Type annotations for `boto3.client("elasticache").test_failover` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.test_failover]
+Boto3 documentation:
+[ElastiCache.Client.test_failover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.test_failover)
 
-```python
-def test_failover(
-    self,
-    ReplicationGroupId: str,
-    NodeGroupId: str
-) -> TestFailoverResultTypeDef:
-    pass
-```
+Arguments:
 
+- `ReplicationGroupId`: `str` *(required)*
+- `NodeGroupId`: `str` *(required)*
 
+Returns
+[TestFailoverResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#testfailoverresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("elasticache").get_paginator` method with overloads.
+Type annotations for `boto3.client("elasticache").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_cache_clusters")` -> [DescribeCacheClustersPaginator](./paginators.md#describecacheclusterspaginator)
-- `client.get_paginator("describe_cache_engine_versions")` -> [DescribeCacheEngineVersionsPaginator](./paginators.md#describecacheengineversionspaginator)
-- `client.get_paginator("describe_cache_parameter_groups")` -> [DescribeCacheParameterGroupsPaginator](./paginators.md#describecacheparametergroupspaginator)
-- `client.get_paginator("describe_cache_parameters")` -> [DescribeCacheParametersPaginator](./paginators.md#describecacheparameterspaginator)
-- `client.get_paginator("describe_cache_security_groups")` -> [DescribeCacheSecurityGroupsPaginator](./paginators.md#describecachesecuritygroupspaginator)
-- `client.get_paginator("describe_cache_subnet_groups")` -> [DescribeCacheSubnetGroupsPaginator](./paginators.md#describecachesubnetgroupspaginator)
-- `client.get_paginator("describe_engine_default_parameters")` -> [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_global_replication_groups")` -> [DescribeGlobalReplicationGroupsPaginator](./paginators.md#describeglobalreplicationgroupspaginator)
-- `client.get_paginator("describe_replication_groups")` -> [DescribeReplicationGroupsPaginator](./paginators.md#describereplicationgroupspaginator)
-- `client.get_paginator("describe_reserved_cache_nodes")` -> [DescribeReservedCacheNodesPaginator](./paginators.md#describereservedcachenodespaginator)
-- `client.get_paginator("describe_reserved_cache_nodes_offerings")` -> [DescribeReservedCacheNodesOfferingsPaginator](./paginators.md#describereservedcachenodesofferingspaginator)
-- `client.get_paginator("describe_service_updates")` -> [DescribeServiceUpdatesPaginator](./paginators.md#describeserviceupdatespaginator)
-- `client.get_paginator("describe_snapshots")` -> [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
-- `client.get_paginator("describe_update_actions")` -> [DescribeUpdateActionsPaginator](./paginators.md#describeupdateactionspaginator)
-- `client.get_paginator("describe_user_groups")` -> [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
-- `client.get_paginator("describe_users")` -> [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
-
-
-
+- `client.get_paginator("describe_cache_clusters")` ->
+  [DescribeCacheClustersPaginator](./paginators.md#describecacheclusterspaginator)
+- `client.get_paginator("describe_cache_engine_versions")` ->
+  [DescribeCacheEngineVersionsPaginator](./paginators.md#describecacheengineversionspaginator)
+- `client.get_paginator("describe_cache_parameter_groups")` ->
+  [DescribeCacheParameterGroupsPaginator](./paginators.md#describecacheparametergroupspaginator)
+- `client.get_paginator("describe_cache_parameters")` ->
+  [DescribeCacheParametersPaginator](./paginators.md#describecacheparameterspaginator)
+- `client.get_paginator("describe_cache_security_groups")` ->
+  [DescribeCacheSecurityGroupsPaginator](./paginators.md#describecachesecuritygroupspaginator)
+- `client.get_paginator("describe_cache_subnet_groups")` ->
+  [DescribeCacheSubnetGroupsPaginator](./paginators.md#describecachesubnetgroupspaginator)
+- `client.get_paginator("describe_engine_default_parameters")` ->
+  [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_global_replication_groups")` ->
+  [DescribeGlobalReplicationGroupsPaginator](./paginators.md#describeglobalreplicationgroupspaginator)
+- `client.get_paginator("describe_replication_groups")` ->
+  [DescribeReplicationGroupsPaginator](./paginators.md#describereplicationgroupspaginator)
+- `client.get_paginator("describe_reserved_cache_nodes")` ->
+  [DescribeReservedCacheNodesPaginator](./paginators.md#describereservedcachenodespaginator)
+- `client.get_paginator("describe_reserved_cache_nodes_offerings")` ->
+  [DescribeReservedCacheNodesOfferingsPaginator](./paginators.md#describereservedcachenodesofferingspaginator)
+- `client.get_paginator("describe_service_updates")` ->
+  [DescribeServiceUpdatesPaginator](./paginators.md#describeserviceupdatespaginator)
+- `client.get_paginator("describe_snapshots")` ->
+  [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+- `client.get_paginator("describe_update_actions")` ->
+  [DescribeUpdateActionsPaginator](./paginators.md#describeupdateactionspaginator)
+- `client.get_paginator("describe_user_groups")` ->
+  [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
+- `client.get_paginator("describe_users")` ->
+  [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("elasticache").get_waiter` method with overloads.
+Type annotations for `boto3.client("elasticache").get_waiter` method with
+overloads.
 
-- `client.get_waiter("cache_cluster_available")` -> [CacheClusterAvailableWaiter](./waiters.md#cacheclusteravailablewaiter)
-- `client.get_waiter("cache_cluster_deleted")` -> [CacheClusterDeletedWaiter](./waiters.md#cacheclusterdeletedwaiter)
-- `client.get_waiter("replication_group_available")` -> [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
-- `client.get_waiter("replication_group_deleted")` -> [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)
+- `client.get_waiter("cache_cluster_available")` ->
+  [CacheClusterAvailableWaiter](./waiters.md#cacheclusteravailablewaiter)
+- `client.get_waiter("cache_cluster_deleted")` ->
+  [CacheClusterDeletedWaiter](./waiters.md#cacheclusterdeletedwaiter)
+- `client.get_waiter("replication_group_available")` ->
+  [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
+- `client.get_waiter("replication_group_deleted")` ->
+  [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)

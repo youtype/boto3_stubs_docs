@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Literals
 
-Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+Auto-generated documentation for
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+type annotations stubs module
+[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Literals for boto3 Route53Resolver module](#literals-for-boto3-route53resolver-module)
   - [Action](#action)

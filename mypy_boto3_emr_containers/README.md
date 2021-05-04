@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > EMRContainers
 
-Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+Auto-generated documentation for
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+type annotations stubs module
+[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 ```bash
 pip install mypy-boto3-emr-containers
@@ -19,7 +21,8 @@ pip install mypy-boto3-emr-containers
 
 ## EMRContainersClient
 
-Type annotations for  `boto3.client("emr-containers")` as [EMRContainersClient](./client.md)
+Type annotations for `boto3.client("emr-containers")` as
+[EMRContainersClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_emr_containers.client import EMRContainersClient
 ```
 
-
 EMRContainersClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_job_run](./client.md#cancel-job-run)
 - [create_managed_endpoint](./client.md#create-managed-endpoint)
@@ -52,23 +53,17 @@ EMRContainersClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("emr-containers").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("emr-containers").get_paginator("...")`.
 
 Can be used directly:
 
@@ -79,11 +74,6 @@ from mypy_boto3_emr_containers.paginators import ListJobRunsPaginator, ...
 - [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
 - [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
 - [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -105,13 +95,10 @@ from mypy_boto3_emr_containers.literals import ContainerProviderType, ...
 - [PersistentAppUI](./literals.md#persistentappui)
 - [VirtualClusterState](./literals.md#virtualclusterstate)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

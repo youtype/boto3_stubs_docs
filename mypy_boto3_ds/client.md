@@ -1,9 +1,12 @@
 # DirectoryServiceClient for boto3 DirectoryService module
 
-> [Index](../README.md) > [DirectoryService](./README.md) > DirectoryServiceClient
+> [Index](../README.md) > [DirectoryService](./README.md) >
+> DirectoryServiceClient
 
-Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+Auto-generated documentation for
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+type annotations stubs module
+[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [DirectoryServiceClient for boto3 DirectoryService module](#directoryserviceclient-for-boto3-directoryservice-module)
   - [DirectoryServiceClient](#directoryserviceclient)
@@ -88,12 +91,13 @@ def get_ds_client() -> DirectoryServiceClient:
     return boto3.client("ds")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
+Boto3 documentation:
+[DirectoryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_ds.client import Exceptions
@@ -101,7 +105,6 @@ from mypy_boto3_ds.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -141,1026 +144,1036 @@ Exceptions:
 - `Exceptions.UnsupportedOperationException`
 - `Exceptions.UserDoesNotExistException`
 
-
 ## Methods
-
 
 ### accept_shared_directory
 
 Type annotations for `boto3.client("ds").accept_shared_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory]
+Boto3 documentation:
+[DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
 
-```python
-def accept_shared_directory(
-    self,
-    SharedDirectoryId: str
-) -> AcceptSharedDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SharedDirectoryId`: `str` *(required)*
+
+Returns
+[AcceptSharedDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#acceptshareddirectoryresulttypedef).
 
 ### add_ip_routes
 
 Type annotations for `boto3.client("ds").add_ip_routes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes]
+Boto3 documentation:
+[DirectoryService.Client.add_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
 
-```python
-def add_ip_routes(
-    self,
-    DirectoryId: str,
-    IpRoutes: List[IpRouteTypeDef],
-    UpdateSecurityGroupForDirectoryControllers: bool = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `IpRoutes`:
+  `List`\[[IpRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#iproutetypedef)\]
+  *(required)*
+- `UpdateSecurityGroupForDirectoryControllers`: `bool`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### add_region
 
 Type annotations for `boto3.client("ds").add_region` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region]
+Boto3 documentation:
+[DirectoryService.Client.add_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region)
 
-```python
-def add_region(
-    self,
-    DirectoryId: str,
-    RegionName: str,
-    VPCSettings: "DirectoryVpcSettingsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RegionName`: `str` *(required)*
+- `VPCSettings`:
+  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### add_tags_to_resource
 
 Type annotations for `boto3.client("ds").add_tags_to_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource]
+Boto3 documentation:
+[DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
 
-```python
-def add_tags_to_resource(
-    self,
-    ResourceId: str,
-    Tags: List["TagTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("ds").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate]
+Boto3 documentation:
+[DirectoryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_schema_extension
 
 Type annotations for `boto3.client("ds").cancel_schema_extension` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension]
+Boto3 documentation:
+[DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
 
-```python
-def cancel_schema_extension(
-    self,
-    DirectoryId: str,
-    SchemaExtensionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `SchemaExtensionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### connect_directory
 
 Type annotations for `boto3.client("ds").connect_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory]
+Boto3 documentation:
+[DirectoryService.Client.connect_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory)
 
-```python
-def connect_directory(
-    self,
-    Name: str,
-    Password: str,
-    Size: DirectorySize,
-    ConnectSettings: DirectoryConnectSettingsTypeDef,
-    ShortName: str = None,
-    Description: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> ConnectDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `Size`:
+  [DirectorySize](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorysize)
+  *(required)*
+- `ConnectSettings`:
+  [DirectoryConnectSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryconnectsettingstypedef)
+  *(required)*
+- `ShortName`: `str`
+- `Description`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+
+Returns
+[ConnectDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#connectdirectoryresulttypedef).
 
 ### create_alias
 
 Type annotations for `boto3.client("ds").create_alias` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias]
+Boto3 documentation:
+[DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
 
-```python
-def create_alias(
-    self,
-    DirectoryId: str,
-    Alias: str
-) -> CreateAliasResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Alias`: `str` *(required)*
+
+Returns
+[CreateAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createaliasresulttypedef).
 
 ### create_computer
 
 Type annotations for `boto3.client("ds").create_computer` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer]
+Boto3 documentation:
+[DirectoryService.Client.create_computer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer)
 
-```python
-def create_computer(
-    self,
-    DirectoryId: str,
-    ComputerName: str,
-    Password: str,
-    OrganizationalUnitDistinguishedName: str = None,
-    ComputerAttributes: List["AttributeTypeDef"] = None
-) -> CreateComputerResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `ComputerName`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `OrganizationalUnitDistinguishedName`: `str`
+- `ComputerAttributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#attributetypedef)\]
+
+Returns
+[CreateComputerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createcomputerresulttypedef).
 
 ### create_conditional_forwarder
 
 Type annotations for `boto3.client("ds").create_conditional_forwarder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder]
+Boto3 documentation:
+[DirectoryService.Client.create_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
 
-```python
-def create_conditional_forwarder(
-    self,
-    DirectoryId: str,
-    RemoteDomainName: str,
-    DnsIpAddrs: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RemoteDomainName`: `str` *(required)*
+- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_directory
 
 Type annotations for `boto3.client("ds").create_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory]
+Boto3 documentation:
+[DirectoryService.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory)
 
-```python
-def create_directory(
-    self,
-    Name: str,
-    Password: str,
-    Size: DirectorySize,
-    ShortName: str = None,
-    Description: str = None,
-    VpcSettings: "DirectoryVpcSettingsTypeDef" = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `Size`:
+  [DirectorySize](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorysize)
+  *(required)*
+- `ShortName`: `str`
+- `Description`: `str`
+- `VpcSettings`:
+  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createdirectoryresulttypedef).
 
 ### create_log_subscription
 
 Type annotations for `boto3.client("ds").create_log_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription]
+Boto3 documentation:
+[DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
 
-```python
-def create_log_subscription(
-    self,
-    DirectoryId: str,
-    LogGroupName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `LogGroupName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_microsoft_ad
 
 Type annotations for `boto3.client("ds").create_microsoft_ad` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad]
+Boto3 documentation:
+[DirectoryService.Client.create_microsoft_ad](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
 
-```python
-def create_microsoft_ad(
-    self,
-    Name: str,
-    Password: str,
-    VpcSettings: "DirectoryVpcSettingsTypeDef",
-    ShortName: str = None,
-    Description: str = None,
-    Edition: DirectoryEdition = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateMicrosoftADResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `VpcSettings`:
+  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
+  *(required)*
+- `ShortName`: `str`
+- `Description`: `str`
+- `Edition`:
+  [DirectoryEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directoryedition)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateMicrosoftADResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createmicrosoftadresulttypedef).
 
 ### create_snapshot
 
 Type annotations for `boto3.client("ds").create_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot]
+Boto3 documentation:
+[DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
 
-```python
-def create_snapshot(
-    self,
-    DirectoryId: str,
-    Name: str = None
-) -> CreateSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Name`: `str`
+
+Returns
+[CreateSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createsnapshotresulttypedef).
 
 ### create_trust
 
 Type annotations for `boto3.client("ds").create_trust` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust]
+Boto3 documentation:
+[DirectoryService.Client.create_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust)
 
-```python
-def create_trust(
-    self,
-    DirectoryId: str,
-    RemoteDomainName: str,
-    TrustPassword: str,
-    TrustDirection: TrustDirection,
-    TrustType: TrustType = None,
-    ConditionalForwarderIpAddrs: List[str] = None,
-    SelectiveAuth: SelectiveAuth = None
-) -> CreateTrustResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RemoteDomainName`: `str` *(required)*
+- `TrustPassword`: `str` *(required)*
+- `TrustDirection`:
+  [TrustDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trustdirection)
+  *(required)*
+- `TrustType`:
+  [TrustType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trusttype)
+- `ConditionalForwarderIpAddrs`: `List`\[`str`\]
+- `SelectiveAuth`:
+  [SelectiveAuth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#selectiveauth)
+
+Returns
+[CreateTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createtrustresulttypedef).
 
 ### delete_conditional_forwarder
 
 Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder]
+Boto3 documentation:
+[DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
 
-```python
-def delete_conditional_forwarder(
-    self,
-    DirectoryId: str,
-    RemoteDomainName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RemoteDomainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_directory
 
 Type annotations for `boto3.client("ds").delete_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory]
+Boto3 documentation:
+[DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
 
-```python
-def delete_directory(
-    self,
-    DirectoryId: str
-) -> DeleteDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns
+[DeleteDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletedirectoryresulttypedef).
 
 ### delete_log_subscription
 
 Type annotations for `boto3.client("ds").delete_log_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription]
+Boto3 documentation:
+[DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
 
-```python
-def delete_log_subscription(
-    self,
-    DirectoryId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_snapshot
 
 Type annotations for `boto3.client("ds").delete_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot]
+Boto3 documentation:
+[DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
 
-```python
-def delete_snapshot(
-    self,
-    SnapshotId: str
-) -> DeleteSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+
+Returns
+[DeleteSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletesnapshotresulttypedef).
 
 ### delete_trust
 
 Type annotations for `boto3.client("ds").delete_trust` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust]
+Boto3 documentation:
+[DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
 
-```python
-def delete_trust(
-    self,
-    TrustId: str,
-    DeleteAssociatedConditionalForwarder: bool = None
-) -> DeleteTrustResultTypeDef:
-    pass
-```
+Arguments:
+
+- `TrustId`: `str` *(required)*
+- `DeleteAssociatedConditionalForwarder`: `bool`
+
+Returns
+[DeleteTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletetrustresulttypedef).
 
 ### deregister_certificate
 
 Type annotations for `boto3.client("ds").deregister_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate]
+Boto3 documentation:
+[DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
 
-```python
-def deregister_certificate(
-    self,
-    DirectoryId: str,
-    CertificateId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `CertificateId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_event_topic
 
 Type annotations for `boto3.client("ds").deregister_event_topic` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic]
+Boto3 documentation:
+[DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
 
-```python
-def deregister_event_topic(
-    self,
-    DirectoryId: str,
-    TopicName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `TopicName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_certificate
 
 Type annotations for `boto3.client("ds").describe_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate]
+Boto3 documentation:
+[DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
 
-```python
-def describe_certificate(
-    self,
-    DirectoryId: str,
-    CertificateId: str
-) -> DescribeCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `CertificateId`: `str` *(required)*
+
+Returns
+[DescribeCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describecertificateresulttypedef).
 
 ### describe_conditional_forwarders
 
-Type annotations for `boto3.client("ds").describe_conditional_forwarders` method.
+Type annotations for `boto3.client("ds").describe_conditional_forwarders`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders]
+Boto3 documentation:
+[DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
 
-```python
-def describe_conditional_forwarders(
-    self,
-    DirectoryId: str,
-    RemoteDomainNames: List[str] = None
-) -> DescribeConditionalForwardersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RemoteDomainNames`: `List`\[`str`\]
+
+Returns
+[DescribeConditionalForwardersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeconditionalforwardersresulttypedef).
 
 ### describe_directories
 
 Type annotations for `boto3.client("ds").describe_directories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories]
+Boto3 documentation:
+[DirectoryService.Client.describe_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories)
 
-```python
-def describe_directories(
-    self,
-    DirectoryIds: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeDirectoriesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedirectoriesresulttypedef).
 
 ### describe_domain_controllers
 
 Type annotations for `boto3.client("ds").describe_domain_controllers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers]
+Boto3 documentation:
+[DirectoryService.Client.describe_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
 
-```python
-def describe_domain_controllers(
-    self,
-    DirectoryId: str,
-    DomainControllerIds: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeDomainControllersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `DomainControllerIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeDomainControllersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedomaincontrollersresulttypedef).
 
 ### describe_event_topics
 
 Type annotations for `boto3.client("ds").describe_event_topics` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics]
+Boto3 documentation:
+[DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
 
-```python
-def describe_event_topics(
-    self,
-    DirectoryId: str = None,
-    TopicNames: List[str] = None
-) -> DescribeEventTopicsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str`
+- `TopicNames`: `List`\[`str`\]
+
+Returns
+[DescribeEventTopicsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeeventtopicsresulttypedef).
 
 ### describe_ldaps_settings
 
 Type annotations for `boto3.client("ds").describe_ldaps_settings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings]
+Boto3 documentation:
+[DirectoryService.Client.describe_ldaps_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
 
-```python
-def describe_ldaps_settings(
-    self,
-    DirectoryId: str,
-    Type: Literal['Client'] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeLDAPSSettingsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['Client']`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeLDAPSSettingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeldapssettingsresulttypedef).
 
 ### describe_regions
 
 Type annotations for `boto3.client("ds").describe_regions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions]
+Boto3 documentation:
+[DirectoryService.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions)
 
-```python
-def describe_regions(
-    self,
-    DirectoryId: str,
-    RegionName: str = None,
-    NextToken: str = None
-) -> DescribeRegionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RegionName`: `str`
+- `NextToken`: `str`
+
+Returns
+[DescribeRegionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeregionsresulttypedef).
 
 ### describe_shared_directories
 
 Type annotations for `boto3.client("ds").describe_shared_directories` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories]
+Boto3 documentation:
+[DirectoryService.Client.describe_shared_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
 
-```python
-def describe_shared_directories(
-    self,
-    OwnerDirectoryId: str,
-    SharedDirectoryIds: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeSharedDirectoriesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OwnerDirectoryId`: `str` *(required)*
+- `SharedDirectoryIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeSharedDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeshareddirectoriesresulttypedef).
 
 ### describe_snapshots
 
 Type annotations for `boto3.client("ds").describe_snapshots` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots]
+Boto3 documentation:
+[DirectoryService.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
 
-```python
-def describe_snapshots(
-    self,
-    DirectoryId: str = None,
-    SnapshotIds: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str`
+- `SnapshotIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describesnapshotsresulttypedef).
 
 ### describe_trusts
 
 Type annotations for `boto3.client("ds").describe_trusts` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts]
+Boto3 documentation:
+[DirectoryService.Client.describe_trusts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts)
 
-```python
-def describe_trusts(
-    self,
-    DirectoryId: str = None,
-    TrustIds: List[str] = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> DescribeTrustsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str`
+- `TrustIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[DescribeTrustsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describetrustsresulttypedef).
 
 ### disable_client_authentication
 
 Type annotations for `boto3.client("ds").disable_client_authentication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication]
+Boto3 documentation:
+[DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
 
-```python
-def disable_client_authentication(
-    self,
-    DirectoryId: str,
-    Type: Literal['SmartCard']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['SmartCard']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_ldaps
 
 Type annotations for `boto3.client("ds").disable_ldaps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps]
+Boto3 documentation:
+[DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
 
-```python
-def disable_ldaps(
-    self,
-    DirectoryId: str,
-    Type: Literal['Client']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['Client']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_radius
 
 Type annotations for `boto3.client("ds").disable_radius` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius]
+Boto3 documentation:
+[DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
 
-```python
-def disable_radius(
-    self,
-    DirectoryId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### disable_sso
 
 Type annotations for `boto3.client("ds").disable_sso` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso]
+Boto3 documentation:
+[DirectoryService.Client.disable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso)
 
-```python
-def disable_sso(
-    self,
-    DirectoryId: str,
-    UserName: str = None,
-    Password: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `UserName`: `str`
+- `Password`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_client_authentication
 
 Type annotations for `boto3.client("ds").enable_client_authentication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication]
+Boto3 documentation:
+[DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
 
-```python
-def enable_client_authentication(
-    self,
-    DirectoryId: str,
-    Type: Literal['SmartCard']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['SmartCard']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_ldaps
 
 Type annotations for `boto3.client("ds").enable_ldaps` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps]
+Boto3 documentation:
+[DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
 
-```python
-def enable_ldaps(
-    self,
-    DirectoryId: str,
-    Type: Literal['Client']
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `Type`: `Literal['Client']` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_radius
 
 Type annotations for `boto3.client("ds").enable_radius` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius]
+Boto3 documentation:
+[DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
 
-```python
-def enable_radius(
-    self,
-    DirectoryId: str,
-    RadiusSettings: "RadiusSettingsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### enable_sso
 
 Type annotations for `boto3.client("ds").enable_sso` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso]
+Boto3 documentation:
+[DirectoryService.Client.enable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso)
 
-```python
-def enable_sso(
-    self,
-    DirectoryId: str,
-    UserName: str = None,
-    Password: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `UserName`: `str`
+- `Password`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ds").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url]
+Boto3 documentation:
+[DirectoryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_directory_limits
 
 Type annotations for `boto3.client("ds").get_directory_limits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits]
+Boto3 documentation:
+[DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
 
-```python
-def get_directory_limits(
-    self
-) -> GetDirectoryLimitsResultTypeDef:
-    pass
-```
+Returns
+[GetDirectoryLimitsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#getdirectorylimitsresulttypedef).
 
 ### get_snapshot_limits
 
 Type annotations for `boto3.client("ds").get_snapshot_limits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits]
+Boto3 documentation:
+[DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
 
-```python
-def get_snapshot_limits(
-    self,
-    DirectoryId: str
-) -> GetSnapshotLimitsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns
+[GetSnapshotLimitsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#getsnapshotlimitsresulttypedef).
 
 ### list_certificates
 
 Type annotations for `boto3.client("ds").list_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates]
+Boto3 documentation:
+[DirectoryService.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates)
 
-```python
-def list_certificates(
-    self,
-    DirectoryId: str,
-    NextToken: str = None,
-    Limit: int = None
-) -> ListCertificatesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[ListCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listcertificatesresulttypedef).
 
 ### list_ip_routes
 
 Type annotations for `boto3.client("ds").list_ip_routes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes]
+Boto3 documentation:
+[DirectoryService.Client.list_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
 
-```python
-def list_ip_routes(
-    self,
-    DirectoryId: str,
-    NextToken: str = None,
-    Limit: int = None
-) -> ListIpRoutesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[ListIpRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listiproutesresulttypedef).
 
 ### list_log_subscriptions
 
 Type annotations for `boto3.client("ds").list_log_subscriptions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions]
+Boto3 documentation:
+[DirectoryService.Client.list_log_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
 
-```python
-def list_log_subscriptions(
-    self,
-    DirectoryId: str = None,
-    NextToken: str = None,
-    Limit: int = None
-) -> ListLogSubscriptionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[ListLogSubscriptionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listlogsubscriptionsresulttypedef).
 
 ### list_schema_extensions
 
 Type annotations for `boto3.client("ds").list_schema_extensions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions]
+Boto3 documentation:
+[DirectoryService.Client.list_schema_extensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
 
-```python
-def list_schema_extensions(
-    self,
-    DirectoryId: str,
-    NextToken: str = None,
-    Limit: int = None
-) -> ListSchemaExtensionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[ListSchemaExtensionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listschemaextensionsresulttypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("ds").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource]
+Boto3 documentation:
+[DirectoryService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceId: str,
-    NextToken: str = None,
-    Limit: int = None
-) -> ListTagsForResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `NextToken`: `str`
+- `Limit`: `int`
+
+Returns
+[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listtagsforresourceresulttypedef).
 
 ### register_certificate
 
 Type annotations for `boto3.client("ds").register_certificate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate]
+Boto3 documentation:
+[DirectoryService.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate)
 
-```python
-def register_certificate(
-    self,
-    DirectoryId: str,
-    CertificateData: str,
-    Type: CertificateType = None,
-    ClientCertAuthSettings: "ClientCertAuthSettingsTypeDef" = None
-) -> RegisterCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `CertificateData`: `str` *(required)*
+- `Type`:
+  [CertificateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatetype)
+- `ClientCertAuthSettings`:
+  [ClientCertAuthSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#clientcertauthsettingstypedef)
+
+Returns
+[RegisterCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#registercertificateresulttypedef).
 
 ### register_event_topic
 
 Type annotations for `boto3.client("ds").register_event_topic` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic]
+Boto3 documentation:
+[DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
 
-```python
-def register_event_topic(
-    self,
-    DirectoryId: str,
-    TopicName: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `TopicName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reject_shared_directory
 
 Type annotations for `boto3.client("ds").reject_shared_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory]
+Boto3 documentation:
+[DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
 
-```python
-def reject_shared_directory(
-    self,
-    SharedDirectoryId: str
-) -> RejectSharedDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SharedDirectoryId`: `str` *(required)*
+
+Returns
+[RejectSharedDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#rejectshareddirectoryresulttypedef).
 
 ### remove_ip_routes
 
 Type annotations for `boto3.client("ds").remove_ip_routes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes]
+Boto3 documentation:
+[DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
 
-```python
-def remove_ip_routes(
-    self,
-    DirectoryId: str,
-    CidrIps: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `CidrIps`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_region
 
 Type annotations for `boto3.client("ds").remove_region` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region]
+Boto3 documentation:
+[DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
 
-```python
-def remove_region(
-    self,
-    DirectoryId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### remove_tags_from_resource
 
 Type annotations for `boto3.client("ds").remove_tags_from_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource]
+Boto3 documentation:
+[DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
 
-```python
-def remove_tags_from_resource(
-    self,
-    ResourceId: str,
-    TagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### reset_user_password
 
 Type annotations for `boto3.client("ds").reset_user_password` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password]
+Boto3 documentation:
+[DirectoryService.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password)
 
-```python
-def reset_user_password(
-    self,
-    DirectoryId: str,
-    UserName: str,
-    NewPassword: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `UserName`: `str` *(required)*
+- `NewPassword`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### restore_from_snapshot
 
 Type annotations for `boto3.client("ds").restore_from_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot]
+Boto3 documentation:
+[DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
 
-```python
-def restore_from_snapshot(
-    self,
-    SnapshotId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `SnapshotId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### share_directory
 
 Type annotations for `boto3.client("ds").share_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory]
+Boto3 documentation:
+[DirectoryService.Client.share_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory)
 
-```python
-def share_directory(
-    self,
-    DirectoryId: str,
-    ShareTarget: ShareTargetTypeDef,
-    ShareMethod: ShareMethod,
-    ShareNotes: str = None
-) -> ShareDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `ShareTarget`:
+  [ShareTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#sharetargettypedef)
+  *(required)*
+- `ShareMethod`:
+  [ShareMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharemethod)
+  *(required)*
+- `ShareNotes`: `str`
+
+Returns
+[ShareDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#sharedirectoryresulttypedef).
 
 ### start_schema_extension
 
 Type annotations for `boto3.client("ds").start_schema_extension` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension]
+Boto3 documentation:
+[DirectoryService.Client.start_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
 
-```python
-def start_schema_extension(
-    self,
-    DirectoryId: str,
-    CreateSnapshotBeforeSchemaExtension: bool,
-    LdifContent: str,
-    Description: str
-) -> StartSchemaExtensionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `CreateSnapshotBeforeSchemaExtension`: `bool` *(required)*
+- `LdifContent`: `str` *(required)*
+- `Description`: `str` *(required)*
+
+Returns
+[StartSchemaExtensionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#startschemaextensionresulttypedef).
 
 ### unshare_directory
 
 Type annotations for `boto3.client("ds").unshare_directory` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory]
+Boto3 documentation:
+[DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
 
-```python
-def unshare_directory(
-    self,
-    DirectoryId: str,
-    UnshareTarget: UnshareTargetTypeDef
-) -> UnshareDirectoryResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `UnshareTarget`:
+  [UnshareTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#unsharetargettypedef)
+  *(required)*
+
+Returns
+[UnshareDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#unsharedirectoryresulttypedef).
 
 ### update_conditional_forwarder
 
 Type annotations for `boto3.client("ds").update_conditional_forwarder` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder]
+Boto3 documentation:
+[DirectoryService.Client.update_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
 
-```python
-def update_conditional_forwarder(
-    self,
-    DirectoryId: str,
-    RemoteDomainName: str,
-    DnsIpAddrs: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RemoteDomainName`: `str` *(required)*
+- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_number_of_domain_controllers
 
-Type annotations for `boto3.client("ds").update_number_of_domain_controllers` method.
+Type annotations for `boto3.client("ds").update_number_of_domain_controllers`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers]
+Boto3 documentation:
+[DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
 
-```python
-def update_number_of_domain_controllers(
-    self,
-    DirectoryId: str,
-    DesiredNumber: int
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `DesiredNumber`: `int` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_radius
 
 Type annotations for `boto3.client("ds").update_radius` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius]
+Boto3 documentation:
+[DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
 
-```python
-def update_radius(
-    self,
-    DirectoryId: str,
-    RadiusSettings: "RadiusSettingsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DirectoryId`: `str` *(required)*
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_trust
 
 Type annotations for `boto3.client("ds").update_trust` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust]
+Boto3 documentation:
+[DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
 
-```python
-def update_trust(
-    self,
-    TrustId: str,
-    SelectiveAuth: SelectiveAuth = None
-) -> UpdateTrustResultTypeDef:
-    pass
-```
+Arguments:
+
+- `TrustId`: `str` *(required)*
+- `SelectiveAuth`:
+  [SelectiveAuth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#selectiveauth)
+
+Returns
+[UpdateTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#updatetrustresulttypedef).
 
 ### verify_trust
 
 Type annotations for `boto3.client("ds").verify_trust` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust]
+Boto3 documentation:
+[DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
 
-```python
-def verify_trust(
-    self,
-    TrustId: str
-) -> VerifyTrustResultTypeDef:
-    pass
-```
+Arguments:
 
+- `TrustId`: `str` *(required)*
 
+Returns
+[VerifyTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#verifytrustresulttypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("ds").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_directories")` -> [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
-- `client.get_paginator("describe_domain_controllers")` -> [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
-- `client.get_paginator("describe_shared_directories")` -> [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
-- `client.get_paginator("describe_snapshots")` -> [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
-- `client.get_paginator("describe_trusts")` -> [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
-- `client.get_paginator("list_ip_routes")` -> [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
-- `client.get_paginator("list_log_subscriptions")` -> [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
-- `client.get_paginator("list_schema_extensions")` -> [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
+- `client.get_paginator("describe_directories")` ->
+  [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
+- `client.get_paginator("describe_domain_controllers")` ->
+  [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
+- `client.get_paginator("describe_shared_directories")` ->
+  [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
+- `client.get_paginator("describe_snapshots")` ->
+  [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+- `client.get_paginator("describe_trusts")` ->
+  [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
+- `client.get_paginator("list_ip_routes")` ->
+  [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
+- `client.get_paginator("list_log_subscriptions")` ->
+  [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
+- `client.get_paginator("list_schema_extensions")` ->
+  [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

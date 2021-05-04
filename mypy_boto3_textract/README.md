@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Textract
 
-Auto-generated documentation for [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
-type annotations stubs module [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+Auto-generated documentation for
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+type annotations stubs module
+[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
 ```bash
 pip install mypy-boto3-textract
@@ -18,7 +20,8 @@ pip install mypy-boto3-textract
 
 ## TextractClient
 
-Type annotations for  `boto3.client("textract")` as [TextractClient](./client.md)
+Type annotations for `boto3.client("textract")` as
+[TextractClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_textract.client import TextractClient
 ```
 
-
 TextractClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [analyze_document](./client.md#analyze-document)
 - [can_paginate](./client.md#can-paginate)
 - [detect_document_text](./client.md#detect-document-text)
@@ -41,10 +42,8 @@ TextractClient [exceptions](./client.md#exceptions)
 - [start_document_analysis](./client.md#start-document-analysis)
 - [start_document_text_detection](./client.md#start-document-text-detection)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadDocumentException](./client.md#baddocumentexception)
 - [ClientError](./client.md#clienterror)
@@ -60,15 +59,6 @@ TextractClient [exceptions](./client.md#exceptions)
 - [ProvisionedThroughputExceededException](./client.md#provisionedthroughputexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [UnsupportedDocumentException](./client.md#unsupporteddocumentexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -89,13 +79,10 @@ from mypy_boto3_textract.literals import BlockType, ...
 - [SelectionStatus](./literals.md#selectionstatus)
 - [TextType](./literals.md#texttype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

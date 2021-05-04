@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTEvents](./README.md) > Structures
 
-Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
-type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+Auto-generated documentation for
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+type annotations stubs module
+[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [Typed dictionaries for boto3 IoTEvents module](#typed-dictionaries-for-boto3-iotevents-module)
   - [ActionTypeDef](#actiontypedef)
@@ -66,24 +68,34 @@ type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/my
 from mypy_boto3_iotevents.type_defs import ActionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `setVariable`: `"SetVariableActionTypeDef"`
-- `sns`: `"SNSTopicPublishActionTypeDef"`
-- `iotTopicPublish`: `"IotTopicPublishActionTypeDef"`
-- `setTimer`: `"SetTimerActionTypeDef"`
-- `clearTimer`: `"ClearTimerActionTypeDef"`
-- `resetTimer`: `"ResetTimerActionTypeDef"`
-- `lambda`: `"LambdaActionTypeDef"`
-- `iotEvents`: `"IotEventsActionTypeDef"`
-- `sqs`: `"SqsActionTypeDef"`
-- `firehose`: `"FirehoseActionTypeDef"`
-- `dynamoDB`: `"DynamoDBActionTypeDef"`
-- `dynamoDBv2`: `"DynamoDBv2ActionTypeDef"`
-- `iotSiteWise`: `"IotSiteWiseActionTypeDef"`
 
+- `setVariable`:
+  [SetVariableActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#setvariableactiontypedef)
+- `sns`:
+  [SNSTopicPublishActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#snstopicpublishactiontypedef)
+- `iotTopicPublish`:
+  [IotTopicPublishActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#iottopicpublishactiontypedef)
+- `setTimer`:
+  [SetTimerActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#settimeractiontypedef)
+- `clearTimer`:
+  [ClearTimerActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#cleartimeractiontypedef)
+- `resetTimer`:
+  [ResetTimerActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#resettimeractiontypedef)
+- `lambda`:
+  [LambdaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#lambdaactiontypedef)
+- `iotEvents`:
+  [IotEventsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#ioteventsactiontypedef)
+- `sqs`:
+  [SqsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#sqsactiontypedef)
+- `firehose`:
+  [FirehoseActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#firehoseactiontypedef)
+- `dynamoDB`:
+  [DynamoDBActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#dynamodbactiontypedef)
+- `dynamoDBv2`:
+  [DynamoDBv2ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#dynamodbv2actiontypedef)
+- `iotSiteWise`:
+  [IotSiteWiseActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#iotsitewiseactiontypedef)
 
 ## AnalysisResultLocationTypeDef
 
@@ -91,12 +103,9 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AnalysisResultLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `path`: `str`
 
+- `path`: `str`
 
 ## AnalysisResultTypeDef
 
@@ -104,15 +113,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AnalysisResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `type`: `str`
-- `level`: `AnalysisResultLevel`
-- `message`: `str`
-- `locations`: `List["AnalysisResultLocationTypeDef"]`
 
+- `type`: `str`
+- `level`:
+  [AnalysisResultLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#analysisresultlevel)
+- `message`: `str`
+- `locations`:
+  `List`\[[AnalysisResultLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#analysisresultlocationtypedef)\]
 
 ## AssetPropertyTimestampTypeDef
 
@@ -120,15 +128,13 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AssetPropertyTimestampTypeDef
 ```
 
-
 Required fields:
+
 - `timeInSeconds`: `str`
 
-
-
 Optional fields:
-- `offsetInNanos`: `str`
 
+- `offsetInNanos`: `str`
 
 ## AssetPropertyValueTypeDef
 
@@ -136,16 +142,16 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AssetPropertyValueTypeDef
 ```
 
-
 Required fields:
-- `value`: `"AssetPropertyVariantTypeDef"`
 
-
+- `value`:
+  [AssetPropertyVariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#assetpropertyvarianttypedef)
 
 Optional fields:
-- `timestamp`: `"AssetPropertyTimestampTypeDef"`
-- `quality`: `str`
 
+- `timestamp`:
+  [AssetPropertyTimestampTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#assetpropertytimestamptypedef)
+- `quality`: `str`
 
 ## AssetPropertyVariantTypeDef
 
@@ -153,15 +159,12 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AssetPropertyVariantTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `stringValue`: `str`
 - `integerValue`: `str`
 - `doubleValue`: `str`
 - `booleanValue`: `str`
-
 
 ## AttributeTypeDef
 
@@ -169,12 +172,9 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import AttributeTypeDef
 ```
 
-
 Required fields:
+
 - `jsonPath`: `str`
-
-
-
 
 ## ClearTimerActionTypeDef
 
@@ -182,12 +182,9 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import ClearTimerActionTypeDef
 ```
 
-
 Required fields:
+
 - `timerName`: `str`
-
-
-
 
 ## CreateDetectorModelResponseTypeDef
 
@@ -195,12 +192,10 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import CreateDetectorModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModelConfiguration`: `"DetectorModelConfigurationTypeDef"`
 
+- `detectorModelConfiguration`:
+  [DetectorModelConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodelconfigurationtypedef)
 
 ## CreateInputResponseTypeDef
 
@@ -208,12 +203,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import CreateInputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inputConfiguration`: `"InputConfigurationTypeDef"`
 
+- `inputConfiguration`:
+  [InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputconfigurationtypedef)
 
 ## DescribeDetectorModelAnalysisResponseTypeDef
 
@@ -221,12 +214,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `status`: `AnalysisStatus`
 
+- `status`:
+  [AnalysisStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#analysisstatus)
 
 ## DescribeDetectorModelResponseTypeDef
 
@@ -234,12 +225,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModel`: `"DetectorModelTypeDef"`
 
+- `detectorModel`:
+  [DetectorModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeltypedef)
 
 ## DescribeInputResponseTypeDef
 
@@ -247,12 +236,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DescribeInputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `input`: `"InputTypeDef"`
 
+- `input`:
+  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputtypedef)
 
 ## DescribeLoggingOptionsResponseTypeDef
 
@@ -260,12 +247,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DescribeLoggingOptionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `loggingOptions`: `"LoggingOptionsTypeDef"`
 
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#loggingoptionstypedef)
 
 ## DetectorDebugOptionTypeDef
 
@@ -273,15 +258,13 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DetectorDebugOptionTypeDef
 ```
 
-
 Required fields:
+
 - `detectorModelName`: `str`
 
-
-
 Optional fields:
-- `keyValue`: `str`
 
+- `keyValue`: `str`
 
 ## DetectorModelConfigurationTypeDef
 
@@ -289,10 +272,8 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DetectorModelConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorModelName`: `str`
 - `detectorModelVersion`: `str`
 - `detectorModelDescription`: `str`
@@ -300,10 +281,11 @@ Optional fields:
 - `roleArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: `DetectorModelVersionStatus`
+- `status`:
+  [DetectorModelVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#detectormodelversionstatus)
 - `key`: `str`
-- `evaluationMethod`: `EvaluationMethod`
-
+- `evaluationMethod`:
+  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
 
 ## DetectorModelDefinitionTypeDef
 
@@ -311,13 +293,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DetectorModelDefinitionTypeDef
 ```
 
-
 Required fields:
-- `states`: `List["StateTypeDef"]`
+
+- `states`:
+  `List`\[[StateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#statetypedef)\]
 - `initialStateName`: `str`
-
-
-
 
 ## DetectorModelSummaryTypeDef
 
@@ -325,14 +305,11 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import DetectorModelSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorModelName`: `str`
 - `detectorModelDescription`: `str`
 - `creationTime`: `datetime`
-
 
 ## DetectorModelTypeDef
 
@@ -340,13 +317,12 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DetectorModelTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModelDefinition`: `"DetectorModelDefinitionTypeDef"`
-- `detectorModelConfiguration`: `"DetectorModelConfigurationTypeDef"`
 
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+- `detectorModelConfiguration`:
+  [DetectorModelConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodelconfigurationtypedef)
 
 ## DetectorModelVersionSummaryTypeDef
 
@@ -354,19 +330,18 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DetectorModelVersionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `detectorModelName`: `str`
 - `detectorModelVersion`: `str`
 - `detectorModelArn`: `str`
 - `roleArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: `DetectorModelVersionStatus`
-- `evaluationMethod`: `EvaluationMethod`
-
+- `status`:
+  [DetectorModelVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#detectormodelversionstatus)
+- `evaluationMethod`:
+  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
 
 ## DynamoDBActionTypeDef
 
@@ -374,23 +349,22 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DynamoDBActionTypeDef
 ```
 
-
 Required fields:
+
 - `hashKeyField`: `str`
 - `hashKeyValue`: `str`
 - `tableName`: `str`
 
-
-
 Optional fields:
+
 - `hashKeyType`: `str`
 - `rangeKeyType`: `str`
 - `rangeKeyField`: `str`
 - `rangeKeyValue`: `str`
 - `operation`: `str`
 - `payloadField`: `str`
-- `payload`: `"PayloadTypeDef"`
-
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## DynamoDBv2ActionTypeDef
 
@@ -398,15 +372,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import DynamoDBv2ActionTypeDef
 ```
 
-
 Required fields:
+
 - `tableName`: `str`
 
-
-
 Optional fields:
-- `payload`: `"PayloadTypeDef"`
 
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## EventTypeDef
 
@@ -414,16 +387,15 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import EventTypeDef
 ```
 
-
 Required fields:
+
 - `eventName`: `str`
 
-
-
 Optional fields:
-- `condition`: `str`
-- `actions`: `List["ActionTypeDef"]`
 
+- `condition`: `str`
+- `actions`:
+  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#actiontypedef)\]
 
 ## FirehoseActionTypeDef
 
@@ -431,16 +403,15 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import FirehoseActionTypeDef
 ```
 
-
 Required fields:
+
 - `deliveryStreamName`: `str`
 
-
-
 Optional fields:
-- `separator`: `str`
-- `payload`: `"PayloadTypeDef"`
 
+- `separator`: `str`
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## GetDetectorModelAnalysisResultsResponseTypeDef
 
@@ -448,13 +419,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `analysisResults`: `List["AnalysisResultTypeDef"]`
-- `nextToken`: `str`
 
+- `analysisResults`:
+  `List`\[[AnalysisResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#analysisresulttypedef)\]
+- `nextToken`: `str`
 
 ## InputConfigurationTypeDef
 
@@ -462,19 +431,18 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import InputConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `inputName`: `str`
 - `inputArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: `InputStatus`
-
-
+- `status`:
+  [InputStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#inputstatus)
 
 Optional fields:
-- `inputDescription`: `str`
 
+- `inputDescription`: `str`
 
 ## InputDefinitionTypeDef
 
@@ -482,12 +450,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import InputDefinitionTypeDef
 ```
 
-
 Required fields:
-- `attributes`: `List["AttributeTypeDef"]`
 
-
-
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#attributetypedef)\]
 
 ## InputSummaryTypeDef
 
@@ -495,17 +461,15 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import InputSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `inputName`: `str`
 - `inputDescription`: `str`
 - `inputArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: `InputStatus`
-
+- `status`:
+  [InputStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#inputstatus)
 
 ## InputTypeDef
 
@@ -513,13 +477,12 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import InputTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inputConfiguration`: `"InputConfigurationTypeDef"`
-- `inputDefinition`: `"InputDefinitionTypeDef"`
 
+- `inputConfiguration`:
+  [InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputconfigurationtypedef)
+- `inputDefinition`:
+  [InputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputdefinitiontypedef)
 
 ## IotEventsActionTypeDef
 
@@ -527,15 +490,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import IotEventsActionTypeDef
 ```
 
-
 Required fields:
+
 - `inputName`: `str`
 
-
-
 Optional fields:
-- `payload`: `"PayloadTypeDef"`
 
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## IotSiteWiseActionTypeDef
 
@@ -543,18 +505,17 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import IotSiteWiseActionTypeDef
 ```
 
-
 Required fields:
-- `propertyValue`: `"AssetPropertyValueTypeDef"`
 
-
+- `propertyValue`:
+  [AssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#assetpropertyvaluetypedef)
 
 Optional fields:
+
 - `entryId`: `str`
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-
 
 ## IotTopicPublishActionTypeDef
 
@@ -562,15 +523,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import IotTopicPublishActionTypeDef
 ```
 
-
 Required fields:
+
 - `mqttTopic`: `str`
 
-
-
 Optional fields:
-- `payload`: `"PayloadTypeDef"`
 
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## LambdaActionTypeDef
 
@@ -578,15 +538,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import LambdaActionTypeDef
 ```
 
-
 Required fields:
+
 - `functionArn`: `str`
 
-
-
 Optional fields:
-- `payload`: `"PayloadTypeDef"`
 
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## ListDetectorModelVersionsResponseTypeDef
 
@@ -594,13 +553,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModelVersionSummaries`: `List["DetectorModelVersionSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `detectorModelVersionSummaries`:
+  `List`\[[DetectorModelVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodelversionsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListDetectorModelsResponseTypeDef
 
@@ -608,13 +565,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import ListDetectorModelsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModelSummaries`: `List["DetectorModelSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `detectorModelSummaries`:
+  `List`\[[DetectorModelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodelsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListInputsResponseTypeDef
 
@@ -622,13 +577,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import ListInputsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inputSummaries`: `List["InputSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `inputSummaries`:
+  `List`\[[InputSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -636,12 +589,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
 
 ## LoggingOptionsTypeDef
 
@@ -649,17 +600,17 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import LoggingOptionsTypeDef
 ```
 
-
 Required fields:
+
 - `roleArn`: `str`
-- `level`: `LoggingLevel`
+- `level`:
+  [LoggingLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#logginglevel)
 - `enabled`: `bool`
 
-
-
 Optional fields:
-- `detectorDebugOptions`: `List["DetectorDebugOptionTypeDef"]`
 
+- `detectorDebugOptions`:
+  `List`\[[DetectorDebugOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectordebugoptiontypedef)\]
 
 ## OnEnterLifecycleTypeDef
 
@@ -667,12 +618,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import OnEnterLifecycleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `events`: `List["EventTypeDef"]`
 
+- `events`:
+  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#eventtypedef)\]
 
 ## OnExitLifecycleTypeDef
 
@@ -680,12 +629,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import OnExitLifecycleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `events`: `List["EventTypeDef"]`
 
+- `events`:
+  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#eventtypedef)\]
 
 ## OnInputLifecycleTypeDef
 
@@ -693,13 +640,12 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import OnInputLifecycleTypeDef
 ```
 
-
-
-
 Optional fields:
-- `events`: `List["EventTypeDef"]`
-- `transitionEvents`: `List["TransitionEventTypeDef"]`
 
+- `events`:
+  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#eventtypedef)\]
+- `transitionEvents`:
+  `List`\[[TransitionEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#transitioneventtypedef)\]
 
 ## PayloadTypeDef
 
@@ -707,13 +653,11 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import PayloadTypeDef
 ```
 
-
 Required fields:
+
 - `contentExpression`: `str`
-- `type`: `PayloadType`
-
-
-
+- `type`:
+  [PayloadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#payloadtype)
 
 ## ResetTimerActionTypeDef
 
@@ -721,12 +665,9 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import ResetTimerActionTypeDef
 ```
 
-
 Required fields:
+
 - `timerName`: `str`
-
-
-
 
 ## SNSTopicPublishActionTypeDef
 
@@ -734,15 +675,14 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import SNSTopicPublishActionTypeDef
 ```
 
-
 Required fields:
+
 - `targetArn`: `str`
 
-
-
 Optional fields:
-- `payload`: `"PayloadTypeDef"`
 
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## SetTimerActionTypeDef
 
@@ -750,16 +690,14 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import SetTimerActionTypeDef
 ```
 
-
 Required fields:
+
 - `timerName`: `str`
 
-
-
 Optional fields:
+
 - `seconds`: `int`
 - `durationExpression`: `str`
-
 
 ## SetVariableActionTypeDef
 
@@ -767,13 +705,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import SetVariableActionTypeDef
 ```
 
-
 Required fields:
+
 - `variableName`: `str`
 - `value`: `str`
-
-
-
 
 ## SqsActionTypeDef
 
@@ -781,16 +716,15 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import SqsActionTypeDef
 ```
 
-
 Required fields:
+
 - `queueUrl`: `str`
 
-
-
 Optional fields:
-- `useBase64`: `bool`
-- `payload`: `"PayloadTypeDef"`
 
+- `useBase64`: `bool`
+- `payload`:
+  [PayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#payloadtypedef)
 
 ## StartDetectorModelAnalysisResponseTypeDef
 
@@ -798,12 +732,9 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `analysisId`: `str`
 
+- `analysisId`: `str`
 
 ## StateTypeDef
 
@@ -811,17 +742,18 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import StateTypeDef
 ```
 
-
 Required fields:
+
 - `stateName`: `str`
 
-
-
 Optional fields:
-- `onInput`: `"OnInputLifecycleTypeDef"`
-- `onEnter`: `"OnEnterLifecycleTypeDef"`
-- `onExit`: `"OnExitLifecycleTypeDef"`
 
+- `onInput`:
+  [OnInputLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#oninputlifecycletypedef)
+- `onEnter`:
+  [OnEnterLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#onenterlifecycletypedef)
+- `onExit`:
+  [OnExitLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#onexitlifecycletypedef)
 
 ## TagTypeDef
 
@@ -829,13 +761,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## TransitionEventTypeDef
 
@@ -843,17 +772,16 @@ Required fields:
 from mypy_boto3_iotevents.type_defs import TransitionEventTypeDef
 ```
 
-
 Required fields:
+
 - `eventName`: `str`
 - `condition`: `str`
 - `nextState`: `str`
 
-
-
 Optional fields:
-- `actions`: `List["ActionTypeDef"]`
 
+- `actions`:
+  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#actiontypedef)\]
 
 ## UpdateDetectorModelResponseTypeDef
 
@@ -861,12 +789,10 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import UpdateDetectorModelResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `detectorModelConfiguration`: `"DetectorModelConfigurationTypeDef"`
 
+- `detectorModelConfiguration`:
+  [DetectorModelConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodelconfigurationtypedef)
 
 ## UpdateInputResponseTypeDef
 
@@ -874,9 +800,7 @@ Optional fields:
 from mypy_boto3_iotevents.type_defs import UpdateInputResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `inputConfiguration`: `"InputConfigurationTypeDef"`
 
+- `inputConfiguration`:
+  [InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputconfigurationtypedef)

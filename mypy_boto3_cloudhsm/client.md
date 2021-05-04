@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudHSM](./README.md) > CloudHSMClient
 
-Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
-type annotations stubs module [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+Auto-generated documentation for
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+type annotations stubs module
+[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [CloudHSMClient for boto3 CloudHSM module](#cloudhsmclient-for-boto3-cloudhsm-module)
   - [CloudHSMClient](#cloudhsmclient)
@@ -46,12 +48,13 @@ def get_cloudhsm_client() -> CloudHSMClient:
     return boto3.client("cloudhsm")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
+Boto3 documentation:
+[CloudHSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudhsm.client import Exceptions
@@ -60,7 +63,6 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
@@ -68,350 +70,348 @@ Exceptions:
 - `Exceptions.CloudHsmServiceException`
 - `Exceptions.InvalidRequestException`
 
-
 ## Methods
-
 
 ### add_tags_to_resource
 
 Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource]
+Boto3 documentation:
+[CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
 
-```python
-def add_tags_to_resource(
-    self,
-    ResourceArn: str,
-    TagList: List["TagTypeDef"]
-) -> AddTagsToResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#tagtypedef)\]
+  *(required)*
+
+Returns
+[AddTagsToResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#addtagstoresourceresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudhsm").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate]
+Boto3 documentation:
+[CloudHSM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_hapg
 
 Type annotations for `boto3.client("cloudhsm").create_hapg` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg]
+Boto3 documentation:
+[CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
-```python
-def create_hapg(
-    self,
-    Label: str
-) -> CreateHapgResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Label`: `str` *(required)*
+
+Returns
+[CreateHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createhapgresponsetypedef).
 
 ### create_hsm
 
 Type annotations for `boto3.client("cloudhsm").create_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm]
+Boto3 documentation:
+[CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
 
-```python
-def create_hsm(
-    self,
-    SubnetId: str,
-    SshKey: str,
-    IamRoleArn: str,
-    SubscriptionType: Literal['PRODUCTION'],
-    EniIp: str = None,
-    ExternalId: str = None,
-    ClientToken: str = None,
-    SyslogIp: str = None
-) -> CreateHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SubnetId`: `str` *(required)*
+- `SshKey`: `str` *(required)*
+- `IamRoleArn`: `str` *(required)*
+- `SubscriptionType`: `Literal['PRODUCTION']` *(required)*
+- `EniIp`: `str`
+- `ExternalId`: `str`
+- `ClientToken`: `str`
+- `SyslogIp`: `str`
+
+Returns
+[CreateHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createhsmresponsetypedef).
 
 ### create_luna_client
 
 Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client]
+Boto3 documentation:
+[CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
 
-```python
-def create_luna_client(
-    self,
-    Certificate: str,
-    Label: str = None
-) -> CreateLunaClientResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Certificate`: `str` *(required)*
+- `Label`: `str`
+
+Returns
+[CreateLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createlunaclientresponsetypedef).
 
 ### delete_hapg
 
 Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg]
+Boto3 documentation:
+[CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
-```python
-def delete_hapg(
-    self,
-    HapgArn: str
-) -> DeleteHapgResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HapgArn`: `str` *(required)*
+
+Returns
+[DeleteHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletehapgresponsetypedef).
 
 ### delete_hsm
 
 Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm]
+Boto3 documentation:
+[CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
 
-```python
-def delete_hsm(
-    self,
-    HsmArn: str
-) -> DeleteHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmArn`: `str` *(required)*
+
+Returns
+[DeleteHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletehsmresponsetypedef).
 
 ### delete_luna_client
 
 Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client]
+Boto3 documentation:
+[CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
 
-```python
-def delete_luna_client(
-    self,
-    ClientArn: str
-) -> DeleteLunaClientResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientArn`: `str` *(required)*
+
+Returns
+[DeleteLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletelunaclientresponsetypedef).
 
 ### describe_hapg
 
 Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg]
+Boto3 documentation:
+[CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
 
-```python
-def describe_hapg(
-    self,
-    HapgArn: str
-) -> DescribeHapgResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HapgArn`: `str` *(required)*
+
+Returns
+[DescribeHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describehapgresponsetypedef).
 
 ### describe_hsm
 
 Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm]
+Boto3 documentation:
+[CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
 
-```python
-def describe_hsm(
-    self,
-    HsmArn: str = None,
-    HsmSerialNumber: str = None
-) -> DescribeHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmArn`: `str`
+- `HsmSerialNumber`: `str`
+
+Returns
+[DescribeHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describehsmresponsetypedef).
 
 ### describe_luna_client
 
 Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client]
+Boto3 documentation:
+[CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
 
-```python
-def describe_luna_client(
-    self,
-    ClientArn: str = None,
-    CertificateFingerprint: str = None
-) -> DescribeLunaClientResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientArn`: `str`
+- `CertificateFingerprint`: `str`
+
+Returns
+[DescribeLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describelunaclientresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("cloudhsm").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudHSM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_config
 
 Type annotations for `boto3.client("cloudhsm").get_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config]
+Boto3 documentation:
+[CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
 
-```python
-def get_config(
-    self,
-    ClientArn: str,
-    ClientVersion: ClientVersion,
-    HapgList: List[str]
-) -> GetConfigResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientArn`: `str` *(required)*
+- `ClientVersion`:
+  [ClientVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#clientversion)
+  *(required)*
+- `HapgList`: `List`\[`str`\] *(required)*
+
+Returns
+[GetConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#getconfigresponsetypedef).
 
 ### list_available_zones
 
 Type annotations for `boto3.client("cloudhsm").list_available_zones` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones]
+Boto3 documentation:
+[CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
-```python
-def list_available_zones(
-    self
-) -> ListAvailableZonesResponseTypeDef:
-    pass
-```
+Returns
+[ListAvailableZonesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listavailablezonesresponsetypedef).
 
 ### list_hapgs
 
 Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs]
+Boto3 documentation:
+[CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
-```python
-def list_hapgs(
-    self,
-    NextToken: str = None
-) -> ListHapgsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListHapgsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhapgsresponsetypedef).
 
 ### list_hsms
 
 Type annotations for `boto3.client("cloudhsm").list_hsms` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms]
+Boto3 documentation:
+[CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
-```python
-def list_hsms(
-    self,
-    NextToken: str = None
-) -> ListHsmsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListHsmsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhsmsresponsetypedef).
 
 ### list_luna_clients
 
 Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients]
+Boto3 documentation:
+[CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
-```python
-def list_luna_clients(
-    self,
-    NextToken: str = None
-) -> ListLunaClientsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListLunaClientsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listlunaclientsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource]
+Boto3 documentation:
+[CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### modify_hapg
 
 Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg]
+Boto3 documentation:
+[CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
 
-```python
-def modify_hapg(
-    self,
-    HapgArn: str,
-    Label: str = None,
-    PartitionSerialList: List[str] = None
-) -> ModifyHapgResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HapgArn`: `str` *(required)*
+- `Label`: `str`
+- `PartitionSerialList`: `List`\[`str`\]
+
+Returns
+[ModifyHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifyhapgresponsetypedef).
 
 ### modify_hsm
 
 Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm]
+Boto3 documentation:
+[CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
 
-```python
-def modify_hsm(
-    self,
-    HsmArn: str,
-    SubnetId: str = None,
-    EniIp: str = None,
-    IamRoleArn: str = None,
-    ExternalId: str = None,
-    SyslogIp: str = None
-) -> ModifyHsmResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmArn`: `str` *(required)*
+- `SubnetId`: `str`
+- `EniIp`: `str`
+- `IamRoleArn`: `str`
+- `ExternalId`: `str`
+- `SyslogIp`: `str`
+
+Returns
+[ModifyHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifyhsmresponsetypedef).
 
 ### modify_luna_client
 
 Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client]
+Boto3 documentation:
+[CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
 
-```python
-def modify_luna_client(
-    self,
-    ClientArn: str,
-    Certificate: str
-) -> ModifyLunaClientResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ClientArn`: `str` *(required)*
+- `Certificate`: `str` *(required)*
+
+Returns
+[ModifyLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifylunaclientresponsetypedef).
 
 ### remove_tags_from_resource
 
-Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource` method.
+Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource]
+Boto3 documentation:
+[CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
 
-```python
-def remove_tags_from_resource(
-    self,
-    ResourceArn: str,
-    TagKeyList: List[str]
-) -> RemoveTagsFromResourceResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `ResourceArn`: `str` *(required)*
+- `TagKeyList`: `List`\[`str`\] *(required)*
 
+Returns
+[RemoveTagsFromResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#removetagsfromresourceresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudhsm").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloudhsm").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_hapgs")` -> [ListHapgsPaginator](./paginators.md#listhapgspaginator)
-- `client.get_paginator("list_hsms")` -> [ListHsmsPaginator](./paginators.md#listhsmspaginator)
-- `client.get_paginator("list_luna_clients")` -> [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)
-
-
+- `client.get_paginator("list_hapgs")` ->
+  [ListHapgsPaginator](./paginators.md#listhapgspaginator)
+- `client.get_paginator("list_hsms")` ->
+  [ListHsmsPaginator](./paginators.md#listhsmspaginator)
+- `client.get_paginator("list_luna_clients")` ->
+  [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CostExplorer](./README.md) > Literals
 
-Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+Auto-generated documentation for
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+type annotations stubs module
+[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [Literals for boto3 CostExplorer module](#literals-for-boto3-costexplorer-module)
   - [AccountScope](#accountscope)

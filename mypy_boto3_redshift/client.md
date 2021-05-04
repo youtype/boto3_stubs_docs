@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Redshift](./README.md) > RedshiftClient
 
-Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+Auto-generated documentation for
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+type annotations stubs module
+[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [RedshiftClient for boto3 Redshift module](#redshiftclient-for-boto3-redshift-module)
   - [RedshiftClient](#redshiftclient)
@@ -131,12 +133,13 @@ def get_redshift_client() -> RedshiftClient:
     return boto3.client("redshift")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client)
+Boto3 documentation:
+[Redshift.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_redshift.client import Exceptions
@@ -144,7 +147,6 @@ from mypy_boto3_redshift.client import Exceptions
 def handle_error(exc: Exceptions.AccessToClusterDeniedFault) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -269,1882 +271,1965 @@ Exceptions:
 - `Exceptions.UsageLimitAlreadyExistsFault`
 - `Exceptions.UsageLimitNotFoundFault`
 
-
 ## Methods
-
 
 ### accept_reserved_node_exchange
 
-Type annotations for `boto3.client("redshift").accept_reserved_node_exchange` method.
+Type annotations for `boto3.client("redshift").accept_reserved_node_exchange`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange]
+Boto3 documentation:
+[Redshift.Client.accept_reserved_node_exchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
 
-```python
-def accept_reserved_node_exchange(
-    self,
-    ReservedNodeId: str,
-    TargetReservedNodeOfferingId: str
-) -> AcceptReservedNodeExchangeOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedNodeId`: `str` *(required)*
+- `TargetReservedNodeOfferingId`: `str` *(required)*
+
+Returns
+[AcceptReservedNodeExchangeOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#acceptreservednodeexchangeoutputmessagetypedef).
 
 ### add_partner
 
 Type annotations for `boto3.client("redshift").add_partner` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.add_partner]
+Boto3 documentation:
+[Redshift.Client.add_partner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.add_partner)
 
-```python
-def add_partner(
-    self,
-    AccountId: str,
-    ClusterIdentifier: str,
-    DatabaseName: str,
-    PartnerName: str
-) -> PartnerIntegrationOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `PartnerName`: `str` *(required)*
+
+Returns
+[PartnerIntegrationOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#partnerintegrationoutputmessagetypedef).
 
 ### authorize_cluster_security_group_ingress
 
-Type annotations for `boto3.client("redshift").authorize_cluster_security_group_ingress` method.
+Type annotations for
+`boto3.client("redshift").authorize_cluster_security_group_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress]
+Boto3 documentation:
+[Redshift.Client.authorize_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress)
 
-```python
-def authorize_cluster_security_group_ingress(
-    self,
-    ClusterSecurityGroupName: str,
-    CIDRIP: str = None,
-    EC2SecurityGroupName: str = None,
-    EC2SecurityGroupOwnerId: str = None
-) -> AuthorizeClusterSecurityGroupIngressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSecurityGroupName`: `str` *(required)*
+- `CIDRIP`: `str`
+- `EC2SecurityGroupName`: `str`
+- `EC2SecurityGroupOwnerId`: `str`
+
+Returns
+[AuthorizeClusterSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#authorizeclustersecuritygroupingressresulttypedef).
 
 ### authorize_endpoint_access
 
-Type annotations for `boto3.client("redshift").authorize_endpoint_access` method.
+Type annotations for `boto3.client("redshift").authorize_endpoint_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.authorize_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access)
 
-```python
-def authorize_endpoint_access(
-    self,
-    Account: str,
-    ClusterIdentifier: str = None,
-    VpcIds: List[str] = None
-) -> "EndpointAuthorizationTypeDef":
-    pass
-```
+Arguments:
+
+- `Account`: `str` *(required)*
+- `ClusterIdentifier`: `str`
+- `VpcIds`: `List`\[`str`\]
+
+Returns
+[EndpointAuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationtypedef).
 
 ### authorize_snapshot_access
 
-Type annotations for `boto3.client("redshift").authorize_snapshot_access` method.
+Type annotations for `boto3.client("redshift").authorize_snapshot_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access]
+Boto3 documentation:
+[Redshift.Client.authorize_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access)
 
-```python
-def authorize_snapshot_access(
-    self,
-    SnapshotIdentifier: str,
-    AccountWithRestoreAccess: str,
-    SnapshotClusterIdentifier: str = None
-) -> AuthorizeSnapshotAccessResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifier`: `str` *(required)*
+- `AccountWithRestoreAccess`: `str` *(required)*
+- `SnapshotClusterIdentifier`: `str`
+
+Returns
+[AuthorizeSnapshotAccessResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#authorizesnapshotaccessresulttypedef).
 
 ### batch_delete_cluster_snapshots
 
-Type annotations for `boto3.client("redshift").batch_delete_cluster_snapshots` method.
+Type annotations for `boto3.client("redshift").batch_delete_cluster_snapshots`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots]
+Boto3 documentation:
+[Redshift.Client.batch_delete_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
 
-```python
-def batch_delete_cluster_snapshots(
-    self,
-    Identifiers: List[DeleteClusterSnapshotMessageTypeDef]
-) -> BatchDeleteClusterSnapshotsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Identifiers`:
+  `List`\[[DeleteClusterSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#deleteclustersnapshotmessagetypedef)\]
+  *(required)*
+
+Returns
+[BatchDeleteClusterSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#batchdeleteclustersnapshotsresulttypedef).
 
 ### batch_modify_cluster_snapshots
 
-Type annotations for `boto3.client("redshift").batch_modify_cluster_snapshots` method.
+Type annotations for `boto3.client("redshift").batch_modify_cluster_snapshots`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots]
+Boto3 documentation:
+[Redshift.Client.batch_modify_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots)
 
-```python
-def batch_modify_cluster_snapshots(
-    self,
-    SnapshotIdentifierList: List[str],
-    ManualSnapshotRetentionPeriod: int = None,
-    Force: bool = None
-) -> BatchModifyClusterSnapshotsOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifierList`: `List`\[`str`\] *(required)*
+- `ManualSnapshotRetentionPeriod`: `int`
+- `Force`: `bool`
+
+Returns
+[BatchModifyClusterSnapshotsOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#batchmodifyclustersnapshotsoutputmessagetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("redshift").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.can_paginate]
+Boto3 documentation:
+[Redshift.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_resize
 
 Type annotations for `boto3.client("redshift").cancel_resize` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize]
+Boto3 documentation:
+[Redshift.Client.cancel_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize)
 
-```python
-def cancel_resize(
-    self,
-    ClusterIdentifier: str
-) -> ResizeProgressMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[ResizeProgressMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resizeprogressmessagetypedef).
 
 ### copy_cluster_snapshot
 
 Type annotations for `boto3.client("redshift").copy_cluster_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.copy_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot)
 
-```python
-def copy_cluster_snapshot(
-    self,
-    SourceSnapshotIdentifier: str,
-    TargetSnapshotIdentifier: str,
-    SourceSnapshotClusterIdentifier: str = None,
-    ManualSnapshotRetentionPeriod: int = None
-) -> CopyClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceSnapshotIdentifier`: `str` *(required)*
+- `TargetSnapshotIdentifier`: `str` *(required)*
+- `SourceSnapshotClusterIdentifier`: `str`
+- `ManualSnapshotRetentionPeriod`: `int`
+
+Returns
+[CopyClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#copyclustersnapshotresulttypedef).
 
 ### create_cluster
 
 Type annotations for `boto3.client("redshift").create_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster]
+Boto3 documentation:
+[Redshift.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster)
 
-```python
-def create_cluster(
-    self,
-    ClusterIdentifier: str,
-    NodeType: str,
-    MasterUsername: str,
-    MasterUserPassword: str,
-    DBName: str = None,
-    ClusterType: str = None,
-    ClusterSecurityGroups: List[str] = None,
-    VpcSecurityGroupIds: List[str] = None,
-    ClusterSubnetGroupName: str = None,
-    AvailabilityZone: str = None,
-    PreferredMaintenanceWindow: str = None,
-    ClusterParameterGroupName: str = None,
-    AutomatedSnapshotRetentionPeriod: int = None,
-    ManualSnapshotRetentionPeriod: int = None,
-    Port: int = None,
-    ClusterVersion: str = None,
-    AllowVersionUpgrade: bool = None,
-    NumberOfNodes: int = None,
-    PubliclyAccessible: bool = None,
-    Encrypted: bool = None,
-    HsmClientCertificateIdentifier: str = None,
-    HsmConfigurationIdentifier: str = None,
-    ElasticIp: str = None,
-    Tags: List["TagTypeDef"] = None,
-    KmsKeyId: str = None,
-    EnhancedVpcRouting: bool = None,
-    AdditionalInfo: str = None,
-    IamRoles: List[str] = None,
-    MaintenanceTrackName: str = None,
-    SnapshotScheduleIdentifier: str = None,
-    AvailabilityZoneRelocation: bool = None,
-    AquaConfigurationStatus: AquaConfigurationStatus = None
-) -> CreateClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `NodeType`: `str` *(required)*
+- `MasterUsername`: `str` *(required)*
+- `MasterUserPassword`: `str` *(required)*
+- `DBName`: `str`
+- `ClusterType`: `str`
+- `ClusterSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSubnetGroupName`: `str`
+- `AvailabilityZone`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `ClusterParameterGroupName`: `str`
+- `AutomatedSnapshotRetentionPeriod`: `int`
+- `ManualSnapshotRetentionPeriod`: `int`
+- `Port`: `int`
+- `ClusterVersion`: `str`
+- `AllowVersionUpgrade`: `bool`
+- `NumberOfNodes`: `int`
+- `PubliclyAccessible`: `bool`
+- `Encrypted`: `bool`
+- `HsmClientCertificateIdentifier`: `str`
+- `HsmConfigurationIdentifier`: `str`
+- `ElasticIp`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `EnhancedVpcRouting`: `bool`
+- `AdditionalInfo`: `str`
+- `IamRoles`: `List`\[`str`\]
+- `MaintenanceTrackName`: `str`
+- `SnapshotScheduleIdentifier`: `str`
+- `AvailabilityZoneRelocation`: `bool`
+- `AquaConfigurationStatus`:
+  [AquaConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#aquaconfigurationstatus)
+
+Returns
+[CreateClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createclusterresulttypedef).
 
 ### create_cluster_parameter_group
 
-Type annotations for `boto3.client("redshift").create_cluster_parameter_group` method.
+Type annotations for `boto3.client("redshift").create_cluster_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group]
+Boto3 documentation:
+[Redshift.Client.create_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group)
 
-```python
-def create_cluster_parameter_group(
-    self,
-    ParameterGroupName: str,
-    ParameterGroupFamily: str,
-    Description: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateClusterParameterGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str` *(required)*
+- `ParameterGroupFamily`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateClusterParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createclusterparametergroupresulttypedef).
 
 ### create_cluster_security_group
 
-Type annotations for `boto3.client("redshift").create_cluster_security_group` method.
+Type annotations for `boto3.client("redshift").create_cluster_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_security_group]
+Boto3 documentation:
+[Redshift.Client.create_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_security_group)
 
-```python
-def create_cluster_security_group(
-    self,
-    ClusterSecurityGroupName: str,
-    Description: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateClusterSecurityGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSecurityGroupName`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateClusterSecurityGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createclustersecuritygroupresulttypedef).
 
 ### create_cluster_snapshot
 
 Type annotations for `boto3.client("redshift").create_cluster_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.create_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot)
 
-```python
-def create_cluster_snapshot(
-    self,
-    SnapshotIdentifier: str,
-    ClusterIdentifier: str,
-    ManualSnapshotRetentionPeriod: int = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifier`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `ManualSnapshotRetentionPeriod`: `int`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createclustersnapshotresulttypedef).
 
 ### create_cluster_subnet_group
 
-Type annotations for `boto3.client("redshift").create_cluster_subnet_group` method.
+Type annotations for `boto3.client("redshift").create_cluster_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group]
+Boto3 documentation:
+[Redshift.Client.create_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group)
 
-```python
-def create_cluster_subnet_group(
-    self,
-    ClusterSubnetGroupName: str,
-    Description: str,
-    SubnetIds: List[str],
-    Tags: List["TagTypeDef"] = None
-) -> CreateClusterSubnetGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSubnetGroupName`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateClusterSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createclustersubnetgroupresulttypedef).
 
 ### create_endpoint_access
 
 Type annotations for `boto3.client("redshift").create_endpoint_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.create_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_endpoint_access)
 
-```python
-def create_endpoint_access(
-    self,
-    EndpointName: str,
-    SubnetGroupName: str,
-    ClusterIdentifier: str = None,
-    ResourceOwner: str = None,
-    VpcSecurityGroupIds: List[str] = None
-) -> "EndpointAccessTypeDef":
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `SubnetGroupName`: `str` *(required)*
+- `ClusterIdentifier`: `str`
+- `ResourceOwner`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+
+Returns
+[EndpointAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesstypedef).
 
 ### create_event_subscription
 
-Type annotations for `boto3.client("redshift").create_event_subscription` method.
+Type annotations for `boto3.client("redshift").create_event_subscription`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_event_subscription]
+Boto3 documentation:
+[Redshift.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_event_subscription)
 
-```python
-def create_event_subscription(
-    self,
-    SubscriptionName: str,
-    SnsTopicArn: str,
-    SourceType: str = None,
-    SourceIds: List[str] = None,
-    EventCategories: List[str] = None,
-    Severity: str = None,
-    Enabled: bool = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateEventSubscriptionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
+- `SnsTopicArn`: `str` *(required)*
+- `SourceType`: `str`
+- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `List`\[`str`\]
+- `Severity`: `str`
+- `Enabled`: `bool`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateEventSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createeventsubscriptionresulttypedef).
 
 ### create_hsm_client_certificate
 
-Type annotations for `boto3.client("redshift").create_hsm_client_certificate` method.
+Type annotations for `boto3.client("redshift").create_hsm_client_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate]
+Boto3 documentation:
+[Redshift.Client.create_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
 
-```python
-def create_hsm_client_certificate(
-    self,
-    HsmClientCertificateIdentifier: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHsmClientCertificateResultTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmClientCertificateIdentifier`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHsmClientCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createhsmclientcertificateresulttypedef).
 
 ### create_hsm_configuration
 
-Type annotations for `boto3.client("redshift").create_hsm_configuration` method.
+Type annotations for `boto3.client("redshift").create_hsm_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_configuration]
+Boto3 documentation:
+[Redshift.Client.create_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_configuration)
 
-```python
-def create_hsm_configuration(
-    self,
-    HsmConfigurationIdentifier: str,
-    Description: str,
-    HsmIpAddress: str,
-    HsmPartitionName: str,
-    HsmPartitionPassword: str,
-    HsmServerPublicCertificate: str,
-    Tags: List["TagTypeDef"] = None
-) -> CreateHsmConfigurationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmConfigurationIdentifier`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `HsmIpAddress`: `str` *(required)*
+- `HsmPartitionName`: `str` *(required)*
+- `HsmPartitionPassword`: `str` *(required)*
+- `HsmServerPublicCertificate`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateHsmConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createhsmconfigurationresulttypedef).
 
 ### create_scheduled_action
 
 Type annotations for `boto3.client("redshift").create_scheduled_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_scheduled_action]
+Boto3 documentation:
+[Redshift.Client.create_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_scheduled_action)
 
-```python
-def create_scheduled_action(
-    self,
-    ScheduledActionName: str,
-    TargetAction: "ScheduledActionTypeTypeDef",
-    Schedule: str,
-    IamRole: str,
-    ScheduledActionDescription: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Enable: bool = None
-) -> "ScheduledActionTypeDef":
-    pass
-```
+Arguments:
+
+- `ScheduledActionName`: `str` *(required)*
+- `TargetAction`:
+  [ScheduledActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypetypedef)
+  *(required)*
+- `Schedule`: `str` *(required)*
+- `IamRole`: `str` *(required)*
+- `ScheduledActionDescription`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Enable`: `bool`
+
+Returns
+[ScheduledActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypedef).
 
 ### create_snapshot_copy_grant
 
-Type annotations for `boto3.client("redshift").create_snapshot_copy_grant` method.
+Type annotations for `boto3.client("redshift").create_snapshot_copy_grant`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant]
+Boto3 documentation:
+[Redshift.Client.create_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant)
 
-```python
-def create_snapshot_copy_grant(
-    self,
-    SnapshotCopyGrantName: str,
-    KmsKeyId: str = None,
-    Tags: List["TagTypeDef"] = None
-) -> CreateSnapshotCopyGrantResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotCopyGrantName`: `str` *(required)*
+- `KmsKeyId`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateSnapshotCopyGrantResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#createsnapshotcopygrantresulttypedef).
 
 ### create_snapshot_schedule
 
-Type annotations for `boto3.client("redshift").create_snapshot_schedule` method.
+Type annotations for `boto3.client("redshift").create_snapshot_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule]
+Boto3 documentation:
+[Redshift.Client.create_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule)
 
-```python
-def create_snapshot_schedule(
-    self,
-    ScheduleDefinitions: List[str] = None,
-    ScheduleIdentifier: str = None,
-    ScheduleDescription: str = None,
-    Tags: List["TagTypeDef"] = None,
-    DryRun: bool = None,
-    NextInvocations: int = None
-) -> "SnapshotScheduleTypeDef":
-    pass
-```
+Arguments:
+
+- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleIdentifier`: `str`
+- `ScheduleDescription`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `DryRun`: `bool`
+- `NextInvocations`: `int`
+
+Returns
+[SnapshotScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotscheduletypedef).
 
 ### create_tags
 
 Type annotations for `boto3.client("redshift").create_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags]
+Boto3 documentation:
+[Redshift.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags)
 
-```python
-def create_tags(
-    self,
-    ResourceName: str,
-    Tags: List["TagTypeDef"]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+  *(required)*
 
 ### create_usage_limit
 
 Type annotations for `boto3.client("redshift").create_usage_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_usage_limit]
+Boto3 documentation:
+[Redshift.Client.create_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_usage_limit)
 
-```python
-def create_usage_limit(
-    self,
-    ClusterIdentifier: str,
-    FeatureType: UsageLimitFeatureType,
-    LimitType: UsageLimitLimitType,
-    Amount: int,
-    Period: UsageLimitPeriod = None,
-    BreachAction: UsageLimitBreachAction = None,
-    Tags: List["TagTypeDef"] = None
-) -> "UsageLimitTypeDef":
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `FeatureType`:
+  [UsageLimitFeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitfeaturetype)
+  *(required)*
+- `LimitType`:
+  [UsageLimitLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitlimittype)
+  *(required)*
+- `Amount`: `int` *(required)*
+- `Period`:
+  [UsageLimitPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitperiod)
+- `BreachAction`:
+  [UsageLimitBreachAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitbreachaction)
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+
+Returns
+[UsageLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimittypedef).
 
 ### delete_cluster
 
 Type annotations for `boto3.client("redshift").delete_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster]
+Boto3 documentation:
+[Redshift.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster)
 
-```python
-def delete_cluster(
-    self,
-    ClusterIdentifier: str,
-    SkipFinalClusterSnapshot: bool = None,
-    FinalClusterSnapshotIdentifier: str = None,
-    FinalClusterSnapshotRetentionPeriod: int = None
-) -> DeleteClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `SkipFinalClusterSnapshot`: `bool`
+- `FinalClusterSnapshotIdentifier`: `str`
+- `FinalClusterSnapshotRetentionPeriod`: `int`
+
+Returns
+[DeleteClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#deleteclusterresulttypedef).
 
 ### delete_cluster_parameter_group
 
-Type annotations for `boto3.client("redshift").delete_cluster_parameter_group` method.
+Type annotations for `boto3.client("redshift").delete_cluster_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group]
+Boto3 documentation:
+[Redshift.Client.delete_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
 
-```python
-def delete_cluster_parameter_group(
-    self,
-    ParameterGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str` *(required)*
 
 ### delete_cluster_security_group
 
-Type annotations for `boto3.client("redshift").delete_cluster_security_group` method.
+Type annotations for `boto3.client("redshift").delete_cluster_security_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group]
+Boto3 documentation:
+[Redshift.Client.delete_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
 
-```python
-def delete_cluster_security_group(
-    self,
-    ClusterSecurityGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ClusterSecurityGroupName`: `str` *(required)*
 
 ### delete_cluster_snapshot
 
 Type annotations for `boto3.client("redshift").delete_cluster_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.delete_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
 
-```python
-def delete_cluster_snapshot(
-    self,
-    SnapshotIdentifier: str,
-    SnapshotClusterIdentifier: str = None
-) -> DeleteClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifier`: `str` *(required)*
+- `SnapshotClusterIdentifier`: `str`
+
+Returns
+[DeleteClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#deleteclustersnapshotresulttypedef).
 
 ### delete_cluster_subnet_group
 
-Type annotations for `boto3.client("redshift").delete_cluster_subnet_group` method.
+Type annotations for `boto3.client("redshift").delete_cluster_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group]
+Boto3 documentation:
+[Redshift.Client.delete_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
 
-```python
-def delete_cluster_subnet_group(
-    self,
-    ClusterSubnetGroupName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ClusterSubnetGroupName`: `str` *(required)*
 
 ### delete_endpoint_access
 
 Type annotations for `boto3.client("redshift").delete_endpoint_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.delete_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
 
-```python
-def delete_endpoint_access(
-    self,
-    EndpointName: str
-) -> "EndpointAccessTypeDef":
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+
+Returns
+[EndpointAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesstypedef).
 
 ### delete_event_subscription
 
-Type annotations for `boto3.client("redshift").delete_event_subscription` method.
+Type annotations for `boto3.client("redshift").delete_event_subscription`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription]
+Boto3 documentation:
+[Redshift.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
 
-```python
-def delete_event_subscription(
-    self,
-    SubscriptionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
 
 ### delete_hsm_client_certificate
 
-Type annotations for `boto3.client("redshift").delete_hsm_client_certificate` method.
+Type annotations for `boto3.client("redshift").delete_hsm_client_certificate`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate]
+Boto3 documentation:
+[Redshift.Client.delete_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
 
-```python
-def delete_hsm_client_certificate(
-    self,
-    HsmClientCertificateIdentifier: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `HsmClientCertificateIdentifier`: `str` *(required)*
 
 ### delete_hsm_configuration
 
-Type annotations for `boto3.client("redshift").delete_hsm_configuration` method.
+Type annotations for `boto3.client("redshift").delete_hsm_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration]
+Boto3 documentation:
+[Redshift.Client.delete_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
 
-```python
-def delete_hsm_configuration(
-    self,
-    HsmConfigurationIdentifier: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `HsmConfigurationIdentifier`: `str` *(required)*
 
 ### delete_partner
 
 Type annotations for `boto3.client("redshift").delete_partner` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_partner]
+Boto3 documentation:
+[Redshift.Client.delete_partner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_partner)
 
-```python
-def delete_partner(
-    self,
-    AccountId: str,
-    ClusterIdentifier: str,
-    DatabaseName: str,
-    PartnerName: str
-) -> PartnerIntegrationOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `PartnerName`: `str` *(required)*
+
+Returns
+[PartnerIntegrationOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#partnerintegrationoutputmessagetypedef).
 
 ### delete_scheduled_action
 
 Type annotations for `boto3.client("redshift").delete_scheduled_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action]
+Boto3 documentation:
+[Redshift.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
 
-```python
-def delete_scheduled_action(
-    self,
-    ScheduledActionName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ScheduledActionName`: `str` *(required)*
 
 ### delete_snapshot_copy_grant
 
-Type annotations for `boto3.client("redshift").delete_snapshot_copy_grant` method.
+Type annotations for `boto3.client("redshift").delete_snapshot_copy_grant`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant]
+Boto3 documentation:
+[Redshift.Client.delete_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
 
-```python
-def delete_snapshot_copy_grant(
-    self,
-    SnapshotCopyGrantName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `SnapshotCopyGrantName`: `str` *(required)*
 
 ### delete_snapshot_schedule
 
-Type annotations for `boto3.client("redshift").delete_snapshot_schedule` method.
+Type annotations for `boto3.client("redshift").delete_snapshot_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule]
+Boto3 documentation:
+[Redshift.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
 
-```python
-def delete_snapshot_schedule(
-    self,
-    ScheduleIdentifier: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `ScheduleIdentifier`: `str` *(required)*
 
 ### delete_tags
 
 Type annotations for `boto3.client("redshift").delete_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags]
+Boto3 documentation:
+[Redshift.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags)
 
-```python
-def delete_tags(
-    self,
-    ResourceName: str,
-    TagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
 
 ### delete_usage_limit
 
 Type annotations for `boto3.client("redshift").delete_usage_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit]
+Boto3 documentation:
+[Redshift.Client.delete_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
 
-```python
-def delete_usage_limit(
-    self,
-    UsageLimitId: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `UsageLimitId`: `str` *(required)*
 
 ### describe_account_attributes
 
-Type annotations for `boto3.client("redshift").describe_account_attributes` method.
+Type annotations for `boto3.client("redshift").describe_account_attributes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes]
+Boto3 documentation:
+[Redshift.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
 
-```python
-def describe_account_attributes(
-    self,
-    AttributeNames: List[str] = None
-) -> AccountAttributeListTypeDef:
-    pass
-```
+Arguments:
+
+- `AttributeNames`: `List`\[`str`\]
+
+Returns
+[AccountAttributeListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#accountattributelisttypedef).
 
 ### describe_cluster_db_revisions
 
-Type annotations for `boto3.client("redshift").describe_cluster_db_revisions` method.
+Type annotations for `boto3.client("redshift").describe_cluster_db_revisions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_db_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions)
 
-```python
-def describe_cluster_db_revisions(
-    self,
-    ClusterIdentifier: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ClusterDbRevisionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ClusterDbRevisionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterdbrevisionsmessagetypedef).
 
 ### describe_cluster_parameter_groups
 
-Type annotations for `boto3.client("redshift").describe_cluster_parameter_groups` method.
+Type annotations for
+`boto3.client("redshift").describe_cluster_parameter_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups)
 
-```python
-def describe_cluster_parameter_groups(
-    self,
-    ParameterGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> ClusterParameterGroupsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[ClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupsmessagetypedef).
 
 ### describe_cluster_parameters
 
-Type annotations for `boto3.client("redshift").describe_cluster_parameters` method.
+Type annotations for `boto3.client("redshift").describe_cluster_parameters`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters)
 
-```python
-def describe_cluster_parameters(
-    self,
-    ParameterGroupName: str,
-    Source: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ClusterParameterGroupDetailsTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupdetailstypedef).
 
 ### describe_cluster_security_groups
 
-Type annotations for `boto3.client("redshift").describe_cluster_security_groups` method.
+Type annotations for
+`boto3.client("redshift").describe_cluster_security_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups)
 
-```python
-def describe_cluster_security_groups(
-    self,
-    ClusterSecurityGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> ClusterSecurityGroupMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSecurityGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[ClusterSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygroupmessagetypedef).
 
 ### describe_cluster_snapshots
 
-Type annotations for `boto3.client("redshift").describe_cluster_snapshots` method.
+Type annotations for `boto3.client("redshift").describe_cluster_snapshots`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots)
 
-```python
-def describe_cluster_snapshots(
-    self,
-    ClusterIdentifier: str = None,
-    SnapshotIdentifier: str = None,
-    SnapshotType: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    OwnerAccount: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None,
-    ClusterExists: bool = None,
-    SortingEntities: List[SnapshotSortingEntityTypeDef] = None
-) -> SnapshotMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `OwnerAccount`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `ClusterExists`: `bool`
+- `SortingEntities`:
+  `List`\[[SnapshotSortingEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotsortingentitytypedef)\]
+
+Returns
+[SnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotmessagetypedef).
 
 ### describe_cluster_subnet_groups
 
-Type annotations for `boto3.client("redshift").describe_cluster_subnet_groups` method.
+Type annotations for `boto3.client("redshift").describe_cluster_subnet_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups)
 
-```python
-def describe_cluster_subnet_groups(
-    self,
-    ClusterSubnetGroupName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> ClusterSubnetGroupMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSubnetGroupName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[ClusterSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgroupmessagetypedef).
 
 ### describe_cluster_tracks
 
 Type annotations for `boto3.client("redshift").describe_cluster_tracks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_tracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks)
 
-```python
-def describe_cluster_tracks(
-    self,
-    MaintenanceTrackName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> TrackListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `MaintenanceTrackName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[TrackListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tracklistmessagetypedef).
 
 ### describe_cluster_versions
 
-Type annotations for `boto3.client("redshift").describe_cluster_versions` method.
+Type annotations for `boto3.client("redshift").describe_cluster_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_versions]
+Boto3 documentation:
+[Redshift.Client.describe_cluster_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_versions)
 
-```python
-def describe_cluster_versions(
-    self,
-    ClusterVersion: str = None,
-    ClusterParameterGroupFamily: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ClusterVersionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterVersion`: `str`
+- `ClusterParameterGroupFamily`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ClusterVersionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterversionsmessagetypedef).
 
 ### describe_clusters
 
 Type annotations for `boto3.client("redshift").describe_clusters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_clusters]
+Boto3 documentation:
+[Redshift.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_clusters)
 
-```python
-def describe_clusters(
-    self,
-    ClusterIdentifier: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> ClustersMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[ClustersMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersmessagetypedef).
 
 ### describe_default_cluster_parameters
 
-Type annotations for `boto3.client("redshift").describe_default_cluster_parameters` method.
+Type annotations for
+`boto3.client("redshift").describe_default_cluster_parameters` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters]
+Boto3 documentation:
+[Redshift.Client.describe_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters)
 
-```python
-def describe_default_cluster_parameters(
-    self,
-    ParameterGroupFamily: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> DescribeDefaultClusterParametersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupFamily`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeDefaultClusterParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describedefaultclusterparametersresulttypedef).
 
 ### describe_endpoint_access
 
-Type annotations for `boto3.client("redshift").describe_endpoint_access` method.
+Type annotations for `boto3.client("redshift").describe_endpoint_access`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.describe_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_access)
 
-```python
-def describe_endpoint_access(
-    self,
-    ClusterIdentifier: str = None,
-    ResourceOwner: str = None,
-    EndpointName: str = None,
-    VpcId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> EndpointAccessListTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `ResourceOwner`: `str`
+- `EndpointName`: `str`
+- `VpcId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[EndpointAccessListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesslisttypedef).
 
 ### describe_endpoint_authorization
 
-Type annotations for `boto3.client("redshift").describe_endpoint_authorization` method.
+Type annotations for `boto3.client("redshift").describe_endpoint_authorization`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization]
+Boto3 documentation:
+[Redshift.Client.describe_endpoint_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization)
 
-```python
-def describe_endpoint_authorization(
-    self,
-    ClusterIdentifier: str = None,
-    Account: str = None,
-    Grantee: bool = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> EndpointAuthorizationListTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `Account`: `str`
+- `Grantee`: `bool`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[EndpointAuthorizationListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationlisttypedef).
 
 ### describe_event_categories
 
-Type annotations for `boto3.client("redshift").describe_event_categories` method.
+Type annotations for `boto3.client("redshift").describe_event_categories`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories]
+Boto3 documentation:
+[Redshift.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories)
 
-```python
-def describe_event_categories(
-    self,
-    SourceType: str = None
-) -> EventCategoriesMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceType`: `str`
+
+Returns
+[EventCategoriesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventcategoriesmessagetypedef).
 
 ### describe_event_subscriptions
 
-Type annotations for `boto3.client("redshift").describe_event_subscriptions` method.
+Type annotations for `boto3.client("redshift").describe_event_subscriptions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions]
+Boto3 documentation:
+[Redshift.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions)
 
-```python
-def describe_event_subscriptions(
-    self,
-    SubscriptionName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> EventSubscriptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptionsmessagetypedef).
 
 ### describe_events
 
 Type annotations for `boto3.client("redshift").describe_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_events]
+Boto3 documentation:
+[Redshift.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_events)
 
-```python
-def describe_events(
-    self,
-    SourceIdentifier: str = None,
-    SourceType: SourceType = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Duration: int = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> EventsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceIdentifier`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsmessagetypedef).
 
 ### describe_hsm_client_certificates
 
-Type annotations for `boto3.client("redshift").describe_hsm_client_certificates` method.
+Type annotations for
+`boto3.client("redshift").describe_hsm_client_certificates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates]
+Boto3 documentation:
+[Redshift.Client.describe_hsm_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates)
 
-```python
-def describe_hsm_client_certificates(
-    self,
-    HsmClientCertificateIdentifier: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> HsmClientCertificateMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmClientCertificateIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[HsmClientCertificateMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmclientcertificatemessagetypedef).
 
 ### describe_hsm_configurations
 
-Type annotations for `boto3.client("redshift").describe_hsm_configurations` method.
+Type annotations for `boto3.client("redshift").describe_hsm_configurations`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations]
+Boto3 documentation:
+[Redshift.Client.describe_hsm_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations)
 
-```python
-def describe_hsm_configurations(
-    self,
-    HsmConfigurationIdentifier: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> HsmConfigurationMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `HsmConfigurationIdentifier`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[HsmConfigurationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmconfigurationmessagetypedef).
 
 ### describe_logging_status
 
 Type annotations for `boto3.client("redshift").describe_logging_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status]
+Boto3 documentation:
+[Redshift.Client.describe_logging_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status)
 
-```python
-def describe_logging_status(
-    self,
-    ClusterIdentifier: str
-) -> LoggingStatusTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[LoggingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#loggingstatustypedef).
 
 ### describe_node_configuration_options
 
-Type annotations for `boto3.client("redshift").describe_node_configuration_options` method.
+Type annotations for
+`boto3.client("redshift").describe_node_configuration_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options]
+Boto3 documentation:
+[Redshift.Client.describe_node_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options)
 
-```python
-def describe_node_configuration_options(
-    self,
-    ActionType: ActionType,
-    ClusterIdentifier: str = None,
-    SnapshotIdentifier: str = None,
-    OwnerAccount: str = None,
-    Filters: List[NodeConfigurationOptionsFilterTypeDef] = None,
-    Marker: str = None,
-    MaxRecords: int = None
-) -> NodeConfigurationOptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ActionType`:
+  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#actiontype)
+  *(required)*
+- `ClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `OwnerAccount`: `str`
+- `Filters`:
+  `List`\[[NodeConfigurationOptionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsfiltertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[NodeConfigurationOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsmessagetypedef).
 
 ### describe_orderable_cluster_options
 
-Type annotations for `boto3.client("redshift").describe_orderable_cluster_options` method.
+Type annotations for
+`boto3.client("redshift").describe_orderable_cluster_options` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options]
+Boto3 documentation:
+[Redshift.Client.describe_orderable_cluster_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options)
 
-```python
-def describe_orderable_cluster_options(
-    self,
-    ClusterVersion: str = None,
-    NodeType: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> OrderableClusterOptionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterVersion`: `str`
+- `NodeType`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[OrderableClusterOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#orderableclusteroptionsmessagetypedef).
 
 ### describe_partners
 
 Type annotations for `boto3.client("redshift").describe_partners` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_partners]
+Boto3 documentation:
+[Redshift.Client.describe_partners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_partners)
 
-```python
-def describe_partners(
-    self,
-    AccountId: str,
-    ClusterIdentifier: str,
-    DatabaseName: str = None,
-    PartnerName: str = None
-) -> DescribePartnersOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `DatabaseName`: `str`
+- `PartnerName`: `str`
+
+Returns
+[DescribePartnersOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describepartnersoutputmessagetypedef).
 
 ### describe_reserved_node_offerings
 
-Type annotations for `boto3.client("redshift").describe_reserved_node_offerings` method.
+Type annotations for
+`boto3.client("redshift").describe_reserved_node_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings]
+Boto3 documentation:
+[Redshift.Client.describe_reserved_node_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings)
 
-```python
-def describe_reserved_node_offerings(
-    self,
-    ReservedNodeOfferingId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ReservedNodeOfferingsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedNodeOfferingId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ReservedNodeOfferingsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodeofferingsmessagetypedef).
 
 ### describe_reserved_nodes
 
 Type annotations for `boto3.client("redshift").describe_reserved_nodes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes]
+Boto3 documentation:
+[Redshift.Client.describe_reserved_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes)
 
-```python
-def describe_reserved_nodes(
-    self,
-    ReservedNodeId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> ReservedNodesMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedNodeId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[ReservedNodesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodesmessagetypedef).
 
 ### describe_resize
 
 Type annotations for `boto3.client("redshift").describe_resize` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize]
+Boto3 documentation:
+[Redshift.Client.describe_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize)
 
-```python
-def describe_resize(
-    self,
-    ClusterIdentifier: str
-) -> ResizeProgressMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[ResizeProgressMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resizeprogressmessagetypedef).
 
 ### describe_scheduled_actions
 
-Type annotations for `boto3.client("redshift").describe_scheduled_actions` method.
+Type annotations for `boto3.client("redshift").describe_scheduled_actions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions]
+Boto3 documentation:
+[Redshift.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions)
 
-```python
-def describe_scheduled_actions(
-    self,
-    ScheduledActionName: str = None,
-    TargetActionType: ScheduledActionTypeValues = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Active: bool = None,
-    Filters: List[ScheduledActionFilterTypeDef] = None,
-    Marker: str = None,
-    MaxRecords: int = None
-) -> ScheduledActionsMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ScheduledActionName`: `str`
+- `TargetActionType`:
+  [ScheduledActionTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#scheduledactiontypevalues)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Active`: `bool`
+- `Filters`:
+  `List`\[[ScheduledActionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionfiltertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[ScheduledActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionsmessagetypedef).
 
 ### describe_snapshot_copy_grants
 
-Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants` method.
+Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants]
+Boto3 documentation:
+[Redshift.Client.describe_snapshot_copy_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants)
 
-```python
-def describe_snapshot_copy_grants(
-    self,
-    SnapshotCopyGrantName: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> SnapshotCopyGrantMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotCopyGrantName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[SnapshotCopyGrantMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotcopygrantmessagetypedef).
 
 ### describe_snapshot_schedules
 
-Type annotations for `boto3.client("redshift").describe_snapshot_schedules` method.
+Type annotations for `boto3.client("redshift").describe_snapshot_schedules`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules]
+Boto3 documentation:
+[Redshift.Client.describe_snapshot_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules)
 
-```python
-def describe_snapshot_schedules(
-    self,
-    ClusterIdentifier: str = None,
-    ScheduleIdentifier: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None,
-    Marker: str = None,
-    MaxRecords: int = None
-) -> DescribeSnapshotSchedulesOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `ScheduleIdentifier`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+Returns
+[DescribeSnapshotSchedulesOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describesnapshotschedulesoutputmessagetypedef).
 
 ### describe_storage
 
 Type annotations for `boto3.client("redshift").describe_storage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_storage]
+Boto3 documentation:
+[Redshift.Client.describe_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_storage)
 
-```python
-def describe_storage(
-    self
-) -> CustomerStorageMessageTypeDef:
-    pass
-```
+Returns
+[CustomerStorageMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#customerstoragemessagetypedef).
 
 ### describe_table_restore_status
 
-Type annotations for `boto3.client("redshift").describe_table_restore_status` method.
+Type annotations for `boto3.client("redshift").describe_table_restore_status`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_table_restore_status]
+Boto3 documentation:
+[Redshift.Client.describe_table_restore_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_table_restore_status)
 
-```python
-def describe_table_restore_status(
-    self,
-    ClusterIdentifier: str = None,
-    TableRestoreRequestId: str = None,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> TableRestoreStatusMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `TableRestoreRequestId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[TableRestoreStatusMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tablerestorestatusmessagetypedef).
 
 ### describe_tags
 
 Type annotations for `boto3.client("redshift").describe_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_tags]
+Boto3 documentation:
+[Redshift.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_tags)
 
-```python
-def describe_tags(
-    self,
-    ResourceName: str = None,
-    ResourceType: str = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> TaggedResourceListMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceName`: `str`
+- `ResourceType`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[TaggedResourceListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#taggedresourcelistmessagetypedef).
 
 ### describe_usage_limits
 
 Type annotations for `boto3.client("redshift").describe_usage_limits` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_usage_limits]
+Boto3 documentation:
+[Redshift.Client.describe_usage_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_usage_limits)
 
-```python
-def describe_usage_limits(
-    self,
-    UsageLimitId: str = None,
-    ClusterIdentifier: str = None,
-    FeatureType: UsageLimitFeatureType = None,
-    MaxRecords: int = None,
-    Marker: str = None,
-    TagKeys: List[str] = None,
-    TagValues: List[str] = None
-) -> UsageLimitListTypeDef:
-    pass
-```
+Arguments:
+
+- `UsageLimitId`: `str`
+- `ClusterIdentifier`: `str`
+- `FeatureType`:
+  [UsageLimitFeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitfeaturetype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `TagKeys`: `List`\[`str`\]
+- `TagValues`: `List`\[`str`\]
+
+Returns
+[UsageLimitListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimitlisttypedef).
 
 ### disable_logging
 
 Type annotations for `boto3.client("redshift").disable_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging]
+Boto3 documentation:
+[Redshift.Client.disable_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging)
 
-```python
-def disable_logging(
-    self,
-    ClusterIdentifier: str
-) -> LoggingStatusTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[LoggingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#loggingstatustypedef).
 
 ### disable_snapshot_copy
 
 Type annotations for `boto3.client("redshift").disable_snapshot_copy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy]
+Boto3 documentation:
+[Redshift.Client.disable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
 
-```python
-def disable_snapshot_copy(
-    self,
-    ClusterIdentifier: str
-) -> DisableSnapshotCopyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[DisableSnapshotCopyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#disablesnapshotcopyresulttypedef).
 
 ### enable_logging
 
 Type annotations for `boto3.client("redshift").enable_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_logging]
+Boto3 documentation:
+[Redshift.Client.enable_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_logging)
 
-```python
-def enable_logging(
-    self,
-    ClusterIdentifier: str,
-    BucketName: str,
-    S3KeyPrefix: str = None
-) -> LoggingStatusTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `BucketName`: `str` *(required)*
+- `S3KeyPrefix`: `str`
+
+Returns
+[LoggingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#loggingstatustypedef).
 
 ### enable_snapshot_copy
 
 Type annotations for `boto3.client("redshift").enable_snapshot_copy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy]
+Boto3 documentation:
+[Redshift.Client.enable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy)
 
-```python
-def enable_snapshot_copy(
-    self,
-    ClusterIdentifier: str,
-    DestinationRegion: str,
-    RetentionPeriod: int = None,
-    SnapshotCopyGrantName: str = None,
-    ManualSnapshotRetentionPeriod: int = None
-) -> EnableSnapshotCopyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `DestinationRegion`: `str` *(required)*
+- `RetentionPeriod`: `int`
+- `SnapshotCopyGrantName`: `str`
+- `ManualSnapshotRetentionPeriod`: `int`
+
+Returns
+[EnableSnapshotCopyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#enablesnapshotcopyresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("redshift").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.generate_presigned_url]
+Boto3 documentation:
+[Redshift.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_cluster_credentials
 
 Type annotations for `boto3.client("redshift").get_cluster_credentials` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials]
+Boto3 documentation:
+[Redshift.Client.get_cluster_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials)
 
-```python
-def get_cluster_credentials(
-    self,
-    DbUser: str,
-    ClusterIdentifier: str,
-    DbName: str = None,
-    DurationSeconds: int = None,
-    AutoCreate: bool = None,
-    DbGroups: List[str] = None
-) -> ClusterCredentialsTypeDef:
-    pass
-```
+Arguments:
+
+- `DbUser`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `DbName`: `str`
+- `DurationSeconds`: `int`
+- `AutoCreate`: `bool`
+- `DbGroups`: `List`\[`str`\]
+
+Returns
+[ClusterCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustercredentialstypedef).
 
 ### get_reserved_node_exchange_offerings
 
-Type annotations for `boto3.client("redshift").get_reserved_node_exchange_offerings` method.
+Type annotations for
+`boto3.client("redshift").get_reserved_node_exchange_offerings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings]
+Boto3 documentation:
+[Redshift.Client.get_reserved_node_exchange_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings)
 
-```python
-def get_reserved_node_exchange_offerings(
-    self,
-    ReservedNodeId: str,
-    MaxRecords: int = None,
-    Marker: str = None
-) -> GetReservedNodeExchangeOfferingsOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedNodeId`: `str` *(required)*
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#getreservednodeexchangeofferingsoutputmessagetypedef).
 
 ### modify_aqua_configuration
 
-Type annotations for `boto3.client("redshift").modify_aqua_configuration` method.
+Type annotations for `boto3.client("redshift").modify_aqua_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration]
+Boto3 documentation:
+[Redshift.Client.modify_aqua_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
 
-```python
-def modify_aqua_configuration(
-    self,
-    ClusterIdentifier: str,
-    AquaConfigurationStatus: AquaConfigurationStatus = None
-) -> ModifyAquaOutputMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `AquaConfigurationStatus`:
+  [AquaConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#aquaconfigurationstatus)
+
+Returns
+[ModifyAquaOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyaquaoutputmessagetypedef).
 
 ### modify_cluster
 
 Type annotations for `boto3.client("redshift").modify_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster]
+Boto3 documentation:
+[Redshift.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster)
 
-```python
-def modify_cluster(
-    self,
-    ClusterIdentifier: str,
-    ClusterType: str = None,
-    NodeType: str = None,
-    NumberOfNodes: int = None,
-    ClusterSecurityGroups: List[str] = None,
-    VpcSecurityGroupIds: List[str] = None,
-    MasterUserPassword: str = None,
-    ClusterParameterGroupName: str = None,
-    AutomatedSnapshotRetentionPeriod: int = None,
-    ManualSnapshotRetentionPeriod: int = None,
-    PreferredMaintenanceWindow: str = None,
-    ClusterVersion: str = None,
-    AllowVersionUpgrade: bool = None,
-    HsmClientCertificateIdentifier: str = None,
-    HsmConfigurationIdentifier: str = None,
-    NewClusterIdentifier: str = None,
-    PubliclyAccessible: bool = None,
-    ElasticIp: str = None,
-    EnhancedVpcRouting: bool = None,
-    MaintenanceTrackName: str = None,
-    Encrypted: bool = None,
-    KmsKeyId: str = None,
-    AvailabilityZoneRelocation: bool = None,
-    AvailabilityZone: str = None,
-    Port: int = None
-) -> ModifyClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `ClusterType`: `str`
+- `NodeType`: `str`
+- `NumberOfNodes`: `int`
+- `ClusterSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `MasterUserPassword`: `str`
+- `ClusterParameterGroupName`: `str`
+- `AutomatedSnapshotRetentionPeriod`: `int`
+- `ManualSnapshotRetentionPeriod`: `int`
+- `PreferredMaintenanceWindow`: `str`
+- `ClusterVersion`: `str`
+- `AllowVersionUpgrade`: `bool`
+- `HsmClientCertificateIdentifier`: `str`
+- `HsmConfigurationIdentifier`: `str`
+- `NewClusterIdentifier`: `str`
+- `PubliclyAccessible`: `bool`
+- `ElasticIp`: `str`
+- `EnhancedVpcRouting`: `bool`
+- `MaintenanceTrackName`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `AvailabilityZoneRelocation`: `bool`
+- `AvailabilityZone`: `str`
+- `Port`: `int`
+
+Returns
+[ModifyClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclusterresulttypedef).
 
 ### modify_cluster_db_revision
 
-Type annotations for `boto3.client("redshift").modify_cluster_db_revision` method.
+Type annotations for `boto3.client("redshift").modify_cluster_db_revision`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_db_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
 
-```python
-def modify_cluster_db_revision(
-    self,
-    ClusterIdentifier: str,
-    RevisionTarget: str
-) -> ModifyClusterDbRevisionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `RevisionTarget`: `str` *(required)*
+
+Returns
+[ModifyClusterDbRevisionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclusterdbrevisionresulttypedef).
 
 ### modify_cluster_iam_roles
 
-Type annotations for `boto3.client("redshift").modify_cluster_iam_roles` method.
+Type annotations for `boto3.client("redshift").modify_cluster_iam_roles`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_iam_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles)
 
-```python
-def modify_cluster_iam_roles(
-    self,
-    ClusterIdentifier: str,
-    AddIamRoles: List[str] = None,
-    RemoveIamRoles: List[str] = None
-) -> ModifyClusterIamRolesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `AddIamRoles`: `List`\[`str`\]
+- `RemoveIamRoles`: `List`\[`str`\]
+
+Returns
+[ModifyClusterIamRolesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclusteriamrolesresulttypedef).
 
 ### modify_cluster_maintenance
 
-Type annotations for `boto3.client("redshift").modify_cluster_maintenance` method.
+Type annotations for `boto3.client("redshift").modify_cluster_maintenance`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance)
 
-```python
-def modify_cluster_maintenance(
-    self,
-    ClusterIdentifier: str,
-    DeferMaintenance: bool = None,
-    DeferMaintenanceIdentifier: str = None,
-    DeferMaintenanceStartTime: datetime = None,
-    DeferMaintenanceEndTime: datetime = None,
-    DeferMaintenanceDuration: int = None
-) -> ModifyClusterMaintenanceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `DeferMaintenance`: `bool`
+- `DeferMaintenanceIdentifier`: `str`
+- `DeferMaintenanceStartTime`: `datetime`
+- `DeferMaintenanceEndTime`: `datetime`
+- `DeferMaintenanceDuration`: `int`
+
+Returns
+[ModifyClusterMaintenanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclustermaintenanceresulttypedef).
 
 ### modify_cluster_parameter_group
 
-Type annotations for `boto3.client("redshift").modify_cluster_parameter_group` method.
+Type annotations for `boto3.client("redshift").modify_cluster_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
 
-```python
-def modify_cluster_parameter_group(
-    self,
-    ParameterGroupName: str,
-    Parameters: List["ParameterTypeDef"]
-) -> ClusterParameterGroupNameMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str` *(required)*
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#parametertypedef)\]
+  *(required)*
+
+Returns
+[ClusterParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupnamemessagetypedef).
 
 ### modify_cluster_snapshot
 
 Type annotations for `boto3.client("redshift").modify_cluster_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot)
 
-```python
-def modify_cluster_snapshot(
-    self,
-    SnapshotIdentifier: str,
-    ManualSnapshotRetentionPeriod: int = None,
-    Force: bool = None
-) -> ModifyClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifier`: `str` *(required)*
+- `ManualSnapshotRetentionPeriod`: `int`
+- `Force`: `bool`
+
+Returns
+[ModifyClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclustersnapshotresulttypedef).
 
 ### modify_cluster_snapshot_schedule
 
-Type annotations for `boto3.client("redshift").modify_cluster_snapshot_schedule` method.
+Type annotations for
+`boto3.client("redshift").modify_cluster_snapshot_schedule` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule)
 
-```python
-def modify_cluster_snapshot_schedule(
-    self,
-    ClusterIdentifier: str,
-    ScheduleIdentifier: str = None,
-    DisassociateSchedule: bool = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `ScheduleIdentifier`: `str`
+- `DisassociateSchedule`: `bool`
 
 ### modify_cluster_subnet_group
 
-Type annotations for `boto3.client("redshift").modify_cluster_subnet_group` method.
+Type annotations for `boto3.client("redshift").modify_cluster_subnet_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group]
+Boto3 documentation:
+[Redshift.Client.modify_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group)
 
-```python
-def modify_cluster_subnet_group(
-    self,
-    ClusterSubnetGroupName: str,
-    SubnetIds: List[str],
-    Description: str = None
-) -> ModifyClusterSubnetGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSubnetGroupName`: `str` *(required)*
+- `SubnetIds`: `List`\[`str`\] *(required)*
+- `Description`: `str`
+
+Returns
+[ModifyClusterSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyclustersubnetgroupresulttypedef).
 
 ### modify_endpoint_access
 
 Type annotations for `boto3.client("redshift").modify_endpoint_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.modify_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
 
-```python
-def modify_endpoint_access(
-    self,
-    EndpointName: str,
-    VpcSecurityGroupIds: List[str] = None
-) -> "EndpointAccessTypeDef":
-    pass
-```
+Arguments:
+
+- `EndpointName`: `str` *(required)*
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+
+Returns
+[EndpointAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesstypedef).
 
 ### modify_event_subscription
 
-Type annotations for `boto3.client("redshift").modify_event_subscription` method.
+Type annotations for `boto3.client("redshift").modify_event_subscription`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_event_subscription]
+Boto3 documentation:
+[Redshift.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_event_subscription)
 
-```python
-def modify_event_subscription(
-    self,
-    SubscriptionName: str,
-    SnsTopicArn: str = None,
-    SourceType: str = None,
-    SourceIds: List[str] = None,
-    EventCategories: List[str] = None,
-    Severity: str = None,
-    Enabled: bool = None
-) -> ModifyEventSubscriptionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SubscriptionName`: `str` *(required)*
+- `SnsTopicArn`: `str`
+- `SourceType`: `str`
+- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `List`\[`str`\]
+- `Severity`: `str`
+- `Enabled`: `bool`
+
+Returns
+[ModifyEventSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifyeventsubscriptionresulttypedef).
 
 ### modify_scheduled_action
 
 Type annotations for `boto3.client("redshift").modify_scheduled_action` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_scheduled_action]
+Boto3 documentation:
+[Redshift.Client.modify_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_scheduled_action)
 
-```python
-def modify_scheduled_action(
-    self,
-    ScheduledActionName: str,
-    TargetAction: "ScheduledActionTypeTypeDef" = None,
-    Schedule: str = None,
-    IamRole: str = None,
-    ScheduledActionDescription: str = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    Enable: bool = None
-) -> "ScheduledActionTypeDef":
-    pass
-```
+Arguments:
+
+- `ScheduledActionName`: `str` *(required)*
+- `TargetAction`:
+  [ScheduledActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypetypedef)
+- `Schedule`: `str`
+- `IamRole`: `str`
+- `ScheduledActionDescription`: `str`
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Enable`: `bool`
+
+Returns
+[ScheduledActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypedef).
 
 ### modify_snapshot_copy_retention_period
 
-Type annotations for `boto3.client("redshift").modify_snapshot_copy_retention_period` method.
+Type annotations for
+`boto3.client("redshift").modify_snapshot_copy_retention_period` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period]
+Boto3 documentation:
+[Redshift.Client.modify_snapshot_copy_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period)
 
-```python
-def modify_snapshot_copy_retention_period(
-    self,
-    ClusterIdentifier: str,
-    RetentionPeriod: int,
-    Manual: bool = None
-) -> ModifySnapshotCopyRetentionPeriodResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `RetentionPeriod`: `int` *(required)*
+- `Manual`: `bool`
+
+Returns
+[ModifySnapshotCopyRetentionPeriodResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#modifysnapshotcopyretentionperiodresulttypedef).
 
 ### modify_snapshot_schedule
 
-Type annotations for `boto3.client("redshift").modify_snapshot_schedule` method.
+Type annotations for `boto3.client("redshift").modify_snapshot_schedule`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule]
+Boto3 documentation:
+[Redshift.Client.modify_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
 
-```python
-def modify_snapshot_schedule(
-    self,
-    ScheduleIdentifier: str,
-    ScheduleDefinitions: List[str]
-) -> "SnapshotScheduleTypeDef":
-    pass
-```
+Arguments:
+
+- `ScheduleIdentifier`: `str` *(required)*
+- `ScheduleDefinitions`: `List`\[`str`\] *(required)*
+
+Returns
+[SnapshotScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotscheduletypedef).
 
 ### modify_usage_limit
 
 Type annotations for `boto3.client("redshift").modify_usage_limit` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_usage_limit]
+Boto3 documentation:
+[Redshift.Client.modify_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_usage_limit)
 
-```python
-def modify_usage_limit(
-    self,
-    UsageLimitId: str,
-    Amount: int = None,
-    BreachAction: UsageLimitBreachAction = None
-) -> "UsageLimitTypeDef":
-    pass
-```
+Arguments:
+
+- `UsageLimitId`: `str` *(required)*
+- `Amount`: `int`
+- `BreachAction`:
+  [UsageLimitBreachAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitbreachaction)
+
+Returns
+[UsageLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimittypedef).
 
 ### pause_cluster
 
 Type annotations for `boto3.client("redshift").pause_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster]
+Boto3 documentation:
+[Redshift.Client.pause_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster)
 
-```python
-def pause_cluster(
-    self,
-    ClusterIdentifier: str
-) -> PauseClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[PauseClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#pauseclusterresulttypedef).
 
 ### purchase_reserved_node_offering
 
-Type annotations for `boto3.client("redshift").purchase_reserved_node_offering` method.
+Type annotations for `boto3.client("redshift").purchase_reserved_node_offering`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering]
+Boto3 documentation:
+[Redshift.Client.purchase_reserved_node_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
 
-```python
-def purchase_reserved_node_offering(
-    self,
-    ReservedNodeOfferingId: str,
-    NodeCount: int = None
-) -> PurchaseReservedNodeOfferingResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ReservedNodeOfferingId`: `str` *(required)*
+- `NodeCount`: `int`
+
+Returns
+[PurchaseReservedNodeOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#purchasereservednodeofferingresulttypedef).
 
 ### reboot_cluster
 
 Type annotations for `boto3.client("redshift").reboot_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster]
+Boto3 documentation:
+[Redshift.Client.reboot_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster)
 
-```python
-def reboot_cluster(
-    self,
-    ClusterIdentifier: str
-) -> RebootClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[RebootClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#rebootclusterresulttypedef).
 
 ### reset_cluster_parameter_group
 
-Type annotations for `boto3.client("redshift").reset_cluster_parameter_group` method.
+Type annotations for `boto3.client("redshift").reset_cluster_parameter_group`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group]
+Boto3 documentation:
+[Redshift.Client.reset_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group)
 
-```python
-def reset_cluster_parameter_group(
-    self,
-    ParameterGroupName: str,
-    ResetAllParameters: bool = None,
-    Parameters: List["ParameterTypeDef"] = None
-) -> ClusterParameterGroupNameMessageTypeDef:
-    pass
-```
+Arguments:
+
+- `ParameterGroupName`: `str` *(required)*
+- `ResetAllParameters`: `bool`
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#parametertypedef)\]
+
+Returns
+[ClusterParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupnamemessagetypedef).
 
 ### resize_cluster
 
 Type annotations for `boto3.client("redshift").resize_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resize_cluster]
+Boto3 documentation:
+[Redshift.Client.resize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resize_cluster)
 
-```python
-def resize_cluster(
-    self,
-    ClusterIdentifier: str,
-    ClusterType: str = None,
-    NodeType: str = None,
-    NumberOfNodes: int = None,
-    Classic: bool = None
-) -> ResizeClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `ClusterType`: `str`
+- `NodeType`: `str`
+- `NumberOfNodes`: `int`
+- `Classic`: `bool`
+
+Returns
+[ResizeClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resizeclusterresulttypedef).
 
 ### restore_from_cluster_snapshot
 
-Type annotations for `boto3.client("redshift").restore_from_cluster_snapshot` method.
+Type annotations for `boto3.client("redshift").restore_from_cluster_snapshot`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.restore_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot)
 
-```python
-def restore_from_cluster_snapshot(
-    self,
-    ClusterIdentifier: str,
-    SnapshotIdentifier: str,
-    SnapshotClusterIdentifier: str = None,
-    Port: int = None,
-    AvailabilityZone: str = None,
-    AllowVersionUpgrade: bool = None,
-    ClusterSubnetGroupName: str = None,
-    PubliclyAccessible: bool = None,
-    OwnerAccount: str = None,
-    HsmClientCertificateIdentifier: str = None,
-    HsmConfigurationIdentifier: str = None,
-    ElasticIp: str = None,
-    ClusterParameterGroupName: str = None,
-    ClusterSecurityGroups: List[str] = None,
-    VpcSecurityGroupIds: List[str] = None,
-    PreferredMaintenanceWindow: str = None,
-    AutomatedSnapshotRetentionPeriod: int = None,
-    ManualSnapshotRetentionPeriod: int = None,
-    KmsKeyId: str = None,
-    NodeType: str = None,
-    EnhancedVpcRouting: bool = None,
-    AdditionalInfo: str = None,
-    IamRoles: List[str] = None,
-    MaintenanceTrackName: str = None,
-    SnapshotScheduleIdentifier: str = None,
-    NumberOfNodes: int = None,
-    AvailabilityZoneRelocation: bool = None,
-    AquaConfigurationStatus: AquaConfigurationStatus = None
-) -> RestoreFromClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `SnapshotIdentifier`: `str` *(required)*
+- `SnapshotClusterIdentifier`: `str`
+- `Port`: `int`
+- `AvailabilityZone`: `str`
+- `AllowVersionUpgrade`: `bool`
+- `ClusterSubnetGroupName`: `str`
+- `PubliclyAccessible`: `bool`
+- `OwnerAccount`: `str`
+- `HsmClientCertificateIdentifier`: `str`
+- `HsmConfigurationIdentifier`: `str`
+- `ElasticIp`: `str`
+- `ClusterParameterGroupName`: `str`
+- `ClusterSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `AutomatedSnapshotRetentionPeriod`: `int`
+- `ManualSnapshotRetentionPeriod`: `int`
+- `KmsKeyId`: `str`
+- `NodeType`: `str`
+- `EnhancedVpcRouting`: `bool`
+- `AdditionalInfo`: `str`
+- `IamRoles`: `List`\[`str`\]
+- `MaintenanceTrackName`: `str`
+- `SnapshotScheduleIdentifier`: `str`
+- `NumberOfNodes`: `int`
+- `AvailabilityZoneRelocation`: `bool`
+- `AquaConfigurationStatus`:
+  [AquaConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#aquaconfigurationstatus)
+
+Returns
+[RestoreFromClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#restorefromclustersnapshotresulttypedef).
 
 ### restore_table_from_cluster_snapshot
 
-Type annotations for `boto3.client("redshift").restore_table_from_cluster_snapshot` method.
+Type annotations for
+`boto3.client("redshift").restore_table_from_cluster_snapshot` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot]
+Boto3 documentation:
+[Redshift.Client.restore_table_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot)
 
-```python
-def restore_table_from_cluster_snapshot(
-    self,
-    ClusterIdentifier: str,
-    SnapshotIdentifier: str,
-    SourceDatabaseName: str,
-    SourceTableName: str,
-    NewTableName: str,
-    SourceSchemaName: str = None,
-    TargetDatabaseName: str = None,
-    TargetSchemaName: str = None,
-    EnableCaseSensitiveIdentifier: bool = None
-) -> RestoreTableFromClusterSnapshotResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+- `SnapshotIdentifier`: `str` *(required)*
+- `SourceDatabaseName`: `str` *(required)*
+- `SourceTableName`: `str` *(required)*
+- `NewTableName`: `str` *(required)*
+- `SourceSchemaName`: `str`
+- `TargetDatabaseName`: `str`
+- `TargetSchemaName`: `str`
+- `EnableCaseSensitiveIdentifier`: `bool`
+
+Returns
+[RestoreTableFromClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#restoretablefromclustersnapshotresulttypedef).
 
 ### resume_cluster
 
 Type annotations for `boto3.client("redshift").resume_cluster` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster]
+Boto3 documentation:
+[Redshift.Client.resume_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster)
 
-```python
-def resume_cluster(
-    self,
-    ClusterIdentifier: str
-) -> ResumeClusterResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[ResumeClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resumeclusterresulttypedef).
 
 ### revoke_cluster_security_group_ingress
 
-Type annotations for `boto3.client("redshift").revoke_cluster_security_group_ingress` method.
+Type annotations for
+`boto3.client("redshift").revoke_cluster_security_group_ingress` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress]
+Boto3 documentation:
+[Redshift.Client.revoke_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress)
 
-```python
-def revoke_cluster_security_group_ingress(
-    self,
-    ClusterSecurityGroupName: str,
-    CIDRIP: str = None,
-    EC2SecurityGroupName: str = None,
-    EC2SecurityGroupOwnerId: str = None
-) -> RevokeClusterSecurityGroupIngressResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterSecurityGroupName`: `str` *(required)*
+- `CIDRIP`: `str`
+- `EC2SecurityGroupName`: `str`
+- `EC2SecurityGroupOwnerId`: `str`
+
+Returns
+[RevokeClusterSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#revokeclustersecuritygroupingressresulttypedef).
 
 ### revoke_endpoint_access
 
 Type annotations for `boto3.client("redshift").revoke_endpoint_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access]
+Boto3 documentation:
+[Redshift.Client.revoke_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access)
 
-```python
-def revoke_endpoint_access(
-    self,
-    ClusterIdentifier: str = None,
-    Account: str = None,
-    VpcIds: List[str] = None,
-    Force: bool = None
-) -> "EndpointAuthorizationTypeDef":
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str`
+- `Account`: `str`
+- `VpcIds`: `List`\[`str`\]
+- `Force`: `bool`
+
+Returns
+[EndpointAuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationtypedef).
 
 ### revoke_snapshot_access
 
 Type annotations for `boto3.client("redshift").revoke_snapshot_access` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access]
+Boto3 documentation:
+[Redshift.Client.revoke_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access)
 
-```python
-def revoke_snapshot_access(
-    self,
-    SnapshotIdentifier: str,
-    AccountWithRestoreAccess: str,
-    SnapshotClusterIdentifier: str = None
-) -> RevokeSnapshotAccessResultTypeDef:
-    pass
-```
+Arguments:
+
+- `SnapshotIdentifier`: `str` *(required)*
+- `AccountWithRestoreAccess`: `str` *(required)*
+- `SnapshotClusterIdentifier`: `str`
+
+Returns
+[RevokeSnapshotAccessResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#revokesnapshotaccessresulttypedef).
 
 ### rotate_encryption_key
 
 Type annotations for `boto3.client("redshift").rotate_encryption_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key]
+Boto3 documentation:
+[Redshift.Client.rotate_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
 
-```python
-def rotate_encryption_key(
-    self,
-    ClusterIdentifier: str
-) -> RotateEncryptionKeyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `ClusterIdentifier`: `str` *(required)*
+
+Returns
+[RotateEncryptionKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#rotateencryptionkeyresulttypedef).
 
 ### update_partner_status
 
 Type annotations for `boto3.client("redshift").update_partner_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.update_partner_status]
+Boto3 documentation:
+[Redshift.Client.update_partner_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.update_partner_status)
 
-```python
-def update_partner_status(
-    self,
-    AccountId: str,
-    ClusterIdentifier: str,
-    DatabaseName: str,
-    PartnerName: str,
-    Status: PartnerIntegrationStatus,
-    StatusMessage: str = None
-) -> PartnerIntegrationOutputMessageTypeDef:
-    pass
-```
+Arguments:
 
+- `AccountId`: `str` *(required)*
+- `ClusterIdentifier`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `PartnerName`: `str` *(required)*
+- `Status`:
+  [PartnerIntegrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#partnerintegrationstatus)
+  *(required)*
+- `StatusMessage`: `str`
 
+Returns
+[PartnerIntegrationOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#partnerintegrationoutputmessagetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("redshift").get_paginator` method with overloads.
+Type annotations for `boto3.client("redshift").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_cluster_db_revisions")` -> [DescribeClusterDbRevisionsPaginator](./paginators.md#describeclusterdbrevisionspaginator)
-- `client.get_paginator("describe_cluster_parameter_groups")` -> [DescribeClusterParameterGroupsPaginator](./paginators.md#describeclusterparametergroupspaginator)
-- `client.get_paginator("describe_cluster_parameters")` -> [DescribeClusterParametersPaginator](./paginators.md#describeclusterparameterspaginator)
-- `client.get_paginator("describe_cluster_security_groups")` -> [DescribeClusterSecurityGroupsPaginator](./paginators.md#describeclustersecuritygroupspaginator)
-- `client.get_paginator("describe_cluster_snapshots")` -> [DescribeClusterSnapshotsPaginator](./paginators.md#describeclustersnapshotspaginator)
-- `client.get_paginator("describe_cluster_subnet_groups")` -> [DescribeClusterSubnetGroupsPaginator](./paginators.md#describeclustersubnetgroupspaginator)
-- `client.get_paginator("describe_cluster_tracks")` -> [DescribeClusterTracksPaginator](./paginators.md#describeclustertrackspaginator)
-- `client.get_paginator("describe_cluster_versions")` -> [DescribeClusterVersionsPaginator](./paginators.md#describeclusterversionspaginator)
-- `client.get_paginator("describe_clusters")` -> [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
-- `client.get_paginator("describe_default_cluster_parameters")` -> [DescribeDefaultClusterParametersPaginator](./paginators.md#describedefaultclusterparameterspaginator)
-- `client.get_paginator("describe_endpoint_access")` -> [DescribeEndpointAccessPaginator](./paginators.md#describeendpointaccesspaginator)
-- `client.get_paginator("describe_endpoint_authorization")` -> [DescribeEndpointAuthorizationPaginator](./paginators.md#describeendpointauthorizationpaginator)
-- `client.get_paginator("describe_event_subscriptions")` -> [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
-- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_hsm_client_certificates")` -> [DescribeHsmClientCertificatesPaginator](./paginators.md#describehsmclientcertificatespaginator)
-- `client.get_paginator("describe_hsm_configurations")` -> [DescribeHsmConfigurationsPaginator](./paginators.md#describehsmconfigurationspaginator)
-- `client.get_paginator("describe_node_configuration_options")` -> [DescribeNodeConfigurationOptionsPaginator](./paginators.md#describenodeconfigurationoptionspaginator)
-- `client.get_paginator("describe_orderable_cluster_options")` -> [DescribeOrderableClusterOptionsPaginator](./paginators.md#describeorderableclusteroptionspaginator)
-- `client.get_paginator("describe_reserved_node_offerings")` -> [DescribeReservedNodeOfferingsPaginator](./paginators.md#describereservednodeofferingspaginator)
-- `client.get_paginator("describe_reserved_nodes")` -> [DescribeReservedNodesPaginator](./paginators.md#describereservednodespaginator)
-- `client.get_paginator("describe_scheduled_actions")` -> [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
-- `client.get_paginator("describe_snapshot_copy_grants")` -> [DescribeSnapshotCopyGrantsPaginator](./paginators.md#describesnapshotcopygrantspaginator)
-- `client.get_paginator("describe_snapshot_schedules")` -> [DescribeSnapshotSchedulesPaginator](./paginators.md#describesnapshotschedulespaginator)
-- `client.get_paginator("describe_table_restore_status")` -> [DescribeTableRestoreStatusPaginator](./paginators.md#describetablerestorestatuspaginator)
-- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-- `client.get_paginator("describe_usage_limits")` -> [DescribeUsageLimitsPaginator](./paginators.md#describeusagelimitspaginator)
-- `client.get_paginator("get_reserved_node_exchange_offerings")` -> [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
-
-
-
+- `client.get_paginator("describe_cluster_db_revisions")` ->
+  [DescribeClusterDbRevisionsPaginator](./paginators.md#describeclusterdbrevisionspaginator)
+- `client.get_paginator("describe_cluster_parameter_groups")` ->
+  [DescribeClusterParameterGroupsPaginator](./paginators.md#describeclusterparametergroupspaginator)
+- `client.get_paginator("describe_cluster_parameters")` ->
+  [DescribeClusterParametersPaginator](./paginators.md#describeclusterparameterspaginator)
+- `client.get_paginator("describe_cluster_security_groups")` ->
+  [DescribeClusterSecurityGroupsPaginator](./paginators.md#describeclustersecuritygroupspaginator)
+- `client.get_paginator("describe_cluster_snapshots")` ->
+  [DescribeClusterSnapshotsPaginator](./paginators.md#describeclustersnapshotspaginator)
+- `client.get_paginator("describe_cluster_subnet_groups")` ->
+  [DescribeClusterSubnetGroupsPaginator](./paginators.md#describeclustersubnetgroupspaginator)
+- `client.get_paginator("describe_cluster_tracks")` ->
+  [DescribeClusterTracksPaginator](./paginators.md#describeclustertrackspaginator)
+- `client.get_paginator("describe_cluster_versions")` ->
+  [DescribeClusterVersionsPaginator](./paginators.md#describeclusterversionspaginator)
+- `client.get_paginator("describe_clusters")` ->
+  [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- `client.get_paginator("describe_default_cluster_parameters")` ->
+  [DescribeDefaultClusterParametersPaginator](./paginators.md#describedefaultclusterparameterspaginator)
+- `client.get_paginator("describe_endpoint_access")` ->
+  [DescribeEndpointAccessPaginator](./paginators.md#describeendpointaccesspaginator)
+- `client.get_paginator("describe_endpoint_authorization")` ->
+  [DescribeEndpointAuthorizationPaginator](./paginators.md#describeendpointauthorizationpaginator)
+- `client.get_paginator("describe_event_subscriptions")` ->
+  [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+- `client.get_paginator("describe_events")` ->
+  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_hsm_client_certificates")` ->
+  [DescribeHsmClientCertificatesPaginator](./paginators.md#describehsmclientcertificatespaginator)
+- `client.get_paginator("describe_hsm_configurations")` ->
+  [DescribeHsmConfigurationsPaginator](./paginators.md#describehsmconfigurationspaginator)
+- `client.get_paginator("describe_node_configuration_options")` ->
+  [DescribeNodeConfigurationOptionsPaginator](./paginators.md#describenodeconfigurationoptionspaginator)
+- `client.get_paginator("describe_orderable_cluster_options")` ->
+  [DescribeOrderableClusterOptionsPaginator](./paginators.md#describeorderableclusteroptionspaginator)
+- `client.get_paginator("describe_reserved_node_offerings")` ->
+  [DescribeReservedNodeOfferingsPaginator](./paginators.md#describereservednodeofferingspaginator)
+- `client.get_paginator("describe_reserved_nodes")` ->
+  [DescribeReservedNodesPaginator](./paginators.md#describereservednodespaginator)
+- `client.get_paginator("describe_scheduled_actions")` ->
+  [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+- `client.get_paginator("describe_snapshot_copy_grants")` ->
+  [DescribeSnapshotCopyGrantsPaginator](./paginators.md#describesnapshotcopygrantspaginator)
+- `client.get_paginator("describe_snapshot_schedules")` ->
+  [DescribeSnapshotSchedulesPaginator](./paginators.md#describesnapshotschedulespaginator)
+- `client.get_paginator("describe_table_restore_status")` ->
+  [DescribeTableRestoreStatusPaginator](./paginators.md#describetablerestorestatuspaginator)
+- `client.get_paginator("describe_tags")` ->
+  [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+- `client.get_paginator("describe_usage_limits")` ->
+  [DescribeUsageLimitsPaginator](./paginators.md#describeusagelimitspaginator)
+- `client.get_paginator("get_reserved_node_exchange_offerings")` ->
+  [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("redshift").get_waiter` method with overloads.
+Type annotations for `boto3.client("redshift").get_waiter` method with
+overloads.
 
-- `client.get_waiter("cluster_available")` -> [ClusterAvailableWaiter](./waiters.md#clusteravailablewaiter)
-- `client.get_waiter("cluster_deleted")` -> [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
-- `client.get_waiter("cluster_restored")` -> [ClusterRestoredWaiter](./waiters.md#clusterrestoredwaiter)
-- `client.get_waiter("snapshot_available")` -> [SnapshotAvailableWaiter](./waiters.md#snapshotavailablewaiter)
+- `client.get_waiter("cluster_available")` ->
+  [ClusterAvailableWaiter](./waiters.md#clusteravailablewaiter)
+- `client.get_waiter("cluster_deleted")` ->
+  [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- `client.get_waiter("cluster_restored")` ->
+  [ClusterRestoredWaiter](./waiters.md#clusterrestoredwaiter)
+- `client.get_waiter("snapshot_available")` ->
+  [SnapshotAvailableWaiter](./waiters.md#snapshotavailablewaiter)

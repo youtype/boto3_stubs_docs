@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AppIntegrationsService
 
-Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
-type annotations stubs module [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+Auto-generated documentation for
+[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+type annotations stubs module
+[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 ```bash
 pip install mypy-boto3-appintegrations
@@ -17,7 +19,8 @@ pip install mypy-boto3-appintegrations
 
 ## AppIntegrationsServiceClient
 
-Type annotations for  `boto3.client("appintegrations")` as [AppIntegrationsServiceClient](./client.md)
+Type annotations for `boto3.client("appintegrations")` as
+[AppIntegrationsServiceClient](./client.md)
 
 Can be used directly:
 
@@ -25,12 +28,10 @@ Can be used directly:
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 ```
 
-
 AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_event_integration](./client.md#create-event-integration)
 - [delete_event_integration](./client.md#delete-event-integration)
@@ -43,10 +44,8 @@ AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_event_integration](./client.md#update-event-integration)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [DuplicateResourceException](./client.md#duplicateresourceexception)
@@ -56,21 +55,10 @@ AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 - [ResourceQuotaExceededException](./client.md#resourcequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 
-
-
-
-
-
-
-
-
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

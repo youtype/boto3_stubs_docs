@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SecurityHub
 
-Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+Auto-generated documentation for
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+type annotations stubs module
+[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 ```bash
 pip install mypy-boto3-securityhub
@@ -19,7 +21,8 @@ pip install mypy-boto3-securityhub
 
 ## SecurityHubClient
 
-Type annotations for  `boto3.client("securityhub")` as [SecurityHubClient](./client.md)
+Type annotations for `boto3.client("securityhub")` as
+[SecurityHubClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_securityhub.client import SecurityHubClient
 ```
 
-
 SecurityHubClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_administrator_invitation](./client.md#accept-administrator-invitation)
 - [accept_invitation](./client.md#accept-invitation)
 - [batch_disable_standards](./client.md#batch-disable-standards)
@@ -88,10 +89,8 @@ SecurityHubClient [exceptions](./client.md#exceptions)
 - [update_security_hub_configuration](./client.md#update-security-hub-configuration)
 - [update_standards_control](./client.md#update-standards-control)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalException](./client.md#internalexception)
@@ -101,14 +100,10 @@ SecurityHubClient [exceptions](./client.md#exceptions)
 - [ResourceConflictException](./client.md#resourceconflictexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("securityhub").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("securityhub").get_paginator("...")`.
 
 Can be used directly:
 
@@ -122,11 +117,6 @@ from mypy_boto3_securityhub.paginators import GetEnabledStandardsPaginator, ...
 - [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
 - [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -167,13 +157,10 @@ from mypy_boto3_securityhub.literals import AdminStatus, ...
 - [WorkflowState](./literals.md#workflowstate)
 - [WorkflowStatus](./literals.md#workflowstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 
@@ -244,6 +231,9 @@ from mypy_boto3_securityhub.type_defs import AccountDetailsTypeDef, ...
 - [AwsDynamoDbTableStreamSpecificationTypeDef](./type_defs.md#awsdynamodbtablestreamspecificationtypedef)
 - [AwsEc2EipDetailsTypeDef](./type_defs.md#awsec2eipdetailstypedef)
 - [AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef)
+- [AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef)
+- [AwsEc2NetworkAclDetailsTypeDef](./type_defs.md#awsec2networkacldetailstypedef)
+- [AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef)
 - [AwsEc2NetworkInterfaceAttachmentTypeDef](./type_defs.md#awsec2networkinterfaceattachmenttypedef)
 - [AwsEc2NetworkInterfaceDetailsTypeDef](./type_defs.md#awsec2networkinterfacedetailstypedef)
 - [AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef)
@@ -255,9 +245,14 @@ from mypy_boto3_securityhub.type_defs import AccountDetailsTypeDef, ...
 - [AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef)
 - [AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef)
 - [AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef)
+- [AwsEc2SubnetDetailsTypeDef](./type_defs.md#awsec2subnetdetailstypedef)
 - [AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef)
 - [AwsEc2VolumeDetailsTypeDef](./type_defs.md#awsec2volumedetailstypedef)
 - [AwsEc2VpcDetailsTypeDef](./type_defs.md#awsec2vpcdetailstypedef)
+- [AwsElasticBeanstalkEnvironmentDetailsTypeDef](./type_defs.md#awselasticbeanstalkenvironmentdetailstypedef)
+- [AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef)
+- [AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef)
+- [AwsElasticBeanstalkEnvironmentTierTypeDef](./type_defs.md#awselasticbeanstalkenvironmenttiertypedef)
 - [AwsElasticsearchDomainDetailsTypeDef](./type_defs.md#awselasticsearchdomaindetailstypedef)
 - [AwsElasticsearchDomainDomainEndpointOptionsTypeDef](./type_defs.md#awselasticsearchdomaindomainendpointoptionstypedef)
 - [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef)
@@ -405,6 +400,7 @@ from mypy_boto3_securityhub.type_defs import AccountDetailsTypeDef, ...
 - [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef)
 - [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef)
 - [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef)
+- [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
 - [ImportFindingsErrorTypeDef](./type_defs.md#importfindingserrortypedef)
 - [InsightResultValueTypeDef](./type_defs.md#insightresultvaluetypedef)
 - [InsightResultsTypeDef](./type_defs.md#insightresultstypedef)
@@ -438,6 +434,7 @@ from mypy_boto3_securityhub.type_defs import AccountDetailsTypeDef, ...
 - [PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef)
 - [PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef)
 - [PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)
+- [PortRangeFromToTypeDef](./type_defs.md#portrangefromtotypedef)
 - [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - [ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef)
 - [ProductTypeDef](./type_defs.md#producttypedef)

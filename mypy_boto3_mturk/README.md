@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MTurk
 
-Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+Auto-generated documentation for
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+type annotations stubs module
+[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ```bash
 pip install mypy-boto3-mturk
@@ -19,7 +21,7 @@ pip install mypy-boto3-mturk
 
 ## MTurkClient
 
-Type annotations for  `boto3.client("mturk")` as [MTurkClient](./client.md)
+Type annotations for `boto3.client("mturk")` as [MTurkClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mturk.client import MTurkClient
 ```
 
-
 MTurkClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_qualification_request](./client.md#accept-qualification-request)
 - [approve_assignment](./client.md#approve-assignment)
 - [associate_qualification_with_worker](./client.md#associate-qualification-with-worker)
@@ -76,22 +76,16 @@ MTurkClient [exceptions](./client.md#exceptions)
 - [update_notification_settings](./client.md#update-notification-settings)
 - [update_qualification_type](./client.md#update-qualification-type)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [RequestError](./client.md#requesterror)
 - [ServiceFault](./client.md#servicefault)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mturk").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mturk").get_paginator("...")`.
 
 Can be used directly:
 
@@ -108,11 +102,6 @@ from mypy_boto3_mturk.paginators import ListAssignmentsForHITPaginator, ...
 - [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
 - [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
 - [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -147,13 +136,10 @@ from mypy_boto3_mturk.literals import AssignmentStatus, ...
 - [ReviewPolicyLevel](./literals.md#reviewpolicylevel)
 - [ReviewableHITStatus](./literals.md#reviewablehitstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

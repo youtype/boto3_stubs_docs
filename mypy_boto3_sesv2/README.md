@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SESV2
 
-Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
-type annotations stubs module [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+Auto-generated documentation for
+[SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
+type annotations stubs module
+[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 ```bash
 pip install mypy-boto3-sesv2
@@ -18,7 +20,7 @@ pip install mypy-boto3-sesv2
 
 ## SESV2Client
 
-Type annotations for  `boto3.client("sesv2")` as [SESV2Client](./client.md)
+Type annotations for `boto3.client("sesv2")` as [SESV2Client](./client.md)
 
 Can be used directly:
 
@@ -26,12 +28,10 @@ Can be used directly:
 from mypy_boto3_sesv2.client import SESV2Client
 ```
 
-
 SESV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_configuration_set](./client.md#create-configuration-set)
 - [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
@@ -116,10 +116,8 @@ SESV2Client [exceptions](./client.md#exceptions)
 - [update_email_identity_policy](./client.md#update-email-identity-policy)
 - [update_email_template](./client.md#update-email-template)
 
-
-
-
 ### Exceptions
+
 - [AccountSuspendedException](./client.md#accountsuspendedexception)
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [BadRequestException](./client.md#badrequestexception)
@@ -133,15 +131,6 @@ SESV2Client [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [SendingPausedException](./client.md#sendingpausedexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -176,13 +165,10 @@ from mypy_boto3_sesv2.literals import BehaviorOnMxFailure, ...
 - [TlsPolicy](./literals.md#tlspolicy)
 - [WarmupStatus](./literals.md#warmupstatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

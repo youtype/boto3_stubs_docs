@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > GreengrassV2
 
-Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
-type annotations stubs module [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+Auto-generated documentation for
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+type annotations stubs module
+[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ```bash
 pip install mypy-boto3-greengrassv2
@@ -19,7 +21,8 @@ pip install mypy-boto3-greengrassv2
 
 ## GreengrassV2Client
 
-Type annotations for  `boto3.client("greengrassv2")` as [GreengrassV2Client](./client.md)
+Type annotations for `boto3.client("greengrassv2")` as
+[GreengrassV2Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 ```
 
-
 GreengrassV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_deployment](./client.md#cancel-deployment)
 - [create_component_version](./client.md#create-component-version)
@@ -57,10 +58,8 @@ GreengrassV2Client [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -70,14 +69,10 @@ GreengrassV2Client [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("greengrassv2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("greengrassv2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -91,11 +86,6 @@ from mypy_boto3_greengrassv2.paginators import ListComponentVersionsPaginator, .
 - [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
 - [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
 - [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -131,13 +121,10 @@ from mypy_boto3_greengrassv2.literals import CloudComponentState, ...
 - [ListInstalledComponentsPaginatorName](./literals.md#listinstalledcomponentspaginatorname)
 - [RecipeOutputFormat](./literals.md#recipeoutputformat)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

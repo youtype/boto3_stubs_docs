@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [GlobalAccelerator](./README.md) > Paginators
 
-Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+Auto-generated documentation for
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+type annotations stubs module
+[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Paginators for boto3 GlobalAccelerator module](#paginators-for-boto3-globalaccelerator-module)
   - [ListAcceleratorsPaginator](#listacceleratorspaginator)
@@ -17,7 +19,8 @@ type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/pr
 
 ## ListAcceleratorsPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_accelerators")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_accelerators")`.
 
 Can be used directly:
 
@@ -28,19 +31,21 @@ def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_accelerators")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
 
-```python
-class ListAcceleratorsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListAcceleratorsResponseTypeDef]:
-        pass
-```
+Arguments for `ListAcceleratorsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListAcceleratorsPaginator.paginate` returns
+`Iterator`\[[ListAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listacceleratorsresponsetypedef)\].
+
 ## ListByoipCidrsPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")`.
 
 Can be used directly:
 
@@ -51,19 +56,21 @@ def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
 
-```python
-class ListByoipCidrsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListByoipCidrsResponseTypeDef]:
-        pass
-```
+Arguments for `ListByoipCidrsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListByoipCidrsPaginator.paginate` returns
+`Iterator`\[[ListByoipCidrsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listbyoipcidrsresponsetypedef)\].
+
 ## ListCustomRoutingAcceleratorsPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")`.
 
 Can be used directly:
 
@@ -74,19 +81,21 @@ def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceler
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListCustomRoutingAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
 
-```python
-class ListCustomRoutingAcceleratorsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomRoutingAcceleratorsResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomRoutingAcceleratorsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomRoutingAcceleratorsPaginator.paginate` returns
+`Iterator`\[[ListCustomRoutingAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingacceleratorsresponsetypedef)\].
+
 ## ListCustomRoutingListenersPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")`.
 
 Can be used directly:
 
@@ -97,20 +106,22 @@ def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersP
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListCustomRoutingListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
 
-```python
-class ListCustomRoutingListenersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceleratorArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomRoutingListenersResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomRoutingListenersPaginator.paginate` method:
+
+- `AcceleratorArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomRoutingListenersPaginator.paginate` returns
+`Iterator`\[[ListCustomRoutingListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutinglistenersresponsetypedef)\].
+
 ## ListCustomRoutingPortMappingsPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")`.
 
 Can be used directly:
 
@@ -121,21 +132,23 @@ def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMa
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListCustomRoutingPortMappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
 
-```python
-class ListCustomRoutingPortMappingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceleratorArn: str,
-        EndpointGroupArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomRoutingPortMappingsResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomRoutingPortMappingsPaginator.paginate` method:
+
+- `AcceleratorArn`: `str` *(required)*
+- `EndpointGroupArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomRoutingPortMappingsPaginator.paginate` returns
+`Iterator`\[[ListCustomRoutingPortMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsresponsetypedef)\].
+
 ## ListCustomRoutingPortMappingsByDestinationPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")`.
 
 Can be used directly:
 
@@ -146,21 +159,24 @@ def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCust
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
 
-```python
-class ListCustomRoutingPortMappingsByDestinationPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        EndpointId: str,
-        DestinationAddress: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCustomRoutingPortMappingsByDestinationResponseTypeDef]:
-        pass
-```
+Arguments for `ListCustomRoutingPortMappingsByDestinationPaginator.paginate`
+method:
+
+- `EndpointId`: `str` *(required)*
+- `DestinationAddress`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListCustomRoutingPortMappingsByDestinationPaginator.paginate` returns
+`Iterator`\[[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsbydestinationresponsetypedef)\].
+
 ## ListEndpointGroupsPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")`.
 
 Can be used directly:
 
@@ -171,20 +187,22 @@ def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
 
-```python
-class ListEndpointGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ListenerArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListEndpointGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `ListEndpointGroupsPaginator.paginate` method:
+
+- `ListenerArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListEndpointGroupsPaginator.paginate` returns
+`Iterator`\[[ListEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listendpointgroupsresponsetypedef)\].
+
 ## ListListenersPaginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator("list_listeners")`.
+Type annotations for
+`boto3.client("globalaccelerator").get_paginator("list_listeners")`.
 
 Can be used directly:
 
@@ -195,14 +213,14 @@ def get_list_listeners_paginator() -> ListListenersPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_listeners")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
+Boto3 documentation:
+[GlobalAccelerator.Paginator.ListListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
 
-```python
-class ListListenersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        AcceleratorArn: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListListenersResponseTypeDef]:
-        pass
-```
+Arguments for `ListListenersPaginator.paginate` method:
+
+- `AcceleratorArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+
+`ListListenersPaginator.paginate` returns
+`Iterator`\[[ListListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listlistenersresponsetypedef)\].

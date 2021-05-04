@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Schemas](./README.md) > Paginators
 
-Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+Auto-generated documentation for
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+type annotations stubs module
+[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Paginators for boto3 Schemas module](#paginators-for-boto3-schemas-module)
   - [ListDiscoverersPaginator](#listdiscovererspaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy
 
 ## ListDiscoverersPaginator
 
-Type annotations for `boto3.client("schemas").get_paginator("list_discoverers")`.
+Type annotations for
+`boto3.client("schemas").get_paginator("list_discoverers")`.
 
 Can be used directly:
 
@@ -25,21 +28,23 @@ def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
     return boto3.client("schemas").get_paginator("list_discoverers")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
+Boto3 documentation:
+[Schemas.Paginator.ListDiscoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
 
-```python
-class ListDiscoverersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DiscovererIdPrefix: str = None,
-        SourceArnPrefix: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDiscoverersResponseTypeDef]:
-        pass
-```
+Arguments for `ListDiscoverersPaginator.paginate` method:
+
+- `DiscovererIdPrefix`: `str`
+- `SourceArnPrefix`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+
+`ListDiscoverersPaginator.paginate` returns
+`Iterator`\[[ListDiscoverersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listdiscoverersresponsetypedef)\].
+
 ## ListRegistriesPaginator
 
-Type annotations for `boto3.client("schemas").get_paginator("list_registries")`.
+Type annotations for
+`boto3.client("schemas").get_paginator("list_registries")`.
 
 Can be used directly:
 
@@ -50,21 +55,23 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return boto3.client("schemas").get_paginator("list_registries")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
+Boto3 documentation:
+[Schemas.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
 
-```python
-class ListRegistriesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RegistryNamePrefix: str = None,
-        Scope: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListRegistriesResponseTypeDef]:
-        pass
-```
+Arguments for `ListRegistriesPaginator.paginate` method:
+
+- `RegistryNamePrefix`: `str`
+- `Scope`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+
+`ListRegistriesPaginator.paginate` returns
+`Iterator`\[[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listregistriesresponsetypedef)\].
+
 ## ListSchemaVersionsPaginator
 
-Type annotations for `boto3.client("schemas").get_paginator("list_schema_versions")`.
+Type annotations for
+`boto3.client("schemas").get_paginator("list_schema_versions")`.
 
 Can be used directly:
 
@@ -75,18 +82,19 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return boto3.client("schemas").get_paginator("list_schema_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
+Boto3 documentation:
+[Schemas.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
 
-```python
-class ListSchemaVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RegistryName: str,
-        SchemaName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSchemaVersionsResponseTypeDef]:
-        pass
-```
+Arguments for `ListSchemaVersionsPaginator.paginate` method:
+
+- `RegistryName`: `str` *(required)*
+- `SchemaName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+
+`ListSchemaVersionsPaginator.paginate` returns
+`Iterator`\[[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemaversionsresponsetypedef)\].
+
 ## ListSchemasPaginator
 
 Type annotations for `boto3.client("schemas").get_paginator("list_schemas")`.
@@ -100,18 +108,19 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("schemas").get_paginator("list_schemas")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
+Boto3 documentation:
+[Schemas.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
 
-```python
-class ListSchemasPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RegistryName: str,
-        SchemaNamePrefix: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListSchemasResponseTypeDef]:
-        pass
-```
+Arguments for `ListSchemasPaginator.paginate` method:
+
+- `RegistryName`: `str` *(required)*
+- `SchemaNamePrefix`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+
+`ListSchemasPaginator.paginate` returns
+`Iterator`\[[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemasresponsetypedef)\].
+
 ## SearchSchemasPaginator
 
 Type annotations for `boto3.client("schemas").get_paginator("search_schemas")`.
@@ -125,15 +134,15 @@ def get_search_schemas_paginator() -> SearchSchemasPaginator:
     return boto3.client("schemas").get_paginator("search_schemas")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
+Boto3 documentation:
+[Schemas.Paginator.SearchSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
 
-```python
-class SearchSchemasPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Keywords: str,
-        RegistryName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SearchSchemasResponseTypeDef]:
-        pass
-```
+Arguments for `SearchSchemasPaginator.paginate` method:
+
+- `Keywords`: `str` *(required)*
+- `RegistryName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+
+`SearchSchemasPaginator.paginate` returns
+`Iterator`\[[SearchSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#searchschemasresponsetypedef)\].

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LexModelBuildingService
 
-Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
+Auto-generated documentation for
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+type annotations stubs module
+[mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 ```bash
 pip install mypy-boto3-lex-models
@@ -19,7 +21,8 @@ pip install mypy-boto3-lex-models
 
 ## LexModelBuildingServiceClient
 
-Type annotations for  `boto3.client("lex-models")` as [LexModelBuildingServiceClient](./client.md)
+Type annotations for `boto3.client("lex-models")` as
+[LexModelBuildingServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 ```
 
-
 LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_bot_version](./client.md#create-bot-version)
 - [create_intent_version](./client.md#create-intent-version)
@@ -76,10 +77,8 @@ LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -89,14 +88,10 @@ LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
 - [PreconditionFailedException](./client.md#preconditionfailedexception)
 - [ResourceInUseException](./client.md#resourceinuseexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("lex-models").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("lex-models").get_paginator("...")`.
 
 Can be used directly:
 
@@ -114,11 +109,6 @@ from mypy_boto3_lex_models.paginators import GetBotAliasesPaginator, ...
 - [GetIntentsPaginator](./paginators.md#getintentspaginator)
 - [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
 - [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -159,13 +149,10 @@ from mypy_boto3_lex_models.literals import ChannelStatus, ...
 - [Status](./literals.md#status)
 - [StatusType](./literals.md#statustype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PI](./README.md) > Structures
 
-Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+Auto-generated documentation for
+[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+type annotations stubs module
+[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [Typed dictionaries for boto3 PI module](#typed-dictionaries-for-boto3-pi-module)
   - [DataPointTypeDef](#datapointtypedef)
@@ -22,13 +24,10 @@ type annotations stubs module [mypy_boto3_pi](https://pypi.org/project/mypy-boto
 from mypy_boto3_pi.type_defs import DataPointTypeDef
 ```
 
-
 Required fields:
+
 - `Timestamp`: `datetime`
 - `Value`: `float`
-
-
-
 
 ## DescribeDimensionKeysResponseTypeDef
 
@@ -36,16 +35,15 @@ Required fields:
 from mypy_boto3_pi.type_defs import DescribeDimensionKeysResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlignedStartTime`: `datetime`
 - `AlignedEndTime`: `datetime`
-- `PartitionKeys`: `List["ResponsePartitionKeyTypeDef"]`
-- `Keys`: `List["DimensionKeyDescriptionTypeDef"]`
+- `PartitionKeys`:
+  `List`\[[ResponsePartitionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#responsepartitionkeytypedef)\]
+- `Keys`:
+  `List`\[[DimensionKeyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensionkeydescriptiontypedef)\]
 - `NextToken`: `str`
-
 
 ## DimensionGroupTypeDef
 
@@ -53,16 +51,14 @@ Optional fields:
 from mypy_boto3_pi.type_defs import DimensionGroupTypeDef
 ```
 
-
 Required fields:
+
 - `Group`: `str`
 
-
-
 Optional fields:
-- `Dimensions`: `List[str]`
-- `Limit`: `int`
 
+- `Dimensions`: `List`\[`str`\]
+- `Limit`: `int`
 
 ## DimensionKeyDescriptionTypeDef
 
@@ -70,14 +66,11 @@ Optional fields:
 from mypy_boto3_pi.type_defs import DimensionKeyDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dimensions`: `Dict[str, str]`
-- `Total`: `float`
-- `Partitions`: `List[float]`
 
+- `Dimensions`: `Dict`\[`str`, `str`\]
+- `Total`: `float`
+- `Partitions`: `List`\[`float`\]
 
 ## GetResourceMetricsResponseTypeDef
 
@@ -85,16 +78,14 @@ Optional fields:
 from mypy_boto3_pi.type_defs import GetResourceMetricsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AlignedStartTime`: `datetime`
 - `AlignedEndTime`: `datetime`
 - `Identifier`: `str`
-- `MetricList`: `List["MetricKeyDataPointsTypeDef"]`
+- `MetricList`:
+  `List`\[[MetricKeyDataPointsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#metrickeydatapointstypedef)\]
 - `NextToken`: `str`
-
 
 ## MetricKeyDataPointsTypeDef
 
@@ -102,13 +93,12 @@ Optional fields:
 from mypy_boto3_pi.type_defs import MetricKeyDataPointsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `"ResponseResourceMetricKeyTypeDef"`
-- `DataPoints`: `List["DataPointTypeDef"]`
 
+- `Key`:
+  [ResponseResourceMetricKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#responseresourcemetrickeytypedef)
+- `DataPoints`:
+  `List`\[[DataPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#datapointtypedef)\]
 
 ## MetricQueryTypeDef
 
@@ -116,16 +106,15 @@ Optional fields:
 from mypy_boto3_pi.type_defs import MetricQueryTypeDef
 ```
 
-
 Required fields:
+
 - `Metric`: `str`
 
-
-
 Optional fields:
-- `GroupBy`: `"DimensionGroupTypeDef"`
-- `Filter`: `Dict[str, str]`
 
+- `GroupBy`:
+  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+- `Filter`: `Dict`\[`str`, `str`\]
 
 ## ResponsePartitionKeyTypeDef
 
@@ -133,12 +122,9 @@ Optional fields:
 from mypy_boto3_pi.type_defs import ResponsePartitionKeyTypeDef
 ```
 
-
 Required fields:
-- `Dimensions`: `Dict[str, str]`
 
-
-
+- `Dimensions`: `Dict`\[`str`, `str`\]
 
 ## ResponseResourceMetricKeyTypeDef
 
@@ -146,12 +132,10 @@ Required fields:
 from mypy_boto3_pi.type_defs import ResponseResourceMetricKeyTypeDef
 ```
 
-
 Required fields:
+
 - `Metric`: `str`
 
-
-
 Optional fields:
-- `Dimensions`: `Dict[str, str]`
 
+- `Dimensions`: `Dict`\[`str`, `str`\]

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [STS](./README.md) > Structures
 
-Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+Auto-generated documentation for
+[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+type annotations stubs module
+[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [Typed dictionaries for boto3 STS module](#typed-dictionaries-for-boto3-sts-module)
   - [AssumeRoleResponseTypeDef](#assumeroleresponsetypedef)
@@ -26,15 +28,14 @@ type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-bot
 from mypy_boto3_sts.type_defs import AssumeRoleResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
-- `AssumedRoleUser`: `"AssumedRoleUserTypeDef"`
+
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#credentialstypedef)
+- `AssumedRoleUser`:
+  [AssumedRoleUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumedroleusertypedef)
 - `PackedPolicySize`: `int`
 - `SourceIdentity`: `str`
-
 
 ## AssumeRoleWithSAMLResponseTypeDef
 
@@ -42,12 +43,12 @@ Optional fields:
 from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
-- `AssumedRoleUser`: `"AssumedRoleUserTypeDef"`
+
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#credentialstypedef)
+- `AssumedRoleUser`:
+  [AssumedRoleUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumedroleusertypedef)
 - `PackedPolicySize`: `int`
 - `Subject`: `str`
 - `SubjectType`: `str`
@@ -56,25 +57,23 @@ Optional fields:
 - `NameQualifier`: `str`
 - `SourceIdentity`: `str`
 
-
 ## AssumeRoleWithWebIdentityResponseTypeDef
 
 ```python
 from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
+
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#credentialstypedef)
 - `SubjectFromWebIdentityToken`: `str`
-- `AssumedRoleUser`: `"AssumedRoleUserTypeDef"`
+- `AssumedRoleUser`:
+  [AssumedRoleUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumedroleusertypedef)
 - `PackedPolicySize`: `int`
 - `Provider`: `str`
 - `Audience`: `str`
 - `SourceIdentity`: `str`
-
 
 ## AssumedRoleUserTypeDef
 
@@ -82,13 +81,10 @@ Optional fields:
 from mypy_boto3_sts.type_defs import AssumedRoleUserTypeDef
 ```
 
-
 Required fields:
+
 - `AssumedRoleId`: `str`
 - `Arn`: `str`
-
-
-
 
 ## CredentialsTypeDef
 
@@ -96,15 +92,12 @@ Required fields:
 from mypy_boto3_sts.type_defs import CredentialsTypeDef
 ```
 
-
 Required fields:
+
 - `AccessKeyId`: `str`
 - `SecretAccessKey`: `str`
 - `SessionToken`: `str`
 - `Expiration`: `datetime`
-
-
-
 
 ## DecodeAuthorizationMessageResponseTypeDef
 
@@ -112,12 +105,9 @@ Required fields:
 from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DecodedMessage`: `str`
 
+- `DecodedMessage`: `str`
 
 ## FederatedUserTypeDef
 
@@ -125,13 +115,10 @@ Optional fields:
 from mypy_boto3_sts.type_defs import FederatedUserTypeDef
 ```
 
-
 Required fields:
+
 - `FederatedUserId`: `str`
 - `Arn`: `str`
-
-
-
 
 ## GetAccessKeyInfoResponseTypeDef
 
@@ -139,12 +126,9 @@ Required fields:
 from mypy_boto3_sts.type_defs import GetAccessKeyInfoResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Account`: `str`
 
+- `Account`: `str`
 
 ## GetCallerIdentityResponseTypeDef
 
@@ -152,14 +136,11 @@ Optional fields:
 from mypy_boto3_sts.type_defs import GetCallerIdentityResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `UserId`: `str`
 - `Account`: `str`
 - `Arn`: `str`
-
 
 ## GetFederationTokenResponseTypeDef
 
@@ -167,14 +148,13 @@ Optional fields:
 from mypy_boto3_sts.type_defs import GetFederationTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
-- `FederatedUser`: `"FederatedUserTypeDef"`
-- `PackedPolicySize`: `int`
 
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#credentialstypedef)
+- `FederatedUser`:
+  [FederatedUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#federatedusertypedef)
+- `PackedPolicySize`: `int`
 
 ## GetSessionTokenResponseTypeDef
 
@@ -182,12 +162,10 @@ Optional fields:
 from mypy_boto3_sts.type_defs import GetSessionTokenResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Credentials`: `"CredentialsTypeDef"`
 
+- `Credentials`:
+  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#credentialstypedef)
 
 ## PolicyDescriptorTypeTypeDef
 
@@ -195,12 +173,9 @@ Optional fields:
 from mypy_boto3_sts.type_defs import PolicyDescriptorTypeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `arn`: `str`
 
+- `arn`: `str`
 
 ## TagTypeDef
 
@@ -208,10 +183,7 @@ Optional fields:
 from mypy_boto3_sts.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > RDSDataService
 
-Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
-type annotations stubs module [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+Auto-generated documentation for
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+type annotations stubs module
+[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 ```bash
 pip install mypy-boto3-rds-data
@@ -18,7 +20,8 @@ pip install mypy-boto3-rds-data
 
 ## RDSDataServiceClient
 
-Type annotations for  `boto3.client("rds-data")` as [RDSDataServiceClient](./client.md)
+Type annotations for `boto3.client("rds-data")` as
+[RDSDataServiceClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 ```
 
-
 RDSDataServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_execute_statement](./client.md#batch-execute-statement)
 - [begin_transaction](./client.md#begin-transaction)
 - [can_paginate](./client.md#can-paginate)
@@ -41,10 +42,8 @@ RDSDataServiceClient [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate-presigned-url)
 - [rollback_transaction](./client.md#rollback-transaction)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ForbiddenException](./client.md#forbiddenexception)
@@ -52,15 +51,6 @@ RDSDataServiceClient [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [ServiceUnavailableError](./client.md#serviceunavailableerror)
 - [StatementTimeoutException](./client.md#statementtimeoutexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -75,13 +65,10 @@ from mypy_boto3_rds_data.literals import DecimalReturnType, ...
 - [DecimalReturnType](./literals.md#decimalreturntype)
 - [TypeHint](./literals.md#typehint)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

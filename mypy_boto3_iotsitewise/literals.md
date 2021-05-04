@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Literals
 
-Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+Auto-generated documentation for
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+type annotations stubs module
+[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Literals for boto3 IoTSiteWise module](#literals-for-boto3-iotsitewise-module)
   - [AggregateType](#aggregatetype)

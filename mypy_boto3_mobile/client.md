@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Mobile](./README.md) > MobileClient
 
-Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+Auto-generated documentation for
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+type annotations stubs module
+[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [MobileClient for boto3 Mobile module](#mobileclient-for-boto3-mobile-module)
   - [MobileClient](#mobileclient)
@@ -35,12 +37,13 @@ def get_mobile_client() -> MobileClient:
     return boto3.client("mobile")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
+Boto3 documentation:
+[Mobile.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mobile.client import Exceptions
@@ -48,7 +51,6 @@ from mypy_boto3_mobile.client import Exceptions
 def handle_error(exc: Exceptions.AccountActionRequiredException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -62,183 +64,179 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mobile").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate]
+Boto3 documentation:
+[Mobile.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_project
 
 Type annotations for `boto3.client("mobile").create_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project]
+Boto3 documentation:
+[Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
 
-```python
-def create_project(
-    self,
-    name: str = None,
-    region: str = None,
-    contents: Union[bytes, IO[bytes]] = None,
-    snapshotId: str = None
-) -> CreateProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str`
+- `region`: `str`
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `snapshotId`: `str`
+
+Returns
+[CreateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#createprojectresulttypedef).
 
 ### delete_project
 
 Type annotations for `boto3.client("mobile").delete_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project]
+Boto3 documentation:
+[Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    projectId: str
-) -> DeleteProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+
+Returns
+[DeleteProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#deleteprojectresulttypedef).
 
 ### describe_bundle
 
 Type annotations for `boto3.client("mobile").describe_bundle` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle]
+Boto3 documentation:
+[Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
-```python
-def describe_bundle(
-    self,
-    bundleId: str
-) -> DescribeBundleResultTypeDef:
-    pass
-```
+Arguments:
+
+- `bundleId`: `str` *(required)*
+
+Returns
+[DescribeBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#describebundleresulttypedef).
 
 ### describe_project
 
 Type annotations for `boto3.client("mobile").describe_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project]
+Boto3 documentation:
+[Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
 
-```python
-def describe_project(
-    self,
-    projectId: str,
-    syncFromResources: bool = None
-) -> DescribeProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `syncFromResources`: `bool`
+
+Returns
+[DescribeProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#describeprojectresulttypedef).
 
 ### export_bundle
 
 Type annotations for `boto3.client("mobile").export_bundle` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle]
+Boto3 documentation:
+[Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
 
-```python
-def export_bundle(
-    self,
-    bundleId: str,
-    projectId: str = None,
-    platform: Platform = None
-) -> ExportBundleResultTypeDef:
-    pass
-```
+Arguments:
+
+- `bundleId`: `str` *(required)*
+- `projectId`: `str`
+- `platform`:
+  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/literals.html#platform)
+
+Returns
+[ExportBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#exportbundleresulttypedef).
 
 ### export_project
 
 Type annotations for `boto3.client("mobile").export_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project]
+Boto3 documentation:
+[Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
 
-```python
-def export_project(
-    self,
-    projectId: str
-) -> ExportProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+
+Returns
+[ExportProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#exportprojectresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mobile").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url]
+Boto3 documentation:
+[Mobile.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_bundles
 
 Type annotations for `boto3.client("mobile").list_bundles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles]
+Boto3 documentation:
+[Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
 
-```python
-def list_bundles(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListBundlesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listbundlesresulttypedef).
 
 ### list_projects
 
 Type annotations for `boto3.client("mobile").list_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects]
+Boto3 documentation:
+[Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
 
-```python
-def list_projects(
-    self,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListProjectsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listprojectsresulttypedef).
 
 ### update_project
 
 Type annotations for `boto3.client("mobile").update_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project]
+Boto3 documentation:
+[Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
 
-```python
-def update_project(
-    self,
-    projectId: str,
-    contents: Union[bytes, IO[bytes]] = None
-) -> UpdateProjectResultTypeDef:
-    pass
-```
+Arguments:
 
+- `projectId`: `str` *(required)*
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
+Returns
+[UpdateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#updateprojectresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("mobile").get_paginator` method with overloads.
+Type annotations for `boto3.client("mobile").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_bundles")` -> [ListBundlesPaginator](./paginators.md#listbundlespaginator)
-- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-
-
+- `client.get_paginator("list_bundles")` ->
+  [ListBundlesPaginator](./paginators.md#listbundlespaginator)
+- `client.get_paginator("list_projects")` ->
+  [ListProjectsPaginator](./paginators.md#listprojectspaginator)

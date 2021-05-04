@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Imagebuilder](./README.md) > ImagebuilderClient
 
-Auto-generated documentation for [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
-type annotations stubs module [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+Auto-generated documentation for
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
+type annotations stubs module
+[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [ImagebuilderClient for boto3 Imagebuilder module](#imagebuilderclient-for-boto3-imagebuilder-module)
   - [ImagebuilderClient](#imagebuilderclient)
@@ -74,12 +76,13 @@ def get_imagebuilder_client() -> ImagebuilderClient:
     return boto3.client("imagebuilder")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client)
+Boto3 documentation:
+[Imagebuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_imagebuilder.client import Exceptions
@@ -87,7 +90,6 @@ from mypy_boto3_imagebuilder.client import Exceptions
 def handle_error(exc: Exceptions.CallRateLimitExceededException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -110,867 +112,930 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ServiceUnavailableException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("imagebuilder").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.can_paginate]
+Boto3 documentation:
+[Imagebuilder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_image_creation
 
-Type annotations for `boto3.client("imagebuilder").cancel_image_creation` method.
+Type annotations for `boto3.client("imagebuilder").cancel_image_creation`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.cancel_image_creation]
+Boto3 documentation:
+[Imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.cancel_image_creation)
 
-```python
-def cancel_image_creation(
-    self,
-    imageBuildVersionArn: str,
-    clientToken: str
-) -> CancelImageCreationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageBuildVersionArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+
+Returns
+[CancelImageCreationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#cancelimagecreationresponsetypedef).
 
 ### create_component
 
 Type annotations for `boto3.client("imagebuilder").create_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_component]
+Boto3 documentation:
+[Imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_component)
 
-```python
-def create_component(
-    self,
-    name: str,
-    semanticVersion: str,
-    platform: Platform,
-    clientToken: str,
-    description: str = None,
-    changeDescription: str = None,
-    supportedOsVersions: List[str] = None,
-    data: str = None,
-    uri: str = None,
-    kmsKeyId: str = None,
-    tags: Dict[str, str] = None
-) -> CreateComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `semanticVersion`: `str` *(required)*
+- `platform`:
+  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `changeDescription`: `str`
+- `supportedOsVersions`: `List`\[`str`\]
+- `data`: `str`
+- `uri`: `str`
+- `kmsKeyId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createcomponentresponsetypedef).
 
 ### create_container_recipe
 
-Type annotations for `boto3.client("imagebuilder").create_container_recipe` method.
+Type annotations for `boto3.client("imagebuilder").create_container_recipe`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_container_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_container_recipe)
 
-```python
-def create_container_recipe(
-    self,
-    containerType: Literal['DOCKER'],
-    name: str,
-    semanticVersion: str,
-    components: List["ComponentConfigurationTypeDef"],
-    parentImage: str,
-    targetRepository: "TargetContainerRepositoryTypeDef",
-    clientToken: str,
-    description: str = None,
-    instanceConfiguration: "InstanceConfigurationTypeDef" = None,
-    dockerfileTemplateData: str = None,
-    dockerfileTemplateUri: str = None,
-    platformOverride: Platform = None,
-    imageOsVersionOverride: str = None,
-    tags: Dict[str, str] = None,
-    workingDirectory: str = None,
-    kmsKeyId: str = None
-) -> CreateContainerRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerType`: `Literal['DOCKER']` *(required)*
+- `name`: `str` *(required)*
+- `semanticVersion`: `str` *(required)*
+- `components`:
+  `List`\[[ComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#componentconfigurationtypedef)\]
+  *(required)*
+- `parentImage`: `str` *(required)*
+- `targetRepository`:
+  [TargetContainerRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#targetcontainerrepositorytypedef)
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `instanceConfiguration`:
+  [InstanceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#instanceconfigurationtypedef)
+- `dockerfileTemplateData`: `str`
+- `dockerfileTemplateUri`: `str`
+- `platformOverride`:
+  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
+- `imageOsVersionOverride`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `workingDirectory`: `str`
+- `kmsKeyId`: `str`
+
+Returns
+[CreateContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createcontainerreciperesponsetypedef).
 
 ### create_distribution_configuration
 
-Type annotations for `boto3.client("imagebuilder").create_distribution_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").create_distribution_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_distribution_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_distribution_configuration)
 
-```python
-def create_distribution_configuration(
-    self,
-    name: str,
-    distributions: List["DistributionTypeDef"],
-    clientToken: str,
-    description: str = None,
-    tags: Dict[str, str] = None
-) -> CreateDistributionConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `distributions`:
+  `List`\[[DistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#distributiontypedef)\]
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createdistributionconfigurationresponsetypedef).
 
 ### create_image
 
 Type annotations for `boto3.client("imagebuilder").create_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image]
+Boto3 documentation:
+[Imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image)
 
-```python
-def create_image(
-    self,
-    infrastructureConfigurationArn: str,
-    clientToken: str,
-    imageRecipeArn: str = None,
-    containerRecipeArn: str = None,
-    distributionConfigurationArn: str = None,
-    imageTestsConfiguration: "ImageTestsConfigurationTypeDef" = None,
-    enhancedImageMetadataEnabled: bool = None,
-    tags: Dict[str, str] = None
-) -> CreateImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `infrastructureConfigurationArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `imageRecipeArn`: `str`
+- `containerRecipeArn`: `str`
+- `distributionConfigurationArn`: `str`
+- `imageTestsConfiguration`:
+  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+- `enhancedImageMetadataEnabled`: `bool`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimageresponsetypedef).
 
 ### create_image_pipeline
 
-Type annotations for `boto3.client("imagebuilder").create_image_pipeline` method.
+Type annotations for `boto3.client("imagebuilder").create_image_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_pipeline]
+Boto3 documentation:
+[Imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_pipeline)
 
-```python
-def create_image_pipeline(
-    self,
-    name: str,
-    infrastructureConfigurationArn: str,
-    clientToken: str,
-    description: str = None,
-    imageRecipeArn: str = None,
-    containerRecipeArn: str = None,
-    distributionConfigurationArn: str = None,
-    imageTestsConfiguration: "ImageTestsConfigurationTypeDef" = None,
-    enhancedImageMetadataEnabled: bool = None,
-    schedule: "ScheduleTypeDef" = None,
-    status: PipelineStatus = None,
-    tags: Dict[str, str] = None
-) -> CreateImagePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `infrastructureConfigurationArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `imageRecipeArn`: `str`
+- `containerRecipeArn`: `str`
+- `distributionConfigurationArn`: `str`
+- `imageTestsConfiguration`:
+  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+- `enhancedImageMetadataEnabled`: `bool`
+- `schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#scheduletypedef)
+- `status`:
+  [PipelineStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#pipelinestatus)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimagepipelineresponsetypedef).
 
 ### create_image_recipe
 
 Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_recipe)
 
-```python
-def create_image_recipe(
-    self,
-    name: str,
-    semanticVersion: str,
-    components: List["ComponentConfigurationTypeDef"],
-    parentImage: str,
-    clientToken: str,
-    description: str = None,
-    blockDeviceMappings: List["InstanceBlockDeviceMappingTypeDef"] = None,
-    tags: Dict[str, str] = None,
-    workingDirectory: str = None
-) -> CreateImageRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `semanticVersion`: `str` *(required)*
+- `components`:
+  `List`\[[ComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#componentconfigurationtypedef)\]
+  *(required)*
+- `parentImage`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `blockDeviceMappings`:
+  `List`\[[InstanceBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#instanceblockdevicemappingtypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
+- `workingDirectory`: `str`
+
+Returns
+[CreateImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimagereciperesponsetypedef).
 
 ### create_infrastructure_configuration
 
-Type annotations for `boto3.client("imagebuilder").create_infrastructure_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").create_infrastructure_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_infrastructure_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_infrastructure_configuration)
 
-```python
-def create_infrastructure_configuration(
-    self,
-    name: str,
-    instanceProfileName: str,
-    clientToken: str,
-    description: str = None,
-    instanceTypes: List[str] = None,
-    securityGroupIds: List[str] = None,
-    subnetId: str = None,
-    logging: "LoggingTypeDef" = None,
-    keyPair: str = None,
-    terminateInstanceOnFailure: bool = None,
-    snsTopicArn: str = None,
-    resourceTags: Dict[str, str] = None,
-    tags: Dict[str, str] = None
-) -> CreateInfrastructureConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `instanceProfileName`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `instanceTypes`: `List`\[`str`\]
+- `securityGroupIds`: `List`\[`str`\]
+- `subnetId`: `str`
+- `logging`:
+  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#loggingtypedef)
+- `keyPair`: `str`
+- `terminateInstanceOnFailure`: `bool`
+- `snsTopicArn`: `str`
+- `resourceTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createinfrastructureconfigurationresponsetypedef).
 
 ### delete_component
 
 Type annotations for `boto3.client("imagebuilder").delete_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_component]
+Boto3 documentation:
+[Imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_component)
 
-```python
-def delete_component(
-    self,
-    componentBuildVersionArn: str
-) -> DeleteComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `componentBuildVersionArn`: `str` *(required)*
+
+Returns
+[DeleteComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletecomponentresponsetypedef).
 
 ### delete_container_recipe
 
-Type annotations for `boto3.client("imagebuilder").delete_container_recipe` method.
+Type annotations for `boto3.client("imagebuilder").delete_container_recipe`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_container_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_container_recipe)
 
-```python
-def delete_container_recipe(
-    self,
-    containerRecipeArn: str
-) -> DeleteContainerRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerRecipeArn`: `str` *(required)*
+
+Returns
+[DeleteContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletecontainerreciperesponsetypedef).
 
 ### delete_distribution_configuration
 
-Type annotations for `boto3.client("imagebuilder").delete_distribution_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").delete_distribution_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_distribution_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_distribution_configuration)
 
-```python
-def delete_distribution_configuration(
-    self,
-    distributionConfigurationArn: str
-) -> DeleteDistributionConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionConfigurationArn`: `str` *(required)*
+
+Returns
+[DeleteDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletedistributionconfigurationresponsetypedef).
 
 ### delete_image
 
 Type annotations for `boto3.client("imagebuilder").delete_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image]
+Boto3 documentation:
+[Imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image)
 
-```python
-def delete_image(
-    self,
-    imageBuildVersionArn: str
-) -> DeleteImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageBuildVersionArn`: `str` *(required)*
+
+Returns
+[DeleteImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimageresponsetypedef).
 
 ### delete_image_pipeline
 
-Type annotations for `boto3.client("imagebuilder").delete_image_pipeline` method.
+Type annotations for `boto3.client("imagebuilder").delete_image_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_pipeline]
+Boto3 documentation:
+[Imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_pipeline)
 
-```python
-def delete_image_pipeline(
-    self,
-    imagePipelineArn: str
-) -> DeleteImagePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imagePipelineArn`: `str` *(required)*
+
+Returns
+[DeleteImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimagepipelineresponsetypedef).
 
 ### delete_image_recipe
 
 Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_recipe)
 
-```python
-def delete_image_recipe(
-    self,
-    imageRecipeArn: str
-) -> DeleteImageRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageRecipeArn`: `str` *(required)*
+
+Returns
+[DeleteImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimagereciperesponsetypedef).
 
 ### delete_infrastructure_configuration
 
-Type annotations for `boto3.client("imagebuilder").delete_infrastructure_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").delete_infrastructure_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_infrastructure_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_infrastructure_configuration)
 
-```python
-def delete_infrastructure_configuration(
-    self,
-    infrastructureConfigurationArn: str
-) -> DeleteInfrastructureConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `infrastructureConfigurationArn`: `str` *(required)*
+
+Returns
+[DeleteInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteinfrastructureconfigurationresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("imagebuilder").generate_presigned_url` method.
+Type annotations for `boto3.client("imagebuilder").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.generate_presigned_url]
+Boto3 documentation:
+[Imagebuilder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_component
 
 Type annotations for `boto3.client("imagebuilder").get_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component]
+Boto3 documentation:
+[Imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component)
 
-```python
-def get_component(
-    self,
-    componentBuildVersionArn: str
-) -> GetComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `componentBuildVersionArn`: `str` *(required)*
+
+Returns
+[GetComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcomponentresponsetypedef).
 
 ### get_component_policy
 
-Type annotations for `boto3.client("imagebuilder").get_component_policy` method.
+Type annotations for `boto3.client("imagebuilder").get_component_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component_policy]
+Boto3 documentation:
+[Imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component_policy)
 
-```python
-def get_component_policy(
-    self,
-    componentArn: str
-) -> GetComponentPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `componentArn`: `str` *(required)*
+
+Returns
+[GetComponentPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcomponentpolicyresponsetypedef).
 
 ### get_container_recipe
 
-Type annotations for `boto3.client("imagebuilder").get_container_recipe` method.
+Type annotations for `boto3.client("imagebuilder").get_container_recipe`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe)
 
-```python
-def get_container_recipe(
-    self,
-    containerRecipeArn: str
-) -> GetContainerRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerRecipeArn`: `str` *(required)*
+
+Returns
+[GetContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcontainerreciperesponsetypedef).
 
 ### get_container_recipe_policy
 
-Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy` method.
+Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe_policy]
+Boto3 documentation:
+[Imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe_policy)
 
-```python
-def get_container_recipe_policy(
-    self,
-    containerRecipeArn: str
-) -> GetContainerRecipePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerRecipeArn`: `str` *(required)*
+
+Returns
+[GetContainerRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcontainerrecipepolicyresponsetypedef).
 
 ### get_distribution_configuration
 
-Type annotations for `boto3.client("imagebuilder").get_distribution_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").get_distribution_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_distribution_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_distribution_configuration)
 
-```python
-def get_distribution_configuration(
-    self,
-    distributionConfigurationArn: str
-) -> GetDistributionConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionConfigurationArn`: `str` *(required)*
+
+Returns
+[GetDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getdistributionconfigurationresponsetypedef).
 
 ### get_image
 
 Type annotations for `boto3.client("imagebuilder").get_image` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image]
+Boto3 documentation:
+[Imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image)
 
-```python
-def get_image(
-    self,
-    imageBuildVersionArn: str
-) -> GetImageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageBuildVersionArn`: `str` *(required)*
+
+Returns
+[GetImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimageresponsetypedef).
 
 ### get_image_pipeline
 
 Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_pipeline]
+Boto3 documentation:
+[Imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_pipeline)
 
-```python
-def get_image_pipeline(
-    self,
-    imagePipelineArn: str
-) -> GetImagePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imagePipelineArn`: `str` *(required)*
+
+Returns
+[GetImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagepipelineresponsetypedef).
 
 ### get_image_policy
 
 Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_policy]
+Boto3 documentation:
+[Imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_policy)
 
-```python
-def get_image_policy(
-    self,
-    imageArn: str
-) -> GetImagePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageArn`: `str` *(required)*
+
+Returns
+[GetImagePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagepolicyresponsetypedef).
 
 ### get_image_recipe
 
 Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe]
+Boto3 documentation:
+[Imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe)
 
-```python
-def get_image_recipe(
-    self,
-    imageRecipeArn: str
-) -> GetImageRecipeResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageRecipeArn`: `str` *(required)*
+
+Returns
+[GetImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagereciperesponsetypedef).
 
 ### get_image_recipe_policy
 
-Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy` method.
+Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe_policy]
+Boto3 documentation:
+[Imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe_policy)
 
-```python
-def get_image_recipe_policy(
-    self,
-    imageRecipeArn: str
-) -> GetImageRecipePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageRecipeArn`: `str` *(required)*
+
+Returns
+[GetImageRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagerecipepolicyresponsetypedef).
 
 ### get_infrastructure_configuration
 
-Type annotations for `boto3.client("imagebuilder").get_infrastructure_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").get_infrastructure_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_infrastructure_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_infrastructure_configuration)
 
-```python
-def get_infrastructure_configuration(
-    self,
-    infrastructureConfigurationArn: str
-) -> GetInfrastructureConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `infrastructureConfigurationArn`: `str` *(required)*
+
+Returns
+[GetInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getinfrastructureconfigurationresponsetypedef).
 
 ### import_component
 
 Type annotations for `boto3.client("imagebuilder").import_component` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.import_component]
+Boto3 documentation:
+[Imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.import_component)
 
-```python
-def import_component(
-    self,
-    name: str,
-    semanticVersion: str,
-    type: ComponentType,
-    format: Literal['SHELL'],
-    platform: Platform,
-    clientToken: str,
-    description: str = None,
-    changeDescription: str = None,
-    data: str = None,
-    uri: str = None,
-    kmsKeyId: str = None,
-    tags: Dict[str, str] = None
-) -> ImportComponentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `semanticVersion`: `str` *(required)*
+- `type`:
+  [ComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#componenttype)
+  *(required)*
+- `format`: `Literal['SHELL']` *(required)*
+- `platform`:
+  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `changeDescription`: `str`
+- `data`: `str`
+- `uri`: `str`
+- `kmsKeyId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ImportComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#importcomponentresponsetypedef).
 
 ### list_component_build_versions
 
-Type annotations for `boto3.client("imagebuilder").list_component_build_versions` method.
+Type annotations for
+`boto3.client("imagebuilder").list_component_build_versions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_component_build_versions]
+Boto3 documentation:
+[Imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_component_build_versions)
 
-```python
-def list_component_build_versions(
-    self,
-    componentVersionArn: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListComponentBuildVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `componentVersionArn`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListComponentBuildVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcomponentbuildversionsresponsetypedef).
 
 ### list_components
 
 Type annotations for `boto3.client("imagebuilder").list_components` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_components]
+Boto3 documentation:
+[Imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_components)
 
-```python
-def list_components(
-    self,
-    owner: Ownership = None,
-    filters: List[FilterTypeDef] = None,
-    byName: bool = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListComponentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `owner`:
+  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `byName`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcomponentsresponsetypedef).
 
 ### list_container_recipes
 
-Type annotations for `boto3.client("imagebuilder").list_container_recipes` method.
+Type annotations for `boto3.client("imagebuilder").list_container_recipes`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_container_recipes]
+Boto3 documentation:
+[Imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_container_recipes)
 
-```python
-def list_container_recipes(
-    self,
-    owner: Ownership = None,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListContainerRecipesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `owner`:
+  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListContainerRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcontainerrecipesresponsetypedef).
 
 ### list_distribution_configurations
 
-Type annotations for `boto3.client("imagebuilder").list_distribution_configurations` method.
+Type annotations for
+`boto3.client("imagebuilder").list_distribution_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_distribution_configurations]
+Boto3 documentation:
+[Imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_distribution_configurations)
 
-```python
-def list_distribution_configurations(
-    self,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListDistributionConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListDistributionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listdistributionconfigurationsresponsetypedef).
 
 ### list_image_build_versions
 
-Type annotations for `boto3.client("imagebuilder").list_image_build_versions` method.
+Type annotations for `boto3.client("imagebuilder").list_image_build_versions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_build_versions]
+Boto3 documentation:
+[Imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_build_versions)
 
-```python
-def list_image_build_versions(
-    self,
-    imageVersionArn: str,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListImageBuildVersionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageVersionArn`: `str` *(required)*
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListImageBuildVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagebuildversionsresponsetypedef).
 
 ### list_image_packages
 
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_packages]
+Boto3 documentation:
+[Imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_packages)
 
-```python
-def list_image_packages(
-    self,
-    imageBuildVersionArn: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListImagePackagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageBuildVersionArn`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListImagePackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepackagesresponsetypedef).
 
 ### list_image_pipeline_images
 
-Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images` method.
+Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipeline_images]
+Boto3 documentation:
+[Imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipeline_images)
 
-```python
-def list_image_pipeline_images(
-    self,
-    imagePipelineArn: str,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListImagePipelineImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imagePipelineArn`: `str` *(required)*
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListImagePipelineImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepipelineimagesresponsetypedef).
 
 ### list_image_pipelines
 
-Type annotations for `boto3.client("imagebuilder").list_image_pipelines` method.
+Type annotations for `boto3.client("imagebuilder").list_image_pipelines`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipelines]
+Boto3 documentation:
+[Imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipelines)
 
-```python
-def list_image_pipelines(
-    self,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListImagePipelinesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListImagePipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepipelinesresponsetypedef).
 
 ### list_image_recipes
 
 Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_recipes]
+Boto3 documentation:
+[Imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_recipes)
 
-```python
-def list_image_recipes(
-    self,
-    owner: Ownership = None,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListImageRecipesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `owner`:
+  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListImageRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagerecipesresponsetypedef).
 
 ### list_images
 
 Type annotations for `boto3.client("imagebuilder").list_images` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_images]
+Boto3 documentation:
+[Imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_images)
 
-```python
-def list_images(
-    self,
-    owner: Ownership = None,
-    filters: List[FilterTypeDef] = None,
-    byName: bool = None,
-    maxResults: int = None,
-    nextToken: str = None,
-    includeDeprecated: bool = None
-) -> ListImagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `owner`:
+  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `byName`: `bool`
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `includeDeprecated`: `bool`
+
+Returns
+[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagesresponsetypedef).
 
 ### list_infrastructure_configurations
 
-Type annotations for `boto3.client("imagebuilder").list_infrastructure_configurations` method.
+Type annotations for
+`boto3.client("imagebuilder").list_infrastructure_configurations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_infrastructure_configurations]
+Boto3 documentation:
+[Imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_infrastructure_configurations)
 
-```python
-def list_infrastructure_configurations(
-    self,
-    filters: List[FilterTypeDef] = None,
-    maxResults: int = None,
-    nextToken: str = None
-) -> ListInfrastructureConfigurationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListInfrastructureConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listinfrastructureconfigurationsresponsetypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("imagebuilder").list_tags_for_resource` method.
+Type annotations for `boto3.client("imagebuilder").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_tags_for_resource]
+Boto3 documentation:
+[Imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### put_component_policy
 
-Type annotations for `boto3.client("imagebuilder").put_component_policy` method.
+Type annotations for `boto3.client("imagebuilder").put_component_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_component_policy]
+Boto3 documentation:
+[Imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_component_policy)
 
-```python
-def put_component_policy(
-    self,
-    componentArn: str,
-    policy: str
-) -> PutComponentPolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `componentArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+
+Returns
+[PutComponentPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putcomponentpolicyresponsetypedef).
 
 ### put_container_recipe_policy
 
-Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy` method.
+Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_container_recipe_policy]
+Boto3 documentation:
+[Imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_container_recipe_policy)
 
-```python
-def put_container_recipe_policy(
-    self,
-    containerRecipeArn: str,
-    policy: str
-) -> PutContainerRecipePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `containerRecipeArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+
+Returns
+[PutContainerRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putcontainerrecipepolicyresponsetypedef).
 
 ### put_image_policy
 
 Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_policy]
+Boto3 documentation:
+[Imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_policy)
 
-```python
-def put_image_policy(
-    self,
-    imageArn: str,
-    policy: str
-) -> PutImagePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+
+Returns
+[PutImagePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putimagepolicyresponsetypedef).
 
 ### put_image_recipe_policy
 
-Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy` method.
+Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_recipe_policy]
+Boto3 documentation:
+[Imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_recipe_policy)
 
-```python
-def put_image_recipe_policy(
-    self,
-    imageRecipeArn: str,
-    policy: str
-) -> PutImageRecipePolicyResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imageRecipeArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+
+Returns
+[PutImageRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putimagerecipepolicyresponsetypedef).
 
 ### start_image_pipeline_execution
 
-Type annotations for `boto3.client("imagebuilder").start_image_pipeline_execution` method.
+Type annotations for
+`boto3.client("imagebuilder").start_image_pipeline_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.start_image_pipeline_execution]
+Boto3 documentation:
+[Imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.start_image_pipeline_execution)
 
-```python
-def start_image_pipeline_execution(
-    self,
-    imagePipelineArn: str,
-    clientToken: str
-) -> StartImagePipelineExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imagePipelineArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+
+Returns
+[StartImagePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#startimagepipelineexecutionresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("imagebuilder").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.tag_resource]
+Boto3 documentation:
+[Imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("imagebuilder").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.untag_resource]
+Boto3 documentation:
+[Imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_distribution_configuration
 
-Type annotations for `boto3.client("imagebuilder").update_distribution_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").update_distribution_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_distribution_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_distribution_configuration)
 
-```python
-def update_distribution_configuration(
-    self,
-    distributionConfigurationArn: str,
-    distributions: List["DistributionTypeDef"],
-    clientToken: str,
-    description: str = None
-) -> UpdateDistributionConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `distributionConfigurationArn`: `str` *(required)*
+- `distributions`:
+  `List`\[[DistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#distributiontypedef)\]
+  *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+
+Returns
+[UpdateDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updatedistributionconfigurationresponsetypedef).
 
 ### update_image_pipeline
 
-Type annotations for `boto3.client("imagebuilder").update_image_pipeline` method.
+Type annotations for `boto3.client("imagebuilder").update_image_pipeline`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_image_pipeline]
+Boto3 documentation:
+[Imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_image_pipeline)
 
-```python
-def update_image_pipeline(
-    self,
-    imagePipelineArn: str,
-    infrastructureConfigurationArn: str,
-    clientToken: str,
-    description: str = None,
-    imageRecipeArn: str = None,
-    containerRecipeArn: str = None,
-    distributionConfigurationArn: str = None,
-    imageTestsConfiguration: "ImageTestsConfigurationTypeDef" = None,
-    enhancedImageMetadataEnabled: bool = None,
-    schedule: "ScheduleTypeDef" = None,
-    status: PipelineStatus = None
-) -> UpdateImagePipelineResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `imagePipelineArn`: `str` *(required)*
+- `infrastructureConfigurationArn`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `imageRecipeArn`: `str`
+- `containerRecipeArn`: `str`
+- `distributionConfigurationArn`: `str`
+- `imageTestsConfiguration`:
+  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+- `enhancedImageMetadataEnabled`: `bool`
+- `schedule`:
+  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#scheduletypedef)
+- `status`:
+  [PipelineStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#pipelinestatus)
+
+Returns
+[UpdateImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updateimagepipelineresponsetypedef).
 
 ### update_infrastructure_configuration
 
-Type annotations for `boto3.client("imagebuilder").update_infrastructure_configuration` method.
+Type annotations for
+`boto3.client("imagebuilder").update_infrastructure_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_infrastructure_configuration]
+Boto3 documentation:
+[Imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_infrastructure_configuration)
 
-```python
-def update_infrastructure_configuration(
-    self,
-    infrastructureConfigurationArn: str,
-    instanceProfileName: str,
-    clientToken: str,
-    description: str = None,
-    instanceTypes: List[str] = None,
-    securityGroupIds: List[str] = None,
-    subnetId: str = None,
-    logging: "LoggingTypeDef" = None,
-    keyPair: str = None,
-    terminateInstanceOnFailure: bool = None,
-    snsTopicArn: str = None,
-    resourceTags: Dict[str, str] = None
-) -> UpdateInfrastructureConfigurationResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `infrastructureConfigurationArn`: `str` *(required)*
+- `instanceProfileName`: `str` *(required)*
+- `clientToken`: `str` *(required)*
+- `description`: `str`
+- `instanceTypes`: `List`\[`str`\]
+- `securityGroupIds`: `List`\[`str`\]
+- `subnetId`: `str`
+- `logging`:
+  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#loggingtypedef)
+- `keyPair`: `str`
+- `terminateInstanceOnFailure`: `bool`
+- `snsTopicArn`: `str`
+- `resourceTags`: `Dict`\[`str`, `str`\]
 
-
+Returns
+[UpdateInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updateinfrastructureconfigurationresponsetypedef).

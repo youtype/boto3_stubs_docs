@@ -1,9 +1,12 @@
 # ComprehendMedicalClient for boto3 ComprehendMedical module
 
-> [Index](../README.md) > [ComprehendMedical](./README.md) > ComprehendMedicalClient
+> [Index](../README.md) > [ComprehendMedical](./README.md) >
+> ComprehendMedicalClient
 
-Auto-generated documentation for [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
-type annotations stubs module [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
+Auto-generated documentation for
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+type annotations stubs module
+[mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 - [ComprehendMedicalClient for boto3 ComprehendMedical module](#comprehendmedicalclient-for-boto3-comprehendmedical-module)
   - [ComprehendMedicalClient](#comprehendmedicalclient)
@@ -46,12 +49,13 @@ def get_comprehendmedical_client() -> ComprehendMedicalClient:
     return boto3.client("comprehendmedical")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client)
+Boto3 documentation:
+[ComprehendMedical.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_comprehendmedical.client import Exceptions
@@ -59,7 +63,6 @@ from mypy_boto3_comprehendmedical.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -73,366 +76,398 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("comprehendmedical").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate]
+Boto3 documentation:
+[ComprehendMedical.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### describe_entities_detection_v2_job
 
-Type annotations for `boto3.client("comprehendmedical").describe_entities_detection_v2_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").describe_entities_detection_v2_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job]
+Boto3 documentation:
+[ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
 
-```python
-def describe_entities_detection_v2_job(
-    self,
-    JobId: str
-) -> DescribeEntitiesDetectionV2JobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describeentitiesdetectionv2jobresponsetypedef).
 
 ### describe_icd10_cm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").describe_icd10_cm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").describe_icd10_cm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
 
-```python
-def describe_icd10_cm_inference_job(
-    self,
-    JobId: str
-) -> DescribeICD10CMInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describeicd10cminferencejobresponsetypedef).
 
 ### describe_phi_detection_job
 
-Type annotations for `boto3.client("comprehendmedical").describe_phi_detection_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").describe_phi_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job]
+Boto3 documentation:
+[ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
 
-```python
-def describe_phi_detection_job(
-    self,
-    JobId: str
-) -> DescribePHIDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribePHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describephidetectionjobresponsetypedef).
 
 ### describe_rx_norm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").describe_rx_norm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").describe_rx_norm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
 
-```python
-def describe_rx_norm_inference_job(
-    self,
-    JobId: str
-) -> DescribeRxNormInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describerxnorminferencejobresponsetypedef).
 
 ### detect_entities
 
-Type annotations for `boto3.client("comprehendmedical").detect_entities` method.
+Type annotations for `boto3.client("comprehendmedical").detect_entities`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities]
+Boto3 documentation:
+[ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
 
-```python
-def detect_entities(
-    self,
-    Text: str
-) -> DetectEntitiesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[DetectEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectentitiesresponsetypedef).
 
 ### detect_entities_v2
 
-Type annotations for `boto3.client("comprehendmedical").detect_entities_v2` method.
+Type annotations for `boto3.client("comprehendmedical").detect_entities_v2`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2]
+Boto3 documentation:
+[ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
 
-```python
-def detect_entities_v2(
-    self,
-    Text: str
-) -> DetectEntitiesV2ResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[DetectEntitiesV2ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectentitiesv2responsetypedef).
 
 ### detect_phi
 
 Type annotations for `boto3.client("comprehendmedical").detect_phi` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi]
+Boto3 documentation:
+[ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
 
-```python
-def detect_phi(
-    self,
-    Text: str
-) -> DetectPHIResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[DetectPHIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectphiresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("comprehendmedical").generate_presigned_url` method.
+Type annotations for `boto3.client("comprehendmedical").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url]
+Boto3 documentation:
+[ComprehendMedical.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### infer_icd10_cm
 
 Type annotations for `boto3.client("comprehendmedical").infer_icd10_cm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm]
+Boto3 documentation:
+[ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
 
-```python
-def infer_icd10_cm(
-    self,
-    Text: str
-) -> InferICD10CMResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[InferICD10CMResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#infericd10cmresponsetypedef).
 
 ### infer_rx_norm
 
 Type annotations for `boto3.client("comprehendmedical").infer_rx_norm` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm]
+Boto3 documentation:
+[ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
 
-```python
-def infer_rx_norm(
-    self,
-    Text: str
-) -> InferRxNormResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Text`: `str` *(required)*
+
+Returns
+[InferRxNormResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inferrxnormresponsetypedef).
 
 ### list_entities_detection_v2_jobs
 
-Type annotations for `boto3.client("comprehendmedical").list_entities_detection_v2_jobs` method.
+Type annotations for
+`boto3.client("comprehendmedical").list_entities_detection_v2_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs]
+Boto3 documentation:
+[ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
 
-```python
-def list_entities_detection_v2_jobs(
-    self,
-    Filter: ComprehendMedicalAsyncJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListEntitiesDetectionV2JobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntitiesDetectionV2JobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listentitiesdetectionv2jobsresponsetypedef).
 
 ### list_icd10_cm_inference_jobs
 
-Type annotations for `boto3.client("comprehendmedical").list_icd10_cm_inference_jobs` method.
+Type annotations for
+`boto3.client("comprehendmedical").list_icd10_cm_inference_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs]
+Boto3 documentation:
+[ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
 
-```python
-def list_icd10_cm_inference_jobs(
-    self,
-    Filter: ComprehendMedicalAsyncJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListICD10CMInferenceJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListICD10CMInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listicd10cminferencejobsresponsetypedef).
 
 ### list_phi_detection_jobs
 
-Type annotations for `boto3.client("comprehendmedical").list_phi_detection_jobs` method.
+Type annotations for
+`boto3.client("comprehendmedical").list_phi_detection_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs]
+Boto3 documentation:
+[ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
 
-```python
-def list_phi_detection_jobs(
-    self,
-    Filter: ComprehendMedicalAsyncJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListPHIDetectionJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListPHIDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listphidetectionjobsresponsetypedef).
 
 ### list_rx_norm_inference_jobs
 
-Type annotations for `boto3.client("comprehendmedical").list_rx_norm_inference_jobs` method.
+Type annotations for
+`boto3.client("comprehendmedical").list_rx_norm_inference_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs]
+Boto3 documentation:
+[ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
 
-```python
-def list_rx_norm_inference_jobs(
-    self,
-    Filter: ComprehendMedicalAsyncJobFilterTypeDef = None,
-    NextToken: str = None,
-    MaxResults: int = None
-) -> ListRxNormInferenceJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListRxNormInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listrxnorminferencejobsresponsetypedef).
 
 ### start_entities_detection_v2_job
 
-Type annotations for `boto3.client("comprehendmedical").start_entities_detection_v2_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").start_entities_detection_v2_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job]
+Boto3 documentation:
+[ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
 
-```python
-def start_entities_detection_v2_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: Literal['en'],
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    KMSKey: str = None
-) -> StartEntitiesDetectionV2JobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: `Literal['en']` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
+
+Returns
+[StartEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startentitiesdetectionv2jobresponsetypedef).
 
 ### start_icd10_cm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").start_icd10_cm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").start_icd10_cm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
 
-```python
-def start_icd10_cm_inference_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: Literal['en'],
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    KMSKey: str = None
-) -> StartICD10CMInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: `Literal['en']` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
+
+Returns
+[StartICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#starticd10cminferencejobresponsetypedef).
 
 ### start_phi_detection_job
 
-Type annotations for `boto3.client("comprehendmedical").start_phi_detection_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").start_phi_detection_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job]
+Boto3 documentation:
+[ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
 
-```python
-def start_phi_detection_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: Literal['en'],
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    KMSKey: str = None
-) -> StartPHIDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: `Literal['en']` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
+
+Returns
+[StartPHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startphidetectionjobresponsetypedef).
 
 ### start_rx_norm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").start_rx_norm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").start_rx_norm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
 
-```python
-def start_rx_norm_inference_job(
-    self,
-    InputDataConfig: "InputDataConfigTypeDef",
-    OutputDataConfig: "OutputDataConfigTypeDef",
-    DataAccessRoleArn: str,
-    LanguageCode: Literal['en'],
-    JobName: str = None,
-    ClientRequestToken: str = None,
-    KMSKey: str = None
-) -> StartRxNormInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
+  *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: `Literal['en']` *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
+
+Returns
+[StartRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startrxnorminferencejobresponsetypedef).
 
 ### stop_entities_detection_v2_job
 
-Type annotations for `boto3.client("comprehendmedical").stop_entities_detection_v2_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").stop_entities_detection_v2_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job]
+Boto3 documentation:
+[ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
 
-```python
-def stop_entities_detection_v2_job(
-    self,
-    JobId: str
-) -> StopEntitiesDetectionV2JobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopentitiesdetectionv2jobresponsetypedef).
 
 ### stop_icd10_cm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").stop_icd10_cm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").stop_icd10_cm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
 
-```python
-def stop_icd10_cm_inference_job(
-    self,
-    JobId: str
-) -> StopICD10CMInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopicd10cminferencejobresponsetypedef).
 
 ### stop_phi_detection_job
 
-Type annotations for `boto3.client("comprehendmedical").stop_phi_detection_job` method.
+Type annotations for `boto3.client("comprehendmedical").stop_phi_detection_job`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job]
+Boto3 documentation:
+[ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
 
-```python
-def stop_phi_detection_job(
-    self,
-    JobId: str
-) -> StopPHIDetectionJobResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopPHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopphidetectionjobresponsetypedef).
 
 ### stop_rx_norm_inference_job
 
-Type annotations for `boto3.client("comprehendmedical").stop_rx_norm_inference_job` method.
+Type annotations for
+`boto3.client("comprehendmedical").stop_rx_norm_inference_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job]
+Boto3 documentation:
+[ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
 
-```python
-def stop_rx_norm_inference_job(
-    self,
-    JobId: str
-) -> StopRxNormInferenceJobResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `JobId`: `str` *(required)*
 
-
+Returns
+[StopRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stoprxnorminferencejobresponsetypedef).

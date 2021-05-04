@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [RDS](./README.md) > Paginators
 
-Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
-type annotations stubs module [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+Auto-generated documentation for
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+type annotations stubs module
+[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Paginators for boto3 RDS module](#paginators-for-boto3-rds-module)
   - [DescribeCertificatesPaginator](#describecertificatespaginator)
@@ -45,7 +47,8 @@ type annotations stubs module [mypy_boto3_rds](https://pypi.org/project/mypy-bot
 
 ## DescribeCertificatesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_certificates")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_certificates")`.
 
 Can be used directly:
 
@@ -56,21 +59,24 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("rds").get_paginator("describe_certificates")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
+Boto3 documentation:
+[RDS.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
 
-```python
-class DescribeCertificatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CertificateIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CertificateMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCertificatesPaginator.paginate` method:
+
+- `CertificateIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCertificatesPaginator.paginate` returns
+`Iterator`\[[CertificateMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#certificatemessagetypedef)\].
+
 ## DescribeCustomAvailabilityZonesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_custom_availability_zones")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_custom_availability_zones")`.
 
 Can be used directly:
 
@@ -81,21 +87,24 @@ def get_describe_custom_availability_zones_paginator() -> DescribeCustomAvailabi
     return boto3.client("rds").get_paginator("describe_custom_availability_zones")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
+Boto3 documentation:
+[RDS.Paginator.DescribeCustomAvailabilityZones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
 
-```python
-class DescribeCustomAvailabilityZonesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        CustomAvailabilityZoneId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[CustomAvailabilityZoneMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeCustomAvailabilityZonesPaginator.paginate` method:
+
+- `CustomAvailabilityZoneId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeCustomAvailabilityZonesPaginator.paginate` returns
+`Iterator`\[[CustomAvailabilityZoneMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#customavailabilityzonemessagetypedef)\].
+
 ## DescribeDBClusterBacktracksPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_backtracks")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_cluster_backtracks")`.
 
 Can be used directly:
 
@@ -106,22 +115,25 @@ def get_describe_db_cluster_backtracks_paginator() -> DescribeDBClusterBacktrack
     return boto3.client("rds").get_paginator("describe_db_cluster_backtracks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusterBacktracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
 
-```python
-class DescribeDBClusterBacktracksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterIdentifier: str,
-        BacktrackIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterBacktrackMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClusterBacktracksPaginator.paginate` method:
+
+- `DBClusterIdentifier`: `str` *(required)*
+- `BacktrackIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClusterBacktracksPaginator.paginate` returns
+`Iterator`\[[DBClusterBacktrackMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterbacktrackmessagetypedef)\].
+
 ## DescribeDBClusterEndpointsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_endpoints")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_cluster_endpoints")`.
 
 Can be used directly:
 
@@ -132,22 +144,25 @@ def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsP
     return boto3.client("rds").get_paginator("describe_db_cluster_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusterEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
 
-```python
-class DescribeDBClusterEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterIdentifier: str = None,
-        DBClusterEndpointIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterEndpointMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
+
+- `DBClusterIdentifier`: `str`
+- `DBClusterEndpointIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClusterEndpointsPaginator.paginate` returns
+`Iterator`\[[DBClusterEndpointMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterendpointmessagetypedef)\].
+
 ## DescribeDBClusterParameterGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_parameter_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_cluster_parameter_groups")`.
 
 Can be used directly:
 
@@ -158,21 +173,24 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
     return boto3.client("rds").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
 
-```python
-class DescribeDBClusterParameterGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterParameterGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterParameterGroupsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
+
+- `DBClusterParameterGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClusterParameterGroupsPaginator.paginate` returns
+`Iterator`\[[DBClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupsmessagetypedef)\].
+
 ## DescribeDBClusterParametersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_parameters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_cluster_parameters")`.
 
 Can be used directly:
 
@@ -183,22 +201,25 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
     return boto3.client("rds").get_paginator("describe_db_cluster_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
 
-```python
-class DescribeDBClusterParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterParameterGroupName: str,
-        Source: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterParameterGroupDetailsTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
+
+- `DBClusterParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClusterParametersPaginator.paginate` returns
+`Iterator`\[[DBClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupdetailstypedef)\].
+
 ## DescribeDBClusterSnapshotsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_snapshots")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_cluster_snapshots")`.
 
 Can be used directly:
 
@@ -209,25 +230,28 @@ def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsP
     return boto3.client("rds").get_paginator("describe_db_cluster_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
 
-```python
-class DescribeDBClusterSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterIdentifier: str = None,
-        DBClusterSnapshotIdentifier: str = None,
-        SnapshotType: str = None,
-        Filters: List[FilterTypeDef] = None,
-        IncludeShared: bool = None,
-        IncludePublic: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterSnapshotMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
+
+- `DBClusterIdentifier`: `str`
+- `DBClusterSnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `IncludeShared`: `bool`
+- `IncludePublic`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClusterSnapshotsPaginator.paginate` returns
+`Iterator`\[[DBClusterSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclustersnapshotmessagetypedef)\].
+
 ## DescribeDBClustersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_clusters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_clusters")`.
 
 Can be used directly:
 
@@ -238,22 +262,25 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return boto3.client("rds").get_paginator("describe_db_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
 
-```python
-class DescribeDBClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBClusterIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        IncludeShared: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBClusterMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBClustersPaginator.paginate` method:
+
+- `DBClusterIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `IncludeShared`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBClustersPaginator.paginate` returns
+`Iterator`\[[DBClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclustermessagetypedef)\].
+
 ## DescribeDBEngineVersionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_engine_versions")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_engine_versions")`.
 
 Can be used directly:
 
@@ -264,27 +291,30 @@ def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPagin
     return boto3.client("rds").get_paginator("describe_db_engine_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
 
-```python
-class DescribeDBEngineVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Engine: str = None,
-        EngineVersion: str = None,
-        DBParameterGroupFamily: str = None,
-        Filters: List[FilterTypeDef] = None,
-        DefaultOnly: bool = None,
-        ListSupportedCharacterSets: bool = None,
-        ListSupportedTimezones: bool = None,
-        IncludeAll: bool = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBEngineVersionMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DBParameterGroupFamily`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `DefaultOnly`: `bool`
+- `ListSupportedCharacterSets`: `bool`
+- `ListSupportedTimezones`: `bool`
+- `IncludeAll`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBEngineVersionsPaginator.paginate` returns
+`Iterator`\[[DBEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbengineversionmessagetypedef)\].
+
 ## DescribeDBInstanceAutomatedBackupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_instance_automated_backups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_instance_automated_backups")`.
 
 Can be used directly:
 
@@ -295,23 +325,26 @@ def get_describe_db_instance_automated_backups_paginator() -> DescribeDBInstance
     return boto3.client("rds").get_paginator("describe_db_instance_automated_backups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBInstanceAutomatedBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
 
-```python
-class DescribeDBInstanceAutomatedBackupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DbiResourceId: str = None,
-        DBInstanceIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        DBInstanceAutomatedBackupsArn: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBInstanceAutomatedBackupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBInstanceAutomatedBackupsPaginator.paginate` method:
+
+- `DbiResourceId`: `str`
+- `DBInstanceIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `DBInstanceAutomatedBackupsArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBInstanceAutomatedBackupsPaginator.paginate` returns
+`Iterator`\[[DBInstanceAutomatedBackupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbinstanceautomatedbackupmessagetypedef)\].
+
 ## DescribeDBInstancesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_instances")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_instances")`.
 
 Can be used directly:
 
@@ -322,21 +355,24 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return boto3.client("rds").get_paginator("describe_db_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
 
-```python
-class DescribeDBInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBInstanceIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBInstanceMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBInstancesPaginator.paginate` method:
+
+- `DBInstanceIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBInstancesPaginator.paginate` returns
+`Iterator`\[[DBInstanceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbinstancemessagetypedef)\].
+
 ## DescribeDBLogFilesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_log_files")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_log_files")`.
 
 Can be used directly:
 
@@ -347,24 +383,27 @@ def get_describe_db_log_files_paginator() -> DescribeDBLogFilesPaginator:
     return boto3.client("rds").get_paginator("describe_db_log_files")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBLogFiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
 
-```python
-class DescribeDBLogFilesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBInstanceIdentifier: str,
-        FilenameContains: str = None,
-        FileLastWritten: int = None,
-        FileSize: int = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDBLogFilesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDBLogFilesPaginator.paginate` method:
+
+- `DBInstanceIdentifier`: `str` *(required)*
+- `FilenameContains`: `str`
+- `FileLastWritten`: `int`
+- `FileSize`: `int`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBLogFilesPaginator.paginate` returns
+`Iterator`\[[DescribeDBLogFilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedblogfilesresponsetypedef)\].
+
 ## DescribeDBParameterGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_parameter_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_parameter_groups")`.
 
 Can be used directly:
 
@@ -375,21 +414,24 @@ def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPag
     return boto3.client("rds").get_paginator("describe_db_parameter_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
 
-```python
-class DescribeDBParameterGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBParameterGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBParameterGroupsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
+
+- `DBParameterGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBParameterGroupsPaginator.paginate` returns
+`Iterator`\[[DBParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupsmessagetypedef)\].
+
 ## DescribeDBParametersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_parameters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_parameters")`.
 
 Can be used directly:
 
@@ -400,22 +442,25 @@ def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
     return boto3.client("rds").get_paginator("describe_db_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
 
-```python
-class DescribeDBParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBParameterGroupName: str,
-        Source: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBParameterGroupDetailsTypeDef]:
-        pass
-```
+Arguments for `DescribeDBParametersPaginator.paginate` method:
+
+- `DBParameterGroupName`: `str` *(required)*
+- `Source`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBParametersPaginator.paginate` returns
+`Iterator`\[[DBParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupdetailstypedef)\].
+
 ## DescribeDBProxiesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_proxies")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_proxies")`.
 
 Can be used directly:
 
@@ -426,21 +471,24 @@ def get_describe_db_proxies_paginator() -> DescribeDBProxiesPaginator:
     return boto3.client("rds").get_paginator("describe_db_proxies")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBProxies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
 
-```python
-class DescribeDBProxiesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBProxyName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDBProxiesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDBProxiesPaginator.paginate` method:
+
+- `DBProxyName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBProxiesPaginator.paginate` returns
+`Iterator`\[[DescribeDBProxiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxiesresponsetypedef)\].
+
 ## DescribeDBProxyEndpointsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_endpoints")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_proxy_endpoints")`.
 
 Can be used directly:
 
@@ -451,22 +499,25 @@ def get_describe_db_proxy_endpoints_paginator() -> DescribeDBProxyEndpointsPagin
     return boto3.client("rds").get_paginator("describe_db_proxy_endpoints")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBProxyEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
 
-```python
-class DescribeDBProxyEndpointsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBProxyName: str = None,
-        DBProxyEndpointName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDBProxyEndpointsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDBProxyEndpointsPaginator.paginate` method:
+
+- `DBProxyName`: `str`
+- `DBProxyEndpointName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBProxyEndpointsPaginator.paginate` returns
+`Iterator`\[[DescribeDBProxyEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxyendpointsresponsetypedef)\].
+
 ## DescribeDBProxyTargetGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_target_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_proxy_target_groups")`.
 
 Can be used directly:
 
@@ -477,22 +528,25 @@ def get_describe_db_proxy_target_groups_paginator() -> DescribeDBProxyTargetGrou
     return boto3.client("rds").get_paginator("describe_db_proxy_target_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBProxyTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
 
-```python
-class DescribeDBProxyTargetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBProxyName: str,
-        TargetGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDBProxyTargetGroupsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDBProxyTargetGroupsPaginator.paginate` method:
+
+- `DBProxyName`: `str` *(required)*
+- `TargetGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBProxyTargetGroupsPaginator.paginate` returns
+`Iterator`\[[DescribeDBProxyTargetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxytargetgroupsresponsetypedef)\].
+
 ## DescribeDBProxyTargetsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_targets")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_proxy_targets")`.
 
 Can be used directly:
 
@@ -503,22 +557,25 @@ def get_describe_db_proxy_targets_paginator() -> DescribeDBProxyTargetsPaginator
     return boto3.client("rds").get_paginator("describe_db_proxy_targets")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBProxyTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
 
-```python
-class DescribeDBProxyTargetsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBProxyName: str,
-        TargetGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeDBProxyTargetsResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeDBProxyTargetsPaginator.paginate` method:
+
+- `DBProxyName`: `str` *(required)*
+- `TargetGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBProxyTargetsPaginator.paginate` returns
+`Iterator`\[[DescribeDBProxyTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxytargetsresponsetypedef)\].
+
 ## DescribeDBSecurityGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_security_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_security_groups")`.
 
 Can be used directly:
 
@@ -529,21 +586,24 @@ def get_describe_db_security_groups_paginator() -> DescribeDBSecurityGroupsPagin
     return boto3.client("rds").get_paginator("describe_db_security_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
 
-```python
-class DescribeDBSecurityGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBSecurityGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBSecurityGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBSecurityGroupsPaginator.paginate` method:
+
+- `DBSecurityGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBSecurityGroupsPaginator.paginate` returns
+`Iterator`\[[DBSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsecuritygroupmessagetypedef)\].
+
 ## DescribeDBSnapshotsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_snapshots")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_snapshots")`.
 
 Can be used directly:
 
@@ -554,26 +614,29 @@ def get_describe_db_snapshots_paginator() -> DescribeDBSnapshotsPaginator:
     return boto3.client("rds").get_paginator("describe_db_snapshots")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
 
-```python
-class DescribeDBSnapshotsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBInstanceIdentifier: str = None,
-        DBSnapshotIdentifier: str = None,
-        SnapshotType: str = None,
-        Filters: List[FilterTypeDef] = None,
-        IncludeShared: bool = None,
-        IncludePublic: bool = None,
-        DbiResourceId: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBSnapshotMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBSnapshotsPaginator.paginate` method:
+
+- `DBInstanceIdentifier`: `str`
+- `DBSnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `IncludeShared`: `bool`
+- `IncludePublic`: `bool`
+- `DbiResourceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBSnapshotsPaginator.paginate` returns
+`Iterator`\[[DBSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsnapshotmessagetypedef)\].
+
 ## DescribeDBSubnetGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_db_subnet_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_db_subnet_groups")`.
 
 Can be used directly:
 
@@ -584,21 +647,24 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
     return boto3.client("rds").get_paginator("describe_db_subnet_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
 
-```python
-class DescribeDBSubnetGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBSubnetGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DBSubnetGroupMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
+
+- `DBSubnetGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeDBSubnetGroupsPaginator.paginate` returns
+`Iterator`\[[DBSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsubnetgroupmessagetypedef)\].
+
 ## DescribeEngineDefaultClusterParametersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_engine_default_cluster_parameters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_engine_default_cluster_parameters")`.
 
 Can be used directly:
 
@@ -609,21 +675,25 @@ def get_describe_engine_default_cluster_parameters_paginator() -> DescribeEngine
     return boto3.client("rds").get_paginator("describe_engine_default_cluster_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
+Boto3 documentation:
+[RDS.Paginator.DescribeEngineDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
 
-```python
-class DescribeEngineDefaultClusterParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBParameterGroupFamily: str,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEngineDefaultClusterParametersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeEngineDefaultClusterParametersPaginator.paginate`
+method:
+
+- `DBParameterGroupFamily`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEngineDefaultClusterParametersPaginator.paginate` returns
+`Iterator`\[[DescribeEngineDefaultClusterParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describeenginedefaultclusterparametersresulttypedef)\].
+
 ## DescribeEngineDefaultParametersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_engine_default_parameters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_engine_default_parameters")`.
 
 Can be used directly:
 
@@ -634,21 +704,24 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
     return boto3.client("rds").get_paginator("describe_engine_default_parameters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
+Boto3 documentation:
+[RDS.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
 
-```python
-class DescribeEngineDefaultParametersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBParameterGroupFamily: str,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeEngineDefaultParametersResultTypeDef]:
-        pass
-```
+Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
+
+- `DBParameterGroupFamily`: `str` *(required)*
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEngineDefaultParametersPaginator.paginate` returns
+`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describeenginedefaultparametersresulttypedef)\].
+
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_event_subscriptions")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_event_subscriptions")`.
 
 Can be used directly:
 
@@ -659,18 +732,20 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("rds").get_paginator("describe_event_subscriptions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
+Boto3 documentation:
+[RDS.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
 
-```python
-class DescribeEventSubscriptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SubscriptionName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EventSubscriptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+
+- `SubscriptionName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventSubscriptionsPaginator.paginate` returns
+`Iterator`\[[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#eventsubscriptionsmessagetypedef)\].
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("rds").get_paginator("describe_events")`.
@@ -684,26 +759,30 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("rds").get_paginator("describe_events")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEvents)
+Boto3 documentation:
+[RDS.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEvents)
 
-```python
-class DescribeEventsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        SourceIdentifier: str = None,
-        SourceType: SourceType = None,
-        StartTime: datetime = None,
-        EndTime: datetime = None,
-        Duration: int = None,
-        EventCategories: List[str] = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[EventsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeEventsPaginator.paginate` method:
+
+- `SourceIdentifier`: `str`
+- `SourceType`:
+  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#sourcetype)
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `Duration`: `int`
+- `EventCategories`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeEventsPaginator.paginate` returns
+`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#eventsmessagetypedef)\].
+
 ## DescribeExportTasksPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_export_tasks")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_export_tasks")`.
 
 Can be used directly:
 
@@ -714,22 +793,25 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return boto3.client("rds").get_paginator("describe_export_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
+Boto3 documentation:
+[RDS.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
 
-```python
-class DescribeExportTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ExportTaskIdentifier: str = None,
-        SourceArn: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ExportTasksMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeExportTasksPaginator.paginate` method:
+
+- `ExportTaskIdentifier`: `str`
+- `SourceArn`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeExportTasksPaginator.paginate` returns
+`Iterator`\[[ExportTasksMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#exporttasksmessagetypedef)\].
+
 ## DescribeGlobalClustersPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_global_clusters")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_global_clusters")`.
 
 Can be used directly:
 
@@ -740,21 +822,24 @@ def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
     return boto3.client("rds").get_paginator("describe_global_clusters")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
+Boto3 documentation:
+[RDS.Paginator.DescribeGlobalClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
 
-```python
-class DescribeGlobalClustersPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        GlobalClusterIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[GlobalClustersMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeGlobalClustersPaginator.paginate` method:
+
+- `GlobalClusterIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeGlobalClustersPaginator.paginate` returns
+`Iterator`\[[GlobalClustersMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#globalclustersmessagetypedef)\].
+
 ## DescribeInstallationMediaPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_installation_media")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_installation_media")`.
 
 Can be used directly:
 
@@ -765,21 +850,24 @@ def get_describe_installation_media_paginator() -> DescribeInstallationMediaPagi
     return boto3.client("rds").get_paginator("describe_installation_media")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
+Boto3 documentation:
+[RDS.Paginator.DescribeInstallationMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
 
-```python
-class DescribeInstallationMediaPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        InstallationMediaId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[InstallationMediaMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeInstallationMediaPaginator.paginate` method:
+
+- `InstallationMediaId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeInstallationMediaPaginator.paginate` returns
+`Iterator`\[[InstallationMediaMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#installationmediamessagetypedef)\].
+
 ## DescribeOptionGroupOptionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_option_group_options")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_option_group_options")`.
 
 Can be used directly:
 
@@ -790,22 +878,25 @@ def get_describe_option_group_options_paginator() -> DescribeOptionGroupOptionsP
     return boto3.client("rds").get_paginator("describe_option_group_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
+Boto3 documentation:
+[RDS.Paginator.DescribeOptionGroupOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
 
-```python
-class DescribeOptionGroupOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        EngineName: str,
-        MajorEngineVersion: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[OptionGroupOptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeOptionGroupOptionsPaginator.paginate` method:
+
+- `EngineName`: `str` *(required)*
+- `MajorEngineVersion`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeOptionGroupOptionsPaginator.paginate` returns
+`Iterator`\[[OptionGroupOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#optiongroupoptionsmessagetypedef)\].
+
 ## DescribeOptionGroupsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_option_groups")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_option_groups")`.
 
 Can be used directly:
 
@@ -816,23 +907,26 @@ def get_describe_option_groups_paginator() -> DescribeOptionGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_option_groups")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
+Boto3 documentation:
+[RDS.Paginator.DescribeOptionGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
 
-```python
-class DescribeOptionGroupsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        OptionGroupName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        EngineName: str = None,
-        MajorEngineVersion: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[OptionGroupsTypeDef]:
-        pass
-```
+Arguments for `DescribeOptionGroupsPaginator.paginate` method:
+
+- `OptionGroupName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `EngineName`: `str`
+- `MajorEngineVersion`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeOptionGroupsPaginator.paginate` returns
+`Iterator`\[[OptionGroupsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#optiongroupstypedef)\].
+
 ## DescribeOrderableDBInstanceOptionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_orderable_db_instance_options")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_orderable_db_instance_options")`.
 
 Can be used directly:
 
@@ -843,26 +937,29 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
     return boto3.client("rds").get_paginator("describe_orderable_db_instance_options")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
+Boto3 documentation:
+[RDS.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
 
-```python
-class DescribeOrderableDBInstanceOptionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Engine: str,
-        EngineVersion: str = None,
-        DBInstanceClass: str = None,
-        LicenseModel: str = None,
-        AvailabilityZoneGroup: str = None,
-        Vpc: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[OrderableDBInstanceOptionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
+
+- `Engine`: `str` *(required)*
+- `EngineVersion`: `str`
+- `DBInstanceClass`: `str`
+- `LicenseModel`: `str`
+- `AvailabilityZoneGroup`: `str`
+- `Vpc`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
+`Iterator`\[[OrderableDBInstanceOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#orderabledbinstanceoptionsmessagetypedef)\].
+
 ## DescribePendingMaintenanceActionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_pending_maintenance_actions")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_pending_maintenance_actions")`.
 
 Can be used directly:
 
@@ -873,21 +970,24 @@ def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaint
     return boto3.client("rds").get_paginator("describe_pending_maintenance_actions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
+Boto3 documentation:
+[RDS.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
 
-```python
-class DescribePendingMaintenanceActionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[PendingMaintenanceActionsMessageTypeDef]:
-        pass
-```
+Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
+
+- `ResourceIdentifier`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribePendingMaintenanceActionsPaginator.paginate` returns
+`Iterator`\[[PendingMaintenanceActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#pendingmaintenanceactionsmessagetypedef)\].
+
 ## DescribeReservedDBInstancesPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_reserved_db_instances")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_reserved_db_instances")`.
 
 Can be used directly:
 
@@ -898,28 +998,31 @@ def get_describe_reserved_db_instances_paginator() -> DescribeReservedDBInstance
     return boto3.client("rds").get_paginator("describe_reserved_db_instances")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
+Boto3 documentation:
+[RDS.Paginator.DescribeReservedDBInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
 
-```python
-class DescribeReservedDBInstancesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedDBInstanceId: str = None,
-        ReservedDBInstancesOfferingId: str = None,
-        DBInstanceClass: str = None,
-        Duration: str = None,
-        ProductDescription: str = None,
-        OfferingType: str = None,
-        MultiAZ: bool = None,
-        LeaseId: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedDBInstanceMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedDBInstancesPaginator.paginate` method:
+
+- `ReservedDBInstanceId`: `str`
+- `ReservedDBInstancesOfferingId`: `str`
+- `DBInstanceClass`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MultiAZ`: `bool`
+- `LeaseId`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedDBInstancesPaginator.paginate` returns
+`Iterator`\[[ReservedDBInstanceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#reserveddbinstancemessagetypedef)\].
+
 ## DescribeReservedDBInstancesOfferingsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_reserved_db_instances_offerings")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_reserved_db_instances_offerings")`.
 
 Can be used directly:
 
@@ -930,26 +1033,29 @@ def get_describe_reserved_db_instances_offerings_paginator() -> DescribeReserved
     return boto3.client("rds").get_paginator("describe_reserved_db_instances_offerings")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
+Boto3 documentation:
+[RDS.Paginator.DescribeReservedDBInstancesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
 
-```python
-class DescribeReservedDBInstancesOfferingsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ReservedDBInstancesOfferingId: str = None,
-        DBInstanceClass: str = None,
-        Duration: str = None,
-        ProductDescription: str = None,
-        OfferingType: str = None,
-        MultiAZ: bool = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ReservedDBInstancesOfferingMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeReservedDBInstancesOfferingsPaginator.paginate` method:
+
+- `ReservedDBInstancesOfferingId`: `str`
+- `DBInstanceClass`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MultiAZ`: `bool`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeReservedDBInstancesOfferingsPaginator.paginate` returns
+`Iterator`\[[ReservedDBInstancesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#reserveddbinstancesofferingmessagetypedef)\].
+
 ## DescribeSourceRegionsPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("describe_source_regions")`.
+Type annotations for
+`boto3.client("rds").get_paginator("describe_source_regions")`.
 
 Can be used directly:
 
@@ -960,21 +1066,24 @@ def get_describe_source_regions_paginator() -> DescribeSourceRegionsPaginator:
     return boto3.client("rds").get_paginator("describe_source_regions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
+Boto3 documentation:
+[RDS.Paginator.DescribeSourceRegions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
 
-```python
-class DescribeSourceRegionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        RegionName: str = None,
-        Filters: List[FilterTypeDef] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[SourceRegionMessageTypeDef]:
-        pass
-```
+Arguments for `DescribeSourceRegionsPaginator.paginate` method:
+
+- `RegionName`: `str`
+- `Filters`:
+  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DescribeSourceRegionsPaginator.paginate` returns
+`Iterator`\[[SourceRegionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#sourceregionmessagetypedef)\].
+
 ## DownloadDBLogFilePortionPaginator
 
-Type annotations for `boto3.client("rds").get_paginator("download_db_log_file_portion")`.
+Type annotations for
+`boto3.client("rds").get_paginator("download_db_log_file_portion")`.
 
 Can be used directly:
 
@@ -985,15 +1094,15 @@ def get_download_db_log_file_portion_paginator() -> DownloadDBLogFilePortionPagi
     return boto3.client("rds").get_paginator("download_db_log_file_portion")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
+Boto3 documentation:
+[RDS.Paginator.DownloadDBLogFilePortion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
 
-```python
-class DownloadDBLogFilePortionPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        DBInstanceIdentifier: str,
-        LogFileName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DownloadDBLogFilePortionDetailsTypeDef]:
-        pass
-```
+Arguments for `DownloadDBLogFilePortionPaginator.paginate` method:
+
+- `DBInstanceIdentifier`: `str` *(required)*
+- `LogFileName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#paginatorconfigtypedef)
+
+`DownloadDBLogFilePortionPaginator.paginate` returns
+`Iterator`\[[DownloadDBLogFilePortionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#downloaddblogfileportiondetailstypedef)\].

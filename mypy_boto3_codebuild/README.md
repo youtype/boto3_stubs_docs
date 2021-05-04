@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CodeBuild
 
-Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
-type annotations stubs module [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+Auto-generated documentation for
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+type annotations stubs module
+[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ```bash
 pip install mypy-boto3-codebuild
@@ -19,7 +21,8 @@ pip install mypy-boto3-codebuild
 
 ## CodeBuildClient
 
-Type annotations for  `boto3.client("codebuild")` as [CodeBuildClient](./client.md)
+Type annotations for `boto3.client("codebuild")` as
+[CodeBuildClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_codebuild.client import CodeBuildClient
 ```
 
-
 CodeBuildClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_delete_builds](./client.md#batch-delete-builds)
 - [batch_get_build_batches](./client.md#batch-get-build-batches)
 - [batch_get_builds](./client.md#batch-get-builds)
@@ -81,10 +82,8 @@ CodeBuildClient [exceptions](./client.md#exceptions)
 - [update_report_group](./client.md#update-report-group)
 - [update_webhook](./client.md#update-webhook)
 
-
-
-
 ### Exceptions
+
 - [AccountLimitExceededException](./client.md#accountlimitexceededexception)
 - [ClientError](./client.md#clienterror)
 - [InvalidInputException](./client.md#invalidinputexception)
@@ -92,14 +91,10 @@ CodeBuildClient [exceptions](./client.md#exceptions)
 - [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("codebuild").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("codebuild").get_paginator("...")`.
 
 Can be used directly:
 
@@ -119,11 +114,6 @@ from mypy_boto3_codebuild.paginators import DescribeCodeCoveragesPaginator, ...
 - [ListReportsForReportGroupPaginator](./paginators.md#listreportsforreportgrouppaginator)
 - [ListSharedProjectsPaginator](./paginators.md#listsharedprojectspaginator)
 - [ListSharedReportGroupsPaginator](./paginators.md#listsharedreportgroupspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -184,13 +174,10 @@ from mypy_boto3_codebuild.literals import ArtifactNamespace, ...
 - [WebhookBuildType](./literals.md#webhookbuildtype)
 - [WebhookFilterType](./literals.md#webhookfiltertype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

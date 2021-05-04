@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > PinpointSMSVoice
 
-Auto-generated documentation for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
-type annotations stubs module [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
+Auto-generated documentation for
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+type annotations stubs module
+[mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
 ```bash
 pip install mypy-boto3-pinpoint-sms-voice
@@ -18,7 +20,8 @@ pip install mypy-boto3-pinpoint-sms-voice
 
 ## PinpointSMSVoiceClient
 
-Type annotations for  `boto3.client("pinpoint-sms-voice")` as [PinpointSMSVoiceClient](./client.md)
+Type annotations for `boto3.client("pinpoint-sms-voice")` as
+[PinpointSMSVoiceClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_pinpoint_sms_voice.client import PinpointSMSVoiceClient
 ```
 
-
 PinpointSMSVoiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_configuration_set](./client.md#create-configuration-set)
 - [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
@@ -42,10 +43,8 @@ PinpointSMSVoiceClient [exceptions](./client.md#exceptions)
 - [send_voice_message](./client.md#send-voice-message)
 - [update_configuration_set_event_destination](./client.md#update-configuration-set-event-destination)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -53,15 +52,6 @@ PinpointSMSVoiceClient [exceptions](./client.md#exceptions)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -75,13 +65,10 @@ from mypy_boto3_pinpoint_sms_voice.literals import EventType, ...
 
 - [EventType](./literals.md#eventtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

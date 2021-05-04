@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Route53Domains
 
-Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+Auto-generated documentation for
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+type annotations stubs module
+[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 ```bash
 pip install mypy-boto3-route53domains
@@ -19,7 +21,8 @@ pip install mypy-boto3-route53domains
 
 ## Route53DomainsClient
 
-Type annotations for  `boto3.client("route53domains")` as [Route53DomainsClient](./client.md)
+Type annotations for `boto3.client("route53domains")` as
+[Route53DomainsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_route53domains.client import Route53DomainsClient
 ```
 
-
 Route53DomainsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_domain_transfer_from_another_aws_account](./client.md#accept-domain-transfer-from-another-aws-account)
 - [can_paginate](./client.md#can-paginate)
 - [cancel_domain_transfer_to_another_aws_account](./client.md#cancel-domain-transfer-to-another-aws-account)
@@ -65,10 +66,8 @@ Route53DomainsClient [exceptions](./client.md#exceptions)
 - [update_tags_for_domain](./client.md#update-tags-for-domain)
 - [view_billing](./client.md#view-billing)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DomainLimitExceeded](./client.md#domainlimitexceeded)
 - [DuplicateRequest](./client.md#duplicaterequest)
@@ -77,14 +76,10 @@ Route53DomainsClient [exceptions](./client.md#exceptions)
 - [TLDRulesViolation](./client.md#tldrulesviolation)
 - [UnsupportedTLD](./client.md#unsupportedtld)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("route53domains").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("route53domains").get_paginator("...")`.
 
 Can be used directly:
 
@@ -95,11 +90,6 @@ from mypy_boto3_route53domains.paginators import ListDomainsPaginator, ...
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 - [ViewBillingPaginator](./paginators.md#viewbillingpaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -123,13 +113,10 @@ from mypy_boto3_route53domains.literals import ContactType, ...
 - [Transferable](./literals.md#transferable)
 - [ViewBillingPaginatorName](./literals.md#viewbillingpaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

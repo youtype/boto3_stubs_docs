@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ResourceGroups
 
-Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
-type annotations stubs module [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+Auto-generated documentation for
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+type annotations stubs module
+[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 ```bash
 pip install mypy-boto3-resource-groups
@@ -19,7 +21,8 @@ pip install mypy-boto3-resource-groups
 
 ## ResourceGroupsClient
 
-Type annotations for  `boto3.client("resource-groups")` as [ResourceGroupsClient](./client.md)
+Type annotations for `boto3.client("resource-groups")` as
+[ResourceGroupsClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
 ```
 
-
 ResourceGroupsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_group](./client.md#create-group)
 - [delete_group](./client.md#delete-group)
@@ -53,10 +54,8 @@ ResourceGroupsClient [exceptions](./client.md#exceptions)
 - [update_group](./client.md#update-group)
 - [update_group_query](./client.md#update-group-query)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [ForbiddenException](./client.md#forbiddenexception)
@@ -66,14 +65,10 @@ ResourceGroupsClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("resource-groups").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("resource-groups").get_paginator("...")`.
 
 Can be used directly:
 
@@ -84,11 +79,6 @@ from mypy_boto3_resource_groups.paginators import ListGroupResourcesPaginator, .
 - [ListGroupResourcesPaginator](./paginators.md#listgroupresourcespaginator)
 - [ListGroupsPaginator](./paginators.md#listgroupspaginator)
 - [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_resource_groups.literals import GroupConfigurationStatus, ...
 - [ResourceStatusValue](./literals.md#resourcestatusvalue)
 - [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

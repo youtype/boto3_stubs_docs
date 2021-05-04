@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > RAM
 
-Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+Auto-generated documentation for
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+type annotations stubs module
+[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
 ```bash
 pip install mypy-boto3-ram
@@ -19,7 +21,7 @@ pip install mypy-boto3-ram
 
 ## RAMClient
 
-Type annotations for  `boto3.client("ram")` as [RAMClient](./client.md)
+Type annotations for `boto3.client("ram")` as [RAMClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_ram.client import RAMClient
 ```
 
-
 RAMClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_resource_share_invitation](./client.md#accept-resource-share-invitation)
 - [associate_resource_share](./client.md#associate-resource-share)
 - [associate_resource_share_permission](./client.md#associate-resource-share-permission)
@@ -61,10 +61,8 @@ RAMClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_resource_share](./client.md#update-resource-share)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
 - [InvalidClientTokenException](./client.md#invalidclienttokenexception)
@@ -88,14 +86,10 @@ RAMClient [exceptions](./client.md#exceptions)
 - [TagPolicyViolationException](./client.md#tagpolicyviolationexception)
 - [UnknownResourceException](./client.md#unknownresourceexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ram").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ram").get_paginator("...")`.
 
 Can be used directly:
 
@@ -109,11 +103,6 @@ from mypy_boto3_ram.paginators import GetResourcePoliciesPaginator, ...
 - [GetResourceSharesPaginator](./paginators.md#getresourcesharespaginator)
 - [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -139,13 +128,10 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [ResourceShareStatus](./literals.md#resourcesharestatus)
 - [ResourceStatus](./literals.md#resourcestatus)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

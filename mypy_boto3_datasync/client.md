@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [DataSync](./README.md) > DataSyncClient
 
-Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+Auto-generated documentation for
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+type annotations stubs module
+[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [DataSyncClient for boto3 DataSync module](#datasyncclient-for-boto3-datasync-module)
   - [DataSyncClient](#datasyncclient)
@@ -61,12 +63,13 @@ def get_datasync_client() -> DataSyncClient:
     return boto3.client("datasync")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
+Boto3 documentation:
+[DataSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_datasync.client import Exceptions
@@ -75,628 +78,654 @@ def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-
 Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.InternalException`
 - `Exceptions.InvalidRequestException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("datasync").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate]
+Boto3 documentation:
+[DataSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### cancel_task_execution
 
 Type annotations for `boto3.client("datasync").cancel_task_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution]
+Boto3 documentation:
+[DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
 
-```python
-def cancel_task_execution(
-    self,
-    TaskExecutionArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TaskExecutionArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### create_agent
 
 Type annotations for `boto3.client("datasync").create_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent]
+Boto3 documentation:
+[DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
 
-```python
-def create_agent(
-    self,
-    ActivationKey: str,
-    AgentName: str = None,
-    Tags: List["TagListEntryTypeDef"] = None,
-    VpcEndpointId: str = None,
-    SubnetArns: List[str] = None,
-    SecurityGroupArns: List[str] = None
-) -> CreateAgentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ActivationKey`: `str` *(required)*
+- `AgentName`: `str`
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `VpcEndpointId`: `str`
+- `SubnetArns`: `List`\[`str`\]
+- `SecurityGroupArns`: `List`\[`str`\]
+
+Returns
+[CreateAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createagentresponsetypedef).
 
 ### create_location_efs
 
 Type annotations for `boto3.client("datasync").create_location_efs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs]
+Boto3 documentation:
+[DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
 
-```python
-def create_location_efs(
-    self,
-    EfsFilesystemArn: str,
-    Ec2Config: "Ec2ConfigTypeDef",
-    Subdirectory: str = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateLocationEfsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `EfsFilesystemArn`: `str` *(required)*
+- `Ec2Config`:
+  [Ec2ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#ec2configtypedef)
+  *(required)*
+- `Subdirectory`: `str`
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateLocationEfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationefsresponsetypedef).
 
 ### create_location_fsx_windows
 
-Type annotations for `boto3.client("datasync").create_location_fsx_windows` method.
+Type annotations for `boto3.client("datasync").create_location_fsx_windows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows]
+Boto3 documentation:
+[DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
 
-```python
-def create_location_fsx_windows(
-    self,
-    FsxFilesystemArn: str,
-    SecurityGroupArns: List[str],
-    User: str,
-    Password: str,
-    Subdirectory: str = None,
-    Tags: List["TagListEntryTypeDef"] = None,
-    Domain: str = None
-) -> CreateLocationFsxWindowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `FsxFilesystemArn`: `str` *(required)*
+- `SecurityGroupArns`: `List`\[`str`\] *(required)*
+- `User`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `Subdirectory`: `str`
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Domain`: `str`
+
+Returns
+[CreateLocationFsxWindowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationfsxwindowsresponsetypedef).
 
 ### create_location_nfs
 
 Type annotations for `boto3.client("datasync").create_location_nfs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs]
+Boto3 documentation:
+[DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
 
-```python
-def create_location_nfs(
-    self,
-    Subdirectory: str,
-    ServerHostname: str,
-    OnPremConfig: "OnPremConfigTypeDef",
-    MountOptions: "NfsMountOptionsTypeDef" = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateLocationNfsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Subdirectory`: `str` *(required)*
+- `ServerHostname`: `str` *(required)*
+- `OnPremConfig`:
+  [OnPremConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#onpremconfigtypedef)
+  *(required)*
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#nfsmountoptionstypedef)
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateLocationNfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationnfsresponsetypedef).
 
 ### create_location_object_storage
 
-Type annotations for `boto3.client("datasync").create_location_object_storage` method.
+Type annotations for `boto3.client("datasync").create_location_object_storage`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage]
+Boto3 documentation:
+[DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
 
-```python
-def create_location_object_storage(
-    self,
-    ServerHostname: str,
-    BucketName: str,
-    AgentArns: List[str],
-    ServerPort: int = None,
-    ServerProtocol: ObjectStorageServerProtocol = None,
-    Subdirectory: str = None,
-    AccessKey: str = None,
-    SecretKey: str = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateLocationObjectStorageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ServerHostname`: `str` *(required)*
+- `BucketName`: `str` *(required)*
+- `AgentArns`: `List`\[`str`\] *(required)*
+- `ServerPort`: `int`
+- `ServerProtocol`:
+  [ObjectStorageServerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#objectstorageserverprotocol)
+- `Subdirectory`: `str`
+- `AccessKey`: `str`
+- `SecretKey`: `str`
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateLocationObjectStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationobjectstorageresponsetypedef).
 
 ### create_location_s3
 
 Type annotations for `boto3.client("datasync").create_location_s3` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3]
+Boto3 documentation:
+[DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
 
-```python
-def create_location_s3(
-    self,
-    S3BucketArn: str,
-    S3Config: "S3ConfigTypeDef",
-    Subdirectory: str = None,
-    S3StorageClass: S3StorageClass = None,
-    AgentArns: List[str] = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateLocationS3ResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `S3BucketArn`: `str` *(required)*
+- `S3Config`:
+  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#s3configtypedef)
+  *(required)*
+- `Subdirectory`: `str`
+- `S3StorageClass`:
+  [S3StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#s3storageclass)
+- `AgentArns`: `List`\[`str`\]
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateLocationS3ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocations3responsetypedef).
 
 ### create_location_smb
 
 Type annotations for `boto3.client("datasync").create_location_smb` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb]
+Boto3 documentation:
+[DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
 
-```python
-def create_location_smb(
-    self,
-    Subdirectory: str,
-    ServerHostname: str,
-    User: str,
-    Password: str,
-    AgentArns: List[str],
-    Domain: str = None,
-    MountOptions: "SmbMountOptionsTypeDef" = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateLocationSmbResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Subdirectory`: `str` *(required)*
+- `ServerHostname`: `str` *(required)*
+- `User`: `str` *(required)*
+- `Password`: `str` *(required)*
+- `AgentArns`: `List`\[`str`\] *(required)*
+- `Domain`: `str`
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#smbmountoptionstypedef)
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateLocationSmbResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationsmbresponsetypedef).
 
 ### create_task
 
 Type annotations for `boto3.client("datasync").create_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task]
+Boto3 documentation:
+[DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
 
-```python
-def create_task(
-    self,
-    SourceLocationArn: str,
-    DestinationLocationArn: str,
-    CloudWatchLogGroupArn: str = None,
-    Name: str = None,
-    Options: "OptionsTypeDef" = None,
-    Excludes: List["FilterRuleTypeDef"] = None,
-    Schedule: "TaskScheduleTypeDef" = None,
-    Tags: List["TagListEntryTypeDef"] = None
-) -> CreateTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `SourceLocationArn`: `str` *(required)*
+- `DestinationLocationArn`: `str` *(required)*
+- `CloudWatchLogGroupArn`: `str`
+- `Name`: `str`
+- `Options`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+- `Excludes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+- `Schedule`:
+  [TaskScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskscheduletypedef)
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+
+Returns
+[CreateTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createtaskresponsetypedef).
 
 ### delete_agent
 
 Type annotations for `boto3.client("datasync").delete_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent]
+Boto3 documentation:
+[DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
 
-```python
-def delete_agent(
-    self,
-    AgentArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AgentArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_location
 
 Type annotations for `boto3.client("datasync").delete_location` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location]
+Boto3 documentation:
+[DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
 
-```python
-def delete_location(
-    self,
-    LocationArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_task
 
 Type annotations for `boto3.client("datasync").delete_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task]
+Boto3 documentation:
+[DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
 
-```python
-def delete_task(
-    self,
-    TaskArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TaskArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_agent
 
 Type annotations for `boto3.client("datasync").describe_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent]
+Boto3 documentation:
+[DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
 
-```python
-def describe_agent(
-    self,
-    AgentArn: str
-) -> DescribeAgentResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `AgentArn`: `str` *(required)*
+
+Returns
+[DescribeAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describeagentresponsetypedef).
 
 ### describe_location_efs
 
 Type annotations for `boto3.client("datasync").describe_location_efs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs]
+Boto3 documentation:
+[DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
-```python
-def describe_location_efs(
-    self,
-    LocationArn: str
-) -> DescribeLocationEfsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationEfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationefsresponsetypedef).
 
 ### describe_location_fsx_windows
 
-Type annotations for `boto3.client("datasync").describe_location_fsx_windows` method.
+Type annotations for `boto3.client("datasync").describe_location_fsx_windows`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows]
+Boto3 documentation:
+[DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
-```python
-def describe_location_fsx_windows(
-    self,
-    LocationArn: str
-) -> DescribeLocationFsxWindowsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationFsxWindowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationfsxwindowsresponsetypedef).
 
 ### describe_location_nfs
 
 Type annotations for `boto3.client("datasync").describe_location_nfs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs]
+Boto3 documentation:
+[DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
-```python
-def describe_location_nfs(
-    self,
-    LocationArn: str
-) -> DescribeLocationNfsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationNfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationnfsresponsetypedef).
 
 ### describe_location_object_storage
 
-Type annotations for `boto3.client("datasync").describe_location_object_storage` method.
+Type annotations for
+`boto3.client("datasync").describe_location_object_storage` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage]
+Boto3 documentation:
+[DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
-```python
-def describe_location_object_storage(
-    self,
-    LocationArn: str
-) -> DescribeLocationObjectStorageResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationObjectStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationobjectstorageresponsetypedef).
 
 ### describe_location_s3
 
 Type annotations for `boto3.client("datasync").describe_location_s3` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3]
+Boto3 documentation:
+[DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
-```python
-def describe_location_s3(
-    self,
-    LocationArn: str
-) -> DescribeLocationS3ResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationS3ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocations3responsetypedef).
 
 ### describe_location_smb
 
 Type annotations for `boto3.client("datasync").describe_location_smb` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb]
+Boto3 documentation:
+[DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
-```python
-def describe_location_smb(
-    self,
-    LocationArn: str
-) -> DescribeLocationSmbResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+
+Returns
+[DescribeLocationSmbResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationsmbresponsetypedef).
 
 ### describe_task
 
 Type annotations for `boto3.client("datasync").describe_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task]
+Boto3 documentation:
+[DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
 
-```python
-def describe_task(
-    self,
-    TaskArn: str
-) -> DescribeTaskResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TaskArn`: `str` *(required)*
+
+Returns
+[DescribeTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describetaskresponsetypedef).
 
 ### describe_task_execution
 
 Type annotations for `boto3.client("datasync").describe_task_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution]
+Boto3 documentation:
+[DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
-```python
-def describe_task_execution(
-    self,
-    TaskExecutionArn: str
-) -> DescribeTaskExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TaskExecutionArn`: `str` *(required)*
+
+Returns
+[DescribeTaskExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describetaskexecutionresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("datasync").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url]
+Boto3 documentation:
+[DataSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_agents
 
 Type annotations for `boto3.client("datasync").list_agents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents]
+Boto3 documentation:
+[DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
 
-```python
-def list_agents(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListAgentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listagentsresponsetypedef).
 
 ### list_locations
 
 Type annotations for `boto3.client("datasync").list_locations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations]
+Boto3 documentation:
+[DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
 
-```python
-def list_locations(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[LocationFilterTypeDef] = None
-) -> ListLocationsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[LocationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#locationfiltertypedef)\]
+
+Returns
+[ListLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listlocationsresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource]
+Boto3 documentation:
+[DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    ResourceArn: str,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### list_task_executions
 
 Type annotations for `boto3.client("datasync").list_task_executions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions]
+Boto3 documentation:
+[DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
 
-```python
-def list_task_executions(
-    self,
-    TaskArn: str = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> ListTaskExecutionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TaskArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTaskExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtaskexecutionsresponsetypedef).
 
 ### list_tasks
 
 Type annotations for `boto3.client("datasync").list_tasks` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks]
+Boto3 documentation:
+[DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
 
-```python
-def list_tasks(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Filters: List[TaskFilterTypeDef] = None
-) -> ListTasksResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[TaskFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskfiltertypedef)\]
+
+Returns
+[ListTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtasksresponsetypedef).
 
 ### start_task_execution
 
 Type annotations for `boto3.client("datasync").start_task_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution]
+Boto3 documentation:
+[DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
 
-```python
-def start_task_execution(
-    self,
-    TaskArn: str,
-    OverrideOptions: "OptionsTypeDef" = None,
-    Includes: List["FilterRuleTypeDef"] = None
-) -> StartTaskExecutionResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TaskArn`: `str` *(required)*
+- `OverrideOptions`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+- `Includes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+
+Returns
+[StartTaskExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#starttaskexecutionresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("datasync").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource]
+Boto3 documentation:
+[DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    ResourceArn: str,
-    Tags: List["TagListEntryTypeDef"]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`:
+  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
 Type annotations for `boto3.client("datasync").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource]
+Boto3 documentation:
+[DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    ResourceArn: str,
-    Keys: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Keys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_agent
 
 Type annotations for `boto3.client("datasync").update_agent` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent]
+Boto3 documentation:
+[DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
 
-```python
-def update_agent(
-    self,
-    AgentArn: str,
-    Name: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `AgentArn`: `str` *(required)*
+- `Name`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_nfs
 
 Type annotations for `boto3.client("datasync").update_location_nfs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs]
+Boto3 documentation:
+[DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
 
-```python
-def update_location_nfs(
-    self,
-    LocationArn: str,
-    Subdirectory: str = None,
-    OnPremConfig: "OnPremConfigTypeDef" = None,
-    MountOptions: "NfsMountOptionsTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+- `Subdirectory`: `str`
+- `OnPremConfig`:
+  [OnPremConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#onpremconfigtypedef)
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#nfsmountoptionstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_object_storage
 
-Type annotations for `boto3.client("datasync").update_location_object_storage` method.
+Type annotations for `boto3.client("datasync").update_location_object_storage`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage]
+Boto3 documentation:
+[DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
 
-```python
-def update_location_object_storage(
-    self,
-    LocationArn: str,
-    ServerPort: int = None,
-    ServerProtocol: ObjectStorageServerProtocol = None,
-    Subdirectory: str = None,
-    AccessKey: str = None,
-    SecretKey: str = None,
-    AgentArns: List[str] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+- `ServerPort`: `int`
+- `ServerProtocol`:
+  [ObjectStorageServerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#objectstorageserverprotocol)
+- `Subdirectory`: `str`
+- `AccessKey`: `str`
+- `SecretKey`: `str`
+- `AgentArns`: `List`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_smb
 
 Type annotations for `boto3.client("datasync").update_location_smb` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb]
+Boto3 documentation:
+[DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
 
-```python
-def update_location_smb(
-    self,
-    LocationArn: str,
-    Subdirectory: str = None,
-    User: str = None,
-    Domain: str = None,
-    Password: str = None,
-    AgentArns: List[str] = None,
-    MountOptions: "SmbMountOptionsTypeDef" = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `LocationArn`: `str` *(required)*
+- `Subdirectory`: `str`
+- `User`: `str`
+- `Domain`: `str`
+- `Password`: `str`
+- `AgentArns`: `List`\[`str`\]
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#smbmountoptionstypedef)
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_task
 
 Type annotations for `boto3.client("datasync").update_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task]
+Boto3 documentation:
+[DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
 
-```python
-def update_task(
-    self,
-    TaskArn: str,
-    Options: "OptionsTypeDef" = None,
-    Excludes: List["FilterRuleTypeDef"] = None,
-    Schedule: "TaskScheduleTypeDef" = None,
-    Name: str = None,
-    CloudWatchLogGroupArn: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `TaskArn`: `str` *(required)*
+- `Options`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+- `Excludes`:
+  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+- `Schedule`:
+  [TaskScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskscheduletypedef)
+- `Name`: `str`
+- `CloudWatchLogGroupArn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_task_execution
 
 Type annotations for `boto3.client("datasync").update_task_execution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution]
+Boto3 documentation:
+[DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
 
-```python
-def update_task_execution(
-    self,
-    TaskExecutionArn: str,
-    Options: "OptionsTypeDef"
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
 
+- `TaskExecutionArn`: `str` *(required)*
+- `Options`:
+  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
+  *(required)*
 
+Returns `Dict`\[`str`, `Any`\].
 
 ### get_paginator
 
-Type annotations for `boto3.client("datasync").get_paginator` method with overloads.
+Type annotations for `boto3.client("datasync").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_agents")` -> [ListAgentsPaginator](./paginators.md#listagentspaginator)
-- `client.get_paginator("list_locations")` -> [ListLocationsPaginator](./paginators.md#listlocationspaginator)
-- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_task_executions")` -> [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
-- `client.get_paginator("list_tasks")` -> [ListTasksPaginator](./paginators.md#listtaskspaginator)
-
-
+- `client.get_paginator("list_agents")` ->
+  [ListAgentsPaginator](./paginators.md#listagentspaginator)
+- `client.get_paginator("list_locations")` ->
+  [ListLocationsPaginator](./paginators.md#listlocationspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_task_executions")` ->
+  [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
+- `client.get_paginator("list_tasks")` ->
+  [ListTasksPaginator](./paginators.md#listtaskspaginator)

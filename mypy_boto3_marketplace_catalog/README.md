@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MarketplaceCatalog
 
-Auto-generated documentation for [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
-type annotations stubs module [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+Auto-generated documentation for
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+type annotations stubs module
+[mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 ```bash
 pip install mypy-boto3-marketplace-catalog
@@ -18,7 +20,8 @@ pip install mypy-boto3-marketplace-catalog
 
 ## MarketplaceCatalogClient
 
-Type annotations for  `boto3.client("marketplace-catalog")` as [MarketplaceCatalogClient](./client.md)
+Type annotations for `boto3.client("marketplace-catalog")` as
+[MarketplaceCatalogClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 ```
 
-
 MarketplaceCatalogClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_change_set](./client.md#cancel-change-set)
 - [describe_change_set](./client.md#describe-change-set)
@@ -41,10 +42,8 @@ MarketplaceCatalogClient [exceptions](./client.md#exceptions)
 - [list_entities](./client.md#list-entities)
 - [start_change_set](./client.md#start-change-set)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServiceException](./client.md#internalserviceexception)
@@ -54,15 +53,6 @@ MarketplaceCatalogClient [exceptions](./client.md#exceptions)
 - [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -78,13 +68,10 @@ from mypy_boto3_marketplace_catalog.literals import ChangeStatus, ...
 - [FailureCode](./literals.md#failurecode)
 - [SortOrder](./literals.md#sortorder)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

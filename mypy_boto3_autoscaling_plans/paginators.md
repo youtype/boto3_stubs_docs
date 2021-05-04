@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [AutoScalingPlans](./README.md) > Paginators
 
-Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
-type annotations stubs module [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+Auto-generated documentation for
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+type annotations stubs module
+[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [Paginators for boto3 AutoScalingPlans module](#paginators-for-boto3-autoscalingplans-module)
   - [DescribeScalingPlanResourcesPaginator](#describescalingplanresourcespaginator)
@@ -11,7 +13,8 @@ type annotations stubs module [mypy_boto3_autoscaling_plans](https://pypi.org/pr
 
 ## DescribeScalingPlanResourcesPaginator
 
-Type annotations for `boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")`.
+Type annotations for
+`boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")`.
 
 Can be used directly:
 
@@ -22,21 +25,23 @@ def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResour
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
+Boto3 documentation:
+[AutoScalingPlans.Paginator.DescribeScalingPlanResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
 
-```python
-class DescribeScalingPlanResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ScalingPlanName: str,
-        ScalingPlanVersion: int,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeScalingPlanResourcesResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeScalingPlanResourcesPaginator.paginate` method:
+
+- `ScalingPlanName`: `str` *(required)*
+- `ScalingPlanVersion`: `int` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScalingPlanResourcesPaginator.paginate` returns
+`Iterator`\[[DescribeScalingPlanResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplanresourcesresponsetypedef)\].
+
 ## DescribeScalingPlansPaginator
 
-Type annotations for `boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")`.
+Type annotations for
+`boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")`.
 
 Can be used directly:
 
@@ -47,16 +52,17 @@ def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
+Boto3 documentation:
+[AutoScalingPlans.Paginator.DescribeScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
 
-```python
-class DescribeScalingPlansPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ScalingPlanNames: List[str] = None,
-        ScalingPlanVersion: int = None,
-        ApplicationSources: List["ApplicationSourceTypeDef"] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[DescribeScalingPlansResponseTypeDef]:
-        pass
-```
+Arguments for `DescribeScalingPlansPaginator.paginate` method:
+
+- `ScalingPlanNames`: `List`\[`str`\]
+- `ScalingPlanVersion`: `int`
+- `ApplicationSources`:
+  `List`\[[ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#paginatorconfigtypedef)
+
+`DescribeScalingPlansPaginator.paginate` returns
+`Iterator`\[[DescribeScalingPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplansresponsetypedef)\].

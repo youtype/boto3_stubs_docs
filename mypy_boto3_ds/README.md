@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DirectoryService
 
-Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+Auto-generated documentation for
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+type annotations stubs module
+[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 ```bash
 pip install mypy-boto3-ds
@@ -19,7 +21,8 @@ pip install mypy-boto3-ds
 
 ## DirectoryServiceClient
 
-Type annotations for  `boto3.client("ds")` as [DirectoryServiceClient](./client.md)
+Type annotations for `boto3.client("ds")` as
+[DirectoryServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_ds.client import DirectoryServiceClient
 ```
 
-
 DirectoryServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_shared_directory](./client.md#accept-shared-directory)
 - [add_ip_routes](./client.md#add-ip-routes)
 - [add_region](./client.md#add-region)
@@ -99,10 +100,8 @@ DirectoryServiceClient [exceptions](./client.md#exceptions)
 - [update_trust](./client.md#update-trust)
 - [verify_trust](./client.md#verify-trust)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AuthenticationFailedException](./client.md#authenticationfailedexception)
 - [CertificateAlreadyExistsException](./client.md#certificatealreadyexistsexception)
@@ -139,14 +138,10 @@ DirectoryServiceClient [exceptions](./client.md#exceptions)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 - [UserDoesNotExistException](./client.md#userdoesnotexistexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("ds").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("ds").get_paginator("...")`.
 
 Can be used directly:
 
@@ -163,11 +158,6 @@ from mypy_boto3_ds.paginators import DescribeDirectoriesPaginator, ...
 - [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
 - [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -215,13 +205,10 @@ from mypy_boto3_ds.literals import CertificateState, ...
 - [TrustState](./literals.md#truststate)
 - [TrustType](./literals.md#trusttype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

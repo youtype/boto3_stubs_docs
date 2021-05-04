@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [mgn](./README.md) > mgnClient
 
-Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
-type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+Auto-generated documentation for
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+type annotations stubs module
+[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [mgnClient for boto3 mgn module](#mgnclient-for-boto3-mgn-module)
   - [mgnClient](#mgnclient)
@@ -51,12 +53,13 @@ def get_mgn_client() -> mgnClient:
     return boto3.client("mgn")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
+Boto3 documentation:
+[mgn.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_mgn.client import Exceptions
@@ -64,7 +67,6 @@ from mypy_boto3_mgn.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -77,458 +79,470 @@ Exceptions:
 - `Exceptions.UninitializedAccountException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("mgn").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate]
+Boto3 documentation:
+[mgn.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### change_server_life_cycle_state
 
-Type annotations for `boto3.client("mgn").change_server_life_cycle_state` method.
+Type annotations for `boto3.client("mgn").change_server_life_cycle_state`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state]
+Boto3 documentation:
+[mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
 
-```python
-def change_server_life_cycle_state(
-    self,
-    lifeCycle: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef,
-    sourceServerID: str
-) -> "SourceServerTypeDef":
-    pass
-```
+Arguments:
+
+- `lifeCycle`:
+  [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#changeserverlifecyclestatesourceserverlifecycletypedef)
+  *(required)*
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
 
 ### create_replication_configuration_template
 
-Type annotations for `boto3.client("mgn").create_replication_configuration_template` method.
+Type annotations for
+`boto3.client("mgn").create_replication_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template]
+Boto3 documentation:
+[mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
 
-```python
-def create_replication_configuration_template(
-    self,
-    associateDefaultSecurityGroup: bool,
-    bandwidthThrottling: int,
-    createPublicIP: bool,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRouting,
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskType,
-    ebsEncryption: ReplicationConfigurationEbsEncryption,
-    replicationServerInstanceType: str,
-    replicationServersSecurityGroupsIDs: List[str],
-    stagingAreaSubnetId: str,
-    stagingAreaTags: Dict[str, str],
-    useDedicatedReplicationServer: bool,
-    ebsEncryptionKeyArn: str = None,
-    tags: Dict[str, str] = None
-) -> "ReplicationConfigurationTemplateTypeDef":
-    pass
-```
+Arguments:
+
+- `associateDefaultSecurityGroup`: `bool` *(required)*
+- `bandwidthThrottling`: `int` *(required)*
+- `createPublicIP`: `bool` *(required)*
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+  *(required)*
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+  *(required)*
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+  *(required)*
+- `replicationServerInstanceType`: `str` *(required)*
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\] *(required)*
+- `stagingAreaSubnetId`: `str` *(required)*
+- `stagingAreaTags`: `Dict`\[`str`, `str`\] *(required)*
+- `useDedicatedReplicationServer`: `bool` *(required)*
+- `ebsEncryptionKeyArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ReplicationConfigurationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtemplatetypedef).
 
 ### delete_job
 
 Type annotations for `boto3.client("mgn").delete_job` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job]
+Boto3 documentation:
+[mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
 
-```python
-def delete_job(
-    self,
-    jobID: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `jobID`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_replication_configuration_template
 
-Type annotations for `boto3.client("mgn").delete_replication_configuration_template` method.
+Type annotations for
+`boto3.client("mgn").delete_replication_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template]
+Boto3 documentation:
+[mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
 
-```python
-def delete_replication_configuration_template(
-    self,
-    replicationConfigurationTemplateID: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `replicationConfigurationTemplateID`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_source_server
 
 Type annotations for `boto3.client("mgn").delete_source_server` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server]
+Boto3 documentation:
+[mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
 
-```python
-def delete_source_server(
-    self,
-    sourceServerID: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_job_log_items
 
 Type annotations for `boto3.client("mgn").describe_job_log_items` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items]
+Boto3 documentation:
+[mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
 
-```python
-def describe_job_log_items(
-    self,
-    jobID: str,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeJobLogItemsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `jobID`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeJobLogItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejoblogitemsresponsetypedef).
 
 ### describe_jobs
 
 Type annotations for `boto3.client("mgn").describe_jobs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs]
+Boto3 documentation:
+[mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
 
-```python
-def describe_jobs(
-    self,
-    filters: DescribeJobsRequestFiltersTypeDef,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeJobsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  [DescribeJobsRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsrequestfilterstypedef)
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsresponsetypedef).
 
 ### describe_replication_configuration_templates
 
-Type annotations for `boto3.client("mgn").describe_replication_configuration_templates` method.
+Type annotations for
+`boto3.client("mgn").describe_replication_configuration_templates` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates]
+Boto3 documentation:
+[mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
 
-```python
-def describe_replication_configuration_templates(
-    self,
-    replicationConfigurationTemplateIDs: List[str],
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeReplicationConfigurationTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeReplicationConfigurationTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describereplicationconfigurationtemplatesresponsetypedef).
 
 ### describe_source_servers
 
 Type annotations for `boto3.client("mgn").describe_source_servers` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers]
+Boto3 documentation:
+[mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
 
-```python
-def describe_source_servers(
-    self,
-    filters: DescribeSourceServersRequestFiltersTypeDef,
-    maxResults: int = None,
-    nextToken: str = None
-) -> DescribeSourceServersResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filters`:
+  [DescribeSourceServersRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversrequestfilterstypedef)
+  *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[DescribeSourceServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversresponsetypedef).
 
 ### disconnect_from_service
 
 Type annotations for `boto3.client("mgn").disconnect_from_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service]
+Boto3 documentation:
+[mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
 
-```python
-def disconnect_from_service(
-    self,
-    sourceServerID: str
-) -> "SourceServerTypeDef":
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
 
 ### finalize_cutover
 
 Type annotations for `boto3.client("mgn").finalize_cutover` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover]
+Boto3 documentation:
+[mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
 
-```python
-def finalize_cutover(
-    self,
-    sourceServerID: str
-) -> "SourceServerTypeDef":
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("mgn").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url]
+Boto3 documentation:
+[mgn.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_launch_configuration
 
 Type annotations for `boto3.client("mgn").get_launch_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration]
+Boto3 documentation:
+[mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
 
-```python
-def get_launch_configuration(
-    self,
-    sourceServerID: str
-) -> LaunchConfigurationTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#launchconfigurationtypedef).
 
 ### get_replication_configuration
 
-Type annotations for `boto3.client("mgn").get_replication_configuration` method.
+Type annotations for `boto3.client("mgn").get_replication_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration]
+Boto3 documentation:
+[mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
 
-```python
-def get_replication_configuration(
-    self,
-    sourceServerID: str
-) -> ReplicationConfigurationTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtypedef).
 
 ### initialize_service
 
 Type annotations for `boto3.client("mgn").initialize_service` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service]
+Boto3 documentation:
+[mgn.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service)
 
-```python
-def initialize_service(
-    self
-) -> Dict[str, Any]:
-    pass
-```
+Returns `Dict`\[`str`, `Any`\].
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("mgn").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource]
+Boto3 documentation:
+[mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### mark_as_archived
 
 Type annotations for `boto3.client("mgn").mark_as_archived` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived]
+Boto3 documentation:
+[mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
 
-```python
-def mark_as_archived(
-    self,
-    sourceServerID: str
-) -> "SourceServerTypeDef":
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
 
 ### retry_data_replication
 
 Type annotations for `boto3.client("mgn").retry_data_replication` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication]
+Boto3 documentation:
+[mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
 
-```python
-def retry_data_replication(
-    self,
-    sourceServerID: str
-) -> "SourceServerTypeDef":
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+
+Returns
+[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
 
 ### start_cutover
 
 Type annotations for `boto3.client("mgn").start_cutover` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover]
+Boto3 documentation:
+[mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
 
-```python
-def start_cutover(
-    self,
-    sourceServerIDs: List[str],
-    tags: Dict[str, str] = None
-) -> StartCutoverResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerIDs`: `List`\[`str`\] *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartCutoverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#startcutoverresponsetypedef).
 
 ### start_test
 
 Type annotations for `boto3.client("mgn").start_test` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test]
+Boto3 documentation:
+[mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
 
-```python
-def start_test(
-    self,
-    sourceServerIDs: List[str],
-    tags: Dict[str, str] = None
-) -> StartTestResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerIDs`: `List`\[`str`\] *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[StartTestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#starttestresponsetypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("mgn").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource]
+Boto3 documentation:
+[mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    resourceArn: str,
-    tags: Dict[str, str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
 
 ### terminate_target_instances
 
 Type annotations for `boto3.client("mgn").terminate_target_instances` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances]
+Boto3 documentation:
+[mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
 
-```python
-def terminate_target_instances(
-    self,
-    sourceServerIDs: List[str],
-    tags: Dict[str, str] = None
-) -> TerminateTargetInstancesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerIDs`: `List`\[`str`\] *(required)*
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[TerminateTargetInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#terminatetargetinstancesresponsetypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("mgn").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource]
+Boto3 documentation:
+[mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    resourceArn: str,
-    tagKeys: List[str]
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
 
 ### update_launch_configuration
 
 Type annotations for `boto3.client("mgn").update_launch_configuration` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration]
+Boto3 documentation:
+[mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
 
-```python
-def update_launch_configuration(
-    self,
-    sourceServerID: str,
-    copyPrivateIp: bool = None,
-    copyTags: bool = None,
-    launchDisposition: LaunchDisposition = None,
-    licensing: "LicensingTypeDef" = None,
-    name: str = None,
-    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethod = None
-) -> LaunchConfigurationTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+- `copyPrivateIp`: `bool`
+- `copyTags`: `bool`
+- `launchDisposition`:
+  [LaunchDisposition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#launchdisposition)
+- `licensing`:
+  [LicensingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#licensingtypedef)
+- `name`: `str`
+- `targetInstanceTypeRightSizingMethod`:
+  [TargetInstanceTypeRightSizingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#targetinstancetyperightsizingmethod)
+
+Returns
+[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#launchconfigurationtypedef).
 
 ### update_replication_configuration
 
-Type annotations for `boto3.client("mgn").update_replication_configuration` method.
+Type annotations for `boto3.client("mgn").update_replication_configuration`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration]
+Boto3 documentation:
+[mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
 
-```python
-def update_replication_configuration(
-    self,
-    sourceServerID: str,
-    associateDefaultSecurityGroup: bool = None,
-    bandwidthThrottling: int = None,
-    createPublicIP: bool = None,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRouting = None,
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskType = None,
-    ebsEncryption: ReplicationConfigurationEbsEncryption = None,
-    ebsEncryptionKeyArn: str = None,
-    name: str = None,
-    replicatedDisks: List["ReplicationConfigurationReplicatedDiskTypeDef"] = None,
-    replicationServerInstanceType: str = None,
-    replicationServersSecurityGroupsIDs: List[str] = None,
-    stagingAreaSubnetId: str = None,
-    stagingAreaTags: Dict[str, str] = None,
-    useDedicatedReplicationServer: bool = None
-) -> ReplicationConfigurationTypeDef:
-    pass
-```
+Arguments:
+
+- `sourceServerID`: `str` *(required)*
+- `associateDefaultSecurityGroup`: `bool`
+- `bandwidthThrottling`: `int`
+- `createPublicIP`: `bool`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+- `ebsEncryptionKeyArn`: `str`
+- `name`: `str`
+- `replicatedDisks`:
+  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationreplicateddisktypedef)\]
+- `replicationServerInstanceType`: `str`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `stagingAreaSubnetId`: `str`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `useDedicatedReplicationServer`: `bool`
+
+Returns
+[ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtypedef).
 
 ### update_replication_configuration_template
 
-Type annotations for `boto3.client("mgn").update_replication_configuration_template` method.
+Type annotations for
+`boto3.client("mgn").update_replication_configuration_template` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template]
+Boto3 documentation:
+[mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
 
-```python
-def update_replication_configuration_template(
-    self,
-    replicationConfigurationTemplateID: str,
-    arn: str = None,
-    associateDefaultSecurityGroup: bool = None,
-    bandwidthThrottling: int = None,
-    createPublicIP: bool = None,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRouting = None,
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskType = None,
-    ebsEncryption: ReplicationConfigurationEbsEncryption = None,
-    ebsEncryptionKeyArn: str = None,
-    replicationServerInstanceType: str = None,
-    replicationServersSecurityGroupsIDs: List[str] = None,
-    stagingAreaSubnetId: str = None,
-    stagingAreaTags: Dict[str, str] = None,
-    useDedicatedReplicationServer: bool = None
-) -> "ReplicationConfigurationTemplateTypeDef":
-    pass
-```
+Arguments:
 
+- `replicationConfigurationTemplateID`: `str` *(required)*
+- `arn`: `str`
+- `associateDefaultSecurityGroup`: `bool`
+- `bandwidthThrottling`: `int`
+- `createPublicIP`: `bool`
+- `dataPlaneRouting`:
+  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+- `defaultLargeStagingDiskType`:
+  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+- `ebsEncryption`:
+  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+- `ebsEncryptionKeyArn`: `str`
+- `replicationServerInstanceType`: `str`
+- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `stagingAreaSubnetId`: `str`
+- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `useDedicatedReplicationServer`: `bool`
 
+Returns
+[ReplicationConfigurationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtemplatetypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("mgn").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_job_log_items")` -> [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
-- `client.get_paginator("describe_jobs")` -> [DescribeJobsPaginator](./paginators.md#describejobspaginator)
-- `client.get_paginator("describe_replication_configuration_templates")` -> [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
-- `client.get_paginator("describe_source_servers")` -> [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
-
-
+- `client.get_paginator("describe_job_log_items")` ->
+  [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+- `client.get_paginator("describe_jobs")` ->
+  [DescribeJobsPaginator](./paginators.md#describejobspaginator)
+- `client.get_paginator("describe_replication_configuration_templates")` ->
+  [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
+- `client.get_paginator("describe_source_servers")` ->
+  [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)

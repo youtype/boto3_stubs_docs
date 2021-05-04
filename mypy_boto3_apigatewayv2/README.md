@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ApiGatewayV2
 
-Auto-generated documentation for [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
-type annotations stubs module [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+Auto-generated documentation for
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
+type annotations stubs module
+[mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 ```bash
 pip install mypy-boto3-apigatewayv2
@@ -19,7 +21,8 @@ pip install mypy-boto3-apigatewayv2
 
 ## ApiGatewayV2Client
 
-Type annotations for  `boto3.client("apigatewayv2")` as [ApiGatewayV2Client](./client.md)
+Type annotations for `boto3.client("apigatewayv2")` as
+[ApiGatewayV2Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_apigatewayv2.client import ApiGatewayV2Client
 ```
 
-
 ApiGatewayV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_api](./client.md#create-api)
 - [create_api_mapping](./client.md#create-api-mapping)
@@ -109,10 +110,8 @@ ApiGatewayV2Client [exceptions](./client.md#exceptions)
 - [update_stage](./client.md#update-stage)
 - [update_vpc_link](./client.md#update-vpc-link)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -120,14 +119,10 @@ ApiGatewayV2Client [exceptions](./client.md#exceptions)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("apigatewayv2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("apigatewayv2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -145,11 +140,6 @@ from mypy_boto3_apigatewayv2.paginators import GetApisPaginator, ...
 - [GetRouteResponsesPaginator](./paginators.md#getrouteresponsespaginator)
 - [GetRoutesPaginator](./paginators.md#getroutespaginator)
 - [GetStagesPaginator](./paginators.md#getstagespaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -188,13 +178,10 @@ from mypy_boto3_apigatewayv2.literals import AuthorizationType, ...
 - [VpcLinkStatus](./literals.md#vpclinkstatus)
 - [VpcLinkVersion](./literals.md#vpclinkversion)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Amplify
 
-Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+Auto-generated documentation for
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+type annotations stubs module
+[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 ```bash
 pip install mypy-boto3-amplify
@@ -19,7 +21,7 @@ pip install mypy-boto3-amplify
 
 ## AmplifyClient
 
-Type annotations for  `boto3.client("amplify")` as [AmplifyClient](./client.md)
+Type annotations for `boto3.client("amplify")` as [AmplifyClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_amplify.client import AmplifyClient
 ```
 
-
 AmplifyClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_app](./client.md#create-app)
 - [create_backend_environment](./client.md#create-backend-environment)
@@ -74,10 +74,8 @@ AmplifyClient [exceptions](./client.md#exceptions)
 - [update_domain_association](./client.md#update-domain-association)
 - [update_webhook](./client.md#update-webhook)
 
-
-
-
 ### Exceptions
+
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
 - [DependentServiceFailureException](./client.md#dependentservicefailureexception)
@@ -87,14 +85,10 @@ AmplifyClient [exceptions](./client.md#exceptions)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [UnauthorizedException](./client.md#unauthorizedexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("amplify").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("amplify").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,11 +100,6 @@ from mypy_boto3_amplify.paginators import ListAppsPaginator, ...
 - [ListBranchesPaginator](./paginators.md#listbranchespaginator)
 - [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -132,13 +121,10 @@ from mypy_boto3_amplify.literals import DomainStatus, ...
 - [Platform](./literals.md#platform)
 - [Stage](./literals.md#stage)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

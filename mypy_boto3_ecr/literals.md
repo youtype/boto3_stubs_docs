@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ECR](./README.md) > Literals
 
-Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+Auto-generated documentation for
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+type annotations stubs module
+[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Literals for boto3 ECR module](#literals-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginatorName](#describeimagescanfindingspaginatorname)

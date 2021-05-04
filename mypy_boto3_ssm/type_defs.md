@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SSM](./README.md) > Structures
 
-Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+Auto-generated documentation for
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+type annotations stubs module
+[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Typed dictionaries for boto3 SSM module](#typed-dictionaries-for-boto3-ssm-module)
   - [AccountSharingInfoTypeDef](#accountsharinginfotypedef)
@@ -272,13 +274,10 @@ type annotations stubs module [mypy_boto3_ssm](https://pypi.org/project/mypy-bot
 from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AccountId`: `str`
 - `SharedDocumentVersion`: `str`
-
 
 ## ActivationTypeDef
 
@@ -286,10 +285,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ActivationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActivationId`: `str`
 - `Description`: `str`
 - `DefaultInstanceName`: `str`
@@ -299,8 +296,8 @@ Optional fields:
 - `ExpirationDate`: `datetime`
 - `Expired`: `bool`
 - `CreatedDate`: `datetime`
-- `Tags`: `List["TagTypeDef"]`
-
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
 
 ## AssociationDescriptionTypeDef
 
@@ -308,34 +305,38 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `InstanceId`: `str`
 - `AssociationVersion`: `str`
 - `Date`: `datetime`
 - `LastUpdateAssociationDate`: `datetime`
-- `Status`: `"AssociationStatusTypeDef"`
-- `Overview`: `"AssociationOverviewTypeDef"`
+- `Status`:
+  [AssociationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationstatustypedef)
+- `Overview`:
+  [AssociationOverviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationoverviewtypedef)
 - `DocumentVersion`: `str`
 - `AutomationTargetParameterName`: `str`
-- `Parameters`: `Dict[str, List[str]]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `AssociationId`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `ScheduleExpression`: `str`
-- `OutputLocation`: `"InstanceAssociationOutputLocationTypeDef"`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputlocationtypedef)
 - `LastExecutionDate`: `datetime`
 - `LastSuccessfulExecutionDate`: `datetime`
 - `AssociationName`: `str`
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
-- `ComplianceSeverity`: `AssociationComplianceSeverity`
-- `SyncCompliance`: `AssociationSyncCompliance`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationcomplianceseverity)
+- `SyncCompliance`:
+  [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `TargetLocations`: `List["TargetLocationTypeDef"]`
-
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 
 ## AssociationExecutionFilterTypeDef
 
@@ -343,14 +344,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationExecutionFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `AssociationExecutionFilterKey`
+
+- `Key`:
+  [AssociationExecutionFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationexecutionfilterkey)
 - `Value`: `str`
-- `Type`: `AssociationFilterOperatorType`
-
-
-
+- `Type`:
+  [AssociationFilterOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationfilteroperatortype)
 
 ## AssociationExecutionTargetTypeDef
 
@@ -358,10 +358,8 @@ Required fields:
 from mypy_boto3_ssm.type_defs import AssociationExecutionTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `AssociationVersion`: `str`
 - `ExecutionId`: `str`
@@ -370,8 +368,8 @@ Optional fields:
 - `Status`: `str`
 - `DetailedStatus`: `str`
 - `LastExecutionDate`: `datetime`
-- `OutputSource`: `"OutputSourceTypeDef"`
-
+- `OutputSource`:
+  [OutputSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#outputsourcetypedef)
 
 ## AssociationExecutionTargetsFilterTypeDef
 
@@ -379,13 +377,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationExecutionTargetsFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `AssociationExecutionTargetsFilterKey`
+
+- `Key`:
+  [AssociationExecutionTargetsFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationexecutiontargetsfilterkey)
 - `Value`: `str`
-
-
-
 
 ## AssociationExecutionTypeDef
 
@@ -393,10 +389,8 @@ Required fields:
 from mypy_boto3_ssm.type_defs import AssociationExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `AssociationVersion`: `str`
 - `ExecutionId`: `str`
@@ -406,20 +400,17 @@ Optional fields:
 - `LastExecutionDate`: `datetime`
 - `ResourceCountByStatus`: `str`
 
-
 ## AssociationFilterTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import AssociationFilterTypeDef
 ```
 
-
 Required fields:
-- `key`: `AssociationFilterKey`
+
+- `key`:
+  [AssociationFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationfilterkey)
 - `value`: `str`
-
-
-
 
 ## AssociationOverviewTypeDef
 
@@ -427,14 +418,11 @@ Required fields:
 from mypy_boto3_ssm.type_defs import AssociationOverviewTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Status`: `str`
 - `DetailedStatus`: `str`
-- `AssociationStatusAggregatedCount`: `Dict[str, int]`
-
+- `AssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
 
 ## AssociationStatusTypeDef
 
@@ -442,17 +430,16 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationStatusTypeDef
 ```
 
-
 Required fields:
+
 - `Date`: `datetime`
-- `Name`: `AssociationStatusName`
+- `Name`:
+  [AssociationStatusName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationstatusname)
 - `Message`: `str`
 
-
-
 Optional fields:
-- `AdditionalInfo`: `str`
 
+- `AdditionalInfo`: `str`
 
 ## AssociationTypeDef
 
@@ -460,21 +447,20 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `InstanceId`: `str`
 - `AssociationId`: `str`
 - `AssociationVersion`: `str`
 - `DocumentVersion`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `LastExecutionDate`: `datetime`
-- `Overview`: `"AssociationOverviewTypeDef"`
+- `Overview`:
+  [AssociationOverviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationoverviewtypedef)
 - `ScheduleExpression`: `str`
 - `AssociationName`: `str`
-
 
 ## AssociationVersionInfoTypeDef
 
@@ -482,27 +468,29 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AssociationVersionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `AssociationVersion`: `str`
 - `CreatedDate`: `datetime`
 - `Name`: `str`
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict[str, List[str]]`
-- `Targets`: `List["TargetTypeDef"]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `ScheduleExpression`: `str`
-- `OutputLocation`: `"InstanceAssociationOutputLocationTypeDef"`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputlocationtypedef)
 - `AssociationName`: `str`
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
-- `ComplianceSeverity`: `AssociationComplianceSeverity`
-- `SyncCompliance`: `AssociationSyncCompliance`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationcomplianceseverity)
+- `SyncCompliance`:
+  [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `TargetLocations`: `List["TargetLocationTypeDef"]`
-
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 
 ## AttachmentContentTypeDef
 
@@ -510,16 +498,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AttachmentContentTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Size`: `int`
 - `Hash`: `str`
 - `HashType`: `Literal['Sha256']`
 - `Url`: `str`
-
 
 ## AttachmentInformationTypeDef
 
@@ -527,12 +512,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AttachmentInformationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Name`: `str`
 
+- `Name`: `str`
 
 ## AttachmentsSourceTypeDef
 
@@ -540,14 +522,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AttachmentsSourceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `AttachmentsSourceKey`
-- `Values`: `List[str]`
-- `Name`: `str`
 
+- `Key`:
+  [AttachmentsSourceKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#attachmentssourcekey)
+- `Values`: `List`\[`str`\]
+- `Name`: `str`
 
 ## AutomationExecutionFilterTypeDef
 
@@ -555,13 +535,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AutomationExecutionFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `AutomationExecutionFilterKey`
-- `Values`: `List[str]`
 
-
-
+- `Key`:
+  [AutomationExecutionFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#automationexecutionfilterkey)
+- `Values`: `List`\[`str`\]
 
 ## AutomationExecutionMetadataTypeDef
 
@@ -569,39 +547,42 @@ Required fields:
 from mypy_boto3_ssm.type_defs import AutomationExecutionMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutomationExecutionId`: `str`
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
-- `AutomationExecutionStatus`: `AutomationExecutionStatus`
+- `AutomationExecutionStatus`:
+  [AutomationExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#automationexecutionstatus)
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
 - `ExecutedBy`: `str`
 - `LogFile`: `str`
-- `Outputs`: `Dict[str, List[str]]`
-- `Mode`: `ExecutionMode`
+- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Mode`:
+  [ExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#executionmode)
 - `ParentAutomationExecutionId`: `str`
 - `CurrentStepName`: `str`
 - `CurrentAction`: `str`
 - `FailureMessage`: `str`
 - `TargetParameterName`: `str`
-- `Targets`: `List["TargetTypeDef"]`
-- `TargetMaps`: `List[Dict[str, List[str]]]`
-- `ResolvedTargets`: `"ResolvedTargetsTypeDef"`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `ResolvedTargets`:
+  [ResolvedTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resolvedtargetstypedef)
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `Target`: `str`
-- `AutomationType`: `AutomationType`
+- `AutomationType`:
+  [AutomationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#automationtype)
 - `AutomationSubtype`: `Literal['ChangeRequest']`
 - `ScheduledTime`: `datetime`
-- `Runbooks`: `List["RunbookTypeDef"]`
+- `Runbooks`:
+  `List`\[[RunbookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#runbooktypedef)\]
 - `OpsItemId`: `str`
 - `AssociationId`: `str`
 - `ChangeRequestName`: `str`
-
 
 ## AutomationExecutionTypeDef
 
@@ -609,42 +590,47 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import AutomationExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AutomationExecutionId`: `str`
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
-- `AutomationExecutionStatus`: `AutomationExecutionStatus`
-- `StepExecutions`: `List["StepExecutionTypeDef"]`
+- `AutomationExecutionStatus`:
+  [AutomationExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#automationexecutionstatus)
+- `StepExecutions`:
+  `List`\[[StepExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#stepexecutiontypedef)\]
 - `StepExecutionsTruncated`: `bool`
-- `Parameters`: `Dict[str, List[str]]`
-- `Outputs`: `Dict[str, List[str]]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
 - `FailureMessage`: `str`
-- `Mode`: `ExecutionMode`
+- `Mode`:
+  [ExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#executionmode)
 - `ParentAutomationExecutionId`: `str`
 - `ExecutedBy`: `str`
 - `CurrentStepName`: `str`
 - `CurrentAction`: `str`
 - `TargetParameterName`: `str`
-- `Targets`: `List["TargetTypeDef"]`
-- `TargetMaps`: `List[Dict[str, List[str]]]`
-- `ResolvedTargets`: `"ResolvedTargetsTypeDef"`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `ResolvedTargets`:
+  [ResolvedTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resolvedtargetstypedef)
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `Target`: `str`
-- `TargetLocations`: `List["TargetLocationTypeDef"]`
-- `ProgressCounters`: `"ProgressCountersTypeDef"`
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
+- `ProgressCounters`:
+  [ProgressCountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#progresscounterstypedef)
 - `AutomationSubtype`: `Literal['ChangeRequest']`
 - `ScheduledTime`: `datetime`
-- `Runbooks`: `List["RunbookTypeDef"]`
+- `Runbooks`:
+  `List`\[[RunbookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#runbooktypedef)\]
 - `OpsItemId`: `str`
 - `AssociationId`: `str`
 - `ChangeRequestName`: `str`
-
 
 ## BaselineOverrideTypeDef
 
@@ -652,20 +638,23 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import BaselineOverrideTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OperatingSystem`: `OperatingSystem`
-- `GlobalFilters`: `"PatchFilterGroupTypeDef"`
-- `ApprovalRules`: `"PatchRuleGroupTypeDef"`
-- `ApprovedPatches`: `List[str]`
-- `ApprovedPatchesComplianceLevel`: `PatchComplianceLevel`
-- `RejectedPatches`: `List[str]`
-- `RejectedPatchesAction`: `PatchAction`
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `Sources`: `List["PatchSourceTypeDef"]`
 
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`:
+  [PatchAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchaction)
+- `ApprovedPatchesEnableNonSecurity`: `bool`
+- `Sources`:
+  `List`\[[PatchSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchsourcetypedef)\]
 
 ## CancelMaintenanceWindowExecutionResultTypeDef
 
@@ -673,12 +662,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowExecutionId`: `str`
 
+- `WindowExecutionId`: `str`
 
 ## CloudWatchOutputConfigTypeDef
 
@@ -686,13 +672,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CloudWatchOutputConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CloudWatchLogGroupName`: `str`
 - `CloudWatchOutputEnabled`: `bool`
-
 
 ## CommandFilterTypeDef
 
@@ -700,13 +683,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CommandFilterTypeDef
 ```
 
-
 Required fields:
-- `key`: `CommandFilterKey`
+
+- `key`:
+  [CommandFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#commandfilterkey)
 - `value`: `str`
-
-
-
 
 ## CommandInvocationTypeDef
 
@@ -714,10 +695,8 @@ Required fields:
 from mypy_boto3_ssm.type_defs import CommandInvocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `InstanceName`: `str`
@@ -725,16 +704,19 @@ Optional fields:
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
 - `RequestedDateTime`: `datetime`
-- `Status`: `CommandInvocationStatus`
+- `Status`:
+  [CommandInvocationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#commandinvocationstatus)
 - `StatusDetails`: `str`
 - `TraceOutput`: `str`
 - `StandardOutputUrl`: `str`
 - `StandardErrorUrl`: `str`
-- `CommandPlugins`: `List["CommandPluginTypeDef"]`
+- `CommandPlugins`:
+  `List`\[[CommandPluginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandplugintypedef)\]
 - `ServiceRole`: `str`
-- `NotificationConfig`: `"NotificationConfigTypeDef"`
-- `CloudWatchOutputConfig`: `"CloudWatchOutputConfigTypeDef"`
-
+- `NotificationConfig`:
+  [NotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#notificationconfigtypedef)
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cloudwatchoutputconfigtypedef)
 
 ## CommandPluginTypeDef
 
@@ -742,12 +724,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CommandPluginTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Status`: `CommandPluginStatus`
+- `Status`:
+  [CommandPluginStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#commandpluginstatus)
 - `StatusDetails`: `str`
 - `ResponseCode`: `int`
 - `ResponseStartDateTime`: `datetime`
@@ -759,27 +740,26 @@ Optional fields:
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
 
-
 ## CommandTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import CommandTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CommandId`: `str`
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
 - `Comment`: `str`
 - `ExpiresAfter`: `datetime`
-- `Parameters`: `Dict[str, List[str]]`
-- `InstanceIds`: `List[str]`
-- `Targets`: `List["TargetTypeDef"]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `InstanceIds`: `List`\[`str`\]
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `RequestedDateTime`: `datetime`
-- `Status`: `CommandStatus`
+- `Status`:
+  [CommandStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#commandstatus)
 - `StatusDetails`: `str`
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
@@ -791,10 +771,11 @@ Optional fields:
 - `ErrorCount`: `int`
 - `DeliveryTimedOutCount`: `int`
 - `ServiceRole`: `str`
-- `NotificationConfig`: `"NotificationConfigTypeDef"`
-- `CloudWatchOutputConfig`: `"CloudWatchOutputConfigTypeDef"`
+- `NotificationConfig`:
+  [NotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#notificationconfigtypedef)
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cloudwatchoutputconfigtypedef)
 - `TimeoutSeconds`: `int`
-
 
 ## ComplianceExecutionSummaryTypeDef
 
@@ -802,16 +783,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ComplianceExecutionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `ExecutionTime`: `datetime`
 
-
-
 Optional fields:
+
 - `ExecutionId`: `str`
 - `ExecutionType`: `str`
-
 
 ## ComplianceItemEntryTypeDef
 
@@ -819,18 +798,18 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ComplianceItemEntryTypeDef
 ```
 
-
 Required fields:
-- `Severity`: `ComplianceSeverity`
-- `Status`: `ComplianceStatus`
 
-
+- `Severity`:
+  [ComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#complianceseverity)
+- `Status`:
+  [ComplianceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#compliancestatus)
 
 Optional fields:
+
 - `Id`: `str`
 - `Title`: `str`
-- `Details`: `Dict[str, str]`
-
+- `Details`: `Dict`\[`str`, `str`\]
 
 ## ComplianceItemTypeDef
 
@@ -838,20 +817,20 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ComplianceItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ComplianceType`: `str`
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 - `Id`: `str`
 - `Title`: `str`
-- `Status`: `ComplianceStatus`
-- `Severity`: `ComplianceSeverity`
-- `ExecutionSummary`: `"ComplianceExecutionSummaryTypeDef"`
-- `Details`: `Dict[str, str]`
-
+- `Status`:
+  [ComplianceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#compliancestatus)
+- `Severity`:
+  [ComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#complianceseverity)
+- `ExecutionSummary`:
+  [ComplianceExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#complianceexecutionsummarytypedef)
+- `Details`: `Dict`\[`str`, `str`\]
 
 ## ComplianceStringFilterTypeDef
 
@@ -859,14 +838,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ComplianceStringFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
-- `Type`: `ComplianceQueryOperatorType`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
+- `Type`:
+  [ComplianceQueryOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#compliancequeryoperatortype)
 
 ## ComplianceSummaryItemTypeDef
 
@@ -874,14 +851,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ComplianceSummaryItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ComplianceType`: `str`
-- `CompliantSummary`: `"CompliantSummaryTypeDef"`
-- `NonCompliantSummary`: `"NonCompliantSummaryTypeDef"`
 
+- `ComplianceType`: `str`
+- `CompliantSummary`:
+  [CompliantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliantsummarytypedef)
+- `NonCompliantSummary`:
+  [NonCompliantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#noncompliantsummarytypedef)
 
 ## CompliantSummaryTypeDef
 
@@ -889,13 +865,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CompliantSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CompliantCount`: `int`
-- `SeveritySummary`: `"SeveritySummaryTypeDef"`
 
+- `CompliantCount`: `int`
+- `SeveritySummary`:
+  [SeveritySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#severitysummarytypedef)
 
 ## CreateActivationResultTypeDef
 
@@ -903,13 +877,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateActivationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ActivationId`: `str`
 - `ActivationCode`: `str`
-
 
 ## CreateAssociationBatchRequestEntryTypeDef
 
@@ -917,28 +888,31 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestEntryTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
+
 - `InstanceId`: `str`
-- `Parameters`: `Dict[str, List[str]]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `AutomationTargetParameterName`: `str`
 - `DocumentVersion`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `ScheduleExpression`: `str`
-- `OutputLocation`: `"InstanceAssociationOutputLocationTypeDef"`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputlocationtypedef)
 - `AssociationName`: `str`
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
-- `ComplianceSeverity`: `AssociationComplianceSeverity`
-- `SyncCompliance`: `AssociationSyncCompliance`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationcomplianceseverity)
+- `SyncCompliance`:
+  [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `TargetLocations`: `List["TargetLocationTypeDef"]`
-
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 
 ## CreateAssociationBatchResultTypeDef
 
@@ -946,13 +920,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Successful`: `List["AssociationDescriptionTypeDef"]`
-- `Failed`: `List["FailedCreateAssociationTypeDef"]`
 
+- `Successful`:
+  `List`\[[AssociationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationdescriptiontypedef)\]
+- `Failed`:
+  `List`\[[FailedCreateAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#failedcreateassociationtypedef)\]
 
 ## CreateAssociationResultTypeDef
 
@@ -960,12 +933,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateAssociationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationDescription`: `"AssociationDescriptionTypeDef"`
 
+- `AssociationDescription`:
+  [AssociationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationdescriptiontypedef)
 
 ## CreateDocumentResultTypeDef
 
@@ -973,12 +944,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateDocumentResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentDescription`: `"DocumentDescriptionTypeDef"`
 
+- `DocumentDescription`:
+  [DocumentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentdescriptiontypedef)
 
 ## CreateMaintenanceWindowResultTypeDef
 
@@ -986,12 +955,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowId`: `str`
 
+- `WindowId`: `str`
 
 ## CreateOpsItemResponseTypeDef
 
@@ -999,12 +965,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateOpsItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpsItemId`: `str`
 
+- `OpsItemId`: `str`
 
 ## CreateOpsMetadataResultTypeDef
 
@@ -1012,12 +975,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreateOpsMetadataResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpsMetadataArn`: `str`
 
+- `OpsMetadataArn`: `str`
 
 ## CreatePatchBaselineResultTypeDef
 
@@ -1025,12 +985,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import CreatePatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaselineId`: `str`
 
+- `BaselineId`: `str`
 
 ## DeleteInventoryResultTypeDef
 
@@ -1038,14 +995,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeleteInventoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeletionId`: `str`
 - `TypeName`: `str`
-- `DeletionSummary`: `"InventoryDeletionSummaryTypeDef"`
-
+- `DeletionSummary`:
+  [InventoryDeletionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventorydeletionsummarytypedef)
 
 ## DeleteMaintenanceWindowResultTypeDef
 
@@ -1053,12 +1008,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowId`: `str`
 
+- `WindowId`: `str`
 
 ## DeleteParametersResultTypeDef
 
@@ -1066,13 +1018,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeleteParametersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeletedParameters`: `List[str]`
-- `InvalidParameters`: `List[str]`
 
+- `DeletedParameters`: `List`\[`str`\]
+- `InvalidParameters`: `List`\[`str`\]
 
 ## DeletePatchBaselineResultTypeDef
 
@@ -1080,12 +1029,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeletePatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaselineId`: `str`
 
+- `BaselineId`: `str`
 
 ## DeregisterPatchBaselineForPatchGroupResultTypeDef
 
@@ -1093,13 +1039,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
-
 
 ## DeregisterTargetFromMaintenanceWindowResultTypeDef
 
@@ -1107,13 +1050,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
-
 
 ## DeregisterTaskFromMaintenanceWindowResultTypeDef
 
@@ -1121,13 +1061,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
-
 
 ## DescribeActivationsFilterTypeDef
 
@@ -1135,13 +1072,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeActivationsFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `FilterKey`: `DescribeActivationsFilterKeys`
-- `FilterValues`: `List[str]`
 
+- `FilterKey`:
+  [DescribeActivationsFilterKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#describeactivationsfilterkeys)
+- `FilterValues`: `List`\[`str`\]
 
 ## DescribeActivationsResultTypeDef
 
@@ -1149,13 +1084,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeActivationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ActivationList`: `List["ActivationTypeDef"]`
-- `NextToken`: `str`
 
+- `ActivationList`:
+  `List`\[[ActivationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#activationtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAssociationExecutionTargetsResultTypeDef
 
@@ -1163,13 +1096,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationExecutionTargets`: `List["AssociationExecutionTargetTypeDef"]`
-- `NextToken`: `str`
 
+- `AssociationExecutionTargets`:
+  `List`\[[AssociationExecutionTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutiontargettypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAssociationExecutionsResultTypeDef
 
@@ -1177,13 +1108,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationExecutions`: `List["AssociationExecutionTypeDef"]`
-- `NextToken`: `str`
 
+- `AssociationExecutions`:
+  `List`\[[AssociationExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAssociationResultTypeDef
 
@@ -1191,12 +1120,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAssociationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationDescription`: `"AssociationDescriptionTypeDef"`
 
+- `AssociationDescription`:
+  [AssociationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationdescriptiontypedef)
 
 ## DescribeAutomationExecutionsResultTypeDef
 
@@ -1204,13 +1131,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomationExecutionMetadataList`: `List["AutomationExecutionMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `AutomationExecutionMetadataList`:
+  `List`\[[AutomationExecutionMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#automationexecutionmetadatatypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAutomationStepExecutionsResultTypeDef
 
@@ -1218,13 +1143,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `StepExecutions`: `List["StepExecutionTypeDef"]`
-- `NextToken`: `str`
 
+- `StepExecutions`:
+  `List`\[[StepExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#stepexecutiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeAvailablePatchesResultTypeDef
 
@@ -1232,13 +1155,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Patches`: `List["PatchTypeDef"]`
-- `NextToken`: `str`
 
+- `Patches`:
+  `List`\[[PatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeDocumentPermissionResponseTypeDef
 
@@ -1246,14 +1167,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AccountIds`: `List[str]`
-- `AccountSharingInfoList`: `List["AccountSharingInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `AccountIds`: `List`\[`str`\]
+- `AccountSharingInfoList`:
+  `List`\[[AccountSharingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#accountsharinginfotypedef)\]
+- `NextToken`: `str`
 
 ## DescribeDocumentResultTypeDef
 
@@ -1261,12 +1180,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeDocumentResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Document`: `"DocumentDescriptionTypeDef"`
 
+- `Document`:
+  [DocumentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentdescriptiontypedef)
 
 ## DescribeEffectiveInstanceAssociationsResultTypeDef
 
@@ -1274,13 +1191,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Associations`: `List["InstanceAssociationTypeDef"]`
-- `NextToken`: `str`
 
+- `Associations`:
+  `List`\[[InstanceAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeEffectivePatchesForPatchBaselineResultTypeDef
 
@@ -1288,13 +1203,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EffectivePatches`: `List["EffectivePatchTypeDef"]`
-- `NextToken`: `str`
 
+- `EffectivePatches`:
+  `List`\[[EffectivePatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#effectivepatchtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInstanceAssociationsStatusResultTypeDef
 
@@ -1302,13 +1215,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceAssociationStatusInfos`: `List["InstanceAssociationStatusInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `InstanceAssociationStatusInfos`:
+  `List`\[[InstanceAssociationStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationstatusinfotypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInstanceInformationResultTypeDef
 
@@ -1316,13 +1227,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInstanceInformationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceInformationList`: `List["InstanceInformationTypeDef"]`
-- `NextToken`: `str`
 
+- `InstanceInformationList`:
+  `List`\[[InstanceInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceinformationtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInstancePatchStatesForPatchGroupResultTypeDef
 
@@ -1330,13 +1239,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstancePatchStates`: `List["InstancePatchStateTypeDef"]`
-- `NextToken`: `str`
 
+- `InstancePatchStates`:
+  `List`\[[InstancePatchStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instancepatchstatetypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInstancePatchStatesResultTypeDef
 
@@ -1344,13 +1251,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstancePatchStates`: `List["InstancePatchStateTypeDef"]`
-- `NextToken`: `str`
 
+- `InstancePatchStates`:
+  `List`\[[InstancePatchStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instancepatchstatetypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInstancePatchesResultTypeDef
 
@@ -1358,13 +1263,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Patches`: `List["PatchComplianceDataTypeDef"]`
-- `NextToken`: `str`
 
+- `Patches`:
+  `List`\[[PatchComplianceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchcompliancedatatypedef)\]
+- `NextToken`: `str`
 
 ## DescribeInventoryDeletionsResultTypeDef
 
@@ -1372,13 +1275,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InventoryDeletions`: `List["InventoryDeletionStatusItemTypeDef"]`
-- `NextToken`: `str`
 
+- `InventoryDeletions`:
+  `List`\[[InventoryDeletionStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventorydeletionstatusitemtypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
 
@@ -1386,13 +1287,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowExecutionTaskInvocationIdentities`: `List["MaintenanceWindowExecutionTaskInvocationIdentityTypeDef"]`
-- `NextToken`: `str`
 
+- `WindowExecutionTaskInvocationIdentities`:
+  `List`\[[MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowexecutiontaskinvocationidentitytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowExecutionTasksResultTypeDef
 
@@ -1400,13 +1299,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowExecutionTaskIdentities`: `List["MaintenanceWindowExecutionTaskIdentityTypeDef"]`
-- `NextToken`: `str`
 
+- `WindowExecutionTaskIdentities`:
+  `List`\[[MaintenanceWindowExecutionTaskIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowexecutiontaskidentitytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowExecutionsResultTypeDef
 
@@ -1414,13 +1311,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowExecutions`: `List["MaintenanceWindowExecutionTypeDef"]`
-- `NextToken`: `str`
 
+- `WindowExecutions`:
+  `List`\[[MaintenanceWindowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowexecutiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowScheduleResultTypeDef
 
@@ -1428,13 +1323,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ScheduledWindowExecutions`: `List["ScheduledWindowExecutionTypeDef"]`
-- `NextToken`: `str`
 
+- `ScheduledWindowExecutions`:
+  `List`\[[ScheduledWindowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#scheduledwindowexecutiontypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowTargetsResultTypeDef
 
@@ -1442,13 +1335,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Targets`: `List["MaintenanceWindowTargetTypeDef"]`
-- `NextToken`: `str`
 
+- `Targets`:
+  `List`\[[MaintenanceWindowTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtargettypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowTasksResultTypeDef
 
@@ -1456,13 +1347,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Tasks`: `List["MaintenanceWindowTaskTypeDef"]`
-- `NextToken`: `str`
 
+- `Tasks`:
+  `List`\[[MaintenanceWindowTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtasktypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowsForTargetResultTypeDef
 
@@ -1470,13 +1359,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowIdentities`: `List["MaintenanceWindowIdentityForTargetTypeDef"]`
-- `NextToken`: `str`
 
+- `WindowIdentities`:
+  `List`\[[MaintenanceWindowIdentityForTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowidentityfortargettypedef)\]
+- `NextToken`: `str`
 
 ## DescribeMaintenanceWindowsResultTypeDef
 
@@ -1484,13 +1371,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowIdentities`: `List["MaintenanceWindowIdentityTypeDef"]`
-- `NextToken`: `str`
 
+- `WindowIdentities`:
+  `List`\[[MaintenanceWindowIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowidentitytypedef)\]
+- `NextToken`: `str`
 
 ## DescribeOpsItemsResponseTypeDef
 
@@ -1498,13 +1383,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeOpsItemsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `OpsItemSummaries`: `List["OpsItemSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `OpsItemSummaries`:
+  `List`\[[OpsItemSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemsummarytypedef)\]
 
 ## DescribeParametersResultTypeDef
 
@@ -1512,13 +1395,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeParametersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameters`: `List["ParameterMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `Parameters`:
+  `List`\[[ParameterMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametermetadatatypedef)\]
+- `NextToken`: `str`
 
 ## DescribePatchBaselinesResultTypeDef
 
@@ -1526,13 +1407,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribePatchBaselinesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaselineIdentities`: `List["PatchBaselineIdentityTypeDef"]`
-- `NextToken`: `str`
 
+- `BaselineIdentities`:
+  `List`\[[PatchBaselineIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchbaselineidentitytypedef)\]
+- `NextToken`: `str`
 
 ## DescribePatchGroupStateResultTypeDef
 
@@ -1540,10 +1419,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribePatchGroupStateResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Instances`: `int`
 - `InstancesWithInstalledPatches`: `int`
 - `InstancesWithInstalledOtherPatches`: `int`
@@ -1557,20 +1434,17 @@ Optional fields:
 - `InstancesWithSecurityNonCompliantPatches`: `int`
 - `InstancesWithOtherNonCompliantPatches`: `int`
 
-
 ## DescribePatchGroupsResultTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import DescribePatchGroupsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Mappings`: `List["PatchGroupPatchBaselineMappingTypeDef"]`
-- `NextToken`: `str`
 
+- `Mappings`:
+  `List`\[[PatchGroupPatchBaselineMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchgrouppatchbaselinemappingtypedef)\]
+- `NextToken`: `str`
 
 ## DescribePatchPropertiesResultTypeDef
 
@@ -1578,13 +1452,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribePatchPropertiesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Properties`: `List[Dict[str, str]]`
-- `NextToken`: `str`
 
+- `Properties`: `List`\[`Dict`\[`str`, `str`\]\]
+- `NextToken`: `str`
 
 ## DescribeSessionsResponseTypeDef
 
@@ -1592,13 +1463,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DescribeSessionsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Sessions`: `List["SessionTypeDef"]`
-- `NextToken`: `str`
 
+- `Sessions`:
+  `List`\[[SessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#sessiontypedef)\]
+- `NextToken`: `str`
 
 ## DocumentDefaultVersionDescriptionTypeDef
 
@@ -1606,14 +1475,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentDefaultVersionDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `DefaultVersion`: `str`
 - `DefaultVersionName`: `str`
-
 
 ## DocumentDescriptionTypeDef
 
@@ -1621,38 +1487,46 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Sha1`: `str`
 - `Hash`: `str`
-- `HashType`: `DocumentHashType`
+- `HashType`:
+  [DocumentHashType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenthashtype)
 - `Name`: `str`
 - `VersionName`: `str`
 - `Owner`: `str`
 - `CreatedDate`: `datetime`
-- `Status`: `DocumentStatus`
+- `Status`:
+  [DocumentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentstatus)
 - `StatusInformation`: `str`
 - `DocumentVersion`: `str`
 - `Description`: `str`
-- `Parameters`: `List["DocumentParameterTypeDef"]`
-- `PlatformTypes`: `List[PlatformType]`
-- `DocumentType`: `DocumentType`
+- `Parameters`:
+  `List`\[[DocumentParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentparametertypedef)\]
+- `PlatformTypes`:
+  `List`\[[PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#platformtype)\]
+- `DocumentType`:
+  [DocumentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenttype)
 - `SchemaVersion`: `str`
 - `LatestVersion`: `str`
 - `DefaultVersion`: `str`
-- `DocumentFormat`: `DocumentFormat`
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
 - `TargetType`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `AttachmentsInformation`: `List["AttachmentInformationTypeDef"]`
-- `Requires`: `List["DocumentRequiresTypeDef"]`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+- `AttachmentsInformation`:
+  `List`\[[AttachmentInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentinformationtypedef)\]
+- `Requires`:
+  `List`\[[DocumentRequiresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentrequirestypedef)\]
 - `Author`: `str`
-- `ReviewInformation`: `List["ReviewInformationTypeDef"]`
+- `ReviewInformation`:
+  `List`\[[ReviewInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#reviewinformationtypedef)\]
 - `ApprovedVersion`: `str`
 - `PendingReviewVersion`: `str`
-- `ReviewStatus`: `ReviewStatus`
-
+- `ReviewStatus`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
 
 ## DocumentFilterTypeDef
 
@@ -1660,13 +1534,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentFilterTypeDef
 ```
 
-
 Required fields:
-- `key`: `DocumentFilterKey`
+
+- `key`:
+  [DocumentFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentfilterkey)
 - `value`: `str`
-
-
-
 
 ## DocumentIdentifierTypeDef
 
@@ -1674,24 +1546,27 @@ Required fields:
 from mypy_boto3_ssm.type_defs import DocumentIdentifierTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Owner`: `str`
 - `VersionName`: `str`
-- `PlatformTypes`: `List[PlatformType]`
+- `PlatformTypes`:
+  `List`\[[PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#platformtype)\]
 - `DocumentVersion`: `str`
-- `DocumentType`: `DocumentType`
+- `DocumentType`:
+  [DocumentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenttype)
 - `SchemaVersion`: `str`
-- `DocumentFormat`: `DocumentFormat`
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
 - `TargetType`: `str`
-- `Tags`: `List["TagTypeDef"]`
-- `Requires`: `List["DocumentRequiresTypeDef"]`
-- `ReviewStatus`: `ReviewStatus`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+- `Requires`:
+  `List`\[[DocumentRequiresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentrequirestypedef)\]
+- `ReviewStatus`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
 - `Author`: `str`
-
 
 ## DocumentKeyValuesFilterTypeDef
 
@@ -1699,13 +1574,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentKeyValuesFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
 
 ## DocumentMetadataResponseInfoTypeDef
 
@@ -1713,12 +1585,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentMetadataResponseInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReviewerResponse`: `List["DocumentReviewerResponseSourceTypeDef"]`
 
+- `ReviewerResponse`:
+  `List`\[[DocumentReviewerResponseSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentreviewerresponsesourcetypedef)\]
 
 ## DocumentParameterTypeDef
 
@@ -1726,15 +1596,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Type`: `DocumentParameterType`
+- `Type`:
+  [DocumentParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentparametertype)
 - `Description`: `str`
 - `DefaultValue`: `str`
-
 
 ## DocumentRequiresTypeDef
 
@@ -1742,15 +1610,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentRequiresTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
 
-
-
 Optional fields:
-- `Version`: `str`
 
+- `Version`: `str`
 
 ## DocumentReviewCommentSourceTypeDef
 
@@ -1758,13 +1624,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentReviewCommentSourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Type`: `Literal['Comment']`
 - `Content`: `str`
-
 
 ## DocumentReviewerResponseSourceTypeDef
 
@@ -1772,16 +1635,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentReviewerResponseSourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreateTime`: `datetime`
 - `UpdatedTime`: `datetime`
-- `ReviewStatus`: `ReviewStatus`
-- `Comment`: `List["DocumentReviewCommentSourceTypeDef"]`
+- `ReviewStatus`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
+- `Comment`:
+  `List`\[[DocumentReviewCommentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentreviewcommentsourcetypedef)\]
 - `Reviewer`: `str`
-
 
 ## DocumentReviewsTypeDef
 
@@ -1789,15 +1651,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentReviewsTypeDef
 ```
 
-
 Required fields:
-- `Action`: `DocumentReviewAction`
 
-
+- `Action`:
+  [DocumentReviewAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentreviewaction)
 
 Optional fields:
-- `Comment`: `List["DocumentReviewCommentSourceTypeDef"]`
 
+- `Comment`:
+  `List`\[[DocumentReviewCommentSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentreviewcommentsourcetypedef)\]
 
 ## DocumentVersionInfoTypeDef
 
@@ -1805,20 +1667,20 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import DocumentVersionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `DocumentVersion`: `str`
 - `VersionName`: `str`
 - `CreatedDate`: `datetime`
 - `IsDefaultVersion`: `bool`
-- `DocumentFormat`: `DocumentFormat`
-- `Status`: `DocumentStatus`
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
+- `Status`:
+  [DocumentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentstatus)
 - `StatusInformation`: `str`
-- `ReviewStatus`: `ReviewStatus`
-
+- `ReviewStatus`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
 
 ## EffectivePatchTypeDef
 
@@ -1826,13 +1688,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import EffectivePatchTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Patch`: `"PatchTypeDef"`
-- `PatchStatus`: `"PatchStatusTypeDef"`
 
+- `Patch`:
+  [PatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchtypedef)
+- `PatchStatus`:
+  [PatchStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchstatustypedef)
 
 ## FailedCreateAssociationTypeDef
 
@@ -1840,14 +1701,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import FailedCreateAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entry`: `"CreateAssociationBatchRequestEntryTypeDef"`
-- `Message`: `str`
-- `Fault`: `Fault`
 
+- `Entry`:
+  [CreateAssociationBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#createassociationbatchrequestentrytypedef)
+- `Message`: `str`
+- `Fault`:
+  [Fault](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#fault)
 
 ## FailureDetailsTypeDef
 
@@ -1855,14 +1715,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import FailureDetailsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `FailureStage`: `str`
 - `FailureType`: `str`
-- `Details`: `Dict[str, List[str]]`
-
+- `Details`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## GetAutomationExecutionResultTypeDef
 
@@ -1870,12 +1727,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomationExecution`: `"AutomationExecutionTypeDef"`
 
+- `AutomationExecution`:
+  [AutomationExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#automationexecutiontypedef)
 
 ## GetCalendarStateResponseTypeDef
 
@@ -1883,14 +1738,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetCalendarStateResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `State`: `CalendarState`
+
+- `State`:
+  [CalendarState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#calendarstate)
 - `AtTime`: `str`
 - `NextTransitionTime`: `str`
-
 
 ## GetCommandInvocationResultTypeDef
 
@@ -1898,10 +1751,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetCommandInvocationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `Comment`: `str`
@@ -1912,14 +1763,15 @@ Optional fields:
 - `ExecutionStartDateTime`: `str`
 - `ExecutionElapsedTime`: `str`
 - `ExecutionEndDateTime`: `str`
-- `Status`: `CommandInvocationStatus`
+- `Status`:
+  [CommandInvocationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#commandinvocationstatus)
 - `StatusDetails`: `str`
 - `StandardOutputContent`: `str`
 - `StandardOutputUrl`: `str`
 - `StandardErrorContent`: `str`
 - `StandardErrorUrl`: `str`
-- `CloudWatchOutputConfig`: `"CloudWatchOutputConfigTypeDef"`
-
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cloudwatchoutputconfigtypedef)
 
 ## GetConnectionStatusResponseTypeDef
 
@@ -1927,13 +1779,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetConnectionStatusResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Target`: `str`
-- `Status`: `ConnectionStatus`
 
+- `Target`: `str`
+- `Status`:
+  [ConnectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#connectionstatus)
 
 ## GetDefaultPatchBaselineResultTypeDef
 
@@ -1941,13 +1791,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaselineId`: `str`
-- `OperatingSystem`: `OperatingSystem`
 
+- `BaselineId`: `str`
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
 
 ## GetDeployablePatchSnapshotForInstanceResultTypeDef
 
@@ -1955,15 +1803,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceId`: `str`
 - `SnapshotId`: `str`
 - `SnapshotDownloadUrl`: `str`
 - `Product`: `str`
-
 
 ## GetDocumentResultTypeDef
 
@@ -1971,22 +1816,25 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetDocumentResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
-- `Status`: `DocumentStatus`
+- `Status`:
+  [DocumentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentstatus)
 - `StatusInformation`: `str`
 - `Content`: `str`
-- `DocumentType`: `DocumentType`
-- `DocumentFormat`: `DocumentFormat`
-- `Requires`: `List["DocumentRequiresTypeDef"]`
-- `AttachmentsContent`: `List["AttachmentContentTypeDef"]`
-- `ReviewStatus`: `ReviewStatus`
-
+- `DocumentType`:
+  [DocumentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenttype)
+- `DocumentFormat`:
+  [DocumentFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documentformat)
+- `Requires`:
+  `List`\[[DocumentRequiresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentrequirestypedef)\]
+- `AttachmentsContent`:
+  `List`\[[AttachmentContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentcontenttypedef)\]
+- `ReviewStatus`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
 
 ## GetInventoryResultTypeDef
 
@@ -1994,13 +1842,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetInventoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entities`: `List["InventoryResultEntityTypeDef"]`
-- `NextToken`: `str`
 
+- `Entities`:
+  `List`\[[InventoryResultEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryresultentitytypedef)\]
+- `NextToken`: `str`
 
 ## GetInventorySchemaResultTypeDef
 
@@ -2008,13 +1854,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetInventorySchemaResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Schemas`: `List["InventoryItemSchemaTypeDef"]`
-- `NextToken`: `str`
 
+- `Schemas`:
+  `List`\[[InventoryItemSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryitemschematypedef)\]
+- `NextToken`: `str`
 
 ## GetMaintenanceWindowExecutionResultTypeDef
 
@@ -2022,17 +1866,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowExecutionId`: `str`
-- `TaskIds`: `List[str]`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `TaskIds`: `List`\[`str`\]
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
 
 ## GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
 
@@ -2040,23 +1882,22 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
 - `InvocationId`: `str`
 - `ExecutionId`: `str`
-- `TaskType`: `MaintenanceWindowTaskType`
+- `TaskType`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
 - `Parameters`: `str`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `OwnerInformation`: `str`
 - `WindowTargetId`: `str`
-
 
 ## GetMaintenanceWindowExecutionTaskResultTypeDef
 
@@ -2064,24 +1905,24 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
 - `TaskArn`: `str`
 - `ServiceRole`: `str`
-- `Type`: `MaintenanceWindowTaskType`
-- `TaskParameters`: `List[Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"]]`
+- `Type`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
+- `TaskParameters`: `List`\[`Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]\]
 - `Priority`: `int`
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
 
 ## GetMaintenanceWindowResultTypeDef
 
@@ -2089,10 +1930,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `Name`: `str`
 - `Description`: `str`
@@ -2109,32 +1948,33 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
 
-
 ## GetMaintenanceWindowTaskResultTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `TaskArn`: `str`
 - `ServiceRoleArn`: `str`
-- `TaskType`: `MaintenanceWindowTaskType`
-- `TaskParameters`: `Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"]`
-- `TaskInvocationParameters`: `"MaintenanceWindowTaskInvocationParametersTypeDef"`
+- `TaskType`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskinvocationparameterstypedef)
 - `Priority`: `int`
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
-- `LoggingInfo`: `"LoggingInfoTypeDef"`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## GetOpsItemResponseTypeDef
 
@@ -2142,12 +1982,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetOpsItemResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpsItem`: `"OpsItemTypeDef"`
 
+- `OpsItem`:
+  [OpsItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemtypedef)
 
 ## GetOpsMetadataResultTypeDef
 
@@ -2155,14 +1993,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetOpsMetadataResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceId`: `str`
-- `Metadata`: `Dict[str, "MetadataValueTypeDef"]`
-- `NextToken`: `str`
 
+- `ResourceId`: `str`
+- `Metadata`: `Dict`\[`str`,
+  [MetadataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#metadatavaluetypedef)\]
+- `NextToken`: `str`
 
 ## GetOpsSummaryResultTypeDef
 
@@ -2170,13 +2006,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetOpsSummaryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Entities`: `List["OpsEntityTypeDef"]`
-- `NextToken`: `str`
 
+- `Entities`:
+  `List`\[[OpsEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsentitytypedef)\]
+- `NextToken`: `str`
 
 ## GetParameterHistoryResultTypeDef
 
@@ -2184,13 +2018,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetParameterHistoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameters`: `List["ParameterHistoryTypeDef"]`
-- `NextToken`: `str`
 
+- `Parameters`:
+  `List`\[[ParameterHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterhistorytypedef)\]
+- `NextToken`: `str`
 
 ## GetParameterResultTypeDef
 
@@ -2198,12 +2030,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetParameterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameter`: `"ParameterTypeDef"`
 
+- `Parameter`:
+  [ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametertypedef)
 
 ## GetParametersByPathResultTypeDef
 
@@ -2211,13 +2041,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetParametersByPathResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameters`: `List["ParameterTypeDef"]`
-- `NextToken`: `str`
 
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametertypedef)\]
+- `NextToken`: `str`
 
 ## GetParametersResultTypeDef
 
@@ -2225,13 +2053,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetParametersResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Parameters`: `List["ParameterTypeDef"]`
-- `InvalidParameters`: `List[str]`
 
+- `Parameters`:
+  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametertypedef)\]
+- `InvalidParameters`: `List`\[`str`\]
 
 ## GetPatchBaselineForPatchGroupResultTypeDef
 
@@ -2239,14 +2065,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
-- `OperatingSystem`: `OperatingSystem`
-
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
 
 ## GetPatchBaselineResultTypeDef
 
@@ -2254,26 +2078,29 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetPatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `Name`: `str`
-- `OperatingSystem`: `OperatingSystem`
-- `GlobalFilters`: `"PatchFilterGroupTypeDef"`
-- `ApprovalRules`: `"PatchRuleGroupTypeDef"`
-- `ApprovedPatches`: `List[str]`
-- `ApprovedPatchesComplianceLevel`: `PatchComplianceLevel`
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List[str]`
-- `RejectedPatchesAction`: `PatchAction`
-- `PatchGroups`: `List[str]`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`:
+  [PatchAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchaction)
+- `PatchGroups`: `List`\[`str`\]
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
 - `Description`: `str`
-- `Sources`: `List["PatchSourceTypeDef"]`
-
+- `Sources`:
+  `List`\[[PatchSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchsourcetypedef)\]
 
 ## GetServiceSettingResultTypeDef
 
@@ -2281,12 +2108,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import GetServiceSettingResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceSetting`: `"ServiceSettingTypeDef"`
 
+- `ServiceSetting`:
+  [ServiceSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#servicesettingtypedef)
 
 ## InstanceAggregatedAssociationOverviewTypeDef
 
@@ -2294,13 +2119,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceAggregatedAssociationOverviewTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DetailedStatus`: `str`
-- `InstanceAssociationStatusAggregatedCount`: `Dict[str, int]`
 
+- `DetailedStatus`: `str`
+- `InstanceAssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
 
 ## InstanceAssociationOutputLocationTypeDef
 
@@ -2308,12 +2130,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceAssociationOutputLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3Location`: `"S3OutputLocationTypeDef"`
 
+- `S3Location`:
+  [S3OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#s3outputlocationtypedef)
 
 ## InstanceAssociationOutputUrlTypeDef
 
@@ -2321,12 +2141,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceAssociationOutputUrlTypeDef
 ```
 
-
-
-
 Optional fields:
-- `S3OutputUrl`: `"S3OutputUrlTypeDef"`
 
+- `S3OutputUrl`:
+  [S3OutputUrlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#s3outputurltypedef)
 
 ## InstanceAssociationStatusInfoTypeDef
 
@@ -2334,10 +2152,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceAssociationStatusInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `Name`: `str`
 - `DocumentVersion`: `str`
@@ -2348,9 +2164,9 @@ Optional fields:
 - `DetailedStatus`: `str`
 - `ExecutionSummary`: `str`
 - `ErrorCode`: `str`
-- `OutputUrl`: `"InstanceAssociationOutputUrlTypeDef"`
+- `OutputUrl`:
+  [InstanceAssociationOutputUrlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceassociationoutputurltypedef)
 - `AssociationName`: `str`
-
 
 ## InstanceAssociationTypeDef
 
@@ -2358,15 +2174,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceAssociationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AssociationId`: `str`
 - `InstanceId`: `str`
 - `Content`: `str`
 - `AssociationVersion`: `str`
-
 
 ## InstanceInformationFilterTypeDef
 
@@ -2374,13 +2187,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstanceInformationFilterTypeDef
 ```
 
-
 Required fields:
-- `key`: `InstanceInformationFilterKey`
-- `valueSet`: `List[str]`
 
-
-
+- `key`:
+  [InstanceInformationFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#instanceinformationfilterkey)
+- `valueSet`: `List`\[`str`\]
 
 ## InstanceInformationStringFilterTypeDef
 
@@ -2388,13 +2199,10 @@ Required fields:
 from mypy_boto3_ssm.type_defs import InstanceInformationStringFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## InstanceInformationTypeDef
 
@@ -2402,30 +2210,31 @@ Required fields:
 from mypy_boto3_ssm.type_defs import InstanceInformationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceId`: `str`
-- `PingStatus`: `PingStatus`
+- `PingStatus`:
+  [PingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#pingstatus)
 - `LastPingDateTime`: `datetime`
 - `AgentVersion`: `str`
 - `IsLatestVersion`: `bool`
-- `PlatformType`: `PlatformType`
+- `PlatformType`:
+  [PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#platformtype)
 - `PlatformName`: `str`
 - `PlatformVersion`: `str`
 - `ActivationId`: `str`
 - `IamRole`: `str`
 - `RegistrationDate`: `datetime`
-- `ResourceType`: `ResourceType`
+- `ResourceType`:
+  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#resourcetype)
 - `Name`: `str`
 - `IPAddress`: `str`
 - `ComputerName`: `str`
 - `AssociationStatus`: `str`
 - `LastAssociationExecutionDate`: `datetime`
 - `LastSuccessfulAssociationExecutionDate`: `datetime`
-- `AssociationOverview`: `"InstanceAggregatedAssociationOverviewTypeDef"`
-
+- `AssociationOverview`:
+  [InstanceAggregatedAssociationOverviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceaggregatedassociationoverviewtypedef)
 
 ## InstancePatchStateFilterTypeDef
 
@@ -2433,14 +2242,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InstancePatchStateFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
-- `Values`: `List[str]`
-- `Type`: `InstancePatchStateOperatorType`
-
-
-
+- `Values`: `List`\[`str`\]
+- `Type`:
+  [InstancePatchStateOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#instancepatchstateoperatortype)
 
 ## InstancePatchStateTypeDef
 
@@ -2448,18 +2255,18 @@ Required fields:
 from mypy_boto3_ssm.type_defs import InstancePatchStateTypeDef
 ```
 
-
 Required fields:
+
 - `InstanceId`: `str`
 - `PatchGroup`: `str`
 - `BaselineId`: `str`
 - `OperationStartTime`: `datetime`
 - `OperationEndTime`: `datetime`
-- `Operation`: `PatchOperationType`
-
-
+- `Operation`:
+  [PatchOperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchoperationtype)
 
 Optional fields:
+
 - `SnapshotId`: `str`
 - `InstallOverrideList`: `str`
 - `OwnerInformation`: `str`
@@ -2472,11 +2279,11 @@ Optional fields:
 - `UnreportedNotApplicableCount`: `int`
 - `NotApplicableCount`: `int`
 - `LastNoRebootInstallOperationTime`: `datetime`
-- `RebootOption`: `RebootOption`
+- `RebootOption`:
+  [RebootOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#rebootoption)
 - `CriticalNonCompliantCount`: `int`
 - `SecurityNonCompliantCount`: `int`
 - `OtherNonCompliantCount`: `int`
-
 
 ## InventoryAggregatorTypeDef
 
@@ -2484,14 +2291,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryAggregatorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Expression`: `str`
-- `Aggregators`: `List["InventoryAggregatorTypeDef"]`
-- `Groups`: `List["InventoryGroupTypeDef"]`
 
+- `Expression`: `str`
+- `Aggregators`:
+  `List`\[[InventoryAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryaggregatortypedef)\]
+- `Groups`:
+  `List`\[[InventoryGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventorygrouptypedef)\]
 
 ## InventoryDeletionStatusItemTypeDef
 
@@ -2499,18 +2305,17 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryDeletionStatusItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `DeletionId`: `str`
 - `TypeName`: `str`
 - `DeletionStartTime`: `datetime`
-- `LastStatus`: `InventoryDeletionStatus`
+- `LastStatus`:
+  [InventoryDeletionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#inventorydeletionstatus)
 - `LastStatusMessage`: `str`
-- `DeletionSummary`: `"InventoryDeletionSummaryTypeDef"`
+- `DeletionSummary`:
+  [InventoryDeletionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventorydeletionsummarytypedef)
 - `LastStatusUpdateTime`: `datetime`
-
 
 ## InventoryDeletionSummaryItemTypeDef
 
@@ -2518,14 +2323,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryDeletionSummaryItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Version`: `str`
 - `Count`: `int`
 - `RemainingCount`: `int`
-
 
 ## InventoryDeletionSummaryTypeDef
 
@@ -2533,14 +2335,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryDeletionSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalCount`: `int`
 - `RemainingCount`: `int`
-- `SummaryItems`: `List["InventoryDeletionSummaryItemTypeDef"]`
-
+- `SummaryItems`:
+  `List`\[[InventoryDeletionSummaryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventorydeletionsummaryitemtypedef)\]
 
 ## InventoryFilterTypeDef
 
@@ -2548,16 +2348,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
-- `Values`: `List[str]`
-
-
+- `Values`: `List`\[`str`\]
 
 Optional fields:
-- `Type`: `InventoryQueryOperatorType`
 
+- `Type`:
+  [InventoryQueryOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#inventoryqueryoperatortype)
 
 ## InventoryGroupTypeDef
 
@@ -2565,13 +2364,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryGroupTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Filters`: `List["InventoryFilterTypeDef"]`
-
-
-
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryfiltertypedef)\]
 
 ## InventoryItemAttributeTypeDef
 
@@ -2579,13 +2376,11 @@ Required fields:
 from mypy_boto3_ssm.type_defs import InventoryItemAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `DataType`: `InventoryAttributeDataType`
-
-
-
+- `DataType`:
+  [InventoryAttributeDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#inventoryattributedatatype)
 
 ## InventoryItemSchemaTypeDef
 
@@ -2593,17 +2388,16 @@ Required fields:
 from mypy_boto3_ssm.type_defs import InventoryItemSchemaTypeDef
 ```
 
-
 Required fields:
+
 - `TypeName`: `str`
-- `Attributes`: `List["InventoryItemAttributeTypeDef"]`
-
-
+- `Attributes`:
+  `List`\[[InventoryItemAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryitemattributetypedef)\]
 
 Optional fields:
+
 - `Version`: `str`
 - `DisplayName`: `str`
-
 
 ## InventoryItemTypeDef
 
@@ -2611,19 +2405,17 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryItemTypeDef
 ```
 
-
 Required fields:
+
 - `TypeName`: `str`
 - `SchemaVersion`: `str`
 - `CaptureTime`: `str`
 
-
-
 Optional fields:
-- `ContentHash`: `str`
-- `Content`: `List[Dict[str, str]]`
-- `Context`: `Dict[str, str]`
 
+- `ContentHash`: `str`
+- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
+- `Context`: `Dict`\[`str`, `str`\]
 
 ## InventoryResultEntityTypeDef
 
@@ -2631,13 +2423,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryResultEntityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
-- `Data`: `Dict[str, "InventoryResultItemTypeDef"]`
 
+- `Id`: `str`
+- `Data`: `Dict`\[`str`,
+  [InventoryResultItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryresultitemtypedef)\]
 
 ## InventoryResultItemTypeDef
 
@@ -2645,18 +2435,16 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import InventoryResultItemTypeDef
 ```
 
-
 Required fields:
+
 - `TypeName`: `str`
 - `SchemaVersion`: `str`
-- `Content`: `List[Dict[str, str]]`
-
-
+- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
 
 Optional fields:
+
 - `CaptureTime`: `str`
 - `ContentHash`: `str`
-
 
 ## LabelParameterVersionResultTypeDef
 
@@ -2664,13 +2452,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import LabelParameterVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InvalidLabels`: `List[str]`
-- `ParameterVersion`: `int`
 
+- `InvalidLabels`: `List`\[`str`\]
+- `ParameterVersion`: `int`
 
 ## ListAssociationVersionsResultTypeDef
 
@@ -2678,13 +2463,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListAssociationVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationVersions`: `List["AssociationVersionInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `AssociationVersions`:
+  `List`\[[AssociationVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationversioninfotypedef)\]
+- `NextToken`: `str`
 
 ## ListAssociationsResultTypeDef
 
@@ -2692,13 +2475,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListAssociationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Associations`: `List["AssociationTypeDef"]`
-- `NextToken`: `str`
 
+- `Associations`:
+  `List`\[[AssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationtypedef)\]
+- `NextToken`: `str`
 
 ## ListCommandInvocationsResultTypeDef
 
@@ -2706,13 +2487,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListCommandInvocationsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CommandInvocations`: `List["CommandInvocationTypeDef"]`
-- `NextToken`: `str`
 
+- `CommandInvocations`:
+  `List`\[[CommandInvocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandinvocationtypedef)\]
+- `NextToken`: `str`
 
 ## ListCommandsResultTypeDef
 
@@ -2720,13 +2499,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListCommandsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Commands`: `List["CommandTypeDef"]`
-- `NextToken`: `str`
 
+- `Commands`:
+  `List`\[[CommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandtypedef)\]
+- `NextToken`: `str`
 
 ## ListComplianceItemsResultTypeDef
 
@@ -2734,13 +2511,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListComplianceItemsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ComplianceItems`: `List["ComplianceItemTypeDef"]`
-- `NextToken`: `str`
 
+- `ComplianceItems`:
+  `List`\[[ComplianceItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#complianceitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListComplianceSummariesResultTypeDef
 
@@ -2748,13 +2523,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListComplianceSummariesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ComplianceSummaryItems`: `List["ComplianceSummaryItemTypeDef"]`
-- `NextToken`: `str`
 
+- `ComplianceSummaryItems`:
+  `List`\[[ComplianceSummaryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancesummaryitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListDocumentMetadataHistoryResponseTypeDef
 
@@ -2762,16 +2535,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `DocumentVersion`: `str`
 - `Author`: `str`
-- `Metadata`: `"DocumentMetadataResponseInfoTypeDef"`
+- `Metadata`:
+  [DocumentMetadataResponseInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentmetadataresponseinfotypedef)
 - `NextToken`: `str`
-
 
 ## ListDocumentVersionsResultTypeDef
 
@@ -2779,13 +2550,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListDocumentVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentVersions`: `List["DocumentVersionInfoTypeDef"]`
-- `NextToken`: `str`
 
+- `DocumentVersions`:
+  `List`\[[DocumentVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentversioninfotypedef)\]
+- `NextToken`: `str`
 
 ## ListDocumentsResultTypeDef
 
@@ -2793,13 +2562,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListDocumentsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentIdentifiers`: `List["DocumentIdentifierTypeDef"]`
-- `NextToken`: `str`
 
+- `DocumentIdentifiers`:
+  `List`\[[DocumentIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentidentifiertypedef)\]
+- `NextToken`: `str`
 
 ## ListInventoryEntriesResultTypeDef
 
@@ -2807,17 +2574,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListInventoryEntriesResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TypeName`: `str`
 - `InstanceId`: `str`
 - `SchemaVersion`: `str`
 - `CaptureTime`: `str`
-- `Entries`: `List[Dict[str, str]]`
+- `Entries`: `List`\[`Dict`\[`str`, `str`\]\]
 - `NextToken`: `str`
-
 
 ## ListOpsItemEventsResponseTypeDef
 
@@ -2825,13 +2589,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListOpsItemEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NextToken`: `str`
-- `Summaries`: `List["OpsItemEventSummaryTypeDef"]`
 
+- `NextToken`: `str`
+- `Summaries`:
+  `List`\[[OpsItemEventSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemeventsummarytypedef)\]
 
 ## ListOpsMetadataResultTypeDef
 
@@ -2839,13 +2601,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListOpsMetadataResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpsMetadataList`: `List["OpsMetadataTypeDef"]`
-- `NextToken`: `str`
 
+- `OpsMetadataList`:
+  `List`\[[OpsMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsmetadatatypedef)\]
+- `NextToken`: `str`
 
 ## ListResourceComplianceSummariesResultTypeDef
 
@@ -2853,13 +2613,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceComplianceSummaryItems`: `List["ResourceComplianceSummaryItemTypeDef"]`
-- `NextToken`: `str`
 
+- `ResourceComplianceSummaryItems`:
+  `List`\[[ResourceComplianceSummaryItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcecompliancesummaryitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListResourceDataSyncResultTypeDef
 
@@ -2867,13 +2625,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListResourceDataSyncResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ResourceDataSyncItems`: `List["ResourceDataSyncItemTypeDef"]`
-- `NextToken`: `str`
 
+- `ResourceDataSyncItems`:
+  `List`\[[ResourceDataSyncItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncitemtypedef)\]
+- `NextToken`: `str`
 
 ## ListTagsForResourceResultTypeDef
 
@@ -2881,12 +2637,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TagList`: `List["TagTypeDef"]`
 
+- `TagList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
 
 ## LoggingInfoTypeDef
 
@@ -2894,16 +2648,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import LoggingInfoTypeDef
 ```
 
-
 Required fields:
+
 - `S3BucketName`: `str`
 - `S3Region`: `str`
 
-
-
 Optional fields:
-- `S3KeyPrefix`: `str`
 
+- `S3KeyPrefix`: `str`
 
 ## MaintenanceWindowAutomationParametersTypeDef
 
@@ -2911,13 +2663,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowAutomationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentVersion`: `str`
-- `Parameters`: `Dict[str, List[str]]`
 
+- `DocumentVersion`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 
 ## MaintenanceWindowExecutionTaskIdentityTypeDef
 
@@ -2925,19 +2674,18 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `TaskArn`: `str`
-- `TaskType`: `MaintenanceWindowTaskType`
-
+- `TaskType`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
 
 ## MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
 
@@ -2945,23 +2693,22 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
 - `InvocationId`: `str`
 - `ExecutionId`: `str`
-- `TaskType`: `MaintenanceWindowTaskType`
+- `TaskType`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
 - `Parameters`: `str`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `OwnerInformation`: `str`
 - `WindowTargetId`: `str`
-
 
 ## MaintenanceWindowExecutionTypeDef
 
@@ -2969,17 +2716,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowExecutionId`: `str`
-- `Status`: `MaintenanceWindowExecutionStatus`
+- `Status`:
+  [MaintenanceWindowExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowexecutionstatus)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-
 
 ## MaintenanceWindowFilterTypeDef
 
@@ -2987,13 +2732,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
 
 ## MaintenanceWindowIdentityForTargetTypeDef
 
@@ -3001,13 +2743,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowIdentityForTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `Name`: `str`
-
 
 ## MaintenanceWindowIdentityTypeDef
 
@@ -3015,10 +2754,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `Name`: `str`
 - `Description`: `str`
@@ -3032,21 +2769,17 @@ Optional fields:
 - `StartDate`: `str`
 - `NextExecutionTime`: `str`
 
-
 ## MaintenanceWindowLambdaParametersTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import MaintenanceWindowLambdaParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ClientContext`: `str`
 - `Qualifier`: `str`
-- `Payload`: `Union[bytes, IO[bytes]]`
-
+- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## MaintenanceWindowRunCommandParametersTypeDef
 
@@ -3054,22 +2787,22 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowRunCommandParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Comment`: `str`
-- `CloudWatchOutputConfig`: `"CloudWatchOutputConfigTypeDef"`
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#cloudwatchoutputconfigtypedef)
 - `DocumentHash`: `str`
-- `DocumentHashType`: `DocumentHashType`
+- `DocumentHashType`:
+  [DocumentHashType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenthashtype)
 - `DocumentVersion`: `str`
-- `NotificationConfig`: `"NotificationConfigTypeDef"`
+- `NotificationConfig`:
+  [NotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#notificationconfigtypedef)
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
-- `Parameters`: `Dict[str, List[str]]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `ServiceRoleArn`: `str`
 - `TimeoutSeconds`: `int`
-
 
 ## MaintenanceWindowStepFunctionsParametersTypeDef
 
@@ -3077,13 +2810,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowStepFunctionsParametersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Input`: `str`
 - `Name`: `str`
-
 
 ## MaintenanceWindowTargetTypeDef
 
@@ -3091,18 +2821,17 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTargetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
-- `ResourceType`: `MaintenanceWindowResourceType`
-- `Targets`: `List["TargetTypeDef"]`
+- `ResourceType`:
+  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `OwnerInformation`: `str`
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## MaintenanceWindowTaskInvocationParametersTypeDef
 
@@ -3110,15 +2839,16 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskInvocationParametersTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RunCommand`: `"MaintenanceWindowRunCommandParametersTypeDef"`
-- `Automation`: `"MaintenanceWindowAutomationParametersTypeDef"`
-- `StepFunctions`: `"MaintenanceWindowStepFunctionsParametersTypeDef"`
-- `Lambda`: `"MaintenanceWindowLambdaParametersTypeDef"`
 
+- `RunCommand`:
+  [MaintenanceWindowRunCommandParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowruncommandparameterstypedef)
+- `Automation`:
+  [MaintenanceWindowAutomationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowautomationparameterstypedef)
+- `StepFunctions`:
+  [MaintenanceWindowStepFunctionsParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowstepfunctionsparameterstypedef)
+- `Lambda`:
+  [MaintenanceWindowLambdaParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowlambdaparameterstypedef)
 
 ## MaintenanceWindowTaskParameterValueExpressionTypeDef
 
@@ -3126,12 +2856,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskParameterValueExpressionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Values`: `List[str]`
 
+- `Values`: `List`\[`str`\]
 
 ## MaintenanceWindowTaskTypeDef
 
@@ -3139,24 +2866,25 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
 - `TaskArn`: `str`
-- `Type`: `MaintenanceWindowTaskType`
-- `Targets`: `List["TargetTypeDef"]`
-- `TaskParameters`: `Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"]`
+- `Type`:
+  [MaintenanceWindowTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowtasktype)
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `Priority`: `int`
-- `LoggingInfo`: `"LoggingInfoTypeDef"`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#logginginfotypedef)
 - `ServiceRoleArn`: `str`
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## MetadataValueTypeDef
 
@@ -3164,12 +2892,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import MetadataValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## NonCompliantSummaryTypeDef
 
@@ -3177,13 +2902,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import NonCompliantSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NonCompliantCount`: `int`
-- `SeveritySummary`: `"SeveritySummaryTypeDef"`
 
+- `NonCompliantCount`: `int`
+- `SeveritySummary`:
+  [SeveritySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#severitysummarytypedef)
 
 ## NotificationConfigTypeDef
 
@@ -3191,14 +2914,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import NotificationConfigTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NotificationArn`: `str`
-- `NotificationEvents`: `List[NotificationEvent]`
-- `NotificationType`: `NotificationType`
 
+- `NotificationArn`: `str`
+- `NotificationEvents`:
+  `List`\[[NotificationEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#notificationevent)\]
+- `NotificationType`:
+  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#notificationtype)
 
 ## OpsAggregatorTypeDef
 
@@ -3206,17 +2928,16 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsAggregatorTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AggregatorType`: `str`
 - `TypeName`: `str`
 - `AttributeName`: `str`
-- `Values`: `Dict[str, str]`
-- `Filters`: `List["OpsFilterTypeDef"]`
-- `Aggregators`: `List["OpsAggregatorTypeDef"]`
-
+- `Values`: `Dict`\[`str`, `str`\]
+- `Filters`:
+  `List`\[[OpsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsfiltertypedef)\]
+- `Aggregators`:
+  `List`\[[OpsAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsaggregatortypedef)\]
 
 ## OpsEntityItemTypeDef
 
@@ -3224,13 +2945,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsEntityItemTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CaptureTime`: `str`
-- `Content`: `List[Dict[str, str]]`
 
+- `CaptureTime`: `str`
+- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
 
 ## OpsEntityTypeDef
 
@@ -3238,13 +2956,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsEntityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Id`: `str`
-- `Data`: `Dict[str, "OpsEntityItemTypeDef"]`
 
+- `Id`: `str`
+- `Data`: `Dict`\[`str`,
+  [OpsEntityItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsentityitemtypedef)\]
 
 ## OpsFilterTypeDef
 
@@ -3252,16 +2968,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
-- `Values`: `List[str]`
-
-
+- `Values`: `List`\[`str`\]
 
 Optional fields:
-- `Type`: `OpsFilterOperatorType`
 
+- `Type`:
+  [OpsFilterOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsfilteroperatortype)
 
 ## OpsItemDataValueTypeDef
 
@@ -3269,13 +2984,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemDataValueTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Value`: `str`
-- `Type`: `OpsItemDataType`
 
+- `Value`: `str`
+- `Type`:
+  [OpsItemDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemdatatype)
 
 ## OpsItemEventFilterTypeDef
 
@@ -3283,14 +2996,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemEventFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `Literal['OpsItemId']`
-- `Values`: `List[str]`
+- `Values`: `List`\[`str`\]
 - `Operator`: `Literal['Equal']`
-
-
-
 
 ## OpsItemEventSummaryTypeDef
 
@@ -3298,18 +3008,16 @@ Required fields:
 from mypy_boto3_ssm.type_defs import OpsItemEventSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OpsItemId`: `str`
 - `EventId`: `str`
 - `Source`: `str`
 - `DetailType`: `str`
 - `Detail`: `str`
-- `CreatedBy`: `"OpsItemIdentityTypeDef"`
+- `CreatedBy`:
+  [OpsItemIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemidentitytypedef)
 - `CreatedTime`: `datetime`
-
 
 ## OpsItemFilterTypeDef
 
@@ -3317,14 +3025,13 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `OpsItemFilterKey`
-- `Values`: `List[str]`
-- `Operator`: `OpsItemFilterOperator`
 
-
-
+- `Key`:
+  [OpsItemFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemfilterkey)
+- `Values`: `List`\[`str`\]
+- `Operator`:
+  [OpsItemFilterOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemfilteroperator)
 
 ## OpsItemIdentityTypeDef
 
@@ -3332,12 +3039,9 @@ Required fields:
 from mypy_boto3_ssm.type_defs import OpsItemIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## OpsItemNotificationTypeDef
 
@@ -3345,12 +3049,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemNotificationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Arn`: `str`
 
+- `Arn`: `str`
 
 ## OpsItemSummaryTypeDef
 
@@ -3358,20 +3059,20 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedBy`: `str`
 - `CreatedTime`: `datetime`
 - `LastModifiedBy`: `str`
 - `LastModifiedTime`: `datetime`
 - `Priority`: `int`
 - `Source`: `str`
-- `Status`: `OpsItemStatus`
+- `Status`:
+  [OpsItemStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemstatus)
 - `OpsItemId`: `str`
 - `Title`: `str`
-- `OperationalData`: `Dict[str, "OpsItemDataValueTypeDef"]`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemdatavaluetypedef)\]
 - `Category`: `str`
 - `Severity`: `str`
 - `OpsItemType`: `str`
@@ -3379,7 +3080,6 @@ Optional fields:
 - `ActualEndTime`: `datetime`
 - `PlannedStartTime`: `datetime`
 - `PlannedEndTime`: `datetime`
-
 
 ## OpsItemTypeDef
 
@@ -3387,25 +3087,27 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CreatedBy`: `str`
 - `OpsItemType`: `str`
 - `CreatedTime`: `datetime`
 - `Description`: `str`
 - `LastModifiedBy`: `str`
 - `LastModifiedTime`: `datetime`
-- `Notifications`: `List["OpsItemNotificationTypeDef"]`
+- `Notifications`:
+  `List`\[[OpsItemNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemnotificationtypedef)\]
 - `Priority`: `int`
-- `RelatedOpsItems`: `List["RelatedOpsItemTypeDef"]`
-- `Status`: `OpsItemStatus`
+- `RelatedOpsItems`:
+  `List`\[[RelatedOpsItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#relatedopsitemtypedef)\]
+- `Status`:
+  [OpsItemStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemstatus)
 - `OpsItemId`: `str`
 - `Version`: `str`
 - `Title`: `str`
 - `Source`: `str`
-- `OperationalData`: `Dict[str, "OpsItemDataValueTypeDef"]`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemdatavaluetypedef)\]
 - `Category`: `str`
 - `Severity`: `str`
 - `ActualStartTime`: `datetime`
@@ -3413,20 +3115,16 @@ Optional fields:
 - `PlannedStartTime`: `datetime`
 - `PlannedEndTime`: `datetime`
 
-
 ## OpsMetadataFilterTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import OpsMetadataFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
-- `Values`: `List[str]`
-
-
-
+- `Values`: `List`\[`str`\]
 
 ## OpsMetadataTypeDef
 
@@ -3434,16 +3132,13 @@ Required fields:
 from mypy_boto3_ssm.type_defs import OpsMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ResourceId`: `str`
 - `OpsMetadataArn`: `str`
 - `LastModifiedDate`: `datetime`
 - `LastModifiedUser`: `str`
 - `CreationDate`: `datetime`
-
 
 ## OpsResultAttributeTypeDef
 
@@ -3451,12 +3146,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import OpsResultAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `TypeName`: `str`
-
-
-
 
 ## OutputSourceTypeDef
 
@@ -3464,13 +3156,10 @@ Required fields:
 from mypy_boto3_ssm.type_defs import OutputSourceTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OutputSourceId`: `str`
 - `OutputSourceType`: `str`
-
 
 ## PaginatorConfigTypeDef
 
@@ -3478,14 +3167,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## ParameterHistoryTypeDef
 
@@ -3493,12 +3179,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ParameterHistoryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Type`: `ParameterType`
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertype)
 - `KeyId`: `str`
 - `LastModifiedDate`: `datetime`
 - `LastModifiedUser`: `str`
@@ -3506,11 +3191,12 @@ Optional fields:
 - `Value`: `str`
 - `AllowedPattern`: `str`
 - `Version`: `int`
-- `Labels`: `List[str]`
-- `Tier`: `ParameterTier`
-- `Policies`: `List["ParameterInlinePolicyTypeDef"]`
+- `Labels`: `List`\[`str`\]
+- `Tier`:
+  [ParameterTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertier)
+- `Policies`:
+  `List`\[[ParameterInlinePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
-
 
 ## ParameterInlinePolicyTypeDef
 
@@ -3518,14 +3204,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ParameterInlinePolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyText`: `str`
 - `PolicyType`: `str`
 - `PolicyStatus`: `str`
-
 
 ## ParameterMetadataTypeDef
 
@@ -3533,22 +3216,22 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ParameterMetadataTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Type`: `ParameterType`
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertype)
 - `KeyId`: `str`
 - `LastModifiedDate`: `datetime`
 - `LastModifiedUser`: `str`
 - `Description`: `str`
 - `AllowedPattern`: `str`
 - `Version`: `int`
-- `Tier`: `ParameterTier`
-- `Policies`: `List["ParameterInlinePolicyTypeDef"]`
+- `Tier`:
+  [ParameterTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertier)
+- `Policies`:
+  `List`\[[ParameterInlinePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
-
 
 ## ParameterStringFilterTypeDef
 
@@ -3556,16 +3239,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ParameterStringFilterTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Option`: `str`
-- `Values`: `List[str]`
 
+- `Option`: `str`
+- `Values`: `List`\[`str`\]
 
 ## ParameterTypeDef
 
@@ -3573,12 +3254,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ParameterTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
-- `Type`: `ParameterType`
+- `Type`:
+  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertype)
 - `Value`: `str`
 - `Version`: `int`
 - `Selector`: `str`
@@ -3587,20 +3267,17 @@ Optional fields:
 - `ARN`: `str`
 - `DataType`: `str`
 
-
 ## ParametersFilterTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import ParametersFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `ParametersFilterKey`
-- `Values`: `List[str]`
 
-
-
+- `Key`:
+  [ParametersFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametersfilterkey)
+- `Values`: `List`\[`str`\]
 
 ## PatchBaselineIdentityTypeDef
 
@@ -3608,16 +3285,14 @@ Required fields:
 from mypy_boto3_ssm.type_defs import PatchBaselineIdentityTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `BaselineName`: `str`
-- `OperatingSystem`: `OperatingSystem`
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
 - `BaselineDescription`: `str`
 - `DefaultBaseline`: `bool`
-
 
 ## PatchComplianceDataTypeDef
 
@@ -3625,20 +3300,19 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchComplianceDataTypeDef
 ```
 
-
 Required fields:
+
 - `Title`: `str`
 - `KBId`: `str`
 - `Classification`: `str`
 - `Severity`: `str`
-- `State`: `PatchComplianceDataState`
+- `State`:
+  [PatchComplianceDataState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancedatastate)
 - `InstalledTime`: `datetime`
 
-
-
 Optional fields:
-- `CVEIds`: `str`
 
+- `CVEIds`: `str`
 
 ## PatchFilterGroupTypeDef
 
@@ -3646,12 +3320,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchFilterGroupTypeDef
 ```
 
-
 Required fields:
-- `PatchFilters`: `List["PatchFilterTypeDef"]`
 
-
-
+- `PatchFilters`:
+  `List`\[[PatchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltertypedef)\]
 
 ## PatchFilterTypeDef
 
@@ -3659,13 +3331,11 @@ Required fields:
 from mypy_boto3_ssm.type_defs import PatchFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `PatchFilterKey`
-- `Values`: `List[str]`
 
-
-
+- `Key`:
+  [PatchFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchfilterkey)
+- `Values`: `List`\[`str`\]
 
 ## PatchGroupPatchBaselineMappingTypeDef
 
@@ -3673,13 +3343,11 @@ Required fields:
 from mypy_boto3_ssm.type_defs import PatchGroupPatchBaselineMappingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `PatchGroup`: `str`
-- `BaselineIdentity`: `"PatchBaselineIdentityTypeDef"`
 
+- `PatchGroup`: `str`
+- `BaselineIdentity`:
+  [PatchBaselineIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchbaselineidentitytypedef)
 
 ## PatchOrchestratorFilterTypeDef
 
@@ -3687,13 +3355,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchOrchestratorFilterTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
 
 ## PatchRuleGroupTypeDef
 
@@ -3701,12 +3366,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchRuleGroupTypeDef
 ```
 
-
 Required fields:
-- `PatchRules`: `List["PatchRuleTypeDef"]`
 
-
-
+- `PatchRules`:
+  `List`\[[PatchRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchruletypedef)\]
 
 ## PatchRuleTypeDef
 
@@ -3714,18 +3377,18 @@ Required fields:
 from mypy_boto3_ssm.type_defs import PatchRuleTypeDef
 ```
 
-
 Required fields:
-- `PatchFilterGroup`: `"PatchFilterGroupTypeDef"`
 
-
+- `PatchFilterGroup`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
 
 Optional fields:
-- `ComplianceLevel`: `PatchComplianceLevel`
+
+- `ComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
 - `ApproveAfterDays`: `int`
 - `ApproveUntilDate`: `str`
 - `EnableNonSecurity`: `bool`
-
 
 ## PatchSourceTypeDef
 
@@ -3733,14 +3396,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchSourceTypeDef
 ```
 
-
 Required fields:
+
 - `Name`: `str`
-- `Products`: `List[str]`
+- `Products`: `List`\[`str`\]
 - `Configuration`: `str`
-
-
-
 
 ## PatchStatusTypeDef
 
@@ -3748,14 +3408,13 @@ Required fields:
 from mypy_boto3_ssm.type_defs import PatchStatusTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeploymentStatus`: `PatchDeploymentStatus`
-- `ComplianceLevel`: `PatchComplianceLevel`
-- `ApprovalDate`: `datetime`
 
+- `DeploymentStatus`:
+  [PatchDeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchdeploymentstatus)
+- `ComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
+- `ApprovalDate`: `datetime`
 
 ## PatchTypeDef
 
@@ -3763,10 +3422,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PatchTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Id`: `str`
 - `ReleaseDate`: `datetime`
 - `Title`: `str`
@@ -3780,9 +3437,9 @@ Optional fields:
 - `KbNumber`: `str`
 - `MsrcNumber`: `str`
 - `Language`: `str`
-- `AdvisoryIds`: `List[str]`
-- `BugzillaIds`: `List[str]`
-- `CVEIds`: `List[str]`
+- `AdvisoryIds`: `List`\[`str`\]
+- `BugzillaIds`: `List`\[`str`\]
+- `CVEIds`: `List`\[`str`\]
 - `Name`: `str`
 - `Epoch`: `int`
 - `Version`: `str`
@@ -3791,23 +3448,19 @@ Optional fields:
 - `Severity`: `str`
 - `Repository`: `str`
 
-
 ## ProgressCountersTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import ProgressCountersTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `TotalSteps`: `int`
 - `SuccessSteps`: `int`
 - `FailedSteps`: `int`
 - `CancelledSteps`: `int`
 - `TimedOutSteps`: `int`
-
 
 ## PutInventoryResultTypeDef
 
@@ -3815,12 +3468,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PutInventoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Message`: `str`
 
+- `Message`: `str`
 
 ## PutParameterResultTypeDef
 
@@ -3828,13 +3478,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import PutParameterResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Version`: `int`
-- `Tier`: `ParameterTier`
 
+- `Version`: `int`
+- `Tier`:
+  [ParameterTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#parametertier)
 
 ## RegisterDefaultPatchBaselineResultTypeDef
 
@@ -3842,12 +3490,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `BaselineId`: `str`
 
+- `BaselineId`: `str`
 
 ## RegisterPatchBaselineForPatchGroupResultTypeDef
 
@@ -3855,13 +3500,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
-
 
 ## RegisterTargetWithMaintenanceWindowResultTypeDef
 
@@ -3869,12 +3511,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowTargetId`: `str`
 
+- `WindowTargetId`: `str`
 
 ## RegisterTaskWithMaintenanceWindowResultTypeDef
 
@@ -3882,12 +3521,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `WindowTaskId`: `str`
 
+- `WindowTaskId`: `str`
 
 ## RelatedOpsItemTypeDef
 
@@ -3895,12 +3531,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RelatedOpsItemTypeDef
 ```
 
-
 Required fields:
+
 - `OpsItemId`: `str`
-
-
-
 
 ## ResetServiceSettingResultTypeDef
 
@@ -3908,12 +3541,10 @@ Required fields:
 from mypy_boto3_ssm.type_defs import ResetServiceSettingResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ServiceSetting`: `"ServiceSettingTypeDef"`
 
+- `ServiceSetting`:
+  [ServiceSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#servicesettingtypedef)
 
 ## ResolvedTargetsTypeDef
 
@@ -3921,13 +3552,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResolvedTargetsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ParameterValues`: `List[str]`
-- `Truncated`: `bool`
 
+- `ParameterValues`: `List`\[`str`\]
+- `Truncated`: `bool`
 
 ## ResourceComplianceSummaryItemTypeDef
 
@@ -3935,19 +3563,21 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceComplianceSummaryItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ComplianceType`: `str`
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `Status`: `ComplianceStatus`
-- `OverallSeverity`: `ComplianceSeverity`
-- `ExecutionSummary`: `"ComplianceExecutionSummaryTypeDef"`
-- `CompliantSummary`: `"CompliantSummaryTypeDef"`
-- `NonCompliantSummary`: `"NonCompliantSummaryTypeDef"`
-
+- `Status`:
+  [ComplianceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#compliancestatus)
+- `OverallSeverity`:
+  [ComplianceSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#complianceseverity)
+- `ExecutionSummary`:
+  [ComplianceExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#complianceexecutionsummarytypedef)
+- `CompliantSummary`:
+  [CompliantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliantsummarytypedef)
+- `NonCompliantSummary`:
+  [NonCompliantSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#noncompliantsummarytypedef)
 
 ## ResourceDataSyncAwsOrganizationsSourceTypeDef
 
@@ -3955,15 +3585,14 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncAwsOrganizationsSourceTypeDef
 ```
 
-
 Required fields:
+
 - `OrganizationSourceType`: `str`
 
-
-
 Optional fields:
-- `OrganizationalUnits`: `List["ResourceDataSyncOrganizationalUnitTypeDef"]`
 
+- `OrganizationalUnits`:
+  `List`\[[ResourceDataSyncOrganizationalUnitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncorganizationalunittypedef)\]
 
 ## ResourceDataSyncDestinationDataSharingTypeDef
 
@@ -3971,12 +3600,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncDestinationDataSharingTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DestinationDataSharingType`: `str`
 
+- `DestinationDataSharingType`: `str`
 
 ## ResourceDataSyncItemTypeDef
 
@@ -3984,21 +3610,21 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncItemTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SyncName`: `str`
 - `SyncType`: `str`
-- `SyncSource`: `"ResourceDataSyncSourceWithStateTypeDef"`
-- `S3Destination`: `"ResourceDataSyncS3DestinationTypeDef"`
+- `SyncSource`:
+  [ResourceDataSyncSourceWithStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncsourcewithstatetypedef)
+- `S3Destination`:
+  [ResourceDataSyncS3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncs3destinationtypedef)
 - `LastSyncTime`: `datetime`
 - `LastSuccessfulSyncTime`: `datetime`
 - `SyncLastModifiedTime`: `datetime`
-- `LastStatus`: `LastResourceDataSyncStatus`
+- `LastStatus`:
+  [LastResourceDataSyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#lastresourcedatasyncstatus)
 - `SyncCreatedTime`: `datetime`
 - `LastSyncStatusMessage`: `str`
-
 
 ## ResourceDataSyncOrganizationalUnitTypeDef
 
@@ -4006,12 +3632,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncOrganizationalUnitTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OrganizationalUnitId`: `str`
 
+- `OrganizationalUnitId`: `str`
 
 ## ResourceDataSyncS3DestinationTypeDef
 
@@ -4019,19 +3642,18 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncS3DestinationTypeDef
 ```
 
-
 Required fields:
+
 - `BucketName`: `str`
 - `SyncFormat`: `Literal['JsonSerDe']`
 - `Region`: `str`
 
-
-
 Optional fields:
+
 - `Prefix`: `str`
 - `AWSKMSKeyARN`: `str`
-- `DestinationDataSharing`: `"ResourceDataSyncDestinationDataSharingTypeDef"`
-
+- `DestinationDataSharing`:
+  [ResourceDataSyncDestinationDataSharingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncdestinationdatasharingtypedef)
 
 ## ResourceDataSyncSourceTypeDef
 
@@ -4039,18 +3661,17 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncSourceTypeDef
 ```
 
-
 Required fields:
+
 - `SourceType`: `str`
-- `SourceRegions`: `List[str]`
-
-
+- `SourceRegions`: `List`\[`str`\]
 
 Optional fields:
-- `AwsOrganizationsSource`: `"ResourceDataSyncAwsOrganizationsSourceTypeDef"`
+
+- `AwsOrganizationsSource`:
+  [ResourceDataSyncAwsOrganizationsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncawsorganizationssourcetypedef)
 - `IncludeFutureRegions`: `bool`
 - `EnableAllOpsDataSources`: `bool`
-
 
 ## ResourceDataSyncSourceWithStateTypeDef
 
@@ -4058,17 +3679,15 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResourceDataSyncSourceWithStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SourceType`: `str`
-- `AwsOrganizationsSource`: `"ResourceDataSyncAwsOrganizationsSourceTypeDef"`
-- `SourceRegions`: `List[str]`
+- `AwsOrganizationsSource`:
+  [ResourceDataSyncAwsOrganizationsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resourcedatasyncawsorganizationssourcetypedef)
+- `SourceRegions`: `List`\[`str`\]
 - `IncludeFutureRegions`: `bool`
 - `State`: `str`
 - `EnableAllOpsDataSources`: `bool`
-
 
 ## ResultAttributeTypeDef
 
@@ -4076,12 +3695,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ResultAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `TypeName`: `str`
-
-
-
 
 ## ResumeSessionResponseTypeDef
 
@@ -4089,14 +3705,11 @@ Required fields:
 from mypy_boto3_ssm.type_defs import ResumeSessionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SessionId`: `str`
 - `TokenValue`: `str`
 - `StreamUrl`: `str`
-
 
 ## ReviewInformationTypeDef
 
@@ -4104,14 +3717,12 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ReviewInformationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ReviewedTime`: `datetime`
-- `Status`: `ReviewStatus`
-- `Reviewer`: `str`
 
+- `ReviewedTime`: `datetime`
+- `Status`:
+  [ReviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#reviewstatus)
+- `Reviewer`: `str`
 
 ## RunbookTypeDef
 
@@ -4119,21 +3730,21 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import RunbookTypeDef
 ```
 
-
 Required fields:
+
 - `DocumentName`: `str`
 
-
-
 Optional fields:
+
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict[str, List[str]]`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `TargetParameterName`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
-- `TargetLocations`: `List["TargetLocationTypeDef"]`
-
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 
 ## S3OutputLocationTypeDef
 
@@ -4141,14 +3752,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import S3OutputLocationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
-
 
 ## S3OutputUrlTypeDef
 
@@ -4156,12 +3764,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import S3OutputUrlTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OutputUrl`: `str`
 
+- `OutputUrl`: `str`
 
 ## ScheduledWindowExecutionTypeDef
 
@@ -4169,14 +3774,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ScheduledWindowExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `Name`: `str`
 - `ExecutionTime`: `str`
-
 
 ## SendCommandResultTypeDef
 
@@ -4184,12 +3786,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import SendCommandResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Command`: `"CommandTypeDef"`
 
+- `Command`:
+  [CommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandtypedef)
 
 ## ServiceSettingTypeDef
 
@@ -4197,10 +3797,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import ServiceSettingTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SettingId`: `str`
 - `SettingValue`: `str`
 - `LastModifiedDate`: `datetime`
@@ -4208,20 +3806,17 @@ Optional fields:
 - `ARN`: `str`
 - `Status`: `str`
 
-
 ## SessionFilterTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import SessionFilterTypeDef
 ```
 
-
 Required fields:
-- `key`: `SessionFilterKey`
+
+- `key`:
+  [SessionFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#sessionfilterkey)
 - `value`: `str`
-
-
-
 
 ## SessionManagerOutputUrlTypeDef
 
@@ -4229,13 +3824,10 @@ Required fields:
 from mypy_boto3_ssm.type_defs import SessionManagerOutputUrlTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `S3OutputUrl`: `str`
 - `CloudWatchOutputUrl`: `str`
-
 
 ## SessionTypeDef
 
@@ -4243,20 +3835,19 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import SessionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SessionId`: `str`
 - `Target`: `str`
-- `Status`: `SessionStatus`
+- `Status`:
+  [SessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#sessionstatus)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
 - `DocumentName`: `str`
 - `Owner`: `str`
 - `Details`: `str`
-- `OutputUrl`: `"SessionManagerOutputUrlTypeDef"`
-
+- `OutputUrl`:
+  [SessionManagerOutputUrlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#sessionmanageroutputurltypedef)
 
 ## SeveritySummaryTypeDef
 
@@ -4264,10 +3855,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import SeveritySummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `CriticalCount`: `int`
 - `HighCount`: `int`
 - `MediumCount`: `int`
@@ -4275,19 +3864,15 @@ Optional fields:
 - `InformationalCount`: `int`
 - `UnspecifiedCount`: `int`
 
-
 ## StartAutomationExecutionResultTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import StartAutomationExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomationExecutionId`: `str`
 
+- `AutomationExecutionId`: `str`
 
 ## StartChangeRequestExecutionResultTypeDef
 
@@ -4295,12 +3880,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AutomationExecutionId`: `str`
 
+- `AutomationExecutionId`: `str`
 
 ## StartSessionResponseTypeDef
 
@@ -4308,14 +3890,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import StartSessionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SessionId`: `str`
 - `TokenValue`: `str`
 - `StreamUrl`: `str`
-
 
 ## StepExecutionFilterTypeDef
 
@@ -4323,13 +3902,11 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import StepExecutionFilterTypeDef
 ```
 
-
 Required fields:
-- `Key`: `StepExecutionFilterKey`
-- `Values`: `List[str]`
 
-
-
+- `Key`:
+  [StepExecutionFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#stepexecutionfilterkey)
+- `Values`: `List`\[`str`\]
 
 ## StepExecutionTypeDef
 
@@ -4337,10 +3914,8 @@ Required fields:
 from mypy_boto3_ssm.type_defs import StepExecutionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StepName`: `str`
 - `Action`: `str`
 - `TimeoutSeconds`: `int`
@@ -4348,22 +3923,25 @@ Optional fields:
 - `MaxAttempts`: `int`
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
-- `StepStatus`: `AutomationExecutionStatus`
+- `StepStatus`:
+  [AutomationExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#automationexecutionstatus)
 - `ResponseCode`: `str`
-- `Inputs`: `Dict[str, str]`
-- `Outputs`: `Dict[str, List[str]]`
+- `Inputs`: `Dict`\[`str`, `str`\]
+- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
 - `Response`: `str`
 - `FailureMessage`: `str`
-- `FailureDetails`: `"FailureDetailsTypeDef"`
+- `FailureDetails`:
+  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#failuredetailstypedef)
 - `StepExecutionId`: `str`
-- `OverriddenParameters`: `Dict[str, List[str]]`
+- `OverriddenParameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `IsEnd`: `bool`
 - `NextStep`: `str`
 - `IsCritical`: `bool`
-- `ValidNextSteps`: `List[str]`
-- `Targets`: `List["TargetTypeDef"]`
-- `TargetLocation`: `"TargetLocationTypeDef"`
-
+- `ValidNextSteps`: `List`\[`str`\]
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `TargetLocation`:
+  [TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)
 
 ## TagTypeDef
 
@@ -4371,13 +3949,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
-
-
 
 ## TargetLocationTypeDef
 
@@ -4385,16 +3960,13 @@ Required fields:
 from mypy_boto3_ssm.type_defs import TargetLocationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Accounts`: `List[str]`
-- `Regions`: `List[str]`
+
+- `Accounts`: `List`\[`str`\]
+- `Regions`: `List`\[`str`\]
 - `TargetLocationMaxConcurrency`: `str`
 - `TargetLocationMaxErrors`: `str`
 - `ExecutionRoleName`: `str`
-
 
 ## TargetTypeDef
 
@@ -4402,13 +3974,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import TargetTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
-- `Values`: `List[str]`
 
+- `Key`: `str`
+- `Values`: `List`\[`str`\]
 
 ## TerminateSessionResponseTypeDef
 
@@ -4416,12 +3985,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import TerminateSessionResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SessionId`: `str`
 
+- `SessionId`: `str`
 
 ## UnlabelParameterVersionResultTypeDef
 
@@ -4429,13 +3995,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UnlabelParameterVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `RemovedLabels`: `List[str]`
-- `InvalidLabels`: `List[str]`
 
+- `RemovedLabels`: `List`\[`str`\]
+- `InvalidLabels`: `List`\[`str`\]
 
 ## UpdateAssociationResultTypeDef
 
@@ -4443,12 +4006,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateAssociationResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationDescription`: `"AssociationDescriptionTypeDef"`
 
+- `AssociationDescription`:
+  [AssociationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationdescriptiontypedef)
 
 ## UpdateAssociationStatusResultTypeDef
 
@@ -4456,12 +4017,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateAssociationStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AssociationDescription`: `"AssociationDescriptionTypeDef"`
 
+- `AssociationDescription`:
+  [AssociationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationdescriptiontypedef)
 
 ## UpdateDocumentDefaultVersionResultTypeDef
 
@@ -4469,12 +4028,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Description`: `"DocumentDefaultVersionDescriptionTypeDef"`
 
+- `Description`:
+  [DocumentDefaultVersionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentdefaultversiondescriptiontypedef)
 
 ## UpdateDocumentResultTypeDef
 
@@ -4482,12 +4039,10 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateDocumentResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DocumentDescription`: `"DocumentDescriptionTypeDef"`
 
+- `DocumentDescription`:
+  [DocumentDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentdescriptiontypedef)
 
 ## UpdateMaintenanceWindowResultTypeDef
 
@@ -4495,10 +4050,8 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `Name`: `str`
 - `Description`: `str`
@@ -4512,24 +4065,21 @@ Optional fields:
 - `AllowUnassociatedTargets`: `bool`
 - `Enabled`: `bool`
 
-
 ## UpdateMaintenanceWindowTargetResultTypeDef
 
 ```python
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `OwnerInformation`: `str`
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## UpdateMaintenanceWindowTaskResultTypeDef
 
@@ -4537,24 +4087,25 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
-- `Targets`: `List["TargetTypeDef"]`
+- `Targets`:
+  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
 - `TaskArn`: `str`
 - `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict[str, "MaintenanceWindowTaskParameterValueExpressionTypeDef"]`
-- `TaskInvocationParameters`: `"MaintenanceWindowTaskInvocationParametersTypeDef"`
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowtaskinvocationparameterstypedef)
 - `Priority`: `int`
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
-- `LoggingInfo`: `"LoggingInfoTypeDef"`
+- `LoggingInfo`:
+  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
-
 
 ## UpdateOpsMetadataResultTypeDef
 
@@ -4562,12 +4113,9 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdateOpsMetadataResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpsMetadataArn`: `str`
 
+- `OpsMetadataArn`: `str`
 
 ## UpdatePatchBaselineResultTypeDef
 
@@ -4575,25 +4123,28 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import UpdatePatchBaselineResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BaselineId`: `str`
 - `Name`: `str`
-- `OperatingSystem`: `OperatingSystem`
-- `GlobalFilters`: `"PatchFilterGroupTypeDef"`
-- `ApprovalRules`: `"PatchRuleGroupTypeDef"`
-- `ApprovedPatches`: `List[str]`
-- `ApprovedPatchesComplianceLevel`: `PatchComplianceLevel`
+- `OperatingSystem`:
+  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchcompliancelevel)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List[str]`
-- `RejectedPatchesAction`: `PatchAction`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`:
+  [PatchAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchaction)
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
 - `Description`: `str`
-- `Sources`: `List["PatchSourceTypeDef"]`
-
+- `Sources`:
+  `List`\[[PatchSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchsourcetypedef)\]
 
 ## WaiterConfigTypeDef
 
@@ -4601,10 +4152,7 @@ Optional fields:
 from mypy_boto3_ssm.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

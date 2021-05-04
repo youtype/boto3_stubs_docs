@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > WorkMail
 
-Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
-type annotations stubs module [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+Auto-generated documentation for
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+type annotations stubs module
+[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ```bash
 pip install mypy-boto3-workmail
@@ -19,7 +21,8 @@ pip install mypy-boto3-workmail
 
 ## WorkMailClient
 
-Type annotations for  `boto3.client("workmail")` as [WorkMailClient](./client.md)
+Type annotations for `boto3.client("workmail")` as
+[WorkMailClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_workmail.client import WorkMailClient
 ```
 
-
 WorkMailClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_delegate_to_resource](./client.md#associate-delegate-to-resource)
 - [associate_member_to_group](./client.md#associate-member-to-group)
 - [can_paginate](./client.md#can-paginate)
@@ -91,10 +92,8 @@ WorkMailClient [exceptions](./client.md#exceptions)
 - [update_primary_email_address](./client.md#update-primary-email-address)
 - [update_resource](./client.md#update-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [DirectoryInUseException](./client.md#directoryinuseexception)
 - [DirectoryServiceAuthenticationFailedException](./client.md#directoryserviceauthenticationfailedexception)
@@ -117,14 +116,10 @@ WorkMailClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [UnsupportedOperationException](./client.md#unsupportedoperationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("workmail").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("workmail").get_paginator("...")`.
 
 Can be used directly:
 
@@ -140,11 +135,6 @@ from mypy_boto3_workmail.paginators import ListAliasesPaginator, ...
 - [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -175,13 +165,10 @@ from mypy_boto3_workmail.literals import AccessControlRuleEffect, ...
 - [RetentionAction](./literals.md#retentionaction)
 - [UserRole](./literals.md#userrole)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

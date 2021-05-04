@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > SMSVoice
 
-Auto-generated documentation for [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
-type annotations stubs module [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
+Auto-generated documentation for
+[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
+type annotations stubs module
+[mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
 ```bash
 pip install mypy-boto3-sms-voice
@@ -18,7 +20,8 @@ pip install mypy-boto3-sms-voice
 
 ## SMSVoiceClient
 
-Type annotations for  `boto3.client("sms-voice")` as [SMSVoiceClient](./client.md)
+Type annotations for `boto3.client("sms-voice")` as
+[SMSVoiceClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_sms_voice.client import SMSVoiceClient
 ```
 
-
 SMSVoiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_configuration_set](./client.md#create-configuration-set)
 - [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
@@ -43,10 +44,8 @@ SMSVoiceClient [exceptions](./client.md#exceptions)
 - [send_voice_message](./client.md#send-voice-message)
 - [update_configuration_set_event_destination](./client.md#update-configuration-set-event-destination)
 
-
-
-
 ### Exceptions
+
 - [AlreadyExistsException](./client.md#alreadyexistsexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -54,15 +53,6 @@ SMSVoiceClient [exceptions](./client.md#exceptions)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [NotFoundException](./client.md#notfoundexception)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -76,13 +66,10 @@ from mypy_boto3_sms_voice.literals import EventType, ...
 
 - [EventType](./literals.md#eventtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

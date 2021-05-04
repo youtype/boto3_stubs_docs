@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Snowball
 
-Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+Auto-generated documentation for
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+type annotations stubs module
+[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 ```bash
 pip install mypy-boto3-snowball
@@ -19,7 +21,8 @@ pip install mypy-boto3-snowball
 
 ## SnowballClient
 
-Type annotations for  `boto3.client("snowball")` as [SnowballClient](./client.md)
+Type annotations for `boto3.client("snowball")` as
+[SnowballClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_snowball.client import SnowballClient
 ```
 
-
 SnowballClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [cancel_cluster](./client.md#cancel-cluster)
 - [cancel_job](./client.md#cancel-job)
@@ -59,10 +60,8 @@ SnowballClient [exceptions](./client.md#exceptions)
 - [update_job](./client.md#update-job)
 - [update_job_shipment_state](./client.md#update-job-shipment-state)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ClusterLimitExceededException](./client.md#clusterlimitexceededexception)
 - [ConflictException](./client.md#conflictexception)
@@ -76,14 +75,10 @@ SnowballClient [exceptions](./client.md#exceptions)
 - [ReturnShippingLabelAlreadyExistsException](./client.md#returnshippinglabelalreadyexistsexception)
 - [UnsupportedAddressException](./client.md#unsupportedaddressexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("snowball").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("snowball").get_paginator("...")`.
 
 Can be used directly:
 
@@ -96,11 +91,6 @@ from mypy_boto3_snowball.paginators import DescribeAddressesPaginator, ...
 - [ListClustersPaginator](./paginators.md#listclusterspaginator)
 - [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -126,13 +116,10 @@ from mypy_boto3_snowball.literals import ClusterState, ...
 - [SnowballCapacity](./literals.md#snowballcapacity)
 - [SnowballType](./literals.md#snowballtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > DynamoDBStreams
 
-Auto-generated documentation for [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
-type annotations stubs module [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+Auto-generated documentation for
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+type annotations stubs module
+[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 ```bash
 pip install mypy-boto3-dynamodbstreams
@@ -18,7 +20,8 @@ pip install mypy-boto3-dynamodbstreams
 
 ## DynamoDBStreamsClient
 
-Type annotations for  `boto3.client("dynamodbstreams")` as [DynamoDBStreamsClient](./client.md)
+Type annotations for `boto3.client("dynamodbstreams")` as
+[DynamoDBStreamsClient](./client.md)
 
 Can be used directly:
 
@@ -26,12 +29,10 @@ Can be used directly:
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 ```
 
-
 DynamoDBStreamsClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [describe_stream](./client.md#describe-stream)
 - [generate_presigned_url](./client.md#generate-presigned-url)
@@ -39,25 +40,14 @@ DynamoDBStreamsClient [exceptions](./client.md#exceptions)
 - [get_shard_iterator](./client.md#get-shard-iterator)
 - [list_streams](./client.md#list-streams)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ExpiredIteratorException](./client.md#expirediteratorexception)
 - [InternalServerError](./client.md#internalservererror)
 - [LimitExceededException](./client.md#limitexceededexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [TrimmedDataAccessException](./client.md#trimmeddataaccessexception)
-
-
-
-
-
-
-
-
-
 
 ## Literals
 
@@ -75,13 +65,10 @@ from mypy_boto3_dynamodbstreams.literals import KeyType, ...
 - [StreamStatus](./literals.md#streamstatus)
 - [StreamViewType](./literals.md#streamviewtype)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

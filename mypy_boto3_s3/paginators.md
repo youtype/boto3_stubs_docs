@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [S3](./README.md) > Paginators
 
-Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+Auto-generated documentation for
+[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+type annotations stubs module
+[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Paginators for boto3 S3 module](#paginators-for-boto3-s3-module)
   - [ListMultipartUploadsPaginator](#listmultipartuploadspaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto
 
 ## ListMultipartUploadsPaginator
 
-Type annotations for `boto3.client("s3").get_paginator("list_multipart_uploads")`.
+Type annotations for
+`boto3.client("s3").get_paginator("list_multipart_uploads")`.
 
 Can be used directly:
 
@@ -25,24 +28,26 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return boto3.client("s3").get_paginator("list_multipart_uploads")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
+Boto3 documentation:
+[S3.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
 
-```python
-class ListMultipartUploadsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Bucket: str,
-        Delimiter: str = None,
-        EncodingType: Literal['url'] = None,
-        Prefix: str = None,
-        ExpectedBucketOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMultipartUploadsOutputTypeDef]:
-        pass
-```
+Arguments for `ListMultipartUploadsPaginator.paginate` method:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `Prefix`: `str`
+- `ExpectedBucketOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+
+`ListMultipartUploadsPaginator.paginate` returns
+`Iterator`\[[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listmultipartuploadsoutputtypedef)\].
+
 ## ListObjectVersionsPaginator
 
-Type annotations for `boto3.client("s3").get_paginator("list_object_versions")`.
+Type annotations for
+`boto3.client("s3").get_paginator("list_object_versions")`.
 
 Can be used directly:
 
@@ -53,21 +58,22 @@ def get_list_object_versions_paginator() -> ListObjectVersionsPaginator:
     return boto3.client("s3").get_paginator("list_object_versions")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectVersions)
+Boto3 documentation:
+[S3.Paginator.ListObjectVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectVersions)
 
-```python
-class ListObjectVersionsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Bucket: str,
-        Delimiter: str = None,
-        EncodingType: Literal['url'] = None,
-        Prefix: str = None,
-        ExpectedBucketOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListObjectVersionsOutputTypeDef]:
-        pass
-```
+Arguments for `ListObjectVersionsPaginator.paginate` method:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `Prefix`: `str`
+- `ExpectedBucketOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+
+`ListObjectVersionsPaginator.paginate` returns
+`Iterator`\[[ListObjectVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectversionsoutputtypedef)\].
+
 ## ListObjectsPaginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_objects")`.
@@ -81,22 +87,23 @@ def get_list_objects_paginator() -> ListObjectsPaginator:
     return boto3.client("s3").get_paginator("list_objects")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjects)
+Boto3 documentation:
+[S3.Paginator.ListObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjects)
 
-```python
-class ListObjectsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Bucket: str,
-        Delimiter: str = None,
-        EncodingType: Literal['url'] = None,
-        Prefix: str = None,
-        RequestPayer: Literal['requester'] = None,
-        ExpectedBucketOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListObjectsOutputTypeDef]:
-        pass
-```
+Arguments for `ListObjectsPaginator.paginate` method:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `Prefix`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+
+`ListObjectsPaginator.paginate` returns
+`Iterator`\[[ListObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsoutputtypedef)\].
+
 ## ListObjectsV2Paginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_objects_v2")`.
@@ -110,24 +117,25 @@ def get_list_objects_v2_paginator() -> ListObjectsV2Paginator:
     return boto3.client("s3").get_paginator("list_objects_v2")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2)
+Boto3 documentation:
+[S3.Paginator.ListObjectsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2)
 
-```python
-class ListObjectsV2Paginator(Boto3Paginator):
-    def paginate(
-        self,
-        Bucket: str,
-        Delimiter: str = None,
-        EncodingType: Literal['url'] = None,
-        Prefix: str = None,
-        FetchOwner: bool = None,
-        StartAfter: str = None,
-        RequestPayer: Literal['requester'] = None,
-        ExpectedBucketOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListObjectsV2OutputTypeDef]:
-        pass
-```
+Arguments for `ListObjectsV2Paginator.paginate` method:
+
+- `Bucket`: `str` *(required)*
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']`
+- `Prefix`: `str`
+- `FetchOwner`: `bool`
+- `StartAfter`: `str`
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+
+`ListObjectsV2Paginator.paginate` returns
+`Iterator`\[[ListObjectsV2OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsv2outputtypedef)\].
+
 ## ListPartsPaginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_parts")`.
@@ -141,18 +149,18 @@ def get_list_parts_paginator() -> ListPartsPaginator:
     return boto3.client("s3").get_paginator("list_parts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListParts)
+Boto3 documentation:
+[S3.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListParts)
 
-```python
-class ListPartsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        Bucket: str,
-        Key: str,
-        UploadId: str,
-        RequestPayer: Literal['requester'] = None,
-        ExpectedBucketOwner: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListPartsOutputTypeDef]:
-        pass
-```
+Arguments for `ListPartsPaginator.paginate` method:
+
+- `Bucket`: `str` *(required)*
+- `Key`: `str` *(required)*
+- `UploadId`: `str` *(required)*
+- `RequestPayer`: `Literal['requester']`
+- `ExpectedBucketOwner`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+
+`ListPartsPaginator.paginate` returns
+`Iterator`\[[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listpartsoutputtypedef)\].

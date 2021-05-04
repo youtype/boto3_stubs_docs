@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > AugmentedAIRuntime
 
-Auto-generated documentation for [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
-type annotations stubs module [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+Auto-generated documentation for
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+type annotations stubs module
+[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 ```bash
 pip install mypy-boto3-sagemaker-a2i-runtime
@@ -19,7 +21,8 @@ pip install mypy-boto3-sagemaker-a2i-runtime
 
 ## AugmentedAIRuntimeClient
 
-Type annotations for  `boto3.client("sagemaker-a2i-runtime")` as [AugmentedAIRuntimeClient](./client.md)
+Type annotations for `boto3.client("sagemaker-a2i-runtime")` as
+[AugmentedAIRuntimeClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 ```
 
-
 AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [delete_human_loop](./client.md#delete-human-loop)
 - [describe_human_loop](./client.md#describe-human-loop)
@@ -42,10 +43,8 @@ AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
 - [start_human_loop](./client.md#start-human-loop)
 - [stop_human_loop](./client.md#stop-human-loop)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
 - [InternalServerException](./client.md#internalserverexception)
@@ -54,14 +53,10 @@ AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("sagemaker-a2i-runtime").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("sagemaker-a2i-runtime").get_paginator("...")`.
 
 Can be used directly:
 
@@ -70,11 +65,6 @@ from mypy_boto3_sagemaker_a2i_runtime.paginators import ListHumanLoopsPaginator,
 ```
 
 - [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -91,13 +81,10 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifier, ...
 - [ListHumanLoopsPaginatorName](./literals.md#listhumanloopspaginatorname)
 - [SortOrder](./literals.md#sortorder)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

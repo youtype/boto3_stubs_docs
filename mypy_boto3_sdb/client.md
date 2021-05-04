@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [SimpleDB](./README.md) > SimpleDBClient
 
-Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+Auto-generated documentation for
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+type annotations stubs module
+[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [SimpleDBClient for boto3 SimpleDB module](#simpledbclient-for-boto3-simpledb-module)
   - [SimpleDBClient](#simpledbclient)
@@ -36,12 +38,13 @@ def get_sdb_client() -> SimpleDBClient:
     return boto3.client("sdb")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
+Boto3 documentation:
+[SimpleDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_sdb.client import Exceptions
@@ -49,7 +52,6 @@ from mypy_boto3_sdb.client import Exceptions
 def handle_error(exc: Exceptions.AttributeDoesNotExist) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -72,202 +74,187 @@ Exceptions:
 - `Exceptions.RequestTimeout`
 - `Exceptions.TooManyRequestedAttributes`
 
-
 ## Methods
-
 
 ### batch_delete_attributes
 
 Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes]
+Boto3 documentation:
+[SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
 
-```python
-def batch_delete_attributes(
-    self,
-    DomainName: str,
-    Items: List[DeletableItemTypeDef]
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Items`:
+  `List`\[[DeletableItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#deletableitemtypedef)\]
+  *(required)*
 
 ### batch_put_attributes
 
 Type annotations for `boto3.client("sdb").batch_put_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes]
+Boto3 documentation:
+[SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
 
-```python
-def batch_put_attributes(
-    self,
-    DomainName: str,
-    Items: List[ReplaceableItemTypeDef]
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `Items`:
+  `List`\[[ReplaceableItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableitemtypedef)\]
+  *(required)*
 
 ### can_paginate
 
 Type annotations for `boto3.client("sdb").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate]
+Boto3 documentation:
+[SimpleDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_domain
 
 Type annotations for `boto3.client("sdb").create_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain]
+Boto3 documentation:
+[SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
 
-```python
-def create_domain(
-    self,
-    DomainName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
 
 ### delete_attributes
 
 Type annotations for `boto3.client("sdb").delete_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes]
+Boto3 documentation:
+[SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
 
-```python
-def delete_attributes(
-    self,
-    DomainName: str,
-    ItemName: str,
-    Attributes: List["AttributeTypeDef"] = None,
-    Expected: UpdateConditionTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ItemName`: `str` *(required)*
+- `Attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
+- `Expected`:
+  [UpdateConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#updateconditiontypedef)
 
 ### delete_domain
 
 Type annotations for `boto3.client("sdb").delete_domain` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain]
+Boto3 documentation:
+[SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
 
-```python
-def delete_domain(
-    self,
-    DomainName: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
 
 ### domain_metadata
 
 Type annotations for `boto3.client("sdb").domain_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata]
+Boto3 documentation:
+[SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
 
-```python
-def domain_metadata(
-    self,
-    DomainName: str
-) -> DomainMetadataResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+
+Returns
+[DomainMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#domainmetadataresulttypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("sdb").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url]
+Boto3 documentation:
+[SimpleDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_attributes
 
 Type annotations for `boto3.client("sdb").get_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes]
+Boto3 documentation:
+[SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
 
-```python
-def get_attributes(
-    self,
-    DomainName: str,
-    ItemName: str,
-    AttributeNames: List[str] = None,
-    ConsistentRead: bool = None
-) -> GetAttributesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ItemName`: `str` *(required)*
+- `AttributeNames`: `List`\[`str`\]
+- `ConsistentRead`: `bool`
+
+Returns
+[GetAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#getattributesresulttypedef).
 
 ### list_domains
 
 Type annotations for `boto3.client("sdb").list_domains` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains]
+Boto3 documentation:
+[SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
 
-```python
-def list_domains(
-    self,
-    MaxNumberOfDomains: int = None,
-    NextToken: str = None
-) -> ListDomainsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxNumberOfDomains`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#listdomainsresulttypedef).
 
 ### put_attributes
 
 Type annotations for `boto3.client("sdb").put_attributes` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes]
+Boto3 documentation:
+[SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
 
-```python
-def put_attributes(
-    self,
-    DomainName: str,
-    ItemName: str,
-    Attributes: List["ReplaceableAttributeTypeDef"],
-    Expected: UpdateConditionTypeDef = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `DomainName`: `str` *(required)*
+- `ItemName`: `str` *(required)*
+- `Attributes`:
+  `List`\[[ReplaceableAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableattributetypedef)\]
+  *(required)*
+- `Expected`:
+  [UpdateConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#updateconditiontypedef)
 
 ### select
 
 Type annotations for `boto3.client("sdb").select` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select]
+Boto3 documentation:
+[SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
 
-```python
-def select(
-    self,
-    SelectExpression: str,
-    NextToken: str = None,
-    ConsistentRead: bool = None
-) -> SelectResultTypeDef:
-    pass
-```
+Arguments:
 
+- `SelectExpression`: `str` *(required)*
+- `NextToken`: `str`
+- `ConsistentRead`: `bool`
 
+Returns
+[SelectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#selectresulttypedef).
 
 ### get_paginator
 
 Type annotations for `boto3.client("sdb").get_paginator` method with overloads.
 
-- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("select")` -> [SelectPaginator](./paginators.md#selectpaginator)
-
-
+- `client.get_paginator("list_domains")` ->
+  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("select")` ->
+  [SelectPaginator](./paginators.md#selectpaginator)

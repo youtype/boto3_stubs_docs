@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeStar](./README.md) > CodeStarClient
 
-Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+Auto-generated documentation for
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+type annotations stubs module
+[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [CodeStarClient for boto3 CodeStar module](#codestarclient-for-boto3-codestar-module)
   - [CodeStarClient](#codestarclient)
@@ -44,12 +46,13 @@ def get_codestar_client() -> CodeStarClient:
     return boto3.client("codestar")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
+Boto3 documentation:
+[CodeStar.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_codestar.client import Exceptions
@@ -57,7 +60,6 @@ from mypy_boto3_codestar.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -76,336 +78,333 @@ Exceptions:
 - `Exceptions.UserProfileNotFoundException`
 - `Exceptions.ValidationException`
 
-
 ## Methods
-
 
 ### associate_team_member
 
 Type annotations for `boto3.client("codestar").associate_team_member` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member]
+Boto3 documentation:
+[CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member)
 
-```python
-def associate_team_member(
-    self,
-    projectId: str,
-    userArn: str,
-    projectRole: str,
-    clientRequestToken: str = None,
-    remoteAccessAllowed: bool = None
-) -> AssociateTeamMemberResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+- `projectRole`: `str` *(required)*
+- `clientRequestToken`: `str`
+- `remoteAccessAllowed`: `bool`
+
+Returns
+[AssociateTeamMemberResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#associateteammemberresulttypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("codestar").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate]
+Boto3 documentation:
+[CodeStar.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_project
 
 Type annotations for `boto3.client("codestar").create_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project]
+Boto3 documentation:
+[CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project)
 
-```python
-def create_project(
-    self,
-    name: str,
-    id: str,
-    description: str = None,
-    clientRequestToken: str = None,
-    sourceCode: List[CodeTypeDef] = None,
-    toolchain: ToolchainTypeDef = None,
-    tags: Dict[str, str] = None
-) -> CreateProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `name`: `str` *(required)*
+- `id`: `str` *(required)*
+- `description`: `str`
+- `clientRequestToken`: `str`
+- `sourceCode`:
+  `List`\[[CodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codetypedef)\]
+- `toolchain`:
+  [ToolchainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#toolchaintypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#createprojectresulttypedef).
 
 ### create_user_profile
 
 Type annotations for `boto3.client("codestar").create_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile]
+Boto3 documentation:
+[CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile)
 
-```python
-def create_user_profile(
-    self,
-    userArn: str,
-    displayName: str,
-    emailAddress: str,
-    sshPublicKey: str = None
-) -> CreateUserProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `userArn`: `str` *(required)*
+- `displayName`: `str` *(required)*
+- `emailAddress`: `str` *(required)*
+- `sshPublicKey`: `str`
+
+Returns
+[CreateUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#createuserprofileresulttypedef).
 
 ### delete_project
 
 Type annotations for `boto3.client("codestar").delete_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project]
+Boto3 documentation:
+[CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project)
 
-```python
-def delete_project(
-    self,
-    id: str,
-    clientRequestToken: str = None,
-    deleteStack: bool = None
-) -> DeleteProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `clientRequestToken`: `str`
+- `deleteStack`: `bool`
+
+Returns
+[DeleteProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#deleteprojectresulttypedef).
 
 ### delete_user_profile
 
 Type annotations for `boto3.client("codestar").delete_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile]
+Boto3 documentation:
+[CodeStar.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
 
-```python
-def delete_user_profile(
-    self,
-    userArn: str
-) -> DeleteUserProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `userArn`: `str` *(required)*
+
+Returns
+[DeleteUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#deleteuserprofileresulttypedef).
 
 ### describe_project
 
 Type annotations for `boto3.client("codestar").describe_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project]
+Boto3 documentation:
+[CodeStar.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project)
 
-```python
-def describe_project(
-    self,
-    id: str
-) -> DescribeProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+
+Returns
+[DescribeProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#describeprojectresulttypedef).
 
 ### describe_user_profile
 
 Type annotations for `boto3.client("codestar").describe_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile]
+Boto3 documentation:
+[CodeStar.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
 
-```python
-def describe_user_profile(
-    self,
-    userArn: str
-) -> DescribeUserProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `userArn`: `str` *(required)*
+
+Returns
+[DescribeUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#describeuserprofileresulttypedef).
 
 ### disassociate_team_member
 
-Type annotations for `boto3.client("codestar").disassociate_team_member` method.
+Type annotations for `boto3.client("codestar").disassociate_team_member`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member]
+Boto3 documentation:
+[CodeStar.Client.disassociate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
 
-```python
-def disassociate_team_member(
-    self,
-    projectId: str,
-    userArn: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("codestar").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url]
+Boto3 documentation:
+[CodeStar.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### list_projects
 
 Type annotations for `boto3.client("codestar").list_projects` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects]
+Boto3 documentation:
+[CodeStar.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects)
 
-```python
-def list_projects(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListProjectsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listprojectsresulttypedef).
 
 ### list_resources
 
 Type annotations for `boto3.client("codestar").list_resources` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources]
+Boto3 documentation:
+[CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources)
 
-```python
-def list_resources(
-    self,
-    projectId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListResourcesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listresourcesresulttypedef).
 
 ### list_tags_for_project
 
 Type annotations for `boto3.client("codestar").list_tags_for_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project]
+Boto3 documentation:
+[CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
 
-```python
-def list_tags_for_project(
-    self,
-    id: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTagsForProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTagsForProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listtagsforprojectresulttypedef).
 
 ### list_team_members
 
 Type annotations for `boto3.client("codestar").list_team_members` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members]
+Boto3 documentation:
+[CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members)
 
-```python
-def list_team_members(
-    self,
-    projectId: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListTeamMembersResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListTeamMembersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listteammembersresulttypedef).
 
 ### list_user_profiles
 
 Type annotations for `boto3.client("codestar").list_user_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles]
+Boto3 documentation:
+[CodeStar.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
 
-```python
-def list_user_profiles(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListUserProfilesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListUserProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listuserprofilesresulttypedef).
 
 ### tag_project
 
 Type annotations for `boto3.client("codestar").tag_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project]
+Boto3 documentation:
+[CodeStar.Client.tag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project)
 
-```python
-def tag_project(
-    self,
-    id: str,
-    tags: Dict[str, str]
-) -> TagProjectResultTypeDef:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns
+[TagProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#tagprojectresulttypedef).
 
 ### untag_project
 
 Type annotations for `boto3.client("codestar").untag_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project]
+Boto3 documentation:
+[CodeStar.Client.untag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project)
 
-```python
-def untag_project(
-    self,
-    id: str,
-    tags: List[str]
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `tags`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_project
 
 Type annotations for `boto3.client("codestar").update_project` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project]
+Boto3 documentation:
+[CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project)
 
-```python
-def update_project(
-    self,
-    id: str,
-    name: str = None,
-    description: str = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `id`: `str` *(required)*
+- `name`: `str`
+- `description`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_team_member
 
 Type annotations for `boto3.client("codestar").update_team_member` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member]
+Boto3 documentation:
+[CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member)
 
-```python
-def update_team_member(
-    self,
-    projectId: str,
-    userArn: str,
-    projectRole: str = None,
-    remoteAccessAllowed: bool = None
-) -> UpdateTeamMemberResultTypeDef:
-    pass
-```
+Arguments:
+
+- `projectId`: `str` *(required)*
+- `userArn`: `str` *(required)*
+- `projectRole`: `str`
+- `remoteAccessAllowed`: `bool`
+
+Returns
+[UpdateTeamMemberResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#updateteammemberresulttypedef).
 
 ### update_user_profile
 
 Type annotations for `boto3.client("codestar").update_user_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile]
+Boto3 documentation:
+[CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile)
 
-```python
-def update_user_profile(
-    self,
-    userArn: str,
-    displayName: str = None,
-    emailAddress: str = None,
-    sshPublicKey: str = None
-) -> UpdateUserProfileResultTypeDef:
-    pass
-```
+Arguments:
 
+- `userArn`: `str` *(required)*
+- `displayName`: `str`
+- `emailAddress`: `str`
+- `sshPublicKey`: `str`
 
+Returns
+[UpdateUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#updateuserprofileresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("codestar").get_paginator` method with overloads.
+Type annotations for `boto3.client("codestar").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-- `client.get_paginator("list_team_members")` -> [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
-- `client.get_paginator("list_user_profiles")` -> [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
-
-
+- `client.get_paginator("list_projects")` ->
+  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_resources")` ->
+  [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+- `client.get_paginator("list_team_members")` ->
+  [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
+- `client.get_paginator("list_user_profiles")` ->
+  [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)

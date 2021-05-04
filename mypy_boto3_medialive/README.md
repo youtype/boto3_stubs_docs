@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaLive
 
-Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+Auto-generated documentation for
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+type annotations stubs module
+[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ```bash
 pip install mypy-boto3-medialive
@@ -20,7 +22,8 @@ pip install mypy-boto3-medialive
 
 ## MediaLiveClient
 
-Type annotations for  `boto3.client("medialive")` as [MediaLiveClient](./client.md)
+Type annotations for `boto3.client("medialive")` as
+[MediaLiveClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_medialive.client import MediaLiveClient
 ```
 
-
 MediaLiveClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [accept_input_device_transfer](./client.md#accept-input-device-transfer)
 - [batch_delete](./client.md#batch-delete)
 - [batch_start](./client.md#batch-start)
@@ -95,10 +96,8 @@ MediaLiveClient [exceptions](./client.md#exceptions)
 - [update_multiplex_program](./client.md#update-multiplex-program)
 - [update_reservation](./client.md#update-reservation)
 
-
-
-
 ### Exceptions
+
 - [BadGatewayException](./client.md#badgatewayexception)
 - [BadRequestException](./client.md#badrequestexception)
 - [ClientError](./client.md#clienterror)
@@ -110,14 +109,10 @@ MediaLiveClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnprocessableEntityException](./client.md#unprocessableentityexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("medialive").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("medialive").get_paginator("...")`.
 
 Can be used directly:
 
@@ -136,12 +131,10 @@ from mypy_boto3_medialive.paginators import DescribeSchedulePaginator, ...
 - [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("medialive").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("medialive").get_waiter("...")`.
 
 Can be used directly:
 
@@ -160,9 +153,6 @@ from mypy_boto3_medialive.waiters import ChannelCreatedWaiter, ...
 - [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
 - [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
 - [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
-
-
-
 
 ## Literals
 
@@ -442,13 +432,10 @@ from mypy_boto3_medialive.literals import AacCodingMode, ...
 - [VideoSelectorColorSpaceUsage](./literals.md#videoselectorcolorspaceusage)
 - [WavCodingMode](./literals.md#wavcodingmode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

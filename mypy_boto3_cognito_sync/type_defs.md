@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CognitoSync](./README.md) > Structures
 
-Auto-generated documentation for [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
-type annotations stubs module [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+Auto-generated documentation for
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+type annotations stubs module
+[mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 - [Typed dictionaries for boto3 CognitoSync module](#typed-dictionaries-for-boto3-cognitosync-module)
   - [BulkPublishResponseTypeDef](#bulkpublishresponsetypedef)
@@ -34,12 +36,9 @@ type annotations stubs module [mypy_boto3_cognito_sync](https://pypi.org/project
 from mypy_boto3_cognito_sync.type_defs import BulkPublishResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityPoolId`: `str`
 
+- `IdentityPoolId`: `str`
 
 ## CognitoStreamsTypeDef
 
@@ -47,14 +46,12 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import CognitoStreamsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StreamName`: `str`
 - `RoleArn`: `str`
-- `StreamingStatus`: `StreamingStatus`
-
+- `StreamingStatus`:
+  [StreamingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/literals.html#streamingstatus)
 
 ## DatasetTypeDef
 
@@ -62,10 +59,8 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import DatasetTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IdentityId`: `str`
 - `DatasetName`: `str`
 - `CreationDate`: `datetime`
@@ -74,19 +69,16 @@ Optional fields:
 - `DataStorage`: `int`
 - `NumRecords`: `int`
 
-
 ## DeleteDatasetResponseTypeDef
 
 ```python
 from mypy_boto3_cognito_sync.type_defs import DeleteDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dataset`: `"DatasetTypeDef"`
 
+- `Dataset`:
+  [DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#datasettypedef)
 
 ## DescribeDatasetResponseTypeDef
 
@@ -94,12 +86,10 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import DescribeDatasetResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Dataset`: `"DatasetTypeDef"`
 
+- `Dataset`:
+  [DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#datasettypedef)
 
 ## DescribeIdentityPoolUsageResponseTypeDef
 
@@ -107,12 +97,10 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityPoolUsage`: `"IdentityPoolUsageTypeDef"`
 
+- `IdentityPoolUsage`:
+  [IdentityPoolUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#identitypoolusagetypedef)
 
 ## DescribeIdentityUsageResponseTypeDef
 
@@ -120,12 +108,10 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityUsage`: `"IdentityUsageTypeDef"`
 
+- `IdentityUsage`:
+  [IdentityUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#identityusagetypedef)
 
 ## GetBulkPublishDetailsResponseTypeDef
 
@@ -133,16 +119,14 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import GetBulkPublishDetailsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IdentityPoolId`: `str`
 - `BulkPublishStartTime`: `datetime`
 - `BulkPublishCompleteTime`: `datetime`
-- `BulkPublishStatus`: `BulkPublishStatus`
+- `BulkPublishStatus`:
+  [BulkPublishStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/literals.html#bulkpublishstatus)
 - `FailureMessage`: `str`
-
 
 ## GetCognitoEventsResponseTypeDef
 
@@ -150,12 +134,9 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Events`: `Dict[str, str]`
 
+- `Events`: `Dict`\[`str`, `str`\]
 
 ## GetIdentityPoolConfigurationResponseTypeDef
 
@@ -163,14 +144,13 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityPoolId`: `str`
-- `PushSync`: `"PushSyncTypeDef"`
-- `CognitoStreams`: `"CognitoStreamsTypeDef"`
 
+- `IdentityPoolId`: `str`
+- `PushSync`:
+  [PushSyncTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#pushsynctypedef)
+- `CognitoStreams`:
+  [CognitoStreamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#cognitostreamstypedef)
 
 ## IdentityPoolUsageTypeDef
 
@@ -178,15 +158,12 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import IdentityPoolUsageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IdentityPoolId`: `str`
 - `SyncSessionsCount`: `int`
 - `DataStorage`: `int`
 - `LastModifiedDate`: `datetime`
-
 
 ## IdentityUsageTypeDef
 
@@ -194,16 +171,13 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import IdentityUsageTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IdentityId`: `str`
 - `IdentityPoolId`: `str`
 - `LastModifiedDate`: `datetime`
 - `DatasetCount`: `int`
 - `DataStorage`: `int`
-
 
 ## ListDatasetsResponseTypeDef
 
@@ -211,14 +185,12 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import ListDatasetsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Datasets`: `List["DatasetTypeDef"]`
+
+- `Datasets`:
+  `List`\[[DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#datasettypedef)\]
 - `Count`: `int`
 - `NextToken`: `str`
-
 
 ## ListIdentityPoolUsageResponseTypeDef
 
@@ -226,15 +198,13 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityPoolUsages`: `List["IdentityPoolUsageTypeDef"]`
+
+- `IdentityPoolUsages`:
+  `List`\[[IdentityPoolUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#identitypoolusagetypedef)\]
 - `MaxResults`: `int`
 - `Count`: `int`
 - `NextToken`: `str`
-
 
 ## ListRecordsResponseTypeDef
 
@@ -242,20 +212,18 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import ListRecordsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Records`: `List["RecordTypeDef"]`
+
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#recordtypedef)\]
 - `NextToken`: `str`
 - `Count`: `int`
 - `DatasetSyncCount`: `int`
 - `LastModifiedBy`: `str`
-- `MergedDatasetNames`: `List[str]`
+- `MergedDatasetNames`: `List`\[`str`\]
 - `DatasetExists`: `bool`
 - `DatasetDeletedAfterRequestedSyncCount`: `bool`
 - `SyncSessionToken`: `str`
-
 
 ## PushSyncTypeDef
 
@@ -263,13 +231,10 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import PushSyncTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ApplicationArns`: `List[str]`
-- `RoleArn`: `str`
 
+- `ApplicationArns`: `List`\[`str`\]
+- `RoleArn`: `str`
 
 ## RecordPatchTypeDef
 
@@ -277,18 +242,17 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import RecordPatchTypeDef
 ```
 
-
 Required fields:
-- `Op`: `Operation`
+
+- `Op`:
+  [Operation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/literals.html#operation)
 - `Key`: `str`
 - `SyncCount`: `int`
 
-
-
 Optional fields:
+
 - `Value`: `str`
 - `DeviceLastModifiedDate`: `datetime`
-
 
 ## RecordTypeDef
 
@@ -296,10 +260,8 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import RecordTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
 - `SyncCount`: `int`
@@ -307,19 +269,15 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `DeviceLastModifiedDate`: `datetime`
 
-
 ## RegisterDeviceResponseTypeDef
 
 ```python
 from mypy_boto3_cognito_sync.type_defs import RegisterDeviceResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DeviceId`: `str`
 
+- `DeviceId`: `str`
 
 ## SetIdentityPoolConfigurationResponseTypeDef
 
@@ -327,14 +285,13 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import SetIdentityPoolConfigurationResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `IdentityPoolId`: `str`
-- `PushSync`: `"PushSyncTypeDef"`
-- `CognitoStreams`: `"CognitoStreamsTypeDef"`
 
+- `IdentityPoolId`: `str`
+- `PushSync`:
+  [PushSyncTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#pushsynctypedef)
+- `CognitoStreams`:
+  [CognitoStreamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#cognitostreamstypedef)
 
 ## UpdateRecordsResponseTypeDef
 
@@ -342,9 +299,7 @@ Optional fields:
 from mypy_boto3_cognito_sync.type_defs import UpdateRecordsResponseTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Records`: `List["RecordTypeDef"]`
 
+- `Records`:
+  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#recordtypedef)\]

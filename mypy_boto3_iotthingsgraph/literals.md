@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [IoTThingsGraph](./README.md) > Literals
 
-Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+Auto-generated documentation for
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+type annotations stubs module
+[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Literals for boto3 IoTThingsGraph module](#literals-for-boto3-iotthingsgraph-module)
   - [DefinitionLanguage](#definitionlanguage)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MWAA
 
-Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
-type annotations stubs module [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+Auto-generated documentation for
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+type annotations stubs module
+[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 ```bash
 pip install mypy-boto3-mwaa
@@ -19,7 +21,7 @@ pip install mypy-boto3-mwaa
 
 ## MWAAClient
 
-Type annotations for  `boto3.client("mwaa")` as [MWAAClient](./client.md)
+Type annotations for `boto3.client("mwaa")` as [MWAAClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +29,10 @@ Can be used directly:
 from mypy_boto3_mwaa.client import MWAAClient
 ```
 
-
 MWAAClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [create_cli_token](./client.md#create-cli-token)
 - [create_environment](./client.md#create-environment)
@@ -48,24 +48,18 @@ MWAAClient [exceptions](./client.md#exceptions)
 - [untag_resource](./client.md#untag-resource)
 - [update_environment](./client.md#update-environment)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [InternalServerException](./client.md#internalserverexception)
 - [ResourceNotFoundException](./client.md#resourcenotfoundexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mwaa").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mwaa").get_paginator("...")`.
 
 Can be used directly:
 
@@ -74,11 +68,6 @@ from mypy_boto3_mwaa.paginators import ListEnvironmentsPaginator, ...
 ```
 
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -97,13 +86,10 @@ from mypy_boto3_mwaa.literals import EnvironmentStatus, ...
 - [UpdateStatus](./literals.md#updatestatus)
 - [WebserverAccessMode](./literals.md#webserveraccessmode)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudSearch](./README.md) > Literals
 
-Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+Auto-generated documentation for
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+type annotations stubs module
+[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [Literals for boto3 CloudSearch module](#literals-for-boto3-cloudsearch-module)
   - [AlgorithmicStemming](#algorithmicstemming)

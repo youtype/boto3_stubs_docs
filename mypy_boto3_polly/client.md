@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Polly](./README.md) > PollyClient
 
-Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
-type annotations stubs module [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+Auto-generated documentation for
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+type annotations stubs module
+[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [PollyClient for boto3 Polly module](#pollyclient-for-boto3-polly-module)
   - [PollyClient](#pollyclient)
@@ -35,12 +37,13 @@ def get_polly_client() -> PollyClient:
     return boto3.client("polly")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
+Boto3 documentation:
+[Polly.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_polly.client import Exceptions
@@ -48,7 +51,6 @@ from mypy_boto3_polly.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -75,200 +77,215 @@ Exceptions:
 - `Exceptions.UnsupportedPlsAlphabetException`
 - `Exceptions.UnsupportedPlsLanguageException`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("polly").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate]
+Boto3 documentation:
+[Polly.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### delete_lexicon
 
 Type annotations for `boto3.client("polly").delete_lexicon` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon]
+Boto3 documentation:
+[Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
 
-```python
-def delete_lexicon(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_voices
 
 Type annotations for `boto3.client("polly").describe_voices` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices]
+Boto3 documentation:
+[Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
 
-```python
-def describe_voices(
-    self,
-    Engine: Engine = None,
-    LanguageCode: LanguageCode = None,
-    IncludeAdditionalLanguageCodes: bool = None,
-    NextToken: str = None
-) -> DescribeVoicesOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Engine`:
+  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `IncludeAdditionalLanguageCodes`: `bool`
+- `NextToken`: `str`
+
+Returns
+[DescribeVoicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#describevoicesoutputtypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("polly").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url]
+Boto3 documentation:
+[Polly.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_lexicon
 
 Type annotations for `boto3.client("polly").get_lexicon` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon]
+Boto3 documentation:
+[Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
 
-```python
-def get_lexicon(
-    self,
-    Name: str
-) -> GetLexiconOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetLexiconOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#getlexiconoutputtypedef).
 
 ### get_speech_synthesis_task
 
 Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task]
+Boto3 documentation:
+[Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
-```python
-def get_speech_synthesis_task(
-    self,
-    TaskId: str
-) -> GetSpeechSynthesisTaskOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `TaskId`: `str` *(required)*
+
+Returns
+[GetSpeechSynthesisTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#getspeechsynthesistaskoutputtypedef).
 
 ### list_lexicons
 
 Type annotations for `boto3.client("polly").list_lexicons` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons]
+Boto3 documentation:
+[Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
 
-```python
-def list_lexicons(
-    self,
-    NextToken: str = None
-) -> ListLexiconsOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListLexiconsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listlexiconsoutputtypedef).
 
 ### list_speech_synthesis_tasks
 
-Type annotations for `boto3.client("polly").list_speech_synthesis_tasks` method.
+Type annotations for `boto3.client("polly").list_speech_synthesis_tasks`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks]
+Boto3 documentation:
+[Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
 
-```python
-def list_speech_synthesis_tasks(
-    self,
-    MaxResults: int = None,
-    NextToken: str = None,
-    Status: TaskStatus = None
-) -> ListSpeechSynthesisTasksOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Status`:
+  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#taskstatus)
+
+Returns
+[ListSpeechSynthesisTasksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listspeechsynthesistasksoutputtypedef).
 
 ### put_lexicon
 
 Type annotations for `boto3.client("polly").put_lexicon` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon]
+Boto3 documentation:
+[Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
 
-```python
-def put_lexicon(
-    self,
-    Name: str,
-    Content: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Content`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_speech_synthesis_task
 
-Type annotations for `boto3.client("polly").start_speech_synthesis_task` method.
+Type annotations for `boto3.client("polly").start_speech_synthesis_task`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task]
+Boto3 documentation:
+[Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
 
-```python
-def start_speech_synthesis_task(
-    self,
-    OutputFormat: OutputFormat,
-    OutputS3BucketName: str,
-    Text: str,
-    VoiceId: VoiceId,
-    Engine: Engine = None,
-    LanguageCode: LanguageCode = None,
-    LexiconNames: List[str] = None,
-    OutputS3KeyPrefix: str = None,
-    SampleRate: str = None,
-    SnsTopicArn: str = None,
-    SpeechMarkTypes: List[SpeechMarkType] = None,
-    TextType: TextType = None
-) -> StartSpeechSynthesisTaskOutputTypeDef:
-    pass
-```
+Arguments:
+
+- `OutputFormat`:
+  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#outputformat)
+  *(required)*
+- `OutputS3BucketName`: `str` *(required)*
+- `Text`: `str` *(required)*
+- `VoiceId`:
+  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
+  *(required)*
+- `Engine`:
+  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `LexiconNames`: `List`\[`str`\]
+- `OutputS3KeyPrefix`: `str`
+- `SampleRate`: `str`
+- `SnsTopicArn`: `str`
+- `SpeechMarkTypes`:
+  `List`\[[SpeechMarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#speechmarktype)\]
+- `TextType`:
+  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#texttype)
+
+Returns
+[StartSpeechSynthesisTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#startspeechsynthesistaskoutputtypedef).
 
 ### synthesize_speech
 
 Type annotations for `boto3.client("polly").synthesize_speech` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech]
+Boto3 documentation:
+[Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
 
-```python
-def synthesize_speech(
-    self,
-    OutputFormat: OutputFormat,
-    Text: str,
-    VoiceId: VoiceId,
-    Engine: Engine = None,
-    LanguageCode: LanguageCode = None,
-    LexiconNames: List[str] = None,
-    SampleRate: str = None,
-    SpeechMarkTypes: List[SpeechMarkType] = None,
-    TextType: TextType = None
-) -> SynthesizeSpeechOutputTypeDef:
-    pass
-```
+Arguments:
 
+- `OutputFormat`:
+  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#outputformat)
+  *(required)*
+- `Text`: `str` *(required)*
+- `VoiceId`:
+  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
+  *(required)*
+- `Engine`:
+  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
+- `LanguageCode`:
+  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `LexiconNames`: `List`\[`str`\]
+- `SampleRate`: `str`
+- `SpeechMarkTypes`:
+  `List`\[[SpeechMarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#speechmarktype)\]
+- `TextType`:
+  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#texttype)
 
+Returns
+[SynthesizeSpeechOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#synthesizespeechoutputtypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("polly").get_paginator` method with overloads.
+Type annotations for `boto3.client("polly").get_paginator` method with
+overloads.
 
-- `client.get_paginator("describe_voices")` -> [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
-- `client.get_paginator("list_lexicons")` -> [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
-- `client.get_paginator("list_speech_synthesis_tasks")` -> [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
-
-
+- `client.get_paginator("describe_voices")` ->
+  [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
+- `client.get_paginator("list_lexicons")` ->
+  [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
+- `client.get_paginator("list_speech_synthesis_tasks")` ->
+  [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)

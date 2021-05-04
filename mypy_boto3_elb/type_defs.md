@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Structures
 
-Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+Auto-generated documentation for
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+type annotations stubs module
+[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Typed dictionaries for boto3 ElasticLoadBalancing module](#typed-dictionaries-for-boto3-elasticloadbalancing-module)
   - [AccessLogTypeDef](#accesslogtypedef)
@@ -59,17 +61,15 @@ type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-bot
 from mypy_boto3_elb.type_defs import AccessLogTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
+
 - `S3BucketName`: `str`
 - `EmitInterval`: `int`
 - `S3BucketPrefix`: `str`
-
 
 ## AddAvailabilityZonesOutputTypeDef
 
@@ -77,13 +77,11 @@ Optional fields:
 from mypy_boto3_elb.type_defs import AddAvailabilityZonesOutputTypeDef
 ```
 
-
 Required fields:
-- `AvailabilityZones`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `AvailabilityZones`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## AdditionalAttributeTypeDef
 
@@ -91,13 +89,10 @@ Required fields:
 from mypy_boto3_elb.type_defs import AdditionalAttributeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Key`: `str`
 - `Value`: `str`
-
 
 ## AppCookieStickinessPolicyTypeDef
 
@@ -105,13 +100,10 @@ Optional fields:
 from mypy_boto3_elb.type_defs import AppCookieStickinessPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyName`: `str`
 - `CookieName`: `str`
-
 
 ## ApplySecurityGroupsToLoadBalancerOutputTypeDef
 
@@ -119,13 +111,11 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ApplySecurityGroupsToLoadBalancerOutputTypeDef
 ```
 
-
 Required fields:
-- `SecurityGroups`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `SecurityGroups`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## AttachLoadBalancerToSubnetsOutputTypeDef
 
@@ -133,13 +123,11 @@ Required fields:
 from mypy_boto3_elb.type_defs import AttachLoadBalancerToSubnetsOutputTypeDef
 ```
 
-
 Required fields:
-- `Subnets`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Subnets`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## BackendServerDescriptionTypeDef
 
@@ -147,13 +135,10 @@ Required fields:
 from mypy_boto3_elb.type_defs import BackendServerDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstancePort`: `int`
-- `PolicyNames`: `List[str]`
 
+- `InstancePort`: `int`
+- `PolicyNames`: `List`\[`str`\]
 
 ## ConfigureHealthCheckOutputTypeDef
 
@@ -161,13 +146,12 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ConfigureHealthCheckOutputTypeDef
 ```
 
-
 Required fields:
-- `HealthCheck`: `"HealthCheckTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `HealthCheck`:
+  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#healthchecktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## ConnectionDrainingTypeDef
 
@@ -175,15 +159,13 @@ Required fields:
 from mypy_boto3_elb.type_defs import ConnectionDrainingTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
 
-
-
 Optional fields:
-- `Timeout`: `int`
 
+- `Timeout`: `int`
 
 ## ConnectionSettingsTypeDef
 
@@ -191,12 +173,9 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ConnectionSettingsTypeDef
 ```
 
-
 Required fields:
+
 - `IdleTimeout`: `int`
-
-
-
 
 ## CreateAccessPointOutputTypeDef
 
@@ -204,13 +183,11 @@ Required fields:
 from mypy_boto3_elb.type_defs import CreateAccessPointOutputTypeDef
 ```
 
-
 Required fields:
+
 - `DNSName`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## CrossZoneLoadBalancingTypeDef
 
@@ -218,12 +195,9 @@ Required fields:
 from mypy_boto3_elb.type_defs import CrossZoneLoadBalancingTypeDef
 ```
 
-
 Required fields:
+
 - `Enabled`: `bool`
-
-
-
 
 ## DeregisterEndPointsOutputTypeDef
 
@@ -231,13 +205,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DeregisterEndPointsOutputTypeDef
 ```
 
-
 Required fields:
-- `Instances`: `List["InstanceTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeAccessPointsOutputTypeDef
 
@@ -245,14 +218,13 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeAccessPointsOutputTypeDef
 ```
 
-
 Required fields:
-- `LoadBalancerDescriptions`: `List["LoadBalancerDescriptionTypeDef"]`
+
+- `LoadBalancerDescriptions`:
+  `List`\[[LoadBalancerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#loadbalancerdescriptiontypedef)\]
 - `NextMarker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeAccountLimitsOutputTypeDef
 
@@ -260,14 +232,13 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeAccountLimitsOutputTypeDef
 ```
 
-
 Required fields:
-- `Limits`: `List["LimitTypeDef"]`
+
+- `Limits`:
+  `List`\[[LimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#limittypedef)\]
 - `NextMarker`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeEndPointStateOutputTypeDef
 
@@ -275,13 +246,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeEndPointStateOutputTypeDef
 ```
 
-
 Required fields:
-- `InstanceStates`: `List["InstanceStateTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `InstanceStates`:
+  `List`\[[InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancestatetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeLoadBalancerAttributesOutputTypeDef
 
@@ -289,13 +259,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesOutputTypeDef
 ```
 
-
 Required fields:
-- `LoadBalancerAttributes`: `"LoadBalancerAttributesTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `LoadBalancerAttributes`:
+  [LoadBalancerAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#loadbalancerattributestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeLoadBalancerPoliciesOutputTypeDef
 
@@ -303,13 +272,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesOutputTypeDef
 ```
 
-
 Required fields:
-- `PolicyDescriptions`: `List["PolicyDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PolicyDescriptions`:
+  `List`\[[PolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policydescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeLoadBalancerPolicyTypesOutputTypeDef
 
@@ -317,13 +285,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesOutputTypeDef
 ```
 
-
 Required fields:
-- `PolicyTypeDescriptions`: `List["PolicyTypeDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `PolicyTypeDescriptions`:
+  `List`\[[PolicyTypeDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policytypedescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DescribeTagsOutputTypeDef
 
@@ -331,13 +298,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import DescribeTagsOutputTypeDef
 ```
 
-
 Required fields:
-- `TagDescriptions`: `List["TagDescriptionTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `TagDescriptions`:
+  `List`\[[TagDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#tagdescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## DetachLoadBalancerFromSubnetsOutputTypeDef
 
@@ -345,13 +311,11 @@ Required fields:
 from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsOutputTypeDef
 ```
 
-
 Required fields:
-- `Subnets`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Subnets`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## HealthCheckTypeDef
 
@@ -359,16 +323,13 @@ Required fields:
 from mypy_boto3_elb.type_defs import HealthCheckTypeDef
 ```
 
-
 Required fields:
+
 - `Target`: `str`
 - `Interval`: `int`
 - `Timeout`: `int`
 - `UnhealthyThreshold`: `int`
 - `HealthyThreshold`: `int`
-
-
-
 
 ## InstanceStateTypeDef
 
@@ -376,15 +337,12 @@ Required fields:
 from mypy_boto3_elb.type_defs import InstanceStateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `InstanceId`: `str`
 - `State`: `str`
 - `ReasonCode`: `str`
 - `Description`: `str`
-
 
 ## InstanceTypeDef
 
@@ -392,12 +350,9 @@ Optional fields:
 from mypy_boto3_elb.type_defs import InstanceTypeDef
 ```
 
-
-
-
 Optional fields:
-- `InstanceId`: `str`
 
+- `InstanceId`: `str`
 
 ## LBCookieStickinessPolicyTypeDef
 
@@ -405,13 +360,10 @@ Optional fields:
 from mypy_boto3_elb.type_defs import LBCookieStickinessPolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyName`: `str`
 - `CookieExpirationPeriod`: `int`
-
 
 ## LimitTypeDef
 
@@ -419,13 +371,10 @@ Optional fields:
 from mypy_boto3_elb.type_defs import LimitTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Name`: `str`
 - `Max`: `str`
-
 
 ## ListenerDescriptionTypeDef
 
@@ -433,13 +382,11 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ListenerDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Listener`: `"ListenerTypeDef"`
-- `PolicyNames`: `List[str]`
 
+- `Listener`:
+  [ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#listenertypedef)
+- `PolicyNames`: `List`\[`str`\]
 
 ## ListenerTypeDef
 
@@ -447,18 +394,16 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ListenerTypeDef
 ```
 
-
 Required fields:
+
 - `Protocol`: `str`
 - `LoadBalancerPort`: `int`
 - `InstancePort`: `int`
 
-
-
 Optional fields:
+
 - `InstanceProtocol`: `str`
 - `SSLCertificateId`: `str`
-
 
 ## LoadBalancerAttributesTypeDef
 
@@ -466,16 +411,18 @@ Optional fields:
 from mypy_boto3_elb.type_defs import LoadBalancerAttributesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `CrossZoneLoadBalancing`: `"CrossZoneLoadBalancingTypeDef"`
-- `AccessLog`: `"AccessLogTypeDef"`
-- `ConnectionDraining`: `"ConnectionDrainingTypeDef"`
-- `ConnectionSettings`: `"ConnectionSettingsTypeDef"`
-- `AdditionalAttributes`: `List["AdditionalAttributeTypeDef"]`
 
+- `CrossZoneLoadBalancing`:
+  [CrossZoneLoadBalancingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#crosszoneloadbalancingtypedef)
+- `AccessLog`:
+  [AccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#accesslogtypedef)
+- `ConnectionDraining`:
+  [ConnectionDrainingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#connectiondrainingtypedef)
+- `ConnectionSettings`:
+  [ConnectionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#connectionsettingstypedef)
+- `AdditionalAttributes`:
+  `List`\[[AdditionalAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#additionalattributetypedef)\]
 
 ## LoadBalancerDescriptionTypeDef
 
@@ -483,27 +430,30 @@ Optional fields:
 from mypy_boto3_elb.type_defs import LoadBalancerDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `LoadBalancerName`: `str`
 - `DNSName`: `str`
 - `CanonicalHostedZoneName`: `str`
 - `CanonicalHostedZoneNameID`: `str`
-- `ListenerDescriptions`: `List["ListenerDescriptionTypeDef"]`
-- `Policies`: `"PoliciesTypeDef"`
-- `BackendServerDescriptions`: `List["BackendServerDescriptionTypeDef"]`
-- `AvailabilityZones`: `List[str]`
-- `Subnets`: `List[str]`
+- `ListenerDescriptions`:
+  `List`\[[ListenerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#listenerdescriptiontypedef)\]
+- `Policies`:
+  [PoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policiestypedef)
+- `BackendServerDescriptions`:
+  `List`\[[BackendServerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#backendserverdescriptiontypedef)\]
+- `AvailabilityZones`: `List`\[`str`\]
+- `Subnets`: `List`\[`str`\]
 - `VPCId`: `str`
-- `Instances`: `List["InstanceTypeDef"]`
-- `HealthCheck`: `"HealthCheckTypeDef"`
-- `SourceSecurityGroup`: `"SourceSecurityGroupTypeDef"`
-- `SecurityGroups`: `List[str]`
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `HealthCheck`:
+  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#healthchecktypedef)
+- `SourceSecurityGroup`:
+  [SourceSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#sourcesecuritygrouptypedef)
+- `SecurityGroups`: `List`\[`str`\]
 - `CreatedTime`: `datetime`
 - `Scheme`: `str`
-
 
 ## ModifyLoadBalancerAttributesOutputTypeDef
 
@@ -511,14 +461,13 @@ Optional fields:
 from mypy_boto3_elb.type_defs import ModifyLoadBalancerAttributesOutputTypeDef
 ```
 
-
 Required fields:
+
 - `LoadBalancerName`: `str`
-- `LoadBalancerAttributes`: `"LoadBalancerAttributesTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `LoadBalancerAttributes`:
+  [LoadBalancerAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#loadbalancerattributestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## PaginatorConfigTypeDef
 
@@ -526,14 +475,11 @@ Required fields:
 from mypy_boto3_elb.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PoliciesTypeDef
 
@@ -541,14 +487,13 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PoliciesTypeDef
 ```
 
-
-
-
 Optional fields:
-- `AppCookieStickinessPolicies`: `List["AppCookieStickinessPolicyTypeDef"]`
-- `LBCookieStickinessPolicies`: `List["LBCookieStickinessPolicyTypeDef"]`
-- `OtherPolicies`: `List[str]`
 
+- `AppCookieStickinessPolicies`:
+  `List`\[[AppCookieStickinessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#appcookiestickinesspolicytypedef)\]
+- `LBCookieStickinessPolicies`:
+  `List`\[[LBCookieStickinessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#lbcookiestickinesspolicytypedef)\]
+- `OtherPolicies`: `List`\[`str`\]
 
 ## PolicyAttributeDescriptionTypeDef
 
@@ -556,13 +501,10 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PolicyAttributeDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
-
 
 ## PolicyAttributeTypeDef
 
@@ -570,13 +512,10 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PolicyAttributeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
-
 
 ## PolicyAttributeTypeDescriptionTypeDef
 
@@ -584,16 +523,13 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PolicyAttributeTypeDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `AttributeName`: `str`
 - `AttributeType`: `str`
 - `Description`: `str`
 - `DefaultValue`: `str`
 - `Cardinality`: `str`
-
 
 ## PolicyDescriptionTypeDef
 
@@ -601,14 +537,12 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PolicyDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyName`: `str`
 - `PolicyTypeName`: `str`
-- `PolicyAttributeDescriptions`: `List["PolicyAttributeDescriptionTypeDef"]`
-
+- `PolicyAttributeDescriptions`:
+  `List`\[[PolicyAttributeDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policyattributedescriptiontypedef)\]
 
 ## PolicyTypeDescriptionTypeDef
 
@@ -616,14 +550,12 @@ Optional fields:
 from mypy_boto3_elb.type_defs import PolicyTypeDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `PolicyTypeName`: `str`
 - `Description`: `str`
-- `PolicyAttributeTypeDescriptions`: `List["PolicyAttributeTypeDescriptionTypeDef"]`
-
+- `PolicyAttributeTypeDescriptions`:
+  `List`\[[PolicyAttributeTypeDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policyattributetypedescriptiontypedef)\]
 
 ## RegisterEndPointsOutputTypeDef
 
@@ -631,13 +563,12 @@ Optional fields:
 from mypy_boto3_elb.type_defs import RegisterEndPointsOutputTypeDef
 ```
 
-
 Required fields:
-- `Instances`: `List["InstanceTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `Instances`:
+  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## RemoveAvailabilityZonesOutputTypeDef
 
@@ -645,13 +576,11 @@ Required fields:
 from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesOutputTypeDef
 ```
 
-
 Required fields:
-- `AvailabilityZones`: `List[str]`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `AvailabilityZones`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#responsemetadata)
 
 ## ResponseMetadata
 
@@ -659,16 +588,13 @@ Required fields:
 from mypy_boto3_elb.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## SourceSecurityGroupTypeDef
 
@@ -676,13 +602,10 @@ Required fields:
 from mypy_boto3_elb.type_defs import SourceSecurityGroupTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `OwnerAlias`: `str`
 - `GroupName`: `str`
-
 
 ## TagDescriptionTypeDef
 
@@ -690,13 +613,11 @@ Optional fields:
 from mypy_boto3_elb.type_defs import TagDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `LoadBalancerName`: `str`
-- `Tags`: `List["TagTypeDef"]`
 
+- `LoadBalancerName`: `str`
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#tagtypedef)\]
 
 ## TagKeyOnlyTypeDef
 
@@ -704,12 +625,9 @@ Optional fields:
 from mypy_boto3_elb.type_defs import TagKeyOnlyTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Key`: `str`
 
+- `Key`: `str`
 
 ## TagTypeDef
 
@@ -717,15 +635,13 @@ Optional fields:
 from mypy_boto3_elb.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## WaiterConfigTypeDef
 
@@ -733,10 +649,7 @@ Optional fields:
 from mypy_boto3_elb.type_defs import WaiterConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Delay`: `int`
 - `MaxAttempts`: `int`
-

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [MigrationHub](./README.md) > Paginators
 
-Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+Auto-generated documentation for
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+type annotations stubs module
+[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Paginators for boto3 MigrationHub module](#paginators-for-boto3-migrationhub-module)
   - [ListApplicationStatesPaginator](#listapplicationstatespaginator)
@@ -14,7 +16,8 @@ type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-bot
 
 ## ListApplicationStatesPaginator
 
-Type annotations for `boto3.client("mgh").get_paginator("list_application_states")`.
+Type annotations for
+`boto3.client("mgh").get_paginator("list_application_states")`.
 
 Can be used directly:
 
@@ -25,20 +28,22 @@ def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
     return boto3.client("mgh").get_paginator("list_application_states")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
+Boto3 documentation:
+[MigrationHub.Paginator.ListApplicationStates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
-```python
-class ListApplicationStatesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ApplicationIds: List[str] = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListApplicationStatesResultTypeDef]:
-        pass
-```
+Arguments for `ListApplicationStatesPaginator.paginate` method:
+
+- `ApplicationIds`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+
+`ListApplicationStatesPaginator.paginate` returns
+`Iterator`\[[ListApplicationStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listapplicationstatesresulttypedef)\].
+
 ## ListCreatedArtifactsPaginator
 
-Type annotations for `boto3.client("mgh").get_paginator("list_created_artifacts")`.
+Type annotations for
+`boto3.client("mgh").get_paginator("list_created_artifacts")`.
 
 Can be used directly:
 
@@ -49,21 +54,23 @@ def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
     return boto3.client("mgh").get_paginator("list_created_artifacts")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
+Boto3 documentation:
+[MigrationHub.Paginator.ListCreatedArtifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
-```python
-class ListCreatedArtifactsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ProgressUpdateStream: str,
-        MigrationTaskName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListCreatedArtifactsResultTypeDef]:
-        pass
-```
+Arguments for `ListCreatedArtifactsPaginator.paginate` method:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+
+`ListCreatedArtifactsPaginator.paginate` returns
+`Iterator`\[[ListCreatedArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listcreatedartifactsresulttypedef)\].
+
 ## ListDiscoveredResourcesPaginator
 
-Type annotations for `boto3.client("mgh").get_paginator("list_discovered_resources")`.
+Type annotations for
+`boto3.client("mgh").get_paginator("list_discovered_resources")`.
 
 Can be used directly:
 
@@ -74,21 +81,23 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return boto3.client("mgh").get_paginator("list_discovered_resources")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
+Boto3 documentation:
+[MigrationHub.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
-```python
-class ListDiscoveredResourcesPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ProgressUpdateStream: str,
-        MigrationTaskName: str,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListDiscoveredResourcesResultTypeDef]:
-        pass
-```
+Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
+
+- `ProgressUpdateStream`: `str` *(required)*
+- `MigrationTaskName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+
+`ListDiscoveredResourcesPaginator.paginate` returns
+`Iterator`\[[ListDiscoveredResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listdiscoveredresourcesresulttypedef)\].
+
 ## ListMigrationTasksPaginator
 
-Type annotations for `boto3.client("mgh").get_paginator("list_migration_tasks")`.
+Type annotations for
+`boto3.client("mgh").get_paginator("list_migration_tasks")`.
 
 Can be used directly:
 
@@ -99,20 +108,22 @@ def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
     return boto3.client("mgh").get_paginator("list_migration_tasks")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
+Boto3 documentation:
+[MigrationHub.Paginator.ListMigrationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
-```python
-class ListMigrationTasksPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        ResourceName: str = None,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListMigrationTasksResultTypeDef]:
-        pass
-```
+Arguments for `ListMigrationTasksPaginator.paginate` method:
+
+- `ResourceName`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+
+`ListMigrationTasksPaginator.paginate` returns
+`Iterator`\[[ListMigrationTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listmigrationtasksresulttypedef)\].
+
 ## ListProgressUpdateStreamsPaginator
 
-Type annotations for `boto3.client("mgh").get_paginator("list_progress_update_streams")`.
+Type annotations for
+`boto3.client("mgh").get_paginator("list_progress_update_streams")`.
 
 Can be used directly:
 
@@ -123,13 +134,13 @@ def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPag
     return boto3.client("mgh").get_paginator("list_progress_update_streams")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
+Boto3 documentation:
+[MigrationHub.Paginator.ListProgressUpdateStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
-```python
-class ListProgressUpdateStreamsPaginator(Boto3Paginator):
-    def paginate(
-        self,
-        PaginationConfig: PaginatorConfigTypeDef = None
-    ) -> Iterator[ListProgressUpdateStreamsResultTypeDef]:
-        pass
-```
+Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+
+`ListProgressUpdateStreamsPaginator.paginate` returns
+`Iterator`\[[ListProgressUpdateStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listprogressupdatestreamsresulttypedef)\].

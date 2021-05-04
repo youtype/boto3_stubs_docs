@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > Structures
 
-Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
-type annotations stubs module [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+Auto-generated documentation for
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+type annotations stubs module
+[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [Typed dictionaries for boto3 CodeArtifact module](#typed-dictionaries-for-boto3-codeartifact-module)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
@@ -63,16 +65,16 @@ type annotations stubs module [mypy_boto3_codeartifact](https://pypi.org/project
 from mypy_boto3_codeartifact.type_defs import AssetSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `name`: `str`
 
-
-
 Optional fields:
-- `size`: `int`
-- `hashes`: `Dict[HashAlgorithm, str]`
 
+- `size`: `int`
+- `hashes`:
+  `Dict`\[[HashAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#hashalgorithm),
+  `str`\]
 
 ## AssociateExternalConnectionResultTypeDef
 
@@ -80,12 +82,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## CopyPackageVersionsResultTypeDef
 
@@ -93,13 +93,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import CopyPackageVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `successfulVersions`: `Dict[str, "SuccessfulPackageVersionInfoTypeDef"]`
-- `failedVersions`: `Dict[str, "PackageVersionErrorTypeDef"]`
 
+- `successfulVersions`: `Dict`\[`str`,
+  [SuccessfulPackageVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#successfulpackageversioninfotypedef)\]
+- `failedVersions`: `Dict`\[`str`,
+  [PackageVersionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversionerrortypedef)\]
 
 ## CreateDomainResultTypeDef
 
@@ -107,12 +106,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import CreateDomainResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domain`: `"DomainDescriptionTypeDef"`
 
+- `domain`:
+  [DomainDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#domaindescriptiontypedef)
 
 ## CreateRepositoryResultTypeDef
 
@@ -120,12 +117,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import CreateRepositoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## DeleteDomainPermissionsPolicyResultTypeDef
 
@@ -133,12 +128,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DeleteDomainPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## DeleteDomainResultTypeDef
 
@@ -146,12 +139,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DeleteDomainResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domain`: `"DomainDescriptionTypeDef"`
 
+- `domain`:
+  [DomainDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#domaindescriptiontypedef)
 
 ## DeletePackageVersionsResultTypeDef
 
@@ -159,13 +150,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DeletePackageVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `successfulVersions`: `Dict[str, "SuccessfulPackageVersionInfoTypeDef"]`
-- `failedVersions`: `Dict[str, "PackageVersionErrorTypeDef"]`
 
+- `successfulVersions`: `Dict`\[`str`,
+  [SuccessfulPackageVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#successfulpackageversioninfotypedef)\]
+- `failedVersions`: `Dict`\[`str`,
+  [PackageVersionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversionerrortypedef)\]
 
 ## DeleteRepositoryPermissionsPolicyResultTypeDef
 
@@ -173,12 +163,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DeleteRepositoryPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## DeleteRepositoryResultTypeDef
 
@@ -186,12 +174,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DeleteRepositoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## DescribeDomainResultTypeDef
 
@@ -199,12 +185,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DescribeDomainResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domain`: `"DomainDescriptionTypeDef"`
 
+- `domain`:
+  [DomainDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#domaindescriptiontypedef)
 
 ## DescribePackageVersionResultTypeDef
 
@@ -212,12 +196,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DescribePackageVersionResultTypeDef
 ```
 
-
 Required fields:
-- `packageVersion`: `"PackageVersionDescriptionTypeDef"`
 
-
-
+- `packageVersion`:
+  [PackageVersionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversiondescriptiontypedef)
 
 ## DescribeRepositoryResultTypeDef
 
@@ -225,12 +207,10 @@ Required fields:
 from mypy_boto3_codeartifact.type_defs import DescribeRepositoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## DisassociateExternalConnectionResultTypeDef
 
@@ -238,12 +218,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DisassociateExternalConnectionResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## DisposePackageVersionsResultTypeDef
 
@@ -251,13 +229,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DisposePackageVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `successfulVersions`: `Dict[str, "SuccessfulPackageVersionInfoTypeDef"]`
-- `failedVersions`: `Dict[str, "PackageVersionErrorTypeDef"]`
 
+- `successfulVersions`: `Dict`\[`str`,
+  [SuccessfulPackageVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#successfulpackageversioninfotypedef)\]
+- `failedVersions`: `Dict`\[`str`,
+  [PackageVersionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversionerrortypedef)\]
 
 ## DomainDescriptionTypeDef
 
@@ -265,20 +242,18 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DomainDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `owner`: `str`
 - `arn`: `str`
-- `status`: `DomainStatus`
+- `status`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#domainstatus)
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
 - `repositoryCount`: `int`
 - `assetSizeBytes`: `int`
 - `s3BucketArn`: `str`
-
 
 ## DomainSummaryTypeDef
 
@@ -286,17 +261,15 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import DomainSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `owner`: `str`
 - `arn`: `str`
-- `status`: `DomainStatus`
+- `status`:
+  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#domainstatus)
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
-
 
 ## GetAuthorizationTokenResultTypeDef
 
@@ -304,13 +277,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetAuthorizationTokenResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `authorizationToken`: `str`
 - `expiration`: `datetime`
-
 
 ## GetDomainPermissionsPolicyResultTypeDef
 
@@ -318,12 +288,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetDomainPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## GetPackageVersionAssetResultTypeDef
 
@@ -331,15 +299,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetPackageVersionAssetResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `asset`: `StreamingBody`
 - `assetName`: `str`
 - `packageVersion`: `str`
 - `packageVersionRevision`: `str`
-
 
 ## GetPackageVersionReadmeResultTypeDef
 
@@ -347,17 +312,15 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `format`: `PackageFormat`
+
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
 - `versionRevision`: `str`
 - `readme`: `str`
-
 
 ## GetRepositoryEndpointResultTypeDef
 
@@ -365,12 +328,9 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetRepositoryEndpointResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repositoryEndpoint`: `str`
 
+- `repositoryEndpoint`: `str`
 
 ## GetRepositoryPermissionsPolicyResultTypeDef
 
@@ -378,12 +338,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import GetRepositoryPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## LicenseInfoTypeDef
 
@@ -391,13 +349,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import LicenseInfoTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `url`: `str`
-
 
 ## ListDomainsResultTypeDef
 
@@ -405,13 +360,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListDomainsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `domains`: `List["DomainSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `domains`:
+  `List`\[[DomainSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#domainsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListPackageVersionAssetsResultTypeDef
 
@@ -419,18 +372,17 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `format`: `PackageFormat`
+
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
 - `versionRevision`: `str`
 - `nextToken`: `str`
-- `assets`: `List["AssetSummaryTypeDef"]`
-
+- `assets`:
+  `List`\[[AssetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#assetsummarytypedef)\]
 
 ## ListPackageVersionDependenciesResultTypeDef
 
@@ -438,18 +390,17 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `format`: `PackageFormat`
+
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
 - `versionRevision`: `str`
 - `nextToken`: `str`
-- `dependencies`: `List["PackageDependencyTypeDef"]`
-
+- `dependencies`:
+  `List`\[[PackageDependencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packagedependencytypedef)\]
 
 ## ListPackageVersionsResultTypeDef
 
@@ -457,17 +408,16 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `defaultDisplayVersion`: `str`
-- `format`: `PackageFormat`
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `package`: `str`
-- `versions`: `List["PackageVersionSummaryTypeDef"]`
+- `versions`:
+  `List`\[[PackageVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversionsummarytypedef)\]
 - `nextToken`: `str`
-
 
 ## ListPackagesResultTypeDef
 
@@ -475,13 +425,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListPackagesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `packages`: `List["PackageSummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `packages`:
+  `List`\[[PackageSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packagesummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListRepositoriesInDomainResultTypeDef
 
@@ -489,13 +437,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListRepositoriesInDomainResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repositories`: `List["RepositorySummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `repositories`:
+  `List`\[[RepositorySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorysummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListRepositoriesResultTypeDef
 
@@ -503,13 +449,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListRepositoriesResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repositories`: `List["RepositorySummaryTypeDef"]`
-- `nextToken`: `str`
 
+- `repositories`:
+  `List`\[[RepositorySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorysummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListTagsForResourceResultTypeDef
 
@@ -517,12 +461,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import ListTagsForResourceResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `tags`: `List["TagTypeDef"]`
 
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#tagtypedef)\]
 
 ## PackageDependencyTypeDef
 
@@ -530,15 +472,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PackageDependencyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `namespace`: `str`
 - `package`: `str`
 - `dependencyType`: `str`
 - `versionRequirement`: `str`
-
 
 ## PackageSummaryTypeDef
 
@@ -546,14 +485,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PackageSummaryTypeDef
 ```
 
-
-
-
 Optional fields:
-- `format`: `PackageFormat`
+
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `package`: `str`
-
 
 ## PackageVersionDescriptionTypeDef
 
@@ -561,11 +498,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PackageVersionDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `format`: `PackageFormat`
+
+- `format`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
 - `namespace`: `str`
 - `packageName`: `str`
 - `displayName`: `str`
@@ -574,10 +510,11 @@ Optional fields:
 - `homePage`: `str`
 - `sourceCodeRepository`: `str`
 - `publishedTime`: `datetime`
-- `licenses`: `List["LicenseInfoTypeDef"]`
+- `licenses`:
+  `List`\[[LicenseInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#licenseinfotypedef)\]
 - `revision`: `str`
-- `status`: `PackageVersionStatus`
-
+- `status`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
 
 ## PackageVersionErrorTypeDef
 
@@ -585,13 +522,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PackageVersionErrorTypeDef
 ```
 
-
-
-
 Optional fields:
-- `errorCode`: `PackageVersionErrorCode`
-- `errorMessage`: `str`
 
+- `errorCode`:
+  [PackageVersionErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionerrorcode)
+- `errorMessage`: `str`
 
 ## PackageVersionSummaryTypeDef
 
@@ -599,16 +534,15 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PackageVersionSummaryTypeDef
 ```
 
-
 Required fields:
+
 - `version`: `str`
-- `status`: `PackageVersionStatus`
-
-
+- `status`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
 
 Optional fields:
-- `revision`: `str`
 
+- `revision`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -616,14 +550,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PaginatorConfigTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
-
 
 ## PutDomainPermissionsPolicyResultTypeDef
 
@@ -631,12 +562,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PutDomainPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## PutRepositoryPermissionsPolicyResultTypeDef
 
@@ -644,12 +573,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import PutRepositoryPermissionsPolicyResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `policy`: `"ResourcePolicyTypeDef"`
 
+- `policy`:
+  [ResourcePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#resourcepolicytypedef)
 
 ## RepositoryDescriptionTypeDef
 
@@ -657,19 +584,18 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import RepositoryDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `administratorAccount`: `str`
 - `domainName`: `str`
 - `domainOwner`: `str`
 - `arn`: `str`
 - `description`: `str`
-- `upstreams`: `List["UpstreamRepositoryInfoTypeDef"]`
-- `externalConnections`: `List["RepositoryExternalConnectionInfoTypeDef"]`
-
+- `upstreams`:
+  `List`\[[UpstreamRepositoryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#upstreamrepositoryinfotypedef)\]
+- `externalConnections`:
+  `List`\[[RepositoryExternalConnectionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositoryexternalconnectioninfotypedef)\]
 
 ## RepositoryExternalConnectionInfoTypeDef
 
@@ -677,14 +603,12 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import RepositoryExternalConnectionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `externalConnectionName`: `str`
-- `packageFormat`: `PackageFormat`
-- `status`: `Literal['Available']`
 
+- `externalConnectionName`: `str`
+- `packageFormat`:
+  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+- `status`: `Literal['Available']`
 
 ## RepositorySummaryTypeDef
 
@@ -692,10 +616,8 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import RepositorySummaryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `name`: `str`
 - `administratorAccount`: `str`
 - `domainName`: `str`
@@ -703,21 +625,17 @@ Optional fields:
 - `arn`: `str`
 - `description`: `str`
 
-
 ## ResourcePolicyTypeDef
 
 ```python
 from mypy_boto3_codeartifact.type_defs import ResourcePolicyTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `resourceArn`: `str`
 - `revision`: `str`
 - `document`: `str`
-
 
 ## SuccessfulPackageVersionInfoTypeDef
 
@@ -725,13 +643,11 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import SuccessfulPackageVersionInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `revision`: `str`
-- `status`: `PackageVersionStatus`
 
+- `revision`: `str`
+- `status`:
+  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
 
 ## TagTypeDef
 
@@ -739,13 +655,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `key`: `str`
 - `value`: `str`
-
-
-
 
 ## UpdatePackageVersionsStatusResultTypeDef
 
@@ -753,13 +666,12 @@ Required fields:
 from mypy_boto3_codeartifact.type_defs import UpdatePackageVersionsStatusResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `successfulVersions`: `Dict[str, "SuccessfulPackageVersionInfoTypeDef"]`
-- `failedVersions`: `Dict[str, "PackageVersionErrorTypeDef"]`
 
+- `successfulVersions`: `Dict`\[`str`,
+  [SuccessfulPackageVersionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#successfulpackageversioninfotypedef)\]
+- `failedVersions`: `Dict`\[`str`,
+  [PackageVersionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#packageversionerrortypedef)\]
 
 ## UpdateRepositoryResultTypeDef
 
@@ -767,12 +679,10 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import UpdateRepositoryResultTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repository`: `"RepositoryDescriptionTypeDef"`
 
+- `repository`:
+  [RepositoryDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#repositorydescriptiontypedef)
 
 ## UpstreamRepositoryInfoTypeDef
 
@@ -780,12 +690,9 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import UpstreamRepositoryInfoTypeDef
 ```
 
-
-
-
 Optional fields:
-- `repositoryName`: `str`
 
+- `repositoryName`: `str`
 
 ## UpstreamRepositoryTypeDef
 
@@ -793,9 +700,6 @@ Optional fields:
 from mypy_boto3_codeartifact.type_defs import UpstreamRepositoryTypeDef
 ```
 
-
 Required fields:
+
 - `repositoryName`: `str`
-
-
-

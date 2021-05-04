@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > CloudHSMV2
 
-Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+Auto-generated documentation for
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+type annotations stubs module
+[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 ```bash
 pip install mypy-boto3-cloudhsmv2
@@ -19,7 +21,8 @@ pip install mypy-boto3-cloudhsmv2
 
 ## CloudHSMV2Client
 
-Type annotations for  `boto3.client("cloudhsmv2")` as [CloudHSMV2Client](./client.md)
+Type annotations for `boto3.client("cloudhsmv2")` as
+[CloudHSMV2Client](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 ```
 
-
 CloudHSMV2Client [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [copy_backup_to_region](./client.md#copy-backup-to-region)
 - [create_cluster](./client.md#create-cluster)
@@ -52,10 +53,8 @@ CloudHSMV2Client [exceptions](./client.md#exceptions)
 - [tag_resource](./client.md#tag-resource)
 - [untag_resource](./client.md#untag-resource)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [CloudHsmAccessDeniedException](./client.md#cloudhsmaccessdeniedexception)
 - [CloudHsmInternalFailureException](./client.md#cloudhsminternalfailureexception)
@@ -64,14 +63,10 @@ CloudHSMV2Client [exceptions](./client.md#exceptions)
 - [CloudHsmServiceException](./client.md#cloudhsmserviceexception)
 - [CloudHsmTagException](./client.md#cloudhsmtagexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("cloudhsmv2").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("cloudhsmv2").get_paginator("...")`.
 
 Can be used directly:
 
@@ -82,11 +77,6 @@ from mypy_boto3_cloudhsmv2.paginators import DescribeBackupsPaginator, ...
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -107,13 +97,10 @@ from mypy_boto3_cloudhsmv2.literals import BackupPolicy, ...
 - [HsmState](./literals.md#hsmstate)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

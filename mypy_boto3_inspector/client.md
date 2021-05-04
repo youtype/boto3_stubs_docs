@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Inspector](./README.md) > InspectorClient
 
-Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+Auto-generated documentation for
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+type annotations stubs module
+[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [InspectorClient for boto3 Inspector module](#inspectorclient-for-boto3-inspector-module)
   - [InspectorClient](#inspectorclient)
@@ -63,12 +65,13 @@ def get_inspector_client() -> InspectorClient:
     return boto3.client("inspector")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
+Boto3 documentation:
+[Inspector.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_inspector.client import Exceptions
@@ -76,7 +79,6 @@ from mypy_boto3_inspector.client import Exceptions
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -93,618 +95,629 @@ Exceptions:
 - `Exceptions.ServiceTemporarilyUnavailableException`
 - `Exceptions.UnsupportedFeatureException`
 
-
 ## Methods
-
 
 ### add_attributes_to_findings
 
-Type annotations for `boto3.client("inspector").add_attributes_to_findings` method.
+Type annotations for `boto3.client("inspector").add_attributes_to_findings`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings]
+Boto3 documentation:
+[Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
 
-```python
-def add_attributes_to_findings(
-    self,
-    findingArns: List[str],
-    attributes: List["AttributeTypeDef"]
-) -> AddAttributesToFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `findingArns`: `List`\[`str`\] *(required)*
+- `attributes`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+  *(required)*
+
+Returns
+[AddAttributesToFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#addattributestofindingsresponsetypedef).
 
 ### can_paginate
 
 Type annotations for `boto3.client("inspector").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate]
+Boto3 documentation:
+[Inspector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_assessment_target
 
-Type annotations for `boto3.client("inspector").create_assessment_target` method.
+Type annotations for `boto3.client("inspector").create_assessment_target`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target]
+Boto3 documentation:
+[Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
 
-```python
-def create_assessment_target(
-    self,
-    assessmentTargetName: str,
-    resourceGroupArn: str = None
-) -> CreateAssessmentTargetResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTargetName`: `str` *(required)*
+- `resourceGroupArn`: `str`
+
+Returns
+[CreateAssessmentTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createassessmenttargetresponsetypedef).
 
 ### create_assessment_template
 
-Type annotations for `boto3.client("inspector").create_assessment_template` method.
+Type annotations for `boto3.client("inspector").create_assessment_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template]
+Boto3 documentation:
+[Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
 
-```python
-def create_assessment_template(
-    self,
-    assessmentTargetArn: str,
-    assessmentTemplateName: str,
-    durationInSeconds: int,
-    rulesPackageArns: List[str],
-    userAttributesForFindings: List["AttributeTypeDef"] = None
-) -> CreateAssessmentTemplateResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTargetArn`: `str` *(required)*
+- `assessmentTemplateName`: `str` *(required)*
+- `durationInSeconds`: `int` *(required)*
+- `rulesPackageArns`: `List`\[`str`\] *(required)*
+- `userAttributesForFindings`:
+  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+
+Returns
+[CreateAssessmentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createassessmenttemplateresponsetypedef).
 
 ### create_exclusions_preview
 
-Type annotations for `boto3.client("inspector").create_exclusions_preview` method.
+Type annotations for `boto3.client("inspector").create_exclusions_preview`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview]
+Boto3 documentation:
+[Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
 
-```python
-def create_exclusions_preview(
-    self,
-    assessmentTemplateArn: str
-) -> CreateExclusionsPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArn`: `str` *(required)*
+
+Returns
+[CreateExclusionsPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createexclusionspreviewresponsetypedef).
 
 ### create_resource_group
 
 Type annotations for `boto3.client("inspector").create_resource_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group]
+Boto3 documentation:
+[Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
 
-```python
-def create_resource_group(
-    self,
-    resourceGroupTags: List["ResourceGroupTagTypeDef"]
-) -> CreateResourceGroupResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceGroupTags`:
+  `List`\[[ResourceGroupTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#resourcegrouptagtypedef)\]
+  *(required)*
+
+Returns
+[CreateResourceGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createresourcegroupresponsetypedef).
 
 ### delete_assessment_run
 
 Type annotations for `boto3.client("inspector").delete_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run]
+Boto3 documentation:
+[Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
 
-```python
-def delete_assessment_run(
-    self,
-    assessmentRunArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
 
 ### delete_assessment_target
 
-Type annotations for `boto3.client("inspector").delete_assessment_target` method.
+Type annotations for `boto3.client("inspector").delete_assessment_target`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target]
+Boto3 documentation:
+[Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
 
-```python
-def delete_assessment_target(
-    self,
-    assessmentTargetArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `assessmentTargetArn`: `str` *(required)*
 
 ### delete_assessment_template
 
-Type annotations for `boto3.client("inspector").delete_assessment_template` method.
+Type annotations for `boto3.client("inspector").delete_assessment_template`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template]
+Boto3 documentation:
+[Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
 
-```python
-def delete_assessment_template(
-    self,
-    assessmentTemplateArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArn`: `str` *(required)*
 
 ### describe_assessment_runs
 
-Type annotations for `boto3.client("inspector").describe_assessment_runs` method.
+Type annotations for `boto3.client("inspector").describe_assessment_runs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs]
+Boto3 documentation:
+[Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
 
-```python
-def describe_assessment_runs(
-    self,
-    assessmentRunArns: List[str]
-) -> DescribeAssessmentRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArns`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmentrunsresponsetypedef).
 
 ### describe_assessment_targets
 
-Type annotations for `boto3.client("inspector").describe_assessment_targets` method.
+Type annotations for `boto3.client("inspector").describe_assessment_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets]
+Boto3 documentation:
+[Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
 
-```python
-def describe_assessment_targets(
-    self,
-    assessmentTargetArns: List[str]
-) -> DescribeAssessmentTargetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTargetArns`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeAssessmentTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmenttargetsresponsetypedef).
 
 ### describe_assessment_templates
 
-Type annotations for `boto3.client("inspector").describe_assessment_templates` method.
+Type annotations for `boto3.client("inspector").describe_assessment_templates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates]
+Boto3 documentation:
+[Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
 
-```python
-def describe_assessment_templates(
-    self,
-    assessmentTemplateArns: List[str]
-) -> DescribeAssessmentTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArns`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeAssessmentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmenttemplatesresponsetypedef).
 
 ### describe_cross_account_access_role
 
-Type annotations for `boto3.client("inspector").describe_cross_account_access_role` method.
+Type annotations for
+`boto3.client("inspector").describe_cross_account_access_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role]
+Boto3 documentation:
+[Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
 
-```python
-def describe_cross_account_access_role(
-    self
-) -> DescribeCrossAccountAccessRoleResponseTypeDef:
-    pass
-```
+Returns
+[DescribeCrossAccountAccessRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describecrossaccountaccessroleresponsetypedef).
 
 ### describe_exclusions
 
 Type annotations for `boto3.client("inspector").describe_exclusions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions]
+Boto3 documentation:
+[Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
 
-```python
-def describe_exclusions(
-    self,
-    exclusionArns: List[str],
-    locale: Literal['EN_US'] = None
-) -> DescribeExclusionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `exclusionArns`: `List`\[`str`\] *(required)*
+- `locale`: `Literal['EN_US']`
+
+Returns
+[DescribeExclusionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeexclusionsresponsetypedef).
 
 ### describe_findings
 
 Type annotations for `boto3.client("inspector").describe_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings]
+Boto3 documentation:
+[Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
 
-```python
-def describe_findings(
-    self,
-    findingArns: List[str],
-    locale: Literal['EN_US'] = None
-) -> DescribeFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `findingArns`: `List`\[`str`\] *(required)*
+- `locale`: `Literal['EN_US']`
+
+Returns
+[DescribeFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describefindingsresponsetypedef).
 
 ### describe_resource_groups
 
-Type annotations for `boto3.client("inspector").describe_resource_groups` method.
+Type annotations for `boto3.client("inspector").describe_resource_groups`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups]
+Boto3 documentation:
+[Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
 
-```python
-def describe_resource_groups(
-    self,
-    resourceGroupArns: List[str]
-) -> DescribeResourceGroupsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceGroupArns`: `List`\[`str`\] *(required)*
+
+Returns
+[DescribeResourceGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeresourcegroupsresponsetypedef).
 
 ### describe_rules_packages
 
-Type annotations for `boto3.client("inspector").describe_rules_packages` method.
+Type annotations for `boto3.client("inspector").describe_rules_packages`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages]
+Boto3 documentation:
+[Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
 
-```python
-def describe_rules_packages(
-    self,
-    rulesPackageArns: List[str],
-    locale: Literal['EN_US'] = None
-) -> DescribeRulesPackagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `rulesPackageArns`: `List`\[`str`\] *(required)*
+- `locale`: `Literal['EN_US']`
+
+Returns
+[DescribeRulesPackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describerulespackagesresponsetypedef).
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("inspector").generate_presigned_url` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url]
+Boto3 documentation:
+[Inspector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_assessment_report
 
 Type annotations for `boto3.client("inspector").get_assessment_report` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report]
+Boto3 documentation:
+[Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
 
-```python
-def get_assessment_report(
-    self,
-    assessmentRunArn: str,
-    reportFileFormat: ReportFileFormat,
-    reportType: ReportType
-) -> GetAssessmentReportResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
+- `reportFileFormat`:
+  [ReportFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#reportfileformat)
+  *(required)*
+- `reportType`:
+  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#reporttype)
+  *(required)*
+
+Returns
+[GetAssessmentReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#getassessmentreportresponsetypedef).
 
 ### get_exclusions_preview
 
 Type annotations for `boto3.client("inspector").get_exclusions_preview` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview]
+Boto3 documentation:
+[Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
 
-```python
-def get_exclusions_preview(
-    self,
-    assessmentTemplateArn: str,
-    previewToken: str,
-    nextToken: str = None,
-    maxResults: int = None,
-    locale: Literal['EN_US'] = None
-) -> GetExclusionsPreviewResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArn`: `str` *(required)*
+- `previewToken`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `locale`: `Literal['EN_US']`
+
+Returns
+[GetExclusionsPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#getexclusionspreviewresponsetypedef).
 
 ### get_telemetry_metadata
 
 Type annotations for `boto3.client("inspector").get_telemetry_metadata` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata]
+Boto3 documentation:
+[Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
 
-```python
-def get_telemetry_metadata(
-    self,
-    assessmentRunArn: str
-) -> GetTelemetryMetadataResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
+
+Returns
+[GetTelemetryMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#gettelemetrymetadataresponsetypedef).
 
 ### list_assessment_run_agents
 
-Type annotations for `boto3.client("inspector").list_assessment_run_agents` method.
+Type annotations for `boto3.client("inspector").list_assessment_run_agents`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents]
+Boto3 documentation:
+[Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
 
-```python
-def list_assessment_run_agents(
-    self,
-    assessmentRunArn: str,
-    filter: AgentFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentRunAgentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
+- `filter`:
+  [AgentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#agentfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentRunAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunagentsresponsetypedef).
 
 ### list_assessment_runs
 
 Type annotations for `boto3.client("inspector").list_assessment_runs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs]
+Boto3 documentation:
+[Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
 
-```python
-def list_assessment_runs(
-    self,
-    assessmentTemplateArns: List[str] = None,
-    filter: AssessmentRunFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentRunsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArns`: `List`\[`str`\]
+- `filter`:
+  [AssessmentRunFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunsresponsetypedef).
 
 ### list_assessment_targets
 
-Type annotations for `boto3.client("inspector").list_assessment_targets` method.
+Type annotations for `boto3.client("inspector").list_assessment_targets`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets]
+Boto3 documentation:
+[Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
 
-```python
-def list_assessment_targets(
-    self,
-    filter: AssessmentTargetFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentTargetsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `filter`:
+  [AssessmentTargetFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttargetfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttargetsresponsetypedef).
 
 ### list_assessment_templates
 
-Type annotations for `boto3.client("inspector").list_assessment_templates` method.
+Type annotations for `boto3.client("inspector").list_assessment_templates`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates]
+Boto3 documentation:
+[Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
 
-```python
-def list_assessment_templates(
-    self,
-    assessmentTargetArns: List[str] = None,
-    filter: AssessmentTemplateFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListAssessmentTemplatesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTargetArns`: `List`\[`str`\]
+- `filter`:
+  [AssessmentTemplateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttemplatefiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAssessmentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttemplatesresponsetypedef).
 
 ### list_event_subscriptions
 
-Type annotations for `boto3.client("inspector").list_event_subscriptions` method.
+Type annotations for `boto3.client("inspector").list_event_subscriptions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions]
+Boto3 documentation:
+[Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
 
-```python
-def list_event_subscriptions(
-    self,
-    resourceArn: str = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListEventSubscriptionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListEventSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listeventsubscriptionsresponsetypedef).
 
 ### list_exclusions
 
 Type annotations for `boto3.client("inspector").list_exclusions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions]
+Boto3 documentation:
+[Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
 
-```python
-def list_exclusions(
-    self,
-    assessmentRunArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListExclusionsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListExclusionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listexclusionsresponsetypedef).
 
 ### list_findings
 
 Type annotations for `boto3.client("inspector").list_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings]
+Boto3 documentation:
+[Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
 
-```python
-def list_findings(
-    self,
-    assessmentRunArns: List[str] = None,
-    filter: FindingFilterTypeDef = None,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentRunArns`: `List`\[`str`\]
+- `filter`:
+  [FindingFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#findingfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listfindingsresponsetypedef).
 
 ### list_rules_packages
 
 Type annotations for `boto3.client("inspector").list_rules_packages` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages]
+Boto3 documentation:
+[Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
 
-```python
-def list_rules_packages(
-    self,
-    nextToken: str = None,
-    maxResults: int = None
-) -> ListRulesPackagesResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRulesPackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listrulespackagesresponsetypedef).
 
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("inspector").list_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource]
+Boto3 documentation:
+[Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    resourceArn: str
-) -> ListTagsForResourceResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listtagsforresourceresponsetypedef).
 
 ### preview_agents
 
 Type annotations for `boto3.client("inspector").preview_agents` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents]
+Boto3 documentation:
+[Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
 
-```python
-def preview_agents(
-    self,
-    previewAgentsArn: str,
-    nextToken: str = None,
-    maxResults: int = None
-) -> PreviewAgentsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `previewAgentsArn`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[PreviewAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#previewagentsresponsetypedef).
 
 ### register_cross_account_access_role
 
-Type annotations for `boto3.client("inspector").register_cross_account_access_role` method.
+Type annotations for
+`boto3.client("inspector").register_cross_account_access_role` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role]
+Boto3 documentation:
+[Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
 
-```python
-def register_cross_account_access_role(
-    self,
-    roleArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `roleArn`: `str` *(required)*
 
 ### remove_attributes_from_findings
 
-Type annotations for `boto3.client("inspector").remove_attributes_from_findings` method.
+Type annotations for
+`boto3.client("inspector").remove_attributes_from_findings` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings]
+Boto3 documentation:
+[Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
 
-```python
-def remove_attributes_from_findings(
-    self,
-    findingArns: List[str],
-    attributeKeys: List[str]
-) -> RemoveAttributesFromFindingsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `findingArns`: `List`\[`str`\] *(required)*
+- `attributeKeys`: `List`\[`str`\] *(required)*
+
+Returns
+[RemoveAttributesFromFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#removeattributesfromfindingsresponsetypedef).
 
 ### set_tags_for_resource
 
 Type annotations for `boto3.client("inspector").set_tags_for_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource]
+Boto3 documentation:
+[Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
 
-```python
-def set_tags_for_resource(
-    self,
-    resourceArn: str,
-    tags: List["TagTypeDef"] = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#tagtypedef)\]
 
 ### start_assessment_run
 
 Type annotations for `boto3.client("inspector").start_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run]
+Boto3 documentation:
+[Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
 
-```python
-def start_assessment_run(
-    self,
-    assessmentTemplateArn: str,
-    assessmentRunName: str = None
-) -> StartAssessmentRunResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `assessmentTemplateArn`: `str` *(required)*
+- `assessmentRunName`: `str`
+
+Returns
+[StartAssessmentRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#startassessmentrunresponsetypedef).
 
 ### stop_assessment_run
 
 Type annotations for `boto3.client("inspector").stop_assessment_run` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run]
+Boto3 documentation:
+[Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
 
-```python
-def stop_assessment_run(
-    self,
-    assessmentRunArn: str,
-    stopAction: StopAction = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `assessmentRunArn`: `str` *(required)*
+- `stopAction`:
+  [StopAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#stopaction)
 
 ### subscribe_to_event
 
 Type annotations for `boto3.client("inspector").subscribe_to_event` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event]
+Boto3 documentation:
+[Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
 
-```python
-def subscribe_to_event(
-    self,
-    resourceArn: str,
-    event: InspectorEvent,
-    topicArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `event`:
+  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
+  *(required)*
+- `topicArn`: `str` *(required)*
 
 ### unsubscribe_from_event
 
 Type annotations for `boto3.client("inspector").unsubscribe_from_event` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event]
+Boto3 documentation:
+[Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
 
-```python
-def unsubscribe_from_event(
-    self,
-    resourceArn: str,
-    event: InspectorEvent,
-    topicArn: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `event`:
+  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
+  *(required)*
+- `topicArn`: `str` *(required)*
 
 ### update_assessment_target
 
-Type annotations for `boto3.client("inspector").update_assessment_target` method.
+Type annotations for `boto3.client("inspector").update_assessment_target`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target]
+Boto3 documentation:
+[Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
 
-```python
-def update_assessment_target(
-    self,
-    assessmentTargetArn: str,
-    assessmentTargetName: str,
-    resourceGroupArn: str = None
-) -> None:
-    pass
-```
+Arguments:
 
-
+- `assessmentTargetArn`: `str` *(required)*
+- `assessmentTargetName`: `str` *(required)*
+- `resourceGroupArn`: `str`
 
 ### get_paginator
 
-Type annotations for `boto3.client("inspector").get_paginator` method with overloads.
+Type annotations for `boto3.client("inspector").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_assessment_run_agents")` -> [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
-- `client.get_paginator("list_assessment_runs")` -> [ListAssessmentRunsPaginator](./paginators.md#listassessmentrunspaginator)
-- `client.get_paginator("list_assessment_targets")` -> [ListAssessmentTargetsPaginator](./paginators.md#listassessmenttargetspaginator)
-- `client.get_paginator("list_assessment_templates")` -> [ListAssessmentTemplatesPaginator](./paginators.md#listassessmenttemplatespaginator)
-- `client.get_paginator("list_event_subscriptions")` -> [ListEventSubscriptionsPaginator](./paginators.md#listeventsubscriptionspaginator)
-- `client.get_paginator("list_exclusions")` -> [ListExclusionsPaginator](./paginators.md#listexclusionspaginator)
-- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_rules_packages")` -> [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
-- `client.get_paginator("preview_agents")` -> [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
-
-
+- `client.get_paginator("list_assessment_run_agents")` ->
+  [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
+- `client.get_paginator("list_assessment_runs")` ->
+  [ListAssessmentRunsPaginator](./paginators.md#listassessmentrunspaginator)
+- `client.get_paginator("list_assessment_targets")` ->
+  [ListAssessmentTargetsPaginator](./paginators.md#listassessmenttargetspaginator)
+- `client.get_paginator("list_assessment_templates")` ->
+  [ListAssessmentTemplatesPaginator](./paginators.md#listassessmenttemplatespaginator)
+- `client.get_paginator("list_event_subscriptions")` ->
+  [ListEventSubscriptionsPaginator](./paginators.md#listeventsubscriptionspaginator)
+- `client.get_paginator("list_exclusions")` ->
+  [ListExclusionsPaginator](./paginators.md#listexclusionspaginator)
+- `client.get_paginator("list_findings")` ->
+  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_rules_packages")` ->
+  [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
+- `client.get_paginator("preview_agents")` ->
+  [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)

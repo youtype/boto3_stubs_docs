@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Glue](./README.md) > Literals
 
-Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+Auto-generated documentation for
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+type annotations stubs module
+[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [Literals for boto3 Glue module](#literals-for-boto3-glue-module)
   - [BackfillErrorCode](#backfillerrorcode)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > ElasticLoadBalancing
 
-Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+Auto-generated documentation for
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+type annotations stubs module
+[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
 ```bash
 pip install mypy-boto3-elb
@@ -20,7 +22,8 @@ pip install mypy-boto3-elb
 
 ## ElasticLoadBalancingClient
 
-Type annotations for  `boto3.client("elb")` as [ElasticLoadBalancingClient](./client.md)
+Type annotations for `boto3.client("elb")` as
+[ElasticLoadBalancingClient](./client.md)
 
 Can be used directly:
 
@@ -28,12 +31,10 @@ Can be used directly:
 from mypy_boto3_elb.client import ElasticLoadBalancingClient
 ```
 
-
 ElasticLoadBalancingClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [add_tags](./client.md#add-tags)
 - [apply_security_groups_to_load_balancer](./client.md#apply-security-groups-to-load-balancer)
 - [attach_load_balancer_to_subnets](./client.md#attach-load-balancer-to-subnets)
@@ -68,10 +69,8 @@ ElasticLoadBalancingClient [exceptions](./client.md#exceptions)
 - [set_load_balancer_policies_for_backend_server](./client.md#set-load-balancer-policies-for-backend-server)
 - [set_load_balancer_policies_of_listener](./client.md#set-load-balancer-policies-of-listener)
 
-
-
-
 ### Exceptions
+
 - [AccessPointNotFoundException](./client.md#accesspointnotfoundexception)
 - [CertificateNotFoundException](./client.md#certificatenotfoundexception)
 - [ClientError](./client.md#clienterror)
@@ -96,14 +95,10 @@ ElasticLoadBalancingClient [exceptions](./client.md#exceptions)
 - [TooManyTagsException](./client.md#toomanytagsexception)
 - [UnsupportedProtocolException](./client.md#unsupportedprotocolexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("elb").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("elb").get_paginator("...")`.
 
 Can be used directly:
 
@@ -114,12 +109,10 @@ from mypy_boto3_elb.paginators import DescribeAccountLimitsPaginator, ...
 - [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
 - [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
 
-
-
-
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from `boto3.client("elb").get_waiter("...")`.
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("elb").get_waiter("...")`.
 
 Can be used directly:
 
@@ -130,9 +123,6 @@ from mypy_boto3_elb.waiters import AnyInstanceInServiceWaiter, ...
 - [AnyInstanceInServiceWaiter](./waiters.md#anyinstanceinservicewaiter)
 - [InstanceDeregisteredWaiter](./waiters.md#instancederegisteredwaiter)
 - [InstanceInServiceWaiter](./waiters.md#instanceinservicewaiter)
-
-
-
 
 ## Literals
 
@@ -150,13 +140,10 @@ from mypy_boto3_elb.literals import AnyInstanceInServiceWaiterName, ...
 - [InstanceDeregisteredWaiterName](./literals.md#instancederegisteredwaitername)
 - [InstanceInServiceWaiterName](./literals.md#instanceinservicewaitername)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

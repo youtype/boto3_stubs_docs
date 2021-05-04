@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudFront](./README.md) > CloudFrontClient
 
-Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+Auto-generated documentation for
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+type annotations stubs module
+[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [CloudFrontClient for boto3 CloudFront module](#cloudfrontclient-for-boto3-cloudfront-module)
   - [CloudFrontClient](#cloudfrontclient)
@@ -110,12 +112,13 @@ def get_cloudfront_client() -> CloudFrontClient:
     return boto3.client("cloudfront")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
+Boto3 documentation:
+[CloudFront.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudfront.client import Exceptions
@@ -123,7 +126,6 @@ from mypy_boto3_cloudfront.client import Exceptions
 def handle_error(exc: Exceptions.AccessDenied) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -250,1301 +252,1373 @@ Exceptions:
 - `Exceptions.TrustedSignerDoesNotExist`
 - `Exceptions.UnsupportedOperation`
 
-
 ## Methods
-
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudfront").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate]
+Boto3 documentation:
+[CloudFront.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_cache_policy
 
 Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy]
+Boto3 documentation:
+[CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
 
-```python
-def create_cache_policy(
-    self,
-    CachePolicyConfig: "CachePolicyConfigTypeDef"
-) -> CreateCachePolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CachePolicyConfig`:
+  [CachePolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cachepolicyconfigtypedef)
+  *(required)*
+
+Returns
+[CreateCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createcachepolicyresulttypedef).
 
 ### create_cloud_front_origin_access_identity
 
-Type annotations for `boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
+Type annotations for
+`boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity]
+Boto3 documentation:
+[CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
 
-```python
-def create_cloud_front_origin_access_identity(
-    self,
-    CloudFrontOriginAccessIdentityConfig: "CloudFrontOriginAccessIdentityConfigTypeDef"
-) -> CreateCloudFrontOriginAccessIdentityResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CloudFrontOriginAccessIdentityConfig`:
+  [CloudFrontOriginAccessIdentityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cloudfrontoriginaccessidentityconfigtypedef)
+  *(required)*
+
+Returns
+[CreateCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createcloudfrontoriginaccessidentityresulttypedef).
 
 ### create_distribution
 
 Type annotations for `boto3.client("cloudfront").create_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution]
+Boto3 documentation:
+[CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
 
-```python
-def create_distribution(
-    self,
-    DistributionConfig: "DistributionConfigTypeDef"
-) -> CreateDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionConfig`:
+  [DistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigtypedef)
+  *(required)*
+
+Returns
+[CreateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createdistributionresulttypedef).
 
 ### create_distribution_with_tags
 
-Type annotations for `boto3.client("cloudfront").create_distribution_with_tags` method.
+Type annotations for `boto3.client("cloudfront").create_distribution_with_tags`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags]
+Boto3 documentation:
+[CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
 
-```python
-def create_distribution_with_tags(
-    self,
-    DistributionConfigWithTags: DistributionConfigWithTagsTypeDef
-) -> CreateDistributionWithTagsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionConfigWithTags`:
+  [DistributionConfigWithTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigwithtagstypedef)
+  *(required)*
+
+Returns
+[CreateDistributionWithTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createdistributionwithtagsresulttypedef).
 
 ### create_field_level_encryption_config
 
-Type annotations for `boto3.client("cloudfront").create_field_level_encryption_config` method.
+Type annotations for
+`boto3.client("cloudfront").create_field_level_encryption_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config]
+Boto3 documentation:
+[CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
 
-```python
-def create_field_level_encryption_config(
-    self,
-    FieldLevelEncryptionConfig: "FieldLevelEncryptionConfigTypeDef"
-) -> CreateFieldLevelEncryptionConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `FieldLevelEncryptionConfig`:
+  [FieldLevelEncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionconfigtypedef)
+  *(required)*
+
+Returns
+[CreateFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfieldlevelencryptionconfigresulttypedef).
 
 ### create_field_level_encryption_profile
 
-Type annotations for `boto3.client("cloudfront").create_field_level_encryption_profile` method.
+Type annotations for
+`boto3.client("cloudfront").create_field_level_encryption_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile]
+Boto3 documentation:
+[CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
 
-```python
-def create_field_level_encryption_profile(
-    self,
-    FieldLevelEncryptionProfileConfig: "FieldLevelEncryptionProfileConfigTypeDef"
-) -> CreateFieldLevelEncryptionProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `FieldLevelEncryptionProfileConfig`:
+  [FieldLevelEncryptionProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionprofileconfigtypedef)
+  *(required)*
+
+Returns
+[CreateFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfieldlevelencryptionprofileresulttypedef).
 
 ### create_function
 
 Type annotations for `boto3.client("cloudfront").create_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function]
+Boto3 documentation:
+[CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
 
-```python
-def create_function(
-    self,
-    Name: str,
-    FunctionConfig: "FunctionConfigTypeDef",
-    FunctionCode: Union[bytes, IO[bytes]]
-) -> CreateFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `FunctionConfig`:
+  [FunctionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#functionconfigtypedef)
+  *(required)*
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+
+Returns
+[CreateFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfunctionresulttypedef).
 
 ### create_invalidation
 
 Type annotations for `boto3.client("cloudfront").create_invalidation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation]
+Boto3 documentation:
+[CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
 
-```python
-def create_invalidation(
-    self,
-    DistributionId: str,
-    InvalidationBatch: "InvalidationBatchTypeDef"
-) -> CreateInvalidationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+- `InvalidationBatch`:
+  [InvalidationBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#invalidationbatchtypedef)
+  *(required)*
+
+Returns
+[CreateInvalidationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createinvalidationresulttypedef).
 
 ### create_key_group
 
 Type annotations for `boto3.client("cloudfront").create_key_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group]
+Boto3 documentation:
+[CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
 
-```python
-def create_key_group(
-    self,
-    KeyGroupConfig: "KeyGroupConfigTypeDef"
-) -> CreateKeyGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#keygroupconfigtypedef)
+  *(required)*
+
+Returns
+[CreateKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createkeygroupresulttypedef).
 
 ### create_monitoring_subscription
 
-Type annotations for `boto3.client("cloudfront").create_monitoring_subscription` method.
+Type annotations for
+`boto3.client("cloudfront").create_monitoring_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription]
+Boto3 documentation:
+[CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
 
-```python
-def create_monitoring_subscription(
-    self,
-    DistributionId: str,
-    MonitoringSubscription: "MonitoringSubscriptionTypeDef"
-) -> CreateMonitoringSubscriptionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+- `MonitoringSubscription`:
+  [MonitoringSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#monitoringsubscriptiontypedef)
+  *(required)*
+
+Returns
+[CreateMonitoringSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createmonitoringsubscriptionresulttypedef).
 
 ### create_origin_request_policy
 
-Type annotations for `boto3.client("cloudfront").create_origin_request_policy` method.
+Type annotations for `boto3.client("cloudfront").create_origin_request_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy]
+Boto3 documentation:
+[CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
 
-```python
-def create_origin_request_policy(
-    self,
-    OriginRequestPolicyConfig: "OriginRequestPolicyConfigTypeDef"
-) -> CreateOriginRequestPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OriginRequestPolicyConfig`:
+  [OriginRequestPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#originrequestpolicyconfigtypedef)
+  *(required)*
+
+Returns
+[CreateOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createoriginrequestpolicyresulttypedef).
 
 ### create_public_key
 
 Type annotations for `boto3.client("cloudfront").create_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key]
+Boto3 documentation:
+[CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
 
-```python
-def create_public_key(
-    self,
-    PublicKeyConfig: "PublicKeyConfigTypeDef"
-) -> CreatePublicKeyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PublicKeyConfig`:
+  [PublicKeyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publickeyconfigtypedef)
+  *(required)*
+
+Returns
+[CreatePublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createpublickeyresulttypedef).
 
 ### create_realtime_log_config
 
-Type annotations for `boto3.client("cloudfront").create_realtime_log_config` method.
+Type annotations for `boto3.client("cloudfront").create_realtime_log_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config]
+Boto3 documentation:
+[CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
 
-```python
-def create_realtime_log_config(
-    self,
-    EndPoints: List["EndPointTypeDef"],
-    Fields: List[str],
-    Name: str,
-    SamplingRate: int
-) -> CreateRealtimeLogConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EndPoints`:
+  `List`\[[EndPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#endpointtypedef)\]
+  *(required)*
+- `Fields`: `List`\[`str`\] *(required)*
+- `Name`: `str` *(required)*
+- `SamplingRate`: `int` *(required)*
+
+Returns
+[CreateRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createrealtimelogconfigresulttypedef).
 
 ### create_streaming_distribution
 
-Type annotations for `boto3.client("cloudfront").create_streaming_distribution` method.
+Type annotations for `boto3.client("cloudfront").create_streaming_distribution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution]
+Boto3 documentation:
+[CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
 
-```python
-def create_streaming_distribution(
-    self,
-    StreamingDistributionConfig: "StreamingDistributionConfigTypeDef"
-) -> CreateStreamingDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StreamingDistributionConfig`:
+  [StreamingDistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigtypedef)
+  *(required)*
+
+Returns
+[CreateStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createstreamingdistributionresulttypedef).
 
 ### create_streaming_distribution_with_tags
 
-Type annotations for `boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
+Type annotations for
+`boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags]
+Boto3 documentation:
+[CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
 
-```python
-def create_streaming_distribution_with_tags(
-    self,
-    StreamingDistributionConfigWithTags: StreamingDistributionConfigWithTagsTypeDef
-) -> CreateStreamingDistributionWithTagsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `StreamingDistributionConfigWithTags`:
+  [StreamingDistributionConfigWithTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigwithtagstypedef)
+  *(required)*
+
+Returns
+[CreateStreamingDistributionWithTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createstreamingdistributionwithtagsresulttypedef).
 
 ### delete_cache_policy
 
 Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy]
+Boto3 documentation:
+[CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
 
-```python
-def delete_cache_policy(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_cloud_front_origin_access_identity
 
-Type annotations for `boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
+Type annotations for
+`boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity]
+Boto3 documentation:
+[CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
 
-```python
-def delete_cloud_front_origin_access_identity(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_distribution
 
 Type annotations for `boto3.client("cloudfront").delete_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution]
+Boto3 documentation:
+[CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
 
-```python
-def delete_distribution(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_field_level_encryption_config
 
-Type annotations for `boto3.client("cloudfront").delete_field_level_encryption_config` method.
+Type annotations for
+`boto3.client("cloudfront").delete_field_level_encryption_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config]
+Boto3 documentation:
+[CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
 
-```python
-def delete_field_level_encryption_config(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_field_level_encryption_profile
 
-Type annotations for `boto3.client("cloudfront").delete_field_level_encryption_profile` method.
+Type annotations for
+`boto3.client("cloudfront").delete_field_level_encryption_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile]
+Boto3 documentation:
+[CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
 
-```python
-def delete_field_level_encryption_profile(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_function
 
 Type annotations for `boto3.client("cloudfront").delete_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function]
+Boto3 documentation:
+[CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
 
-```python
-def delete_function(
-    self,
-    Name: str,
-    IfMatch: str
-) -> None:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IfMatch`: `str` *(required)*
 
 ### delete_key_group
 
 Type annotations for `boto3.client("cloudfront").delete_key_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group]
+Boto3 documentation:
+[CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
 
-```python
-def delete_key_group(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_monitoring_subscription
 
-Type annotations for `boto3.client("cloudfront").delete_monitoring_subscription` method.
+Type annotations for
+`boto3.client("cloudfront").delete_monitoring_subscription` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription]
+Boto3 documentation:
+[CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
 
-```python
-def delete_monitoring_subscription(
-    self,
-    DistributionId: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_origin_request_policy
 
-Type annotations for `boto3.client("cloudfront").delete_origin_request_policy` method.
+Type annotations for `boto3.client("cloudfront").delete_origin_request_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy]
+Boto3 documentation:
+[CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
 
-```python
-def delete_origin_request_policy(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_public_key
 
 Type annotations for `boto3.client("cloudfront").delete_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key]
+Boto3 documentation:
+[CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
 
-```python
-def delete_public_key(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### delete_realtime_log_config
 
-Type annotations for `boto3.client("cloudfront").delete_realtime_log_config` method.
+Type annotations for `boto3.client("cloudfront").delete_realtime_log_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config]
+Boto3 documentation:
+[CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
 
-```python
-def delete_realtime_log_config(
-    self,
-    Name: str = None,
-    ARN: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `ARN`: `str`
 
 ### delete_streaming_distribution
 
-Type annotations for `boto3.client("cloudfront").delete_streaming_distribution` method.
+Type annotations for `boto3.client("cloudfront").delete_streaming_distribution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution]
+Boto3 documentation:
+[CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
 
-```python
-def delete_streaming_distribution(
-    self,
-    Id: str,
-    IfMatch: str = None
-) -> None:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
 ### describe_function
 
 Type annotations for `boto3.client("cloudfront").describe_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function]
+Boto3 documentation:
+[CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
 
-```python
-def describe_function(
-    self,
-    Name: str,
-    Stage: FunctionStage = None
-) -> DescribeFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Stage`:
+  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+
+Returns
+[DescribeFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#describefunctionresulttypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cloudfront").generate_presigned_url` method.
+Type annotations for `boto3.client("cloudfront").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudFront.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_cache_policy
 
 Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy]
+Boto3 documentation:
+[CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
 
-```python
-def get_cache_policy(
-    self,
-    Id: str
-) -> GetCachePolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcachepolicyresulttypedef).
 
 ### get_cache_policy_config
 
-Type annotations for `boto3.client("cloudfront").get_cache_policy_config` method.
+Type annotations for `boto3.client("cloudfront").get_cache_policy_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config]
+Boto3 documentation:
+[CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
 
-```python
-def get_cache_policy_config(
-    self,
-    Id: str
-) -> GetCachePolicyConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetCachePolicyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcachepolicyconfigresulttypedef).
 
 ### get_cloud_front_origin_access_identity
 
-Type annotations for `boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
+Type annotations for
+`boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity]
+Boto3 documentation:
+[CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
 
-```python
-def get_cloud_front_origin_access_identity(
-    self,
-    Id: str
-) -> GetCloudFrontOriginAccessIdentityResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcloudfrontoriginaccessidentityresulttypedef).
 
 ### get_cloud_front_origin_access_identity_config
 
-Type annotations for `boto3.client("cloudfront").get_cloud_front_origin_access_identity_config` method.
+Type annotations for
+`boto3.client("cloudfront").get_cloud_front_origin_access_identity_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config]
+Boto3 documentation:
+[CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
 
-```python
-def get_cloud_front_origin_access_identity_config(
-    self,
-    Id: str
-) -> GetCloudFrontOriginAccessIdentityConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetCloudFrontOriginAccessIdentityConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcloudfrontoriginaccessidentityconfigresulttypedef).
 
 ### get_distribution
 
 Type annotations for `boto3.client("cloudfront").get_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution]
+Boto3 documentation:
+[CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
 
-```python
-def get_distribution(
-    self,
-    Id: str
-) -> GetDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getdistributionresulttypedef).
 
 ### get_distribution_config
 
-Type annotations for `boto3.client("cloudfront").get_distribution_config` method.
+Type annotations for `boto3.client("cloudfront").get_distribution_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config]
+Boto3 documentation:
+[CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
 
-```python
-def get_distribution_config(
-    self,
-    Id: str
-) -> GetDistributionConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetDistributionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getdistributionconfigresulttypedef).
 
 ### get_field_level_encryption
 
-Type annotations for `boto3.client("cloudfront").get_field_level_encryption` method.
+Type annotations for `boto3.client("cloudfront").get_field_level_encryption`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption]
+Boto3 documentation:
+[CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
 
-```python
-def get_field_level_encryption(
-    self,
-    Id: str
-) -> GetFieldLevelEncryptionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetFieldLevelEncryptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionresulttypedef).
 
 ### get_field_level_encryption_config
 
-Type annotations for `boto3.client("cloudfront").get_field_level_encryption_config` method.
+Type annotations for
+`boto3.client("cloudfront").get_field_level_encryption_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config]
+Boto3 documentation:
+[CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
 
-```python
-def get_field_level_encryption_config(
-    self,
-    Id: str
-) -> GetFieldLevelEncryptionConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionconfigresulttypedef).
 
 ### get_field_level_encryption_profile
 
-Type annotations for `boto3.client("cloudfront").get_field_level_encryption_profile` method.
+Type annotations for
+`boto3.client("cloudfront").get_field_level_encryption_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile]
+Boto3 documentation:
+[CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
 
-```python
-def get_field_level_encryption_profile(
-    self,
-    Id: str
-) -> GetFieldLevelEncryptionProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionprofileresulttypedef).
 
 ### get_field_level_encryption_profile_config
 
-Type annotations for `boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
+Type annotations for
+`boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config]
+Boto3 documentation:
+[CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
 
-```python
-def get_field_level_encryption_profile_config(
-    self,
-    Id: str
-) -> GetFieldLevelEncryptionProfileConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetFieldLevelEncryptionProfileConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionprofileconfigresulttypedef).
 
 ### get_function
 
 Type annotations for `boto3.client("cloudfront").get_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function]
+Boto3 documentation:
+[CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
 
-```python
-def get_function(
-    self,
-    Name: str,
-    Stage: FunctionStage = None
-) -> GetFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `Stage`:
+  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+
+Returns
+[GetFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfunctionresulttypedef).
 
 ### get_invalidation
 
 Type annotations for `boto3.client("cloudfront").get_invalidation` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation]
+Boto3 documentation:
+[CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
 
-```python
-def get_invalidation(
-    self,
-    DistributionId: str,
-    Id: str
-) -> GetInvalidationResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetInvalidationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getinvalidationresulttypedef).
 
 ### get_key_group
 
 Type annotations for `boto3.client("cloudfront").get_key_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group]
+Boto3 documentation:
+[CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
 
-```python
-def get_key_group(
-    self,
-    Id: str
-) -> GetKeyGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getkeygroupresulttypedef).
 
 ### get_key_group_config
 
 Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config]
+Boto3 documentation:
+[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
 
-```python
-def get_key_group_config(
-    self,
-    Id: str
-) -> GetKeyGroupConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetKeyGroupConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getkeygroupconfigresulttypedef).
 
 ### get_monitoring_subscription
 
-Type annotations for `boto3.client("cloudfront").get_monitoring_subscription` method.
+Type annotations for `boto3.client("cloudfront").get_monitoring_subscription`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription]
+Boto3 documentation:
+[CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
 
-```python
-def get_monitoring_subscription(
-    self,
-    DistributionId: str
-) -> GetMonitoringSubscriptionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+
+Returns
+[GetMonitoringSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getmonitoringsubscriptionresulttypedef).
 
 ### get_origin_request_policy
 
-Type annotations for `boto3.client("cloudfront").get_origin_request_policy` method.
+Type annotations for `boto3.client("cloudfront").get_origin_request_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy]
+Boto3 documentation:
+[CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
 
-```python
-def get_origin_request_policy(
-    self,
-    Id: str
-) -> GetOriginRequestPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getoriginrequestpolicyresulttypedef).
 
 ### get_origin_request_policy_config
 
-Type annotations for `boto3.client("cloudfront").get_origin_request_policy_config` method.
+Type annotations for
+`boto3.client("cloudfront").get_origin_request_policy_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config]
+Boto3 documentation:
+[CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
 
-```python
-def get_origin_request_policy_config(
-    self,
-    Id: str
-) -> GetOriginRequestPolicyConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetOriginRequestPolicyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getoriginrequestpolicyconfigresulttypedef).
 
 ### get_public_key
 
 Type annotations for `boto3.client("cloudfront").get_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key]
+Boto3 documentation:
+[CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
 
-```python
-def get_public_key(
-    self,
-    Id: str
-) -> GetPublicKeyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetPublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getpublickeyresulttypedef).
 
 ### get_public_key_config
 
 Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config]
+Boto3 documentation:
+[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
 
-```python
-def get_public_key_config(
-    self,
-    Id: str
-) -> GetPublicKeyConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetPublicKeyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getpublickeyconfigresulttypedef).
 
 ### get_realtime_log_config
 
-Type annotations for `boto3.client("cloudfront").get_realtime_log_config` method.
+Type annotations for `boto3.client("cloudfront").get_realtime_log_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config]
+Boto3 documentation:
+[CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
 
-```python
-def get_realtime_log_config(
-    self,
-    Name: str = None,
-    ARN: str = None
-) -> GetRealtimeLogConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str`
+- `ARN`: `str`
+
+Returns
+[GetRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getrealtimelogconfigresulttypedef).
 
 ### get_streaming_distribution
 
-Type annotations for `boto3.client("cloudfront").get_streaming_distribution` method.
+Type annotations for `boto3.client("cloudfront").get_streaming_distribution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution]
+Boto3 documentation:
+[CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
 
-```python
-def get_streaming_distribution(
-    self,
-    Id: str
-) -> GetStreamingDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getstreamingdistributionresulttypedef).
 
 ### get_streaming_distribution_config
 
-Type annotations for `boto3.client("cloudfront").get_streaming_distribution_config` method.
+Type annotations for
+`boto3.client("cloudfront").get_streaming_distribution_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config]
+Boto3 documentation:
+[CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
 
-```python
-def get_streaming_distribution_config(
-    self,
-    Id: str
-) -> GetStreamingDistributionConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetStreamingDistributionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getstreamingdistributionconfigresulttypedef).
 
 ### list_cache_policies
 
 Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies]
+Boto3 documentation:
+[CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
 
-```python
-def list_cache_policies(
-    self,
-    Type: CachePolicyType = None,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListCachePoliciesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [CachePolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#cachepolicytype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListCachePoliciesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listcachepoliciesresulttypedef).
 
 ### list_cloud_front_origin_access_identities
 
-Type annotations for `boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
+Type annotations for
+`boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities]
+Boto3 documentation:
+[CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
 
-```python
-def list_cloud_front_origin_access_identities(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListCloudFrontOriginAccessIdentitiesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListCloudFrontOriginAccessIdentitiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listcloudfrontoriginaccessidentitiesresulttypedef).
 
 ### list_distributions
 
 Type annotations for `boto3.client("cloudfront").list_distributions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions]
+Boto3 documentation:
+[CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
 
-```python
-def list_distributions(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListDistributionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsresulttypedef).
 
 ### list_distributions_by_cache_policy_id
 
-Type annotations for `boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id]
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
 
-```python
-def list_distributions_by_cache_policy_id(
-    self,
-    CachePolicyId: str,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListDistributionsByCachePolicyIdResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CachePolicyId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsByCachePolicyIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbycachepolicyidresulttypedef).
 
 ### list_distributions_by_key_group
 
-Type annotations for `boto3.client("cloudfront").list_distributions_by_key_group` method.
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_key_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group]
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
 
-```python
-def list_distributions_by_key_group(
-    self,
-    KeyGroupId: str,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListDistributionsByKeyGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyGroupId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsByKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbykeygroupresulttypedef).
 
 ### list_distributions_by_origin_request_policy_id
 
-Type annotations for `boto3.client("cloudfront").list_distributions_by_origin_request_policy_id` method.
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_origin_request_policy_id`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id]
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
 
-```python
-def list_distributions_by_origin_request_policy_id(
-    self,
-    OriginRequestPolicyId: str,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListDistributionsByOriginRequestPolicyIdResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OriginRequestPolicyId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsByOriginRequestPolicyIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbyoriginrequestpolicyidresulttypedef).
 
 ### list_distributions_by_realtime_log_config
 
-Type annotations for `boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config]
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
 
-```python
-def list_distributions_by_realtime_log_config(
-    self,
-    Marker: str = None,
-    MaxItems: str = None,
-    RealtimeLogConfigName: str = None,
-    RealtimeLogConfigArn: str = None
-) -> ListDistributionsByRealtimeLogConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `RealtimeLogConfigName`: `str`
+- `RealtimeLogConfigArn`: `str`
+
+Returns
+[ListDistributionsByRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbyrealtimelogconfigresulttypedef).
 
 ### list_distributions_by_web_acl_id
 
-Type annotations for `boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
+Type annotations for
+`boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id]
+Boto3 documentation:
+[CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
 
-```python
-def list_distributions_by_web_acl_id(
-    self,
-    WebACLId: str,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListDistributionsByWebACLIdResultTypeDef:
-    pass
-```
+Arguments:
+
+- `WebACLId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListDistributionsByWebACLIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbywebaclidresulttypedef).
 
 ### list_field_level_encryption_configs
 
-Type annotations for `boto3.client("cloudfront").list_field_level_encryption_configs` method.
+Type annotations for
+`boto3.client("cloudfront").list_field_level_encryption_configs` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs]
+Boto3 documentation:
+[CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
 
-```python
-def list_field_level_encryption_configs(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListFieldLevelEncryptionConfigsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListFieldLevelEncryptionConfigsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfieldlevelencryptionconfigsresulttypedef).
 
 ### list_field_level_encryption_profiles
 
-Type annotations for `boto3.client("cloudfront").list_field_level_encryption_profiles` method.
+Type annotations for
+`boto3.client("cloudfront").list_field_level_encryption_profiles` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles]
+Boto3 documentation:
+[CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
 
-```python
-def list_field_level_encryption_profiles(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListFieldLevelEncryptionProfilesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListFieldLevelEncryptionProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfieldlevelencryptionprofilesresulttypedef).
 
 ### list_functions
 
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions]
+Boto3 documentation:
+[CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
 
-```python
-def list_functions(
-    self,
-    Marker: str = None,
-    MaxItems: str = None,
-    Stage: FunctionStage = None
-) -> ListFunctionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `Stage`:
+  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+
+Returns
+[ListFunctionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfunctionsresulttypedef).
 
 ### list_invalidations
 
 Type annotations for `boto3.client("cloudfront").list_invalidations` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations]
+Boto3 documentation:
+[CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
 
-```python
-def list_invalidations(
-    self,
-    DistributionId: str,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListInvalidationsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionId`: `str` *(required)*
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListInvalidationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listinvalidationsresulttypedef).
 
 ### list_key_groups
 
 Type annotations for `boto3.client("cloudfront").list_key_groups` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups]
+Boto3 documentation:
+[CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
 
-```python
-def list_key_groups(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListKeyGroupsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListKeyGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listkeygroupsresulttypedef).
 
 ### list_origin_request_policies
 
-Type annotations for `boto3.client("cloudfront").list_origin_request_policies` method.
+Type annotations for `boto3.client("cloudfront").list_origin_request_policies`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies]
+Boto3 documentation:
+[CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
 
-```python
-def list_origin_request_policies(
-    self,
-    Type: OriginRequestPolicyType = None,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListOriginRequestPoliciesResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Type`:
+  [OriginRequestPolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#originrequestpolicytype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListOriginRequestPoliciesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listoriginrequestpoliciesresulttypedef).
 
 ### list_public_keys
 
 Type annotations for `boto3.client("cloudfront").list_public_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys]
+Boto3 documentation:
+[CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
 
-```python
-def list_public_keys(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListPublicKeysResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListPublicKeysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listpublickeysresulttypedef).
 
 ### list_realtime_log_configs
 
-Type annotations for `boto3.client("cloudfront").list_realtime_log_configs` method.
+Type annotations for `boto3.client("cloudfront").list_realtime_log_configs`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs]
+Boto3 documentation:
+[CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
 
-```python
-def list_realtime_log_configs(
-    self,
-    MaxItems: str = None,
-    Marker: str = None
-) -> ListRealtimeLogConfigsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `MaxItems`: `str`
+- `Marker`: `str`
+
+Returns
+[ListRealtimeLogConfigsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listrealtimelogconfigsresulttypedef).
 
 ### list_streaming_distributions
 
-Type annotations for `boto3.client("cloudfront").list_streaming_distributions` method.
+Type annotations for `boto3.client("cloudfront").list_streaming_distributions`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions]
+Boto3 documentation:
+[CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
 
-```python
-def list_streaming_distributions(
-    self,
-    Marker: str = None,
-    MaxItems: str = None
-) -> ListStreamingDistributionsResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+Returns
+[ListStreamingDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#liststreamingdistributionsresulttypedef).
 
 ### list_tags_for_resource
 
-Type annotations for `boto3.client("cloudfront").list_tags_for_resource` method.
+Type annotations for `boto3.client("cloudfront").list_tags_for_resource`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource]
+Boto3 documentation:
+[CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
 
-```python
-def list_tags_for_resource(
-    self,
-    Resource: str
-) -> ListTagsForResourceResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listtagsforresourceresulttypedef).
 
 ### publish_function
 
 Type annotations for `boto3.client("cloudfront").publish_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function]
+Boto3 documentation:
+[CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
 
-```python
-def publish_function(
-    self,
-    Name: str,
-    IfMatch: str
-) -> PublishFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IfMatch`: `str` *(required)*
+
+Returns
+[PublishFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publishfunctionresulttypedef).
 
 ### tag_resource
 
 Type annotations for `boto3.client("cloudfront").tag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource]
+Boto3 documentation:
+[CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
 
-```python
-def tag_resource(
-    self,
-    Resource: str,
-    Tags: "TagsTypeDef"
-) -> None:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+- `Tags`:
+  [TagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#tagstypedef)
+  *(required)*
 
 ### test_function
 
 Type annotations for `boto3.client("cloudfront").test_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function]
+Boto3 documentation:
+[CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
 
-```python
-def test_function(
-    self,
-    Name: str,
-    IfMatch: str,
-    EventObject: Union[bytes, IO[bytes]],
-    Stage: FunctionStage = None
-) -> TestFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IfMatch`: `str` *(required)*
+- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Stage`:
+  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+
+Returns
+[TestFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#testfunctionresulttypedef).
 
 ### untag_resource
 
 Type annotations for `boto3.client("cloudfront").untag_resource` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource]
+Boto3 documentation:
+[CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
 
-```python
-def untag_resource(
-    self,
-    Resource: str,
-    TagKeys: TagKeysTypeDef
-) -> None:
-    pass
-```
+Arguments:
+
+- `Resource`: `str` *(required)*
+- `TagKeys`:
+  [TagKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#tagkeystypedef)
+  *(required)*
 
 ### update_cache_policy
 
 Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy]
+Boto3 documentation:
+[CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
 
-```python
-def update_cache_policy(
-    self,
-    CachePolicyConfig: "CachePolicyConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateCachePolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CachePolicyConfig`:
+  [CachePolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cachepolicyconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatecachepolicyresulttypedef).
 
 ### update_cloud_front_origin_access_identity
 
-Type annotations for `boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
+Type annotations for
+`boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity]
+Boto3 documentation:
+[CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
 
-```python
-def update_cloud_front_origin_access_identity(
-    self,
-    CloudFrontOriginAccessIdentityConfig: "CloudFrontOriginAccessIdentityConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateCloudFrontOriginAccessIdentityResultTypeDef:
-    pass
-```
+Arguments:
+
+- `CloudFrontOriginAccessIdentityConfig`:
+  [CloudFrontOriginAccessIdentityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cloudfrontoriginaccessidentityconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatecloudfrontoriginaccessidentityresulttypedef).
 
 ### update_distribution
 
 Type annotations for `boto3.client("cloudfront").update_distribution` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution]
+Boto3 documentation:
+[CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
 
-```python
-def update_distribution(
-    self,
-    DistributionConfig: "DistributionConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateDistributionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `DistributionConfig`:
+  [DistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatedistributionresulttypedef).
 
 ### update_field_level_encryption_config
 
-Type annotations for `boto3.client("cloudfront").update_field_level_encryption_config` method.
+Type annotations for
+`boto3.client("cloudfront").update_field_level_encryption_config` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config]
+Boto3 documentation:
+[CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
 
-```python
-def update_field_level_encryption_config(
-    self,
-    FieldLevelEncryptionConfig: "FieldLevelEncryptionConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateFieldLevelEncryptionConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `FieldLevelEncryptionConfig`:
+  [FieldLevelEncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefieldlevelencryptionconfigresulttypedef).
 
 ### update_field_level_encryption_profile
 
-Type annotations for `boto3.client("cloudfront").update_field_level_encryption_profile` method.
+Type annotations for
+`boto3.client("cloudfront").update_field_level_encryption_profile` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile]
+Boto3 documentation:
+[CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
 
-```python
-def update_field_level_encryption_profile(
-    self,
-    FieldLevelEncryptionProfileConfig: "FieldLevelEncryptionProfileConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateFieldLevelEncryptionProfileResultTypeDef:
-    pass
-```
+Arguments:
+
+- `FieldLevelEncryptionProfileConfig`:
+  [FieldLevelEncryptionProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionprofileconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefieldlevelencryptionprofileresulttypedef).
 
 ### update_function
 
 Type annotations for `boto3.client("cloudfront").update_function` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function]
+Boto3 documentation:
+[CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
 
-```python
-def update_function(
-    self,
-    Name: str,
-    IfMatch: str,
-    FunctionConfig: "FunctionConfigTypeDef",
-    FunctionCode: Union[bytes, IO[bytes]]
-) -> UpdateFunctionResultTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `IfMatch`: `str` *(required)*
+- `FunctionConfig`:
+  [FunctionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#functionconfigtypedef)
+  *(required)*
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+
+Returns
+[UpdateFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefunctionresulttypedef).
 
 ### update_key_group
 
 Type annotations for `boto3.client("cloudfront").update_key_group` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group]
+Boto3 documentation:
+[CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
 
-```python
-def update_key_group(
-    self,
-    KeyGroupConfig: "KeyGroupConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateKeyGroupResultTypeDef:
-    pass
-```
+Arguments:
+
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#keygroupconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatekeygroupresulttypedef).
 
 ### update_origin_request_policy
 
-Type annotations for `boto3.client("cloudfront").update_origin_request_policy` method.
+Type annotations for `boto3.client("cloudfront").update_origin_request_policy`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy]
+Boto3 documentation:
+[CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
 
-```python
-def update_origin_request_policy(
-    self,
-    OriginRequestPolicyConfig: "OriginRequestPolicyConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateOriginRequestPolicyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `OriginRequestPolicyConfig`:
+  [OriginRequestPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#originrequestpolicyconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdateOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updateoriginrequestpolicyresulttypedef).
 
 ### update_public_key
 
 Type annotations for `boto3.client("cloudfront").update_public_key` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key]
+Boto3 documentation:
+[CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
 
-```python
-def update_public_key(
-    self,
-    PublicKeyConfig: "PublicKeyConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdatePublicKeyResultTypeDef:
-    pass
-```
+Arguments:
+
+- `PublicKeyConfig`:
+  [PublicKeyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publickeyconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
+
+Returns
+[UpdatePublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatepublickeyresulttypedef).
 
 ### update_realtime_log_config
 
-Type annotations for `boto3.client("cloudfront").update_realtime_log_config` method.
+Type annotations for `boto3.client("cloudfront").update_realtime_log_config`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config]
+Boto3 documentation:
+[CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
 
-```python
-def update_realtime_log_config(
-    self,
-    EndPoints: List["EndPointTypeDef"] = None,
-    Fields: List[str] = None,
-    Name: str = None,
-    ARN: str = None,
-    SamplingRate: int = None
-) -> UpdateRealtimeLogConfigResultTypeDef:
-    pass
-```
+Arguments:
+
+- `EndPoints`:
+  `List`\[[EndPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#endpointtypedef)\]
+- `Fields`: `List`\[`str`\]
+- `Name`: `str`
+- `ARN`: `str`
+- `SamplingRate`: `int`
+
+Returns
+[UpdateRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updaterealtimelogconfigresulttypedef).
 
 ### update_streaming_distribution
 
-Type annotations for `boto3.client("cloudfront").update_streaming_distribution` method.
+Type annotations for `boto3.client("cloudfront").update_streaming_distribution`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution]
+Boto3 documentation:
+[CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
 
-```python
-def update_streaming_distribution(
-    self,
-    StreamingDistributionConfig: "StreamingDistributionConfigTypeDef",
-    Id: str,
-    IfMatch: str = None
-) -> UpdateStreamingDistributionResultTypeDef:
-    pass
-```
+Arguments:
 
+- `StreamingDistributionConfig`:
+  [StreamingDistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigtypedef)
+  *(required)*
+- `Id`: `str` *(required)*
+- `IfMatch`: `str`
 
+Returns
+[UpdateStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatestreamingdistributionresulttypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudfront").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloudfront").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_cloud_front_origin_access_identities")` -> [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
-- `client.get_paginator("list_distributions")` -> [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
-- `client.get_paginator("list_invalidations")` -> [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
-- `client.get_paginator("list_streaming_distributions")` -> [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
-
-
-
+- `client.get_paginator("list_cloud_front_origin_access_identities")` ->
+  [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
+- `client.get_paginator("list_distributions")` ->
+  [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
+- `client.get_paginator("list_invalidations")` ->
+  [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
+- `client.get_paginator("list_streaming_distributions")` ->
+  [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudfront").get_waiter` method with overloads.
+Type annotations for `boto3.client("cloudfront").get_waiter` method with
+overloads.
 
-- `client.get_waiter("distribution_deployed")` -> [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
-- `client.get_waiter("invalidation_completed")` -> [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
-- `client.get_waiter("streaming_distribution_deployed")` -> [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
+- `client.get_waiter("distribution_deployed")` ->
+  [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
+- `client.get_waiter("invalidation_completed")` ->
+  [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
+- `client.get_waiter("streaming_distribution_deployed")` ->
+  [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)

@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > Honeycode
 
-Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+Auto-generated documentation for
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+type annotations stubs module
+[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ```bash
 pip install mypy-boto3-honeycode
@@ -19,7 +21,8 @@ pip install mypy-boto3-honeycode
 
 ## HoneycodeClient
 
-Type annotations for  `boto3.client("honeycode")` as [HoneycodeClient](./client.md)
+Type annotations for `boto3.client("honeycode")` as
+[HoneycodeClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_honeycode.client import HoneycodeClient
 ```
 
-
 HoneycodeClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [batch_create_table_rows](./client.md#batch-create-table-rows)
 - [batch_delete_table_rows](./client.md#batch-delete-table-rows)
 - [batch_update_table_rows](./client.md#batch-update-table-rows)
@@ -49,10 +50,8 @@ HoneycodeClient [exceptions](./client.md#exceptions)
 - [query_table_rows](./client.md#query-table-rows)
 - [start_table_data_import_job](./client.md#start-table-data-import-job)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [AutomationExecutionException](./client.md#automationexecutionexception)
 - [AutomationExecutionTimeoutException](./client.md#automationexecutiontimeoutexception)
@@ -65,14 +64,10 @@ HoneycodeClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("honeycode").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("honeycode").get_paginator("...")`.
 
 Can be used directly:
 
@@ -84,11 +79,6 @@ from mypy_boto3_honeycode.paginators import ListTableColumnsPaginator, ...
 - [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
 - [ListTablesPaginator](./paginators.md#listtablespaginator)
 - [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -110,13 +100,10 @@ from mypy_boto3_honeycode.literals import Format, ...
 - [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
 - [UpsertAction](./literals.md#upsertaction)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

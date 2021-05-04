@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > LocationService
 
-Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+Auto-generated documentation for
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+type annotations stubs module
+[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 ```bash
 pip install mypy-boto3-location
@@ -19,7 +21,8 @@ pip install mypy-boto3-location
 
 ## LocationServiceClient
 
-Type annotations for  `boto3.client("location")` as [LocationServiceClient](./client.md)
+Type annotations for `boto3.client("location")` as
+[LocationServiceClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_location.client import LocationServiceClient
 ```
 
-
 LocationServiceClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [associate_tracker_consumer](./client.md#associate-tracker-consumer)
 - [batch_delete_geofence](./client.md#batch-delete-geofence)
 - [batch_evaluate_geofences](./client.md#batch-evaluate-geofences)
@@ -72,10 +73,8 @@ LocationServiceClient [exceptions](./client.md#exceptions)
 - [search_place_index_for_position](./client.md#search-place-index-for-position)
 - [search_place_index_for_text](./client.md#search-place-index-for-text)
 
-
-
-
 ### Exceptions
+
 - [AccessDeniedException](./client.md#accessdeniedexception)
 - [ClientError](./client.md#clienterror)
 - [ConflictException](./client.md#conflictexception)
@@ -84,14 +83,10 @@ LocationServiceClient [exceptions](./client.md#exceptions)
 - [ThrottlingException](./client.md#throttlingexception)
 - [ValidationException](./client.md#validationexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("location").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("location").get_paginator("...")`.
 
 Can be used directly:
 
@@ -106,11 +101,6 @@ from mypy_boto3_location.paginators import GetDevicePositionHistoryPaginator, ..
 - [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
 - [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
 - [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -133,13 +123,10 @@ from mypy_boto3_location.literals import BatchItemErrorCode, ...
 - [ListTrackersPaginatorName](./literals.md#listtrackerspaginatorname)
 - [PricingPlan](./literals.md#pricingplan)
 
-
-
-
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

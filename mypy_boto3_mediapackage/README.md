@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > MediaPackage
 
-Auto-generated documentation for [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
-type annotations stubs module [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+Auto-generated documentation for
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+type annotations stubs module
+[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 ```bash
 pip install mypy-boto3-mediapackage
@@ -19,7 +21,8 @@ pip install mypy-boto3-mediapackage
 
 ## MediaPackageClient
 
-Type annotations for  `boto3.client("mediapackage")` as [MediaPackageClient](./client.md)
+Type annotations for `boto3.client("mediapackage")` as
+[MediaPackageClient](./client.md)
 
 Can be used directly:
 
@@ -27,12 +30,10 @@ Can be used directly:
 from mypy_boto3_mediapackage.client import MediaPackageClient
 ```
 
-
 MediaPackageClient [exceptions](./client.md#exceptions)
 
-
-
 ### Methods
+
 - [can_paginate](./client.md#can-paginate)
 - [configure_logs](./client.md#configure-logs)
 - [create_channel](./client.md#create-channel)
@@ -56,10 +57,8 @@ MediaPackageClient [exceptions](./client.md#exceptions)
 - [update_channel](./client.md#update-channel)
 - [update_origin_endpoint](./client.md#update-origin-endpoint)
 
-
-
-
 ### Exceptions
+
 - [ClientError](./client.md#clienterror)
 - [ForbiddenException](./client.md#forbiddenexception)
 - [InternalServerErrorException](./client.md#internalservererrorexception)
@@ -68,14 +67,10 @@ MediaPackageClient [exceptions](./client.md#exceptions)
 - [TooManyRequestsException](./client.md#toomanyrequestsexception)
 - [UnprocessableEntityException](./client.md#unprocessableentityexception)
 
-
-
-
-
-
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from `boto3.client("mediapackage").get_paginator("...")`.
+Type annotations for [paginators](./paginators.md) from
+`boto3.client("mediapackage").get_paginator("...")`.
 
 Can be used directly:
 
@@ -86,11 +81,6 @@ from mypy_boto3_mediapackage.paginators import ListChannelsPaginator, ...
 - [ListChannelsPaginator](./paginators.md#listchannelspaginator)
 - [ListHarvestJobsPaginator](./paginators.md#listharvestjobspaginator)
 - [ListOriginEndpointsPaginator](./paginators.md#listoriginendpointspaginator)
-
-
-
-
-
 
 ## Literals
 
@@ -118,16 +108,13 @@ from mypy_boto3_mediapackage.literals import AdMarkers, ...
 - [Status](./literals.md#status)
 - [StreamOrder](./literals.md#streamorder)
 - [UtcTiming](./literals.md#utctiming)
-- [__AdTriggersElement](./literals.md#--adtriggerselement)
-- [__PeriodTriggersElement](./literals.md#--periodtriggerselement)
-
-
-
+- [\_\_AdTriggersElement](./literals.md#--adtriggerselement)
+- [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement)
 
 ## Typed dictionaries
 
-
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and
+schema.
 
 Can be used directly:
 

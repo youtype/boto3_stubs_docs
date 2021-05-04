@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [CloudTrail](./README.md) > CloudTrailClient
 
-Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+Auto-generated documentation for
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+type annotations stubs module
+[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [CloudTrailClient for boto3 CloudTrail module](#cloudtrailclient-for-boto3-cloudtrail-module)
   - [CloudTrailClient](#cloudtrailclient)
@@ -44,12 +46,13 @@ def get_cloudtrail_client() -> CloudTrailClient:
     return boto3.client("cloudtrail")
 ```
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
+Boto3 documentation:
+[CloudTrail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
 
 ## Exceptions
 
-
-`boto3` client exceptions are generated in runtime. This class can be used for static analysis directly:
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
 
 ```python
 from mypy_boto3_cloudtrail.client import Exceptions
@@ -57,7 +60,6 @@ from mypy_boto3_cloudtrail.client import Exceptions
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
-
 
 Exceptions:
 
@@ -107,337 +109,338 @@ Exceptions:
 - `Exceptions.TrailNotProvidedException`
 - `Exceptions.UnsupportedOperationException`
 
-
 ## Methods
-
 
 ### add_tags
 
 Type annotations for `boto3.client("cloudtrail").add_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags]
+Boto3 documentation:
+[CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
 
-```python
-def add_tags(
-    self,
-    ResourceId: str,
-    TagsList: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagsList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
 Type annotations for `boto3.client("cloudtrail").can_paginate` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate]
+Boto3 documentation:
+[CloudTrail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate)
 
-```python
-def can_paginate(
-    self,
-    operation_name: str
-) -> bool:
-    pass
-```
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
 
 ### create_trail
 
 Type annotations for `boto3.client("cloudtrail").create_trail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail]
+Boto3 documentation:
+[CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
 
-```python
-def create_trail(
-    self,
-    Name: str,
-    S3BucketName: str,
-    S3KeyPrefix: str = None,
-    SnsTopicName: str = None,
-    IncludeGlobalServiceEvents: bool = None,
-    IsMultiRegionTrail: bool = None,
-    EnableLogFileValidation: bool = None,
-    CloudWatchLogsLogGroupArn: str = None,
-    CloudWatchLogsRoleArn: str = None,
-    KmsKeyId: str = None,
-    IsOrganizationTrail: bool = None,
-    TagsList: List["TagTypeDef"] = None
-) -> CreateTrailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+- `S3BucketName`: `str` *(required)*
+- `S3KeyPrefix`: `str`
+- `SnsTopicName`: `str`
+- `IncludeGlobalServiceEvents`: `bool`
+- `IsMultiRegionTrail`: `bool`
+- `EnableLogFileValidation`: `bool`
+- `CloudWatchLogsLogGroupArn`: `str`
+- `CloudWatchLogsRoleArn`: `str`
+- `KmsKeyId`: `str`
+- `IsOrganizationTrail`: `bool`
+- `TagsList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+
+Returns
+[CreateTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#createtrailresponsetypedef).
 
 ### delete_trail
 
 Type annotations for `boto3.client("cloudtrail").delete_trail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail]
+Boto3 documentation:
+[CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
 
-```python
-def delete_trail(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### describe_trails
 
 Type annotations for `boto3.client("cloudtrail").describe_trails` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails]
+Boto3 documentation:
+[CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
 
-```python
-def describe_trails(
-    self,
-    trailNameList: List[str] = None,
-    includeShadowTrails: bool = None
-) -> DescribeTrailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `trailNameList`: `List`\[`str`\]
+- `includeShadowTrails`: `bool`
+
+Returns
+[DescribeTrailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#describetrailsresponsetypedef).
 
 ### generate_presigned_url
 
-Type annotations for `boto3.client("cloudtrail").generate_presigned_url` method.
+Type annotations for `boto3.client("cloudtrail").generate_presigned_url`
+method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url]
+Boto3 documentation:
+[CloudTrail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url)
 
-```python
-def generate_presigned_url(
-    self,
-    ClientMethod: str,
-    Params: Dict[str, Any] = None,
-    ExpiresIn: int = 3600,
-    HttpMethod: str = None
-) -> str:
-    pass
-```
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Dict`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
 
 ### get_event_selectors
 
 Type annotations for `boto3.client("cloudtrail").get_event_selectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors]
+Boto3 documentation:
+[CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
 
-```python
-def get_event_selectors(
-    self,
-    TrailName: str
-) -> GetEventSelectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrailName`: `str` *(required)*
+
+Returns
+[GetEventSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#geteventselectorsresponsetypedef).
 
 ### get_insight_selectors
 
 Type annotations for `boto3.client("cloudtrail").get_insight_selectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors]
+Boto3 documentation:
+[CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
 
-```python
-def get_insight_selectors(
-    self,
-    TrailName: str
-) -> GetInsightSelectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrailName`: `str` *(required)*
+
+Returns
+[GetInsightSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#getinsightselectorsresponsetypedef).
 
 ### get_trail
 
 Type annotations for `boto3.client("cloudtrail").get_trail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail]
+Boto3 documentation:
+[CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
 
-```python
-def get_trail(
-    self,
-    Name: str
-) -> GetTrailResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#gettrailresponsetypedef).
 
 ### get_trail_status
 
 Type annotations for `boto3.client("cloudtrail").get_trail_status` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status]
+Boto3 documentation:
+[CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
 
-```python
-def get_trail_status(
-    self,
-    Name: str
-) -> GetTrailStatusResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[GetTrailStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#gettrailstatusresponsetypedef).
 
 ### list_public_keys
 
 Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys]
+Boto3 documentation:
+[CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
-```python
-def list_public_keys(
-    self,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    NextToken: str = None
-) -> ListPublicKeysResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `NextToken`: `str`
+
+Returns
+[ListPublicKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listpublickeysresponsetypedef).
 
 ### list_tags
 
 Type annotations for `boto3.client("cloudtrail").list_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags]
+Boto3 documentation:
+[CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
 
-```python
-def list_tags(
-    self,
-    ResourceIdList: List[str],
-    NextToken: str = None
-) -> ListTagsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `ResourceIdList`: `List`\[`str`\] *(required)*
+- `NextToken`: `str`
+
+Returns
+[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listtagsresponsetypedef).
 
 ### list_trails
 
 Type annotations for `boto3.client("cloudtrail").list_trails` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails]
+Boto3 documentation:
+[CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
 
-```python
-def list_trails(
-    self,
-    NextToken: str = None
-) -> ListTrailsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[ListTrailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listtrailsresponsetypedef).
 
 ### lookup_events
 
 Type annotations for `boto3.client("cloudtrail").lookup_events` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events]
+Boto3 documentation:
+[CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
-```python
-def lookup_events(
-    self,
-    LookupAttributes: List[LookupAttributeTypeDef] = None,
-    StartTime: datetime = None,
-    EndTime: datetime = None,
-    EventCategory: Literal['insight'] = None,
-    MaxResults: int = None,
-    NextToken: str = None
-) -> LookupEventsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `LookupAttributes`:
+  `List`\[[LookupAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#lookupattributetypedef)\]
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+- `EventCategory`: `Literal['insight']`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[LookupEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#lookupeventsresponsetypedef).
 
 ### put_event_selectors
 
 Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors]
+Boto3 documentation:
+[CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
 
-```python
-def put_event_selectors(
-    self,
-    TrailName: str,
-    EventSelectors: List["EventSelectorTypeDef"] = None,
-    AdvancedEventSelectors: List["AdvancedEventSelectorTypeDef"] = None
-) -> PutEventSelectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrailName`: `str` *(required)*
+- `EventSelectors`:
+  `List`\[[EventSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#eventselectortypedef)\]
+- `AdvancedEventSelectors`:
+  `List`\[[AdvancedEventSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#advancedeventselectortypedef)\]
+
+Returns
+[PutEventSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#puteventselectorsresponsetypedef).
 
 ### put_insight_selectors
 
 Type annotations for `boto3.client("cloudtrail").put_insight_selectors` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors]
+Boto3 documentation:
+[CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
 
-```python
-def put_insight_selectors(
-    self,
-    TrailName: str,
-    InsightSelectors: List["InsightSelectorTypeDef"]
-) -> PutInsightSelectorsResponseTypeDef:
-    pass
-```
+Arguments:
+
+- `TrailName`: `str` *(required)*
+- `InsightSelectors`:
+  `List`\[[InsightSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#insightselectortypedef)\]
+  *(required)*
+
+Returns
+[PutInsightSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#putinsightselectorsresponsetypedef).
 
 ### remove_tags
 
 Type annotations for `boto3.client("cloudtrail").remove_tags` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags]
+Boto3 documentation:
+[CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
 
-```python
-def remove_tags(
-    self,
-    ResourceId: str,
-    TagsList: List["TagTypeDef"] = None
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagsList`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### start_logging
 
 Type annotations for `boto3.client("cloudtrail").start_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging]
+Boto3 documentation:
+[CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
 
-```python
-def start_logging(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### stop_logging
 
 Type annotations for `boto3.client("cloudtrail").stop_logging` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging]
+Boto3 documentation:
+[CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
 
-```python
-def stop_logging(
-    self,
-    Name: str
-) -> Dict[str, Any]:
-    pass
-```
+Arguments:
+
+- `Name`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_trail
 
 Type annotations for `boto3.client("cloudtrail").update_trail` method.
 
-[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail]
+Boto3 documentation:
+[CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
 
-```python
-def update_trail(
-    self,
-    Name: str,
-    S3BucketName: str = None,
-    S3KeyPrefix: str = None,
-    SnsTopicName: str = None,
-    IncludeGlobalServiceEvents: bool = None,
-    IsMultiRegionTrail: bool = None,
-    EnableLogFileValidation: bool = None,
-    CloudWatchLogsLogGroupArn: str = None,
-    CloudWatchLogsRoleArn: str = None,
-    KmsKeyId: str = None,
-    IsOrganizationTrail: bool = None
-) -> UpdateTrailResponseTypeDef:
-    pass
-```
+Arguments:
 
+- `Name`: `str` *(required)*
+- `S3BucketName`: `str`
+- `S3KeyPrefix`: `str`
+- `SnsTopicName`: `str`
+- `IncludeGlobalServiceEvents`: `bool`
+- `IsMultiRegionTrail`: `bool`
+- `EnableLogFileValidation`: `bool`
+- `CloudWatchLogsLogGroupArn`: `str`
+- `CloudWatchLogsRoleArn`: `str`
+- `KmsKeyId`: `str`
+- `IsOrganizationTrail`: `bool`
 
+Returns
+[UpdateTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#updatetrailresponsetypedef).
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudtrail").get_paginator` method with overloads.
+Type annotations for `boto3.client("cloudtrail").get_paginator` method with
+overloads.
 
-- `client.get_paginator("list_public_keys")` -> [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
-- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
-- `client.get_paginator("list_trails")` -> [ListTrailsPaginator](./paginators.md#listtrailspaginator)
-- `client.get_paginator("lookup_events")` -> [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
-
-
+- `client.get_paginator("list_public_keys")` ->
+  [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
+- `client.get_paginator("list_tags")` ->
+  [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("list_trails")` ->
+  [ListTrailsPaginator](./paginators.md#listtrailspaginator)
+- `client.get_paginator("lookup_events")` ->
+  [LookupEventsPaginator](./paginators.md#lookupeventspaginator)

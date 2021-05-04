@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [PersonalizeEvents](./README.md) > Structures
 
-Auto-generated documentation for [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
-type annotations stubs module [mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
+Auto-generated documentation for
+[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
+type annotations stubs module
+[mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 - [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
   - [EventTypeDef](#eventtypedef)
@@ -16,21 +18,19 @@ type annotations stubs module [mypy_boto3_personalize_events](https://pypi.org/p
 from mypy_boto3_personalize_events.type_defs import EventTypeDef
 ```
 
-
 Required fields:
+
 - `eventType`: `str`
 - `sentAt`: `datetime`
 
-
-
 Optional fields:
+
 - `eventId`: `str`
 - `eventValue`: `float`
 - `itemId`: `str`
 - `properties`: `str`
 - `recommendationId`: `str`
-- `impression`: `List[str]`
-
+- `impression`: `List`\[`str`\]
 
 ## ItemTypeDef
 
@@ -38,15 +38,13 @@ Optional fields:
 from mypy_boto3_personalize_events.type_defs import ItemTypeDef
 ```
 
-
 Required fields:
+
 - `itemId`: `str`
 
-
-
 Optional fields:
-- `properties`: `str`
 
+- `properties`: `str`
 
 ## UserTypeDef
 
@@ -54,12 +52,10 @@ Optional fields:
 from mypy_boto3_personalize_events.type_defs import UserTypeDef
 ```
 
-
 Required fields:
+
 - `userId`: `str`
 
-
-
 Optional fields:
-- `properties`: `str`
 
+- `properties`: `str`

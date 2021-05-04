@@ -2,8 +2,10 @@
 
 > [Index](../README.md) > [Firehose](./README.md) > Structures
 
-Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
-type annotations stubs module [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+Auto-generated documentation for
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+type annotations stubs module
+[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
   - [BufferingHintsTypeDef](#bufferinghintstypedef)
@@ -79,13 +81,10 @@ type annotations stubs module [mypy_boto3_firehose](https://pypi.org/project/myp
 from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SizeInMBs`: `int`
 - `IntervalInSeconds`: `int`
-
 
 ## CloudWatchLoggingOptionsTypeDef
 
@@ -93,14 +92,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import CloudWatchLoggingOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Enabled`: `bool`
 - `LogGroupName`: `str`
 - `LogStreamName`: `str`
-
 
 ## CopyCommandTypeDef
 
@@ -108,16 +104,14 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import CopyCommandTypeDef
 ```
 
-
 Required fields:
+
 - `DataTableName`: `str`
 
-
-
 Optional fields:
+
 - `DataTableColumns`: `str`
 - `CopyOptions`: `str`
-
 
 ## CreateDeliveryStreamOutputTypeDef
 
@@ -125,13 +119,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputTypeDef
 ```
 
-
 Required fields:
+
 - `DeliveryStreamARN`: `str`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## DataFormatConversionConfigurationTypeDef
 
@@ -139,15 +131,15 @@ Required fields:
 from mypy_boto3_firehose.type_defs import DataFormatConversionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `SchemaConfiguration`: `"SchemaConfigurationTypeDef"`
-- `InputFormatConfiguration`: `"InputFormatConfigurationTypeDef"`
-- `OutputFormatConfiguration`: `"OutputFormatConfigurationTypeDef"`
-- `Enabled`: `bool`
 
+- `SchemaConfiguration`:
+  [SchemaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#schemaconfigurationtypedef)
+- `InputFormatConfiguration`:
+  [InputFormatConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#inputformatconfigurationtypedef)
+- `OutputFormatConfiguration`:
+  [OutputFormatConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#outputformatconfigurationtypedef)
+- `Enabled`: `bool`
 
 ## DeliveryStreamDescriptionTypeDef
 
@@ -155,25 +147,29 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import DeliveryStreamDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `DeliveryStreamName`: `str`
 - `DeliveryStreamARN`: `str`
-- `DeliveryStreamStatus`: `DeliveryStreamStatus`
-- `DeliveryStreamType`: `DeliveryStreamType`
+- `DeliveryStreamStatus`:
+  [DeliveryStreamStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamstatus)
+- `DeliveryStreamType`:
+  [DeliveryStreamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamtype)
 - `VersionId`: `str`
-- `Destinations`: `List["DestinationDescriptionTypeDef"]`
+- `Destinations`:
+  `List`\[[DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#destinationdescriptiontypedef)\]
 - `HasMoreDestinations`: `bool`
 
-
-
 Optional fields:
-- `FailureDescription`: `"FailureDescriptionTypeDef"`
-- `DeliveryStreamEncryptionConfiguration`: `"DeliveryStreamEncryptionConfigurationTypeDef"`
+
+- `FailureDescription`:
+  [FailureDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#failuredescriptiontypedef)
+- `DeliveryStreamEncryptionConfiguration`:
+  [DeliveryStreamEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamencryptionconfigurationtypedef)
 - `CreateTimestamp`: `datetime`
 - `LastUpdateTimestamp`: `datetime`
-- `Source`: `"SourceDescriptionTypeDef"`
-
+- `Source`:
+  [SourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#sourcedescriptiontypedef)
 
 ## DeliveryStreamEncryptionConfigurationInputTypeDef
 
@@ -181,15 +177,14 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationInputTypeDef
 ```
 
-
 Required fields:
-- `KeyType`: `KeyType`
 
-
+- `KeyType`:
+  [KeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#keytype)
 
 Optional fields:
-- `KeyARN`: `str`
 
+- `KeyARN`: `str`
 
 ## DeliveryStreamEncryptionConfigurationTypeDef
 
@@ -197,15 +192,15 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KeyARN`: `str`
-- `KeyType`: `KeyType`
-- `Status`: `DeliveryStreamEncryptionStatus`
-- `FailureDescription`: `"FailureDescriptionTypeDef"`
 
+- `KeyARN`: `str`
+- `KeyType`:
+  [KeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#keytype)
+- `Status`:
+  [DeliveryStreamEncryptionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamencryptionstatus)
+- `FailureDescription`:
+  [FailureDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#failuredescriptiontypedef)
 
 ## DescribeDeliveryStreamOutputTypeDef
 
@@ -213,13 +208,12 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamOutputTypeDef
 ```
 
-
 Required fields:
-- `DeliveryStreamDescription`: `"DeliveryStreamDescriptionTypeDef"`
-- `ResponseMetadata`: `"ResponseMetadata"`
 
-
-
+- `DeliveryStreamDescription`:
+  [DeliveryStreamDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## DeserializerTypeDef
 
@@ -227,13 +221,12 @@ Required fields:
 from mypy_boto3_firehose.type_defs import DeserializerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `OpenXJsonSerDe`: `"OpenXJsonSerDeTypeDef"`
-- `HiveJsonSerDe`: `"HiveJsonSerDeTypeDef"`
 
+- `OpenXJsonSerDe`:
+  [OpenXJsonSerDeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#openxjsonserdetypedef)
+- `HiveJsonSerDe`:
+  [HiveJsonSerDeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#hivejsonserdetypedef)
 
 ## DestinationDescriptionTypeDef
 
@@ -241,20 +234,24 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import DestinationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `DestinationId`: `str`
 
-
-
 Optional fields:
-- `S3DestinationDescription`: `"S3DestinationDescriptionTypeDef"`
-- `ExtendedS3DestinationDescription`: `"ExtendedS3DestinationDescriptionTypeDef"`
-- `RedshiftDestinationDescription`: `"RedshiftDestinationDescriptionTypeDef"`
-- `ElasticsearchDestinationDescription`: `"ElasticsearchDestinationDescriptionTypeDef"`
-- `SplunkDestinationDescription`: `"SplunkDestinationDescriptionTypeDef"`
-- `HttpEndpointDestinationDescription`: `"HttpEndpointDestinationDescriptionTypeDef"`
 
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
+- `ExtendedS3DestinationDescription`:
+  [ExtendedS3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#extendeds3destinationdescriptiontypedef)
+- `RedshiftDestinationDescription`:
+  [RedshiftDestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftdestinationdescriptiontypedef)
+- `ElasticsearchDestinationDescription`:
+  [ElasticsearchDestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchdestinationdescriptiontypedef)
+- `SplunkDestinationDescription`:
+  [SplunkDestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkdestinationdescriptiontypedef)
+- `HttpEndpointDestinationDescription`:
+  [HttpEndpointDestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdestinationdescriptiontypedef)
 
 ## ElasticsearchBufferingHintsTypeDef
 
@@ -262,13 +259,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ElasticsearchBufferingHintsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `IntervalInSeconds`: `int`
 - `SizeInMBs`: `int`
-
 
 ## ElasticsearchDestinationConfigurationTypeDef
 
@@ -276,26 +270,32 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `IndexName`: `str`
-- `S3Configuration`: `"S3DestinationConfigurationTypeDef"`
-
-
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
 
 Optional fields:
+
 - `DomainARN`: `str`
 - `ClusterEndpoint`: `str`
 - `TypeName`: `str`
-- `IndexRotationPeriod`: `ElasticsearchIndexRotationPeriod`
-- `BufferingHints`: `"ElasticsearchBufferingHintsTypeDef"`
-- `RetryOptions`: `"ElasticsearchRetryOptionsTypeDef"`
-- `S3BackupMode`: `ElasticsearchS3BackupMode`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `VpcConfiguration`: `"VpcConfigurationTypeDef"`
-
+- `IndexRotationPeriod`:
+  [ElasticsearchIndexRotationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#elasticsearchindexrotationperiod)
+- `BufferingHints`:
+  [ElasticsearchBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchbufferinghintstypedef)
+- `RetryOptions`:
+  [ElasticsearchRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchretryoptionstypedef)
+- `S3BackupMode`:
+  [ElasticsearchS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#elasticsearchs3backupmode)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#vpcconfigurationtypedef)
 
 ## ElasticsearchDestinationDescriptionTypeDef
 
@@ -303,24 +303,29 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `DomainARN`: `str`
 - `ClusterEndpoint`: `str`
 - `IndexName`: `str`
 - `TypeName`: `str`
-- `IndexRotationPeriod`: `ElasticsearchIndexRotationPeriod`
-- `BufferingHints`: `"ElasticsearchBufferingHintsTypeDef"`
-- `RetryOptions`: `"ElasticsearchRetryOptionsTypeDef"`
-- `S3BackupMode`: `ElasticsearchS3BackupMode`
-- `S3DestinationDescription`: `"S3DestinationDescriptionTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `VpcConfigurationDescription`: `"VpcConfigurationDescriptionTypeDef"`
-
+- `IndexRotationPeriod`:
+  [ElasticsearchIndexRotationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#elasticsearchindexrotationperiod)
+- `BufferingHints`:
+  [ElasticsearchBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchbufferinghintstypedef)
+- `RetryOptions`:
+  [ElasticsearchRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchretryoptionstypedef)
+- `S3BackupMode`:
+  [ElasticsearchS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#elasticsearchs3backupmode)
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `VpcConfigurationDescription`:
+  [VpcConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#vpcconfigurationdescriptiontypedef)
 
 ## ElasticsearchDestinationUpdateTypeDef
 
@@ -328,22 +333,25 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `DomainARN`: `str`
 - `ClusterEndpoint`: `str`
 - `IndexName`: `str`
 - `TypeName`: `str`
-- `IndexRotationPeriod`: `ElasticsearchIndexRotationPeriod`
-- `BufferingHints`: `"ElasticsearchBufferingHintsTypeDef"`
-- `RetryOptions`: `"ElasticsearchRetryOptionsTypeDef"`
-- `S3Update`: `"S3DestinationUpdateTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `IndexRotationPeriod`:
+  [ElasticsearchIndexRotationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#elasticsearchindexrotationperiod)
+- `BufferingHints`:
+  [ElasticsearchBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchbufferinghintstypedef)
+- `RetryOptions`:
+  [ElasticsearchRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchretryoptionstypedef)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## ElasticsearchRetryOptionsTypeDef
 
@@ -351,12 +359,9 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ElasticsearchRetryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DurationInSeconds`: `int`
 
+- `DurationInSeconds`: `int`
 
 ## EncryptionConfigurationTypeDef
 
@@ -364,13 +369,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import EncryptionConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `NoEncryptionConfig`: `Literal['NoEncryption']`
-- `KMSEncryptionConfig`: `"KMSEncryptionConfigTypeDef"`
 
+- `NoEncryptionConfig`: `Literal['NoEncryption']`
+- `KMSEncryptionConfig`:
+  [KMSEncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#kmsencryptionconfigtypedef)
 
 ## ExtendedS3DestinationConfigurationTypeDef
 
@@ -378,25 +381,31 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
 
-
-
 Optional fields:
+
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `S3BackupMode`
-- `S3BackupConfiguration`: `"S3DestinationConfigurationTypeDef"`
-- `DataFormatConversionConfiguration`: `"DataFormatConversionConfigurationTypeDef"`
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [S3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#s3backupmode)
+- `S3BackupConfiguration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
+- `DataFormatConversionConfiguration`:
+  [DataFormatConversionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#dataformatconversionconfigurationtypedef)
 
 ## ExtendedS3DestinationDescriptionTypeDef
 
@@ -404,25 +413,31 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
 
 Optional fields:
+
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `S3BackupMode`
-- `S3BackupDescription`: `"S3DestinationDescriptionTypeDef"`
-- `DataFormatConversionConfiguration`: `"DataFormatConversionConfigurationTypeDef"`
-
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [S3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#s3backupmode)
+- `S3BackupDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
+- `DataFormatConversionConfiguration`:
+  [DataFormatConversionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#dataformatconversionconfigurationtypedef)
 
 ## ExtendedS3DestinationUpdateTypeDef
 
@@ -430,23 +445,28 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `S3BackupMode`
-- `S3BackupUpdate`: `"S3DestinationUpdateTypeDef"`
-- `DataFormatConversionConfiguration`: `"DataFormatConversionConfigurationTypeDef"`
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [S3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#s3backupmode)
+- `S3BackupUpdate`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `DataFormatConversionConfiguration`:
+  [DataFormatConversionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#dataformatconversionconfigurationtypedef)
 
 ## FailureDescriptionTypeDef
 
@@ -454,13 +474,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import FailureDescriptionTypeDef
 ```
 
-
 Required fields:
-- `Type`: `DeliveryStreamFailureType`
+
+- `Type`:
+  [DeliveryStreamFailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamfailuretype)
 - `Details`: `str`
-
-
-
 
 ## HiveJsonSerDeTypeDef
 
@@ -468,12 +486,9 @@ Required fields:
 from mypy_boto3_firehose.type_defs import HiveJsonSerDeTypeDef
 ```
 
-
-
-
 Optional fields:
-- `TimestampFormats`: `List[str]`
 
+- `TimestampFormats`: `List`\[`str`\]
 
 ## HttpEndpointBufferingHintsTypeDef
 
@@ -481,13 +496,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointBufferingHintsTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `SizeInMBs`: `int`
 - `IntervalInSeconds`: `int`
-
 
 ## HttpEndpointCommonAttributeTypeDef
 
@@ -495,13 +507,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointCommonAttributeTypeDef
 ```
 
-
 Required fields:
+
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
-
-
-
 
 ## HttpEndpointConfigurationTypeDef
 
@@ -509,16 +518,14 @@ Required fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `Url`: `str`
 
-
-
 Optional fields:
+
 - `Name`: `str`
 - `AccessKey`: `str`
-
 
 ## HttpEndpointDescriptionTypeDef
 
@@ -526,13 +533,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `Url`: `str`
 - `Name`: `str`
-
 
 ## HttpEndpointDestinationConfigurationTypeDef
 
@@ -540,22 +544,28 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
-- `EndpointConfiguration`: `"HttpEndpointConfigurationTypeDef"`
-- `S3Configuration`: `"S3DestinationConfigurationTypeDef"`
 
-
+- `EndpointConfiguration`:
+  [HttpEndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointconfigurationtypedef)
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
 
 Optional fields:
-- `BufferingHints`: `"HttpEndpointBufferingHintsTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `RequestConfiguration`: `"HttpEndpointRequestConfigurationTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `RoleARN`: `str`
-- `RetryOptions`: `"HttpEndpointRetryOptionsTypeDef"`
-- `S3BackupMode`: `HttpEndpointS3BackupMode`
 
+- `BufferingHints`:
+  [HttpEndpointBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointbufferinghintstypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `RequestConfiguration`:
+  [HttpEndpointRequestConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointrequestconfigurationtypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `RoleARN`: `str`
+- `RetryOptions`:
+  [HttpEndpointRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointretryoptionstypedef)
+- `S3BackupMode`:
+  [HttpEndpointS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#httpendpoints3backupmode)
 
 ## HttpEndpointDestinationDescriptionTypeDef
 
@@ -563,20 +573,25 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointConfiguration`: `"HttpEndpointDescriptionTypeDef"`
-- `BufferingHints`: `"HttpEndpointBufferingHintsTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `RequestConfiguration`: `"HttpEndpointRequestConfigurationTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `RoleARN`: `str`
-- `RetryOptions`: `"HttpEndpointRetryOptionsTypeDef"`
-- `S3BackupMode`: `HttpEndpointS3BackupMode`
-- `S3DestinationDescription`: `"S3DestinationDescriptionTypeDef"`
 
+- `EndpointConfiguration`:
+  [HttpEndpointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdescriptiontypedef)
+- `BufferingHints`:
+  [HttpEndpointBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointbufferinghintstypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `RequestConfiguration`:
+  [HttpEndpointRequestConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointrequestconfigurationtypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `RoleARN`: `str`
+- `RetryOptions`:
+  [HttpEndpointRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointretryoptionstypedef)
+- `S3BackupMode`:
+  [HttpEndpointS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#httpendpoints3backupmode)
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
 
 ## HttpEndpointDestinationUpdateTypeDef
 
@@ -584,20 +599,25 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
-- `EndpointConfiguration`: `"HttpEndpointConfigurationTypeDef"`
-- `BufferingHints`: `"HttpEndpointBufferingHintsTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-- `RequestConfiguration`: `"HttpEndpointRequestConfigurationTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `RoleARN`: `str`
-- `RetryOptions`: `"HttpEndpointRetryOptionsTypeDef"`
-- `S3BackupMode`: `HttpEndpointS3BackupMode`
-- `S3Update`: `"S3DestinationUpdateTypeDef"`
 
+- `EndpointConfiguration`:
+  [HttpEndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointconfigurationtypedef)
+- `BufferingHints`:
+  [HttpEndpointBufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointbufferinghintstypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
+- `RequestConfiguration`:
+  [HttpEndpointRequestConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointrequestconfigurationtypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `RoleARN`: `str`
+- `RetryOptions`:
+  [HttpEndpointRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointretryoptionstypedef)
+- `S3BackupMode`:
+  [HttpEndpointS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#httpendpoints3backupmode)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
 
 ## HttpEndpointRequestConfigurationTypeDef
 
@@ -605,13 +625,12 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointRequestConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ContentEncoding`: `ContentEncoding`
-- `CommonAttributes`: `List["HttpEndpointCommonAttributeTypeDef"]`
 
+- `ContentEncoding`:
+  [ContentEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#contentencoding)
+- `CommonAttributes`:
+  `List`\[[HttpEndpointCommonAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointcommonattributetypedef)\]
 
 ## HttpEndpointRetryOptionsTypeDef
 
@@ -619,12 +638,9 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import HttpEndpointRetryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DurationInSeconds`: `int`
 
+- `DurationInSeconds`: `int`
 
 ## InputFormatConfigurationTypeDef
 
@@ -632,12 +648,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import InputFormatConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Deserializer`: `"DeserializerTypeDef"`
 
+- `Deserializer`:
+  [DeserializerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deserializertypedef)
 
 ## KMSEncryptionConfigTypeDef
 
@@ -645,12 +659,9 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import KMSEncryptionConfigTypeDef
 ```
 
-
 Required fields:
+
 - `AWSKMSKeyARN`: `str`
-
-
-
 
 ## KinesisStreamSourceConfigurationTypeDef
 
@@ -658,13 +669,10 @@ Required fields:
 from mypy_boto3_firehose.type_defs import KinesisStreamSourceConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `KinesisStreamARN`: `str`
 - `RoleARN`: `str`
-
-
-
 
 ## KinesisStreamSourceDescriptionTypeDef
 
@@ -672,14 +680,11 @@ Required fields:
 from mypy_boto3_firehose.type_defs import KinesisStreamSourceDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `KinesisStreamARN`: `str`
 - `RoleARN`: `str`
 - `DeliveryStartTimestamp`: `datetime`
-
 
 ## ListDeliveryStreamsOutputTypeDef
 
@@ -687,14 +692,12 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ListDeliveryStreamsOutputTypeDef
 ```
 
-
 Required fields:
-- `DeliveryStreamNames`: `List[str]`
+
+- `DeliveryStreamNames`: `List`\[`str`\]
 - `HasMoreDeliveryStreams`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## ListTagsForDeliveryStreamOutputTypeDef
 
@@ -702,14 +705,13 @@ Required fields:
 from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamOutputTypeDef
 ```
 
-
 Required fields:
-- `Tags`: `List["TagTypeDef"]`
+
+- `Tags`:
+  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#tagtypedef)\]
 - `HasMoreTags`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## OpenXJsonSerDeTypeDef
 
@@ -717,14 +719,11 @@ Required fields:
 from mypy_boto3_firehose.type_defs import OpenXJsonSerDeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `ConvertDotsInJsonKeysToUnderscores`: `bool`
 - `CaseInsensitive`: `bool`
-- `ColumnToJsonKeyMappings`: `Dict[str, str]`
-
+- `ColumnToJsonKeyMappings`: `Dict`\[`str`, `str`\]
 
 ## OrcSerDeTypeDef
 
@@ -732,21 +731,20 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import OrcSerDeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `StripeSizeBytes`: `int`
 - `BlockSizeBytes`: `int`
 - `RowIndexStride`: `int`
 - `EnablePadding`: `bool`
 - `PaddingTolerance`: `float`
-- `Compression`: `OrcCompression`
-- `BloomFilterColumns`: `List[str]`
+- `Compression`:
+  [OrcCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#orccompression)
+- `BloomFilterColumns`: `List`\[`str`\]
 - `BloomFilterFalsePositiveProbability`: `float`
 - `DictionaryKeyThreshold`: `float`
-- `FormatVersion`: `OrcFormatVersion`
-
+- `FormatVersion`:
+  [OrcFormatVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#orcformatversion)
 
 ## OutputFormatConfigurationTypeDef
 
@@ -754,12 +752,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import OutputFormatConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Serializer`: `"SerializerTypeDef"`
 
+- `Serializer`:
+  [SerializerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#serializertypedef)
 
 ## ParquetSerDeTypeDef
 
@@ -767,17 +763,16 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ParquetSerDeTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `BlockSizeBytes`: `int`
 - `PageSizeBytes`: `int`
-- `Compression`: `ParquetCompression`
+- `Compression`:
+  [ParquetCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#parquetcompression)
 - `EnableDictionaryCompression`: `bool`
 - `MaxPaddingBytes`: `int`
-- `WriterVersion`: `ParquetWriterVersion`
-
+- `WriterVersion`:
+  [ParquetWriterVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#parquetwriterversion)
 
 ## ProcessingConfigurationTypeDef
 
@@ -785,13 +780,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ProcessingConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
-- `Enabled`: `bool`
-- `Processors`: `List["ProcessorTypeDef"]`
 
+- `Enabled`: `bool`
+- `Processors`:
+  `List`\[[ProcessorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processortypedef)\]
 
 ## ProcessorParameterTypeDef
 
@@ -799,13 +792,11 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ProcessorParameterTypeDef
 ```
 
-
 Required fields:
-- `ParameterName`: `ProcessorParameterName`
+
+- `ParameterName`:
+  [ProcessorParameterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#processorparametername)
 - `ParameterValue`: `str`
-
-
-
 
 ## ProcessorTypeDef
 
@@ -813,15 +804,14 @@ Required fields:
 from mypy_boto3_firehose.type_defs import ProcessorTypeDef
 ```
 
-
 Required fields:
+
 - `Type`: `Literal['Lambda']`
 
-
-
 Optional fields:
-- `Parameters`: `List["ProcessorParameterTypeDef"]`
 
+- `Parameters`:
+  `List`\[[ProcessorParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processorparametertypedef)\]
 
 ## PutRecordBatchOutputTypeDef
 
@@ -829,15 +819,14 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import PutRecordBatchOutputTypeDef
 ```
 
-
 Required fields:
+
 - `FailedPutCount`: `int`
 - `Encrypted`: `bool`
-- `RequestResponses`: `List["PutRecordBatchResponseEntryTypeDef"]`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `RequestResponses`:
+  `List`\[[PutRecordBatchResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#putrecordbatchresponseentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## PutRecordBatchResponseEntryTypeDef
 
@@ -845,14 +834,11 @@ Required fields:
 from mypy_boto3_firehose.type_defs import PutRecordBatchResponseEntryTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RecordId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
 
 ## PutRecordOutputTypeDef
 
@@ -860,14 +846,12 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import PutRecordOutputTypeDef
 ```
 
-
 Required fields:
+
 - `RecordId`: `str`
 - `Encrypted`: `bool`
-- `ResponseMetadata`: `"ResponseMetadata"`
-
-
-
+- `ResponseMetadata`:
+  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#responsemetadata)
 
 ## RecordTypeDef
 
@@ -875,12 +859,9 @@ Required fields:
 from mypy_boto3_firehose.type_defs import RecordTypeDef
 ```
 
-
 Required fields:
-- `Data`: `Union[bytes, IO[bytes]]`
 
-
-
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 ## RedshiftDestinationConfigurationTypeDef
 
@@ -888,24 +869,29 @@ Required fields:
 from mypy_boto3_firehose.type_defs import RedshiftDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `ClusterJDBCURL`: `str`
-- `CopyCommand`: `"CopyCommandTypeDef"`
+- `CopyCommand`:
+  [CopyCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#copycommandtypedef)
 - `Username`: `str`
 - `Password`: `str`
-- `S3Configuration`: `"S3DestinationConfigurationTypeDef"`
-
-
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
 
 Optional fields:
-- `RetryOptions`: `"RedshiftRetryOptionsTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `RedshiftS3BackupMode`
-- `S3BackupConfiguration`: `"S3DestinationConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
 
+- `RetryOptions`:
+  [RedshiftRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftretryoptionstypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [RedshiftS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#redshifts3backupmode)
+- `S3BackupConfiguration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## RedshiftDestinationDescriptionTypeDef
 
@@ -913,23 +899,28 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import RedshiftDestinationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `ClusterJDBCURL`: `str`
-- `CopyCommand`: `"CopyCommandTypeDef"`
+- `CopyCommand`:
+  [CopyCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#copycommandtypedef)
 - `Username`: `str`
-- `S3DestinationDescription`: `"S3DestinationDescriptionTypeDef"`
-
-
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
 
 Optional fields:
-- `RetryOptions`: `"RedshiftRetryOptionsTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `RedshiftS3BackupMode`
-- `S3BackupDescription`: `"S3DestinationDescriptionTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
 
+- `RetryOptions`:
+  [RedshiftRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftretryoptionstypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [RedshiftS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#redshifts3backupmode)
+- `S3BackupDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## RedshiftDestinationUpdateTypeDef
 
@@ -937,22 +928,26 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import RedshiftDestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `ClusterJDBCURL`: `str`
-- `CopyCommand`: `"CopyCommandTypeDef"`
+- `CopyCommand`:
+  [CopyCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#copycommandtypedef)
 - `Username`: `str`
 - `Password`: `str`
-- `RetryOptions`: `"RedshiftRetryOptionsTypeDef"`
-- `S3Update`: `"S3DestinationUpdateTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `S3BackupMode`: `RedshiftS3BackupMode`
-- `S3BackupUpdate`: `"S3DestinationUpdateTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `RetryOptions`:
+  [RedshiftRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftretryoptionstypedef)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `S3BackupMode`:
+  [RedshiftS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#redshifts3backupmode)
+- `S3BackupUpdate`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## RedshiftRetryOptionsTypeDef
 
@@ -960,12 +955,9 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import RedshiftRetryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DurationInSeconds`: `int`
 
+- `DurationInSeconds`: `int`
 
 ## ResponseMetadata
 
@@ -973,16 +965,13 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import ResponseMetadata
 ```
 
-
 Required fields:
+
 - `RequestId`: `str`
 - `HostId`: `str`
 - `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict[str, Any]`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
-
-
-
 
 ## S3DestinationConfigurationTypeDef
 
@@ -990,21 +979,23 @@ Required fields:
 from mypy_boto3_firehose.type_defs import S3DestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
 
-
-
 Optional fields:
+
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## S3DestinationDescriptionTypeDef
 
@@ -1012,21 +1003,23 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import S3DestinationDescriptionTypeDef
 ```
 
-
 Required fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
 
 Optional fields:
+
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## S3DestinationUpdateTypeDef
 
@@ -1034,19 +1027,20 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import S3DestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `BucketARN`: `str`
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: `"BufferingHintsTypeDef"`
-- `CompressionFormat`: `CompressionFormat`
-- `EncryptionConfiguration`: `"EncryptionConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `BufferingHints`:
+  [BufferingHintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#compressionformat)
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#encryptionconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## SchemaConfigurationTypeDef
 
@@ -1054,10 +1048,8 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SchemaConfigurationTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `RoleARN`: `str`
 - `CatalogId`: `str`
 - `DatabaseName`: `str`
@@ -1065,20 +1057,18 @@ Optional fields:
 - `Region`: `str`
 - `VersionId`: `str`
 
-
 ## SerializerTypeDef
 
 ```python
 from mypy_boto3_firehose.type_defs import SerializerTypeDef
 ```
 
-
-
-
 Optional fields:
-- `ParquetSerDe`: `"ParquetSerDeTypeDef"`
-- `OrcSerDe`: `"OrcSerDeTypeDef"`
 
+- `ParquetSerDe`:
+  [ParquetSerDeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#parquetserdetypedef)
+- `OrcSerDe`:
+  [OrcSerDeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#orcserdetypedef)
 
 ## SourceDescriptionTypeDef
 
@@ -1086,12 +1076,10 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SourceDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
-- `KinesisStreamSourceDescription`: `"KinesisStreamSourceDescriptionTypeDef"`
 
+- `KinesisStreamSourceDescription`:
+  [KinesisStreamSourceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#kinesisstreamsourcedescriptiontypedef)
 
 ## SplunkDestinationConfigurationTypeDef
 
@@ -1099,22 +1087,26 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SplunkDestinationConfigurationTypeDef
 ```
 
-
 Required fields:
+
 - `HECEndpoint`: `str`
-- `HECEndpointType`: `HECEndpointType`
+- `HECEndpointType`:
+  [HECEndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#hecendpointtype)
 - `HECToken`: `str`
-- `S3Configuration`: `"S3DestinationConfigurationTypeDef"`
-
-
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
 
 Optional fields:
-- `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`: `"SplunkRetryOptionsTypeDef"`
-- `S3BackupMode`: `SplunkS3BackupMode`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
 
+- `HECAcknowledgmentTimeoutInSeconds`: `int`
+- `RetryOptions`:
+  [SplunkRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkretryoptionstypedef)
+- `S3BackupMode`:
+  [SplunkS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#splunks3backupmode)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## SplunkDestinationDescriptionTypeDef
 
@@ -1122,20 +1114,23 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SplunkDestinationDescriptionTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HECEndpoint`: `str`
-- `HECEndpointType`: `HECEndpointType`
+- `HECEndpointType`:
+  [HECEndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#hecendpointtype)
 - `HECToken`: `str`
 - `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`: `"SplunkRetryOptionsTypeDef"`
-- `S3BackupMode`: `SplunkS3BackupMode`
-- `S3DestinationDescription`: `"S3DestinationDescriptionTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `RetryOptions`:
+  [SplunkRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkretryoptionstypedef)
+- `S3BackupMode`:
+  [SplunkS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#splunks3backupmode)
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationdescriptiontypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## SplunkDestinationUpdateTypeDef
 
@@ -1143,20 +1138,23 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SplunkDestinationUpdateTypeDef
 ```
 
-
-
-
 Optional fields:
+
 - `HECEndpoint`: `str`
-- `HECEndpointType`: `HECEndpointType`
+- `HECEndpointType`:
+  [HECEndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#hecendpointtype)
 - `HECToken`: `str`
 - `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`: `"SplunkRetryOptionsTypeDef"`
-- `S3BackupMode`: `SplunkS3BackupMode`
-- `S3Update`: `"S3DestinationUpdateTypeDef"`
-- `ProcessingConfiguration`: `"ProcessingConfigurationTypeDef"`
-- `CloudWatchLoggingOptions`: `"CloudWatchLoggingOptionsTypeDef"`
-
+- `RetryOptions`:
+  [SplunkRetryOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkretryoptionstypedef)
+- `S3BackupMode`:
+  [SplunkS3BackupMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#splunks3backupmode)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#cloudwatchloggingoptionstypedef)
 
 ## SplunkRetryOptionsTypeDef
 
@@ -1164,12 +1162,9 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import SplunkRetryOptionsTypeDef
 ```
 
-
-
-
 Optional fields:
-- `DurationInSeconds`: `int`
 
+- `DurationInSeconds`: `int`
 
 ## TagTypeDef
 
@@ -1177,15 +1172,13 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import TagTypeDef
 ```
 
-
 Required fields:
+
 - `Key`: `str`
 
-
-
 Optional fields:
-- `Value`: `str`
 
+- `Value`: `str`
 
 ## VpcConfigurationDescriptionTypeDef
 
@@ -1193,15 +1186,12 @@ Optional fields:
 from mypy_boto3_firehose.type_defs import VpcConfigurationDescriptionTypeDef
 ```
 
-
 Required fields:
-- `SubnetIds`: `List[str]`
+
+- `SubnetIds`: `List`\[`str`\]
 - `RoleARN`: `str`
-- `SecurityGroupIds`: `List[str]`
+- `SecurityGroupIds`: `List`\[`str`\]
 - `VpcId`: `str`
-
-
-
 
 ## VpcConfigurationTypeDef
 
@@ -1209,11 +1199,8 @@ Required fields:
 from mypy_boto3_firehose.type_defs import VpcConfigurationTypeDef
 ```
 
-
 Required fields:
-- `SubnetIds`: `List[str]`
+
+- `SubnetIds`: `List`\[`str`\]
 - `RoleARN`: `str`
-- `SecurityGroupIds`: `List[str]`
-
-
-
+- `SecurityGroupIds`: `List`\[`str`\]
